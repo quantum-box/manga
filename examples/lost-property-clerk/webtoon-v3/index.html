@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1727">
+  <title>終電後の落とし物係 — 縦読み</title>
+  <style>
+    :root { color-scheme: dark; --night: #0c1727; --paper: #fff8eb; --amber: #e5c18b; }
+    * { box-sizing: border-box; }
+    html { background: var(--night); }
+    body { margin: 0; color: var(--paper); font-family: "Hiragino Sans", "Yu Gothic", sans-serif; }
+    .episode { width: 100%; max-width: 480px; margin: 0 auto; overflow: hidden; container-type: inline-size; }
+    .title { padding: 72px 22px 48px; text-align: center; }
+    .title p { margin: 0 0 15px; font-size: 11px; letter-spacing: .23em; color: #b6c0ca; }
+    h1 { margin: 0; font-family: "Hiragino Mincho ProN", "Yu Mincho", serif; font-size: clamp(25px, 7cqw, 33px); font-weight: 500; letter-spacing: .045em; }
+    .title .hint { margin: 26px 0 0; color: #9ba8b7; font-size: 11px; letter-spacing: .1em; }
+    .title .hint::after { content: ""; display: block; height: 23px; width: 1px; margin: 12px auto 0; background: linear-gradient(#8291a4, transparent); }
+    .scene { position: relative; margin: 0; }
+    .scene img { display: block; width: 100%; height: auto; }
+    .line { margin: 0; font-size: clamp(19px, 5.1cqw, 23px); line-height: 1.65; letter-spacing: .035em; }
+    .opening { margin: 0 0 22px 7%; }
+    .empty { text-align: right; padding: 9px 8% 30px; }
+    .bubble { position: absolute; z-index: 1; margin: 0; padding: .6em 1em; background: var(--paper); color: #192331; border-radius: 49% 48% 45% 48%; font-size: clamp(19px, 5.1cqw, 23px); line-height: 1.65; letter-spacing: .015em; white-space: nowrap; filter: drop-shadow(0 2px 1px #0003); }
+    .bubble::after { content: ""; position: absolute; left: 26%; bottom: -.42em; width: 1em; height: .7em; background: var(--paper); clip-path: polygon(0 0, 100% 0, 8% 100%); }
+    .sound { position: absolute; z-index: 1; margin: 0; color: #efd7ae; font-family: "Hiragino Mincho ProN", "Yu Mincho", serif; font-size: clamp(26px, 7.7cqw, 36px); letter-spacing: .21em; text-shadow: 0 0 15px #0c1727; }
+    .rain img { mask-image: linear-gradient(transparent, #000 3%, #000 96%, transparent); }
+    .chime { top: 21%; right: 14%; writing-mode: vertical-rl; transform: rotate(-5deg); }
+    .cat { margin-top: 60px; }
+    .cat img { mask-image: linear-gradient(transparent, #000 5%, #000 95%, transparent); }
+    .mine { top: 4%; left: 8%; }
+    .handoff { width: 94%; margin: 60px auto 20px; }
+    .handoff img { mask-image: linear-gradient(transparent, #000 4%, #000 92%, transparent); }
+    .thanks { top: 0; right: 3%; }
+    .trail img { mask-image: linear-gradient(transparent, #000 4%, #000 98%, transparent); }
+    .step { font-size: clamp(19px, 5.7cqw, 26px); letter-spacing: .16em; }
+    .step-one { top: 16%; left: 63%; transform: rotate(8deg); }
+    .step-two { top: 49%; left: 29%; transform: rotate(-7deg); }
+    .question { top: 29%; left: 9%; }
+    .clerk { margin-top: 90px; }
+    .clerk img { mask-image: linear-gradient(transparent, #000 4%, #000 95%, transparent); }
+    .meow { top: 2%; right: 8%; }
+    .plaque { position: absolute; left: 27%; top: 70.4%; width: 48%; height: 13%; display: flex; justify-content: center; align-items: center; margin: 0; color: #392817; font-family: "Hiragino Mincho ProN", "Yu Mincho", serif; font-weight: 600; font-size: clamp(23px, 6.7cqw, 31px); letter-spacing: .025em; white-space: nowrap; transform: rotate(.4deg); }
+    .end { text-align: center; padding: 28px 20px 95px; color: #b6c0ca; font-family: "Hiragino Mincho ProN", "Yu Mincho", serif; font-size: 15px; letter-spacing: .28em; }
+    @media (min-width: 600px) { .episode { box-shadow: 0 0 100px #0003; } }
+  </style>
+</head>
+<body>
+  <main class="episode" aria-label="縦読み漫画 終電後の落とし物係">
+    <header class="title">
+      <p>雨上がり、終電のあと。</p>
+      <h1>終電後の落とし物係</h1>
+      <p class="hint">下へスクロール</p>
+    </header>
+
+    <p class="line opening">終電、行っちゃった。</p>
+    <figure class="scene search">
+      <img src="art/01-search.png" width="1254" height="1254" alt="夜の駅で女性がバッグを探す。ポケットを確かめても、開いた手には何もない。" fetchpriority="high">
+    </figure>
+    <p class="line empty">鍵も、ない……</p>
+
+    <figure class="scene rain">
+      <img src="art/02-rain.png" width="724" height="2172" alt="女性が音に気づく。視線は軒先の雨だれを通り、濡れた地面へ下りていく。">
+      <p class="sound chime">ちりん</p>
+    </figure>
+
+    <figure class="scene cat">
+      <img src="art/03-cat.png" width="1122" height="1402" alt="濡れた地面に茶トラと白の猫。黄色い三日月と銀色の鍵をくわえている。">
+      <p class="bubble mine">……私の鍵？</p>
+    </figure>
+
+    <figure class="scene handoff">
+      <img src="art/04-handoff.png" width="1448" height="1086" alt="鍵は女性の手のひらへ。猫の口は空になり、女性が微笑む。">
+      <p class="bubble thanks">ありがとう。</p>
+    </figure>
+
+    <figure class="scene trail">
+      <img src="art/05-trail.png" width="724" height="2172" alt="小さな肉球の足跡を下へたどる。濡れた駅の石畳の先に、明かりのついた低い窓口が現れる。">
+      <p class="sound step step-one">てく</p>
+      <p class="bubble question">……駅員さん？</p>
+      <p class="sound step step-two">てく</p>
+    </figure>
+
+    <figure class="scene clerk">
+      <img src="art/06-clerk.png" width="1122" height="1402" alt="窓口で駅員の帽子をかぶった同じ猫が待っている。前足をカウンターに置いて、こちらを見る。">
+      <p class="bubble meow">にゃ。</p>
+      <p class="plaque">落とし物係</p>
+    </figure>
+    <footer class="end">おわり</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* Adapt the palette and placement to the story. No scene order is prescribed. */
+:root {
+  --page: #f4f1e9;
+  --ink: #252a31;
+  --balloon: #fffdf7;
+  --sound: #4b5563;
+}
+* { box-sizing: border-box; }
+html { background: var(--page); }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+}
+.episode {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  container-type: inline-size;
+}
+.scene { position: relative; margin: 0; }
+.scene img { display: block; width: 100%; height: auto; }
+/* Opt in where the story needs a pause; set --pause on that element. */
+.pause {
+  position: relative;
+  margin: 0;
+  height: var(--pause, 0px);
+}
+.line {
+  margin: 0;
+  font-size: clamp(19px, 5.1cqw, 23px);
+  line-height: 1.65;
+  letter-spacing: .03em;
+}
+.bubble {
+  position: absolute;
+  z-index: 1;
+  max-width: 86%;
+  margin: 0;
+  padding: .6em 1em;
+  border-radius: 48%;
+  color: var(--ink);
+  background: var(--balloon);
+  font-size: clamp(19px, 5.1cqw, 23px);
+  line-height: 1.65;
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  left: 26%;
+  bottom: -.42em;
+  width: 1em;
+  height: .7em;
+  background: var(--balloon);
+  clip-path: polygon(0 0, 100% 0, 8% 100%);
+}
+.sound {
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  color: var(--sound);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-size: clamp(26px, 7.7cqw, 36px);
+  letter-spacing: .2em;
+}
+.plaque {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-size: clamp(23px, 6.7cqw, 31px);
+  white-space: nowrap;
+}

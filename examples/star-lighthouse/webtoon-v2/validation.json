@@ -1,0 +1,126 @@
+{
+  "checkedAt": "2026-10-04",
+  "screens": [
+    {
+      "dpr": 0.800000011920929,
+      "heartbeat": {
+        "bottom": 4087.324951171875,
+        "height": 88.575439453125,
+        "top": 3998.74951171875,
+        "width": 42.61024475097656
+      },
+      "heartbeatToParent": 925.575439453125,
+      "imagesLoaded": true,
+      "pageHeight": 7312,
+      "pageWidth": 390,
+      "parent": {
+        "bottom": 5013.896484375,
+        "height": 0.99609375,
+        "top": 5012.900390625,
+        "width": 0.99609375
+      },
+      "pauses": [
+        {
+          "height": 428.994140625,
+          "name": "silence listen-silence"
+        },
+        {
+          "height": 623.994140625,
+          "name": "silence depth-silence"
+        }
+      ],
+      "replyText": {
+        "bottom": 3467.822265625,
+        "height": 117.802734375,
+        "top": 3350.01953125,
+        "width": 390
+      },
+      "replyToParent": 1545.078125,
+      "scenes": [
+        {
+          "height": 390,
+          "name": "scene watch",
+          "top": 339.4140625
+        },
+        {
+          "height": 1170,
+          "name": "scene signal",
+          "top": 854.208984375
+        },
+        {
+          "height": 487.32421875,
+          "name": "scene calf",
+          "top": 2433.701171875
+        },
+        {
+          "height": 366.591796875,
+          "name": "scene reply",
+          "top": 3467.822265625
+        },
+        {
+          "height": 1170,
+          "name": "scene parent",
+          "top": 4486.40625
+        },
+        {
+          "height": 585,
+          "name": "scene farewell",
+          "top": 5909.90234375
+        },
+        {
+          "height": 203.486328125,
+          "name": "log",
+          "top": 6845.8984375
+        }
+      ],
+      "signalToCalf": 1263.4375,
+      "textFits": true,
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "minDialogueFont": 19.89
+    },
+    {
+      "heartbeatToParent": 854.4026489257812,
+      "imagesLoaded": true,
+      "pageHeight": 6812,
+      "pageWidth": 360,
+      "pauses": [
+        {
+          "height": 395.99609375,
+          "name": "silence listen-silence"
+        },
+        {
+          "height": 575.99609375,
+          "name": "silence depth-silence"
+        }
+      ],
+      "replyToParent": 1428.388671875,
+      "signalToCalf": 1164.365234375,
+      "textFits": true,
+      "viewport": {
+        "height": 800,
+        "width": 360
+      },
+      "minDialogueFont": 19
+    }
+  ],
+  "baselineV1": {
+    "pageHeight390": 5188,
+    "signalToCalf390": 908.9453125,
+    "replyToParent390": 921.083984375
+  },
+  "capture": {
+    "width": 390,
+    "height": 7311,
+    "zoom": 0.8,
+    "note": "DOM viewport measured; screenshot clip compensated for browser zoom. Final content and ending visually checked."
+  },
+  "visualChecks": {
+    "artwork": "Six original v1 images reused without image edits",
+    "pacing": "Dense radar actions retained; separate waits before discoveries, before reply, after departure and before final reassurance",
+    "revealOrder": "Heartbeat moved into darkness before parent appearance; protected distances exceed each measured screen height",
+    "ending": "Departure fades into silence before the log; final sentence has a separate pause"
+  }
+}

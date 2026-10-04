@@ -1,4 +1,5 @@
 import SwiftUI
+import WebKit
 
 @main
 struct MangaApp: App {
@@ -7,7 +8,7 @@ struct MangaApp: App {
     }
 }
 
-struct MangaTitle: Identifiable, Hashable {
+struct MangaTitle: Identifiable, Hashable, Decodable {
     let id: String
     let title: String
     let genre: String
@@ -15,27 +16,38 @@ struct MangaTitle: Identifiable, Hashable {
     let tagline: String
     let synopsis: String
     let episodes: [Episode]
+    var episodeCount: Int { Set(episodes.map(\.number)).count }
 }
 
-struct Episode: Identifiable, Hashable {
-    let id: Int
+struct Episode: Identifiable, Hashable, Decodable {
+    let id: String
+    let number: Int
     let title: String
-    let panels: [String]
+    let edition: String
+    let reader: String
+    let background: String
 }
 
 enum Catalog {
-    static let titles: [MangaTitle] = [
-        .init(id: "pochi", title: "柴犬ポチと魔王の「おて」", genre: "ファンタジー", image: "01-rebirth", tagline: "世界を救うのは、小さな肉球。", synopsis: "異世界に転生した柴犬ポチ。お姫さまと出会い、たどり着いたのは魔王の城。最強の魔王に差し出したのは、たったひとつの「おて」だった。", episodes: [.init(id: 1, title: "世界を救う、小さな「おて」", panels: ["01-rebirth", "02-princess", "03-demon-king", "04-handshake"])]),
-        .init(id: "moon", title: "月明かりの約束", genre: "恋愛", image: "02-princess", tagline: "あの日の約束を、もう一度。", synopsis: "お城で暮らす少女と、不思議な旅人。月明かりの下で始まる、小さな出会いの物語。※画面確認用のサンプル作品です。", episodes: (1...6).map { .init(id: $0, title: ["月夜の出会い", "秘密の庭", "届かない手紙", "約束の日", "君の名前", "夜明けの前に"][$0 - 1], panels: []) }),
-        .init(id: "king", title: "魔王の休日", genre: "ファンタジー", image: "03-demon-king", tagline: "今日だけは、世界征服お休み。", synopsis: "恐れられる魔王にも、のんびり過ごしたい日がある。魔王城の日常を描くコメディ。※画面確認用のサンプル作品です。", episodes: (1...4).map { .init(id: $0, title: ["魔王、休む", "お客さま", "お茶の時間", "明日も休日"][$0 - 1], panels: []) }),
-        .init(id: "paw", title: "肉球と世界のあいだ", genre: "日常", image: "04-handshake", tagline: "きっと、仲良くなれる。", synopsis: "言葉がなくても伝わること。小さな柴犬がつなぐ、あたたかな日々。※画面確認用のサンプル作品です。", episodes: (1...3).map { .init(id: $0, title: ["はじめまして", "友だちになろう", "また明日"][$0 - 1], panels: []) })
-    ]
+    static let titles: [MangaTitle] = {
+        guard let url = resource("catalog.json"),
+              let data = try? Data(contentsOf: url),
+              let titles = try? JSONDecoder().decode([MangaTitle].self, from: data) else { return [] }
+        return titles
+    }()
+
+    static func resource(_ path: String) -> URL? {
+        guard let root = Bundle.main.resourceURL?.appendingPathComponent("Webtoons", isDirectory: true) else { return nil }
+        let url = root.appendingPathComponent(path).standardizedFileURL
+        guard url.path.hasPrefix(root.path + "/"), FileManager.default.fileExists(atPath: url.path) else { return nil }
+        return url
+    }
 }
 
 struct Cover: View {
     let name: String
     var body: some View {
-        if let url = Bundle.main.url(forResource: name, withExtension: "png", subdirectory: "Artwork"),
+        if let url = Catalog.resource(name),
            let image = UIImage(contentsOfFile: url.path) {
             Image(uiImage: image).resizable().scaledToFill()
         } else {
@@ -47,7 +59,7 @@ struct Cover: View {
 struct CatalogView: View {
     @State private var query = ""
     @State private var genre = "すべて"
-    private let genres = ["すべて", "ファンタジー", "恋愛", "日常"]
+    private var genres: [String] { ["すべて"] + Array(Set(Catalog.titles.map(\.genre))).sorted() }
     private var titles: [MangaTitle] {
         Catalog.titles.filter { (genre == "すべて" || $0.genre == genre) && (query.isEmpty || $0.title.localizedCaseInsensitiveContains(query)) }
     }
@@ -66,16 +78,18 @@ struct CatalogView: View {
                     }
                     if query.isEmpty && genre == "すべて", let featured = Catalog.titles.first {
                         NavigationLink(value: featured) {
-                            ZStack(alignment: .bottomLeading) {
-                                Cover(name: featured.image)
-                                LinearGradient(colors: [.clear, .black.opacity(0.85)], startPoint: .center, endPoint: .bottom)
-                                VStack(alignment: .leading, spacing: 8) {
-                                    Text("PICK UP").font(.caption.bold()).padding(.horizontal, 10).padding(.vertical, 5).background(.orange, in: Capsule())
-                                    Text(featured.tagline).font(.title2.bold())
-                                    Text(featured.title).font(.subheadline.bold())
-                                    Text("第1話を無料で読む  →").font(.caption.bold())
-                                }.foregroundStyle(.white).padding(20)
-                            }.frame(height: 290).clipped().clipShape(RoundedRectangle(cornerRadius: 20))
+                            GeometryReader { proxy in
+                                ZStack(alignment: .bottomLeading) {
+                                    Cover(name: featured.image).frame(width: proxy.size.width, height: proxy.size.height).clipped()
+                                    LinearGradient(colors: [.clear, .black.opacity(0.85)], startPoint: .center, endPoint: .bottom)
+                                    VStack(alignment: .leading, spacing: 8) {
+                                        Text("PICK UP").font(.caption.bold()).padding(.horizontal, 10).padding(.vertical, 5).background(.orange, in: Capsule())
+                                        Text(featured.tagline).font(.title2.bold())
+                                        Text(featured.title).font(.subheadline.bold())
+                                        Text("第1話を無料で読む  →").font(.caption.bold())
+                                    }.foregroundStyle(.white).padding(20)
+                                }.frame(width: proxy.size.width, height: proxy.size.height)
+                            }.frame(height: 290).clipShape(RoundedRectangle(cornerRadius: 20))
                         }.buttonStyle(.plain).accessibilityIdentifier("featured-title")
                     }
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -106,12 +120,12 @@ struct CatalogView: View {
                                     }.aspectRatio(0.72, contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 12))
                                     Text(title.genre).font(.caption2.bold()).foregroundStyle(.orange)
                                     Text(title.title).font(.subheadline.bold()).lineLimit(2).frame(height: 40, alignment: .topLeading)
-                                    Text("全\(title.episodes.count)話 · 無料").font(.caption).foregroundStyle(.secondary)
+                                    Text("全\(title.episodeCount)話 · 無料").font(.caption).foregroundStyle(.secondary)
                                 }
-                            }.buttonStyle(.plain)
+                            }.buttonStyle(.plain).accessibilityIdentifier("title-\(title.id)")
                         }
                     }
-                    Text("オリジナル作品と画面確認用サンプルを掲載しています。").font(.caption2).foregroundStyle(.secondary)
+                    Text("全作品、無料で読めます。").font(.caption2).foregroundStyle(.secondary)
                 }.padding(20)
             }
             .background(Color(.systemBackground))
@@ -138,7 +152,7 @@ struct TitleDetailView: View {
                         Text(title.genre).font(.caption.bold()).foregroundStyle(.orange)
                         Text(title.title).font(.title2.bold())
                         Text("Quantum Stories").font(.caption).foregroundStyle(.secondary)
-                        Text("全\(title.episodes.count)話 · 全話無料").font(.caption.bold())
+                        Text("全\(title.episodeCount)話 · 全話無料").font(.caption.bold())
                     }
                 }
                 Text(title.synopsis).font(.subheadline).foregroundStyle(.secondary).lineSpacing(5)
@@ -158,7 +172,7 @@ struct TitleDetailView: View {
                 Divider()
                 HStack {
                     Text("話一覧").font(.title3.bold())
-                    Text("\(title.episodes.count)話").font(.caption).foregroundStyle(.secondary)
+                    Text("\(title.episodeCount)話").font(.caption).foregroundStyle(.secondary)
                     Spacer()
                     Button { descending.toggle() } label: {
                         Label(descending ? "新しい順" : "古い順", systemImage: "arrow.up.arrow.down").font(.caption)
@@ -168,10 +182,13 @@ struct TitleDetailView: View {
                     ForEach(episodes) { episode in
                         NavigationLink { ReaderView(title: title, episode: episode) } label: {
                             HStack(spacing: 14) {
-                                Cover(name: episode.panels.first ?? title.image).frame(width: 70, height: 58).clipped().clipShape(RoundedRectangle(cornerRadius: 8))
+                                Cover(name: title.image).frame(width: 70, height: 58).clipped().clipShape(RoundedRectangle(cornerRadius: 8))
                                 VStack(alignment: .leading, spacing: 5) {
-                                    Text("第\(episode.id)話").font(.caption).foregroundStyle(.secondary)
+                                    Text("第\(episode.number)話").font(.caption).foregroundStyle(.secondary)
                                     Text(episode.title).font(.subheadline.bold())
+                                    if !episode.edition.isEmpty {
+                                        Text(episode.edition).font(.caption).foregroundStyle(.secondary)
+                                    }
                                 }
                                 Spacer()
                                 Text("無料").font(.caption.bold()).foregroundStyle(.orange)
@@ -190,25 +207,50 @@ struct ReaderView: View {
     let title: MangaTitle
     let episode: Episode
     var body: some View {
-        ScrollView {
-            if episode.panels.isEmpty {
-                ContentUnavailableView("サンプルの話です", systemImage: "book.closed", description: Text("この作品は話を選ぶ画面の確認用です。\n「柴犬ポチと魔王の『おて』」第1話は読めます。"))
-                    .padding(.top, 80)
+        Group {
+            if let url = Catalog.resource(episode.reader) {
+                WebtoonReader(url: url, background: episode.background)
+                    .accessibilityIdentifier("webtoon-reader")
             } else {
-                LazyVStack(spacing: 32) {
-                    VStack(spacing: 12) {
-                        Text(title.title).font(.title2.bold())
-                        Text("第\(episode.id)話　\(episode.title)").font(.subheadline)
-                    }.padding(.vertical, 50).padding(.horizontal)
-                    ForEach(episode.panels, id: \.self) { panel in
-                        if let url = Bundle.main.url(forResource: panel, withExtension: "png", subdirectory: "Artwork"), let image = UIImage(contentsOfFile: url.path) {
-                            Image(uiImage: image).resizable().scaledToFit()
-                        }
-                    }
-                    Text("第\(episode.id)話 おわり").font(.headline).padding(.vertical, 60)
-                }
+                ContentUnavailableView("本文を開けません", systemImage: "book.closed", description: Text("作品一覧に戻って、もう一度お試しください。"))
             }
-        }.navigationTitle("第\(episode.id)話").navigationBarTitleDisplayMode(.inline)
+        }
+        .navigationTitle("第\(episode.number)話\(episode.edition.isEmpty ? "" : " · " + episode.edition)")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+struct WebtoonReader: UIViewRepresentable {
+    let url: URL
+    let background: String
+
+    func makeUIView(context: Context) -> WKWebView {
+        let configuration = WKWebViewConfiguration()
+        configuration.websiteDataStore = .nonPersistent()
+        let view = WKWebView(frame: .zero, configuration: configuration)
+        let color = UIColor(webtoonHex: background)
+        view.isOpaque = false
+        view.backgroundColor = color
+        view.scrollView.backgroundColor = color
+        view.scrollView.contentInsetAdjustmentBehavior = .never
+        view.scrollView.alwaysBounceHorizontal = false
+        view.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+        return view
+    }
+
+    func updateUIView(_ view: WKWebView, context: Context) {
+        if view.url != url {
+            view.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+        }
+    }
+}
+
+private extension UIColor {
+    convenience init(webtoonHex: String) {
+        let value = UInt32(webtoonHex.dropFirst(), radix: 16) ?? 0xffffff
+        self.init(red: CGFloat((value >> 16) & 255) / 255,
+                  green: CGFloat((value >> 8) & 255) / 255,
+                  blue: CGFloat(value & 255) / 255, alpha: 1)
     }
 }
 
