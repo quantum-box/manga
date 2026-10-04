@@ -2,6 +2,8 @@
 
 AIを使って、企画から作画、組版、修正、書き出しまで進めるための実験プロジェクト。
 
+iOSアプリ試作: [起動方法・実装範囲](ios/README.md)（タイトル一覧 → 作品詳細・話選択）
+
 最初の試作: [柴犬ポチと魔王の「おて」](examples/pochis-handshake/README.md)
 
 カラー縦読み版: [Webtoon試作](examples/pochis-handshake/webtoon/README.md)
