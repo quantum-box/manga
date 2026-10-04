@@ -205,11 +205,21 @@ struct TitleDetailView: View {
 
 struct ReaderView: View {
     let title: MangaTitle
-    let episode: Episode
+    @State private var episode: Episode
+
+    init(title: MangaTitle, episode: Episode) {
+        self.title = title
+        _episode = State(initialValue: episode)
+    }
+
+    private var previous: Episode? { title.episodes.first { $0.number == episode.number - 1 } }
+    private var next: Episode? { title.episodes.first { $0.number == episode.number + 1 } }
+
     var body: some View {
         Group {
             if let url = Catalog.resource(episode.reader) {
                 WebtoonReader(url: url, background: episode.background)
+                    .id(episode.id)
                     .accessibilityIdentifier("webtoon-reader")
             } else {
                 ContentUnavailableView("本文を開けません", systemImage: "book.closed", description: Text("作品一覧に戻って、もう一度お試しください。"))
@@ -217,6 +227,27 @@ struct ReaderView: View {
         }
         .navigationTitle("第\(episode.number)話\(episode.edition.isEmpty ? "" : " · " + episode.edition)")
         .navigationBarTitleDisplayMode(.inline)
+        .safeAreaInset(edge: .bottom) {
+            if title.episodeCount > 1 {
+                HStack {
+                    Button { if let previous { episode = previous } } label: {
+                        Label("前の話", systemImage: "chevron.left")
+                    }.disabled(previous == nil).accessibilityIdentifier("previous-episode")
+                    Spacer()
+                    Text("\(episode.number) / \(title.episodeCount)")
+                        .font(.caption).foregroundStyle(.secondary)
+                    Spacer()
+                    Button { if let next { episode = next } } label: {
+                        HStack(spacing: 5) {
+                            Text("次の話")
+                            Image(systemName: "chevron.right")
+                        }
+                    }.disabled(next == nil).accessibilityIdentifier("next-episode")
+                }
+                .font(.subheadline.bold()).padding(.horizontal, 20).padding(.vertical, 12)
+                .background(Color(.systemBackground))
+            }
+        }
     }
 }
 
