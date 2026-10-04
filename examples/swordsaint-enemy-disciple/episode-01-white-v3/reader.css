@@ -1,0 +1,25 @@
+*{box-sizing:border-box}
+html{background:#fff;color:#252c2b;color-scheme:light}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Yu Gothic',sans-serif}
+.episode{width:100%;max-width:480px;margin:0 auto;background:#fff;container-type:inline-size}
+header{text-align:center;padding:64px 24px 80px}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:#68756f}
+h1{font-family:'Hiragino Mincho ProN','Yu Mincho',serif;font-weight:500;font-size:clamp(31px,8.4cqw,40px);line-height:1.65;margin:28px 0 32px}
+.subtitle{font-size:19px;letter-spacing:.06em}
+.scroll-hint{font-size:12px;letter-spacing:.18em;color:#738078;margin-top:32px}
+.scene{position:relative;margin:0;width:100%}
+.art{display:block;position:relative;width:100%;overflow:clip;mask-image:linear-gradient(transparent,#000 12px,#000 calc(100% - 12px),transparent)}
+.art img{display:block;position:absolute;left:0;width:100%;height:auto}
+.lettering{position:relative;margin:0;padding:20px 9%;font-size:clamp(19px,5.1cqw,23px);line-height:1.8;letter-spacing:.04em;min-height:72px}
+.lettering p{margin:0;max-width:100%}
+.lettering.right{display:flex;justify-content:flex-end}
+.lettering.center{text-align:center}
+.thought p{display:inline-block;padding:.4em .65em;border-left:2px solid #84968a}
+.speech p{display:inline-block;background:#fff;border:1px solid #66776d;border-radius:48% / 40%;padding:.65em 1em;text-align:center;line-height:1.65}
+.sound{font-family:'Hiragino Mincho ProN','Yu Mincho',serif;font-size:clamp(24px,7cqw,33px);color:#68796e;letter-spacing:.18em;padding:12px 14%;min-height:58px}
+.narration{font-family:'Hiragino Mincho ProN','Yu Mincho',serif}
+.pause{width:100%;background:#fff}
+.final{font-family:'Hiragino Mincho ProN','Yu Mincho',serif;font-size:clamp(26px,7cqw,34px);line-height:2;letter-spacing:.07em;text-align:center;padding:30px 8%}
+footer{padding:100px 8% 110px;text-align:center;color:#697a70}
+footer p{font-size:16px;letter-spacing:.14em;margin:0 0 22px}
+footer span{font-size:13px;letter-spacing:.06em}
