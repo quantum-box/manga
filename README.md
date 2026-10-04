@@ -6,7 +6,7 @@
 
 | 作品 | ジャンル | 採用版 |
 | --- | --- | --- |
-| [剣聖、仇の弟子に転生する](examples/swordsaint-enemy-disciple/episode-01-white/index.html) | 武侠・転生 | 第1話。白背景版と初稿は同じ話の別版 |
+| [剣聖、仇の弟子に転生する](examples/swordsaint-enemy-disciple/episode-01-white-v3/index.html) | 武侠・転生 | 第1話「知らない手」。白背景・ゆっくり版を採用。旧白背景版と夜色版も選択可能 |
 | [終電後の落とし物係](examples/lost-property-clerk/webtoon-v3/README.md) | 日常・幻想 | 雨、猫、足跡をたどる縦読み短編 v3 |
 | [星を拾う夜](examples/star-lighthouse/webtoon-v2/README.md) | SF | 静けさと巨大な親の登場を広い余白で描く v2 |
 | [転生したら柴犬だった。](examples/pochis-handshake/webtoon-v2/README.md) | ファンタジー・転生 | ポチと魔王の「おて」。9ビート・12コマ v2 |

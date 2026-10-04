@@ -20,6 +20,7 @@ class ReaderReferences(HTMLParser):
         self.references = set()
         self.json_depth = False
         self.json_text = []
+        self.json_asset_map = False
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -30,6 +31,7 @@ class ReaderReferences(HTMLParser):
         if tag == "script" and attrs.get("type") == "application/json":
             self.json_depth = True
             self.json_text = []
+            self.json_asset_map = attrs.get("id") == "artwork-sources"
 
     def handle_data(self, data):
         if self.json_depth:
@@ -37,7 +39,13 @@ class ReaderReferences(HTMLParser):
 
     def handle_endtag(self, tag):
         if tag == "script" and self.json_depth:
-            self.references.update(json_references(json.loads("".join(self.json_text))))
+            payload = json.loads("".join(self.json_text))
+            if self.json_asset_map:
+                if not isinstance(payload, dict) or not all(isinstance(value, str) for value in payload.values()):
+                    raise ValueError("artwork-sources must map artwork names to resource paths")
+                self.references.update(payload.values())
+            else:
+                self.references.update(json_references(payload))
             self.json_depth = False
 
 

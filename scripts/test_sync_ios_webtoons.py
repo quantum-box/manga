@@ -51,6 +51,21 @@ class OfflineBundleTests(unittest.TestCase):
             sync(self.root)
         self.assertEqual(target.read_text(encoding="utf-8"), self.html)
 
+    def test_artwork_source_map_bundles_dynamic_images_and_rejects_missing_art(self):
+        html = ('<!doctype html><img data-source="cover"><img data-source="second">'
+                '<script type="application/json" id="artwork-sources">'
+                '{"cover":"art/cover.png","second":"art/second.png"}</script>'
+                '<p style="margin-top:860px">水面の向こう。</p>')
+        (self.chapter / "index.html").write_text(html, encoding="utf-8")
+        sync(self.root)
+        target = self.root / "ios/Manga/Webtoons/story/chapter"
+        self.assertEqual((target / "index.html").read_text(encoding="utf-8"), html)
+        self.assertEqual((target / "art/second.png").read_bytes(), b"second-fixture")
+        (self.chapter / "art/second.png").unlink()
+        with self.assertRaisesRegex(ValueError, "Missing"):
+            sync(self.root)
+        self.assertEqual((target / "index.html").read_text(encoding="utf-8"), html)
+
     def test_remote_assets_and_directory_escape_are_rejected(self):
         for reference in ["https://example.com/image.png", "../../outside.png"]:
             with self.subTest(reference=reference):
