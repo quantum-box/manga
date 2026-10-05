@@ -8,42 +8,6 @@ struct MangaApp: App {
     }
 }
 
-struct MangaTitle: Identifiable, Hashable, Decodable {
-    let id: String
-    let title: String
-    let genre: String
-    let image: String
-    let tagline: String
-    let synopsis: String
-    let episodes: [Episode]
-    var episodeCount: Int { Set(episodes.map(\.number)).count }
-}
-
-struct Episode: Identifiable, Hashable, Decodable {
-    let id: String
-    let number: Int
-    let title: String
-    let edition: String
-    let reader: String
-    let background: String
-}
-
-enum Catalog {
-    static let titles: [MangaTitle] = {
-        guard let url = resource("catalog.json"),
-              let data = try? Data(contentsOf: url),
-              let titles = try? JSONDecoder().decode([MangaTitle].self, from: data) else { return [] }
-        return titles
-    }()
-
-    static func resource(_ path: String) -> URL? {
-        guard let root = Bundle.main.resourceURL?.appendingPathComponent("Webtoons", isDirectory: true) else { return nil }
-        let url = root.appendingPathComponent(path).standardizedFileURL
-        guard url.path.hasPrefix(root.path + "/"), FileManager.default.fileExists(atPath: url.path) else { return nil }
-        return url
-    }
-}
-
 struct Cover: View {
     let name: String
     var body: some View {
@@ -57,11 +21,17 @@ struct Cover: View {
 }
 
 struct CatalogView: View {
+    @State private var catalog = Result { try Catalog.load() }
     @State private var query = ""
     @State private var genre = "すべて"
-    private var genres: [String] { ["すべて"] + Array(Set(Catalog.titles.map(\.genre))).sorted() }
+    private var catalogTitles: [MangaTitle] { (try? catalog.get()) ?? [] }
+    private var catalogFailed: Bool {
+        if case .failure = catalog { return true }
+        return false
+    }
+    private var genres: [String] { ["すべて"] + Array(Set(catalogTitles.map(\.genre))).sorted() }
     private var titles: [MangaTitle] {
-        Catalog.titles.filter { (genre == "すべて" || $0.genre == genre) && (query.isEmpty || $0.title.localizedCaseInsensitiveContains(query)) }
+        catalogTitles.filter { (genre == "すべて" || $0.genre == genre) && (query.isEmpty || $0.title.localizedCaseInsensitiveContains(query)) }
     }
 
     var body: some View {
@@ -76,7 +46,7 @@ struct CatalogView: View {
                         Spacer()
                         Image(systemName: "sparkles").font(.title).foregroundStyle(.orange)
                     }
-                    if query.isEmpty && genre == "すべて", let featured = Catalog.titles.first {
+                    if query.isEmpty && genre == "すべて", let featured = catalogTitles.first {
                         NavigationLink(value: featured) {
                             GeometryReader { proxy in
                                 ZStack(alignment: .bottomLeading) {
@@ -108,7 +78,16 @@ struct CatalogView: View {
                         Spacer()
                         Text("\(titles.count)作品").font(.caption).foregroundStyle(.secondary)
                     }
-                    if titles.isEmpty {
+                    if catalogFailed {
+                        ContentUnavailableView {
+                            Label("作品を読み込めませんでした", systemImage: "exclamationmark.triangle")
+                        } description: {
+                            Text("もう一度読み込んでください。改善しない場合は、アプリを最新のバージョンに更新してください。")
+                        } actions: {
+                            Button("もう一度読み込む") { catalog = Result { try Catalog.load() } }
+                                .buttonStyle(.borderedProminent)
+                        }.accessibilityIdentifier("catalog-failed")
+                    } else if titles.isEmpty {
                         ContentUnavailableView.search(text: query)
                     }
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 24) {
@@ -206,6 +185,8 @@ struct TitleDetailView: View {
 struct ReaderView: View {
     let title: MangaTitle
     @State private var episode: Episode
+    @State private var loadState = ReaderLoadState.loading
+    @State private var reloadID = UUID()
 
     init(title: MangaTitle, episode: Episode) {
         self.title = title
@@ -218,9 +199,31 @@ struct ReaderView: View {
     var body: some View {
         Group {
             if let url = Catalog.resource(episode.reader) {
-                WebtoonReader(url: url, background: episode.background)
-                    .id(episode.id)
-                    .accessibilityIdentifier("webtoon-reader")
+                ZStack {
+                    WebtoonReader(url: url, background: episode.background, loadState: $loadState)
+                        .id("\(episode.id)-\(reloadID)")
+                        .accessibilityIdentifier("webtoon-reader")
+                    if loadState == .loading {
+                        ProgressView("漫画を読み込み中…")
+                            .padding(24)
+                            .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 16))
+                            .accessibilityIdentifier("reader-loading")
+                    } else if loadState == .failed {
+                        ContentUnavailableView {
+                            Label("漫画を開けませんでした", systemImage: "book.closed")
+                        } description: {
+                            Text("もう一度読み込んでください。")
+                        } actions: {
+                            Button("もう一度読む") {
+                                loadState = .loading
+                                reloadID = UUID()
+                            }.buttonStyle(.borderedProminent)
+                        }
+                        .background(Color(.systemBackground))
+                        .accessibilityIdentifier("reader-failed")
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
                 ContentUnavailableView("本文を開けません", systemImage: "book.closed", description: Text("作品一覧に戻って、もう一度お試しください。"))
             }
@@ -230,14 +233,14 @@ struct ReaderView: View {
         .safeAreaInset(edge: .bottom) {
             if title.episodeCount > 1 {
                 HStack {
-                    Button { if let previous { episode = previous } } label: {
+                    Button { if let previous { loadState = .loading; episode = previous } } label: {
                         Label("前の話", systemImage: "chevron.left")
                     }.disabled(previous == nil).accessibilityIdentifier("previous-episode")
                     Spacer()
                     Text("\(episode.number) / \(title.episodeCount)")
                         .font(.caption).foregroundStyle(.secondary)
                     Spacer()
-                    Button { if let next { episode = next } } label: {
+                    Button { if let next { loadState = .loading; episode = next } } label: {
                         HStack(spacing: 5) {
                             Text("次の話")
                             Image(systemName: "chevron.right")
@@ -251,27 +254,72 @@ struct ReaderView: View {
     }
 }
 
+enum ReaderLoadState {
+    case loading, ready, failed
+}
+
 struct WebtoonReader: UIViewRepresentable {
     let url: URL
     let background: String
+    @Binding var loadState: ReaderLoadState
+
+    func makeCoordinator() -> Coordinator { Coordinator(loadState: $loadState) }
 
     func makeUIView(context: Context) -> WKWebView {
         let configuration = WKWebViewConfiguration()
         configuration.websiteDataStore = .nonPersistent()
         let view = WKWebView(frame: .zero, configuration: configuration)
+        view.navigationDelegate = context.coordinator
         let color = UIColor(webtoonHex: background)
         view.isOpaque = false
         view.backgroundColor = color
         view.scrollView.backgroundColor = color
         view.scrollView.contentInsetAdjustmentBehavior = .never
         view.scrollView.alwaysBounceHorizontal = false
-        view.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+        context.coordinator.load(url, in: view)
         return view
     }
 
     func updateUIView(_ view: WKWebView, context: Context) {
-        if view.url != url {
+        context.coordinator.loadState = $loadState
+        context.coordinator.load(url, in: view)
+    }
+
+    static func dismantleUIView(_ view: WKWebView, coordinator: Coordinator) {
+        view.navigationDelegate = nil
+        view.stopLoading()
+    }
+
+    final class Coordinator: NSObject, WKNavigationDelegate {
+        var loadState: Binding<ReaderLoadState>
+        private var requestedURL: URL?
+
+        init(loadState: Binding<ReaderLoadState>) { self.loadState = loadState }
+
+        func load(_ url: URL, in view: WKWebView) {
+            guard requestedURL != url else { return }
+            requestedURL = url
             view.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+        }
+
+        func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+            loadState.wrappedValue = .loading
+        }
+
+        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+            loadState.wrappedValue = .ready
+        }
+
+        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+            loadState.wrappedValue = .failed
+        }
+
+        func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+            loadState.wrappedValue = .failed
+        }
+
+        func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+            loadState.wrappedValue = .failed
         }
     }
 }

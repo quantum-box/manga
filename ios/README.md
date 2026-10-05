@@ -38,9 +38,15 @@ repoルートで実行する。
 
 ```sh
 python3 -m unittest discover -s scripts -p 'test_*.py'
+swiftc ios/Manga/Sources/Catalog.swift scripts/test_ios_catalog.swift -o /tmp/manga-catalog-tests
+/tmp/manga-catalog-tests
 xcodebuild -project ios/Manga/Manga.xcodeproj -scheme Manga \
   -destination 'generic/platform=iOS Simulator' \
   -derivedDataPath /tmp/manga-build CODE_SIGNING_ALLOWED=NO build
 ```
 
 mainへの反映はソース更新。TestFlight配布の完了とは別に確認する。
+
+カタログのSwiftテストはmacOSで実行する。実機と同様に実在する`/private/var`のファイルを用意し、以前のパス比較がカタログを拒否することと、修正後に4作品・全15版・武侠10話を読み込めることを確認する。画像と本文にも同じパス解決を使う。読み込み失敗は空の検索結果と区別し、本文の読み込み中も表示する。
+
+配布アーカイブの内容を同じテストで確認する場合は、実際の`Manga.app`ディレクトリをテスト実行時の第1引数に指定する。GitHub ActionsではPythonによる収録整合性とmacOSでの実機パス回帰テストを実行する。
