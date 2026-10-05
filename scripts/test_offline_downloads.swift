@@ -1,6 +1,7 @@
 import Foundation
 final class OfflineAPI: URLProtocol {
     static var failImage = false
+    static var revision = "v1"
     static var requests = 0
     override class func canInit(with request: URLRequest) -> Bool { true }
     override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
@@ -9,9 +10,9 @@ final class OfflineAPI: URLProtocol {
         let path = request.url!.path
         let status = Self.failImage && path.hasSuffix("01.png") ? 503 : 200
         let data = path.hasPrefix("/api/episodes/") ? Data("""
-        {"title":"Test","blocks":[{"type":"caption","text":"<script>bad()</script>"},{"type":"image","src":"01.png","alt":"test"}]}
+        {"title":"Test","subtitle":"Subtitle","blocks":[{"type":"caption","text":"<script>bad()</script>"},{"type":"image","src":"01.png","alt":"test"}]}
         """.utf8) : Data([137, 80, 78, 71, 13, 10, 26, 10])
-        client?.urlProtocol(self, didReceive: HTTPURLResponse(url: request.url!, statusCode: status, httpVersion: nil, headerFields: nil)!, cacheStoragePolicy: .notAllowed)
+        client?.urlProtocol(self, didReceive: HTTPURLResponse(url: request.url!, statusCode: status, httpVersion: nil, headerFields: ["ETag": "\"" + Self.revision + "\""])!, cacheStoragePolicy: .notAllowed)
         client?.urlProtocol(self, didLoad: data)
         client?.urlProtocolDidFinishLoading(self)
     }
@@ -24,14 +25,15 @@ final class OfflineAPI: URLProtocol {
         let config = URLSessionConfiguration.ephemeral; config.protocolClasses = [OfflineAPI.self]
         let session = URLSession(configuration: config)
         let episode = Episode(id: "test", number: 1, title: "Test", edition: "", reader: "/?episode=test", background: "#111111")
-        let title = MangaTitle(id: "online-test", title: "Test", genre: "Webtoon", image: "/images/test/cover.png", tagline: "", synopsis: "", episodes: [episode])
+        var title = MangaTitle(id: "online-test", title: "Test", genre: "Webtoon", image: "/images/test/cover.png", tagline: "", synopsis: "", episodes: [episode])
+        title.revision = "v1"
         OfflineAPI.failImage = true
         do { try await DownloadManager.shared.download(title, root: root, session: session); fatalError("Incomplete download accepted") } catch {}
         let incomplete = try OfflineDownloads.load(root: root)
         precondition(incomplete.isEmpty)
         OfflineAPI.failImage = false
         try await DownloadManager.shared.download(title, root: root, session: session)
-        session.invalidateAndCancel()
+
         // Load only the persisted files with networking disabled.
         let titles = try OfflineDownloads.load(root: root)
         precondition(titles.count == 1)
@@ -43,6 +45,18 @@ final class OfflineAPI: URLProtocol {
         let count = OfflineAPI.requests
         try await DownloadManager.shared.download(title, root: root, session: session)
         precondition(count == OfflineAPI.requests)
+        title.revision = "v2"
+        OfflineAPI.revision = "v2"
+        OfflineAPI.failImage = true
+        do { try await DownloadManager.shared.download(title, root: root, session: session); fatalError("Failed update accepted") } catch {}
+        let kept = try OfflineDownloads.load(root: root)
+        precondition(kept[0].revision == "v1")
+        OfflineAPI.failImage = false
+        try await DownloadManager.shared.download(title, root: root, session: session)
+        let updated = try OfflineDownloads.load(root: root)
+        precondition(updated.count == 1 && updated[0].revision == "v2")
+        precondition(try! String(contentsOf: reader, encoding: .utf8).contains("Subtitle"))
+        session.invalidateAndCancel()
         try await DownloadManager.shared.delete(title.id, root: root)
         let deleted = try OfflineDownloads.load(root: root)
         precondition(deleted.isEmpty && !FileManager.default.fileExists(atPath: reader.path))

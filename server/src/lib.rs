@@ -5,6 +5,8 @@ const MAX_IMAGE: usize = 16 * 1024 * 1024;
 #[derive(Deserialize, Serialize)]
 struct Episode {
     title: String,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    subtitle: Option<String>,
     blocks: Vec<Block>,
 }
 #[derive(Deserialize, Serialize)]
@@ -104,6 +106,7 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
                 let Some(object) = bucket.get(&key).execute().await? else {
                     continue;
                 };
+                let revision = object.etag();
                 let ep: Episode =
                     serde_json::from_slice(&object.body().ok_or("Missing body")?.bytes().await?)?;
                 let Some(cover) = ep.blocks.iter().find_map(|b| {
@@ -116,7 +119,7 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
                     continue;
                 };
                 titles.push(serde_json::json!({
-                    "id": format!("online-{id}"), "title": ep.title, "genre": "Webtoon",
+                    "id": format!("online-{id}"), "title": ep.title, "genre": "Webtoon", "revision": revision,
                     "image": format!("/images/{id}/{cover}"), "tagline": ep.title,
                     "synopsis": "配信中のWebtoon", "episodes": [{
                         "id": id, "number": 1, "title": ep.title, "edition": "配信版",
@@ -165,8 +168,11 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
             let Some(obj) = bucket.get(format!("episodes/{id}.json")).execute().await? else {
                 return Response::error("Not found", 404);
             };
+            let etag = obj.http_etag();
             let bytes = obj.body().ok_or("Missing body")?.bytes().await?;
-            Ok(Response::from_bytes(bytes)?.with_headers(headers("application/json", "no-cache")?))
+            let h = headers("application/json", "no-cache")?;
+            h.set("ETag", &etag)?;
+            Ok(Response::from_bytes(bytes)?.with_headers(h))
         }
         (Method::Get, ["images", id, name]) if slug(id) && image_name(name) => {
             // Only images referenced by a published episode are public.
@@ -298,6 +304,8 @@ mod tests {
             "../../examples/pochis-handshake/webtoon/episode.json"
         ))
         .unwrap();
+        let encoded = serde_json::to_value(&ep).unwrap();
+        assert_eq!(encoded["subtitle"], "ポチと魔王の、おて。");
         assert_eq!(
             ep.blocks
                 .iter()

@@ -19,7 +19,7 @@ SwiftUI製のWebtoonアプリ。iOS 17以降。配信APIから作品一覧・表
 
 お気に入りは端末内に保存。配信APIは`GET /api/v1/catalog`。読者の課金・認証は未実装。管理者トークンはアプリに含めない。
 
-接続先はXcode Build Settingの`MANGA_API_BASE_URL`（HTTPS）。現在はPR #5のpreview Workerを指定している。本番URLが確定したらDebug/Release両方を更新する。カタログ更新は起動・読み込み元切替・下へ引っ張って更新で行う。通信失敗はエラーとして表示し、オフラインを明示的に選べる。
+接続先はXcode Build Settingの`MANGA_API_BASE_URL`（HTTPS）。DebugはPR #5のpreview Worker、Releaseは本番Worker（manga-server.quantum-box.workers.dev）を指定する。本番デプロイはPRマージ後に確認する。カタログ更新は起動・読み込み元切替・下へ引っ張って更新で行う。通信失敗はエラーとして表示し、オフラインを明示的に選べる。
 
 ## 作品を追加・修正する
 
@@ -62,5 +62,5 @@ Application Support/MangaDownloadsへ保存し、iCloudバックアップから�
 保存済み作品は再ダウンロードせず再利用する。設定（一覧右上の歯車）で自動保存をオフにできる。
 保存済み作品ごとの「削除」から確認後に端末のデータを削除できる。同梱作品は対象外。
 削除と保存完了が競合しても保存データは復活しない。再び配信作品を開くと再保存するため、
-保存を止めたい場合は自動保存をオフにする。更新版への置き換えは未実装。
+保存を止めたい場合は自動保存をオフにする。公開JSONのrevision（Storage ETag）が変わった場合は全ファイルを再取得して保存フォルダを置き換える。更新に失敗した場合は旧版を保持する。
 保存中はアプリを開いておく（バックグラウンドダウンロードは未対応）。

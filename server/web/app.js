@@ -23,6 +23,7 @@ async function load() {
   const ep = await json('/api/episodes/' + encodeURIComponent(id));
   document.title = ep.title + ' · Manga';
   root.append(text('h1', ep.title));
+  if (ep.subtitle) root.append(text('p', ep.subtitle));
   ep.blocks.forEach((block, index) => {
     if (block.type === 'image') {
       const img = document.createElement('img');

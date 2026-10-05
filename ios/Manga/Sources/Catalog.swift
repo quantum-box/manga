@@ -8,6 +8,7 @@ struct MangaTitle: Identifiable, Hashable, Codable {
     let tagline: String
     let synopsis: String
     let episodes: [Episode]
+    var revision: String? = nil
     var episodeCount: Int { Set(episodes.map(\.number)).count }
 }
 
@@ -27,7 +28,7 @@ enum Catalog {
 
     static var apiBaseURL: URL {
         URL(string: Bundle.main.object(forInfoDictionaryKey: "MangaAPIBaseURL") as? String
-            ?? "https://pr5--manga-server.quantum-box.workers.dev")!
+            ?? "https://manga-server.quantum-box.workers.dev")!
     }
 
     static func loadRemote(session: URLSession = .shared) async throws -> [MangaTitle] {
@@ -134,7 +135,8 @@ actor DownloadManager {
 
     func download(_ title: MangaTitle, root: URL = OfflineDownloads.root, session: URLSession = .shared,
                   progress: (Int, Int) async -> Void = { _, _ in }) async throws {
-        if try OfflineDownloads.load(root: root).contains(where: { $0.id == title.id }) { return }
+        let existing = try OfflineDownloads.load(root: root).first { $0.id == title.id }
+        if let revision = title.revision, existing?.revision == revision { return }
         guard active.insert(title.id).inserted else { throw DownloadError.alreadyDownloading }
         defer { active.remove(title.id) }
         let revision = revisions[title.id, default: 0]
@@ -144,17 +146,22 @@ actor DownloadManager {
         var directory = root
         var values = URLResourceValues(); values.isExcludedFromBackup = true
         try directory.setResourceValues(values)
-        let folder = UUID().uuidString
-        let staging = root.appendingPathComponent("." + folder, isDirectory: true)
+        let existingFolder = existing?.image.split(separator: "/").dropFirst().first.map(String.init)
+        let folder = existingFolder ?? UUID().uuidString
+        guard safe(folder) else { throw DownloadError.invalidContent }
+        let staging = root.appendingPathComponent("." + UUID().uuidString, isDirectory: true)
         try manager.createDirectory(at: staging, withIntermediateDirectories: true)
         defer { try? manager.removeItem(at: staging) }
         var totalBytes = 0
-        func get(_ path: String, limit: Int) async throws -> Data {
+        func get(_ path: String, limit: Int, expectedRevision: String? = nil) async throws -> Data {
             try Task.checkCancellation()
             guard let url = Catalog.remoteURL(path) else { throw DownloadError.invalidContent }
             var request = URLRequest(url: url); request.timeoutInterval = 60
             let (data, response) = try await session.data(for: request)
             guard let http = response as? HTTPURLResponse, http.statusCode == 200 else { throw URLError(.badServerResponse) }
+            if let expectedRevision {
+                guard http.value(forHTTPHeaderField: "ETag")?.trimmingCharacters(in: CharacterSet(charactersIn: "\"")) == expectedRevision else { throw DownloadError.invalidContent }
+            }
             // Redirects must remain on the configured server.
             guard response.url?.host == Catalog.apiBaseURL.host, response.url?.scheme == "https" else { throw DownloadError.invalidContent }
             totalBytes += data.count
@@ -166,12 +173,13 @@ actor DownloadManager {
         var episodes = [Episode]()
         for (index, episode) in title.episodes.enumerated() {
             guard safe(episode.id) else { throw DownloadError.invalidContent }
-            let data = try await get("/api/episodes/" + episode.id, limit: 256 * 1024)
+            let data = try await get("/api/episodes/" + episode.id, limit: 256 * 1024, expectedRevision: title.revision)
             guard let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
                   let blocks = json["blocks"] as? [[String: Any]], !blocks.isEmpty else { throw DownloadError.invalidContent }
             let episodeDir = staging.appendingPathComponent(episode.id, isDirectory: true)
             try manager.createDirectory(at: episodeDir, withIntermediateDirectories: true)
             var body = "<h1>" + escape(episode.title) + "</h1>"
+            if let subtitle = json["subtitle"] as? String { body += "<p>" + escape(subtitle) + "</p>" }
             for block in blocks {
                 switch block["type"] as? String {
                 case "image":
@@ -197,11 +205,15 @@ actor DownloadManager {
                 reader: "downloads/\(folder)/\(episode.id)/index.html", background: "#111111"))
             await progress(index + 1, title.episodes.count)
         }
-        let saved = MangaTitle(id: title.id, title: title.title, genre: title.genre, image: "downloads/\(folder)/cover",
+        var saved = MangaTitle(id: title.id, title: title.title, genre: title.genre, image: "downloads/\(folder)/cover",
                               tagline: title.tagline, synopsis: title.synopsis, episodes: episodes)
+        saved.revision = title.revision
         try JSONEncoder().encode(saved).write(to: staging.appendingPathComponent("title.json"), options: .atomic)
         try Task.checkCancellation()
         guard revisions[title.id, default: 0] == revision else { throw CancellationError() }
-        try manager.moveItem(at: staging, to: root.appendingPathComponent(folder))
+        let destination = root.appendingPathComponent(folder)
+        if manager.fileExists(atPath: destination.path) {
+            _ = try manager.replaceItemAt(destination, withItemAt: staging)
+        } else { try manager.moveItem(at: staging, to: destination) }
     }
 }
