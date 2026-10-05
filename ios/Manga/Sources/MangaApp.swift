@@ -357,9 +357,11 @@ struct WebtoonReader: UIViewRepresentable {
         configuration.websiteDataStore = .nonPersistent()
         configuration.userContentController.add(context.coordinator, name: "mangaReader")
         // The native toolbar owns chapter navigation; keep web links from changing its episode.
-        configuration.userContentController.addUserScript(WKUserScript(
-            source: "const nativeStyle = document.createElement('style'); nativeStyle.textContent = 'header,nav{display:none!important}'; document.head.appendChild(nativeStyle);",
-            injectionTime: .atDocumentEnd, forMainFrameOnly: true))
+        if !url.isFileURL {
+            configuration.userContentController.addUserScript(WKUserScript(
+                source: "const nativeStyle = document.createElement('style'); nativeStyle.textContent = 'body>header,#reader>nav{display:none!important}'; document.head.appendChild(nativeStyle);",
+                injectionTime: .atDocumentEnd, forMainFrameOnly: true))
+        }
         let view = WKWebView(frame: .zero, configuration: configuration)
         view.navigationDelegate = context.coordinator
         let color = UIColor(webtoonHex: background)
@@ -404,7 +406,7 @@ struct WebtoonReader: UIViewRepresentable {
         func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction,
                      decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
             // Back and next chapter are native controls. Do not navigate the embedded page independently.
-            decisionHandler(navigationAction.navigationType == .linkActivated ? .cancel : .allow)
+            decisionHandler(requestedURL?.isFileURL != true && navigationAction.navigationType == .linkActivated ? .cancel : .allow)
         }
 
         func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse,
