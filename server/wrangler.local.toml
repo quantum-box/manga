@@ -1,0 +1,9 @@
+name = "manga-server"
+main = "build/worker/shim.mjs"
+compatibility_date = "2026-10-05"
+[build]
+command = "worker-build --release"
+# Local development only. Tachyon supplies the managed binding when deployed.
+[[r2_buckets]]
+binding = "MANGA"
+bucket_name = "manga-local"

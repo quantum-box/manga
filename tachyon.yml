@@ -1,0 +1,31 @@
+apiVersion: apps.tachy.one/v1alpha
+kind: CloudApps
+metadata:
+  name: manga
+  tenantId: tn_01m44xa8yvs4gdkvtcvrp7tq14
+spec:
+  apps:
+    - name: manga-server
+      repository:
+        url: https://github.com/quantum-box/manga
+        owner: quantum-box
+        name: manga
+        defaultBranch: main
+      rootDirectory: server
+      framework: worker
+      deploymentTarget: cloudflare_workers
+      build:
+        installCommand: bash install.sh
+        command: bash build.sh
+      worker:
+        generateConfig: true
+        main: build/worker/shim.mjs
+        compatibilityDate: '2026-10-05'
+      r2Buckets:
+        - binding: MANGA
+          bucketName: manga-content
+          managed: true
+      envVars:
+        - name: ADMIN_TOKEN
+          valueFrom:
+            secret: manga-server/ADMIN_TOKEN

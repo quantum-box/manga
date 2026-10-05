@@ -37,3 +37,7 @@ python3 scripts/sync_ios_webtoons.py --check
 ```
 
 画像生成は制作時に行い、アプリ実行時のAPI接続は不要。配信サービスへの投稿やTestFlightへの配布は別工程。
+
+## 配信サーバー
+
+[Webtoon配信サーバー](server/README.md): Rust / Cloudflare Workers + Tachyon Storage。
