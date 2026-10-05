@@ -25,3 +25,8 @@ spec:
         - binding: MANGA
           bucketName: manga-content
           managed: true
+      envVars:
+        - name: ADMIN_TOKEN
+type: credential
+valueFrom:
+secret: manga-server/ADMIN_TOKEN
