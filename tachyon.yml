@@ -27,6 +27,5 @@ spec:
           managed: true
       envVars:
         - name: ADMIN_TOKEN
-type: credential
-valueFrom:
-secret: manga-server/ADMIN_TOKEN
+          valueFrom:
+            secret: manga-server/ADMIN_TOKEN
