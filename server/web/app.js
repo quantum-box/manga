@@ -20,6 +20,7 @@ function restoreReadChapters() {
 function chapterKey(series, number) { return series.id + ':' + number; }
 function isRead(series, number) { return readChapters.has(chapterKey(series, number)); }
 function setRead(series, number, read) {
+  restoreReadChapters();
   const key = chapterKey(series, number);
   if (read) readChapters.add(key); else readChapters.delete(key);
   try { localStorage.setItem(historyKey, JSON.stringify([...readChapters])); } catch {}
