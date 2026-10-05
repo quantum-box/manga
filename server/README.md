@@ -79,3 +79,5 @@ iOSはURLSessionで一覧、AsyncImageで表紙、WKWebViewで本文を取得す
 表紙は任意の`cover`画像名で指定できる。本文画像と同様に先に管理APIへアップロードする。表紙に本文全体の画像を使わず、小さなJPEGを推奨する。
 
 ブラウザーの既読は最初の画像の読み込み成功時に localStorage へ保存します。話一覧に既読・未読と未読へ戻す操作を表示し、未読の最初の話へ進めます。同じ話の別版は既読を共有します。端末・ブラウザー間の同期は行いません。
+
+本文の配信には390px幅の確認用画像を使わず、元の `reader.html` を390 CSS px・3倍密度（1170px幅）で書き出します。`scripts/render_retina_reader.cjs`（Playwright）で分割PNGを生成し、`scripts/optimize_retina_images.py`（Pillow）でPNGまたは高画質WebPへ圧縮します。解像度を保持してハッシュ付きファイル名でアップロードし、全画像の存在と内容を確認してから本文JSONを差し替えます。

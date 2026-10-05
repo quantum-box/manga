@@ -247,8 +247,7 @@ actor DownloadManager {
                   let blocks = json["blocks"] as? [[String: Any]], !blocks.isEmpty else { throw DownloadError.invalidContent }
             let episodeDir = staging.appendingPathComponent(episode.id, isDirectory: true)
             try manager.createDirectory(at: episodeDir, withIntermediateDirectories: true)
-            var body = "<h1>" + escape(episode.title) + "</h1>"
-            if let subtitle = json["subtitle"] as? String { body += "<p>" + escape(subtitle) + "</p>" }
+            var body = ""
             for block in blocks {
                 switch block["type"] as? String {
                 case "image":
@@ -284,5 +283,56 @@ actor DownloadManager {
         if manager.fileExists(atPath: destination.path) {
             _ = try manager.replaceItemAt(destination, withItemAt: staging)
         } else { try manager.moveItem(at: staging, to: destination) }
+    }
+}
+struct ReaderContent {
+    let html: String
+    let revision: String
+
+    enum ContentError: Error { case invalidContent }
+    static func episodeID(from url: URL) -> String? {
+        URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?.first { $0.name == "episode" }?.value
+    }
+    static func load(id: String, session: URLSession = .shared) async throws -> ReaderContent {
+        guard validSlug(id), let url = Catalog.remoteURL("/api/episodes/" + id) else { throw ContentError.invalidContent }
+        var request = URLRequest(url: url); request.timeoutInterval = 30
+        request.cachePolicy = .reloadIgnoringLocalCacheData
+        let (data, response) = try await session.data(for: request)
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200,
+              response.url?.scheme == Catalog.apiBaseURL.scheme, response.url?.host == Catalog.apiBaseURL.host,
+              data.count <= 256 * 1024, let etag = response.value(forHTTPHeaderField: "ETag") else { throw ContentError.invalidContent }
+        let revision = (etag.hasPrefix("W/") ? String(etag.dropFirst(2)) : etag).trimmingCharacters(in: CharacterSet(charactersIn: "\""))
+        guard !revision.isEmpty else { throw ContentError.invalidContent }
+        return ReaderContent(html: try render(data, id: id), revision: revision)
+    }
+    static func render(_ data: Data, id: String) throws -> String {
+        guard validSlug(id), let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let blocks = json["blocks"] as? [[String: Any]], !blocks.isEmpty else { throw ContentError.invalidContent }
+        var body = "", imageCount = 0
+        for block in blocks {
+            switch block["type"] as? String {
+            case "image":
+                guard let name = block["src"] as? String, let dot = name.lastIndex(of: "."), validSlug(String(name[..<dot])),
+                      ["png", "jpg", "webp"].contains(String(name[name.index(after: dot)...])),
+                      let url = Catalog.remoteURL("/images/" + id + "/" + name) else { throw ContentError.invalidContent }
+                let loading = imageCount == 0 ? "eager" : "lazy"; imageCount += 1
+                body += "<img src=\"" + escape(url.absoluteString) + "\" alt=\"" + escape(block["alt"] as? String ?? "") + "\" loading=\"" + loading + "\">"
+            case "spacer": body += "<div class=\"spacer " + ((block["size"] as? String == "long") ? "long" : "") + "\"></div>"
+            case "caption", "ending": body += "<p>" + escape(block["text"] as? String ?? "") + "</p>"
+            case "speech": body += "<p>" + escape(block["speaker"] as? String ?? "") + "「" + escape(block["text"] as? String ?? "") + "」</p>"
+            default: throw ContentError.invalidContent
+            }
+        }
+        return """
+        <!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src \(Catalog.apiBaseURL.absoluteString); style-src 'unsafe-inline'">
+        <style>html,body{margin:0;background:#111;color:#eee;font-family:system-ui}main{max-width:720px;margin:auto}img{display:block;width:100%;height:auto}p{padding:24px;line-height:1.8}.spacer{height:100px}.long{height:260px}</style></head><body><main>\(body)</main></body></html>
+        """
+    }
+    private static func validSlug(_ value: String) -> Bool {
+        !value.isEmpty && value.utf8.count <= 80 && value.utf8.allSatisfy { (48...57).contains($0) || (65...90).contains($0) || (97...122).contains($0) || $0 == 45 || $0 == 95 }
+    }
+    private static func escape(_ value: String) -> String {
+        value.replacingOccurrences(of: "&", with: "&amp;").replacingOccurrences(of: "<", with: "&lt;").replacingOccurrences(of: ">", with: "&gt;").replacingOccurrences(of: "\"", with: "&quot;")
     }
 }

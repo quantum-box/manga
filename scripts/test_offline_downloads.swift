@@ -61,7 +61,7 @@ final class OfflineAPI: URLProtocol {
         try await DownloadManager.shared.download(title, root: root, session: session)
         let updated = try OfflineDownloads.load(root: root)
         precondition(updated.count == 1 && updated[0].revision == "v2")
-        precondition(try! String(contentsOf: reader, encoding: .utf8).contains("Subtitle"))
+        precondition(!(try! String(contentsOf: reader, encoding: .utf8)).contains("Subtitle"))
         session.invalidateAndCancel()
         try await DownloadManager.shared.delete(title.id, root: root)
         let deleted = try OfflineDownloads.load(root: root)
