@@ -36,10 +36,10 @@ def request(path, data=None, mime=None):
     with opener.open(req, timeout=60) as response:
         return response.read()
 
-for block in episode['blocks']:
-    if block['type'] != 'image':
-        continue
-    name = block['src']
+names = [block['src'] for block in episode['blocks'] if block['type'] == 'image']
+if episode.get('cover') is not None:
+    names.append(episode['cover'])
+for name in dict.fromkeys(names):
     if not re.fullmatch(r'[A-Za-z0-9_-]{1,80}\.(png|jpg|webp)', name):
         parser.error('Invalid image filename')
     content = (args.episode_json.parent / name).read_bytes()

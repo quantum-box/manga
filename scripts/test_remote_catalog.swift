@@ -1,11 +1,13 @@
 import Foundation
 
 final class MockAPI: URLProtocol {
+    static var requests = 0
     static var status = 200
     static var body = Data()
     override class func canInit(with request: URLRequest) -> Bool { true }
     override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
     override func startLoading() {
+        Self.requests += 1
         precondition(request.url?.path == "/api/v1/catalog")
         precondition(request.value(forHTTPHeaderField: "Authorization") == nil)
         client?.urlProtocol(self, didReceive: HTTPURLResponse(url: request.url!, statusCode: Self.status, httpVersion: nil, headerFields: nil)!, cacheStoragePolicy: .notAllowed)
@@ -29,6 +31,20 @@ final class MockAPI: URLProtocol {
         for path in ["//evil.example/x", "https://evil.example/x", "file:///etc/passwd"] {
             precondition(Catalog.remoteURL(path) == nil)
         }
+        let cache = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString).appendingPathComponent("catalog.json")
+        defer { try? FileManager.default.removeItem(at: cache.deletingLastPathComponent()) }
+        var fixture = try JSONSerialization.jsonObject(with: Data(json.utf8)) as! [[String: Any]]
+        let first = (fixture[0]["episodes"] as! [[String: Any]])[0]
+        var second = first; second["id"] = "second"; second["number"] = 2
+        fixture[0]["episodes"] = [second, first]
+        MockAPI.body = try JSONSerialization.data(withJSONObject: fixture)
+        let sorted = try await Catalog.loadRemote(session: session, cacheURL: cache)
+        precondition(sorted[0].orderedEpisodes.map(\.number) == [1, 2])
+        precondition(sorted[0].primaryEpisodes.first!.number == 1)
+        let count = MockAPI.requests
+        let cached = Catalog.cachedRemote(cacheURL: cache)
+        precondition(cached?.first?.primaryEpisodes.first?.number == 1 && count == MockAPI.requests)
+        print("PASS: chapter 1 stays first and saved catalog appears without a network request")
         MockAPI.status = 503
         do { _ = try await Catalog.loadRemote(session: session); fatalError("503 accepted") } catch {}
         MockAPI.status = 200

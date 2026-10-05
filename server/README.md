@@ -69,6 +69,11 @@ python3 scripts/publish_episode.py https://<worker-host> pochis-handshake \
 ## iOS配信API v1
 
 `GET /api/v1/catalog`はiOSの`MangaTitle` / `Episode`と同じJSON配列を返す。
-`image`と`reader`は同一HTTPS originに対する相対パス。公開エピソードを1作品・1話として
-扱うMVPで、最大100作品。Storageの公開JSONが正本になり、アップロード後に一覧へ反映される。
+`image`と`reader`は同一HTTPS originに対する相対パス。公開エピソードをシリーズごとにまとめ、話数の昇順に並べる。改稿版は同じ話数を持つ別版として保持する。
+作品名・話タイトルは制作カタログを使う。各話のrevisionとシリーズ全体のrevisionを返す。
+Storageの公開JSONが正本で、公開時のgeneration変更で一覧索引を無効化する。
+通常の一覧取得は全話のJSONを再取得せず、generationと保存済み索引だけを読む。
+索引キーにはコードと制作カタログのハッシュを含め、デプロイ後も古い表記を再利用しない。
 iOSはURLSessionで一覧、AsyncImageで表紙、WKWebViewで本文を取得する。管理者認証は不要。
+
+表紙は任意の`cover`画像名で指定できる。本文画像と同様に先に管理APIへアップロードする。表紙に本文全体の画像を使わず、小さなJPEGを推奨する。
