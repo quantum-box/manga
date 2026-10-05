@@ -4,6 +4,7 @@ final class OfflineAPI: URLProtocol {
     static var revision = "v1"
     static var weakETag = true
     static var requests = 0
+    static var episodeRevisions = [String: String]()
     override class func canInit(with request: URLRequest) -> Bool { true }
     override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
     override func startLoading() {
@@ -13,7 +14,7 @@ final class OfflineAPI: URLProtocol {
         let data = path.hasPrefix("/api/episodes/") ? Data("""
         {"title":"Test","subtitle":"Subtitle","blocks":[{"type":"caption","text":"<script>bad()</script>"},{"type":"image","src":"01.png","alt":"test"}]}
         """.utf8) : Data([137, 80, 78, 71, 13, 10, 26, 10])
-        client?.urlProtocol(self, didReceive: HTTPURLResponse(url: request.url!, statusCode: status, httpVersion: nil, headerFields: ["ETag": (Self.weakETag ? "W/" : "") + "\"" + Self.revision + "\""])!, cacheStoragePolicy: .notAllowed)
+        client?.urlProtocol(self, didReceive: HTTPURLResponse(url: request.url!, statusCode: status, httpVersion: nil, headerFields: ["ETag": (Self.weakETag ? "W/" : "") + "\"" + (Self.episodeRevisions[path] ?? Self.revision) + "\""])!, cacheStoragePolicy: .notAllowed)
         client?.urlProtocol(self, didLoad: data)
         client?.urlProtocolDidFinishLoading(self)
     }
@@ -72,6 +73,15 @@ final class OfflineAPI: URLProtocol {
         } catch is CancellationError {}
         let afterRace = try OfflineDownloads.load(root: root)
         precondition(afterRace.isEmpty)
+        let first = Episode(id: "first", number: 1, title: "First", edition: "", reader: "/?episode=first", background: "#111111", revision: "chapter-one")
+        let second = Episode(id: "second", number: 2, title: "Second", edition: "", reader: "/?episode=second", background: "#111111", revision: "chapter-two")
+        let series = MangaTitle(id: "online-series", title: "Series", genre: "Webtoon", image: "/images/first/cover.png", tagline: "", synopsis: "", episodes: [first, second], revision: "chapter-one:chapter-two")
+        OfflineAPI.episodeRevisions = ["/api/episodes/first": "chapter-one", "/api/episodes/second": "chapter-two"]
+        try await DownloadManager.shared.download(series, root: root, session: nextSession)
+        let grouped = try OfflineDownloads.load(root: root)
+        precondition(grouped.count == 1 && grouped[0].episodes.count == 2)
+        precondition(grouped[0].episodes.map(\.revision) == ["chapter-one", "chapter-two"])
+        print("PASS: a grouped series verifies each chapter against its own revision")
         print("PASS: deletion removes files and prevents an in-flight download from restoring them")
         print("PASS: failed downloads stay hidden; completed files read without networking; duplicates reuse saved data")
     }

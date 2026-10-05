@@ -1,0 +1,76 @@
+pub struct SeriesInfo {
+    pub id: String,
+    pub title: String,
+    pub number: u32,
+    pub edition: String,
+    pub rank: u32,
+}
+
+pub fn identify(id: &str, title: &str) -> SeriesInfo {
+    let (series, canonical) = if id.starts_with("swordsaint-") {
+        ("swordsaint", "剣聖、仇の弟子に転生する")
+    } else if id.starts_with("pochi-") || id == "pochis-handshake" {
+        ("pochi", "転生したら柴犬だった。")
+    } else if id.starts_with("star-lighthouse-") {
+        ("star-lighthouse", "星を拾う夜")
+    } else if id.starts_with("lost-property-clerk-") {
+        ("lost-property-clerk", "終電後の落とし物係")
+    } else if id.starts_with("heavenly-demon-") {
+        ("heavenly-demon", "天魔、強くてニューゲーム")
+    } else if id.starts_with("zero-break-") {
+        ("zero-break", "ZERO BREAK")
+    } else {
+        (id, title)
+    };
+    let number = id
+        .split("episode-")
+        .nth(1)
+        .and_then(|s| s.split('-').next())
+        .and_then(|s| s.parse().ok())
+        .unwrap_or(1);
+    let (edition, rank) = match id {
+        "swordsaint-episode-01-white-v3" => ("白背景・ゆっくり版", 0),
+        "swordsaint-white-v2" => ("白背景・v2", 1),
+        "swordsaint-episode-01-white" => ("白背景・初稿", 2),
+        "swordsaint-episode-01" => ("初稿・夜色版", 3),
+        "pochi-episode-01" => ("縦読み再構成v2", 0),
+        "pochis-handshake" => ("縦読み初稿", 1),
+        "pochi-page-v2" => ("白黒ページ・v2", 2),
+        "pochi-page-v1" => ("白黒ページ・初稿", 3),
+        "star-lighthouse-v1" => ("初稿", 1),
+        "zero-break-v5" => ("v5", 0),
+        "zero-break-v4" => ("v4", 1),
+        "zero-break-v3" => ("v3", 2),
+        "zero-break-v3-lettered-sample" => ("v3・文字入り試作", 3),
+        "zero-break-v3-vertical-lettered-sample" => ("v3・縦書き試作", 4),
+        "zero-break-v2" => ("v2", 5),
+        "zero-break-v1" => ("初稿", 6),
+        _ => ("", 0),
+    };
+    SeriesInfo {
+        id: series.into(),
+        title: canonical.into(),
+        number,
+        edition: edition.into(),
+        rank,
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn groups_editions_and_numbers_chapters() {
+        for id in ["pochis-handshake", "pochi-episode-01", "pochi-page-v1"] {
+            assert_eq!(identify(id, "different title").id, "pochi");
+        }
+        assert_eq!(identify("swordsaint-white-v2", "").number, 1);
+        assert_eq!(identify("swordsaint-episode-10-white", "").number, 10);
+        assert!(identify("zero-break-v5", "").rank < identify("zero-break-v1", "").rank);
+    }
+    #[test]
+    fn unrelated_uploads_stay_separate() {
+        assert_eq!(identify("new-work", "新作").id, "new-work");
+        assert_eq!(identify("new-work", "新作").title, "新作");
+    }
+}
