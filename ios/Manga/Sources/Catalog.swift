@@ -254,7 +254,7 @@ actor DownloadManager {
             await progress(index + 1, requested.count)
         }
         var saved = MangaTitle(id: title.id, title: title.title, genre: title.genre, image: "downloads/\(folder)/cover",
-                              tagline: title.tagline, synopsis: title.synopsis, episodes: episodes.sorted { $0.number < $1.number })
+                              tagline: title.tagline, synopsis: title.synopsis, episodes: title.orderedEpisodes.compactMap { canonical in episodes.first { $0.id == canonical.id } })
         saved.revision = title.revision
         try JSONEncoder().encode(saved).write(to: staging.appendingPathComponent("title.json"), options: .atomic)
         try Task.checkCancellation()

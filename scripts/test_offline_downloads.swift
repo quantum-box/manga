@@ -94,6 +94,15 @@ final class OfflineAPI: URLProtocol {
         precondition(OfflineAPI.paths.filter { $0.hasPrefix("/api/episodes/") } == ["/api/episodes/second"])
         let accumulated = try OfflineDownloads.load(root: root)
         precondition(accumulated[0].episodes.map(\.id) == ["first", "second"])
+        let alternate = Episode(id: "alternate", number: 1, title: "Alternate", edition: "旧版", reader: "/?episode=alternate", background: "#111111", revision: "alternate-v1")
+        let editions = MangaTitle(id: "online-editions", title: "Editions", genre: "Webtoon", image: "/images/first/cover.png", tagline: "", synopsis: "", episodes: [first, alternate], revision: "editions-v1")
+        OfflineAPI.episodeRevisions["/api/episodes/alternate"] = "alternate-v1"
+        try await DownloadManager.shared.download(editions, episodeIDs: ["alternate"], root: root, session: nextSession)
+        try await DownloadManager.shared.download(editions, episodeIDs: ["first"], root: root, session: nextSession)
+        let savedEditions = try OfflineDownloads.load(root: root).first { $0.id == editions.id }!
+        precondition(savedEditions.episodes.map(\.id) == ["first", "alternate"])
+        precondition(savedEditions.primaryEpisodes.first!.id == "first")
+        print("PASS: preferred edition stays first when an alternate was saved earlier")
         print("PASS: reading one chapter downloads only it; later chapters retain earlier saved files")
         print("PASS: a grouped series verifies each chapter against its own revision")
         print("PASS: deletion removes files and prevents an in-flight download from restoring them")
