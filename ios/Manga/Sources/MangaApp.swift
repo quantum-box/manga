@@ -355,6 +355,7 @@ struct WebtoonReader: UIViewRepresentable {
     func makeUIView(context: Context) -> WKWebView {
         let configuration = WKWebViewConfiguration()
         configuration.websiteDataStore = .nonPersistent()
+        configuration.userContentController.add(context.coordinator, name: "mangaReader")
         let view = WKWebView(frame: .zero, configuration: configuration)
         view.navigationDelegate = context.coordinator
         let color = UIColor(webtoonHex: background)
@@ -373,11 +374,12 @@ struct WebtoonReader: UIViewRepresentable {
     }
 
     static func dismantleUIView(_ view: WKWebView, coordinator: Coordinator) {
+        view.configuration.userContentController.removeScriptMessageHandler(forName: "mangaReader")
         view.navigationDelegate = nil
         view.stopLoading()
     }
 
-    final class Coordinator: NSObject, WKNavigationDelegate {
+    final class Coordinator: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
         var loadState: Binding<ReaderLoadState>
         private var requestedURL: URL?
 
@@ -406,7 +408,19 @@ struct WebtoonReader: UIViewRepresentable {
         }
 
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            loadState.wrappedValue = .ready
+            // Remote navigation finishes before app.js fetches the chapter and images.
+            if requestedURL?.isFileURL == true { loadState.wrappedValue = .ready }
+        }
+
+        func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+            guard message.frameInfo.isMainFrame,
+                  let requestedURL, message.webView?.url?.host == requestedURL.host,
+                  message.webView?.url?.scheme == requestedURL.scheme,
+                  let body = message.body as? [String: String],
+                  let expectedID = URLComponents(url: requestedURL, resolvingAgainstBaseURL: false)?.queryItems?.first(where: { $0.name == "episode" })?.value,
+                  body["episodeID"] == expectedID else { return }
+            if body["state"] == "ready" { loadState.wrappedValue = .ready }
+            else if body["state"] == "failed" { loadState.wrappedValue = .failed }
         }
 
         func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {

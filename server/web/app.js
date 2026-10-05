@@ -24,6 +24,13 @@ function setRead(series, number, read) {
   if (read) readChapters.add(key); else readChapters.delete(key);
   try { localStorage.setItem(historyKey, JSON.stringify([...readChapters])); } catch {}
 }
+function notifyReader(state, episodeID) {
+  try { window.webkit?.messageHandlers?.mangaReader?.postMessage({state, episodeID}); } catch {}
+}
+function showLoadError(error) {
+  root.replaceChildren(text('p', error.message));
+  notifyReader('failed', new URL(location.href).searchParams.get('episode'));
+}
 async function json(url) {
   const response = await fetch(url);
   if (!response.ok) throw new Error('読み込めませんでした。時間をおいて再読み込みしてください。');
@@ -72,7 +79,7 @@ async function load() {
       section.append(text('span', isRead(series, number) ? '既読' : '未読', 'read-status'));
       const toggle = text('button', isRead(series, number) ? '未読に戻す' : '既読にする');
       toggle.type = 'button';
-      toggle.addEventListener('click', () => { setRead(series, number, !isRead(series, number)); load().catch(error => root.replaceChildren(text('p', error.message))); });
+      toggle.addEventListener('click', () => { setRead(series, number, !isRead(series, number)); load().catch(showLoadError); });
       section.append(toggle);
       const preferred = editions[0];
       section.append(link(preferred.title + (preferred.edition ? ' · ' + preferred.edition : ''), episodeURL(preferred.id)));
@@ -107,9 +114,13 @@ async function load() {
   // Record only once the first page actually loads; failed readers remain unread.
   if (series && chapter) {
     const firstImage = root.querySelector('img');
-    const mark = () => setRead(series, chapter.number, true);
+    const mark = () => { setRead(series, chapter.number, true); notifyReader('ready', id); };
     if (!firstImage || (firstImage.complete && firstImage.naturalWidth > 0)) mark();
-    else firstImage.addEventListener('load', mark, {once: true});
+    else {
+      firstImage.addEventListener('load', mark, {once: true});
+      firstImage.addEventListener('error', () => notifyReader('failed', id), {once: true});
+      if (firstImage.complete && firstImage.naturalWidth === 0) notifyReader('failed', id);
+    }
   }
   const nav = document.createElement('nav');
   if (series) {
@@ -120,6 +131,6 @@ async function load() {
   }
   nav.append(link('シリーズ一覧に戻る', '/')); root.append(nav);
 }
-load().catch(error => root.replaceChildren(text('p', error.message)));
+load().catch(showLoadError);
 
-addEventListener("pageshow", event => { if (event.persisted) load().catch(error => root.replaceChildren(text("p", error.message))); });
+addEventListener("pageshow", event => { if (event.persisted) load().catch(showLoadError); });
