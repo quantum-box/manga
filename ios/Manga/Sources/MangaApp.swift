@@ -24,7 +24,7 @@ struct Cover: View {
 }
 
 struct CatalogView: View {
-    @State private var catalog: Result<[MangaTitle], Error> = .success([])
+    @State private var catalog: Result<[MangaTitle], Error> = .success(Catalog.cachedRemote() ?? ((try? Catalog.loadOffline()) ?? []))
     @State private var online = true
     @State private var settingsPresented = false
     @State private var loading = true
@@ -34,11 +34,11 @@ struct CatalogView: View {
         genre = "すべて"
         if online {
             do {
-                let titles = try await Catalog.loadRemote()
+                let titles = try await Catalog.loadRemote(cacheURL: Catalog.remoteCacheURL)
                 guard !Task.isCancelled else { return }
                 catalog = .success(titles)
             }
-            catch { if !Task.isCancelled { catalog = .failure(error) } }
+            catch { if !Task.isCancelled && catalogTitles.isEmpty { catalog = .failure(error) } }
         } else { catalog = Result { try Catalog.loadOffline() } }
     }
     @State private var query = ""
@@ -71,7 +71,7 @@ struct CatalogView: View {
                         Text("配信").tag(true)
                         Text("オフライン").tag(false)
                     }.pickerStyle(.segmented).accessibilityIdentifier("catalog-source")
-                    if loading { ProgressView("作品を取得中…") }
+                    if loading { ProgressView("一覧を更新中…") }
                     if query.isEmpty && genre == "すべて", let featured = catalogTitles.first {
                         NavigationLink(value: featured) {
                             GeometryReader { proxy in
@@ -150,9 +150,16 @@ struct TitleDetailView: View {
     @State private var saved = false
     @AppStorage("autoSaveWebtoons") private var autoSave = true
 
+    @AppStorage(ReadingHistory.storageKey) private var readChapters = "[]"
     @AppStorage("favoriteTitles") private var favoriteIDs = ""
     private var isFavorite: Bool { favoriteIDs.split(separator: ",").contains(Substring(title.id)) }
-    private var episodes: [Episode] { descending ? title.episodes.reversed() : title.episodes }
+    private var episodes: [Episode] { descending ? title.primaryEpisodes.reversed() : title.primaryEpisodes }
+
+    private func isRead(_ episode: Episode) -> Bool {
+        ReadingHistory.contains(readChapters, titleID: title.id, number: episode.number)
+    }
+    private var continueEpisode: Episode? { title.primaryEpisodes.first { !isRead($0) } ?? title.primaryEpisodes.first }
+    private var hasReadEpisodes: Bool { title.primaryEpisodes.contains { isRead($0) } }
 
     var body: some View {
         ScrollView {
@@ -168,9 +175,9 @@ struct TitleDetailView: View {
                 }
                 Text(title.synopsis).font(.subheadline).foregroundStyle(.secondary).lineSpacing(5)
                 HStack(spacing: 12) {
-                    if let first = title.episodes.first {
+                    if let first = continueEpisode {
                         NavigationLink { ReaderView(title: title, episode: first) } label: {
-                            Label("第1話から読む", systemImage: "book.fill").font(.subheadline.bold()).frame(maxWidth: .infinity).padding(.vertical, 15)
+                            Label(hasReadEpisodes && !isRead(first) ? "続きから読む · 第\(first.number)話" : "第\(first.number)話から読む", systemImage: "book.fill").font(.subheadline.bold()).frame(maxWidth: .infinity).padding(.vertical, 15)
                         }.buttonStyle(.borderedProminent)
                     }
                     Button {
@@ -181,7 +188,7 @@ struct TitleDetailView: View {
                         .buttonStyle(.bordered).accessibilityLabel(isFavorite ? "お気に入りから削除" : "お気に入りに追加")
                 }
                 if Catalog.remoteURL(title.image) != nil {
-                    Label(saved ? "オフライン保存済み" : (autoSave ? "読むと自動でオフラインに保存" : "自動保存はオフ"), systemImage: saved ? "checkmark.circle.fill" : "arrow.down.circle")
+                    Label(saved ? "オフライン保存済み" : (autoSave ? "表示後に読んだ話だけ保存" : "自動保存はオフ"), systemImage: saved ? "checkmark.circle.fill" : "arrow.down.circle")
                         .font(.caption).foregroundStyle(.secondary)
                 }
                 Divider()
@@ -206,10 +213,30 @@ struct TitleDetailView: View {
                                     }
                                 }
                                 Spacer()
-                                Text("無料").font(.caption.bold()).foregroundStyle(.orange)
+                                if isRead(episode) {
+                                    Label("既読", systemImage: "checkmark.circle.fill").font(.caption).foregroundStyle(.secondary)
+                                } else {
+                                    Text("未読").font(.caption).foregroundStyle(.orange)
+                                }
                                 Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary)
                             }.padding(.vertical, 14)
                         }.buttonStyle(.plain).accessibilityIdentifier("episode-\(episode.id)")
+                        .contextMenu {
+                            Button(isRead(episode) ? "未読に戻す" : "既読にする") {
+                                readChapters = ReadingHistory.setting(!isRead(episode), in: readChapters, titleID: title.id, number: episode.number)
+                            }
+                        }
+                        let editions = title.otherEditions(of: episode)
+                        if !editions.isEmpty {
+                            DisclosureGroup("ほかの版（\(editions.count)）") {
+                                ForEach(editions) { edition in
+                                    NavigationLink { ReaderView(title: title, episode: edition) } label: {
+                                        Text(edition.edition.isEmpty ? edition.title : edition.edition)
+                                            .font(.caption).padding(.vertical, 10)
+                                    }
+                                }
+                            }.font(.caption).padding(.vertical, 8)
+                        }
                         Divider()
                     }
                 }
@@ -226,6 +253,9 @@ struct ReaderView: View {
     @State private var reloadID = UUID()
     @AppStorage("autoSaveWebtoons") private var autoSave = true
     @State private var saveStatus = ""
+    @State private var contentRevision: String?
+    @State private var saveDetailsPresented = false
+    @AppStorage(ReadingHistory.storageKey) private var readChapters = "[]"
 
 
     init(title: MangaTitle, episode: Episode) {
@@ -233,14 +263,14 @@ struct ReaderView: View {
         _episode = State(initialValue: episode)
     }
 
-    private var previous: Episode? { title.episodes.first { $0.number == episode.number - 1 } }
-    private var next: Episode? { title.episodes.first { $0.number == episode.number + 1 } }
+    private var previous: Episode? { title.primaryEpisodes.first { $0.number == episode.number - 1 } }
+    private var next: Episode? { title.primaryEpisodes.first { $0.number == episode.number + 1 } }
 
     var body: some View {
         Group {
             if let url = Catalog.readerURL(episode.reader) {
                 ZStack {
-                    WebtoonReader(url: url, background: episode.background, loadState: $loadState)
+                    WebtoonReader(url: url, background: episode.background, loadState: $loadState, onRevision: { contentRevision = $0 })
                         .id("\(episode.id)-\(reloadID)")
                         .accessibilityIdentifier("webtoon-reader")
                     if loadState == .loading {
@@ -268,34 +298,47 @@ struct ReaderView: View {
                 ContentUnavailableView("本文を開けません", systemImage: "book.closed", description: Text("作品一覧に戻って、もう一度お試しください。"))
             }
         }
-        .task(id: title.id) {
+        .task(id: "\(episode.id)-\(loadState)", priority: .background) {
+            guard loadState == .ready else { saveStatus = ""; return }
+            readChapters = ReadingHistory.setting(true, in: readChapters, titleID: title.id, number: episode.number)
             guard autoSave, Catalog.remoteURL(title.image) != nil else { return }
+            // Give the visible reader priority over optional offline work.
+            do { try await Task.sleep(for: .seconds(2)) } catch { return }
             saveStatus = "オフライン保存中…"
             do {
-                try await DownloadManager.shared.download(title)
-                saveStatus = "オフライン保存済み"
+                let downloadedEpisode = Episode(id: episode.id, number: episode.number, title: episode.title, edition: episode.edition,
+                    reader: episode.reader, background: episode.background, revision: contentRevision ?? episode.revision)
+                let snapshot = MangaTitle(id: title.id, title: title.title, genre: title.genre, image: title.image,
+                    tagline: title.tagline, synopsis: title.synopsis,
+                    episodes: title.episodes.map { $0.id == episode.id ? downloadedEpisode : $0 }, revision: title.revision)
+                try await DownloadManager.shared.download(snapshot, episodeIDs: [episode.id])
+                saveStatus = "この話をオフライン保存済み"
             } catch is CancellationError { saveStatus = "" }
               catch { saveStatus = "オフライン保存できませんでした。次に開いたときに再試行します。" }
         }
-        .overlay(alignment: .bottom) {
+        .toolbar {
             if !saveStatus.isEmpty {
-                Text(saveStatus).font(.caption2).padding(8).background(.regularMaterial, in: Capsule()).padding(.bottom, 8)
-                    .allowsHitTesting(false).accessibilityIdentifier("auto-save-status")
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button { saveDetailsPresented = true } label: {
+                        Image(systemName: saveStatus.contains("できません") ? "exclamationmark.circle" : (saveStatus.contains("保存済み") ? "checkmark.circle" : "arrow.down.circle"))
+                    }.accessibilityLabel(saveStatus)
+                }
             }
         }
+        .alert("オフライン保存", isPresented: $saveDetailsPresented) { Button("OK", role: .cancel) {} } message: { Text(saveStatus) }
         .navigationTitle("第\(episode.number)話\(episode.edition.isEmpty ? "" : " · " + episode.edition)")
         .navigationBarTitleDisplayMode(.inline)
         .safeAreaInset(edge: .bottom) {
             if title.episodeCount > 1 {
                 HStack {
-                    Button { if let previous { loadState = .loading; episode = previous } } label: {
+                    Button { if let previous { contentRevision = nil; loadState = .loading; episode = previous } } label: {
                         Label("前の話", systemImage: "chevron.left")
                     }.disabled(previous == nil).accessibilityIdentifier("previous-episode")
                     Spacer()
                     Text("\(episode.number) / \(title.episodeCount)")
                         .font(.caption).foregroundStyle(.secondary)
                     Spacer()
-                    Button { if let next { loadState = .loading; episode = next } } label: {
+                    Button { if let next { contentRevision = nil; loadState = .loading; episode = next } } label: {
                         HStack(spacing: 5) {
                             Text("次の話")
                             Image(systemName: "chevron.right")
@@ -317,12 +360,27 @@ struct WebtoonReader: UIViewRepresentable {
     let url: URL
     let background: String
     @Binding var loadState: ReaderLoadState
+    let onRevision: (String) -> Void
 
-    func makeCoordinator() -> Coordinator { Coordinator(loadState: $loadState) }
+    func makeCoordinator() -> Coordinator { Coordinator(loadState: $loadState, onRevision: onRevision) }
 
     func makeUIView(context: Context) -> WKWebView {
         let configuration = WKWebViewConfiguration()
         configuration.websiteDataStore = .nonPersistent()
+        configuration.userContentController.add(context.coordinator, name: "mangaReader")
+        if !url.isFileURL, let id = ReaderContent.episodeID(from: url) {
+            // This script runs only in our API-derived document, never in the website shell.
+            let quotedID = String(data: try! JSONEncoder().encode(id), encoding: .utf8)!
+            configuration.userContentController.addUserScript(WKUserScript(source: """
+                (() => {
+                  const notify = state => window.webkit.messageHandlers.mangaReader.postMessage({state, episodeID: \(quotedID)});
+                  const image = document.images[0];
+                  if (!image) notify('ready');
+                  else if (image.complete) notify(image.naturalWidth > 0 ? 'ready' : 'failed');
+                  else { image.addEventListener('load', () => notify('ready'), {once:true}); image.addEventListener('error', () => notify('failed'), {once:true}); }
+                })();
+                """, injectionTime: .atDocumentEnd, forMainFrameOnly: true))
+        }
         let view = WKWebView(frame: .zero, configuration: configuration)
         view.navigationDelegate = context.coordinator
         let color = UIColor(webtoonHex: background)
@@ -337,34 +395,82 @@ struct WebtoonReader: UIViewRepresentable {
 
     func updateUIView(_ view: WKWebView, context: Context) {
         context.coordinator.loadState = $loadState
+        context.coordinator.onRevision = onRevision
         context.coordinator.load(url, in: view)
     }
 
     static func dismantleUIView(_ view: WKWebView, coordinator: Coordinator) {
+        coordinator.contentTask?.cancel()
+        view.configuration.userContentController.removeScriptMessageHandler(forName: "mangaReader")
         view.navigationDelegate = nil
         view.stopLoading()
     }
 
-    final class Coordinator: NSObject, WKNavigationDelegate {
+    final class Coordinator: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
         var loadState: Binding<ReaderLoadState>
         private var requestedURL: URL?
+        var contentTask: Task<Void, Never>?
+        var onRevision: (String) -> Void
 
-        init(loadState: Binding<ReaderLoadState>) { self.loadState = loadState }
+        init(loadState: Binding<ReaderLoadState>, onRevision: @escaping (String) -> Void) {
+            self.loadState = loadState; self.onRevision = onRevision
+        }
 
         func load(_ url: URL, in view: WKWebView) {
             guard requestedURL != url else { return }
             requestedURL = url
+            contentTask?.cancel()
             if url.isFileURL {
                 view.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
-            } else { view.load(URLRequest(url: url)) }
+            } else {
+                contentTask = Task { @MainActor [weak self, weak view] in
+                    do {
+                        guard let id = ReaderContent.episodeID(from: url) else { throw ReaderContent.ContentError.invalidContent }
+                        let content = try await ReaderContent.load(id: id)
+                        try Task.checkCancellation()
+                        guard let self, let view, self.requestedURL == url else { return }
+                        self.onRevision(content.revision)
+                        view.loadHTMLString(content.html, baseURL: Catalog.apiBaseURL)
+                    } catch {
+                        if !Task.isCancelled, self?.requestedURL == url { self?.loadState.wrappedValue = .failed }
+                    }
+                }
+            }
         }
 
         func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
             loadState.wrappedValue = .loading
         }
 
+        func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction,
+                     decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+            // Back and next chapter are native controls. Do not navigate the embedded page independently.
+            decisionHandler(requestedURL?.isFileURL != true && navigationAction.navigationType == .linkActivated ? .cancel : .allow)
+        }
+
+        func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse,
+                     decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+            if navigationResponse.isForMainFrame,
+               let response = navigationResponse.response as? HTTPURLResponse,
+               response.statusCode >= 400 {
+                loadState.wrappedValue = .failed
+                decisionHandler(.cancel)
+            } else { decisionHandler(.allow) }
+        }
+
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            loadState.wrappedValue = .ready
+            // Remote documents wait for the first image before being marked ready.
+            if requestedURL?.isFileURL == true { loadState.wrappedValue = .ready }
+        }
+
+        func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+            guard message.frameInfo.isMainFrame,
+                  message.name == "mangaReader", let requestedURL, !requestedURL.isFileURL,
+                  let body = message.body as? [String: String],
+                  let expectedID = URLComponents(url: requestedURL, resolvingAgainstBaseURL: false)?.queryItems?.first(where: { $0.name == "episode" })?.value,
+                  body["episodeID"] == expectedID else { return }
+            if body["state"] == "ready" { loadState.wrappedValue = .ready }
+            else if body["state"] == "failed" { loadState.wrappedValue = .failed }
         }
 
         func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
@@ -408,7 +514,7 @@ struct DownloadSettingsView: View {
         NavigationStack {
             Form {
                 Section {
-                    Toggle("読んだ作品を自動保存", isOn: $autoSave)
+                    Toggle("表示後に読んだ話だけ保存", isOn: $autoSave)
                 } footer: {
                     Text("作品を開くと、本文と画像を端末内へ保存します。保存中はアプリを開いておいてください。")
                 }

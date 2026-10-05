@@ -10,6 +10,18 @@ struct MangaTitle: Identifiable, Hashable, Codable {
     let episodes: [Episode]
     var revision: String? = nil
     var episodeCount: Int { Set(episodes.map(\.number)).count }
+    var orderedEpisodes: [Episode] {
+        episodes.enumerated().sorted { a, b in
+            a.element.number == b.element.number ? a.offset < b.offset : a.element.number < b.element.number
+        }.map(\.element)
+    }
+    var primaryEpisodes: [Episode] {
+        var seen = Set<Int>()
+        return orderedEpisodes.filter { seen.insert($0.number).inserted }
+    }
+    func otherEditions(of episode: Episode) -> [Episode] {
+        orderedEpisodes.filter { $0.number == episode.number && $0.id != episode.id }
+    }
 }
 
 struct Episode: Identifiable, Hashable, Codable {
@@ -19,6 +31,28 @@ struct Episode: Identifiable, Hashable, Codable {
     let edition: String
     let reader: String
     let background: String
+    var revision: String? = nil
+}
+
+enum ReadingHistory {
+    static let storageKey = "readChapters.v1"
+    static func key(titleID: String, number: Int) -> String {
+        let series = titleID.hasPrefix("online-") ? String(titleID.dropFirst(7)) : titleID
+        let canonical = series == "heavenly-demon-ngplus" ? "heavenly-demon" : series
+        return canonical + ":" + String(number)
+    }
+    static func contains(_ value: String, titleID: String, number: Int) -> Bool {
+        entries(value).contains(key(titleID: titleID, number: number))
+    }
+    static func setting(_ read: Bool, in value: String, titleID: String, number: Int) -> String {
+        var saved = entries(value)
+        let chapter = key(titleID: titleID, number: number)
+        if read { saved.insert(chapter) } else { saved.remove(chapter) }
+        return String(data: (try? JSONEncoder().encode(saved.sorted())) ?? Data("[]".utf8), encoding: .utf8) ?? "[]"
+    }
+    private static func entries(_ value: String) -> Set<String> {
+        Set((try? JSONDecoder().decode([String].self, from: Data(value.utf8))) ?? [])
+    }
 }
 
 enum Catalog {
@@ -28,21 +62,37 @@ enum Catalog {
 
     static var apiBaseURL: URL {
         URL(string: Bundle.main.object(forInfoDictionaryKey: "MangaAPIBaseURL") as? String
-            ?? "https://manga-server.quantum-box.workers.dev")!
+            ?? "https://manga-server.txcloud.app")!
     }
 
-    static func loadRemote(session: URLSession = .shared) async throws -> [MangaTitle] {
-        var request = URLRequest(url: apiBaseURL.appendingPathComponent("api/v1/catalog"))
-        request.timeoutInterval = 20
-        request.cachePolicy = .reloadIgnoringLocalCacheData
-        let (data, response) = try await session.data(for: request)
-        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-            throw URLError(.badServerResponse)
-        }
+    static var remoteCacheURL: URL { OfflineDownloads.root.appendingPathComponent(".online-catalog.json") }
+    static func cachedRemote(cacheURL: URL = remoteCacheURL) -> [MangaTitle]? {
+        guard let data = try? Data(contentsOf: cacheURL), let titles = try? validatedRemote(data) else { return nil }
+        return titles
+    }
+    private static func validatedRemote(_ data: Data) throws -> [MangaTitle] {
         let titles = try JSONDecoder().decode([MangaTitle].self, from: data)
         guard titles.allSatisfy({ title in
             remoteURL(title.image) != nil && title.episodes.allSatisfy { remoteURL($0.reader) != nil }
         }) else { throw URLError(.unsupportedURL) }
+        return titles.map { title in
+            MangaTitle(id: title.id, title: title.title, genre: title.genre, image: title.image, tagline: title.tagline,
+                       synopsis: title.synopsis, episodes: title.orderedEpisodes, revision: title.revision)
+        }
+    }
+    static func loadRemote(session: URLSession = .shared, cacheURL: URL? = nil) async throws -> [MangaTitle] {
+        var request = URLRequest(url: apiBaseURL.appendingPathComponent("api/v1/catalog"))
+        request.timeoutInterval = 20
+        request.cachePolicy = .useProtocolCachePolicy
+        let (data, response) = try await session.data(for: request)
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw URLError(.badServerResponse)
+        }
+        let titles = try validatedRemote(data)
+        if let cacheURL {
+            try? FileManager.default.createDirectory(at: cacheURL.deletingLastPathComponent(), withIntermediateDirectories: true)
+            try? JSONEncoder().encode(titles).write(to: cacheURL, options: .atomic)
+        }
         return titles
     }
 
@@ -106,7 +156,8 @@ enum OfflineDownloads {
             .sorted { $0.title < $1.title }
     }
     static func isSaved(_ title: MangaTitle) -> Bool {
-        ((try? load()) ?? []).contains { $0.id == title.id }
+        guard let saved = ((try? load()) ?? []).first(where: { $0.id == title.id }) else { return false }
+        return title.primaryEpisodes.allSatisfy { episode in saved.episodes.contains { $0.id == episode.id && $0.revision == episode.revision } }
     }
 }
 
@@ -133,10 +184,13 @@ actor DownloadManager {
         }
     }
 
-    func download(_ title: MangaTitle, root: URL = OfflineDownloads.root, session: URLSession = .shared,
+    func download(_ title: MangaTitle, episodeIDs: Set<String>? = nil, root: URL = OfflineDownloads.root, session: URLSession = .shared,
                   progress: (Int, Int) async -> Void = { _, _ in }) async throws {
         let existing = try OfflineDownloads.load(root: root).first { $0.id == title.id }
-        if let revision = title.revision, existing?.revision == revision { return }
+        let requested = title.orderedEpisodes.filter { episodeIDs == nil || episodeIDs!.contains($0.id) }
+        guard !requested.isEmpty else { throw DownloadError.invalidContent }
+        if let revision = title.revision, existing?.revision == revision,
+           requested.allSatisfy({ requested in existing?.episodes.contains { $0.id == requested.id && $0.revision == requested.revision } == true }) { return }
         guard active.insert(title.id).inserted else { throw DownloadError.alreadyDownloading }
         defer { active.remove(title.id) }
         let revision = revisions[title.id, default: 0]
@@ -174,15 +228,26 @@ actor DownloadManager {
         let cover = try await get(title.image, limit: 16 * 1024 * 1024)
         try cover.write(to: staging.appendingPathComponent("cover"), options: .atomic)
         var episodes = [Episode]()
-        for (index, episode) in title.episodes.enumerated() {
+        if episodeIDs != nil, let existing {
+            for savedEpisode in existing.episodes where !requested.contains(where: { $0.id == savedEpisode.id }) {
+                guard safe(savedEpisode.id),
+                      title.episodes.contains(where: { $0.id == savedEpisode.id && $0.revision == savedEpisode.revision }),
+                      let existingFolder else { continue }
+                let source = root.appendingPathComponent(existingFolder).appendingPathComponent(savedEpisode.id)
+                if manager.fileExists(atPath: source.path) {
+                    try manager.copyItem(at: source, to: staging.appendingPathComponent(savedEpisode.id))
+                    episodes.append(savedEpisode)
+                }
+            }
+        }
+        for (index, episode) in requested.enumerated() {
             guard safe(episode.id) else { throw DownloadError.invalidContent }
-            let data = try await get("/api/episodes/" + episode.id, limit: 256 * 1024, expectedRevision: title.revision)
+            let data = try await get("/api/episodes/" + episode.id, limit: 256 * 1024, expectedRevision: episode.revision ?? title.revision)
             guard let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
                   let blocks = json["blocks"] as? [[String: Any]], !blocks.isEmpty else { throw DownloadError.invalidContent }
             let episodeDir = staging.appendingPathComponent(episode.id, isDirectory: true)
             try manager.createDirectory(at: episodeDir, withIntermediateDirectories: true)
-            var body = "<h1>" + escape(episode.title) + "</h1>"
-            if let subtitle = json["subtitle"] as? String { body += "<p>" + escape(subtitle) + "</p>" }
+            var body = ""
             for block in blocks {
                 switch block["type"] as? String {
                 case "image":
@@ -205,11 +270,11 @@ actor DownloadManager {
             """
             try Data(html.utf8).write(to: episodeDir.appendingPathComponent("index.html"), options: .atomic)
             episodes.append(Episode(id: episode.id, number: episode.number, title: episode.title, edition: episode.edition,
-                reader: "downloads/\(folder)/\(episode.id)/index.html", background: "#111111"))
-            await progress(index + 1, title.episodes.count)
+                reader: "downloads/\(folder)/\(episode.id)/index.html", background: "#111111", revision: episode.revision))
+            await progress(index + 1, requested.count)
         }
         var saved = MangaTitle(id: title.id, title: title.title, genre: title.genre, image: "downloads/\(folder)/cover",
-                              tagline: title.tagline, synopsis: title.synopsis, episodes: episodes)
+                              tagline: title.tagline, synopsis: title.synopsis, episodes: title.orderedEpisodes.compactMap { canonical in episodes.first { $0.id == canonical.id } })
         saved.revision = title.revision
         try JSONEncoder().encode(saved).write(to: staging.appendingPathComponent("title.json"), options: .atomic)
         try Task.checkCancellation()
@@ -218,5 +283,56 @@ actor DownloadManager {
         if manager.fileExists(atPath: destination.path) {
             _ = try manager.replaceItemAt(destination, withItemAt: staging)
         } else { try manager.moveItem(at: staging, to: destination) }
+    }
+}
+struct ReaderContent {
+    let html: String
+    let revision: String
+
+    enum ContentError: Error { case invalidContent }
+    static func episodeID(from url: URL) -> String? {
+        URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?.first { $0.name == "episode" }?.value
+    }
+    static func load(id: String, session: URLSession = .shared) async throws -> ReaderContent {
+        guard validSlug(id), let url = Catalog.remoteURL("/api/episodes/" + id) else { throw ContentError.invalidContent }
+        var request = URLRequest(url: url); request.timeoutInterval = 30
+        request.cachePolicy = .reloadIgnoringLocalCacheData
+        let (data, response) = try await session.data(for: request)
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200,
+              response.url?.scheme == Catalog.apiBaseURL.scheme, response.url?.host == Catalog.apiBaseURL.host,
+              data.count <= 256 * 1024, let etag = response.value(forHTTPHeaderField: "ETag") else { throw ContentError.invalidContent }
+        let revision = (etag.hasPrefix("W/") ? String(etag.dropFirst(2)) : etag).trimmingCharacters(in: CharacterSet(charactersIn: "\""))
+        guard !revision.isEmpty else { throw ContentError.invalidContent }
+        return ReaderContent(html: try render(data, id: id), revision: revision)
+    }
+    static func render(_ data: Data, id: String) throws -> String {
+        guard validSlug(id), let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let blocks = json["blocks"] as? [[String: Any]], !blocks.isEmpty else { throw ContentError.invalidContent }
+        var body = "", imageCount = 0
+        for block in blocks {
+            switch block["type"] as? String {
+            case "image":
+                guard let name = block["src"] as? String, let dot = name.lastIndex(of: "."), validSlug(String(name[..<dot])),
+                      ["png", "jpg", "webp"].contains(String(name[name.index(after: dot)...])),
+                      let url = Catalog.remoteURL("/images/" + id + "/" + name) else { throw ContentError.invalidContent }
+                let loading = imageCount == 0 ? "eager" : "lazy"; imageCount += 1
+                body += "<img src=\"" + escape(url.absoluteString) + "\" alt=\"" + escape(block["alt"] as? String ?? "") + "\" loading=\"" + loading + "\">"
+            case "spacer": body += "<div class=\"spacer " + ((block["size"] as? String == "long") ? "long" : "") + "\"></div>"
+            case "caption", "ending": body += "<p>" + escape(block["text"] as? String ?? "") + "</p>"
+            case "speech": body += "<p>" + escape(block["speaker"] as? String ?? "") + "「" + escape(block["text"] as? String ?? "") + "」</p>"
+            default: throw ContentError.invalidContent
+            }
+        }
+        return """
+        <!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src \(Catalog.apiBaseURL.absoluteString); style-src 'unsafe-inline'">
+        <style>html,body{margin:0;background:#111;color:#eee;font-family:system-ui}main{max-width:720px;margin:auto}img{display:block;width:100%;height:auto}p{padding:24px;line-height:1.8}.spacer{height:100px}.long{height:260px}</style></head><body><main>\(body)</main></body></html>
+        """
+    }
+    private static func validSlug(_ value: String) -> Bool {
+        !value.isEmpty && value.utf8.count <= 80 && value.utf8.allSatisfy { (48...57).contains($0) || (65...90).contains($0) || (97...122).contains($0) || $0 == 45 || $0 == 95 }
+    }
+    private static func escape(_ value: String) -> String {
+        value.replacingOccurrences(of: "&", with: "&amp;").replacingOccurrences(of: "<", with: "&lt;").replacingOccurrences(of: ">", with: "&gt;").replacingOccurrences(of: "\"", with: "&quot;")
     }
 }

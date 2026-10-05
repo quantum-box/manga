@@ -1,5 +1,7 @@
 use serde::{Deserialize, Serialize};
 use worker::*;
+mod series;
+use std::hash::{Hash, Hasher};
 
 const MAX_IMAGE: usize = 16 * 1024 * 1024;
 #[derive(Deserialize, Serialize)]
@@ -7,6 +9,8 @@ struct Episode {
     title: String,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     subtitle: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    cover: Option<String>,
     blocks: Vec<Block>,
 }
 #[derive(Deserialize, Serialize)]
@@ -88,13 +92,36 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
     let bucket = env.bucket("MANGA")?;
     match (req.method(), parts.as_slice()) {
         (Method::Get, ["api", "v1", "catalog"]) => {
+            // A publish changes the generation, so a cached index can never hide it indefinitely.
+            let generation = bucket
+                .head("catalog/generation")
+                .await?
+                .map(|o| o.etag())
+                .unwrap_or_default();
+            let mut hasher = std::collections::hash_map::DefaultHasher::new();
+            include_str!("../../content/catalog.json").hash(&mut hasher);
+            include_str!("series.rs").hash(&mut hasher);
+            include_str!("lib.rs").hash(&mut hasher);
+            let index_key = format!("catalog/index-v2-{:x}.json", hasher.finish());
+            if let Some(index) = bucket.get(&index_key).execute().await? {
+                if index.custom_metadata()?.get("generation") == Some(&generation) {
+                    let bytes = index.body().ok_or("Missing index body")?.bytes().await?;
+                    return Ok(Response::from_bytes(bytes)?
+                        .with_headers(headers("application/json", "public, max-age=30")?));
+                }
+            }
+            let metadata: Vec<serde_json::Value> =
+                serde_json::from_str(include_str!("../../content/catalog.json"))?;
             let list = bucket
                 .list()
                 .prefix("episodes/")
                 .limit(100)
                 .execute()
                 .await?;
-            let mut titles = Vec::new();
+            let mut groups = std::collections::BTreeMap::<
+                String,
+                Vec<(series::SeriesInfo, String, String, String, String)>,
+            >::new();
             for object in list.objects() {
                 let key = object.key();
                 let id = key
@@ -109,28 +136,67 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
                 let revision = object.etag();
                 let ep: Episode =
                     serde_json::from_slice(&object.body().ok_or("Missing body")?.bytes().await?)?;
-                let Some(cover) = ep.blocks.iter().find_map(|b| {
-                    if let Block::Image { src, .. } = b {
-                        Some(src)
-                    } else {
-                        None
-                    }
+                let Some(cover) = ep.cover.as_ref().or_else(|| {
+                    ep.blocks.iter().find_map(|b| {
+                        if let Block::Image { src, .. } = b {
+                            Some(src)
+                        } else {
+                            None
+                        }
+                    })
                 }) else {
                     continue;
                 };
+                let info = series::identify(id, &ep.title);
+                groups.entry(info.id.clone()).or_default().push((
+                    info,
+                    id.to_owned(),
+                    ep.subtitle.unwrap_or_else(|| ep.title.clone()),
+                    format!("/images/{id}/{cover}"),
+                    revision,
+                ));
+            }
+            let mut titles = Vec::new();
+            for (series_id, mut entries) in groups {
+                entries.sort_by(|a, b| {
+                    (a.0.number, a.0.rank, &a.1).cmp(&(b.0.number, b.0.rank, &b.1))
+                });
+                let revisions: Vec<_> = entries.iter().map(|e| e.4.as_str()).collect();
+                let revision = revisions.join(":");
+                let meta_id = if series_id == "heavenly-demon" {
+                    "heavenly-demon-ngplus"
+                } else {
+                    &series_id
+                };
+                let meta = metadata.iter().find(|m| m["id"].as_str() == Some(meta_id));
+                let episodes: Vec<_> = entries.iter().map(|(info, id, subtitle, _, revision)| {
+                    let local_id = id.strip_prefix(&format!("{series_id}-")).unwrap_or(id);
+                    let episode_meta = meta.and_then(|m| m["episodes"].as_array()).and_then(|eps| eps.iter().find(|e| e["id"].as_str() == Some(local_id)));
+                    let chapter_title = series::chapter_title(id, episode_meta.and_then(|e| e["title"].as_str()).unwrap_or(subtitle));
+
+                    serde_json::json!({
+                        "id": id, "number": info.number, "title": chapter_title, "edition": info.edition,
+                        "revision": revision, "reader": format!("/?episode={id}"), "background": "#111111"
+                    })
+                }).collect();
                 titles.push(serde_json::json!({
-                    "id": format!("online-{id}"), "title": ep.title, "genre": "Webtoon", "revision": revision,
-                    "image": format!("/images/{id}/{cover}"), "tagline": ep.title,
-                    "synopsis": "配信中のWebtoon", "episodes": [{
-                        "id": id, "number": 1, "title": ep.title, "edition": "配信版",
-                        "reader": format!("/?episode={id}"), "background": "#111111"
-                    }]
+                    "id": format!("online-{series_id}"), "title": meta.and_then(|m| m["title"].as_str()).unwrap_or(&entries[0].0.title),
+                    "genre": meta.and_then(|m| m["genre"].as_str()).unwrap_or("Webtoon"), "revision": revision, "image": entries[0].3,
+                    "tagline": meta.and_then(|m| m["tagline"].as_str()).unwrap_or(""),
+                    "synopsis": meta.and_then(|m| m["synopsis"].as_str()).unwrap_or("配信中のWebtoon"), "episodes": episodes
                 }));
             }
-            Ok(
-                Response::from_json(&titles)?
-                    .with_headers(headers("application/json", "no-store")?),
-            )
+            let bytes = serde_json::to_vec(&titles)?;
+            bucket
+                .put(index_key, bytes.clone())
+                .custom_metadata(std::collections::HashMap::from([(
+                    "generation".into(),
+                    generation,
+                )]))
+                .execute()
+                .await?;
+            Ok(Response::from_bytes(bytes)?
+                .with_headers(headers("application/json", "public, max-age=30")?))
         }
         (Method::Get, ["admin", "images", id, name]) if slug(id) && image_name(name) => {
             let Some(obj) = bucket.get(format!("images/{id}/{name}")).execute().await? else {
@@ -182,10 +248,11 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
             let ep: Episode =
                 serde_json::from_slice(&episode.body().ok_or("Missing body")?.bytes().await?)
                     .map_err(|_| Error::from("Invalid stored episode"))?;
-            if !ep
-                .blocks
-                .iter()
-                .any(|b| matches!(b, Block::Image { src, .. } if src == name))
+            if ep.cover.as_deref() != Some(*name)
+                && !ep
+                    .blocks
+                    .iter()
+                    .any(|b| matches!(b, Block::Image { src, .. } if src == name))
             {
                 return Response::error("Not found", 404);
             }
@@ -241,6 +308,23 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
             }
             Response::empty().map(|r| r.with_status(201))
         }
+        (Method::Delete, ["admin", "episodes", id]) if slug(id) => {
+            let key = format!("episodes/{id}.json");
+            bucket.delete(&key).await?;
+            // R2 ETags are content based. Never reuse a generation, including retries
+            // for missing episodes, or an old catalog index could become valid.
+            let mutation = format!(
+                "{}-{:x}-{:x}",
+                Date::now().as_millis(),
+                js_sys::Math::random().to_bits(),
+                js_sys::Math::random().to_bits()
+            );
+            bucket
+                .put("catalog/generation", format!("deleted-{mutation}-{id}"))
+                .execute()
+                .await?;
+            Response::empty().map(|r| r.with_status(204))
+        }
         (Method::Put, ["admin", "episodes", id]) if slug(id) => {
             let bytes = req.bytes().await?;
             if bytes.len() > 256 * 1024 {
@@ -255,6 +339,13 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
                 || ep.blocks.len() > 500
             {
                 return Response::error("Invalid episode", 400);
+            }
+            if let Some(cover) = &ep.cover {
+                if !image_name(cover)
+                    || bucket.head(format!("images/{id}/{cover}")).await?.is_none()
+                {
+                    return Response::error("Upload a valid cover before publishing", 409);
+                }
             }
             let mut images = 0;
             for block in &ep.blocks {
@@ -271,8 +362,13 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
             if images == 0 {
                 return Response::error("An image is required", 400);
             }
-            bucket
+            let published = bucket
                 .put(format!("episodes/{id}.json"), serde_json::to_vec(&ep)?)
+                .execute()
+                .await?
+                .ok_or("Episode was not stored")?;
+            bucket
+                .put("catalog/generation", format!("{}-{id}", published.etag()))
                 .execute()
                 .await?;
             Response::empty().map(|r| r.with_status(204))

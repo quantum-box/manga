@@ -60,6 +60,7 @@ python3 scripts/publish_episode.py https://<worker-host> pochis-handshake \
 | GET `/images/:id/:name` | 公開エピソードが参照する画像だけ配信 |
 | PUT `/admin/images/:id/:name` | Bearer認証付き画像アップロード |
 | PUT `/admin/episodes/:id` | Bearer認証付き公開・更新 |
+| DELETE `/admin/episodes/:id` | Bearer認証付き公開解除（一覧キャッシュも更新。画像の原本は保持） |
 
 現段階は無料公開・単一管理者のMVP。作品グルーピング、課金、読者アカウント、
 管理画面、画像変換、1000件超のページング、未公開画像の自動回収は未実装。
@@ -69,6 +70,15 @@ python3 scripts/publish_episode.py https://<worker-host> pochis-handshake \
 ## iOS配信API v1
 
 `GET /api/v1/catalog`はiOSの`MangaTitle` / `Episode`と同じJSON配列を返す。
-`image`と`reader`は同一HTTPS originに対する相対パス。公開エピソードを1作品・1話として
-扱うMVPで、最大100作品。Storageの公開JSONが正本になり、アップロード後に一覧へ反映される。
+`image`と`reader`は同一HTTPS originに対する相対パス。公開エピソードをシリーズごとにまとめ、話数の昇順に並べる。改稿版は同じ話数を持つ別版として保持する。
+作品名・話タイトルは制作カタログを使う。各話のrevisionとシリーズ全体のrevisionを返す。
+Storageの公開JSONが正本で、公開時のgeneration変更で一覧索引を無効化する。
+通常の一覧取得は全話のJSONを再取得せず、generationと保存済み索引だけを読む。
+索引キーにはコードと制作カタログのハッシュを含め、デプロイ後も古い表記を再利用しない。
 iOSはURLSessionで一覧、AsyncImageで表紙、WKWebViewで本文を取得する。管理者認証は不要。
+
+表紙は任意の`cover`画像名で指定できる。本文画像と同様に先に管理APIへアップロードする。表紙に本文全体の画像を使わず、小さなJPEGを推奨する。
+
+ブラウザーの既読は最初の画像の読み込み成功時に localStorage へ保存します。話一覧に既読・未読と未読へ戻す操作を表示し、未読の最初の話へ進めます。同じ話の別版は既読を共有します。端末・ブラウザー間の同期は行いません。
+
+本文の配信には390px幅の確認用画像を使わず、元の `reader.html` を390 CSS px・3倍密度（1170px幅）で書き出します。`scripts/render_retina_reader.cjs`（Playwright）で分割PNGを生成し、`scripts/optimize_retina_images.py`（Pillow）でPNGまたは高画質WebPへ圧縮します。解像度を保持してハッシュ付きファイル名でアップロードし、全画像の存在と内容を確認してから本文JSONを差し替えます。
