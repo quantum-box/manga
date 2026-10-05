@@ -65,3 +65,10 @@ python3 scripts/publish_episode.py https://<worker-host> pochis-handshake \
 管理画面、画像変換、1000件超のページング、未公開画像の自動回収は未実装。
 デプロイ後は画像アップロード→公開→読者GETの実データ照合を行い、管理者用PUTが
 トークン無しで401になることを確認する。
+
+## iOS配信API v1
+
+`GET /api/v1/catalog`はiOSの`MangaTitle` / `Episode`と同じJSON配列を返す。
+`image`と`reader`は同一HTTPS originに対する相対パス。公開エピソードを1作品・1話として
+扱うMVPで、最大100作品。Storageの公開JSONが正本になり、アップロード後に一覧へ反映される。
+iOSはURLSessionで一覧、AsyncImageで表紙、WKWebViewで本文を取得する。管理者認証は不要。

@@ -11,7 +11,10 @@ struct MangaApp: App {
 struct Cover: View {
     let name: String
     var body: some View {
-        if let url = Catalog.resource(name),
+        if let url = Catalog.remoteURL(name) {
+            AsyncImage(url: url) { image in image.resizable().scaledToFill() }
+                placeholder: { Rectangle().fill(.orange.opacity(0.15)).overlay { ProgressView() } }
+        } else if let url = Catalog.resource(name),
            let image = UIImage(contentsOfFile: url.path) {
             Image(uiImage: image).resizable().scaledToFill()
         } else {
@@ -21,7 +24,22 @@ struct Cover: View {
 }
 
 struct CatalogView: View {
-    @State private var catalog = Result { try Catalog.load() }
+    @State private var catalog: Result<[MangaTitle], Error> = .success([])
+    @State private var online = true
+    @State private var loading = true
+    @MainActor private func refresh() async {
+        loading = true
+        defer { loading = false }
+        genre = "すべて"
+        if online {
+            do {
+                let titles = try await Catalog.loadRemote()
+                guard !Task.isCancelled else { return }
+                catalog = .success(titles)
+            }
+            catch { if !Task.isCancelled { catalog = .failure(error) } }
+        } else { catalog = Result { try Catalog.load() } }
+    }
     @State private var query = ""
     @State private var genre = "すべて"
     private var catalogTitles: [MangaTitle] { (try? catalog.get()) ?? [] }
@@ -46,6 +64,11 @@ struct CatalogView: View {
                         Spacer()
                         Image(systemName: "sparkles").font(.title).foregroundStyle(.orange)
                     }
+                    Picker("読み込み元", selection: $online) {
+                        Text("配信").tag(true)
+                        Text("オフライン").tag(false)
+                    }.pickerStyle(.segmented).accessibilityIdentifier("catalog-source")
+                    if loading { ProgressView("作品を取得中…") }
                     if query.isEmpty && genre == "すべて", let featured = catalogTitles.first {
                         NavigationLink(value: featured) {
                             GeometryReader { proxy in
@@ -82,12 +105,12 @@ struct CatalogView: View {
                         ContentUnavailableView {
                             Label("作品を読み込めませんでした", systemImage: "exclamationmark.triangle")
                         } description: {
-                            Text("もう一度読み込んでください。改善しない場合は、アプリを最新のバージョンに更新してください。")
+                            Text(online ? "通信を確認して再読み込みしてください。オフラインに切り替えると同梱作品を読めます。" : "同梱作品を読み込めません。アプリを更新してください。")
                         } actions: {
-                            Button("もう一度読み込む") { catalog = Result { try Catalog.load() } }
+                            Button("もう一度読み込む") { Task { await refresh() } }
                                 .buttonStyle(.borderedProminent)
                         }.accessibilityIdentifier("catalog-failed")
-                    } else if titles.isEmpty {
+                    } else if !loading && titles.isEmpty {
                         ContentUnavailableView.search(text: query)
                     }
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 24) {
@@ -109,6 +132,8 @@ struct CatalogView: View {
             }
             .background(Color(.systemBackground))
             .toolbar(.hidden, for: .navigationBar)
+            .task(id: online) { await refresh() }
+            .refreshable { await refresh() }
             .searchable(text: $query, prompt: "作品タイトルで検索")
             .navigationDestination(for: MangaTitle.self) { TitleDetailView(title: $0) }
         }
@@ -198,7 +223,7 @@ struct ReaderView: View {
 
     var body: some View {
         Group {
-            if let url = Catalog.resource(episode.reader) {
+            if let url = Catalog.readerURL(episode.reader) {
                 ZStack {
                     WebtoonReader(url: url, background: episode.background, loadState: $loadState)
                         .id("\(episode.id)-\(reloadID)")
@@ -299,7 +324,9 @@ struct WebtoonReader: UIViewRepresentable {
         func load(_ url: URL, in view: WKWebView) {
             guard requestedURL != url else { return }
             requestedURL = url
-            view.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+            if url.isFileURL {
+                view.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+            } else { view.load(URLRequest(url: url)) }
         }
 
         func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {

@@ -25,6 +25,38 @@ enum Catalog {
         case missingCatalog, emptyCatalog
     }
 
+    static var apiBaseURL: URL {
+        URL(string: Bundle.main.object(forInfoDictionaryKey: "MangaAPIBaseURL") as? String
+            ?? "https://pr5--manga-server.quantum-box.workers.dev")!
+    }
+
+    static func loadRemote(session: URLSession = .shared) async throws -> [MangaTitle] {
+        var request = URLRequest(url: apiBaseURL.appendingPathComponent("api/v1/catalog"))
+        request.timeoutInterval = 20
+        request.cachePolicy = .reloadIgnoringLocalCacheData
+        let (data, response) = try await session.data(for: request)
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw URLError(.badServerResponse)
+        }
+        let titles = try JSONDecoder().decode([MangaTitle].self, from: data)
+        guard titles.allSatisfy({ title in
+            remoteURL(title.image) != nil && title.episodes.allSatisfy { remoteURL($0.reader) != nil }
+        }) else { throw URLError(.unsupportedURL) }
+        return titles
+    }
+
+    // API paths are relative to the configured HTTPS origin; external URLs are rejected.
+    static func remoteURL(_ path: String) -> URL? {
+        guard apiBaseURL.scheme == "https", path.hasPrefix("/"), !path.hasPrefix("//"),
+              let url = URL(string: path, relativeTo: apiBaseURL)?.absoluteURL,
+              url.host == apiBaseURL.host, url.scheme == "https", url.user == nil else { return nil }
+        return url
+    }
+
+    static func readerURL(_ path: String) -> URL? {
+        path.hasPrefix("/") ? remoteURL(path) : resource(path)
+    }
+
     static func load(resourceURL: URL? = Bundle.main.resourceURL) throws -> [MangaTitle] {
         guard let url = resource("catalog.json", resourceURL: resourceURL) else {
             throw LoadError.missingCatalog

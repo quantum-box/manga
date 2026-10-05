@@ -85,6 +85,50 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
     }
     let bucket = env.bucket("MANGA")?;
     match (req.method(), parts.as_slice()) {
+        (Method::Get, ["api", "v1", "catalog"]) => {
+            let list = bucket
+                .list()
+                .prefix("episodes/")
+                .limit(100)
+                .execute()
+                .await?;
+            let mut titles = Vec::new();
+            for object in list.objects() {
+                let key = object.key();
+                let id = key
+                    .trim_start_matches("episodes/")
+                    .trim_end_matches(".json");
+                if !slug(id) {
+                    continue;
+                }
+                let Some(object) = bucket.get(&key).execute().await? else {
+                    continue;
+                };
+                let ep: Episode =
+                    serde_json::from_slice(&object.body().ok_or("Missing body")?.bytes().await?)?;
+                let Some(cover) = ep.blocks.iter().find_map(|b| {
+                    if let Block::Image { src, .. } = b {
+                        Some(src)
+                    } else {
+                        None
+                    }
+                }) else {
+                    continue;
+                };
+                titles.push(serde_json::json!({
+                    "id": format!("online-{id}"), "title": ep.title, "genre": "Webtoon",
+                    "image": format!("/images/{id}/{cover}"), "tagline": ep.title,
+                    "synopsis": "配信中のWebtoon", "episodes": [{
+                        "id": id, "number": 1, "title": ep.title, "edition": "配信版",
+                        "reader": format!("/?episode={id}"), "background": "#111111"
+                    }]
+                }));
+            }
+            Ok(
+                Response::from_json(&titles)?
+                    .with_headers(headers("application/json", "no-store")?),
+            )
+        }
         (Method::Get, ["admin", "images", id, name]) if slug(id) && image_name(name) => {
             let Some(obj) = bucket.get(format!("images/{id}/{name}")).execute().await? else {
                 return Response::error("Not found", 404);
