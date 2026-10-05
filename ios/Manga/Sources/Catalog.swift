@@ -160,7 +160,10 @@ actor DownloadManager {
             let (data, response) = try await session.data(for: request)
             guard let http = response as? HTTPURLResponse, http.statusCode == 200 else { throw URLError(.badServerResponse) }
             if let expectedRevision {
-                guard http.value(forHTTPHeaderField: "ETag")?.trimmingCharacters(in: CharacterSet(charactersIn: "\"")) == expectedRevision else { throw DownloadError.invalidContent }
+                guard var etag = http.value(forHTTPHeaderField: "ETag") else { throw DownloadError.invalidContent }
+                // Cloudflare compression changes strong ETags to W/"..." without changing the content revision.
+                if etag.hasPrefix("W/") { etag.removeFirst(2) }
+                guard etag.trimmingCharacters(in: CharacterSet(charactersIn: "\"")) == expectedRevision else { throw DownloadError.invalidContent }
             }
             // Redirects must remain on the configured server.
             guard response.url?.host == Catalog.apiBaseURL.host, response.url?.scheme == "https" else { throw DownloadError.invalidContent }
