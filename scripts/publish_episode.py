@@ -29,9 +29,9 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 
 opener = urllib.request.build_opener(NoRedirect)
 def request(path, data=None, mime=None):
-    headers = {}
+    headers = {'User-Agent': 'manga-publisher/1.0'}
     if path.startswith("/admin/"):
-        headers = {'Authorization': 'Bearer ' + token, 'Content-Type': mime or 'application/octet-stream'}
+        headers.update({'Authorization': 'Bearer ' + token, 'Content-Type': mime or 'application/octet-stream'})
     req = urllib.request.Request(base + path, data=data, headers=headers, method='PUT' if data is not None else 'GET')
     with opener.open(req, timeout=60) as response:
         return response.read()
