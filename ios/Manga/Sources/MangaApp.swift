@@ -24,7 +24,7 @@ struct Cover: View {
 }
 
 struct CatalogView: View {
-    @State private var catalog: Result<[MangaTitle], Error> = .success([])
+    @State private var catalog: Result<[MangaTitle], Error> = .success(Catalog.cachedRemote() ?? ((try? Catalog.loadOffline()) ?? []))
     @State private var online = true
     @State private var settingsPresented = false
     @State private var loading = true
@@ -34,11 +34,11 @@ struct CatalogView: View {
         genre = "すべて"
         if online {
             do {
-                let titles = try await Catalog.loadRemote()
+                let titles = try await Catalog.loadRemote(cacheURL: Catalog.remoteCacheURL)
                 guard !Task.isCancelled else { return }
                 catalog = .success(titles)
             }
-            catch { if !Task.isCancelled { catalog = .failure(error) } }
+            catch { if !Task.isCancelled && catalogTitles.isEmpty { catalog = .failure(error) } }
         } else { catalog = Result { try Catalog.loadOffline() } }
     }
     @State private var query = ""
@@ -71,7 +71,7 @@ struct CatalogView: View {
                         Text("配信").tag(true)
                         Text("オフライン").tag(false)
                     }.pickerStyle(.segmented).accessibilityIdentifier("catalog-source")
-                    if loading { ProgressView("作品を取得中…") }
+                    if loading { ProgressView("一覧を更新中…") }
                     if query.isEmpty && genre == "すべて", let featured = catalogTitles.first {
                         NavigationLink(value: featured) {
                             GeometryReader { proxy in
@@ -152,7 +152,7 @@ struct TitleDetailView: View {
 
     @AppStorage("favoriteTitles") private var favoriteIDs = ""
     private var isFavorite: Bool { favoriteIDs.split(separator: ",").contains(Substring(title.id)) }
-    private var episodes: [Episode] { descending ? title.episodes.reversed() : title.episodes }
+    private var episodes: [Episode] { descending ? title.primaryEpisodes.reversed() : title.primaryEpisodes }
 
     var body: some View {
         ScrollView {
@@ -168,9 +168,9 @@ struct TitleDetailView: View {
                 }
                 Text(title.synopsis).font(.subheadline).foregroundStyle(.secondary).lineSpacing(5)
                 HStack(spacing: 12) {
-                    if let first = title.episodes.first {
+                    if let first = title.primaryEpisodes.first {
                         NavigationLink { ReaderView(title: title, episode: first) } label: {
-                            Label("第1話から読む", systemImage: "book.fill").font(.subheadline.bold()).frame(maxWidth: .infinity).padding(.vertical, 15)
+                            Label("第\(first.number)話から読む", systemImage: "book.fill").font(.subheadline.bold()).frame(maxWidth: .infinity).padding(.vertical, 15)
                         }.buttonStyle(.borderedProminent)
                     }
                     Button {
@@ -181,7 +181,7 @@ struct TitleDetailView: View {
                         .buttonStyle(.bordered).accessibilityLabel(isFavorite ? "お気に入りから削除" : "お気に入りに追加")
                 }
                 if Catalog.remoteURL(title.image) != nil {
-                    Label(saved ? "オフライン保存済み" : (autoSave ? "読むと自動でオフラインに保存" : "自動保存はオフ"), systemImage: saved ? "checkmark.circle.fill" : "arrow.down.circle")
+                    Label(saved ? "オフライン保存済み" : (autoSave ? "表示後に読んだ話だけ保存" : "自動保存はオフ"), systemImage: saved ? "checkmark.circle.fill" : "arrow.down.circle")
                         .font(.caption).foregroundStyle(.secondary)
                 }
                 Divider()
@@ -210,6 +210,17 @@ struct TitleDetailView: View {
                                 Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary)
                             }.padding(.vertical, 14)
                         }.buttonStyle(.plain).accessibilityIdentifier("episode-\(episode.id)")
+                        let editions = title.otherEditions(of: episode)
+                        if !editions.isEmpty {
+                            DisclosureGroup("ほかの版（\(editions.count)）") {
+                                ForEach(editions) { edition in
+                                    NavigationLink { ReaderView(title: title, episode: edition) } label: {
+                                        Text(edition.edition.isEmpty ? edition.title : edition.edition)
+                                            .font(.caption).padding(.vertical, 10)
+                                    }
+                                }
+                            }.font(.caption).padding(.vertical, 8)
+                        }
                         Divider()
                     }
                 }
@@ -233,8 +244,8 @@ struct ReaderView: View {
         _episode = State(initialValue: episode)
     }
 
-    private var previous: Episode? { title.episodes.first { $0.number == episode.number - 1 } }
-    private var next: Episode? { title.episodes.first { $0.number == episode.number + 1 } }
+    private var previous: Episode? { title.primaryEpisodes.first { $0.number == episode.number - 1 } }
+    private var next: Episode? { title.primaryEpisodes.first { $0.number == episode.number + 1 } }
 
     var body: some View {
         Group {
@@ -268,12 +279,15 @@ struct ReaderView: View {
                 ContentUnavailableView("本文を開けません", systemImage: "book.closed", description: Text("作品一覧に戻って、もう一度お試しください。"))
             }
         }
-        .task(id: title.id) {
+        .task(id: "\(episode.id)-\(loadState)", priority: .background) {
+            guard loadState == .ready else { saveStatus = ""; return }
             guard autoSave, Catalog.remoteURL(title.image) != nil else { return }
+            // Give the visible reader priority over optional offline work.
+            do { try await Task.sleep(for: .seconds(2)) } catch { return }
             saveStatus = "オフライン保存中…"
             do {
-                try await DownloadManager.shared.download(title)
-                saveStatus = "オフライン保存済み"
+                try await DownloadManager.shared.download(title, episodeIDs: [episode.id])
+                saveStatus = "この話をオフライン保存済み"
             } catch is CancellationError { saveStatus = "" }
               catch { saveStatus = "オフライン保存できませんでした。次に開いたときに再試行します。" }
         }
@@ -408,7 +422,7 @@ struct DownloadSettingsView: View {
         NavigationStack {
             Form {
                 Section {
-                    Toggle("読んだ作品を自動保存", isOn: $autoSave)
+                    Toggle("表示後に読んだ話だけ保存", isOn: $autoSave)
                 } footer: {
                     Text("作品を開くと、本文と画像を端末内へ保存します。保存中はアプリを開いておいてください。")
                 }

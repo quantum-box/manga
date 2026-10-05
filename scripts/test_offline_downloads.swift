@@ -3,6 +3,7 @@ final class OfflineAPI: URLProtocol {
     static var failImage = false
     static var revision = "v1"
     static var weakETag = true
+    static var paths = [String]()
     static var requests = 0
     static var episodeRevisions = [String: String]()
     override class func canInit(with request: URLRequest) -> Bool { true }
@@ -10,6 +11,7 @@ final class OfflineAPI: URLProtocol {
     override func startLoading() {
         Self.requests += 1
         let path = request.url!.path
+        Self.paths.append(path)
         let status = Self.failImage && path.hasSuffix("01.png") ? 503 : 200
         let data = path.hasPrefix("/api/episodes/") ? Data("""
         {"title":"Test","subtitle":"Subtitle","blocks":[{"type":"caption","text":"<script>bad()</script>"},{"type":"image","src":"01.png","alt":"test"}]}
@@ -81,6 +83,18 @@ final class OfflineAPI: URLProtocol {
         let grouped = try OfflineDownloads.load(root: root)
         precondition(grouped.count == 1 && grouped[0].episodes.count == 2)
         precondition(grouped[0].episodes.map(\.revision) == ["chapter-one", "chapter-two"])
+        try await DownloadManager.shared.delete(series.id, root: root)
+        OfflineAPI.paths = []
+        try await DownloadManager.shared.download(series, episodeIDs: ["first"], root: root, session: nextSession)
+        precondition(OfflineAPI.paths.filter { $0.hasPrefix("/api/episodes/") } == ["/api/episodes/first"])
+        let partial = try OfflineDownloads.load(root: root)
+        precondition(partial.first!.episodes.count == 1)
+        OfflineAPI.paths = []
+        try await DownloadManager.shared.download(series, episodeIDs: ["second"], root: root, session: nextSession)
+        precondition(OfflineAPI.paths.filter { $0.hasPrefix("/api/episodes/") } == ["/api/episodes/second"])
+        let accumulated = try OfflineDownloads.load(root: root)
+        precondition(accumulated[0].episodes.map(\.id) == ["first", "second"])
+        print("PASS: reading one chapter downloads only it; later chapters retain earlier saved files")
         print("PASS: a grouped series verifies each chapter against its own revision")
         print("PASS: deletion removes files and prevents an in-flight download from restoring them")
         print("PASS: failed downloads stay hidden; completed files read without networking; duplicates reuse saved data")

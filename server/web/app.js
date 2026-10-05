@@ -17,7 +17,7 @@ async function json(url) {
 async function load() {
   const params = new URL(location.href).searchParams;
   const id = params.get('episode');
-  const catalog = await json('/api/v1/catalog');
+  const [catalog, ep] = await Promise.all([json('/api/v1/catalog'), id ? json('/api/episodes/' + encodeURIComponent(id)) : Promise.resolve(null)]);
   root.replaceChildren();
   if (!id) {
     const seriesID = params.get('series');
@@ -60,14 +60,15 @@ async function load() {
     });
     nav.append(link('シリーズ一覧に戻る', '/')); root.append(nav); return;
   }
-  const ep = await json('/api/episodes/' + encodeURIComponent(id));
   const series = catalog.find(series => series.episodes.some(ep => ep.id === id));
-  document.title = ep.title + ' · Manga';
+  document.title = (series?.title || ep.title) + ' · Manga';
   if (series) {
     const nav = document.createElement('nav'); nav.append(link('‹ ' + series.title + ' · 話一覧', seriesURL(series))); root.append(nav);
   }
-  root.append(text('h1', ep.title));
-  if (ep.subtitle) root.append(text('p', ep.subtitle));
+  root.append(text('h1', series?.title || ep.title));
+  const chapter = series?.episodes.find(chapter => chapter.id === id);
+  if (chapter) root.append(text('p', '第' + chapter.number + '話　' + chapter.title));
+  else if (ep.subtitle) root.append(text('p', ep.subtitle));
   ep.blocks.forEach((block, index) => {
     if (block.type === 'image') {
       const img = document.createElement('img');

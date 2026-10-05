@@ -16,9 +16,9 @@ pub fn identify(id: &str, title: &str) -> SeriesInfo {
     } else if id.starts_with("lost-property-clerk-") {
         ("lost-property-clerk", "終電後の落とし物係")
     } else if id.starts_with("heavenly-demon-") {
-        ("heavenly-demon", "天魔、強くてニューゲーム")
+        ("heavenly-demon", "天魔、二周目。")
     } else if id.starts_with("zero-break-") {
-        ("zero-break", "ZERO BREAK")
+        ("zero-break", "ゼロ・ブレイク")
     } else {
         (id, title)
     };
@@ -56,6 +56,18 @@ pub fn identify(id: &str, title: &str) -> SeriesInfo {
     }
 }
 
+pub fn chapter_title<'a>(id: &str, fallback: &'a str) -> &'a str {
+    if id.starts_with("zero-break-") {
+        "最弱判定、最強の一歩。"
+    } else if id.starts_with("pochi-") || id == "pochis-handshake" {
+        "ポチと魔王の「おて」"
+    } else if id == "swordsaint-white-v2" {
+        "その手は、二度目"
+    } else {
+        fallback
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -66,6 +78,14 @@ mod tests {
         }
         assert_eq!(identify("swordsaint-white-v2", "").number, 1);
         assert_eq!(identify("swordsaint-episode-10-white", "").number, 10);
+        assert_eq!(
+            identify("heavenly-demon-episode-01", "").title,
+            "天魔、二周目。"
+        );
+        assert_eq!(
+            chapter_title("zero-break-v5", "v5"),
+            "最弱判定、最強の一歩。"
+        );
         assert!(identify("zero-break-v5", "").rank < identify("zero-break-v1", "").rank);
     }
     #[test]
