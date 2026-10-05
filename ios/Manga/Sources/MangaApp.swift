@@ -150,9 +150,16 @@ struct TitleDetailView: View {
     @State private var saved = false
     @AppStorage("autoSaveWebtoons") private var autoSave = true
 
+    @AppStorage(ReadingHistory.storageKey) private var readChapters = "[]"
     @AppStorage("favoriteTitles") private var favoriteIDs = ""
     private var isFavorite: Bool { favoriteIDs.split(separator: ",").contains(Substring(title.id)) }
     private var episodes: [Episode] { descending ? title.primaryEpisodes.reversed() : title.primaryEpisodes }
+
+    private func isRead(_ episode: Episode) -> Bool {
+        ReadingHistory.contains(readChapters, titleID: title.id, number: episode.number)
+    }
+    private var continueEpisode: Episode? { title.primaryEpisodes.first { !isRead($0) } ?? title.primaryEpisodes.first }
+    private var hasReadEpisodes: Bool { title.primaryEpisodes.contains { isRead($0) } }
 
     var body: some View {
         ScrollView {
@@ -168,9 +175,9 @@ struct TitleDetailView: View {
                 }
                 Text(title.synopsis).font(.subheadline).foregroundStyle(.secondary).lineSpacing(5)
                 HStack(spacing: 12) {
-                    if let first = title.primaryEpisodes.first {
+                    if let first = continueEpisode {
                         NavigationLink { ReaderView(title: title, episode: first) } label: {
-                            Label("第\(first.number)話から読む", systemImage: "book.fill").font(.subheadline.bold()).frame(maxWidth: .infinity).padding(.vertical, 15)
+                            Label(hasReadEpisodes && !isRead(first) ? "続きから読む · 第\(first.number)話" : "第\(first.number)話から読む", systemImage: "book.fill").font(.subheadline.bold()).frame(maxWidth: .infinity).padding(.vertical, 15)
                         }.buttonStyle(.borderedProminent)
                     }
                     Button {
@@ -206,10 +213,19 @@ struct TitleDetailView: View {
                                     }
                                 }
                                 Spacer()
-                                Text("無料").font(.caption.bold()).foregroundStyle(.orange)
+                                if isRead(episode) {
+                                    Label("既読", systemImage: "checkmark.circle.fill").font(.caption).foregroundStyle(.secondary)
+                                } else {
+                                    Text("未読").font(.caption).foregroundStyle(.orange)
+                                }
                                 Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary)
                             }.padding(.vertical, 14)
                         }.buttonStyle(.plain).accessibilityIdentifier("episode-\(episode.id)")
+                        .contextMenu {
+                            Button(isRead(episode) ? "未読に戻す" : "既読にする") {
+                                readChapters = ReadingHistory.setting(!isRead(episode), in: readChapters, titleID: title.id, number: episode.number)
+                            }
+                        }
                         let editions = title.otherEditions(of: episode)
                         if !editions.isEmpty {
                             DisclosureGroup("ほかの版（\(editions.count)）") {
@@ -237,6 +253,7 @@ struct ReaderView: View {
     @State private var reloadID = UUID()
     @AppStorage("autoSaveWebtoons") private var autoSave = true
     @State private var saveStatus = ""
+    @AppStorage(ReadingHistory.storageKey) private var readChapters = "[]"
 
 
     init(title: MangaTitle, episode: Episode) {
@@ -281,6 +298,7 @@ struct ReaderView: View {
         }
         .task(id: "\(episode.id)-\(loadState)", priority: .background) {
             guard loadState == .ready else { saveStatus = ""; return }
+            readChapters = ReadingHistory.setting(true, in: readChapters, titleID: title.id, number: episode.number)
             guard autoSave, Catalog.remoteURL(title.image) != nil else { return }
             // Give the visible reader priority over optional offline work.
             do { try await Task.sleep(for: .seconds(2)) } catch { return }
