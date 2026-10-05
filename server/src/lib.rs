@@ -308,6 +308,17 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
             }
             Response::empty().map(|r| r.with_status(201))
         }
+        (Method::Delete, ["admin", "episodes", id]) if slug(id) => {
+            let key = format!("episodes/{id}.json");
+            let episode = bucket.head(&key).await?;
+            let revision = episode.map(|episode| episode.etag()).unwrap_or_default();
+            bucket.delete(&key).await?;
+            bucket
+                .put("catalog/generation", format!("deleted-{revision}-{id}"))
+                .execute()
+                .await?;
+            Response::empty().map(|r| r.with_status(204))
+        }
         (Method::Put, ["admin", "episodes", id]) if slug(id) => {
             let bytes = req.bytes().await?;
             if bytes.len() > 256 * 1024 {
