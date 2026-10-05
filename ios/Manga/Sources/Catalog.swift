@@ -41,7 +41,7 @@ enum Catalog {
 
     static var apiBaseURL: URL {
         URL(string: Bundle.main.object(forInfoDictionaryKey: "MangaAPIBaseURL") as? String
-            ?? "https://manga-server.quantum-box.workers.dev")!
+            ?? "https://manga-server.txcloud.app")!
     }
 
     static var remoteCacheURL: URL { OfflineDownloads.root.appendingPathComponent(".online-catalog.json") }

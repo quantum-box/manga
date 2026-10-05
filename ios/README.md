@@ -19,7 +19,7 @@ SwiftUI製のWebtoonアプリ。iOS 17以降。配信APIから作品一覧・表
 
 お気に入りは端末内に保存。配信APIは`GET /api/v1/catalog`。読者の課金・認証は未実装。管理者トークンはアプリに含めない。
 
-接続先はXcode Build Settingの`MANGA_API_BASE_URL`（HTTPS）。DebugはPR #5のpreview Worker、Releaseは本番Worker（manga-server.quantum-box.workers.dev）を指定する。本番デプロイはPRマージ後に確認する。カタログ更新は起動・読み込み元切替・下へ引っ張って更新で行う。通信失敗はエラーとして表示し、オフラインを明示的に選べる。
+接続先はXcode Build Settingの`MANGA_API_BASE_URL`（HTTPS）。Debug・Releaseとも本番（manga-server.txcloud.app）を指定する。Previewを使うときだけ明示的に上書きする。本番デプロイはPRマージ後に確認する。カタログ更新は起動・読み込み元切替・下へ引っ張って更新で行う。通信失敗はエラーとして表示し、オフラインを明示的に選べる。
 
 ## 作品を追加・修正する
 
