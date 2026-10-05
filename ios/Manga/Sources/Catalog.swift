@@ -112,6 +112,7 @@ enum OfflineDownloads {
 actor DownloadManager {
     static let shared = DownloadManager()
     private var active = Set<String>()
+    private var revisions = [String: Int]()
     enum DownloadError: Error { case invalidContent, tooLarge, alreadyDownloading }
     private func safe(_ value: String) -> Bool {
         !value.isEmpty && value.count <= 80 && value.utf8.allSatisfy { (48...57).contains($0) || (65...90).contains($0) || (97...122).contains($0) || $0 == 45 || $0 == 95 }
@@ -120,11 +121,23 @@ actor DownloadManager {
         text.replacingOccurrences(of: "&", with: "&amp;").replacingOccurrences(of: "<", with: "&lt;")
             .replacingOccurrences(of: ">", with: "&gt;").replacingOccurrences(of: "\"", with: "&quot;")
     }
+    func delete(_ titleID: String, root: URL = OfflineDownloads.root) throws {
+        revisions[titleID, default: 0] += 1
+        guard FileManager.default.fileExists(atPath: root.path) else { return }
+        for folder in try FileManager.default.contentsOfDirectory(at: root, includingPropertiesForKeys: nil) {
+            guard !folder.lastPathComponent.hasPrefix("."),
+                  let data = try? Data(contentsOf: folder.appendingPathComponent("title.json")),
+                  let title = try? JSONDecoder().decode(MangaTitle.self, from: data), title.id == titleID else { continue }
+            try FileManager.default.removeItem(at: folder)
+        }
+    }
+
     func download(_ title: MangaTitle, root: URL = OfflineDownloads.root, session: URLSession = .shared,
                   progress: (Int, Int) async -> Void = { _, _ in }) async throws {
         if try OfflineDownloads.load(root: root).contains(where: { $0.id == title.id }) { return }
         guard active.insert(title.id).inserted else { throw DownloadError.alreadyDownloading }
         defer { active.remove(title.id) }
+        let revision = revisions[title.id, default: 0]
         let manager = FileManager.default
         try manager.createDirectory(at: root, withIntermediateDirectories: true)
         // Exclude re-downloadable comics from iCloud backup; Application Support retains them offline.
@@ -188,6 +201,7 @@ actor DownloadManager {
                               tagline: title.tagline, synopsis: title.synopsis, episodes: episodes)
         try JSONEncoder().encode(saved).write(to: staging.appendingPathComponent("title.json"), options: .atomic)
         try Task.checkCancellation()
+        guard revisions[title.id, default: 0] == revision else { throw CancellationError() }
         try manager.moveItem(at: staging, to: root.appendingPathComponent(folder))
     }
 }

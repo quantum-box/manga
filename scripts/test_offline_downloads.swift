@@ -43,6 +43,19 @@ final class OfflineAPI: URLProtocol {
         let count = OfflineAPI.requests
         try await DownloadManager.shared.download(title, root: root, session: session)
         precondition(count == OfflineAPI.requests)
+        try await DownloadManager.shared.delete(title.id, root: root)
+        let deleted = try OfflineDownloads.load(root: root)
+        precondition(deleted.isEmpty && !FileManager.default.fileExists(atPath: reader.path))
+        let nextSession = URLSession(configuration: config)
+        do {
+            try await DownloadManager.shared.download(title, root: root, session: nextSession) { _, _ in
+                try? await DownloadManager.shared.delete(title.id, root: root)
+            }
+            fatalError("Deleted download reappeared")
+        } catch is CancellationError {}
+        let afterRace = try OfflineDownloads.load(root: root)
+        precondition(afterRace.isEmpty)
+        print("PASS: deletion removes files and prevents an in-flight download from restoring them")
         print("PASS: failed downloads stay hidden; completed files read without networking; duplicates reuse saved data")
     }
 }

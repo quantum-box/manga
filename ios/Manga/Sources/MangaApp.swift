@@ -26,6 +26,7 @@ struct Cover: View {
 struct CatalogView: View {
     @State private var catalog: Result<[MangaTitle], Error> = .success([])
     @State private var online = true
+    @State private var settingsPresented = false
     @State private var loading = true
     @MainActor private func refresh() async {
         loading = true
@@ -62,7 +63,9 @@ struct CatalogView: View {
                             Text("今日も、物語に出会おう。").font(.subheadline).foregroundStyle(.secondary)
                         }
                         Spacer()
-                        Image(systemName: "sparkles").font(.title).foregroundStyle(.orange)
+                        Button { settingsPresented = true } label: {
+                            Image(systemName: "gearshape").font(.title).foregroundStyle(.orange)
+                        }.accessibilityLabel("設定").accessibilityIdentifier("settings")
                     }
                     Picker("読み込み元", selection: $online) {
                         Text("配信").tag(true)
@@ -132,6 +135,7 @@ struct CatalogView: View {
             }
             .background(Color(.systemBackground))
             .toolbar(.hidden, for: .navigationBar)
+            .sheet(isPresented: $settingsPresented, onDismiss: { Task { await refresh() } }) { DownloadSettingsView() }
             .task(id: online) { await refresh() }
             .refreshable { await refresh() }
             .searchable(text: $query, prompt: "作品タイトルで検索")
@@ -143,9 +147,8 @@ struct CatalogView: View {
 struct TitleDetailView: View {
     let title: MangaTitle
     @State private var descending = false
-    @State private var downloading = false
     @State private var saved = false
-    @State private var downloadStatus = ""
+    @AppStorage("autoSaveWebtoons") private var autoSave = true
 
     @AppStorage("favoriteTitles") private var favoriteIDs = ""
     private var isFavorite: Bool { favoriteIDs.split(separator: ",").contains(Substring(title.id)) }
@@ -178,23 +181,8 @@ struct TitleDetailView: View {
                         .buttonStyle(.bordered).accessibilityLabel(isFavorite ? "お気に入りから削除" : "お気に入りに追加")
                 }
                 if Catalog.remoteURL(title.image) != nil {
-                    Button {
-                        downloading = true
-                        downloadStatus = "ダウンロード中…"
-                        Task {
-                            do {
-                                try await DownloadManager.shared.download(title) { count, total in
-                                    await MainActor.run { downloadStatus = "保存中 \(count)/\(total)話" }
-                                }
-                                saved = true
-                                downloadStatus = "オフラインに保存しました"
-                            } catch { downloadStatus = "保存に失敗しました。通信と空き容量を確認して再試行してください。" }
-                            downloading = false
-                        }
-                    } label: {
-                        Label(saved ? "保存済み" : "オフラインに保存", systemImage: saved ? "checkmark.circle.fill" : "arrow.down.circle")
-                    }.buttonStyle(.bordered).disabled(downloading || saved).accessibilityIdentifier("download-title")
-                    if !downloadStatus.isEmpty { Text(downloadStatus).font(.caption).accessibilityIdentifier("download-status") }
+                    Label(saved ? "オフライン保存済み" : (autoSave ? "読むと自動でオフラインに保存" : "自動保存はオフ"), systemImage: saved ? "checkmark.circle.fill" : "arrow.down.circle")
+                        .font(.caption).foregroundStyle(.secondary)
                 }
                 Divider()
                 HStack {
@@ -236,6 +224,9 @@ struct ReaderView: View {
     @State private var episode: Episode
     @State private var loadState = ReaderLoadState.loading
     @State private var reloadID = UUID()
+    @AppStorage("autoSaveWebtoons") private var autoSave = true
+    @State private var saveStatus = ""
+
 
     init(title: MangaTitle, episode: Episode) {
         self.title = title
@@ -275,6 +266,21 @@ struct ReaderView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
                 ContentUnavailableView("本文を開けません", systemImage: "book.closed", description: Text("作品一覧に戻って、もう一度お試しください。"))
+            }
+        }
+        .task(id: title.id) {
+            guard autoSave, Catalog.remoteURL(title.image) != nil else { return }
+            saveStatus = "オフライン保存中…"
+            do {
+                try await DownloadManager.shared.download(title)
+                saveStatus = "オフライン保存済み"
+            } catch is CancellationError { saveStatus = "" }
+              catch { saveStatus = "オフライン保存できませんでした。次に開いたときに再試行します。" }
+        }
+        .overlay(alignment: .bottom) {
+            if !saveStatus.isEmpty {
+                Text(saveStatus).font(.caption2).padding(8).background(.regularMaterial, in: Capsule()).padding(.bottom, 8)
+                    .allowsHitTesting(false).accessibilityIdentifier("auto-save-status")
             }
         }
         .navigationTitle("第\(episode.number)話\(episode.edition.isEmpty ? "" : " · " + episode.edition)")
@@ -385,3 +391,56 @@ private extension UIColor {
 }
 
 #Preview { CatalogView() }
+
+
+struct DownloadSettingsView: View {
+    @Environment(\.dismiss) private var dismiss
+    @AppStorage("autoSaveWebtoons") private var autoSave = true
+    @State private var titles = [MangaTitle]()
+    @State private var selected: MangaTitle?
+    @State private var confirmDelete = false
+    @State private var error = ""
+    private func reload() {
+        do { titles = try OfflineDownloads.load(); error = "" }
+        catch { self.error = "保存済み作品を読み込めませんでした。" }
+    }
+    var body: some View {
+        NavigationStack {
+            Form {
+                Section {
+                    Toggle("読んだ作品を自動保存", isOn: $autoSave)
+                } footer: {
+                    Text("作品を開くと、本文と画像を端末内へ保存します。保存中はアプリを開いておいてください。")
+                }
+                Section("端末に保存した作品") {
+                    if titles.isEmpty { Text("保存済み作品はありません").foregroundStyle(.secondary) }
+                    ForEach(titles) { title in
+                        HStack {
+                            Text(title.title)
+                            Spacer()
+                            Button("削除", role: .destructive) { selected = title; confirmDelete = true }
+                                .accessibilityIdentifier("delete-\(title.id)")
+                        }
+                    }
+                }
+                Section {
+                    Text("削除した作品は、次に配信から開くと再保存します。再保存を止めるには自動保存をオフにしてください。同梱作品は削除されません。")
+                        .font(.caption).foregroundStyle(.secondary)
+                    if !error.isEmpty { Text(error).foregroundStyle(.red) }
+                }
+            }
+            .navigationTitle("設定")
+            .toolbar { ToolbarItem(placement: .confirmationAction) { Button("完了") { dismiss() } } }
+            .onAppear { reload() }
+            .confirmationDialog("端末の保存データを削除しますか？", isPresented: $confirmDelete, titleVisibility: .visible) {
+                Button("端末から削除", role: .destructive) {
+                    guard let selected else { return }
+                    Task {
+                        do { try await DownloadManager.shared.delete(selected.id); reload() }
+                        catch { self.error = "削除できませんでした。もう一度お試しください。" }
+                    }
+                }
+            } message: { Text(selected?.title ?? "") }
+        }
+    }
+}
