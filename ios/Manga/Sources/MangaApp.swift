@@ -253,6 +253,8 @@ struct ReaderView: View {
     @State private var reloadID = UUID()
     @AppStorage("autoSaveWebtoons") private var autoSave = true
     @State private var saveStatus = ""
+    @State private var contentRevision: String?
+    @State private var saveDetailsPresented = false
     @AppStorage(ReadingHistory.storageKey) private var readChapters = "[]"
 
 
@@ -268,7 +270,7 @@ struct ReaderView: View {
         Group {
             if let url = Catalog.readerURL(episode.reader) {
                 ZStack {
-                    WebtoonReader(url: url, background: episode.background, loadState: $loadState)
+                    WebtoonReader(url: url, background: episode.background, loadState: $loadState, onRevision: { contentRevision = $0 })
                         .id("\(episode.id)-\(reloadID)")
                         .accessibilityIdentifier("webtoon-reader")
                     if loadState == .loading {
@@ -304,30 +306,39 @@ struct ReaderView: View {
             do { try await Task.sleep(for: .seconds(2)) } catch { return }
             saveStatus = "オフライン保存中…"
             do {
-                try await DownloadManager.shared.download(title, episodeIDs: [episode.id])
+                let downloadedEpisode = Episode(id: episode.id, number: episode.number, title: episode.title, edition: episode.edition,
+                    reader: episode.reader, background: episode.background, revision: contentRevision ?? episode.revision)
+                let snapshot = MangaTitle(id: title.id, title: title.title, genre: title.genre, image: title.image,
+                    tagline: title.tagline, synopsis: title.synopsis,
+                    episodes: title.episodes.map { $0.id == episode.id ? downloadedEpisode : $0 }, revision: title.revision)
+                try await DownloadManager.shared.download(snapshot, episodeIDs: [episode.id])
                 saveStatus = "この話をオフライン保存済み"
             } catch is CancellationError { saveStatus = "" }
               catch { saveStatus = "オフライン保存できませんでした。次に開いたときに再試行します。" }
         }
-        .overlay(alignment: .bottom) {
+        .toolbar {
             if !saveStatus.isEmpty {
-                Text(saveStatus).font(.caption2).padding(8).background(.regularMaterial, in: Capsule()).padding(.bottom, 8)
-                    .allowsHitTesting(false).accessibilityIdentifier("auto-save-status")
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button { saveDetailsPresented = true } label: {
+                        Image(systemName: saveStatus.contains("できません") ? "exclamationmark.circle" : (saveStatus.contains("保存済み") ? "checkmark.circle" : "arrow.down.circle"))
+                    }.accessibilityLabel(saveStatus)
+                }
             }
         }
+        .alert("オフライン保存", isPresented: $saveDetailsPresented) { Button("OK", role: .cancel) {} } message: { Text(saveStatus) }
         .navigationTitle("第\(episode.number)話\(episode.edition.isEmpty ? "" : " · " + episode.edition)")
         .navigationBarTitleDisplayMode(.inline)
         .safeAreaInset(edge: .bottom) {
             if title.episodeCount > 1 {
                 HStack {
-                    Button { if let previous { loadState = .loading; episode = previous } } label: {
+                    Button { if let previous { contentRevision = nil; loadState = .loading; episode = previous } } label: {
                         Label("前の話", systemImage: "chevron.left")
                     }.disabled(previous == nil).accessibilityIdentifier("previous-episode")
                     Spacer()
                     Text("\(episode.number) / \(title.episodeCount)")
                         .font(.caption).foregroundStyle(.secondary)
                     Spacer()
-                    Button { if let next { loadState = .loading; episode = next } } label: {
+                    Button { if let next { contentRevision = nil; loadState = .loading; episode = next } } label: {
                         HStack(spacing: 5) {
                             Text("次の話")
                             Image(systemName: "chevron.right")
@@ -349,18 +360,26 @@ struct WebtoonReader: UIViewRepresentable {
     let url: URL
     let background: String
     @Binding var loadState: ReaderLoadState
+    let onRevision: (String) -> Void
 
-    func makeCoordinator() -> Coordinator { Coordinator(loadState: $loadState) }
+    func makeCoordinator() -> Coordinator { Coordinator(loadState: $loadState, onRevision: onRevision) }
 
     func makeUIView(context: Context) -> WKWebView {
         let configuration = WKWebViewConfiguration()
         configuration.websiteDataStore = .nonPersistent()
         configuration.userContentController.add(context.coordinator, name: "mangaReader")
-        // The native toolbar owns chapter navigation; keep web links from changing its episode.
-        if !url.isFileURL {
-            configuration.userContentController.addUserScript(WKUserScript(
-                source: "const nativeStyle = document.createElement('style'); nativeStyle.textContent = 'body>header,#reader>nav{display:none!important}'; document.head.appendChild(nativeStyle);",
-                injectionTime: .atDocumentEnd, forMainFrameOnly: true))
+        if !url.isFileURL, let id = ReaderContent.episodeID(from: url) {
+            // This script runs only in our API-derived document, never in the website shell.
+            let quotedID = String(data: try! JSONEncoder().encode(id), encoding: .utf8)!
+            configuration.userContentController.addUserScript(WKUserScript(source: """
+                (() => {
+                  const notify = state => window.webkit.messageHandlers.mangaReader.postMessage({state, episodeID: \(quotedID)});
+                  const image = document.images[0];
+                  if (!image) notify('ready');
+                  else if (image.complete) notify(image.naturalWidth > 0 ? 'ready' : 'failed');
+                  else { image.addEventListener('load', () => notify('ready'), {once:true}); image.addEventListener('error', () => notify('failed'), {once:true}); }
+                })();
+                """, injectionTime: .atDocumentEnd, forMainFrameOnly: true))
         }
         let view = WKWebView(frame: .zero, configuration: configuration)
         view.navigationDelegate = context.coordinator
@@ -376,10 +395,12 @@ struct WebtoonReader: UIViewRepresentable {
 
     func updateUIView(_ view: WKWebView, context: Context) {
         context.coordinator.loadState = $loadState
+        context.coordinator.onRevision = onRevision
         context.coordinator.load(url, in: view)
     }
 
     static func dismantleUIView(_ view: WKWebView, coordinator: Coordinator) {
+        coordinator.contentTask?.cancel()
         view.configuration.userContentController.removeScriptMessageHandler(forName: "mangaReader")
         view.navigationDelegate = nil
         view.stopLoading()
@@ -388,15 +409,33 @@ struct WebtoonReader: UIViewRepresentable {
     final class Coordinator: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
         var loadState: Binding<ReaderLoadState>
         private var requestedURL: URL?
+        var contentTask: Task<Void, Never>?
+        var onRevision: (String) -> Void
 
-        init(loadState: Binding<ReaderLoadState>) { self.loadState = loadState }
+        init(loadState: Binding<ReaderLoadState>, onRevision: @escaping (String) -> Void) {
+            self.loadState = loadState; self.onRevision = onRevision
+        }
 
         func load(_ url: URL, in view: WKWebView) {
             guard requestedURL != url else { return }
             requestedURL = url
+            contentTask?.cancel()
             if url.isFileURL {
                 view.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
-            } else { view.load(URLRequest(url: url)) }
+            } else {
+                contentTask = Task { @MainActor [weak self, weak view] in
+                    do {
+                        guard let id = ReaderContent.episodeID(from: url) else { throw ReaderContent.ContentError.invalidContent }
+                        let content = try await ReaderContent.load(id: id)
+                        try Task.checkCancellation()
+                        guard let self, let view, self.requestedURL == url else { return }
+                        self.onRevision(content.revision)
+                        view.loadHTMLString(content.html, baseURL: Catalog.apiBaseURL)
+                    } catch {
+                        if !Task.isCancelled, self?.requestedURL == url { self?.loadState.wrappedValue = .failed }
+                    }
+                }
+            }
         }
 
         func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
@@ -420,14 +459,13 @@ struct WebtoonReader: UIViewRepresentable {
         }
 
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            // Remote navigation finishes before app.js fetches the chapter and images.
+            // Remote documents wait for the first image before being marked ready.
             if requestedURL?.isFileURL == true { loadState.wrappedValue = .ready }
         }
 
         func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
             guard message.frameInfo.isMainFrame,
-                  let requestedURL, message.webView?.url?.host == requestedURL.host,
-                  message.webView?.url?.scheme == requestedURL.scheme,
+                  message.name == "mangaReader", let requestedURL, !requestedURL.isFileURL,
                   let body = message.body as? [String: String],
                   let expectedID = URLComponents(url: requestedURL, resolvingAgainstBaseURL: false)?.queryItems?.first(where: { $0.name == "episode" })?.value,
                   body["episodeID"] == expectedID else { return }
