@@ -308,6 +308,23 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
             }
             Response::empty().map(|r| r.with_status(201))
         }
+        (Method::Delete, ["admin", "episodes", id]) if slug(id) => {
+            let key = format!("episodes/{id}.json");
+            bucket.delete(&key).await?;
+            // R2 ETags are content based. Never reuse a generation, including retries
+            // for missing episodes, or an old catalog index could become valid.
+            let mutation = format!(
+                "{}-{:x}-{:x}",
+                Date::now().as_millis(),
+                js_sys::Math::random().to_bits(),
+                js_sys::Math::random().to_bits()
+            );
+            bucket
+                .put("catalog/generation", format!("deleted-{mutation}-{id}"))
+                .execute()
+                .await?;
+            Response::empty().map(|r| r.with_status(204))
+        }
         (Method::Put, ["admin", "episodes", id]) if slug(id) => {
             let bytes = req.bytes().await?;
             if bytes.len() > 256 * 1024 {
