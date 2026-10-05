@@ -23,7 +23,7 @@
 
 ## 保存ファイル
 
-- `art/`：作画原本9枚。`art/lettering/`：生成した表示・効果音・武技名の原本。`provenance.json`／`lettering-provenance.json`：生成方式・参照・保存元と確認メモ。
+- `../../art/`：共有して保持する旧版の作画原本9枚。`../../art/lettering/`：旧版の表示・効果音・武技名の原本。`../../provenance.json`／`../../lettering-provenance.json`：生成方式・参照・保存元と確認メモ。
 - `build_episode.py`／`episode.json`／`lettering.json`：組版の再現と、原画・表示画像・見せ順の定義。
 - `index.html`：作画と別組み文字。`reader.html`：全画像を内包し単独で開ける本文。
 - `webtoon-full-390.jpg`／`mobile-keyframe.jpg`／`validation/`：文字付きの全長と表示確認用の画像。
@@ -33,10 +33,9 @@
 repoルートで実行する。
 
 ```sh
-python3 examples/heavenly-demon-ngplus/episode-01/build_episode.py
-python3 /Users/takanorifukuyama/.codex/skills/webtoon/scripts/package_reader.py examples/heavenly-demon-ngplus/episode-01/index.html --output examples/heavenly-demon-ngplus/episode-01/reader.html --force
-python3 scripts/sync_ios_webtoons.py
-python3 scripts/sync_ios_webtoons.py --check
+python3 examples/heavenly-demon-ngplus/episode-01/revisions/before-empathy/build_episode.py
 ```
+
+このフォルダーの `episode.json` と `lettering.json` は `../../art/` の保持済み原画を参照し、旧版の `index.html` を再出力する。表示定義は金装飾版を固定している。単独閲覧には保存済みの `reader.html` を使う。
 
 iOS同梱カタログは5作品／16リーダー。既存の同梱チェックと5件のPythonテストに合格した。新規SwiftコードやRustコードは変更していない。iOS実機での読書、TestFlight、漫画配信サイトへの投稿は未実施。
