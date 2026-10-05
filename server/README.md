@@ -11,7 +11,7 @@ mise exec -- rustup target add wasm32-unknown-unknown
 mise exec -- cargo install worker-build --version 0.8.7 --locked
 # server/.dev.vars に ADMIN_TOKEN を設定（32文字以上、Git管理対象外）
 cd server
-mise exec -- npx wrangler dev
+mise exec -- npx wrangler dev --config wrangler.local.toml
 ```
 
 ## Tachyonへのデプロイ
@@ -29,7 +29,7 @@ tachyon compute logs manga-server --tenant-id <tenant>
 ```
 
 `worker.generateConfig: true`でTachyonが実バケットとシークレットを設定する。
-ローカルの`wrangler.toml`のバケット名を本番へ直接deployしない。
+ローカルの`wrangler.local.toml`のバケット名を本番へ直接deployしない。
 `install.sh`がRust/Wasm targetとworker-buildを用意するため初回クラウドビルドは時間がかかる。
 
 ## 公開
