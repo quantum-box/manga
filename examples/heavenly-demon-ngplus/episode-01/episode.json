@@ -1,0 +1,79 @@
+{
+  "title": "天魔、二周目。",
+  "subtitle": "第1話　処刑する相手、間違えてるぞ",
+  "style": "anime cel shading / original murim isekai / new game plus",
+  "protagonist": "ハン・ユン",
+  "artwork": [
+    {
+      "id": "execution",
+      "src": "art/01-execution-empathy.png",
+      "alt": "処刑場で膝をつくハン・ユン。縛られた手、恐怖と戸惑いで見開いた青緑の目。羅長老が見下ろす。"
+    },
+    {
+      "id": "previous-life",
+      "src": "art/02-clear.png",
+      "alt": "現代の青年が武侠ゲームをクリアし、モニターからあふれる光に包まれる。"
+    },
+    {
+      "id": "awakening",
+      "src": "art/03-awakening-empathy.png",
+      "alt": "指先にわずかに力を入れると縄が切れた。シアンの内功と、自分の手に驚くハン・ユン。"
+    },
+    {
+      "id": "descending-sword",
+      "src": "art/04-descent.png",
+      "alt": "羅長老が直剣を振り下ろす。縦に長い青い斬撃が広場を走る。"
+    },
+    {
+      "id": "two-fingers",
+      "src": "art/05-catch-empathy.png",
+      "alt": "右手の人差し指と中指で直剣を止めたハン・ユン。本人も驚き、刃と自分の指を見る。"
+    },
+    {
+      "id": "shatter",
+      "src": "art/06-shatter.png",
+      "alt": "止めた剣にひびが走り、刀身が破片になって落ちる。羅長老の顔が恐怖に変わる。"
+    },
+    {
+      "id": "one-palm",
+      "src": "art/07-palm.png",
+      "alt": "ハン・ユンの左掌が長老の胸を打つ。金の衝撃が広がり、石床が割れる。"
+    },
+    {
+      "id": "aftermath",
+      "src": "art/08-victory.png",
+      "alt": "長老は倒れているが生きている。立つハン・ユンを周囲の弟子が驚いて見る。"
+    },
+    {
+      "id": "sword-bows",
+      "src": "art/09-oath.png",
+      "alt": "禁庫から飛来した黒い天魔剣が、金の光を放ってハン・ユンの前で礼をする。"
+    },
+    {
+      "id": "counter-bridge",
+      "src": "art/10-counter-bridge.png",
+      "alt": "折れた剣の破片のそばで、長老が拳で襲いかかる。ハン・ユンは恐怖に顔をこわばらせ、左掌を防御のために突き出す。"
+    },
+    {
+      "id": "aftershock",
+      "src": "art/11-aftershock.png",
+      "alt": "戦闘後、強すぎた自分の力に戸惑って手を見るハン・ユン。相手を気遣う目に涙が浮かび、ようやく息を吐く。"
+    }
+  ],
+  "protected_reveals": [
+    {
+      "cue": "catch-cue",
+      "answer": "two-fingers",
+      "purpose": "止まってくれという祈りから、実際に二本の指で止めた結果を次の画面で見せる"
+    }
+  ],
+  "revision": "hologram-ui-v5",
+  "deferred_reveals": [
+    {
+      "asset": "sword-bows",
+      "originalGraphic": "ui-route",
+      "plannedEpisode": 2,
+      "purpose": "第1話は生還と自分の力への戸惑いに集中。天魔剣の姿と臣従は次話に回す。"
+    }
+  ]
+}

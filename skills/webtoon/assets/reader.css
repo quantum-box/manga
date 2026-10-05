@@ -1,12 +1,13 @@
 /* Adapt the palette and placement to the story. No scene order is prescribed. */
 :root {
-  --page: #f4f1e9;
+  --page: #fff;
+  --surround: #eceff2;
   --ink: #252a31;
   --balloon: #fffdf7;
   --sound: #4b5563;
 }
 * { box-sizing: border-box; }
-html { background: var(--page); }
+html { background: var(--surround); }
 body {
   margin: 0;
   color: var(--ink);
@@ -17,6 +18,7 @@ body {
   max-width: 480px;
   margin: 0 auto;
   container-type: inline-size;
+  background: var(--page);
 }
 .scene { position: relative; margin: 0; }
 .scene img { display: block; width: 100%; height: auto; }
@@ -38,7 +40,7 @@ body {
   max-width: 86%;
   margin: 0;
   padding: .6em 1em;
-  border-radius: 48%;
+  border-radius: 50%;
   color: var(--ink);
   background: var(--balloon);
   font-size: clamp(19px, 5.1cqw, 23px);
