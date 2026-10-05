@@ -2,6 +2,7 @@ import Foundation
 final class OfflineAPI: URLProtocol {
     static var failImage = false
     static var revision = "v1"
+    static var weakETag = true
     static var requests = 0
     override class func canInit(with request: URLRequest) -> Bool { true }
     override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
@@ -12,7 +13,7 @@ final class OfflineAPI: URLProtocol {
         let data = path.hasPrefix("/api/episodes/") ? Data("""
         {"title":"Test","subtitle":"Subtitle","blocks":[{"type":"caption","text":"<script>bad()</script>"},{"type":"image","src":"01.png","alt":"test"}]}
         """.utf8) : Data([137, 80, 78, 71, 13, 10, 26, 10])
-        client?.urlProtocol(self, didReceive: HTTPURLResponse(url: request.url!, statusCode: status, httpVersion: nil, headerFields: ["ETag": "\"" + Self.revision + "\""])!, cacheStoragePolicy: .notAllowed)
+        client?.urlProtocol(self, didReceive: HTTPURLResponse(url: request.url!, statusCode: status, httpVersion: nil, headerFields: ["ETag": (Self.weakETag ? "W/" : "") + "\"" + Self.revision + "\""])!, cacheStoragePolicy: .notAllowed)
         client?.urlProtocol(self, didLoad: data)
         client?.urlProtocolDidFinishLoading(self)
     }
@@ -46,6 +47,8 @@ final class OfflineAPI: URLProtocol {
         try await DownloadManager.shared.download(title, root: root, session: session)
         precondition(count == OfflineAPI.requests)
         title.revision = "v2"
+        OfflineAPI.revision = "wrong-revision"
+        do { try await DownloadManager.shared.download(title, root: root, session: session); fatalError("Mismatched revision accepted") } catch {}
         OfflineAPI.revision = "v2"
         OfflineAPI.failImage = true
         do { try await DownloadManager.shared.download(title, root: root, session: session); fatalError("Failed update accepted") } catch {}
