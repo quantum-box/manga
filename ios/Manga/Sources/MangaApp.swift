@@ -38,7 +38,7 @@ struct CatalogView: View {
                 catalog = .success(titles)
             }
             catch { if !Task.isCancelled { catalog = .failure(error) } }
-        } else { catalog = Result { try Catalog.load() } }
+        } else { catalog = Result { try Catalog.loadOffline() } }
     }
     @State private var query = ""
     @State private var genre = "すべて"
@@ -143,6 +143,10 @@ struct CatalogView: View {
 struct TitleDetailView: View {
     let title: MangaTitle
     @State private var descending = false
+    @State private var downloading = false
+    @State private var saved = false
+    @State private var downloadStatus = ""
+
     @AppStorage("favoriteTitles") private var favoriteIDs = ""
     private var isFavorite: Bool { favoriteIDs.split(separator: ",").contains(Substring(title.id)) }
     private var episodes: [Episode] { descending ? title.episodes.reversed() : title.episodes }
@@ -172,6 +176,25 @@ struct TitleDetailView: View {
                         favoriteIDs = ids.joined(separator: ",")
                     } label: { Image(systemName: isFavorite ? "bookmark.fill" : "bookmark").padding(12) }
                         .buttonStyle(.bordered).accessibilityLabel(isFavorite ? "お気に入りから削除" : "お気に入りに追加")
+                }
+                if Catalog.remoteURL(title.image) != nil {
+                    Button {
+                        downloading = true
+                        downloadStatus = "ダウンロード中…"
+                        Task {
+                            do {
+                                try await DownloadManager.shared.download(title) { count, total in
+                                    await MainActor.run { downloadStatus = "保存中 \(count)/\(total)話" }
+                                }
+                                saved = true
+                                downloadStatus = "オフラインに保存しました"
+                            } catch { downloadStatus = "保存に失敗しました。通信と空き容量を確認して再試行してください。" }
+                            downloading = false
+                        }
+                    } label: {
+                        Label(saved ? "保存済み" : "オフラインに保存", systemImage: saved ? "checkmark.circle.fill" : "arrow.down.circle")
+                    }.buttonStyle(.bordered).disabled(downloading || saved).accessibilityIdentifier("download-title")
+                    if !downloadStatus.isEmpty { Text(downloadStatus).font(.caption).accessibilityIdentifier("download-status") }
                 }
                 Divider()
                 HStack {
@@ -204,6 +227,7 @@ struct TitleDetailView: View {
                 }
             }.padding(20)
         }.navigationTitle("作品詳細").navigationBarTitleDisplayMode(.inline)
+        .onAppear { saved = OfflineDownloads.isSaved(title) }
     }
 }
 
