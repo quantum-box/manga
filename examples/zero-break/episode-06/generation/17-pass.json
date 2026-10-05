@@ -1,0 +1,30 @@
+{
+  "file": "17-pass.png",
+  "method": "built-in image_gen",
+  "prompt": "Targeted edit to FIRST image. The male GIVER of the metal pass must be Haru, not Ren. Replace only that black-haired red-scarfed giver with Haru from images 2/3: short DARK BROWN hair, green eyes, GREEN work shirt, grey pants, bare hands, no red scarf and no armor. Keep Mira receiving the pass, handover pose, framing, and the exact metal inscription 英雄認定場 perfectly unchanged. They are safe on the OUTSIDE exit catwalk after all seventeen residents escaped and the EMPTY car was released; any barred prison doorway behind them must become a plain intact exit wall/rail structure, not an occupied carriage. No new text or extra character.",
+  "references": [
+    "../episode-03/art/03-fist.png",
+    "../production/references/mira.png",
+    "art/03-rail-geography.png"
+  ],
+  "sha256": "e8320e39b1e223a06c983c276f79ac07f7509d2a8874aa8c9e2000650928277d",
+  "bytes": 2762813,
+  "status": "generated",
+  "visualReview": "passed",
+  "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Haru hands Mira brass admission pass found in empty carriage; exact large engraving 英雄認定場 . No unknown villain reveal yet.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.\nContinuity: Rook is absent from this scene. No silver-haired knight or blue cape. Include only people explicitly requested in the scene, with Ren in the specified costume state.\nCarriage continuity: the rescue compartment is BLACK weathered iron, rusty brown beams and SILVER window bars, matching the prison carriage references. The same ONE compartment remains hanging next to the same intact maintenance catwalk. No blue passenger coach or different vehicle.",
+  "repairs": [
+    {
+      "prompt": "Targeted edit to FIRST image. The male GIVER of the metal pass must be Haru, not Ren. Replace only that black-haired red-scarfed giver with Haru from images 2/3: short DARK BROWN hair, green eyes, GREEN work shirt, grey pants, bare hands, no red scarf and no armor. Keep Mira receiving the pass, handover pose, framing, and the exact metal inscription 英雄認定場 perfectly unchanged. They are safe on the OUTSIDE exit catwalk after all seventeen residents escaped and the EMPTY car was released; any barred prison doorway behind them must become a plain intact exit wall/rail structure, not an occupied carriage. No new text or extra character.",
+      "editTargetSavedAt": "source/17-pass-before-haru.png",
+      "references": [
+        "art/17-pass.png",
+        "art/05-unlock.png",
+        "art/14-last-hand.png"
+      ],
+      "previousSha256": "a61882c46f48f872f951ac16476985a1d6599f8fc5ffae9583a4dc2233f17923",
+      "finalArt": "art/17-pass.png",
+      "sha256": "e8320e39b1e223a06c983c276f79ac07f7509d2a8874aa8c9e2000650928277d"
+    }
+  ],
+  "visualReviewEvidence": "validation.json and review/contact-360-*.png"
+}

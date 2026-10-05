@@ -1,0 +1,32 @@
+{
+  "file": "14-last-hand.png",
+  "method": "built-in image_gen",
+  "prompt": "Continuity edit ONLY unwanted background people in FIRST image. Preserve Noa, his orange hair, goggles, blue mechanic overalls and orange gloves, and Haru with short dark brown hair, green eyes and GREEN work shirt. Preserve their wrist clasp and the exact native vertical speech bubble 手を、離すな！. REMOVE the black-haired red-scarfed Ren who is drawn behind Noa; Ren remains off camera under the car in full armor holding its weight. REMOVE the two remaining residents behind Haru inside the barred compartment: Haru is the LAST of seventeen people to leave. Replace these removed figures with EMPTY dark weathered iron interior / intact catwalk, in the same perspective. No person left inside except Haru being pulled out, no extra hero, no other changes.",
+  "references": [
+    "../episode-03/art/03-fist.png",
+    "../production/references/mira.png",
+    "art/03-rail-geography.png",
+    "art/05-unlock.png",
+    "../production/references/noa.png"
+  ],
+  "sha256": "3276cd317707b683f85b3a86f12f619712e3fd89153411fe61e623f44bdda766",
+  "bytes": 2553361,
+  "status": "generated",
+  "visualReview": "passed",
+  "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: LAST Haru reaches from doorway and Noa catches his wrist with orange glove, other evacuees already safe behind ladder. Noa tense relief.\n\nBalloon 1: speech, Noa, upper right. EXACT text: 手を、離すな！ . Columns RIGHT to LEFT: 手を、 / 離すな！.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nContinuity: Rook is absent from this scene. No silver-haired knight or blue cape. Include only people explicitly requested in the scene, with Ren in the specified costume state.\nCarriage continuity: the rescue compartment is BLACK weathered iron, rusty brown beams and SILVER window bars, matching the prison carriage references. The same ONE compartment remains hanging next to the same intact maintenance catwalk. No blue passenger coach or different vehicle. Haru must match reference art/05-unlock.png: young adult short dark BROWN hair, green eyes, GREEN workshirt, GREY trousers. Noa must match orange hair/goggles/blue overalls/orange gloves. They each have exactly two hands; foreground Noa orange-gloved hand clasps Haru bare wrist, Haru climbs from the door.",
+  "repairs": [
+    {
+      "prompt": "Continuity edit ONLY unwanted background people in FIRST image. Preserve Noa, his orange hair, goggles, blue mechanic overalls and orange gloves, and Haru with short dark brown hair, green eyes and GREEN work shirt. Preserve their wrist clasp and the exact native vertical speech bubble 手を、離すな！. REMOVE the black-haired red-scarfed Ren who is drawn behind Noa; Ren remains off camera under the car in full armor holding its weight. REMOVE the two remaining residents behind Haru inside the barred compartment: Haru is the LAST of seventeen people to leave. Replace these removed figures with EMPTY dark weathered iron interior / intact catwalk, in the same perspective. No person left inside except Haru being pulled out, no extra hero, no other changes.",
+      "editTargetSavedAt": "source/14-last-hand-before-last-resident.png",
+      "references": [
+        "art/14-last-hand.png",
+        "art/05-unlock.png",
+        "../production/references/noa.png"
+      ],
+      "previousSha256": "becc06131dd9b5953e07e9b37128fb834971e0ddbfb401c987b680e97a457977",
+      "finalArt": "art/14-last-hand.png",
+      "sha256": "3276cd317707b683f85b3a86f12f619712e3fd89153411fe61e623f44bdda766"
+    }
+  ],
+  "visualReviewEvidence": "validation.json and review/contact-360-*.png"
+}

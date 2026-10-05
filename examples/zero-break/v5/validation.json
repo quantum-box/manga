@@ -917,17 +917,18 @@
       "Ren stays standing after measurement and reacts to zero before the incident.",
       "Waiting cue and zero value do not appear together in the tested viewports using conservatively inspected raster anchors.",
       "Rescue geometry, clothing, first armor reveal and final crown clue preserve accepted continuity.",
-      "No text clipping or page overflow in the reviewed phone renders."
+      "No text clipping or page overflow in the reviewed phone renders.",
+      "Chapter 1 footer links to chapter 2. The original 30 source PNGs and scene geometry are unchanged.",
+      "Viewed chapter 1 final footer at 390 and 360 CSS px after linking chapter 2."
     ],
     "limits": "Raster lettering was checked visually; DOM font values do not measure it. These are browser renders, not physical-device tests."
   },
-  "checkedAt": "2026-10-05T10:47:36.464258+00:00",
   "previousVersion": {
     "version": "v4",
     "sceneCount": 16,
     "pageHeights": {
-      "390": 12345,
-      "360": 11422
+      "360": 11422,
+      "390": 12345
     }
   },
   "artwork": {
@@ -952,16 +953,15 @@
         "width": 390,
         "height": 19737,
         "allScrollTilesMatch": true,
-        "tiles": 24,
-        "repeatedHeaderRowsAt16384": 0
+        "tiles": 24
       },
       {
         "width": 360,
         "height": 18246,
         "allScrollTilesMatch": true,
-        "tiles": 23,
-        "repeatedHeaderRowsAt16384": 0
+        "tiles": 23
       }
-    ]
+    ],
+    "notes": "Every saved ordinary phone scroll viewport compared byte for byte after chapter navigation update."
   }
 }

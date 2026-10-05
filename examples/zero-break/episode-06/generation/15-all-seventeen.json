@@ -1,0 +1,40 @@
+{
+  "file": "15-all-seventeen.png",
+  "method": "built-in image_gen",
+  "prompt": "Surgical edit ONLY in the tiny far upper-left background of this image. All seventeen people have now escaped and the prison compartment is EMPTY while Ren holds it off camera. Remove the visible face/person INSIDE the barred car at the far upper LEFT edge behind Haru's hair and any other person visible behind those prison bars. Replace with EMPTY dark iron interior only. Keep every free resident on the OUTSIDE walkway, Haru's green shirt/green eyes/brown hair, Mira, the full notebook and her pencil absolutely unchanged. Preserve EXACTLY all seventeen numbers 1–17 and all seventeen red checkmarks. No changes to any text, foreground, composition, lighting or drawing. No new people.",
+  "references": [
+    "../episode-03/art/03-fist.png",
+    "../production/references/mira.png",
+    "art/03-rail-geography.png"
+  ],
+  "sha256": "c179b747bf6f754944832a26addbdba52fda77e8407d2ca446821731ebb89d06",
+  "bytes": 2590532,
+  "status": "generated",
+  "visualReview": "passed",
+  "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Close roster with seventeen clearly separated CHECKMARKS, exact prominent total 十七人、全員 . Mira's pencil adds final mark. Show actual17 checks in one vertical line, not random unreadable names.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.\nContinuity: Rook is absent from this scene. No silver-haired knight or blue cape. Include only people explicitly requested in the scene, with Ren in the specified costume state.\nCarriage continuity: the rescue compartment is BLACK weathered iron, rusty brown beams and SILVER window bars, matching the prison carriage references. The same ONE compartment remains hanging next to the same intact maintenance catwalk. No blue passenger coach or different vehicle. Exactly 17 checkmarks in ONE long vertical list, with numbered rows 1 to 17, no duplicate rows. This is the first completed count and all people are on the catwalk.",
+  "repairs": [
+    {
+      "prompt": "Surgical identity edit to FIRST image. Replace ONLY the unarmored black-haired red-scarfed Ren at the LEFT with rescued Haru: 18-year-old young man, short DARK BROWN hair, green eyes, plain GREEN work shirt, grey pants, bare hands, NO red scarf, NO black outfit, NO armor. Use images 2 and 3 for Haru's exact face and costume. He is now safe on the outside catwalk helping Mira count. Ren is off camera holding the occupied-until-now carriage in full armor and cannot appear here. Preserve Mira, the notebook, her pencil and EXACTLY all seventeen numbered rows 1 through 17 with seventeen red checkmarks: DO NOT alter, add, erase or blur a single number or checkmark. Preserve composition, lighting, native lettering and all other details.",
+      "editTargetSavedAt": "source/15-all-seventeen-before-haru.png",
+      "references": [
+        "art/15-all-seventeen.png",
+        "art/05-unlock.png",
+        "art/14-last-hand.png"
+      ],
+      "previousSha256": "fd4102704c7185505c2be4d34bbe195286d2c9d1112363c8cdab44e17c94448a",
+      "finalArt": "art/15-all-seventeen.png",
+      "sha256": "86a95b84a4d0851b8a6576af70ef69373c3b64e79874ef7fb9eaa65dd3a0b465"
+    },
+    {
+      "prompt": "Surgical edit ONLY in the tiny far upper-left background of this image. All seventeen people have now escaped and the prison compartment is EMPTY while Ren holds it off camera. Remove the visible face/person INSIDE the barred car at the far upper LEFT edge behind Haru's hair and any other person visible behind those prison bars. Replace with EMPTY dark iron interior only. Keep every free resident on the OUTSIDE walkway, Haru's green shirt/green eyes/brown hair, Mira, the full notebook and her pencil absolutely unchanged. Preserve EXACTLY all seventeen numbers 1–17 and all seventeen red checkmarks. No changes to any text, foreground, composition, lighting or drawing. No new people.",
+      "editTargetSavedAt": "source/15-all-seventeen-before-empty-background.png",
+      "references": [
+        "art/15-all-seventeen.png"
+      ],
+      "previousSha256": "86a95b84a4d0851b8a6576af70ef69373c3b64e79874ef7fb9eaa65dd3a0b465",
+      "finalArt": "art/15-all-seventeen.png",
+      "sha256": "c179b747bf6f754944832a26addbdba52fda77e8407d2ca446821731ebb89d06"
+    }
+  ],
+  "visualReviewEvidence": "validation.json and review/contact-360-*.png"
+}

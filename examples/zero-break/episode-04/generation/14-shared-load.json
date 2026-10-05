@@ -1,0 +1,31 @@
+{
+  "file": "14-shared-load.png",
+  "method": "built-in image_gen",
+  "prompt": "Edit ONLY the background and seat of the first illustration to maintain indoor scene continuity. Ren, Noa and Mira are STILL INSIDE the same copper boiler workshop as in the second reference. REMOVE all outdoor white city towers, blue banners, market tents, market fruit and exterior sky from the first panel. Replace them with warm amber workshop light, copper boiler and pipes, wooden equipment bench and stone floor. Ren sits on an indoor wooden workbench stool. Preserve the exact three people's faces, hand gestures, ordinary black shirt and LEFT forearm gauntlet, red scarf, Noa's orange goggles/overalls/gloves and Mira's gown. Preserve exact native Japanese VERTICAL balloon 「全部、俺が受けなくていいのか。」 and tail toward Ren. Keep light residual steam inside after pressure was relieved. No other changes or characters.",
+  "references": [
+    "../episode-03/art/03-fist.png",
+    "../v5/art/16-relief.png",
+    "art/03-workshop.png",
+    "../episode-03/art/10-shield-arm.png",
+    "../production/references/noa.png"
+  ],
+  "sha256": "c604979af55debb037b3ed601c7ad3160041b68a2391b4897add6f4898f21e72",
+  "bytes": 2618755,
+  "status": "generated",
+  "visualReview": "passed",
+  "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Ren exhales and lowers armored forearm, looks to smiling Noa and Mira; sparse steam clears.\n\nBalloon 1: speech, Ren, upper right. EXACT text: 全部、俺が受けなくていいのか。 . Columns RIGHT to LEFT: 全部、俺が / 受けなくて / いいのか。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nContinuity: ONLY Ren's LEFT forearm and left hand are covered in black faceted cyan-seamed basic armor. RIGHT hand and both upper arms remain bare; torso stays ordinary black fabric shirt with brown straps; legs ordinary charcoal trousers. No armor on shoulders, torso, right arm, or legs. This is partial activation, not full transformation.",
+  "repairs": [
+    {
+      "prompt": "Edit ONLY the background and seat of the first illustration to maintain indoor scene continuity. Ren, Noa and Mira are STILL INSIDE the same copper boiler workshop as in the second reference. REMOVE all outdoor white city towers, blue banners, market tents, market fruit and exterior sky from the first panel. Replace them with warm amber workshop light, copper boiler and pipes, wooden equipment bench and stone floor. Ren sits on an indoor wooden workbench stool. Preserve the exact three people's faces, hand gestures, ordinary black shirt and LEFT forearm gauntlet, red scarf, Noa's orange goggles/overalls/gloves and Mira's gown. Preserve exact native Japanese VERTICAL balloon 「全部、俺が受けなくていいのか。」 and tail toward Ren. Keep light residual steam inside after pressure was relieved. No other changes or characters.",
+      "editTargetSavedAt": "source/14-before-room-fix.png",
+      "references": [
+        "art/14-shared-load.png",
+        "art/03-workshop.png"
+      ],
+      "previousSha256": "18ddb5804c80c72beb21356e41bcffc5f3c74ca55fa3d08eae53e1d907daee10",
+      "finalArt": "art/14-shared-load.png",
+      "sha256": "c604979af55debb037b3ed601c7ad3160041b68a2391b4897add6f4898f21e72"
+    }
+  ],
+  "visualReviewEvidence": "validation.json and review/contact-360-*.png"
+}

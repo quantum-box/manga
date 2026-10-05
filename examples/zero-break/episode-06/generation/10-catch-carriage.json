@@ -1,0 +1,28 @@
+{
+  "file": "10-catch-carriage.png",
+  "method": "built-in image_gen",
+  "prompt": "Edit ONLY the support directly underneath Ren's two boot soles in this anime webtoon rescue panel. Keep Ren's black/cyan basic armor, face, scarf, pose, hands holding the black iron prison carriage UNDER its floor, Mira, captives and everything above the boots unchanged. He must have safe PHYSICAL FOOTING while carrying this weight: replace the THIN HANDRAIL under his soles with a THICK broad steel catwalk SUPPORT I-BEAM about a boot-width wide, firmly BOLTED to the intact maintenance walkway using clearly visible triangular brackets and platform supports. Both boot soles planted on that broad beam, not hovering or perched on an unsecured thin railing. The handrail remains behind/beside it, with no rail passing through his legs. Clear grounded load path. No text, no new characters, no new armor.\n",
+  "references": [
+    "../v5/art/14-hero.png",
+    "../production/references/mira.png",
+    "art/03-rail-geography.png"
+  ],
+  "sha256": "1137e06bc6e5d1ca649c4cd1d32da11937f3220dcf0a233982daf8c23f2ec732",
+  "bytes": 2970974,
+  "status": "generated",
+  "visualReview": "passed",
+  "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1792. Composition: one tall continuous single moment, borderless dramatic vertical flow; not multiple moments or panels\nScene and exact state: Ren in basic black armor grabs falling compartment UNDER its floor from braced catwalk support; feet secure against support ledge, lifts weight, seventeen captives still inside. Not floating without anchor.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.\nContinuity: Rook is absent from this scene. No silver-haired knight or blue cape. Include only people explicitly requested in the scene, with Ren in the specified costume state.",
+  "repairs": [
+    {
+      "prompt": "Edit ONLY the support directly underneath Ren's two boot soles in this anime webtoon rescue panel. Keep Ren's black/cyan basic armor, face, scarf, pose, hands holding the black iron prison carriage UNDER its floor, Mira, captives and everything above the boots unchanged. He must have safe PHYSICAL FOOTING while carrying this weight: replace the THIN HANDRAIL under his soles with a THICK broad steel catwalk SUPPORT I-BEAM about a boot-width wide, firmly BOLTED to the intact maintenance walkway using clearly visible triangular brackets and platform supports. Both boot soles planted on that broad beam, not hovering or perched on an unsecured thin railing. The handrail remains behind/beside it, with no rail passing through his legs. Clear grounded load path. No text, no new characters, no new armor.\n",
+      "editTargetSavedAt": "source/10-footing-fix-before.png",
+      "references": [
+        "art/10-catch-carriage.png"
+      ],
+      "previousSha256": "bd36cf75c6356284543046c6e81b193366966c5fc562d4f724699cf58189bcb5",
+      "finalArt": "art/10-catch-carriage.png",
+      "sha256": "1137e06bc6e5d1ca649c4cd1d32da11937f3220dcf0a233982daf8c23f2ec732"
+    }
+  ],
+  "visualReviewEvidence": "validation.json and review/contact-360-*.png"
+}
