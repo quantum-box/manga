@@ -68,3 +68,7 @@ AIを使って、企画から作画、組版、修正、書き出しまで進め
 - 公開・商用利用時に必要なモデル、素材、フォントの利用条件
 
 実装を始める前に、最初の1ページで品質と修正のしやすさを比べて方式を絞る。
+
+## 配信サーバー
+
+[Webtoon配信サーバー](server/README.md): Rust / Cloudflare Workers + Tachyon Storage。
