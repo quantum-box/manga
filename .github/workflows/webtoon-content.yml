@@ -27,3 +27,5 @@ jobs:
           "$RUNNER_TEMP/remote-tests"
           swiftc ios/Manga/Sources/Catalog.swift scripts/test_offline_downloads.swift -o "$RUNNER_TEMP/offline-tests"
           "$RUNNER_TEMP/offline-tests"
+          swiftc ios/Manga/Sources/Catalog.swift scripts/test_reading_history.swift -o "$RUNNER_TEMP/history-tests"
+          "$RUNNER_TEMP/history-tests"

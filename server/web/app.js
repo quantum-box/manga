@@ -9,12 +9,36 @@ function link(label, href) {
 }
 function seriesURL(series) { return '/?series=' + encodeURIComponent(series.id); }
 function episodeURL(id) { return '/?episode=' + encodeURIComponent(id); }
+const historyKey = 'manga.readChapters.v1';
+let readChapters = new Set();
+function restoreReadChapters() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(historyKey) || '[]');
+    if (Array.isArray(saved)) readChapters = new Set(saved.filter(key => typeof key === 'string'));
+  } catch {} // Reading still works when local storage is unavailable.
+}
+function chapterKey(series, number) { return series.id + ':' + number; }
+function isRead(series, number) { return readChapters.has(chapterKey(series, number)); }
+function setRead(series, number, read) {
+  restoreReadChapters();
+  const key = chapterKey(series, number);
+  if (read) readChapters.add(key); else readChapters.delete(key);
+  try { localStorage.setItem(historyKey, JSON.stringify([...readChapters])); } catch {}
+}
+function notifyReader(state, episodeID) {
+  try { window.webkit?.messageHandlers?.mangaReader?.postMessage({state, episodeID}); } catch {}
+}
+function showLoadError(error) {
+  root.replaceChildren(text('p', error.message));
+  notifyReader('failed', new URL(location.href).searchParams.get('episode'));
+}
 async function json(url) {
   const response = await fetch(url);
   if (!response.ok) throw new Error('読み込めませんでした。時間をおいて再読み込みしてください。');
   return response.json();
 }
 async function load() {
+  restoreReadChapters();
   const params = new URL(location.href).searchParams;
   const id = params.get('episode');
   const [catalog, ep] = await Promise.all([json('/api/v1/catalog'), id ? json('/api/episodes/' + encodeURIComponent(id)) : Promise.resolve(null)]);
@@ -44,10 +68,20 @@ async function load() {
       if (!chapters.has(ep.number)) chapters.set(ep.number, []);
       chapters.get(ep.number).push(ep);
     });
+    const ordered = [...chapters].sort((a, b) => a[0] - b[0]);
+    const unread = ordered.find(([number]) => !isRead(series, number));
+    if (unread && ordered.some(([number]) => isRead(series, number))) {
+      root.append(link('続きから読む · 第' + unread[0] + '話', episodeURL(unread[1][0].id)));
+    }
     const nav = document.createElement('nav'); nav.className = 'chapter-list';
     [...chapters].sort((a, b) => a[0] - b[0]).forEach(([number, editions]) => {
       const section = document.createElement('section');
       section.append(text('h2', '第' + number + '話'));
+      section.append(text('span', isRead(series, number) ? '既読' : '未読', 'read-status'));
+      const toggle = text('button', isRead(series, number) ? '未読に戻す' : '既読にする');
+      toggle.type = 'button';
+      toggle.addEventListener('click', () => { setRead(series, number, !isRead(series, number)); load().catch(showLoadError); });
+      section.append(toggle);
       const preferred = editions[0];
       section.append(link(preferred.title + (preferred.edition ? ' · ' + preferred.edition : ''), episodeURL(preferred.id)));
       if (editions.length > 1) {
@@ -78,6 +112,17 @@ async function load() {
     } else if (block.type === 'spacer') root.append(text('div', '', 'spacer ' + (block.size === 'long' ? 'long' : '')));
     else root.append(text('p', block.type === 'speech' ? block.speaker + '「' + block.text + '」' : block.text, block.type));
   });
+  // Record only once the first page actually loads; failed readers remain unread.
+  if (series && chapter) {
+    const firstImage = root.querySelector('img');
+    const mark = () => { setRead(series, chapter.number, true); notifyReader('ready', id); };
+    if (!firstImage || (firstImage.complete && firstImage.naturalWidth > 0)) mark();
+    else {
+      firstImage.addEventListener('load', mark, {once: true});
+      firstImage.addEventListener('error', () => notifyReader('failed', id), {once: true});
+      if (firstImage.complete && firstImage.naturalWidth === 0) notifyReader('failed', id);
+    }
+  }
   const nav = document.createElement('nav');
   if (series) {
     const current = series.episodes.find(ep => ep.id === id);
@@ -87,4 +132,6 @@ async function load() {
   }
   nav.append(link('シリーズ一覧に戻る', '/')); root.append(nav);
 }
-load().catch(error => root.replaceChildren(text('p', error.message)));
+load().catch(showLoadError);
+
+addEventListener("pageshow", event => { if (event.persisted) load().catch(showLoadError); });

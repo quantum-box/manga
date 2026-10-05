@@ -34,6 +34,27 @@ struct Episode: Identifiable, Hashable, Codable {
     var revision: String? = nil
 }
 
+enum ReadingHistory {
+    static let storageKey = "readChapters.v1"
+    static func key(titleID: String, number: Int) -> String {
+        let series = titleID.hasPrefix("online-") ? String(titleID.dropFirst(7)) : titleID
+        let canonical = series == "heavenly-demon-ngplus" ? "heavenly-demon" : series
+        return canonical + ":" + String(number)
+    }
+    static func contains(_ value: String, titleID: String, number: Int) -> Bool {
+        entries(value).contains(key(titleID: titleID, number: number))
+    }
+    static func setting(_ read: Bool, in value: String, titleID: String, number: Int) -> String {
+        var saved = entries(value)
+        let chapter = key(titleID: titleID, number: number)
+        if read { saved.insert(chapter) } else { saved.remove(chapter) }
+        return String(data: (try? JSONEncoder().encode(saved.sorted())) ?? Data("[]".utf8), encoding: .utf8) ?? "[]"
+    }
+    private static func entries(_ value: String) -> Set<String> {
+        Set((try? JSONDecoder().decode([String].self, from: Data(value.utf8))) ?? [])
+    }
+}
+
 enum Catalog {
     enum LoadError: Error {
         case missingCatalog, emptyCatalog
