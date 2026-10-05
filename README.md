@@ -6,6 +6,7 @@
 
 | 作品 | ジャンル | 採用版 |
 | --- | --- | --- |
+| [天魔、二周目。](examples/heavenly-demon-ngplus/README.md) | 武侠・異世界転生・強くてニューゲーム | 第1話。鮮明なセル塗りのアニメ風。処刑場から一撃で逆転 |
 | [剣聖、仇の弟子に転生する](examples/swordsaint-enemy-disciple/README.md) | 武侠・転生 | 第1〜10話。白背景・ゆっくり版で連続して読める。第1話の初稿2版も保持 |
 | [終電後の落とし物係](examples/lost-property-clerk/webtoon-v3/README.md) | 日常・幻想 | 雨、猫、足跡をたどる縦読み短編 v3 |
 | [星を拾う夜](examples/star-lighthouse/webtoon-v2/README.md) | SF | 静けさと巨大な親の登場を広い余白で描く v2 |

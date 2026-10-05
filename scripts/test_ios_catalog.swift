@@ -21,6 +21,9 @@ struct CatalogTests {
             URL(fileURLWithPath: $0, isDirectory: true)
         } ?? repository.appendingPathComponent("ios/Manga", isDirectory: true)
         let data = try Data(contentsOf: bundled.appendingPathComponent("Webtoons/catalog.json"))
+        let expectedIDs = Set((try JSONSerialization.jsonObject(with: data) as? [[String: Any]] ?? [])
+            .compactMap { $0["id"] as? String })
+        try require(!expectedIDs.isEmpty, "Bundled fixture must contain title identifiers")
         let catalogURL = webtoons.appendingPathComponent("catalog.json")
         try data.write(to: catalogURL)
         try Data("reader".utf8).write(to: webtoons.appendingPathComponent("story/index.html"))
@@ -31,8 +34,10 @@ struct CatalogTests {
         try require(!oldFile.path.hasPrefix(oldRoot.path + "/"), "Fixture must reproduce the original device path rejection")
         for root in [app, app.standardizedFileURL] {
             let titles = try Catalog.load(resourceURL: root)
-            try require(titles.count == 4, "Device path aliases must load all four titles")
-            try require(titles.first?.episodeCount == 10, "Martial story must have ten distinct chapters")
+            try require(Set(titles.map(\.id)) == expectedIDs && titles.count == expectedIDs.count,
+                        "Device path aliases must load every title from the bundled catalog")
+            try require(titles.first(where: { $0.id == "swordsaint" })?.episodeCount == 10,
+                        "Swordsaint must have ten distinct chapters regardless of catalog order")
             try require(Catalog.resource("story/index.html", resourceURL: root) != nil, "Reader must resolve")
             try require(Catalog.resource("story/cover.png", resourceURL: root) != nil, "Cover must resolve")
         }
@@ -65,6 +70,7 @@ struct CatalogTests {
                 try require(Catalog.resource(episode.reader, resourceURL: bundled) != nil, "Missing bundled reader: \(episode.id)")
             }
         }
-        print("PASS: bundle contains all four covers and all fifteen readers")
+        let readerCount = titles.reduce(0) { $0 + $1.episodes.count }
+        print("PASS: bundle contains all \(titles.count) covers and all \(readerCount) readers")
     }
 }

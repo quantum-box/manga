@@ -1,0 +1,103 @@
+# 画像生成した称号・武技名・効果音
+
+2026-10-05。Browser comments 1〜3への修正。組み込み image_gen を使用し、全11回で transparent_background=true。採用は10素材。称号4種、効果音5種、武技名1種。ui-reward.png は初稿、ui-reward-v2.png を採用。
+
+文字も画像生成に含めるというユーザー指定に合わせた。通常の会話はHTMLで編集可能なまま、CSSの吹き出し形状だけを楕円に修正する。PNGの画像バイトは生成原本から変更せず、真のアルファ透過を保持する。
+
+## ui-reward
+
+参照: なし（新規生成）
+
+```text
+Use case: illustration-story. Asset type: a finished raster system notification graphic with Japanese lettering for an original crisp Japanese anime murim isekai Webtoon 'Heavenly Demon, New Game Plus'. Primary request: highly polished illustrated game-achievement UI that belongs in a martial arts anime, NOT a plain HTML rectangle, NOT a website mockup. One isolated wide floating dark midnight-blue / jade-black plaque, thin ornate sculpted gold frame with elegant sharp cut corner embellishments, luminous gold and faint cyan qi filaments, luxurious gold foil title strokes but crisp flat cel-shaded construction. Small symmetrical golden sword-seal crest at TOP center, NO human figures, NO scene background, NO fake app controls. Transparent background all around the single plaque, tightly framed. High contrast ivory/gold Japanese typography, flawless Japanese glyphs, characters sharp enough to read when image is 324px wide on a phone. Very generous negative space around text, no decorative effects obscuring letters. Large main text must take 70-85% of inner width. No English UI labels, no extra text, no watermark, no repeated card, no badge collection, no mockup hands, no transparency checkerboard. ALL requested text must be exact and visually clear. Portrait is forbidden: wide landscape canvas about 2048x1152, with the actual plaque almost filling the canvas. Body glyph height approximately 140px or larger at 2048px canvas width. Keep lettering inset 10% from outer edges.
+EXACT TEXT, in three centered lines. First line LARGE gold title: 「上位者撃破」. Second line large bright ivory with gold-highlighted number: 「内功　＋120年」. Third line smaller but still very readable bright ivory: 「固有武技『飛燕歩』獲得」. Do NOT render the outer Japanese quotation brackets 「」 around each line; they only delimit the requested strings. The brackets 『』 around 飛燕歩 MUST remain. Title crest and visual design communicate overpowering victory and rare skill reward, with gentle gold particles below the lower edge. Final finished graphic, no prose.
+```
+
+## sfx-stop
+
+参照: なし（新規生成）
+
+```text
+Use case: illustration-story. Asset type: isolated finished Japanese hand-drawn comic sound-effect lettering to be directly inserted in an anime-style martial-arts Webtoon. Transparent background. Draw ONLY the specified Japanese characters and their calligraphic motion/qi embellishments, no characters/people, no weapon, no panels, no caption/speech bubble, no rectangular backdrop. Tight landscape framing about 1536x768, letters fill most of the image; generous 5% safe margin to avoid clipping strokes. Crisp high-end anime/comic hand-inked lettering, each hiragana legible, deliberate stroke weight, energetic original lettering rather than a standard typeset font. Dark midnight teal primary ink, thin clean white edge for separation, controlled luminous cyan and a few gold accents. No texture noise over letter counters, no Roman letters, no English, no extra Japanese, no watermark, no UI icon, no checkerboard. The exact word only; characters must all be present and correct. Render it as a polished production graphic on true alpha transparency.
+Exact text 「ぴた」, excluding 「」. A short precise sudden stop. Compact sharp ink letters, the small circle on ぴ clear, tiny cyan contact glint, almost no motion streaks.
+```
+
+## sfx-grip
+
+参照: なし（新規生成）
+
+```text
+Use case: illustration-story. Asset type: isolated finished Japanese hand-drawn comic sound-effect lettering to be directly inserted in an anime-style martial-arts Webtoon. Transparent background. Draw ONLY the specified Japanese characters and their calligraphic motion/qi embellishments, no characters/people, no weapon, no panels, no caption/speech bubble, no rectangular backdrop. Tight landscape framing about 1536x768, letters fill most of the image; generous 5% safe margin to avoid clipping strokes. Crisp high-end anime/comic hand-inked lettering, each hiragana legible, deliberate stroke weight, energetic original lettering rather than a standard typeset font. Dark midnight teal primary ink, thin clean white edge for separation, controlled luminous cyan and a few gold accents. No texture noise over letter counters, no Roman letters, no English, no extra Japanese, no watermark, no UI icon, no checkerboard. The exact word only; characters must all be present and correct. Render it as a polished production graphic on true alpha transparency.
+Exact text 「ぐっ」, excluding 「」. Tight muscular squeeze. Bold squat slightly compressed brush letters, dark teal, small っ clearly visible, two subtle inward pressure ticks at sides.
+```
+
+## sfx-crack
+
+参照: なし（新規生成）
+
+```text
+Use case: illustration-story. Asset type: isolated finished Japanese hand-drawn comic sound-effect lettering to be directly inserted in an anime-style martial-arts Webtoon. Transparent background. Draw ONLY the specified Japanese characters and their calligraphic motion/qi embellishments, no characters/people, no weapon, no panels, no caption/speech bubble, no rectangular backdrop. Tight landscape framing about 1536x768, letters fill most of the image; generous 5% safe margin to avoid clipping strokes. Crisp high-end anime/comic hand-inked lettering, each hiragana legible, deliberate stroke weight, energetic original lettering rather than a standard typeset font. Dark midnight teal primary ink, thin clean white edge for separation, controlled luminous cyan and a few gold accents. No texture noise over letter counters, no Roman letters, no English, no extra Japanese, no watermark, no UI icon, no checkerboard. The exact word only; characters must all be present and correct. Render it as a polished production graphic on true alpha transparency.
+Exact text 「ぴし」, excluding 「」. A fine crack running through steel. Narrow angular ink letters with one slender luminous cyan fracture trailing from the right, the small circle on ぴ must stay clear, no breaking swords.
+```
+
+## sfx-break
+
+参照: なし（新規生成）
+
+```text
+Use case: illustration-story. Asset type: isolated finished Japanese hand-drawn comic sound-effect lettering to be directly inserted in an anime-style martial-arts Webtoon. Transparent background. Draw ONLY the specified Japanese characters and their calligraphic motion/qi embellishments, no characters/people, no weapon, no panels, no caption/speech bubble, no rectangular backdrop. Tight landscape framing about 1536x768, letters fill most of the image; generous 5% safe margin to avoid clipping strokes. Crisp high-end anime/comic hand-inked lettering, each hiragana legible, deliberate stroke weight, energetic original lettering rather than a standard typeset font. Dark midnight teal primary ink, thin clean white edge for separation, controlled luminous cyan and a few gold accents. No texture noise over letter counters, no Roman letters, no English, no extra Japanese, no watermark, no UI icon, no checkerboard. The exact word only; characters must all be present and correct. Render it as a polished production graphic on true alpha transparency.
+Exact text 「ぱきん」, excluding 「」. A sword snaps cleanly. Three dynamic jagged but fully legible hand-inked hiragana, tiny angular cyan/gold shards trailing down, dramatic hard-edged strokes, small circle on ぱ clear.
+```
+
+## sfx-ring
+
+参照: なし（新規生成）
+
+```text
+Use case: illustration-story. Asset type: isolated finished Japanese hand-drawn comic sound-effect lettering to be directly inserted in an anime-style martial-arts Webtoon. Transparent background. Draw ONLY the specified Japanese characters and their calligraphic motion/qi embellishments, no characters/people, no weapon, no panels, no caption/speech bubble, no rectangular backdrop. Tight landscape framing about 1536x768, letters fill most of the image; generous 5% safe margin to avoid clipping strokes. Crisp high-end anime/comic hand-inked lettering, each hiragana legible, deliberate stroke weight, energetic original lettering rather than a standard typeset font. Dark midnight teal primary ink, thin clean white edge for separation, controlled luminous cyan and a few gold accents. No texture noise over letter counters, no Roman letters, no English, no extra Japanese, no watermark, no UI icon, no checkerboard. The exact word only; characters must all be present and correct. Render it as a polished production graphic on true alpha transparency.
+Exact text 「きぃん」, excluding 「」. A mysterious distant legendary sword singing with a high clear metallic resonance. Elegant elongated diagonal sweeping hand-drawn hiragana, the small ぃ noticeably smaller than き and ん, dark teal strokes outlined subtly with pale gold/cyan; thin shimmering resonance waves trail down and out, lyrical and suspenseful rather than explosive. Do not draw any sword or disclose what makes the sound.
+```
+
+## ui-reward-v2
+
+参照: /Users/takanorifukuyama/.codex/worktrees/710a/manga/examples/heavenly-demon-ngplus/episode-01/art/lettering/ui-reward.png
+
+```text
+Edit target: the provided achievement plaque. Preserve its midnight-blue interior, ornate sculpted gold frame, top sword crest, cyan/gold qi, and true transparent background. Keep the exact upper title 「上位者撃破」 and the second line 「内功　＋120年」. The lower reward text is too small for phone reading: make the plaque about 30% TALLER while keeping the same width, and replace the single lower line with TWO larger centered lines: third line 「固有武技」, fourth line 「『飛燕歩』獲得」. Exclude outer 「」 delimiters, retain 『』 around 飛燕歩. Both new lower lines must have letter HEIGHT AT LEAST equal to the kanji 内功 in the second line, never shrink them to fit. Add ample vertical breathing room. The frame must be entirely visible with at least 4% transparent safe margin around its crest and corners; do not crop the crest or any corners. No other words, no English, no people, no checkerboard. Crisp polished anime-game lettering, make the reward legible at 360px display width.
+```
+
+## ui-transfer
+
+参照: /Users/takanorifukuyama/.codex/worktrees/710a/manga/examples/heavenly-demon-ngplus/episode-01/art/lettering/ui-reward.png
+
+```text
+Use case: illustration-story. Asset type: a finished raster system notification graphic with Japanese lettering for an original crisp Japanese anime murim isekai Webtoon 'Heavenly Demon, New Game Plus'. Primary request: highly polished illustrated game-achievement UI that belongs in a martial arts anime, NOT a plain HTML rectangle, NOT a website mockup. One isolated wide floating dark midnight-blue / jade-black plaque, thin ornate sculpted gold frame with elegant sharp cut corner embellishments, luminous gold and faint cyan qi filaments, luxurious gold foil title strokes but crisp flat cel-shaded construction. Small symmetrical golden sword-seal crest at TOP center, NO human figures, NO scene background, NO fake app controls. Transparent background all around the single plaque, tightly framed. High contrast ivory/gold Japanese typography, flawless Japanese glyphs, characters sharp enough to read when image is 324px wide on a phone. Very generous negative space around text, no decorative effects obscuring letters. Large main text must take 70-85% of inner width. No English UI labels, no extra text, no watermark, no repeated card, no badge collection, no mockup hands, no transparency checkerboard. ALL requested text must be exact and visually clear. Portrait is forbidden: wide landscape canvas about 2048x1152, with the actual plaque almost filling the canvas. Body glyph height approximately 140px or larger at 2048px canvas width. Keep lettering inset 10% from outer edges.
+EXACT TEXT in four spacious centered lines. Gold title: 「転生先」. Ivory main line: 「雑役弟子 ハン・ユン」. Third ivory line: 「身分：最下級」. Fourth ivory line with subtle red countdown accent: 「処刑まで 10秒」. Do not draw 「」 around the requested text. A slightly more restrained teal qi glow around the frame than a victory badge. All four lines readable, body glyphs at least 140 pixels tall in the 2048px wide image. Preserve the reference image's plaque frame, crest, blue-black interior, gold/ivory lettering and cel-shaded detailing, but replace all text with these four lines. Reference is STYLE only, not an edit target.
+```
+
+## ui-inherit
+
+参照: /Users/takanorifukuyama/.codex/worktrees/710a/manga/examples/heavenly-demon-ngplus/episode-01/art/lettering/ui-reward.png
+
+```text
+Use case: illustration-story. Asset type: a finished raster system notification graphic with Japanese lettering for an original crisp Japanese anime murim isekai Webtoon 'Heavenly Demon, New Game Plus'. Primary request: highly polished illustrated game-achievement UI that belongs in a martial arts anime, NOT a plain HTML rectangle, NOT a website mockup. One isolated wide floating dark midnight-blue / jade-black plaque, thin ornate sculpted gold frame with elegant sharp cut corner embellishments, luminous gold and faint cyan qi filaments, luxurious gold foil title strokes but crisp flat cel-shaded construction. Small symmetrical golden sword-seal crest at TOP center, NO human figures, NO scene background, NO fake app controls. Transparent background all around the single plaque, tightly framed. High contrast ivory/gold Japanese typography, flawless Japanese glyphs, characters sharp enough to read when image is 324px wide on a phone. Very generous negative space around text, no decorative effects obscuring letters. Large main text must take 70-85% of inner width. No English UI labels, no extra text, no watermark, no repeated card, no badge collection, no mockup hands, no transparency checkerboard. ALL requested text must be exact and visually clear. Portrait is forbidden: wide landscape canvas about 2048x1152, with the actual plaque almost filling the canvas. Body glyph height approximately 140px or larger at 2048px canvas width. Keep lettering inset 10% from outer edges.
+EXACT TEXT in three centered lines. Large gold title: 「引き継ぎ完了」. Enormous gold/ivory centerpiece: 「LV.999」 (the ONLY Latin text allowed, exactly uppercase L V dot 9 9 9). Third big ivory line: 「内功・武技 全解放」. Do not draw 「」 around the requested text. The LV.999 numerals at least 350px tall and dominate the plaque, other Japanese lines at least 150px tall. Controlled radiating cyan/gold qi along frame, reads like endgame powers unlocked. Preserve reference image's plaque frame, crest, blue-black interior, gold/ivory lettering and cel-shaded detailing, but use this exact text and its own spacing. Reference is STYLE only, not an edit target.
+```
+
+## ui-route
+
+参照: /Users/takanorifukuyama/.codex/worktrees/710a/manga/examples/heavenly-demon-ngplus/episode-01/art/lettering/ui-reward.png
+
+```text
+Use case: illustration-story. Asset type: a finished raster system notification graphic with Japanese lettering for an original crisp Japanese anime murim isekai Webtoon 'Heavenly Demon, New Game Plus'. Primary request: highly polished illustrated game-achievement UI that belongs in a martial arts anime, NOT a plain HTML rectangle, NOT a website mockup. One isolated wide floating dark midnight-blue / jade-black plaque, thin ornate sculpted gold frame with elegant sharp cut corner embellishments, luminous gold and faint cyan qi filaments, luxurious gold foil title strokes but crisp flat cel-shaded construction. Small symmetrical golden sword-seal crest at TOP center, NO human figures, NO scene background, NO fake app controls. Transparent background all around the single plaque, tightly framed. High contrast ivory/gold Japanese typography, flawless Japanese glyphs, characters sharp enough to read when image is 324px wide on a phone. Very generous negative space around text, no decorative effects obscuring letters. Large main text must take 70-85% of inner width. No English UI labels, no extra text, no watermark, no repeated card, no badge collection, no mockup hands, no transparency checkerboard. ALL requested text must be exact and visually clear. Portrait is forbidden: wide landscape canvas about 2048x1152, with the actual plaque almost filling the canvas. Body glyph height approximately 140px or larger at 2048px canvas width. Keep lettering inset 10% from outer edges.
+EXACT TEXT, centered in four lines with generous spacing. Gold title: 「隠しルート 開放」. Large luminous gold main line: 「『天魔の帰還』」. Third ivory line: 「この世界には、」. Fourth ivory line: 「まだ続きがある。」. Do not draw the outer delimiting 「」, but retain 『』 around 天魔の帰還 and Japanese punctuation 、 and 。. For all the body text, keep glyphs at least 140px tall on 2048px canvas. A slightly more mysterious red jewel in the same golden crest and elegant gold qi trails. Preserve reference image's plaque frame, blue-black interior, gold/ivory lettering and cel-shaded detailing. Reference is STYLE only, not an edit target.
+```
+
+## technique
+
+参照: なし（新規生成）
+
+```text
+Use case: illustration-story. Asset type: isolated finished Japanese hand-drawn comic sound-effect lettering to be directly inserted in an anime-style martial-arts Webtoon. Transparent background. Draw ONLY the specified Japanese characters and their calligraphic motion/qi embellishments, no characters/people, no weapon, no panels, no caption/speech bubble, no rectangular backdrop. Tight landscape framing about 1536x768, letters fill most of the image; generous 5% safe margin to avoid clipping strokes. Crisp high-end anime/comic hand-inked lettering, each hiragana legible, deliberate stroke weight, energetic original lettering rather than a standard typeset font. Dark midnight teal primary ink, thin clean white edge for separation, controlled luminous cyan and a few gold accents. No texture noise over letter counters, no Roman letters, no English, no extra Japanese, no watermark, no UI icon, no checkerboard. The exact word only; characters must all be present and correct. Render it as a polished production graphic on true alpha transparency.
+This graphic is a named attack title rather than a sound effect. EXACT text on TWO lines. Top line small but fully readable: 「天魔九式・第一式」. Bottom line VERY LARGE: 「破山」. Do not include delimiting 「」. The top glyphs should be at least 90px high on a roughly 1536px wide canvas; bottom glyphs at least 360px tall. Fierce dark midnight-teal angular brushstrokes with molten GOLD edges and a few jagged cyan impact sparks. Wide powerful calligraphy, full lettering stays within image, razor-crisp kanji with correct strokes. Transparent background, no human figure, no scene backdrop, no UI card or panel, no other words.
+```
