@@ -395,6 +395,16 @@ struct WebtoonReader: UIViewRepresentable {
             loadState.wrappedValue = .loading
         }
 
+        func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse,
+                     decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+            if navigationResponse.isForMainFrame,
+               let response = navigationResponse.response as? HTTPURLResponse,
+               response.statusCode >= 400 {
+                loadState.wrappedValue = .failed
+                decisionHandler(.cancel)
+            } else { decisionHandler(.allow) }
+        }
+
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             loadState.wrappedValue = .ready
         }
