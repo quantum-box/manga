@@ -1,5 +1,6 @@
 use serde::{Deserialize, Serialize};
 use worker::*;
+mod series;
 
 const MAX_IMAGE: usize = 16 * 1024 * 1024;
 #[derive(Deserialize, Serialize)]
@@ -94,7 +95,10 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
                 .limit(100)
                 .execute()
                 .await?;
-            let mut titles = Vec::new();
+            let mut groups = std::collections::BTreeMap::<
+                String,
+                Vec<(series::SeriesInfo, String, String, String, String)>,
+            >::new();
             for object in list.objects() {
                 let key = object.key();
                 let id = key
@@ -118,13 +122,32 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
                 }) else {
                     continue;
                 };
+                let info = series::identify(id, &ep.title);
+                groups.entry(info.id.clone()).or_default().push((
+                    info,
+                    id.to_owned(),
+                    ep.subtitle.unwrap_or_else(|| ep.title.clone()),
+                    format!("/images/{id}/{cover}"),
+                    revision,
+                ));
+            }
+            let mut titles = Vec::new();
+            for (series_id, mut entries) in groups {
+                entries.sort_by(|a, b| {
+                    (a.0.number, a.0.rank, &a.1).cmp(&(b.0.number, b.0.rank, &b.1))
+                });
+                let revisions: Vec<_> = entries.iter().map(|e| e.4.as_str()).collect();
+                let revision = revisions.join(":");
+                let episodes: Vec<_> = entries.iter().map(|(info, id, subtitle, _, revision)| {
+                    serde_json::json!({
+                        "id": id, "number": info.number, "title": subtitle, "edition": info.edition,
+                        "revision": revision, "reader": format!("/?episode={id}"), "background": "#111111"
+                    })
+                }).collect();
                 titles.push(serde_json::json!({
-                    "id": format!("online-{id}"), "title": ep.title, "genre": "Webtoon", "revision": revision,
-                    "image": format!("/images/{id}/{cover}"), "tagline": ep.title,
-                    "synopsis": "配信中のWebtoon", "episodes": [{
-                        "id": id, "number": 1, "title": ep.title, "edition": "配信版",
-                        "reader": format!("/?episode={id}"), "background": "#111111"
-                    }]
+                    "id": format!("online-{series_id}"), "title": entries[0].0.title,
+                    "genre": "Webtoon", "revision": revision, "image": entries[0].3,
+                    "tagline": entries[0].0.title, "synopsis": "配信中のWebtoon", "episodes": episodes
                 }));
             }
             Ok(

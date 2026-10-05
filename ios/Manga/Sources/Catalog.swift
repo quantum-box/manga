@@ -19,6 +19,7 @@ struct Episode: Identifiable, Hashable, Codable {
     let edition: String
     let reader: String
     let background: String
+    var revision: String? = nil
 }
 
 enum Catalog {
@@ -176,7 +177,7 @@ actor DownloadManager {
         var episodes = [Episode]()
         for (index, episode) in title.episodes.enumerated() {
             guard safe(episode.id) else { throw DownloadError.invalidContent }
-            let data = try await get("/api/episodes/" + episode.id, limit: 256 * 1024, expectedRevision: title.revision)
+            let data = try await get("/api/episodes/" + episode.id, limit: 256 * 1024, expectedRevision: episode.revision ?? title.revision)
             guard let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
                   let blocks = json["blocks"] as? [[String: Any]], !blocks.isEmpty else { throw DownloadError.invalidContent }
             let episodeDir = staging.appendingPathComponent(episode.id, isDirectory: true)
@@ -205,7 +206,7 @@ actor DownloadManager {
             """
             try Data(html.utf8).write(to: episodeDir.appendingPathComponent("index.html"), options: .atomic)
             episodes.append(Episode(id: episode.id, number: episode.number, title: episode.title, edition: episode.edition,
-                reader: "downloads/\(folder)/\(episode.id)/index.html", background: "#111111"))
+                reader: "downloads/\(folder)/\(episode.id)/index.html", background: "#111111", revision: episode.revision))
             await progress(index + 1, title.episodes.count)
         }
         var saved = MangaTitle(id: title.id, title: title.title, genre: title.genre, image: "downloads/\(folder)/cover",
