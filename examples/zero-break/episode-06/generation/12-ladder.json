@@ -1,0 +1,29 @@
+{
+  "file": "12-ladder.png",
+  "method": "built-in image_gen",
+  "prompt": "Edit ONLY the black-haired red-scarf Ren helping with the ladder at the top left of this anime rescue panel: REMOVE him completely, filling his place with the same catwalk metal railing/architecture. Ren is still FULLY ARMORED UNDER the compartment holding its weight in the preceding shot, so he cannot simultaneously help at this ladder. Preserve Mira's determined face and white-blue-gold gown, exact Japanese vertical balloon 歩ける人は、次の人を支えて。 and tail, Noa orange hair/goggles/orange-gloved hands, captives, SAME iron ladder connecting from intact catwalk to compartment doorway. Make the near end visibly latched to catwalk rail and far end hooked to doorway floor frame; no one starts climbing yet. No additional Ren, no armor appearing on the helpers, no extra dialogue.\n",
+  "references": [
+    "../episode-03/art/03-fist.png",
+    "../production/references/mira.png",
+    "art/03-rail-geography.png",
+    "../production/references/noa.png"
+  ],
+  "sha256": "c7e85e78336924edd6abbaf0f3a59c937f8073a61a9e291d3d8923ea9fe13a88",
+  "bytes": 2661034,
+  "status": "generated",
+  "visualReview": "passed",
+  "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Mira extends locked rescue ladder from catwalk to tilted doorway, adult residents receive ladder edge; Noa holds coupling. Clear both ends secured before anyone climbs.\n\nBalloon 1: speech, Mira, upper right. EXACT text: 歩ける人は、次の人を支えて。 . Columns RIGHT to LEFT: 歩ける人は、 / 次の人を / 支えて。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nContinuity: Rook is absent from this scene. No silver-haired knight or blue cape. Include only people explicitly requested in the scene, with Ren in the specified costume state.",
+  "repairs": [
+    {
+      "prompt": "Edit ONLY the black-haired red-scarf Ren helping with the ladder at the top left of this anime rescue panel: REMOVE him completely, filling his place with the same catwalk metal railing/architecture. Ren is still FULLY ARMORED UNDER the compartment holding its weight in the preceding shot, so he cannot simultaneously help at this ladder. Preserve Mira's determined face and white-blue-gold gown, exact Japanese vertical balloon 歩ける人は、次の人を支えて。 and tail, Noa orange hair/goggles/orange-gloved hands, captives, SAME iron ladder connecting from intact catwalk to compartment doorway. Make the near end visibly latched to catwalk rail and far end hooked to doorway floor frame; no one starts climbing yet. No additional Ren, no armor appearing on the helpers, no extra dialogue.\n",
+      "editTargetSavedAt": "source/12-helper-fix-before.png",
+      "references": [
+        "art/12-ladder.png"
+      ],
+      "previousSha256": "b19c07d66672ea5719087f4db359c938be42d2552f340692c76960aede89e337",
+      "finalArt": "art/12-ladder.png",
+      "sha256": "c7e85e78336924edd6abbaf0f3a59c937f8073a61a9e291d3d8923ea9fe13a88"
+    }
+  ],
+  "visualReviewEvidence": "validation.json and review/contact-360-*.png"
+}

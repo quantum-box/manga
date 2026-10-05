@@ -1,0 +1,28 @@
+{
+  "file": "08-disqualify.png",
+  "method": "built-in image_gen",
+  "prompt": "Edit ONLY the bearded older judge at the RIGHT of the FIRST anime panel: replace him with the SAME thin young-adult ceremony guide from reference2, brown hair tied low, clean-shaven, ornate SILVER half-mask over eyes, GREY high-collar formal robe. Preserve his hand pulling the bell rope and pointing toward exit, same exact vertical dialogue 失格です。 and its tail, bell sound カン, Ren, Mira, Rook, hall and all composition. No navy royal cape, no beard, no extra characters or balloons. Same person speaking in both panels.\n",
+  "references": [
+    "../episode-03/art/03-fist.png",
+    "../production/references/mira.png"
+  ],
+  "sha256": "1d2de4dfabb7bc02812c0f2240a6f56506ba45fa8b39480c60f3a9969d2cb701",
+  "bytes": 2439846,
+  "status": "generated",
+  "visualReview": "passed",
+  "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Ceremony guide pulls bell rope and points to exit with judge gesture. Bell effect カン . No attack or ren armor yet.\n\nBalloon 1: speech, Guide, upper right. EXACT text: 失格です。 . Columns RIGHT to LEFT: 失格です。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nCast continuity: Noa remains at the workshop and is NOT in this scene. No orange-haired mechanic here. Ren, Mira and Rook are the visitors, plus only the specified guide, guards or captives. Ren begins in ordinary BLACK fabric, bare arms and bare hands; partial LEFT gauntlet only during the chain rescue when explicitly requested.",
+  "repairs": [
+    {
+      "prompt": "Edit ONLY the bearded older judge at the RIGHT of the FIRST anime panel: replace him with the SAME thin young-adult ceremony guide from reference2, brown hair tied low, clean-shaven, ornate SILVER half-mask over eyes, GREY high-collar formal robe. Preserve his hand pulling the bell rope and pointing toward exit, same exact vertical dialogue 失格です。 and its tail, bell sound カン, Ren, Mira, Rook, hall and all composition. No navy royal cape, no beard, no extra characters or balloons. Same person speaking in both panels.\n",
+      "editTargetSavedAt": "source/08-guide-fix-before.png",
+      "references": [
+        "art/08-disqualify.png",
+        "art/03-first-hero.png"
+      ],
+      "previousSha256": "d043f10176e0fcab354cda4eafe129a860116ce16b2496289bc37cf346b6fd9d",
+      "finalArt": "art/08-disqualify.png",
+      "sha256": "1d2de4dfabb7bc02812c0f2240a6f56506ba45fa8b39480c60f3a9969d2cb701"
+    }
+  ],
+  "visualReviewEvidence": "validation.json and review/contact-360-*.png"
+}

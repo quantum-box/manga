@@ -33,6 +33,6 @@ node check.cjs
 
 全体画像はブラウザの通常のスクロール画面を順に繋いで書き出す。長い一括キャプチャで起きた16384px地点の冒頭重複を避け、原画の画素を加工しない。[書き出し検証](raster-export-validation.json)では全区間がスクロール画面と一致し、冒頭の重複がないことを確認した。
 
-前版の[生成指示](../v4/PROMPTS.md)と人物参照の原画2枚を収録している。全50話の場面脚本は[脚本目次](../series/README.md)。2〜50話の作画は未制作。
+前版の[生成指示](../v4/PROMPTS.md)と人物参照の原画2枚を収録している。全50話の場面脚本は[脚本目次](../series/README.md)。[第1〜10話の作画](../chapters.html)が完成し、第11〜50話は脚本のみ。
 
 単独HTMLは[reader.zip](reader.zip)を展開して開く。原画を変更せずHTMLをZIPに格納し、展開後のバイト一致は[配布検証](delivery-validation.json)に記録する。`reader.html` 本体は再生成するためGitの対象から除外する。

@@ -1,0 +1,31 @@
+{
+  "file": "13-last-fragment.png",
+  "method": "built-in image_gen",
+  "prompt": "Edit ONLY the SILVER-HAIRED knight Rook in the background of the first panel. He is NOT in this workshop and must be entirely removed. Replace his whole figure, face, silver armor and blue cape with the indoor workshop's warm copper pipes and wooden equipment wall from the second reference. Keep ALL Ren, Mira and Noa, their faces and poses, the mechanical flying cap stopped by Ren's left armored forearm, all other people and foreground props, exact composition and polished anime style unchanged. Only three protagonists are present: black-haired red scarf Ren, blonde gown Mira and orange-haired goggled mechanic Noa. No text, no extra characters. Keep the same thin black manga border.",
+  "references": [
+    "../episode-03/art/03-fist.png",
+    "../v5/art/16-relief.png",
+    "art/03-workshop.png",
+    "../episode-03/art/10-shield-arm.png",
+    "../production/references/noa.png"
+  ],
+  "sha256": "2f60780ba10295f2883f42386ab70855b78a9f58196dcf39933a2cc688ea9dcc",
+  "bytes": 2605248,
+  "status": "generated",
+  "visualReview": "passed",
+  "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: One loose metal cap fragment flies; Ren's single armored forearm catches it with other bare hand holding Noa back safely. Boiler now vented, all three uninjured.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.\nContinuity: ONLY Ren's LEFT forearm and left hand are covered in black faceted cyan-seamed basic armor. RIGHT hand and both upper arms remain bare; torso stays ordinary black fabric shirt with brown straps; legs ordinary charcoal trousers. No armor on shoulders, torso, right arm, or legs. This is partial activation, not full transformation.",
+  "repairs": [
+    {
+      "prompt": "Edit ONLY the SILVER-HAIRED knight Rook in the background of the first panel. He is NOT in this workshop and must be entirely removed. Replace his whole figure, face, silver armor and blue cape with the indoor workshop's warm copper pipes and wooden equipment wall from the second reference. Keep ALL Ren, Mira and Noa, their faces and poses, the mechanical flying cap stopped by Ren's left armored forearm, all other people and foreground props, exact composition and polished anime style unchanged. Only three protagonists are present: black-haired red scarf Ren, blonde gown Mira and orange-haired goggled mechanic Noa. No text, no extra characters. Keep the same thin black manga border.",
+      "editTargetSavedAt": "source/13-before-cameo-fix.png",
+      "references": [
+        "art/13-last-fragment.png",
+        "art/03-workshop.png"
+      ],
+      "previousSha256": "f37b7f1265ad77068223fa5ac5b3785dcd06919860238b3f252baed3b3d51dd5",
+      "finalArt": "art/13-last-fragment.png",
+      "sha256": "2f60780ba10295f2883f42386ab70855b78a9f58196dcf39933a2cc688ea9dcc"
+    }
+  ],
+  "visualReviewEvidence": "validation.json and review/contact-360-*.png"
+}

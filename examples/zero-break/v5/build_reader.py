@@ -18,6 +18,6 @@ for s in data['shots']:
     bg='#111a29' if s['id']=='memory' else '#0c1e2e' if s['id']=='core' else '#f7fbff'
     gap=round(s['pause']/390*100,2)
     out.append('<div class="pause" aria-hidden="true" style="--pause:'+str(gap)+'cqw;--paper:'+bg+'"></div>')
-out.append('<footer>第1話 おわり<br>第2話「英雄の請求書」へ</footer></main></html>')
+out.append('<footer>第1話 おわり<br><a href="../episode-02/index.html">第2話「英雄の請求書」へ</a></footer></main></html>')
 (root/'index.html').write_text(''.join(out))
 print('Scenes built:',len(data['shots'])-len(pending),'pending:',len(pending))
