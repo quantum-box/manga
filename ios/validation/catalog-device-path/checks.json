@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-05",
+  "reported_issue": "TestFlight home shows zero titles with an empty search field",
+  "cause": "Catalog.resource compared a canonical child path under /var to a noncanonical /private/var root and rejected bundled resources",
+  "regression": {
+    "original_guard_rejected_existing_catalog": true,
+    "fixed_private_var_and_var_paths_load_four_titles": true,
+    "martial_story_distinct_chapters": 10,
+    "cover_and_reader_resolution": "passed",
+    "outside_paths_and_symlinks": "rejected",
+    "missing_malformed_empty_catalog": "reported as failure"
+  },
+  "content_checks": {
+    "python_tests": 5,
+    "sync_check": "passed",
+    "titles": 4,
+    "readers_including_alternate_editions": 15
+  },
+  "builds": {
+    "debug_iphone_simulator": "passed",
+    "unsigned_release_iphone_archive": "passed",
+    "release_version": "0.1.1",
+    "release_archive_native_catalog_test": "passed for four covers and fifteen readers"
+  },
+  "acceptance": {
+    "fixed_native_screens": "pending: Mac locked during UI inspection",
+    "testflight_availability": "pending: App Store Connect login expired",
+    "physical_iphone": "pending"
+  }
+}
