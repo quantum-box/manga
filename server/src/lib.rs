@@ -308,6 +308,32 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
             }
             Response::empty().map(|r| r.with_status(201))
         }
+        (Method::Delete, ["admin", "images", id]) if slug(id) => {
+            // Published episodes must be withdrawn before their image objects are purged.
+            if bucket.head(format!("episodes/{id}.json")).await?.is_some() {
+                return Response::error("Unpublish the episode before purging images", 409);
+            }
+            let prefix = format!("images/{id}/");
+            let page = bucket.list().prefix(&prefix).limit(1000).execute().await?;
+            let keys: Vec<String> = page.objects().iter().map(|object| object.key()).collect();
+            let deleted = keys.len();
+            if !keys.is_empty() {
+                bucket.delete_multiple(keys).await?;
+            }
+            // Each call removes the first page, so retries also recover partial deletions.
+            let remaining = !bucket
+                .list()
+                .prefix(&prefix)
+                .limit(1)
+                .execute()
+                .await?
+                .objects()
+                .is_empty();
+            Ok(Response::from_json(
+                &serde_json::json!({"deleted": deleted, "remaining": remaining}),
+            )?
+            .with_headers(headers("application/json", "no-store")?))
+        }
         (Method::Delete, ["admin", "episodes", id]) if slug(id) => {
             let key = format!("episodes/{id}.json");
             bucket.delete(&key).await?;

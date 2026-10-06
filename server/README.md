@@ -83,6 +83,7 @@ Workerコードの変更・再デプロイは不要。
 | PUT `/admin/images/:id/:name` | Bearer認証付き画像アップロード |
 | PUT `/admin/episodes/:id` | Bearer認証付き公開・更新 |
 | DELETE `/admin/episodes/:id` | Bearer認証付き公開解除（一覧キャッシュも更新。画像の原本は保持） |
+| DELETE `/admin/images/:id` | Bearer認証付き画像実体削除。公開中は409。1回で最大1000件、`remaining: true`なら再実行 |
 
 現段階は無料公開・単一管理者のMVP。作品グルーピング、課金、読者アカウント、
 管理画面、画像変換、1000件超のページング、未公開画像の自動回収は未実装。
