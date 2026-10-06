@@ -87,10 +87,13 @@ enum Catalog {
                        synopsis: title.synopsis, episodes: title.orderedEpisodes, revision: title.revision)
         }
     }
-    static func loadRemote(session: URLSession = .shared, cacheURL: URL? = nil) async throws -> [MangaTitle] {
-        var request = URLRequest(url: apiBaseURL.appendingPathComponent("api/v1/catalog"))
+    static func loadRemote(session: URLSession = .shared, cacheURL: URL? = nil, forceRefresh: Bool = false) async throws -> [MangaTitle] {
+        var endpoint = URLComponents(url: apiBaseURL.appendingPathComponent("api/v1/catalog"), resolvingAgainstBaseURL: false)!
+        if forceRefresh { endpoint.queryItems = [URLQueryItem(name: "refresh", value: UUID().uuidString)] }
+        var request = URLRequest(url: endpoint.url!)
         request.timeoutInterval = 20
-        request.cachePolicy = .useProtocolCachePolicy
+        request.cachePolicy = forceRefresh ? .reloadIgnoringLocalCacheData : .useProtocolCachePolicy
+        if forceRefresh { request.setValue("no-cache", forHTTPHeaderField: "Cache-Control") }
         let (data, response) = try await session.data(for: request)
         guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
             throw URLError(.badServerResponse)
