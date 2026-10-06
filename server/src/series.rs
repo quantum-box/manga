@@ -59,7 +59,10 @@ pub fn identify(id: &str, title: &str) -> SeriesInfo {
 pub fn chapter_title<'a>(id: &str, fallback: &'a str) -> &'a str {
     if id.starts_with("zero-break-") && identify(id, fallback).number == 1 {
         "最弱判定、最強の一歩。"
-    } else if id.starts_with("pochi-") || id == "pochis-handshake" {
+    } else if matches!(
+        id,
+        "pochi-episode-01" | "pochi-page-v1" | "pochi-page-v2" | "pochis-handshake"
+    ) {
         "ポチと魔王の「おて」"
     } else if id == "swordsaint-white-v2" {
         "その手は、二度目"
@@ -87,12 +90,37 @@ mod tests {
             "最弱判定、最強の一歩。"
         );
         assert!(identify("zero-break-v5", "").rank < identify("zero-break-v1", "").rank);
-        assert_eq!(chapter_title("zero-break-episode-02", "英雄の請求書"), "英雄の請求書");
-        assert_eq!(chapter_title("zero-break-episode-10", "拍手より先に"), "拍手より先に");
+        assert_eq!(
+            chapter_title("zero-break-episode-02", "英雄の請求書"),
+            "英雄の請求書"
+        );
+        assert_eq!(
+            chapter_title("zero-break-episode-10", "拍手より先に"),
+            "拍手より先に"
+        );
     }
     #[test]
     fn unrelated_uploads_stay_separate() {
         assert_eq!(identify("new-work", "新作").id, "new-work");
         assert_eq!(identify("new-work", "新作").title, "新作");
+    }
+    #[test]
+    fn revision_ids_keep_series_chapter_numbers_and_new_titles() {
+        for (id, expected) in [
+            ("pochi-episode-02-r123abc", "pochi"),
+            ("zero-break-episode-01-r123abc", "zero-break"),
+            ("heavenly-demon-episode-10-r123abc", "heavenly-demon"),
+        ] {
+            assert_eq!(identify(id, "").id, expected);
+        }
+        assert_eq!(identify("pochi-episode-02-r123abc", "").number, 2);
+        assert_eq!(
+            chapter_title("pochi-episode-02-r123abc", "言葉のない約束"),
+            "言葉のない約束"
+        );
+        assert_eq!(
+            chapter_title("pochi-episode-01-r123abc", "知らない体"),
+            "知らない体"
+        );
     }
 }

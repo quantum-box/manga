@@ -171,11 +171,15 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
                 let meta = metadata.iter().find(|m| m["id"].as_str() == Some(meta_id));
                 let episodes: Vec<_> = entries.iter().map(|(info, id, subtitle, _, revision)| {
                     let local_id = id.strip_prefix(&format!("{series_id}-")).unwrap_or(id);
-                    let episode_meta = meta.and_then(|m| m["episodes"].as_array()).and_then(|eps| eps.iter().find(|e| e["id"].as_str() == Some(local_id)));
+                    let episode_meta = meta.and_then(|m| m["episodes"].as_array()).and_then(|eps| {
+                        eps.iter().find(|e| e["id"].as_str() == Some(local_id))
+                            .or_else(|| eps.iter().find(|e| e["number"].as_u64() == Some(u64::from(info.number))))
+                    });
                     let chapter_title = series::chapter_title(id, episode_meta.and_then(|e| e["title"].as_str()).unwrap_or(subtitle));
+                    let edition = episode_meta.and_then(|e| e["edition"].as_str()).unwrap_or(&info.edition);
 
                     serde_json::json!({
-                        "id": id, "number": info.number, "title": chapter_title, "edition": info.edition,
+                        "id": id, "number": info.number, "title": chapter_title, "edition": edition,
                         "revision": revision, "reader": format!("/?episode={id}"), "background": "#111111"
                     })
                 }).collect();
