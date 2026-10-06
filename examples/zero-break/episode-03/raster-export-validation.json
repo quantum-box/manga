@@ -1,0 +1,406 @@
+{
+  "edition": "context-dialogue-v6",
+  "status": "passed_export",
+  "method": "native canvas layout from manifest; no HTML or browser rendering",
+  "sourceArtworkUnchanged": true,
+  "sourceHashes": [
+    {
+      "id": "morning",
+      "file": "01-morning.png",
+      "sha256": "53ac46c38a15f22b55423e514b68391724fae67d6b5d461de0d49a987382a07e"
+    },
+    {
+      "id": "e03-challenge",
+      "file": "v6-challenge.png",
+      "sha256": "c94b4bc452d617274a1da6f469261739c090fd1f11e6c29769067a7efb2a622a"
+    },
+    {
+      "id": "fist",
+      "file": "03-fist.png",
+      "sha256": "452c5eb048d9e0a32b9fee5b16fbc8ab853bf0b9ac67dd1d48bd7a9fcbb33ea0"
+    },
+    {
+      "id": "e03-no-answer",
+      "file": "v6-no-answer.png",
+      "sha256": "f41e8a7499e3e6d872fd5a42ee235b63d42d78d442b14de7f842f6b22ca8a964"
+    },
+    {
+      "id": "laughter",
+      "file": "05-laughter.png",
+      "sha256": "dd72b9001d3d643e63653f546e41b27ca352d887315862839330a9370c1e104c"
+    },
+    {
+      "id": "practice",
+      "file": "06-practice.png",
+      "sha256": "a714bdb6cc9568ef20a70887e0a52319fd28ea4fa0d79abbb4e597ff40675710"
+    },
+    {
+      "id": "axle",
+      "file": "07-axle.png",
+      "sha256": "56350bcc0e49b365bb5924c7702f9a81ccfba4214bface31521fed7e15c9f3d7"
+    },
+    {
+      "id": "barrel",
+      "file": "08-barrel.png",
+      "sha256": "45f6004d9155ec5dfca4e551b297d86249e1112d8990db2bc06448683e1fa116"
+    },
+    {
+      "id": "move",
+      "file": "09-move.png",
+      "sha256": "1d32e7b4e27cb98aadcae756e6dcd651c2bc046bea6a6d52edeb39a9413ffd06"
+    },
+    {
+      "id": "shield-arm",
+      "file": "10-shield-arm.png",
+      "sha256": "2e6ca65c748ec9d778f25aee724407d62dec339b24359499df8f92d6cc31c827"
+    },
+    {
+      "id": "stop",
+      "file": "11-stop.png",
+      "sha256": "b97f83e3eaef3f8d08436979f7142d78fc7cf09d3ed036b872f9278abb2bc7a1"
+    },
+    {
+      "id": "realization",
+      "file": "12-realization.png",
+      "sha256": "94e623e15d2aaf312ad09380e6bb048d9fb074c1d1635380bdad274ad9801262"
+    },
+    {
+      "id": "reunion",
+      "file": "13-reunion.png",
+      "sha256": "a7be62ffc3f77747ae58db013054f1acfa9140214a302bad7386536602a97cff"
+    },
+    {
+      "id": "e03-rule",
+      "file": "v6-rule.png",
+      "sha256": "0cccf9219f1628b7e7c93721aaed6ca2a366c7c8af0f70016828cf61490ae073"
+    },
+    {
+      "id": "e03-permit",
+      "file": "v6-permit.png",
+      "sha256": "a949660001a2cd1291ec167e45ecf212eaea6e396cde2f33da584491503e3a8e"
+    },
+    {
+      "id": "mechanical-bird",
+      "file": "16-mechanical-bird.png",
+      "sha256": "7103e0489e7a082e1a753bce1d308266fb41375752bb83eec486e6d9222f1aa1"
+    },
+    {
+      "id": "monitor",
+      "file": "17-monitor.png",
+      "sha256": "d8203d8ea238c200bdec12ac6a31928bdaeae5e2861d49c77e359bc05ee90a87"
+    },
+    {
+      "id": "watcher",
+      "file": "18-watcher.png",
+      "sha256": "5fd4c3bdd3080e9a63d5440d1fb6a842227f8db627c77cf615ab3e7fb46ba962"
+    }
+  ],
+  "exports": [
+    {
+      "width": 360,
+      "height": 12564,
+      "file": "complete-360.png",
+      "sha256": "b0a41cbc5ae2fadd7af76f9937f0e877c19494d0ec34cb7893de10dcd4e4f18b",
+      "positions": [
+        {
+          "id": "morning",
+          "x": 0,
+          "y": 194,
+          "width": 360,
+          "height": 630,
+          "pause": 74
+        },
+        {
+          "id": "e03-challenge",
+          "x": 0,
+          "y": 898,
+          "width": 360,
+          "height": 1080,
+          "pause": 111
+        },
+        {
+          "id": "fist",
+          "x": 100.80000000000001,
+          "y": 2089,
+          "width": 259.2,
+          "height": 194,
+          "pause": 65
+        },
+        {
+          "id": "e03-no-answer",
+          "x": 0,
+          "y": 2348,
+          "width": 360,
+          "height": 1080,
+          "pause": 111
+        },
+        {
+          "id": "laughter",
+          "x": 57.60000000000002,
+          "y": 3539,
+          "width": 302.4,
+          "height": 227,
+          "pause": 102
+        },
+        {
+          "id": "practice",
+          "x": 0,
+          "y": 3868,
+          "width": 360,
+          "height": 450,
+          "pause": 51
+        },
+        {
+          "id": "axle",
+          "x": 86.39999999999998,
+          "y": 4369,
+          "width": 273.6,
+          "height": 205,
+          "pause": 78
+        },
+        {
+          "id": "barrel",
+          "x": 0,
+          "y": 4652,
+          "width": 360,
+          "height": 630,
+          "pause": 60
+        },
+        {
+          "id": "move",
+          "x": 36,
+          "y": 5342,
+          "width": 324,
+          "height": 243,
+          "pause": 42
+        },
+        {
+          "id": "shield-arm",
+          "x": 0,
+          "y": 5627,
+          "width": 360,
+          "height": 450,
+          "pause": 46
+        },
+        {
+          "id": "stop",
+          "x": 0,
+          "y": 6123,
+          "width": 360,
+          "height": 630,
+          "pause": 111
+        },
+        {
+          "id": "realization",
+          "x": 0,
+          "y": 6864,
+          "width": 360,
+          "height": 450,
+          "pause": 148
+        },
+        {
+          "id": "reunion",
+          "x": 0,
+          "y": 7462,
+          "width": 360,
+          "height": 450,
+          "pause": 148
+        },
+        {
+          "id": "e03-rule",
+          "x": 0,
+          "y": 8060,
+          "width": 360,
+          "height": 1080,
+          "pause": 175
+        },
+        {
+          "id": "e03-permit",
+          "x": 0,
+          "y": 9315,
+          "width": 360,
+          "height": 1080,
+          "pause": 134
+        },
+        {
+          "id": "mechanical-bird",
+          "x": 0,
+          "y": 10529,
+          "width": 295.2,
+          "height": 221,
+          "pause": 508
+        },
+        {
+          "id": "monitor",
+          "x": 0,
+          "y": 11258,
+          "width": 360,
+          "height": 450,
+          "pause": 120
+        },
+        {
+          "id": "watcher",
+          "x": 0,
+          "y": 11828,
+          "width": 360,
+          "height": 450,
+          "pause": 166
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 13608,
+      "file": "complete-390.png",
+      "sha256": "8382d5e8738b7700ce33a0881da65e8a868f6a9cf9119cf3dd33dc5aaf4d9ede",
+      "positions": [
+        {
+          "id": "morning",
+          "x": 0,
+          "y": 210,
+          "width": 390,
+          "height": 683,
+          "pause": 80
+        },
+        {
+          "id": "e03-challenge",
+          "x": 0,
+          "y": 973,
+          "width": 390,
+          "height": 1170,
+          "pause": 120
+        },
+        {
+          "id": "fist",
+          "x": 109.19999999999999,
+          "y": 2263,
+          "width": 280.8,
+          "height": 211,
+          "pause": 70
+        },
+        {
+          "id": "e03-no-answer",
+          "x": 0,
+          "y": 2544,
+          "width": 390,
+          "height": 1170,
+          "pause": 120
+        },
+        {
+          "id": "laughter",
+          "x": 62.39999999999998,
+          "y": 3834,
+          "width": 327.6,
+          "height": 246,
+          "pause": 110
+        },
+        {
+          "id": "practice",
+          "x": 0,
+          "y": 4190,
+          "width": 390,
+          "height": 487,
+          "pause": 55
+        },
+        {
+          "id": "axle",
+          "x": 93.60000000000002,
+          "y": 4732,
+          "width": 296.4,
+          "height": 222,
+          "pause": 85
+        },
+        {
+          "id": "barrel",
+          "x": 0,
+          "y": 5039,
+          "width": 390,
+          "height": 683,
+          "pause": 65
+        },
+        {
+          "id": "move",
+          "x": 39,
+          "y": 5787,
+          "width": 351,
+          "height": 263,
+          "pause": 45
+        },
+        {
+          "id": "shield-arm",
+          "x": 0,
+          "y": 6095,
+          "width": 390,
+          "height": 487,
+          "pause": 50
+        },
+        {
+          "id": "stop",
+          "x": 0,
+          "y": 6632,
+          "width": 390,
+          "height": 683,
+          "pause": 120
+        },
+        {
+          "id": "realization",
+          "x": 0,
+          "y": 7435,
+          "width": 390,
+          "height": 487,
+          "pause": 160
+        },
+        {
+          "id": "reunion",
+          "x": 0,
+          "y": 8082,
+          "width": 390,
+          "height": 487,
+          "pause": 160
+        },
+        {
+          "id": "e03-rule",
+          "x": 0,
+          "y": 8729,
+          "width": 390,
+          "height": 1170,
+          "pause": 190
+        },
+        {
+          "id": "e03-permit",
+          "x": 0,
+          "y": 10089,
+          "width": 390,
+          "height": 1170,
+          "pause": 145
+        },
+        {
+          "id": "mechanical-bird",
+          "x": 0,
+          "y": 11404,
+          "width": 319.8,
+          "height": 240,
+          "pause": 550
+        },
+        {
+          "id": "monitor",
+          "x": 0,
+          "y": 12194,
+          "width": 390,
+          "height": 487,
+          "pause": 130
+        },
+        {
+          "id": "watcher",
+          "x": 0,
+          "y": 12811,
+          "width": 390,
+          "height": 487,
+          "pause": 180
+        }
+      ]
+    }
+  ],
+  "browserPixelsCompared": false,
+  "visualReview": "passed_native_image_review"
+}

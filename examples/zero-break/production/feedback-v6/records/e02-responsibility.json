@@ -1,0 +1,135 @@
+{
+  "id": "e02-responsibility",
+  "episode": 2,
+  "file": "v6-responsibility-paper.png",
+  "method": "built-in image_gen",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a10f99-efcb-7371-8c20-e01aa60f7ed9/exec-22171736-509f-4b42-982c-c7c6c818589d.png",
+  "sha256": "f0720dd0f4a50f5b52bbbe0de1ca3a5c89174cf7263bc2b233313e5c2b7805d2",
+  "width": 724,
+  "height": 2172,
+  "prompt": "Edit ONLY the paper invoice surfaces in the FIRST and THIRD panels of this existing vertical manga strip. Preserve the entire image size, every panel position, faces, hands, clothes, background, Japanese balloon text and balloon shape exactly. Keep the invoice parchment outline, royal blue-and-gold crest, decorative border and abstract horizontal/table ruling. Remove ALL tiny pseudo-English words, fabricated numbers, totals, and fake legible text from both copies of this same invoice. Replace these tiny text marks with sparse neutral nonlinguistic short strokes or plain empty ruled fields, so no invented monetary amount is asserted. The exact Japanese dialogue 王家の責任です。 and あなた一人に払わせません。 stays entirely untouched. No other edits.",
+  "references": [
+    {
+      "path": "examples/zero-break/episode-02/art/v6-responsibility.png",
+      "sha256": "1d2b50d12e2da1d356296f4846ddd0ebce03d1dbf16617840086fcaf6148eb4e"
+    }
+  ],
+  "replaces": [
+    "responsibility"
+  ],
+  "panels": [
+    {
+      "beat": "The reader receives one part of the explanation, before a response.",
+      "view": "ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.",
+      "frame": "right-aligned90% width, medium framed speaker close-up",
+      "voice": "firm composed blue-grey capsule",
+      "line": {
+        "speaker": "Mira",
+        "text": "王家の責任です。",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "The listener or the relevant object holds the same scene while the words settle.",
+      "view": "ONLY Ren tired eyes look up at Mira, surprised she accepts responsibility. Rescued family stays safely offscreen.",
+      "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+      "voice": "無言"
+    },
+    {
+      "beat": "The reader receives one part of the explanation, before a response.",
+      "view": "ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.",
+      "frame": "full-width LARGE borderless emotional close-up",
+      "voice": "firm composed blue-grey capsule",
+      "line": {
+        "speaker": "Mira",
+        "text": "あなた一人に払わせません。",
+        "type": "speech"
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_image_review",
+    "source_sha256": "f0720dd0f4a50f5b52bbbe0de1ca3a5c89174cf7263bc2b233313e5c2b7805d2",
+    "chapter_validation": "../../../episode-02/validation.json",
+    "checks": [
+      "exact lettering and speakers",
+      "faces, hands, costumes, props",
+      "cause and effect, prior state, no premature reveals"
+    ]
+  },
+  "mobile_browser_review": "pending",
+  "repair_history": [
+    {
+      "id": "e02-responsibility",
+      "episode": 2,
+      "file": "v6-responsibility.png",
+      "method": "built-in image_gen",
+      "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a10f99-efcb-7371-8c20-e01aa60f7ed9/exec-3396a26f-a4f1-4652-8f05-7a8fc2809b21.png",
+      "sha256": "1d2b50d12e2da1d356296f4846ddd0ebce03d1dbf16617840086fcaf6148eb4e",
+      "width": 724,
+      "height": 2172,
+      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Mira stands between Rook and seated tired Ren. Holds invoice herself, authoritative concern, ruined crown-run aqueduct behind. Ren no armor.\n\nPanel 1, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.. Voice / balloon: firm composed blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「王家の責任です。」 (render contents only).\nPanel 2, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: ONLY Ren tired eyes look up at Mira, surprised she accepts responsibility. Rescued family stays safely offscreen.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 3, downward order. Frame: full-width LARGE borderless emotional close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.. Voice / balloon: firm composed blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「あなた一人に払わせません。」 (render contents only).\n",
+      "references": [
+        {
+          "path": "examples/zero-break/episode-02/art/16-responsibility.png",
+          "sha256": "4a3bf002d30b4198eef46f2421e9f90a0852caaa3b3134be2c5fda216afeee38"
+        },
+        {
+          "path": "skills/webtoon/references/zero-break/varied-01.png",
+          "sha256": "207182b5e679ed4ec4b42761adc149f4ad98039d823ed903cb2a1a6f5319b68e"
+        }
+      ],
+      "replaces": [
+        "responsibility"
+      ],
+      "panels": [
+        {
+          "beat": "The reader receives one part of the explanation, before a response.",
+          "view": "ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.",
+          "frame": "right-aligned90% width, medium framed speaker close-up",
+          "voice": "firm composed blue-grey capsule",
+          "line": {
+            "speaker": "Mira",
+            "text": "王家の責任です。",
+            "type": "speech"
+          }
+        },
+        {
+          "beat": "The listener or the relevant object holds the same scene while the words settle.",
+          "view": "ONLY Ren tired eyes look up at Mira, surprised she accepts responsibility. Rescued family stays safely offscreen.",
+          "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+          "voice": "無言"
+        },
+        {
+          "beat": "The reader receives one part of the explanation, before a response.",
+          "view": "ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.",
+          "frame": "full-width LARGE borderless emotional close-up",
+          "voice": "firm composed blue-grey capsule",
+          "line": {
+            "speaker": "Mira",
+            "text": "あなた一人に払わせません。",
+            "type": "speech"
+          }
+        }
+      ],
+      "visual_review": "pending",
+      "mobile_browser_review": "pending",
+      "repair_history": []
+    }
+  ],
+  "originalPrompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Mira stands between Rook and seated tired Ren. Holds invoice herself, authoritative concern, ruined crown-run aqueduct behind. Ren no armor.\n\nPanel 1, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.. Voice / balloon: firm composed blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「王家の責任です。」 (render contents only).\nPanel 2, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: ONLY Ren tired eyes look up at Mira, surprised she accepts responsibility. Rescued family stays safely offscreen.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 3, downward order. Frame: full-width LARGE borderless emotional close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.. Voice / balloon: firm composed blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「あなた一人に払わせません。」 (render contents only).\n",
+  "originalReferences": [
+    {
+      "path": "examples/zero-break/episode-02/art/16-responsibility.png",
+      "sha256": "4a3bf002d30b4198eef46f2421e9f90a0852caaa3b3134be2c5fda216afeee38"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/varied-01.png",
+      "sha256": "207182b5e679ed4ec4b42761adc149f4ad98039d823ed903cb2a1a6f5319b68e"
+    }
+  ],
+  "repairBefore": {
+    "file": "v6-responsibility.png",
+    "sha256": "1d2b50d12e2da1d356296f4846ddd0ebce03d1dbf16617840086fcaf6148eb4e"
+  }
+}

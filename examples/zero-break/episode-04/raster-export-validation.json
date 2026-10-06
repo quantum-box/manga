@@ -1,0 +1,406 @@
+{
+  "edition": "context-dialogue-v6",
+  "status": "passed_export",
+  "method": "native canvas layout from manifest; no HTML or browser rendering",
+  "sourceArtworkUnchanged": true,
+  "sourceHashes": [
+    {
+      "id": "back-stairs",
+      "file": "01-back-stairs.png",
+      "sha256": "28ddf2691f3e562befd7d778780d7d9e7cd6717bcebbb3f803c9956832705707"
+    },
+    {
+      "id": "key",
+      "file": "02-key.png",
+      "sha256": "d21ae95a0f9c8de2dfc7a5863e84825625d7c373fb83add6306cb9b305075e7b"
+    },
+    {
+      "id": "workshop",
+      "file": "03-workshop.png",
+      "sha256": "b548f03220639dad6a3686754e9136bde3da8c05e4d03b82f79edd2f530823f4"
+    },
+    {
+      "id": "e04-noa",
+      "file": "v6-noa.png",
+      "sha256": "af7f8307b99439c972ea9a199cc7f65b06b4041ce219cb07653002a77a78c3de"
+    },
+    {
+      "id": "catch",
+      "file": "05-catch.png",
+      "sha256": "ef035cb663719b2d923e3246b862698615a9e3908c24987ff91e7dcc00347c8f"
+    },
+    {
+      "id": "common",
+      "file": "06-common.png",
+      "sha256": "ff21207092e42e936f2063d709d263160b842df9f3eb6e614eed4212fa1bb0c7"
+    },
+    {
+      "id": "fault",
+      "file": "07-fault.png",
+      "sha256": "78bdd75f863af4e9a025f96d5929bb00d6fa8180f2f932f47b11e73826467163"
+    },
+    {
+      "id": "notice",
+      "file": "08-notice.png",
+      "sha256": "249a6e296d5e17e810942f2df8d2d7a4897a6636d745a2144f380db925080f57"
+    },
+    {
+      "id": "cover",
+      "file": "09-cover.png",
+      "sha256": "e38b2a7456b9d5eec6afc923e28da9b118b39a2267a8ab95499c0087bc66a93b"
+    },
+    {
+      "id": "valve-search",
+      "file": "10-valve-search.png",
+      "sha256": "5eba4bca418b840a20392c052b4c4cf0ee39e6348f1c62b2f43d2919d89ee874"
+    },
+    {
+      "id": "e04-pipe-map",
+      "file": "v6-pipe-map.png",
+      "sha256": "d5796c089cd5572ffd80c08ff29ba9c9976db59724c12abbf8e3f283e12eae18"
+    },
+    {
+      "id": "open-valve",
+      "file": "12-open-valve.png",
+      "sha256": "237a4eb6c190d4d9ba24efcf099b7d03978c1988fe38f71842621c63eadd53b1"
+    },
+    {
+      "id": "last-fragment",
+      "file": "13-last-fragment.png",
+      "sha256": "2f60780ba10295f2883f42386ab70855b78a9f58196dcf39933a2cc688ea9dcc"
+    },
+    {
+      "id": "shared-load",
+      "file": "14-shared-load.png",
+      "sha256": "c604979af55debb037b3ed601c7ad3160041b68a2391b4897add6f4898f21e72"
+    },
+    {
+      "id": "e04-finite",
+      "file": "v6-finite.png",
+      "sha256": "b1c81299975c8e9592085b823f61faa179986f3b0f5375305d978351b5370dc9"
+    },
+    {
+      "id": "team-sign",
+      "file": "16-team-sign.png",
+      "sha256": "d056d86bf7e250588dbc842742413e09d1f038d496935cfbae29cf6ae66b9d66"
+    },
+    {
+      "id": "missing-wires",
+      "file": "17-missing-wires.png",
+      "sha256": "21f9ffb36f731dd987ac2a48ffe4d1ca2dbc9207558f582e97e5d68830af6882"
+    },
+    {
+      "id": "e04-friend",
+      "file": "v6-friend.png",
+      "sha256": "1cfb47ea36c3b973546248c7ac9b615b4a3ea7549911f34d0db9bfe352fbe095"
+    }
+  ],
+  "exports": [
+    {
+      "width": 360,
+      "height": 12777,
+      "file": "complete-360.png",
+      "sha256": "65a8fb2f666ce73dabe5e410e6383cbe9cb83e997899caa9077aeddcf48d7b97",
+      "positions": [
+        {
+          "id": "back-stairs",
+          "x": 0,
+          "y": 194,
+          "width": 360,
+          "height": 630,
+          "pause": 74
+        },
+        {
+          "id": "key",
+          "x": 0,
+          "y": 898,
+          "width": 273.6,
+          "height": 205,
+          "pause": 785
+        },
+        {
+          "id": "workshop",
+          "x": 0,
+          "y": 1888,
+          "width": 360,
+          "height": 630,
+          "pause": 111
+        },
+        {
+          "id": "e04-noa",
+          "x": 0,
+          "y": 2629,
+          "width": 360,
+          "height": 1080,
+          "pause": 138
+        },
+        {
+          "id": "catch",
+          "x": 79.19999999999999,
+          "y": 3847,
+          "width": 280.8,
+          "height": 211,
+          "pause": 60
+        },
+        {
+          "id": "common",
+          "x": 0,
+          "y": 4118,
+          "width": 360,
+          "height": 450,
+          "pause": 138
+        },
+        {
+          "id": "fault",
+          "x": 79.19999999999999,
+          "y": 4706,
+          "width": 280.8,
+          "height": 211,
+          "pause": 83
+        },
+        {
+          "id": "notice",
+          "x": 0,
+          "y": 5000,
+          "width": 360,
+          "height": 450,
+          "pause": 60
+        },
+        {
+          "id": "cover",
+          "x": 0,
+          "y": 5510,
+          "width": 360,
+          "height": 450,
+          "pause": 55
+        },
+        {
+          "id": "valve-search",
+          "x": 0,
+          "y": 6015,
+          "width": 295.2,
+          "height": 221,
+          "pause": 65
+        },
+        {
+          "id": "e04-pipe-map",
+          "x": 0,
+          "y": 6301,
+          "width": 360,
+          "height": 1080,
+          "pause": 88
+        },
+        {
+          "id": "open-valve",
+          "x": 0,
+          "y": 7469,
+          "width": 273.6,
+          "height": 205,
+          "pause": 65
+        },
+        {
+          "id": "last-fragment",
+          "x": 0,
+          "y": 7739,
+          "width": 360,
+          "height": 450,
+          "pause": 129
+        },
+        {
+          "id": "shared-load",
+          "x": 0,
+          "y": 8318,
+          "width": 360,
+          "height": 450,
+          "pause": 138
+        },
+        {
+          "id": "e04-finite",
+          "x": 0,
+          "y": 8906,
+          "width": 360,
+          "height": 1080,
+          "pause": 166
+        },
+        {
+          "id": "team-sign",
+          "x": 0,
+          "y": 10152,
+          "width": 360,
+          "height": 450,
+          "pause": 203
+        },
+        {
+          "id": "missing-wires",
+          "x": 57.60000000000002,
+          "y": 10805,
+          "width": 302.4,
+          "height": 227,
+          "pause": 351
+        },
+        {
+          "id": "e04-friend",
+          "x": 0,
+          "y": 11383,
+          "width": 360,
+          "height": 1080,
+          "pause": 194
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 13838,
+      "file": "complete-390.png",
+      "sha256": "adefe035b77b7052964a9ca9b4cc70a9b9bba8e67700fe197fec582df04127ec",
+      "positions": [
+        {
+          "id": "back-stairs",
+          "x": 0,
+          "y": 210,
+          "width": 390,
+          "height": 683,
+          "pause": 80
+        },
+        {
+          "id": "key",
+          "x": 0,
+          "y": 973,
+          "width": 296.4,
+          "height": 222,
+          "pause": 850
+        },
+        {
+          "id": "workshop",
+          "x": 0,
+          "y": 2045,
+          "width": 390,
+          "height": 683,
+          "pause": 120
+        },
+        {
+          "id": "e04-noa",
+          "x": 0,
+          "y": 2848,
+          "width": 390,
+          "height": 1170,
+          "pause": 150
+        },
+        {
+          "id": "catch",
+          "x": 85.80000000000001,
+          "y": 4168,
+          "width": 304.2,
+          "height": 228,
+          "pause": 65
+        },
+        {
+          "id": "common",
+          "x": 0,
+          "y": 4461,
+          "width": 390,
+          "height": 487,
+          "pause": 150
+        },
+        {
+          "id": "fault",
+          "x": 85.80000000000001,
+          "y": 5098,
+          "width": 304.2,
+          "height": 228,
+          "pause": 90
+        },
+        {
+          "id": "notice",
+          "x": 0,
+          "y": 5416,
+          "width": 390,
+          "height": 487,
+          "pause": 65
+        },
+        {
+          "id": "cover",
+          "x": 0,
+          "y": 5968,
+          "width": 390,
+          "height": 487,
+          "pause": 60
+        },
+        {
+          "id": "valve-search",
+          "x": 0,
+          "y": 6515,
+          "width": 319.8,
+          "height": 240,
+          "pause": 70
+        },
+        {
+          "id": "e04-pipe-map",
+          "x": 0,
+          "y": 6825,
+          "width": 390,
+          "height": 1169,
+          "pause": 95
+        },
+        {
+          "id": "open-valve",
+          "x": 0,
+          "y": 8089,
+          "width": 296.4,
+          "height": 222,
+          "pause": 70
+        },
+        {
+          "id": "last-fragment",
+          "x": 0,
+          "y": 8381,
+          "width": 390,
+          "height": 487,
+          "pause": 140
+        },
+        {
+          "id": "shared-load",
+          "x": 0,
+          "y": 9008,
+          "width": 390,
+          "height": 487,
+          "pause": 150
+        },
+        {
+          "id": "e04-finite",
+          "x": 0,
+          "y": 9645,
+          "width": 390,
+          "height": 1170,
+          "pause": 180
+        },
+        {
+          "id": "team-sign",
+          "x": 0,
+          "y": 10995,
+          "width": 390,
+          "height": 487,
+          "pause": 220
+        },
+        {
+          "id": "missing-wires",
+          "x": 62.39999999999998,
+          "y": 11702,
+          "width": 327.6,
+          "height": 246,
+          "pause": 380
+        },
+        {
+          "id": "e04-friend",
+          "x": 0,
+          "y": 12328,
+          "width": 390,
+          "height": 1170,
+          "pause": 210
+        }
+      ]
+    }
+  ],
+  "browserPixelsCompared": false,
+  "visualReview": "passed_native_image_review"
+}

@@ -1,0 +1,406 @@
+{
+  "edition": "context-dialogue-v6",
+  "status": "passed_export",
+  "method": "native canvas layout from manifest; no HTML or browser rendering",
+  "sourceArtworkUnchanged": true,
+  "sourceHashes": [
+    {
+      "id": "dawn-plan",
+      "file": "01-dawn-plan.png",
+      "sha256": "e97d64186f66796f268da8a81656dcc99f33d2c5c0ae718a4150ce27bfa9d1de"
+    },
+    {
+      "id": "roster",
+      "file": "02-roster.png",
+      "sha256": "fad7d6ad2dfa2c4046932ae899a11e47cd9ebbf7593a0d251f6dbac8fd07da6c"
+    },
+    {
+      "id": "rail-geography",
+      "file": "03-rail-geography.png",
+      "sha256": "62e5347c1cc2e0fa0670a2aeb819190b3f5805e5d4aae0d0253f8932275f3b51"
+    },
+    {
+      "id": "inspection",
+      "file": "04-inspection.png",
+      "sha256": "907f2c2105973355e9438065488d41955efd8ac99ca7848d31d80775ad5e8ada"
+    },
+    {
+      "id": "e06-unlock",
+      "file": "v6-unlock.png",
+      "sha256": "bdfbe7056427cf011615bb32891bc31a25776a076b5afd9ee2fc3ee4562a07fe"
+    },
+    {
+      "id": "security-wakes",
+      "file": "06-security-wakes.png",
+      "sha256": "c28001435ddabe886272aa71abb0dc594674d1bd7f98eb37ad77c8dd7eb39990"
+    },
+    {
+      "id": "wrong-target",
+      "file": "07-wrong-target.png",
+      "sha256": "15d764878ba31f0cdb69b2e1eddd7249b2d6f43e176bd10544bda5f6d08a535c"
+    },
+    {
+      "id": "carriage-falls",
+      "file": "08-carriage-falls.png",
+      "sha256": "cab752da5adb14d20b1766b98d28a59a406968f8553190652b27d56c640ad139"
+    },
+    {
+      "id": "change-choice",
+      "file": "09-change-choice.png",
+      "sha256": "913aa95968e7928024366daad305f6dbc184ab8b711a056517894bc2121b7082"
+    },
+    {
+      "id": "catch-carriage",
+      "file": "10-catch-carriage.png",
+      "sha256": "1137e06bc6e5d1ca649c4cd1d32da11937f3220dcf0a233982daf8c23f2ec732"
+    },
+    {
+      "id": "armor-peeling",
+      "file": "11-armor-peeling.png",
+      "sha256": "286621a6645cd2d771591b84c3837833f14f05e2f46bdd5a00c352467127d483"
+    },
+    {
+      "id": "e06-ladder",
+      "file": "v6-ladder.png",
+      "sha256": "e4237ae7cf9fec01c26ad7038249d9fd1fac2541521d02d7cdd730799865f23d"
+    },
+    {
+      "id": "help-next",
+      "file": "13-help-next.png",
+      "sha256": "3b2df79a4cd20c5bac1034a42c8ee579934ccf73a874fbb224f10b38f1315a28"
+    },
+    {
+      "id": "last-hand",
+      "file": "14-last-hand.png",
+      "sha256": "3276cd317707b683f85b3a86f12f619712e3fd89153411fe61e623f44bdda766"
+    },
+    {
+      "id": "all-seventeen",
+      "file": "15-all-seventeen.png",
+      "sha256": "c179b747bf6f754944832a26addbdba52fda77e8407d2ca446821731ebb89d06"
+    },
+    {
+      "id": "e06-release",
+      "file": "v6-release.png",
+      "sha256": "ebd6f29099eaf9c73672a4dc990418bde5784269acaa883f359c9d3a95bc4ae4"
+    },
+    {
+      "id": "pass",
+      "file": "17-pass.png",
+      "sha256": "e8320e39b1e223a06c983c276f79ac07f7509d2a8874aa8c9e2000650928277d"
+    },
+    {
+      "id": "e06-rook-blocks",
+      "file": "v6-rook-blocks.png",
+      "sha256": "1691133d2efc3161475380c48d4a72ab5f1ab8a1b658863d118ec3f8248e52cb"
+    }
+  ],
+  "exports": [
+    {
+      "width": 360,
+      "height": 13528,
+      "file": "complete-360.png",
+      "sha256": "d4beb6f034c4219d5b4aee7b0956e720fd74c25eddffcacdb51f812694b9c743",
+      "positions": [
+        {
+          "id": "dawn-plan",
+          "x": 0,
+          "y": 194,
+          "width": 360,
+          "height": 630,
+          "pause": 92
+        },
+        {
+          "id": "roster",
+          "x": 0,
+          "y": 916,
+          "width": 302.4,
+          "height": 227,
+          "pause": 102
+        },
+        {
+          "id": "rail-geography",
+          "x": 0,
+          "y": 1245,
+          "width": 360,
+          "height": 630,
+          "pause": 111
+        },
+        {
+          "id": "inspection",
+          "x": 0,
+          "y": 1986,
+          "width": 295.2,
+          "height": 221,
+          "pause": 60
+        },
+        {
+          "id": "e06-unlock",
+          "x": 0,
+          "y": 2267,
+          "width": 360,
+          "height": 1080,
+          "pause": 92
+        },
+        {
+          "id": "security-wakes",
+          "x": 0,
+          "y": 3439,
+          "width": 360,
+          "height": 630,
+          "pause": 65
+        },
+        {
+          "id": "wrong-target",
+          "x": 0,
+          "y": 4134,
+          "width": 324,
+          "height": 405,
+          "pause": 51
+        },
+        {
+          "id": "carriage-falls",
+          "x": 0,
+          "y": 4590,
+          "width": 360,
+          "height": 630,
+          "pause": 51
+        },
+        {
+          "id": "change-choice",
+          "x": 0,
+          "y": 5271,
+          "width": 360,
+          "height": 270,
+          "pause": 65
+        },
+        {
+          "id": "catch-carriage",
+          "x": 0,
+          "y": 5606,
+          "width": 360,
+          "height": 630,
+          "pause": 102
+        },
+        {
+          "id": "armor-peeling",
+          "x": 0,
+          "y": 6338,
+          "width": 360,
+          "height": 450,
+          "pause": 83
+        },
+        {
+          "id": "e06-ladder",
+          "x": 0,
+          "y": 6871,
+          "width": 360,
+          "height": 1080,
+          "pause": 83
+        },
+        {
+          "id": "help-next",
+          "x": 0,
+          "y": 8034,
+          "width": 360,
+          "height": 630,
+          "pause": 102
+        },
+        {
+          "id": "last-hand",
+          "x": 0,
+          "y": 8766,
+          "width": 360,
+          "height": 450,
+          "pause": 665
+        },
+        {
+          "id": "all-seventeen",
+          "x": 0,
+          "y": 9881,
+          "width": 360,
+          "height": 270,
+          "pause": 175
+        },
+        {
+          "id": "e06-release",
+          "x": 0,
+          "y": 10326,
+          "width": 360,
+          "height": 1080,
+          "pause": 185
+        },
+        {
+          "id": "pass",
+          "x": 79.19999999999999,
+          "y": 11591,
+          "width": 280.8,
+          "height": 211,
+          "pause": 351
+        },
+        {
+          "id": "e06-rook-blocks",
+          "x": 0,
+          "y": 12153,
+          "width": 360,
+          "height": 1080,
+          "pause": 175
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 14654,
+      "file": "complete-390.png",
+      "sha256": "2f53ce9ddc611421aee8a9588d3d47eabf05f0e9ef05557261a1e92d3b13e7a7",
+      "positions": [
+        {
+          "id": "dawn-plan",
+          "x": 0,
+          "y": 210,
+          "width": 390,
+          "height": 683,
+          "pause": 100
+        },
+        {
+          "id": "roster",
+          "x": 0,
+          "y": 993,
+          "width": 327.6,
+          "height": 246,
+          "pause": 110
+        },
+        {
+          "id": "rail-geography",
+          "x": 0,
+          "y": 1349,
+          "width": 390,
+          "height": 683,
+          "pause": 120
+        },
+        {
+          "id": "inspection",
+          "x": 0,
+          "y": 2152,
+          "width": 319.8,
+          "height": 240,
+          "pause": 65
+        },
+        {
+          "id": "e06-unlock",
+          "x": 0,
+          "y": 2457,
+          "width": 390,
+          "height": 1169,
+          "pause": 100
+        },
+        {
+          "id": "security-wakes",
+          "x": 0,
+          "y": 3726,
+          "width": 390,
+          "height": 683,
+          "pause": 70
+        },
+        {
+          "id": "wrong-target",
+          "x": 0,
+          "y": 4479,
+          "width": 351,
+          "height": 439,
+          "pause": 55
+        },
+        {
+          "id": "carriage-falls",
+          "x": 0,
+          "y": 4973,
+          "width": 390,
+          "height": 683,
+          "pause": 55
+        },
+        {
+          "id": "change-choice",
+          "x": 0,
+          "y": 5711,
+          "width": 390,
+          "height": 293,
+          "pause": 70
+        },
+        {
+          "id": "catch-carriage",
+          "x": 0,
+          "y": 6074,
+          "width": 390,
+          "height": 683,
+          "pause": 110
+        },
+        {
+          "id": "armor-peeling",
+          "x": 0,
+          "y": 6867,
+          "width": 390,
+          "height": 487,
+          "pause": 90
+        },
+        {
+          "id": "e06-ladder",
+          "x": 0,
+          "y": 7444,
+          "width": 390,
+          "height": 1170,
+          "pause": 90
+        },
+        {
+          "id": "help-next",
+          "x": 0,
+          "y": 8704,
+          "width": 390,
+          "height": 683,
+          "pause": 110
+        },
+        {
+          "id": "last-hand",
+          "x": 0,
+          "y": 9497,
+          "width": 390,
+          "height": 487,
+          "pause": 720
+        },
+        {
+          "id": "all-seventeen",
+          "x": 0,
+          "y": 10704,
+          "width": 390,
+          "height": 293,
+          "pause": 190
+        },
+        {
+          "id": "e06-release",
+          "x": 0,
+          "y": 11187,
+          "width": 390,
+          "height": 1170,
+          "pause": 200
+        },
+        {
+          "id": "pass",
+          "x": 85.80000000000001,
+          "y": 12557,
+          "width": 304.2,
+          "height": 228,
+          "pause": 380
+        },
+        {
+          "id": "e06-rook-blocks",
+          "x": 0,
+          "y": 13165,
+          "width": 390,
+          "height": 1169,
+          "pause": 190
+        }
+      ]
+    }
+  ],
+  "browserPixelsCompared": false,
+  "visualReview": "passed_native_image_review"
+}

@@ -1,7 +1,7 @@
 {
   "episode": 9,
   "title": "ゼロの外側",
-  "version": "vertical-v1",
+  "version": "context-dialogue-v6",
   "method": "built-in image_gen",
   "shots": [
     {
@@ -24,7 +24,10 @@
         "../production/references/mira.png",
         "../v5/art/a14-rejection.png",
         "../production/references/noa.png"
-      ]
+      ],
+      "baseline_sha256": "880abce17434930f6a7ca15f4fc0fd7f8e604c1142233e187a4fb3481fde565d",
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
       "id": "zero-again",
@@ -45,7 +48,10 @@
         "../episode-03/art/03-fist.png",
         "../production/references/mira.png",
         "../v5/art/a11-result.png"
-      ]
+      ],
+      "baseline_sha256": "ebd81a0e0191a116b7f9687473eb9321320f9d93090265827d849de9fcc27137",
+      "widthPercent": 90,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
       "id": "replay",
@@ -76,38 +82,95 @@
         "../episode-03/art/03-fist.png",
         "../production/references/mira.png",
         "../production/references/noa.png"
-      ]
+      ],
+      "baseline_sha256": "6b322e5cac1438df273e2f676aee07e295e57752bf2b7539f852c0455ffd417d",
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
-      "id": "other-axis",
-      "file": "04-other-axis.png",
-      "crop": "portrait",
-      "shape": "right",
-      "aspect": "1024x1280",
-      "pause": 140,
+      "id": "e09-other-axis",
+      "file": "v6-other-axis.png",
+      "shape": "bleed",
+      "pause": 170,
+      "widthPercent": 100,
       "scene": "Mira draws TWO clear simple graph axes on paper, one flat, one rises during rescuing; exact large horizontal labels 魔力 and 救助負荷 . Ren leans in, not instantly master explanation.",
       "lines": [
         {
           "speaker": "Mira",
-          "text": "空じゃない。測る箱が違う。",
-          "columns": [
-            "空じゃない。",
-            "測る箱が",
-            "違う。"
-          ],
+          "text": "空じゃない。",
+          "type": "speech"
+        },
+        {
+          "speaker": "Mira",
+          "text": "測る箱が違う。",
           "type": "speech"
         }
       ],
+      "panels": [
+        {
+          "beat": "The reader receives one part of the explanation, before a response.",
+          "view": "ONLY Mira calm explaining face in SAME warm amber workshop AT NIGHT; no sunshine windows.",
+          "frame": "right-aligned90% width, medium framed speaker close-up",
+          "voice": "clear composed blue-grey capsule",
+          "line": {
+            "speaker": "Mira",
+            "text": "空じゃない。",
+            "type": "speech"
+          }
+        },
+        {
+          "beat": "The listener or the relevant object holds the same scene while the words settle.",
+          "view": "Physical paper with TWO graph axes: large exact horizontal labels 魔力 and 救助負荷. One flat and one rises. Ren eyes follow the difference without instant mastery.",
+          "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+          "voice": "無言"
+        },
+        {
+          "beat": "The reader receives one part of the explanation, before a response.",
+          "view": "ONLY Mira calm explaining face in SAME warm amber workshop AT NIGHT; no sunshine windows.",
+          "frame": "full-width LARGE borderless emotional close-up",
+          "voice": "clear composed blue-grey capsule",
+          "line": {
+            "speaker": "Mira",
+            "text": "測る箱が違う。",
+            "type": "speech"
+          }
+        }
+      ],
+      "visible_text": [
+        {
+          "text": "魔力",
+          "type": "raster label",
+          "review": "visually confirmed in generated image"
+        },
+        {
+          "text": "救助負荷",
+          "type": "raster label",
+          "review": "visually confirmed in generated image"
+        }
+      ],
+      "added_context_dialogue": false,
       "status": "generated",
-      "state": "Mira draws TWO clear simple graph axes on paper, one flat, one rises during rescuing; exact large horizontal labels 魔力 and 救助負荷 . Ren leans in, not instantly master explanation.",
-      "pacing": "understanding / recovery",
-      "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Edit ONLY background time and environmental lighting in FIRST image. Preserve Mira, Ren and Noa, both graphs and ALL exact readable lettering 魔力 / 救助負荷 and 空じゃない。測る箱が違う。 unchanged. Same brass-and-brick workshop at NIGHT as image2, dark indigo windows and warm amber lamps. Replace any bright daytime sky or sunlit exterior with dark night workshop wall/window. Do not alter measurements, faces, clothes, speech bubble shape, drawing quality or layout.",
-      "sha256": "fb8ca4c4447e4c28151f22ac385a5a865705109440adc128ad2ac4982217924d",
+      "generated": true,
+      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Mira draws TWO clear simple graph axes on paper, one flat, one rises during rescuing; exact large horizontal labels 魔力 and 救助負荷 . Ren leans in, not instantly master explanation.\n\nPanel 1, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira calm explaining face in SAME warm amber workshop AT NIGHT; no sunshine windows.. Voice / balloon: clear composed blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「空じゃない。」 (render contents only).\nPanel 2, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Physical paper with TWO graph axes: large exact horizontal labels 魔力 and 救助負荷. One flat and one rises. Ren eyes follow the difference without instant mastery.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 3, downward order. Frame: full-width LARGE borderless emotional close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira calm explaining face in SAME warm amber workshop AT NIGHT; no sunshine windows.. Voice / balloon: clear composed blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「測る箱が違う。」 (render contents only).\n",
       "references": [
-        "../episode-03/art/03-fist.png",
-        "../production/references/mira.png"
-      ]
+        "examples/zero-break/episode-09/art/04-other-axis.png",
+        "skills/webtoon/references/zero-break/varied-01.png"
+      ],
+      "sha256": "2bb96964fb3f362958199fcb51352121642bfd06b32426036f85f19ff694cfd5",
+      "provenance": "context-dialogue-v6",
+      "replaces": [
+        "other-axis"
+      ],
+      "visual_review": {
+        "status": "passed_native_image_review",
+        "source_sha256": "2bb96964fb3f362958199fcb51352121642bfd06b32426036f85f19ff694cfd5",
+        "chapter_validation": "../../../episode-09/validation.json",
+        "checks": [
+          "exact lettering and speakers",
+          "faces, hands, costumes, props",
+          "cause and effect, prior state, no premature reveals"
+        ]
+      }
     },
     {
       "id": "understand",
@@ -138,7 +201,10 @@
       "references": [
         "../episode-03/art/03-fist.png",
         "../production/references/mira.png"
-      ]
+      ],
+      "baseline_sha256": "5859cd6eca04f7b76cf05e04af9cf801efe247401f7dda502d662390c67824d9",
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
       "id": "siege",
@@ -158,7 +224,10 @@
       "references": [
         "../episode-03/art/03-fist.png",
         "../production/references/mira.png"
-      ]
+      ],
+      "baseline_sha256": "159ca72d403ab8a5727c2c786dfa2810293b76d959093de3cb7c04053cdeb4bb",
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
       "id": "cut-power",
@@ -178,38 +247,74 @@
       "references": [
         "../episode-03/art/03-fist.png",
         "../production/references/mira.png"
-      ]
+      ],
+      "baseline_sha256": "d9bb334f10f41356b293f12cd805404d3f3ac765c355f617e00796c8b5581ca4",
+      "widthPercent": 78,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
-      "id": "ventilator-stops",
-      "file": "08-ventilator-stops.png",
-      "crop": "portrait",
-      "shape": "right",
-      "aspect": "1024x1280",
-      "pause": 75,
+      "id": "e09-ventilator-stops",
+      "file": "v6-ventilator-stops.png",
+      "shape": "bleed",
+      "pause": 90,
+      "widthPercent": 100,
       "scene": "Inside simple medical alcove, OLD MAN brown vest grey beard saved in episode5 on cot uses brass bellows breathing assistance, motion slows; Mira notices distress, no death or gore.",
       "lines": [
         {
           "speaker": "Mira",
           "text": "呼吸の装置が…！",
-          "columns": [
-            "呼吸の",
-            "装置が…！"
-          ],
           "type": "speech"
         }
       ],
+      "panels": [
+        {
+          "beat": "Confirm the immediate context without adding a new event.",
+          "view": "Inside simple medical alcove, OLD MAN brown vest grey beard saved in episode5 on cot uses brass bellows breathing assistance, motion slows; Mira notices distress, no death or gore. Show the established spatial relationship, WITHOUT replaying earlier action or later results.",
+          "frame": "full-width wide framed establishing shot",
+          "voice": "無言"
+        },
+        {
+          "beat": "The reader receives one part of the explanation, before a response.",
+          "view": "ONLY Mira suddenly worried face in SAME NIGHT medical alcove after power cut.",
+          "frame": "right-aligned90% width, medium framed speaker close-up",
+          "voice": "urgent angular bold outer outline, continuous mouth tail",
+          "line": {
+            "speaker": "Mira",
+            "text": "呼吸の装置が…！",
+            "type": "speech"
+          }
+        },
+        {
+          "beat": "The listener or the relevant object holds the same scene while the words settle.",
+          "view": "Brass breathing bellows slowing beside SAME grey-bearded old man in brown vest on cot; no death/gore or restored breathing yet.",
+          "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+          "voice": "無言"
+        }
+      ],
+      "visible_text": [],
+      "added_context_dialogue": false,
       "status": "generated",
-      "state": "Inside simple medical alcove, OLD MAN brown vest grey beard saved in episode5 on cot uses brass bellows breathing assistance, motion slows; Mira notices distress, no death or gore.",
-      "pacing": "short action / reaction",
-      "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Inside simple medical alcove, OLD MAN brown vest grey beard saved in episode5 on cot uses brass bellows breathing assistance, motion slows; Mira notices distress, no death or gore.\n\nBalloon 1: speech, Mira, upper right. EXACT text: 呼吸の装置が…！ . Columns RIGHT to LEFT: 呼吸の / 装置が…！.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
-      "sha256": "30018f28486e75622454b213a3db2fb7061e1ab11526b04880e796d25956dbc1",
+      "generated": true,
+      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Inside simple medical alcove, OLD MAN brown vest grey beard saved in episode5 on cot uses brass bellows breathing assistance, motion slows; Mira notices distress, no death or gore.\n\nPanel 1, downward order. Frame: full-width wide framed establishing shot. Reader understands: Confirm the immediate context without adding a new event.. Visible camera subject / offscreen continuity: Inside simple medical alcove, OLD MAN brown vest grey beard saved in episode5 on cot uses brass bellows breathing assistance, motion slows; Mira notices distress, no death or gore. Show the established spatial relationship, WITHOUT replaying earlier action or later results.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 2, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira suddenly worried face in SAME NIGHT medical alcove after power cut.. Voice / balloon: urgent angular bold outer outline, continuous mouth tail.\nONLY speaker: Mira. EXACT text: 「呼吸の装置が…！」 (render contents only).\nPanel 3, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Brass breathing bellows slowing beside SAME grey-bearded old man in brown vest on cot; no death/gore or restored breathing yet.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\n",
       "references": [
-        "../episode-03/art/03-fist.png",
-        "../production/references/mira.png",
-        "../episode-05/art/10-old-man.png"
-      ]
+        "examples/zero-break/episode-09/art/08-ventilator-stops.png",
+        "skills/webtoon/references/zero-break/varied-01.png"
+      ],
+      "sha256": "5e94478c19506514f9b1c9ab0c00dec91eacd510ae7137ce3616ff17577e9dda",
+      "provenance": "context-dialogue-v6",
+      "replaces": [
+        "ventilator-stops"
+      ],
+      "visual_review": {
+        "status": "passed_native_image_review",
+        "source_sha256": "5e94478c19506514f9b1c9ab0c00dec91eacd510ae7137ce3616ff17577e9dda",
+        "chapter_validation": "../../../episode-09/validation.json",
+        "checks": [
+          "exact lettering and speakers",
+          "faces, hands, costumes, props",
+          "cause and effect, prior state, no premature reveals"
+        ]
+      }
     },
     {
       "id": "check-patient",
@@ -231,39 +336,84 @@
         "../production/references/mira.png",
         "../production/references/noa.png",
         "art/08-ventilator-stops.png"
-      ]
+      ],
+      "baseline_sha256": "1f48c44807972219fb1bacdcbd7153f210b2fd3a9d4486c0292718a1c28a6dad",
+      "widthPercent": 92,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
-      "id": "isolate-circuit",
-      "file": "10-isolate-circuit.png",
-      "crop": "portrait",
-      "shape": "right",
-      "aspect": "1024x1280",
-      "pause": 100,
+      "id": "e09-isolate-circuit",
+      "file": "v6-isolate-circuit.png",
+      "shape": "bleed",
+      "pause": 110,
+      "widthPercent": 100,
       "scene": "Noa connects ONLY isolated rescue-core circuit to ventilator, physical copper leads and safety switch visible; no connection to city main grid or new form. Ren keeps one bare hand on terminal.",
       "lines": [
         {
           "speaker": "Noa",
-          "text": "街の線とは、切り離す。",
-          "columns": [
-            "街の線とは、",
-            "切り離す。"
-          ],
+          "text": "街の線とは、",
+          "type": "speech"
+        },
+        {
+          "speaker": "Noa",
+          "text": "切り離す。",
           "type": "speech"
         }
       ],
+      "panels": [
+        {
+          "beat": "The reader receives one part of the explanation, before a response.",
+          "view": "ONLY Noa focused face in SAME dim NIGHT workshop, orange goggles and gloves, not outside in sunlight.",
+          "frame": "right-aligned90% width, medium framed speaker close-up",
+          "voice": "calm practical ordinary capsule",
+          "line": {
+            "speaker": "Noa",
+            "text": "街の線とは、",
+            "type": "speech"
+          }
+        },
+        {
+          "beat": "The listener or the relevant object holds the same scene while the words settle.",
+          "view": "Orange-gloved hands connect physically ISOLATED rescue-core copper circuit ONLY to ventilator. Ren BARE hand on terminal at edge. No city-grid connection or new form, device not moving yet.",
+          "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+          "voice": "無言"
+        },
+        {
+          "beat": "The reader receives one part of the explanation, before a response.",
+          "view": "ONLY Noa focused face in SAME dim NIGHT workshop, orange goggles and gloves, not outside in sunlight.",
+          "frame": "full-width LARGE borderless emotional close-up",
+          "voice": "calm practical ordinary capsule",
+          "line": {
+            "speaker": "Noa",
+            "text": "切り離す。",
+            "type": "speech"
+          }
+        }
+      ],
+      "visible_text": [],
+      "added_context_dialogue": false,
       "status": "generated",
-      "state": "Noa connects ONLY isolated rescue-core circuit to ventilator, physical copper leads and safety switch visible; no connection to city main grid or new form. Ren keeps one bare hand on terminal.",
-      "pacing": "short action / reaction",
-      "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Noa connects ONLY isolated rescue-core circuit to ventilator, physical copper leads and safety switch visible; no connection to city main grid or new form. Ren keeps one bare hand on terminal.\n\nBalloon 1: speech, Noa, upper right. EXACT text: 街の線とは、切り離す。 . Columns RIGHT to LEFT: 街の線とは、 / 切り離す。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form. The elderly survivor and breathing device match art/08-ventilator-stops.png: GREY beard and BROWN vest, lying on the same cot, brass mouth mask and BROWN LEATHER bellows connected by one hose. Keep the physical connection from isolated copper lead through a brass actuator to the bellows. No change of patient or ventilator design. Ren provides sustained power at the adjacent terminal; he cannot simultaneously be somewhere else.",
-      "sha256": "34591943bfaa520f322d465421adbc2c52ec786729a440b4206734be44a13517",
+      "generated": true,
+      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Noa connects ONLY isolated rescue-core circuit to ventilator, physical copper leads and safety switch visible; no connection to city main grid or new form. Ren keeps one bare hand on terminal.\n\nPanel 1, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Noa focused face in SAME dim NIGHT workshop, orange goggles and gloves, not outside in sunlight.. Voice / balloon: calm practical ordinary capsule.\nONLY speaker: Noa. EXACT text: 「街の線とは、」 (render contents only).\nPanel 2, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Orange-gloved hands connect physically ISOLATED rescue-core copper circuit ONLY to ventilator. Ren BARE hand on terminal at edge. No city-grid connection or new form, device not moving yet.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 3, downward order. Frame: full-width LARGE borderless emotional close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Noa focused face in SAME dim NIGHT workshop, orange goggles and gloves, not outside in sunlight.. Voice / balloon: calm practical ordinary capsule.\nONLY speaker: Noa. EXACT text: 「切り離す。」 (render contents only).\n",
       "references": [
-        "../episode-03/art/03-fist.png",
-        "../production/references/mira.png",
-        "../production/references/noa.png",
-        "art/08-ventilator-stops.png"
-      ]
+        "examples/zero-break/episode-09/art/10-isolate-circuit.png",
+        "skills/webtoon/references/zero-break/varied-01.png"
+      ],
+      "sha256": "3507f621f650b06244aacd81e43e223565484f9b9bdf056671be05f3482cdfb6",
+      "provenance": "context-dialogue-v6",
+      "replaces": [
+        "isolate-circuit"
+      ],
+      "visual_review": {
+        "status": "passed_native_image_review",
+        "source_sha256": "3507f621f650b06244aacd81e43e223565484f9b9bdf056671be05f3482cdfb6",
+        "chapter_validation": "../../../episode-09/validation.json",
+        "checks": [
+          "exact lettering and speakers",
+          "faces, hands, costumes, props",
+          "cause and effect, prior state, no premature reveals"
+        ]
+      }
     },
     {
       "id": "give-power",
@@ -294,7 +444,10 @@
         "../episode-03/art/03-fist.png",
         "../production/references/mira.png",
         "art/08-ventilator-stops.png"
-      ]
+      ],
+      "baseline_sha256": "c5b1577b60939bbc9dc901fab1c308a23de8d3199a1b8e5f6e288f2dd928267d",
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
       "id": "rook-guard",
@@ -315,7 +468,10 @@
         "../episode-03/art/03-fist.png",
         "../production/references/mira.png",
         "../v5/art/a14-rejection.png"
-      ]
+      ],
+      "baseline_sha256": "a5faefbfaaea0eb508628cc64f1eeafc4908755b4ad105310a3eaf3a267e1e3e",
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
       "id": "breath-cue",
@@ -336,38 +492,74 @@
         "../episode-03/art/03-fist.png",
         "../production/references/mira.png",
         "art/08-ventilator-stops.png"
-      ]
+      ],
+      "baseline_sha256": "b42ce2347a4782ba23a2c6ddd1209019c7489c3317715a52c41c67b0bc634e8a",
+      "widthPercent": 80,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
-      "id": "breath-returns",
-      "file": "14-breath-returns.png",
-      "crop": "portrait",
-      "shape": "right",
-      "aspect": "1024x1280",
-      "pause": 190,
+      "id": "e09-breath-returns",
+      "file": "v6-breath-returns.png",
+      "shape": "bleed",
+      "pause": 210,
+      "widthPercent": 100,
       "scene": "FIRST clear elderly man inhales, chest visibly lifts under blanket, hand relaxes; Mira relieved nearby, Ren remains at powered circuit.",
       "lines": [
         {
           "speaker": "Mira",
           "text": "息が、戻った。",
-          "columns": [
-            "息が、",
-            "戻った。"
-          ],
           "type": "speech"
         }
       ],
+      "panels": [
+        {
+          "beat": "Confirm the immediate context without adding a new event.",
+          "view": "FIRST clear elderly man inhales, chest visibly lifts under blanket, hand relaxes; Mira relieved nearby, Ren remains at powered circuit. Show the established spatial relationship, WITHOUT replaying earlier action or later results.",
+          "frame": "full-width wide framed establishing shot",
+          "voice": "無言"
+        },
+        {
+          "beat": "The reader receives one part of the explanation, before a response.",
+          "view": "ONLY Mira relieved face in SAME NIGHT alcove, ordinary blue-white-gold dress.",
+          "frame": "right-aligned90% width, medium framed speaker close-up",
+          "voice": "gentle soft blue-grey contour",
+          "line": {
+            "speaker": "Mira",
+            "text": "息が、戻った。",
+            "type": "speech"
+          }
+        },
+        {
+          "beat": "The listener or the relevant object holds the same scene while the words settle.",
+          "view": "Same grey-bearded old man FIRST visibly inhales, blanket chest lifts, fingers relax. Ren STILL supplies isolated circuit offscreen, has not stopped.",
+          "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+          "voice": "無言"
+        }
+      ],
+      "visible_text": [],
+      "added_context_dialogue": false,
       "status": "generated",
-      "state": "FIRST clear elderly man inhales, chest visibly lifts under blanket, hand relaxes; Mira relieved nearby, Ren remains at powered circuit.",
-      "pacing": "understanding / recovery",
-      "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: FIRST clear elderly man inhales, chest visibly lifts under blanket, hand relaxes; Mira relieved nearby, Ren remains at powered circuit.\n\nBalloon 1: speech, Mira, upper right. EXACT text: 息が、戻った。 . Columns RIGHT to LEFT: 息が、 / 戻った。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form. The elderly survivor and breathing device match art/08-ventilator-stops.png: GREY beard and BROWN vest, lying on the same cot, brass mouth mask and BROWN LEATHER bellows connected by one hose. Keep the physical connection from isolated copper lead through a brass actuator to the bellows. No change of patient or ventilator design. Ren provides sustained power at the adjacent terminal; he cannot simultaneously be somewhere else.",
-      "sha256": "fd9ae266de0b6708627367363307db68fec71715591e4446313de08154b71cca",
+      "generated": true,
+      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): FIRST clear elderly man inhales, chest visibly lifts under blanket, hand relaxes; Mira relieved nearby, Ren remains at powered circuit.\n\nPanel 1, downward order. Frame: full-width wide framed establishing shot. Reader understands: Confirm the immediate context without adding a new event.. Visible camera subject / offscreen continuity: FIRST clear elderly man inhales, chest visibly lifts under blanket, hand relaxes; Mira relieved nearby, Ren remains at powered circuit. Show the established spatial relationship, WITHOUT replaying earlier action or later results.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 2, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira relieved face in SAME NIGHT alcove, ordinary blue-white-gold dress.. Voice / balloon: gentle soft blue-grey contour.\nONLY speaker: Mira. EXACT text: 「息が、戻った。」 (render contents only).\nPanel 3, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Same grey-bearded old man FIRST visibly inhales, blanket chest lifts, fingers relax. Ren STILL supplies isolated circuit offscreen, has not stopped.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\n",
       "references": [
-        "../episode-03/art/03-fist.png",
-        "../production/references/mira.png",
-        "art/08-ventilator-stops.png"
-      ]
+        "examples/zero-break/episode-09/art/14-breath-returns.png",
+        "skills/webtoon/references/zero-break/varied-01.png"
+      ],
+      "sha256": "a090fdc258c6b8ce0090fc1dbbd51f7a662503e8b44a5e4c55b59700b5326530",
+      "provenance": "context-dialogue-v6",
+      "replaces": [
+        "breath-returns"
+      ],
+      "visual_review": {
+        "status": "passed_native_image_review",
+        "source_sha256": "a090fdc258c6b8ce0090fc1dbbd51f7a662503e8b44a5e4c55b59700b5326530",
+        "chapter_validation": "../../../episode-09/validation.json",
+        "checks": [
+          "exact lettering and speakers",
+          "faces, hands, costumes, props",
+          "cause and effect, prior state, no premature reveals"
+        ]
+      }
     },
     {
       "id": "small-line",
@@ -398,7 +590,10 @@
         "../episode-03/art/03-fist.png",
         "../production/references/mira.png",
         "../production/references/noa.png"
-      ]
+      ],
+      "baseline_sha256": "5137fbbd78aab2c608249b8d911eb0952dea502dff10f6bcae5b55602cbb1d2a",
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
       "id": "signal",
@@ -419,7 +614,10 @@
         "../episode-03/art/03-fist.png",
         "../production/references/mira.png",
         "../production/references/noa.png"
-      ]
+      ],
+      "baseline_sha256": "6e5573458d69cff9e67dfd60cf744b4ff2a36bdc0ee9d81fb65e1f7e0bddf67f",
+      "widthPercent": 82,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
       "id": "under-palace",
@@ -439,41 +637,90 @@
       "references": [
         "../episode-03/art/03-fist.png",
         "../production/references/mira.png"
-      ]
+      ],
+      "baseline_sha256": "9b2d47bb83cbbdc4f3be215187ed3b01c27105f11dc80769253d1626fe5c9ec9",
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately"
     },
     {
-      "id": "location",
-      "file": "18-location.png",
-      "crop": "portrait",
-      "shape": "right",
-      "aspect": "1024x1280",
+      "id": "e09-location",
+      "file": "v6-location.png",
+      "shape": "bleed",
       "pause": 210,
+      "widthPercent": 100,
       "scene": "Mira holds traced map while Ren still powers ventilator, eyes resolved. Rook keeps protective door, Noa watches line.",
       "lines": [
         {
           "speaker": "Mira",
-          "text": "ここが、消えた街区の行き先。",
-          "columns": [
-            "ここが、",
-            "消えた街区の",
-            "行き先。"
-          ],
+          "text": "ここが、",
+          "type": "speech"
+        },
+        {
+          "speaker": "Mira",
+          "text": "消えた街区の行き先。",
           "type": "speech"
         }
       ],
+      "panels": [
+        {
+          "beat": "The reader receives one part of the explanation, before a response.",
+          "view": "ONLY Mira resolved face in SAME NIGHT workshop after route revealed on map.",
+          "frame": "right-aligned90% width, medium framed speaker close-up",
+          "voice": "quiet serious blue-grey capsule",
+          "line": {
+            "speaker": "Mira",
+            "text": "ここが、",
+            "type": "speech"
+          }
+        },
+        {
+          "beat": "The listener or the relevant object holds the same scene while the words settle.",
+          "view": "Mira fingertip traces SAME map directly underneath palace, EXACT large existing label 王宮直下. Ren keeps ventilator powered offscreen, Rook guards door. No new chamber victims or villain yet.",
+          "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+          "voice": "無言"
+        },
+        {
+          "beat": "The reader receives one part of the explanation, before a response.",
+          "view": "ONLY Mira resolved face in SAME NIGHT workshop after route revealed on map.",
+          "frame": "full-width LARGE borderless emotional close-up",
+          "voice": "quiet serious blue-grey capsule",
+          "line": {
+            "speaker": "Mira",
+            "text": "消えた街区の行き先。",
+            "type": "speech"
+          }
+        }
+      ],
+      "visible_text": [
+        {
+          "text": "王宮直下",
+          "type": "raster label",
+          "review": "visually confirmed in generated image"
+        }
+      ],
+      "added_context_dialogue": false,
       "status": "generated",
-      "state": "Mira holds traced map while Ren still powers ventilator, eyes resolved. Rook keeps protective door, Noa watches line.",
-      "pacing": "understanding / recovery",
-      "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Mira holds traced map while Ren still powers ventilator, eyes resolved. Rook keeps protective door, Noa watches line.\n\nBalloon 1: speech, Mira, upper right. EXACT text: ここが、消えた街区の行き先。 . Columns RIGHT to LEFT: ここが、 / 消えた街区の / 行き先。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form. The elderly survivor and breathing device match art/08-ventilator-stops.png: GREY beard and BROWN vest, lying on the same cot, brass mouth mask and BROWN LEATHER bellows connected by one hose. Keep the physical connection from isolated copper lead through a brass actuator to the bellows. No change of patient or ventilator design. Ren provides sustained power at the adjacent terminal; he cannot simultaneously be somewhere else.",
-      "sha256": "e34430945c3692f1b2a214fb52f501e6a01427a2f30ddef90ccb45b7e2bb9e88",
+      "generated": true,
+      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Mira holds traced map while Ren still powers ventilator, eyes resolved. Rook keeps protective door, Noa watches line.\n\nPanel 1, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira resolved face in SAME NIGHT workshop after route revealed on map.. Voice / balloon: quiet serious blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「ここが、」 (render contents only).\nPanel 2, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Mira fingertip traces SAME map directly underneath palace, EXACT large existing label 王宮直下. Ren keeps ventilator powered offscreen, Rook guards door. No new chamber victims or villain yet.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 3, downward order. Frame: full-width LARGE borderless emotional close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira resolved face in SAME NIGHT workshop after route revealed on map.. Voice / balloon: quiet serious blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「消えた街区の行き先。」 (render contents only).\n",
       "references": [
-        "../episode-03/art/03-fist.png",
-        "../production/references/mira.png",
-        "../v5/art/a14-rejection.png",
-        "../production/references/noa.png",
-        "art/08-ventilator-stops.png"
-      ]
+        "examples/zero-break/episode-09/art/18-location.png",
+        "skills/webtoon/references/zero-break/varied-01.png"
+      ],
+      "sha256": "5563e7e10cbed9e85c6a44cb3b1c196ef2338bc246f2e865a365303dd0ce9ce0",
+      "provenance": "context-dialogue-v6",
+      "replaces": [
+        "location"
+      ],
+      "visual_review": {
+        "status": "passed_native_image_review",
+        "source_sha256": "5563e7e10cbed9e85c6a44cb3b1c196ef2338bc246f2e865a365303dd0ce9ce0",
+        "chapter_validation": "../../../episode-09/validation.json",
+        "checks": [
+          "exact lettering and speakers",
+          "faces, hands, costumes, props",
+          "cause and effect, prior state, no premature reveals"
+        ]
+      }
     }
   ],
   "revealPairs": [
@@ -493,5 +740,7 @@
       "minDistance": 900,
       "mode": "trace before readable palace location"
     }
-  ]
+  ],
+  "panel_count": 28,
+  "baseline": "../production/feedback-v6/baseline/episode-09.json"
 }

@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-06",
+  "scope": "rescue conversation comparison sample only",
+  "feedback_status": "approved_panel_size_revision",
+  "browser": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "revised": {
+        "width": 390,
+        "height": 844,
+        "overflow": false,
+        "visibleImages": [
+          {
+            "file": "after-01.png",
+            "loaded": true,
+            "width": 390,
+            "height": 1170
+          },
+          {
+            "file": "after-02.png",
+            "loaded": true,
+            "width": 390,
+            "height": 1170
+          }
+        ],
+        "dialogueDOM": 0,
+        "comicHeight": 2505.5
+      },
+      "before": {
+        "visible": true,
+        "afterHidden": true,
+        "overflow": false,
+        "imageWidth": 390
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "revised": {
+        "width": 360,
+        "height": 800,
+        "overflow": false,
+        "visibleImages": [
+          {
+            "file": "after-01.png",
+            "loaded": true,
+            "width": 360,
+            "height": 1080
+          },
+          {
+            "file": "after-02.png",
+            "loaded": true,
+            "width": 360,
+            "height": 1080
+          }
+        ],
+        "dialogueDOM": 0,
+        "comicHeight": 2325.5
+      },
+      "before": {
+        "visible": true,
+        "afterHidden": true,
+        "overflow": false,
+        "imageWidth": 360
+      }
+    }
+  ],
+  "raster_visual_review": {
+    "status": "checked_at_360_and_390_css_px",
+    "exact_dialogue": "ありがとう。私はミラ。この国の王女よ。レンだ。無事なら、それで。",
+    "result": "Correct upright vertical Japanese; exact dialogue preserved across five speaking panels; three silent context/reaction panels. Faces, eyelines and unarmored clothes remain consistent. No new character, guardian, armor or crown crest.",
+    "review_files": [
+      "after-360.png",
+      "after-390.png",
+      "before-360.png",
+      "before-390.png"
+    ]
+  },
+  "narrative_review": {
+    "panel_count": 8,
+    "image_files": 2,
+    "location": "same lower cargo plaza after landing",
+    "sequence": [
+      "confirm safety",
+      "thanks",
+      "relief",
+      "Mira name",
+      "princess information",
+      "Ren reaction",
+      "Ren name",
+      "relieved response"
+    ],
+    "result": "Visual listening reactions inserted; full cast appears only in orientation panel; speaker and attention close-ups carry the conversation.",
+    "user_reading_comfort": "not_yet_evaluated"
+  },
+  "limitations": [
+    "Full episode has not been revised or revalidated.",
+    "Physical-device testing was not performed."
+  ],
+  "panel_size_revision": {
+    "date": "2026-10-06",
+    "feedback_status": "user_approved",
+    "browser": [
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "revised": {
+          "width": 390,
+          "height": 844,
+          "overflow": false,
+          "visibleImages": [
+            {
+              "file": "varied-01.png",
+              "loaded": true,
+              "width": 390,
+              "height": 1170
+            },
+            {
+              "file": "varied-02.png",
+              "loaded": true,
+              "width": 390,
+              "height": 1169.453125
+            }
+          ],
+          "dialogueDOM": 0,
+          "comicHeight": 2504.953125
+        },
+        "before": {
+          "visible": true,
+          "afterHidden": true,
+          "overflow": false,
+          "imageWidth": 390
+        }
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 800
+        },
+        "revised": {
+          "width": 360,
+          "height": 800,
+          "overflow": false,
+          "visibleImages": [
+            {
+              "file": "varied-01.png",
+              "loaded": true,
+              "width": 360,
+              "height": 1080
+            },
+            {
+              "file": "varied-02.png",
+              "loaded": true,
+              "width": 360,
+              "height": 1079.5
+            }
+          ],
+          "dialogueDOM": 0,
+          "comicHeight": 2325
+        },
+        "before": {
+          "visible": true,
+          "afterHidden": true,
+          "overflow": false,
+          "imageWidth": 360
+        }
+      }
+    ],
+    "comparison_buttons": [
+      "varied_8_panels",
+      "initial_8_panels",
+      "original_1_panel"
+    ],
+    "visual_review": {
+      "status": "checked_at_360_and_390_css_px",
+      "files": [
+        "varied-360.png",
+        "varied-390.png"
+      ],
+      "text": "Original exact dialogue and upright vertical column order retained.",
+      "layout": "Large shared orientation, inset right-aligned thanks, shallow left eye reaction, large Mira introduction; medium hand detail, shallow eye reaction, inset Ren introduction, large borderless final response.",
+      "continuity": "Same place, unarmored clothes, bare hands and eye direction preserved.",
+      "user_reading_comfort": "positive_user_feedback"
+    },
+    "user_feedback": {
+      "date": "2026-10-06",
+      "quote": "めちゃくちゃ良いぞ！",
+      "scope": "rescue conversation 8-panel revision with varied panel sizes and borders",
+      "status": "user_approved"
+    }
+  },
+  "speech_balloon_revision": {
+    "date": "2026-10-06",
+    "feedback_status": "trial_not_user_approved",
+    "visual_review": "Original generated images inspected: exact vertical dialogue, speaker tails, contour differences, preserved frame order and character/prop state.",
+    "balloon_types": [
+      "ordinary oval",
+      "rounded capsule",
+      "soft organic / wavering audible voice",
+      "thick jagged shout",
+      "cloud with thought dots"
+    ],
+    "frame_layout": "Prior approved panel widths, order and borderless ending retained; image assets keep matching aspect ratio.",
+    "mobile_browser_visual_review": "Not repeated for the new balloon edit images. Prior panel-size version was checked at 360 and 390 CSS px.",
+    "user_reading_comfort": "not_yet_evaluated"
+  }
+}

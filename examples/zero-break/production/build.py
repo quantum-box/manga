@@ -21,6 +21,10 @@ CSS = """*{box-sizing:border-box}body{margin:0;background:#18202b;color:#25364b;
 def build_episode(number):
     directory = ROOT / f"episode-{number:02d}"
     manifest = json.loads((directory / "manifest.json").read_text())
+    if manifest.get('version') == 'context-dialogue-v6':
+        from feedback_v6 import build
+        build(number)
+        return json.loads((directory / 'manifest.json').read_text())
     records = []
     for shot in manifest["shots"]:
         saved = directory / "generation" / (Path(shot["file"]).stem + ".json")
@@ -74,14 +78,17 @@ def build_episode(number):
 numbers = list(map(int, sys.argv[1:])) or list(range(2, 11))
 for number in numbers:
     build_episode(number)
-links = ['<a href="v5/index.html">第1話　最弱判定、最強の一歩。<small>完成版・縦書き30場面</small></a>']
-for number in range(2, 11):
-    directory = ROOT / f"episode-{number:02d}"
+links = []
+for number in range(1, 11):
+    directory = ROOT / ('v5' if number == 1 else f"episode-{number:02d}")
     manifest = json.loads((directory / "manifest.json").read_text())
     validation = directory / "validation.json"
     complete = validation.is_file() and json.loads(validation.read_text()).get("visualReview", {}).get("status") == "passed"
-    status = f'完成版・縦書き{len(manifest["shots"])}場面' if complete else "制作中"
-    links.append(f'<a href="episode-{number:02d}/index.html">第{number}話　{html.escape(manifest["title"])}<small>{status}</small></a>')
+    if manifest.get('version') == 'context-dialogue-v6':
+        status = f'会話・コマ割り改稿版 · {manifest["panel_count"]}コマ · ブラウザ再確認待ち'
+    else:
+        status = f'完成版・縦書き{len(manifest["shots"])}場面' if complete else "制作中"
+    links.append(f'<a href="{directory.name}/index.html">第{number}話　{html.escape(manifest.get("title","最弱判定、最強の一歩。"))}<small>{status}</small></a>')
 (ROOT / "chapters.html").write_text(
     f'<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ゼロ・ブレイク 第1〜10話</title><style>{CSS}</style><main class="catalog"><h1>ゼロ・ブレイク</h1><p>異世界転生 × スーパーヒーロー<br>全50話の物語、最初の10話。</p><nav>'
     + "".join(links) + '</nav><p><a href="series/index.html" style="color:#abdfff">全50話の場面脚本を読む</a></p></main></html>'

@@ -1,0 +1,63 @@
+{
+  "id": "e01-catch",
+  "episode": 1,
+  "file": "v6-catch.png",
+  "method": "reused skill reference (original built-in image_gen)",
+  "original_output": "/Users/takanorifukuyama/.codex/worktrees/4726/manga/skills/webtoon/references/zero-break/balloon-shout.png",
+  "sha256": "b1e3efc1a8356b4b72005066acc515d7948c8ccafe10f0ccc7deb92a71fa419b",
+  "width": 1122,
+  "height": 1402,
+  "prompt": "Use case: precise-object-edit / emphatic speech-balloon outline.\nImage1 is the EXACT target: Ren catching Mira in midair. Image2 is a PHOTO supplied ONLY as a reference for the DENSE thick outward jagged/brush rim on the loud balloon. Do not copy its dialogue, characters, photo or layout.\nChange ONLY Ren's existing shout balloon at upper right. Preserve all artwork, faces, bare hands, the supported Mira, clothing, red scarf, setting, framing and composition. Same roughly 4:5 portrait aspect. Keep the exact Japanese つかまって！ in ONE upright top-to-bottom vertical column, large legible printed manga gothic.\nReplace its thin simple starburst with an emphatic white shout balloon surrounded by a bold dark charcoal dense outward tapered jagged/brush rim, like stressed loud comic speech. Variation of thick and thin strokes around the perimeter, roughly 12-20px visual rim at 1024px-wide art, WHITE inner area and generous text inset. A clear pointed sharp speech tail connects toward REN'S OPEN MOUTH, no dots. The outline communicates a loud urgent safety instruction during a rescue, not a villain aura or interior thought.\nFit the rim into the existing balloon area; do not cover hair, face or hand, and do not enlarge it over Mira. Avoid glow, red fill, blood, extra text, labels, new balloons or watermark. The original black panel frame stays unchanged. Everything outside this balloon is an invariant.\n",
+  "references": [
+    {
+      "path": "skills/webtoon/references/zero-break/balloon-shout.png",
+      "sha256": "b1e3efc1a8356b4b72005066acc515d7948c8ccafe10f0ccc7deb92a71fa419b"
+    }
+  ],
+  "replaces": [
+    "catch"
+  ],
+  "panels": [
+    {
+      "beat": "Ren catches Mira before they reach the canvas.",
+      "view": "Ren BARE arms support Mira back and knees in midair, red scarf streams, awning below.",
+      "frame": "medium full-width action frame",
+      "voice": "thick jagged urgent shout with tail to mouth",
+      "line": {
+        "speaker": "Ren",
+        "text": "つかまって！",
+        "type": "speech"
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_image_review",
+    "source_sha256": "b1e3efc1a8356b4b72005066acc515d7948c8ccafe10f0ccc7deb92a71fa419b",
+    "chapter_validation": "../../../v5/validation.json",
+    "checks": [
+      "exact lettering and speakers",
+      "faces, hands, costumes, props",
+      "cause and effect, prior state, no premature reveals"
+    ]
+  },
+  "mobile_browser_review": "pending",
+  "assembly_prompt": "Use case: precise-object-edit / emphatic speech-balloon outline.\nImage1 is the EXACT target: Ren catching Mira in midair. Image2 is a PHOTO supplied ONLY as a reference for the DENSE thick outward jagged/brush rim on the loud balloon. Do not copy its dialogue, characters, photo or layout.\nChange ONLY Ren's existing shout balloon at upper right. Preserve all artwork, faces, bare hands, the supported Mira, clothing, red scarf, setting, framing and composition. Same roughly 4:5 portrait aspect. Keep the exact Japanese つかまって！ in ONE upright top-to-bottom vertical column, large legible printed manga gothic.\nReplace its thin simple starburst with an emphatic white shout balloon surrounded by a bold dark charcoal dense outward tapered jagged/brush rim, like stressed loud comic speech. Variation of thick and thin strokes around the perimeter, roughly 12-20px visual rim at 1024px-wide art, WHITE inner area and generous text inset. A clear pointed sharp speech tail connects toward REN'S OPEN MOUTH, no dots. The outline communicates a loud urgent safety instruction during a rescue, not a villain aura or interior thought.\nFit the rim into the existing balloon area; do not cover hair, face or hand, and do not enlarge it over Mira. Avoid glow, red fill, blood, extra text, labels, new balloons or watermark. The original black panel frame stays unchanged. Everything outside this balloon is an invariant.",
+  "source_generation_record": "skills/webtoon/references/zero-break/generation.json",
+  "historical_generation": {
+    "target": "balloon-shout.png",
+    "edit_target": "balloon-shout-before.png",
+    "prompt": "Use case: precise-object-edit / emphatic speech-balloon outline.\nImage1 is the EXACT target: Ren catching Mira in midair. Image2 is a PHOTO supplied ONLY as a reference for the DENSE thick outward jagged/brush rim on the loud balloon. Do not copy its dialogue, characters, photo or layout.\nChange ONLY Ren's existing shout balloon at upper right. Preserve all artwork, faces, bare hands, the supported Mira, clothing, red scarf, setting, framing and composition. Same roughly 4:5 portrait aspect. Keep the exact Japanese つかまって！ in ONE upright top-to-bottom vertical column, large legible printed manga gothic.\nReplace its thin simple starburst with an emphatic white shout balloon surrounded by a bold dark charcoal dense outward tapered jagged/brush rim, like stressed loud comic speech. Variation of thick and thin strokes around the perimeter, roughly 12-20px visual rim at 1024px-wide art, WHITE inner area and generous text inset. A clear pointed sharp speech tail connects toward REN'S OPEN MOUTH, no dots. The outline communicates a loud urgent safety instruction during a rescue, not a villain aura or interior thought.\nFit the rim into the existing balloon area; do not cover hair, face or hand, and do not enlarge it over Mira. Avoid glow, red fill, blood, extra text, labels, new balloons or watermark. The original black panel frame stays unchanged. Everything outside this balloon is an invariant.\n",
+    "prompt_file": "prompt-balloon-shout.txt",
+    "reference_roles": [
+      "existing manga: edit target",
+      "user photo IMG_5297.HEIC: balloon contour reference only, kept outside the distributed skill"
+    ],
+    "actual_dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "sha256": "b1e3efc1a8356b4b72005066acc515d7948c8ccafe10f0ccc7deb92a71fa419b",
+    "generated_origin": "/Users/takanorifukuyama/.codex/generated_images/01a10f99-efcb-7371-8c20-e01aa60f7ed9/exec-854d4dd9-8aec-4f47-876c-f3225404785a.png"
+  },
+  "reference_scope": "reuse source hashes; original generation input roles preserved in historical_generation; historical input hashes not recorded"
+}

@@ -1,18 +1,658 @@
 {
-  "status": "passed",
-  "checks": [
+  "edition": "context-dialogue-v6",
+  "status": "passed_export",
+  "method": "native canvas layout from manifest; no HTML or browser rendering",
+  "sourceArtworkUnchanged": true,
+  "sourceHashes": [
     {
-      "width": 390,
-      "height": 19737,
-      "allScrollTilesMatch": true,
-      "tiles": 24
+      "id": "memory",
+      "file": "01-memory.png",
+      "sha256": "76769d9ab0904a5d0e0fd061878b12b554a064fd845b79e37c0bf73eccdc3c65"
     },
     {
-      "width": 360,
-      "height": 18246,
-      "allScrollTilesMatch": true,
-      "tiles": 23
+      "id": "e01-waking",
+      "file": "v6-waking.png",
+      "sha256": "51bcc4c360965220d3abc579a8e97c236677168df83298b35c4af60890e79739"
+    },
+    {
+      "id": "footsteps",
+      "file": "a01-footsteps.png",
+      "sha256": "13b51bbd3a35983a0affb34c9067fcb88097c299fc09159cfc61b4cecb81d111"
+    },
+    {
+      "id": "knight_arrives",
+      "file": "a02-knight-arrives.png",
+      "sha256": "ee2e3133608937864e3de6cae8a283921b14a3101b6c81fe17106979750a256a"
+    },
+    {
+      "id": "e01-greeting",
+      "file": "v6-greeting.png",
+      "sha256": "e3c3055b2a959fe76f308fa8480b37685253d1714212679f500e169892c5ac6c"
+    },
+    {
+      "id": "e01-rook-name",
+      "file": "v6-rook-name.png",
+      "sha256": "004d437e5af4bde6794cfd66370764ce74f39e38fc7237a9dbd4409253852e57"
+    },
+    {
+      "id": "e01-orientation",
+      "file": "v6-orientation.png",
+      "sha256": "7d1657e5667fa6c8ab68f69b358e64c61372784134c6ec38102716dc1b13352d"
+    },
+    {
+      "id": "e01-instruction",
+      "file": "v6-instruction.png",
+      "sha256": "15c626e0694516e0e8e394be9bad282d13414ad0b4c28e33865fb8126a912bbc"
+    },
+    {
+      "id": "hesitation",
+      "file": "a08-hesitation.png",
+      "sha256": "1ad72b88d5a73eb0c59eaa593188ce3a88c4fd3ed0c88f431387d88b43de55ae"
+    },
+    {
+      "id": "touch",
+      "file": "a09-touch.png",
+      "sha256": "87293897433c808cab7f97eadda236dd974c552c35cc450d23af8924499950c5"
+    },
+    {
+      "id": "e01-waiting",
+      "file": "v6-waiting.png",
+      "sha256": "1a6fd2e835edbf559b411844a2b99e7cb107a24e1086de4c2d8e2c9eac2d57a0"
+    },
+    {
+      "id": "result",
+      "file": "a11-result.png",
+      "sha256": "49472d5d6da7558e4f20d5a18717971b6bcba2c43ba6c361db2462e804d3ea89"
+    },
+    {
+      "id": "e01-confirmation",
+      "file": "v6-confirmation.png",
+      "sha256": "0af6be8efce8e482887963b255b9d6770c6c6ac68172b40209127692d498b182"
+    },
+    {
+      "id": "stakes",
+      "file": "a13-stakes.png",
+      "sha256": "c346ba513ac0706a3198913e0a7a3195666ec818ee3187f538e0d40bb24de648"
+    },
+    {
+      "id": "rejection",
+      "file": "a14-rejection.png",
+      "sha256": "a08007e2d78a4d1acdb6f50ca8c03ccfeedc3d429f1fb6aa6a9af6f32c1c9b6f"
+    },
+    {
+      "id": "zero_reaction",
+      "file": "a15-zero-reaction.png",
+      "sha256": "9bfcde731b5ed7e383ea626945d872f4cb6ee2188e889830b326a13a180f4414"
+    },
+    {
+      "id": "tremor",
+      "file": "a16-tremor.png",
+      "sha256": "78571b76164132d01b748d19d1790b5b707565c8a39ba2b78fe88e60eea1b660"
+    },
+    {
+      "id": "e01-danger",
+      "file": "v6-danger-geography.png",
+      "sha256": "641bbe8bb4d91f98d85de78289ab9d9e0a015fa0066218ce7fd6b964c4f6a8a4"
+    },
+    {
+      "id": "fall",
+      "file": "07-fall.png",
+      "sha256": "5f4c80051660c866219a3c68555e228507332bd5bbc8f3129b5f337adc91ea49"
+    },
+    {
+      "id": "leap",
+      "file": "08-leap.png",
+      "sha256": "f2a963e797c6584a68913ab29b354b94f184c38f43c27ec4dea819901f6ac507"
+    },
+    {
+      "id": "e01-catch",
+      "file": "v6-catch.png",
+      "sha256": "b1e3efc1a8356b4b72005066acc515d7948c8ccafe10f0ccc7deb92a71fa419b"
+    },
+    {
+      "id": "landing",
+      "file": "10-landing.png",
+      "sha256": "62dcc7b2d9abd07f562c78aa5f4b97d09e958a212d97ce3d3556babebdc7116e"
+    },
+    {
+      "id": "e01-safe-01",
+      "file": "v6-safe-01.png",
+      "sha256": "647470d3b13e82694c7373f125057c20713db171024a87722f6c52c8cffc4e44"
+    },
+    {
+      "id": "e01-safe-02",
+      "file": "v6-safe-02.png",
+      "sha256": "3a01d48eb489e7e615e481d489b13cb60ce907b549a8422997b256f4d7c071c9"
+    },
+    {
+      "id": "e01-approach",
+      "file": "v6-approach.png",
+      "sha256": "188e2c24ca02b0f6fd5cb42f6dc137bbbd10d3503db82845f1b5410d7a3814c1"
+    },
+    {
+      "id": "e01-core",
+      "file": "v6-core.png",
+      "sha256": "494da4641bd999b732d615a53cadc53b25787ad6d58bebe29148e2fa3adc47b7"
+    },
+    {
+      "id": "hero",
+      "file": "14-hero.png",
+      "sha256": "1ec3bf124f07724dd319caa5d1c164b18f4de168452f60fdba26e0119845cbf3"
+    },
+    {
+      "id": "punch",
+      "file": "15-punch.png",
+      "sha256": "8628adaf6b9c98c42bce8e482947d79ae29cd884a43165f58e88255a9ce4accb"
+    },
+    {
+      "id": "e01-relief",
+      "file": "v6-relief.png",
+      "sha256": "007934d151640ccb8a1e5aa128082ca046122d130599ba79aae1b0386e8c6464"
+    },
+    {
+      "id": "e01-fragment",
+      "file": "v6-fragment.png",
+      "sha256": "f45d8f1d2d254fd5e0e0b548315dfe504bef9e42d9a2dc399dbbace518c8a552"
     }
   ],
-  "notes": "Every saved ordinary phone scroll viewport compared byte for byte after chapter navigation update."
+  "exports": [
+    {
+      "width": 360,
+      "height": 25593,
+      "file": "complete-360.png",
+      "sha256": "d8ed66287c57327b7f254b0e74b888dd094054b4444d2a349589e09ed6352bd7",
+      "positions": [
+        {
+          "id": "memory",
+          "x": 0,
+          "y": 194,
+          "width": 360,
+          "height": 450,
+          "pause": 240
+        },
+        {
+          "id": "e01-waking",
+          "x": 0,
+          "y": 884,
+          "width": 360,
+          "height": 1073,
+          "pause": 120
+        },
+        {
+          "id": "footsteps",
+          "x": 86.39999999999998,
+          "y": 2077,
+          "width": 273.6,
+          "height": 205,
+          "pause": 42
+        },
+        {
+          "id": "knight_arrives",
+          "x": 0,
+          "y": 2324,
+          "width": 360,
+          "height": 450,
+          "pause": 60
+        },
+        {
+          "id": "e01-greeting",
+          "x": 0,
+          "y": 2834,
+          "width": 360,
+          "height": 1080,
+          "pause": 83
+        },
+        {
+          "id": "e01-rook-name",
+          "x": 0,
+          "y": 3997,
+          "width": 360,
+          "height": 1080,
+          "pause": 74
+        },
+        {
+          "id": "e01-orientation",
+          "x": 0,
+          "y": 5151,
+          "width": 360,
+          "height": 1080,
+          "pause": 120
+        },
+        {
+          "id": "e01-instruction",
+          "x": 0,
+          "y": 6351,
+          "width": 360,
+          "height": 1080,
+          "pause": 92
+        },
+        {
+          "id": "hesitation",
+          "x": 0,
+          "y": 7523,
+          "width": 360,
+          "height": 450,
+          "pause": 102
+        },
+        {
+          "id": "touch",
+          "x": 79.19999999999999,
+          "y": 8075,
+          "width": 280.8,
+          "height": 211,
+          "pause": 23
+        },
+        {
+          "id": "e01-waiting",
+          "x": 0,
+          "y": 8309,
+          "width": 360,
+          "height": 1080,
+          "pause": 157
+        },
+        {
+          "id": "result",
+          "x": 43.19999999999999,
+          "y": 9546,
+          "width": 316.8,
+          "height": 317,
+          "pause": 111
+        },
+        {
+          "id": "e01-confirmation",
+          "x": 0,
+          "y": 9974,
+          "width": 360,
+          "height": 1080,
+          "pause": 134
+        },
+        {
+          "id": "stakes",
+          "x": 0,
+          "y": 11188,
+          "width": 360,
+          "height": 450,
+          "pause": 92
+        },
+        {
+          "id": "rejection",
+          "x": 0,
+          "y": 11730,
+          "width": 360,
+          "height": 450,
+          "pause": 92
+        },
+        {
+          "id": "zero_reaction",
+          "x": 0,
+          "y": 12272,
+          "width": 360,
+          "height": 450,
+          "pause": 203
+        },
+        {
+          "id": "tremor",
+          "x": 100.80000000000001,
+          "y": 12925,
+          "width": 259.2,
+          "height": 194,
+          "pause": 78
+        },
+        {
+          "id": "e01-danger",
+          "x": 0,
+          "y": 13197,
+          "width": 360,
+          "height": 1080,
+          "pause": 92
+        },
+        {
+          "id": "fall",
+          "x": 0,
+          "y": 14369,
+          "width": 360,
+          "height": 720,
+          "pause": 37
+        },
+        {
+          "id": "leap",
+          "x": 0,
+          "y": 15126,
+          "width": 338.4,
+          "height": 508,
+          "pause": 23
+        },
+        {
+          "id": "e01-catch",
+          "x": 0,
+          "y": 15657,
+          "width": 360,
+          "height": 450,
+          "pause": 92
+        },
+        {
+          "id": "landing",
+          "x": 0,
+          "y": 16199,
+          "width": 360,
+          "height": 450,
+          "pause": 148
+        },
+        {
+          "id": "e01-safe-01",
+          "x": 0,
+          "y": 16797,
+          "width": 360,
+          "height": 1080,
+          "pause": 32
+        },
+        {
+          "id": "e01-safe-02",
+          "x": 0,
+          "y": 17909,
+          "width": 360,
+          "height": 1080,
+          "pause": 92
+        },
+        {
+          "id": "e01-approach",
+          "x": 0,
+          "y": 19081,
+          "width": 360,
+          "height": 1078,
+          "pause": 83
+        },
+        {
+          "id": "e01-core",
+          "x": 0,
+          "y": 20242,
+          "width": 360,
+          "height": 1080,
+          "pause": 231
+        },
+        {
+          "id": "hero",
+          "x": 0,
+          "y": 21553,
+          "width": 360,
+          "height": 720,
+          "pause": 55
+        },
+        {
+          "id": "punch",
+          "x": 0,
+          "y": 22328,
+          "width": 360,
+          "height": 450,
+          "pause": 212
+        },
+        {
+          "id": "e01-relief",
+          "x": 0,
+          "y": 22990,
+          "width": 360,
+          "height": 1080,
+          "pause": 148
+        },
+        {
+          "id": "e01-fragment",
+          "x": 0,
+          "y": 24218,
+          "width": 360,
+          "height": 1080,
+          "pause": 175
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 27720,
+      "file": "complete-390.png",
+      "sha256": "9a11b7a78bf551b397f79a4c330ae7af70e06e07be116a5cda4af04b0704d9cb",
+      "positions": [
+        {
+          "id": "memory",
+          "x": 0,
+          "y": 210,
+          "width": 390,
+          "height": 487,
+          "pause": 260
+        },
+        {
+          "id": "e01-waking",
+          "x": 0,
+          "y": 957,
+          "width": 390,
+          "height": 1162,
+          "pause": 130
+        },
+        {
+          "id": "footsteps",
+          "x": 93.60000000000002,
+          "y": 2249,
+          "width": 296.4,
+          "height": 222,
+          "pause": 45
+        },
+        {
+          "id": "knight_arrives",
+          "x": 0,
+          "y": 2516,
+          "width": 390,
+          "height": 487,
+          "pause": 65
+        },
+        {
+          "id": "e01-greeting",
+          "x": 0,
+          "y": 3068,
+          "width": 390,
+          "height": 1170,
+          "pause": 90
+        },
+        {
+          "id": "e01-rook-name",
+          "x": 0,
+          "y": 4328,
+          "width": 390,
+          "height": 1170,
+          "pause": 80
+        },
+        {
+          "id": "e01-orientation",
+          "x": 0,
+          "y": 5578,
+          "width": 390,
+          "height": 1170,
+          "pause": 130
+        },
+        {
+          "id": "e01-instruction",
+          "x": 0,
+          "y": 6878,
+          "width": 390,
+          "height": 1170,
+          "pause": 100
+        },
+        {
+          "id": "hesitation",
+          "x": 0,
+          "y": 8148,
+          "width": 390,
+          "height": 487,
+          "pause": 110
+        },
+        {
+          "id": "touch",
+          "x": 85.80000000000001,
+          "y": 8745,
+          "width": 304.2,
+          "height": 228,
+          "pause": 25
+        },
+        {
+          "id": "e01-waiting",
+          "x": 0,
+          "y": 8998,
+          "width": 390,
+          "height": 1169,
+          "pause": 170
+        },
+        {
+          "id": "result",
+          "x": 46.80000000000001,
+          "y": 10337,
+          "width": 343.2,
+          "height": 343,
+          "pause": 120
+        },
+        {
+          "id": "e01-confirmation",
+          "x": 0,
+          "y": 10800,
+          "width": 390,
+          "height": 1170,
+          "pause": 145
+        },
+        {
+          "id": "stakes",
+          "x": 0,
+          "y": 12115,
+          "width": 390,
+          "height": 487,
+          "pause": 100
+        },
+        {
+          "id": "rejection",
+          "x": 0,
+          "y": 12702,
+          "width": 390,
+          "height": 487,
+          "pause": 100
+        },
+        {
+          "id": "zero_reaction",
+          "x": 0,
+          "y": 13289,
+          "width": 390,
+          "height": 487,
+          "pause": 220
+        },
+        {
+          "id": "tremor",
+          "x": 109.19999999999999,
+          "y": 13996,
+          "width": 280.8,
+          "height": 211,
+          "pause": 85
+        },
+        {
+          "id": "e01-danger",
+          "x": 0,
+          "y": 14292,
+          "width": 390,
+          "height": 1170,
+          "pause": 100
+        },
+        {
+          "id": "fall",
+          "x": 0,
+          "y": 15562,
+          "width": 390,
+          "height": 780,
+          "pause": 40
+        },
+        {
+          "id": "leap",
+          "x": 0,
+          "y": 16382,
+          "width": 366.6,
+          "height": 550,
+          "pause": 25
+        },
+        {
+          "id": "e01-catch",
+          "x": 0,
+          "y": 16957,
+          "width": 390,
+          "height": 487,
+          "pause": 100
+        },
+        {
+          "id": "landing",
+          "x": 0,
+          "y": 17544,
+          "width": 390,
+          "height": 487,
+          "pause": 160
+        },
+        {
+          "id": "e01-safe-01",
+          "x": 0,
+          "y": 18191,
+          "width": 390,
+          "height": 1170,
+          "pause": 35
+        },
+        {
+          "id": "e01-safe-02",
+          "x": 0,
+          "y": 19396,
+          "width": 390,
+          "height": 1170,
+          "pause": 100
+        },
+        {
+          "id": "e01-approach",
+          "x": 0,
+          "y": 20666,
+          "width": 390,
+          "height": 1167,
+          "pause": 90
+        },
+        {
+          "id": "e01-core",
+          "x": 0,
+          "y": 21923,
+          "width": 390,
+          "height": 1170,
+          "pause": 250
+        },
+        {
+          "id": "hero",
+          "x": 0,
+          "y": 23343,
+          "width": 390,
+          "height": 780,
+          "pause": 60
+        },
+        {
+          "id": "punch",
+          "x": 0,
+          "y": 24183,
+          "width": 390,
+          "height": 487,
+          "pause": 230
+        },
+        {
+          "id": "e01-relief",
+          "x": 0,
+          "y": 24900,
+          "width": 390,
+          "height": 1170,
+          "pause": 160
+        },
+        {
+          "id": "e01-fragment",
+          "x": 0,
+          "y": 26230,
+          "width": 390,
+          "height": 1170,
+          "pause": 190
+        }
+      ]
+    }
+  ],
+  "browserPixelsCompared": false,
+  "visualReview": "passed_native_image_review"
 }

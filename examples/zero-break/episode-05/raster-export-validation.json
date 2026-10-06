@@ -1,0 +1,406 @@
+{
+  "edition": "context-dialogue-v6",
+  "status": "passed_export",
+  "method": "native canvas layout from manifest; no HTML or browser rendering",
+  "sourceArtworkUnchanged": true,
+  "sourceHashes": [
+    {
+      "id": "empty-house",
+      "file": "01-empty-house.png",
+      "sha256": "62ff6938f8b8bfd8dae8f55c658d98d577fda5b679c0216219b38ba295a4faad"
+    },
+    {
+      "id": "shoes",
+      "file": "02-shoes.png",
+      "sha256": "fcb8c4138073668e99673be26433009856a2b02b4bf95f46ff39eda166ba3df5"
+    },
+    {
+      "id": "e05-not-moving",
+      "file": "v6-not-moving.png",
+      "sha256": "96663b1e8e5062f3bcf75411bb75780a52702e68b145e10e963dd16654cfb267"
+    },
+    {
+      "id": "ledger",
+      "file": "04-ledger.png",
+      "sha256": "57b4fb35768c3d446fc34d607e20ac10c77f22411c24923934f6bbe28bc5cd24"
+    },
+    {
+      "id": "e05-denial",
+      "file": "v6-denial.png",
+      "sha256": "8547a75de256f2a66f3a4b7f942cd35153339d1ac290e479fb657b75741a33aa"
+    },
+    {
+      "id": "old-map",
+      "file": "06-old-map.png",
+      "sha256": "9ae4da7899b195382e0be0f75dbe2f60752ddd53681909b16c87bc02598f6100"
+    },
+    {
+      "id": "entry",
+      "file": "07-entry.png",
+      "sha256": "5139d442653856f632b3c113591bbe9833084869910c498310bed4546fe44829"
+    },
+    {
+      "id": "voice",
+      "file": "08-voice.png",
+      "sha256": "b3bc1da4196b5ffcc5f238a056bb3b6786732c58a1c498684f2fc1ba0cb0106d"
+    },
+    {
+      "id": "captives",
+      "file": "09-captives.png",
+      "sha256": "5b1d92663f9160f23f4a2d7328cff27944582356b13d39fc53fbeb46f5cb562a"
+    },
+    {
+      "id": "old-man",
+      "file": "10-old-man.png",
+      "sha256": "b54ccaddcad3100ccec1f1122f23a11615ef9486ceb57b868ce891d251705d5e"
+    },
+    {
+      "id": "patrol",
+      "file": "11-patrol.png",
+      "sha256": "5dc7ba27733f9433acfb95afb970240791fc89d7b3f9c793e265519bb3856526"
+    },
+    {
+      "id": "choose",
+      "file": "12-choose.png",
+      "sha256": "3073ac563bb6b6f29177683bb616197e671d3c5d73d577df901b0ab8d55636f1"
+    },
+    {
+      "id": "jam-signal",
+      "file": "13-jam-signal.png",
+      "sha256": "d48809f086fd477ab743458e8c138d5c0f3623093585e79320319d29e48860b3"
+    },
+    {
+      "id": "escape",
+      "file": "14-escape.png",
+      "sha256": "5c106fb60a6b40ba8c1a9d260bb74fa1a13f452289adcc743ca959bb57f4c249"
+    },
+    {
+      "id": "record",
+      "file": "15-record.png",
+      "sha256": "5b2aaffb325744757636c318325c77d320ac308d6691aadb1ca2e01018d663a2"
+    },
+    {
+      "id": "e05-vow",
+      "file": "v6-vow.png",
+      "sha256": "0ad7714358e1009e1ec080a50eab3e266cad59330f79687455af17526c9b8e52"
+    },
+    {
+      "id": "destination",
+      "file": "17-destination.png",
+      "sha256": "1f9e0bdba3e4b5c89a5cd7ab5d46257885cc6ffce38bfd6afcf8fd7326135671"
+    },
+    {
+      "id": "e05-friend-listed",
+      "file": "v6-friend-listed.png",
+      "sha256": "4bcfc37f8c45b86aa825b24dc7675d05b09fba86fe0887b6d68ec2f5bbe0d053"
+    }
+  ],
+  "exports": [
+    {
+      "width": 360,
+      "height": 13291,
+      "file": "complete-360.png",
+      "sha256": "1497946428ca9fc33ba14a7e822488fc29a6d5e0136752d4777a6677543cab19",
+      "positions": [
+        {
+          "id": "empty-house",
+          "x": 0,
+          "y": 194,
+          "width": 360,
+          "height": 630,
+          "pause": 120
+        },
+        {
+          "id": "shoes",
+          "x": 0,
+          "y": 944,
+          "width": 266.4,
+          "height": 200,
+          "pause": 120
+        },
+        {
+          "id": "e05-not-moving",
+          "x": 0,
+          "y": 1264,
+          "width": 360,
+          "height": 1080,
+          "pause": 152
+        },
+        {
+          "id": "ledger",
+          "x": 0,
+          "y": 2496,
+          "width": 309.6,
+          "height": 232,
+          "pause": 74
+        },
+        {
+          "id": "e05-denial",
+          "x": 0,
+          "y": 2802,
+          "width": 360,
+          "height": 1080,
+          "pause": 120
+        },
+        {
+          "id": "old-map",
+          "x": 0,
+          "y": 4002,
+          "width": 360,
+          "height": 450,
+          "pause": 148
+        },
+        {
+          "id": "entry",
+          "x": 0,
+          "y": 4600,
+          "width": 360,
+          "height": 630,
+          "pause": 102
+        },
+        {
+          "id": "voice",
+          "x": 0,
+          "y": 5332,
+          "width": 360,
+          "height": 270,
+          "pause": 665
+        },
+        {
+          "id": "captives",
+          "x": 0,
+          "y": 6267,
+          "width": 360,
+          "height": 630,
+          "pause": 111
+        },
+        {
+          "id": "old-man",
+          "x": 0,
+          "y": 7008,
+          "width": 360,
+          "height": 450,
+          "pause": 74
+        },
+        {
+          "id": "patrol",
+          "x": 0,
+          "y": 7532,
+          "width": 360,
+          "height": 270,
+          "pause": 55
+        },
+        {
+          "id": "choose",
+          "x": 0,
+          "y": 7857,
+          "width": 360,
+          "height": 450,
+          "pause": 88
+        },
+        {
+          "id": "jam-signal",
+          "x": 0,
+          "y": 8395,
+          "width": 360,
+          "height": 270,
+          "pause": 92
+        },
+        {
+          "id": "escape",
+          "x": 0,
+          "y": 8757,
+          "width": 360,
+          "height": 630,
+          "pause": 102
+        },
+        {
+          "id": "record",
+          "x": 0,
+          "y": 9489,
+          "width": 331.2,
+          "height": 414,
+          "pause": 138
+        },
+        {
+          "id": "e05-vow",
+          "x": 0,
+          "y": 10041,
+          "width": 360,
+          "height": 1080,
+          "pause": 166
+        },
+        {
+          "id": "destination",
+          "x": 14.399999999999977,
+          "y": 11287,
+          "width": 345.6,
+          "height": 259,
+          "pause": 351
+        },
+        {
+          "id": "e05-friend-listed",
+          "x": 0,
+          "y": 11897,
+          "width": 360,
+          "height": 1080,
+          "pause": 194
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 14399,
+      "file": "complete-390.png",
+      "sha256": "6927c6e232cc8d4ac5afc3c5c369d733d630397ea691c8f4b10c9174191776fe",
+      "positions": [
+        {
+          "id": "empty-house",
+          "x": 0,
+          "y": 210,
+          "width": 390,
+          "height": 683,
+          "pause": 130
+        },
+        {
+          "id": "shoes",
+          "x": 0,
+          "y": 1023,
+          "width": 288.6,
+          "height": 216,
+          "pause": 130
+        },
+        {
+          "id": "e05-not-moving",
+          "x": 0,
+          "y": 1369,
+          "width": 390,
+          "height": 1170,
+          "pause": 165
+        },
+        {
+          "id": "ledger",
+          "x": 0,
+          "y": 2704,
+          "width": 335.4,
+          "height": 252,
+          "pause": 80
+        },
+        {
+          "id": "e05-denial",
+          "x": 0,
+          "y": 3036,
+          "width": 390,
+          "height": 1170,
+          "pause": 130
+        },
+        {
+          "id": "old-map",
+          "x": 0,
+          "y": 4336,
+          "width": 390,
+          "height": 487,
+          "pause": 160
+        },
+        {
+          "id": "entry",
+          "x": 0,
+          "y": 4983,
+          "width": 390,
+          "height": 683,
+          "pause": 110
+        },
+        {
+          "id": "voice",
+          "x": 0,
+          "y": 5776,
+          "width": 390,
+          "height": 293,
+          "pause": 720
+        },
+        {
+          "id": "captives",
+          "x": 0,
+          "y": 6789,
+          "width": 390,
+          "height": 683,
+          "pause": 120
+        },
+        {
+          "id": "old-man",
+          "x": 0,
+          "y": 7592,
+          "width": 390,
+          "height": 487,
+          "pause": 80
+        },
+        {
+          "id": "patrol",
+          "x": 0,
+          "y": 8159,
+          "width": 390,
+          "height": 293,
+          "pause": 60
+        },
+        {
+          "id": "choose",
+          "x": 0,
+          "y": 8512,
+          "width": 390,
+          "height": 487,
+          "pause": 95
+        },
+        {
+          "id": "jam-signal",
+          "x": 0,
+          "y": 9094,
+          "width": 390,
+          "height": 293,
+          "pause": 100
+        },
+        {
+          "id": "escape",
+          "x": 0,
+          "y": 9487,
+          "width": 390,
+          "height": 683,
+          "pause": 110
+        },
+        {
+          "id": "record",
+          "x": 0,
+          "y": 10280,
+          "width": 358.8,
+          "height": 448,
+          "pause": 150
+        },
+        {
+          "id": "e05-vow",
+          "x": 0,
+          "y": 10878,
+          "width": 390,
+          "height": 1170,
+          "pause": 180
+        },
+        {
+          "id": "destination",
+          "x": 15.600000000000023,
+          "y": 12228,
+          "width": 374.4,
+          "height": 281,
+          "pause": 380
+        },
+        {
+          "id": "e05-friend-listed",
+          "x": 0,
+          "y": 12889,
+          "width": 390,
+          "height": 1170,
+          "pause": 210
+        }
+      ]
+    }
+  ],
+  "browserPixelsCompared": false,
+  "visualReview": "passed_native_image_review"
+}
