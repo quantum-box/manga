@@ -1,0 +1,68 @@
+{
+  "id": "e01-waking",
+  "episode": 1,
+  "file": "v6-waking.png",
+  "method": "built-in image_gen",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a10f99-efcb-7371-8c20-e01aa60f7ed9/exec-14a2da78-cc6a-4ad8-aa3c-80368f3d45cd.png",
+  "sha256": "51bcc4c360965220d3abc579a8e97c236677168df83298b35c4af60890e79739",
+  "width": 726,
+  "height": 2164,
+  "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading, WHITE outer gutters; explicitly UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nExact continuity/setting (not a request to put everything in every panel): Ren wakes seated on a stone stair in a white fantasy plaza and looks up at floating white towers, blue sky and hanging blue banners. Unarmored black short sleeves, charcoal trousers, crimson scarf, bare hands. Establish his confusion and the new world. Preserve the clear establishing view, large enough face.\n\nPanel 1, downward order. Frame: right-aligned 80% width, medium-height framed close-up. Reader understands: Ren opens his eyes in an unfamiliar place.. Visible camera subject / offscreen continuity: ONLY seated Ren face, eyes opening; white stair and a blue banner establish the same landing.. Voice / balloon: bewildered thought, cloud and dots.\nONLY speaker: Ren thought. EXACT text: 「……ここ、どこだ。」 (render contents only).\nPanel 2, downward order. Frame: large full-width BORDERLESS vertical upward view, enough height to understand geography. Reader understands: The place really floats in the sky.. Visible camera subject / offscreen continuity: His upward eyeline leads to floating white towers and islands; only location box EXACT 空都リュミエル, no other words.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 3, downward order. Frame: left-aligned90% width, medium-height framed face. Reader understands: He links this place to his last memory, without knowing why.. Visible camera subject / offscreen continuity: ONLY Ren seated shoulders/face, one bare hand touching his crimson scarf; same intact stairs. No corpse or child flashback.. Voice / balloon: uncertain thought, cloud with dots.\nONLY speaker: Ren thought. EXACT text: 「俺、事故に遭ったはずじゃ……。」 (render contents only).\n",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/02-arrival.png",
+      "sha256": "a15849a76923d2ef7ae428d9d0c5d1ec1382a377b1c1d8f319d19268932509cf"
+    }
+  ],
+  "replaces": [
+    "waking"
+  ],
+  "panels": [
+    {
+      "beat": "Ren opens his eyes in an unfamiliar place.",
+      "view": "ONLY seated Ren face, eyes opening; white stair and a blue banner establish the same landing.",
+      "frame": "right-aligned 80% width, medium-height framed close-up",
+      "voice": "bewildered thought, cloud and dots",
+      "line": {
+        "speaker": "Ren thought",
+        "text": "……ここ、どこだ。",
+        "type": "thought"
+      }
+    },
+    {
+      "beat": "The place really floats in the sky.",
+      "view": "His upward eyeline leads to floating white towers and islands; only location box EXACT 空都リュミエル, no other words.",
+      "frame": "large full-width BORDERLESS vertical upward view, enough height to understand geography",
+      "voice": "無言"
+    },
+    {
+      "beat": "He links this place to his last memory, without knowing why.",
+      "view": "ONLY Ren seated shoulders/face, one bare hand touching his crimson scarf; same intact stairs. No corpse or child flashback.",
+      "frame": "left-aligned90% width, medium-height framed face",
+      "voice": "uncertain thought, cloud with dots",
+      "line": {
+        "speaker": "Ren thought",
+        "text": "俺、事故に遭ったはずじゃ……。",
+        "type": "thought"
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_image_review",
+    "source_sha256": "51bcc4c360965220d3abc579a8e97c236677168df83298b35c4af60890e79739",
+    "chapter_validation": "../../../v5/validation.json",
+    "checks": [
+      "exact lettering and speakers",
+      "faces, hands, costumes, props",
+      "cause and effect, prior state, no premature reveals"
+    ]
+  },
+  "mobile_browser_review": "pending",
+  "visible_text": [
+    {
+      "text": "空都リュミエル",
+      "type": "raster label",
+      "review": "visually confirmed in generated image"
+    }
+  ]
+}

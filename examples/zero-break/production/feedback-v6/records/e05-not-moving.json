@@ -1,0 +1,65 @@
+{
+  "id": "e05-not-moving",
+  "episode": 5,
+  "file": "v6-not-moving.png",
+  "method": "built-in image_gen",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a10f99-efcb-7371-8c20-e01aa60f7ed9/exec-cb925138-383a-4b17-a9ce-671279865717.png",
+  "sha256": "96663b1e8e5062f3bcf75411bb75780a52702e68b145e10e963dd16654cfb267",
+  "width": 724,
+  "height": 2172,
+  "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Noa holds friend's boot, worried brows, Ren beside door scans empty home, unarmored.\n\nPanel 1, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Noa troubled face inside SAME empty lower-city home at dusk. Holds friend single boot.. Voice / balloon: quiet troubled soft contour.\nONLY speaker: Noa. EXACT text: 「引っ越しなら、」 (render contents only).\nPanel 2, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Single worker boot in orange gloves; its mate sits by door, warm soup on table nearby. No gore or corpse.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 3, downward order. Frame: full-width LARGE borderless emotional close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Noa troubled face inside SAME empty lower-city home at dusk. Holds friend single boot.. Voice / balloon: quiet troubled soft contour.\nONLY speaker: Noa. EXACT text: 「靴は持っていく。」 (render contents only).\n",
+  "references": [
+    {
+      "path": "examples/zero-break/episode-05/art/03-not-moving.png",
+      "sha256": "01a9412d9a2abebf5eaf5807cb0de9251b9853ad1508e283b77c4bf1d56e362b"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/varied-01.png",
+      "sha256": "207182b5e679ed4ec4b42761adc149f4ad98039d823ed903cb2a1a6f5319b68e"
+    }
+  ],
+  "replaces": [
+    "not-moving"
+  ],
+  "panels": [
+    {
+      "beat": "The reader receives one part of the explanation, before a response.",
+      "view": "ONLY Noa troubled face inside SAME empty lower-city home at dusk. Holds friend single boot.",
+      "frame": "right-aligned90% width, medium framed speaker close-up",
+      "voice": "quiet troubled soft contour",
+      "line": {
+        "speaker": "Noa",
+        "text": "引っ越しなら、",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "The listener or the relevant object holds the same scene while the words settle.",
+      "view": "Single worker boot in orange gloves; its mate sits by door, warm soup on table nearby. No gore or corpse.",
+      "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+      "voice": "無言"
+    },
+    {
+      "beat": "The reader receives one part of the explanation, before a response.",
+      "view": "ONLY Noa troubled face inside SAME empty lower-city home at dusk. Holds friend single boot.",
+      "frame": "full-width LARGE borderless emotional close-up",
+      "voice": "quiet troubled soft contour",
+      "line": {
+        "speaker": "Noa",
+        "text": "靴は持っていく。",
+        "type": "speech"
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_image_review",
+    "source_sha256": "96663b1e8e5062f3bcf75411bb75780a52702e68b145e10e963dd16654cfb267",
+    "chapter_validation": "../../../episode-05/validation.json",
+    "checks": [
+      "exact lettering and speakers",
+      "faces, hands, costumes, props",
+      "cause and effect, prior state, no premature reveals"
+    ]
+  },
+  "mobile_browser_review": "pending"
+}

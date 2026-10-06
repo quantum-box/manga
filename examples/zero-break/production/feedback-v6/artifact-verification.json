@@ -1,0 +1,95 @@
+{
+  "edition": "context-dialogue-v6",
+  "status": "passed_artifact_checks",
+  "totals": {
+    "baseline_artworks": 196,
+    "reader_images": 196,
+    "panels": 317,
+    "adopted_revision_records": 57,
+    "scripts": 50
+  },
+  "chapters": [
+    {
+      "episode": 1,
+      "assets": 30,
+      "panels": 66,
+      "source_sha256": "c9220f9359a6102870c11f61ef9da8a7c6b8ab4f7f80b2211119fe766809aea6",
+      "browser_review": "pending"
+    },
+    {
+      "episode": 2,
+      "assets": 20,
+      "panels": 30,
+      "source_sha256": "9f4128624e107c9c2a752f691d14fb8e1251af27069a018aeb309ecc61aa41f4",
+      "browser_review": "pending"
+    },
+    {
+      "episode": 3,
+      "assets": 18,
+      "panels": 26,
+      "source_sha256": "85523d96ea8de593c40155b7dcfc35e214b31b162c5fc8f9dd5e3cfee6a30a45",
+      "browser_review": "pending"
+    },
+    {
+      "episode": 4,
+      "assets": 18,
+      "panels": 27,
+      "source_sha256": "a6a7fbe2199115514d02a9e7f5c8c7876c76778157b567bc44b71a45bf7d996d",
+      "browser_review": "pending"
+    },
+    {
+      "episode": 5,
+      "assets": 18,
+      "panels": 26,
+      "source_sha256": "231209bcb22f9599c706c0e52142eaa611c009282c24e277e9746f1fdc302abc",
+      "browser_review": "pending"
+    },
+    {
+      "episode": 6,
+      "assets": 18,
+      "panels": 26,
+      "source_sha256": "f582c8e2a4cedc431866627080e18fa1078d8bb99eb3134aaa92f0d9a68479a3",
+      "browser_review": "pending"
+    },
+    {
+      "episode": 7,
+      "assets": 18,
+      "panels": 28,
+      "source_sha256": "9d18637d4021fb46df263f98b4e813b18be736c3a4bb361060bbe805d95d5374",
+      "browser_review": "pending"
+    },
+    {
+      "episode": 8,
+      "assets": 18,
+      "panels": 28,
+      "source_sha256": "29d531d7db21f070402cc934d6254d9a39cffd5ad10c1a0ecd0bdcc691496ed4",
+      "browser_review": "pending"
+    },
+    {
+      "episode": 9,
+      "assets": 18,
+      "panels": 28,
+      "source_sha256": "dc8f587ed0436758d50861cc3b2cf2253d9a434afbb0842754a2da3a66dd0512",
+      "browser_review": "pending"
+    },
+    {
+      "episode": 10,
+      "assets": 20,
+      "panels": 32,
+      "source_sha256": "eea7b1052aa57815bb78ab6b20e24011aaa7a64e2ef2e8296bbd88e81b0aef04",
+      "browser_review": "pending"
+    }
+  ],
+  "checks": [
+    "all prior source PNG hashes preserved",
+    "every baseline scene represented",
+    "actual revision prompts, references and repaired originals preserved",
+    "standalone embedded PNGs match raw source bytes",
+    "ZIP CRC and extracted HTML match",
+    "native export hashes, width and source geometry",
+    "iOS HTML and PNG bytes match adopted sources",
+    "all fifty scripts staged; existing quoted text preserved for 11-50"
+  ],
+  "browser_review": "pending; native exports do not prove browser layout",
+  "physical_device_review": "not_run"
+}

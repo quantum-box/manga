@@ -1,29 +1,42 @@
-# 第07話 騎士の見たもの — 作画指示と実行記録
+# 第07話 — 採用原画の実行指示
 
-方式：組み込み image_gen。採用原画のハッシュと参照は generation-log.json。
+全10話の改稿は新規54素材・承認見本の再利用3素材。再利用・修正・旧版保持を generation-log.json で区別。以前の実行記録は production/feedback-v6/baseline に保持。
 
-## 01-girl-steps.png
+## v6-girl-steps.png
 
-状態：generated
+built-in image_gen
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/a14-rejection.png, ../episode-06/art/13-help-next.png
+参照：[{"path": "examples/zero-break/episode-07/art/01-girl-steps.png", "sha256": "4c4e6b8da6f953c7f55a97e09def19ed218ce7fbe3a7c681f0fe89090044c4a4"}, {"path": "skills/webtoon/references/zero-break/varied-01.png", "sha256": "207182b5e679ed4ec4b42761adc149f4ad98039d823ed903cb2a1a6f5319b68e"}]
+
+採用時の指示：
 
 ```text
-Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
+Use case: illustration-story.
+Asset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).
+Recompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.
+Match the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.
+Printed bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.
+Top-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.
 
-Preferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins
-Scene and exact state: Same brown-haired small girl yellow dress from seventeen evacuees steps from Mira's side toward Rook's lowered silver training sword at exit gate, palm open; Ren behind unarmored exhausted. Rook hesitates, no violence.
+The LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.
+Exact continuity/setting (not a request to put everything in every panel): Same brown-haired small girl yellow dress from seventeen evacuees steps from Mira's side toward Rook's lowered silver training sword at exit gate, palm open; Ren behind unarmored exhausted. Rook hesitates, no violence.
 
-Balloon 1: speech, Girl, upper right. EXACT text: この人、私たちを出してくれた。 . Columns RIGHT to LEFT: この人、 / 私たちを / 出してくれた。.
-Exactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.
-Cast and flow continuity: evacuees are already OUTSIDE the empty released carriage, on an intact sky-rail platform EXIT and stone corridor. Never put them back behind carriage bars or in a prisoner cell. The small rescued girl has short BROWN hair and a YELLOW dress as episode6/13, Haru has dark BROWN hair and GREEN workshirt as episode6/05. Ren if visible is UNARMORED in ordinary BLACK FABRIC short-sleeve shirt, BARE hands and BARE arms, red scarf. No full black hero armor yet/anymore in this specific shot.
+Panel 1, downward order. Frame: full-width wide framed establishing shot. Reader understands: Confirm the immediate context without adding a new event.. Visible camera subject / offscreen continuity: Same brown-haired small girl yellow dress from seventeen evacuees steps from Mira's side toward Rook's lowered silver training sword at exit gate, palm open; Ren behind unarmored exhausted. Rook hesitates, no violence. Show the established spatial relationship, WITHOUT replaying earlier action or later results.. Voice / balloon: 無言.
+SILENT: no balloons or text unless an exact prop inscription is explicitly specified.
+Panel 2, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY small brown-haired GIRL in YELLOW dress face at SAME exit gate, scared but speaks toward Rook.. Voice / balloon: small earnest soft speech.
+ONLY speaker: Girl. EXACT text: 「この人、私たちを出してくれた。」 (render contents only).
+Panel 3, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: ONLY Rook gloved sword hand loosens, blade safely downward. Ren exhausted unarmored nearby offscreen, same seventeen survivors.. Voice / balloon: 無言.
+SILENT: no balloons or text unless an exact prop inscription is explicitly specified.
+
 ```
 
 ## 02-hand-stops.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/a14-rejection.png, ../episode-06/art/13-help-next.png
+参照：["../episode-03/art/03-fist.png", "../production/references/mira.png", "../v5/art/a14-rejection.png", "../episode-06/art/13-help-next.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
@@ -37,9 +50,11 @@ Cast and flow continuity: evacuees are already OUTSIDE the empty released carria
 
 ## 03-superior.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/a14-rejection.png
+参照：["../episode-03/art/03-fist.png", "../production/references/mira.png", "../v5/art/a14-rejection.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
@@ -54,9 +69,11 @@ Cast and flow continuity: evacuees are already OUTSIDE the empty released carria
 
 ## 04-princess-refuses.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../production/references/noa.png
+参照：["../episode-03/art/03-fist.png", "../production/references/mira.png", "../production/references/noa.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
@@ -69,32 +86,41 @@ Exactly 1 speech/thought balloons. No other lettering except explicitly requeste
 Cast and flow continuity: evacuees are already OUTSIDE the empty released carriage, on an intact sky-rail platform EXIT and stone corridor. Never put them back behind carriage bars or in a prisoner cell. The small rescued girl has short BROWN hair and a YELLOW dress as episode6/13, Haru has dark BROWN hair and GREEN workshirt as episode6/05. Ren if visible is UNARMORED in ordinary BLACK FABRIC short-sleeve shirt, BARE hands and BARE arms, red scarf. No full black hero armor yet/anymore in this specific shot.
 ```
 
-## 05-suspension.png
+## v6-suspension.png
 
-状態：generated
+built-in image_gen
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png
+参照：[{"path": "examples/zero-break/episode-07/art/05-suspension.png", "sha256": "da37524dc0eb92969b3c83d8c9b947e8495feb37c5d1d8523c28814f3d0a80b3"}, {"path": "skills/webtoon/references/zero-break/varied-01.png", "sha256": "207182b5e679ed4ec4b42761adc149f4ad98039d823ed903cb2a1a6f5319b68e"}]
+
+採用時の指示：
 
 ```text
-Original generation prompt:
-Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
+Use case: illustration-story.
+Asset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).
+Recompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.
+Match the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.
+Printed bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.
+Top-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.
 
-Preferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins
-Scene and exact state: Commander snaps royal authority seal off order chain, cold look, Mira recoils in shock but remains protective.
+The LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.
+Exact continuity/setting (not a request to put everything in every panel): Commander snaps royal authority seal off order chain, cold look, Mira recoils in shock but remains protective.
 
-Balloon 1: speech, Commander, upper right. EXACT text: あなたの権限は、停止された。 . Columns RIGHT to LEFT: あなたの / 権限は、 / 停止された。.
-Exactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.
-Cast and flow continuity: evacuees are already OUTSIDE the empty released carriage, on an intact sky-rail platform EXIT and stone corridor. Never put them back behind carriage bars or in a prisoner cell. The small rescued girl has short BROWN hair and a YELLOW dress as episode6/13, Haru has dark BROWN hair and GREEN workshirt as episode6/05. Ren if visible is UNARMORED in ordinary BLACK FABRIC short-sleeve shirt, BARE hands and BARE arms, red scarf. No full black hero armor yet/anymore in this specific shot.
+Panel 1, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY older45 commander dark greying hair, navy cape and silver armor face. SAME exit gate AFTER Mira refuses recapture.. Voice / balloon: cold heavy rounded rectangular speech.
+ONLY speaker: Commander. EXACT text: 「あなたの権限は、」 (render contents only).
+Panel 2, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: ONLY Mira shocked eyes; royal authority seal broken from command order chain at edge. She stays protective, no restored powers.. Voice / balloon: 無言.
+SILENT: no balloons or text unless an exact prop inscription is explicitly specified.
+Panel 3, downward order. Frame: full-width LARGE borderless emotional close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY older45 commander dark greying hair, navy cape and silver armor face. SAME exit gate AFTER Mira refuses recapture.. Voice / balloon: cold heavy rounded rectangular speech.
+ONLY speaker: Commander. EXACT text: 「停止された。」 (render contents only).
 
-Adopted targeted edit prompt:
-Fix the speaker and royal authority in FIRST image. Replace ONLY the foreground black-haired red-scarfed Ren holding broken authority seals with the SAME mature royal COMMANDER from SECOND image: short black hair greying at temples, neatly trimmed black beard and moustache, NAVY cape, ornate SILVER/GOLD armor and black gloves, stern face. He is holding the royal order / cancelled princess authority seal and saying the exact native vertical bubble あなたの権限は、停止された。 to Mira. The bubble tail must point to the commander. Keep Mira's surprised face and clothes, Rook, Haru green shirt and girl YELLOW dress in background, same stone exit corridor, all lettering exactly unchanged. Ren is outside this crop, not a duplicate in background. No other changes to layout or art.
 ```
 
 ## 06-collapse-cue.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/06-giant.png
+参照：["../episode-03/art/03-fist.png", "../production/references/mira.png", "../v5/art/06-giant.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
@@ -108,9 +134,11 @@ Cast and flow continuity: evacuees are already OUTSIDE the empty released carria
 
 ## 07-collapse.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/a14-rejection.png, ../episode-06/art/13-help-next.png, ../v5/art/06-giant.png
+参照：["../episode-03/art/03-fist.png", "../production/references/mira.png", "../v5/art/a14-rejection.png", "../episode-06/art/13-help-next.png", "../v5/art/06-giant.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
@@ -124,9 +152,11 @@ Cast and flow continuity: evacuees are already OUTSIDE the empty released carria
 
 ## 08-discard-order.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/a14-rejection.png
+参照：["../episode-03/art/03-fist.png", "../production/references/mira.png", "../v5/art/a14-rejection.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
@@ -138,28 +168,41 @@ No speech/thought balloons. No lettering except the exact effect or prop inscrip
 Cast and flow continuity: evacuees are already OUTSIDE the empty released carriage, on an intact sky-rail platform EXIT and stone corridor. Never put them back behind carriage bars or in a prisoner cell. The small rescued girl has short BROWN hair and a YELLOW dress as episode6/13, Haru has dark BROWN hair and GREEN workshirt as episode6/05. Ren if visible is UNARMORED in ordinary BLACK FABRIC short-sleeve shirt, BARE hands and BARE arms, red scarf. No full black hero armor yet/anymore in this specific shot.
 ```
 
-## 09-shield.png
+## v6-shield.png
 
-状態：generated
+built-in image_gen
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/a14-rejection.png
+参照：[{"path": "examples/zero-break/episode-07/art/09-shield.png", "sha256": "69c7b4a2447121fca2d753641f41bd363b484754d366fdde8dc689b0936dbe7f"}, {"path": "skills/webtoon/references/zero-break/varied-01.png", "sha256": "207182b5e679ed4ec4b42761adc149f4ad98039d823ed903cb2a1a6f5319b68e"}]
+
+採用時の指示：
 
 ```text
-Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
+Use case: illustration-story.
+Asset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).
+Recompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.
+Match the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.
+Printed bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.
+Top-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.
 
-Preferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins
-Scene and exact state: Rook silver armor and blue cape raises steel shield over evacuees to catch rubble, leads them toward intact exit.
+The LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.
+Exact continuity/setting (not a request to put everything in every panel): Rook silver armor and blue cape raises steel shield over evacuees to catch rubble, leads them toward intact exit.
 
-Balloon 1: speech, Rook, upper right. EXACT text: こっちへ！頭を下げろ！ . Columns RIGHT to LEFT: こっちへ！ / 頭を下げろ！.
-Exactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.
-Cast and flow continuity: evacuees are already OUTSIDE the empty released carriage, on an intact sky-rail platform EXIT and stone corridor. Never put them back behind carriage bars or in a prisoner cell. The small rescued girl has short BROWN hair and a YELLOW dress as episode6/13, Haru has dark BROWN hair and GREEN workshirt as episode6/05. Ren if visible is UNARMORED in ordinary BLACK FABRIC short-sleeve shirt, BARE hands and BARE arms, red scarf. No full black hero armor yet/anymore in this specific shot.
+Panel 1, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Rook urgent face as he holds STEEL SHIELD over evacuees in SAME collapsing corridor; same blue cape.. Voice / balloon: urgent SHOUT with thick jagged outer edge.
+ONLY speaker: Rook. EXACT text: 「こっちへ！」 (render contents only).
+Panel 2, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Cowering evacuees duck underneath shield as rubble is stopped. NO one already in service yard.. Voice / balloon: 無言.
+SILENT: no balloons or text unless an exact prop inscription is explicitly specified.
+Panel 3, downward order. Frame: full-width LARGE borderless emotional close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Rook urgent face as he holds STEEL SHIELD over evacuees in SAME collapsing corridor; same blue cape.. Voice / balloon: urgent SHOUT with thick jagged outer edge.
+ONLY speaker: Rook. EXACT text: 「頭を下げろ！」 (render contents only).
+
 ```
 
 ## 10-ren-holds.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../v5/art/14-hero.png, ../production/references/mira.png, ../v5/art/06-giant.png
+参照：["../v5/art/14-hero.png", "../production/references/mira.png", "../v5/art/06-giant.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
@@ -173,9 +216,11 @@ Cast and flow continuity: evacuees are already OUTSIDE the empty released carria
 
 ## 11-rook-carries.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/a14-rejection.png, ../episode-06/art/13-help-next.png, art/07-collapse.png
+参照：["../episode-03/art/03-fist.png", "../production/references/mira.png", "../v5/art/a14-rejection.png", "../episode-06/art/13-help-next.png", "art/07-collapse.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
@@ -190,30 +235,23 @@ Cast and flow continuity: evacuees are already OUTSIDE the empty released carria
 
 ## 12-ren-answer.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../v5/art/14-hero.png, ../production/references/mira.png, ../v5/art/a14-rejection.png, ../v5/art/06-giant.png
+参照：["../v5/art/14-hero.png", "../production/references/mira.png", "../v5/art/a14-rejection.png", "../v5/art/06-giant.png"]
+
+採用時の指示：
 
 ```text
-Original generation prompt:
-Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
-
-Preferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins
-Scene and exact state: Ren looks over shoulder toward escaping Rook while maintaining guardian wrist restraint, exhausted but trusting.
-
-Balloon 1: speech, Ren, upper right. EXACT text: 任せた。 . Columns RIGHT to LEFT: 任せた。.
-Exactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.
-Cast and flow continuity: evacuees are already OUTSIDE the empty released carriage, on an intact sky-rail platform EXIT and stone corridor. Never put them back behind carriage bars or in a prisoner cell. The small rescued girl has short BROWN hair and a YELLOW dress as episode6/13, Haru has dark BROWN hair and GREEN workshirt as episode6/05. Ren is FULLY BASIC BLACK/CYAN ARMORED continuously, cyan STAR chest, uncovered black hair/blue eyes/red scarf, BOTH armored hands still physically restraining the grey guardian wrist against the wall. Feet visibly BRACED on INTACT stone walkway. Do not show him in ordinary clothes or floating.
-
-Adopted targeted edit prompt:
 Add ONLY the already rescued elderly man to Rook's BACK in the background of FIRST image, maintaining the carrying action from SECOND image. Rook cannot abandon the man between these adjacent cuts. Rook is walking away with the SAME WHITE-haired elderly man, NAVY vest over WHITE shirt, brown/grey trousers, brown boots, supported securely piggyback: white-haired head visible above Rook's shoulder, arms around shoulders and both hanging legs visible beside blue cape as perspective permits. Preserve foreground Ren in full BLACK/CYAN armor holding guardian wrist with BOTH hands, exact native vertical dialogue 任せた。, Haru in green shirt and girl in YELLOW dress, positions, architecture and all other details. No duplicate old man, no added text.
 ```
 
 ## 13-escape.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/a14-rejection.png, art/07-collapse.png
+参照：["../episode-03/art/03-fist.png", "../production/references/mira.png", "../v5/art/a14-rejection.png", "art/07-collapse.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
@@ -225,28 +263,41 @@ No speech/thought balloons. No lettering except the exact effect or prop inscrip
 Cast and flow continuity: evacuees are already OUTSIDE the empty released carriage, on an intact sky-rail platform EXIT and stone corridor. Never put them back behind carriage bars or in a prisoner cell. The small rescued girl has short BROWN hair and a YELLOW dress as episode6/13, Haru has dark BROWN hair and GREEN workshirt as episode6/05. Ren if visible is UNARMORED in ordinary BLACK FABRIC short-sleeve shirt, BARE hands and BARE arms, red scarf. No full black hero armor yet/anymore in this specific shot.
 ```
 
-## 14-apology.png
+## v6-apology.png
 
-状態：generated
+built-in image_gen
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/a14-rejection.png
+参照：[{"path": "examples/zero-break/episode-07/art/14-apology.png", "sha256": "2ac5d43f409da993279a8b0101fd8c2fe803d069d0d3b6eab1df49bf3b466235"}, {"path": "skills/webtoon/references/zero-break/varied-01.png", "sha256": "207182b5e679ed4ec4b42761adc149f4ad98039d823ed903cb2a1a6f5319b68e"}]
+
+採用時の指示：
 
 ```text
-Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
+Use case: illustration-story.
+Asset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).
+Recompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.
+Match the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.
+Printed bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.
+Top-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.
 
-Preferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins
-Scene and exact state: Rook bends head to seated Ren without theatrical kneeling; hands empty, remorse face. Survivors in safe yard.
+The LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.
+Exact continuity/setting (not a request to put everything in every panel): Rook bends head to seated Ren without theatrical kneeling; hands empty, remorse face. Survivors in safe yard.
 
-Balloon 1: speech, Rook, upper right. EXACT text: 見ないふりをした。謝って終わらせない。 . Columns RIGHT to LEFT: 見ないふりを / した。 / 謝って / 終わらせない。.
-Exactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.
-Cast and flow continuity: evacuees are already OUTSIDE the empty released carriage, on an intact sky-rail platform EXIT and stone corridor. Never put them back behind carriage bars or in a prisoner cell. The small rescued girl has short BROWN hair and a YELLOW dress as episode6/13, Haru has dark BROWN hair and GREEN workshirt as episode6/05. Ren if visible is UNARMORED in ordinary BLACK FABRIC short-sleeve shirt, BARE hands and BARE arms, red scarf. No full black hero armor yet/anymore in this specific shot.
+Panel 1, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Rook remorseful lowered face in SAME safe service yard AFTER everybody escaped. Hands empty, no theatrical kneeling.. Voice / balloon: low serious ordinary capsule.
+ONLY speaker: Rook. EXACT text: 「見ないふりをした。」 (render contents only).
+Panel 2, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: ONLY seated unarmored Ren eyes listen, tired but attentive. SAME survivors resting safely nearby offscreen.. Voice / balloon: 無言.
+SILENT: no balloons or text unless an exact prop inscription is explicitly specified.
+Panel 3, downward order. Frame: full-width LARGE borderless emotional close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Rook remorseful lowered face in SAME safe service yard AFTER everybody escaped. Hands empty, no theatrical kneeling.. Voice / balloon: low serious ordinary capsule.
+ONLY speaker: Rook. EXACT text: 「謝って終わらせない。」 (render contents only).
+
 ```
 
 ## 15-return-license.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/a14-rejection.png
+参照：["../episode-03/art/03-fist.png", "../production/references/mira.png", "../v5/art/a14-rejection.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
@@ -258,28 +309,41 @@ No speech/thought balloons. No lettering except the exact effect or prop inscrip
 Cast and flow continuity: evacuees are already OUTSIDE the empty released carriage, on an intact sky-rail platform EXIT and stone corridor. Never put them back behind carriage bars or in a prisoner cell. The small rescued girl has short BROWN hair and a YELLOW dress as episode6/13, Haru has dark BROWN hair and GREEN workshirt as episode6/05. Ren if visible is UNARMORED in ordinary BLACK FABRIC short-sleeve shirt, BARE hands and BARE arms, red scarf. No full black hero armor yet/anymore in this specific shot.
 ```
 
-## 16-accept-work.png
+## v6-accept-work.png
 
-状態：generated
+built-in image_gen
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../v5/art/a14-rejection.png
+参照：[{"path": "examples/zero-break/episode-07/art/16-accept-work.png", "sha256": "c4ed6781ee2feff2ff2256bf831b22dfafa5f7c3cd5dcf6b4501a09739d8d5fc"}, {"path": "skills/webtoon/references/zero-break/varied-01.png", "sha256": "207182b5e679ed4ec4b42761adc149f4ad98039d823ed903cb2a1a6f5319b68e"}]
+
+採用時の指示：
 
 ```text
-Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
+Use case: illustration-story.
+Asset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).
+Recompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.
+Match the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.
+Printed bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.
+Top-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.
 
-Preferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins
-Scene and exact state: Ren holds rope end toward Rook, mutual practical trust rather than instant friendship; Rook accepts.
+The LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.
+Exact continuity/setting (not a request to put everything in every panel): Ren holds rope end toward Rook, mutual practical trust rather than instant friendship; Rook accepts.
 
-Balloon 1: speech, Ren, upper right. EXACT text: じゃあ、次の人を一緒に。 . Columns RIGHT to LEFT: じゃあ、 / 次の人を / 一緒に。.
-Exactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.
-Cast and flow continuity: evacuees are already OUTSIDE the empty released carriage, on an intact sky-rail platform EXIT and stone corridor. Never put them back behind carriage bars or in a prisoner cell. The small rescued girl has short BROWN hair and a YELLOW dress as episode6/13, Haru has dark BROWN hair and GREEN workshirt as episode6/05. Ren if visible is UNARMORED in ordinary BLACK FABRIC short-sleeve shirt, BARE hands and BARE arms, red scarf. No full black hero armor yet/anymore in this specific shot.
+Panel 1, downward order. Frame: full-width wide framed establishing shot. Reader understands: Confirm the immediate context without adding a new event.. Visible camera subject / offscreen continuity: Ren holds rope end toward Rook, mutual practical trust rather than instant friendship; Rook accepts. Show the established spatial relationship, WITHOUT replaying earlier action or later results.. Voice / balloon: 無言.
+SILENT: no balloons or text unless an exact prop inscription is explicitly specified.
+Panel 2, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY unarmored Ren quietly accepting face at SAME rescue table AFTER Rook set down his license.. Voice / balloon: warm soft ordinary oval.
+ONLY speaker: Ren. EXACT text: 「じゃあ、次の人を一緒に。」 (render contents only).
+Panel 3, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Ren BARE hand offers plain rope end and Rook BLACK glove accepts. OWN license stays on table, no official restoration.. Voice / balloon: 無言.
+SILENT: no balloons or text unless an exact prop inscription is explicitly specified.
+
 ```
 
 ## 17-invitation-cue.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png, ../production/references/noa.png
+参照：["../episode-03/art/03-fist.png", "../production/references/mira.png", "../production/references/noa.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.
@@ -293,9 +357,11 @@ Cast and flow continuity: evacuees are already OUTSIDE the empty released carria
 
 ## 18-invitation.png
 
-状態：generated
+retained prior adopted image_gen output
 
-参照：../episode-03/art/03-fist.png, ../production/references/mira.png
+参照：["../episode-03/art/03-fist.png", "../production/references/mira.png"]
+
+採用時の指示：
 
 ```text
 Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.

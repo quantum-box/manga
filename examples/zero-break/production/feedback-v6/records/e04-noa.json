@@ -1,0 +1,76 @@
+{
+  "id": "e04-noa",
+  "episode": 4,
+  "file": "v6-noa.png",
+  "method": "built-in image_gen",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a10f99-efcb-7371-8c20-e01aa60f7ed9/exec-639895ff-797a-43fe-b6af-dad874778c7b.png",
+  "sha256": "af7f8307b99439c972ea9a199cc7f65b06b4041ce219cb07653002a77a78c3de",
+  "width": 724,
+  "height": 2172,
+  "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Noa adult18 orange tousled short hair green eyes goggles on head blue mechanic overalls black undershirt orange gloves, casually offers a broken handheld meter to Ren across bench.\n\nPanel 1, downward order. Frame: right-aligned90% width, medium framed face. Reader understands: Mira introduces the person, not only the room.. Visible camera subject / offscreen continuity: ONLY Mira face inside SAME warm amber workshop just entered. Noa already visible in previous workshop establishing frame, Ren offscreen beside her.. Voice / balloon: composed thin blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「整備士のノアよ。」 (render contents only).\nPanel 2, downward order. Frame: left-aligned84% width, medium close. Reader understands: Noa checks what he heard.. Visible camera subject / offscreen continuity: ONLY Noa adult orange hair/green eyes, goggles ON head, friendly face, SAME blue overalls and warm workshop.. Voice / balloon: friendly rounded speech with thin warm brown line.\nONLY speaker: Noa. EXACT text: 「魔力ゼロ？」 (render contents only).\nPanel 3, downward order. Frame: left-aligned70% width, shallow eye/hand insert. Reader understands: Ren waits to hear whether he will be rejected again.. Visible camera subject / offscreen continuity: ONLY Ren uncertain BLUE eyes. Noa orange glove still offers ONE broken handheld meter at bottom edge; NOT yet released into Ren hands.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 4, downward order. Frame: full-width large borderless welcoming portrait. Reader understands: Here the same number has a different social meaning.. Visible camera subject / offscreen continuity: ONLY Noa smiling face, Ren remains nearby offscreen; SAME workshop and meter.. Voice / balloon: gentle rounded speech with thin warm brown line.\nONLY speaker: Noa. EXACT text: 「こっちじゃ普通。」 (render contents only).\n",
+  "references": [
+    {
+      "path": "examples/zero-break/episode-04/art/04-noa.png",
+      "sha256": "2fcac757a8f0daa173fea91a753267053e5b5dac5de50f10866b1c381143f0b2"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/varied-01.png",
+      "sha256": "207182b5e679ed4ec4b42761adc149f4ad98039d823ed903cb2a1a6f5319b68e"
+    }
+  ],
+  "replaces": [
+    "noa"
+  ],
+  "panels": [
+    {
+      "beat": "Mira introduces the person, not only the room.",
+      "view": "ONLY Mira face inside SAME warm amber workshop just entered. Noa already visible in previous workshop establishing frame, Ren offscreen beside her.",
+      "frame": "right-aligned90% width, medium framed face",
+      "voice": "composed thin blue-grey capsule",
+      "line": {
+        "speaker": "Mira",
+        "text": "整備士のノアよ。",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "Noa checks what he heard.",
+      "view": "ONLY Noa adult orange hair/green eyes, goggles ON head, friendly face, SAME blue overalls and warm workshop.",
+      "frame": "left-aligned84% width, medium close",
+      "voice": "friendly rounded speech with thin warm brown line",
+      "line": {
+        "speaker": "Noa",
+        "text": "魔力ゼロ？",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "Ren waits to hear whether he will be rejected again.",
+      "view": "ONLY Ren uncertain BLUE eyes. Noa orange glove still offers ONE broken handheld meter at bottom edge; NOT yet released into Ren hands.",
+      "frame": "left-aligned70% width, shallow eye/hand insert",
+      "voice": "無言"
+    },
+    {
+      "beat": "Here the same number has a different social meaning.",
+      "view": "ONLY Noa smiling face, Ren remains nearby offscreen; SAME workshop and meter.",
+      "frame": "full-width large borderless welcoming portrait",
+      "voice": "gentle rounded speech with thin warm brown line",
+      "line": {
+        "speaker": "Noa",
+        "text": "こっちじゃ普通。",
+        "type": "speech"
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_image_review",
+    "source_sha256": "af7f8307b99439c972ea9a199cc7f65b06b4041ce219cb07653002a77a78c3de",
+    "chapter_validation": "../../../episode-04/validation.json",
+    "checks": [
+      "exact lettering and speakers",
+      "faces, hands, costumes, props",
+      "cause and effect, prior state, no premature reveals"
+    ]
+  },
+  "mobile_browser_review": "pending"
+}

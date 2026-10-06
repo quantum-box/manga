@@ -1,0 +1,76 @@
+{
+  "id": "e01-relief",
+  "episode": 1,
+  "file": "v6-relief.png",
+  "method": "built-in image_gen",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a10f99-efcb-7371-8c20-e01aa60f7ed9/exec-d3acd3c5-214b-4dc9-b68f-14e525a1a0ca.png",
+  "sha256": "007934d151640ccb8a1e5aa128082ca046122d130599ba79aae1b0386e8c6464",
+  "width": 724,
+  "height": 2172,
+  "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): On the same safe solid plaza AFTER the giant stopped, Ren in black armor and red scarf and Mira in white/blue/gold dress smile in relief. Both stand safely, gentle eye contact. Broken stone in background, not an attacking giant. Ren armor includes cyan star core and armored gloves. Two vertical speech balloons arranged as Mira first then Ren.\n\nPanel 1, downward order. Frame: right-aligned87% width, medium framed. Reader understands: Mira looks at the stopped guardian and living Ren.. Visible camera subject / offscreen continuity: Mira face alone, safe lower solid plaza, violet-black wreckage blurred; Ren STILL basic black armor offscreen left.. Voice / balloon: warm questioning soft blue-grey outline.\nONLY speaker: Mira. EXACT text: 「あなた、本当に魔力ゼロなの？」 (render contents only).\nPanel 2, downward order. Frame: left-aligned82% width, medium close. Reader understands: Ren gives a short answer.. Visible camera subject / offscreen continuity: Ren armored shoulders and relieved face, red scarf.. Voice / balloon: gentle ordinary speech.\nONLY speaker: Ren. EXACT text: 「みたいだ。」 (render contents only).\nPanel 3, downward order. Frame: left-aligned68% width, shallow silent hand insert. Reader understands: He takes in that somebody really is safe.. Visible camera subject / offscreen continuity: ONLY Ren black armored hand relaxes from a fist; SAME wreckage, no crest or new person.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 4, downward order. Frame: full-width large BORDERLESS emotional close. Reader understands: His relief is bigger than the numerical verdict.. Visible camera subject / offscreen continuity: ONLY Ren wide relieved face, slightly wet eyes, blue chest star and red scarf; Mira safely offscreen right.. Voice / balloon: breathless soft wavering thin contour.\nONLY speaker: Ren. EXACT text: 「けど、役立たずじゃなかった。」 (render contents only).\n",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/16-relief.png",
+      "sha256": "ee18f68d4ad0ce7e6ad638fbe3747c2b21f75bce7bcf17f938d60c10b84246df"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/varied-01.png",
+      "sha256": "207182b5e679ed4ec4b42761adc149f4ad98039d823ed903cb2a1a6f5319b68e"
+    }
+  ],
+  "replaces": [
+    "relief"
+  ],
+  "panels": [
+    {
+      "beat": "Mira looks at the stopped guardian and living Ren.",
+      "view": "Mira face alone, safe lower solid plaza, violet-black wreckage blurred; Ren STILL basic black armor offscreen left.",
+      "frame": "right-aligned87% width, medium framed",
+      "voice": "warm questioning soft blue-grey outline",
+      "line": {
+        "speaker": "Mira",
+        "text": "あなた、本当に魔力ゼロなの？",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "Ren gives a short answer.",
+      "view": "Ren armored shoulders and relieved face, red scarf.",
+      "frame": "left-aligned82% width, medium close",
+      "voice": "gentle ordinary speech",
+      "line": {
+        "speaker": "Ren",
+        "text": "みたいだ。",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "He takes in that somebody really is safe.",
+      "view": "ONLY Ren black armored hand relaxes from a fist; SAME wreckage, no crest or new person.",
+      "frame": "left-aligned68% width, shallow silent hand insert",
+      "voice": "無言"
+    },
+    {
+      "beat": "His relief is bigger than the numerical verdict.",
+      "view": "ONLY Ren wide relieved face, slightly wet eyes, blue chest star and red scarf; Mira safely offscreen right.",
+      "frame": "full-width large BORDERLESS emotional close",
+      "voice": "breathless soft wavering thin contour",
+      "line": {
+        "speaker": "Ren",
+        "text": "けど、役立たずじゃなかった。",
+        "type": "speech"
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_image_review",
+    "source_sha256": "007934d151640ccb8a1e5aa128082ca046122d130599ba79aae1b0386e8c6464",
+    "chapter_validation": "../../../v5/validation.json",
+    "checks": [
+      "exact lettering and speakers",
+      "faces, hands, costumes, props",
+      "cause and effect, prior state, no premature reveals"
+    ]
+  },
+  "mobile_browser_review": "pending"
+}

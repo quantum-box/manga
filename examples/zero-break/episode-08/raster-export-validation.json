@@ -1,0 +1,406 @@
+{
+  "edition": "context-dialogue-v6",
+  "status": "passed_export",
+  "method": "native canvas layout from manifest; no HTML or browser rendering",
+  "sourceArtworkUnchanged": true,
+  "sourceHashes": [
+    {
+      "id": "corridor",
+      "file": "01-corridor.png",
+      "sha256": "5524fc8f4da331aed35e031294e0ee67327022ce93f94176c464ca2d50f594e2"
+    },
+    {
+      "id": "portrait",
+      "file": "02-portrait.png",
+      "sha256": "e7ee33f455f6aba7e8d3f496376705ea7b087346764e96bb1e51163fee66fba6"
+    },
+    {
+      "id": "e08-first-hero",
+      "file": "v6-first-hero-gold.png",
+      "sha256": "29a1b8f9f745ff74590f95b38382ac5fc5a8bfbb82cf19395207efbf66b19372"
+    },
+    {
+      "id": "e08-compare-star",
+      "file": "v6-compare-star.png",
+      "sha256": "62e0b8b75dfe115828ede818f6e4b747ed58cda937b6db6c0ed848ade2e8f49c"
+    },
+    {
+      "id": "trial-door",
+      "file": "05-trial-door.png",
+      "sha256": "bb553718681f341992de414136ad048bf7a21f75917b3f9ad9eee36b7de231aa"
+    },
+    {
+      "id": "human-targets",
+      "file": "06-human-targets.png",
+      "sha256": "16e05f82de1bc5465095ddc7f0ce4628e87be4cc6df5793cd800b8e4096ab1a6"
+    },
+    {
+      "id": "e08-refuse",
+      "file": "v6-refuse.png",
+      "sha256": "579bf164e607e80d385ab27ff8916e93f09b6aa4bf38f378f6903955ecfb4260"
+    },
+    {
+      "id": "disqualify",
+      "file": "08-disqualify.png",
+      "sha256": "1d2de4dfabb7bc02812c0f2240a6f56506ba45fa8b39480c60f3a9969d2cb701"
+    },
+    {
+      "id": "turn-back",
+      "file": "09-turn-back.png",
+      "sha256": "6d5273bff47b4d24a14a3d8a014f64ac3f0070520057a24d3263910922446eea"
+    },
+    {
+      "id": "cut-chain",
+      "file": "10-cut-chain.png",
+      "sha256": "91bdc53bc0ae007dc0661fa3559e14efdc86bdb2bdb5aeff09a793dae63251bb"
+    },
+    {
+      "id": "guards-run",
+      "file": "11-guards-run.png",
+      "sha256": "55a3ba933d0683938838179d687011f696c393e2cdcc38c70b52177d1247b8c4"
+    },
+    {
+      "id": "hold-exit",
+      "file": "12-hold-exit.png",
+      "sha256": "de8196ac4c7e5de1bb9a1f8b60419148479b8e25630df88aa4316cfacaf35ff0"
+    },
+    {
+      "id": "copy-evidence",
+      "file": "13-copy-evidence.png",
+      "sha256": "9367e527702b4a63392f45ad0655dea4c7dbacf8e0a4afcfdb5a0a0f5e860915"
+    },
+    {
+      "id": "e08-their-evidence",
+      "file": "v6-their-evidence.png",
+      "sha256": "142a29646caeb7d37e36058ec0e74c8fc4cdead14aeec265746668997049f5c6"
+    },
+    {
+      "id": "rescue-outcome",
+      "file": "15-rescue-outcome.png",
+      "sha256": "b5fb19789478d4e5518bd3f424cbcdf6e9f9b8c582bb8ccedcc65378cf1ac609"
+    },
+    {
+      "id": "old-inscription-cue",
+      "file": "16-old-inscription-cue.png",
+      "sha256": "086f03a94b7126812e7e6b67618d57c4e35dd0756de29cffc93fda5a28a5f9f6"
+    },
+    {
+      "id": "selection",
+      "file": "17-selection.png",
+      "sha256": "892861d28c4778f52a6585c930956b7f00b8787eb81451e2eac536cca979550a"
+    },
+    {
+      "id": "e08-reject-selection",
+      "file": "v6-reject-selection.png",
+      "sha256": "94b0ccf9d5bcea7675c1ef70ed1ab85158e672a2cf36e9a20b5e3103c06c7bcb"
+    }
+  ],
+  "exports": [
+    {
+      "width": 360,
+      "height": 14639,
+      "file": "complete-360.png",
+      "sha256": "ea9540758f41810e1cae6d97927d23fb6f241db4590dbbeaff73e887a84a5496",
+      "positions": [
+        {
+          "id": "corridor",
+          "x": 0,
+          "y": 194,
+          "width": 360,
+          "height": 630,
+          "pause": 88
+        },
+        {
+          "id": "portrait",
+          "x": 0,
+          "y": 912,
+          "width": 360,
+          "height": 630,
+          "pause": 129
+        },
+        {
+          "id": "e08-first-hero",
+          "x": 0,
+          "y": 1671,
+          "width": 360,
+          "height": 1080,
+          "pause": 120
+        },
+        {
+          "id": "e08-compare-star",
+          "x": 0,
+          "y": 2871,
+          "width": 360,
+          "height": 1080,
+          "pause": 175
+        },
+        {
+          "id": "trial-door",
+          "x": 57.60000000000002,
+          "y": 4126,
+          "width": 302.4,
+          "height": 227,
+          "pause": 785
+        },
+        {
+          "id": "human-targets",
+          "x": 0,
+          "y": 5138,
+          "width": 360,
+          "height": 630,
+          "pause": 111
+        },
+        {
+          "id": "e08-refuse",
+          "x": 0,
+          "y": 5879,
+          "width": 360,
+          "height": 1080,
+          "pause": 111
+        },
+        {
+          "id": "disqualify",
+          "x": 0,
+          "y": 7070,
+          "width": 360,
+          "height": 270,
+          "pause": 92
+        },
+        {
+          "id": "turn-back",
+          "x": 0,
+          "y": 7432,
+          "width": 331.2,
+          "height": 414,
+          "pause": 88
+        },
+        {
+          "id": "cut-chain",
+          "x": 36,
+          "y": 7934,
+          "width": 324,
+          "height": 405,
+          "pause": 92
+        },
+        {
+          "id": "guards-run",
+          "x": 0,
+          "y": 8431,
+          "width": 360,
+          "height": 630,
+          "pause": 92
+        },
+        {
+          "id": "hold-exit",
+          "x": 0,
+          "y": 9153,
+          "width": 360,
+          "height": 450,
+          "pause": 120
+        },
+        {
+          "id": "copy-evidence",
+          "x": 50.39999999999998,
+          "y": 9723,
+          "width": 309.6,
+          "height": 232,
+          "pause": 138
+        },
+        {
+          "id": "e08-their-evidence",
+          "x": 0,
+          "y": 10093,
+          "width": 360,
+          "height": 1080,
+          "pause": 157
+        },
+        {
+          "id": "rescue-outcome",
+          "x": 0,
+          "y": 11330,
+          "width": 360,
+          "height": 450,
+          "pause": 185
+        },
+        {
+          "id": "old-inscription-cue",
+          "x": 0,
+          "y": 11965,
+          "width": 288,
+          "height": 216,
+          "pause": 665
+        },
+        {
+          "id": "selection",
+          "x": 0,
+          "y": 12846,
+          "width": 360,
+          "height": 270,
+          "pause": 129
+        },
+        {
+          "id": "e08-reject-selection",
+          "x": 0,
+          "y": 13245,
+          "width": 360,
+          "height": 1080,
+          "pause": 194
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 15860,
+      "file": "complete-390.png",
+      "sha256": "7c0f6183663eea948f363e28b9c215826f651fb50431d42809a7633ad7b5d6bc",
+      "positions": [
+        {
+          "id": "corridor",
+          "x": 0,
+          "y": 210,
+          "width": 390,
+          "height": 683,
+          "pause": 95
+        },
+        {
+          "id": "portrait",
+          "x": 0,
+          "y": 988,
+          "width": 390,
+          "height": 683,
+          "pause": 140
+        },
+        {
+          "id": "e08-first-hero",
+          "x": 0,
+          "y": 1811,
+          "width": 390,
+          "height": 1170,
+          "pause": 130
+        },
+        {
+          "id": "e08-compare-star",
+          "x": 0,
+          "y": 3111,
+          "width": 390,
+          "height": 1170,
+          "pause": 190
+        },
+        {
+          "id": "trial-door",
+          "x": 62.39999999999998,
+          "y": 4471,
+          "width": 327.6,
+          "height": 246,
+          "pause": 850
+        },
+        {
+          "id": "human-targets",
+          "x": 0,
+          "y": 5567,
+          "width": 390,
+          "height": 683,
+          "pause": 120
+        },
+        {
+          "id": "e08-refuse",
+          "x": 0,
+          "y": 6370,
+          "width": 390,
+          "height": 1170,
+          "pause": 120
+        },
+        {
+          "id": "disqualify",
+          "x": 0,
+          "y": 7660,
+          "width": 390,
+          "height": 293,
+          "pause": 100
+        },
+        {
+          "id": "turn-back",
+          "x": 0,
+          "y": 8053,
+          "width": 358.8,
+          "height": 448,
+          "pause": 95
+        },
+        {
+          "id": "cut-chain",
+          "x": 39,
+          "y": 8596,
+          "width": 351,
+          "height": 439,
+          "pause": 100
+        },
+        {
+          "id": "guards-run",
+          "x": 0,
+          "y": 9135,
+          "width": 390,
+          "height": 683,
+          "pause": 100
+        },
+        {
+          "id": "hold-exit",
+          "x": 0,
+          "y": 9918,
+          "width": 390,
+          "height": 487,
+          "pause": 130
+        },
+        {
+          "id": "copy-evidence",
+          "x": 54.60000000000002,
+          "y": 10535,
+          "width": 335.4,
+          "height": 252,
+          "pause": 150
+        },
+        {
+          "id": "e08-their-evidence",
+          "x": 0,
+          "y": 10937,
+          "width": 390,
+          "height": 1169,
+          "pause": 170
+        },
+        {
+          "id": "rescue-outcome",
+          "x": 0,
+          "y": 12276,
+          "width": 390,
+          "height": 487,
+          "pause": 200
+        },
+        {
+          "id": "old-inscription-cue",
+          "x": 0,
+          "y": 12963,
+          "width": 312,
+          "height": 234,
+          "pause": 720
+        },
+        {
+          "id": "selection",
+          "x": 0,
+          "y": 13917,
+          "width": 390,
+          "height": 293,
+          "pause": 140
+        },
+        {
+          "id": "e08-reject-selection",
+          "x": 0,
+          "y": 14350,
+          "width": 390,
+          "height": 1170,
+          "pause": 210
+        }
+      ]
+    }
+  ],
+  "browserPixelsCompared": false,
+  "visualReview": "passed_native_image_review"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "e01-safe-02",
+  "episode": 1,
+  "file": "v6-safe-02.png",
+  "method": "reused skill reference (original built-in image_gen)",
+  "original_output": "/Users/takanorifukuyama/.codex/worktrees/4726/manga/skills/webtoon/references/zero-break/balloons-02.png",
+  "sha256": "3a01d48eb489e7e615e481d489b13cb60ce907b549a8422997b256f4d7c071c9",
+  "width": 724,
+  "height": 2172,
+  "prompt": "Use case: precise-object-edit / Japanese speech-balloon contour revision.\nInput image1 is the EXACT edit target. Input image2 is a user-provided PHOTO of example balloon outlines only: use it solely to understand how thin colored contours and expressive thick rims vary by vocal intent. Do not reproduce its words, characters, screen, photograph or layout.\nChange ONLY the specified speech-balloon contours, line weight/color and tail design in image1. Preserve ALL existing manga artwork, frame widths/heights/positions, white gutters, borderless portions, character faces and anatomy, clothes, scene lighting, expressions and Japanese dialogue. Maintain original tall 3:1 aspect. Do NOT recompose, crop, zoom, reorder panels or add any speech to silent panels.\nText remains exact, LARGE upright Japanese, top-to-bottom columns and RIGHT-to-LEFT column order, same legibility and placements. Keep generous white inner padding and black printed manga gothic. Tails connect to correct actual speaker; keep faces and hands unobscured. No extra symbols, hearts, captions, labels, English or watermark. Distinguish quiet spoken voice with a CONNECTED pointed/curved tail from thought with dots. No thought dots here: EVERY existing line in this target is SPOKEN. Do not add a shout effect to a calm scene.\nPanel1 cropped Mira hand information: exact この国の王女よ。 Two columns RIGHT TO LEFT: この国の | 王女よ。 Use a clean tall rounded-rectangle/rounded capsule, fine subdued blue-gray outline matching Mira's composed self-introduction. Small tapered tail toward her OFFSCREEN MOUTH ABOVE RIGHT, never toward the jewel or hand. This is spoken dialogue, no thought dots and no electronic UI.\nPanel2 Ren eye reaction: unchanged, SILENT, no new balloon.\nPanel3 Ren introduction: exact レンだ。 Keep a simple ordinary upright oval, restrained dark charcoal line and short direct speech tail toward Ren mouth. Plain steady voice. Same legible text size.\nPanel4 borderless Ren relieved response: exact 無事なら、それで。 Two columns RIGHT TO LEFT: 無事なら、 | それで。 Replace generic round ellipse with a slightly elongated SOFTLY WAVERING outline, irregular but closed fine charcoal line, thinner than his normal speech; connected small weak wavering speech tail points toward Ren mouth. Audible tired breath after rescue, not fear, crying, shouting or interior thought. No dotted tail, no fluffy thought cloud, no speech without tail. Preserve the LARGE borderless last portrait exactly. The difference should communicate an exhausted soft voice, not random decoration.\n",
+  "references": [
+    {
+      "path": "skills/webtoon/references/zero-break/balloons-02.png",
+      "sha256": "3a01d48eb489e7e615e481d489b13cb60ce907b549a8422997b256f4d7c071c9"
+    }
+  ],
+  "replaces": [
+    "safe"
+  ],
+  "panels": [
+    {
+      "beat": "Her role is one new fact.",
+      "view": "ONLY Mira dress/hand at chest. No guardian crest.",
+      "frame": "medium-height hand/detail frame",
+      "voice": "composed blue-grey rounded capsule",
+      "line": {
+        "speaker": "Mira",
+        "text": "この国の王女よ。",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "Ren hears that she is a princess.",
+      "view": "ONLY Ren eyes. Same kneeling pose.",
+      "frame": "small shallow left eye insert",
+      "voice": "無言"
+    },
+    {
+      "beat": "He gives his name.",
+      "view": "ONLY Ren face, BARE hand touches scarf.",
+      "frame": "right-aligned medium framed face",
+      "voice": "ordinary black oval",
+      "line": {
+        "speaker": "Ren",
+        "text": "レンだ。",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "He says that her safety is what matters.",
+      "view": "ONLY Ren relieved face, kneeling under torn awning; no armor.",
+      "frame": "large full-width borderless emotional portrait",
+      "voice": "breathless wavering outline with continuous speech tail",
+      "line": {
+        "speaker": "Ren",
+        "text": "無事なら、それで。",
+        "type": "speech"
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_image_review",
+    "source_sha256": "3a01d48eb489e7e615e481d489b13cb60ce907b549a8422997b256f4d7c071c9",
+    "chapter_validation": "../../../v5/validation.json",
+    "checks": [
+      "exact lettering and speakers",
+      "faces, hands, costumes, props",
+      "cause and effect, prior state, no premature reveals"
+    ]
+  },
+  "mobile_browser_review": "pending",
+  "assembly_prompt": "Use case: precise-object-edit / Japanese speech-balloon contour revision.\nInput image1 is the EXACT edit target. Input image2 is a user-provided PHOTO of example balloon outlines only: use it solely to understand how thin colored contours and expressive thick rims vary by vocal intent. Do not reproduce its words, characters, screen, photograph or layout.\nChange ONLY the specified speech-balloon contours, line weight/color and tail design in image1. Preserve ALL existing manga artwork, frame widths/heights/positions, white gutters, borderless portions, character faces and anatomy, clothes, scene lighting, expressions and Japanese dialogue. Maintain original tall 3:1 aspect. Do NOT recompose, crop, zoom, reorder panels or add any speech to silent panels.\nText remains exact, LARGE upright Japanese, top-to-bottom columns and RIGHT-to-LEFT column order, same legibility and placements. Keep generous white inner padding and black printed manga gothic. Tails connect to correct actual speaker; keep faces and hands unobscured. No extra symbols, hearts, captions, labels, English or watermark. Distinguish quiet spoken voice with a CONNECTED pointed/curved tail from thought with dots. No thought dots here: EVERY existing line in this target is SPOKEN. Do not add a shout effect to a calm scene.\nPanel1 cropped Mira hand information: exact この国の王女よ。 Two columns RIGHT TO LEFT: この国の | 王女よ。 Use a clean tall rounded-rectangle/rounded capsule, fine subdued blue-gray outline matching Mira's composed self-introduction. Small tapered tail toward her OFFSCREEN MOUTH ABOVE RIGHT, never toward the jewel or hand. This is spoken dialogue, no thought dots and no electronic UI.\nPanel2 Ren eye reaction: unchanged, SILENT, no new balloon.\nPanel3 Ren introduction: exact レンだ。 Keep a simple ordinary upright oval, restrained dark charcoal line and short direct speech tail toward Ren mouth. Plain steady voice. Same legible text size.\nPanel4 borderless Ren relieved response: exact 無事なら、それで。 Two columns RIGHT TO LEFT: 無事なら、 | それで。 Replace generic round ellipse with a slightly elongated SOFTLY WAVERING outline, irregular but closed fine charcoal line, thinner than his normal speech; connected small weak wavering speech tail points toward Ren mouth. Audible tired breath after rescue, not fear, crying, shouting or interior thought. No dotted tail, no fluffy thought cloud, no speech without tail. Preserve the LARGE borderless last portrait exactly. The difference should communicate an exhausted soft voice, not random decoration.",
+  "source_generation_record": "skills/webtoon/references/zero-break/generation.json",
+  "historical_generation": {
+    "target": "balloons-02.png",
+    "edit_target": "varied-02.png",
+    "prompt": "Use case: precise-object-edit / Japanese speech-balloon contour revision.\nInput image1 is the EXACT edit target. Input image2 is a user-provided PHOTO of example balloon outlines only: use it solely to understand how thin colored contours and expressive thick rims vary by vocal intent. Do not reproduce its words, characters, screen, photograph or layout.\nChange ONLY the specified speech-balloon contours, line weight/color and tail design in image1. Preserve ALL existing manga artwork, frame widths/heights/positions, white gutters, borderless portions, character faces and anatomy, clothes, scene lighting, expressions and Japanese dialogue. Maintain original tall 3:1 aspect. Do NOT recompose, crop, zoom, reorder panels or add any speech to silent panels.\nText remains exact, LARGE upright Japanese, top-to-bottom columns and RIGHT-to-LEFT column order, same legibility and placements. Keep generous white inner padding and black printed manga gothic. Tails connect to correct actual speaker; keep faces and hands unobscured. No extra symbols, hearts, captions, labels, English or watermark. Distinguish quiet spoken voice with a CONNECTED pointed/curved tail from thought with dots. No thought dots here: EVERY existing line in this target is SPOKEN. Do not add a shout effect to a calm scene.\nPanel1 cropped Mira hand information: exact この国の王女よ。 Two columns RIGHT TO LEFT: この国の | 王女よ。 Use a clean tall rounded-rectangle/rounded capsule, fine subdued blue-gray outline matching Mira's composed self-introduction. Small tapered tail toward her OFFSCREEN MOUTH ABOVE RIGHT, never toward the jewel or hand. This is spoken dialogue, no thought dots and no electronic UI.\nPanel2 Ren eye reaction: unchanged, SILENT, no new balloon.\nPanel3 Ren introduction: exact レンだ。 Keep a simple ordinary upright oval, restrained dark charcoal line and short direct speech tail toward Ren mouth. Plain steady voice. Same legible text size.\nPanel4 borderless Ren relieved response: exact 無事なら、それで。 Two columns RIGHT TO LEFT: 無事なら、 | それで。 Replace generic round ellipse with a slightly elongated SOFTLY WAVERING outline, irregular but closed fine charcoal line, thinner than his normal speech; connected small weak wavering speech tail points toward Ren mouth. Audible tired breath after rescue, not fear, crying, shouting or interior thought. No dotted tail, no fluffy thought cloud, no speech without tail. Preserve the LARGE borderless last portrait exactly. The difference should communicate an exhausted soft voice, not random decoration.\n",
+    "prompt_file": "prompt-balloons-02.txt",
+    "reference_roles": [
+      "existing manga: edit target",
+      "user photo IMG_5297.HEIC: balloon contour reference only, kept outside the distributed skill"
+    ],
+    "actual_dimensions": {
+      "width": 724,
+      "height": 2172
+    },
+    "sha256": "3a01d48eb489e7e615e481d489b13cb60ce907b549a8422997b256f4d7c071c9",
+    "generated_origin": "/Users/takanorifukuyama/.codex/generated_images/01a10f99-efcb-7371-8c20-e01aa60f7ed9/exec-1f8ec04e-971c-4915-8f70-80ca2e981540.png"
+  },
+  "reference_scope": "reuse source hashes; original generation input roles preserved in historical_generation; historical input hashes not recorded"
+}

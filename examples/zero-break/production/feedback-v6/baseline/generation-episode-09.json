@@ -1,0 +1,332 @@
+[
+  {
+    "file": "01-workshop-return.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1792. Composition: one tall continuous single moment, borderless dramatic vertical flow; not multiple moments or panels\nScene and exact state: Rescue team back in warm workshop at night, freed residents rest on cots; Noa connects neutral magic meter near unarmored Ren, Mira holds trial memory crystal, Rook guards closed door.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../v5/art/a14-rejection.png",
+      "../production/references/noa.png"
+    ],
+    "sha256": "880abce17434930f6a7ca15f4fc0fd7f8e604c1142233e187a4fb3481fde565d",
+    "bytes": 2575083,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "workshop-return"
+  },
+  {
+    "file": "02-zero-again.png",
+    "method": "built-in image_gen",
+    "prompt": "Edit ONLY time-of-day background and light in FIRST image. Preserve the same black crystal on silver gothic measuring pedestal, the exact large numeral 0, Ren's BARE hand, any native vertical speech, composition and all device details. This is the NIGHT brass-and-brick workshop from image2, not daytime: replace bright daylight windows with dark indigo night windows, warm amber oil-lamp light and dim brick/copper-pipe interior. No sun or bright blue sky, no character/letter changes, no armor.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../v5/art/a11-result.png"
+    ],
+    "sha256": "ebd81a0e0191a116b7f9687473eb9321320f9d93090265827d849de9fcc27137",
+    "bytes": 2343588,
+    "status": "generated",
+    "visualReview": "passed",
+    "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Close original black crystal-on-silver-pedestal meter from episode1 now at workshop bench shows exact big ０ on horizontal plaque. Ren bare hand on crystal, no armor.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.",
+    "repairs": [
+      {
+        "prompt": "Edit ONLY time-of-day background and light in FIRST image. Preserve the same black crystal on silver gothic measuring pedestal, the exact large numeral 0, Ren's BARE hand, any native vertical speech, composition and all device details. This is the NIGHT brass-and-brick workshop from image2, not daytime: replace bright daylight windows with dark indigo night windows, warm amber oil-lamp light and dim brick/copper-pipe interior. No sun or bright blue sky, no character/letter changes, no armor.",
+        "editTargetSavedAt": "source/02-zero-again-before-night.png",
+        "references": [
+          "art/02-zero-again.png",
+          "art/01-workshop-return.png"
+        ],
+        "previousSha256": "036d8a1801990e4304dc95c5b37c080973ac9cb5f953ddc61e42c82df0ecb9c4",
+        "finalArt": "art/02-zero-again.png",
+        "sha256": "ebd81a0e0191a116b7f9687473eb9321320f9d93090265827d849de9fcc27137"
+      }
+    ],
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "zero-again"
+  },
+  {
+    "file": "03-replay.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Noa slowly replays paper/oscilloscope line: magic needle flat while cyan chest glow visible in recording. Gesture toward discrepancy, device design consistent.\n\nBalloon 1: speech, Noa, upper right. EXACT text: 針は、動いてない。 . Columns RIGHT to LEFT: 針は、 / 動いてない。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../production/references/noa.png"
+    ],
+    "sha256": "6b322e5cac1438df273e2f676aee07e295e57752bf2b7539f852c0455ffd417d",
+    "bytes": 2418858,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "replay"
+  },
+  {
+    "file": "04-other-axis.png",
+    "method": "built-in image_gen",
+    "prompt": "Edit ONLY background time and environmental lighting in FIRST image. Preserve Mira, Ren and Noa, both graphs and ALL exact readable lettering 魔力 / 救助負荷 and 空じゃない。測る箱が違う。 unchanged. Same brass-and-brick workshop at NIGHT as image2, dark indigo windows and warm amber lamps. Replace any bright daytime sky or sunlit exterior with dark night workshop wall/window. Do not alter measurements, faces, clothes, speech bubble shape, drawing quality or layout.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png"
+    ],
+    "sha256": "fb8ca4c4447e4c28151f22ac385a5a865705109440adc128ad2ac4982217924d",
+    "bytes": 2372967,
+    "status": "generated",
+    "visualReview": "passed",
+    "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Mira draws TWO clear simple graph axes on paper, one flat, one rises during rescuing; exact large horizontal labels 魔力 and 救助負荷 . Ren leans in, not instantly master explanation.\n\nBalloon 1: speech, Mira, upper right. EXACT text: 空じゃない。測る箱が違う。 . Columns RIGHT to LEFT: 空じゃない。 / 測る箱が / 違う。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
+    "repairs": [
+      {
+        "prompt": "Edit ONLY background time and environmental lighting in FIRST image. Preserve Mira, Ren and Noa, both graphs and ALL exact readable lettering 魔力 / 救助負荷 and 空じゃない。測る箱が違う。 unchanged. Same brass-and-brick workshop at NIGHT as image2, dark indigo windows and warm amber lamps. Replace any bright daytime sky or sunlit exterior with dark night workshop wall/window. Do not alter measurements, faces, clothes, speech bubble shape, drawing quality or layout.",
+        "editTargetSavedAt": "source/04-other-axis-before-night.png",
+        "references": [
+          "art/04-other-axis.png",
+          "art/01-workshop-return.png"
+        ],
+        "previousSha256": "3600686bdc3712e6b064afe903144a6e97c4cdb32532203f307bf79edb37e29f",
+        "finalArt": "art/04-other-axis.png",
+        "sha256": "fb8ca4c4447e4c28151f22ac385a5a865705109440adc128ad2ac4982217924d"
+      }
+    ],
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "other-axis"
+  },
+  {
+    "file": "05-understand.png",
+    "method": "built-in image_gen",
+    "prompt": "Edit ONLY background and its light in FIRST image. Preserve Ren's black ordinary short-sleeve FABRIC shirt, bare hand/arm, red scarf, small cyan point at chest, thoughtful face and EXACT native vertical speech ゼロでも、ここにはある。. Replace the bright outdoor palace setting with the SAME INSIDE brass-and-brick rescue workshop at NIGHT in image2: oil lamps, copper pipes, shelves, warm amber light and dark indigo night window. No location jump outside, no daylight, no armor, no new characters or letters.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png"
+    ],
+    "sha256": "5859cd6eca04f7b76cf05e04af9cf801efe247401f7dda502d662390c67824d9",
+    "bytes": 1977837,
+    "status": "generated",
+    "visualReview": "passed",
+    "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Ren touches bare chest over faint cyan core, eyes widen with slow relief, red scarf moved slightly but same outfit.\n\nBalloon 1: speech, Ren, upper right. EXACT text: ゼロでも、ここにはある。 . Columns RIGHT to LEFT: ゼロでも、 / ここには / ある。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
+    "repairs": [
+      {
+        "prompt": "Edit ONLY background and its light in FIRST image. Preserve Ren's black ordinary short-sleeve FABRIC shirt, bare hand/arm, red scarf, small cyan point at chest, thoughtful face and EXACT native vertical speech ゼロでも、ここにはある。. Replace the bright outdoor palace setting with the SAME INSIDE brass-and-brick rescue workshop at NIGHT in image2: oil lamps, copper pipes, shelves, warm amber light and dark indigo night window. No location jump outside, no daylight, no armor, no new characters or letters.",
+        "editTargetSavedAt": "source/05-understand-before-workshop.png",
+        "references": [
+          "art/05-understand.png",
+          "art/01-workshop-return.png"
+        ],
+        "previousSha256": "dd72b9499e926b6f15d891c00f682cd7cddc44c39e42bda12aac0c8df7155211",
+        "finalArt": "art/05-understand.png",
+        "sha256": "5859cd6eca04f7b76cf05e04af9cf801efe247401f7dda502d662390c67824d9"
+      }
+    ],
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "understand"
+  },
+  {
+    "file": "06-siege.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1792. Composition: one tall continuous single moment, borderless dramatic vertical flow; not multiple moments or panels\nScene and exact state: Outside night alley, grey armored royal guards surround workshop main door and power pillar. Inside team not yet fighting, no graphic force.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png"
+    ],
+    "sha256": "159ca72d403ab8a5727c2c786dfa2810293b76d959093de3cb7c04053cdeb4bb",
+    "bytes": 2458060,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "siege"
+  },
+  {
+    "file": "07-cut-power.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Guard lever cuts workshop supply cable at street fuse box, lanterns inside dim visible through window. Ordinary electrical sabotage, no future villain face.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png"
+    ],
+    "sha256": "d9bb334f10f41356b293f12cd805404d3f3ac765c355f617e00796c8b5581ca4",
+    "bytes": 2098853,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "cut-power"
+  },
+  {
+    "file": "08-ventilator-stops.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Inside simple medical alcove, OLD MAN brown vest grey beard saved in episode5 on cot uses brass bellows breathing assistance, motion slows; Mira notices distress, no death or gore.\n\nBalloon 1: speech, Mira, upper right. EXACT text: 呼吸の装置が…！ . Columns RIGHT to LEFT: 呼吸の / 装置が…！.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../episode-05/art/10-old-man.png"
+    ],
+    "sha256": "30018f28486e75622454b213a3db2fb7061e1ab11526b04880e796d25956dbc1",
+    "bytes": 2492747,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "ventilator-stops"
+  },
+  {
+    "file": "09-check-patient.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Ren unarmored kneels beside same elderly man with shallow breath, checks wrist while Noa pulls isolated test circuit box from shelf. No immediate success.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form. The elderly survivor and breathing device match art/08-ventilator-stops.png: GREY beard and BROWN vest, lying on the same cot, brass mouth mask and BROWN LEATHER bellows connected by one hose. Keep the physical connection from isolated copper lead through a brass actuator to the bellows. No change of patient or ventilator design. Ren provides sustained power at the adjacent terminal; he cannot simultaneously be somewhere else.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../production/references/noa.png",
+      "art/08-ventilator-stops.png"
+    ],
+    "sha256": "1f48c44807972219fb1bacdcbd7153f210b2fd3a9d4486c0292718a1c28a6dad",
+    "bytes": 2387605,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "check-patient"
+  },
+  {
+    "file": "10-isolate-circuit.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Noa connects ONLY isolated rescue-core circuit to ventilator, physical copper leads and safety switch visible; no connection to city main grid or new form. Ren keeps one bare hand on terminal.\n\nBalloon 1: speech, Noa, upper right. EXACT text: 街の線とは、切り離す。 . Columns RIGHT to LEFT: 街の線とは、 / 切り離す。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form. The elderly survivor and breathing device match art/08-ventilator-stops.png: GREY beard and BROWN vest, lying on the same cot, brass mouth mask and BROWN LEATHER bellows connected by one hose. Keep the physical connection from isolated copper lead through a brass actuator to the bellows. No change of patient or ventilator design. Ren provides sustained power at the adjacent terminal; he cannot simultaneously be somewhere else.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../production/references/noa.png",
+      "art/08-ventilator-stops.png"
+    ],
+    "sha256": "34591943bfaa520f322d465421adbc2c52ec786729a440b4206734be44a13517",
+    "bytes": 2420281,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "isolate-circuit"
+  },
+  {
+    "file": "11-give-power.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1792. Composition: one tall continuous single moment, borderless dramatic vertical flow; not multiple moments or panels\nScene and exact state: Ren concentrates faint CYAN energy from chest into isolated lead with BOTH arms UNARMORED, no full armor or attack. Bellows starts first small motion, he sacrifices combat output.\n\nBalloon 1: speech, Ren, upper right. EXACT text: 戦う力は、あとでいい。 . Columns RIGHT to LEFT: 戦う力は、 / あとでいい。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form. The elderly survivor and breathing device match art/08-ventilator-stops.png: GREY beard and BROWN vest, lying on the same cot, brass mouth mask and BROWN LEATHER bellows connected by one hose. Keep the physical connection from isolated copper lead through a brass actuator to the bellows. No change of patient or ventilator design. Ren provides sustained power at the adjacent terminal; he cannot simultaneously be somewhere else.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "art/08-ventilator-stops.png"
+    ],
+    "sha256": "c5b1577b60939bbc9dc901fab1c308a23de8d3199a1b8e5f6e288f2dd928267d",
+    "bytes": 2494691,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "give-power"
+  },
+  {
+    "file": "12-rook-guard.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Rook silver armor blue cape holds steel shield against workshop door under guards' blows, protects exhausted unarmored Ren inside. No miraculous limitless power.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../v5/art/a14-rejection.png"
+    ],
+    "sha256": "a5faefbfaaea0eb508628cc64f1eeafc4908755b4ad105310a3eaf3a267e1e3e",
+    "bytes": 2585281,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "rook-guard"
+  },
+  {
+    "file": "13-breath-cue.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Close brass ventilator bellows expands and cyan indicator starts tiny pulse, patient face still outside crop. Wait for actual breathing response, no healthy smile shown yet.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form. The elderly survivor and breathing device match art/08-ventilator-stops.png: GREY beard and BROWN vest, lying on the same cot, brass mouth mask and BROWN LEATHER bellows connected by one hose. Keep the physical connection from isolated copper lead through a brass actuator to the bellows. No change of patient or ventilator design. Ren provides sustained power at the adjacent terminal; he cannot simultaneously be somewhere else.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "art/08-ventilator-stops.png"
+    ],
+    "sha256": "b42ce2347a4782ba23a2c6ddd1209019c7489c3317715a52c41c67b0bc634e8a",
+    "bytes": 2552503,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "breath-cue"
+  },
+  {
+    "file": "14-breath-returns.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: FIRST clear elderly man inhales, chest visibly lifts under blanket, hand relaxes; Mira relieved nearby, Ren remains at powered circuit.\n\nBalloon 1: speech, Mira, upper right. EXACT text: 息が、戻った。 . Columns RIGHT to LEFT: 息が、 / 戻った。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form. The elderly survivor and breathing device match art/08-ventilator-stops.png: GREY beard and BROWN vest, lying on the same cot, brass mouth mask and BROWN LEATHER bellows connected by one hose. Keep the physical connection from isolated copper lead through a brass actuator to the bellows. No change of patient or ventilator design. Ren provides sustained power at the adjacent terminal; he cannot simultaneously be somewhere else.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "art/08-ventilator-stops.png"
+    ],
+    "sha256": "fd9ae266de0b6708627367363307db68fec71715591e4446313de08154b71cca",
+    "bytes": 2533362,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "breath-returns"
+  },
+  {
+    "file": "15-small-line.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Output paper recorder draws a small unmistakably rising cyan line, Noa points with oil stained orange glove, no huge numeric gain, no upgraded gadget.\n\nBalloon 1: speech, Noa, upper right. EXACT text: ちゃんと、届いてる。 . Columns RIGHT to LEFT: ちゃんと、 / 届いてる。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../production/references/noa.png"
+    ],
+    "sha256": "5137fbbd78aab2c608249b8d911eb0952dea502dff10f6bcae5b55602cbb1d2a",
+    "bytes": 2320513,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "small-line"
+  },
+  {
+    "file": "16-signal.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Noa sees a faint stray transmission travelling out of isolated sensor toward thin separate line on city map. Do not show location label yet.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../production/references/noa.png"
+    ],
+    "sha256": "6e5573458d69cff9e67dfd60cf744b4ff2a36bdc0ee9d81fb65e1f7e0bddf67f",
+    "bytes": 2490592,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "signal"
+  },
+  {
+    "file": "17-under-palace.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1792. Composition: one tall continuous single moment, borderless dramatic vertical flow; not multiple moments or panels\nScene and exact state: FIRST reveal city map route goes into chamber DIRECTLY beneath royal palace white towers; map exact large label 王宮直下 . Mira traces destination, no fuel torture depiction.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png"
+    ],
+    "sha256": "9b2d47bb83cbbdc4f3be215187ed3b01c27105f11dc80769253d1626fe5c9ec9",
+    "bytes": 2678646,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "under-palace"
+  },
+  {
+    "file": "18-location.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Mira holds traced map while Ren still powers ventilator, eyes resolved. Rook keeps protective door, Noa watches line.\n\nBalloon 1: speech, Mira, upper right. EXACT text: ここが、消えた街区の行き先。 . Columns RIGHT to LEFT: ここが、 / 消えた街区の / 行き先。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form. The elderly survivor and breathing device match art/08-ventilator-stops.png: GREY beard and BROWN vest, lying on the same cot, brass mouth mask and BROWN LEATHER bellows connected by one hose. Keep the physical connection from isolated copper lead through a brass actuator to the bellows. No change of patient or ventilator design. Ren provides sustained power at the adjacent terminal; he cannot simultaneously be somewhere else.",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../v5/art/a14-rejection.png",
+      "../production/references/noa.png",
+      "art/08-ventilator-stops.png"
+    ],
+    "sha256": "e34430945c3692f1b2a214fb52f501e6a01427a2f30ddef90ccb45b7e2bb9e88",
+    "bytes": 2603465,
+    "status": "generated",
+    "visualReview": "passed",
+    "visualReviewEvidence": "validation.json and review/contact-360-*.png",
+    "id": "location"
+  }
+]
