@@ -1,0 +1,188 @@
+{
+  "number": 1,
+  "title": "水の出口",
+  "time": "召喚当日・昼から夕方",
+  "state": "三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。",
+  "scenes": [
+    {
+      "id": "01-arrival",
+      "art": "art/01-arrival-lettered.png",
+      "dialogue": [
+        [
+          "コウ・心",
+          "畑にいたはずなのに。"
+        ],
+        [
+          "コウ",
+          "ここ、どこだ……。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 100,
+      "prompt": "generation/01-arrival.prompt.txt",
+      "description": "One tall borderless vertical scene: Kou startled and unsteady on the paved lane at the top; his eyes follow immense pale sandstone ribs to the glowing ceiling; downward motion returns to his dirt-stained hands and green apron. Tower interior only, NOT open outdoor sky. He remembers farming but no Earth scene. Two separate moments, not duplicate simultaneous people.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "8946528a4ea13aca0a70bb59cb134207c76299a670cf64cbc616799bb1d91a8d"
+    },
+    {
+      "id": "02-gate",
+      "art": "art/02-gate-lettered.png",
+      "dialogue": [
+        [
+          "係員",
+          "帰還の門は、今は閉じてる。"
+        ],
+        [
+          "コウ",
+          "帰る方法は、あるんですね？"
+        ],
+        [
+          "係員",
+          "調査待ちだ。まずは寝床だ。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "prompt": "generation/02-gate.prompt.txt",
+      "description": "Three unequal panels: medium Kou facing a plain wooden administrative desk; closer offscreen clerk's hand indicating a closed stone gate diagram without lettering; closeup Kou absorbing the answer. Clerk is an ordinary older adult in beige robe, not Leon. Show patient exchange, hope and worry.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "6dc6fbde0e4b5ad7dc12e3eb0af9a88ab7410f191396d930e59e624669db7ee8"
+    },
+    {
+      "id": "03-diner",
+      "art": "art/03-diner-lettered.png",
+      "dialogue": [
+        [
+          "コウ",
+          "飯代なら、働きます。"
+        ],
+        [
+          "エルナ",
+          "畑を、見られる？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 60,
+      "prompt": "generation/03-diner.prompt.txt",
+      "description": "Wide panel: Kou pauses outside diner blue awning, hungry, Elna at serving window to his left. Small inset of his hand on stomach. Lower medium panel of Elna turning toward vegetable plot. Keep paved lane left and beds right of diner.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "e2d1ee09af3d7b005d19a7ee4689e90f9235cbcac1ffa03eb619d6aa4cd6b619"
+    },
+    {
+      "id": "04-wet-soil",
+      "art": "art/04-wet-soil-lettered.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "水も肥料も、増やしたのに。"
+        ],
+        [
+          "コウ",
+          "この土、ずっと湿ってる？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "prompt": "generation/04-wet-soil.prompt.txt",
+      "description": "Three unequal panels in the same plot: wide Elna left and crouching Kou right beside wilted broad leafy vegetables; closeup her tense hand holding a small fertilizer sack closed; lower closeup Kou pressing moist soil, not pouring water. Water remains pooled, drain is still blocked.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "eeb922fe69a641acf8e80643cce64755d3c28d4ba72397ff291542a6f1af544c"
+    },
+    {
+      "id": "05-roots",
+      "art": "art/05-roots-lettered.png",
+      "dialogue": [
+        [
+          "コウ",
+          "葉より先に、根を見たい。"
+        ],
+        [
+          "コウ",
+          "悪い場所も、残して比べよう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 95,
+      "prompt": "generation/05-roots.prompt.txt",
+      "description": "Two medium panels with a narrow hand closeup between: Kou gently exposes one small plant's roots with a trowel; dark compact wet root zone and some damaged roots, no instant healthy glow; Elna silently watches and responds to his cautious expression. Exactly one dug plant, nearby plants remain rooted.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "b6d1fb329145291f2b5c4c9384399ce9273c9a4298512f6077da7966fbc3b27a"
+    },
+    {
+      "id": "06-permission",
+      "art": "art/06-permission-lettered.png",
+      "dialogue": [
+        [
+          "コウ",
+          "この出口、誰が管理してる？"
+        ],
+        [
+          "エルナ",
+          "店の区画は、私が掃除する決まり。"
+        ],
+        [
+          "コウ",
+          "開けてもいい？"
+        ],
+        [
+          "エルナ",
+          "うん。お願い。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 80,
+      "prompt": "generation/06-permission.prompt.txt",
+      "description": "Three unequal conversation panels at removable wooden drain inspection cover near plot edge: Kou asks while pointing at cover; Elna with diner blue awning behind answers; their hands reach for the same cover after permission. Drain not flowing yet, leaves and silt block its opening.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "f3a246a2438007494c6c48106c6e69e04af51ff8df1529a286e4f403b46b741b"
+    },
+    {
+      "id": "07-flow",
+      "art": "art/07-flow-repaired.png",
+      "dialogue": [
+        [
+          "効果音",
+          "ごぼっ"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 140,
+      "prompt": "generation/07-flow.prompt.txt",
+      "description": "One tall flowing composition plus two small unequal hand closeups at the top: Kou removes leaf litter and silt from accessible outlet, Elna holds lifted cover aside; clear visible flow then follows the channel downward and out safely to common drain. No digging through structural wall, no flooding other houses, wilted plants remain wilted. The visible action causes the flow.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "1c9cb71c9721838b26818bf61e78bc743d74c4be8fb82fd15682ba667a1cf3d5"
+    },
+    {
+      "id": "08-first-meal",
+      "art": "art/08-first-meal-lettered.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日は、ここで食べて。"
+        ],
+        [
+          "コウ",
+          "まだ、畑は治ってない。"
+        ],
+        [
+          "エルナ",
+          "でも、水は動いたよ。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 180,
+      "prompt": "generation/08-first-meal.prompt.txt",
+      "description": "Three panels with final large warm scene: Elna sets a steaming barley-and-meat bowl on diner counter for Kou; closeup his rough hands near the bowl as he looks worried toward the still wilted garden; final Elna's gentle expression and Kou's relieved face in warm kitchen lamplight. Vegetables and grain are already purchased or existing, not newly grown. No miraculous lush plot.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "eaa1b1669ddaddc51da571781f84b21258c2ecb4e81d8fc4af56b486f130e197"
+    }
+  ]
+}

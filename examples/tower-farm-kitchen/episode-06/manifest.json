@@ -1,0 +1,176 @@
+{
+  "number": 6,
+  "title": "おいしいだけじゃ、店は続かない",
+  "time": "18〜20日目",
+  "state": "主食と肉、葉菜の多くは仕入れ。6銅貨定食の差引2.6は賃金や家賃を払う原資で純利益ではない。庭葉はまだ苗。",
+  "scenes": [
+    {
+      "id": "01-large-portion",
+      "art": "art/01-large-portion.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "大盛り、つけといたよ。"
+        ],
+        [
+          "コウ",
+          "その分の原価は？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 80,
+      "prompt": "generation/01-large-portion.prompt.txt",
+      "description": "Warm diner kitchen, Elna cheerfully adds extra food to guest bowl, Kou next to small ledger looks concerned but kind. Two unequal panels bowl then faces. Do not imply new seedlings harvested.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "96a703be16f117b9a2ec51cef4565a6c8f39c2349324b9813b20457194fd6296"
+    },
+    {
+      "id": "02-costs",
+      "art": "art/02-costs.png",
+      "dialogue": [
+        [
+          "コウ",
+          "自分の畑の野菜も、ただじゃない。"
+        ],
+        [
+          "コウ",
+          "種と、働いた時間がある。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 90,
+      "prompt": "generation/02-costs.prompt.txt",
+      "description": "Three hand closeups: purchased grain sack and meat basket invoice with abstract marks, seed packet and tool, Kou's worn hands. Elna listening beside counter, purchased produce basket visible.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "0c0494c7abe8d359520fc97373f4df75b964dcac7b971af81d468f7d37f08e34"
+    },
+    {
+      "id": "03-coins",
+      "art": "art/03-coins.png",
+      "dialogue": [
+        [
+          "コウ",
+          "六枚もらって、全部は残らない。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 100,
+      "prompt": "generation/03-coins.prompt.txt",
+      "description": "Top view six copper coins next to one meal, smaller closeup several expense piles and ledger sketch, lower Kou explaining to Elna. Exactly six sale coins in first view. NO readable text besides dialogue, no profit waterfall chart.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "7c6eceaf06069eb0e564ede1d1bbd990002013233b7b7b074f5612abecb32882"
+    },
+    {
+      "id": "04-wages",
+      "art": "art/04-wages.png",
+      "dialogue": [
+        [
+          "コウ",
+          "残りから、家賃と賃金を払う。"
+        ],
+        [
+          "エルナ",
+          "私たちの働いた分も？"
+        ],
+        [
+          "コウ",
+          "そこを削ると、続かない。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 100,
+      "prompt": "generation/04-wages.prompt.txt",
+      "description": "Three intimate unequal conversation panels: Kou earnest at ledger, Elna surprised and thoughtful, Kou replies. Quiet kitchen after closing, table clean, no other speakers.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "a9af7be28c5685160a8ecf55f2f724eae351eced351ca025808897a1095a9698"
+    },
+    {
+      "id": "05-two-dishes",
+      "art": "art/05-two-dishes.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日は、二品に絞ろう。"
+        ],
+        [
+          "コウ",
+          "同じ仕込みで、出せるものに。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "prompt": "generation/05-two-dishes.prompt.txt",
+      "description": "Elna and Kou choose two practical dishes on clean prep counter, one grain-and-meat bowl and one soup, shared ingredients laid separately. Small inset simple blank menu board without text. Do not display dozens of fancy dishes.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "d42d354e19d42c8c18a96979502f7bd0551c477d486da24e52482f3c10c8f2d0"
+    },
+    {
+      "id": "06-cook",
+      "art": "art/06-cook.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "葉は、最後に。"
+        ],
+        [
+          "エルナ",
+          "色と食感を、残したい。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 75,
+      "prompt": "generation/06-cook.prompt.txt",
+      "description": "Unequal closeups: washed leaves chopped on designated board; Elna adds leaves LAST to steaming pan or pot; larger shoulder view her timing heat. Kou only assists by handing clean ingredients. Food moisture and steam appetizing, no magical fireworks.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "1b298b10ddc5cfbe6bb7adfc61a66b370efe081d3ab768fcce8ab412750d6f49"
+    },
+    {
+      "id": "07-reservation",
+      "art": "art/07-reservation.png",
+      "dialogue": [
+        [
+          "客",
+          "次の帰りも、この席に来たい。"
+        ],
+        [
+          "エルナ",
+          "予約、受けていいかな。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "prompt": "generation/07-reservation.prompt.txt",
+      "description": "Auburn-haired young adult customer in ochre cloak returns at counter with steaming dish; medium Elna listens smiling, lower Kou looks toward seedling plot outside. Same customer as episode three, not Leon.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "1528cb2b7ab45ef7db5f126d7c1c3918d48d5172bfa3401168cfdfa626bba1d0"
+    },
+    {
+      "id": "08-limit",
+      "art": "art/08-limit.png",
+      "dialogue": [
+        [
+          "コウ",
+          "畑に合わせて、数を決めよう。"
+        ],
+        [
+          "エルナ",
+          "売り切れも、先に伝える。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 180,
+      "prompt": "generation/08-limit.prompt.txt",
+      "description": "Large quiet partnership scene under blue awning: Elna writes small reservation list with abstract marks, Kou beside her holding crop notebook, small plot at dusk. Serious hopeful sense of limited but workable business.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "dce000b9f5ae16ecc2c20628c1cd5a753cd26c54593ce45f664d4ce116294662"
+    }
+  ]
+}

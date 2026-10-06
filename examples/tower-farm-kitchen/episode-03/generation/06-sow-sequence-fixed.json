@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-c2a48b9f-e0d3-44f5-b625-15c18594cff6.png",
+  "adopted": "art/06-sow-sequence-fixed.png",
+  "original_sha256": "85265ac38c6793f3f5f440bf9387e5a41cb55837a43ca011608b157165282d24",
+  "adopted_sha256": "85265ac38c6793f3f5f440bf9387e5a41cb55837a43ca011608b157165282d24",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/06-sow-sequence-fixed.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Edit the first referenced image only. Only reorder the THREE narrow action panels in the middle row for Japanese right-to-left reading: RIGHT = finger opens shallow furrow (the current left panel), CENTER = tiny dark 2 mm seeds being placed (current center), LEFT = palms gently covering soil (current right). Move entire panels without horizontally mirroring any pixels or Japanese SFX. Preserve top and bottom panels and both exact dialogue balloons unchanged. Preserve every element not explicitly named for repair. Keep upright Japanese vertical lettering integrated in the raster artwork, top-to-bottom columns read right-to-left. No new words, no added story events, no reflow of the existing dialogue, no new actors. High-quality finished smartphone vertical-scroll manga, same aspect ratio and resolution as target.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/06-sow-seed-fixed.png",
+      "sha256": "b8537455b530fa1c5664d48d3e433bc0615537b9e38a48d05d007ea890e55926"
+    }
+  ]
+}

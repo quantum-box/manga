@@ -3,18 +3,19 @@
 ## 制作状態と依頼
 
 ```yaml
-status: concept_proposal
-target_episode_count: null
-episode_count_constraint: pending_user_response
-scope_source: user_question_pending
+status: in_production
+target_episode_count: 200
+episode_count_constraint: minimum
+scope_source: user_2026_10_07
+roadmap_episode_count: 240
 initial_production_range: [1, 10]
-completed_art_episodes: []
+completed_art_episodes: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 primary_setting_proposal: inhabited_fantasy_tower
 ```
 
 ユーザーの指定は、Webtoon、MMORPG系または塔系、王道の剣と魔法、農業／飲食店での無双、細部まで解像度の高い農業、技術とシステムを世界観へ組み込み「技術的にもできそう」と感じられること。
 
-本資料はその指定を具体化した提案。全体話数は50話・100話・200話以上の選択を質問中。回答前に長期構成や各話の脚本を確定しない。タイトル・人物・召喚の経緯は提案であり、ユーザーが採用した事実として扱わない。
+2026-10-07、ユーザーは「200以上」と指定。200話を下限とし、初期ロードマップは240話まで設計する。240話ちょうどの完結は確約せず、主軸の決着とその先の余地を分ける。初回制作範囲は第1〜10話。タイトル・人物・召喚の経緯は制作上の設定で、ユーザー個別承認済みとは扱わない。
 
 ## 一文の企画
 
@@ -38,7 +39,7 @@ primary_setting_proposal: inhabited_fantasy_tower
 
 召喚時に授かった職業は〈耕作者〉。戦闘技能は乏しい。強みは、土を見て水を疑い、比較区を残し、成功を記録して次の作業へ渡せること。未知の作物や魔力障害では、現地の農家や技師から教わる。
 
-成長の道筋は「一畝を救う → 小さな店を続ける → 遠征へ継続納品する → 複数拠点の補給を支える」。期間・話数の割り当ては全体規模の回答後に決める。最終的には耕介一人が働かなくても回る畑と厨房を作る方向を候補とする。
+成長の道筋は「一畝を救う → 小さな店を続ける → 遠征へ継続納品する → 複数拠点の補給を支える」。話数と転換は[ロードマップ](roadmap.md)へ記録する。最終的には耕介一人が働かなくても回る畑と厨房を作り、農地と食堂の連合が塔の居住区を支える。
 
 無双の見せ場は、最高級食材を出すことだけではない。他店が欠品する日に温かい定食を出す、輸送が止まっても備蓄で遠征をつなぐ、同じ予算で安全な食事を多く届ける。味への驚き、行列、次の予約、攻略隊からの指名が直接の報酬になる。
 
@@ -68,6 +69,6 @@ primary_setting_proposal: inhabited_fantasy_tower
 
 ## 詳細資料
 
-[世界](world.md)、[人物](characters.md)、[農業と設備](agriculture.md)、[連続性](continuity.md)、[一次資料](sources.md)。
+[世界](world.md)、[人物](characters.md)、[農業と設備](agriculture.md)、[ロードマップ](roadmap.md)、[導入10話](opening-arc.md)、[連続性](continuity.md)、[一次資料](sources.md)、[制作台帳](../production/status.md)。
 
 縦読みでは、根を掘る手の接写、畝の断面、排水路を流れる水、畑の全景へ視点をつなぐ。料理では刻む短い動作と、器から立ち上る湯気の長い画面を使い分ける。農業説明の文字は絵で確認できる判断に絞り、詳細な数値や検証記録は巻末資料へ回せる構造にする。

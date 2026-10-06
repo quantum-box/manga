@@ -1,0 +1,66 @@
+{
+  "localVerification": "passed",
+  "checkedAt": "2026-10-06T18:49:50.142252+00:00",
+  "completedArtEpisodes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "selectedScenes": 80,
+  "phoneViewports": [
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "manualReview": "All selected dialogue, speakers, chronology, tools, crops and quantified props read at both widths. Hashes bound to each episode validation.",
+  "pythonTests": {
+    "command": "python3 -m unittest discover -s scripts -p 'test_*.py'",
+    "count": 11,
+    "result": "passed"
+  },
+  "iosBundle": {
+    "command": "python3 scripts/sync_ios_webtoons.py --check",
+    "titles": 7,
+    "readers": 52,
+    "result": "passed"
+  },
+  "swiftTests": {
+    "tests": [
+      "ios_catalog",
+      "remote_catalog",
+      "offline_downloads",
+      "reading_history",
+      "reader_content"
+    ],
+    "result": "passed"
+  },
+  "originalArtworkChecks": {
+    "result": "passed",
+    "checks": [
+      "80 original PNGs byte-identical in standalone readers and iOS resources",
+      "Prompt files equal recorded actual prompts",
+      "Reference file SHA-256 and original/adopted SHA-256 intact",
+      "Eight selected art files per episode, no unselected art referenced by readers",
+      "Canonical dialogue and scene order match scripts",
+      "Local chapter links resolve",
+      "Roadmap intervals cover 1–240 without gaps or overlaps",
+      "Fictional yield and contribution-margin calculations consistent"
+    ]
+  },
+  "ciSource": "https://github.com/quantum-box/manga/pull/27",
+  "physicalDeviceReview": "not performed",
+  "publicServerPublishing": "not performed",
+  "remainingScope": "Episodes 11–240 are a series roadmap, not finished art."
+}

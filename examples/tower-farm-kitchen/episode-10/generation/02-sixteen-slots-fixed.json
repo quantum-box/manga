@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-a473eac3-9aeb-4b43-b156-033682b94a3c.png",
+  "adopted": "art/02-sixteen-slots-fixed.png",
+  "original_sha256": "0337cdd6723c951ecc6b954ed3acd80331ea2b3e26eca34d786c01baeba38f53",
+  "adopted_sha256": "0337cdd6723c951ecc6b954ed3acd80331ea2b3e26eca34d786c01baeba38f53",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/02-sixteen-slots-fixed.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Edit the first referenced image only. Only repair the reservation grid drawn in the notebook: EXACTLY SIXTEEN cells arranged as a clear 4 by 4 grid, each with one small black reservation dot, in the notebook closeup and corresponding top-panel notebook. No 3 by 4 twelve-cell grid. Keep the handwritten title 予約. Preserve all other panels, foods, hands, faces, exact speech balloons including 一日十六食, and font size. This is sixteen service reservations, not a claim that the farm alone supplies all sixteen. Preserve every element not explicitly named for repair. Keep upright Japanese vertical lettering integrated in the raster artwork, top-to-bottom columns read right-to-left. No new words, no added story events, no reflow of the existing dialogue, no new actors. High-quality finished smartphone vertical-scroll manga, same aspect ratio and resolution as target.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/02-sixteen.png",
+      "sha256": "001d04f5306cf2b0a5a24d389eec89aa990380902389098da762868074fb199a"
+    }
+  ]
+}

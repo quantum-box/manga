@@ -1,0 +1,186 @@
+{
+  "number": 8,
+  "title": "初めての、自分たちの収穫",
+  "time": "35日目・最初の播種から28日",
+  "state": "第一播種の育った二区画、計8m²を収穫。遅い一区画は残す。使用可能量は約5.1kgという創作上の実測。全48m²を同時収穫しない。",
+  "scenes": [
+    {
+      "id": "01-ready",
+      "art": "art/01-ready.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "採って、いい？"
+        ],
+        [
+          "コウ",
+          "一株、厨房で確かめよう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "prompt": "generation/01-ready.prompt.txt",
+      "description": "First small mature leafy sections at day thirty-five, other later-sown sections still small, one shaded first section smaller; Elna crouches excited, Kou checks one leaf. Gentle morning tower light, no enormous vegetables.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "a7c1c6e5bdea8ab840cc1ec91fc77e1fed1b9062f3bee8186fa019ff1d328ad1"
+    },
+    {
+      "id": "02-cut",
+      "art": "art/02-cut.png",
+      "dialogue": [
+        [
+          "コウ",
+          "土を、葉につけないように。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 70,
+      "prompt": "generation/02-cut.prompt.txt",
+      "description": "Three unequal hand shots: clean harvest basket on path, Kou cuts garden-leaf crop above soil carefully, leaves placed gently without crushing or dirty roots. Elna watches. Only selected mature sections harvested.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "90abf3d8f5f7088c92f35c29b8aba059c1bce34935bc74ca16ade9beb505586d"
+    },
+    {
+      "id": "03-grade",
+      "art": "art/03-grade.png",
+      "dialogue": [
+        [
+          "コウ",
+          "重さと、使える分を分ける。"
+        ],
+        [
+          "エルナ",
+          "小さくても、使える葉はある。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 90,
+      "prompt": "generation/03-grade.prompt.txt",
+      "description": "Elna and Kou sort leaves at designated utility table, usable irregular small leaves in one basket, damaged leaves separately in reject tray. Closeups genuine leaves and hands. Do not present rotten material as food.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "983b9809c9297a3dd2dd2272c77cbc4677f6b4723fd062b9e198ae79949901d2"
+    },
+    {
+      "id": "04-weigh",
+      "art": "art/04-weigh.png",
+      "dialogue": [
+        [
+          "コウ",
+          "使える分は、五キロほど。"
+        ],
+        [
+          "エルナ",
+          "まず、この量で考えよう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 110,
+      "prompt": "generation/04-weigh.prompt.txt",
+      "description": "Mechanical beam scale weighing baskets, Kou records simple tally in notebook, Elna sees modest harvest. No giant produce mountain; approximately five kilograms usable total across harvested sections.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "988d6c34c76b178e33bcaf730110410aca31ac58a95e5cee730aec18d7b677fd"
+    },
+    {
+      "id": "05-kitchen",
+      "art": "art/05-kitchen-sequence-fixed.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "この大きさなら、使いやすい。"
+        ],
+        [
+          "エルナ",
+          "食べやすい切り方にしよう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 80,
+      "prompt": "generation/05-kitchen.prompt.txt",
+      "description": "Kitchen washed harvest transferred separately, Elna slices leaves to bite-sized pieces, Kou sets clean bowl; three different-size closeups and medium cooking view. Stable cream apron and blue headscarf.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "762e7e9124681ba1a666611b713ac127d251cdaf12b577e843b996a35c2cc19c",
+      "edits": [
+        {
+          "prompt": "generation/05-kitchen-sequence-fixed.prompt.txt",
+          "record": "generation/05-kitchen-sequence-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "06-meal-reveal",
+      "art": "art/06-meal-reveal.png",
+      "dialogue": [
+        [
+          "客",
+          "いただきます。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 160,
+      "prompt": "generation/06-meal-reveal.prompt.txt",
+      "description": "Large borderless appetizing hero composition: steaming grain-and-meat bowl topped with bright freshly cooked garden-leaf greens, bowl near auburn young adult customer's rough hands, lower warm eager face before first bite. Food richly drawn, no added text except exact small speech balloon.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "1db551e6f507eb5870242c361be791d91d387337a38cf0d87b7913ae4076e406"
+    },
+    {
+      "id": "07-earned",
+      "art": "art/07-earned-dish-fixed.png",
+      "dialogue": [
+        [
+          "コウ",
+          "やっと、畑が皿になった。"
+        ],
+        [
+          "エルナ",
+          "私も、待ってた。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 150,
+      "prompt": "generation/07-earned.prompt.txt",
+      "description": "Three panels: customer enjoys first bite silently; closeup Kou's relieved face after weeks of waiting; Elna beside him with soft pleased expression. Calm adult emotion, no instant buff numbers. Diner warm, crop plot distant.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "adc2aca9415403e77efbd064e96688e5a4390fa3d6b8fab8deb9a2bccbdbd391",
+      "edits": [
+        {
+          "prompt": "generation/07-earned-dish-fixed.prompt.txt",
+          "record": "generation/07-earned-dish-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "08-deliver-next",
+      "art": "art/08-deliver-next-empty-crates.png",
+      "dialogue": [
+        [
+          "コウ",
+          "採れた。次は、届ける番だ。"
+        ],
+        [
+          "レオン",
+          "明日の便、待っている。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 180,
+      "prompt": "generation/08-deliver-next.prompt.txt",
+      "description": "Warm evening kitchen, Kou and Elna prepare clean containers beside remaining harvest basket, Leon at doorway confirms next morning delivery. No already-packed food stored overnight: preparation is containers and schedule.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "c55bd8803a42cabd07146e4ef4a52bba36099e4c838216319762e6c8a0dae29f",
+      "edits": [
+        {
+          "prompt": "generation/08-deliver-next-empty-crates.prompt.txt",
+          "record": "generation/08-deliver-next-empty-crates.json"
+        }
+      ]
+    }
+  ]
+}

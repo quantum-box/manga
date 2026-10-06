@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-cb4dbc1d-8adc-4ed7-b7fb-a3bf06648e44.png",
+  "adopted": "art/06-clean-closed-first.png",
+  "original_sha256": "e365c37710e47fc556dafeb4f7b13ac4d7943ddff9b0e3beb793094afa4b16fb",
+  "adopted_sha256": "e365c37710e47fc556dafeb4f7b13ac4d7943ddff9b0e3beb793094afa4b16fb",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/06-clean-closed-first.prompt.txt",
+  "prompt": "Edit this exact vertical Japanese fantasy comic sheet, retaining its dimensions, painted style, all panel borders, faces, colors, dialogue, and every panel below the first panel unchanged. Fix only the filter in the TOP FIRST PANEL: Elna has not opened or removed it yet. The black cylindrical mesh cartridge must be fully seated INSIDE the clear upright filter housing, with its black round top lid screwed completely closed, flush to the top collar. No mesh or cartridge protrudes above the housing. Elna's right fingertips REST gently on the CLOSED lid as she asks how to remove it; she is not lifting anything. Elna and Iris keep their existing body positions. The top balloon must keep the exact existing Japanese vertical wording この網、私にも外せる？ with its question mark, large legible letters and correct tail to Elna. The middle RIGHT panel is then Iris explaining うん。ここを、緩めて。, the middle LEFT panel is the subsequent actual cartridge removal, and the bottom panel is Elna washing the removed cartridge. These three later panels and all their lettering must remain identical to the input. The sequence is closed first, explain second, remove third, rinse fourth. Do not modify anything else.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/06-clean-sequence-fixed.png",
+      "sha256": "2ea6d2270b696c811f1e0af90fcbadc90c65bf5a392a3485c3825cb5faff4b6c"
+    }
+  ]
+}

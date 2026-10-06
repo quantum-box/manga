@@ -1,0 +1,216 @@
+{
+  "number": 4,
+  "title": "低い桶は、嘘をつかない",
+  "time": "8〜12日目",
+  "state": "160L桶は独立した丈夫な架台。配水は最初、一列ずつ容器で量を測る。細い自動点滴を既製品として出さない。",
+  "scenes": [
+    {
+      "id": "01-carry",
+      "art": "art/01-carry-before-build.png",
+      "dialogue": [
+        [
+          "コウ",
+          "水を運ぶだけで、午前が終わる。"
+        ],
+        [
+          "エルナ",
+          "仕込みにも、来てほしい。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 80,
+      "prompt": "generation/01-carry.prompt.txt",
+      "description": "Kou carries two manageable wooden water buckets along path, not over crop bed; small closeup blistered palm; Elna at diner kitchen doorway worried about empty prep table. Seedlings small, daytime.",
+      "edits": [
+        {
+          "prompt": "generation/01-carry-before-build.prompt.txt",
+          "record": "generation/01-carry-before-build.json"
+        }
+      ],
+      "width": 887,
+      "height": 1774,
+      "sha256": "b6ffbc0a2e1cd1631b57065281ab1a3759963e8671397ae2eac6b3554ff871b4"
+    },
+    {
+      "id": "02-iris",
+      "art": "art/02-iris-proposal.png",
+      "dialogue": [
+        [
+          "イリス",
+          "桶を上げれば、流れるよ。"
+        ],
+        [
+          "コウ",
+          "同じ量を、配れる？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 75,
+      "prompt": "generation/02-iris.prompt.txt",
+      "description": "Iris enters beside empty wooden tank and laid-out ceramic pipe segments; medium Kou faces her, lower her hand sketches tank above beds. Goggles on forehead, navy short hair. No modern PVC or electronics.",
+      "edits": [
+        {
+          "prompt": "generation/02-iris-proposal.prompt.txt",
+          "record": "generation/02-iris-proposal.json"
+        }
+      ],
+      "width": 887,
+      "height": 1774,
+      "sha256": "b0b4d1704d348dddae0c5dcca29ed5dce6ee6cde4771f1b786d519c00a9c4804"
+    },
+    {
+      "id": "03-stand",
+      "art": "art/03-stand.png",
+      "dialogue": [
+        [
+          "イリス",
+          "水だけで、百六十キロ。"
+        ],
+        [
+          "コウ",
+          "台から、作り直そう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "prompt": "generation/03-stand.prompt.txt",
+      "description": "Three practical construction panels: Iris checks tank and support sketch, Kou and Balt assemble braced thick timber free-standing platform, Elna sees strong diagonal bracing. Water tank is still empty until stand complete. Do not place 160kg on flimsy roof.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "c3701aa300bcd8cbe346377d6c9db5cb4e6daafe86b5b5d53c77f4b3d7a1bdb2"
+    },
+    {
+      "id": "04-unequal",
+      "art": "art/04-unequal-reading-order.png",
+      "dialogue": [
+        [
+          "コウ",
+          "手前ばかり、多い。"
+        ],
+        [
+          "イリス",
+          "高さと、管の長さが違うから。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 100,
+      "prompt": "generation/04-unequal.prompt.txt",
+      "description": "Three unequal closeups same elapsed test: different outlets pour into identical measuring cups, near cup contains more than far cup; lower Kou and Iris looking at difference. Tank only modest height, pipe has clear joints and accessible valves.",
+      "edits": [
+        {
+          "prompt": "generation/04-unequal-reading-order.prompt.txt",
+          "record": "generation/04-unequal-reading-order.json"
+        }
+      ],
+      "width": 887,
+      "height": 1774,
+      "sha256": "e5371f35694251589bd25c76b42a3c84a3a2f6ac138058f56ea5144ce85bc790"
+    },
+    {
+      "id": "05-zones",
+      "art": "art/05-zones.png",
+      "dialogue": [
+        [
+          "コウ",
+          "一列ずつ開けて、量を測る。"
+        ],
+        [
+          "イリス",
+          "壊れても、直せる形にしよう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 70,
+      "prompt": "generation/05-zones.prompt.txt",
+      "description": "Iris points to simple wooden stopcock, Kou opens ONE bed section and measures delivered water; other sections closed. Hands and pipe physically coherent. Main outlet larger than tiny modern drip emitter.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "84a3d4d460e789120aab7baef07a28d3a92ef43a5212e74401fe6655ea92101b"
+    },
+    {
+      "id": "06-clean",
+      "art": "art/06-clean-closed-first.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "この網、私にも外せる？"
+        ],
+        [
+          "イリス",
+          "うん。ここを、緩めて。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 80,
+      "prompt": "generation/06-clean.prompt.txt",
+      "description": "Two closeups and one face panel: removable mesh filter lifted from accessible housing, Elna rinses removable part in utility basin, Iris shows simple fitting. Irrigation tool cleaning not on food-prep surface.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "e365c37710e47fc556dafeb4f7b13ac4d7943ddff9b0e3beb793094afa4b16fb",
+      "edits": [
+        {
+          "prompt": "generation/06-clean-sequence-fixed.prompt.txt",
+          "record": "generation/06-clean-sequence-fixed.json"
+        },
+        {
+          "prompt": "generation/06-clean-closed-first.prompt.txt",
+          "record": "generation/06-clean-closed-first.json"
+        }
+      ]
+    },
+    {
+      "id": "07-magic-lift",
+      "art": "art/07-magic-lift-caster.png",
+      "dialogue": [
+        [
+          "コウ",
+          "魔法は、桶に上げる時だけ。"
+        ],
+        [
+          "イリス",
+          "流す間は、手が空くね。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 120,
+      "prompt": "generation/07-magic-lift.prompt.txt",
+      "description": "Tall composition: small water spell lifts EXISTING water from source barrel to raised tank, luminous blue stream visibly connects both water bodies, source level falls; then valve sends stored water gently to one section while Iris lowers hand exhausted but satisfied. No conjured infinite water.",
+      "edits": [
+        {
+          "prompt": "generation/07-magic-lift-caster.prompt.txt",
+          "record": "generation/07-magic-lift-caster.json"
+        }
+      ],
+      "width": 887,
+      "height": 1774,
+      "sha256": "7aa1b06406d31aa538798ccf28afc2624214b12658d3a7fd00943f0478e6c998"
+    },
+    {
+      "id": "08-time-saved",
+      "art": "art/08-time-saved-sequence-fixed.png",
+      "dialogue": [
+        [
+          "コウ",
+          "空いた時間で、苗を見る。"
+        ],
+        [
+          "エルナ",
+          "それから、昼ごはんを作ろう。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 170,
+      "prompt": "generation/08-time-saved.prompt.txt",
+      "description": "Large warm scene: Kou crouches inspecting SMALL seedlings, water delivery controlled in one background section; lower Elna invites him at blue-awning diner, still modest plot, no broad mature crop. His hands relaxed.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "18d19d8a13c2888b533f111a600e6ca6ebf1c919990c4b575ff5a80e62e4f137",
+      "edits": [
+        {
+          "prompt": "generation/08-time-saved-sequence-fixed.prompt.txt",
+          "record": "generation/08-time-saved-sequence-fixed.json"
+        }
+      ]
+    }
+  ]
+}

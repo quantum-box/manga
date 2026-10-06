@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-aa3cd5c6-7348-485a-8b64-5d9a494258e5.png",
+  "adopted": "art/03-calibration-speaker-fixed.png",
+  "original_sha256": "a4156c3ef66e159c09505ae0c695880cbd98fa0ec5e4a951286f64c1c2bf6132",
+  "adopted_sha256": "a4156c3ef66e159c09505ae0c695880cbd98fa0ec5e4a951286f64c1c2bf6132",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/03-calibration-speaker-fixed.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Edit the first referenced image only. Only repair the tail of the bottom dialogue balloon 器具の基準も、確かめよう。 It belongs to KOU, the black-haired man on the LEFT, not Iris on the right. Aim its tail toward Kou's mouth at left. Leave the entire exact text, lettering size, faces, other balloons, tool, panels, and background unchanged. Preserve every element not explicitly named for repair. Keep upright Japanese vertical lettering integrated in the raster artwork, top-to-bottom columns read right-to-left. No new words, no added story events, no reflow of the existing dialogue, no new actors. High-quality finished smartphone vertical-scroll manga, same aspect ratio and resolution as target.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/03-calibration.png",
+      "sha256": "4e6787afdb8293e4344cbef9afbb77a9c1e8d354594d4c8f70720fbbdc2d6e4c"
+    }
+  ]
+}
