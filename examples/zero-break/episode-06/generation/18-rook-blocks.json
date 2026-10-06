@@ -1,0 +1,31 @@
+{
+  "file": "18-rook-blocks.png",
+  "method": "built-in image_gen",
+  "prompt": "Edit ONLY the background evacuation geography of FIRST image. Preserve Rook's silver hair, silver engraved armor, blue cape and stopping hand, Ren's unarmored pose, Mira, Noa, and exact native vertical speech 王室への反逆、という扱いになる。. All seventeen residents are already free; the empty carriage has fallen away. REMOVE any barred prison carriage / barred cell behind the group. Replace it with a safe intact STONE EXIT ARCH and stone corridor connected to the intact metal catwalk, under dawn light. The rescued residents stand freely OUTSIDE on firm floor behind Mira and Noa, no chains or cells. The foreground rescued little girl must match image2: short brown hair and YELLOW dress. No extra Ren. Keep all important composition and lettering.",
+  "references": [
+    "../episode-03/art/03-fist.png",
+    "../production/references/mira.png",
+    "../v5/art/a14-rejection.png",
+    "art/03-rail-geography.png",
+    "../production/references/noa.png"
+  ],
+  "sha256": "97c7d70309beb978641496c92c5312410db530e806aa4a42780fb87cf78e60ce",
+  "bytes": 2749565,
+  "status": "generated",
+  "visualReview": "passed",
+  "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: At exit gate Rook silver armor blue cape stands with sheathed sword blocking group. Ren unarmored kneeling stands slowly, Noa and Mira shelter17 survivors behind.\n\nBalloon 1: speech, Rook, upper right. EXACT text: 王室への反逆、という扱いになる。 . Columns RIGHT to LEFT: 王室への / 反逆、という / 扱いになる。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nCarriage continuity: the rescue compartment is BLACK weathered iron, rusty brown beams and SILVER window bars, matching the prison carriage references. The same ONE compartment remains hanging next to the same intact maintenance catwalk. No blue passenger coach or different vehicle.",
+  "repairs": [
+    {
+      "prompt": "Edit ONLY the background evacuation geography of FIRST image. Preserve Rook's silver hair, silver engraved armor, blue cape and stopping hand, Ren's unarmored pose, Mira, Noa, and exact native vertical speech 王室への反逆、という扱いになる。. All seventeen residents are already free; the empty carriage has fallen away. REMOVE any barred prison carriage / barred cell behind the group. Replace it with a safe intact STONE EXIT ARCH and stone corridor connected to the intact metal catwalk, under dawn light. The rescued residents stand freely OUTSIDE on firm floor behind Mira and Noa, no chains or cells. The foreground rescued little girl must match image2: short brown hair and YELLOW dress. No extra Ren. Keep all important composition and lettering.",
+      "editTargetSavedAt": "source/18-rook-blocks-before-exit.png",
+      "references": [
+        "art/18-rook-blocks.png",
+        "art/13-help-next.png"
+      ],
+      "previousSha256": "be1bdbecb9976726ca41b4101bfa33a59dafcc1d4d48e2020cbca69314e614ae",
+      "finalArt": "art/18-rook-blocks.png",
+      "sha256": "97c7d70309beb978641496c92c5312410db530e806aa4a42780fb87cf78e60ce"
+    }
+  ],
+  "visualReviewEvidence": "validation.json and review/contact-360-*.png"
+}

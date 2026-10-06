@@ -57,7 +57,7 @@ pub fn identify(id: &str, title: &str) -> SeriesInfo {
 }
 
 pub fn chapter_title<'a>(id: &str, fallback: &'a str) -> &'a str {
-    if id.starts_with("zero-break-") {
+    if id.starts_with("zero-break-") && identify(id, fallback).number == 1 {
         "最弱判定、最強の一歩。"
     } else if id.starts_with("pochi-") || id == "pochis-handshake" {
         "ポチと魔王の「おて」"
@@ -87,6 +87,8 @@ mod tests {
             "最弱判定、最強の一歩。"
         );
         assert!(identify("zero-break-v5", "").rank < identify("zero-break-v1", "").rank);
+        assert_eq!(chapter_title("zero-break-episode-02", "英雄の請求書"), "英雄の請求書");
+        assert_eq!(chapter_title("zero-break-episode-10", "拍手より先に"), "拍手より先に");
     }
     #[test]
     fn unrelated_uploads_stay_separate() {

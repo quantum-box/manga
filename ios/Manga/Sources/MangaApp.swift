@@ -270,7 +270,13 @@ struct ReaderView: View {
         Group {
             if let url = Catalog.readerURL(episode.reader) {
                 ZStack {
-                    WebtoonReader(url: url, background: episode.background, loadState: $loadState, onRevision: { contentRevision = $0 })
+                    WebtoonReader(url: url, background: episode.background, loadState: $loadState, onRevision: { contentRevision = $0 }, onNavigate: { destination in
+                        if let linked = title.linkedEpisode(to: destination) {
+                            contentRevision = nil
+                            loadState = .loading
+                            episode = linked
+                        }
+                    })
                         .id("\(episode.id)-\(reloadID)")
                         .accessibilityIdentifier("webtoon-reader")
                     if loadState == .loading {
@@ -361,8 +367,9 @@ struct WebtoonReader: UIViewRepresentable {
     let background: String
     @Binding var loadState: ReaderLoadState
     let onRevision: (String) -> Void
+    let onNavigate: (URL) -> Void
 
-    func makeCoordinator() -> Coordinator { Coordinator(loadState: $loadState, onRevision: onRevision) }
+    func makeCoordinator() -> Coordinator { Coordinator(loadState: $loadState, onRevision: onRevision, onNavigate: onNavigate) }
 
     func makeUIView(context: Context) -> WKWebView {
         let configuration = WKWebViewConfiguration()
@@ -396,6 +403,7 @@ struct WebtoonReader: UIViewRepresentable {
     func updateUIView(_ view: WKWebView, context: Context) {
         context.coordinator.loadState = $loadState
         context.coordinator.onRevision = onRevision
+        context.coordinator.onNavigate = onNavigate
         context.coordinator.load(url, in: view)
     }
 
@@ -411,9 +419,10 @@ struct WebtoonReader: UIViewRepresentable {
         private var requestedURL: URL?
         var contentTask: Task<Void, Never>?
         var onRevision: (String) -> Void
+        var onNavigate: (URL) -> Void
 
-        init(loadState: Binding<ReaderLoadState>, onRevision: @escaping (String) -> Void) {
-            self.loadState = loadState; self.onRevision = onRevision
+        init(loadState: Binding<ReaderLoadState>, onRevision: @escaping (String) -> Void, onNavigate: @escaping (URL) -> Void) {
+            self.loadState = loadState; self.onRevision = onRevision; self.onNavigate = onNavigate
         }
 
         func load(_ url: URL, in view: WKWebView) {
@@ -444,8 +453,13 @@ struct WebtoonReader: UIViewRepresentable {
 
         func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction,
                      decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-            // Back and next chapter are native controls. Do not navigate the embedded page independently.
-            decisionHandler(requestedURL?.isFileURL != true && navigationAction.navigationType == .linkActivated ? .cancel : .allow)
+            // Chapter links update native state before loading a different episode directory.
+            if navigationAction.navigationType == .linkActivated {
+                decisionHandler(.cancel)
+                if requestedURL?.isFileURL == true, let destination = navigationAction.request.url {
+                    onNavigate(destination)
+                }
+            } else { decisionHandler(.allow) }
         }
 
         func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse,

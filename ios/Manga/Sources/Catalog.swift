@@ -22,6 +22,13 @@ struct MangaTitle: Identifiable, Hashable, Codable {
     func otherEditions(of episode: Episode) -> [Episode] {
         orderedEpisodes.filter { $0.number == episode.number && $0.id != episode.id }
     }
+    func linkedEpisode(to url: URL, resourceURL: URL? = Bundle.main.resourceURL) -> Episode? {
+        guard url.isFileURL else { return nil }
+        let destination = url.resolvingSymlinksInPath().standardizedFileURL.path
+        return episodes.first {
+            Catalog.resource($0.reader, resourceURL: resourceURL)?.path == destination
+        }
+    }
 }
 
 struct Episode: Identifiable, Hashable, Codable {

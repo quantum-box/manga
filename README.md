@@ -6,7 +6,7 @@
 
 | 作品 | ジャンル | 採用版 |
 | --- | --- | --- |
-| [ゼロ・ブレイク](examples/zero-break/README.md) | 異世界転生・スーパーヒーロー | 全50話の場面脚本と第1話の完成作画。縦書き30場面で接近と測定を段階的に描く |
+| [ゼロ・ブレイク](examples/zero-break/chapters.html) | 異世界転生・スーパーヒーロー | 第1〜10話の縦書き完成作画・全196場面。接近、測定、救助の手順と反応を描く。全50話の場面脚本も収録 |
 | [天魔、二周目。](examples/heavenly-demon-ngplus/README.md) | 武侠・異世界転生・強くてニューゲーム | 第1〜10話。鮮明なセル塗りのアニメ風。処刑場から自由な帰還まで |
 | [剣聖、仇の弟子に転生する](examples/swordsaint-enemy-disciple/README.md) | 武侠・転生 | 第1〜10話。白背景・ゆっくり版で連続して読める。第1話の初稿2版も保持 |
 | [終電後の落とし物係](examples/lost-property-clerk/webtoon-v3/README.md) | 日常・幻想 | 雨、猫、足跡をたどる縦読み短編 v3 |

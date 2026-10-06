@@ -1,0 +1,29 @@
+{
+  "file": "08-notice.png",
+  "method": "built-in image_gen",
+  "prompt": "Edit ONLY Ren's clothing and chest in the first manga panel. He is still UNARMORED while noticing the boiler fault. Remove every black metal plate from his shoulders, chest and arms, and replace with his plain BLACK SHORT-SLEEVE fabric shirt and brown narrow straps as in the second image. Bare upper arms and bare hands, no gauntlets. Remove the large cyan star and all cyan seam lines. At most one tiny faint cyan point through the shirt, barely visible. Do not change Noa's orange hair, goggles, overalls, orange gloves, Mira's gown or rolled map, indoor boiler or composition. Keep exact vertically lettered Noa balloon 「圧力が、戻らない。」 and its tail. No full transformation at this moment.",
+  "references": [
+    "../v5/art/a14-rejection.png",
+    "../v5/art/16-relief.png",
+    "../production/references/noa.png"
+  ],
+  "sha256": "249a6e296d5e17e810942f2df8d2d7a4897a6636d745a2144f380db925080f57",
+  "bytes": 2560971,
+  "status": "generated",
+  "visualReview": "passed",
+  "originalPrompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Noa hears vibrating valve and turns toward boiler; Ren notices hiss behind Noa, chest faint cyan. Mira holds paper pipe map still rolled.\n\nBalloon 1: speech, Noa, upper right. EXACT text: 圧力が、戻らない。 . Columns RIGHT to LEFT: 圧力が、 / 戻らない。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
+  "repairs": [
+    {
+      "prompt": "Edit ONLY Ren's clothing and chest in the first manga panel. He is still UNARMORED while noticing the boiler fault. Remove every black metal plate from his shoulders, chest and arms, and replace with his plain BLACK SHORT-SLEEVE fabric shirt and brown narrow straps as in the second image. Bare upper arms and bare hands, no gauntlets. Remove the large cyan star and all cyan seam lines. At most one tiny faint cyan point through the shirt, barely visible. Do not change Noa's orange hair, goggles, overalls, orange gloves, Mira's gown or rolled map, indoor boiler or composition. Keep exact vertically lettered Noa balloon 「圧力が、戻らない。」 and its tail. No full transformation at this moment.",
+      "editTargetSavedAt": "source/08-notice-before-armor-fix.png",
+      "references": [
+        "art/08-notice.png",
+        "../episode-03/art/03-fist.png"
+      ],
+      "previousSha256": "51a0e2f6b7e5f2496d38ffd84b1e5aeda7b88edb9f61c1ccbcbaf7cefc875f4f",
+      "finalArt": "art/08-notice.png",
+      "sha256": "249a6e296d5e17e810942f2df8d2d7a4897a6636d745a2144f380db925080f57"
+    }
+  ],
+  "visualReviewEvidence": "validation.json and review/contact-360-*.png"
+}
