@@ -10,6 +10,7 @@ def load(p):return json.loads(p.read_text())
 def directory(n):return ROOT/('v5' if n==1 else f'episode-{n:02d}')
 totals=dict(baseline_artworks=0,reader_images=0,panels=0,adopted_revision_records=0,scripts=0)
 chapters=[]
+sound_revisions=0
 for n in range(1,11):
  d=directory(n);m=load(d/'manifest.json');baseline=load(STATE/'baseline'/f'episode-{n:02d}.json')
  assert m['version']=='context-dialogue-v6'
@@ -32,7 +33,9 @@ for n in range(1,11):
   record_path=STATE/'records'/(s['id']+'.json')
   if record_path.exists():
    r=load(record_path);assert r['sha256']==sha(d/'art'/r['file'])
-   assert r['file']==s['file'] and r['panels']==s['panels'] and r['prompt']==s['prompt']
+   assert r['panels']==s['panels']
+   if not s.get('revisionRecord'):
+    assert r['file']==s['file'] and r['prompt']==s['prompt']
    for ref in r['references']:assert sha(REPO/ref['path'])==ref['sha256']
    for old in r.get('repair_history',[]):
     assert sha(d/'art'/old['file'])==old['sha256']
@@ -40,6 +43,16 @@ for n in range(1,11):
     old=r['repairBefore'];assert sha(d/'art'/old['file'])==old['sha256']
    assert (record_path.parent/r['visual_review']['chapter_validation']).is_file()
    assert r['prompt'] and r['method'];totals['adopted_revision_records']+=1
+  if s.get('revisionRecord'):
+   r=load(REPO/s['revisionRecord'])
+   assert r['file']==s['file'] and r['sha256']==sha(d/'art'/s['file'])
+   assert r['prompt']==s['prompt'] and r['sounds']==s['sounds']
+   assert r['preservedLines']==s['lines'] and r['panels']==s.get('panels',[])
+   assert r['preservedVisibleText']==s.get('visible_text',[])
+   before=r['repairBefore'];assert sha(d/'art'/before['file'])==before['sha256']
+   for ref in r['references']:assert sha(REPO/ref['path'])==ref['sha256']
+   assert r['method'] and r['prompt']
+   sound_revisions+=1
   count+=1
  assert next(embedded,None) is None
  assert count==len(m['shots'])
@@ -75,6 +88,7 @@ for n,row in enumerate(scripts,1):
  totals['scripts']+=1
 assert totals==dict(baseline_artworks=196,reader_images=196,panels=317,adopted_revision_records=57,scripts=50),totals
 report=dict(edition='context-dialogue-v6',status='passed_artifact_checks',totals=totals,chapters=chapters,
+ sound_effect_revision_records=sound_revisions,
  checks=['all prior source PNG hashes preserved','every baseline scene represented','actual revision prompts, references and repaired originals preserved','standalone embedded PNGs match raw source bytes','ZIP CRC and extracted HTML match','native export hashes, width and source geometry','iOS HTML and PNG bytes match adopted sources','all fifty scripts staged; existing quoted text preserved for 11-50'],
  browser_review='pending; native exports do not prove browser layout',physical_device_review='not_run')
 (STATE/'artifact-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')

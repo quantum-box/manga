@@ -138,6 +138,25 @@ def build(number):
             old['widthPercent'] = plan.get('layout',{}).get(str(number),{}).get(old['id'],100)
             old['provenance_v6'] = 'retained adopted art; frame placement reviewed separately'
             shots.append(old)
+    # Keep later, targeted sound edits when rebuilding the adopted story layout.
+    sound_records = ROOT / 'production' / f'episode-{number:02d}-sfx' / 'records'
+    for shot in shots:
+        revision_path = sound_records / (shot['id'] + '.json')
+        if not revision_path.exists():
+            continue
+        revision = json.loads(revision_path.read_text())
+        assert revision['preservedLines'] == shot['lines']
+        assert revision['preservedVisibleText'] == shot.get('visible_text', [])
+        assert revision['panels'] == shot.get('panels', [])
+        assert digest(directory(number)/'art'/revision['file']) == revision['sha256']
+        before = revision['repairBefore']
+        assert digest(directory(number)/'art'/before['file']) == before['sha256']
+        shot.update(file=revision['file'], sounds=revision['sounds'],
+                    sha256=revision['sha256'], prompt=revision['prompt'],
+                    references=[r['path'] for r in revision['references']],
+                    provenance='targeted raster sound-effect edit',
+                    revisionRecord=str(revision_path.relative_to(REPO)),
+                    visual_review=revision['visual_review'])
     manifest.update(version='context-dialogue-v6', shots=shots,
                     panel_count=sum(len(s.get('panels',[s])) for s in shots),
                     baseline=f'../production/feedback-v6/baseline/episode-{number:02d}.json')
@@ -152,6 +171,7 @@ def build(number):
         width,height = unpack('>II',path.read_bytes()[16:24])
         alt = shot.get('alt_ja',shot['scene']) + ' ' + ' '.join(l['speaker']+'『'+l['text']+'』' for l in shot['lines'])
         alt += ' ' + ' '.join(t['text'] for t in shot.get('visible_text',[]))
+        alt += ' ' + ' '.join('効果音『'+sound+'』' for sound in shot.get('sounds',[]))
         out.append(f'<figure class="scene {shot["shape"]}" id="{shot["id"]}" style="--width:{shot["widthPercent"]}%"><img src="art/{shot["file"]}" width="{width}" height="{height}" alt="{html.escape(alt,quote=True)}"></figure>')
         out.append(f'<div class="pause" aria-hidden="true" style="--pause:{shot["pause"]/390*100:.2f}cqw"></div>')
         storyboard += [f'## {shot["id"]}', '', shot['scene'], '', f'表示幅：{shot["widthPercent"]}%。次までの間：390px幅で{shot["pause"]}px相当。', '']
@@ -159,6 +179,7 @@ def build(number):
             storyboard += [f'### コマ{i}', '',panel['beat'],'',f'注目と接続：{panel["view"]}',f'大きさと枠：{panel["frame"]}',f'声：{panel.get("voice","無言")}', '']
         storyboard += [l['speaker']+'：'+l['text'] for l in shot['lines']] + ['']
         storyboard += [f'画面内表示：{t["text"]}' for t in shot.get('visible_text',[])] + ['']
+        storyboard += [f'効果音：{sound}' for sound in shot.get('sounds',[])] + ['']
     prev = '../v5/index.html' if number == 2 else f'../episode-{number-1:02d}/index.html'
     nav = '<a href="../chapters.html">話一覧</a>'
     if number > 1: nav += f'<a href="{prev}">前の話</a>'
@@ -176,6 +197,8 @@ def build(number):
     execution=[]
     for shot in shots:
         record_path=STATE/'records'/(shot['id']+'.json')
+        if shot.get('revisionRecord'):
+            record_path = REPO / shot['revisionRecord']
         record=json.loads(record_path.read_text()) if record_path.exists() else {
             'id':shot['id'],'file':shot['file'],'sha256':digest(directory(number)/'art'/shot['file']),
             'method':'retained prior adopted image_gen output',

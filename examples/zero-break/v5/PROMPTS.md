@@ -2,16 +2,27 @@
 
 全10話の改稿は新規54素材・承認見本の再利用3素材。再利用・修正・旧版保持を generation-log.json で区別。以前の実行記録は production/feedback-v6/baseline に保持。
 
-## 01-memory.png
+## sfx-01-memory.png
 
-retained prior adopted image_gen output
+built-in image_gen targeted raster sound-effect edit
 
-参照：[]
+参照：[{"path": "examples/zero-break/v5/art/01-memory.png", "sha256": "76769d9ab0904a5d0e0fd061878b12b554a064fd845b79e37c0bf73eccdc3c65"}]
+
+元の生成指示：
+
+```text
+See the preserved adopted edition prompt in ../baseline/PROMPTS.md.
+```
 
 採用時の指示：
 
 ```text
-See ../production/feedback-v6/baseline/prompts-episode-01.md for the original executed prompt.
+Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.
+
+TARGETED EDIT:
+Add EXACT ザァァ… once in slender slightly wavering cool pale-blue Japanese hand-lettered rain effect, with subtle navy shadow for legibility, vertically down the open lower-right wet-road area. Its gentle scale and rhythm should establish rain before the scene changes, noticeably quieter than later combat. Preserve the entire reaching bare hand, crimson scarf and the exact narration box. Do not add crash sound, vehicle contact, an injured person or extra story information.
+
+Verbatim new sound lettering: ザァァ…
 ```
 
 ## v6-waking.png
@@ -441,62 +452,73 @@ Draw once outside balloons, upright Japanese effect: ズ……ン。.
 Reference3 locks the NEW assessment station established in the walking shot: the same dark black crystal, ornate pointed silver pedestal, SMALL NARROW FLAT METAL inset readout, and intact lower balcony. Do not copy its walking pose or captions. Keep the readout BLANK until the result shot. Lock scale and design; this device is NOT the hero power.
 ```
 
-## v6-danger-geography.png
+## sfx-v6-danger-geography.png
 
-built-in image_gen
+built-in image_gen targeted raster sound-effect edit
 
-参照：[{"path": "examples/zero-break/v5/art/v6-danger.png", "sha256": "8c573ede762a2411ce912bc08a86d23f7cea8730332ed256c7595536d5404735"}, {"path": "examples/zero-break/v5/art/02-arrival.png", "sha256": "a15849a76923d2ef7ae428d9d0c5d1ec1382a377b1c1d8f319d19268932509cf"}]
+参照：[{"path": "examples/zero-break/v5/art/v6-danger-geography.png", "sha256": "641bbe8bb4d91f98d85de78289ab9d9e0a015fa0066218ce7fd6b964c4f6a8a4"}]
 
 元の生成指示：
-
-```text
-Use case: illustration-story.
-Asset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).
-Recompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.
-Match the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.
-Printed bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.
-Top-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.
-
-The LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.
-Exact continuity/setting (not a request to put everything in every panel): The SAME giant black stone guardian, armored stone limbs, violet fissures and a violet diamond-shaped chest core, goes berserk and breaks a high stone bridge. Princess Mira small but identifiable ON bridge, before falling. Establish high bridge above a lower balcony (Ren's assessment level) above a broad cargo canvas awning and soft cargo on a lower plaza. Two warning voices from small background guards or offscreen; no extra main characters. Giant fills upper background.
-
-Panel 1, downward order. Frame: right-aligned86% width, medium framed warning. Reader understands: The vibration comes from a runaway guardian.. Visible camera subject / offscreen continuity: Distant warning guard shouting from lower plaza, looking up; Ren offscreen near measuring station.. Voice / balloon: urgent SHOUT, bold jagged outer edge.
-ONLY speaker: warning guard A. EXACT text: 「警備巨兵が暴走した！」 (render contents only).
-Panel 2, downward order. Frame: full-width LARGE tall borderless geographic view. Reader understands: Show the full dangerous spatial relationship BEFORE anybody falls.. Visible camera subject / offscreen continuity: Large continuous view: SAME black stone guardian violet diamond chest core beside HIGH stone bridge, Mira on bridge, Ren much LOWER balcony, canvas cargo awning BELOW Ren. Violet cracks only on guardian. Bridge beginning to crack, Mira still on bridge.. Voice / balloon: 無言.
-SILENT: no balloons or text unless an exact prop inscription is explicitly specified.
-Panel 3, downward order. Frame: left-aligned90% width, medium framed shout. Reader understands: The rescue target is identified.. Visible camera subject / offscreen continuity: SECOND warning guard face only, pointing up beyond top; Mira is NOT falling in this strip yet.. Voice / balloon: urgent bold jagged shout.
-ONLY speaker: warning guard B. EXACT text: 「姫様が、橋にいる！」 (render contents only).
-
-```
-
-採用時の指示：
 
 ```text
 Edit the FIRST image, preserving its THREE panel sequence, both shouting guards and their exact Japanese balloons completely. Change ONLY the MIDDLE large borderless geography image. It must clearly show THREE vertically separated levels: (1) Mira remains ON the cracking HIGH bridge at upper-right, not falling yet; (2) add a LOWER intact white STONE BALCONY sticking from the left wall at middle-left, significantly BELOW Mira's bridge; ONE unarmored Ren from image2 stands ON that lower balcony, BLACK fabric short-sleeve shirt, red scarf, messy black hair and blue eyes, both BARE hands, looking up to Mira. Show his whole upper body and one boot on stone so the balcony is unmistakable, not inside a tent. (3) keep the tan cargo canvas AWNING BELOW Ren's balcony with soft cargo beneath. Visible empty-air fall path from Mira, past Ren's lower balcony, down to awning. The giant black stone guardian and violet diamond chest core stay exactly the same. Do not put Ren on Mira's bridge, the ground, the canvas or in armor. Do not add lettering, future core power, any additional Ren or new event. Keep the FIRST and THIRD frames and balloon text pixel-consistent as much as possible. This is a geography clarification BEFORE fall, not a second rescue scene.
 ```
 
-## 07-fall.png
-
-retained prior adopted image_gen output
-
-参照：[]
-
 採用時の指示：
 
 ```text
-See ../production/feedback-v6/baseline/prompts-episode-01.md for the original executed prompt.
+Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.
+
+TARGETED EDIT:
+In the large middle geographical panel ONLY, add ゴゴゴ… as heavy dark-violet/black outlined, slightly irregular stone-rumble lettering along the upper-left sky beside the guardian shoulder. Add バキバキッ！ in sharp fractured black lettering with white outline next to the breaking bridge, farther down the middle-right, following the falling masonry. Both sound effects must be large enough at 360px width, while preserving an uninterrupted view of the giant fist, Mira's face and body, Ren on the lower-left balcony, and canvas cargo awnings below. Do not put sound effects inside the guard speech panels.
+
+Verbatim new sound lettering: ゴゴゴ… / バキバキッ！
 ```
 
-## 08-leap.png
+## sfx-07-fall.png
 
-retained prior adopted image_gen output
+built-in image_gen targeted raster sound-effect edit
 
-参照：[]
+参照：[{"path": "examples/zero-break/v5/art/07-fall.png", "sha256": "5f4c80051660c866219a3c68555e228507332bd5bbc8f3129b5f337adc91ea49"}]
+
+元の生成指示：
+
+```text
+See the preserved adopted edition prompt in ../baseline/PROMPTS.md.
+```
 
 採用時の指示：
 
 ```text
-See ../production/feedback-v6/baseline/prompts-episode-01.md for the original executed prompt.
+Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.
+
+TARGETED EDIT:
+Add EXACT ヒュウウッ once as tapered flowing dark-navy lettering with white outline in the open sky BELOW Mira and to the right of center, vertically descending alongside the existing fall path. Gentle curved strokes and a couple restrained wind streaks can emphasize speed without implying a magic power. Keep Mira's whole reaching hand, frightened face, hair and dress clear; keep the lower cargo awnings and exact shouted dialogue visible. Preserve the same perspective, fall position and clear source-to-destination geography.
+
+Verbatim new sound lettering: ヒュウウッ
+```
+
+## sfx-08-leap.png
+
+built-in image_gen targeted raster sound-effect edit
+
+参照：[{"path": "examples/zero-break/v5/art/08-leap.png", "sha256": "f2a963e797c6584a68913ab29b354b94f184c38f43c27ec4dea819901f6ac507"}]
+
+元の生成指示：
+
+```text
+See the preserved adopted edition prompt in ../baseline/PROMPTS.md.
+```
+
+採用時の指示：
+
+```text
+Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.
+
+TARGETED EDIT:
+Add EXACT バッ！ once as compact sharp BLACK brush lettering with clean white outline beside the lower-left broken ledge where Ren has just pushed off. Angle its short energetic strokes in the leap direction, with two restrained motion accents beside that ledge. Keep his reaching bare hand and face unobscured, red scarf, entire body/legs and landing awnings unchanged. Do not add glowing energy, armor or superhuman power here. Preserve the exact vertical thought balloon.
+
+Verbatim new sound lettering: バッ！
 ```
 
 ## v6-catch.png
@@ -598,13 +620,13 @@ ONLY speaker: Ren. EXACT text: 「今度は俺が止める。」 (render content
 
 ```
 
-## v6-core.png
+## sfx-v6-core.png
 
-built-in image_gen
+built-in image_gen targeted raster sound-effect edit
 
-参照：[{"path": "examples/zero-break/v5/art/13-core.png", "sha256": "39c4515e03a3799e1fa6a21f26f96b5c1e9fbc2f04032bb5412d8f20f694834e"}, {"path": "skills/webtoon/references/zero-break/varied-01.png", "sha256": "207182b5e679ed4ec4b42761adc149f4ad98039d823ed903cb2a1a6f5319b68e"}]
+参照：[{"path": "examples/zero-break/v5/art/v6-core.png", "sha256": "494da4641bd999b732d615a53cadc53b25787ad6d58bebe29148e2fa3adc47b7"}]
 
-採用時の指示：
+元の生成指示：
 
 ```text
 Use case: illustration-story.
@@ -626,28 +648,61 @@ SILENT: no balloons or text unless an exact prop inscription is explicitly speci
 
 ```
 
-## 14-hero.png
-
-retained prior adopted image_gen output
-
-参照：[]
-
 採用時の指示：
 
 ```text
-See ../production/feedback-v6/baseline/prompts-episode-01.md for the original executed prompt.
+Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.
+
+TARGETED EDIT:
+In the FIRST, upper chest-close-up panel ONLY, add EXACT キィィン… once in slender luminous pale-cyan sound-effect strokes with dark-blue outline on the left of the first glowing star, in the open dark shirt area between scarf and hand. A small controlled cyan bloom can harmonize with the core glow; every Japanese glyph must remain identifiable at 360px. Preserve the bare hand, SOFT unarmored black fabric, face/scarf, exact thought text and BOTH lower system windows including their exact wording and typography. No armor silhouette, no new panels or labels, no sound effects in the system windows.
+
+Verbatim new sound lettering: キィィン…
 ```
 
-## 15-punch.png
+## sfx-14-hero.png
 
-retained prior adopted image_gen output
+built-in image_gen targeted raster sound-effect edit
 
-参照：[]
+参照：[{"path": "examples/zero-break/v5/art/14-hero.png", "sha256": "1ec3bf124f07724dd319caa5d1c164b18f4de168452f60fdba26e0119845cbf3"}]
+
+元の生成指示：
+
+```text
+See the preserved adopted edition prompt in ../baseline/PROMPTS.md.
+```
 
 採用時の指示：
 
 ```text
-See ../production/feedback-v6/baseline/prompts-episode-01.md for the original executed prompt.
+Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.
+
+TARGETED EDIT:
+Add EXACT ガキンッ！ once as angular metallic assembly sound lettering in black/navy with crisp white outline and a restrained cyan highlight, in the upper-left clear sky beside Ren's shoulder/head without covering his hair/face. The lettering should communicate the final armor locking into place, medium strength between the slender core tone and the huge following punch. Preserve his full-length black faceted suit, cyan star/seams, red scarf, calm ready stance, Mira standing safely behind at right, white floating city and exact speech balloon. Do not add new armor pieces, a transformation montage or a punch.
+
+Verbatim new sound lettering: ガキンッ！
+```
+
+## sfx-15-punch.png
+
+built-in image_gen targeted raster sound-effect edit
+
+参照：[{"path": "examples/zero-break/v5/art/15-punch.png", "sha256": "8628adaf6b9c98c42bce8e482947d79ae29cd884a43165f58e88255a9ce4accb"}]
+
+元の生成指示：
+
+```text
+See the preserved adopted edition prompt in ../baseline/PROMPTS.md.
+```
+
+採用時の指示：
+
+```text
+Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.
+
+TARGETED EDIT:
+Replace ONLY the existing red/black lower-left ドンッ impact effect with much larger, more legible ドゴォンッ！ in energetic black brush letters with a clean thick white separation outline and restrained cyan edge. Sweep it diagonally upward toward the fist-core contact. Add smaller angular ガシャァッ！ among the flying upper-left fragments to communicate stone shattering. Preserve the exact punch contact, wrist/fist, cyan impact burst, purple guardian core fragments, Ren's face/red scarf and Mira safe behind him. The primary ドゴォンッ！ must be visibly stronger than ガシャァッ！ and legible at phone width. Avoid muddy illegible red texture.
+
+Verbatim new sound lettering: ドゴォンッ！ / ガシャァッ！
 ```
 
 ## v6-relief.png

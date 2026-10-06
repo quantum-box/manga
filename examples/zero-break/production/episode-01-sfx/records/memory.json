@@ -1,0 +1,67 @@
+{
+  "id": "memory",
+  "episode": 1,
+  "file": "sfx-01-memory.png",
+  "method": "built-in image_gen targeted raster sound-effect edit",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-ceacd5e1-fe21-42d5-9641-edff88cccfb4.png",
+  "sha256": "f814493d4c37ed57ff0b69221e9f728b2067d3e06eabba73e7b2a6498b2fb915",
+  "width": 1122,
+  "height": 1402,
+  "sounds": [
+    "ザァァ…"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.\n\nTARGETED EDIT:\nAdd EXACT ザァァ… once in slender slightly wavering cool pale-blue Japanese hand-lettered rain effect, with subtle navy shadow for legibility, vertically down the open lower-right wet-road area. Its gentle scale and rhythm should establish rain before the scene changes, noticeably quieter than later combat. Preserve the entire reaching bare hand, crimson scarf and the exact narration box. Do not add crash sound, vehicle contact, an injured person or extra story information.\n\nVerbatim new sound lettering: ザァァ…",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/01-memory.png",
+      "sha256": "76769d9ab0904a5d0e0fd061878b12b554a064fd845b79e37c0bf73eccdc3c65"
+    }
+  ],
+  "repairBefore": {
+    "file": "01-memory.png",
+    "sha256": "76769d9ab0904a5d0e0fd061878b12b554a064fd845b79e37c0bf73eccdc3c65"
+  },
+  "panels": [],
+  "preservedLines": [
+    {
+      "speaker": "Ren narration",
+      "text": "最後に覚えているのは、届かなかった手。",
+      "cols": [
+        "最後に",
+        "覚えている",
+        "のは、",
+        "届かなかった",
+        "手。"
+      ],
+      "type": "narration",
+      "position": "upper right in a narrow rectangular white narration box"
+    }
+  ],
+  "preservedVisibleText": [],
+  "originalPrompt": "See the preserved adopted edition prompt in ../baseline/PROMPTS.md.",
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "f814493d4c37ed57ff0b69221e9f728b2067d3e06eabba73e7b2a6498b2fb915",
+    "checks": [
+      "verbatim sound lettering",
+      "existing dialogue and system wording",
+      "faces, hands, costumes, props, panel layout and geography"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "review/v6-contact-360-0.png",
+      "review/v6-contact-360-4.png",
+      "review/v6-contact-360-6.png",
+      "review/v6-contact-390-0.png",
+      "review/v6-contact-390-4.png",
+      "review/v6-contact-390-6.png"
+    ]
+  },
+  "mobile_browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}

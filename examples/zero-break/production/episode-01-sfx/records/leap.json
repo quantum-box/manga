@@ -1,0 +1,66 @@
+{
+  "id": "leap",
+  "episode": 1,
+  "file": "sfx-08-leap.png",
+  "method": "built-in image_gen targeted raster sound-effect edit",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-796abd23-3d3c-464e-93d9-40864366ff80.png",
+  "sha256": "c48dca0c6404b5d1ae69f540f481e03f94df37f9a3d8b2b140c130013c81deed",
+  "width": 1024,
+  "height": 1536,
+  "sounds": [
+    "バッ！"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.\n\nTARGETED EDIT:\nAdd EXACT バッ！ once as compact sharp BLACK brush lettering with clean white outline beside the lower-left broken ledge where Ren has just pushed off. Angle its short energetic strokes in the leap direction, with two restrained motion accents beside that ledge. Keep his reaching bare hand and face unobscured, red scarf, entire body/legs and landing awnings unchanged. Do not add glowing energy, armor or superhuman power here. Preserve the exact vertical thought balloon.\n\nVerbatim new sound lettering: バッ！",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/08-leap.png",
+      "sha256": "f2a963e797c6584a68913ab29b354b94f184c38f43c27ec4dea819901f6ac507"
+    }
+  ],
+  "repairBefore": {
+    "file": "08-leap.png",
+    "sha256": "f2a963e797c6584a68913ab29b354b94f184c38f43c27ec4dea819901f6ac507"
+  },
+  "panels": [],
+  "preservedLines": [
+    {
+      "speaker": "Ren thought",
+      "text": "魔力がなくても、手くらい、伸ばせる。",
+      "cols": [
+        "魔力が",
+        "なくても、",
+        "手くらい、",
+        "伸ばせる。"
+      ],
+      "type": "thought",
+      "position": "upper right in the open sky"
+    }
+  ],
+  "preservedVisibleText": [],
+  "originalPrompt": "See the preserved adopted edition prompt in ../baseline/PROMPTS.md.",
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "c48dca0c6404b5d1ae69f540f481e03f94df37f9a3d8b2b140c130013c81deed",
+    "checks": [
+      "verbatim sound lettering",
+      "existing dialogue and system wording",
+      "faces, hands, costumes, props, panel layout and geography"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "review/v6-contact-360-0.png",
+      "review/v6-contact-360-4.png",
+      "review/v6-contact-360-6.png",
+      "review/v6-contact-390-0.png",
+      "review/v6-contact-390-4.png",
+      "review/v6-contact-390-6.png"
+    ]
+  },
+  "mobile_browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}

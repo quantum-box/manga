@@ -6,8 +6,8 @@
   "sourceHashes": [
     {
       "id": "memory",
-      "file": "01-memory.png",
-      "sha256": "76769d9ab0904a5d0e0fd061878b12b554a064fd845b79e37c0bf73eccdc3c65"
+      "file": "sfx-01-memory.png",
+      "sha256": "f814493d4c37ed57ff0b69221e9f728b2067d3e06eabba73e7b2a6498b2fb915"
     },
     {
       "id": "e01-waking",
@@ -91,18 +91,18 @@
     },
     {
       "id": "e01-danger",
-      "file": "v6-danger-geography.png",
-      "sha256": "641bbe8bb4d91f98d85de78289ab9d9e0a015fa0066218ce7fd6b964c4f6a8a4"
+      "file": "sfx-v6-danger-geography.png",
+      "sha256": "9fd0c8302e775420139e1603cd741fd7a097f6e89472dfae3bc60973b7dae993"
     },
     {
       "id": "fall",
-      "file": "07-fall.png",
-      "sha256": "5f4c80051660c866219a3c68555e228507332bd5bbc8f3129b5f337adc91ea49"
+      "file": "sfx-07-fall.png",
+      "sha256": "0ec39d05ed995af25d2eb52f867d0284a19a03139f14ebf533725bee3aa6cf18"
     },
     {
       "id": "leap",
-      "file": "08-leap.png",
-      "sha256": "f2a963e797c6584a68913ab29b354b94f184c38f43c27ec4dea819901f6ac507"
+      "file": "sfx-08-leap.png",
+      "sha256": "c48dca0c6404b5d1ae69f540f481e03f94df37f9a3d8b2b140c130013c81deed"
     },
     {
       "id": "e01-catch",
@@ -131,18 +131,18 @@
     },
     {
       "id": "e01-core",
-      "file": "v6-core.png",
-      "sha256": "494da4641bd999b732d615a53cadc53b25787ad6d58bebe29148e2fa3adc47b7"
+      "file": "sfx-v6-core.png",
+      "sha256": "ea88f815854233497ff443c1852f3277e37f3b218520fe5a599086e1be75321c"
     },
     {
       "id": "hero",
-      "file": "14-hero.png",
-      "sha256": "1ec3bf124f07724dd319caa5d1c164b18f4de168452f60fdba26e0119845cbf3"
+      "file": "sfx-14-hero.png",
+      "sha256": "06b3480a33e9250958be8f59cfe3d9528bd5ecfa928221728efc2ab8e56c87d9"
     },
     {
       "id": "punch",
-      "file": "15-punch.png",
-      "sha256": "8628adaf6b9c98c42bce8e482947d79ae29cd884a43165f58e88255a9ce4accb"
+      "file": "sfx-15-punch.png",
+      "sha256": "1efa78eee6bcb8341b4f2664aec67d7db3fc26ed5cb8b0f18cff8be1bf2f0518"
     },
     {
       "id": "e01-relief",
@@ -160,7 +160,7 @@
       "width": 360,
       "height": 25593,
       "file": "complete-360.png",
-      "sha256": "d8ed66287c57327b7f254b0e74b888dd094054b4444d2a349589e09ed6352bd7",
+      "sha256": "5b564b547eb261c05a45ab7fbce9b2e42adbe569609be6c73d12dfcc0da70f3e",
       "positions": [
         {
           "id": "memory",
@@ -408,7 +408,7 @@
       "width": 390,
       "height": 27720,
       "file": "complete-390.png",
-      "sha256": "9a11b7a78bf551b397f79a4c330ae7af70e06e07be116a5cda4af04b0704d9cb",
+      "sha256": "e15ef05ced339bb25449db6cf095a1e828b88e8f725f6db2f8686851e157b877",
       "positions": [
         {
           "id": "memory",
@@ -654,5 +654,27 @@
     }
   ],
   "browserPixelsCompared": false,
-  "visualReview": "passed_native_image_review"
+  "visualReview": {
+    "status": "passed_native_mobile_image_review",
+    "widths": [
+      360,
+      390
+    ],
+    "reviewedImages": [
+      "review/v6-contact-360-0.png",
+      "review/v6-contact-360-4.png",
+      "review/v6-contact-360-6.png",
+      "review/v6-contact-390-0.png",
+      "review/v6-contact-390-4.png",
+      "review/v6-contact-390-6.png"
+    ],
+    "reviewedFlow": [
+      "review/v6-flow-360-17.png",
+      "review/v6-flow-360-19.png",
+      "review/v6-flow-360-25.png",
+      "review/v6-flow-390-27.png",
+      "review/v6-flow-390-28.png",
+      "review/v6-flow-390-29.png"
+    ]
+  }
 }

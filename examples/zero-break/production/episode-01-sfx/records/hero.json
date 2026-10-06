@@ -1,0 +1,64 @@
+{
+  "id": "hero",
+  "episode": 1,
+  "file": "sfx-14-hero.png",
+  "method": "built-in image_gen targeted raster sound-effect edit",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-3a9e0523-9cb4-448c-af84-a8e1a54c17b1.png",
+  "sha256": "06b3480a33e9250958be8f59cfe3d9528bd5ecfa928221728efc2ab8e56c87d9",
+  "width": 887,
+  "height": 1774,
+  "sounds": [
+    "ガキンッ！"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.\n\nTARGETED EDIT:\nAdd EXACT ガキンッ！ once as angular metallic assembly sound lettering in black/navy with crisp white outline and a restrained cyan highlight, in the upper-left clear sky beside Ren's shoulder/head without covering his hair/face. The lettering should communicate the final armor locking into place, medium strength between the slender core tone and the huge following punch. Preserve his full-length black faceted suit, cyan star/seams, red scarf, calm ready stance, Mira standing safely behind at right, white floating city and exact speech balloon. Do not add new armor pieces, a transformation montage or a punch.\n\nVerbatim new sound lettering: ガキンッ！",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/14-hero.png",
+      "sha256": "1ec3bf124f07724dd319caa5d1c164b18f4de168452f60fdba26e0119845cbf3"
+    }
+  ],
+  "repairBefore": {
+    "file": "14-hero.png",
+    "sha256": "1ec3bf124f07724dd319caa5d1c164b18f4de168452f60fdba26e0119845cbf3"
+  },
+  "panels": [],
+  "preservedLines": [
+    {
+      "speaker": "Ren",
+      "text": "なら、今度こそ。",
+      "cols": [
+        "なら、",
+        "今度こそ。"
+      ],
+      "type": "speech",
+      "position": "upper right, tail to Ren"
+    }
+  ],
+  "preservedVisibleText": [],
+  "originalPrompt": "See the preserved adopted edition prompt in ../baseline/PROMPTS.md.",
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "06b3480a33e9250958be8f59cfe3d9528bd5ecfa928221728efc2ab8e56c87d9",
+    "checks": [
+      "verbatim sound lettering",
+      "existing dialogue and system wording",
+      "faces, hands, costumes, props, panel layout and geography"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "review/v6-contact-360-0.png",
+      "review/v6-contact-360-4.png",
+      "review/v6-contact-360-6.png",
+      "review/v6-contact-390-0.png",
+      "review/v6-contact-390-4.png",
+      "review/v6-contact-390-6.png"
+    ]
+  },
+  "mobile_browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}

@@ -11,6 +11,8 @@ Rainy night crosswalk memory: close bare reaching hand and red scarf, bright dis
 Ren narration：最後に覚えているのは、届かなかった手。
 
 
+効果音：ザァァ…
+
 ## e01-waking
 
 Ren wakes seated on a stone stair in a white fantasy plaza and looks up at floating white towers, blue sky and hanging blue banners. Unarmored black short sleeves, charcoal trousers, crimson scarf, bare hands. Establish his confusion and the new world. Preserve the clear establishing view, large enough face.
@@ -46,6 +48,7 @@ Ren thought：俺、事故に遭ったはずじゃ……。
 
 画面内表示：空都リュミエル
 
+
 ## footsteps
 
 Low close shot of Rook's silver armored boots stepping on intact white stone stairs. Blue cape edge and daylight shadow lead toward Ren offscreen. FIRST approach cue. No faces, crystal, or future events.
@@ -54,11 +57,14 @@ Low close shot of Rook's silver armored boots stepping on intact white stone sta
 
 
 
+効果音：カツ…
+
 ## knight_arrives
 
 SAME arrival stone stair plaza. Ren seated lower left; Rook walks toward him from upper right EIGHT METRES away. Show actual distance and descending stairs, both recognizable. Rook is not beside Ren yet. No crystal.
 
 表示幅：100%。次までの間：390px幅で65px相当。
+
 
 
 
@@ -105,6 +111,7 @@ Ren：ああ……。
 Ren：ここは？
 
 
+
 ## e01-rook-name
 
 Immediately AFTER Rook helps seated Ren rise: both now STAND at same intact stair landing; they have not walked to the measuring station. Rook introduces his name and job. No Mira, crystal, armor or future0 result.
@@ -128,6 +135,7 @@ Ren has accepted help and knows whose explanation he is hearing.
 声：無言
 
 Rook：私はルーク。この街の騎士だ。
+
 
 
 ## e01-orientation
@@ -183,6 +191,7 @@ Rook：転生者か。
 Ren：……転生？俺が？
 
 
+
 ## e01-instruction
 
 Rook leads Ren ON FOOT across SAME intact lower balcony plaza. Side/three-quarter view of ONE Ren and ONE Rook walking the same direction; knight half a pace ahead right points forward. Ahead is ornate pointed silver stone pedestal and large BLACK faceted crystal, identical design to reference2. Add a SMALL NARROW FLAT METAL readout INSET on pedestal front, totally BLANK. High bridge in background, cargo awnings below rail. No results, giant, blue power. Ren LEFT and Rook RIGHT beside SAME assessment crystal. Rook's BLACK GLOVED finger points to top of black crystal. Ren's BARE hands stay lowered, NO TOUCH yet. Crystal in foreground center bottom. Narrow flat inset readout front totally blank, neutral daylight reflections no emitted glow. Both faces and hands clear.
@@ -227,6 +236,7 @@ Rook：水晶に手を置け。
 Rook offscreen：使える魔力の量がわかる。
 
 
+
 ## hesitation
 
 Close Ren unsure face, eyes between Rook offscreen and crystal bottom. His BARE RIGHT hand hovers FOUR centimetres ABOVE black crystal, tense fingers, NOT touched. Soft black sleeves and red scarf. Modest hopeful anxiety, no swagger. No readout result or blue glow.
@@ -236,11 +246,13 @@ Close Ren unsure face, eyes between Rook offscreen and crystal bottom. His BARE 
 Ren thought：俺にも、そんな力が……？
 
 
+
 ## touch
 
 Extreme close-up: Ren's BARE RIGHT PALM makes FIRST contact on TOP of same black faceted crystal. Exactly five relaxed fingers, soft short black sleeve, red scarf blurred behind. Same ornate pointed silver pedestal bottom. Narrow flat inset readout still BLANK. Neutral white reflections no magic. Single contact moment, no faces, text or numbers.
 
 表示幅：78%。次までの間：390px幅で25px相当。
+
 
 
 
@@ -278,6 +290,7 @@ Ren：……これで、いいのか？
 Rook：そのまま、待て。
 
 
+
 ## result
 
 Close on SAME black faceted crystal and ornate pointed silver pedestal. Ren's BARE RIGHT hand stays on top and is visible. The SMALL NARROW FLAT METAL readout INSET into pedestal FRONT shows FIRST reading in clean pale ivory vertical lettering: RIGHT column 魔力量, LEFT column ０. Zero large at 360px. Instrument in scene, not floating caption or gold hologram. Crystal remains dark. No faces or other letters.
@@ -285,6 +298,7 @@ Close on SAME black faceted crystal and ornate pointed silver pedestal. Ren's BA
 表示幅：88%。次までの間：390px幅で120px相当。
 
 measurement device：魔力量０
+
 
 
 ## e01-confirmation
@@ -321,6 +335,7 @@ Rook：魔力、ゼロ。
 Ren：……ゼロ？
 
 
+
 ## stakes
 
 Same station. Rook right explains coldly, head toward Ren. Ren left listens, now WITHDRAWN his BARE RIGHT hand from crystal, holds palm near chest in bafflement. Dark crystal below. Same intact city, no giant or blue power. Face and hand show disappointment.
@@ -328,6 +343,7 @@ Same station. Rook right explains coldly, head toward Ren. Ren left listens, now
 表示幅：100%。次までの間：390px幅で100px相当。
 
 Rook：この国では、魔力がない者は戦えない。
+
 
 
 ## rejection
@@ -339,6 +355,7 @@ Rook takes TWO steps AWAY from same crystal station along balcony; BLUE cape bac
 Rook：ハズレの転生者か。
 
 
+
 ## zero_reaction
 
 Solitary medium close-up Ren at same station, Rook has LEFT. Ren looks at his own BARE RIGHT palm held low, brows drawn, quiet hurt and loss. Black short sleeves red scarf. Black crystal blurred behind. No heroic pose, magic or armor. Intact quiet city.
@@ -348,6 +365,7 @@ Solitary medium close-up Ren at same station, Rook has LEFT. Ren looks at his ow
 Ren thought：……ここでも、何もできないのか。
 
 
+
 ## tremor
 
 Low close shot of Ren's ordinary dark BOOT and charcoal cuff on SAME white stone balcony floor. Red scarf edge above. Small loose pebbles and dust JOLT at first distant tremor. Intact floor. No giant, princess, crack, falling figure or later destruction. Short horizontal insert before guardian reveal.
@@ -355,6 +373,8 @@ Low close shot of Ren's ordinary dark BOOT and charcoal cuff on SAME white stone
 表示幅：72%。次までの間：390px幅で85px相当。
 
 
+
+効果音：ズ……ン。
 
 ## e01-danger
 
@@ -390,6 +410,9 @@ warning guard A：警備巨兵が暴走した！
 warning guard B：姫様が、橋にいる！
 
 
+効果音：ゴゴゴ…
+効果音：バキバキッ！
+
 ## fall
 
 Mira ONLY falling from the just-broken bridge, through open blue sky, past the lower stone balcony toward a large cargo canvas awning. ONE continuous vertical view with descending rubble trail; no other copies of Mira, no Ren, no armored hero. Her dress and blue/gold details remain intact and modest. Borderless, pale sky and WHITE natural light fade at bottom, edges harmonize with pale page. Her fearful face visible near upper third.
@@ -399,6 +422,8 @@ Mira ONLY falling from the just-broken bridge, through open blue sky, past the l
 Mira：誰か——！
 
 
+効果音：ヒュウウッ
+
 ## leap
 
 Unarmored Ren leaps decisively from the LOWER balcony toward Mira and the cargo awning below. Show push-off stone balcony behind, descending direction, streaming red scarf and reaching bare hand. He is not magically flying and has no armor or blue core. One shot of the choice to jump; his face stays clearly visible.
@@ -407,6 +432,8 @@ Unarmored Ren leaps decisively from the LOWER balcony toward Mira and the cargo 
 
 Ren thought：魔力がなくても、手くらい、伸ばせる。
 
+
+効果音：バッ！
 
 ## e01-catch
 
@@ -425,6 +452,7 @@ Ren catches Mira before they reach the canvas.
 Ren：つかまって！
 
 
+
 ## landing
 
 Immediately after catching: Ren still cradles Mira as they sink into and tear a large tan cargo canvas, cushioned by soft bundled cargo. Broken canvas supports and harmless debris, both alive. Ren bare hands, black shirt, red scarf, minor bruises. One concrete landing moment, NOT standing yet. No giant in foreground and no armor.
@@ -433,6 +461,8 @@ Immediately after catching: Ren still cradles Mira as they sink into and tear a 
 
 Ren thought：……生きてる。
 
+
+効果音：ドサッ。
 
 ## e01-safe-01
 
@@ -474,6 +504,7 @@ Mira tells him her name.
 
 Mira：ありがとう。
 Mira：私はミラ。
+
 
 
 ## e01-safe-02
@@ -519,6 +550,7 @@ Ren：レンだ。
 Ren：無事なら、それで。
 
 
+
 ## e01-approach
 
 SAME black stone guardian with violet diamond chest core and violet cracks now approaches on the lower SOLID plaza. Ren still unarmored black short sleeves and red scarf, BARE hands out to shield standing Mira behind him. Torn canvas and cargo remain behind them. Giant, both people and ground show clear depth. Ren looks alarmed then resolute, no armor/glow.
@@ -562,6 +594,7 @@ Ren：ミラ、下がって。
 Ren：今度は俺が止める。
 
 
+
 ## e01-core
 
 A close shot of Ren's BARE hand and his still SOFT BLACK SHIRT at the chest as a cyan star-like core first glows through the fabric. Not full armor; no transformed silhouette anywhere. Dark blue mood, cyan illumination. One small white vertical thought balloon and two vertical rectangular cyan system notices integrated in sequence. Preserve hand anatomy and shirt. System notices are opaque dark cyan rectangles with readable pale cyan upright Japanese lettering, not a speech tail.
@@ -597,6 +630,8 @@ Ren thought：これは……？
 画面内表示：救命行動を確認。救済核、起動。
 画面内表示：装甲名：ゼロ・ブレイク
 
+効果音：キィィン…
+
 ## hero
 
 FIRST full armor reveal. Low camera, full-length Ren in exact sleek black angular plate suit, star-shaped cyan chest core and cyan seams, red scarf, armored gloves and boots. Same black hair/blue eyes. Mira safely STANDING on solid ground behind right, not held or falling. White floating city. Dynamic but stable hero stance, not punching yet. Naturally white/cyan light at image edges and bottom blending into pale page; borderless single continuous picture. Balloon integrated near Ren's head, not a detached caption.
@@ -606,6 +641,8 @@ FIRST full armor reveal. Low camera, full-length Ren in exact sleek black angula
 Ren：なら、今度こそ。
 
 
+効果音：ガキンッ！
+
 ## punch
 
 The armored Ren punches the SAME giant's VIOLET DIAMOND CHEST CORE with a black armored fist, red scarf whips back, cyan power lights impact, purple stone fragments fly. Clear single point of impact at enemy chest, giant otherwise black stone/violet cracks. He protects Mira behind him; she is not in the strike path. One close explosive action shot, not a collage, no new weapon.
@@ -614,6 +651,9 @@ The armored Ren punches the SAME giant's VIOLET DIAMOND CHEST CORE with a black 
 
 Ren：ゼロ・ブレイク！
 
+
+効果音：ドゴォンッ！
+効果音：ガシャァッ！
 
 ## e01-relief
 
@@ -656,6 +696,7 @@ His relief is bigger than the numerical verdict.
 Mira：あなた、本当に魔力ゼロなの？
 Ren：みたいだ。
 Ren：けど、役立たずじゃなかった。
+
 
 
 ## e01-fragment

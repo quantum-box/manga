@@ -1,0 +1,94 @@
+{
+  "id": "e01-danger",
+  "episode": 1,
+  "file": "sfx-v6-danger-geography.png",
+  "method": "built-in image_gen targeted raster sound-effect edit",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-c4189040-b0f4-45fb-a8f1-b438e039bb9f.png",
+  "sha256": "9fd0c8302e775420139e1603cd741fd7a097f6e89472dfae3bc60973b7dae993",
+  "width": 724,
+  "height": 2172,
+  "sounds": [
+    "ゴゴゴ…",
+    "バキバキッ！"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.\n\nTARGETED EDIT:\nIn the large middle geographical panel ONLY, add ゴゴゴ… as heavy dark-violet/black outlined, slightly irregular stone-rumble lettering along the upper-left sky beside the guardian shoulder. Add バキバキッ！ in sharp fractured black lettering with white outline next to the breaking bridge, farther down the middle-right, following the falling masonry. Both sound effects must be large enough at 360px width, while preserving an uninterrupted view of the giant fist, Mira's face and body, Ren on the lower-left balcony, and canvas cargo awnings below. Do not put sound effects inside the guard speech panels.\n\nVerbatim new sound lettering: ゴゴゴ… / バキバキッ！",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/v6-danger-geography.png",
+      "sha256": "641bbe8bb4d91f98d85de78289ab9d9e0a015fa0066218ce7fd6b964c4f6a8a4"
+    }
+  ],
+  "repairBefore": {
+    "file": "v6-danger-geography.png",
+    "sha256": "641bbe8bb4d91f98d85de78289ab9d9e0a015fa0066218ce7fd6b964c4f6a8a4"
+  },
+  "panels": [
+    {
+      "beat": "The vibration comes from a runaway guardian.",
+      "view": "Distant warning guard shouting from lower plaza, looking up; Ren offscreen near measuring station.",
+      "frame": "right-aligned86% width, medium framed warning",
+      "voice": "urgent SHOUT, bold jagged outer edge",
+      "line": {
+        "speaker": "warning guard A",
+        "text": "警備巨兵が暴走した！",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "Show the full dangerous spatial relationship BEFORE anybody falls.",
+      "view": "Large continuous view: SAME black stone guardian violet diamond chest core beside HIGH stone bridge, Mira on bridge, Ren much LOWER balcony, canvas cargo awning BELOW Ren. Violet cracks only on guardian. Bridge beginning to crack, Mira still on bridge.",
+      "frame": "full-width LARGE tall borderless geographic view",
+      "voice": "無言"
+    },
+    {
+      "beat": "The rescue target is identified.",
+      "view": "SECOND warning guard face only, pointing up beyond top; Mira is NOT falling in this strip yet.",
+      "frame": "left-aligned90% width, medium framed shout",
+      "voice": "urgent bold jagged shout",
+      "line": {
+        "speaker": "warning guard B",
+        "text": "姫様が、橋にいる！",
+        "type": "speech"
+      }
+    }
+  ],
+  "preservedLines": [
+    {
+      "speaker": "warning guard A",
+      "text": "警備巨兵が暴走した！",
+      "type": "speech"
+    },
+    {
+      "speaker": "warning guard B",
+      "text": "姫様が、橋にいる！",
+      "type": "speech"
+    }
+  ],
+  "preservedVisibleText": [],
+  "originalPrompt": "Edit the FIRST image, preserving its THREE panel sequence, both shouting guards and their exact Japanese balloons completely. Change ONLY the MIDDLE large borderless geography image. It must clearly show THREE vertically separated levels: (1) Mira remains ON the cracking HIGH bridge at upper-right, not falling yet; (2) add a LOWER intact white STONE BALCONY sticking from the left wall at middle-left, significantly BELOW Mira's bridge; ONE unarmored Ren from image2 stands ON that lower balcony, BLACK fabric short-sleeve shirt, red scarf, messy black hair and blue eyes, both BARE hands, looking up to Mira. Show his whole upper body and one boot on stone so the balcony is unmistakable, not inside a tent. (3) keep the tan cargo canvas AWNING BELOW Ren's balcony with soft cargo beneath. Visible empty-air fall path from Mira, past Ren's lower balcony, down to awning. The giant black stone guardian and violet diamond chest core stay exactly the same. Do not put Ren on Mira's bridge, the ground, the canvas or in armor. Do not add lettering, future core power, any additional Ren or new event. Keep the FIRST and THIRD frames and balloon text pixel-consistent as much as possible. This is a geography clarification BEFORE fall, not a second rescue scene.",
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "9fd0c8302e775420139e1603cd741fd7a097f6e89472dfae3bc60973b7dae993",
+    "checks": [
+      "verbatim sound lettering",
+      "existing dialogue and system wording",
+      "faces, hands, costumes, props, panel layout and geography"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "review/v6-contact-360-0.png",
+      "review/v6-contact-360-4.png",
+      "review/v6-contact-360-6.png",
+      "review/v6-contact-390-0.png",
+      "review/v6-contact-390-4.png",
+      "review/v6-contact-390-6.png"
+    ]
+  },
+  "mobile_browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}

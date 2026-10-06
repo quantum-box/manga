@@ -1,0 +1,65 @@
+{
+  "id": "punch",
+  "episode": 1,
+  "file": "sfx-15-punch.png",
+  "method": "built-in image_gen targeted raster sound-effect edit",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-5761090a-314f-4b35-ac47-2ae12498670b.png",
+  "sha256": "1efa78eee6bcb8341b4f2664aec67d7db3fc26ed5cb8b0f18cff8be1bf2f0518",
+  "width": 1122,
+  "height": 1402,
+  "sounds": [
+    "ドゴォンッ！",
+    "ガシャァッ！"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 full-color Japanese Webtoon artwork. Input image is the EXACT EDIT TARGET. Add or revise only the specified integrated raster Japanese sound-effect lettering and the tiny related motion accents explicitly allowed below. Keep the original canvas aspect ratio, panel arrangement, gutters, cropping, composition, camera, every character identity, anatomy, costume, prop, background, pose, expression, exact dialogue and speech/thought balloons unchanged. Preserve vertical Japanese dialogue, upright glyphs and right-to-left column reading. Do NOT redraw or reinterpret the scene. Sounds sit directly in the picture outside dialogue balloons and support the pictured cause/action. Sound lettering may angle with motion; all Japanese words must be spelled exactly. Ensure the added effect reads at 360px phone width, but protect faces, hands, existing text and narrative clues. No English, added dialogue, watermark, captions, new people, panels or premature reveals.\n\nTARGETED EDIT:\nReplace ONLY the existing red/black lower-left ドンッ impact effect with much larger, more legible ドゴォンッ！ in energetic black brush letters with a clean thick white separation outline and restrained cyan edge. Sweep it diagonally upward toward the fist-core contact. Add smaller angular ガシャァッ！ among the flying upper-left fragments to communicate stone shattering. Preserve the exact punch contact, wrist/fist, cyan impact burst, purple guardian core fragments, Ren's face/red scarf and Mira safe behind him. The primary ドゴォンッ！ must be visibly stronger than ガシャァッ！ and legible at phone width. Avoid muddy illegible red texture.\n\nVerbatim new sound lettering: ドゴォンッ！ / ガシャァッ！",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/15-punch.png",
+      "sha256": "8628adaf6b9c98c42bce8e482947d79ae29cd884a43165f58e88255a9ce4accb"
+    }
+  ],
+  "repairBefore": {
+    "file": "15-punch.png",
+    "sha256": "8628adaf6b9c98c42bce8e482947d79ae29cd884a43165f58e88255a9ce4accb"
+  },
+  "panels": [],
+  "preservedLines": [
+    {
+      "speaker": "Ren",
+      "text": "ゼロ・ブレイク！",
+      "cols": [
+        "ゼロ・",
+        "ブレイク！"
+      ],
+      "type": "shout",
+      "position": "upper right or clear sky near Ren, tail to Ren"
+    }
+  ],
+  "preservedVisibleText": [],
+  "originalPrompt": "See the preserved adopted edition prompt in ../baseline/PROMPTS.md.",
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "1efa78eee6bcb8341b4f2664aec67d7db3fc26ed5cb8b0f18cff8be1bf2f0518",
+    "checks": [
+      "verbatim sound lettering",
+      "existing dialogue and system wording",
+      "faces, hands, costumes, props, panel layout and geography"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "review/v6-contact-360-0.png",
+      "review/v6-contact-360-4.png",
+      "review/v6-contact-360-6.png",
+      "review/v6-contact-390-0.png",
+      "review/v6-contact-390-4.png",
+      "review/v6-contact-390-6.png"
+    ]
+  },
+  "mobile_browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}
