@@ -78,5 +78,73 @@
       "scope": "rescue conversation 8-panel revision with varied panel sizes and borders",
       "status": "user_approved"
     }
+  },
+  "speech_balloon_revision": {
+    "date": "2026-10-06",
+    "feedback": "吹き出しいろんな種類のを使おう",
+    "status": "trial_not_user_approved",
+    "tool": "built-in image_gen",
+    "parts": [
+      {
+        "target": "balloons-01.png",
+        "edit_target": "varied-01.png",
+        "prompt": "Use case: precise-object-edit / Japanese speech-balloon contour revision.\nInput image1 is the EXACT edit target. Input image2 is a user-provided PHOTO of example balloon outlines only: use it solely to understand how thin colored contours and expressive thick rims vary by vocal intent. Do not reproduce its words, characters, screen, photograph or layout.\nChange ONLY the specified speech-balloon contours, line weight/color and tail design in image1. Preserve ALL existing manga artwork, frame widths/heights/positions, white gutters, borderless portions, character faces and anatomy, clothes, scene lighting, expressions and Japanese dialogue. Maintain original tall 3:1 aspect. Do NOT recompose, crop, zoom, reorder panels or add any speech to silent panels.\nText remains exact, LARGE upright Japanese, top-to-bottom columns and RIGHT-to-LEFT column order, same legibility and placements. Keep generous white inner padding and black printed manga gothic. Tails connect to correct actual speaker; keep faces and hands unobscured. No extra symbols, hearts, captions, labels, English or watermark. Distinguish quiet spoken voice with a CONNECTED pointed/curved tail from thought with dots. No thought dots here: EVERY existing line in this target is SPOKEN. Do not add a shout effect to a calm scene.\nPanel1 safety establishing view: leave completely unchanged, no balloons.\nPanel2 Mira gratitude: exact ありがとう。 Replace the generic oval with a softly organic rounded contour, 2-3 gentle uneven curves but NOT a thought cloud. Fine subdued blue-gray outline, slender gently curved CONTINUOUS SPEECH TAIL pointing into Mira's mouth. Warm and tender normal voice; not a jagged shout. Shape must visibly differ from a perfect ellipse while remaining quiet and readable.\nPanel3 eye reaction: leave completely unchanged, silent, no new balloon.\nPanel4 Mira introduction: exact 私はミラ。 Replace the oval with a tall clean ROUNDED-RECTANGLE/rounded capsule, restrained slightly stronger same blue-gray outline, a small tapering pointed tail toward Mira mouth. Formal composed self-introduction, corners generously rounded. It must visibly differ from panel2 organic gratitude. Preserve her face, hand and exact panel dimensions. No electronic UI, filled colored box or thought dots.\n",
+        "prompt_file": "prompt-balloons-01.txt",
+        "reference_roles": [
+          "existing manga: edit target",
+          "user photo IMG_5297.HEIC: balloon contour reference only, kept outside the distributed skill"
+        ],
+        "actual_dimensions": {
+          "width": 724,
+          "height": 2172
+        },
+        "sha256": "647470d3b13e82694c7373f125057c20713db171024a87722f6c52c8cffc4e44",
+        "generated_origin": "/Users/takanorifukuyama/.codex/generated_images/01a10f99-efcb-7371-8c20-e01aa60f7ed9/exec-9e9be2b4-23e3-4645-94b0-09d96c4cb36f.png"
+      },
+      {
+        "target": "balloons-02.png",
+        "edit_target": "varied-02.png",
+        "prompt": "Use case: precise-object-edit / Japanese speech-balloon contour revision.\nInput image1 is the EXACT edit target. Input image2 is a user-provided PHOTO of example balloon outlines only: use it solely to understand how thin colored contours and expressive thick rims vary by vocal intent. Do not reproduce its words, characters, screen, photograph or layout.\nChange ONLY the specified speech-balloon contours, line weight/color and tail design in image1. Preserve ALL existing manga artwork, frame widths/heights/positions, white gutters, borderless portions, character faces and anatomy, clothes, scene lighting, expressions and Japanese dialogue. Maintain original tall 3:1 aspect. Do NOT recompose, crop, zoom, reorder panels or add any speech to silent panels.\nText remains exact, LARGE upright Japanese, top-to-bottom columns and RIGHT-to-LEFT column order, same legibility and placements. Keep generous white inner padding and black printed manga gothic. Tails connect to correct actual speaker; keep faces and hands unobscured. No extra symbols, hearts, captions, labels, English or watermark. Distinguish quiet spoken voice with a CONNECTED pointed/curved tail from thought with dots. No thought dots here: EVERY existing line in this target is SPOKEN. Do not add a shout effect to a calm scene.\nPanel1 cropped Mira hand information: exact この国の王女よ。 Two columns RIGHT TO LEFT: この国の | 王女よ。 Use a clean tall rounded-rectangle/rounded capsule, fine subdued blue-gray outline matching Mira's composed self-introduction. Small tapered tail toward her OFFSCREEN MOUTH ABOVE RIGHT, never toward the jewel or hand. This is spoken dialogue, no thought dots and no electronic UI.\nPanel2 Ren eye reaction: unchanged, SILENT, no new balloon.\nPanel3 Ren introduction: exact レンだ。 Keep a simple ordinary upright oval, restrained dark charcoal line and short direct speech tail toward Ren mouth. Plain steady voice. Same legible text size.\nPanel4 borderless Ren relieved response: exact 無事なら、それで。 Two columns RIGHT TO LEFT: 無事なら、 | それで。 Replace generic round ellipse with a slightly elongated SOFTLY WAVERING outline, irregular but closed fine charcoal line, thinner than his normal speech; connected small weak wavering speech tail points toward Ren mouth. Audible tired breath after rescue, not fear, crying, shouting or interior thought. No dotted tail, no fluffy thought cloud, no speech without tail. Preserve the LARGE borderless last portrait exactly. The difference should communicate an exhausted soft voice, not random decoration.\n",
+        "prompt_file": "prompt-balloons-02.txt",
+        "reference_roles": [
+          "existing manga: edit target",
+          "user photo IMG_5297.HEIC: balloon contour reference only, kept outside the distributed skill"
+        ],
+        "actual_dimensions": {
+          "width": 724,
+          "height": 2172
+        },
+        "sha256": "3a01d48eb489e7e615e481d489b13cb60ce907b549a8422997b256f4d7c071c9",
+        "generated_origin": "/Users/takanorifukuyama/.codex/generated_images/01a10f99-efcb-7371-8c20-e01aa60f7ed9/exec-1f8ec04e-971c-4915-8f70-80ca2e981540.png"
+      },
+      {
+        "target": "balloon-shout.png",
+        "edit_target": "balloon-shout-before.png",
+        "prompt": "Use case: precise-object-edit / emphatic speech-balloon outline.\nImage1 is the EXACT target: Ren catching Mira in midair. Image2 is a PHOTO supplied ONLY as a reference for the DENSE thick outward jagged/brush rim on the loud balloon. Do not copy its dialogue, characters, photo or layout.\nChange ONLY Ren's existing shout balloon at upper right. Preserve all artwork, faces, bare hands, the supported Mira, clothing, red scarf, setting, framing and composition. Same roughly 4:5 portrait aspect. Keep the exact Japanese つかまって！ in ONE upright top-to-bottom vertical column, large legible printed manga gothic.\nReplace its thin simple starburst with an emphatic white shout balloon surrounded by a bold dark charcoal dense outward tapered jagged/brush rim, like stressed loud comic speech. Variation of thick and thin strokes around the perimeter, roughly 12-20px visual rim at 1024px-wide art, WHITE inner area and generous text inset. A clear pointed sharp speech tail connects toward REN'S OPEN MOUTH, no dots. The outline communicates a loud urgent safety instruction during a rescue, not a villain aura or interior thought.\nFit the rim into the existing balloon area; do not cover hair, face or hand, and do not enlarge it over Mira. Avoid glow, red fill, blood, extra text, labels, new balloons or watermark. The original black panel frame stays unchanged. Everything outside this balloon is an invariant.\n",
+        "prompt_file": "prompt-balloon-shout.txt",
+        "reference_roles": [
+          "existing manga: edit target",
+          "user photo IMG_5297.HEIC: balloon contour reference only, kept outside the distributed skill"
+        ],
+        "actual_dimensions": {
+          "width": 1122,
+          "height": 1402
+        },
+        "sha256": "b1e3efc1a8356b4b72005066acc515d7948c8ccafe10f0ccc7deb92a71fa419b",
+        "generated_origin": "/Users/takanorifukuyama/.codex/generated_images/01a10f99-efcb-7371-8c20-e01aa60f7ed9/exec-854d4dd9-8aec-4f47-876c-f3225404785a.png"
+      }
+    ],
+    "preserved_sources": [
+      {
+        "target": "balloon-shout-before.png",
+        "repository_source": "examples/zero-break/v5/art/09-catch.png",
+        "sha256": "8531fe8a26c7f940de9f6a909fc6ab33687795d735458905cf54d47a61fb53f8"
+      },
+      {
+        "target": "balloon-thought.png",
+        "repository_source": "examples/zero-break/v5/art/a15-zero-reaction.png",
+        "sha256": "9bfcde731b5ed7e383ea626945d872f4cb6ee2188e889830b326a13a180f4414"
+      }
+    ]
   }
 }

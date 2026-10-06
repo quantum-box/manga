@@ -19,16 +19,24 @@
 <body>
   <header>
     <h1>ゼロブレイク<br>救出後の会話・コマ分け試作</h1>
-    <p class="status">2026-10-06、コマの大小と枠を変えた版を採用。初稿・原画と比較できます。</p>
-    <p>同じ8コマに大小をつけ、短い目元の反応と、大きく見せる名乗り・返事を読み進めます。</p>
+    <p class="status">コマの大小と枠を変えた版は採用済み。吹き出しを使い分けた追加改稿は確認用の試作です。</p>
+    <p>同じ会話とコマ割りを保ち、礼・名乗り・疲れた声で吹き出しを使い分けます。</p>
     <nav aria-label="比較する版">
-      <button type="button" data-version="after" aria-pressed="true">大小をつけた8コマ</button>
+      <button type="button" data-version="balloons" aria-pressed="true">吹き出しを使い分けた8コマ</button>
+      <button type="button" data-version="after" aria-pressed="false">採用済み：大小の8コマ</button>
       <button type="button" data-version="initial" aria-pressed="false">分割した初稿：8コマ</button>
       <button type="button" data-version="before" aria-pressed="false">修正前：1コマ</button>
+      <button type="button" data-version="examples" aria-pressed="false">叫びと心の声の例</button>
     </nav>
   </header>
   <main>
-    <section id="after" aria-label="大小と枠を変えた再改稿、8コマ">
+    <section id="balloons" aria-label="声に合わせて吹き出しを変えた8コマ">
+      <figure><img src="balloons-01.png" width="724" height="2172" alt="二人の安全を確認する無言の大コマ。ミラ、ありがとう、柔らかな輪郭と細い青灰色の線。レンの無言の目元。ミラ、私はミラ、角を丸めた縦長の吹き出し。"></figure>
+      <div class="pause" aria-hidden="true"></div>
+      <figure><img src="balloons-02.png" width="724" height="2172" alt="ミラ、この国の王女よ、同じ青灰色の落ち着いた輪郭と画面外の口へ向く尾。レンの無言の目元。レン、レンだ、普通の楕円。レン、無事なら、それで、疲れた声を示す少し揺れる輪郭と口へつながる細い尾。"></figure>
+      <p class="end">静かな会話の吹き出しを使い分けた試作です。</p>
+    </section>
+    <section id="after" aria-label="大小と枠を変えた再改稿、8コマ" hidden>
       <figure><img src="varied-01.png" width="724" height="2172" alt="大きな全景で二人の安全を確認。右寄せの小さめのミラの顔、ありがとう。左寄せの浅い横長コマでレンの目元の反応、無言。大きな縦長コマで胸元へ手を添えるミラ、私はミラ。"></figure>
       <div class="pause" aria-hidden="true"></div>
       <figure><img src="varied-02.png" width="724" height="2171" alt="中くらいの手元のコマ、ミラ、この国の王女よ。左寄せの浅い横長コマでレンの目元が小さく驚く、無言。右寄せの縦長コマで自分を示すレン、レンだ。枠を外した大きなレンの上半身、無事なら、それで。"></figure>
@@ -43,6 +51,16 @@
     <section id="before" aria-label="修正前、1コマ" hidden>
       <figure><img src="before-safe.png" width="1024" height="1536" alt="破れた天幕の前で、立つミラと膝をつくレンを一緒に描いた1コマ。ミラ、ありがとう。私はミラ。この国の王女よ。レン、レンだ。無事なら、それで。"></figure>
       <p class="end">礼・名前・身分・返答を1コマに収めた原画です。</p>
+    </section>
+    <section id="examples" aria-label="別の場面での叫びと心の声の演出例" hidden>
+      <h2 style="padding:0 16px;font-size:20px">救出中の大きな呼びかけ</h2>
+      <p style="padding:0 16px">落下するミラを抱きとめたレンが「つかまって！」と呼ぶ場面。太いトゲ状の縁と鋭い尾で切迫した声を見せます。</p>
+      <figure><img src="balloon-shout.png" width="1122" height="1402" alt="落下中、レンが素手でミラを抱きとめる。つかまって！の吹き出しは太く密なトゲ状の縁と、レンへ向く鋭い尾。"></figure>
+      <div class="pause" aria-hidden="true"></div>
+      <h2 style="padding:0 16px;font-size:20px">魔力を測った後の心の声</h2>
+      <p style="padding:0 16px">魔力ゼロと告げられたレンが自分の素手を見る場面。雲形と頭へ続く点で、相手へ話した声と区別します。</p>
+      <figure><img src="balloon-thought.png" width="1122" height="1402" alt="レンが素手を見つめる。心の声、……ここでも、何もできないのか。雲形の吹き出しからレンの頭へ小さな点が続く。"></figure>
+      <p class="end">この二枚は吹き出しの演出例です。会話8コマとは別の場面です。</p>
     </section>
   </main>
   <script>

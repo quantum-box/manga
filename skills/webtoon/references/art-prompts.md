@@ -24,12 +24,16 @@ Style/medium: [chosen art direction].
 Scene/backdrop: [consistent setting and time].
 Text: Render the exact Japanese dialogue below inside white speech balloons integrated with the illustration. Use true vertical Japanese typesetting: upright glyphs, top-to-bottom columns, columns ordered right-to-left. Do not rotate horizontal sentences sideways. No extra text or watermark.
 Dialogue: [speaker, exact full text, balloon reading order, and each vertical column listed in right-to-left order].
+Voice: [spoken / thought; intended listener; volume, emotion and breath for THIS utterance].
+Balloon design: [contour, line weight/color, white inner padding, and continuous speech tail or thought dots].
 Lettering: Clean printed Japanese manga gothic, dark lettering, generous inset padding, legible after smartphone downscaling. Balloon tails point to the speakers. Do not cover faces or hands.
 Constraints: [unchanging identity] and [this scene's prop state].
 Avoid: [information not yet revealed], extra props, duplicate characters, watermark.
 ```
 
 背景の端を同色へ柔らかくつなぐ指示は、連続する場面で必要な場合だけ追加する。全作品を夜や暗色に限定しない。
+
+[吹き出しの実例](speech-balloons.md)に従い、通常の楕円、柔らかな輪郭、揺れる線、太いトゲ、雲形などを発話の役割で選ぶ。参照画像の全吹き出しを同じ形にコピーしない。輪郭だけを直す編集では、セリフ・コマ割り・話者・表情を保つ条件と、変更する線・尾を分けて指示する。
 
 会話の指示では、参照にいる人物を全員描かせず、そのコマで画面内にいる人物・注目する対象と、画面外の話者や聞き手を分ける。場所、左右の関係、姿勢、小道具の状態は前のコマから保つ。[状況と会話の実例](context-and-dialogue.md)のように、反応や返答まで一枚へ詰めず、今回描く発話だけを渡す。接写を理由に新しい場所・動作・人物を足さない。
 
