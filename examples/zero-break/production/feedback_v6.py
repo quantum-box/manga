@@ -199,6 +199,35 @@ def build(number):
                     layoutRevisionRecord=str(record_path.relative_to(REPO)),
                     layout=record['layout'], provenance='panel layout recomposition',
                     visual_review=record['visual_review'])
+    remake_state = ROOT / 'production/webtoon-remake'
+    remake_plan_path = remake_state / f'episode-{number:02d}-plan.json'
+    if remake_plan_path.exists():
+        remake_plan = json.loads(remake_plan_path.read_text())
+        assert {job['shotId'] for job in remake_plan['jobs']} == {shot['id'] for shot in shots}
+        for shot in shots:
+            job = next(job for job in remake_plan['jobs'] if job['shotId'] == shot['id'])
+            record_path = remake_state / 'records' / (job['id'] + '.json')
+            if not record_path.is_file():
+                raise ValueError(f'Remake incomplete: {job["id"]}')
+            record = json.loads(record_path.read_text())
+            before = record['beforeShot']
+            for key in ('id','file','lines','panels','sounds','visible_text','pause','widthPercent','shape','sha256','prompt','replaces'):
+                assert before.get(key) == shot.get(key), (shot['id'], key)
+            assert digest(directory(number)/'art'/before['file']) == before['sha256']
+            assert digest(directory(number)/'art'/record['file']) == record['sha256']
+            for reference in record['referenceHashes']:
+                assert digest(REPO/reference['path']) == reference['sha256']
+            assert record['nativeFullSizeReview'] == 'passed'
+            assert len(record['panels']) == record['actualPanelCount']
+            shot.update(file=record['file'], panels=record['panels'], sounds=record['sounds'],
+                        visible_text=record.get('visibleText',before.get('visible_text',[])),
+                        prompt=record.get('executedRepairPrompt',record['prompt']), sha256=record['sha256'],
+                        references=[r['path'] for r in record['referenceHashes']],
+                        remakeRevisionRecord=str(record_path.relative_to(REPO)),
+                        layout=record['layout'], widthPercent=100, shape='bleed',
+                        provenance='webtoon skill full scene recomposition',
+                        visual_review=record['nativeFullSizeReview'])
+        manifest['remakeEdition'] = 'webtoon-remake-20261006'
     manifest.update(version='context-dialogue-v6', shots=shots,
                     panel_count=sum(len(s.get('panels',[s])) for s in shots),
                     baseline=baseline_reference(f'episode-{number:02d}.json'))
@@ -234,7 +263,9 @@ def build(number):
     execution=[]
     for shot in shots:
         record_path=STATE/'records'/(shot['id']+'.json')
-        if shot.get('layoutRevisionRecord'):
+        if shot.get('remakeRevisionRecord'):
+            record_path = REPO / shot['remakeRevisionRecord']
+        elif shot.get('layoutRevisionRecord'):
             record_path = REPO / shot['layoutRevisionRecord']
         elif shot.get('revisionRecord'):
             record_path = REPO / shot['revisionRecord']
@@ -248,13 +279,16 @@ def build(number):
             'provenance_record':archive,
         }
         execution.append(record)
-    dump(old_log,{'edition':'context-dialogue-v6','adopted':execution,
+    dump(old_log,{'edition':manifest.get('remakeEdition',manifest['version']),'adopted':execution,
                  'prior_generation_record':archive})
     prompt_lines=[f'# 第{number:02d}話 — 採用原画の実行指示','',
-                  '全10話の改稿は新規54素材・承認見本の再利用3素材。再利用・修正・採用原画の保持を generation-log.json で区別。以前の実行記録は Git の履歴で管理。','']
+                  '採用原画の実行指示と参照ハッシュを generation-log.json に記録。以前の公開版・実行記録は Git の履歴で管理。','']
     sound_count = sum(bool(s.get('revisionRecord')) for s in shots)
     insert_count = sum(bool(s.get('insertionRecord')) for s in shots)
     layout_count = sum(bool(s.get('layoutRevisionRecord')) for s in shots)
+    remake_count = sum(bool(s.get('remakeRevisionRecord')) for s in shots)
+    if remake_count:
+        prompt_lines += [f'今回のWebtoonスキルによる再作画：{remake_count}素材。大小・横並び・斜め枠・動作音・人物と小道具の連続性を原画ごとに再設計。実行指示と参照ハッシュは production/webtoon-remake/records。','']
     if sound_count or insert_count:
         prompt_lines += [f'この話の追加改稿：既存{sound_count}素材の効果音編集・{insert_count}素材の装着過程追加。元画像・修正前画像・実行指示は production/episode-{number:02d}-sfx に保持。','']
     if layout_count:
@@ -263,18 +297,20 @@ def build(number):
         prompt_lines += ['## '+r['file'],'',r['method'],'',
                          '参照：'+json.dumps(r.get('references',[]),ensure_ascii=False),'']
         if r.get('originalPrompt'):prompt_lines += ['元の生成指示：','','```text',r['originalPrompt'],'```','']
-        prompt_lines += ['採用時の指示：','','```text',r.get('prompt',''),'```','']
-    (directory(number)/'PROMPTS.md').write_text('\n'.join(prompt_lines))
+        prompt_lines += ['採用時の指示：','','```text',r.get('executedRepairPrompt',r.get('prompt','')),'```','']
+    (directory(number)/'PROMPTS.md').write_text('\n'.join(line.rstrip() for line in '\n'.join(prompt_lines).splitlines())+'\n')
     subprocess.run([sys.executable,str(REPO/'skills/webtoon/scripts/package_reader.py'),str(directory(number)/'index.html'),'--output',str(directory(number)/'reader.html'),'--force'],check=True)
     validation_path=directory(number)/'validation.json'
     current_hash=digest(directory(number)/'index.html')
     prior_validation=json.loads(validation_path.read_text()) if validation_path.exists() else {}
     if prior_validation.get('readerSourceSha256')==current_hash:
+        prior_validation.update(edition=manifest.get('remakeEdition',manifest['version']), panels=manifest['panel_count'])
+        dump(validation_path,prior_validation)
         report()
         print(f'Built chapter {number}: unchanged reviewed reader')
         return
     dump(validation_path,{
-        'edition':'context-dialogue-v6', 'panels':manifest['panel_count'],
+        'edition':manifest.get('remakeEdition',manifest['version']), 'panels':manifest['panel_count'],
         'readerSourceSha256':current_hash,
         'source_assets_verified':True,'visualReview':{'status':'pending'},
         'mobileBrowserReview':{'status':'pending','note':'Prior edition review does not apply to revised art.'},
@@ -295,6 +331,7 @@ def report():
         validation=json.loads((directory(n)/'validation.json').read_text())
         rows.append({'episode':n,'planned_assets':len(chapter_jobs),'saved_assets':len(done),
                      'reader_revision_built':current.get('version')=='context-dialogue-v6',
+                     'webtoon_remake_assets':sum(bool(s.get('remakeRevisionRecord')) for s in current['shots']),
                      'panels':current.get('panel_count'),
                      'native_visual_review':validation.get('visualReview',{}).get('status','pending'),
                      'browser_review':validation.get('mobileBrowserReview',{}).get('status','pending')})
@@ -303,11 +340,11 @@ def report():
                            'next_asset':next((j['id'] for j in jobs if j not in saved),None)})
     lines = ['# ゼロブレイク・フィードバック反映の進行台帳','',
              '第1〜10話の既存原画を保持して改稿。全50話のコマ別脚本を更新。第11〜50話の作画は未制作。', '',
-             f'改稿素材：{len(saved)}/{len(jobs)}を保存（新規生成54・承認見本再利用3）。', '',
-             '|話|改稿素材|コマ|画像目視|ブラウザ|', '|---|---:|---:|---|---|']
-    lines += [f'|{r["episode"]}|{r["saved_assets"]}/{r["planned_assets"]}|{r["panels"]}|{r["native_visual_review"]}|{r["browser_review"]}|' for r in rows]
+             f'以前の会話改稿の記録：{len(saved)}/{len(jobs)}（新規生成54・承認見本再利用3）。今回の第2〜10話の再作画：{sum(r["webtoon_remake_assets"] for r in rows)}素材。', '',
+             '|話|今回の再作画|コマ|画像目視|ブラウザ|', '|---|---:|---:|---|---|']
+    lines += [f'|{r["episode"]}|{r["webtoon_remake_assets"]}|{r["panels"]}|{r["native_visual_review"]}|{r["browser_review"]}|' for r in rows]
     lines += ['', '次の作画：'+next((j['id'] for j in jobs if j not in saved),'作画素材は保存済み'), '',
-              '各画像の実行プロンプト・参照とハッシュ：feedback-v6/records。未生成・未確認は完成としない。','']
+              '今回の実行プロンプト・参照・原寸と360/390px確認：webtoon-remake/records。以前の会話改稿：feedback-v6/records。公開更新は未実施。','']
     (ROOT/'production/status.md').write_text('\n'.join(lines))
 
 if __name__ == '__main__':

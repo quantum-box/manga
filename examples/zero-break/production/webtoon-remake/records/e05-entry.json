@@ -1,0 +1,172 @@
+{
+  "id": "e05-entry",
+  "episode": 5,
+  "shotId": "entry",
+  "beforeShot": {
+    "id": "entry",
+    "file": "07-entry.png",
+    "crop": "tall",
+    "shape": "bleed",
+    "aspect": "1024x1792",
+    "pause": 110,
+    "scene": "Three descend a service stair into blue-grey subterranean brass transport tunnel following block's pipe route. No captive silhouettes yet, keep directional stair and single lantern.",
+    "lines": [],
+    "status": "generated",
+    "state": "Three descend a service stair into blue-grey subterranean brass transport tunnel following block's pipe route. No captive silhouettes yet, keep directional stair and single lantern.",
+    "pacing": "short action / reaction",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Edit ONLY the extra silver-haired knight with a blue cape in the first panel. Replace that knight with Noa from reference2: young adult orange short tousled hair, brass round goggles ON head, green eyes, freckles, BLACK undershirt and BLUE mechanic overalls, ORANGE work gloves, brown utility belt. Noa carries the group's ONE amber lantern while descending behind Ren and Mira. Preserve Ren ordinary BLACK fabric shirt, red scarf and bare arms, Mira white-blue-gold gown, stairs, subterranean brass pipes, composition and blue-grey underground light. Rook does not accompany this chapter, no knight or blue cape anywhere. No captives yet, no dialogue, no new panels.\n",
+    "sha256": "5139d442653856f632b3c113591bbe9833084869910c498310bed4546fe44829",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png"
+    ],
+    "baseline_sha256": "5139d442653856f632b3c113591bbe9833084869910c498310bed4546fe44829",
+    "widthPercent": 100,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-entry.png",
+  "references": [
+    "examples/zero-break/episode-05/art/07-entry.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Three descend a service stair into blue-grey subterranean brass transport tunnel following block's pipe route. No captive silhouettes yet, keep directional stair and single lantern.\nExact layout, camera and mechanics: Tall narrow descent geography, SINGLE brass lantern with Noa ahead, Mira then Ren behind, one staircase into blue-grey tunnel. Lower shallow boot-on-step inset linked by gutter. Keep captive humans and delivery destination hidden.\nExact speech in chronological order: []\nExact effects (each once, near physical cause): [\"コツ…\"]\nExact visible prop text: []. No other text.\n",
+  "layoutDirection": "Tall narrow descent geography, SINGLE brass lantern with Noa ahead, Mira then Ren behind, one staircase into blue-grey tunnel. Lower shallow boot-on-step inset linked by gutter. Keep captive humans and delivery destination hidden.",
+  "sounds": [
+    "コツ…"
+  ],
+  "visibleText": [],
+  "status": "planned",
+  "output": "examples/zero-break/episode-05/art/remake-entry.png",
+  "sha256": "88fd2ece7a41c5254eaddc3ecf5c484adc19e98e36531bbf0884aaa1c555d6a0",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-446ad6cc-d498-4f0a-9722-cf12e84dd31c.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 5,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-0.png",
+        "sha256": "8de5c52f75c391d3ec7aa001b11d272a2fcb343ace58e770d73cada00f0d7fcc"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-1.png",
+        "sha256": "f7d8df5bd5fb339e89aa10a0635b71ac253f6e0866116b20da90333ada4c0681"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-2.png",
+        "sha256": "d8e0c33a00b85545e6f3c6eab04c3c406ddc783a1cc0dd837945600bad5b580b"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-3.png",
+        "sha256": "1985a20c1de6ac0ce1773beb305e4c85953944e66d95dc016095a969ba1d656a"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-4.png",
+        "sha256": "36f8576fca6cbf923ac632b9748ee8c9d879086ce2192e02bd885810d63efc05"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-0.png",
+        "sha256": "6d2268380e7b07e3d5c53d8fcc4d876ea94c18f139d88317481ac9d8611e6332"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-1.png",
+        "sha256": "6668511341cbbd35dd266c7c95c1db518650ecadcfd907fd682a9e24aab5c217"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-2.png",
+        "sha256": "979a87a814009e4c90d67353a4bd62e3ac26b9b355c8a37c1b33dd0570d18173"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-3.png",
+        "sha256": "d80b60173f774f8a4f1553a8174de696246a25da9c56720910f9b6b2928af165"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-4.png",
+        "sha256": "fb8ff847478c3a3644f032374fe40c8cd9f31f78efdb33e1ae1f17db67a0f93d"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-05/art/07-entry.png",
+      "sha256": "5139d442653856f632b3c113591bbe9833084869910c498310bed4546fe44829"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "executedRepairPrompt": "Recompose this descent scene into exactly5 clearly ordered genuine frames at1024x1536: upper full-width geography of ONE Ren leading Mira and Noa DOWN the brass-pipe service stair with ONE lantern. Second row RIGHT Noa lantern close-up / LEFT Mira cautious face. Third full-width Ren face looking down. Fourth full-width ordinary Ren boot stepping DOWN with exactly ONE コツ… . Japanese reading top to bottom, within row RIGHT to LEFT. Clear white gutters; NO tall frame spanning multiple rows at side, no duplicate lanterns or extra people, captives still hidden. Preserve unarmored character clothing/identities and tunnel lighting. No dialogue/captions.",
+  "repairBefore": {
+    "path": "examples/zero-break/production/webtoon-remake/references/e05-entry-before-correction.png",
+    "sha256": "1ed898abb0a4cd4aea6a631b6194714f34bee750b497f5ff91b9c94e9853506c"
+  },
+  "panels": [
+    {
+      "beat": "ノアの灯りを先頭に地下へ下りる",
+      "view": "ノアの灯りを先頭に地下へ下りる",
+      "frame": "row 1; full-width panel",
+      "voice": "無言"
+    },
+    {
+      "beat": "ノアが灯りで道を照らす",
+      "view": "ノアが灯りで道を照らす",
+      "frame": "row 2; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "ミラが地図を確認する",
+      "view": "ミラが地図を確認する",
+      "frame": "row 2; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "レンが暗い奥を見る",
+      "view": "レンが暗い奥を見る",
+      "frame": "row 3; full-width panel",
+      "voice": "無言"
+    },
+    {
+      "beat": "普通の靴で階段を踏む",
+      "view": "普通の靴で階段を踏む",
+      "frame": "row 4; full-width panel",
+      "voice": "無言"
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ],
+    "direction": "Tall narrow descent geography, SINGLE brass lantern with Noa ahead, Mira then Ren behind, one staircase into blue-grey tunnel. Lower shallow boot-on-step inset linked by gutter. Keep captive humans and delivery destination hidden.",
+    "observedPanelBeats": [
+      "ノアの灯りを先頭に地下へ下りる",
+      "ノアが灯りで道を照らす",
+      "ミラが地図を確認する",
+      "レンが暗い奥を見る",
+      "普通の靴で階段を踏む"
+    ]
+  }
+}

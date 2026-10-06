@@ -1,0 +1,181 @@
+{
+  "id": "e05-jam-signal",
+  "episode": 5,
+  "shotId": "jam-signal",
+  "beforeShot": {
+    "id": "jam-signal",
+    "file": "13-jam-signal.png",
+    "crop": "wide",
+    "shape": "right",
+    "aspect": "1024x768",
+    "pause": 100,
+    "scene": "Noa orange gloves remove drone relay fuse at wall access panel, searchlight dims; only hand-tool technology, no future load disperser. Mira records conduit plate.",
+    "lines": [],
+    "status": "generated",
+    "state": "Noa orange gloves remove drone relay fuse at wall access panel, searchlight dims; only hand-tool technology, no future load disperser. Mira records conduit plate.",
+    "pacing": "short action / reaction",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Preserve Noa orange-haired goggles/blue overalls/orange gloves extracting the relay fuse and Mira recording in her notebook in the FIRST anime panel. Remove the black-haired Ren visible between them: he is carrying the old man off-crop and cannot be standing helping at this panel. Fill that space with the same dim underground brick tunnel and brass pipes from reference2. Replace the visible royal banner, night sky and outdoor watchtower/searchlight with a dark underground brick ceiling and a SMALL brass patrol drone whose light has just DIMMED. Keep the access panel, isolated fuse, gloved hands, two faces and composition. No other people, no dialogue, no letter overlays.\n",
+    "sha256": "d48809f086fd477ab743458e8c138d5c0f3623093585e79320319d29e48860b3",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../production/references/noa.png"
+    ],
+    "baseline_sha256": "d48809f086fd477ab743458e8c138d5c0f3623093585e79320319d29e48860b3",
+    "widthPercent": 100,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-jam-signal.png",
+  "references": [
+    "examples/zero-break/episode-05/art/13-jam-signal.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Noa orange gloves remove drone relay fuse at wall access panel, searchlight dims; only hand-tool technology, no future load disperser. Mira records conduit plate.\nExact layout, camera and mechanics: Upper horizontal RIGHT Noa orange gloves expose wall relay box / LEFT removes ONE fuse with small insulated hand tool. Lower drone searchlight dims, Mira copies conduit plate into paper without readable invented strings. This is physical circuit interruption, no Link-form magic.\nExact speech in chronological order: []\nExact effects (each once, near physical cause): [\"カチッ\"]\nExact visible prop text: []. No other text.\n",
+  "layoutDirection": "Upper horizontal RIGHT Noa orange gloves expose wall relay box / LEFT removes ONE fuse with small insulated hand tool. Lower drone searchlight dims, Mira copies conduit plate into paper without readable invented strings. This is physical circuit interruption, no Link-form magic.",
+  "sounds": [
+    "カチッ"
+  ],
+  "visibleText": [],
+  "status": "planned",
+  "output": "examples/zero-break/episode-05/art/remake-jam-signal.png",
+  "sha256": "da9f602cf1abb34a03480351f07674c10e85653d74bb916c2f78660f35e38930",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-bfcf3e70-ff6b-4bf7-88ab-518fce731ed5.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 6,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-0.png",
+        "sha256": "8de5c52f75c391d3ec7aa001b11d272a2fcb343ace58e770d73cada00f0d7fcc"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-1.png",
+        "sha256": "f7d8df5bd5fb339e89aa10a0635b71ac253f6e0866116b20da90333ada4c0681"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-2.png",
+        "sha256": "d8e0c33a00b85545e6f3c6eab04c3c406ddc783a1cc0dd837945600bad5b580b"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-3.png",
+        "sha256": "1985a20c1de6ac0ce1773beb305e4c85953944e66d95dc016095a969ba1d656a"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-4.png",
+        "sha256": "36f8576fca6cbf923ac632b9748ee8c9d879086ce2192e02bd885810d63efc05"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-0.png",
+        "sha256": "6d2268380e7b07e3d5c53d8fcc4d876ea94c18f139d88317481ac9d8611e6332"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-1.png",
+        "sha256": "6668511341cbbd35dd266c7c95c1db518650ecadcfd907fd682a9e24aab5c217"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-2.png",
+        "sha256": "979a87a814009e4c90d67353a4bd62e3ac26b9b355c8a37c1b33dd0570d18173"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-3.png",
+        "sha256": "d80b60173f774f8a4f1553a8174de696246a25da9c56720910f9b6b2928af165"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-4.png",
+        "sha256": "fb8ff847478c3a3644f032374fe40c8cd9f31f78efdb33e1ae1f17db67a0f93d"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-05/art/13-jam-signal.png",
+      "sha256": "d48809f086fd477ab743458e8c138d5c0f3623093585e79320319d29e48860b3"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "executedRepairPrompt": "Edit ONLY panel placements in this existing6-panel Webtoon. Two horizontal rows are currently in wrong chronological order for Japanese RIGHT-to-LEFT reading. In the SECOND row place the pliers REMOVING the fuse and single カチッ in the RIGHT half of canvas; place Noa holding the already removed fuse in the LEFT half. In the THIRD row place SAME brass drone with searchlight ON in the RIGHT half; place SAME drone searchlight OFF in the LEFT half. Preserve upper wide Noa/Mira working on same relay and lower wide Mira copying abstract diagram. Keep6 frames, all art style, characters, fuse, no added words/sounds. Clear white gutters. No mirrored Japanese lettering: sound カチッ remains normal readable orientation exactly once.",
+  "repairBefore": {
+    "path": "examples/zero-break/production/webtoon-remake/references/e05-jam-signal-before-correction.png",
+    "sha256": "06308458b4de29a6adb48964a5c3a61a26ddc1607c71651e6ebb8c9119c0db3c"
+  },
+  "panels": [
+    {
+      "beat": "ノアとミラが壁の中継器を調べる",
+      "view": "ノアとミラが壁の中継器を調べる",
+      "frame": "row 1; full-width panel",
+      "voice": "無言"
+    },
+    {
+      "beat": "ノアがヒューズを外す",
+      "view": "ノアがヒューズを外す",
+      "frame": "row 2; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "外したヒューズを持つ",
+      "view": "外したヒューズを持つ",
+      "frame": "row 2; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "巡回機の照明が点いている",
+      "view": "巡回機の照明が点いている",
+      "frame": "row 3; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "同じ巡回機の照明が消える",
+      "view": "同じ巡回機の照明が消える",
+      "frame": "row 3; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "ミラが装置の図を写す",
+      "view": "ミラが装置の図を写す",
+      "frame": "row 4; full-width panel",
+      "voice": "無言"
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6
+      ]
+    ],
+    "direction": "Upper horizontal RIGHT Noa orange gloves expose wall relay box / LEFT removes ONE fuse with small insulated hand tool. Lower drone searchlight dims, Mira copies conduit plate into paper without readable invented strings. This is physical circuit interruption, no Link-form magic.",
+    "observedPanelBeats": [
+      "ノアとミラが壁の中継器を調べる",
+      "ノアがヒューズを外す",
+      "外したヒューズを持つ",
+      "巡回機の照明が点いている",
+      "同じ巡回機の照明が消える",
+      "ミラが装置の図を写す"
+    ]
+  }
+}

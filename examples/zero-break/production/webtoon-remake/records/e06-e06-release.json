@@ -1,0 +1,208 @@
+{
+  "id": "e06-e06-release",
+  "episode": 6,
+  "shotId": "e06-release",
+  "beforeShot": {
+    "id": "e06-release",
+    "file": "v6-release.png",
+    "shape": "bleed",
+    "pause": 200,
+    "widthPercent": 100,
+    "scene": "Ren releases now EMPTY compartment only after everyone safe, settles to knees on intact catwalk, armor fades and he smiles breathlessly. No survivors returned into car.",
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "…全員、いるな。",
+        "type": "speech"
+      }
+    ],
+    "panels": [
+      {
+        "beat": "Confirm the immediate context without adding a new event.",
+        "view": "Ren releases now EMPTY compartment only after everyone safe, settles to knees on intact catwalk, armor fades and he smiles breathlessly. No survivors returned into car. Show the established spatial relationship, WITHOUT replaying earlier action or later results.",
+        "frame": "full-width wide framed establishing shot",
+        "voice": "無言"
+      },
+      {
+        "beat": "The reader receives one part of the explanation, before a response.",
+        "view": "ONLY Ren exhausted face as BASIC black armor fades after seventeen people counted OUTSIDE. SAME intact catwalk.",
+        "frame": "right-aligned90% width, medium framed speaker close-up",
+        "voice": "breathless slightly wavering continuous speech tail",
+        "line": {
+          "speaker": "Ren",
+          "text": "…全員、いるな。",
+          "type": "speech"
+        }
+      },
+      {
+        "beat": "The listener or the relevant object holds the same scene while the words settle.",
+        "view": "Mira pencil over roster with17 checkmarks; EMPTY carriage below now being released. No person back inside.",
+        "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+        "voice": "無言"
+      }
+    ],
+    "visible_text": [],
+    "added_context_dialogue": false,
+    "status": "generated",
+    "generated": true,
+    "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Ren releases now EMPTY compartment only after everyone safe, settles to knees on intact catwalk, armor fades and he smiles breathlessly. No survivors returned into car.\n\nPanel 1, downward order. Frame: full-width wide framed establishing shot. Reader understands: Confirm the immediate context without adding a new event.. Visible camera subject / offscreen continuity: Ren releases now EMPTY compartment only after everyone safe, settles to knees on intact catwalk, armor fades and he smiles breathlessly. No survivors returned into car. Show the established spatial relationship, WITHOUT replaying earlier action or later results.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 2, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Ren exhausted face as BASIC black armor fades after seventeen people counted OUTSIDE. SAME intact catwalk.. Voice / balloon: breathless slightly wavering continuous speech tail.\nONLY speaker: Ren. EXACT text: 「…全員、いるな。」 (render contents only).\nPanel 3, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Mira pencil over roster with17 checkmarks; EMPTY carriage below now being released. No person back inside.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\n",
+    "references": [
+      "examples/zero-break/episode-06/art/16-release.png",
+      "skills/webtoon/references/zero-break/varied-01.png"
+    ],
+    "sha256": "ebd6f29099eaf9c73672a4dc990418bde5784269acaa883f359c9d3a95bc4ae4",
+    "provenance": "context-dialogue-v6",
+    "replaces": [
+      "release"
+    ],
+    "visual_review": {
+      "status": "passed_native_image_review",
+      "source_sha256": "ebd6f29099eaf9c73672a4dc990418bde5784269acaa883f359c9d3a95bc4ae4",
+      "chapter_validation": "../../../episode-06/validation.json",
+      "checks": [
+        "exact lettering and speakers",
+        "faces, hands, costumes, props",
+        "cause and effect, prior state, no premature reveals"
+      ]
+    }
+  },
+  "file": "remake-e06-release.png",
+  "references": [
+    "examples/zero-break/episode-06/art/v6-release.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Ren releases now EMPTY compartment only after everyone safe, settles to knees on intact catwalk, armor fades and he smiles breathlessly. No survivors returned into car.\nExact layout, camera and mechanics: Upper Ren hands finally RELEASE empty car after tally; show empty windows and all survivors on separate safe catwalk, car can settle on support. Lower large Ren KNEELING on INTACT ledge with BOTH knees supported, basic armor dissolves to ordinary cloth and BARE hands with small cyan fragments, exact breathless soft speech 3 LARGEcols. No occupant returned/no floating body/no victory pose.\nExact speech in chronological order: [{\"speaker\": \"Ren\", \"text\": \"…全員、いるな。\", \"type\": \"speech\"}]\nExact effects (each once, near physical cause): [\"シュゥ…\"]\nExact visible prop text: []. No other text.\n\nPHONE READABILITY OVERRIDE: all spoken/thought Japanese glyphs must be 80-90px ACTUAL character height at1024px width, split lines into2-3 upright vertical columns of at most6 glyphs, right-to-left column order. Enlarge white balloons and speech panel height as needed, no tiny type. Each specified effect exactly ONCE. True horizontal rows only at most2 panels (except simple reaction inserts), no tall side panel spanning multiple stacked rows. All rescue supports persist across later moments until explicitly released.",
+  "layoutDirection": "Upper Ren hands finally RELEASE empty car after tally; show empty windows and all survivors on separate safe catwalk, car can settle on support. Lower large Ren KNEELING on INTACT ledge with BOTH knees supported, basic armor dissolves to ordinary cloth and BARE hands with small cyan fragments, exact breathless soft speech 3 LARGEcols. No occupant returned/no floating body/no victory pose.",
+  "sounds": [
+    "シュゥ…"
+  ],
+  "visibleText": [],
+  "status": "planned",
+  "output": "examples/zero-break/episode-06/art/remake-e06-release.png",
+  "sha256": "68a0b06c95351080eccedf688d0a00db6847f11f35bee48595a2c0e22253ddef",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-31435aa7-c974-4608-94ed-6bfbbbd7f224.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 4,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-0.png",
+        "sha256": "cc36a5ee96991054072752304be722d4880d2cb38057364a71d6e1147b859a63"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-1.png",
+        "sha256": "aabffbfc4e4ee1453baba63b09afb5e06fec3d5b5c650793572aa8f062884e83"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-2.png",
+        "sha256": "3954cc942ea7dccab7209d5549950ff06d8e299969e8a1f8d0289afbc5fac4fa"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-3.png",
+        "sha256": "716ac96b4695391c182fcb8d47dc999216c52058c174297376dffb2ccdb08335"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-4.png",
+        "sha256": "a794e8e1a811bb15d1c514d7b187da15462b38d68ac2269f9701459ca4f43c5d"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-0.png",
+        "sha256": "84b5484f336f2a9a91d111503f87dac105a992b7e591e7e3ec784eb4fa3f6b16"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-1.png",
+        "sha256": "49626f2e6c1ade4438581a5318cd6c2db93eb0a6a088c2d51814b5585bcacf28"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-2.png",
+        "sha256": "e251e9c2fce3cad6e3188a2956940d576318034c4f136d016c74b42c3585870d"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-3.png",
+        "sha256": "130bcdb847fb493d15803b458d8116b67805b6b1640e96411d4c0860017d5b2f"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-4.png",
+        "sha256": "1390c71925138076b8ff9f555dc10f68f989c3c7e6e7f2c4a30a569a56ebd943"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-06/art/v6-release.png",
+      "sha256": "ebd6f29099eaf9c73672a4dc990418bde5784269acaa883f359c9d3a95bc4ae4"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "executedRepairPrompt": "Edit this Japanese full-colour Webtoon artwork, preserve characters and existing panels except specified local correction. Keep four panels with empty carriage falling away and Ren armor dissolving then exhausted ordinary cloth-shirt knees. ONLY fix top Ren's feet: BOTH boots must stand on BROAD FLAT INTACT METAL WALKWAY FLOOR, not a narrow railing, not a ledge beam. Widen foreground platform directly underneath both soles, stable support. Keep SAME empty falling carriage/one シュウ…/exact …全員、いるな。 unchanged.",
+  "repairBefore": {
+    "path": "examples/zero-break/production/webtoon-remake/references/e06-e06-release-before-correction.png",
+    "sha256": "6e36908bdf2cbbde6296ea2cbc6984876859708a8b270b96bc438e6704462970"
+  },
+  "panels": [
+    {
+      "beat": "空になった車両を放し両足は広い金属足場に残す",
+      "view": "空になった車両を放し両足は広い金属足場に残す",
+      "frame": "row 1; full-width panel",
+      "voice": "無言"
+    },
+    {
+      "beat": "支えていた素手を床につく",
+      "view": "支えていた素手を床につく",
+      "frame": "row 2; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "装甲が解除される",
+      "view": "装甲が解除される",
+      "frame": "row 2; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "足場に膝をつき全員いることを確認する",
+      "view": "足場に膝をつき全員いることを確認する",
+      "frame": "row 3; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Ren",
+        "text": "…全員、いるな。",
+        "type": "speech"
+      }
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4
+      ]
+    ],
+    "direction": "Upper Ren hands finally RELEASE empty car after tally; show empty windows and all survivors on separate safe catwalk, car can settle on support. Lower large Ren KNEELING on INTACT ledge with BOTH knees supported, basic armor dissolves to ordinary cloth and BARE hands with small cyan fragments, exact breathless soft speech 3 LARGEcols. No occupant returned/no floating body/no victory pose.",
+    "observedPanelBeats": [
+      "空になった車両を放し両足は広い金属足場に残す",
+      "支えていた素手を床につく",
+      "装甲が解除される",
+      "足場に膝をつき全員いることを確認する"
+    ]
+  }
+}

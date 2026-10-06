@@ -8,7 +8,33 @@ Day festival plaza in sky city, white banners, audience faces expect celebration
 
 表示幅：100%。次までの間：390px幅で120px相当。
 
+### コマ1
 
+晴れた祭典とまだ壊れていない投影塔
+
+注目と接続：晴れた祭典とまだ壊れていない投影塔
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+同じ細い琥珀結晶をノアが装置へ挿す
+
+注目と接続：同じ細い琥珀結晶をノアが装置へ挿す
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：無言
+
+### コマ3
+
+素手のレンとミラとルークが見上げる
+
+注目と接続：素手のレンとミラとルークが見上げる
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+
+
+効果音：カチッ
 
 ## e10-evidence
 
@@ -18,31 +44,41 @@ Projector beam FIRST shows silhouettes in transport conduit from episode5 and hu
 
 ### コマ1
 
-The reader receives one part of the explanation, before a response.
+消された人についてミラが話す
 
-注目と接続：ONLY Mira solemn face at DAY festival podium, brass microphone; first public evidence projection behind is blurred.
-大きさと枠：right-aligned90% width, medium framed speaker close-up
-声：firm composed blue-grey capsule
+注目と接続：消された人についてミラが話す
+大きさと枠：row 1; full-width panel
+声：spoken balloon with tail to mouth
 
 ### コマ2
 
-The listener or the relevant object holds the same scene while the words settle.
+繋がれた人々の映像を観客が見てざわつく
 
-注目と接続：Audience one listener face stops laughing; physical recording shows transport silhouettes, no new victims or illegible captions. Ren unarmored offscreen.
-大きさと枠：left-aligned72% width, shallow silent detail/reaction insert
+注目と接続：繋がれた人々の映像を観客が見てざわつく
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
 声：無言
 
 ### コマ3
 
-The reader receives one part of the explanation, before a response.
+試験の被害者の映像
 
-注目と接続：ONLY Mira solemn face at DAY festival podium, brass microphone; first public evidence projection behind is blurred.
-大きさと枠：full-width LARGE borderless emotional close-up
-声：firm composed blue-grey capsule
+注目と接続：試験の被害者の映像
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+### コマ4
+
+名前があるとミラが言い切る
+
+注目と接続：名前があるとミラが言い切る
+大きさと枠：row 3; full-width panel
+声：spoken balloon with tail to mouth
 
 Mira：消された人には、
 Mira：名前があります。
 
+
+効果音：ざわ…
 
 ## cut-switch
 
@@ -50,8 +86,34 @@ Same older commander black greying hair navy cape from7 reaches projector power 
 
 表示幅：100%。次までの間：390px幅で90px相当。
 
+### コマ1
+
+中年の司令官が映像停止を命じる
+
+注目と接続：中年の司令官が映像停止を命じる
+大きさと枠：row 1; full-width panel
+声：spoken balloon with tail to mouth
+
+### コマ2
+
+司令官がスイッチへ手を伸ばす
+
+注目と接続：司令官がスイッチへ手を伸ばす
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：無言
+
+### コマ3
+
+ノアが線を引いて守る
+
+注目と接続：ノアが線を引いて守る
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
 Commander：映像を止めろ！
 
+
+効果音：バッ
 
 ## giant-arrives
 
@@ -59,15 +121,67 @@ Concealment guardian GREY stone purple core approaches projection tower behind s
 
 表示幅：100%。次までの間：390px幅で80px相当。
 
+### コマ1
 
+守護像が塔の後ろで腕を上げる
+
+注目と接続：守護像が塔の後ろで腕を上げる
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+石の足が地を踏む
+
+注目と接続：石の足が地を踏む
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：無言
+
+### コマ3
+
+まだ素手のレンが振り向く
+
+注目と接続：まだ素手のレンが振り向く
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+
+
+効果音：ズン…
 
 ## tower-hit
 
 Guardian fist smashes tower support, projection light falters, steel beam bends overhead; Noa drops under control booth safely. Only effect ドゴン . Ren, if visible, is UNARMORED in ordinary BLACK short-sleeve FABRIC shirt with narrow brown straps, charcoal trousers, brown boots and red scarf; both forearms and hands BARE. No black gauntlets, no armored torso.
 
-表示幅：90%。次までの間：390px幅で85px相当。
+表示幅：100%。次までの間：390px幅で85px相当。
+
+### コマ1
+
+守護像の拳が塔の支柱を砕く
+
+注目と接続：守護像の拳が塔の支柱を砕く
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+同じ厚い石の梁が落ち始める
+
+注目と接続：同じ厚い石の梁が落ち始める
+大きさと枠：row 2; full-width panel
+声：無言
+
+### コマ3
+
+ノアが壊れていない装置小屋へ避ける
+
+注目と接続：ノアが壊れていない装置小屋へ避ける
+大きさと枠：row 3; full-width panel
+声：無言
 
 
+
+効果音：ドゴン
 
 ## two-choices
 
@@ -75,7 +189,41 @@ Ren unarmored between damaged tower's exposed memory projector ABOVE and startle
 
 表示幅：100%。次までの間：390px幅で100px相当。
 
+### コマ1
 
+素手のレンの上に証拠の装置がある
+
+注目と接続：素手のレンの上に証拠の装置がある
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+壊れた証拠の投影装置
+
+注目と接続：壊れた証拠の投影装置
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：無言
+
+### コマ3
+
+梁の下の緑の服の少年と茶色のショールの母
+
+注目と接続：梁の下の緑の服の少年と茶色のショールの母
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+### コマ4
+
+レンが下の命へ視線を向ける
+
+注目と接続：レンが下の命へ視線を向ける
+大きさと枠：row 3; full-width panel
+声：無言
+
+
+
+効果音：ミシ…
 
 ## e10-choice
 
@@ -85,39 +233,83 @@ Close Ren grips red scarf and starts toward trapped spectators, blue eyes resolu
 
 ### コマ1
 
-The reader receives one part of the explanation, before a response.
+証拠は写せるとレンが決める
 
-注目と接続：ONLY Ren unarmored determined face BETWEEN damaged tower/projector above and trapped spectators below. Same black cloth shirt, no armor until he runs.
-大きさと枠：right-aligned90% width, medium framed speaker close-up
-声：low resolute ordinary oval
+注目と接続：証拠は写せるとレンが決める
+大きさと枠：row 1; horizontal row, right-to-left position 1/2
+声：spoken balloon with tail to mouth
 
 ### コマ2
 
-The listener or the relevant object holds the same scene while the words settle.
+同じ少年と母を見る
 
-注目と接続：Ren BARE fist releases scarf and opens toward endangered spectators; intact evidence projector higher at edge. Actual choice of lives before records, no saved group yet.
-大きさと枠：left-aligned72% width, shallow silent detail/reaction insert
+注目と接続：同じ少年と母を見る
+大きさと枠：row 1; horizontal row, right-to-left position 2/2
 声：無言
 
 ### コマ3
 
-The reader receives one part of the explanation, before a response.
+人は戻せないと言う
 
-注目と接続：ONLY Ren unarmored determined face BETWEEN damaged tower/projector above and trapped spectators below. Same black cloth shirt, no armor until he runs.
-大きさと枠：full-width LARGE borderless emotional close-up
-声：low resolute ordinary oval
+注目と接続：人は戻せないと言う
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：spoken balloon with tail to mouth
+
+### コマ4
+
+普通の靴が救助へ踏み出す
+
+注目と接続：普通の靴が救助へ踏み出す
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
 
 Ren：証拠は写せる。
 Ren：人は戻せない。
+
 
 
 ## run
 
 Ren launches toward spectators as basic black armor/cyan seams forms in motion, scarf streak follows path; no new speed form before episode12. ONLY established BASIC BLACK faceted armor with thin CYAN seams and CYAN star forms; no new speed form, white armor, gold armor, helmet or face mask.
 
-表示幅：96%。次までの間：390px幅で55px相当。
+表示幅：100%。次までの間：390px幅で55px相当。
+
+### コマ1
+
+普通の靴で走り出す
+
+注目と接続：普通の靴で走り出す
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+裸の腕にシアンの骨組みができる
+
+注目と接続：裸の腕にシアンの骨組みができる
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：無言
+
+### コマ3
+
+同じ腕の黒い装甲板が固定される
+
+注目と接続：同じ腕の黒い装甲板が固定される
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+### コマ4
+
+基本の黒とシアンの全身装甲で走る
+
+注目と接続：基本の黒とシアンの全身装甲で走る
+大きさと枠：row 3; full-width panel
+声：無言
 
 
+
+効果音：ダッ
+効果音：カチッ
 
 ## catch-tower
 
@@ -125,7 +317,33 @@ Ren BASIC complete black armor catches falling tower crossbeam over two crouchin
 
 表示幅：100%。次までの間：390px幅で105px相当。
 
+### コマ1
 
+両手で同じ厚い石の梁を受け止める
+
+注目と接続：両手で同じ厚い石の梁を受け止める
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+両足を広く平らな石床に固定する
+
+注目と接続：両足を広く平らな石床に固定する
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：無言
+
+### コマ3
+
+梁を支えるレンと下にいる少年と母の位置
+
+注目と接続：梁を支えるレンと下にいる少年と母の位置
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+
+
+効果音：ドン
 
 ## e10-noa-copy
 
@@ -135,31 +353,41 @@ Noa under intact kiosk plugs memory crystal duplicate into SMALL separate shop r
 
 ### コマ1
 
-The reader receives one part of the explanation, before a response.
+ノアが一つ消してもと告げる
 
-注目と接続：ONLY Noa determined face under SAME intact kiosk after MAIN tower damaged; daytime. Ren still holds beam offscreen.
-大きさと枠：right-aligned90% width, medium framed speaker close-up
-声：ordinary practical rounded speech
+注目と接続：ノアが一つ消してもと告げる
+大きさと枠：row 1; full-width panel
+声：spoken balloon with tail to mouth
 
 ### コマ2
 
-The listener or the relevant object holds the same scene while the words settle.
+同じ琥珀結晶を独立装置へ挿す
 
-注目と接続：Noa orange gloves plug ONE duplicate memory crystal into SMALL independent shop relay. No advanced LINK-form gadget, no Ren in frame.
-大きさと枠：left-aligned72% width, shallow silent detail/reaction insert
+注目と接続：同じ琥珀結晶を独立装置へ挿す
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
 声：無言
 
 ### コマ3
 
-The reader receives one part of the explanation, before a response.
+独立した画面が点く
 
-注目と接続：ONLY Noa determined face under SAME intact kiosk after MAIN tower damaged; daytime. Ren still holds beam offscreen.
-大きさと枠：full-width LARGE borderless emotional close-up
-声：ordinary practical rounded speech
+注目と接続：独立した画面が点く
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+### コマ4
+
+終わらないと続ける
+
+注目と接続：終わらないと続ける
+大きさと枠：row 3; full-width panel
+声：spoken balloon with tail to mouth
 
 Noa：一つ消しても、
 Noa：終わらない。
 
+
+効果音：カチッ
 
 ## distributed
 
@@ -167,7 +395,33 @@ Three DIFFERENT small shop windows down street each show same transport silhouet
 
 表示幅：100%。次までの間：390px幅で160px相当。
 
+### コマ1
 
+三つの別の商店画面に同じ証拠が映る
+
+注目と接続：三つの別の商店画面に同じ証拠が映る
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+画面を見つめる市民
+
+注目と接続：画面を見つめる市民
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：無言
+
+### コマ3
+
+別の市民にも映像が届く
+
+注目と接続：別の市民にも映像が届く
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+
+
+効果音：ピッ
 
 ## e10-name-them
 
@@ -177,30 +431,39 @@ Mira speaks into simple brass relay microphone from safe street, copied roster i
 
 ### コマ1
 
-The reader receives one part of the explanation, before a response.
+十七人ですとミラが名簿を持って話す
 
-注目と接続：ONLY Mira face speaks into SAME brass relay microphone from safe street, copied roster held; not on damaged tower.
-大きさと枠：right-aligned90% width, medium framed speaker close-up
-声：firm empathetic blue-grey capsule
+注目と接続：十七人ですとミラが名簿を持って話す
+大きさと枠：row 1; full-width panel
+声：spoken balloon with tail to mouth
 
 ### コマ2
 
-The listener or the relevant object holds the same scene while the words settle.
+同じ名簿の手元
 
-注目と接続：Copied roster in her fingers and listening street resident at edge; names abstract, no count changing. Ren remains supporting beam offscreen, no early release.
-大きさと枠：left-aligned72% width, shallow silent detail/reaction insert
+注目と接続：同じ名簿の手元
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
 声：無言
 
 ### コマ3
 
-The reader receives one part of the explanation, before a response.
+市民が救助された人々を見る
 
-注目と接続：ONLY Mira face speaks into SAME brass relay microphone from safe street, copied roster held; not on damaged tower.
-大きさと枠：full-width LARGE borderless emotional close-up
-声：firm empathetic blue-grey capsule
+注目と接続：市民が救助された人々を見る
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+### コマ4
+
+一人ずつここにいると伝える
+
+注目と接続：一人ずつここにいると伝える
+大きさと枠：row 3; full-width panel
+声：spoken balloon with tail to mouth
 
 Mira：十七人です。
 Mira：一人ずつ、ここにいます。
+
 
 
 ## evacuation
@@ -209,23 +472,101 @@ Spectators now walk OUT from under crossbeam along Mira-marked safe lane, Ren ho
 
 表示幅：100%。次までの間：390px幅で140px相当。
 
+### コマ1
 
+レンが両手で支え続けルークが最後の少年を導く
+
+注目と接続：レンが両手で支え続けルークが最後の少年を導く
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+少年の靴が安全側へ境界を越える
+
+注目と接続：少年の靴が安全側へ境界を越える
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：無言
+
+### コマ3
+
+同じ少年が同じ母と再会する
+
+注目と接続：同じ少年が同じ母と再会する
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+
+
+効果音：タッ
 
 ## set-beam
 
 After ALL spectators are outside the beam path, the SAME thick STONE tower crossbeam settles onto the EMPTY plaza ground with dust at visible stone-ground contact. Ren in fading BASIC BLACK-CYAN armor kneels beside it, both hands guiding its low side until the load rests. No overhead load remains.
 
-表示幅：92%。次までの間：390px幅で180px相当。
+表示幅：100%。次までの間：390px幅で180px相当。
+
+### コマ1
+
+全員が荷重の範囲外にいる
+
+注目と接続：全員が荷重の範囲外にいる
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+レンが両手で石の梁を下ろす
+
+注目と接続：レンが両手で石の梁を下ろす
+大きさと枠：row 2; full-width panel
+声：無言
+
+### コマ3
+
+梁が空いた石床へ接地する
+
+注目と接続：梁が空いた石床へ接地する
+大きさと枠：row 3; full-width panel
+声：無言
 
 
+
+効果音：ゴトン
 
 ## first-clap
 
 Mira gives the FIRST cautious clap beside the rescued audience while all others stare in silence. Ren unarmored leans on the safely lowered STONE beam. Only effect パチ. Applause spreads to the entire audience in the following scene.
 
-表示幅：86%。次までの間：390px幅で800px相当。
+表示幅：100%。次までの間：390px幅で800px相当。
+
+### コマ1
+
+梁が地面に置かれレンの装甲が解除される
+
+注目と接続：梁が地面に置かれレンの装甲が解除される
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+ミラの手が最初の一度の拍手をする
+
+注目と接続：ミラの手が最初の一度の拍手をする
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：無言
+
+### コマ3
+
+市民はまだ手を下げて見守る
+
+注目と接続：市民はまだ手を下げて見守る
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
 
 
+
+効果音：パチ
 
 ## recognized
 
@@ -233,8 +574,34 @@ Broad crowd now applauds rescued exhausted Ren, Mira and Noa beside him; Ren han
 
 表示幅：100%。次までの間：390px幅で230px相当。
 
+### コマ1
+
+ここで市民全員が拍手し同じ母と少年も喜ぶ
+
+注目と接続：ここで市民全員が拍手し同じ母と少年も喜ぶ
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+素手のレンが布の胸へ手を添える
+
+注目と接続：素手のレンが布の胸へ手を添える
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：無言
+
+### コマ3
+
+届いたと気づいて目に涙が出る
+
+注目と接続：届いたと気づいて目に涙が出る
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：thought cloud with dots
+
 Ren thought：…届いたんだ。
 
+
+効果音：パチパチ
 
 ## e10-arrest
 
@@ -244,31 +611,41 @@ Rook restrains commander's wrist with lawful metal cuffs beside copied evidence,
 
 ### コマ1
 
-The reader receives one part of the explanation, before a response.
+ルークが今度はと決意を伝える
 
-注目と接続：ONLY Rook resolved face in SAME safe DAY plaza after applause, no knight license, blue cape and silver armor.
-大きさと枠：right-aligned90% width, medium framed speaker close-up
-声：quiet firm ordinary oval
+注目と接続：ルークが今度はと決意を伝える
+大きさと枠：row 1; full-width panel
+声：spoken balloon with tail to mouth
 
 ### コマ2
 
-The listener or the relevant object holds the same scene while the words settle.
+同じ中年の司令官の手首を押さえる
 
-注目と接続：Rook BLACK glove closes lawful cuff over SAME45 commander wrist beside copied evidence; commander ALIVE uninjured, no revenge violence.
-大きさと枠：left-aligned72% width, shallow silent detail/reaction insert
+注目と接続：同じ中年の司令官の手首を押さえる
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
 声：無言
 
 ### コマ3
 
-The reader receives one part of the explanation, before a response.
+その手首に手錠をかける
 
-注目と接続：ONLY Rook resolved face in SAME safe DAY plaza after applause, no knight license, blue cape and silver armor.
-大きさと枠：full-width LARGE borderless emotional close-up
-声：quiet firm ordinary oval
+注目と接続：その手首に手錠をかける
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+### コマ4
+
+見ないふりをしないと言い切る
+
+注目と接続：見ないふりをしないと言い切る
+大きさと枠：row 3; full-width panel
+声：spoken balloon with tail to mouth
 
 Rook：今度は、
 Rook：見ないふりをしない。
 
+
+効果音：カチャン
 
 ## base
 
@@ -276,7 +653,34 @@ Lower-city workshop transformed into modest official rescue base with SAME handm
 
 表示幅：100%。次までの間：390px幅で230px相当。
 
+### コマ1
 
+手作りの救助隊の看板
+
+注目と接続：手作りの救助隊の看板
+大きさと枠：row 1; full-width panel
+声：無言
+
+### コマ2
+
+ハルと住人が修繕する
+
+注目と接続：ハルと住人が修繕する
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
+声：無言
+
+### コマ3
+
+四人が食事を共にする
+
+注目と接続：四人が食事を共にする
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+
+画面内表示：救助隊
+
+効果音：カン
 
 ## white-armor-cue
 
@@ -284,7 +688,41 @@ Deep palace shadow, LIVING ancient hero back turned: faceted WHITE armor and GOL
 
 表示幅：100%。次までの間：390px幅で650px相当。
 
+### コマ1
 
+顔を見せない夜の王宮の廊下
+
+注目と接続：顔を見せない夜の王宮の廊下
+大きさと枠：row 1; horizontal row, right-to-left position 1/3
+声：無言
+
+### コマ2
+
+白と金の足が進む
+
+注目と接続：白と金の足が進む
+大きさと枠：row 1; horizontal row, right-to-left position 2/3
+声：無言
+
+### コマ3
+
+同じ白と金の足が床へ着く
+
+注目と接続：同じ白と金の足が床へ着く
+大きさと枠：row 1; horizontal row, right-to-left position 3/3
+声：無言
+
+### コマ4
+
+白と金の生きた人物を背中だけ見せる
+
+注目と接続：白と金の生きた人物を背中だけ見せる
+大きさと枠：row 2; full-width panel
+声：無言
+
+
+
+効果音：コツ…
 
 ## e10-close-gates
 
@@ -294,27 +732,38 @@ Massive palace gates all lowering toward shut stone, white armored silhouette fa
 
 ### コマ1
 
-The reader receives one part of the explanation, before a response.
+同じ白と金の人物が背を向けゼロをと告げる
 
-注目と接続：Only palace WHITE-armored living unknown hero BACK silhouette high above lowering gates; no face, name or Ren.
-大きさと枠：right-aligned90% width, medium framed speaker close-up
-声：cold unseen voice in strong angular rounded frame; tail exits toward unseen mouth, no thought dots
+注目と接続：同じ白と金の人物が背を向けゼロをと告げる
+大きさと枠：row 1; full-width panel
+声：spoken balloon with tail to mouth
 
 ### コマ2
 
-The listener or the relevant object holds the same scene while the words settle.
+門が閉まり始める
 
-注目と接続：Massive SAME palace gates descend, last thin gap of daylight at bottom. No protagonist trapped or new plot outcome.
-大きさと枠：left-aligned72% width, shallow silent detail/reaction insert
+注目と接続：門が閉まり始める
+大きさと枠：row 2; horizontal row, right-to-left position 1/2
 声：無言
 
 ### コマ3
 
-The reader receives one part of the explanation, before a response.
+門が閉まりかける
 
-注目と接続：Only palace WHITE-armored living unknown hero BACK silhouette high above lowering gates; no face, name or Ren.
-大きさと枠：full-width LARGE borderless emotional close-up
-声：cold unseen voice in strong angular rounded frame; tail exits toward unseen mouth, no thought dots
+注目と接続：門が閉まりかける
+大きさと枠：row 2; horizontal row, right-to-left position 2/2
+声：無言
+
+### コマ4
+
+上げてはいけないと続ける
+
+注目と接続：上げてはいけないと続ける
+大きさと枠：row 3; full-width panel
+声：spoken balloon with tail to mouth
 
 Unknown：ゼロを、
 Unknown：上げてはいけない。
+
+
+効果音：ゴウン…

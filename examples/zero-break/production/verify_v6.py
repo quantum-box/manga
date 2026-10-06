@@ -15,6 +15,8 @@ sound_revisions=0
 inserted_artworks=0
 inserted_panels=0
 layout_revisions=0
+remake_revisions=0
+remake_panel_delta=0
 for n in range(1,11):
  d=directory(n);m=load(d/'manifest.json');baseline=load_baseline(f'episode-{n:02d}.json')
  assert m['version']=='context-dialogue-v6'
@@ -35,6 +37,30 @@ for n in range(1,11):
   raw=base64.b64decode(match.group(1),validate=True)
   assert raw==(d/'art'/s['file']).read_bytes(),s['id']
   prior=s
+  if s.get('remakeRevisionRecord'):
+   r=load(REPO/s['remakeRevisionRecord']);prior=r['beforeShot']
+   assert r['shotId']==s['id']==prior['id'] and r['file']==s['file']
+   assert r['sha256']==sha(d/'art'/s['file'])
+   assert r.get('executedRepairPrompt',r['prompt'])==s['prompt']
+   assert prior['sha256']==sha(d/'art'/prior['file'])
+   assert prior['lines']==s['lines']
+   assert s.get('visible_text',[])==r.get('visibleText',prior.get('visible_text',[]))
+   if prior.get('visible_text',[])!=s.get('visible_text',[]):
+    for prop in s['visible_text']:assert prop['text'] in prior['scene'],(s['id'],prop['text'])
+   assert r['panels']==s['panels'] and r['layout']==s['layout'] and r['sounds']==s['sounds']
+   assert [p for row in r['layout']['rowsInReadingOrder'] for p in row]==list(range(1,len(s['panels'])+1))
+   assert r['actualPanelCount']==len(s['panels']) and r['nativeFullSizeReview']=='passed'
+   assert s['widthPercent']==100 and s['shape']=='bleed'
+   for ref in r['referenceHashes']:assert sha(REPO/ref['path'])==ref['sha256']
+   if r.get('repairBefore'):
+    before=r['repairBefore'];assert sha(REPO/before['path'])==before['sha256']
+   for ref in r.get('executedRepairReferences',[]):assert sha(REPO/ref['path'])==ref['sha256']
+   mobile=r['mobileImageReview']
+   assert mobile['status']=='passed' and mobile['widths']==[360,390]
+   for artifact in mobile['artifacts']:assert sha(REPO/artifact['path'])==artifact['sha256']
+   assert r['method']=='built-in image_gen' and r['prompt']
+   remake_revisions+=1
+   remake_panel_delta+=len(s['panels'])-len(prior.get('panels',[prior]))
   if s.get('layoutRevisionRecord'):
    r=load(REPO/s['layoutRevisionRecord']);prior=r['beforeShot']
    assert r['id']==s['id']==prior['id'] and r['file']==s['file']
@@ -116,11 +142,13 @@ for n,row in enumerate(scripts,1):
   staged=''.join(p['line']['text'] for g in row['panel_staging'] for p in g['panels'] if p.get('line'))
   assert quote_text==staged,n
  totals['scripts']+=1
-assert totals==dict(baseline_artworks=196,reader_images=196+inserted_artworks,panels=317+inserted_panels,adopted_revision_records=57,scripts=50),totals
-report=dict(edition='context-dialogue-v6',status='passed_artifact_checks',totals=totals,chapters=chapters,
+assert totals==dict(baseline_artworks=196,reader_images=196+inserted_artworks,panels=317+inserted_panels+remake_panel_delta,adopted_revision_records=57,scripts=50),totals
+assert remake_revisions==166,remake_revisions
+report=dict(edition='webtoon-remake-20261006',status='passed_artifact_checks',totals=totals,chapters=chapters,
  sound_effect_revision_records=sound_revisions,
  inserted_artworks=inserted_artworks,inserted_panels=inserted_panels,
  panel_layout_revision_records=layout_revisions,
+ webtoon_remake_records=remake_revisions,
  checks=['all prior source PNG hashes preserved','every baseline scene represented','actual revision prompts, references and repaired originals preserved','layout revisions preserve dialogue, sounds, beats and prior sound/assembly provenance','standalone embedded PNGs match raw source bytes','ZIP CRC and extracted HTML match','native export hashes, width and source geometry','iOS HTML and PNG bytes match adopted sources','all fifty scripts staged; existing quoted text preserved for 11-50'],
  browser_review='pending; native exports do not prove browser layout',physical_device_review='not_run')
 (STATE/'artifact-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')

@@ -14,7 +14,7 @@ def adopted(n):
  return groups
 def describe(p):
  lines=[p['line']] if p.get('line') else p.get('lines',[])
- return p['beat']+' / 注目：'+p.get('focus',p.get('view','対象'))+' / 枠：'+p['frame']+' / 声：'+p.get('voice','無言')+' / '+' / '.join(l['speaker']+'：'+l['text'] for l in lines).rstrip(' /')
+ return (p['beat']+' / 注目：'+p.get('focus',p.get('view','対象'))+' / 枠：'+p['frame']+' / 声：'+p.get('voice','無言')+' / '+' / '.join(l['speaker']+'：'+l['text'] for l in lines).rstrip(' /')).rstrip()
 rows=[]
 for raw in (ROOT/'episodes.tsv').read_text().splitlines():
  f=raw.split('\t');assert len(f)==8

@@ -1,0 +1,192 @@
+{
+  "id": "e02-e02-debt",
+  "episode": 2,
+  "shotId": "e02-debt",
+  "beforeShot": {
+    "id": "e02-debt",
+    "file": "v6-debt.png",
+    "shape": "bleed",
+    "pause": 120,
+    "widthPercent": 100,
+    "scene": "Close unarmored Ren looking up from the same sheet with shocked eyebrows, chest not glowing. Mira and Rook remain beside plaza rubble.",
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "助けたら、借金？",
+        "type": "speech"
+      }
+    ],
+    "panels": [
+      {
+        "beat": "Confirm the immediate context without adding a new event.",
+        "view": "Close unarmored Ren looking up from the same sheet with shocked eyebrows, chest not glowing. Mira and Rook remain beside plaza rubble. Show the established spatial relationship, WITHOUT replaying earlier action or later results.",
+        "frame": "full-width wide framed establishing shot",
+        "voice": "無言"
+      },
+      {
+        "beat": "The reader receives one part of the explanation, before a response.",
+        "view": "ONLY unarmored Ren face looking up from SAME invoice, shocked not angry; Rook offscreen right.",
+        "frame": "right-aligned90% width, medium framed speaker close-up",
+        "voice": "baffled slightly wavering spoken oval",
+        "line": {
+          "speaker": "Ren",
+          "text": "助けたら、借金？",
+          "type": "speech"
+        }
+      },
+      {
+        "beat": "The listener or the relevant object holds the same scene while the words settle.",
+        "view": "Invoice held in Ren BARE hand; paper abstract geometric lines, no invented amount.",
+        "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+        "voice": "無言"
+      }
+    ],
+    "visible_text": [],
+    "added_context_dialogue": false,
+    "status": "generated",
+    "generated": true,
+    "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Close unarmored Ren looking up from the same sheet with shocked eyebrows, chest not glowing. Mira and Rook remain beside plaza rubble.\n\nPanel 1, downward order. Frame: full-width wide framed establishing shot. Reader understands: Confirm the immediate context without adding a new event.. Visible camera subject / offscreen continuity: Close unarmored Ren looking up from the same sheet with shocked eyebrows, chest not glowing. Mira and Rook remain beside plaza rubble. Show the established spatial relationship, WITHOUT replaying earlier action or later results.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 2, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY unarmored Ren face looking up from SAME invoice, shocked not angry; Rook offscreen right.. Voice / balloon: baffled slightly wavering spoken oval.\nONLY speaker: Ren. EXACT text: 「助けたら、借金？」 (render contents only).\nPanel 3, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Invoice held in Ren BARE hand; paper abstract geometric lines, no invented amount.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\n",
+    "references": [
+      "examples/zero-break/episode-02/art/05-debt.png",
+      "skills/webtoon/references/zero-break/varied-01.png"
+    ],
+    "sha256": "7ecf11049f5c614108681172954e22b5c98a6f968263968263bb71c8d3d56a11",
+    "provenance": "context-dialogue-v6",
+    "replaces": [
+      "debt"
+    ],
+    "visual_review": {
+      "status": "passed_native_image_review",
+      "source_sha256": "7ecf11049f5c614108681172954e22b5c98a6f968263968263bb71c8d3d56a11",
+      "chapter_validation": "../../../episode-02/validation.json",
+      "checks": [
+        "exact lettering and speakers",
+        "faces, hands, costumes, props",
+        "cause and effect, prior state, no premature reveals"
+      ]
+    }
+  },
+  "file": "remake-e02-debt.png",
+  "references": [
+    "examples/zero-break/episode-02/art/v6-debt.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Close unarmored Ren looking up from the same sheet with shocked eyebrows, chest not glowing. Mira and Rook remain beside plaza rubble.\nExact layout and camera: Upper horizontal row RIGHT invoice in BARE fingers / LEFT startled blue eye; lower larger Ren face asks exact line. Keep the source panel meanings and paper unchanged.\nExact speech in chronological order: [{\"speaker\": \"Ren\", \"text\": \"助けたら、借金？\", \"type\": \"speech\"}]\nExact effects (each once, associated with physical cause): [\"ペラ…\"]\nExact existing visible prop text: []. No other text.\n",
+  "layoutDirection": "Upper horizontal row RIGHT invoice in BARE fingers / LEFT startled blue eye; lower larger Ren face asks exact line. Keep the source panel meanings and paper unchanged.",
+  "sounds": [
+    "ペラ…"
+  ],
+  "status": "planned",
+  "output": "examples/zero-break/episode-02/art/remake-e02-debt.png",
+  "sha256": "1ce137e2e3d2603630ae784e9b85233c471317cea00aa414b052b406f8d3cac4",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-4aa9adef-18d7-4fb7-bb9f-e93f38c452e6.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 3,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-0.png",
+        "sha256": "99aed4446a6abd18e0ef65c50d96a69e8c490311ffc0594bd91cc4ada4666715"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-1.png",
+        "sha256": "81f2a818c2c1c6f08eaea3b76941cfd2afb1086db4fc4f3a1a9f2b43c35b560c"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-2.png",
+        "sha256": "c6788b9dd21233f804aaa6c44db42c6e3533e1b640218da9bba2e958170a9120"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-3.png",
+        "sha256": "41a0bc5f9cc3d518e063395a1dc8f28ec22d1509e8f91f83c6b3e1de990fe5e2"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-4.png",
+        "sha256": "46d04e8ede7c5f2b7dac334145fd56863b62fb03dc9d9df2634b588c7401be60"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-0.png",
+        "sha256": "2368ec47ae0ddb761a04685f738b669ca15e84f331d4fe49f7ecc9c37c89941b"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-1.png",
+        "sha256": "fa43b30a095bc2500e3efbdfe088d503fe812eb5c9316bad706cb4eeeb01aacf"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-2.png",
+        "sha256": "a1b78ea057159f68df0e0c327049eedb2f0eb2c7a39ca912d0ef809e7e3dc87f"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-3.png",
+        "sha256": "9714d7ee1e0c7b76260278e5e647bd0a4564941fd81a0c06f689eab73bb4a207"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-4.png",
+        "sha256": "2381295f6f2677b8ed66e51a7292d230b4d766330cd9db85ec373ad0766b7bbf"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-02/art/v6-debt.png",
+      "sha256": "7ecf11049f5c614108681172954e22b5c98a6f968263968263bb71c8d3d56a11"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "panels": [
+    {
+      "beat": "右：両手で請求書を開く",
+      "view": "右：両手で請求書を開く",
+      "frame": "row 1; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "左：驚く青い目",
+      "view": "左：驚く青い目",
+      "frame": "row 1; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "助けた代償に戸惑うレン",
+      "view": "助けた代償に戸惑うレン",
+      "frame": "row 2; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Ren",
+        "text": "助けたら、借金？",
+        "type": "speech"
+      }
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "direction": "Upper horizontal row RIGHT invoice in BARE fingers / LEFT startled blue eye; lower larger Ren face asks exact line. Keep the source panel meanings and paper unchanged.",
+    "observedPanelBeats": [
+      "右：両手で請求書を開く",
+      "左：驚く青い目",
+      "助けた代償に戸惑うレン"
+    ]
+  }
+}

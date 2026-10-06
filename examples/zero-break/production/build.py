@@ -84,7 +84,9 @@ for number in range(1, 11):
     manifest = json.loads((directory / "manifest.json").read_text())
     validation = directory / "validation.json"
     complete = validation.is_file() and json.loads(validation.read_text()).get("visualReview", {}).get("status") == "passed"
-    if manifest.get('version') == 'context-dialogue-v6':
+    if manifest.get('remakeEdition'):
+        status = f'Webtoon改稿版 · {manifest["panel_count"]}コマ'
+    elif manifest.get('version') == 'context-dialogue-v6':
         status = f'会話・コマ割り改稿版 · {manifest["panel_count"]}コマ · ブラウザ再確認待ち'
     else:
         status = f'完成版・縦書き{len(manifest["shots"])}場面' if complete else "制作中"

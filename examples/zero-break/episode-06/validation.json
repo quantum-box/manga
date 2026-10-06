@@ -1,53 +1,61 @@
 {
-  "edition": "context-dialogue-v6",
-  "panels": 26,
-  "readerSourceSha256": "f582c8e2a4cedc431866627080e18fa1078d8bb99eb3134aaa92f0d9a68479a3",
+  "edition": "webtoon-remake-20261006",
+  "panels": 59,
+  "readerSourceSha256": "dcf748b337e041876254072cded174003d968bb6f17c945912bb6e43a8b96b31",
   "source_assets_verified": true,
   "visualReview": {
     "status": "passed",
-    "method": "manual inspection of native raster exports; not browser/DOM inspection",
-    "assets": 18,
-    "panels": 26,
-    "all_assets_at_360": true,
-    "representative_intervals_at_390": true,
-    "exact_text_and_speakers": true,
-    "faces_hands_costumes_props_and_causality": true,
-    "continuity_notes": "梯子固定、次の人を支える、17人の確認、空の車両を放す順。",
-    "reviewed_files": [
-      {
-        "file": "review/v6-contact-360-0.png",
-        "sha256": "d3f5297fa11ef4e38f222b6eca1221e9c40ef1687239f2541f03b0b68a2ee43d"
-      },
-      {
-        "file": "review/v6-contact-360-1.png",
-        "sha256": "717c34388cdbbfcb9e828ba3958adcb7ba8614c12caa039dc538970a225c7509"
-      },
-      {
-        "file": "review/v6-contact-360-2.png",
-        "sha256": "c5a120a68692ed413fea022b7a77400a4914f5b0d36501dc1348ca4cd8a9e01c"
-      },
-      {
-        "file": "review/v6-contact-360-3.png",
-        "sha256": "63f0a6bdd0b16cd4843e7989a4ae700f5ec2106eedc362120973f4ae2be48fa3"
-      },
-      {
-        "file": "review/v6-contact-360-4.png",
-        "sha256": "755be6facf2e9c9536341b6f11b44f4493213ed81e4cb4b7096c6d7a636bcfd5"
-      },
-      {
-        "file": "review/v6-contact-390-2.png",
-        "sha256": "da213eead43d92eb01f7ef6979d75609801b2e5974c6c9c474e1bfd32f5fb4d4"
-      },
-      {
-        "file": "review/v6-flow-390-14.png",
-        "sha256": "55aa8905561423a277a0a39c12d56a7ca9d7f0e62021ab6073aaafb9e6fbb6d6"
-      }
+    "widths": [
+      360,
+      390
     ],
-    "user_acceptance": "not_recorded_for_full_revision"
+    "method": "native raster contact boards and sequence windows",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-0.png",
+        "sha256": "cc36a5ee96991054072752304be722d4880d2cb38057364a71d6e1147b859a63"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-1.png",
+        "sha256": "aabffbfc4e4ee1453baba63b09afb5e06fec3d5b5c650793572aa8f062884e83"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-2.png",
+        "sha256": "3954cc942ea7dccab7209d5549950ff06d8e299969e8a1f8d0289afbc5fac4fa"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-3.png",
+        "sha256": "716ac96b4695391c182fcb8d47dc999216c52058c174297376dffb2ccdb08335"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-4.png",
+        "sha256": "a794e8e1a811bb15d1c514d7b187da15462b38d68ac2269f9701459ca4f43c5d"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-0.png",
+        "sha256": "84b5484f336f2a9a91d111503f87dac105a992b7e591e7e3ec784eb4fa3f6b16"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-1.png",
+        "sha256": "49626f2e6c1ade4438581a5318cd6c2db93eb0a6a088c2d51814b5585bcacf28"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-2.png",
+        "sha256": "e251e9c2fce3cad6e3188a2956940d576318034c4f136d016c74b42c3585870d"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-3.png",
+        "sha256": "130bcdb847fb493d15803b458d8116b67805b6b1640e96411d4c0860017d5b2f"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-4.png",
+        "sha256": "1390c71925138076b8ff9f555dc10f68f989c3c7e6e7f2c4a30a569a56ebd943"
+      }
+    ]
   },
   "mobileBrowserReview": {
     "status": "pending",
-    "note": "Local HTML browser access was restricted. Native canvas exports are not browser proof."
+    "note": "Prior edition review does not apply to revised art."
   },
   "physicalDeviceTested": false
 }

@@ -1,0 +1,146 @@
+{
+  "id": "e06-pass",
+  "episode": 6,
+  "shotId": "pass",
+  "beforeShot": {
+    "id": "pass",
+    "file": "17-pass.png",
+    "crop": "wide",
+    "shape": "right",
+    "aspect": "1024x768",
+    "pause": 380,
+    "scene": "Freed Haru with brown hair, green eyes and green shirt hands Mira the metal pass marked 英雄認定場 on the outside safe catwalk.",
+    "lines": [],
+    "status": "generated",
+    "state": "Haru hands Mira brass admission pass found in empty carriage; exact large engraving 英雄認定場 . No unknown villain reveal yet.",
+    "pacing": "wait for hidden information",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Targeted edit to FIRST image. The male GIVER of the metal pass must be Haru, not Ren. Replace only that black-haired red-scarfed giver with Haru from images 2/3: short DARK BROWN hair, green eyes, GREEN work shirt, grey pants, bare hands, no red scarf and no armor. Keep Mira receiving the pass, handover pose, framing, and the exact metal inscription 英雄認定場 perfectly unchanged. They are safe on the OUTSIDE exit catwalk after all seventeen residents escaped and the EMPTY car was released; any barred prison doorway behind them must become a plain intact exit wall/rail structure, not an occupied carriage. No new text or extra character.",
+    "sha256": "e8320e39b1e223a06c983c276f79ac07f7509d2a8874aa8c9e2000650928277d",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "art/03-rail-geography.png"
+    ],
+    "baseline_sha256": "e8320e39b1e223a06c983c276f79ac07f7509d2a8874aa8c9e2000650928277d",
+    "widthPercent": 78,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-pass.png",
+  "references": [
+    "examples/zero-break/episode-06/art/17-pass.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Freed Haru with brown hair, green eyes and green shirt hands Mira the metal pass marked 英雄認定場 on the outside safe catwalk.\nExact layout, camera and mechanics: ONE horizontal right-to-left handoff: RIGHT adult Haru brown short hair GREEN eyes/green workshirt holds ONE metal pass / LEFT Mira bare fingers receive SAME pass. Exact big horizontal prop label 英雄認定場, rest plain. Safe catwalk in morning, Noa not mistaken for Haru, Ren ordinary shirt.\nExact speech in chronological order: []\nExact effects (each once, near physical cause): [\"スッ\"]\nExact visible prop text: [{\"text\": \"英雄認定場\", \"type\": \"prop\", \"orientation\": \"horizontal\"}]. No other text.\n\nPHONE READABILITY OVERRIDE: all spoken/thought Japanese glyphs must be 80-90px ACTUAL character height at1024px width, split lines into2-3 upright vertical columns of at most6 glyphs, right-to-left column order. Enlarge white balloons and speech panel height as needed, no tiny type. Each specified effect exactly ONCE. True horizontal rows only at most2 panels (except simple reaction inserts), no tall side panel spanning multiple stacked rows. All rescue supports persist across later moments until explicitly released.",
+  "layoutDirection": "ONE horizontal right-to-left handoff: RIGHT adult Haru brown short hair GREEN eyes/green workshirt holds ONE metal pass / LEFT Mira bare fingers receive SAME pass. Exact big horizontal prop label 英雄認定場, rest plain. Safe catwalk in morning, Noa not mistaken for Haru, Ren ordinary shirt.",
+  "sounds": [
+    "スッ"
+  ],
+  "visibleText": [
+    {
+      "text": "英雄認定場",
+      "type": "prop",
+      "orientation": "horizontal"
+    }
+  ],
+  "status": "planned",
+  "output": "examples/zero-break/episode-06/art/remake-pass.png",
+  "sha256": "4c0765585467bc73e8a80b1623f69f6054e2910f563f5ab002dc97dc933275da",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-ed407e12-e5fb-4743-b1af-32cc232fbf89.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 2,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-0.png",
+        "sha256": "cc36a5ee96991054072752304be722d4880d2cb38057364a71d6e1147b859a63"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-1.png",
+        "sha256": "aabffbfc4e4ee1453baba63b09afb5e06fec3d5b5c650793572aa8f062884e83"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-2.png",
+        "sha256": "3954cc942ea7dccab7209d5549950ff06d8e299969e8a1f8d0289afbc5fac4fa"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-3.png",
+        "sha256": "716ac96b4695391c182fcb8d47dc999216c52058c174297376dffb2ccdb08335"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-360-4.png",
+        "sha256": "a794e8e1a811bb15d1c514d7b187da15462b38d68ac2269f9701459ca4f43c5d"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-0.png",
+        "sha256": "84b5484f336f2a9a91d111503f87dac105a992b7e591e7e3ec784eb4fa3f6b16"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-1.png",
+        "sha256": "49626f2e6c1ade4438581a5318cd6c2db93eb0a6a088c2d51814b5585bcacf28"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-2.png",
+        "sha256": "e251e9c2fce3cad6e3188a2956940d576318034c4f136d016c74b42c3585870d"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-3.png",
+        "sha256": "130bcdb847fb493d15803b458d8116b67805b6b1640e96411d4c0860017d5b2f"
+      },
+      {
+        "path": "examples/zero-break/episode-06/review/v6-contact-390-4.png",
+        "sha256": "1390c71925138076b8ff9f555dc10f68f989c3c7e6e7f2c4a30a569a56ebd943"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-06/art/17-pass.png",
+      "sha256": "e8320e39b1e223a06c983c276f79ac07f7509d2a8874aa8c9e2000650928277d"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "panels": [
+    {
+      "beat": "ハルが通行証を取り出す",
+      "view": "ハルが通行証を取り出す",
+      "frame": "row 1; full-width panel",
+      "voice": "無言"
+    },
+    {
+      "beat": "英雄認定場への真鍮通行証をミラに渡す",
+      "view": "英雄認定場への真鍮通行証をミラに渡す",
+      "frame": "row 2; full-width panel",
+      "voice": "無言"
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "direction": "ONE horizontal right-to-left handoff: RIGHT adult Haru brown short hair GREEN eyes/green workshirt holds ONE metal pass / LEFT Mira bare fingers receive SAME pass. Exact big horizontal prop label 英雄認定場, rest plain. Safe catwalk in morning, Noa not mistaken for Haru, Ren ordinary shirt.",
+    "observedPanelBeats": [
+      "ハルが通行証を取り出す",
+      "英雄認定場への真鍮通行証をミラに渡す"
+    ]
+  }
+}

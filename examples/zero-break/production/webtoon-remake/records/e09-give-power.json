@@ -1,0 +1,182 @@
+{
+  "id": "e09-give-power",
+  "episode": 9,
+  "shotId": "give-power",
+  "beforeShot": {
+    "id": "give-power",
+    "file": "11-give-power.png",
+    "crop": "tall",
+    "shape": "bleed",
+    "aspect": "1024x1792",
+    "pause": 130,
+    "scene": "Ren concentrates faint CYAN energy from chest into isolated lead with BOTH arms UNARMORED, no full armor or attack. Bellows starts first small motion, he sacrifices combat output.",
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "戦う力は、あとでいい。",
+        "columns": [
+          "戦う力は、",
+          "あとでいい。"
+        ],
+        "type": "speech"
+      }
+    ],
+    "status": "generated",
+    "state": "Ren concentrates faint CYAN energy from chest into isolated lead with BOTH arms UNARMORED, no full armor or attack. Bellows starts first small motion, he sacrifices combat output.",
+    "pacing": "understanding / recovery",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1792. Composition: one tall continuous single moment, borderless dramatic vertical flow; not multiple moments or panels\nScene and exact state: Ren concentrates faint CYAN energy from chest into isolated lead with BOTH arms UNARMORED, no full armor or attack. Bellows starts first small motion, he sacrifices combat output.\n\nBalloon 1: speech, Ren, upper right. EXACT text: 戦う力は、あとでいい。 . Columns RIGHT to LEFT: 戦う力は、 / あとでいい。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nStrict continuity: it is NIGHT in the same brass workshop, dim amber lanterns and indigo dark exterior if a window is visible. Never bright sunlight, blue daytime city, palace or outdoor plaza. Ren stays in ordinary BLACK FABRIC shirt, red scarf, BARE arms and hands throughout this entire episode. No armor on him, no attack or new form. The elderly survivor and breathing device match art/08-ventilator-stops.png: GREY beard and BROWN vest, lying on the same cot, brass mouth mask and BROWN LEATHER bellows connected by one hose. Keep the physical connection from isolated copper lead through a brass actuator to the bellows. No change of patient or ventilator design. Ren provides sustained power at the adjacent terminal; he cannot simultaneously be somewhere else.",
+    "sha256": "c5b1577b60939bbc9dc901fab1c308a23de8d3199a1b8e5f6e288f2dd928267d",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "art/08-ventilator-stops.png"
+    ],
+    "baseline_sha256": "c5b1577b60939bbc9dc901fab1c308a23de8d3199a1b8e5f6e288f2dd928267d",
+    "widthPercent": 100,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-give-power.png",
+  "references": [
+    "examples/zero-break/episode-09/art/11-give-power.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "MANDATORY FIRST: Completely recompose the supplied target into the EXACT separate framed panel sequence below. Its old composition is discarded; only characters, plot and setting are references. EXACT 4 panels: top cloth tiny cyan star/ Ren bare hands on dedicated circuit says 戦う力は、あとでいい。 in3 huge columns. Middle RIGHT faint energy through his bare fingers into copper terminal / LEFT same copper wire to brass bellows beginning smallest movement. Bottom wide Ren UNARMORED concentrates at same terminal beside elder, no completed recovery before breathing cue.\nUse case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Ren concentrates faint CYAN energy from chest into isolated lead with BOTH arms UNARMORED, no full armor or attack. Bellows starts first small motion, he sacrifices combat output.\nExact layout, camera and mechanics: EXACT 4 panels: top cloth tiny cyan star/ Ren bare hands on dedicated circuit says 戦う力は、あとでいい。 in3 huge columns. Middle RIGHT faint energy through his bare fingers into copper terminal / LEFT same copper wire to brass bellows beginning smallest movement. Bottom wide Ren UNARMORED concentrates at same terminal beside elder, no completed recovery before breathing cue.\nExact speech in chronological order: [{\"speaker\": \"Ren\", \"text\": \"戦う力は、あとでいい。\", \"columns\": [\"戦う力は、\", \"あとでいい。\"], \"type\": \"speech\"}]\nExact effects (each once, near physical cause): [\"ジ…\"]\nExact visible prop text: []. No other text.\n\nFINAL PHONE OVERRIDE: 80-90px ACTUAL Japanese glyph height on1024px width, 2-3 vertical upright columns max6glyph each. No ruled lines inside balloons. RIGHT panel first then LEFT. Each sound exactly once. All of Chapter9 is NIGHT except memory replay; keep every Ren arm UNARMORED in Chapter9. Ren in Chapter10 never releases the same stone beam until all spectators clear. Reference2 only frames/style. No added outcomes or dialogue.",
+  "layoutDirection": "EXACT 4 panels: top cloth tiny cyan star/ Ren bare hands on dedicated circuit says 戦う力は、あとでいい。 in3 huge columns. Middle RIGHT faint energy through his bare fingers into copper terminal / LEFT same copper wire to brass bellows beginning smallest movement. Bottom wide Ren UNARMORED concentrates at same terminal beside elder, no completed recovery before breathing cue.",
+  "sounds": [
+    "ジ…"
+  ],
+  "visibleText": [],
+  "status": "planned",
+  "output": "examples/zero-break/episode-09/art/remake-give-power.png",
+  "sha256": "ce04c9e6d500b9c7bb50bf797627bbcd135daf8ca3a618614e48ace265199960",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-48682fe4-69ad-49ce-8492-d68fe2287369.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 4,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-0.png",
+        "sha256": "73015b8230771f83ba2457def5190f93a77aea9b2a43e550cd172dc965f5d043"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-1.png",
+        "sha256": "5be6c442e842db55132c352fe17a715c55fc094745c099736af4a6b8927fd37e"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-2.png",
+        "sha256": "14d1bf0901913e17473237005fab7d0691aab5dd19ee5cce3b09067563df6d66"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-3.png",
+        "sha256": "8131debabda6c80b35f67afb917099d90aa49cd46ea0574d010610bd89a60b4e"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-4.png",
+        "sha256": "f15d01392d9f9c726e0c71c956322fec8b0e271bc13f3db2e53535cfdd0eb8c8"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-0.png",
+        "sha256": "e9158d607dda8d8dfa31621b34fc9ba1fbee8e178186ac05ce0020320d46cc9d"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-1.png",
+        "sha256": "f2c8a66069382a194c62a0e04017b304ef6df558ce2d7137539bc6845c3c2fc5"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-2.png",
+        "sha256": "a05a790a19801e11b24f7df55c863e2211f5ca2fb186955ff7e825ac7eda7375"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-3.png",
+        "sha256": "23be3f77292fa97f0db428f0491e6e5b12c83f76c1ba2b881eb725431f416758"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-4.png",
+        "sha256": "a5f5e114c2def224f112a39600e51e41d542a9c0a8fa0a88b8ffd973e6d87998"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-09/art/11-give-power.png",
+      "sha256": "c5b1577b60939bbc9dc901fab1c308a23de8d3199a1b8e5f6e288f2dd928267d"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "executedRepairPrompt": "MANDATORY FIRST: Completely recompose the supplied target into the EXACT separate framed panel sequence below. Its old composition is discarded; only characters, plot and setting are references. EXACT 4 panels: top cloth tiny cyan star/ Ren bare hands on dedicated circuit says 戦う力は、あとでいい。 in3 huge columns. Middle RIGHT faint energy through his bare fingers into copper terminal / LEFT same copper wire to brass bellows beginning smallest movement. Bottom wide Ren UNARMORED concentrates at same terminal beside elder, no completed recovery before breathing cue.\nUse case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Ren concentrates faint CYAN energy from chest into isolated lead with BOTH arms UNARMORED, no full armor or attack. Bellows starts first small motion, he sacrifices combat output.\nExact layout, camera and mechanics: EXACT 4 panels: top cloth tiny cyan star/ Ren bare hands on dedicated circuit says 戦う力は、あとでいい。 in3 huge columns. Middle RIGHT faint energy through his bare fingers into copper terminal / LEFT same copper wire to brass bellows beginning smallest movement. Bottom wide Ren UNARMORED concentrates at same terminal beside elder, no completed recovery before breathing cue.\nExact speech in chronological order: [{\"speaker\": \"Ren\", \"text\": \"戦う力は、あとでいい。\", \"columns\": [\"戦う力は、\", \"あとでいい。\"], \"type\": \"speech\"}]\nExact effects (each once, near physical cause): [\"ジ…\"]\nExact visible prop text: []. No other text.\n\nFINAL PHONE OVERRIDE: 80-90px ACTUAL Japanese glyph height on1024px width, 2-3 vertical upright columns max6glyph each. No ruled lines inside balloons. RIGHT panel first then LEFT. Each sound exactly once. All of Chapter9 is NIGHT except memory replay; keep every Ren arm UNARMORED in Chapter9. Ren in Chapter10 never releases the same stone beam until all spectators clear. Reference2 only frames/style. No added outcomes or dialogue.\n\nFINAL MANDATORY CONTINUITY CORRECTION — overrides conflicting original imagery:\nRebuild EXACT 4 frames [1],[2,3],[4]. SAME rectangular brass isolated box, cyan vertical FRONT glass and TWO FLAT COPPER PADS ON TOP; RED cable/hose to elder's brass bellows mask. City BLACK cable lies UNPLUGGED by wall. TOP Ren bare short-sleeve and red scarf says exactly 「戦う力は、あとでいい。」 in TWO or THREE huge upright vertical columns, palms approaching pads. RIGHT MIDDLE both completely BARE palms touch both COPPER pads, CYAN energy flows from hands to box, ONE SFX 「ジ…」. LEFT MIDDLE bellows FIRST begin to expand, elder face kept out of crop. BOTTOM wide Ren CONTINUOUSLY presses both pads, no crank, lever, handgrip, cylinder, armor or mechanical wrist brace. Mira observes, Noa orange gloves; elder on cot. Show rescue energy entering isolated device; no recovered elder face before later beat.",
+  "repairBefore": {
+    "path": "examples/zero-break/production/webtoon-remake/references/e09-give-power-before-correction.png",
+    "sha256": "387d192a25d230b5c68566c184dd35e6f8ab7aa01aff96cafce38fd6e003e16b"
+  },
+  "panels": [
+    {
+      "beat": "戦う力はあとでいいとレンが言う",
+      "view": "戦う力はあとでいいとレンが言う",
+      "frame": "row 1; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Ren",
+        "text": "戦う力は、あとでいい。",
+        "columns": [
+          "戦う力は、",
+          "あとでいい。"
+        ],
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "二つの銅の端子へ素手からシアンの力を流す",
+      "view": "二つの銅の端子へ素手からシアンの力を流す",
+      "frame": "row 2; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "蛇腹が動き始める",
+      "view": "蛇腹が動き始める",
+      "frame": "row 2; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "同じ端子に両手を置いて送り続ける",
+      "view": "同じ端子に両手を置いて送り続ける",
+      "frame": "row 3; full-width panel",
+      "voice": "無言"
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4
+      ]
+    ],
+    "direction": "EXACT 4 panels: top cloth tiny cyan star/ Ren bare hands on dedicated circuit says 戦う力は、あとでいい。 in3 huge columns. Middle RIGHT faint energy through his bare fingers into copper terminal / LEFT same copper wire to brass bellows beginning smallest movement. Bottom wide Ren UNARMORED concentrates at same terminal beside elder, no completed recovery before breathing cue.",
+    "observedPanelBeats": [
+      "戦う力はあとでいいとレンが言う",
+      "二つの銅の端子へ素手からシアンの力を流す",
+      "蛇腹が動き始める",
+      "同じ端子に両手を置いて送り続ける"
+    ]
+  }
+}

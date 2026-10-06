@@ -1,49 +1,61 @@
 {
-  "edition": "context-dialogue-v6",
-  "panels": 28,
-  "readerSourceSha256": "29d531d7db21f070402cc934d6254d9a39cffd5ad10c1a0ecd0bdcc691496ed4",
+  "edition": "webtoon-remake-20261006",
+  "panels": 50,
+  "readerSourceSha256": "703c8610a36dcf802d47fd9c6a6059b5f7123b100ba1f1754b53f1c6576cb977",
   "source_assets_verified": true,
   "visualReview": {
     "status": "passed",
-    "method": "manual inspection of native raster exports; not browser/DOM inspection",
-    "assets": 18,
-    "panels": 28,
-    "all_assets_at_360": true,
-    "representative_intervals_at_390": true,
-    "exact_text_and_speakers": true,
-    "faces_hands_costumes_props_and_causality": true,
-    "continuity_notes": "白い石の英雄像は金色の星、レンの核は青。名前と生きた英雄の正体を先出ししない。",
-    "reviewed_files": [
-      {
-        "file": "review/v6-contact-360-0.png",
-        "sha256": "abee83a9ef24a17a871890b2a4cbaabac6e0c87bd3fa15355480836719628266"
-      },
-      {
-        "file": "review/v6-contact-360-1.png",
-        "sha256": "a0146a13c16fea95b256535e6de0432fe9c17ec3e8608fa05ca519b5b8e6992b"
-      },
-      {
-        "file": "review/v6-contact-360-2.png",
-        "sha256": "9e4ec737a5ad04934cc5b9d6bb91cc038496cfe09ebcc795a1963975c476788d"
-      },
-      {
-        "file": "review/v6-contact-360-3.png",
-        "sha256": "695517c164c14421d7a3f7da0280cd617b16400eae9c482763a24bbe5346aa1d"
-      },
-      {
-        "file": "review/v6-contact-360-4.png",
-        "sha256": "1f69c358a0f162db91aeccaee3cd779c57501f70b91b4d149f90fa8e002c84a2"
-      },
-      {
-        "file": "review/v6-contact-390-0.png",
-        "sha256": "89cafec7b64c32da39e84d9166cd50c958ef4165ec4b295fae4633c3a1864a4d"
-      }
+    "widths": [
+      360,
+      390
     ],
-    "user_acceptance": "not_recorded_for_full_revision"
+    "method": "native raster contact boards and sequence windows",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-360-0.png",
+        "sha256": "e95f70d0c529d321160d6d59dd7c2e22c4cfa7c9fce79460ef87aec2742aa91c"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-360-1.png",
+        "sha256": "accd0ae08e191bfd8fcb25f52d0a336d98b3fead29717453a0d019c4e7ba9073"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-360-2.png",
+        "sha256": "64f208fad485840bf46d97582df012d07c241e921acb5d8ab4cffed4df502d02"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-360-3.png",
+        "sha256": "336009522c1110149b2143998aba31535e769271aea80417a8a8aa3ffc1f7c4f"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-360-4.png",
+        "sha256": "2d73c022e20bd2ec086543dcc4c5606b615d1d3945a49b608491954308d41b50"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-390-0.png",
+        "sha256": "70182b4a86b23bfc30bd56ee2201399fada4d2a00797ccb25e20d372d78fe158"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-390-1.png",
+        "sha256": "7bbf11167b62bff16275cda50ae1f29b2cb3ff2fc2a08dfd38b78c520e1f1a60"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-390-2.png",
+        "sha256": "35fe2b6ca89ab14a681d86bb4f374e24a696df1f2fbf8e831e9e8cac1f37b646"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-390-3.png",
+        "sha256": "220abbd5911107919c63687db7d8f7e380f9f9a565ce22eb895ee8b27df8f242"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-390-4.png",
+        "sha256": "d3048984d0fc243b0626b2875478773464bec98106385f38f9eb8f3440fe1057"
+      }
+    ]
   },
   "mobileBrowserReview": {
     "status": "pending",
-    "note": "Local HTML browser access was restricted. Native canvas exports are not browser proof."
+    "note": "Prior edition review does not apply to revised art."
   },
   "physicalDeviceTested": false
 }

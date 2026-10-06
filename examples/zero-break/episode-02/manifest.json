@@ -6,9 +6,9 @@
   "shots": [
     {
       "id": "hunger",
-      "file": "01-hunger.png",
+      "file": "remake-hunger.png",
       "crop": "wide",
-      "shape": "right",
+      "shape": "bleed",
       "aspect": "1024x768",
       "pause": 35,
       "scene": "Ren in full black armor, cyan chest star weak, hand on stomach, embarrassed and exhausted amid guardian rubble. Only effect ぐう… .",
@@ -17,21 +17,66 @@
       "state": "Ren in full black armor, cyan chest star weak, hand on stomach, embarrassed and exhausted amid guardian rubble. Only effect ぐう… .",
       "pacing": "short action / reaction",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: finished anime WEBTOON single comic moment. References establish Ren identity, Mira identity, armor design, and crisp detailed anime cel shaded style ONLY; do not copy their dialogue, pose, framing or panel layout. Adult Ren19: messy black hair, blue eyes, crimson scarf. He CURRENTLY wears complete faceted BLACK armor with thin cyan seams and a cyan star on chest, like reference1; the cyan is WEAK now, never purple. Scene: immediately after the first guardian fight, ruined white floating-city plaza in sunshine, giant broken stone fragments behind him. ONE short close shot of Ren from head to waist, hand on stomach, cheeks embarrassed, shoulders tired. His stomach growls. Mira is not in this crop yet. Do NOT show armor disappearing, invoices, new danger or future rescue. Compose wide 1024x768 with thin smooth black comic border, no giant unused margins. Render exact Japanese sound effect once near stomach, outside a balloon: ぐう… . Glyphs upright Japanese, expressive manga lettering, legible at360px; no speech balloons, narration, labels, English or other text. Preserve beautiful expressive anime face and red scarf, anatomically correct five-finger hand on stomach. Fully colored finished art, white-blue daylight background.",
-      "sha256": "901fdb6e5a79d1d93afc5eec877691b3a927845b08416375d1e927930b6a1d3f",
+      "prompt": "Edit this comic precisely; preserve its main upper shot, Ren's exact face/clothing/armor/location, and the single large upper sound ぐう… . Correct ONLY these issues: swap the TWO lower-panel SUBJECTS so RIGHT lower panel contains close black GLOVED HAND pressing stomach, LEFT lower panel contains the weak cyan chest star. Keep each hand anatomically correct; no extra hand. REMOVE every tiny white sound or letter in the lower row; only the original upper sound remains once. Make the cyan core and cyan armor seams FAINT and low energy in ALL three panels, still recognizably cyan star; no extinguished core, no new system labels. Preserve the pristine Japanese upper ぐう… punctuation. White gutters, the lower divider may remain diagonal; do not rotate lettering or whole panels. All other art unchanged.",
+      "sha256": "409b1d84728195738a7d8be5aba7d8f199e443b4b82fcb0be45afd1b99afe7cd",
       "references": [
-        "../v5/art/14-hero.png",
-        "../v5/art/16-relief.png"
+        "examples/zero-break/episode-02/art/01-hunger.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "901fdb6e5a79d1d93afc5eec877691b3a927845b08416375d1e927930b6a1d3f",
-      "widthPercent": 86,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "空腹と疲労で動きが鈍る装甲姿のレン",
+          "view": "空腹と疲労で動きが鈍る装甲姿のレン",
+          "frame": "row 1; full-width panel",
+          "voice": "無言"
+        },
+        {
+          "beat": "右：装甲の手で腹を押さえる",
+          "view": "右：装甲の手で腹を押さえる",
+          "frame": "row 2; horizontal row, right-to-left position 1/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "左：弱いシアンの胸の核",
+          "view": "左：弱いシアンの胸の核",
+          "frame": "row 2; horizontal row, right-to-left position 2/2",
+          "voice": "無言"
+        }
+      ],
+      "sounds": [
+        "ぐう…"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-hunger.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "direction": "Full-width upper shot of exhausted armored Ren; below it a short horizontal row RIGHT gloved hand pressed to stomach / LEFT weak cyan chest core. No new event; brief comic embarrassment.",
+        "observedPanelBeats": [
+          "空腹と疲労で動きが鈍る装甲姿のレン",
+          "右：装甲の手で腹を押さえる",
+          "左：弱いシアンの胸の核"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "untransform",
-      "file": "02-untransform.png",
+      "file": "remake-untransform.png",
       "crop": "wide",
-      "shape": "left",
+      "shape": "bleed",
       "aspect": "1024x768",
       "pause": 55,
       "scene": "Close bare Ren hand emerging as black arm armor flakes into tiny blue light; red scarf remains, black short sleeve shirt underneath. Exhaustion, no new danger.",
@@ -40,19 +85,74 @@
       "state": "Close bare Ren hand emerging as black arm armor flakes into tiny blue light; red scarf remains, black short sleeve shirt underneath. Exhaustion, no new danger.",
       "pacing": "short action / reaction",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Close bare Ren hand emerging as black arm armor flakes into tiny blue light; red scarf remains, black short sleeve shirt underneath. Exhaustion, no new danger.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.",
-      "sha256": "1c7d2611fc167d6741964cc598a1c2dcbc51c9c1292629172f3329e2003a1d6d",
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Close bare Ren hand emerging as black arm armor flakes into tiny blue light; red scarf remains, black short sleeve shirt underneath. Exhaustion, no new danger.\nExact layout and camera: Upper shallow core dimming insert; middle horizontal row RIGHT black wrist armor loosens into cyan motes / LEFT same hand now bare; lower larger view of the ordinary black short sleeve. All armor finishes fading before Mira touches him.\nExact speech in chronological order: []\nExact effects (each once, associated with physical cause): [\"シュゥ…\"]\nExact existing visible prop text: []. No other text.\n",
+      "sha256": "abdb42a6d7fd038a66c707c461b84fdb8512503710b276577f42af82b1cbb578",
       "references": [
-        "../v5/art/14-hero.png",
-        "../v5/art/a14-rejection.png"
+        "examples/zero-break/episode-02/art/02-untransform.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "1c7d2611fc167d6741964cc598a1c2dcbc51c9c1292629172f3329e2003a1d6d",
-      "widthPercent": 76,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "疲れた目元",
+          "view": "疲れた目元",
+          "frame": "row 1; full-width panel",
+          "voice": "無言"
+        },
+        {
+          "beat": "右：同じ前腕の装甲が粒子へほどける",
+          "view": "右：同じ前腕の装甲が粒子へほどける",
+          "frame": "row 2; horizontal row, right-to-left position 1/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "左：現れた素手",
+          "view": "左：現れた素手",
+          "frame": "row 2; horizontal row, right-to-left position 2/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "黒い布のシャツへ戻ったレン",
+          "view": "黒い布のシャツへ戻ったレン",
+          "frame": "row 3; full-width panel",
+          "voice": "無言"
+        }
+      ],
+      "sounds": [
+        "シュゥ…"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-untransform.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4
+          ]
+        ],
+        "direction": "Upper shallow core dimming insert; middle horizontal row RIGHT black wrist armor loosens into cyan motes / LEFT same hand now bare; lower larger view of the ordinary black short sleeve. All armor finishes fading before Mira touches him.",
+        "observedPanelBeats": [
+          "疲れた目元",
+          "右：同じ前腕の装甲が粒子へほどける",
+          "左：現れた素手",
+          "黒い布のシャツへ戻ったレン"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "e02-support",
-      "file": "v6-support.png",
+      "file": "remake-e02-support-r2.png",
       "shape": "bleed",
       "pause": 120,
       "widthPercent": 100,
@@ -66,16 +166,16 @@
       ],
       "panels": [
         {
-          "beat": "Confirm the immediate context without adding a new event.",
-          "view": "Unarmored Ren sways; Mira steps beside him and supports his shoulder with one hand, smiling gently among rubble. This is the first support touch. Show the established spatial relationship, WITHOUT replaying earlier action or later results.",
-          "frame": "full-width wide framed establishing shot",
+          "beat": "ミラが疲れたレンの肩を支える",
+          "view": "ミラが疲れたレンの肩を支える",
+          "frame": "row 1; full-width panel",
           "voice": "無言"
         },
         {
-          "beat": "The reader receives one part of the explanation, before a response.",
-          "view": "ONLY Mira gentle face after supporting exhausted unarmored Ren at same ruined plaza; Ren nearby offscreen left.",
-          "frame": "right-aligned90% width, medium framed speaker close-up",
-          "voice": "warm soft outline",
+          "beat": "右：ミラの穏やかな声",
+          "view": "右：ミラの穏やかな声",
+          "frame": "row 2; horizontal row, right-to-left position 1/2",
+          "voice": "spoken balloon with tail to mouth",
           "line": {
             "speaker": "Mira",
             "text": "英雄も、お腹は空くんですね。",
@@ -83,9 +183,9 @@
           }
         },
         {
-          "beat": "The listener or the relevant object holds the same scene while the words settle.",
-          "view": "Ren hand on empty stomach, now BARE after armor has faded; Mira still supporting him.",
-          "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+          "beat": "左：レンが言葉を受け取る",
+          "view": "左：レンが言葉を受け取る",
+          "frame": "row 2; horizontal row, right-to-left position 2/2",
           "voice": "無言"
         }
       ],
@@ -93,32 +193,45 @@
       "added_context_dialogue": false,
       "status": "generated",
       "generated": true,
-      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Unarmored Ren sways; Mira steps beside him and supports his shoulder with one hand, smiling gently among rubble. This is the first support touch.\n\nPanel 1, downward order. Frame: full-width wide framed establishing shot. Reader understands: Confirm the immediate context without adding a new event.. Visible camera subject / offscreen continuity: Unarmored Ren sways; Mira steps beside him and supports his shoulder with one hand, smiling gently among rubble. This is the first support touch. Show the established spatial relationship, WITHOUT replaying earlier action or later results.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 2, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira gentle face after supporting exhausted unarmored Ren at same ruined plaza; Ren nearby offscreen left.. Voice / balloon: warm soft outline.\nONLY speaker: Mira. EXACT text: 「英雄も、お腹は空くんですね。」 (render contents only).\nPanel 3, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Ren hand on empty stomach, now BARE after armor has faded; Mira still supporting him.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\n",
+      "prompt": "Edit ONLY the speech balloon and its Japanese lettering in the lower RIGHT panel. Current text is too small on a phone. Keep the exact line 英雄も、お腹は空くんですね。 once, upright Japanese top-to-bottom, columns right-to-left. Reflow into THREE columns RIGHT 英雄も、 / MIDDLE お腹は空く / LEFT んですね。 . Actual black glyphs must be about64px tall on this1024px canvas, bold and crisp. Enlarge white balloon to about330px wide and480px high on the LEFT side of Mira's lower panel; her full face, mouth, eyes, hand stay visible on RIGHT. Tail still points continuously at Mira mouth. Remove old tiny lettering completely before replacement, no duplicated letters or other dialogue. Preserve Ren eye insert and large upper support panel, ふら… once, exact faces/clothes/background and all panel borders. No new people.",
       "references": [
-        "examples/zero-break/episode-02/art/03-support.png",
-        "skills/webtoon/references/zero-break/varied-01.png"
+        "examples/zero-break/episode-02/art/v6-support.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
-      "sha256": "096570bbb4e91dfaba10468c0fb1a91770d9c5ef491fc412a83997320767e1a3",
-      "provenance": "context-dialogue-v6",
+      "sha256": "fbad42bc455f2a666ee2949482b81b2a690500286be235be419378f9c90e4a47",
+      "provenance": "webtoon skill full scene recomposition",
       "replaces": [
         "support"
       ],
-      "visual_review": {
-        "status": "passed_native_image_review",
-        "source_sha256": "096570bbb4e91dfaba10468c0fb1a91770d9c5ef491fc412a83997320767e1a3",
-        "chapter_validation": "../../../episode-02/validation.json",
-        "checks": [
-          "exact lettering and speakers",
-          "faces, hands, costumes, props",
-          "cause and effect, prior state, no premature reveals"
+      "visual_review": "passed",
+      "sounds": [
+        "ふら…"
+      ],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-e02-support.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "direction": "Upper wide establishing Mira supports swaying UNARMORED Ren at the same ruined plaza; lower row RIGHT 66% Mira gentle speaking face with the complete line / LEFT 30% Ren silent eye response. Tail toward Mira; both stay at same place.",
+        "observedPanelBeats": [
+          "ミラが疲れたレンの肩を支える",
+          "右：ミラの穏やかな声",
+          "左：レンが言葉を受け取る"
         ]
       }
     },
     {
       "id": "invoice",
-      "file": "04-invoice.png",
+      "file": "remake-invoice.png",
       "crop": "wide",
-      "shape": "left",
+      "shape": "bleed",
       "aspect": "1024x768",
       "pause": 45,
       "scene": "Rook in silver armor, blue cape, black gloves offers a paper sheet across the plaza. Ren's bare hand accepts the sheet. Paper is geometric unreadable lines only, no invented numbers.",
@@ -137,20 +250,65 @@
       "state": "Rook in silver armor, blue cape, black gloves offers a paper sheet across the plaza. Ren's bare hand accepts the sheet. Paper is geometric unreadable lines only, no invented numbers.",
       "pacing": "short action / reaction",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Rook in silver armor, blue cape, black gloves offers a paper sheet across the plaza. Ren's bare hand accepts the sheet. Paper is geometric unreadable lines only, no invented numbers.\n\nBalloon 1: speech, Rook, upper right. EXACT text: 無許可の戦闘だ。 . Columns RIGHT to LEFT: 無許可の / 戦闘だ。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
-      "sha256": "6e8f37644d453d8c44b368c1710bb35951fe1c31355835a1266420c048c28a58",
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Rook in silver armor, blue cape, black gloves offers a paper sheet across the plaza. Ren's bare hand accepts the sheet. Paper is geometric unreadable lines only, no invented numbers.\nExact layout and camera: Upper medium Rook reserved silver-armored speaking face; lower shallow wide exchange of paper from his BLACK glove to Ren BARE fingers. The paper has abstract marks, no amounts.\nExact speech in chronological order: [{\"speaker\": \"Rook\", \"text\": \"無許可の戦闘だ。\", \"columns\": [\"無許可の\", \"戦闘だ。\"], \"type\": \"speech\"}]\nExact effects (each once, associated with physical cause): [\"サッ\"]\nExact existing visible prop text: []. No other text.\n",
+      "sha256": "3bc53077d45d5c501cebc0befa597038b85e37165e4ecaf33c187f87fa7ce014",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png"
+        "examples/zero-break/episode-02/art/04-invoice.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "6e8f37644d453d8c44b368c1710bb35951fe1c31355835a1266420c048c28a58",
       "widthPercent": 100,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "ルークが無許可の戦闘を指摘する",
+          "view": "ルークが無許可の戦闘を指摘する",
+          "frame": "row 1; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
+          "line": {
+            "speaker": "Rook",
+            "text": "無許可の戦闘だ。",
+            "columns": [
+              "無許可の",
+              "戦闘だ。"
+            ],
+            "type": "speech"
+          }
+        },
+        {
+          "beat": "黒手袋から素手へ請求書が渡る",
+          "view": "黒手袋から素手へ請求書が渡る",
+          "frame": "row 2; full-width panel",
+          "voice": "無言"
+        }
+      ],
+      "sounds": [
+        "サッ"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-invoice.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "direction": "Upper medium Rook reserved silver-armored speaking face; lower shallow wide exchange of paper from his BLACK glove to Ren BARE fingers. The paper has abstract marks, no amounts.",
+        "observedPanelBeats": [
+          "ルークが無許可の戦闘を指摘する",
+          "黒手袋から素手へ請求書が渡る"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "e02-debt",
-      "file": "v6-debt.png",
+      "file": "remake-e02-debt.png",
       "shape": "bleed",
       "pause": 120,
       "widthPercent": 100,
@@ -164,59 +322,72 @@
       ],
       "panels": [
         {
-          "beat": "Confirm the immediate context without adding a new event.",
-          "view": "Close unarmored Ren looking up from the same sheet with shocked eyebrows, chest not glowing. Mira and Rook remain beside plaza rubble. Show the established spatial relationship, WITHOUT replaying earlier action or later results.",
-          "frame": "full-width wide framed establishing shot",
+          "beat": "右：両手で請求書を開く",
+          "view": "右：両手で請求書を開く",
+          "frame": "row 1; horizontal row, right-to-left position 1/2",
           "voice": "無言"
         },
         {
-          "beat": "The reader receives one part of the explanation, before a response.",
-          "view": "ONLY unarmored Ren face looking up from SAME invoice, shocked not angry; Rook offscreen right.",
-          "frame": "right-aligned90% width, medium framed speaker close-up",
-          "voice": "baffled slightly wavering spoken oval",
+          "beat": "左：驚く青い目",
+          "view": "左：驚く青い目",
+          "frame": "row 1; horizontal row, right-to-left position 2/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "助けた代償に戸惑うレン",
+          "view": "助けた代償に戸惑うレン",
+          "frame": "row 2; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
           "line": {
             "speaker": "Ren",
             "text": "助けたら、借金？",
             "type": "speech"
           }
-        },
-        {
-          "beat": "The listener or the relevant object holds the same scene while the words settle.",
-          "view": "Invoice held in Ren BARE hand; paper abstract geometric lines, no invented amount.",
-          "frame": "left-aligned72% width, shallow silent detail/reaction insert",
-          "voice": "無言"
         }
       ],
       "visible_text": [],
       "added_context_dialogue": false,
       "status": "generated",
       "generated": true,
-      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Close unarmored Ren looking up from the same sheet with shocked eyebrows, chest not glowing. Mira and Rook remain beside plaza rubble.\n\nPanel 1, downward order. Frame: full-width wide framed establishing shot. Reader understands: Confirm the immediate context without adding a new event.. Visible camera subject / offscreen continuity: Close unarmored Ren looking up from the same sheet with shocked eyebrows, chest not glowing. Mira and Rook remain beside plaza rubble. Show the established spatial relationship, WITHOUT replaying earlier action or later results.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 2, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY unarmored Ren face looking up from SAME invoice, shocked not angry; Rook offscreen right.. Voice / balloon: baffled slightly wavering spoken oval.\nONLY speaker: Ren. EXACT text: 「助けたら、借金？」 (render contents only).\nPanel 3, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Invoice held in Ren BARE hand; paper abstract geometric lines, no invented amount.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\n",
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Close unarmored Ren looking up from the same sheet with shocked eyebrows, chest not glowing. Mira and Rook remain beside plaza rubble.\nExact layout and camera: Upper horizontal row RIGHT invoice in BARE fingers / LEFT startled blue eye; lower larger Ren face asks exact line. Keep the source panel meanings and paper unchanged.\nExact speech in chronological order: [{\"speaker\": \"Ren\", \"text\": \"助けたら、借金？\", \"type\": \"speech\"}]\nExact effects (each once, associated with physical cause): [\"ペラ…\"]\nExact existing visible prop text: []. No other text.\n",
       "references": [
-        "examples/zero-break/episode-02/art/05-debt.png",
-        "skills/webtoon/references/zero-break/varied-01.png"
+        "examples/zero-break/episode-02/art/v6-debt.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
-      "sha256": "7ecf11049f5c614108681172954e22b5c98a6f968263968263bb71c8d3d56a11",
-      "provenance": "context-dialogue-v6",
+      "sha256": "1ce137e2e3d2603630ae784e9b85233c471317cea00aa414b052b406f8d3cac4",
+      "provenance": "webtoon skill full scene recomposition",
       "replaces": [
         "debt"
       ],
-      "visual_review": {
-        "status": "passed_native_image_review",
-        "source_sha256": "7ecf11049f5c614108681172954e22b5c98a6f968263968263bb71c8d3d56a11",
-        "chapter_validation": "../../../episode-02/validation.json",
-        "checks": [
-          "exact lettering and speakers",
-          "faces, hands, costumes, props",
-          "cause and effect, prior state, no premature reveals"
+      "visual_review": "passed",
+      "sounds": [
+        "ペラ…"
+      ],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-e02-debt.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1,
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "direction": "Upper horizontal row RIGHT invoice in BARE fingers / LEFT startled blue eye; lower larger Ren face asks exact line. Keep the source panel meanings and paper unchanged.",
+        "observedPanelBeats": [
+          "右：両手で請求書を開く",
+          "左：驚く青い目",
+          "助けた代償に戸惑うレン"
         ]
       }
     },
     {
       "id": "crack",
-      "file": "06-crack.png",
+      "file": "remake-crack.png",
       "crop": "wide",
-      "shape": "left",
+      "shape": "bleed",
       "aspect": "1024x768",
       "pause": 120,
       "scene": "Close crack widening across a white aqueduct support above a gap. Water leaks downward. Only effect ミシ… . No people or rescue outcome.",
@@ -225,20 +396,57 @@
       "state": "Close crack widening across a white aqueduct support above a gap. Water leaks downward. Only effect ミシ… . No people or rescue outcome.",
       "pacing": "understanding / recovery",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Close crack widening across a white aqueduct support above a gap. Water leaks downward. Only effect ミシ… . No people or rescue outcome.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.",
-      "sha256": "6365f96c869b6004d28ac982778401596ffcfe45950cd092bb338738edfcddd7",
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Close crack widening across a white aqueduct support above a gap. Water leaks downward. Only effect ミシ… . No people or rescue outcome.\nExact layout and camera: Two connected details: upper shallow hairline crack in white support, lower taller view follows leaking water down the SAME support. No people, no rescue result, no already-formed bridge.\nExact speech in chronological order: []\nExact effects (each once, associated with physical cause): [\"ミシ…\", \"ポタ…\"]\nExact existing visible prop text: []. No other text.\n",
+      "sha256": "b7f7124421b1be05f6ba019d9e699a5d9a0b52d7edf1455d7d292fc6f6c3ae26",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png"
+        "examples/zero-break/episode-02/art/06-crack.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "6365f96c869b6004d28ac982778401596ffcfe45950cd092bb338738edfcddd7",
-      "widthPercent": 78,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "水路の同じ石柱に亀裂が走る",
+          "view": "水路の同じ石柱に亀裂が走る",
+          "frame": "row 1; full-width panel",
+          "voice": "無言"
+        },
+        {
+          "beat": "亀裂から水が伝い落ちる",
+          "view": "亀裂から水が伝い落ちる",
+          "frame": "row 2; full-width panel",
+          "voice": "無言"
+        }
+      ],
+      "sounds": [
+        "ミシ…",
+        "ポタ…"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-crack.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "direction": "Two connected details: upper shallow hairline crack in white support, lower taller view follows leaking water down the SAME support. No people, no rescue result, no already-formed bridge.",
+        "observedPanelBeats": [
+          "水路の同じ石柱に亀裂が走る",
+          "亀裂から水が伝い落ちる"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "stranded",
-      "file": "07-stranded.png",
+      "file": "remake-stranded.png",
       "crop": "tall",
       "shape": "bleed",
       "aspect": "1024x1792",
@@ -258,22 +466,56 @@
       "state": "Vertically establish damaged aqueduct: mother in brown shawl and small boy in green shirt stranded on tilted upper ledge; open gap below; rescuers Ren and Mira on intact LOWER opposite ledge. Clear unsafe and safe positions, no bridge yet.",
       "pacing": "short action / reaction",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1792. Composition: one tall continuous single moment, borderless dramatic vertical flow; not multiple moments or panels\nScene and exact state: Vertically establish damaged aqueduct: mother in brown shawl and small boy in green shirt stranded on tilted upper ledge; open gap below; rescuers Ren and Mira on intact LOWER opposite ledge. Clear unsafe and safe positions, no bridge yet.\n\nBalloon 1: speech, Mother, upper right. EXACT text: 誰か…！ . Columns RIGHT to LEFT: 誰か…！.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
-      "sha256": "b90f29cf9fbfe7f2de8563c9ad0757e83d25b4e38363c96d8ea6c73a685003fb",
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Vertically establish damaged aqueduct: mother in brown shawl and small boy in green shirt stranded on tilted upper ledge; open gap below; rescuers Ren and Mira on intact LOWER opposite ledge. Clear unsafe and safe positions, no bridge yet.\nExact layout and camera: Large borderless vertical geography: family on UPPER RIGHT broken ledge, rescuers on LOWER LEFT intact ledge, gap between. Mother with brown shawl and boy with OLIVE GREEN shirt. Shouted mother line at top points to her mouth. Preserve one geography; no duplicate people.\nExact speech in chronological order: [{\"speaker\": \"Mother\", \"text\": \"誰か…！\", \"columns\": [\"誰か…！\"], \"type\": \"speech\"}]\nExact effects (each once, associated with physical cause): [\"ゴロ…\"]\nExact existing visible prop text: []. No other text.\n",
+      "sha256": "e1b3013314eef2624339ddc7ee1ae5646227c22f1dbe807d24d90d85379c341b",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png"
+        "examples/zero-break/episode-02/art/07-stranded.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "b90f29cf9fbfe7f2de8563c9ad0757e83d25b4e38363c96d8ea6c73a685003fb",
       "widthPercent": 100,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "右上の危険側に母子、左下の安全側にレンとミラ、間には深い空隙",
+          "view": "右上の危険側に母子、左下の安全側にレンとミラ、間には深い空隙",
+          "frame": "row 1; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
+          "line": {
+            "speaker": "Mother",
+            "text": "誰か…！",
+            "columns": [
+              "誰か…！"
+            ],
+            "type": "speech"
+          }
+        }
+      ],
+      "sounds": [
+        "ゴロ…"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-stranded.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ]
+        ],
+        "direction": "Large borderless vertical geography: family on UPPER RIGHT broken ledge, rescuers on LOWER LEFT intact ledge, gap between. Mother with brown shawl and boy with OLIVE GREEN shirt. Shouted mother line at top points to her mouth. Preserve one geography; no duplicate people.",
+        "observedPanelBeats": [
+          "右上の危険側に母子、左下の安全側にレンとミラ、間には深い空隙"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "barrier",
-      "file": "08-barrier.png",
+      "file": "remake-barrier.png",
       "crop": "portrait",
-      "shape": "right",
+      "shape": "bleed",
       "aspect": "1024x1280",
       "pause": 50,
       "scene": "Rook's gloved palm bars Ren at a cordon on intact lower ledge; stranded parent and child on opposite distant ledge, no armor yet.",
@@ -291,22 +533,66 @@
       "state": "Rook's gloved palm bars Ren at a cordon on intact lower ledge; stranded parent and child on opposite distant ledge, no armor yet.",
       "pacing": "short action / reaction",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Precise edit reference1 ONLY. Reference2 locks the mother and boy identity and clothes while they are still stranded. In reference1, change ONLY distant boy shirt from blue-grey to OLIVE GREEN short sleeves; match same brown-haired small boy and same mother from reference2. Give mother the same BROWN hooded shawl over white blouse, hood over her brown hair, and worried expression. Both remain together on the UPPER RIGHT distant unsafe ledge, never beside Ren. Keep entire Ren and Rook foreground, cordon rope, silver armor, blue cape, black gloves, red scarf, anatomy, architecture, framing and exact existing LARGE vertical balloon 立入禁止だ。 unchanged. No new words, people, armor, rescue outcome or layout change.",
-      "sha256": "1159e17cb29c53525a6e83a0cf702d1bf947ab5f2d8e014013fae7813e9a82da",
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Rook's gloved palm bars Ren at a cordon on intact lower ledge; stranded parent and child on opposite distant ledge, no armor yet.\nExact layout and camera: Upper shallow black-gloved palm blocking Ren; lower medium Rook face speaks with family far above behind. Ren unarmored on lower-left safe ledge. No attack or bridge yet.\nExact speech in chronological order: [{\"speaker\": \"Rook\", \"text\": \"立入禁止だ。\", \"columns\": [\"立入禁止だ。\"], \"type\": \"speech\"}]\nExact effects (each once, associated with physical cause): [\"スッ\"]\nExact existing visible prop text: []. No other text.\n",
+      "sha256": "61efd08562d5f22fc2b6e3b08932965d4c02145d8d29cde1902ecfb7ce0d1a99",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png"
+        "examples/zero-break/episode-02/art/08-barrier.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "1159e17cb29c53525a6e83a0cf702d1bf947ab5f2d8e014013fae7813e9a82da",
       "widthPercent": 100,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "黒手袋の掌がレンの進路を止める",
+          "view": "黒手袋の掌がレンの進路を止める",
+          "frame": "row 1; full-width panel",
+          "voice": "無言"
+        },
+        {
+          "beat": "ルークの制止、奥の別の足場にはまだ母子",
+          "view": "ルークの制止、奥の別の足場にはまだ母子",
+          "frame": "row 2; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
+          "line": {
+            "speaker": "Rook",
+            "text": "立入禁止だ。",
+            "columns": [
+              "立入禁止だ。"
+            ],
+            "type": "speech"
+          }
+        }
+      ],
+      "sounds": [
+        "スッ"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-barrier.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "direction": "Upper shallow black-gloved palm blocking Ren; lower medium Rook face speaks with family far above behind. Ren unarmored on lower-left safe ledge. No attack or bridge yet.",
+        "observedPanelBeats": [
+          "黒手袋の掌がレンの進路を止める",
+          "ルークの制止、奥の別の足場にはまだ母子"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "set-down",
-      "file": "09-set-down.png",
+      "file": "remake-set-down.png",
       "crop": "wide",
-      "shape": "right",
+      "shape": "bleed",
       "aspect": "1024x768",
       "pause": 70,
       "scene": "Close Ren placing invoice flat onto a safe dry stone at cordon, bare fingers release paper. His gaze turns toward parent and child, no armor yet.",
@@ -315,22 +601,66 @@
       "state": "Close Ren placing invoice flat onto a safe dry stone at cordon, bare fingers release paper. His gaze turns toward parent and child, no armor yet.",
       "pacing": "short action / reaction",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Precise edit of this anime comic image. Fix ONLY premature family placement and stray lettering. It is BEFORE the rescue: the mother and boy remain stranded on a DIFFERENT upper-right ledge several metres away, so they MUST NOT appear beside Ren. Remove both mother and child from the right of this image; seamlessly fill their area with matching sunny white-city stone architecture/empty sky. Keep Ren's exact black-haired blue-eyed face, unarmored black short sleeves, red scarf, anatomy, hand placing the invoice on this safe dry stone and the blue-caped Rook in background unchanged. Ren is choosing to rescue, not talking to an already rescued family. Paper should contain only abstract non-readable lines and a crown stamp, no invented readable words. Do not add speech balloons, words, new people, armor or rope bridge. Preserve wide composition, anime style and beautiful daylight colors. No parent or child anywhere in this edited frame.",
-      "sha256": "df439c3ee01d2702a3cee5510ea4b44f829c32d593a6bec4f47317a3af78bf45",
+      "prompt": "Precisely edit this comic. Critical continuity repair: the LOWER panel currently has two Miras including a small child-shaped duplicate. Remove BOTH blonde figures from the lower background and replace their area with seamless empty white-city stone/sky. Ren and Rook remain unchanged; no other people in lower panel. Recompose ONLY the first two paper-action panels into a SHORT HORIZONTAL ROW: RIGHT hand places paper with トン once; LEFT bare hand releases paper. Below this row keep a larger Ren eye/face reaction, clear empty background. Reading RIGHT then LEFT then DOWN. Keep exact unarmored shirt/red scarf/bare hands. Keep abstract unreadable paper marks, no new text. Preserve drawing style, no mother or boy.",
+      "sha256": "e4ae31b34fdcfb2fa94adc3374305898120c28fc6baf92fbb153fc6f36a6cd7a",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png"
+        "examples/zero-break/episode-02/art/09-set-down.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "df439c3ee01d2702a3cee5510ea4b44f829c32d593a6bec4f47317a3af78bf45",
-      "widthPercent": 76,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "右：乾いた石へ請求書を置く",
+          "view": "右：乾いた石へ請求書を置く",
+          "frame": "row 1; horizontal row, right-to-left position 1/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "左：素手の指が紙を離れる",
+          "view": "左：素手の指が紙を離れる",
+          "frame": "row 1; horizontal row, right-to-left position 2/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "レンの視線が母子の方へ向く",
+          "view": "レンの視線が母子の方へ向く",
+          "frame": "row 2; full-width panel",
+          "voice": "無言"
+        }
+      ],
+      "sounds": [
+        "トン"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-set-down.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1,
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "direction": "Two short horizontal panels RIGHT Ren bare fingers lower the paper onto dry stone / LEFT fingers release it. Next downward shallow eye insert shifts toward family. No dialogue or armor.",
+        "observedPanelBeats": [
+          "右：乾いた石へ請求書を置く",
+          "左：素手の指が紙を離れる",
+          "レンの視線が母子の方へ向く"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "choice",
-      "file": "10-choice.png",
+      "file": "remake-choice.png",
       "crop": "portrait",
-      "shape": "right",
+      "shape": "bleed",
       "aspect": "1024x1280",
       "pause": 90,
       "scene": "Unarmored Ren leans toward danger, teeth set but visibly tired, Mira behind him sees his decision.",
@@ -349,20 +679,55 @@
       "state": "Unarmored Ren leans toward danger, teeth set but visibly tired, Mira behind him sees his decision.",
       "pacing": "short action / reaction",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Unarmored Ren leans toward danger, teeth set but visibly tired, Mira behind him sees his decision.\n\nBalloon 1: speech, Ren, upper right. EXACT text: まだ、手は届く。 . Columns RIGHT to LEFT: まだ、 / 手は届く。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
-      "sha256": "81bb9af310f7f4467b8621fcd2045456208a2455b66eca969b3196aea701d3e7",
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Unarmored Ren leans toward danger, teeth set but visibly tired, Mira behind him sees his decision.\nExact layout and camera: Large emotional Ren face and forward-leaning ordinary-shirt shoulders. Keep the exact dialogue large; small edge of safe stone and scarf connects the place. No armor yet. Silent lower hand starting to reach.\nExact speech in chronological order: [{\"speaker\": \"Ren\", \"text\": \"まだ、手は届く。\", \"columns\": [\"まだ、\", \"手は届く。\"], \"type\": \"speech\"}]\nExact effects (each once, associated with physical cause): [\"ギュ…\"]\nExact existing visible prop text: []. No other text.\n",
+      "sha256": "0928b0c3c0d24f7f06a1efa1ec901502e0d448694b0b79a4d81b1f11e6921f01",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png"
+        "examples/zero-break/episode-02/art/10-choice.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "81bb9af310f7f4467b8621fcd2045456208a2455b66eca969b3196aea701d3e7",
       "widthPercent": 100,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "素手を危険側へ伸ばすと決める、布のシャツのまま",
+          "view": "素手を危険側へ伸ばすと決める、布のシャツのまま",
+          "frame": "row 1; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
+          "line": {
+            "speaker": "Ren",
+            "text": "まだ、手は届く。",
+            "columns": [
+              "まだ、",
+              "手は届く。"
+            ],
+            "type": "speech"
+          }
+        }
+      ],
+      "sounds": [
+        "ギュ…"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-choice.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ]
+        ],
+        "direction": "Large emotional Ren face and forward-leaning ordinary-shirt shoulders. Keep the exact dialogue large; small edge of safe stone and scarf connects the place. No armor yet. Silent lower hand starting to reach.",
+        "observedPanelBeats": [
+          "素手を危険側へ伸ばすと決める、布のシャツのまま"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "e02-hold",
-      "file": "v6-hold.png",
+      "file": "remake-e02-hold-r2.png",
       "shape": "bleed",
       "pause": 95,
       "widthPercent": 100,
@@ -381,10 +746,10 @@
       ],
       "panels": [
         {
-          "beat": "The reader receives one part of the explanation, before a response.",
-          "view": "ONLY Ren BASIC black-armored strained face at same beam crossing, cyan star weak. He MAINTAINS the beam, not attacking.",
-          "frame": "right-aligned90% width, medium framed speaker close-up",
-          "voice": "strained wavering speech; continuous tail, no thought dots",
+          "beat": "装甲を再びまとい力を振り絞る",
+          "view": "装甲を再びまとい力を振り絞る",
+          "frame": "row 1; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
           "line": {
             "speaker": "Ren",
             "text": "戦う燃料がないなら、",
@@ -392,16 +757,22 @@
           }
         },
         {
-          "beat": "The listener or the relevant object holds the same scene while the words settle.",
-          "view": "Close black-armored hands supporting SAME white beam, boots braced on solid ledge; family remains stranded at far end, has NOT crossed yet.",
-          "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+          "beat": "右：同じ梁を両方の装甲の手で支える",
+          "view": "右：同じ梁を両方の装甲の手で支える",
+          "frame": "row 2; horizontal row, right-to-left position 1/2",
           "voice": "無言"
         },
         {
-          "beat": "The reader receives one part of the explanation, before a response.",
-          "view": "ONLY Ren BASIC black-armored strained face at same beam crossing, cyan star weak. He MAINTAINS the beam, not attacking.",
-          "frame": "full-width LARGE borderless emotional close-up",
-          "voice": "strained wavering speech; continuous tail, no thought dots",
+          "beat": "左：安全側の足場で踏ん張る靴",
+          "view": "左：安全側の足場で踏ん張る靴",
+          "frame": "row 2; horizontal row, right-to-left position 2/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "左下の梁の近端を支え、遠端は右上の母子の足場に接地",
+          "view": "左下の梁の近端を支え、遠端は右上の母子の足場に接地",
+          "frame": "row 3; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
           "line": {
             "speaker": "Ren",
             "text": "持ち上げるだけだ。",
@@ -413,32 +784,50 @@
       "added_context_dialogue": false,
       "status": "generated",
       "generated": true,
-      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Ren reactivates only weak complete black armor/cyan star; feet braced on intact lower ledge, both hands lift a fallen white beam so it spans the gap to the family. Beam holds position as a crossing, family not crossing yet. The family stays on UPPER RIGHT broken ledge. Ren is on LOWER LEFT intact ledge. One long stone beam runs diagonally lower-left to upper-right, FAR end rests firmly on family ledge, Ren lifts/supports NEAR end with BOTH hands and braced feet, a physically usable inclined bridge. Mother brown hooded shawl and white blouse, boy olive GREEN shirt. No family on safe ledge yet.\n\nPanel 1, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Ren BASIC black-armored strained face at same beam crossing, cyan star weak. He MAINTAINS the beam, not attacking.. Voice / balloon: strained wavering speech; continuous tail, no thought dots.\nONLY speaker: Ren. EXACT text: 「戦う燃料がないなら、」 (render contents only).\nPanel 2, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Close black-armored hands supporting SAME white beam, boots braced on solid ledge; family remains stranded at far end, has NOT crossed yet.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 3, downward order. Frame: full-width LARGE borderless emotional close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Ren BASIC black-armored strained face at same beam crossing, cyan star weak. He MAINTAINS the beam, not attacking.. Voice / balloon: strained wavering speech; continuous tail, no thought dots.\nONLY speaker: Ren. EXACT text: 「持ち上げるだけだ。」 (render contents only).\n",
+      "prompt": "Edit ONLY BOTH Ren speech balloons and their lettering. All art and panel borders MUST stay unchanged, especially beam sloping LOWER LEFT to UPPER RIGHT and BOTH boots braced. Phone-readable UPRIGHT actual glyphs65px tall on this1024-wide artwork. Upper line exact 戦う燃料がないなら、 in THREE columns RIGHT 戦う燃 / MIDDLE 料がない / LEFT なら、 . Enlarge white upper balloon within upper-right empty space; Ren face stays visible. Lower line exact 持ち上げるだけだ。 in THREE columns RIGHT 持ち上 / MIDDLE げるだ / LEFT けだ。 . Enlarge lower balloon into empty sky gap, about300px wide and350px tall, no covered hands, boots, beam contacts or family faces. Tails point to REN'S mouth, never mother. Remove old tiny glyphs completely before replacement, no duplicate dialogue. Preserve カチッ and ギギ… once each and all artwork.",
       "references": [
-        "examples/zero-break/episode-02/art/11-hold.png",
-        "skills/webtoon/references/zero-break/varied-01.png"
+        "examples/zero-break/episode-02/art/v6-hold.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
-      "sha256": "bd5b5466a4937a20e0bf6a741e380c7437085556fb80df7403179ee5669c1c71",
-      "provenance": "context-dialogue-v6",
+      "sha256": "4ff9663317d3ede23e5f3813c454138dd2082d3dee3b54cb40929c5c0f88417f",
+      "provenance": "webtoon skill full scene recomposition",
       "replaces": [
         "hold"
       ],
-      "visual_review": {
-        "status": "passed_native_image_review",
-        "source_sha256": "bd5b5466a4937a20e0bf6a741e380c7437085556fb80df7403179ee5669c1c71",
-        "chapter_validation": "../../../episode-02/validation.json",
-        "checks": [
-          "exact lettering and speakers",
-          "faces, hands, costumes, props",
-          "cause and effect, prior state, no premature reveals"
+      "visual_review": "passed",
+      "sounds": [
+        "カチッ",
+        "ギギ…"
+      ],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-e02-hold.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4
+          ]
+        ],
+        "direction": "Top full-width strained Ren face, basic armor activating weakly, FIRST line; middle short row RIGHT close BOTH armored hands support near end of beam / LEFT boots braced firmly on intact lower-left ledge; bottom large DIAGONALLY framed geography shows ONE stone beam running lower-left to upper-right, far end RESTING on family ledge, near end lifted by Ren, SECOND line. Family still stranded on upper-right, no crossing.",
+        "observedPanelBeats": [
+          "装甲を再びまとい力を振り絞る",
+          "右：同じ梁を両方の装甲の手で支える",
+          "左：安全側の足場で踏ん張る靴",
+          "左下の梁の近端を支え、遠端は右上の母子の足場に接地"
         ]
       }
     },
     {
       "id": "rope",
-      "file": "12-rope.png",
+      "file": "remake-rope-r2.png",
       "crop": "portrait",
-      "shape": "right",
+      "shape": "bleed",
       "aspect": "1024x1280",
       "pause": 50,
       "scene": "Mira hands coiled rope to two adult residents beside safe end of beam; one end already secured to intact column, Ren holds beam in background.",
@@ -458,21 +847,74 @@
       "state": "Mira hands coiled rope to two adult residents beside safe end of beam; one end already secured to intact column, Ren holds beam in background.",
       "pacing": "short action / reaction",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Edit the first manga illustration to fix rescue continuity. Preserve its polished full-color anime manga style, crisp linework, Mira's face and elegant white blue gold gown, and the exact existing speech balloon 「この縄を、支えてください。」 in true Japanese vertical columns read right to left. Recompose the scene clearly: Mira is on the SAFE LOWER-LEFT ledge, passing a coiled rope to TWO ADULT RESIDENTS (adult male workers in simple tan and grey clothes). Replace the mother and boy beside Mira with those two adult helpers. One end of the rope is tied to the intact white column on this safe ledge. The mother in brown hooded shawl and eight-year-old boy in OLIVE GREEN shirt remain SMALL AND DISTANT on the UNSAFE UPPER-RIGHT ledge, separated by a visible chasm, as in the second reference. Ren must be in BLACK FACETED BASIC HERO ARMOR, CYAN seams and CYAN STAR chest, RED scarf, black hair uncovered, matching the third reference. Ren is UNDER the NEAR END of the diagonal stone beam at LOWER LEFT, boots firmly braced on a remaining lower shelf, BOTH ARMS raised ABOVE his head supporting the underside of that beam. He cannot grip it from above or stand on it. The beam's far end rests on the upper-right family ledge. Show credible load-bearing pose. Family has not crossed yet. Mira's balloon tail points only to Mira. Portrait manga shot, no collage, no extra text.",
-      "sha256": "86e3d94ade3ba660625181f5bc486f72864326a918f06c353be6a09275a8b8a0",
+      "prompt": "Recompose ONLY the LOWER large speech panel into a closer Mira-only speaker shot. Preserve upper RIGHT knot/LEFT citizens horizontal row EXACTLY. Lower panel shows ONE Mira waist-up beside same intact white-stone column/rope, face and hands large and clear; no visible Ren body in this lower panel. Ren CONTINUES holding the same beam offscreen, as shown by previous/next frames; a small same beam edge may remain at right. Lower speech exact この縄を、支えてください。 once in THREE UPRIGHT columns RIGHT この縄を、 / MIDDLE 支えて / LEFT ください。 . Make actual glyph height70px on1024 width, balloon at right with generous white padding, mouth tail to MIRA. No tiny text, thought dots, future safe family or invented captions. Preserve キュッ once in top knot panel. Detailed anime style, Mira identity/clothes and daytime light unchanged.",
+      "sha256": "ab7b3e31c15997a8f0c539f3a27da2f45f67edcbec8b9da89de9c5d180678529",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png",
-        "art/07-stranded.png"
+        "examples/zero-break/episode-02/art/12-rope.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "86e3d94ade3ba660625181f5bc486f72864326a918f06c353be6a09275a8b8a0",
       "widthPercent": 100,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "右：ミラが縄を同じ柱へ締める",
+          "view": "右：ミラが縄を同じ柱へ締める",
+          "frame": "row 1; horizontal row, right-to-left position 1/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "左：大人たちが縄を受け取る",
+          "view": "左：大人たちが縄を受け取る",
+          "frame": "row 1; horizontal row, right-to-left position 2/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "ミラの大きな表情と声で縄を支える協力を頼む。レンは同じ梁を画面外で支え続ける",
+          "view": "ミラの大きな表情と声で縄を支える協力を頼む。レンは同じ梁を画面外で支え続ける",
+          "frame": "row 2; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
+          "line": {
+            "speaker": "Mira",
+            "text": "この縄を、支えてください。",
+            "columns": [
+              "この縄を、",
+              "支えて",
+              "ください。"
+            ],
+            "type": "speech"
+          }
+        }
+      ],
+      "sounds": [
+        "キュッ"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-rope.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1,
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "direction": "Upper short row RIGHT Mira ties rope to same intact safe-side column / LEFT two adult residents take rope; lower medium Mira face says exact request while Ren remains visibly holding the beam behind. Both rope ends physically connected.",
+        "observedPanelBeats": [
+          "右：ミラが縄を同じ柱へ締める",
+          "左：大人たちが縄を受け取る",
+          "ミラの大きな表情と声で縄を支える協力を頼む。レンは同じ梁を画面外で支え続ける"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "cross",
-      "file": "13-cross.png",
+      "file": "remake-cross.png",
       "crop": "tall",
       "shape": "bleed",
       "aspect": "1024x1792",
@@ -483,23 +925,67 @@
       "state": "Mother and boy cautiously step along held beam, grasping taut safety rope; residents pull rope from safe side, Ren's armor cracks while holding weight. They are MIDWAY, not safe yet.",
       "pacing": "short action / reaction",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Edit the first illustration to correct the bridge mechanics in this rescue manga, keeping the exquisite anime art, stone aqueduct, chasm, olive green shirt boy and brown hooded mother and safe-side adult rope helpers. The second reference establishes geography; the third reference establishes Ren's actual support pose. Ren MUST NOT walk on the bridge or hold the rope. Move Ren to the LOWER LEFT on a small intact stone shelf BELOW the near end of the bridge. His boots brace against the shelf, both arms raised over his head, BOTH HANDS visibly support the UNDERSIDE of the near end of the diagonal stone beam. Ren remains in BASIC BLACK FACETED armor with thin CYAN seams and a CYAN star chest, RED scarf, messy black hair uncovered. The far end of the long stone beam rests firmly on the UNSAFE UPPER-RIGHT ledge. The brown hooded mother and eight-year-old olive green shirt boy are now HALFWAY ACROSS the narrow stone beam from upper right toward lower left, walking carefully while grasping the taut safety rope. The two adult villagers on the safe lower-left platform pull the other end of that safety rope. Draw a wide enough view in this tall panel to show Ren below supporting, family above crossing, and a deep open chasm underneath. Keep the people distinct and do not fuse any hands. No speech, no text, one tall cinematic continuous panel.",
-      "sha256": "5b8b8537e2e2c375e7c65a47f71cd94a3d1f7f9eb06404fa933ac795f3362c62",
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Mother and boy cautiously step along held beam, grasping taut safety rope; residents pull rope from safe side, Ren's armor cracks while holding weight. They are MIDWAY, not safe yet.\nExact layout and camera: Large diagonal panel mother and boy MIDWAY on same inclined stone beam from upper-right toward lower-left, both holding taut safety rope; below shallow pair RIGHT Ren armored hands maintain load / LEFT residents pull safety rope. No one is safe yet.\nExact speech in chronological order: []\nExact effects (each once, associated with physical cause): [\"ギシ…\", \"ザッ\"]\nExact existing visible prop text: []. No other text.\n",
+      "sha256": "17cd9b6a84bc13908ca7378ce73d6ee402cfdea5cc259b17352d8f11979b7417",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png",
-        "art/07-stranded.png"
+        "examples/zero-break/episode-02/art/13-cross.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "5b8b8537e2e2c375e7c65a47f71cd94a3d1f7f9eb06404fa933ac795f3362c62",
       "widthPercent": 100,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "同じ梁を右上から左下へ渡る途中の母子",
+          "view": "同じ梁を右上から左下へ渡る途中の母子",
+          "frame": "row 1; full-width panel",
+          "voice": "無言"
+        },
+        {
+          "beat": "右：レンは梁の支持を続ける",
+          "view": "右：レンは梁の支持を続ける",
+          "frame": "row 2; horizontal row, right-to-left position 1/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "左：大人たちが縄を引いて渡る人を支える",
+          "view": "左：大人たちが縄を引いて渡る人を支える",
+          "frame": "row 2; horizontal row, right-to-left position 2/2",
+          "voice": "無言"
+        }
+      ],
+      "sounds": [
+        "ギシ…",
+        "ザッ"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-cross.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "direction": "Large diagonal panel mother and boy MIDWAY on same inclined stone beam from upper-right toward lower-left, both holding taut safety rope; below shallow pair RIGHT Ren armored hands maintain load / LEFT residents pull safety rope. No one is safe yet.",
+        "observedPanelBeats": [
+          "同じ梁を右上から左下へ渡る途中の母子",
+          "右：レンは梁の支持を続ける",
+          "左：大人たちが縄を引いて渡る人を支える"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "safe",
-      "file": "14-safe.png",
+      "file": "remake-safe.png",
       "crop": "portrait",
-      "shape": "right",
+      "shape": "bleed",
       "aspect": "1024x1280",
       "pause": 190,
       "scene": "Mother and boy now both on dry intact safe ledge, hugging each other, relieved faces. Rope slack, beam still secured, no return to dangerous position.",
@@ -517,23 +1003,66 @@
       "state": "Mother and boy now both on dry intact safe ledge, hugging each other, relieved faces. Rope slack, beam still secured, no return to dangerous position.",
       "pacing": "understanding / recovery",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Mother and boy now both on dry intact safe ledge, hugging each other, relieved faces. Rope slack, beam still secured, no return to dangerous position.\n\nBalloon 1: speech, Boy, upper right. EXACT text: お母さん…！ . Columns RIGHT to LEFT: お母さん…！.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.\nFourth reference establishes same mother (brown hooded shawl and white blouse), same boy (olive green short sleeve shirt), same aqueduct gap: unsafe upper RIGHT ledge, safe lower LEFT ledge. The supported stone bridge slopes from upper-right down to lower-left. Preserve identity, but change safety position ONLY according to THIS exact scene.",
-      "sha256": "906ce49de99a695f87049fd037798692b8a94ca3204c4ed638be5084617ffc6f",
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Mother and boy now both on dry intact safe ledge, hugging each other, relieved faces. Rope slack, beam still secured, no return to dangerous position.\nExact layout and camera: Wide safety establishing both mother and boy on intact LOWER LEFT safe ledge, followed by larger tender embrace with boy exact line. Their clothing matches earlier shots. Rope now slack. Ren stays supporting beam offscreen until safe.\nExact speech in chronological order: [{\"speaker\": \"Boy\", \"text\": \"お母さん…！\", \"columns\": [\"お母さん…！\"], \"type\": \"speech\"}]\nExact effects (each once, associated with physical cause): [\"ぎゅ…\"]\nExact existing visible prop text: []. No other text.\n",
+      "sha256": "51da54eabb08cd9c3a317d23dbe5df6a31b9134dde933284e5e5f0af75879288",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png",
-        "art/07-stranded.png"
+        "examples/zero-break/episode-02/art/14-safe.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "906ce49de99a695f87049fd037798692b8a94ca3204c4ed638be5084617ffc6f",
       "widthPercent": 100,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "母子が揃って左下の安全な石の足場に着き、縄が緩む",
+          "view": "母子が揃って左下の安全な石の足場に着き、縄が緩む",
+          "frame": "row 1; full-width panel",
+          "voice": "無言"
+        },
+        {
+          "beat": "抱き合う母子、少年の声",
+          "view": "抱き合う母子、少年の声",
+          "frame": "row 2; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
+          "line": {
+            "speaker": "Boy",
+            "text": "お母さん…！",
+            "columns": [
+              "お母さん…！"
+            ],
+            "type": "speech"
+          }
+        }
+      ],
+      "sounds": [
+        "ぎゅ…"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-safe.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "direction": "Wide safety establishing both mother and boy on intact LOWER LEFT safe ledge, followed by larger tender embrace with boy exact line. Their clothing matches earlier shots. Rope now slack. Ren stays supporting beam offscreen until safe.",
+        "observedPanelBeats": [
+          "母子が揃って左下の安全な石の足場に着き、縄が緩む",
+          "抱き合う母子、少年の声"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "exhale",
-      "file": "15-exhale.png",
+      "file": "remake-exhale.png",
       "crop": "wide",
-      "shape": "right",
+      "shape": "bleed",
       "aspect": "1024x768",
       "pause": 130,
       "scene": "Ren unarmored again sitting at safe ledge edge, bare hands trembling; Mira kneels beside him with a water cup, no romantic touch. Rescued family behind safely.",
@@ -551,20 +1080,64 @@
       "state": "Ren unarmored again sitting at safe ledge edge, bare hands trembling; Mira kneels beside him with a water cup, no romantic touch. Rescued family behind safely.",
       "pacing": "understanding / recovery",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Ren unarmored again sitting at safe ledge edge, bare hands trembling; Mira kneels beside him with a water cup, no romantic touch. Rescued family behind safely.\n\nBalloon 1: speech, Ren, upper right. EXACT text: よかった…。 . Columns RIGHT to LEFT: よかった…。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
-      "sha256": "735e6aa87ef262416c9f30c9e4a7a043693343a384d238f5711eb1f36901cb3e",
+      "prompt": "Edit ONLY lower-panel Ren's white speech balloon/lettering and its tail. Preserve exact spoken よかった…。 once, UPRIGHT bold glyphs about65px tall on1024 width, large enough for360px phone. Tail must connect down to REN'S MOUTH at left, not hair/forehead or Mira. Make soft wavering breathless outline, no thought dots. Top hands panel and ふぅ… unchanged; all faces, hands, costumes, cup and background unchanged. No other text.",
+      "sha256": "d93d5d1194efe2613f75026e7e72c82ac18c74a18b0f92eebd98b1cf57be8da9",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png"
+        "examples/zero-break/episode-02/art/15-exhale.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "735e6aa87ef262416c9f30c9e4a7a043693343a384d238f5711eb1f36901cb3e",
       "widthPercent": 100,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "布の服へ戻り素手が震える",
+          "view": "布の服へ戻り素手が震える",
+          "frame": "row 1; full-width panel",
+          "voice": "無言"
+        },
+        {
+          "beat": "生還を確かめて息を吐くレン、ミラが水の杯を差し出す",
+          "view": "生還を確かめて息を吐くレン、ミラが水の杯を差し出す",
+          "frame": "row 2; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
+          "line": {
+            "speaker": "Ren",
+            "text": "よかった…。",
+            "columns": [
+              "よかった…。"
+            ],
+            "type": "speech"
+          }
+        }
+      ],
+      "sounds": [
+        "ふぅ…"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-exhale.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "direction": "Upper shallow BARE trembling hands resting at safe ledge; lower large exhausted UNARMORED Ren seated, exact relieved line and Mira offering cup, no romantic extra touch. Family safe in background.",
+        "observedPanelBeats": [
+          "布の服へ戻り素手が震える",
+          "生還を確かめて息を吐くレン、ミラが水の杯を差し出す"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "e02-responsibility",
-      "file": "v6-responsibility-paper.png",
+      "file": "remake-e02-responsibility.png",
       "shape": "bleed",
       "pause": 170,
       "widthPercent": 100,
@@ -583,10 +1156,10 @@
       ],
       "panels": [
         {
-          "beat": "The reader receives one part of the explanation, before a response.",
-          "view": "ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.",
-          "frame": "right-aligned90% width, medium framed speaker close-up",
-          "voice": "firm composed blue-grey capsule",
+          "beat": "ミラが請求書を手に責任を引き受ける",
+          "view": "ミラが請求書を手に責任を引き受ける",
+          "frame": "row 1; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
           "line": {
             "speaker": "Mira",
             "text": "王家の責任です。",
@@ -594,16 +1167,22 @@
           }
         },
         {
-          "beat": "The listener or the relevant object holds the same scene while the words settle.",
-          "view": "ONLY Ren tired eyes look up at Mira, surprised she accepts responsibility. Rescued family stays safely offscreen.",
-          "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+          "beat": "右：王家の指輪と請求書",
+          "view": "右：王家の指輪と請求書",
+          "frame": "row 2; horizontal row, right-to-left position 1/2",
           "voice": "無言"
         },
         {
-          "beat": "The reader receives one part of the explanation, before a response.",
-          "view": "ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.",
-          "frame": "full-width LARGE borderless emotional close-up",
-          "voice": "firm composed blue-grey capsule",
+          "beat": "左：レンの目元",
+          "view": "左：レンの目元",
+          "frame": "row 2; horizontal row, right-to-left position 2/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "一人に負わせないとミラが続ける",
+          "view": "一人に負わせないとミラが続ける",
+          "frame": "row 3; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
           "line": {
             "speaker": "Mira",
             "text": "あなた一人に払わせません。",
@@ -615,31 +1194,49 @@
       "added_context_dialogue": false,
       "status": "generated",
       "generated": true,
-      "prompt": "Edit ONLY the paper invoice surfaces in the FIRST and THIRD panels of this existing vertical manga strip. Preserve the entire image size, every panel position, faces, hands, clothes, background, Japanese balloon text and balloon shape exactly. Keep the invoice parchment outline, royal blue-and-gold crest, decorative border and abstract horizontal/table ruling. Remove ALL tiny pseudo-English words, fabricated numbers, totals, and fake legible text from both copies of this same invoice. Replace these tiny text marks with sparse neutral nonlinguistic short strokes or plain empty ruled fields, so no invented monetary amount is asserted. The exact Japanese dialogue 王家の責任です。 and あなた一人に払わせません。 stays entirely untouched. No other edits.",
+      "prompt": "Edit ONLY TWO Mira speech balloons and lettering in this comic. Phone-readable actual glyph height60-65px on1024-wide canvas. First upper line exact 王家の責任です。 in TWO upright columns RIGHT 王家の / LEFT 責任です。 . Enlarge first balloon into empty space without hiding any face. Second lower line exact あなた一人に払わせません。 in FOUR upright columns RIGHT to LEFT あなた / 一人に / 払わせ / ません。 . Widen lower balloon as needed, preserve Mira eyes/nose/mouth and paper/hands, her composed soft thin outline. Every spoken tail ends at Mira MOUTH, not forehead or Ren. Remove prior text completely, no duplicate or invented letters. Preserve all three rows, horizontal ring/paper vs Ren-eye row, パサ… once, all art/clothes/geography.",
       "references": [
-        "examples/zero-break/episode-02/art/v6-responsibility.png"
+        "examples/zero-break/episode-02/art/v6-responsibility-paper.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
-      "sha256": "f0720dd0f4a50f5b52bbbe0de1ca3a5c89174cf7263bc2b233313e5c2b7805d2",
-      "provenance": "context-dialogue-v6",
+      "sha256": "88cbf57ab70ccdf5ed9fc3f30214b710dd2c7bd4ef3a0db9c89507cc2941bdf1",
+      "provenance": "webtoon skill full scene recomposition",
       "replaces": [
         "responsibility"
       ],
-      "visual_review": {
-        "status": "passed_native_image_review",
-        "source_sha256": "f0720dd0f4a50f5b52bbbe0de1ca3a5c89174cf7263bc2b233313e5c2b7805d2",
-        "chapter_validation": "../../../episode-02/validation.json",
-        "checks": [
-          "exact lettering and speakers",
-          "faces, hands, costumes, props",
-          "cause and effect, prior state, no premature reveals"
+      "visual_review": "passed",
+      "sounds": [
+        "パサ…"
+      ],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-e02-responsibility.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4
+          ]
+        ],
+        "direction": "Top wide firm Mira holds SAME invoice and FIRST line; middle row RIGHT her hand with royal ring on paper / LEFT Ren tired surprised eyes; bottom large Mira speaking SECOND line. No invented paper text or new authority token.",
+        "observedPanelBeats": [
+          "ミラが請求書を手に責任を引き受ける",
+          "右：王家の指輪と請求書",
+          "左：レンの目元",
+          "一人に負わせないとミラが続ける"
         ]
       }
     },
     {
       "id": "cancel",
-      "file": "17-cancel.png",
+      "file": "remake-cancel.png",
       "crop": "wide",
-      "shape": "right",
+      "shape": "bleed",
       "aspect": "1024x768",
       "pause": 120,
       "scene": "Close Mira places royal ring over the invoice in Rook's gloved hands, cancelling the demand by gesture; Ren watches startled, paper unchanged unreadable diagrams. No new text.",
@@ -658,22 +1255,75 @@
       "state": "Close Mira places royal ring over the invoice in Rook's gloved hands, cancelling the demand by gesture; Ren watches startled, paper unchanged unreadable diagrams. No new text.",
       "pacing": "understanding / recovery",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Close Mira places royal ring over the invoice in Rook's gloved hands, cancelling the demand by gesture; Ren watches startled, paper unchanged unreadable diagrams. No new text.\n\nBalloon 1: speech, Rook, upper right. EXACT text: …承知しました。 . Columns RIGHT to LEFT: …承知 / しました。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
-      "sha256": "29aee16eecc6add85b9f073202139dba24fc664adbf5489e30322e7eed71720a",
+      "prompt": "Edit ONLY Rook's lower-panel speech balloon and lettering. Exact text …承知しました。 once, upright vertical columns RIGHT …承知 / LEFT しました。 . Actual glyph height60-65px on1024 width for a360px phone. Enlarge balloon into empty background, keep ALL faces/hands/ring/paper visible. Tail continuously points at ROOK'S MOUTH on right. Calm ordinary oval, not thought dots. Preserve top horizontal reaction/ring row, lower shared scene, トン once, original art and all identities.",
+      "sha256": "a180321831428ee6d38335e1c9a37a6de8a7b7c5ef441be57f589e4b3bd1efd1",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png"
+        "examples/zero-break/episode-02/art/17-cancel.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "29aee16eecc6add85b9f073202139dba24fc664adbf5489e30322e7eed71720a",
       "widthPercent": 100,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "右：ルークの黒手袋の紙へ王家の指輪を置く",
+          "view": "右：ルークの黒手袋の紙へ王家の指輪を置く",
+          "frame": "row 1; horizontal row, right-to-left position 1/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "左：ルークが確認する目",
+          "view": "左：ルークが確認する目",
+          "frame": "row 1; horizontal row, right-to-left position 2/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "ルークがミラの責任の引受けを受け入れる",
+          "view": "ルークがミラの責任の引受けを受け入れる",
+          "frame": "row 2; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
+          "line": {
+            "speaker": "Rook",
+            "text": "…承知しました。",
+            "columns": [
+              "…承知",
+              "しました。"
+            ],
+            "type": "speech"
+          }
+        }
+      ],
+      "sounds": [
+        "トン"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-cancel.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1,
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "direction": "Short row RIGHT Mira royal ring pressed against invoice in Rook black gloves / LEFT Rook eyes hesitate; lower medium Rook face accepts with exact line. Same unreadable paper, no invented stamp words.",
+        "observedPanelBeats": [
+          "右：ルークの黒手袋の紙へ王家の指輪を置く",
+          "左：ルークが確認する目",
+          "ルークがミラの責任の引受けを受け入れる"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "turn-fragment",
-      "file": "18-turn-fragment.png",
+      "file": "remake-turn-fragment.png",
       "crop": "wide",
-      "shape": "left",
+      "shape": "bleed",
       "aspect": "1024x768",
       "pause": 680,
       "scene": "Mira turns over the guardian fragment already found in episode1; its outer crown crest turns away; backside still hidden from camera. Ren leans closer, curiosity replaces relief. No workshop number visible yet.",
@@ -682,23 +1332,48 @@
       "state": "Mira turns over the guardian fragment already found in episode1; its outer crown crest turns away; backside still hidden from camera. Ren leans closer, curiosity replaces relief. No workshop number visible yet.",
       "pacing": "wait for hidden information",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Mira turns over the guardian fragment already found in episode1; its outer crown crest turns away; backside still hidden from camera. Ren leans closer, curiosity replaces relief. No workshop number visible yet.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.",
-      "sha256": "a50e5bc5e8ddd3ff6c77f0d5525f22a12d8a916b4c943dbc740519cdeed89530",
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Mira turns over the guardian fragment already found in episode1; its outer crown crest turns away; backside still hidden from camera. Ren leans closer, curiosity replaces relief. No workshop number visible yet.\nExact layout and camera: A single quiet close-up: Mira fingers begin turning the SAME guardian core shard. Outer crown side turns away, REVERSE face and workshop inscription COMPLETELY HIDDEN until next image. No label or lettering on hidden side.\nExact speech in chronological order: []\nExact effects (each once, associated with physical cause): [\"くる…\"]\nExact existing visible prop text: []. No other text.\n",
+      "sha256": "f378ba7e019bfa2421d1d79bec88281907a534414a000adbd2f600e6a97edd9f",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png",
-        "../v5/art/06-giant.png"
+        "examples/zero-break/episode-02/art/18-turn-fragment.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "a50e5bc5e8ddd3ff6c77f0d5525f22a12d8a916b4c943dbc740519cdeed89530",
-      "widthPercent": 84,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "ミラが同じ破片を回し始めるが裏面の文字と王冠は見えない",
+          "view": "ミラが同じ破片を回し始めるが裏面の文字と王冠は見えない",
+          "frame": "row 1; full-width panel",
+          "voice": "無言"
+        }
+      ],
+      "sounds": [
+        "くる…"
+      ],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-turn-fragment.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ]
+        ],
+        "direction": "A single quiet close-up: Mira fingers begin turning the SAME guardian core shard. Outer crown side turns away, REVERSE face and workshop inscription COMPLETELY HIDDEN until next image. No label or lettering on hidden side.",
+        "observedPanelBeats": [
+          "ミラが同じ破片を回し始めるが裏面の文字と王冠は見えない"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "workshop-number",
-      "file": "19-workshop-number.png",
+      "file": "remake-workshop-number.png",
       "crop": "portrait",
-      "shape": "left",
+      "shape": "bleed",
       "aspect": "1024x1280",
       "pause": 170,
       "scene": "FIRST close reveal backside guardian fragment with etched small crown plus exact horizontal plate text 王室工房　七番 . Mira's fingertips and surprised eyes behind. Only this label on metal, not a speech balloon.",
@@ -707,22 +1382,44 @@
       "state": "FIRST close reveal backside guardian fragment with etched small crown plus exact horizontal plate text 王室工房　七番 . Mira's fingertips and surprised eyes behind. Only this label on metal, not a speech balloon.",
       "pacing": "understanding / recovery",
       "hidden": "Do not reveal the event of the next shot in this image.",
-      "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x1280. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: FIRST close reveal backside guardian fragment with etched small crown plus exact horizontal plate text 王室工房　七番 . Mira's fingertips and surprised eyes behind. Only this label on metal, not a speech balloon.\n\nNo speech/thought balloons. No lettering except the exact effect or prop inscription explicitly specified in the scene.",
-      "sha256": "912e987008359df73c20c645c6f87c3bb3e08a6f193d785c038f7c624303d697",
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: FIRST close reveal backside guardian fragment with etched small crown plus exact horizontal plate text 王室工房　七番 . Mira's fingertips and surprised eyes behind. Only this label on metal, not a speech balloon.\nExact layout and camera: One large macro reveal of SAME fragment REVERSE face with exact plate text 王室工房　七番, upright clear horizontal inscription, small existing crown. Fingers and Mira surprised eyes at edge. Do not name later enemy. \nExact speech in chronological order: []\nExact effects (each once, associated with physical cause): []\nExact existing visible prop text: []. No other text.\n",
+      "sha256": "30666d7e8f0b7be707d9ac29db7ad1df119fc1b4354abb286f39d4e1ad60bb0f",
       "references": [
-        "../v5/art/a14-rejection.png",
-        "../v5/art/16-relief.png",
-        "../v5/art/14-hero.png",
-        "../v5/art/06-giant.png",
-        "art/18-turn-fragment.png"
+        "examples/zero-break/episode-02/art/19-workshop-number.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
       "baseline_sha256": "912e987008359df73c20c645c6f87c3bb3e08a6f193d785c038f7c624303d697",
-      "widthPercent": 96,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "widthPercent": 100,
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "panels": [
+        {
+          "beat": "同じ破片の金属板に王室工房 七番が初めて見える",
+          "view": "同じ破片の金属板に王室工房 七番が初めて見える",
+          "frame": "row 1; full-width panel",
+          "voice": "無言"
+        }
+      ],
+      "sounds": [],
+      "visible_text": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-workshop-number.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ]
+        ],
+        "direction": "One large macro reveal of SAME fragment REVERSE face with exact plate text 王室工房　七番, upright clear horizontal inscription, small existing crown. Fingers and Mira surprised eyes at edge. Do not name later enemy. ",
+        "observedPanelBeats": [
+          "同じ破片の金属板に王室工房 七番が初めて見える"
+        ]
+      },
+      "provenance": "webtoon skill full scene recomposition",
+      "visual_review": "passed"
     },
     {
       "id": "e02-inside-threat",
-      "file": "v6-inside-threat.png",
+      "file": "remake-e02-inside-threat.png",
       "shape": "bleed",
       "pause": 210,
       "widthPercent": 100,
@@ -736,16 +1433,16 @@
       ],
       "panels": [
         {
-          "beat": "Confirm the immediate context without adding a new event.",
-          "view": "Mira holds revealed fragment, Ren stands beside her looking toward royal white towers with sober expression. No enemy identity shown. Show the established spatial relationship, WITHOUT replaying earlier action or later results.",
-          "frame": "full-width wide framed establishing shot",
+          "beat": "同じ場所で破片を調べる二人",
+          "view": "同じ場所で破片を調べる二人",
+          "frame": "row 1; full-width panel",
           "voice": "無言"
         },
         {
-          "beat": "The reader receives one part of the explanation, before a response.",
-          "view": "ONLY Mira concerned face; same single core fragment with REVERSE plate already revealed, Ren offscreen beside her.",
-          "frame": "right-aligned90% width, medium framed speaker close-up",
-          "voice": "quiet serious blue-grey capsule",
+          "beat": "右：ミラが魔物の出所を疑う",
+          "view": "右：ミラが魔物の出所を疑う",
+          "frame": "row 2; horizontal row, right-to-left position 1/2",
+          "voice": "spoken balloon with tail to mouth",
           "line": {
             "speaker": "Mira",
             "text": "これ、外から来た魔物じゃない。",
@@ -753,9 +1450,15 @@
           }
         },
         {
-          "beat": "The listener or the relevant object holds the same scene while the words settle.",
-          "view": "Ren eyes shift from fragment toward royal towers; no new enemy or incident.",
-          "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+          "beat": "左：レンが聞いて考える",
+          "view": "左：レンが聞いて考える",
+          "frame": "row 2; horizontal row, right-to-left position 2/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "白い王宮へ視線が向き、正体はまだ見せない",
+          "view": "白い王宮へ視線が向き、正体はまだ見せない",
+          "frame": "row 3; full-width panel",
           "voice": "無言"
         }
       ],
@@ -763,24 +1466,39 @@
       "added_context_dialogue": false,
       "status": "generated",
       "generated": true,
-      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Mira holds revealed fragment, Ren stands beside her looking toward royal white towers with sober expression. No enemy identity shown.\n\nPanel 1, downward order. Frame: full-width wide framed establishing shot. Reader understands: Confirm the immediate context without adding a new event.. Visible camera subject / offscreen continuity: Mira holds revealed fragment, Ren stands beside her looking toward royal white towers with sober expression. No enemy identity shown. Show the established spatial relationship, WITHOUT replaying earlier action or later results.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 2, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira concerned face; same single core fragment with REVERSE plate already revealed, Ren offscreen beside her.. Voice / balloon: quiet serious blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「これ、外から来た魔物じゃない。」 (render contents only).\nPanel 3, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Ren eyes shift from fragment toward royal towers; no new enemy or incident.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\n",
+      "prompt": "Edit ONLY the speech balloon/lettering in middle RIGHT Mira panel. Exact line これ、外から来た魔物じゃない。 once. UPRIGHT vertical glyphs actual60px tall on1024 width. THREE columns RIGHT これ、外から / MIDDLE 来た魔物じゃ / LEFT ない。 . Use a larger white balloon on far RIGHT inside Mira panel, reflow lettering to fit, never shrink. Her eyes, nose, mouth, hand and single shard remain visible. Tail continuously ends at Mira MOUTH. Preserve large upper shared scene, lower-left Ren reaction, palace ending view, all borders and all art/clothing. No new text or future enemy.",
       "references": [
-        "examples/zero-break/episode-02/art/20-inside-threat.png",
-        "skills/webtoon/references/zero-break/varied-01.png"
+        "examples/zero-break/episode-02/art/v6-inside-threat.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
       ],
-      "sha256": "02f7559c2653bfa1e46a6b435bd99449216a533e6931dae2f1eb3ee7c230aac9",
-      "provenance": "context-dialogue-v6",
+      "sha256": "030a874ca1c51fc02aa4460535bb2815522528ad7f3ac1a26c98973f59d2c652",
+      "provenance": "webtoon skill full scene recomposition",
       "replaces": [
         "inside-threat"
       ],
-      "visual_review": {
-        "status": "passed_native_image_review",
-        "source_sha256": "02f7559c2653bfa1e46a6b435bd99449216a533e6931dae2f1eb3ee7c230aac9",
-        "chapter_validation": "../../../episode-02/validation.json",
-        "checks": [
-          "exact lettering and speakers",
-          "faces, hands, costumes, props",
-          "cause and effect, prior state, no premature reveals"
+      "visual_review": "passed",
+      "sounds": [],
+      "remakeRevisionRecord": "examples/zero-break/production/webtoon-remake/records/e02-e02-inside-threat.json",
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4
+          ]
+        ],
+        "direction": "Upper wide Ren and Mira at same safe ledge with revealed single shard; middle RIGHT 68% Mira concerned speaking face, exact full line / LEFT 28% Ren eyes turn toward towers; bottom narrow borderless distant royal white towers as implication, no enemy face or new incident.",
+        "observedPanelBeats": [
+          "同じ場所で破片を調べる二人",
+          "右：ミラが魔物の出所を疑う",
+          "左：レンが聞いて考える",
+          "白い王宮へ視線が向き、正体はまだ見せない"
         ]
       }
     }
@@ -796,6 +1514,7 @@
     }
   ],
   "status": "complete",
-  "panel_count": 30,
+  "remakeEdition": "webtoon-remake-20261006",
+  "panel_count": 51,
   "baseline": "git:81a4a9a80c9c6782bac7592142750c324a1b42eb:examples/zero-break/production/feedback-v6/baseline/episode-02.json"
 }
