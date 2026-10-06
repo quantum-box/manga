@@ -19,6 +19,7 @@ remake_revisions=0
 remake_panel_delta=0
 for n in range(1,11):
  d=directory(n);m=load(d/'manifest.json');baseline=load_baseline(f'episode-{n:02d}.json')
+ generation=load(d/'generation-log.json')['adopted']
  assert m['version']=='context-dialogue-v6'
  covered=set()
  for s in m['shots']:covered.update(s.get('replaces',[s['id']]))
@@ -55,6 +56,10 @@ for n in range(1,11):
    if r.get('repairBefore'):
     before=r['repairBefore'];assert sha(REPO/before['path'])==before['sha256']
    for ref in r.get('executedRepairReferences',[]):assert sha(REPO/ref['path'])==ref['sha256']
+   adopted_refs=r.get('executedRepairReferences') or ([r['repairBefore']] if r.get('executedRepairPrompt') else r['referenceHashes'])
+   assert s['references']==[ref['path'] for ref in adopted_refs]
+   execution=next(x for x in generation if x['file']==s['file'])
+   assert execution['adoptedReferences']==s['references']
    mobile=r['mobileImageReview']
    assert mobile['status']=='passed' and mobile['widths']==[360,390]
    for artifact in mobile['artifacts']:assert sha(REPO/artifact['path'])==artifact['sha256']

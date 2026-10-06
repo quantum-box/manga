@@ -219,10 +219,16 @@ def build(number):
                 assert digest(REPO/reference['path']) == reference['sha256']
             assert record['nativeFullSizeReview'] == 'passed'
             assert len(record['panels']) == record['actualPanelCount']
+            adopted_references = record.get('executedRepairReferences')
+            if not adopted_references and record.get('executedRepairPrompt'):
+                adopted_references = [record['repairBefore']]
+            adopted_references = adopted_references or record['referenceHashes']
+            for reference in adopted_references:
+                assert digest(REPO/reference['path']) == reference['sha256']
             shot.update(file=record['file'], panels=record['panels'], sounds=record['sounds'],
                         visible_text=record.get('visibleText',before.get('visible_text',[])),
                         prompt=record.get('executedRepairPrompt',record['prompt']), sha256=record['sha256'],
-                        references=[r['path'] for r in record['referenceHashes']],
+                        references=[r['path'] for r in adopted_references],
                         remakeRevisionRecord=str(record_path.relative_to(REPO)),
                         layout=record['layout'], widthPercent=100, shape='bleed',
                         provenance='webtoon skill full scene recomposition',
@@ -278,6 +284,8 @@ def build(number):
             'references':shot.get('references',[]),
             'provenance_record':archive,
         }
+        if shot.get('remakeRevisionRecord'):
+            record['adoptedReferences'] = shot['references']
         execution.append(record)
     dump(old_log,{'edition':manifest.get('remakeEdition',manifest['version']),'adopted':execution,
                  'prior_generation_record':archive})
@@ -295,7 +303,7 @@ def build(number):
         prompt_lines += [f'その後のコマ割り改稿：{layout_count}素材を横並び・斜め枠へ再構成。読順・元画像・指示は production/episode-{number:02d}-layout に保持。','']
     for r in execution:
         prompt_lines += ['## '+r['file'],'',r['method'],'',
-                         '参照：'+json.dumps(r.get('references',[]),ensure_ascii=False),'']
+                         '参照：'+json.dumps(r.get('adoptedReferences',r.get('references',[])),ensure_ascii=False),'']
         if r.get('originalPrompt'):prompt_lines += ['元の生成指示：','','```text',r['originalPrompt'],'```','']
         prompt_lines += ['採用時の指示：','','```text',r.get('executedRepairPrompt',r.get('prompt','')),'```','']
     (directory(number)/'PROMPTS.md').write_text('\n'.join(line.rstrip() for line in '\n'.join(prompt_lines).splitlines())+'\n')

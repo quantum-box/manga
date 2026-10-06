@@ -8,7 +8,7 @@
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-09/art/01-workshop-return.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e09-workshop-return-before-correction.png"]
 
 採用時の指示：
 
@@ -254,7 +254,7 @@ FINAL PHONE OVERRIDE: 80-90px ACTUAL Japanese glyph height on1024px width, 2-3 v
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-09/art/v6-isolate-circuit.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e09-e09-isolate-circuit-before-correction.png"]
 
 採用時の指示：
 
@@ -284,7 +284,7 @@ Rebuild EXACT 4 panels, rows [1],[2,3],[4], right-first. TOP Noa speaks vertical
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-09/art/11-give-power.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e09-give-power-before-correction.png"]
 
 採用時の指示：
 
@@ -341,7 +341,7 @@ FINAL PHONE OVERRIDE: 80-90px ACTUAL Japanese glyph height on1024px width, 2-3 v
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-09/art/13-breath-cue.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e09-breath-cue-before-correction.png"]
 
 採用時の指示：
 
@@ -371,7 +371,7 @@ Rebuild EXACT 3 frames [1],[2,3]. SAME RECTANGULAR BRASS BOX with CYAN vertical 
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-09/art/v6-breath-returns.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e09-e09-breath-returns-before-correction.png"]
 
 採用時の指示：
 
@@ -401,7 +401,7 @@ Rebuild into EXACT FOUR frames with true white gutters [1],[2,3],[4], NOT a tall
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-09/art/15-small-line.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-09/art/remake-small-line.png", "examples/zero-break/episode-09/art/remake-give-power.png"]
 
 採用時の指示：
 
@@ -430,7 +430,7 @@ FINAL CONTINUITY CORRECTION: Keep EXACT THREE panels [1],[2,3]. Top paper record
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-09/art/16-signal.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e09-signal-before-correction.png"]
 
 採用時の指示：
 
@@ -460,7 +460,7 @@ Rebuild EXACT THREE frames [1],[2,3], no repeated redundant map frames. TOP Noa 
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-09/art/17-under-palace.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e09-under-palace-before-correction.png"]
 
 採用時の指示：
 

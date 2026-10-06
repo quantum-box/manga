@@ -8,7 +8,7 @@
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-07/art/v6-girl-steps.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e07-e07-girl-steps-before-correction.png"]
 
 採用時の指示：
 
@@ -20,7 +20,7 @@ Edit ONLY the attached comic. Preserve exact anime rendering, 1024 px width, fra
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-07/art/02-hand-stops.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e07-hand-stops-before-correction.png"]
 
 採用時の指示：
 
@@ -58,7 +58,7 @@ Lettering: NO ruled separator lines inside speech balloons. Actual Japanese upri
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-07/art/04-princess-refuses.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e07-princess-refuses-before-correction.png"]
 
 採用時の指示：
 
@@ -70,7 +70,7 @@ Edit ONLY the attached comic. Preserve exact anime rendering, 1024 px width, fra
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-07/art/v6-suspension.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e07-e07-suspension-before-correction.png"]
 
 採用時の指示：
 
@@ -186,7 +186,7 @@ Lettering: NO ruled separator lines inside speech balloons. Actual Japanese upri
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-07/art/10-ren-holds.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e07-ren-holds-before-correction.png"]
 
 採用時の指示：
 
@@ -250,7 +250,7 @@ Lettering: NO ruled separator lines inside speech balloons. Actual Japanese upri
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-07/art/13-escape.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e07-escape-before-correction.png"]
 
 採用時の指示：
 
@@ -366,7 +366,7 @@ Lettering: NO ruled separator lines inside speech balloons. Actual Japanese upri
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-07/art/18-invitation.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e07-invitation-before-correction.png"]
 
 採用時の指示：
 

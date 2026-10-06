@@ -138,7 +138,7 @@ PHONE READABILITY OVERRIDE: all spoken/thought Japanese glyphs must be 80-90px A
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-06/art/06-security-wakes.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e06-security-wakes-before-correction.png"]
 
 採用時の指示：
 
@@ -150,7 +150,7 @@ Edit this finished Japanese colour Webtoon. Mandatory story/continuity correctio
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-06/art/07-wrong-target.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e06-wrong-target-before-correction.png"]
 
 採用時の指示：
 
@@ -162,7 +162,7 @@ Edit this Japanese full-colour Webtoon artwork, preserve characters and existing
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-06/art/08-carriage-falls.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e06-carriage-falls-before-correction.png"]
 
 採用時の指示：
 
@@ -174,7 +174,7 @@ Edit this finished Japanese colour Webtoon. Mandatory story/continuity correctio
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-06/art/09-change-choice.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e06-change-choice-before-correction.png"]
 
 採用時の指示：
 
@@ -212,7 +212,7 @@ PHONE READABILITY OVERRIDE: all spoken/thought Japanese glyphs must be 80-90px A
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-06/art/11-armor-peeling.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e06-armor-peeling-before-correction.png"]
 
 採用時の指示：
 
@@ -224,7 +224,7 @@ Edit this Japanese full-colour Webtoon artwork, preserve characters and existing
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-06/art/v6-ladder.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e06-e06-ladder-before-correction.png"]
 
 採用時の指示：
 
@@ -236,7 +236,7 @@ Edit this Japanese full-colour Webtoon artwork, preserve characters and existing
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-06/art/13-help-next.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e06-help-next-before-correction.png"]
 
 採用時の指示：
 
@@ -248,7 +248,7 @@ Edit this finished Japanese colour Webtoon. Mandatory story/continuity correctio
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-06/art/14-last-hand.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e06-last-hand-before-correction.png"]
 
 採用時の指示：
 
@@ -260,7 +260,7 @@ Edit this finished Japanese colour Webtoon. Mandatory story/continuity correctio
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-06/art/15-all-seventeen.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e06-all-seventeen-before-correction.png"]
 
 採用時の指示：
 
@@ -272,7 +272,7 @@ Edit ONLY the attached comic. Preserve exact anime rendering, 1024 px width, fra
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-06/art/v6-release.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e06-e06-release-before-correction.png"]
 
 採用時の指示：
 

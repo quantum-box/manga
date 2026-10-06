@@ -8,7 +8,7 @@
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/01-morning.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e03-morning-before-correction.png"]
 
 採用時の指示：
 
@@ -20,7 +20,7 @@ Edit this existing Zero Break morning Webtoon strip. Remove the entire bottom pa
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/v6-challenge.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-03/art/remake-e03-challenge.png"]
 
 採用時の指示：
 
@@ -59,7 +59,7 @@ Episode3 continuity: the same rescued mother has brown hair, brown shawl over wh
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/v6-no-answer.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-03/art/remake-e03-no-answer.png"]
 
 採用時の指示：
 
@@ -71,7 +71,7 @@ Edit this existing Webtoon strip specifically for 360px PHONE reading: the curre
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/05-laughter.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e03-laughter-before-correction.png"]
 
 採用時の指示：
 
@@ -110,7 +110,7 @@ Episode3 continuity: the same rescued mother has brown hair, brown shawl over wh
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/07-axle.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e03-axle-before-correction.png"]
 
 採用時の指示：
 
@@ -176,7 +176,7 @@ Episode3 continuity: the same rescued mother has brown hair, brown shawl over wh
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/10-shield-arm.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e03-shield-arm-before-correction.png"]
 
 採用時の指示：
 
@@ -188,7 +188,7 @@ Redraw this strip as exactly THREE panels. Upper short horizontal row read RIGHT
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/11-stop.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e03-stop-before-correction.png"]
 
 採用時の指示：
 
@@ -227,7 +227,7 @@ Episode3 continuity: the same rescued mother has brown hair, brown shawl over wh
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/13-reunion.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e03-reunion-before-correction.png"]
 
 採用時の指示：
 
@@ -239,7 +239,7 @@ Correct the upper panel of this two-panel reunion strip: Ren's armor must dissol
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/v6-rule.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-03/art/remake-e03-rule.png"]
 
 採用時の指示：
 
@@ -251,7 +251,7 @@ Edit this existing Webtoon strip specifically for 360px PHONE reading: the curre
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/v6-permit.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-03/art/remake-e03-permit.png"]
 
 採用時の指示：
 
@@ -290,7 +290,7 @@ Episode3 continuity: the same rescued mother has brown hair, brown shawl over wh
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/17-monitor.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e03-monitor-before-correction.png"]
 
 採用時の指示：
 
@@ -302,7 +302,7 @@ Redraw this ONE-panel dark remote monitor reveal. Cyan translucent monitor recor
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-03/art/18-watcher.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e03-watcher-before-correction.png"]
 
 採用時の指示：
 

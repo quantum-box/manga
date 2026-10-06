@@ -83,7 +83,7 @@ Exact visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-04/art/v6-noa.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-04/art/remake-e04-noa.png"]
 
 採用時の指示：
 
@@ -145,7 +145,7 @@ Exact visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-04/art/07-fault.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e04-fault-before-correction.png"]
 
 採用時の指示：
 
@@ -157,7 +157,7 @@ Edit this existing Webtoon image with small continuity corrections. Preserve its
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-04/art/08-notice.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e04-notice-before-correction.png"]
 
 採用時の指示：
 
@@ -194,7 +194,7 @@ Exact visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-04/art/10-valve-search.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e04-valve-search-before-correction.png"]
 
 採用時の指示：
 
@@ -206,7 +206,7 @@ Edit this existing Webtoon image with small continuity corrections. Preserve its
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-04/art/v6-pipe-map.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-04/art/remake-e04-pipe-map.png"]
 
 採用時の指示：
 
@@ -218,7 +218,7 @@ Edit only the lettering of this current Webtoon for PHONE legibility. Preserve a
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-04/art/12-open-valve.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e04-open-valve-before-correction.png"]
 
 採用時の指示：
 
@@ -280,7 +280,7 @@ Exact visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-04/art/v6-finite.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-04/art/remake-e04-finite.png"]
 
 採用時の指示：
 
@@ -292,7 +292,7 @@ Edit only the lettering of this current Webtoon for PHONE legibility. Preserve a
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-04/art/16-team-sign.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-04/art/remake-team-sign.png"]
 
 採用時の指示：
 

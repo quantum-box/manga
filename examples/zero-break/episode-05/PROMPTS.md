@@ -33,7 +33,7 @@ Exact visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-05/art/02-shoes.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-05/art/remake-shoes.png"]
 
 採用時の指示：
 
@@ -45,7 +45,7 @@ Edit only Noa's own foot in UPPER panel of this existing3-panel Webtoon. At uppe
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-05/art/v6-not-moving.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e05-e05-not-moving-before-correction.png"]
 
 採用時の指示：
 
@@ -107,7 +107,7 @@ Exact visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-05/art/06-old-map.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e05-old-map-before-correction.png"]
 
 採用時の指示：
 
@@ -119,7 +119,7 @@ Preserve every panel, prop, action, character, word and sound in this Webtoon. P
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-05/art/07-entry.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e05-entry-before-correction.png"]
 
 採用時の指示：
 
@@ -131,7 +131,7 @@ Recompose this descent scene into exactly5 clearly ordered genuine frames at1024
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-05/art/08-voice.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e05-voice-before-correction.png"]
 
 採用時の指示：
 
@@ -168,7 +168,7 @@ Exact visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-05/art/10-old-man.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e05-old-man-before-correction.png"]
 
 採用時の指示：
 
@@ -230,7 +230,7 @@ Exact visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-05/art/13-jam-signal.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e05-jam-signal-before-correction.png"]
 
 採用時の指示：
 
@@ -242,7 +242,7 @@ Edit ONLY panel placements in this existing6-panel Webtoon. Two horizontal rows 
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-05/art/14-escape.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e05-escape-before-correction.png"]
 
 採用時の指示：
 
@@ -254,7 +254,7 @@ Recompose exactly4 frames1/[2,3]/4: upper full-width dynamic Ren unarmored carry
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-05/art/15-record.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e05-record-before-correction.png"]
 
 採用時の指示：
 
@@ -266,7 +266,7 @@ Edit only one duplicated sound in this existing3-panel Webtoon. Keep ONE サラ�
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-05/art/v6-vow.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e05-e05-vow-before-correction.png"]
 
 採用時の指示：
 

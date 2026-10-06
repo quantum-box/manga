@@ -242,7 +242,7 @@ Phone lettering override: NO ruled separator lines inside speech balloons. Actua
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-08/art/10-cut-chain.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e08-cut-chain-before-correction.png"]
 
 採用時の指示：
 
@@ -280,7 +280,7 @@ Phone lettering override: NO ruled separator lines inside speech balloons. Actua
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-08/art/12-hold-exit.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e08-hold-exit-before-correction.png"]
 
 採用時の指示：
 
@@ -318,7 +318,7 @@ Phone lettering override: NO ruled separator lines inside speech balloons. Actua
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-08/art/v6-their-evidence.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e08-e08-their-evidence-before-correction.png"]
 
 採用時の指示：
 
@@ -356,7 +356,7 @@ Phone lettering override: NO ruled separator lines inside speech balloons. Actua
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-08/art/16-old-inscription-cue.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e08-old-inscription-cue-before-correction.png"]
 
 採用時の指示：
 
@@ -394,7 +394,7 @@ Phone lettering override: NO ruled separator lines inside speech balloons. Actua
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-08/art/v6-reject-selection.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e08-e08-reject-selection-before-correction.png"]
 
 採用時の指示：
 

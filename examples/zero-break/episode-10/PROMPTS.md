@@ -8,7 +8,7 @@
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-10/art/01-festival.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e10-festival-before-correction.png"]
 
 採用時の指示：
 
@@ -254,7 +254,7 @@ FINAL PHONE OVERRIDE: 80-90px ACTUAL Japanese glyph height on1024px width, 2-3 v
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-10/art/v6-noa-copy.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e10-e10-noa-copy-before-correction.png"]
 
 採用時の指示：
 
@@ -392,7 +392,7 @@ FINAL PHONE OVERRIDE: 80-90px ACTUAL Japanese glyph height on1024px width, 2-3 v
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-10/art/15-first-clap.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e10-first-clap-before-correction.png"]
 
 採用時の指示：
 

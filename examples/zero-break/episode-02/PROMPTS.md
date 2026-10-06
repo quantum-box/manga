@@ -8,7 +8,7 @@
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-02/art/01-hunger.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e02-hunger-before-correction.png"]
 
 採用時の指示：
 
@@ -41,7 +41,7 @@ Exact existing visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-02/art/v6-support.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-02/art/remake-e02-support.png"]
 
 採用時の指示：
 
@@ -158,7 +158,7 @@ Exact existing visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-02/art/09-set-down.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e02-set-down-before-correction.png"]
 
 採用時の指示：
 
@@ -191,7 +191,7 @@ Exact existing visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-02/art/v6-hold.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-02/art/remake-e02-hold.png"]
 
 採用時の指示：
 
@@ -203,7 +203,7 @@ Edit ONLY BOTH Ren speech balloons and their lettering. All art and panel border
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-02/art/12-rope.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/episode-02/art/remake-rope.png"]
 
 採用時の指示：
 
@@ -257,7 +257,7 @@ Exact existing visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-02/art/15-exhale.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e02-exhale-before-correction.png"]
 
 採用時の指示：
 
@@ -269,7 +269,7 @@ Edit ONLY lower-panel Ren's white speech balloon/lettering and its tail. Preserv
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-02/art/v6-responsibility-paper.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e02-e02-responsibility-before-correction.png"]
 
 採用時の指示：
 
@@ -281,7 +281,7 @@ Edit ONLY TWO Mira speech balloons and lettering in this comic. Phone-readable a
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-02/art/17-cancel.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e02-cancel-before-correction.png"]
 
 採用時の指示：
 
@@ -335,7 +335,7 @@ Exact existing visible prop text: []. No other text.
 
 built-in image_gen
 
-参照：["examples/zero-break/episode-02/art/v6-inside-threat.png", "skills/webtoon/references/zero-break/layout-sequence-390.png"]
+参照：["examples/zero-break/production/webtoon-remake/references/e02-e02-inside-threat-before-correction.png"]
 
 採用時の指示：
 
