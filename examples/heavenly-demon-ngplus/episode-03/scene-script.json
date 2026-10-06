@@ -87,6 +87,53 @@
           "text": "それなら、俺が止める。"
         }
       ]
+    },
+    {
+      "number": 4,
+      "name": "声へ返事をする",
+      "purpose": "宝を取る喜びから人の救助へ、音を聞き分けて自分で選ぶ",
+      "panels": [
+        {
+          "art": "Yun at the treasury exit pauses, ONE black sword safely SHEATHED at left hip. Treasure remains behind him. He turns toward a muffled sound from the lower passage. No prisoner visible.",
+          "speaker": "ハン・ユン",
+          "text": "……今の、咳か？"
+        },
+        {
+          "art": "Small close-up free left fingers set ONE ordinary silver ingot, NOT the acquired dark-blue star iron down on a treasury shelf. No duplicate carried ingots. Calm decision, not tossing valuables.",
+          "speaker": "ハン・ユン",
+          "text": "持つのは、あとでいい。",
+          "thought": true
+        },
+        {
+          "art": "Yun kneels outside a CLOSED wooden cellar door, lowers his voice. He does NOT open it yet; no smith or bound hands visible.",
+          "speaker": "ハン・ユン",
+          "text": "聞こえる？　助けに来た。"
+        },
+        {
+          "art": "Yun listens with his palm on the CLOSED door. A faint knock answers; his tense shoulders ease. No prisoner, chains or new person shown yet.",
+          "speaker": "ハン・ユン",
+          "text": "返事だ。まだ、生きてる。",
+          "thought": true,
+          "sound": "コツ、コツ"
+        }
+      ],
+      "asset": "art/04-pacing.png",
+      "gap": 240
+    }
+  ],
+  "revision": "pacing-expansion-2026-10-06",
+  "readingOrder": [
+    {
+      "scene": 1
+    },
+    {
+      "scene": 2
+    },
+    {
+      "scene": 4
+    },
+    {
+      "scene": 3
     }
   ]
 }

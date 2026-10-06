@@ -44,6 +44,31 @@ Vignette 4: Close So Rin sees alternate fine groove on BACK of gate pedestal, to
 Exact speech by ソ・リン: 「鍵穴に、もう一本の溝。」
 ~~~
 
+## 場面4 条件を疑う
+
+原本 /Users/takanorifukuyama/.codex/generated_images/01a10f9d-3faf-7872-825d-1d13d57bf7c3/exec-c2245765-cbec-47f3-be3d-2273054a2e44.png
+
+採用 art/04-pacing.png
+
+~~~text
+Create finished artwork for the original Japanese vertical-scroll Webtoon 天魔、二周目。 The provided local artwork defines existing character identity, clothing, palette and anime cel shading ONLY. Do not reproduce its events or panel layout. References are for identity and style, NOT their layout or events. Hero Han Yun (ハン・ユン) is a 20-year-old student in a young martial disciple's body: tousled BLACK hair with a short low ponytail, TEAL eyes, pale skin, off-white training robes with CHARCOAL lapel and a DARK RED sash, black shoes. One subtle bruise on his anatomical LEFT cheek. Kind, uncertain, observant, never a smug sadistic grin. His ability remains LV.999, no weakening or training montage. Heavenly demon sword is ONE straight black blade with a ROUND engraved GOLD guard, black wrapped grip, dark red tassel. No extra swords on the hero. Chinese martial-fantasy setting, not Japanese samurai. Recurring characters when specified: sect master Sei Kou (セイ・コウ), dignified man 50, salt-and-pepper high topknot, navy robe with ivory trim; smith So Rin (ソ・リン), young adult woman 20, short black bob, amber eyes, small bronze hairclip, ivory sleeves, teal work vest, dark apron, practical expression; Hakujin (白燼), man 30, long WHITE hair tied low, gold eyes, slate-blue robes, dark navy belt; alliance chief Go Tensaku (呉天策), man 55, sleek black hair with gray temples, narrow long moustache, plum robes with gold crane embroidery. Only introduce characters mentioned in this scene. Four consecutive vignettes reading TOP TO BOTTOM, each confined to its own band. ONE tall portrait artwork, intended ratio 1:3, at least 1024x3072 if possible. Vary composition: small close-ups, offset action beats, one large borderless focal view; no equal rectangular grid, no poster or montage of simultaneous events. Soft ivory/white edges. Large readable faces/hands and correct object continuity. Incorporate the speech balloons AND exact JAPANESE text into the artwork. Speech is upright VERTICAL Japanese: characters top-to-bottom, columns RIGHT TO LEFT, reading balloons right-to-left within a vignette. Use ONLY the supplied text; punctuation must be exact; text is large, roughly 55-65px per glyph at 1024px width, generously padded smooth oval white balloons with tails pointing to the named speaker. Avoid covering faces or hands. NO chapter titles, translations, labels, page numbers, extra words, watermark. Short inner thoughts can use small rectangular white captions, also vertical. System notices, when present, are translucent dark navy/CYAN restrained holograms in the hero's field of vision, slightly soft glowing letters, plain Japanese sans serif, not golden ornaments. Do not depict information reserved for later scenes. Panel labels in instructions are not printed.
+Create an ADDITIONAL bridging scene, not a replacement of the reference. The scene states below override generic clothing/dirt and prop states. Episode 9, 条件を疑う. Purpose: 人を殺す条件を拒むだけで終わらず、仲間と根拠を探して次の試行へ進む. Four vignettes exactly, top to bottom:
+
+Vignette 1: Paused gate with bronze disk still in FRONT slot. Yun keeps ONE black sword SHEATHED and turns from the gate to Hakujin. No chief or red interference yet.
+Exact speech in a white smooth balloon with tail to the speaker by ハン・ユン: 帰りたい。でも、斬れない。
+Vertical columns, right to left: 帰りたい。でも / 、斬れない。. Do not print separators, labels or quotation marks.
+Vignette 2: Hakujin, both hands empty and CLEAN right wrist, slowly lowers his head, visibly exhales. Yun stays beside him.
+Exact speech in a white smooth balloon with tail to the speaker by 白燼: ……それで、いいのか。
+Vertical columns, right to left: ……それで、い / いのか。. Do not print separators, labels or quotation marks.
+Vignette 3: So Rin studies the already found narrow BACK groove by lamp light, fingertip near its old scratches. Front bronze disk remains singular. No sword inserted yet.
+Exact speech in a white smooth balloon with tail to the speaker by ソ・リン: この溝、使われてる。
+Vertical columns, right to left: この溝、使われ / てる。. Do not print separators, labels or quotation marks.
+Vignette 4: Yun kneels beside So Rin to compare the fine groove with the map on the stone floor. Hakujin watches, no solution hologram or blade drawn yet.
+Exact speech in a white smooth balloon with tail to the speaker by ハン・ユン: 確かめよう。三人で。
+Vertical columns, right to left: 確かめよう。三 / 人で。. Do not print separators, labels or quotation marks.
+Continuity: Yun now has clean robes after washing at the forge; only faint LEFT cheek bruise. Except episode 6's control mark as expressly required, no bindings reappear. Keep reference character identities, but use stated free-wrist and clean-robe states.
+~~~
+
 ## 場面3 道を切る
 
 原本 /workspace/generated_images/exec-e8cded48-ec03-4b45-b424-391d96e0280b.png

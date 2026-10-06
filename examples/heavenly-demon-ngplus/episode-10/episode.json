@@ -20,11 +20,56 @@
       "width": 724,
       "height": 2172,
       "sha256": "b584e38764cf829cb82e81f4e303f8df61f8718189a56209736185dd8cf3af9c"
+    },
+    {
+      "file": "art/04-pacing.png",
+      "width": 724,
+      "height": 2172,
+      "sha256": "95c8e9d3f8fb747628df66a95c024ff51650bda54d5c833ab164ee2d7ed5a392"
     }
   ],
-  "generatedOriginals": 3,
-  "vignettes": 12,
+  "generatedOriginals": 4,
+  "vignettes": 16,
   "lettering": "vertical Japanese dialogue in image originals",
   "readingTimeMeasured": false,
-  "protectedReveal": null
+  "protectedReveal": null,
+  "readingOrder": [
+    {
+      "scene": 1
+    },
+    {
+      "scene": 2
+    },
+    {
+      "scene": 3,
+      "id": "scene-3-home",
+      "window": [
+        0,
+        796
+      ],
+      "panels": [
+        0,
+        2
+      ]
+    },
+    {
+      "scene": 4,
+      "gap": 320
+    },
+    {
+      "scene": 3,
+      "id": "scene-3-return",
+      "window": [
+        796,
+        2172
+      ],
+      "panels": [
+        2,
+        4
+      ],
+      "gap": 440,
+      "transitionNarration": "翌朝。休んでから、持っていくものを選んだ。\n今度は、助けを待つためではなく、会いに行く。"
+    }
+  ],
+  "revision": "pacing-expansion-2026-10-06"
 }

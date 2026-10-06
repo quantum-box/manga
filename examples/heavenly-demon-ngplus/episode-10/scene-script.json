@@ -88,6 +88,75 @@
           "text": "二周目は、俺が決める。"
         }
       ]
+    },
+    {
+      "number": 4,
+      "name": "戻った日常を確かめる",
+      "purpose": "母への電話の後、部屋で休み、帰還の実感と次に会う意思を育てる",
+      "panels": [
+        {
+          "art": "MODERN student room after his call: Yun still in ivory martial robe charcoal lapel and dark red sash, ONE sword SHEATHED at left hip. He puts smartphone face DOWN beside a closed textbook. Worn cloth tool bag on floor, no magical portal visible.",
+          "speaker": "ハン・ユン",
+          "text": "いつもの、部屋だ。",
+          "thought": true
+        },
+        {
+          "art": "Yun sits at desk, cradles ONE mug with both hands, looks at steam. Same robes and ponytail, subtle LEFT cheek bruise, calm eyes. No extra sword, no modern haircut.",
+          "speaker": "ハン・ユン",
+          "text": "温かい。ちゃんと、分かる。",
+          "thought": true
+        },
+        {
+          "art": "Large quiet view of Yun asleep in desk chair as DAWN light fills his room. Same robe, sheathed sword safely beside chair, tool bag near feet. No dialogue, no text anywhere."
+        },
+        {
+          "art": "Morning: rested Yun places a small tea packet and bandages on a white cloth, preparing the SINGLE white bundle used in the next scene. ONE sword sheathed at left hip, no portal yet.",
+          "speaker": "ハン・ユン",
+          "text": "今度は、会いに行こう。",
+          "thought": true
+        }
+      ],
+      "asset": "art/04-pacing.png",
+      "gap": 240
+    }
+  ],
+  "revision": "pacing-expansion-2026-10-06",
+  "readingOrder": [
+    {
+      "scene": 1
+    },
+    {
+      "scene": 2
+    },
+    {
+      "scene": 3,
+      "id": "scene-3-home",
+      "window": [
+        0,
+        796
+      ],
+      "panels": [
+        0,
+        2
+      ]
+    },
+    {
+      "scene": 4,
+      "gap": 320
+    },
+    {
+      "scene": 3,
+      "id": "scene-3-return",
+      "window": [
+        796,
+        2172
+      ],
+      "panels": [
+        2,
+        4
+      ],
+      "gap": 440,
+      "transitionNarration": "翌朝。休んでから、持っていくものを選んだ。\n今度は、助けを待つためではなく、会いに行く。"
     }
   ]
 }

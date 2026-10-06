@@ -2,11 +2,13 @@
 
 この話で得るものは鍛冶師の仲間と天魔剣の共鳴。
 
-各場面4コマ、全12コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
 
-## 場面1 人の値札
+## 読書区間1 人の値札
 
 間の役割　ゲームの報酬を人間として捉え直す
+
+表示原画　art/01.png、範囲 [0, 2170]。
 
 密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
 
@@ -34,9 +36,11 @@
 
 ハン・ユン　代金は払う。契約は捨てる。
 
-## 場面2 自由な手
+## 読書区間2 自由な手
 
 間の役割　強さを壊す力から守る力へ使う
+
+表示原画　art/02.png、範囲 [0, 2172]。
 
 密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
 
@@ -64,31 +68,68 @@
 
 ソ・リン　なら、あんたの剣を直す。
 
-## 場面3 剣と懸賞
+## 読書区間3 自分で選ぶ仕事
 
-間の役割　救った相手の仕事で報酬を得て大会へつなぐ
+間の役割　自由になった直後に働かせず、安心と本人の意思を会話で確かめる
+
+表示原画　art/04-pacing.png、範囲 [0, 2172]。
 
 密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
 
+ナレーション　鍛冶場へ戻り、服の汚れを洗った。
+今は、仕事を急がなくていい。
+
 ### コマ9
+
+作画　Quiet forge before repair. So Rin sits on a low stool, looks at her bare FREE wrists. No chains. Yun with SHEATHED black sword stands a respectful step away. Her plain work sleeves unchanged.
+
+ハン・ユン　先に、休まなくていい？
+
+### コマ10
+
+作画　So Rin reaches toward a familiar small hammer lying on workbench, then pauses just before touching it. Hands visible, no restraint.
+
+ソ・リン　触っても、いいんだね。
+
+### コマ11
+
+作画　Yun slides a cup of water onto the table; both characters' hands clear, one cup. Warm light, no bargain or payment.
+
+ハン・ユン　嫌なら、やめていい。
+
+### コマ12
+
+作画　So Rin gently picks up ONE hammer herself, takes a steady breath and meets Yun's eyes. His sword still SHEATHED, no cyan forged edge yet.
+
+ソ・リン　私が、作りたいんだ。
+
+## 読書区間4 剣と懸賞
+
+間の役割　救った相手の仕事で報酬を得て大会へつなぐ
+
+表示原画　art/03.png、範囲 [0, 2172]。
+
+密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+
+### コマ13
 
 作画　Hours later at warm forge. Yun robes now clean off-white same charcoal lapel dark red sash, faint cheek bruise. Smith free wrists, sleeves rolled safely, strikes a blue-black shard on anvil with ONE hammer. Yun waits rather than interrupting.
 
 ソ・リン　強いだけじゃ、剣は応えない。
 
-### コマ10
+### コマ14
 
 作画　Smith returns upgraded heavenly demon sword by offering its hilt safely, same black straight blade round gold guard red tassel, thin CYAN edge. Yun takes hilt RIGHT hand.
 
 ソ・リン　人を守る手なら、いい。
 
-### コマ11
+### コマ15
 
 作画　Yun holds sword lowered safely. At forge wall a newly delivered parchment shows his face and a gold prize seal but NO extra text; smith looks alarmed.
 
 ソ・リン　大会の懸賞に、あんたの顔。
 
-### コマ12
+### コマ16
 
 作画　Close Yun reads parchment, thoughtful eyes, smith at edge. Do not show arena yet.
 

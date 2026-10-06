@@ -88,6 +88,50 @@
           "text": "……誰か。いるの？"
         }
       ]
+    },
+    {
+      "number": 4,
+      "name": "名前を確かめる",
+      "purpose": "未知の相手と短く話し、安全を確かめてから扉へ進む",
+      "panels": [
+        {
+          "art": "At the CLOSED vault door, Yun turns toward Sei Kou, both hands EMPTY, wary. No sword visible.",
+          "speaker": "ハン・ユン",
+          "text": "あなたは、誰ですか。"
+        },
+        {
+          "art": "Sei Kou stops one pace away, keeps both open hands visible, speaks gently. Door remains CLOSED.",
+          "speaker": "セイ・コウ",
+          "text": "セイ・コウ。この門の主だ。"
+        },
+        {
+          "art": "Close Yun checks the rope marks on his now FREE wrist. He looks back at the exit, then at the master.",
+          "speaker": "ハン・ユン",
+          "text": "もう、縛らないでください。"
+        },
+        {
+          "art": "Sei Kou steps aside to leave an unobstructed retreat. Yun takes a breath before facing the CLOSED door. No sword or vault interior yet.",
+          "speaker": "セイ・コウ",
+          "text": "約束する。ここで待とう。"
+        }
+      ],
+      "asset": "art/04-pacing.png",
+      "gap": 240
+    }
+  ],
+  "revision": "pacing-expansion-2026-10-06",
+  "readingOrder": [
+    {
+      "scene": 1
+    },
+    {
+      "scene": 4
+    },
+    {
+      "scene": 2
+    },
+    {
+      "scene": 3
     }
   ]
 }

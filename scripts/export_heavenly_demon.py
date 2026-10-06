@@ -7,6 +7,7 @@ import hashlib
 import http.server
 import json
 import math
+import os
 from pathlib import Path
 import threading
 
@@ -35,7 +36,7 @@ def save_image(folder, prefix, data, extension="png"):
     return name, digest, len(data)
 
 
-def export(output):
+def export(output, numbers=None):
     catalog = json.loads((REPO / "content/catalog.json").read_text())
     title = next(item for item in catalog if item["id"] == "heavenly-demon-ngplus")
     handler = functools.partial(QuietHandler, directory=str(REPO))
@@ -45,16 +46,24 @@ def export(output):
     base = f"http://127.0.0.1:{server.server_port}"
     output.mkdir(parents=True, exist_ok=True)
     old_manifest = output / "manifest.json"
+    if numbers and not old_manifest.exists():
+        raise ValueError("A scoped export requires an existing complete manifest")
     old_chapters = json.loads(old_manifest.read_text())["chapters"] if old_manifest.exists() else []
     manifest = {"title": title["title"], "baseURL": "https://manga-server.txcloud.app",
                 "method": "Chromium screenshots of adopted HTML body; no extra spacing between strips",
-                "cssWidth": WIDTH, "pixelWidth": WIDTH * DENSITY, "chapters": []}
+                "cssWidth": WIDTH, "pixelWidth": WIDTH * DENSITY,
+                "chapters": [c for c in old_chapters if numbers and c['number'] not in numbers]}
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(executable_path="/usr/bin/chromium", args=["--no-sandbox"])
+            executable = os.environ.get("PLAYWRIGHT_CHROMIUM_EXECUTABLE") or (
+                "/usr/bin/chromium" if Path("/usr/bin/chromium").exists() else None
+            )
+            browser = p.chromium.launch(executable_path=executable, args=["--no-sandbox"])
             page = browser.new_page(viewport={"width": WIDTH, "height": 844}, device_scale_factor=DENSITY)
             for chapter in title["episodes"]:
                 number = chapter["number"]
+                if numbers and number not in numbers:
+                    continue
                 episode_id = f"heavenly-demon-episode-{number:02d}"
                 folder = output / episode_id
                 folder.mkdir(exist_ok=True)
@@ -105,6 +114,7 @@ def export(output):
     finally:
         server.shutdown()
         server.server_close()
+    manifest['chapters'].sort(key=lambda chapter: chapter['number'])
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     current_assets = {(c["id"], a["name"]) for c in manifest["chapters"] for a in c["assets"]}
     for chapter in old_chapters:
@@ -117,4 +127,6 @@ def export(output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
-    export(parser.parse_args().output.resolve())
+    parser.add_argument("--episode", type=int, action="append", choices=range(1, 11))
+    args = parser.parse_args()
+    export(args.output.resolve(), args.episode)

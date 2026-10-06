@@ -2,11 +2,13 @@
 
 この話で得るものは帰還門の裏口と自分で選ぶ決意。
 
-各場面4コマ、全12コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
 
-## 場面1 向こうの部屋
+## 読書区間1 向こうの部屋
 
 間の役割　帰りたい普通の暮らしをもう一度具体化
+
+表示原画　art/01.png、範囲 [0, 2172]。
 
 密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
 
@@ -34,9 +36,11 @@
 
 システム　帰還条件 / 最終敵の死亡
 
-## 場面2 選ばせる声
+## 読書区間2 選ばせる声
 
 間の役割　帰還と仲間を二択にするシナリオに抗う
+
+表示原画　art/02.png、範囲 [0, 2172]。
 
 密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
 
@@ -64,31 +68,65 @@
 
 ソ・リン　鍵穴に、もう一本の溝。
 
-## 場面3 道を切る
+## 読書区間3 条件を疑う
 
-間の役割　リンの発見を白燼の地図で確認し、ゲーム知識と仲間の観察で別解を作る
+間の役割　人を殺す条件を拒むだけで終わらず、仲間と根拠を探して次の試行へ進む
+
+表示原画　art/04-pacing.png、範囲 [0, 2172]。
 
 密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
 
 ### コマ9
 
+作画　Paused gate with bronze disk still in FRONT slot. Yun keeps ONE black sword SHEATHED and turns from the gate to Hakujin. No chief or red interference yet.
+
+ハン・ユン　帰りたい。でも、斬れない。
+
+### コマ10
+
+作画　Hakujin, both hands empty and CLEAN right wrist, slowly lowers his head, visibly exhales. Yun stays beside him.
+
+白燼　……それで、いいのか。
+
+### コマ11
+
+作画　So Rin studies the already found narrow BACK groove by lamp light, fingertip near its old scratches. Front bronze disk remains singular. No sword inserted yet.
+
+ソ・リン　この溝、使われてる。
+
+### コマ12
+
+作画　Yun kneels beside So Rin to compare the fine groove with the map on the stone floor. Hakujin watches, no solution hologram or blade drawn yet.
+
+ハン・ユン　確かめよう。三人で。
+
+## 読書区間4 道を切る
+
+間の役割　リンの発見を白燼の地図で確認し、ゲーム知識と仲間の観察で別解を作る
+
+表示原画　art/03.png、範囲 [0, 2172]。
+
+密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+
+### コマ13
+
 作画　So Rin points to the hidden groove while Hakujin interprets the open treasury map and confirms the sword-key back entrance. Yun considers their combined clues. Bronze disk remains inserted in front slot.
 
 白燼　剣を鍵にする、裏口だ。
 
-### コマ10
+### コマ14
 
 作画　Yun carefully draws one black sword in RIGHT hand, LEFT palm braces pedestal; turns blade FLAT toward hidden groove away from both friends. No enemy attacked.
 
 ハン・ユン　壊すのは、道の縛りだ。
 
-### コマ11
+### コマ15
 
 作画　Before he inserts blade, a RED light from alliance chief's control crystal strikes pedestal, freezing portal. Chief Go Tensaku appears on stair below in plum gold crane robes. Yun turns alarmed, sword safely lowered.
 
 呉天策　帰還門は、私の物だ。
 
-### コマ12
+### コマ16
 
 作画　Close chief raises ONE cracked black control crystal, smug face; Yun in foreground standing protectively before two friends and gate. Do NOT show final victory yet.
 

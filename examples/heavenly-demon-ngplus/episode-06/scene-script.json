@@ -57,7 +57,7 @@
           "text": "……自分で、手を開けた。"
         }
       ],
-      "transitionNarration": "夜通し、白燼の話を聞いた。\n夜明けの鐘で、印が動き出す。"
+      "transitionNarration": "話を聞いているうちに、夜が明けた。\n朝の鐘で、印が動き出す。"
     },
     {
       "number": 3,
@@ -85,6 +85,50 @@
           "text": "駒が、勝手に歩き始めたか。"
         }
       ]
+    },
+    {
+      "number": 4,
+      "name": "敵の夜を聞く",
+      "purpose": "敵の痛みを知る夜を実際に描き、強制印を切る決断に重さを作る",
+      "panels": [
+        {
+          "art": "Night forge: Yun and Hakujin sit opposite each other by a small lamp. Yun sword SHEATHED; Hakujin RIGHT wrist still has intact dark control mark. Neither attacks.",
+          "speaker": "白燼",
+          "text": "目が覚めても、戦いの中だ。"
+        },
+        {
+          "art": "Hakujin looks down at his trembling RIGHT fingers below the intact wrist mark, other hand empty. Yun listens without interruption.",
+          "speaker": "白燼",
+          "text": "手を、止められなかった。"
+        },
+        {
+          "art": "Yun places a cup within Hakujin's reach without forcing it into his marked hand. Yun's expression remorseful, no memory montage.",
+          "speaker": "ハン・ユン",
+          "text": "俺は、何も知らなかった。"
+        },
+        {
+          "art": "Late night fading to predawn at forge window. Two men still seated, lamp low, wrist mark still intact. Yun stays, no drawn weapon, no released mark yet.",
+          "speaker": "ハン・ユン",
+          "text": "今は、ちゃんと聞きたい。"
+        }
+      ],
+      "asset": "art/04-pacing.png",
+      "gap": 240
+    }
+  ],
+  "revision": "pacing-expansion-2026-10-06",
+  "readingOrder": [
+    {
+      "scene": 1
+    },
+    {
+      "scene": 4
+    },
+    {
+      "scene": 2
+    },
+    {
+      "scene": 3
     }
   ]
 }

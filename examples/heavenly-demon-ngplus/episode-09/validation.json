@@ -5,13 +5,17 @@
       "width": 390,
       "height": 844,
       "pageWidth": 390,
-      "length": 5585,
-      "images": 3,
+      "length": 6994,
+      "images": 4,
       "imagesLoaded": true,
       "pauses": [
         {
           "purpose": "帰還と仲間を二択にするシナリオに抗う",
           "height": 640
+        },
+        {
+          "purpose": "人を殺す条件を拒むだけで終わらず、仲間と根拠を探して次の試行へ進む",
+          "height": 240
         },
         {
           "purpose": "リンの発見を白燼の地図で確認し、ゲーム知識と仲間の観察で別解を作る",
@@ -23,19 +27,29 @@
         }
       ],
       "brokenLinks": 0,
-      "version": "index.html"
+      "version": "index.html",
+      "sceneOrder": [
+        "scene-1",
+        "scene-2",
+        "scene-4",
+        "scene-3"
+      ]
     },
     {
       "width": 390,
       "height": 844,
       "pageWidth": 390,
-      "length": 5585,
-      "images": 3,
+      "length": 6994,
+      "images": 4,
       "imagesLoaded": true,
       "pauses": [
         {
           "purpose": "帰還と仲間を二択にするシナリオに抗う",
           "height": 640
+        },
+        {
+          "purpose": "人を殺す条件を拒むだけで終わらず、仲間と根拠を探して次の試行へ進む",
+          "height": 240
         },
         {
           "purpose": "リンの発見を白燼の地図で確認し、ゲーム知識と仲間の観察で別解を作る",
@@ -47,19 +61,29 @@
         }
       ],
       "brokenLinks": 0,
-      "version": "reader.html"
+      "version": "reader.html",
+      "sceneOrder": [
+        "scene-1",
+        "scene-2",
+        "scene-4",
+        "scene-3"
+      ]
     },
     {
       "width": 360,
       "height": 800,
       "pageWidth": 360,
-      "length": 5198,
-      "images": 3,
+      "length": 6498,
+      "images": 4,
       "imagesLoaded": true,
       "pauses": [
         {
           "purpose": "帰還と仲間を二択にするシナリオに抗う",
           "height": 590.765625
+        },
+        {
+          "purpose": "人を殺す条件を拒むだけで終わらず、仲間と根拠を探して次の試行へ進む",
+          "height": 221.53125
         },
         {
           "purpose": "リンの発見を白燼の地図で確認し、ゲーム知識と仲間の観察で別解を作る",
@@ -71,19 +95,29 @@
         }
       ],
       "brokenLinks": 0,
-      "version": "index.html"
+      "version": "index.html",
+      "sceneOrder": [
+        "scene-1",
+        "scene-2",
+        "scene-4",
+        "scene-3"
+      ]
     },
     {
       "width": 360,
       "height": 800,
       "pageWidth": 360,
-      "length": 5198,
-      "images": 3,
+      "length": 6498,
+      "images": 4,
       "imagesLoaded": true,
       "pauses": [
         {
           "purpose": "帰還と仲間を二択にするシナリオに抗う",
           "height": 590.765625
+        },
+        {
+          "purpose": "人を殺す条件を拒むだけで終わらず、仲間と根拠を探して次の試行へ進む",
+          "height": 221.53125
         },
         {
           "purpose": "リンの発見を白燼の地図で確認し、ゲーム知識と仲間の観察で別解を作る",
@@ -95,7 +129,13 @@
         }
       ],
       "brokenLinks": 0,
-      "version": "reader.html"
+      "version": "reader.html",
+      "sceneOrder": [
+        "scene-1",
+        "scene-2",
+        "scene-4",
+        "scene-3"
+      ]
     }
   ],
   "iOSDeviceChecked": false,
@@ -103,14 +143,11 @@
     "method": "vertical text in generated art",
     "fontSizeMeasuredInImage": false,
     "manualReviewWidths": [
+      390,
       360
-    ],
-    "reviewedScenes": [
-      1,
-      2,
-      3
-    ],
-    "notes": "360pxで全場面の全文・縦列・話者を確認。地図を説明する発話は白燼として最終脚本と代替テキストに統一。"
+    ]
   },
-  "originalBytesUnchanged": true
+  "originalBytesUnchanged": true,
+  "pacingRevision": "pacing-expansion-2026-10-06",
+  "manualReviewNote": "New art and all dialogue visually reviewed at phone widths. Episode 1 new windows and episode 10 split and return order checked."
 }

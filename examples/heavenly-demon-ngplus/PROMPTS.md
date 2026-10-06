@@ -13,3 +13,8 @@
 - [第10話の生成指示](episode-10/PROMPTS.md)
 
 [共通の人物と作画仕様](production-spec.json)
+
+
+## 2026-10-06の追加作画
+
+全話の増補内容は[PACING-REVISION.md](PACING-REVISION.md)。第1話の追加2枚は[個別指示](episode-01/PACING-PROMPTS.md)。第2〜10話は各話PROMPTS.mdの場面4に、実行した指示と参照元を収録。第8話の最終文字修正は[修正指示](episode-08/PACING-LETTERING-PROMPTS.md)。
