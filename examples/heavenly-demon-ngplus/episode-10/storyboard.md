@@ -2,11 +2,13 @@
 
 この話で得るものは呉天策の無力化と自由に行き来する帰還権。
 
-各場面4コマ、全12コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
 
-## 場面1 処刑の続きを終わらせる
+## 読書区間1 処刑の続きを終わらせる
 
 間の役割　第1話の二本指を自分の意思で使う
+
+表示原画　art/01.png、範囲 [0, 2172]。
 
 密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
 
@@ -34,9 +36,11 @@
 
 白燼　……命令の声が、消えた。
 
-## 場面2 帰り道を選ぶ
+## 読書区間2 帰り道を選ぶ
 
 間の役割　門の条件を解除して帰還を実際に叶える
+
+表示原画　art/02.png、範囲 [0, 2172]。
 
 密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
 
@@ -64,9 +68,11 @@
 
 ソ・リン　うん。帰りは、あんたが決めて。
 
-## 場面3 二つの暮らし
+## 読書区間3 二つの暮らし
 
 間の役割　生きて帰る目的を果たし仲間へ自分で戻る
+
+表示原画　art/03.png、範囲 [0, 796]。
 
 密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
 
@@ -82,13 +88,56 @@
 
 ハン・ユン　母さん。今日は、声が聞きたくて。
 
+## 読書区間4 戻った日常を確かめる
+
+間の役割　母への電話の後、部屋で休み、帰還の実感と次に会う意思を育てる
+
+表示原画　art/04-pacing.png、範囲 [0, 2172]。
+
+密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+
 ### コマ11
+
+作画　MODERN student room after his call: Yun still in ivory martial robe charcoal lapel and dark red sash, ONE sword SHEATHED at left hip. He puts smartphone face DOWN beside a closed textbook. Worn cloth tool bag on floor, no magical portal visible.
+
+ハン・ユン　いつもの、部屋だ。
+
+### コマ12
+
+作画　Yun sits at desk, cradles ONE mug with both hands, looks at steam. Same robes and ponytail, subtle LEFT cheek bruise, calm eyes. No extra sword, no modern haircut.
+
+ハン・ユン　温かい。ちゃんと、分かる。
+
+### コマ13
+
+作画　Large quiet view of Yun asleep in desk chair as DAWN light fills his room. Same robe, sheathed sword safely beside chair, tool bag near feet. No dialogue, no text anywhere.
+
+描写　無言
+
+### コマ14
+
+作画　Morning: rested Yun places a small tea packet and bandages on a white cloth, preparing the SINGLE white bundle used in the next scene. ONE sword sheathed at left hip, no portal yet.
+
+ハン・ユン　今度は、会いに行こう。
+
+## 読書区間5 二つの暮らし
+
+間の役割　生きて帰る目的を果たし仲間へ自分で戻る
+
+表示原画　art/03.png、範囲 [796, 2172]。
+
+密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+
+ナレーション　翌朝。休んでから、持っていくものを選んだ。
+今度は、助けを待つためではなく、会いに行く。
+
+### コマ15
 
 作画　Later Yun returns THROUGH cyan doorway to town forge, still clean same martial outfit, now carries ONE white cloth bundle of bandages and a small packet of tea. Smith at anvil and Hakujin by door warmly surprised.
 
 ソ・リン　おかえり。早かったね。
 
-### コマ12
+### コマ16
 
 作画　Final large borderless close view Yun with teal eyes and small confident kind smile, two companions visible behind him at sunlit forge, sword sheathed, no throne no sinister pose.
 

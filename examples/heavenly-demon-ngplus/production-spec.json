@@ -8,13 +8,20 @@
     "antagonist": "呉天策"
   },
   "format": {
-    "scenesPerEpisode": 3,
+    "scenesPerEpisode": 4,
     "vignettesPerScene": 4,
     "japaneseSpeech": "vertical, integrated into generated art",
     "outputs": [
       "index.html",
       "reader.html",
       "webtoon-full-390.jpg"
-    ]
-  }
+    ],
+    "vignettesPerEpisode": 16,
+    "episode01": {
+      "sourceImagesUsed": 12,
+      "displayWindows": 23,
+      "lettering": "existing HTML dialogue and generated holograms"
+    }
+  },
+  "revision": "pacing-expansion-2026-10-06"
 }
