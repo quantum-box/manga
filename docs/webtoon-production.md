@@ -59,3 +59,7 @@
 ## 再利用するスキル
 
 [skills/webtoon/SKILL.md](../skills/webtoon/SKILL.md)に、制作手順・成功例・広い余白の比較・プロンプト・HTML補助ファイルを一式で収録した。インストール後は`$webtoon`で呼び出せる。更新する場合はrepo側とインストール側の差を確認する。
+
+2026-10-06にシリーズ設計を追加した。新規シリーズの全体話数が未指定なら最初に一度だけ50話・100話・200話以上の3つから規模を選んでもらう。指定済みなら聞き直さず、未回答を200話以上の選択として扱わない。世界観・人物・物語を往復して設計し、選んだ規模のロードマップと直近10話の詳細を分ける。制作依頼の初回範囲は第1〜10話の読める完成原稿。短編・設計のみ・指定話数・既存作品の依頼はその範囲を優先する。
+
+設計手順は[全体と長期構成](../skills/webtoon/references/series-planning.md)、[世界観](../skills/webtoon/references/worldbuilding.md)、[キャラクター](../skills/webtoon/references/character-design.md)、[導入10話](../skills/webtoon/references/opening-arc.md)、[複数話の制作と再開](../skills/webtoon/references/batch-production.md)に分けた。将来の計画、脚本、作画、表示確認の完成を別々に管理し、制作済みの設定と各話の状態を次の制作へ引き継ぐ。

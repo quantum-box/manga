@@ -24,7 +24,7 @@
 ## 制作知見と再利用スキル
 
 1. [制作で採用した知見](docs/webtoon-production.md)：広い余白、密度の変化、登場順、文字の分離、スマホ検証。
-2. [Webtoonスキル](skills/webtoon/SKILL.md)：制作手順、成功例と比較画像、作画プロンプト、HTML補助ファイル。
+2. [Webtoonスキル](skills/webtoon/SKILL.md)：全体話数を50話・100話・200話以上から選び、世界観・人物・物語を設計。初回1〜10話の制作、作画とスマホ確認まで仕上げる。
 3. [武侠・転生・回帰の調査](docs/murim-reincarnation.md)：公式作品ページとオリジナル第1話の企画。
 4. [初期のWebtoon再調査](docs/webtoon-research.md)と[最初の企画メモ](docs/initial-proposal.md)：方向転換前の仮説と参考資料。
 
