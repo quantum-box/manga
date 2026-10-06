@@ -22,6 +22,8 @@ Input images: Reference 1 establishes character identity; Reference 2 establishe
 Subject: [identity, clothing, markings and recurring props].
 Style/medium: [chosen art direction].
 Scene/backdrop: [consistent setting and time].
+Camera: [distance: wide / medium / close-up; height and angle; whose viewpoint, if relevant].
+Composition: [primary focal element and path to the next beat; reserve the planned balloon area without covering faces, hands or clues].
 Text: Render the exact Japanese dialogue below inside white speech balloons integrated with the illustration. Use true vertical Japanese typesetting: upright glyphs, top-to-bottom columns, columns ordered right-to-left. Do not rotate horizontal sentences sideways. No extra text or watermark.
 Dialogue: [speaker, exact full text, balloon reading order, and each vertical column listed in right-to-left order].
 Voice: [spoken / thought; intended listener; volume, emotion and breath for THIS utterance].
