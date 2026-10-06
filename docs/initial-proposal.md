@@ -8,7 +8,7 @@ iOSアプリ試作: [起動方法・実装範囲](../ios/README.md)（タイト�
 
 最初の試作: [柴犬ポチと魔王の「おて」](../examples/pochis-handshake/README.md)
 
-カラー縦読み版: [Webtoon試作](../examples/pochis-handshake/webtoon/README.md)
+カラー縦読み版: [Webtoon試作](https://github.com/quantum-box/manga/blob/81a4a9a80c9c6782bac7592142750c324a1b42eb/examples/pochis-handshake/webtoon/README.md)
 
 再調査と作り直し案: [Webtoon再調査](../docs/webtoon-research.md)
 

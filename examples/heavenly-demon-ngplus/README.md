@@ -50,5 +50,5 @@ python3 scripts/sync_ios_webtoons.py --check
 python3 examples/heavenly-demon-ngplus/package_series.py
 ~~~
 
-本番サーバー向けの配信画像・JSONは `server-export` に保存。
-[公開・照合の手順](../../server/README.md#天魔二周目第110話の反映)を参照。
+本番サーバーへの反映は全作品共通の採用版公開スクリプトを使う。
+[公開・照合の手順](../../server/README.md#全作品を採用版だけに更新する)を参照。旧配信出力はGitの履歴で管理する。

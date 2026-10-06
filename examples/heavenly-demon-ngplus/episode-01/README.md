@@ -23,7 +23,7 @@
 
 今回のChromiumと同じ条件で保存版を表示した全長は390px幅で18,025px、増補後は20,789px（+15.3%）。旧検証の17,946pxは別の描画環境での値。読書時間は測定していない。[全話の比較](../pacing-comparison.json)。完成JPEGは390×20,789px。
 
-検証記録はvalidation.json、追加窓の画面はvalidation/pacing-*-390.jpg／360.jpg。修正前の本文と完成画像はrevisions/before-pacing/に保存。元の感情・システムUIの改稿前もrevisions/に残している。
+検証記録はvalidation.json、追加窓の画面はvalidation/pacing-*-390.jpg／360.jpg。修正前の本文・完成画像と、感情・システムUIの改稿前はGitの履歴で管理する。
 
 ## 原本と生成指示
 
