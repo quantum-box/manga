@@ -1,6 +1,6 @@
 # 第01話 — 採用原画の実行指示
 
-全10話の改稿は新規54素材・承認見本の再利用3素材。再利用・修正・旧版保持を generation-log.json で区別。以前の実行記録は production/feedback-v6/baseline に保持。
+全10話の改稿は新規54素材・承認見本の再利用3素材。再利用・修正・採用原画の保持を generation-log.json で区別。以前の実行記録は Git の履歴で管理。
 
 この話の追加改稿：既存11素材の効果音編集・3素材の装着過程追加。元画像・修正前画像・実行指示は production/episode-01-sfx に保持。
 
@@ -60,7 +60,7 @@ ONLY speaker: Ren thought. EXACT text: 「俺、事故に遭ったはずじゃ�
 
 retained prior adopted image_gen output
 
-参照：["../v4/art/02-arrival.png", "../v4/art/03-guide.png"]
+参照：["../production/references/02-arrival.png", "../production/references/03-guide.png"]
 
 採用時の指示：
 
@@ -83,7 +83,7 @@ Draw once outside balloons, upright Japanese effect: カツ….
 
 retained prior adopted image_gen output
 
-参照：["../v4/art/02-arrival.png", "../v4/art/03-guide.png"]
+参照：["../production/references/02-arrival.png", "../production/references/03-guide.png"]
 
 採用時の指示：
 
@@ -218,7 +218,7 @@ ONLY speaker: Rook offscreen. EXACT text: 「使える魔力の量がわかる�
 
 retained prior adopted image_gen output
 
-参照：["../v4/art/02-arrival.png", "../v4/art/03-guide.png", "art/a06-walk-to-station.png"]
+参照：["../production/references/02-arrival.png", "../production/references/03-guide.png", "art/a06-walk-to-station.png"]
 
 採用時の指示：
 
@@ -305,7 +305,7 @@ SILENT: no balloons or text unless an exact prop inscription is explicitly speci
 
 retained prior adopted image_gen output
 
-参照：["../v4/art/02-arrival.png", "../v4/art/03-guide.png", "art/a06-walk-to-station.png"]
+参照：["../production/references/02-arrival.png", "../production/references/03-guide.png", "art/a06-walk-to-station.png"]
 
 採用時の指示：
 
@@ -359,7 +359,7 @@ ONLY speaker: Ren. EXACT text: 「……ゼロ？」 (render contents only).
 
 retained prior adopted image_gen output
 
-参照：["../v4/art/02-arrival.png", "../v4/art/03-guide.png", "art/a06-walk-to-station.png"]
+参照：["../production/references/02-arrival.png", "../production/references/03-guide.png", "art/a06-walk-to-station.png"]
 
 採用時の指示：
 
@@ -386,7 +386,7 @@ This moment is AFTER the zero result: any visible front readout must remain dark
 
 retained prior adopted image_gen output
 
-参照：["../v4/art/02-arrival.png", "../v4/art/03-guide.png", "art/a06-walk-to-station.png"]
+参照：["../production/references/02-arrival.png", "../production/references/03-guide.png", "art/a06-walk-to-station.png"]
 
 採用時の指示：
 
@@ -413,7 +413,7 @@ This moment is AFTER the zero result: any visible front readout must remain dark
 
 retained prior adopted image_gen output
 
-参照：["../v4/art/02-arrival.png", "../v4/art/03-guide.png", "art/a06-walk-to-station.png"]
+参照：["../production/references/02-arrival.png", "../production/references/03-guide.png", "art/a06-walk-to-station.png"]
 
 採用時の指示：
 
@@ -440,7 +440,7 @@ This moment is AFTER the zero result: any visible front readout must remain dark
 
 retained prior adopted image_gen output
 
-参照：["../v4/art/02-arrival.png", "../v4/art/03-guide.png", "art/a06-walk-to-station.png"]
+参照：["../production/references/02-arrival.png", "../production/references/03-guide.png", "art/a06-walk-to-station.png"]
 
 採用時の指示：
 
@@ -562,7 +562,7 @@ retained prior adopted image_gen output
 採用時の指示：
 
 ```text
-See ../production/feedback-v6/baseline/prompts-episode-01.md for the original executed prompt.
+See git:81a4a9a80c9c6782bac7592142750c324a1b42eb:examples/zero-break/production/feedback-v6/baseline/prompts-episode-01.md for the original executed prompt.
 ```
 
 ## layout-safe-01.png

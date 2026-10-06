@@ -37,41 +37,9 @@ tachyon compute logs manga-server --tenant-id <tenant>
 `episode.json`は既存試作と同じ `title` / `blocks` 形式。
 画像はJSONと同じディレクトリに置く。PNG/JPEG/WebP、1画像16MiB以下。
 
-```sh
-# MANGA_ADMIN_TOKEN にデプロイ済み ADMIN_TOKEN と同じ値を設定
-python3 scripts/publish_episode.py https://<worker-host> pochis-handshake \
-  examples/pochis-handshake/webtoon/episode.json
-```
-
 画像を先にアップロードし、全画像の存在を確認してからJSONを公開する。
 画像名は上書き不可。修正画像は新しい名前でアップロードしJSONの参照を更新する。
-途中失敗後は同じコマンドを再実行できる。既存画像を管理者APIで読み戻し、バイト一致を確認する。
-放棄された未公開画像の回収は現段階では管理者によるバケット操作が必要。
 秘密トークンを読者やブラウザに渡さない。
-
-### 『天魔、二周目。』第1〜10話の反映
-
-採用HTMLをブラウザで描画し、文字組み・場面の順番・余白を含む連続画像として
-`examples/heavenly-demon-ngplus/server-export`へ書き出す。原画や採用HTMLは変更しない。
-本文は390 CSS px・3倍密度（1170px幅）のPNG、表紙は小さなJPEG。
-画像名には内容のハッシュを含め、公開済み画像と衝突しない。
-
-```sh
-python3 scripts/export_heavenly_demon.py
-python3 scripts/publish_heavenly_demon.py --dry-run
-# 本番の管理トークンを実行環境の MANGA_ADMIN_TOKEN シークレットへ設定して実行
-python3 scripts/publish_heavenly_demon.py
-```
-
-反映先は本番の `https://manga-server.txcloud.app`。
-既存の `heavenly-demon-episode-01` を更新し、第2〜10話を同じシリーズへ追加する。
-公開前に全ファイルと管理APIの認証を確認し、公開後に本文JSON、全画像のSHA-256、
-公開カタログの話数と話タイトルを照合する。
-成功した照合結果は `server-export/published-checks.json` に保存する。
-公開済みデータの再確認には `--verify-only` を指定する。
-Workerコードの変更・再デプロイは不要。
-
-## API
 
 ### 全作品を採用版だけに更新する
 
@@ -80,18 +48,20 @@ Workerコードの変更・再デプロイは不要。
 Playwright（Chromium）、Pillow、Node.jsを用意して実行する。
 
 ```sh
-python3 scripts/export_latest_webtoons.py publish-output
-python3 scripts/publish_latest_webtoons.py publish-output --dry-run
-# MANGA_ADMIN_TOKEN は本番管理トークン。公開前に旧本文と参照画像をローカルへ退避する。
-python3 scripts/publish_latest_webtoons.py publish-output --retire-previous
-python3 scripts/publish_latest_webtoons.py publish-output --verify-only
+python3 scripts/export_latest_webtoons.py /tmp/manga-publish-output
+python3 scripts/publish_latest_webtoons.py /tmp/manga-publish-output --dry-run
+# MANGA_ADMIN_TOKEN は本番管理トークン。一時退避と書き出しは作業ツリー外で行う。
+python3 scripts/publish_latest_webtoons.py /tmp/manga-publish-output --retire-previous
+python3 scripts/publish_latest_webtoons.py /tmp/manga-publish-output --verify-only
 ```
 
 書き出しは390 CSS px・1170画像px。原稿の本文部分だけを連続画像にし、表紙と読了文を別に持つ。
 全話のJSON・画像SHA-256・カタログの話名と版を読み戻して確認してから、旧版を公開停止して
 画像実体も削除する。別の公開更新を検出した場合は削除前に停止する。
-`publish-output/backup`に旧版の本文と参照画像、`published-checks.json`に照合結果を残す。
+公開処理中の一時退避は `/tmp/manga-publish-output/backup`、照合結果は同じ出力先の `published-checks.json` に保存する。リポジトリには採用版だけを残し、旧版はGitの履歴で管理する。
 `--verify-only`は管理トークン不要で、公開データの読み戻しだけを行う。
+
+## API
 
 | Method / path | 用途 |
 | --- | --- |
@@ -113,7 +83,7 @@ python3 scripts/publish_latest_webtoons.py publish-output --verify-only
 ## iOS配信API v1
 
 `GET /api/v1/catalog`はiOSの`MangaTitle` / `Episode`と同じJSON配列を返す。
-`image`と`reader`は同一HTTPS originに対する相対パス。公開エピソードをシリーズごとにまとめ、話数の昇順に並べる。改稿版は同じ話数を持つ別版として保持する。
+`image`と`reader`は同一HTTPS originに対する相対パス。公開エピソードをシリーズごとにまとめ、話数の昇順に並べる。公開処理で同じ話の旧版を削除し、採用済みの最新版だけを表示する。
 作品名・話タイトルは制作カタログを使う。各話のrevisionとシリーズ全体のrevisionを返す。
 Storageの公開JSONが正本で、公開時のgeneration変更で一覧索引を無効化する。
 通常の一覧取得は全話のJSONを再取得せず、generationと保存済み索引だけを読む。

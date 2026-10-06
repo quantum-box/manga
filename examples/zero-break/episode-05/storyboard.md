@@ -1,6 +1,6 @@
 # 第05話 消える街区 — 会話と状況の改稿
 
-セリフは原画に収録。HTMLへ二重に重ねない。旧構成は production/feedback-v6/baseline に保存。
+セリフは原画に収録。HTMLへ二重に重ねない。旧構成は Git の履歴で管理。
 
 ## empty-house
 

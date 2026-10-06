@@ -1,6 +1,7 @@
 """Editable panel direction for the Zero Break context/dialogue revision."""
 from pathlib import Path
 import json
+from history import load_baseline
 
 ROOT=Path(__file__).resolve().parents[1]
 REPO=ROOT.parents[1]
@@ -23,7 +24,7 @@ def p(beat,view,frame,speaker=None,text=None,voice='無言'):
 jobs=[]
 def add(n,key,replaces,panels,pause=85,context_override=None):
     d=ROOT/('v5' if n==1 else f'episode-{n:02d}')
-    baseline=json.loads((STATE/'baseline'/f'episode-{n:02d}.json').read_text())
+    baseline=load_baseline(f'episode-{n:02d}.json')
     selected=[s for s in baseline['shots'] if s['id'] in replaces]
     references=[str((d/'art'/(s['file']+('.png' if n==1 else ''))).relative_to(REPO)) for s in selected]
     references=references[:3]+['skills/webtoon/references/zero-break/varied-01.png']

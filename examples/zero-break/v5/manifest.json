@@ -155,8 +155,8 @@
       "provenance": "new v5 art",
       "sha256": "13b51bbd3a35983a0affb34c9067fcb88097c299fc09159cfc61b4cecb81d111",
       "references": [
-        "../v4/art/02-arrival.png",
-        "../v4/art/03-guide.png"
+        "../production/references/02-arrival.png",
+        "../production/references/03-guide.png"
       ],
       "repairs": [],
       "baseline_sha256": "13b51bbd3a35983a0affb34c9067fcb88097c299fc09159cfc61b4cecb81d111",
@@ -178,8 +178,8 @@
       "provenance": "new v5 art",
       "sha256": "ee2e3133608937864e3de6cae8a283921b14a3101b6c81fe17106979750a256a",
       "references": [
-        "../v4/art/02-arrival.png",
-        "../v4/art/03-guide.png"
+        "../production/references/02-arrival.png",
+        "../production/references/03-guide.png"
       ],
       "repairs": [],
       "baseline_sha256": "ee2e3133608937864e3de6cae8a283921b14a3101b6c81fe17106979750a256a",
@@ -615,8 +615,8 @@
       "generated": true,
       "provenance": "new v5 art",
       "references": [
-        "../v4/art/02-arrival.png",
-        "../v4/art/03-guide.png",
+        "../production/references/02-arrival.png",
+        "../production/references/03-guide.png",
         "art/a06-walk-to-station.png"
       ],
       "sha256": "1ad72b88d5a73eb0c59eaa593188ce3a88c4fd3ed0c88f431387d88b43de55ae",
@@ -766,8 +766,8 @@
       "generated": true,
       "provenance": "new v5 art",
       "references": [
-        "../v4/art/02-arrival.png",
-        "../v4/art/03-guide.png",
+        "../production/references/02-arrival.png",
+        "../production/references/03-guide.png",
         "art/a06-walk-to-station.png"
       ],
       "sha256": "49472d5d6da7558e4f20d5a18717971b6bcba2c43ba6c361db2462e804d3ea89",
@@ -888,8 +888,8 @@
       "generated": true,
       "provenance": "new v5 art",
       "references": [
-        "../v4/art/02-arrival.png",
-        "../v4/art/03-guide.png",
+        "../production/references/02-arrival.png",
+        "../production/references/03-guide.png",
         "art/a06-walk-to-station.png"
       ],
       "sha256": "c346ba513ac0706a3198913e0a7a3195666ec818ee3187f538e0d40bb24de648",
@@ -924,8 +924,8 @@
       "generated": true,
       "provenance": "new v5 art",
       "references": [
-        "../v4/art/02-arrival.png",
-        "../v4/art/03-guide.png",
+        "../production/references/02-arrival.png",
+        "../production/references/03-guide.png",
         "art/a06-walk-to-station.png"
       ],
       "sha256": "a08007e2d78a4d1acdb6f50ca8c03ccfeedc3d429f1fb6aa6a9af6f32c1c9b6f",
@@ -961,8 +961,8 @@
       "generated": true,
       "provenance": "new v5 art",
       "references": [
-        "../v4/art/02-arrival.png",
-        "../v4/art/03-guide.png",
+        "../production/references/02-arrival.png",
+        "../production/references/03-guide.png",
         "art/a06-walk-to-station.png"
       ],
       "sha256": "9bfcde731b5ed7e383ea626945d872f4cb6ee2188e889830b326a13a180f4414",
@@ -999,8 +999,8 @@
       "generated": true,
       "provenance": "new v5 art",
       "references": [
-        "../v4/art/02-arrival.png",
-        "../v4/art/03-guide.png",
+        "../production/references/02-arrival.png",
+        "../production/references/03-guide.png",
         "art/a06-walk-to-station.png"
       ],
       "sha256": "78571b76164132d01b748d19d1790b5b707565c8a39ba2b78fe88e60eea1b660",
@@ -2223,5 +2223,5 @@
     "method": "Conservative normalized image positions selected by visual inspection of actual 360px captures. The first zero glyph lies below the result image top."
   },
   "panel_count": 73,
-  "baseline": "../production/feedback-v6/baseline/episode-01.json"
+  "baseline": "git:81a4a9a80c9c6782bac7592142750c324a1b42eb:examples/zero-break/production/feedback-v6/baseline/episode-01.json"
 }

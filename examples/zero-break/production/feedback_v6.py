@@ -13,6 +13,7 @@ import json
 import shutil
 import subprocess
 import sys
+from history import baseline_reference, load_baseline
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
@@ -33,13 +34,7 @@ def load_plan():
 
 def initialize():
     for number in range(1, 11):
-        target = STATE / 'baseline' / f'episode-{number:02d}.json'
-        if not target.exists():
-            data = json.loads((directory(number) / 'manifest.json').read_text())
-            for shot in data['shots']:
-                filename = shot['file'] + ('.png' if number == 1 else '')
-                shot['baseline_sha256'] = digest(directory(number) / 'art' / filename)
-            dump(target, data)
+        load_baseline(f'episode-{number:02d}.json')
     report()
 
 def save(job_id, source, method='built-in image_gen'):
@@ -100,8 +95,12 @@ def build(number):
     missing = [j['id'] for j in jobs if not (STATE/'records'/(j['id']+'.json')).exists()]
     if missing:
         raise ValueError(f'Chapter remains on original edition; missing: {missing}')
-    baseline = json.loads((STATE/'baseline'/f'episode-{number:02d}.json').read_text())
+    baseline = load_baseline(f'episode-{number:02d}.json')
     manifest = copy.deepcopy(baseline)
+    for shot in manifest['shots']:
+        if 'references' in shot:
+            shot['references'] = [ref.replace('../v4/art/', '../production/references/')
+                                  for ref in shot['references']]
     original = manifest['shots']
     positions = {s['id']: i for i, s in enumerate(original)}
     first = {}
@@ -202,13 +201,13 @@ def build(number):
                     visual_review=record['visual_review'])
     manifest.update(version='context-dialogue-v6', shots=shots,
                     panel_count=sum(len(s.get('panels',[s])) for s in shots),
-                    baseline=f'../production/feedback-v6/baseline/episode-{number:02d}.json')
+                    baseline=baseline_reference(f'episode-{number:02d}.json'))
     dump(directory(number)/'manifest.json',manifest)
     title = manifest.get('title','最弱判定、最強の一歩。')
     paper = '#fffaf3' if number in (4,9) else '#f6f7f8' if number == 5 else '#ffffff'
     out = [f'<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ゼロ・ブレイク 第{number}話</title><style>{CSS}</style><main class="episode" style="--paper:{paper}">',f'<header><small>異世界転生 × スーパーヒーロー / 第{number}話</small><h1>ゼロ・ブレイク</h1><p>{html.escape(title)}</p></header>']
     storyboard = [f'# 第{number:02d}話 {title} — 会話と状況の改稿','',
-                  'セリフは原画に収録。HTMLへ二重に重ねない。旧構成は production/feedback-v6/baseline に保存。','']
+                  'セリフは原画に収録。HTMLへ二重に重ねない。旧構成は Git の履歴で管理。','']
     for shot in shots:
         path = directory(number)/'art'/shot['file']
         width,height = unpack('>II',path.read_bytes()[16:24])
@@ -230,13 +229,8 @@ def build(number):
     out.append(f'<footer>第{number}話 おわり<br>{nav}</footer></main></html>')
     (directory(number)/'index.html').write_text(''.join(out))
     (directory(number)/'storyboard.md').write_text('\n'.join(storyboard).rstrip()+'\n')
-    archive=STATE/'baseline'/f'generation-episode-{number:02d}.json'
+    archive=baseline_reference(f'generation-episode-{number:02d}.json')
     old_log=directory(number)/'generation-log.json'
-    if old_log.exists() and not archive.exists():
-        shutil.copyfile(old_log,archive)
-    prior_prompts=STATE/'baseline'/f'prompts-episode-{number:02d}.md'
-    if not prior_prompts.exists():
-        shutil.copyfile(directory(number)/'PROMPTS.md',prior_prompts)
     execution=[]
     for shot in shots:
         record_path=STATE/'records'/(shot['id']+'.json')
@@ -249,15 +243,15 @@ def build(number):
         record=json.loads(record_path.read_text()) if record_path.exists() else {
             'id':shot['id'],'file':shot['file'],'sha256':digest(directory(number)/'art'/shot['file']),
             'method':'retained prior adopted image_gen output',
-            'prompt':shot.get('prompt',f'See ../production/feedback-v6/baseline/prompts-episode-{number:02d}.md for the original executed prompt.'),
+            'prompt':shot.get('prompt',f'See {baseline_reference(f"prompts-episode-{number:02d}.md")} for the original executed prompt.'),
             'references':shot.get('references',[]),
-            'provenance_record':f'../production/feedback-v6/baseline/generation-episode-{number:02d}.json',
+            'provenance_record':archive,
         }
         execution.append(record)
     dump(old_log,{'edition':'context-dialogue-v6','adopted':execution,
-                 'prior_generation_record':str(archive.relative_to(REPO))})
+                 'prior_generation_record':archive})
     prompt_lines=[f'# 第{number:02d}話 — 採用原画の実行指示','',
-                  '全10話の改稿は新規54素材・承認見本の再利用3素材。再利用・修正・旧版保持を generation-log.json で区別。以前の実行記録は production/feedback-v6/baseline に保持。','']
+                  '全10話の改稿は新規54素材・承認見本の再利用3素材。再利用・修正・採用原画の保持を generation-log.json で区別。以前の実行記録は Git の履歴で管理。','']
     sound_count = sum(bool(s.get('revisionRecord')) for s in shots)
     insert_count = sum(bool(s.get('insertionRecord')) for s in shots)
     layout_count = sum(bool(s.get('layoutRevisionRecord')) for s in shots)

@@ -2,6 +2,7 @@
 import base64,hashlib,json,re,zipfile
 from pathlib import Path
 from struct import unpack
+from history import load_baseline
 ROOT=Path(__file__).resolve().parents[1]
 REPO=ROOT.parents[1]
 STATE=ROOT/'production/feedback-v6'
@@ -15,7 +16,7 @@ inserted_artworks=0
 inserted_panels=0
 layout_revisions=0
 for n in range(1,11):
- d=directory(n);m=load(d/'manifest.json');baseline=load(STATE/'baseline'/f'episode-{n:02d}.json')
+ d=directory(n);m=load(d/'manifest.json');baseline=load_baseline(f'episode-{n:02d}.json')
  assert m['version']=='context-dialogue-v6'
  covered=set()
  for s in m['shots']:covered.update(s.get('replaces',[s['id']]))
