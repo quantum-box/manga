@@ -149,7 +149,7 @@
       390,
       360
     ],
-    "scope": "All 14 adopted scene images; both final native repairs checked at both widths",
+    "scope": "All 14 adopted scene images; 7 native sound edits checked at both widths, preserving earlier reviewed dialogue and continuity.",
     "limitations": "Browser captures only; no physical device or user approval. Visual legibility is not proof of comprehension or empathy."
   },
   "narrative_review": {
@@ -172,5 +172,23 @@
       "No blackout or new quest in this episode"
     ],
     "reader_acceptance": "not_yet_reviewed_by_user"
+  },
+  "sound_revision": "dialogue_and_sfx_independent_2026_10_07",
+  "sound_review": {
+    "reviewer": "model",
+    "date": "2026-10-07",
+    "widths": [
+      390,
+      360
+    ],
+    "native_edited_strips": 7,
+    "independent_cues": 13,
+    "checks": [
+      "Sounds match the drawn action and are near the source",
+      "No speech balloons or tails around sound effects",
+      "Dialogue remains legible and unchanged",
+      "Listener reactions, doubt, invitation and relief retain quiet"
+    ],
+    "limitations": "Browser captures only. Small ambient lettering is intentionally subdued; no claim that every glyph is at least 20px. No physical device or reader acceptance."
   }
 }

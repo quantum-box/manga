@@ -390,3 +390,103 @@ Edit ONLY the artwork visible INSIDE the desktop monitor in the TOP panel of thi
 Edit ONLY the Japanese lettering and white speech balloon in panel THREE of this vertical-scroll comic (the workbench/sword close-up, Sena's armored hand). Replace the existing utterance「カイの剣、使ってみたよ。」with EXACTLY「カイが作った剣、使ってみたよ。」. Use upright vertical Japanese printed manga lettering; TWO columns RIGHT to LEFT: right column「カイが作った剣、」, left column「使ってみたよ。」. Keep the lettering large and clear, around 40px glyph height on this 724px-wide image. Increase the balloon height or width slightly ONLY within panel THREE if needed, with white inset padding, without covering the armored fingers or the brass sword guard. The balloon tail points to Sena offscreen above/right. Do NOT add any text, duplicate the utterance, or change any other bubble. Preserve all four panel borders and proportions, Kai's face/clothes, Sena's face/armor, hands, the ONE steel sword with thin orange inset, workbench, blue cloth doorway, palette, backgrounds, and every other utterance exactly. This edit clarifies that Kai CREATED this prototype; it is not someone else's looted sword.
 
 ```
+
+## 2026-10-07 発話と効果音を分けた実行済み部分編集
+
+前の指示は実使用履歴として保持。次回生成用の修正版は PROMPTS-NEXT.md。以下は実行済み編集のみ。
+
+### r03-sounds
+
+```text
+Use case: precise-object-edit. Edit the supplied CURRENT finished Japanese Webtoon strip. Change ONLY the specified drawn sound effects. Preserve the canvas aspect ratio, all panel frames and gutters, every face, expression, body, clothing, hand/fingers, weapon, vent, tools, props, colors, lighting, backgrounds, speech/thought balloons and their EXACT existing Japanese text. Do not regenerate or recompose the scene. Sound effects are drawn lettering near their source, outside speech/thought balloons; NO oval, cloud, tail, speaker label or new narration. Dialogue is vertically lettered, but sound orientation follows the action. Keep sounds modest and readable at 360px. Protect faces, fingers, the vent, contact points and existing words. No new action, sound source, smoke, explosion or extra sword. Keep every unlisted panel quiet, especially the listener reactions and relief.
+Edit target: episode-01/art/r03.png. Scene: 向かう先. There are 4 narrative panels; a same-row inset still has its own narrative index.
+Narrative panel 1. EXACT SFX: コツ コツ. Cause: 冒険者の靴が石畳へ接地する. Placement: 上の広いコマ、奥の歩く一団の足元の石畳。カイの腕や塔を避ける. Style: 小さな硬い灰黒色の描き文字。二拍の間を少し空ける.
+Narrative panel 4. EXACT SFX: コツ. Cause: カイの靴が工房の石の敷居へ接地する. Placement: 最下段、後ろ姿の靴に近い空いた石段. Style: 小さく硬い灰黒色の描き文字。靴と足の輪郭を隠さない.
+Preserve exact existing dialogue/display text without any changes:
+Narrative panel 3: カイ — 昨日の剣、どうだったかな。
+
+```
+
+### r04-sounds
+
+```text
+Use case: precise-object-edit. Edit the supplied CURRENT finished Japanese Webtoon strip. Change ONLY the specified drawn sound effects. Preserve the canvas aspect ratio, all panel frames and gutters, every face, expression, body, clothing, hand/fingers, weapon, vent, tools, props, colors, lighting, backgrounds, speech/thought balloons and their EXACT existing Japanese text. Do not regenerate or recompose the scene. Sound effects are drawn lettering near their source, outside speech/thought balloons; NO oval, cloud, tail, speaker label or new narration. Dialogue is vertically lettered, but sound orientation follows the action. Keep sounds modest and readable at 360px. Protect faces, fingers, the vent, contact points and existing words. No new action, sound source, smoke, explosion or extra sword. Keep every unlisted panel quiet, especially the listener reactions and relief.
+Edit target: episode-01/art/r04-created.png. Scene: 帰ってきた剣. There are 4 narrative panels; a same-row inset still has its own narrative index.
+Narrative panel 3. EXACT SFX: コト. Cause: セナが一本の試作剣を木の台へ置く. Placement: 第三段、鍔・柄と台の接触に近い空いた木目。左のセリフと右の手を避ける. Style: 控えめな丸みのある黒の描き文字、細い淡色縁.
+Preserve exact existing dialogue/display text without any changes:
+Narrative panel 1: セナ — カイ、今いい？
+Narrative panel 2: カイ — セナさん。おかえり。
+Narrative panel 3: セナ — カイが作った剣、使ってみたよ。
+Narrative panel 4: カイ — ……どうだった？
+
+```
+
+### r06-sounds
+
+```text
+Use case: precise-object-edit. Edit the supplied CURRENT finished Japanese Webtoon strip. Change ONLY the specified drawn sound effects. Preserve the canvas aspect ratio, all panel frames and gutters, every face, expression, body, clothing, hand/fingers, weapon, vent, tools, props, colors, lighting, backgrounds, speech/thought balloons and their EXACT existing Japanese text. Do not regenerate or recompose the scene. Sound effects are drawn lettering near their source, outside speech/thought balloons; NO oval, cloud, tail, speaker label or new narration. Dialogue is vertically lettered, but sound orientation follows the action. Keep sounds modest and readable at 360px. Protect faces, fingers, the vent, contact points and existing words. No new action, sound source, smoke, explosion or extra sword. Keep every unlisted panel quiet, especially the listener reactions and relief.
+Edit target: episode-01/art/r06.png. Scene: 三回目の前で. There are 4 narrative panels; a same-row inset still has its own narrative index.
+Narrative panel 2. EXACT SFX: コン. Cause: 第一打の鋼の刃が木の標的へ当たる. Placement: 第二段、左の刃と木の接触点の近く。刃・木片・顔・一回目のセリフを避ける. Style: 中程度の角張った黒い描き文字、淡色の細い縁。大爆発の音にしない.
+Narrative panel 3. EXACT SFX: コン. Cause: 第二打の鋼の刃が同じ木の標的へ当たる. Placement: 第三段、左の木と刃の接触付近の空き。二回目のセリフを避ける. Style: 第一打と同じ重さの角張った描き文字、淡色の細い縁.
+Preserve exact existing dialogue/display text without any changes:
+Narrative panel 1: セナ — ここなら、安全に試せる。
+Narrative panel 2: セナ — 一回目。
+Narrative panel 3: セナ — 二回目。
+Narrative panel 4: セナ — ……ここで止まる。
+
+```
+
+### r08-sounds
+
+```text
+Use case: precise-object-edit. Edit the supplied CURRENT finished Japanese Webtoon strip. Change ONLY the specified drawn sound effects. Preserve the canvas aspect ratio, all panel frames and gutters, every face, expression, body, clothing, hand/fingers, weapon, vent, tools, props, colors, lighting, backgrounds, speech/thought balloons and their EXACT existing Japanese text. Do not regenerate or recompose the scene. Sound effects are drawn lettering near their source, outside speech/thought balloons; NO oval, cloud, tail, speaker label or new narration. Dialogue is vertically lettered, but sound orientation follows the action. Keep sounds modest and readable at 360px. Protect faces, fingers, the vent, contact points and existing words. No new action, sound source, smoke, explosion or extra sword. Keep every unlisted panel quiet, especially the listener reactions and relief.
+Edit target: episode-01/art/r08.png. Scene: どこで止まるのか. There are 4 narrative panels; a same-row inset still has its own narrative index.
+Narrative panel 3. EXACT SFX: カチッ. Cause: 工具で小さな真鍮の蓋の固定が外れる. Placement: 第三段、上の蓋と工具に近い暗い空き。刃じゃないのセリフ、指、工具、開口部を避ける. Style: 小さく硬い金属音の描き文字、黒に薄い明色縁.
+Preserve exact existing dialogue/display text without any changes:
+Narrative panel 1: カイ — 少し、開けてもいい？
+Narrative panel 2: セナ — うん。
+Narrative panel 3: カイ — 刃じゃない……。
+Narrative panel 4: カイ — 熱の逃げ道が、詰まってる。
+
+```
+
+### r09-sounds
+
+```text
+Use case: precise-object-edit. Edit the supplied CURRENT finished Japanese Webtoon strip. Change ONLY the specified drawn sound effects. Preserve the canvas aspect ratio, all panel frames and gutters, every face, expression, body, clothing, hand/fingers, weapon, vent, tools, props, colors, lighting, backgrounds, speech/thought balloons and their EXACT existing Japanese text. Do not regenerate or recompose the scene. Sound effects are drawn lettering near their source, outside speech/thought balloons; NO oval, cloud, tail, speaker label or new narration. Dialogue is vertically lettered, but sound orientation follows the action. Keep sounds modest and readable at 360px. Protect faces, fingers, the vent, contact points and existing words. No new action, sound source, smoke, explosion or extra sword. Keep every unlisted panel quiet, especially the listener reactions and relief.
+Edit target: episode-01/art/r09.png. Scene: 直す理由. There are 5 narrative panels; a same-row inset still has its own narrative index.
+Narrative panel 4. EXACT SFX: カリカリ. Cause: 細い工具が溝の付着物をかき出す. Placement: 細い斜めの工具接写、既存のカチの位置だけ。手・工具先・溝を避ける. Style: 小さく細いざらついた描き文字、二拍。既存のカチを置換.
+Narrative panel 5. EXACT SFX: カチッ. Cause: カイが真鍮の蓋を元の場所へ固定する. Placement: 最下段、押さえた蓋に近い作業台の空き。もう一回試そうのセリフと指を避ける. Style: 小さく硬い金属音、細い淡色縁.
+Replace ONLY the existing scraping sound カチ with カリカリ; do not retain both. Add the separate カチッ only beside the final closed cover, never in the scraping panel.
+Preserve exact existing dialogue/display text without any changes:
+Narrative panel 1: セナ — 熱？
+Narrative panel 2: カイ — 光を出すと、ここが熱くなる。
+Narrative panel 3: カイ — 逃げないと、止まる。
+Narrative panel 5: カイ — もう一回、試そう。
+
+```
+
+### r11-sounds
+
+```text
+Use case: precise-object-edit. Edit the supplied CURRENT finished Japanese Webtoon strip. Change ONLY the specified drawn sound effects. Preserve the canvas aspect ratio, all panel frames and gutters, every face, expression, body, clothing, hand/fingers, weapon, vent, tools, props, colors, lighting, backgrounds, speech/thought balloons and their EXACT existing Japanese text. Do not regenerate or recompose the scene. Sound effects are drawn lettering near their source, outside speech/thought balloons; NO oval, cloud, tail, speaker label or new narration. Dialogue is vertically lettered, but sound orientation follows the action. Keep sounds modest and readable at 360px. Protect faces, fingers, the vent, contact points and existing words. No new action, sound source, smoke, explosion or extra sword. Keep every unlisted panel quiet, especially the listener reactions and relief.
+Edit target: episode-01/art/r11.png. Scene: 二回、そして. There are 4 narrative panels; a same-row inset still has its own narrative index.
+Narrative panel 1. EXACT SFX: コン. Cause: カイの第一打が木の標的へ当たる. Placement: 上の段、既存の白いコンの楕円を除去し、その近くの刃と標的の接触を示す空きへ. Style: 楕円・尾を除いた角張った黒の描き文字、細い白縁。自然に絵へなじませる.
+Narrative panel 2. EXACT SFX: コン. Cause: カイの第二打が同じ木の標的へ当たる. Placement: 第二段、既存の白いコンの楕円を除去し、同じ接触のそばの空きへ. Style: 第一打と同じ描き文字、細い白縁。吹き出しを付けない.
+Narrative panel 3. EXACT SFX: スゥ…. Cause: 修理後の鍔の溝から魔力の熱を逃がす淡い粒が抜ける. Placement: 第三段、真鍮の溝と橙の粒の近くの暗い空き。握った手と溝を避ける. Style: 打撃より小さく細い柔らかな橙灰の描き文字、淡い縁。煙や炎を追加しない.
+Remove ONLY the two white sound ovals around コン and reconstruct their small former background areas before drawing those two sounds unboxed. The fourth face panel must remain completely quiet.
+
+```
+
+### r12-sounds
+
+```text
+Use case: precise-object-edit. Edit the supplied CURRENT finished Japanese Webtoon strip. Change ONLY the specified drawn sound effects. Preserve the canvas aspect ratio, all panel frames and gutters, every face, expression, body, clothing, hand/fingers, weapon, vent, tools, props, colors, lighting, backgrounds, speech/thought balloons and their EXACT existing Japanese text. Do not regenerate or recompose the scene. Sound effects are drawn lettering near their source, outside speech/thought balloons; NO oval, cloud, tail, speaker label or new narration. Dialogue is vertically lettered, but sound orientation follows the action. Keep sounds modest and readable at 360px. Protect faces, fingers, the vent, contact points and existing words. No new action, sound source, smoke, explosion or extra sword. Keep every unlisted panel quiet, especially the listener reactions and relief.
+Edit target: episode-01/art/r12.png. Scene: あと一撃が出た. There are 5 narrative panels; a same-row inset still has its own narrative index.
+Narrative panel 1. EXACT SFX: ギュッ. Cause: カイが第三打の前に剣の柄を握り直す. Placement: 最上段、握る手に近い暗い空き。指と柄と刃を避ける. Style: 小さく締まった黒い描き文字、淡い細縁.
+Narrative panel 2. EXACT SFX: コン. Cause: 三打目の刃が同じ木の標的へ当たる. Placement: 第二段の既存のコンをそのまま保持. Style: 既存の描き文字を保持。新たなコンを重複させない.
+Preserve exact existing dialogue/display text without any changes:
+Narrative panel 4: セナ — 出た。
+Narrative panel 5: カイ — ……よかった。
+
+```

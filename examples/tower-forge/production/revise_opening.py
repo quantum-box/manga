@@ -2,11 +2,12 @@
 """Prepare the pacing revision without replacing a reader until its art exists."""
 import json
 from pathlib import Path
+from panel_lettering import make_panel, normalize_panel, render_panel_lettering, panel_board
 
 ROOT = Path(__file__).resolve().parents[1]
 
 def p(art, speaker='', text='', columns=None, voice='普通の声'):
-    return dict(art=art, speaker=speaker, text=text, columns=columns or ([text] if text else []), voice=voice)
+    return make_panel(art,speaker,text,columns,voice)
 
 def s(name, location, purpose, panels, gap=70, ratio='1:3'):
     return dict(name=name, location=location, purpose=purpose, panels=panels, gap=gap, ratio=ratio,
@@ -104,31 +105,41 @@ Storytelling: calm, clear emotional progression, one principal understanding per
 
 Panel design: use the SPECIFIC unequal panel widths, heights, staggered placement, borderless landscape and occasional diagonal action frames described below. These panels are successive moments, not simultaneous duplicate people. Clear top-to-bottom flow, same-row inserts read right to left. White gutters, substantial calm breathing room between dialogue/response panels; not a uniform four-box grid and not four cramped panels inside a phone screen. Every tiny panel focuses on a hand, face or component rather than a tiny whole scene. Detailed background ONLY for orientation and the giant tower reveal. Simple backgrounds for emotion. Keep words, faces, fingers and the vent large and separate.
 
-Lettering: true Japanese vertical speech, upright black printed manga glyphs, columns RIGHT to LEFT, each column top-to-bottom. Use LARGE glyphs roughly 5.6 percent of image width (about 20px high when shown at 360px wide). Never shrink text to fit. Exact utterance and column order follow; slash marks in instructions are separators and must not be printed. Spoken words have clean white oval/rounded vertical balloons with tails aimed at the actual speaker. Small quiet speech has softly irregular thin outlines. Internal thought uses thought dots and a softer cloud border. Screen/HUD messages may be horizontal, cyan translucent in the game; real PC message is small ordinary horizontal text. Sound effects belong to the contact producing them. Silent panels have NO balloons or writing. No speaker labels, panel numbers, decorative captions, watermark or extra text. Reserve light blank areas for balloons and generous inset padding. All text is integrated into the raster art.
+Lettering: true Japanese vertical speech, upright black printed manga glyphs, columns RIGHT to LEFT, each column top-to-bottom. Use LARGE glyphs roughly 5.6 percent of image width (about 20px high when shown at 360px wide). Never shrink text to fit. Exact utterance and column order follow; slash marks in instructions are separators and must not be printed. Spoken words have clean white oval/rounded vertical balloons with tails aimed at the actual speaker. Small quiet speech has softly irregular thin outlines. Internal thought uses thought dots and a softer cloud border. Screen/HUD messages may be horizontal, cyan translucent in the game; real PC message is small ordinary horizontal text. Dialogue and sound effects are independent. No dialogue means no speech/thought balloons; render any separately specified sounds. Place sound lettering near its source, outside balloons, with no tails. Do not apply dialogue column rules to sounds. Only panels explicitly specifying no sounds are quiet. No speaker labels, panel numbers, decorative captions, watermark or extra text. Reserve light blank areas for balloons and generous inset padding. All text is integrated into the raster art.
 '''
 
 def main():
+    global scenes
+    current=ROOT/'episode-01/episode.json'
+    if current.exists():
+        scenes=json.loads(current.read_text())['scenes']
+    scenes=[dict(x,panels=[normalize_panel(p) for p in x['panels']]) for x in scenes]
+    design_path=ROOT/'production/episode-01-sound-design.json'
+    if design_path.exists():
+        design=json.loads(design_path.read_text())
+        for key,cues in design['panels'].items():
+            i,j=map(int,key.split('-'))
+            scenes[i-1]['panels'][j-1]['sounds']=cues
     ep=dict(number=1, title='この剣で、一緒に', revision='reader_context_2026_10_07',
             narrative_panel_count=sum(len(x['panels']) for x in scenes), scenes=scenes)
-    prompts=['# 第1話 改稿で実際に使用する指示\n\n参照は人物・衣装・絵柄のみ。初稿の密度とコマ割りは引き継がない。\n']
+    prompts=['# 第1話 次回生成用の指示（未実行）\n\n参照は人物・衣装・絵柄のみ。初稿の密度とコマ割りは引き継がない。\n']
     board=['# 第1話 この剣で、一緒に\n',
            'ユーザーの指摘：密度が高い、1話が短い、展開が速く流れと共感が成立しない。\n',
            '修正の目的は長さそのものではなく、知覚→理解→選択→行動→結果→反応を読者が辿れること。停電は第2話へ送る。\n']
     for i,scene in enumerate(scenes,1):
-        scene['id']=f'{i:02d}'; scene['file']=f'art/r{i:02d}.png'
+        scene['id']=f'{i:02d}'; scene['file']=scene.get('file',f'art/r{i:02d}.png')
         prompt=COMMON+f"\nChapter 1 revised, strip {i}. Image ratio {scene['ratio']}. Scene: {scene['name']}. Place and continuity: {scene['location']}. Purpose: {scene['purpose']}. Exactly {len(scene['panels'])} narrative panels, with unequal sizes as described.\n"
         board += [f"\n## {i:02d} {scene['name']}\n",f"場所・接続：{scene['location']}\n",f"この区間で理解すること：{scene['purpose']}\n",f"次の間：390px幅で{scene['gap']}px。感情の返答待ち、または場面移動の息継ぎ。\n"]
         for j,panel in enumerate(scene['panels'],1):
             prompt+=f"\nPanel {j}, top to bottom. Artwork, camera, size and main focus: {panel['art']}\n"
-            if panel['text']:
-                prompt+=f"Only this utterance, speaker {panel['speaker']}, voice {panel['voice']}. EXACT text: {panel['text']} Vertical columns RIGHT to LEFT: {' / '.join(panel['columns'])}.\n"
-            else: prompt+='Silent panel: absolutely no text.\n'
-            board += [f"\n{j}. {panel['art']}\n",f"   - 話者：{panel['speaker'] or '無言'}。全文：{panel['text'] or 'なし'}。縦列（右から左）：{' / '.join(panel['columns']) or 'なし'}。声：{panel['voice']}。\n",'   - 接続：同じ場所・視線と手・道具の状態を継承。画面外の相手は退場していない。文字は顔・手・排熱溝を避けた余白へ置く。\n']
+            prompt+=render_panel_lettering(panel)
+            board += [f"\n{j}. {panel['art']}\n",panel_board(panel),'   - 接続：同じ場所・視線と手・道具の状態を継承。画面外の相手は退場していない。文字は顔・手・排熱溝を避けた余白へ置く。\n']
         scene['prompt']=prompt
+        scene['prompt_role']='prepared_next_generation_not_executed'
         prompts += [f'\n## r{i:02d}\n\n```text\n{prompt}\n```\n']
-    (ROOT/'production/episode-01-revision.json').write_text(json.dumps(ep,ensure_ascii=False,indent=2)+'\n')
-    (ROOT/'episode-01/PROMPTS-REVISION.md').write_text(''.join(prompts))
-    (ROOT/'production/episode-01-revised-storyboard.md').write_text(''.join(board))
-    print(f"Prepared {len(scenes)} strips, {ep['narrative_panel_count']} narrative panels. Reader not replaced yet.")
+    (ROOT/'production/episode-01-next-generation.json').write_text(json.dumps(ep,ensure_ascii=False,indent=2)+'\n')
+    (ROOT/'episode-01/PROMPTS-NEXT.md').write_text(''.join(prompts))
+    (ROOT/'production/episode-01-next-storyboard.md').write_text(''.join(board))
+    print(f"Prepared next-generation instructions for {len(scenes)} strips, {ep['narrative_panel_count']} panels. Actual used prompts and reader unchanged.")
 
 if __name__=='__main__': main()

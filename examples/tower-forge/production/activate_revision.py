@@ -10,6 +10,9 @@ def write(path,data):
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 
 def main():
+    current_path=ROOT/'episode-01/episode.json'
+    if current_path.exists() and json.loads(current_path.read_text()).get('sound_revision'):
+        raise SystemExit('Sound-edited edition is already adopted. Use adopt_sound_edits.py; do not downgrade to the earlier preparation.')
     ep=json.loads((ROOT/'production/episode-01-revision.json').read_text())
     d=ROOT/'episode-01'
     ep['scenes'][0]['file']='art/r01-monitor.png'

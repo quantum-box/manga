@@ -15,6 +15,7 @@ def main():
     parser.add_argument('source',type=Path)
     parser.add_argument('--repair',default='')
     parser.add_argument('--prompt',type=Path)
+    parser.add_argument('--reference',action='append')
     args=parser.parse_args()
     name=f'r{args.scene:02d}'+('-'+args.repair if args.repair else '')+'.png'
     target=ROOT/'episode-01/art'/name
@@ -26,7 +27,7 @@ def main():
     record=dict(episode=1,scene=args.scene,file=str(target.relative_to(ROOT/'episode-01')),
                         source=str(args.source),sha256=hashlib.sha256(target.read_bytes()).hexdigest(),
                         method='built_in_image_gen',prompt=prompt,repair=args.repair,
-                        references=['reference/party.png'] if not args.repair else [f'episode-01/art/r{args.scene:02d}.png'])
+                        references=args.reference or (['reference/party.png'] if not args.repair else [f'episode-01/art/r{args.scene:02d}.png']))
     with path.open('a+',encoding='utf-8') as handle:
         fcntl.flock(handle,fcntl.LOCK_EX)
         handle.seek(0)

@@ -3,11 +3,12 @@
 """Persist the exact opening-arc lettering and scene-specific image prompts."""
 import json
 from pathlib import Path
+from panel_lettering import make_panel, render_panel_lettering, panel_board
 
 ROOT = Path(__file__).resolve().parents[1]
 
 def p(art, speaker='', text='', columns=None, voice='普通の声'):
-    return dict(art=art, speaker=speaker, text=text, columns=columns or ([text] if text else []), voice=voice)
+    return make_panel(art,speaker,text,columns,voice)
 
 def s(name, location, panels, gap=60, withheld='未登場の敵・後の報酬を描かない'):
     return dict(name=name, location=location, panels=panels, gap=gap, withheld=withheld)
@@ -128,9 +129,7 @@ def make_prompt(ep, scene, idx):
     out=[common + context, f'Episode {ep["number"]}, strip {idx}, scene: {scene["name"]}. Location continuity: {scene["location"]}.']
     for n, panel in enumerate(scene['panels'],1):
         out.append(f'BEAT {n} top-to-bottom. Artwork/camera/focus: {panel["art"].replace("膝の高さの", "人ほどの高さの")}')
-        if panel['text']:
-            out.append(f'Exactly one utterance by {panel["speaker"]}; voice/shape: {panel["voice"]}. Exact text: {panel["text"]}. Vertical columns RIGHT to LEFT: '+ ' / '.join(panel['columns']))
-        else: out.append('Silent beat: no speech bubble, no extra text.')
+        out.append(render_panel_lettering(panel))
     out.append('Withheld information: '+scene['withheld'])
     if ep['number'] in [7,8,9]:
         out.append('Encounter continuity: EXACTLY ONE boss guardian in this room. Never add small guardians or a patrol in the background. Reference 3, if supplied, establishes the SAME boss silhouette and CLOSED square metal chest door, not its panel layout. Its orange engraved channels are exterior conduits, not an exposed core. Until episode 8 strip 4, the door is CLOSED, or open only a hairline with interior completely obscured. Only episode 8 strip 4 and episode 9 may reveal the ONE removable brass storage ring with ONE amber crystal at its center; outer clips hold it in place. Keep the ring and core intact until removal, then the empty chest is visibly empty.')
@@ -161,9 +160,7 @@ def main():
             board.extend([f'## {idx:02d} {scene["name"]}',f'- 場所と接続：{scene["location"]}',f'- 次の場面までの白い間：{scene["gap"]} CSS px（390px幅時）。短い動作は密、結果を受け止める場面は長め。',f'- 伏せる：{scene["withheld"]}', ''])
             for n,panel in enumerate(scene['panels'],1):
                 board.append(f'{n}. **読者が理解すること／絵・カメラ・焦点**：{panel["art"]}')
-                if panel['text']:
-                    board.extend([f'   - 発話者：{panel["speaker"]}。全文：{panel["text"]}。声：{panel["voice"]}。',f'   - 縦列（右→左）：'+ ' / '.join(panel['columns']), '   - 顔・手・重要な部品を避けた上側へ吹き出し。尾は話者へ。HUD・音以外は縦書き。'])
-                else: board.append('   - 無言。文字領域は不要。反応と視線で次へつなぐ。')
+                board.append(panel_board(panel).rstrip())
                 board.append('   - 画面外の仲間は同じ場所にいる。所在・所持品の変更は記載の動作に限る。')
             board.append('')
         (d/'storyboard.md').write_text('\n'.join(board).rstrip()+'\n',encoding='utf-8')
