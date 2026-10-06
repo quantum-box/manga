@@ -1,0 +1,68 @@
+## 場面1 正義の命令
+
+原本 /workspace/generated_images/exec-f52a2b9b-18b2-4dcf-8123-5d3cc027ae0d.png
+
+採用 art/01.png
+
+~~~text
+Create finished artwork for the original Japanese vertical-scroll Webtoon 天魔、二周目。 Match reference 1's crisp detailed anime ink linework, saturated clean cel shading and expressive faces; reference 2 defines the heavenly demon sword ONLY. References are for identity and style, NOT their layout or events. Hero Han Yun (ハン・ユン) is a 20-year-old student in a young martial disciple's body: tousled BLACK hair with a short low ponytail, TEAL eyes, pale skin, off-white training robes with CHARCOAL lapel and a DARK RED sash, black shoes. One subtle bruise on his anatomical LEFT cheek. Kind, uncertain, observant, never a smug sadistic grin. His ability remains LV.999, no weakening or training montage. Heavenly demon sword is ONE straight black blade with a ROUND engraved GOLD guard, black wrapped grip, dark red tassel. No extra swords on the hero. Chinese martial-fantasy setting, not Japanese samurai. Recurring characters when specified: sect master Sei Kou (セイ・コウ), dignified man 50, salt-and-pepper high topknot, navy robe with ivory trim; smith So Rin (ソ・リン), young adult woman 20, short black bob, amber eyes, small bronze hairclip, ivory sleeves, teal work vest, dark apron, practical expression; Hakujin (白燼), man 30, long WHITE hair tied low, gold eyes, slate-blue robes, dark navy belt; alliance chief Go Tensaku (呉天策), man 55, sleek black hair with gray temples, narrow long moustache, plum robes with gold crane embroidery. Only introduce characters mentioned in this scene. Four consecutive vignettes reading TOP TO BOTTOM, each confined to its own band. ONE tall portrait artwork, intended ratio 1:3, at least 1024x3072 if possible. Vary composition: small close-ups, offset action beats, one large borderless focal view; no equal rectangular grid, no poster or montage of simultaneous events. Soft ivory/white edges. Large readable faces/hands and correct object continuity. Incorporate the speech balloons AND exact JAPANESE text into the artwork. Speech is upright VERTICAL Japanese: characters top-to-bottom, columns RIGHT TO LEFT, reading balloons right-to-left within a vignette. Use ONLY the supplied text; punctuation must be exact; text is large, roughly 55-65px per glyph at 1024px width, generously padded smooth oval white balloons with tails pointing to the named speaker. Avoid covering faces or hands. NO chapter titles, translations, labels, page numbers, extra words, watermark. Short inner thoughts can use small rectangular white captions, also vertical. System notices, when present, are translucent dark navy/CYAN restrained holograms in the hero's field of vision, slightly soft glowing letters, plain Japanese sans serif, not golden ornaments. Do not depict information reserved for later scenes. Panel labels in instructions are not printed.
+Continuity for episodes 6-10: hero off-white robes have been WASHED, only faint LEFT cheek bruise. Reference 3 defines So Rin's face, black bob with tiny tied section and bronze clip; her wrists are FREE, no shackles, no cage, no fresh wounds. Reference 4 defines WHITE-haired Hakujin's facial identity and slate-blue robes ONLY; do not copy its flashback giant or arena composition. His RIGHT wrist seal exists ONLY in episode 6 scene 1 and scene 2 vignettes 1-3; after episode 6 scene 2 vignette 3 it is gone permanently. Chief Go Tensaku, when specified, is dignified sinister man 55, black hair slick high topknot with gray temples, narrow LONG moustache, plum robes with GOLD CRANE embroidery, distinct from all other men. Maintain the same face across appearances.
+Episode 7, scene 1, 正義の命令.
+Vignette 1: Daybreak town square. Yun, So Rin and Hakujin at street edge, sword sheathed bronze disk at sash. Alliance guards blue-white robes form a cordon, long pole weapons aimed outward. No battle yet.
+Exact speech by 盟の使者: 「天魔と、その仲間を捕らえよ！」
+
+Vignette 2: A worried middle-aged town mother shields adult son while guards point to Hakujin's white hair, Yun looks at frightened townspeople.
+Exact speech by 町の母: 「その人が、うちの子を助けたのに。」
+
+Vignette 3: Yun looks at angry guards and innocent crowd, palm open to deescalate.
+Exact inner thought by ハン・ユン: 「ここで戦ったら、町が壊れる。」
+
+Vignette 4: Smith So Rin taps a small BRONZE memory prism taken from her apron pocket, firm eyes. Prism non-glowing for now, right wrist free.
+Exact speech by ソ・リン: 「宝庫の記録なら、私が持ってる。」
+~~~
+
+## 場面2 奪った歴史
+
+原本 /workspace/generated_images/exec-f376bee1-ad09-46a4-a1a4-686dc4a85f3c.png
+
+採用 art/02.png
+
+~~~text
+Create finished artwork for the original Japanese vertical-scroll Webtoon 天魔、二周目。 Match reference 1's crisp detailed anime ink linework, saturated clean cel shading and expressive faces; reference 2 defines the heavenly demon sword ONLY. References are for identity and style, NOT their layout or events. Hero Han Yun (ハン・ユン) is a 20-year-old student in a young martial disciple's body: tousled BLACK hair with a short low ponytail, TEAL eyes, pale skin, off-white training robes with CHARCOAL lapel and a DARK RED sash, black shoes. One subtle bruise on his anatomical LEFT cheek. Kind, uncertain, observant, never a smug sadistic grin. His ability remains LV.999, no weakening or training montage. Heavenly demon sword is ONE straight black blade with a ROUND engraved GOLD guard, black wrapped grip, dark red tassel. No extra swords on the hero. Chinese martial-fantasy setting, not Japanese samurai. Recurring characters when specified: sect master Sei Kou (セイ・コウ), dignified man 50, salt-and-pepper high topknot, navy robe with ivory trim; smith So Rin (ソ・リン), young adult woman 20, short black bob, amber eyes, small bronze hairclip, ivory sleeves, teal work vest, dark apron, practical expression; Hakujin (白燼), man 30, long WHITE hair tied low, gold eyes, slate-blue robes, dark navy belt; alliance chief Go Tensaku (呉天策), man 55, sleek black hair with gray temples, narrow long moustache, plum robes with gold crane embroidery. Only introduce characters mentioned in this scene. Four consecutive vignettes reading TOP TO BOTTOM, each confined to its own band. ONE tall portrait artwork, intended ratio 1:3, at least 1024x3072 if possible. Vary composition: small close-ups, offset action beats, one large borderless focal view; no equal rectangular grid, no poster or montage of simultaneous events. Soft ivory/white edges. Large readable faces/hands and correct object continuity. Incorporate the speech balloons AND exact JAPANESE text into the artwork. Speech is upright VERTICAL Japanese: characters top-to-bottom, columns RIGHT TO LEFT, reading balloons right-to-left within a vignette. Use ONLY the supplied text; punctuation must be exact; text is large, roughly 55-65px per glyph at 1024px width, generously padded smooth oval white balloons with tails pointing to the named speaker. Avoid covering faces or hands. NO chapter titles, translations, labels, page numbers, extra words, watermark. Short inner thoughts can use small rectangular white captions, also vertical. System notices, when present, are translucent dark navy/CYAN restrained holograms in the hero's field of vision, slightly soft glowing letters, plain Japanese sans serif, not golden ornaments. Do not depict information reserved for later scenes. Panel labels in instructions are not printed.
+Continuity for episodes 6-10: hero off-white robes have been WASHED, only faint LEFT cheek bruise. Reference 3 defines So Rin's face, black bob with tiny tied section and bronze clip; her wrists are FREE, no shackles, no cage, no fresh wounds. Reference 4 defines WHITE-haired Hakujin's facial identity and slate-blue robes ONLY; do not copy its flashback giant or arena composition. His RIGHT wrist seal exists ONLY in episode 6 scene 1 and scene 2 vignettes 1-3; after episode 6 scene 2 vignette 3 it is gone permanently. Chief Go Tensaku, when specified, is dignified sinister man 55, black hair slick high topknot with gray temples, narrow LONG moustache, plum robes with GOLD CRANE embroidery, distinct from all other men. Maintain the same face across appearances.
+Episode 7, scene 2, 奪った歴史.
+Vignette 1: Close So Rin sets bronze prism into slot in town memorial pedestal, Yun protects crowd with raised LEFT palm and cyan barrier. Sword sheathed.
+Exact speech by ソ・リン: 「鍛冶の道具は、嘘を刻まない。」
+
+Vignette 2: Prism projects translucent moving images ABOVE square: alliance soldiers carrying gold from underground treasury, adult craftsmen taken into prison. No text, no illegible pages, original sober memory shot.
+Exact speech by 町の母: 「これが、正派のしたこと？」
+
+Vignette 3: Hakujin steps forward in front of projection, RIGHT wrist bare, gold eyes steady and grieving, townspeople listen.
+Exact speech by 白燼: 「俺の殺意も、命令だった。」
+
+Vignette 4: One young guard lowers spear, conflict visible on face. Yun opens empty RIGHT hand offering surrender, sword stays sheathed.
+Exact speech by ハン・ユン: 「確かめてから、選んでくれ。」
+~~~
+
+## 場面3 書き直される町
+
+原本 /workspace/generated_images/exec-9c4712d2-0ef1-41c4-be6b-6369e6afea5b.png
+
+採用 art/03.png
+
+~~~text
+Create finished artwork for the original Japanese vertical-scroll Webtoon 天魔、二周目。 Match reference 1's crisp detailed anime ink linework, saturated clean cel shading and expressive faces; reference 2 defines the heavenly demon sword ONLY. References are for identity and style, NOT their layout or events. Hero Han Yun (ハン・ユン) is a 20-year-old student in a young martial disciple's body: tousled BLACK hair with a short low ponytail, TEAL eyes, pale skin, off-white training robes with CHARCOAL lapel and a DARK RED sash, black shoes. One subtle bruise on his anatomical LEFT cheek. Kind, uncertain, observant, never a smug sadistic grin. His ability remains LV.999, no weakening or training montage. Heavenly demon sword is ONE straight black blade with a ROUND engraved GOLD guard, black wrapped grip, dark red tassel. No extra swords on the hero. Chinese martial-fantasy setting, not Japanese samurai. Recurring characters when specified: sect master Sei Kou (セイ・コウ), dignified man 50, salt-and-pepper high topknot, navy robe with ivory trim; smith So Rin (ソ・リン), young adult woman 20, short black bob, amber eyes, small bronze hairclip, ivory sleeves, teal work vest, dark apron, practical expression; Hakujin (白燼), man 30, long WHITE hair tied low, gold eyes, slate-blue robes, dark navy belt; alliance chief Go Tensaku (呉天策), man 55, sleek black hair with gray temples, narrow long moustache, plum robes with gold crane embroidery. Only introduce characters mentioned in this scene. Four consecutive vignettes reading TOP TO BOTTOM, each confined to its own band. ONE tall portrait artwork, intended ratio 1:3, at least 1024x3072 if possible. Vary composition: small close-ups, offset action beats, one large borderless focal view; no equal rectangular grid, no poster or montage of simultaneous events. Soft ivory/white edges. Large readable faces/hands and correct object continuity. Incorporate the speech balloons AND exact JAPANESE text into the artwork. Speech is upright VERTICAL Japanese: characters top-to-bottom, columns RIGHT TO LEFT, reading balloons right-to-left within a vignette. Use ONLY the supplied text; punctuation must be exact; text is large, roughly 55-65px per glyph at 1024px width, generously padded smooth oval white balloons with tails pointing to the named speaker. Avoid covering faces or hands. NO chapter titles, translations, labels, page numbers, extra words, watermark. Short inner thoughts can use small rectangular white captions, also vertical. System notices, when present, are translucent dark navy/CYAN restrained holograms in the hero's field of vision, slightly soft glowing letters, plain Japanese sans serif, not golden ornaments. Do not depict information reserved for later scenes. Panel labels in instructions are not printed.
+Continuity for episodes 6-10: hero off-white robes have been WASHED, only faint LEFT cheek bruise. Reference 3 defines So Rin's face, black bob with tiny tied section and bronze clip; her wrists are FREE, no shackles, no cage, no fresh wounds. Reference 4 defines WHITE-haired Hakujin's facial identity and slate-blue robes ONLY; do not copy its flashback giant or arena composition. His RIGHT wrist seal exists ONLY in episode 6 scene 1 and scene 2 vignettes 1-3; after episode 6 scene 2 vignette 3 it is gone permanently. Chief Go Tensaku, when specified, is dignified sinister man 55, black hair slick high topknot with gray temples, narrow LONG moustache, plum robes with GOLD CRANE embroidery, distinct from all other men. Maintain the same face across appearances.
+Episode 7, scene 3, 書き直される町.
+Vignette 1: Some guards lower weapons and make room; mother places a bowl of hot tea in Yun's hands, he accepts with surprise. Smith and white-haired ally share quiet relief.
+Exact speech by 町の母: 「今度は、私たちが匿う。」
+
+Vignette 2: Yun sits at modest tea stall with companions, holding bowl two hands. Human warmth, no grand throne.
+Exact inner thought by ハン・ユン: 「画面の名前だけじゃ、なかった。」
+
+Vignette 3: Sudden cyan translucent hologram visible only to Yun, text exactly two horizontal lines: シナリオ逸脱 / 補正開始. He freezes, bowl placed safely on table.
+Exact horizontal hologram lines, top to bottom: シナリオ逸脱 / 補正開始
+
+Vignette 4: Town street at dusk, several adult guards' eyes become blank and thin BLACK bands wrap wrists, mother protected behind stall. Yun stands alarmed. Do not show ensuing fight or arena reward shields yet.
+Exact speech by ハン・ユン: 「……今度は、町ごと？」
+~~~
