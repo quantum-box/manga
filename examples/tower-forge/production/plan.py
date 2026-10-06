@@ -141,7 +141,14 @@ def make_prompt(ep, scene, idx):
     return '\n'.join(out)
 
 def main():
+    current_path=ROOT/'production/episodes.json'
+    if current_path.exists():
+        current=json.loads(current_path.read_text())
+        for idx,ep in enumerate(current):
+            if ep.get('revision'):EPISODES[idx]=ep
     for ep in EPISODES:
+        if ep.get('revision'):
+            continue  # Preserve the separately revised script and exact used prompts.
         d=ROOT/f'episode-{ep["number"]:02d}'
         (d/'art').mkdir(parents=True,exist_ok=True)
         prompts=[]
@@ -165,6 +172,6 @@ def main():
     (ROOT/'production/episodes.json').write_text(json.dumps(EPISODES,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     if not (ROOT/'reference/PROMPTS.md').exists():
         (ROOT/'reference/PROMPTS.md').write_text('# 共通の人物参照\n\n組み込み image_gen で生成した三人の全身と顔の参照。原本を加工せず party.png へコピー。\n\nカイ：茶髪と琥珀の一房、藍の短いマント、白シャツ、革ベスト、鋼の片手剣。\nセナ：銀金の低いポニーテール、青い布と銀鎧、三角盾。\nイリス：紫ボブ、青緑のマント、琥珀石一つの木の杖。\n\n用途：同一性と画風の基準。コマの構成や同時に描く人物数の基準にはしない。\n',encoding='utf-8')
-    print('10 episodes, 40 image scenes, 160 scripted beats saved.')
+    print(f"{len(EPISODES)} episode plans, {sum(len(ep['scenes']) for ep in EPISODES)} image scenes saved. Existing revised scripts preserved.")
 
 if __name__=='__main__':main()

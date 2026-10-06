@@ -1,6 +1,7 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "episode": 2,
+  "revision": "initial_draft",
   "viewports": [
     {
       "allLoaded": true,
@@ -8,24 +9,24 @@
       "figures": [
         {
           "height": 780,
-          "top": 198.720703125
+          "top": 302.91015625
         },
         {
           "height": 780,
-          "top": 1038.720703125
+          "top": 1142.91015625
         },
         {
           "height": 780,
-          "top": 1898.720703125
+          "top": 2002.91015625
         },
         {
           "height": 780,
-          "top": 2738.720703125
+          "top": 2842.91015625
         }
       ],
       "height": 844,
       "imageCount": 4,
-      "pageHeight": 3635,
+      "pageHeight": 3739,
       "pageWidth": 390,
       "width": 390
     },
@@ -35,31 +36,40 @@
       "figures": [
         {
           "height": 720,
-          "top": 198.720703125
+          "top": 302.91015625
         },
         {
           "height": 720,
-          "top": 974.1015625
+          "top": 1078.291015625
         },
         {
           "height": 720,
-          "top": 1767.939453125
+          "top": 1872.12890625
         },
         {
           "height": 720,
-          "top": 2543.3203125
+          "top": 2647.509765625
         }
       ],
       "height": 800,
       "imageCount": 4,
-      "pageHeight": 3379,
+      "pageHeight": 3484,
       "pageWidth": 360,
       "width": 360
     }
   ],
   "raster_lettering_visual": "reviewed_at_both_widths",
   "physical_device_tested": false,
-  "method": "CUA browser metrics and captured scene images",
-  "speaker_tails": "reviewed",
-  "scene_and_prop_continuity": "reviewed"
+  "story_quality_approved_by_user": false,
+  "method": "CUA browser metrics and captured scene images; story comprehension reviewed separately",
+  "visual_review": {
+    "reviewer": "model",
+    "date": "2026-10-07",
+    "widths": [
+      390,
+      360
+    ],
+    "scope": "Unchanged original art reviewed previously; refreshed first scene and next-day caption checked after episode 1 revision",
+    "limitations": "Browser captures only; no physical device or user approval. Visual legibility is not proof of comprehension or empathy."
+  }
 }

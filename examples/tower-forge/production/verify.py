@@ -19,16 +19,18 @@ class Reader(HTMLParser):
 
 def check():
     adopted=json.loads((ROOT/'production/adopted-assets.json').read_text())
+    image_count = 0
     for n in range(1,11):
         d=ROOT/f'episode-{n:02d}'
         ep=json.loads((d/'episode.json').read_text())
         assets=json.loads((d/'assets.json').read_text())
-        assert len(assets)==len(ep['scenes'])==4, n
+        count = len(ep['scenes'])
+        assert len(assets)==count and count > 0, n
         source=Reader(); source.feed((d/'index.html').read_text())
         packed=Reader(); packed.feed((d/'reader.html').read_text())
-        assert len(source.images)==len(packed.images)==4, n
+        assert len(source.images)==len(packed.images)==count, n
         for i,asset in enumerate(assets,1):
-            filename=adopted.get(f'{n}-{i}',{}).get('file',f'art/{i:02d}.png')
+            filename=adopted.get(f'{n}-{i}',{}).get('file',ep['scenes'][i-1]['file'])
             assert asset['file']==source.images[i-1]==filename, (n,i)
             data=(d/filename).read_bytes()
             assert data.startswith(b'\x89PNG\r\n\x1a\n'), (n,i)
@@ -43,9 +45,10 @@ def check():
         assert review['raster_lettering_visual'] in [True,'reviewed_at_both_widths'], n
         for width in [390,360]:
             assert (d/f'webtoon-{width}.jpg').is_file(), (n,width)
-            assert all((d/f'validation/scene-{i:02d}-{width}.jpg').is_file() for i in range(1,5)), (n,width)
+            assert all((d/f'validation/scene-{i:02d}-{width}.jpg').is_file() for i in range(1,count+1)), (n,width)
+        image_count += count
     status=json.loads((ROOT/'production/build-status.json').read_text())
     assert status['ready_episodes']==list(range(1,11))
-    print('Verified 10 readers, 40 adopted PNGs, identical embedded images, 80 phone scene captures.')
+    print(f'Verified 10 readers, {image_count} adopted PNGs, identical embedded images, {image_count*2} phone scene captures. This does not prove story quality.')
 
 if __name__=='__main__': check()

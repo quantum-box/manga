@@ -9,7 +9,7 @@ episode_count_constraint: minimum_200_with_240_working_plan
 scope_source: user_2026_10_06
 initial_production_range: [1, 10]
 premise: players_in_a_VRMMORPG
-adoption_status: first_proposal_not_yet_reviewed_by_user
+adoption_status: user_feedback_requires_pacing_revision_2026_10_07
 ```
 
 ユーザー指定は「200話以上」「王道な剣と魔法」「技術やシステムを世界観へ作り込む」「VRMMORPGの世界、ゲーム自体」。240話は構成上の仮置きで、240話ぴったりの完結を要求されたわけではない。実在する異世界、転生、ゲームへの閉じ込めは前提にしない。

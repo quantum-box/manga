@@ -1,31 +1,72 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "episode": 1,
+  "revision": "reader_context_2026_10_07",
   "viewports": [
     {
       "allLoaded": true,
       "embedded": true,
       "figures": [
         {
-          "height": 780,
+          "height": 1170,
           "top": 198.720703125
         },
         {
-          "height": 780,
-          "top": 1013.7109375
+          "height": 1170,
+          "top": 1478.7109375
         },
         {
-          "height": 780,
-          "top": 1838.701171875
+          "height": 1170,
+          "top": 2748.701171875
         },
         {
-          "height": 780,
-          "top": 2718.69140625
+          "height": 1170,
+          "top": 3988.701171875
+        },
+        {
+          "height": 1170,
+          "top": 5248.701171875
+        },
+        {
+          "height": 1170,
+          "top": 6518.69140625
+        },
+        {
+          "height": 1170,
+          "top": 7808.681640625
+        },
+        {
+          "height": 1170,
+          "top": 9058.681640625
+        },
+        {
+          "height": 1170,
+          "top": 10308.681640625
+        },
+        {
+          "height": 1170,
+          "top": 11578.671875
+        },
+        {
+          "height": 1170,
+          "top": 12848.662109375
+        },
+        {
+          "height": 1170,
+          "top": 14208.662109375
+        },
+        {
+          "height": 1170,
+          "top": 15528.662109375
+        },
+        {
+          "height": 1170,
+          "top": 16868.662109375
         }
       ],
       "height": 844,
-      "imageCount": 4,
-      "pageHeight": 3615,
+      "imageCount": 14,
+      "pageHeight": 18155,
       "pageWidth": 390,
       "width": 390
     },
@@ -34,32 +75,102 @@
       "embedded": true,
       "figures": [
         {
-          "height": 720,
+          "height": 1080,
           "top": 198.720703125
         },
         {
-          "height": 720,
-          "top": 951.025390625
+          "height": 1080,
+          "top": 1380.25390625
         },
         {
-          "height": 720,
-          "top": 1712.55859375
+          "height": 1080,
+          "top": 2552.55859375
         },
         {
-          "height": 720,
-          "top": 2524.86328125
+          "height": 1080,
+          "top": 3697.16796875
+        },
+        {
+          "height": 1080,
+          "top": 4860.244140625
+        },
+        {
+          "height": 1080,
+          "top": 6032.548828125
+        },
+        {
+          "height": 1080,
+          "top": 7223.310546875
+        },
+        {
+          "height": 1080,
+          "top": 8377.1484375
+        },
+        {
+          "height": 1080,
+          "top": 9530.986328125
+        },
+        {
+          "height": 1080,
+          "top": 10703.291015625
+        },
+        {
+          "height": 1080,
+          "top": 11875.595703125
+        },
+        {
+          "height": 1080,
+          "top": 13130.9765625
+        },
+        {
+          "height": 1080,
+          "top": 14349.43359375
+        },
+        {
+          "height": 1080,
+          "top": 15586.357421875
         }
       ],
       "height": 800,
-      "imageCount": 4,
-      "pageHeight": 3361,
+      "imageCount": 14,
+      "pageHeight": 16782,
       "pageWidth": 360,
       "width": 360
     }
   ],
   "raster_lettering_visual": "reviewed_at_both_widths",
   "physical_device_tested": false,
-  "method": "CUA browser metrics and captured scene images",
-  "speaker_tails": "reviewed",
-  "scene_and_prop_continuity": "reviewed"
+  "story_quality_approved_by_user": false,
+  "method": "CUA browser metrics and captured scene images; story comprehension reviewed separately",
+  "visual_review": {
+    "reviewer": "model",
+    "date": "2026-10-07",
+    "widths": [
+      390,
+      360
+    ],
+    "scope": "All 14 adopted scene images; both final native repairs checked at both widths",
+    "limitations": "Browser captures only; no physical device or user approval. Visual legibility is not proof of comprehension or empathy."
+  },
+  "narrative_review": {
+    "planned_and_drawn_panels": 55,
+    "sequence": [
+      "real-world wish to participate",
+      "VR login and walk to workshop",
+      "own prototype returned by tester",
+      "observe third-strike stop",
+      "inspect and clear vent",
+      "Kai tests his own blade",
+      "invitation to fight together",
+      "promise for tomorrow"
+    ],
+    "checks": [
+      "No repair diagnosis before the failure is observed",
+      "No assumption that Kai attended the shared adventure screenshot",
+      "Maker and ownership explicitly stated",
+      "One prototype blade tracked throughout",
+      "No blackout or new quest in this episode"
+    ],
+    "reader_acceptance": "not_yet_reviewed_by_user"
+  }
 }
