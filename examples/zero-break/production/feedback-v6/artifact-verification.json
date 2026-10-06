@@ -3,17 +3,17 @@
   "status": "passed_artifact_checks",
   "totals": {
     "baseline_artworks": 196,
-    "reader_images": 196,
-    "panels": 317,
+    "reader_images": 199,
+    "panels": 324,
     "adopted_revision_records": 57,
     "scripts": 50
   },
   "chapters": [
     {
       "episode": 1,
-      "assets": 30,
-      "panels": 66,
-      "source_sha256": "3dd927d8946ca0806f64dd47b234077974126fb20998505b21846a2c7053c6e2",
+      "assets": 33,
+      "panels": 73,
+      "source_sha256": "d37191b3af9f8c37dff29a884d0628dd1b26930f4c4e855de854d5f76129e5bf",
       "browser_review": "pending"
     },
     {
@@ -80,7 +80,9 @@
       "browser_review": "pending"
     }
   ],
-  "sound_effect_revision_records": 7,
+  "sound_effect_revision_records": 11,
+  "inserted_artworks": 3,
+  "inserted_panels": 7,
   "checks": [
     "all prior source PNG hashes preserved",
     "every baseline scene represented",

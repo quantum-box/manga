@@ -1,0 +1,19 @@
+{
+  "inserts": [
+    {
+      "after": "e01-core",
+      "record": "examples/zero-break/production/episode-01-sfx/inserts/e01-armor-route.json"
+    },
+    {
+      "after": "e01-armor-route",
+      "record": "examples/zero-break/production/episode-01-sfx/inserts/e01-armor-assemble.json"
+    },
+    {
+      "after": "e01-armor-assemble",
+      "record": "examples/zero-break/production/episode-01-sfx/inserts/e01-armor-check.json"
+    }
+  ],
+  "pauseOverrides": {
+    "e01-core": 70
+  }
+}

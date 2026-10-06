@@ -50,6 +50,18 @@ for(const n of (process.argv.length>2?process.argv.slice(2).map(Number):Array.fr
      fs.writeFileSync(path.join(review,'v6-flow-'+width+'-'+String(i).padStart(2,'0')+'.png'),viewport.toBuffer('image/png'));
    }
  }
+ const armorIds=['e01-armor-route','e01-armor-assemble','e01-armor-check'];
+ const armorIndexes=armorIds.map(id=>m.shots.findIndex(s=>s.id===id));
+ if(armorIndexes.every(i=>i>=0)){
+   const width=390,heights=armorIndexes.map(i=>Math.round(images[i].height*width/images[i].width));
+   const board=createCanvas(width*armorIndexes.length,Math.max(...heights)+70),b=board.getContext('2d');
+   b.fillStyle='#ffffff';b.fillRect(0,0,board.width,board.height);
+   armorIndexes.forEach((i,k)=>{
+     b.fillStyle='#203045';b.font='12px sans-serif';b.fillText(armorIds[k],k*width+8,20);
+     b.drawImage(images[i],k*width,40,width,heights[k]);
+   });
+   fs.writeFileSync(path.join(review,'armor-sequence-390.png'),board.toBuffer('image/png'));
+ }
  sourceHashes.forEach(s=>{if(hash(path.join(dir,'art',s.file))!==s.sha256)throw Error('Source altered');});
  fs.writeFileSync(path.join(dir,'raster-export-validation.json'),JSON.stringify({
    edition:m.version,status:'passed_export',method:'native canvas layout from manifest; no HTML or browser rendering',

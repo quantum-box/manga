@@ -111,6 +111,8 @@ Ren：ああ……。
 Ren：ここは？
 
 
+効果音：スッ
+効果音：ギュッ
 
 ## e01-rook-name
 
@@ -255,6 +257,7 @@ Extreme close-up: Ren's BARE RIGHT PALM makes FIRST contact on TOP of same black
 
 
 
+効果音：ぺた
 
 ## e01-waiting
 
@@ -452,6 +455,8 @@ Ren catches Mira before they reach the canvas.
 Ren：つかまって！
 
 
+効果音：ギュッ！
+効果音：バサァッ
 
 ## landing
 
@@ -594,12 +599,14 @@ Ren：ミラ、下がって。
 Ren：今度は俺が止める。
 
 
+効果音：ズン… ズン…
+効果音：ザッ
 
 ## e01-core
 
 A close shot of Ren's BARE hand and his still SOFT BLACK SHIRT at the chest as a cyan star-like core first glows through the fabric. Not full armor; no transformed silhouette anywhere. Dark blue mood, cyan illumination. One small white vertical thought balloon and two vertical rectangular cyan system notices integrated in sequence. Preserve hand anatomy and shirt. System notices are opaque dark cyan rectangles with readable pale cyan upright Japanese lettering, not a speech tail.
 
-表示幅：100%。次までの間：390px幅で250px相当。
+表示幅：100%。次までの間：390px幅で70px相当。
 
 ### コマ1
 
@@ -631,6 +638,99 @@ Ren thought：これは……？
 画面内表示：装甲名：ゼロ・ブレイク
 
 効果音：キィィン…
+
+## e01-armor-route
+
+After the core awakens, cyan energy visibly routes from Ren's chest star along his still-soft black shirt and bare forearm. The first lattice forms at his wrist; no finished full suit yet.
+
+表示幅：100%。次までの間：390px幅で35px相当。
+
+### コマ1
+
+The glowing core supplies the armor, before armor has formed.
+
+注目と接続：Close chest star shines through SOFT shirt; thin cyan paths run toward shoulder and down BARE forearm; exact system notice 装甲展開、開始。
+大きさと枠：full-width tall chest-to-forearm diagonal close-up
+声：system notice; no spoken dialogue
+
+### コマ2
+
+The energy becomes a shape that can hold armor.
+
+注目と接続：Macro BARE wrist and hand with faint cyan geometric lattice wrapping just above wrist. No finished glove yet. Sound シュウウ… outside the lattice.
+大きさと枠：left-aligned82% width, shallow wrist detail
+声：silent
+
+
+画面内表示：装甲展開、開始。
+
+効果音：シュウウ…
+
+## e01-armor-assemble
+
+The cyan lattice becomes the adopted black faceted armor in separate physical close-ups: wrist plates, boot/shin plates, chest plates locking around the single cyan star.
+
+表示幅：100%。次までの間：390px幅で45px相当。
+
+### コマ1
+
+Individual wrist plates take physical shape and snap together.
+
+注目と接続：Black faceted wrist/forearm plates materialize along prior cyan lattice and snap around forearm; fingertips remain bare at this stage. Sound カチッ.
+大きさと枠：right-aligned78% width, shallow forearm detail
+声：silent
+
+### コマ2
+
+The legs become protected next.
+
+注目と接続：Close black angular boot and shin plates fitting over ordinary boot/trousers; same solid cargo ground and canvas rope. Sound ガシャッ.
+大きさと枠：full-width medium-height lower-leg close-up
+声：silent
+
+### コマ3
+
+The chest seals around the existing star, connecting all parts.
+
+注目と接続：Close chest black faceted plates meet around a SINGLE cyan star; red scarf above, cyan seams. Exact notice 装甲固定。 and sound ガキンッ. No face or full-body reveal.
+大きさと枠：left-aligned92% width, taller chest detail
+声：system notice
+
+
+画面内表示：装甲固定。
+
+効果音：カチッ
+効果音：ガシャッ
+効果音：ガキンッ
+
+## e01-armor-check
+
+Ren tests his newly completed black gauntlet with one fist clench. A compact cyan HUD shows the core's finite segmented reserve; he understands the suit moves with him, without revealing its origin or later power system.
+
+表示幅：100%。次までの間：390px幅で150px相当。
+
+### コマ1
+
+Ren can move the gauntlet himself; the armor follows his intent.
+
+注目と接続：Macro new BLACK segmented gauntlet gently clenches one fist; cyan seams, red scarf edge only. EXACT Ren thought ……動かせる。 and sound ギュッ.
+大きさと枠：right-aligned90% width, medium hand close-up
+声：quiet cloud thought with dots
+
+### コマ2
+
+The system completes the connection and shows a finite resource.
+
+注目と接続：Compact translucent cyan HUD on blurred black chest/solid cargo ground: EXACT 救済核残量 over a clean six-segment bar with FOUR cyan segments lit and TWO dark; below EXACT 接続完了。. No numbers or countdown or lore.
+大きさと枠：full-width shallow functional HUD close-up
+声：system notice
+
+Ren thought：……動かせる。
+
+画面内表示：救済核残量
+画面内表示：接続完了。
+
+効果音：ギュッ
 
 ## hero
 

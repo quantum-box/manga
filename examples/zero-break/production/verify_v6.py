@@ -11,6 +11,8 @@ def directory(n):return ROOT/('v5' if n==1 else f'episode-{n:02d}')
 totals=dict(baseline_artworks=0,reader_images=0,panels=0,adopted_revision_records=0,scripts=0)
 chapters=[]
 sound_revisions=0
+inserted_artworks=0
+inserted_panels=0
 for n in range(1,11):
  d=directory(n);m=load(d/'manifest.json');baseline=load(STATE/'baseline'/f'episode-{n:02d}.json')
  assert m['version']=='context-dialogue-v6'
@@ -53,6 +55,17 @@ for n in range(1,11):
    for ref in r['references']:assert sha(REPO/ref['path'])==ref['sha256']
    assert r['method'] and r['prompt']
    sound_revisions+=1
+  if s.get('insertionRecord'):
+   r=load(REPO/s['insertionRecord'])
+   assert r['shot']['id']==s['id'] and r['shot']['file']==s['file']
+   assert r['sha256']==sha(d/'art'/s['file']) and r['prompt']==s['prompt']
+   for key in ('lines','panels','sounds','visible_text'):
+    assert r['shot'].get(key,[])==s.get(key,[])
+   for ref in r['references']:assert sha(REPO/ref['path'])==ref['sha256']
+   if r.get('repairBefore'):
+    before=r['repairBefore'];assert sha(d/'art'/before['file'])==before['sha256']
+   assert s['replaces']==[] and r['method'] and r['prompt']
+   inserted_artworks+=1;inserted_panels+=len(s['panels'])
   count+=1
  assert next(embedded,None) is None
  assert count==len(m['shots'])
@@ -86,9 +99,10 @@ for n,row in enumerate(scripts,1):
   staged=''.join(p['line']['text'] for g in row['panel_staging'] for p in g['panels'] if p.get('line'))
   assert quote_text==staged,n
  totals['scripts']+=1
-assert totals==dict(baseline_artworks=196,reader_images=196,panels=317,adopted_revision_records=57,scripts=50),totals
+assert totals==dict(baseline_artworks=196,reader_images=196+inserted_artworks,panels=317+inserted_panels,adopted_revision_records=57,scripts=50),totals
 report=dict(edition='context-dialogue-v6',status='passed_artifact_checks',totals=totals,chapters=chapters,
  sound_effect_revision_records=sound_revisions,
+ inserted_artworks=inserted_artworks,inserted_panels=inserted_panels,
  checks=['all prior source PNG hashes preserved','every baseline scene represented','actual revision prompts, references and repaired originals preserved','standalone embedded PNGs match raw source bytes','ZIP CRC and extracted HTML match','native export hashes, width and source geometry','iOS HTML and PNG bytes match adopted sources','all fifty scripts staged; existing quoted text preserved for 11-50'],
  browser_review='pending; native exports do not prove browser layout',physical_device_review='not_run')
 (STATE/'artifact-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')

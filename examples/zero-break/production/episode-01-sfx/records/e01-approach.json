@@ -1,0 +1,106 @@
+{
+  "id": "e01-approach",
+  "episode": 1,
+  "file": "sfx-v6-approach.png",
+  "method": "built-in image_gen targeted raster sound-effect edit",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-89f66c9c-8554-436e-822a-0689f5e104f8.png",
+  "sha256": "a7cbb3fa6a5db984cdd9a607831c0ba5e8ccd4419493fd725c6c8de517bdea92",
+  "width": 725,
+  "height": 2169,
+  "sounds": [
+    "ズン… ズン…",
+    "ザッ"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nIn the first wide scene panel add heavy charcoal/violet ズン… ズン… in two descending beats near the giant's lower body/ground, without covering its core or either protagonist. Communicate footsteps of the approaching SAME giant. In the third shielding-gesture panel add compact ザッ in the lower-left ground-side margin alongside Mira's backward movement, clear of Ren's large bare hand. Leave the two close-up thought/speech panels uncluttered. No early armor or cyan glow.\nExact new sound words: ズン… ズン… / ザッ",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/v6-approach.png",
+      "sha256": "188e2c24ca02b0f6fd5cb42f6dc137bbbd10d3503db82845f1b5410d7a3814c1"
+    }
+  ],
+  "repairBefore": {
+    "file": "v6-approach.png",
+    "sha256": "188e2c24ca02b0f6fd5cb42f6dc137bbbd10d3503db82845f1b5410d7a3814c1"
+  },
+  "panels": [
+    {
+      "beat": "Ren stands up after the quiet rescue conversation; the same guardian approaches.",
+      "view": "Ren rising from kneeling on solid lower cargo plaza, Mira standing safely right; torn canvas/rope gives same-location marker. SAME black guardian with VIOLET DIAMOND core is clearly visible approaching in distant upper-right background on the SOLID lower plaza, not the high bridge. No new crest or power.",
+      "frame": "full-width medium framed shared location",
+      "voice": "無言"
+    },
+    {
+      "beat": "The same danger has followed them down.",
+      "view": "ONLY Ren tight face looking past Mira at offscreen approaching SAME guardian, still unarmored.",
+      "frame": "left-aligned84% width, medium close",
+      "voice": "worried cloud thought with dots",
+      "line": {
+        "speaker": "Ren thought",
+        "text": "まだ、来るのか。",
+        "type": "thought"
+      }
+    },
+    {
+      "beat": "He puts Mira behind him.",
+      "view": "Ren BARE open hand directs Mira back toward cargo wall; ordinary shirt, no armor yet. Focus only gesture and her safe backward step.",
+      "frame": "right-aligned92% width, medium framed",
+      "voice": "firm ordinary speech",
+      "line": {
+        "speaker": "Ren",
+        "text": "ミラ、下がって。",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "His choice comes before the power.",
+      "view": "ONLY Ren large determined face/chest, soft shirt and red scarf, Mira safely offscreen behind; no visible blue star or armor yet.",
+      "frame": "full-width large borderless emotional close",
+      "voice": "resolute rounded oval, no shout decoration",
+      "line": {
+        "speaker": "Ren",
+        "text": "今度は俺が止める。",
+        "type": "speech"
+      }
+    }
+  ],
+  "preservedLines": [
+    {
+      "speaker": "Ren thought",
+      "text": "まだ、来るのか。",
+      "type": "thought"
+    },
+    {
+      "speaker": "Ren",
+      "text": "ミラ、下がって。",
+      "type": "speech"
+    },
+    {
+      "speaker": "Ren",
+      "text": "今度は俺が止める。",
+      "type": "speech"
+    }
+  ],
+  "preservedVisibleText": [],
+  "originalPrompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): SAME black stone guardian with violet diamond chest core and violet cracks now approaches on the lower SOLID plaza. Ren still unarmored black short sleeves and red scarf, BARE hands out to shield standing Mira behind him. Torn canvas and cargo remain behind them. Giant, both people and ground show clear depth. Ren looks alarmed then resolute, no armor/glow.\n\nPanel 1, downward order. Frame: full-width medium framed shared location. Reader understands: Ren stands up after the quiet rescue conversation; the same guardian approaches.. Visible camera subject / offscreen continuity: Ren rising from kneeling on solid lower cargo plaza, Mira standing safely right; torn canvas/rope gives same-location marker. SAME black guardian with VIOLET DIAMOND core is clearly visible approaching in distant upper-right background on the SOLID lower plaza, not the high bridge. No new crest or power.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 2, downward order. Frame: left-aligned84% width, medium close. Reader understands: The same danger has followed them down.. Visible camera subject / offscreen continuity: ONLY Ren tight face looking past Mira at offscreen approaching SAME guardian, still unarmored.. Voice / balloon: worried cloud thought with dots.\nONLY speaker: Ren thought. EXACT text: 「まだ、来るのか。」 (render contents only).\nPanel 3, downward order. Frame: right-aligned92% width, medium framed. Reader understands: He puts Mira behind him.. Visible camera subject / offscreen continuity: Ren BARE open hand directs Mira back toward cargo wall; ordinary shirt, no armor yet. Focus only gesture and her safe backward step.. Voice / balloon: firm ordinary speech.\nONLY speaker: Ren. EXACT text: 「ミラ、下がって。」 (render contents only).\nPanel 4, downward order. Frame: full-width large borderless emotional close. Reader understands: His choice comes before the power.. Visible camera subject / offscreen continuity: ONLY Ren large determined face/chest, soft shirt and red scarf, Mira safely offscreen behind; no visible blue star or armor yet.. Voice / balloon: resolute rounded oval, no shout decoration.\nONLY speaker: Ren. EXACT text: 「今度は俺が止める。」 (render contents only).\n",
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "a7cbb3fa6a5db984cdd9a607831c0ba5e8ccd4419493fd725c6c8de517bdea92",
+    "checks": [
+      "exact Japanese text and sound lettering",
+      "character identity, anatomy, costume and continuity",
+      "ordered partial assembly before existing full-body reveal"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "review/v6-contact-360-6.png",
+      "review/v6-contact-390-6.png"
+    ]
+  },
+  "mobile_browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}

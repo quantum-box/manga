@@ -1,0 +1,75 @@
+{
+  "id": "e01-armor-route",
+  "episode": 1,
+  "file": "armor-route.png",
+  "shot": {
+    "id": "e01-armor-route",
+    "file": "armor-route.png",
+    "scene": "After the core awakens, cyan energy visibly routes from Ren's chest star along his still-soft black shirt and bare forearm. The first lattice forms at his wrist; no finished full suit yet.",
+    "shape": "bleed",
+    "pause": 35,
+    "widthPercent": 100,
+    "lines": [],
+    "panels": [
+      {
+        "beat": "The glowing core supplies the armor, before armor has formed.",
+        "view": "Close chest star shines through SOFT shirt; thin cyan paths run toward shoulder and down BARE forearm; exact system notice 装甲展開、開始。",
+        "frame": "full-width tall chest-to-forearm diagonal close-up",
+        "voice": "system notice; no spoken dialogue"
+      },
+      {
+        "beat": "The energy becomes a shape that can hold armor.",
+        "view": "Macro BARE wrist and hand with faint cyan geometric lattice wrapping just above wrist. No finished glove yet. Sound シュウウ… outside the lattice.",
+        "frame": "left-aligned82% width, shallow wrist detail",
+        "voice": "silent"
+      }
+    ],
+    "sounds": [
+      "シュウウ…"
+    ],
+    "visible_text": [
+      {
+        "text": "装甲展開、開始。",
+        "type": "raster system notice"
+      }
+    ],
+    "status": "generated"
+  },
+  "method": "built-in image_gen armor assembly insertion",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-feb171c8-a33e-42c0-bffb-c19a10f6e775.png",
+  "adopted_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-feb171c8-a33e-42c0-bffb-c19a10f6e775.png",
+  "sha256": "408c4bdf8316f441cbb2d2cb5fc34262dc2a3b65ab92f5dff8115bf95ffee12b",
+  "prompt": "Use case: illustration-story. Recompose the input core/armor artwork into the NEXT sequential transformation insert in the SAME adopted Zero Break episode 1. Image 1 is the starting-state/visual-style target; Image 2 is the finished armor design and Ren identity reference ONLY. Preserve the Japanese anime/cel-shaded rendering and same lower solid cargo plaza, torn cream canvas awning, blue-gold city flags in soft background. Ren19: black tousled hair, blue eyes, crimson scarf, soft black short sleeves, charcoal trousers, brown straps before assembly. Finished armor is BLACK angular faceted plates with CYAN seams and a cyan STAR chest core, black segmented gauntlets and boots; NEVER a helmet. Mira remains safe offscreen behind, same black stone giant with violet core remains offscreen ahead. No newly invented characters, weapons, icons, forms, crown or lore. This is not a collage of simultaneous duplicate people. Show sequential close-up steps, UNEQUAL panels, white narrow gutters, top-to-bottom reading. Exact Japanese text and sound effects integrated in raster artwork. Dialogue/thought glyphs are upright, vertical top-to-bottom/right-to-left, bold gothic readable at360px; sounds may angle with action. Cyan system panes are compact functional translucent navy/cyan projections with restrained glow; no ornate plaques or English. Do NOT reveal a completed full-body armored silhouette: that comes in the existing hero panel below. Aim 1024x2048, portrait ratio1:2; make small panels true detail shots, not shrunken full scenes.\n\nPanel 1 is larger: chest-to-bare-forearm close-up shows the SINGLE cyan chest star driving luminous paths OUTWARD through cloth over shoulder and arm. Arm still bare, human fingers unchanged. A compact restrained cyan system rectangle reads EXACT 装甲展開、開始。 in upright vertical Japanese. Panel 2 is a smaller, left-aligned wrist close-up: a delicate cyan angular lattice outlines a future wrist guard above the still-bare hand, with exact slender シュウウ… nearby. No black armor yet, no floating body, no additional labels.",
+  "originalPrompt": null,
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/sfx-v6-core.png",
+      "sha256": "ea88f815854233497ff443c1852f3277e37f3b218520fe5a599086e1be75321c"
+    },
+    {
+      "path": "examples/zero-break/v5/art/sfx-14-hero.png",
+      "sha256": "06b3480a33e9250958be8f59cfe3d9528bd5ecfa928221728efc2ab8e56c87d9"
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "408c4bdf8316f441cbb2d2cb5fc34262dc2a3b65ab92f5dff8115bf95ffee12b",
+    "checks": [
+      "exact Japanese text and sound lettering",
+      "character identity, anatomy, costume and continuity",
+      "ordered partial assembly before existing full-body reveal"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "review/v6-contact-360-6.png",
+      "review/v6-contact-390-6.png"
+    ]
+  },
+  "mobile_browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}

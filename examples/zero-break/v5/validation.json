@@ -1,41 +1,45 @@
 {
   "edition": "context-dialogue-v6",
-  "panels": 66,
-  "readerSourceSha256": "3dd927d8946ca0806f64dd47b234077974126fb20998505b21846a2c7053c6e2",
+  "panels": 73,
+  "readerSourceSha256": "d37191b3af9f8c37dff29a884d0628dd1b26930f4c4e855de854d5f76129e5bf",
   "source_assets_verified": true,
   "visualReview": {
-    "status": "passed",
-    "method": "native raster artwork/layout exports; no browser rendering",
-    "widths": [
+    "status": "passed_native_mobile_image_review",
+    "mobileWidths": [
       360,
       390
     ],
-    "reviewedRasterLettering": true,
-    "reviewedImages": [
-      "review/v6-contact-360-0.png",
-      "review/v6-contact-360-4.png",
-      "review/v6-contact-360-6.png",
-      "review/v6-contact-390-0.png",
-      "review/v6-contact-390-4.png",
-      "review/v6-contact-390-6.png"
+    "checks": [
+      "existing dialogue and panels preserved",
+      "cyan routing precedes plates and completion",
+      "four of six reserve segments lit",
+      "thought dots point toward offscreen head",
+      "full armor reveal and rescue geography remain coherent"
     ],
-    "reviewedFlow": [
-      "review/v6-flow-360-17.png",
-      "review/v6-flow-360-19.png",
-      "review/v6-flow-360-25.png",
+    "evidence": [
+      "review/v6-contact-360-1.png",
+      "review/v6-contact-360-2.png",
+      "review/v6-contact-360-5.png",
+      "review/v6-contact-360-6.png",
+      "review/v6-contact-360-7.png",
+      "review/v6-contact-390-1.png",
+      "review/v6-contact-390-2.png",
+      "review/v6-contact-390-5.png",
+      "review/v6-contact-390-6.png",
+      "review/v6-contact-390-7.png",
+      "review/v6-flow-360-26.png",
+      "review/v6-flow-360-27.png",
+      "review/v6-flow-360-28.png",
+      "review/v6-flow-360-29.png",
+      "review/v6-flow-360-30.png",
+      "review/v6-flow-360-32.png",
+      "review/v6-flow-390-26.png",
       "review/v6-flow-390-27.png",
       "review/v6-flow-390-28.png",
-      "review/v6-flow-390-29.png"
-    ],
-    "checks": [
-      "exact new Japanese sound lettering at both widths",
-      "existing dialogue, narration and system text retained",
-      "faces and hands remain clear",
-      "sound source follows depicted rain, bridge fracture, fall, leap, core, armor and punch",
-      "quiet rescue conversation and final clue remain quiet"
-    ],
-    "unchangedScenes": "23 original assets match the prior adopted manifest hashes",
-    "sourceArtworkUnchangedByExport": true
+      "review/v6-flow-390-29.png",
+      "review/v6-flow-390-30.png",
+      "review/v6-flow-390-32.png"
+    ]
   },
   "mobileBrowserReview": {
     "status": "blocked_by_browser_url_policy",

@@ -55,11 +55,7 @@
         ],
         "evidence": [
           "review/v6-contact-360-0.png",
-          "review/v6-contact-360-4.png",
-          "review/v6-contact-360-6.png",
-          "review/v6-contact-390-0.png",
-          "review/v6-contact-390-4.png",
-          "review/v6-contact-390-6.png"
+          "review/v6-contact-390-0.png"
         ]
       }
     },
@@ -192,7 +188,7 @@
     },
     {
       "id": "e01-greeting",
-      "file": "v6-greeting.png",
+      "file": "sfx-v6-greeting.png",
       "shape": "bleed",
       "pause": 90,
       "widthPercent": 100,
@@ -259,25 +255,37 @@
       "added_context_dialogue": false,
       "status": "generated",
       "generated": true,
-      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading, WHITE outer gutters; explicitly UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nExact continuity/setting (not a request to put everything in every panel): Rook now arrived ONE metre to right of still seated Ren. Rook bends slightly, offers a black-gloved hand, professionally reserved. Ren looks up and raises a BARE hand toward him, no touch yet. Faces and hands clear. No crystal.\n\nPanel 1, downward order. Frame: right-aligned82% width, medium framed close. Reader understands: The approaching knight addresses seated Ren.. Visible camera subject / offscreen continuity: ONLY Rook face bent slightly down; Ren remains seated offscreen left. Same white stone stairs.. Voice / balloon: reserved ordinary thin-black oval.\nONLY speaker: Rook. EXACT text: 「立てるか？」 (render contents only).\nPanel 2, downward order. Frame: left-aligned66% width, shallow hand insert. Reader understands: Help is offered, not yet accepted.. Visible camera subject / offscreen continuity: Rook black-gloved open hand extended toward Ren bare hand. No crystal, no contact yet.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 3, downward order. Frame: left-aligned90% width, medium close-up. Reader understands: Ren answers while still getting his bearings.. Visible camera subject / offscreen continuity: ONLY Ren seated face looking up right, same scarf and shirt.. Voice / balloon: quiet shaky spoken voice, continuous tail.\nONLY speaker: Ren. EXACT text: 「ああ……。」 (render contents only).\nPanel 4, downward order. Frame: full-width tall framed movement. Reader understands: He asks his first question.. Visible camera subject / offscreen continuity: Ren bare hand takes Rook gloved hand and Ren rises a little; tight upper-body shot, not an unexplained new location.. Voice / balloon: ordinary questioning oval.\nONLY speaker: Ren. EXACT text: 「ここは？」 (render contents only).\n",
+      "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nIn panel 2 (Rook offers his black-gloved hand), add small thin スッ beside the open wrist, without covering either hand. In the last panel where Ren's bare hand takes Rook's glove, add medium rounded ギュッ alongside the joined hands, keeping fingers entirely clear. The two sounds should feel like a quiet offering followed by a firm accepting grip; no effects in the face-dialogue panels.\nExact new sound words: スッ / ギュッ",
       "references": [
-        "examples/zero-break/v5/art/a03-greeting.png"
+        "examples/zero-break/v5/art/v6-greeting.png"
       ],
-      "sha256": "e3c3055b2a959fe76f308fa8480b37685253d1714212679f500e169892c5ac6c",
-      "provenance": "context-dialogue-v6",
+      "sha256": "fad0bef74ce69d0dc5744975b5af885eebc9416872908f0e0e22ef67f90e1835",
+      "provenance": "targeted raster sound-effect edit",
       "replaces": [
         "greeting"
       ],
       "visual_review": {
-        "status": "passed_native_image_review",
-        "source_sha256": "e3c3055b2a959fe76f308fa8480b37685253d1714212679f500e169892c5ac6c",
-        "chapter_validation": "../../../v5/validation.json",
+        "status": "passed_native_mobile_image_review",
+        "source_sha256": "fad0bef74ce69d0dc5744975b5af885eebc9416872908f0e0e22ef67f90e1835",
         "checks": [
-          "exact lettering and speakers",
-          "faces, hands, costumes, props",
-          "cause and effect, prior state, no premature reveals"
+          "exact Japanese text and sound lettering",
+          "character identity, anatomy, costume and continuity",
+          "ordered partial assembly before existing full-body reveal"
+        ],
+        "mobile_widths": [
+          360,
+          390
+        ],
+        "evidence": [
+          "review/v6-contact-360-1.png",
+          "review/v6-contact-390-1.png"
         ]
-      }
+      },
+      "sounds": [
+        "スッ",
+        "ギュッ"
+      ],
+      "revisionRecord": "examples/zero-break/production/episode-01-sfx/records/e01-greeting.json"
     },
     {
       "id": "e01-rook-name",
@@ -595,27 +603,45 @@
     },
     {
       "id": "touch",
-      "file": "a09-touch.png",
+      "file": "sfx-a09-touch.png",
       "shape": "right",
       "pause": 25,
       "aspect": "1024x768",
       "alt_ja": "初めて手を置く動作を見せる",
       "scene": "Extreme close-up: Ren's BARE RIGHT PALM makes FIRST contact on TOP of same black faceted crystal. Exactly five relaxed fingers, soft short black sleeve, red scarf blurred behind. Same ornate pointed silver pedestal bottom. Narrow flat inset readout still BLANK. Neutral white reflections no magic. Single contact moment, no faces, text or numbers.",
       "lines": [],
-      "sounds": [],
-      "prompt": "Use case: illustration-story. Asset: finished anime Webtoon art WITH integrated Japanese upright vertical lettering.\nReference1: Ren identity and intact arrival stair/plaza. Reference2: Rook identity, black crystal and silver pedestal design. Do NOT copy their captions or poses and do NOT skip ahead to measurement.\nRen: adult19 black spiky hair, blue eyes, crimson scarf, soft BLACK SHORT-SLEEVE shirt with narrow brown straps, charcoal trousers, ordinary dark boots, BARE hands. Absolutely no armor, glowing star or blue power. Rook: adult22 silver hair blue eyes, silver engraved armor and BLUE cape, BLACK leather gloves, silver armored boots.\nSame white floating city, sunshine, blue/gold banners. No other major characters. High-quality Japanese anime, crisp expressive faces and cel shaded detail, same visual style. Correct hands. ONE moment, not montage, grid or duplicated sequence.\nJapanese: upright glyphs TOP TO BOTTOM, columns RIGHT TO LEFT, never sideways. Exact wording and punctuation only. Bold manga gothic, actual glyphs64–74px at1024px art width, readable at360px. Reshape balloons rather than shrink text. White smooth speech balloons with tails toward correct mouths, thought clouds with dots to Ren. No labels/English/watermark. Do not cover faces, hands or crystal. Clean thin dark comic outline. Varied close shots and full scenes, avoid giant unused margins.\n\nPreferred output aspect 1024x768.\nScene: Extreme close-up: Ren's BARE RIGHT PALM makes FIRST contact on TOP of same black faceted crystal. Exactly five relaxed fingers, soft short black sleeve, red scarf blurred behind. Same ornate pointed silver pedestal bottom. Narrow flat inset readout still BLANK. Neutral white reflections no magic. Single contact moment, no faces, text or numbers.\n\n\nNo dialogue, thoughts, narration, captions or readout text.\nNo sound-effect lettering.\nReference3 locks the NEW assessment station established in the walking shot: the same dark black crystal, ornate pointed silver pedestal, SMALL NARROW FLAT METAL inset readout, and intact lower balcony. Do not copy its walking pose or captions. Keep the readout BLANK until the result shot. Lock scale and design; this device is NOT the hero power.",
-      "generated": true,
-      "provenance": "new v5 art",
-      "references": [
-        "../v4/art/02-arrival.png",
-        "../v4/art/03-guide.png",
-        "art/a06-walk-to-station.png"
+      "sounds": [
+        "ぺた"
       ],
-      "sha256": "87293897433c808cab7f97eadda236dd974c552c35cc450d23af8924499950c5",
+      "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nAdd ぺた once in small soft rounded dark lettering with a clean narrow white border beside the hand-crystal contact, in the open area just to the right of the fingertips. This is a quiet bare palm touching a smooth crystal, not an impact. No light burst, magic energy, vibration or readout yet. Keep the full hand/fingers, crystal facets and blank display visible.\nExact new sound words: ぺた",
+      "generated": true,
+      "provenance": "targeted raster sound-effect edit",
+      "references": [
+        "examples/zero-break/v5/art/a09-touch.png"
+      ],
+      "sha256": "0d4593a0eccca2da8a8f56c1933db98fe74ede45bd57d1a5ced2e984fa4edd09",
       "repairs": [],
       "baseline_sha256": "87293897433c808cab7f97eadda236dd974c552c35cc450d23af8924499950c5",
       "widthPercent": 78,
-      "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      "provenance_v6": "retained adopted art; frame placement reviewed separately",
+      "revisionRecord": "examples/zero-break/production/episode-01-sfx/records/touch.json",
+      "visual_review": {
+        "status": "passed_native_mobile_image_review",
+        "source_sha256": "0d4593a0eccca2da8a8f56c1933db98fe74ede45bd57d1a5ced2e984fa4edd09",
+        "checks": [
+          "exact Japanese text and sound lettering",
+          "character identity, anatomy, costume and continuity",
+          "ordered partial assembly before existing full-body reveal"
+        ],
+        "mobile_widths": [
+          360,
+          390
+        ],
+        "evidence": [
+          "review/v6-contact-360-2.png",
+          "review/v6-contact-390-2.png"
+        ]
+      }
     },
     {
       "id": "e01-waiting",
@@ -1046,12 +1072,8 @@
           390
         ],
         "evidence": [
-          "review/v6-contact-360-0.png",
           "review/v6-contact-360-4.png",
-          "review/v6-contact-360-6.png",
-          "review/v6-contact-390-0.png",
-          "review/v6-contact-390-4.png",
-          "review/v6-contact-390-6.png"
+          "review/v6-contact-390-4.png"
         ]
       },
       "sounds": [
@@ -1109,12 +1131,8 @@
           390
         ],
         "evidence": [
-          "review/v6-contact-360-0.png",
           "review/v6-contact-360-4.png",
-          "review/v6-contact-360-6.png",
-          "review/v6-contact-390-0.png",
-          "review/v6-contact-390-4.png",
-          "review/v6-contact-390-6.png"
+          "review/v6-contact-390-4.png"
         ]
       }
     },
@@ -1169,18 +1187,14 @@
           390
         ],
         "evidence": [
-          "review/v6-contact-360-0.png",
           "review/v6-contact-360-4.png",
-          "review/v6-contact-360-6.png",
-          "review/v6-contact-390-0.png",
-          "review/v6-contact-390-4.png",
-          "review/v6-contact-390-6.png"
+          "review/v6-contact-390-4.png"
         ]
       }
     },
     {
       "id": "e01-catch",
-      "file": "v6-catch.png",
+      "file": "sfx-v6-catch.png",
       "shape": "bleed",
       "pause": 100,
       "widthPercent": 100,
@@ -1209,25 +1223,37 @@
       "added_context_dialogue": false,
       "status": "generated",
       "generated": true,
-      "prompt": "Use case: precise-object-edit / emphatic speech-balloon outline.\nImage1 is the EXACT target: Ren catching Mira in midair. Image2 is a PHOTO supplied ONLY as a reference for the DENSE thick outward jagged/brush rim on the loud balloon. Do not copy its dialogue, characters, photo or layout.\nChange ONLY Ren's existing shout balloon at upper right. Preserve all artwork, faces, bare hands, the supported Mira, clothing, red scarf, setting, framing and composition. Same roughly 4:5 portrait aspect. Keep the exact Japanese つかまって！ in ONE upright top-to-bottom vertical column, large legible printed manga gothic.\nReplace its thin simple starburst with an emphatic white shout balloon surrounded by a bold dark charcoal dense outward tapered jagged/brush rim, like stressed loud comic speech. Variation of thick and thin strokes around the perimeter, roughly 12-20px visual rim at 1024px-wide art, WHITE inner area and generous text inset. A clear pointed sharp speech tail connects toward REN'S OPEN MOUTH, no dots. The outline communicates a loud urgent safety instruction during a rescue, not a villain aura or interior thought.\nFit the rim into the existing balloon area; do not cover hair, face or hand, and do not enlarge it over Mira. Avoid glow, red fill, blood, extra text, labels, new balloons or watermark. The original black panel frame stays unchanged. Everything outside this balloon is an invariant.\n",
+      "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nAdd medium bold ギュッ！ beside Mira's bare hand gripping Ren's shirt at the center-right, clear of all fingers, faces and the existing つかまって！ balloon. Add flowing lighter バサァッ in the lower-left open background alongside the whipping fabric/scarf direction. Sound of holding on is primary; cloth flutter is secondary. Keep Ren unarmored, carrying Mira above the cargo awning, all limbs and their grip, exact pose and location; do not show a new landing or tear.\nExact new sound words: ギュッ！ / バサァッ",
       "references": [
-        "skills/webtoon/references/zero-break/balloon-shout.png"
+        "examples/zero-break/v5/art/v6-catch.png"
       ],
-      "sha256": "b1e3efc1a8356b4b72005066acc515d7948c8ccafe10f0ccc7deb92a71fa419b",
-      "provenance": "context-dialogue-v6",
+      "sha256": "8356849e99ccd8192b0f6b3a9bc88a142f2a272d1bf889788d2b55fdceaf7dcd",
+      "provenance": "targeted raster sound-effect edit",
       "replaces": [
         "catch"
       ],
       "visual_review": {
-        "status": "passed_native_image_review",
-        "source_sha256": "b1e3efc1a8356b4b72005066acc515d7948c8ccafe10f0ccc7deb92a71fa419b",
-        "chapter_validation": "../../../v5/validation.json",
+        "status": "passed_native_mobile_image_review",
+        "source_sha256": "8356849e99ccd8192b0f6b3a9bc88a142f2a272d1bf889788d2b55fdceaf7dcd",
         "checks": [
-          "exact lettering and speakers",
-          "faces, hands, costumes, props",
-          "cause and effect, prior state, no premature reveals"
+          "exact Japanese text and sound lettering",
+          "character identity, anatomy, costume and continuity",
+          "ordered partial assembly before existing full-body reveal"
+        ],
+        "mobile_widths": [
+          360,
+          390
+        ],
+        "evidence": [
+          "review/v6-contact-360-5.png",
+          "review/v6-contact-390-5.png"
         ]
-      }
+      },
+      "sounds": [
+        "ギュッ！",
+        "バサァッ"
+      ],
+      "revisionRecord": "examples/zero-break/production/episode-01-sfx/records/e01-catch.json"
     },
     {
       "id": "landing",
@@ -1430,7 +1456,7 @@
     },
     {
       "id": "e01-approach",
-      "file": "v6-approach.png",
+      "file": "sfx-v6-approach.png",
       "shape": "bleed",
       "pause": 90,
       "widthPercent": 100,
@@ -1497,32 +1523,43 @@
       "added_context_dialogue": false,
       "status": "generated",
       "generated": true,
-      "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): SAME black stone guardian with violet diamond chest core and violet cracks now approaches on the lower SOLID plaza. Ren still unarmored black short sleeves and red scarf, BARE hands out to shield standing Mira behind him. Torn canvas and cargo remain behind them. Giant, both people and ground show clear depth. Ren looks alarmed then resolute, no armor/glow.\n\nPanel 1, downward order. Frame: full-width medium framed shared location. Reader understands: Ren stands up after the quiet rescue conversation; the same guardian approaches.. Visible camera subject / offscreen continuity: Ren rising from kneeling on solid lower cargo plaza, Mira standing safely right; torn canvas/rope gives same-location marker. SAME black guardian with VIOLET DIAMOND core is clearly visible approaching in distant upper-right background on the SOLID lower plaza, not the high bridge. No new crest or power.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 2, downward order. Frame: left-aligned84% width, medium close. Reader understands: The same danger has followed them down.. Visible camera subject / offscreen continuity: ONLY Ren tight face looking past Mira at offscreen approaching SAME guardian, still unarmored.. Voice / balloon: worried cloud thought with dots.\nONLY speaker: Ren thought. EXACT text: 「まだ、来るのか。」 (render contents only).\nPanel 3, downward order. Frame: right-aligned92% width, medium framed. Reader understands: He puts Mira behind him.. Visible camera subject / offscreen continuity: Ren BARE open hand directs Mira back toward cargo wall; ordinary shirt, no armor yet. Focus only gesture and her safe backward step.. Voice / balloon: firm ordinary speech.\nONLY speaker: Ren. EXACT text: 「ミラ、下がって。」 (render contents only).\nPanel 4, downward order. Frame: full-width large borderless emotional close. Reader understands: His choice comes before the power.. Visible camera subject / offscreen continuity: ONLY Ren large determined face/chest, soft shirt and red scarf, Mira safely offscreen behind; no visible blue star or armor yet.. Voice / balloon: resolute rounded oval, no shout decoration.\nONLY speaker: Ren. EXACT text: 「今度は俺が止める。」 (render contents only).\n",
+      "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nIn the first wide scene panel add heavy charcoal/violet ズン… ズン… in two descending beats near the giant's lower body/ground, without covering its core or either protagonist. Communicate footsteps of the approaching SAME giant. In the third shielding-gesture panel add compact ザッ in the lower-left ground-side margin alongside Mira's backward movement, clear of Ren's large bare hand. Leave the two close-up thought/speech panels uncluttered. No early armor or cyan glow.\nExact new sound words: ズン… ズン… / ザッ",
       "references": [
-        "examples/zero-break/v5/art/12-approach.png",
-        "skills/webtoon/references/zero-break/varied-01.png"
+        "examples/zero-break/v5/art/v6-approach.png"
       ],
-      "sha256": "188e2c24ca02b0f6fd5cb42f6dc137bbbd10d3503db82845f1b5410d7a3814c1",
-      "provenance": "context-dialogue-v6",
+      "sha256": "a7cbb3fa6a5db984cdd9a607831c0ba5e8ccd4419493fd725c6c8de517bdea92",
+      "provenance": "targeted raster sound-effect edit",
       "replaces": [
         "approach"
       ],
       "visual_review": {
-        "status": "passed_native_image_review",
-        "source_sha256": "188e2c24ca02b0f6fd5cb42f6dc137bbbd10d3503db82845f1b5410d7a3814c1",
-        "chapter_validation": "../../../v5/validation.json",
+        "status": "passed_native_mobile_image_review",
+        "source_sha256": "a7cbb3fa6a5db984cdd9a607831c0ba5e8ccd4419493fd725c6c8de517bdea92",
         "checks": [
-          "exact lettering and speakers",
-          "faces, hands, costumes, props",
-          "cause and effect, prior state, no premature reveals"
+          "exact Japanese text and sound lettering",
+          "character identity, anatomy, costume and continuity",
+          "ordered partial assembly before existing full-body reveal"
+        ],
+        "mobile_widths": [
+          360,
+          390
+        ],
+        "evidence": [
+          "review/v6-contact-360-6.png",
+          "review/v6-contact-390-6.png"
         ]
-      }
+      },
+      "sounds": [
+        "ズン… ズン…",
+        "ザッ"
+      ],
+      "revisionRecord": "examples/zero-break/production/episode-01-sfx/records/e01-approach.json"
     },
     {
       "id": "e01-core",
       "file": "sfx-v6-core.png",
       "shape": "bleed",
-      "pause": 250,
+      "pause": 70,
       "widthPercent": 100,
       "scene": "A close shot of Ren's BARE hand and his still SOFT BLACK SHIRT at the chest as a cyan star-like core first glows through the fabric. Not full armor; no transformed silhouette anywhere. Dark blue mood, cyan illumination. One small white vertical thought balloon and two vertical rectangular cyan system notices integrated in sequence. Preserve hand anatomy and shirt. System notices are opaque dark cyan rectangles with readable pale cyan upright Japanese lettering, not a speech tail.",
       "lines": [
@@ -1594,11 +1631,7 @@
           390
         ],
         "evidence": [
-          "review/v6-contact-360-0.png",
-          "review/v6-contact-360-4.png",
           "review/v6-contact-360-6.png",
-          "review/v6-contact-390-0.png",
-          "review/v6-contact-390-4.png",
           "review/v6-contact-390-6.png"
         ]
       },
@@ -1606,6 +1639,210 @@
         "キィィン…"
       ],
       "revisionRecord": "examples/zero-break/production/episode-01-sfx/records/e01-core.json"
+    },
+    {
+      "id": "e01-armor-route",
+      "file": "armor-route.png",
+      "scene": "After the core awakens, cyan energy visibly routes from Ren's chest star along his still-soft black shirt and bare forearm. The first lattice forms at his wrist; no finished full suit yet.",
+      "shape": "bleed",
+      "pause": 35,
+      "widthPercent": 100,
+      "lines": [],
+      "panels": [
+        {
+          "beat": "The glowing core supplies the armor, before armor has formed.",
+          "view": "Close chest star shines through SOFT shirt; thin cyan paths run toward shoulder and down BARE forearm; exact system notice 装甲展開、開始。",
+          "frame": "full-width tall chest-to-forearm diagonal close-up",
+          "voice": "system notice; no spoken dialogue"
+        },
+        {
+          "beat": "The energy becomes a shape that can hold armor.",
+          "view": "Macro BARE wrist and hand with faint cyan geometric lattice wrapping just above wrist. No finished glove yet. Sound シュウウ… outside the lattice.",
+          "frame": "left-aligned82% width, shallow wrist detail",
+          "voice": "silent"
+        }
+      ],
+      "sounds": [
+        "シュウウ…"
+      ],
+      "visible_text": [
+        {
+          "text": "装甲展開、開始。",
+          "type": "raster system notice"
+        }
+      ],
+      "status": "generated",
+      "prompt": "Use case: illustration-story. Recompose the input core/armor artwork into the NEXT sequential transformation insert in the SAME adopted Zero Break episode 1. Image 1 is the starting-state/visual-style target; Image 2 is the finished armor design and Ren identity reference ONLY. Preserve the Japanese anime/cel-shaded rendering and same lower solid cargo plaza, torn cream canvas awning, blue-gold city flags in soft background. Ren19: black tousled hair, blue eyes, crimson scarf, soft black short sleeves, charcoal trousers, brown straps before assembly. Finished armor is BLACK angular faceted plates with CYAN seams and a cyan STAR chest core, black segmented gauntlets and boots; NEVER a helmet. Mira remains safe offscreen behind, same black stone giant with violet core remains offscreen ahead. No newly invented characters, weapons, icons, forms, crown or lore. This is not a collage of simultaneous duplicate people. Show sequential close-up steps, UNEQUAL panels, white narrow gutters, top-to-bottom reading. Exact Japanese text and sound effects integrated in raster artwork. Dialogue/thought glyphs are upright, vertical top-to-bottom/right-to-left, bold gothic readable at360px; sounds may angle with action. Cyan system panes are compact functional translucent navy/cyan projections with restrained glow; no ornate plaques or English. Do NOT reveal a completed full-body armored silhouette: that comes in the existing hero panel below. Aim 1024x2048, portrait ratio1:2; make small panels true detail shots, not shrunken full scenes.\n\nPanel 1 is larger: chest-to-bare-forearm close-up shows the SINGLE cyan chest star driving luminous paths OUTWARD through cloth over shoulder and arm. Arm still bare, human fingers unchanged. A compact restrained cyan system rectangle reads EXACT 装甲展開、開始。 in upright vertical Japanese. Panel 2 is a smaller, left-aligned wrist close-up: a delicate cyan angular lattice outlines a future wrist guard above the still-bare hand, with exact slender シュウウ… nearby. No black armor yet, no floating body, no additional labels.",
+      "sha256": "408c4bdf8316f441cbb2d2cb5fc34262dc2a3b65ab92f5dff8115bf95ffee12b",
+      "references": [
+        "examples/zero-break/v5/art/sfx-v6-core.png",
+        "examples/zero-break/v5/art/sfx-14-hero.png"
+      ],
+      "insertionRecord": "examples/zero-break/production/episode-01-sfx/inserts/e01-armor-route.json",
+      "replaces": [],
+      "provenance": "armor assembly insert",
+      "generated": true,
+      "visual_review": {
+        "status": "passed_native_mobile_image_review",
+        "source_sha256": "408c4bdf8316f441cbb2d2cb5fc34262dc2a3b65ab92f5dff8115bf95ffee12b",
+        "checks": [
+          "exact Japanese text and sound lettering",
+          "character identity, anatomy, costume and continuity",
+          "ordered partial assembly before existing full-body reveal"
+        ],
+        "mobile_widths": [
+          360,
+          390
+        ],
+        "evidence": [
+          "review/v6-contact-360-6.png",
+          "review/v6-contact-390-6.png"
+        ]
+      }
+    },
+    {
+      "id": "e01-armor-assemble",
+      "file": "armor-assemble.png",
+      "scene": "The cyan lattice becomes the adopted black faceted armor in separate physical close-ups: wrist plates, boot/shin plates, chest plates locking around the single cyan star.",
+      "shape": "bleed",
+      "pause": 45,
+      "widthPercent": 100,
+      "lines": [],
+      "panels": [
+        {
+          "beat": "Individual wrist plates take physical shape and snap together.",
+          "view": "Black faceted wrist/forearm plates materialize along prior cyan lattice and snap around forearm; fingertips remain bare at this stage. Sound カチッ.",
+          "frame": "right-aligned78% width, shallow forearm detail",
+          "voice": "silent"
+        },
+        {
+          "beat": "The legs become protected next.",
+          "view": "Close black angular boot and shin plates fitting over ordinary boot/trousers; same solid cargo ground and canvas rope. Sound ガシャッ.",
+          "frame": "full-width medium-height lower-leg close-up",
+          "voice": "silent"
+        },
+        {
+          "beat": "The chest seals around the existing star, connecting all parts.",
+          "view": "Close chest black faceted plates meet around a SINGLE cyan star; red scarf above, cyan seams. Exact notice 装甲固定。 and sound ガキンッ. No face or full-body reveal.",
+          "frame": "left-aligned92% width, taller chest detail",
+          "voice": "system notice"
+        }
+      ],
+      "sounds": [
+        "カチッ",
+        "ガシャッ",
+        "ガキンッ"
+      ],
+      "visible_text": [
+        {
+          "text": "装甲固定。",
+          "type": "raster system notice"
+        }
+      ],
+      "status": "generated",
+      "prompt": "Use case: illustration-story. Recompose the input core/armor artwork into the NEXT sequential transformation insert in the SAME adopted Zero Break episode 1. Image 1 is the starting-state/visual-style target; Image 2 is the finished armor design and Ren identity reference ONLY. Preserve the Japanese anime/cel-shaded rendering and same lower solid cargo plaza, torn cream canvas awning, blue-gold city flags in soft background. Ren19: black tousled hair, blue eyes, crimson scarf, soft black short sleeves, charcoal trousers, brown straps before assembly. Finished armor is BLACK angular faceted plates with CYAN seams and a cyan STAR chest core, black segmented gauntlets and boots; NEVER a helmet. Mira remains safe offscreen behind, same black stone giant with violet core remains offscreen ahead. No newly invented characters, weapons, icons, forms, crown or lore. This is not a collage of simultaneous duplicate people. Show sequential close-up steps, UNEQUAL panels, white narrow gutters, top-to-bottom reading. Exact Japanese text and sound effects integrated in raster artwork. Dialogue/thought glyphs are upright, vertical top-to-bottom/right-to-left, bold gothic readable at360px; sounds may angle with action. Cyan system panes are compact functional translucent navy/cyan projections with restrained glow; no ornate plaques or English. Do NOT reveal a completed full-body armored silhouette: that comes in the existing hero panel below. Aim 1024x2048, portrait ratio1:2; make small panels true detail shots, not shrunken full scenes.\n\nTHREE UNEQUAL ordered panels. Panel 1 smaller right-aligned forearm: matte/glossy BLACK faceted wrist guard plates emerge from the cyan lattice, tiny cyan join lines, one pair of plate edges almost meeting then clicking; exact カチッ in compact crisp letters. Human fingertips still bare, do not finish the whole glove here. Panel 2 broader lower-leg/boot view: black angular shin/boot plates slide together over dark trousers/ordinary boot, grounded on the same cracked solid plaza; sound ガシャッ in medium angular letters. Panel 3 the largest close-up of chest ONLY: black chest plates interlock around a SINGLE cyan star core, scarf remains red above, all armor cyan seams match reference. Exact larger metallic sound ガキンッ and a compact system pane EXACT 装甲固定。 No full suit pose, no helmet, no cape instead of scarf.",
+      "sha256": "4b02f12584966ff2c3c88b87336ba42d22229be7f839603962116aa19990b891",
+      "references": [
+        "examples/zero-break/v5/art/sfx-v6-core.png",
+        "examples/zero-break/v5/art/sfx-14-hero.png"
+      ],
+      "insertionRecord": "examples/zero-break/production/episode-01-sfx/inserts/e01-armor-assemble.json",
+      "replaces": [],
+      "provenance": "armor assembly insert",
+      "generated": true,
+      "visual_review": {
+        "status": "passed_native_mobile_image_review",
+        "source_sha256": "4b02f12584966ff2c3c88b87336ba42d22229be7f839603962116aa19990b891",
+        "checks": [
+          "exact Japanese text and sound lettering",
+          "character identity, anatomy, costume and continuity",
+          "ordered partial assembly before existing full-body reveal"
+        ],
+        "mobile_widths": [
+          360,
+          390
+        ],
+        "evidence": [
+          "review/v6-contact-360-6.png",
+          "review/v6-contact-390-6.png"
+        ]
+      }
+    },
+    {
+      "id": "e01-armor-check",
+      "file": "armor-check.png",
+      "scene": "Ren tests his newly completed black gauntlet with one fist clench. A compact cyan HUD shows the core's finite segmented reserve; he understands the suit moves with him, without revealing its origin or later power system.",
+      "shape": "bleed",
+      "pause": 150,
+      "widthPercent": 100,
+      "lines": [
+        {
+          "speaker": "Ren thought",
+          "text": "……動かせる。",
+          "type": "thought"
+        }
+      ],
+      "panels": [
+        {
+          "beat": "Ren can move the gauntlet himself; the armor follows his intent.",
+          "view": "Macro new BLACK segmented gauntlet gently clenches one fist; cyan seams, red scarf edge only. EXACT Ren thought ……動かせる。 and sound ギュッ.",
+          "frame": "right-aligned90% width, medium hand close-up",
+          "voice": "quiet cloud thought with dots",
+          "line": {
+            "speaker": "Ren thought",
+            "text": "……動かせる。",
+            "type": "thought"
+          }
+        },
+        {
+          "beat": "The system completes the connection and shows a finite resource.",
+          "view": "Compact translucent cyan HUD on blurred black chest/solid cargo ground: EXACT 救済核残量 over a clean six-segment bar with FOUR cyan segments lit and TWO dark; below EXACT 接続完了。. No numbers or countdown or lore.",
+          "frame": "full-width shallow functional HUD close-up",
+          "voice": "system notice"
+        }
+      ],
+      "sounds": [
+        "ギュッ"
+      ],
+      "visible_text": [
+        {
+          "text": "救済核残量",
+          "type": "raster system label"
+        },
+        {
+          "text": "接続完了。",
+          "type": "raster system notice"
+        }
+      ],
+      "status": "generated",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the dotted thought-balloon trail in the TOP panel. Keep all artwork, canvas, panels, entire armored hand/fist, exact Japanese thought ……動かせる。, sound ギュッ, lower system notice 救済核残量 / 接続完了。 and the six reserve segments (four lit, two dark) exactly as shown. The thinker is Ren, whose HEAD is OFFSCREEN ABOVE the top panel. REMOVE the current thought dots at the balloon's LOWER-LEFT that point to the glove. Put a short trail of TWO or THREE small thought dots above the balloon at its UPPER-RIGHT, travelling UP toward the top image edge and offscreen Ren's head. Keep dots within the image, do not connect them toward any glove/arm/hand. Preserve the balloon position/text/size and all other pixels as closely as possible. No added labels, no other edits.",
+      "sha256": "e1ac06d783b418ed85f01762061a3b4b96c9ce2e36f9cea8c9f36b86f19d5e58",
+      "references": [
+        "examples/zero-break/v5/art/sfx-v6-core.png",
+        "examples/zero-break/v5/art/sfx-14-hero.png",
+        "examples/zero-break/v5/art/armor-check-before-thought-tail.png"
+      ],
+      "insertionRecord": "examples/zero-break/production/episode-01-sfx/inserts/e01-armor-check.json",
+      "replaces": [],
+      "provenance": "armor assembly insert",
+      "generated": true,
+      "visual_review": {
+        "status": "passed_native_mobile_image_review",
+        "source_sha256": "e1ac06d783b418ed85f01762061a3b4b96c9ce2e36f9cea8c9f36b86f19d5e58",
+        "checks": [
+          "exact Japanese text and sound lettering",
+          "character identity, anatomy, costume and continuity",
+          "ordered partial assembly before existing full-body reveal"
+        ],
+        "mobile_widths": [
+          360,
+          390
+        ],
+        "evidence": [
+          "review/v6-contact-360-7.png",
+          "review/v6-contact-390-7.png"
+        ]
+      }
     },
     {
       "id": "hero",
@@ -1656,12 +1893,8 @@
           390
         ],
         "evidence": [
-          "review/v6-contact-360-0.png",
-          "review/v6-contact-360-4.png",
-          "review/v6-contact-360-6.png",
-          "review/v6-contact-390-0.png",
-          "review/v6-contact-390-4.png",
-          "review/v6-contact-390-6.png"
+          "review/v6-contact-360-7.png",
+          "review/v6-contact-390-7.png"
         ]
       }
     },
@@ -1715,12 +1948,8 @@
           390
         ],
         "evidence": [
-          "review/v6-contact-360-0.png",
-          "review/v6-contact-360-4.png",
-          "review/v6-contact-360-6.png",
-          "review/v6-contact-390-0.png",
-          "review/v6-contact-390-4.png",
-          "review/v6-contact-390-6.png"
+          "review/v6-contact-360-7.png",
+          "review/v6-contact-390-7.png"
         ]
       }
     },
@@ -1901,6 +2130,6 @@
     "resultZeroTop": 0.64,
     "method": "Conservative normalized image positions selected by visual inspection of actual 360px captures. The first zero glyph lies below the result image top."
   },
-  "panel_count": 66,
+  "panel_count": 73,
   "baseline": "../production/feedback-v6/baseline/episode-01.json"
 }

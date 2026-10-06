@@ -157,6 +157,27 @@ def build(number):
                     provenance='targeted raster sound-effect edit',
                     revisionRecord=str(revision_path.relative_to(REPO)),
                     visual_review=revision['visual_review'])
+    insertion_plan = sound_records.parent / 'inserts.json'
+    if insertion_plan.exists():
+        additions = json.loads(insertion_plan.read_text())
+        for addition in additions['inserts']:
+            record_path = REPO / addition['record']
+            record = json.loads(record_path.read_text())
+            assert not any(s['id'] == record['shot']['id'] for s in shots)
+            assert digest(directory(number)/'art'/record['shot']['file']) == record['sha256']
+            for reference in record['references']:
+                assert digest(REPO/reference['path']) == reference['sha256']
+            position = next(i for i,s in enumerate(shots) if s['id'] == addition['after'])
+            shot = copy.deepcopy(record['shot'])
+            shot.update(prompt=record['prompt'], sha256=record['sha256'],
+                        references=[r['path'] for r in record['references']],
+                        insertionRecord=str(record_path.relative_to(REPO)), replaces=[],
+                        provenance='armor assembly insert', generated=True,
+                        visual_review=record['visual_review'])
+            shots.insert(position+1, shot)
+        for shot in shots:
+            if shot['id'] in additions.get('pauseOverrides', {}):
+                shot['pause'] = additions['pauseOverrides'][shot['id']]
     manifest.update(version='context-dialogue-v6', shots=shots,
                     panel_count=sum(len(s.get('panels',[s])) for s in shots),
                     baseline=f'../production/feedback-v6/baseline/episode-{number:02d}.json')
@@ -199,6 +220,8 @@ def build(number):
         record_path=STATE/'records'/(shot['id']+'.json')
         if shot.get('revisionRecord'):
             record_path = REPO / shot['revisionRecord']
+        elif shot.get('insertionRecord'):
+            record_path = REPO / shot['insertionRecord']
         record=json.loads(record_path.read_text()) if record_path.exists() else {
             'id':shot['id'],'file':shot['file'],'sha256':digest(directory(number)/'art'/shot['file']),
             'method':'retained prior adopted image_gen output',
@@ -211,6 +234,10 @@ def build(number):
                  'prior_generation_record':str(archive.relative_to(REPO))})
     prompt_lines=[f'# 第{number:02d}話 — 採用原画の実行指示','',
                   '全10話の改稿は新規54素材・承認見本の再利用3素材。再利用・修正・旧版保持を generation-log.json で区別。以前の実行記録は production/feedback-v6/baseline に保持。','']
+    sound_count = sum(bool(s.get('revisionRecord')) for s in shots)
+    insert_count = sum(bool(s.get('insertionRecord')) for s in shots)
+    if sound_count or insert_count:
+        prompt_lines += [f'この話の追加改稿：既存{sound_count}素材の効果音編集・{insert_count}素材の装着過程追加。元画像・修正前画像・実行指示は production/episode-{number:02d}-sfx に保持。','']
     for r in execution:
         prompt_lines += ['## '+r['file'],'',r['method'],'',
                          '参照：'+json.dumps(r.get('references',[]),ensure_ascii=False),'']

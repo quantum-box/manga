@@ -1,0 +1,99 @@
+{
+  "id": "e01-armor-check",
+  "episode": 1,
+  "file": "armor-check.png",
+  "shot": {
+    "id": "e01-armor-check",
+    "file": "armor-check.png",
+    "scene": "Ren tests his newly completed black gauntlet with one fist clench. A compact cyan HUD shows the core's finite segmented reserve; he understands the suit moves with him, without revealing its origin or later power system.",
+    "shape": "bleed",
+    "pause": 150,
+    "widthPercent": 100,
+    "lines": [
+      {
+        "speaker": "Ren thought",
+        "text": "……動かせる。",
+        "type": "thought"
+      }
+    ],
+    "panels": [
+      {
+        "beat": "Ren can move the gauntlet himself; the armor follows his intent.",
+        "view": "Macro new BLACK segmented gauntlet gently clenches one fist; cyan seams, red scarf edge only. EXACT Ren thought ……動かせる。 and sound ギュッ.",
+        "frame": "right-aligned90% width, medium hand close-up",
+        "voice": "quiet cloud thought with dots",
+        "line": {
+          "speaker": "Ren thought",
+          "text": "……動かせる。",
+          "type": "thought"
+        }
+      },
+      {
+        "beat": "The system completes the connection and shows a finite resource.",
+        "view": "Compact translucent cyan HUD on blurred black chest/solid cargo ground: EXACT 救済核残量 over a clean six-segment bar with FOUR cyan segments lit and TWO dark; below EXACT 接続完了。. No numbers or countdown or lore.",
+        "frame": "full-width shallow functional HUD close-up",
+        "voice": "system notice"
+      }
+    ],
+    "sounds": [
+      "ギュッ"
+    ],
+    "visible_text": [
+      {
+        "text": "救済核残量",
+        "type": "raster system label"
+      },
+      {
+        "text": "接続完了。",
+        "type": "raster system notice"
+      }
+    ],
+    "status": "generated"
+  },
+  "method": "built-in image_gen armor assembly insertion with thought-tail repair",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-31a82a93-3d18-41c9-8c1a-70f739a84ff1.png",
+  "adopted_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-65028eb9-43a7-481f-a0fb-bd9aad58a85c.png",
+  "sha256": "e1ac06d783b418ed85f01762061a3b4b96c9ce2e36f9cea8c9f36b86f19d5e58",
+  "prompt": "Use case: precise-object-edit. Edit ONLY the dotted thought-balloon trail in the TOP panel. Keep all artwork, canvas, panels, entire armored hand/fist, exact Japanese thought ……動かせる。, sound ギュッ, lower system notice 救済核残量 / 接続完了。 and the six reserve segments (four lit, two dark) exactly as shown. The thinker is Ren, whose HEAD is OFFSCREEN ABOVE the top panel. REMOVE the current thought dots at the balloon's LOWER-LEFT that point to the glove. Put a short trail of TWO or THREE small thought dots above the balloon at its UPPER-RIGHT, travelling UP toward the top image edge and offscreen Ren's head. Keep dots within the image, do not connect them toward any glove/arm/hand. Preserve the balloon position/text/size and all other pixels as closely as possible. No added labels, no other edits.",
+  "originalPrompt": "Use case: illustration-story. Recompose the input core/armor artwork into the NEXT sequential transformation insert in the SAME adopted Zero Break episode 1. Image 1 is the starting-state/visual-style target; Image 2 is the finished armor design and Ren identity reference ONLY. Preserve the Japanese anime/cel-shaded rendering and same lower solid cargo plaza, torn cream canvas awning, blue-gold city flags in soft background. Ren19: black tousled hair, blue eyes, crimson scarf, soft black short sleeves, charcoal trousers, brown straps before assembly. Finished armor is BLACK angular faceted plates with CYAN seams and a cyan STAR chest core, black segmented gauntlets and boots; NEVER a helmet. Mira remains safe offscreen behind, same black stone giant with violet core remains offscreen ahead. No newly invented characters, weapons, icons, forms, crown or lore. This is not a collage of simultaneous duplicate people. Show sequential close-up steps, UNEQUAL panels, white narrow gutters, top-to-bottom reading. Exact Japanese text and sound effects integrated in raster artwork. Dialogue/thought glyphs are upright, vertical top-to-bottom/right-to-left, bold gothic readable at360px; sounds may angle with action. Cyan system panes are compact functional translucent navy/cyan projections with restrained glow; no ornate plaques or English. Do NOT reveal a completed full-body armored silhouette: that comes in the existing hero panel below. Aim 1024x2048, portrait ratio1:2; make small panels true detail shots, not shrunken full scenes.\n\nTWO ordered panels. Top panel is a medium close-up ONLY of Ren's newly BLACK segmented armored hand forming ONE clenched fist naturally (normal five-finger anatomy), cyan seams and faint red scarf edge. Place exact thought ……動かせる。 in one white cloud balloon with dots leading offscreen toward his head, not spoken by the glove. Add compact exact ギュッ beside the fist without hiding knuckles. Lower panel is a shallow close-up of a readable translucent navy/cyan functional HUD over blurred black chest/ground. EXACT header 救済核残量 is horizontal Japanese above a reserve bar of SIX uniform rectangles: FOUR cyan lit and TWO dark. EXACT separate confirmation 接続完了。 below. This communicates finite stored energy only; no percentages, time limit, numeric costs, magic readout, recharge rules, foreign origin, future forms or source identity. No full-body armor reveal, victory, or enemy attack.",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/sfx-v6-core.png",
+      "sha256": "ea88f815854233497ff443c1852f3277e37f3b218520fe5a599086e1be75321c"
+    },
+    {
+      "path": "examples/zero-break/v5/art/sfx-14-hero.png",
+      "sha256": "06b3480a33e9250958be8f59cfe3d9528bd5ecfa928221728efc2ab8e56c87d9"
+    },
+    {
+      "path": "examples/zero-break/v5/art/armor-check-before-thought-tail.png",
+      "sha256": "122ab59d38b28733a14913cedf61953a0b7bdcdff75ad7fb31d40e628007c7ae"
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "e1ac06d783b418ed85f01762061a3b4b96c9ce2e36f9cea8c9f36b86f19d5e58",
+    "checks": [
+      "exact Japanese text and sound lettering",
+      "character identity, anatomy, costume and continuity",
+      "ordered partial assembly before existing full-body reveal"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "review/v6-contact-360-7.png",
+      "review/v6-contact-390-7.png"
+    ]
+  },
+  "mobile_browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false,
+  "repairBefore": {
+    "file": "armor-check-before-thought-tail.png",
+    "sha256": "122ab59d38b28733a14913cedf61953a0b7bdcdff75ad7fb31d40e628007c7ae"
+  },
+  "repair_reason": "Thought dots pointed at the glove; moved toward Ren’s offscreen head."
+}
