@@ -294,6 +294,9 @@ struct ReaderView: View {
     @State private var saveStatus = ""
     @State private var contentRevision: String?
     @State private var saveDetailsPresented = false
+    @State private var controlsVisible = true
+    @State private var nextEpisodePresented = false
+    @State private var offeredNextEpisode = false
     @AppStorage(ReadingHistory.storageKey) private var readChapters = "[]"
 
 
@@ -305,16 +308,33 @@ struct ReaderView: View {
     private var previous: Episode? { title.primaryEpisodes.first { $0.number == episode.number - 1 } }
     private var next: Episode? { title.primaryEpisodes.first { $0.number == episode.number + 1 } }
 
+    private func openEpisode(_ destination: Episode) {
+        contentRevision = nil
+        loadState = .loading
+        controlsVisible = true
+        nextEpisodePresented = false
+        offeredNextEpisode = false
+        episode = destination
+    }
+
+    private func setControlsVisible(_ visible: Bool) {
+        withAnimation(.easeInOut(duration: 0.2)) { controlsVisible = visible }
+    }
+
     var body: some View {
         Group {
             if let url = Catalog.readerURL(episode.reader) {
                 ZStack {
                     WebtoonReader(url: url, background: episode.background, loadState: $loadState, onRevision: { contentRevision = $0 }, onNavigate: { destination in
-                        if let linked = title.linkedEpisode(to: destination) {
-                            contentRevision = nil
-                            loadState = .loading
-                            episode = linked
-                        }
+                        if let linked = title.linkedEpisode(to: destination) { openEpisode(linked) }
+                    }, onScroll: {
+                        if loadState == .ready { setControlsVisible(false) }
+                    }, onTap: {
+                        setControlsVisible(!controlsVisible)
+                    }, onReachEnd: {
+                        guard loadState == .ready, next != nil, !offeredNextEpisode else { return }
+                        offeredNextEpisode = true
+                        nextEpisodePresented = true
                     })
                         .id("\(episode.id)-\(reloadID)")
                         .accessibilityIdentifier("webtoon-reader")
@@ -331,6 +351,9 @@ struct ReaderView: View {
                         } actions: {
                             Button("もう一度読む") {
                                 loadState = .loading
+                                controlsVisible = true
+                                offeredNextEpisode = false
+                                nextEpisodePresented = false
                                 reloadID = UUID()
                             }.buttonStyle(.borderedProminent)
                         }
@@ -371,20 +394,30 @@ struct ReaderView: View {
             }
         }
         .alert("オフライン保存", isPresented: $saveDetailsPresented) { Button("OK", role: .cancel) {} } message: { Text(saveStatus) }
+        .alert("次の話を読みますか？", isPresented: $nextEpisodePresented) {
+            Button("次の話を読む") { if let next { openEpisode(next) } }
+                .accessibilityIdentifier("read-next-episode")
+            Button("今は読まない", role: .cancel) {}
+        } message: {
+            if let next { Text("第\(next.number)話「\(next.title)」") }
+        }
         .navigationTitle("第\(episode.number)話\(episode.edition.isEmpty ? "" : " · " + episode.edition)")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar(controlsVisible ? .visible : .hidden, for: .navigationBar)
         .toolbar(.hidden, for: .tabBar)
+        .statusBarHidden(!controlsVisible)
+        .ignoresSafeArea(.container, edges: controlsVisible ? [] : [.top, .bottom])
         .safeAreaInset(edge: .bottom) {
-            if title.episodeCount > 1 {
+            if controlsVisible, title.episodeCount > 1 {
                 HStack {
-                    Button { if let previous { contentRevision = nil; loadState = .loading; episode = previous } } label: {
+                    Button { if let previous { openEpisode(previous) } } label: {
                         Label("前の話", systemImage: "chevron.left")
                     }.disabled(previous == nil).accessibilityIdentifier("previous-episode")
                     Spacer()
                     Text("\(episode.number) / \(title.episodeCount)")
                         .font(.caption).foregroundStyle(.secondary)
                     Spacer()
-                    Button { if let next { contentRevision = nil; loadState = .loading; episode = next } } label: {
+                    Button { if let next { openEpisode(next) } } label: {
                         HStack(spacing: 5) {
                             Text("次の話")
                             Image(systemName: "chevron.right")
@@ -408,13 +441,41 @@ struct WebtoonReader: UIViewRepresentable {
     @Binding var loadState: ReaderLoadState
     let onRevision: (String) -> Void
     let onNavigate: (URL) -> Void
+    let onScroll: () -> Void
+    let onTap: () -> Void
+    let onReachEnd: () -> Void
 
-    func makeCoordinator() -> Coordinator { Coordinator(loadState: $loadState, onRevision: onRevision, onNavigate: onNavigate) }
+    func makeCoordinator() -> Coordinator {
+        Coordinator(loadState: $loadState, onRevision: onRevision, onNavigate: onNavigate,
+                    onScroll: onScroll, onTap: onTap, onReachEnd: onReachEnd)
+    }
 
     func makeUIView(context: Context) -> WKWebView {
         let configuration = WKWebViewConfiguration()
         configuration.websiteDataStore = .nonPersistent()
         configuration.userContentController.add(context.coordinator, name: "mangaReader")
+        // Image loads can extend a lazy-loaded chapter after scrolling appears to reach its end.
+        configuration.userContentController.addUserScript(WKUserScript(source: """
+            (() => {
+              let scheduled = false;
+              const schedule = () => {
+                if (scheduled) return;
+                scheduled = true;
+                requestAnimationFrame(() => {
+                  scheduled = false;
+                  const page = document.scrollingElement;
+                  if (!page || page.scrollTop + page.clientHeight < page.scrollHeight - 24) return;
+                  if (Array.from(document.images).some(image => !image.complete || image.naturalWidth === 0)) return;
+                  window.webkit.messageHandlers.mangaReader.postMessage({state: 'reachedEnd'});
+                });
+              };
+              document.addEventListener('scroll', schedule, {passive: true});
+              document.addEventListener('load', schedule, true);
+              document.addEventListener('touchend', schedule, {passive: true});
+              window.addEventListener('resize', schedule);
+              new ResizeObserver(schedule).observe(document.documentElement);
+            })();
+            """, injectionTime: .atDocumentEnd, forMainFrameOnly: true))
         if !url.isFileURL, let id = ReaderContent.episodeID(from: url) {
             // This script runs only in our API-derived document, never in the website shell.
             let quotedID = String(data: try! JSONEncoder().encode(id), encoding: .utf8)!
@@ -430,6 +491,11 @@ struct WebtoonReader: UIViewRepresentable {
         }
         let view = WKWebView(frame: .zero, configuration: configuration)
         view.navigationDelegate = context.coordinator
+        view.scrollView.delegate = context.coordinator
+        let tap = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.readerTapped))
+        tap.cancelsTouchesInView = false
+        tap.delegate = context.coordinator
+        view.addGestureRecognizer(tap)
         let color = UIColor(webtoonHex: background)
         view.isOpaque = false
         view.backgroundColor = color
@@ -444,6 +510,9 @@ struct WebtoonReader: UIViewRepresentable {
         context.coordinator.loadState = $loadState
         context.coordinator.onRevision = onRevision
         context.coordinator.onNavigate = onNavigate
+        context.coordinator.onScroll = onScroll
+        context.coordinator.onTap = onTap
+        context.coordinator.onReachEnd = onReachEnd
         context.coordinator.load(url, in: view)
     }
 
@@ -451,23 +520,41 @@ struct WebtoonReader: UIViewRepresentable {
         coordinator.contentTask?.cancel()
         view.configuration.userContentController.removeScriptMessageHandler(forName: "mangaReader")
         view.navigationDelegate = nil
+        view.scrollView.delegate = nil
         view.stopLoading()
     }
 
-    final class Coordinator: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
+    final class Coordinator: NSObject, WKNavigationDelegate, WKScriptMessageHandler, UIScrollViewDelegate, UIGestureRecognizerDelegate {
         var loadState: Binding<ReaderLoadState>
         private var requestedURL: URL?
         var contentTask: Task<Void, Never>?
         var onRevision: (String) -> Void
         var onNavigate: (URL) -> Void
+        var onScroll: () -> Void
+        var onTap: () -> Void
+        var onReachEnd: () -> Void
+        private var hasUserScrolled = false
 
-        init(loadState: Binding<ReaderLoadState>, onRevision: @escaping (String) -> Void, onNavigate: @escaping (URL) -> Void) {
+        init(loadState: Binding<ReaderLoadState>, onRevision: @escaping (String) -> Void, onNavigate: @escaping (URL) -> Void,
+             onScroll: @escaping () -> Void, onTap: @escaping () -> Void, onReachEnd: @escaping () -> Void) {
             self.loadState = loadState; self.onRevision = onRevision; self.onNavigate = onNavigate
+            self.onScroll = onScroll; self.onTap = onTap; self.onReachEnd = onReachEnd
         }
+
+        func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+            hasUserScrolled = true
+            onScroll()
+        }
+
+        @objc func readerTapped() { onTap() }
+
+        func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
+                               shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool { true }
 
         func load(_ url: URL, in view: WKWebView) {
             guard requestedURL != url else { return }
             requestedURL = url
+            hasUserScrolled = false
             contentTask?.cancel()
             if url.isFileURL {
                 view.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
@@ -519,8 +606,15 @@ struct WebtoonReader: UIViewRepresentable {
 
         func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
             guard message.frameInfo.isMainFrame,
-                  message.name == "mangaReader", let requestedURL, !requestedURL.isFileURL,
-                  let body = message.body as? [String: String],
+                  message.name == "mangaReader", let body = message.body as? [String: String] else { return }
+            if body["state"] == "reachedEnd" {
+                guard hasUserScrolled, loadState.wrappedValue == .ready, let scrollView = message.webView?.scrollView,
+                      scrollView.contentSize.height > 0,
+                      scrollView.contentOffset.y + scrollView.bounds.height >= scrollView.contentSize.height - 24 else { return }
+                onReachEnd()
+                return
+            }
+            guard let requestedURL, !requestedURL.isFileURL,
                   let expectedID = URLComponents(url: requestedURL, resolvingAgainstBaseURL: false)?.queryItems?.first(where: { $0.name == "episode" })?.value,
                   body["episodeID"] == expectedID else { return }
             if body["state"] == "ready" { loadState.wrappedValue = .ready }
