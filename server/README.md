@@ -49,6 +49,28 @@ python3 scripts/publish_episode.py https://<worker-host> pochis-handshake \
 放棄された未公開画像の回収は現段階では管理者によるバケット操作が必要。
 秘密トークンを読者やブラウザに渡さない。
 
+### 『天魔、二周目。』第1〜10話の反映
+
+採用HTMLをブラウザで描画し、文字組み・場面の順番・余白を含む連続画像として
+`examples/heavenly-demon-ngplus/server-export`へ書き出す。原画や採用HTMLは変更しない。
+本文は390 CSS px・3倍密度（1170px幅）のPNG、表紙は小さなJPEG。
+画像名には内容のハッシュを含め、公開済み画像と衝突しない。
+
+```sh
+python3 scripts/export_heavenly_demon.py
+python3 scripts/publish_heavenly_demon.py --dry-run
+# 本番の管理トークンを実行環境の MANGA_ADMIN_TOKEN シークレットへ設定して実行
+python3 scripts/publish_heavenly_demon.py
+```
+
+反映先は本番の `https://manga-server.txcloud.app`。
+既存の `heavenly-demon-episode-01` を更新し、第2〜10話を同じシリーズへ追加する。
+公開前に全ファイルと管理APIの認証を確認し、公開後に本文JSON、全画像のSHA-256、
+公開カタログの話数と話タイトルを照合する。
+成功した照合結果は `server-export/published-checks.json` に保存する。
+公開済みデータの再確認には `--verify-only` を指定する。
+Workerコードの変更・再デプロイは不要。
+
 ## API
 
 | Method / path | 用途 |
