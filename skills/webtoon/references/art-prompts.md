@@ -31,11 +31,25 @@ Avoid: [information not yet revealed], extra props, duplicate characters, waterm
 
 背景の端を同色へ柔らかくつなぐ指示は、連続する場面で必要な場合だけ追加する。全作品を夜や暗色に限定しない。
 
+会話の指示では、参照にいる人物を全員描かせず、そのコマで画面内にいる人物・注目する対象と、画面外の話者や聞き手を分ける。場所、左右の関係、姿勢、小道具の状態は前のコマから保つ。[状況と会話の実例](context-and-dialogue.md)のように、反応や返答まで一枚へ詰めず、今回描く発話だけを渡す。接写を理由に新しい場所・動作・人物を足さない。
+
+```text
+This panel continues the SAME conversation in the SAME location.
+Visible subject: [speaker face / listener reaction / the object being discussed].
+Offscreen: [who remains nearby and on which side].
+Single beat: [what the reader understands now].
+Carry forward: [eyeline, posture, background marker and prop state].
+Exact dialogue for THIS panel only: [text, or explicitly silent].
+Do not include later replies, new locations, or every character from the reference.
+```
+
 文字は短い語だけでなく全文を渡す。列分けの一覧を吹き出しへラベルとして描かせないよう、全文と配置の指示を分ける。1024px幅の原画を360pxへ表示する場合、字の高さ60pxは約21pxになるが、狭いコマへ配置すればさらに小さくなる。実際のコマの表示幅から必要な原画の字の大きさを決め、生成結果を目視する。文字を小さくして無理に詰めず、列数・吹き出しの形・構図を調整する。
 
 文字を個別編集する指定などで後から組版する場合だけ、上の `Text` を「No text or speech balloons; reserve [region] for separately typeset dialogue.」へ置き換える。無言の場面は明示して文字なしで生成する。
 
 ## 構成の指示を変える
+
+複数のコマを一枚へ生成するときは「大小をつける」だけで済ませず、各コマの役割と相対的な幅・高さ・配置・枠の有無を指示する。たとえば「全幅の状況確認→右寄せの会話→左寄せの浅い目元→大きな名乗り」。小コマはその面積に合う対象へ描き直し、全景を縮めたり絵を押し潰したりしない。生成後は文字だけでなく、本当に形と面積に差が出たか見る。[大小を直した実例](context-and-dialogue.md)の数値や配列は今回だけの選択。
 
 **短い動作を密に読む場面**
 
