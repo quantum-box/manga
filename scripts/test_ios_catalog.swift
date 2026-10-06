@@ -64,6 +64,19 @@ struct CatalogTests {
         print("PASS: missing, malformed, and empty catalogs are failures, not empty search results")
 
         let titles = try Catalog.load(resourceURL: bundled)
+        let zeroBreak = titles.first { $0.id == "zero-break" }!
+        let first = Catalog.resource(zeroBreak.episodes[0].reader, resourceURL: bundled)!
+        let forward = URL(string: "../episode-02/index.html", relativeTo: first)!.absoluteURL
+        let second = zeroBreak.linkedEpisode(to: forward, resourceURL: bundled)
+        try require(second?.number == 2, "Embedded next link must select native chapter two")
+        let backward = URL(string: "../episode-01/index.html", relativeTo: forward)!.absoluteURL
+        try require(zeroBreak.linkedEpisode(to: backward, resourceURL: bundled)?.number == 1,
+                    "Embedded previous link must select native chapter one")
+        try require(zeroBreak.linkedEpisode(to: outside, resourceURL: bundled) == nil,
+                    "Unknown file links must not change the native chapter")
+        try require(zeroBreak.linkedEpisode(to: URL(string: "https://example.com")!, resourceURL: bundled) == nil,
+                    "External links must not change the native chapter")
+        print("PASS: bundled forward and backward links select native chapters; unknown links are rejected")
         for title in titles {
             try require(Catalog.resource(title.image, resourceURL: bundled) != nil, "Missing bundled cover: \(title.id)")
             for episode in title.episodes {
