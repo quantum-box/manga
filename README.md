@@ -11,7 +11,7 @@
 | [剣聖、仇の弟子に転生する](examples/swordsaint-enemy-disciple/README.md) | 武侠・転生 | 第1〜10話。白背景・ゆっくり版で連続して読める。第1話の初稿2版も保持 |
 | [終電後の落とし物係](examples/lost-property-clerk/webtoon-v3/README.md) | 日常・幻想 | 雨、猫、足跡をたどる縦読み短編 v3 |
 | [星を拾う夜](examples/star-lighthouse/webtoon-v2/README.md) | SF | 静けさと巨大な親の登場を広い余白で描く v2 |
-| [転生したら柴犬だった。](examples/pochis-handshake/webtoon-v2/README.md) | ファンタジー・転生 | ポチと魔王の「おて」。9ビート・12コマ v2 |
+| [転生したら柴犬だった。](examples/pochis-handshake/webtoon-v3/README.md) | ファンタジー | 全10場面を縦書き一体作画で再制作。戸惑い、共感、「おて」の間と握手のオチ |
 
 各作品の`index.html`が編集可能な本文。`reader.html`がある作品は、画像を内包した単一HTMLでも読める。脚本、プロンプト、検証記録、全長スクリーンショットも各例に保存する。以前の試作版は比較用に残している。
 
