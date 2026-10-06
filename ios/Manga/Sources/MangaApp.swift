@@ -4,7 +4,18 @@ import WebKit
 @main
 struct MangaApp: App {
     var body: some Scene {
-        WindowGroup { CatalogView().tint(.orange) }
+        WindowGroup { MainTabView().tint(.orange) }
+    }
+}
+
+struct MainTabView: View {
+    var body: some View {
+        TabView {
+            NavigationStack { CatalogView() }
+                .tabItem { Label("ホーム", systemImage: "house") }
+            NavigationStack { DownloadSettingsView() }
+                .tabItem { Label("設定", systemImage: "gearshape") }
+        }
     }
 }
 
@@ -24,22 +35,37 @@ struct Cover: View {
 }
 
 struct CatalogView: View {
-    @State private var catalog: Result<[MangaTitle], Error> = .success(Catalog.cachedRemote() ?? ((try? Catalog.loadOffline()) ?? []))
-    @State private var online = true
-    @State private var settingsPresented = false
+    let online: Bool
+    @State private var catalog: Result<[MangaTitle], Error>
     @State private var loading = true
-    @MainActor private func refresh() async {
+    @State private var refreshError: String?
+    @State private var lastUpdated: Date?
+    @State private var selectedTitle: MangaTitle?
+
+    init(online: Bool = true) {
+        self.online = online
+        let offline = (try? Catalog.loadOffline()) ?? []
+        _catalog = State(initialValue: .success(online ? (Catalog.cachedRemote() ?? offline) : offline))
+    }
+
+    @MainActor private func refresh(forceRefresh: Bool = false) async {
         loading = true
         defer { loading = false }
-        genre = "すべて"
+        refreshError = nil
         if online {
             do {
-                let titles = try await Catalog.loadRemote(cacheURL: Catalog.remoteCacheURL)
+                let titles = try await Catalog.loadRemote(cacheURL: Catalog.remoteCacheURL, forceRefresh: forceRefresh)
                 guard !Task.isCancelled else { return }
                 catalog = .success(titles)
+                lastUpdated = Date()
             }
-            catch { if !Task.isCancelled && catalogTitles.isEmpty { catalog = .failure(error) } }
+            catch {
+                guard !Task.isCancelled else { return }
+                if catalogTitles.isEmpty { catalog = .failure(error) }
+                else { refreshError = "一覧を更新できませんでした。通信を確認して再読み込みしてください。" }
+            }
         } else { catalog = Result { try Catalog.loadOffline() } }
+        if !genres.contains(genre) { genre = "すべて" }
     }
     @State private var query = ""
     @State private var genre = "すべて"
@@ -54,93 +80,106 @@ struct CatalogView: View {
     }
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
+        List {
+            VStack(alignment: .leading, spacing: 24) {
+                if online {
                     HStack {
                         VStack(alignment: .leading, spacing: 4) {
                             Text("MANGA").font(.system(size: 30, weight: .black, design: .rounded))
                             Text("今日も、物語に出会おう。").font(.subheadline).foregroundStyle(.secondary)
                         }
                         Spacer()
-                        Button { settingsPresented = true } label: {
-                            Image(systemName: "gearshape").font(.title).foregroundStyle(.orange)
-                        }.accessibilityLabel("設定").accessibilityIdentifier("settings")
                     }
-                    Picker("読み込み元", selection: $online) {
-                        Text("配信").tag(true)
-                        Text("オフライン").tag(false)
-                    }.pickerStyle(.segmented).accessibilityIdentifier("catalog-source")
-                    if loading { ProgressView("一覧を更新中…") }
-                    if query.isEmpty && genre == "すべて", let featured = catalogTitles.first {
-                        NavigationLink(value: featured) {
-                            GeometryReader { proxy in
-                                ZStack(alignment: .bottomLeading) {
-                                    Cover(name: featured.image).frame(width: proxy.size.width, height: proxy.size.height).clipped()
-                                    LinearGradient(colors: [.clear, .black.opacity(0.85)], startPoint: .center, endPoint: .bottom)
-                                    VStack(alignment: .leading, spacing: 8) {
-                                        Text("PICK UP").font(.caption.bold()).padding(.horizontal, 10).padding(.vertical, 5).background(.orange, in: Capsule())
-                                        Text(featured.tagline).font(.title2.bold())
-                                        Text(featured.title).font(.subheadline.bold())
-                                        Text("第1話を無料で読む  →").font(.caption.bold())
-                                    }.foregroundStyle(.white).padding(20)
-                                }.frame(width: proxy.size.width, height: proxy.size.height)
-                            }.frame(height: 290).clipShape(RoundedRectangle(cornerRadius: 20))
-                        }.buttonStyle(.plain).accessibilityIdentifier("featured-title")
+                    if let lastUpdated {
+                        Text("一覧を更新 \(lastUpdated.formatted(date: .omitted, time: .standard))")
+                            .font(.caption).foregroundStyle(.secondary)
+                            .accessibilityIdentifier("catalog-updated")
                     }
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 8) {
-                            ForEach(genres, id: \.self) { item in
-                                Button { genre = item } label: {
-                                    Text(item).font(.subheadline.bold()).padding(.horizontal, 16).padding(.vertical, 10)
-                                        .background(genre == item ? Color.primary : Color(.secondarySystemBackground), in: Capsule())
-                                        .foregroundStyle(genre == item ? Color(.systemBackground) : Color.primary)
-                                }
+                } else {
+                    Text("保存済みの作品と同梱作品を、通信なしで読めます。")
+                        .font(.subheadline).foregroundStyle(.secondary)
+                }
+                if loading { ProgressView("一覧を更新中…") }
+                if let refreshError {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(refreshError).font(.subheadline).foregroundStyle(.secondary)
+                        Button("再読み込み") { Task { await refresh(forceRefresh: true) } }
+                    }.accessibilityIdentifier("catalog-refresh-failed")
+                }
+                if query.isEmpty && genre == "すべて", let featured = catalogTitles.first {
+                    Button { selectedTitle = featured } label: {
+                        GeometryReader { proxy in
+                            ZStack(alignment: .bottomLeading) {
+                                Cover(name: featured.image).frame(width: proxy.size.width, height: proxy.size.height).clipped()
+                                LinearGradient(colors: [.clear, .black.opacity(0.85)], startPoint: .center, endPoint: .bottom)
+                                VStack(alignment: .leading, spacing: 8) {
+                                    Text("PICK UP").font(.caption.bold()).padding(.horizontal, 10).padding(.vertical, 5).background(.orange, in: Capsule())
+                                    Text(featured.tagline).font(.title2.bold())
+                                    Text(featured.title).font(.subheadline.bold())
+                                    Text("第1話を無料で読む  →").font(.caption.bold())
+                                }.foregroundStyle(.white).padding(20)
+                            }.frame(width: proxy.size.width, height: proxy.size.height)
+                        }.frame(height: 290).clipShape(RoundedRectangle(cornerRadius: 20))
+                    }.buttonStyle(.plain).accessibilityIdentifier("featured-title")
+                }
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 8) {
+                        ForEach(genres, id: \.self) { item in
+                            Button { genre = item } label: {
+                                Text(item).font(.subheadline.bold()).padding(.horizontal, 16).padding(.vertical, 10)
+                                    .background(genre == item ? Color.primary : Color(.secondarySystemBackground), in: Capsule())
+                                    .foregroundStyle(genre == item ? Color(.systemBackground) : Color.primary)
                             }
                         }
                     }
-                    HStack {
-                        Text(query.isEmpty ? "作品を探す" : "検索結果").font(.title2.bold())
-                        Spacer()
-                        Text("\(titles.count)作品").font(.caption).foregroundStyle(.secondary)
+                }
+                HStack {
+                    Text(query.isEmpty ? "作品を探す" : "検索結果").font(.title2.bold())
+                    Spacer()
+                    Text("\(titles.count)作品").font(.caption).foregroundStyle(.secondary)
+                }
+                if catalogFailed {
+                    ContentUnavailableView {
+                        Label("作品を読み込めませんでした", systemImage: "exclamationmark.triangle")
+                    } description: {
+                        Text(online ? "通信を確認して再読み込みしてください。設定のオフラインから保存済み作品を読めます。" : "同梱作品を読み込めません。アプリを更新してください。")
+                    } actions: {
+                        Button("もう一度読み込む") { Task { await refresh(forceRefresh: true) } }
+                            .buttonStyle(.borderedProminent)
+                    }.accessibilityIdentifier("catalog-failed")
+                } else if !loading && titles.isEmpty {
+                    ContentUnavailableView.search(text: query)
+                }
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 24) {
+                    ForEach(titles) { title in
+                        Button { selectedTitle = title } label: {
+                            VStack(alignment: .leading, spacing: 7) {
+                                GeometryReader { proxy in
+                                    Cover(name: title.image).frame(width: proxy.size.width, height: proxy.size.height).clipped()
+                                }.aspectRatio(0.72, contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 12))
+                                Text(title.genre).font(.caption2.bold()).foregroundStyle(.orange)
+                                Text(title.title).font(.subheadline.bold()).lineLimit(2).frame(height: 40, alignment: .topLeading)
+                                Text("全\(title.episodeCount)話 · 無料").font(.caption).foregroundStyle(.secondary)
+                            }
+                        }.buttonStyle(.plain).accessibilityIdentifier("title-\(title.id)")
                     }
-                    if catalogFailed {
-                        ContentUnavailableView {
-                            Label("作品を読み込めませんでした", systemImage: "exclamationmark.triangle")
-                        } description: {
-                            Text(online ? "通信を確認して再読み込みしてください。オフラインに切り替えると同梱作品を読めます。" : "同梱作品を読み込めません。アプリを更新してください。")
-                        } actions: {
-                            Button("もう一度読み込む") { Task { await refresh() } }
-                                .buttonStyle(.borderedProminent)
-                        }.accessibilityIdentifier("catalog-failed")
-                    } else if !loading && titles.isEmpty {
-                        ContentUnavailableView.search(text: query)
-                    }
-                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 24) {
-                        ForEach(titles) { title in
-                            NavigationLink(value: title) {
-                                VStack(alignment: .leading, spacing: 7) {
-                                    GeometryReader { proxy in
-                                        Cover(name: title.image).frame(width: proxy.size.width, height: proxy.size.height).clipped()
-                                    }.aspectRatio(0.72, contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 12))
-                                    Text(title.genre).font(.caption2.bold()).foregroundStyle(.orange)
-                                    Text(title.title).font(.subheadline.bold()).lineLimit(2).frame(height: 40, alignment: .topLeading)
-                                    Text("全\(title.episodeCount)話 · 無料").font(.caption).foregroundStyle(.secondary)
-                                }
-                            }.buttonStyle(.plain).accessibilityIdentifier("title-\(title.id)")
-                        }
-                    }
-                    Text("全作品、無料で読めます。").font(.caption2).foregroundStyle(.secondary)
-                }.padding(20)
-            }
-            .background(Color(.systemBackground))
-            .toolbar(.hidden, for: .navigationBar)
-            .sheet(isPresented: $settingsPresented, onDismiss: { Task { await refresh() } }) { DownloadSettingsView() }
-            .task(id: online) { await refresh() }
-            .refreshable { await refresh() }
-            .searchable(text: $query, prompt: "作品タイトルで検索")
-            .navigationDestination(for: MangaTitle.self) { TitleDetailView(title: $0) }
+                }
+                Text("全作品、無料で読めます。").font(.caption2).foregroundStyle(.secondary)
+            }.padding(20)
+            .listRowInsets(EdgeInsets())
+            .listRowSeparator(.hidden)
         }
+        .listStyle(.plain)
+        .scrollContentBackground(.hidden)
+        .accessibilityIdentifier(online ? "home-catalog" : "offline-catalog")
+        .background(Color(.systemBackground))
+        .navigationTitle(online ? "ホーム" : "オフライン")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar(online ? .hidden : .visible, for: .navigationBar)
+        .task { await refresh() }
+        .refreshable { await refresh(forceRefresh: true) }
+        .searchable(text: $query, prompt: "作品タイトルで検索")
+        .navigationDestination(item: $selectedTitle) { TitleDetailView(title: $0) }
     }
 }
 
@@ -334,6 +373,7 @@ struct ReaderView: View {
         .alert("オフライン保存", isPresented: $saveDetailsPresented) { Button("OK", role: .cancel) {} } message: { Text(saveStatus) }
         .navigationTitle("第\(episode.number)話\(episode.edition.isEmpty ? "" : " · " + episode.edition)")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar(.hidden, for: .tabBar)
         .safeAreaInset(edge: .bottom) {
             if title.episodeCount > 1 {
                 HStack {
@@ -510,11 +550,10 @@ private extension UIColor {
     }
 }
 
-#Preview { CatalogView() }
+#Preview { MainTabView() }
 
 
 struct DownloadSettingsView: View {
-    @Environment(\.dismiss) private var dismiss
     @AppStorage("autoSaveWebtoons") private var autoSave = true
     @State private var titles = [MangaTitle]()
     @State private var selected: MangaTitle?
@@ -525,42 +564,44 @@ struct DownloadSettingsView: View {
         catch { self.error = "保存済み作品を読み込めませんでした。" }
     }
     var body: some View {
-        NavigationStack {
-            Form {
-                Section {
-                    Toggle("表示後に読んだ話だけ保存", isOn: $autoSave)
-                } footer: {
-                    Text("作品を開くと、本文と画像を端末内へ保存します。保存中はアプリを開いておいてください。")
-                }
-                Section("端末に保存した作品") {
-                    if titles.isEmpty { Text("保存済み作品はありません").foregroundStyle(.secondary) }
-                    ForEach(titles) { title in
-                        HStack {
-                            Text(title.title)
-                            Spacer()
-                            Button("削除", role: .destructive) { selected = title; confirmDelete = true }
-                                .accessibilityIdentifier("delete-\(title.id)")
-                        }
+        Form {
+            Section("ライブラリ") {
+                NavigationLink { CatalogView(online: false) } label: {
+                    Label("オフライン", systemImage: "arrow.down.circle")
+                }.accessibilityIdentifier("offline-library")
+            }
+            Section {
+                Toggle("表示後に読んだ話だけ保存", isOn: $autoSave)
+            } footer: {
+                Text("作品を開くと、本文と画像を端末内へ保存します。保存中はアプリを開いておいてください。")
+            }
+            Section("端末に保存した作品") {
+                if titles.isEmpty { Text("保存済み作品はありません").foregroundStyle(.secondary) }
+                ForEach(titles) { title in
+                    HStack {
+                        Text(title.title)
+                        Spacer()
+                        Button("削除", role: .destructive) { selected = title; confirmDelete = true }
+                            .accessibilityIdentifier("delete-\(title.id)")
                     }
-                }
-                Section {
-                    Text("削除した作品は、次に配信から開くと再保存します。再保存を止めるには自動保存をオフにしてください。同梱作品は削除されません。")
-                        .font(.caption).foregroundStyle(.secondary)
-                    if !error.isEmpty { Text(error).foregroundStyle(.red) }
                 }
             }
-            .navigationTitle("設定")
-            .toolbar { ToolbarItem(placement: .confirmationAction) { Button("完了") { dismiss() } } }
-            .onAppear { reload() }
-            .confirmationDialog("端末の保存データを削除しますか？", isPresented: $confirmDelete, titleVisibility: .visible) {
-                Button("端末から削除", role: .destructive) {
-                    guard let selected else { return }
-                    Task {
-                        do { try await DownloadManager.shared.delete(selected.id); reload() }
-                        catch { self.error = "削除できませんでした。もう一度お試しください。" }
-                    }
-                }
-            } message: { Text(selected?.title ?? "") }
+            Section {
+                Text("削除した作品は、次に配信から開くと再保存します。再保存を止めるには自動保存をオフにしてください。同梱作品は削除されません。")
+                    .font(.caption).foregroundStyle(.secondary)
+                if !error.isEmpty { Text(error).foregroundStyle(.red) }
+            }
         }
+        .navigationTitle("設定")
+        .onAppear { reload() }
+        .confirmationDialog("端末の保存データを削除しますか？", isPresented: $confirmDelete, titleVisibility: .visible) {
+            Button("端末から削除", role: .destructive) {
+                guard let selected else { return }
+                Task {
+                    do { try await DownloadManager.shared.delete(selected.id); reload() }
+                    catch { self.error = "削除できませんでした。もう一度お試しください。" }
+                }
+            }
+        } message: { Text(selected?.title ?? "") }
     }
 }
