@@ -73,6 +73,26 @@ Workerコードの変更・再デプロイは不要。
 
 ## API
 
+### 全作品を採用版だけに更新する
+
+`content/catalog.json`の各話の先頭版を正本として、6作品42話をまとめて反映する。
+原稿HTMLと参照画像のハッシュを公開IDに含めるため、新旧の本文画像は衝突しない。
+Playwright（Chromium）、Pillow、Node.jsを用意して実行する。
+
+```sh
+python3 scripts/export_latest_webtoons.py publish-output
+python3 scripts/publish_latest_webtoons.py publish-output --dry-run
+# MANGA_ADMIN_TOKEN は本番管理トークン。公開前に旧本文と参照画像をローカルへ退避する。
+python3 scripts/publish_latest_webtoons.py publish-output --retire-previous
+python3 scripts/publish_latest_webtoons.py publish-output --verify-only
+```
+
+書き出しは390 CSS px・1170画像px。原稿の本文部分だけを連続画像にし、表紙と読了文を別に持つ。
+全話のJSON・画像SHA-256・カタログの話名と版を読み戻して確認してから、旧版を公開停止して
+画像実体も削除する。別の公開更新を検出した場合は削除前に停止する。
+`publish-output/backup`に旧版の本文と参照画像、`published-checks.json`に照合結果を残す。
+`--verify-only`は管理トークン不要で、公開データの読み戻しだけを行う。
+
 | Method / path | 用途 |
 | --- | --- |
 | GET `/` | 一覧・スマートフォン向け縦読みビューア |
