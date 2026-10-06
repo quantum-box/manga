@@ -490,3 +490,197 @@ Narrative panel 4: セナ — 出た。
 Narrative panel 5: カイ — ……よかった。
 
 ```
+
+## 2026-10-07 ゲーム操作・剣の働き・得意分野の実行済み改稿
+
+以下は組み込み image_gen で実行した指示。過去の実使用履歴を保持。未実行の次回用指示は PROMPTS-NEXT.md。
+
+### art/r03-status.png
+
+参照：episode-01/art/r02.png。方式：new_adjacent_strip。
+
+```text
+Use case: illustration-story. Create a NEW adjacent Japanese Webtoon strip, portrait ratio 1:3. The supplied image is a CHARACTER, COSTUME, PROP and PAINTING-STYLE reference, not an edit target or panel-layout template. Match the established polished anime fantasy linework, warm light, white gutters and readable manga expressions. Kai: dark brown tousled hair, amber eyes, white shirt, brown leather vest, short navy shoulder cape, copper LEFT forearm cuff, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor over navy, one triangular silver shield with blue lines. The SAME prototype sword: ordinary steel one-handed straight blade, square brass guard, black leather grip, ONE fine amber engraved line. No legendary sword or flame blade. Only registered game equipment, no hacking or supernatural vision.
+Unequal panel heights and focus, clear top-to-bottom reading. Same-row insets read right to left. One principal understanding per panel; do not cram all exchanges into one shot. Japanese dialogue is upright vertical gothic, columns RIGHT to LEFT, large readable glyphs and white balloons with tails pointing to actual speakers. UI is horizontal, thin cyan translucent functional windows in the named player's viewpoint, not floating ornamental plaques visible to everyone. Keep UI wording short and large, with gently diffused luminous edges. Sound effects are outside balloons by their source. Dialogue, UI and sounds are independently specified. No unlisted words, random numbers, labels, captions, signatures or watermarks. No extra hands or weapons. Draw text inside the raster art.
+
+Scene 得意と、これから. Place: ログインしたリューメルの同じ石段。セナはまだいない。. Purpose: 自分でステータスを開く。回路設計は既に高く、剣の実戦はこれから。. Exactly 3 panels.
+
+Panel 1, top to bottom: 上の浅い手元。カイが右の人差し指で左腕の銅カフを二度触れ、本人の視界にメニューを開く。背後は前の石段。剣は持たない。
+Dialogue: none. No speech or thought balloons. This does not prohibit the separately specified sound effects.
+Player interface, visible to カイ in their own view. Action: 左カフを二度触って開く. Placement: コマの空いた背景。顔・手・刃を避ける. EXACT horizontal rows top to bottom: ステータス. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effect EXACT text: ピッ. Cause: メニューを開く電子音. Placement: カフ近くの空き. Drawn lettering: 小さく短いシアンの電子音。吹き出しなし. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Panel 2, top to bottom: 中央の大きなカイの肩越しの視界。三行だけのステータスを読み、石の階段と塔の裾が窓の奥に透ける。窓がコマ幅の約8割、字が主役。
+Dialogue: none. No speech or thought balloons. This does not prohibit the separately specified sound effects.
+Player interface, visible to カイ in their own view. Action: 技能一覧を確認する. Placement: 窓を中央へ大きく、3行をゆったり整列. EXACT horizontal rows top to bottom: カイ | 剣術 12 | 魔導回路設計 68. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+No unlisted words or sound effects.
+
+Panel 3, top to bottom: 下の大きなカイの顔と左手。窓を閉じ、塔の道へ視線を上げる。得意の設計に加えて、自分でも剣を使いたい。嬉しい期待と少しのためらい。
+Dialogue/thought only, speaker カイ, voice 心の声. EXACT text: 剣も、使えるようになりたい。. Vertical columns RIGHT to LEFT: 剣も、 / 使えるように / なりたい。.
+Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+No unlisted words or sound effects.
+
+```
+
+### art/r06-weapon.png
+
+参照：episode-01/art/r04-sounds.png。方式：new_adjacent_strip。
+
+```text
+Use case: illustration-story. Create a NEW adjacent Japanese Webtoon strip, portrait ratio 1:3. The supplied image is a CHARACTER, COSTUME, PROP and PAINTING-STYLE reference, not an edit target or panel-layout template. Match the established polished anime fantasy linework, warm light, white gutters and readable manga expressions. Kai: dark brown tousled hair, amber eyes, white shirt, brown leather vest, short navy shoulder cape, copper LEFT forearm cuff, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor over navy, one triangular silver shield with blue lines. The SAME prototype sword: ordinary steel one-handed straight blade, square brass guard, black leather grip, ONE fine amber engraved line. No legendary sword or flame blade. Only registered game equipment, no hacking or supernatural vision.
+Unequal panel heights and focus, clear top-to-bottom reading. Same-row insets read right to left. One principal understanding per panel; do not cram all exchanges into one shot. Japanese dialogue is upright vertical gothic, columns RIGHT to LEFT, large readable glyphs and white balloons with tails pointing to actual speakers. UI is horizontal, thin cyan translucent functional windows in the named player's viewpoint, not floating ornamental plaques visible to everyone. Keep UI wording short and large, with gently diffused luminous edges. Sound effects are outside balloons by their source. Dialogue, UI and sounds are independently specified. No unlisted words, random numbers, labels, captions, signatures or watermarks. No extra hands or weapons. Draw text inside the raster art.
+
+Scene 灯刃の働き. Place: 返された一本の剣が工房の木の台にある。カイ左、セナ右。. Purpose: 剣の名前・斬撃強化・消費を、装備詳細の操作と手元で伝える。. Exactly 4 panels.
+
+Panel 1, top to bottom: 上の浅いカイの左カフと右指。作業台の一本の試作剣を選び、装備詳細を開く。剣は台の上のまま、二人とも手に持たない。
+Dialogue: none. No speech or thought balloons. This does not prohibit the separately specified sound effects.
+Player interface, visible to カイ in their own view. Action: 台の剣を選択して詳細を開く. Placement: コマの空いた背景。顔・手・刃を避ける. EXACT horizontal rows top to bottom: 装備詳細. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effect EXACT text: ピッ. Cause: 装備詳細を開く電子音. Placement: カフ近くの空き. Drawn lettering: 小さく短いシアンの電子音。吹き出しなし. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Panel 2, top to bottom: 中央の大きなカイ本人の視界。台に置いた鋼剣を下に残し、余白に三行だけの装備詳細。文字を大きく、普通の鋼と真鍮の剣だと同時に分かる。
+Dialogue: none. No speech or thought balloons. This does not prohibit the separately specified sound effects.
+Player interface, visible to カイ in their own view. Action: 効果と消費を見る. Placement: 横書き3行の窓をコマの上側へ大きく。一本の剣は下に見える. EXACT horizontal rows top to bottom: 灯刃・試作 | 斬撃強化 ＋30％ | 消費MP 2／打. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+No unlisted words or sound effects.
+
+Panel 3, top to bottom: その下のカイと剣の中景。窓は閉じ、刃の橙の細い刻線を指で示す。顔・指・一本の刃を見やすく。熱、火、爆発の絵は出さない。
+Dialogue/thought only, speaker カイ, voice 普通の声. EXACT text: 魔石の力で、刃の切れ味を上げる。. Vertical columns RIGHT to LEFT: 魔石の力で、 / 刃の切れ味を / 上げる。.
+Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+No unlisted words or sound effects.
+
+Panel 4, top to bottom: 下のカイの手と落ち着いた顔。刻線から鍔へ指を戻し、魔力の流すタイミングを自分で設計したことを短く伝える。セナは右の画面外で聞いている。
+Dialogue/thought only, speaker カイ, voice 普通の声. EXACT text: 振る時だけ、刃に魔力を回す。. Vertical columns RIGHT to LEFT: 振る時だけ、 / 刃に魔力を / 回す。.
+Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+No unlisted words or sound effects.
+
+```
+
+### art/r10-log.png
+
+参照：episode-01/art/r07.png。方式：new_adjacent_strip。
+
+```text
+Use case: illustration-story. Create a NEW adjacent Japanese Webtoon strip, portrait ratio 1:3. The supplied image is a CHARACTER, COSTUME, PROP and PAINTING-STYLE reference, not an edit target or panel-layout template. Match the established polished anime fantasy linework, warm light, white gutters and readable manga expressions. Kai: dark brown tousled hair, amber eyes, white shirt, brown leather vest, short navy shoulder cape, copper LEFT forearm cuff, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor over navy, one triangular silver shield with blue lines. The SAME prototype sword: ordinary steel one-handed straight blade, square brass guard, black leather grip, ONE fine amber engraved line. No legendary sword or flame blade. Only registered game equipment, no hacking or supernatural vision.
+Unequal panel heights and focus, clear top-to-bottom reading. Same-row insets read right to left. One principal understanding per panel; do not cram all exchanges into one shot. Japanese dialogue is upright vertical gothic, columns RIGHT to LEFT, large readable glyphs and white balloons with tails pointing to actual speakers. UI is horizontal, thin cyan translucent functional windows in the named player's viewpoint, not floating ornamental plaques visible to everyone. Keep UI wording short and large, with gently diffused luminous edges. Sound effects are outside balloons by their source. Dialogue, UI and sounds are independently specified. No unlisted words, random numbers, labels, captions, signatures or watermarks. No extra hands or weapons. Draw text inside the raster art.
+
+Scene 数字と、消えた光. Place: 失敗を見た同じ試験庭。セナが剣を保持、カイの手は空く。. Purpose: 魔力の残量と出力停止を区別し、回路を調べる理由を持つ。. Exactly 3 panels.
+
+Panel 1, top to bottom: 上の浅い手元。カイが右指で左の銅カフを触り、今の剣の試験ログを開く。セナの剣先は安全に下を向き、刃の光は消えている。
+Dialogue: none. No speech or thought balloons. This does not prohibit the separately specified sound effects.
+Player interface, visible to カイ in their own view. Action: 直前の試験結果を開く. Placement: コマの空いた背景。顔・手・刃を避ける. EXACT horizontal rows top to bottom: 試験ログ. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effect EXACT text: ピッ. Cause: 試験ログを開く電子音. Placement: カフと指の近くの空き. Drawn lettering: 小さく短いシアンの電子音。吹き出しなし. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Panel 2, top to bottom: 中央はカイの肩越しの大きな視界。残量と出力の二つを、3行の窓として読む。背景のセナは本人のログを読まない。窓は読者が理解できる大きさ。
+Dialogue: none. No speech or thought balloons. This does not prohibit the separately specified sound effects.
+Player interface, visible to カイ in their own view. Action: 残量があることと出力停止を見比べる. Placement: 大きな窓。残量はシアン、停止の語だけ淡い橙. EXACT horizontal rows top to bottom: 灯刃・試作 | 魔石MP 62／100 | 魔導出力 停止. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+No unlisted words or sound effects.
+
+Panel 3, top to bottom: 下はカイの目と口を大きく。窓を閉じ、無傷の鋼の刃と光の消えた刻線へ目を動かす。原因を断言せず、確認する場所を絞る。
+Dialogue/thought only, speaker カイ, voice 普通の声. EXACT text: 魔力切れじゃない。強化だけが止まってる。. Vertical columns RIGHT to LEFT: 魔力切れ / じゃない。 / 強化だけが / 止まってる。.
+Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+No unlisted words or sound effects.
+
+```
+
+### art/r10-log-held.png
+
+参照：episode-01/art/r10-log.png。方式：native_targeted_edit。
+
+```text
+Use case: precise-object-edit. Edit ONLY the foreground hand holding the sword in the LAST (third) panel of this supplied finished Japanese Webtoon. The sword must still belong in Sena's hand until she hands it to Kai later. Replace ONLY the bare hand gripping the hilt at bottom-left with Sena's silver-armored gauntlet holding the SAME hilt, wrist entering naturally from off-frame left toward Sena's position. Kai does NOT hold the sword and his hands are outside this last closeup; he is looking at the blade she shows him. Preserve the sword's exact blade, brass guard, orange inlay and angle, and all of Kai's face, hair, clothes, expression and pose. Preserve the first TWO panels completely, including Sena holding the sword, cuffs, fingers, window, all exact Japanese lettering and ピッ. Preserve the final balloon EXACT 魔力切れじゃない。強化だけが止まってる。 Do not add another hand, arm, sword or window, and do not change any layout, canvas, color or lighting. No other edit.
+
+```
+
+### art/r17-party.png
+
+参照：episode-01/art/r13.png。方式：new_adjacent_strip。
+
+```text
+Use case: illustration-story. Create a NEW adjacent Japanese Webtoon strip, portrait ratio 1:3. The supplied image is a CHARACTER, COSTUME, PROP and PAINTING-STYLE reference, not an edit target or panel-layout template. Match the established polished anime fantasy linework, warm light, white gutters and readable manga expressions. Kai: dark brown tousled hair, amber eyes, white shirt, brown leather vest, short navy shoulder cape, copper LEFT forearm cuff, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor over navy, one triangular silver shield with blue lines. The SAME prototype sword: ordinary steel one-handed straight blade, square brass guard, black leather grip, ONE fine amber engraved line. No legendary sword or flame blade. Only registered game equipment, no hacking or supernatural vision.
+Unequal panel heights and focus, clear top-to-bottom reading. Same-row insets read right to left. One principal understanding per panel; do not cram all exchanges into one shot. Japanese dialogue is upright vertical gothic, columns RIGHT to LEFT, large readable glyphs and white balloons with tails pointing to actual speakers. UI is horizontal, thin cyan translucent functional windows in the named player's viewpoint, not floating ornamental plaques visible to everyone. Keep UI wording short and large, with gently diffused luminous edges. Sound effects are outside balloons by their source. Dialogue, UI and sounds are independently specified. No unlisted words, random numbers, labels, captions, signatures or watermarks. No extra hands or weapons. Draw text inside the raster art.
+
+Scene 参加を選ぶ. Place: 夕方の同じ試験庭。カイは右手に試作剣、セナは左腕に盾。. Purpose: 誘いに実際のゲーム操作で応じ、一緒に遊ぶ相手になる。. Exactly 3 panels.
+
+Panel 1, top to bottom: 上はセナの右指と左腕の手元。左腕の盾はそのまま、右指で自分の短いHUDの送信を押す。彼女本人の視点。剣はカイの手にある。
+Dialogue: none. No speech or thought balloons. This does not prohibit the separately specified sound effects.
+Player interface, visible to セナ in their own view. Action: パーティ招待を送信する. Placement: コマの空いた背景。顔・手・刃を避ける. EXACT horizontal rows top to bottom: カイを招待 | 送信. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effect EXACT text: ピッ. Cause: 招待を送信する電子音. Placement: セナの指の近く. Drawn lettering: 小さく短いシアンの電子音。吹き出しなし. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Panel 2, top to bottom: 中央はカイの肩越しの視界。セナから招待が届き、参加ボタンにまだ触れていない。右手の剣は下を向け、左手を窓へ近づける。
+Dialogue: none. No speech or thought balloons. This does not prohibit the separately specified sound effects.
+Player interface, visible to カイ in their own view. Action: 届いた招待を読む. Placement: 顔を避け、窓を大きく、参加ボタンに十分な余白. EXACT horizontal rows top to bottom: セナから招待 | 参加. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+No unlisted words or sound effects.
+
+Panel 3, top to bottom: 下の大きな中景。カイが左の人差し指で参加ボタンを押す。窓が参加完了の2行へ変わる。剣は右手で安全に下ろし、隣のセナへ小さく笑う。まだ塔へ歩き出さない。
+Dialogue: none. No speech or thought balloons. This does not prohibit the separately specified sound effects.
+Player interface, visible to カイ in their own view. Action: 参加を押して完了を確認する. Placement: コマの空いた背景。顔・手・刃を避ける. EXACT horizontal rows top to bottom: パーティに参加 | カイ・セナ. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effect EXACT text: ピッ. Cause: 参加を確定する電子音. Placement: カイの左指のそば. Drawn lettering: 小さく短いシアンの電子音。吹き出しなし. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+```
+
+### art/r17-party-hands.png
+
+参照：episode-01/art/r17-party.png。方式：native_targeted_edit。
+
+```text
+Use case: identity-preserve. Edit ONLY Kai's gloves and the two arm actions in the LAST (third) panel of this finished Japanese Webtoon strip. Kai has bare hands in this episode, not black gloves. Remove ONLY the black glove coverings from Kai's hands in the SECOND and THIRD panels, restoring natural skin fingers and knuckles; keep sleeves, leather/copper forearm cuffs and every UI word. Sena's armored gloves in the FIRST panel MUST stay unchanged.
+In the THIRD panel ONLY, maintain Kai's frontal face, torso, clothes and Sena to his right, but correct his arm actions: Kai's anatomical RIGHT hand (on the VIEWER'S LEFT of his front-facing body) holds the SAME sword safely downward, while his anatomical LEFT hand (on the VIEWER'S RIGHT) reaches to tap the party HUD. The sword must be held in his RIGHT hand throughout this episode; do not mirror his face, hair, clothing, Sena, windows or backgrounds. Reconstruct only the small former hand/sword background areas naturally. Retain one sword total and exactly two arms/hands for Kai; keep the hands separated from the window lettering and Sena. The SECOND panel is from behind Kai, and its sword already belongs in his RIGHT hand: change only glove material there, do not swap sides.
+Preserve all three panel frames/gutters and native canvas size, all faces, expressions, costumes and colors, lighting and tower/workshop backgrounds. Preserve EXACT horizontal UI text in order: first カイを招待 / 送信; second セナから招待 / 参加; third パーティに参加 / カイ・セナ. Preserve both small ピッ sounds. No new dialogue, sound effects, narration, symbols, weapons or character.
+
+```
+
+### art/r07-identity.png
+
+参照：episode-01/art/r05.png。方式：native_targeted_edit。
+
+```text
+Use case: text-localization. Edit ONLY the specified lettering/interface in the supplied CURRENT Japanese Webtoon strip. Preserve the exact 1:3 canvas, every panel/frame/gutter, faces, expressions, anatomy, costumes, poses, hands, the SAME single sword, all backgrounds, colors and lighting. Preserve every unmentioned word and every sound effect. Do not recompose or add action. Japanese dialogue is upright vertical manga lettering, columns RIGHT to LEFT. New HUD is horizontal in the named player perspective, thin cyan translucent functional panel, no ornament, no balloon or tail. Keep letters readable at 360px and avoid faces, hands and the vent.
+In the TOP Sena speech balloon ONLY replace すごく振りやすい。 with EXACT 同じ威力で、魔力は半分。 Columns RIGHT to LEFT: 同じ威力で、 / 魔力は半分。 Keep the original balloon/tail, enlarging only its local blank area if needed. Preserve でも、三回目が出ない。 and all silent reactions. No HUD in this strip.
+
+```
+
+### art/r07-identity-shop.png
+
+参照：episode-01/art/r07-identity.png。方式：native_targeted_edit。
+
+```text
+Use case: text-localization. Edit ONLY the TOP Sena speech balloon of this supplied finished Japanese Webtoon. Make the comparison explicit: replace 同じ威力で、魔力は半分。 with EXACT 店の剣と同じ威力で、魔力は半分。 Upright Japanese vertical manga lettering, columns RIGHT to LEFT: 店の剣と / 同じ威力で、 / 魔力は半分。 Keep readable large lettering, slightly expand only the balloon's local blank background if needed, preserve its smooth contour and tail aimed at Sena. Protect Sena's face, hands and the sword. Preserve all faces, expressions, costumes, poses, backgrounds, lighting, the 1:3 canvas and four panel frames. Preserve でも、三回目が出ない。 exactly, and both silent Kai reaction panels without any text or effects. No new UI, narration, sound, symbols, other dialogue or extra weapon.
+
+```
+
+### art/r12-heat.png
+
+参照：episode-01/art/r09-sounds.png。方式：native_targeted_edit。
+
+```text
+Use case: text-localization. Edit ONLY the specified lettering/interface in the supplied CURRENT Japanese Webtoon strip. Preserve the exact 1:3 canvas, every panel/frame/gutter, faces, expressions, anatomy, costumes, poses, hands, the SAME single sword, all backgrounds, colors and lighting. Preserve every unmentioned word and every sound effect. Do not recompose or add action. Japanese dialogue is upright vertical manga lettering, columns RIGHT to LEFT. New HUD is horizontal in the named player perspective, thin cyan translucent functional panel, no ornament, no balloon or tail. Keep letters readable at 360px and avoid faces, hands and the vent.
+Replace ONLY Kai's explanation balloon next to his face: 光を出すと、ここが熱くなる。 becomes EXACT 刃を強化すると、回路に熱が残る。 Columns RIGHT to LEFT: 刃を強化すると、 / 回路に熱が / 残る。 The vent explanation balloon 逃げないと、止まる。 becomes EXACT 熱が溜まると、安全装置が強化を止める。 Columns: 熱が溜まると、 / 安全装置が / 強化を止める。 Preserve Sena's 熱？, Kai's もう一回、試そう。, scraping カリカリ and final closing カチッ. No new flame, smoke or heat effect.
+
+```
+
+### art/r15-test.png
+
+参照：episode-01/art/r12-sounds.png。方式：native_targeted_edit。
+
+```text
+Use case: text-localization. Edit ONLY the specified lettering/interface in the supplied CURRENT Japanese Webtoon strip. Preserve the exact 1:3 canvas, every panel/frame/gutter, faces, expressions, anatomy, costumes, poses, hands, the SAME single sword, all backgrounds, colors and lighting. Preserve every unmentioned word and every sound effect. Do not recompose or add action. Japanese dialogue is upright vertical manga lettering, columns RIGHT to LEFT. New HUD is horizontal in the named player perspective, thin cyan translucent functional panel, no ornament, no balloon or tail. Keep letters readable at 360px and avoid faces, hands and the vent.
+Add ONLY one small-but-readable horizontal cyan HUD line EXACT 斬撃強化 作動 into the empty background of the THIRD brass-guard/vent closeup panel. It is Kai's view of the successful third-strike output, NOT heat doing damage. Keep the vent opening visible, the amber blade line on, all existing ギュッ and コン, Sena's 出た。, Kai's ……よかった。, and both relief faces. No UI or sounds in the last two reaction panels.
+
+```
+
+### art/r18-promise.png
+
+参照：episode-01/art/r14.png。方式：native_targeted_edit。
+
+```text
+Use case: precise-object-edit. Edit ONLY the black glove on Kai's sword-holding RIGHT hand in the LOWER panoramic panel of this finished Japanese Webtoon. Kai has bare hands throughout the immediately preceding scenes. Replace only the glove material with naturally drawn bare skin fingers and knuckles while retaining the exact grip, hand anatomy, wrist, sleeve, copper/leather forearm cuff, the SAME one sword, guard, hilt and downward blade angle. Keep every other pixel/element as unchanged as possible: both panel frames, native canvas and gutters, Kai and Sena's faces/hair, expressions, body poses and costumes, Sena's armored gloves and shield, sunset tower/city/workshop and lights. Do not mirror anything, do not add any other hand, glove, weapon or window. Preserve EXACT vertical dialogue うん。待ってる。 and ……うん。行く。 with original balloons, tail/dots, column order and glyph size. No new text, effects, UI or action.
+
+```

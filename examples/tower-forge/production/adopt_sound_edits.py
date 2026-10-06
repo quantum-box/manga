@@ -13,6 +13,8 @@ def write(path,data):
 def main():
     d=ROOT/'episode-01'
     ep=json.loads((d/'episode.json').read_text())
+    if ep.get('game_revision'):
+        raise SystemExit('Game revision supersedes the earlier sound manifest. Preserve history; use adopt_game_revision.py.')
     manifest=json.loads((ROOT/'production/sound-edits/manifest.json').read_text())
     design=json.loads((ROOT/'production/episode-01-sound-design.json').read_text())
     provenance=json.loads((ROOT/'production/revision-provenance.json').read_text())

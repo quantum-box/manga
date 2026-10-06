@@ -35,6 +35,8 @@ def main():
             texts=' '.join(f'{p["speaker"]}「{p["text"]}」' for p in scene['panels'] if p['text'])
             sounds=' '.join(sound['text'] for p in scene['panels'] for sound in p.get('sounds',[]))
             if sounds:texts+=' 効果音：'+sounds
+            ui=' '.join(line for p in scene['panels'] for window in p.get('ui',[]) for line in window['lines'])
+            if ui:texts+=' HUD：'+ui
             alt=f'{scene["name"]}。{scene["location"]}。{texts}。会話は縦書きの吹き出しとして画像に含む。'
             parts.append(f'<figure id="scene-{i:02d}"><img src="{file}" width="{w}" height="{h}" alt="{html.escape(alt,quote=True)}"></figure>')
             if scene['gap']:parts.append(f'<div class="gap" aria-hidden="true" style="--gap:{scene["gap"]/3.9:.3f}cqw"></div>')

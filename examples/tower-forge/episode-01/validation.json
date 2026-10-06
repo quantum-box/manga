@@ -1,7 +1,7 @@
 {
   "date": "2026-10-07",
   "episode": 1,
-  "revision": "reader_context_2026_10_07",
+  "revision": "game_actions_and_sword_identity_2026_10_07",
   "viewports": [
     {
       "allLoaded": true,
@@ -25,48 +25,64 @@
         },
         {
           "height": 1170,
-          "top": 5248.701171875
+          "top": 5228.701171875
         },
         {
           "height": 1170,
-          "top": 6518.69140625
+          "top": 6488.701171875
         },
         {
           "height": 1170,
-          "top": 7808.681640625
+          "top": 7728.701171875
         },
         {
           "height": 1170,
-          "top": 9058.681640625
+          "top": 8998.69140625
         },
         {
           "height": 1170,
-          "top": 10308.681640625
+          "top": 10288.681640625
+        },
+        {
+          "height": 1169.453125,
+          "top": 11538.681640625
         },
         {
           "height": 1170,
-          "top": 11578.671875
+          "top": 12778.134765625
         },
         {
           "height": 1170,
-          "top": 12848.662109375
+          "top": 14028.134765625
         },
         {
           "height": 1170,
-          "top": 14208.662109375
+          "top": 15298.125
         },
         {
           "height": 1170,
-          "top": 15528.662109375
+          "top": 16568.115234375
         },
         {
           "height": 1170,
-          "top": 16868.662109375
+          "top": 17928.115234375
+        },
+        {
+          "height": 1170,
+          "top": 19248.115234375
+        },
+        {
+          "height": 1170,
+          "top": 20588.115234375
+        },
+        {
+          "height": 1170,
+          "top": 21868.10546875
         }
       ],
       "height": 844,
-      "imageCount": 14,
-      "pageHeight": 18155,
+      "imageCount": 18,
+      "pageHeight": 23154,
       "pageWidth": 390,
       "width": 390
     },
@@ -92,48 +108,64 @@
         },
         {
           "height": 1080,
-          "top": 4860.244140625
+          "top": 4841.77734375
         },
         {
           "height": 1080,
-          "top": 6032.548828125
+          "top": 6004.853515625
         },
         {
           "height": 1080,
-          "top": 7223.310546875
+          "top": 7149.462890625
         },
         {
           "height": 1080,
-          "top": 8377.1484375
+          "top": 8321.767578125
         },
         {
           "height": 1080,
-          "top": 9530.986328125
+          "top": 9512.529296875
+        },
+        {
+          "height": 1079.501953125,
+          "top": 10666.3671875
         },
         {
           "height": 1080,
-          "top": 10703.291015625
+          "top": 11810.478515625
         },
         {
           "height": 1080,
-          "top": 11875.595703125
+          "top": 12964.31640625
         },
         {
           "height": 1080,
-          "top": 13130.9765625
+          "top": 14136.62109375
         },
         {
           "height": 1080,
-          "top": 14349.43359375
+          "top": 15308.92578125
         },
         {
           "height": 1080,
-          "top": 15586.357421875
+          "top": 16564.306640625
+        },
+        {
+          "height": 1080,
+          "top": 17782.763671875
+        },
+        {
+          "height": 1080,
+          "top": 19019.6875
+        },
+        {
+          "height": 1080,
+          "top": 20201.220703125
         }
       ],
       "height": 800,
-      "imageCount": 14,
-      "pageHeight": 16782,
+      "imageCount": 18,
+      "pageHeight": 21397,
       "pageWidth": 360,
       "width": 360
     }
@@ -141,7 +173,7 @@
   "raster_lettering_visual": "reviewed_at_both_widths",
   "physical_device_tested": false,
   "story_quality_approved_by_user": false,
-  "method": "CUA browser metrics and captured scene images; story comprehension reviewed separately",
+  "method": "CUA DOM metrics and live JPEG scene captures; full-reader evidence captured in two contiguous parts per width because one oversized full-page capture was unavailable.",
   "visual_review": {
     "reviewer": "model",
     "date": "2026-10-07",
@@ -149,19 +181,21 @@
       390,
       360
     ],
-    "scope": "All 14 adopted scene images; 7 native sound edits checked at both widths, preserving earlier reviewed dialogue and continuity.",
+    "scope": "All 18 adopted scenes captured at both widths; 4 inserted scenes and 4 edited scenes visually reviewed at 390/360, with reused previously reviewed artwork and dialogue preserved.",
     "limitations": "Browser captures only; no physical device or user approval. Visual legibility is not proof of comprehension or empathy."
   },
   "narrative_review": {
-    "planned_and_drawn_panels": 55,
+    "planned_and_drawn_panels": 68,
     "sequence": [
       "real-world wish to participate",
-      "VR login and walk to workshop",
-      "own prototype returned by tester",
-      "observe third-strike stop",
-      "inspect and clear vent",
-      "Kai tests his own blade",
-      "invitation to fight together",
+      "VR login and player-controlled skill check",
+      "walk to workshop and own prototype returned",
+      "open equipment details and show efficient design",
+      "observe third-strike enhancement stop",
+      "open log to distinguish reserve from stopped output",
+      "inspect and clear clogged cooling vent",
+      "test the same sword and confirm third-strike enhancement",
+      "invitation to fight together and accept party",
       "promise for tomorrow"
     ],
     "checks": [
@@ -169,7 +203,11 @@
       "No assumption that Kai attended the shared adventure screenshot",
       "Maker and ownership explicitly stated",
       "One prototype blade tracked throughout",
-      "No blackout or new quest in this episode"
+      "No blackout or new quest in this episode",
+      "Sword identity and enhancement shown before heat explanation",
+      "Circuit design specialty demonstrated in equipment result, not just skill number",
+      "Interface perspective and input action specified",
+      "No automatically revealed physical clog diagnosis in the log"
     ],
     "reader_acceptance": "not_yet_reviewed_by_user"
   },
@@ -181,14 +219,68 @@
       390,
       360
     ],
-    "native_edited_strips": 7,
-    "independent_cues": 13,
+    "independent_cues": 18,
     "checks": [
       "Sounds match the drawn action and are near the source",
       "No speech balloons or tails around sound effects",
-      "Dialogue remains legible and unchanged",
+      "Dialogue changes limited to sword effect, heat mechanism and design comparison; other adopted speech preserved",
       "Listener reactions, doubt, invitation and relief retain quiet"
     ],
-    "limitations": "Browser captures only. Small ambient lettering is intentionally subdued; no claim that every glyph is at least 20px. No physical device or reader acceptance."
+    "limitations": "Browser captures only. Small ambient lettering is intentionally subdued; no claim that every glyph is at least 20px. No physical device or reader acceptance.",
+    "scope": "13 prior action sounds plus 5 interface-action sounds; quiet reaction and relief panels preserved."
+  },
+  "game_revision": "game_actions_and_sword_identity_2026_10_07",
+  "full_reader_captures": [
+    {
+      "width": 390,
+      "pageHeight": 23154,
+      "parts": [
+        {
+          "file": "webtoon-390-part-01.jpg",
+          "y": 0,
+          "height": 12000
+        },
+        {
+          "file": "webtoon-390-part-02.jpg",
+          "y": 12000,
+          "height": 11154
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "pageHeight": 21397,
+      "parts": [
+        {
+          "file": "webtoon-360-part-01.jpg",
+          "y": 0,
+          "height": 12000
+        },
+        {
+          "file": "webtoon-360-part-02.jpg",
+          "y": 12000,
+          "height": 9397
+        }
+      ]
+    }
+  ],
+  "game_review": {
+    "reviewer": "model",
+    "date": "2026-10-07",
+    "widths": [
+      390,
+      360
+    ],
+    "checks": [
+      "Kai opens status: sword skill 12 / circuit design 68",
+      "Named sword: slash enhancement +30%, MP2 per strike",
+      "Sena compares same power at half the market sword cost",
+      "Kai opens logs; MP remains while enhancement stops",
+      "Heat is a conversion loss; safety stops enhancement, not the steel blade",
+      "Third repaired strike reports enhancement active",
+      "Sena sends party invitation; Kai accepts it",
+      "Sword remains with Sena until handover; Kai then holds it in right bare hand"
+    ],
+    "limitations": "Browser and model review; no physical device or reader acceptance."
   }
 }

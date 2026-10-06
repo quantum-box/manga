@@ -3,11 +3,28 @@
 import base64
 import hashlib
 import json
+import struct
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+
+def jpeg_size(path):
+    data=path.read_bytes()
+    assert data[:2]==b'\xff\xd8',path
+    position=2
+    while position<len(data):
+        assert data[position]==255,(path,position)
+        while data[position]==255:position+=1
+        marker=data[position];position+=1
+        if marker in [1,216,217] or 208<=marker<=215:continue
+        length=struct.unpack('>H',data[position:position+2])[0]
+        if marker in [192,193,194,195,197,198,199,201,202,203,205,206,207]:
+            height,width=struct.unpack('>HH',data[position+3:position+7])
+            return width,height
+        position+=length
+    raise AssertionError(path)
 
 class Reader(HTMLParser):
     def __init__(self):
@@ -44,8 +61,24 @@ def check():
         review=json.loads((d/'validation.json').read_text())
         assert review['raster_lettering_visual'] in [True,'reviewed_at_both_widths'], n
         for width in [390,360]:
-            assert (d/f'webtoon-{width}.jpg').is_file(), (n,width)
+            full=next((x for x in review.get('full_reader_captures',[]) if x['width']==width),None)
+            if full:
+                y=0
+                for part in full['parts']:
+                    assert part['y']==y,(n,width,part)
+                    actual=jpeg_size(d/part['file'])
+                    assert actual[0]==width and abs(actual[1]-part['height'])<=1,(n,part,actual)
+                    y+=part['height']
+                assert y==full['pageHeight'],(n,width,y)
+            else:
+                assert (d/f'webtoon-{width}.jpg').is_file(), (n,width)
             assert all((d/f'validation/scene-{i:02d}-{width}.jpg').is_file() for i in range(1,count+1)), (n,width)
+            if ep.get('game_revision'):
+                assert sum(len(s['panels']) for s in ep['scenes'])==ep['narrative_panel_count']
+                for i,asset in enumerate(assets,1):
+                    actual=jpeg_size(d/f'validation/scene-{i:02d}-{width}.jpg')
+                    expected=width*asset['height']/asset['width']
+                    assert actual[0]==width and abs(actual[1]-expected)<=1,(n,i,width,actual,expected)
         image_count += count
     status=json.loads((ROOT/'production/build-status.json').read_text())
     assert status['ready_episodes']==list(range(1,11))

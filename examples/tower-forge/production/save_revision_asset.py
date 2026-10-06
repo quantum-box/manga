@@ -22,8 +22,10 @@ def main():
     if target.exists():raise SystemExit(f'Already exists: {target}')
     shutil.copyfile(args.source,target)
     path=ROOT/'production/revision-provenance.json'
-    prompt=json.loads((ROOT/'production/episode-01-revision.json').read_text())['scenes'][args.scene-1]['prompt']
-    if args.prompt:prompt=args.prompt.read_text()
+    if args.prompt:
+        prompt=args.prompt.read_text()
+    else:
+        prompt=json.loads((ROOT/'production/episode-01-revision.json').read_text())['scenes'][args.scene-1]['prompt']
     record=dict(episode=1,scene=args.scene,file=str(target.relative_to(ROOT/'episode-01')),
                         source=str(args.source),sha256=hashlib.sha256(target.read_bytes()).hexdigest(),
                         method='built_in_image_gen',prompt=prompt,repair=args.repair,
