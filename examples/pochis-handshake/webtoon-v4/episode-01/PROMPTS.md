@@ -41,4 +41,3 @@ Edit lettering only in existing finished manga strip. Only enlarge the offscreen
 ## 04 採用修正 art/04-lettering.png
 
 Edit lettering only in existing finished manga strip. Only enlarge dog thought balloon 俺も怖い。でも……。 to at least75px glyphs at1024 original width, two right-to-left columns 俺も怖い。 / でも……。. Keep exact text, dog thought circles, all poses, child and branch, colors and layout. Do not enlarge bark.
-

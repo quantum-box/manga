@@ -46,4 +46,3 @@ Edit ONLY practice prop in this finished manga strip, preserve characters, faces
 ## 03 採用修正 art/03-lettering.png
 
 Edit ONLY Japanese dialogue lettering, enlarge to65–75px high glyphs at1024width. Preserve original art and all characters, props, clothes and positions. Exact upper PRINCESS 私は、戦いに来ていません。 columns 私は、 / 戦いに / 来て / いません。. Exact lower PRINCESS 留め具を直します。教えてください。 columns 留め具を / 直します。 / 教えて / ください。. Enlarge balloons enough, keep upright vertical glyphs top-bottom, columns right-left, correct tail to princess, no covering faces or hands. Keep exact words, remove no existing story content.
-

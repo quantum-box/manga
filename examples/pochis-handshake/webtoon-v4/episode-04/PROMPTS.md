@@ -45,4 +45,3 @@ Edit ONLY the tiny distant bright castle at top-right into ordinary forested hil
 ## 02 採用修正 art/02-stream.png
 
 Edit ONLY geography/background around this broken bridge. Keep broken wooden footbridge, princess and dog poses, map, ALL exact Japanese balloons and typography. The bridge crosses a TWO-METER-WIDE fast FOREST STREAM at ground level. Replace immense canyon, towering cliffs and cascading waterfall with low rocky tree-covered banks and fast shallow-to-knee-deep forest stream. Middle missing wooden planks remain a gap dog is afraid to jump. This river is continuous with a shallow stepping-stone ford just downstream reachable along ordinary bank. No large cliff descent.
-

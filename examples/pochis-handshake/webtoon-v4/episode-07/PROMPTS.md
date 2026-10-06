@@ -41,4 +41,3 @@ MANDATORY MOBILE FONT: Even distant voices and thoughts need 75px high upright g
 ## 03 採用修正 art/03-lettering.png
 
 Edit ONLY the two dialogue balloons and Japanese typography in this finished three-beat manga strip. Both are too small on phone. Enlarge glyphs to65–75px at1024width, enlarge balloons and use more shorter VERTICAL columns to fit. Exact PRINCESS upper text 止めた理由を、教えてください。 right-to-left columns 止めた / 理由を、 / 教えて / ください。 ; exact KING middle text 水路が壊れた。修理が終わらぬ。 columns 水路が / 壊れた。 / 修理が / 終わらぬ。. Preserve every character face, dog, hands pointing, clothes, background and action order. Balloons may extend into blank background near panel edges but must not cover faces, hands or paws. Tails to correct mouth. No new text.
-

@@ -37,4 +37,3 @@ EPISODE 6 STRIP 4: Sudden gust from sluice mechanism makes blue cloak whip; Poch
 Exact balloons in temporal order: 門の奥の声:そこから離れろ！|姫:ポチ！
 Never print speaker names. Keep each balloon matched to stated action. No episode header in artwork.
 MANDATORY MOBILE FONT: Even distant voices and thoughts need 75px high upright glyphs at1024width. Do not shrink small balloons; enlarge balloon and column-break instead. Max 5–6 glyphs each vertical column. Close-up faces large. Max3 action beats.
-

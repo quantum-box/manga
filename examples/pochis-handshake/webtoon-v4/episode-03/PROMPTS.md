@@ -45,4 +45,3 @@ Edit ONLY BACKGROUND of this finished three-beat vertical manga strip. ALL three
 ## 04 採用修正 art/04-village.png
 
 Edit ONLY backgrounds in this exact three-panel manga strip. Top panel princess packing a satchel inside a MODEST VILLAGE COTTAGE with wood floor, plain plaster walls and smallwindow, NOT palace. Middle panel princess talking to dog outdoors beside village well, humble timber cottages. Bottom panel princess and dog set off along humble dirt village lane towards FOREST, ONLY small timber cottages and trees ahead, NO grandcastle, towers, royalblue banners, goldcolumns or marble. Keep all characters, poses, dog, hands, stars, costumes, every exact Japanese speech/thought balloon and vertical typography unchanged. Only remove palace imagery and establish ordinary village.
-

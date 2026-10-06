@@ -37,4 +37,3 @@ EPISODE 2 STRIP 4: Princess crouches at SAME boy and branch, lifts branch using 
 Exact balloons in temporal order: 子供:お姉ちゃん！|姫:教えてくれたんだね。|ポチ内心:伝わった……。
 Never print speaker names. Keep each balloon matched to stated action. No episode header in artwork.
 MANDATORY MOBILE FONT: Even distant voices and thoughts need 75px high upright glyphs at1024width. Do not shrink small balloons; enlarge balloon and column-break instead. Max 5–6 glyphs each vertical column. Close-up faces large. Max3 action beats.
-

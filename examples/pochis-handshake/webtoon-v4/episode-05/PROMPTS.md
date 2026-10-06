@@ -42,4 +42,3 @@ MANDATORY MOBILE FONT: Even distant voices and thoughts need 75px high upright g
 ## 04 採用修正 art/04-border.png
 
 Edit ONLY BACKGROUNDS, keep princess, Shiba, wolf and every exact Japanese word/balloon/pose unchanged. TOP and MIDDLE scenes occur at abandoned rough DARK-GRAY STONE BORDER GATE RUINS along forest road, outside the demoncastle. Replace glamorous bright palace, golden columns, royalblue flags, distant white palace and ALL small human armored guards with EMPTY ruin stone arch, broken fence, forest road leading toward distant blackcastle. NO humans besides the princess. Wolf leads them through border arch but they DO NOT enter castle yet. Bottom scene remains dusk lantern campsite OUTSIDE the same gray border gate, distant blackcastle far beyond; preserve princess and sleepingdog and exact thought balloon. This must flow directly to closed empty demoncastle door next morning.
-

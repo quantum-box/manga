@@ -41,4 +41,3 @@ MANDATORY MOBILE FONT: Even distant voices and thoughts need 75px high upright g
 ## 01 採用修正 art/01-dialogue.png
 
 Edit only duplicated dialogue. REMOVE the entire speech balloon saying はい。 in the MIDDLE close-up panel of the princess. Leave that beat silent. Preserve the FIRST はい。 balloon in top panel next to princess, preserve king 合図するまで回すな。 and dog thought 俺は、ここで待つ。, unchanged size and vertical letters. Remove middle balloon by filling its area with matching mechanical room background. Keep all art, faces, hand poses, machinery, dog and panel layout unchanged. One reply はい。 total, never two.
-

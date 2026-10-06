@@ -46,4 +46,3 @@ Edit ONLY the two signboards in MIDDLE water-channel panel. Remove all engineeri
 ## 02 採用修正 art/02-village.png
 
 Edit ONLY TOP village-well panel: REMOVE orange Shiba dog at left completely and replace its occupied area with matching village well stonework / ordinary ground and cottage background. Pochi stays at demoncastle and must not teleport to village. Preserve boy Toto face pose ochre poncho, full waterbucket, rope, adult helpinghands and exact 水だ！ balloon. Preserve entire LOWER panel princess and pigeon with blue ribbon and exact 村に、届きました。 unchanged. No dog anywhere in this strip. Keep panel structure, colors, art style. Nothing else changes.
-
