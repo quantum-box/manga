@@ -137,6 +137,68 @@ def build(number):
             old['widthPercent'] = plan.get('layout',{}).get(str(number),{}).get(old['id'],100)
             old['provenance_v6'] = 'retained adopted art; frame placement reviewed separately'
             shots.append(old)
+    # Keep later, targeted sound edits when rebuilding the adopted story layout.
+    sound_records = ROOT / 'production' / f'episode-{number:02d}-sfx' / 'records'
+    for shot in shots:
+        revision_path = sound_records / (shot['id'] + '.json')
+        if not revision_path.exists():
+            continue
+        revision = json.loads(revision_path.read_text())
+        assert revision['preservedLines'] == shot['lines']
+        assert revision['preservedVisibleText'] == shot.get('visible_text', [])
+        assert revision['panels'] == shot.get('panels', [])
+        assert digest(directory(number)/'art'/revision['file']) == revision['sha256']
+        before = revision['repairBefore']
+        assert digest(directory(number)/'art'/before['file']) == before['sha256']
+        shot.update(file=revision['file'], sounds=revision['sounds'],
+                    sha256=revision['sha256'], prompt=revision['prompt'],
+                    references=[r['path'] for r in revision['references']],
+                    provenance='targeted raster sound-effect edit',
+                    revisionRecord=str(revision_path.relative_to(REPO)),
+                    visual_review=revision['visual_review'])
+    insertion_plan = sound_records.parent / 'inserts.json'
+    if insertion_plan.exists():
+        additions = json.loads(insertion_plan.read_text())
+        for addition in additions['inserts']:
+            record_path = REPO / addition['record']
+            record = json.loads(record_path.read_text())
+            assert not any(s['id'] == record['shot']['id'] for s in shots)
+            assert digest(directory(number)/'art'/record['shot']['file']) == record['sha256']
+            for reference in record['references']:
+                assert digest(REPO/reference['path']) == reference['sha256']
+            position = next(i for i,s in enumerate(shots) if s['id'] == addition['after'])
+            shot = copy.deepcopy(record['shot'])
+            shot.update(prompt=record['prompt'], sha256=record['sha256'],
+                        references=[r['path'] for r in record['references']],
+                        insertionRecord=str(record_path.relative_to(REPO)), replaces=[],
+                        provenance='armor assembly insert', generated=True,
+                        visual_review=record['visual_review'])
+            shots.insert(position+1, shot)
+        for shot in shots:
+            if shot['id'] in additions.get('pauseOverrides', {}):
+                shot['pause'] = additions['pauseOverrides'][shot['id']]
+    layout_records = ROOT / 'production' / f'episode-{number:02d}-layout' / 'records'
+    for shot in shots:
+        record_path = layout_records / (shot['id'] + '.json')
+        if not record_path.exists():
+            continue
+        record = json.loads(record_path.read_text())
+        before = record['beforeShot']
+        for key in ('id','file','lines','panels','sounds','visible_text','pause','widthPercent','shape','sha256','prompt','replaces'):
+            assert before.get(key) == shot.get(key), (shot['id'], key)
+        assert digest(directory(number)/'art'/before['file']) == before['sha256']
+        assert digest(directory(number)/'art'/record['file']) == record['sha256']
+        assert len(record['panels']) == len(before['panels'])
+        for old, new in zip(before['panels'], record['panels']):
+            assert {k:v for k,v in old.items() if k!='frame'} == {k:v for k,v in new.items() if k!='frame'}
+        for reference in record['references']:
+            assert digest(REPO/reference['path']) == reference['sha256']
+        shot.update(file=record['file'], panels=record['panels'],
+                    prompt=record['prompt'], sha256=record['sha256'],
+                    references=[r['path'] for r in record['references']],
+                    layoutRevisionRecord=str(record_path.relative_to(REPO)),
+                    layout=record['layout'], provenance='panel layout recomposition',
+                    visual_review=record['visual_review'])
     manifest.update(version='context-dialogue-v6', shots=shots,
                     panel_count=sum(len(s.get('panels',[s])) for s in shots),
                     baseline=baseline_reference(f'episode-{number:02d}.json'))
@@ -151,6 +213,7 @@ def build(number):
         width,height = unpack('>II',path.read_bytes()[16:24])
         alt = shot.get('alt_ja',shot['scene']) + ' ' + ' '.join(l['speaker']+'『'+l['text']+'』' for l in shot['lines'])
         alt += ' ' + ' '.join(t['text'] for t in shot.get('visible_text',[]))
+        alt += ' ' + ' '.join('効果音『'+sound+'』' for sound in shot.get('sounds',[]))
         out.append(f'<figure class="scene {shot["shape"]}" id="{shot["id"]}" style="--width:{shot["widthPercent"]}%"><img src="art/{shot["file"]}" width="{width}" height="{height}" alt="{html.escape(alt,quote=True)}"></figure>')
         out.append(f'<div class="pause" aria-hidden="true" style="--pause:{shot["pause"]/390*100:.2f}cqw"></div>')
         storyboard += [f'## {shot["id"]}', '', shot['scene'], '', f'表示幅：{shot["widthPercent"]}%。次までの間：390px幅で{shot["pause"]}px相当。', '']
@@ -158,6 +221,7 @@ def build(number):
             storyboard += [f'### コマ{i}', '',panel['beat'],'',f'注目と接続：{panel["view"]}',f'大きさと枠：{panel["frame"]}',f'声：{panel.get("voice","無言")}', '']
         storyboard += [l['speaker']+'：'+l['text'] for l in shot['lines']] + ['']
         storyboard += [f'画面内表示：{t["text"]}' for t in shot.get('visible_text',[])] + ['']
+        storyboard += [f'効果音：{sound}' for sound in shot.get('sounds',[])] + ['']
     prev = '../v5/index.html' if number == 2 else f'../episode-{number-1:02d}/index.html'
     nav = '<a href="../chapters.html">話一覧</a>'
     if number > 1: nav += f'<a href="{prev}">前の話</a>'
@@ -170,6 +234,12 @@ def build(number):
     execution=[]
     for shot in shots:
         record_path=STATE/'records'/(shot['id']+'.json')
+        if shot.get('layoutRevisionRecord'):
+            record_path = REPO / shot['layoutRevisionRecord']
+        elif shot.get('revisionRecord'):
+            record_path = REPO / shot['revisionRecord']
+        elif shot.get('insertionRecord'):
+            record_path = REPO / shot['insertionRecord']
         record=json.loads(record_path.read_text()) if record_path.exists() else {
             'id':shot['id'],'file':shot['file'],'sha256':digest(directory(number)/'art'/shot['file']),
             'method':'retained prior adopted image_gen output',
@@ -182,6 +252,13 @@ def build(number):
                  'prior_generation_record':archive})
     prompt_lines=[f'# 第{number:02d}話 — 採用原画の実行指示','',
                   '全10話の改稿は新規54素材・承認見本の再利用3素材。再利用・修正・採用原画の保持を generation-log.json で区別。以前の実行記録は Git の履歴で管理。','']
+    sound_count = sum(bool(s.get('revisionRecord')) for s in shots)
+    insert_count = sum(bool(s.get('insertionRecord')) for s in shots)
+    layout_count = sum(bool(s.get('layoutRevisionRecord')) for s in shots)
+    if sound_count or insert_count:
+        prompt_lines += [f'この話の追加改稿：既存{sound_count}素材の効果音編集・{insert_count}素材の装着過程追加。元画像・修正前画像・実行指示は production/episode-{number:02d}-sfx に保持。','']
+    if layout_count:
+        prompt_lines += [f'その後のコマ割り改稿：{layout_count}素材を横並び・斜め枠へ再構成。読順・元画像・指示は production/episode-{number:02d}-layout に保持。','']
     for r in execution:
         prompt_lines += ['## '+r['file'],'',r['method'],'',
                          '参照：'+json.dumps(r.get('references',[]),ensure_ascii=False),'']

@@ -1,6 +1,6 @@
 # 場面ごとの作画指示
 
-画像生成には同じキャラクター仕様と参照画像を渡し、場面固有の構成・状態・伏せる情報を追加する。単に「縦長のWebtoon」と頼むと、横長のコマや等間隔のコマ列に戻りやすい。
+画像生成には同じキャラクター仕様と参照画像を渡し、場面固有の構成・状態・伏せる情報を追加する。単に「縦長のWebtoon」と頼むと、全幅の矩形を縦へ積むだけの構成や目的のない均等なコマ列に戻りやすい。横長・横並び・斜めのコマも、会話や動作の役割に合うところで使う。
 
 日本語の会話は吹き出しとセリフを絵に含めて生成する。縦書きの列指定は[承認された実例](vertical-lettering.md)を参照する。吹き出しの数や位置は各場面の発話と構図から決める。
 
@@ -22,6 +22,8 @@ Input images: Reference 1 establishes character identity; Reference 2 establishe
 Subject: [identity, clothing, markings and recurring props].
 Style/medium: [chosen art direction].
 Scene/backdrop: [consistent setting and time].
+Camera: [distance: wide / medium / close-up; height and angle; whose viewpoint, if relevant].
+Composition: [primary focal element and path to the next beat; reserve the planned balloon area without covering faces, hands or clues].
 Text: Render the exact Japanese dialogue below inside white speech balloons integrated with the illustration. Use true vertical Japanese typesetting: upright glyphs, top-to-bottom columns, columns ordered right-to-left. Do not rotate horizontal sentences sideways. No extra text or watermark.
 Dialogue: [speaker, exact full text, balloon reading order, and each vertical column listed in right-to-left order].
 Voice: [spoken / thought; intended listener; volume, emotion and breath for THIS utterance].
@@ -54,6 +56,8 @@ Do not include later replies, new locations, or every character from the referen
 ## 構成の指示を変える
 
 複数のコマを一枚へ生成するときは「大小をつける」だけで済ませず、各コマの役割と相対的な幅・高さ・配置・枠の有無を指示する。たとえば「全幅の状況確認→右寄せの会話→左寄せの浅い目元→大きな名乗り」。小コマはその面積に合う対象へ描き直し、全景を縮めたり絵を押し潰したりしない。生成後は文字だけでなく、本当に形と面積に差が出たか見る。[大小を直した実例](context-and-dialogue.md)の数値や配列は今回だけの選択。
+
+横並びでは同じ段に入るコマ、右から左への順、次の段への移動を明記する。斜めではどの外枠やコマ間を傾けるかを指定し、絵や文字を丸ごと回転させない。[横並びと斜め枠の制作例](panel-layout.md)を参照する。生成結果の形と読順を目視し、指示した数値がそのまま出たとは扱わない。
 
 **短い動作を密に読む場面**
 

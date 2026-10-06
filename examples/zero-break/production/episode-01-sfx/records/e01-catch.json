@@ -1,0 +1,68 @@
+{
+  "id": "e01-catch",
+  "episode": 1,
+  "file": "sfx-v6-catch.png",
+  "method": "built-in image_gen targeted raster sound-effect edit",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-d4c07cc8-0866-4928-9a6f-ffce66310707.png",
+  "sha256": "8356849e99ccd8192b0f6b3a9bc88a142f2a272d1bf889788d2b55fdceaf7dcd",
+  "width": 1122,
+  "height": 1402,
+  "sounds": [
+    "ギュッ！",
+    "バサァッ"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nAdd medium bold ギュッ！ beside Mira's bare hand gripping Ren's shirt at the center-right, clear of all fingers, faces and the existing つかまって！ balloon. Add flowing lighter バサァッ in the lower-left open background alongside the whipping fabric/scarf direction. Sound of holding on is primary; cloth flutter is secondary. Keep Ren unarmored, carrying Mira above the cargo awning, all limbs and their grip, exact pose and location; do not show a new landing or tear.\nExact new sound words: ギュッ！ / バサァッ",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/v6-catch.png",
+      "sha256": "b1e3efc1a8356b4b72005066acc515d7948c8ccafe10f0ccc7deb92a71fa419b"
+    }
+  ],
+  "repairBefore": {
+    "file": "v6-catch.png",
+    "sha256": "b1e3efc1a8356b4b72005066acc515d7948c8ccafe10f0ccc7deb92a71fa419b"
+  },
+  "panels": [
+    {
+      "beat": "Ren catches Mira before they reach the canvas.",
+      "view": "Ren BARE arms support Mira back and knees in midair, red scarf streams, awning below.",
+      "frame": "medium full-width action frame",
+      "voice": "thick jagged urgent shout with tail to mouth",
+      "line": {
+        "speaker": "Ren",
+        "text": "つかまって！",
+        "type": "speech"
+      }
+    }
+  ],
+  "preservedLines": [
+    {
+      "speaker": "Ren",
+      "text": "つかまって！",
+      "type": "speech"
+    }
+  ],
+  "preservedVisibleText": [],
+  "originalPrompt": "Use case: precise-object-edit / emphatic speech-balloon outline.\nImage1 is the EXACT target: Ren catching Mira in midair. Image2 is a PHOTO supplied ONLY as a reference for the DENSE thick outward jagged/brush rim on the loud balloon. Do not copy its dialogue, characters, photo or layout.\nChange ONLY Ren's existing shout balloon at upper right. Preserve all artwork, faces, bare hands, the supported Mira, clothing, red scarf, setting, framing and composition. Same roughly 4:5 portrait aspect. Keep the exact Japanese つかまって！ in ONE upright top-to-bottom vertical column, large legible printed manga gothic.\nReplace its thin simple starburst with an emphatic white shout balloon surrounded by a bold dark charcoal dense outward tapered jagged/brush rim, like stressed loud comic speech. Variation of thick and thin strokes around the perimeter, roughly 12-20px visual rim at 1024px-wide art, WHITE inner area and generous text inset. A clear pointed sharp speech tail connects toward REN'S OPEN MOUTH, no dots. The outline communicates a loud urgent safety instruction during a rescue, not a villain aura or interior thought.\nFit the rim into the existing balloon area; do not cover hair, face or hand, and do not enlarge it over Mira. Avoid glow, red fill, blood, extra text, labels, new balloons or watermark. The original black panel frame stays unchanged. Everything outside this balloon is an invariant.\n",
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "8356849e99ccd8192b0f6b3a9bc88a142f2a272d1bf889788d2b55fdceaf7dcd",
+    "checks": [
+      "exact Japanese text and sound lettering",
+      "character identity, anatomy, costume and continuity",
+      "ordered partial assembly before existing full-body reveal"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "review/v6-contact-360-5.png",
+      "review/v6-contact-390-5.png"
+    ]
+  },
+  "mobile_browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}

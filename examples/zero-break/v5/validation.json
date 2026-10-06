@@ -1,69 +1,50 @@
 {
   "edition": "context-dialogue-v6",
-  "panels": 66,
-  "readerSourceSha256": "c9220f9359a6102870c11f61ef9da8a7c6b8ab4f7f80b2211119fe766809aea6",
+  "panels": 73,
+  "readerSourceSha256": "73ef45beac16d41e1728d2ef2671b323adbe60051c926e828b7d085c495015bc",
   "source_assets_verified": true,
   "visualReview": {
-    "status": "passed",
-    "method": "manual inspection of native raster exports; not browser/DOM inspection",
-    "assets": 30,
-    "panels": 66,
-    "all_assets_at_360": true,
-    "representative_intervals_at_390": true,
-    "exact_text_and_speakers": true,
-    "faces_hands_costumes_props_and_causality": true,
-    "continuity_notes": "ルークの名乗り、測定の接触と待機、危機の上下関係、救出後の安全、初変身の順を確認。",
-    "reviewed_files": [
-      {
-        "file": "review/v6-contact-360-0.png",
-        "sha256": "d3176fd28ad9a5276a4a051fc5e5d5e992614c2cc3c40aa5af3e64b65ff27db3"
-      },
-      {
-        "file": "review/v6-contact-360-1.png",
-        "sha256": "4e36fc5482bfffa89b08bcf71e10461a629118d9b0ac70bd97ddb6930fee536c"
-      },
-      {
-        "file": "review/v6-contact-360-2.png",
-        "sha256": "ac1f4c356c9693cb629c03612b10e60a0b36e0afe5b7c8c769d6265498ce21d9"
-      },
-      {
-        "file": "review/v6-contact-360-3.png",
-        "sha256": "c420d2c9b10d9bae53946d08168e22c74c875485e2396f33ea42c227917a9208"
-      },
-      {
-        "file": "review/v6-contact-360-4.png",
-        "sha256": "8c7f519177a3b98881e8eb9d035465a58921ae0d137ec224aa429a426cfffa1f"
-      },
-      {
-        "file": "review/v6-contact-360-5.png",
-        "sha256": "31b399b272574873540f0bad143361bbac21698d236b675a24ada8f071b47319"
-      },
-      {
-        "file": "review/v6-contact-360-6.png",
-        "sha256": "380a87b4beff4609f1d9775c8d5a351aa4d18cf7644603e95c8bab4d665fb1db"
-      },
-      {
-        "file": "review/v6-contact-360-7.png",
-        "sha256": "e2cd87db2b296743bd7eaea6dc2956948c7e71e40a479af150307af7480c99e5"
-      },
-      {
-        "file": "review/v6-contact-390-5.png",
-        "sha256": "1e75ea2b5d5683b1e2c7f59e03d306d935b2e9dace9466a8754884bd6aefc4f5"
-      },
-      {
-        "file": "review/v6-flow-390-15.png",
-        "sha256": "41654986d7cc97b71f2afd9ac56195f8bbc2b232c0929e4d8b9cef9370b96fb2"
-      },
-      {
-        "file": "review/v6-flow-390-22.png",
-        "sha256": "96f1ddd2d3ce4be9e4e541ed133039f9098a4326e51ed9195687cc8060d39ef7"
-      }
+    "status": "passed_native_mobile_image_review",
+    "method": "native Canvas contact images and continuous windows; no browser rendering",
+    "widths": [
+      360,
+      390
     ],
-    "user_acceptance": "not_recorded_for_full_revision"
+    "checks": [
+      "all four revised layout scenes: exact dialogue, sound labels, faces, supporting hands and row reading order",
+      "actual diagonal panel borders and gutter; lettering upright",
+      "surrounding story and assembly order preserved"
+    ],
+    "evidence": [
+      "review/v6-contact-360-1.png",
+      "review/v6-contact-360-5.png",
+      "review/v6-contact-360-6.png",
+      "review/v6-contact-390-1.png",
+      "review/v6-contact-390-5.png",
+      "review/v6-contact-390-6.png",
+      "review/v6-flow-360-04.png",
+      "review/v6-flow-360-19.png",
+      "review/v6-flow-360-20.png",
+      "review/v6-flow-360-22.png",
+      "review/v6-flow-360-26.png",
+      "review/v6-flow-360-27.png",
+      "review/v6-flow-360-28.png",
+      "review/v6-flow-390-04.png",
+      "review/v6-flow-390-19.png",
+      "review/v6-flow-390-20.png",
+      "review/v6-flow-390-22.png",
+      "review/v6-flow-390-26.png",
+      "review/v6-flow-390-27.png",
+      "review/v6-flow-390-28.png",
+      "review/layout-sequence-390.png"
+    ],
+    "priorSoundAndAssemblyReview": "../production/episode-01-sfx/verification.json",
+    "panelLayoutReview": "../production/episode-01-layout/verification.json"
   },
   "mobileBrowserReview": {
-    "status": "pending",
-    "note": "Local HTML browser access was restricted. Native canvas exports are not browser proof."
+    "status": "blocked_by_browser_url_policy",
+    "reason": "file URL denied by Browser Use security policy; no alternate browser or localhost attempted",
+    "DOMVerified": false
   },
   "physicalDeviceTested": false
 }

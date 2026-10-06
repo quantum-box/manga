@@ -1,0 +1,147 @@
+{
+  "id": "e01-armor-assemble",
+  "episode": 1,
+  "file": "layout-armor-assemble.png",
+  "sha256": "b384527bb611fe563f09824f5bcb9ffd533dc884b14e6327617d3139180b97a5",
+  "width": 946,
+  "height": 1662,
+  "method": "built-in image_gen panel layout recomposition",
+  "prompt": "Use case: illustration-story / existing Japanese Webtoon panel-layout recomposition. The input is the adopted artwork for THIS scene: preserve its exact story events, identities, costume, props, location, speaker, all Japanese dialogue, all sound words, and causal reading order. RE-DRAW the panel arrangement as specified below; do not preserve the old simple vertical stack. Full-color polished anime/cel shading matching the input. White page, thin black frames, clean white gutters. Japanese dialogue is LARGE printed gothic with UPRIGHT glyphs, top-to-bottom and right-to-left columns, target glyph height65-75px on a1024px-wide canvas so it reads at360px width. Never shrink lettering to fit a small frame: use true close-ups and short text. Do not rotate Japanese text even inside angled frames. Speech tails point to the correct actual mouth; thought uses dots toward the head. Sound lettering stays outside dialogue balloons and near its physical cause. Protect faces, hands and all existing exact words. No captions, panel numbers, arrows, English, watermark, duplicate people within one panel, new events, advance reveal, or additional dialogue. READ ORDER for a row is RIGHT panel then LEFT panel; rows proceed TOP to BOTTOM. The output must contain actual side-by-side or angled frames where requested, not just images whose subjects look sideways. Each small panel is a newly composed detail/face crop, not a compressed whole scene.\n\nSPECIFIC LAYOUT AND EXACT CONTENT:\nCanvas1024x1800 approximately. EXACTLY THREE panels in TWO rows. TOP ~46% height is a TWO-PANEL SIDE-BY-SIDE assembly row separated by a strong clean DIAGONAL WHITE GUTTER, not a horizontal separator. Divide runs from around canvas x50% at TOP to x60% at row BOTTOM: RIGHT panel is a distinct trapezoid, LEFT panel complementary trapezoid. Keep outer edges within canvas. READ RIGHT FIRST: close-up of Ren's black faceted forearm/wrist plates forming around cyan join-lines, fingertips still BARE, exact カチッ in compact crisp letters at clear top-right. THEN LEFT: close-up of grounded black faceted boot/shin plates fitting over charcoal trousers, ordinary solid cracked cargo-plaza floor, exact ガシャッ in medium sharp letters. Do not show a full person or duplicate upper limbs. Bottom ~50% height is one broad large CHEST close-up: black angular plates interlock around a SINGLE cyan STAR; red scarf above, lower face only, EXACT larger metallic ガキンッ on left and compact cyan system notice EXACT 装甲固定。 on right. System text upright vertical, restrained navy/cyan functional projection. Each sound entirely inside its own panel without covering wrist/fingers/boot joins/star or system glyphs. Same black armor/cyan seams design, face uncovered, no helmet. Do not show completed whole-body pose; later existing hero panel reveals it. The diagonal split should give two mechanical steps a brisk rhythm, while the chest closure is visibly broader and settles below.",
+  "originalPrompt": "Use case: illustration-story. Recompose the input core/armor artwork into the NEXT sequential transformation insert in the SAME adopted Zero Break episode 1. Image 1 is the starting-state/visual-style target; Image 2 is the finished armor design and Ren identity reference ONLY. Preserve the Japanese anime/cel-shaded rendering and same lower solid cargo plaza, torn cream canvas awning, blue-gold city flags in soft background. Ren19: black tousled hair, blue eyes, crimson scarf, soft black short sleeves, charcoal trousers, brown straps before assembly. Finished armor is BLACK angular faceted plates with CYAN seams and a cyan STAR chest core, black segmented gauntlets and boots; NEVER a helmet. Mira remains safe offscreen behind, same black stone giant with violet core remains offscreen ahead. No newly invented characters, weapons, icons, forms, crown or lore. This is not a collage of simultaneous duplicate people. Show sequential close-up steps, UNEQUAL panels, white narrow gutters, top-to-bottom reading. Exact Japanese text and sound effects integrated in raster artwork. Dialogue/thought glyphs are upright, vertical top-to-bottom/right-to-left, bold gothic readable at360px; sounds may angle with action. Cyan system panes are compact functional translucent navy/cyan projections with restrained glow; no ornate plaques or English. Do NOT reveal a completed full-body armored silhouette: that comes in the existing hero panel below. Aim 1024x2048, portrait ratio1:2; make small panels true detail shots, not shrunken full scenes.\n\nTHREE UNEQUAL ordered panels. Panel 1 smaller right-aligned forearm: matte/glossy BLACK faceted wrist guard plates emerge from the cyan lattice, tiny cyan join lines, one pair of plate edges almost meeting then clicking; exact カチッ in compact crisp letters. Human fingertips still bare, do not finish the whole glove here. Panel 2 broader lower-leg/boot view: black angular shin/boot plates slide together over dark trousers/ordinary boot, grounded on the same cracked solid plaza; sound ガシャッ in medium angular letters. Panel 3 the largest close-up of chest ONLY: black chest plates interlock around a SINGLE cyan star core, scarf remains red above, all armor cyan seams match reference. Exact larger metallic sound ガキンッ and a compact system pane EXACT 装甲固定。 No full suit pose, no helmet, no cape instead of scarf.",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-1d12c7db-905a-4d32-a55d-39b8960ef396.png",
+  "beforeShot": {
+    "id": "e01-armor-assemble",
+    "file": "armor-assemble.png",
+    "scene": "The cyan lattice becomes the adopted black faceted armor in separate physical close-ups: wrist plates, boot/shin plates, chest plates locking around the single cyan star.",
+    "shape": "bleed",
+    "pause": 45,
+    "widthPercent": 100,
+    "lines": [],
+    "panels": [
+      {
+        "beat": "Individual wrist plates take physical shape and snap together.",
+        "view": "Black faceted wrist/forearm plates materialize along prior cyan lattice and snap around forearm; fingertips remain bare at this stage. Sound カチッ.",
+        "frame": "right-aligned78% width, shallow forearm detail",
+        "voice": "silent"
+      },
+      {
+        "beat": "The legs become protected next.",
+        "view": "Close black angular boot and shin plates fitting over ordinary boot/trousers; same solid cargo ground and canvas rope. Sound ガシャッ.",
+        "frame": "full-width medium-height lower-leg close-up",
+        "voice": "silent"
+      },
+      {
+        "beat": "The chest seals around the existing star, connecting all parts.",
+        "view": "Close chest black faceted plates meet around a SINGLE cyan star; red scarf above, cyan seams. Exact notice 装甲固定。 and sound ガキンッ. No face or full-body reveal.",
+        "frame": "left-aligned92% width, taller chest detail",
+        "voice": "system notice"
+      }
+    ],
+    "sounds": [
+      "カチッ",
+      "ガシャッ",
+      "ガキンッ"
+    ],
+    "visible_text": [
+      {
+        "text": "装甲固定。",
+        "type": "raster system notice"
+      }
+    ],
+    "status": "generated",
+    "prompt": "Use case: illustration-story. Recompose the input core/armor artwork into the NEXT sequential transformation insert in the SAME adopted Zero Break episode 1. Image 1 is the starting-state/visual-style target; Image 2 is the finished armor design and Ren identity reference ONLY. Preserve the Japanese anime/cel-shaded rendering and same lower solid cargo plaza, torn cream canvas awning, blue-gold city flags in soft background. Ren19: black tousled hair, blue eyes, crimson scarf, soft black short sleeves, charcoal trousers, brown straps before assembly. Finished armor is BLACK angular faceted plates with CYAN seams and a cyan STAR chest core, black segmented gauntlets and boots; NEVER a helmet. Mira remains safe offscreen behind, same black stone giant with violet core remains offscreen ahead. No newly invented characters, weapons, icons, forms, crown or lore. This is not a collage of simultaneous duplicate people. Show sequential close-up steps, UNEQUAL panels, white narrow gutters, top-to-bottom reading. Exact Japanese text and sound effects integrated in raster artwork. Dialogue/thought glyphs are upright, vertical top-to-bottom/right-to-left, bold gothic readable at360px; sounds may angle with action. Cyan system panes are compact functional translucent navy/cyan projections with restrained glow; no ornate plaques or English. Do NOT reveal a completed full-body armored silhouette: that comes in the existing hero panel below. Aim 1024x2048, portrait ratio1:2; make small panels true detail shots, not shrunken full scenes.\n\nTHREE UNEQUAL ordered panels. Panel 1 smaller right-aligned forearm: matte/glossy BLACK faceted wrist guard plates emerge from the cyan lattice, tiny cyan join lines, one pair of plate edges almost meeting then clicking; exact カチッ in compact crisp letters. Human fingertips still bare, do not finish the whole glove here. Panel 2 broader lower-leg/boot view: black angular shin/boot plates slide together over dark trousers/ordinary boot, grounded on the same cracked solid plaza; sound ガシャッ in medium angular letters. Panel 3 the largest close-up of chest ONLY: black chest plates interlock around a SINGLE cyan star core, scarf remains red above, all armor cyan seams match reference. Exact larger metallic sound ガキンッ and a compact system pane EXACT 装甲固定。 No full suit pose, no helmet, no cape instead of scarf.",
+    "sha256": "4b02f12584966ff2c3c88b87336ba42d22229be7f839603962116aa19990b891",
+    "references": [
+      "examples/zero-break/v5/art/sfx-v6-core.png",
+      "examples/zero-break/v5/art/sfx-14-hero.png"
+    ],
+    "insertionRecord": "examples/zero-break/production/episode-01-sfx/inserts/e01-armor-assemble.json",
+    "replaces": [],
+    "provenance": "armor assembly insert",
+    "generated": true,
+    "visual_review": {
+      "status": "passed_native_mobile_image_review",
+      "source_sha256": "4b02f12584966ff2c3c88b87336ba42d22229be7f839603962116aa19990b891",
+      "checks": [
+        "exact Japanese text and sound lettering",
+        "character identity, anatomy, costume and continuity",
+        "ordered partial assembly before existing full-body reveal"
+      ],
+      "mobile_widths": [
+        360,
+        390
+      ],
+      "evidence": [
+        "review/v6-contact-360-6.png",
+        "review/v6-contact-390-6.png"
+      ]
+    }
+  },
+  "panels": [
+    {
+      "beat": "Individual wrist plates take physical shape and snap together.",
+      "view": "Black faceted wrist/forearm plates materialize along prior cyan lattice and snap around forearm; fingertips remain bare at this stage. Sound カチッ.",
+      "frame": "upper row RIGHT forearm trapezoid; diagonal gutter guides down-left",
+      "voice": "silent"
+    },
+    {
+      "beat": "The legs become protected next.",
+      "view": "Close black angular boot and shin plates fitting over ordinary boot/trousers; same solid cargo ground and canvas rope. Sound ガシャッ.",
+      "frame": "upper row LEFT boot/shin trapezoid after right forearm",
+      "voice": "silent"
+    },
+    {
+      "beat": "The chest seals around the existing star, connecting all parts.",
+      "view": "Close chest black faceted plates meet around a SINGLE cyan star; red scarf above, cyan seams. Exact notice 装甲固定。 and sound ガキンッ. No face or full-body reveal.",
+      "frame": "lower full-width large chest fixed panel after both upper details",
+      "voice": "system notice"
+    }
+  ],
+  "layout": {
+    "description": "Upper right-to-left forearm/boots pair divided by a diagonal gutter; broad chest locking panel below.",
+    "rowsInReadingOrder": [
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "rowDirection": "right-to-left",
+    "pageDirection": "top-to-bottom"
+  },
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/armor-assemble.png",
+      "sha256": "4b02f12584966ff2c3c88b87336ba42d22229be7f839603962116aa19990b891"
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "b384527bb611fe563f09824f5bcb9ffd533dc884b14e6327617d3139180b97a5",
+    "checks": [
+      "same beats, speakers, exact Japanese dialogue and sounds",
+      "real side-by-side or diagonal panel frames",
+      "character identity, anatomy, costume and geography",
+      "right-to-left within a row, then top-to-bottom",
+      "legible upright Japanese at 360 and 390 px",
+      "surrounding pose, location, rescue and partial-to-full assembly continuity"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "examples/zero-break/v5/review/v6-contact-360-6.png",
+      "examples/zero-break/v5/review/v6-contact-390-6.png",
+      "examples/zero-break/v5/review/v6-flow-360-27.png",
+      "examples/zero-break/v5/review/v6-flow-390-27.png"
+    ],
+    "method": "native Canvas images viewed at original target width"
+  },
+  "browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}

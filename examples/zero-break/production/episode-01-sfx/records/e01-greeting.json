@@ -1,0 +1,106 @@
+{
+  "id": "e01-greeting",
+  "episode": 1,
+  "file": "sfx-v6-greeting.png",
+  "method": "built-in image_gen targeted raster sound-effect edit",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-88a6c870-bfc3-4c77-b7f9-6bb617e231c3.png",
+  "sha256": "fad0bef74ce69d0dc5744975b5af885eebc9416872908f0e0e22ef67f90e1835",
+  "width": 724,
+  "height": 2172,
+  "sounds": [
+    "スッ",
+    "ギュッ"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nIn panel 2 (Rook offers his black-gloved hand), add small thin スッ beside the open wrist, without covering either hand. In the last panel where Ren's bare hand takes Rook's glove, add medium rounded ギュッ alongside the joined hands, keeping fingers entirely clear. The two sounds should feel like a quiet offering followed by a firm accepting grip; no effects in the face-dialogue panels.\nExact new sound words: スッ / ギュッ",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/v6-greeting.png",
+      "sha256": "e3c3055b2a959fe76f308fa8480b37685253d1714212679f500e169892c5ac6c"
+    }
+  ],
+  "repairBefore": {
+    "file": "v6-greeting.png",
+    "sha256": "e3c3055b2a959fe76f308fa8480b37685253d1714212679f500e169892c5ac6c"
+  },
+  "panels": [
+    {
+      "beat": "The approaching knight addresses seated Ren.",
+      "view": "ONLY Rook face bent slightly down; Ren remains seated offscreen left. Same white stone stairs.",
+      "frame": "right-aligned82% width, medium framed close",
+      "voice": "reserved ordinary thin-black oval",
+      "line": {
+        "speaker": "Rook",
+        "text": "立てるか？",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "Help is offered, not yet accepted.",
+      "view": "Rook black-gloved open hand extended toward Ren bare hand. No crystal, no contact yet.",
+      "frame": "left-aligned66% width, shallow hand insert",
+      "voice": "無言"
+    },
+    {
+      "beat": "Ren answers while still getting his bearings.",
+      "view": "ONLY Ren seated face looking up right, same scarf and shirt.",
+      "frame": "left-aligned90% width, medium close-up",
+      "voice": "quiet shaky spoken voice, continuous tail",
+      "line": {
+        "speaker": "Ren",
+        "text": "ああ……。",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "He asks his first question.",
+      "view": "Ren bare hand takes Rook gloved hand and Ren rises a little; tight upper-body shot, not an unexplained new location.",
+      "frame": "full-width tall framed movement",
+      "voice": "ordinary questioning oval",
+      "line": {
+        "speaker": "Ren",
+        "text": "ここは？",
+        "type": "speech"
+      }
+    }
+  ],
+  "preservedLines": [
+    {
+      "speaker": "Rook",
+      "text": "立てるか？",
+      "type": "speech"
+    },
+    {
+      "speaker": "Ren",
+      "text": "ああ……。",
+      "type": "speech"
+    },
+    {
+      "speaker": "Ren",
+      "text": "ここは？",
+      "type": "speech"
+    }
+  ],
+  "preservedVisibleText": [],
+  "originalPrompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading, WHITE outer gutters; explicitly UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nExact continuity/setting (not a request to put everything in every panel): Rook now arrived ONE metre to right of still seated Ren. Rook bends slightly, offers a black-gloved hand, professionally reserved. Ren looks up and raises a BARE hand toward him, no touch yet. Faces and hands clear. No crystal.\n\nPanel 1, downward order. Frame: right-aligned82% width, medium framed close. Reader understands: The approaching knight addresses seated Ren.. Visible camera subject / offscreen continuity: ONLY Rook face bent slightly down; Ren remains seated offscreen left. Same white stone stairs.. Voice / balloon: reserved ordinary thin-black oval.\nONLY speaker: Rook. EXACT text: 「立てるか？」 (render contents only).\nPanel 2, downward order. Frame: left-aligned66% width, shallow hand insert. Reader understands: Help is offered, not yet accepted.. Visible camera subject / offscreen continuity: Rook black-gloved open hand extended toward Ren bare hand. No crystal, no contact yet.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 3, downward order. Frame: left-aligned90% width, medium close-up. Reader understands: Ren answers while still getting his bearings.. Visible camera subject / offscreen continuity: ONLY Ren seated face looking up right, same scarf and shirt.. Voice / balloon: quiet shaky spoken voice, continuous tail.\nONLY speaker: Ren. EXACT text: 「ああ……。」 (render contents only).\nPanel 4, downward order. Frame: full-width tall framed movement. Reader understands: He asks his first question.. Visible camera subject / offscreen continuity: Ren bare hand takes Rook gloved hand and Ren rises a little; tight upper-body shot, not an unexplained new location.. Voice / balloon: ordinary questioning oval.\nONLY speaker: Ren. EXACT text: 「ここは？」 (render contents only).\n",
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "fad0bef74ce69d0dc5744975b5af885eebc9416872908f0e0e22ef67f90e1835",
+    "checks": [
+      "exact Japanese text and sound lettering",
+      "character identity, anatomy, costume and continuity",
+      "ordered partial assembly before existing full-body reveal"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "review/v6-contact-360-1.png",
+      "review/v6-contact-390-1.png"
+    ]
+  },
+  "mobile_browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}

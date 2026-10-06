@@ -6,7 +6,7 @@
 
 |話|改稿素材|コマ|画像目視|ブラウザ|
 |---|---:|---:|---|---|
-|1|15/15|66|passed|pending|
+|1|15/15|73|passed_native_mobile_image_review|blocked_by_browser_url_policy|
 |2|5/5|30|passed|pending|
 |3|4/4|26|passed|pending|
 |4|4/4|27|passed|pending|

@@ -3,17 +3,17 @@
   "status": "passed_artifact_checks",
   "totals": {
     "baseline_artworks": 196,
-    "reader_images": 196,
-    "panels": 317,
+    "reader_images": 199,
+    "panels": 324,
     "adopted_revision_records": 57,
     "scripts": 50
   },
   "chapters": [
     {
       "episode": 1,
-      "assets": 30,
-      "panels": 66,
-      "source_sha256": "c9220f9359a6102870c11f61ef9da8a7c6b8ab4f7f80b2211119fe766809aea6",
+      "assets": 33,
+      "panels": 73,
+      "source_sha256": "73ef45beac16d41e1728d2ef2671b323adbe60051c926e828b7d085c495015bc",
       "browser_review": "pending"
     },
     {
@@ -80,10 +80,15 @@
       "browser_review": "pending"
     }
   ],
+  "sound_effect_revision_records": 11,
+  "inserted_artworks": 3,
+  "inserted_panels": 7,
+  "panel_layout_revision_records": 4,
   "checks": [
     "all prior source PNG hashes preserved",
     "every baseline scene represented",
     "actual revision prompts, references and repaired originals preserved",
+    "layout revisions preserve dialogue, sounds, beats and prior sound/assembly provenance",
     "standalone embedded PNGs match raw source bytes",
     "ZIP CRC and extracted HTML match",
     "native export hashes, width and source geometry",

@@ -6,18 +6,18 @@
     "script": "episodes/01.md",
     "script_status": "staged",
     "art_status": "revised_art_browser_pending",
-    "panel_count": 66,
+    "panel_count": 73,
     "scenes": [
       "雨の横断歩道に伸びる手と赤いマフラー。事故の記憶を最後に、レンが空都リュミエルで目を覚ます。「ここ、どこだ」。自分が転生したとまだ知らない。",
       "保護した騎士が「私はルーク。この街の騎士だ」と名乗る。立ち上がったレンへ国と転生を説明し、「異世界から来た者は、まず魔力を測る」と水晶へ案内。「魔力、ゼロ。ハズレの転生者か」。レン「ここでも、何もできないのか」。",
       "街を守るはずの警備巨兵が暴走し、上の橋を壊す。橋のミラ、低いバルコニーのレン、その下の荷物用の天幕を先に示す。ミラが落下し「誰か！」。",
       "レン「魔力がなくても、手くらい伸ばせる」。段から飛び、ミラを受け止め、天幕へ着地。布と荷物が衝撃を受ける。ミラを地面へ下ろし、互いの名前と王女であることを知る。",
-      "同じ巨兵が二人へ迫る。レンはミラを背後へ退かせる。胸の青い光、レン「これは？」。通知「救命行動を確認。救済核、起動。装甲名：ゼロ・ブレイク」。初めて全身装甲が現れる。",
+      "同じ巨兵が二人へ迫る。レンはミラを背後へ退かせる。胸の青い光、レン「これは……？」。通知「救命行動を確認。救済核、起動。装甲名：ゼロ・ブレイク」。核から光の経路が伸び、素手の手首に格子ができる。通知「装甲展開、開始。」。前腕、脚、胸の黒い装甲が順に固定され「装甲固定。」。レンが拳を握り「……動かせる。」。救済核残量は六区画のうち四つが点灯し「接続完了。」。一拍置いて初めて全身装甲を見せる。",
       "レン「ゼロ・ブレイク！」。巨兵の胸の核を砕いてミラを守る。レン「役立たずじゃなかった」。破片を見たミラ「王家の工房の紋章よ」。レン「じゃあ、なんで俺たちを襲った？」。次話で調査へ。"
     ],
     "panel_staging": [
       {
-        "asset": "01-memory.png",
+        "asset": "sfx-01-memory.png",
         "context": "Rainy night crosswalk memory: close bare reaching hand and red scarf, bright distant headlights. Show no body, injured person or face. One dreamlike close shot, dark blue night margins.",
         "panels": [
           {
@@ -114,13 +114,13 @@
         "visible_text": []
       },
       {
-        "asset": "v6-greeting.png",
+        "asset": "layout-greeting.png",
         "context": "Rook now arrived ONE metre to right of still seated Ren. Rook bends slightly, offers a black-gloved hand, professionally reserved. Ren looks up and raises a BARE hand toward him, no touch yet. Faces and hands clear. No crystal.",
         "panels": [
           {
             "beat": "The approaching knight addresses seated Ren.",
             "view": "ONLY Rook face bent slightly down; Ren remains seated offscreen left. Same white stone stairs.",
-            "frame": "right-aligned82% width, medium framed close",
+            "frame": "full-width medium Rook portrait, first row",
             "voice": "reserved ordinary thin-black oval",
             "line": {
               "speaker": "Rook",
@@ -131,13 +131,13 @@
           {
             "beat": "Help is offered, not yet accepted.",
             "view": "Rook black-gloved open hand extended toward Ren bare hand. No crystal, no contact yet.",
-            "frame": "left-aligned66% width, shallow hand insert",
+            "frame": "second row RIGHT46% hand-detail frame, then LEFT panel",
             "voice": "無言"
           },
           {
             "beat": "Ren answers while still getting his bearings.",
             "view": "ONLY Ren seated face looking up right, same scarf and shirt.",
-            "frame": "left-aligned90% width, medium close-up",
+            "frame": "second row LEFT50% Ren face frame, after right hand-detail",
             "voice": "quiet shaky spoken voice, continuous tail",
             "line": {
               "speaker": "Ren",
@@ -148,7 +148,7 @@
           {
             "beat": "He asks his first question.",
             "view": "Ren bare hand takes Rook gloved hand and Ren rises a little; tight upper-body shot, not an unexplained new location.",
-            "frame": "full-width tall framed movement",
+            "frame": "full-width tall joined-hands movement, last row",
             "voice": "ordinary questioning oval",
             "line": {
               "speaker": "Ren",
@@ -323,7 +323,7 @@
         "visible_text": []
       },
       {
-        "asset": "a09-touch.png",
+        "asset": "sfx-a09-touch.png",
         "context": "Extreme close-up: Ren's BARE RIGHT PALM makes FIRST contact on TOP of same black faceted crystal. Exactly five relaxed fingers, soft short black sleeve, red scarf blurred behind. Same ornate pointed silver pedestal bottom. Narrow flat inset readout still BLANK. Neutral white reflections no magic. Single contact moment, no faces, text or numbers.",
         "panels": [
           {
@@ -524,7 +524,7 @@
         "visible_text": []
       },
       {
-        "asset": "v6-danger-geography.png",
+        "asset": "sfx-v6-danger-geography.png",
         "context": "The SAME giant black stone guardian, armored stone limbs, violet fissures and a violet diamond-shaped chest core, goes berserk and breaks a high stone bridge. Princess Mira small but identifiable ON bridge, before falling. Establish high bridge above a lower balcony (Ren's assessment level) above a broad cargo canvas awning and soft cargo on a lower plaza. Two warning voices from small background guards or offscreen; no extra main characters. Giant fills upper background.",
         "panels": [
           {
@@ -559,7 +559,7 @@
         "visible_text": []
       },
       {
-        "asset": "07-fall.png",
+        "asset": "sfx-07-fall.png",
         "context": "Mira ONLY falling from the just-broken bridge, through open blue sky, past the lower stone balcony toward a large cargo canvas awning. ONE continuous vertical view with descending rubble trail; no other copies of Mira, no Ren, no armored hero. Her dress and blue/gold details remain intact and modest. Borderless, pale sky and WHITE natural light fade at bottom, edges harmonize with pale page. Her fearful face visible near upper third.",
         "panels": [
           {
@@ -584,7 +584,7 @@
         "visible_text": []
       },
       {
-        "asset": "08-leap.png",
+        "asset": "sfx-08-leap.png",
         "context": "Unarmored Ren leaps decisively from the LOWER balcony toward Mira and the cargo awning below. Show push-off stone balcony behind, descending direction, streaming red scarf and reaching bare hand. He is not magically flying and has no armor or blue core. One shot of the choice to jump; his face stays clearly visible.",
         "panels": [
           {
@@ -611,13 +611,13 @@
         "visible_text": []
       },
       {
-        "asset": "v6-catch.png",
+        "asset": "layout-catch.png",
         "context": "Ren catches Mira in midair with bare arms before landing.",
         "panels": [
           {
             "beat": "Ren catches Mira before they reach the canvas.",
             "view": "Ren BARE arms support Mira back and knees in midair, red scarf streams, awning below.",
-            "frame": "medium full-width action frame",
+            "frame": "single large oblique rescue frame; parallel sloping top/bottom borders and upright lettering",
             "voice": "thick jagged urgent shout with tail to mouth",
             "line": {
               "speaker": "Ren",
@@ -653,19 +653,19 @@
         "visible_text": []
       },
       {
-        "asset": "v6-safe-01.png",
+        "asset": "layout-safe-01.png",
         "context": "Same lower cargo plaza after Mira is caught and landed safely; Ren kneels, Mira stands. No armor, no crown crest yet.",
         "panels": [
           {
             "beat": "Both are safe after landing.",
             "view": "Ren kneels left; Mira stands right on the SAME solid cargo plaza under torn awning.",
-            "frame": "large full-width framed shared location",
+            "frame": "full-width shared safety establishing frame, first row",
             "voice": "無言"
           },
           {
             "beat": "Mira thanks him.",
             "view": "ONLY Mira face; Ren remains beside her offscreen left.",
-            "frame": "right-aligned narrow medium frame",
+            "frame": "second row RIGHT58% Mira gratitude face frame",
             "voice": "gentle soft blue-grey contour",
             "line": {
               "speaker": "Mira",
@@ -676,13 +676,13 @@
           {
             "beat": "Ren takes in the thanks.",
             "view": "ONLY Ren blue eyes, unarmored.",
-            "frame": "left-aligned shallow eye insert",
+            "frame": "second row LEFT38% shallow Ren eyes frame, lower aligned beside right frame",
             "voice": "無言"
           },
           {
             "beat": "Mira tells him her name.",
             "view": "ONLY Mira upper body, hand at chest; same torn cargo awning.",
-            "frame": "large wide framed portrait",
+            "frame": "full-width large Mira introduction portrait, final row",
             "voice": "composed blue-grey rounded capsule",
             "line": {
               "speaker": "Mira",
@@ -740,7 +740,7 @@
         "visible_text": []
       },
       {
-        "asset": "v6-approach.png",
+        "asset": "sfx-v6-approach.png",
         "context": "SAME black stone guardian with violet diamond chest core and violet cracks now approaches on the lower SOLID plaza. Ren still unarmored black short sleeves and red scarf, BARE hands out to shield standing Mira behind him. Torn canvas and cargo remain behind them. Giant, both people and ground show clear depth. Ren looks alarmed then resolute, no armor/glow.",
         "panels": [
           {
@@ -786,7 +786,7 @@
         "visible_text": []
       },
       {
-        "asset": "v6-core.png",
+        "asset": "sfx-v6-core.png",
         "context": "A close shot of Ren's BARE hand and his still SOFT BLACK SHIRT at the chest as a cyan star-like core first glows through the fabric. Not full armor; no transformed silhouette anywhere. Dark blue mood, cyan illumination. One small white vertical thought balloon and two vertical rectangular cyan system notices integrated in sequence. Preserve hand anatomy and shirt. System notices are opaque dark cyan rectangles with readable pale cyan upright Japanese lettering, not a speech tail.",
         "panels": [
           {
@@ -827,7 +827,94 @@
         ]
       },
       {
-        "asset": "14-hero.png",
+        "asset": "armor-route.png",
+        "context": "After the core awakens, cyan energy visibly routes from Ren's chest star along his still-soft black shirt and bare forearm. The first lattice forms at his wrist; no finished full suit yet.",
+        "panels": [
+          {
+            "beat": "The glowing core supplies the armor, before armor has formed.",
+            "view": "Close chest star shines through SOFT shirt; thin cyan paths run toward shoulder and down BARE forearm; exact system notice 装甲展開、開始。",
+            "frame": "full-width tall chest-to-forearm diagonal close-up",
+            "voice": "system notice; no spoken dialogue"
+          },
+          {
+            "beat": "The energy becomes a shape that can hold armor.",
+            "view": "Macro BARE wrist and hand with faint cyan geometric lattice wrapping just above wrist. No finished glove yet. Sound シュウウ… outside the lattice.",
+            "frame": "left-aligned82% width, shallow wrist detail",
+            "voice": "silent"
+          }
+        ],
+        "visible_text": [
+          {
+            "text": "装甲展開、開始。",
+            "type": "raster system notice"
+          }
+        ]
+      },
+      {
+        "asset": "layout-armor-assemble.png",
+        "context": "The cyan lattice becomes the adopted black faceted armor in separate physical close-ups: wrist plates, boot/shin plates, chest plates locking around the single cyan star.",
+        "panels": [
+          {
+            "beat": "Individual wrist plates take physical shape and snap together.",
+            "view": "Black faceted wrist/forearm plates materialize along prior cyan lattice and snap around forearm; fingertips remain bare at this stage. Sound カチッ.",
+            "frame": "upper row RIGHT forearm trapezoid; diagonal gutter guides down-left",
+            "voice": "silent"
+          },
+          {
+            "beat": "The legs become protected next.",
+            "view": "Close black angular boot and shin plates fitting over ordinary boot/trousers; same solid cargo ground and canvas rope. Sound ガシャッ.",
+            "frame": "upper row LEFT boot/shin trapezoid after right forearm",
+            "voice": "silent"
+          },
+          {
+            "beat": "The chest seals around the existing star, connecting all parts.",
+            "view": "Close chest black faceted plates meet around a SINGLE cyan star; red scarf above, cyan seams. Exact notice 装甲固定。 and sound ガキンッ. No face or full-body reveal.",
+            "frame": "lower full-width large chest fixed panel after both upper details",
+            "voice": "system notice"
+          }
+        ],
+        "visible_text": [
+          {
+            "text": "装甲固定。",
+            "type": "raster system notice"
+          }
+        ]
+      },
+      {
+        "asset": "armor-check.png",
+        "context": "Ren tests his newly completed black gauntlet with one fist clench. A compact cyan HUD shows the core's finite segmented reserve; he understands the suit moves with him, without revealing its origin or later power system.",
+        "panels": [
+          {
+            "beat": "Ren can move the gauntlet himself; the armor follows his intent.",
+            "view": "Macro new BLACK segmented gauntlet gently clenches one fist; cyan seams, red scarf edge only. EXACT Ren thought ……動かせる。 and sound ギュッ.",
+            "frame": "right-aligned90% width, medium hand close-up",
+            "voice": "quiet cloud thought with dots",
+            "line": {
+              "speaker": "Ren thought",
+              "text": "……動かせる。",
+              "type": "thought"
+            }
+          },
+          {
+            "beat": "The system completes the connection and shows a finite resource.",
+            "view": "Compact translucent cyan HUD on blurred black chest/solid cargo ground: EXACT 救済核残量 over a clean six-segment bar with FOUR cyan segments lit and TWO dark; below EXACT 接続完了。. No numbers or countdown or lore.",
+            "frame": "full-width shallow functional HUD close-up",
+            "voice": "system notice"
+          }
+        ],
+        "visible_text": [
+          {
+            "text": "救済核残量",
+            "type": "raster system label"
+          },
+          {
+            "text": "接続完了。",
+            "type": "raster system notice"
+          }
+        ]
+      },
+      {
+        "asset": "sfx-14-hero.png",
         "context": "FIRST full armor reveal. Low camera, full-length Ren in exact sleek black angular plate suit, star-shaped cyan chest core and cyan seams, red scarf, armored gloves and boots. Same black hair/blue eyes. Mira safely STANDING on solid ground behind right, not held or falling. White floating city. Dynamic but stable hero stance, not punching yet. Naturally white/cyan light at image edges and bottom blending into pale page; borderless single continuous picture. Balloon integrated near Ren's head, not a detached caption.",
         "panels": [
           {
@@ -852,7 +939,7 @@
         "visible_text": []
       },
       {
-        "asset": "15-punch.png",
+        "asset": "sfx-15-punch.png",
         "context": "The armored Ren punches the SAME giant's VIOLET DIAMOND CHEST CORE with a black armored fist, red scarf whips back, cyan power lights impact, purple stone fragments fly. Clear single point of impact at enemy chest, giant otherwise black stone/violet cracks. He protects Mira behind him; she is not in the strike path. One close explosive action shot, not a collage, no new weapon.",
         "panels": [
           {

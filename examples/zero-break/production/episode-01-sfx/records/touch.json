@@ -1,0 +1,49 @@
+{
+  "id": "touch",
+  "episode": 1,
+  "file": "sfx-a09-touch.png",
+  "method": "built-in image_gen targeted raster sound-effect edit",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-ef479359-b20f-49e9-bbd8-41254e148171.png",
+  "sha256": "0d4593a0eccca2da8a8f56c1933db98fe74ede45bd57d1a5ced2e984fa4edd09",
+  "width": 1448,
+  "height": 1086,
+  "sounds": [
+    "ぺた"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nAdd ぺた once in small soft rounded dark lettering with a clean narrow white border beside the hand-crystal contact, in the open area just to the right of the fingertips. This is a quiet bare palm touching a smooth crystal, not an impact. No light burst, magic energy, vibration or readout yet. Keep the full hand/fingers, crystal facets and blank display visible.\nExact new sound words: ぺた",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/a09-touch.png",
+      "sha256": "87293897433c808cab7f97eadda236dd974c552c35cc450d23af8924499950c5"
+    }
+  ],
+  "repairBefore": {
+    "file": "a09-touch.png",
+    "sha256": "87293897433c808cab7f97eadda236dd974c552c35cc450d23af8924499950c5"
+  },
+  "panels": [],
+  "preservedLines": [],
+  "preservedVisibleText": [],
+  "originalPrompt": "Use case: illustration-story. Asset: finished anime Webtoon art WITH integrated Japanese upright vertical lettering.\nReference1: Ren identity and intact arrival stair/plaza. Reference2: Rook identity, black crystal and silver pedestal design. Do NOT copy their captions or poses and do NOT skip ahead to measurement.\nRen: adult19 black spiky hair, blue eyes, crimson scarf, soft BLACK SHORT-SLEEVE shirt with narrow brown straps, charcoal trousers, ordinary dark boots, BARE hands. Absolutely no armor, glowing star or blue power. Rook: adult22 silver hair blue eyes, silver engraved armor and BLUE cape, BLACK leather gloves, silver armored boots.\nSame white floating city, sunshine, blue/gold banners. No other major characters. High-quality Japanese anime, crisp expressive faces and cel shaded detail, same visual style. Correct hands. ONE moment, not montage, grid or duplicated sequence.\nJapanese: upright glyphs TOP TO BOTTOM, columns RIGHT TO LEFT, never sideways. Exact wording and punctuation only. Bold manga gothic, actual glyphs64–74px at1024px art width, readable at360px. Reshape balloons rather than shrink text. White smooth speech balloons with tails toward correct mouths, thought clouds with dots to Ren. No labels/English/watermark. Do not cover faces, hands or crystal. Clean thin dark comic outline. Varied close shots and full scenes, avoid giant unused margins.\n\nPreferred output aspect 1024x768.\nScene: Extreme close-up: Ren's BARE RIGHT PALM makes FIRST contact on TOP of same black faceted crystal. Exactly five relaxed fingers, soft short black sleeve, red scarf blurred behind. Same ornate pointed silver pedestal bottom. Narrow flat inset readout still BLANK. Neutral white reflections no magic. Single contact moment, no faces, text or numbers.\n\n\nNo dialogue, thoughts, narration, captions or readout text.\nNo sound-effect lettering.\nReference3 locks the NEW assessment station established in the walking shot: the same dark black crystal, ornate pointed silver pedestal, SMALL NARROW FLAT METAL inset readout, and intact lower balcony. Do not copy its walking pose or captions. Keep the readout BLANK until the result shot. Lock scale and design; this device is NOT the hero power.",
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "0d4593a0eccca2da8a8f56c1933db98fe74ede45bd57d1a5ced2e984fa4edd09",
+    "checks": [
+      "exact Japanese text and sound lettering",
+      "character identity, anatomy, costume and continuity",
+      "ordered partial assembly before existing full-body reveal"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "review/v6-contact-360-2.png",
+      "review/v6-contact-390-2.png"
+    ]
+  },
+  "mobile_browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}
