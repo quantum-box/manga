@@ -1,5 +1,7 @@
 # 第1話の効果音・装着過程の改稿
 
+この記録と `verification.json` は効果音・装着過程を追加した段階の履歴。後の[コマ割り改稿](../episode-01-layout/README.md)で4素材を再構成した。現在のリーダーと確認画像はその後の採用版であり、当時の編集元とハッシュは本フォルダの記録に保持。
+
 [第1話を読む](../../v5/index.html) / [単独リーダーZIP](../../v5/reader.zip) / [360px全長](../../v5/complete-360.png) / [390px全長](../../v5/complete-390.png)
 
 [装着過程3枚の一覧](../../v5/review/armor-sequence-390.png)。各列は390px幅。

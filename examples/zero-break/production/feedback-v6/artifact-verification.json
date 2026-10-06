@@ -13,7 +13,7 @@
       "episode": 1,
       "assets": 33,
       "panels": 73,
-      "source_sha256": "d37191b3af9f8c37dff29a884d0628dd1b26930f4c4e855de854d5f76129e5bf",
+      "source_sha256": "73ef45beac16d41e1728d2ef2671b323adbe60051c926e828b7d085c495015bc",
       "browser_review": "pending"
     },
     {
@@ -83,10 +83,12 @@
   "sound_effect_revision_records": 11,
   "inserted_artworks": 3,
   "inserted_panels": 7,
+  "panel_layout_revision_records": 4,
   "checks": [
     "all prior source PNG hashes preserved",
     "every baseline scene represented",
     "actual revision prompts, references and repaired originals preserved",
+    "layout revisions preserve dialogue, sounds, beats and prior sound/assembly provenance",
     "standalone embedded PNGs match raw source bytes",
     "ZIP CRC and extracted HTML match",
     "native export hashes, width and source geometry",

@@ -26,8 +26,8 @@
     },
     {
       "id": "e01-greeting",
-      "file": "sfx-v6-greeting.png",
-      "sha256": "fad0bef74ce69d0dc5744975b5af885eebc9416872908f0e0e22ef67f90e1835"
+      "file": "layout-greeting.png",
+      "sha256": "c565db58ce533ed781d4574c47918c898dcfe952d01cfd927b585afa7006cf7f"
     },
     {
       "id": "e01-rook-name",
@@ -106,8 +106,8 @@
     },
     {
       "id": "e01-catch",
-      "file": "sfx-v6-catch.png",
-      "sha256": "8356849e99ccd8192b0f6b3a9bc88a142f2a272d1bf889788d2b55fdceaf7dcd"
+      "file": "layout-catch.png",
+      "sha256": "da300621347e69009c072d6d831b26a16b5f14f6bb27a82c5920455ac5e09747"
     },
     {
       "id": "landing",
@@ -116,8 +116,8 @@
     },
     {
       "id": "e01-safe-01",
-      "file": "v6-safe-01.png",
-      "sha256": "647470d3b13e82694c7373f125057c20713db171024a87722f6c52c8cffc4e44"
+      "file": "layout-safe-01.png",
+      "sha256": "710dd404f4ebbd4ae6063ae69e3f8527702fbd9a017f129daee9ffad13247e37"
     },
     {
       "id": "e01-safe-02",
@@ -141,8 +141,8 @@
     },
     {
       "id": "e01-armor-assemble",
-      "file": "armor-assemble.png",
-      "sha256": "4b02f12584966ff2c3c88b87336ba42d22229be7f839603962116aa19990b891"
+      "file": "layout-armor-assemble.png",
+      "sha256": "b384527bb611fe563f09824f5bcb9ffd533dc884b14e6327617d3139180b97a5"
     },
     {
       "id": "e01-armor-check",
@@ -173,9 +173,9 @@
   "exports": [
     {
       "width": 360,
-      "height": 27798,
+      "height": 27215,
       "file": "complete-360.png",
-      "sha256": "e45441fe70e7c071114bad00556d5d654f3472c65e181b136359fca1df8ce52f",
+      "sha256": "0c785729f9526541103922ef7b6e8abe48432e2bf90fd3dafaa9043b8cd40edb",
       "positions": [
         {
           "id": "memory",
@@ -214,13 +214,13 @@
           "x": 0,
           "y": 2834,
           "width": 360,
-          "height": 1080,
+          "height": 810,
           "pause": 83
         },
         {
           "id": "e01-rook-name",
           "x": 0,
-          "y": 3997,
+          "y": 3727,
           "width": 360,
           "height": 1080,
           "pause": 74
@@ -228,7 +228,7 @@
         {
           "id": "e01-orientation",
           "x": 0,
-          "y": 5151,
+          "y": 4881,
           "width": 360,
           "height": 1080,
           "pause": 120
@@ -236,7 +236,7 @@
         {
           "id": "e01-instruction",
           "x": 0,
-          "y": 6351,
+          "y": 6081,
           "width": 360,
           "height": 1080,
           "pause": 92
@@ -244,7 +244,7 @@
         {
           "id": "hesitation",
           "x": 0,
-          "y": 7523,
+          "y": 7253,
           "width": 360,
           "height": 450,
           "pause": 102
@@ -252,7 +252,7 @@
         {
           "id": "touch",
           "x": 79.19999999999999,
-          "y": 8075,
+          "y": 7805,
           "width": 280.8,
           "height": 211,
           "pause": 23
@@ -260,7 +260,7 @@
         {
           "id": "e01-waiting",
           "x": 0,
-          "y": 8309,
+          "y": 8039,
           "width": 360,
           "height": 1080,
           "pause": 157
@@ -268,7 +268,7 @@
         {
           "id": "result",
           "x": 43.19999999999999,
-          "y": 9546,
+          "y": 9276,
           "width": 316.8,
           "height": 317,
           "pause": 111
@@ -276,7 +276,7 @@
         {
           "id": "e01-confirmation",
           "x": 0,
-          "y": 9974,
+          "y": 9704,
           "width": 360,
           "height": 1080,
           "pause": 134
@@ -284,7 +284,7 @@
         {
           "id": "stakes",
           "x": 0,
-          "y": 11188,
+          "y": 10918,
           "width": 360,
           "height": 450,
           "pause": 92
@@ -292,7 +292,7 @@
         {
           "id": "rejection",
           "x": 0,
-          "y": 11730,
+          "y": 11460,
           "width": 360,
           "height": 450,
           "pause": 92
@@ -300,7 +300,7 @@
         {
           "id": "zero_reaction",
           "x": 0,
-          "y": 12272,
+          "y": 12002,
           "width": 360,
           "height": 450,
           "pause": 203
@@ -308,7 +308,7 @@
         {
           "id": "tremor",
           "x": 100.80000000000001,
-          "y": 12925,
+          "y": 12655,
           "width": 259.2,
           "height": 194,
           "pause": 78
@@ -316,7 +316,7 @@
         {
           "id": "e01-danger",
           "x": 0,
-          "y": 13197,
+          "y": 12927,
           "width": 360,
           "height": 1080,
           "pause": 92
@@ -324,7 +324,7 @@
         {
           "id": "fall",
           "x": 0,
-          "y": 14369,
+          "y": 14099,
           "width": 360,
           "height": 720,
           "pause": 37
@@ -332,7 +332,7 @@
         {
           "id": "leap",
           "x": 0,
-          "y": 15126,
+          "y": 14856,
           "width": 338.4,
           "height": 508,
           "pause": 23
@@ -340,15 +340,15 @@
         {
           "id": "e01-catch",
           "x": 0,
-          "y": 15657,
+          "y": 15387,
           "width": 360,
-          "height": 450,
+          "height": 495,
           "pause": 92
         },
         {
           "id": "landing",
           "x": 0,
-          "y": 16199,
+          "y": 15974,
           "width": 360,
           "height": 450,
           "pause": 148
@@ -356,15 +356,15 @@
         {
           "id": "e01-safe-01",
           "x": 0,
-          "y": 16797,
+          "y": 16572,
           "width": 360,
-          "height": 1080,
+          "height": 810,
           "pause": 32
         },
         {
           "id": "e01-safe-02",
           "x": 0,
-          "y": 17909,
+          "y": 17414,
           "width": 360,
           "height": 1080,
           "pause": 92
@@ -372,7 +372,7 @@
         {
           "id": "e01-approach",
           "x": 0,
-          "y": 19081,
+          "y": 18586,
           "width": 360,
           "height": 1077,
           "pause": 83
@@ -380,7 +380,7 @@
         {
           "id": "e01-core",
           "x": 0,
-          "y": 20241,
+          "y": 19746,
           "width": 360,
           "height": 1080,
           "pause": 65
@@ -388,7 +388,7 @@
         {
           "id": "e01-armor-route",
           "x": 0,
-          "y": 21386,
+          "y": 20891,
           "width": 360,
           "height": 720,
           "pause": 32
@@ -396,15 +396,15 @@
         {
           "id": "e01-armor-assemble",
           "x": 0,
-          "y": 22138,
+          "y": 21643,
           "width": 360,
-          "height": 720,
+          "height": 632,
           "pause": 42
         },
         {
           "id": "e01-armor-check",
           "x": 0,
-          "y": 22900,
+          "y": 22317,
           "width": 360,
           "height": 720,
           "pause": 138
@@ -412,7 +412,7 @@
         {
           "id": "hero",
           "x": 0,
-          "y": 23758,
+          "y": 23175,
           "width": 360,
           "height": 720,
           "pause": 55
@@ -420,7 +420,7 @@
         {
           "id": "punch",
           "x": 0,
-          "y": 24533,
+          "y": 23950,
           "width": 360,
           "height": 450,
           "pause": 212
@@ -428,7 +428,7 @@
         {
           "id": "e01-relief",
           "x": 0,
-          "y": 25195,
+          "y": 24612,
           "width": 360,
           "height": 1080,
           "pause": 148
@@ -436,7 +436,7 @@
         {
           "id": "e01-fragment",
           "x": 0,
-          "y": 26423,
+          "y": 25840,
           "width": 360,
           "height": 1080,
           "pause": 175
@@ -445,9 +445,9 @@
     },
     {
       "width": 390,
-      "height": 30110,
+      "height": 29480,
       "file": "complete-390.png",
-      "sha256": "7d5fb6e4671d79d99fc375257b6d29b34296afc5a4ac68627215948ab1e17956",
+      "sha256": "8d26b080ccd5bcae760ec79796f08d815ae601abff14a2e33c8759ecd5c77203",
       "positions": [
         {
           "id": "memory",
@@ -486,13 +486,13 @@
           "x": 0,
           "y": 3068,
           "width": 390,
-          "height": 1170,
+          "height": 878,
           "pause": 90
         },
         {
           "id": "e01-rook-name",
           "x": 0,
-          "y": 4328,
+          "y": 4036,
           "width": 390,
           "height": 1170,
           "pause": 80
@@ -500,7 +500,7 @@
         {
           "id": "e01-orientation",
           "x": 0,
-          "y": 5578,
+          "y": 5286,
           "width": 390,
           "height": 1170,
           "pause": 130
@@ -508,7 +508,7 @@
         {
           "id": "e01-instruction",
           "x": 0,
-          "y": 6878,
+          "y": 6586,
           "width": 390,
           "height": 1170,
           "pause": 100
@@ -516,7 +516,7 @@
         {
           "id": "hesitation",
           "x": 0,
-          "y": 8148,
+          "y": 7856,
           "width": 390,
           "height": 487,
           "pause": 110
@@ -524,7 +524,7 @@
         {
           "id": "touch",
           "x": 85.80000000000001,
-          "y": 8745,
+          "y": 8453,
           "width": 304.2,
           "height": 228,
           "pause": 25
@@ -532,7 +532,7 @@
         {
           "id": "e01-waiting",
           "x": 0,
-          "y": 8998,
+          "y": 8706,
           "width": 390,
           "height": 1169,
           "pause": 170
@@ -540,7 +540,7 @@
         {
           "id": "result",
           "x": 46.80000000000001,
-          "y": 10337,
+          "y": 10045,
           "width": 343.2,
           "height": 343,
           "pause": 120
@@ -548,7 +548,7 @@
         {
           "id": "e01-confirmation",
           "x": 0,
-          "y": 10800,
+          "y": 10508,
           "width": 390,
           "height": 1170,
           "pause": 145
@@ -556,7 +556,7 @@
         {
           "id": "stakes",
           "x": 0,
-          "y": 12115,
+          "y": 11823,
           "width": 390,
           "height": 487,
           "pause": 100
@@ -564,7 +564,7 @@
         {
           "id": "rejection",
           "x": 0,
-          "y": 12702,
+          "y": 12410,
           "width": 390,
           "height": 487,
           "pause": 100
@@ -572,7 +572,7 @@
         {
           "id": "zero_reaction",
           "x": 0,
-          "y": 13289,
+          "y": 12997,
           "width": 390,
           "height": 487,
           "pause": 220
@@ -580,7 +580,7 @@
         {
           "id": "tremor",
           "x": 109.19999999999999,
-          "y": 13996,
+          "y": 13704,
           "width": 280.8,
           "height": 211,
           "pause": 85
@@ -588,7 +588,7 @@
         {
           "id": "e01-danger",
           "x": 0,
-          "y": 14292,
+          "y": 14000,
           "width": 390,
           "height": 1170,
           "pause": 100
@@ -596,7 +596,7 @@
         {
           "id": "fall",
           "x": 0,
-          "y": 15562,
+          "y": 15270,
           "width": 390,
           "height": 780,
           "pause": 40
@@ -604,7 +604,7 @@
         {
           "id": "leap",
           "x": 0,
-          "y": 16382,
+          "y": 16090,
           "width": 366.6,
           "height": 550,
           "pause": 25
@@ -612,15 +612,15 @@
         {
           "id": "e01-catch",
           "x": 0,
-          "y": 16957,
+          "y": 16665,
           "width": 390,
-          "height": 487,
+          "height": 536,
           "pause": 100
         },
         {
           "id": "landing",
           "x": 0,
-          "y": 17544,
+          "y": 17301,
           "width": 390,
           "height": 487,
           "pause": 160
@@ -628,15 +628,15 @@
         {
           "id": "e01-safe-01",
           "x": 0,
-          "y": 18191,
+          "y": 17948,
           "width": 390,
-          "height": 1170,
+          "height": 878,
           "pause": 35
         },
         {
           "id": "e01-safe-02",
           "x": 0,
-          "y": 19396,
+          "y": 18861,
           "width": 390,
           "height": 1170,
           "pause": 100
@@ -644,7 +644,7 @@
         {
           "id": "e01-approach",
           "x": 0,
-          "y": 20666,
+          "y": 20131,
           "width": 390,
           "height": 1167,
           "pause": 90
@@ -652,7 +652,7 @@
         {
           "id": "e01-core",
           "x": 0,
-          "y": 21923,
+          "y": 21388,
           "width": 390,
           "height": 1170,
           "pause": 70
@@ -660,7 +660,7 @@
         {
           "id": "e01-armor-route",
           "x": 0,
-          "y": 23163,
+          "y": 22628,
           "width": 390,
           "height": 780,
           "pause": 35
@@ -668,15 +668,15 @@
         {
           "id": "e01-armor-assemble",
           "x": 0,
-          "y": 23978,
+          "y": 23443,
           "width": 390,
-          "height": 780,
+          "height": 685,
           "pause": 45
         },
         {
           "id": "e01-armor-check",
           "x": 0,
-          "y": 24803,
+          "y": 24173,
           "width": 390,
           "height": 780,
           "pause": 150
@@ -684,7 +684,7 @@
         {
           "id": "hero",
           "x": 0,
-          "y": 25733,
+          "y": 25103,
           "width": 390,
           "height": 780,
           "pause": 60
@@ -692,7 +692,7 @@
         {
           "id": "punch",
           "x": 0,
-          "y": 26573,
+          "y": 25943,
           "width": 390,
           "height": 487,
           "pause": 230
@@ -700,7 +700,7 @@
         {
           "id": "e01-relief",
           "x": 0,
-          "y": 27290,
+          "y": 26660,
           "width": 390,
           "height": 1170,
           "pause": 160
@@ -708,7 +708,7 @@
         {
           "id": "e01-fragment",
           "x": 0,
-          "y": 28620,
+          "y": 27990,
           "width": 390,
           "height": 1170,
           "pause": 190
@@ -718,28 +718,5 @@
   ],
   "browserPixelsCompared": false,
   "visualReview": "passed_native_mobile_image_review",
-  "visualReviewEvidence": [
-    "review/v6-contact-360-1.png",
-    "review/v6-contact-360-2.png",
-    "review/v6-contact-360-5.png",
-    "review/v6-contact-360-6.png",
-    "review/v6-contact-360-7.png",
-    "review/v6-contact-390-1.png",
-    "review/v6-contact-390-2.png",
-    "review/v6-contact-390-5.png",
-    "review/v6-contact-390-6.png",
-    "review/v6-contact-390-7.png",
-    "review/v6-flow-360-26.png",
-    "review/v6-flow-360-27.png",
-    "review/v6-flow-360-28.png",
-    "review/v6-flow-360-29.png",
-    "review/v6-flow-360-30.png",
-    "review/v6-flow-360-32.png",
-    "review/v6-flow-390-26.png",
-    "review/v6-flow-390-27.png",
-    "review/v6-flow-390-28.png",
-    "review/v6-flow-390-29.png",
-    "review/v6-flow-390-30.png",
-    "review/v6-flow-390-32.png"
-  ]
+  "layoutReview": "../production/episode-01-layout/verification.json"
 }

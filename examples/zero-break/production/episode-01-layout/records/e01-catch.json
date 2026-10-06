@@ -1,0 +1,131 @@
+{
+  "id": "e01-catch",
+  "episode": 1,
+  "file": "layout-catch.png",
+  "sha256": "da300621347e69009c072d6d831b26a16b5f14f6bb27a82c5920455ac5e09747",
+  "width": 1070,
+  "height": 1470,
+  "method": "built-in image_gen panel layout recomposition",
+  "prompt": "Use case: illustration-story / existing Japanese Webtoon panel-layout recomposition. The input is the adopted artwork for THIS scene: preserve its exact story events, identities, costume, props, location, speaker, all Japanese dialogue, all sound words, and causal reading order. RE-DRAW the panel arrangement as specified below; do not preserve the old simple vertical stack. Full-color polished anime/cel shading matching the input. White page, thin black frames, clean white gutters. Japanese dialogue is LARGE printed gothic with UPRIGHT glyphs, top-to-bottom and right-to-left columns, target glyph height65-75px on a1024px-wide canvas so it reads at360px width. Never shrink lettering to fit a small frame: use true close-ups and short text. Do not rotate Japanese text even inside angled frames. Speech tails point to the correct actual mouth; thought uses dots toward the head. Sound lettering stays outside dialogue balloons and near its physical cause. Protect faces, hands and all existing exact words. No captions, panel numbers, arrows, English, watermark, duplicate people within one panel, new events, advance reveal, or additional dialogue. READ ORDER for a row is RIGHT panel then LEFT panel; rows proceed TOP to BOTTOM. The output must contain actual side-by-side or angled frames where requested, not just images whose subjects look sideways. Each small panel is a newly composed detail/face crop, not a compressed whole scene.\n\nSPECIFIC LAYOUT AND EXACT CONTENT:\nCanvas approximately1024x1408. EXACTLY ONE large rescue panel. Its actual OUTER FRAME must be an oblique quadrilateral inside a white page: top border from(x20,y20) to(x1004,y145), bottom border from(x20,y1260) to(x1004,y1385), upright outer sides. Thus two clear white triangular wedges remain OUTSIDE the picture at upper-right and lower-left. Do NOT merely tilt a conventional rectangle or rotate all the artwork/text. Recompose the midair catch inside this sloping action frame: unarmored Ren's bare arms support Mira's back and knees, both recognizable faces clear, his red scarf and her white/blue/gold dress streaming with downward momentum. He shouts EXACT つかまって！ in upright vertical Japanese inside a bold jagged balloon with tail to HIS mouth, positioned in upper clear space safely INSIDE the sloping top edge. Exact ギュッ！ next to Mira's bare hand grasping Ren's soft black shirt, exact flowing バサァッ by whipping lower-left fabric inside the frame. Protect all fingers, faces, neck and modest intact dress. Same cream cargo awning/blue-gold city flags and white stone towers, canopy BELOW and behind them. They are still above the awning BEFORE landing; no feet contacting ground, no completed landing, no armor, no core, no added people. Retain the same midair moment and grip. Frame slope and scarf/fabric guide the eye toward the next landing image below; text stays upright and uncropped.",
+  "originalPrompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nAdd medium bold ギュッ！ beside Mira's bare hand gripping Ren's shirt at the center-right, clear of all fingers, faces and the existing つかまって！ balloon. Add flowing lighter バサァッ in the lower-left open background alongside the whipping fabric/scarf direction. Sound of holding on is primary; cloth flutter is secondary. Keep Ren unarmored, carrying Mira above the cargo awning, all limbs and their grip, exact pose and location; do not show a new landing or tear.\nExact new sound words: ギュッ！ / バサァッ",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-6dc091db-8972-4d3c-a626-0d84158ac5a4.png",
+  "beforeShot": {
+    "id": "e01-catch",
+    "file": "sfx-v6-catch.png",
+    "shape": "bleed",
+    "pause": 100,
+    "widthPercent": 100,
+    "scene": "Ren catches Mira in midair with bare arms before landing.",
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "つかまって！",
+        "type": "speech"
+      }
+    ],
+    "panels": [
+      {
+        "beat": "Ren catches Mira before they reach the canvas.",
+        "view": "Ren BARE arms support Mira back and knees in midair, red scarf streams, awning below.",
+        "frame": "medium full-width action frame",
+        "voice": "thick jagged urgent shout with tail to mouth",
+        "line": {
+          "speaker": "Ren",
+          "text": "つかまって！",
+          "type": "speech"
+        }
+      }
+    ],
+    "visible_text": [],
+    "added_context_dialogue": false,
+    "status": "generated",
+    "generated": true,
+    "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nAdd medium bold ギュッ！ beside Mira's bare hand gripping Ren's shirt at the center-right, clear of all fingers, faces and the existing つかまって！ balloon. Add flowing lighter バサァッ in the lower-left open background alongside the whipping fabric/scarf direction. Sound of holding on is primary; cloth flutter is secondary. Keep Ren unarmored, carrying Mira above the cargo awning, all limbs and their grip, exact pose and location; do not show a new landing or tear.\nExact new sound words: ギュッ！ / バサァッ",
+    "references": [
+      "examples/zero-break/v5/art/v6-catch.png"
+    ],
+    "sha256": "8356849e99ccd8192b0f6b3a9bc88a142f2a272d1bf889788d2b55fdceaf7dcd",
+    "provenance": "targeted raster sound-effect edit",
+    "replaces": [
+      "catch"
+    ],
+    "visual_review": {
+      "status": "passed_native_mobile_image_review",
+      "source_sha256": "8356849e99ccd8192b0f6b3a9bc88a142f2a272d1bf889788d2b55fdceaf7dcd",
+      "checks": [
+        "exact Japanese text and sound lettering",
+        "character identity, anatomy, costume and continuity",
+        "ordered partial assembly before existing full-body reveal"
+      ],
+      "mobile_widths": [
+        360,
+        390
+      ],
+      "evidence": [
+        "review/v6-contact-360-5.png",
+        "review/v6-contact-390-5.png"
+      ]
+    },
+    "sounds": [
+      "ギュッ！",
+      "バサァッ"
+    ],
+    "revisionRecord": "examples/zero-break/production/episode-01-sfx/records/e01-catch.json"
+  },
+  "panels": [
+    {
+      "beat": "Ren catches Mira before they reach the canvas.",
+      "view": "Ren BARE arms support Mira back and knees in midair, red scarf streams, awning below.",
+      "frame": "single large oblique rescue frame; parallel sloping top/bottom borders and upright lettering",
+      "voice": "thick jagged urgent shout with tail to mouth",
+      "line": {
+        "speaker": "Ren",
+        "text": "つかまって！",
+        "type": "speech"
+      }
+    }
+  ],
+  "layout": {
+    "description": "One large rescue panel with genuinely sloping frame edges, downward action, and white wedges outside the frame.",
+    "rowsInReadingOrder": [
+      [
+        1
+      ]
+    ],
+    "rowDirection": "right-to-left",
+    "pageDirection": "top-to-bottom"
+  },
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/sfx-v6-catch.png",
+      "sha256": "8356849e99ccd8192b0f6b3a9bc88a142f2a272d1bf889788d2b55fdceaf7dcd"
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "da300621347e69009c072d6d831b26a16b5f14f6bb27a82c5920455ac5e09747",
+    "checks": [
+      "same beats, speakers, exact Japanese dialogue and sounds",
+      "real side-by-side or diagonal panel frames",
+      "character identity, anatomy, costume and geography",
+      "right-to-left within a row, then top-to-bottom",
+      "legible upright Japanese at 360 and 390 px",
+      "surrounding pose, location, rescue and partial-to-full assembly continuity"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "examples/zero-break/v5/review/v6-contact-360-5.png",
+      "examples/zero-break/v5/review/v6-contact-390-5.png",
+      "examples/zero-break/v5/review/v6-flow-360-20.png",
+      "examples/zero-break/v5/review/v6-flow-390-20.png"
+    ],
+    "method": "native Canvas images viewed at original target width"
+  },
+  "browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}

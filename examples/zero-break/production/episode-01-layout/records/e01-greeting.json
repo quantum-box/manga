@@ -1,0 +1,204 @@
+{
+  "id": "e01-greeting",
+  "episode": 1,
+  "file": "layout-greeting.png",
+  "sha256": "c565db58ce533ed781d4574c47918c898dcfe952d01cfd927b585afa7006cf7f",
+  "width": 836,
+  "height": 1881,
+  "method": "built-in image_gen panel layout recomposition",
+  "prompt": "Use case: illustration-story / existing Japanese Webtoon panel-layout recomposition. The input is the adopted artwork for THIS scene: preserve its exact story events, identities, costume, props, location, speaker, all Japanese dialogue, all sound words, and causal reading order. RE-DRAW the panel arrangement as specified below; do not preserve the old simple vertical stack. Full-color polished anime/cel shading matching the input. White page, thin black frames, clean white gutters. Japanese dialogue is LARGE printed gothic with UPRIGHT glyphs, top-to-bottom and right-to-left columns, target glyph height65-75px on a1024px-wide canvas so it reads at360px width. Never shrink lettering to fit a small frame: use true close-ups and short text. Do not rotate Japanese text even inside angled frames. Speech tails point to the correct actual mouth; thought uses dots toward the head. Sound lettering stays outside dialogue balloons and near its physical cause. Protect faces, hands and all existing exact words. No captions, panel numbers, arrows, English, watermark, duplicate people within one panel, new events, advance reveal, or additional dialogue. READ ORDER for a row is RIGHT panel then LEFT panel; rows proceed TOP to BOTTOM. The output must contain actual side-by-side or angled frames where requested, not just images whose subjects look sideways. Each small panel is a newly composed detail/face crop, not a compressed whole scene.\n\nSPECIFIC LAYOUT AND EXACT CONTENT:\nCanvas1024x2304 approximately. EXACTLY FOUR panels in THREE rows. Top row/full width (~28% height): Rook silver short hair, blue eyes, silver gold-detailed armor, royal-blue cape bends toward seated Ren and says EXACT 立てるか？ in thin ordinary oval. Middle row (~24% height) has TWO DISTINCT SIDE-BY-SIDE panels with a24px white vertical gutter: RIGHT panel (~46% canvas width) macro of Rook's black-gloved open hand offered toward Ren's approaching BARE hand, NOT touching yet, exact small スッ near wrist; LEFT panel (~50% width) CLOSE Ren's black-haired blue-eyed face looking UP RIGHT toward offscreen Rook, black soft shirt/red scarf, EXACT quiet spoken ああ……。 with continuous tail to Ren's mouth. Bottom/full-width taller row (~44% height): Ren's BARE hand firmly accepts the BLACK glove and he rises a little, same white stone steps and blue/gold flags, EXACT spoken ここは？ near Ren with tail to his mouth, exact ギュッ beside joined hands. Ren remains unarmored, no core, no crystal. Preserve hands as two distinct anatomically normal hands and keep text clear of grip. Never stack middle-right and middle-left as separate full-width rows.",
+  "originalPrompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nIn panel 2 (Rook offers his black-gloved hand), add small thin スッ beside the open wrist, without covering either hand. In the last panel where Ren's bare hand takes Rook's glove, add medium rounded ギュッ alongside the joined hands, keeping fingers entirely clear. The two sounds should feel like a quiet offering followed by a firm accepting grip; no effects in the face-dialogue panels.\nExact new sound words: スッ / ギュッ",
+  "original_output": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-82cec6f3-4c93-408c-8757-7f386d8ee929.png",
+  "beforeShot": {
+    "id": "e01-greeting",
+    "file": "sfx-v6-greeting.png",
+    "shape": "bleed",
+    "pause": 90,
+    "widthPercent": 100,
+    "scene": "Rook now arrived ONE metre to right of still seated Ren. Rook bends slightly, offers a black-gloved hand, professionally reserved. Ren looks up and raises a BARE hand toward him, no touch yet. Faces and hands clear. No crystal.",
+    "lines": [
+      {
+        "speaker": "Rook",
+        "text": "立てるか？",
+        "type": "speech"
+      },
+      {
+        "speaker": "Ren",
+        "text": "ああ……。",
+        "type": "speech"
+      },
+      {
+        "speaker": "Ren",
+        "text": "ここは？",
+        "type": "speech"
+      }
+    ],
+    "panels": [
+      {
+        "beat": "The approaching knight addresses seated Ren.",
+        "view": "ONLY Rook face bent slightly down; Ren remains seated offscreen left. Same white stone stairs.",
+        "frame": "right-aligned82% width, medium framed close",
+        "voice": "reserved ordinary thin-black oval",
+        "line": {
+          "speaker": "Rook",
+          "text": "立てるか？",
+          "type": "speech"
+        }
+      },
+      {
+        "beat": "Help is offered, not yet accepted.",
+        "view": "Rook black-gloved open hand extended toward Ren bare hand. No crystal, no contact yet.",
+        "frame": "left-aligned66% width, shallow hand insert",
+        "voice": "無言"
+      },
+      {
+        "beat": "Ren answers while still getting his bearings.",
+        "view": "ONLY Ren seated face looking up right, same scarf and shirt.",
+        "frame": "left-aligned90% width, medium close-up",
+        "voice": "quiet shaky spoken voice, continuous tail",
+        "line": {
+          "speaker": "Ren",
+          "text": "ああ……。",
+          "type": "speech"
+        }
+      },
+      {
+        "beat": "He asks his first question.",
+        "view": "Ren bare hand takes Rook gloved hand and Ren rises a little; tight upper-body shot, not an unexplained new location.",
+        "frame": "full-width tall framed movement",
+        "voice": "ordinary questioning oval",
+        "line": {
+          "speaker": "Ren",
+          "text": "ここは？",
+          "type": "speech"
+        }
+      }
+    ],
+    "visible_text": [],
+    "added_context_dialogue": false,
+    "status": "generated",
+    "generated": true,
+    "prompt": "Use case: precise-object-edit. Asset: existing adopted Zero Break episode 1 Japanese full-color Webtoon artwork. Input is the EXACT EDIT TARGET. Add ONLY specified integrated raster Japanese sound lettering and tiny motion accents. Preserve canvas dimensions/aspect ratio, panel arrangement and gutters, faces, anatomy, hands, poses, clothes, props, setting, every existing Japanese word and speech/thought balloon. Preserve upright vertical dialogue and all reading order. Sound lettering outside balloons may angle with the physical motion, but must be exact and legible at 360px display width. Protect the pictured cause/action, faces, hands and text. No added dialogue, English, panels, powers, armor, watermark, later reveal or newly invented action.\n\nIn panel 2 (Rook offers his black-gloved hand), add small thin スッ beside the open wrist, without covering either hand. In the last panel where Ren's bare hand takes Rook's glove, add medium rounded ギュッ alongside the joined hands, keeping fingers entirely clear. The two sounds should feel like a quiet offering followed by a firm accepting grip; no effects in the face-dialogue panels.\nExact new sound words: スッ / ギュッ",
+    "references": [
+      "examples/zero-break/v5/art/v6-greeting.png"
+    ],
+    "sha256": "fad0bef74ce69d0dc5744975b5af885eebc9416872908f0e0e22ef67f90e1835",
+    "provenance": "targeted raster sound-effect edit",
+    "replaces": [
+      "greeting"
+    ],
+    "visual_review": {
+      "status": "passed_native_mobile_image_review",
+      "source_sha256": "fad0bef74ce69d0dc5744975b5af885eebc9416872908f0e0e22ef67f90e1835",
+      "checks": [
+        "exact Japanese text and sound lettering",
+        "character identity, anatomy, costume and continuity",
+        "ordered partial assembly before existing full-body reveal"
+      ],
+      "mobile_widths": [
+        360,
+        390
+      ],
+      "evidence": [
+        "review/v6-contact-360-1.png",
+        "review/v6-contact-390-1.png"
+      ]
+    },
+    "sounds": [
+      "スッ",
+      "ギュッ"
+    ],
+    "revisionRecord": "examples/zero-break/production/episode-01-sfx/records/e01-greeting.json"
+  },
+  "panels": [
+    {
+      "beat": "The approaching knight addresses seated Ren.",
+      "view": "ONLY Rook face bent slightly down; Ren remains seated offscreen left. Same white stone stairs.",
+      "frame": "full-width medium Rook portrait, first row",
+      "voice": "reserved ordinary thin-black oval",
+      "line": {
+        "speaker": "Rook",
+        "text": "立てるか？",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "Help is offered, not yet accepted.",
+      "view": "Rook black-gloved open hand extended toward Ren bare hand. No crystal, no contact yet.",
+      "frame": "second row RIGHT46% hand-detail frame, then LEFT panel",
+      "voice": "無言"
+    },
+    {
+      "beat": "Ren answers while still getting his bearings.",
+      "view": "ONLY Ren seated face looking up right, same scarf and shirt.",
+      "frame": "second row LEFT50% Ren face frame, after right hand-detail",
+      "voice": "quiet shaky spoken voice, continuous tail",
+      "line": {
+        "speaker": "Ren",
+        "text": "ああ……。",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "He asks his first question.",
+      "view": "Ren bare hand takes Rook gloved hand and Ren rises a little; tight upper-body shot, not an unexplained new location.",
+      "frame": "full-width tall joined-hands movement, last row",
+      "voice": "ordinary questioning oval",
+      "line": {
+        "speaker": "Ren",
+        "text": "ここは？",
+        "type": "speech"
+      }
+    }
+  ],
+  "layout": {
+    "description": "One full-width portrait, a right-to-left two-panel hand/reaction row, and a full-width joined-hands finish.",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4
+      ]
+    ],
+    "rowDirection": "right-to-left",
+    "pageDirection": "top-to-bottom"
+  },
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/sfx-v6-greeting.png",
+      "sha256": "fad0bef74ce69d0dc5744975b5af885eebc9416872908f0e0e22ef67f90e1835"
+    }
+  ],
+  "visual_review": {
+    "status": "passed_native_mobile_image_review",
+    "source_sha256": "c565db58ce533ed781d4574c47918c898dcfe952d01cfd927b585afa7006cf7f",
+    "checks": [
+      "same beats, speakers, exact Japanese dialogue and sounds",
+      "real side-by-side or diagonal panel frames",
+      "character identity, anatomy, costume and geography",
+      "right-to-left within a row, then top-to-bottom",
+      "legible upright Japanese at 360 and 390 px",
+      "surrounding pose, location, rescue and partial-to-full assembly continuity"
+    ],
+    "mobile_widths": [
+      360,
+      390
+    ],
+    "evidence": [
+      "examples/zero-break/v5/review/v6-contact-360-1.png",
+      "examples/zero-break/v5/review/v6-contact-390-1.png",
+      "examples/zero-break/v5/review/v6-flow-360-04.png",
+      "examples/zero-break/v5/review/v6-flow-390-04.png"
+    ],
+    "method": "native Canvas images viewed at original target width"
+  },
+  "browser_review": {
+    "status": "blocked_by_browser_url_policy"
+  },
+  "physicalDeviceTested": false
+}

@@ -79,7 +79,7 @@ Rook now arrived ONE metre to right of still seated Ren. Rook bends slightly, of
 The approaching knight addresses seated Ren.
 
 注目と接続：ONLY Rook face bent slightly down; Ren remains seated offscreen left. Same white stone stairs.
-大きさと枠：right-aligned82% width, medium framed close
+大きさと枠：full-width medium Rook portrait, first row
 声：reserved ordinary thin-black oval
 
 ### コマ2
@@ -87,7 +87,7 @@ The approaching knight addresses seated Ren.
 Help is offered, not yet accepted.
 
 注目と接続：Rook black-gloved open hand extended toward Ren bare hand. No crystal, no contact yet.
-大きさと枠：left-aligned66% width, shallow hand insert
+大きさと枠：second row RIGHT46% hand-detail frame, then LEFT panel
 声：無言
 
 ### コマ3
@@ -95,7 +95,7 @@ Help is offered, not yet accepted.
 Ren answers while still getting his bearings.
 
 注目と接続：ONLY Ren seated face looking up right, same scarf and shirt.
-大きさと枠：left-aligned90% width, medium close-up
+大きさと枠：second row LEFT50% Ren face frame, after right hand-detail
 声：quiet shaky spoken voice, continuous tail
 
 ### コマ4
@@ -103,7 +103,7 @@ Ren answers while still getting his bearings.
 He asks his first question.
 
 注目と接続：Ren bare hand takes Rook gloved hand and Ren rises a little; tight upper-body shot, not an unexplained new location.
-大きさと枠：full-width tall framed movement
+大きさと枠：full-width tall joined-hands movement, last row
 声：ordinary questioning oval
 
 Rook：立てるか？
@@ -449,7 +449,7 @@ Ren catches Mira in midair with bare arms before landing.
 Ren catches Mira before they reach the canvas.
 
 注目と接続：Ren BARE arms support Mira back and knees in midair, red scarf streams, awning below.
-大きさと枠：medium full-width action frame
+大きさと枠：single large oblique rescue frame; parallel sloping top/bottom borders and upright lettering
 声：thick jagged urgent shout with tail to mouth
 
 Ren：つかまって！
@@ -480,7 +480,7 @@ Same lower cargo plaza after Mira is caught and landed safely; Ren kneels, Mira 
 Both are safe after landing.
 
 注目と接続：Ren kneels left; Mira stands right on the SAME solid cargo plaza under torn awning.
-大きさと枠：large full-width framed shared location
+大きさと枠：full-width shared safety establishing frame, first row
 声：無言
 
 ### コマ2
@@ -488,7 +488,7 @@ Both are safe after landing.
 Mira thanks him.
 
 注目と接続：ONLY Mira face; Ren remains beside her offscreen left.
-大きさと枠：right-aligned narrow medium frame
+大きさと枠：second row RIGHT58% Mira gratitude face frame
 声：gentle soft blue-grey contour
 
 ### コマ3
@@ -496,7 +496,7 @@ Mira thanks him.
 Ren takes in the thanks.
 
 注目と接続：ONLY Ren blue eyes, unarmored.
-大きさと枠：left-aligned shallow eye insert
+大きさと枠：second row LEFT38% shallow Ren eyes frame, lower aligned beside right frame
 声：無言
 
 ### コマ4
@@ -504,7 +504,7 @@ Ren takes in the thanks.
 Mira tells him her name.
 
 注目と接続：ONLY Mira upper body, hand at chest; same torn cargo awning.
-大きさと枠：large wide framed portrait
+大きさと枠：full-width large Mira introduction portrait, final row
 声：composed blue-grey rounded capsule
 
 Mira：ありがとう。
@@ -677,7 +677,7 @@ The cyan lattice becomes the adopted black faceted armor in separate physical cl
 Individual wrist plates take physical shape and snap together.
 
 注目と接続：Black faceted wrist/forearm plates materialize along prior cyan lattice and snap around forearm; fingertips remain bare at this stage. Sound カチッ.
-大きさと枠：right-aligned78% width, shallow forearm detail
+大きさと枠：upper row RIGHT forearm trapezoid; diagonal gutter guides down-left
 声：silent
 
 ### コマ2
@@ -685,7 +685,7 @@ Individual wrist plates take physical shape and snap together.
 The legs become protected next.
 
 注目と接続：Close black angular boot and shin plates fitting over ordinary boot/trousers; same solid cargo ground and canvas rope. Sound ガシャッ.
-大きさと枠：full-width medium-height lower-leg close-up
+大きさと枠：upper row LEFT boot/shin trapezoid after right forearm
 声：silent
 
 ### コマ3
@@ -693,7 +693,7 @@ The legs become protected next.
 The chest seals around the existing star, connecting all parts.
 
 注目と接続：Close chest black faceted plates meet around a SINGLE cyan star; red scarf above, cyan seams. Exact notice 装甲固定。 and sound ガキンッ. No face or full-body reveal.
-大きさと枠：left-aligned92% width, taller chest detail
+大きさと枠：lower full-width large chest fixed panel after both upper details
 声：system notice
 
 

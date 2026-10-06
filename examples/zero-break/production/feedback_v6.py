@@ -178,6 +178,28 @@ def build(number):
         for shot in shots:
             if shot['id'] in additions.get('pauseOverrides', {}):
                 shot['pause'] = additions['pauseOverrides'][shot['id']]
+    layout_records = ROOT / 'production' / f'episode-{number:02d}-layout' / 'records'
+    for shot in shots:
+        record_path = layout_records / (shot['id'] + '.json')
+        if not record_path.exists():
+            continue
+        record = json.loads(record_path.read_text())
+        before = record['beforeShot']
+        for key in ('id','file','lines','panels','sounds','visible_text','pause','widthPercent','shape','sha256','prompt','replaces'):
+            assert before.get(key) == shot.get(key), (shot['id'], key)
+        assert digest(directory(number)/'art'/before['file']) == before['sha256']
+        assert digest(directory(number)/'art'/record['file']) == record['sha256']
+        assert len(record['panels']) == len(before['panels'])
+        for old, new in zip(before['panels'], record['panels']):
+            assert {k:v for k,v in old.items() if k!='frame'} == {k:v for k,v in new.items() if k!='frame'}
+        for reference in record['references']:
+            assert digest(REPO/reference['path']) == reference['sha256']
+        shot.update(file=record['file'], panels=record['panels'],
+                    prompt=record['prompt'], sha256=record['sha256'],
+                    references=[r['path'] for r in record['references']],
+                    layoutRevisionRecord=str(record_path.relative_to(REPO)),
+                    layout=record['layout'], provenance='panel layout recomposition',
+                    visual_review=record['visual_review'])
     manifest.update(version='context-dialogue-v6', shots=shots,
                     panel_count=sum(len(s.get('panels',[s])) for s in shots),
                     baseline=f'../production/feedback-v6/baseline/episode-{number:02d}.json')
@@ -218,7 +240,9 @@ def build(number):
     execution=[]
     for shot in shots:
         record_path=STATE/'records'/(shot['id']+'.json')
-        if shot.get('revisionRecord'):
+        if shot.get('layoutRevisionRecord'):
+            record_path = REPO / shot['layoutRevisionRecord']
+        elif shot.get('revisionRecord'):
             record_path = REPO / shot['revisionRecord']
         elif shot.get('insertionRecord'):
             record_path = REPO / shot['insertionRecord']
@@ -236,8 +260,11 @@ def build(number):
                   '全10話の改稿は新規54素材・承認見本の再利用3素材。再利用・修正・旧版保持を generation-log.json で区別。以前の実行記録は production/feedback-v6/baseline に保持。','']
     sound_count = sum(bool(s.get('revisionRecord')) for s in shots)
     insert_count = sum(bool(s.get('insertionRecord')) for s in shots)
+    layout_count = sum(bool(s.get('layoutRevisionRecord')) for s in shots)
     if sound_count or insert_count:
         prompt_lines += [f'この話の追加改稿：既存{sound_count}素材の効果音編集・{insert_count}素材の装着過程追加。元画像・修正前画像・実行指示は production/episode-{number:02d}-sfx に保持。','']
+    if layout_count:
+        prompt_lines += [f'その後のコマ割り改稿：{layout_count}素材を横並び・斜め枠へ再構成。読順・元画像・指示は production/episode-{number:02d}-layout に保持。','']
     for r in execution:
         prompt_lines += ['## '+r['file'],'',r['method'],'',
                          '参照：'+json.dumps(r.get('references',[]),ensure_ascii=False),'']

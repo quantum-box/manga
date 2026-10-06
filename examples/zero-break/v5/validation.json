@@ -1,45 +1,45 @@
 {
   "edition": "context-dialogue-v6",
   "panels": 73,
-  "readerSourceSha256": "d37191b3af9f8c37dff29a884d0628dd1b26930f4c4e855de854d5f76129e5bf",
+  "readerSourceSha256": "73ef45beac16d41e1728d2ef2671b323adbe60051c926e828b7d085c495015bc",
   "source_assets_verified": true,
   "visualReview": {
     "status": "passed_native_mobile_image_review",
-    "mobileWidths": [
+    "method": "native Canvas contact images and continuous windows; no browser rendering",
+    "widths": [
       360,
       390
     ],
     "checks": [
-      "existing dialogue and panels preserved",
-      "cyan routing precedes plates and completion",
-      "four of six reserve segments lit",
-      "thought dots point toward offscreen head",
-      "full armor reveal and rescue geography remain coherent"
+      "all four revised layout scenes: exact dialogue, sound labels, faces, supporting hands and row reading order",
+      "actual diagonal panel borders and gutter; lettering upright",
+      "surrounding story and assembly order preserved"
     ],
     "evidence": [
       "review/v6-contact-360-1.png",
-      "review/v6-contact-360-2.png",
       "review/v6-contact-360-5.png",
       "review/v6-contact-360-6.png",
-      "review/v6-contact-360-7.png",
       "review/v6-contact-390-1.png",
-      "review/v6-contact-390-2.png",
       "review/v6-contact-390-5.png",
       "review/v6-contact-390-6.png",
-      "review/v6-contact-390-7.png",
+      "review/v6-flow-360-04.png",
+      "review/v6-flow-360-19.png",
+      "review/v6-flow-360-20.png",
+      "review/v6-flow-360-22.png",
       "review/v6-flow-360-26.png",
       "review/v6-flow-360-27.png",
       "review/v6-flow-360-28.png",
-      "review/v6-flow-360-29.png",
-      "review/v6-flow-360-30.png",
-      "review/v6-flow-360-32.png",
+      "review/v6-flow-390-04.png",
+      "review/v6-flow-390-19.png",
+      "review/v6-flow-390-20.png",
+      "review/v6-flow-390-22.png",
       "review/v6-flow-390-26.png",
       "review/v6-flow-390-27.png",
       "review/v6-flow-390-28.png",
-      "review/v6-flow-390-29.png",
-      "review/v6-flow-390-30.png",
-      "review/v6-flow-390-32.png"
-    ]
+      "review/layout-sequence-390.png"
+    ],
+    "priorSoundAndAssemblyReview": "../production/episode-01-sfx/verification.json",
+    "panelLayoutReview": "../production/episode-01-layout/verification.json"
   },
   "mobileBrowserReview": {
     "status": "blocked_by_browser_url_policy",
