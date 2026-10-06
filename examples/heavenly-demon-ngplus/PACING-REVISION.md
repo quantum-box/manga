@@ -44,6 +44,6 @@
 
 全10話、390×844／360×800、index.html／reader.htmlの40表示で画像読み込み・横はみ出し・全長一致を確認。追加原画の全文、縦列の順、話者、顔、手、小道具と、第1話の6追加窓・第10話の2表示窓をスマホ幅で目視した。第8話の台詞と背景看板は「工房」へ字形を修正した。画像内の文字をCSSのfont-sizeとして計測してはいない。
 
-各話の編集元・単独リーダー・完成JPEG、カタログ、iOS同梱版、持ち出しZIP、server-exportを同じ増補版に更新。iOS同梱版は6作品・35リーダーの照合に合格。実機起動と本番への公開はこの改稿では未実施。
+各話の編集元・単独リーダー・完成JPEG、カタログ、iOS同梱版、持ち出しZIP、当時の配信出力を同じ増補版に更新。旧配信出力はGitの履歴で管理する。iOS同梱版は6作品・35リーダーの照合に合格。実機起動と本番への公開はこの改稿では未実施。
 
-修正前は各話のrevisions/before-pacingに保存。保存版HTMLは変更していない原画への相対パスを調整して単独で表示できる。pacing-baseline.jsonは従来の検証記録、pacing-comparison.jsonは今回の同一環境での実測。採用した追加作画の指示・参照元・原本は各話のprovenance-04.json、第1話のpacing-*-provenance.json、第8話のpacing-lettering-repair.jsonに記録。
+修正前の本文はGitの履歴で管理し、各話には採用済みの最新版だけを残す。pacing-baseline.jsonは従来の検証記録、pacing-comparison.jsonは今回の同一環境での実測。採用した追加作画の指示・参照元・原本は各話のprovenance-04.json、第1話のpacing-*-provenance.json、第8話のpacing-lettering-repair.jsonに記録。

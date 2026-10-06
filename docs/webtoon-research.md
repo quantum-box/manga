@@ -1,6 +1,6 @@
 # Webtoon再調査と試作の見直し
 
-調査日: 2026-09-29。対象は [ポチのカラー縦読み試作](../examples/pochis-handshake/webtoon/README.md)。以下の「今回の判断」は資料と試作を照らした推論であり、プラットフォームの公式要件ではない。
+調査日: 2026-09-29。対象は [ポチのカラー縦読み試作](https://github.com/quantum-box/manga/blob/81a4a9a80c9c6782bac7592142750c324a1b42eb/examples/pochis-handshake/webtoon/README.md)。以下の「今回の判断」は資料と試作を照らした推論であり、プラットフォームの公式要件ではない。
 
 ## Webtoonを成立させる要素
 

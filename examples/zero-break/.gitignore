@@ -1,4 +1,4 @@
-# Keep the accepted edition and scripts; retain local prototypes outside Git.
+# Keep the accepted edition and scripts; older editions live in Git history.
 /*
 !/.gitignore
 !/README.md
@@ -12,15 +12,6 @@
 !/v5/review/screen-390-8.png
 !/v5/review/screen-390-9.png
 !/v5/review/screen-390-12.png
-# Exact references used to generate the new scenes.
-!/v4/
-/v4/*
-!/v4/PROMPTS.md
-!/v4/art/
-/v4/art/*
-!/v4/art/02-arrival.png
-!/v4/art/03-guide.png
-
 !/production/
 !/episode-*/
 !/chapters.html
