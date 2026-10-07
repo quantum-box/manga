@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-07",
+  "scope": "partial whitespace-direction sample; not adopted chapter revision",
+  "artwork": {
+    "method": "built-in image_gen:3 sparse assets;2 adopted PNGs copied unchanged",
+    "asset_count": 5,
+    "source_and_embedded_bytes_match": true,
+    "native_originals_inspected": true,
+    "art_references": "assets.json"
+  },
+  "lettering": {
+    "sound": "カチッ",
+    "notice": "接続完了。",
+    "notice_speaker": "system notice, not spoken by Ren",
+    "notice_layout": "one upright vertical column, top to bottom, no balloon or tail",
+    "measurement": "raster color bounds in lettering-bounds.json, not DOM font size",
+    "native_readability_widths": [
+      390,
+      360
+    ]
+  },
+  "scroll_pacing": {
+    "purpose": "short dense activation, then independent sound/notice/light pauses before first whole-body reveal",
+    "native_viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "total_height": 3385,
+        "windows": [
+          {
+            "file": "review/window-390-00.png",
+            "offset": 0
+          },
+          {
+            "file": "review/window-390-01.png",
+            "offset": 549
+          },
+          {
+            "file": "review/window-390-02.png",
+            "offset": 1098
+          },
+          {
+            "file": "review/window-390-03.png",
+            "offset": 1647
+          },
+          {
+            "file": "review/window-390-04.png",
+            "offset": 2196
+          },
+          {
+            "file": "review/window-390-05.png",
+            "offset": 2541
+          }
+        ],
+        "notification_bottom_to_hero_image_start_px": 939.67,
+        "first_reveal_measurement": "conservative: hero image top, before hair/body appears",
+        "native_visual_review": "read all six consecutive native windows; exact カチッ and 接続完了。; upright vertical notice; fingers and armor continuity visible; no figure in sound/voice/light pauses; blue light remains visible on white; hero remains absent until after notice and light",
+        "browser_dom_measurement": null
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "total_height": 3124,
+        "windows": [
+          {
+            "file": "review/window-360-00.png",
+            "offset": 0
+          },
+          {
+            "file": "review/window-360-01.png",
+            "offset": 520
+          },
+          {
+            "file": "review/window-360-02.png",
+            "offset": 1040
+          },
+          {
+            "file": "review/window-360-03.png",
+            "offset": 1560
+          },
+          {
+            "file": "review/window-360-04.png",
+            "offset": 2080
+          },
+          {
+            "file": "review/window-360-05.png",
+            "offset": 2324
+          }
+        ],
+        "notification_bottom_to_hero_image_start_px": 867.31,
+        "first_reveal_measurement": "conservative: hero image top, before hair/body appears",
+        "native_visual_review": "read all six consecutive native windows; exact カチッ and 接続完了。; upright vertical notice; fingers and armor continuity visible; no figure in sound/voice/light pauses; blue light remains visible on white; hero remains absent until after notice and light",
+        "browser_dom_measurement": null
+      }
+    ],
+    "assessment": "native window sequence shows a different density for each beat and withholds the whole body through the light pause; actual interactive scroll and user adoption remain pending"
+  },
+  "browser": {
+    "status": "not run",
+    "reason": "local HTML access denied by browser tooling earlier in this task; no alternate browser/localhost/CDP workaround"
+  },
+  "physical_device": {
+    "status": "not run"
+  },
+  "production": {
+    "published": false,
+    "catalog_registered": false,
+    "adopted_episode_replaced": false
+  }
+}
