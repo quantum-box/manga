@@ -97,7 +97,7 @@ REFERENCE ROLES: ref 1 character identity only; ref 2 tower materials only; ref 
 FINAL COMPOSITION REQUIREMENT: A finished story passage, not an illustration poster. Use the explicitly specified number and order of shots. Stagger small closeups to the RIGHT then LEFT with ivory surrounding space; asymmetrical hand and face cutaways. Close camera on the physical source of each sound. Vertical spoken glyphs should be 90–100px per 1024px of canvas width so they are legible even in an 82% wide phone panel. Render only specified Japanese, precisely, including punctuation; NO narrator caption, English, or extra labels. Only Kou and/or Elna as required, no Balt, Iris or Leon. Keep sequential action clear downward. Aim native canvas 768px wide, at least1536px high; prioritize typography and composition.
 ```
 
-## 05-ask-way
+## 33-ground-and-breath
 
 ```text
 Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
@@ -107,43 +107,73 @@ EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還
 
 CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou. Do NOT depict these absent reference characters anywhere, including background: Elna, Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
 
-SCENE: TWO staggered conversation beats in the same tower street: upper close face of hesitant Kou looking toward a wooden administrative stall; lower larger medium Kou respectfully speaking to an ordinary older gray-haired beige-robed clerk sitting behind the desk. The clerk is the same ordinary official used in the following gate exchange, not a main-reference supporting hero. No gate answer or map yet.
+SCENE: THREE unequal silent close shots of Kou in SAME tower lane. Top small: boot plants on paving and hand braces on sandstone wall. Middle narrow: fingers feel real dirt on his green apron. Bottom LARGE: Kou takes shaky breath, worried eyes search toward wooden administrative stall. Physical grounding after seeing sword, before asking for help. No other person, no gate, no money pouch, no dialogue or SFX.
 
 EXACT TEXT IN READING ORDER:
 
-Speaker コウ・心 (thought, cloud with dots). Exact full text: 言葉は、通じるのか。
-Vertical columns from RIGHT to LEFT: 言葉は、通じる / のか。
+Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
 
-Speaker コウ (spoken, tail to speaker). Exact full text: すみません。帰る門は……。
-Vertical columns from RIGHT to LEFT: すみません。帰 / る門は……。
+No dialogue or thought balloons. Render the specified sound effects only; a scene without dialogue is not automatically soundless.
+
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
+```
+
+## 05-ask-way
+
+```text
+Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
+TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, match Reference 3: actual glyph height about 75–85px per 1024px image width (roughly 26–30px at phone width). Text must visibly be this large, not nominal font metadata. Short dialogue uses large balloons with only two or three vertical columns, not tiny dense columns. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
+
+EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。
+
+CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou, Leon. Do NOT depict these absent reference characters anywhere, including background: Elna, Balt, Iris. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
+
+SCENE: THREE unequal shots at same wooden administrative stall. Establish Kou standing RIGHT and older gray-haired, small gray-bearded clerk in plain beige robe LEFT behind desk. Top two-shot Kou asks where he is. Middle close ONLY gentle clerk asks about injury. Bottom larger close ONLY Kou checks dirty but uninjured hand, answers hesitantly. No gate, maps, future answers. Clerk not Balt or Leon, no hat or weapons.
+
+EXACT TEXT IN READING ORDER:
+
+Speaker コウ (spoken, tail to speaker). Exact full text: すみません。ここは、どこですか？
+Vertical columns from RIGHT to LEFT: すみません。こ / こは、どこです / か？
+
+Speaker 係員 (spoken, tail to speaker). Exact full text: 落ち着いて。けがは？
+Vertical columns from RIGHT to LEFT: 落ち着いて。け / がは？
+
+Speaker コウ (spoken, tail to speaker). Exact full text: 大丈夫、だと思います。
+Vertical columns from RIGHT to LEFT: 大丈夫、だと思 / います。
 
 Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
-REFERENCE ROLES: ref 1 character identity only; ref 2 tower materials only; ref 3 lettering size only.
-FINAL COMPOSITION REQUIREMENT: A finished story passage, not an illustration poster. Use the explicitly specified number and order of shots. Stagger small closeups to the RIGHT then LEFT with ivory surrounding space; asymmetrical hand and face cutaways. Close camera on the physical source of each sound. Vertical spoken glyphs should be 90–100px per 1024px of canvas width so they are legible even in an 82% wide phone panel. Render only specified Japanese, precisely, including punctuation; NO narrator caption, English, or extra labels. Only Kou and/or Elna as required, no Balt, Iris or Leon. Keep sequential action clear downward. Aim native canvas 768px wide, at least1536px high; prioritize typography and composition.
+
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
+```
+
+## 34-where-am-i
+
+```text
+Use case: identity-preserve. Asset: existing finished Japanese Webtoon artwork. IMAGE 1 IS THE EDIT TARGET. IMAGE 2 DEFINES THE SAME CLERK'S IDENTITY and robe. Change ONLY the depicted administrative clerk in image 1 to the SAME sixty-year-old gray-haired man with small gray beard, gentle lined face, pale beige robe and DARK BLUE embroidered stole visible in image 2. Correct age and facial identity; preserve his exact pose, hands, frame position and existing action in every shot. Keep Kou, building, panel arrangement, framing, food absence and ALL Japanese glyphs and speech balloon tails unchanged. Do NOT copy any panels or text from image 2. Original target text, preserve precisely: [["係員","ここは、塔の三階だ。"],["コウ","……塔の、中？"]] . Do not add text, props, people or another plot beat. Match confident anime linework and warm tower palette. This is one clerk throughout a continuous conversation.
+```
+
+## 35-others-arrived
+
+```text
+Use case: identity-preserve. Asset: existing finished Japanese Webtoon artwork. IMAGE 1 IS THE EDIT TARGET. IMAGE 2 DEFINES THE SAME CLERK'S IDENTITY and robe. Change ONLY the depicted administrative clerk in image 1 to the SAME sixty-year-old gray-haired man with small gray beard, gentle lined face, pale beige robe and DARK BLUE embroidered stole visible in image 2. Correct age and facial identity; preserve his exact pose, hands, frame position and existing action in every shot. Keep Kou, building, panel arrangement, framing, food absence and ALL Japanese glyphs and speech balloon tails unchanged. Do NOT copy any panels or text from image 2. Original target text, preserve precisely: [["コウ","さっきまで、畑にいたんです。"],["コウ","光ったと思ったら、ここに。"],["係員","君も、外から来たんだな。"]] . Do not add text, props, people or another plot beat. Match confident anime linework and warm tower palette. This is one clerk throughout a continuous conversation.
+```
+
+## 36-return-question
+
+```text
+Use case: identity-preserve. Asset: existing finished Japanese Webtoon artwork. IMAGE 1 IS THE EDIT TARGET. IMAGE 2 DEFINES THE SAME CLERK'S IDENTITY and robe. Change ONLY the depicted administrative clerk in image 1 to the SAME sixty-year-old gray-haired man with small gray beard, gentle lined face, pale beige robe and DARK BLUE embroidered stole visible in image 2. Correct age and facial identity; preserve his exact pose, hands, frame position and existing action in every shot. Keep Kou, building, panel arrangement, framing, food absence and ALL Japanese glyphs and speech balloon tails unchanged. Do NOT copy any panels or text from image 2. Original target text, preserve precisely: [["コウ","同じような人が、いるんですか？"],["係員","何人か、ここで暮らしてる。"],["コウ","元の場所に、帰りたいんです。"]] . Do not add text, props, people or another plot beat. Match confident anime linework and warm tower palette. This is one clerk throughout a continuous conversation.
 ```
 
 ## 02-gate
 
 ```text
-Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
-TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, target about 60px glyph height in a 1024px-wide original so it remains readable at 360px width. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
+Use case: identity-preserve. Asset: existing finished Japanese Webtoon artwork. IMAGE 1 IS THE EDIT TARGET. IMAGE 2 DEFINES THE SAME CLERK'S IDENTITY and robe. Change ONLY the depicted administrative clerk in image 1 to the SAME sixty-year-old gray-haired man with small gray beard, gentle lined face, pale beige robe and DARK BLUE embroidered stole visible in image 2. Correct age and facial identity; preserve his exact pose, hands, frame position and existing action in every shot. Keep Kou, building, panel arrangement, framing, food absence and ALL Japanese glyphs and speech balloon tails unchanged. Do NOT copy any panels or text from image 2. Original target text, preserve precisely: [["係員","帰還の門がある。"],["コウ","帰れるんですか？"],["係員","今は閉じてる。調査待ちだ。"]] . Do not add text, props, people or another plot beat. Match confident anime linework and warm tower palette. This is one clerk throughout a continuous conversation.
+```
 
-EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。
+## 37-shelter-and-directions
 
-SCENE: Three unequal panels: medium Kou facing a plain wooden administrative desk; closer offscreen clerk's hand indicating a closed stone gate diagram without lettering; closeup Kou absorbing the answer. Clerk is an ordinary older adult in beige robe, not Leon. Show patient exchange, hope and worry.
-
-EXACT TEXT IN READING ORDER:
-
-Speaker 係員 (spoken, tail to speaker). Exact full text: 帰還の門は、今は閉じてる。
-Vertical columns from RIGHT to LEFT: 帰還の門は、今 / は閉じてる。
-
-Speaker コウ (spoken, tail to speaker). Exact full text: 帰る方法は、あるんですね？
-Vertical columns from RIGHT to LEFT: 帰る方法は、あ / るんですね？
-
-Speaker 係員 (spoken, tail to speaker). Exact full text: 調査待ちだ。まずは寝床だ。
-Vertical columns from RIGHT to LEFT: 調査待ちだ。ま / ずは寝床だ。
-
-Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
+```text
+Use case: identity-preserve. IMAGE 1 edit target, IMAGE 2 same administrative clerk identity. Change only the old clerk in ALL FOUR panels to the EXACT sixty-year-old man from image 2: short gray hair, small trimmed gray beard, gentle lined face, beige robe and DARK BLUE embroidered stole. Remove his cap completely. Keep his gestures, Kou, room bench, scene progression, four-panel layout and ALL original Japanese dialogue unchanged. Remove the stray tiny English-like background lettering, leave abstract marks only. Exact Japanese unchanged: いつ、開くんですか？ / まだ、分からない。 / 今夜は、ここの休憩室でいい。 / ……ありがとうございます。 Preserve vertical glyphs, same reading order. No other changes; no additional dialogue, sign text or props. Match finished warm anime drawing.
 ```
 
 ## 07-closed-gate
@@ -177,21 +207,20 @@ EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還
 
 CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou, Elna. Do NOT depict these absent reference characters anywhere, including background: Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
 
-SCENE: THREE quick, staggered small closeups down a pale ivory ground: Kou checks a worn leather coin pouch that is empty, takes a step on the stone lane, then presses his empty stomach under cream shirt and green apron. No spoken words, no coins or modern money. Not three equal rectangles. End with his hand at stomach; no diner or Elna visible yet.
+SCENE: THREE unequal successive CLOSEUPS after Kou leaves stall and sees shut gate. Top his hand opens EXISTING rectangular brown LEATHER TOOL SATCHEL at belt, sees worn trowel handle, small notebook and string; not coin purse. Middle boot steps on tower paving. Bottom larger hand on stomach under cream shirt and green apron. Single thought belongs to TOP tool shot. NO wallet, coin purse, money, phone, meal or Elna. Ivory space around asymmetrical hand and boot panels.
 
 EXACT TEXT IN READING ORDER:
 
+Speaker コウ・心 (thought, cloud with dots). Exact full text: 道具しか、ない。
+Vertical columns from RIGHT to LEFT: 道具しか、ない / 。
+
 Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
 
-Exact sound effect: キュッ. Physical source: leather purse squeezed. Placement and drawn style: tiny crisp letters by leather fold. No speech balloon or speaker tail. Keep hands, faces and spoken text visible.
+Exact sound effect: コツ. Physical source: Kou boot on paving. Placement and drawn style: small letters by sole. No speech balloon or speaker tail. Keep hands, faces and spoken text visible.
 
-Exact sound effect: コツ. Physical source: Kou boot meets paving. Placement and drawn style: short dark lettering near heel. No speech balloon or speaker tail. Keep hands, faces and spoken text visible.
+Exact sound effect: ぐう……. Physical source: Kou stomach. Placement and drawn style: soft letters near stomach, no balloon. No speech balloon or speaker tail. Keep hands, faces and spoken text visible.
 
-Exact sound effect: ぐう……. Physical source: Kou stomach rumble. Placement and drawn style: soft wavy letters beside stomach, no balloon. No speech balloon or speaker tail. Keep hands, faces and spoken text visible.
-
-No dialogue or thought balloons. Render the specified sound effects only; a scene without dialogue is not automatically soundless.
-REFERENCE ROLES: ref 1 character identity only; ref 2 tower materials only; ref 3 lettering size only.
-FINAL COMPOSITION REQUIREMENT: A finished story passage, not an illustration poster. Use the explicitly specified number and order of shots. Stagger small closeups to the RIGHT then LEFT with ivory surrounding space; asymmetrical hand and face cutaways. Close camera on the physical source of each sound. Vertical spoken glyphs should be 90–100px per 1024px of canvas width so they are legible even in an 82% wide phone panel. Render only specified Japanese, precisely, including punctuation; NO narrator caption, English, or extra labels. Only Kou and/or Elna as required, no Balt, Iris or Leon. Keep sequential action clear downward. Aim native canvas 768px wide, at least1536px high; prioritize typography and composition.
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
 ```
 
 ## 09-steam-trail
@@ -221,25 +250,29 @@ ASPECT OVERRIDE: approximately 1:3 very tall portrait. ONE continuous, borderles
 ## 03-diner
 
 ```text
-Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
-TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, target about 60px glyph height in a 1024px-wide original so it remains readable at 360px width. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
+Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
+TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, match Reference 3: actual glyph height about 75–85px per 1024px image width (roughly 26–30px at phone width). Text must visibly be this large, not nominal font metadata. Short dialogue uses large balloons with only two or three vertical columns, not tiny dense columns. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
 
 EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。
 
-SCENE: Wide panel: Kou pauses outside diner blue awning, hungry, Elna at serving window to his left. Small inset of his hand on stomach. Lower medium panel of Elna turning toward vegetable plot. Keep paved lane left and beds right of diner.
+CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou, Elna. Do NOT depict these absent reference characters anywhere, including background: Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
+
+SCENE: THREE unequal shots at BLUE-AWNING diner EXTERIOR. Top medium hesitant Kou RIGHT outside serving window and Elna LEFT inside, he requests WATER ONLY. Middle close Elna notices strained face and gently offers seat. Bottom shallow SILENT shot Kou lowers himself onto OUTDOOR wooden bench at window. No food, work offer, names or extra menu text. Water cup NOT delivered yet. Original identity clothes, no farm tools on food counter. Unequal situation and focused closeups, not identical boxes.
 
 EXACT TEXT IN READING ORDER:
 
-Speaker コウ (spoken, tail to speaker). Exact full text: 飯代なら、働きます。
-Vertical columns from RIGHT to LEFT: 飯代なら、働き / ます。
+Speaker コウ (spoken, tail to speaker). Exact full text: すみません。水を、もらえますか。
+Vertical columns from RIGHT to LEFT: すみません。水 / を、もらえます / か。
 
-Speaker エルナ (spoken, tail to speaker). Exact full text: 畑を、見られる？
-Vertical columns from RIGHT to LEFT: 畑を、見られる / ？
+Speaker エルナ (spoken, tail to speaker). Exact full text: 大丈夫？　こっちに座って。
+Vertical columns from RIGHT to LEFT: 大丈夫？　こっ / ちに座って。
 
 Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
+
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
 ```
 
-## 11-farmer-recognized
+## 38-water-and-thanks
 
 ```text
 Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
@@ -249,19 +282,83 @@ EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還
 
 CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou, Elna. Do NOT depict these absent reference characters anywhere, including background: Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
 
-SCENE: TWO unequal conversation panels beside the same blue-awning diner, no location change. Upper medium Elna studies Kou's muddy apron and trowel with cautious interest, lower larger closeup of Kou answering, not smug. Elna on his LEFT, Kou on RIGHT, correct adult faces and clothes. No garden diagnosis or future reply. Ordinary affordable cookware.
+SCENE: THREE quiet unequal close shots SAME diner window, Kou seated outside RIGHT, Elna standing inside LEFT. Upper shallow hands: Elna places ONE plain small brown ceramic WATER CUP on counter, clear clean water NOT stew. Her utterance from offscreen, tail UP LEFT toward mouth, not cup. Middle larger SILENT Kou holds SAME cup both hands, drinks slowly. Bottom Kou face with lowered cup gives thanks, shoulders start to release. Elna out of closeup frame, still inside. No food, job, harvest, terms or new cast.
 
 EXACT TEXT IN READING ORDER:
 
-Speaker エルナ (spoken, tail to speaker). Exact full text: その服、農家なの？
-Vertical columns from RIGHT to LEFT: その服、農家な / の？
+Speaker エルナ (spoken, tail to speaker). Exact full text: はい。ゆっくり飲んで。
+Vertical columns from RIGHT to LEFT: はい。ゆっくり / 飲んで。
 
-Speaker コウ (spoken, tail to speaker). Exact full text: 七年、野菜を作ってました。
-Vertical columns from RIGHT to LEFT: 七年、野菜を作 / ってました。
+Speaker コウ (spoken, tail to speaker). Exact full text: ありがとうございます。
+Vertical columns from RIGHT to LEFT: ありがとうござ / います。
 
 Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
-REFERENCE ROLES: ref 1 character identity only; ref 2 tower materials only; ref 3 lettering size only.
-FINAL COMPOSITION REQUIREMENT: A finished story passage, not an illustration poster. Use the explicitly specified number and order of shots. Stagger small closeups to the RIGHT then LEFT with ivory surrounding space; asymmetrical hand and face cutaways. Close camera on the physical source of each sound. Vertical spoken glyphs should be 90–100px per 1024px of canvas width so they are legible even in an 82% wide phone panel. Render only specified Japanese, precisely, including punctuation; NO narrator caption, English, or extra labels. Only Kou and/or Elna as required, no Balt, Iris or Leon. Keep sequential action clear downward. Aim native canvas 768px wide, at least1536px high; prioritize typography and composition.
+
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
+```
+
+## 39-cannot-pay
+
+```text
+Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
+TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, match Reference 3: actual glyph height about 75–85px per 1024px image width (roughly 26–30px at phone width). Text must visibly be this large, not nominal font metadata. Short dialogue uses large balloons with only two or three vertical columns, not tiny dense columns. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
+
+EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。
+
+CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou, Elna. Do NOT depict these absent reference characters anywhere, including background: Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
+
+SCENE: THREE unequal beats SAME window, Kou seated outside RIGHT with brown WATER CUP on counter, Elna inside LEFT. Top medium gentle Elna asks about food. Middle close embarrassed Kou acknowledges no money. Bottom larger close Kou shoulder and hand near cup politely declines to avoid imposing; Elna may be offscreen. SMALL stomach sound at lower torso, not comedy. No meal served, job promise, bill, magic money, handover or bargaining. Keep cup SAME size brown shape.
+
+EXACT TEXT IN READING ORDER:
+
+Speaker エルナ (spoken, tail to speaker). Exact full text: 何か、食べる？
+Vertical columns from RIGHT to LEFT: 何か、食べる？
+
+Speaker コウ (spoken, tail to speaker). Exact full text: ……今、お金がなくて。
+Vertical columns from RIGHT to LEFT: ……今、お金が / なくて。
+
+Speaker コウ (spoken, tail to speaker). Exact full text: 水だけで、大丈夫です。
+Vertical columns from RIGHT to LEFT: 水だけで、大丈 / 夫です。
+
+Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
+
+Exact sound effect: ぐぅ…. Physical source: Kou stomach under counter. Placement and drawn style: small wavering letters beside torso, not dialogue. No speech balloon or speaker tail. Keep hands, faces and spoken text visible.
+
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
+```
+
+## 11-farmer-recognized
+
+```text
+Use case: illustration-story. IMAGE 1 supplies existing farmer recognition dialogue and identities; IMAGE 2 supplies CURRENT SCENE location, pose and cup. Redraw the TWO unequal recognition panels from image 1 so they follow image 2 seamlessly: Kou is STILL SEATED OUTSIDE on RIGHT at blue-awning diner serving window, Elna remains standing INSIDE on LEFT. Top medium Elna notices his dirt-marked work jacket, apron and tool satchel at belt and asks the SAME line; Kou is uncertain, not smug. Lower larger closeup seated Kou answers the SAME line. Preserve exact adult faces, clothes, warm palette and Japanese dialogue from image1: Elna その服、農家なの？ ; Kou 七年、野菜を作ってました。 Two separate DOWNWARD utterances, large upright vertical Japanese columns right-to-left, speech tails to correct mouths. Keep only ONE small brown ceramic WATER CUP on counter, hands near cup; NO trowel held up, NO dirty farm tool on kitchen counter, NO full plates or job offer yet. Elna and Kou are same room/window exchange, not beside the garden. Do not copy text or panels from image2 or add any extra words. The next scene first introduces the offer of work.
+```
+
+## 40-work-offer
+
+```text
+Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
+TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, match Reference 3: actual glyph height about 75–85px per 1024px image width (roughly 26–30px at phone width). Text must visibly be this large, not nominal font metadata. Short dialogue uses large balloons with only two or three vertical columns, not tiny dense columns. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
+
+EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。
+
+CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou, Elna. Do NOT depict these absent reference characters anywhere, including background: Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
+
+SCENE: THREE unequal beats AFTER Elna learns Kou is farmer with seven years experience. SAME diner exterior window. Upper medium Elna LEFT inside leans to point toward WILTED garden RIGHT of diner, worried request; Kou RIGHT outside still seated, looks where she points. Middle larger close sincere Elna face proposes one meal for LOOKING at plot, no cure guarantee. Bottom close tentatively hopeful Kou agrees politely, shoulder-turn prepares to stand, NOT already at roots. No finished drain, cured plants, meal, money, contract or UI. Farm tools remain at belt, no tools on counter. Large vertical glyphs, one utterance per downward shot.
+
+EXACT TEXT IN READING ORDER:
+
+Speaker エルナ (spoken, tail to speaker). Exact full text: 裏の畑、困ってるの。
+Vertical columns from RIGHT to LEFT: 裏の畑、困って / るの。
+
+Speaker エルナ (spoken, tail to speaker). Exact full text: 見てくれたら、一食出すよ。
+Vertical columns from RIGHT to LEFT: 見てくれたら、 / 一食出すよ。
+
+Speaker コウ (spoken, tail to speaker). Exact full text: 僕でよければ、見せてください。
+Vertical columns from RIGHT to LEFT: 僕でよければ、 / 見せてください / 。
+
+Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
+
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
 ```
 
 ## 12-garden-walk
@@ -728,20 +825,32 @@ EXACT DIALOGUE IN ORDER: コウ・心「畑にいたはずなのに。」 / コ�
 
 ```
 
-## 実際の追加生成：02-gate-lettered
+## 実際の追加生成：02-gate-context
 
 ```text
-Use case: precise-object-edit. The Japanese dialogue in this existing finished vertical comic is TOO SMALL at a 360px phone width. Edit ONLY the dialogue lettering and the necessary white speech/thought balloon areas. Enlarge EVERY Japanese dialogue glyph to approximately 1.7 TIMES its current height and width; final glyph height around 7 percent of full canvas width, including any small-panel dialogue. Enlarge balloons and reflow vertical columns to fit, with generous white inset. Do NOT make letters small to keep the original balloon size. Preserve ALL exact wording, punctuation, speakers and balloon reading order. Upright vertical Japanese: top-to-bottom, columns RIGHT TO LEFT. Do not display speaker labels or quotation marks. Thought stays a cloud with dots; speech tails stay attached to the correct speaker. Keep every panel boundary, character face/expression/pose/hand/clothing, tool, plant condition, bowl, food, architecture and color unchanged except the small areas needed for bigger balloons. Do not cover faces, hands or important evidence. Preserve any existing sound effects unchanged. No added people, words or repeated dialogue. Strong clean printed manga gothic, easy to read on a phone.
-EXACT DIALOGUE IN ORDER: 係員「帰還の門は、今は閉じてる。」 / コウ「帰る方法は、あるんですね？」 / 係員「調査待ちだ。まずは寝床だ。」
+Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
+TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, match Reference 3: actual glyph height about 75–85px per 1024px image width (roughly 26–30px at phone width). Text must visibly be this large, not nominal font metadata. Short dialogue uses large balloons with only two or three vertical columns, not tiny dense columns. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
 
-```
+EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。
 
-## 実際の追加生成：03-diner-lettered
+CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou. Do NOT depict these absent reference characters anywhere, including background: Elna, Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
 
-```text
-Use case: precise-object-edit. The Japanese dialogue in this existing finished vertical comic is TOO SMALL at a 360px phone width. Edit ONLY the dialogue lettering and the necessary white speech/thought balloon areas. Enlarge EVERY Japanese dialogue glyph to approximately 1.7 TIMES its current height and width; final glyph height around 7 percent of full canvas width, including any small-panel dialogue. Enlarge balloons and reflow vertical columns to fit, with generous white inset. Do NOT make letters small to keep the original balloon size. Preserve ALL exact wording, punctuation, speakers and balloon reading order. Upright vertical Japanese: top-to-bottom, columns RIGHT TO LEFT. Do not display speaker labels or quotation marks. Thought stays a cloud with dots; speech tails stay attached to the correct speaker. Keep every panel boundary, character face/expression/pose/hand/clothing, tool, plant condition, bowl, food, architecture and color unchanged except the small areas needed for bigger balloons. Do not cover faces, hands or important evidence. Preserve any existing sound effects unchanged. No added people, words or repeated dialogue. Strong clean printed manga gothic, easy to read on a phone.
-EXACT DIALOGUE IN ORDER: コウ「飯代なら、働きます。」 / エルナ「畑を、見られる？」
+SCENE: THREE unequal shots SAME stall. Upper medium older beige-robed clerk points toward distant unlit shut stone doorway beneath tower ribs, first introduces return gate. Middle small hopeful Kou face asks if returning is possible. Bottom wider clerk speaks gravely, Kou shoulders tense. No map, opening portal, return date, success guarantee, UI or magical source. Word gate has NOT been asked by Kou earlier. Kou RIGHT, clerk LEFT.
 
+EXACT TEXT IN READING ORDER:
+
+Speaker 係員 (spoken, tail to speaker). Exact full text: 帰還の門がある。
+Vertical columns from RIGHT to LEFT: 帰還の門がある / 。
+
+Speaker コウ (spoken, tail to speaker). Exact full text: 帰れるんですか？
+Vertical columns from RIGHT to LEFT: 帰れるんですか / ？
+
+Speaker 係員 (spoken, tail to speaker). Exact full text: 今は閉じてる。調査待ちだ。
+Vertical columns from RIGHT to LEFT: 今は閉じてる。 / 調査待ちだ。
+
+Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
+
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
 ```
 
 ## 実際の追加生成：04-wet-soil-lettered
@@ -787,6 +896,31 @@ Use case: precise-object-edit. Correct ONLY the central cast in this existing ve
 Use case: precise-object-edit. The Japanese dialogue in this existing finished vertical comic is TOO SMALL at a 360px phone width. Edit ONLY the dialogue lettering and the necessary white speech/thought balloon areas. Enlarge EVERY Japanese dialogue glyph to approximately 1.7 TIMES its current height and width; final glyph height around 7 percent of full canvas width, including any small-panel dialogue. Enlarge balloons and reflow vertical columns to fit, with generous white inset. Do NOT make letters small to keep the original balloon size. Preserve ALL exact wording, punctuation, speakers and balloon reading order. Upright vertical Japanese: top-to-bottom, columns RIGHT TO LEFT. Do not display speaker labels or quotation marks. Thought stays a cloud with dots; speech tails stay attached to the correct speaker. Keep every panel boundary, character face/expression/pose/hand/clothing, tool, plant condition, bowl, food, architecture and color unchanged except the small areas needed for bigger balloons. Do not cover faces, hands or important evidence. Preserve any existing sound effects unchanged. No added people, words or repeated dialogue. Strong clean printed manga gothic, easy to read on a phone.
 EXACT DIALOGUE IN ORDER: エルナ「今日は、ここで食べて。」 / コウ「まだ、畑は治ってない。」 / エルナ「でも、水は動いたよ。」
 
+```
+
+## 実際の追加生成：11-farmer-recognized
+
+```text
+Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
+TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, match Reference 3: actual glyph height about 75–85px per 1024px image width (roughly 26–30px at phone width). Text must visibly be this large, not nominal font metadata. Short dialogue uses large balloons with only two or three vertical columns, not tiny dense columns. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
+
+EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。
+
+CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou, Elna. Do NOT depict these absent reference characters anywhere, including background: Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
+
+SCENE: TWO unequal conversation panels beside the same blue-awning diner, no location change. Upper medium Elna studies Kou's muddy apron and trowel with cautious interest, lower larger closeup of Kou answering, not smug. Elna on his LEFT, Kou on RIGHT, correct adult faces and clothes. No garden diagnosis or future reply. Ordinary affordable cookware.
+
+EXACT TEXT IN READING ORDER:
+
+Speaker エルナ (spoken, tail to speaker). Exact full text: その服、農家なの？
+Vertical columns from RIGHT to LEFT: その服、農家な / の？
+
+Speaker コウ (spoken, tail to speaker). Exact full text: 七年、野菜を作ってました。
+Vertical columns from RIGHT to LEFT: 七年、野菜を作 / ってました。
+
+Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
+REFERENCE ROLES: ref 1 character identity only; ref 2 tower materials only; ref 3 lettering size only.
+FINAL COMPOSITION REQUIREMENT: A finished story passage, not an illustration poster. Use the explicitly specified number and order of shots. Stagger small closeups to the RIGHT then LEFT with ivory surrounding space; asymmetrical hand and face cutaways. Close camera on the physical source of each sound. Vertical spoken glyphs should be 90–100px per 1024px of canvas width so they are legible even in an 82% wide phone panel. Render only specified Japanese, precisely, including punctuation; NO narrator caption, English, or extra labels. Only Kou and/or Elna as required, no Balt, Iris or Leon. Keep sequential action clear downward. Aim native canvas 768px wide, at least1536px high; prioritize typography and composition.
 ```
 
 ## 実際の追加生成：12-garden-walk-mixed
@@ -858,4 +992,116 @@ No dialogue or thought balloons. Render the specified sound effects only; a scen
 REFERENCE ROLES: ref 1 character identity only; ref 2 tower materials only; ref 3 lettering size only. Ref 4 locks the existing wilted crop, cover or purchased meal named in this scene; do not copy its panel arrangement or render its dialogue.
 FINAL COMPOSITION REQUIREMENT: A finished story passage, not an illustration poster. Use the explicitly specified number and order of shots. Stagger small closeups to the RIGHT then LEFT with ivory surrounding space; asymmetrical hand and face cutaways. Close camera on the physical source of each sound. Vertical spoken glyphs should be 90–100px per 1024px of canvas width so they are legible even in an 82% wide phone panel. Render only specified Japanese, precisely, including punctuation; NO narrator caption, English, or extra labels. Only Kou and/or Elna as required, no Balt, Iris or Leon. Keep sequential action clear downward. Aim native canvas 768px wide, at least1536px high; prioritize typography and composition.
 ASPECT OVERRIDE: approximately 1:3 very tall portrait. ONE continuous, borderless downward passage with the visual path changing along its height. No grid or 3 equal horizontal panels. The steam or water leads the reader downward across a long distance.
+```
+
+## 実際の追加生成：34-where-am-i
+
+```text
+Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
+TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, match Reference 3: actual glyph height about 75–85px per 1024px image width (roughly 26–30px at phone width). Text must visibly be this large, not nominal font metadata. Short dialogue uses large balloons with only two or three vertical columns, not tiny dense columns. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
+
+EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。
+
+CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou. Do NOT depict these absent reference characters anywhere, including background: Elna, Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
+
+SCENE: THREE staggered unequal shots at SAME stall. Upper medium beige-robed clerk calmly tells location. Middle larger SILENT view from behind Kou looking up at sandstone ribs and luminous CLOSED ceiling, NO open sky. Bottom LARGE close Kou widened eyes and tense mouth, repeating the location as a short question. Two utterances, silent middle. No gate, no food. Kou RIGHT, clerk LEFT.
+
+EXACT TEXT IN READING ORDER:
+
+Speaker 係員 (spoken, tail to speaker). Exact full text: ここは、塔の三階だ。
+Vertical columns from RIGHT to LEFT: ここは、塔の三 / 階だ。
+
+Speaker コウ (spoken, tail to speaker). Exact full text: ……塔の、中？
+Vertical columns from RIGHT to LEFT: ……塔の、中？
+
+Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
+
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
+```
+
+## 実際の追加生成：35-others-arrived
+
+```text
+Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
+TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, match Reference 3: actual glyph height about 75–85px per 1024px image width (roughly 26–30px at phone width). Text must visibly be this large, not nominal font metadata. Short dialogue uses large balloons with only two or three vertical columns, not tiny dense columns. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
+
+EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。
+
+CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou. Do NOT depict these absent reference characters anywhere, including background: Elna, Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
+
+SCENE: THREE UNEQUAL conversation shots at SAME stall. Upper Kou closeup says he was at farm; do NOT draw Earth memory. Middle shallow close his dirt-marked hand on apron as he describes flash, speaker mouth offscreen above, tail toward that mouth, not hand. Bottom larger older gray-haired beige-robed clerk recognizes pattern calmly. No magical cause, system UI, portal, lore, promise or new traveler. Kou RIGHT, clerk LEFT.
+
+EXACT TEXT IN READING ORDER:
+
+Speaker コウ (spoken, tail to speaker). Exact full text: さっきまで、畑にいたんです。
+Vertical columns from RIGHT to LEFT: さっきまで、畑 / にいたんです。
+
+Speaker コウ (spoken, tail to speaker). Exact full text: 光ったと思ったら、ここに。
+Vertical columns from RIGHT to LEFT: 光ったと思った / ら、ここに。
+
+Speaker 係員 (spoken, tail to speaker). Exact full text: 君も、外から来たんだな。
+Vertical columns from RIGHT to LEFT: 君も、外から来 / たんだな。
+
+Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
+
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
+```
+
+## 実際の追加生成：36-return-question
+
+```text
+Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
+TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, match Reference 3: actual glyph height about 75–85px per 1024px image width (roughly 26–30px at phone width). Text must visibly be this large, not nominal font metadata. Short dialogue uses large balloons with only two or three vertical columns, not tiny dense columns. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
+
+EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。
+
+CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou. Do NOT depict these absent reference characters anywhere, including background: Elna, Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
+
+SCENE: THREE unequal shots SAME stall. Top close Kou reacts to word 'also' and asks whether others exist. Middle medium gray-haired beige-robed clerk answers. Lower LARGE vulnerable Kou face and rough hand against chest, quietly wants to go home. Not confident or demanding. No portal, new travelers, promise, future answer, food. Separate downward moments, ivory space. Kou RIGHT, clerk LEFT.
+
+EXACT TEXT IN READING ORDER:
+
+Speaker コウ (spoken, tail to speaker). Exact full text: 同じような人が、いるんですか？
+Vertical columns from RIGHT to LEFT: 同じような人が / 、いるんですか / ？
+
+Speaker 係員 (spoken, tail to speaker). Exact full text: 何人か、ここで暮らしてる。
+Vertical columns from RIGHT to LEFT: 何人か、ここで / 暮らしてる。
+
+Speaker コウ (spoken, tail to speaker). Exact full text: 元の場所に、帰りたいんです。
+Vertical columns from RIGHT to LEFT: 元の場所に、帰 / りたいんです。
+
+Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
+
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
+```
+
+## 実際の追加生成：37-shelter-and-directions
+
+```text
+Use case: illustration-story. Asset: finished full-color Japanese vertical-scroll Webtoon scene, including all exact dialogue and speech balloons. Create a tall portrait image, approximately 1:2 aspect ratio, suitable for full-width phone reading. Refined adult anime drawing, confident ink lines, natural proportions, warm earthy painted shading, appetizing food and precise practical tools. Pale warm ivory gutters. Do NOT draw a poster, a character lineup, a comic cover, or a uniform grid. Different panel sizes, wide situation views, narrow hand closeups and larger emotional panels as specified. Reference 1 defines only character identities and clothing; Reference 2 defines garden/diner architecture, materials and palette. Reference 3 is TYPOGRAPHY ONLY: match its large crisp vertical Japanese glyphs and generous balloon padding, never copy its scene, characters or panel arrangement. Do NOT copy reference layouts or draw every person in reference. Draw only people required by this scene. Kou is black-haired adult male farmer, brown jacket and dark green waist apron; Elna is red-brown-haired adult female cook, low ponytail, blue headscarf, cream blouse, brick-red skirt and off-white cooking apron; Balt is weathered older male farmer, gray hair, brown hat, olive work shirt; Iris is adult female technician, short navy hair, copper goggles on head, gray workwear; Leon is adult male supply officer, silver-gray hair, right eyebrow scar, navy cloak. Preserve practical clothing and distinct faces. No modern electronics, plastic irrigation tape, giant magic vegetables, gore, watermarks, invented labels or future events.
+TEXT: Render ONLY the exact Japanese text specified below, integrated into the art. All spoken dialogue uses genuine vertical Japanese manga typesetting: upright glyphs top to bottom, columns read RIGHT TO LEFT, never rotate a horizontal sentence. Large clean black printed manga gothic, match Reference 3: actual glyph height about 75–85px per 1024px image width (roughly 26–30px at phone width). Text must visibly be this large, not nominal font metadata. Short dialogue uses large balloons with only two or three vertical columns, not tiny dense columns. Enlarge balloon and adjust composition rather than shrinking text. Generous white inner padding. Normal voice: thin clean oval or softly rounded rectangular balloon with tail toward the correct speaker's mouth. Gentle voice: soft slightly irregular outline and thin tail. Thought: cloud with small dots toward thinker, no speech tail. Distinct sequential shots, not duplicate simultaneous characters. Balloon order follows the stated dialogue order DOWNWARD, with right-to-left ordering only within one horizontal panel row. Faces, hands and clues stay visible. Do not display speaker names, column labels, quotation marks, extra explanations or repeated dialogue. Effect sounds alone can be shaped freely beside their physical source. Any plain notebook, diagram, menu or contract in scene has abstract marks only unless explicit text is provided. The garden is inside a tower with glowing ceiling ribs, NOT under an open sky. Plant size, damaged sections, tools and dishes must match the stated time and condition.
+
+EPISODE TIME AND STATE: 召喚当日・昼から夕方. 三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。
+
+CAST LOCK: The ONLY main-reference characters allowed in this image are: Kou. Do NOT depict these absent reference characters anywhere, including background: Elna, Balt, Iris, Leon. Other people appear only if this scene explicitly describes an ordinary clerk, customer, trader or squad. Never add a supporting cast group because it appears in the identity reference.
+
+SCENE: FOUR VARIED quiet beats SAME stall BEFORE Kou leaves. Top medium Kou asks when gate opens. Next small close older beige-robed clerk says he does not know. Next larger medium clerk gestures to plain bench inside his service stall as modest overnight rest room; not inn, no luxury or money. Bottom close Kou quietly thanks him, shoulders ease slightly. No food, job, gate schedule or extra staff. Tall 1:3 canvas, four beats downwards, no uniform grid.
+
+EXACT TEXT IN READING ORDER:
+
+Speaker コウ (spoken, tail to speaker). Exact full text: いつ、開くんですか？
+Vertical columns from RIGHT to LEFT: いつ、開くんで / すか？
+
+Speaker 係員 (spoken, tail to speaker). Exact full text: まだ、分からない。
+Vertical columns from RIGHT to LEFT: まだ、分からな / い。
+
+Speaker 係員 (spoken, tail to speaker). Exact full text: 今夜は、ここの休憩室でいい。
+Vertical columns from RIGHT to LEFT: 今夜は、ここの / 休憩室でいい。
+
+Speaker コウ (spoken, tail to speaker). Exact full text: ……ありがとうございます。
+Vertical columns from RIGHT to LEFT: ……ありがとう / ございます。
+
+Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.
+
+FINAL DENSITY: Exactly the described unequal shots, focus closeups. Not every shot needs all people or full background. Downward shot order, no same-row dialogue ambiguity. Japanese glyphs at least 75px per 1024px canvas width, never shrink text to fit. Four spoken beats: 1:3 canvas. Three beats: 1:2.5. Two utterances with silent middle: 1:2.5. Leave quiet reaction gutters within image. No unlisted text or plot. Kou is bewildered, ordinary questions, no invented prior knowledge. References define identity, architecture, lettering ONLY; never their plot or text.
 ```

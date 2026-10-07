@@ -60,7 +60,7 @@
       ],
       "layout": "varied",
       "pauseAt390": 100,
-      "canvasWidthPercent": 90,
+      "canvasWidthPercent": 100,
       "alignment": "left",
       "scrollPurpose": "靴、剣、通行人を見て異世界だと理解する。",
       "soundEffects": [
@@ -80,22 +80,26 @@
     },
     {
       "slug": "ask-way",
-      "description": "TWO staggered conversation beats in the same tower street: upper close face of hesitant Kou looking toward a wooden administrative stall; lower larger medium Kou respectfully speaking to an ordinary older gray-haired beige-robed clerk sitting behind the desk. The clerk is the same ordinary official used in the following gate exchange, not a main-reference supporting hero. No gate answer or map yet.",
+      "description": "THREE unequal shots at same wooden administrative stall. Establish Kou standing RIGHT and older gray-haired, small gray-bearded clerk in plain beige robe LEFT behind desk. Top two-shot Kou asks where he is. Middle close ONLY gentle clerk asks about injury. Bottom larger close ONLY Kou checks dirty but uninjured hand, answers hesitantly. No gate, maps, future answers. Clerk not Balt or Leon, no hat or weapons.",
       "dialogue": [
         [
-          "コウ・心",
-          "言葉は、通じるのか。"
+          "コウ",
+          "すみません。ここは、どこですか？"
+        ],
+        [
+          "係員",
+          "落ち着いて。けがは？"
         ],
         [
           "コウ",
-          "すみません。帰る門は……。"
+          "大丈夫、だと思います。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 60,
-      "canvasWidthPercent": 86,
-      "alignment": "right",
-      "scrollPurpose": "尋ねる勇気を出して、受付の会話へつなぐ。",
+      "pauseAt390": 120,
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "場所を尋ねる普通の問いから始め、係員の気遣いで会話を成立させる。",
       "soundEffects": [],
       "plannedPanelCount": 2,
       "referenceGroup": "tower"
@@ -109,34 +113,40 @@
       "canvasWidthPercent": 100,
       "alignment": "center",
       "scrollPurpose": "帰れない事実を受け止める無音の間。",
-      "soundEffects": [],
+      "soundEffects": [
+        {
+          "text": "グッ",
+          "source": "Kou tightens his fist",
+          "placement": "small beside the clenched hand"
+        }
+      ],
       "plannedPanelCount": 2,
       "referenceGroup": "tower"
     },
     {
       "slug": "hungry-walk",
-      "description": "THREE quick, staggered small closeups down a pale ivory ground: Kou checks a worn leather coin pouch that is empty, takes a step on the stone lane, then presses his empty stomach under cream shirt and green apron. No spoken words, no coins or modern money. Not three equal rectangles. End with his hand at stomach; no diner or Elna visible yet.",
-      "dialogue": [],
-      "layout": "detail",
-      "pauseAt390": 160,
-      "canvasWidthPercent": 82,
-      "alignment": "left",
-      "scrollPurpose": "空の財布と腹の音で、働いて食べる必要を伝える。",
+      "description": "THREE unequal successive CLOSEUPS after Kou leaves stall and sees shut gate. Top his hand opens EXISTING rectangular brown LEATHER TOOL SATCHEL at belt, sees worn trowel handle, small notebook and string; not coin purse. Middle boot steps on tower paving. Bottom larger hand on stomach under cream shirt and green apron. Single thought belongs to TOP tool shot. NO wallet, coin purse, money, phone, meal or Elna. Ivory space around asymmetrical hand and boot panels.",
+      "dialogue": [
+        [
+          "コウ・心",
+          "道具しか、ない。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 180,
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "持っているのは作業道具だけだと確かめ、食事代を持たない事情を伝える。",
       "soundEffects": [
         {
-          "text": "キュッ",
-          "source": "leather purse squeezed",
-          "placement": "tiny crisp letters by leather fold"
-        },
-        {
           "text": "コツ",
-          "source": "Kou boot meets paving",
-          "placement": "short dark lettering near heel"
+          "source": "Kou boot on paving",
+          "placement": "small letters by sole"
         },
         {
           "text": "ぐう……",
-          "source": "Kou stomach rumble",
-          "placement": "soft wavy letters beside stomach, no balloon"
+          "source": "Kou stomach",
+          "placement": "soft letters near stomach, no balloon"
         }
       ],
       "plannedPanelCount": 3,
@@ -163,7 +173,7 @@
     },
     {
       "slug": "farmer-recognized",
-      "description": "TWO unequal conversation panels beside the same blue-awning diner, no location change. Upper medium Elna studies Kou's muddy apron and trowel with cautious interest, lower larger closeup of Kou answering, not smug. Elna on his LEFT, Kou on RIGHT, correct adult faces and clothes. No garden diagnosis or future reply. Ordinary affordable cookware.",
+      "description": "Two unequal recognition shots at same diner window. Kou remains seated outside on RIGHT with the brown water cup; Elna stands inside on LEFT. Upper medium Elna notices his work clothes and tool satchel, asks about farming. Lower larger seated Kou answers. No dirty tool held or placed on food counter, no location change, no diagnosis or work agreement yet.",
       "dialogue": [
         [
           "エルナ",
@@ -176,7 +186,7 @@
       ],
       "layout": "conversation",
       "pauseAt390": 90,
-      "canvasWidthPercent": 90,
+      "canvasWidthPercent": 100,
       "alignment": "right",
       "scrollPurpose": "料理人が、農夫へ畑の相談をする理由を作る。",
       "soundEffects": [],
@@ -217,7 +227,7 @@
       ],
       "layout": "detail",
       "pauseAt390": 80,
-      "canvasWidthPercent": 90,
+      "canvasWidthPercent": 100,
       "alignment": "left",
       "scrollPurpose": "表面の乾きと根域の湿りを別々に見る。",
       "soundEffects": [
@@ -245,7 +255,7 @@
       ],
       "layout": "conversation",
       "pauseAt390": 60,
-      "canvasWidthPercent": 86,
+      "canvasWidthPercent": 100,
       "alignment": "right",
       "scrollPurpose": "触る前に一株の確認を求め、根を見る行動へつなぐ。",
       "soundEffects": [],
@@ -263,7 +273,7 @@
       ],
       "layout": "detail",
       "pauseAt390": 180,
-      "canvasWidthPercent": 90,
+      "canvasWidthPercent": 100,
       "alignment": "left",
       "scrollPurpose": "根の傷みを見て、水の出口を調べる判断へ進む。",
       "soundEffects": [
@@ -291,7 +301,7 @@
       ],
       "layout": "conversation",
       "pauseAt390": 260,
-      "canvasWidthPercent": 92,
+      "canvasWidthPercent": 100,
       "alignment": "right",
       "scrollPurpose": "世話をしたのに悪化した気持ちを受け止める。",
       "soundEffects": [],
@@ -352,7 +362,7 @@
       ],
       "layout": "detail",
       "pauseAt390": 80,
-      "canvasWidthPercent": 90,
+      "canvasWidthPercent": 100,
       "alignment": "left",
       "scrollPurpose": "何が水を止めるか、詰まりの場所を接写で示す。",
       "soundEffects": [],
@@ -388,15 +398,10 @@
       ],
       "layout": "detail",
       "pauseAt390": 40,
-      "canvasWidthPercent": 96,
+      "canvasWidthPercent": 100,
       "alignment": "left",
       "scrollPurpose": "掃除を一動作で済ませず、道具と泥の抵抗を描く。",
       "soundEffects": [
-        {
-          "text": "ザッ",
-          "source": "trowel scrapes packed litter",
-          "placement": "rough small brown letters by blade"
-        },
         {
           "text": "べちゃ",
           "source": "wet leaves land in dirty utility bucket",
@@ -408,10 +413,10 @@
     },
     {
       "slug": "water-tremor",
-      "description": "ONE unusually spare closeup in a tall ivory field: a small trapped air bubble and surface tremor appear at the still-partly-blocked outlet near the TOP; the lower half is quiet empty ivory with only the damp stone edge continuing downward. No visible gushing water, no relieved faces or finished repair. Hands are poised but action result is held back. This is anticipation of the next water release.",
+      "description": "One spare macro closeup of a tiny air bubble at the open still-partly-blocked stone outlet near the upper fifth, no people and no lid across the channel. ゴ…… lies beside the bubble. Fade to quiet pale ivory below the upper third; no released stream yet.",
       "dialogue": [],
       "layout": "continuous",
-      "pauseAt390": 950,
+      "pauseAt390": 400,
       "canvasWidthPercent": 86,
       "alignment": "right",
       "scrollPurpose": "小さな予兆の音から、水が動く結果まで待たせる。",
@@ -427,7 +432,7 @@
     },
     {
       "slug": "water-descent",
-      "description": "ONE borderless very tall approximately 1:3 water-path composition, no rectangular panel grid. The cleared accessible outlet at the upper-right sends real water into the stone channel. The reader follows a narrow current downward across the canvas to the common receiver at bottom-left. Show wet leaves removed into utility bucket at top edge, not floating downstream. The water level in garden edge begins receding but plants stay yellow-green and wilted. No magic, no one casting water, no new irrigation tower.",
+      "description": "One uninterrupted borderless tall water path, with no people or panel frames. Water leaves the cleared stone outlet, curves downward through the shallow stone channel and joins the common drain. Removed leaves are in a dirty utility bucket at top, wooden cover rests upright outside. Wilted yellow-green plants remain wilted. Large ざああっ follows the current in upper third. No magic.",
       "dialogue": [],
       "layout": "continuous",
       "pauseAt390": 300,
@@ -459,7 +464,7 @@
       ],
       "layout": "conversation",
       "pauseAt390": 300,
-      "canvasWidthPercent": 90,
+      "canvasWidthPercent": 100,
       "alignment": "left",
       "scrollPurpose": "水が動いた喜びと、作物を待つ時間を分ける。",
       "soundEffects": [],
@@ -552,13 +557,21 @@
     "light-snap",
     "arrival",
     "strange-street",
+    "ground-and-breath",
     "ask-way",
+    "where-am-i",
+    "others-arrived",
+    "return-question",
     "gate",
+    "shelter-and-directions",
     "closed-gate",
     "hungry-walk",
     "steam-trail",
     "diner",
+    "water-and-thanks",
+    "cannot-pay",
     "farmer-recognized",
+    "work-offer",
     "garden-walk",
     "wet-soil",
     "surface-and-depth",
@@ -705,30 +718,33 @@
     "会話場面は原画の文字を優先して全幅へ広げ、無言の手元・動作場面で左右の幅を変える。"
   ],
   "adoptedTargetPhoneScreenRange": [
-    36,
-    39
+    46,
+    48
   ],
   "result": {
-    "selectedScenes": 32,
-    "newNativeArtworks": 24,
-    "recordedSounds": 25,
+    "selectedScenes": 40,
+    "newNativeArtworks": 13,
+    "generatedArtworks": 18,
+    "recordedSounds": 24,
     "phoneViewports": [
       {
         "width": 390,
         "height": 844,
-        "scrollHeight": 32096,
-        "screens": 38.03,
+        "scrollHeight": 40241,
+        "screens": 47.68,
         "cueToRelease": 936.59
       },
       {
         "width": 360,
         "height": 800,
-        "scrollHeight": 29667,
-        "screens": 37.08,
+        "scrollHeight": 37186,
+        "screens": 46.48,
         "cueToRelease": 864.55
       }
     ],
     "review": "passed_manual_both_widths",
-    "physicalDevice": "not performed"
-  }
+    "physicalDevice": "not performed",
+    "readerPackaging": "reader.html and three companion native-byte JS payloads; original PNG bytes unchanged"
+  },
+  "latestCausalityPlan": "episode-01-causality.json"
 }

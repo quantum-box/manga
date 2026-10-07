@@ -1,6 +1,9 @@
 import base64
 from html.parser import HTMLParser
 import unittest
+from pathlib import Path
+import re
+import tempfile
 
 from compact_reader import CompactReader, decode, encode
 
@@ -45,5 +48,25 @@ class CompactTransportTests(unittest.TestCase):
         parsed = PayloadReader();parsed.feed(output)
         self.assertEqual(decode(parsed.payload,parsed.length),raw)
         self.assertIn('window.webtoonReady=',output)
+
+    def test_companion_payload_boundaries_and_byte_equality(self):
+        originals=[bytes(range(256))*n+b'</script>\r\n\x00"&\\' for n in (2,3,4)]
+        source='<html><head><title>水の出口</title></head><body>'+''.join('<img alt="水" src="data:image/png;base64,'+base64.b64encode(raw).decode()+'">' for raw in originals)+'</body></html>'
+        reader=CompactReader();reader.feed(source);reader.close()
+        with tempfile.TemporaryDirectory() as directory:
+            output,names=reader.external_payloads(Path(directory)/'reader.html',limit_bytes=1500)
+            self.assertEqual(len(names),3)
+            restored=[]
+            for name in names:
+                path=Path(directory)/name
+                self.assertLess(path.stat().st_size,1500)
+                self.assertIn('<script src="'+name+'"></script>',output)
+                length=int(re.search(r'length:(\d+)',path.read_text()).group(1))
+                payload=re.search(r'data:"([^"]*)"',path.read_text()).group(1)
+                restored.append(decode(payload,length))
+            self.assertEqual(restored,originals)
+            self.assertIn('<title>水の出口</title>',output)
+            self.assertIn('window.webtoonReady=',output)
+            self.assertNotIn('application/x-webtoon-native-png" id=',output)
 
 if __name__ == '__main__':unittest.main()

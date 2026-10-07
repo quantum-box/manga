@@ -1,0 +1,24 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-bf2ad92b-0a6d-4340-8b74-2ee3dc6743e8.png",
+  "adopted": "art/35-others-arrived-clerk.png",
+  "original_sha256": "590852c135841dbb1d81ce62cc20a2c527034b23649ed593defea96047756c0b",
+  "adopted_sha256": "590852c135841dbb1d81ce62cc20a2c527034b23649ed593defea96047756c0b",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/35-others-arrived-clerk.prompt.txt",
+  "prompt": "Use case: identity-preserve. Asset: existing finished Japanese Webtoon artwork. IMAGE 1 IS THE EDIT TARGET. IMAGE 2 DEFINES THE SAME CLERK'S IDENTITY and robe. Change ONLY the depicted administrative clerk in image 1 to the SAME sixty-year-old gray-haired man with small gray beard, gentle lined face, pale beige robe and DARK BLUE embroidered stole visible in image 2. Correct age and facial identity; preserve his exact pose, hands, frame position and existing action in every shot. Keep Kou, building, panel arrangement, framing, food absence and ALL Japanese glyphs and speech balloon tails unchanged. Do NOT copy any panels or text from image 2. Original target text, preserve precisely: [[\"コウ\",\"さっきまで、畑にいたんです。\"],[\"コウ\",\"光ったと思ったら、ここに。\"],[\"係員\",\"君も、外から来たんだな。\"]] . Do not add text, props, people or another plot beat. Match confident anime linework and warm tower palette. This is one clerk throughout a continuous conversation.",
+  "text_review": "passed_manual_390_and_360",
+  "continuity_review": "passed_manual_390_and_360",
+  "reference_files": [
+    {
+      "path": "generation/inputs/35-others-arrived.png",
+      "sha256": "3c04d429f14eeb28ff43a362c480fe987e22846efb0783f9fdcdd3ecb05d57d7"
+    },
+    {
+      "path": "art/05-ask-way-context.png",
+      "sha256": "f35edbbd577a4c75d42e12050c1e58cb3cc4a47aa1eda9130f69b0798596ac45"
+    }
+  ],
+  "selected_in_revision": "episode-01-causality"
+}

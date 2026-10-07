@@ -1,0 +1,24 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-2040eb31-10f9-47fd-b72d-ea063d1cf152.png",
+  "adopted": "art/02-gate-context-clerk.png",
+  "original_sha256": "e15dc3f22dd2b045bab72c2a6153bf069800145d9db9ae3c6954ebf63446c748",
+  "adopted_sha256": "e15dc3f22dd2b045bab72c2a6153bf069800145d9db9ae3c6954ebf63446c748",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/02-gate-context-clerk.prompt.txt",
+  "prompt": "Use case: identity-preserve. Asset: existing finished Japanese Webtoon artwork. IMAGE 1 IS THE EDIT TARGET. IMAGE 2 DEFINES THE SAME CLERK'S IDENTITY and robe. Change ONLY the depicted administrative clerk in image 1 to the SAME sixty-year-old gray-haired man with small gray beard, gentle lined face, pale beige robe and DARK BLUE embroidered stole visible in image 2. Correct age and facial identity; preserve his exact pose, hands, frame position and existing action in every shot. Keep Kou, building, panel arrangement, framing, food absence and ALL Japanese glyphs and speech balloon tails unchanged. Do NOT copy any panels or text from image 2. Original target text, preserve precisely: [[\"係員\",\"帰還の門がある。\"],[\"コウ\",\"帰れるんですか？\"],[\"係員\",\"今は閉じてる。調査待ちだ。\"]] . Do not add text, props, people or another plot beat. Match confident anime linework and warm tower palette. This is one clerk throughout a continuous conversation.",
+  "text_review": "passed_manual_390_and_360",
+  "continuity_review": "passed_manual_390_and_360",
+  "reference_files": [
+    {
+      "path": "generation/inputs/02-gate-context.png",
+      "sha256": "aa7b052926d84d42a8afd2388fe45be1388b084a64c7c63d79aa3bb5c158b0d6"
+    },
+    {
+      "path": "art/05-ask-way-context.png",
+      "sha256": "f35edbbd577a4c75d42e12050c1e58cb3cc4a47aa1eda9130f69b0798596ac45"
+    }
+  ],
+  "selected_in_revision": "episode-01-causality"
+}

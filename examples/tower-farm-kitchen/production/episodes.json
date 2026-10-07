@@ -3,8 +3,8 @@
     "number": 1,
     "title": "水の出口",
     "time": "召喚当日・昼から夕方",
-    "change": "孤立したコウが、食堂で最初の仕事と食事を得る。排水の詰まりを直すが、作物の回復はまだ確認できない。",
-    "state": "三階へ召喚。帰還門は調査中。エルナの区画で修理許可を得る。枯れた株は回復しない。",
+    "change": "転移に戸惑うコウが係員から場所と帰還門を聞き、今夜の寝床を得る。食堂では水を頼み、農業経験を知ったエルナから一食と引き換えに畑を見る依頼を受ける。排水の詰まりを直すが、作物の回復はまだ確認できない。",
+    "state": "係員から塔の三階と他の来訪者、閉じた帰還門を知る。再開時期は不明。今夜は受付の休憩室。畑の点検に一食という合意と、区画の修理許可を得る。枯れた株は回復しない。",
     "scenes": [
       [
         "earth-work",
@@ -101,48 +101,173 @@
         }
       ],
       [
+        "ground-and-breath",
+        "THREE unequal silent close shots of Kou in SAME tower lane. Top small: boot plants on paving and hand braces on sandstone wall. Middle narrow: fingers feel real dirt on his green apron. Bottom LARGE: Kou takes shaky breath, worried eyes search toward wooden administrative stall. Physical grounding after seeing sword, before asking for help. No other person, no gate, no money pouch, no dialogue or SFX.",
+        [],
+        "detail",
+        210,
+        {
+          "canvasWidthPercent": 88,
+          "alignment": "left",
+          "scrollPurpose": "石壁と自分の手を確かめ、落ち着かないまま人へ助けを求める。",
+          "soundEffects": []
+        }
+      ],
+      [
         "ask-way",
-        "TWO staggered conversation beats in the same tower street: upper close face of hesitant Kou looking toward a wooden administrative stall; lower larger medium Kou respectfully speaking to an ordinary older gray-haired beige-robed clerk sitting behind the desk. The clerk is the same ordinary official used in the following gate exchange, not a main-reference supporting hero. No gate answer or map yet.",
+        "THREE unequal shots at same wooden administrative stall. Establish Kou standing RIGHT and older gray-haired, small gray-bearded clerk in plain beige robe LEFT behind desk. Top two-shot Kou asks where he is. Middle close ONLY gentle clerk asks about injury. Bottom larger close ONLY Kou checks dirty but uninjured hand, answers hesitantly. No gate, maps, future answers. Clerk not Balt or Leon, no hat or weapons.",
         [
           [
-            "コウ・心",
-            "言葉は、通じるのか。"
+            "コウ",
+            "すみません。ここは、どこですか？"
+          ],
+          [
+            "係員",
+            "落ち着いて。けがは？"
           ],
           [
             "コウ",
-            "すみません。帰る門は……。"
+            "大丈夫、だと思います。"
           ]
         ],
         "conversation",
-        60,
+        120,
         {
           "canvasWidthPercent": 100,
-          "alignment": "right",
-          "scrollPurpose": "尋ねる勇気を出して、受付の会話へつなぐ。",
-          "soundEffects": [],
-          "plannedPanelCount": 2,
-          "referenceGroup": "tower"
+          "alignment": "center",
+          "scrollPurpose": "場所を尋ねる普通の問いから始め、係員の気遣いで会話を成立させる。",
+          "soundEffects": []
+        }
+      ],
+      [
+        "where-am-i",
+        "THREE staggered unequal shots at SAME stall. Upper medium beige-robed clerk calmly tells location. Middle larger SILENT view from behind Kou looking up at sandstone ribs and luminous CLOSED ceiling, NO open sky. Bottom LARGE close Kou widened eyes and tense mouth, repeating the location as a short question. Two utterances, silent middle. No gate, no food. Kou RIGHT, clerk LEFT.",
+        [
+          [
+            "係員",
+            "ここは、塔の三階だ。"
+          ],
+          [
+            "コウ",
+            "……塔の、中？"
+          ]
+        ],
+        "conversation",
+        240,
+        {
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "scrollPurpose": "係員の説明を聞き、天井を見上げて理解が追いつかない反応を置く。",
+          "soundEffects": []
+        }
+      ],
+      [
+        "others-arrived",
+        "THREE UNEQUAL conversation shots at SAME stall. Upper Kou closeup says he was at farm; do NOT draw Earth memory. Middle shallow close his dirt-marked hand on apron as he describes flash, speaker mouth offscreen above, tail toward that mouth, not hand. Bottom larger older gray-haired beige-robed clerk recognizes pattern calmly. No magical cause, system UI, portal, lore, promise or new traveler. Kou RIGHT, clerk LEFT.",
+        [
+          [
+            "コウ",
+            "さっきまで、畑にいたんです。"
+          ],
+          [
+            "コウ",
+            "光ったと思ったら、ここに。"
+          ],
+          [
+            "係員",
+            "君も、外から来たんだな。"
+          ]
+        ],
+        "conversation",
+        150,
+        {
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "scrollPurpose": "本人の経験を話してから、係員が他にも来訪者がいると示唆する。",
+          "soundEffects": []
+        }
+      ],
+      [
+        "return-question",
+        "THREE unequal shots SAME stall. Top close Kou reacts to word 'also' and asks whether others exist. Middle medium gray-haired beige-robed clerk answers. Lower LARGE vulnerable Kou face and rough hand against chest, quietly wants to go home. Not confident or demanding. No portal, new travelers, promise, future answer, food. Separate downward moments, ivory space. Kou RIGHT, clerk LEFT.",
+        [
+          [
+            "コウ",
+            "同じような人が、いるんですか？"
+          ],
+          [
+            "係員",
+            "何人か、ここで暮らしてる。"
+          ],
+          [
+            "コウ",
+            "元の場所に、帰りたいんです。"
+          ]
+        ],
+        "conversation",
+        220,
+        {
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "scrollPurpose": "他の来訪者を知ってから、元の場所へ帰りたいという目的を本人が伝える。",
+          "soundEffects": []
         }
       ],
       [
         "gate",
-        "Three unequal panels: medium Kou facing a plain wooden administrative desk; closer offscreen clerk's hand indicating a closed stone gate diagram without lettering; closeup Kou absorbing the answer. Clerk is an ordinary older adult in beige robe, not Leon. Show patient exchange, hope and worry.",
+        "THREE unequal shots SAME stall. Upper medium older beige-robed clerk points toward distant unlit shut stone doorway beneath tower ribs, first introduces return gate. Middle small hopeful Kou face asks if returning is possible. Bottom wider clerk speaks gravely, Kou shoulders tense. No map, opening portal, return date, success guarantee, UI or magical source. Word gate has NOT been asked by Kou earlier. Kou RIGHT, clerk LEFT.",
         [
           [
             "係員",
-            "帰還の門は、今は閉じてる。"
+            "帰還の門がある。"
           ],
           [
             "コウ",
-            "帰る方法は、あるんですね？"
+            "帰れるんですか？"
           ],
           [
             "係員",
-            "調査待ちだ。まずは寝床だ。"
+            "今は閉じてる。調査待ちだ。"
           ]
         ],
         "conversation",
-        80
+        110,
+        {
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "scrollPurpose": "帰還門という言葉は係員が初めて出す。希望と、今は使えない事実を順に聞く。",
+          "soundEffects": []
+        }
+      ],
+      [
+        "shelter-and-directions",
+        "FOUR VARIED quiet beats SAME stall BEFORE Kou leaves. Top medium Kou asks when gate opens. Next small close older beige-robed clerk says he does not know. Next larger medium clerk gestures to plain bench inside his service stall as modest overnight rest room; not inn, no luxury or money. Bottom close Kou quietly thanks him, shoulders ease slightly. No food, job, gate schedule or extra staff. Tall 1:3 canvas, four beats downwards, no uniform grid.",
+        [
+          [
+            "コウ",
+            "いつ、開くんですか？"
+          ],
+          [
+            "係員",
+            "まだ、分からない。"
+          ],
+          [
+            "係員",
+            "今夜は、ここの休憩室でいい。"
+          ],
+          [
+            "コウ",
+            "……ありがとうございます。"
+          ]
+        ],
+        "conversation",
+        170,
+        {
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "scrollPurpose": "再開時期が不明だと受け止める時間と、今夜の居場所を先に確保する。",
+          "soundEffects": []
+        }
       ],
       [
         "closed-gate",
@@ -167,33 +292,31 @@
       ],
       [
         "hungry-walk",
-        "THREE quick, staggered small closeups down a pale ivory ground: Kou checks a worn leather coin pouch that is empty, takes a step on the stone lane, then presses his empty stomach under cream shirt and green apron. No spoken words, no coins or modern money. Not three equal rectangles. End with his hand at stomach; no diner or Elna visible yet.",
-        [],
-        "detail",
-        160,
+        "THREE unequal successive CLOSEUPS after Kou leaves stall and sees shut gate. Top his hand opens EXISTING rectangular brown LEATHER TOOL SATCHEL at belt, sees worn trowel handle, small notebook and string; not coin purse. Middle boot steps on tower paving. Bottom larger hand on stomach under cream shirt and green apron. Single thought belongs to TOP tool shot. NO wallet, coin purse, money, phone, meal or Elna. Ivory space around asymmetrical hand and boot panels.",
+        [
+          [
+            "コウ・心",
+            "道具しか、ない。"
+          ]
+        ],
+        "conversation",
+        180,
         {
-          "canvasWidthPercent": 82,
-          "alignment": "left",
-          "scrollPurpose": "空の財布と腹の音で、働いて食べる必要を伝える。",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "scrollPurpose": "持っているのは作業道具だけだと確かめ、食事代を持たない事情を伝える。",
           "soundEffects": [
             {
-              "text": "キュッ",
-              "source": "leather purse squeezed",
-              "placement": "tiny crisp letters by leather fold"
-            },
-            {
               "text": "コツ",
-              "source": "Kou boot meets paving",
-              "placement": "short dark lettering near heel"
+              "source": "Kou boot on paving",
+              "placement": "small letters by sole"
             },
             {
               "text": "ぐう……",
-              "source": "Kou stomach rumble",
-              "placement": "soft wavy letters beside stomach, no balloon"
+              "source": "Kou stomach",
+              "placement": "soft letters near stomach, no balloon"
             }
-          ],
-          "plannedPanelCount": 3,
-          "referenceGroup": "tower"
+          ]
         }
       ],
       [
@@ -219,33 +342,83 @@
       ],
       [
         "diner",
-        "Wide panel: Kou pauses outside diner blue awning, hungry, Elna at serving window to his left. Small inset of his hand on stomach. Lower medium panel of Elna turning toward vegetable plot. Keep paved lane left and beds right of diner.",
+        "THREE unequal shots at BLUE-AWNING diner EXTERIOR. Top medium hesitant Kou RIGHT outside serving window and Elna LEFT inside, he requests WATER ONLY. Middle close Elna notices strained face and gently offers seat. Bottom shallow SILENT shot Kou lowers himself onto OUTDOOR wooden bench at window. No food, work offer, names or extra menu text. Water cup NOT delivered yet. Original identity clothes, no farm tools on food counter. Unequal situation and focused closeups, not identical boxes.",
         [
           [
             "コウ",
-            "飯代なら、働きます。"
+            "すみません。水を、もらえますか。"
           ],
           [
             "エルナ",
-            "畑を、見られる？"
+            "大丈夫？　こっちに座って。"
           ]
         ],
-        "varied",
-        80,
+        "conversation",
+        130,
         {
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "scrollPurpose": "いきなり仕事を売り込まず、水を頼み、店側の声かけを受けて座る。",
+          "soundEffects": []
+        }
+      ],
+      [
+        "water-and-thanks",
+        "THREE quiet unequal close shots SAME diner window, Kou seated outside RIGHT, Elna standing inside LEFT. Upper shallow hands: Elna places ONE plain small brown ceramic WATER CUP on counter, clear clean water NOT stew. Her utterance from offscreen, tail UP LEFT toward mouth, not cup. Middle larger SILENT Kou holds SAME cup both hands, drinks slowly. Bottom Kou face with lowered cup gives thanks, shoulders start to release. Elna out of closeup frame, still inside. No food, job, harvest, terms or new cast.",
+        [
+          [
+            "エルナ",
+            "はい。ゆっくり飲んで。"
+          ],
+          [
+            "コウ",
+            "ありがとうございます。"
+          ]
+        ],
+        "conversation",
+        190,
+        {
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "scrollPurpose": "水を受け取り、飲んで落ち着く時間を、食事や仕事の話の前に置く。",
+          "soundEffects": []
+        }
+      ],
+      [
+        "cannot-pay",
+        "THREE unequal beats SAME window, Kou seated outside RIGHT with brown WATER CUP on counter, Elna inside LEFT. Top medium gentle Elna asks about food. Middle close embarrassed Kou acknowledges no money. Bottom larger close Kou shoulder and hand near cup politely declines to avoid imposing; Elna may be offscreen. SMALL stomach sound at lower torso, not comedy. No meal served, job promise, bill, magic money, handover or bargaining. Keep cup SAME size brown shape.",
+        [
+          [
+            "エルナ",
+            "何か、食べる？"
+          ],
+          [
+            "コウ",
+            "……今、お金がなくて。"
+          ],
+          [
+            "コウ",
+            "水だけで、大丈夫です。"
+          ]
+        ],
+        "conversation",
+        150,
+        {
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "scrollPurpose": "食事の誘いを受け、お金がないと正直に話して断ろうとする。",
           "soundEffects": [
             {
-              "text": "ぐぅ…",
-              "source": "Kou's empty stomach",
-              "placement": "small beside his stomach in the adopted original"
+              "text": "ぐう…",
+              "source": "Kou stomach under counter",
+              "placement": "small wavering letters beside torso, not dialogue"
             }
-          ],
-          "canvasWidthPercent": 100
+          ]
         }
       ],
       [
         "farmer-recognized",
-        "TWO unequal conversation panels beside the same blue-awning diner, no location change. Upper medium Elna studies Kou's muddy apron and trowel with cautious interest, lower larger closeup of Kou answering, not smug. Elna on his LEFT, Kou on RIGHT, correct adult faces and clothes. No garden diagnosis or future reply. Ordinary affordable cookware.",
+        "Two unequal recognition shots at same diner window. Kou remains seated outside on RIGHT with the brown water cup; Elna stands inside on LEFT. Upper medium Elna notices his work clothes and tool satchel, asks about farming. Lower larger seated Kou answers. No dirty tool held or placed on food counter, no location change, no diagnosis or work agreement yet.",
         [
           [
             "エルナ",
@@ -265,6 +438,32 @@
           "soundEffects": [],
           "plannedPanelCount": 2,
           "referenceGroup": "tower"
+        }
+      ],
+      [
+        "work-offer",
+        "THREE unequal beats AFTER Elna learns Kou is farmer with seven years experience. SAME diner exterior window. Upper medium Elna LEFT inside leans to point toward WILTED garden RIGHT of diner, worried request; Kou RIGHT outside still seated, looks where she points. Middle larger close sincere Elna face proposes one meal for LOOKING at plot, no cure guarantee. Bottom close tentatively hopeful Kou agrees politely, shoulder-turn prepares to stand, NOT already at roots. No finished drain, cured plants, meal, money, contract or UI. Farm tools remain at belt, no tools on counter. Large vertical glyphs, one utterance per downward shot.",
+        [
+          [
+            "エルナ",
+            "裏の畑、困ってるの。"
+          ],
+          [
+            "エルナ",
+            "見てくれたら、一食出すよ。"
+          ],
+          [
+            "コウ",
+            "僕でよければ、見せてください。"
+          ]
+        ],
+        "conversation",
+        170,
+        {
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "scrollPurpose": "農家だと分かった店主が対価つきの依頼を出し、コウが引き受けてから畑へ移動する。",
+          "soundEffects": []
         }
       ],
       [

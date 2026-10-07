@@ -32,6 +32,10 @@ const base=path.resolve(__dirname,'..');
     }
     const geometry=await page.evaluate(()=>[...document.querySelectorAll('figure.scene')].map(e=>{const r=e.getBoundingClientRect(),i=e.querySelector('img').getBoundingClientRect();return{id:e.id,top:r.top+scrollY,imageHeight:i.height,width:i.width,pause:parseFloat(getComputedStyle(e).marginBottom)};}));
     if(number===1){
+     for(const slug of ['ask-way','where-am-i','return-question','diner','water-and-thanks','cannot-pay','farmer-recognized','work-offer']){
+      const scene=geometry.find(s=>s.id.replace(/^\d+-/,'')===slug);
+      if(scene){await page.evaluate(y=>scrollTo(0,y),scene.top);await page.screenshot({path:path.join(review,`viewport-${width}-${slug}.png`)});}
+     }
      const cue=geometry.find(s=>s.id==='25-water-tremor'),release=geometry.find(s=>s.id==='07-flow');
      if(cue&&release){
       const cueBottom=cue.top+cue.imageHeight*.20,releaseTop=release.top;

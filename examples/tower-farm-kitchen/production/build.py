@@ -72,7 +72,7 @@ def prepare():
             prior_scene = previous_by_slug.get(ident, {})
             name = prior_scene.get('id', f'{index:02d}-{ident}')
             prompt = prompt_for(ep, scene)
-            prompt_path=directory/'generation'/f'{name}.prompt.txt'
+            prompt_path=directory/prior_scene.get('prompt',f'generation/{name}.prompt.txt')
             if name in adopted and prompt_path.exists():
                 prompt=prompt_path.read_text()
             else:
@@ -93,7 +93,7 @@ def prepare():
                     '効果音：'+' / '.join(f'{s["text"]}（{s["source"]}）' for s in options.get('soundEffects', [])), '']
             prompts += [f'## {name}', '', '```text', prompt, '```', '']
             manifest.append({**prior_scene,**options,'id':name,'art':adopted.get(name,f'art/{name}.png'),'dialogue':dialogue,'layout':layout,
-                'pauseAt390':pause,'prompt':f'generation/{name}.prompt.txt','description':desc})
+                'pauseAt390':pause,'prompt':str(prompt_path.relative_to(directory)),'description':desc})
         primary_prompts = {s['prompt'] for s in manifest}
         for record_file in sorted((directory/'generation').glob('*.json')):
             record = json.loads(record_file.read_text())

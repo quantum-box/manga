@@ -39,6 +39,10 @@ count = len(completed)
 delivery_path = BASE / 'production/delivery.json'
 delivery = json.loads(delivery_path.read_text()) if delivery_path.exists() else {}
 delivery_passed = count == 10 and delivery.get('localVerification') == 'passed'
+first=json.loads((BASE/'episode-01/manifest.json').read_text())
+first_review=json.loads((BASE/'episode-01/validation.json').read_text())
+screen_counts=[round(v['scrollHeight']/v['innerHeight']) for v in first_review['viewports']]
+sounds=sum(len(s.get('soundEffects',[])) for s in first['scenes'])
 (BASE / 'README.md').write_text(f'''# 塔の農夫は、英雄を食わせる
 
 [話一覧を開く](chapters.html)。200話以上の指定に対して、初期ロードマップは240話。第1〜10話の脚本・絵コンテを制作し、現在{count}話が作画とスマホ確認まで完了。
@@ -53,9 +57,9 @@ delivery_passed = count == 10 and delivery.get('localVerification') == 'passed'
 | [導入10話](series/opening-arc.md) / [連続性](series/continuity.md) | 約六週間の時間経過、開示、各話の終了状態 |
 | [制作台帳](production/status.md) | 完成・制作中・未確認の区別 |
 
-各話の`index.html`は編集可能なリーダー、`reader.html`は原画を内包した単独HTML。会話は原画内へ日本語の縦書きで統合し、HTMLで重ねて表示しない。原画・実際の生成指示・採用と修正の記録・両スマホ幅の全長画像・確認シートを各話へ保存する。公開サーバーへの配信はまだ行っていない。
+各話の`index.html`は原画を直接読むリーダー、`reader.html`は原画のバイトを内包するリーダー。第1話は容量に合わせて同じフォルダーの`reader-art-*.js`三個を一緒に使う。第2〜10話は単独HTML。会話は原画内へ日本語の縦書きで統合し、HTMLで重ねて表示しない。原画・実際の生成指示・採用と修正の記録・両スマホ幅の全長画像・確認シートを各話へ保存する。公開サーバーへの配信はまだ行っていない。
 
-第1話は長尺・効果音の改稿を採用。32場面、スマホ約37〜38画面、原画内の効果音25箇所。[改稿と確認の記録](production/episode-01-review.md)。第2〜10話は今回の長尺改稿の対象外で、従来の各8枚の原画。
+第1話は長尺・効果音に加え、場所と帰還門を知る順序、水を頼んでから仕事の依頼を受ける順序を改稿。{len(first['scenes'])}場面、スマホ約{min(screen_counts)}〜{max(screen_counts)}画面、原画内の効果音{sounds}箇所。[改稿と確認の記録](production/episode-01-review.md)。第2〜10話は今回の導入改稿の対象外で、従来の各8枚の原画。
 ''')
 
 rows = []
@@ -90,7 +94,7 @@ continuity = BASE / 'series/continuity.md'
 text = continuity.read_text()
 for ep in EPISODES:
     marker = f'| {ep["number"]} | {ep["time"]} | {ep["state"]} | '
-    text = re.sub(re.escape(marker) + r'[^\n]+', marker + ('完成原稿で確認済み' if ep['number'] in completed else '脚本の予定。作画未確認') + ' |', text)
+    text = re.sub(r'^\| '+str(ep['number'])+r' \|[^\n]+', marker + ('完成原稿で確認済み' if ep['number'] in completed else '脚本の予定。作画未確認') + ' |', text,flags=re.MULTILINE)
 continuity.write_text(text)
 
 root_readme = ROOT / 'README.md'
