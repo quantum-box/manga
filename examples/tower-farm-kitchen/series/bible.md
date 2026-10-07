@@ -9,7 +9,7 @@ episode_count_constraint: minimum
 scope_source: user_2026_10_07
 roadmap_episode_count: 240
 initial_production_range: [1, 10]
-completed_art_episodes: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+completed_art_episodes: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 primary_setting_proposal: inhabited_fantasy_tower
 ```
 
