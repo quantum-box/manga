@@ -26,6 +26,7 @@ Camera: [distance: wide / medium / close-up; height and angle; whose viewpoint, 
 Composition: [primary focal element and path to the next beat; reserve the planned balloon area without covering faces, hands or clues].
 Text: Render the exact Japanese dialogue below inside white speech balloons integrated with the illustration. Use true vertical Japanese typesetting: upright glyphs, top-to-bottom columns, columns ordered right-to-left. Do not rotate horizontal sentences sideways. No extra text or watermark.
 Dialogue: [speaker, exact full text, balloon reading order, and each vertical column listed in right-to-left order].
+Sound effects: [exact word, source/action, position, style, beginning/continuation/end; or none only when no sound persists]. Keep outside speech/thought balloons, independently of dialogue.
 Voice: [spoken / thought; intended listener; volume, emotion and breath for THIS utterance].
 Balloon design: [contour, line weight/color, white inner padding, and continuous speech tail or thought dots].
 Lettering: Clean printed Japanese manga gothic, dark lettering, generous inset padding, legible after smartphone downscaling. Balloon tails point to the speakers. Do not cover faces or hands.
@@ -45,15 +46,19 @@ Visible subject: [speaker face / listener reaction / the object being discussed]
 Offscreen: [who remains nearby and on which side].
 Single beat: [what the reader understands now].
 Carry forward: [eyeline, posture, background marker and prop state].
-Exact dialogue for THIS panel only: [text, or explicitly silent].
+Exact dialogue for THIS panel only: [text, or Dialogue: none]. Specify originating or continuing sound effects independently; do not use 'silent' for a wordless panel whose sound persists.
 Do not include later replies, new locations, or every character from the reference.
 ```
 
 文字は短い語だけでなく全文を渡す。列分けの一覧を吹き出しへラベルとして描かせないよう、全文と配置の指示を分ける。1024px幅の原画を360pxへ表示する場合、字の高さ60pxは約21pxになるが、狭いコマへ配置すればさらに小さくなる。実際のコマの表示幅から必要な原画の字の大きさを決め、生成結果を目視する。文字を小さくして無理に詰めず、列数・吹き出しの形・構図を調整する。
 
-文字を個別編集する指定などで後から組版する場合だけ、上の `Text` を「No text or speech balloons; reserve [region] for separately typeset dialogue.」へ置き換える。無言の場面は明示して文字なしで生成する。
+文字を個別編集する指定などで後から組版する場合だけ、後組版する文字の種類と予約領域を指定する。セリフだけを後組版し、効果音は絵と一緒に作る場合は `No dialogue or speech balloons; render only the specified sound effects.` とする。全ての文字を後組版する場合、または完全な静けさを意図する場合にだけ `No text, balloons or sound effects.` を使う。
+
+「無言」を自動で文字なしへ変換しない。発話なしと発生音・継続音の有無を分けて指定する。効果音を `speaker: 音` の発話へ入れず、無音の判断コマへ動作音を一律に足さない。過去の実使用指示は履歴として保ち、次回用指示や実行した編集指示と区別する。
 
 ## 構成の指示を変える
+
+複数コマへ続く音は[コマと余白を跨ぐ音](cross-panel-sounds.md)の発生・継続の記録と生成例を使う。後続コマでは同じ音の継続を明示し、新しい音の追加や全文の複製と区別する。発話のないコマ、音が継続するコマ、完全な無音のコマを別々に指定する。
 
 複数のコマを一枚へ生成するときは「大小をつける」だけで済ませず、各コマの役割と相対的な幅・高さ・配置・枠の有無を指示する。たとえば「全幅の状況確認→右寄せの会話→左寄せの浅い目元→大きな名乗り」。小コマはその面積に合う対象へ描き直し、全景を縮めたり絵を押し潰したりしない。生成後は文字だけでなく、本当に形と面積に差が出たか見る。[大小を直した実例](context-and-dialogue.md)の数値や配列は今回だけの選択。
 

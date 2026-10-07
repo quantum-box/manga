@@ -1,6 +1,6 @@
 {
   "localVerification": "passed",
-  "checkedAt": "2026-10-07T04:31:00.665729+00:00",
+  "checkedAt": "2026-10-07T04:44:43.504721+00:00",
   "completedArtEpisodes": [
     1,
     2,
@@ -32,16 +32,20 @@
   },
   "iosBundle": {
     "command": "python3 scripts/sync_ios_webtoons.py --check",
-    "titles": 7,
-    "readers": 52,
+    "titles": 8,
+    "readers": 62,
     "result": "passed"
   },
   "swiftTests": {
     "tests": [
+      "ios_catalog",
+      "remote_catalog",
+      "offline_downloads",
+      "reading_history",
       "reader_content"
     ],
     "result": "passed",
-    "scope": "Local: changed chapter content. All five Swift groups also passed on prior commit690fa33; the newest full suite runs in CI."
+    "scope": "All five groups passed locally after integrating origin/main, including the current eight-title, 62-reader catalog."
   },
   "originalArtworkChecks": {
     "result": "passed",
@@ -95,7 +99,7 @@
     "manualReview": "passed_manual_both_widths",
     "plan": "episode-01-food.json",
     "physicalDeviceReview": "not performed",
-    "localChecks": "Python11+4, Swift reader content, iOS sync7 titles/52 readers, native/iOS112 hashes, restored browser40 hashes, actual generation166 records, git diff --check: passed",
+    "localChecks": "Python11+4, all five Swift groups, iOS sync8 titles/62 readers, native/iOS112 hashes, restored browser40 hashes, actual generation166 records, git diff --check: passed",
     "fullScrollExport": "passed_all95_tiles_and_manual390_tail"
   }
 }

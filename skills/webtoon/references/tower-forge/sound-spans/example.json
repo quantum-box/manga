@@ -1,0 +1,233 @@
+{
+  "date": "2026-10-07",
+  "source_repository": "quantum-box/manga",
+  "before_commit": "9a09539",
+  "adopted_commit": "c4e4876",
+  "accepted_scope": "Cross-panel sound persistence and large white space in Episode 1 strips 19/21; not approval of the whole episode or following episodes",
+  "user_accepted": true,
+  "generation": [
+    {
+      "scene": 19,
+      "method": "built_in_image_gen",
+      "prompt_file": "prompt-19.txt",
+      "edit_target": "before-19.png",
+      "edit_target_sha256": "dc0cd61ff13f50203db1414ec0e433f468049d28fe16117add56ce5765065bb9",
+      "adopted": "after-19.png",
+      "adopted_sha256": "5eaab791e7f3f94a72e8a549c04782670a1c66ee5a70067c9701156c15c4ce04",
+      "native_output_unmodified": true
+    },
+    {
+      "scene": 21,
+      "method": "built_in_image_gen",
+      "prompt_file": "prompt-21.txt",
+      "edit_target": "before-21.png",
+      "edit_target_sha256": "512caea35064375b38e1ade131c058e1d0b679bfbae415e84d1632c2b41141c0",
+      "adopted": "after-21.png",
+      "adopted_sha256": "746dfa1454eb30a2c3a4ddc720a0afd757ad359c1dafc1b2590dc06a696ac2a9",
+      "native_output_unmodified": true
+    }
+  ],
+  "files": [
+    {
+      "file": "before-19.png",
+      "sha256": "dc0cd61ff13f50203db1414ec0e433f468049d28fe16117add56ce5765065bb9",
+      "width": 887,
+      "height": 1774,
+      "source": {
+        "commit": "9a09539",
+        "path": "examples/tower-forge/episode-01/art/r19-event-hands.png"
+      }
+    },
+    {
+      "file": "after-19.png",
+      "sha256": "5eaab791e7f3f94a72e8a549c04782670a1c66ee5a70067c9701156c15c4ce04",
+      "width": 724,
+      "height": 2172,
+      "source": {
+        "commit": "c4e4876",
+        "path": "examples/tower-forge/episode-01/art/r19-soundspan.png"
+      }
+    },
+    {
+      "file": "before-19-390.jpg",
+      "sha256": "c80a73bbfa6c5e8e18be097c217176013023c18c9ca9f3c4032993d04b94486a",
+      "width": 390,
+      "height": 780,
+      "source": {
+        "commit": "9a09539",
+        "path": "examples/tower-forge/episode-01/validation/scene-19-390.jpg"
+      }
+    },
+    {
+      "file": "after-19-390.jpg",
+      "sha256": "f8efad127f05c2222c921c5de6f6026970bc9fce1b4f588802a756abfa3942d5",
+      "width": 390,
+      "height": 1170,
+      "source": {
+        "commit": "c4e4876",
+        "path": "examples/tower-forge/episode-01/validation/scene-19-390.jpg"
+      }
+    },
+    {
+      "file": "after-19-360.jpg",
+      "sha256": "4213488ed599e8af08ae17ddd95c4a9c776fcb4d7c9026d6bfcbb62830bde0e1",
+      "width": 360,
+      "height": 1080,
+      "source": {
+        "commit": "c4e4876",
+        "path": "examples/tower-forge/episode-01/validation/scene-19-360.jpg"
+      }
+    },
+    {
+      "file": "before-21.png",
+      "sha256": "512caea35064375b38e1ade131c058e1d0b679bfbae415e84d1632c2b41141c0",
+      "width": 724,
+      "height": 2172,
+      "source": {
+        "commit": "9a09539",
+        "path": "examples/tower-forge/episode-01/art/r21-event-hands.png"
+      }
+    },
+    {
+      "file": "after-21.png",
+      "sha256": "746dfa1454eb30a2c3a4ddc720a0afd757ad359c1dafc1b2590dc06a696ac2a9",
+      "width": 724,
+      "height": 2172,
+      "source": {
+        "commit": "c4e4876",
+        "path": "examples/tower-forge/episode-01/art/r21-soundspan.png"
+      }
+    },
+    {
+      "file": "before-21-390.jpg",
+      "sha256": "de9624dfa78a1cd241fdaec310a1713dc996756d16c0931de88e12c41d18bdaf",
+      "width": 390,
+      "height": 1170,
+      "source": {
+        "commit": "9a09539",
+        "path": "examples/tower-forge/episode-01/validation/scene-21-390.jpg"
+      }
+    },
+    {
+      "file": "after-21-390.jpg",
+      "sha256": "e0c84424de1b196b9eb349e0551017e88ee6540f6035f796425e76beb23ca391",
+      "width": 390,
+      "height": 1170,
+      "source": {
+        "commit": "c4e4876",
+        "path": "examples/tower-forge/episode-01/validation/scene-21-390.jpg"
+      }
+    },
+    {
+      "file": "after-21-360.jpg",
+      "sha256": "1834ae6f87f216de555b57681df2f2ad2aa5d5eaa9918d13342501604f116d3d",
+      "width": 360,
+      "height": 1080,
+      "source": {
+        "commit": "c4e4876",
+        "path": "examples/tower-forge/episode-01/validation/scene-21-360.jpg"
+      }
+    },
+    {
+      "file": "window-02-390.jpg",
+      "sha256": "39377b08324e804bbb881d46be2816bf3e977441a8547636f987ddbd0ce2f928",
+      "width": 390,
+      "height": 844,
+      "source": {
+        "commit": "c4e4876",
+        "path": "examples/tower-forge/episode-01/validation/scroll-02.jpg"
+      }
+    },
+    {
+      "file": "window-03-390.jpg",
+      "sha256": "d1335f1a5d83b10d22bb249f73df2bc51ed1bffde3d2a4844cf7eea8267edd79",
+      "width": 390,
+      "height": 844,
+      "source": {
+        "commit": "c4e4876",
+        "path": "examples/tower-forge/episode-01/validation/scroll-03.jpg"
+      }
+    },
+    {
+      "file": "window-05-390.jpg",
+      "sha256": "5bf603287003c0c514501dac60dabb91e53d50b7c821134b4a764c65728e9a0b",
+      "width": 390,
+      "height": 844,
+      "source": {
+        "commit": "c4e4876",
+        "path": "examples/tower-forge/episode-01/validation/scroll-05.jpg"
+      }
+    }
+  ],
+  "validation": {
+    "reviewer": "model",
+    "date": "2026-10-07",
+    "widths": [
+      390,
+      360
+    ],
+    "changed_scenes": [
+      19,
+      21
+    ],
+    "spans": [
+      {
+        "text": "ゴゴゴゴ…",
+        "origin": "19-2",
+        "continues_through": [
+          "19-3",
+          "lower native white continuation"
+        ],
+        "checks": [
+          "One rumble starts beside the eye, crosses into the reaction and fades through large white space",
+          "Tower and light rings remain withheld until strip 20"
+        ]
+      },
+      {
+        "text": "ガァン",
+        "origin": "21-1",
+        "continues_through": [
+          "diagonal white gutter",
+          "21-2"
+        ],
+        "checks": [
+          "Final glyph extends beyond gate frame into gutter and lamp panel",
+          "Decay ends before notification; lamp and HUD cues remain distinct"
+        ]
+      }
+    ],
+    "native_white_continuation": "Approximately lower third of strip 19; model visual estimate, not pixel segmentation.",
+    "before_after_lead_in": [
+      {
+        "width": 390,
+        "before_strip_and_gap_px": 1400,
+        "after_strip_and_gap_px": 1389.99
+      },
+      {
+        "width": 360,
+        "before_strip_and_gap_px": 1292.3,
+        "after_strip_and_gap_px": 1283.07
+      }
+    ],
+    "checks": [
+      "Faces, eyes, pointing finger, blade, shield, dialogue and HUD unobstructed",
+      "Bare right sword hand, single left cuff; Sena points right and carries left shield",
+      "Same 78 moments and 25 sound sources; continuations do not count as new sounds",
+      "Phone images and native PageDown reading confirm persistence and tower reveal"
+    ],
+    "limitations": "Browser/model review was recorded before user feedback. Sound treatment is now accepted by user; whole-episode quality and physical-device testing remain unverified."
+  },
+  "browser_widths": [
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "story_moments": 78,
+  "sound_sources": 25,
+  "physical_device_tested": false
+}

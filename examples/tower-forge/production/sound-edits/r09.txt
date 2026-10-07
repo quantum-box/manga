@@ -1,0 +1,10 @@
+Use case: precise-object-edit. Edit the supplied CURRENT finished Japanese Webtoon strip. Change ONLY the specified drawn sound effects. Preserve the canvas aspect ratio, all panel frames and gutters, every face, expression, body, clothing, hand/fingers, weapon, vent, tools, props, colors, lighting, backgrounds, speech/thought balloons and their EXACT existing Japanese text. Do not regenerate or recompose the scene. Sound effects are drawn lettering near their source, outside speech/thought balloons; NO oval, cloud, tail, speaker label or new narration. Dialogue is vertically lettered, but sound orientation follows the action. Keep sounds modest and readable at 360px. Protect faces, fingers, the vent, contact points and existing words. No new action, sound source, smoke, explosion or extra sword. Keep every unlisted panel quiet, especially the listener reactions and relief.
+Edit target: episode-01/art/r09.png. Scene: 直す理由. There are 5 narrative panels; a same-row inset still has its own narrative index.
+Narrative panel 4. EXACT SFX: カリカリ. Cause: 細い工具が溝の付着物をかき出す. Placement: 細い斜めの工具接写、既存のカチの位置だけ。手・工具先・溝を避ける. Style: 小さく細いざらついた描き文字、二拍。既存のカチを置換.
+Narrative panel 5. EXACT SFX: カチッ. Cause: カイが真鍮の蓋を元の場所へ固定する. Placement: 最下段、押さえた蓋に近い作業台の空き。もう一回試そうのセリフと指を避ける. Style: 小さく硬い金属音、細い淡色縁.
+Replace ONLY the existing scraping sound カチ with カリカリ; do not retain both. Add the separate カチッ only beside the final closed cover, never in the scraping panel.
+Preserve exact existing dialogue/display text without any changes:
+Narrative panel 1: セナ — 熱？
+Narrative panel 2: カイ — 光を出すと、ここが熱くなる。
+Narrative panel 3: カイ — 逃げないと、止まる。
+Narrative panel 5: カイ — もう一回、試そう。
