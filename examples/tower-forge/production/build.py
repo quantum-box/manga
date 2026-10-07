@@ -59,7 +59,7 @@ def main():
         n=ep['number']
         if n in ready:
             cards.append(f'<a class="card" href="episode-{n:02d}/index.html"><strong>第{n}話</strong><span>{html.escape(ep["title"])}</span></a>')
-        else:cards.append(f'<div class="card pending"><strong>第{n}話</strong><span>{html.escape(ep["title"])}</span><small>公開準備中</small></div>')
+        else:cards.append(f'<div class="card pending"><strong>第{n}話</strong><span>{html.escape(ep["title"])}</span></div>')
     page='''<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>塔を灯す剣｜第1〜10話</title><style>*{box-sizing:border-box}body{margin:0;background:#f6f4ef;color:#253148;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif}main{max-width:760px;margin:auto;padding:40px 24px 80px}h1{font-size:36px;margin:20px 0}p{line-height:1.9;font-size:18px}.eyebrow{font-size:14px;color:#6b7280;letter-spacing:.14em}.card{display:flex;gap:16px;padding:22px 0;border-top:1px solid #cbd0d4;color:inherit;text-decoration:none;font-size:18px;line-height:1.5}.pending{color:#8b9097}.card small{font-size:12px}.hero{width:100%;height:auto;display:block;margin:24px 0}.links a{color:#365178}</style><main><p class="eyebrow">VRMMORPG · 剣と魔法 · 塔攻略</p><h1>塔を灯す剣</h1><p>自分の作った剣で、未踏の塔へ。<br>三人の遠征は、消えた街の灯りから始まる。</p>'''
     if ready:
         page+='<p><a href="episode-01/index.html" style="display:inline-block;padding:14px 24px;background:#253148;color:white;text-decoration:none;border-radius:4px">第1話から読む</a></p>'
