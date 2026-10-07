@@ -1,49 +1,61 @@
 {
-  "edition": "context-dialogue-v6",
-  "panels": 30,
-  "readerSourceSha256": "9f4128624e107c9c2a752f691d14fb8e1251af27069a018aeb309ecc61aa41f4",
+  "edition": "webtoon-remake-20261006",
+  "panels": 51,
+  "readerSourceSha256": "823e6c147b56badbfbcbfc539f20fbada6e2d735e304023df594e4dc6c3ff1ed",
   "source_assets_verified": true,
   "visualReview": {
     "status": "passed",
-    "method": "manual inspection of native raster exports; not browser/DOM inspection",
-    "assets": 20,
-    "panels": 30,
-    "all_assets_at_360": true,
-    "representative_intervals_at_390": true,
-    "exact_text_and_speakers": true,
-    "faces_hands_costumes_props_and_causality": true,
-    "continuity_notes": "茶色い服の親子と縄の受け渡しを維持。請求書の修正後は偽の文字なし。",
-    "reviewed_files": [
-      {
-        "file": "review/v6-contact-360-0.png",
-        "sha256": "87f5d587fac36fdd36b4711b223dc89906d625f4b07d8f61dcf0a19f54555017"
-      },
-      {
-        "file": "review/v6-contact-360-1.png",
-        "sha256": "245fd975f23b29ca0d70c3289c1d753a9718083a1d215c898cde5a5edf0e43d4"
-      },
-      {
-        "file": "review/v6-contact-360-2.png",
-        "sha256": "21c98be07c6d026d3289877e3c99378ac22e7d9f099826fe171dd20536174c70"
-      },
-      {
-        "file": "review/v6-contact-360-3.png",
-        "sha256": "714c393524285d29c1a884a4e0282ca4dc5fc6e0d1415ce2e67b86531f64835d"
-      },
-      {
-        "file": "review/v6-contact-360-4.png",
-        "sha256": "772946b80bba6d716d3bd39e555e508274953c00a90199a39f2ad17c843f2a17"
-      },
-      {
-        "file": "review/v6-contact-390-1.png",
-        "sha256": "1f380b24175ca4b83bb98973b77125ac456cab3948a6888045d0877969984e45"
-      }
+    "widths": [
+      360,
+      390
     ],
-    "user_acceptance": "not_recorded_for_full_revision"
+    "method": "native raster contact boards and sequence windows",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-0.png",
+        "sha256": "99aed4446a6abd18e0ef65c50d96a69e8c490311ffc0594bd91cc4ada4666715"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-1.png",
+        "sha256": "81f2a818c2c1c6f08eaea3b76941cfd2afb1086db4fc4f3a1a9f2b43c35b560c"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-2.png",
+        "sha256": "c6788b9dd21233f804aaa6c44db42c6e3533e1b640218da9bba2e958170a9120"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-3.png",
+        "sha256": "41a0bc5f9cc3d518e063395a1dc8f28ec22d1509e8f91f83c6b3e1de990fe5e2"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-4.png",
+        "sha256": "46d04e8ede7c5f2b7dac334145fd56863b62fb03dc9d9df2634b588c7401be60"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-0.png",
+        "sha256": "2368ec47ae0ddb761a04685f738b669ca15e84f331d4fe49f7ecc9c37c89941b"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-1.png",
+        "sha256": "fa43b30a095bc2500e3efbdfe088d503fe812eb5c9316bad706cb4eeeb01aacf"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-2.png",
+        "sha256": "a1b78ea057159f68df0e0c327049eedb2f0eb2c7a39ca912d0ef809e7e3dc87f"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-3.png",
+        "sha256": "9714d7ee1e0c7b76260278e5e647bd0a4564941fd81a0c06f689eab73bb4a207"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-4.png",
+        "sha256": "2381295f6f2677b8ed66e51a7292d230b4d766330cd9db85ec373ad0766b7bbf"
+      }
+    ]
   },
   "mobileBrowserReview": {
     "status": "pending",
-    "note": "Local HTML browser access was restricted. Native canvas exports are not browser proof."
+    "note": "Prior edition review does not apply to revised art."
   },
   "physicalDeviceTested": false
 }

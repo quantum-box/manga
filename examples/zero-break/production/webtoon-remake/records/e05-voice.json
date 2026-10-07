@@ -1,0 +1,170 @@
+{
+  "id": "e05-voice",
+  "episode": 5,
+  "shotId": "voice",
+  "beforeShot": {
+    "id": "voice",
+    "file": "08-voice.png",
+    "crop": "wide",
+    "shape": "left",
+    "aspect": "1024x768",
+    "pause": 720,
+    "scene": "Ren pauses with bare hand near vibrating pipe wall, Noa lantern ahead, no captives visible yet. Tiny speech balloon seems from unseen wall.",
+    "lines": [
+      {
+        "speaker": "Unseen resident",
+        "text": "…出して。",
+        "columns": [
+          "…出して。"
+        ],
+        "type": "speech"
+      }
+    ],
+    "status": "generated",
+    "state": "Ren pauses with bare hand near vibrating pipe wall, Noa lantern ahead, no captives visible yet. Tiny speech balloon seems from unseen wall.",
+    "pacing": "wait for hidden information",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Use case: illustration-story. Asset: FINAL anime WEBTOON single comic moment WITH speech balloons and exact Japanese vertical lettering. References are character identity, costume, armor design and anime style ONLY. Never copy reference dialogue, pose, or panel sequence. ONE distinct moment, not montage, grid, contact sheet or duplicate character sequence. Beautiful expressive Japanese anime faces, crisp linework and detailed cel shaded color. Adult Ren19: messy black hair, BLUE eyes, crimson scarf, BLACK short-sleeve shirt, charcoal trousers, brown narrow straps, BARE hands when unarmored. BASIC armor ONLY when scene requests: faceted BLACK plates, narrow CYAN seams and cyan chest STAR, face and hair uncovered, red scarf persists. NO new speed/shield/link/gate form. Adult Mira19: blonde long braid with loose bangs, blue eyes, white/royalBLUE/GOLD embroidered dress, blue-gold flower hair ornament and earrings, no blue cape. Rook22: SILVER short hair, blue eyes, SILVER engraved armor, royalBLUE cape, BLACK leather gloves. Noa18 when present: ORANGE short tousled hair, green eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, orange work gloves. Keep characters identifiable; vary emotion and camera by the scene. Five fingers, sensible hand/prop geometry. Dialogue is PRINTED Japanese manga gothic, upright glyphs TOP to BOTTOM, columns RIGHT to LEFT. Visible glyph height about68-76px on1024px image width, bold black on white smooth speech balloons integrated into composition. Tails clearly point to speaking mouth, thought clouds use small dots. Reshape balloons rather than make tiny text; keep faces, hands and the important prop readable. Exact text only, no labels, English, watermark or decorative extra words. Unless borderless scene specified, draw a thin smooth black comic border. Match background lighting to THIS scene, not reference sunshine in indoor/night scenes. No unknown enemy face or future revelation before requested.\n\nPreferred image aspect 1024x768. Composition: one close readable moment, minimal extraneous margins\nScene and exact state: Ren pauses with bare hand near vibrating pipe wall, Noa lantern ahead, no captives visible yet. Tiny speech balloon seems from unseen wall.\n\nBalloon 1: speech, Unseen resident, upper right. EXACT text: …出して。 . Columns RIGHT to LEFT: …出して。.\nExactly 1 speech/thought balloons. No other lettering except explicitly requested effect/prop text in scene.",
+    "sha256": "b3bc1da4196b5ffcc5f238a056bb3b6786732c58a1c498684f2fc1ba0cb0106d",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../production/references/noa.png"
+    ],
+    "baseline_sha256": "b3bc1da4196b5ffcc5f238a056bb3b6786732c58a1c498684f2fc1ba0cb0106d",
+    "widthPercent": 100,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-voice.png",
+  "references": [
+    "examples/zero-break/episode-05/art/08-voice.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Ren pauses with bare hand near vibrating pipe wall, Noa lantern ahead, no captives visible yet. Tiny speech balloon seems from unseen wall.\nExact layout, camera and mechanics: Upper wide three stop beside brass pipe and bare Ren hand feels wall; speech comes from behind wall, tail exits panel toward pipe, no thought dots. Lower horizontal RIGHT vibrating pipe close / LEFT Ren ear and listening blue eye. Exact …出して。 in large upright glyphs despite quiet voice. NO captives yet.\nExact speech in chronological order: [{\"speaker\": \"Unseen resident\", \"text\": \"…出して。\", \"columns\": [\"…出して。\"], \"type\": \"speech\"}]\nExact effects (each once, near physical cause): [\"カタ…\"]\nExact visible prop text: []. No other text.\n",
+  "layoutDirection": "Upper wide three stop beside brass pipe and bare Ren hand feels wall; speech comes from behind wall, tail exits panel toward pipe, no thought dots. Lower horizontal RIGHT vibrating pipe close / LEFT Ren ear and listening blue eye. Exact …出して。 in large upright glyphs despite quiet voice. NO captives yet.",
+  "sounds": [
+    "カタ…"
+  ],
+  "visibleText": [],
+  "status": "planned",
+  "output": "examples/zero-break/episode-05/art/remake-voice.png",
+  "sha256": "571d00cae393727cfe4e5d060e0ff6ff8ce97d2f9a780cfda81b7f55b627ba1c",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-30b40adc-6d60-46a2-a9d7-354b5ce71d9f.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 3,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-0.png",
+        "sha256": "8de5c52f75c391d3ec7aa001b11d272a2fcb343ace58e770d73cada00f0d7fcc"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-1.png",
+        "sha256": "f7d8df5bd5fb339e89aa10a0635b71ac253f6e0866116b20da90333ada4c0681"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-2.png",
+        "sha256": "d8e0c33a00b85545e6f3c6eab04c3c406ddc783a1cc0dd837945600bad5b580b"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-3.png",
+        "sha256": "1985a20c1de6ac0ce1773beb305e4c85953944e66d95dc016095a969ba1d656a"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-4.png",
+        "sha256": "36f8576fca6cbf923ac632b9748ee8c9d879086ce2192e02bd885810d63efc05"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-0.png",
+        "sha256": "6d2268380e7b07e3d5c53d8fcc4d876ea94c18f139d88317481ac9d8611e6332"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-1.png",
+        "sha256": "6668511341cbbd35dd266c7c95c1db518650ecadcfd907fd682a9e24aab5c217"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-2.png",
+        "sha256": "979a87a814009e4c90d67353a4bd62e3ac26b9b355c8a37c1b33dd0570d18173"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-3.png",
+        "sha256": "d80b60173f774f8a4f1553a8174de696246a25da9c56720910f9b6b2928af165"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-4.png",
+        "sha256": "fb8ff847478c3a3644f032374fe40c8cd9f31f78efdb33e1ae1f17db67a0f93d"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-05/art/08-voice.png",
+      "sha256": "b3bc1da4196b5ffcc5f238a056bb3b6786732c58a1c498684f2fc1ba0cb0106d"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "executedRepairPrompt": "Preserve every panel, prop, action, character, word and sound in this Webtoon. PHONE requirement: actual upright Japanese glyph height 75-85px at1024px width, bold clean black, roomy white balloon. Expand speech panel/balloon vertically if needed; never cover eyes or active hands. Exactly3 frames1/[2,3]. Crucial speech speaker is an UNSEEN RESIDENT behind the CLOSED pipe-wall hatch, NOT Ren. Exact …出して。 as RIGHT … / LEFT 出して。 in a pale weak oval near the hatch. Thin wavering tail ends at the closed hatch seam or extends offscreen behind wall, never toward Ren's face/hand. Ren's mouth CLOSED; he pauses with BARE hand near hatch and listens. Keep lower RIGHT rattling seam with exactly ONE カタ… / LEFT Ren blue-eye reaction. No person/captive visible yet. Same lantern, Noa behind, no extra text.",
+  "repairBefore": {
+    "path": "examples/zero-break/production/webtoon-remake/references/e05-voice-before-correction.png",
+    "sha256": "7df85e222940405bbebfb8f5d8931299392d2111f503987749d7d84962c21b1b"
+  },
+  "panels": [
+    {
+      "beat": "姿の見えない住人の声にレンが気づく",
+      "view": "姿の見えない住人の声にレンが気づく",
+      "frame": "row 1; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Unseen resident",
+        "text": "…出して。",
+        "columns": [
+          "…出して。"
+        ],
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "閉じたハッチの隙間が震える",
+      "view": "閉じたハッチの隙間が震える",
+      "frame": "row 2; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "レンが声の方向を見る",
+      "view": "レンが声の方向を見る",
+      "frame": "row 2; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "direction": "Upper wide three stop beside brass pipe and bare Ren hand feels wall; speech comes from behind wall, tail exits panel toward pipe, no thought dots. Lower horizontal RIGHT vibrating pipe close / LEFT Ren ear and listening blue eye. Exact …出して。 in large upright glyphs despite quiet voice. NO captives yet.",
+    "observedPanelBeats": [
+      "姿の見えない住人の声にレンが気づく",
+      "閉じたハッチの隙間が震える",
+      "レンが声の方向を見る"
+    ]
+  }
+}

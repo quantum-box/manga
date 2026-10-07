@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-eeb2aae7-0ffa-4fbd-ac0e-3509aa9afca8.png",
+  "adopted": "art/08-one-delivery-cargo-fixed.png",
+  "original_sha256": "f51535380bd077fc2a2db2d74f1976b706107f0000c518c6de2e27ed9ef29681",
+  "adopted_sha256": "f51535380bd077fc2a2db2d74f1976b706107f0000c518c6de2e27ed9ef29681",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/08-one-delivery-cargo-fixed.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Image 1 is the target. Any second reference is ONLY for the brown glazed pottery food-bowl design, not its counts, cast, layout or events. Only standardize the RETURN cart: TWO now-empty wooden food-transport outer crates with clean folded padded cotton liners plus ONE closed metal cooking/serving pot, matching the delivery cart. Remove extra garden pails, buckets and metal pots. No remaining food or unexplained filled containers on the cart. All faces, poses, blue-awning diner, exact two dialogue balloons and panels stay unchanged. Preserve every element not named for repair. Upright integrated raster Japanese vertical lettering, columns right-to-left. No new speech or story events, no font shrinking, no digital overlays. Same finished manga style and target aspect ratio.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/08-one-delivery.png",
+      "sha256": "84aadfbbf38cc011f43a6858612f8803ee5d6f6032b3466a1b5a01eacbb6ce5e"
+    },
+    {
+      "path": "generation/inputs/01-twelve-bowls-fixed.png",
+      "sha256": "dd48fdb02875a5a0dc0979802f1fd1979338598c22405be73502faff787c4955"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "e05-record",
+  "episode": 5,
+  "shotId": "record",
+  "beforeShot": {
+    "id": "record",
+    "file": "15-record.png",
+    "crop": "portrait",
+    "shape": "left",
+    "aspect": "1024x1280",
+    "pause": 150,
+    "scene": "Safe workshop, old man resting on simple cot breathing. Mira copies conveyor number and time on paper; Noa compares missing friends' registry, exact big handwritten labels 十七人 and 明朝 only.",
+    "lines": [],
+    "status": "generated",
+    "state": "Safe workshop, old man resting on simple cot breathing. Mira copies conveyor number and time on paper; Noa compares missing friends' registry, exact big handwritten labels 十七人 and 明朝 only.",
+    "pacing": "understanding / recovery",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Edit ONLY daylight and the view outside workshop windows in this anime webtoon panel. It is now NIGHT immediately after the underground rescue; tomorrow dawn has not happened yet. Change bright white daytime sky outside to deep indigo night. Keep all interior faces, brass pipes, amber work lamps, warm light, Ren unarmored, Noa, Mira, recovering old man on cot, composition and exact existing paper lettering 十七人 and 明朝 and metal docket. Use warm amber LAMP light rather than sunshine shafts. Do not add characters, dialogue, extra labels or alter scene action.\n",
+    "sha256": "5b2aaffb325744757636c318325c77d320ac308d6691aadb1ca2e01018d663a2",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png",
+      "../production/references/noa.png"
+    ],
+    "baseline_sha256": "5b2aaffb325744757636c318325c77d320ac308d6691aadb1ca2e01018d663a2",
+    "widthPercent": 92,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-record.png",
+  "references": [
+    "examples/zero-break/episode-05/art/15-record.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Safe workshop, old man resting on simple cot breathing. Mira copies conveyor number and time on paper; Noa compares missing friends' registry, exact big handwritten labels 十七人 and 明朝 only.\nExact layout, camera and mechanics: Upper wide workshop: SAME man rests breathing on cot, Ren unarmored watches. Lower horizontal RIGHT Mira copies route/time on paper / LEFT Noa compares list on bench. Only readable handwritten labels 十七人 and 明朝, large upright horizontal prop text. No destination 英雄認定場 before next reveal.\nExact speech in chronological order: []\nExact effects (each once, near physical cause): [\"サラ…\"]\nExact visible prop text: [{\"text\": \"十七人\", \"type\": \"prop\", \"orientation\": \"horizontal\"}, {\"text\": \"明朝\", \"type\": \"prop\", \"orientation\": \"horizontal\"}]. No other text.\n",
+  "layoutDirection": "Upper wide workshop: SAME man rests breathing on cot, Ren unarmored watches. Lower horizontal RIGHT Mira copies route/time on paper / LEFT Noa compares list on bench. Only readable handwritten labels 十七人 and 明朝, large upright horizontal prop text. No destination 英雄認定場 before next reveal.",
+  "sounds": [
+    "サラ…"
+  ],
+  "visibleText": [
+    {
+      "text": "十七人",
+      "type": "prop",
+      "orientation": "horizontal"
+    },
+    {
+      "text": "明朝",
+      "type": "prop",
+      "orientation": "horizontal"
+    }
+  ],
+  "status": "planned",
+  "output": "examples/zero-break/episode-05/art/remake-record.png",
+  "sha256": "3a08707ba96f2cd73159c8f1c62b355d1b2c6fecd2b2ac760eadf52831c0a362",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-813e4b46-90e5-4867-a74a-7ccc654eb8a8.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 3,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-0.png",
+        "sha256": "8de5c52f75c391d3ec7aa001b11d272a2fcb343ace58e770d73cada00f0d7fcc"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-1.png",
+        "sha256": "f7d8df5bd5fb339e89aa10a0635b71ac253f6e0866116b20da90333ada4c0681"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-2.png",
+        "sha256": "d8e0c33a00b85545e6f3c6eab04c3c406ddc783a1cc0dd837945600bad5b580b"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-3.png",
+        "sha256": "1985a20c1de6ac0ce1773beb305e4c85953944e66d95dc016095a969ba1d656a"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-4.png",
+        "sha256": "36f8576fca6cbf923ac632b9748ee8c9d879086ce2192e02bd885810d63efc05"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-0.png",
+        "sha256": "6d2268380e7b07e3d5c53d8fcc4d876ea94c18f139d88317481ac9d8611e6332"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-1.png",
+        "sha256": "6668511341cbbd35dd266c7c95c1db518650ecadcfd907fd682a9e24aab5c217"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-2.png",
+        "sha256": "979a87a814009e4c90d67353a4bd62e3ac26b9b355c8a37c1b33dd0570d18173"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-3.png",
+        "sha256": "d80b60173f774f8a4f1553a8174de696246a25da9c56720910f9b6b2928af165"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-4.png",
+        "sha256": "fb8ff847478c3a3644f032374fe40c8cd9f31f78efdb33e1ae1f17db67a0f93d"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-05/art/15-record.png",
+      "sha256": "5b2aaffb325744757636c318325c77d320ac308d6691aadb1ca2e01018d663a2"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "executedRepairPrompt": "Edit only one duplicated sound in this existing3-panel Webtoon. Keep ONE サラ… next to Mira's pencil in UPPER full-width panel. REMOVE the duplicated サラ… in lower RIGHT close-up of Mira and restore workshop background there. Preserve exactly the same panel layout, every character and paper, the exact prop labels 十七人 and 明朝 in each occurrence, abstract row lines only, no new words/numbers. Unarmored Ren bare hands and recovering elderly man cot remain. Do not change any lettering except duplicated lower effect.",
+  "repairBefore": {
+    "path": "examples/zero-break/production/webtoon-remake/references/e05-record-before-correction.png",
+    "sha256": "042f2d826e7efbede273da4496e66b8307a42ef2957b30048f56613200e79093"
+  },
+  "panels": [
+    {
+      "beat": "工房の寝台で老人を休ませ記録をまとめる",
+      "view": "工房の寝台で老人を休ませ記録をまとめる",
+      "frame": "row 1; full-width panel",
+      "voice": "無言"
+    },
+    {
+      "beat": "ミラが明朝の予定を記す",
+      "view": "ミラが明朝の予定を記す",
+      "frame": "row 2; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "ノアが十七人の名簿を調べる",
+      "view": "ノアが十七人の名簿を調べる",
+      "frame": "row 2; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "direction": "Upper wide workshop: SAME man rests breathing on cot, Ren unarmored watches. Lower horizontal RIGHT Mira copies route/time on paper / LEFT Noa compares list on bench. Only readable handwritten labels 十七人 and 明朝, large upright horizontal prop text. No destination 英雄認定場 before next reveal.",
+    "observedPanelBeats": [
+      "工房の寝台で老人を休ませ記録をまとめる",
+      "ミラが明朝の予定を記す",
+      "ノアが十七人の名簿を調べる"
+    ]
+  }
+}

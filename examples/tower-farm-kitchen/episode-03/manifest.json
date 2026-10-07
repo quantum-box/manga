@@ -1,0 +1,204 @@
+{
+  "number": 3,
+  "title": "一度に播くな",
+  "time": "5〜7日目",
+  "state": "既存の成株を順に使い、復旧区画を播種。最初の庭葉は7日目に播く。28日栽培は見込みで確定値ではない。",
+  "scenes": [
+    {
+      "id": "01-customer",
+      "art": "art/01-customer.png",
+      "dialogue": [
+        [
+          "客",
+          "明日も、この葉を頼む。"
+        ],
+        [
+          "エルナ",
+          "……明日も？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 85,
+      "prompt": "generation/01-customer.prompt.txt",
+      "description": "Diner counter, young adult adventurer with auburn short hair and muted ochre cloak finishes bowl; Elna listens smiling then worried. Small inset empty leafy garnish plate. This recurring customer is not Leon.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "fe10859f8d9ea087c81f08c719230e94642fd3ed3b6057c76e59ddc19efb267b"
+    },
+    {
+      "id": "02-empty-basket",
+      "art": "art/02-empty-basket.png",
+      "dialogue": [
+        [
+          "コウ",
+          "一度に採れたら、次は空く。"
+        ],
+        [
+          "エルナ",
+          "畑にも、仕込みがいるんだ。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 110,
+      "prompt": "generation/02-empty-basket.prompt.txt",
+      "description": "Kou and Elna outside serving window, clean empty harvest basket in foreground; two unequal closeups basket and Kou's thoughtful face. Existing harvest has been used, garden cannot immediately replace it.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "5a875be13a1a8a2f6c696f5d72c34a96dce174a6d9f72d2d0633ced96a1de73d"
+    },
+    {
+      "id": "03-native-seed",
+      "art": "art/03-native-seed.png",
+      "dialogue": [
+        [
+          "バルト",
+          "庭葉は、光が弱いと遅れる。"
+        ],
+        [
+          "コウ",
+          "ここで育つ速さを、測ろう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "prompt": "generation/03-native-seed.prompt.txt",
+      "description": "Balt on plot path shows tiny native seed in palm, Kou listens close, lower panel glowing ceiling vein and differently shaded bed corner. Plain seed packet without labels.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "76166667bdd0ba395cdc0fa1c5695ce5a710ff97bfb001c4a7cdf75a0fcb2296"
+    },
+    {
+      "id": "04-germination",
+      "art": "art/04-germination-sequence-fixed.png",
+      "dialogue": [
+        [
+          "コウ",
+          "全部の種が、芽を出すとは限らない。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 70,
+      "prompt": "generation/04-germination.prompt.txt",
+      "description": "Three brief closeups: handful of small seeds; Kou places an equal counted sample on damp cloth in shallow dish; notebook makes tally marks with room for future result. No sprouts already in newly set test, no predicted yield on screen.",
+      "edits": [
+        {
+          "prompt": "generation/04-germination-seed-fixed.prompt.txt",
+          "record": "generation/04-germination-seed-fixed.json"
+        },
+        {
+          "prompt": "generation/04-germination-sequence-fixed.prompt.txt",
+          "record": "generation/04-germination-sequence-fixed.json"
+        }
+      ],
+      "width": 887,
+      "height": 1774,
+      "sha256": "94364772703c5e8370834e09d3ece5e33882ca1919527d3e26e8f7c92a538133"
+    },
+    {
+      "id": "05-twelve-plots",
+      "art": "art/05-twelve-plots-map-fixed.png",
+      "dialogue": [
+        [
+          "コウ",
+          "四つの畝を、十二に分ける。"
+        ],
+        [
+          "コウ",
+          "七日ずつ、播く日をずらそう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "prompt": "generation/05-twelve-plots.prompt.txt",
+      "description": "Elevated plot view with FOUR long parallel beds, each divided into THREE equal subsections by small twine markers, total twelve sections; medium Kou and Elna looking at plain sketched plan. Bed widths consistent, no implausible giant farm. Leave words off diagram.",
+      "edits": [
+        {
+          "prompt": "generation/05-twelve-plots-map-fixed.prompt.txt",
+          "record": "generation/05-twelve-plots-map-fixed.json"
+        }
+      ],
+      "width": 887,
+      "height": 1774,
+      "sha256": "2e4163876d5e4e5a574a18ddde362b6ce5ba5c46be08905fc94ff742c1c4c337"
+    },
+    {
+      "id": "06-sow",
+      "art": "art/06-sow-sequence-fixed.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日は、この三つ。"
+        ],
+        [
+          "コウ",
+          "次は、七日後だ。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 80,
+      "prompt": "generation/06-sow.prompt.txt",
+      "description": "Three unequal hand-action panels: Elna makes shallow sowing line in prepared bed; Kou sows tiny seeds in one selected section; soil gently covers seeds. Only first three of twelve sections are sown this week; other sections stay bare or contain existing plants. No germination in same instant.",
+      "edits": [
+        {
+          "prompt": "generation/06-sow-seed-fixed.prompt.txt",
+          "record": "generation/06-sow-seed-fixed.json"
+        },
+        {
+          "prompt": "generation/06-sow-sequence-fixed.prompt.txt",
+          "record": "generation/06-sow-sequence-fixed.json"
+        }
+      ],
+      "width": 887,
+      "height": 1774,
+      "sha256": "85265ac38c6793f3f5f440bf9387e5a41cb55837a43ca011608b157165282d24"
+    },
+    {
+      "id": "07-buy",
+      "art": "art/07-buy.png",
+      "dialogue": [
+        [
+          "コウ",
+          "最初の収穫までは、仕入れる。"
+        ],
+        [
+          "エルナ",
+          "その代金も、計算に入れよう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 70,
+      "prompt": "generation/07-buy.prompt.txt",
+      "description": "Diner back door, local farmer delivers basket of existing leafy vegetables, Elna and Kou accept and tally purchase. Distinct plain brown-clothed adult supplier, not main cast duplicated. Bought grain sack also visible.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "12dff3d1b02e4f40de0a57f43d489cfaab893da93b8607d20107b344dbfc2fbc"
+    },
+    {
+      "id": "08-calendar",
+      "art": "art/08-calendar-time-fixed.png",
+      "dialogue": [
+        [
+          "コウ",
+          "明日の客と、四週間後の畑。"
+        ],
+        [
+          "エルナ",
+          "両方、見ていくんだね。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 180,
+      "prompt": "generation/08-calendar.prompt.txt",
+      "description": "Large quiet evening scene under blue awning, Kou and Elna beside notebook with four simple week columns and small drawings, no readable diagram text; tiny new sown beds visible through window at ground, no mature crop there. Their serious hopeful faces dominate.",
+      "edits": [
+        {
+          "prompt": "generation/08-calendar-time-fixed.prompt.txt",
+          "record": "generation/08-calendar-time-fixed.json"
+        }
+      ],
+      "width": 887,
+      "height": 1774,
+      "sha256": "de88f91a3bba29c24b20914c7f50209df388bca458915200e072b2d26404d694"
+    }
+  ]
+}

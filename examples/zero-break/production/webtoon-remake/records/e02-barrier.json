@@ -1,0 +1,156 @@
+{
+  "id": "e02-barrier",
+  "episode": 2,
+  "shotId": "barrier",
+  "beforeShot": {
+    "id": "barrier",
+    "file": "08-barrier.png",
+    "crop": "portrait",
+    "shape": "right",
+    "aspect": "1024x1280",
+    "pause": 50,
+    "scene": "Rook's gloved palm bars Ren at a cordon on intact lower ledge; stranded parent and child on opposite distant ledge, no armor yet.",
+    "lines": [
+      {
+        "speaker": "Rook",
+        "text": "立入禁止だ。",
+        "columns": [
+          "立入禁止だ。"
+        ],
+        "type": "speech"
+      }
+    ],
+    "status": "generated",
+    "state": "Rook's gloved palm bars Ren at a cordon on intact lower ledge; stranded parent and child on opposite distant ledge, no armor yet.",
+    "pacing": "short action / reaction",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Precise edit reference1 ONLY. Reference2 locks the mother and boy identity and clothes while they are still stranded. In reference1, change ONLY distant boy shirt from blue-grey to OLIVE GREEN short sleeves; match same brown-haired small boy and same mother from reference2. Give mother the same BROWN hooded shawl over white blouse, hood over her brown hair, and worried expression. Both remain together on the UPPER RIGHT distant unsafe ledge, never beside Ren. Keep entire Ren and Rook foreground, cordon rope, silver armor, blue cape, black gloves, red scarf, anatomy, architecture, framing and exact existing LARGE vertical balloon 立入禁止だ。 unchanged. No new words, people, armor, rescue outcome or layout change.",
+    "sha256": "1159e17cb29c53525a6e83a0cf702d1bf947ab5f2d8e014013fae7813e9a82da",
+    "references": [
+      "../v5/art/a14-rejection.png",
+      "../v5/art/16-relief.png",
+      "../v5/art/14-hero.png"
+    ],
+    "baseline_sha256": "1159e17cb29c53525a6e83a0cf702d1bf947ab5f2d8e014013fae7813e9a82da",
+    "widthPercent": 100,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-barrier.png",
+  "references": [
+    "examples/zero-break/episode-02/art/08-barrier.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Rook's gloved palm bars Ren at a cordon on intact lower ledge; stranded parent and child on opposite distant ledge, no armor yet.\nExact layout and camera: Upper shallow black-gloved palm blocking Ren; lower medium Rook face speaks with family far above behind. Ren unarmored on lower-left safe ledge. No attack or bridge yet.\nExact speech in chronological order: [{\"speaker\": \"Rook\", \"text\": \"立入禁止だ。\", \"columns\": [\"立入禁止だ。\"], \"type\": \"speech\"}]\nExact effects (each once, associated with physical cause): [\"スッ\"]\nExact existing visible prop text: []. No other text.\n",
+  "layoutDirection": "Upper shallow black-gloved palm blocking Ren; lower medium Rook face speaks with family far above behind. Ren unarmored on lower-left safe ledge. No attack or bridge yet.",
+  "sounds": [
+    "スッ"
+  ],
+  "status": "planned",
+  "output": "examples/zero-break/episode-02/art/remake-barrier.png",
+  "sha256": "61efd08562d5f22fc2b6e3b08932965d4c02145d8d29cde1902ecfb7ce0d1a99",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-7885645f-998d-473f-b95b-09fb30e2bc68.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 2,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-0.png",
+        "sha256": "99aed4446a6abd18e0ef65c50d96a69e8c490311ffc0594bd91cc4ada4666715"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-1.png",
+        "sha256": "81f2a818c2c1c6f08eaea3b76941cfd2afb1086db4fc4f3a1a9f2b43c35b560c"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-2.png",
+        "sha256": "c6788b9dd21233f804aaa6c44db42c6e3533e1b640218da9bba2e958170a9120"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-3.png",
+        "sha256": "41a0bc5f9cc3d518e063395a1dc8f28ec22d1509e8f91f83c6b3e1de990fe5e2"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-4.png",
+        "sha256": "46d04e8ede7c5f2b7dac334145fd56863b62fb03dc9d9df2634b588c7401be60"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-0.png",
+        "sha256": "2368ec47ae0ddb761a04685f738b669ca15e84f331d4fe49f7ecc9c37c89941b"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-1.png",
+        "sha256": "fa43b30a095bc2500e3efbdfe088d503fe812eb5c9316bad706cb4eeeb01aacf"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-2.png",
+        "sha256": "a1b78ea057159f68df0e0c327049eedb2f0eb2c7a39ca912d0ef809e7e3dc87f"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-3.png",
+        "sha256": "9714d7ee1e0c7b76260278e5e647bd0a4564941fd81a0c06f689eab73bb4a207"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-4.png",
+        "sha256": "2381295f6f2677b8ed66e51a7292d230b4d766330cd9db85ec373ad0766b7bbf"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-02/art/08-barrier.png",
+      "sha256": "1159e17cb29c53525a6e83a0cf702d1bf947ab5f2d8e014013fae7813e9a82da"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "panels": [
+    {
+      "beat": "黒手袋の掌がレンの進路を止める",
+      "view": "黒手袋の掌がレンの進路を止める",
+      "frame": "row 1; full-width panel",
+      "voice": "無言"
+    },
+    {
+      "beat": "ルークの制止、奥の別の足場にはまだ母子",
+      "view": "ルークの制止、奥の別の足場にはまだ母子",
+      "frame": "row 2; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Rook",
+        "text": "立入禁止だ。",
+        "columns": [
+          "立入禁止だ。"
+        ],
+        "type": "speech"
+      }
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "direction": "Upper shallow black-gloved palm blocking Ren; lower medium Rook face speaks with family far above behind. Ren unarmored on lower-left safe ledge. No attack or bridge yet.",
+    "observedPanelBeats": [
+      "黒手袋の掌がレンの進路を止める",
+      "ルークの制止、奥の別の足場にはまだ母子"
+    ]
+  }
+}

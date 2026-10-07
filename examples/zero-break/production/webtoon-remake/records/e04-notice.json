@@ -1,0 +1,164 @@
+{
+  "id": "e04-notice",
+  "episode": 4,
+  "shotId": "notice",
+  "beforeShot": {
+    "id": "notice",
+    "file": "08-notice.png",
+    "crop": "portrait",
+    "shape": "right",
+    "aspect": "1024x1280",
+    "pause": 65,
+    "scene": "Noa hears vibrating valve and turns toward boiler; Ren notices hiss behind Noa, chest faint cyan. Mira holds paper pipe map still rolled.",
+    "lines": [
+      {
+        "speaker": "Noa",
+        "text": "圧力が、戻らない。",
+        "columns": [
+          "圧力が、",
+          "戻らない。"
+        ],
+        "type": "speech"
+      }
+    ],
+    "status": "generated",
+    "state": "Noa hears vibrating valve and turns toward boiler; Ren notices hiss behind Noa, chest faint cyan. Mira holds paper pipe map still rolled.",
+    "pacing": "short action / reaction",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Edit ONLY Ren's clothing and chest in the first manga panel. He is still UNARMORED while noticing the boiler fault. Remove every black metal plate from his shoulders, chest and arms, and replace with his plain BLACK SHORT-SLEEVE fabric shirt and brown narrow straps as in the second image. Bare upper arms and bare hands, no gauntlets. Remove the large cyan star and all cyan seam lines. At most one tiny faint cyan point through the shirt, barely visible. Do not change Noa's orange hair, goggles, overalls, orange gloves, Mira's gown or rolled map, indoor boiler or composition. Keep exact vertically lettered Noa balloon 「圧力が、戻らない。」 and its tail. No full transformation at this moment.",
+    "sha256": "249a6e296d5e17e810942f2df8d2d7a4897a6636d745a2144f380db925080f57",
+    "references": [
+      "../v5/art/a14-rejection.png",
+      "../v5/art/16-relief.png",
+      "../production/references/noa.png"
+    ],
+    "baseline_sha256": "249a6e296d5e17e810942f2df8d2d7a4897a6636d745a2144f380db925080f57",
+    "widthPercent": 100,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-notice.png",
+  "references": [
+    "examples/zero-break/episode-04/art/08-notice.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Noa hears vibrating valve and turns toward boiler; Ren notices hiss behind Noa, chest faint cyan. Mira holds paper pipe map still rolled.\nExact layout, camera and mechanics: Upper broad workshop geography: Noa turns toward same faulty boiler, Ren/Mira near bench, Mira map still rolled. Lower larger Noa face exact warning in two columns, tense but controlled. Tiny hiss at valve, nobody deliberately triggers danger. Ren fabric chest faint cyan only.\nExact speech in chronological order: [{\"speaker\": \"Noa\", \"text\": \"圧力が、戻らない。\", \"columns\": [\"圧力が、\", \"戻らない。\"], \"type\": \"speech\"}]\nExact effects (each once, near physical cause): [\"シュー…\"]\nExact visible prop text: []. No other text.\n",
+  "layoutDirection": "Upper broad workshop geography: Noa turns toward same faulty boiler, Ren/Mira near bench, Mira map still rolled. Lower larger Noa face exact warning in two columns, tense but controlled. Tiny hiss at valve, nobody deliberately triggers danger. Ren fabric chest faint cyan only.",
+  "sounds": [
+    "シュー…"
+  ],
+  "visibleText": [],
+  "status": "planned",
+  "output": "examples/zero-break/episode-04/art/remake-notice.png",
+  "sha256": "9f5299d33af2d499e06f81cb1dc86f0e04ca50a7a0278c16587e995bde80ff71",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-6f71aa31-53d3-48c1-b7bd-473e541d501f.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 2,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-0.png",
+        "sha256": "b016d5664d817ba9812cd0a1f3c6800be060e6f4feef076b927b0eab970c310d"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-1.png",
+        "sha256": "786e969d8dc1734bdf9e4dc90e7dc1ab4c5fa7109055e85ec39c26b3233c84ad"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-2.png",
+        "sha256": "1ef2d46c7bf138033359ff4162dfb7584dc93cfa1f7eff449c79b9a4aa9db7e2"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-3.png",
+        "sha256": "b1bcac42196f49c500f72ebbdb91ca552886212ed154c03ef2b5c4f02d649aab"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-4.png",
+        "sha256": "0d4821435166f9fe8b852764b371d4a528b2d2cbdb675a771ed9e18b78e56711"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-0.png",
+        "sha256": "1a8a2ad5d9376e1098473a5e08e8ddaf0a88044e2f004e86c063892e34b41ab2"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-1.png",
+        "sha256": "3f7c4b015a5a6c12b3c5f1b6ce243a2b5f39ec3459750dbf6448548af5d0fe71"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-2.png",
+        "sha256": "1253f80fb382b593c72249c32c7fbd89afeb56a4d3b078f0ef74c99bf562cd6c"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-3.png",
+        "sha256": "a45cbee101883e12b24a024223f5f294461b1e0dd7f5ba2397170a93c485fa41"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-4.png",
+        "sha256": "896f4478916a2e5d5a8462d16b8177062c86c529daa792e527cf05832c05df4a"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-04/art/08-notice.png",
+      "sha256": "249a6e296d5e17e810942f2df8d2d7a4897a6636d745a2144f380db925080f57"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "executedRepairPrompt": "Edit this existing Webtoon image with small continuity corrections. Preserve its polished anime rendering, character identities, phone-legible type and actual frame layout. Keep exactly two stacked panels and exact Noa dialogue 圧力が、戻らない。 in large upright Japanese vertical lettering with orange-haired adult Noa speaking and tail to his mouth. The steam sound シュー… is incorrectly printed twice. Preserve the single upper-panel シュー… at the actual leaking pipe. REMOVE ONLY the lower duplicated シュー… and restore the surrounding background there. Any readable numbers on background pressure-gauge dials must be removed, leaving plain tick marks, a red danger arc and high needle. Preserve Ren ordinary soft black shirt, red scarf, bare hands, tiny cyan chest star; no chest armor yet. Preserve all poses, workshop geometry and frame count.",
+  "repairBefore": {
+    "path": "examples/zero-break/production/webtoon-remake/references/e04-notice-before-correction.png",
+    "sha256": "8cb2b5a0cc37ceb1e126220a6736bbdd4fc3409e99891d40c04fda9a8d1b5e5e"
+  },
+  "panels": [
+    {
+      "beat": "蒸気漏れと戻らない針を確認する",
+      "view": "蒸気漏れと戻らない針を確認する",
+      "frame": "row 1; full-width panel",
+      "voice": "無言"
+    },
+    {
+      "beat": "ノアが異常を告げる",
+      "view": "ノアが異常を告げる",
+      "frame": "row 2; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Noa",
+        "text": "圧力が、戻らない。",
+        "columns": [
+          "圧力が、",
+          "戻らない。"
+        ],
+        "type": "speech"
+      }
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "direction": "Upper broad workshop geography: Noa turns toward same faulty boiler, Ren/Mira near bench, Mira map still rolled. Lower larger Noa face exact warning in two columns, tense but controlled. Tiny hiss at valve, nobody deliberately triggers danger. Ren fabric chest faint cyan only.",
+    "observedPanelBeats": [
+      "蒸気漏れと戻らない針を確認する",
+      "ノアが異常を告げる"
+    ]
+  }
+}

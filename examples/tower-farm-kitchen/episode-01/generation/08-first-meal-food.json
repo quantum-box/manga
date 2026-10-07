@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-87edecfd-1928-4bc2-83eb-1cdcc6c9e1f1.png",
+  "adopted": "art/08-first-meal-food.png",
+  "original_sha256": "d6999ecde6948ffafdc798bb1582f94775236e759b26305a2412c811a4b3e7ca",
+  "adopted_sha256": "d6999ecde6948ffafdc798bb1582f94775236e759b26305a2412c811a4b3e7ca",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/08-first-meal-food.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Asset: an existing finished Japanese vertical-scroll Webtoon scene.\nImage 1 is the EDIT TARGET; Image 2 is FOOD APPEARANCE REFERENCE ONLY. Do not copy Image 2's panels, people, poses, lettering or arrangement.\nChange ONLY the edible contents of the bowls and spoon in Image 1 to match the same appetizing beef, barley, carrot and greens stew seen in Image 2. Smooth satin russet-brown gravy is the main visible surface, broad natural highlights and soft steam. A few tender brown beef chunks, clean orange carrot wedges and soft green leaf ribbons have clear large silhouettes and are partly submerged. Barley remains in the recipe but is softened and fully submerged; no individual grains are visible. Every original pale bead or grain cluster must disappear under the opaque smooth gravy. No small round or oval toppings, bubbling foam, granular stippling, dots, pitted holes, dark flecks or excessive texture on food. No round beads replaced with brown beads. Do not make meat look raw, slimy, rock-like or covered in tiny ridges. Comfortable humble home cooking, warm mouthwatering light, the same refined anime food illustration as the existing comic.\nKeep the ORIGINAL tall approximately 1:2 composition, exact panel boundaries and gutters, all character identities, expressions, poses, hands, clean clothing, utensils, bowl sizes and ceramic pattern, kitchen, timber counter, seating and wilted garden beyond the diner window. Do not restore the garden. No farm tools on the food counter. No new people, panels, objects or events.\nPreserve ALL original Japanese glyphs, vertical columns, balloon shapes, tails, font sizes and placement EXACTLY. Do not add, remove, duplicate, translate or retype any text. Edit the food only.\nThe complete unchanged dialogue is「今日は、ここで食べて。」「まだ、畑は治ってない。」「でも、水は動いたよ。」. Elna is offering the same bowl to Kou. Preserve this offering, the hesitant response and the warm reassurance, including the existing multi-panel progression. All bowl views contain the SAME smooth stew.\n",
+  "text_review": "passed_manual_390_and_360",
+  "continuity_review": "passed_manual_390_and_360",
+  "reference_files": [
+    {
+      "path": "generation/inputs/08-first-meal-lettered.png",
+      "sha256": "eaa1b1669ddaddc51da571781f84b21258c2ecb4e81d8fc4af56b486f130e197"
+    },
+    {
+      "path": "art/30-kitchen-fire-food.png",
+      "sha256": "0e1b282eea8284daf98c862596d45d70126a3c964cb436bb6579c5dcecbf496d"
+    }
+  ],
+  "selected_in_revision": "episode-01-food",
+  "food_review": "passed_manual_390_and_360",
+  "review": "Read at both native phone widths; smooth sauce and large food shapes; original lettering, identities, hands, bowls and crop state retained."
+}

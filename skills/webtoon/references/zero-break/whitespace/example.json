@@ -1,0 +1,99 @@
+{
+  "source_repository": "quantum-box/manga",
+  "source_directory": "examples/zero-break/production/scroll-pacing-sample",
+  "source_artifact_commit": "1490fe8bfc4a8149f91a53915051d5d84f419250",
+  "acceptance": {
+    "date": "2026-10-07",
+    "evidence": "あ、そうそう！上手くできてる 例とかskillに入れといたら？",
+    "scope": "visual whitespace direction and skill reference; not a full episode replacement, browser/device verification, or publication approval"
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "new_sparse_assets": [
+      "sound",
+      "voice",
+      "light"
+    ],
+    "unchanged_adopted_assets": [
+      "route",
+      "hero"
+    ]
+  },
+  "verification": {
+    "native_windows": 12,
+    "native_viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "total_height": 3385,
+        "notice_to_hero_image_start_px": 939.67
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "total_height": 3124,
+        "notice_to_hero_image_start_px": 867.31
+      }
+    ],
+    "browser": "not run",
+    "physical_device": "not run"
+  },
+  "images": [
+    {
+      "file": "complete-390.png",
+      "sha256": "a5a79d60270ed4c35842e216dac3e3d625c6eac32511d3e967f0d4907a7f81dd"
+    },
+    {
+      "file": "complete-360.png",
+      "sha256": "11bfb266701cf41f0324a964a5a4b0450a9297d030e64b978acc7db4751e06ed"
+    },
+    {
+      "file": "review/window-390-00.png",
+      "sha256": "dad04e167eea5442aa466cb768163d77a7a3b21dd9a53a1a23f42a1cdb2a03ab"
+    },
+    {
+      "file": "review/window-390-01.png",
+      "sha256": "e5c8595473541768ec129392970c75b9a55d49873c11f708de1e80b84103b26c"
+    },
+    {
+      "file": "review/window-390-02.png",
+      "sha256": "be30c5f77278dadf027ce329742ac27c8dfb89ebe032c1d4bfdaea981c9f5f0b"
+    },
+    {
+      "file": "review/window-390-03.png",
+      "sha256": "3763d8a7c276a2221acf1f86fb425e8096625868be1f10816ceffeaa84832a66"
+    },
+    {
+      "file": "review/window-390-04.png",
+      "sha256": "865d0b05bc472004d5c2a5c557d41b81b993ca04129f92d1cbbbc4d23e05cf52"
+    },
+    {
+      "file": "review/window-390-05.png",
+      "sha256": "4e4d3afc4f2b47c742181440f58fc81eef463c22ab40540629de0c2af40e47dd"
+    },
+    {
+      "file": "review/window-360-00.png",
+      "sha256": "08c1ae5ed3bae83cf6b3e0328fdcccc0ec05d625b2af289c01616e57b3e8511d"
+    },
+    {
+      "file": "review/window-360-01.png",
+      "sha256": "021c94666797e2e513340dff0372aef682637187f90dd92dc32716d751d8a22e"
+    },
+    {
+      "file": "review/window-360-02.png",
+      "sha256": "4b9bcbdca774872aaabef589c987b3475fdfd512c1faacdf71a8f93a18d0f1df"
+    },
+    {
+      "file": "review/window-360-03.png",
+      "sha256": "33612e18a64fed4107a9d81c4ac8d822144010bf2f1c5974ad709a3cd4c6602a"
+    },
+    {
+      "file": "review/window-360-04.png",
+      "sha256": "c8cbc3ecc72ffd811a9f8c290e48c51b7cd5103bd9154b0866dbc4fec145c283"
+    },
+    {
+      "file": "review/window-360-05.png",
+      "sha256": "7dfd400dd52a48d391ea3f5a0fc36b15932505ebd408d3252b6e081ce33e433c"
+    }
+  ]
+}

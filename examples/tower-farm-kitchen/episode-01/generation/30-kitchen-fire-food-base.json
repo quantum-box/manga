@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-82faee62-c1ba-44b6-9f20-11e98395d1b7.png",
+  "adopted": "generation/inputs/30-kitchen-fire-food-base.png",
+  "original_sha256": "5b480ef7e5c825114d0d4d593a6d300494ed00e8a1454dcc32015c5de2445f54",
+  "adopted_sha256": "5b480ef7e5c825114d0d4d593a6d300494ed00e8a1454dcc32015c5de2445f54",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/30-kitchen-fire-food-base.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Asset: an existing finished Japanese vertical Webtoon scene.\nImage 1 is the EDIT TARGET. Edit ONLY the FOOD in every pot, ladle and bowl in this image, to make the same humble purchased beef, barley and root-vegetable stew appetizing.\nThe original food incorrectly looks like a heap of oversized white round pearls. Completely replace those conspicuous bead clusters with a silky warm russet-brown broth, broad smooth liquid areas, a few tender braised beef pieces with restrained savory brown glaze, two or three clean orange carrot wedges, and small soft green leaf ribbons. The cooked barley remains an ingredient but is softened and mostly submerged in broth; do not illustrate it as a field of distinct circles. On the ladle and in the pour, show glossy continuous liquid and one tender carrot or beef bite, not rows of beads. Balanced natural portions, gentle translucent steam, pleasing warm cooking light, freshly cooked and ready to eat. Food illustration with clear readable ingredient silhouettes and subtle soft shading; avoid extreme macro texture. Tiny culinary details must not cover every square centimeter.\nPreserve the original refined anime linework and painted shading. Preserve ALL original people, faces, clothes, clean hands, their exact poses, pot, lid, bowl shape and ceramic pattern, ladle, utensils, kitchen, counter, every panel frame and gutter, and the tall original approximately 1:2 canvas and composition. No new panels or extra characters. Keep every existing Japanese glyph and its exact shape and placement unchanged, especially the fire sound「ぱち、ぱち。」and pouring sound「とろっ」. Do not add, remove, duplicate or retype text. No captions or labels.\nAvoid: dense bead fields, inflated spherical grains, pale pearl piles, clustered holes, pores, granular crust, stippling on food, unnecessary dark flecks, bubbling foam all over the surface, slime, excessive oily glare, raw-looking meat. Change food textures only; preserve the entire existing story and layout.\n",
+  "text_review": "pending",
+  "continuity_review": "pending",
+  "reference_files": [
+    {
+      "path": "generation/inputs/30-kitchen-fire.png",
+      "sha256": "4ef88d8e9df1d589fb8aee174fb33280fc2bf2efaa16e0060a541b6f9b960c95"
+    }
+  ],
+  "current_usage": "actual_edit_input_only",
+  "food_review": "rejected_visible_grain_density; corrected by selected edit; retained as actual edit input"
+}

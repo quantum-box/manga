@@ -1,0 +1,18 @@
+{
+  "id": "assembly-click-off",
+  "file": "scroll-armor-assemble.png",
+  "prompt": "Use case: precise-object-edit. Input is the EXACT adopted armor assembly artwork. Change ONLY the カチッ sound lettering and its tiny cyan emphasis strokes in the UPPER RIGHT wrist panel: remove them and restore the same pale blue/white city background there. This click is now heard once in a separate white scroll pause before the assembly. PRESERVE ALL other pixels/structure as closely as possible: diagonal split TOP row (RIGHT wrist plates on still bare fingers, LEFT black faceted boot), lower black chest plates around ONE cyan star, red scarf, no helmet; exact existing left ガシャッ, lower ガキンッ, and system notice 装甲固定。 remain intact. Same canvas/aspect, same three panel shapes, anatomy, hands, black armor/cyan seam palette, background. No full-body reveal, no new words, no added panels, no crop or layout change.",
+  "method": "built-in image_gen",
+  "sha256": "91cd5d39c9400dff1d41d5fdc512cca15d9a5b885e77e22a69ec1e43e3866bc9",
+  "width": 946,
+  "height": 1662,
+  "outputBasename": "exec-ade644bd-c2af-4211-9125-6d2bbab1aca9.png",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/layout-armor-assemble.png",
+      "sha256": "b384527bb611fe563f09824f5bcb9ffd533dc884b14e6327617d3139180b97a5"
+    }
+  ],
+  "nativeFullSizeReview": "passed",
+  "review": "Sparse lettering, punctuation, edit scope and character continuity inspected at original size; distant sound uses stylized dots."
+}

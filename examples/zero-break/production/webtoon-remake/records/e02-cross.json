@@ -1,0 +1,149 @@
+{
+  "id": "e02-cross",
+  "episode": 2,
+  "shotId": "cross",
+  "beforeShot": {
+    "id": "cross",
+    "file": "13-cross.png",
+    "crop": "tall",
+    "shape": "bleed",
+    "aspect": "1024x1792",
+    "pause": 65,
+    "scene": "Mother and boy cautiously step along held beam, grasping taut safety rope; residents pull rope from safe side, Ren's armor cracks while holding weight. They are MIDWAY, not safe yet.",
+    "lines": [],
+    "status": "generated",
+    "state": "Mother and boy cautiously step along held beam, grasping taut safety rope; residents pull rope from safe side, Ren's armor cracks while holding weight. They are MIDWAY, not safe yet.",
+    "pacing": "short action / reaction",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Edit the first illustration to correct the bridge mechanics in this rescue manga, keeping the exquisite anime art, stone aqueduct, chasm, olive green shirt boy and brown hooded mother and safe-side adult rope helpers. The second reference establishes geography; the third reference establishes Ren's actual support pose. Ren MUST NOT walk on the bridge or hold the rope. Move Ren to the LOWER LEFT on a small intact stone shelf BELOW the near end of the bridge. His boots brace against the shelf, both arms raised over his head, BOTH HANDS visibly support the UNDERSIDE of the near end of the diagonal stone beam. Ren remains in BASIC BLACK FACETED armor with thin CYAN seams and a CYAN star chest, RED scarf, messy black hair uncovered. The far end of the long stone beam rests firmly on the UNSAFE UPPER-RIGHT ledge. The brown hooded mother and eight-year-old olive green shirt boy are now HALFWAY ACROSS the narrow stone beam from upper right toward lower left, walking carefully while grasping the taut safety rope. The two adult villagers on the safe lower-left platform pull the other end of that safety rope. Draw a wide enough view in this tall panel to show Ren below supporting, family above crossing, and a deep open chasm underneath. Keep the people distinct and do not fuse any hands. No speech, no text, one tall cinematic continuous panel.",
+    "sha256": "5b8b8537e2e2c375e7c65a47f71cd94a3d1f7f9eb06404fa933ac795f3362c62",
+    "references": [
+      "../v5/art/a14-rejection.png",
+      "../v5/art/16-relief.png",
+      "../v5/art/14-hero.png",
+      "art/07-stranded.png"
+    ],
+    "baseline_sha256": "5b8b8537e2e2c375e7c65a47f71cd94a3d1f7f9eb06404fa933ac795f3362c62",
+    "widthPercent": 100,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-cross.png",
+  "references": [
+    "examples/zero-break/episode-02/art/13-cross.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Mother and boy cautiously step along held beam, grasping taut safety rope; residents pull rope from safe side, Ren's armor cracks while holding weight. They are MIDWAY, not safe yet.\nExact layout and camera: Large diagonal panel mother and boy MIDWAY on same inclined stone beam from upper-right toward lower-left, both holding taut safety rope; below shallow pair RIGHT Ren armored hands maintain load / LEFT residents pull safety rope. No one is safe yet.\nExact speech in chronological order: []\nExact effects (each once, associated with physical cause): [\"ギシ…\", \"ザッ\"]\nExact existing visible prop text: []. No other text.\n",
+  "layoutDirection": "Large diagonal panel mother and boy MIDWAY on same inclined stone beam from upper-right toward lower-left, both holding taut safety rope; below shallow pair RIGHT Ren armored hands maintain load / LEFT residents pull safety rope. No one is safe yet.",
+  "sounds": [
+    "ギシ…",
+    "ザッ"
+  ],
+  "status": "planned",
+  "output": "examples/zero-break/episode-02/art/remake-cross.png",
+  "sha256": "17cd9b6a84bc13908ca7378ce73d6ee402cfdea5cc259b17352d8f11979b7417",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-caa9c93a-2929-465f-83d5-6d2cd5c97fbf.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 3,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-0.png",
+        "sha256": "99aed4446a6abd18e0ef65c50d96a69e8c490311ffc0594bd91cc4ada4666715"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-1.png",
+        "sha256": "81f2a818c2c1c6f08eaea3b76941cfd2afb1086db4fc4f3a1a9f2b43c35b560c"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-2.png",
+        "sha256": "c6788b9dd21233f804aaa6c44db42c6e3533e1b640218da9bba2e958170a9120"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-3.png",
+        "sha256": "41a0bc5f9cc3d518e063395a1dc8f28ec22d1509e8f91f83c6b3e1de990fe5e2"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-4.png",
+        "sha256": "46d04e8ede7c5f2b7dac334145fd56863b62fb03dc9d9df2634b588c7401be60"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-0.png",
+        "sha256": "2368ec47ae0ddb761a04685f738b669ca15e84f331d4fe49f7ecc9c37c89941b"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-1.png",
+        "sha256": "fa43b30a095bc2500e3efbdfe088d503fe812eb5c9316bad706cb4eeeb01aacf"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-2.png",
+        "sha256": "a1b78ea057159f68df0e0c327049eedb2f0eb2c7a39ca912d0ef809e7e3dc87f"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-3.png",
+        "sha256": "9714d7ee1e0c7b76260278e5e647bd0a4564941fd81a0c06f689eab73bb4a207"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-4.png",
+        "sha256": "2381295f6f2677b8ed66e51a7292d230b4d766330cd9db85ec373ad0766b7bbf"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-02/art/13-cross.png",
+      "sha256": "5b8b8537e2e2c375e7c65a47f71cd94a3d1f7f9eb06404fa933ac795f3362c62"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "panels": [
+    {
+      "beat": "同じ梁を右上から左下へ渡る途中の母子",
+      "view": "同じ梁を右上から左下へ渡る途中の母子",
+      "frame": "row 1; full-width panel",
+      "voice": "無言"
+    },
+    {
+      "beat": "右：レンは梁の支持を続ける",
+      "view": "右：レンは梁の支持を続ける",
+      "frame": "row 2; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "左：大人たちが縄を引いて渡る人を支える",
+      "view": "左：大人たちが縄を引いて渡る人を支える",
+      "frame": "row 2; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "direction": "Large diagonal panel mother and boy MIDWAY on same inclined stone beam from upper-right toward lower-left, both holding taut safety rope; below shallow pair RIGHT Ren armored hands maintain load / LEFT residents pull safety rope. No one is safe yet.",
+    "observedPanelBeats": [
+      "同じ梁を右上から左下へ渡る途中の母子",
+      "右：レンは梁の支持を続ける",
+      "左：大人たちが縄を引いて渡る人を支える"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 # 第01話 — 採用原画の実行指示
 
-全10話の改稿は新規54素材・承認見本の再利用3素材。再利用・修正・採用原画の保持を generation-log.json で区別。以前の実行記録は Git の履歴で管理。
+採用原画の実行指示と参照ハッシュを generation-log.json に記録。以前の公開版・実行記録は Git の履歴で管理。
 
 この話の追加改稿：既存11素材の効果音編集・3素材の装着過程追加。元画像・修正前画像・実行指示は production/episode-01-sfx に保持。
 
@@ -853,4 +853,108 @@ ONLY speaker: Mira. EXACT text: 「その紋章……王家の工房のものよ
 Panel 4, downward order. Frame: full-width large close-up. Reader understands: Ren asks what the clue means, without naming the later enemy.. Visible camera subject / offscreen continuity: ONLY Ren basic armored shoulders/red scarf and worried face facing Mira offscreen right.. Voice / balloon: quiet troubled ordinary oval.
 ONLY speaker: Ren. EXACT text: 「じゃあ、なんで俺たちを襲った？」 (render contents only).
 
+```
+
+# 余白・スクロール改稿の実行指示
+
+表示窓と間の設計は production/episode-01-scroll/plan.json。新規生成・編集7枚と採用例の原画3枚を使用。旧原画は参照・実行履歴に必要な制作資料として保持。
+
+## scroll-wait-voice.png
+
+built-in image_gen
+
+参照：[]
+
+```text
+Use case: illustration-story. Asset: a sparse BORDERLESS Japanese Webtoon beat on pure WHITE #FFFFFF extending to every edge. Most of the canvas is truly empty white. Canvas approximately 1024x1024. No character, scenery, shadow, frame, grid, decorative HUD, balloon or tail. No other words or watermark. Large printed Japanese gothic, upright TOP-to-BOTTOM columns, RIGHT-to-LEFT column order, at least 72px glyph height on 1024px width for phone legibility. ONLY visible content: EXACT そのまま、待て。 as TWO short vertical columns near center. Right column そのまま、 ; left column 待て。. Dark charcoal #202A38. The unseen knight Rook is speaking quietly to Ren, waiting for a measurement. Place the line around y30%, substantial white surrounds it. No instrument or result. No quotation marks, no text labels.
+```
+
+## scroll-despair-voice.png
+
+built-in image_gen
+
+参照：[]
+
+```text
+Use case: illustration-story. Asset: a sparse BORDERLESS Japanese Webtoon beat on pure WHITE #FFFFFF extending to every edge. Most of the canvas is truly empty white. Canvas approximately 1024x1024. No character, scenery, shadow, frame, grid, decorative HUD, balloon or tail. No other words or watermark. Large printed Japanese gothic, upright TOP-to-BOTTOM columns, RIGHT-to-LEFT column order, at least 72px glyph height on 1024px width for phone legibility. ONLY visible content: Ren's EXACT inner thought ……ここでも、何もできないのか。 in THREE vertical columns near center, charcoal #283443. Right column ……ここでも、 ; middle column 何もできない ; left column のか。. The vertical ellipses must read as two groups of three dots going downward. He has been rejected for having zero magic. No person and no crystal. No extra labels, quotes or narration. Around y30%, generous blank space above and below.
+```
+
+## scroll-tremor-sound.png
+
+built-in image_gen
+
+参照：[]
+
+```text
+Use case: illustration-story. A sparse BORDERLESS Webtoon pause on flat pure WHITE #FFFFFF, 1024x1024 square. The ONLY visible element is EXACT ズ……ン。 in dark navy hand-inked heavy Japanese SFX, vertically descending near x55% y30%, broken rhythm between ズ and ン suggesting a distant heavy vibration. Medium size so the sound reads at 360px phone width; dark strong strokes. No figures, feet, ground, motion lines, objects, shadows, scenery, frames, panels, balloon, labels or other writing. Broad empty white. The source of the vibration will be revealed in a LATER image; keep the giant and its silhouette absent.
+```
+
+## scroll-tremor-detail.png
+
+built-in image_gen
+
+参照：[{"path": "examples/zero-break/v5/art/a16-tremor.png", "sha256": "78571b76164132d01b748d19d1790b5b707565c8a39ba2b78fe88e60eea1b660"}]
+
+```text
+Use case: illustration-story. Reference image establishes the EXACT ordinary dark leather boot, charcoal cargo trouser cuff, red scarf color, sunny white stone balcony and anime rendering of Ren before armor. Create ONE shallow close-up, landscape 1536x1024, camera near the ground: the same ordinary strapped dark boot planted on the WHITE stone balcony, tiny loose pebbles and dust subtly jolt from a distant vibration. Crop to foot and lower trouser only, no face or torso. Black faceted armor has NOT formed; shoe must remain ordinary brown-black leather. Simple mostly white floor, edge of red scarf only at top if needed. Thin rectangular frame allowed. This is the physical response to the preceding isolated sound. NO TEXT, NO SOUND LETTERING, no crystal/readout/zero, no giant, princess, cracks, new objects or people. Do not copy the reference composition with its giant sound word; do not show the later disaster.
+```
+
+## scroll-decision-voice.png
+
+built-in image_gen
+
+参照：[]
+
+```text
+Use case: illustration-story. Asset: a sparse BORDERLESS Japanese Webtoon beat on pure WHITE #FFFFFF extending to every edge. Most of the canvas is truly empty white. Canvas approximately 1024x1024. No character, scenery, shadow, frame, grid, decorative HUD, balloon or tail. No other words or watermark. Large printed Japanese gothic, upright TOP-to-BOTTOM columns, RIGHT-to-LEFT column order, at least 72px glyph height on 1024px width for phone legibility. ONLY visible content: Ren's EXACT thought 魔力がなくても、手くらい、伸ばせる。 in THREE vertical columns. Right column 魔力がなくても、 ; middle column 手くらい、 ; left column 伸ばせる。. Dark charcoal, centered around y25%. Real vertical punctuation. This is the moment he chooses to save a falling person despite having zero magic. No character, hand, rescue, armor or image of the next leap. No labels or quote marks.
+```
+
+## scroll-leap.png
+
+built-in image_gen
+
+参照：[{"path": "examples/zero-break/v5/art/sfx-08-leap.png", "sha256": "c48dca0c6404b5d1ae69f540f481e03f94df37f9a3d8b2b140c130013c81deed"}]
+
+```text
+Use case: precise-object-edit. Input is the EXACT adopted Zero Break leap artwork, not a style reference. Change ONLY the thought lettering, its white cloud balloon, and thought dots in the UPPER RIGHT: remove that entire thought balloon/text/dots, restore the simple same pale blue sky behind it. The removed thought is 魔力がなくても、手くらい、伸ばせる。 because it is now heard in a separate preceding white scroll pause. PRESERVE every other part: Ren's face, messy black hair, blue eyes, black short sleeves, red scarf, bare reaching hand with five fingers, actual downward leap from stone balcony toward the cargo awning, perspective, city, illustration colors, exact バッ！ sound, framing, canvas and dimensions. No new text or balloon, no armor, no blue power, no additional people, no crop/recomposition.
+```
+
+## scroll-click.png
+
+unchanged reuse of user-approved whitespace example
+
+参照："examples/zero-break/production/scroll-pacing-sample/art/sound.png"
+
+```text
+User-approved whitespace sample reused byte-for-byte.
+```
+
+## scroll-armor-assemble.png
+
+built-in image_gen
+
+参照：[{"path": "examples/zero-break/v5/art/layout-armor-assemble.png", "sha256": "b384527bb611fe563f09824f5bcb9ffd533dc884b14e6327617d3139180b97a5"}]
+
+```text
+Use case: precise-object-edit. Input is the EXACT adopted armor assembly artwork. Change ONLY the カチッ sound lettering and its tiny cyan emphasis strokes in the UPPER RIGHT wrist panel: remove them and restore the same pale blue/white city background there. This click is now heard once in a separate white scroll pause before the assembly. PRESERVE ALL other pixels/structure as closely as possible: diagonal split TOP row (RIGHT wrist plates on still bare fingers, LEFT black faceted boot), lower black chest plates around ONE cyan star, red scarf, no helmet; exact existing left ガシャッ, lower ガキンッ, and system notice 装甲固定。 remain intact. Same canvas/aspect, same three panel shapes, anatomy, hands, black armor/cyan seam palette, background. No full-body reveal, no new words, no added panels, no crop or layout change.
+```
+
+## scroll-notice.png
+
+unchanged reuse of user-approved whitespace example
+
+参照："examples/zero-break/production/scroll-pacing-sample/art/voice.png"
+
+```text
+User-approved whitespace sample reused byte-for-byte.
+```
+
+## scroll-light.png
+
+unchanged reuse of user-approved whitespace example
+
+参照："examples/zero-break/production/scroll-pacing-sample/art/light.png"
+
+```text
+User-approved whitespace sample reused byte-for-byte.
 ```

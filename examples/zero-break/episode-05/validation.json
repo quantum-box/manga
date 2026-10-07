@@ -1,49 +1,61 @@
 {
-  "edition": "context-dialogue-v6",
-  "panels": 26,
-  "readerSourceSha256": "231209bcb22f9599c706c0e52142eaa611c009282c24e277e9746f1fdc302abc",
+  "edition": "webtoon-remake-20261006",
+  "panels": 55,
+  "readerSourceSha256": "af865489bd326cfeb9f52b2cd69a433c10c70983fc5c1de9c996ee99c7581ebc",
   "source_assets_verified": true,
   "visualReview": {
     "status": "passed",
-    "method": "manual inspection of native raster exports; not browser/DOM inspection",
-    "assets": 18,
-    "panels": 26,
-    "all_assets_at_360": true,
-    "representative_intervals_at_390": true,
-    "exact_text_and_speakers": true,
-    "faces_hands_costumes_props_and_causality": true,
-    "continuity_notes": "空の食事と残された靴、名簿のハル、全員を戻す約束。救助前の不在と後の証拠を分離。",
-    "reviewed_files": [
-      {
-        "file": "review/v6-contact-360-0.png",
-        "sha256": "dda2a4b68b7e24c903b0d845c5aabdd22038de8d02761d7bd7b7dd5068ba68f5"
-      },
-      {
-        "file": "review/v6-contact-360-1.png",
-        "sha256": "9c22029a6e69f5d03c0c18b0ab48cddb1a9fbd79ce9ad74316373e6dd55e7cba"
-      },
-      {
-        "file": "review/v6-contact-360-2.png",
-        "sha256": "0eacb7aa1beac17583a40f2457b163db4c87df33299b0727be5bfe3f15689f9e"
-      },
-      {
-        "file": "review/v6-contact-360-3.png",
-        "sha256": "09bae32d29f38abba63ec7e52b21bf21424fe89c867be8118d9f0e7e7c12e1ff"
-      },
-      {
-        "file": "review/v6-contact-360-4.png",
-        "sha256": "9d86331774622a53a2d5120db746c9ea0563bd31c0e3674ddd295c8f2583e664"
-      },
-      {
-        "file": "review/v6-contact-390-4.png",
-        "sha256": "9b2de8ec6e5e81785014dc1b074bdc7928b257555c7478889664b7c3a06db56e"
-      }
+    "widths": [
+      360,
+      390
     ],
-    "user_acceptance": "not_recorded_for_full_revision"
+    "method": "native raster contact boards and sequence windows",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-0.png",
+        "sha256": "8de5c52f75c391d3ec7aa001b11d272a2fcb343ace58e770d73cada00f0d7fcc"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-1.png",
+        "sha256": "f7d8df5bd5fb339e89aa10a0635b71ac253f6e0866116b20da90333ada4c0681"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-2.png",
+        "sha256": "d8e0c33a00b85545e6f3c6eab04c3c406ddc783a1cc0dd837945600bad5b580b"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-3.png",
+        "sha256": "1985a20c1de6ac0ce1773beb305e4c85953944e66d95dc016095a969ba1d656a"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-4.png",
+        "sha256": "36f8576fca6cbf923ac632b9748ee8c9d879086ce2192e02bd885810d63efc05"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-0.png",
+        "sha256": "6d2268380e7b07e3d5c53d8fcc4d876ea94c18f139d88317481ac9d8611e6332"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-1.png",
+        "sha256": "6668511341cbbd35dd266c7c95c1db518650ecadcfd907fd682a9e24aab5c217"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-2.png",
+        "sha256": "979a87a814009e4c90d67353a4bd62e3ac26b9b355c8a37c1b33dd0570d18173"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-3.png",
+        "sha256": "d80b60173f774f8a4f1553a8174de696246a25da9c56720910f9b6b2928af165"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-4.png",
+        "sha256": "fb8ff847478c3a3644f032374fe40c8cd9f31f78efdb33e1ae1f17db67a0f93d"
+      }
+    ]
   },
   "mobileBrowserReview": {
     "status": "pending",
-    "note": "Local HTML browser access was restricted. Native canvas exports are not browser proof."
+    "note": "Prior edition review does not apply to revised art."
   },
   "physicalDeviceTested": false
 }

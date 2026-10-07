@@ -1,0 +1,28 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-203be8b0-0cbe-4d47-a175-88644b293562.png",
+  "adopted": "art/12-garden-walk.png",
+  "original_sha256": "ed04f776f64f594616c2afabc0bb3cb7c57c7665baafdb3a94cb911f77c811ae",
+  "adopted_sha256": "ed04f776f64f594616c2afabc0bb3cb7c57c7665baafdb3a94cb911f77c811ae",
+  "width": 725,
+  "height": 2170,
+  "prompt_file": "generation/12-garden-walk.prompt.txt",
+  "prompt": "Edit this failed Webtoon passage. Reference 1 is the rejected image, keep ONLY its top walking scene character identities, clothes and tower materials. Completely replace the entire page layout. Reference 2 is identity only; reference 3 is architecture only. Make ONE BORDERLESS, very tall 1:3 continuous camera journey. At the top blue-awning diner and small Elna walking ahead of Kou; middle follows paving down the path, wet puddles catching light and boots; bottom brings drooping yellow-green leafy plants into close foreground. Garden beds remain on right, lane on left, tower ceiling visible at top. Both characters only once each, not simultaneous duplicates. Preserve bruised wilted crops. No root lifting, no touched soil, no water clearing, no lid opening, no diagnosis. CRITICAL: remove ALL speech balloons and ALL dialogue. Only text allowed is exactly ぱちゃ in small uneven blue-dark letters beside boots stepping in puddle near middle. No other letters or labels. Do not recreate any bottom panels from ref 1. No border frames or horizontal comic grid. Let the scene and curved wet path carry the reader downward for three canvas widths. Clean earthy anime style, adult anatomy, no extra main cast. Do not restore vegetables or introduce a tank.\n",
+  "text_review": "passed_manual_390_and_360",
+  "continuity_review": "passed_manual_390_and_360",
+  "reference_files": [
+    {
+      "path": "generation/inputs/12-garden-walk-mixed.png",
+      "sha256": "d06d6a9196eb8e195186e9c993fa893e9600c793ad6214cf75a9b26fa9b8f61d"
+    },
+    {
+      "path": "../production/references/characters.png",
+      "sha256": "daf33d311c30dec01bfb99b99018038a7757d1effd4b01808826ecb3139bc42d"
+    },
+    {
+      "path": "../production/references/world.png",
+      "sha256": "a5565e8a769bb65d3222b72f3c57abd3bf3e5433a5d77310154449c3175a91f2"
+    }
+  ],
+  "selected_in_revision": "episode-01-long-scroll"
+}

@@ -1,0 +1,1148 @@
+{
+  "number": 1,
+  "title": "水の出口",
+  "time": "召喚当日・昼から夕方",
+  "state": "係員から塔の三階と他の来訪者、閉じた帰還門を知る。再開時期は不明。今夜は受付の休憩室。畑の点検に一食という合意と、区画の修理許可を得る。枯れた株は回復しない。",
+  "scenes": [
+    {
+      "canvasWidthPercent": 82,
+      "alignment": "right",
+      "scrollPurpose": "日常の手仕事を見せ、塔の畑への伏線にする。",
+      "soundEffects": [
+        {
+          "text": "ザクッ",
+          "source": "hand trowel enters soil",
+          "placement": "small rough dark-brown letters beside the blade"
+        }
+      ],
+      "plannedPanelCount": 2,
+      "referenceGroup": "earth",
+      "id": "01-earth-work",
+      "art": "art/01-earth-work.png",
+      "dialogue": [
+        [
+          "コウ",
+          "……水が、抜けてない。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 60,
+      "prompt": "generation/01-earth-work.prompt.txt",
+      "description": "At a real ordinary Earth vegetable plot shortly before summoning, TWO unequal shots: upper near-full-width closeup of Kou's trowel opening wet soil, lower larger medium view of Kou kneeling beside normal leafy vegetable rows. Same tan work jacket, cream shirt, green waist apron and brown boots. Real outdoor sky allowed ONLY in this memory. No other people, no magic yet.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "6ad84c892caa86ef157544bc42d0ea215fc96f4ad2b48031407b919c1595912e"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "光と白い間をたどり、着地の場所を次まで見せない。",
+      "soundEffects": [
+        {
+          "text": "カッ",
+          "source": "sudden summoning flash",
+          "placement": "bold white-center gold-outlined letters at the upper flash, upright, no balloon"
+        }
+      ],
+      "plannedPanelCount": 1,
+      "referenceGroup": "earth",
+      "id": "02-light-snap",
+      "art": "art/02-light-snap.png",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 420,
+      "prompt": "generation/02-light-snap.prompt.txt",
+      "description": "ONE borderless tall vertical transition. Earth soil and Kou's working hand at the top are interrupted by a brilliant white flash. The light descends through the middle into a pale ivory empty-looking fall, then one closeup of his startled eye at the bottom. He does not die or get injured. No tower, gate, future cause, symbols or magical source revealed. A disorienting moment rather than a poster.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "81eff26422150b4aa4ea931b98dcb1cdcc0b7a7d770bcd01e8fff19049bd9826"
+    },
+    {
+      "id": "01-arrival",
+      "art": "art/01-arrival-lettered.png",
+      "dialogue": [
+        [
+          "コウ・心",
+          "畑にいたはずなのに。"
+        ],
+        [
+          "コウ",
+          "ここ、どこだ……。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 200,
+      "prompt": "generation/01-arrival.prompt.txt",
+      "description": "One tall borderless vertical scene: Kou startled and unsteady on the paved lane at the top; his eyes follow immense pale sandstone ribs to the glowing ceiling; downward motion returns to his dirt-stained hands and green apron. Tower interior only, NOT open outdoor sky. He remembers farming but no Earth scene. Two separate moments, not duplicate simultaneous people.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "8946528a4ea13aca0a70bb59cb134207c76299a670cf64cbc616799bb1d91a8d"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "left",
+      "scrollPurpose": "靴、剣、通行人を見て異世界だと理解する。",
+      "soundEffects": [
+        {
+          "text": "ガチャ",
+          "source": "guard armor moves while walking",
+          "placement": "small hard metallic dark-gray lettering near armor"
+        },
+        {
+          "text": "コツ、コツ",
+          "source": "guard boots on stone",
+          "placement": "small separated footsteps following the downward path"
+        }
+      ],
+      "plannedPanelCount": 3,
+      "referenceGroup": "tower",
+      "id": "04-strange-street",
+      "art": "art/04-strange-street.png",
+      "dialogue": [
+        [
+          "コウ・心",
+          "剣……？　本物か。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "prompt": "generation/04-strange-street.prompt.txt",
+      "description": "THREE unequal successive observations inside the tower lane, no combat: upper shallow closeup of an anonymous armored guard's boots and sheathed sword passing; middle small RIGHT closeup of Kou's startled eye; lower larger wide view from behind Kou watching ordinary adventurers move under sandstone ceiling ribs. The guard wears a plain steel helmet, NOT Leon, no silver-haired face. Keep all weapons sheathed. Kou alone from main reference.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "b460553099f000e02d49090f4468155138c1ec9c3d590b90482270d5bfd5e7e2"
+    },
+    {
+      "canvasWidthPercent": 88,
+      "alignment": "left",
+      "scrollPurpose": "石壁と自分の手を確かめ、落ち着かないまま人へ助けを求める。",
+      "soundEffects": [],
+      "id": "33-ground-and-breath",
+      "art": "art/33-ground-and-breath.png",
+      "prompt": "generation/33-ground-and-breath.prompt.txt",
+      "edits": [],
+      "description": "THREE unequal silent close shots of Kou in SAME tower lane. Top small: boot plants on paving and hand braces on sandstone wall. Middle narrow: fingers feel real dirt on his green apron. Bottom LARGE: Kou takes shaky breath, worried eyes search toward wooden administrative stall. Physical grounding after seeing sword, before asking for help. No other person, no gate, no money pouch, no dialogue or SFX.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 210,
+      "width": 887,
+      "height": 1774,
+      "sha256": "bd2c18f3700d52e36565af284079a7e3bb1844fc42150f0ab348422054423699"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "場所を尋ねる普通の問いから始め、係員の気遣いで会話を成立させる。",
+      "soundEffects": [],
+      "plannedPanelCount": 2,
+      "referenceGroup": "tower",
+      "id": "05-ask-way",
+      "art": "art/05-ask-way-context.png",
+      "dialogue": [
+        [
+          "コウ",
+          "すみません。ここは、どこですか？"
+        ],
+        [
+          "係員",
+          "落ち着いて。けがは？"
+        ],
+        [
+          "コウ",
+          "大丈夫、だと思います。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 120,
+      "prompt": "generation/05-ask-way-context.prompt.txt",
+      "description": "THREE unequal shots at same wooden administrative stall. Establish Kou standing RIGHT and older gray-haired, small gray-bearded clerk in plain beige robe LEFT behind desk. Top two-shot Kou asks where he is. Middle close ONLY gentle clerk asks about injury. Bottom larger close ONLY Kou checks dirty but uninjured hand, answers hesitantly. No gate, maps, future answers. Clerk not Balt or Leon, no hat or weapons.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "f35edbbd577a4c75d42e12050c1e58cb3cc4a47aa1eda9130f69b0798596ac45",
+      "edits": []
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "係員の説明を聞き、天井を見上げて理解が追いつかない反応を置く。",
+      "soundEffects": [],
+      "id": "34-where-am-i",
+      "art": "art/34-where-am-i-clerk.png",
+      "prompt": "generation/34-where-am-i-clerk.prompt.txt",
+      "edits": [
+        {
+          "prompt": "generation/34-where-am-i-clerk.prompt.txt",
+          "record": "generation/34-where-am-i-clerk.json"
+        }
+      ],
+      "description": "THREE staggered unequal shots at SAME stall. Upper medium beige-robed clerk calmly tells location. Middle larger SILENT view from behind Kou looking up at sandstone ribs and luminous CLOSED ceiling, NO open sky. Bottom LARGE close Kou widened eyes and tense mouth, repeating the location as a short question. Two utterances, silent middle. No gate, no food. Kou RIGHT, clerk LEFT.",
+      "dialogue": [
+        [
+          "係員",
+          "ここは、塔の三階だ。"
+        ],
+        [
+          "コウ",
+          "……塔の、中？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 240,
+      "width": 885,
+      "height": 1777,
+      "sha256": "503b6340e29aa020bf5e18e37e5c4362954772801f1e85c2fdf68e12f654d871"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "本人の経験を話してから、係員が他にも来訪者がいると示唆する。",
+      "soundEffects": [],
+      "id": "35-others-arrived",
+      "art": "art/35-others-arrived-clerk.png",
+      "prompt": "generation/35-others-arrived-clerk.prompt.txt",
+      "edits": [
+        {
+          "prompt": "generation/35-others-arrived-clerk.prompt.txt",
+          "record": "generation/35-others-arrived-clerk.json"
+        }
+      ],
+      "description": "THREE UNEQUAL conversation shots at SAME stall. Upper Kou closeup says he was at farm; do NOT draw Earth memory. Middle shallow close his dirt-marked hand on apron as he describes flash, speaker mouth offscreen above, tail toward that mouth, not hand. Bottom larger older gray-haired beige-robed clerk recognizes pattern calmly. No magical cause, system UI, portal, lore, promise or new traveler. Kou RIGHT, clerk LEFT.",
+      "dialogue": [
+        [
+          "コウ",
+          "さっきまで、畑にいたんです。"
+        ],
+        [
+          "コウ",
+          "光ったと思ったら、ここに。"
+        ],
+        [
+          "係員",
+          "君も、外から来たんだな。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 150,
+      "width": 887,
+      "height": 1774,
+      "sha256": "590852c135841dbb1d81ce62cc20a2c527034b23649ed593defea96047756c0b"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "他の来訪者を知ってから、元の場所へ帰りたいという目的を本人が伝える。",
+      "soundEffects": [],
+      "id": "36-return-question",
+      "art": "art/36-return-question-clerk.png",
+      "prompt": "generation/36-return-question-clerk.prompt.txt",
+      "edits": [
+        {
+          "prompt": "generation/36-return-question-clerk.prompt.txt",
+          "record": "generation/36-return-question-clerk.json"
+        }
+      ],
+      "description": "THREE unequal shots SAME stall. Top close Kou reacts to word 'also' and asks whether others exist. Middle medium gray-haired beige-robed clerk answers. Lower LARGE vulnerable Kou face and rough hand against chest, quietly wants to go home. Not confident or demanding. No portal, new travelers, promise, future answer, food. Separate downward moments, ivory space. Kou RIGHT, clerk LEFT.",
+      "dialogue": [
+        [
+          "コウ",
+          "同じような人が、いるんですか？"
+        ],
+        [
+          "係員",
+          "何人か、ここで暮らしてる。"
+        ],
+        [
+          "コウ",
+          "元の場所に、帰りたいんです。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 220,
+      "width": 887,
+      "height": 1774,
+      "sha256": "602a35be708946158104c71a57011d9ca97db30446e73e1076cf995944716c35"
+    },
+    {
+      "id": "02-gate",
+      "art": "art/02-gate-context-clerk.png",
+      "dialogue": [
+        [
+          "係員",
+          "帰還の門がある。"
+        ],
+        [
+          "コウ",
+          "帰れるんですか？"
+        ],
+        [
+          "係員",
+          "今は閉じてる。調査待ちだ。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 110,
+      "prompt": "generation/02-gate-context-clerk.prompt.txt",
+      "description": "THREE unequal shots SAME stall. Upper medium older beige-robed clerk points toward distant unlit shut stone doorway beneath tower ribs, first introduces return gate. Middle small hopeful Kou face asks if returning is possible. Bottom wider clerk speaks gravely, Kou shoulders tense. No map, opening portal, return date, success guarantee, UI or magical source. Word gate has NOT been asked by Kou earlier. Kou RIGHT, clerk LEFT.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "e15dc3f22dd2b045bab72c2a6153bf069800145d9db9ae3c6954ebf63446c748",
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "帰還門という言葉は係員が初めて出す。希望と、今は使えない事実を順に聞く。",
+      "soundEffects": [],
+      "edits": [
+        {
+          "prompt": "generation/02-gate-context-clerk.prompt.txt",
+          "record": "generation/02-gate-context-clerk.json"
+        }
+      ]
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "再開時期が不明だと受け止める時間と、今夜の居場所を先に確保する。",
+      "soundEffects": [],
+      "id": "37-shelter-and-directions",
+      "art": "art/37-shelter-and-directions-clerk.png",
+      "prompt": "generation/37-shelter-and-directions-clerk.prompt.txt",
+      "edits": [
+        {
+          "prompt": "generation/37-shelter-and-directions-clerk.prompt.txt",
+          "record": "generation/37-shelter-and-directions-clerk.json"
+        }
+      ],
+      "description": "FOUR VARIED quiet beats SAME stall BEFORE Kou leaves. Top medium Kou asks when gate opens. Next small close older beige-robed clerk says he does not know. Next larger medium clerk gestures to plain bench inside his service stall as modest overnight rest room; not inn, no luxury or money. Bottom close Kou quietly thanks him, shoulders ease slightly. No food, job, gate schedule or extra staff. Tall 1:3 canvas, four beats downwards, no uniform grid.",
+      "dialogue": [
+        [
+          "コウ",
+          "いつ、開くんですか？"
+        ],
+        [
+          "係員",
+          "まだ、分からない。"
+        ],
+        [
+          "係員",
+          "今夜は、ここの休憩室でいい。"
+        ],
+        [
+          "コウ",
+          "……ありがとうございます。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 170,
+      "width": 724,
+      "height": 2172,
+      "sha256": "55ad0cbe028c06556e0a01821b6949ae0bde176b8e824d47a3466b4f114d2c7e"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "帰れない事実を受け止める無音の間。",
+      "soundEffects": [
+        {
+          "text": "グッ",
+          "source": "Kou tightens his fist",
+          "placement": "small beside the clenched hand"
+        }
+      ],
+      "plannedPanelCount": 2,
+      "referenceGroup": "tower",
+      "id": "07-closed-gate",
+      "art": "art/07-closed-gate.png",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 520,
+      "prompt": "generation/07-closed-gate.prompt.txt",
+      "description": "TWO very unequal silent shots after the clerk's answer: upper tall borderless view of a shut pale stone return portal recessed under sandstone ribs, inert and dark, with Kou small at its foot; lower narrow closeup of Kou's empty open hand relaxing into a tense fist. No magical portal opening, no code, no modern phone, no proof of why it is shut.",
+      "width": 889,
+      "height": 1769,
+      "sha256": "3315c0ae927227fb7f68cf9f630e347b467d053043f94ca5b7d00f0a4231fc5d"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "持っているのは作業道具だけだと確かめ、食事代を持たない事情を伝える。",
+      "soundEffects": [
+        {
+          "text": "コツ",
+          "source": "Kou boot on paving",
+          "placement": "small letters by sole"
+        },
+        {
+          "text": "ぐう……",
+          "source": "Kou stomach",
+          "placement": "soft letters near stomach, no balloon"
+        }
+      ],
+      "plannedPanelCount": 3,
+      "referenceGroup": "tower",
+      "id": "08-hungry-walk",
+      "art": "art/08-hungry-walk-context.png",
+      "dialogue": [
+        [
+          "コウ・心",
+          "道具しか、ない。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 180,
+      "prompt": "generation/08-hungry-walk-context.prompt.txt",
+      "description": "THREE unequal successive CLOSEUPS after Kou leaves stall and sees shut gate. Top his hand opens EXISTING rectangular brown LEATHER TOOL SATCHEL at belt, sees worn trowel handle, small notebook and string; not coin purse. Middle boot steps on tower paving. Bottom larger hand on stomach under cream shirt and green apron. Single thought belongs to TOP tool shot. NO wallet, coin purse, money, phone, meal or Elna. Ivory space around asymmetrical hand and boot panels.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "2f8ee725bdad7315ce7e3964bef9558c50b9753300c823d070b262ce0deb4f68",
+      "edits": []
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "包丁の音を先に届け、湯気を追って食堂へ着く。",
+      "soundEffects": [
+        {
+          "text": "トン、トン",
+          "source": "cook knife tapping chopping board inside window",
+          "placement": "small rhythmic dark-brown lettering at the upper chopping hand"
+        }
+      ],
+      "plannedPanelCount": 1,
+      "referenceGroup": "tower",
+      "id": "09-steam-trail",
+      "art": "art/09-steam-trail.png",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 240,
+      "prompt": "generation/09-steam-trail.prompt.txt",
+      "description": "ONE long borderless vertical composition, portrait approximately 1:3, a camera journey rather than a page grid. At the top only a partial open diner window and the cream sleeve of the unseen cook's knife hand chopping on a CLEAN kitchen board; warm steam drifts downward through empty ivory space; at the bottom Kou at the lane looks toward the same blue-awning timber diner. Elna's face is not shown yet. Garden remains wilted. No harvest of new crops.",
+      "width": 724,
+      "height": 2172,
+      "sha256": "fb8632aa1ce87c3564819224980a0309396c5ce870fb3f631fd49d9dc402d1b3"
+    },
+    {
+      "id": "03-diner",
+      "art": "art/03-diner-context.png",
+      "dialogue": [
+        [
+          "コウ",
+          "すみません。水を、もらえますか。"
+        ],
+        [
+          "エルナ",
+          "大丈夫？　こっちに座って。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 130,
+      "prompt": "generation/03-diner-context.prompt.txt",
+      "description": "THREE unequal shots at BLUE-AWNING diner EXTERIOR. Top medium hesitant Kou RIGHT outside serving window and Elna LEFT inside, he requests WATER ONLY. Middle close Elna notices strained face and gently offers seat. Bottom shallow SILENT shot Kou lowers himself onto OUTDOOR wooden bench at window. No food, work offer, names or extra menu text. Water cup NOT delivered yet. Original identity clothes, no farm tools on food counter. Unequal situation and focused closeups, not identical boxes.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "b4b9ebe414029623ba21608cfc872c791e01186a7a6fc62def041a8e95a257de",
+      "soundEffects": [],
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "いきなり仕事を売り込まず、水を頼み、店側の声かけを受けて座る。",
+      "edits": []
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "水を受け取り、飲んで落ち着く時間を、食事や仕事の話の前に置く。",
+      "soundEffects": [],
+      "id": "38-water-and-thanks",
+      "art": "art/38-water-and-thanks.png",
+      "prompt": "generation/38-water-and-thanks.prompt.txt",
+      "edits": [],
+      "description": "THREE quiet unequal close shots SAME diner window, Kou seated outside RIGHT, Elna standing inside LEFT. Upper shallow hands: Elna places ONE plain small brown ceramic WATER CUP on counter, clear clean water NOT stew. Her utterance from offscreen, tail UP LEFT toward mouth, not cup. Middle larger SILENT Kou holds SAME cup both hands, drinks slowly. Bottom Kou face with lowered cup gives thanks, shoulders start to release. Elna out of closeup frame, still inside. No food, job, harvest, terms or new cast.",
+      "dialogue": [
+        [
+          "エルナ",
+          "はい。ゆっくり飲んで。"
+        ],
+        [
+          "コウ",
+          "ありがとうございます。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 190,
+      "width": 887,
+      "height": 1774,
+      "sha256": "7a546b818e05351585694a252b7e122f43b8df5f5e922909ebe2f242448cd157"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "食事の誘いを受け、お金がないと正直に話して断ろうとする。",
+      "soundEffects": [
+        {
+          "text": "ぐう…",
+          "source": "Kou stomach under counter",
+          "placement": "small wavering letters beside torso, not dialogue"
+        }
+      ],
+      "id": "39-cannot-pay",
+      "art": "art/39-cannot-pay.png",
+      "prompt": "generation/39-cannot-pay.prompt.txt",
+      "edits": [],
+      "description": "THREE unequal beats SAME window, Kou seated outside RIGHT with brown WATER CUP on counter, Elna inside LEFT. Top medium gentle Elna asks about food. Middle close embarrassed Kou acknowledges no money. Bottom larger close Kou shoulder and hand near cup politely declines to avoid imposing; Elna may be offscreen. SMALL stomach sound at lower torso, not comedy. No meal served, job promise, bill, magic money, handover or bargaining. Keep cup SAME size brown shape.",
+      "dialogue": [
+        [
+          "エルナ",
+          "何か、食べる？"
+        ],
+        [
+          "コウ",
+          "……今、お金がなくて。"
+        ],
+        [
+          "コウ",
+          "水だけで、大丈夫です。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 150,
+      "width": 887,
+      "height": 1774,
+      "sha256": "8545fd3cdcb1d2ece94edde912355b6eb9882de9c3bb5b7afa6bf2f1128218b4"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "right",
+      "scrollPurpose": "料理人が、農夫へ畑の相談をする理由を作る。",
+      "soundEffects": [],
+      "plannedPanelCount": 2,
+      "referenceGroup": "tower",
+      "id": "11-farmer-recognized",
+      "art": "art/11-farmer-recognized-context.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "その服、農家なの？"
+        ],
+        [
+          "コウ",
+          "七年、野菜を作ってました。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "prompt": "generation/11-farmer-recognized-context.prompt.txt",
+      "description": "Two unequal recognition shots at same diner window. Kou remains seated outside on RIGHT with the brown water cup; Elna stands inside on LEFT. Upper medium Elna notices his work clothes and tool satchel, asks about farming. Lower larger seated Kou answers. No dirty tool held or placed on food counter, no location change, no diagnosis or work agreement yet.",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "b3f834d902cc696735f68e750c56f0ab95af4451a3ec81a3cbbbc696b1d417c1",
+      "edits": [
+        {
+          "prompt": "generation/11-farmer-recognized-context.prompt.txt",
+          "record": "generation/11-farmer-recognized-context.json"
+        }
+      ]
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "農家だと分かった店主が対価つきの依頼を出し、コウが引き受けてから畑へ移動する。",
+      "soundEffects": [],
+      "id": "40-work-offer",
+      "art": "art/40-work-offer.png",
+      "prompt": "generation/40-work-offer.prompt.txt",
+      "edits": [],
+      "description": "THREE unequal beats AFTER Elna learns Kou is farmer with seven years experience. SAME diner exterior window. Upper medium Elna LEFT inside leans to point toward WILTED garden RIGHT of diner, worried request; Kou RIGHT outside still seated, looks where she points. Middle larger close sincere Elna face proposes one meal for LOOKING at plot, no cure guarantee. Bottom close tentatively hopeful Kou agrees politely, shoulder-turn prepares to stand, NOT already at roots. No finished drain, cured plants, meal, money, contract or UI. Farm tools remain at belt, no tools on counter. Large vertical glyphs, one utterance per downward shot.",
+      "dialogue": [
+        [
+          "エルナ",
+          "裏の畑、困ってるの。"
+        ],
+        [
+          "エルナ",
+          "見てくれたら、一食出すよ。"
+        ],
+        [
+          "コウ",
+          "僕でよければ、見せてください。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 170,
+      "width": 887,
+      "height": 1774,
+      "sha256": "538b1042f80fa079114ddc837b0ecae83fe08b1f12d6fe1a38e31661f3015cf2"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "食堂と畑の位置を、歩く視線と水の跡でつなぐ。",
+      "soundEffects": [
+        {
+          "text": "ぱちゃ",
+          "source": "Kou boot meets small puddle on path",
+          "placement": "soft small letters at water contact, away from faces"
+        }
+      ],
+      "plannedPanelCount": 1,
+      "referenceGroup": "garden",
+      "id": "12-garden-walk",
+      "art": "art/12-garden-walk.png",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 110,
+      "prompt": "generation/12-garden-walk.prompt.txt",
+      "description": "ONE borderless vertical camera journey from the blue diner awning at the upper-left along the narrow stone side path toward wilted garden beds to the right. Elna leads, Kou follows; below, the reader sees wet paving, boots at the edge and sagging leaves. Keep plants rooted, yellow-green and wilted, no healthy regrowth. The paved lane is left and garden right, under tower ceiling, no outdoor sky.",
+      "width": 725,
+      "height": 2170,
+      "sha256": "ed04f776f64f594616c2afabc0bb3cb7c57c7665baafdb3a94cb911f77c811ae"
+    },
+    {
+      "id": "04-wet-soil",
+      "art": "art/04-wet-soil-lettered.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "水も肥料も、増やしたのに。"
+        ],
+        [
+          "コウ",
+          "この土、ずっと湿ってる？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 80,
+      "prompt": "generation/04-wet-soil.prompt.txt",
+      "description": "Three unequal panels in the same plot: wide Elna left and crouching Kou right beside wilted broad leafy vegetables; closeup her tense hand holding a small fertilizer sack closed; lower closeup Kou pressing moist soil, not pouring water. Water remains pooled, drain is still blocked.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "eeb922fe69a641acf8e80643cce64755d3c28d4ba72397ff291542a6f1af544c"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "left",
+      "scrollPurpose": "表面の乾きと根域の湿りを別々に見る。",
+      "soundEffects": [
+        {
+          "text": "むに",
+          "source": "wet soil compressed gently between fingers",
+          "placement": "small soft mud-colored letters beside fingers"
+        }
+      ],
+      "plannedPanelCount": 3,
+      "referenceGroup": "garden",
+      "id": "14-surface-and-depth",
+      "art": "art/14-surface-and-depth.png",
+      "dialogue": [
+        [
+          "コウ",
+          "乾いてるのは、表面だけ。"
+        ],
+        [
+          "エルナ",
+          "朝も、水をやった。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 80,
+      "prompt": "generation/14-surface-and-depth.prompt.txt",
+      "description": "THREE unequal diagnostic closeups in SAME wilted garden: top shallow closeup of dry crumbly top skin; middle larger Kou's fingers press below it and reveal wet dark soil sticking together; bottom Elna's worried face while holding the CLOSED small fertilizer sack. No watering action, root pulling or instant cure. Kou remains crouched beside Elna.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "f919c521eec5bc1502304388ebb96a346ebecf1840eeb08bde7a26f24b36ba46"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "right",
+      "scrollPurpose": "触る前に一株の確認を求め、根を見る行動へつなぐ。",
+      "soundEffects": [],
+      "plannedPanelCount": 2,
+      "referenceGroup": "garden",
+      "id": "15-one-plant-permission",
+      "art": "art/15-one-plant-permission.png",
+      "dialogue": [
+        [
+          "コウ",
+          "一株、見てもいい？"
+        ],
+        [
+          "エルナ",
+          "……うん。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 60,
+      "prompt": "generation/15-one-plant-permission.prompt.txt",
+      "description": "TWO quiet medium closeups before the root inspection. Kou is crouching with a hand trowel beside one wilted plant still ROOTED, pointing to that single plant; Elna agrees with a hesitant face. No already extracted plant, no removal before permission. Garden architecture and closed fertilizer sack continue.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "cd290565a73c1d10c44aef9af6d71d21fb722b27dec028ab48a374040f21245a"
+    },
+    {
+      "id": "05-roots",
+      "art": "art/05-roots-lettered.png",
+      "dialogue": [
+        [
+          "コウ",
+          "葉より先に、根を見たい。"
+        ],
+        [
+          "コウ",
+          "悪い場所も、残して比べよう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 120,
+      "prompt": "generation/05-roots.prompt.txt",
+      "description": "Two medium panels with a narrow hand closeup between: Kou gently exposes one small plant's roots with a trowel; dark compact wet root zone and some damaged roots, no instant healthy glow; Elna silently watches and responds to his cautious expression. Exactly one dug plant, nearby plants remain rooted.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "b6d1fb329145291f2b5c4c9384399ce9273c9a4298512f6077da7966fbc3b27a"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "left",
+      "scrollPurpose": "根の傷みを見て、水の出口を調べる判断へ進む。",
+      "soundEffects": [
+        {
+          "text": "ぽと",
+          "source": "one muddy water droplet falling off exposed soil",
+          "placement": "small understated letters next to droplet"
+        }
+      ],
+      "plannedPanelCount": 2,
+      "referenceGroup": "garden",
+      "id": "17-roots-and-air",
+      "art": "art/17-roots-and-air.png",
+      "dialogue": [
+        [
+          "コウ",
+          "根にも、空気が要る。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 180,
+      "prompt": "generation/17-roots-and-air.prompt.txt",
+      "description": "TWO unequal panels following the existing root inspection: upper large precise closeup of the SAME one small wilted leafy plant held gently, wet compact dark soil on damaged brown roots; lower shoulder-view of Kou explaining briefly while Elna listens. No magical glow, no healthy bright roots or revived leaves. Only this one plant is uprooted, others remain in beds.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "bd17d69c6747e6d38f3dbd5e3d8df50293e21975bca76f3e534f9a3c0abbcec0"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "right",
+      "scrollPurpose": "世話をしたのに悪化した気持ちを受け止める。",
+      "soundEffects": [],
+      "plannedPanelCount": 2,
+      "referenceGroup": "garden",
+      "id": "18-elna-guilt",
+      "art": "art/18-elna-guilt.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "助けたくて、足したの。"
+        ],
+        [
+          "コウ",
+          "まず、出口を見よう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 260,
+      "prompt": "generation/18-elna-guilt.prompt.txt",
+      "description": "TWO uneven emotional shots in the same plot: upper large close face of Elna, headscarf and lower ponytail, holding her small CLOSED fertilizer sack against chest, ashamed but capable; lower off-center close face of Kou with patient expression looking toward path drain, no accusation. Wilted plants stay wilted. No new person.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "6ce842951636dc365e9c37f54de2a54c4ca68c670b4e5373c2d09b6e7dcad523"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "水の跡を下へたどり、出口の位置を見つける。",
+      "soundEffects": [
+        {
+          "text": "ぴちょ…",
+          "source": "drop from saturated soil falling into stagnant edge puddle",
+          "placement": "small thin gray-blue lettering near upper drop"
+        }
+      ],
+      "plannedPanelCount": 1,
+      "referenceGroup": "garden",
+      "id": "19-follow-water",
+      "art": "art/19-follow-water.png",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 140,
+      "prompt": "generation/19-follow-water.prompt.txt",
+      "description": "ONE tall borderless approximately 1:3 vertical camera journey, showing wet soil at garden edge near top, a small stagnant trickle reaching downward between stone edging and wet footprints, then a wooden inspection lid partly entering the bottom. No opened lid, no litter yet revealed, no repaired strong flow. People mostly offscreen, only Kou's brown boot and pointed hand guide observation. Plot to right, side path to left.",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cc6292fb608793758901b48695ac6982bc6b44958668e5e892b7f6a12c304426"
+    },
+    {
+      "id": "06-permission",
+      "art": "art/06-permission-lettered.png",
+      "dialogue": [
+        [
+          "コウ",
+          "この出口、誰が管理してる？"
+        ],
+        [
+          "エルナ",
+          "店の区画は、私が掃除する決まり。"
+        ],
+        [
+          "コウ",
+          "開けてもいい？"
+        ],
+        [
+          "エルナ",
+          "うん。お願い。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 60,
+      "prompt": "generation/06-permission.prompt.txt",
+      "description": "Three unequal conversation panels at removable wooden drain inspection cover near plot edge: Kou asks while pointing at cover; Elna with diner blue awning behind answers; their hands reach for the same cover after permission. Drain not flowing yet, leaves and silt block its opening.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "f3a246a2438007494c6c48106c6e69e04af51ff8df1529a286e4f403b46b741b"
+    },
+    {
+      "canvasWidthPercent": 94,
+      "alignment": "right",
+      "scrollPurpose": "木蓋の重さと手順を小さい動作で読む。",
+      "soundEffects": [
+        {
+          "text": "ギィッ",
+          "source": "wooden lid lifted",
+          "placement": "thin creaky brown letters along rising lid"
+        },
+        {
+          "text": "コトッ",
+          "source": "wooden lid rests on paving",
+          "placement": "small low-weight lettering at lower contact"
+        }
+      ],
+      "plannedPanelCount": 3,
+      "referenceGroup": "cover",
+      "id": "21-lift-cover",
+      "art": "art/21-lift-cover.png",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 50,
+      "prompt": "generation/21-lift-cover.prompt.txt",
+      "description": "THREE small quick asymmetric action shots after permission. RIGHT upper shot: Kou pulls the iron ring on the wooden inspection lid with his dirty hand. CENTER lower shot: Elna lifts the SAME rectangular wooden lid by the edge with both hands. LEFT lowest shot: she rests the lid upright safely on paving. The open channel is still blocked with packed wet leaves, no flowing water yet. No digging or breaking sandstone.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "5bd1fab9a2f42e0214cc9ca4a1dacc6dd39e2ccd26c0e059689e9f2179999777"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "left",
+      "scrollPurpose": "何が水を止めるか、詰まりの場所を接写で示す。",
+      "soundEffects": [],
+      "plannedPanelCount": 3,
+      "referenceGroup": "cover",
+      "id": "22-blocked-outlet",
+      "art": "art/22-blocked-outlet.png",
+      "dialogue": [
+        [
+          "コウ",
+          "ここで、止まってる。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 80,
+      "prompt": "generation/22-blocked-outlet.prompt.txt",
+      "description": "THREE unequal observations of the SAME open inspection channel. Upper precise closeup of a compact mat of leaves and mud wedged at accessible mouth of shallow stone outlet; middle Kou crouches and points without removing it; lower small Elna looks at his pointing hand. Stagnant water is upstream of the mat, downstream still only damp. Elna keeps the lid aside upright. No drained bed or lush plants.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "aa7f515e3e184fd76c84da8dc3717263620792972f142d2b42881e50ebf414cd"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "掃除の前に受け入れ先を確かめる。",
+      "soundEffects": [],
+      "plannedPanelCount": 2,
+      "referenceGroup": "cover",
+      "id": "23-check-receiver",
+      "art": "art/23-check-receiver.png",
+      "dialogue": [
+        [
+          "コウ",
+          "先の水路は、空いてる。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "prompt": "generation/23-check-receiver.prompt.txt",
+      "description": "ONE large wide situation panel within a tall portrait field, with a smaller downward eye-line inset: Kou follows the shallow downstream stone channel toward the OPEN common receiver beside the lane. The downstream path is unobstructed and not overflowing. He checks before clearing the upstream blockage. Elna remains nearby holding/resting the cover aside, not vanished or at another location. No water gush yet, no structural excavations.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "a56a7f58c0cda1c8adcdd93800e04f9b0fa5dd443fb393d0ca5f79b572d90330"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "left",
+      "scrollPurpose": "掃除を一動作で済ませず、道具と泥の抵抗を描く。",
+      "soundEffects": [
+        {
+          "text": "べちゃ",
+          "source": "wet leaves land in dirty utility bucket",
+          "placement": "soft heavy brown lettering by bucket rim"
+        }
+      ],
+      "plannedPanelCount": 3,
+      "referenceGroup": "cover",
+      "id": "24-clear-litter",
+      "art": "art/24-clear-litter.png",
+      "dialogue": [
+        [
+          "コウ",
+          "あと、少し。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 40,
+      "prompt": "generation/24-clear-litter.prompt.txt",
+      "description": "THREE tight quick diagonally bordered action closeups, all upright lettering: top-right Kou's small hand trowel scrapes packed wet leaf litter; middle-left his hand transfers removed litter into an ordinary dirty garden bucket on paving; lower wide hand closeup loosens the remaining small twig at the outlet. Elna helps hold the lid aside. The last obstruction remains, so water is not yet gushing. No clean food bowl, no fertilizer applied.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "e3212c5fbb643f8e0045cf9bcfe663e9bb0f7cd363832d2ecff042c3c2bc0904"
+    },
+    {
+      "canvasWidthPercent": 86,
+      "alignment": "right",
+      "scrollPurpose": "小さな予兆の音から、水が動く結果まで待たせる。",
+      "soundEffects": [
+        {
+          "text": "ゴ……",
+          "source": "air and water shifting under the loosened leaf mat",
+          "placement": "small low dark-blue lettering near upper water bubble, exact ellipsis"
+        }
+      ],
+      "plannedPanelCount": 1,
+      "referenceGroup": "cover",
+      "id": "25-water-tremor",
+      "art": "art/25-water-tremor.png",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 400,
+      "prompt": "generation/25-water-tremor.prompt.txt",
+      "description": "One spare macro closeup of a tiny air bubble at the open still-partly-blocked stone outlet near the upper fifth, no people and no lid across the channel. ゴ…… lies beside the bubble. Fade to quiet pale ivory below the upper third; no released stream yet.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "db7240de3ae4e1b44b992916d5d912dfc1fb392fa985803c1dc2f1224e5d1bac"
+    },
+    {
+      "id": "07-flow",
+      "art": "art/07-flow-repaired.png",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 140,
+      "prompt": "generation/07-flow.prompt.txt",
+      "description": "One tall flowing composition plus two small unequal hand closeups at the top: Kou removes leaf litter and silt from accessible outlet, Elna holds lifted cover aside; clear visible flow then follows the channel downward and out safely to common drain. No digging through structural wall, no flooding other houses, wilted plants remain wilted. The visible action causes the flow.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "1c9cb71c9721838b26818bf61e78bc743d74c4be8fb82fd15682ba667a1cf3d5",
+      "soundEffects": [
+        {
+          "text": "ごぼっ",
+          "source": "air and water escape the cleared outlet",
+          "placement": "drawn beside the outlet in the adopted original"
+        }
+      ]
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "流れる水を下へ追う長い見せ場。",
+      "soundEffects": [
+        {
+          "text": "ざああっ",
+          "source": "released water through the cleared stone channel",
+          "placement": "large flowing blue-gray drawn letters parallel to current in upper third, no balloon"
+        }
+      ],
+      "plannedPanelCount": 1,
+      "referenceGroup": "garden",
+      "id": "27-water-descent",
+      "art": "art/27-water-descent.png",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 300,
+      "prompt": "generation/27-water-descent.prompt.txt",
+      "description": "One uninterrupted borderless tall water path, with no people or panel frames. Water leaves the cleared stone outlet, curves downward through the shallow stone channel and joins the common drain. Removed leaves are in a dirty utility bucket at top, wooden cover rests upright outside. Wilted yellow-green plants remain wilted. Large ざああっ follows the current in upper third. No magic.",
+      "width": 724,
+      "height": 2172,
+      "sha256": "737df7b218ac816113310ac8cbe3b4e4390e7ee7066da15b20535e9fec080bd2"
+    },
+    {
+      "canvasWidthPercent": 94,
+      "alignment": "right",
+      "scrollPurpose": "作業の片付けと手洗いを、食堂へ入る前に描く。",
+      "soundEffects": [
+        {
+          "text": "コト…",
+          "source": "wood lid settles onto inspection frame",
+          "placement": "small subdued brown letters at lid edge"
+        },
+        {
+          "text": "さらさら",
+          "source": "clean wash water runs over hands",
+          "placement": "fine flowing gray-blue letters near lower hands"
+        }
+      ],
+      "plannedPanelCount": 3,
+      "referenceGroup": "garden",
+      "id": "29-put-away-and-wash",
+      "art": "art/29-put-away-and-wash.png",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 90,
+      "prompt": "generation/29-put-away-and-wash.prompt.txt",
+      "description": "THREE brisk unequal closeups before entering the kitchen. Top: Kou replaces the SAME wooden inspection cover over the accessible channel while water passes beneath it; the cover is not a plug in the outlet. Middle: dirty trowel and litter bucket are parked OUTSIDE beside the plot. Bottom: Kou rinses his dirty hands using a ladle of clean water over an outdoor utility basin, Elna holds a plain water jug. No brand-new high tank or filter from future episode 4. No food prep in utility basin.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "1f2cf8107f43313894203ef92b4823232bef01d95da2f2450049b9be43e74e3f"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "left",
+      "scrollPurpose": "水が動いた喜びと、作物を待つ時間を分ける。",
+      "soundEffects": [],
+      "plannedPanelCount": 2,
+      "referenceGroup": "garden",
+      "id": "28-relief-and-wait",
+      "art": "art/28-relief-and-wait.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "……流れた。"
+        ],
+        [
+          "コウ",
+          "ここから先は、待とう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 300,
+      "prompt": "generation/28-relief-and-wait.prompt.txt",
+      "description": "TWO unequal quiet emotion panels at the same now-flowing drain. Upper larger Elna sees moving water, eyes widen and shoulders ease, but she does not celebrate restored plants. Lower Kou looks to the still-wilted bed with cautious hope, the cleared drain and resting lid still nearby. No supporting heroes, no recovered crop, no harvest.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "c7ef9c8e28a569355ba366fb4feccdca5e952db7cc0d82d4106aff8f52099458"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "火と鍋の音から、温かい一皿の披露へつなぐ。",
+      "soundEffects": [
+        {
+          "text": "ぱち、ぱち",
+          "source": "small cooking fire crackles",
+          "placement": "small warm ochre letters near fire"
+        },
+        {
+          "text": "とろっ",
+          "source": "stew pours from ladle into bowl",
+          "placement": "rounded dark-brown letters next to ladle pour, keep food visible"
+        }
+      ],
+      "plannedPanelCount": 2,
+      "referenceGroup": "meal",
+      "id": "30-kitchen-fire",
+      "art": "art/30-kitchen-fire-food.png",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 240,
+      "prompt": "generation/30-kitchen-fire-food.prompt.txt",
+      "description": "TWO appetizing unequal closeups inside the original timber diner AFTER garden work and handwash. Upper shallow view of flame and closed/open edge of a cooking pot with steam. Lower large closeup Elna's CLEAN hand and ladle portions a stew of purchased barley, brown meat, orange root vegetable and greens into the SAME mottled brown-gray ceramic bowl of the following first-meal scene. No just-grown vegetables or farm tools on counter. Kou offscreen sitting and waiting. FOOD: smooth russet-brown gravy with a few tender beef chunks, clean carrot wedges and soft green leaves; softened purchased barley submerged, no visible bead field. Same stew from cooking to first bite; dialogue and wilted garden unchanged.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "0e1b282eea8284daf98c862596d45d70126a3c964cb436bb6579c5dcecbf496d",
+      "edits": [
+        {
+          "prompt": "generation/30-kitchen-fire-food.prompt.txt",
+          "record": "generation/30-kitchen-fire-food.json"
+        }
+      ],
+      "foodArtRevision": "episode-01-food"
+    },
+    {
+      "id": "08-first-meal",
+      "art": "art/08-first-meal-food.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日は、ここで食べて。"
+        ],
+        [
+          "コウ",
+          "まだ、畑は治ってない。"
+        ],
+        [
+          "エルナ",
+          "でも、水は動いたよ。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 240,
+      "prompt": "generation/08-first-meal-food.prompt.txt",
+      "description": "Three panels with final large warm scene: Elna sets a steaming barley-and-meat bowl on diner counter for Kou; closeup his rough hands near the bowl as he looks worried toward the still wilted garden; final Elna's gentle expression and Kou's relieved face in warm kitchen lamplight. Vegetables and grain are already purchased or existing, not newly grown. No miraculous lush plot. FOOD: smooth russet-brown gravy with a few tender beef chunks, clean carrot wedges and soft green leaves; softened purchased barley submerged, no visible bead field. Same stew from cooking to first bite; dialogue and wilted garden unchanged.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "d6999ecde6948ffafdc798bb1582f94775236e759b26305a2412c811a4b3e7ca",
+      "edits": [
+        {
+          "prompt": "generation/08-first-meal-food.prompt.txt",
+          "record": "generation/08-first-meal-food.json"
+        }
+      ],
+      "foodArtRevision": "episode-01-food"
+    },
+    {
+      "canvasWidthPercent": 100,
+      "alignment": "center",
+      "scrollPurpose": "食事を受け止め、明日の仕事を約束して閉じる。",
+      "soundEffects": [
+        {
+          "text": "ふう…",
+          "source": "Kou gently blows steam off spoon",
+          "placement": "small soft drawn letters beside breath, not in speech balloon"
+        }
+      ],
+      "plannedPanelCount": 3,
+      "referenceGroup": "meal",
+      "id": "32-first-bite-and-tomorrow",
+      "art": "art/32-first-bite-and-tomorrow-food.png",
+      "dialogue": [
+        [
+          "コウ",
+          "あったかい。"
+        ],
+        [
+          "エルナ",
+          "明日も、見てくれる？"
+        ],
+        [
+          "コウ",
+          "うん。朝に。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 400,
+      "prompt": "generation/32-first-bite-and-tomorrow-food.prompt.txt",
+      "description": "THREE unequal quiet final moments, not equal rectangles. Top small closeup of Kou blowing gently on a spoonful from the SAME mottled ceramic stew bowl, matching barley, brown meat, orange root and greens. Middle LARGE closeup of his softened face after tasting, his rough hands now clean, warmth rather than victory smugness. Bottom wider quiet counter scene, Elna asks from LEFT and Kou answers slightly lower RIGHT; leave airy ivory space between reactions. No crop recovery, new morning or future customer. Garden seen through doorway is still wilted. FOOD: smooth russet-brown gravy with a few tender beef chunks, clean carrot wedges and soft green leaves; softened purchased barley submerged, no visible bead field. Same stew from cooking to first bite; dialogue and wilted garden unchanged.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "fa588bbb5f1fc5924c7d62740ab17eddc7b1c15e3529bf89afd8e319ae23afdf",
+      "edits": [
+        {
+          "prompt": "generation/32-first-bite-and-tomorrow-food.prompt.txt",
+          "record": "generation/32-first-bite-and-tomorrow-food.json"
+        }
+      ],
+      "foodArtRevision": "episode-01-food"
+    }
+  ]
+}

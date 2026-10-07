@@ -1,0 +1,301 @@
+{
+  "id": "e02-rope",
+  "episode": 2,
+  "shotId": "rope",
+  "beforeShot": {
+    "id": "rope",
+    "file": "12-rope.png",
+    "crop": "portrait",
+    "shape": "right",
+    "aspect": "1024x1280",
+    "pause": 50,
+    "scene": "Mira hands coiled rope to two adult residents beside safe end of beam; one end already secured to intact column, Ren holds beam in background.",
+    "lines": [
+      {
+        "speaker": "Mira",
+        "text": "この縄を、支えてください。",
+        "columns": [
+          "この縄を、",
+          "支えて",
+          "ください。"
+        ],
+        "type": "speech"
+      }
+    ],
+    "status": "generated",
+    "state": "Mira hands coiled rope to two adult residents beside safe end of beam; one end already secured to intact column, Ren holds beam in background.",
+    "pacing": "short action / reaction",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Edit the first manga illustration to fix rescue continuity. Preserve its polished full-color anime manga style, crisp linework, Mira's face and elegant white blue gold gown, and the exact existing speech balloon 「この縄を、支えてください。」 in true Japanese vertical columns read right to left. Recompose the scene clearly: Mira is on the SAFE LOWER-LEFT ledge, passing a coiled rope to TWO ADULT RESIDENTS (adult male workers in simple tan and grey clothes). Replace the mother and boy beside Mira with those two adult helpers. One end of the rope is tied to the intact white column on this safe ledge. The mother in brown hooded shawl and eight-year-old boy in OLIVE GREEN shirt remain SMALL AND DISTANT on the UNSAFE UPPER-RIGHT ledge, separated by a visible chasm, as in the second reference. Ren must be in BLACK FACETED BASIC HERO ARMOR, CYAN seams and CYAN STAR chest, RED scarf, black hair uncovered, matching the third reference. Ren is UNDER the NEAR END of the diagonal stone beam at LOWER LEFT, boots firmly braced on a remaining lower shelf, BOTH ARMS raised ABOVE his head supporting the underside of that beam. He cannot grip it from above or stand on it. The beam's far end rests on the upper-right family ledge. Show credible load-bearing pose. Family has not crossed yet. Mira's balloon tail points only to Mira. Portrait manga shot, no collage, no extra text.",
+    "sha256": "86e3d94ade3ba660625181f5bc486f72864326a918f06c353be6a09275a8b8a0",
+    "references": [
+      "../v5/art/a14-rejection.png",
+      "../v5/art/16-relief.png",
+      "../v5/art/14-hero.png",
+      "art/07-stranded.png"
+    ],
+    "baseline_sha256": "86e3d94ade3ba660625181f5bc486f72864326a918f06c353be6a09275a8b8a0",
+    "widthPercent": 100,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-rope-r2.png",
+  "references": [
+    "examples/zero-break/episode-02/art/12-rope.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Mira hands coiled rope to two adult residents beside safe end of beam; one end already secured to intact column, Ren holds beam in background.\nExact layout and camera: Upper short row RIGHT Mira ties rope to same intact safe-side column / LEFT two adult residents take rope; lower medium Mira face says exact request while Ren remains visibly holding the beam behind. Both rope ends physically connected.\nExact speech in chronological order: [{\"speaker\": \"Mira\", \"text\": \"この縄を、支えてください。\", \"columns\": [\"この縄を、\", \"支えて\", \"ください。\"], \"type\": \"speech\"}]\nExact effects (each once, associated with physical cause): [\"キュッ\"]\nExact existing visible prop text: []. No other text.\n",
+  "layoutDirection": "Upper short row RIGHT Mira ties rope to same intact safe-side column / LEFT two adult residents take rope; lower medium Mira face says exact request while Ren remains visibly holding the beam behind. Both rope ends physically connected.",
+  "sounds": [
+    "キュッ"
+  ],
+  "status": "planned",
+  "output": "examples/zero-break/episode-02/art/remake-rope-r2.png",
+  "sha256": "ab7b3e31c15997a8f0c539f3a27da2f45f67edcbec8b9da89de9c5d180678529",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-c6ff1cd6-b605-4a01-a341-14cf2abd0d3a.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 3,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-0.png",
+        "sha256": "99aed4446a6abd18e0ef65c50d96a69e8c490311ffc0594bd91cc4ada4666715"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-1.png",
+        "sha256": "81f2a818c2c1c6f08eaea3b76941cfd2afb1086db4fc4f3a1a9f2b43c35b560c"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-2.png",
+        "sha256": "c6788b9dd21233f804aaa6c44db42c6e3533e1b640218da9bba2e958170a9120"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-3.png",
+        "sha256": "41a0bc5f9cc3d518e063395a1dc8f28ec22d1509e8f91f83c6b3e1de990fe5e2"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-4.png",
+        "sha256": "46d04e8ede7c5f2b7dac334145fd56863b62fb03dc9d9df2634b588c7401be60"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-0.png",
+        "sha256": "2368ec47ae0ddb761a04685f738b669ca15e84f331d4fe49f7ecc9c37c89941b"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-1.png",
+        "sha256": "fa43b30a095bc2500e3efbdfe088d503fe812eb5c9316bad706cb4eeeb01aacf"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-2.png",
+        "sha256": "a1b78ea057159f68df0e0c327049eedb2f0eb2c7a39ca912d0ef809e7e3dc87f"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-3.png",
+        "sha256": "9714d7ee1e0c7b76260278e5e647bd0a4564941fd81a0c06f689eab73bb4a207"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-4.png",
+        "sha256": "2381295f6f2677b8ed66e51a7292d230b4d766330cd9db85ec373ad0766b7bbf"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-02/art/12-rope.png",
+      "sha256": "86e3d94ade3ba660625181f5bc486f72864326a918f06c353be6a09275a8b8a0"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "executedRepairPrompt": "Recompose ONLY the LOWER large speech panel into a closer Mira-only speaker shot. Preserve upper RIGHT knot/LEFT citizens horizontal row EXACTLY. Lower panel shows ONE Mira waist-up beside same intact white-stone column/rope, face and hands large and clear; no visible Ren body in this lower panel. Ren CONTINUES holding the same beam offscreen, as shown by previous/next frames; a small same beam edge may remain at right. Lower speech exact この縄を、支えてください。 once in THREE UPRIGHT columns RIGHT この縄を、 / MIDDLE 支えて / LEFT ください。 . Make actual glyph height70px on1024 width, balloon at right with generous white padding, mouth tail to MIRA. No tiny text, thought dots, future safe family or invented captions. Preserve キュッ once in top knot panel. Detailed anime style, Mira identity/clothes and daytime light unchanged.",
+  "repairBefore": {
+    "path": "examples/zero-break/episode-02/art/remake-rope.png",
+    "sha256": "2fbd20738d0a1e348961b363a19b75212d8f9461ce24a038887644508f263293"
+  },
+  "panels": [
+    {
+      "beat": "右：ミラが縄を同じ柱へ締める",
+      "view": "右：ミラが縄を同じ柱へ締める",
+      "frame": "row 1; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "左：大人たちが縄を受け取る",
+      "view": "左：大人たちが縄を受け取る",
+      "frame": "row 1; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "ミラの大きな表情と声で縄を支える協力を頼む。レンは同じ梁を画面外で支え続ける",
+      "view": "ミラの大きな表情と声で縄を支える協力を頼む。レンは同じ梁を画面外で支え続ける",
+      "frame": "row 2; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Mira",
+        "text": "この縄を、支えてください。",
+        "columns": [
+          "この縄を、",
+          "支えて",
+          "ください。"
+        ],
+        "type": "speech"
+      }
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "direction": "Upper short row RIGHT Mira ties rope to same intact safe-side column / LEFT two adult residents take rope; lower medium Mira face says exact request while Ren remains visibly holding the beam behind. Both rope ends physically connected.",
+    "observedPanelBeats": [
+      "右：ミラが縄を同じ柱へ締める",
+      "左：大人たちが縄を受け取る",
+      "ミラの大きな表情と声で縄を支える協力を頼む。レンは同じ梁を画面外で支え続ける"
+    ]
+  },
+  "repairHistory": [
+    {
+      "id": "e02-rope",
+      "episode": 2,
+      "shotId": "rope",
+      "beforeShot": {
+        "id": "rope",
+        "file": "12-rope.png",
+        "crop": "portrait",
+        "shape": "right",
+        "aspect": "1024x1280",
+        "pause": 50,
+        "scene": "Mira hands coiled rope to two adult residents beside safe end of beam; one end already secured to intact column, Ren holds beam in background.",
+        "lines": [
+          {
+            "speaker": "Mira",
+            "text": "この縄を、支えてください。",
+            "columns": [
+              "この縄を、",
+              "支えて",
+              "ください。"
+            ],
+            "type": "speech"
+          }
+        ],
+        "status": "generated",
+        "state": "Mira hands coiled rope to two adult residents beside safe end of beam; one end already secured to intact column, Ren holds beam in background.",
+        "pacing": "short action / reaction",
+        "hidden": "Do not reveal the event of the next shot in this image.",
+        "prompt": "Edit the first manga illustration to fix rescue continuity. Preserve its polished full-color anime manga style, crisp linework, Mira's face and elegant white blue gold gown, and the exact existing speech balloon 「この縄を、支えてください。」 in true Japanese vertical columns read right to left. Recompose the scene clearly: Mira is on the SAFE LOWER-LEFT ledge, passing a coiled rope to TWO ADULT RESIDENTS (adult male workers in simple tan and grey clothes). Replace the mother and boy beside Mira with those two adult helpers. One end of the rope is tied to the intact white column on this safe ledge. The mother in brown hooded shawl and eight-year-old boy in OLIVE GREEN shirt remain SMALL AND DISTANT on the UNSAFE UPPER-RIGHT ledge, separated by a visible chasm, as in the second reference. Ren must be in BLACK FACETED BASIC HERO ARMOR, CYAN seams and CYAN STAR chest, RED scarf, black hair uncovered, matching the third reference. Ren is UNDER the NEAR END of the diagonal stone beam at LOWER LEFT, boots firmly braced on a remaining lower shelf, BOTH ARMS raised ABOVE his head supporting the underside of that beam. He cannot grip it from above or stand on it. The beam's far end rests on the upper-right family ledge. Show credible load-bearing pose. Family has not crossed yet. Mira's balloon tail points only to Mira. Portrait manga shot, no collage, no extra text.",
+        "sha256": "86e3d94ade3ba660625181f5bc486f72864326a918f06c353be6a09275a8b8a0",
+        "references": [
+          "../v5/art/a14-rejection.png",
+          "../v5/art/16-relief.png",
+          "../v5/art/14-hero.png",
+          "art/07-stranded.png"
+        ],
+        "baseline_sha256": "86e3d94ade3ba660625181f5bc486f72864326a918f06c353be6a09275a8b8a0",
+        "widthPercent": 100,
+        "provenance_v6": "retained adopted art; frame placement reviewed separately"
+      },
+      "file": "remake-rope.png",
+      "references": [
+        "examples/zero-break/episode-02/art/12-rope.png",
+        "skills/webtoon/references/zero-break/layout-sequence-390.png"
+      ],
+      "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Mira hands coiled rope to two adult residents beside safe end of beam; one end already secured to intact column, Ren holds beam in background.\nExact layout and camera: Upper short row RIGHT Mira ties rope to same intact safe-side column / LEFT two adult residents take rope; lower medium Mira face says exact request while Ren remains visibly holding the beam behind. Both rope ends physically connected.\nExact speech in chronological order: [{\"speaker\": \"Mira\", \"text\": \"この縄を、支えてください。\", \"columns\": [\"この縄を、\", \"支えて\", \"ください。\"], \"type\": \"speech\"}]\nExact effects (each once, associated with physical cause): [\"キュッ\"]\nExact existing visible prop text: []. No other text.\n",
+      "layoutDirection": "Upper short row RIGHT Mira ties rope to same intact safe-side column / LEFT two adult residents take rope; lower medium Mira face says exact request while Ren remains visibly holding the beam behind. Both rope ends physically connected.",
+      "sounds": [
+        "キュッ"
+      ],
+      "status": "planned",
+      "output": "examples/zero-break/episode-02/art/remake-rope.png",
+      "sha256": "2fbd20738d0a1e348961b363a19b75212d8f9461ce24a038887644508f263293",
+      "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-79eda6c3-ae74-4b38-acc4-f443295665f8.png",
+      "width": 1024,
+      "height": 1536,
+      "actualPanelCount": 3,
+      "nativeFullSizeReview": "passed",
+      "mobileImageReview": "pending",
+      "browserReview": "pending",
+      "method": "built-in image_gen",
+      "referenceHashes": [
+        {
+          "path": "examples/zero-break/episode-02/art/12-rope.png",
+          "sha256": "86e3d94ade3ba660625181f5bc486f72864326a918f06c353be6a09275a8b8a0"
+        },
+        {
+          "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+          "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+        }
+      ],
+      "executedRepairPrompt": "Precisely edit ONLY Ren's lower body in the LOWER large panel. He is supporting the same sloping stone beam continuously with BOTH armored hands unchanged. Draw BOTH his black armored boots fully PLANTED and braced on ONE intact LOWER LEFT stone ledge; extend the safe ledge under him if necessary. No leg hangs freely over the gap and no floating body. Keep beam sloping LOWER LEFT up to UPPER RIGHT and its far end supported on the offscreen family ledge. Preserve Mira, rope, column, citizens, top horizontal row, exact speech この縄を、支えてください。 and キュッ once, all faces/hands/costumes/palette. No new speech, no rescue outcome yet.",
+      "repairBefore": {
+        "path": "examples/zero-break/production/webtoon-remake/references/e02-rope-before-correction.png",
+        "sha256": "997deec2171566a7245ef14304b966370d7e47776b6f3578cefa046724a16d62"
+      },
+      "panels": [
+        {
+          "beat": "右：ミラが縄を同じ柱へ締める",
+          "view": "右：ミラが縄を同じ柱へ締める",
+          "frame": "row 1; horizontal row, right-to-left position 1/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "左：大人たちが縄を受け取る",
+          "view": "左：大人たちが縄を受け取る",
+          "frame": "row 1; horizontal row, right-to-left position 2/2",
+          "voice": "無言"
+        },
+        {
+          "beat": "ミラが協力を頼み、レンは両手と足場で梁を支え続ける",
+          "view": "ミラが協力を頼み、レンは両手と足場で梁を支え続ける",
+          "frame": "row 2; full-width panel",
+          "voice": "spoken balloon with tail to mouth",
+          "line": {
+            "speaker": "Mira",
+            "text": "この縄を、支えてください。",
+            "columns": [
+              "この縄を、",
+              "支えて",
+              "ください。"
+            ],
+            "type": "speech"
+          }
+        }
+      ],
+      "layout": {
+        "readingDirection": "right-to-left, then downward",
+        "rowsInReadingOrder": [
+          [
+            1,
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "direction": "Upper short row RIGHT Mira ties rope to same intact safe-side column / LEFT two adult residents take rope; lower medium Mira face says exact request while Ren remains visibly holding the beam behind. Both rope ends physically connected.",
+        "observedPanelBeats": [
+          "右：ミラが縄を同じ柱へ締める",
+          "左：大人たちが縄を受け取る",
+          "ミラが協力を頼み、レンは両手と足場で梁を支え続ける"
+        ]
+      }
+    }
+  ]
+}

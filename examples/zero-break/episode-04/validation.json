@@ -1,49 +1,61 @@
 {
-  "edition": "context-dialogue-v6",
-  "panels": 27,
-  "readerSourceSha256": "a6a7fbe2199115514d02a9e7f5c8c7876c76778157b567bc44b71a45bf7d996d",
+  "edition": "webtoon-remake-20261006",
+  "panels": 47,
+  "readerSourceSha256": "004edeb71852c399f6c519c18871d5073a45a10c15c5d0a1d6ab039b57203aec",
   "source_assets_verified": true,
   "visualReview": {
     "status": "passed",
-    "method": "manual inspection of native raster exports; not browser/DOM inspection",
-    "assets": 18,
-    "panels": 27,
-    "all_assets_at_360": true,
-    "representative_intervals_at_390": true,
-    "exact_text_and_speakers": true,
-    "faces_hands_costumes_props_and_causality": true,
-    "continuity_notes": "ミラがノアを紹介。橙髪、緑の目、ゴーグル、手袋を維持。配管図→操作→結果。",
-    "reviewed_files": [
-      {
-        "file": "review/v6-contact-360-0.png",
-        "sha256": "4e60ef2f96604e1f4f43a72a7f7e8814d6fa3ee73258234dc686c487779836d0"
-      },
-      {
-        "file": "review/v6-contact-360-1.png",
-        "sha256": "ccb48a80e7f93d77e736e679c4435e9a48530148889527eb20f58ec91663dd88"
-      },
-      {
-        "file": "review/v6-contact-360-2.png",
-        "sha256": "485fdcb48aad10815f22459555575ddb73db423dcae575224b1d4bf5738b4d68"
-      },
-      {
-        "file": "review/v6-contact-360-3.png",
-        "sha256": "9fa3034458829c3cf2def3fdee83dbc8a4cc8c427cf7fa087c1a9bccfb2bf7f2"
-      },
-      {
-        "file": "review/v6-contact-360-4.png",
-        "sha256": "e8ffd246646eea04d331a71ef4b285923d867b693dfed436547bd3293be95124"
-      },
-      {
-        "file": "review/v6-contact-390-0.png",
-        "sha256": "3950c691b163e3862b085849a1beb195f5e8a691d330429ade54c9e63bb162a4"
-      }
+    "widths": [
+      360,
+      390
     ],
-    "user_acceptance": "not_recorded_for_full_revision"
+    "method": "native raster contact boards and sequence windows",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-0.png",
+        "sha256": "b016d5664d817ba9812cd0a1f3c6800be060e6f4feef076b927b0eab970c310d"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-1.png",
+        "sha256": "786e969d8dc1734bdf9e4dc90e7dc1ab4c5fa7109055e85ec39c26b3233c84ad"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-2.png",
+        "sha256": "1ef2d46c7bf138033359ff4162dfb7584dc93cfa1f7eff449c79b9a4aa9db7e2"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-3.png",
+        "sha256": "b1bcac42196f49c500f72ebbdb91ca552886212ed154c03ef2b5c4f02d649aab"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-4.png",
+        "sha256": "0d4821435166f9fe8b852764b371d4a528b2d2cbdb675a771ed9e18b78e56711"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-0.png",
+        "sha256": "1a8a2ad5d9376e1098473a5e08e8ddaf0a88044e2f004e86c063892e34b41ab2"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-1.png",
+        "sha256": "3f7c4b015a5a6c12b3c5f1b6ce243a2b5f39ec3459750dbf6448548af5d0fe71"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-2.png",
+        "sha256": "1253f80fb382b593c72249c32c7fbd89afeb56a4d3b078f0ef74c99bf562cd6c"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-3.png",
+        "sha256": "a45cbee101883e12b24a024223f5f294461b1e0dd7f5ba2397170a93c485fa41"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-4.png",
+        "sha256": "896f4478916a2e5d5a8462d16b8177062c86c529daa792e527cf05832c05df4a"
+      }
+    ]
   },
   "mobileBrowserReview": {
     "status": "pending",
-    "note": "Local HTML browser access was restricted. Native canvas exports are not browser proof."
+    "note": "Prior edition review does not apply to revised art."
   },
   "physicalDeviceTested": false
 }

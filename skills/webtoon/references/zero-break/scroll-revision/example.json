@@ -1,0 +1,366 @@
+{
+  "type": "production example; full episode adoption not recorded",
+  "date": "2026-10-07",
+  "project": "quantum-box/manga",
+  "sourceCommit": "33616607760da85ac127b13a4232498ae82a37c5",
+  "source": "examples/zero-break/production/episode-01-scroll/verification.json",
+  "scope": {
+    "canonicalPanels": 73,
+    "sourceImages": 40,
+    "displayUnits": 76
+  },
+  "approvedDirection": "../whitespace/example.json",
+  "method": "byte-for-byte native viewport export copies; source artwork not repainted",
+  "browserReview": "pending",
+  "physicalDeviceReview": "not_run",
+  "images": [
+    {
+      "file": "window-360-waiting-voice.png",
+      "sha256": "2d4dcae9aa016ffca396126b04c3d58cf43e430a531fe2a9aa92e9a71d922faf",
+      "width": 360,
+      "height": 800
+    },
+    {
+      "file": "window-360-decision-voice.png",
+      "sha256": "9b0d08066b8fd61bbbc5ecc4ba0d4a3c111cc39f66476982caacd09063bc53b6",
+      "width": 360,
+      "height": 800
+    },
+    {
+      "file": "window-360-armor-click.png",
+      "sha256": "daa9a064716ea17b4c8b5101335bd5ddfcab58630ada0473c7cdd535a032cb91",
+      "width": 360,
+      "height": 800
+    },
+    {
+      "file": "window-360-fragment-pickup.png",
+      "sha256": "3a24d8c2479974fe7a240bffdfb6c3f2615830678ddc2fdd0bf59ba30499703b",
+      "width": 360,
+      "height": 800
+    },
+    {
+      "file": "window-360-fragment-emblem.png",
+      "sha256": "9535cb7406a41ff7e8e8b6508acc8b25bca6924351143d499d8cda37ba7f55c0",
+      "width": 360,
+      "height": 800
+    },
+    {
+      "file": "window-390-waiting-voice.png",
+      "sha256": "b073f75d4cd85a4762692fb990393beac8db3f8f9e6669b9c4adb4dec19639e8",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "window-390-decision-voice.png",
+      "sha256": "db349a54232ad0feee8761487554c0b7509edfed103943348aaaa399485a15a5",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "window-390-armor-click.png",
+      "sha256": "4c6ddee15eac5cf5e6d14fc210fd2650d57c8fe7d128625580aa87530bc43119",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "window-390-fragment-pickup.png",
+      "sha256": "4bd420737ccf8cb662ed04e7b1effe7dd30c722cdeef4a48419b159fb83757d0",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "window-390-fragment-emblem.png",
+      "sha256": "70651977235eed364c0813f397d775753c0f0e0c1e685c03f25e12be6ee81707",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "windows": [
+    {
+      "width": 360,
+      "unit": "waiting-voice",
+      "source": {
+        "id": "wait-voice",
+        "file": "scroll-wait-voice.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "1c2d6ea36b2b5d93e239a59f63f320e17e41a96efaf8c02da316e3fa5f3faee6",
+        "record": "examples/zero-break/production/episode-01-scroll/records/wait-voice.json"
+      },
+      "position": {
+        "id": "waiting-voice",
+        "sourceId": "wait-voice",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "x": 0,
+        "y": 9664.276403888074,
+        "width": 360,
+        "height": 360,
+        "pause": 73.84615384615385
+      },
+      "windowTop": 9627.353326964998,
+      "windowHeight": 800
+    },
+    {
+      "width": 360,
+      "unit": "decision-voice",
+      "source": {
+        "id": "decision-voice",
+        "file": "scroll-decision-voice.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "d2d28f5a3fb78dc8eccc24343d1508ee0923e68e4bab69f904a0fdf4fa909e8a",
+        "record": "examples/zero-break/production/episode-01-scroll/records/decision-voice.json"
+      },
+      "position": {
+        "id": "decision-voice",
+        "sourceId": "decision-voice",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "x": 0,
+        "y": 17787.319447954094,
+        "width": 360,
+        "height": 360,
+        "pause": 78.46153846153847
+      },
+      "windowTop": 17750.396371031016,
+      "windowHeight": 800
+    },
+    {
+      "width": 360,
+      "unit": "armor-click",
+      "source": {
+        "id": "click",
+        "file": "scroll-click.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "5270f6601934b3f6cbf9f6e02e79e1f02b630fd13fb46c87fe2b38841d41ecad",
+        "record": "examples/zero-break/production/episode-01-scroll/records/click.json"
+      },
+      "position": {
+        "id": "armor-click",
+        "sourceId": "click",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "x": 0,
+        "y": 25771.81851336952,
+        "width": 360,
+        "height": 360,
+        "pause": 38.769230769230774
+      },
+      "windowTop": 25734.89543644644,
+      "windowHeight": 800
+    },
+    {
+      "width": 360,
+      "unit": "fragment-pickup",
+      "source": {
+        "id": "e01-fragment",
+        "file": "v6-fragment.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "f45d8f1d2d254fd5e0e0b548315dfe504bef9e42d9a2dc399dbbace518c8a552"
+      },
+      "position": {
+        "id": "fragment-pickup",
+        "sourceId": "e01-fragment",
+        "crop": [
+          0,
+          0,
+          724,
+          364
+        ],
+        "x": 0,
+        "y": 31639.52160099163,
+        "width": 324,
+        "height": 162.8950276243094,
+        "pause": 627.6923076923077
+      },
+      "windowTop": 31602.59852406855,
+      "windowHeight": 800
+    },
+    {
+      "width": 360,
+      "unit": "fragment-emblem",
+      "source": {
+        "id": "e01-fragment",
+        "file": "v6-fragment.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "f45d8f1d2d254fd5e0e0b548315dfe504bef9e42d9a2dc399dbbace518c8a552"
+      },
+      "position": {
+        "id": "fragment-emblem",
+        "sourceId": "e01-fragment",
+        "crop": [
+          0,
+          383,
+          724,
+          607
+        ],
+        "x": 0,
+        "y": 32430.108936308246,
+        "width": 360,
+        "height": 301.8232044198895,
+        "pause": 184.6153846153846
+      },
+      "windowTop": 32393.18585938517,
+      "windowHeight": 800
+    },
+    {
+      "width": 390,
+      "unit": "waiting-voice",
+      "source": {
+        "id": "wait-voice",
+        "file": "scroll-wait-voice.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "1c2d6ea36b2b5d93e239a59f63f320e17e41a96efaf8c02da316e3fa5f3faee6",
+        "record": "examples/zero-break/production/episode-01-scroll/records/wait-voice.json"
+      },
+      "position": {
+        "id": "waiting-voice",
+        "sourceId": "wait-voice",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "x": 0,
+        "y": 10469.632770878748,
+        "width": 390,
+        "height": 390,
+        "pause": 80
+      },
+      "windowTop": 10429.632770878748,
+      "windowHeight": 844
+    },
+    {
+      "width": 390,
+      "unit": "decision-voice",
+      "source": {
+        "id": "decision-voice",
+        "file": "scroll-decision-voice.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "d2d28f5a3fb78dc8eccc24343d1508ee0923e68e4bab69f904a0fdf4fa909e8a",
+        "record": "examples/zero-break/production/episode-01-scroll/records/decision-voice.json"
+      },
+      "position": {
+        "id": "decision-voice",
+        "sourceId": "decision-voice",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "x": 0,
+        "y": 19269.59606861694,
+        "width": 390,
+        "height": 390,
+        "pause": 85
+      },
+      "windowTop": 19229.59606861694,
+      "windowHeight": 844
+    },
+    {
+      "width": 390,
+      "unit": "armor-click",
+      "source": {
+        "id": "click",
+        "file": "scroll-click.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "5270f6601934b3f6cbf9f6e02e79e1f02b630fd13fb46c87fe2b38841d41ecad",
+        "record": "examples/zero-break/production/episode-01-scroll/records/click.json"
+      },
+      "position": {
+        "id": "armor-click",
+        "sourceId": "click",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "x": 0,
+        "y": 27919.470056150312,
+        "width": 390,
+        "height": 390,
+        "pause": 42
+      },
+      "windowTop": 27879.470056150312,
+      "windowHeight": 844
+    },
+    {
+      "width": 390,
+      "unit": "fragment-pickup",
+      "source": {
+        "id": "e01-fragment",
+        "file": "v6-fragment.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "f45d8f1d2d254fd5e0e0b548315dfe504bef9e42d9a2dc399dbbace518c8a552"
+      },
+      "position": {
+        "id": "fragment-pickup",
+        "sourceId": "e01-fragment",
+        "crop": [
+          0,
+          0,
+          724,
+          364
+        ],
+        "x": 0,
+        "y": 34276.14840107428,
+        "width": 351,
+        "height": 176.4696132596685,
+        "pause": 680
+      },
+      "windowTop": 34236.14840107428,
+      "windowHeight": 844
+    },
+    {
+      "width": 390,
+      "unit": "fragment-emblem",
+      "source": {
+        "id": "e01-fragment",
+        "file": "v6-fragment.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "f45d8f1d2d254fd5e0e0b548315dfe504bef9e42d9a2dc399dbbace518c8a552"
+      },
+      "position": {
+        "id": "fragment-emblem",
+        "sourceId": "e01-fragment",
+        "crop": [
+          0,
+          383,
+          724,
+          607
+        ],
+        "x": 0,
+        "y": 35132.618014333944,
+        "width": 390,
+        "height": 326.97513812154693,
+        "pause": 200
+      },
+      "windowTop": 35092.618014333944,
+      "windowHeight": 844
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-c776ec33-1993-4b7b-a5d9-76a7e45253db.png",
+  "adopted": "art/32-first-bite-and-tomorrow-food.png",
+  "original_sha256": "fa588bbb5f1fc5924c7d62740ab17eddc7b1c15e3529bf89afd8e319ae23afdf",
+  "adopted_sha256": "fa588bbb5f1fc5924c7d62740ab17eddc7b1c15e3529bf89afd8e319ae23afdf",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/32-first-bite-and-tomorrow-food.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Asset: an existing finished Japanese vertical-scroll Webtoon scene.\nImage 1 is the EDIT TARGET; Image 2 is FOOD APPEARANCE REFERENCE ONLY. Do not copy Image 2's panels, people, poses, lettering or arrangement.\nChange ONLY the edible contents of the bowls and spoon in Image 1 to match the same appetizing beef, barley, carrot and greens stew seen in Image 2. Smooth satin russet-brown gravy is the main visible surface, broad natural highlights and soft steam. A few tender brown beef chunks, clean orange carrot wedges and soft green leaf ribbons have clear large silhouettes and are partly submerged. Barley remains in the recipe but is softened and fully submerged; no individual grains are visible. Every original pale bead or grain cluster must disappear under the opaque smooth gravy. No small round or oval toppings, bubbling foam, granular stippling, dots, pitted holes, dark flecks or excessive texture on food. No round beads replaced with brown beads. Do not make meat look raw, slimy, rock-like or covered in tiny ridges. Comfortable humble home cooking, warm mouthwatering light, the same refined anime food illustration as the existing comic.\nKeep the ORIGINAL tall approximately 1:2 composition, exact panel boundaries and gutters, all character identities, expressions, poses, hands, clean clothing, utensils, bowl sizes and ceramic pattern, kitchen, timber counter, seating and wilted garden beyond the diner window. Do not restore the garden. No farm tools on the food counter. No new people, panels, objects or events.\nPreserve ALL original Japanese glyphs, vertical columns, balloon shapes, tails, font sizes and placement EXACTLY. Do not add, remove, duplicate, translate or retype any text. Edit the food only.\nThe complete unchanged dialogue is「あったかい。」「明日も、見てくれる？」「うん。朝に。」and the existing breath sound「ふぅ…」. Kou's first spoonful should hold ONE small tender carrot bite lightly coated in smooth brown sauce, with no grain clusters or round pearls. Keep the original sequence: blowing gently, tasting and smiling, talking about tomorrow. Both spoon and bowl remain identical in style to the shared meal.\n",
+  "text_review": "passed_manual_390_and_360",
+  "continuity_review": "passed_manual_390_and_360",
+  "reference_files": [
+    {
+      "path": "generation/inputs/32-first-bite-and-tomorrow.png",
+      "sha256": "cb5b3781a300b933a2edade241b0e1818ece9eca68d6331531e88d5818c535d1"
+    },
+    {
+      "path": "art/30-kitchen-fire-food.png",
+      "sha256": "0e1b282eea8284daf98c862596d45d70126a3c964cb436bb6579c5dcecbf496d"
+    }
+  ],
+  "selected_in_revision": "episode-01-food",
+  "food_review": "passed_manual_390_and_360",
+  "review": "Read at both native phone widths; smooth sauce and large food shapes; original lettering, identities, hands, bowls and crop state retained."
+}

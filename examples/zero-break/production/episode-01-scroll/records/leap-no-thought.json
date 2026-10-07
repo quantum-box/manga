@@ -1,0 +1,18 @@
+{
+  "id": "leap-no-thought",
+  "file": "scroll-leap.png",
+  "prompt": "Use case: precise-object-edit. Input is the EXACT adopted Zero Break leap artwork, not a style reference. Change ONLY the thought lettering, its white cloud balloon, and thought dots in the UPPER RIGHT: remove that entire thought balloon/text/dots, restore the simple same pale blue sky behind it. The removed thought is 魔力がなくても、手くらい、伸ばせる。 because it is now heard in a separate preceding white scroll pause. PRESERVE every other part: Ren's face, messy black hair, blue eyes, black short sleeves, red scarf, bare reaching hand with five fingers, actual downward leap from stone balcony toward the cargo awning, perspective, city, illustration colors, exact バッ！ sound, framing, canvas and dimensions. No new text or balloon, no armor, no blue power, no additional people, no crop/recomposition.",
+  "method": "built-in image_gen",
+  "sha256": "6d0e0e7dbba21297bebc4780f97fc3547a6a2ad5d9b8d6668caf314262b9aec1",
+  "width": 1024,
+  "height": 1536,
+  "outputBasename": "exec-f0d9c198-9fb7-4e40-837e-356e4baa788d.png",
+  "references": [
+    {
+      "path": "examples/zero-break/v5/art/sfx-08-leap.png",
+      "sha256": "c48dca0c6404b5d1ae69f540f481e03f94df37f9a3d8b2b140c130013c81deed"
+    }
+  ],
+  "nativeFullSizeReview": "passed",
+  "review": "Sparse lettering, punctuation, edit scope and character continuity inspected at original size; distant sound uses stylized dots."
+}

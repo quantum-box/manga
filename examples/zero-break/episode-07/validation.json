@@ -1,49 +1,61 @@
 {
-  "edition": "context-dialogue-v6",
-  "panels": 28,
-  "readerSourceSha256": "9d18637d4021fb46df263f98b4e813b18be736c3a4bb361060bbe805d95d5374",
+  "edition": "webtoon-remake-20261006",
+  "panels": 52,
+  "readerSourceSha256": "fe15207e7be825dea59bd7e8b55804015e1c2c46fcdcdc2a661e163d2aed844c",
   "source_assets_verified": true,
   "visualReview": {
     "status": "passed",
-    "method": "manual inspection of native raster exports; not browser/DOM inspection",
-    "assets": 18,
-    "panels": 28,
-    "all_assets_at_360": true,
-    "representative_intervals_at_390": true,
-    "exact_text_and_speakers": true,
-    "faces_hands_costumes_props_and_causality": true,
-    "continuity_notes": "黄色い服の少女、ルークの判断と行動、謝罪と今後の役割を別コマにする。",
-    "reviewed_files": [
-      {
-        "file": "review/v6-contact-360-0.png",
-        "sha256": "8a6397923f937c01f2a8db10409154f3d08cd04e6ab238924a6ece849cb24085"
-      },
-      {
-        "file": "review/v6-contact-360-1.png",
-        "sha256": "6efe7c45b7de751874263565348f4106a3cd9310e4a4e2f5122d8650924dcb99"
-      },
-      {
-        "file": "review/v6-contact-360-2.png",
-        "sha256": "69cf814f608a71d38ea84027dedb4b42d7a61a244a382fad92fd9c0b2ba47830"
-      },
-      {
-        "file": "review/v6-contact-360-3.png",
-        "sha256": "62e5ce568f2d74af4b81c9ec277ab1d324c9d317b2694a7730eb8cf60db6074d"
-      },
-      {
-        "file": "review/v6-contact-360-4.png",
-        "sha256": "06d399da469c5c09f4bb2e78c74dab90d5bcc1d0171f8611e15996ea1700ca98"
-      },
-      {
-        "file": "review/v6-contact-390-3.png",
-        "sha256": "072fac48044a3cdc68a730ba712fabcc45cee9d005c560c406f41a39ab48623a"
-      }
+    "widths": [
+      360,
+      390
     ],
-    "user_acceptance": "not_recorded_for_full_revision"
+    "method": "native raster contact boards and sequence windows",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-07/review/v6-contact-360-0.png",
+        "sha256": "1f5f5dabf9fb80f7357b9a11242ee911b2ef8a190b953faf3ead3abc000196a3"
+      },
+      {
+        "path": "examples/zero-break/episode-07/review/v6-contact-360-1.png",
+        "sha256": "7b92122bde942a84cedaa253e6ee2ed45d1e8ad5110ce6f5c1c2c29b85ac7506"
+      },
+      {
+        "path": "examples/zero-break/episode-07/review/v6-contact-360-2.png",
+        "sha256": "ec4769a47453c631559a3a4c123970558888b16c9129bb97f23ea69906acc2a5"
+      },
+      {
+        "path": "examples/zero-break/episode-07/review/v6-contact-360-3.png",
+        "sha256": "19de8d21b0641f57c33c8670d48907d4e56416d24221f7025758f60ed5c01221"
+      },
+      {
+        "path": "examples/zero-break/episode-07/review/v6-contact-360-4.png",
+        "sha256": "dd6b8c4e9a8c15541fb4be7da45a51812cca0dfaa49bd7bb2a94ba3f85bc7e67"
+      },
+      {
+        "path": "examples/zero-break/episode-07/review/v6-contact-390-0.png",
+        "sha256": "74720e13ef1d4a1bd95075d7e52ee0b7e6400a5bfb9e7e2d399b977374fc5d2f"
+      },
+      {
+        "path": "examples/zero-break/episode-07/review/v6-contact-390-1.png",
+        "sha256": "e66744f3b1c9cd8beef440ad9ccf29385f2e8f2c291ec0348df874fedf240ee8"
+      },
+      {
+        "path": "examples/zero-break/episode-07/review/v6-contact-390-2.png",
+        "sha256": "36ac211aff8e91581195b37b0564ff070096fceccc3bdc817dc5b4f88e2f9fa9"
+      },
+      {
+        "path": "examples/zero-break/episode-07/review/v6-contact-390-3.png",
+        "sha256": "0033fbf9463638826fb517525be04ed623e16e1ba81562d98d771372f5c593d7"
+      },
+      {
+        "path": "examples/zero-break/episode-07/review/v6-contact-390-4.png",
+        "sha256": "64e63caed5e8b4ba96c8116538b3386690b9798c118f08e14799b4cb7286cb66"
+      }
+    ]
   },
   "mobileBrowserReview": {
     "status": "pending",
-    "note": "Local HTML browser access was restricted. Native canvas exports are not browser proof."
+    "note": "Prior edition review does not apply to revised art."
   },
   "physicalDeviceTested": false
 }

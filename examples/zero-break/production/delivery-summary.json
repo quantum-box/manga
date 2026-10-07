@@ -1,5 +1,6 @@
 {
-  "status": "passed",
+  "edition": "webtoon-remake-20261006",
+  "status": "passed_artifact_checks",
   "completedArtworkEpisodes": [
     1,
     2,
@@ -12,223 +13,620 @@
     9,
     10
   ],
-  "sourceScenes": 196,
+  "remadeEpisodes": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "remadeArtworks": 166,
+  "remadePanels": 483,
+  "illustratedArtworks": 199,
+  "illustratedPanels": 556,
   "scriptEpisodes": 50,
-  "newScenes": 166,
-  "savedRepairInputsVerified": 45,
+  "scriptOnlyEpisodes": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
   "sourceAndEmbeddedAndIOSBytesMatch": true,
-  "browserPhoneReview": true,
+  "browserPhoneReview": false,
+  "browserReview": "pending for remade episodes 2-10",
   "physicalDeviceTested": false,
+  "publication": "not published; branch/PR delivery",
   "chapters": [
     {
       "episode": 1,
-      "scenes": 30,
-      "sourceAndEmbeddedAndIOSBytesMatch": true,
-      "sourceAndIOSNavigationTargetsExist": true,
-      "visualReview": "passed",
-      "zipCRCAndExtractMatch": true,
-      "archiveBytes": 80428418,
-      "viewports": [
-        {
-          "width": 390,
-          "height": 844,
-          "pageHeight": 19737
-        },
-        {
-          "width": 360,
-          "height": 800,
-          "pageHeight": 18246
-        }
-      ]
+      "assets": 33,
+      "panels": 73,
+      "readerSha256": "0cb0dc528e387c7c2f5d1d55a695f8ba2d78b61bd1271761d520c4568d1782bb",
+      "archiveSha256": "457da365de27a23ca1b40b32f7925fca58c4ab6a680024e0883298c63325b211",
+      "archiveBytes": 84478845,
+      "nativeReview": "passed_native_mobile_image_review",
+      "browserReview": "unchanged prior edition",
+      "physicalDeviceTested": false
     },
     {
       "episode": 2,
-      "scenes": 20,
-      "sourceAndEmbeddedAndIOSBytesMatch": true,
-      "sourceAndIOSNavigationTargetsExist": true,
-      "visualReview": "passed",
-      "zipCRCAndExtractMatch": true,
-      "archiveBytes": 55626117,
-      "viewports": [
-        {
-          "width": 390,
-          "height": 844,
-          "pageHeight": 11470
-        },
-        {
-          "width": 360,
-          "height": 800,
-          "pageHeight": 10615
-        }
-      ]
+      "assets": 20,
+      "panels": 51,
+      "readerSha256": "66d8b563796607eae5c5a73557e8ee1f8b5ce2b2d8b1892cdb6d92b341bbbc49",
+      "archiveSha256": "4fff8e4f0aee91957b78593d4bf5bff803a239f6a762193038296e786b3fdc67",
+      "archiveBytes": 57947143,
+      "nativeReview": {
+        "status": "passed",
+        "widths": [
+          360,
+          390
+        ],
+        "method": "native raster contact boards and sequence windows",
+        "artifacts": [
+          {
+            "path": "examples/zero-break/episode-02/review/v6-contact-360-0.png",
+            "sha256": "99aed4446a6abd18e0ef65c50d96a69e8c490311ffc0594bd91cc4ada4666715"
+          },
+          {
+            "path": "examples/zero-break/episode-02/review/v6-contact-360-1.png",
+            "sha256": "81f2a818c2c1c6f08eaea3b76941cfd2afb1086db4fc4f3a1a9f2b43c35b560c"
+          },
+          {
+            "path": "examples/zero-break/episode-02/review/v6-contact-360-2.png",
+            "sha256": "c6788b9dd21233f804aaa6c44db42c6e3533e1b640218da9bba2e958170a9120"
+          },
+          {
+            "path": "examples/zero-break/episode-02/review/v6-contact-360-3.png",
+            "sha256": "41a0bc5f9cc3d518e063395a1dc8f28ec22d1509e8f91f83c6b3e1de990fe5e2"
+          },
+          {
+            "path": "examples/zero-break/episode-02/review/v6-contact-360-4.png",
+            "sha256": "46d04e8ede7c5f2b7dac334145fd56863b62fb03dc9d9df2634b588c7401be60"
+          },
+          {
+            "path": "examples/zero-break/episode-02/review/v6-contact-390-0.png",
+            "sha256": "2368ec47ae0ddb761a04685f738b669ca15e84f331d4fe49f7ecc9c37c89941b"
+          },
+          {
+            "path": "examples/zero-break/episode-02/review/v6-contact-390-1.png",
+            "sha256": "fa43b30a095bc2500e3efbdfe088d503fe812eb5c9316bad706cb4eeeb01aacf"
+          },
+          {
+            "path": "examples/zero-break/episode-02/review/v6-contact-390-2.png",
+            "sha256": "a1b78ea057159f68df0e0c327049eedb2f0eb2c7a39ca912d0ef809e7e3dc87f"
+          },
+          {
+            "path": "examples/zero-break/episode-02/review/v6-contact-390-3.png",
+            "sha256": "9714d7ee1e0c7b76260278e5e647bd0a4564941fd81a0c06f689eab73bb4a207"
+          },
+          {
+            "path": "examples/zero-break/episode-02/review/v6-contact-390-4.png",
+            "sha256": "2381295f6f2677b8ed66e51a7292d230b4d766330cd9db85ec373ad0766b7bbf"
+          }
+        ]
+      },
+      "browserReview": "pending",
+      "physicalDeviceTested": false
     },
     {
       "episode": 3,
-      "scenes": 18,
-      "sourceAndEmbeddedAndIOSBytesMatch": true,
-      "sourceAndIOSNavigationTargetsExist": true,
-      "visualReview": "passed",
-      "zipCRCAndExtractMatch": true,
-      "archiveBytes": 45657812,
-      "viewports": [
-        {
-          "width": 390,
-          "height": 844,
-          "pageHeight": 10673
-        },
-        {
-          "width": 360,
-          "height": 800,
-          "pageHeight": 9879
-        }
-      ]
+      "assets": 18,
+      "panels": 40,
+      "readerSha256": "4b661c56b03f3f77b02de0c3bc13be86b537c9b9caa7c23e91655d4bc5290874",
+      "archiveSha256": "643d7517337ebc7bc67ba44d472e8291a59d2834e95cf2957025a5054b0c9699",
+      "archiveBytes": 47359118,
+      "nativeReview": {
+        "status": "passed",
+        "widths": [
+          360,
+          390
+        ],
+        "method": "native raster contact boards and sequence windows",
+        "artifacts": [
+          {
+            "path": "examples/zero-break/episode-03/review/v6-contact-360-0.png",
+            "sha256": "c43d19d2796d169d9a69077e3bb1eeb587282bcce6c8a25487d42986dc5a527b"
+          },
+          {
+            "path": "examples/zero-break/episode-03/review/v6-contact-360-1.png",
+            "sha256": "fab26e8f580ad6c76c22a42dbc955c1345bca75f697d2f2ef074e5aa7cd55cf8"
+          },
+          {
+            "path": "examples/zero-break/episode-03/review/v6-contact-360-2.png",
+            "sha256": "44ed86990810182e77987ce0e9a7979a4f2cf88f668785b24bd9334a6886890e"
+          },
+          {
+            "path": "examples/zero-break/episode-03/review/v6-contact-360-3.png",
+            "sha256": "eb157198a571f0f823fb8cb3ffb3d9d891c51845bc7903592c9b0e7e810258e6"
+          },
+          {
+            "path": "examples/zero-break/episode-03/review/v6-contact-360-4.png",
+            "sha256": "3450d3ea9ac4783a78032fe446368280f77fb7885f908bb2d6742b99f7eaa7b0"
+          },
+          {
+            "path": "examples/zero-break/episode-03/review/v6-contact-390-0.png",
+            "sha256": "442d15723de1a655d450aa7bafdee257da0d4eea9edd9483841805d6d7e3e641"
+          },
+          {
+            "path": "examples/zero-break/episode-03/review/v6-contact-390-1.png",
+            "sha256": "8c807b681d83d82b7b2c93ed2588628f3c97e0677d51bfecbb78a8b62036db37"
+          },
+          {
+            "path": "examples/zero-break/episode-03/review/v6-contact-390-2.png",
+            "sha256": "abd50ef4fe5360006e255ecec61e66d8796b64f6e6506ea89c7807dfbc30903c"
+          },
+          {
+            "path": "examples/zero-break/episode-03/review/v6-contact-390-3.png",
+            "sha256": "66ca8d1705d172794e9ff1de6beb802ab0d67add0f9435bf7a6e03e70e4702f0"
+          },
+          {
+            "path": "examples/zero-break/episode-03/review/v6-contact-390-4.png",
+            "sha256": "8bf3dd9ffa091424ce6b9e9e0c391132c1ab0fc6f8c71f698fda5da46c3fb23f"
+          }
+        ]
+      },
+      "browserReview": "pending",
+      "physicalDeviceTested": false
     },
     {
       "episode": 4,
-      "scenes": 18,
-      "sourceAndEmbeddedAndIOSBytesMatch": true,
-      "sourceAndIOSNavigationTargetsExist": true,
-      "visualReview": "passed",
-      "zipCRCAndExtractMatch": true,
-      "archiveBytes": 47374815,
-      "viewports": [
-        {
-          "width": 390,
-          "height": 844,
-          "pageHeight": 11118
-        },
-        {
-          "width": 360,
-          "height": 800,
-          "pageHeight": 10290
-        }
-      ]
+      "assets": 18,
+      "panels": 47,
+      "readerSha256": "09304e9e43e94a86b6ef1936c295c8e5a48996dba2f16823c2a1a52ec8096c47",
+      "archiveSha256": "0a98c6dfe06711a8f9cccea83f6678bfa9d067c4b1cce4258520c673113967ba",
+      "archiveBytes": 50702024,
+      "nativeReview": {
+        "status": "passed",
+        "widths": [
+          360,
+          390
+        ],
+        "method": "native raster contact boards and sequence windows",
+        "artifacts": [
+          {
+            "path": "examples/zero-break/episode-04/review/v6-contact-360-0.png",
+            "sha256": "b016d5664d817ba9812cd0a1f3c6800be060e6f4feef076b927b0eab970c310d"
+          },
+          {
+            "path": "examples/zero-break/episode-04/review/v6-contact-360-1.png",
+            "sha256": "786e969d8dc1734bdf9e4dc90e7dc1ab4c5fa7109055e85ec39c26b3233c84ad"
+          },
+          {
+            "path": "examples/zero-break/episode-04/review/v6-contact-360-2.png",
+            "sha256": "1ef2d46c7bf138033359ff4162dfb7584dc93cfa1f7eff449c79b9a4aa9db7e2"
+          },
+          {
+            "path": "examples/zero-break/episode-04/review/v6-contact-360-3.png",
+            "sha256": "b1bcac42196f49c500f72ebbdb91ca552886212ed154c03ef2b5c4f02d649aab"
+          },
+          {
+            "path": "examples/zero-break/episode-04/review/v6-contact-360-4.png",
+            "sha256": "0d4821435166f9fe8b852764b371d4a528b2d2cbdb675a771ed9e18b78e56711"
+          },
+          {
+            "path": "examples/zero-break/episode-04/review/v6-contact-390-0.png",
+            "sha256": "1a8a2ad5d9376e1098473a5e08e8ddaf0a88044e2f004e86c063892e34b41ab2"
+          },
+          {
+            "path": "examples/zero-break/episode-04/review/v6-contact-390-1.png",
+            "sha256": "3f7c4b015a5a6c12b3c5f1b6ce243a2b5f39ec3459750dbf6448548af5d0fe71"
+          },
+          {
+            "path": "examples/zero-break/episode-04/review/v6-contact-390-2.png",
+            "sha256": "1253f80fb382b593c72249c32c7fbd89afeb56a4d3b078f0ef74c99bf562cd6c"
+          },
+          {
+            "path": "examples/zero-break/episode-04/review/v6-contact-390-3.png",
+            "sha256": "a45cbee101883e12b24a024223f5f294461b1e0dd7f5ba2397170a93c485fa41"
+          },
+          {
+            "path": "examples/zero-break/episode-04/review/v6-contact-390-4.png",
+            "sha256": "896f4478916a2e5d5a8462d16b8177062c86c529daa792e527cf05832c05df4a"
+          }
+        ]
+      },
+      "browserReview": "pending",
+      "physicalDeviceTested": false
     },
     {
       "episode": 5,
-      "scenes": 18,
-      "sourceAndEmbeddedAndIOSBytesMatch": true,
-      "sourceAndIOSNavigationTargetsExist": true,
-      "visualReview": "passed",
-      "zipCRCAndExtractMatch": true,
-      "archiveBytes": 44209730,
-      "viewports": [
-        {
-          "width": 390,
-          "height": 844,
-          "pageHeight": 12083
-        },
-        {
-          "width": 360,
-          "height": 800,
-          "pageHeight": 11181
-        }
-      ]
+      "assets": 18,
+      "panels": 55,
+      "readerSha256": "5c0179314428e55686f8a028f429c4945cf0ce9ddadbf1e4c94082662e569d98",
+      "archiveSha256": "7a86df761e15f6e7e2481f14054ea02c8467544ecab32d3b7f22c42f7969393f",
+      "archiveBytes": 47730326,
+      "nativeReview": {
+        "status": "passed",
+        "widths": [
+          360,
+          390
+        ],
+        "method": "native raster contact boards and sequence windows",
+        "artifacts": [
+          {
+            "path": "examples/zero-break/episode-05/review/v6-contact-360-0.png",
+            "sha256": "8de5c52f75c391d3ec7aa001b11d272a2fcb343ace58e770d73cada00f0d7fcc"
+          },
+          {
+            "path": "examples/zero-break/episode-05/review/v6-contact-360-1.png",
+            "sha256": "f7d8df5bd5fb339e89aa10a0635b71ac253f6e0866116b20da90333ada4c0681"
+          },
+          {
+            "path": "examples/zero-break/episode-05/review/v6-contact-360-2.png",
+            "sha256": "d8e0c33a00b85545e6f3c6eab04c3c406ddc783a1cc0dd837945600bad5b580b"
+          },
+          {
+            "path": "examples/zero-break/episode-05/review/v6-contact-360-3.png",
+            "sha256": "1985a20c1de6ac0ce1773beb305e4c85953944e66d95dc016095a969ba1d656a"
+          },
+          {
+            "path": "examples/zero-break/episode-05/review/v6-contact-360-4.png",
+            "sha256": "36f8576fca6cbf923ac632b9748ee8c9d879086ce2192e02bd885810d63efc05"
+          },
+          {
+            "path": "examples/zero-break/episode-05/review/v6-contact-390-0.png",
+            "sha256": "6d2268380e7b07e3d5c53d8fcc4d876ea94c18f139d88317481ac9d8611e6332"
+          },
+          {
+            "path": "examples/zero-break/episode-05/review/v6-contact-390-1.png",
+            "sha256": "6668511341cbbd35dd266c7c95c1db518650ecadcfd907fd682a9e24aab5c217"
+          },
+          {
+            "path": "examples/zero-break/episode-05/review/v6-contact-390-2.png",
+            "sha256": "979a87a814009e4c90d67353a4bd62e3ac26b9b355c8a37c1b33dd0570d18173"
+          },
+          {
+            "path": "examples/zero-break/episode-05/review/v6-contact-390-3.png",
+            "sha256": "d80b60173f774f8a4f1553a8174de696246a25da9c56720910f9b6b2928af165"
+          },
+          {
+            "path": "examples/zero-break/episode-05/review/v6-contact-390-4.png",
+            "sha256": "fb8ff847478c3a3644f032374fe40c8cd9f31f78efdb33e1ae1f17db67a0f93d"
+          }
+        ]
+      },
+      "browserReview": "pending",
+      "physicalDeviceTested": false
     },
     {
       "episode": 6,
-      "scenes": 18,
-      "sourceAndEmbeddedAndIOSBytesMatch": true,
-      "sourceAndIOSNavigationTargetsExist": true,
-      "visualReview": "passed",
-      "zipCRCAndExtractMatch": true,
-      "archiveBytes": 49259957,
-      "viewports": [
-        {
-          "width": 390,
-          "height": 844,
-          "pageHeight": 11925
-        },
-        {
-          "width": 360,
-          "height": 800,
-          "pageHeight": 11034
-        }
-      ]
+      "assets": 18,
+      "panels": 59,
+      "readerSha256": "3774e7539cea42d543fe24694da990be22b6b3d540101d3d2f8219e43f32fd72",
+      "archiveSha256": "9b2595f3d108518b8f51a5d76f2ea9923033e0386b2667b21b6f62a0361f73e8",
+      "archiveBytes": 53500369,
+      "nativeReview": {
+        "status": "passed",
+        "widths": [
+          360,
+          390
+        ],
+        "method": "native raster contact boards and sequence windows",
+        "artifacts": [
+          {
+            "path": "examples/zero-break/episode-06/review/v6-contact-360-0.png",
+            "sha256": "cc36a5ee96991054072752304be722d4880d2cb38057364a71d6e1147b859a63"
+          },
+          {
+            "path": "examples/zero-break/episode-06/review/v6-contact-360-1.png",
+            "sha256": "aabffbfc4e4ee1453baba63b09afb5e06fec3d5b5c650793572aa8f062884e83"
+          },
+          {
+            "path": "examples/zero-break/episode-06/review/v6-contact-360-2.png",
+            "sha256": "3954cc942ea7dccab7209d5549950ff06d8e299969e8a1f8d0289afbc5fac4fa"
+          },
+          {
+            "path": "examples/zero-break/episode-06/review/v6-contact-360-3.png",
+            "sha256": "716ac96b4695391c182fcb8d47dc999216c52058c174297376dffb2ccdb08335"
+          },
+          {
+            "path": "examples/zero-break/episode-06/review/v6-contact-360-4.png",
+            "sha256": "a794e8e1a811bb15d1c514d7b187da15462b38d68ac2269f9701459ca4f43c5d"
+          },
+          {
+            "path": "examples/zero-break/episode-06/review/v6-contact-390-0.png",
+            "sha256": "84b5484f336f2a9a91d111503f87dac105a992b7e591e7e3ec784eb4fa3f6b16"
+          },
+          {
+            "path": "examples/zero-break/episode-06/review/v6-contact-390-1.png",
+            "sha256": "49626f2e6c1ade4438581a5318cd6c2db93eb0a6a088c2d51814b5585bcacf28"
+          },
+          {
+            "path": "examples/zero-break/episode-06/review/v6-contact-390-2.png",
+            "sha256": "e251e9c2fce3cad6e3188a2956940d576318034c4f136d016c74b42c3585870d"
+          },
+          {
+            "path": "examples/zero-break/episode-06/review/v6-contact-390-3.png",
+            "sha256": "130bcdb847fb493d15803b458d8116b67805b6b1640e96411d4c0860017d5b2f"
+          },
+          {
+            "path": "examples/zero-break/episode-06/review/v6-contact-390-4.png",
+            "sha256": "1390c71925138076b8ff9f555dc10f68f989c3c7e6e7f2c4a30a569a56ebd943"
+          }
+        ]
+      },
+      "browserReview": "pending",
+      "physicalDeviceTested": false
     },
     {
       "episode": 7,
-      "scenes": 18,
-      "sourceAndEmbeddedAndIOSBytesMatch": true,
-      "sourceAndIOSNavigationTargetsExist": true,
-      "visualReview": "passed",
-      "zipCRCAndExtractMatch": true,
-      "archiveBytes": 50358165,
-      "viewports": [
-        {
-          "width": 390,
-          "height": 844,
-          "pageHeight": 11153
-        },
-        {
-          "width": 360,
-          "height": 800,
-          "pageHeight": 10322
-        }
-      ]
+      "assets": 18,
+      "panels": 52,
+      "readerSha256": "e7483da33c248620ebc99bdd3eaf9d06bd4ed6bfeb0c43c6b282f2709858acc4",
+      "archiveSha256": "62ebb02b5e8d96c6393ec6d4f8041c2c099ff1fae36c4eaad5253d36372e0359",
+      "archiveBytes": 53096987,
+      "nativeReview": {
+        "status": "passed",
+        "widths": [
+          360,
+          390
+        ],
+        "method": "native raster contact boards and sequence windows",
+        "artifacts": [
+          {
+            "path": "examples/zero-break/episode-07/review/v6-contact-360-0.png",
+            "sha256": "1f5f5dabf9fb80f7357b9a11242ee911b2ef8a190b953faf3ead3abc000196a3"
+          },
+          {
+            "path": "examples/zero-break/episode-07/review/v6-contact-360-1.png",
+            "sha256": "7b92122bde942a84cedaa253e6ee2ed45d1e8ad5110ce6f5c1c2c29b85ac7506"
+          },
+          {
+            "path": "examples/zero-break/episode-07/review/v6-contact-360-2.png",
+            "sha256": "ec4769a47453c631559a3a4c123970558888b16c9129bb97f23ea69906acc2a5"
+          },
+          {
+            "path": "examples/zero-break/episode-07/review/v6-contact-360-3.png",
+            "sha256": "19de8d21b0641f57c33c8670d48907d4e56416d24221f7025758f60ed5c01221"
+          },
+          {
+            "path": "examples/zero-break/episode-07/review/v6-contact-360-4.png",
+            "sha256": "dd6b8c4e9a8c15541fb4be7da45a51812cca0dfaa49bd7bb2a94ba3f85bc7e67"
+          },
+          {
+            "path": "examples/zero-break/episode-07/review/v6-contact-390-0.png",
+            "sha256": "74720e13ef1d4a1bd95075d7e52ee0b7e6400a5bfb9e7e2d399b977374fc5d2f"
+          },
+          {
+            "path": "examples/zero-break/episode-07/review/v6-contact-390-1.png",
+            "sha256": "e66744f3b1c9cd8beef440ad9ccf29385f2e8f2c291ec0348df874fedf240ee8"
+          },
+          {
+            "path": "examples/zero-break/episode-07/review/v6-contact-390-2.png",
+            "sha256": "36ac211aff8e91581195b37b0564ff070096fceccc3bdc817dc5b4f88e2f9fa9"
+          },
+          {
+            "path": "examples/zero-break/episode-07/review/v6-contact-390-3.png",
+            "sha256": "0033fbf9463638826fb517525be04ed623e16e1ba81562d98d771372f5c593d7"
+          },
+          {
+            "path": "examples/zero-break/episode-07/review/v6-contact-390-4.png",
+            "sha256": "64e63caed5e8b4ba96c8116538b3386690b9798c118f08e14799b4cb7286cb66"
+          }
+        ]
+      },
+      "browserReview": "pending",
+      "physicalDeviceTested": false
     },
     {
       "episode": 8,
-      "scenes": 18,
-      "sourceAndEmbeddedAndIOSBytesMatch": true,
-      "sourceAndIOSNavigationTargetsExist": true,
-      "visualReview": "passed",
-      "zipCRCAndExtractMatch": true,
-      "archiveBytes": 46906276,
-      "viewports": [
-        {
-          "width": 390,
-          "height": 844,
-          "pageHeight": 12233
-        },
-        {
-          "width": 360,
-          "height": 800,
-          "pageHeight": 11319
-        }
-      ]
+      "assets": 18,
+      "panels": 50,
+      "readerSha256": "775ca3c3c29bdf6c86c46f12ecfc6af8902b4957b38bb4cc5477a403709b984a",
+      "archiveSha256": "727c0ec268fd3dd3bb60c837a60c30e2aa7649416e77c9810f2686b2029856e8",
+      "archiveBytes": 51689399,
+      "nativeReview": {
+        "status": "passed",
+        "widths": [
+          360,
+          390
+        ],
+        "method": "native raster contact boards and sequence windows",
+        "artifacts": [
+          {
+            "path": "examples/zero-break/episode-08/review/v6-contact-360-0.png",
+            "sha256": "e95f70d0c529d321160d6d59dd7c2e22c4cfa7c9fce79460ef87aec2742aa91c"
+          },
+          {
+            "path": "examples/zero-break/episode-08/review/v6-contact-360-1.png",
+            "sha256": "accd0ae08e191bfd8fcb25f52d0a336d98b3fead29717453a0d019c4e7ba9073"
+          },
+          {
+            "path": "examples/zero-break/episode-08/review/v6-contact-360-2.png",
+            "sha256": "64f208fad485840bf46d97582df012d07c241e921acb5d8ab4cffed4df502d02"
+          },
+          {
+            "path": "examples/zero-break/episode-08/review/v6-contact-360-3.png",
+            "sha256": "336009522c1110149b2143998aba31535e769271aea80417a8a8aa3ffc1f7c4f"
+          },
+          {
+            "path": "examples/zero-break/episode-08/review/v6-contact-360-4.png",
+            "sha256": "2d73c022e20bd2ec086543dcc4c5606b615d1d3945a49b608491954308d41b50"
+          },
+          {
+            "path": "examples/zero-break/episode-08/review/v6-contact-390-0.png",
+            "sha256": "70182b4a86b23bfc30bd56ee2201399fada4d2a00797ccb25e20d372d78fe158"
+          },
+          {
+            "path": "examples/zero-break/episode-08/review/v6-contact-390-1.png",
+            "sha256": "7bbf11167b62bff16275cda50ae1f29b2cb3ff2fc2a08dfd38b78c520e1f1a60"
+          },
+          {
+            "path": "examples/zero-break/episode-08/review/v6-contact-390-2.png",
+            "sha256": "35fe2b6ca89ab14a681d86bb4f374e24a696df1f2fbf8e831e9e8cac1f37b646"
+          },
+          {
+            "path": "examples/zero-break/episode-08/review/v6-contact-390-3.png",
+            "sha256": "220abbd5911107919c63687db7d8f7e380f9f9a565ce22eb895ee8b27df8f242"
+          },
+          {
+            "path": "examples/zero-break/episode-08/review/v6-contact-390-4.png",
+            "sha256": "d3048984d0fc243b0626b2875478773464bec98106385f38f9eb8f3440fe1057"
+          }
+        ]
+      },
+      "browserReview": "pending",
+      "physicalDeviceTested": false
     },
     {
       "episode": 9,
-      "scenes": 18,
-      "sourceAndEmbeddedAndIOSBytesMatch": true,
-      "sourceAndIOSNavigationTargetsExist": true,
-      "visualReview": "passed",
-      "zipCRCAndExtractMatch": true,
-      "archiveBytes": 44029653,
-      "viewports": [
-        {
-          "width": 390,
-          "height": 844,
-          "pageHeight": 11818
-        },
-        {
-          "width": 360,
-          "height": 800,
-          "pageHeight": 10936
-        }
-      ]
+      "assets": 18,
+      "panels": 60,
+      "readerSha256": "6dc8943a900ecb1ff05f0208e435a6ee0ac8616df09d41ba6de3f68e014d3152",
+      "archiveSha256": "75aef01ee377ec401ed8dc2b582022eb11291b6d82d098805f03bbfad5b1cd9f",
+      "archiveBytes": 49580702,
+      "nativeReview": {
+        "status": "passed",
+        "widths": [
+          360,
+          390
+        ],
+        "method": "native raster contact boards and sequence windows",
+        "artifacts": [
+          {
+            "path": "examples/zero-break/episode-09/review/v6-contact-360-0.png",
+            "sha256": "73015b8230771f83ba2457def5190f93a77aea9b2a43e550cd172dc965f5d043"
+          },
+          {
+            "path": "examples/zero-break/episode-09/review/v6-contact-360-1.png",
+            "sha256": "5be6c442e842db55132c352fe17a715c55fc094745c099736af4a6b8927fd37e"
+          },
+          {
+            "path": "examples/zero-break/episode-09/review/v6-contact-360-2.png",
+            "sha256": "14d1bf0901913e17473237005fab7d0691aab5dd19ee5cce3b09067563df6d66"
+          },
+          {
+            "path": "examples/zero-break/episode-09/review/v6-contact-360-3.png",
+            "sha256": "8131debabda6c80b35f67afb917099d90aa49cd46ea0574d010610bd89a60b4e"
+          },
+          {
+            "path": "examples/zero-break/episode-09/review/v6-contact-360-4.png",
+            "sha256": "f15d01392d9f9c726e0c71c956322fec8b0e271bc13f3db2e53535cfdd0eb8c8"
+          },
+          {
+            "path": "examples/zero-break/episode-09/review/v6-contact-390-0.png",
+            "sha256": "e9158d607dda8d8dfa31621b34fc9ba1fbee8e178186ac05ce0020320d46cc9d"
+          },
+          {
+            "path": "examples/zero-break/episode-09/review/v6-contact-390-1.png",
+            "sha256": "f2c8a66069382a194c62a0e04017b304ef6df558ce2d7137539bc6845c3c2fc5"
+          },
+          {
+            "path": "examples/zero-break/episode-09/review/v6-contact-390-2.png",
+            "sha256": "a05a790a19801e11b24f7df55c863e2211f5ca2fb186955ff7e825ac7eda7375"
+          },
+          {
+            "path": "examples/zero-break/episode-09/review/v6-contact-390-3.png",
+            "sha256": "23be3f77292fa97f0db428f0491e6e5b12c83f76c1ba2b881eb725431f416758"
+          },
+          {
+            "path": "examples/zero-break/episode-09/review/v6-contact-390-4.png",
+            "sha256": "a5f5e114c2def224f112a39600e51e41d542a9c0a8fa0a88b8ffd973e6d87998"
+          }
+        ]
+      },
+      "browserReview": "pending",
+      "physicalDeviceTested": false
     },
     {
       "episode": 10,
-      "scenes": 20,
-      "sourceAndEmbeddedAndIOSBytesMatch": true,
-      "sourceAndIOSNavigationTargetsExist": true,
-      "visualReview": "passed",
-      "zipCRCAndExtractMatch": true,
-      "archiveBytes": 54340778,
-      "viewports": [
-        {
-          "width": 390,
-          "height": 844,
-          "pageHeight": 14832
-        },
-        {
-          "width": 360,
-          "height": 800,
-          "pageHeight": 13718
-        }
-      ]
+      "assets": 20,
+      "panels": 69,
+      "readerSha256": "91bb71e93943f268763e51b2417ba7b9dc159680fcfa1d09e034ffb1b1fd2425",
+      "archiveSha256": "099433616b34e2893d02ae287425b80bfc443f739b30b1f460e2e11bdd3e0d04",
+      "archiveBytes": 60380151,
+      "nativeReview": {
+        "status": "passed",
+        "widths": [
+          360,
+          390
+        ],
+        "method": "native raster contact boards and sequence windows",
+        "artifacts": [
+          {
+            "path": "examples/zero-break/episode-10/review/v6-contact-360-0.png",
+            "sha256": "855b7b96ef320c6e35a2ba4bfa99b750abbefc269920bb4076b18d75cde1d072"
+          },
+          {
+            "path": "examples/zero-break/episode-10/review/v6-contact-360-1.png",
+            "sha256": "b7849eec5a50fbdaf0e791e76527f5c53539e7817679dfdef6654e1735d0afab"
+          },
+          {
+            "path": "examples/zero-break/episode-10/review/v6-contact-360-2.png",
+            "sha256": "e83c79528efcae8376e8dd47d166d40794ce3d47bb29eb4895494cc0a1427886"
+          },
+          {
+            "path": "examples/zero-break/episode-10/review/v6-contact-360-3.png",
+            "sha256": "c5075dfbf527299e11a9a9332fc131a319d7a77a8c5e80f078a61cb97144104e"
+          },
+          {
+            "path": "examples/zero-break/episode-10/review/v6-contact-360-4.png",
+            "sha256": "7eccebf1be4cf07046c7e3fe1dbd03bf03fd63d5c2260a8cb2eacf12fba81ee0"
+          },
+          {
+            "path": "examples/zero-break/episode-10/review/v6-contact-390-0.png",
+            "sha256": "a355e103c7adcc366d36d01a517947bdaecf17323283805ba47cb3d65f4f50db"
+          },
+          {
+            "path": "examples/zero-break/episode-10/review/v6-contact-390-1.png",
+            "sha256": "f579a881e7c1850948c9a3edad1d6ce8f3e1e202fd55b33f4ced362b1de8b570"
+          },
+          {
+            "path": "examples/zero-break/episode-10/review/v6-contact-390-2.png",
+            "sha256": "6e7d96c2dfd5e9aa6b349b4108a0f25a241dac512ecc4a79a80fe9ddebc0201f"
+          },
+          {
+            "path": "examples/zero-break/episode-10/review/v6-contact-390-3.png",
+            "sha256": "6f6d3fe8fbf53a83928dece392ad5772f76926f3f91212f724f9041a7dc7a3e9"
+          },
+          {
+            "path": "examples/zero-break/episode-10/review/v6-contact-390-4.png",
+            "sha256": "ba34130726dbbbeae72abcf1a21e09d0b1e69957f224b6ca6464d98b5211a499"
+          }
+        ]
+      },
+      "browserReview": "pending",
+      "physicalDeviceTested": false
     }
   ]
 }

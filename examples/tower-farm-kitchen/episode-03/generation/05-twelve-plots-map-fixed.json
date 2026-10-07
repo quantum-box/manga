@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-52737d3a-fed0-4eac-97ad-d701acfdad30.png",
+  "adopted": "art/05-twelve-plots-map-fixed.png",
+  "original_sha256": "2e4163876d5e4e5a574a18ddde362b6ce5ba5c46be08905fc94ff742c1c4c337",
+  "adopted_sha256": "2e4163876d5e4e5a574a18ddde362b6ce5ba5c46be08905fc94ff742c1c4c337",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/05-twelve-plots-map-fixed.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Edit ONLY the drawn plan on the parchment in the middle panel: the plan must have EXACTLY FOUR long parallel rectangular garden beds, and EACH bed must be divided by two cross-lines into exactly THREE consecutive sections. This is four by three = twelve sections total, not five beds. Small abstract leaf marks inside are allowed, no numerical labels. Keep the real garden in the upper panel unchanged. Preserve all panels, character identity, faces, hands, clothing, poses, tools, architecture, food, lighting and ALL existing Japanese dialogue, punctuation, size, balloons and speaker tails completely unchanged except the explicitly named edit. Do not add other text, characters or events.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/05-twelve-plots.png",
+      "sha256": "fea59237540aa6538a3d4e93d5327e2a49c292ec961ee2ab2f15145e6df42b38"
+    }
+  ]
+}

@@ -77,6 +77,27 @@ struct CatalogTests {
         try require(zeroBreak.linkedEpisode(to: URL(string: "https://example.com")!, resourceURL: bundled) == nil,
                     "External links must not change the native chapter")
         print("PASS: bundled forward and backward links select native chapters; unknown links are rejected")
+        let tower = titles.first { $0.id == "tower-forge" }!
+        let towerList = bundled.appendingPathComponent("Webtoons/tower-forge/chapters.html")
+        try require(!manager.fileExists(atPath: towerList.path), "The native list must work without bundled HTML")
+        for episode in tower.episodes {
+            let reader = Catalog.resource(episode.reader, resourceURL: bundled)!
+            let html = try String(contentsOf: reader, encoding: .utf8)
+            try require(html.contains("href=\"../chapters.html\""), "Fixture must exercise the actual list link")
+            let list = URL(string: "../chapters.html", relativeTo: reader)!.absoluteURL
+            for root in [bundled, bundled.standardizedFileURL] {
+                try require(tower.linksToChapterList(to: list, resourceURL: root),
+                            "Every bundled chapter list link must return to the native title list")
+            }
+            try require(!tower.linksToChapterList(to: reader, resourceURL: bundled), "Episode links must remain separate")
+        }
+        for rejected in [outside, URL(string: "https://example.com/chapters.html")!,
+                         first.deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("chapters.html"),
+                         towerList.deletingLastPathComponent().appendingPathComponent("absent.html")] {
+            try require(!tower.linksToChapterList(to: rejected, resourceURL: bundled),
+                        "External, other-title and unknown links must not close the reader")
+        }
+        print("PASS: all Tower Forge list links route natively without list HTML; unrelated links are rejected")
         for title in titles {
             try require(Catalog.resource(title.image, resourceURL: bundled) != nil, "Missing bundled cover: \(title.id)")
             for episode in title.episodes {

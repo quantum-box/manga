@@ -1,53 +1,61 @@
 {
-  "edition": "context-dialogue-v6",
-  "panels": 28,
-  "readerSourceSha256": "dc8f587ed0436758d50861cc3b2cf2253d9a434afbb0842754a2da3a66dd0512",
+  "edition": "webtoon-remake-20261006",
+  "panels": 60,
+  "readerSourceSha256": "4b6812858bbce8acb1bb3cc457d114d3e80fd8a1b00301d227f7ae8be6b236c3",
   "source_assets_verified": true,
   "visualReview": {
     "status": "passed",
-    "method": "manual inspection of native raster exports; not browser/DOM inspection",
-    "assets": 18,
-    "panels": 28,
-    "all_assets_at_360": true,
-    "representative_intervals_at_390": true,
-    "exact_text_and_speakers": true,
-    "faces_hands_costumes_props_and_causality": true,
-    "continuity_notes": "夜、呼吸器の隔離回路、患者の回復、王宮直下を示す順。リンクフォームは出さない。",
-    "reviewed_files": [
-      {
-        "file": "review/v6-contact-360-0.png",
-        "sha256": "e708d9b844ed46169e23f3ea416ef618d1203bbf4d5513d072121564b07c30aa"
-      },
-      {
-        "file": "review/v6-contact-360-1.png",
-        "sha256": "2399b6f0e2a58334c5f1932c357c2984397661d266efb36826d4be104304ad2d"
-      },
-      {
-        "file": "review/v6-contact-360-2.png",
-        "sha256": "7e5cced173b2716eadd0fa2de2981e7c652660d5a79a6edfe3b94404d3a77e1c"
-      },
-      {
-        "file": "review/v6-contact-360-3.png",
-        "sha256": "27bd3b5700f7415d43b54e29a63d6f0ccc297c9ae475bb46d5995de8e952e810"
-      },
-      {
-        "file": "review/v6-contact-360-4.png",
-        "sha256": "ed7c2638a78f52e8351db3289abd925d45d863e8e681e9df622932d383b2790b"
-      },
-      {
-        "file": "review/v6-contact-390-4.png",
-        "sha256": "a1abef8ff8e872feb00785851d534414a26013354f08c376583d56b17dc226eb"
-      },
-      {
-        "file": "review/v6-flow-390-13.png",
-        "sha256": "30165960d446d9f8e95ad86c738bb5de5429dc06084f10db17532b126100e953"
-      }
+    "widths": [
+      360,
+      390
     ],
-    "user_acceptance": "not_recorded_for_full_revision"
+    "method": "native raster contact boards and sequence windows",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-0.png",
+        "sha256": "73015b8230771f83ba2457def5190f93a77aea9b2a43e550cd172dc965f5d043"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-1.png",
+        "sha256": "5be6c442e842db55132c352fe17a715c55fc094745c099736af4a6b8927fd37e"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-2.png",
+        "sha256": "14d1bf0901913e17473237005fab7d0691aab5dd19ee5cce3b09067563df6d66"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-3.png",
+        "sha256": "8131debabda6c80b35f67afb917099d90aa49cd46ea0574d010610bd89a60b4e"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-4.png",
+        "sha256": "f15d01392d9f9c726e0c71c956322fec8b0e271bc13f3db2e53535cfdd0eb8c8"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-0.png",
+        "sha256": "e9158d607dda8d8dfa31621b34fc9ba1fbee8e178186ac05ce0020320d46cc9d"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-1.png",
+        "sha256": "f2c8a66069382a194c62a0e04017b304ef6df558ce2d7137539bc6845c3c2fc5"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-2.png",
+        "sha256": "a05a790a19801e11b24f7df55c863e2211f5ca2fb186955ff7e825ac7eda7375"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-3.png",
+        "sha256": "23be3f77292fa97f0db428f0491e6e5b12c83f76c1ba2b881eb725431f416758"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-4.png",
+        "sha256": "a5f5e114c2def224f112a39600e51e41d542a9c0a8fa0a88b8ffd973e6d87998"
+      }
+    ]
   },
   "mobileBrowserReview": {
     "status": "pending",
-    "note": "Local HTML browser access was restricted. Native canvas exports are not browser proof."
+    "note": "Prior edition review does not apply to revised art."
   },
   "physicalDeviceTested": false
 }

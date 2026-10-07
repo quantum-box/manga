@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-3cb31904-eb2e-4563-a7fa-c31f98d13f2f.png",
+  "adopted": "art/08-dish-sequence-fixed.png",
+  "original_sha256": "4e5ff64a751e7ae43ba9bf87eb3971dac5ebe331a7c4db6fc9f2290ac8eb5480",
+  "adopted_sha256": "4e5ff64a751e7ae43ba9bf87eb3971dac5ebe331a7c4db6fc9f2290ac8eb5480",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/08-dish-sequence-fixed.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Only swap the two small cooking-action panels in the middle row: RIGHT = chopping carrots (currently left); LEFT = stew simmering in pot (currently right). Japanese temporal reading must proceed from right to left. Move whole panels, without horizontally mirroring. Preserve all exact text, faces, meals, other panels and SFX. Upright Japanese vertical dialogue remains integrated in the raster. No extra text, no new actors, no changed story events, no new equipment. Preserve every element not explicitly named, same finished manga style and target aspect ratio.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/08-dish.png",
+      "sha256": "ef2e7afb2a75f6631d079a598b3d63409725a54062f0cf082d943512f14b3e09"
+    }
+  ]
+}

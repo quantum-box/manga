@@ -1,0 +1,182 @@
+{
+  "number": 7,
+  "title": "収穫日は、約束できるか",
+  "time": "21〜28日目",
+  "state": "最初の播種から14〜21日。まだ収穫しない。28日見込みを確定日と呼ばない。36日目に十二食を三階集結所へ届ける候補。",
+  "scenes": [
+    {
+      "id": "01-leon",
+      "art": "art/01-leon.png",
+      "dialogue": [
+        [
+          "レオン",
+          "次の遠征に、二十食頼めるか。"
+        ],
+        [
+          "レオン",
+          "決まった日に、同じ品質で。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 100,
+      "prompt": "generation/01-leon.prompt.txt",
+      "description": "Leon enters diner in navy cloak, scar on right eyebrow, no sword, supply notebook in hand; Elna and Kou behind counter listen. Two panels wider arrival then restrained serious face.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "6991f410a3024766e2800b5bc6370b54db7aa6bff2db987918c762b1f69ab67d"
+    },
+    {
+      "id": "02-forecast",
+      "art": "art/02-forecast.png",
+      "dialogue": [
+        [
+          "コウ",
+          "庭葉は、そろそろ採れるはず。"
+        ],
+        [
+          "イリス",
+          "その『はず』、どこまで確か？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "prompt": "generation/02-forecast.prompt.txt",
+      "description": "Kou looks toward small green plot hopefully, Iris beside him holds observation notebook, medium face then narrow hand closeup calendar sketch. No harvested basket, plants still growing.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "cd9b3c0e5423e285367b38826fda94221d085840b431dc931cc1dba3870b77df"
+    },
+    {
+      "id": "03-shade",
+      "art": "art/03-shade.png",
+      "dialogue": [
+        [
+          "コウ",
+          "この列は、まだ小さい。"
+        ],
+        [
+          "バルト",
+          "光が違う。日付だけじゃ読めん。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 80,
+      "prompt": "generation/03-shade.prompt.txt",
+      "description": "Same bed has visibly shadier corner under tower rib, plants in that section smaller; Balt points upward at shadow boundary, Kou measures a leaf gently. Two unequal closeups and one contextual view.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "46196937c76cc7913fa58ceab2c5571727551a1c8a1782436e7f8d22353b8123"
+    },
+    {
+      "id": "04-recalculate",
+      "art": "art/04-recalculate.png",
+      "dialogue": [
+        [
+          "コウ",
+          "二十八日は、見込みだった。"
+        ],
+        [
+          "コウ",
+          "遅れた場合も、計算し直す。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 130,
+      "prompt": "generation/04-recalculate.prompt.txt",
+      "description": "Kou and Elna at table with crop notebook, crossed-out estimate and alternative schedule shown only as abstract marks, closeup uncertain thoughtful Kou then Elna listening. No false exact harvest-day projection.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "6d23eb0b0b6cf8aec7358aa15b0b86ab5d9acbeca6415f47a29449e9347c0427"
+    },
+    {
+      "id": "05-decline",
+      "art": "art/05-decline.png",
+      "dialogue": [
+        [
+          "コウ",
+          "二十食は、まだ約束できません。"
+        ],
+        [
+          "レオン",
+          "出せる数と、代わりの手を聞こう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 100,
+      "prompt": "generation/05-decline.prompt.txt",
+      "description": "Three unequal conversation panels at diner: Kou honest serious, Leon watching without anger, Elna anxious then relieved. No humiliation or cartoon villain stance.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "1b3a18b30debee9b5448d34f48bdd462ca0bfbcac72205860ea168d4471050d2"
+    },
+    {
+      "id": "06-backup",
+      "art": "art/06-backup.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "足りない分は、買える。"
+        ],
+        [
+          "コウ",
+          "量と値段も、先に決めよう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "prompt": "generation/06-backup.prompt.txt",
+      "description": "Elna negotiates with local produce supplier at back door, Balt nearby discusses existing stock, Kou checks ledger. Baskets represent supplier's mature crops, not main plot magically grown.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "c9007735ef3c78b9dfa2e0f8ab2f46a305dbc635c6cca8fa6f68d481ba5c565c"
+    },
+    {
+      "id": "07-thin",
+      "art": "art/07-thin-sequence-fixed.png",
+      "dialogue": [
+        [
+          "コウ",
+          "今日は、この苗を間引く。"
+        ],
+        [
+          "バルト",
+          "育つ場所を、残してやれ。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 85,
+      "prompt": "generation/07-thin.prompt.txt",
+      "description": "Two closeups and quiet medium panel: Kou carefully thins crowded SMALL garden-leaf seedlings, Elna holds tray for removed seedlings away from future food; path not trodden over bed. No harvesting immature plants for order.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "46a8c6ef4aacbf8ec7a55182e91b541536b466806bfcbe5eb01c996b3a1f631f",
+      "edits": [
+        {
+          "prompt": "generation/07-thin-sequence-fixed.prompt.txt",
+          "record": "generation/07-thin-sequence-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "08-small-contract",
+      "art": "art/08-small-contract.png",
+      "dialogue": [
+        [
+          "レオン",
+          "まず、一便だけ。十二食だ。"
+        ],
+        [
+          "コウ",
+          "畑も、仕入れも確認します。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 180,
+      "prompt": "generation/08-small-contract.prompt.txt",
+      "description": "Large dignified scene in diner: Leon offers small plain contract, Kou and Elna accept together, modest vegetable beds seen outside. Hands coherent, no ornate reward trophy or huge coin shower.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "f79cd7e256d25908fdea6779fe2b27ae36dcd86d5d22534feb62064c43bef581"
+    }
+  ]
+}

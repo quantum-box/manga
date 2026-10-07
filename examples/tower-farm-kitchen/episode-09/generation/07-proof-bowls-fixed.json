@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-bbc2dad3-e516-435d-9f61-725b7bde353d.png",
+  "adopted": "art/07-proof-bowls-fixed.png",
+  "original_sha256": "1892dadbbdbfbb8a46970815b5e727719faaf7d42d04232a51a40dbadf3a8d84",
+  "adopted_sha256": "1892dadbbdbfbb8a46970815b5e727719faaf7d42d04232a51a40dbadf3a8d84",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/07-proof-bowls-fixed.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Image 1 is the target. Any second reference is ONLY for the brown glazed pottery food-bowl design, not its counts, cast, layout or events. Only standardize the delivery receipt and bowls. Replace all wooden bento-kit boxes, miniature plates, wrapped food bundles and extra dishes in the TOP establishing panel with EXACTLY TWELVE brown glazed POTTERY meal bowls of the design from reference 2, arranged clearly as THREE ROWS OF FOUR fully visible on the table. These twelve bowls are open for count verification and contain grain, browned meat/root vegetables and garden-leaf greens. No thirteenth bowl and no held bowl. Replace the left meal-detail inset with a close view of these same pottery bowls. The receipt checklist inset has twelve simple checkmarks, with no newly invented words. Preserve all faces, Leon's clipboard, exact two Japanese dialogue balloons and font size. Preserve every element not named for repair. Upright integrated raster Japanese vertical lettering, columns right-to-left. No new speech or story events, no font shrinking, no digital overlays. Same finished manga style and target aspect ratio.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/07-proof.png",
+      "sha256": "0f024b2dacc4df390c3b6a0f19ae78b01270fa1cc3e13269ce2be1f77050d446"
+    },
+    {
+      "path": "generation/inputs/01-twelve-bowls-fixed.png",
+      "sha256": "dd48fdb02875a5a0dc0979802f1fd1979338598c22405be73502faff787c4955"
+    }
+  ]
+}

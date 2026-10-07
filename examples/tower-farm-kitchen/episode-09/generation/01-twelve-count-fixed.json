@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-0ad41a58-e14a-4869-a5ac-a80bfc268489.png",
+  "adopted": "art/01-twelve-count-fixed.png",
+  "original_sha256": "2754298ead78b03516e248ab7a9b146b1736198a7a025f3a4d73aad7a205e41d",
+  "adopted_sha256": "2754298ead78b03516e248ab7a9b146b1736198a7a025f3a4d73aad7a205e41d",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/01-twelve-count-fixed.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Image 1 is the target. Any second reference is ONLY for the brown glazed pottery food-bowl design, not its counts, cast, layout or events. Only correct the count in the TOP panel. It currently has twelve lidded bowls PLUS a thirteenth open bowl behind them. Remove the lidded bowl in the REAR ROW, SECOND FROM THE LEFT, and move the current open bowl into that exact position instead. Erase the old separate thirteenth open-bowl position to show only table. Elna's ladle and hand now serve this open bowl in the rear-row second-from-left slot. Final inventory on that table is EXACTLY 12 brown pottery bowls in THREE ROWS OF FOUR: front 4 lidded, middle 4 lidded, rear 3 lidded + 1 open. Keep the established pottery design and all other panels/text exactly unchanged. Preserve every element not named for repair. Upright integrated raster Japanese vertical lettering, columns right-to-left. No new speech or story events, no font shrinking, no digital overlays. Same finished manga style and target aspect ratio.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/01-twelve-bowls-fixed.png",
+      "sha256": "dd48fdb02875a5a0dc0979802f1fd1979338598c22405be73502faff787c4955"
+    }
+  ]
+}

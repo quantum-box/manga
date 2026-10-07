@@ -1,0 +1,201 @@
+{
+  "number": 10,
+  "title": "帰ってくる場所",
+  "time": "42日目",
+  "state": "第二播種の一部と遅れていた第一播種区画を収穫。全48m²の安定供給実績はまだない。16食は自給と仕入れを合わせた営業枠。",
+  "scenes": [
+    {
+      "id": "01-second-harvest",
+      "art": "art/01-second-harvest-crop-fixed.png",
+      "dialogue": [
+        [
+          "コウ",
+          "次の区画が、つながった。"
+        ],
+        [
+          "バルト",
+          "予定が、少し読めてきたな。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "prompt": "generation/01-second-harvest.prompt.txt",
+      "description": "Same four beds with age-staggered sections: Kou and Balt harvest newly ready section while earlier harvested section is bare or freshly resown and younger sections remain smaller. Twine markers visible. Two hand closeups plus broad context.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "176a2d5e821e7a0ccf00c8d621db8b7d941c3aa540e89ed33e1798c837fc0ee9",
+      "edits": [
+        {
+          "prompt": "generation/01-second-harvest-crop-fixed.prompt.txt",
+          "record": "generation/01-second-harvest-crop-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "02-sixteen",
+      "art": "art/02-sixteen-slots-fixed.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "まずは、一日十六食。"
+        ],
+        [
+          "コウ",
+          "足りない時の仕入れも、決めてある。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 95,
+      "prompt": "generation/02-sixteen.prompt.txt",
+      "description": "Elna at reservation ledger with sixteen simple small marks, Kou beside bought produce basket and own harvest; outside supplier acknowledges arrangement. Two unequal panels include limited supply clearly.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "0337cdd6723c951ecc6b954ed3acd80331ea2b3e26eca34d786c01baeba38f53",
+      "edits": [
+        {
+          "prompt": "generation/02-sixteen-slots-fixed.prompt.txt",
+          "record": "generation/02-sixteen-slots-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "03-partners",
+      "art": "art/03-partners.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "畑と厨房、一緒に決めたい。"
+        ],
+        [
+          "エルナ",
+          "店の相棒に、なってくれる？"
+        ],
+        [
+          "コウ",
+          "働く分も、きちんと分けよう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 150,
+      "prompt": "generation/03-partners.prompt.txt",
+      "description": "Three intimate panels at clean diner counter: Elna earnest facing Kou, her hand placing shop key on table, Kou thoughtfully reaching to joint crop-and-menu notebook rather than seizing key. Adult respectful partnership.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "9c7cf0fb2765e6ff3191a9ec4060855b4dc2fb696cb504d24026dcfd1d18ed6e"
+    },
+    {
+      "id": "04-maintenance",
+      "art": "art/04-maintenance-sequence-fixed.png",
+      "dialogue": [
+        [
+          "イリス",
+          "詰まったら、ここを開ける。"
+        ],
+        [
+          "エルナ",
+          "直し方も、店に残しておく。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 75,
+      "prompt": "generation/04-maintenance.prompt.txt",
+      "description": "Iris shows Elna how to open removable irrigation filter housing beside sturdy tank stand; Kou stands back listening, not doing every task. Closeups demonstrate same fitting as episode four; no modern gadgets.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "fb07a9a9124e3605f10b3de5c5c9346c267d15ad2ec3b4b3102141f00bdcc9c6",
+      "edits": [
+        {
+          "prompt": "generation/04-maintenance-sequence-fixed.prompt.txt",
+          "record": "generation/04-maintenance-sequence-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "05-seed-future",
+      "art": "art/05-seed-future.png",
+      "dialogue": [
+        [
+          "コウ",
+          "この畝は、次の種を残す。"
+        ],
+        [
+          "バルト",
+          "売る分だけじゃ、先へ続かん。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "prompt": "generation/05-seed-future.prompt.txt",
+      "description": "Balt and Kou beside small separate reserved seed-production strip of garden-leaf plants, a few plants left standing, NOT mature seed harvested already. Hand places plain marker, separate harvest basket for food.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "eab34fe97b001df27ada986fef31f88d7185a9f5ced0bc945c29026adfdc815a"
+    },
+    {
+      "id": "06-returner",
+      "art": "art/06-returner.png",
+      "dialogue": [
+        [
+          "客",
+          "帰ってきたよ。"
+        ],
+        [
+          "エルナ",
+          "おかえり。席、空いてる。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 160,
+      "prompt": "generation/06-returner.prompt.txt",
+      "description": "Large borderless warm diner entrance view: auburn young adult customer in ochre cloak returns slightly dusty from expedition, Elna smiles at serving window, empty familiar seat in foreground and hot meal ready. Kou assists quietly behind her, no duplicate character heads.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "75d00fd00b66dd357d3ea1b0c220d4f95c228c86a177cbdc68d663399ac0f862"
+    },
+    {
+      "id": "07-share-work",
+      "art": "art/07-share-work.png",
+      "dialogue": [
+        [
+          "コウ",
+          "俺がいなくても、回るように。"
+        ],
+        [
+          "エルナ",
+          "そのための店、だね。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "prompt": "generation/07-share-work.prompt.txt",
+      "description": "Kou and Elna share plain illustrated maintenance/crop notebook on porch, smaller montage Balt observing seedlings and Iris storing spare fitting; characters in separate successive frames, not simultaneously duplicated. Quiet achieved trust, no magical new world omniscience.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "4201987cfbbb4f3e73b53ec6d9cd302dd1f08aded361fec1086445d9c8cb04ca",
+      "narration": [
+        "42日目"
+      ]
+    },
+    {
+      "id": "08-next-floor",
+      "art": "art/08-next-floor.png",
+      "dialogue": [
+        [
+          "レオン",
+          "七階でも、この飯を出せるか？"
+        ],
+        [
+          "コウ",
+          "まず、畑と台所を見に行こう。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 230,
+      "prompt": "generation/08-next-floor.prompt.txt",
+      "description": "Final large scene: Leon at blue-awning diner brings small parchment sketch of colder upper-floor outpost, Kou and Elna look toward distant ascending stone stairs. Warm kitchen foreground and cool stairway beyond establish future, not new farm already built upstairs.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "de5c2aeac23120f646dfd89ef6350c0158dbe91b17233af7b46a4261d7501056"
+    }
+  ]
+}

@@ -1,49 +1,61 @@
 {
-  "edition": "context-dialogue-v6",
-  "panels": 26,
-  "readerSourceSha256": "85523d96ea8de593c40155b7dcfc35e214b31b162c5fc8f9dd5e3cfee6a30a45",
+  "edition": "webtoon-remake-20261006",
+  "panels": 40,
+  "readerSourceSha256": "201f6a54f4c155484bd2ed510f2d0ab13bb80c75191d4e90b185fc80ce10f640",
   "source_assets_verified": true,
   "visualReview": {
     "status": "passed",
-    "method": "manual inspection of native raster exports; not browser/DOM inspection",
-    "assets": 18,
-    "panels": 26,
-    "all_assets_at_360": true,
-    "representative_intervals_at_390": true,
-    "exact_text_and_speakers": true,
-    "faces_hands_costumes_props_and_causality": true,
-    "continuity_notes": "競争では不発、救助の腕だけ発動、会話時は素手へ戻る順。新フォームは先出ししない。",
-    "reviewed_files": [
-      {
-        "file": "review/v6-contact-360-0.png",
-        "sha256": "c09e27bf384fcbcdd7efb50927f57a1fbd58b790ab45d9acb69059c2771dc47a"
-      },
-      {
-        "file": "review/v6-contact-360-1.png",
-        "sha256": "8ef1dfb9bd41583cbf40f0be892ed3eafaa6df60edef3ecb84e71868f294e73c"
-      },
-      {
-        "file": "review/v6-contact-360-2.png",
-        "sha256": "cc8c9f277393ca5f81cfa4024d01b0618558e569d76e393e4a551c4d52aa4dd2"
-      },
-      {
-        "file": "review/v6-contact-360-3.png",
-        "sha256": "72e08fe66ba2ba14bea147556f6e3c96aa89036b9d22f17add6f0432f9147288"
-      },
-      {
-        "file": "review/v6-contact-360-4.png",
-        "sha256": "17043c3e57cca788544ee12ffc1208f9810b970a91f095e2870d4e194d31beec"
-      },
-      {
-        "file": "review/v6-contact-390-3.png",
-        "sha256": "4230ae7c6f109edb1ded0548569400c442a32e76ca6fbe3cfa5f28bedf3b14ea"
-      }
+    "widths": [
+      360,
+      390
     ],
-    "user_acceptance": "not_recorded_for_full_revision"
+    "method": "native raster contact boards and sequence windows",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-03/review/v6-contact-360-0.png",
+        "sha256": "c43d19d2796d169d9a69077e3bb1eeb587282bcce6c8a25487d42986dc5a527b"
+      },
+      {
+        "path": "examples/zero-break/episode-03/review/v6-contact-360-1.png",
+        "sha256": "fab26e8f580ad6c76c22a42dbc955c1345bca75f697d2f2ef074e5aa7cd55cf8"
+      },
+      {
+        "path": "examples/zero-break/episode-03/review/v6-contact-360-2.png",
+        "sha256": "44ed86990810182e77987ce0e9a7979a4f2cf88f668785b24bd9334a6886890e"
+      },
+      {
+        "path": "examples/zero-break/episode-03/review/v6-contact-360-3.png",
+        "sha256": "eb157198a571f0f823fb8cb3ffb3d9d891c51845bc7903592c9b0e7e810258e6"
+      },
+      {
+        "path": "examples/zero-break/episode-03/review/v6-contact-360-4.png",
+        "sha256": "3450d3ea9ac4783a78032fe446368280f77fb7885f908bb2d6742b99f7eaa7b0"
+      },
+      {
+        "path": "examples/zero-break/episode-03/review/v6-contact-390-0.png",
+        "sha256": "442d15723de1a655d450aa7bafdee257da0d4eea9edd9483841805d6d7e3e641"
+      },
+      {
+        "path": "examples/zero-break/episode-03/review/v6-contact-390-1.png",
+        "sha256": "8c807b681d83d82b7b2c93ed2588628f3c97e0677d51bfecbb78a8b62036db37"
+      },
+      {
+        "path": "examples/zero-break/episode-03/review/v6-contact-390-2.png",
+        "sha256": "abd50ef4fe5360006e255ecec61e66d8796b64f6e6506ea89c7807dfbc30903c"
+      },
+      {
+        "path": "examples/zero-break/episode-03/review/v6-contact-390-3.png",
+        "sha256": "66ca8d1705d172794e9ff1de6beb802ab0d67add0f9435bf7a6e03e70e4702f0"
+      },
+      {
+        "path": "examples/zero-break/episode-03/review/v6-contact-390-4.png",
+        "sha256": "8bf3dd9ffa091424ce6b9e9e0c391132c1ab0fc6f8c71f698fda5da46c3fb23f"
+      }
+    ]
   },
   "mobileBrowserReview": {
     "status": "pending",
-    "note": "Local HTML browser access was restricted. Native canvas exports are not browser proof."
+    "note": "Prior edition review does not apply to revised art."
   },
   "physicalDeviceTested": false
 }

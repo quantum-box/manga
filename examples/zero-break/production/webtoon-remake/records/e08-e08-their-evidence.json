@@ -1,0 +1,196 @@
+{
+  "id": "e08-e08-their-evidence",
+  "episode": 8,
+  "shotId": "e08-their-evidence",
+  "beforeShot": {
+    "id": "e08-their-evidence",
+    "file": "v6-their-evidence.png",
+    "shape": "bleed",
+    "pause": 170,
+    "widthPercent": 100,
+    "scene": "Mira holds copied memory crystal in palm toward bewildered grey-robed guide; residents already walking safely behind Rook.",
+    "lines": [
+      {
+        "speaker": "Mira",
+        "text": "あなたたちの証拠です。",
+        "type": "speech"
+      }
+    ],
+    "panels": [
+      {
+        "beat": "Confirm the immediate context without adding a new event.",
+        "view": "Mira holds copied memory crystal in palm toward bewildered grey-robed guide; residents already walking safely behind Rook. Show the established spatial relationship, WITHOUT replaying earlier action or later results.",
+        "frame": "full-width wide framed establishing shot",
+        "voice": "無言"
+      },
+      {
+        "beat": "The reader receives one part of the explanation, before a response.",
+        "view": "ONLY Mira resolute face in SAME trial hall AFTER copying memory crystal, freed people already exiting safely behind Rook.",
+        "frame": "right-aligned90% width, medium framed speaker close-up",
+        "voice": "composed blue-grey capsule",
+        "line": {
+          "speaker": "Mira",
+          "text": "あなたたちの証拠です。",
+          "type": "speech"
+        }
+      },
+      {
+        "beat": "The listener or the relevant object holds the same scene while the words settle.",
+        "view": "Mira BARE palm offers ONE brass memory crystal toward grey-robed guide; no multiple crystals or new display text.",
+        "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+        "voice": "無言"
+      }
+    ],
+    "visible_text": [],
+    "added_context_dialogue": false,
+    "status": "generated",
+    "generated": true,
+    "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Mira holds copied memory crystal in palm toward bewildered grey-robed guide; residents already walking safely behind Rook.\n\nPanel 1, downward order. Frame: full-width wide framed establishing shot. Reader understands: Confirm the immediate context without adding a new event.. Visible camera subject / offscreen continuity: Mira holds copied memory crystal in palm toward bewildered grey-robed guide; residents already walking safely behind Rook. Show the established spatial relationship, WITHOUT replaying earlier action or later results.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 2, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira resolute face in SAME trial hall AFTER copying memory crystal, freed people already exiting safely behind Rook.. Voice / balloon: composed blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「あなたたちの証拠です。」 (render contents only).\nPanel 3, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Mira BARE palm offers ONE brass memory crystal toward grey-robed guide; no multiple crystals or new display text.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\n",
+    "references": [
+      "examples/zero-break/episode-08/art/14-their-evidence.png",
+      "skills/webtoon/references/zero-break/varied-01.png"
+    ],
+    "sha256": "142a29646caeb7d37e36058ec0e74c8fc4cdead14aeec265746668997049f5c6",
+    "provenance": "context-dialogue-v6",
+    "replaces": [
+      "their-evidence"
+    ],
+    "visual_review": {
+      "status": "passed_native_image_review",
+      "source_sha256": "142a29646caeb7d37e36058ec0e74c8fc4cdead14aeec265746668997049f5c6",
+      "chapter_validation": "../../../episode-08/validation.json",
+      "checks": [
+        "exact lettering and speakers",
+        "faces, hands, costumes, props",
+        "cause and effect, prior state, no premature reveals"
+      ]
+    }
+  },
+  "file": "remake-e08-their-evidence.png",
+  "references": [
+    "examples/zero-break/episode-08/art/v6-their-evidence.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Mira holds copied memory crystal in palm toward bewildered grey-robed guide; residents already walking safely behind Rook.\nExact layout, camera and mechanics: Upper horizontal row RIGHT copiedbrass memorycrystal on Miraopenpalm / LEFT maskedgreyguide bewilderedeyes. Lower full-width Mira calmlyconfronts exact あなたたちの証拠です。 large3cols あなた / たちの / 証拠です。 tailMiramouth; freedadultswalksafely behindRook shieldinbackground. No additionaljudgment/explanation.\nExact speech in chronological order: [{\"speaker\": \"Mira\", \"text\": \"あなたたちの証拠です。\", \"type\": \"speech\"}]\nExact effects (each once, near physical cause): []\nExact visible prop text: []. No other text.\n\nPhone lettering override: NO ruled separator lines inside speech balloons. Actual upright Japanese glyph height 80-90px at 1024px width; use two or three columns with at most six glyphs per column, rightmost column read first. Every horizontal row reads the RIGHT panel before the LEFT panel. Each sound once at its source. Noa stays offscreen in her workshop for this chapter.",
+  "layoutDirection": "Upper horizontal row RIGHT copiedbrass memorycrystal on Miraopenpalm / LEFT maskedgreyguide bewilderedeyes. Lower full-width Mira calmlyconfronts exact あなたたちの証拠です。 large3cols あなた / たちの / 証拠です。 tailMiramouth; freedadultswalksafely behindRook shieldinbackground. No additionaljudgment/explanation.",
+  "sounds": [],
+  "visibleText": [],
+  "status": "planned",
+  "output": "examples/zero-break/episode-08/art/remake-e08-their-evidence.png",
+  "sha256": "186d79a4f5c76ce147e3b7883064239c0619efabffaa48193bf1bf63f828c163",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-1aef7bde-7a55-4e9e-9cb5-9bf7e93807c3.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 3,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-360-0.png",
+        "sha256": "e95f70d0c529d321160d6d59dd7c2e22c4cfa7c9fce79460ef87aec2742aa91c"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-360-1.png",
+        "sha256": "accd0ae08e191bfd8fcb25f52d0a336d98b3fead29717453a0d019c4e7ba9073"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-360-2.png",
+        "sha256": "64f208fad485840bf46d97582df012d07c241e921acb5d8ab4cffed4df502d02"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-360-3.png",
+        "sha256": "336009522c1110149b2143998aba31535e769271aea80417a8a8aa3ffc1f7c4f"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-360-4.png",
+        "sha256": "2d73c022e20bd2ec086543dcc4c5606b615d1d3945a49b608491954308d41b50"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-390-0.png",
+        "sha256": "70182b4a86b23bfc30bd56ee2201399fada4d2a00797ccb25e20d372d78fe158"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-390-1.png",
+        "sha256": "7bbf11167b62bff16275cda50ae1f29b2cb3ff2fc2a08dfd38b78c520e1f1a60"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-390-2.png",
+        "sha256": "35fe2b6ca89ab14a681d86bb4f374e24a696df1f2fbf8e831e9e8cac1f37b646"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-390-3.png",
+        "sha256": "220abbd5911107919c63687db7d8f7e380f9f9a565ce22eb895ee8b27df8f242"
+      },
+      {
+        "path": "examples/zero-break/episode-08/review/v6-contact-390-4.png",
+        "sha256": "d3048984d0fc243b0626b2875478773464bec98106385f38f9eb8f3440fe1057"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-08/art/v6-their-evidence.png",
+      "sha256": "142a29646caeb7d37e36058ec0e74c8fc4cdead14aeec265746668997049f5c6"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "executedRepairPrompt": "Edit the attached comic, preserving exact style, color and Japanese canon dialogue. All lettering raster integrated upright Japanese 80-90px at1024px; no separators inside balloons, no new dialogue, no watermark. True framed panels and gutters. Each horizontal row reads RIGHT first then LEFT. Replace EVERY purple diamond with the SAME long slender AMBER memory crystal taken from the console: transparent warm gold/amber elongated prism, brass base/holder, no purple/blue orb. Top RIGHT crystal / LEFT masked guide reaction; bottom Mira presents SAME amber crystal and says exactly あなたたちの証拠です。, freed residents behind Rook. Keep THREE panels and giant text.",
+  "repairBefore": {
+    "path": "examples/zero-break/production/webtoon-remake/references/e08-e08-their-evidence-before-correction.png",
+    "sha256": "785efa81def28a8486086bbb3af38c8d1dadd02a9b4e4071675f05152d5d6482"
+  },
+  "panels": [
+    {
+      "beat": "琥珀の証拠結晶",
+      "view": "琥珀の証拠結晶",
+      "frame": "row 1; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "灰色の案内人の目",
+      "view": "灰色の案内人の目",
+      "frame": "row 1; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "ミラがあなたたちの証拠だと伝える",
+      "view": "ミラがあなたたちの証拠だと伝える",
+      "frame": "row 2; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Mira",
+        "text": "あなたたちの証拠です。",
+        "type": "speech"
+      }
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "direction": "Upper horizontal row RIGHT copiedbrass memorycrystal on Miraopenpalm / LEFT maskedgreyguide bewilderedeyes. Lower full-width Mira calmlyconfronts exact あなたたちの証拠です。 large3cols あなた / たちの / 証拠です。 tailMiramouth; freedadultswalksafely behindRook shieldinbackground. No additionaljudgment/explanation.",
+    "observedPanelBeats": [
+      "琥珀の証拠結晶",
+      "灰色の案内人の目",
+      "ミラがあなたたちの証拠だと伝える"
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "localVerification": "passed",
+  "checkedAt": "2026-10-07T04:44:43.504721+00:00",
+  "completedArtEpisodes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "selectedScenes": 112,
+  "phoneViewports": [
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "manualReview": "Episode1 causality revision: 40 selected artworks, 13 changed, read at390/360. Knowledge and requests follow on-page explanation; same clerk, seated conversation and cup preserved. Existing root/drain/cover/washing/meal sequence and withheld water release retained. Episodes2–10 unchanged from prior adoption. Food revision: cooking/serving/first spoonful edited as one smooth stew, 3 changed native images read at390/360; dialogue, SFX and existing scroll rhythm preserved.",
+  "pythonTests": {
+    "command": "python3 -m unittest discover -s scripts -p 'test_*.py'",
+    "count": 11,
+    "result": "passed"
+  },
+  "iosBundle": {
+    "command": "python3 scripts/sync_ios_webtoons.py --check",
+    "titles": 8,
+    "readers": 62,
+    "result": "passed"
+  },
+  "swiftTests": {
+    "tests": [
+      "ios_catalog",
+      "remote_catalog",
+      "offline_downloads",
+      "reading_history",
+      "reader_content"
+    ],
+    "result": "passed",
+    "scope": "All five groups passed locally after integrating origin/main, including the current eight-title, 62-reader catalog."
+  },
+  "originalArtworkChecks": {
+    "result": "passed",
+    "checks": [
+      "112 selected native PNGs byte-identical in iOS; 40 browser-restored hashes match originals",
+      "166 actual prompt/ref records verified; recorded prompts and reference SHA-256 intact",
+      "40 selected episode1 art files, 8 in each of episodes2–10; no unselected art in readers",
+      "Canonical dialogue, sound fields and scene order match manifests",
+      "Index and offline reader have identical40-image geometry at390/360; no horizontal overflow",
+      "Reader and three offline payload files each below100MiB; no image resize or recompression",
+      "Full scroll exports pixel-identical to95 native viewport tiles; Chrome32768px wrap corrected and final food visually checked."
+    ]
+  },
+  "ciSource": "https://github.com/quantum-box/manga/pull/27",
+  "physicalDeviceReview": "not performed",
+  "publicServerPublishing": "not performed",
+  "remainingScope": "Episodes 11–240 are a series roadmap, not finished art.",
+  "compactTransportTests": {
+    "command": "python3 -m unittest discover -s examples/tower-farm-kitchen/production -p 'test_*.py'",
+    "count": 4,
+    "result": "passed"
+  },
+  "episode01Revision": {
+    "selectedScenes": 40,
+    "newNativeArtworks": 13,
+    "generatedArtworks": 18,
+    "recordedSounds": 24,
+    "phoneViewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 40241,
+        "screens": 47.68,
+        "cueToRelease": 936.59
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "scrollHeight": 37186,
+        "screens": 46.48,
+        "cueToRelease": 864.55
+      }
+    ],
+    "review": "passed_manual_both_widths",
+    "physicalDevice": "not performed",
+    "readerPackaging": "reader.html and three companion native-byte JS payloads; original PNG bytes unchanged"
+  },
+  "foodRevision": {
+    "selectedArtworks": 3,
+    "actualGenerations": 4,
+    "manualReview": "passed_manual_both_widths",
+    "plan": "episode-01-food.json",
+    "physicalDeviceReview": "not performed",
+    "localChecks": "Python11+4, all five Swift groups, iOS sync8 titles/62 readers, native/iOS112 hashes, restored browser40 hashes, actual generation166 records, git diff --check: passed",
+    "fullScrollExport": "passed_all95_tiles_and_manual390_tail"
+  }
+}

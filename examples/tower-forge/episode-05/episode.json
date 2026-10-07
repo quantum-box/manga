@@ -1,0 +1,197 @@
+{
+  "number": 5,
+  "title": "捨てない設計図",
+  "scenes": [
+    {
+      "name": "分解する朝",
+      "location": "街のオルンの工房、次のログインの昼",
+      "panels": [
+        {
+          "art": "全幅。机に焼けた剣、工具、三人とNPCオルン。失敗した剣は同じ形。",
+          "speaker": "オルン",
+          "text": "よく、戻ってきた。",
+          "columns": [
+            "よく、",
+            "戻ってきた。"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "中寄り。カイが自分で工具を取り、オルンに鍔を見せる。",
+          "speaker": "カイ",
+          "text": "ここを締めた。",
+          "columns": [
+            "ここを締めた。"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "小さな断面の接写。詰まりではなく熱で黒くなった刻線。オルンの太い指が近くにある。",
+          "speaker": "オルン",
+          "text": "逃がす道が、ない。",
+          "columns": [
+            "逃がす道が、",
+            "ない。"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "下のカイの顔。分かった瞬間でも嬉しそうにしない。",
+          "speaker": "カイ",
+          "text": "熱も、ためたのか。",
+          "columns": [
+            "熱も、",
+            "ためたのか。"
+          ],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 60,
+      "withheld": "未登場の敵・後の報酬を描かない",
+      "id": "01",
+      "file": "art/01.png",
+      "prompt": "Use case: illustration-story. Finished full-color Japanese smartphone vertical-scroll Webtoon. ONE portrait illustration around 1024x3072, a tall 1:3 canvas, with four deliberately UNEQUAL panels or beats ordered from top to bottom. Reference image establishes character identity, clothes, tools, palette, anime style ONLY; do not copy the reference sheet's layout, labels, portraits, parchment backdrop, or bring every character into every panel. Clean detailed anime linework, readable expressive faces, controlled cel shading, grounded high fantasy, warm natural metals, white page gutters. Medieval sword and magic VRMMORPG; actual world scenery looks like a fantasy adventure, only small HUDs imply gameplay. No futuristic city.\nDraw exact Japanese speech as part of the raster artwork. Genuine vertical lettering with upright characters, top-to-bottom within a column, columns RIGHT TO LEFT. Clean printed Japanese manga gothic, near 75px glyph height on a 1024px-wide original, readable at 360px display width; never shrink long dialogue. PRIORITIZE large readable lettering; expand the balloons and panel height instead. Maintain around 22-26px visible Japanese glyphs after 360px downscaling. Each utterance below gives columns in right-to-left order, with / only as a separator in this instruction, never printed. Normal speech: slender oval or rounded tall bubble, tail to speaker. Quiet speech: softly irregular thin outline with tail. Shouts: bold spiky bubble and clear pointed tail. Thoughts: cloud-like shape with dots toward the thinker, no speech tail. HUD is translucent cyan, compact horizontal Japanese is allowed for HUD, not ornamental gold panel. Sound effects are material-appropriate drawn text and may be horizontal. Never duplicate an utterance, add extra visible writing, translate Japanese, show speaker labels, or overlay unnecessary HUD.\nPanel layout: shallow establishing/context panel when appropriate, staggered medium conversation or action, narrow object/eye insert, larger lower reaction or result. Use unequal heights and widths, some borderless long scenery; action may have slanted frame borders but keep the lettering upright. Small panels show ONLY close-up subjects, not tiny whole bodies. Dialogue must not cover faces, hands, sword, shield, or clue. Keep clear right-to-left order inside any same-row split. Use varied camera distances for understanding, no uniform four-box grid. Use a white bottom edge/gutter. Characters remain in the same location even if offscreen. Keep actions causal and exact prop state.\nKai: dark-brown short hair, one amber streak at his right temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short indigo cape, dark trousers, leather boots, copper cuff left forearm, steel one-handed sword in right hand with square brass guard and one thin orange fuller inset; not a lightsaber. After episode 5 sword has small copper cooling plate beside guard. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over deep blue tunic, navy cape, one triangular silver shield with cobalt line in left hand, straight steel sword on belt when not specified. Iris: plum bob hair, green eyes, teal hood-down cloak, ivory tunic, wooden staff with ONE amber crystal and copper ring. Do not swap their colors, genders, or props. Orun: older male NPC smith with short gray beard and brown apron. Vane: male player, tied-back ash-gray hair, silver armor, white cape. Never introduce unmentioned characters, duplicate hands/limbs/props or show a future reveal early. No watermark.\nEpisode 5, strip 1, scene: 分解する朝. Location continuity: 街のオルンの工房、次のログインの昼.\nBEAT 1 top-to-bottom. Artwork/camera/focus: 全幅。机に焼けた剣、工具、三人とNPCオルン。失敗した剣は同じ形。\nExactly one utterance by オルン; voice/shape: 普通の声. Exact text: よく、戻ってきた。. Vertical columns RIGHT to LEFT: よく、 / 戻ってきた。\nBEAT 2 top-to-bottom. Artwork/camera/focus: 中寄り。カイが自分で工具を取り、オルンに鍔を見せる。\nExactly one utterance by カイ; voice/shape: 普通の声. Exact text: ここを締めた。. Vertical columns RIGHT to LEFT: ここを締めた。\nBEAT 3 top-to-bottom. Artwork/camera/focus: 小さな断面の接写。詰まりではなく熱で黒くなった刻線。オルンの太い指が近くにある。\nExactly one utterance by オルン; voice/shape: 普通の声. Exact text: 逃がす道が、ない。. Vertical columns RIGHT to LEFT: 逃がす道が、 / ない。\nBEAT 4 top-to-bottom. Artwork/camera/focus: 下のカイの顔。分かった瞬間でも嬉しそうにしない。\nExactly one utterance by カイ; voice/shape: 普通の声. Exact text: 熱も、ためたのか。. Vertical columns RIGHT to LEFT: 熱も、 / ためたのか。\nWithheld information: 未登場の敵・後の報酬を描かない"
+    },
+    {
+      "name": "記録を合わせる",
+      "location": "同じ机。魔石と紙の記録",
+      "panels": [
+        {
+          "art": "右寄せイリス。記録紙をカイへ向ける。",
+          "speaker": "イリス",
+          "text": "私の魔法も、強すぎた。",
+          "columns": [
+            "私の魔法も、",
+            "強すぎた。"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "浅いセナの顔。カイとイリスの間を見て言う。",
+          "speaker": "セナ",
+          "text": "弱くても、続けばいい。",
+          "columns": [
+            "弱くても、",
+            "続けばいい。"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "手の接写二つを右から左。紙へ流路を描く→弁を開く。紙の図は線だけ、細かい文字なし。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "大きなカイの表情。三人へ顔を向けて新案を説明する。",
+          "speaker": "カイ",
+          "text": "一撃ごとに、冷やそう。",
+          "columns": [
+            "一撃ごとに、",
+            "冷やそう。"
+          ],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 70,
+      "withheld": "未登場の敵・後の報酬を描かない",
+      "id": "02",
+      "file": "art/02.png",
+      "prompt": "Use case: illustration-story. Finished full-color Japanese smartphone vertical-scroll Webtoon. ONE portrait illustration around 1024x3072, a tall 1:3 canvas, with four deliberately UNEQUAL panels or beats ordered from top to bottom. Reference image establishes character identity, clothes, tools, palette, anime style ONLY; do not copy the reference sheet's layout, labels, portraits, parchment backdrop, or bring every character into every panel. Clean detailed anime linework, readable expressive faces, controlled cel shading, grounded high fantasy, warm natural metals, white page gutters. Medieval sword and magic VRMMORPG; actual world scenery looks like a fantasy adventure, only small HUDs imply gameplay. No futuristic city.\nDraw exact Japanese speech as part of the raster artwork. Genuine vertical lettering with upright characters, top-to-bottom within a column, columns RIGHT TO LEFT. Clean printed Japanese manga gothic, near 75px glyph height on a 1024px-wide original, readable at 360px display width; never shrink long dialogue. PRIORITIZE large readable lettering; expand the balloons and panel height instead. Maintain around 22-26px visible Japanese glyphs after 360px downscaling. Each utterance below gives columns in right-to-left order, with / only as a separator in this instruction, never printed. Normal speech: slender oval or rounded tall bubble, tail to speaker. Quiet speech: softly irregular thin outline with tail. Shouts: bold spiky bubble and clear pointed tail. Thoughts: cloud-like shape with dots toward the thinker, no speech tail. HUD is translucent cyan, compact horizontal Japanese is allowed for HUD, not ornamental gold panel. Sound effects are material-appropriate drawn text and may be horizontal. Never duplicate an utterance, add extra visible writing, translate Japanese, show speaker labels, or overlay unnecessary HUD.\nPanel layout: shallow establishing/context panel when appropriate, staggered medium conversation or action, narrow object/eye insert, larger lower reaction or result. Use unequal heights and widths, some borderless long scenery; action may have slanted frame borders but keep the lettering upright. Small panels show ONLY close-up subjects, not tiny whole bodies. Dialogue must not cover faces, hands, sword, shield, or clue. Keep clear right-to-left order inside any same-row split. Use varied camera distances for understanding, no uniform four-box grid. Use a white bottom edge/gutter. Characters remain in the same location even if offscreen. Keep actions causal and exact prop state.\nKai: dark-brown short hair, one amber streak at his right temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short indigo cape, dark trousers, leather boots, copper cuff left forearm, steel one-handed sword in right hand with square brass guard and one thin orange fuller inset; not a lightsaber. After episode 5 sword has small copper cooling plate beside guard. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over deep blue tunic, navy cape, one triangular silver shield with cobalt line in left hand, straight steel sword on belt when not specified. Iris: plum bob hair, green eyes, teal hood-down cloak, ivory tunic, wooden staff with ONE amber crystal and copper ring. Do not swap their colors, genders, or props. Orun: older male NPC smith with short gray beard and brown apron. Vane: male player, tied-back ash-gray hair, silver armor, white cape. Never introduce unmentioned characters, duplicate hands/limbs/props or show a future reveal early. No watermark.\nEpisode 5, strip 2, scene: 記録を合わせる. Location continuity: 同じ机。魔石と紙の記録.\nBEAT 1 top-to-bottom. Artwork/camera/focus: 右寄せイリス。記録紙をカイへ向ける。\nExactly one utterance by イリス; voice/shape: 普通の声. Exact text: 私の魔法も、強すぎた。. Vertical columns RIGHT to LEFT: 私の魔法も、 / 強すぎた。\nBEAT 2 top-to-bottom. Artwork/camera/focus: 浅いセナの顔。カイとイリスの間を見て言う。\nExactly one utterance by セナ; voice/shape: 普通の声. Exact text: 弱くても、続けばいい。. Vertical columns RIGHT to LEFT: 弱くても、 / 続けばいい。\nBEAT 3 top-to-bottom. Artwork/camera/focus: 手の接写二つを右から左。紙へ流路を描く→弁を開く。紙の図は線だけ、細かい文字なし。\nSilent beat: no speech bubble, no extra text.\nBEAT 4 top-to-bottom. Artwork/camera/focus: 大きなカイの表情。三人へ顔を向けて新案を説明する。\nExactly one utterance by カイ; voice/shape: 普通の声. Exact text: 一撃ごとに、冷やそう。. Vertical columns RIGHT to LEFT: 一撃ごとに、 / 冷やそう。\nWithheld information: 未登場の敵・後の報酬を描かない"
+    },
+    {
+      "name": "作り直す",
+      "location": "同じ工房の作業台",
+      "panels": [
+        {
+          "art": "上の接写。焼けた導線の細い部分を外す。剣の鋼刃はそのまま。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "斜め小コマ。新しい細い導線を溝へ埋め、鍔の近くへ薄い銅の放熱板を取り付ける。",
+          "speaker": "音",
+          "text": "カチ",
+          "columns": [
+            "カチ"
+          ],
+          "voice": "効果音"
+        },
+        {
+          "art": "右寄せの中コマ。オルンが見守り、カイが仕上げる。",
+          "speaker": "オルン",
+          "text": "試験を、忘れるな。",
+          "columns": [
+            "試験を、",
+            "忘れるな。"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "下の広いコマ。カイが改修剣を両手で水平に持ち、仲間に見せる。",
+          "speaker": "カイ",
+          "text": "見てて。",
+          "columns": [
+            "見てて。"
+          ],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 60,
+      "withheld": "未登場の敵・後の報酬を描かない",
+      "id": "03",
+      "file": "art/03.png",
+      "prompt": "Use case: illustration-story. Finished full-color Japanese smartphone vertical-scroll Webtoon. ONE portrait illustration around 1024x3072, a tall 1:3 canvas, with four deliberately UNEQUAL panels or beats ordered from top to bottom. Reference image establishes character identity, clothes, tools, palette, anime style ONLY; do not copy the reference sheet's layout, labels, portraits, parchment backdrop, or bring every character into every panel. Clean detailed anime linework, readable expressive faces, controlled cel shading, grounded high fantasy, warm natural metals, white page gutters. Medieval sword and magic VRMMORPG; actual world scenery looks like a fantasy adventure, only small HUDs imply gameplay. No futuristic city.\nDraw exact Japanese speech as part of the raster artwork. Genuine vertical lettering with upright characters, top-to-bottom within a column, columns RIGHT TO LEFT. Clean printed Japanese manga gothic, near 75px glyph height on a 1024px-wide original, readable at 360px display width; never shrink long dialogue. PRIORITIZE large readable lettering; expand the balloons and panel height instead. Maintain around 22-26px visible Japanese glyphs after 360px downscaling. Each utterance below gives columns in right-to-left order, with / only as a separator in this instruction, never printed. Normal speech: slender oval or rounded tall bubble, tail to speaker. Quiet speech: softly irregular thin outline with tail. Shouts: bold spiky bubble and clear pointed tail. Thoughts: cloud-like shape with dots toward the thinker, no speech tail. HUD is translucent cyan, compact horizontal Japanese is allowed for HUD, not ornamental gold panel. Sound effects are material-appropriate drawn text and may be horizontal. Never duplicate an utterance, add extra visible writing, translate Japanese, show speaker labels, or overlay unnecessary HUD.\nPanel layout: shallow establishing/context panel when appropriate, staggered medium conversation or action, narrow object/eye insert, larger lower reaction or result. Use unequal heights and widths, some borderless long scenery; action may have slanted frame borders but keep the lettering upright. Small panels show ONLY close-up subjects, not tiny whole bodies. Dialogue must not cover faces, hands, sword, shield, or clue. Keep clear right-to-left order inside any same-row split. Use varied camera distances for understanding, no uniform four-box grid. Use a white bottom edge/gutter. Characters remain in the same location even if offscreen. Keep actions causal and exact prop state.\nKai: dark-brown short hair, one amber streak at his right temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short indigo cape, dark trousers, leather boots, copper cuff left forearm, steel one-handed sword in right hand with square brass guard and one thin orange fuller inset; not a lightsaber. After episode 5 sword has small copper cooling plate beside guard. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over deep blue tunic, navy cape, one triangular silver shield with cobalt line in left hand, straight steel sword on belt when not specified. Iris: plum bob hair, green eyes, teal hood-down cloak, ivory tunic, wooden staff with ONE amber crystal and copper ring. Do not swap their colors, genders, or props. Orun: older male NPC smith with short gray beard and brown apron. Vane: male player, tied-back ash-gray hair, silver armor, white cape. Never introduce unmentioned characters, duplicate hands/limbs/props or show a future reveal early. No watermark.\nEpisode 5, strip 3, scene: 作り直す. Location continuity: 同じ工房の作業台.\nBEAT 1 top-to-bottom. Artwork/camera/focus: 上の接写。焼けた導線の細い部分を外す。剣の鋼刃はそのまま。\nSilent beat: no speech bubble, no extra text.\nBEAT 2 top-to-bottom. Artwork/camera/focus: 斜め小コマ。新しい細い導線を溝へ埋め、鍔の近くへ薄い銅の放熱板を取り付ける。\nExactly one utterance by 音; voice/shape: 効果音. Exact text: カチ. Vertical columns RIGHT to LEFT: カチ\nBEAT 3 top-to-bottom. Artwork/camera/focus: 右寄せの中コマ。オルンが見守り、カイが仕上げる。\nExactly one utterance by オルン; voice/shape: 普通の声. Exact text: 試験を、忘れるな。. Vertical columns RIGHT to LEFT: 試験を、 / 忘れるな。\nBEAT 4 top-to-bottom. Artwork/camera/focus: 下の広いコマ。カイが改修剣を両手で水平に持ち、仲間に見せる。\nExactly one utterance by カイ; voice/shape: 普通の声. Exact text: 見てて。. Vertical columns RIGHT to LEFT: 見てて。\nWithheld information: 未登場の敵・後の報酬を描かない"
+    },
+    {
+      "name": "同じ間隔",
+      "location": "工房の石の試験庭、前話の木製標的とは別の健全な標的",
+      "panels": [
+        {
+          "art": "全幅。セナが時計のHUDを見て合図。カイが剣を構え、イリスが後ろで魔石を持つ。",
+          "speaker": "セナ",
+          "text": "一回、待って。",
+          "columns": [
+            "一回、",
+            "待って。"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "浅い二連動作。カイが一撃→弁から橙の光が小さく抜け、間を置く。",
+          "speaker": "音",
+          "text": "しゅう",
+          "columns": [
+            "しゅう"
+          ],
+          "voice": "効果音"
+        },
+        {
+          "art": "斜めの広い下コマ。二撃目でも三撃目でも刻線が暗赤に焼けず、薄い橙を保つ。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "小さな三人の顔。イリスが少し笑い、カイが安堵する。",
+          "speaker": "イリス",
+          "text": "同じ出力、保てた。",
+          "columns": [
+            "同じ出力、",
+            "保てた。"
+          ],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 0,
+      "withheld": "未登場の敵・後の報酬を描かない",
+      "id": "04",
+      "file": "art/04.png",
+      "prompt": "Use case: illustration-story. Finished full-color Japanese smartphone vertical-scroll Webtoon. ONE portrait illustration around 1024x3072, a tall 1:3 canvas, with four deliberately UNEQUAL panels or beats ordered from top to bottom. Reference image establishes character identity, clothes, tools, palette, anime style ONLY; do not copy the reference sheet's layout, labels, portraits, parchment backdrop, or bring every character into every panel. Clean detailed anime linework, readable expressive faces, controlled cel shading, grounded high fantasy, warm natural metals, white page gutters. Medieval sword and magic VRMMORPG; actual world scenery looks like a fantasy adventure, only small HUDs imply gameplay. No futuristic city.\nDraw exact Japanese speech as part of the raster artwork. Genuine vertical lettering with upright characters, top-to-bottom within a column, columns RIGHT TO LEFT. Clean printed Japanese manga gothic, near 75px glyph height on a 1024px-wide original, readable at 360px display width; never shrink long dialogue. PRIORITIZE large readable lettering; expand the balloons and panel height instead. Maintain around 22-26px visible Japanese glyphs after 360px downscaling. Each utterance below gives columns in right-to-left order, with / only as a separator in this instruction, never printed. Normal speech: slender oval or rounded tall bubble, tail to speaker. Quiet speech: softly irregular thin outline with tail. Shouts: bold spiky bubble and clear pointed tail. Thoughts: cloud-like shape with dots toward the thinker, no speech tail. HUD is translucent cyan, compact horizontal Japanese is allowed for HUD, not ornamental gold panel. Sound effects are material-appropriate drawn text and may be horizontal. Never duplicate an utterance, add extra visible writing, translate Japanese, show speaker labels, or overlay unnecessary HUD.\nPanel layout: shallow establishing/context panel when appropriate, staggered medium conversation or action, narrow object/eye insert, larger lower reaction or result. Use unequal heights and widths, some borderless long scenery; action may have slanted frame borders but keep the lettering upright. Small panels show ONLY close-up subjects, not tiny whole bodies. Dialogue must not cover faces, hands, sword, shield, or clue. Keep clear right-to-left order inside any same-row split. Use varied camera distances for understanding, no uniform four-box grid. Use a white bottom edge/gutter. Characters remain in the same location even if offscreen. Keep actions causal and exact prop state.\nKai: dark-brown short hair, one amber streak at his right temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short indigo cape, dark trousers, leather boots, copper cuff left forearm, steel one-handed sword in right hand with square brass guard and one thin orange fuller inset; not a lightsaber. After episode 5 sword has small copper cooling plate beside guard. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over deep blue tunic, navy cape, one triangular silver shield with cobalt line in left hand, straight steel sword on belt when not specified. Iris: plum bob hair, green eyes, teal hood-down cloak, ivory tunic, wooden staff with ONE amber crystal and copper ring. Do not swap their colors, genders, or props. Orun: older male NPC smith with short gray beard and brown apron. Vane: male player, tied-back ash-gray hair, silver armor, white cape. Never introduce unmentioned characters, duplicate hands/limbs/props or show a future reveal early. No watermark.\nEpisode 5, strip 4, scene: 同じ間隔. Location continuity: 工房の石の試験庭、前話の木製標的とは別の健全な標的.\nBEAT 1 top-to-bottom. Artwork/camera/focus: 全幅。セナが時計のHUDを見て合図。カイが剣を構え、イリスが後ろで魔石を持つ。\nExactly one utterance by セナ; voice/shape: 普通の声. Exact text: 一回、待って。. Vertical columns RIGHT to LEFT: 一回、 / 待って。\nBEAT 2 top-to-bottom. Artwork/camera/focus: 浅い二連動作。カイが一撃→弁から橙の光が小さく抜け、間を置く。\nExactly one utterance by 音; voice/shape: 効果音. Exact text: しゅう. Vertical columns RIGHT to LEFT: しゅう\nBEAT 3 top-to-bottom. Artwork/camera/focus: 斜めの広い下コマ。二撃目でも三撃目でも刻線が暗赤に焼けず、薄い橙を保つ。\nSilent beat: no speech bubble, no extra text.\nBEAT 4 top-to-bottom. Artwork/camera/focus: 小さな三人の顔。イリスが少し笑い、カイが安堵する。\nExactly one utterance by イリス; voice/shape: 普通の声. Exact text: 同じ出力、保てた。. Vertical columns RIGHT to LEFT: 同じ出力、 / 保てた。\nWithheld information: 未登場の敵・後の報酬を描かない"
+    }
+  ]
+}

@@ -1,6 +1,10 @@
-# 改稿版 context-dialogue-v6 の再構築
+# 採用Webtoon原画の再構築
+
+余白演出の部分試作は [装着シーンの見本](scroll-pacing-sample/README.md)。音だけ・システム通知だけ・光だけの独立した区間から全身の披露へつなぐ。正式な話数・採用版・公開版には反映していない。
 
 第1〜10話の保存原画と実行記録からリーダーを再構築する。文字と吹き出しは原画内。既存PNGは変更しない。第11〜50話はコマ別脚本のみで、作画は未制作。
+
+今回の第2〜10話は [webtoon-remake](webtoon-remake/status.md) の全166素材・483コマ。manifestの互換スキーマは context-dialogue-v6、採用版識別子は remakeEdition: webtoon-remake-20261006。再構築は全素材の採用記録がある話だけを許可し、欠けた原画を旧版で補わない。第1話の原画と公開版は変更していない。
 
 1. `python3 production/feedback_v6.py build 1`、`python3 production/build.py` でリーダー・絵コンテ・話一覧・実行指示を再構築する。
 2. `node production/export_v6.cjs` で360/390px幅の全長画像・全素材一覧・連続窓を作る。`@napi-rs/canvas` が必要。HTMLを描画しないため、ブラウザ画面やDOMの証明にはならない。
@@ -15,3 +19,5 @@
 `plan_feedback_v6.py` は今回の企画指示、`feedback-v6/records` は実際の実行記録。実行後に計画が変わっても、実行済みの指示を計画値で上書きしない。以前のmanifest・生成記録・プロンプトはGitの履歴で管理し、`history.py` が固定コミットから再構築の入力を直接読む。作業ツリーに旧版のコピーは作らない。履歴を省略したcloneでは、エラーに表示される `git fetch origin <コミット>` を実行してから再構築する。
 
 ブラウザでの現行版再確認と実機確認は未実施。旧版の `check.cjs` は旧manifestを前提にした検査で、v6には使用しない。今回の環境ではローカルHTMLへのブラウザアクセスが制限されたため、別ブラウザ・localhost・直接CDPなどで迂回しない。ネイティブ画像の目視結果だけをブラウザ確認済みとして記録しない。
+
+再作画の原寸と360/390px幅の全素材を読んでから、webtoon-remake/mark_mobile.py で確認したボードとハッシュを記録する。未確認の書き出しには使わない。verify_v6.py は原画・修正前・参照・確認ボード・埋め込みPNG・ZIP・iOS・全50話の構成を照合する。照合が通った後に webtoon-remake/finalize_docs.py で配布サマリーとREADMEを揃える。旧原画は実行記録が参照する制作入力として保持し、採用リーダーには最新版だけを収録する。
