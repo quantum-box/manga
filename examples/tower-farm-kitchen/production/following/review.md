@@ -4,8 +4,12 @@
 
 適用した参照：approved-webtoon、vertical-lettering、whitespace complete390と窓01〜05、spacious-after、zero-break balloons01。店の導入は広く、準備は小さな横並び、味わいは無言の表情を挟み、完売と翌日の予約をゆっくり読む。第10話の食堂、人物、調理基準を継承した。ロウ以外の同行者を新しい固有人物と誤認させないよう一枚だけ人物を修正し元画像と実行指示を制作資料へ保存した。
 
-第12〜20話は脚本のみ。公開は一話ごとにPR・CI・レビュー・マージ・画像アップロード・公開確認を終えてから次の作画へ進む。
+第13〜20話は脚本を準備済み。公開は一話ごとにPR・CI・レビュー・マージ・画像アップロード・公開確認を終えてから次の作画へ進む。
 
 ## Episode 12
 
 All native 390x844 and 360x800 sheets visually reviewed. Elna overlap and Leon arrival retained together; helmet customer owns price dialogue, anonymous companion has brown bob, handmade copper basin. Dialogue and continuity passed.
+
+## Episode 13
+
+All ten native 390x844 and 360x800 scroll sheets and six protected cue/pause/answer screenshots visually reviewed. Guild interior retained throughout; empty numbered bowls precede cooking, three distinct candidate dishes follow. Japanese dialogue and speakers checked against scripts. Overlapping balloons in scene 1 and scene 8 retained in the same windows, as are Elna and the plated dish. Thirty display windows preserve original bytes and complete lettering. The 910px pause protects the meal presentation before tasting at both widths.

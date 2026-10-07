@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-6ab44f49-ba2f-4400-ab07-7cc39db4374b.png",
+  "adopted": "art/07-the-plates-hall.png",
+  "original_sha256": "51bbbf1da53448987f43f5d3e79ad0ae01ec9b956048d13899b00dbd347d3e9d",
+  "adopted_sha256": "51bbbf1da53448987f43f5d3e79ad0ae01ec9b956048d13899b00dbd347d3e9d",
+  "width": 731,
+  "height": 2151,
+  "prompt_file": "generation/07-the-plates-hall.prompt.txt",
+  "prompt": "Edit reference 1 as the exact target. Reference 2 supplies ONLY the indoor guild tasting-hall architecture from its upper establishing panel; never copy its people, food or layout. Preserve target composition, panel borders, every existing character identity/clothing/gesture/face, food and cooking actions, all exact Japanese dialogue and lettering. Correct the location consistently in EVERY target panel: the entire current sequence is INSIDE the third-floor GUILD COMMUNAL TASTING HALL, vaulted sandstone interior, blue hanging guild banners, lanterns, three long temporary wooden preparation tables, small ornamental ivy only. Replace the conspicuous blue-awning diner, cottage roof, outdoor farm beds, paved farm lane and garden views with the same indoor hall and preparation tables. There is NO diner cottage, no blue exterior awning, no garden farm and no open sky here. Keep crops only as washed ingredients in crates, never planted fields. Keep original faces, speech bubbles, colors and artwork style unchanged. No additional characters, inscriptions or dialogue. The three anonymous candidate dishes are distinct and remain so. Add small simple candidate digits 1, 2, 3 on the blank wooden cards from LEFT to RIGHT in the establishing view and the matching three closeup cards. These are story-required anonymous dish numbers, not titles or new speech.Same very tall portrait proportions.",
+  "pixel_processing": "none",
+  "text_review": "passed",
+  "continuity_review": "passed",
+  "reference_files": [
+    {
+      "path": "generation/inputs/07-the-plates-original.png",
+      "sha256": "edf3626184509e7cf2558308d0f5ad72416c75a1a6af642b41b54ad1bf115ee6",
+      "executed_filename": "exec-b2fc28d7-0e96-44ca-a3cc-81c4f383692b.png"
+    },
+    {
+      "path": "generation/inputs/01-tasting-hall-original.png",
+      "sha256": "a2fd86ecaca8995d8ba21ce054972b6342ad4be9b221b0613ac8267b820b066a",
+      "executed_filename": "exec-5dec2580-7ddb-4eba-81f9-f3e1b9b5cfa1.png"
+    }
+  ]
+}
