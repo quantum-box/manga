@@ -19,6 +19,8 @@ pub fn identify(id: &str, title: &str) -> SeriesInfo {
         ("heavenly-demon", "天魔、二周目。")
     } else if id.starts_with("zero-break-") {
         ("zero-break", "ゼロ・ブレイク")
+    } else if id.starts_with("tower-farm-kitchen-") {
+        ("tower-farm-kitchen", "塔の農夫は、英雄を食わせる")
     } else {
         (id, title)
     };
@@ -114,6 +116,13 @@ mod tests {
             assert_eq!(identify(id, "").id, expected);
         }
         assert_eq!(identify("pochi-episode-02-r123abc", "").number, 2);
+        for number in 1..=10 {
+            let id = format!("tower-farm-kitchen-episode-{number:02}-r123abc");
+            let info = identify(&id, "different title");
+            assert_eq!(info.id, "tower-farm-kitchen");
+            assert_eq!(info.title, "塔の農夫は、英雄を食わせる");
+            assert_eq!(info.number, number);
+        }
         assert_eq!(
             chapter_title("pochi-episode-02-r123abc", "言葉のない約束"),
             "言葉のない約束"
