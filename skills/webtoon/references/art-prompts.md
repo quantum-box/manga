@@ -26,8 +26,9 @@ Style/medium: [chosen art direction].
 Scene/backdrop: [consistent setting and time].
 Camera: [distance: wide / medium / close-up; height and angle; whose viewpoint, if relevant].
 Composition: [primary focal element and path to the next beat; reserve the planned balloon area without covering faces, hands or clues].
-Text: Render the exact Japanese dialogue below inside white speech balloons integrated with the illustration. Use true vertical Japanese typesetting: upright glyphs, top-to-bottom columns, columns ordered right-to-left. Do not rotate horizontal sentences sideways. No extra text or watermark.
+Text: Render only the specified dialogue, sound effects and in-world display text. Integrate them with the illustration. Speech uses white balloons and true vertical Japanese: upright glyphs, top-to-bottom columns ordered right-to-left. Do not rotate horizontal sentences sideways. No unlisted text or watermark.
 Dialogue: [speaker, exact full text, balloon reading order, and each vertical column listed in right-to-left order].
+Sound effects: [exact word, producing action/material, location near the source, scale and drawn letter style; or none with a reason for quiet]. Keep sounds outside speech/thought balloons; their orientation follows the action, separately from dialogue.
 Voice: [spoken / thought; intended listener; volume, emotion and breath for THIS utterance].
 Balloon design: [contour, line weight/color, white inner padding, and continuous speech tail or thought dots].
 Lettering: Clean printed Japanese manga gothic, dark lettering, generous inset padding, legible after smartphone downscaling. Balloon tails point to the speakers. Do not cover faces or hands.
@@ -47,13 +48,16 @@ Visible subject: [speaker face / listener reaction / the object being discussed]
 Offscreen: [who remains nearby and on which side].
 Single beat: [what the reader understands now].
 Carry forward: [eyeline, posture, background marker and prop state].
-Exact dialogue for THIS panel only: [text, or explicitly silent].
+Exact dialogue for THIS panel only: [text, or no dialogue/thought balloons].
+Exact sound effects for THIS panel only: [word, source, placement and drawn style; or none].
 Do not include later replies, new locations, or every character from the reference.
 ```
 
 文字は短い語だけでなく全文を渡す。列分けの一覧を吹き出しへラベルとして描かせないよう、全文と配置の指示を分ける。1024px幅の原画を360pxへ表示する場合、字の高さ60pxは約21pxになるが、狭いコマへ配置すればさらに小さくなる。実際のコマの表示幅から必要な原画の字の大きさを決め、生成結果を目視する。文字を小さくして無理に詰めず、列数・吹き出しの形・構図を調整する。
 
-文字を個別編集する指定などで後から組版する場合だけ、上の `Text` を「No text or speech balloons; reserve [region] for separately typeset dialogue.」へ置き換える。無言の場面は明示して文字なしで生成する。
+文字を個別編集する指定などで後から組版する場合だけ、後組版する文字の種類と予約領域を指定する。セリフだけを後組版し、効果音は絵と一緒に作る場合は `No dialogue or speech balloons; render only the specified sound effects.` とする。全ての文字を後組版する場合、または完全な静けさを意図する場合にだけ `No text, balloons or sound effects.` を使う。
+
+「無言」を自動で文字なしへ変換しない。たとえば歩くコマは `Dialogue: none. Sound effects: コツ、コツ near the boots, small hard lettering.`、聞き手が言葉を受け止めるコマは `Dialogue: none. Sound effects: none; preserve a quiet reaction.` と分ける。セリフと音が共存するコマも別々に指定する。効果音を `speaker: 音` の発話へ入れず、音のない感情コマへ動作音を一律に足さない。過去の実使用指示は履歴として保ち、修正した次回用指示や実行した編集指示と区別する。
 
 ## 構成の指示を変える
 
@@ -113,3 +117,7 @@ A large readable close-up, with [exact dialogue] inside a vertically lettered sp
 | キャラクターの模様・服装 | 参照を固定 | 同じ | 同じ。変更するなら話の中で説明 |
 
 完成した画像を見て確認する。指示文に書けていることは、画像が正しくできた証拠にはならない。
+
+## 文字を余白へ移す編集
+
+元のセリフや効果音を独立した余白へ移す場合は、再掲するだけで終えない。原画で除去する文字、吹き出し・尾・思考点・強調線の範囲と、その部分へ戻す背景を指定し、その他の文字、人物、手足、衣服、枠と寸法を保つ。安全な表示窓で文字を外せる場合は原画を変えず、文字や顔を切る場合だけ編集・再作画を選ぶ。[第1話の全編改稿例](scroll-revision-lessons.md)のように、移動元と余白の文字が一度だけ読め、音の発生源と通知の種類が前後でつながるか確認する。
