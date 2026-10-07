@@ -29,6 +29,16 @@ struct MangaTitle: Identifiable, Hashable, Codable {
             Catalog.resource($0.reader, resourceURL: resourceURL)?.path == destination
         }
     }
+    func linksToChapterList(to url: URL, resourceURL: URL? = Bundle.main.resourceURL) -> Bool {
+        guard url.isFileURL else { return false }
+        let destination = url.resolvingSymlinksInPath().standardizedFileURL.path
+        // This is a native route back to the title's list, not an HTML resource to load.
+        return episodes.contains { episode in
+            guard let reader = Catalog.resource(episode.reader, resourceURL: resourceURL),
+                  let list = URL(string: "../chapters.html", relativeTo: reader)?.absoluteURL else { return false }
+            return list.resolvingSymlinksInPath().standardizedFileURL.path == destination
+        }
+    }
 }
 
 struct Episode: Identifiable, Hashable, Codable {

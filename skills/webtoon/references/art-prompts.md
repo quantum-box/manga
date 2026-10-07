@@ -28,7 +28,7 @@ Camera: [distance: wide / medium / close-up; height and angle; whose viewpoint, 
 Composition: [primary focal element and path to the next beat; reserve the planned balloon area without covering faces, hands or clues].
 Text: Render only the specified dialogue, sound effects and in-world display text. Integrate them with the illustration. Speech uses white balloons and true vertical Japanese: upright glyphs, top-to-bottom columns ordered right-to-left. Do not rotate horizontal sentences sideways. No unlisted text or watermark.
 Dialogue: [speaker, exact full text, balloon reading order, and each vertical column listed in right-to-left order].
-Sound effects: [exact word, producing action/material, location near the source, scale and drawn letter style; or none with a reason for quiet]. Keep sounds outside speech/thought balloons; their orientation follows the action, separately from dialogue.
+Sound effects: [exact word, producing action/material, position relative to the source, scale and drawn letter style, beginning/continuation/end; or none only when no sound persists, with a reason for quiet]. Keep sounds outside speech/thought balloons; their orientation follows the action, separately from dialogue.
 Voice: [spoken / thought; intended listener; volume, emotion and breath for THIS utterance].
 Balloon design: [contour, line weight/color, white inner padding, and continuous speech tail or thought dots].
 Lettering: Clean printed Japanese manga gothic, dark lettering, generous inset padding, legible after smartphone downscaling. Balloon tails point to the speakers. Do not cover faces or hands.
@@ -49,7 +49,7 @@ Offscreen: [who remains nearby and on which side].
 Single beat: [what the reader understands now].
 Carry forward: [eyeline, posture, background marker and prop state].
 Exact dialogue for THIS panel only: [text, or no dialogue/thought balloons].
-Exact sound effects for THIS panel only: [word, source, placement and drawn style; or none].
+Exact sound effects for THIS panel only: [word, source, placement and drawn style, beginning/continuation/end; or none only when no sound persists]. Do not use 'silent' for a wordless panel whose sound persists.
 Do not include later replies, new locations, or every character from the reference.
 ```
 
@@ -57,9 +57,11 @@ Do not include later replies, new locations, or every character from the referen
 
 文字を個別編集する指定などで後から組版する場合だけ、後組版する文字の種類と予約領域を指定する。セリフだけを後組版し、効果音は絵と一緒に作る場合は `No dialogue or speech balloons; render only the specified sound effects.` とする。全ての文字を後組版する場合、または完全な静けさを意図する場合にだけ `No text, balloons or sound effects.` を使う。
 
-「無言」を自動で文字なしへ変換しない。たとえば歩くコマは `Dialogue: none. Sound effects: コツ、コツ near the boots, small hard lettering.`、聞き手が言葉を受け止めるコマは `Dialogue: none. Sound effects: none; preserve a quiet reaction.` と分ける。セリフと音が共存するコマも別々に指定する。効果音を `speaker: 音` の発話へ入れず、音のない感情コマへ動作音を一律に足さない。過去の実使用指示は履歴として保ち、修正した次回用指示や実行した編集指示と区別する。
+「無言」を自動で文字なしへ変換しない。発話なしと発生音・継続音の有無を分けて指定する。たとえば歩くコマは `Dialogue: none. Sound effects: コツ、コツ near the boots, small hard lettering.`、継続音もなく聞き手が言葉を受け止めるコマは `Dialogue: none. Sound effects: none; preserve a quiet reaction.` と分ける。セリフと音が共存するコマも別々に指定する。効果音を `speaker: 音` の発話へ入れず、音のない感情コマへ動作音を一律に足さない。過去の実使用指示は履歴として保ち、修正した次回用指示や実行した編集指示と区別する。
 
 ## 構成の指示を変える
+
+複数コマへ続く音は[コマと余白を跨ぐ音](cross-panel-sounds.md)の発生・継続の記録と生成例を使う。後続コマでは同じ音の継続を明示し、新しい音の追加や全文の複製と区別する。発話のないコマ、音が継続するコマ、完全な無音のコマを別々に指定する。
 
 間の前後を別素材にするときは、次のように作画と組版の役割を分けて指定する。空白の中へ計画にない飾りや追加コマを生成しない。長さはリーダーの実際の表示で調整する。
 
