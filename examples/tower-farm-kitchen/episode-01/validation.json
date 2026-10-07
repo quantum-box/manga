@@ -219,6 +219,12 @@
         "sourceFraction": 0.2,
         "interpretation": "Manually reviewed sound and bubble occupy the upper fifth of the cue artwork; release starts at next artwork."
       },
+      "fullScrollExport": {
+        "method": "native viewport screenshot tiles",
+        "tileCount": 48,
+        "pixelEquality": "passed_all_tiles",
+        "avoidedChromeWrapAt": 32768
+      },
       "editableReaderMatches": true,
       "reviewSheets": [
         "review/contact-390-0.png",
@@ -450,6 +456,12 @@
         "sourceFraction": 0.2,
         "interpretation": "Manually reviewed sound and bubble occupy the upper fifth of the cue artwork; release starts at next artwork."
       },
+      "fullScrollExport": {
+        "method": "native viewport screenshot tiles",
+        "tileCount": 47,
+        "pixelEquality": "passed_all_tiles",
+        "avoidedChromeWrapAt": 32768
+      },
       "editableReaderMatches": true,
       "reviewSheets": [
         "review/contact-360-0.png",
@@ -504,16 +516,23 @@
     "737df7b218ac816113310ac8cbe3b4e4390e7ee7066da15b20535e9fec080bd2",
     "1f2cf8107f43313894203ef92b4823232bef01d95da2f2450049b9be43e74e3f",
     "c7ef9c8e28a569355ba366fb4feccdca5e952db7cc0d82d4106aff8f52099458",
-    "4ef88d8e9df1d589fb8aee174fb33280fc2bf2efaa16e0060a541b6f9b960c95",
-    "eaa1b1669ddaddc51da571781f84b21258c2ecb4e81d8fc4af56b486f130e197",
-    "cb5b3781a300b933a2edade241b0e1818ece9eca68d6331531e88d5818c535d1"
+    "0e1b282eea8284daf98c862596d45d70126a3c964cb436bb6579c5dcecbf496d",
+    "d6999ecde6948ffafdc798bb1582f94775236e759b26305a2412c811a4b3e7ca",
+    "fa588bbb5f1fc5924c7d62740ab17eddc7b1c15e3529bf89afd8e319ae23afdf"
   ],
-  "manualReview": [
-    "地点・身体の確認→塔の三階→他の来訪者→帰りたい→係員から帰還門を知る。未開示の用語をコウが先に尋ねない。",
-    "開く時期は不明。休憩室への案内、礼、実際に門を見た後の握る手を通して受け止める。",
-    "水を頼む→座る→飲む→礼→食事の誘い→お金がないと断る→農業経験→店主から一食と畑の点検を提案→了承→移動。",
-    "係員の顔・灰髪・ひげ・濃紺の飾り布、コウの着衣・手・腰の道具袋、窓口の左右・椅子・水のコップが会話中に連続する。",
-    "原画の全文と縦列、話者の尾、効果音、萎れた株、蓋の交換・手洗い・食事の順を390/360で読む。",
-    "旧版から維持した27枚の原画と水流の見せ順に変化はなく、全長スクロールと水流前後の画面を再確認する。"
-  ]
+  "foodReview": {
+    "result": "passed_manual_390_and_360",
+    "scenes": [
+      "30-kitchen-fire",
+      "08-first-meal",
+      "32-first-bite-and-tomorrow"
+    ],
+    "findings": "Smooth broth and readable tender beef/carrot/greens; no dense round grain field. Exact dialogue/SFX, faces, clean hands, ceramic bowl and wilted garden preserved. Changed scenes and preceding relief read at native phone widths.",
+    "reviewImages": [
+      "review/contact-390-9.png",
+      "review/contact-360-9.png"
+    ],
+    "priorUnchangedScenes": "All other episode-one originals unchanged from commit690fa33 and its adopted manual review."
+  },
+  "fullScrollExportReview": "passed: all95 native viewport tiles pixel-identical to completed exports;32,768px header repetition removed;390px export tail visually checked with current food."
 }

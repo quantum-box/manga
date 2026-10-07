@@ -1051,19 +1051,26 @@
       "plannedPanelCount": 2,
       "referenceGroup": "meal",
       "id": "30-kitchen-fire",
-      "art": "art/30-kitchen-fire.png",
+      "art": "art/30-kitchen-fire-food.png",
       "dialogue": [],
       "layout": "detail",
       "pauseAt390": 240,
-      "prompt": "generation/30-kitchen-fire.prompt.txt",
-      "description": "TWO appetizing unequal closeups inside the original timber diner AFTER garden work and handwash. Upper shallow view of flame and closed/open edge of a cooking pot with steam. Lower large closeup Elna's CLEAN hand and ladle portions a stew of purchased barley, brown meat, orange root vegetable and greens into the SAME mottled brown-gray ceramic bowl of the following first-meal scene. No just-grown vegetables or farm tools on counter. Kou offscreen sitting and waiting.",
+      "prompt": "generation/30-kitchen-fire-food.prompt.txt",
+      "description": "TWO appetizing unequal closeups inside the original timber diner AFTER garden work and handwash. Upper shallow view of flame and closed/open edge of a cooking pot with steam. Lower large closeup Elna's CLEAN hand and ladle portions a stew of purchased barley, brown meat, orange root vegetable and greens into the SAME mottled brown-gray ceramic bowl of the following first-meal scene. No just-grown vegetables or farm tools on counter. Kou offscreen sitting and waiting. FOOD: smooth russet-brown gravy with a few tender beef chunks, clean carrot wedges and soft green leaves; softened purchased barley submerged, no visible bead field. Same stew from cooking to first bite; dialogue and wilted garden unchanged.",
       "width": 887,
       "height": 1774,
-      "sha256": "4ef88d8e9df1d589fb8aee174fb33280fc2bf2efaa16e0060a541b6f9b960c95"
+      "sha256": "0e1b282eea8284daf98c862596d45d70126a3c964cb436bb6579c5dcecbf496d",
+      "edits": [
+        {
+          "prompt": "generation/30-kitchen-fire-food.prompt.txt",
+          "record": "generation/30-kitchen-fire-food.json"
+        }
+      ],
+      "foodArtRevision": "episode-01-food"
     },
     {
       "id": "08-first-meal",
-      "art": "art/08-first-meal-lettered.png",
+      "art": "art/08-first-meal-food.png",
       "dialogue": [
         [
           "エルナ",
@@ -1080,11 +1087,18 @@
       ],
       "layout": "hero",
       "pauseAt390": 240,
-      "prompt": "generation/08-first-meal.prompt.txt",
-      "description": "Three panels with final large warm scene: Elna sets a steaming barley-and-meat bowl on diner counter for Kou; closeup his rough hands near the bowl as he looks worried toward the still wilted garden; final Elna's gentle expression and Kou's relieved face in warm kitchen lamplight. Vegetables and grain are already purchased or existing, not newly grown. No miraculous lush plot.",
+      "prompt": "generation/08-first-meal-food.prompt.txt",
+      "description": "Three panels with final large warm scene: Elna sets a steaming barley-and-meat bowl on diner counter for Kou; closeup his rough hands near the bowl as he looks worried toward the still wilted garden; final Elna's gentle expression and Kou's relieved face in warm kitchen lamplight. Vegetables and grain are already purchased or existing, not newly grown. No miraculous lush plot. FOOD: smooth russet-brown gravy with a few tender beef chunks, clean carrot wedges and soft green leaves; softened purchased barley submerged, no visible bead field. Same stew from cooking to first bite; dialogue and wilted garden unchanged.",
       "width": 887,
       "height": 1774,
-      "sha256": "eaa1b1669ddaddc51da571781f84b21258c2ecb4e81d8fc4af56b486f130e197"
+      "sha256": "d6999ecde6948ffafdc798bb1582f94775236e759b26305a2412c811a4b3e7ca",
+      "edits": [
+        {
+          "prompt": "generation/08-first-meal-food.prompt.txt",
+          "record": "generation/08-first-meal-food.json"
+        }
+      ],
+      "foodArtRevision": "episode-01-food"
     },
     {
       "canvasWidthPercent": 100,
@@ -1100,7 +1114,7 @@
       "plannedPanelCount": 3,
       "referenceGroup": "meal",
       "id": "32-first-bite-and-tomorrow",
-      "art": "art/32-first-bite-and-tomorrow.png",
+      "art": "art/32-first-bite-and-tomorrow-food.png",
       "dialogue": [
         [
           "コウ",
@@ -1117,11 +1131,18 @@
       ],
       "layout": "hero",
       "pauseAt390": 400,
-      "prompt": "generation/32-first-bite-and-tomorrow.prompt.txt",
-      "description": "THREE unequal quiet final moments, not equal rectangles. Top small closeup of Kou blowing gently on a spoonful from the SAME mottled ceramic stew bowl, matching barley, brown meat, orange root and greens. Middle LARGE closeup of his softened face after tasting, his rough hands now clean, warmth rather than victory smugness. Bottom wider quiet counter scene, Elna asks from LEFT and Kou answers slightly lower RIGHT; leave airy ivory space between reactions. No crop recovery, new morning or future customer. Garden seen through doorway is still wilted.",
+      "prompt": "generation/32-first-bite-and-tomorrow-food.prompt.txt",
+      "description": "THREE unequal quiet final moments, not equal rectangles. Top small closeup of Kou blowing gently on a spoonful from the SAME mottled ceramic stew bowl, matching barley, brown meat, orange root and greens. Middle LARGE closeup of his softened face after tasting, his rough hands now clean, warmth rather than victory smugness. Bottom wider quiet counter scene, Elna asks from LEFT and Kou answers slightly lower RIGHT; leave airy ivory space between reactions. No crop recovery, new morning or future customer. Garden seen through doorway is still wilted. FOOD: smooth russet-brown gravy with a few tender beef chunks, clean carrot wedges and soft green leaves; softened purchased barley submerged, no visible bead field. Same stew from cooking to first bite; dialogue and wilted garden unchanged.",
       "width": 887,
       "height": 1774,
-      "sha256": "cb5b3781a300b933a2edade241b0e1818ece9eca68d6331531e88d5818c535d1"
+      "sha256": "fa588bbb5f1fc5924c7d62740ab17eddc7b1c15e3529bf89afd8e319ae23afdf",
+      "edits": [
+        {
+          "prompt": "generation/32-first-bite-and-tomorrow-food.prompt.txt",
+          "record": "generation/32-first-bite-and-tomorrow-food.json"
+        }
+      ],
+      "foodArtRevision": "episode-01-food"
     }
   ]
 }

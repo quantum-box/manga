@@ -640,7 +640,7 @@
 
 ## 38：kitchen-fire
 
-見せる情報・カメラ・接続：TWO appetizing unequal closeups inside the original timber diner AFTER garden work and handwash. Upper shallow view of flame and closed/open edge of a cooking pot with steam. Lower large closeup Elna's CLEAN hand and ladle portions a stew of purchased barley, brown meat, orange root vegetable and greens into the SAME mottled brown-gray ceramic bowl of the following first-meal scene. No just-grown vegetables or farm tools on counter. Kou offscreen sitting and waiting.
+見せる情報・カメラ・接続：TWO appetizing unequal closeups inside the original timber diner AFTER garden work and handwash. Upper shallow view of flame and closed/open edge of a cooking pot with steam. Lower large closeup Elna's CLEAN hand and ladle portions a stew of purchased barley, brown meat, orange root vegetable and greens into the SAME mottled brown-gray ceramic bowl of the following first-meal scene. No just-grown vegetables or farm tools on counter. Kou offscreen sitting and waiting. FOOD: smooth russet-brown gravy with a few tender beef chunks, clean carrot wedges and soft green leaves; softened purchased barley submerged, no visible bead field. Same stew from cooking to first bite; dialogue and wilted garden unchanged.
 画面構成：detail。画面内に描く人物は上記場面の指定に従う。ほかの人物を退場扱いしない。
 間：次へ240px相当（390px表示を基準とする組版初期値。完成後に通読して調整）。
 伏せる情報：この場面より後の出来事。未収穫の作物、未合意の契約、未来の設備を先に描かない。
@@ -656,7 +656,7 @@
 
 ## 39：first-meal
 
-見せる情報・カメラ・接続：Three panels with final large warm scene: Elna sets a steaming barley-and-meat bowl on diner counter for Kou; closeup his rough hands near the bowl as he looks worried toward the still wilted garden; final Elna's gentle expression and Kou's relieved face in warm kitchen lamplight. Vegetables and grain are already purchased or existing, not newly grown. No miraculous lush plot.
+見せる情報・カメラ・接続：Three panels with final large warm scene: Elna sets a steaming barley-and-meat bowl on diner counter for Kou; closeup his rough hands near the bowl as he looks worried toward the still wilted garden; final Elna's gentle expression and Kou's relieved face in warm kitchen lamplight. Vegetables and grain are already purchased or existing, not newly grown. No miraculous lush plot. FOOD: smooth russet-brown gravy with a few tender beef chunks, clean carrot wedges and soft green leaves; softened purchased barley submerged, no visible bead field. Same stew from cooking to first bite; dialogue and wilted garden unchanged.
 画面構成：hero。画面内に描く人物は上記場面の指定に従う。ほかの人物を退場扱いしない。
 間：次へ240px相当（390px表示を基準とする組版初期値。完成後に通読して調整）。
 伏せる情報：この場面より後の出来事。未収穫の作物、未合意の契約、未来の設備を先に描かない。
@@ -669,9 +669,13 @@
 
 原画採用・日本語・顔・手・道具・前後の状態・両スマホ幅の確認は `validation.json` と生成記録へ残す。
 
+表示幅：100%、位置：center。
+スクロールの役割：
+効果音：
+
 ## 40：first-bite-and-tomorrow
 
-見せる情報・カメラ・接続：THREE unequal quiet final moments, not equal rectangles. Top small closeup of Kou blowing gently on a spoonful from the SAME mottled ceramic stew bowl, matching barley, brown meat, orange root and greens. Middle LARGE closeup of his softened face after tasting, his rough hands now clean, warmth rather than victory smugness. Bottom wider quiet counter scene, Elna asks from LEFT and Kou answers slightly lower RIGHT; leave airy ivory space between reactions. No crop recovery, new morning or future customer. Garden seen through doorway is still wilted.
+見せる情報・カメラ・接続：THREE unequal quiet final moments, not equal rectangles. Top small closeup of Kou blowing gently on a spoonful from the SAME mottled ceramic stew bowl, matching barley, brown meat, orange root and greens. Middle LARGE closeup of his softened face after tasting, his rough hands now clean, warmth rather than victory smugness. Bottom wider quiet counter scene, Elna asks from LEFT and Kou answers slightly lower RIGHT; leave airy ivory space between reactions. No crop recovery, new morning or future customer. Garden seen through doorway is still wilted. FOOD: smooth russet-brown gravy with a few tender beef chunks, clean carrot wedges and soft green leaves; softened purchased barley submerged, no visible bead field. Same stew from cooking to first bite; dialogue and wilted garden unchanged.
 画面構成：hero。画面内に描く人物は上記場面の指定に従う。ほかの人物を退場扱いしない。
 間：次へ400px相当（390px表示を基準とする組版初期値。完成後に通読して調整）。
 伏せる情報：この場面より後の出来事。未収穫の作物、未合意の契約、未来の設備を先に描かない。

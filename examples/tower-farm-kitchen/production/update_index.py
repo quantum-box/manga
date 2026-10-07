@@ -30,7 +30,8 @@ for ep in EPISODES:
         items.append(f'<li><a href="episode-{number:02d}/index.html">{label}<span>読む →</span></a></li>')
     else:
         items.append(f'<li class="pending">{label}<span>制作中</span></li>')
-cover = 'episode-01/art/08-first-meal-lettered.png'
+first=json.loads((BASE/'episode-01/manifest.json').read_text())
+cover = 'episode-01/' + next(scene['art'] for scene in first['scenes'] if scene['id']=='08-first-meal')
 doc = '''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>塔の農夫は、英雄を食わせる</title><style>*{box-sizing:border-box}body{margin:0;background:#eee6d7;color:#342d24;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif}main{max-width:640px;margin:auto;background:#fffaf0;padding-bottom:56px}header{padding:36px 24px 24px}h1{font-size:30px;line-height:1.6;margin:12px 0}p{font-size:18px;line-height:1.9}header>small{font-size:16px;color:#60704c}.cover{width:100%;height:300px;object-fit:cover;object-position:50% 25%;display:block}ol{list-style:none;margin:0;padding:0 20px}li{border-bottom:1px solid #ded5c5;font-size:18px;line-height:1.8}li a,li.pending{display:block;padding:20px 4px}a{color:#355a3c;text-decoration:none}li span{display:block;font-size:15px;color:#677559;margin-top:6px}.pending{color:#8c8374}.pending span{color:#8c8374}</style></head><body><main>'''
 doc += f'<img class="cover" src="{cover}" alt="エルナが食堂で温かい一皿をコウに渡す"><header><small>剣と魔法・農業・帰還食堂</small><h1>塔の農夫は、<br>英雄を食わせる</h1><p>塔の三階に召喚された農夫。<br>畑と食堂を立て直し、冒険者の明日の一皿をつくる。</p><small>第1〜10話：畑と帰還食堂</small></header><ol>{"".join(items)}</ol></main></body></html>'
 (BASE / 'chapters.html').write_text(doc + '\n')
@@ -39,7 +40,6 @@ count = len(completed)
 delivery_path = BASE / 'production/delivery.json'
 delivery = json.loads(delivery_path.read_text()) if delivery_path.exists() else {}
 delivery_passed = count == 10 and delivery.get('localVerification') == 'passed'
-first=json.loads((BASE/'episode-01/manifest.json').read_text())
 first_review=json.loads((BASE/'episode-01/validation.json').read_text())
 screen_counts=[round(v['scrollHeight']/v['innerHeight']) for v in first_review['viewports']]
 sounds=sum(len(s.get('soundEffects',[])) for s in first['scenes'])
@@ -54,6 +54,7 @@ sounds=sum(len(s.get('soundEffects',[])) for s in first['scenes'])
 | [設定入口](series/bible.md) / [ロードマップ](series/roadmap.md) | 世界・無双の形・240話の転換 |
 | [人物](series/characters.md) / [世界](series/world.md) | 農夫、料理人、農家、技師、補給官と塔の制度 |
 | [農業と設備](series/agriculture.md) / [一次資料](series/sources.md) | 排水、作付け、配水、分析、食数、収支の根拠と創作の仮値 |
+| [料理の作画基準](series/food-art.md) | 美味しそうな形、艶と湯気、粒の密集を避ける生成指示と確認 |
 | [導入10話](series/opening-arc.md) / [連続性](series/continuity.md) | 約六週間の時間経過、開示、各話の終了状態 |
 | [制作台帳](production/status.md) | 完成・制作中・未確認の区別 |
 

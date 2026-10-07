@@ -69,6 +69,6 @@ primary_setting_proposal: inhabited_fantasy_tower
 
 ## 詳細資料
 
-[世界](world.md)、[人物](characters.md)、[農業と設備](agriculture.md)、[ロードマップ](roadmap.md)、[導入10話](opening-arc.md)、[連続性](continuity.md)、[一次資料](sources.md)、[制作台帳](../production/status.md)。
+[世界](world.md)、[人物](characters.md)、[農業と設備](agriculture.md)、[料理の作画基準](food-art.md)、[ロードマップ](roadmap.md)、[導入10話](opening-arc.md)、[連続性](continuity.md)、[一次資料](sources.md)、[制作台帳](../production/status.md)。
 
 縦読みでは、根を掘る手の接写、畝の断面、排水路を流れる水、畑の全景へ視点をつなぐ。料理では刻む短い動作と、器から立ち上る湯気の長い画面を使い分ける。農業説明の文字は絵で確認できる判断に絞り、詳細な数値や検証記録は巻末資料へ回せる構造にする。

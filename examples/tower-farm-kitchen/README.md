@@ -9,6 +9,7 @@
 | [設定入口](series/bible.md) / [ロードマップ](series/roadmap.md) | 世界・無双の形・240話の転換 |
 | [人物](series/characters.md) / [世界](series/world.md) | 農夫、料理人、農家、技師、補給官と塔の制度 |
 | [農業と設備](series/agriculture.md) / [一次資料](series/sources.md) | 排水、作付け、配水、分析、食数、収支の根拠と創作の仮値 |
+| [料理の作画基準](series/food-art.md) | 美味しそうな形、艶と湯気、粒の密集を避ける生成指示と確認 |
 | [導入10話](series/opening-arc.md) / [連続性](series/continuity.md) | 約六週間の時間経過、開示、各話の終了状態 |
 | [制作台帳](production/status.md) | 完成・制作中・未確認の区別 |
 

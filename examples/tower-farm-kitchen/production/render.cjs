@@ -2,7 +2,27 @@
 const fs=require('fs'),path=require('path');
 const {pathToFileURL}=require('url');
 const {chromium}=require(process.env.WEBTOON_PLAYWRIGHT_MODULE||'playwright');
+const sharp=require(process.env.WEBTOON_SHARP_MODULE||require.resolve('sharp',{paths:[path.dirname(require.resolve(process.env.WEBTOON_PLAYWRIGHT_MODULE||'playwright'))]}));
 const base=path.resolve(__dirname,'..');
+async function exportScroll(page,width,height,scrollHeight,output){
+ // Chrome wraps a single full-page capture after32768px. Export native
+ // viewport pixels instead; only the review screenshot is assembled here.
+ const tiles=[];
+ for(let top=0;top<scrollHeight;top+=height){
+  const scrollY=await page.evaluate(async y=>{scrollTo(0,y);await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));return window.scrollY;},top);
+  const tileHeight=Math.min(height,scrollHeight-top),offset=Math.round(top-scrollY);
+  const frame=await page.screenshot({animations:'disabled'});
+  const input=await sharp(frame).extract({left:0,top:offset,width,height:tileHeight}).png().toBuffer();
+  tiles.push({input,left:0,top,height:tileHeight});
+ }
+ await sharp({create:{width,height:scrollHeight,channels:4,background:'#fffaf0'}}).composite(tiles.map(({input,left,top})=>({input,left,top}))).png().toFile(output);
+ const actual=await sharp(output).ensureAlpha().raw().toBuffer();
+ for(const tile of tiles){
+  const expected=await sharp(tile.input).ensureAlpha().raw().toBuffer();
+  if(!actual.subarray(tile.top*width*4,(tile.top+tile.height)*width*4).equals(expected))throw Error('Full scroll export differs from native viewport pixels');
+ }
+ return{method:'native viewport screenshot tiles',tileCount:tiles.length,pixelEquality:'passed_all_tiles',avoidedChromeWrapAt:32768};
+}
 (async()=>{
  const macChrome='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
  const executablePath=process.env.WEBTOON_CHROME||(process.platform==='darwin'&&fs.existsSync(macChrome)?macChrome:undefined);
@@ -32,7 +52,7 @@ const base=path.resolve(__dirname,'..');
     }
     const geometry=await page.evaluate(()=>[...document.querySelectorAll('figure.scene')].map(e=>{const r=e.getBoundingClientRect(),i=e.querySelector('img').getBoundingClientRect();return{id:e.id,top:r.top+scrollY,imageHeight:i.height,width:i.width,pause:parseFloat(getComputedStyle(e).marginBottom)};}));
     if(number===1){
-     for(const slug of ['ask-way','where-am-i','return-question','diner','water-and-thanks','cannot-pay','farmer-recognized','work-offer']){
+     for(const slug of ['ask-way','where-am-i','return-question','diner','water-and-thanks','cannot-pay','farmer-recognized','work-offer','kitchen-fire','first-meal']){
       const scene=geometry.find(s=>s.id.replace(/^\d+-/,'')===slug);
       if(scene){await page.evaluate(y=>scrollTo(0,y),scene.top);await page.screenshot({path:path.join(review,`viewport-${width}-${slug}.png`)});}
      }
@@ -46,10 +66,9 @@ const base=path.resolve(__dirname,'..');
       }
      }
     }
-    // Exercise the entire reader at actual viewport size before export.
-    for(let y=0;y<metrics.scrollHeight;y+=height*.75)await page.evaluate(y=>scrollTo(0,y),y);
-    await page.evaluate(()=>scrollTo(0,0));
-    await page.screenshot({path:path.join(dir,`complete-${width}.png`),fullPage:true});
+    // Capture every native viewport and verify all exported pixels, including
+    // the meal after32768px. Adopted raster originals remain unchanged.
+    metrics.fullScrollExport=await exportScroll(page,width,height,metrics.scrollHeight,path.join(dir,`complete-${width}.png`));
     await page.goto(pathToFileURL(path.join(dir,'index.html')).href);
     await page.evaluate(async()=>Promise.all([...document.images].map(i=>i.decode())));
     const editable=await page.evaluate(()=>({scrollWidth:document.documentElement.scrollWidth,scrollHeight:document.documentElement.scrollHeight,images:[...document.images].map(i=>i.complete&&i.naturalWidth>0)}));
