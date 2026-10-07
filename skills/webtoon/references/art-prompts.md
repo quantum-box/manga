@@ -57,7 +57,7 @@ Do not include later replies, new locations, or every character from the referen
 
 ## 構成の指示を変える
 
-間の前後を別素材にするときは、次のように作画と組版の役割を分けて指定する。空白の中へ飾りや追加コマを生成しない。長さはリーダーの実際の表示で調整する。
+間の前後を別素材にするときは、次のように作画と組版の役割を分けて指定する。空白の中へ計画にない飾りや追加コマを生成しない。長さはリーダーの実際の表示で調整する。
 
 ```text
 Scroll beat for THIS asset: [cue / reaction / reveal / aftermath].
@@ -69,6 +69,16 @@ Do not include later beats, bonus inset panels, a decorative grid, or a complete
 ```
 
 余白そのものをこの原画へ描く場合だけ、その領域と地色・背景の疎さを指定する。待ちの目的と次に見る情報を渡し、全画像に同じ大余白を追加する指示にしない。
+
+**効果音だけ・セリフだけ・視覚演出だけの余白**も生成単位にできる。通常の人物会話カットの共通指示をそのまま使わず、その区間に置く要素だけを指定する。文字を置く場合は全文と縦書きの列順、声なら話者と吹き出し・尾の有無を指定し、視覚演出だけの場合は文字を生成しない。
+
+```text
+Asset type: a sparse, borderless scroll-pacing beat on [chosen page color].
+Only visible content: [the exact Japanese sound / the exact spoken or thought line / the planned light, shadow, ripple or trail].
+Placement: [vertical position, direction, spacing of repeats and fading]. Retain broad unoccupied space around it, with lettering legible at phone width.
+For a voice beat: [speaker or deliberately unidentified voice, spoken/thought, balloon or floating vertical lettering].
+Do not add characters, extra dialogue, scenery, panel grids or unplanned ornaments. Keep [the later reveal] absent.
+```
 
 複数のコマを一枚へ生成するときは「大小をつける」だけで済ませず、各コマの役割と相対的な幅・高さ・配置・枠の有無を指示する。たとえば「全幅の状況確認→右寄せの会話→左寄せの浅い目元→大きな名乗り」。小コマはその面積に合う対象へ描き直し、全景を縮めたり絵を押し潰したりしない。生成後は文字だけでなく、本当に形と面積に差が出たか見る。[大小を直した実例](context-and-dialogue.md)の数値や配列は今回だけの選択。
 
