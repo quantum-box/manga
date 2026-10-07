@@ -99,8 +99,29 @@
     "result": "passed_sync_check"
   },
   "physicalDevice": "not_tested",
-  "publicServer": "not_published",
-  "ciAndReview": "see PR for current head; local results do not imply CI completion",
+  "publicServer": "published_verified",
+  "ciAndReview": {
+    "verifiedSourceHead": "b581271aa6c03a91d6c5c95e9c849c577f8814e3",
+    "checks": "all_5_success",
+    "reviewFindings": "all_4_fixed_and_resolved",
+    "mainContentCommit": "4faf76278f0bc91f9ed5372ad80814ac6601e980",
+    "integration": "user_authorized_local_squash_and_non_force_main_update_after_github_merge_api_errors"
+  },
+  "publication": {
+    "url": "https://manga-server.txcloud.app/?series=online-tower-farm-kitchen",
+    "episodes": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "assets": 94,
+    "publicJsonAndImageHashes": "passed",
+    "retiredEpisodes": 9,
+    "retiredImages": 54,
+    "retiredPublicUrls": "all_404",
+    "unchangedOtherEpisodes": 43,
+    "publicCatalogEpisodes": 52,
+    "mobileReadChecks": 18,
+    "viewports": [{"width": 390, "height": 844}, {"width": 360, "height": 800}],
+    "horizontalOverflow": "none",
+    "farmerChapterList": 10
+  },
   "generationPromptRetention": "passed_all_73_byte_identical_after_prepare",
   "pullRequest": "https://github.com/quantum-box/manga/pull/36"
 }

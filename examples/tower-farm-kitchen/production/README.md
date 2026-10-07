@@ -14,7 +14,7 @@
 
 原画を更新したら必ず該当話の両幅で再確認する。採用外の画像は、記録された修正に必要な参照原画だけを `generation/inputs` へ置き、各生成記録の相対参照も更新する。別の公開版や旧リーダーを残さない。リーダーの画像は各話の `manifest.json` に並ぶ採用原画だけ（第1話40枚、第2話9枚、第3〜10話は各8枚）。
 
-現在の結果は [delivery.json](delivery.json) と [制作台帳](status.md)。第2〜10話の改稿手順・確認範囲・境界判断は [remake/review.md](remake/review.md)。CIとレビューは続編改稿PRの最新HEADを確認する。
+現在の結果は [delivery.json](delivery.json) と [制作台帳](status.md)。第2〜10話の改稿手順・確認範囲・境界判断は [remake/review.md](remake/review.md)。CI・レビューとmainへの反映、公開サーバーの照合結果はdelivery.jsonに記録する。
 
 第1話の長尺改稿は [episode-01-scroll.json](episode-01-scroll.json) と [episode-01-review.md](episode-01-review.md)。通常版は原画PNGを直接読む。内包版が100MiBを超える場合は `compact_reader.py` がUTF-8の格納方式を使い、ブラウザーで元のPNGバイトを復元する。原画のリサイズ・再圧縮・文字の描き足しは行わない。描画スクリプトは復元した全原画のSHA-256と、通常版・単独版の全長一致も確認する。
 
