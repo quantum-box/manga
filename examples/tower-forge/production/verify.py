@@ -34,6 +34,40 @@ class Reader(HTMLParser):
         if tag=='img': self.images.append(attrs['src'])
         if tag=='a': self.links.append(attrs.get('href',''))
 
+
+def check_source_references(root=ROOT):
+    """Keep only reachable generation inputs, including inputs shared across episodes."""
+    def normalized(value):
+        value = value.removeprefix("examples/tower-forge/")
+        return str((root / value).resolve().relative_to(root.resolve()))
+    records = {}
+    for name in ["asset-provenance.json", "revision-provenance.json"]:
+        for record in json.loads((root / "production" / name).read_text()):
+            key = record["adopted"] if "adopted" in record else f"episode-{record['episode']:02d}/" + record["file"]
+            records[normalized(key)] = record
+    adopted = json.loads((root / "production/adopted-assets.json").read_text())
+    pending = []
+    for path in root.glob("episode-*/episode.json"):
+        episode = json.loads(path.read_text())
+        for i, scene in enumerate(episode["scenes"], 1):
+            filename = adopted.get(f"{episode['number']}-{i}", {}).get("file", scene["file"])
+            pending.append(str(path.parent.relative_to(root) / filename))
+    visited = set()
+    while pending:
+        key = normalized(pending.pop())
+        if key in visited:
+            continue
+        visited.add(key)
+        path = root / key
+        if not path.is_file():
+            raise ValueError("Missing current generation input: " + key)
+        record = records.get(key)
+        if record:
+            if hashlib.sha256(path.read_bytes()).hexdigest() != record["sha256"]:
+                raise ValueError("Generation input bytes differ: " + key)
+            pending.extend(record.get("references", []))
+    return visited
+
 def check():
     adopted=json.loads((ROOT/'production/adopted-assets.json').read_text())
     image_count = 0
@@ -90,6 +124,7 @@ def check():
                     expected=width*asset['height']/asset['width']
                     assert actual[0]==width and abs(actual[1]-expected)<=1,(n,i,width,actual,expected)
         image_count += count
+    check_source_references()
     status=json.loads((ROOT/'production/build-status.json').read_text())
     assert status['ready_episodes']==list(range(1,11))
     print(f'Verified 10 readers, {image_count} adopted PNGs, matching reader bytes/references, {image_count*2} phone scene captures. This does not prove story quality.')
