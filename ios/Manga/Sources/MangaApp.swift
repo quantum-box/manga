@@ -247,9 +247,6 @@ struct TitleDetailView: View {
                                 VStack(alignment: .leading, spacing: 5) {
                                     Text("第\(episode.number)話").font(.caption).foregroundStyle(.secondary)
                                     Text(episode.title).font(.subheadline.bold())
-                                    if !episode.edition.isEmpty {
-                                        Text(episode.edition).font(.caption).foregroundStyle(.secondary)
-                                    }
                                 }
                                 Spacer()
                                 if isRead(episode) {
@@ -270,7 +267,7 @@ struct TitleDetailView: View {
                             DisclosureGroup("ほかの版（\(editions.count)）") {
                                 ForEach(editions) { edition in
                                     NavigationLink { ReaderView(title: title, episode: edition) } label: {
-                                        Text(edition.edition.isEmpty ? edition.title : edition.edition)
+                                        Text(edition.title)
                                             .font(.caption).padding(.vertical, 10)
                                     }
                                 }
@@ -403,7 +400,7 @@ struct ReaderView: View {
         } message: {
             if let next { Text("第\(next.number)話「\(next.title)」") }
         }
-        .navigationTitle("第\(episode.number)話\(episode.edition.isEmpty ? "" : " · " + episode.edition)")
+        .navigationTitle("第\(episode.number)話 \(episode.title)")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(controlsVisible ? .visible : .hidden, for: .navigationBar)
         .toolbar(.hidden, for: .tabBar)
