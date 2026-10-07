@@ -12,23 +12,32 @@
 
 縦書きの一列は上から下。列は右から左。文字を横倒しに回転する方法は使わない。吹き出し同士の読む順はそのコマの会話と縦スクロールの流れから決める。この実例では右上のミラが話し、少し下の左のレンが答える。
 
-## この場面で使った列指定
+## この場面で使った列指定（過去の記録）
+
+以下は当時の原文。2026-10-07の追加指定により、今後の吹き出しなどの文字は句読点を使わず、意味の区切りで改行する。この表や参照画像の句読点を新しい原稿へコピーしない。
 
 |話者|セリフ全文|縦列の内容（右から左）|
 |---|---|---|
 |ミラ|ありがとう。私はミラ。この国の王女よ。|ありがとう。 / 私はミラ。 / この国の / 王女よ。|
 |レン|レンだ。無事なら、それで。|レンだ。 / 無事なら、 / それで。|
 
-列の指示は次のように書ける。別のコマでは発話者と全文、必要な列数を変える。
+## 今後の列指定の例
+
+句読点を除き、改行を縦列の区切りとして全文に含める。たとえばレンのセリフは「レンだ」「無事なら」「それで」の3列にする。別のコマでは発話者と全文、意味に沿った列分けを変える。
 
 ```text
 Render the exact Japanese dialogue inside the speech balloons as part of the image.
 Use genuine vertical Japanese: upright glyphs, each column top-to-bottom, columns right-to-left.
-Mira's exact dialogue: ありがとう。私はミラ。この国の王女よ。
-Her rightmost column: ありがとう。
-Next column to the left: 私はミラ。
+Do not add Japanese commas or full stops, or sentence-separating commas or periods. Use the supplied line breaks as vertical column breaks at meaningful phrase boundaries.
+Mira's exact dialogue:
+ありがとう
+私はミラ
+この国の
+王女よ
+Her rightmost column: ありがとう
+Next column to the left: 私はミラ
 Next column to the left: この国の
-Leftmost column: 王女よ。
+Leftmost column: 王女よ
 No visible column labels, quotation marks, extra text, or duplicate balloons.
 Use clean Japanese manga gothic, readable after smartphone downscaling.
 Reshape the balloons to fit without covering faces or hands; tails point to the speakers.
