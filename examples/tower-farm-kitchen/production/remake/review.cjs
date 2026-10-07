@@ -1,7 +1,7 @@
 const fs=require('fs'),path=require('path'),{pathToFileURL}=require('url');
 const {chromium}=require(process.env.WEBTOON_PLAYWRIGHT_MODULE||'playwright');
 const base=path.resolve(__dirname,'../..');
-(async()=>{const browser=await chromium.launch({headless:true,executablePath:process.env.WEBTOON_CHROME||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});try{
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:process.env.WEBTOON_CHROME||(process.platform==='darwin'&&fs.existsSync('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')?'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome':undefined)});try{
  const config=JSON.parse(fs.readFileSync(path.join(__dirname,'windows.json'))),out=path.join(__dirname,'review');fs.mkdirSync(out,{recursive:true});
  for(const arg of process.argv.slice(2)){
   const n=Number(arg),dir=path.join(base,`episode-${String(n).padStart(2,'0')}`),files=fs.readdirSync(path.join(dir,'art')).filter(f=>f.includes('remake')&&f.endsWith('.png')).sort();

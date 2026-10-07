@@ -1,7 +1,7 @@
 // Verify CSS windows and shared original payloads; export native phone scroll pixels.
 const fs=require('fs'),path=require('path'),{pathToFileURL}=require('url');
 const {chromium}=require(process.env.WEBTOON_PLAYWRIGHT_MODULE||'playwright');
-const sharp=require(process.env.WEBTOON_SHARP_MODULE||'sharp');
+const sharp=require(process.env.WEBTOON_SHARP_MODULE||require.resolve('sharp',{paths:[path.dirname(require.resolve(process.env.WEBTOON_PLAYWRIGHT_MODULE||'playwright'))]}));
 const crypto=require('crypto'),base=path.resolve(__dirname,'../..');
 async function exportScroll(page,width,height,scrollHeight,output,review){
  const tiles=[];
@@ -15,7 +15,7 @@ async function exportScroll(page,width,height,scrollHeight,output,review){
  for(let i=0;i<tiles.length;i+=4){const subset=tiles.slice(i,i+4);await sharp({create:{width:width*subset.length,height,channels:4,background:'#fffaf0'}}).composite(subset.map((t,j)=>({input:t.input,left:j*width,top:0}))).png().toFile(path.join(review,`scroll-${width}-${i/4}.png`));}
  return {method:'native phone viewport tiles',tileCount:tiles.length,pixelEquality:'passed_all_tiles'};
 }
-(async()=>{const browser=await chromium.launch({headless:true,executablePath:process.env.WEBTOON_CHROME||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});try{
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:process.env.WEBTOON_CHROME||(process.platform==='darwin'&&fs.existsSync('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')?'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome':undefined)});try{
  for(const arg of process.argv.slice(2)){
   const n=Number(arg),dir=path.join(base,`episode-${String(n).padStart(2,'0')}`),m=JSON.parse(fs.readFileSync(path.join(dir,'manifest.json'))),review=path.join(dir,'review');fs.mkdirSync(review,{recursive:true});
   const result={episode:n,revision:m.revision,artworkTextReview:'pending',continuityReview:'pending',windowBoundaryReview:'pending',scrollPacingVisualReview:'pending',originalArtworkCount:m.sources.length,displayWindowCount:m.scenes.length,viewports:[]};
