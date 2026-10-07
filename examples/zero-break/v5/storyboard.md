@@ -1,841 +1,614 @@
-# 第01話 最弱判定、最強の一歩。 — 会話と状況の改稿
+# 第1話 最弱判定、最強の一歩。 — 余白とスクロールの改稿
 
-セリフは原画に収録。HTMLへ二重に重ねない。旧構成は Git の履歴で管理。
+73の原作コマを段階的に見せる。余白の声・音・光はコマとは別の演出。横並びの反応と斜めの装着枠は必要な場面で残す。原画PNGは改変せず、表示窓で必要な部分だけを見せる。文字は原画に収録し、HTMLで重ねない。
 
 ## memory
 
-Rainy night crosswalk memory: close bare reaching hand and red scarf, bright distant headlights. Show no body, injured person or face. One dreamlike close shot, dark blue night margins.
+雨の事故の記憶。届かなかった手だけが残る
 
-表示幅：100%。次までの間：390px幅で260px相当。
+表示幅 100% / center / 次の間 520px（390px幅） / 表示窓 [0, 0, 1122, 1402]
 
 Ren narration：最後に覚えているのは、届かなかった手。
-
-
 効果音：ザァァ…
 
-## e01-waking
+## wake-eyes
 
-Ren wakes seated on a stone stair in a white fantasy plaza and looks up at floating white towers, blue sky and hanging blue banners. Unarmored black short sleeves, charcoal trousers, crimson scarf, bare hands. Establish his confusion and the new world. Preserve the clear establishing view, large enough face.
+白い世界で目を開ける
 
-表示幅：100%。次までの間：390px幅で130px相当。
-
-### コマ1
-
-Ren opens his eyes in an unfamiliar place.
-
-注目と接続：ONLY seated Ren face, eyes opening; white stair and a blue banner establish the same landing.
-大きさと枠：right-aligned 80% width, medium-height framed close-up
-声：bewildered thought, cloud and dots
-
-### コマ2
-
-The place really floats in the sky.
-
-注目と接続：His upward eyeline leads to floating white towers and islands; only location box EXACT 空都リュミエル, no other words.
-大きさと枠：large full-width BORDERLESS vertical upward view, enough height to understand geography
-声：無言
-
-### コマ3
-
-He links this place to his last memory, without knowing why.
-
-注目と接続：ONLY Ren seated shoulders/face, one bare hand touching his crimson scarf; same intact stairs. No corpse or child flashback.
-大きさと枠：left-aligned90% width, medium-height framed face
-声：uncertain thought, cloud with dots
+表示幅 100% / center / 次の間 220px（390px幅） / 表示窓 [0, 0, 726, 470]
 
 Ren thought：……ここ、どこだ。
+
+## sky-city
+
+スクロールで空都の全景を開く
+
+表示幅 100% / center / 次の間 155px（390px幅） / 表示窓 [0, 476, 726, 1098]
+
+空都リュミエル
+
+## wake-memory
+
+事故の記憶との食い違い
+
+表示幅 100% / center / 次の間 160px（390px幅） / 表示窓 [0, 1580, 726, 584]
+
 Ren thought：俺、事故に遭ったはずじゃ……。
-
-画面内表示：空都リュミエル
-
 
 ## footsteps
 
-Low close shot of Rook's silver armored boots stepping on intact white stone stairs. Blue cape edge and daylight shadow lead toward Ren offscreen. FIRST approach cue. No faces, crystal, or future events.
+顔より先に靴音が届く
 
-表示幅：76%。次までの間：390px幅で45px相当。
-
-
+表示幅 76% / right / 次の間 42px（390px幅） / 表示窓 [0, 0, 1448, 1086]
 
 効果音：カツ…
 
 ## knight_arrives
 
-SAME arrival stone stair plaza. Ren seated lower left; Rook walks toward him from upper right EIGHT METRES away. Show actual distance and descending stairs, both recognizable. Rook is not beside Ren yet. No crystal.
+近づいてきた騎士を初めて見せる
 
-表示幅：100%。次までの間：390px幅で65px相当。
-
-
+表示幅 92% / center / 次の間 130px（390px幅） / 表示窓 [0, 0, 1122, 1402]
 
 
-## e01-greeting
+## greeting-call
 
-Rook now arrived ONE metre to right of still seated Ren. Rook bends slightly, offers a black-gloved hand, professionally reserved. Ren looks up and raises a BARE hand toward him, no touch yet. Faces and hands clear. No crystal.
+騎士が手を差し出す前の呼びかけ
 
-表示幅：100%。次までの間：390px幅で90px相当。
-
-### コマ1
-
-The approaching knight addresses seated Ren.
-
-注目と接続：ONLY Rook face bent slightly down; Ren remains seated offscreen left. Same white stone stairs.
-大きさと枠：full-width medium Rook portrait, first row
-声：reserved ordinary thin-black oval
-
-### コマ2
-
-Help is offered, not yet accepted.
-
-注目と接続：Rook black-gloved open hand extended toward Ren bare hand. No crystal, no contact yet.
-大きさと枠：second row RIGHT46% hand-detail frame, then LEFT panel
-声：無言
-
-### コマ3
-
-Ren answers while still getting his bearings.
-
-注目と接続：ONLY Ren seated face looking up right, same scarf and shirt.
-大きさと枠：second row LEFT50% Ren face frame, after right hand-detail
-声：quiet shaky spoken voice, continuous tail
-
-### コマ4
-
-He asks his first question.
-
-注目と接続：Ren bare hand takes Rook gloved hand and Ren rises a little; tight upper-body shot, not an unexplained new location.
-大きさと枠：full-width tall joined-hands movement, last row
-声：ordinary questioning oval
+表示幅 100% / center / 次の間 32px（390px幅） / 表示窓 [0, 0, 836, 535]
 
 Rook：立てるか？
+
+## greeting-response
+
+差し出す手と返事を横並びで近くつなぐ
+
+表示幅 100% / center / 次の間 22px（390px幅） / 表示窓 [0, 544, 836, 466]
+
 Ren：ああ……。
-Ren：ここは？
-
-
 効果音：スッ
+
+## greeting-help
+
+手を握って起き上がる
+
+表示幅 100% / center / 次の間 85px（390px幅） / 表示窓 [0, 1018, 836, 863]
+
+Ren：ここは？
 効果音：ギュッ
 
-## e01-rook-name
+## rook-name
 
-Immediately AFTER Rook helps seated Ren rise: both now STAND at same intact stair landing; they have not walked to the measuring station. Rook introduces his name and job. No Mira, crystal, armor or future0 result.
+ルークの名乗り
 
-表示幅：100%。次までの間：390px幅で80px相当。
-
-### コマ1
-
-The knight tells Ren who he is before explaining the country.
-
-注目と接続：ONLY Rook face and silver armor/blue cape; immediately AFTER helping Ren stand, SAME intact white stair landing. Ren stands offscreen left.
-大きさと枠：right-aligned92% width, medium framed speaker
-声：reserved ordinary rounded speech
-
-### コマ2
-
-Ren has accepted help and knows whose explanation he is hearing.
-
-注目と接続：One standing Ren and one standing Rook on SAME stair landing, medium upper bodies, Ren small grateful nod. No crystal or future magic result.
-大きさと枠：full-width wide quiet shared location
-声：無言
+表示幅 100% / center / 次の間 42px（390px幅） / 表示窓 [0, 93, 724, 794]
 
 Rook：私はルーク。この街の騎士だ。
 
+## rook-two-shot
+
+二人の距離と立ち位置を確認
+
+表示幅 100% / center / 次の間 110px（390px幅） / 表示窓 [0, 921, 724, 1175]
 
 
-## e01-orientation
+## orientation-1
 
-Ren NOW STANDS on same landing beside Rook. Rook gestures toward floating white towers. Ren follows his gaze, stunned eyes and parted lips. Same city. Single medium scene of understanding the setting, no crystal or giant. Close conversation on stair landing with both standing. Rook RIGHT examines Ren's unfamiliar short black sleeve and red scarf, eyebrow raised, subtly points toward his clothes without touching. Ren LEFT confused, hand on scarf. No crystal yet.
+空の国を説明
 
-表示幅：100%。次までの間：390px幅で130px相当。
-
-### コマ1
-
-Rook gives one fact about this country.
-
-注目と接続：ONLY standing Rook face and pointing glove; Ren now stands beside him offscreen left.
-大きさと枠：right-aligned86% width, medium framed
-声：matter-of-fact rounded speech
-
-### コマ2
-
-Ren really looks at the impossible landscape.
-
-注目と接続：White towers suspended beyond intact landing; lower corner shows only red scarf and Ren eye following them.
-大きさと枠：full-width wide borderless geographic view
-声：quiet astonished speech, soft outline
-
-### コマ3
-
-The knight notices unfamiliar clothes.
-
-注目と接続：Rook gloved finger gestures toward Ren black FABRIC sleeve/red scarf; no grabbing.
-大きさと枠：left-aligned78% width, shallow detail
-声：ordinary thin oval
-
-### コマ4
-
-A new word is introduced separately.
-
-注目と接続：ONLY Rook close face, calm guarded eyes; Ren remains offscreen left.
-大きさと枠：right-aligned83% width, medium framed
-声：composed speech
-
-### コマ5
-
-Ren has to process that word.
-
-注目と接続：ONLY Ren face with widened blue eyes; scarf visible, SAME landing. No crystal or armor.
-大きさと枠：full-width large close-up
-声：hesitant spoken voice, mildly wavering outline
+表示幅 100% / center / 次の間 70px（390px幅） / 表示窓 [0, 0, 724, 449]
 
 Rook：ここは、空に浮かぶ国だ。
+
+## orientation-2
+
+レンが空を見上げる
+
+表示幅 100% / center / 次の間 65px（390px幅） / 表示窓 [0, 458, 724, 533]
+
 Ren：空に……？
+
+## orientation-3
+
+服の違いに視線を寄せる
+
+表示幅 100% / center / 次の間 24px（390px幅） / 表示窓 [0, 1007, 724, 273]
+
 Rook：見慣れない服だな。
+
+## orientation-4
+
+転生者だと気づく
+
+表示幅 100% / center / 次の間 65px（390px幅） / 表示窓 [0, 1294, 724, 322]
+
 Rook：転生者か。
+
+## orientation-5
+
+レン自身が受け止める
+
+表示幅 100% / center / 次の間 150px（390px幅） / 表示窓 [0, 1630, 724, 512]
+
 Ren：……転生？俺が？
 
+## measurement-guide-1
 
+まず魔力を測ると伝える
 
-## e01-instruction
-
-Rook leads Ren ON FOOT across SAME intact lower balcony plaza. Side/three-quarter view of ONE Ren and ONE Rook walking the same direction; knight half a pace ahead right points forward. Ahead is ornate pointed silver stone pedestal and large BLACK faceted crystal, identical design to reference2. Add a SMALL NARROW FLAT METAL readout INSET on pedestal front, totally BLANK. High bridge in background, cargo awnings below rail. No results, giant, blue power. Ren LEFT and Rook RIGHT beside SAME assessment crystal. Rook's BLACK GLOVED finger points to top of black crystal. Ren's BARE hands stay lowered, NO TOUCH yet. Crystal in foreground center bottom. Narrow flat inset readout front totally blank, neutral daylight reflections no emitted glow. Both faces and hands clear.
-
-表示幅：100%。次までの間：390px幅で100px相当。
-
-### コマ1
-
-Rook names the procedure before walking.
-
-注目と接続：ONLY Rook shoulders and pointing hand; same landing, Ren offscreen left.
-大きさと枠：right-aligned90% width, medium framed
-声：calm explanatory rounded capsule
-
-### コマ2
-
-Ren follows him physically.
-
-注目と接続：One Rook half a pace ahead and one Ren walk toward distant SAME black crystal on SILVER gothic pedestal across intact plaza.
-大きさと枠：full-width broad geography and walking shot
-声：ordinary oval
-
-### コマ3
-
-Ren reaches the apparatus but has not touched it.
-
-注目と接続：Close BLACK crystal and Rook BLACK glove pointing at its top. Ren BARE hand lowered at edge. Readout blank.
-大きさと枠：left-aligned86% width, medium prop close-up
-声：ordinary instruction
-
-### コマ4
-
-The purpose of touching is explained.
-
-注目と接続：ONLY Ren listening face; black crystal edge at bottom, bare hand still lowered. Rook stays offscreen right.
-大きさと枠：right-aligned92% width, medium-height framed reaction
-声：calm offscreen speech, tail exits toward Rook on right, no dots
+表示幅 100% / center / 次の間 70px（390px幅） / 表示窓 [0, 0, 724, 432]
 
 Rook：異世界から来た者は、まず魔力を測る。
+
+## measurement-guide-2
+
+測定場所まで移動する
+
+表示幅 100% / center / 次の間 100px（390px幅） / 表示窓 [0, 448, 724, 686]
+
 Rook：こっちだ。
+
+## measurement-guide-3
+
+水晶と手を置く場所を見せる
+
+表示幅 100% / center / 次の間 60px（390px幅） / 表示窓 [0, 1146, 724, 461]
+
 Rook：水晶に手を置け。
+
+## measurement-guide-4
+
+使える魔力量がわかると聞く
+
+表示幅 100% / center / 次の間 125px（390px幅） / 表示窓 [0, 1619, 724, 532]
+
 Rook offscreen：使える魔力の量がわかる。
-
-
 
 ## hesitation
 
-Close Ren unsure face, eyes between Rook offscreen and crystal bottom. His BARE RIGHT hand hovers FOUR centimetres ABOVE black crystal, tense fingers, NOT touched. Soft black sleeves and red scarf. Modest hopeful anxiety, no swagger. No readout result or blue glow.
+力への期待を一拍置く
 
-表示幅：100%。次までの間：390px幅で110px相当。
+表示幅 90% / center / 次の間 75px（390px幅） / 表示窓 [0, 0, 1122, 1402]
 
 Ren thought：俺にも、そんな力が……？
 
-
-
 ## touch
 
-Extreme close-up: Ren's BARE RIGHT PALM makes FIRST contact on TOP of same black faceted crystal. Exactly five relaxed fingers, soft short black sleeve, red scarf blurred behind. Same ornate pointed silver pedestal bottom. Narrow flat inset readout still BLANK. Neutral white reflections no magic. Single contact moment, no faces, text or numbers.
+指先が水晶に触れる短い動作
 
-表示幅：78%。次までの間：390px幅で25px相当。
-
-
+表示幅 78% / right / 次の間 35px（390px幅） / 表示窓 [0, 0, 1448, 1086]
 
 効果音：ぺた
 
-## e01-waiting
+## waiting-question
 
-Ren LEFT and Rook RIGHT at same station AFTER touch. Ren's BARE RIGHT palm stays flat ON TOP of crystal. He looks to Rook, who patiently watches narrow flat inset readout BELOW crystal; display still blank. Crystal stays unlit. Faces, palm and apparatus visible. No disaster. Moment is WAITING, not a result.
+手を置いたまま確かめる
 
-表示幅：100%。次までの間：390px幅で170px相当。
-
-### コマ1
-
-Ren keeps his palm on the crystal and checks the procedure.
-
-注目と接続：ONLY Ren face with same BARE RIGHT palm visible below on BLACK crystal. NO results or glowing power.
-大きさと枠：left-aligned92% width, medium framed
-声：uncertain ordinary speech
-
-### コマ2
-
-The knight tells him to wait.
-
-注目と接続：ONLY Rook close face watching blank narrow metal inset readout; Ren offscreen left.
-大きさと枠：right-aligned80% width, medium framed
-声：controlled ordinary oval
-
-### コマ3
-
-A short real wait before the readout.
-
-注目と接続：BARE palm resting still on BLACK crystal; empty readout partly visible, no0.
-大きさと枠：left-aligned68% width, shallow silent hand insert
-声：無言
+表示幅 100% / center / 次の間 120px（390px幅） / 表示窓 [0, 9, 724, 1131]
 
 Ren：……これで、いいのか？
+
+## waiting-voice
+
+画面外のルークの声だけが白い余白に残る
+
+表示幅 100% / center / 次の間 80px（390px幅） / 表示窓 [0, 0, 1254, 1254]
+
 Rook：そのまま、待て。
 
+## waiting-device
+
+数値の出ていない装置。まだ結果は見せない
+
+表示幅 86% / right / 次の間 420px（390px幅） / 表示窓 [0, 1753, 724, 388]
 
 
 ## result
 
-Close on SAME black faceted crystal and ornate pointed silver pedestal. Ren's BARE RIGHT hand stays on top and is visible. The SMALL NARROW FLAT METAL readout INSET into pedestal FRONT shows FIRST reading in clean pale ivory vertical lettering: RIGHT column 魔力量, LEFT column ０. Zero large at 360px. Instrument in scene, not floating caption or gold hologram. Crystal remains dark. No faces or other letters.
+長い待ちの後、物理装置のゼロを初めて見せる
 
-表示幅：88%。次までの間：390px幅で120px相当。
+表示幅 88% / right / 次の間 180px（390px幅） / 表示窓 [0, 0, 1254, 1254]
 
 measurement device：魔力量０
 
+## zero-verdict
 
+ルークの短い判定
 
-## e01-confirmation
-
-Closer TWO faces at same station. Rook RIGHT looks down at result, brows disappointed. Ren LEFT eyes widen in quiet shock, BARE RIGHT palm STILL touches crystal below. Keep readout out of frame. No disaster, armor, magic or smile.
-
-表示幅：100%。次までの間：390px幅で145px相当。
-
-### コマ1
-
-Rook reads the disappointing result.
-
-注目と接続：ONLY Rook face looking down left, disappointed but quiet, Ren offscreen left. No new display.
-大きさと枠：right-aligned84% width, medium framed
-声：cool ordinary thin oval
-
-### コマ2
-
-Ren hears before he answers.
-
-注目と接続：ONLY Ren blue eyes, widening; BARE RIGHT hand still on crystal outside crop.
-大きさと枠：left-aligned69% width, very shallow eye insert
-声：無言
-
-### コマ3
-
-The word finally reaches him.
-
-注目と接続：ONLY Ren face, red scarf, palm STILL touches crystal at bottom; same station.
-大きさと枠：full-width large framed face
-声：small uncertain SPOKEN wavy speech tail, not thought dots
+表示幅 100% / center / 次の間 65px（390px幅） / 表示窓 [0, 66, 724, 804]
 
 Rook：魔力、ゼロ。
+
+## zero-eyes
+
+説明より先に目の反応
+
+表示幅 92% / center / 次の間 100px（390px幅） / 表示窓 [0, 896, 724, 186]
+
+
+## zero-answer
+
+レンがゼロを聞き返す
+
+表示幅 100% / center / 次の間 160px（390px幅） / 表示窓 [0, 1107, 724, 1033]
+
 Ren：……ゼロ？
-
-
 
 ## stakes
 
-Same station. Rook right explains coldly, head toward Ren. Ren left listens, now WITHDRAWN his BARE RIGHT hand from crystal, holds palm near chest in bafflement. Dark crystal below. Same intact city, no giant or blue power. Face and hand show disappointment.
+戦えないという現実を伝える
 
-表示幅：100%。次までの間：390px幅で100px相当。
+表示幅 94% / center / 次の間 85px（390px幅） / 表示窓 [0, 0, 1122, 1402]
 
 Rook：この国では、魔力がない者は戦えない。
 
-
-
 ## rejection
 
-Rook takes TWO steps AWAY from same crystal station along balcony; BLUE cape back in right middle, dismissive glance over shoulder toward Ren left foreground. Ren STANDING by crystal, shoulders slump, BARE hands lowered. Show separation. Same silver armor and black gloves. No crystal-hand touch or giant.
+騎士の評価が落ちる
 
-表示幅：100%。次までの間：390px幅で100px相当。
+表示幅 88% / right / 次の間 235px（390px幅） / 表示窓 [0, 0, 1122, 1402]
 
 Rook：ハズレの転生者か。
 
+## empty-hand
+
+黙って裸の手を見る。思考の文字は次の余白へ
+
+表示幅 80% / center / 次の間 135px（390px幅） / 表示窓 [380, 0, 742, 1402]
 
 
-## zero_reaction
+## despair-voice
 
-Solitary medium close-up Ren at same station, Rook has LEFT. Ren looks at his own BARE RIGHT palm held low, brows drawn, quiet hurt and loss. Black short sleeves red scarf. Black crystal blurred behind. No heroic pose, magic or armor. Intact quiet city.
+何もできないという思いだけが白く残る
 
-表示幅：100%。次までの間：390px幅で220px相当。
+表示幅 100% / center / 次の間 320px（390px幅） / 表示窓 [0, 0, 1254, 1254]
 
 Ren thought：……ここでも、何もできないのか。
 
+## distant-tremor
 
+まだ原因を見せず、振動の音だけを聞かせる
 
-## tremor
-
-Low close shot of Ren's ordinary dark BOOT and charcoal cuff on SAME white stone balcony floor. Red scarf edge above. Small loose pebbles and dust JOLT at first distant tremor. Intact floor. No giant, princess, crack, falling figure or later destruction. Short horizontal insert before guardian reveal.
-
-表示幅：72%。次までの間：390px幅で85px相当。
-
-
+表示幅 100% / center / 次の間 145px（390px幅） / 表示窓 [0, 0, 1254, 1254]
 
 効果音：ズ……ン。
 
-## e01-danger
+## boot-tremor
 
-The SAME giant black stone guardian, armored stone limbs, violet fissures and a violet diamond-shaped chest core, goes berserk and breaks a high stone bridge. Princess Mira small but identifiable ON bridge, before falling. Establish high bridge above a lower balcony (Ren's assessment level) above a broad cargo canvas awning and soft cargo on a lower plaza. Two warning voices from small background guards or offscreen; no extra main characters. Giant fills upper background.
+足元の石が跳ねる。音の物理的な反応
 
-表示幅：100%。次までの間：390px幅で100px相当。
+表示幅 80% / left / 次の間 105px（390px幅） / 表示窓 [0, 0, 1536, 1024]
 
-### コマ1
 
-The vibration comes from a runaway guardian.
+## danger-warning
 
-注目と接続：Distant warning guard shouting from lower plaza, looking up; Ren offscreen near measuring station.
-大きさと枠：right-aligned86% width, medium framed warning
-声：urgent SHOUT, bold jagged outer edge
+警告が入り、振動の原因へ視線を誘導
 
-### コマ2
-
-Show the full dangerous spatial relationship BEFORE anybody falls.
-
-注目と接続：Large continuous view: SAME black stone guardian violet diamond chest core beside HIGH stone bridge, Mira on bridge, Ren much LOWER balcony, canvas cargo awning BELOW Ren. Violet cracks only on guardian. Bridge beginning to crack, Mira still on bridge.
-大きさと枠：full-width LARGE tall borderless geographic view
-声：無言
-
-### コマ3
-
-The rescue target is identified.
-
-注目と接続：SECOND warning guard face only, pointing up beyond top; Mira is NOT falling in this strip yet.
-大きさと枠：left-aligned90% width, medium framed shout
-声：urgent bold jagged shout
+表示幅 100% / center / 次の間 150px（390px幅） / 表示窓 [0, 0, 724, 358]
 
 warning guard A：警備巨兵が暴走した！
-warning guard B：姫様が、橋にいる！
 
+## danger-geography
+
+巨兵、橋のミラ、上のレン、下の幌を一画面でつなぐ
+
+表示幅 100% / center / 次の間 25px（390px幅） / 表示窓 [0, 358, 724, 1317]
 
 効果音：ゴゴゴ…
 効果音：バキバキッ！
 
+## danger-princess
+
+橋にいる人物が姫だとわかる
+
+表示幅 100% / center / 次の間 35px（390px幅） / 表示窓 [0, 1692, 724, 480]
+
+warning guard B：姫様が、橋にいる！
+
 ## fall
 
-Mira ONLY falling from the just-broken bridge, through open blue sky, past the lower stone balcony toward a large cargo canvas awning. ONE continuous vertical view with descending rubble trail; no other copies of Mira, no Ren, no armored hero. Her dress and blue/gold details remain intact and modest. Borderless, pale sky and WHITE natural light fade at bottom, edges harmonize with pale page. Her fearful face visible near upper third.
+落下の縦方向を画面いっぱいに追う
 
-表示幅：100%。次までの間：390px幅で40px相当。
+表示幅 100% / center / 次の間 160px（390px幅） / 表示窓 [0, 0, 887, 1774]
 
 Mira：誰か——！
-
-
 効果音：ヒュウウッ
 
-## leap
+## decision-voice
 
-Unarmored Ren leaps decisively from the LOWER balcony toward Mira and the cargo awning below. Show push-off stone balcony behind, descending direction, streaming red scarf and reaching bare hand. He is not magically flying and has no armor or blue core. One shot of the choice to jump; his face stays clearly visible.
+魔力はなくても手を伸ばす。飛ぶ前の決意だけを余白で読む
 
-表示幅：94%。次までの間：390px幅で25px相当。
+表示幅 100% / center / 次の間 85px（390px幅） / 表示窓 [0, 0, 1254, 1254]
 
 Ren thought：魔力がなくても、手くらい、伸ばせる。
 
+## leap
+
+素手で飛び出す。決意は繰り返さず動作音へ
+
+表示幅 100% / center / 次の間 16px（390px幅） / 表示窓 [0, 0, 1024, 1536]
 
 効果音：バッ！
 
 ## e01-catch
 
-Ren catches Mira in midair with bare arms before landing.
+手をつかみ、幌へ向かう動作を短くつなぐ
 
-表示幅：100%。次までの間：390px幅で100px相当。
-
-### コマ1
-
-Ren catches Mira before they reach the canvas.
-
-注目と接続：Ren BARE arms support Mira back and knees in midair, red scarf streams, awning below.
-大きさと枠：single large oblique rescue frame; parallel sloping top/bottom borders and upright lettering
-声：thick jagged urgent shout with tail to mouth
+表示幅 100% / center / 次の間 22px（390px幅） / 表示窓 [0, 0, 1070, 1470]
 
 Ren：つかまって！
-
-
 効果音：ギュッ！
 効果音：バサァッ
 
 ## landing
 
-Immediately after catching: Ren still cradles Mira as they sink into and tear a large tan cargo canvas, cushioned by soft bundled cargo. Broken canvas supports and harmless debris, both alive. Ren bare hands, black shirt, red scarf, minor bruises. One concrete landing moment, NOT standing yet. No giant in foreground and no armor.
+幌で衝撃を受け、生存を確かめる
 
-表示幅：100%。次までの間：390px幅で160px相当。
+表示幅 100% / center / 次の間 155px（390px幅） / 表示窓 [0, 0, 1122, 1402]
 
 Ren thought：……生きてる。
-
-
 効果音：ドサッ。
 
-## e01-safe-01
+## safe-both
 
-Same lower cargo plaza after Mira is caught and landed safely; Ren kneels, Mira stands. No armor, no crown crest yet.
+二人とも生きていることを確かめる
 
-表示幅：100%。次までの間：390px幅で35px相当。
+表示幅 100% / center / 次の間 85px（390px幅） / 表示窓 [0, 10, 836, 746]
 
-### コマ1
 
-Both are safe after landing.
+## safe-thanks
 
-注目と接続：Ren kneels left; Mira stands right on the SAME solid cargo plaza under torn awning.
-大きさと枠：full-width shared safety establishing frame, first row
-声：無言
+お礼とレンの反応を横並びで見る
 
-### コマ2
-
-Mira thanks him.
-
-注目と接続：ONLY Mira face; Ren remains beside her offscreen left.
-大きさと枠：second row RIGHT58% Mira gratitude face frame
-声：gentle soft blue-grey contour
-
-### コマ3
-
-Ren takes in the thanks.
-
-注目と接続：ONLY Ren blue eyes, unarmored.
-大きさと枠：second row LEFT38% shallow Ren eyes frame, lower aligned beside right frame
-声：無言
-
-### コマ4
-
-Mira tells him her name.
-
-注目と接続：ONLY Mira upper body, hand at chest; same torn cargo awning.
-大きさと枠：full-width large Mira introduction portrait, final row
-声：composed blue-grey rounded capsule
+表示幅 100% / center / 次の間 55px（390px幅） / 表示窓 [0, 772, 836, 390]
 
 Mira：ありがとう。
+
+## safe-mira
+
+救った相手が名乗る
+
+表示幅 100% / center / 次の間 72px（390px幅） / 表示窓 [0, 1181, 836, 685]
+
 Mira：私はミラ。
 
+## princess-name
 
+王女だと明かす
 
-## e01-safe-02
-
-Same lower cargo plaza after Mira is caught and landed safely; Ren kneels, Mira stands. No armor, no crown crest yet.
-
-表示幅：100%。次までの間：390px幅で100px相当。
-
-### コマ1
-
-Her role is one new fact.
-
-注目と接続：ONLY Mira dress/hand at chest. No guardian crest.
-大きさと枠：medium-height hand/detail frame
-声：composed blue-grey rounded capsule
-
-### コマ2
-
-Ren hears that she is a princess.
-
-注目と接続：ONLY Ren eyes. Same kneeling pose.
-大きさと枠：small shallow left eye insert
-声：無言
-
-### コマ3
-
-He gives his name.
-
-注目と接続：ONLY Ren face, BARE hand touches scarf.
-大きさと枠：right-aligned medium framed face
-声：ordinary black oval
-
-### コマ4
-
-He says that her safety is what matters.
-
-注目と接続：ONLY Ren relieved face, kneeling under torn awning; no armor.
-大きさと枠：large full-width borderless emotional portrait
-声：breathless wavering outline with continuous speech tail
+表示幅 100% / center / 次の間 70px（390px幅） / 表示窓 [0, 0, 724, 394]
 
 Mira：この国の王女よ。
+
+## princess-reaction
+
+驚きは小さい目の接写で示す
+
+表示幅 100% / center / 次の間 55px（390px幅） / 表示窓 [0, 413, 724, 151]
+
+
+## ren-name
+
+レンが名乗り返す
+
+表示幅 100% / center / 次の間 80px（390px幅） / 表示窓 [0, 582, 724, 503]
+
 Ren：レンだ。
+
+## safe-relief
+
+無事だったことを優先する
+
+表示幅 100% / center / 次の間 220px（390px幅） / 表示窓 [0, 1100, 724, 1072]
+
 Ren：無事なら、それで。
 
+## approach-1
 
+音と位置で巨兵が再接近する
 
-## e01-approach
-
-SAME black stone guardian with violet diamond chest core and violet cracks now approaches on the lower SOLID plaza. Ren still unarmored black short sleeves and red scarf, BARE hands out to shield standing Mira behind him. Torn canvas and cargo remain behind them. Giant, both people and ground show clear depth. Ren looks alarmed then resolute, no armor/glow.
-
-表示幅：100%。次までの間：390px幅で90px相当。
-
-### コマ1
-
-Ren stands up after the quiet rescue conversation; the same guardian approaches.
-
-注目と接続：Ren rising from kneeling on solid lower cargo plaza, Mira standing safely right; torn canvas/rope gives same-location marker. SAME black guardian with VIOLET DIAMOND core is clearly visible approaching in distant upper-right background on the SOLID lower plaza, not the high bridge. No new crest or power.
-大きさと枠：full-width medium framed shared location
-声：無言
-
-### コマ2
-
-The same danger has followed them down.
-
-注目と接続：ONLY Ren tight face looking past Mira at offscreen approaching SAME guardian, still unarmored.
-大きさと枠：left-aligned84% width, medium close
-声：worried cloud thought with dots
-
-### コマ3
-
-He puts Mira behind him.
-
-注目と接続：Ren BARE open hand directs Mira back toward cargo wall; ordinary shirt, no armor yet. Focus only gesture and her safe backward step.
-大きさと枠：right-aligned92% width, medium framed
-声：firm ordinary speech
-
-### コマ4
-
-His choice comes before the power.
-
-注目と接続：ONLY Ren large determined face/chest, soft shirt and red scarf, Mira safely offscreen behind; no visible blue star or armor yet.
-大きさと枠：full-width large borderless emotional close
-声：resolute rounded oval, no shout decoration
-
-Ren thought：まだ、来るのか。
-Ren：ミラ、下がって。
-Ren：今度は俺が止める。
-
+表示幅 100% / center / 次の間 35px（390px幅） / 表示窓 [0, 0, 725, 604]
 
 効果音：ズン… ズン…
+
+## approach-2
+
+危険が続くと気づく
+
+表示幅 100% / center / 次の間 40px（390px幅） / 表示窓 [0, 622, 725, 310]
+
+Ren thought：まだ、来るのか。
+
+## approach-3
+
+ミラを後ろへ下げる
+
+表示幅 100% / center / 次の間 40px（390px幅） / 表示窓 [0, 949, 725, 502]
+
+Ren：ミラ、下がって。
 効果音：ザッ
 
-## e01-core
+## approach-4
 
-A close shot of Ren's BARE hand and his still SOFT BLACK SHIRT at the chest as a cyan star-like core first glows through the fabric. Not full armor; no transformed silhouette anywhere. Dark blue mood, cyan illumination. One small white vertical thought balloon and two vertical rectangular cyan system notices integrated in sequence. Preserve hand anatomy and shirt. System notices are opaque dark cyan rectangles with readable pale cyan upright Japanese lettering, not a speech tail.
+今度は自分が止めると決める
 
-表示幅：100%。次までの間：390px幅で70px相当。
+表示幅 100% / center / 次の間 180px（390px幅） / 表示窓 [0, 1471, 725, 698]
 
-### コマ1
+Ren：今度は俺が止める。
 
-A strange light appears in fabric for the first time.
+## core-first-light
 
-注目と接続：Close BARE hand at still-soft BLACK shirt chest as first tiny CYAN star glows through cloth. No full armor silhouette. Dark navy scene.
-大きさと枠：full-width medium framed prop close
-声：cloud and thought dots
+まだ素手。胸に最初の星がともる
 
-### コマ2
-
-The system reports the cause before the equipment name.
-
-注目と接続：Cyan translucent functional rectangle in dark background; small edge of shirt, no armored limbs. EXACT system words in upright Japanese: 救命行動を確認。救済核、起動。
-大きさと枠：right-aligned94% width, shallow functional system frame
-声：無言
-
-### コマ3
-
-The armor name appears separately, but the body reveal waits below.
-
-注目と接続：CYAN system label only in plain functional frame: EXACT 装甲名：ゼロ・ブレイク. Soft shirt silhouette only, no transformed body or hands.
-大きさと枠：full-width broad framed dark system view
-声：無言
+表示幅 100% / center / 次の間 90px（390px幅） / 表示窓 [0, 0, 724, 1092]
 
 Ren thought：これは……？
-
-画面内表示：救命行動を確認。救済核、起動。
-画面内表示：装甲名：ゼロ・ブレイク
-
 効果音：キィィン…
 
-## e01-armor-route
+## core-condition
 
-After the core awakens, cyan energy visibly routes from Ren's chest star along his still-soft black shirt and bare forearm. The first lattice forms at his wrist; no finished full suit yet.
+救命行動が起動条件だったと表示する
 
-表示幅：100%。次までの間：390px幅で35px相当。
+表示幅 100% / center / 次の間 90px（390px幅） / 表示窓 [0, 1118, 724, 429]
 
-### コマ1
+救命行動を確認。救済核、起動。
 
-The glowing core supplies the armor, before armor has formed.
+## core-armor-name
 
-注目と接続：Close chest star shines through SOFT shirt; thin cyan paths run toward shoulder and down BARE forearm; exact system notice 装甲展開、開始。
-大きさと枠：full-width tall chest-to-forearm diagonal close-up
-声：system notice; no spoken dialogue
+装甲の名を知る
 
-### コマ2
+表示幅 100% / center / 次の間 140px（390px幅） / 表示窓 [0, 1564, 724, 575]
 
-The energy becomes a shape that can hold armor.
+装甲名：ゼロ・ブレイク
 
-注目と接続：Macro BARE wrist and hand with faint cyan geometric lattice wrapping just above wrist. No finished glove yet. Sound シュウウ… outside the lattice.
-大きさと枠：left-aligned82% width, shallow wrist detail
-声：silent
+## armor-start
 
+胸の核から装甲展開を開始する
 
-画面内表示：装甲展開、開始。
+表示幅 100% / center / 次の間 55px（390px幅） / 表示窓 [0, 0, 887, 1193]
+
+装甲展開、開始。
+
+## armor-route
+
+光が腕へ走り、装甲の経路を見せる
+
+表示幅 100% / center / 次の間 40px（390px幅） / 表示窓 [0, 1203, 887, 556]
 
 効果音：シュウウ…
 
-## e01-armor-assemble
+## armor-click
 
-The cyan lattice becomes the adopted black faceted armor in separate physical close-ups: wrist plates, boot/shin plates, chest plates locking around the single cyan star.
+一つの接続音だけが余白で鳴る
 
-表示幅：100%。次までの間：390px幅で45px相当。
-
-### コマ1
-
-Individual wrist plates take physical shape and snap together.
-
-注目と接続：Black faceted wrist/forearm plates materialize along prior cyan lattice and snap around forearm; fingertips remain bare at this stage. Sound カチッ.
-大きさと枠：upper row RIGHT forearm trapezoid; diagonal gutter guides down-left
-声：silent
-
-### コマ2
-
-The legs become protected next.
-
-注目と接続：Close black angular boot and shin plates fitting over ordinary boot/trousers; same solid cargo ground and canvas rope. Sound ガシャッ.
-大きさと枠：upper row LEFT boot/shin trapezoid after right forearm
-声：silent
-
-### コマ3
-
-The chest seals around the existing star, connecting all parts.
-
-注目と接続：Close chest black faceted plates meet around a SINGLE cyan star; red scarf above, cyan seams. Exact notice 装甲固定。 and sound ガキンッ. No face or full-body reveal.
-大きさと枠：lower full-width large chest fixed panel after both upper details
-声：system notice
-
-
-画面内表示：装甲固定。
+表示幅 100% / center / 次の間 42px（390px幅） / 表示窓 [0, 0, 1254, 1254]
 
 効果音：カチッ
+
+## armor-parts
+
+手首と脚を斜めの横並びで装着する
+
+表示幅 100% / center / 次の間 18px（390px幅） / 表示窓 [0, 0, 946, 706]
+
 効果音：ガシャッ
+
+## armor-lock
+
+胸の装甲が固定される
+
+表示幅 100% / center / 次の間 32px（390px幅） / 表示窓 [0, 719, 946, 917]
+
 効果音：ガキンッ
+装甲固定。
 
-## e01-armor-check
+## armor-movement
 
-Ren tests his newly completed black gauntlet with one fist clench. A compact cyan HUD shows the core's finite segmented reserve; he understands the suit moves with him, without revealing its origin or later power system.
+握った手で動作を確かめる
 
-表示幅：100%。次までの間：390px幅で150px相当。
-
-### コマ1
-
-Ren can move the gauntlet himself; the armor follows his intent.
-
-注目と接続：Macro new BLACK segmented gauntlet gently clenches one fist; cyan seams, red scarf edge only. EXACT Ren thought ……動かせる。 and sound ギュッ.
-大きさと枠：right-aligned90% width, medium hand close-up
-声：quiet cloud thought with dots
-
-### コマ2
-
-The system completes the connection and shows a finite resource.
-
-注目と接続：Compact translucent cyan HUD on blurred black chest/solid cargo ground: EXACT 救済核残量 over a clean six-segment bar with FOUR cyan segments lit and TWO dark; below EXACT 接続完了。. No numbers or countdown or lore.
-大きさと枠：full-width shallow functional HUD close-up
-声：system notice
+表示幅 100% / center / 次の間 48px（390px幅） / 表示窓 [0, 0, 887, 1127]
 
 Ren thought：……動かせる。
-
-画面内表示：救済核残量
-画面内表示：接続完了。
-
 効果音：ギュッ
+
+## core-reserve
+
+六区画のうち四つ点灯。有限の救済核を見せる
+
+表示幅 90% / center / 次の間 75px（390px幅） / 表示窓 [0, 1145, 887, 337]
+
+救済核残量
+
+## connection-voice
+
+接続完了の通知だけが余白に出る
+
+表示幅 100% / center / 次の間 55px（390px幅） / 表示窓 [0, 0, 1254, 1254]
+
+接続完了。
+
+## connection-light
+
+細い光だけが次の姿へ視線を運ぶ
+
+表示幅 100% / center / 次の間 160px（390px幅） / 表示窓 [0, 0, 1024, 1536]
+
 
 ## hero
 
-FIRST full armor reveal. Low camera, full-length Ren in exact sleek black angular plate suit, star-shaped cyan chest core and cyan seams, red scarf, armored gloves and boots. Same black hair/blue eyes. Mira safely STANDING on solid ground behind right, not held or falling. White floating city. Dynamic but stable hero stance, not punching yet. Naturally white/cyan light at image edges and bottom blending into pale page; borderless single continuous picture. Balloon integrated near Ren's head, not a detached caption.
+全身装甲を初めて披露する。ミラは背後で安全
 
-表示幅：100%。次までの間：390px幅で60px相当。
+表示幅 100% / center / 次の間 80px（390px幅） / 表示窓 [0, 0, 887, 1774]
 
 Ren：なら、今度こそ。
-
-
 効果音：ガキンッ！
 
 ## punch
 
-The armored Ren punches the SAME giant's VIOLET DIAMOND CHEST CORE with a black armored fist, red scarf whips back, cyan power lights impact, purple stone fragments fly. Clear single point of impact at enemy chest, giant otherwise black stone/violet cracks. He protects Mira behind him; she is not in the strike path. One close explosive action shot, not a collage, no new weapon.
+一撃で紫の核を砕く。音を動作に密着させる
 
-表示幅：100%。次までの間：390px幅で230px相当。
+表示幅 100% / center / 次の間 210px（390px幅） / 表示窓 [0, 0, 1122, 1402]
 
 Ren：ゼロ・ブレイク！
-
-
 効果音：ドゴォンッ！
 効果音：ガシャァッ！
 
-## e01-relief
+## relief-1
 
-On the same safe solid plaza AFTER the giant stopped, Ren in black armor and red scarf and Mira in white/blue/gold dress smile in relief. Both stand safely, gentle eye contact. Broken stone in background, not an attacking giant. Ren armor includes cyan star core and armored gloves. Two vertical speech balloons arranged as Mira first then Ren.
+ミラが魔力ゼロなのか確かめる
 
-表示幅：100%。次までの間：390px幅で160px相当。
-
-### コマ1
-
-Mira looks at the stopped guardian and living Ren.
-
-注目と接続：Mira face alone, safe lower solid plaza, violet-black wreckage blurred; Ren STILL basic black armor offscreen left.
-大きさと枠：right-aligned87% width, medium framed
-声：warm questioning soft blue-grey outline
-
-### コマ2
-
-Ren gives a short answer.
-
-注目と接続：Ren armored shoulders and relieved face, red scarf.
-大きさと枠：left-aligned82% width, medium close
-声：gentle ordinary speech
-
-### コマ3
-
-He takes in that somebody really is safe.
-
-注目と接続：ONLY Ren black armored hand relaxes from a fist; SAME wreckage, no crest or new person.
-大きさと枠：left-aligned68% width, shallow silent hand insert
-声：無言
-
-### コマ4
-
-His relief is bigger than the numerical verdict.
-
-注目と接続：ONLY Ren wide relieved face, slightly wet eyes, blue chest star and red scarf; Mira safely offscreen right.
-大きさと枠：full-width large BORDERLESS emotional close
-声：breathless soft wavering thin contour
+表示幅 100% / center / 次の間 55px（390px幅） / 表示窓 [0, 0, 724, 511]
 
 Mira：あなた、本当に魔力ゼロなの？
+
+## relief-2
+
+レンは短く答える
+
+表示幅 100% / center / 次の間 48px（390px幅） / 表示窓 [0, 532, 724, 529]
+
 Ren：みたいだ。
+
+## relief-3
+
+装甲の手が緩む
+
+表示幅 100% / center / 次の間 110px（390px幅） / 表示窓 [0, 1088, 724, 225]
+
+
+## relief-4
+
+役立たずではなかったという余韻
+
+表示幅 100% / center / 次の間 360px（390px幅） / 表示窓 [0, 1333, 724, 839]
+
 Ren：けど、役立たずじゃなかった。
 
+## fragment-pickup
+
+破片を拾う。王冠の面はまだ見せない
+
+表示幅 90% / left / 次の間 680px（390px幅） / 表示窓 [0, 0, 724, 364]
 
 
-## e01-fragment
+## fragment-emblem
 
-Macro shot of Ren's BLACK ARMORED GLOVE holding a purple-black broken guardian core fragment with an UNMISTAKABLE SMALL CROWN CREST engraved on it. This is FIRST crown-crest reveal. White city ground out of focus. Mira speaks from offscreen right and Ren replies from offscreen left; balloon tails point toward their offscreen positions, never pretend the stone speaks. Keep the entire glove/thumb, fragment and crown visible. Single clue close-up.
+次のスクロールで王冠の紋章を初めて発見
 
-表示幅：100%。次までの間：390px幅で190px相当。
+表示幅 100% / center / 次の間 200px（390px幅） / 表示窓 [0, 383, 724, 607]
 
-### コマ1
 
-Ren lifts a single piece from the defeated guardian.
+## fragment-recognition
 
-注目と接続：BLACK armored glove picks up SAME violet-black core shard from safe plaza, crown side turned away, NO crest visible yet.
-大きさと枠：left-aligned78% width, shallow hand insert
-声：無言
+ミラが王家の工房の紋章だと告げる
 
-### コマ2
-
-The mark is shown FIRST HERE.
-
-注目と接続：Macro same single shard in black glove with unmistakable SMALL CROWN engraved on violet-black stone. No workshop number on reverse yet.
-大きさと枠：full-width medium framed reveal
-声：無言
-
-### コマ3
-
-Mira recognizes the clue.
-
-注目と接続：ONLY Mira concerned face looking at shard offscreen left, not smiling; same plaza.
-大きさと枠：right-aligned90% width, medium-height framed
-声：serious composed blue-grey rounded capsule
-
-### コマ4
-
-Ren asks what the clue means, without naming the later enemy.
-
-注目と接続：ONLY Ren basic armored shoulders/red scarf and worried face facing Mira offscreen right.
-大きさと枠：full-width large close-up
-声：quiet troubled ordinary oval
+表示幅 100% / center / 次の間 180px（390px幅） / 表示窓 [0, 1016, 724, 444]
 
 Mira：その紋章……王家の工房のものよ。
+
+## fragment-question
+
+なぜ襲ったのか。答えを次話へ残す
+
+表示幅 100% / center / 次の間 460px（390px幅） / 表示窓 [0, 1480, 724, 683]
+
 Ren：じゃあ、なんで俺たちを襲った？

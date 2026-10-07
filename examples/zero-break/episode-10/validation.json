@@ -1,53 +1,61 @@
 {
-  "edition": "context-dialogue-v6",
-  "panels": 32,
-  "readerSourceSha256": "eea7b1052aa57815bb78ab6b20e24011aaa7a64e2ef2e8296bbd88e81b0aef04",
+  "edition": "webtoon-remake-20261006",
+  "panels": 69,
+  "readerSourceSha256": "8bc9655ea2c6949f7c2a853c939259fe09461ec63f13ff8936371c97533676ca",
   "source_assets_verified": true,
   "visualReview": {
     "status": "passed",
-    "method": "manual inspection of native raster exports; not browser/DOM inspection",
-    "assets": 20,
-    "panels": 32,
-    "all_assets_at_360": true,
-    "representative_intervals_at_390": true,
-    "exact_text_and_speakers": true,
-    "faces_hands_costumes_props_and_causality": true,
-    "continuity_notes": "証拠の複製より人を守る選択、避難後の梁の解放、司令官の拘束、白い英雄の背中のみ。",
-    "reviewed_files": [
-      {
-        "file": "review/v6-contact-360-0.png",
-        "sha256": "a72b953158c7c12d0647c3ca6e6a0d9324d6f09c7cddc36a845742fced94cd1d"
-      },
-      {
-        "file": "review/v6-contact-360-1.png",
-        "sha256": "866f717265298dcab684c77ae22f21dc8337921ee99dc2bab7170d1f35abdc9f"
-      },
-      {
-        "file": "review/v6-contact-360-2.png",
-        "sha256": "557737f7c353543b4c2bc63d3a8207eb3c38169ae4f1dca229a639b94d1ad2dd"
-      },
-      {
-        "file": "review/v6-contact-360-3.png",
-        "sha256": "6df8866528cccb73b025dd5358f0463596b3e10adc44b7079447b5f04e83c2eb"
-      },
-      {
-        "file": "review/v6-contact-360-4.png",
-        "sha256": "42a7dc0f29444a29c3f59c3e8f86f8e9d291efbbdb9fc2c8c48570d9e1e276e3"
-      },
-      {
-        "file": "review/v6-contact-390-1.png",
-        "sha256": "50e9f5e4b0293d255e6eb65c660babfcf54024388ec431b0fbdfb253ce7859a7"
-      },
-      {
-        "file": "review/v6-flow-390-13.png",
-        "sha256": "c5b661475401b4cc71c5bd8784c648b1ea3b56f63a18f544253fc4fde17f014b"
-      }
+    "widths": [
+      360,
+      390
     ],
-    "user_acceptance": "not_recorded_for_full_revision"
+    "method": "native raster contact boards and sequence windows",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-10/review/v6-contact-360-0.png",
+        "sha256": "855b7b96ef320c6e35a2ba4bfa99b750abbefc269920bb4076b18d75cde1d072"
+      },
+      {
+        "path": "examples/zero-break/episode-10/review/v6-contact-360-1.png",
+        "sha256": "b7849eec5a50fbdaf0e791e76527f5c53539e7817679dfdef6654e1735d0afab"
+      },
+      {
+        "path": "examples/zero-break/episode-10/review/v6-contact-360-2.png",
+        "sha256": "e83c79528efcae8376e8dd47d166d40794ce3d47bb29eb4895494cc0a1427886"
+      },
+      {
+        "path": "examples/zero-break/episode-10/review/v6-contact-360-3.png",
+        "sha256": "c5075dfbf527299e11a9a9332fc131a319d7a77a8c5e80f078a61cb97144104e"
+      },
+      {
+        "path": "examples/zero-break/episode-10/review/v6-contact-360-4.png",
+        "sha256": "7eccebf1be4cf07046c7e3fe1dbd03bf03fd63d5c2260a8cb2eacf12fba81ee0"
+      },
+      {
+        "path": "examples/zero-break/episode-10/review/v6-contact-390-0.png",
+        "sha256": "a355e103c7adcc366d36d01a517947bdaecf17323283805ba47cb3d65f4f50db"
+      },
+      {
+        "path": "examples/zero-break/episode-10/review/v6-contact-390-1.png",
+        "sha256": "f579a881e7c1850948c9a3edad1d6ce8f3e1e202fd55b33f4ced362b1de8b570"
+      },
+      {
+        "path": "examples/zero-break/episode-10/review/v6-contact-390-2.png",
+        "sha256": "6e7d96c2dfd5e9aa6b349b4108a0f25a241dac512ecc4a79a80fe9ddebc0201f"
+      },
+      {
+        "path": "examples/zero-break/episode-10/review/v6-contact-390-3.png",
+        "sha256": "6f6d3fe8fbf53a83928dece392ad5772f76926f3f91212f724f9041a7dc7a3e9"
+      },
+      {
+        "path": "examples/zero-break/episode-10/review/v6-contact-390-4.png",
+        "sha256": "ba34130726dbbbeae72abcf1a21e09d0b1e69957f224b6ca6464d98b5211a499"
+      }
+    ]
   },
   "mobileBrowserReview": {
     "status": "pending",
-    "note": "Local HTML browser access was restricted. Native canvas exports are not browser proof."
+    "note": "Prior edition review does not apply to revised art."
   },
   "physicalDeviceTested": false
 }

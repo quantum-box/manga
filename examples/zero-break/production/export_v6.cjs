@@ -8,6 +8,7 @@ for(const n of (process.argv.length>2?process.argv.slice(2).map(Number):Array.fr
  const dir=path.join(root,n===1?'v5':'episode-'+String(n).padStart(2,'0'));
  const m=JSON.parse(fs.readFileSync(path.join(dir,'manifest.json')));
  if(m.version!=='context-dialogue-v6')throw Error('Expected adopted v6 manifest');
+ if(m.scrollEdition){await require('./export_scroll.cjs')(dir,m);continue;}
  const review=path.join(dir,'review');fs.mkdirSync(review,{recursive:true});
  const sourceHashes=m.shots.map(s=>({id:s.id,file:s.file,sha256:hash(path.join(dir,'art',s.file))}));
  const images=await Promise.all(m.shots.map(s=>loadImage(path.join(dir,'art',s.file))));
@@ -75,7 +76,7 @@ for(const n of (process.argv.length>2?process.argv.slice(2).map(Number):Array.fr
    fs.writeFileSync(path.join(review,'layout-sequence-390.png'),board.toBuffer('image/png'));
  }
  fs.writeFileSync(path.join(dir,'raster-export-validation.json'),JSON.stringify({
-   edition:m.version,status:'passed_export',method:'native canvas layout from manifest; no HTML or browser rendering',
+   edition:m.remakeEdition||m.version,status:'passed_export',method:'native canvas layout from manifest; no HTML or browser rendering',
    sourceArtworkUnchanged:true,sourceHashes,exports,browserPixelsCompared:false,visualReview:'pending'
  },null,2)+'\n');
  fs.writeFileSync(path.join(review,'README.md'),'# 画像確認\n\nv6-contact-* は各画像を360/390px幅で並べたネイティブ画像書き出し。v6-flow-* は同じ全長画像の連続窓。armor-sequence-390.png は現在の装着過程、layout-sequence-390.png は横並び・斜め枠の改稿一覧。ブラウザのDOM・画面撮影・実機の証明ではない。\n\nそれ以外の接頭辞v6のない画像は前の縦書き版の検査資料。現在の版の確認には使わない。\n');

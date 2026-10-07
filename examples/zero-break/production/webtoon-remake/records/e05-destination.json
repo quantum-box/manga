@@ -1,0 +1,140 @@
+{
+  "id": "e05-destination",
+  "episode": 5,
+  "shotId": "destination",
+  "beforeShot": {
+    "id": "destination",
+    "file": "17-destination.png",
+    "crop": "wide",
+    "shape": "right",
+    "aspect": "1024x768",
+    "pause": 380,
+    "scene": "FIRST close reveal next morning delivery docket: exact horizontal large title 英雄認定場 and small bold count 十七人 . No enemy face. Mira fingertips hold document.",
+    "lines": [],
+    "status": "generated",
+    "state": "FIRST close reveal next morning delivery docket: exact horizontal large title 英雄認定場 and small bold count 十七人 . No enemy face. Mira fingertips hold document.",
+    "pacing": "wait for hidden information",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Edit ONLY the background and environmental light in the FIRST image. Preserve Ren and Mira, their clothing, their poses, the document and ALL exact Japanese native lettering unchanged, especially 英雄認定場 and 十七人. They are INSIDE the same brass-and-brick rescue workshop at NIGHT shown by the next images, immediately after recording the seventeen victims. Replace the bright outdoor palace and daytime background with warm oil lamps, brick walls, shelves, copper pipes and a dark indigo night window. No exterior location jump, no daylight. Keep the polished anime manga drawing and original aspect ratio, no new people or words.",
+    "sha256": "1f9e0bdba3e4b5c89a5cd7ab5d46257885cc6ffce38bfd6afcf8fd7326135671",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../production/references/mira.png"
+    ],
+    "baseline_sha256": "1f9e0bdba3e4b5c89a5cd7ab5d46257885cc6ffce38bfd6afcf8fd7326135671",
+    "widthPercent": 96,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-destination.png",
+  "references": [
+    "examples/zero-break/episode-05/art/17-destination.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: FIRST close reveal next morning delivery docket: exact horizontal large title 英雄認定場 and small bold count 十七人 . No enemy face. Mira fingertips hold document.\nExact layout, camera and mechanics: ONE full-width close document in Mira fingertips. FIRST destination reveal exactly horizontal 英雄認定場 large bold at top and 十七人 below; rest blank abstract ruled lines. No enemy face, no imperial secret caption.\nExact speech in chronological order: []\nExact effects (each once, near physical cause): [\"ペラ…\"]\nExact visible prop text: [{\"text\": \"英雄認定場\", \"type\": \"prop\", \"orientation\": \"horizontal\"}, {\"text\": \"十七人\", \"type\": \"prop\", \"orientation\": \"horizontal\"}]. No other text.\n",
+  "layoutDirection": "ONE full-width close document in Mira fingertips. FIRST destination reveal exactly horizontal 英雄認定場 large bold at top and 十七人 below; rest blank abstract ruled lines. No enemy face, no imperial secret caption.",
+  "sounds": [
+    "ペラ…"
+  ],
+  "visibleText": [
+    {
+      "text": "英雄認定場",
+      "type": "prop",
+      "orientation": "horizontal"
+    },
+    {
+      "text": "十七人",
+      "type": "prop",
+      "orientation": "horizontal"
+    }
+  ],
+  "status": "planned",
+  "output": "examples/zero-break/episode-05/art/remake-destination.png",
+  "sha256": "215617388475b5e8466f685cabdb529fdb1bbb84b80cc6ff4b10f02b0727e6cc",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-e7b66df0-8730-4167-b28b-7bfc204ba9a8.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 1,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-0.png",
+        "sha256": "8de5c52f75c391d3ec7aa001b11d272a2fcb343ace58e770d73cada00f0d7fcc"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-1.png",
+        "sha256": "f7d8df5bd5fb339e89aa10a0635b71ac253f6e0866116b20da90333ada4c0681"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-2.png",
+        "sha256": "d8e0c33a00b85545e6f3c6eab04c3c406ddc783a1cc0dd837945600bad5b580b"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-3.png",
+        "sha256": "1985a20c1de6ac0ce1773beb305e4c85953944e66d95dc016095a969ba1d656a"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-360-4.png",
+        "sha256": "36f8576fca6cbf923ac632b9748ee8c9d879086ce2192e02bd885810d63efc05"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-0.png",
+        "sha256": "6d2268380e7b07e3d5c53d8fcc4d876ea94c18f139d88317481ac9d8611e6332"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-1.png",
+        "sha256": "6668511341cbbd35dd266c7c95c1db518650ecadcfd907fd682a9e24aab5c217"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-2.png",
+        "sha256": "979a87a814009e4c90d67353a4bd62e3ac26b9b355c8a37c1b33dd0570d18173"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-3.png",
+        "sha256": "d80b60173f774f8a4f1553a8174de696246a25da9c56720910f9b6b2928af165"
+      },
+      {
+        "path": "examples/zero-break/episode-05/review/v6-contact-390-4.png",
+        "sha256": "fb8ff847478c3a3644f032374fe40c8cd9f31f78efdb33e1ae1f17db67a0f93d"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-05/art/17-destination.png",
+      "sha256": "1f9e0bdba3e4b5c89a5cd7ab5d46257885cc6ffce38bfd6afcf8fd7326135671"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "panels": [
+    {
+      "beat": "英雄認定場と十七人が記された紙を初めて見せる",
+      "view": "英雄認定場と十七人が記された紙を初めて見せる",
+      "frame": "row 1; full-width panel",
+      "voice": "無言"
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ]
+    ],
+    "direction": "ONE full-width close document in Mira fingertips. FIRST destination reveal exactly horizontal 英雄認定場 large bold at top and 十七人 below; rest blank abstract ruled lines. No enemy face, no imperial secret caption.",
+    "observedPanelBeats": [
+      "英雄認定場と十七人が記された紙を初めて見せる"
+    ]
+  }
+}

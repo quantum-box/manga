@@ -1,0 +1,221 @@
+{
+  "id": "e02-e02-responsibility",
+  "episode": 2,
+  "shotId": "e02-responsibility",
+  "beforeShot": {
+    "id": "e02-responsibility",
+    "file": "v6-responsibility-paper.png",
+    "shape": "bleed",
+    "pause": 170,
+    "widthPercent": 100,
+    "scene": "Mira stands between Rook and seated tired Ren. Holds invoice herself, authoritative concern, ruined crown-run aqueduct behind. Ren no armor.",
+    "lines": [
+      {
+        "speaker": "Mira",
+        "text": "王家の責任です。",
+        "type": "speech"
+      },
+      {
+        "speaker": "Mira",
+        "text": "あなた一人に払わせません。",
+        "type": "speech"
+      }
+    ],
+    "panels": [
+      {
+        "beat": "The reader receives one part of the explanation, before a response.",
+        "view": "ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.",
+        "frame": "right-aligned90% width, medium framed speaker close-up",
+        "voice": "firm composed blue-grey capsule",
+        "line": {
+          "speaker": "Mira",
+          "text": "王家の責任です。",
+          "type": "speech"
+        }
+      },
+      {
+        "beat": "The listener or the relevant object holds the same scene while the words settle.",
+        "view": "ONLY Ren tired eyes look up at Mira, surprised she accepts responsibility. Rescued family stays safely offscreen.",
+        "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+        "voice": "無言"
+      },
+      {
+        "beat": "The reader receives one part of the explanation, before a response.",
+        "view": "ONLY Mira serious face holding invoice at SAME safe ledge, tired unarmored Ren nearby; Rook listens offscreen.",
+        "frame": "full-width LARGE borderless emotional close-up",
+        "voice": "firm composed blue-grey capsule",
+        "line": {
+          "speaker": "Mira",
+          "text": "あなた一人に払わせません。",
+          "type": "speech"
+        }
+      }
+    ],
+    "visible_text": [],
+    "added_context_dialogue": false,
+    "status": "generated",
+    "generated": true,
+    "prompt": "Edit ONLY the paper invoice surfaces in the FIRST and THIRD panels of this existing vertical manga strip. Preserve the entire image size, every panel position, faces, hands, clothes, background, Japanese balloon text and balloon shape exactly. Keep the invoice parchment outline, royal blue-and-gold crest, decorative border and abstract horizontal/table ruling. Remove ALL tiny pseudo-English words, fabricated numbers, totals, and fake legible text from both copies of this same invoice. Replace these tiny text marks with sparse neutral nonlinguistic short strokes or plain empty ruled fields, so no invented monetary amount is asserted. The exact Japanese dialogue 王家の責任です。 and あなた一人に払わせません。 stays entirely untouched. No other edits.",
+    "references": [
+      "examples/zero-break/episode-02/art/v6-responsibility.png"
+    ],
+    "sha256": "f0720dd0f4a50f5b52bbbe0de1ca3a5c89174cf7263bc2b233313e5c2b7805d2",
+    "provenance": "context-dialogue-v6",
+    "replaces": [
+      "responsibility"
+    ],
+    "visual_review": {
+      "status": "passed_native_image_review",
+      "source_sha256": "f0720dd0f4a50f5b52bbbe0de1ca3a5c89174cf7263bc2b233313e5c2b7805d2",
+      "chapter_validation": "../../../episode-02/validation.json",
+      "checks": [
+        "exact lettering and speakers",
+        "faces, hands, costumes, props",
+        "cause and effect, prior state, no premature reveals"
+      ]
+    }
+  },
+  "file": "remake-e02-responsibility.png",
+  "references": [
+    "examples/zero-break/episode-02/art/v6-responsibility-paper.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\nExisting moment and strict continuity: Mira stands between Rook and seated tired Ren. Holds invoice herself, authoritative concern, ruined crown-run aqueduct behind. Ren no armor.\nExact layout and camera: Top wide firm Mira holds SAME invoice and FIRST line; middle row RIGHT her hand with royal ring on paper / LEFT Ren tired surprised eyes; bottom large Mira speaking SECOND line. No invented paper text or new authority token.\nExact speech in chronological order: [{\"speaker\": \"Mira\", \"text\": \"王家の責任です。\", \"type\": \"speech\"}, {\"speaker\": \"Mira\", \"text\": \"あなた一人に払わせません。\", \"type\": \"speech\"}]\nExact effects (each once, associated with physical cause): [\"パサ…\"]\nExact existing visible prop text: []. No other text.\n",
+  "layoutDirection": "Top wide firm Mira holds SAME invoice and FIRST line; middle row RIGHT her hand with royal ring on paper / LEFT Ren tired surprised eyes; bottom large Mira speaking SECOND line. No invented paper text or new authority token.",
+  "sounds": [
+    "パサ…"
+  ],
+  "status": "planned",
+  "output": "examples/zero-break/episode-02/art/remake-e02-responsibility.png",
+  "sha256": "88cbf57ab70ccdf5ed9fc3f30214b710dd2c7bd4ef3a0db9c89507cc2941bdf1",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-e9c8e61c-d314-4e25-b807-d136f91020fc.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 4,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-0.png",
+        "sha256": "99aed4446a6abd18e0ef65c50d96a69e8c490311ffc0594bd91cc4ada4666715"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-1.png",
+        "sha256": "81f2a818c2c1c6f08eaea3b76941cfd2afb1086db4fc4f3a1a9f2b43c35b560c"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-2.png",
+        "sha256": "c6788b9dd21233f804aaa6c44db42c6e3533e1b640218da9bba2e958170a9120"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-3.png",
+        "sha256": "41a0bc5f9cc3d518e063395a1dc8f28ec22d1509e8f91f83c6b3e1de990fe5e2"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-360-4.png",
+        "sha256": "46d04e8ede7c5f2b7dac334145fd56863b62fb03dc9d9df2634b588c7401be60"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-0.png",
+        "sha256": "2368ec47ae0ddb761a04685f738b669ca15e84f331d4fe49f7ecc9c37c89941b"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-1.png",
+        "sha256": "fa43b30a095bc2500e3efbdfe088d503fe812eb5c9316bad706cb4eeeb01aacf"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-2.png",
+        "sha256": "a1b78ea057159f68df0e0c327049eedb2f0eb2c7a39ca912d0ef809e7e3dc87f"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-3.png",
+        "sha256": "9714d7ee1e0c7b76260278e5e647bd0a4564941fd81a0c06f689eab73bb4a207"
+      },
+      {
+        "path": "examples/zero-break/episode-02/review/v6-contact-390-4.png",
+        "sha256": "2381295f6f2677b8ed66e51a7292d230b4d766330cd9db85ec373ad0766b7bbf"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-02/art/v6-responsibility-paper.png",
+      "sha256": "f0720dd0f4a50f5b52bbbe0de1ca3a5c89174cf7263bc2b233313e5c2b7805d2"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "executedRepairPrompt": "Edit ONLY TWO Mira speech balloons and lettering in this comic. Phone-readable actual glyph height60-65px on1024-wide canvas. First upper line exact 王家の責任です。 in TWO upright columns RIGHT 王家の / LEFT 責任です。 . Enlarge first balloon into empty space without hiding any face. Second lower line exact あなた一人に払わせません。 in FOUR upright columns RIGHT to LEFT あなた / 一人に / 払わせ / ません。 . Widen lower balloon as needed, preserve Mira eyes/nose/mouth and paper/hands, her composed soft thin outline. Every spoken tail ends at Mira MOUTH, not forehead or Ren. Remove prior text completely, no duplicate or invented letters. Preserve all three rows, horizontal ring/paper vs Ren-eye row, パサ… once, all art/clothes/geography.",
+  "repairBefore": {
+    "path": "examples/zero-break/production/webtoon-remake/references/e02-e02-responsibility-before-correction.png",
+    "sha256": "af31e5aefed3e0b5d0f539cf4e723f68f2030119f573f2e9b46a22c7d5f40aa3"
+  },
+  "panels": [
+    {
+      "beat": "ミラが請求書を手に責任を引き受ける",
+      "view": "ミラが請求書を手に責任を引き受ける",
+      "frame": "row 1; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Mira",
+        "text": "王家の責任です。",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "右：王家の指輪と請求書",
+      "view": "右：王家の指輪と請求書",
+      "frame": "row 2; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "左：レンの目元",
+      "view": "左：レンの目元",
+      "frame": "row 2; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "一人に負わせないとミラが続ける",
+      "view": "一人に負わせないとミラが続ける",
+      "frame": "row 3; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Mira",
+        "text": "あなた一人に払わせません。",
+        "type": "speech"
+      }
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4
+      ]
+    ],
+    "direction": "Top wide firm Mira holds SAME invoice and FIRST line; middle row RIGHT her hand with royal ring on paper / LEFT Ren tired surprised eyes; bottom large Mira speaking SECOND line. No invented paper text or new authority token.",
+    "observedPanelBeats": [
+      "ミラが請求書を手に責任を引き受ける",
+      "右：王家の指輪と請求書",
+      "左：レンの目元",
+      "一人に負わせないとミラが続ける"
+    ]
+  }
+}

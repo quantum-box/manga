@@ -15,7 +15,11 @@ const {chromium} = require('playwright');
       if (fs.existsSync(path.join(folder, 'render.json'))) continue;
       const page = await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:3});
       await page.goto(pathToFileURL(path.resolve(settings.source)).href);
+      // Windowed readers finish drawing their shared raw artwork before export.
+      await page.waitForFunction(() => !document.querySelector('main canvas[data-source]') ||
+        document.documentElement.dataset.readerReady !== undefined);
       await page.evaluate(async () => {
+        if(document.documentElement.dataset.readerReady === 'error') throw Error('Reader artwork failed to decode');
         document.querySelectorAll('img').forEach(img => img.loading = 'eager');
         await document.fonts.ready;
         await Promise.all([...document.images].map(img => img.decode()));
@@ -33,7 +37,7 @@ const {chromium} = require('playwright');
       if (size.bottom <= size.top) throw Error(`${id}: empty reader body`);
       let cover;
       if (settings.bodyOnly) {
-        const bytes = await page.locator('main img').first().screenshot({type:'jpeg',quality:88,scale:'css'});
+        const bytes = await page.locator('main img, main canvas').first().screenshot({type:'jpeg',quality:88,scale:'css'});
         cover = 'cover-'+crypto.createHash('sha256').update(bytes).digest('hex').slice(0,24)+'.jpg';
         fs.writeFileSync(path.join(folder,cover),bytes);
       }

@@ -1,0 +1,153 @@
+{
+  "id": "e04-shared-load",
+  "episode": 4,
+  "shotId": "shared-load",
+  "beforeShot": {
+    "id": "shared-load",
+    "file": "14-shared-load.png",
+    "crop": "portrait",
+    "shape": "right",
+    "aspect": "1024x1280",
+    "pause": 150,
+    "scene": "Ren exhales and lowers armored forearm, looks to smiling Noa and Mira; sparse steam clears.",
+    "lines": [
+      {
+        "speaker": "Ren",
+        "text": "全部、俺が受けなくていいのか。",
+        "columns": [
+          "全部、俺が",
+          "受けなくて",
+          "いいのか。"
+        ],
+        "type": "speech"
+      }
+    ],
+    "status": "generated",
+    "state": "Ren exhales and lowers armored forearm, looks to smiling Noa and Mira; sparse steam clears.",
+    "pacing": "understanding / recovery",
+    "hidden": "Do not reveal the event of the next shot in this image.",
+    "prompt": "Edit ONLY the background and seat of the first illustration to maintain indoor scene continuity. Ren, Noa and Mira are STILL INSIDE the same copper boiler workshop as in the second reference. REMOVE all outdoor white city towers, blue banners, market tents, market fruit and exterior sky from the first panel. Replace them with warm amber workshop light, copper boiler and pipes, wooden equipment bench and stone floor. Ren sits on an indoor wooden workbench stool. Preserve the exact three people's faces, hand gestures, ordinary black shirt and LEFT forearm gauntlet, red scarf, Noa's orange goggles/overalls/gloves and Mira's gown. Preserve exact native Japanese VERTICAL balloon 「全部、俺が受けなくていいのか。」 and tail toward Ren. Keep light residual steam inside after pressure was relieved. No other changes or characters.",
+    "sha256": "c604979af55debb037b3ed601c7ad3160041b68a2391b4897add6f4898f21e72",
+    "references": [
+      "../episode-03/art/03-fist.png",
+      "../v5/art/16-relief.png",
+      "art/03-workshop.png",
+      "../episode-03/art/10-shield-arm.png",
+      "../production/references/noa.png"
+    ],
+    "baseline_sha256": "c604979af55debb037b3ed601c7ad3160041b68a2391b4897add6f4898f21e72",
+    "widthPercent": 100,
+    "provenance_v6": "retained adopted art; frame placement reviewed separately"
+  },
+  "file": "remake-shared-load.png",
+  "references": [
+    "examples/zero-break/episode-04/art/14-shared-load.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Ren exhales and lowers armored forearm, looks to smiling Noa and Mira; sparse steam clears.\nExact layout, camera and mechanics: One large Ren relieved face, exact line in three or four readable vertical columns. He lowers SAME armored forearm; other hand bare, shirt/scarf unchanged. Smiling Noa and Mira farther behind, sparse steam clearing, no new event.\nExact speech in chronological order: [{\"speaker\": \"Ren\", \"text\": \"全部、俺が受けなくていいのか。\", \"columns\": [\"全部、俺が\", \"受けなくて\", \"いいのか。\"], \"type\": \"speech\"}]\nExact effects (each once, near physical cause): [\"ふぅ…\"]\nExact visible prop text: []. No other text.\n",
+  "layoutDirection": "One large Ren relieved face, exact line in three or four readable vertical columns. He lowers SAME armored forearm; other hand bare, shirt/scarf unchanged. Smiling Noa and Mira farther behind, sparse steam clearing, no new event.",
+  "sounds": [
+    "ふぅ…"
+  ],
+  "visibleText": [],
+  "status": "planned",
+  "output": "examples/zero-break/episode-04/art/remake-shared-load.png",
+  "sha256": "4dffaa99ec75ea299b5640d5f5ca0a638c97d880c5176b157bde84038c992059",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-63c83343-4aeb-4fc9-8881-869b76b32ca7.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 1,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-0.png",
+        "sha256": "b016d5664d817ba9812cd0a1f3c6800be060e6f4feef076b927b0eab970c310d"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-1.png",
+        "sha256": "786e969d8dc1734bdf9e4dc90e7dc1ab4c5fa7109055e85ec39c26b3233c84ad"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-2.png",
+        "sha256": "1ef2d46c7bf138033359ff4162dfb7584dc93cfa1f7eff449c79b9a4aa9db7e2"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-3.png",
+        "sha256": "b1bcac42196f49c500f72ebbdb91ca552886212ed154c03ef2b5c4f02d649aab"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-360-4.png",
+        "sha256": "0d4821435166f9fe8b852764b371d4a528b2d2cbdb675a771ed9e18b78e56711"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-0.png",
+        "sha256": "1a8a2ad5d9376e1098473a5e08e8ddaf0a88044e2f004e86c063892e34b41ab2"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-1.png",
+        "sha256": "3f7c4b015a5a6c12b3c5f1b6ce243a2b5f39ec3459750dbf6448548af5d0fe71"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-2.png",
+        "sha256": "1253f80fb382b593c72249c32c7fbd89afeb56a4d3b078f0ef74c99bf562cd6c"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-3.png",
+        "sha256": "a45cbee101883e12b24a024223f5f294461b1e0dd7f5ba2397170a93c485fa41"
+      },
+      {
+        "path": "examples/zero-break/episode-04/review/v6-contact-390-4.png",
+        "sha256": "896f4478916a2e5d5a8462d16b8177062c86c529daa792e527cf05832c05df4a"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-04/art/14-shared-load.png",
+      "sha256": "c604979af55debb037b3ed601c7ad3160041b68a2391b4897add6f4898f21e72"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "panels": [
+    {
+      "beat": "支える仲間を見て負担を分けられると知る",
+      "view": "支える仲間を見て負担を分けられると知る",
+      "frame": "row 1; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Ren",
+        "text": "全部、俺が受けなくていいのか。",
+        "columns": [
+          "全部、俺が",
+          "受けなくて",
+          "いいのか。"
+        ],
+        "type": "speech"
+      }
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ]
+    ],
+    "direction": "One large Ren relieved face, exact line in three or four readable vertical columns. He lowers SAME armored forearm; other hand bare, shirt/scarf unchanged. Smiling Noa and Mira farther behind, sparse steam clearing, no new event.",
+    "observedPanelBeats": [
+      "支える仲間を見て負担を分けられると知る"
+    ]
+  }
+}

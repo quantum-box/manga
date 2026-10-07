@@ -2,6 +2,8 @@
 
 画像生成には同じキャラクター仕様と参照画像を渡し、場面固有の構成・状態・伏せる情報を追加する。単に「縦長のWebtoon」と頼むと、全幅の矩形を縦へ積むだけの構成や目的のない均等なコマ列に戻りやすい。横長・横並び・斜めのコマも、会話や動作の役割に合うところで使う。
 
+作画前に[余白とスクロール](scroll-pacing.md)で間の位置を決める。待たせる前後の情報を一枚の漫画ページへ詰めず、今回の素材で見せる範囲だけを生成する。横並びや斜め枠が必要でも、全素材を多段の漫画ページへ固定しない。
+
 日本語の会話は吹き出しとセリフを絵に含めて生成する。縦書きの列指定は[承認された実例](vertical-lettering.md)を参照する。吹き出しの数や位置は各場面の発話と構図から決める。
 
 ## 絵柄と感情を別々に指定する
@@ -37,9 +39,9 @@ Style/medium: [chosen art direction].
 Scene/backdrop: [consistent setting and time].
 Camera: [distance: wide / medium / close-up; height and angle; whose viewpoint, if relevant].
 Composition: [primary focal element and path to the next beat; reserve the planned balloon area without covering faces, hands or clues].
-Text: Render the exact Japanese dialogue below inside white speech balloons integrated with the illustration. Use true vertical Japanese typesetting: upright glyphs, top-to-bottom columns, columns ordered right-to-left. Do not rotate horizontal sentences sideways. No extra text or watermark.
+Text: Render only the specified dialogue, sound effects and in-world display text. Integrate them with the illustration. Speech uses white balloons and true vertical Japanese: upright glyphs, top-to-bottom columns ordered right-to-left. Do not rotate horizontal sentences sideways. No unlisted text or watermark.
 Dialogue: [speaker, exact full text, balloon reading order, and each vertical column listed in right-to-left order].
-Sound effects: [exact word, source/action, position, style, beginning/continuation/end; or none only when no sound persists]. Keep outside speech/thought balloons, independently of dialogue.
+Sound effects: [exact word, producing action/material, position relative to the source, scale and drawn letter style, beginning/continuation/end; or none only when no sound persists, with a reason for quiet]. Keep sounds outside speech/thought balloons; their orientation follows the action, separately from dialogue.
 Voice: [spoken / thought; intended listener; volume, emotion and breath for THIS utterance].
 Balloon design: [contour, line weight/color, white inner padding, and continuous speech tail or thought dots].
 Lettering: Clean printed Japanese manga gothic, dark lettering, generous inset padding, legible after smartphone downscaling. Balloon tails point to the speakers. Do not cover faces or hands.
@@ -59,7 +61,8 @@ Visible subject: [speaker face / listener reaction / the object being discussed]
 Offscreen: [who remains nearby and on which side].
 Single beat: [what the reader understands now].
 Carry forward: [eyeline, posture, background marker and prop state].
-Exact dialogue for THIS panel only: [text, or Dialogue: none]. Specify originating or continuing sound effects independently; do not use 'silent' for a wordless panel whose sound persists.
+Exact dialogue for THIS panel only: [text, or no dialogue/thought balloons].
+Exact sound effects for THIS panel only: [word, source, placement and drawn style, beginning/continuation/end; or none only when no sound persists]. Do not use 'silent' for a wordless panel whose sound persists.
 Do not include later replies, new locations, or every character from the reference.
 ```
 
@@ -67,11 +70,34 @@ Do not include later replies, new locations, or every character from the referen
 
 文字を個別編集する指定などで後から組版する場合だけ、後組版する文字の種類と予約領域を指定する。セリフだけを後組版し、効果音は絵と一緒に作る場合は `No dialogue or speech balloons; render only the specified sound effects.` とする。全ての文字を後組版する場合、または完全な静けさを意図する場合にだけ `No text, balloons or sound effects.` を使う。
 
-「無言」を自動で文字なしへ変換しない。発話なしと発生音・継続音の有無を分けて指定する。効果音を `speaker: 音` の発話へ入れず、無音の判断コマへ動作音を一律に足さない。過去の実使用指示は履歴として保ち、次回用指示や実行した編集指示と区別する。
+「無言」を自動で文字なしへ変換しない。発話なしと発生音・継続音の有無を分けて指定する。たとえば歩くコマは `Dialogue: none. Sound effects: コツ、コツ near the boots, small hard lettering.`、継続音もなく聞き手が言葉を受け止めるコマは `Dialogue: none. Sound effects: none; preserve a quiet reaction.` と分ける。セリフと音が共存するコマも別々に指定する。効果音を `speaker: 音` の発話へ入れず、音のない感情コマへ動作音を一律に足さない。過去の実使用指示は履歴として保ち、修正した次回用指示や実行した編集指示と区別する。
 
 ## 構成の指示を変える
 
 複数コマへ続く音は[コマと余白を跨ぐ音](cross-panel-sounds.md)の発生・継続の記録と生成例を使う。後続コマでは同じ音の継続を明示し、新しい音の追加や全文の複製と区別する。発話のないコマ、音が継続するコマ、完全な無音のコマを別々に指定する。
+
+間の前後を別素材にするときは、次のように作画と組版の役割を分けて指定する。空白の中へ計画にない飾りや追加コマを生成しない。長さはリーダーの実際の表示で調整する。
+
+```text
+Scroll beat for THIS asset: [cue / reaction / reveal / aftermath].
+Show only: [the information the reader sees at this moment].
+End this asset before: [the reply, full armor, identity or source revealed later].
+Pacing plan: after this asset, the reader crosses [a brief breath / a long quiet gap / a sparse continuous background] before [the next information]. The gap is arranged in the reader; do not compress both moments into a multi-panel page.
+Edge treatment: [blend into the chosen page color / continue the background motif / retain a deliberate border].
+Do not include later beats, bonus inset panels, a decorative grid, or a complete print-manga page.
+```
+
+余白そのものをこの原画へ描く場合だけ、その領域と地色・背景の疎さを指定する。待ちの目的と次に見る情報を渡し、全画像に同じ大余白を追加する指示にしない。
+
+**効果音だけ・セリフだけ・視覚演出だけの余白**も生成単位にできる。通常の人物会話カットの共通指示をそのまま使わず、その区間に置く要素だけを指定する。文字を置く場合は全文と縦書きの列順、声なら話者と吹き出し・尾の有無を指定し、視覚演出だけの場合は文字を生成しない。
+
+```text
+Asset type: a sparse, borderless scroll-pacing beat on [chosen page color].
+Only visible content: [the exact Japanese sound / the exact spoken or thought line / the planned light, shadow, ripple or trail].
+Placement: [vertical position, direction, spacing of repeats and fading]. Retain broad unoccupied space around it, with lettering legible at phone width.
+For a voice beat: [speaker or deliberately unidentified voice, spoken/thought, balloon or floating vertical lettering].
+Do not add characters, extra dialogue, scenery, panel grids or unplanned ornaments. Keep [the later reveal] absent.
+```
 
 複数のコマを一枚へ生成するときは「大小をつける」だけで済ませず、各コマの役割と相対的な幅・高さ・配置・枠の有無を指示する。たとえば「全幅の状況確認→右寄せの会話→左寄せの浅い目元→大きな名乗り」。小コマはその面積に合う対象へ描き直し、全景を縮めたり絵を押し潰したりしない。生成後は文字だけでなく、本当に形と面積に差が出たか見る。[大小を直した実例](context-and-dialogue.md)の数値や配列は今回だけの選択。
 
@@ -106,3 +132,7 @@ A large readable close-up, with [exact dialogue] inside a vertically lettered sp
 | キャラクターの模様・服装 | 参照を固定 | 同じ | 同じ。変更するなら話の中で説明 |
 
 完成した画像を見て確認する。指示文に書けていることは、画像が正しくできた証拠にはならない。
+
+## 文字を余白へ移す編集
+
+元のセリフや効果音を独立した余白へ移す場合は、再掲するだけで終えない。原画で除去する文字、吹き出し・尾・思考点・強調線の範囲と、その部分へ戻す背景を指定し、その他の文字、人物、手足、衣服、枠と寸法を保つ。安全な表示窓で文字を外せる場合は原画を変えず、文字や顔を切る場合だけ編集・再作画を選ぶ。[第1話の全編改稿例](scroll-revision-lessons.md)のように、移動元と余白の文字が一度だけ読め、音の発生源と通知の種類が前後でつながるか確認する。

@@ -1,0 +1,240 @@
+{
+  "id": "e09-e09-other-axis",
+  "episode": 9,
+  "shotId": "e09-other-axis",
+  "beforeShot": {
+    "id": "e09-other-axis",
+    "file": "v6-other-axis.png",
+    "shape": "bleed",
+    "pause": 170,
+    "widthPercent": 100,
+    "scene": "Mira draws TWO clear simple graph axes on paper, one flat, one rises during rescuing; exact large horizontal labels 魔力 and 救助負荷 . Ren leans in, not instantly master explanation.",
+    "lines": [
+      {
+        "speaker": "Mira",
+        "text": "空じゃない。",
+        "type": "speech"
+      },
+      {
+        "speaker": "Mira",
+        "text": "測る箱が違う。",
+        "type": "speech"
+      }
+    ],
+    "panels": [
+      {
+        "beat": "The reader receives one part of the explanation, before a response.",
+        "view": "ONLY Mira calm explaining face in SAME warm amber workshop AT NIGHT; no sunshine windows.",
+        "frame": "right-aligned90% width, medium framed speaker close-up",
+        "voice": "clear composed blue-grey capsule",
+        "line": {
+          "speaker": "Mira",
+          "text": "空じゃない。",
+          "type": "speech"
+        }
+      },
+      {
+        "beat": "The listener or the relevant object holds the same scene while the words settle.",
+        "view": "Physical paper with TWO graph axes: large exact horizontal labels 魔力 and 救助負荷. One flat and one rises. Ren eyes follow the difference without instant mastery.",
+        "frame": "left-aligned72% width, shallow silent detail/reaction insert",
+        "voice": "無言"
+      },
+      {
+        "beat": "The reader receives one part of the explanation, before a response.",
+        "view": "ONLY Mira calm explaining face in SAME warm amber workshop AT NIGHT; no sunshine windows.",
+        "frame": "full-width LARGE borderless emotional close-up",
+        "voice": "clear composed blue-grey capsule",
+        "line": {
+          "speaker": "Mira",
+          "text": "測る箱が違う。",
+          "type": "speech"
+        }
+      }
+    ],
+    "visible_text": [
+      {
+        "text": "魔力",
+        "type": "raster label",
+        "review": "visually confirmed in generated image"
+      },
+      {
+        "text": "救助負荷",
+        "type": "raster label",
+        "review": "visually confirmed in generated image"
+      }
+    ],
+    "added_context_dialogue": false,
+    "status": "generated",
+    "generated": true,
+    "prompt": "Use case: illustration-story.\nAsset: finished full-color Japanese smartphone Webtoon strip with integrated raster speech balloons. Preferred canvas 1024x3072 (width:height 1:3).\nRecompose the existing episode into the exact sequential panels below. Input images establish identity, costume, props and anime rendering ONLY. Do not reproduce their dense multi-speaker layout or later events. Several sequential appearances of the same person are allowed only in separate explicitly ordered panels.\nMatch the polished expressive anime/cel-shaded Zero Break art. Ren19: black tousled hair, blue eyes, crimson scarf, soft BLACK short-sleeve shirt, charcoal trousers, narrow brown straps, BARE hands until explicitly transformed. Basic armor only when specified: BLACK faceted plates, CYAN seams and cyan star, face uncovered, red scarf. Mira19: blonde long braid, blue eyes, white/royalBLUE/GOLD detailed dress, blue-gold flower hair ornament; no armor. Rook22: SILVER short hair, blue eyes, SILVER armor, royalBLUE cape, BLACK gloves. Noa18: ORANGE tousled hair, green eyes, brass round goggles on head, blue overalls, black undershirt, orange gloves. Draw only the people requested for each panel. People offscreen stay nearby.\nPrinted bold Japanese manga gothic: UPRIGHT glyphs TOP TO BOTTOM, columns RIGHT TO LEFT. Render only verbatim dialogue supplied for that panel, with no quotation marks, labels or extra captions. Aim for actual glyph height 65-76px on a1024px-wide strip (23-27px at360px). Do not shrink lettering to fit. Keep ample white inset, faces and hands visible. Speech tails point continuously to the speaking MOUTH; thoughts use cloud outlines and DOTS to head. Balloon contour follows THIS voice: ordinary thin-black oval; Mira's composed voice thin blue-grey rounded capsule; warm voice soft organic outline; breathless voice slightly wavering contour; urgent shouted warnings heavy jagged outer contour. No shouting decorations on a calm utterance, no thought dots on spoken words.\nTop-to-bottom reading on a WHITE canvas. Right-aligned82% means a visible WHITE blank margin of18% at LEFT of that panel, not merely put the face on the right inside a full-width picture. Left-aligned68% means32% of the canvas at RIGHT is completely WHITE. Draw complete thin black rectangular frames INSIDE the canvas at the requested unequal widths. Leave30-60px WHITE gutters between frames. UNEQUAL panel heights and widths, occasional shallow inserts and borderless emotional or geographic full-width panels. Real re-composed close-ups in the smaller panels, never squeeze down a whole crowd scene. No equal-size stack, decorative collage, English, watermark, panel numbers or advance reveal. Maintain cause, posture, handedness, props and actual time/location through the strip. The next episode's incident must not appear.\n\nThe LAST input image is ONLY the adopted example of unequal FRAME WIDTHS, white negative space, and shallow eye inserts. Do not copy Mira or her rescue dialogue from it. Earlier images establish THIS scene.\nExact continuity/setting (not a request to put everything in every panel): Mira draws TWO clear simple graph axes on paper, one flat, one rises during rescuing; exact large horizontal labels 魔力 and 救助負荷 . Ren leans in, not instantly master explanation.\n\nPanel 1, downward order. Frame: right-aligned90% width, medium framed speaker close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira calm explaining face in SAME warm amber workshop AT NIGHT; no sunshine windows.. Voice / balloon: clear composed blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「空じゃない。」 (render contents only).\nPanel 2, downward order. Frame: left-aligned72% width, shallow silent detail/reaction insert. Reader understands: The listener or the relevant object holds the same scene while the words settle.. Visible camera subject / offscreen continuity: Physical paper with TWO graph axes: large exact horizontal labels 魔力 and 救助負荷. One flat and one rises. Ren eyes follow the difference without instant mastery.. Voice / balloon: 無言.\nSILENT: no balloons or text unless an exact prop inscription is explicitly specified.\nPanel 3, downward order. Frame: full-width LARGE borderless emotional close-up. Reader understands: The reader receives one part of the explanation, before a response.. Visible camera subject / offscreen continuity: ONLY Mira calm explaining face in SAME warm amber workshop AT NIGHT; no sunshine windows.. Voice / balloon: clear composed blue-grey capsule.\nONLY speaker: Mira. EXACT text: 「測る箱が違う。」 (render contents only).\n",
+    "references": [
+      "examples/zero-break/episode-09/art/04-other-axis.png",
+      "skills/webtoon/references/zero-break/varied-01.png"
+    ],
+    "sha256": "2bb96964fb3f362958199fcb51352121642bfd06b32426036f85f19ff694cfd5",
+    "provenance": "context-dialogue-v6",
+    "replaces": [
+      "other-axis"
+    ],
+    "visual_review": {
+      "status": "passed_native_image_review",
+      "source_sha256": "2bb96964fb3f362958199fcb51352121642bfd06b32426036f85f19ff694cfd5",
+      "chapter_validation": "../../../episode-09/validation.json",
+      "checks": [
+        "exact lettering and speakers",
+        "faces, hands, costumes, props",
+        "cause and effect, prior state, no premature reveals"
+      ]
+    }
+  },
+  "file": "remake-e09-other-axis.png",
+  "references": [
+    "examples/zero-break/episode-09/art/v6-other-axis.png",
+    "skills/webtoon/references/zero-break/layout-sequence-390.png"
+  ],
+  "prompt": "MANDATORY FIRST: Completely recompose the supplied target into the EXACT separate framed panel sequence below. Its old composition is discarded; only characters, plot and setting are references. EXACT 4 panels top Mira says 空じゃない。; middle RIGHT flat trace on PAPER with exact large horizontal 魔力 / LEFT rising rescue trace on PAPER with exact large horizontal 救助負荷 . Bottom Mira says 測る箱が違う。 in two large columns, Ren watching without instant mastery. TWO separate measurement axes not holographic HUD.\nUse case: illustration-story. Asset: finished full-colour Japanese smartphone Webtoon comic artwork WITH integrated Japanese balloons and sounds. Recompose this existing scene with the specified purposeful panel layout. Reference 1 is the EDIT TARGET for its story, exact characters, costumes and place; retain its plot meaning, not its old panel stack. Reference 2, if present, is a layout/lettering quality reference only, not characters or plot.\nPolished Zero Break anime/cel shading. Ren19 black tousled hair/blue eyes/red scarf/ordinary BLACK short sleeves and narrow brown straps/charcoal trousers/bare hands unless BASIC black faceted armor with CYAN seams and cyan star is explicitly present. No helmet, new form, changed scarf colour or body duplication. Mira19 blonde braid/blue eyes/white-blue-gold dress. Rook22 short SILVER hair/blue eyes/silver engraved armor/BLUE cape/BLACK gloves. Place/time and handedness must connect. Do not preview later outcomes or later identities.\nJapanese dialogue: exact supplied wording and punctuation, UPRIGHT vertical glyphs top-to-bottom, columns right-to-left. Clear bold manga gothic, actual glyph height ~68px on1024px width; do not shrink long lines; use 2-4 short columns and a larger speech panel as needed. Read horizontal rows RIGHT to LEFT then downward. Each speech tail points to the mouth, thought clouds have dots. Spoken lines never have thought dots. Sounds sit near the specified physical cause and leave faces, hands and dialogue clear. No dialogue duplication, labels, English, watermark or invented system readings. White gutters, variable camera distance and frame area; meaningful horizontal rows and diagonal panel borders, not a decorative montage. One person may reappear only in genuinely sequential separate panels. Preferred width1024, height2048-3072 depending on panel count; a single geography can be 1024x1536. Maintain the current colour palette and exact role of the scene.\n\n\nNoa18 if present: ORANGE short tousled hair, GREEN eyes, round brass goggles ON HEAD, blue mechanic overalls, black undershirt, ORANGE work gloves. No new form or changed identity. Commander if present: mature45 short black hair greying temples, black-trim beard, navy cape and silver/gold armor; never confused with young silver-haired Rook.\nIMPORTANT PHONE LETTERING: actual glyph height60-70px on1024px-wide output, including when output is1024x1536. Reflow long dialogue to 3-4 columns of no more than6 upright glyphs per column; enlarge speech panel/balloon rather than shrink text. Preserve exact complete wording and punctuation. Calm speech thin oval/capsule; fatigue softly wavering; warning/shout jagged outside; thought cloud and dots. Only scene-specified bodies/props, no duplicates within same panel.\n\nExisting moment and strict continuity: Mira draws TWO clear simple graph axes on paper, one flat, one rises during rescuing; exact large horizontal labels 魔力 and 救助負荷 . Ren leans in, not instantly master explanation.\nExact layout, camera and mechanics: EXACT 4 panels top Mira says 空じゃない。; middle RIGHT flat trace on PAPER with exact large horizontal 魔力 / LEFT rising rescue trace on PAPER with exact large horizontal 救助負荷 . Bottom Mira says 測る箱が違う。 in two large columns, Ren watching without instant mastery. TWO separate measurement axes not holographic HUD.\nExact speech in chronological order: [{\"speaker\": \"Mira\", \"text\": \"空じゃない。\", \"type\": \"speech\"}, {\"speaker\": \"Mira\", \"text\": \"測る箱が違う。\", \"type\": \"speech\"}]\nExact effects (each once, near physical cause): [\"サラ…\"]\nExact visible prop text: [{\"text\": \"魔力\", \"type\": \"raster label\", \"review\": \"visually confirmed in generated image\"}, {\"text\": \"救助負荷\", \"type\": \"raster label\", \"review\": \"visually confirmed in generated image\"}]. No other text.\n\nFINAL PHONE OVERRIDE: 80-90px ACTUAL Japanese glyph height on1024px width, 2-3 vertical upright columns max6glyph each. No ruled lines inside balloons. RIGHT panel first then LEFT. Each sound exactly once. All of Chapter9 is NIGHT except memory replay; keep every Ren arm UNARMORED in Chapter9. Ren in Chapter10 never releases the same stone beam until all spectators clear. Reference2 only frames/style. No added outcomes or dialogue.",
+  "layoutDirection": "EXACT 4 panels top Mira says 空じゃない。; middle RIGHT flat trace on PAPER with exact large horizontal 魔力 / LEFT rising rescue trace on PAPER with exact large horizontal 救助負荷 . Bottom Mira says 測る箱が違う。 in two large columns, Ren watching without instant mastery. TWO separate measurement axes not holographic HUD.",
+  "sounds": [
+    "サラ…"
+  ],
+  "visibleText": [
+    {
+      "text": "魔力",
+      "type": "raster label",
+      "review": "visually confirmed in generated image"
+    },
+    {
+      "text": "救助負荷",
+      "type": "raster label",
+      "review": "visually confirmed in generated image"
+    }
+  ],
+  "status": "planned",
+  "output": "examples/zero-break/episode-09/art/remake-e09-other-axis.png",
+  "sha256": "1b9a7f9978e824f3f745e6c54546e22e32efc8b6c0cd7d310d49089fd80468af",
+  "generatedOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11107-80c6-7413-a5d5-5afdcad02be8/exec-c2c06a02-6669-4efa-a60a-beff84f2ebb2.png",
+  "width": 1024,
+  "height": 1536,
+  "actualPanelCount": 4,
+  "nativeFullSizeReview": "passed",
+  "mobileImageReview": {
+    "status": "passed",
+    "widths": [
+      360,
+      390
+    ],
+    "method": "human visual review of native raster contact boards; no browser",
+    "artifacts": [
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-0.png",
+        "sha256": "73015b8230771f83ba2457def5190f93a77aea9b2a43e550cd172dc965f5d043"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-1.png",
+        "sha256": "5be6c442e842db55132c352fe17a715c55fc094745c099736af4a6b8927fd37e"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-2.png",
+        "sha256": "14d1bf0901913e17473237005fab7d0691aab5dd19ee5cce3b09067563df6d66"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-3.png",
+        "sha256": "8131debabda6c80b35f67afb917099d90aa49cd46ea0574d010610bd89a60b4e"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-360-4.png",
+        "sha256": "f15d01392d9f9c726e0c71c956322fec8b0e271bc13f3db2e53535cfdd0eb8c8"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-0.png",
+        "sha256": "e9158d607dda8d8dfa31621b34fc9ba1fbee8e178186ac05ce0020320d46cc9d"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-1.png",
+        "sha256": "f2c8a66069382a194c62a0e04017b304ef6df558ce2d7137539bc6845c3c2fc5"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-2.png",
+        "sha256": "a05a790a19801e11b24f7df55c863e2211f5ca2fb186955ff7e825ac7eda7375"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-3.png",
+        "sha256": "23be3f77292fa97f0db428f0491e6e5b12c83f76c1ba2b881eb725431f416758"
+      },
+      {
+        "path": "examples/zero-break/episode-09/review/v6-contact-390-4.png",
+        "sha256": "a5f5e114c2def224f112a39600e51e41d542a9c0a8fa0a88b8ffd973e6d87998"
+      }
+    ]
+  },
+  "browserReview": "pending",
+  "method": "built-in image_gen",
+  "referenceHashes": [
+    {
+      "path": "examples/zero-break/episode-09/art/v6-other-axis.png",
+      "sha256": "2bb96964fb3f362958199fcb51352121642bfd06b32426036f85f19ff694cfd5"
+    },
+    {
+      "path": "skills/webtoon/references/zero-break/layout-sequence-390.png",
+      "sha256": "f09e593f9510ed509b58cb0e7b5bb60accf7287ef5ec59fa9e4e1e3b7e9d9ccf"
+    }
+  ],
+  "panels": [
+    {
+      "beat": "空ではないとミラが指摘する",
+      "view": "空ではないとミラが指摘する",
+      "frame": "row 1; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Mira",
+        "text": "空じゃない。",
+        "type": "speech"
+      }
+    },
+    {
+      "beat": "平らな魔力の軸",
+      "view": "平らな魔力の軸",
+      "frame": "row 2; horizontal row, right-to-left position 1/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "上昇する救助負荷の軸",
+      "view": "上昇する救助負荷の軸",
+      "frame": "row 2; horizontal row, right-to-left position 2/2",
+      "voice": "無言"
+    },
+    {
+      "beat": "測る箱が違うとミラが結論づける",
+      "view": "測る箱が違うとミラが結論づける",
+      "frame": "row 3; full-width panel",
+      "voice": "spoken balloon with tail to mouth",
+      "line": {
+        "speaker": "Mira",
+        "text": "測る箱が違う。",
+        "type": "speech"
+      }
+    }
+  ],
+  "layout": {
+    "readingDirection": "right-to-left, then downward",
+    "rowsInReadingOrder": [
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4
+      ]
+    ],
+    "direction": "EXACT 4 panels top Mira says 空じゃない。; middle RIGHT flat trace on PAPER with exact large horizontal 魔力 / LEFT rising rescue trace on PAPER with exact large horizontal 救助負荷 . Bottom Mira says 測る箱が違う。 in two large columns, Ren watching without instant mastery. TWO separate measurement axes not holographic HUD.",
+    "observedPanelBeats": [
+      "空ではないとミラが指摘する",
+      "平らな魔力の軸",
+      "上昇する救助負荷の軸",
+      "測る箱が違うとミラが結論づける"
+    ]
+  }
+}
