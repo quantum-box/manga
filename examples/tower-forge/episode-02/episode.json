@@ -4,7 +4,7 @@
   "scenes": [
     {
       "name": "工房街の夜",
-      "location": "翌日のログイン、工房へ向かう同じ街路。灯りの消えた夜",
+      "location": "塔の異変から少し後、同じ夜の工房街。カイとセナが戻る街路",
       "panels": [
         {
           "art": "長い全景。三角屋根の工房街、魔導灯は暗く、主都市の遠い明かりだけ残る。カイとセナが見回す。",
@@ -157,7 +157,7 @@
     },
     {
       "name": "最初の遠征",
-      "location": "街の塔の入口、翌ログイン。昼",
+      "location": "翌日のログイン。工房街側の旧水路保守入口、昼",
       "panels": [
         {
           "art": "手の二小コマを右から左。回収袋→二本の回復薬を腰に固定。物の数を増やさない。",
@@ -187,7 +187,7 @@
           "voice": "普通の声"
         },
         {
-          "art": "長い枠なし。三人の後ろ姿、巨大な塔の足元の門へ歩く。門は開いている。",
+          "art": "長い枠なし。三人の後ろ姿、工房街側の運河にある旧水路の小さな保守入口へ歩く。保守口は開いている。塔は遠景に見えるが、封鎖された東門は開かない。カイは素手、銅カフは左腕だけ。",
           "speaker": "カイ",
           "text": "……わかった。",
           "columns": [
@@ -199,9 +199,14 @@
       "gap": 0,
       "withheld": "未登場の敵・後の報酬を描かない",
       "id": "04",
-      "file": "art/04.png",
-      "prompt": "Use case: illustration-story. Finished full-color Japanese smartphone vertical-scroll Webtoon. ONE portrait illustration around 1024x2048 or 1024x2304, with four deliberately UNEQUAL panels or beats ordered from top to bottom. Reference image establishes character identity, clothes, tools, palette, anime style ONLY; do not copy the reference sheet's layout, labels, portraits, parchment backdrop, or bring every character into every panel. Clean detailed anime linework, readable expressive faces, controlled cel shading, grounded high fantasy, warm natural metals, white page gutters. Medieval sword and magic VRMMORPG; actual world scenery looks like a fantasy adventure, only small HUDs imply gameplay. No futuristic city.\nDraw exact Japanese speech as part of the raster artwork. Genuine vertical lettering with upright characters, top-to-bottom within a column, columns RIGHT TO LEFT. Clean printed Japanese manga gothic, near 60px glyph height on a 1024px-wide original, readable at 360px display width; never shrink long dialogue. Each utterance below gives columns in right-to-left order, with / only as a separator in this instruction, never printed. Normal speech: slender oval or rounded tall bubble, tail to speaker. Quiet speech: softly irregular thin outline with tail. Shouts: bold spiky bubble and clear pointed tail. Thoughts: cloud-like shape with dots toward the thinker, no speech tail. HUD is translucent cyan, compact horizontal Japanese is allowed for HUD, not ornamental gold panel. Sound effects are material-appropriate drawn text and may be horizontal. Never duplicate an utterance, add extra visible writing, translate Japanese, show speaker labels, or overlay unnecessary HUD.\nPanel layout: shallow establishing/context panel when appropriate, staggered medium conversation or action, narrow object/eye insert, larger lower reaction or result. Use unequal heights and widths, some borderless long scenery; action may have slanted frame borders but keep the lettering upright. Small panels show ONLY close-up subjects, not tiny whole bodies. Dialogue must not cover faces, hands, sword, shield, or clue. Keep clear right-to-left order inside any same-row split. Use varied camera distances for understanding, no uniform four-box grid. Use a white bottom edge/gutter. Characters remain in the same location even if offscreen. Keep actions causal and exact prop state.\nKai: dark-brown short hair, one amber streak at his right temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short indigo cape, dark trousers, leather boots, copper cuff left forearm, steel one-handed sword in right hand with square brass guard and one thin orange fuller inset; not a lightsaber. After episode 5 sword has small copper cooling plate beside guard. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over deep blue tunic, navy cape, one triangular silver shield with cobalt line in left hand, straight steel sword on belt when not specified. Iris: plum bob hair, green eyes, teal hood-down cloak, ivory tunic, wooden staff with ONE amber crystal and copper ring. Do not swap their colors, genders, or props. Orun: older male NPC smith with short gray beard and brown apron. Vane: male player, tied-back ash-gray hair, silver armor, white cape. Never introduce unmentioned characters, duplicate hands/limbs/props or show a future reveal early. No watermark.\nEpisode 2, strip 4, scene: 最初の遠征. Location continuity: 街の塔の入口、翌ログイン。昼.\nBEAT 1 top-to-bottom. Artwork/camera/focus: 手の二小コマを右から左。回収袋→二本の回復薬を腰に固定。物の数を増やさない。\nSilent beat: no speech bubble, no extra text.\nBEAT 2 top-to-bottom. Artwork/camera/focus: 中コマ。カイが自分の鋼の魔導剣を鞘へ。修理を頼まれた予備剣は街へ残した。\nExactly one utterance by カイ; voice/shape: 普通の声. Exact text: 俺の剣で行く。. Vertical columns RIGHT to LEFT: 俺の剣で / 行く。\nBEAT 3 top-to-bottom. Artwork/camera/focus: 小さなセナの顔、期待と少しの緊張。\nExactly one utterance by セナ; voice/shape: 普通の声. Exact text: 無理は、言ってね。. Vertical columns RIGHT to LEFT: 無理は、 / 言ってね。\nBEAT 4 top-to-bottom. Artwork/camera/focus: 長い枠なし。三人の後ろ姿、巨大な塔の足元の門へ歩く。門は開いている。\nExactly one utterance by カイ; voice/shape: 普通の声. Exact text: ……わかった。. Vertical columns RIGHT to LEFT: ……わかった。\nWithheld information: 未登場の敵・後の報酬を描かない"
+      "file": "art/r04-route.png",
+      "prompt": "Use case: precise-object-edit. Edit this finished Episode 2 Japanese Webtoon to correct the expedition route and Kai's costume continuity. Preserve the exact existing four narrative beats, faces, hair, equipment, bag, TWO red potions, Sena's left-arm silver/cobalt shield and Iris's plum bob/teal cloak/ONE amber staff crystal. Keep ALL existing Japanese utterances unchanged and vertically lettered: 「俺の剣で行く。」「無理は、言ってね。」「……わかった。」. Morning daylight is correct: this departure is the NEXT DAY after the blackout and party preparations. The contextual time/place caption will be in the reader outside the image; do NOT add visible location labels to the raster. In the bottom wide departure scene ONLY, replace the huge open main tower gate destination with a modest OPEN stone maintenance doorway beside a blue-green canal on the workshop side of the city. The three characters walk toward this low maintenance doorway and downward stone stairs; the tall white tower remains distant in the background with no visible reopened east gate. Keep it medieval masonry/copper pipe fantasy scenery, no futuristic door, no tunnel monsters, no new people or event. This is the city-side service access to the OLD WATERWAY; the sealed tower east gate remains closed elsewhere. Also replace Kai's black gloves with bare hands in every panel, preserving each finger's grip. Keep ONLY ONE copper cuff, on his anatomical LEFT forearm; his RIGHT sword hand/wrist has bare skin and no metal bracelet. The sword is the SAME ordinary steel prototype, square brass guard, dark leather grip and one fine amber line, not a fire blade. Preserve the existing sheath action in the middle and one sheathed sword in the final walking shot. No duplicate sword, limbs, cuff, text or props. Keep original unequal four-beat layout and portrait 1:2 ratio. Native integrated raster art and lettering; edit only route and Kai's hand/cuff consistency.",
+      "opening_caption": "翌日のログイン。工房街側の旧水路保守入口。",
+      "prompt_role": "executed_route_and_hand_continuity_edit",
+      "executed_event_edits": [
+        "production/event-revision/episode-02-route.txt"
+      ]
     }
   ],
-  "opening_caption": "翌日のログイン。約束の工房へ。"
+  "opening_caption": "塔の異変から、少し後。同じ夜の工房街。"
 }

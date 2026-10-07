@@ -31,6 +31,8 @@ def main():
             parts.append(f'<p style="padding:20px 28px 50px;margin:0;text-align:center;line-height:1.9;font-size:18px">{html.escape(ep["opening_caption"])}</p>')
         hashes=[]
         for i,(scene,file) in enumerate(zip(ep['scenes'],files),1):
+            if scene.get('opening_caption'):
+                parts.append(f'<p style="padding:24px 28px;margin:0;text-align:center;line-height:1.9;font-size:18px">{html.escape(scene["opening_caption"])}</p>')
             path=d/file;w,h=dims(path)
             texts=' '.join(f'{p["speaker"]}「{p["text"]}」' for p in scene['panels'] if p['text'])
             sounds=' '.join(sound['text'] for p in scene['panels'] for sound in p.get('sounds',[]))

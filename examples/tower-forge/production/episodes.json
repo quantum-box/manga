@@ -3,7 +3,7 @@
     "number": 1,
     "title": "この剣で、一緒に",
     "revision": "reader_context_2026_10_07",
-    "narrative_panel_count": 68,
+    "narrative_panel_count": 78,
     "scenes": [
       {
         "name": "冒険の外側",
@@ -1392,7 +1392,7 @@
       {
         "name": "一緒に登る約束",
         "location": "試験庭、工房と塔が同じ方向に見える。夕方の暖かな光。",
-        "purpose": "約束を受け止めて終わる。別の事件で喜びを中断しない。",
+        "purpose": "一緒に登る約束を受け止める。前兆は喜びの余韻の後に始める。",
         "panels": [
           {
             "art": "上端右寄せ幅60％、セナの目と優しい小さな笑顔の浅い挿入。カイを画面外左に見てうなずく。うん待ってるの柔らかな発話。背景と輪郭の外側を白へ溶かす。",
@@ -1421,9 +1421,9 @@
             "ui": []
           }
         ],
-        "gap": 0,
+        "gap": 180,
         "ratio": "1:3",
-        "withheld": "停電・新しい事件・イリス・敵・報酬をまだ描かない。",
+        "withheld": "この場面では灯りと喜びを保つ。塔の異変は次の場面から。",
         "id": "18",
         "file": "art/r18-scroll.png",
         "prompt": "Use case: illustration-story. Edit the referenced finished Japanese Webtoon into a smartphone vertical-scroll composition. The reference is the edit target and preserves character identity, costume, sword, exact story and anime linework, NOT the old full-width stacked layout. Recompose and redraw. This is a finished raster comic, with all dialogue, HUD and sound lettering integrated. No HTML-like cards, no page border, no equal rectangular rows. Use the composition below: unequal floating inserts, actual same-row pairs, large borderless art fading into white, and purposeful quiet space. A narrative moment does not require its own full-width box. White gaps belong to the comic's timing; do not fill them with scenery or extra panels. Within a pair read RIGHT then LEFT, then down. Keep short-action pairs close; separate anticipation and quiet reactions. Do not rotate Japanese glyphs.\nPreserve the EXACT adopted utterances, HUD rows and sound words below. True vertical Japanese dialogue, upright black manga glyphs, columns right to left, tails to the actual speaker; thought has dots towards the actual head. Allow glyphs about 5.6 percent of total canvas width, even in narrow inserts; reserve room rather than shrinking letters. HUD is horizontal cyan/navy, only in its owner's view. Sounds are outside balloons, near the drawn source. No dialogue does not prohibit specified HUD or sounds. Do not add other text, captions, panel numbers, arrows or watermark.\nKai: brown hair with right-temple amber streak, amber eyes, ivory rolled sleeves, brown vest, indigo cape, copper cuff on LEFT forearm, bare hands, right-handed, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor, blue tunic and cape, silver/cobalt triangular shield on LEFT arm when specified. ONE steel sword with square brass guard, dark grip and one thin amber inset line. The sword never breaks. Kai made it; Sena tests it before the handover, Kai uses it only after the handover. Modern VR equipment only in the real room. Keep the same courtyard, wooden target, workbench and blue cloth doorway. No added plot, new characters, fire attack, duplicated limbs, black gloves on Kai or later reveals.\n\nCanvas width:height 1:3. Scene 18: 一緒に登る約束. Location: 試験庭、工房と塔が同じ方向に見える。夕方の暖かな光。. Composition takes precedence over the reference's grid: 上端に幅60％の小さなセナの返事。白い余韻を挟み、雲と塔の縦軸から庭に並ぶ二人の背中へ下る、画像下部約70％の一つの枠なしの長い夕景。二つの全幅矩形にしない。\n\nNarrative moment 1, in the specified reading order, not a mandatory full-width panel: 上端右寄せ幅60％、セナの目と優しい小さな笑顔の浅い挿入。カイを画面外左に見てうなずく。うん待ってるの柔らかな発話。背景と輪郭の外側を白へ溶かす。\nDialogue/thought only, speaker セナ, voice 柔らかな声. EXACT text: うん。待ってる。. Vertical columns RIGHT to LEFT: うん。 / 待ってる。.\nSound effects: none. 会話・知覚・反応に集中する静かな区間。\nNo unlisted words or sound effects.\n\nNarrative moment 2, in the specified reading order, not a mandatory full-width panel: 白い間の後、雲と夕空から巨大な塔の縦軸、白石の街、工房の青い布、最後に庭で同じ方向へ並ぶ二人の背中へ下って読む一つの枠なし風景。下のカイの素手の右手に一本の鋼剣、セナの左腕に盾。二人は一度だけ描く。灯りは灯ったまま。カイの小さな決意の言葉は下の彼のそば、冒頭に先出ししない。余韻を残し、停電・敵・次の事件を出さない。\nDialogue/thought only, speaker カイ, voice 小さな声. EXACT text: ……うん。行く。. Vertical columns RIGHT to LEFT: ……うん。 / 行く。.\nSound effects: none. 会話・知覚・反応に集中する静かな区間。\nNo unlisted words or sound effects.\n",
@@ -1432,7 +1432,7 @@
         "executed_game_edits": [
           "production/game-revision/r18-promise.txt"
         ],
-        "gap_purpose": "静かな夕景で閉じる",
+        "gap_purpose": "約束の喜びを受け止めた後に、日常の小さな違和感へ移る",
         "scroll_layout": {
           "composition": "上端に幅60％の小さなセナの返事。白い余韻を挟み、雲と塔の縦軸から庭に並ぶ二人の背中へ下る、画像下部約70％の一つの枠なしの長い夕景。二つの全幅矩形にしない。",
           "read_order": "上から下。同じ段は右から左。",
@@ -1441,13 +1441,323 @@
         "executed_scroll_edits": [
           "production/scroll-revision/r18-scroll.txt"
         ]
+      },
+      {
+        "id": "19",
+        "name": "約束の後の前兆",
+        "location": "同じ試験庭。約束の直後、夕空から薄暮へ。塔はまだ画面外。",
+        "purpose": "安心した直後、周囲の異変を二人の感覚から知る。原因の姿は次のスクロールへ残す。",
+        "panels": [
+          {
+            "art": "上右寄せの幅65％の浅い接写。同じ青い工房布の隣、橙の魔導灯が一瞬だけちらつく。塔も人もまだ描かない。",
+            "speaker": "",
+            "text": "",
+            "columns": [],
+            "voice": "普通の声",
+            "sounds": [
+              {
+                "text": "パチ…",
+                "cause": "灯りの明滅に伴うゲーム内の小さな放電音",
+                "placement": "灯具の横",
+                "design": "小さく細い灰黒の描き文字"
+              }
+            ],
+            "quiet_reason": "",
+            "ui": []
+          },
+          {
+            "art": "離れた中央左の幅60％の浅い枠なし接写。カイの目が振動に気づいて少し見開く。遠くの低い音だけが来る。剣と塔は画面外。",
+            "speaker": "",
+            "text": "",
+            "columns": [],
+            "voice": "普通の声",
+            "sounds": [
+              {
+                "text": "ゴゴ…",
+                "cause": "画面外の塔の駆動部から届く低い振動音",
+                "placement": "目を避けた余白、下へ少し伸ばす",
+                "design": "重く低い灰色の描き文字。次の轟音より控えめ"
+              }
+            ],
+            "quiet_reason": "",
+            "ui": []
+          },
+          {
+            "art": "下端の広い中景。セナが右手で上を指し、隣のカイも顔を上げる。左腕に盾、カイの素手の右手に剣を安全に下ろす。青い布と庭の標的を残し、塔の光環は描かない。。セナは右手で上を指し、左腕の盾は下げて保つ。カイの銅カフは左腕だけ。",
+            "speaker": "セナ",
+            "text": "カイ、上！",
+            "columns": [
+              "カイ、",
+              "上！"
+            ],
+            "voice": "切迫した声",
+            "sounds": [],
+            "quiet_reason": "",
+            "ui": []
+          }
+        ],
+        "ratio": "1:2",
+        "gap": 620,
+        "gap_purpose": "音と上を見る視線を先に届け、塔の大きな姿をスクロール後へ残す",
+        "file": "art/r19-event-hands.png",
+        "withheld": "光環・閉じる門・停電結果・事件の原因は次の場面へ",
+        "scroll_layout": {
+          "composition": "上の灯具、離れた目の接写、下の二人の視線。間に白い空間を残す。三段の均等な箱へしない。",
+          "read_order": "上から下。手掛かり→知覚→次の情報。"
+        },
+        "prompt": "Use case: illustration-story. Create ONE new finished Japanese Webtoon raster strip adjoining the supplied comic. Reference 1 gives the same white stone Gothic tower, medieval city, workshop blue cloth, sunset and the characters' costumes/props. Reference 2 gives Kai's face and functional cyan game HUD. These are identity, environment and painting-style references ONLY, not panel-layout templates. Match the refined full-color anime linework and expressive faces. Kai: young man, tousled dark brown hair with one amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy cape, copper LEFT forearm cuff, bare hands, tool pouch; holds ONE ordinary steel straight prototype sword in his RIGHT hand, square brass guard, black grip, one fine amber blade inset, no flames. Sena: silver-blonde LOW ponytail, blue eyes, silver shoulder and arm armor over blue tunic, navy cape, ONE triangular silver/cobalt shield on LEFT arm; ordinary plain sword sheathed. Kai's sword has already been handed back to him. No extra limbs, no duplicate people or weapons. No gloves on Kai. No new named character, enemy, dragon, reward, chosen-one power or game death trap. The incident is an authored multiplayer game world event independent of Kai's repaired sword. Normal logout remains available. Never draw the sword causing the tower event.\nNative smartphone vertical-scroll comic: unequal floating inserts, actual borderless long scenery, large meaningful negative space. Do NOT make an equal-height grid or fill every white gap. The giant incident gets one continuous full-width image, not a tiled page of action rectangles. Japanese speech is upright VERTICAL manga gothic, columns RIGHT to LEFT; words in white balloons with tails aimed at the named speaker. Glyph height about 5.6 percent of the strip width, readable at 360px. Speech and sound effects are independent. SFX outside balloons by their source, no tails. Game HUD is HORIZONTAL: short exact lines, thin cyan translucent functional rectangle in the player's viewpoint; no gold ornamental plaque or UI dialogue bubble. No unlisted text, captions, speaker labels, numbers, watermarks or duplicate words. All lettering integrated into the raster image. Faces, hands, blade, clues and text must stay readable and separate.\n\nScene 19: 約束の後の前兆. Portrait ratio 1:2. Place: 同じ試験庭。約束の直後、夕空から薄暮へ。塔はまだ画面外。. Purpose: 安心した直後、周囲の異変を二人の感覚から知る。原因の姿は次のスクロールへ残す。.\nComposition: 上の灯具、離れた目の接写、下の二人の視線。間に白い空間を残す。三段の均等な箱へしない。\n\nNarrative moment 1: 上右寄せの幅65％の浅い接写。同じ青い工房布の隣、橙の魔導灯が一瞬だけちらつく。塔も人もまだ描かない。\nDialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.\nSound effect EXACT text: パチ…. Cause: 灯りの明滅に伴うゲーム内の小さな放電音. Placement: 灯具の横. Drawn lettering: 小さく細い灰黒の描き文字. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.\nNo unlisted words or sound effects.\n\nNarrative moment 2: 離れた中央左の幅60％の浅い枠なし接写。カイの目が振動に気づいて少し見開く。遠くの低い音だけが来る。剣と塔は画面外。\nDialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.\nSound effect EXACT text: ゴゴ…. Cause: 画面外の塔の駆動部から届く低い振動音. Placement: 目を避けた余白、下へ少し伸ばす. Drawn lettering: 重く低い灰色の描き文字。次の轟音より控えめ. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.\nNo unlisted words or sound effects.\n\nNarrative moment 3: 下端の広い中景。セナが右手で上を指し、隣のカイも顔を上げる。左腕に盾、カイの素手の右手に剣を安全に下ろす。青い布と庭の標的を残し、塔の光環は描かない。\nDialogue/thought only, speaker セナ, voice 切迫した声. EXACT text: カイ、上！. Vertical columns RIGHT to LEFT: カイ、 / 上！.\nSound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.\nNo unlisted words or sound effects.\n\nWithhold: 光環・閉じる門・停電結果・事件の原因は次の場面へ\n",
+        "prompt_role": "executed_new_incident_scene",
+        "prompt_file": "production/event-revision/r19.txt",
+        "source_file": "art/r19-event.png",
+        "followups": [
+          {
+            "file": "art/r19-event-hands.png",
+            "prompt": "Use case: precise-object-edit. Edit ONLY the lower character section of reference 1, the finished Webtoon premonition strip. Reference 2 is costume/prop continuity only, not another edit target. Preserve the exact composition, all upper lamp/eye art, sunset, Kai and Sena faces, hair, clothes, ONE prototype sword, original Japanese dialogue 「カイ、上！」 and SFX 「パチ…」「ゴゴ…」. Make these specific continuity corrections: Kai holds the sword in his RIGHT bare hand, which is on the viewer's LEFT in this front-facing pose. Remove the copper cuff entirely from that sword-holding RIGHT forearm: show a plain bare wrist beneath his rolled sleeve. Place ONE copper cuff on his LEFT forearm, the relaxed arm on the viewer's RIGHT side of Kai beside his tool pouch. Keep the hand bare, no gloves. Sena points upward with her RIGHT hand, the arm on the viewer's LEFT side of Sena nearer Kai; her LEFT arm remains lowered holding the triangular silver/cobalt shield on the viewer's RIGHT side of Sena. Redraw only her two arm poses and the local shield attachment needed to achieve this; keep two arms, one shield, same gaze up and same shouted words. The pointing right gauntlet must not grow from the left shoulder. No extra limbs, bracelets, words or weapons. All other scene elements unchanged. Original portrait 1:2, native raster art and lettering, no postproduction overlay.",
+            "prompt_file": "production/event-revision/r19-hands.txt",
+            "references": [
+              "episode-01/art/r19-event.png",
+              "episode-01/art/r18-scroll.png"
+            ]
+          }
+        ],
+        "executed_event_edits": [
+          "production/event-revision/r19.txt",
+          "production/event-revision/r19-hands.txt"
+        ]
+      },
+      {
+        "id": "20",
+        "name": "塔が空を揺らす",
+        "location": "同じ庭から見上げる塔と薄暮の街。一回の魔力放出。",
+        "purpose": "穏やかな世界を変える巨大な出来事を、塔と街の尺度で体感する。",
+        "panels": [
+          {
+            "art": "一つの枠なし連続画面。上の暗青の空をほぼ横幅いっぱいの巨大な橙金色の光環が横切る。既存の白石ゴシック塔の上部から光柱が噴き、輪状の魔導設備が過負荷で輝く。石塔は崩壊せず、光が膨れ街へ走る一瞬。塔の縦軸と光の曲線を下へたどると白石の街並み、最下部に庭のカイとセナの小さな背中が一度だけ現れる。カイ右手の普通の鋼剣は下ろしたまま、セナ左腕に盾。服と青い布だけが衝撃の風で揺れる。顔の会話コマ・別の門・説明UI・怪物・剣から出る光を追加しない。上下端は薄い光から白へ自然に溶かす。",
+            "speaker": "",
+            "text": "",
+            "columns": [],
+            "voice": "普通の声",
+            "sounds": [
+              {
+                "text": "ゴオオオ",
+                "cause": "塔の大規模な魔力放出の轟音",
+                "placement": "上から中央の空いた空。塔の形と二人を隠さない",
+                "design": "大胆な長い墨黒の描き文字、細い白縁。文字を光の曲線に沿わせる"
+              }
+            ],
+            "quiet_reason": "",
+            "ui": []
+          }
+        ],
+        "ratio": "1:3",
+        "gap": 100,
+        "gap_purpose": "大きな異変を受け止めてから街への影響を見る",
+        "file": "art/r20-event-hands.png",
+        "withheld": "原因・復旧期限・回収部品・敵はまだ説明しない",
+        "scroll_layout": {
+          "composition": "全長を使う一枚の枠なし風景。空の光環→塔の縦軸→街→小さな二人。枠と文字で分断しない。",
+          "read_order": "上から下。手掛かり→知覚→次の情報。"
+        },
+        "prompt": "Use case: illustration-story. Create ONE new finished Japanese Webtoon raster strip adjoining the supplied comic. Reference 1 gives the same white stone Gothic tower, medieval city, workshop blue cloth, sunset and the characters' costumes/props. Reference 2 gives Kai's face and functional cyan game HUD. These are identity, environment and painting-style references ONLY, not panel-layout templates. Match the refined full-color anime linework and expressive faces. Kai: young man, tousled dark brown hair with one amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy cape, copper LEFT forearm cuff, bare hands, tool pouch; holds ONE ordinary steel straight prototype sword in his RIGHT hand, square brass guard, black grip, one fine amber blade inset, no flames. Sena: silver-blonde LOW ponytail, blue eyes, silver shoulder and arm armor over blue tunic, navy cape, ONE triangular silver/cobalt shield on LEFT arm; ordinary plain sword sheathed. Kai's sword has already been handed back to him. No extra limbs, no duplicate people or weapons. No gloves on Kai. No new named character, enemy, dragon, reward, chosen-one power or game death trap. The incident is an authored multiplayer game world event independent of Kai's repaired sword. Normal logout remains available. Never draw the sword causing the tower event.\nNative smartphone vertical-scroll comic: unequal floating inserts, actual borderless long scenery, large meaningful negative space. Do NOT make an equal-height grid or fill every white gap. The giant incident gets one continuous full-width image, not a tiled page of action rectangles. Japanese speech is upright VERTICAL manga gothic, columns RIGHT to LEFT; words in white balloons with tails aimed at the named speaker. Glyph height about 5.6 percent of the strip width, readable at 360px. Speech and sound effects are independent. SFX outside balloons by their source, no tails. Game HUD is HORIZONTAL: short exact lines, thin cyan translucent functional rectangle in the player's viewpoint; no gold ornamental plaque or UI dialogue bubble. No unlisted text, captions, speaker labels, numbers, watermarks or duplicate words. All lettering integrated into the raster image. Faces, hands, blade, clues and text must stay readable and separate.\n\nScene 20: 塔が空を揺らす. Portrait ratio 1:3. Place: 同じ庭から見上げる塔と薄暮の街。一回の魔力放出。. Purpose: 穏やかな世界を変える巨大な出来事を、塔と街の尺度で体感する。.\nComposition: 全長を使う一枚の枠なし風景。空の光環→塔の縦軸→街→小さな二人。枠と文字で分断しない。\n\nNarrative moment 1: 一つの枠なし連続画面。上の暗青の空をほぼ横幅いっぱいの巨大な橙金色の光環が横切る。既存の白石ゴシック塔の上部から光柱が噴き、輪状の魔導設備が過負荷で輝く。石塔は崩壊せず、光が膨れ街へ走る一瞬。塔の縦軸と光の曲線を下へたどると白石の街並み、最下部に庭のカイとセナの小さな背中が一度だけ現れる。カイ右手の普通の鋼剣は下ろしたまま、セナ左腕に盾。服と青い布だけが衝撃の風で揺れる。顔の会話コマ・別の門・説明UI・怪物・剣から出る光を追加しない。上下端は薄い光から白へ自然に溶かす。\nDialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.\nSound effect EXACT text: ゴオオオ. Cause: 塔の大規模な魔力放出の轟音. Placement: 上から中央の空いた空。塔の形と二人を隠さない. Drawn lettering: 大胆な長い墨黒の描き文字、細い白縁。文字を光の曲線に沿わせる. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.\nNo unlisted words or sound effects.\n\nWithhold: 原因・復旧期限・回収部品・敵はまだ説明しない\n",
+        "prompt_role": "executed_new_incident_scene",
+        "prompt_file": "production/event-revision/r20.txt",
+        "source_file": "art/r20-event.png",
+        "followups": [
+          {
+            "file": "art/r20-event-hands.png",
+            "prompt": "Use case: precise-object-edit. Change ONLY the copper cuff on the sword-holding RIGHT forearm of Kai in the lower part of this finished Japanese Webtoon. Preserve exact words 「ゴオオオ」 and all tower/light-ring scenery. Kai is seen from behind; his RIGHT hand grips the one steel sword on the viewer's RIGHT side of his body. Remove the metal cuff/wristband entirely from this sword-holding right wrist and show bare skin beneath the rolled ivory sleeve. Preserve the ONE copper cuff on his relaxed LEFT forearm, on the viewer's LEFT. No gloves, no extra arm, no replacement jewelry. Leave both hands, fingers, posture, sword, Sena, shield, clothing, backgrounds, colors, camera, all lettering and original portrait aspect ratio unchanged. Do not redesign the image or add text. Native raster edit.",
+            "prompt_file": "production/event-revision/r20-hands.txt",
+            "references": [
+              "episode-01/art/r20-event.png"
+            ]
+          }
+        ],
+        "executed_event_edits": [
+          "production/event-revision/r20.txt",
+          "production/event-revision/r20-hands.txt"
+        ]
+      },
+      {
+        "id": "21",
+        "name": "閉ざされた行き先",
+        "location": "庭から見える東門。その後、同じ工房の扉とカイの視界。薄暮。",
+        "purpose": "明日向かう門が閉じ、剣を作った工房街が停電した。ゲームの区域イベントとして確認する。",
+        "panels": [
+          {
+            "art": "上の幅いっぱいの斜め枠。庭から通りの向こうに見えていた塔の東門の鉄格子が激しく落ちる。門の前の少数の冒険者が立ち止まり見上げる。二人は庭で画面外。誰も潰されず、建物も崩れない。塔の巨大な光はもう収まる。",
+            "speaker": "",
+            "text": "",
+            "columns": [],
+            "voice": "普通の声",
+            "sounds": [
+              {
+                "text": "ガァン",
+                "cause": "東門の鉄格子が石の下枠へ止まる",
+                "placement": "門の接地部を避けた空き",
+                "design": "重い角張った描き文字、白の細縁"
+              }
+            ],
+            "quiet_reason": "",
+            "ui": []
+          },
+          {
+            "art": "中央左寄せの幅65％の静かな接写。前の場面と同じ青い布と真鍮灯。橙の魔導灯が消え、布が暗青になる。遠い主都市の灯りは残る。",
+            "speaker": "",
+            "text": "",
+            "columns": [],
+            "voice": "普通の声",
+            "sounds": [
+              {
+                "text": "フッ",
+                "cause": "魔導灯が消える瞬間のゲーム内の短い音",
+                "placement": "消えた灯具のそば",
+                "design": "小さく柔らかな灰白色、轟音との強弱をつける"
+              }
+            ],
+            "quiet_reason": "",
+            "ui": []
+          },
+          {
+            "art": "下の大きなカイの肩越し。カイは左カフを少し上げ、自動着信した区域通知を見る。右手の剣は下ろしたまま。窓は本人のHUD。顔と剣を避け広く3行。背景に青い布と暗い工房入口。セナは庭で近くにいるが画面外。。銅カフは上げた左腕だけ、右の剣を持つ手首は素肌。",
+            "speaker": "",
+            "text": "",
+            "columns": [],
+            "voice": "普通の声",
+            "sounds": [
+              {
+                "text": "ピン",
+                "cause": "区域イベントの通知が届く電子音",
+                "placement": "HUD左上の空き",
+                "design": "短く小さなシアンの電子音"
+              }
+            ],
+            "quiet_reason": "",
+            "ui": [
+              {
+                "owner": "カイ",
+                "action": "区域のイベント通知を受信して読む。操作で発生させた事件ではない",
+                "placement": "空いた背景を使う大きな窓。手と剣を隠さない",
+                "lines": [
+                  "街区イベント発生",
+                  "工房街・灯炉停止",
+                  "塔東門・一時封鎖"
+                ]
+              }
+            ]
+          }
+        ],
+        "ratio": "1:3",
+        "gap": 210,
+        "gap_purpose": "事実を知った後、カイがどう動くかを待つ",
+        "file": "art/r21-event-hands.png",
+        "withheld": "原因の診断・期限・部品名・解決策は第2話以降へ",
+        "scroll_layout": {
+          "composition": "上の広い門の衝撃、間を置いた小さな消灯、下の広い本人視点HUD。均等な三箱へしない。",
+          "read_order": "上から下。手掛かり→知覚→次の情報。"
+        },
+        "prompt": "Use case: illustration-story. Create ONE new finished Japanese Webtoon raster strip adjoining the supplied comic. Reference 1 gives the same white stone Gothic tower, medieval city, workshop blue cloth, sunset and the characters' costumes/props. Reference 2 gives Kai's face and functional cyan game HUD. These are identity, environment and painting-style references ONLY, not panel-layout templates. Match the refined full-color anime linework and expressive faces. Kai: young man, tousled dark brown hair with one amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy cape, copper LEFT forearm cuff, bare hands, tool pouch; holds ONE ordinary steel straight prototype sword in his RIGHT hand, square brass guard, black grip, one fine amber blade inset, no flames. Sena: silver-blonde LOW ponytail, blue eyes, silver shoulder and arm armor over blue tunic, navy cape, ONE triangular silver/cobalt shield on LEFT arm; ordinary plain sword sheathed. Kai's sword has already been handed back to him. No extra limbs, no duplicate people or weapons. No gloves on Kai. No new named character, enemy, dragon, reward, chosen-one power or game death trap. The incident is an authored multiplayer game world event independent of Kai's repaired sword. Normal logout remains available. Never draw the sword causing the tower event.\nNative smartphone vertical-scroll comic: unequal floating inserts, actual borderless long scenery, large meaningful negative space. Do NOT make an equal-height grid or fill every white gap. The giant incident gets one continuous full-width image, not a tiled page of action rectangles. Japanese speech is upright VERTICAL manga gothic, columns RIGHT to LEFT; words in white balloons with tails aimed at the named speaker. Glyph height about 5.6 percent of the strip width, readable at 360px. Speech and sound effects are independent. SFX outside balloons by their source, no tails. Game HUD is HORIZONTAL: short exact lines, thin cyan translucent functional rectangle in the player's viewpoint; no gold ornamental plaque or UI dialogue bubble. No unlisted text, captions, speaker labels, numbers, watermarks or duplicate words. All lettering integrated into the raster image. Faces, hands, blade, clues and text must stay readable and separate.\n\nScene 21: 閉ざされた行き先. Portrait ratio 1:3. Place: 庭から見える東門。その後、同じ工房の扉とカイの視界。薄暮。. Purpose: 明日向かう門が閉じ、剣を作った工房街が停電した。ゲームの区域イベントとして確認する。.\nComposition: 上の広い門の衝撃、間を置いた小さな消灯、下の広い本人視点HUD。均等な三箱へしない。\n\nNarrative moment 1: 上の幅いっぱいの斜め枠。庭から通りの向こうに見えていた塔の東門の鉄格子が激しく落ちる。門の前の少数の冒険者が立ち止まり見上げる。二人は庭で画面外。誰も潰されず、建物も崩れない。塔の巨大な光はもう収まる。\nDialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.\nSound effect EXACT text: ガァン. Cause: 東門の鉄格子が石の下枠へ止まる. Placement: 門の接地部を避けた空き. Drawn lettering: 重い角張った描き文字、白の細縁. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.\nNo unlisted words or sound effects.\n\nNarrative moment 2: 中央左寄せの幅65％の静かな接写。前の場面と同じ青い布と真鍮灯。橙の魔導灯が消え、布が暗青になる。遠い主都市の灯りは残る。\nDialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.\nSound effect EXACT text: フッ. Cause: 魔導灯が消える瞬間のゲーム内の短い音. Placement: 消えた灯具のそば. Drawn lettering: 小さく柔らかな灰白色、轟音との強弱をつける. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.\nNo unlisted words or sound effects.\n\nNarrative moment 3: 下の大きなカイの肩越し。カイは左カフを少し上げ、自動着信した区域通知を見る。右手の剣は下ろしたまま。窓は本人のHUD。顔と剣を避け広く3行。背景に青い布と暗い工房入口。セナは庭で近くにいるが画面外。\nDialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.\nPlayer interface, visible to カイ in their own view. Action: 区域のイベント通知を受信して読む。操作で発生させた事件ではない. Placement: 空いた背景を使う大きな窓。手と剣を隠さない. EXACT horizontal rows top to bottom: 街区イベント発生 | 工房街・灯炉停止 | 塔東門・一時封鎖. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.\nSound effect EXACT text: ピン. Cause: 区域イベントの通知が届く電子音. Placement: HUD左上の空き. Drawn lettering: 短く小さなシアンの電子音. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.\nNo unlisted words or sound effects.\n\nWithhold: 原因の診断・期限・部品名・解決策は第2話以降へ\n",
+        "prompt_role": "executed_new_incident_scene",
+        "prompt_file": "production/event-revision/r21.txt",
+        "source_file": "art/r21-event.png",
+        "followups": [
+          {
+            "file": "art/r21-event-hands.png",
+            "prompt": "Use case: precise-object-edit. Edit ONLY Kai's right wrist in the bottom panel of this finished Japanese Webtoon. Preserve the entire gate scene, extinguished lamp, all SFX 「ガァン」「フッ」「ピン」, exact HUD rows 「街区イベント発生」「工房街・灯炉停止」「塔東門・一時封鎖」, all faces/hair/costume, camera, panel shapes, sunset/night colors and sword. The lower bare hand gripping the ONE sword is Kai's RIGHT hand. Remove ONLY the copper cuff from this sword-holding RIGHT wrist and replace it with ordinary bare skin under the rolled ivory sleeve. Preserve the SINGLE copper cuff on Kai's raised LEFT forearm nearest the HUD. One left cuff total; no right cuff, no gloves, no extra hands. Do not move, shorten, replace or ignite the sword. Do not change any lettering. Keep original portrait 1:3 dimensions/composition and native integrated raster finish.",
+            "prompt_file": "production/event-revision/r21-hands.txt",
+            "references": [
+              "episode-01/art/r21-event.png"
+            ]
+          }
+        ],
+        "executed_event_edits": [
+          "production/event-revision/r21.txt",
+          "production/event-revision/r21-hands.txt"
+        ]
+      },
+      {
+        "id": "22",
+        "name": "工房へ戻る",
+        "location": "同じ庭から青い布の工房入口へ。日没後の暗い街区。",
+        "purpose": "カイは明日の冒険を奪う問題を見過ごさず、自分で確かめに戻る。修理の成功は約束しない。",
+        "panels": [
+          {
+            "art": "上右寄せ幅60％、セナの顔の静かな接写。光の収まった暗い空、カイは画面外左。聞く表情で問いかける。",
+            "speaker": "セナ",
+            "text": "どうする？",
+            "columns": [
+              "どうする？"
+            ],
+            "voice": "普通の声",
+            "sounds": [],
+            "quiet_reason": "",
+            "ui": []
+          },
+          {
+            "art": "広い白い無音の間の後、中央左の小さな接写。カイの目が驚きから考える表情へ変わり、灯りの消えた工房へ視線を動かす。HUDは閉じ、能力の覚醒や謎の数値を描かない。",
+            "speaker": "",
+            "text": "",
+            "columns": [],
+            "voice": "普通の声",
+            "sounds": [],
+            "quiet_reason": "驚きを受け止め、自分で行動を選ぶ時間。",
+            "ui": []
+          },
+          {
+            "art": "下の大きな枠なし中景。カイが一歩踏み出し、庭から同じ青い布の工房へ向き直る。一本の剣を素手の右手で安全に低く持つ。セナが隣で左腕の盾を保ちついて行く。遠い中央都市は灯るが、この扉の魔導灯は消えている。カイの決意は彼のそばの大きな縦の白い吹き出しに置く。工房の中はまだ見せない。",
+            "speaker": "カイ",
+            "text": "工房に戻ろう。",
+            "columns": [
+              "工房に",
+              "戻ろう。"
+            ],
+            "voice": "普通の声",
+            "sounds": [
+              {
+                "text": "コツ",
+                "cause": "カイが工房へ最初の一歩を踏み出す",
+                "placement": "石畳の足元",
+                "design": "小さく硬い灰黒の描き文字"
+              }
+            ],
+            "quiet_reason": "",
+            "ui": []
+          }
+        ],
+        "ratio": "1:2",
+        "gap": 0,
+        "gap_purpose": "第2話で同じ夜の工房へつなぐ",
+        "file": "art/r22-event-hands.png",
+        "withheld": "オルンの診断・イリス・依頼と報酬をまだ描かない",
+        "scroll_layout": {
+          "composition": "小さな問い→白い無音の間→目の判断→大きな枠なしの一歩。決断と場所の接続を最後へ残す。",
+          "read_order": "上から下。手掛かり→知覚→次の情報。"
+        },
+        "prompt": "Use case: illustration-story. Create ONE new finished Japanese Webtoon raster strip adjoining the supplied comic. Reference 1 gives the same white stone Gothic tower, medieval city, workshop blue cloth, sunset and the characters' costumes/props. Reference 2 gives Kai's face and functional cyan game HUD. These are identity, environment and painting-style references ONLY, not panel-layout templates. Match the refined full-color anime linework and expressive faces. Kai: young man, tousled dark brown hair with one amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy cape, copper LEFT forearm cuff, bare hands, tool pouch; holds ONE ordinary steel straight prototype sword in his RIGHT hand, square brass guard, black grip, one fine amber blade inset, no flames. Sena: silver-blonde LOW ponytail, blue eyes, silver shoulder and arm armor over blue tunic, navy cape, ONE triangular silver/cobalt shield on LEFT arm; ordinary plain sword sheathed. Kai's sword has already been handed back to him. No extra limbs, no duplicate people or weapons. No gloves on Kai. No new named character, enemy, dragon, reward, chosen-one power or game death trap. The incident is an authored multiplayer game world event independent of Kai's repaired sword. Normal logout remains available. Never draw the sword causing the tower event.\nNative smartphone vertical-scroll comic: unequal floating inserts, actual borderless long scenery, large meaningful negative space. Do NOT make an equal-height grid or fill every white gap. The giant incident gets one continuous full-width image, not a tiled page of action rectangles. Japanese speech is upright VERTICAL manga gothic, columns RIGHT to LEFT; words in white balloons with tails aimed at the named speaker. Glyph height about 5.6 percent of the strip width, readable at 360px. Speech and sound effects are independent. SFX outside balloons by their source, no tails. Game HUD is HORIZONTAL: short exact lines, thin cyan translucent functional rectangle in the player's viewpoint; no gold ornamental plaque or UI dialogue bubble. No unlisted text, captions, speaker labels, numbers, watermarks or duplicate words. All lettering integrated into the raster image. Faces, hands, blade, clues and text must stay readable and separate.\n\nScene 22: 工房へ戻る. Portrait ratio 1:2. Place: 同じ庭から青い布の工房入口へ。日没後の暗い街区。. Purpose: カイは明日の冒険を奪う問題を見過ごさず、自分で確かめに戻る。修理の成功は約束しない。.\nComposition: 小さな問い→白い無音の間→目の判断→大きな枠なしの一歩。決断と場所の接続を最後へ残す。\n\nNarrative moment 1: 上右寄せ幅60％、セナの顔の静かな接写。光の収まった暗い空、カイは画面外左。聞く表情で問いかける。\nDialogue/thought only, speaker セナ, voice 普通の声. EXACT text: どうする？. Vertical columns RIGHT to LEFT: どうする？.\nSound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.\nNo unlisted words or sound effects.\n\nNarrative moment 2: 広い白い無音の間の後、中央左の小さな接写。カイの目が驚きから考える表情へ変わり、灯りの消えた工房へ視線を動かす。HUDは閉じ、能力の覚醒や謎の数値を描かない。\nDialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.\nSound effects: none. 驚きを受け止め、自分で行動を選ぶ時間。\nNo unlisted words or sound effects.\n\nNarrative moment 3: 下の大きな枠なし中景。カイが一歩踏み出し、庭から同じ青い布の工房へ向き直る。一本の剣を素手の右手で安全に低く持つ。セナが隣で左腕の盾を保ちついて行く。遠い中央都市は灯るが、この扉の魔導灯は消えている。カイの決意は彼のそばの大きな縦の白い吹き出しに置く。工房の中はまだ見せない。\nDialogue/thought only, speaker カイ, voice 普通の声. EXACT text: 工房に戻ろう。. Vertical columns RIGHT to LEFT: 工房に / 戻ろう。.\nSound effect EXACT text: コツ. Cause: カイが工房へ最初の一歩を踏み出す. Placement: 石畳の足元. Drawn lettering: 小さく硬い灰黒の描き文字. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.\nNo unlisted words or sound effects.\n\nWithhold: オルンの診断・イリス・依頼と報酬をまだ描かない\n",
+        "prompt_role": "executed_new_incident_scene",
+        "prompt_file": "production/event-revision/r22.txt",
+        "source_file": "art/r22-event.png",
+        "followups": [
+          {
+            "file": "art/r22-event-hands.png",
+            "prompt": "Use case: precise-object-edit. Change ONLY the copper cuff on the sword-holding RIGHT forearm of Kai in the lower part of this finished Japanese Webtoon. Preserve exact words 「どうする？」「工房に戻ろう。」 and 「コツ」 and all panel composition, expressions and extinguished workshop lamp. Kai is seen from behind; his RIGHT hand grips the one steel sword on the viewer's RIGHT side of his body. Remove the metal cuff/wristband entirely from this sword-holding right wrist and show bare skin beneath the rolled ivory sleeve. Preserve the ONE copper cuff on his relaxed LEFT forearm, on the viewer's LEFT. No gloves, no extra arm, no replacement jewelry. Leave both hands, fingers, posture, sword, Sena, shield, clothing, backgrounds, colors, camera, all lettering and original portrait aspect ratio unchanged. Do not redesign the image or add text. Native raster edit.",
+            "prompt_file": "production/event-revision/r22-hands.txt",
+            "references": [
+              "episode-01/art/r22-event.png"
+            ]
+          }
+        ],
+        "executed_event_edits": [
+          "production/event-revision/r22.txt",
+          "production/event-revision/r22-hands.txt"
+        ]
       }
     ],
     "cover_scene": 2,
     "sound_revision": "dialogue_and_sfx_independent_2026_10_07",
-    "sound_cue_count": 18,
+    "sound_cue_count": 25,
     "game_revision": "game_actions_and_sword_identity_2026_10_07",
-    "scroll_revision": "scroll_composition_2026_10_07"
+    "scroll_revision": "scroll_composition_2026_10_07",
+    "event_revision": "tower_incident_2026_10_07"
   },
   {
     "number": 2,
@@ -1455,7 +1765,7 @@
     "scenes": [
       {
         "name": "工房街の夜",
-        "location": "翌日のログイン、工房へ向かう同じ街路。灯りの消えた夜",
+        "location": "塔の異変から少し後、同じ夜の工房街。カイとセナが戻る街路",
         "panels": [
           {
             "art": "長い全景。三角屋根の工房街、魔導灯は暗く、主都市の遠い明かりだけ残る。カイとセナが見回す。",
@@ -1608,7 +1918,7 @@
       },
       {
         "name": "最初の遠征",
-        "location": "街の塔の入口、翌ログイン。昼",
+        "location": "翌日のログイン。工房街側の旧水路保守入口、昼",
         "panels": [
           {
             "art": "手の二小コマを右から左。回収袋→二本の回復薬を腰に固定。物の数を増やさない。",
@@ -1638,7 +1948,7 @@
             "voice": "普通の声"
           },
           {
-            "art": "長い枠なし。三人の後ろ姿、巨大な塔の足元の門へ歩く。門は開いている。",
+            "art": "長い枠なし。三人の後ろ姿、工房街側の運河にある旧水路の小さな保守入口へ歩く。保守口は開いている。塔は遠景に見えるが、封鎖された東門は開かない。カイは素手、銅カフは左腕だけ。",
             "speaker": "カイ",
             "text": "……わかった。",
             "columns": [
@@ -1650,11 +1960,16 @@
         "gap": 0,
         "withheld": "未登場の敵・後の報酬を描かない",
         "id": "04",
-        "file": "art/04.png",
-        "prompt": "Use case: illustration-story. Finished full-color Japanese smartphone vertical-scroll Webtoon. ONE portrait illustration around 1024x2048 or 1024x2304, with four deliberately UNEQUAL panels or beats ordered from top to bottom. Reference image establishes character identity, clothes, tools, palette, anime style ONLY; do not copy the reference sheet's layout, labels, portraits, parchment backdrop, or bring every character into every panel. Clean detailed anime linework, readable expressive faces, controlled cel shading, grounded high fantasy, warm natural metals, white page gutters. Medieval sword and magic VRMMORPG; actual world scenery looks like a fantasy adventure, only small HUDs imply gameplay. No futuristic city.\nDraw exact Japanese speech as part of the raster artwork. Genuine vertical lettering with upright characters, top-to-bottom within a column, columns RIGHT TO LEFT. Clean printed Japanese manga gothic, near 60px glyph height on a 1024px-wide original, readable at 360px display width; never shrink long dialogue. Each utterance below gives columns in right-to-left order, with / only as a separator in this instruction, never printed. Normal speech: slender oval or rounded tall bubble, tail to speaker. Quiet speech: softly irregular thin outline with tail. Shouts: bold spiky bubble and clear pointed tail. Thoughts: cloud-like shape with dots toward the thinker, no speech tail. HUD is translucent cyan, compact horizontal Japanese is allowed for HUD, not ornamental gold panel. Sound effects are material-appropriate drawn text and may be horizontal. Never duplicate an utterance, add extra visible writing, translate Japanese, show speaker labels, or overlay unnecessary HUD.\nPanel layout: shallow establishing/context panel when appropriate, staggered medium conversation or action, narrow object/eye insert, larger lower reaction or result. Use unequal heights and widths, some borderless long scenery; action may have slanted frame borders but keep the lettering upright. Small panels show ONLY close-up subjects, not tiny whole bodies. Dialogue must not cover faces, hands, sword, shield, or clue. Keep clear right-to-left order inside any same-row split. Use varied camera distances for understanding, no uniform four-box grid. Use a white bottom edge/gutter. Characters remain in the same location even if offscreen. Keep actions causal and exact prop state.\nKai: dark-brown short hair, one amber streak at his right temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short indigo cape, dark trousers, leather boots, copper cuff left forearm, steel one-handed sword in right hand with square brass guard and one thin orange fuller inset; not a lightsaber. After episode 5 sword has small copper cooling plate beside guard. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over deep blue tunic, navy cape, one triangular silver shield with cobalt line in left hand, straight steel sword on belt when not specified. Iris: plum bob hair, green eyes, teal hood-down cloak, ivory tunic, wooden staff with ONE amber crystal and copper ring. Do not swap their colors, genders, or props. Orun: older male NPC smith with short gray beard and brown apron. Vane: male player, tied-back ash-gray hair, silver armor, white cape. Never introduce unmentioned characters, duplicate hands/limbs/props or show a future reveal early. No watermark.\nEpisode 2, strip 4, scene: 最初の遠征. Location continuity: 街の塔の入口、翌ログイン。昼.\nBEAT 1 top-to-bottom. Artwork/camera/focus: 手の二小コマを右から左。回収袋→二本の回復薬を腰に固定。物の数を増やさない。\nSilent beat: no speech bubble, no extra text.\nBEAT 2 top-to-bottom. Artwork/camera/focus: 中コマ。カイが自分の鋼の魔導剣を鞘へ。修理を頼まれた予備剣は街へ残した。\nExactly one utterance by カイ; voice/shape: 普通の声. Exact text: 俺の剣で行く。. Vertical columns RIGHT to LEFT: 俺の剣で / 行く。\nBEAT 3 top-to-bottom. Artwork/camera/focus: 小さなセナの顔、期待と少しの緊張。\nExactly one utterance by セナ; voice/shape: 普通の声. Exact text: 無理は、言ってね。. Vertical columns RIGHT to LEFT: 無理は、 / 言ってね。\nBEAT 4 top-to-bottom. Artwork/camera/focus: 長い枠なし。三人の後ろ姿、巨大な塔の足元の門へ歩く。門は開いている。\nExactly one utterance by カイ; voice/shape: 普通の声. Exact text: ……わかった。. Vertical columns RIGHT to LEFT: ……わかった。\nWithheld information: 未登場の敵・後の報酬を描かない"
+        "file": "art/r04-route.png",
+        "prompt": "Use case: precise-object-edit. Edit this finished Episode 2 Japanese Webtoon to correct the expedition route and Kai's costume continuity. Preserve the exact existing four narrative beats, faces, hair, equipment, bag, TWO red potions, Sena's left-arm silver/cobalt shield and Iris's plum bob/teal cloak/ONE amber staff crystal. Keep ALL existing Japanese utterances unchanged and vertically lettered: 「俺の剣で行く。」「無理は、言ってね。」「……わかった。」. Morning daylight is correct: this departure is the NEXT DAY after the blackout and party preparations. The contextual time/place caption will be in the reader outside the image; do NOT add visible location labels to the raster. In the bottom wide departure scene ONLY, replace the huge open main tower gate destination with a modest OPEN stone maintenance doorway beside a blue-green canal on the workshop side of the city. The three characters walk toward this low maintenance doorway and downward stone stairs; the tall white tower remains distant in the background with no visible reopened east gate. Keep it medieval masonry/copper pipe fantasy scenery, no futuristic door, no tunnel monsters, no new people or event. This is the city-side service access to the OLD WATERWAY; the sealed tower east gate remains closed elsewhere. Also replace Kai's black gloves with bare hands in every panel, preserving each finger's grip. Keep ONLY ONE copper cuff, on his anatomical LEFT forearm; his RIGHT sword hand/wrist has bare skin and no metal bracelet. The sword is the SAME ordinary steel prototype, square brass guard, dark leather grip and one fine amber line, not a fire blade. Preserve the existing sheath action in the middle and one sheathed sword in the final walking shot. No duplicate sword, limbs, cuff, text or props. Keep original unequal four-beat layout and portrait 1:2 ratio. Native integrated raster art and lettering; edit only route and Kai's hand/cuff consistency.",
+        "opening_caption": "翌日のログイン。工房街側の旧水路保守入口。",
+        "prompt_role": "executed_route_and_hand_continuity_edit",
+        "executed_event_edits": [
+          "production/event-revision/episode-02-route.txt"
+        ]
       }
     ],
-    "opening_caption": "翌日のログイン。約束の工房へ。"
+    "opening_caption": "塔の異変から、少し後。同じ夜の工房街。"
   },
   {
     "number": 3,

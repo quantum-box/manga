@@ -11,6 +11,9 @@ FOLDER=ROOT/'production/scroll-revision'
 def write(path,data):path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 
 def main():
+    current=json.loads((ROOT/'episode-01/episode.json').read_text())
+    if current.get('event_revision'):
+        raise SystemExit('Tower incident already adopted; do not replace it with an older scroll plan.')
     ep=json.loads((FOLDER/'episode.json').read_text())
     manifest=json.loads((FOLDER/'manifest.json').read_text())
     records={x['file']:x for x in json.loads((ROOT/'production/revision-provenance.json').read_text())}
