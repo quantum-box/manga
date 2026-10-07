@@ -337,6 +337,8 @@ struct ReaderView: View {
                     })
                         .id("\(episode.id)-\(reloadID)")
                         .accessibilityIdentifier("webtoon-reader")
+                        // Extend only the manga; controls retain the device safe area.
+                        .ignoresSafeArea(.container, edges: [.top, .bottom])
                     if loadState == .loading {
                         ProgressView("漫画を読み込み中…")
                             .padding(24)
@@ -395,7 +397,6 @@ struct ReaderView: View {
         .toolbar(.hidden, for: .navigationBar)
         .toolbar(.hidden, for: .tabBar)
         .statusBarHidden(true)
-        .ignoresSafeArea(.container, edges: [.top, .bottom])
         .overlay(alignment: .top) {
             HStack {
                 Button { dismiss() } label: {
