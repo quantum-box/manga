@@ -1,6 +1,6 @@
 {
   "localVerification": "passed",
-  "checkedAt": "2026-10-06T18:49:50.142252+00:00",
+  "checkedAt": "2026-10-07T02:15:10.988597+00:00",
   "completedArtEpisodes": [
     1,
     2,
@@ -13,7 +13,7 @@
     9,
     10
   ],
-  "selectedScenes": 80,
+  "selectedScenes": 104,
   "phoneViewports": [
     {
       "width": 390,
@@ -24,7 +24,7 @@
       "height": 800
     }
   ],
-  "manualReview": "All selected dialogue, speakers, chronology, tools, crops and quantified props read at both widths. Hashes bound to each episode validation.",
+  "manualReview": "Episode1 long-scroll revision: 32 selected artworks read at390/360; dialogue, sounds, root/drain/cover/washing/meal chronology and withheld release verified. Episodes2–10 unchanged from the previously reviewed adoption.",
   "pythonTests": {
     "command": "python3 -m unittest discover -s scripts -p 'test_*.py'",
     "count": 11,
@@ -49,18 +49,44 @@
   "originalArtworkChecks": {
     "result": "passed",
     "checks": [
-      "80 original PNGs byte-identical in standalone readers and iOS resources",
-      "Prompt files equal recorded actual prompts",
-      "Reference file SHA-256 and original/adopted SHA-256 intact",
-      "Eight selected art files per episode, no unselected art referenced by readers",
-      "Canonical dialogue and scene order match scripts",
-      "Local chapter links resolve",
-      "Roadmap intervals cover 1–240 without gaps or overlaps",
-      "Fictional yield and contribution-margin calculations consistent"
+      "104 original PNGs byte-identical in iOS resources; 32 browser-restored compact PNG hashes match episode1 originals",
+      "150 actual prompt/ref records verified; prompt files equal recorded prompts; reference SHA-256 intact",
+      "32 selected art files in episode1 and8 each in episodes2–10; no unselected art referenced",
+      "Canonical dialogue, physical sound fields and scene order match scripts",
+      "Source and standalone episode1 readers have identical32-image geometry at390 and360",
+      "Roadmap intervals and fictional yield/contribution calculations unchanged from prior passed audit"
     ]
   },
   "ciSource": "https://github.com/quantum-box/manga/pull/27",
   "physicalDeviceReview": "not performed",
   "publicServerPublishing": "not performed",
-  "remainingScope": "Episodes 11–240 are a series roadmap, not finished art."
+  "remainingScope": "Episodes 11–240 are a series roadmap, not finished art.",
+  "compactTransportTests": {
+    "command": "python3 -m unittest discover -s examples/tower-farm-kitchen/production -p 'test_*.py'",
+    "count": 3,
+    "result": "passed"
+  },
+  "episode01Revision": {
+    "selectedScenes": 32,
+    "newNativeArtworks": 24,
+    "recordedSounds": 25,
+    "phoneViewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 32096,
+        "screens": 38.03,
+        "cueToRelease": 936.59
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "scrollHeight": 29667,
+        "screens": 37.08,
+        "cueToRelease": 864.55
+      }
+    ],
+    "review": "passed_manual_both_widths",
+    "physicalDevice": "not performed"
+  }
 }

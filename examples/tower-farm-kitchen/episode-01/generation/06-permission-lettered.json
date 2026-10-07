@@ -8,7 +8,8 @@
   "height": 1774,
   "prompt_file": "generation/06-permission-lettered.prompt.txt",
   "prompt": "Use case: precise-object-edit. The Japanese dialogue in this existing finished vertical comic is TOO SMALL at a 360px phone width. Edit ONLY the speech lettering and the necessary speech balloon shapes/white areas. Increase EVERY Japanese dialogue glyph to about 1.7 TIMES its current height and width. The resulting glyph height must be approximately 7 percent of the full image width, including the small lower-panel dialogue. Make balloons wider/taller as needed, reorganize vertical column breaks to fit; do NOT solve by making the lettering small again. Keep ALL exact text and speakers, upright vertical top-to-bottom Japanese, columns right-to-left. Exact text in order: コウ『この出口、誰が管理してる？』 / エルナ『店の区画は、私が掃除する決まり。』 / コウ『開けてもいい？』 / エルナ『うん。お願い。』. Natural columns for Elna's long line from right to left: 店の区画は、 / 私が掃除する / 決まり。 Keep all panel boundaries, characters, faces, expressions, hands, poses, clothing, background, wooden cover, drain and water completely unchanged except tiny background areas replaced by enlarged white balloons. Preserve correct balloon tails. Do not cover faces or hands. Strong crisp readable printed manga Gothic, generous inset. No added people, words or balloons.\n",
-  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
-  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
-  "review": "Selected output reviewed in complete episode after lettering repairs"
+  "text_review": "passed_manual_390_and_360",
+  "continuity_review": "passed_manual_390_and_360",
+  "review": "Selected output reviewed in complete episode after lettering repairs",
+  "selected_in_revision": "episode-01-long-scroll"
 }

@@ -22,9 +22,10 @@ def columns(text):
     return [text[i:i+7] for i in range(0, len(text), 7)]
 
 def prompt_for(episode, scene):
-    ident, description, dialogue, layout, pause = scene
+    ident, description, dialogue, layout, pause = scene[:5]
+    options = scene[5] if len(scene) > 5 else {}
     positive = re.sub(r'not (Kou|Elna|Balt|Iris|Leon)', '', description)
-    speakers = {'コウ':'Kou','コウ心':'Kou','エルナ':'Elna','バルト':'Balt','イリス':'Iris','レオン':'Leon'}
+    speakers = {'コウ':'Kou','コウ心':'Kou','コウ・心':'Kou','エルナ':'Elna','バルト':'Balt','イリス':'Iris','レオン':'Leon'}
     voiced = {speakers.get(speaker) for speaker,line in dialogue}
     cast = [name for name in ('Kou','Elna','Balt','Iris','Leon') if name in voiced or re.search(r'\b'+name+r'\b',positive)]
     absent = [name for name in ('Kou','Elna','Balt','Iris','Leon') if name not in cast]
@@ -40,6 +41,10 @@ def prompt_for(episode, scene):
         else:
             parts.append(f'Speaker {speaker} ({voice}). Exact full text: {line}\nVertical columns from RIGHT to LEFT: ' + ' / '.join(columns(line)))
     parts.append('Do not depict any event outside this scene. Prior and future events are continuity constraints only, not additional panels.')
+    for sound in options.get('soundEffects', []):
+        parts.append(f'Exact sound effect: {sound["text"]}. Physical source: {sound["source"]}. Placement and drawn style: {sound["placement"]}. No speech balloon or speaker tail. Keep hands, faces and spoken text visible.')
+    if not dialogue:
+        parts.append('No dialogue or thought balloons. Render the specified sound effects only; a scene without dialogue is not automatically soundless.')
     return '\n\n'.join(parts)
 
 def prepare():
@@ -62,7 +67,8 @@ def prepare():
                    '参照は人物の同一性・衣装と場所・絵柄用。参照画の配置は引き継がない。', '']
         manifest = []
         for index, scene in enumerate(ep['scenes'], 1):
-            ident, desc, dialogue, layout, pause = scene
+            ident, desc, dialogue, layout, pause = scene[:5]
+            options = scene[5] if len(scene) > 5 else {}
             prior_scene = previous_by_slug.get(ident, {})
             name = prior_scene.get('id', f'{index:02d}-{ident}')
             prompt = prompt_for(ep, scene)
@@ -81,8 +87,12 @@ def prepare():
             storyboard += ['', '原画採用・日本語・顔・手・道具・前後の状態・両スマホ幅の確認は `validation.json` と生成記録へ残す。', '']
             if prior_scene.get('narration'):
                 storyboard += ['画像内の時刻表示：'+'、'.join(prior_scene['narration']), '']
+            if options:
+                storyboard += [f'表示幅：{options.get("canvasWidthPercent", 100)}%、位置：{options.get("alignment", "center")}。',
+                    'スクロールの役割：'+options.get('scrollPurpose', ''),
+                    '効果音：'+' / '.join(f'{s["text"]}（{s["source"]}）' for s in options.get('soundEffects', [])), '']
             prompts += [f'## {name}', '', '```text', prompt, '```', '']
-            manifest.append({**prior_scene,'id':name,'art':adopted.get(name,f'art/{name}.png'),'dialogue':dialogue,'layout':layout,
+            manifest.append({**prior_scene,**options,'id':name,'art':adopted.get(name,f'art/{name}.png'),'dialogue':dialogue,'layout':layout,
                 'pauseAt390':pause,'prompt':f'generation/{name}.prompt.txt','description':desc})
         primary_prompts = {s['prompt'] for s in manifest}
         for record_file in sorted((directory/'generation').glob('*.json')):
@@ -124,8 +134,12 @@ def package(number):
         alt=scene['description']+' '+' '.join(f'{speaker}「{line}」' for speaker,line in scene['dialogue'])
         if scene.get('narration'):
             alt+=' 時刻表示：'+'、'.join(scene['narration'])
-        scenes.append(f'<figure class="scene {scene["layout"]}" id="{scene["id"]}" style="--pause:{scene["pauseAt390"]/390*100:.2f}cqw"><img src="{scene["art"]}" width="{width}" height="{height}" alt="{html.escape(alt,quote=True)}"></figure>')
+        alt+=' '+' '.join(f'効果音「{s["text"]}」：{s["source"]}' for s in scene.get('soundEffects', []))
+        display_width=scene.get('canvasWidthPercent',100)
+        alignment=scene.get('alignment','center')
+        scenes.append(f'<figure class="scene {scene["layout"]} align-{alignment}" id="{scene["id"]}" style="--scene-width:{display_width}%;--pause:{scene["pauseAt390"]/390*100:.2f}cqw"><img src="{scene["art"]}" width="{width}" height="{height}" alt="{html.escape(alt,quote=True)}"></figure>')
     css='''*{box-sizing:border-box}html{background:#e9e2d6;color:#312d26;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif}body{margin:0}main{max-width:720px;margin:auto;background:#fffaf0;container-type:inline-size}header{padding:80px 24px 70px;text-align:center}header h1{font-size:clamp(25px,7cqw,42px);line-height:1.5;margin:14px 0}header p{font-size:18px;line-height:1.7}.series-title{font-size:16px;color:#62684b}figure{margin:0 0 var(--pause);padding:0}figure img{display:block;width:100%;height:auto}footer{text-align:center;padding:60px 24px 80px;font-size:18px;line-height:2}a{color:#3a5d41}nav{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}small{display:block;font-size:15px;color:#6f705d}'''
+    css+='figure{width:var(--scene-width,100%)}.align-center{margin-left:auto;margin-right:auto}.align-right{margin-left:auto;margin-right:0}.align-left{margin-left:0;margin-right:auto}'
     (directory/'reader.css').write_text(css+'\n')
     prev=f'<a href="../episode-{number-1:02d}/index.html">前の話</a>' if number>1 else ''
     nxt=f'<a href="../episode-{number+1:02d}/index.html">次の話</a>' if number<10 else ''
@@ -136,6 +150,9 @@ def package(number):
     (directory/'index.html').write_text(doc)
     (directory/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     subprocess.run([sys.executable,str(ROOT/'skills/webtoon/scripts/package_reader.py'),str(directory/'index.html'),'--output',str(directory/'reader.html'),'--force'],check=True)
+    if (directory/'reader.html').stat().st_size >= 100*1024*1024:
+        from compact_reader import compact
+        compact(directory/'reader.html')
     (directory/'README.md').write_text(f'# 第{number}話：{ep["title"]}\n\n[読む](index.html) / [単独リーダー](reader.html) / [絵コンテ](storyboard.md) / [生成指示](PROMPTS.md)\n\n原画、吹き出し、日本語の縦書き会話を組み込みimage_genで一体生成。確認範囲と未確認事項は[validation.json](validation.json)へ記録。\n')
     print(f'Packaged episode {number}')
 

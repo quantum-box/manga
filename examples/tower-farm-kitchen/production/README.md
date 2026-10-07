@@ -10,6 +10,8 @@
 
 描画スクリプトには Playwright とブラウザーが必要。既存の実行環境を使い、`WEBTOON_PLAYWRIGHT_MODULE` でモジュールのパス、`WEBTOON_CHROME` でブラウザー実行ファイルを指定できる。macOSの標準Chromeがある場合は自動で使う。描画をやり直すと目視確認は未確認に戻る。HTMLの文字サイズ測定は原画内の縦書き文字の判定には使えない。
 
-原画を更新したら必ず該当話の両幅で再確認する。採用外の画像は、記録された修正に必要な参照原画だけを `generation/inputs` へ置き、各生成記録の相対参照も更新する。別の公開版や旧リーダーを残さない。リーダーの画像は各話の `manifest.json` に並ぶ八枚だけ。
+原画を更新したら必ず該当話の両幅で再確認する。採用外の画像は、記録された修正に必要な参照原画だけを `generation/inputs` へ置き、各生成記録の相対参照も更新する。別の公開版や旧リーダーを残さない。リーダーの画像は各話の `manifest.json` に並ぶ採用原画だけ（第1話32枚、第2〜10話は各8枚）。
 
-現在の結果は [delivery.json](delivery.json) と [制作台帳](status.md)。ローカルでは11件のPythonテスト、iOS同期チェック、五つのSwiftカタログ・読書テストを実行。CIとレビューは [PR #27](https://github.com/quantum-box/manga/pull/27) の最新HEADを確認する。
+現在の結果は [delivery.json](delivery.json) と [制作台帳](status.md)。ローカルでは11件の配布物Pythonテストと3件の原画格納テスト、iOS同期チェック、五つのSwiftカタログ・読書テストを実行。CIとレビューは [PR #27](https://github.com/quantum-box/manga/pull/27) の最新HEADを確認する。
+
+第1話の長尺改稿は [episode-01-scroll.json](episode-01-scroll.json) と [episode-01-review.md](episode-01-review.md)。通常版は原画PNGを直接読む。単独版が100MiBを超える場合は `compact_reader.py` がUTF-8の格納方式を使い、ブラウザーで元のPNGバイトを復元する。原画のリサイズ・再圧縮・文字の描き足しは行わない。描画スクリプトは復元した全原画のSHA-256と、通常版・単独版の全長一致も確認する。

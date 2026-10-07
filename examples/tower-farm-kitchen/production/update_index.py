@@ -54,6 +54,8 @@ delivery_passed = count == 10 and delivery.get('localVerification') == 'passed'
 | [制作台帳](production/status.md) | 完成・制作中・未確認の区別 |
 
 各話の`index.html`は編集可能なリーダー、`reader.html`は原画を内包した単独HTML。会話は原画内へ日本語の縦書きで統合し、HTMLで重ねて表示しない。原画・実際の生成指示・採用と修正の記録・両スマホ幅の全長画像・確認シートを各話へ保存する。公開サーバーへの配信はまだ行っていない。
+
+第1話は長尺・効果音の改稿を採用。32場面、スマホ約37〜38画面、原画内の効果音25箇所。[改稿と確認の記録](production/episode-01-review.md)。第2〜10話は今回の長尺改稿の対象外で、従来の各8枚の原画。
 ''')
 
 rows = []
@@ -62,7 +64,7 @@ for ep in EPISODES:
     d = BASE / f'episode-{n:02d}'
     m = json.loads((d / 'manifest.json').read_text())
     art_count = sum((d / s['art']).exists() for s in m['scenes'])
-    art = '完了' if n in completed else f'作画{art_count}/8・確認中' if art_count else '未着手'
+    art = '完了' if n in completed else f'作画{art_count}/{len(m["scenes"])}・確認中' if art_count else '未着手'
     review = '完了' if n in completed else '未完了'
     package = '完了' if n in completed else '未完了'
     rows.append(f'| {n} | 完了 | 完了 | {art} | {review} | {package} |')
