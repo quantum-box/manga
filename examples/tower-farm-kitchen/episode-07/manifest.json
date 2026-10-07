@@ -2,12 +2,19 @@
   "number": 7,
   "title": "収穫日は、約束できるか",
   "time": "21〜28日目",
+  "change": "生育の遅れを見て大口注文を断り、小口一便と代替仕入れを提案する。レオンの信頼の入口になる。",
   "state": "最初の播種から14〜21日。まだ収穫しない。28日見込みを確定日と呼ばない。36日目に十二食を三階集結所へ届ける候補。",
-  "scenes": [
+  "revision": "2026-10-07-following-remake",
+  "sources": [
     {
-      "id": "01-leon",
-      "art": "art/01-leon.png",
+      "id": "01-remake-leon",
+      "art": "art/01-remake-leon.png",
+      "description": "Leon enters diner in navy cloak, scar on right eyebrow, no sword, supply notebook in hand; Elna and Kou behind counter listen. Two panels wider arrival then restrained serious face.",
       "dialogue": [
+        [
+          "エルナ",
+          "補給担当の、レオンさん。"
+        ],
         [
           "レオン",
           "次の遠征に、二十食頼めるか。"
@@ -15,19 +22,24 @@
         [
           "レオン",
           "決まった日に、同じ品質で。"
+        ],
+        [
+          "コウ",
+          "畑を、確認させてください。"
         ]
       ],
       "layout": "conversation",
       "pauseAt390": 100,
-      "prompt": "generation/01-leon.prompt.txt",
-      "description": "Leon enters diner in navy cloak, scar on right eyebrow, no sword, supply notebook in hand; Elna and Kou behind counter listen. Two panels wider arrival then restrained serious face.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "6991f410a3024766e2800b5bc6370b54db7aa6bff2db987918c762b1f69ab67d"
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-leon.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4d6ab0df5b31671e93f417d23e2a1005e173ded8173c0c3f17a3d0bb338d1846"
     },
     {
-      "id": "02-forecast",
-      "art": "art/02-forecast.png",
+      "id": "02-remake-forecast",
+      "art": "art/02-remake-forecast.png",
+      "description": "Kou looks toward small green plot hopefully, Iris beside him holds observation notebook, medium face then narrow hand closeup calendar sketch. No harvested basket, plants still growing.",
       "dialogue": [
         [
           "コウ",
@@ -35,45 +47,59 @@
         ],
         [
           "イリス",
-          "その『はず』、どこまで確か？"
+          "その「はず」、どこまで確か？"
+        ],
+        [
+          "コウ",
+          "……播いた日だけを、見てた。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 90,
-      "prompt": "generation/02-forecast.prompt.txt",
-      "description": "Kou looks toward small green plot hopefully, Iris beside him holds observation notebook, medium face then narrow hand closeup calendar sketch. No harvested basket, plants still growing.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "cd9b3c0e5423e285367b38826fda94221d085840b431dc931cc1dba3870b77df"
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-forecast.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8b179bb62ec08529558a97c3c9078274aee0f637c7b31e335c9ed58ee3280f39"
     },
     {
-      "id": "03-shade",
-      "art": "art/03-shade.png",
+      "id": "03-remake-shade",
+      "art": "art/03-remake-shade.png",
+      "description": "Same bed has visibly shadier corner under tower rib, plants in that section smaller; Balt points upward at shadow boundary, Kou measures a leaf gently. Two unequal closeups and one contextual view.",
       "dialogue": [
+        [
+          "バルト",
+          "光が違う。日付だけじゃ読めん。"
+        ],
         [
           "コウ",
           "この列は、まだ小さい。"
         ],
         [
-          "バルト",
-          "光が違う。日付だけじゃ読めん。"
+          "コウ",
+          "同じ日に播いても、違うんだな。"
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 80,
-      "prompt": "generation/03-shade.prompt.txt",
-      "description": "Same bed has visibly shadier corner under tower rib, plants in that section smaller; Balt points upward at shadow boundary, Kou measures a leaf gently. Two unequal closeups and one contextual view.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "46196937c76cc7913fa58ceab2c5571727551a1c8a1782436e7f8d22353b8123"
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-shade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cd5a6536e15e818290f914c92e3d5dbefe00acc3f49808c9476ec1d445a7e3d7"
     },
     {
-      "id": "04-recalculate",
-      "art": "art/04-recalculate.png",
+      "id": "04-remake-recalculate",
+      "art": "art/04-remake-recalculate.png",
+      "description": "Kou and Elna at table with crop notebook, crossed-out estimate and alternative schedule shown only as abstract marks, closeup uncertain thoughtful Kou then Elna listening. No false exact harvest-day projection.",
       "dialogue": [
         [
           "コウ",
           "二十八日は、見込みだった。"
+        ],
+        [
+          "エルナ",
+          "遅れたら、注文はどうする？"
         ],
         [
           "コウ",
@@ -81,16 +107,17 @@
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 130,
-      "prompt": "generation/04-recalculate.prompt.txt",
-      "description": "Kou and Elna at table with crop notebook, crossed-out estimate and alternative schedule shown only as abstract marks, closeup uncertain thoughtful Kou then Elna listening. No false exact harvest-day projection.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "6d23eb0b0b6cf8aec7358aa15b0b86ab5d9acbeca6415f47a29449e9347c0427"
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-recalculate.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43edb92c70eced54fb2d9c3ffc3e766c5b366607d74ef99795c167e58f2f4d8c"
     },
     {
-      "id": "05-decline",
-      "art": "art/05-decline.png",
+      "id": "05-remake-decline",
+      "art": "art/05-remake-decline.png",
+      "description": "Three unequal conversation panels at diner: Kou honest serious, Leon watching without anger, Elna anxious then relieved. No humiliation or cartoon villain stance.",
       "dialogue": [
         [
           "コウ",
@@ -99,19 +126,24 @@
         [
           "レオン",
           "出せる数と、代わりの手を聞こう。"
+        ],
+        [
+          "エルナ",
+          "断るだけで、終わりじゃないんだ。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 100,
-      "prompt": "generation/05-decline.prompt.txt",
-      "description": "Three unequal conversation panels at diner: Kou honest serious, Leon watching without anger, Elna anxious then relieved. No humiliation or cartoon villain stance.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "1b3a18b30debee9b5448d34f48bdd462ca0bfbcac72205860ea168d4471050d2"
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-decline.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "91938d65846d3c62337355b1745d51a6ea3a17cba1df78f98844cfadc830f7c6"
     },
     {
-      "id": "06-backup",
-      "art": "art/06-backup.png",
+      "id": "06-remake-backup",
+      "art": "art/06-remake-backup.png",
+      "description": "Elna negotiates with local produce supplier at back door, Balt nearby discusses existing stock, Kou checks ledger. Baskets represent supplier's mature crops, not main plot magically grown.",
       "dialogue": [
         [
           "エルナ",
@@ -120,23 +152,32 @@
         [
           "コウ",
           "量と値段も、先に決めよう。"
+        ],
+        [
+          "エルナ",
+          "届く日まで、確かめてくる。"
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 70,
-      "prompt": "generation/06-backup.prompt.txt",
-      "description": "Elna negotiates with local produce supplier at back door, Balt nearby discusses existing stock, Kou checks ledger. Baskets represent supplier's mature crops, not main plot magically grown.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "c9007735ef3c78b9dfa2e0f8ab2f46a305dbc635c6cca8fa6f68d481ba5c565c"
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-backup.prompt.txt",
+      "width": 730,
+      "height": 2155,
+      "sha256": "74126e6be7b198f3bf75854b649e8a178ff1e0082287469a48216713acae293e"
     },
     {
-      "id": "07-thin",
-      "art": "art/07-thin-sequence-fixed.png",
+      "id": "07-remake-thin",
+      "art": "art/07-remake-thin.png",
+      "description": "Two closeups and quiet medium panel: Kou carefully thins crowded SMALL garden-leaf seedlings, Elna holds tray for removed seedlings away from future food; path not trodden over bed. No harvesting immature plants for order.",
       "dialogue": [
         [
           "コウ",
           "今日は、この苗を間引く。"
+        ],
+        [
+          "エルナ",
+          "まだ小さいのに、抜くんだね。"
         ],
         [
           "バルト",
@@ -144,39 +185,1008 @@
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 85,
-      "prompt": "generation/07-thin.prompt.txt",
-      "description": "Two closeups and quiet medium panel: Kou carefully thins crowded SMALL garden-leaf seedlings, Elna holds tray for removed seedlings away from future food; path not trodden over bed. No harvesting immature plants for order.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "46a8c6ef4aacbf8ec7a55182e91b541536b466806bfcbe5eb01c996b3a1f631f",
-      "edits": [
-        {
-          "prompt": "generation/07-thin-sequence-fixed.prompt.txt",
-          "record": "generation/07-thin-sequence-fixed.json"
-        }
-      ]
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-thin.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "ecddf49bfa0ef4ee2f83a0bb81906c1efcba6398573df3928feb740150f76a65"
     },
     {
-      "id": "08-small-contract",
-      "art": "art/08-small-contract.png",
+      "id": "08-remake-small-contract",
+      "art": "art/08-remake-small-contract.png",
+      "description": "Large dignified scene in diner: Leon offers small plain contract, Kou and Elna accept together, modest vegetable beds seen outside. Hands coherent, no ornate reward trophy or huge coin shower.",
       "dialogue": [
         [
           "レオン",
           "まず、一便だけ。十二食だ。"
         ],
         [
+          "レオン",
+          "三十六日目、三階の集結所へ。"
+        ],
+        [
+          "コウ",
+          "畑も、仕入れも確認します。"
+        ],
+        [
+          "エルナ",
+          "変わったら、先に連絡するね。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-small-contract.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "78270e98196d7ef3173d7f375e576e5f873237b7245b534f1854e6c79e4f26ab"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-remake-leon-window-01",
+      "art": "art/01-remake-leon.png",
+      "description": "Leon enters diner in navy cloak, scar on right eyebrow, no sword, supply notebook in hand; Elna and Kou behind counter listen. Two panels wider arrival then restrained serious face.",
+      "dialogue": [
+        [
+          "エルナ",
+          "補給担当の、レオンさん。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 120,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-leon.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4d6ab0df5b31671e93f417d23e2a1005e173ded8173c0c3f17a3d0bb338d1846",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 811
+      },
+      "sourceId": "01-remake-leon",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-leon-window-02",
+      "art": "art/01-remake-leon.png",
+      "description": "Leon enters diner in navy cloak, scar on right eyebrow, no sword, supply notebook in hand; Elna and Kou behind counter listen. Two panels wider arrival then restrained serious face.",
+      "dialogue": [
+        [
+          "レオン",
+          "次の遠征に、二十食頼めるか。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 70,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-leon.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4d6ab0df5b31671e93f417d23e2a1005e173ded8173c0c3f17a3d0bb338d1846",
+      "crop": {
+        "x": 0,
+        "y": 811,
+        "width": 724,
+        "height": 355
+      },
+      "sourceId": "01-remake-leon",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-leon-window-03",
+      "art": "art/01-remake-leon.png",
+      "description": "Leon enters diner in navy cloak, scar on right eyebrow, no sword, supply notebook in hand; Elna and Kou behind counter listen. Two panels wider arrival then restrained serious face.",
+      "dialogue": [
+        [
+          "レオン",
+          "決まった日に、同じ品質で。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 260,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-leon.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4d6ab0df5b31671e93f417d23e2a1005e173ded8173c0c3f17a3d0bb338d1846",
+      "crop": {
+        "x": 0,
+        "y": 1166,
+        "width": 724,
+        "height": 270
+      },
+      "sourceId": "01-remake-leon",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-leon-window-04",
+      "art": "art/01-remake-leon.png",
+      "description": "Leon enters diner in navy cloak, scar on right eyebrow, no sword, supply notebook in hand; Elna and Kou behind counter listen. Two panels wider arrival then restrained serious face.",
+      "dialogue": [
+        [
+          "コウ",
+          "畑を、確認させてください。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-leon.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4d6ab0df5b31671e93f417d23e2a1005e173ded8173c0c3f17a3d0bb338d1846",
+      "crop": {
+        "x": 0,
+        "y": 1436,
+        "width": 724,
+        "height": 736
+      },
+      "sourceId": "01-remake-leon",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-forecast-window-01",
+      "art": "art/02-remake-forecast.png",
+      "description": "Kou looks toward small green plot hopefully, Iris beside him holds observation notebook, medium face then narrow hand closeup calendar sketch. No harvested basket, plants still growing.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-forecast.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8b179bb62ec08529558a97c3c9078274aee0f637c7b31e335c9ed58ee3280f39",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 600
+      },
+      "sourceId": "02-remake-forecast",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-forecast-window-02",
+      "art": "art/02-remake-forecast.png",
+      "description": "Kou looks toward small green plot hopefully, Iris beside him holds observation notebook, medium face then narrow hand closeup calendar sketch. No harvested basket, plants still growing.",
+      "dialogue": [
+        [
+          "コウ",
+          "庭葉は、そろそろ採れるはず。"
+        ],
+        [
+          "イリス",
+          "その「はず」、どこまで確か？"
+        ],
+        [
+          "コウ",
+          "……播いた日だけを、見てた。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-forecast.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8b179bb62ec08529558a97c3c9078274aee0f637c7b31e335c9ed58ee3280f39",
+      "crop": {
+        "x": 0,
+        "y": 600,
+        "width": 724,
+        "height": 1572
+      },
+      "sourceId": "02-remake-forecast",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-shade-window-01",
+      "art": "art/03-remake-shade.png",
+      "description": "Same bed has visibly shadier corner under tower rib, plants in that section smaller; Balt points upward at shadow boundary, Kou measures a leaf gently. Two unequal closeups and one contextual view.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 45,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-shade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cd5a6536e15e818290f914c92e3d5dbefe00acc3f49808c9476ec1d445a7e3d7",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 659
+      },
+      "sourceId": "03-remake-shade",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-shade-window-02",
+      "art": "art/03-remake-shade.png",
+      "description": "Same bed has visibly shadier corner under tower rib, plants in that section smaller; Balt points upward at shadow boundary, Kou measures a leaf gently. Two unequal closeups and one contextual view.",
+      "dialogue": [
+        [
+          "バルト",
+          "光が違う。日付だけじゃ読めん。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 24,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-shade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cd5a6536e15e818290f914c92e3d5dbefe00acc3f49808c9476ec1d445a7e3d7",
+      "crop": {
+        "x": 0,
+        "y": 659,
+        "width": 724,
+        "height": 447
+      },
+      "sourceId": "03-remake-shade",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-shade-window-03",
+      "art": "art/03-remake-shade.png",
+      "description": "Same bed has visibly shadier corner under tower rib, plants in that section smaller; Balt points upward at shadow boundary, Kou measures a leaf gently. Two unequal closeups and one contextual view.",
+      "dialogue": [
+        [
+          "コウ",
+          "この列は、まだ小さい。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-shade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cd5a6536e15e818290f914c92e3d5dbefe00acc3f49808c9476ec1d445a7e3d7",
+      "crop": {
+        "x": 0,
+        "y": 1106,
+        "width": 724,
+        "height": 324
+      },
+      "sourceId": "03-remake-shade",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-shade-window-04",
+      "art": "art/03-remake-shade.png",
+      "description": "Same bed has visibly shadier corner under tower rib, plants in that section smaller; Balt points upward at shadow boundary, Kou measures a leaf gently. Two unequal closeups and one contextual view.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 910,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-shade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cd5a6536e15e818290f914c92e3d5dbefe00acc3f49808c9476ec1d445a7e3d7",
+      "crop": {
+        "x": 0,
+        "y": 1430,
+        "width": 724,
+        "height": 205
+      },
+      "sourceId": "03-remake-shade",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-shade-window-05",
+      "art": "art/03-remake-shade.png",
+      "description": "Same bed has visibly shadier corner under tower rib, plants in that section smaller; Balt points upward at shadow boundary, Kou measures a leaf gently. Two unequal closeups and one contextual view.",
+      "dialogue": [
+        [
+          "コウ",
+          "同じ日に播いても、違うんだな。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-shade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cd5a6536e15e818290f914c92e3d5dbefe00acc3f49808c9476ec1d445a7e3d7",
+      "crop": {
+        "x": 0,
+        "y": 1635,
+        "width": 724,
+        "height": 537
+      },
+      "sourceId": "03-remake-shade",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-recalculate-window-01",
+      "art": "art/04-remake-recalculate.png",
+      "description": "Kou and Elna at table with crop notebook, crossed-out estimate and alternative schedule shown only as abstract marks, closeup uncertain thoughtful Kou then Elna listening. No false exact harvest-day projection.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 65,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-recalculate.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43edb92c70eced54fb2d9c3ffc3e766c5b366607d74ef99795c167e58f2f4d8c",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 470
+      },
+      "sourceId": "04-remake-recalculate",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-recalculate-window-02",
+      "art": "art/04-remake-recalculate.png",
+      "description": "Kou and Elna at table with crop notebook, crossed-out estimate and alternative schedule shown only as abstract marks, closeup uncertain thoughtful Kou then Elna listening. No false exact harvest-day projection.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 200,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-recalculate.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43edb92c70eced54fb2d9c3ffc3e766c5b366607d74ef99795c167e58f2f4d8c",
+      "crop": {
+        "x": 0,
+        "y": 470,
+        "width": 724,
+        "height": 242
+      },
+      "sourceId": "04-remake-recalculate",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-recalculate-window-03",
+      "art": "art/04-remake-recalculate.png",
+      "description": "Kou and Elna at table with crop notebook, crossed-out estimate and alternative schedule shown only as abstract marks, closeup uncertain thoughtful Kou then Elna listening. No false exact harvest-day projection.",
+      "dialogue": [
+        [
+          "コウ",
+          "二十八日は、見込みだった。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 90,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-recalculate.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43edb92c70eced54fb2d9c3ffc3e766c5b366607d74ef99795c167e58f2f4d8c",
+      "crop": {
+        "x": 0,
+        "y": 712,
+        "width": 724,
+        "height": 354
+      },
+      "sourceId": "04-remake-recalculate",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-recalculate-window-04",
+      "art": "art/04-remake-recalculate.png",
+      "description": "Kou and Elna at table with crop notebook, crossed-out estimate and alternative schedule shown only as abstract marks, closeup uncertain thoughtful Kou then Elna listening. No false exact harvest-day projection.",
+      "dialogue": [
+        [
+          "エルナ",
+          "遅れたら、注文はどうする？"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 340,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-recalculate.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43edb92c70eced54fb2d9c3ffc3e766c5b366607d74ef99795c167e58f2f4d8c",
+      "crop": {
+        "x": 0,
+        "y": 1066,
+        "width": 724,
+        "height": 366
+      },
+      "sourceId": "04-remake-recalculate",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-recalculate-window-05",
+      "art": "art/04-remake-recalculate.png",
+      "description": "Kou and Elna at table with crop notebook, crossed-out estimate and alternative schedule shown only as abstract marks, closeup uncertain thoughtful Kou then Elna listening. No false exact harvest-day projection.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 130,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-recalculate.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43edb92c70eced54fb2d9c3ffc3e766c5b366607d74ef99795c167e58f2f4d8c",
+      "crop": {
+        "x": 0,
+        "y": 1432,
+        "width": 724,
+        "height": 189
+      },
+      "sourceId": "04-remake-recalculate",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-recalculate-window-06",
+      "art": "art/04-remake-recalculate.png",
+      "description": "Kou and Elna at table with crop notebook, crossed-out estimate and alternative schedule shown only as abstract marks, closeup uncertain thoughtful Kou then Elna listening. No false exact harvest-day projection.",
+      "dialogue": [
+        [
+          "コウ",
+          "遅れた場合も、計算し直す。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-recalculate.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43edb92c70eced54fb2d9c3ffc3e766c5b366607d74ef99795c167e58f2f4d8c",
+      "crop": {
+        "x": 0,
+        "y": 1621,
+        "width": 724,
+        "height": 551
+      },
+      "sourceId": "04-remake-recalculate",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-decline-window-01",
+      "art": "art/05-remake-decline.png",
+      "description": "Three unequal conversation panels at diner: Kou honest serious, Leon watching without anger, Elna anxious then relieved. No humiliation or cartoon villain stance.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 40,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-decline.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "91938d65846d3c62337355b1745d51a6ea3a17cba1df78f98844cfadc830f7c6",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 392
+      },
+      "sourceId": "05-remake-decline",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-decline-window-02",
+      "art": "art/05-remake-decline.png",
+      "description": "Three unequal conversation panels at diner: Kou honest serious, Leon watching without anger, Elna anxious then relieved. No humiliation or cartoon villain stance.",
+      "dialogue": [
+        [
+          "コウ",
+          "二十食は、まだ約束できません。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 70,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-decline.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "91938d65846d3c62337355b1745d51a6ea3a17cba1df78f98844cfadc830f7c6",
+      "crop": {
+        "x": 0,
+        "y": 392,
+        "width": 724,
+        "height": 346
+      },
+      "sourceId": "05-remake-decline",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-decline-window-03",
+      "art": "art/05-remake-decline.png",
+      "description": "Three unequal conversation panels at diner: Kou honest serious, Leon watching without anger, Elna anxious then relieved. No humiliation or cartoon villain stance.",
+      "dialogue": [
+        [
+          "レオン",
+          "出せる数と、代わりの手を聞こう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 160,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-decline.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "91938d65846d3c62337355b1745d51a6ea3a17cba1df78f98844cfadc830f7c6",
+      "crop": {
+        "x": 0,
+        "y": 738,
+        "width": 724,
+        "height": 378
+      },
+      "sourceId": "05-remake-decline",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-decline-window-04",
+      "art": "art/05-remake-decline.png",
+      "description": "Three unequal conversation panels at diner: Kou honest serious, Leon watching without anger, Elna anxious then relieved. No humiliation or cartoon villain stance.",
+      "dialogue": [
+        [
+          "エルナ",
+          "断るだけで、終わりじゃないんだ。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-decline.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "91938d65846d3c62337355b1745d51a6ea3a17cba1df78f98844cfadc830f7c6",
+      "crop": {
+        "x": 0,
+        "y": 1116,
+        "width": 724,
+        "height": 341
+      },
+      "sourceId": "05-remake-decline",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-decline-window-05",
+      "art": "art/05-remake-decline.png",
+      "description": "Three unequal conversation panels at diner: Kou honest serious, Leon watching without anger, Elna anxious then relieved. No humiliation or cartoon villain stance.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 230,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-decline.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "91938d65846d3c62337355b1745d51a6ea3a17cba1df78f98844cfadc830f7c6",
+      "crop": {
+        "x": 0,
+        "y": 1457,
+        "width": 724,
+        "height": 281
+      },
+      "sourceId": "05-remake-decline",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-decline-window-06",
+      "art": "art/05-remake-decline.png",
+      "description": "Three unequal conversation panels at diner: Kou honest serious, Leon watching without anger, Elna anxious then relieved. No humiliation or cartoon villain stance.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-decline.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "91938d65846d3c62337355b1745d51a6ea3a17cba1df78f98844cfadc830f7c6",
+      "crop": {
+        "x": 0,
+        "y": 1738,
+        "width": 724,
+        "height": 434
+      },
+      "sourceId": "05-remake-decline",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-backup-window-01",
+      "art": "art/06-remake-backup.png",
+      "description": "Elna negotiates with local produce supplier at back door, Balt nearby discusses existing stock, Kou checks ledger. Baskets represent supplier's mature crops, not main plot magically grown.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 160,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-backup.prompt.txt",
+      "width": 730,
+      "height": 2155,
+      "sha256": "74126e6be7b198f3bf75854b649e8a178ff1e0082287469a48216713acae293e",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 730,
+        "height": 445
+      },
+      "sourceId": "06-remake-backup",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-backup-window-02",
+      "art": "art/06-remake-backup.png",
+      "description": "Elna negotiates with local produce supplier at back door, Balt nearby discusses existing stock, Kou checks ledger. Baskets represent supplier's mature crops, not main plot magically grown.",
+      "dialogue": [
+        [
+          "エルナ",
+          "足りない分は、買える。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 240,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-backup.prompt.txt",
+      "width": 730,
+      "height": 2155,
+      "sha256": "74126e6be7b198f3bf75854b649e8a178ff1e0082287469a48216713acae293e",
+      "crop": {
+        "x": 0,
+        "y": 445,
+        "width": 730,
+        "height": 428
+      },
+      "sourceId": "06-remake-backup",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-backup-window-03",
+      "art": "art/06-remake-backup.png",
+      "description": "Elna negotiates with local produce supplier at back door, Balt nearby discusses existing stock, Kou checks ledger. Baskets represent supplier's mature crops, not main plot magically grown.",
+      "dialogue": [
+        [
+          "コウ",
+          "量と値段も、先に決めよう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 90,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-backup.prompt.txt",
+      "width": 730,
+      "height": 2155,
+      "sha256": "74126e6be7b198f3bf75854b649e8a178ff1e0082287469a48216713acae293e",
+      "crop": {
+        "x": 0,
+        "y": 873,
+        "width": 730,
+        "height": 344
+      },
+      "sourceId": "06-remake-backup",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-backup-window-04",
+      "art": "art/06-remake-backup.png",
+      "description": "Elna negotiates with local produce supplier at back door, Balt nearby discusses existing stock, Kou checks ledger. Baskets represent supplier's mature crops, not main plot magically grown.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 190,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-backup.prompt.txt",
+      "width": 730,
+      "height": 2155,
+      "sha256": "74126e6be7b198f3bf75854b649e8a178ff1e0082287469a48216713acae293e",
+      "crop": {
+        "x": 0,
+        "y": 1217,
+        "width": 730,
+        "height": 275
+      },
+      "sourceId": "06-remake-backup",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-backup-window-05",
+      "art": "art/06-remake-backup.png",
+      "description": "Elna negotiates with local produce supplier at back door, Balt nearby discusses existing stock, Kou checks ledger. Baskets represent supplier's mature crops, not main plot magically grown.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 300,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-backup.prompt.txt",
+      "width": 730,
+      "height": 2155,
+      "sha256": "74126e6be7b198f3bf75854b649e8a178ff1e0082287469a48216713acae293e",
+      "crop": {
+        "x": 0,
+        "y": 1492,
+        "width": 730,
+        "height": 186
+      },
+      "sourceId": "06-remake-backup",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-backup-window-06",
+      "art": "art/06-remake-backup.png",
+      "description": "Elna negotiates with local produce supplier at back door, Balt nearby discusses existing stock, Kou checks ledger. Baskets represent supplier's mature crops, not main plot magically grown.",
+      "dialogue": [
+        [
+          "エルナ",
+          "届く日まで、確かめてくる。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-backup.prompt.txt",
+      "width": 730,
+      "height": 2155,
+      "sha256": "74126e6be7b198f3bf75854b649e8a178ff1e0082287469a48216713acae293e",
+      "crop": {
+        "x": 0,
+        "y": 1678,
+        "width": 730,
+        "height": 477
+      },
+      "sourceId": "06-remake-backup",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-thin-window-01",
+      "art": "art/07-remake-thin.png",
+      "description": "Two closeups and quiet medium panel: Kou carefully thins crowded SMALL garden-leaf seedlings, Elna holds tray for removed seedlings away from future food; path not trodden over bed. No harvesting immature plants for order.",
+      "dialogue": [
+        [
+          "コウ",
+          "今日は、この苗を間引く。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 65,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-thin.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "ecddf49bfa0ef4ee2f83a0bb81906c1efcba6398573df3928feb740150f76a65",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 963
+      },
+      "sourceId": "07-remake-thin",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-thin-window-02",
+      "art": "art/07-remake-thin.png",
+      "description": "Two closeups and quiet medium panel: Kou carefully thins crowded SMALL garden-leaf seedlings, Elna holds tray for removed seedlings away from future food; path not trodden over bed. No harvesting immature plants for order.",
+      "dialogue": [
+        [
+          "エルナ",
+          "まだ小さいのに、抜くんだね。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 30,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-thin.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "ecddf49bfa0ef4ee2f83a0bb81906c1efcba6398573df3928feb740150f76a65",
+      "crop": {
+        "x": 0,
+        "y": 963,
+        "width": 724,
+        "height": 363
+      },
+      "sourceId": "07-remake-thin",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-thin-window-03",
+      "art": "art/07-remake-thin.png",
+      "description": "Two closeups and quiet medium panel: Kou carefully thins crowded SMALL garden-leaf seedlings, Elna holds tray for removed seedlings away from future food; path not trodden over bed. No harvesting immature plants for order.",
+      "dialogue": [
+        [
+          "バルト",
+          "育つ場所を、残してやれ。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-thin.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "ecddf49bfa0ef4ee2f83a0bb81906c1efcba6398573df3928feb740150f76a65",
+      "crop": {
+        "x": 0,
+        "y": 1326,
+        "width": 724,
+        "height": 846
+      },
+      "sourceId": "07-remake-thin",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-small-contract-window-01",
+      "art": "art/08-remake-small-contract.png",
+      "description": "Large dignified scene in diner: Leon offers small plain contract, Kou and Elna accept together, modest vegetable beds seen outside. Hands coherent, no ornate reward trophy or huge coin shower.",
+      "dialogue": [
+        [
+          "レオン",
+          "まず、一便だけ。十二食だ。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 140,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-small-contract.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "78270e98196d7ef3173d7f375e576e5f873237b7245b534f1854e6c79e4f26ab",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 440
+      },
+      "sourceId": "08-remake-small-contract",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-small-contract-window-02",
+      "art": "art/08-remake-small-contract.png",
+      "description": "Large dignified scene in diner: Leon offers small plain contract, Kou and Elna accept together, modest vegetable beds seen outside. Hands coherent, no ornate reward trophy or huge coin shower.",
+      "dialogue": [
+        [
+          "レオン",
+          "三十六日目、三階の集結所へ。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 210,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-small-contract.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "78270e98196d7ef3173d7f375e576e5f873237b7245b534f1854e6c79e4f26ab",
+      "crop": {
+        "x": 0,
+        "y": 440,
+        "width": 724,
+        "height": 302
+      },
+      "sourceId": "08-remake-small-contract",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-small-contract-window-03",
+      "art": "art/08-remake-small-contract.png",
+      "description": "Large dignified scene in diner: Leon offers small plain contract, Kou and Elna accept together, modest vegetable beds seen outside. Hands coherent, no ornate reward trophy or huge coin shower.",
+      "dialogue": [
+        [
           "コウ",
           "畑も、仕入れも確認します。"
         ]
       ],
       "layout": "hero",
-      "pauseAt390": 180,
-      "prompt": "generation/08-small-contract.prompt.txt",
+      "pauseAt390": 100,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-small-contract.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "78270e98196d7ef3173d7f375e576e5f873237b7245b534f1854e6c79e4f26ab",
+      "crop": {
+        "x": 0,
+        "y": 742,
+        "width": 724,
+        "height": 292
+      },
+      "sourceId": "08-remake-small-contract",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-small-contract-window-04",
+      "art": "art/08-remake-small-contract.png",
       "description": "Large dignified scene in diner: Leon offers small plain contract, Kou and Elna accept together, modest vegetable beds seen outside. Hands coherent, no ornate reward trophy or huge coin shower.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "f79cd7e256d25908fdea6779fe2b27ae36dcd86d5d22534feb62064c43bef581"
+      "dialogue": [
+        [
+          "エルナ",
+          "変わったら、先に連絡するね。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 180,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-small-contract.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "78270e98196d7ef3173d7f375e576e5f873237b7245b534f1854e6c79e4f26ab",
+      "crop": {
+        "x": 0,
+        "y": 1034,
+        "width": 724,
+        "height": 273
+      },
+      "sourceId": "08-remake-small-contract",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-small-contract-window-05",
+      "art": "art/08-remake-small-contract.png",
+      "description": "Large dignified scene in diner: Leon offers small plain contract, Kou and Elna accept together, modest vegetable beds seen outside. Hands coherent, no ornate reward trophy or huge coin shower.",
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 270,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-small-contract.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "78270e98196d7ef3173d7f375e576e5f873237b7245b534f1854e6c79e4f26ab",
+      "crop": {
+        "x": 0,
+        "y": 1307,
+        "width": 724,
+        "height": 211
+      },
+      "sourceId": "08-remake-small-contract",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-small-contract-window-06",
+      "art": "art/08-remake-small-contract.png",
+      "description": "Large dignified scene in diner: Leon offers small plain contract, Kou and Elna accept together, modest vegetable beds seen outside. Hands coherent, no ornate reward trophy or huge coin shower.",
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-small-contract.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "78270e98196d7ef3173d7f375e576e5f873237b7245b534f1854e6c79e4f26ab",
+      "crop": {
+        "x": 0,
+        "y": 1518,
+        "width": 724,
+        "height": 654
+      },
+      "sourceId": "08-remake-small-contract",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     }
   ]
 }

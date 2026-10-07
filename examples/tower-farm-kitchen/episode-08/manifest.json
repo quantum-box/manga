@@ -2,11 +2,242 @@
   "number": 8,
   "title": "初めての、自分たちの収穫",
   "time": "35日目・最初の播種から28日",
+  "change": "育てた庭葉が初めて料理になる。選別後の使える量を測り、次の納品へ渡す。",
   "state": "第一播種の育った二区画、計8m²を収穫。遅い一区画は残す。使用可能量は約5.1kgという創作上の実測。全48m²を同時収穫しない。",
+  "revision": "2026-10-07-following-remake",
+  "sources": [
+    {
+      "id": "01-remake-ready",
+      "art": "art/01-remake-ready.png",
+      "description": "First small mature leafy sections at day thirty-five, other later-sown sections still small, one shaded first section smaller; Elna crouches excited, Kou checks one leaf. Gentle morning tower light, no enormous vegetables.",
+      "dialogue": [
+        [
+          "エルナ",
+          "採って、いい？"
+        ],
+        [
+          "コウ",
+          "一株、厨房で確かめよう。"
+        ],
+        [
+          "エルナ",
+          "待ったね。ここまで。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-ready.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5281d48cdef9bc55f7dc5d4628eb4abc12d28155cd6ade58318e17ed2be85311"
+    },
+    {
+      "id": "02-remake-cut",
+      "art": "art/02-remake-cut.png",
+      "description": "Three unequal hand shots: clean harvest basket on path, Kou cuts garden-leaf crop above soil carefully, leaves placed gently without crushing or dirty roots. Elna watches. Only selected mature sections harvested.",
+      "dialogue": [
+        [
+          "コウ",
+          "土を、葉につけないように。"
+        ],
+        [
+          "エルナ",
+          "籠は、道に置いておく。"
+        ],
+        [
+          "コウ",
+          "育った二区画だけ、今日は採ろう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-cut.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4a71a7459bbd911f698cdd2c2987c9ca8101c921b579a5ebeefc7ad756e652ae"
+    },
+    {
+      "id": "03-remake-grade",
+      "art": "art/03-remake-grade.png",
+      "description": "Elna and Kou sort leaves at designated utility table, usable irregular small leaves in one basket, damaged leaves separately in reject tray. Closeups genuine leaves and hands. Do not present rotten material as food.",
+      "dialogue": [
+        [
+          "コウ",
+          "重さと、使える分を分ける。"
+        ],
+        [
+          "エルナ",
+          "小さくても、使える葉はある。"
+        ],
+        [
+          "コウ",
+          "傷んだ分とは、混ぜないでおこう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-grade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43b7b52aa7ec8b4e81e7b2fc319f51892ade94ce572de8908f1954702ed447a5"
+    },
+    {
+      "id": "04-remake-weigh",
+      "art": "art/04-remake-weigh.png",
+      "description": "Mechanical beam scale weighing baskets, Kou records simple tally in notebook, Elna sees modest harvest. No giant produce mountain; approximately five kilograms usable total across harvested sections.",
+      "dialogue": [
+        [
+          "コウ",
+          "使える分は、五キロほど。"
+        ],
+        [
+          "エルナ",
+          "まず、この量で考えよう。"
+        ],
+        [
+          "コウ",
+          "残した区画は、まだ待つ。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-weigh.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "f0148bee577ac83d5c0c0956ff9e9aad4458e6cfb4504488e0b56409480ac9da"
+    },
+    {
+      "id": "05-remake-kitchen",
+      "art": "art/05-remake-kitchen.png",
+      "description": "Kitchen washed harvest transferred separately, Elna slices leaves to bite-sized pieces, Kou sets clean bowl; three different-size closeups and medium cooking view. Stable cream apron and blue headscarf.",
+      "dialogue": [
+        [
+          "エルナ",
+          "この大きさなら、使いやすい。"
+        ],
+        [
+          "コウ",
+          "洗っても、しっかりしてる。"
+        ],
+        [
+          "エルナ",
+          "食べやすい切り方にしよう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-kitchen.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5a7c580701744237eabf20577caa317f0af33bd432b0120b8aeb549fde3398f6"
+    },
+    {
+      "id": "06-remake-meal-reveal",
+      "art": "art/06-remake-meal-reveal.png",
+      "description": "Large borderless appetizing hero composition: steaming grain-and-meat bowl topped with bright freshly cooked garden-leaf greens, bowl near auburn young adult customer's rough hands, lower warm eager face before first bite. Food richly drawn, no added text except exact small speech balloon.",
+      "dialogue": [
+        [
+          "エルナ",
+          "お待たせしました。"
+        ],
+        [
+          "客",
+          "いただきます。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-meal-reveal.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "9da734545492f6d07ed835d5f9a12643635efdf8c33307bd1c8516d517b861e4"
+    },
+    {
+      "id": "07-remake-earned",
+      "art": "art/07-remake-earned.png",
+      "description": "Three panels: customer enjoys first bite silently; closeup Kou's relieved face after weeks of waiting; Elna beside him with soft pleased expression. Calm adult emotion, no instant buff numbers. Diner warm, crop plot distant.",
+      "dialogue": [
+        [
+          "客",
+          "……うまい。"
+        ],
+        [
+          "コウ",
+          "やっと、畑が皿になった。"
+        ],
+        [
+          "エルナ",
+          "私も、待ってた。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-earned.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "fc110869565c378a135af9fbea1bad50b6f6421731be1c8680c938d70d31295f"
+    },
+    {
+      "id": "08-remake-deliver-next",
+      "art": "art/08-remake-deliver-next.png",
+      "description": "Warm evening kitchen, Kou and Elna prepare clean containers beside remaining harvest basket, Leon at doorway confirms next morning delivery. No already-packed food stored overnight: preparation is containers and schedule.",
+      "dialogue": [
+        [
+          "コウ",
+          "採れた。次は、届ける番だ。"
+        ],
+        [
+          "エルナ",
+          "今日は、容器と段取りだけ。"
+        ],
+        [
+          "レオン",
+          "明日の便、待っている。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-deliver-next.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "385f5c89dfb9b3047fc9f1383e36534bc37301b9cb6041996307aac5018e8b90"
+    }
+  ],
   "scenes": [
     {
-      "id": "01-ready",
-      "art": "art/01-ready.png",
+      "id": "01-remake-ready-window-01",
+      "art": "art/01-remake-ready.png",
+      "description": "First small mature leafy sections at day thirty-five, other later-sown sections still small, one shaded first section smaller; Elna crouches excited, Kou checks one leaf. Gentle morning tower light, no enormous vegetables.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 50,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-ready.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5281d48cdef9bc55f7dc5d4628eb4abc12d28155cd6ade58318e17ed2be85311",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 596
+      },
+      "sourceId": "01-remake-ready",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-ready-window-02",
+      "art": "art/01-remake-ready.png",
+      "description": "First small mature leafy sections at day thirty-five, other later-sown sections still small, one shaded first section smaller; Elna crouches excited, Kou checks one leaf. Gentle morning tower light, no enormous vegetables.",
       "dialogue": [
         [
           "エルナ",
@@ -18,16 +249,75 @@
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 130,
-      "prompt": "generation/01-ready.prompt.txt",
-      "description": "First small mature leafy sections at day thirty-five, other later-sown sections still small, one shaded first section smaller; Elna crouches excited, Kou checks one leaf. Gentle morning tower light, no enormous vegetables.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "a7c1c6e5bdea8ab840cc1ec91fc77e1fed1b9062f3bee8186fa019ff1d328ad1"
+      "pauseAt390": 120,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-ready.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5281d48cdef9bc55f7dc5d4628eb4abc12d28155cd6ade58318e17ed2be85311",
+      "crop": {
+        "x": 0,
+        "y": 596,
+        "width": 724,
+        "height": 1073
+      },
+      "sourceId": "01-remake-ready",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     },
     {
-      "id": "02-cut",
-      "art": "art/02-cut.png",
+      "id": "01-remake-ready-window-03",
+      "art": "art/01-remake-ready.png",
+      "description": "First small mature leafy sections at day thirty-five, other later-sown sections still small, one shaded first section smaller; Elna crouches excited, Kou checks one leaf. Gentle morning tower light, no enormous vegetables.",
+      "dialogue": [
+        [
+          "エルナ",
+          "待ったね。ここまで。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-ready.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5281d48cdef9bc55f7dc5d4628eb4abc12d28155cd6ade58318e17ed2be85311",
+      "crop": {
+        "x": 0,
+        "y": 1669,
+        "width": 724,
+        "height": 503
+      },
+      "sourceId": "01-remake-ready",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-cut-window-01",
+      "art": "art/02-remake-cut.png",
+      "description": "Three unequal hand shots: clean harvest basket on path, Kou cuts garden-leaf crop above soil carefully, leaves placed gently without crushing or dirty roots. Elna watches. Only selected mature sections harvested.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 90,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-cut.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4a71a7459bbd911f698cdd2c2987c9ca8101c921b579a5ebeefc7ad756e652ae",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 544
+      },
+      "sourceId": "02-remake-cut",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-cut-window-02",
+      "art": "art/02-remake-cut.png",
+      "description": "Three unequal hand shots: clean harvest basket on path, Kou cuts garden-leaf crop above soil carefully, leaves placed gently without crushing or dirty roots. Elna watches. Only selected mature sections harvested.",
       "dialogue": [
         [
           "コウ",
@@ -35,62 +325,360 @@
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 70,
-      "prompt": "generation/02-cut.prompt.txt",
-      "description": "Three unequal hand shots: clean harvest basket on path, Kou cuts garden-leaf crop above soil carefully, leaves placed gently without crushing or dirty roots. Elna watches. Only selected mature sections harvested.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "90abf3d8f5f7088c92f35c29b8aba059c1bce34935bc74ca16ade9beb505586d"
+      "pauseAt390": 180,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-cut.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4a71a7459bbd911f698cdd2c2987c9ca8101c921b579a5ebeefc7ad756e652ae",
+      "crop": {
+        "x": 0,
+        "y": 544,
+        "width": 724,
+        "height": 366
+      },
+      "sourceId": "02-remake-cut",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     },
     {
-      "id": "03-grade",
-      "art": "art/03-grade.png",
+      "id": "02-remake-cut-window-03",
+      "art": "art/02-remake-cut.png",
+      "description": "Three unequal hand shots: clean harvest basket on path, Kou cuts garden-leaf crop above soil carefully, leaves placed gently without crushing or dirty roots. Elna watches. Only selected mature sections harvested.",
+      "dialogue": [
+        [
+          "エルナ",
+          "籠は、道に置いておく。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 60,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-cut.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4a71a7459bbd911f698cdd2c2987c9ca8101c921b579a5ebeefc7ad756e652ae",
+      "crop": {
+        "x": 0,
+        "y": 910,
+        "width": 724,
+        "height": 358
+      },
+      "sourceId": "02-remake-cut",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-cut-window-04",
+      "art": "art/02-remake-cut.png",
+      "description": "Three unequal hand shots: clean harvest basket on path, Kou cuts garden-leaf crop above soil carefully, leaves placed gently without crushing or dirty roots. Elna watches. Only selected mature sections harvested.",
+      "dialogue": [
+        [
+          "コウ",
+          "育った二区画だけ、今日は採ろう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 140,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-cut.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4a71a7459bbd911f698cdd2c2987c9ca8101c921b579a5ebeefc7ad756e652ae",
+      "crop": {
+        "x": 0,
+        "y": 1268,
+        "width": 724,
+        "height": 424
+      },
+      "sourceId": "02-remake-cut",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-cut-window-05",
+      "art": "art/02-remake-cut.png",
+      "description": "Three unequal hand shots: clean harvest basket on path, Kou cuts garden-leaf crop above soil carefully, leaves placed gently without crushing or dirty roots. Elna watches. Only selected mature sections harvested.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-cut.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4a71a7459bbd911f698cdd2c2987c9ca8101c921b579a5ebeefc7ad756e652ae",
+      "crop": {
+        "x": 0,
+        "y": 1692,
+        "width": 724,
+        "height": 480
+      },
+      "sourceId": "02-remake-cut",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-grade-window-01",
+      "art": "art/03-remake-grade.png",
+      "description": "Elna and Kou sort leaves at designated utility table, usable irregular small leaves in one basket, damaged leaves separately in reject tray. Closeups genuine leaves and hands. Do not present rotten material as food.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 45,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-grade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43b7b52aa7ec8b4e81e7b2fc319f51892ade94ce572de8908f1954702ed447a5",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 577
+      },
+      "sourceId": "03-remake-grade",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-grade-window-02",
+      "art": "art/03-remake-grade.png",
+      "description": "Elna and Kou sort leaves at designated utility table, usable irregular small leaves in one basket, damaged leaves separately in reject tray. Closeups genuine leaves and hands. Do not present rotten material as food.",
       "dialogue": [
         [
           "コウ",
           "重さと、使える分を分ける。"
-        ],
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 24,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-grade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43b7b52aa7ec8b4e81e7b2fc319f51892ade94ce572de8908f1954702ed447a5",
+      "crop": {
+        "x": 0,
+        "y": 577,
+        "width": 724,
+        "height": 357
+      },
+      "sourceId": "03-remake-grade",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-grade-window-03",
+      "art": "art/03-remake-grade.png",
+      "description": "Elna and Kou sort leaves at designated utility table, usable irregular small leaves in one basket, damaged leaves separately in reject tray. Closeups genuine leaves and hands. Do not present rotten material as food.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 130,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-grade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43b7b52aa7ec8b4e81e7b2fc319f51892ade94ce572de8908f1954702ed447a5",
+      "crop": {
+        "x": 0,
+        "y": 934,
+        "width": 724,
+        "height": 187
+      },
+      "sourceId": "03-remake-grade",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-grade-window-04",
+      "art": "art/03-remake-grade.png",
+      "description": "Elna and Kou sort leaves at designated utility table, usable irregular small leaves in one basket, damaged leaves separately in reject tray. Closeups genuine leaves and hands. Do not present rotten material as food.",
+      "dialogue": [
         [
           "エルナ",
           "小さくても、使える葉はある。"
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 90,
-      "prompt": "generation/03-grade.prompt.txt",
-      "description": "Elna and Kou sort leaves at designated utility table, usable irregular small leaves in one basket, damaged leaves separately in reject tray. Closeups genuine leaves and hands. Do not present rotten material as food.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "983b9809c9297a3dd2dd2272c77cbc4677f6b4723fd062b9e198ae79949901d2"
+      "pauseAt390": 910,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-grade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43b7b52aa7ec8b4e81e7b2fc319f51892ade94ce572de8908f1954702ed447a5",
+      "crop": {
+        "x": 0,
+        "y": 1121,
+        "width": 724,
+        "height": 344
+      },
+      "sourceId": "03-remake-grade",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     },
     {
-      "id": "04-weigh",
-      "art": "art/04-weigh.png",
+      "id": "03-remake-grade-window-05",
+      "art": "art/03-remake-grade.png",
+      "description": "Elna and Kou sort leaves at designated utility table, usable irregular small leaves in one basket, damaged leaves separately in reject tray. Closeups genuine leaves and hands. Do not present rotten material as food.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 80,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-grade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43b7b52aa7ec8b4e81e7b2fc319f51892ade94ce572de8908f1954702ed447a5",
+      "crop": {
+        "x": 0,
+        "y": 1465,
+        "width": 724,
+        "height": 233
+      },
+      "sourceId": "03-remake-grade",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-grade-window-06",
+      "art": "art/03-remake-grade.png",
+      "description": "Elna and Kou sort leaves at designated utility table, usable irregular small leaves in one basket, damaged leaves separately in reject tray. Closeups genuine leaves and hands. Do not present rotten material as food.",
+      "dialogue": [
+        [
+          "コウ",
+          "傷んだ分とは、混ぜないでおこう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-grade.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "43b7b52aa7ec8b4e81e7b2fc319f51892ade94ce572de8908f1954702ed447a5",
+      "crop": {
+        "x": 0,
+        "y": 1698,
+        "width": 724,
+        "height": 474
+      },
+      "sourceId": "03-remake-grade",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-weigh-window-01",
+      "art": "art/04-remake-weigh.png",
+      "description": "Mechanical beam scale weighing baskets, Kou records simple tally in notebook, Elna sees modest harvest. No giant produce mountain; approximately five kilograms usable total across harvested sections.",
       "dialogue": [
         [
           "コウ",
           "使える分は、五キロほど。"
-        ],
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 65,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-weigh.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "f0148bee577ac83d5c0c0956ff9e9aad4458e6cfb4504488e0b56409480ac9da",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 1108
+      },
+      "sourceId": "04-remake-weigh",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-weigh-window-02",
+      "art": "art/04-remake-weigh.png",
+      "description": "Mechanical beam scale weighing baskets, Kou records simple tally in notebook, Elna sees modest harvest. No giant produce mountain; approximately five kilograms usable total across harvested sections.",
+      "dialogue": [
         [
           "エルナ",
           "まず、この量で考えよう。"
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 110,
-      "prompt": "generation/04-weigh.prompt.txt",
-      "description": "Mechanical beam scale weighing baskets, Kou records simple tally in notebook, Elna sees modest harvest. No giant produce mountain; approximately five kilograms usable total across harvested sections.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "988d6c34c76b178e33bcaf730110410aca31ac58a95e5cee730aec18d7b677fd"
+      "pauseAt390": 200,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-weigh.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "f0148bee577ac83d5c0c0956ff9e9aad4458e6cfb4504488e0b56409480ac9da",
+      "crop": {
+        "x": 0,
+        "y": 1108,
+        "width": 724,
+        "height": 356
+      },
+      "sourceId": "04-remake-weigh",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     },
     {
-      "id": "05-kitchen",
-      "art": "art/05-kitchen-sequence-fixed.png",
+      "id": "04-remake-weigh-window-03",
+      "art": "art/04-remake-weigh.png",
+      "description": "Mechanical beam scale weighing baskets, Kou records simple tally in notebook, Elna sees modest harvest. No giant produce mountain; approximately five kilograms usable total across harvested sections.",
+      "dialogue": [
+        [
+          "コウ",
+          "残した区画は、まだ待つ。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-weigh.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "f0148bee577ac83d5c0c0956ff9e9aad4458e6cfb4504488e0b56409480ac9da",
+      "crop": {
+        "x": 0,
+        "y": 1464,
+        "width": 724,
+        "height": 708
+      },
+      "sourceId": "04-remake-weigh",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-kitchen-window-01",
+      "art": "art/05-remake-kitchen.png",
+      "description": "Kitchen washed harvest transferred separately, Elna slices leaves to bite-sized pieces, Kou sets clean bowl; three different-size closeups and medium cooking view. Stable cream apron and blue headscarf.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 40,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-kitchen.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5a7c580701744237eabf20577caa317f0af33bd432b0120b8aeb549fde3398f6",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 408
+      },
+      "sourceId": "05-remake-kitchen",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-kitchen-window-02",
+      "art": "art/05-remake-kitchen.png",
+      "description": "Kitchen washed harvest transferred separately, Elna slices leaves to bite-sized pieces, Kou sets clean bowl; three different-size closeups and medium cooking view. Stable cream apron and blue headscarf.",
       "dialogue": [
         [
           "エルナ",
           "この大きさなら、使いやすい。"
+        ],
+        [
+          "コウ",
+          "洗っても、しっかりしてる。"
         ],
         [
           "エルナ",
@@ -98,23 +686,31 @@
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 80,
-      "prompt": "generation/05-kitchen.prompt.txt",
-      "description": "Kitchen washed harvest transferred separately, Elna slices leaves to bite-sized pieces, Kou sets clean bowl; three different-size closeups and medium cooking view. Stable cream apron and blue headscarf.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "762e7e9124681ba1a666611b713ac127d251cdaf12b577e843b996a35c2cc19c",
-      "edits": [
-        {
-          "prompt": "generation/05-kitchen-sequence-fixed.prompt.txt",
-          "record": "generation/05-kitchen-sequence-fixed.json"
-        }
-      ]
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-kitchen.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5a7c580701744237eabf20577caa317f0af33bd432b0120b8aeb549fde3398f6",
+      "crop": {
+        "x": 0,
+        "y": 408,
+        "width": 724,
+        "height": 1764
+      },
+      "sourceId": "05-remake-kitchen",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     },
     {
-      "id": "06-meal-reveal",
-      "art": "art/06-meal-reveal.png",
+      "id": "06-remake-meal-reveal-window-01",
+      "art": "art/06-remake-meal-reveal.png",
+      "description": "Large borderless appetizing hero composition: steaming grain-and-meat bowl topped with bright freshly cooked garden-leaf greens, bowl near auburn young adult customer's rough hands, lower warm eager face before first bite. Food richly drawn, no added text except exact small speech balloon.",
       "dialogue": [
+        [
+          "エルナ",
+          "お待たせしました。"
+        ],
         [
           "客",
           "いただきます。"
@@ -122,47 +718,227 @@
       ],
       "layout": "hero",
       "pauseAt390": 160,
-      "prompt": "generation/06-meal-reveal.prompt.txt",
-      "description": "Large borderless appetizing hero composition: steaming grain-and-meat bowl topped with bright freshly cooked garden-leaf greens, bowl near auburn young adult customer's rough hands, lower warm eager face before first bite. Food richly drawn, no added text except exact small speech balloon.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "1db551e6f507eb5870242c361be791d91d387337a38cf0d87b7913ae4076e406"
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-meal-reveal.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "9da734545492f6d07ed835d5f9a12643635efdf8c33307bd1c8516d517b861e4",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 1873
+      },
+      "sourceId": "06-remake-meal-reveal",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     },
     {
-      "id": "07-earned",
-      "art": "art/07-earned-dish-fixed.png",
+      "id": "06-remake-meal-reveal-window-02",
+      "art": "art/06-remake-meal-reveal.png",
+      "description": "Large borderless appetizing hero composition: steaming grain-and-meat bowl topped with bright freshly cooked garden-leaf greens, bowl near auburn young adult customer's rough hands, lower warm eager face before first bite. Food richly drawn, no added text except exact small speech balloon.",
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-meal-reveal.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "9da734545492f6d07ed835d5f9a12643635efdf8c33307bd1c8516d517b861e4",
+      "crop": {
+        "x": 0,
+        "y": 1873,
+        "width": 724,
+        "height": 299
+      },
+      "sourceId": "06-remake-meal-reveal",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-earned-window-01",
+      "art": "art/07-remake-earned.png",
+      "description": "Three panels: customer enjoys first bite silently; closeup Kou's relieved face after weeks of waiting; Elna beside him with soft pleased expression. Calm adult emotion, no instant buff numbers. Diner warm, crop plot distant.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 65,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-earned.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "fc110869565c378a135af9fbea1bad50b6f6421731be1c8680c938d70d31295f",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 602
+      },
+      "sourceId": "07-remake-earned",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-earned-window-02",
+      "art": "art/07-remake-earned.png",
+      "description": "Three panels: customer enjoys first bite silently; closeup Kou's relieved face after weeks of waiting; Elna beside him with soft pleased expression. Calm adult emotion, no instant buff numbers. Diner warm, crop plot distant.",
+      "dialogue": [
+        [
+          "客",
+          "……うまい。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 30,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-earned.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "fc110869565c378a135af9fbea1bad50b6f6421731be1c8680c938d70d31295f",
+      "crop": {
+        "x": 0,
+        "y": 602,
+        "width": 724,
+        "height": 480
+      },
+      "sourceId": "07-remake-earned",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-earned-window-03",
+      "art": "art/07-remake-earned.png",
+      "description": "Three panels: customer enjoys first bite silently; closeup Kou's relieved face after weeks of waiting; Elna beside him with soft pleased expression. Calm adult emotion, no instant buff numbers. Diner warm, crop plot distant.",
       "dialogue": [
         [
           "コウ",
           "やっと、畑が皿になった。"
-        ],
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 130,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-earned.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "fc110869565c378a135af9fbea1bad50b6f6421731be1c8680c938d70d31295f",
+      "crop": {
+        "x": 0,
+        "y": 1082,
+        "width": 724,
+        "height": 455
+      },
+      "sourceId": "07-remake-earned",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-earned-window-04",
+      "art": "art/07-remake-earned.png",
+      "description": "Three panels: customer enjoys first bite silently; closeup Kou's relieved face after weeks of waiting; Elna beside him with soft pleased expression. Calm adult emotion, no instant buff numbers. Diner warm, crop plot distant.",
+      "dialogue": [
         [
           "エルナ",
           "私も、待ってた。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 150,
-      "prompt": "generation/07-earned.prompt.txt",
-      "description": "Three panels: customer enjoys first bite silently; closeup Kou's relieved face after weeks of waiting; Elna beside him with soft pleased expression. Calm adult emotion, no instant buff numbers. Diner warm, crop plot distant.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "adc2aca9415403e77efbd064e96688e5a4390fa3d6b8fab8deb9a2bccbdbd391",
-      "edits": [
-        {
-          "prompt": "generation/07-earned-dish-fixed.prompt.txt",
-          "record": "generation/07-earned-dish-fixed.json"
-        }
-      ]
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-earned.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "fc110869565c378a135af9fbea1bad50b6f6421731be1c8680c938d70d31295f",
+      "crop": {
+        "x": 0,
+        "y": 1537,
+        "width": 724,
+        "height": 635
+      },
+      "sourceId": "07-remake-earned",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     },
     {
-      "id": "08-deliver-next",
-      "art": "art/08-deliver-next-empty-crates.png",
+      "id": "08-remake-deliver-next-window-01",
+      "art": "art/08-remake-deliver-next.png",
+      "description": "Warm evening kitchen, Kou and Elna prepare clean containers beside remaining harvest basket, Leon at doorway confirms next morning delivery. No already-packed food stored overnight: preparation is containers and schedule.",
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 140,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-deliver-next.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "385f5c89dfb9b3047fc9f1383e36534bc37301b9cb6041996307aac5018e8b90",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 448
+      },
+      "sourceId": "08-remake-deliver-next",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-deliver-next-window-02",
+      "art": "art/08-remake-deliver-next.png",
+      "description": "Warm evening kitchen, Kou and Elna prepare clean containers beside remaining harvest basket, Leon at doorway confirms next morning delivery. No already-packed food stored overnight: preparation is containers and schedule.",
       "dialogue": [
         [
           "コウ",
           "採れた。次は、届ける番だ。"
-        ],
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 210,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-deliver-next.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "385f5c89dfb9b3047fc9f1383e36534bc37301b9cb6041996307aac5018e8b90",
+      "crop": {
+        "x": 0,
+        "y": 448,
+        "width": 724,
+        "height": 309
+      },
+      "sourceId": "08-remake-deliver-next",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-deliver-next-window-03",
+      "art": "art/08-remake-deliver-next.png",
+      "description": "Warm evening kitchen, Kou and Elna prepare clean containers beside remaining harvest basket, Leon at doorway confirms next morning delivery. No already-packed food stored overnight: preparation is containers and schedule.",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日は、容器と段取りだけ。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 100,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-deliver-next.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "385f5c89dfb9b3047fc9f1383e36534bc37301b9cb6041996307aac5018e8b90",
+      "crop": {
+        "x": 0,
+        "y": 757,
+        "width": 724,
+        "height": 442
+      },
+      "sourceId": "08-remake-deliver-next",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-deliver-next-window-04",
+      "art": "art/08-remake-deliver-next.png",
+      "description": "Warm evening kitchen, Kou and Elna prepare clean containers beside remaining harvest basket, Leon at doorway confirms next morning delivery. No already-packed food stored overnight: preparation is containers and schedule.",
+      "dialogue": [
         [
           "レオン",
           "明日の便、待っている。"
@@ -170,17 +946,64 @@
       ],
       "layout": "hero",
       "pauseAt390": 180,
-      "prompt": "generation/08-deliver-next.prompt.txt",
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-deliver-next.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "385f5c89dfb9b3047fc9f1383e36534bc37301b9cb6041996307aac5018e8b90",
+      "crop": {
+        "x": 0,
+        "y": 1199,
+        "width": 724,
+        "height": 308
+      },
+      "sourceId": "08-remake-deliver-next",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-deliver-next-window-05",
+      "art": "art/08-remake-deliver-next.png",
       "description": "Warm evening kitchen, Kou and Elna prepare clean containers beside remaining harvest basket, Leon at doorway confirms next morning delivery. No already-packed food stored overnight: preparation is containers and schedule.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "c55bd8803a42cabd07146e4ef4a52bba36099e4c838216319762e6c8a0dae29f",
-      "edits": [
-        {
-          "prompt": "generation/08-deliver-next-empty-crates.prompt.txt",
-          "record": "generation/08-deliver-next-empty-crates.json"
-        }
-      ]
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 270,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-deliver-next.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "385f5c89dfb9b3047fc9f1383e36534bc37301b9cb6041996307aac5018e8b90",
+      "crop": {
+        "x": 0,
+        "y": 1507,
+        "width": 724,
+        "height": 231
+      },
+      "sourceId": "08-remake-deliver-next",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-deliver-next-window-06",
+      "art": "art/08-remake-deliver-next.png",
+      "description": "Warm evening kitchen, Kou and Elna prepare clean containers beside remaining harvest basket, Leon at doorway confirms next morning delivery. No already-packed food stored overnight: preparation is containers and schedule.",
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-deliver-next.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "385f5c89dfb9b3047fc9f1383e36534bc37301b9cb6041996307aac5018e8b90",
+      "crop": {
+        "x": 0,
+        "y": 1738,
+        "width": 724,
+        "height": 434
+      },
+      "sourceId": "08-remake-deliver-next",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     }
   ]
 }
