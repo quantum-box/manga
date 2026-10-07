@@ -25,10 +25,10 @@
 
 ## 制作知見と再利用スキル
 
-新作企画案：[星環のレガリア](docs/star-ring-regalia/series/bible.md)。剣と魔法の世界と日本をゲームでつなぐ、200話以上を目標とするシリーズ案。世界観・人物・240話の仮構成・導入10話の設計を収録。脚本・作画・公開は未制作。
+新連載：[星環のレガリア 第1話「補欠の空」](examples/star-ring-regalia/episode-01/index.html)。8原画と日本語縦書き、[単体リーダー](examples/star-ring-regalia/episode-01/reader.html)、スマホ検証、カタログ・iOS同梱版を収録。[企画](docs/star-ring-regalia/series/bible.md)は200話以上を目標に、世界観・人物・240話の仮構成・導入10話の先行設計を含む。今回の完成原稿は第1話。サーバー公開はこのPRのマージ後に行う。
 
 1. [制作で採用した知見](docs/webtoon-production.md)：広い余白、密度の変化、登場順、文字の分離、スマホ検証。
-2. [Webtoonスキル](skills/webtoon/SKILL.md)：全体話数を50話・100話・200話以上から選び、世界観・人物・物語を設計。初回1〜10話の制作、作画とスマホ確認まで仕上げる。
+2. [Webtoonスキル](skills/webtoon/SKILL.md)：全体話数を50話・100話・200話以上から選び、世界観・人物・物語を設計。このリポジトリでは[AGENTS.md](AGENTS.md)に従い、一話の作画・スマホ確認、PR、マージ、サーバー公開確認を終えてから次話を作画する。
 3. [武侠・転生・回帰の調査](docs/murim-reincarnation.md)：公式作品ページとオリジナル第1話の企画。
 4. [初期のWebtoon再調査](docs/webtoon-research.md)と[最初の企画メモ](docs/initial-proposal.md)：方向転換前の仮説と参考資料。
 
