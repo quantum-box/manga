@@ -38,6 +38,8 @@ python3 scripts/sync_ios_webtoons.py --check
 
 生成した`Webtoons`はコミットする。Xcodeのフォルダ参照でそのまま同梱するため、Xcode Cloudでも生成ツールの追加設定は不要。GitHub Actionsでは正本と同梱物の一致を確認する。
 
+読書画面のタイトルは「第N話 タイトル」を表示する。`edition`は制作・版管理用の情報として保持し、読書画面のタイトルや話一覧には表示しない。配信APIと端末に保存済みのカタログにも同じ表示方針を適用する。
+
 ## ビルド確認
 
 repoルートで実行する。
