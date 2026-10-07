@@ -51,7 +51,7 @@ def check_readme(text):
         if line.startswith("## "):
             in_work_list = line == "## 読める作品"
         if in_work_list and line.startswith("| ["):
-            description = line.split("|")[-2]
+            description = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", line)
             if PRODUCTION_LABEL.search(description):
                 raise ValueError(f"Production label in public work list: {description.strip()}")
 

@@ -1,11 +1,25 @@
 #!/usr/bin/env python3
 """Expose only the requested chapter after its original and phone review passes."""
-import json,re,sys,html
+import json,re,sys,html,time
+from urllib.request import urlopen,Request
 from pathlib import Path
 BASE=Path(__file__).resolve().parents[2]
 ROOT=BASE.parents[1]
 DATA=json.loads(Path(__file__).with_name('episodes.json').read_text())
+def require_previous(n):
+ if n<=11:return
+ p=BASE/f'episode-{n-1:02d}'/'delivery.json'
+ if not p.is_file():raise ValueError(f'Previous episode {n-1} has no verified delivery')
+ record=json.loads(p.read_text())
+ for key in ('publicJSON','publicImageHashes','catalog'):
+  if record.get(key)!='passed':raise ValueError(f'Previous delivery unverified: {key}')
+ if not str(record.get('browserReview','')).startswith('passed') or not record.get('mergeCommit'):raise ValueError('Previous merge/browser verification missing')
+ with urlopen(Request('https://manga-server.txcloud.app/api/v1/catalog?refresh='+str(time.time_ns()),headers={'User-Agent':'manga-publisher/1.0','Cache-Control':'no-cache'}),timeout=30) as response:catalog=json.load(response)
+ series=next(s for s in catalog if s['id']=='online-tower-farm-kitchen')
+ if not any(e['number']==n-1 and e['id']==record['id'] for e in series['episodes']):raise ValueError('Previous verified episode absent from live catalog')
+
 def update(n):
+ require_previous(n)
  ep=next(e for e in DATA if e['number']==n)
  d=BASE/f'episode-{n:02d}'
  validation=json.loads((d/'validation.json').read_text())
