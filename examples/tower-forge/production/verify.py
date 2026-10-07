@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the adopted art, standalone readers and saved phone evidence."""
+"""Verify the adopted art, readers and saved phone evidence."""
 import base64
 import hashlib
 import json
@@ -53,13 +53,22 @@ def check():
             assert data.startswith(b'\x89PNG\r\n\x1a\n'), (n,i)
             assert hashlib.sha256(data).hexdigest()==asset['sha256'], (n,i)
             uri=packed.images[i-1]
-            assert uri.startswith('data:image/png;base64,'), (n,i)
-            assert base64.b64decode(uri.split(',',1)[1])==data, (n,i)
+            if ep.get('revision') == 'continuation-2026-10-07':
+                assert uri==filename, (n,i)
+                assert (d/'reader.html').read_bytes()==(d/'index.html').read_bytes(), n
+            else:
+                assert uri.startswith('data:image/png;base64,'), (n,i)
+                assert base64.b64decode(uri.split(',',1)[1])==data, (n,i)
         for link in source.links:
             path=urlsplit(link).path
             assert not path or (d/unquote(path)).is_file(), (n,link)
         review=json.loads((d/'validation.json').read_text())
         assert review['raster_lettering_visual'] in [True,'reviewed_at_both_widths'], n
+        if ep.get('revision') == 'continuation-2026-10-07':
+            assert review['revision'] == ep['revision'], n
+            assert review['sceneCount'] == count, n
+            assert review['adopted_sha256'] == [a['sha256'] for a in assets], n
+            assert review['reader_sha256'] == hashlib.sha256((d/'index.html').read_bytes()).hexdigest(), n
         for width in [390,360]:
             full=next((x for x in review.get('full_reader_captures',[]) if x['width']==width),None)
             if full:
@@ -71,9 +80,10 @@ def check():
                     y+=part['height']
                 assert y==full['pageHeight'],(n,width,y)
             else:
+                assert ep.get('revision') != 'continuation-2026-10-07', (n,width,'missing current full reader capture')
                 assert (d/f'webtoon-{width}.jpg').is_file(), (n,width)
             assert all((d/f'validation/scene-{i:02d}-{width}.jpg').is_file() for i in range(1,count+1)), (n,width)
-            if ep.get('game_revision'):
+            if ep.get('game_revision') or ep.get('revision'):
                 assert sum(len(s['panels']) for s in ep['scenes'])==ep['narrative_panel_count']
                 for i,asset in enumerate(assets,1):
                     actual=jpeg_size(d/f'validation/scene-{i:02d}-{width}.jpg')
@@ -82,6 +92,6 @@ def check():
         image_count += count
     status=json.loads((ROOT/'production/build-status.json').read_text())
     assert status['ready_episodes']==list(range(1,11))
-    print(f'Verified 10 readers, {image_count} adopted PNGs, identical embedded images, {image_count*2} phone scene captures. This does not prove story quality.')
+    print(f'Verified 10 readers, {image_count} adopted PNGs, matching reader bytes/references, {image_count*2} phone scene captures. This does not prove story quality.')
 
 if __name__=='__main__': check()

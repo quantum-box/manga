@@ -41,9 +41,24 @@ tachyon compute logs manga-server --tenant-id <tenant>
 画像名は上書き不可。修正画像は新しい名前でアップロードしJSONの参照を更新する。
 秘密トークンを読者やブラウザに渡さない。
 
+### 一話ずつ公開する
+
+連載は各話のPR・CI・レビュー・mainマージを終えてから、その話だけを公開する。
+塔を灯す剣は、Pillowが使えるPythonで採用PNGを無加工で書き出し、白い間を比例画像として保持する。
+
+```sh
+python3 examples/tower-forge/production/export.py /tmp/tower-forge-episode-02-publication --episode 2
+python3 scripts/publish_latest_webtoons.py /tmp/tower-forge-episode-02-publication --dry-run
+# MANGA_ADMIN_TOKEN は本番管理トークン。ブラウザやGitへ渡さない。
+python3 scripts/publish_latest_webtoons.py /tmp/tower-forge-episode-02-publication --retire-previous
+python3 scripts/publish_latest_webtoons.py /tmp/tower-forge-episode-02-publication --verify-only
+```
+
+manifestの `seriesIds` と `chapterNumbers` で対象を検証する。上の例では第2話だけを公開・旧版整理し、第1話、第3話以降、他作品には触れない。画像を先に保存し、本文JSONを公開して全画像のSHA-256とカタログ情報を読み戻す。
+
 ### 全作品を採用版だけに更新する
 
-`content/catalog.json`の各話の先頭版を正本として、6作品42話をまとめて反映する。
+`content/catalog.json`の各話の先頭版を正本として、明示的に全作品更新が必要な場合だけまとめて反映する。
 原稿HTMLと参照画像のハッシュを公開IDに含めるため、新旧の本文画像は衝突しない。
 Playwright（Chromium）、Pillow、Node.jsを用意して実行する。
 
@@ -75,7 +90,7 @@ python3 scripts/publish_latest_webtoons.py /tmp/manga-publish-output --verify-on
 | DELETE `/admin/episodes/:id` | Bearer認証付き公開解除（一覧キャッシュも更新。画像の原本は保持） |
 | DELETE `/admin/images/:id` | Bearer認証付き画像実体削除。公開中は409。1回で最大1000件、`remaining: true`なら再実行 |
 
-現段階は無料公開・単一管理者のMVP。作品グルーピング、課金、読者アカウント、
+現段階は無料公開・単一管理者のMVP。課金、読者アカウント、
 管理画面、画像変換、1000件超のページング、未公開画像の自動回収は未実装。
 デプロイ後は画像アップロード→公開→読者GETの実データ照合を行い、管理者用PUTが
 トークン無しで401になることを確認する。

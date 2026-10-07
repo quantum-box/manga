@@ -21,6 +21,8 @@ pub fn identify(id: &str, title: &str) -> SeriesInfo {
         ("zero-break", "ゼロ・ブレイク")
     } else if id.starts_with("tower-farm-kitchen-") {
         ("tower-farm-kitchen", "塔の農夫は、英雄を食わせる")
+    } else if id.starts_with("tower-forge-") {
+        ("tower-forge", "塔を灯す剣")
     } else if id.starts_with("star-ring-regalia-") {
         ("star-ring-regalia", "星環のレガリア")
     } else {
@@ -107,6 +109,19 @@ mod tests {
     fn unrelated_uploads_stay_separate() {
         assert_eq!(identify("new-work", "新作").id, "new-work");
         assert_eq!(identify("new-work", "新作").title, "新作");
+    }
+    #[test]
+    fn tower_forge_uploads_form_one_ten_chapter_series() {
+        for number in 1..=10 {
+            let id = format!("tower-forge-episode-{number:02}-r123abc");
+            let info = identify(&id, "different title");
+            assert_eq!(info.id, "tower-forge");
+            assert_eq!(info.title, "塔を灯す剣");
+            assert_eq!(info.number, number);
+            assert_eq!(chapter_title(&id, "chapter subtitle"), "chapter subtitle");
+        }
+        assert_eq!(identify("tower-forge-other", "").id, "tower-forge");
+        assert_eq!(identify("tower-farm-kitchen-episode-01-r123abc", "").id, "tower-farm-kitchen");
     }
     #[test]
     fn revision_ids_keep_series_chapter_numbers_and_new_titles() {
