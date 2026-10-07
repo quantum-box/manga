@@ -45,35 +45,34 @@ tachyon compute logs manga-server --tenant-id <tenant>
 
 連載は各話のPR・CI・レビュー・mainマージを終えてから、その話だけを公開する。
 塔を灯す剣は、Pillowが使えるPythonで採用PNGを無加工で書き出し、白い間を比例画像として保持する。
+初回は採用済みの第1話を先に公開し、全画像・カタログの読み戻しと公開リーダーの表示を確認する。
+第2話以降の公開処理は、一つ前の採用話が公開カタログに無ければアップロード前に停止する。
+各リリースに新しい空の出力先を使う。以前の書き出しや `backup` を使い回さない。
 
 ```sh
-python3 examples/tower-forge/production/export.py /tmp/tower-forge-episode-02-publication --episode 2
-python3 scripts/publish_latest_webtoons.py /tmp/tower-forge-episode-02-publication --dry-run
+chapter_output=$(mktemp -d /tmp/tower-forge-episode-01-XXXXXX)
+python3 examples/tower-forge/production/export.py "$chapter_output" --episode 1
+python3 scripts/publish_latest_webtoons.py "$chapter_output" --dry-run
 # MANGA_ADMIN_TOKEN は本番管理トークン。ブラウザやGitへ渡さない。
-python3 scripts/publish_latest_webtoons.py /tmp/tower-forge-episode-02-publication --retire-previous
-python3 scripts/publish_latest_webtoons.py /tmp/tower-forge-episode-02-publication --verify-only
+python3 scripts/publish_latest_webtoons.py "$chapter_output" --retire-previous
+python3 scripts/publish_latest_webtoons.py "$chapter_output" --verify-only
+# 第1話を公開リーダーでも確認してから第2話へ進む。
+chapter_output=$(mktemp -d /tmp/tower-forge-episode-02-XXXXXX)
+python3 examples/tower-forge/production/export.py "$chapter_output" --episode 2
+python3 scripts/publish_latest_webtoons.py "$chapter_output" --dry-run
+python3 scripts/publish_latest_webtoons.py "$chapter_output" --retire-previous
+python3 scripts/publish_latest_webtoons.py "$chapter_output" --verify-only
 ```
 
-manifestの `seriesIds` と `chapterNumbers` で対象を検証する。上の例では第2話だけを公開・旧版整理し、第1話、第3話以降、他作品には触れない。画像を先に保存し、本文JSONを公開して全画像のSHA-256とカタログ情報を読み戻す。
+manifestの `seriesIds` と `chapterNumbers` で対象を検証する。各回は一話だけを公開・旧版整理し、他の話や作品には触れない。`--episode` の複数指定は拒否する。画像を先に保存し、本文JSONを公開して全画像のSHA-256とカタログ情報を読み戻す。
 
-### 全作品を採用版だけに更新する
+### 公開処理の記録
 
-`content/catalog.json`の各話の先頭版を正本として、明示的に全作品更新が必要な場合だけまとめて反映する。
+`content/catalog.json`の各話の先頭版を正本として、作品・話ごとに採用版を反映する。
 原稿HTMLと参照画像のハッシュを公開IDに含めるため、新旧の本文画像は衝突しない。
-Playwright（Chromium）、Pillow、Node.jsを用意して実行する。
-
-```sh
-python3 scripts/export_latest_webtoons.py /tmp/manga-publish-output
-python3 scripts/publish_latest_webtoons.py /tmp/manga-publish-output --dry-run
-# MANGA_ADMIN_TOKEN は本番管理トークン。一時退避と書き出しは作業ツリー外で行う。
-python3 scripts/publish_latest_webtoons.py /tmp/manga-publish-output --retire-previous
-python3 scripts/publish_latest_webtoons.py /tmp/manga-publish-output --verify-only
-```
-
-書き出しは390 CSS px・1170画像px。原稿の本文部分だけを連続画像にし、表紙と読了文を別に持つ。
-全話のJSON・画像SHA-256・カタログの話名と版を読み戻して確認してから、旧版を公開停止して
+対象話のJSON・画像SHA-256・カタログの話名を読み戻して確認してから、同じ話の旧版を公開停止して
 画像実体も削除する。別の公開更新を検出した場合は削除前に停止する。
-公開処理中の一時退避は `/tmp/manga-publish-output/backup`、照合結果は同じ出力先の `published-checks.json` に保存する。リポジトリには採用版だけを残し、旧版はGitの履歴で管理する。
+公開処理中の一時退避は各出力先の `backup`、照合結果は同じ出力先の `published-checks.json` に保存する。出力先は作業ツリー外に置く。リポジトリには採用版だけを残し、旧版はGitの履歴で管理する。
 `--verify-only`は管理トークン不要で、公開データの読み戻しだけを行う。
 
 ## API

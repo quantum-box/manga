@@ -95,15 +95,51 @@ def owned_id(episode_id, series):
     return any(episode_id.startswith(s + "-") for s in series) or ("pochi" in series and episode_id == "pochis-handshake")
 
 
+LEGACY_CHAPTER_NUMBERS = {
+    "swordsaint-white-v2": 1,
+    "pochis-handshake": 1,
+    "pochi-page-v1": 1,
+    "pochi-page-v2": 1,
+    "star-lighthouse-v1": 1,
+    "zero-break-v1": 1,
+    "zero-break-v2": 1,
+    "zero-break-v3": 1,
+    "zero-break-v3-lettered-sample": 1,
+    "zero-break-v3-vertical-lettered-sample": 1,
+    "zero-break-v4": 1,
+    "zero-break-v5": 1,
+}
+
+
 def owned_chapter(episode_id, manifest):
     series = {c["series"] for c in manifest["chapters"]}
     if not owned_id(episode_id, series):
         return False
     if "chapterNumbers" not in manifest:
         return True
-    return any(re.match(re.escape(s) + r"-episode-(\d+)(?:-|$)", episode_id)
-               and int(re.match(re.escape(s) + r"-episode-(\d+)(?:-|$)", episode_id)[1])
-               in manifest["chapterNumbers"] for s in series)
+    number = LEGACY_CHAPTER_NUMBERS.get(episode_id)
+    if number is None:
+        match = next((m for s in series if (m := re.match(re.escape(s) + r"-episode-(\d+)(?:-|$)", episode_id))), None)
+        number = int(match[1]) if match else None
+    return number in manifest["chapterNumbers"]
+
+
+def require_previous_tower_chapter(client, manifest):
+    tower = [c for c in manifest["chapters"] if c["series"] == "tower-forge"]
+    if not tower:
+        return
+    if len(manifest["chapters"]) != 1:
+        raise ValueError("Each Tower Forge release must contain exactly one episode")
+    number = tower[0]["number"]
+    if number <= 1:
+        return
+    from export_latest_webtoons import adopted_chapters
+    previous = adopted_chapters(series_ids=["tower-forge"], chapter_numbers=[number - 1])[0]
+    try:
+        verify_catalog(client, {"chapters": [previous]})
+    except (KeyError, StopIteration, ValueError) as error:
+        raise ValueError(f"Publish and verify Tower Forge episode {number - 1} before episode {number}") from error
+    print(f"Confirmed preceding episode {number - 1} in the public catalog", flush=True)
 
 
 def backup_previous(client, folder, manifest):
@@ -215,6 +251,8 @@ def main():
     if args.verify_only and args.retire_previous:
         parser.error("Verification cannot retire editions")
     client = Client(manifest["baseURL"], token)
+    if not args.verify_only:
+        require_previous_tower_chapter(client, manifest)
     old_ids = [] if args.verify_only else backup_previous(client, folder, manifest)
     checks = []
     for chapter in manifest["chapters"]:

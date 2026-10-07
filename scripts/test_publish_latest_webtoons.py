@@ -5,7 +5,7 @@ import unittest
 from unittest.mock import patch
 
 from export_latest_webtoons import adopted_chapters
-from publish_latest_webtoons import backup_previous, load_manifest, owned_id, owned_chapter, retire_previous, sha256, verify_catalog
+from publish_latest_webtoons import backup_previous, load_manifest, owned_id, owned_chapter, require_previous_tower_chapter, retire_previous, sha256, verify_catalog
 
 
 class ClientFixture:
@@ -21,6 +21,47 @@ class ClientFixture:
 
 
 class PublicationSafetyTests(unittest.TestCase):
+    def test_tower_release_requires_preceding_adopted_chapter_before_mutation(self):
+        previous = dict(id="tower-forge-episode-01-radopted", series="tower-forge", number=1,
+                        subtitle="First chapter", edition="")
+        release = {"chapters": [dict(id="tower-forge-episode-02-rnew", series="tower-forge", number=2)]}
+        for episodes in [[], [dict(id="tower-forge-episode-01-rold", number=1, title="First chapter", edition="")]]:
+            client = ClientFixture(catalog=[dict(id="online-tower-forge", episodes=episodes)])
+            with patch("export_latest_webtoons.adopted_chapters", return_value=[previous]):
+                with self.assertRaisesRegex(ValueError, "episode 1 before episode 2"):
+                    require_previous_tower_chapter(client, release)
+            self.assertEqual(client.mutations, [])
+        client = ClientFixture(catalog=[dict(id="online-tower-forge", episodes=[
+            dict(id=previous["id"], number=1, title="First chapter", edition="")])])
+        with patch("export_latest_webtoons.adopted_chapters", return_value=[previous]) as resolve:
+            require_previous_tower_chapter(client, release)
+            resolve.assert_called_once_with(series_ids=["tower-forge"], chapter_numbers=[1])
+        self.assertEqual(client.mutations, [])
+        require_previous_tower_chapter(ClientFixture(), {"chapters": [dict(series="tower-forge", number=1)]})
+        with self.assertRaisesRegex(ValueError, "exactly one episode"):
+            require_previous_tower_chapter(ClientFixture(), {"chapters": release["chapters"] * 2})
+
+    def test_scoped_backup_includes_legacy_first_chapter_ids(self):
+        for series, legacy in [("pochi", "pochis-handshake"), ("pochi", "pochi-page-v2"),
+                               ("zero-break", "zero-break-v5"), ("zero-break", "zero-break-v3-vertical-lettered-sample"),
+                               ("swordsaint", "swordsaint-white-v2"), ("star-lighthouse", "star-lighthouse-v1")]:
+            with self.subTest(legacy=legacy), tempfile.TemporaryDirectory() as temporary:
+                new_id = series + "-episode-01-rnew"
+                manifest = {"chapterNumbers": [1], "chapters": [dict(id=new_id, series=series, number=1)]}
+                other = series + "-episode-02-rold"
+                client = ClientFixture(ids=[new_id, legacy, other, "unrelated-episode-01"])
+                def request(path, method="GET", **_kwargs):
+                    self.assertEqual(method, "GET")
+                    self.assertIn(legacy, path)
+                    client.mutations.append((path, method))
+                    return json.dumps(dict(cover="art.png", blocks=[])).encode() if path.startswith("/api/") else b"old art"
+                client.request = request
+                folder = Path(temporary)
+                self.assertEqual(backup_previous(client, folder, manifest), [legacy])
+                self.assertEqual((folder / "backup" / legacy / "art.png").read_bytes(), b"old art")
+                self.assertFalse(owned_chapter(legacy, dict(manifest, chapterNumbers=[2])))
+                self.assertFalse(owned_chapter(other, manifest))
+
     def test_single_chapter_release_leaves_other_chapters_live(self):
         manifest = {"seriesIds": ["tower-forge"], "chapterNumbers": [2],
                     "chapters": [{"id": "tower-forge-episode-02-rnew", "series": "tower-forge", "number": 2}]}

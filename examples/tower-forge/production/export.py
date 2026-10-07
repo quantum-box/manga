@@ -17,9 +17,14 @@ from export_latest_webtoons import adopted_chapters, digest
 
 
 def export(output, numbers):
+    if (not isinstance(numbers, list) or len(numbers) != 1
+            or type(numbers[0]) is not int or numbers[0] < 1):
+        raise ValueError("Each release must export exactly one episode")
+    if output.exists() and any(output.iterdir()):
+        raise ValueError("Use a new empty output directory for each release")
+    chapters = adopted_chapters(series_ids=["tower-forge"], chapter_numbers=numbers)
     from PIL import Image
     output.mkdir(parents=True, exist_ok=True)
-    chapters = adopted_chapters(series_ids=["tower-forge"], chapter_numbers=numbers)
     for chapter in chapters:
         folder = SERIES / f"episode-{chapter['number']:02d}"
         script = json.loads((folder / "episode.json").read_text())
@@ -76,6 +81,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", type=Path)
     parser.add_argument("--episode", type=int, action="append", required=True,
-                        help="Package only this adopted episode")
+                        help="Package one adopted episode; repeated options are rejected")
     args = parser.parse_args()
     export(args.output.resolve(), args.episode)
