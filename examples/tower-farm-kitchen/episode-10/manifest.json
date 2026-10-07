@@ -2,11 +2,14 @@
   "number": 10,
   "title": "帰ってくる場所",
   "time": "42日目",
+  "change": "次の収穫と代替仕入れで16食の営業を続ける。共同経営の約束と保守手順を残し、上層の需要へつなぐ。",
   "state": "第二播種の一部と遅れていた第一播種区画を収穫。全48m²の安定供給実績はまだない。16食は自給と仕入れを合わせた営業枠。",
-  "scenes": [
+  "revision": "2026-10-07-following-remake",
+  "sources": [
     {
-      "id": "01-second-harvest",
-      "art": "art/01-second-harvest-crop-fixed.png",
+      "id": "01-remake-second-harvest",
+      "art": "art/01-remake-second-harvest.png",
+      "description": "Same four beds with age-staggered sections: Kou and Balt harvest newly ready section while earlier harvested section is bare or freshly resown and younger sections remain smaller. Twine markers visible. Two hand closeups plus broad context.",
       "dialogue": [
         [
           "コウ",
@@ -15,25 +18,24 @@
         [
           "バルト",
           "予定が、少し読めてきたな。"
+        ],
+        [
+          "コウ",
+          "遅れていた列も、今日は採れる。"
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 120,
-      "prompt": "generation/01-second-harvest.prompt.txt",
-      "description": "Same four beds with age-staggered sections: Kou and Balt harvest newly ready section while earlier harvested section is bare or freshly resown and younger sections remain smaller. Twine markers visible. Two hand closeups plus broad context.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "176a2d5e821e7a0ccf00c8d621db8b7d941c3aa540e89ed33e1798c837fc0ee9",
-      "edits": [
-        {
-          "prompt": "generation/01-second-harvest-crop-fixed.prompt.txt",
-          "record": "generation/01-second-harvest-crop-fixed.json"
-        }
-      ]
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-second-harvest.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "57dd3a9068fe4cc5c01370995bd63d87808b01a5441ac2daf70d60aaa2260394"
     },
     {
-      "id": "02-sixteen",
-      "art": "art/02-sixteen-slots-fixed.png",
+      "id": "02-remake-sixteen",
+      "art": "art/02-remake-sixteen.png",
+      "description": "Elna at reservation ledger with sixteen simple small marks, Kou beside bought produce basket and own harvest; outside supplier acknowledges arrangement. Two unequal panels include limited supply clearly.",
       "dialogue": [
         [
           "エルナ",
@@ -42,25 +44,24 @@
         [
           "コウ",
           "足りない時の仕入れも、決めてある。"
+        ],
+        [
+          "エルナ",
+          "畑だけで、十六食ではないんだね。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 95,
-      "prompt": "generation/02-sixteen.prompt.txt",
-      "description": "Elna at reservation ledger with sixteen simple small marks, Kou beside bought produce basket and own harvest; outside supplier acknowledges arrangement. Two unequal panels include limited supply clearly.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "0337cdd6723c951ecc6b954ed3acd80331ea2b3e26eca34d786c01baeba38f53",
-      "edits": [
-        {
-          "prompt": "generation/02-sixteen-slots-fixed.prompt.txt",
-          "record": "generation/02-sixteen-slots-fixed.json"
-        }
-      ]
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-sixteen.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "f91c04f1227ae5f9c441ca44c0fe343b9b0b33486f3029d2d4ae36d1a40a726d"
     },
     {
-      "id": "03-partners",
-      "art": "art/03-partners.png",
+      "id": "03-remake-partners",
+      "art": "art/03-remake-partners.png",
+      "description": "Three intimate panels at clean diner counter: Elna earnest facing Kou, her hand placing shop key on table, Kou thoughtfully reaching to joint crop-and-menu notebook rather than seizing key. Adult respectful partnership.",
       "dialogue": [
         [
           "エルナ",
@@ -73,19 +74,24 @@
         [
           "コウ",
           "働く分も、きちんと分けよう。"
+        ],
+        [
+          "エルナ",
+          "うん。二人で、続けよう。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 150,
-      "prompt": "generation/03-partners.prompt.txt",
-      "description": "Three intimate panels at clean diner counter: Elna earnest facing Kou, her hand placing shop key on table, Kou thoughtfully reaching to joint crop-and-menu notebook rather than seizing key. Adult respectful partnership.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "9c7cf0fb2765e6ff3191a9ec4060855b4dc2fb696cb504d24026dcfd1d18ed6e"
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-partners.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5378eb3d536bf90156026137772725ba9e9a9bc358bc3d89bf9bd9a9358f51b7"
     },
     {
-      "id": "04-maintenance",
-      "art": "art/04-maintenance-sequence-fixed.png",
+      "id": "04-remake-maintenance",
+      "art": "art/04-remake-maintenance.png",
+      "description": "Iris shows Elna how to open removable irrigation filter housing beside sturdy tank stand; Kou stands back listening, not doing every task. Closeups demonstrate same fitting as episode four; no modern gadgets.",
       "dialogue": [
         [
           "イリス",
@@ -93,26 +99,29 @@
         ],
         [
           "エルナ",
+          "先に、水を止めるんだね。"
+        ],
+        [
+          "イリス",
+          "網を洗って、戻してから開く。"
+        ],
+        [
+          "エルナ",
           "直し方も、店に残しておく。"
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 75,
-      "prompt": "generation/04-maintenance.prompt.txt",
-      "description": "Iris shows Elna how to open removable irrigation filter housing beside sturdy tank stand; Kou stands back listening, not doing every task. Closeups demonstrate same fitting as episode four; no modern gadgets.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "fb07a9a9124e3605f10b3de5c5c9346c267d15ad2ec3b4b3102141f00bdcc9c6",
-      "edits": [
-        {
-          "prompt": "generation/04-maintenance-sequence-fixed.prompt.txt",
-          "record": "generation/04-maintenance-sequence-fixed.json"
-        }
-      ]
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-maintenance.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "0d77786ae9b50ef987f9e7fc9dc845e8d8edf98d729425c9c626fa6184952e42"
     },
     {
-      "id": "05-seed-future",
-      "art": "art/05-seed-future.png",
+      "id": "05-remake-seed-future",
+      "art": "art/05-remake-seed-future.png",
+      "description": "Balt and Kou beside small separate reserved seed-production strip of garden-leaf plants, a few plants left standing, NOT mature seed harvested already. Hand places plain marker, separate harvest basket for food.",
       "dialogue": [
         [
           "コウ",
@@ -121,19 +130,24 @@
         [
           "バルト",
           "売る分だけじゃ、先へ続かん。"
+        ],
+        [
+          "コウ",
+          "種ができるまでは、ここで育てよう。"
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 100,
-      "prompt": "generation/05-seed-future.prompt.txt",
-      "description": "Balt and Kou beside small separate reserved seed-production strip of garden-leaf plants, a few plants left standing, NOT mature seed harvested already. Hand places plain marker, separate harvest basket for food.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "eab34fe97b001df27ada986fef31f88d7185a9f5ced0bc945c29026adfdc815a"
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-seed-future.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "530b2ad5b45e5d427e8da5933a26ac28788baeb63256bb90cd8eea9c03841a82"
     },
     {
-      "id": "06-returner",
-      "art": "art/06-returner.png",
+      "id": "06-remake-returner",
+      "art": "art/06-remake-returner.png",
+      "description": "Large borderless warm diner entrance view: auburn young adult customer in ochre cloak returns slightly dusty from expedition, Elna smiles at serving window, empty familiar seat in foreground and hot meal ready. Kou assists quietly behind her, no duplicate character heads.",
       "dialogue": [
         [
           "客",
@@ -142,19 +156,24 @@
         [
           "エルナ",
           "おかえり。席、空いてる。"
+        ],
+        [
+          "客",
+          "……ここの匂いだ。"
         ]
       ],
       "layout": "hero",
-      "pauseAt390": 160,
-      "prompt": "generation/06-returner.prompt.txt",
-      "description": "Large borderless warm diner entrance view: auburn young adult customer in ochre cloak returns slightly dusty from expedition, Elna smiles at serving window, empty familiar seat in foreground and hot meal ready. Kou assists quietly behind her, no duplicate character heads.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "75d00fd00b66dd357d3ea1b0c220d4f95c228c86a177cbdc68d663399ac0f862"
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-returner.prompt.txt",
+      "width": 725,
+      "height": 2169,
+      "sha256": "18482ed2022aead0058d7764ac84529ceae63501fb1f8f26cc5613f19e2a52c4"
     },
     {
-      "id": "07-share-work",
-      "art": "art/07-share-work.png",
+      "id": "07-remake-share-work",
+      "art": "art/07-remake-share-work.png",
+      "description": "Kou and Elna share plain illustrated maintenance/crop notebook on porch, smaller montage Balt observing seedlings and Iris storing spare fitting; characters in separate successive frames, not simultaneously duplicated. Quiet achieved trust, no magical new world omniscience.",
       "dialogue": [
         [
           "コウ",
@@ -162,40 +181,849 @@
         ],
         [
           "エルナ",
+          "帰る道が、開いた時にも？"
+        ],
+        [
+          "コウ",
+          "うん。明日も、誰かがここで食べられるように。"
+        ],
+        [
+          "エルナ",
           "そのための店、だね。"
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 130,
-      "prompt": "generation/07-share-work.prompt.txt",
-      "description": "Kou and Elna share plain illustrated maintenance/crop notebook on porch, smaller montage Balt observing seedlings and Iris storing spare fitting; characters in separate successive frames, not simultaneously duplicated. Quiet achieved trust, no magical new world omniscience.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "4201987cfbbb4f3e73b53ec6d9cd302dd1f08aded361fec1086445d9c8cb04ca",
-      "narration": [
-        "42日目"
-      ]
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-share-work.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "7c856d10553739c4eac71284d40cc2cc3a40bde3d7203471b7a6a0b1b8503a42"
     },
     {
-      "id": "08-next-floor",
-      "art": "art/08-next-floor.png",
+      "id": "08-remake-next-floor",
+      "art": "art/08-remake-next-floor.png",
+      "description": "Final large scene: Leon at blue-awning diner brings small parchment sketch of colder upper-floor outpost, Kou and Elna look toward distant ascending stone stairs. Warm kitchen foreground and cool stairway beyond establish future, not new farm already built upstairs.",
       "dialogue": [
         [
           "レオン",
           "七階でも、この飯を出せるか？"
         ],
         [
+          "エルナ",
+          "ここから運ぶには、遠いね。"
+        ],
+        [
           "コウ",
           "まず、畑と台所を見に行こう。"
+        ],
+        [
+          "レオン",
+          "案内する。確かめてからでいい。"
         ]
       ],
       "layout": "hero",
-      "pauseAt390": 230,
-      "prompt": "generation/08-next-floor.prompt.txt",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-next-floor.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6e1d084362d0a84f489e53f17b2035701e2b21ad6382dbb693f3e4b82589a077"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-remake-second-harvest-window-01",
+      "art": "art/01-remake-second-harvest.png",
+      "description": "Same four beds with age-staggered sections: Kou and Balt harvest newly ready section while earlier harvested section is bare or freshly resown and younger sections remain smaller. Twine markers visible. Two hand closeups plus broad context.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 50,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-second-harvest.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "57dd3a9068fe4cc5c01370995bd63d87808b01a5441ac2daf70d60aaa2260394",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 700
+      },
+      "sourceId": "01-remake-second-harvest",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-second-harvest-window-02",
+      "art": "art/01-remake-second-harvest.png",
+      "description": "Same four beds with age-staggered sections: Kou and Balt harvest newly ready section while earlier harvested section is bare or freshly resown and younger sections remain smaller. Twine markers visible. Two hand closeups plus broad context.",
+      "dialogue": [
+        [
+          "コウ",
+          "次の区画が、つながった。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-second-harvest.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "57dd3a9068fe4cc5c01370995bd63d87808b01a5441ac2daf70d60aaa2260394",
+      "crop": {
+        "x": 0,
+        "y": 700,
+        "width": 724,
+        "height": 359
+      },
+      "sourceId": "01-remake-second-harvest",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-second-harvest-window-03",
+      "art": "art/01-remake-second-harvest.png",
+      "description": "Same four beds with age-staggered sections: Kou and Balt harvest newly ready section while earlier harvested section is bare or freshly resown and younger sections remain smaller. Twine markers visible. Two hand closeups plus broad context.",
+      "dialogue": [
+        [
+          "バルト",
+          "予定が、少し読めてきたな。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-second-harvest.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "57dd3a9068fe4cc5c01370995bd63d87808b01a5441ac2daf70d60aaa2260394",
+      "crop": {
+        "x": 0,
+        "y": 1059,
+        "width": 724,
+        "height": 361
+      },
+      "sourceId": "01-remake-second-harvest",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-second-harvest-window-04",
+      "art": "art/01-remake-second-harvest.png",
+      "description": "Same four beds with age-staggered sections: Kou and Balt harvest newly ready section while earlier harvested section is bare or freshly resown and younger sections remain smaller. Twine markers visible. Two hand closeups plus broad context.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 260,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-second-harvest.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "57dd3a9068fe4cc5c01370995bd63d87808b01a5441ac2daf70d60aaa2260394",
+      "crop": {
+        "x": 0,
+        "y": 1420,
+        "width": 724,
+        "height": 308
+      },
+      "sourceId": "01-remake-second-harvest",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-second-harvest-window-05",
+      "art": "art/01-remake-second-harvest.png",
+      "description": "Same four beds with age-staggered sections: Kou and Balt harvest newly ready section while earlier harvested section is bare or freshly resown and younger sections remain smaller. Twine markers visible. Two hand closeups plus broad context.",
+      "dialogue": [
+        [
+          "コウ",
+          "遅れていた列も、今日は採れる。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-second-harvest.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "57dd3a9068fe4cc5c01370995bd63d87808b01a5441ac2daf70d60aaa2260394",
+      "crop": {
+        "x": 0,
+        "y": 1728,
+        "width": 724,
+        "height": 444
+      },
+      "sourceId": "01-remake-second-harvest",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-sixteen-window-01",
+      "art": "art/02-remake-sixteen.png",
+      "description": "Elna at reservation ledger with sixteen simple small marks, Kou beside bought produce basket and own harvest; outside supplier acknowledges arrangement. Two unequal panels include limited supply clearly.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-sixteen.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "f91c04f1227ae5f9c441ca44c0fe343b9b0b33486f3029d2d4ae36d1a40a726d",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 483
+      },
+      "sourceId": "02-remake-sixteen",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-sixteen-window-02",
+      "art": "art/02-remake-sixteen.png",
+      "description": "Elna at reservation ledger with sixteen simple small marks, Kou beside bought produce basket and own harvest; outside supplier acknowledges arrangement. Two unequal panels include limited supply clearly.",
+      "dialogue": [
+        [
+          "エルナ",
+          "まずは、一日十六食。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 180,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-sixteen.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "f91c04f1227ae5f9c441ca44c0fe343b9b0b33486f3029d2d4ae36d1a40a726d",
+      "crop": {
+        "x": 0,
+        "y": 483,
+        "width": 724,
+        "height": 309
+      },
+      "sourceId": "02-remake-sixteen",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-sixteen-window-03",
+      "art": "art/02-remake-sixteen.png",
+      "description": "Elna at reservation ledger with sixteen simple small marks, Kou beside bought produce basket and own harvest; outside supplier acknowledges arrangement. Two unequal panels include limited supply clearly.",
+      "dialogue": [
+        [
+          "コウ",
+          "足りない時の仕入れも、決めてある。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 60,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-sixteen.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "f91c04f1227ae5f9c441ca44c0fe343b9b0b33486f3029d2d4ae36d1a40a726d",
+      "crop": {
+        "x": 0,
+        "y": 792,
+        "width": 724,
+        "height": 522
+      },
+      "sourceId": "02-remake-sixteen",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-sixteen-window-04",
+      "art": "art/02-remake-sixteen.png",
+      "description": "Elna at reservation ledger with sixteen simple small marks, Kou beside bought produce basket and own harvest; outside supplier acknowledges arrangement. Two unequal panels include limited supply clearly.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 140,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-sixteen.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "f91c04f1227ae5f9c441ca44c0fe343b9b0b33486f3029d2d4ae36d1a40a726d",
+      "crop": {
+        "x": 0,
+        "y": 1314,
+        "width": 724,
+        "height": 158
+      },
+      "sourceId": "02-remake-sixteen",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-sixteen-window-05",
+      "art": "art/02-remake-sixteen.png",
+      "description": "Elna at reservation ledger with sixteen simple small marks, Kou beside bought produce basket and own harvest; outside supplier acknowledges arrangement. Two unequal panels include limited supply clearly.",
+      "dialogue": [
+        [
+          "エルナ",
+          "畑だけで、十六食ではないんだね。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 270,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-sixteen.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "f91c04f1227ae5f9c441ca44c0fe343b9b0b33486f3029d2d4ae36d1a40a726d",
+      "crop": {
+        "x": 0,
+        "y": 1472,
+        "width": 724,
+        "height": 323
+      },
+      "sourceId": "02-remake-sixteen",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-sixteen-window-06",
+      "art": "art/02-remake-sixteen.png",
+      "description": "Elna at reservation ledger with sixteen simple small marks, Kou beside bought produce basket and own harvest; outside supplier acknowledges arrangement. Two unequal panels include limited supply clearly.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-sixteen.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "f91c04f1227ae5f9c441ca44c0fe343b9b0b33486f3029d2d4ae36d1a40a726d",
+      "crop": {
+        "x": 0,
+        "y": 1795,
+        "width": 724,
+        "height": 377
+      },
+      "sourceId": "02-remake-sixteen",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-partners-window-01",
+      "art": "art/03-remake-partners.png",
+      "description": "Three intimate panels at clean diner counter: Elna earnest facing Kou, her hand placing shop key on table, Kou thoughtfully reaching to joint crop-and-menu notebook rather than seizing key. Adult respectful partnership.",
+      "dialogue": [
+        [
+          "エルナ",
+          "畑と厨房、一緒に決めたい。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 150,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-partners.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5378eb3d536bf90156026137772725ba9e9a9bc358bc3d89bf9bd9a9358f51b7",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 798
+      },
+      "sourceId": "03-remake-partners",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-partners-window-02",
+      "art": "art/03-remake-partners.png",
+      "description": "Three intimate panels at clean diner counter: Elna earnest facing Kou, her hand placing shop key on table, Kou thoughtfully reaching to joint crop-and-menu notebook rather than seizing key. Adult respectful partnership.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-partners.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5378eb3d536bf90156026137772725ba9e9a9bc358bc3d89bf9bd9a9358f51b7",
+      "crop": {
+        "x": 0,
+        "y": 798,
+        "width": 724,
+        "height": 226
+      },
+      "sourceId": "03-remake-partners",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-partners-window-03",
+      "art": "art/03-remake-partners.png",
+      "description": "Three intimate panels at clean diner counter: Elna earnest facing Kou, her hand placing shop key on table, Kou thoughtfully reaching to joint crop-and-menu notebook rather than seizing key. Adult respectful partnership.",
+      "dialogue": [
+        [
+          "エルナ",
+          "店の相棒に、なってくれる？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 910,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-partners.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5378eb3d536bf90156026137772725ba9e9a9bc358bc3d89bf9bd9a9358f51b7",
+      "crop": {
+        "x": 0,
+        "y": 1024,
+        "width": 724,
+        "height": 326
+      },
+      "sourceId": "03-remake-partners",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-partners-window-04",
+      "art": "art/03-remake-partners.png",
+      "description": "Three intimate panels at clean diner counter: Elna earnest facing Kou, her hand placing shop key on table, Kou thoughtfully reaching to joint crop-and-menu notebook rather than seizing key. Adult respectful partnership.",
+      "dialogue": [
+        [
+          "コウ",
+          "働く分も、きちんと分けよう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 180,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-partners.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5378eb3d536bf90156026137772725ba9e9a9bc358bc3d89bf9bd9a9358f51b7",
+      "crop": {
+        "x": 0,
+        "y": 1350,
+        "width": 724,
+        "height": 347
+      },
+      "sourceId": "03-remake-partners",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-partners-window-05",
+      "art": "art/03-remake-partners.png",
+      "description": "Three intimate panels at clean diner counter: Elna earnest facing Kou, her hand placing shop key on table, Kou thoughtfully reaching to joint crop-and-menu notebook rather than seizing key. Adult respectful partnership.",
+      "dialogue": [
+        [
+          "エルナ",
+          "うん。二人で、続けよう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 420,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-partners.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5378eb3d536bf90156026137772725ba9e9a9bc358bc3d89bf9bd9a9358f51b7",
+      "crop": {
+        "x": 0,
+        "y": 1697,
+        "width": 724,
+        "height": 475
+      },
+      "sourceId": "03-remake-partners",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-maintenance-window-01",
+      "art": "art/04-remake-maintenance.png",
+      "description": "Iris shows Elna how to open removable irrigation filter housing beside sturdy tank stand; Kou stands back listening, not doing every task. Closeups demonstrate same fitting as episode four; no modern gadgets.",
+      "dialogue": [
+        [
+          "イリス",
+          "詰まったら、ここを開ける。"
+        ],
+        [
+          "エルナ",
+          "先に、水を止めるんだね。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 65,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-maintenance.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "0d77786ae9b50ef987f9e7fc9dc845e8d8edf98d729425c9c626fa6184952e42",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 820
+      },
+      "sourceId": "04-remake-maintenance",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-maintenance-window-02",
+      "art": "art/04-remake-maintenance.png",
+      "description": "Iris shows Elna how to open removable irrigation filter housing beside sturdy tank stand; Kou stands back listening, not doing every task. Closeups demonstrate same fitting as episode four; no modern gadgets.",
+      "dialogue": [
+        [
+          "イリス",
+          "網を洗って、戻してから開く。"
+        ],
+        [
+          "エルナ",
+          "直し方も、店に残しておく。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-maintenance.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "0d77786ae9b50ef987f9e7fc9dc845e8d8edf98d729425c9c626fa6184952e42",
+      "crop": {
+        "x": 0,
+        "y": 820,
+        "width": 724,
+        "height": 1352
+      },
+      "sourceId": "04-remake-maintenance",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-seed-future-window-01",
+      "art": "art/05-remake-seed-future.png",
+      "description": "Balt and Kou beside small separate reserved seed-production strip of garden-leaf plants, a few plants left standing, NOT mature seed harvested already. Hand places plain marker, separate harvest basket for food.",
+      "dialogue": [
+        [
+          "コウ",
+          "この畝は、次の種を残す。"
+        ],
+        [
+          "バルト",
+          "売る分だけじゃ、先へ続かん。"
+        ],
+        [
+          "コウ",
+          "種ができるまでは、ここで育てよう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 40,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-seed-future.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "530b2ad5b45e5d427e8da5933a26ac28788baeb63256bb90cd8eea9c03841a82",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 1683
+      },
+      "sourceId": "05-remake-seed-future",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-seed-future-window-02",
+      "art": "art/05-remake-seed-future.png",
+      "description": "Balt and Kou beside small separate reserved seed-production strip of garden-leaf plants, a few plants left standing, NOT mature seed harvested already. Hand places plain marker, separate harvest basket for food.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-seed-future.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "530b2ad5b45e5d427e8da5933a26ac28788baeb63256bb90cd8eea9c03841a82",
+      "crop": {
+        "x": 0,
+        "y": 1683,
+        "width": 724,
+        "height": 489
+      },
+      "sourceId": "05-remake-seed-future",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-returner-window-01",
+      "art": "art/06-remake-returner.png",
+      "description": "Large borderless warm diner entrance view: auburn young adult customer in ochre cloak returns slightly dusty from expedition, Elna smiles at serving window, empty familiar seat in foreground and hot meal ready. Kou assists quietly behind her, no duplicate character heads.",
+      "dialogue": [
+        [
+          "客",
+          "帰ってきたよ。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 240,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-returner.prompt.txt",
+      "width": 725,
+      "height": 2169,
+      "sha256": "18482ed2022aead0058d7764ac84529ceae63501fb1f8f26cc5613f19e2a52c4",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 725,
+        "height": 665
+      },
+      "sourceId": "06-remake-returner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-returner-window-02",
+      "art": "art/06-remake-returner.png",
+      "description": "Large borderless warm diner entrance view: auburn young adult customer in ochre cloak returns slightly dusty from expedition, Elna smiles at serving window, empty familiar seat in foreground and hot meal ready. Kou assists quietly behind her, no duplicate character heads.",
+      "dialogue": [
+        [
+          "エルナ",
+          "おかえり。席、空いてる。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 90,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-returner.prompt.txt",
+      "width": 725,
+      "height": 2169,
+      "sha256": "18482ed2022aead0058d7764ac84529ceae63501fb1f8f26cc5613f19e2a52c4",
+      "crop": {
+        "x": 0,
+        "y": 665,
+        "width": 725,
+        "height": 604
+      },
+      "sourceId": "06-remake-returner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-returner-window-03",
+      "art": "art/06-remake-returner.png",
+      "description": "Large borderless warm diner entrance view: auburn young adult customer in ochre cloak returns slightly dusty from expedition, Elna smiles at serving window, empty familiar seat in foreground and hot meal ready. Kou assists quietly behind her, no duplicate character heads.",
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 190,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-returner.prompt.txt",
+      "width": 725,
+      "height": 2169,
+      "sha256": "18482ed2022aead0058d7764ac84529ceae63501fb1f8f26cc5613f19e2a52c4",
+      "crop": {
+        "x": 0,
+        "y": 1269,
+        "width": 725,
+        "height": 167
+      },
+      "sourceId": "06-remake-returner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-returner-window-04",
+      "art": "art/06-remake-returner.png",
+      "description": "Large borderless warm diner entrance view: auburn young adult customer in ochre cloak returns slightly dusty from expedition, Elna smiles at serving window, empty familiar seat in foreground and hot meal ready. Kou assists quietly behind her, no duplicate character heads.",
+      "dialogue": [
+        [
+          "客",
+          "……ここの匂いだ。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 300,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-returner.prompt.txt",
+      "width": 725,
+      "height": 2169,
+      "sha256": "18482ed2022aead0058d7764ac84529ceae63501fb1f8f26cc5613f19e2a52c4",
+      "crop": {
+        "x": 0,
+        "y": 1436,
+        "width": 725,
+        "height": 354
+      },
+      "sourceId": "06-remake-returner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-returner-window-05",
+      "art": "art/06-remake-returner.png",
+      "description": "Large borderless warm diner entrance view: auburn young adult customer in ochre cloak returns slightly dusty from expedition, Elna smiles at serving window, empty familiar seat in foreground and hot meal ready. Kou assists quietly behind her, no duplicate character heads.",
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-returner.prompt.txt",
+      "width": 725,
+      "height": 2169,
+      "sha256": "18482ed2022aead0058d7764ac84529ceae63501fb1f8f26cc5613f19e2a52c4",
+      "crop": {
+        "x": 0,
+        "y": 1790,
+        "width": 725,
+        "height": 379
+      },
+      "sourceId": "06-remake-returner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-share-work-window-01",
+      "art": "art/07-remake-share-work.png",
+      "description": "Kou and Elna share plain illustrated maintenance/crop notebook on porch, smaller montage Balt observing seedlings and Iris storing spare fitting; characters in separate successive frames, not simultaneously duplicated. Quiet achieved trust, no magical new world omniscience.",
+      "dialogue": [
+        [
+          "コウ",
+          "俺がいなくても、回るように。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-share-work.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "7c856d10553739c4eac71284d40cc2cc3a40bde3d7203471b7a6a0b1b8503a42",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 798
+      },
+      "sourceId": "07-remake-share-work",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-share-work-window-02",
+      "art": "art/07-remake-share-work.png",
+      "description": "Kou and Elna share plain illustrated maintenance/crop notebook on porch, smaller montage Balt observing seedlings and Iris storing spare fitting; characters in separate successive frames, not simultaneously duplicated. Quiet achieved trust, no magical new world omniscience.",
+      "dialogue": [
+        [
+          "エルナ",
+          "帰る道が、開いた時にも？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 910,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-share-work.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "7c856d10553739c4eac71284d40cc2cc3a40bde3d7203471b7a6a0b1b8503a42",
+      "crop": {
+        "x": 0,
+        "y": 798,
+        "width": 724,
+        "height": 293
+      },
+      "sourceId": "07-remake-share-work",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-share-work-window-03",
+      "art": "art/07-remake-share-work.png",
+      "description": "Kou and Elna share plain illustrated maintenance/crop notebook on porch, smaller montage Balt observing seedlings and Iris storing spare fitting; characters in separate successive frames, not simultaneously duplicated. Quiet achieved trust, no magical new world omniscience.",
+      "dialogue": [
+        [
+          "コウ",
+          "うん。明日も、誰かがここで食べられるように。"
+        ],
+        [
+          "エルナ",
+          "そのための店、だね。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 260,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-share-work.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "7c856d10553739c4eac71284d40cc2cc3a40bde3d7203471b7a6a0b1b8503a42",
+      "crop": {
+        "x": 0,
+        "y": 1091,
+        "width": 724,
+        "height": 1081
+      },
+      "sourceId": "07-remake-share-work",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-next-floor-window-01",
+      "art": "art/08-remake-next-floor.png",
       "description": "Final large scene: Leon at blue-awning diner brings small parchment sketch of colder upper-floor outpost, Kou and Elna look toward distant ascending stone stairs. Warm kitchen foreground and cool stairway beyond establish future, not new farm already built upstairs.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "de5c2aeac23120f646dfd89ef6350c0158dbe91b17233af7b46a4261d7501056"
+      "dialogue": [
+        [
+          "レオン",
+          "七階でも、この飯を出せるか？"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 140,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-next-floor.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6e1d084362d0a84f489e53f17b2035701e2b21ad6382dbb693f3e4b82589a077",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 619
+      },
+      "sourceId": "08-remake-next-floor",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-next-floor-window-02",
+      "art": "art/08-remake-next-floor.png",
+      "description": "Final large scene: Leon at blue-awning diner brings small parchment sketch of colder upper-floor outpost, Kou and Elna look toward distant ascending stone stairs. Warm kitchen foreground and cool stairway beyond establish future, not new farm already built upstairs.",
+      "dialogue": [
+        [
+          "エルナ",
+          "ここから運ぶには、遠いね。"
+        ],
+        [
+          "コウ",
+          "まず、畑と台所を見に行こう。"
+        ],
+        [
+          "レオン",
+          "案内する。確かめてからでいい。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-next-floor.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6e1d084362d0a84f489e53f17b2035701e2b21ad6382dbb693f3e4b82589a077",
+      "crop": {
+        "x": 0,
+        "y": 619,
+        "width": 724,
+        "height": 1553
+      },
+      "sourceId": "08-remake-next-floor",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     }
   ]
 }

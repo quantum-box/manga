@@ -2,11 +2,14 @@
   "number": 6,
   "title": "おいしいだけじゃ、店は続かない",
   "time": "18〜20日目",
+  "change": "労働対価と固定費を残せる献立へ改める。味と商売を共同で決める。",
   "state": "主食と肉、葉菜の多くは仕入れ。6銅貨定食の差引2.6は賃金や家賃を払う原資で純利益ではない。庭葉はまだ苗。",
-  "scenes": [
+  "revision": "2026-10-07-following-remake",
+  "sources": [
     {
-      "id": "01-large-portion",
-      "art": "art/01-large-portion.png",
+      "id": "01-remake-large-portion",
+      "art": "art/01-remake-large-portion.png",
+      "description": "Warm diner kitchen, Elna cheerfully adds extra food to guest bowl, Kou next to small ledger looks concerned but kind. Two unequal panels bowl then faces. Do not imply new seedlings harvested.",
       "dialogue": [
         [
           "エルナ",
@@ -15,20 +18,33 @@
         [
           "コウ",
           "その分の原価は？"
+        ],
+        [
+          "エルナ",
+          "……喜んでほしかったんだ。"
+        ],
+        [
+          "コウ",
+          "うん。明日も、出せるようにしたい。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 80,
-      "prompt": "generation/01-large-portion.prompt.txt",
-      "description": "Warm diner kitchen, Elna cheerfully adds extra food to guest bowl, Kou next to small ledger looks concerned but kind. Two unequal panels bowl then faces. Do not imply new seedlings harvested.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "96a703be16f117b9a2ec51cef4565a6c8f39c2349324b9813b20457194fd6296"
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-large-portion.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "769937e29f1e828965a98028ed8a705eb6d7b63fb5a311e271eb5e3e6bebe7b8"
     },
     {
-      "id": "02-costs",
-      "art": "art/02-costs.png",
+      "id": "02-remake-costs",
+      "art": "art/02-remake-costs.png",
+      "description": "Three hand closeups: purchased grain sack and meat basket invoice with abstract marks, seed packet and tool, Kou's worn hands. Elna listening beside counter, purchased produce basket visible.",
       "dialogue": [
+        [
+          "エルナ",
+          "畑の分なら、安くなるよね？"
+        ],
         [
           "コウ",
           "自分の畑の野菜も、ただじゃない。"
@@ -39,33 +55,43 @@
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 90,
-      "prompt": "generation/02-costs.prompt.txt",
-      "description": "Three hand closeups: purchased grain sack and meat basket invoice with abstract marks, seed packet and tool, Kou's worn hands. Elna listening beside counter, purchased produce basket visible.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "0c0494c7abe8d359520fc97373f4df75b964dcac7b971af81d468f7d37f08e34"
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-costs.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "0206bc2336d3c2b0494f54f52588210e239db5ee7779c5f6fe23622fdf9b6bc4"
     },
     {
-      "id": "03-coins",
-      "art": "art/03-coins.png",
+      "id": "03-remake-coins",
+      "art": "art/03-remake-coins.png",
+      "description": "Top view six copper coins next to one meal, smaller closeup several expense piles and ledger sketch, lower Kou explaining to Elna. Exactly six sale coins in first view. NO readable text besides dialogue, no profit waterfall chart.",
       "dialogue": [
         [
           "コウ",
           "六枚もらって、全部は残らない。"
+        ],
+        [
+          "エルナ",
+          "仕入れと、薪の分を引く。"
+        ],
+        [
+          "コウ",
+          "残りが、そのまま利益じゃない。"
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 100,
-      "prompt": "generation/03-coins.prompt.txt",
-      "description": "Top view six copper coins next to one meal, smaller closeup several expense piles and ledger sketch, lower Kou explaining to Elna. Exactly six sale coins in first view. NO readable text besides dialogue, no profit waterfall chart.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "7c6eceaf06069eb0e564ede1d1bbd990002013233b7b7b074f5612abecb32882"
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-coins.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "830fef6aad071abff0d1561f51ea43e49f62190139b71ecd16dda069ff8a2f2a"
     },
     {
-      "id": "04-wages",
-      "art": "art/04-wages.png",
+      "id": "04-remake-wages",
+      "art": "art/04-remake-wages.png",
+      "description": "Three intimate unequal conversation panels: Kou earnest at ledger, Elna surprised and thoughtful, Kou replies. Quiet kitchen after closing, table clean, no other speakers.",
       "dialogue": [
         [
           "コウ",
@@ -78,19 +104,24 @@
         [
           "コウ",
           "そこを削ると、続かない。"
+        ],
+        [
+          "エルナ",
+          "ちゃんと、数えよう。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 100,
-      "prompt": "generation/04-wages.prompt.txt",
-      "description": "Three intimate unequal conversation panels: Kou earnest at ledger, Elna surprised and thoughtful, Kou replies. Quiet kitchen after closing, table clean, no other speakers.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "a9af7be28c5685160a8ecf55f2f724eae351eced351ca025808897a1095a9698"
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-wages.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "84ef5bab5973ffa936e1250020e951df11cece9e21aed03aa64c7406180b0725"
     },
     {
-      "id": "05-two-dishes",
-      "art": "art/05-two-dishes.png",
+      "id": "05-remake-two-dishes",
+      "art": "art/05-remake-two-dishes.png",
+      "description": "Elna and Kou choose two practical dishes on clean prep counter, one grain-and-meat bowl and one soup, shared ingredients laid separately. Small inset simple blank menu board without text. Do not display dozens of fancy dishes.",
       "dialogue": [
         [
           "エルナ",
@@ -99,23 +130,32 @@
         [
           "コウ",
           "同じ仕込みで、出せるものに。"
+        ],
+        [
+          "エルナ",
+          "少なくても、ちゃんとおいしく。"
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 70,
-      "prompt": "generation/05-two-dishes.prompt.txt",
-      "description": "Elna and Kou choose two practical dishes on clean prep counter, one grain-and-meat bowl and one soup, shared ingredients laid separately. Small inset simple blank menu board without text. Do not display dozens of fancy dishes.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "d42d354e19d42c8c18a96979502f7bd0551c477d486da24e52482f3c10c8f2d0"
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-two-dishes.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5fde541cc42d2e40b216d5e891f10189b478e9049c2e067d9eca0035eb002661"
     },
     {
-      "id": "06-cook",
-      "art": "art/06-cook.png",
+      "id": "06-remake-cook",
+      "art": "art/06-remake-cook.png",
+      "description": "Unequal closeups: washed leaves chopped on designated board; Elna adds leaves LAST to steaming pan or pot; larger shoulder view her timing heat. Kou only assists by handing clean ingredients. Food moisture and steam appetizing, no magical fireworks.",
       "dialogue": [
         [
           "エルナ",
           "葉は、最後に。"
+        ],
+        [
+          "コウ",
+          "ずっと煮込まないんだ？"
         ],
         [
           "エルナ",
@@ -123,16 +163,17 @@
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 75,
-      "prompt": "generation/06-cook.prompt.txt",
-      "description": "Unequal closeups: washed leaves chopped on designated board; Elna adds leaves LAST to steaming pan or pot; larger shoulder view her timing heat. Kou only assists by handing clean ingredients. Food moisture and steam appetizing, no magical fireworks.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "1b298b10ddc5cfbe6bb7adfc61a66b370efe081d3ab768fcce8ab412750d6f49"
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-cook.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a68fc95f4ff55293ae347890e8c2140a1bfc2a802a393880aad8e8e4a36e9832"
     },
     {
-      "id": "07-reservation",
-      "art": "art/07-reservation.png",
+      "id": "07-remake-reservation",
+      "art": "art/07-remake-reservation.png",
+      "description": "Auburn-haired young adult customer in ochre cloak returns at counter with steaming dish; medium Elna listens smiling, lower Kou looks toward seedling plot outside. Same customer as episode three, not Leon.",
       "dialogue": [
         [
           "客",
@@ -141,19 +182,24 @@
         [
           "エルナ",
           "予約、受けていいかな。"
+        ],
+        [
+          "コウ",
+          "出せる数を、先に確かめよう。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 90,
-      "prompt": "generation/07-reservation.prompt.txt",
-      "description": "Auburn-haired young adult customer in ochre cloak returns at counter with steaming dish; medium Elna listens smiling, lower Kou looks toward seedling plot outside. Same customer as episode three, not Leon.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "1528cb2b7ab45ef7db5f126d7c1c3918d48d5172bfa3401168cfdfa626bba1d0"
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-reservation.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "b899a3634c6f404d2c5ac417a5f0205f3328d1c33bd1651dcf1093b7cb7abe72"
     },
     {
-      "id": "08-limit",
-      "art": "art/08-limit.png",
+      "id": "08-remake-limit",
+      "art": "art/08-remake-limit.png",
+      "description": "Large quiet partnership scene under blue awning: Elna writes small reservation list with abstract marks, Kou beside her holding crop notebook, small plot at dusk. Serious hopeful sense of limited but workable business.",
       "dialogue": [
         [
           "コウ",
@@ -161,16 +207,993 @@
         ],
         [
           "エルナ",
+          "仕入れの分も、一緒にね。"
+        ],
+        [
+          "コウ",
+          "できない数は、受けない。"
+        ],
+        [
+          "エルナ",
           "売り切れも、先に伝える。"
         ]
       ],
       "layout": "hero",
-      "pauseAt390": 180,
-      "prompt": "generation/08-limit.prompt.txt",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-limit.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "bf6f02b89cb93cef621ef675e831e6f10ce9f94eb2ee3a75765bda652e9edca6"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-remake-large-portion-window-01",
+      "art": "art/01-remake-large-portion.png",
+      "description": "Warm diner kitchen, Elna cheerfully adds extra food to guest bowl, Kou next to small ledger looks concerned but kind. Two unequal panels bowl then faces. Do not imply new seedlings harvested.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 50,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-large-portion.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "769937e29f1e828965a98028ed8a705eb6d7b63fb5a311e271eb5e3e6bebe7b8",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 727,
+        "height": 384
+      },
+      "sourceId": "01-remake-large-portion",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-large-portion-window-02",
+      "art": "art/01-remake-large-portion.png",
+      "description": "Warm diner kitchen, Elna cheerfully adds extra food to guest bowl, Kou next to small ledger looks concerned but kind. Two unequal panels bowl then faces. Do not imply new seedlings harvested.",
+      "dialogue": [
+        [
+          "エルナ",
+          "大盛り、つけといたよ。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 120,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-large-portion.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "769937e29f1e828965a98028ed8a705eb6d7b63fb5a311e271eb5e3e6bebe7b8",
+      "crop": {
+        "x": 0,
+        "y": 384,
+        "width": 727,
+        "height": 459
+      },
+      "sourceId": "01-remake-large-portion",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-large-portion-window-03",
+      "art": "art/01-remake-large-portion.png",
+      "description": "Warm diner kitchen, Elna cheerfully adds extra food to guest bowl, Kou next to small ledger looks concerned but kind. Two unequal panels bowl then faces. Do not imply new seedlings harvested.",
+      "dialogue": [
+        [
+          "コウ",
+          "その分の原価は？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 70,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-large-portion.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "769937e29f1e828965a98028ed8a705eb6d7b63fb5a311e271eb5e3e6bebe7b8",
+      "crop": {
+        "x": 0,
+        "y": 843,
+        "width": 727,
+        "height": 449
+      },
+      "sourceId": "01-remake-large-portion",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-large-portion-window-04",
+      "art": "art/01-remake-large-portion.png",
+      "description": "Warm diner kitchen, Elna cheerfully adds extra food to guest bowl, Kou next to small ledger looks concerned but kind. Two unequal panels bowl then faces. Do not imply new seedlings harvested.",
+      "dialogue": [
+        [
+          "エルナ",
+          "……喜んでほしかったんだ。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 260,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-large-portion.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "769937e29f1e828965a98028ed8a705eb6d7b63fb5a311e271eb5e3e6bebe7b8",
+      "crop": {
+        "x": 0,
+        "y": 1292,
+        "width": 727,
+        "height": 388
+      },
+      "sourceId": "01-remake-large-portion",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-large-portion-window-05",
+      "art": "art/01-remake-large-portion.png",
+      "description": "Warm diner kitchen, Elna cheerfully adds extra food to guest bowl, Kou next to small ledger looks concerned but kind. Two unequal panels bowl then faces. Do not imply new seedlings harvested.",
+      "dialogue": [
+        [
+          "コウ",
+          "うん。明日も、出せるようにしたい。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-large-portion.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "769937e29f1e828965a98028ed8a705eb6d7b63fb5a311e271eb5e3e6bebe7b8",
+      "crop": {
+        "x": 0,
+        "y": 1680,
+        "width": 727,
+        "height": 484
+      },
+      "sourceId": "01-remake-large-portion",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-costs-window-01",
+      "art": "art/02-remake-costs.png",
+      "description": "Three hand closeups: purchased grain sack and meat basket invoice with abstract marks, seed packet and tool, Kou's worn hands. Elna listening beside counter, purchased produce basket visible.",
+      "dialogue": [
+        [
+          "エルナ",
+          "畑の分なら、安くなるよね？"
+        ],
+        [
+          "コウ",
+          "自分の畑の野菜も、ただじゃない。"
+        ],
+        [
+          "コウ",
+          "種と、働いた時間がある。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 90,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-costs.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "0206bc2336d3c2b0494f54f52588210e239db5ee7779c5f6fe23622fdf9b6bc4",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 1782
+      },
+      "sourceId": "02-remake-costs",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-costs-window-02",
+      "art": "art/02-remake-costs.png",
+      "description": "Three hand closeups: purchased grain sack and meat basket invoice with abstract marks, seed packet and tool, Kou's worn hands. Elna listening beside counter, purchased produce basket visible.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-costs.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "0206bc2336d3c2b0494f54f52588210e239db5ee7779c5f6fe23622fdf9b6bc4",
+      "crop": {
+        "x": 0,
+        "y": 1782,
+        "width": 724,
+        "height": 390
+      },
+      "sourceId": "02-remake-costs",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-coins-window-01",
+      "art": "art/03-remake-coins.png",
+      "description": "Top view six copper coins next to one meal, smaller closeup several expense piles and ledger sketch, lower Kou explaining to Elna. Exactly six sale coins in first view. NO readable text besides dialogue, no profit waterfall chart.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 45,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-coins.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "830fef6aad071abff0d1561f51ea43e49f62190139b71ecd16dda069ff8a2f2a",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 408
+      },
+      "sourceId": "03-remake-coins",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-coins-window-02",
+      "art": "art/03-remake-coins.png",
+      "description": "Top view six copper coins next to one meal, smaller closeup several expense piles and ledger sketch, lower Kou explaining to Elna. Exactly six sale coins in first view. NO readable text besides dialogue, no profit waterfall chart.",
+      "dialogue": [
+        [
+          "コウ",
+          "六枚もらって、全部は残らない。"
+        ],
+        [
+          "エルナ",
+          "仕入れと、薪の分を引く。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 24,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-coins.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "830fef6aad071abff0d1561f51ea43e49f62190139b71ecd16dda069ff8a2f2a",
+      "crop": {
+        "x": 0,
+        "y": 408,
+        "width": 724,
+        "height": 1167
+      },
+      "sourceId": "03-remake-coins",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-coins-window-03",
+      "art": "art/03-remake-coins.png",
+      "description": "Top view six copper coins next to one meal, smaller closeup several expense piles and ledger sketch, lower Kou explaining to Elna. Exactly six sale coins in first view. NO readable text besides dialogue, no profit waterfall chart.",
+      "dialogue": [
+        [
+          "コウ",
+          "残りが、そのまま利益じゃない。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 130,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-coins.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "830fef6aad071abff0d1561f51ea43e49f62190139b71ecd16dda069ff8a2f2a",
+      "crop": {
+        "x": 0,
+        "y": 1575,
+        "width": 724,
+        "height": 337
+      },
+      "sourceId": "03-remake-coins",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-coins-window-04",
+      "art": "art/03-remake-coins.png",
+      "description": "Top view six copper coins next to one meal, smaller closeup several expense piles and ledger sketch, lower Kou explaining to Elna. Exactly six sale coins in first view. NO readable text besides dialogue, no profit waterfall chart.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-coins.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "830fef6aad071abff0d1561f51ea43e49f62190139b71ecd16dda069ff8a2f2a",
+      "crop": {
+        "x": 0,
+        "y": 1912,
+        "width": 724,
+        "height": 260
+      },
+      "sourceId": "03-remake-coins",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-wages-window-01",
+      "art": "art/04-remake-wages.png",
+      "description": "Three intimate unequal conversation panels: Kou earnest at ledger, Elna surprised and thoughtful, Kou replies. Quiet kitchen after closing, table clean, no other speakers.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 65,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-wages.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "84ef5bab5973ffa936e1250020e951df11cece9e21aed03aa64c7406180b0725",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 190
+      },
+      "sourceId": "04-remake-wages",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-wages-window-02",
+      "art": "art/04-remake-wages.png",
+      "description": "Three intimate unequal conversation panels: Kou earnest at ledger, Elna surprised and thoughtful, Kou replies. Quiet kitchen after closing, table clean, no other speakers.",
+      "dialogue": [
+        [
+          "コウ",
+          "残りから、家賃と賃金を払う。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 200,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-wages.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "84ef5bab5973ffa936e1250020e951df11cece9e21aed03aa64c7406180b0725",
+      "crop": {
+        "x": 0,
+        "y": 190,
+        "width": 724,
+        "height": 487
+      },
+      "sourceId": "04-remake-wages",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-wages-window-03",
+      "art": "art/04-remake-wages.png",
+      "description": "Three intimate unequal conversation panels: Kou earnest at ledger, Elna surprised and thoughtful, Kou replies. Quiet kitchen after closing, table clean, no other speakers.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-wages.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "84ef5bab5973ffa936e1250020e951df11cece9e21aed03aa64c7406180b0725",
+      "crop": {
+        "x": 0,
+        "y": 677,
+        "width": 724,
+        "height": 211
+      },
+      "sourceId": "04-remake-wages",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-wages-window-04",
+      "art": "art/04-remake-wages.png",
+      "description": "Three intimate unequal conversation panels: Kou earnest at ledger, Elna surprised and thoughtful, Kou replies. Quiet kitchen after closing, table clean, no other speakers.",
+      "dialogue": [
+        [
+          "エルナ",
+          "私たちの働いた分も？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 340,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-wages.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "84ef5bab5973ffa936e1250020e951df11cece9e21aed03aa64c7406180b0725",
+      "crop": {
+        "x": 0,
+        "y": 888,
+        "width": 724,
+        "height": 314
+      },
+      "sourceId": "04-remake-wages",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-wages-window-05",
+      "art": "art/04-remake-wages.png",
+      "description": "Three intimate unequal conversation panels: Kou earnest at ledger, Elna surprised and thoughtful, Kou replies. Quiet kitchen after closing, table clean, no other speakers.",
+      "dialogue": [
+        [
+          "コウ",
+          "そこを削ると、続かない。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 130,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-wages.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "84ef5bab5973ffa936e1250020e951df11cece9e21aed03aa64c7406180b0725",
+      "crop": {
+        "x": 0,
+        "y": 1202,
+        "width": 724,
+        "height": 330
+      },
+      "sourceId": "04-remake-wages",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-wages-window-06",
+      "art": "art/04-remake-wages.png",
+      "description": "Three intimate unequal conversation panels: Kou earnest at ledger, Elna surprised and thoughtful, Kou replies. Quiet kitchen after closing, table clean, no other speakers.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 190,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-wages.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "84ef5bab5973ffa936e1250020e951df11cece9e21aed03aa64c7406180b0725",
+      "crop": {
+        "x": 0,
+        "y": 1532,
+        "width": 724,
+        "height": 232
+      },
+      "sourceId": "04-remake-wages",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-wages-window-07",
+      "art": "art/04-remake-wages.png",
+      "description": "Three intimate unequal conversation panels: Kou earnest at ledger, Elna surprised and thoughtful, Kou replies. Quiet kitchen after closing, table clean, no other speakers.",
+      "dialogue": [
+        [
+          "エルナ",
+          "ちゃんと、数えよう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-wages.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "84ef5bab5973ffa936e1250020e951df11cece9e21aed03aa64c7406180b0725",
+      "crop": {
+        "x": 0,
+        "y": 1764,
+        "width": 724,
+        "height": 408
+      },
+      "sourceId": "04-remake-wages",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-two-dishes-window-01",
+      "art": "art/05-remake-two-dishes.png",
+      "description": "Elna and Kou choose two practical dishes on clean prep counter, one grain-and-meat bowl and one soup, shared ingredients laid separately. Small inset simple blank menu board without text. Do not display dozens of fancy dishes.",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日は、二品に絞ろう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 40,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-two-dishes.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5fde541cc42d2e40b216d5e891f10189b478e9049c2e067d9eca0035eb002661",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 600
+      },
+      "sourceId": "05-remake-two-dishes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-two-dishes-window-02",
+      "art": "art/05-remake-two-dishes.png",
+      "description": "Elna and Kou choose two practical dishes on clean prep counter, one grain-and-meat bowl and one soup, shared ingredients laid separately. Small inset simple blank menu board without text. Do not display dozens of fancy dishes.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-two-dishes.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5fde541cc42d2e40b216d5e891f10189b478e9049c2e067d9eca0035eb002661",
+      "crop": {
+        "x": 0,
+        "y": 600,
+        "width": 724,
+        "height": 231
+      },
+      "sourceId": "05-remake-two-dishes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-two-dishes-window-03",
+      "art": "art/05-remake-two-dishes.png",
+      "description": "Elna and Kou choose two practical dishes on clean prep counter, one grain-and-meat bowl and one soup, shared ingredients laid separately. Small inset simple blank menu board without text. Do not display dozens of fancy dishes.",
+      "dialogue": [
+        [
+          "コウ",
+          "同じ仕込みで、出せるものに。"
+        ],
+        [
+          "エルナ",
+          "少なくても、ちゃんとおいしく。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-two-dishes.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5fde541cc42d2e40b216d5e891f10189b478e9049c2e067d9eca0035eb002661",
+      "crop": {
+        "x": 0,
+        "y": 831,
+        "width": 724,
+        "height": 1341
+      },
+      "sourceId": "05-remake-two-dishes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-cook-window-01",
+      "art": "art/06-remake-cook.png",
+      "description": "Unequal closeups: washed leaves chopped on designated board; Elna adds leaves LAST to steaming pan or pot; larger shoulder view her timing heat. Kou only assists by handing clean ingredients. Food moisture and steam appetizing, no magical fireworks.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 160,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-cook.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a68fc95f4ff55293ae347890e8c2140a1bfc2a802a393880aad8e8e4a36e9832",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 546
+      },
+      "sourceId": "06-remake-cook",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-cook-window-02",
+      "art": "art/06-remake-cook.png",
+      "description": "Unequal closeups: washed leaves chopped on designated board; Elna adds leaves LAST to steaming pan or pot; larger shoulder view her timing heat. Kou only assists by handing clean ingredients. Food moisture and steam appetizing, no magical fireworks.",
+      "dialogue": [
+        [
+          "エルナ",
+          "葉は、最後に。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 240,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-cook.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a68fc95f4ff55293ae347890e8c2140a1bfc2a802a393880aad8e8e4a36e9832",
+      "crop": {
+        "x": 0,
+        "y": 546,
+        "width": 724,
+        "height": 283
+      },
+      "sourceId": "06-remake-cook",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-cook-window-03",
+      "art": "art/06-remake-cook.png",
+      "description": "Unequal closeups: washed leaves chopped on designated board; Elna adds leaves LAST to steaming pan or pot; larger shoulder view her timing heat. Kou only assists by handing clean ingredients. Food moisture and steam appetizing, no magical fireworks.",
+      "dialogue": [
+        [
+          "コウ",
+          "ずっと煮込まないんだ？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 90,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-cook.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a68fc95f4ff55293ae347890e8c2140a1bfc2a802a393880aad8e8e4a36e9832",
+      "crop": {
+        "x": 0,
+        "y": 829,
+        "width": 724,
+        "height": 315
+      },
+      "sourceId": "06-remake-cook",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-cook-window-04",
+      "art": "art/06-remake-cook.png",
+      "description": "Unequal closeups: washed leaves chopped on designated board; Elna adds leaves LAST to steaming pan or pot; larger shoulder view her timing heat. Kou only assists by handing clean ingredients. Food moisture and steam appetizing, no magical fireworks.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 190,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-cook.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a68fc95f4ff55293ae347890e8c2140a1bfc2a802a393880aad8e8e4a36e9832",
+      "crop": {
+        "x": 0,
+        "y": 1144,
+        "width": 724,
+        "height": 414
+      },
+      "sourceId": "06-remake-cook",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-cook-window-05",
+      "art": "art/06-remake-cook.png",
+      "description": "Unequal closeups: washed leaves chopped on designated board; Elna adds leaves LAST to steaming pan or pot; larger shoulder view her timing heat. Kou only assists by handing clean ingredients. Food moisture and steam appetizing, no magical fireworks.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 300,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-cook.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a68fc95f4ff55293ae347890e8c2140a1bfc2a802a393880aad8e8e4a36e9832",
+      "crop": {
+        "x": 0,
+        "y": 1558,
+        "width": 724,
+        "height": 252
+      },
+      "sourceId": "06-remake-cook",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-cook-window-06",
+      "art": "art/06-remake-cook.png",
+      "description": "Unequal closeups: washed leaves chopped on designated board; Elna adds leaves LAST to steaming pan or pot; larger shoulder view her timing heat. Kou only assists by handing clean ingredients. Food moisture and steam appetizing, no magical fireworks.",
+      "dialogue": [
+        [
+          "エルナ",
+          "色と食感を、残したい。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-cook.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a68fc95f4ff55293ae347890e8c2140a1bfc2a802a393880aad8e8e4a36e9832",
+      "crop": {
+        "x": 0,
+        "y": 1810,
+        "width": 724,
+        "height": 362
+      },
+      "sourceId": "06-remake-cook",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-reservation-window-01",
+      "art": "art/07-remake-reservation.png",
+      "description": "Auburn-haired young adult customer in ochre cloak returns at counter with steaming dish; medium Elna listens smiling, lower Kou looks toward seedling plot outside. Same customer as episode three, not Leon.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 65,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-reservation.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "b899a3634c6f404d2c5ac417a5f0205f3328d1c33bd1651dcf1093b7cb7abe72",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 419
+      },
+      "sourceId": "07-remake-reservation",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-reservation-window-02",
+      "art": "art/07-remake-reservation.png",
+      "description": "Auburn-haired young adult customer in ochre cloak returns at counter with steaming dish; medium Elna listens smiling, lower Kou looks toward seedling plot outside. Same customer as episode three, not Leon.",
+      "dialogue": [
+        [
+          "客",
+          "次の帰りも、この席に来たい。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 30,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-reservation.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "b899a3634c6f404d2c5ac417a5f0205f3328d1c33bd1651dcf1093b7cb7abe72",
+      "crop": {
+        "x": 0,
+        "y": 419,
+        "width": 724,
+        "height": 456
+      },
+      "sourceId": "07-remake-reservation",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-reservation-window-03",
+      "art": "art/07-remake-reservation.png",
+      "description": "Auburn-haired young adult customer in ochre cloak returns at counter with steaming dish; medium Elna listens smiling, lower Kou looks toward seedling plot outside. Same customer as episode three, not Leon.",
+      "dialogue": [
+        [
+          "エルナ",
+          "予約、受けていいかな。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 130,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-reservation.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "b899a3634c6f404d2c5ac417a5f0205f3328d1c33bd1651dcf1093b7cb7abe72",
+      "crop": {
+        "x": 0,
+        "y": 875,
+        "width": 724,
+        "height": 364
+      },
+      "sourceId": "07-remake-reservation",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-reservation-window-04",
+      "art": "art/07-remake-reservation.png",
+      "description": "Auburn-haired young adult customer in ochre cloak returns at counter with steaming dish; medium Elna listens smiling, lower Kou looks toward seedling plot outside. Same customer as episode three, not Leon.",
+      "dialogue": [
+        [
+          "コウ",
+          "出せる数を、先に確かめよう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 220,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-reservation.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "b899a3634c6f404d2c5ac417a5f0205f3328d1c33bd1651dcf1093b7cb7abe72",
+      "crop": {
+        "x": 0,
+        "y": 1239,
+        "width": 724,
+        "height": 578
+      },
+      "sourceId": "07-remake-reservation",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-reservation-window-05",
+      "art": "art/07-remake-reservation.png",
+      "description": "Auburn-haired young adult customer in ochre cloak returns at counter with steaming dish; medium Elna listens smiling, lower Kou looks toward seedling plot outside. Same customer as episode three, not Leon.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-reservation.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "b899a3634c6f404d2c5ac417a5f0205f3328d1c33bd1651dcf1093b7cb7abe72",
+      "crop": {
+        "x": 0,
+        "y": 1817,
+        "width": 724,
+        "height": 355
+      },
+      "sourceId": "07-remake-reservation",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-limit-window-01",
+      "art": "art/08-remake-limit.png",
       "description": "Large quiet partnership scene under blue awning: Elna writes small reservation list with abstract marks, Kou beside her holding crop notebook, small plot at dusk. Serious hopeful sense of limited but workable business.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "dce000b9f5ae16ecc2c20628c1cd5a753cd26c54593ce45f664d4ce116294662"
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 140,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-limit.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "bf6f02b89cb93cef621ef675e831e6f10ce9f94eb2ee3a75765bda652e9edca6",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 422
+      },
+      "sourceId": "08-remake-limit",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-limit-window-02",
+      "art": "art/08-remake-limit.png",
+      "description": "Large quiet partnership scene under blue awning: Elna writes small reservation list with abstract marks, Kou beside her holding crop notebook, small plot at dusk. Serious hopeful sense of limited but workable business.",
+      "dialogue": [
+        [
+          "コウ",
+          "畑に合わせて、数を決めよう。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 210,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-limit.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "bf6f02b89cb93cef621ef675e831e6f10ce9f94eb2ee3a75765bda652e9edca6",
+      "crop": {
+        "x": 0,
+        "y": 422,
+        "width": 724,
+        "height": 422
+      },
+      "sourceId": "08-remake-limit",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-limit-window-03",
+      "art": "art/08-remake-limit.png",
+      "description": "Large quiet partnership scene under blue awning: Elna writes small reservation list with abstract marks, Kou beside her holding crop notebook, small plot at dusk. Serious hopeful sense of limited but workable business.",
+      "dialogue": [
+        [
+          "エルナ",
+          "仕入れの分も、一緒にね。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 100,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-limit.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "bf6f02b89cb93cef621ef675e831e6f10ce9f94eb2ee3a75765bda652e9edca6",
+      "crop": {
+        "x": 0,
+        "y": 844,
+        "width": 724,
+        "height": 303
+      },
+      "sourceId": "08-remake-limit",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-limit-window-04",
+      "art": "art/08-remake-limit.png",
+      "description": "Large quiet partnership scene under blue awning: Elna writes small reservation list with abstract marks, Kou beside her holding crop notebook, small plot at dusk. Serious hopeful sense of limited but workable business.",
+      "dialogue": [
+        [
+          "コウ",
+          "できない数は、受けない。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 180,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-limit.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "bf6f02b89cb93cef621ef675e831e6f10ce9f94eb2ee3a75765bda652e9edca6",
+      "crop": {
+        "x": 0,
+        "y": 1147,
+        "width": 724,
+        "height": 297
+      },
+      "sourceId": "08-remake-limit",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-limit-window-05",
+      "art": "art/08-remake-limit.png",
+      "description": "Large quiet partnership scene under blue awning: Elna writes small reservation list with abstract marks, Kou beside her holding crop notebook, small plot at dusk. Serious hopeful sense of limited but workable business.",
+      "dialogue": [
+        [
+          "エルナ",
+          "売り切れも、先に伝える。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 270,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-limit.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "bf6f02b89cb93cef621ef675e831e6f10ce9f94eb2ee3a75765bda652e9edca6",
+      "crop": {
+        "x": 0,
+        "y": 1444,
+        "width": 724,
+        "height": 289
+      },
+      "sourceId": "08-remake-limit",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-limit-window-06",
+      "art": "art/08-remake-limit.png",
+      "description": "Large quiet partnership scene under blue awning: Elna writes small reservation list with abstract marks, Kou beside her holding crop notebook, small plot at dusk. Serious hopeful sense of limited but workable business.",
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-limit.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "bf6f02b89cb93cef621ef675e831e6f10ce9f94eb2ee3a75765bda652e9edca6",
+      "crop": {
+        "x": 0,
+        "y": 1733,
+        "width": 724,
+        "height": 439
+      },
+      "sourceId": "08-remake-limit",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     }
   ]
 }
