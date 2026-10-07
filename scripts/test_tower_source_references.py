@@ -62,9 +62,16 @@ class CurrentGenerationInputs(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "reference/missing.png"):
             self.check()
 
-    def test_unreachable_old_record_does_not_require_obsolete_art(self):
+    def test_deleted_artwork_cannot_remain_in_an_unused_record(self):
         self.records.append(dict(adopted="episode-01/art/obsolete.png", sha256="old", references=[]))
-        self.assertNotIn("episode-01/art/obsolete.png", self.check())
+        with self.assertRaisesRegex(ValueError, "episode-01/art/obsolete.png"):
+            self.check()
+
+    def test_unused_record_cannot_retain_a_deleted_reference(self):
+        self.add_image("episode-01/art/unused.png", b"unused input")
+        self.records.append(self.record("episode-01/art/unused.png", ["reference/deleted.png"]))
+        with self.assertRaisesRegex(ValueError, "reference/deleted.png"):
+            self.check()
 
     def make_repaired_override(self):
         self.add_image("episode-01/art/repaired.png", b"repaired artwork")
@@ -96,6 +103,29 @@ class CurrentGenerationInputs(unittest.TestCase):
         self.assertIn("episode-02/art/shared.png", self.check())
         (self.root / "episode-02/art/shared.png").write_bytes(b"changed shared reference")
         with self.assertRaisesRegex(ValueError, "Generation input bytes differ: episode-02/art/shared.png"):
+            self.check()
+
+    def make_prompt_file(self):
+        self.add_image("production/instruction.txt", b"exact executed instruction")
+        self.records[0].update(prompt="production/instruction.txt",
+                               prompt_sha256=hashlib.sha256(b"exact executed instruction").hexdigest())
+
+    def test_deleting_recorded_prompt_file_is_rejected(self):
+        self.make_prompt_file()
+        (self.root / "production/instruction.txt").unlink()
+        with self.assertRaisesRegex(ValueError, "Missing generation prompt file"):
+            self.check()
+
+    def test_changing_recorded_prompt_file_is_rejected(self):
+        self.make_prompt_file()
+        (self.root / "production/instruction.txt").write_bytes(b"changed instruction")
+        with self.assertRaisesRegex(ValueError, "Generation prompt bytes differ"):
+            self.check()
+
+    def test_prompt_file_requires_a_recorded_hash(self):
+        self.make_prompt_file()
+        del self.records[0]["prompt_sha256"]
+        with self.assertRaisesRegex(ValueError, "Missing prompt hash record"):
             self.check()
 
 

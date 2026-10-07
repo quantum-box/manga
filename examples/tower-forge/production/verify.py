@@ -40,7 +40,7 @@ def check_source_references(root=ROOT):
     def normalized(value):
         value = value.removeprefix("examples/tower-forge/")
         return str((root / value).resolve().relative_to(root.resolve()))
-    records = {}
+    records, retained = {}, []
     for name in ["asset-provenance.json", "shared-inputs.json", "repairs.json", "revision-provenance.json"]:
         for record in json.loads((root / "production" / name).read_text()):
             key = record["adopted"] if "adopted" in record else f"episode-{record['episode']:02d}/" + record["file"]
@@ -49,7 +49,31 @@ def check_source_references(root=ROOT):
                 record = dict(record)
                 record["references"] = list(record.get("references", [])) + [
                     str(Path(f"episode-{record['episode']:02d}") / record["edit_source"])]
-            records[normalized(key)] = record
+            key = normalized(key)
+            records[key] = record
+            retained.append((key, record))
+    for key, record in retained:
+        path = root / key
+        if not path.is_file():
+            raise ValueError("Missing current generation input: " + key)
+        if hashlib.sha256(path.read_bytes()).hexdigest() != record["sha256"]:
+            raise ValueError("Generation input bytes differ: " + key)
+        for reference in record.get("references", []):
+            reference = normalized(reference)
+            if not (root / reference).is_file():
+                raise ValueError("Missing current generation input: " + reference)
+            if reference not in records:
+                raise ValueError("Missing generation input hash record: " + reference)
+        prompt = record.get("prompt", "")
+        if "\n" not in prompt and prompt.endswith((".md", ".txt")):
+            prompt = normalized(prompt)
+            path = root / prompt
+            if not path.is_file():
+                raise ValueError("Missing generation prompt file: " + prompt)
+            if "prompt_sha256" not in record:
+                raise ValueError("Missing prompt hash record: " + prompt)
+            if hashlib.sha256(path.read_bytes()).hexdigest() != record["prompt_sha256"]:
+                raise ValueError("Generation prompt bytes differ: " + prompt)
     adopted = json.loads((root / "production/adopted-assets.json").read_text())
     pending = []
     for path in root.glob("episode-*/episode.json"):
@@ -63,14 +87,9 @@ def check_source_references(root=ROOT):
         if key in visited:
             continue
         visited.add(key)
-        path = root / key
-        if not path.is_file():
-            raise ValueError("Missing current generation input: " + key)
         record = records.get(key)
         if record is None:
             raise ValueError("Missing generation input hash record: " + key)
-        if hashlib.sha256(path.read_bytes()).hexdigest() != record["sha256"]:
-            raise ValueError("Generation input bytes differ: " + key)
         pending.extend(record.get("references", []))
     return visited
 
