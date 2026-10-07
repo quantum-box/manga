@@ -1,7 +1,7 @@
 {
-  "edition": "context-dialogue-v6",
+  "edition": "scroll-pacing-20261007",
   "status": "passed_export",
-  "method": "native canvas layout from manifest; no HTML or browser rendering",
+  "method": "native canvas layout from scrollLayout; same source windows and continuous geometry as reader; no HTML or browser rendering",
   "sourceArtworkUnchanged": true,
   "sourceHashes": [
     {
@@ -60,6 +60,11 @@
       "sha256": "1a6fd2e835edbf559b411844a2b99e7cb107a24e1086de4c2d8e2c9eac2d57a0"
     },
     {
+      "id": "wait-voice",
+      "file": "scroll-wait-voice.png",
+      "sha256": "1c2d6ea36b2b5d93e239a59f63f320e17e41a96efaf8c02da316e3fa5f3faee6"
+    },
+    {
       "id": "result",
       "file": "a11-result.png",
       "sha256": "49472d5d6da7558e4f20d5a18717971b6bcba2c43ba6c361db2462e804d3ea89"
@@ -85,9 +90,19 @@
       "sha256": "9bfcde731b5ed7e383ea626945d872f4cb6ee2188e889830b326a13a180f4414"
     },
     {
-      "id": "tremor",
-      "file": "a16-tremor.png",
-      "sha256": "78571b76164132d01b748d19d1790b5b707565c8a39ba2b78fe88e60eea1b660"
+      "id": "despair-voice",
+      "file": "scroll-despair-voice.png",
+      "sha256": "cd1c18f8f90eac40e5b3b172326c9c7956a6e369c95243728c86ab07e80c0ef3"
+    },
+    {
+      "id": "tremor-sound",
+      "file": "scroll-tremor-sound.png",
+      "sha256": "8f7a0d00c930ba169c1d1133aa7b381eaa994600bb4ab3bdd4b8e0c7dfdd9a6e"
+    },
+    {
+      "id": "tremor-detail",
+      "file": "scroll-tremor-detail.png",
+      "sha256": "b209a0102e5208eb7c3722b264b16bfaf8be380f0a01e7246b4615cc468d3fd2"
     },
     {
       "id": "e01-danger",
@@ -100,9 +115,14 @@
       "sha256": "0ec39d05ed995af25d2eb52f867d0284a19a03139f14ebf533725bee3aa6cf18"
     },
     {
-      "id": "leap",
-      "file": "sfx-08-leap.png",
-      "sha256": "c48dca0c6404b5d1ae69f540f481e03f94df37f9a3d8b2b140c130013c81deed"
+      "id": "decision-voice",
+      "file": "scroll-decision-voice.png",
+      "sha256": "d2d28f5a3fb78dc8eccc24343d1508ee0923e68e4bab69f904a0fdf4fa909e8a"
+    },
+    {
+      "id": "leap-no-thought",
+      "file": "scroll-leap.png",
+      "sha256": "6d0e0e7dbba21297bebc4780f97fc3547a6a2ad5d9b8d6668caf314262b9aec1"
     },
     {
       "id": "e01-catch",
@@ -140,14 +160,29 @@
       "sha256": "408c4bdf8316f441cbb2d2cb5fc34262dc2a3b65ab92f5dff8115bf95ffee12b"
     },
     {
-      "id": "e01-armor-assemble",
-      "file": "layout-armor-assemble.png",
-      "sha256": "b384527bb611fe563f09824f5bcb9ffd533dc884b14e6327617d3139180b97a5"
+      "id": "click",
+      "file": "scroll-click.png",
+      "sha256": "5270f6601934b3f6cbf9f6e02e79e1f02b630fd13fb46c87fe2b38841d41ecad"
+    },
+    {
+      "id": "assembly-click-off",
+      "file": "scroll-armor-assemble.png",
+      "sha256": "91cd5d39c9400dff1d41d5fdc512cca15d9a5b885e77e22a69ec1e43e3866bc9"
     },
     {
       "id": "e01-armor-check",
       "file": "armor-check.png",
       "sha256": "e1ac06d783b418ed85f01762061a3b4b96c9ce2e36f9cea8c9f36b86f19d5e58"
+    },
+    {
+      "id": "notice",
+      "file": "scroll-notice.png",
+      "sha256": "1c1963818bc85f7d4d2c748fa491ce63ea6c5f917ce4c274a185a35ed7ec5588"
+    },
+    {
+      "id": "light",
+      "file": "scroll-light.png",
+      "sha256": "317c1f3a82969bebda302fc191d8c59ceed59a85df5302d402ace2174eff41c1"
     },
     {
       "id": "hero",
@@ -172,551 +207,2640 @@
   ],
   "exports": [
     {
-      "width": 360,
-      "height": 27215,
       "file": "complete-360.png",
-      "sha256": "0c785729f9526541103922ef7b6e8abe48432e2bf90fd3dafaa9043b8cd40edb",
+      "width": 360,
+      "height": 34188,
+      "sha256": "90fdeb4644db9c487156872380d2d678202402e0504c3b146fda25250d4c230c",
       "positions": [
         {
           "id": "memory",
+          "sourceId": "memory",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
           "x": 0,
-          "y": 194,
+          "y": 193.84615384615387,
           "width": 360,
-          "height": 450,
-          "pause": 240
+          "height": 449.83957219251334,
+          "pause": 480
         },
         {
-          "id": "e01-waking",
+          "id": "wake-eyes",
+          "sourceId": "e01-waking",
+          "crop": [
+            0,
+            0,
+            726,
+            470
+          ],
           "x": 0,
-          "y": 884,
+          "y": 1123.685726038667,
           "width": 360,
-          "height": 1073,
-          "pause": 120
+          "height": 233.05785123966942,
+          "pause": 203.0769230769231
+        },
+        {
+          "id": "sky-city",
+          "sourceId": "e01-waking",
+          "crop": [
+            0,
+            476,
+            726,
+            1098
+          ],
+          "x": 0,
+          "y": 1559.8205003552596,
+          "width": 360,
+          "height": 544.4628099173553,
+          "pause": 143.0769230769231
+        },
+        {
+          "id": "wake-memory",
+          "sourceId": "e01-waking",
+          "crop": [
+            0,
+            1580,
+            726,
+            584
+          ],
+          "x": 0,
+          "y": 2247.3602333495382,
+          "width": 360,
+          "height": 289.58677685950414,
+          "pause": 147.6923076923077
         },
         {
           "id": "footsteps",
+          "sourceId": "footsteps",
+          "crop": [
+            0,
+            0,
+            1448,
+            1086
+          ],
           "x": 86.39999999999998,
-          "y": 2077,
+          "y": 2684.6393179013503,
           "width": 273.6,
-          "height": 205,
-          "pause": 42
+          "height": 205.20000000000002,
+          "pause": 38.769230769230774
         },
         {
           "id": "knight_arrives",
-          "x": 0,
-          "y": 2324,
-          "width": 360,
-          "height": 450,
-          "pause": 60
-        },
-        {
-          "id": "e01-greeting",
-          "x": 0,
-          "y": 2834,
-          "width": 360,
-          "height": 810,
-          "pause": 83
-        },
-        {
-          "id": "e01-rook-name",
-          "x": 0,
-          "y": 3727,
-          "width": 360,
-          "height": 1080,
-          "pause": 74
-        },
-        {
-          "id": "e01-orientation",
-          "x": 0,
-          "y": 4881,
-          "width": 360,
-          "height": 1080,
+          "sourceId": "knight_arrives",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
+          "x": 14.400000000000006,
+          "y": 2928.608548670581,
+          "width": 331.2,
+          "height": 413.85240641711226,
           "pause": 120
         },
         {
-          "id": "e01-instruction",
+          "id": "greeting-call",
+          "sourceId": "e01-greeting",
+          "crop": [
+            0,
+            0,
+            836,
+            535
+          ],
           "x": 0,
-          "y": 6081,
+          "y": 3462.460955087693,
           "width": 360,
-          "height": 1080,
-          "pause": 92
+          "height": 230.38277511961724,
+          "pause": 29.53846153846154
+        },
+        {
+          "id": "greeting-response",
+          "sourceId": "e01-greeting",
+          "crop": [
+            0,
+            544,
+            836,
+            466
+          ],
+          "x": 0,
+          "y": 3722.3821917457717,
+          "width": 360,
+          "height": 200.66985645933013,
+          "pause": 20.30769230769231
+        },
+        {
+          "id": "greeting-help",
+          "sourceId": "e01-greeting",
+          "crop": [
+            0,
+            1018,
+            836,
+            863
+          ],
+          "x": 0,
+          "y": 3943.3597405127944,
+          "width": 360,
+          "height": 371.6267942583732,
+          "pause": 78.46153846153847
+        },
+        {
+          "id": "rook-name",
+          "sourceId": "e01-rook-name",
+          "crop": [
+            0,
+            93,
+            724,
+            794
+          ],
+          "x": 0,
+          "y": 4393.448073232706,
+          "width": 360,
+          "height": 394.8066298342541,
+          "pause": 38.769230769230774
+        },
+        {
+          "id": "rook-two-shot",
+          "sourceId": "e01-rook-name",
+          "crop": [
+            0,
+            921,
+            724,
+            1175
+          ],
+          "x": 0,
+          "y": 4827.023933836191,
+          "width": 360,
+          "height": 584.2541436464088,
+          "pause": 101.53846153846155
+        },
+        {
+          "id": "orientation-1",
+          "sourceId": "e01-orientation",
+          "crop": [
+            0,
+            0,
+            724,
+            449
+          ],
+          "x": 0,
+          "y": 5512.8165390210615,
+          "width": 360,
+          "height": 223.2596685082873,
+          "pause": 64.61538461538461
+        },
+        {
+          "id": "orientation-2",
+          "sourceId": "e01-orientation",
+          "crop": [
+            0,
+            458,
+            724,
+            533
+          ],
+          "x": 0,
+          "y": 5800.6915921447335,
+          "width": 360,
+          "height": 265.02762430939225,
+          "pause": 60
+        },
+        {
+          "id": "orientation-3",
+          "sourceId": "e01-orientation",
+          "crop": [
+            0,
+            1007,
+            724,
+            273
+          ],
+          "x": 0,
+          "y": 6125.719216454126,
+          "width": 360,
+          "height": 135.74585635359117,
+          "pause": 22.153846153846153
+        },
+        {
+          "id": "orientation-4",
+          "sourceId": "e01-orientation",
+          "crop": [
+            0,
+            1294,
+            724,
+            322
+          ],
+          "x": 0,
+          "y": 6283.618918961563,
+          "width": 360,
+          "height": 160.11049723756906,
+          "pause": 60
+        },
+        {
+          "id": "orientation-5",
+          "sourceId": "e01-orientation",
+          "crop": [
+            0,
+            1630,
+            724,
+            512
+          ],
+          "x": 0,
+          "y": 6503.729416199132,
+          "width": 360,
+          "height": 254.58563535911603,
+          "pause": 138.46153846153848
+        },
+        {
+          "id": "measurement-guide-1",
+          "sourceId": "e01-instruction",
+          "crop": [
+            0,
+            0,
+            724,
+            432
+          ],
+          "x": 0,
+          "y": 6896.776590019786,
+          "width": 360,
+          "height": 214.80662983425415,
+          "pause": 64.61538461538461
+        },
+        {
+          "id": "measurement-guide-2",
+          "sourceId": "e01-instruction",
+          "crop": [
+            0,
+            448,
+            724,
+            686
+          ],
+          "x": 0,
+          "y": 7176.198604469425,
+          "width": 360,
+          "height": 341.10497237569064,
+          "pause": 92.3076923076923
+        },
+        {
+          "id": "measurement-guide-3",
+          "sourceId": "e01-instruction",
+          "crop": [
+            0,
+            1146,
+            724,
+            461
+          ],
+          "x": 0,
+          "y": 7609.611269152808,
+          "width": 360,
+          "height": 229.22651933701658,
+          "pause": 55.38461538461539
+        },
+        {
+          "id": "measurement-guide-4",
+          "sourceId": "e01-instruction",
+          "crop": [
+            0,
+            1619,
+            724,
+            532
+          ],
+          "x": 0,
+          "y": 7894.22240387444,
+          "width": 360,
+          "height": 264.5303867403315,
+          "pause": 115.38461538461539
         },
         {
           "id": "hesitation",
-          "x": 0,
-          "y": 7253,
-          "width": 360,
-          "height": 450,
-          "pause": 102
+          "sourceId": "hesitation",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
+          "x": 18,
+          "y": 8274.137405999387,
+          "width": 324,
+          "height": 404.85561497326205,
+          "pause": 69.23076923076924
         },
         {
           "id": "touch",
+          "sourceId": "touch",
+          "crop": [
+            0,
+            0,
+            1448,
+            1086
+          ],
           "x": 79.19999999999999,
-          "y": 7805,
+          "y": 8748.223790203418,
           "width": 280.8,
-          "height": 211,
-          "pause": 23
+          "height": 210.6,
+          "pause": 32.30769230769231
         },
         {
-          "id": "e01-waiting",
+          "id": "waiting-question",
+          "sourceId": "e01-waiting",
+          "crop": [
+            0,
+            9,
+            724,
+            1131
+          ],
           "x": 0,
-          "y": 8039,
+          "y": 8991.13148251111,
           "width": 360,
-          "height": 1080,
-          "pause": 157
+          "height": 562.3756906077348,
+          "pause": 110.76923076923077
+        },
+        {
+          "id": "waiting-voice",
+          "sourceId": "wait-voice",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "x": 0,
+          "y": 9664.276403888074,
+          "width": 360,
+          "height": 360,
+          "pause": 73.84615384615385
+        },
+        {
+          "id": "waiting-device",
+          "sourceId": "e01-waiting",
+          "crop": [
+            0,
+            1753,
+            724,
+            388
+          ],
+          "x": 50.39999999999998,
+          "y": 10098.122557734228,
+          "width": 309.6,
+          "height": 165.9182320441989,
+          "pause": 387.69230769230774
         },
         {
           "id": "result",
+          "sourceId": "result",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
           "x": 43.19999999999999,
-          "y": 9276,
+          "y": 10651.733097470735,
           "width": 316.8,
-          "height": 317,
-          "pause": 111
+          "height": 316.8,
+          "pause": 166.15384615384616
         },
         {
-          "id": "e01-confirmation",
+          "id": "zero-verdict",
+          "sourceId": "e01-confirmation",
+          "crop": [
+            0,
+            66,
+            724,
+            804
+          ],
           "x": 0,
-          "y": 9704,
+          "y": 11134.686943624582,
           "width": 360,
-          "height": 1080,
-          "pause": 134
+          "height": 399.7790055248619,
+          "pause": 60
+        },
+        {
+          "id": "zero-eyes",
+          "sourceId": "e01-confirmation",
+          "crop": [
+            0,
+            896,
+            724,
+            186
+          ],
+          "x": 14.400000000000006,
+          "y": 11594.465949149444,
+          "width": 331.2,
+          "height": 85.08729281767955,
+          "pause": 92.3076923076923
+        },
+        {
+          "id": "zero-answer",
+          "sourceId": "e01-confirmation",
+          "crop": [
+            0,
+            1107,
+            724,
+            1033
+          ],
+          "x": 0,
+          "y": 11771.860934274815,
+          "width": 360,
+          "height": 513.646408839779,
+          "pause": 147.6923076923077
         },
         {
           "id": "stakes",
-          "x": 0,
-          "y": 10918,
-          "width": 360,
-          "height": 450,
-          "pause": 92
+          "sourceId": "stakes",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
+          "x": 10.800000000000011,
+          "y": 12433.199650806902,
+          "width": 338.4,
+          "height": 422.84919786096253,
+          "pause": 78.46153846153847
         },
         {
           "id": "rejection",
-          "x": 0,
-          "y": 11460,
-          "width": 360,
-          "height": 450,
-          "pause": 92
+          "sourceId": "rejection",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
+          "x": 43.19999999999999,
+          "y": 12934.510387129403,
+          "width": 316.8,
+          "height": 395.8588235294118,
+          "pause": 216.92307692307693
         },
         {
-          "id": "zero_reaction",
-          "x": 0,
-          "y": 12002,
-          "width": 360,
-          "height": 450,
-          "pause": 203
+          "id": "empty-hand",
+          "sourceId": "zero_reaction",
+          "crop": [
+            380,
+            0,
+            742,
+            1402
+          ],
+          "x": 36,
+          "y": 13547.292287581891,
+          "width": 288,
+          "height": 544.1725067385445,
+          "pause": 124.61538461538463
         },
         {
-          "id": "tremor",
-          "x": 100.80000000000001,
-          "y": 12655,
-          "width": 259.2,
-          "height": 194,
-          "pause": 78
+          "id": "despair-voice",
+          "sourceId": "despair-voice",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "x": 0,
+          "y": 14216.080178935821,
+          "width": 360,
+          "height": 360,
+          "pause": 295.3846153846154
         },
         {
-          "id": "e01-danger",
+          "id": "distant-tremor",
+          "sourceId": "tremor-sound",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
           "x": 0,
-          "y": 12927,
+          "y": 14871.464794320436,
           "width": 360,
-          "height": 1080,
-          "pause": 92
+          "height": 360,
+          "pause": 133.84615384615384
+        },
+        {
+          "id": "boot-tremor",
+          "sourceId": "tremor-detail",
+          "crop": [
+            0,
+            0,
+            1536,
+            1024
+          ],
+          "x": 0,
+          "y": 15365.31094816659,
+          "width": 288,
+          "height": 192,
+          "pause": 96.92307692307693
+        },
+        {
+          "id": "danger-warning",
+          "sourceId": "e01-danger",
+          "crop": [
+            0,
+            0,
+            724,
+            358
+          ],
+          "x": 0,
+          "y": 15654.234025089667,
+          "width": 360,
+          "height": 178.0110497237569,
+          "pause": 138.46153846153848
+        },
+        {
+          "id": "danger-geography",
+          "sourceId": "e01-danger",
+          "crop": [
+            0,
+            358,
+            724,
+            1317
+          ],
+          "x": 0,
+          "y": 15970.706613274962,
+          "width": 360,
+          "height": 654.8618784530387,
+          "pause": 23.076923076923077
+        },
+        {
+          "id": "danger-princess",
+          "sourceId": "e01-danger",
+          "crop": [
+            0,
+            1692,
+            724,
+            480
+          ],
+          "x": 0,
+          "y": 16648.645414804923,
+          "width": 360,
+          "height": 238.67403314917127,
+          "pause": 32.30769230769231
         },
         {
           "id": "fall",
+          "sourceId": "fall",
+          "crop": [
+            0,
+            0,
+            887,
+            1774
+          ],
           "x": 0,
-          "y": 14099,
+          "y": 16919.627140261786,
           "width": 360,
           "height": 720,
-          "pause": 37
+          "pause": 147.6923076923077
+        },
+        {
+          "id": "decision-voice",
+          "sourceId": "decision-voice",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "x": 0,
+          "y": 17787.319447954094,
+          "width": 360,
+          "height": 360,
+          "pause": 78.46153846153847
         },
         {
           "id": "leap",
+          "sourceId": "leap-no-thought",
+          "crop": [
+            0,
+            0,
+            1024,
+            1536
+          ],
           "x": 0,
-          "y": 14856,
-          "width": 338.4,
-          "height": 508,
-          "pause": 23
+          "y": 18225.780986415633,
+          "width": 360,
+          "height": 540,
+          "pause": 14.76923076923077
         },
         {
           "id": "e01-catch",
+          "sourceId": "e01-catch",
+          "crop": [
+            0,
+            0,
+            1070,
+            1470
+          ],
           "x": 0,
-          "y": 15387,
+          "y": 18780.550217184864,
           "width": 360,
-          "height": 495,
-          "pause": 92
+          "height": 494.57943925233644,
+          "pause": 20.30769230769231
         },
         {
           "id": "landing",
+          "sourceId": "landing",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
           "x": 0,
-          "y": 15974,
+          "y": 19295.437348744894,
           "width": 360,
-          "height": 450,
-          "pause": 148
+          "height": 449.83957219251334,
+          "pause": 143.0769230769231
         },
         {
-          "id": "e01-safe-01",
+          "id": "safe-both",
+          "sourceId": "e01-safe-01",
+          "crop": [
+            0,
+            10,
+            836,
+            746
+          ],
           "x": 0,
-          "y": 16572,
+          "y": 19888.35384401433,
           "width": 360,
-          "height": 810,
-          "pause": 32
+          "height": 321.24401913875596,
+          "pause": 78.46153846153847
         },
         {
-          "id": "e01-safe-02",
+          "id": "safe-thanks",
+          "sourceId": "e01-safe-01",
+          "crop": [
+            0,
+            772,
+            836,
+            390
+          ],
           "x": 0,
-          "y": 17414,
+          "y": 20288.059401614624,
           "width": 360,
-          "height": 1080,
-          "pause": 92
+          "height": 167.94258373205741,
+          "pause": 50.769230769230774
         },
         {
-          "id": "e01-approach",
+          "id": "safe-mira",
+          "sourceId": "e01-safe-01",
+          "crop": [
+            0,
+            1181,
+            836,
+            685
+          ],
           "x": 0,
-          "y": 18586,
+          "y": 20506.77121611591,
           "width": 360,
-          "height": 1077,
-          "pause": 83
+          "height": 294.97607655502395,
+          "pause": 66.46153846153847
         },
         {
-          "id": "e01-core",
+          "id": "princess-name",
+          "sourceId": "e01-safe-02",
+          "crop": [
+            0,
+            0,
+            724,
+            394
+          ],
           "x": 0,
-          "y": 19746,
+          "y": 20868.208831132473,
           "width": 360,
-          "height": 1080,
-          "pause": 65
+          "height": 195.91160220994476,
+          "pause": 64.61538461538461
         },
         {
-          "id": "e01-armor-route",
+          "id": "princess-reaction",
+          "sourceId": "e01-safe-02",
+          "crop": [
+            0,
+            413,
+            724,
+            151
+          ],
           "x": 0,
-          "y": 20891,
+          "y": 21128.735817957804,
           "width": 360,
-          "height": 720,
-          "pause": 32
+          "height": 75.0828729281768,
+          "pause": 50.769230769230774
         },
         {
-          "id": "e01-armor-assemble",
+          "id": "ren-name",
+          "sourceId": "e01-safe-02",
+          "crop": [
+            0,
+            582,
+            724,
+            503
+          ],
           "x": 0,
-          "y": 21643,
+          "y": 21254.587921655213,
           "width": 360,
-          "height": 632,
-          "pause": 42
+          "height": 250.11049723756906,
+          "pause": 73.84615384615385
         },
         {
-          "id": "e01-armor-check",
+          "id": "safe-relief",
+          "sourceId": "e01-safe-02",
+          "crop": [
+            0,
+            1100,
+            724,
+            1072
+          ],
           "x": 0,
-          "y": 22317,
+          "y": 21578.544572738934,
           "width": 360,
-          "height": 720,
-          "pause": 138
+          "height": 533.0386740331492,
+          "pause": 203.0769230769231
+        },
+        {
+          "id": "approach-1",
+          "sourceId": "e01-approach",
+          "crop": [
+            0,
+            0,
+            725,
+            604
+          ],
+          "x": 0,
+          "y": 22314.660169849005,
+          "width": 360,
+          "height": 299.9172413793103,
+          "pause": 32.30769230769231
+        },
+        {
+          "id": "approach-2",
+          "sourceId": "e01-approach",
+          "crop": [
+            0,
+            622,
+            725,
+            310
+          ],
+          "x": 0,
+          "y": 22646.885103536006,
+          "width": 360,
+          "height": 153.93103448275863,
+          "pause": 36.92307692307693
+        },
+        {
+          "id": "approach-3",
+          "sourceId": "e01-approach",
+          "crop": [
+            0,
+            949,
+            725,
+            502
+          ],
+          "x": 0,
+          "y": 22837.73921494184,
+          "width": 360,
+          "height": 249.26896551724138,
+          "pause": 36.92307692307693
+        },
+        {
+          "id": "approach-4",
+          "sourceId": "e01-approach",
+          "crop": [
+            0,
+            1471,
+            725,
+            698
+          ],
+          "x": 0,
+          "y": 23123.93125738216,
+          "width": 360,
+          "height": 346.5931034482759,
+          "pause": 166.15384615384616
+        },
+        {
+          "id": "core-first-light",
+          "sourceId": "e01-core",
+          "crop": [
+            0,
+            0,
+            724,
+            1092
+          ],
+          "x": 0,
+          "y": 23636.67820698428,
+          "width": 360,
+          "height": 542.9834254143647,
+          "pause": 83.07692307692308
+        },
+        {
+          "id": "core-condition",
+          "sourceId": "e01-core",
+          "crop": [
+            0,
+            1118,
+            724,
+            429
+          ],
+          "x": 0,
+          "y": 24262.738555475567,
+          "width": 360,
+          "height": 213.31491712707182,
+          "pause": 83.07692307692308
+        },
+        {
+          "id": "core-armor-name",
+          "sourceId": "e01-core",
+          "crop": [
+            0,
+            1564,
+            724,
+            575
+          ],
+          "x": 0,
+          "y": 24559.130395679564,
+          "width": 360,
+          "height": 285.91160220994476,
+          "pause": 129.23076923076923
+        },
+        {
+          "id": "armor-start",
+          "sourceId": "e01-armor-route",
+          "crop": [
+            0,
+            0,
+            887,
+            1193
+          ],
+          "x": 0,
+          "y": 24974.272767120277,
+          "width": 360,
+          "height": 484.1939120631342,
+          "pause": 50.769230769230774
+        },
+        {
+          "id": "armor-route",
+          "sourceId": "e01-armor-route",
+          "crop": [
+            0,
+            1203,
+            887,
+            556
+          ],
+          "x": 0,
+          "y": 25509.235909952644,
+          "width": 360,
+          "height": 225.65952649379932,
+          "pause": 36.92307692307693
+        },
+        {
+          "id": "armor-click",
+          "sourceId": "click",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "x": 0,
+          "y": 25771.81851336952,
+          "width": 360,
+          "height": 360,
+          "pause": 38.769230769230774
+        },
+        {
+          "id": "armor-parts",
+          "sourceId": "assembly-click-off",
+          "crop": [
+            0,
+            0,
+            946,
+            706
+          ],
+          "x": 0,
+          "y": 26170.58774413875,
+          "width": 360,
+          "height": 268.6680761099366,
+          "pause": 16.615384615384617
+        },
+        {
+          "id": "armor-lock",
+          "sourceId": "assembly-click-off",
+          "crop": [
+            0,
+            719,
+            946,
+            917
+          ],
+          "x": 0,
+          "y": 26455.87120486407,
+          "width": 360,
+          "height": 348.9640591966173,
+          "pause": 29.53846153846154
+        },
+        {
+          "id": "armor-movement",
+          "sourceId": "e01-armor-check",
+          "crop": [
+            0,
+            0,
+            887,
+            1127
+          ],
+          "x": 0,
+          "y": 26834.373725599147,
+          "width": 360,
+          "height": 457.4069898534386,
+          "pause": 44.30769230769231
+        },
+        {
+          "id": "core-reserve",
+          "sourceId": "e01-armor-check",
+          "crop": [
+            0,
+            1145,
+            887,
+            337
+          ],
+          "x": 18,
+          "y": 27336.08840776028,
+          "width": 324,
+          "height": 123.09808342728297,
+          "pause": 69.23076923076924
+        },
+        {
+          "id": "connection-voice",
+          "sourceId": "notice",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "x": 0,
+          "y": 27528.41726041833,
+          "width": 360,
+          "height": 360,
+          "pause": 50.769230769230774
+        },
+        {
+          "id": "connection-light",
+          "sourceId": "light",
+          "crop": [
+            0,
+            0,
+            1024,
+            1536
+          ],
+          "x": 0,
+          "y": 27939.18649118756,
+          "width": 360,
+          "height": 540,
+          "pause": 147.6923076923077
         },
         {
           "id": "hero",
+          "sourceId": "hero",
+          "crop": [
+            0,
+            0,
+            887,
+            1774
+          ],
           "x": 0,
-          "y": 23175,
+          "y": 28626.87879887987,
           "width": 360,
           "height": 720,
-          "pause": 55
+          "pause": 73.84615384615385
         },
         {
           "id": "punch",
+          "sourceId": "punch",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
           "x": 0,
-          "y": 23950,
+          "y": 29420.72495272602,
           "width": 360,
-          "height": 450,
-          "pause": 212
+          "height": 449.83957219251334,
+          "pause": 193.84615384615387
         },
         {
-          "id": "e01-relief",
+          "id": "relief-1",
+          "sourceId": "e01-relief",
+          "crop": [
+            0,
+            0,
+            724,
+            511
+          ],
           "x": 0,
-          "y": 24612,
+          "y": 30064.41067876469,
           "width": 360,
-          "height": 1080,
-          "pause": 148
+          "height": 254.08839779005524,
+          "pause": 50.769230769230774
         },
         {
-          "id": "e01-fragment",
+          "id": "relief-2",
+          "sourceId": "e01-relief",
+          "crop": [
+            0,
+            532,
+            724,
+            529
+          ],
           "x": 0,
-          "y": 25840,
+          "y": 30369.268307323975,
           "width": 360,
-          "height": 1080,
-          "pause": 175
+          "height": 263.03867403314916,
+          "pause": 44.30769230769231
+        },
+        {
+          "id": "relief-3",
+          "sourceId": "e01-relief",
+          "crop": [
+            0,
+            1088,
+            724,
+            225
+          ],
+          "x": 0,
+          "y": 30676.614673664815,
+          "width": 360,
+          "height": 111.87845303867404,
+          "pause": 101.53846153846155
+        },
+        {
+          "id": "relief-4",
+          "sourceId": "e01-relief",
+          "crop": [
+            0,
+            1333,
+            724,
+            839
+          ],
+          "x": 0,
+          "y": 30890.03158824195,
+          "width": 360,
+          "height": 417.18232044198896,
+          "pause": 332.3076923076923
+        },
+        {
+          "id": "fragment-pickup",
+          "sourceId": "e01-fragment",
+          "crop": [
+            0,
+            0,
+            724,
+            364
+          ],
+          "x": 0,
+          "y": 31639.52160099163,
+          "width": 324,
+          "height": 162.8950276243094,
+          "pause": 627.6923076923077
+        },
+        {
+          "id": "fragment-emblem",
+          "sourceId": "e01-fragment",
+          "crop": [
+            0,
+            383,
+            724,
+            607
+          ],
+          "x": 0,
+          "y": 32430.108936308246,
+          "width": 360,
+          "height": 301.8232044198895,
+          "pause": 184.6153846153846
+        },
+        {
+          "id": "fragment-recognition",
+          "sourceId": "e01-fragment",
+          "crop": [
+            0,
+            1016,
+            724,
+            444
+          ],
+          "x": 0,
+          "y": 32916.54752534352,
+          "width": 360,
+          "height": 220.77348066298342,
+          "pause": 166.15384615384616
+        },
+        {
+          "id": "fragment-question",
+          "sourceId": "e01-fragment",
+          "crop": [
+            0,
+            1480,
+            724,
+            683
+          ],
+          "x": 0,
+          "y": 33303.474852160354,
+          "width": 360,
+          "height": 339.6132596685083,
+          "pause": 424.61538461538464
         }
       ]
     },
     {
-      "width": 390,
-      "height": 29480,
       "file": "complete-390.png",
-      "sha256": "8d26b080ccd5bcae760ec79796f08d815ae601abff14a2e33c8759ecd5c77203",
+      "width": 390,
+      "height": 37037,
+      "sha256": "ef430560022e71f3f16e73945c7f80bb1ec7f9e5cf4fcbeab675a41ea53951b2",
       "positions": [
         {
           "id": "memory",
+          "sourceId": "memory",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
           "x": 0,
           "y": 210,
           "width": 390,
-          "height": 487,
-          "pause": 260
+          "height": 487.32620320855614,
+          "pause": 520
         },
         {
-          "id": "e01-waking",
+          "id": "wake-eyes",
+          "sourceId": "e01-waking",
+          "crop": [
+            0,
+            0,
+            726,
+            470
+          ],
           "x": 0,
-          "y": 957,
+          "y": 1217.326203208556,
           "width": 390,
-          "height": 1162,
-          "pause": 130
-        },
-        {
-          "id": "footsteps",
-          "x": 93.60000000000002,
-          "y": 2249,
-          "width": 296.4,
-          "height": 222,
-          "pause": 45
-        },
-        {
-          "id": "knight_arrives",
-          "x": 0,
-          "y": 2516,
-          "width": 390,
-          "height": 487,
-          "pause": 65
-        },
-        {
-          "id": "e01-greeting",
-          "x": 0,
-          "y": 3068,
-          "width": 390,
-          "height": 878,
-          "pause": 90
-        },
-        {
-          "id": "e01-rook-name",
-          "x": 0,
-          "y": 4036,
-          "width": 390,
-          "height": 1170,
-          "pause": 80
-        },
-        {
-          "id": "e01-orientation",
-          "x": 0,
-          "y": 5286,
-          "width": 390,
-          "height": 1170,
-          "pause": 130
-        },
-        {
-          "id": "e01-instruction",
-          "x": 0,
-          "y": 6586,
-          "width": 390,
-          "height": 1170,
-          "pause": 100
-        },
-        {
-          "id": "hesitation",
-          "x": 0,
-          "y": 7856,
-          "width": 390,
-          "height": 487,
-          "pause": 110
-        },
-        {
-          "id": "touch",
-          "x": 85.80000000000001,
-          "y": 8453,
-          "width": 304.2,
-          "height": 228,
-          "pause": 25
-        },
-        {
-          "id": "e01-waiting",
-          "x": 0,
-          "y": 8706,
-          "width": 390,
-          "height": 1169,
-          "pause": 170
-        },
-        {
-          "id": "result",
-          "x": 46.80000000000001,
-          "y": 10045,
-          "width": 343.2,
-          "height": 343,
-          "pause": 120
-        },
-        {
-          "id": "e01-confirmation",
-          "x": 0,
-          "y": 10508,
-          "width": 390,
-          "height": 1170,
-          "pause": 145
-        },
-        {
-          "id": "stakes",
-          "x": 0,
-          "y": 11823,
-          "width": 390,
-          "height": 487,
-          "pause": 100
-        },
-        {
-          "id": "rejection",
-          "x": 0,
-          "y": 12410,
-          "width": 390,
-          "height": 487,
-          "pause": 100
-        },
-        {
-          "id": "zero_reaction",
-          "x": 0,
-          "y": 12997,
-          "width": 390,
-          "height": 487,
+          "height": 252.4793388429752,
           "pause": 220
         },
         {
-          "id": "tremor",
-          "x": 109.19999999999999,
-          "y": 13704,
-          "width": 280.8,
-          "height": 211,
+          "id": "sky-city",
+          "sourceId": "e01-waking",
+          "crop": [
+            0,
+            476,
+            726,
+            1098
+          ],
+          "x": 0,
+          "y": 1689.8055420515313,
+          "width": 390,
+          "height": 589.8347107438017,
+          "pause": 155
+        },
+        {
+          "id": "wake-memory",
+          "sourceId": "e01-waking",
+          "crop": [
+            0,
+            1580,
+            726,
+            584
+          ],
+          "x": 0,
+          "y": 2434.6402527953333,
+          "width": 390,
+          "height": 313.7190082644628,
+          "pause": 160
+        },
+        {
+          "id": "footsteps",
+          "sourceId": "footsteps",
+          "crop": [
+            0,
+            0,
+            1448,
+            1086
+          ],
+          "x": 93.60000000000002,
+          "y": 2908.359261059796,
+          "width": 296.4,
+          "height": 222.29999999999998,
+          "pause": 42
+        },
+        {
+          "id": "knight_arrives",
+          "sourceId": "knight_arrives",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
+          "x": 15.599999999999994,
+          "y": 3172.6592610597963,
+          "width": 358.8,
+          "height": 448.3401069518717,
+          "pause": 130
+        },
+        {
+          "id": "greeting-call",
+          "sourceId": "e01-greeting",
+          "crop": [
+            0,
+            0,
+            836,
+            535
+          ],
+          "x": 0,
+          "y": 3750.999368011668,
+          "width": 390,
+          "height": 249.58133971291866,
+          "pause": 32
+        },
+        {
+          "id": "greeting-response",
+          "sourceId": "e01-greeting",
+          "crop": [
+            0,
+            544,
+            836,
+            466
+          ],
+          "x": 0,
+          "y": 4032.580707724587,
+          "width": 390,
+          "height": 217.39234449760767,
+          "pause": 22
+        },
+        {
+          "id": "greeting-help",
+          "sourceId": "e01-greeting",
+          "crop": [
+            0,
+            1018,
+            836,
+            863
+          ],
+          "x": 0,
+          "y": 4271.973052222194,
+          "width": 390,
+          "height": 402.5956937799043,
           "pause": 85
         },
         {
-          "id": "e01-danger",
+          "id": "rook-name",
+          "sourceId": "e01-rook-name",
+          "crop": [
+            0,
+            93,
+            724,
+            794
+          ],
           "x": 0,
-          "y": 14000,
+          "y": 4759.568746002099,
           "width": 390,
-          "height": 1170,
-          "pause": 100
+          "height": 427.707182320442,
+          "pause": 42
         },
         {
-          "id": "fall",
+          "id": "rook-two-shot",
+          "sourceId": "e01-rook-name",
+          "crop": [
+            0,
+            921,
+            724,
+            1175
+          ],
           "x": 0,
-          "y": 15270,
+          "y": 5229.275928322541,
           "width": 390,
-          "height": 780,
-          "pause": 40
+          "height": 632.9419889502763,
+          "pause": 110
         },
         {
-          "id": "leap",
+          "id": "orientation-1",
+          "sourceId": "e01-orientation",
+          "crop": [
+            0,
+            0,
+            724,
+            449
+          ],
           "x": 0,
-          "y": 16090,
-          "width": 366.6,
-          "height": 550,
-          "pause": 25
-        },
-        {
-          "id": "e01-catch",
-          "x": 0,
-          "y": 16665,
+          "y": 5972.217917272817,
           "width": 390,
-          "height": 536,
-          "pause": 100
-        },
-        {
-          "id": "landing",
-          "x": 0,
-          "y": 17301,
-          "width": 390,
-          "height": 487,
-          "pause": 160
-        },
-        {
-          "id": "e01-safe-01",
-          "x": 0,
-          "y": 17948,
-          "width": 390,
-          "height": 878,
-          "pause": 35
-        },
-        {
-          "id": "e01-safe-02",
-          "x": 0,
-          "y": 18861,
-          "width": 390,
-          "height": 1170,
-          "pause": 100
-        },
-        {
-          "id": "e01-approach",
-          "x": 0,
-          "y": 20131,
-          "width": 390,
-          "height": 1167,
-          "pause": 90
-        },
-        {
-          "id": "e01-core",
-          "x": 0,
-          "y": 21388,
-          "width": 390,
-          "height": 1170,
+          "height": 241.8646408839779,
           "pause": 70
         },
         {
-          "id": "e01-armor-route",
+          "id": "orientation-2",
+          "sourceId": "e01-orientation",
+          "crop": [
+            0,
+            458,
+            724,
+            533
+          ],
           "x": 0,
-          "y": 22628,
+          "y": 6284.082558156795,
           "width": 390,
-          "height": 780,
-          "pause": 35
+          "height": 287.1132596685083,
+          "pause": 65
         },
         {
-          "id": "e01-armor-assemble",
+          "id": "orientation-3",
+          "sourceId": "e01-orientation",
+          "crop": [
+            0,
+            1007,
+            724,
+            273
+          ],
           "x": 0,
-          "y": 23443,
+          "y": 6636.1958178253035,
           "width": 390,
-          "height": 685,
-          "pause": 45
+          "height": 147.05801104972375,
+          "pause": 24
         },
         {
-          "id": "e01-armor-check",
+          "id": "orientation-4",
+          "sourceId": "e01-orientation",
+          "crop": [
+            0,
+            1294,
+            724,
+            322
+          ],
           "x": 0,
-          "y": 24173,
+          "y": 6807.2538288750275,
           "width": 390,
-          "height": 780,
+          "height": 173.45303867403314,
+          "pause": 65
+        },
+        {
+          "id": "orientation-5",
+          "sourceId": "e01-orientation",
+          "crop": [
+            0,
+            1630,
+            724,
+            512
+          ],
+          "x": 0,
+          "y": 7045.706867549061,
+          "width": 390,
+          "height": 275.8011049723757,
           "pause": 150
         },
         {
-          "id": "hero",
+          "id": "measurement-guide-1",
+          "sourceId": "e01-instruction",
+          "crop": [
+            0,
+            0,
+            724,
+            432
+          ],
           "x": 0,
-          "y": 25103,
+          "y": 7471.507972521436,
           "width": 390,
-          "height": 780,
+          "height": 232.707182320442,
+          "pause": 70
+        },
+        {
+          "id": "measurement-guide-2",
+          "sourceId": "e01-instruction",
+          "crop": [
+            0,
+            448,
+            724,
+            686
+          ],
+          "x": 0,
+          "y": 7774.215154841879,
+          "width": 390,
+          "height": 369.5303867403315,
+          "pause": 100
+        },
+        {
+          "id": "measurement-guide-3",
+          "sourceId": "e01-instruction",
+          "crop": [
+            0,
+            1146,
+            724,
+            461
+          ],
+          "x": 0,
+          "y": 8243.74554158221,
+          "width": 390,
+          "height": 248.32872928176795,
           "pause": 60
         },
         {
-          "id": "punch",
+          "id": "measurement-guide-4",
+          "sourceId": "e01-instruction",
+          "crop": [
+            0,
+            1619,
+            724,
+            532
+          ],
           "x": 0,
-          "y": 25943,
+          "y": 8552.074270863977,
           "width": 390,
-          "height": 487,
-          "pause": 230
+          "height": 286.57458563535914,
+          "pause": 125
         },
         {
-          "id": "e01-relief",
+          "id": "hesitation",
+          "sourceId": "hesitation",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
+          "x": 19.5,
+          "y": 8963.648856499336,
+          "width": 351,
+          "height": 438.5935828877005,
+          "pause": 75
+        },
+        {
+          "id": "touch",
+          "sourceId": "touch",
+          "crop": [
+            0,
+            0,
+            1448,
+            1086
+          ],
+          "x": 85.80000000000001,
+          "y": 9477.242439387037,
+          "width": 304.2,
+          "height": 228.15,
+          "pause": 35
+        },
+        {
+          "id": "waiting-question",
+          "sourceId": "e01-waiting",
+          "crop": [
+            0,
+            9,
+            724,
+            1131
+          ],
           "x": 0,
-          "y": 26660,
+          "y": 9740.392439387037,
           "width": 390,
-          "height": 1170,
+          "height": 609.2403314917127,
+          "pause": 120
+        },
+        {
+          "id": "waiting-voice",
+          "sourceId": "wait-voice",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "x": 0,
+          "y": 10469.632770878748,
+          "width": 390,
+          "height": 390,
+          "pause": 80
+        },
+        {
+          "id": "waiting-device",
+          "sourceId": "e01-waiting",
+          "crop": [
+            0,
+            1753,
+            724,
+            388
+          ],
+          "x": 54.60000000000002,
+          "y": 10939.632770878748,
+          "width": 335.4,
+          "height": 179.74475138121548,
+          "pause": 420
+        },
+        {
+          "id": "result",
+          "sourceId": "result",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "x": 46.80000000000001,
+          "y": 11539.377522259963,
+          "width": 343.2,
+          "height": 343.2,
+          "pause": 180
+        },
+        {
+          "id": "zero-verdict",
+          "sourceId": "e01-confirmation",
+          "crop": [
+            0,
+            66,
+            724,
+            804
+          ],
+          "x": 0,
+          "y": 12062.577522259964,
+          "width": 390,
+          "height": 433.0939226519337,
+          "pause": 65
+        },
+        {
+          "id": "zero-eyes",
+          "sourceId": "e01-confirmation",
+          "crop": [
+            0,
+            896,
+            724,
+            186
+          ],
+          "x": 15.599999999999994,
+          "y": 12560.671444911897,
+          "width": 358.8,
+          "height": 92.1779005524862,
+          "pause": 100
+        },
+        {
+          "id": "zero-answer",
+          "sourceId": "e01-confirmation",
+          "crop": [
+            0,
+            1107,
+            724,
+            1033
+          ],
+          "x": 0,
+          "y": 12752.849345464383,
+          "width": 390,
+          "height": 556.4502762430939,
           "pause": 160
         },
         {
-          "id": "e01-fragment",
+          "id": "stakes",
+          "sourceId": "stakes",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
+          "x": 11.699999999999989,
+          "y": 13469.299621707476,
+          "width": 366.6,
+          "height": 458.0866310160428,
+          "pause": 85
+        },
+        {
+          "id": "rejection",
+          "sourceId": "rejection",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
+          "x": 46.80000000000001,
+          "y": 14012.38625272352,
+          "width": 343.2,
+          "height": 428.8470588235294,
+          "pause": 235
+        },
+        {
+          "id": "empty-hand",
+          "sourceId": "zero_reaction",
+          "crop": [
+            380,
+            0,
+            742,
+            1402
+          ],
+          "x": 39,
+          "y": 14676.233311547048,
+          "width": 312,
+          "height": 589.5202156334232,
+          "pause": 135
+        },
+        {
+          "id": "despair-voice",
+          "sourceId": "despair-voice",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
           "x": 0,
-          "y": 27990,
+          "y": 15400.753527180472,
           "width": 390,
-          "height": 1170,
-          "pause": 190
+          "height": 390,
+          "pause": 320
+        },
+        {
+          "id": "distant-tremor",
+          "sourceId": "tremor-sound",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "x": 0,
+          "y": 16110.753527180472,
+          "width": 390,
+          "height": 390,
+          "pause": 145
+        },
+        {
+          "id": "boot-tremor",
+          "sourceId": "tremor-detail",
+          "crop": [
+            0,
+            0,
+            1536,
+            1024
+          ],
+          "x": 0,
+          "y": 16645.753527180474,
+          "width": 312,
+          "height": 208,
+          "pause": 105
+        },
+        {
+          "id": "danger-warning",
+          "sourceId": "e01-danger",
+          "crop": [
+            0,
+            0,
+            724,
+            358
+          ],
+          "x": 0,
+          "y": 16958.753527180474,
+          "width": 390,
+          "height": 192.84530386740332,
+          "pause": 150
+        },
+        {
+          "id": "danger-geography",
+          "sourceId": "e01-danger",
+          "crop": [
+            0,
+            358,
+            724,
+            1317
+          ],
+          "x": 0,
+          "y": 17301.59883104788,
+          "width": 390,
+          "height": 709.4337016574585,
+          "pause": 25
+        },
+        {
+          "id": "danger-princess",
+          "sourceId": "e01-danger",
+          "crop": [
+            0,
+            1692,
+            724,
+            480
+          ],
+          "x": 0,
+          "y": 18036.032532705336,
+          "width": 390,
+          "height": 258.56353591160223,
+          "pause": 35
+        },
+        {
+          "id": "fall",
+          "sourceId": "fall",
+          "crop": [
+            0,
+            0,
+            887,
+            1774
+          ],
+          "x": 0,
+          "y": 18329.59606861694,
+          "width": 390,
+          "height": 780,
+          "pause": 160
+        },
+        {
+          "id": "decision-voice",
+          "sourceId": "decision-voice",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "x": 0,
+          "y": 19269.59606861694,
+          "width": 390,
+          "height": 390,
+          "pause": 85
+        },
+        {
+          "id": "leap",
+          "sourceId": "leap-no-thought",
+          "crop": [
+            0,
+            0,
+            1024,
+            1536
+          ],
+          "x": 0,
+          "y": 19744.59606861694,
+          "width": 390,
+          "height": 585,
+          "pause": 16
+        },
+        {
+          "id": "e01-catch",
+          "sourceId": "e01-catch",
+          "crop": [
+            0,
+            0,
+            1070,
+            1470
+          ],
+          "x": 0,
+          "y": 20345.59606861694,
+          "width": 390,
+          "height": 535.7943925233645,
+          "pause": 22
+        },
+        {
+          "id": "landing",
+          "sourceId": "landing",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
+          "x": 0,
+          "y": 20903.3904611403,
+          "width": 390,
+          "height": 487.32620320855614,
+          "pause": 155
+        },
+        {
+          "id": "safe-both",
+          "sourceId": "e01-safe-01",
+          "crop": [
+            0,
+            10,
+            836,
+            746
+          ],
+          "x": 0,
+          "y": 21545.716664348856,
+          "width": 390,
+          "height": 348.0143540669856,
+          "pause": 85
+        },
+        {
+          "id": "safe-thanks",
+          "sourceId": "e01-safe-01",
+          "crop": [
+            0,
+            772,
+            836,
+            390
+          ],
+          "x": 0,
+          "y": 21978.73101841584,
+          "width": 390,
+          "height": 181.9377990430622,
+          "pause": 55
+        },
+        {
+          "id": "safe-mira",
+          "sourceId": "e01-safe-01",
+          "crop": [
+            0,
+            1181,
+            836,
+            685
+          ],
+          "x": 0,
+          "y": 22215.668817458904,
+          "width": 390,
+          "height": 319.5574162679426,
+          "pause": 72
+        },
+        {
+          "id": "princess-name",
+          "sourceId": "e01-safe-02",
+          "crop": [
+            0,
+            0,
+            724,
+            394
+          ],
+          "x": 0,
+          "y": 22607.226233726848,
+          "width": 390,
+          "height": 212.23756906077347,
+          "pause": 70
+        },
+        {
+          "id": "princess-reaction",
+          "sourceId": "e01-safe-02",
+          "crop": [
+            0,
+            413,
+            724,
+            151
+          ],
+          "x": 0,
+          "y": 22889.46380278762,
+          "width": 390,
+          "height": 81.33977900552486,
+          "pause": 55
+        },
+        {
+          "id": "ren-name",
+          "sourceId": "e01-safe-02",
+          "crop": [
+            0,
+            582,
+            724,
+            503
+          ],
+          "x": 0,
+          "y": 23025.803581793145,
+          "width": 390,
+          "height": 270.95303867403317,
+          "pause": 80
+        },
+        {
+          "id": "safe-relief",
+          "sourceId": "e01-safe-02",
+          "crop": [
+            0,
+            1100,
+            724,
+            1072
+          ],
+          "x": 0,
+          "y": 23376.75662046718,
+          "width": 390,
+          "height": 577.4585635359116,
+          "pause": 220
+        },
+        {
+          "id": "approach-1",
+          "sourceId": "e01-approach",
+          "crop": [
+            0,
+            0,
+            725,
+            604
+          ],
+          "x": 0,
+          "y": 24174.21518400309,
+          "width": 390,
+          "height": 324.9103448275862,
+          "pause": 35
+        },
+        {
+          "id": "approach-2",
+          "sourceId": "e01-approach",
+          "crop": [
+            0,
+            622,
+            725,
+            310
+          ],
+          "x": 0,
+          "y": 24534.125528830675,
+          "width": 390,
+          "height": 166.75862068965517,
+          "pause": 40
+        },
+        {
+          "id": "approach-3",
+          "sourceId": "e01-approach",
+          "crop": [
+            0,
+            949,
+            725,
+            502
+          ],
+          "x": 0,
+          "y": 24740.88414952033,
+          "width": 390,
+          "height": 270.04137931034484,
+          "pause": 40
+        },
+        {
+          "id": "approach-4",
+          "sourceId": "e01-approach",
+          "crop": [
+            0,
+            1471,
+            725,
+            698
+          ],
+          "x": 0,
+          "y": 25050.925528830674,
+          "width": 390,
+          "height": 375.4758620689655,
+          "pause": 180
+        },
+        {
+          "id": "core-first-light",
+          "sourceId": "e01-core",
+          "crop": [
+            0,
+            0,
+            724,
+            1092
+          ],
+          "x": 0,
+          "y": 25606.40139089964,
+          "width": 390,
+          "height": 588.232044198895,
+          "pause": 90
+        },
+        {
+          "id": "core-condition",
+          "sourceId": "e01-core",
+          "crop": [
+            0,
+            1118,
+            724,
+            429
+          ],
+          "x": 0,
+          "y": 26284.633435098534,
+          "width": 390,
+          "height": 231.09116022099448,
+          "pause": 90
+        },
+        {
+          "id": "core-armor-name",
+          "sourceId": "e01-core",
+          "crop": [
+            0,
+            1564,
+            724,
+            575
+          ],
+          "x": 0,
+          "y": 26605.72459531953,
+          "width": 390,
+          "height": 309.73756906077347,
+          "pause": 140
+        },
+        {
+          "id": "armor-start",
+          "sourceId": "e01-armor-route",
+          "crop": [
+            0,
+            0,
+            887,
+            1193
+          ],
+          "x": 0,
+          "y": 27055.462164380304,
+          "width": 390,
+          "height": 524.543404735062,
+          "pause": 55
+        },
+        {
+          "id": "armor-route",
+          "sourceId": "e01-armor-route",
+          "crop": [
+            0,
+            1203,
+            887,
+            556
+          ],
+          "x": 0,
+          "y": 27635.005569115365,
+          "width": 390,
+          "height": 244.46448703494926,
+          "pause": 40
+        },
+        {
+          "id": "armor-click",
+          "sourceId": "click",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "x": 0,
+          "y": 27919.470056150312,
+          "width": 390,
+          "height": 390,
+          "pause": 42
+        },
+        {
+          "id": "armor-parts",
+          "sourceId": "assembly-click-off",
+          "crop": [
+            0,
+            0,
+            946,
+            706
+          ],
+          "x": 0,
+          "y": 28351.470056150312,
+          "width": 390,
+          "height": 291.0570824524313,
+          "pause": 18
+        },
+        {
+          "id": "armor-lock",
+          "sourceId": "assembly-click-off",
+          "crop": [
+            0,
+            719,
+            946,
+            917
+          ],
+          "x": 0,
+          "y": 28660.527138602745,
+          "width": 390,
+          "height": 378.0443974630021,
+          "pause": 32
+        },
+        {
+          "id": "armor-movement",
+          "sourceId": "e01-armor-check",
+          "crop": [
+            0,
+            0,
+            887,
+            1127
+          ],
+          "x": 0,
+          "y": 29070.57153606575,
+          "width": 390,
+          "height": 495.52423900789177,
+          "pause": 48
+        },
+        {
+          "id": "core-reserve",
+          "sourceId": "e01-armor-check",
+          "crop": [
+            0,
+            1145,
+            887,
+            337
+          ],
+          "x": 19.5,
+          "y": 29614.09577507364,
+          "width": 351,
+          "height": 133.35625704622322,
+          "pause": 75
+        },
+        {
+          "id": "connection-voice",
+          "sourceId": "notice",
+          "crop": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "x": 0,
+          "y": 29822.452032119865,
+          "width": 390,
+          "height": 390,
+          "pause": 55
+        },
+        {
+          "id": "connection-light",
+          "sourceId": "light",
+          "crop": [
+            0,
+            0,
+            1024,
+            1536
+          ],
+          "x": 0,
+          "y": 30267.452032119865,
+          "width": 390,
+          "height": 585,
+          "pause": 160
+        },
+        {
+          "id": "hero",
+          "sourceId": "hero",
+          "crop": [
+            0,
+            0,
+            887,
+            1774
+          ],
+          "x": 0,
+          "y": 31012.452032119865,
+          "width": 390,
+          "height": 780,
+          "pause": 80
+        },
+        {
+          "id": "punch",
+          "sourceId": "punch",
+          "crop": [
+            0,
+            0,
+            1122,
+            1402
+          ],
+          "x": 0,
+          "y": 31872.452032119865,
+          "width": 390,
+          "height": 487.32620320855614,
+          "pause": 210
+        },
+        {
+          "id": "relief-1",
+          "sourceId": "e01-relief",
+          "crop": [
+            0,
+            0,
+            724,
+            511
+          ],
+          "x": 0,
+          "y": 32569.77823532842,
+          "width": 390,
+          "height": 275.26243093922653,
+          "pause": 55
+        },
+        {
+          "id": "relief-2",
+          "sourceId": "e01-relief",
+          "crop": [
+            0,
+            532,
+            724,
+            529
+          ],
+          "x": 0,
+          "y": 32900.04066626765,
+          "width": 390,
+          "height": 284.9585635359116,
+          "pause": 48
+        },
+        {
+          "id": "relief-3",
+          "sourceId": "e01-relief",
+          "crop": [
+            0,
+            1088,
+            724,
+            225
+          ],
+          "x": 0,
+          "y": 33232.99922980356,
+          "width": 390,
+          "height": 121.20165745856353,
+          "pause": 110
+        },
+        {
+          "id": "relief-4",
+          "sourceId": "e01-relief",
+          "crop": [
+            0,
+            1333,
+            724,
+            839
+          ],
+          "x": 0,
+          "y": 33464.20088726212,
+          "width": 390,
+          "height": 451.9475138121547,
+          "pause": 360
+        },
+        {
+          "id": "fragment-pickup",
+          "sourceId": "e01-fragment",
+          "crop": [
+            0,
+            0,
+            724,
+            364
+          ],
+          "x": 0,
+          "y": 34276.14840107428,
+          "width": 351,
+          "height": 176.4696132596685,
+          "pause": 680
+        },
+        {
+          "id": "fragment-emblem",
+          "sourceId": "e01-fragment",
+          "crop": [
+            0,
+            383,
+            724,
+            607
+          ],
+          "x": 0,
+          "y": 35132.618014333944,
+          "width": 390,
+          "height": 326.97513812154693,
+          "pause": 200
+        },
+        {
+          "id": "fragment-recognition",
+          "sourceId": "e01-fragment",
+          "crop": [
+            0,
+            1016,
+            724,
+            444
+          ],
+          "x": 0,
+          "y": 35659.59315245549,
+          "width": 390,
+          "height": 239.17127071823205,
+          "pause": 180
+        },
+        {
+          "id": "fragment-question",
+          "sourceId": "e01-fragment",
+          "crop": [
+            0,
+            1480,
+            724,
+            683
+          ],
+          "x": 0,
+          "y": 36078.76442317372,
+          "width": 390,
+          "height": 367.914364640884,
+          "pause": 460
         }
       ]
     }
   ],
+  "reviewArtifacts": [
+    {
+      "file": "review/scroll-units-360-00.png",
+      "width": 2160,
+      "height": 600,
+      "sha256": "4295949b0d69b803146564550afa437b993cf531650a8247c5df69d9cb6fe813"
+    },
+    {
+      "file": "review/scroll-units-360-01.png",
+      "width": 2160,
+      "height": 640,
+      "sha256": "a059619a9fd5d8ed2d4f1207c3075341ffa34ab74eb89f8788a64621bc615f0f"
+    },
+    {
+      "file": "review/scroll-units-360-02.png",
+      "width": 2160,
+      "height": 397,
+      "sha256": "79db533835daba1e41efe0156f20c42098dbdbe9891023479d0d8645db9ee050"
+    },
+    {
+      "file": "review/scroll-units-360-03.png",
+      "width": 2160,
+      "height": 618,
+      "sha256": "39e05dce62597400255793f5295678347fc0bb3cc9297f6da59eb97f882d5456"
+    },
+    {
+      "file": "review/scroll-units-360-04.png",
+      "width": 2160,
+      "height": 569,
+      "sha256": "bdf5f7b7a0043f6295ec5a00169696615643b1af3d3b58099e912caa275057be"
+    },
+    {
+      "file": "review/scroll-units-360-05.png",
+      "width": 2160,
+      "height": 600,
+      "sha256": "7871594c8354b3b7790a8f9780954da71167df048e71be7872b3b483e1e3fe24"
+    },
+    {
+      "file": "review/scroll-units-360-06.png",
+      "width": 2160,
+      "height": 775,
+      "sha256": "f43c18e3dbf39d16e136ccf49da7268df02f757265246ffa1eb60d156caf2ccc"
+    },
+    {
+      "file": "review/scroll-units-360-07.png",
+      "width": 2160,
+      "height": 505,
+      "sha256": "15eda5b9ee68aa37f952dd78fe54daeedbf8d97617861e5d51f82e8ce79e2862"
+    },
+    {
+      "file": "review/scroll-units-360-08.png",
+      "width": 2160,
+      "height": 589,
+      "sha256": "31911cc5c5f5ddd13980e4e4fa83fe3d3195e8a4ca2c67b5326668d9105f1634"
+    },
+    {
+      "file": "review/scroll-units-360-09.png",
+      "width": 2160,
+      "height": 598,
+      "sha256": "f9c2f1b3ae595691b8120ac36af072c23342f80680c1ae7ef2faee8776e4bc37"
+    },
+    {
+      "file": "review/scroll-units-360-10.png",
+      "width": 2160,
+      "height": 595,
+      "sha256": "7c696b44a55dc317314f0b37ae8f4069d8a4cc9d27ffd8ca9e82a27d7d1c785c"
+    },
+    {
+      "file": "review/scroll-units-360-11.png",
+      "width": 2160,
+      "height": 775,
+      "sha256": "21c4ec069d6d94f14f05805ff4b0f2ae2df85be3c8e18c4548bf757c8ecccdb8"
+    },
+    {
+      "file": "review/scroll-units-360-12.png",
+      "width": 1440,
+      "height": 395,
+      "sha256": "d5ed48faf0760c7f1c8df8b35d563e9d64992ea001fbac9df919faed1054ad36"
+    },
+    {
+      "file": "review/scroll-window-360-waiting-voice.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "2d4dcae9aa016ffca396126b04c3d58cf43e430a531fe2a9aa92e9a71d922faf",
+      "top": 9627.353326964998
+    },
+    {
+      "file": "review/scroll-window-360-waiting-device.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "58abed708481d318ecda2f3cc32dc0945753c3a01bd02e077601b25cff8ba598",
+      "top": 10061.199480811152
+    },
+    {
+      "file": "review/scroll-window-360-result.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "17f5b42bcb887ee9aa063cad8a40dd41825bebaecff9ecc73b408c89fc6d2e8d",
+      "top": 10614.810020547658
+    },
+    {
+      "file": "review/scroll-window-360-despair-voice.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "40462084ee2e25dcd175c78a4b4b33cb23e96dca055c2de95d6d4c5355ebbbed",
+      "top": 14179.157102012745
+    },
+    {
+      "file": "review/scroll-window-360-distant-tremor.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "83b83c5e13d1a7a441f2cd4efc150cdd07b3809ed767201c4471ae6c986c3c5a",
+      "top": 14834.54171739736
+    },
+    {
+      "file": "review/scroll-window-360-decision-voice.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "9b0d08066b8fd61bbbc5ecc4ba0d4a3c111cc39f66476982caacd09063bc53b6",
+      "top": 17750.396371031016
+    },
+    {
+      "file": "review/scroll-window-360-armor-click.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "daa9a064716ea17b4c8b5101335bd5ddfcab58630ada0473c7cdd535a032cb91",
+      "top": 25734.89543644644
+    },
+    {
+      "file": "review/scroll-window-360-connection-voice.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "971d130427eb3a5ac4cffc64527ae59b19eaa8dd4981f15c74fd4c667dae4459",
+      "top": 27491.49418349525
+    },
+    {
+      "file": "review/scroll-window-360-connection-light.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "409be92b871ec11a9f9b82b99fc70a4d63c3f385616b6cae4e151f0135500da8",
+      "top": 27902.263414264482
+    },
+    {
+      "file": "review/scroll-window-360-hero.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "2da58a6321344c77f94212c10b1c4d7587033862554610877442d6519a9793e0",
+      "top": 28589.95572195679
+    },
+    {
+      "file": "review/scroll-window-360-fragment-pickup.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "3a24d8c2479974fe7a240bffdfb6c3f2615830678ddc2fdd0bf59ba30499703b",
+      "top": 31602.59852406855
+    },
+    {
+      "file": "review/scroll-window-360-fragment-emblem.png",
+      "width": 360,
+      "height": 800,
+      "sha256": "9535cb7406a41ff7e8e8b6508acc8b25bca6924351143d499d8cda37ba7f55c0",
+      "top": 32393.18585938517
+    },
+    {
+      "file": "review/scroll-armor-sequence-360.png",
+      "width": 360,
+      "height": 3838,
+      "sha256": "28f427039cd16e02b28e53056b87e499e1845232f14c2e02006b226e64271c4b"
+    },
+    {
+      "file": "review/scroll-units-390-00.png",
+      "width": 2340,
+      "height": 645,
+      "sha256": "2fc5327b7ad9398f0889260d7569bfd7b25b8c3274cab044edc29d696ce9729c"
+    },
+    {
+      "file": "review/scroll-units-390-01.png",
+      "width": 2340,
+      "height": 688,
+      "sha256": "2b3b551adba2b93d0af442cc849e28ffdf40d902629bb3b0ec1a3fd6879d2e1a"
+    },
+    {
+      "file": "review/scroll-units-390-02.png",
+      "width": 2340,
+      "height": 425,
+      "sha256": "cb9afa783c855e21b86f61f3de5d132b9ce452bee4ae285da1a560fc77673175"
+    },
+    {
+      "file": "review/scroll-units-390-03.png",
+      "width": 2340,
+      "height": 665,
+      "sha256": "3526223fe9f0c6a8568f85deb1290a89d1254a9834ee9822e75f8a8a320ff81f"
+    },
+    {
+      "file": "review/scroll-units-390-04.png",
+      "width": 2340,
+      "height": 612,
+      "sha256": "1af553a4f22187ad4c0d7da4ffd70cef1411099a0c7d52426d35317080d0d66d"
+    },
+    {
+      "file": "review/scroll-units-390-05.png",
+      "width": 2340,
+      "height": 645,
+      "sha256": "784f78462aa0e4bf9de35ed114fa0875a5153b0ff67b8ca58e5fad73ca12f04e"
+    },
+    {
+      "file": "review/scroll-units-390-06.png",
+      "width": 2340,
+      "height": 835,
+      "sha256": "0886341143a35dabb20879465dce7a1245e857c25d2ea5207c4e4cf540753bf0"
+    },
+    {
+      "file": "review/scroll-units-390-07.png",
+      "width": 2340,
+      "height": 543,
+      "sha256": "4578beb7d1f579374d94abdbb3de5271df41558933dc64cefcf07cc1903168a8"
+    },
+    {
+      "file": "review/scroll-units-390-08.png",
+      "width": 2340,
+      "height": 633,
+      "sha256": "314ae52bd7e68af886dc25743898f24cf29ae3bca68e632bde67711b8f27f2a9"
+    },
+    {
+      "file": "review/scroll-units-390-09.png",
+      "width": 2340,
+      "height": 644,
+      "sha256": "5673b022087dd06ba896403d9c55c94869087091fd797ffab4eb1d8641cc0d25"
+    },
+    {
+      "file": "review/scroll-units-390-10.png",
+      "width": 2340,
+      "height": 640,
+      "sha256": "719314e162e2ab4256ebfec37d05f25705b84e93c363e1f3b42109e0c3cc1222"
+    },
+    {
+      "file": "review/scroll-units-390-11.png",
+      "width": 2340,
+      "height": 835,
+      "sha256": "a40804e435ea792975a6f6a8073714fbd20351cd9f9087c715f827edc82258a0"
+    },
+    {
+      "file": "review/scroll-units-390-12.png",
+      "width": 1560,
+      "height": 423,
+      "sha256": "184834a7146dccce8a6e562cd19331becff57034bcd910360fc9a2f59e9f3db0"
+    },
+    {
+      "file": "review/scroll-window-390-waiting-voice.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "b073f75d4cd85a4762692fb990393beac8db3f8f9e6669b9c4adb4dec19639e8",
+      "top": 10429.632770878748
+    },
+    {
+      "file": "review/scroll-window-390-waiting-device.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "9486a85b3c3b3c3d5b8e184a55dbf9172cf0923c4c3cbf199da45efbd18952d1",
+      "top": 10899.632770878748
+    },
+    {
+      "file": "review/scroll-window-390-result.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "436cd842fd79d52265b08564711d723839e50ecbe2420d74f291d9d0398273d6",
+      "top": 11499.377522259963
+    },
+    {
+      "file": "review/scroll-window-390-despair-voice.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "e427ec2dc1c41b4b6f84ca3ce1582162296b16eb6118b6ac2696878a9d641694",
+      "top": 15360.753527180472
+    },
+    {
+      "file": "review/scroll-window-390-distant-tremor.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "b29bb138fbe588e1c1323838b3b28371178816095ca4ddbcc743d89f722d356d",
+      "top": 16070.753527180472
+    },
+    {
+      "file": "review/scroll-window-390-decision-voice.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "db349a54232ad0feee8761487554c0b7509edfed103943348aaaa399485a15a5",
+      "top": 19229.59606861694
+    },
+    {
+      "file": "review/scroll-window-390-armor-click.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "4c6ddee15eac5cf5e6d14fc210fd2650d57c8fe7d128625580aa87530bc43119",
+      "top": 27879.470056150312
+    },
+    {
+      "file": "review/scroll-window-390-connection-voice.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "f89ddad2347a8152863c14e5055b05e66c6e23c2c6196685a049962055b72e01",
+      "top": 29782.452032119865
+    },
+    {
+      "file": "review/scroll-window-390-connection-light.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "746d8aaf6d14d5f841f2a24cb9e82aaba701bcc0299d1f573d42724a2e6e2cdc",
+      "top": 30227.452032119865
+    },
+    {
+      "file": "review/scroll-window-390-hero.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "2299ea116ee63ea9593ddb727c2fc3b5e48871e79aa6083563f2d3bc4a422c8f",
+      "top": 30972.452032119865
+    },
+    {
+      "file": "review/scroll-window-390-fragment-pickup.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "4bd420737ccf8cb662ed04e7b1effe7dd30c722cdeef4a48419b159fb83757d0",
+      "top": 34236.14840107428
+    },
+    {
+      "file": "review/scroll-window-390-fragment-emblem.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "70651977235eed364c0813f397d775753c0f0e0c1e685c03f25e12be6ee81707",
+      "top": 35092.618014333944
+    },
+    {
+      "file": "review/scroll-armor-sequence-390.png",
+      "width": 390,
+      "height": 4158,
+      "sha256": "7331bde11597b4052c2bf8f8a26417016a3900c4f7cc22d5917dded97524fa09"
+    }
+  ],
   "browserPixelsCompared": false,
-  "visualReview": "passed_native_mobile_image_review",
-  "layoutReview": "../production/episode-01-layout/verification.json"
+  "visualReview": "passed_native_images"
 }

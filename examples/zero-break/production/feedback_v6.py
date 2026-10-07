@@ -307,18 +307,21 @@ def build(number):
         if r.get('originalPrompt'):prompt_lines += ['元の生成指示：','','```text',r['originalPrompt'],'```','']
         prompt_lines += ['採用時の指示：','','```text',r.get('executedRepairPrompt',r.get('prompt','')),'```','']
     (directory(number)/'PROMPTS.md').write_text('\n'.join(line.rstrip() for line in '\n'.join(prompt_lines).splitlines())+'\n')
+    if number == 1 and (ROOT/'production/episode-01-scroll/plan.json').is_file():
+        from episode_01_scroll import adopt
+        adopt(manifest)
     subprocess.run([sys.executable,str(REPO/'skills/webtoon/scripts/package_reader.py'),str(directory(number)/'index.html'),'--output',str(directory(number)/'reader.html'),'--force'],check=True)
     validation_path=directory(number)/'validation.json'
     current_hash=digest(directory(number)/'index.html')
     prior_validation=json.loads(validation_path.read_text()) if validation_path.exists() else {}
     if prior_validation.get('readerSourceSha256')==current_hash:
-        prior_validation.update(edition=manifest.get('remakeEdition',manifest['version']), panels=manifest['panel_count'])
+        prior_validation.update(edition=manifest.get('scrollEdition',manifest.get('remakeEdition',manifest['version'])), panels=manifest['panel_count'])
         dump(validation_path,prior_validation)
         report()
         print(f'Built chapter {number}: unchanged reviewed reader')
         return
     dump(validation_path,{
-        'edition':manifest.get('remakeEdition',manifest['version']), 'panels':manifest['panel_count'],
+        'edition':manifest.get('scrollEdition',manifest.get('remakeEdition',manifest['version'])), 'panels':manifest['panel_count'],
         'readerSourceSha256':current_hash,
         'source_assets_verified':True,'visualReview':{'status':'pending'},
         'mobileBrowserReview':{'status':'pending','note':'Prior edition review does not apply to revised art.'},

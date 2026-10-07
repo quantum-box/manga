@@ -1,9 +1,9 @@
 {
-  "edition": "webtoon-remake-20261006",
+  "edition": "webtoon-remake-and-scroll-20261007",
   "status": "passed_artifact_checks",
   "totals": {
     "baseline_artworks": 196,
-    "reader_images": 199,
+    "reader_images": 206,
     "panels": 556,
     "adopted_revision_records": 57,
     "scripts": 50
@@ -11,9 +11,9 @@
   "chapters": [
     {
       "episode": 1,
-      "assets": 33,
+      "assets": 40,
       "panels": 73,
-      "source_sha256": "73ef45beac16d41e1728d2ef2671b323adbe60051c926e828b7d085c495015bc",
+      "source_sha256": "6598540cbc68a810df990884d59d0c4c51d2ef51b6c431989574d0109f29216f",
       "browser_review": "pending"
     },
     {
@@ -85,6 +85,12 @@
   "inserted_panels": 7,
   "panel_layout_revision_records": 4,
   "webtoon_remake_records": 166,
+  "episode_01_scroll": {
+    "displayBeats": 76,
+    "uniqueSources": 40,
+    "canonicalPanels": 73,
+    "sourceRecords": 10
+  },
   "checks": [
     "all prior source PNG hashes preserved",
     "every baseline scene represented",

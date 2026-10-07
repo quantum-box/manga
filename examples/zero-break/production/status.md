@@ -6,7 +6,7 @@
 
 |話|今回の再作画|コマ|画像目視|ブラウザ|
 |---|---:|---:|---|---|
-|1|0|73|passed_native_mobile_image_review|blocked_by_browser_url_policy|
+|1|0|73|passed|pending|
 |2|20|51|passed|pending|
 |3|18|40|passed|pending|
 |4|18|47|passed|pending|

@@ -2216,12 +2216,2434 @@
       }
     }
   ],
-  "change": "Compressed guide/verdict replaced by 16 approach, registration, measurement and reaction beats.",
+  "change": "第1話全編をスクロールで段階的に開示。余白の声・音・光、短い動作、横並び・斜め枠、発見の間を場面ごとに設計。",
   "revealAnchors": {
     "waitingCueBottom": 0.75,
     "resultZeroTop": 0.64,
     "method": "Conservative normalized image positions selected by visual inspection of actual 360px captures. The first zero glyph lies below the result image top."
   },
   "panel_count": 73,
-  "baseline": "git:81a4a9a80c9c6782bac7592142750c324a1b42eb:examples/zero-break/production/feedback-v6/baseline/episode-01.json"
+  "baseline": "git:81a4a9a80c9c6782bac7592142750c324a1b42eb:examples/zero-break/production/feedback-v6/baseline/episode-01.json",
+  "scrollEdition": "scroll-pacing-20261007",
+  "scrollLayout": {
+    "referenceWidth": 390,
+    "paper": "#ffffff",
+    "sources": [
+      {
+        "id": "memory",
+        "file": "sfx-01-memory.png",
+        "width": 1122,
+        "height": 1402,
+        "sha256": "f814493d4c37ed57ff0b69221e9f728b2067d3e06eabba73e7b2a6498b2fb915"
+      },
+      {
+        "id": "e01-waking",
+        "file": "v6-waking.png",
+        "width": 726,
+        "height": 2164,
+        "sha256": "51bcc4c360965220d3abc579a8e97c236677168df83298b35c4af60890e79739"
+      },
+      {
+        "id": "footsteps",
+        "file": "a01-footsteps.png",
+        "width": 1448,
+        "height": 1086,
+        "sha256": "13b51bbd3a35983a0affb34c9067fcb88097c299fc09159cfc61b4cecb81d111"
+      },
+      {
+        "id": "knight_arrives",
+        "file": "a02-knight-arrives.png",
+        "width": 1122,
+        "height": 1402,
+        "sha256": "ee2e3133608937864e3de6cae8a283921b14a3101b6c81fe17106979750a256a"
+      },
+      {
+        "id": "e01-greeting",
+        "file": "layout-greeting.png",
+        "width": 836,
+        "height": 1881,
+        "sha256": "c565db58ce533ed781d4574c47918c898dcfe952d01cfd927b585afa7006cf7f"
+      },
+      {
+        "id": "e01-rook-name",
+        "file": "v6-rook-name.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "004d437e5af4bde6794cfd66370764ce74f39e38fc7237a9dbd4409253852e57"
+      },
+      {
+        "id": "e01-orientation",
+        "file": "v6-orientation.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "7d1657e5667fa6c8ab68f69b358e64c61372784134c6ec38102716dc1b13352d"
+      },
+      {
+        "id": "e01-instruction",
+        "file": "v6-instruction.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "15c626e0694516e0e8e394be9bad282d13414ad0b4c28e33865fb8126a912bbc"
+      },
+      {
+        "id": "hesitation",
+        "file": "a08-hesitation.png",
+        "width": 1122,
+        "height": 1402,
+        "sha256": "1ad72b88d5a73eb0c59eaa593188ce3a88c4fd3ed0c88f431387d88b43de55ae"
+      },
+      {
+        "id": "touch",
+        "file": "sfx-a09-touch.png",
+        "width": 1448,
+        "height": 1086,
+        "sha256": "0d4593a0eccca2da8a8f56c1933db98fe74ede45bd57d1a5ced2e984fa4edd09"
+      },
+      {
+        "id": "e01-waiting",
+        "file": "v6-waiting.png",
+        "width": 724,
+        "height": 2171,
+        "sha256": "1a6fd2e835edbf559b411844a2b99e7cb107a24e1086de4c2d8e2c9eac2d57a0"
+      },
+      {
+        "id": "wait-voice",
+        "file": "scroll-wait-voice.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "1c2d6ea36b2b5d93e239a59f63f320e17e41a96efaf8c02da316e3fa5f3faee6",
+        "record": "examples/zero-break/production/episode-01-scroll/records/wait-voice.json"
+      },
+      {
+        "id": "result",
+        "file": "a11-result.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "49472d5d6da7558e4f20d5a18717971b6bcba2c43ba6c361db2462e804d3ea89"
+      },
+      {
+        "id": "e01-confirmation",
+        "file": "v6-confirmation.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "0af6be8efce8e482887963b255b9d6770c6c6ac68172b40209127692d498b182"
+      },
+      {
+        "id": "stakes",
+        "file": "a13-stakes.png",
+        "width": 1122,
+        "height": 1402,
+        "sha256": "c346ba513ac0706a3198913e0a7a3195666ec818ee3187f538e0d40bb24de648"
+      },
+      {
+        "id": "rejection",
+        "file": "a14-rejection.png",
+        "width": 1122,
+        "height": 1402,
+        "sha256": "a08007e2d78a4d1acdb6f50ca8c03ccfeedc3d429f1fb6aa6a9af6f32c1c9b6f"
+      },
+      {
+        "id": "zero_reaction",
+        "file": "a15-zero-reaction.png",
+        "width": 1122,
+        "height": 1402,
+        "sha256": "9bfcde731b5ed7e383ea626945d872f4cb6ee2188e889830b326a13a180f4414"
+      },
+      {
+        "id": "despair-voice",
+        "file": "scroll-despair-voice.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "cd1c18f8f90eac40e5b3b172326c9c7956a6e369c95243728c86ab07e80c0ef3",
+        "record": "examples/zero-break/production/episode-01-scroll/records/despair-voice.json"
+      },
+      {
+        "id": "tremor-sound",
+        "file": "scroll-tremor-sound.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "8f7a0d00c930ba169c1d1133aa7b381eaa994600bb4ab3bdd4b8e0c7dfdd9a6e",
+        "record": "examples/zero-break/production/episode-01-scroll/records/tremor-sound.json"
+      },
+      {
+        "id": "tremor-detail",
+        "file": "scroll-tremor-detail.png",
+        "width": 1536,
+        "height": 1024,
+        "sha256": "b209a0102e5208eb7c3722b264b16bfaf8be380f0a01e7246b4615cc468d3fd2",
+        "record": "examples/zero-break/production/episode-01-scroll/records/tremor-detail.json"
+      },
+      {
+        "id": "e01-danger",
+        "file": "sfx-v6-danger-geography.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "9fd0c8302e775420139e1603cd741fd7a097f6e89472dfae3bc60973b7dae993"
+      },
+      {
+        "id": "fall",
+        "file": "sfx-07-fall.png",
+        "width": 887,
+        "height": 1774,
+        "sha256": "0ec39d05ed995af25d2eb52f867d0284a19a03139f14ebf533725bee3aa6cf18"
+      },
+      {
+        "id": "decision-voice",
+        "file": "scroll-decision-voice.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "d2d28f5a3fb78dc8eccc24343d1508ee0923e68e4bab69f904a0fdf4fa909e8a",
+        "record": "examples/zero-break/production/episode-01-scroll/records/decision-voice.json"
+      },
+      {
+        "id": "leap-no-thought",
+        "file": "scroll-leap.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "6d0e0e7dbba21297bebc4780f97fc3547a6a2ad5d9b8d6668caf314262b9aec1",
+        "record": "examples/zero-break/production/episode-01-scroll/records/leap-no-thought.json"
+      },
+      {
+        "id": "e01-catch",
+        "file": "layout-catch.png",
+        "width": 1070,
+        "height": 1470,
+        "sha256": "da300621347e69009c072d6d831b26a16b5f14f6bb27a82c5920455ac5e09747"
+      },
+      {
+        "id": "landing",
+        "file": "10-landing.png",
+        "width": 1122,
+        "height": 1402,
+        "sha256": "62dcc7b2d9abd07f562c78aa5f4b97d09e958a212d97ce3d3556babebdc7116e"
+      },
+      {
+        "id": "e01-safe-01",
+        "file": "layout-safe-01.png",
+        "width": 836,
+        "height": 1881,
+        "sha256": "710dd404f4ebbd4ae6063ae69e3f8527702fbd9a017f129daee9ffad13247e37"
+      },
+      {
+        "id": "e01-safe-02",
+        "file": "v6-safe-02.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "3a01d48eb489e7e615e481d489b13cb60ce907b549a8422997b256f4d7c071c9"
+      },
+      {
+        "id": "e01-approach",
+        "file": "sfx-v6-approach.png",
+        "width": 725,
+        "height": 2169,
+        "sha256": "a7cbb3fa6a5db984cdd9a607831c0ba5e8ccd4419493fd725c6c8de517bdea92"
+      },
+      {
+        "id": "e01-core",
+        "file": "sfx-v6-core.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "ea88f815854233497ff443c1852f3277e37f3b218520fe5a599086e1be75321c"
+      },
+      {
+        "id": "e01-armor-route",
+        "file": "armor-route.png",
+        "width": 887,
+        "height": 1774,
+        "sha256": "408c4bdf8316f441cbb2d2cb5fc34262dc2a3b65ab92f5dff8115bf95ffee12b"
+      },
+      {
+        "id": "click",
+        "file": "scroll-click.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "5270f6601934b3f6cbf9f6e02e79e1f02b630fd13fb46c87fe2b38841d41ecad",
+        "record": "examples/zero-break/production/episode-01-scroll/records/click.json"
+      },
+      {
+        "id": "assembly-click-off",
+        "file": "scroll-armor-assemble.png",
+        "width": 946,
+        "height": 1662,
+        "sha256": "91cd5d39c9400dff1d41d5fdc512cca15d9a5b885e77e22a69ec1e43e3866bc9",
+        "record": "examples/zero-break/production/episode-01-scroll/records/assembly-click-off.json"
+      },
+      {
+        "id": "e01-armor-check",
+        "file": "armor-check.png",
+        "width": 887,
+        "height": 1774,
+        "sha256": "e1ac06d783b418ed85f01762061a3b4b96c9ce2e36f9cea8c9f36b86f19d5e58"
+      },
+      {
+        "id": "notice",
+        "file": "scroll-notice.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "1c1963818bc85f7d4d2c748fa491ce63ea6c5f917ce4c274a185a35ed7ec5588",
+        "record": "examples/zero-break/production/episode-01-scroll/records/notice.json"
+      },
+      {
+        "id": "light",
+        "file": "scroll-light.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "317c1f3a82969bebda302fc191d8c59ceed59a85df5302d402ace2174eff41c1",
+        "record": "examples/zero-break/production/episode-01-scroll/records/light.json"
+      },
+      {
+        "id": "hero",
+        "file": "sfx-14-hero.png",
+        "width": 887,
+        "height": 1774,
+        "sha256": "06b3480a33e9250958be8f59cfe3d9528bd5ecfa928221728efc2ab8e56c87d9"
+      },
+      {
+        "id": "punch",
+        "file": "sfx-15-punch.png",
+        "width": 1122,
+        "height": 1402,
+        "sha256": "1efa78eee6bcb8341b4f2664aec67d7db3fc26ed5cb8b0f18cff8be1bf2f0518"
+      },
+      {
+        "id": "e01-relief",
+        "file": "v6-relief.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "007934d151640ccb8a1e5aa128082ca046122d130599ba79aae1b0386e8c6464"
+      },
+      {
+        "id": "e01-fragment",
+        "file": "v6-fragment.png",
+        "width": 724,
+        "height": 2172,
+        "sha256": "f45d8f1d2d254fd5e0e0b548315dfe504bef9e42d9a2dc399dbbace518c8a552"
+      }
+    ],
+    "units": [
+      {
+        "id": "memory",
+        "sourceId": "memory",
+        "crop": [
+          0,
+          0,
+          1122,
+          1402
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 520,
+        "purpose": "雨の事故の記憶。届かなかった手だけが残る",
+        "panelRefs": [
+          [
+            "memory",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "memory",
+            0
+          ]
+        ],
+        "soundRefs": [
+          [
+            "memory",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "wake-eyes",
+        "sourceId": "e01-waking",
+        "crop": [
+          0,
+          0,
+          726,
+          470
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 220,
+        "purpose": "白い世界で目を開ける",
+        "panelRefs": [
+          [
+            "e01-waking",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-waking",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "sky-city",
+        "sourceId": "e01-waking",
+        "crop": [
+          0,
+          476,
+          726,
+          1098
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 155,
+        "purpose": "スクロールで空都の全景を開く",
+        "panelRefs": [
+          [
+            "e01-waking",
+            1
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": [
+          [
+            "e01-waking",
+            0
+          ]
+        ]
+      },
+      {
+        "id": "wake-memory",
+        "sourceId": "e01-waking",
+        "crop": [
+          0,
+          1580,
+          726,
+          584
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 160,
+        "purpose": "事故の記憶との食い違い",
+        "panelRefs": [
+          [
+            "e01-waking",
+            2
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-waking",
+            1
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "footsteps",
+        "sourceId": "footsteps",
+        "crop": [
+          0,
+          0,
+          1448,
+          1086
+        ],
+        "widthPercent": 76,
+        "align": "right",
+        "pause": 42,
+        "purpose": "顔より先に靴音が届く",
+        "panelRefs": [
+          [
+            "footsteps",
+            0
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [
+          [
+            "footsteps",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "knight_arrives",
+        "sourceId": "knight_arrives",
+        "crop": [
+          0,
+          0,
+          1122,
+          1402
+        ],
+        "widthPercent": 92,
+        "align": "center",
+        "pause": 130,
+        "purpose": "近づいてきた騎士を初めて見せる",
+        "panelRefs": [
+          [
+            "knight_arrives",
+            0
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "greeting-call",
+        "sourceId": "e01-greeting",
+        "crop": [
+          0,
+          0,
+          836,
+          535
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 32,
+        "purpose": "騎士が手を差し出す前の呼びかけ",
+        "panelRefs": [
+          [
+            "e01-greeting",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-greeting",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "greeting-response",
+        "sourceId": "e01-greeting",
+        "crop": [
+          0,
+          544,
+          836,
+          466
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 22,
+        "purpose": "差し出す手と返事を横並びで近くつなぐ",
+        "panelRefs": [
+          [
+            "e01-greeting",
+            1
+          ],
+          [
+            "e01-greeting",
+            2
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-greeting",
+            1
+          ]
+        ],
+        "soundRefs": [
+          [
+            "e01-greeting",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "greeting-help",
+        "sourceId": "e01-greeting",
+        "crop": [
+          0,
+          1018,
+          836,
+          863
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 85,
+        "purpose": "手を握って起き上がる",
+        "panelRefs": [
+          [
+            "e01-greeting",
+            3
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-greeting",
+            2
+          ]
+        ],
+        "soundRefs": [
+          [
+            "e01-greeting",
+            1
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "rook-name",
+        "sourceId": "e01-rook-name",
+        "crop": [
+          0,
+          93,
+          724,
+          794
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 42,
+        "purpose": "ルークの名乗り",
+        "panelRefs": [
+          [
+            "e01-rook-name",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-rook-name",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "rook-two-shot",
+        "sourceId": "e01-rook-name",
+        "crop": [
+          0,
+          921,
+          724,
+          1175
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 110,
+        "purpose": "二人の距離と立ち位置を確認",
+        "panelRefs": [
+          [
+            "e01-rook-name",
+            1
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "orientation-1",
+        "sourceId": "e01-orientation",
+        "crop": [
+          0,
+          0,
+          724,
+          449
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 70,
+        "purpose": "空の国を説明",
+        "panelRefs": [
+          [
+            "e01-orientation",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-orientation",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "orientation-2",
+        "sourceId": "e01-orientation",
+        "crop": [
+          0,
+          458,
+          724,
+          533
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 65,
+        "purpose": "レンが空を見上げる",
+        "panelRefs": [
+          [
+            "e01-orientation",
+            1
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-orientation",
+            1
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "orientation-3",
+        "sourceId": "e01-orientation",
+        "crop": [
+          0,
+          1007,
+          724,
+          273
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 24,
+        "purpose": "服の違いに視線を寄せる",
+        "panelRefs": [
+          [
+            "e01-orientation",
+            2
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-orientation",
+            2
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "orientation-4",
+        "sourceId": "e01-orientation",
+        "crop": [
+          0,
+          1294,
+          724,
+          322
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 65,
+        "purpose": "転生者だと気づく",
+        "panelRefs": [
+          [
+            "e01-orientation",
+            3
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-orientation",
+            3
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "orientation-5",
+        "sourceId": "e01-orientation",
+        "crop": [
+          0,
+          1630,
+          724,
+          512
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 150,
+        "purpose": "レン自身が受け止める",
+        "panelRefs": [
+          [
+            "e01-orientation",
+            4
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-orientation",
+            4
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "measurement-guide-1",
+        "sourceId": "e01-instruction",
+        "crop": [
+          0,
+          0,
+          724,
+          432
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 70,
+        "purpose": "まず魔力を測ると伝える",
+        "panelRefs": [
+          [
+            "e01-instruction",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-instruction",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "measurement-guide-2",
+        "sourceId": "e01-instruction",
+        "crop": [
+          0,
+          448,
+          724,
+          686
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 100,
+        "purpose": "測定場所まで移動する",
+        "panelRefs": [
+          [
+            "e01-instruction",
+            1
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-instruction",
+            1
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "measurement-guide-3",
+        "sourceId": "e01-instruction",
+        "crop": [
+          0,
+          1146,
+          724,
+          461
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 60,
+        "purpose": "水晶と手を置く場所を見せる",
+        "panelRefs": [
+          [
+            "e01-instruction",
+            2
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-instruction",
+            2
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "measurement-guide-4",
+        "sourceId": "e01-instruction",
+        "crop": [
+          0,
+          1619,
+          724,
+          532
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 125,
+        "purpose": "使える魔力量がわかると聞く",
+        "panelRefs": [
+          [
+            "e01-instruction",
+            3
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-instruction",
+            3
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "hesitation",
+        "sourceId": "hesitation",
+        "crop": [
+          0,
+          0,
+          1122,
+          1402
+        ],
+        "widthPercent": 90,
+        "align": "center",
+        "pause": 75,
+        "purpose": "力への期待を一拍置く",
+        "panelRefs": [
+          [
+            "hesitation",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "hesitation",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "touch",
+        "sourceId": "touch",
+        "crop": [
+          0,
+          0,
+          1448,
+          1086
+        ],
+        "widthPercent": 78,
+        "align": "right",
+        "pause": 35,
+        "purpose": "指先が水晶に触れる短い動作",
+        "panelRefs": [
+          [
+            "touch",
+            0
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [
+          [
+            "touch",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "waiting-question",
+        "sourceId": "e01-waiting",
+        "crop": [
+          0,
+          9,
+          724,
+          1131
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 120,
+        "purpose": "手を置いたまま確かめる",
+        "panelRefs": [
+          [
+            "e01-waiting",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-waiting",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "waiting-voice",
+        "sourceId": "wait-voice",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 80,
+        "purpose": "画面外のルークの声だけが白い余白に残る",
+        "panelRefs": [
+          [
+            "e01-waiting",
+            1
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-waiting",
+            1
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "waiting-device",
+        "sourceId": "e01-waiting",
+        "crop": [
+          0,
+          1753,
+          724,
+          388
+        ],
+        "widthPercent": 86,
+        "align": "right",
+        "pause": 420,
+        "purpose": "数値の出ていない装置。まだ結果は見せない",
+        "panelRefs": [
+          [
+            "e01-waiting",
+            2
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "result",
+        "sourceId": "result",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "widthPercent": 88,
+        "align": "right",
+        "pause": 180,
+        "purpose": "長い待ちの後、物理装置のゼロを初めて見せる",
+        "panelRefs": [
+          [
+            "result",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "result",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "zero-verdict",
+        "sourceId": "e01-confirmation",
+        "crop": [
+          0,
+          66,
+          724,
+          804
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 65,
+        "purpose": "ルークの短い判定",
+        "panelRefs": [
+          [
+            "e01-confirmation",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-confirmation",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "zero-eyes",
+        "sourceId": "e01-confirmation",
+        "crop": [
+          0,
+          896,
+          724,
+          186
+        ],
+        "widthPercent": 92,
+        "align": "center",
+        "pause": 100,
+        "purpose": "説明より先に目の反応",
+        "panelRefs": [
+          [
+            "e01-confirmation",
+            1
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "zero-answer",
+        "sourceId": "e01-confirmation",
+        "crop": [
+          0,
+          1107,
+          724,
+          1033
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 160,
+        "purpose": "レンがゼロを聞き返す",
+        "panelRefs": [
+          [
+            "e01-confirmation",
+            2
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-confirmation",
+            1
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "stakes",
+        "sourceId": "stakes",
+        "crop": [
+          0,
+          0,
+          1122,
+          1402
+        ],
+        "widthPercent": 94,
+        "align": "center",
+        "pause": 85,
+        "purpose": "戦えないという現実を伝える",
+        "panelRefs": [
+          [
+            "stakes",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "stakes",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "rejection",
+        "sourceId": "rejection",
+        "crop": [
+          0,
+          0,
+          1122,
+          1402
+        ],
+        "widthPercent": 88,
+        "align": "right",
+        "pause": 235,
+        "purpose": "騎士の評価が落ちる",
+        "panelRefs": [
+          [
+            "rejection",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "rejection",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "empty-hand",
+        "sourceId": "zero_reaction",
+        "crop": [
+          380,
+          0,
+          742,
+          1402
+        ],
+        "widthPercent": 80,
+        "align": "center",
+        "pause": 135,
+        "purpose": "黙って裸の手を見る。思考の文字は次の余白へ",
+        "panelRefs": [
+          [
+            "zero_reaction",
+            0
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "despair-voice",
+        "sourceId": "despair-voice",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 320,
+        "purpose": "何もできないという思いだけが白く残る",
+        "panelRefs": [],
+        "lineRefs": [
+          [
+            "zero_reaction",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "distant-tremor",
+        "sourceId": "tremor-sound",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 145,
+        "purpose": "まだ原因を見せず、振動の音だけを聞かせる",
+        "panelRefs": [],
+        "lineRefs": [],
+        "soundRefs": [
+          [
+            "tremor",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "boot-tremor",
+        "sourceId": "tremor-detail",
+        "crop": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "widthPercent": 80,
+        "align": "left",
+        "pause": 105,
+        "purpose": "足元の石が跳ねる。音の物理的な反応",
+        "panelRefs": [
+          [
+            "tremor",
+            0
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "danger-warning",
+        "sourceId": "e01-danger",
+        "crop": [
+          0,
+          0,
+          724,
+          358
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 150,
+        "purpose": "警告が入り、振動の原因へ視線を誘導",
+        "panelRefs": [
+          [
+            "e01-danger",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-danger",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "danger-geography",
+        "sourceId": "e01-danger",
+        "crop": [
+          0,
+          358,
+          724,
+          1317
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 25,
+        "purpose": "巨兵、橋のミラ、上のレン、下の幌を一画面でつなぐ",
+        "panelRefs": [
+          [
+            "e01-danger",
+            1
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [
+          [
+            "e01-danger",
+            0
+          ],
+          [
+            "e01-danger",
+            1
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "danger-princess",
+        "sourceId": "e01-danger",
+        "crop": [
+          0,
+          1692,
+          724,
+          480
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 35,
+        "purpose": "橋にいる人物が姫だとわかる",
+        "panelRefs": [
+          [
+            "e01-danger",
+            2
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-danger",
+            1
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "fall",
+        "sourceId": "fall",
+        "crop": [
+          0,
+          0,
+          887,
+          1774
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 160,
+        "purpose": "落下の縦方向を画面いっぱいに追う",
+        "panelRefs": [
+          [
+            "fall",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "fall",
+            0
+          ]
+        ],
+        "soundRefs": [
+          [
+            "fall",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "decision-voice",
+        "sourceId": "decision-voice",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 85,
+        "purpose": "魔力はなくても手を伸ばす。飛ぶ前の決意だけを余白で読む",
+        "panelRefs": [],
+        "lineRefs": [
+          [
+            "leap",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "leap",
+        "sourceId": "leap-no-thought",
+        "crop": [
+          0,
+          0,
+          1024,
+          1536
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 16,
+        "purpose": "素手で飛び出す。決意は繰り返さず動作音へ",
+        "panelRefs": [
+          [
+            "leap",
+            0
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [
+          [
+            "leap",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "e01-catch",
+        "sourceId": "e01-catch",
+        "crop": [
+          0,
+          0,
+          1070,
+          1470
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 22,
+        "purpose": "手をつかみ、幌へ向かう動作を短くつなぐ",
+        "panelRefs": [
+          [
+            "e01-catch",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-catch",
+            0
+          ]
+        ],
+        "soundRefs": [
+          [
+            "e01-catch",
+            0
+          ],
+          [
+            "e01-catch",
+            1
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "landing",
+        "sourceId": "landing",
+        "crop": [
+          0,
+          0,
+          1122,
+          1402
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 155,
+        "purpose": "幌で衝撃を受け、生存を確かめる",
+        "panelRefs": [
+          [
+            "landing",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "landing",
+            0
+          ]
+        ],
+        "soundRefs": [
+          [
+            "landing",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "safe-both",
+        "sourceId": "e01-safe-01",
+        "crop": [
+          0,
+          10,
+          836,
+          746
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 85,
+        "purpose": "二人とも生きていることを確かめる",
+        "panelRefs": [
+          [
+            "e01-safe-01",
+            0
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "safe-thanks",
+        "sourceId": "e01-safe-01",
+        "crop": [
+          0,
+          772,
+          836,
+          390
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 55,
+        "purpose": "お礼とレンの反応を横並びで見る",
+        "panelRefs": [
+          [
+            "e01-safe-01",
+            1
+          ],
+          [
+            "e01-safe-01",
+            2
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-safe-01",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "safe-mira",
+        "sourceId": "e01-safe-01",
+        "crop": [
+          0,
+          1181,
+          836,
+          685
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 72,
+        "purpose": "救った相手が名乗る",
+        "panelRefs": [
+          [
+            "e01-safe-01",
+            3
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-safe-01",
+            1
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "princess-name",
+        "sourceId": "e01-safe-02",
+        "crop": [
+          0,
+          0,
+          724,
+          394
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 70,
+        "purpose": "王女だと明かす",
+        "panelRefs": [
+          [
+            "e01-safe-02",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-safe-02",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "princess-reaction",
+        "sourceId": "e01-safe-02",
+        "crop": [
+          0,
+          413,
+          724,
+          151
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 55,
+        "purpose": "驚きは小さい目の接写で示す",
+        "panelRefs": [
+          [
+            "e01-safe-02",
+            1
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "ren-name",
+        "sourceId": "e01-safe-02",
+        "crop": [
+          0,
+          582,
+          724,
+          503
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 80,
+        "purpose": "レンが名乗り返す",
+        "panelRefs": [
+          [
+            "e01-safe-02",
+            2
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-safe-02",
+            1
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "safe-relief",
+        "sourceId": "e01-safe-02",
+        "crop": [
+          0,
+          1100,
+          724,
+          1072
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 220,
+        "purpose": "無事だったことを優先する",
+        "panelRefs": [
+          [
+            "e01-safe-02",
+            3
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-safe-02",
+            2
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "approach-1",
+        "sourceId": "e01-approach",
+        "crop": [
+          0,
+          0,
+          725,
+          604
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 35,
+        "purpose": "音と位置で巨兵が再接近する",
+        "panelRefs": [
+          [
+            "e01-approach",
+            0
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [
+          [
+            "e01-approach",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "approach-2",
+        "sourceId": "e01-approach",
+        "crop": [
+          0,
+          622,
+          725,
+          310
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 40,
+        "purpose": "危険が続くと気づく",
+        "panelRefs": [
+          [
+            "e01-approach",
+            1
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-approach",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "approach-3",
+        "sourceId": "e01-approach",
+        "crop": [
+          0,
+          949,
+          725,
+          502
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 40,
+        "purpose": "ミラを後ろへ下げる",
+        "panelRefs": [
+          [
+            "e01-approach",
+            2
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-approach",
+            1
+          ]
+        ],
+        "soundRefs": [
+          [
+            "e01-approach",
+            1
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "approach-4",
+        "sourceId": "e01-approach",
+        "crop": [
+          0,
+          1471,
+          725,
+          698
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 180,
+        "purpose": "今度は自分が止めると決める",
+        "panelRefs": [
+          [
+            "e01-approach",
+            3
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-approach",
+            2
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "core-first-light",
+        "sourceId": "e01-core",
+        "crop": [
+          0,
+          0,
+          724,
+          1092
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 90,
+        "purpose": "まだ素手。胸に最初の星がともる",
+        "panelRefs": [
+          [
+            "e01-core",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-core",
+            0
+          ]
+        ],
+        "soundRefs": [
+          [
+            "e01-core",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "core-condition",
+        "sourceId": "e01-core",
+        "crop": [
+          0,
+          1118,
+          724,
+          429
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 90,
+        "purpose": "救命行動が起動条件だったと表示する",
+        "panelRefs": [
+          [
+            "e01-core",
+            1
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": [
+          [
+            "e01-core",
+            0
+          ]
+        ]
+      },
+      {
+        "id": "core-armor-name",
+        "sourceId": "e01-core",
+        "crop": [
+          0,
+          1564,
+          724,
+          575
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 140,
+        "purpose": "装甲の名を知る",
+        "panelRefs": [
+          [
+            "e01-core",
+            2
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": [
+          [
+            "e01-core",
+            1
+          ]
+        ]
+      },
+      {
+        "id": "armor-start",
+        "sourceId": "e01-armor-route",
+        "crop": [
+          0,
+          0,
+          887,
+          1193
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 55,
+        "purpose": "胸の核から装甲展開を開始する",
+        "panelRefs": [
+          [
+            "e01-armor-route",
+            0
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": [
+          [
+            "e01-armor-route",
+            0
+          ]
+        ]
+      },
+      {
+        "id": "armor-route",
+        "sourceId": "e01-armor-route",
+        "crop": [
+          0,
+          1203,
+          887,
+          556
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 40,
+        "purpose": "光が腕へ走り、装甲の経路を見せる",
+        "panelRefs": [
+          [
+            "e01-armor-route",
+            1
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [
+          [
+            "e01-armor-route",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "armor-click",
+        "sourceId": "click",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 42,
+        "purpose": "一つの接続音だけが余白で鳴る",
+        "panelRefs": [],
+        "lineRefs": [],
+        "soundRefs": [
+          [
+            "e01-armor-assemble",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "armor-parts",
+        "sourceId": "assembly-click-off",
+        "crop": [
+          0,
+          0,
+          946,
+          706
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 18,
+        "purpose": "手首と脚を斜めの横並びで装着する",
+        "panelRefs": [
+          [
+            "e01-armor-assemble",
+            0
+          ],
+          [
+            "e01-armor-assemble",
+            1
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [
+          [
+            "e01-armor-assemble",
+            1
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "armor-lock",
+        "sourceId": "assembly-click-off",
+        "crop": [
+          0,
+          719,
+          946,
+          917
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 32,
+        "purpose": "胸の装甲が固定される",
+        "panelRefs": [
+          [
+            "e01-armor-assemble",
+            2
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [
+          [
+            "e01-armor-assemble",
+            2
+          ]
+        ],
+        "textRefs": [
+          [
+            "e01-armor-assemble",
+            0
+          ]
+        ]
+      },
+      {
+        "id": "armor-movement",
+        "sourceId": "e01-armor-check",
+        "crop": [
+          0,
+          0,
+          887,
+          1127
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 48,
+        "purpose": "握った手で動作を確かめる",
+        "panelRefs": [
+          [
+            "e01-armor-check",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-armor-check",
+            0
+          ]
+        ],
+        "soundRefs": [
+          [
+            "e01-armor-check",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "core-reserve",
+        "sourceId": "e01-armor-check",
+        "crop": [
+          0,
+          1145,
+          887,
+          337
+        ],
+        "widthPercent": 90,
+        "align": "center",
+        "pause": 75,
+        "purpose": "六区画のうち四つ点灯。有限の救済核を見せる",
+        "panelRefs": [
+          [
+            "e01-armor-check",
+            1
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": [
+          [
+            "e01-armor-check",
+            0
+          ]
+        ]
+      },
+      {
+        "id": "connection-voice",
+        "sourceId": "notice",
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 55,
+        "purpose": "接続完了の通知だけが余白に出る",
+        "panelRefs": [],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": [
+          [
+            "e01-armor-check",
+            1
+          ]
+        ]
+      },
+      {
+        "id": "connection-light",
+        "sourceId": "light",
+        "crop": [
+          0,
+          0,
+          1024,
+          1536
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 160,
+        "purpose": "細い光だけが次の姿へ視線を運ぶ",
+        "panelRefs": [],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "hero",
+        "sourceId": "hero",
+        "crop": [
+          0,
+          0,
+          887,
+          1774
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 80,
+        "purpose": "全身装甲を初めて披露する。ミラは背後で安全",
+        "panelRefs": [
+          [
+            "hero",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "hero",
+            0
+          ]
+        ],
+        "soundRefs": [
+          [
+            "hero",
+            0
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "punch",
+        "sourceId": "punch",
+        "crop": [
+          0,
+          0,
+          1122,
+          1402
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 210,
+        "purpose": "一撃で紫の核を砕く。音を動作に密着させる",
+        "panelRefs": [
+          [
+            "punch",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "punch",
+            0
+          ]
+        ],
+        "soundRefs": [
+          [
+            "punch",
+            0
+          ],
+          [
+            "punch",
+            1
+          ]
+        ],
+        "textRefs": []
+      },
+      {
+        "id": "relief-1",
+        "sourceId": "e01-relief",
+        "crop": [
+          0,
+          0,
+          724,
+          511
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 55,
+        "purpose": "ミラが魔力ゼロなのか確かめる",
+        "panelRefs": [
+          [
+            "e01-relief",
+            0
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-relief",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "relief-2",
+        "sourceId": "e01-relief",
+        "crop": [
+          0,
+          532,
+          724,
+          529
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 48,
+        "purpose": "レンは短く答える",
+        "panelRefs": [
+          [
+            "e01-relief",
+            1
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-relief",
+            1
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "relief-3",
+        "sourceId": "e01-relief",
+        "crop": [
+          0,
+          1088,
+          724,
+          225
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 110,
+        "purpose": "装甲の手が緩む",
+        "panelRefs": [
+          [
+            "e01-relief",
+            2
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "relief-4",
+        "sourceId": "e01-relief",
+        "crop": [
+          0,
+          1333,
+          724,
+          839
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 360,
+        "purpose": "役立たずではなかったという余韻",
+        "panelRefs": [
+          [
+            "e01-relief",
+            3
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-relief",
+            2
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "fragment-pickup",
+        "sourceId": "e01-fragment",
+        "crop": [
+          0,
+          0,
+          724,
+          364
+        ],
+        "widthPercent": 90,
+        "align": "left",
+        "pause": 680,
+        "purpose": "破片を拾う。王冠の面はまだ見せない",
+        "panelRefs": [
+          [
+            "e01-fragment",
+            0
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "fragment-emblem",
+        "sourceId": "e01-fragment",
+        "crop": [
+          0,
+          383,
+          724,
+          607
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 200,
+        "purpose": "次のスクロールで王冠の紋章を初めて発見",
+        "panelRefs": [
+          [
+            "e01-fragment",
+            1
+          ]
+        ],
+        "lineRefs": [],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "fragment-recognition",
+        "sourceId": "e01-fragment",
+        "crop": [
+          0,
+          1016,
+          724,
+          444
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 180,
+        "purpose": "ミラが王家の工房の紋章だと告げる",
+        "panelRefs": [
+          [
+            "e01-fragment",
+            2
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-fragment",
+            0
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      },
+      {
+        "id": "fragment-question",
+        "sourceId": "e01-fragment",
+        "crop": [
+          0,
+          1480,
+          724,
+          683
+        ],
+        "widthPercent": 100,
+        "align": "center",
+        "pause": 460,
+        "purpose": "なぜ襲ったのか。答えを次話へ残す",
+        "panelRefs": [
+          [
+            "e01-fragment",
+            3
+          ]
+        ],
+        "lineRefs": [
+          [
+            "e01-fragment",
+            1
+          ]
+        ],
+        "soundRefs": [],
+        "textRefs": []
+      }
+    ]
+  },
+  "title": "最弱判定、最強の一歩。"
 }

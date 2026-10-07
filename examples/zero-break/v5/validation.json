@@ -1,50 +1,364 @@
 {
-  "edition": "context-dialogue-v6",
+  "edition": "scroll-pacing-20261007",
   "panels": 73,
-  "readerSourceSha256": "73ef45beac16d41e1728d2ef2671b323adbe60051c926e828b7d085c495015bc",
+  "readerSourceSha256": "6598540cbc68a810df990884d59d0c4c51d2ef51b6c431989574d0109f29216f",
   "source_assets_verified": true,
   "visualReview": {
-    "status": "passed_native_mobile_image_review",
-    "method": "native Canvas contact images and continuous windows; no browser rendering",
+    "status": "passed",
+    "method": "native original-size generated art and all 76 display windows at 360 and 390 px, plus staged continuous windows; no browser",
     "widths": [
       360,
       390
     ],
+    "reviewArtifacts": [
+      {
+        "file": "review/scroll-units-360-00.png",
+        "width": 2160,
+        "height": 600,
+        "sha256": "4295949b0d69b803146564550afa437b993cf531650a8247c5df69d9cb6fe813"
+      },
+      {
+        "file": "review/scroll-units-360-01.png",
+        "width": 2160,
+        "height": 640,
+        "sha256": "a059619a9fd5d8ed2d4f1207c3075341ffa34ab74eb89f8788a64621bc615f0f"
+      },
+      {
+        "file": "review/scroll-units-360-02.png",
+        "width": 2160,
+        "height": 397,
+        "sha256": "79db533835daba1e41efe0156f20c42098dbdbe9891023479d0d8645db9ee050"
+      },
+      {
+        "file": "review/scroll-units-360-03.png",
+        "width": 2160,
+        "height": 618,
+        "sha256": "39e05dce62597400255793f5295678347fc0bb3cc9297f6da59eb97f882d5456"
+      },
+      {
+        "file": "review/scroll-units-360-04.png",
+        "width": 2160,
+        "height": 569,
+        "sha256": "bdf5f7b7a0043f6295ec5a00169696615643b1af3d3b58099e912caa275057be"
+      },
+      {
+        "file": "review/scroll-units-360-05.png",
+        "width": 2160,
+        "height": 600,
+        "sha256": "7871594c8354b3b7790a8f9780954da71167df048e71be7872b3b483e1e3fe24"
+      },
+      {
+        "file": "review/scroll-units-360-06.png",
+        "width": 2160,
+        "height": 775,
+        "sha256": "f43c18e3dbf39d16e136ccf49da7268df02f757265246ffa1eb60d156caf2ccc"
+      },
+      {
+        "file": "review/scroll-units-360-07.png",
+        "width": 2160,
+        "height": 505,
+        "sha256": "15eda5b9ee68aa37f952dd78fe54daeedbf8d97617861e5d51f82e8ce79e2862"
+      },
+      {
+        "file": "review/scroll-units-360-08.png",
+        "width": 2160,
+        "height": 589,
+        "sha256": "31911cc5c5f5ddd13980e4e4fa83fe3d3195e8a4ca2c67b5326668d9105f1634"
+      },
+      {
+        "file": "review/scroll-units-360-09.png",
+        "width": 2160,
+        "height": 598,
+        "sha256": "f9c2f1b3ae595691b8120ac36af072c23342f80680c1ae7ef2faee8776e4bc37"
+      },
+      {
+        "file": "review/scroll-units-360-10.png",
+        "width": 2160,
+        "height": 595,
+        "sha256": "7c696b44a55dc317314f0b37ae8f4069d8a4cc9d27ffd8ca9e82a27d7d1c785c"
+      },
+      {
+        "file": "review/scroll-units-360-11.png",
+        "width": 2160,
+        "height": 775,
+        "sha256": "21c4ec069d6d94f14f05805ff4b0f2ae2df85be3c8e18c4548bf757c8ecccdb8"
+      },
+      {
+        "file": "review/scroll-units-360-12.png",
+        "width": 1440,
+        "height": 395,
+        "sha256": "d5ed48faf0760c7f1c8df8b35d563e9d64992ea001fbac9df919faed1054ad36"
+      },
+      {
+        "file": "review/scroll-window-360-waiting-voice.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "2d4dcae9aa016ffca396126b04c3d58cf43e430a531fe2a9aa92e9a71d922faf",
+        "top": 9627.353326964998
+      },
+      {
+        "file": "review/scroll-window-360-waiting-device.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "58abed708481d318ecda2f3cc32dc0945753c3a01bd02e077601b25cff8ba598",
+        "top": 10061.199480811152
+      },
+      {
+        "file": "review/scroll-window-360-result.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "17f5b42bcb887ee9aa063cad8a40dd41825bebaecff9ecc73b408c89fc6d2e8d",
+        "top": 10614.810020547658
+      },
+      {
+        "file": "review/scroll-window-360-despair-voice.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "40462084ee2e25dcd175c78a4b4b33cb23e96dca055c2de95d6d4c5355ebbbed",
+        "top": 14179.157102012745
+      },
+      {
+        "file": "review/scroll-window-360-distant-tremor.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "83b83c5e13d1a7a441f2cd4efc150cdd07b3809ed767201c4471ae6c986c3c5a",
+        "top": 14834.54171739736
+      },
+      {
+        "file": "review/scroll-window-360-decision-voice.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "9b0d08066b8fd61bbbc5ecc4ba0d4a3c111cc39f66476982caacd09063bc53b6",
+        "top": 17750.396371031016
+      },
+      {
+        "file": "review/scroll-window-360-armor-click.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "daa9a064716ea17b4c8b5101335bd5ddfcab58630ada0473c7cdd535a032cb91",
+        "top": 25734.89543644644
+      },
+      {
+        "file": "review/scroll-window-360-connection-voice.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "971d130427eb3a5ac4cffc64527ae59b19eaa8dd4981f15c74fd4c667dae4459",
+        "top": 27491.49418349525
+      },
+      {
+        "file": "review/scroll-window-360-connection-light.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "409be92b871ec11a9f9b82b99fc70a4d63c3f385616b6cae4e151f0135500da8",
+        "top": 27902.263414264482
+      },
+      {
+        "file": "review/scroll-window-360-hero.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "2da58a6321344c77f94212c10b1c4d7587033862554610877442d6519a9793e0",
+        "top": 28589.95572195679
+      },
+      {
+        "file": "review/scroll-window-360-fragment-pickup.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "3a24d8c2479974fe7a240bffdfb6c3f2615830678ddc2fdd0bf59ba30499703b",
+        "top": 31602.59852406855
+      },
+      {
+        "file": "review/scroll-window-360-fragment-emblem.png",
+        "width": 360,
+        "height": 800,
+        "sha256": "9535cb7406a41ff7e8e8b6508acc8b25bca6924351143d499d8cda37ba7f55c0",
+        "top": 32393.18585938517
+      },
+      {
+        "file": "review/scroll-armor-sequence-360.png",
+        "width": 360,
+        "height": 3838,
+        "sha256": "28f427039cd16e02b28e53056b87e499e1845232f14c2e02006b226e64271c4b"
+      },
+      {
+        "file": "review/scroll-units-390-00.png",
+        "width": 2340,
+        "height": 645,
+        "sha256": "2fc5327b7ad9398f0889260d7569bfd7b25b8c3274cab044edc29d696ce9729c"
+      },
+      {
+        "file": "review/scroll-units-390-01.png",
+        "width": 2340,
+        "height": 688,
+        "sha256": "2b3b551adba2b93d0af442cc849e28ffdf40d902629bb3b0ec1a3fd6879d2e1a"
+      },
+      {
+        "file": "review/scroll-units-390-02.png",
+        "width": 2340,
+        "height": 425,
+        "sha256": "cb9afa783c855e21b86f61f3de5d132b9ce452bee4ae285da1a560fc77673175"
+      },
+      {
+        "file": "review/scroll-units-390-03.png",
+        "width": 2340,
+        "height": 665,
+        "sha256": "3526223fe9f0c6a8568f85deb1290a89d1254a9834ee9822e75f8a8a320ff81f"
+      },
+      {
+        "file": "review/scroll-units-390-04.png",
+        "width": 2340,
+        "height": 612,
+        "sha256": "1af553a4f22187ad4c0d7da4ffd70cef1411099a0c7d52426d35317080d0d66d"
+      },
+      {
+        "file": "review/scroll-units-390-05.png",
+        "width": 2340,
+        "height": 645,
+        "sha256": "784f78462aa0e4bf9de35ed114fa0875a5153b0ff67b8ca58e5fad73ca12f04e"
+      },
+      {
+        "file": "review/scroll-units-390-06.png",
+        "width": 2340,
+        "height": 835,
+        "sha256": "0886341143a35dabb20879465dce7a1245e857c25d2ea5207c4e4cf540753bf0"
+      },
+      {
+        "file": "review/scroll-units-390-07.png",
+        "width": 2340,
+        "height": 543,
+        "sha256": "4578beb7d1f579374d94abdbb3de5271df41558933dc64cefcf07cc1903168a8"
+      },
+      {
+        "file": "review/scroll-units-390-08.png",
+        "width": 2340,
+        "height": 633,
+        "sha256": "314ae52bd7e68af886dc25743898f24cf29ae3bca68e632bde67711b8f27f2a9"
+      },
+      {
+        "file": "review/scroll-units-390-09.png",
+        "width": 2340,
+        "height": 644,
+        "sha256": "5673b022087dd06ba896403d9c55c94869087091fd797ffab4eb1d8641cc0d25"
+      },
+      {
+        "file": "review/scroll-units-390-10.png",
+        "width": 2340,
+        "height": 640,
+        "sha256": "719314e162e2ab4256ebfec37d05f25705b84e93c363e1f3b42109e0c3cc1222"
+      },
+      {
+        "file": "review/scroll-units-390-11.png",
+        "width": 2340,
+        "height": 835,
+        "sha256": "a40804e435ea792975a6f6a8073714fbd20351cd9f9087c715f827edc82258a0"
+      },
+      {
+        "file": "review/scroll-units-390-12.png",
+        "width": 1560,
+        "height": 423,
+        "sha256": "184834a7146dccce8a6e562cd19331becff57034bcd910360fc9a2f59e9f3db0"
+      },
+      {
+        "file": "review/scroll-window-390-waiting-voice.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "b073f75d4cd85a4762692fb990393beac8db3f8f9e6669b9c4adb4dec19639e8",
+        "top": 10429.632770878748
+      },
+      {
+        "file": "review/scroll-window-390-waiting-device.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "9486a85b3c3b3c3d5b8e184a55dbf9172cf0923c4c3cbf199da45efbd18952d1",
+        "top": 10899.632770878748
+      },
+      {
+        "file": "review/scroll-window-390-result.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "436cd842fd79d52265b08564711d723839e50ecbe2420d74f291d9d0398273d6",
+        "top": 11499.377522259963
+      },
+      {
+        "file": "review/scroll-window-390-despair-voice.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "e427ec2dc1c41b4b6f84ca3ce1582162296b16eb6118b6ac2696878a9d641694",
+        "top": 15360.753527180472
+      },
+      {
+        "file": "review/scroll-window-390-distant-tremor.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "b29bb138fbe588e1c1323838b3b28371178816095ca4ddbcc743d89f722d356d",
+        "top": 16070.753527180472
+      },
+      {
+        "file": "review/scroll-window-390-decision-voice.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "db349a54232ad0feee8761487554c0b7509edfed103943348aaaa399485a15a5",
+        "top": 19229.59606861694
+      },
+      {
+        "file": "review/scroll-window-390-armor-click.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "4c6ddee15eac5cf5e6d14fc210fd2650d57c8fe7d128625580aa87530bc43119",
+        "top": 27879.470056150312
+      },
+      {
+        "file": "review/scroll-window-390-connection-voice.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "f89ddad2347a8152863c14e5055b05e66c6e23c2c6196685a049962055b72e01",
+        "top": 29782.452032119865
+      },
+      {
+        "file": "review/scroll-window-390-connection-light.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "746d8aaf6d14d5f841f2a24cb9e82aaba701bcc0299d1f573d42724a2e6e2cdc",
+        "top": 30227.452032119865
+      },
+      {
+        "file": "review/scroll-window-390-hero.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "2299ea116ee63ea9593ddb727c2fc3b5e48871e79aa6083563f2d3bc4a422c8f",
+        "top": 30972.452032119865
+      },
+      {
+        "file": "review/scroll-window-390-fragment-pickup.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "4bd420737ccf8cb662ed04e7b1effe7dd30c722cdeef4a48419b159fb83757d0",
+        "top": 34236.14840107428
+      },
+      {
+        "file": "review/scroll-window-390-fragment-emblem.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "70651977235eed364c0813f397d775753c0f0e0c1e685c03f25e12be6ee81707",
+        "top": 35092.618014333944
+      },
+      {
+        "file": "review/scroll-armor-sequence-390.png",
+        "width": 390,
+        "height": 4158,
+        "sha256": "7331bde11597b4052c2bf8f8a26417016a3900c4f7cc22d5917dded97524fa09"
+      }
+    ],
     "checks": [
-      "all four revised layout scenes: exact dialogue, sound labels, faces, supporting hands and row reading order",
-      "actual diagonal panel borders and gutter; lettering upright",
-      "surrounding story and assembly order preserved"
-    ],
-    "evidence": [
-      "review/v6-contact-360-1.png",
-      "review/v6-contact-360-5.png",
-      "review/v6-contact-360-6.png",
-      "review/v6-contact-390-1.png",
-      "review/v6-contact-390-5.png",
-      "review/v6-contact-390-6.png",
-      "review/v6-flow-360-04.png",
-      "review/v6-flow-360-19.png",
-      "review/v6-flow-360-20.png",
-      "review/v6-flow-360-22.png",
-      "review/v6-flow-360-26.png",
-      "review/v6-flow-360-27.png",
-      "review/v6-flow-360-28.png",
-      "review/v6-flow-390-04.png",
-      "review/v6-flow-390-19.png",
-      "review/v6-flow-390-20.png",
-      "review/v6-flow-390-22.png",
-      "review/v6-flow-390-26.png",
-      "review/v6-flow-390-27.png",
-      "review/v6-flow-390-28.png",
-      "review/layout-sequence-390.png"
-    ],
-    "priorSoundAndAssemblyReview": "../production/episode-01-sfx/verification.json",
-    "panelLayoutReview": "../production/episode-01-layout/verification.json"
+      "Japanese vertical lettering, speakers and cropped text",
+      "displaced dialogue and sounds appear once",
+      "right-to-left paired reactions and diagonal assembly",
+      "bare hands before armor, rescue geography, four of six reserve segments",
+      "delayed zero readout, first whole armor reveal and hidden crown during pickup"
+    ]
   },
   "mobileBrowserReview": {
-    "status": "blocked_by_browser_url_policy",
-    "reason": "file URL denied by Browser Use security policy; no alternate browser or localhost attempted",
-    "DOMVerified": false
+    "status": "pending",
+    "note": "Native exports and DOM-adapter tests do not prove browser pixels or device behavior."
   },
   "physicalDeviceTested": false
 }

@@ -1,0 +1,53 @@
+{
+  "tool": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "wait-voice",
+      "file": "scroll-wait-voice.png",
+      "references": [],
+      "prompt": "Use case: illustration-story. Asset: a sparse BORDERLESS Japanese Webtoon beat on pure WHITE #FFFFFF extending to every edge. Most of the canvas is truly empty white. Canvas approximately 1024x1024. No character, scenery, shadow, frame, grid, decorative HUD, balloon or tail. No other words or watermark. Large printed Japanese gothic, upright TOP-to-BOTTOM columns, RIGHT-to-LEFT column order, at least 72px glyph height on 1024px width for phone legibility. ONLY visible content: EXACT そのまま、待て。 as TWO short vertical columns near center. Right column そのまま、 ; left column 待て。. Dark charcoal #202A38. The unseen knight Rook is speaking quietly to Ren, waiting for a measurement. Place the line around y30%, substantial white surrounds it. No instrument or result. No quotation marks, no text labels."
+    },
+    {
+      "id": "despair-voice",
+      "file": "scroll-despair-voice.png",
+      "references": [],
+      "prompt": "Use case: illustration-story. Asset: a sparse BORDERLESS Japanese Webtoon beat on pure WHITE #FFFFFF extending to every edge. Most of the canvas is truly empty white. Canvas approximately 1024x1024. No character, scenery, shadow, frame, grid, decorative HUD, balloon or tail. No other words or watermark. Large printed Japanese gothic, upright TOP-to-BOTTOM columns, RIGHT-to-LEFT column order, at least 72px glyph height on 1024px width for phone legibility. ONLY visible content: Ren's EXACT inner thought ……ここでも、何もできないのか。 in THREE vertical columns near center, charcoal #283443. Right column ……ここでも、 ; middle column 何もできない ; left column のか。. The vertical ellipses must read as two groups of three dots going downward. He has been rejected for having zero magic. No person and no crystal. No extra labels, quotes or narration. Around y30%, generous blank space above and below."
+    },
+    {
+      "id": "tremor-sound",
+      "file": "scroll-tremor-sound.png",
+      "references": [],
+      "prompt": "Use case: illustration-story. A sparse BORDERLESS Webtoon pause on flat pure WHITE #FFFFFF, 1024x1024 square. The ONLY visible element is EXACT ズ……ン。 in dark navy hand-inked heavy Japanese SFX, vertically descending near x55% y30%, broken rhythm between ズ and ン suggesting a distant heavy vibration. Medium size so the sound reads at 360px phone width; dark strong strokes. No figures, feet, ground, motion lines, objects, shadows, scenery, frames, panels, balloon, labels or other writing. Broad empty white. The source of the vibration will be revealed in a LATER image; keep the giant and its silhouette absent."
+    },
+    {
+      "id": "tremor-detail",
+      "file": "scroll-tremor-detail.png",
+      "references": [
+        "examples/zero-break/v5/art/a16-tremor.png"
+      ],
+      "prompt": "Use case: illustration-story. Reference image establishes the EXACT ordinary dark leather boot, charcoal cargo trouser cuff, red scarf color, sunny white stone balcony and anime rendering of Ren before armor. Create ONE shallow close-up, landscape 1536x1024, camera near the ground: the same ordinary strapped dark boot planted on the WHITE stone balcony, tiny loose pebbles and dust subtly jolt from a distant vibration. Crop to foot and lower trouser only, no face or torso. Black faceted armor has NOT formed; shoe must remain ordinary brown-black leather. Simple mostly white floor, edge of red scarf only at top if needed. Thin rectangular frame allowed. This is the physical response to the preceding isolated sound. NO TEXT, NO SOUND LETTERING, no crystal/readout/zero, no giant, princess, cracks, new objects or people. Do not copy the reference composition with its giant sound word; do not show the later disaster."
+    },
+    {
+      "id": "decision-voice",
+      "file": "scroll-decision-voice.png",
+      "references": [],
+      "prompt": "Use case: illustration-story. Asset: a sparse BORDERLESS Japanese Webtoon beat on pure WHITE #FFFFFF extending to every edge. Most of the canvas is truly empty white. Canvas approximately 1024x1024. No character, scenery, shadow, frame, grid, decorative HUD, balloon or tail. No other words or watermark. Large printed Japanese gothic, upright TOP-to-BOTTOM columns, RIGHT-to-LEFT column order, at least 72px glyph height on 1024px width for phone legibility. ONLY visible content: Ren's EXACT thought 魔力がなくても、手くらい、伸ばせる。 in THREE vertical columns. Right column 魔力がなくても、 ; middle column 手くらい、 ; left column 伸ばせる。. Dark charcoal, centered around y25%. Real vertical punctuation. This is the moment he chooses to save a falling person despite having zero magic. No character, hand, rescue, armor or image of the next leap. No labels or quote marks."
+    },
+    {
+      "id": "leap-no-thought",
+      "file": "scroll-leap.png",
+      "references": [
+        "examples/zero-break/v5/art/sfx-08-leap.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Input is the EXACT adopted Zero Break leap artwork, not a style reference. Change ONLY the thought lettering, its white cloud balloon, and thought dots in the UPPER RIGHT: remove that entire thought balloon/text/dots, restore the simple same pale blue sky behind it. The removed thought is 魔力がなくても、手くらい、伸ばせる。 because it is now heard in a separate preceding white scroll pause. PRESERVE every other part: Ren's face, messy black hair, blue eyes, black short sleeves, red scarf, bare reaching hand with five fingers, actual downward leap from stone balcony toward the cargo awning, perspective, city, illustration colors, exact バッ！ sound, framing, canvas and dimensions. No new text or balloon, no armor, no blue power, no additional people, no crop/recomposition."
+    },
+    {
+      "id": "assembly-click-off",
+      "file": "scroll-armor-assemble.png",
+      "references": [
+        "examples/zero-break/v5/art/layout-armor-assemble.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Input is the EXACT adopted armor assembly artwork. Change ONLY the カチッ sound lettering and its tiny cyan emphasis strokes in the UPPER RIGHT wrist panel: remove them and restore the same pale blue/white city background there. This click is now heard once in a separate white scroll pause before the assembly. PRESERVE ALL other pixels/structure as closely as possible: diagonal split TOP row (RIGHT wrist plates on still bare fingers, LEFT black faceted boot), lower black chest plates around ONE cyan star, red scarf, no helmet; exact existing left ガシャッ, lower ガキンッ, and system notice 装甲固定。 remain intact. Same canvas/aspect, same three panel shapes, anatomy, hands, black armor/cyan seam palette, background. No full-body reveal, no new words, no added panels, no crop or layout change."
+    }
+  ]
+}

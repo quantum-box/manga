@@ -8,6 +8,7 @@ for(const n of (process.argv.length>2?process.argv.slice(2).map(Number):Array.fr
  const dir=path.join(root,n===1?'v5':'episode-'+String(n).padStart(2,'0'));
  const m=JSON.parse(fs.readFileSync(path.join(dir,'manifest.json')));
  if(m.version!=='context-dialogue-v6')throw Error('Expected adopted v6 manifest');
+ if(m.scrollEdition){await require('./export_scroll.cjs')(dir,m);continue;}
  const review=path.join(dir,'review');fs.mkdirSync(review,{recursive:true});
  const sourceHashes=m.shots.map(s=>({id:s.id,file:s.file,sha256:hash(path.join(dir,'art',s.file))}));
  const images=await Promise.all(m.shots.map(s=>loadImage(path.join(dir,'art',s.file))));
