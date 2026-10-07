@@ -1,0 +1,1186 @@
+{
+  "number": 14,
+  "title": "一口で変わる評価",
+  "time": "45日目・試食の続き",
+  "change": "試食で帰還食堂が指名される。レオンは味と継続供給を評価し、小口の継続発注を決める。料理は重傷治療や無限強化を起こさない。ロデルは腕を認める。",
+  "state": "試食で帰還食堂が指名される。レオンは味と継続供給を評価し、小口の継続発注を決める。料理は重傷治療や無限強化を起こさない。ロデルは腕を認める。",
+  "revision": "2026-10-08-following",
+  "sources": [
+    {
+      "id": "01-first-bite-no-cards",
+      "art": "art/01-first-bite-no-cards.png",
+      "description": "Same guild hall and identical anonymous ceramic tasting dishes from previous episode, Row tastes a small stew bite, quiet eye reaction then smile, Leon separately evaluates his numbered portion; the vote compares dishes rather than shop names.",
+      "dialogue": [
+        [
+          "ロウ",
+          "……これだ"
+        ],
+        [
+          "レオン",
+          "味が\n揃っている"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 280,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-first-bite-no-cards.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "370a9898b685f028ef8b906e927c49c42bd634f4da69e1213ba05abe75dfe12e"
+    },
+    {
+      "id": "02-the-returners-travelers",
+      "art": "art/02-the-returners-travelers.png",
+      "description": "Two exhausted but uninjured adult returners eat their portions sitting safely, relaxed shoulders then warm expression; one remembers having cold dry rations on expedition. No instant healing, no muscles expanding, no glowing stat buffs.",
+      "dialogue": [
+        [
+          "攻略者",
+          "冷たい飯ばかりで\n帰ってきたあとも\n腹が落ち着かなかった"
+        ],
+        [
+          "攻略者",
+          "これなら\nまた出発できる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 330,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-the-returners-travelers.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "2896b261c1ea73f39be5b6d689cb150152b7b2d4bf1c3d18a9e259802dab8ea7"
+    },
+    {
+      "id": "03-choice",
+      "art": "art/03-choice.png",
+      "description": "Leon receives simple wooden vote tokens from tasting adults. Three small tactile hand moments then he looks up, paused before announcing result. One dish selected by more tokens clearly without numerical writing.",
+      "dialogue": [
+        [
+          "レオン",
+          "選ばれたのは……"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 920,
+      "scrollPurpose": "判定の声と結果の披露をスクロールで分ける",
+      "prompt": "generation/03-choice.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "089646065bc5bfd49c0c6cb2aa8590e78e94b8dc49cb35ca0fb4e72bdabb5a58"
+    },
+    {
+      "id": "04-their-dish-wood-votes",
+      "art": "art/04-their-dish-wood-votes.png",
+      "description": "Large borderless reveal Elna meal beside several vote tokens. Leon addresses Kou and Elna; her surprise is separate big reaction not crowded into dish. Row gestures in delight, no confetti or royal crown.",
+      "dialogue": [
+        [
+          "レオン",
+          "帰還食堂だ"
+        ],
+        [
+          "エルナ",
+          "私たちが……？"
+        ],
+        [
+          "ロウ",
+          "また\n食べたくなる皿だ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 420,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-their-dish-wood-votes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "14b2f9ba72e273bf1412997626b9b65c8f43c90a0307aa067aec280858c5a6ad"
+    },
+    {
+      "id": "05-rodel-concedes",
+      "art": "art/05-rodel-concedes.png",
+      "description": "Rodel rises from table and admits outcome while looking at healthy fresh leaves, small respected professional face; Kou replies without humiliation. Leon aside. Rival dishes remain good, one local chef nods.",
+      "dialogue": [
+        [
+          "ロデル",
+          "安さだけでは\nないわけか"
+        ],
+        [
+          "コウ",
+          "葉が届く時間まで\n料理だと思ってます"
+        ],
+        [
+          "ロデル",
+          "なるほどな"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 250,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-rodel-concedes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "d2a42e5bf42fa4c5dd72871e36ed4f9d655bb3d93bcd84e7af91d8e500c9cc27"
+    },
+    {
+      "id": "06-the-small-contract",
+      "art": "art/06-the-small-contract.png",
+      "description": "Leon offers folded blank contract and modest advance coin pouch at dry guild desk. Elna checks schedule, Kou sets responsible supply limit, Leon agrees. No giant chest or instant exclusive tower monopoly.",
+      "dialogue": [
+        [
+          "レオン",
+          "週に二便\nまずは六食ずつ"
+        ],
+        [
+          "コウ",
+          "店の分と\n分けて確保します"
+        ],
+        [
+          "レオン",
+          "守れる契約で\n始めよう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-small-contract.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "4df05b783409730d164afefee15e02374ea4fb8ccebab74d8adda7a2ba3bdc05"
+    },
+    {
+      "id": "07-our-work-won",
+      "art": "art/07-our-work-won.png",
+      "description": "Outside same guild hall on third-floor stone lane Kou and Elna hold closed contract, release tension into laughter. Separate closeup Elna fingers on pouch and her proud face; broad warm two-shot safe from passing carts.",
+      "dialogue": [
+        [
+          "エルナ",
+          "名前を隠しても\n選んでもらえた"
+        ],
+        [
+          "コウ",
+          "俺たちの仕事で\n勝ったんだ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 470,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-our-work-won.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "516b1fd88d643395bd4d34aab9cca046ae3c852c69853f2b204916501b00f378"
+    },
+    {
+      "id": "08-row-asks",
+      "art": "art/08-row-asks.png",
+      "description": "Row ochre cloak at blue-awning diner doorway after trial, Sera teal cloak one low braid stands beside him quietly for first introduction, wooden blue-stone staff. He asks a new request of Kou, no journey yet.",
+      "dialogue": [
+        [
+          "ロウ",
+          "次は\n飯だけじゃない\n頼みがある"
+        ],
+        [
+          "コウ",
+          "俺に？"
+        ],
+        [
+          "ロウ",
+          "一緒に\n四階へ来てくれ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 480,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-row-asks.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "4b8b1d3dd8637b77eb06ec45db68a979d993cc76fcb3b7bf49369702eaa5317e"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-first-bite-no-cards-window-01",
+      "art": "art/01-first-bite-no-cards.png",
+      "description": "Same guild hall and identical anonymous ceramic tasting dishes from previous episode, Row tastes a small stew bite, quiet eye reaction then smile, Leon separately evaluates his numbered portion; the vote compares dishes rather than shop names.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 90,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-first-bite-no-cards.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "370a9898b685f028ef8b906e927c49c42bd634f4da69e1213ba05abe75dfe12e",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 409
+      },
+      "sourceId": "01-first-bite-no-cards",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-first-bite-no-cards-window-02",
+      "art": "art/01-first-bite-no-cards.png",
+      "description": "Same guild hall and identical anonymous ceramic tasting dishes from previous episode, Row tastes a small stew bite, quiet eye reaction then smile, Leon separately evaluates his numbered portion; the vote compares dishes rather than shop names.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-first-bite-no-cards.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "370a9898b685f028ef8b906e927c49c42bd634f4da69e1213ba05abe75dfe12e",
+      "crop": {
+        "x": 0,
+        "y": 409,
+        "width": 724,
+        "height": 286
+      },
+      "sourceId": "01-first-bite-no-cards",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-first-bite-no-cards-window-03",
+      "art": "art/01-first-bite-no-cards.png",
+      "description": "Same guild hall and identical anonymous ceramic tasting dishes from previous episode, Row tastes a small stew bite, quiet eye reaction then smile, Leon separately evaluates his numbered portion; the vote compares dishes rather than shop names.",
+      "dialogue": [
+        [
+          "ロウ",
+          "……これだ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 220,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-first-bite-no-cards.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "370a9898b685f028ef8b906e927c49c42bd634f4da69e1213ba05abe75dfe12e",
+      "crop": {
+        "x": 0,
+        "y": 695,
+        "width": 724,
+        "height": 292
+      },
+      "sourceId": "01-first-bite-no-cards",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-first-bite-no-cards-window-04",
+      "art": "art/01-first-bite-no-cards.png",
+      "description": "Same guild hall and identical anonymous ceramic tasting dishes from previous episode, Row tastes a small stew bite, quiet eye reaction then smile, Leon separately evaluates his numbered portion; the vote compares dishes rather than shop names.",
+      "dialogue": [
+        [
+          "レオン",
+          "味が\n揃っている"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 190,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-first-bite-no-cards.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "370a9898b685f028ef8b906e927c49c42bd634f4da69e1213ba05abe75dfe12e",
+      "crop": {
+        "x": 0,
+        "y": 987,
+        "width": 724,
+        "height": 345
+      },
+      "sourceId": "01-first-bite-no-cards",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-first-bite-no-cards-window-05",
+      "art": "art/01-first-bite-no-cards.png",
+      "description": "Same guild hall and identical anonymous ceramic tasting dishes from previous episode, Row tastes a small stew bite, quiet eye reaction then smile, Leon separately evaluates his numbered portion; the vote compares dishes rather than shop names.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 140,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-first-bite-no-cards.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "370a9898b685f028ef8b906e927c49c42bd634f4da69e1213ba05abe75dfe12e",
+      "crop": {
+        "x": 0,
+        "y": 1332,
+        "width": 724,
+        "height": 264
+      },
+      "sourceId": "01-first-bite-no-cards",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-first-bite-no-cards-window-06",
+      "art": "art/01-first-bite-no-cards.png",
+      "description": "Same guild hall and identical anonymous ceramic tasting dishes from previous episode, Row tastes a small stew bite, quiet eye reaction then smile, Leon separately evaluates his numbered portion; the vote compares dishes rather than shop names.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 280,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-first-bite-no-cards.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "370a9898b685f028ef8b906e927c49c42bd634f4da69e1213ba05abe75dfe12e",
+      "crop": {
+        "x": 0,
+        "y": 1596,
+        "width": 724,
+        "height": 576
+      },
+      "sourceId": "01-first-bite-no-cards",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-the-returners-travelers-window-01",
+      "art": "art/02-the-returners-travelers.png",
+      "description": "Two exhausted but uninjured adult returners eat their portions sitting safely, relaxed shoulders then warm expression; one remembers having cold dry rations on expedition. No instant healing, no muscles expanding, no glowing stat buffs.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-the-returners-travelers.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "2896b261c1ea73f39be5b6d689cb150152b7b2d4bf1c3d18a9e259802dab8ea7",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 438
+      },
+      "sourceId": "02-the-returners-travelers",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-the-returners-travelers-window-02",
+      "art": "art/02-the-returners-travelers.png",
+      "description": "Two exhausted but uninjured adult returners eat their portions sitting safely, relaxed shoulders then warm expression; one remembers having cold dry rations on expedition. No instant healing, no muscles expanding, no glowing stat buffs.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-the-returners-travelers.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "2896b261c1ea73f39be5b6d689cb150152b7b2d4bf1c3d18a9e259802dab8ea7",
+      "crop": {
+        "x": 0,
+        "y": 438,
+        "width": 724,
+        "height": 376
+      },
+      "sourceId": "02-the-returners-travelers",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-the-returners-travelers-window-03",
+      "art": "art/02-the-returners-travelers.png",
+      "description": "Two exhausted but uninjured adult returners eat their portions sitting safely, relaxed shoulders then warm expression; one remembers having cold dry rations on expedition. No instant healing, no muscles expanding, no glowing stat buffs.",
+      "dialogue": [
+        [
+          "攻略者",
+          "冷たい飯ばかりで\n帰ってきたあとも\n腹が落ち着かなかった"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 160,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-the-returners-travelers.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "2896b261c1ea73f39be5b6d689cb150152b7b2d4bf1c3d18a9e259802dab8ea7",
+      "crop": {
+        "x": 0,
+        "y": 814,
+        "width": 724,
+        "height": 385
+      },
+      "sourceId": "02-the-returners-travelers",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-the-returners-travelers-window-04",
+      "art": "art/02-the-returners-travelers.png",
+      "description": "Two exhausted but uninjured adult returners eat their portions sitting safely, relaxed shoulders then warm expression; one remembers having cold dry rations on expedition. No instant healing, no muscles expanding, no glowing stat buffs.",
+      "dialogue": [
+        [
+          "攻略者",
+          "これなら\nまた出発できる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-the-returners-travelers.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "2896b261c1ea73f39be5b6d689cb150152b7b2d4bf1c3d18a9e259802dab8ea7",
+      "crop": {
+        "x": 0,
+        "y": 1199,
+        "width": 724,
+        "height": 363
+      },
+      "sourceId": "02-the-returners-travelers",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-the-returners-travelers-window-05",
+      "art": "art/02-the-returners-travelers.png",
+      "description": "Two exhausted but uninjured adult returners eat their portions sitting safely, relaxed shoulders then warm expression; one remembers having cold dry rations on expedition. No instant healing, no muscles expanding, no glowing stat buffs.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 140,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-the-returners-travelers.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "2896b261c1ea73f39be5b6d689cb150152b7b2d4bf1c3d18a9e259802dab8ea7",
+      "crop": {
+        "x": 0,
+        "y": 1562,
+        "width": 724,
+        "height": 225
+      },
+      "sourceId": "02-the-returners-travelers",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-the-returners-travelers-window-06",
+      "art": "art/02-the-returners-travelers.png",
+      "description": "Two exhausted but uninjured adult returners eat their portions sitting safely, relaxed shoulders then warm expression; one remembers having cold dry rations on expedition. No instant healing, no muscles expanding, no glowing stat buffs.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 330,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-the-returners-travelers.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "2896b261c1ea73f39be5b6d689cb150152b7b2d4bf1c3d18a9e259802dab8ea7",
+      "crop": {
+        "x": 0,
+        "y": 1787,
+        "width": 724,
+        "height": 385
+      },
+      "sourceId": "02-the-returners-travelers",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-choice-window-01",
+      "art": "art/03-choice.png",
+      "description": "Leon receives simple wooden vote tokens from tasting adults. Three small tactile hand moments then he looks up, paused before announcing result. One dish selected by more tokens clearly without numerical writing.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 80,
+      "scrollPurpose": "判定の声と結果の披露をスクロールで分ける",
+      "prompt": "generation/03-choice.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "089646065bc5bfd49c0c6cb2aa8590e78e94b8dc49cb35ca0fb4e72bdabb5a58",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 426
+      },
+      "sourceId": "03-choice",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-choice-window-02",
+      "art": "art/03-choice.png",
+      "description": "Leon receives simple wooden vote tokens from tasting adults. Three small tactile hand moments then he looks up, paused before announcing result. One dish selected by more tokens clearly without numerical writing.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 80,
+      "scrollPurpose": "判定の声と結果の披露をスクロールで分ける",
+      "prompt": "generation/03-choice.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "089646065bc5bfd49c0c6cb2aa8590e78e94b8dc49cb35ca0fb4e72bdabb5a58",
+      "crop": {
+        "x": 0,
+        "y": 426,
+        "width": 724,
+        "height": 417
+      },
+      "sourceId": "03-choice",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-choice-window-03",
+      "art": "art/03-choice.png",
+      "description": "Leon receives simple wooden vote tokens from tasting adults. Three small tactile hand moments then he looks up, paused before announcing result. One dish selected by more tokens clearly without numerical writing.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 220,
+      "scrollPurpose": "判定の声と結果の披露をスクロールで分ける",
+      "prompt": "generation/03-choice.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "089646065bc5bfd49c0c6cb2aa8590e78e94b8dc49cb35ca0fb4e72bdabb5a58",
+      "crop": {
+        "x": 0,
+        "y": 843,
+        "width": 724,
+        "height": 521
+      },
+      "sourceId": "03-choice",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-choice-window-04",
+      "art": "art/03-choice.png",
+      "description": "Leon receives simple wooden vote tokens from tasting adults. Three small tactile hand moments then he looks up, paused before announcing result. One dish selected by more tokens clearly without numerical writing.",
+      "dialogue": [
+        [
+          "レオン",
+          "選ばれたのは……"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 920,
+      "scrollPurpose": "判定の声と結果の披露をスクロールで分ける",
+      "prompt": "generation/03-choice.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "089646065bc5bfd49c0c6cb2aa8590e78e94b8dc49cb35ca0fb4e72bdabb5a58",
+      "crop": {
+        "x": 0,
+        "y": 1364,
+        "width": 724,
+        "height": 808
+      },
+      "sourceId": "03-choice",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-their-dish-wood-votes-window-01",
+      "art": "art/04-their-dish-wood-votes.png",
+      "description": "Large borderless reveal Elna meal beside several vote tokens. Leon addresses Kou and Elna; her surprise is separate big reaction not crowded into dish. Row gestures in delight, no confetti or royal crown.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-their-dish-wood-votes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "14b2f9ba72e273bf1412997626b9b65c8f43c90a0307aa067aec280858c5a6ad",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 421
+      },
+      "sourceId": "04-their-dish-wood-votes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-their-dish-wood-votes-window-02",
+      "art": "art/04-their-dish-wood-votes.png",
+      "description": "Large borderless reveal Elna meal beside several vote tokens. Leon addresses Kou and Elna; her surprise is separate big reaction not crowded into dish. Row gestures in delight, no confetti or royal crown.",
+      "dialogue": [
+        [
+          "レオン",
+          "帰還食堂だ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 220,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-their-dish-wood-votes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "14b2f9ba72e273bf1412997626b9b65c8f43c90a0307aa067aec280858c5a6ad",
+      "crop": {
+        "x": 0,
+        "y": 421,
+        "width": 724,
+        "height": 561
+      },
+      "sourceId": "04-their-dish-wood-votes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-their-dish-wood-votes-window-03",
+      "art": "art/04-their-dish-wood-votes.png",
+      "description": "Large borderless reveal Elna meal beside several vote tokens. Leon addresses Kou and Elna; her surprise is separate big reaction not crowded into dish. Row gestures in delight, no confetti or royal crown.",
+      "dialogue": [
+        [
+          "エルナ",
+          "私たちが……？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-their-dish-wood-votes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "14b2f9ba72e273bf1412997626b9b65c8f43c90a0307aa067aec280858c5a6ad",
+      "crop": {
+        "x": 0,
+        "y": 982,
+        "width": 724,
+        "height": 367
+      },
+      "sourceId": "04-their-dish-wood-votes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-their-dish-wood-votes-window-04",
+      "art": "art/04-their-dish-wood-votes.png",
+      "description": "Large borderless reveal Elna meal beside several vote tokens. Leon addresses Kou and Elna; her surprise is separate big reaction not crowded into dish. Row gestures in delight, no confetti or royal crown.",
+      "dialogue": [
+        [
+          "ロウ",
+          "また\n食べたくなる皿だ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-their-dish-wood-votes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "14b2f9ba72e273bf1412997626b9b65c8f43c90a0307aa067aec280858c5a6ad",
+      "crop": {
+        "x": 0,
+        "y": 1349,
+        "width": 724,
+        "height": 439
+      },
+      "sourceId": "04-their-dish-wood-votes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-their-dish-wood-votes-window-05",
+      "art": "art/04-their-dish-wood-votes.png",
+      "description": "Large borderless reveal Elna meal beside several vote tokens. Leon addresses Kou and Elna; her surprise is separate big reaction not crowded into dish. Row gestures in delight, no confetti or royal crown.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 420,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-their-dish-wood-votes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "14b2f9ba72e273bf1412997626b9b65c8f43c90a0307aa067aec280858c5a6ad",
+      "crop": {
+        "x": 0,
+        "y": 1788,
+        "width": 724,
+        "height": 384
+      },
+      "sourceId": "04-their-dish-wood-votes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-rodel-concedes-window-01",
+      "art": "art/05-rodel-concedes.png",
+      "description": "Rodel rises from table and admits outcome while looking at healthy fresh leaves, small respected professional face; Kou replies without humiliation. Leon aside. Rival dishes remain good, one local chef nods.",
+      "dialogue": [
+        [
+          "ロデル",
+          "安さだけでは\nないわけか"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-rodel-concedes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "d2a42e5bf42fa4c5dd72871e36ed4f9d655bb3d93bcd84e7af91d8e500c9cc27",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 607
+      },
+      "sourceId": "05-rodel-concedes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-rodel-concedes-window-02",
+      "art": "art/05-rodel-concedes.png",
+      "description": "Rodel rises from table and admits outcome while looking at healthy fresh leaves, small respected professional face; Kou replies without humiliation. Leon aside. Rival dishes remain good, one local chef nods.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-rodel-concedes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "d2a42e5bf42fa4c5dd72871e36ed4f9d655bb3d93bcd84e7af91d8e500c9cc27",
+      "crop": {
+        "x": 0,
+        "y": 607,
+        "width": 724,
+        "height": 305
+      },
+      "sourceId": "05-rodel-concedes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-rodel-concedes-window-03",
+      "art": "art/05-rodel-concedes.png",
+      "description": "Rodel rises from table and admits outcome while looking at healthy fresh leaves, small respected professional face; Kou replies without humiliation. Leon aside. Rival dishes remain good, one local chef nods.",
+      "dialogue": [
+        [
+          "コウ",
+          "葉が届く時間まで\n料理だと思ってます"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-rodel-concedes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "d2a42e5bf42fa4c5dd72871e36ed4f9d655bb3d93bcd84e7af91d8e500c9cc27",
+      "crop": {
+        "x": 0,
+        "y": 912,
+        "width": 724,
+        "height": 442
+      },
+      "sourceId": "05-rodel-concedes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-rodel-concedes-window-04",
+      "art": "art/05-rodel-concedes.png",
+      "description": "Rodel rises from table and admits outcome while looking at healthy fresh leaves, small respected professional face; Kou replies without humiliation. Leon aside. Rival dishes remain good, one local chef nods.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 160,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-rodel-concedes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "d2a42e5bf42fa4c5dd72871e36ed4f9d655bb3d93bcd84e7af91d8e500c9cc27",
+      "crop": {
+        "x": 0,
+        "y": 1354,
+        "width": 724,
+        "height": 303
+      },
+      "sourceId": "05-rodel-concedes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-rodel-concedes-window-05",
+      "art": "art/05-rodel-concedes.png",
+      "description": "Rodel rises from table and admits outcome while looking at healthy fresh leaves, small respected professional face; Kou replies without humiliation. Leon aside. Rival dishes remain good, one local chef nods.",
+      "dialogue": [
+        [
+          "ロデル",
+          "なるほどな"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 250,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-rodel-concedes.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "d2a42e5bf42fa4c5dd72871e36ed4f9d655bb3d93bcd84e7af91d8e500c9cc27",
+      "crop": {
+        "x": 0,
+        "y": 1657,
+        "width": 724,
+        "height": 515
+      },
+      "sourceId": "05-rodel-concedes",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-the-small-contract-window-01",
+      "art": "art/06-the-small-contract.png",
+      "description": "Leon offers folded blank contract and modest advance coin pouch at dry guild desk. Elna checks schedule, Kou sets responsible supply limit, Leon agrees. No giant chest or instant exclusive tower monopoly.",
+      "dialogue": [
+        [
+          "レオン",
+          "週に二便\nまずは六食ずつ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-small-contract.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "4df05b783409730d164afefee15e02374ea4fb8ccebab74d8adda7a2ba3bdc05",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 570
+      },
+      "sourceId": "06-the-small-contract",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-the-small-contract-window-02",
+      "art": "art/06-the-small-contract.png",
+      "description": "Leon offers folded blank contract and modest advance coin pouch at dry guild desk. Elna checks schedule, Kou sets responsible supply limit, Leon agrees. No giant chest or instant exclusive tower monopoly.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-small-contract.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "4df05b783409730d164afefee15e02374ea4fb8ccebab74d8adda7a2ba3bdc05",
+      "crop": {
+        "x": 0,
+        "y": 570,
+        "width": 724,
+        "height": 277
+      },
+      "sourceId": "06-the-small-contract",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-the-small-contract-window-03",
+      "art": "art/06-the-small-contract.png",
+      "description": "Leon offers folded blank contract and modest advance coin pouch at dry guild desk. Elna checks schedule, Kou sets responsible supply limit, Leon agrees. No giant chest or instant exclusive tower monopoly.",
+      "dialogue": [
+        [
+          "コウ",
+          "店の分と\n分けて確保します"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-small-contract.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "4df05b783409730d164afefee15e02374ea4fb8ccebab74d8adda7a2ba3bdc05",
+      "crop": {
+        "x": 0,
+        "y": 847,
+        "width": 724,
+        "height": 402
+      },
+      "sourceId": "06-the-small-contract",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-the-small-contract-window-04",
+      "art": "art/06-the-small-contract.png",
+      "description": "Leon offers folded blank contract and modest advance coin pouch at dry guild desk. Elna checks schedule, Kou sets responsible supply limit, Leon agrees. No giant chest or instant exclusive tower monopoly.",
+      "dialogue": [
+        [
+          "レオン",
+          "守れる契約で\n始めよう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-small-contract.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "4df05b783409730d164afefee15e02374ea4fb8ccebab74d8adda7a2ba3bdc05",
+      "crop": {
+        "x": 0,
+        "y": 1249,
+        "width": 724,
+        "height": 424
+      },
+      "sourceId": "06-the-small-contract",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-the-small-contract-window-05",
+      "art": "art/06-the-small-contract.png",
+      "description": "Leon offers folded blank contract and modest advance coin pouch at dry guild desk. Elna checks schedule, Kou sets responsible supply limit, Leon agrees. No giant chest or instant exclusive tower monopoly.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-small-contract.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "4df05b783409730d164afefee15e02374ea4fb8ccebab74d8adda7a2ba3bdc05",
+      "crop": {
+        "x": 0,
+        "y": 1673,
+        "width": 724,
+        "height": 499
+      },
+      "sourceId": "06-the-small-contract",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-our-work-won-window-01",
+      "art": "art/07-our-work-won.png",
+      "description": "Outside same guild hall on third-floor stone lane Kou and Elna hold closed contract, release tension into laughter. Separate closeup Elna fingers on pouch and her proud face; broad warm two-shot safe from passing carts.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-our-work-won.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "516b1fd88d643395bd4d34aab9cca046ae3c852c69853f2b204916501b00f378",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 551
+      },
+      "sourceId": "07-our-work-won",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-our-work-won-window-02",
+      "art": "art/07-our-work-won.png",
+      "description": "Outside same guild hall on third-floor stone lane Kou and Elna hold closed contract, release tension into laughter. Separate closeup Elna fingers on pouch and her proud face; broad warm two-shot safe from passing carts.",
+      "dialogue": [
+        [
+          "エルナ",
+          "名前を隠しても\n選んでもらえた"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-our-work-won.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "516b1fd88d643395bd4d34aab9cca046ae3c852c69853f2b204916501b00f378",
+      "crop": {
+        "x": 0,
+        "y": 551,
+        "width": 724,
+        "height": 475
+      },
+      "sourceId": "07-our-work-won",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-our-work-won-window-03",
+      "art": "art/07-our-work-won.png",
+      "description": "Outside same guild hall on third-floor stone lane Kou and Elna hold closed contract, release tension into laughter. Separate closeup Elna fingers on pouch and her proud face; broad warm two-shot safe from passing carts.",
+      "dialogue": [
+        [
+          "コウ",
+          "俺たちの仕事で\n勝ったんだ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 220,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-our-work-won.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "516b1fd88d643395bd4d34aab9cca046ae3c852c69853f2b204916501b00f378",
+      "crop": {
+        "x": 0,
+        "y": 1026,
+        "width": 724,
+        "height": 365
+      },
+      "sourceId": "07-our-work-won",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-our-work-won-window-04",
+      "art": "art/07-our-work-won.png",
+      "description": "Outside same guild hall on third-floor stone lane Kou and Elna hold closed contract, release tension into laughter. Separate closeup Elna fingers on pouch and her proud face; broad warm two-shot safe from passing carts.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 470,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-our-work-won.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "516b1fd88d643395bd4d34aab9cca046ae3c852c69853f2b204916501b00f378",
+      "crop": {
+        "x": 0,
+        "y": 1391,
+        "width": 724,
+        "height": 781
+      },
+      "sourceId": "07-our-work-won",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-row-asks-window-01",
+      "art": "art/08-row-asks.png",
+      "description": "Row ochre cloak at blue-awning diner doorway after trial, Sera teal cloak one low braid stands beside him quietly for first introduction, wooden blue-stone staff. He asks a new request of Kou, no journey yet.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-row-asks.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "4b8b1d3dd8637b77eb06ec45db68a979d993cc76fcb3b7bf49369702eaa5317e",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 626
+      },
+      "sourceId": "08-row-asks",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-row-asks-window-02",
+      "art": "art/08-row-asks.png",
+      "description": "Row ochre cloak at blue-awning diner doorway after trial, Sera teal cloak one low braid stands beside him quietly for first introduction, wooden blue-stone staff. He asks a new request of Kou, no journey yet.",
+      "dialogue": [
+        [
+          "ロウ",
+          "次は\n飯だけじゃない\n頼みがある"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-row-asks.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "4b8b1d3dd8637b77eb06ec45db68a979d993cc76fcb3b7bf49369702eaa5317e",
+      "crop": {
+        "x": 0,
+        "y": 626,
+        "width": 724,
+        "height": 498
+      },
+      "sourceId": "08-row-asks",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-row-asks-window-03",
+      "art": "art/08-row-asks.png",
+      "description": "Row ochre cloak at blue-awning diner doorway after trial, Sera teal cloak one low braid stands beside him quietly for first introduction, wooden blue-stone staff. He asks a new request of Kou, no journey yet.",
+      "dialogue": [
+        [
+          "コウ",
+          "俺に？"
+        ],
+        [
+          "ロウ",
+          "一緒に\n四階へ来てくれ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 480,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-row-asks.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "4b8b1d3dd8637b77eb06ec45db68a979d993cc76fcb3b7bf49369702eaa5317e",
+      "crop": {
+        "x": 0,
+        "y": 1124,
+        "width": 724,
+        "height": 1048
+      },
+      "sourceId": "08-row-asks",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    }
+  ]
+}
