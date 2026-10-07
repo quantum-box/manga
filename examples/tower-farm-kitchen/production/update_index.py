@@ -60,7 +60,7 @@ sounds=sum(len(s.get('soundEffects',[])) for s in first['scenes'])
 
 各話の`index.html`は原画を直接読むリーダー、`reader.html`は原画のバイトを内包するリーダー。第1話は容量に合わせて同じフォルダーの`reader-art-*.js`三個を一緒に使う。第2〜10話は単独HTML。会話は原画内へ日本語の縦書きで統合し、HTMLで重ねて表示しない。原画・実際の生成指示・採用と修正の記録・両スマホ幅の全長画像・確認シートを各話へ保存する。公開サーバーへの配信はまだ行っていない。
 
-第1話は長尺・効果音に加え、場所と帰還門を知る順序、水を頼んでから仕事の依頼を受ける順序を改稿。{len(first['scenes'])}場面、スマホ約{min(screen_counts)}〜{max(screen_counts)}画面、原画内の効果音{sounds}箇所。[改稿と確認の記録](production/episode-01-review.md)。第2〜10話は今回の導入改稿の対象外で、従来の各8枚の原画。
+第1話は長尺・効果音に加え、場所と帰還門を知る順序、水を頼んでから仕事の依頼を受ける順序を改稿。{len(first['scenes'])}場面、スマホ約{min(screen_counts)}〜{max(screen_counts)}画面、原画内の効果音{sounds}箇所。[改稿と確認の記録](production/episode-01-review.md)。第2〜10話も全編を改稿。73枚の新原画を334の表示窓で読み、質問・判断・実作業・反応をつなぐ。[改稿と確認の記録](production/remake/review.md)。
 ''')
 
 rows = []
@@ -77,7 +77,7 @@ remaining = [e['number'] for e in EPISODES if e['number'] not in completed]
 next_work = f'第{remaining[0]}話から、残りの作画・スマホ確認・包装を続ける。' if remaining else ('第11話以降は未制作。240話ロードマップの次の仕事を脚本化する。' if delivery_passed else '導入10話の通読、カタログ・iOS同期、PRの最新CIを確認する。')
 (BASE / 'production/status.md').write_text('''# 制作台帳
 
-2026-10-07の指定：200話以上。下限200話、初期ロードマップ240話、初回の完成原稿は第1〜10話。作業ブランチ `codex/tower-farm-kitchen`、PR #27。
+2026-10-07の指定：200話以上。下限200話、初期ロードマップ240話、初回の完成原稿は第1〜10話。続編改稿ブランチ `codex/farmer-episodes-remake`。第2〜10話の既存完成稿を全編置き換え。
 
 | 段階 | 状態 |
 | --- | --- |
@@ -89,7 +89,7 @@ next_work = f'第{remaining[0]}話から、残りの作画・スマホ確認・�
 
 | 話 | 計画 | 脚本・絵コンテ | 作画・文字 | 390/360確認 | パッケージ |
 | --- | --- | --- | --- | --- | --- |
-''' + '\n'.join(rows) + f'\n\n次の作業：{next_work}\n\nローカル検証の結果は [delivery.json](delivery.json)。最新HEADのCI・レビューは [PR #27](https://github.com/quantum-box/manga/pull/27) を正本とする。公開サーバー配信、mainへの取り込み、実機確認は未実施。\n\n完成は採用画像を両幅で読み、全文・話者・道具・時間と状態を確認した話だけに付ける。画像生成の限界、未修正の文字、未検証の表示を完了として記録しない。\n')
+''' + '\n'.join(rows) + f'\n\n次の作業：{next_work}\n\nローカル検証の結果は [delivery.json](delivery.json)。最新HEADのCI・レビューは [PR #36](https://github.com/quantum-box/manga/pull/36) を正本とする。公開サーバー配信と実機確認は未実施。mainへの取り込みは上記PRの状態を参照。\n\n完成は採用画像を両幅で読み、全文・話者・道具・時間と状態を確認した話だけに付ける。画像生成の限界、未修正の文字、未検証の表示を完了として記録しない。\n')
 
 continuity = BASE / 'series/continuity.md'
 text = continuity.read_text()

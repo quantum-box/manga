@@ -963,7 +963,7 @@
     "state": "排水は動く。新しい根は数日後に一部で確認。株数と収量をまだ保証しない。バルトが現地の知識を渡す。",
     "scenes": [
       [
-        "morning",
+        "remake-morning",
         "Same garden at early light, two unequal panels: Kou examines yesterday's marked wilted plant still rooted, Elna behind him with empty watering can set down; closeup his cautious face and wet ground beginning to dry. No recovered jungle overnight.",
         [
           [
@@ -972,19 +972,41 @@
           ],
           [
             "エルナ",
+            "昨日、水は抜けたよね？"
+          ],
+          [
+            "コウ",
+            "水が抜けても、根が戻るとは限らない。"
+          ],
+          [
+            "エルナ",
             "待つのも、仕事？"
           ]
         ],
         "varied",
-        90
+        100,
+        {
+          "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "01-remake-morning"
+        }
       ],
       [
-        "balt",
+        "remake-balt",
         "Wide Balt arrives on walking path in brown hat; separate closeup Balt observing marked plant; lower Kou listens. Balt is experienced and practical, not foolish. Dug plant from yesterday lies separately and is not replanted alive.",
         [
           [
+            "エルナ",
+            "バルトさん。昨日、畑を見てくれた人。"
+          ],
+          [
+            "コウ",
+            "コウです。教えてもらえますか。"
+          ],
+          [
             "バルト",
-            "昨日と同じ株を見ろ。"
+            "まず、昨日と同じ株を見ろ。"
           ],
           [
             "バルト",
@@ -992,10 +1014,16 @@
           ]
         ],
         "conversation",
-        70
+        220,
+        {
+          "scrollPurpose": "相手の知識を聞いて受け止める",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "02-remake-balt"
+        }
       ],
       [
-        "compare",
+        "remake-compare",
         "Overhead plot with one marked comparison strip and other rows; hand closeup tying plain twine marker without cutting roots; Elna looking from changed strip to remaining area. Plants vary realistically, no flashy transformation.",
         [
           [
@@ -1005,15 +1033,29 @@
           [
             "エルナ",
             "全部を、変えないの？"
+          ],
+          [
+            "コウ",
+            "一度に変えたら、何が効いたか分からない。"
           ]
         ],
         "detail",
-        70
+        70,
+        {
+          "scrollPurpose": "手順と判断を短い動作でつなぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "03-remake-compare"
+        }
       ],
       [
-        "record",
+        "remake-record",
         "Two unequal panels: Kou writes simple marks and blank spaces in notebook at plot edge; closeup Elna reading over shoulder. A subtle empty translucent recording frame may hover but NO added visible text or numerical claims. Notebook has sketch marks only.",
         [
+          [
+            "エルナ",
+            "採れる量は、書けないの？"
+          ],
           [
             "コウ",
             "知らない数字は、空欄でいい。"
@@ -1024,12 +1066,22 @@
           ]
         ],
         "detail",
-        100
+        260,
+        {
+          "scrollPurpose": "気づきの前後で速度を落とす",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "04-remake-record"
+        }
       ],
       [
-        "new-roots",
+        "remake-new-roots",
         "Time has advanced to day five. Three panels: same twine marker and modestly less wilted plant, gentle root inspection showing a few NEW white fine roots amid remaining damaged roots, Balt's restrained pleased expression. Recovery is partial, no instant glow or giant growth.",
         [
+          [
+            "エルナ",
+            "昨日より、葉が起きてる。"
+          ],
           [
             "コウ",
             "新しい根だ。"
@@ -1037,13 +1089,23 @@
           [
             "バルト",
             "まだ弱い。急ぐな。"
+          ],
+          [
+            "コウ",
+            "この株は、残そう。"
           ]
         ],
         "detail",
-        140
+        120,
+        {
+          "scrollPurpose": "選んだ行動と結果を確かめる",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "05-remake-new-roots"
+        }
       ],
       [
-        "loss",
+        "remake-loss",
         "Large quiet panel of bare damaged strip where dead plants have been removed, Elna kneeling with sad face; lower Kou quietly placing tray to plan new sowing. Do not fill dead area with new mature plants.",
         [
           [
@@ -1052,14 +1114,28 @@
           ],
           [
             "コウ",
+            "……うん。"
+          ],
+          [
+            "エルナ",
+            "ちゃんと見ておく。次は、同じにしない。"
+          ],
+          [
+            "コウ",
             "次の苗を、育てよう。"
           ]
         ],
         "hero",
-        180
+        340,
+        {
+          "scrollPurpose": "説明の後に反応を待つ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "06-remake-loss"
+        }
       ],
       [
-        "existing-harvest",
+        "remake-existing-harvest",
         "Three unequal shots: Balt shows a surviving mature garden-leaf plant; Kou cuts usable leaves gently into clean shallow basket; Elna checks leaf size for kitchen. Source is surviving established plants, not seeds sown in this story.",
         [
           [
@@ -1067,17 +1143,39 @@
             "この葉は、若いうちが柔らかい。"
           ],
           [
+            "コウ",
+            "残っていた株なら、少し採れる？"
+          ],
+          [
+            "バルト",
+            "株を残して、使う分だけな。"
+          ],
+          [
             "エルナ",
             "切りやすい大きさが、欲しい。"
           ]
         ],
         "varied",
-        75
+        110,
+        {
+          "scrollPurpose": "次の仕事へ状態を渡す",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "07-remake-existing-harvest"
+        }
       ],
       [
-        "dish",
+        "remake-dish",
         "Warm kitchen: basket passed from Kou's hands to Elna, narrow chopping closeup, large finished steaming dish at counter and their faces. Keep raw garden work off cooking surface. No magical buff display.",
         [
+          [
+            "エルナ",
+            "まず、洗ってからね。"
+          ],
+          [
+            "コウ",
+            "畑と、厨房で手が変わるんだな。"
+          ],
           [
             "エルナ",
             "食べる人まで、畑の続きだね。"
@@ -1088,7 +1186,13 @@
           ]
         ],
         "hero",
-        160
+        420,
+        {
+          "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "08-remake-dish"
+        }
       ]
     ]
   },
@@ -1100,7 +1204,7 @@
     "state": "既存の成株を順に使い、復旧区画を播種。最初の庭葉は7日目に播く。28日栽培は見込みで確定値ではない。",
     "scenes": [
       [
-        "customer",
+        "remake-customer",
         "Diner counter, young adult adventurer with auburn short hair and muted ochre cloak finishes bowl; Elna listens smiling then worried. Small inset empty leafy garnish plate. This recurring customer is not Leon.",
         [
           [
@@ -1110,15 +1214,29 @@
           [
             "エルナ",
             "……明日も？"
+          ],
+          [
+            "エルナ",
+            "ありがとう。量を確かめておくね。"
           ]
         ],
         "conversation",
-        85
+        100,
+        {
+          "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "01-remake-customer"
+        }
       ],
       [
-        "empty-basket",
+        "remake-empty-basket",
         "Kou and Elna outside serving window, clean empty harvest basket in foreground; two unequal closeups basket and Kou's thoughtful face. Existing harvest has been used, garden cannot immediately replace it.",
         [
+          [
+            "エルナ",
+            "今日の籠、もう空っぽ。"
+          ],
           [
             "コウ",
             "一度に採れたら、次は空く。"
@@ -1129,12 +1247,22 @@
           ]
         ],
         "detail",
-        110
+        220,
+        {
+          "scrollPurpose": "相手の知識を聞いて受け止める",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "02-remake-empty-basket"
+        }
       ],
       [
-        "native-seed",
+        "remake-native-seed",
         "Balt on plot path shows tiny native seed in palm, Kou listens close, lower panel glowing ceiling vein and differently shaded bed corner. Plain seed packet without labels.",
         [
+          [
+            "コウ",
+            "この種は、どんな場所で育つ？"
+          ],
           [
             "バルト",
             "庭葉は、光が弱いと遅れる。"
@@ -1145,22 +1273,42 @@
           ]
         ],
         "varied",
-        70
+        70,
+        {
+          "scrollPurpose": "手順と判断を短い動作でつなぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "03-remake-native-seed"
+        }
       ],
       [
-        "germination",
+        "remake-germination",
         "Three brief closeups: handful of small seeds; Kou places an equal counted sample on damp cloth in shallow dish; notebook makes tally marks with room for future result. No sprouts already in newly set test, no predicted yield on screen.",
         [
           [
+            "エルナ",
+            "これだけ、別に播くの？"
+          ],
+          [
             "コウ",
             "全部の種が、芽を出すとは限らない。"
+          ],
+          [
+            "コウ",
+            "同じ数を置いて、出た芽を数える。"
           ]
         ],
         "detail",
-        70
+        260,
+        {
+          "scrollPurpose": "気づきの前後で速度を落とす",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "04-remake-germination"
+        }
       ],
       [
-        "twelve-plots",
+        "remake-twelve-plots",
         "Elevated plot view with FOUR long parallel beds, each divided into THREE equal subsections by small twine markers, total twelve sections; medium Kou and Elna looking at plain sketched plan. Bed widths consistent, no implausible giant farm. Leave words off diagram.",
         [
           [
@@ -1168,15 +1316,29 @@
             "四つの畝を、十二に分ける。"
           ],
           [
+            "エルナ",
+            "全部、今日播くの？"
+          ],
+          [
             "コウ",
             "七日ずつ、播く日をずらそう。"
+          ],
+          [
+            "エルナ",
+            "採る日も、ずらしたいんだね。"
           ]
         ],
         "varied",
-        100
+        120,
+        {
+          "scrollPurpose": "選んだ行動と結果を確かめる",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "05-remake-twelve-plots"
+        }
       ],
       [
-        "sow",
+        "remake-sow",
         "Three unequal hand-action panels: Elna makes shallow sowing line in prepared bed; Kou sows tiny seeds in one selected section; soil gently covers seeds. Only first three of twelve sections are sown this week; other sections stay bare or contain existing plants. No germination in same instant.",
         [
           [
@@ -1185,14 +1347,28 @@
           ],
           [
             "コウ",
-            "次は、七日後だ。"
+            "深く埋めすぎないで。"
+          ],
+          [
+            "エルナ",
+            "……このくらい？"
+          ],
+          [
+            "コウ",
+            "うん。次は、七日後だ。"
           ]
         ],
         "varied",
-        80
+        340,
+        {
+          "scrollPurpose": "説明の後に反応を待つ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "06-remake-sow"
+        }
       ],
       [
-        "buy",
+        "remake-buy",
         "Diner back door, local farmer delivers basket of existing leafy vegetables, Elna and Kou accept and tally purchase. Distinct plain brown-clothed adult supplier, not main cast duplicated. Bought grain sack also visible.",
         [
           [
@@ -1202,13 +1378,23 @@
           [
             "エルナ",
             "その代金も、計算に入れよう。"
+          ],
+          [
+            "コウ",
+            "畑が遅れても、店を止めないために。"
           ]
         ],
         "conversation",
-        70
+        110,
+        {
+          "scrollPurpose": "次の仕事へ状態を渡す",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "07-remake-buy"
+        }
       ],
       [
-        "calendar",
+        "remake-calendar",
         "Large quiet evening scene under blue awning, Kou and Elna beside notebook with four simple week columns and small drawings, no readable diagram text; tiny new sown beds visible through window at ground, no mature crop there. Their serious hopeful faces dominate.",
         [
           [
@@ -1218,10 +1404,24 @@
           [
             "エルナ",
             "両方、見ていくんだね。"
+          ],
+          [
+            "コウ",
+            "四週間は、まだ見込みだけど。"
+          ],
+          [
+            "エルナ",
+            "じゃあ、毎日確かめよう。"
           ]
         ],
         "hero",
-        180
+        420,
+        {
+          "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "08-remake-calendar"
+        }
       ]
     ]
   },
@@ -1233,7 +1433,7 @@
     "state": "160L桶は独立した丈夫な架台。配水は最初、一列ずつ容器で量を測る。細い自動点滴を既製品として出さない。",
     "scenes": [
       [
-        "carry",
+        "remake-carry",
         "Kou carries two manageable wooden water buckets along path, not over crop bed; small closeup blistered palm; Elna at diner kitchen doorway worried about empty prep table. Seedlings small, daytime.",
         [
           [
@@ -1243,15 +1443,29 @@
           [
             "エルナ",
             "仕込みにも、来てほしい。"
+          ],
+          [
+            "コウ",
+            "苗を見る時間まで、なくなるな。"
           ]
         ],
         "varied",
-        80
+        100,
+        {
+          "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "01-remake-carry"
+        }
       ],
       [
-        "iris",
+        "remake-iris",
         "Iris enters beside empty wooden tank and laid-out ceramic pipe segments; medium Kou faces her, lower her hand sketches tank above beds. Goggles on forehead, navy short hair. No modern PVC or electronics.",
         [
+          [
+            "エルナ",
+            "設備を直してる、イリスさん。"
+          ],
           [
             "イリス",
             "桶を上げれば、流れるよ。"
@@ -1259,13 +1473,23 @@
           [
             "コウ",
             "同じ量を、配れる？"
+          ],
+          [
+            "イリス",
+            "まず、流して確かめよう。"
           ]
         ],
         "conversation",
-        75
+        220,
+        {
+          "scrollPurpose": "相手の知識を聞いて受け止める",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "02-remake-iris"
+        }
       ],
       [
-        "stand",
+        "remake-stand",
         "Three practical construction panels: Iris checks tank and support sketch, Kou and Balt assemble braced thick timber free-standing platform, Elna sees strong diagonal bracing. Water tank is still empty until stand complete. Do not place 160kg on flimsy roof.",
         [
           [
@@ -1274,14 +1498,28 @@
           ],
           [
             "コウ",
+            "この台じゃ、危ないな。"
+          ],
+          [
+            "イリス",
+            "屋根には、載せない。"
+          ],
+          [
+            "コウ",
             "台から、作り直そう。"
           ]
         ],
         "varied",
-        70
+        70,
+        {
+          "scrollPurpose": "手順と判断を短い動作でつなぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "03-remake-stand"
+        }
       ],
       [
-        "unequal",
+        "remake-unequal",
         "Three unequal closeups same elapsed test: different outlets pour into identical measuring cups, near cup contains more than far cup; lower Kou and Iris looking at difference. Tank only modest height, pipe has clear joints and accessible valves.",
         [
           [
@@ -1289,15 +1527,25 @@
             "手前ばかり、多い。"
           ],
           [
+            "エルナ",
+            "同じ時間、開けたのに？"
+          ],
+          [
             "イリス",
             "高さと、管の長さが違うから。"
           ]
         ],
         "detail",
-        100
+        260,
+        {
+          "scrollPurpose": "気づきの前後で速度を落とす",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "04-remake-unequal"
+        }
       ],
       [
-        "zones",
+        "remake-zones",
         "Iris points to simple wooden stopcock, Kou opens ONE bed section and measures delivered water; other sections closed. Hands and pipe physically coherent. Main outlet larger than tiny modern drip emitter.",
         [
           [
@@ -1306,14 +1554,28 @@
           ],
           [
             "イリス",
+            "ほかの栓は、閉じておこう。"
+          ],
+          [
+            "コウ",
+            "流れるだけじゃ、足りないんだな。"
+          ],
+          [
+            "イリス",
             "壊れても、直せる形にしよう。"
           ]
         ],
         "detail",
-        70
+        120,
+        {
+          "scrollPurpose": "選んだ行動と結果を確かめる",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "05-remake-zones"
+        }
       ],
       [
-        "clean",
+        "remake-clean",
         "Two closeups and one face panel: removable mesh filter lifted from accessible housing, Elna rinses removable part in utility basin, Iris shows simple fitting. Irrigation tool cleaning not on food-prep surface.",
         [
           [
@@ -1323,13 +1585,27 @@
           [
             "イリス",
             "うん。ここを、緩めて。"
+          ],
+          [
+            "エルナ",
+            "土の道具は、こっちで洗うね。"
+          ],
+          [
+            "イリス",
+            "戻すところまで、やってみて。"
           ]
         ],
         "varied",
-        80
+        340,
+        {
+          "scrollPurpose": "説明の後に反応を待つ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "06-remake-clean"
+        }
       ],
       [
-        "magic-lift",
+        "remake-magic-lift",
         "Tall composition: small water spell lifts EXISTING water from source barrel to raised tank, luminous blue stream visibly connects both water bodies, source level falls; then valve sends stored water gently to one section while Iris lowers hand exhausted but satisfied. No conjured infinite water.",
         [
           [
@@ -1338,14 +1614,28 @@
           ],
           [
             "イリス",
+            "水は、下の桶から借りる。"
+          ],
+          [
+            "コウ",
+            "上げた分だけ、減るんだ。"
+          ],
+          [
+            "イリス",
             "流す間は、手が空くね。"
           ]
         ],
         "continuous",
-        120
+        110,
+        {
+          "scrollPurpose": "次の仕事へ状態を渡す",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "07-remake-magic-lift"
+        }
       ],
       [
-        "time-saved",
+        "remake-time-saved",
         "Large warm scene: Kou crouches inspecting SMALL seedlings, water delivery controlled in one background section; lower Elna invites him at blue-awning diner, still modest plot, no broad mature crop. His hands relaxed.",
         [
           [
@@ -1354,11 +1644,25 @@
           ],
           [
             "エルナ",
+            "葉の裏まで、見られた？"
+          ],
+          [
+            "コウ",
+            "うん。今日は、ここまで。"
+          ],
+          [
+            "エルナ",
             "それから、昼ごはんを作ろう。"
           ]
         ],
         "hero",
-        170
+        420,
+        {
+          "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "08-remake-time-saved"
+        }
       ]
     ]
   },
@@ -1370,9 +1674,17 @@
     "state": "回復した区画と黄化区画は別に採土。ECは同じ方法内で比較。未知の魔物粉は食用農地へ入れない。",
     "scenes": [
       [
-        "yellow",
+        "remake-yellow",
         "Balt and Kou beside one SMALL seedling section with yellowing leaves, nearby section greener; Balt feels leaf then checks soil, no idiot expression or huge mature forest. Closed fertilizer sack behind them.",
         [
+          [
+            "コウ",
+            "この列だけ、黄色い。"
+          ],
+          [
+            "エルナ",
+            "肥料を、増やした方がいい？"
+          ],
           [
             "バルト",
             "足りない色とは、限らん。"
@@ -1383,10 +1695,16 @@
           ]
         ],
         "varied",
-        80
+        100,
+        {
+          "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "01-remake-yellow"
+        }
       ],
       [
-        "samples",
+        "remake-samples",
         "Three closeups: Kou collects soil at matched depth in affected section, Balt collects normal section separately, two sealed sample jars and a third water sample kept apart. Jars have simple colored twine, no readable labels.",
         [
           [
@@ -1394,15 +1712,25 @@
             "同じ採り方で、比べよう。"
           ],
           [
+            "エルナ",
+            "この紐で、区画を分けるね。"
+          ],
+          [
             "バルト",
             "良い土と、混ぜるなよ。"
           ]
         ],
         "detail",
-        75
+        220,
+        {
+          "scrollPurpose": "相手の知識を聞いて受け止める",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "02-remake-samples"
+        }
       ],
       [
-        "calibration",
+        "remake-calibration",
         "Iris at workshop table with fantasy conductivity probe in glass reference vessel, mechanical needle gauge and standard sample, Kou observes. No digital electronics. Two panels showing reference then sample, separate test steps, no invented numeric text.",
         [
           [
@@ -1412,13 +1740,23 @@
           [
             "コウ",
             "器具の基準も、確かめよう。"
+          ],
+          [
+            "イリス",
+            "同じ深さ、同じ量でね。"
           ]
         ],
         "detail",
-        90
+        70,
+        {
+          "scrollPurpose": "手順と判断を短い動作でつなぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "03-remake-calibration"
+        }
       ],
       [
-        "salts",
+        "remake-salts",
         "Medium Iris interprets matched samples, narrow closeup high versus lower needle position WITHOUT readable numbers, lower Elna worried holding closed fertilizer sack. No visible salt crystals sprouting from plant or magical x-ray.",
         [
           [
@@ -1426,17 +1764,35 @@
             "この区画は、塩類が多い。"
           ],
           [
+            "エルナ",
+            "肥料なのに、苦しくなるの？"
+          ],
+          [
             "コウ",
             "肥料にも、塩が含まれるんだ。"
+          ],
+          [
+            "コウ",
+            "色だけで、足しちゃいけなかった。"
           ]
         ],
         "conversation",
-        90
+        260,
+        {
+          "scrollPurpose": "気づきの前後で速度を落とす",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "04-remake-salts"
+        }
       ],
       [
-        "outlet",
+        "remake-outlet",
         "Kou and Balt trace drainage outlet safely toward common channel, hand on site map with simple arrows, quiet conversation. Do not flush water through bed in this scene: they are checking capacity and destination first.",
         [
+          [
+            "エルナ",
+            "水で、薄められない？"
+          ],
           [
             "コウ",
             "薄める前に、排水先を調べる。"
@@ -1447,10 +1803,16 @@
           ]
         ],
         "varied",
-        80
+        120,
+        {
+          "scrollPurpose": "選んだ行動と結果を確かめる",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "05-remake-outlet"
+        }
       ],
       [
-        "unknown-material",
+        "remake-unknown-material",
         "Plain local trader offers CLOSED sack of powdered monster residue on utility lane far from food beds, Kou declines immediate use, Balt serious nearby. No corpse, gore, spreading powder, or instant fertilizer miracle. Three unequal panels.",
         [
           [
@@ -1462,15 +1824,25 @@
             "何が入ってるか、まだ分からない。"
           ],
           [
+            "商人",
+            "今日は、買わないのか？"
+          ],
+          [
             "バルト",
             "試すなら、食用の畑と分けろ。"
           ]
         ],
         "conversation",
-        70
+        340,
+        {
+          "scrollPurpose": "説明の後に反応を待つ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "06-remake-unknown-material"
+        }
       ],
       [
-        "stop-feeding",
+        "remake-stop-feeding",
         "Closeup fertilizer sack stored closed on shelf, hand marks dated observation in notebook; lower Elna and Kou inspect unchanged seedling section and decide to wait. No instant green transformation, no flooding.",
         [
           [
@@ -1479,14 +1851,28 @@
           ],
           [
             "エルナ",
+            "何もしないのは、不安だね。"
+          ],
+          [
+            "コウ",
+            "見に来る。記録は、止めない。"
+          ],
+          [
+            "エルナ",
             "変わるまで、記録しよう。"
           ]
         ],
         "detail",
-        120
+        110,
+        {
+          "scrollPurpose": "次の仕事へ状態を渡す",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "07-remake-stop-feeding"
+        }
       ],
       [
-        "open-diner",
+        "remake-open-diner",
         "Tall soft transition from small slow-growing seedlings under tower light to diner serving window at dusk, Elna lights lantern, Kou brings PURCHASED basket. Warm anxious faces, continuous stable garden geography.",
         [
           [
@@ -1495,11 +1881,25 @@
           ],
           [
             "コウ",
+            "今日は、仕入れた葉を使おう。"
+          ],
+          [
+            "エルナ",
+            "お客さんのお腹は、待てないから。"
+          ],
+          [
+            "コウ",
             "畑だけじゃ、暮らせないな。"
           ]
         ],
         "continuous",
-        180
+        420,
+        {
+          "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "08-remake-open-diner"
+        }
       ]
     ]
   },
@@ -1511,7 +1911,7 @@
     "state": "主食と肉、葉菜の多くは仕入れ。6銅貨定食の差引2.6は賃金や家賃を払う原資で純利益ではない。庭葉はまだ苗。",
     "scenes": [
       [
-        "large-portion",
+        "remake-large-portion",
         "Warm diner kitchen, Elna cheerfully adds extra food to guest bowl, Kou next to small ledger looks concerned but kind. Two unequal panels bowl then faces. Do not imply new seedlings harvested.",
         [
           [
@@ -1521,15 +1921,33 @@
           [
             "コウ",
             "その分の原価は？"
+          ],
+          [
+            "エルナ",
+            "……喜んでほしかったんだ。"
+          ],
+          [
+            "コウ",
+            "うん。明日も、出せるようにしたい。"
           ]
         ],
         "conversation",
-        80
+        100,
+        {
+          "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "01-remake-large-portion"
+        }
       ],
       [
-        "costs",
+        "remake-costs",
         "Three hand closeups: purchased grain sack and meat basket invoice with abstract marks, seed packet and tool, Kou's worn hands. Elna listening beside counter, purchased produce basket visible.",
         [
+          [
+            "エルナ",
+            "畑の分なら、安くなるよね？"
+          ],
           [
             "コウ",
             "自分の畑の野菜も、ただじゃない。"
@@ -1540,22 +1958,42 @@
           ]
         ],
         "detail",
-        90
+        220,
+        {
+          "scrollPurpose": "相手の知識を聞いて受け止める",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "02-remake-costs"
+        }
       ],
       [
-        "coins",
+        "remake-coins",
         "Top view six copper coins next to one meal, smaller closeup several expense piles and ledger sketch, lower Kou explaining to Elna. Exactly six sale coins in first view. NO readable text besides dialogue, no profit waterfall chart.",
         [
           [
             "コウ",
             "六枚もらって、全部は残らない。"
+          ],
+          [
+            "エルナ",
+            "仕入れと、薪の分を引く。"
+          ],
+          [
+            "コウ",
+            "残りが、そのまま利益じゃない。"
           ]
         ],
         "detail",
-        100
+        70,
+        {
+          "scrollPurpose": "手順と判断を短い動作でつなぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "03-remake-coins"
+        }
       ],
       [
-        "wages",
+        "remake-wages",
         "Three intimate unequal conversation panels: Kou earnest at ledger, Elna surprised and thoughtful, Kou replies. Quiet kitchen after closing, table clean, no other speakers.",
         [
           [
@@ -1569,13 +2007,23 @@
           [
             "コウ",
             "そこを削ると、続かない。"
+          ],
+          [
+            "エルナ",
+            "ちゃんと、数えよう。"
           ]
         ],
         "conversation",
-        100
+        260,
+        {
+          "scrollPurpose": "気づきの前後で速度を落とす",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "04-remake-wages"
+        }
       ],
       [
-        "two-dishes",
+        "remake-two-dishes",
         "Elna and Kou choose two practical dishes on clean prep counter, one grain-and-meat bowl and one soup, shared ingredients laid separately. Small inset simple blank menu board without text. Do not display dozens of fancy dishes.",
         [
           [
@@ -1585,13 +2033,23 @@
           [
             "コウ",
             "同じ仕込みで、出せるものに。"
+          ],
+          [
+            "エルナ",
+            "少なくても、ちゃんとおいしく。"
           ]
         ],
         "varied",
-        70
+        120,
+        {
+          "scrollPurpose": "選んだ行動と結果を確かめる",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "05-remake-two-dishes"
+        }
       ],
       [
-        "cook",
+        "remake-cook",
         "Unequal closeups: washed leaves chopped on designated board; Elna adds leaves LAST to steaming pan or pot; larger shoulder view her timing heat. Kou only assists by handing clean ingredients. Food moisture and steam appetizing, no magical fireworks.",
         [
           [
@@ -1599,15 +2057,25 @@
             "葉は、最後に。"
           ],
           [
+            "コウ",
+            "ずっと煮込まないんだ？"
+          ],
+          [
             "エルナ",
             "色と食感を、残したい。"
           ]
         ],
         "varied",
-        75
+        340,
+        {
+          "scrollPurpose": "説明の後に反応を待つ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "06-remake-cook"
+        }
       ],
       [
-        "reservation",
+        "remake-reservation",
         "Auburn-haired young adult customer in ochre cloak returns at counter with steaming dish; medium Elna listens smiling, lower Kou looks toward seedling plot outside. Same customer as episode three, not Leon.",
         [
           [
@@ -1617,13 +2085,23 @@
           [
             "エルナ",
             "予約、受けていいかな。"
+          ],
+          [
+            "コウ",
+            "出せる数を、先に確かめよう。"
           ]
         ],
         "conversation",
-        90
+        110,
+        {
+          "scrollPurpose": "次の仕事へ状態を渡す",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "07-remake-reservation"
+        }
       ],
       [
-        "limit",
+        "remake-limit",
         "Large quiet partnership scene under blue awning: Elna writes small reservation list with abstract marks, Kou beside her holding crop notebook, small plot at dusk. Serious hopeful sense of limited but workable business.",
         [
           [
@@ -1632,11 +2110,25 @@
           ],
           [
             "エルナ",
+            "仕入れの分も、一緒にね。"
+          ],
+          [
+            "コウ",
+            "できない数は、受けない。"
+          ],
+          [
+            "エルナ",
             "売り切れも、先に伝える。"
           ]
         ],
         "hero",
-        180
+        420,
+        {
+          "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "08-remake-limit"
+        }
       ]
     ]
   },
@@ -1648,9 +2140,13 @@
     "state": "最初の播種から14〜21日。まだ収穫しない。28日見込みを確定日と呼ばない。36日目に十二食を三階集結所へ届ける候補。",
     "scenes": [
       [
-        "leon",
+        "remake-leon",
         "Leon enters diner in navy cloak, scar on right eyebrow, no sword, supply notebook in hand; Elna and Kou behind counter listen. Two panels wider arrival then restrained serious face.",
         [
+          [
+            "エルナ",
+            "補給担当の、レオンさん。"
+          ],
           [
             "レオン",
             "次の遠征に、二十食頼めるか。"
@@ -1658,13 +2154,23 @@
           [
             "レオン",
             "決まった日に、同じ品質で。"
+          ],
+          [
+            "コウ",
+            "畑を、確認させてください。"
           ]
         ],
         "conversation",
-        100
+        100,
+        {
+          "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "01-remake-leon"
+        }
       ],
       [
-        "forecast",
+        "remake-forecast",
         "Kou looks toward small green plot hopefully, Iris beside him holds observation notebook, medium face then narrow hand closeup calendar sketch. No harvested basket, plants still growing.",
         [
           [
@@ -1673,30 +2179,50 @@
           ],
           [
             "イリス",
-            "その『はず』、どこまで確か？"
+            "その「はず」、どこまで確か？"
+          ],
+          [
+            "コウ",
+            "……播いた日だけを、見てた。"
           ]
         ],
         "conversation",
-        90
+        220,
+        {
+          "scrollPurpose": "相手の知識を聞いて受け止める",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "02-remake-forecast"
+        }
       ],
       [
-        "shade",
+        "remake-shade",
         "Same bed has visibly shadier corner under tower rib, plants in that section smaller; Balt points upward at shadow boundary, Kou measures a leaf gently. Two unequal closeups and one contextual view.",
         [
+          [
+            "バルト",
+            "光が違う。日付だけじゃ読めん。"
+          ],
           [
             "コウ",
             "この列は、まだ小さい。"
           ],
           [
-            "バルト",
-            "光が違う。日付だけじゃ読めん。"
+            "コウ",
+            "同じ日に播いても、違うんだな。"
           ]
         ],
         "varied",
-        80
+        70,
+        {
+          "scrollPurpose": "手順と判断を短い動作でつなぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "03-remake-shade"
+        }
       ],
       [
-        "recalculate",
+        "remake-recalculate",
         "Kou and Elna at table with crop notebook, crossed-out estimate and alternative schedule shown only as abstract marks, closeup uncertain thoughtful Kou then Elna listening. No false exact harvest-day projection.",
         [
           [
@@ -1704,15 +2230,25 @@
             "二十八日は、見込みだった。"
           ],
           [
+            "エルナ",
+            "遅れたら、注文はどうする？"
+          ],
+          [
             "コウ",
             "遅れた場合も、計算し直す。"
           ]
         ],
         "detail",
-        130
+        260,
+        {
+          "scrollPurpose": "気づきの前後で速度を落とす",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "04-remake-recalculate"
+        }
       ],
       [
-        "decline",
+        "remake-decline",
         "Three unequal conversation panels at diner: Kou honest serious, Leon watching without anger, Elna anxious then relieved. No humiliation or cartoon villain stance.",
         [
           [
@@ -1722,13 +2258,23 @@
           [
             "レオン",
             "出せる数と、代わりの手を聞こう。"
+          ],
+          [
+            "エルナ",
+            "断るだけで、終わりじゃないんだ。"
           ]
         ],
         "conversation",
-        100
+        120,
+        {
+          "scrollPurpose": "選んだ行動と結果を確かめる",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "05-remake-decline"
+        }
       ],
       [
-        "backup",
+        "remake-backup",
         "Elna negotiates with local produce supplier at back door, Balt nearby discusses existing stock, Kou checks ledger. Baskets represent supplier's mature crops, not main plot magically grown.",
         [
           [
@@ -1738,13 +2284,23 @@
           [
             "コウ",
             "量と値段も、先に決めよう。"
+          ],
+          [
+            "エルナ",
+            "届く日まで、確かめてくる。"
           ]
         ],
         "varied",
-        70
+        340,
+        {
+          "scrollPurpose": "説明の後に反応を待つ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "06-remake-backup"
+        }
       ],
       [
-        "thin",
+        "remake-thin",
         "Two closeups and quiet medium panel: Kou carefully thins crowded SMALL garden-leaf seedlings, Elna holds tray for removed seedlings away from future food; path not trodden over bed. No harvesting immature plants for order.",
         [
           [
@@ -1752,15 +2308,25 @@
             "今日は、この苗を間引く。"
           ],
           [
+            "エルナ",
+            "まだ小さいのに、抜くんだね。"
+          ],
+          [
             "バルト",
             "育つ場所を、残してやれ。"
           ]
         ],
         "detail",
-        85
+        110,
+        {
+          "scrollPurpose": "次の仕事へ状態を渡す",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "07-remake-thin"
+        }
       ],
       [
-        "small-contract",
+        "remake-small-contract",
         "Large dignified scene in diner: Leon offers small plain contract, Kou and Elna accept together, modest vegetable beds seen outside. Hands coherent, no ornate reward trophy or huge coin shower.",
         [
           [
@@ -1768,12 +2334,26 @@
             "まず、一便だけ。十二食だ。"
           ],
           [
+            "レオン",
+            "三十六日目、三階の集結所へ。"
+          ],
+          [
             "コウ",
             "畑も、仕入れも確認します。"
+          ],
+          [
+            "エルナ",
+            "変わったら、先に連絡するね。"
           ]
         ],
         "hero",
-        180
+        420,
+        {
+          "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "08-remake-small-contract"
+        }
       ]
     ]
   },
@@ -1785,7 +2365,7 @@
     "state": "第一播種の育った二区画、計8m²を収穫。遅い一区画は残す。使用可能量は約5.1kgという創作上の実測。全48m²を同時収穫しない。",
     "scenes": [
       [
-        "ready",
+        "remake-ready",
         "First small mature leafy sections at day thirty-five, other later-sown sections still small, one shaded first section smaller; Elna crouches excited, Kou checks one leaf. Gentle morning tower light, no enormous vegetables.",
         [
           [
@@ -1795,25 +2375,49 @@
           [
             "コウ",
             "一株、厨房で確かめよう。"
+          ],
+          [
+            "エルナ",
+            "待ったね。ここまで。"
           ]
         ],
         "varied",
-        130
+        100,
+        {
+          "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "01-remake-ready"
+        }
       ],
       [
-        "cut",
+        "remake-cut",
         "Three unequal hand shots: clean harvest basket on path, Kou cuts garden-leaf crop above soil carefully, leaves placed gently without crushing or dirty roots. Elna watches. Only selected mature sections harvested.",
         [
           [
             "コウ",
             "土を、葉につけないように。"
+          ],
+          [
+            "エルナ",
+            "籠は、道に置いておく。"
+          ],
+          [
+            "コウ",
+            "育った二区画だけ、今日は採ろう。"
           ]
         ],
         "detail",
-        70
+        220,
+        {
+          "scrollPurpose": "相手の知識を聞いて受け止める",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "02-remake-cut"
+        }
       ],
       [
-        "grade",
+        "remake-grade",
         "Elna and Kou sort leaves at designated utility table, usable irregular small leaves in one basket, damaged leaves separately in reject tray. Closeups genuine leaves and hands. Do not present rotten material as food.",
         [
           [
@@ -1823,13 +2427,23 @@
           [
             "エルナ",
             "小さくても、使える葉はある。"
+          ],
+          [
+            "コウ",
+            "傷んだ分とは、混ぜないでおこう。"
           ]
         ],
         "detail",
-        90
+        70,
+        {
+          "scrollPurpose": "手順と判断を短い動作でつなぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "03-remake-grade"
+        }
       ],
       [
-        "weigh",
+        "remake-weigh",
         "Mechanical beam scale weighing baskets, Kou records simple tally in notebook, Elna sees modest harvest. No giant produce mountain; approximately five kilograms usable total across harvested sections.",
         [
           [
@@ -1839,13 +2453,23 @@
           [
             "エルナ",
             "まず、この量で考えよう。"
+          ],
+          [
+            "コウ",
+            "残した区画は、まだ待つ。"
           ]
         ],
         "detail",
-        110
+        260,
+        {
+          "scrollPurpose": "気づきの前後で速度を落とす",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "04-remake-weigh"
+        }
       ],
       [
-        "kitchen",
+        "remake-kitchen",
         "Kitchen washed harvest transferred separately, Elna slices leaves to bite-sized pieces, Kou sets clean bowl; three different-size closeups and medium cooking view. Stable cream apron and blue headscarf.",
         [
           [
@@ -1853,29 +2477,53 @@
             "この大きさなら、使いやすい。"
           ],
           [
+            "コウ",
+            "洗っても、しっかりしてる。"
+          ],
+          [
             "エルナ",
             "食べやすい切り方にしよう。"
           ]
         ],
         "varied",
-        80
+        120,
+        {
+          "scrollPurpose": "選んだ行動と結果を確かめる",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "05-remake-kitchen"
+        }
       ],
       [
-        "meal-reveal",
+        "remake-meal-reveal",
         "Large borderless appetizing hero composition: steaming grain-and-meat bowl topped with bright freshly cooked garden-leaf greens, bowl near auburn young adult customer's rough hands, lower warm eager face before first bite. Food richly drawn, no added text except exact small speech balloon.",
         [
+          [
+            "エルナ",
+            "お待たせしました。"
+          ],
           [
             "客",
             "いただきます。"
           ]
         ],
         "hero",
-        160
+        340,
+        {
+          "scrollPurpose": "説明の後に反応を待つ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "06-remake-meal-reveal"
+        }
       ],
       [
-        "earned",
+        "remake-earned",
         "Three panels: customer enjoys first bite silently; closeup Kou's relieved face after weeks of waiting; Elna beside him with soft pleased expression. Calm adult emotion, no instant buff numbers. Diner warm, crop plot distant.",
         [
+          [
+            "客",
+            "……うまい。"
+          ],
           [
             "コウ",
             "やっと、畑が皿になった。"
@@ -1886,10 +2534,16 @@
           ]
         ],
         "conversation",
-        150
+        110,
+        {
+          "scrollPurpose": "次の仕事へ状態を渡す",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "07-remake-earned"
+        }
       ],
       [
-        "deliver-next",
+        "remake-deliver-next",
         "Warm evening kitchen, Kou and Elna prepare clean containers beside remaining harvest basket, Leon at doorway confirms next morning delivery. No already-packed food stored overnight: preparation is containers and schedule.",
         [
           [
@@ -1897,12 +2551,22 @@
             "採れた。次は、届ける番だ。"
           ],
           [
+            "エルナ",
+            "今日は、容器と段取りだけ。"
+          ],
+          [
             "レオン",
             "明日の便、待っている。"
           ]
         ],
         "hero",
-        180
+        420,
+        {
+          "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "08-remake-deliver-next"
+        }
       ]
     ]
   },
@@ -1914,23 +2578,7 @@
     "state": "十二食を三階の集結所へ。七階へ無検証の長距離配送をしない。料理は当日調理。供給は自家収穫と仕入れ。",
     "scenes": [
       [
-        "twelve",
-        "Elna prepares twelve simple clean covered food containers on kitchen table, Kou confirms at ledger, background bought grain and meat with harvested leaves. Three panels cooking, lids, plan. No overflowing hundred-meal feast.",
-        [
-          [
-            "エルナ",
-            "三階の集結所まで、十二食。"
-          ],
-          [
-            "コウ",
-            "温かいうちに、渡そう。"
-          ]
-        ],
-        "varied",
-        90
-      ],
-      [
-        "tools",
+        "remake-tools",
         "Two designated clean cooking pots, Elna points to kitchen-only utensils, small inset dirty irrigation buckets remain OUTSIDE on separate utility shelf; Kou wipes hands before touching packed food. Two unequal panels, no unsafe mixing.",
         [
           [
@@ -1940,13 +2588,53 @@
           [
             "コウ",
             "畑の桶とは、混ぜない。"
+          ],
+          [
+            "エルナ",
+            "手を洗ったら、蓋をお願い。"
           ]
         ],
         "detail",
-        70
+        220,
+        {
+          "scrollPurpose": "相手の知識を聞いて受け止める",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "02-remake-tools"
+        }
       ],
       [
-        "delay",
+        "remake-twelve",
+        "Elna prepares twelve simple clean covered food containers on kitchen table, Kou confirms at ledger, background bought grain and meat with harvested leaves. Three panels cooking, lids, plan. No overflowing hundred-meal feast.",
+        [
+          [
+            "エルナ",
+            "三階の集結所まで、十二食。"
+          ],
+          [
+            "コウ",
+            "数も、蓋も確認した。"
+          ],
+          [
+            "エルナ",
+            "今日、作った分を届けよう。"
+          ],
+          [
+            "コウ",
+            "温かいうちに、渡そう。"
+          ]
+        ],
+        "varied",
+        100,
+        {
+          "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "01-remake-twelve"
+        }
+      ],
+      [
+        "remake-delay",
         "Stone gate lane inside third floor, Kou with small covered handcart of food, local gate worker in beige points to waiting cargo queue, Elna worried. No fighting or sword attack, delay is transport coordination.",
         [
           [
@@ -1954,15 +2642,25 @@
             "今日は、通行便が遅れる。"
           ],
           [
+            "エルナ",
+            "このままじゃ、冷めてしまう。"
+          ],
+          [
             "コウ",
             "受け渡し場所を、変えられる？"
           ]
         ],
         "conversation",
-        110
+        70,
+        {
+          "scrollPurpose": "手順と判断を短い動作でつなぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "03-remake-delay"
+        }
       ],
       [
-        "contact",
+        "remake-contact",
         "Leon at nearby third-floor assembly entrance instructs assistant while Kou and Elna listen, short hand gesture showing safe nearby pickup location, clear geographical continuity and no gate bypass.",
         [
           [
@@ -1970,15 +2668,25 @@
             "入口側で受け取る。連絡は俺がする。"
           ],
           [
+            "コウ",
+            "三階の、この入口ですね。"
+          ],
+          [
             "エルナ",
             "その場所なら、間に合う。"
           ]
         ],
         "conversation",
-        80
+        260,
+        {
+          "scrollPurpose": "気づきの前後で速度を落とす",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "04-remake-contact"
+        }
       ],
       [
-        "cart",
+        "remake-cart",
         "One tall continuous scene of small handcart rolling down paved lane from diner toward visible nearby third-floor assembly arch, Elna walking beside Kou; closeup careful hands securing covered containers, no exposed food or magical flying cart.",
         [
           [
@@ -1988,13 +2696,23 @@
           [
             "エルナ",
             "食べるところまでが、私たちの仕事。"
+          ],
+          [
+            "コウ",
+            "急いでも、揺らさないように。"
           ]
         ],
         "continuous",
-        100
+        120,
+        {
+          "scrollPurpose": "選んだ行動と結果を確かめる",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "05-remake-cart"
+        }
       ],
       [
-        "proof",
+        "remake-proof",
         "Leon checks all twelve recipients and signs delivery note with abstract marks, closeup professional respectful face, Kou listening with Elna nearby. No vast gold payment or instant huge contract.",
         [
           [
@@ -2002,15 +2720,25 @@
             "十二食、欠けずに届いた。"
           ],
           [
+            "コウ",
+            "受け取りを変えてくれて、助かりました。"
+          ],
+          [
             "レオン",
             "次は、続けられるかを見よう。"
           ]
         ],
         "conversation",
-        100
+        340,
+        {
+          "scrollPurpose": "説明の後に反応を待つ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "06-remake-proof"
+        }
       ],
       [
-        "team-eats",
+        "remake-team-eats",
         "Three unequal panels in assembly courtyard: modest adult adventurer squad receives covered meals, one tired brown-haired swordswoman tastes hot greens and grain, relaxed smiles around low table. Weapons sheathed away from food. No wounded person magically healed.",
         [
           [
@@ -2020,13 +2748,23 @@
           [
             "隊員",
             "帰ったら、店にも寄る。"
+          ],
+          [
+            "エルナ",
+            "待ってるよ。気をつけて。"
           ]
         ],
         "hero",
-        140
+        110,
+        {
+          "scrollPurpose": "次の仕事へ状態を渡す",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "07-remake-team-eats"
+        }
       ],
       [
-        "one-delivery",
+        "remake-one-delivery",
         "Large quiet evening return to diner, empty cleanable containers and handcart, Kou and Elna sit on porch tired but satisfied. Plot not magically mature everywhere. Small lantern warmth under blue awning.",
         [
           [
@@ -2036,10 +2774,20 @@
           [
             "エルナ",
             "今日は、この十二人分でいい。"
+          ],
+          [
+            "コウ",
+            "うん。明日は、片付けからだな。"
           ]
         ],
         "hero",
-        190
+        420,
+        {
+          "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "08-remake-one-delivery"
+        }
       ]
     ]
   },
@@ -2051,7 +2799,7 @@
     "state": "第二播種の一部と遅れていた第一播種区画を収穫。全48m²の安定供給実績はまだない。16食は自給と仕入れを合わせた営業枠。",
     "scenes": [
       [
-        "second-harvest",
+        "remake-second-harvest",
         "Same four beds with age-staggered sections: Kou and Balt harvest newly ready section while earlier harvested section is bare or freshly resown and younger sections remain smaller. Twine markers visible. Two hand closeups plus broad context.",
         [
           [
@@ -2061,13 +2809,23 @@
           [
             "バルト",
             "予定が、少し読めてきたな。"
+          ],
+          [
+            "コウ",
+            "遅れていた列も、今日は採れる。"
           ]
         ],
         "varied",
-        120
+        100,
+        {
+          "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "01-remake-second-harvest"
+        }
       ],
       [
-        "sixteen",
+        "remake-sixteen",
         "Elna at reservation ledger with sixteen simple small marks, Kou beside bought produce basket and own harvest; outside supplier acknowledges arrangement. Two unequal panels include limited supply clearly.",
         [
           [
@@ -2077,13 +2835,23 @@
           [
             "コウ",
             "足りない時の仕入れも、決めてある。"
+          ],
+          [
+            "エルナ",
+            "畑だけで、十六食ではないんだね。"
           ]
         ],
         "conversation",
-        95
+        220,
+        {
+          "scrollPurpose": "相手の知識を聞いて受け止める",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "02-remake-sixteen"
+        }
       ],
       [
-        "partners",
+        "remake-partners",
         "Three intimate panels at clean diner counter: Elna earnest facing Kou, her hand placing shop key on table, Kou thoughtfully reaching to joint crop-and-menu notebook rather than seizing key. Adult respectful partnership.",
         [
           [
@@ -2097,13 +2865,23 @@
           [
             "コウ",
             "働く分も、きちんと分けよう。"
+          ],
+          [
+            "エルナ",
+            "うん。二人で、続けよう。"
           ]
         ],
         "conversation",
-        150
+        70,
+        {
+          "scrollPurpose": "手順と判断を短い動作でつなぐ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "03-remake-partners"
+        }
       ],
       [
-        "maintenance",
+        "remake-maintenance",
         "Iris shows Elna how to open removable irrigation filter housing beside sturdy tank stand; Kou stands back listening, not doing every task. Closeups demonstrate same fitting as episode four; no modern gadgets.",
         [
           [
@@ -2112,14 +2890,28 @@
           ],
           [
             "エルナ",
+            "先に、水を止めるんだね。"
+          ],
+          [
+            "イリス",
+            "網を洗って、戻してから開く。"
+          ],
+          [
+            "エルナ",
             "直し方も、店に残しておく。"
           ]
         ],
         "detail",
-        75
+        260,
+        {
+          "scrollPurpose": "気づきの前後で速度を落とす",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "04-remake-maintenance"
+        }
       ],
       [
-        "seed-future",
+        "remake-seed-future",
         "Balt and Kou beside small separate reserved seed-production strip of garden-leaf plants, a few plants left standing, NOT mature seed harvested already. Hand places plain marker, separate harvest basket for food.",
         [
           [
@@ -2129,13 +2921,23 @@
           [
             "バルト",
             "売る分だけじゃ、先へ続かん。"
+          ],
+          [
+            "コウ",
+            "種ができるまでは、ここで育てよう。"
           ]
         ],
         "varied",
-        100
+        120,
+        {
+          "scrollPurpose": "選んだ行動と結果を確かめる",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "05-remake-seed-future"
+        }
       ],
       [
-        "returner",
+        "remake-returner",
         "Large borderless warm diner entrance view: auburn young adult customer in ochre cloak returns slightly dusty from expedition, Elna smiles at serving window, empty familiar seat in foreground and hot meal ready. Kou assists quietly behind her, no duplicate character heads.",
         [
           [
@@ -2145,13 +2947,23 @@
           [
             "エルナ",
             "おかえり。席、空いてる。"
+          ],
+          [
+            "客",
+            "……ここの匂いだ。"
           ]
         ],
         "hero",
-        160
+        340,
+        {
+          "scrollPurpose": "説明の後に反応を待つ",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "06-remake-returner"
+        }
       ],
       [
-        "share-work",
+        "remake-share-work",
         "Kou and Elna share plain illustrated maintenance/crop notebook on porch, smaller montage Balt observing seedlings and Iris storing spare fitting; characters in separate successive frames, not simultaneously duplicated. Quiet achieved trust, no magical new world omniscience.",
         [
           [
@@ -2160,14 +2972,28 @@
           ],
           [
             "エルナ",
+            "帰る道が、開いた時にも？"
+          ],
+          [
+            "コウ",
+            "うん。明日も、誰かがここで食べられるように。"
+          ],
+          [
+            "エルナ",
             "そのための店、だね。"
           ]
         ],
         "varied",
-        130
+        110,
+        {
+          "scrollPurpose": "次の仕事へ状態を渡す",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "07-remake-share-work"
+        }
       ],
       [
-        "next-floor",
+        "remake-next-floor",
         "Final large scene: Leon at blue-awning diner brings small parchment sketch of colder upper-floor outpost, Kou and Elna look toward distant ascending stone stairs. Warm kitchen foreground and cool stairway beyond establish future, not new farm already built upstairs.",
         [
           [
@@ -2175,12 +3001,26 @@
             "七階でも、この飯を出せるか？"
           ],
           [
+            "エルナ",
+            "ここから運ぶには、遠いね。"
+          ],
+          [
             "コウ",
             "まず、畑と台所を見に行こう。"
+          ],
+          [
+            "レオン",
+            "案内する。確かめてからでいい。"
           ]
         ],
         "hero",
-        230
+        420,
+        {
+          "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+          "canvasWidthPercent": 100,
+          "alignment": "center",
+          "adoptedId": "08-remake-next-floor"
+        }
       ]
     ]
   }

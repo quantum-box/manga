@@ -56,6 +56,10 @@ def prepare():
        '## 各話の因果と満足', '', '| 話 | 時間 | 変化・今回の成果 | 次へ渡すもの |', '| --- | --- | --- | --- |']
     for ep in EPISODES:
         number = ep['number']; directory = BASE / f'episode-{number:02d}'
+        if number > 1 and (directory/'manifest.json').exists() and json.loads((directory/'manifest.json').read_text()).get('revision') == '2026-10-07-following-remake':
+            subprocess.run([sys.executable, str(BASE/'production/remake/package.py'), str(number)], check=True)
+            opening.append(f'| [{number}話：{ep["title"]}](../episode-{number:02d}/storyboard.md) | {ep["time"]} | {ep["change"]} | {ep["state"]} |')
+            continue
         (directory / 'art').mkdir(parents=True, exist_ok=True)
         (directory / 'generation').mkdir(exist_ok=True)
         previous = json.loads((directory/'manifest.json').read_text()) if (directory/'manifest.json').exists() else {'scenes':[]}
@@ -122,6 +126,9 @@ def prepare():
 
 def package(number):
     directory = BASE / f'episode-{number:02d}'
+    if number > 1 and json.loads((directory/'manifest.json').read_text()).get('revision') == '2026-10-07-following-remake':
+        subprocess.run([sys.executable, str(BASE/'production/remake/package.py'), str(number)], check=True)
+        return
     ep = EPISODES[number-1]
     manifest = json.loads((directory/'manifest.json').read_text())
     scenes = []
