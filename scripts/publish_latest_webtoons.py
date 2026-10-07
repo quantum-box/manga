@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish all adopted chapters, verify bytes, then optionally retire old editions."""
+"""Publish one adopted chapter, verify bytes, then optionally retire its old editions."""
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import hashlib
@@ -21,13 +21,18 @@ def sha256(data):
 
 def load_manifest(folder):
     manifest = json.loads((folder / "manifest.json").read_text())
+    if (not isinstance(manifest.get("seriesIds"), list) or len(manifest["seriesIds"]) != 1
+            or not isinstance(manifest.get("chapterNumbers"), list) or len(manifest["chapterNumbers"]) != 1
+            or not isinstance(manifest.get("chapters"), list) or len(manifest["chapters"]) != 1):
+        raise ValueError("A publication manifest must select one series and one episode")
     if sha256((ROOT / "content/catalog.json").read_bytes()) != manifest["catalogSHA256"]:
         raise ValueError("Production catalog changed; regenerate the export")
     from export_latest_webtoons import adopted_chapters
-    expected = adopted_chapters(series_id=manifest.get("seriesID"))
+    expected = adopted_chapters(series_ids=manifest.get("seriesIds"),
+                                chapter_numbers=manifest.get("chapterNumbers"))
     if [(c["id"], c["sourceDigest"]) for c in manifest["chapters"]] != [
             (c["id"], c["sourceDigest"]) for c in expected]:
-        raise ValueError("Export does not match every adopted chapter and its source assets")
+        raise ValueError("Export does not match every adopted chapter in its declared scope and source assets")
     for chapter in manifest["chapters"]:
         episode_id = chapter["id"]
         if not re.fullmatch(r"[a-z0-9-]{1,80}", episode_id):
@@ -94,6 +99,53 @@ def owned_id(episode_id, series):
     return any(episode_id.startswith(s + "-") for s in series) or ("pochi" in series and episode_id == "pochis-handshake")
 
 
+LEGACY_CHAPTER_NUMBERS = {
+    "swordsaint-white-v2": 1,
+    "pochis-handshake": 1,
+    "pochi-page-v1": 1,
+    "pochi-page-v2": 1,
+    "star-lighthouse-v1": 1,
+    "zero-break-v1": 1,
+    "zero-break-v2": 1,
+    "zero-break-v3": 1,
+    "zero-break-v3-lettered-sample": 1,
+    "zero-break-v3-vertical-lettered-sample": 1,
+    "zero-break-v4": 1,
+    "zero-break-v5": 1,
+}
+
+
+def owned_chapter(episode_id, manifest):
+    series = {c["series"] for c in manifest["chapters"]}
+    if not owned_id(episode_id, series):
+        return False
+    if "chapterNumbers" not in manifest:
+        return True
+    number = LEGACY_CHAPTER_NUMBERS.get(episode_id)
+    if number is None:
+        match = next((m for s in series if (m := re.match(re.escape(s) + r"-episode-(\d+)(?:-|$)", episode_id))), None)
+        number = int(match[1]) if match else None
+    return number in manifest["chapterNumbers"]
+
+
+def require_previous_tower_chapter(client, manifest):
+    tower = [c for c in manifest["chapters"] if c["series"] == "tower-forge"]
+    if not tower:
+        return
+    if len(manifest["chapters"]) != 1:
+        raise ValueError("Each Tower Forge release must contain exactly one episode")
+    number = tower[0]["number"]
+    if number <= 1:
+        return
+    from export_latest_webtoons import adopted_chapters
+    previous = adopted_chapters(series_ids=["tower-forge"], chapter_numbers=[number - 1])[0]
+    try:
+        verify_catalog(client, {"chapters": [previous]})
+    except (KeyError, StopIteration, ValueError) as error:
+        raise ValueError(f"Publish and verify Tower Forge episode {number - 1} before episode {number}") from error
+    print(f"Confirmed preceding episode {number - 1} in the public catalog", flush=True)
+
+
 def backup_previous(client, folder, manifest):
     backup = folder / "backup"
     backup.mkdir(exist_ok=True)
@@ -103,7 +155,7 @@ def backup_previous(client, folder, manifest):
     if snapshot.exists():
         old_ids = json.loads(snapshot.read_text())
     else:
-        old_ids = [i for i in client.json("/api/episodes") if owned_id(i, series) and i not in new_ids]
+        old_ids = [i for i in client.json("/api/episodes") if owned_chapter(i, manifest) and i not in new_ids]
         snapshot.write_text(json.dumps(old_ids, indent=2) + "\n")
     for episode_id in old_ids:
         target = backup / episode_id
@@ -154,12 +206,12 @@ def retire_previous(client, folder, manifest, old_ids):
     new_ids = {c["id"] for c in manifest["chapters"]}
     series = {c["series"] for c in manifest["chapters"]}
     current = set(client.json("/api/episodes"))
-    unexpected = {i for i in current if owned_id(i, series)} - new_ids - set(old_ids)
+    unexpected = {i for i in current if owned_chapter(i, manifest)} - new_ids - set(old_ids)
     if unexpected or not new_ids <= current:
         raise ValueError("Public editions changed concurrently; stop before cleanup")
     results = []
     for episode_id in old_ids:
-        if episode_id in new_ids or not owned_id(episode_id, series):
+        if episode_id in new_ids or not owned_chapter(episode_id, manifest):
             raise ValueError("Cleanup would remove an adopted or unrelated edition")
         payload = folder / "backup" / episode_id / "episode.json"
         episode = json.loads(payload.read_text())
@@ -203,6 +255,8 @@ def main():
     if args.verify_only and args.retire_previous:
         parser.error("Verification cannot retire editions")
     client = Client(manifest["baseURL"], token)
+    if not args.verify_only:
+        require_previous_tower_chapter(client, manifest)
     old_ids = [] if args.verify_only else backup_previous(client, folder, manifest)
     checks = []
     for chapter in manifest["chapters"]:

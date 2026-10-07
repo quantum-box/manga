@@ -51,7 +51,11 @@ def main():
             parts.append(f'<a href="../episode-{n+1:02d}/index.html">{next_label}</a>')
         parts.append('</footer></main></html>')
         (d/'index.html').write_text('\n'.join(parts),encoding='utf-8')
-        subprocess.run(['python3',str(PACKAGER),str(d/'index.html'),'--output',str(d/'reader.html'),'--force'],check=True,capture_output=True)
+        if ep.get('revision') == 'continuation-2026-10-07':
+            # Keep one copy of the raster bytes in Git; standalone export is available on demand.
+            (d/'reader.html').write_bytes((d/'index.html').read_bytes())
+        else:
+            subprocess.run(['python3',str(PACKAGER),str(d/'index.html'),'--output',str(d/'reader.html'),'--force'],check=True,capture_output=True)
         (d/'assets.json').write_text(json.dumps(hashes,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         ready.append(n)
     cards=[]
