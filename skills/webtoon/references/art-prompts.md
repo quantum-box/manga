@@ -2,6 +2,8 @@
 
 画像生成には同じキャラクター仕様と参照画像を渡し、場面固有の構成・状態・伏せる情報を追加する。単に「縦長のWebtoon」と頼むと、全幅の矩形を縦へ積むだけの構成や目的のない均等なコマ列に戻りやすい。横長・横並び・斜めのコマも、会話や動作の役割に合うところで使う。
 
+作画前に[余白とスクロール](scroll-pacing.md)で間の位置を決める。待たせる前後の情報を一枚の漫画ページへ詰めず、今回の素材で見せる範囲だけを生成する。横並びや斜め枠が必要でも、全素材を多段の漫画ページへ固定しない。
+
 日本語の会話は吹き出しとセリフを絵に含めて生成する。縦書きの列指定は[承認された実例](vertical-lettering.md)を参照する。吹き出しの数や位置は各場面の発話と構図から決める。
 
 ## 絵柄と感情を別々に指定する
@@ -54,6 +56,19 @@ Do not include later replies, new locations, or every character from the referen
 文字を個別編集する指定などで後から組版する場合だけ、上の `Text` を「No text or speech balloons; reserve [region] for separately typeset dialogue.」へ置き換える。無言の場面は明示して文字なしで生成する。
 
 ## 構成の指示を変える
+
+間の前後を別素材にするときは、次のように作画と組版の役割を分けて指定する。空白の中へ飾りや追加コマを生成しない。長さはリーダーの実際の表示で調整する。
+
+```text
+Scroll beat for THIS asset: [cue / reaction / reveal / aftermath].
+Show only: [the information the reader sees at this moment].
+End this asset before: [the reply, full armor, identity or source revealed later].
+Pacing plan: after this asset, the reader crosses [a brief breath / a long quiet gap / a sparse continuous background] before [the next information]. The gap is arranged in the reader; do not compress both moments into a multi-panel page.
+Edge treatment: [blend into the chosen page color / continue the background motif / retain a deliberate border].
+Do not include later beats, bonus inset panels, a decorative grid, or a complete print-manga page.
+```
+
+余白そのものをこの原画へ描く場合だけ、その領域と地色・背景の疎さを指定する。待ちの目的と次に見る情報を渡し、全画像に同じ大余白を追加する指示にしない。
 
 複数のコマを一枚へ生成するときは「大小をつける」だけで済ませず、各コマの役割と相対的な幅・高さ・配置・枠の有無を指示する。たとえば「全幅の状況確認→右寄せの会話→左寄せの浅い目元→大きな名乗り」。小コマはその面積に合う対象へ描き直し、全景を縮めたり絵を押し潰したりしない。生成後は文字だけでなく、本当に形と面積に差が出たか見る。[大小を直した実例](context-and-dialogue.md)の数値や配列は今回だけの選択。
 
