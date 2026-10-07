@@ -41,9 +41,14 @@ def check_source_references(root=ROOT):
         value = value.removeprefix("examples/tower-forge/")
         return str((root / value).resolve().relative_to(root.resolve()))
     records = {}
-    for name in ["asset-provenance.json", "revision-provenance.json"]:
+    for name in ["asset-provenance.json", "repairs.json", "revision-provenance.json"]:
         for record in json.loads((root / "production" / name).read_text()):
             key = record["adopted"] if "adopted" in record else f"episode-{record['episode']:02d}/" + record["file"]
+            if name == "repairs.json":
+                key = str(Path(f"episode-{record['episode']:02d}") / key)
+                record = dict(record)
+                record["references"] = list(record.get("references", [])) + [
+                    str(Path(f"episode-{record['episode']:02d}") / record["edit_source"])]
             records[normalized(key)] = record
     adopted = json.loads((root / "production/adopted-assets.json").read_text())
     pending = []

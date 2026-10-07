@@ -19,6 +19,7 @@ class CurrentGenerationInputs(unittest.TestCase):
         self.root = Path(self.temp.name)
         (self.root / "production").mkdir()
         self.write_json("production/adopted-assets.json", {})
+        self.write_json("production/repairs.json", [])
         self.write_json("production/revision-provenance.json", [])
         self.add_image("episode-01/art/current.png", b"current artwork")
         self.add_image("episode-02/art/shared.png", b"shared generation input")
@@ -63,6 +64,25 @@ class CurrentGenerationInputs(unittest.TestCase):
     def test_unreachable_old_record_does_not_require_obsolete_art(self):
         self.records.append(dict(adopted="episode-01/art/obsolete.png", sha256="old", references=[]))
         self.assertNotIn("episode-01/art/obsolete.png", self.check())
+
+    def make_repaired_override(self):
+        self.add_image("episode-01/art/repaired.png", b"repaired artwork")
+        self.write_json("production/adopted-assets.json", {"1-1": dict(file="art/repaired.png")})
+        self.write_json("production/repairs.json", [dict(
+            episode=1, scene=1, adopted="art/repaired.png", edit_source="art/current.png",
+            sha256=hashlib.sha256(b"repaired artwork").hexdigest())])
+
+    def test_repair_only_provenance_checks_missing_edit_source(self):
+        self.make_repaired_override()
+        (self.root / "episode-01/art/current.png").unlink()
+        with self.assertRaisesRegex(ValueError, "Missing current generation input: episode-01/art/current.png"):
+            self.check()
+
+    def test_repair_only_provenance_checks_changed_edit_source(self):
+        self.make_repaired_override()
+        (self.root / "episode-01/art/current.png").write_bytes(b"changed edit source")
+        with self.assertRaisesRegex(ValueError, "Generation input bytes differ: episode-01/art/current.png"):
+            self.check()
 
 
 class AdoptedRepositoryInputs(unittest.TestCase):
