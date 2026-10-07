@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export every adopted chapter at phone width, with revision IDs and provenance."""
+"""Export one adopted chapter at phone width, with revision IDs and provenance."""
 import argparse
 import hashlib
 import io
@@ -17,14 +17,34 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
-def adopted_chapters(root=ROOT):
+def adopted_chapters(root=ROOT, series_ids=None, chapter_numbers=None):
     root = root.resolve()
     catalog = json.loads((root / "content/catalog.json").read_text())
+    if series_ids is not None:
+        if not isinstance(series_ids, list) or not series_ids or any(not isinstance(s, str) for s in series_ids):
+            raise ValueError("Series scope must be a nonempty list of series IDs")
+        available = {"heavenly-demon" if t["id"] == "heavenly-demon-ngplus" else t["id"] for t in catalog}
+        if len(set(series_ids)) != len(series_ids) or set(series_ids) - available:
+            raise ValueError("Series scope contains a duplicate or unknown series ID")
+    if chapter_numbers is not None:
+        if (series_ids is None or len(series_ids) != 1 or not isinstance(chapter_numbers, list)
+                or not chapter_numbers or any(type(n) is not int or n < 1 for n in chapter_numbers)
+                or len(set(chapter_numbers)) != len(chapter_numbers)):
+            raise ValueError("Chapter scope requires one series and distinct positive chapter numbers")
+        numbers = {e["number"] for t in catalog
+                   if ("heavenly-demon" if t["id"] == "heavenly-demon-ngplus" else t["id"]) == series_ids[0]
+                   for e in t["episodes"]}
+        if set(chapter_numbers) - numbers:
+            raise ValueError("Chapter scope contains an unknown chapter")
     chapters = []
     for title in catalog:
         seen = set()
         series = "heavenly-demon" if title["id"] == "heavenly-demon-ngplus" else title["id"]
+        if series_ids is not None and series not in series_ids:
+            continue
         for episode in title["episodes"]:
+            if chapter_numbers is not None and episode["number"] not in chapter_numbers:
+                continue
             if episode["number"] in seen:
                 continue
             seen.add(episode["number"])
@@ -42,10 +62,17 @@ def adopted_chapters(root=ROOT):
     return chapters
 
 
-def export(output, node="node", chromium=None):
+def export(output, node="node", chromium=None, series_ids=None, chapter_numbers=None):
+    if (not isinstance(series_ids, list) or len(series_ids) != 1
+            or not isinstance(chapter_numbers, list) or len(chapter_numbers) != 1):
+        raise ValueError("Select exactly one series and one episode per release")
+    if output.exists() and any(output.iterdir()):
+        raise ValueError("Use a new empty output directory for each release")
+    chapters = adopted_chapters(series_ids=series_ids, chapter_numbers=chapter_numbers)
+    if len(chapters) != 1:
+        raise ValueError("The selected scope must resolve to exactly one episode")
     from PIL import Image
     output.mkdir(parents=True, exist_ok=True)
-    chapters = adopted_chapters()
     sources = {c["id"]: dict(source=str(ROOT / c["source"]), subtitle=c["subtitle"],
                               sourceDigest=c["sourceDigest"], bodyOnly=True) for c in chapters}
     source_list = output / "sources.json"
@@ -90,6 +117,7 @@ def export(output, node="node", chromium=None):
         chapter.update(assets=assets, cssHeight=metadata["cssHeight"], pixelWidth=1170)
         print(f"Prepared {chapter['id']}: {len(blocks)-1} strips", flush=True)
     manifest = {"baseURL": "https://manga-server.txcloud.app", "chapters": chapters,
+                "seriesIds": series_ids, "chapterNumbers": chapter_numbers,
                 "catalogSHA256": digest((ROOT / "content/catalog.json").read_bytes())}
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     print(f"Ready: {len(chapters)} adopted chapters in {output}", flush=True)
@@ -100,5 +128,8 @@ if __name__ == "__main__":
     parser.add_argument("output", type=Path)
     parser.add_argument("--node", default=os.environ.get("NODE_EXECUTABLE", "node"))
     parser.add_argument("--chromium")
+    parser.add_argument("--series", action="append", required=True, help="Select one series; repeated options are rejected")
+    parser.add_argument("--episode", type=int, action="append", required=True,
+                        help="Select one episode; repeated options are rejected")
     args = parser.parse_args()
-    export(args.output.resolve(), args.node, args.chromium)
+    export(args.output.resolve(), args.node, args.chromium, args.series, args.episode)
