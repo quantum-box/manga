@@ -1,28 +1,14 @@
 ## 01 証人の道
 
-採用原画：art/rebuild-01.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-01-letters-clear.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: illustration-story. Finished ORIGINAL Japanese martial-fantasy Webtoon 天魔、二周目。, smartphone scroll art with integrated Japanese lettering. Reference image defines ONLY Han Yun's face, hair, clothing and crisp expressive anime cel shading; DO NOT copy its layout, injuries beyond specified, background or story. Han Yun: young adult 20, tousled BLACK hair SHORT LOW ponytail, TEAL eyes, pale skin, off-white Chinese martial training robe with CHARCOAL lapel and DARK RED sash, black cloth shoes, subtle bruise on anatomical RIGHT cheek. Kind uncertain attentive; no smug sadistic grin. Master Sei Kou when called for: 50, salt-and-pepper high topknot, NAVY robe IVORY trim. Elder Luo when called for: 60, LONG GRAY beard, gray-white high topknot, DARK PLUM robe BLACK trim. Smith So Rin when called for: 20 woman BLACK BOB, AMBER eyes, SMALL BRONZE hairclip, IVORY sleeves, TEAL vest, DARK apron. Include only people specified in the shot; no other casts, no sword for hero, no reward ornaments. Chinese martial fantasy, not samurai. True vertical Japanese spoken text, upright glyphs top-to-bottom, columns RIGHT-to-LEFT; EXACT supplied text only. Balloon tails to speaker, thought dots to head, offscreen floating voice without tail. Dark crisp Japanese manga gothic with generous padding, Use generously sized printed dialogue. Letter glyph height 70px per1024px artwork width, or50px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Ordinary speech smooth oval, formal speech rounded tall rectangular with tail, soft/weak gently irregular thin contour, shout strong jagged contour with clear inset, thought soft cloud with dots. Keep faces and hands unobscured. Draw sound effects as expressive ink OUTSIDE speech balloons. No headings, panel labels, numbers, extra writing, translations, watermark. White #ffffff page edges, expressive clean ink and saturated cel shading, no photoreal painting.
-Asset 8.01 証人の道. Beat purpose: 危険の位置と退避先を最初に置く.
-Composition: Tall portrait aspect about2:3, TWO unequal moments reading top-to-bottom with generous white separation. Smaller close-up versus larger medium frame; no equal grid.
-This asset ONLY:
-Top WIDE daylight stone corridor toward public hall, hero center carrying cloth bundle, smith behind left, master ahead left by hall. Elder and TWO gray-robed guards block path at RIGHT. Safety is open hall left behind master. Bottom hero stops, sees guards look toward smith, not merely toward himself.
-Exact dialogue, each quoted fullname is authoritative; slash-separated columns are instructions NOT printed:
-1. Speaker 羅長老. Full text: その娘を、こちらへ。. Columns in right-to-left order: その娘を、/こちらへ。. Voice/balloon: normal.
-Sound effects independently: none.
-Hidden/continuity constraints: 最大3対3。百人戦にしない。. Do not render planning notes. No events from any other asset.
-Use generously sized printed dialogue. Letter glyph height 70px per1024px artwork width, or50px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space.
-Continuity: hero wrists are FREED since episode1. NO ROPE binding anywhere. No blade or scabbard on hero. Master has mostly DARK salt-and-pepper topknot and SHORT neat dark-gray beard, visibly different from Elder's long WHITE beard. References indicate identities only; do not transplant their actions or courtyard into this scene.
-Hero washed in episode4: offwhite robe is CLEAN, no mud or dirt stains. Keep one faint right-cheek bruise and subtle wrist marks. No dramatic blood wounds.
-EVIDENCE BUNDLE invariant: ONE compact OFFWHITE cloth bundle tied with its OWN cloth corners, small enough for two cupped palms. No external rope, no dark bedroll or large luggage; no shoulder bag before episode10. Main storehouse door ALWAYS CLOSED; record cabinet is a different SMALL cabinet outside.
-So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer RIGHT in frontal view); never mirror the clip to her right temple. Keep her clothes/work apron consistent.
-For episode8 GUARDS identity if visible: attacker adult thin moustache, gray martial robe BLUE sash, black topknot, one silver straight sword. Second guard round clean-shaven face, gray robe BROWN sash, black topknot, empty hands. Keep these two distinct; elder plum robe is a THIRD distinct man, never a duplicate. No guard acts beyond described beat.
+Precise TOP-frame background edit, preserve ALL giant upright vertical dialogue その娘を、こちらへ。, same size, smooth balloon/tail to elderly long-white-bearded purple Luo, top/bottom frames, all main hero/master/smith identities, one white cloth evidence bundle hero holds. TOP: REMOVE ONLY the small partly hidden moustached guard whose face appears under the balloon's tail between white-robed HERO and purple ELDER. Reconstruct natural corridor behind balloon/elder there, so NO face is obscured beneath balloon. Leave the visible round clean-shaven gray-robed guard on far viewer RIGHT, purple elder and his extended hand, navy master/So Rin left all unchanged. The removed TOP background guard is outside camera for this shot but still present in BOTTOM. BOTTOM: both guard faces and So Rin/hero unchanged. No new people, blades or bundles, no text change, no shrink. This makes all onscreen faces unobscured.
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-f9b42594-6efd-4207-935a-8753a5e66b1e.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-994ca590-5011-48de-827b-284987d8cb20.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/inputs/exec-4cf3e8a9-5b49-4e41-95ea-20f3c35eaa41.png`
 
 ## 02 先に守る物
 
@@ -34,7 +20,7 @@ Edit this finished comic with ONE precise middle-frame correction. Preserve ALL 
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-cfe4035c-aa21-451f-8911-ff5f17553b49.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-08/art/rebuild-02-route.png`
+入力資料：`production/inputs/exec-b483a7dc-0a55-4412-a691-76c472b56969.png`
 
 ## 03 刃の来る方
 
@@ -46,7 +32,7 @@ Edit this manga original to fix evidence and intervention continuity ONLY. REMOV
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-a1b4ea8e-c543-4bcd-b3ee-7a08245cac1c.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-08/art/rebuild-03.png`
+入力資料：`production/inputs/exec-40d68a83-52f3-4b72-b42a-0d7dba2d8402.png`
 
 ## 04 抜かない戦い
 
@@ -72,7 +58,7 @@ For episode8 GUARDS identity if visible: attacker adult thin moustache, gray mar
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-d9f6fb79-5953-49eb-888a-092b1a220720.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 05 守ったあと
 
@@ -98,7 +84,7 @@ For episode8 GUARDS identity if visible: attacker adult thin moustache, gray mar
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-f9ac9f70-5a3d-4c5a-bf44-f43f50508f77.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-03/art/rebuild-03-table.png`
+入力資料：`production/cast-reference.png`, `episode-03/art/rebuild-03-table.png`
 
 ## 06 人の前へ
 
@@ -110,4 +96,4 @@ Edit ONLY the duplicate offwhite bundle held by So Rin in BOTTOM panel. Remove t
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-27e1d35f-bc70-4525-9297-d69df540e92b.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-08/art/rebuild-06.png`
+入力資料：`production/inputs/exec-0d1d29d0-9b47-4365-ae93-bba233ca2df6.png`

@@ -19,7 +19,7 @@ Hero washed in episode4: offwhite robe is CLEAN, no mud or dirt stains. Keep one
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-9d791701-807c-4c64-bf58-d94ba98bfe93.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 02 誰から
 
@@ -31,7 +31,7 @@ Precisely edit this finished 2-frame comic: move So Rin's ONE small bronze hairc
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-56f612a9-b18d-42ca-905c-f54979f44436.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-06/art/rebuild-02.png`
+入力資料：`production/inputs/exec-5cccda68-67a4-4b97-89ff-e34c8c2f28f4.png`
 
 ## 03 割れ目の写し
 
@@ -54,7 +54,7 @@ Hero washed in episode4: offwhite robe is CLEAN, no mud or dirt stains. Keep one
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-067c7441-3790-4dc0-9b7c-c0c18ecfd24d.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 04 日付のずれ
 
@@ -66,7 +66,7 @@ Edit ONLY the two colored objects drawn ON THE PAPER in this manga original. The
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-63e2045c-5f81-4bd3-9275-887328a053ac.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-06/art/rebuild-04-evidence.png`
+入力資料：`production/inputs/exec-f4a7f216-b007-4e2e-8a5f-9e39f223962b.png`
 
 ## 05 証拠を包む
 
@@ -90,7 +90,7 @@ Hero washed in episode4: offwhite robe is CLEAN, no mud or dirt stains. Keep one
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-bd8d5213-e7f2-4d63-a5bc-8be00db63558.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 06 次に確かめること
 
@@ -102,4 +102,4 @@ Edit ONLY incorrect large dark bedroll held by hero in FIRST manga image's botto
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-6ea40465-4f5f-458e-99c3-9498fdd98244.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-06/art/rebuild-06.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-06/art/rebuild-05.png`
+入力資料：`production/inputs/exec-f819875a-7a0f-4da6-8057-f612b80effe4.png`, `episode-06/art/rebuild-05.png`

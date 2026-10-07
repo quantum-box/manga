@@ -35,7 +35,7 @@
 
 原画：art/rebuild-02-causal.png 887×1774。表示窓：[{"range": [0, 1774], "gap": 180}]
 
-効果音（発話と別）：パキン at broken blade; ブン at rushing fist
+効果音（発話と別）：パキン、ブン
 
 発話：羅長老「妖術か！」／縦列 右→左：妖術か！／声：shout
 
@@ -51,7 +51,7 @@
 
 原画：art/rebuild-03.png 887×1774。表示窓：[{"range": [0, 1774], "gap": 140}]
 
-効果音（発話と別）：ドン at left-palm contact, broad heavy ink expanding into white bottom edge
+効果音（発話と別）：ドン
 
 発話：ハン・ユン「来ないで！」／縦列 右→左：来ないで！／声：shout
 
@@ -67,7 +67,7 @@
 
 原画：art/rebuild-04.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 280}]
 
-効果音（発話と別）：ご…… fading continuation
+効果音（発話と別）：ご……
 
 発話：なし。
 
@@ -107,7 +107,7 @@
 
 読者の理解／間：安全・手の加減・安堵を同じ場所で描く
 
-描くもの／カメラ／立ち位置：Same courtyard shaded low stone steps. Top hero sits with shoulders slumped, hands free rope marks. Middle small close-up accepts one plain ceramic cup of WATER using BOTH hands carefully, cup unbroken, master offscreen. Bottom large quiet hero sips and breathes, eyelids wet, left cheek bruise. No food, no system, no new mystery.
+描くもの／カメラ／立ち位置：Same courtyard shaded low stone steps. Top hero sits with shoulders slumped, hands free rope marks. Middle small close-up accepts one plain ceramic cup of WATER using BOTH hands carefully, cup unbroken, master offscreen. Bottom large quiet hero sips and breathes, eyelids wet, RIGHT cheek bruise. No food, no system, no new mystery.
 
 伏せる情報／状態：飲むまでの器と手を維持。
 
@@ -115,6 +115,6 @@
 
 原画：art/rebuild-07.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 440}]
 
-効果音（発話と別）：small すぅ near breathing, no sipping gag
+効果音（発話と別）：すぅ
 
 発話：ハン・ユン「……帰りたい。」／縦列 右→左：……/帰りたい。／声：thought

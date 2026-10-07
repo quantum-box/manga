@@ -18,7 +18,7 @@
 
 原画：art/rebuild-01-final-letters.png 1024×1536。表示窓：[{"range": [0, 659], "gap": 0, "lines": [0], "sound": "none", "description": "学生がノートを閉じる"}, {"range": [671, 1536], "gap": 95, "lines": [], "sound": "none", "description": "ゲームを開く学生"}]
 
-効果音（発話と別）：no sound
+効果音（発話と別）：none
 
 発話：学生「あと一回だけ。」／縦列 右→左：あと一回/だけ。／声：soft
 
@@ -26,7 +26,7 @@
 
 読者の理解／間：名前・拘束・場所を順に掴む
 
-描くもの／カメラ／立ち位置：Daylight Chinese martial sect stone execution courtyard. TOP wide establish hero kneeling foreground, elder behind to his right holding one SILVER straight sword, disciples well away at left. MIDDLE close bound wrists IN FRONT, coarse rope biting skin. BOTTOM larger terrified hero face looking up toward elder, dusty robes and left cheek bruise. Hands still bound throughout.
+描くもの／カメラ／立ち位置：Daylight Chinese martial sect stone execution courtyard. TOP wide establish hero kneeling foreground, elder behind to his right holding one SILVER straight sword, disciples well away at left. MIDDLE close bound wrists IN FRONT, coarse rope biting skin. BOTTOM larger terrified hero face looking up toward elder, dusty robes and RIGHT cheek bruise. Hands still bound throughout.
 
 伏せる情報／状態：身体の状態、羅の位置と剣。能力はまだ出さない。
 
@@ -34,7 +34,7 @@
 
 原画：art/rebuild-02-letters.png 724×2172。表示窓：[{"range": [0, 889], "gap": 220, "lines": [0], "sound": "none", "description": "処刑広場。羅長老が剣を持ち、弟子は跪く"}, {"range": [899, 1370], "gap": 55, "lines": [], "sound": "ぎゅ", "description": "前で縛られた痛む手首"}, {"range": [1375, 2172], "gap": 170, "lines": [1], "sound": "none", "description": "見知らぬ場所を見上げる弟子の顔"}]
 
-効果音（発話と別）：tiny ぎゅ near rope, not in balloon
+効果音（発話と別）：ぎゅ
 
 発話：羅長老「ハン・ユン。」／縦列 右→左：ハン・/ユン。／声：normal
 ハン・ユン「待って。ここは？」／縦列 右→左：待って。/ここは？／声：weak
@@ -68,7 +68,7 @@
 
 原画：art/rebuild-04-readable.png 725×2169。表示窓：[{"range": [0, 626], "gap": 260, "lines": [], "sound": "none", "description": "縛られた手の前へ、本人だけに見える投影。引き継ぎ完了、LV.999"}, {"range": [631, 1076], "gap": 150, "lines": [], "sound": "プツ", "description": "右の指を動かして縄を切る"}, {"range": [1081, 2169], "gap": 360, "lines": [0], "sound": "none", "description": "切れた縄が落ち、自由になった手を見つめる"}]
 
-効果音（発話と別）：プツ near severing rope; system text only as specified
+効果音（発話と別）：プツ
 
 発話：ハン・ユン「俺の、セーブ？」／縦列 右→左：俺の、/セーブ？／声：thought
 
@@ -84,7 +84,7 @@
 
 原画：art/rebuild-05-readable.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 580}]
 
-効果音（発話と別）：ヒュッ along descending blade upper-middle
+効果音（発話と別）：ヒュッ
 
 発話：ハン・ユン「止まって。」／縦列 右→左：止まって。／声：thought
 
@@ -100,7 +100,7 @@
 
 原画：art/rebuild-ring.png 941×1672。表示窓：[{"range": [0, 1672], "gap": 220}]
 
-効果音（発話と別）：きぃん（止まった刃から発生し白い空間で減衰）
+効果音（発話と別）：きぃん
 
 発話：なし。
 
@@ -116,6 +116,6 @@
 
 原画：art/rebuild-06-readable.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 650}]
 
-効果音（発話と別）：none（前の刃の響きはこの原画より前に終える）
+効果音（発話と別）：none
 
 発話：ハン・ユン「……止まった。」／縦列 右→左：……/止まった。／声：weak

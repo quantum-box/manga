@@ -28,7 +28,6 @@ def build(e):
     n = e['number']
     folder = ROOT / f'episode-{n:02d}'
     layout = read(PRODUCTION / 'layout.json').get(str(n), {})
-    jobs = {j['id']: j for j in read(PRODUCTION / 'jobs.json') if j['episode'] == n}
     generations = read(PRODUCTION / 'generation.json')
     content, artwork, order, prompts = [], [], [], []
     board = [f"# 天魔、二周目。 第{n}話 {e['title']}\n\n変化：{e['change']}\n\n開始：{e['start']}\n\n終了：{e['end']}"]
@@ -64,7 +63,7 @@ def build(e):
             order.append({'id':key,'asset':ident,'range':[lo,hi],'gap390':after,'purpose':purpose})
         board.append(f'## {ident} {name}\n\n読者の理解／間：{purpose}\n\n描くもの／カメラ／立ち位置：{art}\n\n伏せる情報／状態：{hidden}\n\n作画形式：{shape}。読む順は上から下、同段の小コマは右から左。\n\n原画：{leaf} {w}×{h}。表示窓：{json.dumps(windows,ensure_ascii=False)}\n\n効果音（発話と別）：{sound}\n\n発話：'+ ('\n'.join(f'{speaker}「{full}」／縦列 右→左：{cols}／声：{voice}' for speaker,full,cols,voice in lines) or 'なし。'))
         runs = [r for r in generations if r.get('episode') == n and r.get('id') == ident]
-        adopted_runs = [r for r in runs if Path(r['adopted']) == path]
+        adopted_runs = [r for r in runs if (ROOT / r['adopted']) == path]
         if not adopted_runs:
             raise ValueError(f'Missing adopted generation: {path}')
         run = adopted_runs[-1]

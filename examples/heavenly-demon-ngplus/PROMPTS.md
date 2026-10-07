@@ -1,20 +1,16 @@
-# 天魔、二周目。 第2〜10話の生成指示
+# 採用原画の生成指示
 
-組み込み image_gen で作画と縦書きセリフを一緒に生成。各話の記録は実際に使った指示、参照画像、原本、採用ファイルを含む。第1話の制作記録は同話のREADMEに保存。
+絵・吹き出し・縦書き台詞を組み込み image_gen で一体生成した。原本は無加工。実際に採用した編集指示は各話に収録する。
 
-- [第2話の生成指示](episode-02/PROMPTS.md)
-- [第3話の生成指示](episode-03/PROMPTS.md)
-- [第4話の生成指示](episode-04/PROMPTS.md)
-- [第5話の生成指示](episode-05/PROMPTS.md)
-- [第6話の生成指示](episode-06/PROMPTS.md)
-- [第7話の生成指示](episode-07/PROMPTS.md)
-- [第8話の生成指示](episode-08/PROMPTS.md)
-- [第9話の生成指示](episode-09/PROMPTS.md)
-- [第10話の生成指示](episode-10/PROMPTS.md)
+- [第1話 死にたくない](episode-01/PROMPTS.md)
+- [第2話 強い手で、壊さない](episode-02/PROMPTS.md)
+- [第3話 俺の罪は誰のもの](episode-03/PROMPTS.md)
+- [第4話 逃げる前に](episode-04/PROMPTS.md)
+- [第5話 鍛冶場の証人](episode-05/PROMPTS.md)
+- [第6話 同じ傷、違う証拠](episode-06/PROMPTS.md)
+- [第7話 聞かなかった声](episode-07/PROMPTS.md)
+- [第8話 刃を抜かずに](episode-08/PROMPTS.md)
+- [第9話 雑役弟子の名前](episode-09/PROMPTS.md)
+- [第10話 門の外へ](episode-10/PROMPTS.md)
 
-[共通の人物と作画仕様](production-spec.json)
-
-
-## 2026-10-06の追加作画
-
-全話の増補内容は[PACING-REVISION.md](PACING-REVISION.md)。第1話の追加2枚は[個別指示](episode-01/PACING-PROMPTS.md)。第2〜10話は各話PROMPTS.mdの場面4に、実行した指示と参照元を収録。第8話の最終文字修正は[修正指示](episode-08/PACING-LETTERING-PROMPTS.md)。
+[生成記録](production/generation.json)は採用原画と必要な編集入力素材の記録。adopted と references は本作品を基準にした相対パス。original は画像生成ツールの保存原本の識別情報。SHA-256と現地でのバイト照合を併記する。旧公開版はGit履歴へ残す。

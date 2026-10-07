@@ -96,7 +96,7 @@
 
 作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-06-speaker.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 350}]
+原画：art/rebuild-06-speaker-letters.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 350}]
 
 効果音（発話と別）：none
 

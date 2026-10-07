@@ -30,7 +30,7 @@ Edit this manga original, preserve tall composition, clean anime ink, Japanese t
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-64b0be57-cbca-40a2-811b-fb4a3b2dd7c3.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-02/art/rebuild-02.png`
+入力資料：`production/inputs/exec-29e06bc6-5587-4474-a183-818f7a2c3e98.png`
 
 ## 03 身を守る掌
 
@@ -72,7 +72,7 @@ Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork widt
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-207e0765-beea-4fed-b15e-687e4a92bac6.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/hero-reference.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-01/art/rebuild-02-letters.png`
+入力資料：`production/hero-reference.png`, `episode-01/art/rebuild-02-letters.png`
 
 ## 05 息をしている
 
@@ -93,7 +93,7 @@ Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork widt
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-02bf090c-aecd-42ba-b157-3eb3e327f958.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/hero-reference.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-01/art/rebuild-02-letters.png`
+入力資料：`production/hero-reference.png`, `episode-01/art/rebuild-02-letters.png`
 
 ## 06 処刑の停止
 
@@ -105,7 +105,7 @@ Edit this manga original. Preserve panel layout, complete integrated Japanese �
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-5e6eb6ab-82f3-4177-82e8-428b76778020.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-02/art/rebuild-06.png`
+入力資料：`production/inputs/exec-aaf36f5d-2e32-4ace-b743-9347f6cfe3b6.png`
 
 ## 07 水の温度
 
@@ -126,4 +126,4 @@ Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork widt
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-2a48a132-077c-44bf-8021-37e917520aff.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/hero-reference.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-01/art/rebuild-02-letters.png`
+入力資料：`production/hero-reference.png`, `episode-01/art/rebuild-02-letters.png`

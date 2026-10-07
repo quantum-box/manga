@@ -18,7 +18,7 @@
 
 原画：art/rebuild-01.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 0}]
 
-効果音（発話と別）：コツ、コツ on stone upper half
+効果音（発話と別）：コツ、コツ
 
 発話：なし。
 
@@ -26,15 +26,15 @@
 
 読者の理解／間：記録の保管・提示・内容を順に理解する
 
-描くもの／カメラ／立ち位置：Top master unlocks only SMALL separate wall record cabinet OUTSIDE main sealed door. Middle pulls one simple daily duty ledger, main big door stays shut. Bottom readable horizontal ledger entry ハン・ユン / 外廊下の清掃. Hero and smith over-shoulder edges, not huge tiny text paragraphs.
+描くもの／カメラ／立ち位置：Top master unlocks only SMALL separate wall record cabinet OUTSIDE main sealed door. Middle pulls one simple daily duty ledger, main big door stays shut. Bottom readable horizontal ledger entry ハン・ユン / 外廊下の清掃. Hero and smith over-shoulder edges, not huge tiny text paragraphs. In the TOP cabinet shot hero is OFF CAMERA to protect master hand/face and the dialogue space. He remains foreground for ledger view below.
 
 伏せる情報／状態：禁庫の中へ勝手に入れない。
 
 作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-02.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 260}]
+原画：art/rebuild-02-letters-clear.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 260}]
 
-効果音（発話と別）：カチャ at SMALL record cabinet
+効果音（発話と別）：カチャ
 
 発話：セイ・コウ「ここが、お前の持ち場だ。」／縦列 右→左：ここが、/お前の/持ち場だ。／声：formal
 
@@ -80,7 +80,7 @@
 
 作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-05.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 750}]
+原画：art/rebuild-05-letters.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 750}]
 
 効果音（発話と別）：none
 

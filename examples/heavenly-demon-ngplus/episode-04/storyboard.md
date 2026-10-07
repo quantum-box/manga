@@ -10,15 +10,15 @@
 
 読者の理解／間：移動と汚れを洗う過程で時間をつなぐ
 
-描くもの／カメラ／立ち位置：Evening. Top hero and master walking east covered corridor, old courtyard behind. Middle basin at rest room, hero wipes same dusty robe and hands with plain wet cloth. Bottom medium in simple guest room, same robes now less dusty, left cheek bruise and rope marks remain. Window lattice moon just appearing. No costume change.
+描くもの／カメラ／立ち位置：Evening. Top hero and master walking east covered corridor, old courtyard behind. Middle basin at rest room, hero wipes same dusty robe and hands with plain wet cloth. Bottom medium in simple guest room, same robes now less dusty, RIGHT cheek bruise and rope marks remain. Window lattice moon just appearing. No costume change.
 
 伏せる情報／状態：手首と痣は消さない。
 
 作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-01.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 0}]
+原画：art/rebuild-01-letters.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 0}]
 
-効果音（発話と別）：ちゃぷ at basin water
+効果音（発話と別）：ちゃぷ
 
 発話：セイ・コウ「今夜は、ここを使え。」／縦列 右→左：今夜は、/ここを/使え。／声：formal
 
@@ -32,7 +32,7 @@
 
 作画形式：continuous。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-02.png 725×2167。表示窓：[{"range": [0, 2167], "gap": 300}]
+原画：art/rebuild-02-letters.png 726×2167。表示窓：[{"range": [0, 2167], "gap": 300}]
 
 効果音（発話と別）：none
 
@@ -48,7 +48,7 @@
 
 作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-03.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 450}]
+原画：art/rebuild-03-letters.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 450}]
 
 効果音（発話と別）：none
 
@@ -83,7 +83,7 @@
 
 原画：art/rebuild-05.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 570}]
 
-効果音（発話と別）：small コツ at footstep
+効果音（発話と別）：コツ
 
 発話：ハン・ユン「先に、話を聞こう。」／縦列 右→左：先に、/話を聞こう。／声：thought
 

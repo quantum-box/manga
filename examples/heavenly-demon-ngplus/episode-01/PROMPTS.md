@@ -8,7 +8,7 @@ Use case: text-localization. Edit ONLY Japanese lettering and the necessary whit
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-dc0f39fd-54dd-4b83-bd3c-91110fed66b6.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-01/art/rebuild-01-final.png`
+入力資料：`production/inputs/exec-fe3ae910-bf52-4a54-8f9b-15d7b30e25bd.png`
 
 ## 02 冷たい石
 
@@ -20,7 +20,7 @@ Use case: text-localization. Edit ONLY Japanese lettering and the necessary whit
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-86e8cb7c-4a96-47b9-8473-f25b25525c1b.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-01/art/rebuild-02.png`
+入力資料：`production/inputs/exec-9afc99ca-a555-4bbe-b555-126df6303c3d.png`
 
 ## 03 知っている名前
 
@@ -32,7 +32,7 @@ Use case: text-localization. Edit ONLY the Japanese dialogue and speech/thought 
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-91755176-c31f-4618-a10d-9a0fbdd9c032.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-01/art/rebuild-03-letters.png`
+入力資料：`production/inputs/exec-df1fe916-821d-4640-8412-623b639086a7.png`
 
 ## 04 確かめる指
 
@@ -44,7 +44,7 @@ Use case: text-localization. Edit ONLY the Japanese dialogue and speech/thought 
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-96c248da-dbc4-4418-8a1f-7ff10129effc.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-01/art/rebuild-04.png`
+入力資料：`production/inputs/exec-440c5860-af8e-4800-9fec-32163b6ed12a.png`
 
 ## 05 落ちてくる刃
 
@@ -56,7 +56,7 @@ Use case: text-localization. Edit ONLY the Japanese dialogue and speech/thought 
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-283e7239-5b4c-462f-b441-43c6285f68ad.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-01/art/rebuild-05.png`
+入力資料：`production/inputs/exec-40db4562-a896-4e5c-be56-98cc75c16aae.png`
 
 ## ring 刃の響き
 
@@ -80,4 +80,4 @@ Use case: text-localization. Edit ONLY the Japanese dialogue and speech/thought 
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-c218b1d6-76bb-4248-a79b-fba6b85ba3e4.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-01/art/rebuild-06.png`
+入力資料：`production/inputs/exec-a5b9a8c0-0caa-49aa-90ed-e0b783aa32b8.png`

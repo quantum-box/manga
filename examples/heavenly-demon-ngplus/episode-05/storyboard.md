@@ -18,7 +18,7 @@
 
 原画：art/rebuild-01.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 0}]
 
-効果音（発話と別）：コツ、コツ along upper path, small hard lettering
+効果音（発話と別）：コツ、コツ
 
 発話：なし。
 
@@ -34,7 +34,7 @@
 
 原画：art/rebuild-02.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 240}]
 
-効果音（発話と別）：カン、カン before smith reveal
+効果音（発話と別）：カン、カン
 
 発話：なし。
 
@@ -48,9 +48,9 @@
 
 作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-03.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 760}]
+原画：art/rebuild-03-letters.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 760}]
 
-効果音（発話と別）：none, hammer has stopped
+効果音（発話と別）：none
 
 発話：セイ・コウ「ソ・リン。話を聞きたい。」／縦列 右→左：ソ・リン。/話を/聞きたい。／声：formal
 
@@ -80,7 +80,7 @@
 
 作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-05.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 500}]
+原画：art/rebuild-05-letters.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 500}]
 
 効果音（発話と別）：none
 

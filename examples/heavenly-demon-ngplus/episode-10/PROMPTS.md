@@ -20,7 +20,7 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-6efc938a-c25f-4716-a605-3ec479310db0.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 02 あたたかい一口
 
@@ -44,7 +44,7 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-b2e8d38a-0d03-40d3-85f2-71fb31e84a63.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 03 帰るための一歩
 
@@ -70,7 +70,7 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-7cffd836-f613-46f5-9569-4d74d6405a8c.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 04 借りる道具
 
@@ -82,7 +82,7 @@ Precisely edit this finished 3-frame comic to fix bag side continuity. TOP and M
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-ed5260c5-8921-4b89-96c5-92379ca970b0.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-10/art/rebuild-04.png`
+入力資料：`production/inputs/exec-596be676-8475-443f-a29f-9ee7ff255a05.png`
 
 ## 05 見送る門
 
@@ -94,7 +94,7 @@ Precisely edit this tall continuous comic, only HERO at bottom. Preserve ALL mor
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-7b256512-d5c9-41be-a597-9c90b46fa1a7.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-10/art/rebuild-05.png`
+入力資料：`production/inputs/exec-8ed2a162-cc64-43dd-91e1-037ff941a49c.png`
 
 ## 06 自分で歩く
 
@@ -118,4 +118,4 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-643ecccf-57f4-4348-bfe4-fbdd1e1367c7.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`

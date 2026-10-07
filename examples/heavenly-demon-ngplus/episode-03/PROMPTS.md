@@ -18,7 +18,7 @@ Continuity: hero wrists are FREED since episode1. NO ROPE binding anywhere. No b
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-4f63054b-8867-4f97-9776-9f6fc57f56e4.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/hero-reference.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-02/art/rebuild-06-free.png`
+入力資料：`production/hero-reference.png`, `episode-02/art/rebuild-06-free.png`
 
 ## 02 罪状
 
@@ -41,7 +41,7 @@ Continuity: hero wrists are FREED since episode1. NO ROPE binding anywhere. No b
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-f1651567-2449-4bc4-a56f-aa00332c0b46.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/hero-reference.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-02/art/rebuild-06-free.png`
+入力資料：`production/hero-reference.png`, `episode-02/art/rebuild-06-free.png`
 
 ## 03 割れた留め具
 
@@ -53,19 +53,22 @@ Edit ONLY bottom panel of this manga original. Keep top elder and tabletop clasp
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-bd00e3e1-0b31-40bc-b385-46e1025b8f40.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-03/art/rebuild-03.png`
+入力資料：`production/inputs/exec-fd64b112-affa-4279-8c68-3ce66c2cd5b0.png`
 
 ## 04 画面の外側
 
-採用原画：art/rebuild-04-iron.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-04-iron-letters.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Edit ONLY the erroneous silver sword in FIRST image's bottom panel. Han Yun holds NO sword. Replace the entire long silver blade with two short charcoal rectangular BROKEN CLASP pieces ON OFFWHITE CLOTH resting on wooden table in front of him. Same clasp as SECOND reference top panel: dark soot exterior, silver fracture ends, larger piece rectangular slot. BOTH hero hands empty with rope mark skin, the open hand looks down with uncertainty; other hand lightly handles cloth EDGE, NOT gripping metal. Preserve all exact Japanese ゲームじゃ、ここで終わる。 and その先は、知らない。, thoughts, face, clothing, hall and panel sizes. No sword anywhere in final.
+Use case: text-localization. Edit ONLY the integrated Japanese dialogue lettering and necessary white balloon space in this finished comic. Smartphone readability is the priority. Set dialogue glyphs REALLY LARGE: minimum96px high per1024px image width (68px per724px width), about34px at display360. Every full-size kanji must reach this minimum. Do NOT preserve tiny text. Expand each balloon considerably into spare background; if necessary add white breathing space inside frame but do NOT cover faces, hands, tools or clues. Keep same sequence/frames/character identities/poses, hairclip side, bruise side, props, lighting, clothing, all SFX outside balloons. Japanese upright TOP-TO-BOTTOM in columns RIGHT-TO-LEFT. EXACT full text/punctuation below, no additions or omissions. Keep tails to the SAME correct speakers, thought dots to thinking hero. Formal rounded tall rectangle, weak voice gentle irregular edge. Current low-resolution small dialogue must become significantly larger. Do not shrink back to fit. Reserve generous white inset around glyphs. No raster overlays pasted with masks; redraw integrated balloons cleanly.
+Authoritative dialogue:
+ハン・ユン: ゲームじゃ、ここで終わる。; vertical columns right-to-left ゲームじゃ、/ここで/終わる。; voice thought
+ハン・ユン: その先は、知らない。; vertical columns right-to-left その先は、/知らない。; voice thought
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-dcdcd408-85e6-4fd0-aed5-fae33bcf0870.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-2ca46e5f-e3b7-447a-9573-11e94931b24a.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-03/art/rebuild-04.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-03/art/rebuild-03.png`
+入力資料：`production/inputs/exec-dcdcd408-85e6-4fd0-aed5-fae33bcf0870.png`
 
 ## 05 触らずに見る
 
@@ -77,7 +80,7 @@ Edit FIRST image to correct geography and evidence shapes. It occurs INSIDE wood
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-d46782c7-d10a-4bf3-be73-c47aeb4aeaea.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-03/art/rebuild-05.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-03/art/rebuild-01.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-03/art/rebuild-03.png`
+入力資料：`production/inputs/exec-bf790c7f-c20a-4097-9fb0-7240942edbfc.png`, `episode-03/art/rebuild-01.png`, `production/inputs/exec-fd64b112-affa-4279-8c68-3ce66c2cd5b0.png`
 
 ## 06 まだ帰れない
 
@@ -100,4 +103,4 @@ Continuity: hero wrists are FREED since episode1. NO ROPE binding anywhere. No b
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-93829759-dfa8-4e8d-8d89-c8077f456fed.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/hero-reference.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-02/art/rebuild-06-free.png`
+入力資料：`production/hero-reference.png`, `episode-02/art/rebuild-06-free.png`

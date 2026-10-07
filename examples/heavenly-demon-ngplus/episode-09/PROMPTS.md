@@ -21,7 +21,7 @@ TOP shot must show Master UNTYING and unfolding the ONE OFFWHITE evidence bundle
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-9437c033-7edb-49a5-8709-3525003803ce.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-06/art/rebuild-04-tracing.png`, `/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-07/art/rebuild-02.png`
+入力資料：`production/cast-reference.png`, `episode-06/art/rebuild-04-tracing.png`, `production/inputs/exec-15471f89-d8c0-4862-b6c5-761ba114a054.png`
 
 ## 02 鍛冶師の声
 
@@ -45,7 +45,7 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-4854c02c-d6dd-40c8-bc5a-f8e66f72209a.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 03 説明を求める
 
@@ -69,7 +69,7 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-fef60865-d06a-4815-8989-fa8a33391920.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 04 決定を待つ
 
@@ -93,7 +93,7 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-87a652e3-07a0-4644-8d3d-43beffe00c47.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 05 取り消す
 
@@ -117,16 +117,20 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-8565d7e8-abc7-4f11-938c-2ea82f2ba0eb.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 06 名前を呼ばれる
 
-採用原画：art/rebuild-06-speaker.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-06-speaker-letters.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Edit this finished three-frame vertical Japanese Webtoon precisely to correct the speaking person. Preserve character identities, locations, three frames and continuity. TOP frame: REMOVE the ENTIRE apology speech balloon/text/tail. Show only navy short dark-bearded master receiving key ring from seated purple long-white-bearded elder, elder says NOTHING. Reconstruct natural warm hall backdrop where balloon removed. MIDDLE frame: ADD the apology balloon on empty space near NAVY SHORT DARK-BEARDED master, a clear tail points directly to THIS master's mouth. Exact Japanese vertical text full: ハン・ユン。すまなかった。 Columns RIGHT TO LEFT: ハン・ユン。 / すまなかった。 Large upright glyphs at least 55px for artwork width724 or75px for1024. Reserve enough light balloon area without covering faces or hero foreground head. Master addresses Han Yun. Elder absent in middle. BOTTOM frame: ENLARGE hero's reply balloon and glyphs to minimum55px for width724 or75px for1024; exact vertical text ……はい。, weak gently irregular contour with tail clearly to hero. Preserve tearful relieved expression, teal eyes, black short low ponytail, faint right-cheek bruise, So Rin and her one bronze clip on her anatomical LEFT temple (viewer right). No dialogue elsewhere, no new labels, no sword, no ropes. Top silence -> middle MASTER apology -> bottom HERO reply. Text is integrated raster Japanese.
+Use case: text-localization. Edit ONLY the integrated Japanese dialogue lettering and necessary white balloon space in this finished comic. Smartphone readability is the priority. Set dialogue glyphs REALLY LARGE: minimum96px high per1024px image width (68px per724px width), about34px at display360. Every full-size kanji must reach this minimum. Do NOT preserve tiny text. Expand each balloon considerably into spare background; if necessary add white breathing space inside frame but do NOT cover faces, hands, tools or clues. Keep same sequence/frames/character identities/poses, hairclip side, bruise side, props, lighting, clothing, all SFX outside balloons. Japanese upright TOP-TO-BOTTOM in columns RIGHT-TO-LEFT. EXACT full text/punctuation below, no additions or omissions. Keep tails to the SAME correct speakers, thought dots to thinking hero. Formal rounded tall rectangle, weak voice gentle irregular edge. Current low-resolution small dialogue must become significantly larger. Do not shrink back to fit. Reserve generous white inset around glyphs. No raster overlays pasted with masks; redraw integrated balloons cleanly.
+Authoritative dialogue:
+セイ・コウ: ハン・ユン。すまなかった。; vertical columns right-to-left ハン・ユン。/すまなかった。; voice soft
+ハン・ユン: ……はい。; vertical columns right-to-left ……はい。; voice weak
+Critical: TOP key handoff has NO balloon. MIDDLE apology spoken by NAVY SHORT DARK-BEARDED MASTER, clear tail to him. Bottom ……はい。 spoken by hero. Elder NEVER apologizes here. Enlarge master's middle apology especially.
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-144812f7-3c59-4148-b15d-7f95d0450314.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-453d7d8f-6614-4e0e-b734-15a8ce34c9e6.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/episode-09/art/rebuild-06.png`
+入力資料：`production/inputs/exec-144812f7-3c59-4148-b15d-7f95d0450314.png`

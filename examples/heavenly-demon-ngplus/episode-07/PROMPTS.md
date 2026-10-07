@@ -21,32 +21,19 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-41a51ad2-a7a0-4ef6-8f59-8439907c85f3.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 02 当番帳
 
-採用原画：art/rebuild-02.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-02-letters-clear.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: illustration-story. Finished ORIGINAL Japanese martial-fantasy Webtoon 天魔、二周目。, smartphone scroll art with integrated Japanese lettering. Reference image defines ONLY Han Yun's face, hair, clothing and crisp expressive anime cel shading; DO NOT copy its layout, injuries beyond specified, background or story. Han Yun: young adult 20, tousled BLACK hair SHORT LOW ponytail, TEAL eyes, pale skin, off-white Chinese martial training robe with CHARCOAL lapel and DARK RED sash, black cloth shoes, subtle bruise on anatomical RIGHT cheek. Kind uncertain attentive; no smug sadistic grin. Master Sei Kou when called for: 50, salt-and-pepper high topknot, NAVY robe IVORY trim. Elder Luo when called for: 60, LONG GRAY beard, gray-white high topknot, DARK PLUM robe BLACK trim. Smith So Rin when called for: 20 woman BLACK BOB, AMBER eyes, SMALL BRONZE hairclip, IVORY sleeves, TEAL vest, DARK apron. Include only people specified in the shot; no other casts, no sword for hero, no reward ornaments. Chinese martial fantasy, not samurai. True vertical Japanese spoken text, upright glyphs top-to-bottom, columns RIGHT-to-LEFT; EXACT supplied text only. Balloon tails to speaker, thought dots to head, offscreen floating voice without tail. Dark crisp Japanese manga gothic with generous padding, Use generously sized printed dialogue. Letter glyph height 70px per1024px artwork width, or50px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Ordinary speech smooth oval, formal speech rounded tall rectangular with tail, soft/weak gently irregular thin contour, shout strong jagged contour with clear inset, thought soft cloud with dots. Keep faces and hands unobscured. Draw sound effects as expressive ink OUTSIDE speech balloons. No headings, panel labels, numbers, extra writing, translations, watermark. White #ffffff page edges, expressive clean ink and saturated cel shading, no photoreal painting.
-Asset 7.02 当番帳. Beat purpose: 記録の保管・提示・内容を順に理解する.
-Composition: Tall portrait aspect1:3, THREE successive unequal shots, staggered in size with short white gutters. Top-to-bottom. If a local horizontal pair specified read RIGHT then LEFT. Do not cram all events into simultaneous montage.
-This asset ONLY:
-Top master unlocks only SMALL separate wall record cabinet OUTSIDE main sealed door. Middle pulls one simple daily duty ledger, main big door stays shut. Bottom readable horizontal ledger entry ハン・ユン / 外廊下の清掃. Hero and smith over-shoulder edges, not huge tiny text paragraphs.
-Exact dialogue, each quoted fullname is authoritative; slash-separated columns are instructions NOT printed:
-1. Speaker セイ・コウ. Full text: ここが、お前の持ち場だ。. Columns in right-to-left order: ここが、/お前の/持ち場だ。. Voice/balloon: formal.
-Sound effects independently: カチャ at SMALL record cabinet.
-Hidden/continuity constraints: 禁庫の中へ勝手に入れない。. Do not render planning notes. No events from any other asset.
-Use generously sized printed dialogue. Letter glyph height 70px per1024px artwork width, or50px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space.
-Continuity: hero wrists are FREED since episode1. NO ROPE binding anywhere. No blade or scabbard on hero. Master has mostly DARK salt-and-pepper topknot and SHORT neat dark-gray beard, visibly different from Elder's long WHITE beard. References indicate identities only; do not transplant their actions or courtyard into this scene.
-Hero washed in episode4: offwhite robe is CLEAN, no mud or dirt stains. Keep one faint right-cheek bruise and subtle wrist marks. No dramatic blood wounds.
-EVIDENCE BUNDLE invariant: ONE compact OFFWHITE cloth bundle tied with its OWN cloth corners, small enough for two cupped palms. No external rope, no dark bedroll or large luggage; no shoulder bag before episode10. Main storehouse door ALWAYS CLOSED; record cabinet is a different SMALL cabinet outside.
-So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer RIGHT in frontal view); never mirror the clip to her right temple. Keep her clothes/work apron consistent.
+Precise artwork edit preserving ALL current huge upright vertical dialogue ここがお前の持ち場だ。, SAME lettering size, balloon contour, tail to NAVY SHORT-DARK-BEARDED master, 3 frames, cabinet, ledger, props, people in other frames. TOP frame ONLY: REMOVE the background Han Yun (black-haired young man and offwhite robe at far viewer LEFT behind speech balloon), reconstruct natural closed dark wooden storeroom door/corridor there. His body is OFF CAMERA in top shot. Master opening small cabinet remains perfectly visible, So Rin at far right remains, no face or important hand under balloon. MIDDLE and BOTTOM frames unchanged; Han Yun remains foreground bottom. Keep book handwritten 名前 / 当番内容 / ハン・ユン / 外廊下の清掃 exactly and clear. Do not add text. Do not shrink lettering. Do not change hairclip side or door; main storeroom stays closed.
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-15471f89-d8c0-4862-b6c5-761ba114a054.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-9a8533b5-c280-4a32-ac17-8031c4f9a647.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/inputs/exec-95c7437d-6b5f-4bd0-8e0a-f58cf8d2e147.png`
 
 ## 03 話していた人
 
@@ -71,7 +58,7 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-7970926e-45de-44b8-b998-09ca52d2ba07.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 04 届かなかった訴え
 
@@ -96,33 +83,21 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-049dde6d-de27-42dd-861e-3140d8682561.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`
 
 ## 05 同じ名前の重さ
 
-採用原画：art/rebuild-05.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-05-letters.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: illustration-story. Finished ORIGINAL Japanese martial-fantasy Webtoon 天魔、二周目。, smartphone scroll art with integrated Japanese lettering. Reference image defines ONLY Han Yun's face, hair, clothing and crisp expressive anime cel shading; DO NOT copy its layout, injuries beyond specified, background or story. Han Yun: young adult 20, tousled BLACK hair SHORT LOW ponytail, TEAL eyes, pale skin, off-white Chinese martial training robe with CHARCOAL lapel and DARK RED sash, black cloth shoes, subtle bruise on anatomical RIGHT cheek. Kind uncertain attentive; no smug sadistic grin. Master Sei Kou when called for: 50, salt-and-pepper high topknot, NAVY robe IVORY trim. Elder Luo when called for: 60, LONG GRAY beard, gray-white high topknot, DARK PLUM robe BLACK trim. Smith So Rin when called for: 20 woman BLACK BOB, AMBER eyes, SMALL BRONZE hairclip, IVORY sleeves, TEAL vest, DARK apron. Include only people specified in the shot; no other casts, no sword for hero, no reward ornaments. Chinese martial fantasy, not samurai. True vertical Japanese spoken text, upright glyphs top-to-bottom, columns RIGHT-to-LEFT; EXACT supplied text only. Balloon tails to speaker, thought dots to head, offscreen floating voice without tail. Dark crisp Japanese manga gothic with generous padding, Use generously sized printed dialogue. Letter glyph height 70px per1024px artwork width, or50px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Ordinary speech smooth oval, formal speech rounded tall rectangular with tail, soft/weak gently irregular thin contour, shout strong jagged contour with clear inset, thought soft cloud with dots. Keep faces and hands unobscured. Draw sound effects as expressive ink OUTSIDE speech balloons. No headings, panel labels, numbers, extra writing, translations, watermark. White #ffffff page edges, expressive clean ink and saturated cel shading, no photoreal painting.
-Asset 7.05 同じ名前の重さ. Beat purpose: 死にかけた身体を他人の人生として受け止める.
-Composition: Tall portrait aspect about2:3, TWO unequal moments reading top-to-bottom with generous white separation. Smaller close-up versus larger medium frame; no equal grid.
-This asset ONLY:
-TOP shallow quiet close-up of ordinary BAMBOO BROOM leaning against outside stone corridor wall beside CLOSED wooden storehouse door; this is the job Han Yun had. BOTTOM larger Han Yun face quietly processing So Rin's testimony, eyes lowered then looking toward broom. Clean offwhite/charcoal/red robes, teal eyes and black low ponytail. Empathetic, reflective, no triumphant grin. Hands outside frame; no action, blade, rope, bodily-harm depiction, extra people or flashback. Same daylight closed door background.
-Exact dialogue, each quoted fullname is authoritative; slash-separated columns are instructions NOT printed:
-1. Speaker ハン・ユン. Full text: 誰も、聞かなかったんだ。. Columns in right-to-left order: 誰も、/聞かなかった/んだ。. Voice/balloon: thought.
-Sound effects independently: none.
-Hidden/continuity constraints: ハンの元の人生を物語の道具だけにしない。. Do not render planning notes. No events from any other asset.
-Use generously sized printed dialogue. Letter glyph height 70px per1024px artwork width, or50px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space.
-Continuity: hero wrists are FREED since episode1. NO ROPE binding anywhere. No blade or scabbard on hero. Master has mostly DARK salt-and-pepper topknot and SHORT neat dark-gray beard, visibly different from Elder's long WHITE beard. References indicate identities only; do not transplant their actions or courtyard into this scene.
-Hero washed in episode4: offwhite robe is CLEAN, no mud or dirt stains. Keep one faint right-cheek bruise and subtle wrist marks. No dramatic blood wounds.
-EVIDENCE BUNDLE invariant: ONE compact OFFWHITE cloth bundle tied with its OWN cloth corners, small enough for two cupped palms. No external rope, no dark bedroll or large luggage; no shoulder bag before episode10. Main storehouse door ALWAYS CLOSED; record cabinet is a different SMALL cabinet outside.
-So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer RIGHT in frontal view); never mirror the clip to her right temple. Keep her clothes/work apron consistent.
-For episode8 GUARDS identity if visible: attacker adult thin moustache, gray martial robe BLUE sash, black topknot, one silver straight sword. Second guard round clean-shaven face, gray robe BROWN sash, black topknot, empty hands. Keep these two distinct; elder plum robe is a THIRD distinct man, never a duplicate. No guard acts beyond described beat.
+Use case: text-localization. Edit ONLY the integrated Japanese dialogue lettering and necessary white balloon space in this finished comic. Smartphone readability is the priority. Set dialogue glyphs REALLY LARGE: minimum96px high per1024px image width (68px per724px width), about34px at display360. Every full-size kanji must reach this minimum. Do NOT preserve tiny text. Expand each balloon considerably into spare background; if necessary add white breathing space inside frame but do NOT cover faces, hands, tools or clues. Keep same sequence/frames/character identities/poses, hairclip side, bruise side, props, lighting, clothing, all SFX outside balloons. Japanese upright TOP-TO-BOTTOM in columns RIGHT-TO-LEFT. EXACT full text/punctuation below, no additions or omissions. Keep tails to the SAME correct speakers, thought dots to thinking hero. Formal rounded tall rectangle, weak voice gentle irregular edge. Current low-resolution small dialogue must become significantly larger. Do not shrink back to fit. Reserve generous white inset around glyphs. No raster overlays pasted with masks; redraw integrated balloons cleanly.
+Authoritative dialogue:
+ハン・ユン: 誰も、聞かなかったんだ。; vertical columns right-to-left 誰も、/聞かなかった/んだ。; voice thought
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-beb357df-99f3-4c74-8a48-3cf88d5252a1.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-e7b78ed7-b388-440d-a626-d2ab26180a40.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/inputs/exec-beb357df-99f3-4c74-8a48-3cf88d5252a1.png`
 
 ## 06 聞く場所を作る
 
@@ -148,4 +123,4 @@ So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-106698e3-1105-440d-9a35-8538697571af.png`
 
-入力資料：`/Users/takanorifukuyama/.codex/worktrees/tenma-full-rebuild/manga/examples/heavenly-demon-ngplus/production/cast-reference.png`
+入力資料：`production/cast-reference.png`

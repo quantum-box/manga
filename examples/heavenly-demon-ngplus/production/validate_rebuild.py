@@ -104,7 +104,12 @@ def main():
             print(f'Validated {n}: '+str(summaries[-1]),flush=True)
         browser.close()
     server.shutdown()
+    summaries=[]
+    for n in range(1,11):
+        record=read(ROOT/f'episode-{n:02d}/validation.json')
+        manifest=read(ROOT/f'episode-{n:02d}/manifest.json')
+        assert record['revision']==manifest['revision']
+        summaries.append({'chapter':n,'originals':record['originals'],'readingUnits':len(manifest['readingOrder']),'checks':len(record['browserChecks'])})
     save(ROOT/'mobile-checks.json',{'revision':'full-rebuild-2026-10-07','episodes':summaries,'viewports':[[390,844],[360,800]],'physicalDevice':'not tested'})
 
 if __name__=='__main__': main()
-

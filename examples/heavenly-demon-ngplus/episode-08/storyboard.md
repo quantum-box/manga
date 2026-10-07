@@ -10,13 +10,13 @@
 
 読者の理解／間：危険の位置と退避先を最初に置く
 
-描くもの／カメラ／立ち位置：Top WIDE daylight stone corridor toward public hall, hero center carrying cloth bundle, smith behind left, master ahead left by hall. Elder and TWO gray-robed guards block path at RIGHT. Safety is open hall left behind master. Bottom hero stops, sees guards look toward smith, not merely toward himself.
+描くもの／カメラ／立ち位置：Top WIDE daylight stone corridor toward public hall, hero center carrying cloth bundle, smith behind left, master ahead left by hall. Elder and TWO gray-robed guards block path at RIGHT. Safety is open hall left behind master. Bottom hero stops, sees guards look toward smith, not merely toward himself. Top view shows elder with round guard; moustached guard is outside top camera but appears behind So Rin in lower reaction. All three opposing people stay in this location.
 
 伏せる情報／状態：最大3対3。百人戦にしない。
 
 作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-01.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 0}]
+原画：art/rebuild-01-letters-clear.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 0}]
 
 効果音（発話と別）：none
 
@@ -34,7 +34,7 @@
 
 原画：art/rebuild-02-safe.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 170}]
 
-効果音（発話と別）：スラ at guard's unsheathed sword
+効果音（発話と別）：スラ
 
 発話：ハン・ユン「殿の中へ。」／縦列 右→左：殿の中へ。／声：normal
 
@@ -50,7 +50,7 @@
 
 原画：art/rebuild-03-one-bundle.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 260}]
 
-効果音（発話と別）：ヒュッ sword motion
+効果音（発話と別）：ヒュッ
 
 発話：セイ・コウ「やめろ！」／縦列 右→左：やめろ！／声：shout
 ハン・ユン「下がって！」／縦列 右→左：下がって！／声：shout
@@ -67,7 +67,7 @@
 
 原画：art/rebuild-04.png 887×1774。表示窓：[{"range": [0, 1774], "gap": 890}]
 
-効果音（発話と別）：トン at controlled landing, not a huge explosion
+効果音（発話と別）：トン
 
 発話：ハン・ユン「剣を、離して。」／縦列 右→左：剣を、/離して。／声：normal
 
