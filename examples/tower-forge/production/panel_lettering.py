@@ -27,7 +27,9 @@ def render_panel_lettering(panel):
         lines.append(f"Player interface, visible to {window['owner']} in their own view. Action: {window['action']}. Placement: {window['placement']}. EXACT horizontal rows top to bottom: {' | '.join(window['lines'])}. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.")
     for sound in panel['sounds']:
         lines.append(f"Sound effect EXACT text: {sound['text']}. Cause: {sound['cause']}. Placement: {sound['placement']}. Drawn lettering: {sound['design']}. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.")
-    if not panel['sounds']:
+    for sound in panel.get('sound_continuations',[]):
+        lines.append(f"Continuing sound from moment {sound['origin']}: {sound['text']}. {sound['placement']} This is the SAME inscription crossing the panel boundary and gutter, not a new sound or a duplicate complete word. Keep it outside balloons and off faces, hands and dialogue.")
+    if not panel['sounds'] and not panel.get('sound_continuations'):
         lines.append('Sound effects: none. '+(panel.get('quiet_reason') or 'Keep this beat focused on the stated perception, dialogue or reaction.'))
     lines.append('No unlisted words or sound effects.')
     return '\n'.join(lines)+'\n'
@@ -40,6 +42,8 @@ def panel_board(panel):
     if panel['sounds']:
         for sound in panel['sounds']:
             lines.append(f"   - 効果音：{sound['text']}。原因：{sound['cause']}。位置：{sound['placement']}。字形：{sound['design']}。会話の吹き出しへ入れない。")
-    else:
+    elif not panel.get('sound_continuations'):
         lines.append('   - 効果音：なし。'+(panel.get('quiet_reason') or '今回の知覚・会話・感情を優先する。'))
+    for sound in panel.get('sound_continuations',[]):
+        lines.append(f"   - 継続する効果音：{sound['text']}。開始：{sound['origin']}。位置：{sound['placement']}。同じ一つの音がコマと余白を跨ぐ。新しい音・全文の重複ではない。")
     return '\n'.join(lines)+'\n'

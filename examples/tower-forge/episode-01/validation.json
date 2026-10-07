@@ -1,7 +1,7 @@
 {
   "date": "2026-10-07",
   "episode": 1,
-  "revision": "tower_incident_2026_10_07",
+  "revision": "sound_across_panels_2026_10_07",
   "viewports": [
     {
       "allLoaded": true,
@@ -80,25 +80,25 @@
           "top": 22193.33984375
         },
         {
-          "height": 780,
+          "height": 1170,
           "top": 23543.33984375
         },
         {
           "height": 1170,
-          "top": 24943.330078125
+          "top": 24933.330078125
         },
         {
           "height": 1170,
-          "top": 26213.3203125
+          "top": 26203.3203125
         },
         {
           "height": 786.181640625,
-          "top": 27593.310546875
+          "top": 27583.310546875
         }
       ],
       "height": 844,
       "imageCount": 22,
-      "pageHeight": 28495,
+      "pageHeight": 28485,
       "pageWidth": 390,
       "width": 390
     },
@@ -179,25 +179,25 @@
           "top": 20501.455078125
         },
         {
-          "height": 720,
+          "height": 1080,
           "top": 21747.607421875
         },
         {
           "height": 1080,
-          "top": 23039.912109375
+          "top": 23030.673828125
         },
         {
           "height": 1080,
-          "top": 24212.216796875
+          "top": 24202.978515625
         },
         {
           "height": 725.703125,
-          "top": 25486.0546875
+          "top": 25476.81640625
         }
       ],
       "height": 800,
       "imageCount": 22,
-      "pageHeight": 26328,
+      "pageHeight": 26319,
       "pageWidth": 360,
       "width": 360
     }
@@ -213,7 +213,7 @@
       390,
       360
     ],
-    "scope": "All 22 adopted scenes captured at both CSS widths. Four added incident strips reviewed visually at both widths; the first 18 retain previously reviewed native art and lettering.",
+    "scope": "Strips 19 and 21 visually reviewed at both CSS widths; adjacent strips 20/22 recaptured at both widths. Unchanged first 18 retain their earlier reviewed phone captures.",
     "limitations": "Browser captures only; no physical device or user approval. Visual legibility is not proof of comprehension or empathy."
   },
   "narrative_review": {
@@ -266,13 +266,13 @@
       "Listener reactions, doubt, invitation and relief retain quiet"
     ],
     "limitations": "Browser captures only. Small ambient lettering is intentionally subdued; no claim that every glyph is at least 20px. No physical device or reader acceptance.",
-    "scope": "18 retained action/interface cues plus 7 new incident cues: lamp flicker, rumble, tower surge, gate impact, extinguished lamp, notification and departing footstep."
+    "scope": "25 action/interface/incident sources. Rumble and gate impact continue across panels and gutters without new impacts."
   },
   "game_revision": "game_actions_and_sword_identity_2026_10_07",
   "full_reader_captures": [
     {
       "width": 390,
-      "pageHeight": 28495,
+      "pageHeight": 28485,
       "parts": [
         {
           "file": "webtoon-390-part-01.jpg",
@@ -287,13 +287,13 @@
         {
           "file": "webtoon-390-part-03.jpg",
           "y": 24000,
-          "height": 4495
+          "height": 4485
         }
       ]
     },
     {
       "width": 360,
-      "pageHeight": 26328,
+      "pageHeight": 26319,
       "parts": [
         {
           "file": "webtoon-360-part-01.jpg",
@@ -308,7 +308,7 @@
         {
           "file": "webtoon-360-part-03.jpg",
           "y": 24000,
-          "height": 2328
+          "height": 2319
         }
       ]
     }
@@ -390,15 +390,15 @@
     "gap_before_tower_reveal": [
       {
         "width": 390,
-        "gap_px": 619.99
+        "gap_px": 219.99
       },
       {
         "width": 360,
-        "gap_px": 572.3
+        "gap_px": 203.07
       }
     ],
     "scroll_observations": {
-      "method": "Native PageDown actions, resulting DOM scroll offsets, native browser captures of corresponding viewport extent",
+      "method": "Native PageDown actions and browser captures of the resulting CSS viewport extent",
       "screens": [
         {
           "file": "validation/scroll-01-promise.jpg",
@@ -440,7 +440,7 @@
           "file": "validation/scroll-07.jpg",
           "height": 844,
           "width": 390,
-          "y": 27651.875
+          "y": 27641.875
         }
       ]
     },
@@ -452,5 +452,64 @@
       "Lamp-furnace and east-gate notice matches series cause and sequel route"
     ],
     "limitations": "Browser/model review only; reader acceptance and physical-device testing remain unverified."
+  },
+  "sound_span_revision": "sound_across_panels_2026_10_07",
+  "sound_span_review": {
+    "reviewer": "model",
+    "date": "2026-10-07",
+    "widths": [
+      390,
+      360
+    ],
+    "changed_scenes": [
+      19,
+      21
+    ],
+    "spans": [
+      {
+        "text": "ゴゴゴゴ…",
+        "origin": "19-2",
+        "continues_through": [
+          "19-3",
+          "lower native white continuation"
+        ],
+        "checks": [
+          "One rumble starts beside the eye, crosses into the reaction and fades through large white space",
+          "Tower and light rings remain withheld until strip 20"
+        ]
+      },
+      {
+        "text": "ガァン",
+        "origin": "21-1",
+        "continues_through": [
+          "diagonal white gutter",
+          "21-2"
+        ],
+        "checks": [
+          "Final glyph extends beyond gate frame into gutter and lamp panel",
+          "Decay ends before notification; lamp and HUD cues remain distinct"
+        ]
+      }
+    ],
+    "native_white_continuation": "Approximately lower third of strip 19; model visual estimate, not pixel segmentation.",
+    "before_after_lead_in": [
+      {
+        "width": 390,
+        "before_strip_and_gap_px": 1400,
+        "after_strip_and_gap_px": 1389.99
+      },
+      {
+        "width": 360,
+        "before_strip_and_gap_px": 1292.3,
+        "after_strip_and_gap_px": 1283.07
+      }
+    ],
+    "checks": [
+      "Faces, eyes, pointing finger, blade, shield, dialogue and HUD unobstructed",
+      "Bare right sword hand, single left cuff; Sena points right and carries left shield",
+      "Same 78 moments and 25 sound sources; continuations do not count as new sounds",
+      "Phone images and native PageDown reading confirm persistence and tower reveal"
+    ],
+    "limitations": "Model/browser review only; no user acceptance or physical device test."
   }
 }

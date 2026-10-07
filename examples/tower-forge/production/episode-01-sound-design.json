@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "scope": "Game actions and tower incident; dialogue, UI and sounds independent",
+  "scope": "Game actions, tower incident and persistent sound across panels/gutters",
   "panels": {
     "3-1": [
       {
@@ -156,10 +156,10 @@
     ],
     "19-2": [
       {
-        "text": "ゴゴ…",
+        "text": "ゴゴゴゴ…",
         "cause": "画面外の塔の駆動部から届く低い振動音",
-        "placement": "目を避けた余白、下へ少し伸ばす",
-        "design": "重く低い灰色の描き文字。次の轟音より控えめ"
+        "placement": "目の外側からコマ境界を跨ぎ、二人の外側を通って下の大きな白い余白へ。一つの連続した音",
+        "design": "荒い灰黒の大きな描き文字。間隔をずらして下へ進み、最後の点と細い振動線を白へ減衰させる"
       }
     ],
     "20-1": [
@@ -174,8 +174,8 @@
       {
         "text": "ガァン",
         "cause": "東門の鉄格子が石の下枠へ止まる",
-        "placement": "門の接地部を避けた空き",
-        "design": "重い角張った描き文字、白の細縁"
+        "placement": "門の空いた石壁から斜めに枠を越え、白い間と次の消灯コマの空いた右端へ。末尾のンが二つのコマをつなぐ",
+        "design": "重い大きな黒の描き文字と細い白縁。余白にも残響線を伸ばし、同じ一つの衝撃が減衰する"
       }
     ],
     "21-2": [
@@ -203,5 +203,21 @@
       }
     ]
   },
-  "quiet": "Unlisted panels retain quiet; system actions use only specified brief electronic sounds."
+  "quiet": "Unlisted panels retain quiet; system actions use only specified brief electronic sounds.",
+  "continuations": {
+    "19-3": [
+      {
+        "origin": "19-2",
+        "text": "ゴゴゴゴ…",
+        "placement": "接写から二人の反応へ続き、顔・指・盾・剣・吹き出しを避けて下の白い余白へ伸びる"
+      }
+    ],
+    "21-2": [
+      {
+        "origin": "21-1",
+        "text": "ガァン",
+        "placement": "前の門の枠から白い間を越えて消灯コマの空いた右端へ末尾が響く。フッとは別の音。HUDに届く前に終わる"
+      }
+    ]
+  }
 }

@@ -649,23 +649,23 @@ Panel design: use the SPECIFIC unequal panel widths, heights, staggered placemen
 
 Lettering: true Japanese vertical speech, upright black printed manga glyphs, columns RIGHT to LEFT, each column top-to-bottom. Use LARGE glyphs roughly 5.6 percent of image width (about 20px high when shown at 360px wide). Never shrink text to fit. Exact utterance and column order follow; slash marks in instructions are separators and must not be printed. Spoken words have clean white oval/rounded vertical balloons with tails aimed at the actual speaker. Small quiet speech has softly irregular thin outlines. Internal thought uses thought dots and a softer cloud border. Screen/HUD messages may be horizontal, cyan translucent in the game; real PC message is small ordinary horizontal text. Dialogue and sound effects are independent. No dialogue means no speech/thought balloons; render any separately specified sounds. Place sound lettering near its source, outside balloons, with no tails. Do not apply dialogue column rules to sounds. Only panels explicitly specifying no sounds are quiet. No speaker labels, panel numbers, decorative captions, watermark or extra text. Reserve light blank areas for balloons and generous inset padding. All text is integrated into the raster art.
 
-Chapter 1 revised, strip 19. Image ratio 1:2. Scene: 約束の後の前兆. Place and continuity: 同じ試験庭。約束の直後、夕空から薄暮へ。塔はまだ画面外。. Purpose: 安心した直後、周囲の異変を二人の感覚から知る。原因の姿は次のスクロールへ残す。. Exactly 3 narrative moments (not mandatory full-width panels), with unequal sizes as described.
+Chapter 1 revised, strip 19. Image ratio 1:3. Scene: 約束の後の前兆. Place and continuity: 同じ試験庭。約束の直後、夕空から薄暮へ。塔はまだ画面外。. Purpose: 安心した直後、周囲の異変を二人の感覚から知る。原因の姿は次のスクロールへ残す。. Exactly 3 narrative moments (not mandatory full-width panels), with unequal sizes as described.
 
-Scroll composition takes precedence over the reference or default panel grid: 上の灯具、離れた目の接写、下の二人の視線。間に白い空間を残す。三段の均等な箱へしない。 Reading order: 上から下。手掛かり→知覚→次の情報。 Preserve borderless continuous scenery, same-row pairs and quiet white space; never turn every narrative moment into a full-width rectangle.
+Scroll composition takes precedence over the reference or default panel grid: 灯具→目の浮いた接写→二人の反応。ひと続きのゴゴゴゴ…が接写と反応の境界を跨いで下へ伸び、原画の下約3割の白い余白で消える。塔の姿は次の画像まで見せない。 Reading order: 上から下。手掛かり→知覚→次の情報。 Preserve borderless continuous scenery, same-row pairs and quiet white space; never turn every narrative moment into a full-width rectangle.
 
 Panel 1, top to bottom. Artwork, camera, size and main focus: 上右寄せの幅65％の浅い接写。同じ青い工房布の隣、橙の魔導灯が一瞬だけちらつく。塔も人もまだ描かない。
 Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
 Sound effect EXACT text: パチ…. Cause: 灯りの明滅に伴うゲーム内の小さな放電音. Placement: 灯具の横. Drawn lettering: 小さく細い灰黒の描き文字. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
 No unlisted words or sound effects.
 
-Panel 2, top to bottom. Artwork, camera, size and main focus: 離れた中央左の幅60％の浅い枠なし接写。カイの目が振動に気づいて少し見開く。遠くの低い音だけが来る。剣と塔は画面外。
+Panel 2, top to bottom. Artwork, camera, size and main focus: 中央左の目の浮いた接写。カイが画面外の低い振動に気づく。右の振動音はこの瞬間で始まり、次の反応へ続く。塔は画面外。
 Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
-Sound effect EXACT text: ゴゴ…. Cause: 画面外の塔の駆動部から届く低い振動音. Placement: 目を避けた余白、下へ少し伸ばす. Drawn lettering: 重く低い灰色の描き文字。次の轟音より控えめ. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+Sound effect EXACT text: ゴゴゴゴ…. Cause: 画面外の塔の駆動部から届く低い振動音. Placement: 目の外側からコマ境界を跨ぎ、二人の外側を通って下の大きな白い余白へ。一つの連続した音. Drawn lettering: 荒い灰黒の大きな描き文字。間隔をずらして下へ進み、最後の点と細い振動線を白へ減衰させる. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
 No unlisted words or sound effects.
 
-Panel 3, top to bottom. Artwork, camera, size and main focus: 下端の広い中景。セナが右手で上を指し、隣のカイも顔を上げる。左腕に盾、カイの素手の右手に剣を安全に下ろす。青い布と庭の標的を残し、塔の光環は描かない。。セナは右手で上を指し、左腕の盾は下げて保つ。カイの銅カフは左腕だけ。
+Panel 3, top to bottom. Artwork, camera, size and main focus: 下端の広い中景。セナが右手で上を指し、隣のカイも顔を上げる。左腕に盾、カイの素手の右手に剣を安全に下ろす。青い布と庭の標的を残し、塔の光環は描かない。。セナは右手で上を指し、左腕の盾は下げて保つ。カイの銅カフは左腕だけ。 人物の下は大きな白い余白と振動音の減衰だけ。塔やその輪郭を先に描かない。
 Dialogue/thought only, speaker セナ, voice 切迫した声. EXACT text: カイ、上！. Vertical columns RIGHT to LEFT: カイ、 / 上！.
-Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+Continuing sound from moment 19-2: ゴゴゴゴ…. 接写から二人の反応へ続き、顔・指・盾・剣・吹き出しを避けて下の白い余白へ伸びる This is the SAME inscription crossing the panel boundary and gutter, not a new sound or a duplicate complete word. Keep it outside balloons and off faces, hands and dialogue.
 No unlisted words or sound effects.
 
 ```
@@ -705,16 +705,17 @@ Lettering: true Japanese vertical speech, upright black printed manga glyphs, co
 
 Chapter 1 revised, strip 21. Image ratio 1:3. Scene: 閉ざされた行き先. Place and continuity: 庭から見える東門。その後、同じ工房の扉とカイの視界。薄暮。. Purpose: 明日向かう門が閉じ、剣を作った工房街が停電した。ゲームの区域イベントとして確認する。. Exactly 3 narrative moments (not mandatory full-width panels), with unequal sizes as described.
 
-Scroll composition takes precedence over the reference or default panel grid: 上の広い門の衝撃、間を置いた小さな消灯、下の広い本人視点HUD。均等な三箱へしない。 Reading order: 上から下。手掛かり→知覚→次の情報。 Preserve borderless continuous scenery, same-row pairs and quiet white space; never turn every narrative moment into a full-width rectangle.
+Scroll composition takes precedence over the reference or default panel grid: 閉じる東門の大きな斜め枠→白い斜めの間→消えた灯具の小さなコマ→本人のHUD。ガァンの末尾が門の枠と余白を跨ぎ、消灯コマの空いた端へ続く。残響はHUDより前で終わる。 Reading order: 上から下。手掛かり→知覚→次の情報。 Preserve borderless continuous scenery, same-row pairs and quiet white space; never turn every narrative moment into a full-width rectangle.
 
 Panel 1, top to bottom. Artwork, camera, size and main focus: 上の幅いっぱいの斜め枠。庭から通りの向こうに見えていた塔の東門の鉄格子が激しく落ちる。門の前の少数の冒険者が立ち止まり見上げる。二人は庭で画面外。誰も潰されず、建物も崩れない。塔の巨大な光はもう収まる。
 Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
-Sound effect EXACT text: ガァン. Cause: 東門の鉄格子が石の下枠へ止まる. Placement: 門の接地部を避けた空き. Drawn lettering: 重い角張った描き文字、白の細縁. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+Sound effect EXACT text: ガァン. Cause: 東門の鉄格子が石の下枠へ止まる. Placement: 門の空いた石壁から斜めに枠を越え、白い間と次の消灯コマの空いた右端へ。末尾のンが二つのコマをつなぐ. Drawn lettering: 重い大きな黒の描き文字と細い白縁。余白にも残響線を伸ばし、同じ一つの衝撃が減衰する. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
 No unlisted words or sound effects.
 
 Panel 2, top to bottom. Artwork, camera, size and main focus: 中央左寄せの幅65％の静かな接写。前の場面と同じ青い布と真鍮灯。橙の魔導灯が消え、布が暗青になる。遠い主都市の灯りは残る。
 Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
 Sound effect EXACT text: フッ. Cause: 魔導灯が消える瞬間のゲーム内の短い音. Placement: 消えた灯具のそば. Drawn lettering: 小さく柔らかな灰白色、轟音との強弱をつける. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+Continuing sound from moment 21-1: ガァン. 前の門の枠から白い間を越えて消灯コマの空いた右端へ末尾が響く。フッとは別の音。HUDに届く前に終わる This is the SAME inscription crossing the panel boundary and gutter, not a new sound or a duplicate complete word. Keep it outside balloons and off faces, hands and dialogue.
 No unlisted words or sound effects.
 
 Panel 3, top to bottom. Artwork, camera, size and main focus: 下の大きなカイの肩越し。カイは左カフを少し上げ、自動着信した区域通知を見る。右手の剣は下ろしたまま。窓は本人のHUD。顔と剣を避け広く3行。背景に青い布と暗い工房入口。セナは庭で近くにいるが画面外。。銅カフは上げた左腕だけ、右の剣を持つ手首は素肌。
