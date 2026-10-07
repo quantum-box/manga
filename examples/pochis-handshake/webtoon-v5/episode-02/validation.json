@@ -1,211 +1,776 @@
 {
   "episode": 2,
+  "browserTool": "cua_repl",
   "views": [
     {
-      "innerWidth": 390,
-      "innerHeight": 844,
-      "scrollWidth": 390,
-      "scrollHeight": 8872,
-      "images": [
+      "figures": [
         {
-          "src": "art/01.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 123.796875,
-          "bottom": 903.796875,
-          "displayWidth": 390
+          "bottom": 905.296875,
+          "id": "scene-01",
+          "marginAfter": 54.1667,
+          "pauses": [],
+          "top": 125.296875,
+          "windows": []
         },
         {
-          "src": "art/02.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 978.796875,
-          "bottom": 1758.796875,
-          "displayWidth": 390
+          "bottom": 2112.1171875,
+          "id": "scene-02",
+          "marginAfter": 173.333,
+          "pauses": [
+            {
+              "height": 97.5,
+              "purpose": "吠え声と、怖がった子の反応を分ける"
+            },
+            {
+              "height": 205.828125,
+              "purpose": "誤解されたことを受け止める"
+            }
+          ],
+          "top": 959.4609375,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 90.113%)",
+              "height": 383.5,
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,319],[360,354]]}",
+              "top": 959.4609375,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 15.0862%, 100% 100%, 0% 87.5%)",
+              "height": 251.328125,
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,319],[360,354]],\"lower\":[[0,522],[360,551]]}",
+              "top": 1440.4609375,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 14.6465%, 100% 100%, 0% 100%)",
+              "height": 214.5,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,522],[360,551]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 1897.6171875,
+              "width": 390
+            }
+          ]
         },
         {
-          "src": "art/03-continuity.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 1843.796875,
-          "bottom": 2623.796875,
-          "displayWidth": 390
+          "bottom": 3651.515625,
+          "id": "scene-03",
+          "marginAfter": 281.667,
+          "pauses": [
+            {
+              "height": 281.6640625,
+              "purpose": "ひとりにしないでという願いの後に黙って寄り添う"
+            },
+            {
+              "height": 227.4921875,
+              "purpose": "寄り添った安堵から内心へ移る"
+            }
+          ],
+          "top": 2285.4453125,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 93.921%)",
+              "height": 356.4140625,
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,309],[360,329]]}",
+              "top": 2285.4453125,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 8.03213%, 100% 100%, 0% 79.5181%)",
+              "height": 269.75,
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,309],[360,329]],\"lower\":[[0,507],[360,558]]}",
+              "top": 2923.5234375,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 23.9437%, 100% 100%, 0% 100%)",
+              "height": 230.75,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,507],[360,558]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3420.765625,
+              "width": 390
+            }
+          ]
         },
         {
-          "src": "art/04.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 2733.796875,
-          "bottom": 3513.796875,
-          "displayWidth": 390
+          "bottom": 4961.2578125,
+          "id": "scene-04",
+          "marginAfter": 37.9167,
+          "pauses": [
+            {
+              "height": 216.6640625,
+              "purpose": "遠くの呼び声を先に聞かせる"
+            }
+          ],
+          "top": 3933.1796875,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 80.2721%)",
+              "height": 159.25,
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,118],[360,147]]}",
+              "top": 3933.1796875,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 4.81728%, 100% 100%, 0% 100%)",
+              "height": 652.1640625,
+              "panels": "2-4",
+              "sourceRegion": "{\"upper\":[[0,118],[360,147]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 4309.09375,
+              "width": 390
+            }
+          ]
         },
         {
-          "src": "art/05.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 3568.796875,
-          "bottom": 4348.796875,
-          "displayWidth": 390
+          "bottom": 5779.171875,
+          "id": "scene-05",
+          "marginAfter": 30.3333,
+          "pauses": [],
+          "top": 4999.171875,
+          "windows": []
         },
         {
-          "src": "art/06.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 4393.796875,
-          "bottom": 5173.796875,
-          "displayWidth": 390
+          "bottom": 6589.5,
+          "id": "scene-06",
+          "marginAfter": 32.5,
+          "pauses": [],
+          "top": 5809.5,
+          "windows": []
         },
         {
-          "src": "art/07.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 5218.796875,
-          "bottom": 5998.796875,
-          "displayWidth": 390
+          "bottom": 7401.9921875,
+          "id": "scene-07",
+          "marginAfter": 86.6667,
+          "pauses": [],
+          "top": 6621.9921875,
+          "windows": []
         },
         {
-          "src": "art/08.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 6098.796875,
-          "bottom": 6878.796875,
-          "displayWidth": 390
+          "bottom": 8268.65625,
+          "id": "scene-08",
+          "marginAfter": 281.667,
+          "pauses": [],
+          "top": 7488.65625,
+          "windows": []
         },
         {
-          "src": "art/09.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 6938.796875,
-          "bottom": 7718.796875,
-          "displayWidth": 390
+          "bottom": 9693.234375,
+          "id": "scene-09",
+          "marginAfter": 346.667,
+          "pauses": [
+            {
+              "height": 357.5,
+              "purpose": "子供の無事を確かめてから、自分の震えに気づく"
+            }
+          ],
+          "top": 8550.3203125,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 99.0689%, 0% 100%)",
+              "height": 581.75,
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,537],[360,532]]}",
+              "top": 8550.3203125,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 2.65957%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 203.6640625,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,537],[360,532]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 9489.5703125,
+              "width": 390
+            }
+          ]
         },
         {
-          "src": "art/10.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 7843.796875,
-          "bottom": 8623.796875,
-          "displayWidth": 390
+          "bottom": 11324.71875,
+          "id": "scene-10",
+          "marginAfter": 325,
+          "pauses": [
+            {
+              "height": 238.328125,
+              "purpose": "誘いへの返事を急がず、目と足元を確かめる"
+            },
+            {
+              "height": 260,
+              "purpose": "選んだ温かさを残して帰路へ移る"
+            }
+          ],
+          "top": 10039.8984375,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 99.1031%, 0% 100%)",
+              "height": 241.578125,
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,223],[360,221]]}",
+              "top": 10039.8984375,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 0.81301%, 100% 0%, 100% 100%, 0% 98.374%)",
+              "height": 266.5,
+              "panels": "2-3",
+              "sourceRegion": "{\"upper\":[[0,223],[360,221]],\"lower\":[[0,463],[360,467]]}",
+              "top": 10519.8046875,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 1.55642%, 100% 100%, 0% 100%)",
+              "height": 278.4140625,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,463],[360,467]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 11046.3046875,
+              "width": 390
+            }
+          ]
         }
       ],
+      "images": [
+        {
+          "alt": "手がない。PO内心：動かない。／TO：足、抜けない。／PO内心：手があれば。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/01.webp"
+        },
+        {
+          "alt": "届かない説明。PO内心：人を呼ぶよ。／PO発声：ワン！",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/02.webp"
+        },
+        {
+          "alt": "届かない説明。TO：怒らないで。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/02.webp"
+        },
+        {
+          "alt": "届かない説明。PO内心：違うんだよ。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/02.webp"
+        },
+        {
+          "alt": "そばにいる。TO：ひとりにしないで。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03-continuity.webp"
+        },
+        {
+          "alt": "そばにいる。無言の動作。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03-continuity.webp"
+        },
+        {
+          "alt": "そばにいる。PO内心：怖かったよな。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03-continuity.webp"
+        },
+        {
+          "alt": "探している人。PR画面外：トトー！",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/04.webp"
+        },
+        {
+          "alt": "探している人。TO：ミラ姉ちゃん！／PO内心：呼んでくる。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/04.webp"
+        },
+        {
+          "alt": "追いかけてほしい。PO発声：ワン！／PR：迷子なの？／PO内心：俺じゃない！",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/05.webp"
+        },
+        {
+          "alt": "裾を引く。PR：そっちなの？／PR：案内して。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/06.webp"
+        },
+        {
+          "alt": "場所が伝わる。PR：トト！／TO：ここ！／PO内心：通じた。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/07.webp"
+        },
+        {
+          "alt": "力を合わせる。PR：ゆっくり抜いて。／TO：抜けた！",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/08.webp"
+        },
+        {
+          "alt": "助けたあと。PR：歩ける？／TO：うん。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/09.webp"
+        },
+        {
+          "alt": "助けたあと。PO内心：今ごろ震えが。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/09.webp"
+        },
+        {
+          "alt": "一緒に帰ろう。PR：君も、来る？",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/10.webp"
+        },
+        {
+          "alt": "一緒に帰ろう。PO内心：ひとりよりいい。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/10.webp"
+        },
+        {
+          "alt": "一緒に帰ろう。TO：犬も家に帰る！",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/10.webp"
+        }
+      ],
+      "innerHeight": 844,
+      "innerWidth": 390,
       "links": [
         "../chapters.html",
         "../episode-01/index.html",
         "../episode-03/index.html"
-      ]
+      ],
+      "scrollHeight": 11789,
+      "scrollWidth": 390
     },
     {
-      "innerWidth": 360,
-      "innerHeight": 800,
-      "scrollWidth": 360,
-      "scrollHeight": 8272,
-      "images": [
+      "figures": [
         {
-          "src": "art/01.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 123.796875,
-          "bottom": 843.796875,
-          "displayWidth": 360
+          "bottom": 845.296875,
+          "id": "scene-01",
+          "marginAfter": 50,
+          "pauses": [],
+          "top": 125.296875,
+          "windows": []
         },
         {
-          "src": "art/02.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 918.796875,
-          "bottom": 1638.796875,
-          "displayWidth": 360
+          "bottom": 1959.296875,
+          "id": "scene-02",
+          "marginAfter": 160,
+          "pauses": [
+            {
+              "height": 90,
+              "purpose": "吠え声と、怖がった子の反応を分ける"
+            },
+            {
+              "height": 190,
+              "purpose": "誤解されたことを受け止める"
+            }
+          ],
+          "top": 895.296875,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 90.113%)",
+              "height": 354,
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,319],[360,354]]}",
+              "top": 895.296875,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 15.0862%, 100% 100%, 0% 87.5%)",
+              "height": 232,
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,319],[360,354]],\"lower\":[[0,522],[360,551]]}",
+              "top": 1339.296875,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 14.6465%, 100% 100%, 0% 100%)",
+              "height": 198,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,522],[360,551]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 1761.296875,
+              "width": 360
+            }
+          ]
         },
         {
-          "src": "art/03-continuity.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 1723.796875,
-          "bottom": 2443.796875,
-          "displayWidth": 360
+          "bottom": 3380.28125,
+          "id": "scene-03",
+          "marginAfter": 260,
+          "pauses": [
+            {
+              "height": 260,
+              "purpose": "ひとりにしないでという願いの後に黙って寄り添う"
+            },
+            {
+              "height": 209.9921875,
+              "purpose": "寄り添った安堵から内心へ移る"
+            }
+          ],
+          "top": 2119.2890625,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 93.921%)",
+              "height": 329,
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,309],[360,329]]}",
+              "top": 2119.2890625,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 8.03213%, 100% 100%, 0% 79.5181%)",
+              "height": 249,
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,309],[360,329]],\"lower\":[[0,507],[360,558]]}",
+              "top": 2708.2890625,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 23.9437%, 100% 100%, 0% 100%)",
+              "height": 213,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,507],[360,558]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3167.28125,
+              "width": 360
+            }
+          ]
         },
         {
-          "src": "art/04.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 2553.796875,
-          "bottom": 3273.796875,
-          "displayWidth": 360
+          "bottom": 4589.28125,
+          "id": "scene-04",
+          "marginAfter": 35,
+          "pauses": [
+            {
+              "height": 200,
+              "purpose": "遠くの呼び声を先に聞かせる"
+            }
+          ],
+          "top": 3640.28125,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 80.2721%)",
+              "height": 147,
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,118],[360,147]]}",
+              "top": 3640.28125,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 4.81728%, 100% 100%, 0% 100%)",
+              "height": 602,
+              "panels": "2-4",
+              "sourceRegion": "{\"upper\":[[0,118],[360,147]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3987.28125,
+              "width": 360
+            }
+          ]
         },
         {
-          "src": "art/05.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 3328.796875,
-          "bottom": 4048.796875,
-          "displayWidth": 360
+          "bottom": 5344.2734375,
+          "id": "scene-05",
+          "marginAfter": 28,
+          "pauses": [],
+          "top": 4624.2734375,
+          "windows": []
         },
         {
-          "src": "art/06.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 4093.796875,
-          "bottom": 4813.796875,
-          "displayWidth": 360
+          "bottom": 6092.2734375,
+          "id": "scene-06",
+          "marginAfter": 30,
+          "pauses": [],
+          "top": 5372.2734375,
+          "windows": []
         },
         {
-          "src": "art/07.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 4858.796875,
-          "bottom": 5578.796875,
-          "displayWidth": 360
+          "bottom": 6842.265625,
+          "id": "scene-07",
+          "marginAfter": 80,
+          "pauses": [],
+          "top": 6122.265625,
+          "windows": []
         },
         {
-          "src": "art/08.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 5678.796875,
-          "bottom": 6398.796875,
-          "displayWidth": 360
+          "bottom": 7642.2578125,
+          "id": "scene-08",
+          "marginAfter": 260,
+          "pauses": [],
+          "top": 6922.2578125,
+          "windows": []
         },
         {
-          "src": "art/09.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 6458.796875,
-          "bottom": 7178.796875,
-          "displayWidth": 360
+          "bottom": 8957.2578125,
+          "id": "scene-09",
+          "marginAfter": 320,
+          "pauses": [
+            {
+              "height": 330,
+              "purpose": "子供の無事を確かめてから、自分の震えに気づく"
+            }
+          ],
+          "top": 7902.2578125,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 99.0689%, 0% 100%)",
+              "height": 537,
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,537],[360,532]]}",
+              "top": 7902.2578125,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 2.65957%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 188,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,537],[360,532]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 8769.2578125,
+              "width": 360
+            }
+          ]
         },
         {
-          "src": "art/10.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 7303.796875,
-          "bottom": 8023.796875,
-          "displayWidth": 360
+          "bottom": 10463.2578125,
+          "id": "scene-10",
+          "marginAfter": 300,
+          "pauses": [
+            {
+              "height": 220,
+              "purpose": "誘いへの返事を急がず、目と足元を確かめる"
+            },
+            {
+              "height": 240,
+              "purpose": "選んだ温かさを残して帰路へ移る"
+            }
+          ],
+          "top": 9277.2578125,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 99.1031%, 0% 100%)",
+              "height": 223,
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,223],[360,221]]}",
+              "top": 9277.2578125,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 0.81301%, 100% 0%, 100% 100%, 0% 98.374%)",
+              "height": 246,
+              "panels": "2-3",
+              "sourceRegion": "{\"upper\":[[0,223],[360,221]],\"lower\":[[0,463],[360,467]]}",
+              "top": 9720.2578125,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 1.55642%, 100% 100%, 0% 100%)",
+              "height": 257,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,463],[360,467]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 10206.2578125,
+              "width": 360
+            }
+          ]
         }
       ],
+      "images": [
+        {
+          "alt": "手がない。PO内心：動かない。／TO：足、抜けない。／PO内心：手があれば。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/01.webp"
+        },
+        {
+          "alt": "届かない説明。PO内心：人を呼ぶよ。／PO発声：ワン！",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/02.webp"
+        },
+        {
+          "alt": "届かない説明。TO：怒らないで。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/02.webp"
+        },
+        {
+          "alt": "届かない説明。PO内心：違うんだよ。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/02.webp"
+        },
+        {
+          "alt": "そばにいる。TO：ひとりにしないで。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03-continuity.webp"
+        },
+        {
+          "alt": "そばにいる。無言の動作。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03-continuity.webp"
+        },
+        {
+          "alt": "そばにいる。PO内心：怖かったよな。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03-continuity.webp"
+        },
+        {
+          "alt": "探している人。PR画面外：トトー！",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/04.webp"
+        },
+        {
+          "alt": "探している人。TO：ミラ姉ちゃん！／PO内心：呼んでくる。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/04.webp"
+        },
+        {
+          "alt": "追いかけてほしい。PO発声：ワン！／PR：迷子なの？／PO内心：俺じゃない！",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/05.webp"
+        },
+        {
+          "alt": "裾を引く。PR：そっちなの？／PR：案内して。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/06.webp"
+        },
+        {
+          "alt": "場所が伝わる。PR：トト！／TO：ここ！／PO内心：通じた。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/07.webp"
+        },
+        {
+          "alt": "力を合わせる。PR：ゆっくり抜いて。／TO：抜けた！",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/08.webp"
+        },
+        {
+          "alt": "助けたあと。PR：歩ける？／TO：うん。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/09.webp"
+        },
+        {
+          "alt": "助けたあと。PO内心：今ごろ震えが。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/09.webp"
+        },
+        {
+          "alt": "一緒に帰ろう。PR：君も、来る？",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/10.webp"
+        },
+        {
+          "alt": "一緒に帰ろう。PO内心：ひとりよりいい。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/10.webp"
+        },
+        {
+          "alt": "一緒に帰ろう。TO：犬も家に帰る！",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/10.webp"
+        }
+      ],
+      "innerHeight": 800,
+      "innerWidth": 360,
       "links": [
         "../chapters.html",
         "../episode-01/index.html",
         "../episode-03/index.html"
-      ]
+      ],
+      "scrollHeight": 10903,
+      "scrollWidth": 360
     }
   ],
   "letteringCheck": {
@@ -228,55 +793,147 @@
   "gaps": [
     {
       "scene": "01",
-      "cssPx": 75,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 50,
+      "purpose": "動かせない木から助けを呼ぶ試行へつなぐ",
+      "internal": []
     },
     {
       "scene": "02",
-      "cssPx": 85,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 160,
+      "purpose": "声が通じない落胆を受け止める",
+      "internal": [
+        {
+          "afterPanel": 2,
+          "left": 319,
+          "right": 354,
+          "pause": 90,
+          "purpose": "吠え声と、怖がった子の反応を分ける",
+          "gutterPixelFraction": 0.995
+        },
+        {
+          "afterPanel": 3,
+          "left": 522,
+          "right": 551,
+          "pause": 190,
+          "purpose": "誤解されたことを受け止める",
+          "gutterPixelFraction": 0.9534
+        }
+      ]
     },
     {
       "scene": "03",
-      "cssPx": 110,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 260,
+      "purpose": "寄り添った静けさに遠くの呼び声が届く",
+      "internal": [
+        {
+          "afterPanel": 2,
+          "left": 309,
+          "right": 329,
+          "pause": 260,
+          "purpose": "ひとりにしないでという願いの後に黙って寄り添う",
+          "gutterPixelFraction": 0.9792
+        },
+        {
+          "afterPanel": 3,
+          "left": 507,
+          "right": 558,
+          "pause": 210,
+          "purpose": "寄り添った安堵から内心へ移る",
+          "gutterPixelFraction": 0.9246
+        }
+      ]
     },
     {
       "scene": "04",
-      "cssPx": 55,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 35,
+      "purpose": "呼び声を頼りに駆け出す速さを保つ",
+      "internal": [
+        {
+          "afterPanel": 1,
+          "left": 118,
+          "right": 147,
+          "pause": 200,
+          "purpose": "遠くの呼び声を先に聞かせる",
+          "gutterPixelFraction": 0.9782
+        }
+      ]
     },
     {
       "scene": "05",
-      "cssPx": 45,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 28,
+      "purpose": "誤解を解こうとすぐ裾へ向かう",
+      "internal": []
     },
     {
       "scene": "06",
-      "cssPx": 45,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 30,
+      "purpose": "合図が伝わり、道案内へすぐつなぐ",
+      "internal": []
     },
     {
       "scene": "07",
-      "cssPx": 100,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 80,
+      "purpose": "伝わった安堵から共同救助へ進む",
+      "internal": []
     },
     {
       "scene": "08",
-      "cssPx": 60,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 260,
+      "purpose": "抜けた足を確かめる安堵",
+      "internal": []
     },
     {
       "scene": "09",
-      "cssPx": 125,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 320,
+      "purpose": "緊張が解けて震えた後、同行の誘いを待つ",
+      "internal": [
+        {
+          "afterPanel": 3,
+          "left": 537,
+          "right": 532,
+          "pause": 330,
+          "purpose": "子供の無事を確かめてから、自分の震えに気づく",
+          "gutterPixelFraction": 0.9246
+        }
+      ]
     },
     {
       "scene": "10",
-      "cssPx": 110,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 300,
+      "purpose": "自分で帰る場所を選んだ余韻",
+      "internal": [
+        {
+          "afterPanel": 1,
+          "left": 223,
+          "right": 221,
+          "pause": 220,
+          "purpose": "誘いへの返事を急がず、目と足元を確かめる",
+          "gutterPixelFraction": 0.9792
+        },
+        {
+          "afterPanel": 3,
+          "left": 463,
+          "right": 467,
+          "pause": 240,
+          "purpose": "選んだ温かさを残して帰路へ移る",
+          "gutterPixelFraction": 0.877
+        }
+      ]
     }
   ],
+  "uniqueArtwork": 10,
+  "displayWindows": 18,
   "standaloneArtworkBytesMatch": true,
+  "sourcePixelsCovered": true,
   "physicalDeviceTest": false
 }

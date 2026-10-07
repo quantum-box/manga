@@ -1,211 +1,776 @@
 {
   "episode": 5,
+  "browserTool": "cua_repl",
   "views": [
     {
-      "innerWidth": 390,
-      "innerHeight": 844,
-      "scrollWidth": 390,
-      "scrollHeight": 9042,
-      "images": [
+      "figures": [
         {
-          "src": "art/01.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 123.796875,
-          "bottom": 903.796875,
-          "displayWidth": 390
+          "bottom": 905.296875,
+          "id": "scene-01",
+          "marginAfter": 81.25,
+          "pauses": [],
+          "top": 125.296875,
+          "windows": []
         },
         {
-          "src": "art/02-distance.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 988.796875,
-          "bottom": 1768.796875,
-          "displayWidth": 390
+          "bottom": 1766.5390625,
+          "id": "scene-02",
+          "marginAfter": 65,
+          "pauses": [],
+          "top": 986.5390625,
+          "windows": []
         },
         {
-          "src": "art/03.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 1813.796875,
-          "bottom": 2593.796875,
-          "displayWidth": 390
+          "bottom": 3084.9453125,
+          "id": "scene-03",
+          "marginAfter": 238.333,
+          "pauses": [
+            {
+              "height": 195,
+              "purpose": "自分の怖かった記憶を重ねる"
+            },
+            {
+              "height": 260,
+              "purpose": "相手の恐怖にも気づく"
+            }
+          ],
+          "top": 1831.5390625,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 96.9112%)",
+              "height": 280.578125,
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,251],[360,259]]}",
+              "top": 1831.5390625,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 2.96296%, 100% 96.6667%, 0% 100%)",
+              "height": 292.5,
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,251],[360,259]],\"lower\":[[0,521],[360,512]]}",
+              "top": 2307.1171875,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 4.32692%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 225.328125,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,521],[360,512]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 2859.6171875,
+              "width": 390
+            }
+          ]
         },
         {
-          "src": "art/04.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 2703.796875,
-          "bottom": 3483.796875,
-          "displayWidth": 390
+          "bottom": 4531.1875,
+          "id": "scene-04",
+          "marginAfter": 205.833,
+          "pauses": [
+            {
+              "height": 422.5,
+              "purpose": "返事を待つ無言の時間。飲み始める姿は下に残す"
+            }
+          ],
+          "top": 3323.2734375,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 99.0566%, 0% 100%)",
+              "height": 574.1640625,
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,530],[360,525]]}",
+              "top": 3323.2734375,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 2.5641%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 211.25,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,530],[360,525]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 4319.9375,
+              "width": 390
+            }
+          ]
         },
         {
-          "src": "art/05.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 3618.796875,
-          "bottom": 4398.796875,
-          "displayWidth": 390
+          "bottom": 6097.671875,
+          "id": "scene-05",
+          "marginAfter": 162.5,
+          "pauses": [
+            {
+              "height": 368.328125,
+              "purpose": "威嚇を受けて手を止め、相手が落ち着くのを待つ"
+            },
+            {
+              "height": 162.5,
+              "purpose": "触れないという選択を受け止める"
+            }
+          ],
+          "top": 4737.015625,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 93.1429%)",
+              "height": 379.1640625,
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,326],[360,350]]}",
+              "top": 4737.015625,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 10.8597%, 100% 90.0452%, 0% 100%)",
+              "height": 239.4140625,
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,326],[360,350]],\"lower\":[[0,547],[360,525]]}",
+              "top": 5484.5078125,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 11.2821%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 211.25,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,547],[360,525]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 5886.421875,
+              "width": 390
+            }
+          ]
         },
         {
-          "src": "art/06.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 4498.796875,
-          "bottom": 5278.796875,
-          "displayWidth": 390
+          "bottom": 7040.171875,
+          "id": "scene-06",
+          "marginAfter": 37.9167,
+          "pauses": [],
+          "top": 6260.171875,
+          "windows": []
         },
         {
-          "src": "art/07.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 5323.796875,
-          "bottom": 6103.796875,
-          "displayWidth": 390
+          "bottom": 8237.234375,
+          "id": "scene-07",
+          "marginAfter": 260,
+          "pauses": [
+            {
+              "height": 173.328125,
+              "purpose": "鎖が外れた動きを確かめる"
+            },
+            {
+              "height": 205.828125,
+              "purpose": "自由になった狼の反応を残す"
+            }
+          ],
+          "top": 7078.0859375,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 268.6640625,
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,248],[360,248]]}",
+              "top": 7078.0859375,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 316.328125,
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,248],[360,248]],\"lower\":[[0,540],[360,540]]}",
+              "top": 7520.078125,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 195,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,540],[360,540]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 8042.234375,
+              "width": 390
+            }
+          ]
         },
         {
-          "src": "art/08.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 6223.796875,
-          "bottom": 7003.796875,
-          "displayWidth": 390
+          "bottom": 9277.234375,
+          "id": "scene-08",
+          "marginAfter": 195,
+          "pauses": [],
+          "top": 8497.234375,
+          "windows": []
         },
         {
-          "src": "art/09.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 7103.796875,
-          "bottom": 7883.796875,
-          "displayWidth": 390
+          "bottom": 10252.234375,
+          "id": "scene-09",
+          "marginAfter": 205.833,
+          "pauses": [],
+          "top": 9472.234375,
+          "windows": []
         },
         {
-          "src": "art/10.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 7973.796875,
-          "bottom": 8753.796875,
-          "displayWidth": 390
+          "bottom": 11624.8125,
+          "id": "scene-10",
+          "marginAfter": 476.667,
+          "pauses": [
+            {
+              "height": 357.5,
+              "purpose": "狼が去った余韻を残して門へ向き直る"
+            }
+          ],
+          "top": 10458.0625,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 94.7977%, 0% 100%)",
+              "height": 562.25,
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,519],[360,492]]}",
+              "top": 10458.0625,
+              "width": 390
+            },
+            {
+              "clipPath": "polygon(0% 11.8421%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 247,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,519],[360,492]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 11377.8125,
+              "width": 390
+            }
+          ]
         }
       ],
+      "images": [
+        {
+          "alt": "牙。PO内心：食われる！／PR：待って。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/01.webp"
+        },
+        {
+          "alt": "近づけない理由。PO内心：逃げたいのか。／PR：絡まってる。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/02-distance.webp"
+        },
+        {
+          "alt": "怖いのはお互い。無言の動作。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03.webp"
+        },
+        {
+          "alt": "怖いのはお互い。PR：何もしないよ。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03.webp"
+        },
+        {
+          "alt": "怖いのはお互い。PO内心：俺も怖かった。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03.webp"
+        },
+        {
+          "alt": "急がない。PO内心：返事を待つ。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/04.webp"
+        },
+        {
+          "alt": "急がない。無言の動作。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/04.webp"
+        },
+        {
+          "alt": "一歩の許可。PR：鎖を外すね。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/05.webp"
+        },
+        {
+          "alt": "一歩の許可。無言の動作。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/05.webp"
+        },
+        {
+          "alt": "一歩の許可。PO内心：無理に触らない。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/05.webp"
+        },
+        {
+          "alt": "手が届く。PO内心：今は、待つ。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/06.webp"
+        },
+        {
+          "alt": "自由になった。無言の動作。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/07.webp"
+        },
+        {
+          "alt": "自由になった。PR：もう大丈夫。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/07.webp"
+        },
+        {
+          "alt": "自由になった。無言の動作。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/07.webp"
+        },
+        {
+          "alt": "同じ水を飲む。PO内心：牙だけじゃわからん。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/08.webp"
+        },
+        {
+          "alt": "道案内。PR：道、知ってるの？／PO内心：今度は俺たちが。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/09.webp"
+        },
+        {
+          "alt": "門で別れる。PR：ありがとう。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/10.webp"
+        },
+        {
+          "alt": "門で別れる。PO内心：次は、魔王か。",
+          "complete": true,
+          "displayWidth": 390,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/10.webp"
+        }
+      ],
+      "innerHeight": 844,
+      "innerWidth": 390,
       "links": [
         "../chapters.html",
         "../episode-04/index.html",
         "../episode-06/index.html"
-      ]
+      ],
+      "scrollHeight": 12241,
+      "scrollWidth": 390
     },
     {
-      "innerWidth": 360,
-      "innerHeight": 800,
-      "scrollWidth": 360,
-      "scrollHeight": 8442,
-      "images": [
+      "figures": [
         {
-          "src": "art/01.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 123.796875,
-          "bottom": 843.796875,
-          "displayWidth": 360
+          "bottom": 845.296875,
+          "id": "scene-01",
+          "marginAfter": 75,
+          "pauses": [],
+          "top": 125.296875,
+          "windows": []
         },
         {
-          "src": "art/02-distance.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 928.796875,
-          "bottom": 1648.796875,
-          "displayWidth": 360
+          "bottom": 1640.2890625,
+          "id": "scene-02",
+          "marginAfter": 60,
+          "pauses": [],
+          "top": 920.2890625,
+          "windows": []
         },
         {
-          "src": "art/03.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 1693.796875,
-          "bottom": 2413.796875,
-          "displayWidth": 360
+          "bottom": 2857.2890625,
+          "id": "scene-03",
+          "marginAfter": 220,
+          "pauses": [
+            {
+              "height": 180,
+              "purpose": "自分の怖かった記憶を重ねる"
+            },
+            {
+              "height": 240,
+              "purpose": "相手の恐怖にも気づく"
+            }
+          ],
+          "top": 1700.2890625,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 96.9112%)",
+              "height": 259,
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,251],[360,259]]}",
+              "top": 1700.2890625,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 2.96296%, 100% 96.6667%, 0% 100%)",
+              "height": 270,
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,251],[360,259]],\"lower\":[[0,521],[360,512]]}",
+              "top": 2139.2890625,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 4.32692%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 208,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,521],[360,512]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 2649.2890625,
+              "width": 360
+            }
+          ]
         },
         {
-          "src": "art/04.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 2523.796875,
-          "bottom": 3243.796875,
-          "displayWidth": 360
+          "bottom": 4192.2890625,
+          "id": "scene-04",
+          "marginAfter": 190,
+          "pauses": [
+            {
+              "height": 390,
+              "purpose": "返事を待つ無言の時間。飲み始める姿は下に残す"
+            }
+          ],
+          "top": 3077.2890625,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 99.0566%, 0% 100%)",
+              "height": 530,
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,530],[360,525]]}",
+              "top": 3077.2890625,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 2.5641%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 195,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,530],[360,525]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3997.2890625,
+              "width": 360
+            }
+          ]
         },
         {
-          "src": "art/05.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 3378.796875,
-          "bottom": 4098.796875,
-          "displayWidth": 360
+          "bottom": 5638.28125,
+          "id": "scene-05",
+          "marginAfter": 150,
+          "pauses": [
+            {
+              "height": 339.9921875,
+              "purpose": "威嚇を受けて手を止め、相手が落ち着くのを待つ"
+            },
+            {
+              "height": 150,
+              "purpose": "触れないという選択を受け止める"
+            }
+          ],
+          "top": 4382.2890625,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 93.1429%)",
+              "height": 350,
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,326],[360,350]]}",
+              "top": 4382.2890625,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 10.8597%, 100% 90.0452%, 0% 100%)",
+              "height": 221,
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,326],[360,350]],\"lower\":[[0,547],[360,525]]}",
+              "top": 5072.28125,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 11.2821%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 195,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,547],[360,525]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 5443.28125,
+              "width": 360
+            }
+          ]
         },
         {
-          "src": "art/06.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 4198.796875,
-          "bottom": 4918.796875,
-          "displayWidth": 360
+          "bottom": 6508.28125,
+          "id": "scene-06",
+          "marginAfter": 35,
+          "pauses": [],
+          "top": 5788.28125,
+          "windows": []
         },
         {
-          "src": "art/07.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 4963.796875,
-          "bottom": 5683.796875,
-          "displayWidth": 360
+          "bottom": 7613.265625,
+          "id": "scene-07",
+          "marginAfter": 240,
+          "pauses": [
+            {
+              "height": 159.9921875,
+              "purpose": "鎖が外れた動きを確かめる"
+            },
+            {
+              "height": 190,
+              "purpose": "自由になった狼の反応を残す"
+            }
+          ],
+          "top": 6543.2734375,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 248,
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,248],[360,248]]}",
+              "top": 6543.2734375,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 292,
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,248],[360,248]],\"lower\":[[0,540],[360,540]]}",
+              "top": 6951.265625,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 180,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,540],[360,540]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 7433.265625,
+              "width": 360
+            }
+          ]
         },
         {
-          "src": "art/08.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 5803.796875,
-          "bottom": 6523.796875,
-          "displayWidth": 360
+          "bottom": 8573.265625,
+          "id": "scene-08",
+          "marginAfter": 180,
+          "pauses": [],
+          "top": 7853.265625,
+          "windows": []
         },
         {
-          "src": "art/09.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 6623.796875,
-          "bottom": 7343.796875,
-          "displayWidth": 360
+          "bottom": 9473.265625,
+          "id": "scene-09",
+          "marginAfter": 190,
+          "pauses": [],
+          "top": 8753.265625,
+          "windows": []
         },
         {
-          "src": "art/10.webp",
-          "complete": true,
-          "naturalWidth": 887,
-          "naturalHeight": 1774,
-          "top": 7433.796875,
-          "bottom": 8153.796875,
-          "displayWidth": 360
+          "bottom": 10740.265625,
+          "id": "scene-10",
+          "marginAfter": 440,
+          "pauses": [
+            {
+              "height": 330,
+              "purpose": "狼が去った余韻を残して門へ向き直る"
+            }
+          ],
+          "top": 9663.265625,
+          "windows": [
+            {
+              "clipPath": "polygon(0% 0%, 100% 0%, 100% 94.7977%, 0% 100%)",
+              "height": 519,
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,519],[360,492]]}",
+              "top": 9663.265625,
+              "width": 360
+            },
+            {
+              "clipPath": "polygon(0% 11.8421%, 100% 0%, 100% 100%, 0% 100%)",
+              "height": 228,
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,519],[360,492]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 10512.265625,
+              "width": 360
+            }
+          ]
         }
       ],
+      "images": [
+        {
+          "alt": "牙。PO内心：食われる！／PR：待って。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/01.webp"
+        },
+        {
+          "alt": "近づけない理由。PO内心：逃げたいのか。／PR：絡まってる。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/02-distance.webp"
+        },
+        {
+          "alt": "怖いのはお互い。無言の動作。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03.webp"
+        },
+        {
+          "alt": "怖いのはお互い。PR：何もしないよ。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03.webp"
+        },
+        {
+          "alt": "怖いのはお互い。PO内心：俺も怖かった。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/03.webp"
+        },
+        {
+          "alt": "急がない。PO内心：返事を待つ。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/04.webp"
+        },
+        {
+          "alt": "急がない。無言の動作。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/04.webp"
+        },
+        {
+          "alt": "一歩の許可。PR：鎖を外すね。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/05.webp"
+        },
+        {
+          "alt": "一歩の許可。無言の動作。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/05.webp"
+        },
+        {
+          "alt": "一歩の許可。PO内心：無理に触らない。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/05.webp"
+        },
+        {
+          "alt": "手が届く。PO内心：今は、待つ。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/06.webp"
+        },
+        {
+          "alt": "自由になった。無言の動作。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/07.webp"
+        },
+        {
+          "alt": "自由になった。PR：もう大丈夫。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/07.webp"
+        },
+        {
+          "alt": "自由になった。無言の動作。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/07.webp"
+        },
+        {
+          "alt": "同じ水を飲む。PO内心：牙だけじゃわからん。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/08.webp"
+        },
+        {
+          "alt": "道案内。PR：道、知ってるの？／PO内心：今度は俺たちが。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/09.webp"
+        },
+        {
+          "alt": "門で別れる。PR：ありがとう。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/10.webp"
+        },
+        {
+          "alt": "門で別れる。PO内心：次は、魔王か。",
+          "complete": true,
+          "displayWidth": 360,
+          "naturalHeight": 1774,
+          "naturalWidth": 887,
+          "src": "art/10.webp"
+        }
+      ],
+      "innerHeight": 800,
+      "innerWidth": 360,
       "links": [
         "../chapters.html",
         "../episode-04/index.html",
         "../episode-06/index.html"
-      ]
+      ],
+      "scrollHeight": 11320,
+      "scrollWidth": 360
     }
   ],
   "letteringCheck": {
@@ -228,55 +793,147 @@
   "gaps": [
     {
       "scene": "01",
-      "cssPx": 85,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 75,
+      "purpose": "牙への驚きから鎖を観察する",
+      "internal": []
     },
     {
       "scene": "02",
-      "cssPx": 45,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 60,
+      "purpose": "鎖を見て恐怖の理由を考える",
+      "internal": []
     },
     {
       "scene": "03",
-      "cssPx": 110,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 220,
+      "purpose": "互いの怖さを理解して距離を取る",
+      "internal": [
+        {
+          "afterPanel": 2,
+          "left": 251,
+          "right": 259,
+          "pause": 180,
+          "purpose": "自分の怖かった記憶を重ねる",
+          "gutterPixelFraction": 0.9524
+        },
+        {
+          "afterPanel": 3,
+          "left": 521,
+          "right": 512,
+          "pause": 240,
+          "purpose": "相手の恐怖にも気づく",
+          "gutterPixelFraction": 0.9663
+        }
+      ]
     },
     {
       "scene": "04",
-      "cssPx": 135,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 190,
+      "purpose": "狼の返事を待ち、焦って触れない",
+      "internal": [
+        {
+          "afterPanel": 3,
+          "left": 530,
+          "right": 525,
+          "pause": 390,
+          "purpose": "返事を待つ無言の時間。飲み始める姿は下に残す",
+          "gutterPixelFraction": 0.9792
+        }
+      ]
     },
     {
       "scene": "05",
-      "cssPx": 100,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 150,
+      "purpose": "許可を待ってから鎖に手を伸ばす",
+      "internal": [
+        {
+          "afterPanel": 2,
+          "left": 326,
+          "right": 350,
+          "pause": 340,
+          "purpose": "威嚇を受けて手を止め、相手が落ち着くのを待つ",
+          "gutterPixelFraction": 0.9226
+        },
+        {
+          "afterPanel": 3,
+          "left": 547,
+          "right": 525,
+          "pause": 150,
+          "purpose": "触れないという選択を受け止める",
+          "gutterPixelFraction": 1.0
+        }
+      ]
     },
     {
       "scene": "06",
-      "cssPx": 45,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 35,
+      "purpose": "鎖を外す手の動作を近く読む",
+      "internal": []
     },
     {
       "scene": "07",
-      "cssPx": 120,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 240,
+      "purpose": "自由を確かめた安堵",
+      "internal": [
+        {
+          "afterPanel": 2,
+          "left": 248,
+          "right": 248,
+          "pause": 160,
+          "purpose": "鎖が外れた動きを確かめる",
+          "gutterPixelFraction": 1.0
+        },
+        {
+          "afterPanel": 3,
+          "left": 540,
+          "right": 540,
+          "pause": 190,
+          "purpose": "自由になった狼の反応を残す",
+          "gutterPixelFraction": 1.0
+        }
+      ]
     },
     {
       "scene": "08",
-      "cssPx": 100,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 180,
+      "purpose": "同じ水を飲んだ距離感を残す",
+      "internal": []
     },
     {
       "scene": "09",
-      "cssPx": 90,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 190,
+      "purpose": "案内された道の移動と門への到着",
+      "internal": []
     },
     {
       "scene": "10",
-      "cssPx": 150,
-      "purpose": "同じ場面の観察、行動、反応をつなぐ"
+      "referenceWidth": 360,
+      "referencePx": 440,
+      "purpose": "見送った余韻から、閉じた門へ向き直る",
+      "internal": [
+        {
+          "afterPanel": 3,
+          "left": 519,
+          "right": 492,
+          "pause": 330,
+          "purpose": "狼が去った余韻を残して門へ向き直る",
+          "gutterPixelFraction": 1.0
+        }
+      ]
     }
   ],
+  "uniqueArtwork": 10,
+  "displayWindows": 18,
   "standaloneArtworkBytesMatch": true,
+  "sourcePixelsCovered": true,
   "physicalDeviceTest": false
 }

@@ -10,7 +10,7 @@
 
 採用画像: art/01-lettering.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 60px、本文幅に比例。肉球の驚きから身体の試行へ進む
 
 1. Shallow close-up ear twitching to birdsong.
    発話: なし / 無言
@@ -28,7 +28,7 @@
 
 採用画像: art/02-lettering.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 40px、本文幅に比例。立つ・歩く試行の速さを保つ
 
 1. Same blue-flower clearing. Tries standing on hind legs like a human.
    発話: なし / 無言
@@ -46,7 +46,9 @@
 
 採用画像: art/03-lettering.webp
 
-間: 90 CSS px。反射を見つけてから正体を受け止める
+場面の後: 360px幅で 220px、本文幅に比例。姿を知った戸惑いを受け止める
+
+コマ2の後: 360px幅で 180px。水面の自分を見つめ、姿を理解するまで待つ。原画の境界は左 330px / 右 330px。
 
 1. Follows faint stream sound from clearing to small pond by same stone arch.
    発話: なし / 無言
@@ -64,7 +66,11 @@
 
 採用画像: art/04-lettering.webp
 
-間: 110 CSS px。前世の断片のあと、帰れない不安へ戻る
+場面の後: 360px幅で 190px、本文幅に比例。昨日の記憶の余韻を残す
+
+コマ1の後: 360px幅で 190px。昨日の記憶へ視点を切り替える。原画の境界は左 236px / 右 236px。
+
+コマ3の後: 360px幅で 240px。雨の記憶から、いまの身体へ戻る。原画の境界は左 507px / 右 507px。
 
 1. Present PO sits beside pond trying to remember.
    発話: PO内心 / 昨日は……。
@@ -82,7 +88,7 @@
 
 採用画像: art/05-lettering.webp
 
-間: 95 CSS px。発声の失敗から沈黙を置く
+場面の後: 360px幅で 130px、本文幅に比例。声まで犬になった驚きから身体の反応へ戻る
 
 1. PO faces pond, opens mouth to call for help; thought is human.
    発話: PO内心 / 助けて……。
@@ -100,7 +106,7 @@
 
 採用画像: art/06-lettering.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 55px、本文幅に比例。空腹と反射の短い動作をつなぐ
 
 1. Worried PO hears belly rumble; tiny action mark, no extra word.
    発話: なし / 無言
@@ -118,7 +124,11 @@
 
 採用画像: art/07-lettering.webp
 
-間: 130 CSS px。一人であることを大きな引きで見せる
+場面の後: 360px幅で 360px、本文幅に比例。ひとりの静けさから遠い声を待つ
+
+コマ2の後: 360px幅で 180px。異世界と知った後に広い景色を受け止める。原画の境界は左 346px / 右 338px。
+
+コマ3の後: 360px幅で 270px。誰もいない静けさを読む。原画の境界は左 539px / 右 532px。
 
 1. Leaves pond, looks under arch: distant fantasy village roof and impossible twin moons faint in sky.
    発話: なし / 無言
@@ -136,7 +146,11 @@
 
 採用画像: art/08-lettering.webp
 
-間: 155 CSS px。声の主を次の画像へ先出ししない
+場面の後: 360px幅で 180px、本文幅に比例。怖さを抱えたまま次の選択を待つ
+
+コマ1の後: 360px幅で 320px。声だけが届き、耳を澄ませる。原画の境界は左 131px / 右 131px。
+
+コマ3の後: 360px幅で 180px。助けに向かう前の怖さを残す。原画の境界は左 482px / 右 482px。
 
 1. Same forest path, empty foliage. Faint unseen child voice.
    発話: TO画面外 / だれか……。
@@ -154,7 +168,9 @@
 
 採用画像: art/09-lettering.webp
 
-間: 150 CSS px。匂いと足跡を下へ追い、子供の発見を待つ
+場面の後: 360px幅で 140px、本文幅に比例。手掛かりをたどった後に子供を見つける
+
+コマ1の後: 360px幅で 150px。放っておけないと決めてから動き出す。原画の境界は左 172px / 右 188px。
 
 1. PO lowers paw toward sound, decision close-up.
    発話: PO内心 / でも放っとけない。
@@ -172,7 +188,7 @@
 
 採用画像: art/10-lettering.webp
 
-間: 100 CSS px。状況と次話の救助課題を残す
+場面の後: 360px幅で 260px、本文幅に比例。見つけた子を助けようとする決意を残す
 
 1. Through bushes at slope PO first sees ochre poncho, then small hand.
    発話: なし / 無言
