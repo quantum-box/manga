@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PRODUCTION_LABEL = re.compile(
     r"日本語縦書き|原画統合|改稿版|再制作版|増補版|初稿|"
-    r"ロードマップ|作画済み|改稿待ち|場面脚本|仮構成|公開準備中|各(?:話)?(?:約)?\d+(?:枚|コマ)|"
+    r"ロードマップ|作画済み|完成作画|スマホ確認|改稿待ち|場面脚本|仮構成|公開準備中|各(?:話)?(?:約)?\d+(?:枚|コマ)|"
     r"(?:^|[\s・·（(])v\d+(?:$|[\s・·）)])"
 )
 
@@ -44,7 +44,21 @@ class VisibleCopy(HTMLParser):
             raise ValueError(f"Production label in public chapter list: {data.strip()}")
 
 
+def check_readme(text):
+    """Only the reader's work list is public copy; production sections are notes."""
+    in_work_list = False
+    for line in text.splitlines():
+        if line.startswith("## "):
+            in_work_list = line == "## 読める作品"
+        if in_work_list and line.startswith("| ["):
+            description = line.split("|")[-2]
+            if PRODUCTION_LABEL.search(description):
+                raise ValueError(f"Production label in public work list: {description.strip()}")
+
+
 if __name__ == "__main__":
+    check_readme((ROOT / "README.md").read_text(encoding="utf-8"))
+    print("Customer copy verified: README.md work list")
     for path in (ROOT / "content/catalog.json", ROOT / "ios/Manga/Webtoons/catalog.json"):
         catalog = json.loads(path.read_text(encoding="utf-8"))
         check(catalog)
