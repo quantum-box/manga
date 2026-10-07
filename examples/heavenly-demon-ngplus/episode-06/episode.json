@@ -1,51 +1,125 @@
 {
   "title": "天魔、二周目。",
   "chapter": 6,
-  "subtitle": "ラスボスは、まだ死ねない",
+  "subtitle": "同じ傷、違う証拠",
+  "revision": "full-rebuild-2026-10-07",
   "artwork": [
     {
-      "file": "art/01.png",
+      "id": "01",
+      "file": "art/rebuild-01.png",
       "width": 724,
       "height": 2172,
-      "sha256": "98e566bbc805ff4572e45b7776d5c5fd74965290e1d572d964e34b05a8e42c11"
+      "sha256": "c65b85c06559641ecedd38316bea77234a73d74a92d1db6e237318cbfbe4ab59"
     },
     {
-      "file": "art/04-pacing.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "c7461273472a73ecea1a2157c46da99f151b16294564aac84b384e8788e339cf"
+      "id": "02",
+      "file": "art/rebuild-02-clip.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "f14698f44e5d277802e399d6cf7342cc792a7f95ea8a0e9cdb4682a18029106f"
     },
     {
-      "file": "art/02.png",
-      "width": 727,
-      "height": 2163,
-      "sha256": "be08ff3908fd7fd820f28cab74a3b734b131fb4aa3aa05b13500b69dec3771c2"
+      "id": "03",
+      "file": "art/rebuild-03.png",
+      "width": 887,
+      "height": 1774,
+      "sha256": "5ba538c08464c7d9fe2738da3f1ca83748df2971437e33de7a77ac3d89162eea"
     },
     {
-      "file": "art/03.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "1cdcfa92c7319a5cdf5ffabf0dfea5ccf0972cdfcb524088203554bf0397ca70"
+      "id": "04",
+      "file": "art/rebuild-04-tracing.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "e3e4d8a93a26997b5d659f8c7c366515a2038571ee21877072ffbca51562390d"
+    },
+    {
+      "id": "05",
+      "file": "art/rebuild-05.png",
+      "width": 726,
+      "height": 2167,
+      "sha256": "95333516b421bf069816e43a6913ad1253f8f0f64f5afa2175de761130b3851e"
+    },
+    {
+      "id": "06",
+      "file": "art/rebuild-06-bundle.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "b943d1d38036245710bb6e8b20a6db6e60ae3373c9e57f62b3046cc405cfd9c2"
     }
   ],
-  "generatedOriginals": 4,
-  "vignettes": 16,
-  "lettering": "vertical Japanese dialogue in image originals",
-  "readingTimeMeasured": false,
-  "protectedReveal": null,
   "readingOrder": [
     {
-      "scene": 1
+      "id": "beat-01-1",
+      "asset": "01",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 0,
+      "purpose": "前話の約束への返答として修理時の記録を取り出す"
     },
     {
-      "scene": 4
+      "id": "beat-02-1",
+      "asset": "02",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 340,
+      "purpose": "聞き手の問いと証人の答えを分ける"
     },
     {
-      "scene": 2
+      "id": "beat-03-1",
+      "asset": "03",
+      "range": [
+        0,
+        1774
+      ],
+      "gap390": 200,
+      "purpose": "力ではなく手先と技術で確かめる"
     },
     {
-      "scene": 3
+      "id": "beat-04-1",
+      "asset": "04",
+      "range": [
+        740,
+        1536
+      ],
+      "gap390": 900,
+      "purpose": "盗難後に壊れたという説明が崩れる"
+    },
+    {
+      "id": "beat-04-2",
+      "asset": "04",
+      "range": [
+        0,
+        740
+      ],
+      "gap390": 420,
+      "purpose": "盗難後に壊れたという説明が崩れる"
+    },
+    {
+      "id": "beat-05-1",
+      "asset": "05",
+      "range": [
+        0,
+        2167
+      ],
+      "gap390": 230,
+      "purpose": "持ち運びの連続性と信頼を作る"
+    },
+    {
+      "id": "beat-06-1",
+      "asset": "06",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 410,
+      "purpose": "証言だけで完結せず客観的な照合を決める"
     }
   ],
-  "revision": "pacing-expansion-2026-10-06"
+  "lettering": "integrated vertical Japanese in immutable image originals",
+  "startState": "第5話の同じ鍛冶場。引き出しは閉じている。",
+  "endState": "事件前の修理依頼札と割れ目の写しを照合し、当番帳の確認を門主に求める。"
 }

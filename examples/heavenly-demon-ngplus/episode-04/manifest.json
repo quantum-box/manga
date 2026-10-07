@@ -1,51 +1,115 @@
 {
   "title": "天魔、二周目。",
   "chapter": 4,
-  "subtitle": "その天才、俺が買う",
+  "subtitle": "逃げる前に",
+  "revision": "full-rebuild-2026-10-07",
   "artwork": [
     {
-      "file": "art/01.png",
+      "id": "01",
+      "file": "art/rebuild-01.png",
+      "width": 724,
+      "height": 2172,
+      "sha256": "95069ff3e0520b3bbe1dca00093146ec164628e953361b8ab5ebe06c97836c0c"
+    },
+    {
+      "id": "02",
+      "file": "art/rebuild-02.png",
       "width": 725,
-      "height": 2170,
-      "sha256": "b4be3226a89c70016a199b34e9b48a44e0cf1319f63a38d15fd8980af05a9223"
+      "height": 2167,
+      "sha256": "d6a6f40da8ab1d0f2b704faff30ffbeee29aea3a1d76224ab64d9da5a38c537a"
     },
     {
-      "file": "art/02.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "7920298d4a6def9200e0af7d19fcccab56cbca36764a61d6fcb6ce8e78b446dd"
+      "id": "03",
+      "file": "art/rebuild-03.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "727176471f55e1ada15274ae46e3be8dcbf4974d853a3d871bb8bf8a2891f490"
     },
     {
-      "file": "art/04-pacing.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "c6a958576fcaa9b2ef4191b3909ec9d2ea2d63741d54b9b98c9694b28882bf66"
+      "id": "04",
+      "file": "art/rebuild-04-night.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "0eb4d7ae358cba9de7ecf7992942f283e9bfa67e766cd5a63efead595e254c48"
     },
     {
-      "file": "art/03.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "01559307ffab4033ad1cae8c2cd9b0b7fcd213bb229df4836b1bdfee21430aa2"
+      "id": "05",
+      "file": "art/rebuild-05.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "020cb7fb4aa819ddddac9199c5a573e920c400995aabf71cfe6e8777ad5e9a59"
+    },
+    {
+      "id": "06",
+      "file": "art/rebuild-06.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "fefea34d8e1e3501d7dca7fd7fa32c5dc8fe378777b4a19c28f0e319b9adffe4"
     }
   ],
-  "generatedOriginals": 4,
-  "vignettes": 16,
-  "lettering": "vertical Japanese dialogue in image originals",
-  "readingTimeMeasured": false,
-  "protectedReveal": null,
   "readingOrder": [
     {
-      "scene": 1
+      "id": "beat-01-1",
+      "asset": "01",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 0,
+      "purpose": "移動と汚れを洗う過程で時間をつなぐ"
     },
     {
-      "scene": 2
+      "id": "beat-02-1",
+      "asset": "02",
+      "range": [
+        0,
+        2167
+      ],
+      "gap390": 300,
+      "purpose": "逃げ道を目でたどる"
     },
     {
-      "scene": 4
+      "id": "beat-03-1",
+      "asset": "03",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 450,
+      "purpose": "廊下の会話から別の証人の危険を知る"
     },
     {
-      "scene": 3
+      "id": "beat-04-1",
+      "asset": "04",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 440,
+      "purpose": "自分の生還と証人の危険を結び付ける"
+    },
+    {
+      "id": "beat-05-1",
+      "asset": "05",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 570,
+      "purpose": "決断を静かな動作で示す"
+    },
+    {
+      "id": "beat-06-1",
+      "asset": "06",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 230,
+      "purpose": "門主へ具体的に頼み、次の移動を準備"
     }
   ],
-  "revision": "pacing-expansion-2026-10-06"
+  "lettering": "integrated vertical Japanese in immutable image originals",
+  "startState": "同日夕方。東の休息室に案内される。",
+  "endState": "朝の鍛冶場訪問を門主に申し出る。ソ・リンの存在を知るが、まだ会っていない。"
 }

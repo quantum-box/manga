@@ -1,57 +1,121 @@
-# 天魔、二周目。 — 第1話「処刑する相手、間違えてるぞ」
+# 天魔、二周目。 第1話 死にたくない
 
-2026-10-05に感情と因果を改稿し、2026-10-06に日常と生還後の場面を増補。武侠ゲームのクリア直後、最弱の雑役弟子へ転生。身体はLV.999でも、本人は恐怖も痛みもある学生。読者と主人公が同じ順序で危機と力を知る。
+変化：見知らぬ処刑を現実の危機として感じ、自分の指で刃を止める。
 
-## 第1話で描くこと
+開始：現代の部屋。転生も能力も知らない。
 
-処刑されそうになる → 帰りたい → ゲームの中だと気づく → 引き継ぎを疑いながら縄で確かめる → 刃を止めて本人も驚く → 再攻撃に反射で掌を出す → 強すぎた力に戸惑い、相手の生存を確かめる → 安堵して初めて自分の目的を決める。
+終了：処刑広場。縄は切れた。銀の直剣を右の二指で止めた。敵はまだ立っている。
 
-第1話の山場は長老との一戦。天魔剣の姿、臣従、隠しルート開放は第2話へ移す。第1話では禁庫からの音だけを引きにする。長い余白だけで引き延ばさず、理解・選択・反応を挟む。
+## 01 昨日の部屋
 
-## 人物と連続性
+読者の理解／間：失う日常を短く示す
 
-- ハン・ユン：20歳の青年。黒い乱れ前髪、短い低い結び髪、青緑の目、左頬の汚れと打撲。生成りの擦れた稽古着、チャコールの襟、暗赤の帯、黒い靴。
-- 羅長老：40代、黒い高い髷、左眉の傷、短い黒髭、暗いえんじの武侠衣装と金の縁、黒い肩当て。直剣が折れた後は拳で襲う。
-- 晴れた青雲門の石の広場。弟子は淡い青の稽古着。原画は鮮明なアニメのセル塗り。人物の顔は戸惑い・恐怖・安堵を読める大きさにする。
-- 縄は冒頭では両手首を縛る。力を試した場面で切れ、以後は拘束しない。右手で剣を止めて握り砕き、左掌で身を守る。刃は破砕後に復活させない。長老は生きている。
+描くもの／カメラ／立ち位置：Modern student version of Han, same face but short loose black hair, plain gray T shirt. Top shallow close-up of closing lecture notebook, then larger warm desk shot of starting martial fantasy game on laptop. NO fantasy body yet, no modern clothes after this asset. No readable laptop text.
 
-## 見せ順と間
+伏せる情報／状態：次は異世界の石の冷たさ。転生の理由と未来の敵は描かない。
 
-|区間|見せる情報／まだ見せない情報|文字と行動|密度・間の役割|
-|---|---|---|---|
-|処刑の宣告|知らない名前で呼ばれ、縛られている。ゲームも力もまだ不明。|「ハン・ユン？ ……誰のことだ。」|広場の危機 → 手 → 恐怖の目。読者も状況を知らないまま入る。|
-|痛みと訴え|縄と石の感触。話を聞いてもらえない。|「縄が、食い込む。」「待って。俺、何も……！」|身体の感覚と表情を組み、拒絶の後に短い無言の間。|
-|失った日常|昨日までは学生で、いつものようにゲームをしていた。|「授業のあと、帰ってゲーム。」クリア画面が白い光に変わる。|授業・帰宅・ゲーム前の3コマで、戻りたい普通の暮らしを具体化する。|
-|夢であってほしい|目を閉じても痛みが消えない。転生を即座に喜ばない。|「帰らなきゃ。こんなところで、死にたくない。」|否認 → 身体の証拠 → 目的。文字を一度に積まない。|
-|ゲームとの接続|視界の表示に最下級の身分と処刑が出る。冤罪で死ぬ人物だと思い出す。|「俺はそれを、画面で見ていた。」「俺が、あいつに……？」|名前と運命が結びつく時間を入れる。|
-|引き継ぎと小さな実験|LV.999は自分のセーブ。指先の力だけで縄が切れる。|「強くてニューゲーム……？」「そんな表示、信じていいのか。」|驚く表情、手、切れた縄。UIの文字だけで納得させない。|
-|迫る刃|以前負けて覚えた構え。身体が先に動く。止めた結果はまだ見せない。|「お願いだ。止まってくれ。」|下降する長い構図から、祈りと結果の間を一画面以上離す。|
-|二本の指|実際に刃を止める。長老も本人も驚く。|「……止まった。」「本当に、俺の手か？」「もう、やめてください。」|決めゴマの後に本人の反応を置き、成功を受け止める。|
-|剣の破砕|刃を引かれる。離すと首に届くので握るが、予想以上の力で折れる。|「離せない。」「……力、入れすぎた？」|手 → 破片 → 相手の顔。ここは近い短いショットで速く読む。|
-|再攻撃と防御|剣を失った長老が拳で突進する。主人公は身を守るため左掌を出す。|「待って。話を——」「やめろ！」|新規の攻撃・防御2ショットで、掌打の理由を絵でもつなぐ。|
-|一掌の結果|技が身体に染みついており、長老が飛ぶ。|「頭じゃなく、体が知っていた。」「……え？」|大きな衝撃と無言の余韻。勝ち誇る台詞は置かない。|
-|相手の生存|倒れているが返事がある。殺してしまった不安がほどける。|「……生きて、るよな？」「貴様……何者だ……。」|返事を待ち、その後に自分の手を見る。|
-|遅れてくる恐怖|掌、汗、涙の浮く目。力の大きさと生還を理解する。|「押し返しただけ、なのに。」「こわかった。」「……助かった。」|新規の手と顔の2ショット。震えと安堵を、周囲の称賛より先に読む。|
-|周囲と報酬|弟子の驚き、内功120年と飛燕歩。本人には実感が追いつかない。|「それって、どれくらいだ。」「でも——生きてる。」|勝利の報酬は保つが、追加の大事件へすぐ飛ばない。|
-|最初の決意|生き残って帰り道を探す、という一つの目的を得る。|「まずは、生きる。帰り道は、俺が探す。」|大きな言葉と呼吸。本人が自分で次の行動を選ぶ。|
-|次話の謎|禁庫からの音だけ。天魔剣の姿・名前・臣従はまだ伏せる。|生成した「きぃん」。「……俺を、呼んでる？」|耳を澄ませる静けさで閉じる。次回「その剣は、俺を知っている」。|
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-## 作画と保存
+原画：art/rebuild-01-final-letters.png 1024×1536。表示窓：[{"range": [0, 659], "gap": 0, "lines": [0], "sound": "none", "description": "学生がノートを閉じる"}, {"range": [671, 1536], "gap": 95, "lines": [], "sound": "none", "description": "ゲームを開く学生"}]
 
-表情の編集3枚、攻撃・防御と戦闘後の新規作画2枚。現行本文は12種類の作画を23の表示窓で使用し、ステータス3点・効果音5点・武技名1点を組み合わせる。原画と生成表示は無加工で保存、会話はHTMLで組版。修正前の本文はGitの履歴で管理する。読書表示・全長画像・iOS同梱版を同じ本文から更新する。
+効果音（発話と別）：no sound
 
+発話：学生「あと一回だけ。」／縦列 右→左：あと一回/だけ。／声：soft
 
-## 2026-10-06の追加6コマ
+## 02 冷たい石
 
-発話の組版は既存のHTML方式を継続。以下はすべて主人公の内心またはナレーションで、追加の他人の発話はない。
+読者の理解／間：名前・拘束・場所を順に掴む
 
-| 区間 | 表示窓／まだ見せない情報 | 全文 | 密度と間 |
-| --- | --- | --- | --- |
-| 授業 | daily-life、0〜0.306。ゲームのクリアと転生はまだ見せない | 授業が終われば、いつもの部屋へ帰る。 | 手と顔で日常を示し、24cqw待つ |
-| 帰宅 | daily-life、0.306〜0.661。スマホは伏せる | 明日の課題も、夕飯も、そのままだ。 | 夕飯と鞄、20cqw待つ |
-| ゲーム前 | daily-life、0.661〜1。勝利前の部屋 | 少しだけ、遊んで寝よう。そう思っていた。 | 肩を伸ばす静かな表情、28cqw後に既存クリア画面 |
-| 石段 | sit-and-breathe、0〜0.340。新たな敵や剣は出さない | 少し、座ろう。立っているのが、つらい。 | 手首の痕と脱力、32cqw待つ |
-| 力加減 | sit-and-breathe、0.340〜0.630。椀は一つ | 握ったら、壊すかもしれない。ゆっくり。力を、抜いて。 | 震える手の小さい動作、26cqw待つ |
-| 生還 | sit-and-breathe、0.630〜1。両手で同じ椀を持つ | 水の冷たさも、喉を通る感じも、分かる。 | 息と視線、38cqw後に既存の生存の言葉 |
+描くもの／カメラ／立ち位置：Daylight Chinese martial sect stone execution courtyard. TOP wide establish hero kneeling foreground, elder behind to his right holding one SILVER straight sword, disciples well away at left. MIDDLE close bound wrists IN FRONT, coarse rope biting skin. BOTTOM larger terrified hero face looking up toward elder, dusty robes and left cheek bruise. Hands still bound throughout.
 
-新規原画12-daily-life.pngは現代の黒いTシャツ、負傷なし。13-sit-and-breathe.pngは自由になった手首、汚れた稽古着、左頬の打撲を継続。どちらも無言の原画を組み込みimage_genで制作し、セリフをHTMLと重複させない。[指示](PACING-PROMPTS.md)。増補前の本文はGitの履歴で管理する。
+伏せる情報／状態：身体の状態、羅の位置と剣。能力はまだ出さない。
+
+作画形式：three。読む順は上から下、同段の小コマは右から左。
+
+原画：art/rebuild-02-letters.png 724×2172。表示窓：[{"range": [0, 889], "gap": 220, "lines": [0], "sound": "none", "description": "処刑広場。羅長老が剣を持ち、弟子は跪く"}, {"range": [899, 1370], "gap": 55, "lines": [], "sound": "ぎゅ", "description": "前で縛られた痛む手首"}, {"range": [1375, 2172], "gap": 170, "lines": [1], "sound": "none", "description": "見知らぬ場所を見上げる弟子の顔"}]
+
+効果音（発話と別）：tiny ぎゅ near rope, not in balloon
+
+発話：羅長老「ハン・ユン。」／縦列 右→左：ハン・/ユン。／声：normal
+ハン・ユン「待って。ここは？」／縦列 右→左：待って。/ここは？／声：weak
+
+## 03 知っている名前
+
+読者の理解／間：記憶と今の恐怖を分ける
+
+描くもの／カメラ／立ち位置：Same courtyard. Top shallow cropped close-up of elder's sword hand, heroine absent. Bottom hero frightened eyes and clasped bound hands, recognizing name but still unable to accept. Pale white edges. No flashback figures or game screenshots.
+
+伏せる情報／状態：冤罪の証拠・剣の正体はまだ知らない。
+
+作画形式：two。読む順は上から下、同段の小コマは右から左。
+
+原画：art/rebuild-03-readable.png 1024×1536。表示窓：[{"range": [0, 493], "gap": 150, "lines": [], "sound": "none", "description": "長老の剣を持つ手"}, {"range": [499, 1536], "gap": 280, "lines": [0, 1], "sound": "none", "description": "名前を思い出して怯える弟子"}]
+
+効果音（発話と別）：none
+
+発話：ハン・ユン「ゲームの雑役……。」／縦列 右→左：ゲームの/雑役……。／声：thought
+ハン・ユン「俺、何も……！」／縦列 右→左：俺、/何も……！／声：weak
+
+## 04 確かめる指
+
+読者の理解／間：能力を表示だけで信じず小さく試す
+
+描くもの／カメラ／立ち位置：Three sequential unequal shots in same courtyard. Top hero POV at his bound hands with restrained translucent cyan hologram exact horizontal system text 引き継ぎ完了 / LV.999. Middle same right fingers delicately flex, rope fibers part with small cyan light. Bottom hero shocked looks down at now FREE hands, severed rope drops. No sword catch, no reward, no smugness. Hero still kneeling.
+
+伏せる情報／状態：切れた縄は以後戻さない。表示は本人だけに見える。
+
+作画形式：three。読む順は上から下、同段の小コマは右から左。
+
+原画：art/rebuild-04-readable.png 725×2169。表示窓：[{"range": [0, 626], "gap": 260, "lines": [], "sound": "none", "description": "縛られた手の前へ、本人だけに見える投影。引き継ぎ完了、LV.999"}, {"range": [631, 1076], "gap": 150, "lines": [], "sound": "プツ", "description": "右の指を動かして縄を切る"}, {"range": [1081, 2169], "gap": 360, "lines": [0], "sound": "none", "description": "切れた縄が落ち、自由になった手を見つめる"}]
+
+効果音（発話と別）：プツ near severing rope; system text only as specified
+
+発話：ハン・ユン「俺の、セーブ？」／縦列 右→左：俺の、/セーブ？／声：thought
+
+## 05 落ちてくる刃
+
+読者の理解／間：落下をたどり生存を願う
+
+描くもの／カメラ／立ち位置：ONE tall borderless continuous vertical camera movement. At very top hero terrified face, raising bare right hand defensively. Mid-height one silver sword descending through pale cyan motion arc; elder partially cropped at upper right. Bottom is airy pale space with descending arc fading. NO caught blade, no contact result, no duplicated hero or sword. The result is a different next image.
+
+伏せる情報／状態：刃を止めた指も成功した表情も絶対に先出ししない。
+
+作画形式：continuous。読む順は上から下、同段の小コマは右から左。
+
+原画：art/rebuild-05-readable.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 580}]
+
+効果音（発話と別）：ヒュッ along descending blade upper-middle
+
+発話：ハン・ユン「止まって。」／縦列 右→左：止まって。／声：thought
+
+## ring 刃の響き
+
+読者の理解／間：接触音を聞き、結果の姿まで待つ
+
+描くもの／カメラ／立ち位置：White sound-only artwork. One ringing きぃん tapers down; no fingers or blade.
+
+伏せる情報／状態：指で止めた姿は次の原画。
+
+作画形式：sparse。読む順は上から下、同段の小コマは右から左。
+
+原画：art/rebuild-ring.png 941×1672。表示窓：[{"range": [0, 1672], "gap": 220}]
+
+効果音（発話と別）：きぃん（止まった刃から発生し白い空間で減衰）
+
+発話：なし。
+
+## 06 二本の指
+
+読者の理解／間：初めて成功を見て止まる
+
+描くもの／カメラ／立ち位置：Single big borderless close-up of hero RIGHT index and middle finger holding one descending silver straight sword safely between fingers, clear correct hand anatomy. Terrified astonished hero face behind hand, teal eyes, dusty robes. He does NOT grin. Elder sword hand remains attached at upper edge. Severed rope only on ground. No shattering or punch or rewards. Plenty white ending space.
+
+伏せる情報／状態：第1話では剣はまだ折れない。
+
+作画形式：reveal。読む順は上から下、同段の小コマは右から左。
+
+原画：art/rebuild-06-readable.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 650}]
+
+効果音（発話と別）：none（前の刃の響きはこの原画より前に終える）
+
+発話：ハン・ユン「……止まった。」／縦列 右→左：……/止まった。／声：weak

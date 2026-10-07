@@ -1,133 +1,105 @@
-# 天魔、二周目。 第5話 百人まとめて、来い
+# 天魔、二周目。 第5話 鍛冶場の証人
 
-この話で得るものは百人戦の優勝と帰還門の鍵。
+変化：攻略上の脇役の名が、一人の働く人へ変わる。協力の条件を聞く。
 
-全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+開始：翌朝。ハンと門主が鍛冶場へ歩く。
 
-## 読書区間1 百人戦の規則
+終了：ソ・リンが修理依頼の証拠を出すと決める。まだ現物を見ていない。
 
-間の役割　大勢の強さと勝ち方の条件を先に示す
+## 01 山道を下る
 
-表示原画　art/01.png、範囲 [0, 2158]。
+読者の理解／間：二つの場所を経路でつなぐ
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Single tall borderless morning view. Hero and master together at TOP of stone path, descending toward smith workshop roof and chimney at BOTTOM. Exactly one instance of each person at top, no bottom figures. Curving path and drifting pale smoke lead downward; no smith revealed yet.
 
-### コマ1
+伏せる情報／状態：道・朝の光・紺の衣で移動を把握。
 
-作画　Wide tall martial arena stair down into circular stone ring. Yun and So Rin stand on entry steps, one sheathed sword at left hip; many adult opponents in blue green brown robes below. Poster no writing.
+作画形式：continuous。読む順は上から下、同段の小コマは右から左。
 
-司会　場外に落ちた者から、敗退！
+原画：art/rebuild-01.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 0}]
 
-### コマ2
+効果音（発話と別）：コツ、コツ along upper path, small hard lettering
 
-作画　Close one arrogant male champion 30s muscular high black topknot dark green robes holds ONE heavy spear; Yun at opposite edge wary.
+発話：なし。
 
-槍の王　逃げるなら、今だぞ。
+## 02 鍛冶の音
 
-### コマ3
+読者の理解／間：人の姿より仕事の音を先に届ける
 
-作画　Yun grips scabbard but does NOT draw sword, eyes on ring boundary and nervous spectator family behind railing.
+描くもの／カメラ／立ち位置：Only exact sound カン、カン on white, two sparse dark gray hammered letter clusters staggered down. No people, hammer, sword, building, scenery or extra words. Sound source will be below in next asset.
 
-ハン・ユン　刃を向けたら、人に当たる。
+伏せる情報／状態：本人の声と混同しない。
 
-### コマ4
+作画形式：sparse。読む順は上から下、同段の小コマは右から左。
 
-作画　Yun steps into ring unarmed with both hands open, sheathed sword visible, determined but breath tense.
+原画：art/rebuild-02.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 240}]
 
-ハン・ユン　百人、まとめて来てくれ。
+効果音（発話と別）：カン、カン before smith reveal
 
-## 読書区間2 落ちる先を見る
+発話：なし。
 
-間の役割　挑発から大技へ飛ばず、傷つけない勝ち方を足場と退路から組み立てる
+## 03 ソ・リン
 
-表示原画　art/04-pacing.png、範囲 [0, 2157]。
+読者の理解／間：仕事・警戒・名前を順に見る
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Top broad establish inside forge: So Rin works one iron fitting with hammer at anvil, hero/master at open doorway. Middle shallow close-up her hands STOP hammer safely on anvil, no weapon. Bottom large face of wary short black bob smith amber eyes bronze hairclip teal vest dark apron. Hammering is halted now.
 
-### コマ5
+伏せる情報／状態：細かい道具や登場人物を詰めない。
 
-作画　BEFORE any arena attack: Yun with ONE sword SHEATHED studies the arena edge and the broad sand landing zone below. Opponents hold position, no one falling.
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　下は、砂地だ。
+原画：art/rebuild-03.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 760}]
 
-### コマ6
+効果音（発話と別）：none, hammer has stopped
 
-作画　Close Yun's shoe gently tests an existing seam in arena stone. No shockwave, no cracks propagating yet.
+発話：セイ・コウ「ソ・リン。話を聞きたい。」／縦列 右→左：ソ・リン。/話を/聞きたい。／声：formal
 
-ハン・ユン　外へ押し出せば……。
+## 04 疑われる怖さ
 
-### コマ7
+読者の理解／間：紹介にすぐ返事させず相手の事情を聞く
 
-作画　Yun raises one OPEN hand to warn the spear king and nearby opponents, not casting a spell yet. Opponents alert, safe distance from spectators.
+描くもの／カメラ／立ち位置：Same forge. Top smith wary face looking to master, shoulders stiff. Bottom hero listening toward left in separate smaller close-up, visible hand leaves doorway open, no threat stance.
 
-ハン・ユン　武器を離せ。受け身を。
+伏せる情報／状態：逃亡や暴力へ即飛ばない。
 
-### コマ8
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Close Yun sees opponents brace knees and loosen grips, then lowers his shoulders with focus. His sword remains SHEATHED. Victory and falling bodies not visible yet.
+原画：art/rebuild-04-clip.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 340}]
 
-ハン・ユン　力は、これだけでいい。
+効果音（発話と別）：none
 
-## 読書区間3 足が着く前に
+発話：ソ・リン「私を、連れて行くの？」／縦列 右→左：私を、/連れて/行くの？／声：weak
 
-間の役割　飛燕歩と力加減で簡単かつ非致死の勝利
+## 05 頼む側になる
 
-表示原画　art/02.png、範囲 [0, 2172]。
+読者の理解／間：強さで従わせず必要な助けを言葉にする
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Top hero stands in forge doorway at respectful distance, palms empty lowered. Bottom smith sees his rope marks, her tense shoulders begin to release but still cautious. Master nearby outside frame left. No touching or bond of servitude.
 
-### コマ9
+伏せる情報／状態：相手は自分で証言を決める。
 
-作画　Opponents rush inward, spear champion thrusts at Yun's torso. Yun bends lightly aside, body motion clear, doesn't draw sword. No victory yet.
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　当てるのは、人じゃない。
+原画：art/rebuild-05.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 500}]
 
-### コマ10
+効果音（発話と別）：none
 
-作画　Yun uses cyan footsteps to run DOWN ring edge then leap lightly, one left hand touches stone floor as gust starts. Sword remains sheathed. Large motion shot, no duplicate bodies.
+発話：ハン・ユン「何があったか、知りたい。」／縦列 右→左：何が/あったか、/知りたい。／声：normal
+ハン・ユン「俺にも、教えて。」／縦列 右→左：俺にも、/教えて。／声：soft
 
-ハン・ユン　足元だ。
+## 06 証言の条件
 
-### コマ11
+読者の理解／間：安全の約束から証拠提示へつなぐ
 
-作画　Controlled circular upward air pulse lifts weapons and opponents over ring boundary onto soft awnings/outside sand. No impalements, no falls from heights, spectators protected. Champion lands seated in sand holding unbroken spear.
+描くもの／カメラ／立ち位置：Top smith fingers rest on CLOSED wooden work drawer, keeps contents invisible. Bottom master faces her and gives assurance; hero listening background only small. No receipt or fragments yet.
 
-槍の王　……一人も、斬ってない？
+伏せる情報／状態：第6話の現物は引き出しの中に伏せる。
 
-### コマ12
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Yun standing alone in ring, exhales and looks around to confirm safety, arms relaxed. Crowd astonished, So Rin smiles small.
+原画：art/rebuild-06.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 300}]
 
-ハン・ユン　みんな、着地できたよな。
+効果音（発話と別）：none
 
-## 読書区間4 画面の向こうの敵
-
-間の役割　勝利の快感からゲームにない存在の謎へ
-
-表示原画　art/03.png、範囲 [0, 2171]。
-
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
-
-### コマ13
-
-作画　Judge gives Yun ONE palm-sized bronze circular gate key and small purse of gold. Smith beside him. Key is round bronze disk with center hole, not sword.
-
-司会　優勝！　帰還門の鍵を授ける！
-
-### コマ14
-
-作画　CYAN translucent hologram in Yun's vision reading exactly: 称号　百人の統率者. Yun amazed, not greedy.
-
-システム　称号　百人の統率者
-
-### コマ15
-
-作画　Yun looks up toward shaded spectator stairs as a lone white-haired man in slate-blue robes stands watching. White-haired man is Hakujin, gold eyes, BLACK cracked seal on RIGHT wrist. No hostile attack.
-
-ハン・ユン　……そんな。あいつは。
-
-### コマ16
-
-作画　Close Yun shocked, brief reflected silhouette of game final-boss sword battle WITHOUT depicting new actual fight. Hakujin visible at far lower stair.
-
-ハン・ユン　俺が、最後に倒した敵だ。
+発話：ソ・リン「道具を、取り上げないで。」／縦列 右→左：道具を、/取り上げ/ないで。／声：normal
+セイ・コウ「約束する。」／縦列 右→左：約束する。／声：formal

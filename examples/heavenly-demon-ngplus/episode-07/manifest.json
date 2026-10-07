@@ -1,51 +1,115 @@
 {
   "title": "天魔、二周目。",
   "chapter": 7,
-  "subtitle": "正派の正体、見せてやる",
+  "subtitle": "聞かなかった声",
+  "revision": "full-rebuild-2026-10-07",
   "artwork": [
     {
-      "file": "art/01.png",
+      "id": "01",
+      "file": "art/rebuild-01.png",
       "width": 724,
       "height": 2172,
-      "sha256": "d740214dbeae535d928ce3ef1d50e7dbbc0840935129c4c6f692e75b41f41d8c"
+      "sha256": "034753aed2d99b3dcfb7ae85a0823d57c6a0e39ced464ce92e7ae5156d481558"
     },
     {
-      "file": "art/04-pacing.png",
+      "id": "02",
+      "file": "art/rebuild-02.png",
       "width": 724,
       "height": 2172,
-      "sha256": "e0983f294ac9b14685698853882fea3ed4971aa0f1858cbb2931f9fd4a84b568"
+      "sha256": "0d9ad922ee25135caa1bd8a9145f51e523cd8355ff5ec37e3b282e9e33741dc2"
     },
     {
-      "file": "art/02.png",
+      "id": "03",
+      "file": "art/rebuild-03.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "c06ee4f6fbf401e405811d237b451b9078a72df3ec6a040fde1ee2508699761f"
+    },
+    {
+      "id": "04",
+      "file": "art/rebuild-04.png",
       "width": 724,
       "height": 2172,
-      "sha256": "bd7c417fcaf23057adc775723ffa94bbe6bf7fd8d9dee628f2bd894281b96c0f"
+      "sha256": "764d292d846ec97ee58ac4d451eb2bc79a0b21a86a57708b6b363c58646a81b4"
     },
     {
-      "file": "art/03.png",
-      "width": 724,
-      "height": 2171,
-      "sha256": "09ab57da3bce205f0e393cebc29e91712e00df3639ec503194204492e1fd10f4"
+      "id": "05",
+      "file": "art/rebuild-05.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "9faf4bb7a1a0ac6c09452cf051649842431849d8f1d8dc0d55d95a72ee046087"
+    },
+    {
+      "id": "06",
+      "file": "art/rebuild-06.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "df950fcaea687f5c6ed505708c731eb191086ec479d6dff5565c9eb16c4aefe5"
     }
   ],
-  "generatedOriginals": 4,
-  "vignettes": 16,
-  "lettering": "vertical Japanese dialogue in image originals",
-  "readingTimeMeasured": false,
-  "protectedReveal": null,
   "readingOrder": [
     {
-      "scene": 1
+      "id": "beat-01-1",
+      "asset": "01",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 0,
+      "purpose": "移動と入れない場所を示す"
     },
     {
-      "scene": 4
+      "id": "beat-02-1",
+      "asset": "02",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 260,
+      "purpose": "記録の保管・提示・内容を順に理解する"
     },
     {
-      "scene": 2
+      "id": "beat-03-1",
+      "asset": "03",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 310,
+      "purpose": "記録から当事者の声へ戻る"
     },
     {
-      "scene": 3
+      "id": "beat-04-1",
+      "asset": "04",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 500,
+      "purpose": "聞かなかった声を人物なしの間で受け止める"
+    },
+    {
+      "id": "beat-05-1",
+      "asset": "05",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 750,
+      "purpose": "死にかけた身体を他人の人生として受け止める"
+    },
+    {
+      "id": "beat-06-1",
+      "asset": "06",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 260,
+      "purpose": "責任のある約束を具体化する"
     }
   ],
-  "revision": "pacing-expansion-2026-10-06"
+  "lettering": "integrated vertical Japanese in immutable image originals",
+  "startState": "同日昼。禁庫の外廊下へ3人で歩く。束はハンが持つ。",
+  "endState": "封印扉は開けず、当番帳の写しと証言を公の審理へ持ち込む。"
 }

@@ -1,133 +1,104 @@
-# 天魔、二周目。 第7話 正派の正体、見せてやる
+# 天魔、二周目。 第7話 聞かなかった声
 
-この話で得るものは奪われた記録と三人の協力。
+変化：ハン自身の労働記録と聞かれなかった証言を知り、公開の場で聞く約束をする。
 
-全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+開始：同日昼。禁庫の外廊下へ3人で歩く。束はハンが持つ。
 
-## 読書区間1 正義の命令
+終了：封印扉は開けず、当番帳の写しと証言を公の審理へ持ち込む。
 
-間の役割　敵の立場と制度の矛盾を具体化する
+## 01 禁庫の外
 
-表示原画　art/01.png、範囲 [0, 2172]。
+読者の理解／間：移動と入れない場所を示す
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：One tall borderless path from hall outside through narrow courtyard up to CLOSED north storehouse door below. Hero master smith together at top moving toward it, hero carries one cloth bundle. Thick black door lock below, NO sword/inside view. DAYLIGHT not night. No duplicate walking figures.
 
-### コマ1
+伏せる情報／状態：鍵を持たない雑役が外廊下にいた事実。
 
-作画　Daybreak town square. Yun, So Rin and Hakujin at street edge, sword sheathed bronze disk at sash. Alliance guards blue-white robes form a cordon, long pole weapons aimed outward. No battle yet.
+作画形式：continuous。読む順は上から下、同段の小コマは右から左。
 
-盟の使者　天魔と、その仲間を捕らえよ！
+原画：art/rebuild-01.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 0}]
 
-### コマ2
+効果音（発話と別）：コツ、コツ on stone upper half
 
-作画　A worried middle-aged town mother shields adult son while guards point to Hakujin's white hair, Yun looks at frightened townspeople.
+発話：なし。
 
-町の母　その人が、うちの子を助けたのに。
+## 02 当番帳
 
-### コマ3
+読者の理解／間：記録の保管・提示・内容を順に理解する
 
-作画　Yun looks at angry guards and innocent crowd, palm open to deescalate.
+描くもの／カメラ／立ち位置：Top master unlocks only SMALL separate wall record cabinet OUTSIDE main sealed door. Middle pulls one simple daily duty ledger, main big door stays shut. Bottom readable horizontal ledger entry ハン・ユン / 外廊下の清掃. Hero and smith over-shoulder edges, not huge tiny text paragraphs.
 
-ハン・ユン　ここで戦ったら、町が壊れる。
+伏せる情報／状態：禁庫の中へ勝手に入れない。
 
-### コマ4
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-作画　Smith So Rin taps a small BRONZE memory prism taken from her apron pocket, firm eyes. Prism non-glowing for now, right wrist free.
+原画：art/rebuild-02.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 260}]
 
-ソ・リン　宝庫の記録なら、私が持ってる。
+効果音（発話と別）：カチャ at SMALL record cabinet
 
-## 読書区間2 記録の重さ
+発話：セイ・コウ「ここが、お前の持ち場だ。」／縦列 右→左：ここが、/お前の/持ち場だ。／声：formal
 
-間の役割　記録を見せる前に読み合わせ、ソ・リン自身が公に証言する意思を選ぶ
+## 03 話していた人
 
-表示原画　art/04-pacing.png、範囲 [0, 2172]。
+読者の理解／間：記録から当事者の声へ戻る
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Top hero traces OUTER corridor on plain stone not touching locked door; empty hand with rope mark. Bottom smith face beside same black door edge, remembers what she personally heard. No actual past hero duplicate.
 
-### コマ5
+伏せる情報／状態：記憶の借用で転生先の魂を勝手に断定しない。
 
-作画　Town square side: So Rin spreads an old metal plate and its corresponding ledger on a low table. Yun with sword SHEATHED reads, Hakujin stands quietly nearby, RIGHT wrist clean.
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　同じ日付が、ここにも。
+原画：art/rebuild-03.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 310}]
 
-### コマ6
+効果音（発話と別）：none
 
-作画　So Rin points to the repeated maker's stamp engraved on ONE plate, no invented readable background letters. She recognizes her own work.
+発話：ソ・リン「鍵は、長老が持ってた。」／縦列 右→左：鍵は、/長老が/持ってた。／声：normal
 
-ソ・リン　私の刻印。忘れない。
+## 04 届かなかった訴え
 
-### コマ7
+読者の理解／間：聞かなかった声を人物なしの間で受け止める
 
-作画　Yun pauses, looks from plate to So Rin, does not pull her forward. Tense crowd stays behind them; no attack.
+描くもの／カメラ／立ち位置：Sparse WHITE borderless artwork containing only smith's remembered report in upright VERTICAL Japanese, no balloon tail, no characters or shadows. Exact text 盗ってないって、何度も言ってた。 Words occupy upper-center quarter, broad empty area below. This is present So Rin speaking softly OFFSCREEN, not dead spirit or system.
 
-ハン・ユン　話したら、狙われる。
+伏せる情報／状態：本人の新しい幻影や亡霊を足さない。
 
-### コマ8
+作画形式：sparse。読む順は上から下、同段の小コマは右から左。
 
-作画　So Rin takes the plate into her own hands and chooses to step toward the waiting town mother. Yun supports beside her, no public reveal of marks yet.
+原画：art/rebuild-04.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 500}]
 
-ソ・リン　私の言葉で、話したい。
+効果音（発話と別）：none
 
-## 読書区間3 奪った歴史
+発話：ソ・リン「盗ってないって、何度も言ってた。」／縦列 右→左：盗ってないって、/何度も/言ってた。／声：offscreen
 
-間の役割　言葉だけでなく記録を示す
+## 05 同じ名前の重さ
 
-表示原画　art/02.png、範囲 [0, 2172]。
+読者の理解／間：死にかけた身体を他人の人生として受け止める
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：TOP shallow quiet close-up of ordinary BAMBOO BROOM leaning against outside stone corridor wall beside CLOSED wooden storehouse door; this is the job Han Yun had. BOTTOM larger Han Yun face quietly processing So Rin's testimony, eyes lowered then looking toward broom. Clean offwhite/charcoal/red robes, teal eyes and black low ponytail. Empathetic, reflective, no triumphant grin. Hands outside frame; no action, blade, rope, bodily-harm depiction, extra people or flashback. Same daylight closed door background.
 
-### コマ9
+伏せる情報／状態：ハンの元の人生を物語の道具だけにしない。
 
-作画　Close So Rin sets bronze prism into slot in town memorial pedestal, Yun protects crowd with raised LEFT palm and cyan barrier. Sword sheathed.
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-ソ・リン　鍛冶の道具は、嘘を刻まない。
+原画：art/rebuild-05.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 750}]
 
-### コマ10
+効果音（発話と別）：none
 
-作画　Prism projects translucent moving images ABOVE square: alliance soldiers carrying gold from underground treasury, adult craftsmen taken into prison. No text, no illegible pages, original sober memory shot.
+発話：ハン・ユン「誰も、聞かなかったんだ。」／縦列 右→左：誰も、/聞かなかった/んだ。／声：thought
 
-町の母　これが、正派のしたこと？
+## 06 聞く場所を作る
 
-### コマ11
+読者の理解／間：責任のある約束を具体化する
 
-作画　Hakujin steps forward in front of projection, RIGHT wrist bare, gold eyes steady and grieving, townspeople listen.
+描くもの／カメラ／立ち位置：Top master ashamed looks down at ledger, then faces hero. Bottom hero faces smith, hands gently hold bundle, makes request. Main sealed door still closed. No attack or new enemy yet.
 
-白燼　俺の殺意も、命令だった。
+伏せる情報／状態：第8話に公の場所へ歩く原因。
 
-### コマ12
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　One young guard lowers spear, conflict visible on face. Yun opens empty RIGHT hand offering surrender, sword stays sheathed.
+原画：art/rebuild-06.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 260}]
 
-ハン・ユン　確かめてから、選んでくれ。
+効果音（発話と別）：none
 
-## 読書区間4 書き直される町
-
-間の役割　味方を増やす報酬と補正の不穏さ
-
-表示原画　art/03.png、範囲 [0, 2171]。
-
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
-
-### コマ13
-
-作画　Some guards lower weapons and make room; mother places a bowl of hot tea in Yun's hands, he accepts with surprise. Smith and white-haired ally share quiet relief.
-
-町の母　今度は、私たちが匿う。
-
-### コマ14
-
-作画　Yun sits at modest tea stall with companions, holding bowl two hands. Human warmth, no grand throne.
-
-ハン・ユン　画面の名前だけじゃ、なかった。
-
-### コマ15
-
-作画　Sudden cyan translucent hologram visible only to Yun, text exactly two horizontal lines: シナリオ逸脱 / 補正開始. He freezes, bowl placed safely on table.
-
-システム　シナリオ逸脱 / 補正開始
-
-### コマ16
-
-作画　Town street at dusk, several adult guards' eyes become blank and thin BLACK bands wrap wrists, mother protected behind stall. Yun stands alarmed. Do not show ensuing fight or arena reward shields yet.
-
-ハン・ユン　……今度は、町ごと？
+発話：セイ・コウ「私も、確かめなかった。」／縦列 右→左：私も、/確かめなかった。／声：formal
+ハン・ユン「みんなの前で、話してほしい。」／縦列 右→左：みんなの前で、/話してほしい。／声：normal

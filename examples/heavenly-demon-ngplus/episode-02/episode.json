@@ -1,54 +1,132 @@
 {
   "title": "天魔、二周目。",
   "chapter": 2,
-  "subtitle": "その剣は、俺を知っている",
+  "subtitle": "強い手で、壊さない",
+  "revision": "full-rebuild-2026-10-07",
   "artwork": [
     {
-      "file": "art/01.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "99610a1725b628ef882ce1dcbfa3799030b4a2029b10c9cec13f0561e190db3b"
+      "id": "01",
+      "file": "art/rebuild-01.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "86ee9e606dea3e460b23c6953e3114b20f2621586a670047b24b553ebf270403"
     },
     {
-      "file": "art/04-pacing.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "3f94947edd351321d209a597b9ffd56a700b69acfa7d33c960aa53a46d467263"
+      "id": "02",
+      "file": "art/rebuild-02-causal.png",
+      "width": 887,
+      "height": 1774,
+      "sha256": "bf9c268910aaeaf255a86491e39a4b40e38508de3da35fb45a9a059bf4de77b8"
     },
     {
-      "file": "art/02.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "d68340282aaa05140504e4ff80d1c48a6639d3ca7b8ae60460682974ce114f7d"
+      "id": "03",
+      "file": "art/rebuild-03.png",
+      "width": 887,
+      "height": 1774,
+      "sha256": "34e585f4b5811b0c9e006d17b6ad9241dc2aeab7991094efebdb49912acddcd8"
     },
     {
-      "file": "art/03.png",
+      "id": "04",
+      "file": "art/rebuild-04.png",
       "width": 724,
       "height": 2172,
-      "sha256": "2f4c835a6a2beb892f5488a4cfd008ef476b8b3194de671d26181730cad281c5"
+      "sha256": "82199c0d57bae97f33c5be7010618c72eadecd51e340bfe0e985ef01e1f08407"
+    },
+    {
+      "id": "05",
+      "file": "art/rebuild-05.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "ec0043185f894a09fc5e74ca57fa1325290710f7ab862d9151546a4f331b9bda"
+    },
+    {
+      "id": "06",
+      "file": "art/rebuild-06-free.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "3233b0bda1f52602fa0d373d932e33d864071e7ad9b0c91abeb46b677a3c8ee5"
+    },
+    {
+      "id": "07",
+      "file": "art/rebuild-07.png",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6beb1d25d2f98c03d9ee122a96302b3afb1f6f206b13de360d295b733f077865"
     }
   ],
-  "generatedOriginals": 4,
-  "vignettes": 16,
-  "lettering": "vertical Japanese dialogue in image originals",
-  "readingTimeMeasured": false,
-  "protectedReveal": {
-    "cue": "scene-4",
-    "answer": "scene-2"
-  },
   "readingOrder": [
     {
-      "scene": 1
+      "id": "beat-01-1",
+      "asset": "01",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 0,
+      "purpose": "前話の結果に本人の感覚を返す"
     },
     {
-      "scene": 4
+      "id": "beat-02-1",
+      "asset": "02",
+      "range": [
+        0,
+        1774
+      ],
+      "gap390": 180,
+      "purpose": "再攻撃の理由と手段を絵でつなぐ"
     },
     {
-      "scene": 2
+      "id": "beat-03-1",
+      "asset": "03",
+      "range": [
+        0,
+        1774
+      ],
+      "gap390": 140,
+      "purpose": "攻撃に対する防御を選ぶ"
     },
     {
-      "scene": 3
+      "id": "beat-04-1",
+      "asset": "04",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 280,
+      "purpose": "衝撃の持続を聞いて相手を探す"
+    },
+    {
+      "id": "beat-05-1",
+      "asset": "05",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 510,
+      "purpose": "倒れた相手の生存を確認する"
+    },
+    {
+      "id": "beat-06-1",
+      "asset": "06",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 200,
+      "purpose": "権力者の介入を一つずつ聞く"
+    },
+    {
+      "id": "beat-07-1",
+      "asset": "07",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 440,
+      "purpose": "安全・手の加減・安堵を同じ場所で描く"
     }
   ],
-  "revision": "pacing-expansion-2026-10-06"
+  "lettering": "integrated vertical Japanese in immutable image originals",
+  "startState": "右の二指で刃を止め、縄は切れている。",
+  "endState": "門主が処刑停止。剣は折れ、羅は生存。ハンは石段で水を飲み、事情を知りたい。"
 }

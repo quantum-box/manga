@@ -1,133 +1,106 @@
-# 天魔、二周目。 第3話 隠し宝庫、全部もらう
+# 天魔、二周目。 第3話 俺の罪は誰のもの
 
-この話で得るものは天魔の宝庫と鍛造素材。
+変化：罪状と証拠を聞き、ゲームの記憶と事実を分ける。
 
-全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+開始：停止した処刑のあと。同日午前、ハンは水の椀を返す。
 
-## 読書区間1 死ぬ床
+終了：盗難の現物と不自然な破断を見た。審理まで山門に留まることを求められる。
 
-間の役割　攻略知識を小さく確かめて使う
+## 01 話を聞く場所
 
-表示原画　art/01.png、範囲 [0, 2167]。
+読者の理解／間：移動と着座を描いて会話の場所を固定
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Top hero returns same cup on stone step, master points to nearby open wooden hall. Bottom wide shot SAME hero and master sitting across low table inside hall facing courtyard. Elder sits to master's right farther back. Cloth and ropes still dusty.
 
-### コマ1
+伏せる情報／状態：現代の学生という真実はまだ話さない。
 
-作画　Yun descends cellar stairs, ONE sheathed black sword at left hip, bronze key in left hand. Empty stone passage, red tiles on floor. He halts before stepping on them.
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　この床、見覚えがある。
+原画：art/rebuild-01.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 0}]
 
-### コマ2
+効果音（発話と別）：コト cup set down
 
-作画　Close view of Yun's free RIGHT hand dropping a small pebble onto a red floor tile. ONE pebble, no sword drawn.
+発話：セイ・コウ「事情を聞かせてくれ。」／縦列 右→左：事情を/聞かせて/くれ。／声：formal
 
-ハン・ユン　まず、石で試す。
+## 02 罪状
 
-### コマ3
+読者の理解／間：罪を言葉と物へ分ける
 
-作画　Thin poison darts harmlessly strike the pebble from wall slots. Yun stands safely behind threshold, startled eyes and flinch.
+描くもの／カメラ／立ち位置：Same hall, master at left, hero right. Top elder stern face facing hero says charge. Bottom hero reaction looking at table, no smugness. Use sparse simple hall backdrop identifiable round wooden pillar.
 
-ハン・ユン　……本当に、飛んできた。
+伏せる情報／状態：黒い剣の姿と剣の名前は描かない。
 
-### コマ4
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Yun follows a narrow line of GRAY tiles around red trap tiles, cautious stepping, fingertips on wall. NO treasure or smith shown yet.
+原画：art/rebuild-02.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 220}]
 
-ハン・ユン　灰色だけを、踏む。
+効果音（発話と別）：none
 
-## 読書区間2 宝庫の主
+発話：羅長老「六日、禁庫の剣を盗んだ。」／縦列 右→左：六日、/禁庫の剣を/盗んだ。／声：normal
+ハン・ユン「剣……？」／縦列 右→左：剣……？／声：weak
 
-間の役割　危険の後に獲得を大きく見せる
+## 03 割れた留め具
 
-表示原画　art/02.png、範囲 [0, 2167]。
+読者の理解／間：罪状の根拠を現物で見る
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：TOP close-up elder places two irregular dark iron fragments of broken rectangular door seal clasp on cloth on table. BOTTOM hero over-shoulder studies crack with bright fresh silver interior and soot on exterior; fragments NOT sword fragments. No written letters on iron. Simple geometric rectangular clasp, NOT ornate jewelry.
 
-### コマ5
+伏せる情報／状態：留め具は暗い鉄の四角、内側銀色、外側煤。
 
-作画　Yun uses ONE bronze key to turn a lock under a carved black sword emblem. Sheathed sword at hip. Door still closed.
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　正派の鍵じゃ、開かない。
+原画：art/rebuild-03-table.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 390}]
 
-### コマ6
+効果音（発話と別）：カタ near iron placed
 
-作画　Large borderless view of doors open onto a golden underground treasury: ingots, medicine jars, blue-black star metal stones, ONE rolled map. Yun small foreground amazed, no trapped person yet.
+発話：羅長老「お前の持ち場に、落ちていた。」／縦列 右→左：お前の/持ち場に、/落ちていた。／声：normal
 
-ハン・ユン　……全部、天魔の物だった。
+## 04 画面の外側
 
-### コマ7
+読者の理解／間：攻略知識だけでは現物を説明できない
 
-作画　Yun gently lifts a blue-black metal shard, startled by its weight. CYAN translucent hologram says exactly: 星鉄　獲得. No other printed words.
+描くもの／カメラ／立ち位置：Top small hero eyes squint remembering game story without depicting game or another person. Bottom hero looks from fresh iron edge to his rope-marked hands, recognizes uncertainty. Same hall/table/pillar.
 
-システム　星鉄　獲得
+伏せる情報／状態：過去の完全な真相を知っているとは言わない。
 
-### コマ8
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Yun hears a cough from behind a different locked iron door. Turns away from treasure, frown; dark door only, do NOT show captive.
+原画：art/rebuild-04-iron.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 320}]
 
-ハン・ユン　金より先に、声の方だ。
+効果音（発話と別）：none
 
-## 読書区間3 声へ返事をする
+発話：ハン・ユン「ゲームじゃ、ここで終わる。」／縦列 右→左：ゲームじゃ、/ここで/終わる。／声：thought
+ハン・ユン「その先は、知らない。」／縦列 右→左：その先は、/知らない。／声：thought
 
-間の役割　宝を取る喜びから人の救助へ、音を聞き分けて自分で選ぶ
+## 05 触らずに見る
 
-表示原画　art/04-pacing.png、範囲 [0, 2167]。
+読者の理解／間：壊さず観察し疑問を持つ
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Top hero starts reaching iron but stops; middle close-up deliberately uses soft cloth under fragments rather than gripping metal; bottom looks to master, asks evidence preservation. Two pieces remain same shape and count, keep bright cracked side visible.
 
-### コマ9
+伏せる情報／状態：強さで鉄を曲げない。
 
-作画　Yun at the treasury exit pauses, ONE black sword safely SHEATHED at left hip. Treasure remains behind him. He turns toward a muffled sound from the lower passage. No prisoner visible.
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　……今の、咳か？
+原画：art/rebuild-05-hall.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 240}]
 
-### コマ10
+効果音（発話と別）：スッ cloth unfolded
 
-作画　Small close-up free left fingers set ONE ordinary silver ingot, NOT the acquired dark-blue star iron down on a treasury shelf. No duplicate carried ingots. Calm decision, not tossing valuables.
+発話：ハン・ユン「これ、捨てないで。」／縦列 右→左：これ、/捨てないで。／声：normal
 
-ハン・ユン　持つのは、あとでいい。
+## 06 まだ帰れない
 
-### コマ11
+読者の理解／間：安全と自由の違いを受け止める
 
-作画　Yun kneels outside a CLOSED wooden cellar door, lowers his voice. He does NOT open it yet; no smith or bound hands visible.
+描くもの／カメラ／立ち位置：Top master calm face at same table, does not threaten with weapon. Bottom hero looks out toward visible distant SOUTH gate, guards normal standing, understands bounded stay. No locks or chains on hero.
 
-ハン・ユン　聞こえる？　助けに来た。
+伏せる情報／状態：第4話の夜までの時間を次で示す。
 
-### コマ12
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Yun listens with his palm on the CLOSED door. A faint knock answers; his tense shoulders ease. No prisoner, chains or new person shown yet.
+原画：art/rebuild-06.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 400}]
 
-ハン・ユン　返事だ。まだ、生きてる。
+効果音（発話と別）：none
 
-## 読書区間4 売られる手
-
-間の役割　声の主を最後に明かし救出の選択を作る
-
-表示原画　art/03.png、範囲 [0, 2146]。
-
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
-
-### コマ13
-
-作画　Close of iron door grille. Yun peers through, his large worried face reflected in dark iron. Sword remains sheathed.
-
-ハン・ユン　大丈夫？　生きてる？
-
-### コマ14
-
-作画　Reveal So Rin captive smith: young adult woman 20, black bob, bronze hairclip, teal vest ivory sleeves dark apron. Seated on stone, ONE pair wrist shackles connected by chain. Exhausted but defiant amber eyes, no sexual framing.
-
-ソ・リン　明日の競売まで、ね。
-
-### コマ15
-
-作画　Close of So Rin's scraped hands in shackles, ONE hammer confiscated on table OUTSIDE bars, not in her hand.
-
-ソ・リン　作れなくなれば、捨てられる。
-
-### コマ16
-
-作画　Yun curls his fingers around the grille gently, compassionate determined eyes, no bending metal yet. No rescue before next chapter.
-
-ハン・ユン　それなら、俺が止める。
+発話：セイ・コウ「審理までは、門にいてくれ。」／縦列 右→左：審理までは、/門に/いてくれ。／声：formal
+ハン・ユン「……分かった。」／縦列 右→左：……/分かった。／声：weak
