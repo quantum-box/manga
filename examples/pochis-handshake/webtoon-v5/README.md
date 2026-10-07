@@ -1,31 +1,29 @@
-# 転生したら柴犬だった。 全10話 再制作版
+# 転生したら柴犬だった。 第1〜30話
 
-[全10話を続けて読む](all.html) · [話一覧](chapters.html) · [第1話](episode-01/index.html)
+[第1〜30話を続けて読む](all.html) · [話一覧](chapters.html) · [第11話](episode-11/index.html) · [第30話](episode-30/index.html)
 
-各話が短かったため、全10話を各10枚・約40コマへ作り直した。採用作画は100枚。前版の40枚から2.5倍へ増やし、身体の戸惑い、助けを伝える失敗、同行する理由、旅の疲れ、狼や魔王への恐怖、練習と協力、村へ水が届いた結果を順に描く。第3話の「おて」が第10話の自発的な握手につながる。
+第1〜10話の採用済み再制作版に、第11〜30話の続編を追加。各話10枚・約40コマ、計300枚・約1,200コマ。村の水路の修復を通して、声が届かない身体での協力、役割の線引き、休む日、野生の狼との距離、試験の中断と修理を描く。第30話では、毎日握手しなくても仲間でいられる関係に着地する。
 
-日本語の縦書き台詞・吹き出し・絵は一体のラスター画像。HTMLで会話を重ねない。生成には同じキャラクター参照を使用し、物の受け渡し・水路の状態・登場順を確認して必要な画像を修正した。
+日本語の縦書き会話・吹き出し・絵は一体のラスター画像。HTMLに会話を重ねない。ポチ・ミラ・魔王の人物参照を共有し、文字、天候、村と城の位置、水路の通水状態、旗による合図、握手の動作を生成後に修正した。
 
 ## 余白と読む速さ
 
-全10話の100場面の後に、内容に応じた間を指定。50場面では原画のコマ間に沿って表示窓を分け、83か所に画像内の間を足した。原画100枚を183の表示窓で読み、斜めや曲線の枠も共有境界に沿って保つ。絵・日本語・順番は変えず、全画素を表示窓のいずれかへ残す。コマの幅を縮めて文字を小さくしない。
+300場面の後の間を内容別に指定。原画内の白いコマ間に88か所の間を足し、原画300枚を388の表示窓で読む。隣接窓は同じ境界を共有し、全画素を保つ。基準幅360pxから本文幅に比例し、文字を縮めて余白を作らない。
 
-救助や合図の動作は近く、返事待ち、怖さ、安堵は長く。第2話の「ひとりにしないで」の後、第5話の狼が飲み始める前、第10話の肉球が手へ触れる前には無言の時間を置く。夜から翌朝へは場面の間を広げる。数値は360px幅での基準値で、本文幅に比例する。全場面を一画面ずつには分けない。
+動作と合図は近く、返事待ちや怖さ、休息は長く。子供・狼・魔王の初登場に加え、第12話の声と子羊、第15話の怖い門と魔王、第29話の通水開始と村への到着をスクロールの先で見せる。第18話の足が動かない犬、第30話の握手への返事には原画内の待つ間を置く。
 
-[表示範囲と間の指定](production/scroll-layout.json)、[変更前後の実測](production/scroll-pacing-validation.json)、[寄り添う場面の表示](production/review/comfort-390.jpg)、[握手の表示](production/review/handshake-360.jpg)。全話の360px・390px完成画像と各話の絵コンテも同じ組版へ更新した。
+[表示範囲と間](production/scroll-layout.json)、[目視確認](production/visual-review.json)、各話 validation.json に表示窓、画像ハッシュ、実測幅、余白、連続スクロール窓を記録。
 
 ## 読む・保存する
 
-話一覧から各話へ進み、末尾で前後の話へ移動できる。各話 reader.html は画像・CSSを内包した単独ファイル。all.html は全100枚を連続して読むリーダー。episode-01/webtoon-390.jpg などはブラウザで書き出した完成画像。
+話一覧から各話へ進み、末尾で前後の話へ移動する。reader.html は画像とCSSを内包した単独ファイル。all.html は全300枚の連続リーダー。各話 webtoon-390.jpg / webtoon-360.jpg は完成画像。
 
-## 制作資料
+## 制作資料と確認
 
-[シリーズ設定](series-bible.md)、[連続性](continuity.md)、[全話の絵コンテ・台詞計画](production/plan.json)、[実際の生成記録](production/generation-records.json)、[修正記録](production/issues.json)。各話 storyboard.md / scenes.json / PROMPTS.md に読む順番、間、採用画像のSHA256、元の生成指示と編集指示を記録する。
+[シリーズ設定](series-bible.md)、[連続性](continuity.md)、[全話計画](production/plan.json)、[生成記録](production/generation-records.json)、[制作状況](production/status.md)。各話 storyboard.md / scenes.json / PROMPTS.md に台詞、間、採用画像のSHA256、生成・編集指示を記録する。
 
-原画PNGとその修正元は採用版の制作資料。配布には同じ寸法のWebPを使用し、Web・単独リーダー・iOS同梱の採用画像をバイトで照合する。旧版の本文・リーダー・配布物はGitの履歴で管理し、共有の人物参照は ../references/ に保持する。
+原画PNGと修正元は採用作画の制作資料。配布画像は同寸法のWebP。旧版の本文・配布物はGit履歴で管理し、共有人物参照は ../references/ に保持する。
 
-## 確認と再出力
+全300枚を360px幅で通読。続編の修正画像も再確認。文字高は目視で約19〜28px。390×844・360×800の読み込み・話移動・表示窓と余白をPlaywrightで確認し、単独リーダーの画像バイトとiOS同梱HTML・CSS・画像を照合する。実機確認は未実施。公開はPR経由のCI・レビュー・mainへの取り込み後に行う。
 
-各話 validation.json は390×844・360×800の実測幅、全長、読み込み、話移動、表示窓と実際の余白を記録する。余白修正は cua_repl のブラウザで全20表示を実測し、全10話の全長書き出しと代表場面で緩急を確認した。100枚の原画と日本語は制作時に360pxで通読済みで、今回も原画の幅と全画素を保つ。文字高は概ね19〜28pxの目視見積り。単独リーダーの画像とiOSのHTML・CSS・全100画像をバイトで照合した。実機確認・本番公開は未実施。
-
-Pillowが使えるPythonで `python production/build.py`。PlaywrightとChromiumが使える環境で `node production/validate.cjs`。必要に応じて `CHROMIUM_EXECUTABLE_PATH` を設定する。リポジトリ直下で `python scripts/sync_ios_webtoons.py` によりiOSへ同梱し、`--check` で照合する。
+Pillow対応Pythonで `python production/assemble_continuation.py`、`python production/build.py`。PlaywrightとChromium対応Nodeで `node production/validate.cjs`。リポジトリ直下で `python scripts/sync_ios_webtoons.py`、`--check` で同梱版を照合する。
