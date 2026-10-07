@@ -109,7 +109,16 @@ async function load() {
       img.src = '/images/' + encodeURIComponent(id) + '/' + encodeURIComponent(block.src);
       img.alt = block.alt; img.loading = index < 2 ? 'eager' : 'lazy'; img.decoding = 'async';
       root.append(img);
-    } else if (block.type === 'spacer') root.append(text('div', '', 'spacer ' + (block.size === 'long' ? 'long' : '')));
+    } else if (block.type === 'spacer') {
+      const spacer = text('div', '', 'spacer ' + (block.size === 'long' ? 'long' : ''));
+      // Adopted artwork can specify its pause at a 390px phone width.
+      const phone = /^phone-(\d+)$/.exec(block.size);
+      if (phone && Number(phone[1]) <= 2000) {
+        spacer.style.height = (Number(phone[1]) / 3.9) + 'cqw';
+        spacer.style.background = '#fff';
+      }
+      root.append(spacer);
+    }
     else root.append(text('p', block.type === 'speech' ? block.speaker + '「' + block.text + '」' : block.text, block.type));
   });
   // Record only once the first page actually loads; failed readers remain unread.

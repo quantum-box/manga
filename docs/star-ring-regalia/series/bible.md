@@ -14,13 +14,13 @@ target_episode_count: 200
 episode_count_constraint: minimum
 scope_source: user
 working_outline_episode_count: 240
-current_deliverable: series_concept_and_opening_arc_design
+current_deliverable: episodes_01_10_in_production
 initial_production_range: [1, 10]
-art_status: not_started
+art_status: in_progress
 publication_status: not_published
 ```
 
-今回の成果物は企画・設定・240話の仮ロードマップ・導入10話の設計。ユーザーの発言は方向性の相談として扱い、完成漫画10話の制作依頼へ広げない。導入10話はまだ完成脚本でも完成原稿でもない。240話は構成を検証するための仮の総数であり、ユーザーが240話での完結を指定したわけではない。
+企画・設定・240話の仮ロードマップを作成後、ユーザーが「めちゃくちゃ良さそう！ 続けて」と指定。第1〜10話の脚本と絵コンテを設計済み。ユーザーの2026年10月8日の指定により、一話ずつ作画・表示確認、PR、CI・レビュー、マージ、サーバー公開を完了してから次話の作画へ進む。現在の納品対象は第1話。進行状態は[制作台帳](../../../examples/star-ring-regalia/production/status.md)を正本とする。240話は構成を検証するための仮の総数であり、ユーザーが240話での完結を指定したわけではない。
 
 - [世界観・魔法・技術・ゲームのルール](world.md)
 - [主要人物と関係](characters.md)
@@ -84,4 +84,4 @@ publication_status: not_published
 
 Webtoonスキルの全体構成・世界観・人物・感情と行動の因果・ゲーム操作の参照を使用。前の作品からは設定や人物を流用せず、「力が使えることと本人の理解を分ける」「UIを見ることで行動が変わる場面だけ表示する」という判断を採用する。
 
-今回は設定と導入設計のため、作画見本の確認、画像生成、スマホ表示検証は制作実績に含めない。作画へ進む段階で、余白と情報の出現順、縦書き、カメラ、吹き出しを別途設計・確認する。
+作画参照と人物の基準画像を確認済み。余白と情報の出現順、縦書き、カメラ、吹き出しは各話のstoryboard.mdで設計し、実際のスマホ幅で検証する。完成・表示・公開の状態は制作台帳へ個別に記録する。
