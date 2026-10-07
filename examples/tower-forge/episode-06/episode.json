@@ -1,33 +1,89 @@
 {
   "number": 6,
   "title": "三人で一本の剣",
+  "revision": "continuation-2026-10-07",
+  "arc": "修理した剣を同じ現場で試し、勝利を急がず三人の合図と間隔を守る。前の失敗を攻略へ変えて新しい部屋へ進む。奥の音をたどった先で大型守護者を初めて見る。",
+  "art_state": "灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。",
   "scenes": [
     {
-      "name": "再び水路へ",
-      "location": "同じ第一層旧水路、次の遠征",
+      "name": "同じ入口",
+      "location": "第5話の試験後、同じ日の午後の再遠征。旧水路、青緑の水、銅管。",
+      "layout": "上の保守口と三人、中央に帰還点の青光、下にセナの左盾。",
+      "understanding": "修理後に同じ入口から再び挑む。",
       "panels": [
         {
-          "art": "全幅。三人が前と同じ銅の縦管の曲がり角へ戻る。セナの盾の擦り傷は残る。",
-          "speaker": "セナ",
-          "text": "同じ場所、だね。",
-          "columns": [
-            "同じ場所、",
-            "だね。"
-          ],
+          "art": "街側の保守口から三人が降りる、東門を通らない。昼光は階段の上だけ。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
           "voice": "普通の声"
         },
         {
-          "art": "右寄せカイ。改修剣の鍔の銅板を指で確認する。",
+          "art": "カイが登録済み帰還点を見る。",
           "speaker": "カイ",
-          "text": "今度は、間を守る。",
+          "text": "ここまで、戻れる。",
           "columns": [
-            "今度は、",
-            "間を守る。"
+            "ここまで、",
+            "戻れる。"
           ],
           "voice": "普通の声"
         },
         {
-          "art": "小さなイリスの顔。杖を短く構え、合図を待つ。",
+          "art": "セナの左盾の傷は残る。",
+          "speaker": "セナ",
+          "text": "同じ道だね。",
+          "columns": [
+            "同じ道だね。"
+          ],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 100,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "01",
+      "file": "art/r01-complete.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 第5話の試験後、同じ日の午後の再遠征。旧水路、青緑の水、銅管。\nScroll composition: 上の保守口と三人、中央に帰還点の青光、下にセナの左盾。\nWhat the reader understands: 修理後に同じ入口から再び挑む。\nWithhold: 後の結果や報酬\nBeat 1: 街側の保守口から三人が降りる、東門を通らない。昼光は階段の上だけ。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 2: カイが登録済み帰還点を見る。\nSpeaker カイ, exact dialogue: ここまで、戻れる。 Vertical columns right-to-left: ここまで、 / 戻れる。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 3: セナの左盾の傷は残る。\nSpeaker セナ, exact dialogue: 同じ道だね。 Vertical columns right-to-left: 同じ道だね。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nAfter this asset: 短い呼吸. Outside pause at 390px width: 100px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: ONE borderless vertical descent through stone stair and copper pipe, entrance daylight only above. Tiny safe blue return point between staggered two party close-up dialogue vignettes. At least30% white. No guard visible.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "ONE borderless vertical descent through stone stair and copper pipe, entrance daylight only above. Tiny safe blue return point between staggered two party close-up dialogue vignettes. At least30% white. No guard visible.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "道具の確認",
+      "location": "第5話の試験後、同じ日の午後の再遠征。旧水路、青緑の水、銅管。",
+      "layout": "剣の銅板と弁の接写、本人状態窓、イリスの杖先。",
+      "understanding": "修理の新しい状態を引き継ぐ。",
+      "panels": [
+        {
+          "art": "カイが開いた弁と小さい銅板を目で確かめる。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "カイが装備を確認し閉じる。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声",
+          "ui": [
+            {
+              "owner": "カイ",
+              "input": "装備の状態を確認",
+              "lines": [
+                "灯刃・試作",
+                "強化出力 正常"
+              ],
+              "visibility": "本人だけ"
+            }
+          ]
+        },
+        {
+          "art": "イリスは杖を低く保つ。",
           "speaker": "イリス",
           "text": "一回分ずつ、送る。",
           "columns": [
@@ -35,100 +91,523 @@
             "送る。"
           ],
           "voice": "普通の声"
+        }
+      ],
+      "gap": 90,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "02",
+      "file": "art/r02-complete.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 第5話の試験後、同じ日の午後の再遠征。旧水路、青緑の水、銅管。\nScroll composition: 剣の銅板と弁の接写、本人状態窓、イリスの杖先。\nWhat the reader understands: 修理の新しい状態を引き継ぐ。\nWithhold: 後の結果や報酬\nBeat 1: カイが開いた弁と小さい銅板を目で確かめる。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 2: カイが装備を確認し閉じる。\nDialogue: none; no speech or thought balloons in this beat.\nHUD owner カイ, input 装備の状態を確認, exact horizontal rows: 灯刃・試作 | 強化出力 正常. Visibility: 本人だけ.\nBeat 3: イリスは杖を低く保つ。\nSpeaker イリス, exact dialogue: 一回分ずつ、送る。 Vertical columns right-to-left: 一回分ずつ、 / 送る。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nAfter this asset: 短い呼吸. Outside pause at 390px width: 90px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Small upper SIMPLE blade guard close-up: ONE small flat copper plate at LEFT guard edge and tiny OPEN vent, intact steel; middle PRIVATE cyan equipment HUD; lower Iris face/staff speaks. White at least35%, no workshop background, no enemy.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Small upper SIMPLE blade guard close-up: ONE small flat copper plate at LEFT guard edge and tiny OPEN vent, intact steel; middle PRIVATE cyan equipment HUD; lower Iris face/staff speaks. White at least35%, no workshop background, no enemy.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "変更は相談する",
+      "location": "第5話の試験後、同じ日の午後の再遠征。旧水路、青緑の水、銅管。",
+      "layout": "三人の短い目線の応酬、下は進み出す足元。",
+      "understanding": "カイは限界を先に言えるようになった。",
+      "panels": [
+        {
+          "art": "カイが二人に向き直る。",
+          "speaker": "カイ",
+          "text": "待つ間、任せる。",
+          "columns": [
+            "待つ間、",
+            "任せる。"
+          ],
+          "voice": "普通の声"
         },
         {
-          "art": "下の中コマ。前回退いた門の先で小型機が動き出す。",
+          "art": "セナが頷く。",
+          "speaker": "セナ",
+          "text": "うん。無理なら、戻ろう。",
+          "columns": [
+            "うん。",
+            "無理なら、",
+            "戻ろう。"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "カイが息を吐き、歩き出す。",
+          "speaker": "カイ",
+          "text": "今度は、隠さない。",
+          "columns": [
+            "今度は、",
+            "隠さない。"
+          ],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 200,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "03",
+      "file": "art/r03-complete.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 第5話の試験後、同じ日の午後の再遠征。旧水路、青緑の水、銅管。\nScroll composition: 三人の短い目線の応酬、下は進み出す足元。\nWhat the reader understands: カイは限界を先に言えるようになった。\nWithhold: 後の結果や報酬\nBeat 1: カイが二人に向き直る。\nSpeaker カイ, exact dialogue: 待つ間、任せる。 Vertical columns right-to-left: 待つ間、 / 任せる。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 2: セナが頷く。\nSpeaker セナ, exact dialogue: うん。無理なら、戻ろう。 Vertical columns right-to-left: うん。 / 無理なら、 / 戻ろう。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 3: カイが息を吐き、歩き出す。\nSpeaker カイ, exact dialogue: 今度は、隠さない。 Vertical columns right-to-left: 今度は、 / 隠さない。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nAfter this asset: 短い呼吸. Outside pause at 390px width: 200px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Sparse uneven face/eye-contact vignettes Kai then Sena then small boots walking into broad white. No guard or boss seen yet, no full-width equal rows.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Sparse uneven face/eye-contact vignettes Kai then Sena then small boots walking into broad white. No guard or boss seen yet, no full-width equal rows.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "残した相手",
+      "location": "前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。",
+      "layout": "水路の地理を上の広い引き、小型機の傷、カイの顔。",
+      "understanding": "前回倒せなかった相手が残っている。",
+      "panels": [
+        {
+          "art": "格子の奥、傷のある小型機一体が進路を塞ぐ。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "側面の浅い傷は第4話の一撃と同じ場所、刻線は正常に明滅。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "カイが傷を見て構える。",
+          "speaker": "カイ",
+          "text": "前の続きを、やろう。",
+          "columns": [
+            "前の続きを、",
+            "やろう。"
+          ],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 120,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "04",
+      "file": "art/r04-complete-shield.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。\nScroll composition: 水路の地理を上の広い引き、小型機の傷、カイの顔。\nWhat the reader understands: 前回倒せなかった相手が残っている。\nWithhold: 後の結果や報酬\nBeat 1: 格子の奥、傷のある小型機一体が進路を塞ぐ。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 2: 側面の浅い傷は第4話の一撃と同じ場所、刻線は正常に明滅。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 3: カイが傷を見て構える。\nSpeaker カイ, exact dialogue: 前の続きを、やろう。 Vertical columns right-to-left: 前の続きを、 / やろう。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nAfter this asset: 短い呼吸. Outside pause at 390px width: 120px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Upper wide rear party toward ONE HUMAN-HEIGHT1.8m compact guard ahead. Middle small flank cut from previous visit; lower larger serious Kai face/sword. Guardian boss NOT present. Open manual grate behind party, SECOND locked grate farther beyond this compact guard.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Upper wide rear party toward ONE HUMAN-HEIGHT1.8m compact guard ahead. Middle small flank cut from previous visit; lower larger serious Kai face/sword. Guardian boss NOT present. Open manual grate behind party, SECOND locked grate farther beyond this compact guard.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "待てる",
+      "location": "前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。",
+      "layout": "石腕の前兆、セナの左盾、カイの止めた足。",
+      "understanding": "同じ状況でカイは急いで振らない。",
+      "panels": [
+        {
+          "art": "小型機が突進の姿勢を取る。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "セナが前へ左盾を出す。",
+          "speaker": "セナ",
+          "text": "受ける！",
+          "columns": [
+            "受ける！"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "カイは右後方で剣を低く保つ。",
+          "speaker": "カイ",
+          "text": "見てる。",
+          "columns": [
+            "見てる。"
+          ],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 50,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "05",
+      "file": "art/r05-complete.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。\nScroll composition: 石腕の前兆、セナの左盾、カイの止めた足。\nWhat the reader understands: 同じ状況でカイは急いで振らない。\nWithhold: 後の結果や報酬\nBeat 1: 小型機が突進の姿勢を取る。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 2: セナが前へ左盾を出す。\nSpeaker セナ, exact dialogue: 受ける！ Vertical columns right-to-left: 受ける！. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 3: カイは右後方で剣を低く保つ。\nSpeaker カイ, exact dialogue: 見てる。 Vertical columns right-to-left: 見てる。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nAfter this asset: 短い呼吸. Outside pause at 390px width: 50px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Small upper stone arm attack preparation. Larger Sena LEFT shield poised in middle foreground. Tiny lower Kai feet deliberately WAIT while sword held low, one short balloon each. Unequal spacing, no contact/strike yet.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Small upper stone arm attack preparation. Larger Sena LEFT shield poised in middle foreground. Tiny lower Kai feet deliberately WAIT while sword held low, one short balloon each. Unequal spacing, no contact/strike yet.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "一、受ける",
+      "location": "前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。",
+      "layout": "広い斜めの盾接触、中の姿勢がずれる敵、下のセナの目。",
+      "understanding": "盾が敵の動きを止めて攻撃の窓を作る。",
+      "panels": [
+        {
+          "art": "セナ左盾が石腕を受け止める。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声",
+          "sounds": [
+            {
+              "text": "ガン",
+              "source": "石腕と銀盾の接触",
+              "placement": "斜めの枠と下の小さい姿勢コマの白へ、一つの衝撃が続く"
+            }
+          ]
+        },
+        {
+          "art": "敵の肩が外へ向く、右の銅管は同じ位置。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声",
+          "sound_continuations": [
+            {
+              "origin": "一、受けるの接触",
+              "text": "ガン",
+              "placement": "同じ音の末端がここで消える"
+            }
+          ]
+        },
+        {
+          "art": "セナがカイへ短く合図。",
+          "speaker": "セナ",
+          "text": "一、受けた。",
+          "columns": [
+            "一、",
+            "受けた。"
+          ],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 70,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "06",
+      "file": "art/r06-complete.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。\nScroll composition: 広い斜めの盾接触、中の姿勢がずれる敵、下のセナの目。\nWhat the reader understands: 盾が敵の動きを止めて攻撃の窓を作る。\nWithhold: 後の結果や報酬\nBeat 1: セナ左盾が石腕を受け止める。\nDialogue: none; no speech or thought balloons in this beat.\nOriginating SFX exact text ガン: 石腕と銀盾の接触; 斜めの枠と下の小さい姿勢コマの白へ、一つの衝撃が続く\nBeat 2: 敵の肩が外へ向く、右の銅管は同じ位置。\nDialogue: none; no speech or thought balloons in this beat.\nContinue SAME SFX from 一、受けるの接触: ガン; 同じ音の末端がここで消える; no new impact and no duplicate complete inscription.\nBeat 3: セナがカイへ短く合図。\nSpeaker セナ, exact dialogue: 一、受けた。 Vertical columns right-to-left: 一、 / 受けた。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nAfter this asset: 短い呼吸. Outside pause at 390px width: 70px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: ONE broad diagonal impact of compact guard arm into angled Sena LEFT shield, FULL Sena arm anatomy clear. Small lower enemy shoulder rotates away revealing old flank scar; Sena face short signal. This is SMALL1.8m guard, not guardian.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "ONE broad diagonal impact of compact guard arm into angled Sena LEFT shield, FULL Sena arm anatomy clear. Small lower enemy shoulder rotates away revealing old flank scar; Sena face short signal. This is SMALL1.8m guard, not guardian.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "二、送る",
+      "location": "前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。",
+      "layout": "杖先→鍔の一本の線→カイの目、密な接写。",
+      "understanding": "イリスは入力を一回で切る。",
+      "panels": [
+        {
+          "art": "イリスが一回だけ琥珀の糸を送る。",
+          "speaker": "イリス",
+          "text": "二、送る。",
+          "columns": [
+            "二、",
+            "送る。"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "糸が鍔へ届き、すぐ切れる。剣の細い橙線だけ点く。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "カイが敵の暗まる刻線を見て足を出す。",
           "speaker": "",
           "text": "",
           "columns": [],
           "voice": "普通の声"
         }
       ],
-      "gap": 60,
-      "withheld": "未登場の敵・後の報酬を描かない",
-      "id": "01",
-      "file": "art/01.png",
-      "prompt": "Use case: illustration-story. Finished full-color Japanese smartphone vertical-scroll Webtoon. ONE portrait illustration around 1024x3072, a tall 1:3 canvas, with four deliberately UNEQUAL panels or beats ordered from top to bottom. Reference image establishes character identity, clothes, tools, palette, anime style ONLY; do not copy the reference sheet's layout, labels, portraits, parchment backdrop, or bring every character into every panel. Clean detailed anime linework, readable expressive faces, controlled cel shading, grounded high fantasy, warm natural metals, white page gutters. Medieval sword and magic VRMMORPG; actual world scenery looks like a fantasy adventure, only small HUDs imply gameplay. No futuristic city.\nDraw exact Japanese speech as part of the raster artwork. Genuine vertical lettering with upright characters, top-to-bottom within a column, columns RIGHT TO LEFT. Clean printed Japanese manga gothic, near 75px glyph height on a 1024px-wide original, readable at 360px display width; never shrink long dialogue. PRIORITIZE large readable lettering; expand the balloons and panel height instead. Maintain around 22-26px visible Japanese glyphs after 360px downscaling. Each utterance below gives columns in right-to-left order, with / only as a separator in this instruction, never printed. Normal speech: slender oval or rounded tall bubble, tail to speaker. Quiet speech: softly irregular thin outline with tail. Shouts: bold spiky bubble and clear pointed tail. Thoughts: cloud-like shape with dots toward the thinker, no speech tail. HUD is translucent cyan, compact horizontal Japanese is allowed for HUD, not ornamental gold panel. Sound effects are material-appropriate drawn text and may be horizontal. Never duplicate an utterance, add extra visible writing, translate Japanese, show speaker labels, or overlay unnecessary HUD.\nPanel layout: shallow establishing/context panel when appropriate, staggered medium conversation or action, narrow object/eye insert, larger lower reaction or result. Use unequal heights and widths, some borderless long scenery; action may have slanted frame borders but keep the lettering upright. Small panels show ONLY close-up subjects, not tiny whole bodies. Dialogue must not cover faces, hands, sword, shield, or clue. Keep clear right-to-left order inside any same-row split. Use varied camera distances for understanding, no uniform four-box grid. Use a white bottom edge/gutter. Characters remain in the same location even if offscreen. Keep actions causal and exact prop state.\nKai: dark-brown short hair, one amber streak at his right temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short indigo cape, dark trousers, leather boots, copper cuff left forearm, steel one-handed sword in right hand with square brass guard and one thin orange fuller inset; not a lightsaber. After episode 5 sword has small copper cooling plate beside guard. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over deep blue tunic, navy cape, one triangular silver shield with cobalt line in left hand, straight steel sword on belt when not specified. Iris: plum bob hair, green eyes, teal hood-down cloak, ivory tunic, wooden staff with ONE amber crystal and copper ring. Do not swap their colors, genders, or props. Orun: older male NPC smith with short gray beard and brown apron. Vane: male player, tied-back ash-gray hair, silver armor, white cape. Never introduce unmentioned characters, duplicate hands/limbs/props or show a future reveal early. No watermark. EVERY fantasy panel is inside the SAME dim underground old aqueduct: damp gray stone VAULTED arches, moss, copper vertical pipes, blue-green shallow flowing water, dry stone walkways, restrained cool lighting. No outdoor city streets, blue heraldic banners, sky, castle, sunshine except a narrow entrance shaft in episode 3 strip 1. Reference 2, when supplied, is aqueduct/guardian identity reference ONLY; do not copy its lettering or layout. Normal guardians are human-height chunky gray stone automatons with orange engraved channels, two arms, two legs, one small round orange chest indicator. Boss guardian is the SAME ancient construction language but three times larger, with a square plated outer chest door covering the removable storage assembly. Never add a second chest core, extra arms, or expose its interior until episode 8 strip 4.\nEpisode 6, strip 1, scene: 再び水路へ. Location continuity: 同じ第一層旧水路、次の遠征.\nBEAT 1 top-to-bottom. Artwork/camera/focus: 全幅。三人が前と同じ銅の縦管の曲がり角へ戻る。セナの盾の擦り傷は残る。\nExactly one utterance by セナ; voice/shape: 普通の声. Exact text: 同じ場所、だね。. Vertical columns RIGHT to LEFT: 同じ場所、 / だね。\nBEAT 2 top-to-bottom. Artwork/camera/focus: 右寄せカイ。改修剣の鍔の銅板を指で確認する。\nExactly one utterance by カイ; voice/shape: 普通の声. Exact text: 今度は、間を守る。. Vertical columns RIGHT to LEFT: 今度は、 / 間を守る。\nBEAT 3 top-to-bottom. Artwork/camera/focus: 小さなイリスの顔。杖を短く構え、合図を待つ。\nExactly one utterance by イリス; voice/shape: 普通の声. Exact text: 一回分ずつ、送る。. Vertical columns RIGHT to LEFT: 一回分ずつ、 / 送る。\nBEAT 4 top-to-bottom. Artwork/camera/focus: 下の中コマ。前回退いた門の先で小型機が動き出す。\nSilent beat: no speech bubble, no extra text.\nWithheld information: 未登場の敵・後の報酬を描かない"
+      "gap": 50,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "07",
+      "file": "art/r07-complete-position.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。\nScroll composition: 杖先→鍔の一本の線→カイの目、密な接写。\nWhat the reader understands: イリスは入力を一回で切る。\nWithhold: 後の結果や報酬\nBeat 1: イリスが一回だけ琥珀の糸を送る。\nSpeaker イリス, exact dialogue: 二、送る。 Vertical columns right-to-left: 二、 / 送る。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 2: 糸が鍔へ届き、すぐ切れる。剣の細い橙線だけ点く。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 3: カイが敵の暗まる刻線を見て足を出す。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nAfter this asset: 短い呼吸. Outside pause at 390px width: 50px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: THREE small staggered close-ups connected by ONE short amber mana strand: Iris STAFF tip ONE gem, bare RIGHT Kai swordhand/simple guard, then Kai eye. Spell ONE pulse immediately ENDS, not a continuous beam or fire. No slash yet.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "THREE small staggered close-ups connected by ONE short amber mana strand: Iris STAFF tip ONE gem, bare RIGHT Kai swordhand/simple guard, then Kai eye. Spell ONE pulse immediately ENDS, not a continuous beam or fire. No slash yet.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
     },
     {
-      "name": "受けて、待つ",
-      "location": "同じ小型機の戦闘",
+      "name": "三、斬る",
+      "location": "前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。",
+      "layout": "広い一撃、その下の小さい敵の接合部と排熱。",
+      "understanding": "観察した窓に剣の一撃を合わせる。",
       "panels": [
         {
-          "art": "斜め枠。セナが盾で受けて敵の姿勢を止める。",
-          "speaker": "セナ",
-          "text": "一、受ける！",
+          "art": "カイが右剣で側面の接合部を一撃。",
+          "speaker": "カイ",
+          "text": "三、斬る！",
           "columns": [
-            "一、受ける！"
-          ],
-          "voice": "叫び"
-        },
-        {
-          "art": "浅い杖の接写。イリスが小さい火を剣の刻線へ送る。",
-          "speaker": "イリス",
-          "text": "二、送る。",
-          "columns": [
-            "二、送る。"
+            "三、",
+            "斬る！"
           ],
           "voice": "普通の声"
         },
         {
-          "art": "広い攻撃コマ。カイが敵の横へ一撃。剣は細い橙。",
-          "speaker": "カイ",
-          "text": "三、斬る！",
-          "columns": [
-            "三、斬る！"
-          ],
-          "voice": "叫び"
+          "art": "銅接合部に深い傷が入るが敵はまだ止まらない。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声",
+          "sounds": [
+            {
+              "text": "ガッ",
+              "source": "鋼剣の接合部への衝突",
+              "placement": "枠外の白へ一度だけ響く"
+            }
+          ]
         },
         {
-          "art": "下の静かな小コマ。カイがすぐ次を振らず、弁から熱を逃がす。",
+          "art": "小さい銅板と開いた弁から淡い粒。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声",
+          "sounds": [
+            {
+              "text": "しゅう",
+              "source": "剣の損失を逃がす排熱",
+              "placement": "鍔から下の白へ細く消える"
+            }
+          ]
+        }
+      ],
+      "gap": 100,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "08",
+      "file": "art/r08-complete.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。\nScroll composition: 広い一撃、その下の小さい敵の接合部と排熱。\nWhat the reader understands: 観察した窓に剣の一撃を合わせる。\nWithhold: 後の結果や報酬\nBeat 1: カイが右剣で側面の接合部を一撃。\nSpeaker カイ, exact dialogue: 三、斬る！ Vertical columns right-to-left: 三、 / 斬る！. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 2: 銅接合部に深い傷が入るが敵はまだ止まらない。\nDialogue: none; no speech or thought balloons in this beat.\nOriginating SFX exact text ガッ: 鋼剣の接合部への衝突; 枠外の白へ一度だけ響く\nBeat 3: 小さい銅板と開いた弁から淡い粒。\nDialogue: none; no speech or thought balloons in this beat.\nOriginating SFX exact text しゅう: 剣の損失を逃がす排熱; 鍔から下の白へ細く消える\nAfter this asset: 短い呼吸. Outside pause at 390px width: 100px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Upper65% ONE broad diagonal RIGHT sword strike to existing flank copper joint. Lower small close-up deepened scar but guard still ACTIVE, then small OPEN vent and ONE small plate exhausting faint particles into white. Exact Kai attack balloon and ONE SFX inscription, no duplicate blows.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Upper65% ONE broad diagonal RIGHT sword strike to existing flank copper joint. Lower small close-up deepened scar but guard still ACTIVE, then small OPEN vent and ONE small plate exhausting faint particles into white. Exact Kai attack balloon and ONE SFX inscription, no duplicate blows.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "ここで待つ",
+      "location": "前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。",
+      "layout": "カイの握りが止まる接写、前に入るセナ、下に疎な白と弁。",
+      "understanding": "すぐ続けず、冷却を仲間に守ってもらう。",
+      "panels": [
+        {
+          "art": "カイが次の剣を振らず低く保つ。",
           "speaker": "カイ",
           "text": "……待つ。",
           "columns": [
             "……待つ。"
           ],
           "voice": "普通の声"
-        }
-      ],
-      "gap": 80,
-      "withheld": "未登場の敵・後の報酬を描かない",
-      "id": "02",
-      "file": "art/02.png",
-      "prompt": "Use case: illustration-story. Finished full-color Japanese smartphone vertical-scroll Webtoon. ONE portrait illustration around 1024x3072, a tall 1:3 canvas, with four deliberately UNEQUAL panels or beats ordered from top to bottom. Reference image establishes character identity, clothes, tools, palette, anime style ONLY; do not copy the reference sheet's layout, labels, portraits, parchment backdrop, or bring every character into every panel. Clean detailed anime linework, readable expressive faces, controlled cel shading, grounded high fantasy, warm natural metals, white page gutters. Medieval sword and magic VRMMORPG; actual world scenery looks like a fantasy adventure, only small HUDs imply gameplay. No futuristic city.\nDraw exact Japanese speech as part of the raster artwork. Genuine vertical lettering with upright characters, top-to-bottom within a column, columns RIGHT TO LEFT. Clean printed Japanese manga gothic, near 75px glyph height on a 1024px-wide original, readable at 360px display width; never shrink long dialogue. PRIORITIZE large readable lettering; expand the balloons and panel height instead. Maintain around 22-26px visible Japanese glyphs after 360px downscaling. Each utterance below gives columns in right-to-left order, with / only as a separator in this instruction, never printed. Normal speech: slender oval or rounded tall bubble, tail to speaker. Quiet speech: softly irregular thin outline with tail. Shouts: bold spiky bubble and clear pointed tail. Thoughts: cloud-like shape with dots toward the thinker, no speech tail. HUD is translucent cyan, compact horizontal Japanese is allowed for HUD, not ornamental gold panel. Sound effects are material-appropriate drawn text and may be horizontal. Never duplicate an utterance, add extra visible writing, translate Japanese, show speaker labels, or overlay unnecessary HUD.\nPanel layout: shallow establishing/context panel when appropriate, staggered medium conversation or action, narrow object/eye insert, larger lower reaction or result. Use unequal heights and widths, some borderless long scenery; action may have slanted frame borders but keep the lettering upright. Small panels show ONLY close-up subjects, not tiny whole bodies. Dialogue must not cover faces, hands, sword, shield, or clue. Keep clear right-to-left order inside any same-row split. Use varied camera distances for understanding, no uniform four-box grid. Use a white bottom edge/gutter. Characters remain in the same location even if offscreen. Keep actions causal and exact prop state.\nKai: dark-brown short hair, one amber streak at his right temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short indigo cape, dark trousers, leather boots, copper cuff left forearm, steel one-handed sword in right hand with square brass guard and one thin orange fuller inset; not a lightsaber. After episode 5 sword has small copper cooling plate beside guard. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over deep blue tunic, navy cape, one triangular silver shield with cobalt line in left hand, straight steel sword on belt when not specified. Iris: plum bob hair, green eyes, teal hood-down cloak, ivory tunic, wooden staff with ONE amber crystal and copper ring. Do not swap their colors, genders, or props. Orun: older male NPC smith with short gray beard and brown apron. Vane: male player, tied-back ash-gray hair, silver armor, white cape. Never introduce unmentioned characters, duplicate hands/limbs/props or show a future reveal early. No watermark. EVERY fantasy panel is inside the SAME dim underground old aqueduct: damp gray stone VAULTED arches, moss, copper vertical pipes, blue-green shallow flowing water, dry stone walkways, restrained cool lighting. No outdoor city streets, blue heraldic banners, sky, castle, sunshine except a narrow entrance shaft in episode 3 strip 1. Reference 2, when supplied, is aqueduct/guardian identity reference ONLY; do not copy its lettering or layout. Normal guardians are human-height chunky gray stone automatons with orange engraved channels, two arms, two legs, one small round orange chest indicator. Boss guardian is the SAME ancient construction language but three times larger, with a square plated outer chest door covering the removable storage assembly. Never add a second chest core, extra arms, or expose its interior until episode 8 strip 4.\nEpisode 6, strip 2, scene: 受けて、待つ. Location continuity: 同じ小型機の戦闘.\nBEAT 1 top-to-bottom. Artwork/camera/focus: 斜め枠。セナが盾で受けて敵の姿勢を止める。\nExactly one utterance by セナ; voice/shape: 叫び. Exact text: 一、受ける！. Vertical columns RIGHT to LEFT: 一、受ける！\nBEAT 2 top-to-bottom. Artwork/camera/focus: 浅い杖の接写。イリスが小さい火を剣の刻線へ送る。\nExactly one utterance by イリス; voice/shape: 普通の声. Exact text: 二、送る。. Vertical columns RIGHT to LEFT: 二、送る。\nBEAT 3 top-to-bottom. Artwork/camera/focus: 広い攻撃コマ。カイが敵の横へ一撃。剣は細い橙。\nExactly one utterance by カイ; voice/shape: 叫び. Exact text: 三、斬る！. Vertical columns RIGHT to LEFT: 三、斬る！\nBEAT 4 top-to-bottom. Artwork/camera/focus: 下の静かな小コマ。カイがすぐ次を振らず、弁から熱を逃がす。\nExactly one utterance by カイ; voice/shape: 普通の声. Exact text: ……待つ。. Vertical columns RIGHT to LEFT: ……待つ。\nWithheld information: 未登場の敵・後の報酬を描かない"
-    },
-    {
-      "name": "前回の先へ",
-      "location": "同じ戦闘から奥の門前へ",
-      "panels": [
+        },
         {
-          "art": "浅い接写。敵の刻線が暗くなる時、カイの剣はまだ使える。",
+          "art": "敵がもう一度腕を上げ、セナがカイの前へ入る。",
           "speaker": "",
           "text": "",
           "columns": [],
           "voice": "普通の声"
         },
         {
-          "art": "斜めの決着。二撃目で敵が停止する。セナの盾は一枚。",
-          "speaker": "音",
-          "text": "ガッ",
-          "columns": [
-            "ガッ"
-          ],
-          "voice": "効果音"
-        },
+          "art": "弁の粒が白へ薄く消える、人物を下の余白へ追加しない。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 260,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "待つ時間を戦闘の一部にする",
+        "cue": "止める手",
+        "next": "次の攻撃の合図"
+      },
+      "id": "09",
+      "file": "art/r09-complete-position.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。\nScroll composition: カイの握りが止まる接写、前に入るセナ、下に疎な白と弁。\nWhat the reader understands: すぐ続けず、冷却を仲間に守ってもらう。\nWithhold: 後の結果や報酬\nBeat 1: カイが次の剣を振らず低く保つ。\nSpeaker カイ, exact dialogue: ……待つ。 Vertical columns right-to-left: ……待つ。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 2: 敵がもう一度腕を上げ、セナがカイの前へ入る。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 3: 弁の粒が白へ薄く消える、人物を下の余白へ追加しない。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nAfter this asset: 待つ時間を戦闘の一部にする. Outside pause at 390px width: 260px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Sparse static lowered bare RIGHT swordhand and small Kai face; middle Sena crosses in front to intercept raised enemy arm; BOTTOM HALF clean WHITE with faint fading particles from tiny OPEN vent, no additional portraits/scenery. Cooling wait is visible time, no second slash.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Sparse static lowered bare RIGHT swordhand and small Kai face; middle Sena crosses in front to intercept raised enemy arm; BOTTOM HALF clean WHITE with faint fading particles from tiny OPEN vent, no additional portraits/scenery. Cooling wait is visible time, no second slash.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "任せる時間",
+      "location": "前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。",
+      "layout": "大きいセナ防御、イリスの観察、カイの状態を見る目。",
+      "understanding": "三人に役割があるので待てる。",
+      "panels": [
         {
-          "art": "中コマ。三人が立ち止まり、カイが嬉しさと安堵で笑う。",
-          "speaker": "カイ",
-          "text": "続けて、戦えた。",
+          "art": "セナが左盾で次の腕を外へずらす。",
+          "speaker": "セナ",
+          "text": "大丈夫。見てて。",
           "columns": [
-            "続けて、",
-            "戦えた。"
+            "大丈夫。",
+            "見てて。"
           ],
           "voice": "普通の声"
         },
         {
-          "art": "小さなセナの反応。親指を立てて笑う。",
+          "art": "イリスは供給を重ねずカイを見る。",
+          "speaker": "イリス",
+          "text": "まだ、送らない。",
+          "columns": [
+            "まだ、",
+            "送らない。"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "カイが自分の剣と敵の刻線を交互に見る。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 100,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "10",
+      "file": "art/r10-complete.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。\nScroll composition: 大きいセナ防御、イリスの観察、カイの状態を見る目。\nWhat the reader understands: 三人に役割があるので待てる。\nWithhold: 後の結果や報酬\nBeat 1: セナが左盾で次の腕を外へずらす。\nSpeaker セナ, exact dialogue: 大丈夫。見てて。 Vertical columns right-to-left: 大丈夫。 / 見てて。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 2: イリスは供給を重ねずカイを見る。\nSpeaker イリス, exact dialogue: まだ、送らない。 Vertical columns right-to-left: まだ、 / 送らない。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 3: カイが自分の剣と敵の刻線を交互に見る。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nAfter this asset: 短い呼吸. Outside pause at 390px width: 100px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Large Sena LEFT shield angles compact arm outward, Iris smaller observing with exact balloon, smallest Kai eyes between sword and enemy. Unequal diagonal art and white bottom, no supply strand and no Kai slash.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Large Sena LEFT shield angles compact arm outward, Iris smaller observing with exact balloon, smallest Kai eyes between sword and enemy. Unequal diagonal art and white bottom, no supply strand and no Kai slash.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "もう一度",
+      "location": "前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。",
+      "layout": "セナの合図、単発供給、広いカイの二打目を下へ。",
+      "understanding": "冷却後の二回目も同じ条件で強化できる。",
+      "panels": [
+        {
+          "art": "セナが敵の右を空ける。",
+          "speaker": "セナ",
+          "text": "今、右！",
+          "columns": [
+            "今、右！"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "イリスが単発の糸を送る、杖先魔石一つ。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "カイ右剣が同じ傷の銅接合部へ二打目。鋼刃と橙線正常。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声",
+          "sounds": [
+            {
+              "text": "ガッ",
+              "source": "二回目の接合部の切断",
+              "placement": "下の白へ一回だけ"
+            }
+          ]
+        }
+      ],
+      "gap": 110,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "11",
+      "file": "art/r11-complete-shield.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。\nScroll composition: セナの合図、単発供給、広いカイの二打目を下へ。\nWhat the reader understands: 冷却後の二回目も同じ条件で強化できる。\nWithhold: 後の結果や報酬\nBeat 1: セナが敵の右を空ける。\nSpeaker セナ, exact dialogue: 今、右！ Vertical columns right-to-left: 今、右！. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 2: イリスが単発の糸を送る、杖先魔石一つ。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 3: カイ右剣が同じ傷の銅接合部へ二打目。鋼刃と橙線正常。\nDialogue: none; no speech or thought balloons in this beat.\nOriginating SFX exact text ガッ: 二回目の接合部の切断; 下の白へ一回だけ\nAfter this asset: 短い呼吸. Outside pause at 390px width: 110px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Small upper Sena signal, smaller ONE amber pulse Iris-to-Kai, bottom broad ONE second sword hit into SAME damaged flank copper joint. ONE guard ONLY, old scar same side. No first-hit repetition montage.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Small upper Sena signal, smaller ONE amber pulse Iris-to-Kai, bottom broad ONE second sword hit into SAME damaged flank copper joint. ONE guard ONLY, old scar same side. No first-hit repetition montage.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "停止",
+      "location": "前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。",
+      "layout": "石腕が下がる接写、敵が停止した広い引き、カイの顔。",
+      "understanding": "前の敗北を連携の成功に変えた。",
+      "panels": [
+        {
+          "art": "小型機の線が消えて腕が下がる。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "同じ一体が膝をつき停止。三人が距離を取る。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "カイが自分の剣を見て息を吐く。",
+          "speaker": "カイ",
+          "text": "続けて、使えた。",
+          "columns": [
+            "続けて、",
+            "使えた。"
+          ],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 300,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "成功を受け止める",
+        "cue": "止まった敵と正常な剣",
+        "next": "三人の笑い"
+      },
+      "id": "12",
+      "file": "art/r12-complete-shield.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。\nScroll composition: 石腕が下がる接写、敵が停止した広い引き、カイの顔。\nWhat the reader understands: 前の敗北を連携の成功に変えた。\nWithhold: 後の結果や報酬\nBeat 1: 小型機の線が消えて腕が下がる。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 2: 同じ一体が膝をつき停止。三人が距離を取る。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 3: カイが自分の剣を見て息を吐く。\nSpeaker カイ, exact dialogue: 続けて、使えた。 Vertical columns right-to-left: 続けて、 / 使えた。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nAfter this asset: 成功を受け止める. Outside pause at 390px width: 300px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Upper small arm lowers as ALL compact guard eye/lines go DARK. Middle large guard KNEELS motionless, party distant. Lower Kai relaxes watching intact normal blade. NO orange on stopped enemy, no upright living machine.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Upper small arm lowers as ALL compact guard eye/lines go DARK. Middle large guard KNEELS motionless, party distant. Lower Kai relaxes watching intact normal blade. NO orange on stopped enemy, no upright living machine.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "一本の剣",
+      "location": "前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。",
+      "layout": "上はカイと剣、セナの大きい明るい表情、イリスの小さい反応。",
+      "understanding": "武器の成功は三人の協力の成果。",
+      "panels": [
+        {
+          "art": "カイが二人を見る、誇らしさより嬉しさ。",
+          "speaker": "カイ",
+          "text": "二人が待ってくれたから。",
+          "columns": [
+            "二人が",
+            "待ってくれたから。"
+          ],
+          "voice": "普通の声"
+        },
+        {
+          "art": "セナが左盾を下げて笑う。",
           "speaker": "セナ",
           "text": "三人で、一本だね。",
           "columns": [
@@ -136,36 +615,155 @@
             "一本だね。"
           ],
           "voice": "普通の声"
-        }
-      ],
-      "gap": 100,
-      "withheld": "未登場の敵・後の報酬を描かない",
-      "id": "03",
-      "file": "art/03.png",
-      "prompt": "Use case: illustration-story. Finished full-color Japanese smartphone vertical-scroll Webtoon. ONE portrait illustration around 1024x3072, a tall 1:3 canvas, with four deliberately UNEQUAL panels or beats ordered from top to bottom. Reference image establishes character identity, clothes, tools, palette, anime style ONLY; do not copy the reference sheet's layout, labels, portraits, parchment backdrop, or bring every character into every panel. Clean detailed anime linework, readable expressive faces, controlled cel shading, grounded high fantasy, warm natural metals, white page gutters. Medieval sword and magic VRMMORPG; actual world scenery looks like a fantasy adventure, only small HUDs imply gameplay. No futuristic city.\nDraw exact Japanese speech as part of the raster artwork. Genuine vertical lettering with upright characters, top-to-bottom within a column, columns RIGHT TO LEFT. Clean printed Japanese manga gothic, near 75px glyph height on a 1024px-wide original, readable at 360px display width; never shrink long dialogue. PRIORITIZE large readable lettering; expand the balloons and panel height instead. Maintain around 22-26px visible Japanese glyphs after 360px downscaling. Each utterance below gives columns in right-to-left order, with / only as a separator in this instruction, never printed. Normal speech: slender oval or rounded tall bubble, tail to speaker. Quiet speech: softly irregular thin outline with tail. Shouts: bold spiky bubble and clear pointed tail. Thoughts: cloud-like shape with dots toward the thinker, no speech tail. HUD is translucent cyan, compact horizontal Japanese is allowed for HUD, not ornamental gold panel. Sound effects are material-appropriate drawn text and may be horizontal. Never duplicate an utterance, add extra visible writing, translate Japanese, show speaker labels, or overlay unnecessary HUD.\nPanel layout: shallow establishing/context panel when appropriate, staggered medium conversation or action, narrow object/eye insert, larger lower reaction or result. Use unequal heights and widths, some borderless long scenery; action may have slanted frame borders but keep the lettering upright. Small panels show ONLY close-up subjects, not tiny whole bodies. Dialogue must not cover faces, hands, sword, shield, or clue. Keep clear right-to-left order inside any same-row split. Use varied camera distances for understanding, no uniform four-box grid. Use a white bottom edge/gutter. Characters remain in the same location even if offscreen. Keep actions causal and exact prop state.\nKai: dark-brown short hair, one amber streak at his right temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short indigo cape, dark trousers, leather boots, copper cuff left forearm, steel one-handed sword in right hand with square brass guard and one thin orange fuller inset; not a lightsaber. After episode 5 sword has small copper cooling plate beside guard. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over deep blue tunic, navy cape, one triangular silver shield with cobalt line in left hand, straight steel sword on belt when not specified. Iris: plum bob hair, green eyes, teal hood-down cloak, ivory tunic, wooden staff with ONE amber crystal and copper ring. Do not swap their colors, genders, or props. Orun: older male NPC smith with short gray beard and brown apron. Vane: male player, tied-back ash-gray hair, silver armor, white cape. Never introduce unmentioned characters, duplicate hands/limbs/props or show a future reveal early. No watermark. EVERY fantasy panel is inside the SAME dim underground old aqueduct: damp gray stone VAULTED arches, moss, copper vertical pipes, blue-green shallow flowing water, dry stone walkways, restrained cool lighting. No outdoor city streets, blue heraldic banners, sky, castle, sunshine except a narrow entrance shaft in episode 3 strip 1. Reference 2, when supplied, is aqueduct/guardian identity reference ONLY; do not copy its lettering or layout. Normal guardians are human-height chunky gray stone automatons with orange engraved channels, two arms, two legs, one small round orange chest indicator. Boss guardian is the SAME ancient construction language but three times larger, with a square plated outer chest door covering the removable storage assembly. Never add a second chest core, extra arms, or expose its interior until episode 8 strip 4.\nEpisode 6, strip 3, scene: 前回の先へ. Location continuity: 同じ戦闘から奥の門前へ.\nBEAT 1 top-to-bottom. Artwork/camera/focus: 浅い接写。敵の刻線が暗くなる時、カイの剣はまだ使える。\nSilent beat: no speech bubble, no extra text.\nBEAT 2 top-to-bottom. Artwork/camera/focus: 斜めの決着。二撃目で敵が停止する。セナの盾は一枚。\nExactly one utterance by 音; voice/shape: 効果音. Exact text: ガッ. Vertical columns RIGHT to LEFT: ガッ\nBEAT 3 top-to-bottom. Artwork/camera/focus: 中コマ。三人が立ち止まり、カイが嬉しさと安堵で笑う。\nExactly one utterance by カイ; voice/shape: 普通の声. Exact text: 続けて、戦えた。. Vertical columns RIGHT to LEFT: 続けて、 / 戦えた。\nBEAT 4 top-to-bottom. Artwork/camera/focus: 小さなセナの反応。親指を立てて笑う。\nExactly one utterance by セナ; voice/shape: 普通の声. Exact text: 三人で、一本だね。. Vertical columns RIGHT to LEFT: 三人で、 / 一本だね。\nWithheld information: 未登場の敵・後の報酬を描かない"
-    },
-    {
-      "name": "大きな脈動",
-      "location": "旧水路の奥、大きな扉の前",
-      "panels": [
-        {
-          "art": "上の水面接写。橙の光が周期的に水へ映る。",
-          "speaker": "音",
-          "text": "どくん",
-          "columns": [
-            "どくん"
-          ],
-          "voice": "効果音"
         },
         {
-          "art": "長い枠なし。水流と配管をたどり、上から下へ大きな扉へ至る。守護者の姿は上半分へ出さない。",
+          "art": "イリスが笑いながら自分の小さな戦闘記録HUDを指で保存する。紙の本・手帳は持たない。",
+          "speaker": "イリス",
+          "text": "それ、記録しとく。",
+          "columns": [
+            "それ、",
+            "記録しとく。"
+          ],
+          "voice": "普通の声",
+          "ui": [
+            {
+              "owner": "イリス",
+              "input": "戦闘記録の保存を指で選ぶ",
+              "lines": [
+                "戦闘記録 保存"
+              ],
+              "visibility": "本人だけ"
+            }
+          ]
+        }
+      ],
+      "gap": 260,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "13",
+      "file": "art/r13-complete-left-cuff.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 前に撤退した格子の先、右の太い銅管が目印。前回未討伐の小型守護機一体。\nScroll composition: 上はカイと剣、セナの大きい明るい表情、イリスの小さい反応。\nWhat the reader understands: 武器の成功は三人の協力の成果。\nWithhold: 後の結果や報酬\nBeat 1: カイが二人を見る、誇らしさより嬉しさ。\nSpeaker カイ, exact dialogue: 二人が待ってくれたから。 Vertical columns right-to-left: 二人が / 待ってくれたから。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 2: セナが左盾を下げて笑う。\nSpeaker セナ, exact dialogue: 三人で、一本だね。 Vertical columns right-to-left: 三人で、 / 一本だね。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 3: イリスが笑いながら自分の小さな戦闘記録HUDを指で保存する。紙の本・手帳は持たない。\nSpeaker イリス, exact dialogue: それ、記録しとく。 Vertical columns right-to-left: それ、 / 記録しとく。. Voice: 普通の声.\nHUD owner イリス, input 戦闘記録の保存を指で選ぶ, exact horizontal rows: 戦闘記録 保存. Visibility: 本人だけ.\nAfter this asset: 短い呼吸. Outside pause at 390px width: 260px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Broad warm happy Kai-to-friends and Sena face, tiny Iris private record gesture last. Enemy STOPPED DARK and offscreen behind, no fighting, no boss. Large white breathing zones at least35%.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Broad warm happy Kai-to-friends and Sena face, tiny Iris private record gesture last. Enemy STOPPED DARK and offscreen behind, no fighting, no boss. Large white breathing zones at least35%.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "前回の先",
+      "location": "第5話の試験後、同じ日の午後の再遠征。旧水路、青緑の水、銅管。",
+      "layout": "上の三人の背中、中の開く格子、下の流路を枠なしでたどる。",
+      "understanding": "撤退した場所を越えた。",
+      "panels": [
+        {
+          "art": "三人が止まった小型機の脇を進む。大きな環は無し、空袋。",
           "speaker": "",
           "text": "",
           "columns": [],
           "voice": "普通の声"
         },
         {
-          "art": "中コマ。扉越しのイリスが聞き耳を立てる。",
+          "art": "次の格子の機構が解除されて開く。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声",
+          "ui": [
+            {
+              "owner": "カイ",
+              "input": "自動の進行通知",
+              "lines": [
+                "奥の通路 開放"
+              ],
+              "visibility": "本人だけ"
+            }
+          ]
+        },
+        {
+          "art": "銅管と水流が大きな観察扉の方へ続く。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 180,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "14",
+      "file": "art/r14-complete-stopped.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 第5話の試験後、同じ日の午後の再遠征。旧水路、青緑の水、銅管。\nScroll composition: 上の三人の背中、中の開く格子、下の流路を枠なしでたどる。\nWhat the reader understands: 撤退した場所を越えた。\nWithhold: 後の結果や報酬\nBeat 1: 三人が止まった小型機の脇を進む。大きな環は無し、空袋。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 2: 次の格子の機構が解除されて開く。\nDialogue: none; no speech or thought balloons in this beat.\nHUD owner カイ, input 自動の進行通知, exact horizontal rows: 奥の通路 開放. Visibility: 本人だけ.\nBeat 3: 銅管と水流が大きな観察扉の方へ続く。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nAfter this asset: 短い呼吸. Outside pause at 390px width: 180px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: ONE long borderless path leading past dark kneeling compact guard BEHIND, toward SECOND grate that automatically OPENS ahead; small PRIVATE HUD notification in Kai POV. Water/copper pipe leads downward through45% white. No boss seen.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "ONE long borderless path leading past dark kneeling compact guard BEHIND, toward SECOND grate that automatically OPENS ahead; small PRIVATE HUD notification in Kai POV. Water/copper pipe leads downward through45% white. No boss seen.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "大きな脈",
+      "location": "旧水路の奥、大きな観察扉の手前。脈動する銅管、下の流路。",
+      "layout": "水面とカイの目、下の大きい白へ一つの音が続く。敵の形や影は無い。",
+      "understanding": "奥に小型機と同じ周期の大きい音がある。",
+      "panels": [
+        {
+          "art": "青緑の水面に橙の光が周期的に映る。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声",
+          "sounds": [
+            {
+              "text": "どくん…",
+              "source": "奥の灯炉機構の大きな周期音",
+              "placement": "水面から目元の枠を越え、下の広い白へ間隔と濃さを減らし続く"
+            }
+          ]
+        },
+        {
+          "art": "カイが耳を澄ませる、まだ顔の表情だけ。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声",
+          "sound_continuations": [
+            {
+              "origin": "大きな脈の水面",
+              "text": "どくん…",
+              "placement": "同じ音、目の外を通って白へ減衰、別の衝撃を追加しない"
+            }
+          ]
+        },
+        {
+          "art": "人物も景色もない広い白、最後の音の末端だけ。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 350,
+      "withheld": "守護者の全身・胸・影はまだ出さない",
+      "pause": {
+        "purpose": "音の発生源を待つ",
+        "cue": "水面に映る脈と音",
+        "next": "扉の先への視線"
+      },
+      "id": "15",
+      "file": "art/r15-complete.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 旧水路の奥、大きな観察扉の手前。脈動する銅管、下の流路。\nScroll composition: 水面とカイの目、下の大きい白へ一つの音が続く。敵の形や影は無い。\nWhat the reader understands: 奥に小型機と同じ周期の大きい音がある。\nWithhold: 守護者の全身・胸・影はまだ出さない\nBeat 1: 青緑の水面に橙の光が周期的に映る。\nDialogue: none; no speech or thought balloons in this beat.\nOriginating SFX exact text どくん…: 奥の灯炉機構の大きな周期音; 水面から目元の枠を越え、下の広い白へ間隔と濃さを減らし続く\nBeat 2: カイが耳を澄ませる、まだ顔の表情だけ。\nDialogue: none; no speech or thought balloons in this beat.\nContinue SAME SFX from 大きな脈の水面: どくん…; 同じ音、目の外を通って白へ減衰、別の衝撃を追加しない; no new impact and no duplicate complete inscription.\nBeat 3: 人物も景色もない広い白、最後の音の末端だけ。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nAfter this asset: 音の発生源を待つ. Outside pause at 390px width: 350px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Top SMALL water ripples with amber reflections, tiny Kai listening eye inset, BOTTOM HALF WHITE ONLY carrying one distant low heavy SFX. NO boss body, shadow, silhouette or preview.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Top SMALL water ripples with amber reflections, tiny Kai listening eye inset, BOTTOM HALF WHITE ONLY carrying one distant low heavy SFX. NO boss body, shadow, silhouette or preview.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "同じ周期",
+      "location": "旧水路の奥、大きな観察扉の手前。脈動する銅管、下の流路。",
+      "layout": "上にイリス、中央に大きい扉の閉じた機構、下にカイとセナ。",
+      "understanding": "理解できる同じ仕組みだが尺度が違う。",
+      "panels": [
+        {
+          "art": "イリスが杖を低くして言う。",
           "speaker": "イリス",
           "text": "同じ周期。でも、大きい。",
           "columns": [
@@ -175,7 +773,106 @@
           "voice": "普通の声"
         },
         {
-          "art": "大きな下コマ。開いた扉の向こう、石と銅でできた灯炉守護者の全身。胸はまだ閉じている。",
+          "art": "観察扉の隙間から部屋の光だけ、敵の形はまだ無し。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "カイがセナへ目を向ける。",
+          "speaker": "カイ",
+          "text": "まず、見よう。",
+          "columns": [
+            "まず、",
+            "見よう。"
+          ],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 260,
+      "withheld": "後の結果や報酬",
+      "pause": {
+        "purpose": "短い呼吸",
+        "cue": "最後の視線",
+        "next": "次の反応"
+      },
+      "id": "16",
+      "file": "art/r16-complete-cuff.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 旧水路の奥、大きな観察扉の手前。脈動する銅管、下の流路。\nScroll composition: 上にイリス、中央に大きい扉の閉じた機構、下にカイとセナ。\nWhat the reader understands: 理解できる同じ仕組みだが尺度が違う。\nWithhold: 後の結果や報酬\nBeat 1: イリスが杖を低くして言う。\nSpeaker イリス, exact dialogue: 同じ周期。でも、大きい。 Vertical columns right-to-left: 同じ周期。 / でも、大きい。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nBeat 2: 観察扉の隙間から部屋の光だけ、敵の形はまだ無し。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 3: カイがセナへ目を向ける。\nSpeaker カイ, exact dialogue: まず、見よう。 Vertical columns right-to-left: まず、 / 見よう。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nAfter this asset: 短い呼吸. Outside pause at 390px width: 260px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Upper Iris face/staff lowered; tiny middle CLOSED observation door crack shows ONLY orange room-light, absolutely NO enemy shape; lower Kai/Sena face-to-face. Unequal sparse vignettes, at least35% white.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Upper Iris face/staff lowered; tiny middle CLOSED observation door crack shows ONLY orange room-light, absolutely NO enemy shape; lower Kai/Sena face-to-face. Unequal sparse vignettes, at least35% white.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "扉を開ける",
+      "location": "旧水路の奥、大きな観察扉の手前。脈動する銅管、下の流路。",
+      "layout": "扉の重い手元、視線の浅い二つ、下は白の開口から入る光だけ。",
+      "understanding": "三人は戦う前に観察する場所へ入る。",
+      "panels": [
+        {
+          "art": "セナが観察扉を押して開ける、左盾を体に近く。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声",
+          "sounds": [
+            {
+              "text": "ギィ…",
+              "source": "重い石扉の軸",
+              "placement": "戸の枠から白い下へ短く伸び、姿の披露前に終わる"
+            }
+          ]
+        },
+        {
+          "art": "カイとイリスの目が扉の先を見上げる。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "白い下半分へ部屋から橙の柔らかな光だけ。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        }
+      ],
+      "gap": 300,
+      "withheld": "守護者の身体は次素材で初めて見せる",
+      "pause": {
+        "purpose": "見上げた先を待つ",
+        "cue": "目線と開口の光",
+        "next": "大型守護者の初出"
+      },
+      "id": "17",
+      "file": "art/r17-complete-shield.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 旧水路の奥、大きな観察扉の手前。脈動する銅管、下の流路。\nScroll composition: 扉の重い手元、視線の浅い二つ、下は白の開口から入る光だけ。\nWhat the reader understands: 三人は戦う前に観察する場所へ入る。\nWithhold: 守護者の身体は次素材で初めて見せる\nBeat 1: セナが観察扉を押して開ける、左盾を体に近く。\nDialogue: none; no speech or thought balloons in this beat.\nOriginating SFX exact text ギィ…: 重い石扉の軸; 戸の枠から白い下へ短く伸び、姿の披露前に終わる\nBeat 2: カイとイリスの目が扉の先を見上げる。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 3: 白い下半分へ部屋から橙の柔らかな光だけ。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nAfter this asset: 見上げた先を待つ. Outside pause at 390px width: 300px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: Upper small Sena RIGHT free hand pushes observation door OPEN, LEFT shield close to body. Two tiny party upward-looking eye insets. LOWER HALF WHITE with soft amber light ONLY, no guardian silhouette, no extra room-view. Guardian reveal is next asset.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "Upper small Sena RIGHT free hand pushes observation door OPEN, LEFT shield close to body. Two tiny party upward-looking eye insets. LOWER HALF WHITE with soft amber light ONLY, no guardian silhouette, no extra room-view. Guardian reveal is next asset.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
+    },
+    {
+      "name": "灯炉守護者",
+      "location": "旧水路の大型部屋を安全な観察台から見下ろす",
+      "layout": "一つの巨大な枠なし縦の全景。上に高さ5mの石と銅の守護者一体、下に部屋の水路と小さい三人の背中。",
+      "understanding": "小型機で得た技術が次の尺度の課題へつながる。",
+      "panels": [
+        {
+          "art": "石と銅の守護者一体、高さ5m、太い二腕、胸は閉じた円形外扉と平たい橙表示器。環や中央魔石は見えない。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "部屋の左に止まった流路、銅管が守護者へつながる。足は二つとも床。",
+          "speaker": "",
+          "text": "",
+          "columns": [],
+          "voice": "普通の声"
+        },
+        {
+          "art": "三人は安全な観察台、まだ攻撃せず見上げる。",
           "speaker": "セナ",
           "text": "あれが、守ってる。",
           "columns": [
@@ -185,11 +882,19 @@
           "voice": "普通の声"
         }
       ],
-      "gap": 0,
-      "withheld": "胸部の蓄積環とコアはまだ見せない",
-      "id": "04",
-      "file": "art/04.png",
-      "prompt": "Use case: illustration-story. Finished full-color Japanese smartphone vertical-scroll Webtoon. ONE portrait illustration around 1024x3072, a tall 1:3 canvas, with four deliberately UNEQUAL panels or beats ordered from top to bottom. Reference image establishes character identity, clothes, tools, palette, anime style ONLY; do not copy the reference sheet's layout, labels, portraits, parchment backdrop, or bring every character into every panel. Clean detailed anime linework, readable expressive faces, controlled cel shading, grounded high fantasy, warm natural metals, white page gutters. Medieval sword and magic VRMMORPG; actual world scenery looks like a fantasy adventure, only small HUDs imply gameplay. No futuristic city.\nDraw exact Japanese speech as part of the raster artwork. Genuine vertical lettering with upright characters, top-to-bottom within a column, columns RIGHT TO LEFT. Clean printed Japanese manga gothic, near 75px glyph height on a 1024px-wide original, readable at 360px display width; never shrink long dialogue. PRIORITIZE large readable lettering; expand the balloons and panel height instead. Maintain around 22-26px visible Japanese glyphs after 360px downscaling. Each utterance below gives columns in right-to-left order, with / only as a separator in this instruction, never printed. Normal speech: slender oval or rounded tall bubble, tail to speaker. Quiet speech: softly irregular thin outline with tail. Shouts: bold spiky bubble and clear pointed tail. Thoughts: cloud-like shape with dots toward the thinker, no speech tail. HUD is translucent cyan, compact horizontal Japanese is allowed for HUD, not ornamental gold panel. Sound effects are material-appropriate drawn text and may be horizontal. Never duplicate an utterance, add extra visible writing, translate Japanese, show speaker labels, or overlay unnecessary HUD.\nPanel layout: shallow establishing/context panel when appropriate, staggered medium conversation or action, narrow object/eye insert, larger lower reaction or result. Use unequal heights and widths, some borderless long scenery; action may have slanted frame borders but keep the lettering upright. Small panels show ONLY close-up subjects, not tiny whole bodies. Dialogue must not cover faces, hands, sword, shield, or clue. Keep clear right-to-left order inside any same-row split. Use varied camera distances for understanding, no uniform four-box grid. Use a white bottom edge/gutter. Characters remain in the same location even if offscreen. Keep actions causal and exact prop state.\nKai: dark-brown short hair, one amber streak at his right temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short indigo cape, dark trousers, leather boots, copper cuff left forearm, steel one-handed sword in right hand with square brass guard and one thin orange fuller inset; not a lightsaber. After episode 5 sword has small copper cooling plate beside guard. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over deep blue tunic, navy cape, one triangular silver shield with cobalt line in left hand, straight steel sword on belt when not specified. Iris: plum bob hair, green eyes, teal hood-down cloak, ivory tunic, wooden staff with ONE amber crystal and copper ring. Do not swap their colors, genders, or props. Orun: older male NPC smith with short gray beard and brown apron. Vane: male player, tied-back ash-gray hair, silver armor, white cape. Never introduce unmentioned characters, duplicate hands/limbs/props or show a future reveal early. No watermark. EVERY fantasy panel is inside the SAME dim underground old aqueduct: damp gray stone VAULTED arches, moss, copper vertical pipes, blue-green shallow flowing water, dry stone walkways, restrained cool lighting. No outdoor city streets, blue heraldic banners, sky, castle, sunshine except a narrow entrance shaft in episode 3 strip 1. Reference 2, when supplied, is aqueduct/guardian identity reference ONLY; do not copy its lettering or layout. Normal guardians are human-height chunky gray stone automatons with orange engraved channels, two arms, two legs, one small round orange chest indicator. Boss guardian is the SAME ancient construction language but three times larger, with a square plated outer chest door covering the removable storage assembly. Never add a second chest core, extra arms, or expose its interior until episode 8 strip 4.\nEpisode 6, strip 4, scene: 大きな脈動. Location continuity: 旧水路の奥、大きな扉の前.\nBEAT 1 top-to-bottom. Artwork/camera/focus: 上の水面接写。橙の光が周期的に水へ映る。\nExactly one utterance by 音; voice/shape: 効果音. Exact text: どくん. Vertical columns RIGHT to LEFT: どくん\nBEAT 2 top-to-bottom. Artwork/camera/focus: 長い枠なし。水流と配管をたどり、上から下へ大きな扉へ至る。守護者の姿は上半分へ出さない。\nSilent beat: no speech bubble, no extra text.\nBEAT 3 top-to-bottom. Artwork/camera/focus: 中コマ。扉越しのイリスが聞き耳を立てる。\nExactly one utterance by イリス; voice/shape: 普通の声. Exact text: 同じ周期。でも、大きい。. Vertical columns RIGHT to LEFT: 同じ周期。 / でも、大きい。\nBEAT 4 top-to-bottom. Artwork/camera/focus: 大きな下コマ。開いた扉の向こう、石と銅でできた灯炉守護者の全身。胸はまだ閉じている。\nExactly one utterance by セナ; voice/shape: 普通の声. Exact text: あれが、守ってる。. Vertical columns RIGHT to LEFT: あれが、 / 守ってる。\nWithheld information: 胸部の蓄積環とコアはまだ見せない"
+      "gap": 250,
+      "withheld": "胸の中の環、戦闘の結果、ヴェインはここには出さない",
+      "pause": {
+        "purpose": "大きさを受け止める",
+        "cue": "小さい三人と巨大な敵",
+        "next": "第7話の観察と攻略者"
+      },
+      "id": "18",
+      "file": "art/r18-complete.png",
+      "prompt": "Use case: illustration-story. Asset: finished full-color smartphone Japanese vertical-scroll Webtoon, including final speech balloons, Japanese text, SFX and specified HUD. Create ONE tall native illustration, 1:3 aspect ratio, preferably 1024x3072. Polished detailed anime linework and controlled cel shading, expressive readable faces, warm metal, medieval sword-and-magic fantasy. White scroll canvas. Reference 1 is character identity only; reference 2 is the adopted series art style only. Never copy their layout or labels. Draw only characters mentioned in THIS moment; offscreen characters stay nearby, not cloned into every panel.\nKai: short tousled dark-brown hair, amber streak at his RIGHT temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short navy shoulder cape, dark trousers, boots, ONE copper cuff LEFT forearm. BOTH HANDS BARE even though the old character sheet shows a glove. His ONE ordinary steel straight sword has square brass guard, black leather grip and ONE thin amber inset line. Sword RIGHT hand unless specified sheathed/on table. Amber line indicates slash enhancement, NEVER a flame sword or lightsaber. No spare drawn sword, no duplicate cuff. The sword has a SIMPLE narrow blade and small guard, one tiny vent by the guard, no industrial block or oversized mechanical box; a SMALL flat copper cooling plate only AFTER Episode 5 adds it. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over navy cloth, long navy cape, ONE triangular silver-blue shield attached LEFT forearm; plain sword sheathed. In FRONT views her LEFT shield is on viewer RIGHT; in REAR views her LEFT shield is on viewer LEFT. Never mount it on her right arm. Iris: purple chin-length bob, green eyes, teal hood-down cloak, ivory tunic, dark skirt/leggings, ONE wood staff with ONE amber tip. Orun: older NPC smith, short gray beard, brown leather apron. Vane appears ONLY if named: tied-back ash-gray hair, silver armor, white cape. Faces and gestures express the current emotion, not the reference smile.\nSpeech uses exact Japanese, genuine vertical upright glyphs, top-to-bottom within columns, columns RIGHT TO LEFT; clean Japanese printed manga gothic, near 60px character height at 1024px width. Never rotate horizontal sentences. Use soft slender balloons with speaker tails for normal speech, stronger outline for urgency; thoughts use dots. Give ample inner padding; short columns at natural phrase boundaries. Do not shrink lettering to cram a long sentence. SFX are separate drawn lettering, outside balloons, follow material/motion and may cross panel frames and gutters. Specified ongoing SFX are ONE inscription continuing, not a full word repeated per panel. HUD is small translucent functional cyan, horizontal Japanese allowed, visible only to its owner; shared map pins only when specified. No unlisted text, labels, watermark, titles or panel numbers.\nCompose intentionally unequal beats, varied close/medium/wide camera, staggered small close-ups for fast motion, borderless broad art for emotional results, diagonal frame boundaries only when action calls for them. Never use a uniform stacked rectangle grid. Reserve broad planned white spaces INSIDE this art; do not fill them with scenery or bonus panels. Dialogue/SFX/HUD must not obscure faces, hands, blade, shield, or clues. Follow top-to-bottom and right-to-left for any paired small inserts. Scene geometry and prop count stay causal. During combat, an active foe AHEAD must be in the foreground or offscreen in FRONT-facing party shots, never over their shoulders in the rear background. In BACK-facing party wide shots the foe may be distant ahead. Draw exactly this asset's events; withhold later replies, discoveries and future art.\n\nEXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.\nCurrent continuity: 灯刃・試作は修理済み。一本の鋼刃、鍔の左に小さな銅放熱板一つ、開いた弁、細い橙線。カイ右剣・左カフのみ。セナ左盾に前戦の傷。イリス杖一つ。回復薬残り一本。環回収袋は空。小型機は一体、前回未討伐の同じ個体で側面に浅い傷。大型守護者は最後の素材だけ：高さ5m、石と銅、太い二腕、胸は閉じた円形外扉、平たい丸い橙表示器。環・中央魔石は外から見えない。\nLocation/time: 旧水路の大型部屋を安全な観察台から見下ろす\nScroll composition: 一つの巨大な枠なし縦の全景。上に高さ5mの石と銅の守護者一体、下に部屋の水路と小さい三人の背中。\nWhat the reader understands: 小型機で得た技術が次の尺度の課題へつながる。\nWithhold: 胸の中の環、戦闘の結果、ヴェインはここには出さない\nBeat 1: 石と銅の守護者一体、高さ5m、太い二腕、胸は閉じた円形外扉と平たい橙表示器。環や中央魔石は見えない。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 2: 部屋の左に止まった流路、銅管が守護者へつながる。足は二つとも床。\nDialogue: none; no speech or thought balloons in this beat.\nNo additional SFX or HUD in this beat.\nBeat 3: 三人は安全な観察台、まだ攻撃せず見上げる。\nSpeaker セナ, exact dialogue: あれが、守ってる。 Vertical columns right-to-left: あれが、 / 守ってる。. Voice: 普通の声.\nNo additional SFX or HUD in this beat.\nAfter this asset: 大きさを受け止める. Outside pause at 390px width: 250px. Do not draw the next reveal.\nMANDATORY LAYOUT, overrides reference compositions: ONE HUGE BORDERLESS VERTICAL REVEAL, not any grid: immense 5m stone+brass guardian fills upper 70 percent of single vaulted cooling chamber, fully planted BOTH feet, tall arch behind it. Tiny three players from rear stand safe on foreground observation ledge at lower20percent and look UP. Chest outer circular METAL DOOR is CLOSED with only one flat amber round indicator lens on door (no faceted crystal, no ring exposed). Left-foot cooling channel and light rubble blockage on floor; low 60cm stone support step on right. One Sena speech balloon at her visible tiny profile mouth in bottom. No extra monster, no close-up montage. Grand scale comes from small people, not duplicated shots.\nMANDATORY CURRENT STATE: Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet.\n",
+      "layout_en": "ONE HUGE BORDERLESS VERTICAL REVEAL, not any grid: immense 5m stone+brass guardian fills upper 70 percent of single vaulted cooling chamber, fully planted BOTH feet, tall arch behind it. Tiny three players from rear stand safe on foreground observation ledge at lower20percent and look UP. Chest outer circular METAL DOOR is CLOSED with only one flat amber round indicator lens on door (no faceted crystal, no ring exposed). Left-foot cooling channel and light rubble blockage on floor; low 60cm stone support step on right. One Sena speech balloon at her visible tiny profile mouth in bottom. No extra monster, no close-up montage. Grand scale comes from small people, not duplicated shots.",
+      "continuity_en": "Kai cuff LEFT ONLY, RIGHT bare hand/arm, ONE simple steel blade tiny OPEN vent and ONE SMALL flat copper plate; Sena LEFT shield/plain sword fully SHEATHED; Iris ONE staff ONE ambertip. No unlisted props. No 5m guardian visible BEFOREscene18. Compact1.8m guard ACTIVEthrough11, DARK and kneeling after12, BEHIND/OFFSCREENafter14. Ring bagEMPTY; no physical ringrecovery yet."
     }
-  ]
+  ],
+  "narrative_panel_count": 54
 }
