@@ -1,0 +1,1221 @@
+{
+  "number": 15,
+  "title": "農夫を連れていけ",
+  "time": "46〜49日目・出発は49日目の夜明け",
+  "change": "四階の未攻略分岐の水路調査にコウが同行すると決める。ロウは戦闘と護衛、セラは水術、コウは畑と水の調査。エルナとバルトへ店・畑の担当を渡す。遠征装備と帰還計画を準備。",
+  "state": "四階の未攻略分岐の水路調査にコウが同行すると決める。ロウは戦闘と護衛、セラは水術、コウは畑と水の調査。エルナとバルトへ店・畑の担当を渡す。遠征装備と帰還計画を準備。",
+  "revision": "2026-10-08-following",
+  "sources": [
+    {
+      "id": "01-row-and-sera",
+      "art": "art/01-row-and-sera.png",
+      "description": "At diner dry table Row introduces Sera as water-magic specialist. Sera black low braid teal cloak blue-stone wooden staff, Kou and Elna listen. Separate introductions with natural eyelines, no all-cast lineup.",
+      "dialogue": [
+        [
+          "ロウ",
+          "セラだ\n水術で\n道を支える"
+        ],
+        [
+          "セラ",
+          "よろしく\n農夫さん"
+        ],
+        [
+          "コウ",
+          "コウです"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 160,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-row-and-sera.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "36d3a16a0286acb8cbbc797e54500df9b4d976b63e3a45eff963ec7dbbf862cf"
+    },
+    {
+      "id": "02-fourth-floor-map-leon",
+      "art": "art/02-fourth-floor-map-leon.png",
+      "description": "Simple pictorial stone map without printed labels, Row points from a main stair route to a blocked SIDE branch with green roots and old water channels. Leon at edge authorizes local survey, distinction main road vs side branch clear.",
+      "dialogue": [
+        [
+          "ロウ",
+          "四階の横道が\n根に塞がれてる"
+        ],
+        [
+          "レオン",
+          "主路とは別の\n旧栽培区画だ"
+        ],
+        [
+          "セラ",
+          "切っても\nまた動くの"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 220,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-fourth-floor-map-leon.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "53b05768bb361db488caa9049bef175cda4c296bb1622a6c1d7ff09e16b329b7"
+    },
+    {
+      "id": "03-why-a-farmer",
+      "art": "art/03-why-a-farmer.png",
+      "description": "Kou studies map and small preserved dry root sample on work-only table; Row stresses roots and water strange relation, Kou asks concrete question; Sera listens, no omniscient spell reading everything.",
+      "dialogue": [
+        [
+          "ロウ",
+          "根と水路を\n見てほしい"
+        ],
+        [
+          "コウ",
+          "どこから\n水が来るんだ？"
+        ],
+        [
+          "セラ",
+          "それを\n確かめに行く"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 260,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-why-a-farmer.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "99f76580e48e7af171b14e8b7b6e1ac50360b34688e6e9295a007f929f472a91"
+    },
+    {
+      "id": "04-i-am-afraid",
+      "art": "art/04-i-am-afraid.png",
+      "description": "Quiet outside diner with stairs rising in distant tower ribs. Kou looks at work hands, honest fear in separate closeup and slight tense grip; Elna nearby listens without dismissing danger, not combat poses yet.",
+      "dialogue": [
+        [
+          "コウ",
+          "戦うのは\n俺には無理だ"
+        ],
+        [
+          "ロウ",
+          "戦いは\n俺が受け持つ"
+        ],
+        [
+          "ロウ",
+          "君の仕事で\n道を開いてくれ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 430,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-i-am-afraid.prompt.txt",
+      "soundEffects": [],
+      "width": 728,
+      "height": 2161,
+      "sha256": "c119449ee8f1abf2a40113ea356a5df2a934f9ae2c315d9b196cd7c72cdc3cf4"
+    },
+    {
+      "id": "05-balt-takes-the-garden",
+      "art": "art/05-balt-takes-the-garden.png",
+      "description": "Garden marked rows Balt and Kou review twine marks and watering cylinder, no new harvest promised; handoff notebook abstract drawings, Balt takes tool while Kou listens. Elna watching near kitchen only.",
+      "dialogue": [
+        [
+          "バルト",
+          "留守の畑は\n見ておく"
+        ],
+        [
+          "コウ",
+          "この列は\nまだ待ってください"
+        ],
+        [
+          "バルト",
+          "分かっとる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-balt-takes-the-garden.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0b845e545b36609adc218cada06900b81cc076a8baa33f911e4cc37ae0da160a"
+    },
+    {
+      "id": "06-elna-runs-the-shop",
+      "art": "art/06-elna-runs-the-shop.png",
+      "description": "Elna confidently checks blank schedule board and prepares normal advance portions with supplier support. Kou across counter lets her lead, work roles respected, store not magically automated.",
+      "dialogue": [
+        [
+          "エルナ",
+          "店は私が\n開けて待ってる"
+        ],
+        [
+          "コウ",
+          "納品の分も\nお願いできる？"
+        ],
+        [
+          "エルナ",
+          "二人で決めた\n仕事だもの"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 260,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-elna-runs-the-shop.prompt.txt",
+      "soundEffects": [],
+      "width": 729,
+      "height": 2158,
+      "sha256": "3e525dabf7bda0d6bf14efc1f978b074190e81e56e152f719a96c4460b1b3fd6"
+    },
+    {
+      "id": "07-tools-not-a-sword",
+      "art": "art/07-tools-not-a-sword.png",
+      "description": "Iris short navy hair copper goggles gray workwear helps Kou pack rope, small shovel, notebook, marked measuring cup and simple wood wedges in brown satchel, checks boots. Row checks ordinary sword and buckler separately, Sera staff. No modern backpack or gun.",
+      "dialogue": [
+        [
+          "イリス",
+          "剣の代わりに\nこっちを持ちな"
+        ],
+        [
+          "コウ",
+          "いつもの道具だ"
+        ],
+        [
+          "イリス",
+          "使える物を\n使えばいい"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-tools-not-a-sword.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "f1a5481ea7974dd62354e04e1446e37fef1648b43217146f6e7a260742333f18"
+    },
+    {
+      "id": "08-set-out",
+      "art": "art/08-set-out.png",
+      "description": "Dawn of day 49 after preparing on days 46–48: Elna hands wrapped bread and sealed water flask to Kou outside blue awning, Row and Sera waiting behind at stairs. Elna warm serious final face and Kou resolves, first foot on stair only after meal handoff.",
+      "dialogue": [
+        [
+          "エルナ",
+          "帰ってきたら\n飯にしよう"
+        ],
+        [
+          "コウ",
+          "ああ\n帰ってくる"
+        ],
+        [
+          "ロウ",
+          "行こう\n四階へ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 500,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-set-out.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "c4508c2c9b033578759d8f4e9a8abf719209e12d2c50310008af54543a55bdae"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-row-and-sera-window-01",
+      "art": "art/01-row-and-sera.png",
+      "description": "At diner dry table Row introduces Sera as water-magic specialist. Sera black low braid teal cloak blue-stone wooden staff, Kou and Elna listen. Separate introductions with natural eyelines, no all-cast lineup.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-row-and-sera.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "36d3a16a0286acb8cbbc797e54500df9b4d976b63e3a45eff963ec7dbbf862cf",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 577
+      },
+      "sourceId": "01-row-and-sera",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-row-and-sera-window-02",
+      "art": "art/01-row-and-sera.png",
+      "description": "At diner dry table Row introduces Sera as water-magic specialist. Sera black low braid teal cloak blue-stone wooden staff, Kou and Elna listen. Separate introductions with natural eyelines, no all-cast lineup.",
+      "dialogue": [
+        [
+          "ロウ",
+          "セラだ\n水術で\n道を支える"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-row-and-sera.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "36d3a16a0286acb8cbbc797e54500df9b4d976b63e3a45eff963ec7dbbf862cf",
+      "crop": {
+        "x": 0,
+        "y": 577,
+        "width": 724,
+        "height": 380
+      },
+      "sourceId": "01-row-and-sera",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-row-and-sera-window-03",
+      "art": "art/01-row-and-sera.png",
+      "description": "At diner dry table Row introduces Sera as water-magic specialist. Sera black low braid teal cloak blue-stone wooden staff, Kou and Elna listen. Separate introductions with natural eyelines, no all-cast lineup.",
+      "dialogue": [
+        [
+          "セラ",
+          "よろしく\n農夫さん"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-row-and-sera.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "36d3a16a0286acb8cbbc797e54500df9b4d976b63e3a45eff963ec7dbbf862cf",
+      "crop": {
+        "x": 0,
+        "y": 957,
+        "width": 724,
+        "height": 338
+      },
+      "sourceId": "01-row-and-sera",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-row-and-sera-window-04",
+      "art": "art/01-row-and-sera.png",
+      "description": "At diner dry table Row introduces Sera as water-magic specialist. Sera black low braid teal cloak blue-stone wooden staff, Kou and Elna listen. Separate introductions with natural eyelines, no all-cast lineup.",
+      "dialogue": [
+        [
+          "コウ",
+          "コウです"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 140,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-row-and-sera.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "36d3a16a0286acb8cbbc797e54500df9b4d976b63e3a45eff963ec7dbbf862cf",
+      "crop": {
+        "x": 0,
+        "y": 1295,
+        "width": 724,
+        "height": 353
+      },
+      "sourceId": "01-row-and-sera",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-row-and-sera-window-05",
+      "art": "art/01-row-and-sera.png",
+      "description": "At diner dry table Row introduces Sera as water-magic specialist. Sera black low braid teal cloak blue-stone wooden staff, Kou and Elna listen. Separate introductions with natural eyelines, no all-cast lineup.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-row-and-sera.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "36d3a16a0286acb8cbbc797e54500df9b4d976b63e3a45eff963ec7dbbf862cf",
+      "crop": {
+        "x": 0,
+        "y": 1648,
+        "width": 724,
+        "height": 524
+      },
+      "sourceId": "01-row-and-sera",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-fourth-floor-map-leon-window-01",
+      "art": "art/02-fourth-floor-map-leon.png",
+      "description": "Simple pictorial stone map without printed labels, Row points from a main stair route to a blocked SIDE branch with green roots and old water channels. Leon at edge authorizes local survey, distinction main road vs side branch clear.",
+      "dialogue": [
+        [
+          "ロウ",
+          "四階の横道が\n根に塞がれてる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-fourth-floor-map-leon.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "53b05768bb361db488caa9049bef175cda4c296bb1622a6c1d7ff09e16b329b7",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 846
+      },
+      "sourceId": "02-fourth-floor-map-leon",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-fourth-floor-map-leon-window-02",
+      "art": "art/02-fourth-floor-map-leon.png",
+      "description": "Simple pictorial stone map without printed labels, Row points from a main stair route to a blocked SIDE branch with green roots and old water channels. Leon at edge authorizes local survey, distinction main road vs side branch clear.",
+      "dialogue": [
+        [
+          "レオン",
+          "主路とは別の\n旧栽培区画だ"
+        ],
+        [
+          "セラ",
+          "切っても\nまた動くの"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-fourth-floor-map-leon.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "53b05768bb361db488caa9049bef175cda4c296bb1622a6c1d7ff09e16b329b7",
+      "crop": {
+        "x": 0,
+        "y": 846,
+        "width": 724,
+        "height": 594
+      },
+      "sourceId": "02-fourth-floor-map-leon",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-fourth-floor-map-leon-window-03",
+      "art": "art/02-fourth-floor-map-leon.png",
+      "description": "Simple pictorial stone map without printed labels, Row points from a main stair route to a blocked SIDE branch with green roots and old water channels. Leon at edge authorizes local survey, distinction main road vs side branch clear.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-fourth-floor-map-leon.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "53b05768bb361db488caa9049bef175cda4c296bb1622a6c1d7ff09e16b329b7",
+      "crop": {
+        "x": 0,
+        "y": 1440,
+        "width": 724,
+        "height": 396
+      },
+      "sourceId": "02-fourth-floor-map-leon",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-fourth-floor-map-leon-window-04",
+      "art": "art/02-fourth-floor-map-leon.png",
+      "description": "Simple pictorial stone map without printed labels, Row points from a main stair route to a blocked SIDE branch with green roots and old water channels. Leon at edge authorizes local survey, distinction main road vs side branch clear.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-fourth-floor-map-leon.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "53b05768bb361db488caa9049bef175cda4c296bb1622a6c1d7ff09e16b329b7",
+      "crop": {
+        "x": 0,
+        "y": 1836,
+        "width": 724,
+        "height": 336
+      },
+      "sourceId": "02-fourth-floor-map-leon",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-why-a-farmer-window-01",
+      "art": "art/03-why-a-farmer.png",
+      "description": "Kou studies map and small preserved dry root sample on work-only table; Row stresses roots and water strange relation, Kou asks concrete question; Sera listens, no omniscient spell reading everything.",
+      "dialogue": [
+        [
+          "ロウ",
+          "根と水路を\n見てほしい"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-why-a-farmer.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "99f76580e48e7af171b14e8b7b6e1ac50360b34688e6e9295a007f929f472a91",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 714
+      },
+      "sourceId": "03-why-a-farmer",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-why-a-farmer-window-02",
+      "art": "art/03-why-a-farmer.png",
+      "description": "Kou studies map and small preserved dry root sample on work-only table; Row stresses roots and water strange relation, Kou asks concrete question; Sera listens, no omniscient spell reading everything.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-why-a-farmer.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "99f76580e48e7af171b14e8b7b6e1ac50360b34688e6e9295a007f929f472a91",
+      "crop": {
+        "x": 0,
+        "y": 714,
+        "width": 724,
+        "height": 378
+      },
+      "sourceId": "03-why-a-farmer",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-why-a-farmer-window-03",
+      "art": "art/03-why-a-farmer.png",
+      "description": "Kou studies map and small preserved dry root sample on work-only table; Row stresses roots and water strange relation, Kou asks concrete question; Sera listens, no omniscient spell reading everything.",
+      "dialogue": [
+        [
+          "コウ",
+          "どこから\n水が来るんだ？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-why-a-farmer.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "99f76580e48e7af171b14e8b7b6e1ac50360b34688e6e9295a007f929f472a91",
+      "crop": {
+        "x": 0,
+        "y": 1092,
+        "width": 724,
+        "height": 329
+      },
+      "sourceId": "03-why-a-farmer",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-why-a-farmer-window-04",
+      "art": "art/03-why-a-farmer.png",
+      "description": "Kou studies map and small preserved dry root sample on work-only table; Row stresses roots and water strange relation, Kou asks concrete question; Sera listens, no omniscient spell reading everything.",
+      "dialogue": [
+        [
+          "セラ",
+          "それを\n確かめに行く"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 230,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-why-a-farmer.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "99f76580e48e7af171b14e8b7b6e1ac50360b34688e6e9295a007f929f472a91",
+      "crop": {
+        "x": 0,
+        "y": 1421,
+        "width": 724,
+        "height": 751
+      },
+      "sourceId": "03-why-a-farmer",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-i-am-afraid-window-01",
+      "art": "art/04-i-am-afraid.png",
+      "description": "Quiet outside diner with stairs rising in distant tower ribs. Kou looks at work hands, honest fear in separate closeup and slight tense grip; Elna nearby listens without dismissing danger, not combat poses yet.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 140,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-i-am-afraid.prompt.txt",
+      "soundEffects": [],
+      "width": 728,
+      "height": 2161,
+      "sha256": "c119449ee8f1abf2a40113ea356a5df2a934f9ae2c315d9b196cd7c72cdc3cf4",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 728,
+        "height": 599
+      },
+      "sourceId": "04-i-am-afraid",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-i-am-afraid-window-02",
+      "art": "art/04-i-am-afraid.png",
+      "description": "Quiet outside diner with stairs rising in distant tower ribs. Kou looks at work hands, honest fear in separate closeup and slight tense grip; Elna nearby listens without dismissing danger, not combat poses yet.",
+      "dialogue": [
+        [
+          "コウ",
+          "戦うのは\n俺には無理だ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 220,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-i-am-afraid.prompt.txt",
+      "soundEffects": [],
+      "width": 728,
+      "height": 2161,
+      "sha256": "c119449ee8f1abf2a40113ea356a5df2a934f9ae2c315d9b196cd7c72cdc3cf4",
+      "crop": {
+        "x": 0,
+        "y": 599,
+        "width": 728,
+        "height": 339
+      },
+      "sourceId": "04-i-am-afraid",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-i-am-afraid-window-03",
+      "art": "art/04-i-am-afraid.png",
+      "description": "Quiet outside diner with stairs rising in distant tower ribs. Kou looks at work hands, honest fear in separate closeup and slight tense grip; Elna nearby listens without dismissing danger, not combat poses yet.",
+      "dialogue": [
+        [
+          "ロウ",
+          "戦いは\n俺が受け持つ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-i-am-afraid.prompt.txt",
+      "soundEffects": [],
+      "width": 728,
+      "height": 2161,
+      "sha256": "c119449ee8f1abf2a40113ea356a5df2a934f9ae2c315d9b196cd7c72cdc3cf4",
+      "crop": {
+        "x": 0,
+        "y": 938,
+        "width": 728,
+        "height": 416
+      },
+      "sourceId": "04-i-am-afraid",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-i-am-afraid-window-04",
+      "art": "art/04-i-am-afraid.png",
+      "description": "Quiet outside diner with stairs rising in distant tower ribs. Kou looks at work hands, honest fear in separate closeup and slight tense grip; Elna nearby listens without dismissing danger, not combat poses yet.",
+      "dialogue": [
+        [
+          "ロウ",
+          "君の仕事で\n道を開いてくれ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-i-am-afraid.prompt.txt",
+      "soundEffects": [],
+      "width": 728,
+      "height": 2161,
+      "sha256": "c119449ee8f1abf2a40113ea356a5df2a934f9ae2c315d9b196cd7c72cdc3cf4",
+      "crop": {
+        "x": 0,
+        "y": 1354,
+        "width": 728,
+        "height": 364
+      },
+      "sourceId": "04-i-am-afraid",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-i-am-afraid-window-05",
+      "art": "art/04-i-am-afraid.png",
+      "description": "Quiet outside diner with stairs rising in distant tower ribs. Kou looks at work hands, honest fear in separate closeup and slight tense grip; Elna nearby listens without dismissing danger, not combat poses yet.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 270,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-i-am-afraid.prompt.txt",
+      "soundEffects": [],
+      "width": 728,
+      "height": 2161,
+      "sha256": "c119449ee8f1abf2a40113ea356a5df2a934f9ae2c315d9b196cd7c72cdc3cf4",
+      "crop": {
+        "x": 0,
+        "y": 1718,
+        "width": 728,
+        "height": 443
+      },
+      "sourceId": "04-i-am-afraid",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-balt-takes-the-garden-window-01",
+      "art": "art/05-balt-takes-the-garden.png",
+      "description": "Garden marked rows Balt and Kou review twine marks and watering cylinder, no new harvest promised; handoff notebook abstract drawings, Balt takes tool while Kou listens. Elna watching near kitchen only.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-balt-takes-the-garden.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0b845e545b36609adc218cada06900b81cc076a8baa33f911e4cc37ae0da160a",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 586
+      },
+      "sourceId": "05-balt-takes-the-garden",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-balt-takes-the-garden-window-02",
+      "art": "art/05-balt-takes-the-garden.png",
+      "description": "Garden marked rows Balt and Kou review twine marks and watering cylinder, no new harvest promised; handoff notebook abstract drawings, Balt takes tool while Kou listens. Elna watching near kitchen only.",
+      "dialogue": [
+        [
+          "バルト",
+          "留守の畑は\n見ておく"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-balt-takes-the-garden.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0b845e545b36609adc218cada06900b81cc076a8baa33f911e4cc37ae0da160a",
+      "crop": {
+        "x": 0,
+        "y": 586,
+        "width": 724,
+        "height": 303
+      },
+      "sourceId": "05-balt-takes-the-garden",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-balt-takes-the-garden-window-03",
+      "art": "art/05-balt-takes-the-garden.png",
+      "description": "Garden marked rows Balt and Kou review twine marks and watering cylinder, no new harvest promised; handoff notebook abstract drawings, Balt takes tool while Kou listens. Elna watching near kitchen only.",
+      "dialogue": [
+        [
+          "コウ",
+          "この列は\nまだ待ってください"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-balt-takes-the-garden.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0b845e545b36609adc218cada06900b81cc076a8baa33f911e4cc37ae0da160a",
+      "crop": {
+        "x": 0,
+        "y": 889,
+        "width": 724,
+        "height": 347
+      },
+      "sourceId": "05-balt-takes-the-garden",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-balt-takes-the-garden-window-04",
+      "art": "art/05-balt-takes-the-garden.png",
+      "description": "Garden marked rows Balt and Kou review twine marks and watering cylinder, no new harvest promised; handoff notebook abstract drawings, Balt takes tool while Kou listens. Elna watching near kitchen only.",
+      "dialogue": [
+        [
+          "バルト",
+          "分かっとる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 140,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-balt-takes-the-garden.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0b845e545b36609adc218cada06900b81cc076a8baa33f911e4cc37ae0da160a",
+      "crop": {
+        "x": 0,
+        "y": 1236,
+        "width": 724,
+        "height": 280
+      },
+      "sourceId": "05-balt-takes-the-garden",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-balt-takes-the-garden-window-05",
+      "art": "art/05-balt-takes-the-garden.png",
+      "description": "Garden marked rows Balt and Kou review twine marks and watering cylinder, no new harvest promised; handoff notebook abstract drawings, Balt takes tool while Kou listens. Elna watching near kitchen only.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 110,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-balt-takes-the-garden.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0b845e545b36609adc218cada06900b81cc076a8baa33f911e4cc37ae0da160a",
+      "crop": {
+        "x": 0,
+        "y": 1516,
+        "width": 724,
+        "height": 242
+      },
+      "sourceId": "05-balt-takes-the-garden",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-balt-takes-the-garden-window-06",
+      "art": "art/05-balt-takes-the-garden.png",
+      "description": "Garden marked rows Balt and Kou review twine marks and watering cylinder, no new harvest promised; handoff notebook abstract drawings, Balt takes tool while Kou listens. Elna watching near kitchen only.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-balt-takes-the-garden.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0b845e545b36609adc218cada06900b81cc076a8baa33f911e4cc37ae0da160a",
+      "crop": {
+        "x": 0,
+        "y": 1758,
+        "width": 724,
+        "height": 414
+      },
+      "sourceId": "05-balt-takes-the-garden",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-elna-runs-the-shop-window-01",
+      "art": "art/06-elna-runs-the-shop.png",
+      "description": "Elna confidently checks blank schedule board and prepares normal advance portions with supplier support. Kou across counter lets her lead, work roles respected, store not magically automated.",
+      "dialogue": [
+        [
+          "エルナ",
+          "店は私が\n開けて待ってる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-elna-runs-the-shop.prompt.txt",
+      "soundEffects": [],
+      "width": 729,
+      "height": 2158,
+      "sha256": "3e525dabf7bda0d6bf14efc1f978b074190e81e56e152f719a96c4460b1b3fd6",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 729,
+        "height": 899
+      },
+      "sourceId": "06-elna-runs-the-shop",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-elna-runs-the-shop-window-02",
+      "art": "art/06-elna-runs-the-shop.png",
+      "description": "Elna confidently checks blank schedule board and prepares normal advance portions with supplier support. Kou across counter lets her lead, work roles respected, store not magically automated.",
+      "dialogue": [
+        [
+          "コウ",
+          "納品の分も\nお願いできる？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-elna-runs-the-shop.prompt.txt",
+      "soundEffects": [],
+      "width": 729,
+      "height": 2158,
+      "sha256": "3e525dabf7bda0d6bf14efc1f978b074190e81e56e152f719a96c4460b1b3fd6",
+      "crop": {
+        "x": 0,
+        "y": 899,
+        "width": 729,
+        "height": 557
+      },
+      "sourceId": "06-elna-runs-the-shop",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-elna-runs-the-shop-window-03",
+      "art": "art/06-elna-runs-the-shop.png",
+      "description": "Elna confidently checks blank schedule board and prepares normal advance portions with supplier support. Kou across counter lets her lead, work roles respected, store not magically automated.",
+      "dialogue": [
+        [
+          "エルナ",
+          "二人で決めた\n仕事だもの"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 330,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-elna-runs-the-shop.prompt.txt",
+      "soundEffects": [],
+      "width": 729,
+      "height": 2158,
+      "sha256": "3e525dabf7bda0d6bf14efc1f978b074190e81e56e152f719a96c4460b1b3fd6",
+      "crop": {
+        "x": 0,
+        "y": 1456,
+        "width": 729,
+        "height": 702
+      },
+      "sourceId": "06-elna-runs-the-shop",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-tools-not-a-sword-window-01",
+      "art": "art/07-tools-not-a-sword.png",
+      "description": "Iris short navy hair copper goggles gray workwear helps Kou pack rope, small shovel, notebook, marked measuring cup and simple wood wedges in brown satchel, checks boots. Row checks ordinary sword and buckler separately, Sera staff. No modern backpack or gun.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-tools-not-a-sword.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "f1a5481ea7974dd62354e04e1446e37fef1648b43217146f6e7a260742333f18",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 609
+      },
+      "sourceId": "07-tools-not-a-sword",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-tools-not-a-sword-window-02",
+      "art": "art/07-tools-not-a-sword.png",
+      "description": "Iris short navy hair copper goggles gray workwear helps Kou pack rope, small shovel, notebook, marked measuring cup and simple wood wedges in brown satchel, checks boots. Row checks ordinary sword and buckler separately, Sera staff. No modern backpack or gun.",
+      "dialogue": [
+        [
+          "イリス",
+          "剣の代わりに\nこっちを持ちな"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-tools-not-a-sword.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "f1a5481ea7974dd62354e04e1446e37fef1648b43217146f6e7a260742333f18",
+      "crop": {
+        "x": 0,
+        "y": 609,
+        "width": 724,
+        "height": 380
+      },
+      "sourceId": "07-tools-not-a-sword",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-tools-not-a-sword-window-03",
+      "art": "art/07-tools-not-a-sword.png",
+      "description": "Iris short navy hair copper goggles gray workwear helps Kou pack rope, small shovel, notebook, marked measuring cup and simple wood wedges in brown satchel, checks boots. Row checks ordinary sword and buckler separately, Sera staff. No modern backpack or gun.",
+      "dialogue": [
+        [
+          "コウ",
+          "いつもの道具だ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-tools-not-a-sword.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "f1a5481ea7974dd62354e04e1446e37fef1648b43217146f6e7a260742333f18",
+      "crop": {
+        "x": 0,
+        "y": 989,
+        "width": 724,
+        "height": 335
+      },
+      "sourceId": "07-tools-not-a-sword",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-tools-not-a-sword-window-04",
+      "art": "art/07-tools-not-a-sword.png",
+      "description": "Iris short navy hair copper goggles gray workwear helps Kou pack rope, small shovel, notebook, marked measuring cup and simple wood wedges in brown satchel, checks boots. Row checks ordinary sword and buckler separately, Sera staff. No modern backpack or gun.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-tools-not-a-sword.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "f1a5481ea7974dd62354e04e1446e37fef1648b43217146f6e7a260742333f18",
+      "crop": {
+        "x": 0,
+        "y": 1324,
+        "width": 724,
+        "height": 186
+      },
+      "sourceId": "07-tools-not-a-sword",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-tools-not-a-sword-window-05",
+      "art": "art/07-tools-not-a-sword.png",
+      "description": "Iris short navy hair copper goggles gray workwear helps Kou pack rope, small shovel, notebook, marked measuring cup and simple wood wedges in brown satchel, checks boots. Row checks ordinary sword and buckler separately, Sera staff. No modern backpack or gun.",
+      "dialogue": [
+        [
+          "イリス",
+          "使える物を\n使えばいい"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 160,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-tools-not-a-sword.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "f1a5481ea7974dd62354e04e1446e37fef1648b43217146f6e7a260742333f18",
+      "crop": {
+        "x": 0,
+        "y": 1510,
+        "width": 724,
+        "height": 285
+      },
+      "sourceId": "07-tools-not-a-sword",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-tools-not-a-sword-window-06",
+      "art": "art/07-tools-not-a-sword.png",
+      "description": "Iris short navy hair copper goggles gray workwear helps Kou pack rope, small shovel, notebook, marked measuring cup and simple wood wedges in brown satchel, checks boots. Row checks ordinary sword and buckler separately, Sera staff. No modern backpack or gun.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 210,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-tools-not-a-sword.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "f1a5481ea7974dd62354e04e1446e37fef1648b43217146f6e7a260742333f18",
+      "crop": {
+        "x": 0,
+        "y": 1795,
+        "width": 724,
+        "height": 377
+      },
+      "sourceId": "07-tools-not-a-sword",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-set-out-window-01",
+      "art": "art/08-set-out.png",
+      "description": "Dawn of day 49 after preparing on days 46–48: Elna hands wrapped bread and sealed water flask to Kou outside blue awning, Row and Sera waiting behind at stairs. Elna warm serious final face and Kou resolves, first foot on stair only after meal handoff.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-set-out.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "c4508c2c9b033578759d8f4e9a8abf719209e12d2c50310008af54543a55bdae",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 519
+      },
+      "sourceId": "08-set-out",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-set-out-window-02",
+      "art": "art/08-set-out.png",
+      "description": "Dawn of day 49 after preparing on days 46–48: Elna hands wrapped bread and sealed water flask to Kou outside blue awning, Row and Sera waiting behind at stairs. Elna warm serious final face and Kou resolves, first foot on stair only after meal handoff.",
+      "dialogue": [
+        [
+          "エルナ",
+          "帰ってきたら\n飯にしよう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 230,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-set-out.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "c4508c2c9b033578759d8f4e9a8abf719209e12d2c50310008af54543a55bdae",
+      "crop": {
+        "x": 0,
+        "y": 519,
+        "width": 724,
+        "height": 436
+      },
+      "sourceId": "08-set-out",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-set-out-window-03",
+      "art": "art/08-set-out.png",
+      "description": "Dawn of day 49 after preparing on days 46–48: Elna hands wrapped bread and sealed water flask to Kou outside blue awning, Row and Sera waiting behind at stairs. Elna warm serious final face and Kou resolves, first foot on stair only after meal handoff.",
+      "dialogue": [
+        [
+          "コウ",
+          "ああ\n帰ってくる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-set-out.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "c4508c2c9b033578759d8f4e9a8abf719209e12d2c50310008af54543a55bdae",
+      "crop": {
+        "x": 0,
+        "y": 955,
+        "width": 724,
+        "height": 369
+      },
+      "sourceId": "08-set-out",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-set-out-window-04",
+      "art": "art/08-set-out.png",
+      "description": "Dawn of day 49 after preparing on days 46–48: Elna hands wrapped bread and sealed water flask to Kou outside blue awning, Row and Sera waiting behind at stairs. Elna warm serious final face and Kou resolves, first foot on stair only after meal handoff.",
+      "dialogue": [
+        [
+          "ロウ",
+          "行こう\n四階へ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-set-out.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "c4508c2c9b033578759d8f4e9a8abf719209e12d2c50310008af54543a55bdae",
+      "crop": {
+        "x": 0,
+        "y": 1324,
+        "width": 724,
+        "height": 420
+      },
+      "sourceId": "08-set-out",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-set-out-window-05",
+      "art": "art/08-set-out.png",
+      "description": "Dawn of day 49 after preparing on days 46–48: Elna hands wrapped bread and sealed water flask to Kou outside blue awning, Row and Sera waiting behind at stairs. Elna warm serious final face and Kou resolves, first foot on stair only after meal handoff.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 480,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-set-out.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "c4508c2c9b033578759d8f4e9a8abf719209e12d2c50310008af54543a55bdae",
+      "crop": {
+        "x": 0,
+        "y": 1744,
+        "width": 724,
+        "height": 428
+      },
+      "sourceId": "08-set-out",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    }
+  ]
+}
