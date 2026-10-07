@@ -10,7 +10,7 @@
 
 採用画像: art/01.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 45px、本文幅に比例。犬の歩幅に合わせた動作から休憩へ
 
 1. Mountain path, PR boots stride; PO short legs hurry behind.
    発話: なし / 無言
@@ -28,7 +28,9 @@
 
 採用画像: art/02.webp
 
-間: 100 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 240px、本文幅に比例。景色を眺めて呼吸を戻す
+
+コマ3の後: 360px幅で 330px。二人で景色を眺める休憩。原画の境界は左 570px / 右 569px。
 
 1. Shady rock beside path; PR pours small water bowl.
    発話: なし / 無言
@@ -46,7 +48,11 @@
 
 採用画像: art/03.webp
 
-間: 90 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 200px、本文幅に比例。二人の不安を受け止めて先へ進む
+
+コマ2の後: 360px幅で 270px。王女の不安を犬が受け止める。原画の境界は左 338px / 右 338px。
+
+コマ3の後: 360px幅で 160px。言葉にできない励ましが届くまで待つ。原画の境界は左 490px / 右 490px。
 
 1. Same rest rock, PR unlettered waterway map on knee.
    発話: なし / 無言
@@ -64,7 +70,7 @@
 
 採用画像: art/04.webp
 
-間: 75 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 110px、本文幅に比例。川を渡れない状況を観察する
 
 1. Arrive at narrow river; footbridge broken middle, opposite bank clearly visible.
    発話: なし / 無言
@@ -82,7 +88,7 @@
 
 採用画像: art/05.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 28px、本文幅に比例。音の違いをたどる連続動作
 
 1. They walk along near bank, river bends around boulders.
    発話: なし / 無言
@@ -100,7 +106,7 @@
 
 採用画像: art/06.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 32px、本文幅に比例。足場を確かめる動作を近くつなぐ
 
 1. Downstream shallow ford wide, stones visible under ankle-deep water.
    発話: なし / 無言
@@ -118,7 +124,7 @@
 
 採用画像: art/07.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 32px、本文幅に比例。支えられながら最後の一歩へ
 
 1. PR holds dog's torso gently and crosses hardest two slippery steps; dog not leashed by scarf.
    発話: なし / 無言
@@ -136,7 +142,9 @@
 
 採用画像: art/08.webp
 
-間: 105 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 230px、本文幅に比例。渡り終えた安堵と乾かす時間
+
+コマ3の後: 360px幅で 200px。最後の足場を越えてから安堵する。原画の境界は左 518px / 右 517px。
 
 1. They step together across shallow gravel, PR nearby with reaching hand.
    発話: なし / 無言
@@ -154,7 +162,7 @@
 
 採用画像: art/09.webp
 
-間: 90 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 280px、本文幅に比例。笑い合った余韻が森の気配へ変わる
 
 1. Far bank PR dries dog paws with small cloth from satchel.
    発話: なし / 無言
@@ -172,7 +180,9 @@
 
 採用画像: art/10.webp
 
-間: 900 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 900px、本文幅に比例。見えない相手を待つ長い静けさ。狼の顔は次話で初めて見せる
+
+コマ1の後: 360px幅で 210px。鎖の手掛かりの後に、見えない音を聞く。原画の境界は左 132px / 右 132px。
 
 1. Forest beyond ford, iron chain fragment half hidden near path.
    発話: なし / 無言

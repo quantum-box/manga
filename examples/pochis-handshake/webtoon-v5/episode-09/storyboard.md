@@ -10,7 +10,7 @@
 
 採用画像: art/01.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 45px、本文幅に比例。立ち位置を確かめて作業を始める
 
 1. Morning maintenance room wide: DK left lever, PR right pin socket on solid stone, PO blanket ledge, rope blocking rotten peripheral plank.
    発話: なし / 無言
@@ -28,7 +28,7 @@
 
 採用画像: art/02.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 25px、本文幅に比例。重い機構の動きを続けて読む
 
 1. DK slowly depresses LEFT spring-loaded lever, armor strain expression.
    発話: なし / 無言
@@ -46,7 +46,7 @@
 
 採用画像: art/03.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 25px、本文幅に比例。合図とピンの動きを近くつなぐ
 
 1. DK holds aligned lever, looks to PR.
    発話: DK / 今だ。
@@ -64,7 +64,9 @@
 
 採用画像: art/04-positions.webp
 
-間: 60 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 15px、本文幅に比例。異変に気づいてすぐ声を出す
+
+コマ2の後: 360px幅で 70px。木の異変を聞き取る一瞬。原画の境界は左 340px / 右 354px。
 
 1. Nearby ROPED-OFF peripheral rotten inspection plank vibrates under moving linkage bracket; PR stays on stone.
    発話: なし / 無言
@@ -82,7 +84,9 @@
 
 採用画像: art/05-brace.webp
 
-間: 75 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 220px、本文幅に比例。手が止まった静けさで危険を確かめる
+
+コマ2の後: 360px幅で 24px。吠えた直後に手が止まる速さを保つ。原画の境界は左 310px / 右 320px。
 
 1. PO rises on safe ledge blanket, no jumping into machine.
    発話: なし / 無言
@@ -100,7 +104,11 @@
 
 採用画像: art/06.webp
 
-間: 110 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 210px、本文幅に比例。声が届いた安堵から安全の作り直しへ
+
+コマ2の後: 360px幅で 250px。止まったから見えた危険を確かめる。原画の境界は左 310px / 右 310px。
+
+コマ3の後: 360px幅で 290px。言葉にならない声が届いた安堵。原画の境界は左 522px / 右 509px。
 
 1. Adults both on solid stone, mechanism braced and still, pin withdrawn by PR into her hand.
    発話: なし / 無言
@@ -118,7 +126,7 @@
 
 採用画像: art/07.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 40px、本文幅に比例。再確認した後に作業を再開する
 
 1. DK removes loose peripheral plank pieces with tool while system braced, floor central stone intact.
    発話: なし / 無言
@@ -136,7 +144,7 @@
 
 採用画像: art/08.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 35px、本文幅に比例。同じ合図から固定の結果へつなぐ
 
 1. DK retakes lever weight before removing temporary brace, clear hand action.
    発話: なし / 無言
@@ -154,7 +162,11 @@
 
 採用画像: art/09.webp
 
-間: 120 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 300px、本文幅に比例。固定成功を確かめた余韻
+
+コマ2の後: 360px幅で 200px。固定された部品を確かめてから結果を伝える。原画の境界は左 302px / 右 280px。
+
+コマ3の後: 360px幅で 220px。成功を急いで流さず受け止める。原画の境界は左 520px / 右 554px。
 
 1. PR pushes single metal pin fully into socket with secure locking clip.
    発話: なし / 無言
@@ -172,7 +184,11 @@
 
 採用画像: art/10.webp
 
-間: 150 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 680px、本文幅に比例。仕事を終えた休息と翌朝への時間
+
+コマ2の後: 360px幅で 230px。褒められた後、自分の役割を受け止める。原画の境界は左 348px / 右 364px。
+
+コマ3の後: 360px幅で 190px。仕事の余韻から翌朝の約束へ移る。原画の境界は左 523px / 右 505px。
 
 1. DK and PR sit exhausted on safe bench; PO blanket ledge then invited down to stone.
    発話: なし / 無言

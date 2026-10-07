@@ -128,5 +128,30 @@
     "estimatedDisplayedGlyphHeight": "approximately 19-28 CSS px for dialogue at 360px, assessed visually; not an OCR measurement",
     "duplicateHtmlDialogue": false
   },
-  "physicalDeviceTest": false
+  "physicalDeviceTest": false,
+  "scrollLayoutReview": {
+    "date": "2026-10-07",
+    "browserTool": "cua_repl",
+    "viewports": [
+      [
+        390,
+        844
+      ],
+      [
+        360,
+        800
+      ]
+    ],
+    "all10FullLengthExportsReviewed": true,
+    "original100ArtworksUnchanged": true,
+    "fullSourceCoverageVerified": true,
+    "reviewedSplitScenes": 50,
+    "internalPauses": 83,
+    "examples": [
+      "production/review/comfort-390.jpg",
+      "production/review/wolf-wait-360.jpg",
+      "production/review/handshake-360.jpg"
+    ],
+    "physicalDeviceTest": false
+  }
 }

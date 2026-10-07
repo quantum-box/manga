@@ -10,7 +10,7 @@
 
 採用画像: art/01.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 75px、本文幅に比例。役に立った実感を受け止める
 
 1. Village square wide: dry trough, stone well, modest homes, worried adults.
    発話: なし / 無言
@@ -28,7 +28,7 @@
 
 採用画像: art/02.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 45px、本文幅に比例。食べる・名前を呼ばれる生活の速さ
 
 1. Inside village cottage PR sets small water bowl and plain meat/rice, no harmful food.
    発話: なし / 無言
@@ -46,7 +46,7 @@
 
 採用画像: art/03-cottage.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 75px、本文幅に比例。名前をもらった温かさから握手へ
 
 1. Inside SAME modest wood-and-stone village cottage immediately after dinner: Toto considers dog's name while PO eats from SAME WHITE ceramic bowl with BLUE PAWPRINTS, plain rice and meat. Wood plank floor, fireplace and small window; no outdoor forest.
    発話: TO / ポチはどう？
@@ -64,7 +64,11 @@
 
 採用画像: art/04-cottage.webp
 
-間: 95 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 180px、本文幅に比例。はじめてのおてを残して夜へ移る
+
+コマ2の後: 360px幅で 160px。差し出す肉球を考える短い間。原画の境界は左 330px / 右 327px。
+
+コマ3の後: 360px幅で 130px。握手の感触を受け止める。原画の境界は左 522px / 右 523px。
 
 1. Inside SAME modest wood-and-stone village cottage, wood floor and fireplace, immediately after naming. PR offers open RIGHT palm at dog height, relaxed.
    発話: PR / おて、できる？
@@ -82,7 +86,11 @@
 
 採用画像: art/05.webp
 
-間: 135 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 440px、本文幅に比例。眠った静けさと翌朝の時間経過
+
+コマ2の後: 360px幅で 320px。帰れない家を思い、返事を待つ。原画の境界は左 323px / 右 323px。
+
+コマ3の後: 360px幅で 240px。寂しさを聞いてもらった後の静けさ。原画の境界は左 528px / 右 530px。
 
 1. Night cottage PO on blanket, PR chair beside lamp sewing cloak hem.
    発話: なし / 無言
@@ -100,7 +108,7 @@
 
 採用画像: art/06.webp
 
-間: 75 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 90px、本文幅に比例。空の桶の困りごとから王女の役目へ
 
 1. Morning village well. Toto raises bucket; a few drops only.
    発話: なし / 無言
@@ -118,7 +126,7 @@
 
 採用画像: art/07-dry-channel.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 70px、本文幅に比例。村の話から水門の場所を確かめる
 
 1. PR discussing route with village elder, paper simple unlettered waterway map.
    発話: なし / 無言
@@ -136,7 +144,11 @@
 
 採用画像: art/08-map.webp
 
-間: 110 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 180px、本文幅に比例。怖い名前を聞いても話す選択を受け止める
+
+コマ2の後: 360px幅で 140px。怖い名前を聞いて止まる。原画の境界は左 313px / 右 317px。
+
+コマ3の後: 360px幅で 200px。驚いた後に王女の答えを聞く。原画の境界は左 492px / 右 474px。
 
 1. Map: hill reservoir and castle connected to village canal; clear geography.
    発話: なし / 無言
@@ -154,7 +166,9 @@
 
 採用画像: art/09.webp
 
-間: 100 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 240px、本文幅に比例。旅へ出る理由を自分で選ぶ間
+
+コマ2の後: 360px幅で 280px。待っていてよいと言われ、自分の行き先を考える。原画の境界は左 333px / 右 331px。
 
 1. PR packs rope, blanket, food, water into brown satchel, not sword.
    発話: なし / 無言
@@ -172,7 +186,9 @@
 
 採用画像: art/10.webp
 
-間: 100 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 340px、本文幅に比例。村を離れた余韻と旅の距離
+
+コマ2の後: 360px幅で 220px。同行の問いへ、自分の理由で答える。原画の境界は左 370px / 右 378px。
 
 1. PR starts leaving, PO races to stand beside her foot.
    発話: なし / 無言

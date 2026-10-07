@@ -10,7 +10,7 @@
 
 採用画像: art/01.webp
 
-間: 85 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 120px、本文幅に比例。少しずつ流れた水を観察する
 
 1. Morning window clear. DK and PR at BYPASS sluice wheel, MAIN fractured canal branch remains CLOSED.
    発話: なし / 無言
@@ -28,7 +28,7 @@
 
 採用画像: art/02.webp
 
-間: 95 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 160px、本文幅に比例。固定を確かめてから水の行き先をたどる
 
 1. PR visually inspects intact bypass from stable platform, DK keeps small flow constant.
    発話: なし / 無言
@@ -46,7 +46,7 @@
 
 採用画像: art/03-village.webp
 
-間: 110 CSS px。城から村へ、水の動線で場所の切替をつなぐ
+場面の後: 360px幅で 90px、本文幅に比例。水の流れを村の桶までつなぐ
 
 1. Borderless top-to-bottom landscape: thin clear stream goes along intact low bypass down hill; main upper cracked canal dry.
    発話: なし / 無言
@@ -64,7 +64,11 @@
 
 採用画像: art/04-village.webp
 
-間: 125 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 310px、本文幅に比例。水が戻った村の喜びを受け止める
+
+コマ2の後: 360px幅で 280px。空だった桶が満ちた発見を受け止める。原画の境界は左 312px / 右 290px。
+
+コマ3の後: 360px幅で 140px。子供の喜びから村全体の安堵へ広がる。原画の境界は左 522px / 右 500px。
 
 1. Same village stone well from episode3, Toto lowers same bucket.
    発話: なし / 無言
@@ -82,7 +86,7 @@
 
 採用画像: art/05.webp
 
-間: 110 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 240px、本文幅に比例。知らせが城へ届いた距離と時間
 
 1. Village elder ties BLUE ribbon to messenger pigeon leg; small ribbon signal, no written words.
    発話: なし / 無言
@@ -100,7 +104,11 @@
 
 採用画像: art/06.webp
 
-間: 120 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 300px、本文幅に比例。互いに礼を言った余韻
+
+コマ2の後: 360px幅で 300px。礼を受けた相手の返事を待つ。原画の境界は左 311px / 右 311px。
+
+コマ3の後: 360px幅で 220px。犬へ届いた感謝を受け止める。原画の境界は左 528px / 右 528px。
 
 1. DK looking out toward village, releases tense shoulders.
    発話: なし / 無言
@@ -118,7 +126,11 @@
 
 採用画像: art/07.webp
 
-間: 160 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 240px、本文幅に比例。怖くなくなった手に、自分で近づく
+
+コマ2の後: 360px幅で 300px。飲み終えた静けさから、差し出さない手を見る。原画の境界は左 366px / 右 347px。
+
+コマ3の後: 360px幅で 330px。もう怖くないと分かるまで待つ。原画の境界は左 504px / 右 516px。
 
 1. Quiet courtyard DK low stone bench sets dog water bowl then steps back, PR nearby.
    発話: なし / 無言
@@ -136,7 +148,13 @@
 
 採用画像: art/08.webp
 
-間: 145 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 280px、本文幅に比例。握手の温かさを残し、手が離れる
+
+コマ1の後: 360px幅で 190px。命令のない手を見て、自分で動くまで待つ。原画の境界は左 227px / 右 205px。
+
+コマ2の後: 360px幅で 250px。肉球を上げてから、手に触れるまでの溜め。原画の境界は左 323px / 右 360px。
+
+コマ3の後: 360px幅で 230px。握手の感触を残して周りの反応へ移る。原画の境界は左 494px / 右 506px。
 
 1. PO sits facing crouched DK; human right palm held open at eye level.
    発話: なし / 無言
@@ -154,7 +172,11 @@
 
 採用画像: art/09.webp
 
-間: 110 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 260px、本文幅に比例。もう一回の交流を受け止める
+
+コマ1の後: 360px幅で 320px。手が離れてから、もう一回という言葉を待つ。原画の境界は左 104px / 右 118px。
+
+コマ2の後: 360px幅で 160px。もう一回への返事。原画の境界は左 308px / 右 280px。
 
 1. DK hand and PO paw part naturally, no transformation.
    発話: なし / 無言
@@ -172,7 +194,11 @@
 
 採用画像: art/10.webp
 
-間: 180 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 460px、本文幅に比例。選んだ居場所の余韻。最後のページを急いで閉じない
+
+コマ2の後: 360px幅で 380px。元の暮らしを思い出し、今の身体を選び直す。原画の境界は左 342px / 右 337px。
+
+コマ3の後: 360px幅で 310px。選んだ居場所の余韻を残して先の約束へ進む。原画の境界は左 523px / 右 548px。
 
 1. Courtyard two humans walking slowly, PO trots between them, repaired bypass glittering in distance.
    発話: なし / 無言

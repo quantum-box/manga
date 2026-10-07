@@ -10,7 +10,7 @@
 
 採用画像: art/01.webp
 
-間: 85 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 75px、本文幅に比例。牙への驚きから鎖を観察する
 
 1. Forest clearing establishing: gray wolf iron collar tether snagged on fallen branch; not attacking.
    発話: なし / 無言
@@ -28,7 +28,7 @@
 
 採用画像: art/02-distance.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 60px、本文幅に比例。鎖を見て恐怖の理由を考える
 
 1. Wolf attempts retreat, chain prevents movement.
    発話: なし / 無言
@@ -46,7 +46,11 @@
 
 採用画像: art/03.webp
 
-間: 110 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 220px、本文幅に比例。互いの怖さを理解して距離を取る
+
+コマ2の後: 360px幅で 180px。自分の怖かった記憶を重ねる。原画の境界は左 251px / 右 259px。
+
+コマ3の後: 360px幅で 240px。相手の恐怖にも気づく。原画の境界は左 521px / 右 512px。
 
 1. PO and wolf anxious eyes paired panels, right to left.
    発話: なし / 無言
@@ -64,7 +68,9 @@
 
 採用画像: art/04.webp
 
-間: 135 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 190px、本文幅に比例。狼の返事を待ち、焦って触れない
+
+コマ3の後: 360px幅で 390px。返事を待つ無言の時間。飲み始める姿は下に残す。原画の境界は左 530px / 右 525px。
 
 1. PR sets water bowl at safe distance then steps back.
    発話: なし / 無言
@@ -82,7 +88,11 @@
 
 採用画像: art/05.webp
 
-間: 100 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 150px、本文幅に比例。許可を待ってから鎖に手を伸ばす
+
+コマ2の後: 360px幅で 340px。威嚇を受けて手を止め、相手が落ち着くのを待つ。原画の境界は左 326px / 右 350px。
+
+コマ3の後: 360px幅で 150px。触れないという選択を受け止める。原画の境界は左 547px / 右 525px。
 
 1. PR slowly points toward trapped chain, remains sideways.
    発話: PR / 鎖を外すね。
@@ -100,7 +110,7 @@
 
 採用画像: art/06.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 35px、本文幅に比例。鎖を外す手の動作を近く読む
 
 1. PR approaches caught chain from branch side, no contact with mouth.
    発話: なし / 無言
@@ -118,7 +128,11 @@
 
 採用画像: art/07.webp
 
-間: 120 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 240px、本文幅に比例。自由を確かめた安堵
+
+コマ2の後: 360px幅で 160px。鎖が外れた動きを確かめる。原画の境界は左 248px / 右 248px。
+
+コマ3の後: 360px幅で 190px。自由になった狼の反応を残す。原画の境界は左 540px / 右 540px。
 
 1. Final iron loop lifted from fork, branch unchanged.
    発話: なし / 無言
@@ -136,7 +150,7 @@
 
 採用画像: art/08.webp
 
-間: 100 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 180px、本文幅に比例。同じ水を飲んだ距離感を残す
 
 1. Wolf in background, PR places second small bowl near dog; no forcing friendship.
    発話: なし / 無言
@@ -154,7 +168,7 @@
 
 採用画像: art/09.webp
 
-間: 90 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 190px、本文幅に比例。案内された道の移動と門への到着
 
 1. Wolf starts uphill trail, stops and looks back.
    発話: なし / 無言
@@ -172,7 +186,9 @@
 
 採用画像: art/10.webp
 
-間: 150 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 440px、本文幅に比例。見送った余韻から、閉じた門へ向き直る
+
+コマ3の後: 360px幅で 330px。狼が去った余韻を残して門へ向き直る。原画の境界は左 519px / 右 492px。
 
 1. Castle gate outside, wolf stops at boundary; dangling chain no longer stuck.
    発話: なし / 無言
