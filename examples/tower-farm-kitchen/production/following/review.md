@@ -13,3 +13,7 @@ All native 390x844 and 360x800 sheets visually reviewed. Elna overlap and Leon a
 ## Episode 13
 
 All ten native 390x844 and 360x800 scroll sheets and six protected cue/pause/answer screenshots visually reviewed. Guild interior retained throughout; empty numbered bowls precede cooking, three distinct candidate dishes follow. Japanese dialogue and speakers checked against scripts. Overlapping balloons in scene 1 and scene 8 retained in the same windows, as are Elna and the plated dish. Thirty display windows preserve original bytes and complete lettering. The 910px pause protects the meal presentation before tasting at both widths.
+
+## Episode 14
+
+All twelve native phone scroll sheets and six protected cue/pause/answer captures reviewed at 390x844 and 360x800. Eight unchanged originals form 38 CSS windows. Plain wooden votes stay distinct from the later advance coin pouch. Anonymous travelers are distinct from Kou and Rodel; the cold-memory inset is blue-lit. No premature healing or buffs. Guild interior, outdoor guild lane, then diner doorway proceed in order. Sera remains silent. Dark-clothing detector cuts replaced with actual gutters; diagonal final scene retained. The 920px protected pause separates the choice announcement from their winning dish. All dialogue and speaker identities passed.

@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-35a339d6-1e3b-4e7d-b05b-d870e7a24866.png",
+  "adopted": "art/01-first-bite-no-cards.png",
+  "original_sha256": "370a9898b685f028ef8b906e927c49c42bd634f4da69e1213ba05abe75dfe12e",
+  "adopted_sha256": "370a9898b685f028ef8b906e927c49c42bd634f4da69e1213ba05abe75dfe12e",
+  "width": 724,
+  "height": 2172,
+  "prompt_file": "generation/01-first-bite-no-cards.prompt.txt",
+  "prompt": "Edit reference 1 as the exact target. Preserve the whole tall artwork and its dimensions. Remove EVERY numbered paper card (the cards marked 1 or 2) from ALL panels, replacing each with uninterrupted wooden tabletop. Row and Leon are both tasting portions of the same winning brown beef/carrot/green stew; these are individual serving bowls, not candidates 1 and 2. Keep all stew, bread, faces, clothing, composition and the exact Japanese dialogue unchanged. Add no new text.",
+  "pixel_processing": "none",
+  "text_review": "passed",
+  "continuity_review": "passed",
+  "reference_files": [
+    {
+      "path": "generation/inputs/01-first-bite-original.png",
+      "sha256": "b9a3e8b248d0fed236a408c60b87611f47f1f5817e95098e4d392aacb576d72c",
+      "executed_filename": "exec-19b3295a-ad67-4491-a989-a752ba674a3d.png"
+    }
+  ]
+}
