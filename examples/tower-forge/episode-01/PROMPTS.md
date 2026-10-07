@@ -684,3 +684,285 @@ Add ONLY one small-but-readable horizontal cyan HUD line EXACT 斬撃強化 作�
 Use case: precise-object-edit. Edit ONLY the black glove on Kai's sword-holding RIGHT hand in the LOWER panoramic panel of this finished Japanese Webtoon. Kai has bare hands throughout the immediately preceding scenes. Replace only the glove material with naturally drawn bare skin fingers and knuckles while retaining the exact grip, hand anatomy, wrist, sleeve, copper/leather forearm cuff, the SAME one sword, guard, hilt and downward blade angle. Keep every other pixel/element as unchanged as possible: both panel frames, native canvas and gutters, Kai and Sena's faces/hair, expressions, body poses and costumes, Sena's armored gloves and shield, sunset tower/city/workshop and lights. Do not mirror anything, do not add any other hand, glove, weapon or window. Preserve EXACT vertical dialogue うん。待ってる。 and ……うん。行く。 with original balloons, tail/dots, column order and glyph size. No new text, effects, UI or action.
 
 ```
+
+## 2026-10-07 スクロール構図の実行済み改稿
+
+組み込み image_gen による原画の再構成。実際に実行した指示と参照を記録。次回用指示は未実行として別保存。
+
+### art/r02-scroll.png
+
+参照：episode-01/art/r02.png。方式：native_scroll_recomposition。
+
+```text
+Use case: illustration-story. Edit the referenced finished Japanese Webtoon into a smartphone vertical-scroll composition. The reference is the edit target and preserves character identity, costume, sword, exact story and anime linework, NOT the old full-width stacked layout. Recompose and redraw. This is a finished raster comic, with all dialogue, HUD and sound lettering integrated. No HTML-like cards, no page border, no equal rectangular rows. Use the composition below: unequal floating inserts, actual same-row pairs, large borderless art fading into white, and purposeful quiet space. A narrative moment does not require its own full-width box. White gaps belong to the comic's timing; do not fill them with scenery or extra panels. Within a pair read RIGHT then LEFT, then down. Keep short-action pairs close; separate anticipation and quiet reactions. Do not rotate Japanese glyphs.
+Preserve the EXACT adopted utterances, HUD rows and sound words below. True vertical Japanese dialogue, upright black manga glyphs, columns right to left, tails to the actual speaker; thought has dots towards the actual head. Allow glyphs about 5.6 percent of total canvas width, even in narrow inserts; reserve room rather than shrinking letters. HUD is horizontal cyan/navy, only in its owner's view. Sounds are outside balloons, near the drawn source. No dialogue does not prohibit specified HUD or sounds. Do not add other text, captions, panel numbers, arrows or watermark.
+Kai: brown hair with right-temple amber streak, amber eyes, ivory rolled sleeves, brown vest, indigo cape, copper cuff on LEFT forearm, bare hands, right-handed, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor, blue tunic and cape, silver/cobalt triangular shield on LEFT arm when specified. ONE steel sword with square brass guard, dark grip and one thin amber inset line. The sword never breaks. Kai made it; Sena tests it before the handover, Kai uses it only after the handover. Modern VR equipment only in the real room. Keep the same courtyard, wooden target, workbench and blue cloth doorway. No added plot, new characters, fire attack, duplicated limbs, black gloves on Kai or later reveals.
+
+Canvas width:height 1:3. Scene 2: 塔のある世界. Location: 同じ部屋からVRログイン。リューメルの広場。. Composition takes precedence over the reference's grid: 上に幅65％の小さな現実の挿入。白へフェードした後、雲から塔の縦軸、都市、階段、手前のカイへ視点を下げる一つの長い枠なし風景。下端の左手とログイン表示は小さな独立した挿入。三つの全幅矩形にしない。
+
+Narrative moment 1, in the specified reading order, not a mandatory full-width panel: 上端右寄せ、幅65％・高さ15％の小さな挿入。黒髪の海斗が現実の室内で黒いVRヘッドセットを着け、両手に一つずつストラップ付きのコントローラー。普通の無地の室内。今度は俺も、という気持ち。下端を白へ溶かす。
+Dialogue/thought only, speaker 海斗, voice 小さな独り言. EXACT text: 今度は、俺も。. Vertical columns RIGHT to LEFT: 今度は、 / 俺も。.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 2, in the specified reading order, not a mandatory full-width panel: 中段から下へ画像の約70％を使う一つの枠なし風景。まず雲を横切る細長い白石の塔、次にその裾の都市と運河、最後に同じ塔へ向かう階段と手前のカイの背中へ視点が下りる。塔の縦軸と道がスクロールを導く。カイは一人一度だけ。景色の外周は白い紙へ柔らかく消す。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 3, in the specified reading order, not a mandatory full-width panel: 最下端左寄せ、幅65％の浅い手元の挿入。カイの左カフと素手、本人の視界にログイン完了。背景は同じ石段。中央風景と横線で分断せず、間を白に残す。
+In-world display only, not speech. EXACT text: ログイン完了. Horizontal lettering; no balloon or tail.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+```
+
+### art/r04-scroll.png
+
+参照：episode-01/art/r03-sounds.png。方式：native_scroll_recomposition。
+
+```text
+Use case: illustration-story. Edit the referenced finished Japanese Webtoon into a smartphone vertical-scroll composition. The reference is the edit target and preserves character identity, costume, sword, exact story and anime linework, NOT the old full-width stacked layout. Recompose and redraw. This is a finished raster comic, with all dialogue, HUD and sound lettering integrated. No HTML-like cards, no page border, no equal rectangular rows. Use the composition below: unequal floating inserts, actual same-row pairs, large borderless art fading into white, and purposeful quiet space. A narrative moment does not require its own full-width box. White gaps belong to the comic's timing; do not fill them with scenery or extra panels. Within a pair read RIGHT then LEFT, then down. Keep short-action pairs close; separate anticipation and quiet reactions. Do not rotate Japanese glyphs.
+Preserve the EXACT adopted utterances, HUD rows and sound words below. True vertical Japanese dialogue, upright black manga glyphs, columns right to left, tails to the actual speaker; thought has dots towards the actual head. Allow glyphs about 5.6 percent of total canvas width, even in narrow inserts; reserve room rather than shrinking letters. HUD is horizontal cyan/navy, only in its owner's view. Sounds are outside balloons, near the drawn source. No dialogue does not prohibit specified HUD or sounds. Do not add other text, captions, panel numbers, arrows or watermark.
+Kai: brown hair with right-temple amber streak, amber eyes, ivory rolled sleeves, brown vest, indigo cape, copper cuff on LEFT forearm, bare hands, right-handed, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor, blue tunic and cape, silver/cobalt triangular shield on LEFT arm when specified. ONE steel sword with square brass guard, dark grip and one thin amber inset line. The sword never breaks. Kai made it; Sena tests it before the handover, Kai uses it only after the handover. Modern VR equipment only in the real room. Keep the same courtyard, wooden target, workbench and blue cloth doorway. No added plot, new characters, fire attack, duplicated limbs, black gloves on Kai or later reveals.
+
+Canvas width:height 1:3. Scene 4: 向かう先. Location: 広場から工房への一つの通り。晴れたゲーム内の午後。. Composition takes precedence over the reference's grid: 上の小さな状況、右の目元と左の工具袋の近い二つの挿入、その後に余白を挟んだ長い枠なしの横道。石畳のS字の道を上から下へたどると青い布の工房の扉に着く。
+
+Narrative moment 1, in the specified reading order, not a mandatory full-width panel: 上端の幅80％の浅い状況。塔へ向かう数人の冒険者が奥左へ去る。カイは手前右で立ち止まり追う。背景は白石の通り。足音は遠ざかる靴のそば。大きな全身を繰り返さない。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Sound effect EXACT text: コツ コツ. Cause: 冒険者の靴が石畳へ接地する. Placement: 上の広いコマ、奥の歩く一団の足元の石畳。カイの腕や塔を避ける. Drawn lettering: 小さな硬い灰黒色の描き文字。二拍の間を少し空ける. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Narrative moment 2, in the specified reading order, not a mandatory full-width panel: 次の段の右、幅35％の短い目元だけの挿入。期待とためらい。アーチの白石を隅へ残す。無言。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 3, in the specified reading order, not a mandatory full-width panel: 同じ段の左、幅55％、右の目元より少し下げた工具袋に触れる素手の接写。カイの顔を全身で繰り返さず、昨日の試作剣を思う。思考の点は接写の上にいる画面外の頭へ続く。腰に剣はない。
+Dialogue/thought only, speaker カイ, voice 心の声. EXACT text: 昨日の剣、どうだったかな。. Vertical columns RIGHT to LEFT: 昨日の剣、 / どうだったかな。.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 4, in the specified reading order, not a mandatory full-width panel: 短い白い間の後、下の半分は一つの長い枠なしの背景。白いアーチの下の道から石畳をS字でたどり、下端の青い布の木の扉へ着く。カイの後ろ姿が一人だけ敷居へ踏み込む。ハンマーの印のみ。足音は下の靴のそば。上下の背景が一つの経路としてつながる。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Sound effect EXACT text: コツ. Cause: カイの靴が工房の石の敷居へ接地する. Placement: 最下段、後ろ姿の靴に近い空いた石段. Drawn lettering: 小さく硬い灰黒色の描き文字。靴と足の輪郭を隠さない. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+```
+
+### art/r06-scroll.png
+
+参照：episode-01/art/r06-weapon.png。方式：native_scroll_recomposition。
+
+```text
+Use case: illustration-story. Edit the referenced finished Japanese Webtoon into a smartphone vertical-scroll composition. The reference is the edit target and preserves character identity, costume, sword, exact story and anime linework, NOT the old full-width stacked layout. Recompose and redraw. This is a finished raster comic, with all dialogue, HUD and sound lettering integrated. No HTML-like cards, no page border, no equal rectangular rows. Use the composition below: unequal floating inserts, actual same-row pairs, large borderless art fading into white, and purposeful quiet space. A narrative moment does not require its own full-width box. White gaps belong to the comic's timing; do not fill them with scenery or extra panels. Within a pair read RIGHT then LEFT, then down. Keep short-action pairs close; separate anticipation and quiet reactions. Do not rotate Japanese glyphs.
+Preserve the EXACT adopted utterances, HUD rows and sound words below. True vertical Japanese dialogue, upright black manga glyphs, columns right to left, tails to the actual speaker; thought has dots towards the actual head. Allow glyphs about 5.6 percent of total canvas width, even in narrow inserts; reserve room rather than shrinking letters. HUD is horizontal cyan/navy, only in its owner's view. Sounds are outside balloons, near the drawn source. No dialogue does not prohibit specified HUD or sounds. Do not add other text, captions, panel numbers, arrows or watermark.
+Kai: brown hair with right-temple amber streak, amber eyes, ivory rolled sleeves, brown vest, indigo cape, copper cuff on LEFT forearm, bare hands, right-handed, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor, blue tunic and cape, silver/cobalt triangular shield on LEFT arm when specified. ONE steel sword with square brass guard, dark grip and one thin amber inset line. The sword never breaks. Kai made it; Sena tests it before the handover, Kai uses it only after the handover. Modern VR equipment only in the real room. Keep the same courtyard, wooden target, workbench and blue cloth doorway. No added plot, new characters, fire attack, duplicated limbs, black gloves on Kai or later reveals.
+
+Canvas width:height 1:2.5. Scene 6: 灯刃の働き. Location: 返された一本の剣が工房の木の台にある。カイ左、セナ右。. Composition takes precedence over the reference's grid: 窓を開く小さな手元→白い間→一本の剣と大きなHUDを一つの枠なし作業台の画面に置く。二つの説明は下の右→左の近い顔・指の挿入へ分ける。四つの全幅コマにしない。
+
+Narrative moment 1, in the specified reading order, not a mandatory full-width panel: 上端右寄せの小さな手元。カイの右指が左の銅カフを触れ、台の剣の詳細を開く。装備詳細の短い見出しとピッ。カイは素手。剣は台にあり、まだ誰も持たない。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Player interface, visible to カイ in their own view. Action: 台の剣を選択して詳細を開く. Placement: コマの空いた背景。顔・手・刃を避ける. EXACT horizontal rows top to bottom: 装備詳細. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effect EXACT text: ピッ. Cause: 装備詳細を開く電子音. Placement: カフ近くの空き. Drawn lettering: 小さく短いシアンの電子音。吹き出しなし. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Narrative moment 2, in the specified reading order, not a mandatory full-width panel: 白い間を挟んだ中央の大きな枠なし画面。木の台に一本だけの鋼剣と四角い真鍮の鍔、細い橙の刻線。本人の視界の大きな三行のHUDが余白へ浮く。背景は薄く抑え、細部を全面へ詰めない。HUDと剣は同時に読める。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Player interface, visible to カイ in their own view. Action: 効果と消費を見る. Placement: 横書き3行の窓をコマの上側へ大きく。一本の剣は下に見える. EXACT horizontal rows top to bottom: 灯刃・試作 | 斬撃強化 ＋30％ | 消費MP 2／打. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+No unlisted words or sound effects.
+
+Narrative moment 3, in the specified reading order, not a mandatory full-width panel: 下の段の右側、幅48％のカイの落ち着いた顔と刻線を示す指の近い挿入。魔石で切れ味を上げる説明。背景はほぼ白。全文の縦書き3列に十分な幅を残す。
+Dialogue/thought only, speaker カイ, voice 普通の声. EXACT text: 魔石の力で、刃の切れ味を上げる。. Vertical columns RIGHT to LEFT: 魔石の力で、 / 刃の切れ味を / 上げる。.
+Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+No unlisted words or sound effects.
+
+Narrative moment 4, in the specified reading order, not a mandatory full-width panel: 同じ段の左側、幅48％、少し下げた鍔へ戻る指とカイの口元の挿入。振る時だけ魔力を回す説明。前のコマと同じ一本の剣を別の時刻で見る。背景はほぼ白、セナは右の画面外で聞く。
+Dialogue/thought only, speaker カイ, voice 普通の声. EXACT text: 振る時だけ、刃に魔力を回す。. Vertical columns RIGHT to LEFT: 振る時だけ、 / 刃に魔力を / 回す。.
+Sound effects: none. Keep this beat focused on the stated perception, dialogue or reaction.
+No unlisted words or sound effects.
+
+```
+
+### art/r06-scroll-pair.png
+
+参照：episode-01/art/r06-scroll.png。方式：native_scroll_recomposition。
+
+```text
+Use case: illustration-story. Edit ONLY the lower two explanation vignettes in this referenced Webtoon. Keep the entire upper cuff action, exact 装備詳細, ピッ, equipment window, 灯刃・試作, 斬撃強化 ＋30％, 消費MP 2／打, the ONE sword on the workbench, character identity, costume, colors and lettering style unchanged. The current lower explanation vignettes are stacked vertically; they MUST become ONE SAME ROW with RIGHT then LEFT reading order. Use the lower 42 percent of the canvas for two unequal floating inserts beside each other, right half slightly higher and left half slightly lower, separated by a narrow white gutter. Do NOT make one under the other. The RIGHT insert shows a close-up of Kai's face and pointing finger, exact vertical dialogue 魔石の力で、刃の切れ味を上げる。 columns right to left: 魔石の力で、 / 刃の切れ味を / 上げる。 The LEFT insert shows his mouth and bare pointing hand near the brass guard at the next moment, exact vertical dialogue 振る時だけ、刃に魔力を回す。 columns: 振る時だけ、 / 刃に魔力を / 回す。 Keep all glyphs upright and large about 5.6 percent of full image width. Reserve white balloon space instead of shrinking letters or putting long dialogue outside balloons. Faces, fingers and guard remain clear. The two inserts share a top-to-bottom band and are read right then left. Feather the art into white; no full-width panel borders. Preserve one steel sword across these successive moments, bare hands and copper LEFT cuff. No additional text, hands, panel labels, dialogue or sounds.
+```
+
+### art/r08-scroll.png
+
+参照：episode-01/art/r06-sounds.png。方式：native_scroll_recomposition。
+
+```text
+Use case: illustration-story. Edit the referenced finished Japanese Webtoon into a smartphone vertical-scroll composition. The reference is the edit target and preserves character identity, costume, sword, exact story and anime linework, NOT the old full-width stacked layout. Recompose and redraw. This is a finished raster comic, with all dialogue, HUD and sound lettering integrated. No HTML-like cards, no page border, no equal rectangular rows. Use the composition below: unequal floating inserts, actual same-row pairs, large borderless art fading into white, and purposeful quiet space. A narrative moment does not require its own full-width box. White gaps belong to the comic's timing; do not fill them with scenery or extra panels. Within a pair read RIGHT then LEFT, then down. Keep short-action pairs close; separate anticipation and quiet reactions. Do not rotate Japanese glyphs.
+Preserve the EXACT adopted utterances, HUD rows and sound words below. True vertical Japanese dialogue, upright black manga glyphs, columns right to left, tails to the actual speaker; thought has dots towards the actual head. Allow glyphs about 5.6 percent of total canvas width, even in narrow inserts; reserve room rather than shrinking letters. HUD is horizontal cyan/navy, only in its owner's view. Sounds are outside balloons, near the drawn source. No dialogue does not prohibit specified HUD or sounds. Do not add other text, captions, panel numbers, arrows or watermark.
+Kai: brown hair with right-temple amber streak, amber eyes, ivory rolled sleeves, brown vest, indigo cape, copper cuff on LEFT forearm, bare hands, right-handed, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor, blue tunic and cape, silver/cobalt triangular shield on LEFT arm when specified. ONE steel sword with square brass guard, dark grip and one thin amber inset line. The sword never breaks. Kai made it; Sena tests it before the handover, Kai uses it only after the handover. Modern VR equipment only in the real room. Keep the same courtyard, wooden target, workbench and blue cloth doorway. No added plot, new characters, fire attack, duplicated limbs, black gloves on Kai or later reveals.
+
+Canvas width:height 1:3. Scene 8: 三回目の前で. Location: 工房の裏口から隣接する石の試験庭。木の標的一つ。. Composition takes precedence over the reference's grid: 上に浅い場所の確認。中段の第一打と第二打は同じ段の右→左へ短く連なる接写。下へ200px相当の白い無音の間を置き、光が消えた刃とセナの顔が大きな枠なし画面として初めて現れる。
+
+Narrative moment 1, in the specified reading order, not a mandatory full-width panel: 上端の浅い状況コマ。同じ青い布の裏口からセナとカイが庭へ出る。左に一本の木の標的、盾は壁のベンチに置く。セナの右手に試作剣。ここなら安全、の発話。
+Dialogue/thought only, speaker セナ, voice 普通の声. EXACT text: ここなら、安全に試せる。. Vertical columns RIGHT to LEFT: ここなら、 / 安全に / 試せる。.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 2, in the specified reading order, not a mandatory full-width panel: 次の一段の右側、幅48％。第一打の銀の籠手と剣と木の接触だけに寄る。顔や背景全景を縮小しない。橙の一本の線は光る。縦書き一回目と、接触点近くのコン。枠の下辺と次の枠の間を斜めにする。
+Dialogue/thought only, speaker セナ, voice 普通の声. EXACT text: 一回目。. Vertical columns RIGHT to LEFT: 一回目。.
+Sound effect EXACT text: コン. Cause: 第一打の鋼の刃が木の標的へ当たる. Placement: 第二段、左の刃と木の接触点の近く。刃・木片・顔・一回目のセリフを避ける. Drawn lettering: 中程度の角張った黒い描き文字、淡色の細い縁。大爆発の音にしない. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Narrative moment 3, in the specified reading order, not a mandatory full-width panel: 同じ段の左側、幅48％。第二打の刃と木の接触だけに寄る。橙の線は光る。二回目、コン。読む順は右の第一打から左の第二打。
+Dialogue/thought only, speaker セナ, voice 普通の声. EXACT text: 二回目。. Vertical columns RIGHT to LEFT: 二回目。.
+Sound effect EXACT text: コン. Cause: 第二打の鋼の刃が同じ木の標的へ当たる. Placement: 第三段、左の木と刃の接触付近の空き。二回目のセリフを避ける. Drawn lettering: 第一打と同じ重さの角張った描き文字、淡色の細い縁. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Narrative moment 4, in the specified reading order, not a mandatory full-width panel: その下に画像高さの約18％の白い無音の間。次に下の大きな枠なしセナの顔と持ち上げた無傷の鋼剣。刻線の光が消えている。右手で剣を止め、画面外左のカイへ見せる。ここで止まるの発話はこの下の画面にだけ置く。第三打を当てる絵やコンを追加しない。
+Dialogue/thought only, speaker セナ, voice 普通の声. EXACT text: ……ここで止まる。. Vertical columns RIGHT to LEFT: ……ここで / 止まる。.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+```
+
+### art/r14-scroll.png
+
+参照：episode-01/art/r11-sounds.png。方式：native_scroll_recomposition。
+
+```text
+Use case: illustration-story. Edit the referenced finished Japanese Webtoon into a smartphone vertical-scroll composition. The reference is the edit target and preserves character identity, costume, sword, exact story and anime linework, NOT the old full-width stacked layout. Recompose and redraw. This is a finished raster comic, with all dialogue, HUD and sound lettering integrated. No HTML-like cards, no page border, no equal rectangular rows. Use the composition below: unequal floating inserts, actual same-row pairs, large borderless art fading into white, and purposeful quiet space. A narrative moment does not require its own full-width box. White gaps belong to the comic's timing; do not fill them with scenery or extra panels. Within a pair read RIGHT then LEFT, then down. Keep short-action pairs close; separate anticipation and quiet reactions. Do not rotate Japanese glyphs.
+Preserve the EXACT adopted utterances, HUD rows and sound words below. True vertical Japanese dialogue, upright black manga glyphs, columns right to left, tails to the actual speaker; thought has dots towards the actual head. Allow glyphs about 5.6 percent of total canvas width, even in narrow inserts; reserve room rather than shrinking letters. HUD is horizontal cyan/navy, only in its owner's view. Sounds are outside balloons, near the drawn source. No dialogue does not prohibit specified HUD or sounds. Do not add other text, captions, panel numbers, arrows or watermark.
+Kai: brown hair with right-temple amber streak, amber eyes, ivory rolled sleeves, brown vest, indigo cape, copper cuff on LEFT forearm, bare hands, right-handed, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor, blue tunic and cape, silver/cobalt triangular shield on LEFT arm when specified. ONE steel sword with square brass guard, dark grip and one thin amber inset line. The sword never breaks. Kai made it; Sena tests it before the handover, Kai uses it only after the handover. Modern VR equipment only in the real room. Keep the same courtyard, wooden target, workbench and blue cloth doorway. No added plot, new characters, fire attack, duplicated limbs, black gloves on Kai or later reveals.
+
+Canvas width:height 1:2. Scene 14: 二回、そして. Location: 同じ試験庭。カイが標的の右、セナは後ろで見守る。. Composition takes precedence over the reference's grid: 上段右の第一打、左の第二打を近い接写でつなぐ。下は排熱溝の一つの大きな枠なし接写、粒の流れを下へたどると小さなカイの目元の挿入へ着く。三打目は次の画像へ残す。
+
+Narrative moment 1, in the specified reading order, not a mandatory full-width panel: 上段右、幅48％の第一打の接写。カイの素手の右手、鋼剣、木の標的の接触へ寄る。細い橙の刻線は光る。コンは接触のそば。背景は簡潔。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Sound effect EXACT text: コン. Cause: カイの第一打が木の標的へ当たる. Placement: 上の段、既存の白いコンの楕円を除去し、その近くの刃と標的の接触を示す空きへ. Drawn lettering: 楕円・尾を除いた角張った黒の描き文字、細い白縁。自然に絵へなじませる. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Narrative moment 2, in the specified reading order, not a mandatory full-width panel: 同じ段の左、幅48％の第二打。光る刃、同じ木の標的、小さな木片。コン。実際の斜めのコマ間で二つの短い動作をつなぐ。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Sound effect EXACT text: コン. Cause: カイの第二打が同じ木の標的へ当たる. Placement: 第二段、既存の白いコンの楕円を除去し、同じ接触のそばの空きへ. Drawn lettering: 第一打と同じ描き文字、細い白縁。吹き出しを付けない. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Narrative moment 3, in the specified reading order, not a mandatory full-width panel: 中段から下へ、一つの枠なしの大きな鍔の接写。素手のカイが剣を一度止め、清掃済みの排熱溝から細い橙の粒が抜ける。スゥ…は粒のそば。粒は下へ視線を運び、背景は白へ消える。巨大な火炎や魔法はない。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Sound effect EXACT text: スゥ…. Cause: 修理後の鍔の溝から魔力の熱を逃がす淡い粒が抜ける. Placement: 第三段、真鍮の溝と橙の粒の近くの暗い空き。握った手と溝を避ける. Drawn lettering: 打撃より小さく細い柔らかな橙灰の描き文字、淡い縁。煙や炎を追加しない. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Narrative moment 4, in the specified reading order, not a mandatory full-width panel: 下端左に幅65％の浅い目元だけの挿入。次を試す前のためらいと集中。第三打、成功HUD、セナの安堵はまだ出さない。挿入の後を白へ溶かす。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+```
+
+### art/r15-scroll.png
+
+参照：episode-01/art/r15-test.png。方式：native_scroll_recomposition。
+
+```text
+Use case: illustration-story. Edit the referenced finished Japanese Webtoon into a smartphone vertical-scroll composition. The reference is the edit target and preserves character identity, costume, sword, exact story and anime linework, NOT the old full-width stacked layout. Recompose and redraw. This is a finished raster comic, with all dialogue, HUD and sound lettering integrated. No HTML-like cards, no page border, no equal rectangular rows. Use the composition below: unequal floating inserts, actual same-row pairs, large borderless art fading into white, and purposeful quiet space. A narrative moment does not require its own full-width box. White gaps belong to the comic's timing; do not fill them with scenery or extra panels. Within a pair read RIGHT then LEFT, then down. Keep short-action pairs close; separate anticipation and quiet reactions. Do not rotate Japanese glyphs.
+Preserve the EXACT adopted utterances, HUD rows and sound words below. True vertical Japanese dialogue, upright black manga glyphs, columns right to left, tails to the actual speaker; thought has dots towards the actual head. Allow glyphs about 5.6 percent of total canvas width, even in narrow inserts; reserve room rather than shrinking letters. HUD is horizontal cyan/navy, only in its owner's view. Sounds are outside balloons, near the drawn source. No dialogue does not prohibit specified HUD or sounds. Do not add other text, captions, panel numbers, arrows or watermark.
+Kai: brown hair with right-temple amber streak, amber eyes, ivory rolled sleeves, brown vest, indigo cape, copper cuff on LEFT forearm, bare hands, right-handed, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor, blue tunic and cape, silver/cobalt triangular shield on LEFT arm when specified. ONE steel sword with square brass guard, dark grip and one thin amber inset line. The sword never breaks. Kai made it; Sena tests it before the handover, Kai uses it only after the handover. Modern VR equipment only in the real room. Keep the same courtyard, wooden target, workbench and blue cloth doorway. No added plot, new characters, fire attack, duplicated limbs, black gloves on Kai or later reveals.
+
+Canvas width:height 1:3. Scene 15: あと一撃が出た. Location: 同じ標的への三打目。. Composition takes precedence over the reference's grid: 右上の握る手だけの短い挿入から、斜めの大きな第三打へ。鍔とHUDの小さな挿入の後に広い白い間を置き、最後に右のセナ、左のカイの静かな顔を近くへ置く。五段の全幅矩形にはしない。
+
+Narrative moment 1, in the specified reading order, not a mandatory full-width panel: 上端右、幅55％の握り直す素手の右手だけの挿入。ギュッ。剣一本。下に描く打撃の前の瞬間。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Sound effect EXACT text: ギュッ. Cause: カイが第三打の前に剣の柄を握り直す. Placement: 最上段、握る手に近い暗い空き。指と柄と刃を避ける. Drawn lettering: 小さく締まった黒い描き文字、淡い細縁. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Narrative moment 2, in the specified reading order, not a mandatory full-width panel: 次の大きな斜め枠。カイの第三打が同じ木の標的へ当たる。細い橙の刻線は点灯を保つ。コンは接触点の近く。枠の実際の上下の辺を斜めにし、身体の方向と下への視線をつなぐ。余分な剣、爆発、標的の消滅はない。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Sound effect EXACT text: コン. Cause: 三打目の刃が同じ木の標的へ当たる. Placement: 第二段の既存のコンをそのまま保持. Drawn lettering: 既存の描き文字を保持。新たなコンを重複させない. Outside every speech/thought balloon, no tail. Orientation follows the action, independently of vertical dialogue.
+No unlisted words or sound effects.
+
+Narrative moment 3, in the specified reading order, not a mandatory full-width panel: 打撃の下、左寄せの浅い鍔の接写。無傷の溝と保たれた刃の光。一行だけ斬撃強化作動のHUD。HUDはカイ本人の視界、顔や部品を隠さない。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Player interface, visible to カイ in their own view. Action: 同条件の三打目でも強化が出たことを確認する. Placement: 鍔接写の空いた背景へ短い1行。溝・刃・手を隠さない. EXACT horizontal rows top to bottom: 斬撃強化 作動. Restrained translucent dark navy field, thin cyan borders, softly glowing white/cyan Japanese gothic, generous spacing. No gold ornament, no balloon or tail; do not cover face, hands, blade or vent. These interface rows are independent of dialogue and sound effects.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 4, in the specified reading order, not a mandatory full-width panel: その後に画像高さの約18％の白い無音の間。下段右、幅45％のセナの安堵の顔、出た。の柔らかな発話。背景は白へ柔らかく消す。
+Dialogue/thought only, speaker セナ, voice 柔らかな声. EXACT text: 出た。. Vertical columns RIGHT to LEFT: 出た。.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 5, in the specified reading order, not a mandatory full-width panel: 同じ下段の左、幅50％、セナより少し下げたカイの顔と肩。肩の力が抜け、小さく笑う。よかったの独り言。右手の剣は画面外へ安全に下ろしている。二人の表情へ背景全景を入れない。
+Dialogue/thought only, speaker カイ, voice 小さな声. EXACT text: ……よかった。. Vertical columns RIGHT to LEFT: ……よかった。.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+```
+
+### art/r16-scroll.png
+
+参照：episode-01/art/r13.png。方式：native_scroll_recomposition。
+
+```text
+Use case: illustration-story. Edit the referenced finished Japanese Webtoon into a smartphone vertical-scroll composition. The reference is the edit target and preserves character identity, costume, sword, exact story and anime linework, NOT the old full-width stacked layout. Recompose and redraw. This is a finished raster comic, with all dialogue, HUD and sound lettering integrated. No HTML-like cards, no page border, no equal rectangular rows. Use the composition below: unequal floating inserts, actual same-row pairs, large borderless art fading into white, and purposeful quiet space. A narrative moment does not require its own full-width box. White gaps belong to the comic's timing; do not fill them with scenery or extra panels. Within a pair read RIGHT then LEFT, then down. Keep short-action pairs close; separate anticipation and quiet reactions. Do not rotate Japanese glyphs.
+Preserve the EXACT adopted utterances, HUD rows and sound words below. True vertical Japanese dialogue, upright black manga glyphs, columns right to left, tails to the actual speaker; thought has dots towards the actual head. Allow glyphs about 5.6 percent of total canvas width, even in narrow inserts; reserve room rather than shrinking letters. HUD is horizontal cyan/navy, only in its owner's view. Sounds are outside balloons, near the drawn source. No dialogue does not prohibit specified HUD or sounds. Do not add other text, captions, panel numbers, arrows or watermark.
+Kai: brown hair with right-temple amber streak, amber eyes, ivory rolled sleeves, brown vest, indigo cape, copper cuff on LEFT forearm, bare hands, right-handed, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor, blue tunic and cape, silver/cobalt triangular shield on LEFT arm when specified. ONE steel sword with square brass guard, dark grip and one thin amber inset line. The sword never breaks. Kai made it; Sena tests it before the handover, Kai uses it only after the handover. Modern VR equipment only in the real room. Keep the same courtyard, wooden target, workbench and blue cloth doorway. No added plot, new characters, fire attack, duplicated limbs, black gloves on Kai or later reveals.
+
+Canvas width:height 1:3. Scene 16: 誘いの意味. Location: 同じ試験庭、夕方へ。カイの手に一本の試作剣。. Composition takes precedence over the reference's grid: 上に誘いの一つの広い画面、次の段の右に修理係で？左に一緒に戦いに。短い掛け合いの後は広い白い無音の間。受け止めた目元と、自分の剣を使いたい問いは下に大きく枠なしで現れる。
+
+Narrative moment 1, in the specified reading order, not a mandatory full-width panel: 上の浅い幅85％の画面。セナが盾を左腕へ戻してカイへ向き直り、明日塔へ誘う。剣は素手のカイの右手にある。背景は同じ庭の青い布の扉を少しだけ。
+Dialogue/thought only, speaker セナ, voice 普通の声. EXACT text: 明日、塔に行かない？. Vertical columns RIGHT to LEFT: 明日、 / 塔に / 行かない？.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 2, in the specified reading order, not a mandatory full-width panel: 次の段の右、幅45％のカイの顔と工具袋へ下がる目。修理係で、と短く確認。白い背景、顔を大きく。
+Dialogue/thought only, speaker カイ, voice 普通の声. EXACT text: 修理係で？. Vertical columns RIGHT to LEFT: 修理係で？.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 3, in the specified reading order, not a mandatory full-width panel: 同じ段の左、幅50％のセナの顔と塔の方向を指す右手。一緒に戦いに、と答える。全文を右から左の縦列で読み、同じ段は右のカイの問いから左のセナの返答へ読む。
+Dialogue/thought only, speaker セナ, voice 普通の声. EXACT text: 一緒に、戦いに。. Vertical columns RIGHT to LEFT: 一緒に、 / 戦いに。.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 4, in the specified reading order, not a mandatory full-width panel: 返答の下に高さ約20％の白い無音の間。下にカイの目元の浅い枠なしの挿入。受け止め、目が少し大きくなり、緊張がほどける。吹き出しなし。
+Dialogue: none. No speech or thought balloons. This does not prohibit separately specified interface text or sound effects.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 5, in the specified reading order, not a mandatory full-width panel: 最下端に大きな枠なしのカイの顔と、自分の一本の剣を持つ素手の右手。初めて自分の剣で冒険へ行ける嬉しさ。相手へこの剣で行っていい、と確かめる。背景は白へフェードし、まだ塔へ移動しない。
+Dialogue/thought only, speaker カイ, voice 普通の声. EXACT text: この剣で、行っていい？. Vertical columns RIGHT to LEFT: この剣で、 / 行っていい？.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+```
+
+### art/r16-scroll-order.png
+
+参照：episode-01/art/r16-scroll.png。方式：native_scroll_recomposition。
+
+```text
+Use case: illustration-story. Make ONLY TWO precise corrections to this Japanese Webtoon, preserving every other panel, character, pose, sword, shield, background, all exact utterances, quiet white gaps, borderless fade and canvas dimensions. (1) In the TOP invitation scene, change Kai's dark gloved sword-holding right hand into his BARE SKIN HAND, matching the bare right hand shown at the bottom. Keep the same grip, fingers, brass guard, sleeve and copper wrist armor. No black glove on Kai anywhere. Sena's armored hands stay unchanged. (2) In the MIDDLE SAME-ROW dialogue pair, the RIGHT Kai asks 修理係で？ BEFORE the LEFT Sena answers 一緒に、戦いに。. Move the white balloon with exact 修理係で？ upward into the TOP-RIGHT of Kai's right-hand insert, just to the right of his face. Its first glyph must be at the same height as, or slightly higher than, the first glyph of Sena's answer in the left insert. Add enough pale balloon space if necessary, without changing the pair order or hiding eyes. The tail points to Kai's mouth. Keep the left answer in upright Japanese vertical columns RIGHT to LEFT, EXACT 一緒に、戦いに。; keep the right question upright and vertical, EXACT 修理係で？. Preserve the upper exact 明日、塔に行かない？ and lower exact この剣で、行っていい？ unchanged. Preserve the quiet pause and his silent eye reaction between the paired exchange and the lower question. Do not recompose other parts, shrink lettering, add text, balloons, sounds or extra limbs.
+```
+
+### art/r18-scroll.png
+
+参照：episode-01/art/r18-promise.png。方式：native_scroll_recomposition。
+
+```text
+Use case: illustration-story. Edit the referenced finished Japanese Webtoon into a smartphone vertical-scroll composition. The reference is the edit target and preserves character identity, costume, sword, exact story and anime linework, NOT the old full-width stacked layout. Recompose and redraw. This is a finished raster comic, with all dialogue, HUD and sound lettering integrated. No HTML-like cards, no page border, no equal rectangular rows. Use the composition below: unequal floating inserts, actual same-row pairs, large borderless art fading into white, and purposeful quiet space. A narrative moment does not require its own full-width box. White gaps belong to the comic's timing; do not fill them with scenery or extra panels. Within a pair read RIGHT then LEFT, then down. Keep short-action pairs close; separate anticipation and quiet reactions. Do not rotate Japanese glyphs.
+Preserve the EXACT adopted utterances, HUD rows and sound words below. True vertical Japanese dialogue, upright black manga glyphs, columns right to left, tails to the actual speaker; thought has dots towards the actual head. Allow glyphs about 5.6 percent of total canvas width, even in narrow inserts; reserve room rather than shrinking letters. HUD is horizontal cyan/navy, only in its owner's view. Sounds are outside balloons, near the drawn source. No dialogue does not prohibit specified HUD or sounds. Do not add other text, captions, panel numbers, arrows or watermark.
+Kai: brown hair with right-temple amber streak, amber eyes, ivory rolled sleeves, brown vest, indigo cape, copper cuff on LEFT forearm, bare hands, right-handed, tool pouch. Sena: silver-blonde low ponytail, blue eyes, silver armor, blue tunic and cape, silver/cobalt triangular shield on LEFT arm when specified. ONE steel sword with square brass guard, dark grip and one thin amber inset line. The sword never breaks. Kai made it; Sena tests it before the handover, Kai uses it only after the handover. Modern VR equipment only in the real room. Keep the same courtyard, wooden target, workbench and blue cloth doorway. No added plot, new characters, fire attack, duplicated limbs, black gloves on Kai or later reveals.
+
+Canvas width:height 1:3. Scene 18: 一緒に登る約束. Location: 試験庭、工房と塔が同じ方向に見える。夕方の暖かな光。. Composition takes precedence over the reference's grid: 上端に幅60％の小さなセナの返事。白い余韻を挟み、雲と塔の縦軸から庭に並ぶ二人の背中へ下る、画像下部約70％の一つの枠なしの長い夕景。二つの全幅矩形にしない。
+
+Narrative moment 1, in the specified reading order, not a mandatory full-width panel: 上端右寄せ幅60％、セナの目と優しい小さな笑顔の浅い挿入。カイを画面外左に見てうなずく。うん待ってるの柔らかな発話。背景と輪郭の外側を白へ溶かす。
+Dialogue/thought only, speaker セナ, voice 柔らかな声. EXACT text: うん。待ってる。. Vertical columns RIGHT to LEFT: うん。 / 待ってる。.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+Narrative moment 2, in the specified reading order, not a mandatory full-width panel: 白い間の後、雲と夕空から巨大な塔の縦軸、白石の街、工房の青い布、最後に庭で同じ方向へ並ぶ二人の背中へ下って読む一つの枠なし風景。下のカイの素手の右手に一本の鋼剣、セナの左腕に盾。二人は一度だけ描く。灯りは灯ったまま。カイの小さな決意の言葉は下の彼のそば、冒頭に先出ししない。余韻を残し、停電・敵・次の事件を出さない。
+Dialogue/thought only, speaker カイ, voice 小さな声. EXACT text: ……うん。行く。. Vertical columns RIGHT to LEFT: ……うん。 / 行く。.
+Sound effects: none. 会話・知覚・反応に集中する静かな区間。
+No unlisted words or sound effects.
+
+```

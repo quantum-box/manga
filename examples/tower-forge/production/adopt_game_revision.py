@@ -12,6 +12,8 @@ def write(path,data):
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 
 def main():
+    current=json.loads((ROOT/'episode-01/episode.json').read_text())
+    if current.get('scroll_revision'):raise SystemExit('Scroll revision already adopted; refusing to restore the earlier layout.')
     ep=json.loads((FOLDER/'episode.json').read_text())
     manifest=json.loads((FOLDER/'manifest.json').read_text())
     provenance=json.loads((ROOT/'production/revision-provenance.json').read_text())

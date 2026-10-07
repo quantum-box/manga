@@ -1,7 +1,7 @@
 {
   "date": "2026-10-07",
   "episode": 1,
-  "revision": "game_actions_and_sword_identity_2026_10_07",
+  "revision": "scroll_composition_2026_10_07",
   "viewports": [
     {
       "allLoaded": true,
@@ -13,76 +13,76 @@
         },
         {
           "height": 1170,
-          "top": 1478.7109375
+          "top": 1508.7109375
         },
         {
           "height": 1170,
-          "top": 2748.701171875
+          "top": 2738.7109375
         },
         {
           "height": 1170,
-          "top": 3988.701171875
+          "top": 4008.701171875
         },
         {
           "height": 1170,
-          "top": 5228.701171875
+          "top": 5258.701171875
+        },
+        {
+          "height": 975.244140625,
+          "top": 6528.69140625
         },
         {
           "height": 1170,
-          "top": 6488.701171875
+          "top": 7603.92578125
         },
         {
           "height": 1170,
-          "top": 7728.701171875
+          "top": 8933.92578125
         },
         {
           "height": 1170,
-          "top": 8998.69140625
-        },
-        {
-          "height": 1170,
-          "top": 10288.681640625
+          "top": 10283.92578125
         },
         {
           "height": 1169.453125,
-          "top": 11538.681640625
+          "top": 11543.92578125
         },
         {
           "height": 1170,
-          "top": 12778.134765625
+          "top": 12853.369140625
         },
         {
           "height": 1170,
-          "top": 14028.134765625
+          "top": 14093.369140625
         },
         {
           "height": 1170,
-          "top": 15298.125
+          "top": 15403.359375
+        },
+        {
+          "height": 780,
+          "top": 16633.359375
         },
         {
           "height": 1170,
-          "top": 16568.115234375
+          "top": 18033.349609375
         },
         {
           "height": 1170,
-          "top": 17928.115234375
+          "top": 19443.33984375
         },
         {
           "height": 1170,
-          "top": 19248.115234375
+          "top": 20773.33984375
         },
         {
           "height": 1170,
-          "top": 20588.115234375
-        },
-        {
-          "height": 1170,
-          "top": 21868.10546875
+          "top": 22193.33984375
         }
       ],
       "height": 844,
       "imageCount": 18,
-      "pageHeight": 23154,
+      "pageHeight": 23479,
       "pageWidth": 390,
       "width": 390
     },
@@ -96,76 +96,76 @@
         },
         {
           "height": 1080,
-          "top": 1380.25390625
+          "top": 1407.94921875
         },
         {
           "height": 1080,
-          "top": 2552.55859375
+          "top": 2543.330078125
         },
         {
           "height": 1080,
-          "top": 3697.16796875
+          "top": 3715.634765625
         },
         {
           "height": 1080,
-          "top": 4841.77734375
+          "top": 4869.47265625
+        },
+        {
+          "height": 900.224609375,
+          "top": 6041.77734375
         },
         {
           "height": 1080,
-          "top": 6004.853515625
+          "top": 7034.306640625
         },
         {
           "height": 1080,
-          "top": 7149.462890625
+          "top": 8261.9921875
         },
         {
           "height": 1080,
-          "top": 8321.767578125
-        },
-        {
-          "height": 1080,
-          "top": 9512.529296875
+          "top": 9508.14453125
         },
         {
           "height": 1079.501953125,
-          "top": 10666.3671875
+          "top": 10671.220703125
         },
         {
           "height": 1080,
-          "top": 11810.478515625
+          "top": 11879.951171875
         },
         {
           "height": 1080,
-          "top": 12964.31640625
+          "top": 13024.560546875
         },
         {
           "height": 1080,
-          "top": 14136.62109375
+          "top": 14233.7890625
+        },
+        {
+          "height": 720,
+          "top": 15369.169921875
         },
         {
           "height": 1080,
-          "top": 15308.92578125
+          "top": 16661.474609375
         },
         {
           "height": 1080,
-          "top": 16564.306640625
+          "top": 17963.0078125
         },
         {
           "height": 1080,
-          "top": 17782.763671875
+          "top": 19190.693359375
         },
         {
           "height": 1080,
-          "top": 19019.6875
-        },
-        {
-          "height": 1080,
-          "top": 20201.220703125
+          "top": 20501.455078125
         }
       ],
       "height": 800,
       "imageCount": 18,
-      "pageHeight": 21397,
+      "pageHeight": 21697,
       "pageWidth": 360,
       "width": 360
     }
@@ -173,7 +173,7 @@
   "raster_lettering_visual": "reviewed_at_both_widths",
   "physical_device_tested": false,
   "story_quality_approved_by_user": false,
-  "method": "CUA DOM metrics and live JPEG scene captures; full-reader evidence captured in two contiguous parts per width because one oversized full-page capture was unavailable.",
+  "method": "CUA browser CSS metrics, native JPEG scene captures and contiguous full-reader parts at 390/360; actual in-app scroll of image-reference reader also verified. Embedded/source/native artwork checked separately for byte equality.",
   "visual_review": {
     "reviewer": "model",
     "date": "2026-10-07",
@@ -181,7 +181,7 @@
       390,
       360
     ],
-    "scope": "All 18 adopted scenes captured at both widths; 4 inserted scenes and 4 edited scenes visually reviewed at 390/360, with reused previously reviewed artwork and dialogue preserved.",
+    "scope": "All 18 adopted scenes captured at both CSS widths; all 8 recomposed scenes visually reviewed at both widths; remaining 10 previously reviewed scenes retain their native art and lettering.",
     "limitations": "Browser captures only; no physical device or user approval. Visual legibility is not proof of comprehension or empathy."
   },
   "narrative_review": {
@@ -233,7 +233,7 @@
   "full_reader_captures": [
     {
       "width": 390,
-      "pageHeight": 23154,
+      "pageHeight": 23479,
       "parts": [
         {
           "file": "webtoon-390-part-01.jpg",
@@ -243,13 +243,13 @@
         {
           "file": "webtoon-390-part-02.jpg",
           "y": 12000,
-          "height": 11154
+          "height": 11479
         }
       ]
     },
     {
       "width": 360,
-      "pageHeight": 21397,
+      "pageHeight": 21697,
       "parts": [
         {
           "file": "webtoon-360-part-01.jpg",
@@ -259,7 +259,7 @@
         {
           "file": "webtoon-360-part-02.jpg",
           "y": 12000,
-          "height": 9397
+          "height": 9697
         }
       ]
     }
@@ -282,5 +282,46 @@
       "Sword remains with Sena until handover; Kai then holds it in right bare hand"
     ],
     "limitations": "Browser and model review; no physical device or reader acceptance."
-  }
+  },
+  "scroll_revision": "scroll_composition_2026_10_07",
+  "scroll_review": {
+    "reviewer": "model",
+    "date": "2026-10-07",
+    "widths": [
+      390,
+      360
+    ],
+    "changed_scenes": [
+      2,
+      4,
+      6,
+      8,
+      14,
+      15,
+      16,
+      18
+    ],
+    "checks": [
+      "Borderless tower, street path and sunset scenery lead the eye downward",
+      "Same-row short action and dialogue inserts read right then left",
+      "Two practice strikes grouped before a quiet pause and stopped blade",
+      "Third-strike result follows hesitation and deliberate inter-scene pause",
+      "Successful result precedes a quiet pause and relief",
+      "Invitation question appears before its answer, with quiet eye reaction afterwards",
+      "Exact dialogue, HUD rows and all 18 sound cues retained",
+      "Bare hand, right-hand sword and left-arm shield continuity checked"
+    ],
+    "gap_before_third_strike": [
+      {
+        "width": 390,
+        "gap_px": 620
+      },
+      {
+        "width": 360,
+        "gap_px": 572.3
+      }
+    ],
+    "limitations": "Geometry and model visual review; not physical-device testing or user story-quality approval."
+  },
+  "browser_recovery": "Existing automation tab stopped attaching after page-internal navigation; a new tab in the same in-app browser opened the adopted image-reference reader, and its screenshot and scroll were verified."
 }

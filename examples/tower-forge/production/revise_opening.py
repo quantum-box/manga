@@ -128,8 +128,14 @@ def main():
            '修正の目的は長さそのものではなく、知覚→理解→選択→行動→結果→反応を読者が辿れること。停電は第2話へ送る。\n']
     for i,scene in enumerate(scenes,1):
         scene['id']=f'{i:02d}'; scene['file']=scene.get('file',f'art/r{i:02d}.png')
-        prompt=COMMON+f"\nChapter 1 revised, strip {i}. Image ratio {scene['ratio']}. Scene: {scene['name']}. Place and continuity: {scene['location']}. Purpose: {scene['purpose']}. Exactly {len(scene['panels'])} narrative panels, with unequal sizes as described.\n"
-        board += [f"\n## {i:02d} {scene['name']}\n",f"場所・接続：{scene['location']}\n",f"この区間で理解すること：{scene['purpose']}\n",f"次の間：390px幅で{scene['gap']}px。感情の返答待ち、または場面移動の息継ぎ。\n"]
+        kind='narrative moments (not mandatory full-width panels)' if scene.get('scroll_layout') else 'narrative panels'
+        prompt=COMMON+f"\nChapter 1 revised, strip {i}. Image ratio {scene['ratio']}. Scene: {scene['name']}. Place and continuity: {scene['location']}. Purpose: {scene['purpose']}. Exactly {len(scene['panels'])} {kind}, with unequal sizes as described.\n"
+        if scene.get('scroll_layout'):
+            layout=scene['scroll_layout']
+            prompt+=f"\nScroll composition takes precedence over the reference or default panel grid: {layout['composition']} Reading order: {layout['read_order']} Preserve borderless continuous scenery, same-row pairs and quiet white space; never turn every narrative moment into a full-width rectangle.\n"
+        gap_purpose=scene.get('gap_purpose','感情の返答待ち、または場面移動の息継ぎ')
+        board += [f"\n## {i:02d} {scene['name']}\n",f"場所・接続：{scene['location']}\n",f"この区間で理解すること：{scene['purpose']}\n",f"次の間：390px幅で{scene['gap']}px。{gap_purpose}。\n"]
+        if scene.get('scroll_layout'):board.append('構図：'+scene['scroll_layout']['composition']+'\n')
         for j,panel in enumerate(scene['panels'],1):
             prompt+=f"\nPanel {j}, top to bottom. Artwork, camera, size and main focus: {panel['art']}\n"
             prompt+=render_panel_lettering(panel)
