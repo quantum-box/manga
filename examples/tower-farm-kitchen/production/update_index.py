@@ -89,7 +89,7 @@ next_work = f'第{remaining[0]}話から、残りの作画・スマホ確認・�
 
 | 話 | 計画 | 脚本・絵コンテ | 作画・文字 | 390/360確認 | パッケージ |
 | --- | --- | --- | --- | --- | --- |
-''' + '\n'.join(rows) + f'\n\n次の作業：{next_work}\n\nローカル検証の結果は [delivery.json](delivery.json)。最新HEADのCI・レビューは [続編改稿PR](https://github.com/quantum-box/manga/pulls?q=is%3Apr+head%3Acodex%2Ffarmer-episodes-remake) を正本とする。公開サーバー配信と実機確認は未実施。mainへの取り込みは上記PRの状態を参照。\n\n完成は採用画像を両幅で読み、全文・話者・道具・時間と状態を確認した話だけに付ける。画像生成の限界、未修正の文字、未検証の表示を完了として記録しない。\n')
+''' + '\n'.join(rows) + f'\n\n次の作業：{next_work}\n\nローカル検証の結果は [delivery.json](delivery.json)。最新HEADのCI・レビューは [PR #36](https://github.com/quantum-box/manga/pull/36) を正本とする。公開サーバー配信と実機確認は未実施。mainへの取り込みは上記PRの状態を参照。\n\n完成は採用画像を両幅で読み、全文・話者・道具・時間と状態を確認した話だけに付ける。画像生成の限界、未修正の文字、未検証の表示を完了として記録しない。\n')
 
 continuity = BASE / 'series/continuity.md'
 text = continuity.read_text()

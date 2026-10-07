@@ -25,6 +25,6 @@
 
 次の作業：第11話以降は未制作。240話ロードマップの次の仕事を脚本化する。
 
-ローカル検証の結果は [delivery.json](delivery.json)。最新HEADのCI・レビューは [続編改稿PR](https://github.com/quantum-box/manga/pulls?q=is%3Apr+head%3Acodex%2Ffarmer-episodes-remake) を正本とする。公開サーバー配信と実機確認は未実施。mainへの取り込みは上記PRの状態を参照。
+ローカル検証の結果は [delivery.json](delivery.json)。最新HEADのCI・レビューは [PR #36](https://github.com/quantum-box/manga/pull/36) を正本とする。公開サーバー配信と実機確認は未実施。mainへの取り込みは上記PRの状態を参照。
 
 完成は採用画像を両幅で読み、全文・話者・道具・時間と状態を確認した話だけに付ける。画像生成の限界、未修正の文字、未検証の表示を完了として記録しない。
