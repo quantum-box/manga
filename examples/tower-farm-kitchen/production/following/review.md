@@ -17,3 +17,7 @@ All ten native 390x844 and 360x800 scroll sheets and six protected cue/pause/ans
 ## Episode 14
 
 All twelve native phone scroll sheets and six protected cue/pause/answer captures reviewed at 390x844 and 360x800. Eight unchanged originals form 38 CSS windows. Plain wooden votes stay distinct from the later advance coin pouch. Anonymous travelers are distinct from Kou and Rodel; the cold-memory inset is blue-lit. No premature healing or buffs. Guild interior, outdoor guild lane, then diner doorway proceed in order. Sera remains silent. Dark-clothing detector cuts replaced with actual gutters; diagonal final scene retained. The 920px protected pause separates the choice announcement from their winning dish. All dialogue and speaker identities passed.
+
+## 第15話
+
+原画8枚と390×844・360×800の通読画像全10枚を実見。レオンを灰髪・紺衣の本人へ修正。ロウとレオンの跨ぐ吹き出し、エルナの斜めコマは一つの表示窓に保持。道具列の下端は原画1510pxの無地の境界へ修正し、再出力全10枚を確認。コウの怖さ、役割分担、店と畑の留守、49日目の出発の順を確認。原画への画素加工なし。
