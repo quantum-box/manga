@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Expose only the requested chapter after its original and phone review passes."""
-import json,re,sys,html,time
+import json,re,sys,html,time,hashlib
 from urllib.request import urlopen,Request
 from pathlib import Path
 BASE=Path(__file__).resolve().parents[2]
@@ -25,6 +25,14 @@ def update(n):
  validation=json.loads((d/'validation.json').read_text())
  for key in ('artworkTextReview','continuityReview','windowBoundaryReview','scrollPacingVisualReview'):
   if not str(validation.get(key,'')).startswith('passed'):raise ValueError(f'Unreviewed chapter {n}: {key}')
+ for filename in ('manifest.json','index.html','reader.html','reader.css'):
+  actual=hashlib.sha256((d/filename).read_bytes()).hexdigest()
+  if validation.get('packagedFilesSHA256',{}).get(filename)!=actual:raise ValueError(f'Stale phone validation: {filename}')
+ manifest=json.loads((d/'manifest.json').read_text())
+ for source in manifest['sources']:
+  actual=hashlib.sha256((d/source['art']).read_bytes()).hexdigest()
+  if actual!=source['sha256'] or any(v.get('originalArtworkHashes',{}).get(source['id'])!=actual for v in validation['viewports']):raise ValueError('Stale artwork validation')
+ if {v['innerWidth'] for v in validation['viewports']}!={390,360}:raise ValueError('Missing phone width')
  for filename in ('index.html','reader.html','manifest.json'):
   if not (d/filename).is_file():raise ValueError(f'Missing {filename}')
  p=ROOT/'content/catalog.json';c=json.loads(p.read_text());s=next(x for x in c if x['id']=='tower-farm-kitchen')

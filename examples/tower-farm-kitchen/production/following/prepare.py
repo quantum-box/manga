@@ -18,6 +18,16 @@ No invented inscriptions, titles, episode numbers, production labels, or extra d
 '''
 
 
+def positive_mention(name, description):
+    for match in re.finditer(r'\b'+name+r'\b', description):
+        before=description[max(0,match.start()-25):match.start()]
+        after=description[match.end():match.end()+25]
+        if re.search(r'(?:never|not|no|without|unlike)\s+$',before,re.I):continue
+        if re.match(r'\s+(?:is\s+)?absent\b',after,re.I):continue
+        return True
+    return False
+
+
 def prepare(number):
     episode = next(e for e in json.loads((HERE / 'episodes.json').read_text()) if e['number'] == number)
     directory = BASE / f'episode-{number:02d}'
@@ -30,7 +40,7 @@ def prepare(number):
         if not prompt_path.exists():
             voice_names={'コウ':'Kou','エルナ':'Elna','バルト':'Balt','イリス':'Iris','レオン':'Leon','ロウ':'Row','セラ':'Sera','ロデル':'Rodel'}
             spoken={name for jp,name in voice_names.items() if any(who.startswith(jp) for who,_ in dialogue)}
-            names=[name for name in voice_names.values() if name in spoken or re.search(r'\b'+name+r'\b', description)]
+            names=[name for name in voice_names.values() if name in spoken or positive_mention(name, description)]
             cast='VISIBLE NAMED CAST: '+(', '.join(names) if names else 'none')+'. Do not introduce any other named character from reference sheets. Anonymous extras are only those specified in the sequence.'
             parts = [STYLE, cast, f'Current time: {episode["time"]}.',
                      f'CURRENT SEQUENCE ONLY: {description}',
