@@ -2,12 +2,23 @@
   "number": 5,
   "title": "土は、点数じゃない",
   "time": "13〜17日目",
+  "change": "黄化を単なる不足と決めず、土と水を分析。肥料の過剰と塩類の問題を学び、追加施肥を止める。",
   "state": "回復した区画と黄化区画は別に採土。ECは同じ方法内で比較。未知の魔物粉は食用農地へ入れない。",
-  "scenes": [
+  "revision": "2026-10-07-following-remake",
+  "sources": [
     {
-      "id": "01-yellow",
-      "art": "art/01-yellow.png",
+      "id": "01-remake-yellow",
+      "art": "art/01-remake-yellow.png",
+      "description": "Balt and Kou beside one SMALL seedling section with yellowing leaves, nearby section greener; Balt feels leaf then checks soil, no idiot expression or huge mature forest. Closed fertilizer sack behind them.",
       "dialogue": [
+        [
+          "コウ",
+          "この列だけ、黄色い。"
+        ],
+        [
+          "エルナ",
+          "肥料を、増やした方がいい？"
+        ],
         [
           "バルト",
           "足りない色とは、限らん。"
@@ -18,20 +29,25 @@
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 80,
-      "prompt": "generation/01-yellow.prompt.txt",
-      "description": "Balt and Kou beside one SMALL seedling section with yellowing leaves, nearby section greener; Balt feels leaf then checks soil, no idiot expression or huge mature forest. Closed fertilizer sack behind them.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "84d9bda53aced78fdc4ddc1f56fceb938f453a191befdb23656559d67d30c29d"
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-yellow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5c7bf83f3fe0a582e92daf0f0dd6e8a6aa23497d6011da9a44cf10518096224a"
     },
     {
-      "id": "02-samples",
-      "art": "art/02-samples-reading-order.png",
+      "id": "02-remake-samples",
+      "art": "art/02-remake-samples.png",
+      "description": "Three closeups: Kou collects soil at matched depth in affected section, Balt collects normal section separately, two sealed sample jars and a third water sample kept apart. Jars have simple colored twine, no readable labels.",
       "dialogue": [
         [
           "コウ",
           "同じ採り方で、比べよう。"
+        ],
+        [
+          "エルナ",
+          "この紐で、区画を分けるね。"
         ],
         [
           "バルト",
@@ -39,22 +55,17 @@
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 75,
-      "prompt": "generation/02-samples.prompt.txt",
-      "description": "Three closeups: Kou collects soil at matched depth in affected section, Balt collects normal section separately, two sealed sample jars and a third water sample kept apart. Jars have simple colored twine, no readable labels.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "7b1f7c7e108694ad2b4e0d1d5daeb7f526bced656d4ebedd674719c3260c3dcf",
-      "edits": [
-        {
-          "prompt": "generation/02-samples-reading-order.prompt.txt",
-          "record": "generation/02-samples-reading-order.json"
-        }
-      ]
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-samples.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c081ca6cd8c8247e79c6cdb10f769422be2380115b8e9348cf3dc491b098bc52"
     },
     {
-      "id": "03-calibration",
-      "art": "art/03-calibration-speaker-fixed.png",
+      "id": "03-remake-calibration",
+      "art": "art/03-remake-calibration.png",
+      "description": "Iris at workshop table with fantasy conductivity probe in glass reference vessel, mechanical needle gauge and standard sample, Kou observes. No digital electronics. Two panels showing reference then sample, separate test steps, no invented numeric text.",
       "dialogue": [
         [
           "イリス",
@@ -63,53 +74,59 @@
         [
           "コウ",
           "器具の基準も、確かめよう。"
+        ],
+        [
+          "イリス",
+          "同じ深さ、同じ量でね。"
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 90,
-      "prompt": "generation/03-calibration.prompt.txt",
-      "description": "Iris at workshop table with fantasy conductivity probe in glass reference vessel, mechanical needle gauge and standard sample, Kou observes. No digital electronics. Two panels showing reference then sample, separate test steps, no invented numeric text.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "a4156c3ef66e159c09505ae0c695880cbd98fa0ec5e4a951286f64c1c2bf6132",
-      "edits": [
-        {
-          "prompt": "generation/03-calibration-speaker-fixed.prompt.txt",
-          "record": "generation/03-calibration-speaker-fixed.json"
-        }
-      ]
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-calibration.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cafd8ff38bf0441b67d5f25bda90c47a62ae550a0fb392955861faa6cea74420"
     },
     {
-      "id": "04-salts",
-      "art": "art/04-salts-instrument-fixed.png",
+      "id": "04-remake-salts",
+      "art": "art/04-remake-salts.png",
+      "description": "Medium Iris interprets matched samples, narrow closeup high versus lower needle position WITHOUT readable numbers, lower Elna worried holding closed fertilizer sack. No visible salt crystals sprouting from plant or magical x-ray.",
       "dialogue": [
         [
           "イリス",
           "この区画は、塩類が多い。"
         ],
         [
+          "エルナ",
+          "肥料なのに、苦しくなるの？"
+        ],
+        [
           "コウ",
           "肥料にも、塩が含まれるんだ。"
+        ],
+        [
+          "コウ",
+          "色だけで、足しちゃいけなかった。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 90,
-      "prompt": "generation/04-salts.prompt.txt",
-      "description": "Medium Iris interprets matched samples, narrow closeup high versus lower needle position WITHOUT readable numbers, lower Elna worried holding closed fertilizer sack. No visible salt crystals sprouting from plant or magical x-ray.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "fd2390f0e757c3259df9ad1bfd89b5ad671ab9c30d38c7bcca9bd8016b6d254d",
-      "edits": [
-        {
-          "prompt": "generation/04-salts-instrument-fixed.prompt.txt",
-          "record": "generation/04-salts-instrument-fixed.json"
-        }
-      ]
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-salts.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4600ebbd3042042ae7eca1234f32ab81e8c26cf78014e4a838707021b2859d2e"
     },
     {
-      "id": "05-outlet",
-      "art": "art/05-outlet.png",
+      "id": "05-remake-outlet",
+      "art": "art/05-remake-outlet.png",
+      "description": "Kou and Balt trace drainage outlet safely toward common channel, hand on site map with simple arrows, quiet conversation. Do not flush water through bed in this scene: they are checking capacity and destination first.",
       "dialogue": [
+        [
+          "エルナ",
+          "水で、薄められない？"
+        ],
         [
           "コウ",
           "薄める前に、排水先を調べる。"
@@ -120,16 +137,17 @@
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 80,
-      "prompt": "generation/05-outlet.prompt.txt",
-      "description": "Kou and Balt trace drainage outlet safely toward common channel, hand on site map with simple arrows, quiet conversation. Do not flush water through bed in this scene: they are checking capacity and destination first.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "bddb717b9ee943d133233fe292075bcb0e9c3b29a26b27b0de6d8266b90e963e"
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-outlet.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "26ce294729f3a7d2ca8924aa3421e720e9fc52a809bf1266a1030cce6c3a1861"
     },
     {
-      "id": "06-unknown-material",
-      "art": "art/06-unknown-material.png",
+      "id": "06-remake-unknown-material",
+      "art": "art/06-remake-unknown-material.png",
+      "description": "Plain local trader offers CLOSED sack of powdered monster residue on utility lane far from food beds, Kou declines immediate use, Balt serious nearby. No corpse, gore, spreading powder, or instant fertilizer miracle. Three unequal panels.",
       "dialogue": [
         [
           "商人",
@@ -140,21 +158,26 @@
           "何が入ってるか、まだ分からない。"
         ],
         [
+          "商人",
+          "今日は、買わないのか？"
+        ],
+        [
           "バルト",
           "試すなら、食用の畑と分けろ。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 70,
-      "prompt": "generation/06-unknown-material.prompt.txt",
-      "description": "Plain local trader offers CLOSED sack of powdered monster residue on utility lane far from food beds, Kou declines immediate use, Balt serious nearby. No corpse, gore, spreading powder, or instant fertilizer miracle. Three unequal panels.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "847ea54535af9f548b4053904849d039415db098ddde55381cbda3a683e9d070"
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-unknown-material.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "66500dcc812edd5f7a56f6b9bcb7226cce95bc90a7951b0a7fcdda5d9074b3f7"
     },
     {
-      "id": "07-stop-feeding",
-      "art": "art/07-stop-feeding.png",
+      "id": "07-remake-stop-feeding",
+      "art": "art/07-remake-stop-feeding.png",
+      "description": "Closeup fertilizer sack stored closed on shelf, hand marks dated observation in notebook; lower Elna and Kou inspect unchanged seedling section and decide to wait. No instant green transformation, no flooding.",
       "dialogue": [
         [
           "コウ",
@@ -162,20 +185,29 @@
         ],
         [
           "エルナ",
+          "何もしないのは、不安だね。"
+        ],
+        [
+          "コウ",
+          "見に来る。記録は、止めない。"
+        ],
+        [
+          "エルナ",
           "変わるまで、記録しよう。"
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 120,
-      "prompt": "generation/07-stop-feeding.prompt.txt",
-      "description": "Closeup fertilizer sack stored closed on shelf, hand marks dated observation in notebook; lower Elna and Kou inspect unchanged seedling section and decide to wait. No instant green transformation, no flooding.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "0150ce7b5272379f76afb794d20bd9921fdf782f2967ad2de22882e93e260b34"
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-stop-feeding.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8dc1eab3efffb5a651a71a8d50222f4dffe92b6f190d14f3937d967564613de8"
     },
     {
-      "id": "08-open-diner",
-      "art": "art/08-open-diner.png",
+      "id": "08-remake-open-diner",
+      "art": "art/08-remake-open-diner.png",
+      "description": "Tall soft transition from small slow-growing seedlings under tower light to diner serving window at dusk, Elna lights lantern, Kou brings PURCHASED basket. Warm anxious faces, continuous stable garden geography.",
       "dialogue": [
         [
           "エルナ",
@@ -183,16 +215,1048 @@
         ],
         [
           "コウ",
+          "今日は、仕入れた葉を使おう。"
+        ],
+        [
+          "エルナ",
+          "お客さんのお腹は、待てないから。"
+        ],
+        [
+          "コウ",
           "畑だけじゃ、暮らせないな。"
         ]
       ],
       "layout": "continuous",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-open-diner.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "af29b6ea871a16491fcd942a0eff05c4af1a7f3a8e34befadd84dc5e0cf9b353"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-remake-yellow-window-01",
+      "art": "art/01-remake-yellow.png",
+      "description": "Balt and Kou beside one SMALL seedling section with yellowing leaves, nearby section greener; Balt feels leaf then checks soil, no idiot expression or huge mature forest. Closed fertilizer sack behind them.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 50,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-yellow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5c7bf83f3fe0a582e92daf0f0dd6e8a6aa23497d6011da9a44cf10518096224a",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 546
+      },
+      "sourceId": "01-remake-yellow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-yellow-window-02",
+      "art": "art/01-remake-yellow.png",
+      "description": "Balt and Kou beside one SMALL seedling section with yellowing leaves, nearby section greener; Balt feels leaf then checks soil, no idiot expression or huge mature forest. Closed fertilizer sack behind them.",
+      "dialogue": [
+        [
+          "コウ",
+          "この列だけ、黄色い。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-yellow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5c7bf83f3fe0a582e92daf0f0dd6e8a6aa23497d6011da9a44cf10518096224a",
+      "crop": {
+        "x": 0,
+        "y": 546,
+        "width": 724,
+        "height": 294
+      },
+      "sourceId": "01-remake-yellow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-yellow-window-03",
+      "art": "art/01-remake-yellow.png",
+      "description": "Balt and Kou beside one SMALL seedling section with yellowing leaves, nearby section greener; Balt feels leaf then checks soil, no idiot expression or huge mature forest. Closed fertilizer sack behind them.",
+      "dialogue": [
+        [
+          "エルナ",
+          "肥料を、増やした方がいい？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-yellow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5c7bf83f3fe0a582e92daf0f0dd6e8a6aa23497d6011da9a44cf10518096224a",
+      "crop": {
+        "x": 0,
+        "y": 840,
+        "width": 724,
+        "height": 290
+      },
+      "sourceId": "01-remake-yellow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-yellow-window-04",
+      "art": "art/01-remake-yellow.png",
+      "description": "Balt and Kou beside one SMALL seedling section with yellowing leaves, nearby section greener; Balt feels leaf then checks soil, no idiot expression or huge mature forest. Closed fertilizer sack behind them.",
+      "dialogue": [
+        [
+          "バルト",
+          "足りない色とは、限らん。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 260,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-yellow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5c7bf83f3fe0a582e92daf0f0dd6e8a6aa23497d6011da9a44cf10518096224a",
+      "crop": {
+        "x": 0,
+        "y": 1130,
+        "width": 724,
+        "height": 313
+      },
+      "sourceId": "01-remake-yellow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-yellow-window-05",
+      "art": "art/01-remake-yellow.png",
+      "description": "Balt and Kou beside one SMALL seedling section with yellowing leaves, nearby section greener; Balt feels leaf then checks soil, no idiot expression or huge mature forest. Closed fertilizer sack behind them.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-yellow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5c7bf83f3fe0a582e92daf0f0dd6e8a6aa23497d6011da9a44cf10518096224a",
+      "crop": {
+        "x": 0,
+        "y": 1443,
+        "width": 724,
+        "height": 200
+      },
+      "sourceId": "01-remake-yellow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-yellow-window-06",
+      "art": "art/01-remake-yellow.png",
+      "description": "Balt and Kou beside one SMALL seedling section with yellowing leaves, nearby section greener; Balt feels leaf then checks soil, no idiot expression or huge mature forest. Closed fertilizer sack behind them.",
+      "dialogue": [
+        [
+          "コウ",
+          "水と土を、別々に調べたい。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-yellow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5c7bf83f3fe0a582e92daf0f0dd6e8a6aa23497d6011da9a44cf10518096224a",
+      "crop": {
+        "x": 0,
+        "y": 1643,
+        "width": 724,
+        "height": 225
+      },
+      "sourceId": "01-remake-yellow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-yellow-window-07",
+      "art": "art/01-remake-yellow.png",
+      "description": "Balt and Kou beside one SMALL seedling section with yellowing leaves, nearby section greener; Balt feels leaf then checks soil, no idiot expression or huge mature forest. Closed fertilizer sack behind them.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-yellow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "5c7bf83f3fe0a582e92daf0f0dd6e8a6aa23497d6011da9a44cf10518096224a",
+      "crop": {
+        "x": 0,
+        "y": 1868,
+        "width": 724,
+        "height": 304
+      },
+      "sourceId": "01-remake-yellow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-samples-window-01",
+      "art": "art/02-remake-samples.png",
+      "description": "Three closeups: Kou collects soil at matched depth in affected section, Balt collects normal section separately, two sealed sample jars and a third water sample kept apart. Jars have simple colored twine, no readable labels.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 90,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-samples.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c081ca6cd8c8247e79c6cdb10f769422be2380115b8e9348cf3dc491b098bc52",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 490
+      },
+      "sourceId": "02-remake-samples",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-samples-window-02",
+      "art": "art/02-remake-samples.png",
+      "description": "Three closeups: Kou collects soil at matched depth in affected section, Balt collects normal section separately, two sealed sample jars and a third water sample kept apart. Jars have simple colored twine, no readable labels.",
+      "dialogue": [
+        [
+          "コウ",
+          "同じ採り方で、比べよう。"
+        ]
+      ],
+      "layout": "detail",
       "pauseAt390": 180,
-      "prompt": "generation/08-open-diner.prompt.txt",
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-samples.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c081ca6cd8c8247e79c6cdb10f769422be2380115b8e9348cf3dc491b098bc52",
+      "crop": {
+        "x": 0,
+        "y": 490,
+        "width": 724,
+        "height": 612
+      },
+      "sourceId": "02-remake-samples",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-samples-window-03",
+      "art": "art/02-remake-samples.png",
+      "description": "Three closeups: Kou collects soil at matched depth in affected section, Balt collects normal section separately, two sealed sample jars and a third water sample kept apart. Jars have simple colored twine, no readable labels.",
+      "dialogue": [
+        [
+          "エルナ",
+          "この紐で、区画を分けるね。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 60,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-samples.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c081ca6cd8c8247e79c6cdb10f769422be2380115b8e9348cf3dc491b098bc52",
+      "crop": {
+        "x": 0,
+        "y": 1102,
+        "width": 724,
+        "height": 404
+      },
+      "sourceId": "02-remake-samples",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-samples-window-04",
+      "art": "art/02-remake-samples.png",
+      "description": "Three closeups: Kou collects soil at matched depth in affected section, Balt collects normal section separately, two sealed sample jars and a third water sample kept apart. Jars have simple colored twine, no readable labels.",
+      "dialogue": [
+        [
+          "バルト",
+          "良い土と、混ぜるなよ。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-samples.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c081ca6cd8c8247e79c6cdb10f769422be2380115b8e9348cf3dc491b098bc52",
+      "crop": {
+        "x": 0,
+        "y": 1506,
+        "width": 724,
+        "height": 666
+      },
+      "sourceId": "02-remake-samples",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-calibration-window-01",
+      "art": "art/03-remake-calibration.png",
+      "description": "Iris at workshop table with fantasy conductivity probe in glass reference vessel, mechanical needle gauge and standard sample, Kou observes. No digital electronics. Two panels showing reference then sample, separate test steps, no invented numeric text.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 45,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-calibration.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cafd8ff38bf0441b67d5f25bda90c47a62ae550a0fb392955861faa6cea74420",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 427
+      },
+      "sourceId": "03-remake-calibration",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-calibration-window-02",
+      "art": "art/03-remake-calibration.png",
+      "description": "Iris at workshop table with fantasy conductivity probe in glass reference vessel, mechanical needle gauge and standard sample, Kou observes. No digital electronics. Two panels showing reference then sample, separate test steps, no invented numeric text.",
+      "dialogue": [
+        [
+          "イリス",
+          "測り方が違えば、数字も違う。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 24,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-calibration.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cafd8ff38bf0441b67d5f25bda90c47a62ae550a0fb392955861faa6cea74420",
+      "crop": {
+        "x": 0,
+        "y": 427,
+        "width": 724,
+        "height": 490
+      },
+      "sourceId": "03-remake-calibration",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-calibration-window-03",
+      "art": "art/03-remake-calibration.png",
+      "description": "Iris at workshop table with fantasy conductivity probe in glass reference vessel, mechanical needle gauge and standard sample, Kou observes. No digital electronics. Two panels showing reference then sample, separate test steps, no invented numeric text.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 130,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-calibration.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cafd8ff38bf0441b67d5f25bda90c47a62ae550a0fb392955861faa6cea74420",
+      "crop": {
+        "x": 0,
+        "y": 917,
+        "width": 724,
+        "height": 318
+      },
+      "sourceId": "03-remake-calibration",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-calibration-window-04",
+      "art": "art/03-remake-calibration.png",
+      "description": "Iris at workshop table with fantasy conductivity probe in glass reference vessel, mechanical needle gauge and standard sample, Kou observes. No digital electronics. Two panels showing reference then sample, separate test steps, no invented numeric text.",
+      "dialogue": [
+        [
+          "コウ",
+          "器具の基準も、確かめよう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 910,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-calibration.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cafd8ff38bf0441b67d5f25bda90c47a62ae550a0fb392955861faa6cea74420",
+      "crop": {
+        "x": 0,
+        "y": 1235,
+        "width": 724,
+        "height": 367
+      },
+      "sourceId": "03-remake-calibration",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-calibration-window-05",
+      "art": "art/03-remake-calibration.png",
+      "description": "Iris at workshop table with fantasy conductivity probe in glass reference vessel, mechanical needle gauge and standard sample, Kou observes. No digital electronics. Two panels showing reference then sample, separate test steps, no invented numeric text.",
+      "dialogue": [
+        [
+          "イリス",
+          "同じ深さ、同じ量でね。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-calibration.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "cafd8ff38bf0441b67d5f25bda90c47a62ae550a0fb392955861faa6cea74420",
+      "crop": {
+        "x": 0,
+        "y": 1602,
+        "width": 724,
+        "height": 570
+      },
+      "sourceId": "03-remake-calibration",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-salts-window-01",
+      "art": "art/04-remake-salts.png",
+      "description": "Medium Iris interprets matched samples, narrow closeup high versus lower needle position WITHOUT readable numbers, lower Elna worried holding closed fertilizer sack. No visible salt crystals sprouting from plant or magical x-ray.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 65,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-salts.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4600ebbd3042042ae7eca1234f32ab81e8c26cf78014e4a838707021b2859d2e",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 491
+      },
+      "sourceId": "04-remake-salts",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-salts-window-02",
+      "art": "art/04-remake-salts.png",
+      "description": "Medium Iris interprets matched samples, narrow closeup high versus lower needle position WITHOUT readable numbers, lower Elna worried holding closed fertilizer sack. No visible salt crystals sprouting from plant or magical x-ray.",
+      "dialogue": [
+        [
+          "イリス",
+          "この区画は、塩類が多い。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 200,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-salts.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4600ebbd3042042ae7eca1234f32ab81e8c26cf78014e4a838707021b2859d2e",
+      "crop": {
+        "x": 0,
+        "y": 491,
+        "width": 724,
+        "height": 439
+      },
+      "sourceId": "04-remake-salts",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-salts-window-03",
+      "art": "art/04-remake-salts.png",
+      "description": "Medium Iris interprets matched samples, narrow closeup high versus lower needle position WITHOUT readable numbers, lower Elna worried holding closed fertilizer sack. No visible salt crystals sprouting from plant or magical x-ray.",
+      "dialogue": [
+        [
+          "エルナ",
+          "肥料なのに、苦しくなるの？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-salts.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4600ebbd3042042ae7eca1234f32ab81e8c26cf78014e4a838707021b2859d2e",
+      "crop": {
+        "x": 0,
+        "y": 930,
+        "width": 724,
+        "height": 283
+      },
+      "sourceId": "04-remake-salts",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-salts-window-04",
+      "art": "art/04-remake-salts.png",
+      "description": "Medium Iris interprets matched samples, narrow closeup high versus lower needle position WITHOUT readable numbers, lower Elna worried holding closed fertilizer sack. No visible salt crystals sprouting from plant or magical x-ray.",
+      "dialogue": [
+        [
+          "コウ",
+          "肥料にも、塩が含まれるんだ。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 340,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-salts.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4600ebbd3042042ae7eca1234f32ab81e8c26cf78014e4a838707021b2859d2e",
+      "crop": {
+        "x": 0,
+        "y": 1213,
+        "width": 724,
+        "height": 365
+      },
+      "sourceId": "04-remake-salts",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-salts-window-05",
+      "art": "art/04-remake-salts.png",
+      "description": "Medium Iris interprets matched samples, narrow closeup high versus lower needle position WITHOUT readable numbers, lower Elna worried holding closed fertilizer sack. No visible salt crystals sprouting from plant or magical x-ray.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 130,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-salts.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4600ebbd3042042ae7eca1234f32ab81e8c26cf78014e4a838707021b2859d2e",
+      "crop": {
+        "x": 0,
+        "y": 1578,
+        "width": 724,
+        "height": 193
+      },
+      "sourceId": "04-remake-salts",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-salts-window-06",
+      "art": "art/04-remake-salts.png",
+      "description": "Medium Iris interprets matched samples, narrow closeup high versus lower needle position WITHOUT readable numbers, lower Elna worried holding closed fertilizer sack. No visible salt crystals sprouting from plant or magical x-ray.",
+      "dialogue": [
+        [
+          "コウ",
+          "色だけで、足しちゃいけなかった。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-salts.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4600ebbd3042042ae7eca1234f32ab81e8c26cf78014e4a838707021b2859d2e",
+      "crop": {
+        "x": 0,
+        "y": 1771,
+        "width": 724,
+        "height": 401
+      },
+      "sourceId": "04-remake-salts",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-outlet-window-01",
+      "art": "art/05-remake-outlet.png",
+      "description": "Kou and Balt trace drainage outlet safely toward common channel, hand on site map with simple arrows, quiet conversation. Do not flush water through bed in this scene: they are checking capacity and destination first.",
+      "dialogue": [
+        [
+          "エルナ",
+          "水で、薄められない？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 40,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-outlet.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "26ce294729f3a7d2ca8924aa3421e720e9fc52a809bf1266a1030cce6c3a1861",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 605
+      },
+      "sourceId": "05-remake-outlet",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-outlet-window-02",
+      "art": "art/05-remake-outlet.png",
+      "description": "Kou and Balt trace drainage outlet safely toward common channel, hand on site map with simple arrows, quiet conversation. Do not flush water through bed in this scene: they are checking capacity and destination first.",
+      "dialogue": [
+        [
+          "コウ",
+          "薄める前に、排水先を調べる。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-outlet.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "26ce294729f3a7d2ca8924aa3421e720e9fc52a809bf1266a1030cce6c3a1861",
+      "crop": {
+        "x": 0,
+        "y": 605,
+        "width": 724,
+        "height": 312
+      },
+      "sourceId": "05-remake-outlet",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-outlet-window-03",
+      "art": "art/05-remake-outlet.png",
+      "description": "Kou and Balt trace drainage outlet safely toward common channel, hand on site map with simple arrows, quiet conversation. Do not flush water through bed in this scene: they are checking capacity and destination first.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 160,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-outlet.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "26ce294729f3a7d2ca8924aa3421e720e9fc52a809bf1266a1030cce6c3a1861",
+      "crop": {
+        "x": 0,
+        "y": 917,
+        "width": 724,
+        "height": 340
+      },
+      "sourceId": "05-remake-outlet",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-outlet-window-04",
+      "art": "art/05-remake-outlet.png",
+      "description": "Kou and Balt trace drainage outlet safely toward common channel, hand on site map with simple arrows, quiet conversation. Do not flush water through bed in this scene: they are checking capacity and destination first.",
+      "dialogue": [
+        [
+          "バルト",
+          "流した分は、消えんからな。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 90,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-outlet.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "26ce294729f3a7d2ca8924aa3421e720e9fc52a809bf1266a1030cce6c3a1861",
+      "crop": {
+        "x": 0,
+        "y": 1257,
+        "width": 724,
+        "height": 332
+      },
+      "sourceId": "05-remake-outlet",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-outlet-window-05",
+      "art": "art/05-remake-outlet.png",
+      "description": "Kou and Balt trace drainage outlet safely toward common channel, hand on site map with simple arrows, quiet conversation. Do not flush water through bed in this scene: they are checking capacity and destination first.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-outlet.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "26ce294729f3a7d2ca8924aa3421e720e9fc52a809bf1266a1030cce6c3a1861",
+      "crop": {
+        "x": 0,
+        "y": 1589,
+        "width": 724,
+        "height": 583
+      },
+      "sourceId": "05-remake-outlet",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-unknown-material-window-01",
+      "art": "art/06-remake-unknown-material.png",
+      "description": "Plain local trader offers CLOSED sack of powdered monster residue on utility lane far from food beds, Kou declines immediate use, Balt serious nearby. No corpse, gore, spreading powder, or instant fertilizer miracle. Three unequal panels.",
+      "dialogue": [
+        [
+          "商人",
+          "魔物の粉なら、効くぞ。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 160,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-unknown-material.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "66500dcc812edd5f7a56f6b9bcb7226cce95bc90a7951b0a7fcdda5d9074b3f7",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 656
+      },
+      "sourceId": "06-remake-unknown-material",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-unknown-material-window-02",
+      "art": "art/06-remake-unknown-material.png",
+      "description": "Plain local trader offers CLOSED sack of powdered monster residue on utility lane far from food beds, Kou declines immediate use, Balt serious nearby. No corpse, gore, spreading powder, or instant fertilizer miracle. Three unequal panels.",
+      "dialogue": [
+        [
+          "コウ",
+          "何が入ってるか、まだ分からない。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 240,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-unknown-material.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "66500dcc812edd5f7a56f6b9bcb7226cce95bc90a7951b0a7fcdda5d9074b3f7",
+      "crop": {
+        "x": 0,
+        "y": 656,
+        "width": 724,
+        "height": 380
+      },
+      "sourceId": "06-remake-unknown-material",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-unknown-material-window-03",
+      "art": "art/06-remake-unknown-material.png",
+      "description": "Plain local trader offers CLOSED sack of powdered monster residue on utility lane far from food beds, Kou declines immediate use, Balt serious nearby. No corpse, gore, spreading powder, or instant fertilizer miracle. Three unequal panels.",
+      "dialogue": [
+        [
+          "商人",
+          "今日は、買わないのか？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-unknown-material.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "66500dcc812edd5f7a56f6b9bcb7226cce95bc90a7951b0a7fcdda5d9074b3f7",
+      "crop": {
+        "x": 0,
+        "y": 1036,
+        "width": 724,
+        "height": 394
+      },
+      "sourceId": "06-remake-unknown-material",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-unknown-material-window-04",
+      "art": "art/06-remake-unknown-material.png",
+      "description": "Plain local trader offers CLOSED sack of powdered monster residue on utility lane far from food beds, Kou declines immediate use, Balt serious nearby. No corpse, gore, spreading powder, or instant fertilizer miracle. Three unequal panels.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 190,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-unknown-material.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "66500dcc812edd5f7a56f6b9bcb7226cce95bc90a7951b0a7fcdda5d9074b3f7",
+      "crop": {
+        "x": 0,
+        "y": 1430,
+        "width": 724,
+        "height": 275
+      },
+      "sourceId": "06-remake-unknown-material",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-unknown-material-window-05",
+      "art": "art/06-remake-unknown-material.png",
+      "description": "Plain local trader offers CLOSED sack of powdered monster residue on utility lane far from food beds, Kou declines immediate use, Balt serious nearby. No corpse, gore, spreading powder, or instant fertilizer miracle. Three unequal panels.",
+      "dialogue": [
+        [
+          "バルト",
+          "試すなら、食用の畑と分けろ。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-unknown-material.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "66500dcc812edd5f7a56f6b9bcb7226cce95bc90a7951b0a7fcdda5d9074b3f7",
+      "crop": {
+        "x": 0,
+        "y": 1705,
+        "width": 724,
+        "height": 467
+      },
+      "sourceId": "06-remake-unknown-material",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-stop-feeding-window-01",
+      "art": "art/07-remake-stop-feeding.png",
+      "description": "Closeup fertilizer sack stored closed on shelf, hand marks dated observation in notebook; lower Elna and Kou inspect unchanged seedling section and decide to wait. No instant green transformation, no flooding.",
+      "dialogue": [
+        [
+          "コウ",
+          "今日は、足すのを止める。"
+        ],
+        [
+          "エルナ",
+          "何もしないのは、不安だね。"
+        ],
+        [
+          "コウ",
+          "見に来る。記録は、止めない。"
+        ],
+        [
+          "エルナ",
+          "変わるまで、記録しよう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-stop-feeding.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8dc1eab3efffb5a651a71a8d50222f4dffe92b6f190d14f3937d967564613de8",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "07-remake-stop-feeding",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-open-diner-window-01",
+      "art": "art/08-remake-open-diner.png",
       "description": "Tall soft transition from small slow-growing seedlings under tower light to diner serving window at dusk, Elna lights lantern, Kou brings PURCHASED basket. Warm anxious faces, continuous stable garden geography.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "38e23d39e4e362e834010eecf8dcc0e2409bdecb83ada1cb9ae907fc9f91bb2d"
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 140,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-open-diner.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "af29b6ea871a16491fcd942a0eff05c4af1a7f3a8e34befadd84dc5e0cf9b353",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 358
+      },
+      "sourceId": "08-remake-open-diner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-open-diner-window-02",
+      "art": "art/08-remake-open-diner.png",
+      "description": "Tall soft transition from small slow-growing seedlings under tower light to diner serving window at dusk, Elna lights lantern, Kou brings PURCHASED basket. Warm anxious faces, continuous stable garden geography.",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 210,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-open-diner.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "af29b6ea871a16491fcd942a0eff05c4af1a7f3a8e34befadd84dc5e0cf9b353",
+      "crop": {
+        "x": 0,
+        "y": 358,
+        "width": 724,
+        "height": 196
+      },
+      "sourceId": "08-remake-open-diner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-open-diner-window-03",
+      "art": "art/08-remake-open-diner.png",
+      "description": "Tall soft transition from small slow-growing seedlings under tower light to diner serving window at dusk, Elna lights lantern, Kou brings PURCHASED basket. Warm anxious faces, continuous stable garden geography.",
+      "dialogue": [
+        [
+          "エルナ",
+          "待ってる間にも、店は開く。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 100,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-open-diner.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "af29b6ea871a16491fcd942a0eff05c4af1a7f3a8e34befadd84dc5e0cf9b353",
+      "crop": {
+        "x": 0,
+        "y": 554,
+        "width": 724,
+        "height": 315
+      },
+      "sourceId": "08-remake-open-diner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-open-diner-window-04",
+      "art": "art/08-remake-open-diner.png",
+      "description": "Tall soft transition from small slow-growing seedlings under tower light to diner serving window at dusk, Elna lights lantern, Kou brings PURCHASED basket. Warm anxious faces, continuous stable garden geography.",
+      "dialogue": [
+        [
+          "コウ",
+          "今日は、仕入れた葉を使おう。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 180,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-open-diner.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "af29b6ea871a16491fcd942a0eff05c4af1a7f3a8e34befadd84dc5e0cf9b353",
+      "crop": {
+        "x": 0,
+        "y": 869,
+        "width": 724,
+        "height": 334
+      },
+      "sourceId": "08-remake-open-diner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-open-diner-window-05",
+      "art": "art/08-remake-open-diner.png",
+      "description": "Tall soft transition from small slow-growing seedlings under tower light to diner serving window at dusk, Elna lights lantern, Kou brings PURCHASED basket. Warm anxious faces, continuous stable garden geography.",
+      "dialogue": [
+        [
+          "エルナ",
+          "お客さんのお腹は、待てないから。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 270,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-open-diner.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "af29b6ea871a16491fcd942a0eff05c4af1a7f3a8e34befadd84dc5e0cf9b353",
+      "crop": {
+        "x": 0,
+        "y": 1203,
+        "width": 724,
+        "height": 336
+      },
+      "sourceId": "08-remake-open-diner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-open-diner-window-06",
+      "art": "art/08-remake-open-diner.png",
+      "description": "Tall soft transition from small slow-growing seedlings under tower light to diner serving window at dusk, Elna lights lantern, Kou brings PURCHASED basket. Warm anxious faces, continuous stable garden geography.",
+      "dialogue": [
+        [
+          "コウ",
+          "畑だけじゃ、暮らせないな。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 160,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-open-diner.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "af29b6ea871a16491fcd942a0eff05c4af1a7f3a8e34befadd84dc5e0cf9b353",
+      "crop": {
+        "x": 0,
+        "y": 1539,
+        "width": 724,
+        "height": 289
+      },
+      "sourceId": "08-remake-open-diner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-open-diner-window-07",
+      "art": "art/08-remake-open-diner.png",
+      "description": "Tall soft transition from small slow-growing seedlings under tower light to diner serving window at dusk, Elna lights lantern, Kou brings PURCHASED basket. Warm anxious faces, continuous stable garden geography.",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-open-diner.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "af29b6ea871a16491fcd942a0eff05c4af1a7f3a8e34befadd84dc5e0cf9b353",
+      "crop": {
+        "x": 0,
+        "y": 1828,
+        "width": 724,
+        "height": 344
+      },
+      "sourceId": "08-remake-open-diner",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     }
   ]
 }

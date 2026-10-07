@@ -2,42 +2,14 @@
   "number": 9,
   "title": "十二人に届ける一便",
   "time": "36日目",
+  "change": "初の小口納品を、連絡と受け渡し変更で守る。単発成功と継続契約を分ける。",
   "state": "十二食を三階の集結所へ。七階へ無検証の長距離配送をしない。料理は当日調理。供給は自家収穫と仕入れ。",
-  "scenes": [
+  "revision": "2026-10-07-following-remake",
+  "sources": [
     {
-      "id": "01-twelve",
-      "art": "art/01-twelve-count-fixed.png",
-      "dialogue": [
-        [
-          "エルナ",
-          "三階の集結所まで、十二食。"
-        ],
-        [
-          "コウ",
-          "温かいうちに、渡そう。"
-        ]
-      ],
-      "layout": "varied",
-      "pauseAt390": 90,
-      "prompt": "generation/01-twelve.prompt.txt",
-      "description": "Elna prepares twelve simple clean covered food containers on kitchen table, Kou confirms at ledger, background bought grain and meat with harvested leaves. Three panels cooking, lids, plan. No overflowing hundred-meal feast.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "2754298ead78b03516e248ab7a9b146b1736198a7a025f3a4d73aad7a205e41d",
-      "edits": [
-        {
-          "prompt": "generation/01-twelve-bowls-fixed.prompt.txt",
-          "record": "generation/01-twelve-bowls-fixed.json"
-        },
-        {
-          "prompt": "generation/01-twelve-count-fixed.prompt.txt",
-          "record": "generation/01-twelve-count-fixed.json"
-        }
-      ]
-    },
-    {
-      "id": "02-tools",
-      "art": "art/02-tools-separated-fixed.png",
+      "id": "02-remake-tools",
+      "art": "art/02-remake-tools.png",
+      "description": "Two designated clean cooking pots, Elna points to kitchen-only utensils, small inset dirty irrigation buckets remain OUTSIDE on separate utility shelf; Kou wipes hands before touching packed food. Two unequal panels, no unsafe mixing.",
       "dialogue": [
         [
           "エルナ",
@@ -46,29 +18,62 @@
         [
           "コウ",
           "畑の桶とは、混ぜない。"
+        ],
+        [
+          "エルナ",
+          "手を洗ったら、蓋をお願い。"
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 70,
-      "prompt": "generation/02-tools.prompt.txt",
-      "description": "Two designated clean cooking pots, Elna points to kitchen-only utensils, small inset dirty irrigation buckets remain OUTSIDE on separate utility shelf; Kou wipes hands before touching packed food. Two unequal panels, no unsafe mixing.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "34cb7e23d9bd0ec09945ff6fe1fe83a70feab91d34f9a3e43049ac7510942b6a",
-      "edits": [
-        {
-          "prompt": "generation/02-tools-separated-fixed.prompt.txt",
-          "record": "generation/02-tools-separated-fixed.json"
-        }
-      ]
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-tools.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8d798ea58f67dd056d79eea80306225dc42adc6d9ad9c3214e75d34f9bda04da"
     },
     {
-      "id": "03-delay",
-      "art": "art/03-delay-cargo-fixed.png",
+      "id": "01-remake-twelve",
+      "art": "art/01-remake-twelve.png",
+      "description": "Elna prepares twelve simple clean covered food containers on kitchen table, Kou confirms at ledger, background bought grain and meat with harvested leaves. Three panels cooking, lids, plan. No overflowing hundred-meal feast.",
+      "dialogue": [
+        [
+          "エルナ",
+          "三階の集結所まで、十二食。"
+        ],
+        [
+          "コウ",
+          "数も、蓋も確認した。"
+        ],
+        [
+          "エルナ",
+          "今日、作った分を届けよう。"
+        ],
+        [
+          "コウ",
+          "温かいうちに、渡そう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-twelve.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "07326a264fa35599f39ba702b4056e1e898cea1ccd8c0d3877ebb728e98cf829"
+    },
+    {
+      "id": "03-remake-delay",
+      "art": "art/03-remake-delay.png",
+      "description": "Stone gate lane inside third floor, Kou with small covered handcart of food, local gate worker in beige points to waiting cargo queue, Elna worried. No fighting or sword attack, delay is transport coordination.",
       "dialogue": [
         [
           "係員",
           "今日は、通行便が遅れる。"
+        ],
+        [
+          "エルナ",
+          "このままじゃ、冷めてしまう。"
         ],
         [
           "コウ",
@@ -76,26 +81,25 @@
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 110,
-      "prompt": "generation/03-delay.prompt.txt",
-      "description": "Stone gate lane inside third floor, Kou with small covered handcart of food, local gate worker in beige points to waiting cargo queue, Elna worried. No fighting or sword attack, delay is transport coordination.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "5cc4543a63d41838de6d6328e459e0227548085c18f1ecaaf7c0d5fa4752ba81",
-      "edits": [
-        {
-          "prompt": "generation/03-delay-cargo-fixed.prompt.txt",
-          "record": "generation/03-delay-cargo-fixed.json"
-        }
-      ]
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-delay.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "80a947b513e2e8d34e3388a3e667343295f7f2b522eb65c4663d4ca51b31e3d3"
     },
     {
-      "id": "04-contact",
-      "art": "art/04-contact.png",
+      "id": "04-remake-contact",
+      "art": "art/04-remake-contact.png",
+      "description": "Leon at nearby third-floor assembly entrance instructs assistant while Kou and Elna listen, short hand gesture showing safe nearby pickup location, clear geographical continuity and no gate bypass.",
       "dialogue": [
         [
           "レオン",
           "入口側で受け取る。連絡は俺がする。"
+        ],
+        [
+          "コウ",
+          "三階の、この入口ですね。"
         ],
         [
           "エルナ",
@@ -103,16 +107,17 @@
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 80,
-      "prompt": "generation/04-contact.prompt.txt",
-      "description": "Leon at nearby third-floor assembly entrance instructs assistant while Kou and Elna listen, short hand gesture showing safe nearby pickup location, clear geographical continuity and no gate bypass.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "abc1df8415c895bb8ad0b167d56f83a6786435cf8fe19662e3c0facc33e05dd7"
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-contact.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "2ff7d539e2c6ef2d8aad4b05dcc7abe5b707ed3dd2f350b596978e6d15b2b8e6"
     },
     {
-      "id": "05-cart",
-      "art": "art/05-cart-cargo-fixed.png",
+      "id": "05-remake-cart",
+      "art": "art/05-remake-cart.png",
+      "description": "One tall continuous scene of small handcart rolling down paved lane from diner toward visible nearby third-floor assembly arch, Elna walking beside Kou; closeup careful hands securing covered containers, no exposed food or magical flying cart.",
       "dialogue": [
         [
           "コウ",
@@ -121,29 +126,32 @@
         [
           "エルナ",
           "食べるところまでが、私たちの仕事。"
+        ],
+        [
+          "コウ",
+          "急いでも、揺らさないように。"
         ]
       ],
       "layout": "continuous",
-      "pauseAt390": 100,
-      "prompt": "generation/05-cart.prompt.txt",
-      "description": "One tall continuous scene of small handcart rolling down paved lane from diner toward visible nearby third-floor assembly arch, Elna walking beside Kou; closeup careful hands securing covered containers, no exposed food or magical flying cart.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "62744d8ac62db4dd75693f04edc665363f4136ab8a409e1db7890b82bb8f9573",
-      "edits": [
-        {
-          "prompt": "generation/05-cart-cargo-fixed.prompt.txt",
-          "record": "generation/05-cart-cargo-fixed.json"
-        }
-      ]
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-cart.prompt.txt",
+      "width": 726,
+      "height": 2167,
+      "sha256": "47333b09e2e6b9d61818d7118d673fd36153e9f3c5986840958b2086c7374444"
     },
     {
-      "id": "07-proof",
-      "art": "art/07-proof-bowls-fixed.png",
+      "id": "06-remake-proof",
+      "art": "art/06-remake-proof.png",
+      "description": "Leon checks all twelve recipients and signs delivery note with abstract marks, closeup professional respectful face, Kou listening with Elna nearby. No vast gold payment or instant huge contract.",
       "dialogue": [
         [
           "レオン",
           "十二食、欠けずに届いた。"
+        ],
+        [
+          "コウ",
+          "受け取りを変えてくれて、助かりました。"
         ],
         [
           "レオン",
@@ -151,22 +159,17 @@
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 100,
-      "prompt": "generation/07-proof.prompt.txt",
-      "description": "Leon checks all twelve recipients and signs delivery note with abstract marks, closeup professional respectful face, Kou listening with Elna nearby. No vast gold payment or instant huge contract.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "1892dadbbdbfbb8a46970815b5e727719faaf7d42d04232a51a40dbadf3a8d84",
-      "edits": [
-        {
-          "prompt": "generation/07-proof-bowls-fixed.prompt.txt",
-          "record": "generation/07-proof-bowls-fixed.json"
-        }
-      ]
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-proof.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4ac55e7736d15ae2772509d740e404c7d8d30e6c865afcf1ac0396e61cc760f9"
     },
     {
-      "id": "06-team-eats",
-      "art": "art/06-team-eats-cast-fixed.png",
+      "id": "07-remake-team-eats",
+      "art": "art/07-remake-team-eats.png",
+      "description": "Three unequal panels in assembly courtyard: modest adult adventurer squad receives covered meals, one tired brown-haired swordswoman tastes hot greens and grain, relaxed smiles around low table. Weapons sheathed away from food. No wounded person magically healed.",
       "dialogue": [
         [
           "隊員",
@@ -175,25 +178,24 @@
         [
           "隊員",
           "帰ったら、店にも寄る。"
+        ],
+        [
+          "エルナ",
+          "待ってるよ。気をつけて。"
         ]
       ],
       "layout": "hero",
-      "pauseAt390": 140,
-      "prompt": "generation/06-team-eats.prompt.txt",
-      "description": "Three unequal panels in assembly courtyard: modest adult adventurer squad receives covered meals, one tired brown-haired swordswoman tastes hot greens and grain, relaxed smiles around low table. Weapons sheathed away from food. No wounded person magically healed.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "4925cba5d1d25adfc4f9326048c1c4166fe2d4722c43d1e354402681089d4e82",
-      "edits": [
-        {
-          "prompt": "generation/06-team-eats-cast-fixed.prompt.txt",
-          "record": "generation/06-team-eats-cast-fixed.json"
-        }
-      ]
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-team-eats.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8312ac9c10ddf2ec00e45da0deb1ebb88c8e9ed5fc7bbacaceb8459f6c153c7e"
     },
     {
-      "id": "08-one-delivery",
-      "art": "art/08-one-delivery-cargo-fixed.png",
+      "id": "08-remake-one-delivery",
+      "art": "art/08-remake-one-delivery.png",
+      "description": "Large quiet evening return to diner, empty cleanable containers and handcart, Kou and Elna sit on porch tired but satisfied. Plot not magically mature everywhere. Small lantern warmth under blue awning.",
       "dialogue": [
         [
           "コウ",
@@ -202,21 +204,890 @@
         [
           "エルナ",
           "今日は、この十二人分でいい。"
+        ],
+        [
+          "コウ",
+          "うん。明日は、片付けからだな。"
         ]
       ],
       "layout": "hero",
-      "pauseAt390": 190,
-      "prompt": "generation/08-one-delivery.prompt.txt",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-one-delivery.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "be2ec69b770c20b9cbed6bc7ec7de92af81a47a15d7d9e92af0443780300ba76"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "02-remake-tools-window-01",
+      "art": "art/02-remake-tools.png",
+      "description": "Two designated clean cooking pots, Elna points to kitchen-only utensils, small inset dirty irrigation buckets remain OUTSIDE on separate utility shelf; Kou wipes hands before touching packed food. Two unequal panels, no unsafe mixing.",
+      "dialogue": [
+        [
+          "エルナ",
+          "この鍋は、料理だけ。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 90,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-tools.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8d798ea58f67dd056d79eea80306225dc42adc6d9ad9c3214e75d34f9bda04da",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 535
+      },
+      "sourceId": "02-remake-tools",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-tools-window-02",
+      "art": "art/02-remake-tools.png",
+      "description": "Two designated clean cooking pots, Elna points to kitchen-only utensils, small inset dirty irrigation buckets remain OUTSIDE on separate utility shelf; Kou wipes hands before touching packed food. Two unequal panels, no unsafe mixing.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 180,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-tools.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8d798ea58f67dd056d79eea80306225dc42adc6d9ad9c3214e75d34f9bda04da",
+      "crop": {
+        "x": 0,
+        "y": 535,
+        "width": 724,
+        "height": 268
+      },
+      "sourceId": "02-remake-tools",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-tools-window-03",
+      "art": "art/02-remake-tools.png",
+      "description": "Two designated clean cooking pots, Elna points to kitchen-only utensils, small inset dirty irrigation buckets remain OUTSIDE on separate utility shelf; Kou wipes hands before touching packed food. Two unequal panels, no unsafe mixing.",
+      "dialogue": [
+        [
+          "コウ",
+          "畑の桶とは、混ぜない。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 140,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-tools.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8d798ea58f67dd056d79eea80306225dc42adc6d9ad9c3214e75d34f9bda04da",
+      "crop": {
+        "x": 0,
+        "y": 803,
+        "width": 724,
+        "height": 708
+      },
+      "sourceId": "02-remake-tools",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-tools-window-04",
+      "art": "art/02-remake-tools.png",
+      "description": "Two designated clean cooking pots, Elna points to kitchen-only utensils, small inset dirty irrigation buckets remain OUTSIDE on separate utility shelf; Kou wipes hands before touching packed food. Two unequal panels, no unsafe mixing.",
+      "dialogue": [
+        [
+          "エルナ",
+          "手を洗ったら、蓋をお願い。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-tools.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8d798ea58f67dd056d79eea80306225dc42adc6d9ad9c3214e75d34f9bda04da",
+      "crop": {
+        "x": 0,
+        "y": 1511,
+        "width": 724,
+        "height": 661
+      },
+      "sourceId": "02-remake-tools",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-twelve-window-01",
+      "art": "art/01-remake-twelve.png",
+      "description": "Elna prepares twelve simple clean covered food containers on kitchen table, Kou confirms at ledger, background bought grain and meat with harvested leaves. Three panels cooking, lids, plan. No overflowing hundred-meal feast.",
+      "dialogue": [
+        [
+          "エルナ",
+          "三階の集結所まで、十二食。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-twelve.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "07326a264fa35599f39ba702b4056e1e898cea1ccd8c0d3877ebb728e98cf829",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 880
+      },
+      "sourceId": "01-remake-twelve",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-twelve-window-02",
+      "art": "art/01-remake-twelve.png",
+      "description": "Elna prepares twelve simple clean covered food containers on kitchen table, Kou confirms at ledger, background bought grain and meat with harvested leaves. Three panels cooking, lids, plan. No overflowing hundred-meal feast.",
+      "dialogue": [
+        [
+          "コウ",
+          "数も、蓋も確認した。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-twelve.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "07326a264fa35599f39ba702b4056e1e898cea1ccd8c0d3877ebb728e98cf829",
+      "crop": {
+        "x": 0,
+        "y": 880,
+        "width": 724,
+        "height": 463
+      },
+      "sourceId": "01-remake-twelve",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-twelve-window-03",
+      "art": "art/01-remake-twelve.png",
+      "description": "Elna prepares twelve simple clean covered food containers on kitchen table, Kou confirms at ledger, background bought grain and meat with harvested leaves. Three panels cooking, lids, plan. No overflowing hundred-meal feast.",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日、作った分を届けよう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 260,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-twelve.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "07326a264fa35599f39ba702b4056e1e898cea1ccd8c0d3877ebb728e98cf829",
+      "crop": {
+        "x": 0,
+        "y": 1343,
+        "width": 724,
+        "height": 349
+      },
+      "sourceId": "01-remake-twelve",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-twelve-window-04",
+      "art": "art/01-remake-twelve.png",
+      "description": "Elna prepares twelve simple clean covered food containers on kitchen table, Kou confirms at ledger, background bought grain and meat with harvested leaves. Three panels cooking, lids, plan. No overflowing hundred-meal feast.",
+      "dialogue": [
+        [
+          "コウ",
+          "温かいうちに、渡そう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-twelve.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "07326a264fa35599f39ba702b4056e1e898cea1ccd8c0d3877ebb728e98cf829",
+      "crop": {
+        "x": 0,
+        "y": 1692,
+        "width": 724,
+        "height": 480
+      },
+      "sourceId": "01-remake-twelve",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-delay-window-01",
+      "art": "art/03-remake-delay.png",
+      "description": "Stone gate lane inside third floor, Kou with small covered handcart of food, local gate worker in beige points to waiting cargo queue, Elna worried. No fighting or sword attack, delay is transport coordination.",
+      "dialogue": [
+        [
+          "係員",
+          "今日は、通行便が遅れる。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 45,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-delay.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "80a947b513e2e8d34e3388a3e667343295f7f2b522eb65c4663d4ca51b31e3d3",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 655
+      },
+      "sourceId": "03-remake-delay",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-delay-window-02",
+      "art": "art/03-remake-delay.png",
+      "description": "Stone gate lane inside third floor, Kou with small covered handcart of food, local gate worker in beige points to waiting cargo queue, Elna worried. No fighting or sword attack, delay is transport coordination.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 24,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-delay.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "80a947b513e2e8d34e3388a3e667343295f7f2b522eb65c4663d4ca51b31e3d3",
+      "crop": {
+        "x": 0,
+        "y": 655,
+        "width": 724,
+        "height": 311
+      },
+      "sourceId": "03-remake-delay",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-delay-window-03",
+      "art": "art/03-remake-delay.png",
+      "description": "Stone gate lane inside third floor, Kou with small covered handcart of food, local gate worker in beige points to waiting cargo queue, Elna worried. No fighting or sword attack, delay is transport coordination.",
+      "dialogue": [
+        [
+          "エルナ",
+          "このままじゃ、冷めてしまう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 130,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-delay.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "80a947b513e2e8d34e3388a3e667343295f7f2b522eb65c4663d4ca51b31e3d3",
+      "crop": {
+        "x": 0,
+        "y": 966,
+        "width": 724,
+        "height": 325
+      },
+      "sourceId": "03-remake-delay",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-delay-window-04",
+      "art": "art/03-remake-delay.png",
+      "description": "Stone gate lane inside third floor, Kou with small covered handcart of food, local gate worker in beige points to waiting cargo queue, Elna worried. No fighting or sword attack, delay is transport coordination.",
+      "dialogue": [
+        [
+          "コウ",
+          "受け渡し場所を、変えられる？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 910,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-delay.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "80a947b513e2e8d34e3388a3e667343295f7f2b522eb65c4663d4ca51b31e3d3",
+      "crop": {
+        "x": 0,
+        "y": 1291,
+        "width": 724,
+        "height": 322
+      },
+      "sourceId": "03-remake-delay",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-delay-window-05",
+      "art": "art/03-remake-delay.png",
+      "description": "Stone gate lane inside third floor, Kou with small covered handcart of food, local gate worker in beige points to waiting cargo queue, Elna worried. No fighting or sword attack, delay is transport coordination.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-delay.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "80a947b513e2e8d34e3388a3e667343295f7f2b522eb65c4663d4ca51b31e3d3",
+      "crop": {
+        "x": 0,
+        "y": 1613,
+        "width": 724,
+        "height": 559
+      },
+      "sourceId": "03-remake-delay",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-contact-window-01",
+      "art": "art/04-remake-contact.png",
+      "description": "Leon at nearby third-floor assembly entrance instructs assistant while Kou and Elna listen, short hand gesture showing safe nearby pickup location, clear geographical continuity and no gate bypass.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 65,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-contact.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "2ff7d539e2c6ef2d8aad4b05dcc7abe5b707ed3dd2f350b596978e6d15b2b8e6",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 516
+      },
+      "sourceId": "04-remake-contact",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-contact-window-02",
+      "art": "art/04-remake-contact.png",
+      "description": "Leon at nearby third-floor assembly entrance instructs assistant while Kou and Elna listen, short hand gesture showing safe nearby pickup location, clear geographical continuity and no gate bypass.",
+      "dialogue": [
+        [
+          "レオン",
+          "入口側で受け取る。連絡は俺がする。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 200,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-contact.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "2ff7d539e2c6ef2d8aad4b05dcc7abe5b707ed3dd2f350b596978e6d15b2b8e6",
+      "crop": {
+        "x": 0,
+        "y": 516,
+        "width": 724,
+        "height": 323
+      },
+      "sourceId": "04-remake-contact",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-contact-window-03",
+      "art": "art/04-remake-contact.png",
+      "description": "Leon at nearby third-floor assembly entrance instructs assistant while Kou and Elna listen, short hand gesture showing safe nearby pickup location, clear geographical continuity and no gate bypass.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-contact.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "2ff7d539e2c6ef2d8aad4b05dcc7abe5b707ed3dd2f350b596978e6d15b2b8e6",
+      "crop": {
+        "x": 0,
+        "y": 839,
+        "width": 724,
+        "height": 287
+      },
+      "sourceId": "04-remake-contact",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-contact-window-04",
+      "art": "art/04-remake-contact.png",
+      "description": "Leon at nearby third-floor assembly entrance instructs assistant while Kou and Elna listen, short hand gesture showing safe nearby pickup location, clear geographical continuity and no gate bypass.",
+      "dialogue": [
+        [
+          "コウ",
+          "三階の、この入口ですね。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 340,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-contact.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "2ff7d539e2c6ef2d8aad4b05dcc7abe5b707ed3dd2f350b596978e6d15b2b8e6",
+      "crop": {
+        "x": 0,
+        "y": 1126,
+        "width": 724,
+        "height": 295
+      },
+      "sourceId": "04-remake-contact",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-contact-window-05",
+      "art": "art/04-remake-contact.png",
+      "description": "Leon at nearby third-floor assembly entrance instructs assistant while Kou and Elna listen, short hand gesture showing safe nearby pickup location, clear geographical continuity and no gate bypass.",
+      "dialogue": [
+        [
+          "エルナ",
+          "その場所なら、間に合う。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 130,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-contact.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "2ff7d539e2c6ef2d8aad4b05dcc7abe5b707ed3dd2f350b596978e6d15b2b8e6",
+      "crop": {
+        "x": 0,
+        "y": 1421,
+        "width": 724,
+        "height": 292
+      },
+      "sourceId": "04-remake-contact",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-contact-window-06",
+      "art": "art/04-remake-contact.png",
+      "description": "Leon at nearby third-floor assembly entrance instructs assistant while Kou and Elna listen, short hand gesture showing safe nearby pickup location, clear geographical continuity and no gate bypass.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-contact.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "2ff7d539e2c6ef2d8aad4b05dcc7abe5b707ed3dd2f350b596978e6d15b2b8e6",
+      "crop": {
+        "x": 0,
+        "y": 1713,
+        "width": 724,
+        "height": 459
+      },
+      "sourceId": "04-remake-contact",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-cart-window-01",
+      "art": "art/05-remake-cart.png",
+      "description": "One tall continuous scene of small handcart rolling down paved lane from diner toward visible nearby third-floor assembly arch, Elna walking beside Kou; closeup careful hands securing covered containers, no exposed food or magical flying cart.",
+      "dialogue": [
+        [
+          "コウ",
+          "鍋を持つ人も、攻略隊なんだな。"
+        ],
+        [
+          "エルナ",
+          "食べるところまでが、私たちの仕事。"
+        ],
+        [
+          "コウ",
+          "急いでも、揺らさないように。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-cart.prompt.txt",
+      "width": 726,
+      "height": 2167,
+      "sha256": "47333b09e2e6b9d61818d7118d673fd36153e9f3c5986840958b2086c7374444",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 726,
+        "height": 2167
+      },
+      "sourceId": "05-remake-cart",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-proof-window-01",
+      "art": "art/06-remake-proof.png",
+      "description": "Leon checks all twelve recipients and signs delivery note with abstract marks, closeup professional respectful face, Kou listening with Elna nearby. No vast gold payment or instant huge contract.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 160,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-proof.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4ac55e7736d15ae2772509d740e404c7d8d30e6c865afcf1ac0396e61cc760f9",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 316
+      },
+      "sourceId": "06-remake-proof",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-proof-window-02",
+      "art": "art/06-remake-proof.png",
+      "description": "Leon checks all twelve recipients and signs delivery note with abstract marks, closeup professional respectful face, Kou listening with Elna nearby. No vast gold payment or instant huge contract.",
+      "dialogue": [
+        [
+          "レオン",
+          "十二食、欠けずに届いた。"
+        ],
+        [
+          "コウ",
+          "受け取りを変えてくれて、助かりました。"
+        ],
+        [
+          "レオン",
+          "次は、続けられるかを見よう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 240,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-proof.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4ac55e7736d15ae2772509d740e404c7d8d30e6c865afcf1ac0396e61cc760f9",
+      "crop": {
+        "x": 0,
+        "y": 316,
+        "width": 724,
+        "height": 1237
+      },
+      "sourceId": "06-remake-proof",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-proof-window-03",
+      "art": "art/06-remake-proof.png",
+      "description": "Leon checks all twelve recipients and signs delivery note with abstract marks, closeup professional respectful face, Kou listening with Elna nearby. No vast gold payment or instant huge contract.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 90,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-proof.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4ac55e7736d15ae2772509d740e404c7d8d30e6c865afcf1ac0396e61cc760f9",
+      "crop": {
+        "x": 0,
+        "y": 1553,
+        "width": 724,
+        "height": 247
+      },
+      "sourceId": "06-remake-proof",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-proof-window-04",
+      "art": "art/06-remake-proof.png",
+      "description": "Leon checks all twelve recipients and signs delivery note with abstract marks, closeup professional respectful face, Kou listening with Elna nearby. No vast gold payment or instant huge contract.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-proof.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4ac55e7736d15ae2772509d740e404c7d8d30e6c865afcf1ac0396e61cc760f9",
+      "crop": {
+        "x": 0,
+        "y": 1800,
+        "width": 724,
+        "height": 372
+      },
+      "sourceId": "06-remake-proof",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-team-eats-window-01",
+      "art": "art/07-remake-team-eats.png",
+      "description": "Three unequal panels in assembly courtyard: modest adult adventurer squad receives covered meals, one tired brown-haired swordswoman tastes hot greens and grain, relaxed smiles around low table. Weapons sheathed away from food. No wounded person magically healed.",
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 65,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-team-eats.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8312ac9c10ddf2ec00e45da0deb1ebb88c8e9ed5fc7bbacaceb8459f6c153c7e",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 653
+      },
+      "sourceId": "07-remake-team-eats",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-team-eats-window-02",
+      "art": "art/07-remake-team-eats.png",
+      "description": "Three unequal panels in assembly courtyard: modest adult adventurer squad receives covered meals, one tired brown-haired swordswoman tastes hot greens and grain, relaxed smiles around low table. Weapons sheathed away from food. No wounded person magically healed.",
+      "dialogue": [
+        [
+          "隊員",
+          "今日は、ちゃんと飯を食えた。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 30,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-team-eats.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8312ac9c10ddf2ec00e45da0deb1ebb88c8e9ed5fc7bbacaceb8459f6c153c7e",
+      "crop": {
+        "x": 0,
+        "y": 653,
+        "width": 724,
+        "height": 487
+      },
+      "sourceId": "07-remake-team-eats",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-team-eats-window-03",
+      "art": "art/07-remake-team-eats.png",
+      "description": "Three unequal panels in assembly courtyard: modest adult adventurer squad receives covered meals, one tired brown-haired swordswoman tastes hot greens and grain, relaxed smiles around low table. Weapons sheathed away from food. No wounded person magically healed.",
+      "dialogue": [
+        [
+          "隊員",
+          "帰ったら、店にも寄る。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 130,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-team-eats.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8312ac9c10ddf2ec00e45da0deb1ebb88c8e9ed5fc7bbacaceb8459f6c153c7e",
+      "crop": {
+        "x": 0,
+        "y": 1140,
+        "width": 724,
+        "height": 331
+      },
+      "sourceId": "07-remake-team-eats",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-team-eats-window-04",
+      "art": "art/07-remake-team-eats.png",
+      "description": "Three unequal panels in assembly courtyard: modest adult adventurer squad receives covered meals, one tired brown-haired swordswoman tastes hot greens and grain, relaxed smiles around low table. Weapons sheathed away from food. No wounded person magically healed.",
+      "dialogue": [
+        [
+          "エルナ",
+          "待ってるよ。気をつけて。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-team-eats.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "8312ac9c10ddf2ec00e45da0deb1ebb88c8e9ed5fc7bbacaceb8459f6c153c7e",
+      "crop": {
+        "x": 0,
+        "y": 1471,
+        "width": 724,
+        "height": 701
+      },
+      "sourceId": "07-remake-team-eats",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-one-delivery-window-01",
+      "art": "art/08-remake-one-delivery.png",
       "description": "Large quiet evening return to diner, empty cleanable containers and handcart, Kou and Elna sit on porch tired but satisfied. Plot not magically mature everywhere. Small lantern warmth under blue awning.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "f51535380bd077fc2a2db2d74f1976b706107f0000c518c6de2e27ed9ef29681",
-      "edits": [
-        {
-          "prompt": "generation/08-one-delivery-cargo-fixed.prompt.txt",
-          "record": "generation/08-one-delivery-cargo-fixed.json"
-        }
-      ]
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 140,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-one-delivery.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "be2ec69b770c20b9cbed6bc7ec7de92af81a47a15d7d9e92af0443780300ba76",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 401
+      },
+      "sourceId": "08-remake-one-delivery",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-one-delivery-window-02",
+      "art": "art/08-remake-one-delivery.png",
+      "description": "Large quiet evening return to diner, empty cleanable containers and handcart, Kou and Elna sit on porch tired but satisfied. Plot not magically mature everywhere. Small lantern warmth under blue awning.",
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 100,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-one-delivery.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "be2ec69b770c20b9cbed6bc7ec7de92af81a47a15d7d9e92af0443780300ba76",
+      "crop": {
+        "x": 0,
+        "y": 401,
+        "width": 724,
+        "height": 478
+      },
+      "sourceId": "08-remake-one-delivery",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-one-delivery-window-03",
+      "art": "art/08-remake-one-delivery.png",
+      "description": "Large quiet evening return to diner, empty cleanable containers and handcart, Kou and Elna sit on porch tired but satisfied. Plot not magically mature everywhere. Small lantern warmth under blue awning.",
+      "dialogue": [
+        [
+          "コウ",
+          "一便はできた。毎日は、これからだ。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 180,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-one-delivery.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "be2ec69b770c20b9cbed6bc7ec7de92af81a47a15d7d9e92af0443780300ba76",
+      "crop": {
+        "x": 0,
+        "y": 879,
+        "width": 724,
+        "height": 289
+      },
+      "sourceId": "08-remake-one-delivery",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-one-delivery-window-04",
+      "art": "art/08-remake-one-delivery.png",
+      "description": "Large quiet evening return to diner, empty cleanable containers and handcart, Kou and Elna sit on porch tired but satisfied. Plot not magically mature everywhere. Small lantern warmth under blue awning.",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日は、この十二人分でいい。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 270,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-one-delivery.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "be2ec69b770c20b9cbed6bc7ec7de92af81a47a15d7d9e92af0443780300ba76",
+      "crop": {
+        "x": 0,
+        "y": 1168,
+        "width": 724,
+        "height": 293
+      },
+      "sourceId": "08-remake-one-delivery",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-one-delivery-window-05",
+      "art": "art/08-remake-one-delivery.png",
+      "description": "Large quiet evening return to diner, empty cleanable containers and handcart, Kou and Elna sit on porch tired but satisfied. Plot not magically mature everywhere. Small lantern warmth under blue awning.",
+      "dialogue": [
+        [
+          "コウ",
+          "うん。明日は、片付けからだな。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 160,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-one-delivery.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "be2ec69b770c20b9cbed6bc7ec7de92af81a47a15d7d9e92af0443780300ba76",
+      "crop": {
+        "x": 0,
+        "y": 1461,
+        "width": 724,
+        "height": 354
+      },
+      "sourceId": "08-remake-one-delivery",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-one-delivery-window-06",
+      "art": "art/08-remake-one-delivery.png",
+      "description": "Large quiet evening return to diner, empty cleanable containers and handcart, Kou and Elna sit on porch tired but satisfied. Plot not magically mature everywhere. Small lantern warmth under blue awning.",
+      "dialogue": [],
+      "layout": "hero",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-one-delivery.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "be2ec69b770c20b9cbed6bc7ec7de92af81a47a15d7d9e92af0443780300ba76",
+      "crop": {
+        "x": 0,
+        "y": 1815,
+        "width": 724,
+        "height": 357
+      },
+      "sourceId": "08-remake-one-delivery",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     }
   ]
 }

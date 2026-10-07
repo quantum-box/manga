@@ -13,3 +13,8 @@ node_modules/
 /examples/heavenly-demon-ngplus/heavenly-demon-ngplus-episodes-01-10.zip
 /examples/heavenly-demon-ngplus/server-export/deployment-status.json
 /examples/heavenly-demon-ngplus/server-export/published-checks.json
+
+# Image generation job queue is regenerated locally; prompts are tracked per scene.
+examples/tower-farm-kitchen/production/remake/jobs.json
+
+examples/tower-farm-kitchen/production/following/jobs*.json

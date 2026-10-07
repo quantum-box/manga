@@ -1,856 +1,1229 @@
 {
   "episode": 7,
-  "browserTool": "cua_repl",
   "views": [
     {
-      "figures": [
-        {
-          "bottom": 1589.953125,
-          "id": "scene-01",
-          "marginAfter": 205.833,
-          "pauses": [
-            {
-              "height": 422.5,
-              "purpose": "足元から顔へ視線を上げる前に姿を待つ"
-            },
-            {
-              "height": 216.6640625,
-              "purpose": "初めての顔を見て犬の反応へ移る"
-            }
-          ],
-          "top": 125.296875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 89.0756%, 0% 100%)",
-              "height": 128.9140625,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,119],[360,106]]}",
-              "top": 125.296875,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 6.01852%, 100% 0%, 100% 100%, 0% 86.5741%)",
-              "height": 234,
-              "panels": "2-2",
-              "sourceRegion": "{\"upper\":[[0,119],[360,106]],\"lower\":[[0,293],[360,322]]}",
-              "top": 676.7109375,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 6.79157%, 100% 100%, 0% 100%)",
-              "height": 462.578125,
-              "panels": "3-4",
-              "sourceRegion": "{\"upper\":[[0,293],[360,322]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 1127.375,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 3060.0078125,
-          "id": "scene-02",
-          "marginAfter": 216.667,
-          "pauses": [
-            {
-              "height": 238.328125,
-              "purpose": "空の手を見て、触れられない安全を確かめる"
-            },
-            {
-              "height": 205.828125,
-              "purpose": "助けてくれた相手だと理解する"
-            }
-          ],
-          "top": 1795.78125,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 97.9661%, 0% 100%)",
-              "height": 319.578125,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,295],[360,289]]}",
-              "top": 1795.78125,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 2.91262%, 100% 0%, 100% 100%, 0% 84.9515%)",
-              "height": 223.1640625,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,295],[360,289]],\"lower\":[[0,464],[360,495]]}",
-              "top": 2353.6875,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 12.1094%, 100% 100%, 0% 100%)",
-              "height": 277.328125,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,464],[360,495]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 2782.6796875,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 4056.671875,
-          "id": "scene-03",
-          "marginAfter": 108.333,
-          "pauses": [],
-          "top": 3276.671875,
-          "windows": []
-        },
-        {
-          "bottom": 4945,
-          "id": "scene-04",
-          "marginAfter": 184.167,
-          "pauses": [],
-          "top": 4165,
-          "windows": []
-        },
-        {
-          "bottom": 6576.4921875,
-          "id": "scene-05",
-          "marginAfter": 303.333,
-          "pauses": [
-            {
-              "height": 292.5,
-              "purpose": "言いにくい記憶が浮かぶまで待つ"
-            },
-            {
-              "height": 325,
-              "purpose": "剣を向けられた経験から本人の言葉へ戻る"
-            }
-          ],
-          "top": 5129.1640625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 92.4731%)",
-              "height": 403,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,344],[360,372]]}",
-              "top": 5129.1640625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 15.7303%, 100% 100%, 0% 89.8876%)",
-              "height": 192.828125,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,344],[360,372]],\"lower\":[[0,504],[360,522]]}",
-              "top": 5824.6640625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 8.33333%, 100% 100%, 0% 100%)",
-              "height": 234,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,504],[360,522]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 6342.4921875,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 7659.8203125,
-          "id": "scene-06",
-          "marginAfter": 119.167,
-          "pauses": [],
-          "top": 6879.8203125,
-          "windows": []
-        },
-        {
-          "bottom": 9172.1328125,
-          "id": "scene-07",
-          "marginAfter": 260,
-          "pauses": [
-            {
-              "height": 216.6640625,
-              "purpose": "傷んだ手と道具から一人の作業を読む"
-            },
-            {
-              "height": 379.1640625,
-              "purpose": "ずっと一人かという問いの後に返事を待つ"
-            }
-          ],
-          "top": 7778.984375,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 95.8621%)",
-              "height": 314.1640625,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,278],[360,290]]}",
-              "top": 7778.984375,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 4.5283%, 100% 98.4906%, 0% 100%)",
-              "height": 287.078125,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,278],[360,290]],\"lower\":[[0,543],[360,539]]}",
-              "top": 8309.8125,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 2.20994%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 196.078125,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,543],[360,539]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 8976.0546875,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 10212.1328125,
-          "id": "scene-08",
-          "marginAfter": 173.333,
-          "pauses": [],
-          "top": 9432.1328125,
-          "windows": []
-        },
-        {
-          "bottom": 11165.4609375,
-          "id": "scene-09",
-          "marginAfter": 97.5,
-          "pauses": [],
-          "top": 10385.4609375,
-          "windows": []
-        },
-        {
-          "bottom": 12510.9453125,
-          "id": "scene-10",
-          "marginAfter": 281.667,
-          "pauses": [
-            {
-              "height": 205.828125,
-              "purpose": "協力の申し出に驚く魔王の返事を待つ"
-            },
-            {
-              "height": 216.6640625,
-              "purpose": "犬も自分の役割を考えてから練習へ進む"
-            }
-          ],
-          "top": 11262.9609375,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 91.1765%)",
-              "height": 221,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,186],[360,204]]}",
-              "top": 11262.9609375,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 4.77454%, 100% 93.6339%, 0% 100%)",
-              "height": 408.4140625,
-              "panels": "2-3",
-              "sourceRegion": "{\"upper\":[[0,186],[360,204]],\"lower\":[[0,563],[360,539]]}",
-              "top": 11689.7890625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 13.2597%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 196.078125,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,563],[360,539]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 12314.8671875,
-              "width": 390
-            }
-          ]
-        }
-      ],
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 12933,
       "images": [
         {
-          "alt": "魔王の顔。無言の動作。",
+          "src": "art/01-daylight.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 125.796875,
+          "bottom": 905.796875,
+          "displayWidth": 390
         },
         {
-          "alt": "魔王の顔。無言の動作。",
+          "src": "art/01-daylight.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 562.375,
+          "bottom": 1342.375,
+          "displayWidth": 390
         },
         {
-          "alt": "魔王の顔。PO内心：本物だ……。／PR：ミラと申します。",
+          "src": "art/01-daylight.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 810.453125,
+          "bottom": 1590.453125,
+          "displayWidth": 390
         },
         {
-          "alt": "手の置き方。無言の動作。",
+          "src": "art/02-daylight.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 1796.265625,
+          "bottom": 2576.265625,
+          "displayWidth": 390
         },
         {
-          "alt": "手の置き方。DK：怪我はないな。",
+          "src": "art/02-daylight.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 2041.109375,
+          "bottom": 2821.109375,
+          "displayWidth": 390
         },
         {
-          "alt": "手の置き方。PO内心：助けてくれた。",
+          "src": "art/02-daylight.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 2280.5,
+          "bottom": 3060.5,
+          "displayWidth": 390
         },
         {
-          "alt": "言い直す。PR：水門の理由、見ました。／PR：知らずに来て、ごめんなさい。",
+          "src": "art/03.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03.webp"
+          "naturalHeight": 1774,
+          "top": 3277.140625,
+          "bottom": 4057.140625,
+          "displayWidth": 390
         },
         {
-          "alt": "守るための閉鎖。DK：開けば村を押し流す。／PO内心：止めて守ったんだ。",
+          "src": "art/04.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04.webp"
+          "naturalHeight": 1774,
+          "top": 4165.46875,
+          "bottom": 4945.46875,
+          "displayWidth": 390
         },
         {
-          "alt": "なぜ話さなかった。PR：村へ知らせましたか。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 5129.625,
+          "bottom": 5909.625,
+          "displayWidth": 390
         },
         {
-          "alt": "なぜ話さなかった。無言の動作。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 5452.46875,
+          "bottom": 6232.46875,
+          "displayWidth": 390
         },
         {
-          "alt": "なぜ話さなかった。DK：剣を向けられた。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 5796.953125,
+          "bottom": 6576.953125,
+          "displayWidth": 390
         },
         {
-          "alt": "疑う理由。DK：話す前に、敵だと。／PO内心：狼と同じだ。／PR：今日は話をしに。",
+          "src": "art/06.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06.webp"
+          "naturalHeight": 1774,
+          "top": 6880.28125,
+          "bottom": 7660.28125,
+          "displayWidth": 390
         },
         {
-          "alt": "一人でやっていた。無言の動作。",
+          "src": "art/07.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07.webp"
+          "naturalHeight": 1774,
+          "top": 7779.4375,
+          "bottom": 8559.4375,
+          "displayWidth": 390
         },
         {
-          "alt": "一人でやっていた。PR：ずっと一人で？",
+          "src": "art/07.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07.webp"
+          "naturalHeight": 1774,
+          "top": 8009.09375,
+          "bottom": 8789.09375,
+          "displayWidth": 390
         },
         {
-          "alt": "一人でやっていた。DK：他に手がない。",
+          "src": "art/07.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07.webp"
+          "naturalHeight": 1774,
+          "top": 8392.59375,
+          "bottom": 9172.59375,
+          "displayWidth": 390
         },
         {
-          "alt": "すぐ触らない。PO内心：近づいてみる。",
+          "src": "art/08.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08.webp"
+          "naturalHeight": 1774,
+          "top": 9432.5625,
+          "bottom": 10212.5625,
+          "displayWidth": 390
         },
         {
-          "alt": "できることを聞く。PR：何が足りませんか。／DK：手が二つ。別々の場所だ。",
+          "src": "art/09.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09.webp"
+          "naturalHeight": 1774,
+          "top": 10385.890625,
+          "bottom": 11165.890625,
+          "displayWidth": 390
         },
         {
-          "alt": "手伝わせて。PR：私が片方を。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 11263.390625,
+          "bottom": 12043.390625,
+          "displayWidth": 390
         },
         {
-          "alt": "手伝わせて。PO内心：俺は、何ができる？",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 11488.734375,
+          "bottom": 12268.734375,
+          "displayWidth": 390
         },
         {
-          "alt": "手伝わせて。DK：まず、試す。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 11731.390625,
+          "bottom": 12511.390625,
+          "displayWidth": 390
         }
       ],
-      "innerHeight": 844,
-      "innerWidth": 390,
+      "figures": [
+        {
+          "id": "scene-01",
+          "top": 125.796875,
+          "bottom": 1590.4375,
+          "marginAfter": 205.833,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,119],[360,106]]}",
+              "top": 125.796875,
+              "height": 128.90625,
+              "width": 390
+            },
+            {
+              "panels": "2-2",
+              "sourceRegion": "{\"upper\":[[0,119],[360,106]],\"lower\":[[0,293],[360,322]]}",
+              "top": 677.203125,
+              "height": 234,
+              "width": 390
+            },
+            {
+              "panels": "3-4",
+              "sourceRegion": "{\"upper\":[[0,293],[360,322]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 1127.859375,
+              "height": 462.578125,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "足元から顔へ視線を上げる前に姿を待つ",
+              "height": 422.5
+            },
+            {
+              "purpose": "初めての顔を見て犬の反応へ移る",
+              "height": 216.65625
+            }
+          ]
+        },
+        {
+          "id": "scene-02",
+          "top": 1796.265625,
+          "bottom": 3060.484375,
+          "marginAfter": 216.667,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,295],[360,289]]}",
+              "top": 1796.265625,
+              "height": 319.578125,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,295],[360,289]],\"lower\":[[0,464],[360,495]]}",
+              "top": 2354.171875,
+              "height": 223.15625,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,464],[360,495]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 2783.15625,
+              "height": 277.328125,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "空の手を見て、触れられない安全を確かめる",
+              "height": 238.328125
+            },
+            {
+              "purpose": "助けてくれた相手だと理解する",
+              "height": 205.828125
+            }
+          ]
+        },
+        {
+          "id": "scene-03",
+          "top": 3277.140625,
+          "bottom": 4057.140625,
+          "marginAfter": 108.333,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-04",
+          "top": 4165.46875,
+          "bottom": 4945.46875,
+          "marginAfter": 184.167,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-05",
+          "top": 5129.625,
+          "bottom": 6576.953125,
+          "marginAfter": 303.333,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,344],[360,372]]}",
+              "top": 5129.625,
+              "height": 403,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,344],[360,372]],\"lower\":[[0,504],[360,522]]}",
+              "top": 5825.125,
+              "height": 192.828125,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,504],[360,522]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 6342.953125,
+              "height": 234,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "言いにくい記憶が浮かぶまで待つ",
+              "height": 292.5
+            },
+            {
+              "purpose": "剣を向けられた経験から本人の言葉へ戻る",
+              "height": 325
+            }
+          ]
+        },
+        {
+          "id": "scene-06",
+          "top": 6880.28125,
+          "bottom": 7660.28125,
+          "marginAfter": 119.167,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-07",
+          "top": 7779.4375,
+          "bottom": 9172.5625,
+          "marginAfter": 260,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,278],[360,290]]}",
+              "top": 7779.4375,
+              "height": 314.15625,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,278],[360,290]],\"lower\":[[0,543],[360,539]]}",
+              "top": 8310.25,
+              "height": 287.078125,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,543],[360,539]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 8976.484375,
+              "height": 196.078125,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "傷んだ手と道具から一人の作業を読む",
+              "height": 216.65625
+            },
+            {
+              "purpose": "ずっと一人かという問いの後に返事を待つ",
+              "height": 379.15625
+            }
+          ]
+        },
+        {
+          "id": "scene-08",
+          "top": 9432.5625,
+          "bottom": 10212.5625,
+          "marginAfter": 173.333,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-09",
+          "top": 10385.890625,
+          "bottom": 11165.890625,
+          "marginAfter": 97.5,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-10",
+          "top": 11263.390625,
+          "bottom": 12511.359375,
+          "marginAfter": 281.667,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,186],[360,204]]}",
+              "top": 11263.390625,
+              "height": 221,
+              "width": 390
+            },
+            {
+              "panels": "2-3",
+              "sourceRegion": "{\"upper\":[[0,186],[360,204]],\"lower\":[[0,563],[360,539]]}",
+              "top": 11690.21875,
+              "height": 408.40625,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,563],[360,539]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 12315.28125,
+              "height": 196.078125,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "協力の申し出に驚く魔王の返事を待つ",
+              "height": 205.828125
+            },
+            {
+              "purpose": "犬も自分の役割を考えてから練習へ進む",
+              "height": 216.65625
+            }
+          ]
+        }
+      ],
       "links": [
         "../chapters.html",
         "../episode-06/index.html",
         "../episode-08/index.html"
       ],
-      "scrollHeight": 12932,
-      "scrollWidth": 390
+      "pacingWindows": [
+        {
+          "scene": "scene-01",
+          "purpose": "足元から顔へ視線を上げる前に姿を待つ",
+          "screens": [
+            {
+              "file": "pacing-01-1-390-1.png",
+              "scrollY": 0
+            },
+            {
+              "file": "pacing-01-1-390-2.png",
+              "scrollY": 170
+            },
+            {
+              "file": "pacing-01-1-390-3.png",
+              "scrollY": 635
+            }
+          ]
+        },
+        {
+          "scene": "scene-01",
+          "purpose": "初めての顔を見て犬の反応へ移る",
+          "screens": [
+            {
+              "file": "pacing-01-2-390-1.png",
+              "scrollY": 363
+            },
+            {
+              "file": "pacing-01-2-390-2.png",
+              "scrollY": 827
+            },
+            {
+              "file": "pacing-01-2-390-3.png",
+              "scrollY": 1291
+            }
+          ]
+        },
+        {
+          "scene": "scene-02",
+          "purpose": "空の手を見て、触れられない安全を確かめる",
+          "screens": [
+            {
+              "file": "pacing-02-1-390-1.png",
+              "scrollY": 1567
+            },
+            {
+              "file": "pacing-02-1-390-2.png",
+              "scrollY": 2031
+            },
+            {
+              "file": "pacing-02-1-390-3.png",
+              "scrollY": 2496
+            }
+          ]
+        },
+        {
+          "scene": "scene-02",
+          "purpose": "助けてくれた相手だと理解する",
+          "screens": [
+            {
+              "file": "pacing-02-2-390-1.png",
+              "scrollY": 2029
+            },
+            {
+              "file": "pacing-02-2-390-2.png",
+              "scrollY": 2493
+            },
+            {
+              "file": "pacing-02-2-390-3.png",
+              "scrollY": 2957
+            }
+          ]
+        },
+        {
+          "scene": "scene-05",
+          "purpose": "言いにくい記憶が浮かぶまで待つ",
+          "screens": [
+            {
+              "file": "pacing-05-1-390-1.png",
+              "scrollY": 4984
+            },
+            {
+              "file": "pacing-05-1-390-2.png",
+              "scrollY": 5448
+            },
+            {
+              "file": "pacing-05-1-390-3.png",
+              "scrollY": 5912
+            }
+          ]
+        },
+        {
+          "scene": "scene-05",
+          "purpose": "剣を向けられた経験から本人の言葉へ戻る",
+          "screens": [
+            {
+              "file": "pacing-05-2-390-1.png",
+              "scrollY": 5469
+            },
+            {
+              "file": "pacing-05-2-390-2.png",
+              "scrollY": 5934
+            },
+            {
+              "file": "pacing-05-2-390-3.png",
+              "scrollY": 6398
+            }
+          ]
+        },
+        {
+          "scene": "scene-07",
+          "purpose": "傷んだ手と道具から一人の作業を読む",
+          "screens": [
+            {
+              "file": "pacing-07-1-390-1.png",
+              "scrollY": 7545
+            },
+            {
+              "file": "pacing-07-1-390-2.png",
+              "scrollY": 8009
+            },
+            {
+              "file": "pacing-07-1-390-3.png",
+              "scrollY": 8473
+            }
+          ]
+        },
+        {
+          "scene": "scene-07",
+          "purpose": "ずっと一人かという問いの後に返事を待つ",
+          "screens": [
+            {
+              "file": "pacing-07-2-390-1.png",
+              "scrollY": 8049
+            },
+            {
+              "file": "pacing-07-2-390-2.png",
+              "scrollY": 8513
+            },
+            {
+              "file": "pacing-07-2-390-3.png",
+              "scrollY": 8977
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "協力の申し出に驚く魔王の返事を待つ",
+          "screens": [
+            {
+              "file": "pacing-10-1-390-1.png",
+              "scrollY": 10936
+            },
+            {
+              "file": "pacing-10-1-390-2.png",
+              "scrollY": 11400
+            },
+            {
+              "file": "pacing-10-1-390-3.png",
+              "scrollY": 11864
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "犬も自分の役割を考えてから練習へ進む",
+          "screens": [
+            {
+              "file": "pacing-10-2-390-1.png",
+              "scrollY": 11550
+            },
+            {
+              "file": "pacing-10-2-390-2.png",
+              "scrollY": 12014
+            },
+            {
+              "file": "pacing-10-2-390-3.png",
+              "scrollY": 12089
+            }
+          ]
+        }
+      ]
     },
     {
-      "figures": [
-        {
-          "bottom": 1477.296875,
-          "id": "scene-01",
-          "marginAfter": 190,
-          "pauses": [
-            {
-              "height": 390,
-              "purpose": "足元から顔へ視線を上げる前に姿を待つ"
-            },
-            {
-              "height": 200,
-              "purpose": "初めての顔を見て犬の反応へ移る"
-            }
-          ],
-          "top": 125.296875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 89.0756%, 0% 100%)",
-              "height": 119,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,119],[360,106]]}",
-              "top": 125.296875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 6.01852%, 100% 0%, 100% 100%, 0% 86.5741%)",
-              "height": 216,
-              "panels": "2-2",
-              "sourceRegion": "{\"upper\":[[0,119],[360,106]],\"lower\":[[0,293],[360,322]]}",
-              "top": 634.296875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 6.79157%, 100% 100%, 0% 100%)",
-              "height": 427,
-              "panels": "3-4",
-              "sourceRegion": "{\"upper\":[[0,293],[360,322]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 1050.296875,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 2834.296875,
-          "id": "scene-02",
-          "marginAfter": 200,
-          "pauses": [
-            {
-              "height": 220,
-              "purpose": "空の手を見て、触れられない安全を確かめる"
-            },
-            {
-              "height": 190,
-              "purpose": "助けてくれた相手だと理解する"
-            }
-          ],
-          "top": 1667.296875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 97.9661%, 0% 100%)",
-              "height": 295,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,295],[360,289]]}",
-              "top": 1667.296875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 2.91262%, 100% 0%, 100% 100%, 0% 84.9515%)",
-              "height": 206,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,295],[360,289]],\"lower\":[[0,464],[360,495]]}",
-              "top": 2182.296875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 12.1094%, 100% 100%, 0% 100%)",
-              "height": 256,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,464],[360,495]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 2578.296875,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 3754.296875,
-          "id": "scene-03",
-          "marginAfter": 100,
-          "pauses": [],
-          "top": 3034.296875,
-          "windows": []
-        },
-        {
-          "bottom": 4574.296875,
-          "id": "scene-04",
-          "marginAfter": 170,
-          "pauses": [],
-          "top": 3854.296875,
-          "windows": []
-        },
-        {
-          "bottom": 6080.2890625,
-          "id": "scene-05",
-          "marginAfter": 280,
-          "pauses": [
-            {
-              "height": 270,
-              "purpose": "言いにくい記憶が浮かぶまで待つ"
-            },
-            {
-              "height": 300,
-              "purpose": "剣を向けられた経験から本人の言葉へ戻る"
-            }
-          ],
-          "top": 4744.2890625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 92.4731%)",
-              "height": 372,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,344],[360,372]]}",
-              "top": 4744.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 15.7303%, 100% 100%, 0% 89.8876%)",
-              "height": 178,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,344],[360,372]],\"lower\":[[0,504],[360,522]]}",
-              "top": 5386.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 8.33333%, 100% 100%, 0% 100%)",
-              "height": 216,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,504],[360,522]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 5864.2890625,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 7080.2890625,
-          "id": "scene-06",
-          "marginAfter": 110,
-          "pauses": [],
-          "top": 6360.2890625,
-          "windows": []
-        },
-        {
-          "bottom": 8476.2890625,
-          "id": "scene-07",
-          "marginAfter": 240,
-          "pauses": [
-            {
-              "height": 200,
-              "purpose": "傷んだ手と道具から一人の作業を読む"
-            },
-            {
-              "height": 350,
-              "purpose": "ずっと一人かという問いの後に返事を待つ"
-            }
-          ],
-          "top": 7190.2890625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 95.8621%)",
-              "height": 290,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,278],[360,290]]}",
-              "top": 7190.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 4.5283%, 100% 98.4906%, 0% 100%)",
-              "height": 265,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,278],[360,290]],\"lower\":[[0,543],[360,539]]}",
-              "top": 7680.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 2.20994%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 181,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,543],[360,539]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 8295.2890625,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 9436.2890625,
-          "id": "scene-08",
-          "marginAfter": 160,
-          "pauses": [],
-          "top": 8716.2890625,
-          "windows": []
-        },
-        {
-          "bottom": 10316.28125,
-          "id": "scene-09",
-          "marginAfter": 90,
-          "pauses": [],
-          "top": 9596.28125,
-          "windows": []
-        },
-        {
-          "bottom": 11558.28125,
-          "id": "scene-10",
-          "marginAfter": 260,
-          "pauses": [
-            {
-              "height": 190,
-              "purpose": "協力の申し出に驚く魔王の返事を待つ"
-            },
-            {
-              "height": 200,
-              "purpose": "犬も自分の役割を考えてから練習へ進む"
-            }
-          ],
-          "top": 10406.28125,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 91.1765%)",
-              "height": 204,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,186],[360,204]]}",
-              "top": 10406.28125,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 4.77454%, 100% 93.6339%, 0% 100%)",
-              "height": 377,
-              "panels": "2-3",
-              "sourceRegion": "{\"upper\":[[0,186],[360,204]],\"lower\":[[0,563],[360,539]]}",
-              "top": 10800.28125,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 13.2597%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 181,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,563],[360,539]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 11377.28125,
-              "width": 360
-            }
-          ]
-        }
-      ],
+      "innerWidth": 360,
+      "innerHeight": 800,
+      "scrollWidth": 360,
+      "scrollHeight": 11959,
       "images": [
         {
-          "alt": "魔王の顔。無言の動作。",
+          "src": "art/01-daylight.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 125.796875,
+          "bottom": 845.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "魔王の顔。無言の動作。",
+          "src": "art/01-daylight.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 528.8125,
+          "bottom": 1248.8125,
+          "displayWidth": 360
         },
         {
-          "alt": "魔王の顔。PO内心：本物だ……。／PR：ミラと申します。",
+          "src": "art/01-daylight.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 757.796875,
+          "bottom": 1477.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "手の置き方。無言の動作。",
+          "src": "art/02-daylight.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 1667.796875,
+          "bottom": 2387.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "手の置き方。DK：怪我はないな。",
+          "src": "art/02-daylight.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 1893.796875,
+          "bottom": 2613.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "手の置き方。PO内心：助けてくれた。",
+          "src": "art/02-daylight.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02-daylight.webp"
+          "naturalHeight": 1774,
+          "top": 2114.796875,
+          "bottom": 2834.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "言い直す。PR：水門の理由、見ました。／PR：知らずに来て、ごめんなさい。",
+          "src": "art/03.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03.webp"
+          "naturalHeight": 1774,
+          "top": 3034.796875,
+          "bottom": 3754.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "守るための閉鎖。DK：開けば村を押し流す。／PO内心：止めて守ったんだ。",
+          "src": "art/04.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04.webp"
+          "naturalHeight": 1774,
+          "top": 3854.796875,
+          "bottom": 4574.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "なぜ話さなかった。PR：村へ知らせましたか。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 4744.78125,
+          "bottom": 5464.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "なぜ話さなかった。無言の動作。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 5042.78125,
+          "bottom": 5762.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "なぜ話さなかった。DK：剣を向けられた。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 5360.78125,
+          "bottom": 6080.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "疑う理由。DK：話す前に、敵だと。／PO内心：狼と同じだ。／PR：今日は話をしに。",
+          "src": "art/06.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06.webp"
+          "naturalHeight": 1774,
+          "top": 6360.78125,
+          "bottom": 7080.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "一人でやっていた。無言の動作。",
+          "src": "art/07.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07.webp"
+          "naturalHeight": 1774,
+          "top": 7190.78125,
+          "bottom": 7910.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "一人でやっていた。PR：ずっと一人で？",
+          "src": "art/07.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07.webp"
+          "naturalHeight": 1774,
+          "top": 7402.78125,
+          "bottom": 8122.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "一人でやっていた。DK：他に手がない。",
+          "src": "art/07.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07.webp"
+          "naturalHeight": 1774,
+          "top": 7756.78125,
+          "bottom": 8476.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "すぐ触らない。PO内心：近づいてみる。",
+          "src": "art/08.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08.webp"
+          "naturalHeight": 1774,
+          "top": 8716.78125,
+          "bottom": 9436.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "できることを聞く。PR：何が足りませんか。／DK：手が二つ。別々の場所だ。",
+          "src": "art/09.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09.webp"
+          "naturalHeight": 1774,
+          "top": 9596.765625,
+          "bottom": 10316.765625,
+          "displayWidth": 360
         },
         {
-          "alt": "手伝わせて。PR：私が片方を。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 10406.765625,
+          "bottom": 11126.765625,
+          "displayWidth": 360
         },
         {
-          "alt": "手伝わせて。PO内心：俺は、何ができる？",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 10614.765625,
+          "bottom": 11334.765625,
+          "displayWidth": 360
         },
         {
-          "alt": "手伝わせて。DK：まず、試す。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 10838.765625,
+          "bottom": 11558.765625,
+          "displayWidth": 360
         }
       ],
-      "innerHeight": 800,
-      "innerWidth": 360,
+      "figures": [
+        {
+          "id": "scene-01",
+          "top": 125.796875,
+          "bottom": 1477.796875,
+          "marginAfter": 190,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,119],[360,106]]}",
+              "top": 125.796875,
+              "height": 119,
+              "width": 360
+            },
+            {
+              "panels": "2-2",
+              "sourceRegion": "{\"upper\":[[0,119],[360,106]],\"lower\":[[0,293],[360,322]]}",
+              "top": 634.796875,
+              "height": 216,
+              "width": 360
+            },
+            {
+              "panels": "3-4",
+              "sourceRegion": "{\"upper\":[[0,293],[360,322]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 1050.796875,
+              "height": 427,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "足元から顔へ視線を上げる前に姿を待つ",
+              "height": 390
+            },
+            {
+              "purpose": "初めての顔を見て犬の反応へ移る",
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "scene-02",
+          "top": 1667.796875,
+          "bottom": 2834.796875,
+          "marginAfter": 200,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,295],[360,289]]}",
+              "top": 1667.796875,
+              "height": 295,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,295],[360,289]],\"lower\":[[0,464],[360,495]]}",
+              "top": 2182.796875,
+              "height": 206,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,464],[360,495]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 2578.796875,
+              "height": 256,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "空の手を見て、触れられない安全を確かめる",
+              "height": 220
+            },
+            {
+              "purpose": "助けてくれた相手だと理解する",
+              "height": 190
+            }
+          ]
+        },
+        {
+          "id": "scene-03",
+          "top": 3034.796875,
+          "bottom": 3754.796875,
+          "marginAfter": 100,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-04",
+          "top": 3854.796875,
+          "bottom": 4574.796875,
+          "marginAfter": 170,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-05",
+          "top": 4744.78125,
+          "bottom": 6080.78125,
+          "marginAfter": 280,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,344],[360,372]]}",
+              "top": 4744.78125,
+              "height": 372,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,344],[360,372]],\"lower\":[[0,504],[360,522]]}",
+              "top": 5386.78125,
+              "height": 178,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,504],[360,522]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 5864.78125,
+              "height": 216,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "言いにくい記憶が浮かぶまで待つ",
+              "height": 270
+            },
+            {
+              "purpose": "剣を向けられた経験から本人の言葉へ戻る",
+              "height": 300
+            }
+          ]
+        },
+        {
+          "id": "scene-06",
+          "top": 6360.78125,
+          "bottom": 7080.78125,
+          "marginAfter": 110,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-07",
+          "top": 7190.78125,
+          "bottom": 8476.78125,
+          "marginAfter": 240,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,278],[360,290]]}",
+              "top": 7190.78125,
+              "height": 290,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,278],[360,290]],\"lower\":[[0,543],[360,539]]}",
+              "top": 7680.78125,
+              "height": 265,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,543],[360,539]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 8295.78125,
+              "height": 181,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "傷んだ手と道具から一人の作業を読む",
+              "height": 200
+            },
+            {
+              "purpose": "ずっと一人かという問いの後に返事を待つ",
+              "height": 350
+            }
+          ]
+        },
+        {
+          "id": "scene-08",
+          "top": 8716.78125,
+          "bottom": 9436.78125,
+          "marginAfter": 160,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-09",
+          "top": 9596.765625,
+          "bottom": 10316.765625,
+          "marginAfter": 90,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-10",
+          "top": 10406.765625,
+          "bottom": 11558.765625,
+          "marginAfter": 260,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,186],[360,204]]}",
+              "top": 10406.765625,
+              "height": 204,
+              "width": 360
+            },
+            {
+              "panels": "2-3",
+              "sourceRegion": "{\"upper\":[[0,186],[360,204]],\"lower\":[[0,563],[360,539]]}",
+              "top": 10800.765625,
+              "height": 377,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,563],[360,539]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 11377.765625,
+              "height": 181,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "協力の申し出に驚く魔王の返事を待つ",
+              "height": 190
+            },
+            {
+              "purpose": "犬も自分の役割を考えてから練習へ進む",
+              "height": 200
+            }
+          ]
+        }
+      ],
       "links": [
         "../chapters.html",
         "../episode-06/index.html",
         "../episode-08/index.html"
       ],
-      "scrollHeight": 11958,
-      "scrollWidth": 360
+      "pacingWindows": [
+        {
+          "scene": "scene-01",
+          "purpose": "足元から顔へ視線を上げる前に姿を待つ",
+          "screens": [
+            {
+              "file": "pacing-01-1-360-1.png",
+              "scrollY": 0
+            },
+            {
+              "file": "pacing-01-1-360-2.png",
+              "scrollY": 165
+            },
+            {
+              "file": "pacing-01-1-360-3.png",
+              "scrollY": 605
+            }
+          ]
+        },
+        {
+          "scene": "scene-01",
+          "purpose": "初めての顔を見て犬の反応へ移る",
+          "screens": [
+            {
+              "file": "pacing-01-2-360-1.png",
+              "scrollY": 331
+            },
+            {
+              "file": "pacing-01-2-360-2.png",
+              "scrollY": 771
+            },
+            {
+              "file": "pacing-01-2-360-3.png",
+              "scrollY": 1211
+            }
+          ]
+        },
+        {
+          "scene": "scene-02",
+          "purpose": "空の手を見て、触れられない安全を確かめる",
+          "screens": [
+            {
+              "file": "pacing-02-1-360-1.png",
+              "scrollY": 1443
+            },
+            {
+              "file": "pacing-02-1-360-2.png",
+              "scrollY": 1883
+            },
+            {
+              "file": "pacing-02-1-360-3.png",
+              "scrollY": 2323
+            }
+          ]
+        },
+        {
+          "scene": "scene-02",
+          "purpose": "助けてくれた相手だと理解する",
+          "screens": [
+            {
+              "file": "pacing-02-2-360-1.png",
+              "scrollY": 1869
+            },
+            {
+              "file": "pacing-02-2-360-2.png",
+              "scrollY": 2309
+            },
+            {
+              "file": "pacing-02-2-360-3.png",
+              "scrollY": 2749
+            }
+          ]
+        },
+        {
+          "scene": "scene-05",
+          "purpose": "言いにくい記憶が浮かぶまで待つ",
+          "screens": [
+            {
+              "file": "pacing-05-1-360-1.png",
+              "scrollY": 4597
+            },
+            {
+              "file": "pacing-05-1-360-2.png",
+              "scrollY": 5037
+            },
+            {
+              "file": "pacing-05-1-360-3.png",
+              "scrollY": 5477
+            }
+          ]
+        },
+        {
+          "scene": "scene-05",
+          "purpose": "剣を向けられた経験から本人の言葉へ戻る",
+          "screens": [
+            {
+              "file": "pacing-05-2-360-1.png",
+              "scrollY": 5045
+            },
+            {
+              "file": "pacing-05-2-360-2.png",
+              "scrollY": 5485
+            },
+            {
+              "file": "pacing-05-2-360-3.png",
+              "scrollY": 5925
+            }
+          ]
+        },
+        {
+          "scene": "scene-07",
+          "purpose": "傷んだ手と道具から一人の作業を読む",
+          "screens": [
+            {
+              "file": "pacing-07-1-360-1.png",
+              "scrollY": 6961
+            },
+            {
+              "file": "pacing-07-1-360-2.png",
+              "scrollY": 7401
+            },
+            {
+              "file": "pacing-07-1-360-3.png",
+              "scrollY": 7841
+            }
+          ]
+        },
+        {
+          "scene": "scene-07",
+          "purpose": "ずっと一人かという問いの後に返事を待つ",
+          "screens": [
+            {
+              "file": "pacing-07-2-360-1.png",
+              "scrollY": 7426
+            },
+            {
+              "file": "pacing-07-2-360-2.png",
+              "scrollY": 7866
+            },
+            {
+              "file": "pacing-07-2-360-3.png",
+              "scrollY": 8306
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "協力の申し出に驚く魔王の返事を待つ",
+          "screens": [
+            {
+              "file": "pacing-10-1-360-1.png",
+              "scrollY": 10091
+            },
+            {
+              "file": "pacing-10-1-360-2.png",
+              "scrollY": 10531
+            },
+            {
+              "file": "pacing-10-1-360-3.png",
+              "scrollY": 10971
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "犬も自分の役割を考えてから練習へ進む",
+          "screens": [
+            {
+              "file": "pacing-10-2-360-1.png",
+              "scrollY": 10658
+            },
+            {
+              "file": "pacing-10-2-360-2.png",
+              "scrollY": 11098
+            },
+            {
+              "file": "pacing-10-2-360-3.png",
+              "scrollY": 11159
+            }
+          ]
+        }
+      ]
     }
   ],
   "letteringCheck": {
@@ -1014,7 +1387,7 @@
           "right": 204,
           "pause": 190,
           "purpose": "協力の申し出に驚く魔王の返事を待つ",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         },
         {
           "afterPanel": 3,
@@ -1030,6 +1403,5 @@
   "uniqueArtwork": 10,
   "displayWindows": 20,
   "standaloneArtworkBytesMatch": true,
-  "sourcePixelsCovered": true,
   "physicalDeviceTest": false
 }

@@ -12,12 +12,18 @@
 
 全長PNGは実際のスマホ画面を順に撮り、Sharpで表示画素をそのまま連結する。32,768pxを超えるChromeの一括キャプチャで後半が冒頭へ巻き戻る問題を避け、全ての画面と連結後の画素一致を確認する。原画は編集しない。SharpはPlaywrightと同じランタイムから解決し、別配置なら`WEBTOON_SHARP_MODULE`で指定する。
 
-原画を更新したら必ず該当話の両幅で再確認する。採用外の画像は、記録された修正に必要な参照原画だけを `generation/inputs` へ置き、各生成記録の相対参照も更新する。別の公開版や旧リーダーを残さない。リーダーの画像は各話の `manifest.json` に並ぶ採用原画だけ（第1話40枚、第2〜10話は各8枚）。
+原画を更新したら必ず該当話の両幅で再確認する。採用外の画像は、記録された修正に必要な参照原画だけを `generation/inputs` へ置き、各生成記録の相対参照も更新する。別の公開版や旧リーダーを残さない。リーダーの画像は各話の `manifest.json` に並ぶ採用原画だけ（第1話40枚、第2話9枚、第3〜10話は各8枚）。
 
-現在の結果は [delivery.json](delivery.json) と [制作台帳](status.md)。ローカルでは11件の配布物Pythonテストと4件の原画格納テスト、iOS同期チェック（8作品62リーダー）、Swiftの5組のテストを実行。mainの作品一覧を統合した後も全て通過。CIとレビューは [PR #27](https://github.com/quantum-box/manga/pull/27) の最新HEADを確認する。
+現在の結果は [delivery.json](delivery.json) と [制作台帳](status.md)。第2〜10話の改稿手順・確認範囲・境界判断は [remake/review.md](remake/review.md)。CI・レビューとmainへの反映、公開サーバーの照合結果はdelivery.jsonに記録する。
 
 第1話の長尺改稿は [episode-01-scroll.json](episode-01-scroll.json) と [episode-01-review.md](episode-01-review.md)。通常版は原画PNGを直接読む。内包版が100MiBを超える場合は `compact_reader.py` がUTF-8の格納方式を使い、ブラウザーで元のPNGバイトを復元する。原画のリサイズ・再圧縮・文字の描き足しは行わない。描画スクリプトは復元した全原画のSHA-256と、通常版・単独版の全長一致も確認する。
 
 今回の導入改稿は [episode-01-causality.json](episode-01-causality.json) に記録。格納後も100MiBを超える第1話では`reader.html`と三個の`reader-art-*.js`を同じフォルダーで使う。一ファイルだけをコピーした単独版ではない。iOS同梱版は`index.html`と原画を同期する。
 
 料理の改稿は [episode-01-food.json](episode-01-food.json) に記録。第1話の調理・配膳・ひと口の3原画を、なめらかな煮汁と読みやすい具の形で揃えた。粒の密集を避ける基準は [food-art.md](../series/food-art.md) と新規作画用の共通プロンプトへ反映。過去に実行した指示は保存し、採用原画をリサイズ・再圧縮しない。
+
+## 第2〜10話の全編改稿
+
+`remake/episodes.json` と `remake/windows.json` に、採用した場面・会話・表示窓・余白を保存。`remake/package.py 2 ... 10` で包装し、`remake/render.cjs 2 ... 10` で両スマホ幅を確認する。メインの `build.py 話数` も改稿版へ振り分ける。画像は各話の `art/*remake*.png`、実際の指示と無加工SHA-256は `generation/*remake*`。再包装は原画を変更しない。
+
+単独HTMLは原画を一度だけ格納し、同じ原画を使う表示窓に共通のBlob URLを渡す。JavaScriptを使う。通常の `index.html` はPNGとCSSで読める。両者の高さ・原画バイト・全長キャプチャの画素一致を検証する。検証用レビューHTMLの参照も相対パスで、別のチェックアウトで読める。
