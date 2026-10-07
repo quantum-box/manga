@@ -40,7 +40,8 @@ Scene/backdrop: [consistent setting and time].
 Camera: [distance: wide / medium / close-up; height and angle; whose viewpoint, if relevant].
 Composition: [primary focal element and path to the next beat; reserve the planned balloon area without covering faces, hands or clues].
 Text: Render only the specified dialogue, sound effects and in-world display text. Integrate them with the illustration. Speech uses white balloons and true vertical Japanese: upright glyphs, top-to-bottom columns ordered right-to-left. Do not rotate horizontal sentences sideways. No unlisted text or watermark.
-Dialogue: [speaker, exact full text, balloon reading order, and each vertical column listed in right-to-left order].
+Text breaks: Omit Japanese commas and full stops, and sentence-separating commas or periods. Preserve specified expressive marks and meaningful symbols. Use the supplied phrase-boundary line breaks; for vertical dialogue, each line becomes one column. Do not split words or leave a lone particle or final character.
+Dialogue: [speaker, exact full text without sentence punctuation and with planned line breaks, balloon reading order, and each vertical column listed in right-to-left order].
 Sound effects: [exact word, producing action/material, position relative to the source, scale and drawn letter style, beginning/continuation/end; or none only when no sound persists, with a reason for quiet]. Keep sounds outside speech/thought balloons; their orientation follows the action, separately from dialogue.
 Voice: [spoken / thought; intended listener; volume, emotion and breath for THIS utterance].
 Balloon design: [contour, line weight/color, white inner padding, and continuous speech tail or thought dots].
@@ -70,7 +71,7 @@ Do not include later replies, new locations, or every character from the referen
 
 文字を個別編集する指定などで後から組版する場合だけ、後組版する文字の種類と予約領域を指定する。セリフだけを後組版し、効果音は絵と一緒に作る場合は `No dialogue or speech balloons; render only the specified sound effects.` とする。全ての文字を後組版する場合、または完全な静けさを意図する場合にだけ `No text, balloons or sound effects.` を使う。
 
-「無言」を自動で文字なしへ変換しない。発話なしと発生音・継続音の有無を分けて指定する。たとえば歩くコマは `Dialogue: none. Sound effects: コツ、コツ near the boots, small hard lettering.`、継続音もなく聞き手が言葉を受け止めるコマは `Dialogue: none. Sound effects: none; preserve a quiet reaction.` と分ける。セリフと音が共存するコマも別々に指定する。効果音を `speaker: 音` の発話へ入れず、音のない感情コマへ動作音を一律に足さない。過去の実使用指示は履歴として保ち、修正した次回用指示や実行した編集指示と区別する。
+「無言」を自動で文字なしへ変換しない。発話なしと発生音・継続音の有無を分けて指定する。たとえば歩くコマは `Dialogue: none. Sound effects: two separate コツ inscriptions near the boots, small hard lettering, no comma between them.`、継続音もなく聞き手が言葉を受け止めるコマは `Dialogue: none. Sound effects: none; preserve a quiet reaction.` と分ける。セリフと音が共存するコマも別々に指定する。効果音を `speaker: 音` の発話へ入れず、音のない感情コマへ動作音を一律に足さない。過去の実使用指示は履歴として保ち、修正した次回用指示や実行した編集指示と区別する。
 
 ## 構成の指示を変える
 
