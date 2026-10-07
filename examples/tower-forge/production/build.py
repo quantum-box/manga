@@ -18,7 +18,7 @@ def dims(path):
     return struct.unpack('>II',data[16:24])
 
 def main():
-    eps=json.loads((ROOT/'production/episodes.json').read_text(encoding='utf-8'))
+    eps=[json.loads((ROOT/f'episode-{n:02d}/episode.json').read_text(encoding='utf-8')) for n in range(1,11)]
     adopted_file=ROOT/'production/adopted-assets.json'
     adopted=json.loads(adopted_file.read_text(encoding='utf-8')) if adopted_file.exists() else {}
     ready=[]

@@ -287,6 +287,7 @@ struct TitleDetailView: View {
 
 struct ReaderView: View {
     let title: MangaTitle
+    @Environment(\.dismiss) private var dismiss
     @State private var episode: Episode
     @State private var loadState = ReaderLoadState.loading
     @State private var reloadID = UUID()
@@ -326,7 +327,8 @@ struct ReaderView: View {
             if let url = Catalog.readerURL(episode.reader) {
                 ZStack {
                     WebtoonReader(url: url, background: episode.background, loadState: $loadState, onRevision: { contentRevision = $0 }, onNavigate: { destination in
-                        if let linked = title.linkedEpisode(to: destination) { openEpisode(linked) }
+                        if title.linksToChapterList(to: destination) { dismiss() }
+                        else if let linked = title.linkedEpisode(to: destination) { openEpisode(linked) }
                     }, onScroll: {
                         if loadState == .ready { setControlsVisible(false) }
                     }, onTap: {
@@ -580,7 +582,7 @@ struct WebtoonReader: UIViewRepresentable {
 
         func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction,
                      decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-            // Chapter links update native state before loading a different episode directory.
+            // Episode and chapter-list links are handled natively without loading another directory.
             if navigationAction.navigationType == .linkActivated {
                 decisionHandler(.cancel)
                 if requestedURL?.isFileURL == true, let destination = navigationAction.request.url {

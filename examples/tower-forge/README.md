@@ -37,7 +37,7 @@ python3 scripts/sync_ios_webtoons.py
 python3 scripts/sync_ios_webtoons.py --check
 ```
 
-組み込み image_gen の原本を保存し、必要な修正だけ編集機能で作った。現行画像は `production/adopted-assets.json`、初稿の原本は `production/asset-provenance.json`、第1話改稿の原本と正確な実使用指示は `production/revision-provenance.json`。画像生成を再実行せずにリーダーを再構築できる。原本は現行版の編集元として残し、旧話版のリーダーは併存させない。旧本文はGit履歴から復元できる。
+組み込み image_gen の原本を保存し、必要な修正だけ編集機能で作った。現行画像は `production/adopted-assets.json`、初稿の原本は `production/asset-provenance.json`、第1話改稿の原本と正確な実使用指示は `production/revision-provenance.json`。再構築は各話の採用済み `episode.json` から行い、画像生成を再実行しない。旧稿の本文・絵コンテと採用済み改稿の専用スクリプトは削除し、過去の内容はGit履歴から復元する。現行版が編集に参照した原画・実行指示・検証資料は残す。
 
 ローカルのカタログとiOS同梱データへ収録。ユーザーの指示を受け、制作物とスキル更新をGitHubのPRへ提出する。配信サーバーへの公開とTestFlight配布は未実施。
 
