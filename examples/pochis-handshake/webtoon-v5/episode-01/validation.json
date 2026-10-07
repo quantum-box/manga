@@ -1,774 +1,1075 @@
 {
   "episode": 1,
-  "browserTool": "cua_repl",
   "views": [
     {
-      "figures": [
-        {
-          "bottom": 905.296875,
-          "id": "scene-01",
-          "marginAfter": 65,
-          "pauses": [],
-          "top": 125.296875,
-          "windows": []
-        },
-        {
-          "bottom": 1750.296875,
-          "id": "scene-02",
-          "marginAfter": 43.3333,
-          "pauses": [],
-          "top": 970.296875,
-          "windows": []
-        },
-        {
-          "bottom": 2768.625,
-          "id": "scene-03",
-          "marginAfter": 238.333,
-          "pauses": [
-            {
-              "height": 195,
-              "purpose": "水面の自分を見つめ、姿を理解するまで待つ"
-            }
-          ],
-          "top": 1793.625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 357.5,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,330],[360,330]]}",
-              "top": 1793.625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 422.5,
-              "panels": "3-4",
-              "sourceRegion": "{\"upper\":[[0,330],[360,330]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 2346.125,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 4252.7734375,
-          "id": "scene-04",
-          "marginAfter": 205.833,
-          "pauses": [
-            {
-              "height": 205.828125,
-              "purpose": "昨日の記憶へ視点を切り替える"
-            },
-            {
-              "height": 260,
-              "purpose": "雨の記憶から、いまの身体へ戻る"
-            }
-          ],
-          "top": 3006.953125,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 255.6640625,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,236],[360,236]]}",
-              "top": 3006.953125,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 293.578125,
-              "panels": "2-3",
-              "sourceRegion": "{\"upper\":[[0,236],[360,236]],\"lower\":[[0,507],[360,507]]}",
-              "top": 3468.4453125,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 230.75,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,507],[360,507]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 4022.0234375,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 5238.6015625,
-          "id": "scene-05",
-          "marginAfter": 140.833,
-          "pauses": [],
-          "top": 4458.6015625,
-          "windows": []
-        },
-        {
-          "bottom": 6159.4296875,
-          "id": "scene-06",
-          "marginAfter": 59.5833,
-          "pauses": [],
-          "top": 5379.4296875,
-          "windows": []
-        },
-        {
-          "bottom": 7502.75,
-          "id": "scene-07",
-          "marginAfter": 390,
-          "pauses": [
-            {
-              "height": 195,
-              "purpose": "異世界と知った後に広い景色を受け止める"
-            },
-            {
-              "height": 292.5,
-              "purpose": "誰もいない静けさを読む"
-            }
-          ],
-          "top": 6219.0078125,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 97.6879%, 0% 100%)",
-              "height": 374.828125,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,346],[360,338]]}",
-              "top": 6219.0078125,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 3.9801%, 100% 0%, 100% 96.5174%, 0% 100%)",
-              "height": 217.75,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,346],[360,338]],\"lower\":[[0,539],[360,532]]}",
-              "top": 6788.8359375,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 3.7234%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 203.6640625,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,539],[360,532]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 7299.0859375,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 9214.40625,
-          "id": "scene-08",
-          "marginAfter": 195,
-          "pauses": [
-            {
-              "height": 346.6640625,
-              "purpose": "声だけが届き、耳を澄ませる"
-            },
-            {
-              "height": 195,
-              "purpose": "助けに向かう前の怖さを残す"
-            }
-          ],
-          "top": 7892.75,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 141.9140625,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,131],[360,131]]}",
-              "top": 7892.75,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 380.25,
-              "panels": "2-3",
-              "sourceRegion": "{\"upper\":[[0,131],[360,131]],\"lower\":[[0,482],[360,482]]}",
-              "top": 8381.328125,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 257.828125,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,482],[360,482]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 8956.578125,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 10369.234375,
-          "id": "scene-09",
-          "marginAfter": 151.667,
-          "pauses": [
-            {
-              "height": 162.5,
-              "purpose": "放っておけないと決めてから動き出す"
-            }
-          ],
-          "top": 9409.40625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 91.4894%)",
-              "height": 203.6640625,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,172],[360,188]]}",
-              "top": 9409.40625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 2.91971%, 100% 100%, 0% 100%)",
-              "height": 593.6640625,
-              "panels": "2-4",
-              "sourceRegion": "{\"upper\":[[0,172],[360,188]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 9775.5703125,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 11300.8984375,
-          "id": "scene-10",
-          "marginAfter": 281.667,
-          "pauses": [],
-          "top": 10520.8984375,
-          "windows": []
-        }
-      ],
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 11723,
       "images": [
         {
-          "alt": "目覚め。PO内心：寝坊した？／PO内心：手が……肉球？／PO内心：両手とも!?",
+          "src": "art/01-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 125.796875,
+          "bottom": 905.796875,
+          "displayWidth": 390
         },
         {
-          "alt": "四本足の練習。PO内心：立てない！／PO内心：こう……か？／PO内心：歩けた。",
+          "src": "art/02-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 970.796875,
+          "bottom": 1750.796875,
+          "displayWidth": 390
         },
         {
-          "alt": "水面の顔。無言の動作。",
+          "src": "art/03-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 1794.125,
+          "bottom": 2574.125,
+          "displayWidth": 390
         },
         {
-          "alt": "水面の顔。PO内心：柴犬じゃん。／PO内心：しっぽまで。",
+          "src": "art/03-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 1989.140625,
+          "bottom": 2769.140625,
+          "displayWidth": 390
         },
         {
-          "alt": "昨日の記憶。PO内心：昨日は……。",
+          "src": "art/04-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 3007.453125,
+          "bottom": 3787.453125,
+          "displayWidth": 390
         },
         {
-          "alt": "昨日の記憶。無言の動作。",
+          "src": "art/04-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 3213.28125,
+          "bottom": 3993.28125,
+          "displayWidth": 390
         },
         {
-          "alt": "昨日の記憶。PO内心：帰り道だった。",
+          "src": "art/04-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 3473.265625,
+          "bottom": 4253.265625,
+          "displayWidth": 390
         },
         {
-          "alt": "言葉が出ない。PO内心：助けて……。／PO発声：ワン！／PO内心：声まで犬だ。",
+          "src": "art/05-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 4459.09375,
+          "bottom": 5239.09375,
+          "displayWidth": 390
         },
         {
-          "alt": "犬の身体は正直。PO内心：今、腹減る？／PO内心：体が勝手に。",
+          "src": "art/06-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 5379.921875,
+          "bottom": 6159.921875,
+          "displayWidth": 390
         },
         {
-          "alt": "知らない世界。PO内心：日本じゃない。",
+          "src": "art/07-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 6219.5,
+          "bottom": 6999.5,
+          "displayWidth": 390
         },
         {
-          "alt": "知らない世界。無言の動作。",
+          "src": "art/07-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 6423.171875,
+          "bottom": 7203.171875,
+          "displayWidth": 390
         },
         {
-          "alt": "知らない世界。PO内心：誰もいない。",
+          "src": "art/07-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 6723.28125,
+          "bottom": 7503.28125,
+          "displayWidth": 390
         },
         {
-          "alt": "聞こえた声。TO画面外：だれか……。",
+          "src": "art/08-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 7893.234375,
+          "bottom": 8673.234375,
+          "displayWidth": 390
         },
         {
-          "alt": "聞こえた声。PO内心：今の、子供？",
+          "src": "art/08-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 8239.890625,
+          "bottom": 9019.890625,
+          "displayWidth": 390
         },
         {
-          "alt": "聞こえた声。PO内心：俺も怖い。",
+          "src": "art/08-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 8434.90625,
+          "bottom": 9214.90625,
+          "displayWidth": 390
         },
         {
-          "alt": "一歩だけ。PO内心：でも放っとけない。",
+          "src": "art/09-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 9409.875,
+          "bottom": 10189.875,
+          "displayWidth": 390
         },
         {
-          "alt": "一歩だけ。PO内心：ここからだ。",
+          "src": "art/09-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 9589.703125,
+          "bottom": 10369.703125,
+          "displayWidth": 390
         },
         {
-          "alt": "見つけた。TO：犬……？／PO内心：待ってろ。",
+          "src": "art/10-lettering.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 10521.34375,
+          "bottom": 11301.34375,
+          "displayWidth": 390
         }
       ],
-      "innerHeight": 844,
-      "innerWidth": 390,
+      "figures": [
+        {
+          "id": "scene-01",
+          "top": 125.796875,
+          "bottom": 905.796875,
+          "marginAfter": 65,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-02",
+          "top": 970.796875,
+          "bottom": 1750.796875,
+          "marginAfter": 43.3333,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-03",
+          "top": 1794.125,
+          "bottom": 2769.125,
+          "marginAfter": 238.333,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,330],[360,330]]}",
+              "top": 1794.125,
+              "height": 357.5,
+              "width": 390
+            },
+            {
+              "panels": "3-4",
+              "sourceRegion": "{\"upper\":[[0,330],[360,330]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 2346.625,
+              "height": 422.5,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "水面の自分を見つめ、姿を理解するまで待つ",
+              "height": 195
+            }
+          ]
+        },
+        {
+          "id": "scene-04",
+          "top": 3007.453125,
+          "bottom": 4253.265625,
+          "marginAfter": 205.833,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,236],[360,236]]}",
+              "top": 3007.453125,
+              "height": 255.65625,
+              "width": 390
+            },
+            {
+              "panels": "2-3",
+              "sourceRegion": "{\"upper\":[[0,236],[360,236]],\"lower\":[[0,507],[360,507]]}",
+              "top": 3468.9375,
+              "height": 293.578125,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,507],[360,507]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 4022.515625,
+              "height": 230.75,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "昨日の記憶へ視点を切り替える",
+              "height": 205.828125
+            },
+            {
+              "purpose": "雨の記憶から、いまの身体へ戻る",
+              "height": 260
+            }
+          ]
+        },
+        {
+          "id": "scene-05",
+          "top": 4459.09375,
+          "bottom": 5239.09375,
+          "marginAfter": 140.833,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-06",
+          "top": 5379.921875,
+          "bottom": 6159.921875,
+          "marginAfter": 59.5833,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-07",
+          "top": 6219.5,
+          "bottom": 7503.234375,
+          "marginAfter": 390,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,346],[360,338]]}",
+              "top": 6219.5,
+              "height": 374.828125,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,346],[360,338]],\"lower\":[[0,539],[360,532]]}",
+              "top": 6789.328125,
+              "height": 217.75,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,539],[360,532]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 7299.578125,
+              "height": 203.65625,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "異世界と知った後に広い景色を受け止める",
+              "height": 195
+            },
+            {
+              "purpose": "誰もいない静けさを読む",
+              "height": 292.5
+            }
+          ]
+        },
+        {
+          "id": "scene-08",
+          "top": 7893.234375,
+          "bottom": 9214.875,
+          "marginAfter": 195,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,131],[360,131]]}",
+              "top": 7893.234375,
+              "height": 141.90625,
+              "width": 390
+            },
+            {
+              "panels": "2-3",
+              "sourceRegion": "{\"upper\":[[0,131],[360,131]],\"lower\":[[0,482],[360,482]]}",
+              "top": 8381.796875,
+              "height": 380.25,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,482],[360,482]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 8957.046875,
+              "height": 257.828125,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "声だけが届き、耳を澄ませる",
+              "height": 346.65625
+            },
+            {
+              "purpose": "助けに向かう前の怖さを残す",
+              "height": 195
+            }
+          ]
+        },
+        {
+          "id": "scene-09",
+          "top": 9409.875,
+          "bottom": 10369.6875,
+          "marginAfter": 151.667,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,172],[360,188]]}",
+              "top": 9409.875,
+              "height": 203.65625,
+              "width": 390
+            },
+            {
+              "panels": "2-4",
+              "sourceRegion": "{\"upper\":[[0,172],[360,188]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 9776.03125,
+              "height": 593.65625,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "放っておけないと決めてから動き出す",
+              "height": 162.5
+            }
+          ]
+        },
+        {
+          "id": "scene-10",
+          "top": 10521.34375,
+          "bottom": 11301.34375,
+          "marginAfter": 281.667,
+          "windows": [],
+          "pauses": []
+        }
+      ],
       "links": [
         "../chapters.html",
         "../episode-02/index.html"
       ],
-      "scrollHeight": 11722,
-      "scrollWidth": 390
+      "pacingWindows": [
+        {
+          "scene": "scene-03",
+          "purpose": "水面の自分を見つめ、姿を理解するまで待つ",
+          "screens": [
+            {
+              "file": "pacing-03-1-390-1.png",
+              "scrollY": 1603
+            },
+            {
+              "file": "pacing-03-1-390-2.png",
+              "scrollY": 2067
+            },
+            {
+              "file": "pacing-03-1-390-3.png",
+              "scrollY": 2531
+            }
+          ]
+        },
+        {
+          "scene": "scene-04",
+          "purpose": "昨日の記憶へ視点を切り替える",
+          "screens": [
+            {
+              "file": "pacing-04-1-390-1.png",
+              "scrollY": 2715
+            },
+            {
+              "file": "pacing-04-1-390-2.png",
+              "scrollY": 3179
+            },
+            {
+              "file": "pacing-04-1-390-3.png",
+              "scrollY": 3643
+            }
+          ]
+        },
+        {
+          "scene": "scene-04",
+          "purpose": "雨の記憶から、いまの身体へ戻る",
+          "screens": [
+            {
+              "file": "pacing-04-2-390-1.png",
+              "scrollY": 3214
+            },
+            {
+              "file": "pacing-04-2-390-2.png",
+              "scrollY": 3678
+            },
+            {
+              "file": "pacing-04-2-390-3.png",
+              "scrollY": 4142
+            }
+          ]
+        },
+        {
+          "scene": "scene-07",
+          "purpose": "異世界と知った後に広い景色を受け止める",
+          "screens": [
+            {
+              "file": "pacing-07-1-390-1.png",
+              "scrollY": 6046
+            },
+            {
+              "file": "pacing-07-1-390-2.png",
+              "scrollY": 6510
+            },
+            {
+              "file": "pacing-07-1-390-3.png",
+              "scrollY": 6974
+            }
+          ]
+        },
+        {
+          "scene": "scene-07",
+          "purpose": "誰もいない静けさを読む",
+          "screens": [
+            {
+              "file": "pacing-07-2-390-1.png",
+              "scrollY": 6458
+            },
+            {
+              "file": "pacing-07-2-390-2.png",
+              "scrollY": 6923
+            },
+            {
+              "file": "pacing-07-2-390-3.png",
+              "scrollY": 7387
+            }
+          ]
+        },
+        {
+          "scene": "scene-08",
+          "purpose": "声だけが届き、耳を澄ませる",
+          "screens": [
+            {
+              "file": "pacing-08-1-390-1.png",
+              "scrollY": 7487
+            },
+            {
+              "file": "pacing-08-1-390-2.png",
+              "scrollY": 7951
+            },
+            {
+              "file": "pacing-08-1-390-3.png",
+              "scrollY": 8415
+            }
+          ]
+        },
+        {
+          "scene": "scene-08",
+          "purpose": "助けに向かう前の怖さを残す",
+          "screens": [
+            {
+              "file": "pacing-08-2-390-1.png",
+              "scrollY": 8213
+            },
+            {
+              "file": "pacing-08-2-390-2.png",
+              "scrollY": 8678
+            },
+            {
+              "file": "pacing-08-2-390-3.png",
+              "scrollY": 9142
+            }
+          ]
+        },
+        {
+          "scene": "scene-09",
+          "purpose": "放っておけないと決めてから動き出す",
+          "screens": [
+            {
+              "file": "pacing-09-1-390-1.png",
+              "scrollY": 9065
+            },
+            {
+              "file": "pacing-09-1-390-2.png",
+              "scrollY": 9529
+            },
+            {
+              "file": "pacing-09-1-390-3.png",
+              "scrollY": 9993
+            }
+          ]
+        }
+      ]
     },
     {
-      "figures": [
-        {
-          "bottom": 845.296875,
-          "id": "scene-01",
-          "marginAfter": 60,
-          "pauses": [],
-          "top": 125.296875,
-          "windows": []
-        },
-        {
-          "bottom": 1625.296875,
-          "id": "scene-02",
-          "marginAfter": 40,
-          "pauses": [],
-          "top": 905.296875,
-          "windows": []
-        },
-        {
-          "bottom": 2565.2890625,
-          "id": "scene-03",
-          "marginAfter": 220,
-          "pauses": [
-            {
-              "height": 180,
-              "purpose": "水面の自分を見つめ、姿を理解するまで待つ"
-            }
-          ],
-          "top": 1665.2890625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 330,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,330],[360,330]]}",
-              "top": 1665.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 390,
-              "panels": "3-4",
-              "sourceRegion": "{\"upper\":[[0,330],[360,330]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 2175.2890625,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 3935.2890625,
-          "id": "scene-04",
-          "marginAfter": 190,
-          "pauses": [
-            {
-              "height": 190,
-              "purpose": "昨日の記憶へ視点を切り替える"
-            },
-            {
-              "height": 240,
-              "purpose": "雨の記憶から、いまの身体へ戻る"
-            }
-          ],
-          "top": 2785.2890625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 236,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,236],[360,236]]}",
-              "top": 2785.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 271,
-              "panels": "2-3",
-              "sourceRegion": "{\"upper\":[[0,236],[360,236]],\"lower\":[[0,507],[360,507]]}",
-              "top": 3211.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 213,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,507],[360,507]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 3722.2890625,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 4845.2890625,
-          "id": "scene-05",
-          "marginAfter": 130,
-          "pauses": [],
-          "top": 4125.2890625,
-          "windows": []
-        },
-        {
-          "bottom": 5695.2890625,
-          "id": "scene-06",
-          "marginAfter": 55,
-          "pauses": [],
-          "top": 4975.2890625,
-          "windows": []
-        },
-        {
-          "bottom": 6935.2890625,
-          "id": "scene-07",
-          "marginAfter": 360,
-          "pauses": [
-            {
-              "height": 180,
-              "purpose": "異世界と知った後に広い景色を受け止める"
-            },
-            {
-              "height": 270,
-              "purpose": "誰もいない静けさを読む"
-            }
-          ],
-          "top": 5750.2890625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 97.6879%, 0% 100%)",
-              "height": 346,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,346],[360,338]]}",
-              "top": 5750.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 3.9801%, 100% 0%, 100% 96.5174%, 0% 100%)",
-              "height": 201,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,346],[360,338]],\"lower\":[[0,539],[360,532]]}",
-              "top": 6276.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 3.7234%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 188,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,539],[360,532]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 6747.2890625,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 8515.2890625,
-          "id": "scene-08",
-          "marginAfter": 180,
-          "pauses": [
-            {
-              "height": 320,
-              "purpose": "声だけが届き、耳を澄ませる"
-            },
-            {
-              "height": 180,
-              "purpose": "助けに向かう前の怖さを残す"
-            }
-          ],
-          "top": 7295.2890625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 131,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,131],[360,131]]}",
-              "top": 7295.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 351,
-              "panels": "2-3",
-              "sourceRegion": "{\"upper\":[[0,131],[360,131]],\"lower\":[[0,482],[360,482]]}",
-              "top": 7746.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 238,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,482],[360,482]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 8277.2890625,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 9581.2890625,
-          "id": "scene-09",
-          "marginAfter": 140,
-          "pauses": [
-            {
-              "height": 150,
-              "purpose": "放っておけないと決めてから動き出す"
-            }
-          ],
-          "top": 8695.2890625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 91.4894%)",
-              "height": 188,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,172],[360,188]]}",
-              "top": 8695.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 2.91971%, 100% 100%, 0% 100%)",
-              "height": 548,
-              "panels": "2-4",
-              "sourceRegion": "{\"upper\":[[0,172],[360,188]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 9033.2890625,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 10441.2890625,
-          "id": "scene-10",
-          "marginAfter": 260,
-          "pauses": [],
-          "top": 9721.2890625,
-          "windows": []
-        }
-      ],
+      "innerWidth": 360,
+      "innerHeight": 800,
+      "scrollWidth": 360,
+      "scrollHeight": 10842,
       "images": [
         {
-          "alt": "目覚め。PO内心：寝坊した？／PO内心：手が……肉球？／PO内心：両手とも!?",
+          "src": "art/01-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 125.796875,
+          "bottom": 845.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "四本足の練習。PO内心：立てない！／PO内心：こう……か？／PO内心：歩けた。",
+          "src": "art/02-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 905.796875,
+          "bottom": 1625.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "水面の顔。無言の動作。",
+          "src": "art/03-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 1665.78125,
+          "bottom": 2385.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "水面の顔。PO内心：柴犬じゃん。／PO内心：しっぽまで。",
+          "src": "art/03-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 1845.796875,
+          "bottom": 2565.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "昨日の記憶。PO内心：昨日は……。",
+          "src": "art/04-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 2785.78125,
+          "bottom": 3505.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "昨日の記憶。無言の動作。",
+          "src": "art/04-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 2975.78125,
+          "bottom": 3695.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "昨日の記憶。PO内心：帰り道だった。",
+          "src": "art/04-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 3215.78125,
+          "bottom": 3935.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "言葉が出ない。PO内心：助けて……。／PO発声：ワン！／PO内心：声まで犬だ。",
+          "src": "art/05-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 4125.78125,
+          "bottom": 4845.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "犬の身体は正直。PO内心：今、腹減る？／PO内心：体が勝手に。",
+          "src": "art/06-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 4975.78125,
+          "bottom": 5695.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "知らない世界。PO内心：日本じゃない。",
+          "src": "art/07-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 5750.78125,
+          "bottom": 6470.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "知らない世界。無言の動作。",
+          "src": "art/07-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 5938.78125,
+          "bottom": 6658.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "知らない世界。PO内心：誰もいない。",
+          "src": "art/07-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 6215.78125,
+          "bottom": 6935.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "聞こえた声。TO画面外：だれか……。",
+          "src": "art/08-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 7295.78125,
+          "bottom": 8015.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "聞こえた声。PO内心：今の、子供？",
+          "src": "art/08-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 7615.78125,
+          "bottom": 8335.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "聞こえた声。PO内心：俺も怖い。",
+          "src": "art/08-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 7795.78125,
+          "bottom": 8515.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "一歩だけ。PO内心：でも放っとけない。",
+          "src": "art/09-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 8695.78125,
+          "bottom": 9415.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "一歩だけ。PO内心：ここからだ。",
+          "src": "art/09-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 8861.78125,
+          "bottom": 9581.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "見つけた。TO：犬……？／PO内心：待ってろ。",
+          "src": "art/10-lettering.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10-lettering.webp"
+          "naturalHeight": 1774,
+          "top": 9721.78125,
+          "bottom": 10441.78125,
+          "displayWidth": 360
         }
       ],
-      "innerHeight": 800,
-      "innerWidth": 360,
+      "figures": [
+        {
+          "id": "scene-01",
+          "top": 125.796875,
+          "bottom": 845.796875,
+          "marginAfter": 60,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-02",
+          "top": 905.796875,
+          "bottom": 1625.796875,
+          "marginAfter": 40,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-03",
+          "top": 1665.78125,
+          "bottom": 2565.78125,
+          "marginAfter": 220,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,330],[360,330]]}",
+              "top": 1665.78125,
+              "height": 330,
+              "width": 360
+            },
+            {
+              "panels": "3-4",
+              "sourceRegion": "{\"upper\":[[0,330],[360,330]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 2175.78125,
+              "height": 390,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "水面の自分を見つめ、姿を理解するまで待つ",
+              "height": 180
+            }
+          ]
+        },
+        {
+          "id": "scene-04",
+          "top": 2785.78125,
+          "bottom": 3935.78125,
+          "marginAfter": 190,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,236],[360,236]]}",
+              "top": 2785.78125,
+              "height": 236,
+              "width": 360
+            },
+            {
+              "panels": "2-3",
+              "sourceRegion": "{\"upper\":[[0,236],[360,236]],\"lower\":[[0,507],[360,507]]}",
+              "top": 3211.78125,
+              "height": 271,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,507],[360,507]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3722.78125,
+              "height": 213,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "昨日の記憶へ視点を切り替える",
+              "height": 190
+            },
+            {
+              "purpose": "雨の記憶から、いまの身体へ戻る",
+              "height": 240
+            }
+          ]
+        },
+        {
+          "id": "scene-05",
+          "top": 4125.78125,
+          "bottom": 4845.78125,
+          "marginAfter": 130,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-06",
+          "top": 4975.78125,
+          "bottom": 5695.78125,
+          "marginAfter": 55,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-07",
+          "top": 5750.78125,
+          "bottom": 6935.78125,
+          "marginAfter": 360,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,346],[360,338]]}",
+              "top": 5750.78125,
+              "height": 346,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,346],[360,338]],\"lower\":[[0,539],[360,532]]}",
+              "top": 6276.78125,
+              "height": 201,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,539],[360,532]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 6747.78125,
+              "height": 188,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "異世界と知った後に広い景色を受け止める",
+              "height": 180
+            },
+            {
+              "purpose": "誰もいない静けさを読む",
+              "height": 270
+            }
+          ]
+        },
+        {
+          "id": "scene-08",
+          "top": 7295.78125,
+          "bottom": 8515.78125,
+          "marginAfter": 180,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,131],[360,131]]}",
+              "top": 7295.78125,
+              "height": 131,
+              "width": 360
+            },
+            {
+              "panels": "2-3",
+              "sourceRegion": "{\"upper\":[[0,131],[360,131]],\"lower\":[[0,482],[360,482]]}",
+              "top": 7746.78125,
+              "height": 351,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,482],[360,482]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 8277.78125,
+              "height": 238,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "声だけが届き、耳を澄ませる",
+              "height": 320
+            },
+            {
+              "purpose": "助けに向かう前の怖さを残す",
+              "height": 180
+            }
+          ]
+        },
+        {
+          "id": "scene-09",
+          "top": 8695.78125,
+          "bottom": 9581.78125,
+          "marginAfter": 140,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,172],[360,188]]}",
+              "top": 8695.78125,
+              "height": 188,
+              "width": 360
+            },
+            {
+              "panels": "2-4",
+              "sourceRegion": "{\"upper\":[[0,172],[360,188]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 9033.78125,
+              "height": 548,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "放っておけないと決めてから動き出す",
+              "height": 150
+            }
+          ]
+        },
+        {
+          "id": "scene-10",
+          "top": 9721.78125,
+          "bottom": 10441.78125,
+          "marginAfter": 260,
+          "windows": [],
+          "pauses": []
+        }
+      ],
       "links": [
         "../chapters.html",
         "../episode-02/index.html"
       ],
-      "scrollHeight": 10841,
-      "scrollWidth": 360
+      "pacingWindows": [
+        {
+          "scene": "scene-03",
+          "purpose": "水面の自分を見つめ、姿を理解するまで待つ",
+          "screens": [
+            {
+              "file": "pacing-03-1-360-1.png",
+              "scrollY": 1476
+            },
+            {
+              "file": "pacing-03-1-360-2.png",
+              "scrollY": 1916
+            },
+            {
+              "file": "pacing-03-1-360-3.png",
+              "scrollY": 2356
+            }
+          ]
+        },
+        {
+          "scene": "scene-04",
+          "purpose": "昨日の記憶へ視点を切り替える",
+          "screens": [
+            {
+              "file": "pacing-04-1-360-1.png",
+              "scrollY": 2502
+            },
+            {
+              "file": "pacing-04-1-360-2.png",
+              "scrollY": 2942
+            },
+            {
+              "file": "pacing-04-1-360-3.png",
+              "scrollY": 3382
+            }
+          ]
+        },
+        {
+          "scene": "scene-04",
+          "purpose": "雨の記憶から、いまの身体へ戻る",
+          "screens": [
+            {
+              "file": "pacing-04-2-360-1.png",
+              "scrollY": 2963
+            },
+            {
+              "file": "pacing-04-2-360-2.png",
+              "scrollY": 3403
+            },
+            {
+              "file": "pacing-04-2-360-3.png",
+              "scrollY": 3843
+            }
+          ]
+        },
+        {
+          "scene": "scene-07",
+          "purpose": "異世界と知った後に広い景色を受け止める",
+          "screens": [
+            {
+              "file": "pacing-07-1-360-1.png",
+              "scrollY": 5577
+            },
+            {
+              "file": "pacing-07-1-360-2.png",
+              "scrollY": 6017
+            },
+            {
+              "file": "pacing-07-1-360-3.png",
+              "scrollY": 6457
+            }
+          ]
+        },
+        {
+          "scene": "scene-07",
+          "purpose": "誰もいない静けさを読む",
+          "screens": [
+            {
+              "file": "pacing-07-2-360-1.png",
+              "scrollY": 5958
+            },
+            {
+              "file": "pacing-07-2-360-2.png",
+              "scrollY": 6398
+            },
+            {
+              "file": "pacing-07-2-360-3.png",
+              "scrollY": 6838
+            }
+          ]
+        },
+        {
+          "scene": "scene-08",
+          "purpose": "声だけが届き、耳を澄ませる",
+          "screens": [
+            {
+              "file": "pacing-08-1-360-1.png",
+              "scrollY": 6907
+            },
+            {
+              "file": "pacing-08-1-360-2.png",
+              "scrollY": 7347
+            },
+            {
+              "file": "pacing-08-1-360-3.png",
+              "scrollY": 7787
+            }
+          ]
+        },
+        {
+          "scene": "scene-08",
+          "purpose": "助けに向かう前の怖さを残す",
+          "screens": [
+            {
+              "file": "pacing-08-2-360-1.png",
+              "scrollY": 7578
+            },
+            {
+              "file": "pacing-08-2-360-2.png",
+              "scrollY": 8018
+            },
+            {
+              "file": "pacing-08-2-360-3.png",
+              "scrollY": 8458
+            }
+          ]
+        },
+        {
+          "scene": "scene-09",
+          "purpose": "放っておけないと決めてから動き出す",
+          "screens": [
+            {
+              "file": "pacing-09-1-360-1.png",
+              "scrollY": 8364
+            },
+            {
+              "file": "pacing-09-1-360-2.png",
+              "scrollY": 8804
+            },
+            {
+              "file": "pacing-09-1-360-3.png",
+              "scrollY": 9244
+            }
+          ]
+        }
+      ]
     }
   ],
   "letteringCheck": {
@@ -815,7 +1116,7 @@
           "right": 330,
           "pause": 180,
           "purpose": "水面の自分を見つめ、姿を理解するまで待つ",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         }
       ]
     },
@@ -831,7 +1132,7 @@
           "right": 236,
           "pause": 190,
           "purpose": "昨日の記憶へ視点を切り替える",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         },
         {
           "afterPanel": 3,
@@ -839,7 +1140,7 @@
           "right": 507,
           "pause": 240,
           "purpose": "雨の記憶から、いまの身体へ戻る",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         }
       ]
     },
@@ -877,7 +1178,7 @@
           "right": 532,
           "pause": 270,
           "purpose": "誰もいない静けさを読む",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         }
       ]
     },
@@ -893,7 +1194,7 @@
           "right": 131,
           "pause": 320,
           "purpose": "声だけが届き、耳を澄ませる",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         },
         {
           "afterPanel": 3,
@@ -932,6 +1233,5 @@
   "uniqueArtwork": 10,
   "displayWindows": 18,
   "standaloneArtworkBytesMatch": true,
-  "sourcePixelsCovered": true,
   "physicalDeviceTest": false
 }
