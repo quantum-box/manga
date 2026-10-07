@@ -40,6 +40,7 @@ def main():
     summaries=[]
     runs=read(P/'generation.json')
     pairs=read(P/'protected.json')
+    adopted_chapters = {int(n) for n in read(P/'adoption.json')}
     for episode in read(P/'scripts.json')['episodes']:
         for asset in episode['assets']:
             for line in asset[6]:
@@ -51,6 +52,7 @@ def main():
     with sync_playwright() as pw:
         browser=pw.chromium.launch()
         for n in range(1,11):
+            if n not in adopted_chapters: continue
             if args.episode and n not in args.episode: continue
             d=ROOT/f'episode-{n:02d}'
             m=read(d/'manifest.json')
@@ -131,6 +133,7 @@ def main():
     server.shutdown()
     summaries=[]
     for n in range(1,11):
+        if n not in adopted_chapters: continue
         record=read(ROOT/f'episode-{n:02d}/validation.json')
         manifest=read(ROOT/f'episode-{n:02d}/manifest.json')
         assert record['revision']==manifest['revision']

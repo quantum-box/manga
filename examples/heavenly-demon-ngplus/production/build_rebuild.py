@@ -97,7 +97,10 @@ if __name__ == '__main__':
     ap.add_argument('--episode',type=int,action='append')
     args=ap.parse_args()
     episodes=read(PRODUCTION/'scripts.json')['episodes']
+    adopted = {int(n) for n in read(PRODUCTION/'adoption.json')}
     for e in episodes:
-        if not args.episode or e['number'] in args.episode:
+        if e['number'] in adopted and (not args.episode or e['number'] in args.episode):
             build(e)
-    serial(episodes)
+    catalog = read(REPO/'content/catalog.json')
+    title = next(t for t in catalog if t['id']=='heavenly-demon-ngplus')
+    serial([{'number':e['number'],'title':e['title']} for e in title['episodes']])
