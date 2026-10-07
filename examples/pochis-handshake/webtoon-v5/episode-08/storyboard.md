@@ -10,7 +10,7 @@
 
 採用画像: art/01-dry.webp
 
-間: 75 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 80px、本文幅に比例。主水路と迂回路の状態を理解する
 
 1. Maintenance window gives wide view: broken HIGH MAIN canal, intact narrower LOW BYPASS around valley.
    発話: なし / 無言
@@ -28,7 +28,7 @@
 
 採用画像: art/02-dry.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 30px、本文幅に比例。機構が戻る連続動作
 
 1. Main branch closed gate, selector linkage jams, large lever LEFT and pin socket RIGHT two metres apart.
    発話: なし / 無言
@@ -46,7 +46,7 @@
 
 採用画像: art/03.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 65px、本文幅に比例。二人の役割を理解して模型へ移る
 
 1. PR stands at RIGHT socket; DK at LEFT lever, wide clear distance.
    発話: なし / 無言
@@ -64,7 +64,9 @@
 
 採用画像: art/04-wooden-pin.webp
 
-間: 100 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 180px、本文幅に比例。失敗を責められない安心
+
+コマ3の後: 360px幅で 220px。失敗への反応を受け止め、責めない言葉を聞く。原画の境界は左 510px / 右 510px。
 
 1. On safe bench, small wooden lever-and-pin model, not actual full gate.
    発話: なし / 無言
@@ -82,7 +84,7 @@
 
 採用画像: art/05-model.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 95px、本文幅に比例。合図が合った結果から犬の役割へ
 
 1. DK holds model lever, looks at PR first.
    発話: なし / 無言
@@ -100,7 +102,9 @@
 
 採用画像: art/06.webp
 
-間: 90 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 200px、本文幅に比例。待つ役割の意味を受け止める
+
+コマ3の後: 360px幅で 260px。待つだけかという落胆の後に役割が伝わる。原画の境界は左 501px / 右 514px。
 
 1. PR places portable pale-blue blanket on dry raised stone waiting ledge, separate from her BLUE CLOAK which she keeps wearing.
    発話: なし / 無言
@@ -118,7 +122,9 @@
 
 採用画像: art/07.webp
 
-間: 90 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 170px、本文幅に比例。声が届いた実感
+
+コマ3の後: 360px幅で 220px。止まる練習の成功から、声が届いた実感へ移る。原画の境界は左 540px / 右 529px。
 
 1. PR deliberately lowers tiny wooden block near model, no real hazard.
    発話: なし / 無言
@@ -136,7 +142,7 @@
 
 採用画像: art/08.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 260px、本文幅に比例。足元の確認を終えて夕食へ時間を移す
 
 1. PR and DK inspect work floor, solid central stone and rotten peripheral wooden inspection plank.
    発話: なし / 無言
@@ -154,7 +160,11 @@
 
 採用画像: art/09.webp
 
-間: 130 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 300px、本文幅に比例。三人でいる夜の温かさ
+
+コマ2の後: 360px幅で 250px。差し出した水を受け取る返事の間。原画の境界は左 300px / 右 300px。
+
+コマ3の後: 360px幅で 280px。三人でいる温かさを静かに残す。原画の境界は左 492px / 右 501px。
 
 1. Evening simple supper in maintenance side room, portable blanket used only at ledge remains there.
    発話: なし / 無言
@@ -172,7 +182,9 @@
 
 採用画像: art/10.webp
 
-間: 120 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 660px、本文幅に比例。夜が明け、本番へ移る時間
+
+コマ3の後: 360px幅で 220px。本番の約束から眠る犬へ移る。原画の境界は左 507px / 右 507px。
 
 1. Night lamp on tools: metal pin next to practiced wooden pin, no duplicate carried pin.
    発話: なし / 無言

@@ -10,7 +10,7 @@
 
 採用画像: art/01.webp
 
-間: 75 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 50px、本文幅に比例。動かせない木から助けを呼ぶ試行へつなぐ
 
 1. Same fallen forked branch pinning Toto's boot, PO circles carefully.
    発話: なし / 無言
@@ -28,7 +28,11 @@
 
 採用画像: art/02.webp
 
-間: 85 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 160px、本文幅に比例。声が通じない落胆を受け止める
+
+コマ2の後: 360px幅で 90px。吠え声と、怖がった子の反応を分ける。原画の境界は左 319px / 右 354px。
+
+コマ3の後: 360px幅で 190px。誤解されたことを受け止める。原画の境界は左 522px / 右 551px。
 
 1. PO looks directly at Toto, thought confident.
    発話: PO内心 / 人を呼ぶよ。
@@ -46,7 +50,11 @@
 
 採用画像: art/03-continuity.webp
 
-間: 110 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 260px、本文幅に比例。寄り添った静けさに遠くの呼び声が届く
+
+コマ2の後: 360px幅で 260px。ひとりにしないでという願いの後に黙って寄り添う。原画の境界は左 309px / 右 329px。
+
+コマ3の後: 360px幅で 210px。寄り添った安堵から内心へ移る。原画の境界は左 507px / 右 558px。
 
 1. PO slowly lies beside boy, avoids trapped foot.
    発話: なし / 無言
@@ -64,7 +72,9 @@
 
 採用画像: art/04.webp
 
-間: 55 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 35px、本文幅に比例。呼び声を頼りに駆け出す速さを保つ
+
+コマ1の後: 360px幅で 200px。遠くの呼び声を先に聞かせる。原画の境界は左 118px / 右 147px。
 
 1. PR offscreen through distant trees calling; no large face yet.
    発話: PR画面外 / トトー！
@@ -82,7 +92,7 @@
 
 採用画像: art/05.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 28px、本文幅に比例。誤解を解こうとすぐ裾へ向かう
 
 1. PR on same forest path, blue cloak/satchel; PO approaches paws low.
    発話: なし / 無言
@@ -100,7 +110,7 @@
 
 採用画像: art/06.webp
 
-間: 45 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 30px、本文幅に比例。合図が伝わり、道案内へすぐつなぐ
 
 1. PO gently takes cloak hem in mouth; no tear.
    発話: なし / 無言
@@ -118,7 +128,7 @@
 
 採用画像: art/07.webp
 
-間: 100 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 80px、本文幅に比例。伝わった安堵から共同救助へ進む
 
 1. Same path down slope, PR follows PO through bushes.
    発話: なし / 無言
@@ -136,7 +146,7 @@
 
 採用画像: art/08.webp
 
-間: 60 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 260px、本文幅に比例。抜けた足を確かめる安堵
 
 1. PR wedges fallen branch with nearby thick stick, stable support.
    発話: なし / 無言
@@ -154,7 +164,9 @@
 
 採用画像: art/09.webp
 
-間: 125 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 320px、本文幅に比例。緊張が解けて震えた後、同行の誘いを待つ
+
+コマ3の後: 360px幅で 330px。子供の無事を確かめてから、自分の震えに気づく。原画の境界は左 537px / 右 532px。
 
 1. PR checks boy's ankle, shoe removed briefly; no blood or major injury.
    発話: なし / 無言
@@ -172,7 +184,11 @@
 
 採用画像: art/10.webp
 
-間: 110 CSS px。同じ場面の観察、行動、反応をつなぐ
+場面の後: 360px幅で 300px、本文幅に比例。自分で帰る場所を選んだ余韻
+
+コマ1の後: 360px幅で 220px。誘いへの返事を急がず、目と足元を確かめる。原画の境界は左 223px / 右 221px。
+
+コマ3の後: 360px幅で 240px。選んだ温かさを残して帰路へ移る。原画の境界は左 463px / 右 467px。
 
 1. PR crouches, offers open hand near PO without forcing contact.
    発話: PR / 君も、来る？
