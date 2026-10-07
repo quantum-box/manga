@@ -1,816 +1,1189 @@
 {
   "episode": 6,
-  "browserTool": "cua_repl",
   "views": [
     {
-      "figures": [
-        {
-          "bottom": 1457.78125,
-          "id": "scene-01",
-          "marginAfter": 173.333,
-          "pauses": [
-            {
-              "height": 390,
-              "purpose": "閉じた門の向こうから返事が届くまで待つ"
-            },
-            {
-              "height": 140.828125,
-              "purpose": "拒絶された驚きを受け止める"
-            }
-          ],
-          "top": 125.296875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 96.9388%, 0% 100%)",
-              "height": 424.6640625,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,392],[360,380]]}",
-              "top": 125.296875,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 8.27586%, 100% 0%, 100% 100%, 0% 94.4828%)",
-              "height": 157.078125,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,392],[360,380]],\"lower\":[[0,517],[360,525]]}",
-              "top": 939.9609375,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 3.94089%, 100% 100%, 0% 100%)",
-              "height": 219.9140625,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,517],[360,525]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 1237.8671875,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 2411.109375,
-          "id": "scene-02",
-          "marginAfter": 86.6667,
-          "pauses": [],
-          "top": 1631.109375,
-          "windows": []
-        },
-        {
-          "bottom": 3928.84375,
-          "id": "scene-03",
-          "marginAfter": 281.667,
-          "pauses": [
-            {
-              "height": 422.5,
-              "purpose": "理由を尋ねても返事がない沈黙"
-            },
-            {
-              "height": 205.828125,
-              "purpose": "沈黙を疑問へつなぐ"
-            }
-          ],
-          "top": 2497.7734375,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 97.5904%, 0% 100%)",
-              "height": 359.6640625,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,332],[360,324]]}",
-              "top": 2497.7734375,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 3.8835%, 100% 0%, 100% 100%, 0% 93.6893%)",
-              "height": 223.1640625,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,332],[360,324]],\"lower\":[[0,517],[360,530]]}",
-              "top": 3279.9375,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 6.40394%, 100% 100%, 0% 100%)",
-              "height": 219.9140625,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,517],[360,530]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 3708.9296875,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 4990.5078125,
-          "id": "scene-04",
-          "marginAfter": 54.1667,
-          "pauses": [],
-          "top": 4210.5078125,
-          "windows": []
-        },
-        {
-          "bottom": 6314.3125,
-          "id": "scene-05",
-          "marginAfter": 260,
-          "pauses": [
-            {
-              "height": 303.328125,
-              "purpose": "壊れた水路と下の村の位置を理解する"
-            },
-            {
-              "height": 173.328125,
-              "purpose": "危険を想像してから王女の反応へ移る"
-            }
-          ],
-          "top": 5044.671875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 339.078125,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,313],[360,313]]}",
-              "top": 5044.671875,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 93.9698%, 0% 100%)",
-              "height": 215.578125,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,313],[360,313]],\"lower\":[[0,512],[360,500]]}",
-              "top": 5687.078125,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 5.45455%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 238.328125,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,512],[360,500]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 6075.984375,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 7354.3125,
-          "id": "scene-06",
-          "marginAfter": 205.833,
-          "pauses": [],
-          "top": 6574.3125,
-          "windows": []
-        },
-        {
-          "bottom": 8340.140625,
-          "id": "scene-07",
-          "marginAfter": 86.6667,
-          "pauses": [],
-          "top": 7560.140625,
-          "windows": []
-        },
-        {
-          "bottom": 9206.8046875,
-          "id": "scene-08",
-          "marginAfter": 21.6667,
-          "pauses": [],
-          "top": 8426.8046875,
-          "windows": []
-        },
-        {
-          "bottom": 10449.375,
-          "id": "scene-09",
-          "marginAfter": 216.667,
-          "pauses": [
-            {
-              "height": 97.5,
-              "purpose": "落下直前を一瞬だけ止める"
-            },
-            {
-              "height": 260,
-              "purpose": "つかまった感触を受け止める"
-            }
-          ],
-          "top": 9228.46875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 87.3278%)",
-              "height": 393.25,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,317],[360,363]]}",
-              "top": 9228.46875,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 21.4953%, 100% 85.514%, 0% 100%)",
-              "height": 231.828125,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,317],[360,363]],\"lower\":[[0,531],[360,500]]}",
-              "top": 9719.21875,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 14.0909%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 238.328125,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,531],[360,500]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 10211.046875,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 11685.4453125,
-          "id": "scene-10",
-          "marginAfter": 975,
-          "pauses": [
-            {
-              "height": 227.4921875,
-              "purpose": "助けた声と門の声が同じだと気づく"
-            }
-          ],
-          "top": 10666.0390625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 97.8516%)",
-              "height": 554.6640625,
-              "panels": "1-3",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,501],[360,512]]}",
-              "top": 10666.0390625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 5.02283%, 100% 100%, 0% 100%)",
-              "height": 237.25,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,501],[360,512]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 11448.1953125,
-              "width": 390
-            }
-          ]
-        }
-      ],
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 12801,
       "images": [
         {
-          "alt": "閉じた門。PR：話を聞いてください。",
+          "src": "art/01.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01.webp"
+          "naturalHeight": 1774,
+          "top": 125.796875,
+          "bottom": 905.796875,
+          "displayWidth": 390
         },
         {
-          "alt": "閉じた門。DK画面外：帰れ。",
+          "src": "art/01.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01.webp"
+          "naturalHeight": 1774,
+          "top": 528.8125,
+          "bottom": 1308.8125,
+          "displayWidth": 390
         },
         {
-          "alt": "閉じた門。無言の動作。",
+          "src": "art/01.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01.webp"
+          "naturalHeight": 1774,
+          "top": 678.3125,
+          "bottom": 1458.3125,
+          "displayWidth": 390
         },
         {
-          "alt": "それでも伝える。PR：村に水がありません。／DK画面外：水は出せない。",
+          "src": "art/02.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02.webp"
+          "naturalHeight": 1774,
+          "top": 1631.59375,
+          "bottom": 2411.59375,
+          "displayWidth": 390
         },
         {
-          "alt": "怖さと怒り。PO内心：それだけかよ。／PR：理由を教えて。",
+          "src": "art/03-gate.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03-gate.webp"
+          "naturalHeight": 1774,
+          "top": 2498.25,
+          "bottom": 3278.25,
+          "displayWidth": 390
         },
         {
-          "alt": "怖さと怒り。無言の動作。",
+          "src": "art/03-gate.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03-gate.webp"
+          "naturalHeight": 1774,
+          "top": 2929.4375,
+          "bottom": 3709.4375,
+          "displayWidth": 390
         },
         {
-          "alt": "怖さと怒り。PO内心：何を隠してる？",
+          "src": "art/03-gate.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03-gate.webp"
+          "naturalHeight": 1774,
+          "top": 3149.34375,
+          "bottom": 3929.34375,
+          "displayWidth": 390
         },
         {
-          "alt": "壁の外を歩く。PR：水路を見よう。",
+          "src": "art/04-dry-channel.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-dry-channel.webp"
+          "naturalHeight": 1774,
+          "top": 4210.953125,
+          "bottom": 4990.953125,
+          "displayWidth": 390
         },
         {
-          "alt": "壊れた道。無言の動作。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 5045.109375,
+          "bottom": 5825.109375,
+          "displayWidth": 390
         },
         {
-          "alt": "壊れた道。PO内心：ここへ水が来たら。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 5348.453125,
+          "bottom": 6128.453125,
+          "displayWidth": 390
         },
         {
-          "alt": "壊れた道。PR：村の真上……。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 5534.78125,
+          "bottom": 6314.78125,
+          "displayWidth": 390
         },
         {
-          "alt": "止めてある水。PR：止めないと危ない。／PO内心：意地悪じゃない？",
+          "src": "art/06-sealed-sluice.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06-sealed-sluice.webp"
+          "naturalHeight": 1774,
+          "top": 6574.75,
+          "bottom": 7354.75,
+          "displayWidth": 390
         },
         {
-          "alt": "もう一本の道。PR：古い水路もある。",
+          "src": "art/07-dry-bypass.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07-dry-bypass.webp"
+          "naturalHeight": 1774,
+          "top": 7560.578125,
+          "bottom": 8340.578125,
+          "displayWidth": 390
         },
         {
-          "alt": "危ない足場。PR：ポチ、待って！／PO内心：足が……。",
+          "src": "art/08.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08.webp"
+          "naturalHeight": 1774,
+          "top": 8427.234375,
+          "bottom": 9207.234375,
+          "displayWidth": 390
         },
         {
-          "alt": "手が伸びる。無言の動作。",
+          "src": "art/09-shallow-ditch.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09-shallow-ditch.webp"
+          "naturalHeight": 1774,
+          "top": 9228.890625,
+          "bottom": 10008.890625,
+          "displayWidth": 390
         },
         {
-          "alt": "手が伸びる。無言の動作。",
+          "src": "art/09-shallow-ditch.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09-shallow-ditch.webp"
+          "naturalHeight": 1774,
+          "top": 9376.234375,
+          "bottom": 10156.234375,
+          "displayWidth": 390
         },
         {
-          "alt": "手が伸びる。PO内心：つかまった？",
+          "src": "art/09-shallow-ditch.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09-shallow-ditch.webp"
+          "naturalHeight": 1774,
+          "top": 9669.828125,
+          "bottom": 10449.828125,
+          "displayWidth": 390
         },
         {
-          "alt": "助けた声。PR：ありがとうございます。／DK画面外：足元を見ろ。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 10666.453125,
+          "bottom": 11446.453125,
+          "displayWidth": 390
         },
         {
-          "alt": "助けた声。PO内心：門の声だ。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 10905.84375,
+          "bottom": 11685.84375,
+          "displayWidth": 390
         }
       ],
-      "innerHeight": 844,
-      "innerWidth": 390,
+      "figures": [
+        {
+          "id": "scene-01",
+          "top": 125.796875,
+          "bottom": 1458.265625,
+          "marginAfter": 173.333,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,392],[360,380]]}",
+              "top": 125.796875,
+              "height": 424.65625,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,392],[360,380]],\"lower\":[[0,517],[360,525]]}",
+              "top": 940.453125,
+              "height": 157.078125,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,517],[360,525]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 1238.359375,
+              "height": 219.90625,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "閉じた門の向こうから返事が届くまで待つ",
+              "height": 390
+            },
+            {
+              "purpose": "拒絶された驚きを受け止める",
+              "height": 140.828125
+            }
+          ]
+        },
+        {
+          "id": "scene-02",
+          "top": 1631.59375,
+          "bottom": 2411.59375,
+          "marginAfter": 86.6667,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-03",
+          "top": 2498.25,
+          "bottom": 3929.296875,
+          "marginAfter": 281.667,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,332],[360,324]]}",
+              "top": 2498.25,
+              "height": 359.65625,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,332],[360,324]],\"lower\":[[0,517],[360,530]]}",
+              "top": 3280.40625,
+              "height": 223.15625,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,517],[360,530]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3709.390625,
+              "height": 219.90625,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "理由を尋ねても返事がない沈黙",
+              "height": 422.5
+            },
+            {
+              "purpose": "沈黙を疑問へつなぐ",
+              "height": 205.828125
+            }
+          ]
+        },
+        {
+          "id": "scene-04",
+          "top": 4210.953125,
+          "bottom": 4990.953125,
+          "marginAfter": 54.1667,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-05",
+          "top": 5045.109375,
+          "bottom": 6314.75,
+          "marginAfter": 260,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,313],[360,313]]}",
+              "top": 5045.109375,
+              "height": 339.078125,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,313],[360,313]],\"lower\":[[0,512],[360,500]]}",
+              "top": 5687.515625,
+              "height": 215.578125,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,512],[360,500]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 6076.421875,
+              "height": 238.328125,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "壊れた水路と下の村の位置を理解する",
+              "height": 303.328125
+            },
+            {
+              "purpose": "危険を想像してから王女の反応へ移る",
+              "height": 173.328125
+            }
+          ]
+        },
+        {
+          "id": "scene-06",
+          "top": 6574.75,
+          "bottom": 7354.75,
+          "marginAfter": 205.833,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-07",
+          "top": 7560.578125,
+          "bottom": 8340.578125,
+          "marginAfter": 86.6667,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-08",
+          "top": 8427.234375,
+          "bottom": 9207.234375,
+          "marginAfter": 21.6667,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-09",
+          "top": 9228.890625,
+          "bottom": 10449.796875,
+          "marginAfter": 216.667,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,317],[360,363]]}",
+              "top": 9228.890625,
+              "height": 393.25,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,317],[360,363]],\"lower\":[[0,531],[360,500]]}",
+              "top": 9719.640625,
+              "height": 231.828125,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,531],[360,500]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 10211.46875,
+              "height": 238.328125,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "落下直前を一瞬だけ止める",
+              "height": 97.5
+            },
+            {
+              "purpose": "つかまった感触を受け止める",
+              "height": 260
+            }
+          ]
+        },
+        {
+          "id": "scene-10",
+          "top": 10666.453125,
+          "bottom": 11685.84375,
+          "marginAfter": 975,
+          "windows": [
+            {
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,501],[360,512]]}",
+              "top": 10666.453125,
+              "height": 554.65625,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,501],[360,512]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 11448.59375,
+              "height": 237.25,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "助けた声と門の声が同じだと気づく",
+              "height": 227.484375
+            }
+          ]
+        }
+      ],
       "links": [
         "../chapters.html",
         "../episode-05/index.html",
         "../episode-07/index.html"
       ],
-      "scrollHeight": 12800,
-      "scrollWidth": 390
+      "pacingWindows": [
+        {
+          "scene": "scene-01",
+          "purpose": "閉じた門の向こうから返事が届くまで待つ",
+          "screens": [
+            {
+              "file": "pacing-01-1-390-1.png",
+              "scrollY": 2
+            },
+            {
+              "file": "pacing-01-1-390-2.png",
+              "scrollY": 466
+            },
+            {
+              "file": "pacing-01-1-390-3.png",
+              "scrollY": 930
+            }
+          ]
+        },
+        {
+          "scene": "scene-01",
+          "purpose": "拒絶された驚きを受け止める",
+          "screens": [
+            {
+              "file": "pacing-01-2-390-1.png",
+              "scrollY": 549
+            },
+            {
+              "file": "pacing-01-2-390-2.png",
+              "scrollY": 1013
+            },
+            {
+              "file": "pacing-01-2-390-3.png",
+              "scrollY": 1477
+            }
+          ]
+        },
+        {
+          "scene": "scene-03",
+          "purpose": "理由を尋ねても返事がない沈黙",
+          "screens": [
+            {
+              "file": "pacing-03-1-390-1.png",
+              "scrollY": 2309
+            },
+            {
+              "file": "pacing-03-1-390-2.png",
+              "scrollY": 2774
+            },
+            {
+              "file": "pacing-03-1-390-3.png",
+              "scrollY": 3238
+            }
+          ]
+        },
+        {
+          "scene": "scene-03",
+          "purpose": "沈黙を疑問へつなぐ",
+          "screens": [
+            {
+              "file": "pacing-03-2-390-1.png",
+              "scrollY": 2955
+            },
+            {
+              "file": "pacing-03-2-390-2.png",
+              "scrollY": 3419
+            },
+            {
+              "file": "pacing-03-2-390-3.png",
+              "scrollY": 3883
+            }
+          ]
+        },
+        {
+          "scene": "scene-05",
+          "purpose": "壊れた水路と下の村の位置を理解する",
+          "screens": [
+            {
+              "file": "pacing-05-1-390-1.png",
+              "scrollY": 4836
+            },
+            {
+              "file": "pacing-05-1-390-2.png",
+              "scrollY": 5300
+            },
+            {
+              "file": "pacing-05-1-390-3.png",
+              "scrollY": 5764
+            }
+          ]
+        },
+        {
+          "scene": "scene-05",
+          "purpose": "危険を想像してから王女の反応へ移る",
+          "screens": [
+            {
+              "file": "pacing-05-2-390-1.png",
+              "scrollY": 5354
+            },
+            {
+              "file": "pacing-05-2-390-2.png",
+              "scrollY": 5819
+            },
+            {
+              "file": "pacing-05-2-390-3.png",
+              "scrollY": 6283
+            }
+          ]
+        },
+        {
+          "scene": "scene-09",
+          "purpose": "落下直前を一瞬だけ止める",
+          "screens": [
+            {
+              "file": "pacing-09-1-390-1.png",
+              "scrollY": 9074
+            },
+            {
+              "file": "pacing-09-1-390-2.png",
+              "scrollY": 9538
+            },
+            {
+              "file": "pacing-09-1-390-3.png",
+              "scrollY": 10002
+            }
+          ]
+        },
+        {
+          "scene": "scene-09",
+          "purpose": "つかまった感触を受け止める",
+          "screens": [
+            {
+              "file": "pacing-09-2-390-1.png",
+              "scrollY": 9403
+            },
+            {
+              "file": "pacing-09-2-390-2.png",
+              "scrollY": 9867
+            },
+            {
+              "file": "pacing-09-2-390-3.png",
+              "scrollY": 10331
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "助けた声と門の声が同じだと気づく",
+          "screens": [
+            {
+              "file": "pacing-10-1-390-1.png",
+              "scrollY": 10673
+            },
+            {
+              "file": "pacing-10-1-390-2.png",
+              "scrollY": 11137
+            },
+            {
+              "file": "pacing-10-1-390-3.png",
+              "scrollY": 11601
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "protected reveal after scene-10",
+          "screens": [
+            {
+              "file": "pacing-10-2-390-1.png",
+              "scrollY": 11137
+            },
+            {
+              "file": "pacing-10-2-390-2.png",
+              "scrollY": 11601
+            },
+            {
+              "file": "pacing-10-2-390-3.png",
+              "scrollY": 11957
+            }
+          ]
+        }
+      ]
     },
     {
-      "figures": [
-        {
-          "bottom": 1355.296875,
-          "id": "scene-01",
-          "marginAfter": 160,
-          "pauses": [
-            {
-              "height": 360,
-              "purpose": "閉じた門の向こうから返事が届くまで待つ"
-            },
-            {
-              "height": 130,
-              "purpose": "拒絶された驚きを受け止める"
-            }
-          ],
-          "top": 125.296875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 96.9388%, 0% 100%)",
-              "height": 392,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,392],[360,380]]}",
-              "top": 125.296875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 8.27586%, 100% 0%, 100% 100%, 0% 94.4828%)",
-              "height": 145,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,392],[360,380]],\"lower\":[[0,517],[360,525]]}",
-              "top": 877.296875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 3.94089%, 100% 100%, 0% 100%)",
-              "height": 203,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,517],[360,525]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 1152.296875,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 2235.2890625,
-          "id": "scene-02",
-          "marginAfter": 80,
-          "pauses": [],
-          "top": 1515.2890625,
-          "windows": []
-        },
-        {
-          "bottom": 3636.28125,
-          "id": "scene-03",
-          "marginAfter": 260,
-          "pauses": [
-            {
-              "height": 390,
-              "purpose": "理由を尋ねても返事がない沈黙"
-            },
-            {
-              "height": 190,
-              "purpose": "沈黙を疑問へつなぐ"
-            }
-          ],
-          "top": 2315.28125,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 97.5904%, 0% 100%)",
-              "height": 332,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,332],[360,324]]}",
-              "top": 2315.28125,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 3.8835%, 100% 0%, 100% 100%, 0% 93.6893%)",
-              "height": 206,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,332],[360,324]],\"lower\":[[0,517],[360,530]]}",
-              "top": 3037.28125,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 6.40394%, 100% 100%, 0% 100%)",
-              "height": 203,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,517],[360,530]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 3433.28125,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 4616.28125,
-          "id": "scene-04",
-          "marginAfter": 50,
-          "pauses": [],
-          "top": 3896.28125,
-          "windows": []
-        },
-        {
-          "bottom": 5838.2734375,
-          "id": "scene-05",
-          "marginAfter": 240,
-          "pauses": [
-            {
-              "height": 280,
-              "purpose": "壊れた水路と下の村の位置を理解する"
-            },
-            {
-              "height": 159.9921875,
-              "purpose": "危険を想像してから王女の反応へ移る"
-            }
-          ],
-          "top": 4666.28125,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 313,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,313],[360,313]]}",
-              "top": 4666.28125,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 93.9698%, 0% 100%)",
-              "height": 199,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,313],[360,313]],\"lower\":[[0,512],[360,500]]}",
-              "top": 5259.28125,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 5.45455%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 220,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,512],[360,500]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 5618.2734375,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 6798.2734375,
-          "id": "scene-06",
-          "marginAfter": 190,
-          "pauses": [],
-          "top": 6078.2734375,
-          "windows": []
-        },
-        {
-          "bottom": 7708.2734375,
-          "id": "scene-07",
-          "marginAfter": 80,
-          "pauses": [],
-          "top": 6988.2734375,
-          "windows": []
-        },
-        {
-          "bottom": 8508.265625,
-          "id": "scene-08",
-          "marginAfter": 20,
-          "pauses": [],
-          "top": 7788.265625,
-          "windows": []
-        },
-        {
-          "bottom": 9655.265625,
-          "id": "scene-09",
-          "marginAfter": 200,
-          "pauses": [
-            {
-              "height": 90,
-              "purpose": "落下直前を一瞬だけ止める"
-            },
-            {
-              "height": 240,
-              "purpose": "つかまった感触を受け止める"
-            }
-          ],
-          "top": 8528.265625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 87.3278%)",
-              "height": 363,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,317],[360,363]]}",
-              "top": 8528.265625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 21.4953%, 100% 85.514%, 0% 100%)",
-              "height": 214,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,317],[360,363]],\"lower\":[[0,531],[360,500]]}",
-              "top": 8981.265625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 14.0909%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 220,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,531],[360,500]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 9435.265625,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 10796.2578125,
-          "id": "scene-10",
-          "marginAfter": 900,
-          "pauses": [
-            {
-              "height": 209.9921875,
-              "purpose": "助けた声と門の声が同じだと気づく"
-            }
-          ],
-          "top": 9855.265625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 97.8516%)",
-              "height": 512,
-              "panels": "1-3",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,501],[360,512]]}",
-              "top": 9855.265625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 5.02283%, 100% 100%, 0% 100%)",
-              "height": 219,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,501],[360,512]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 10577.2578125,
-              "width": 360
-            }
-          ]
-        }
-      ],
+      "innerWidth": 360,
+      "innerHeight": 800,
+      "scrollWidth": 360,
+      "scrollHeight": 11837,
       "images": [
         {
-          "alt": "閉じた門。PR：話を聞いてください。",
+          "src": "art/01.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01.webp"
+          "naturalHeight": 1774,
+          "top": 125.796875,
+          "bottom": 845.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "閉じた門。DK画面外：帰れ。",
+          "src": "art/01.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01.webp"
+          "naturalHeight": 1774,
+          "top": 497.796875,
+          "bottom": 1217.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "閉じた門。無言の動作。",
+          "src": "art/01.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01.webp"
+          "naturalHeight": 1774,
+          "top": 635.796875,
+          "bottom": 1355.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "それでも伝える。PR：村に水がありません。／DK画面外：水は出せない。",
+          "src": "art/02.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02.webp"
+          "naturalHeight": 1774,
+          "top": 1515.78125,
+          "bottom": 2235.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "怖さと怒り。PO内心：それだけかよ。／PR：理由を教えて。",
+          "src": "art/03-gate.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03-gate.webp"
+          "naturalHeight": 1774,
+          "top": 2315.765625,
+          "bottom": 3035.765625,
+          "displayWidth": 360
         },
         {
-          "alt": "怖さと怒り。無言の動作。",
+          "src": "art/03-gate.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03-gate.webp"
+          "naturalHeight": 1774,
+          "top": 2713.765625,
+          "bottom": 3433.765625,
+          "displayWidth": 360
         },
         {
-          "alt": "怖さと怒り。PO内心：何を隠してる？",
+          "src": "art/03-gate.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03-gate.webp"
+          "naturalHeight": 1774,
+          "top": 2916.765625,
+          "bottom": 3636.765625,
+          "displayWidth": 360
         },
         {
-          "alt": "壁の外を歩く。PR：水路を見よう。",
+          "src": "art/04-dry-channel.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-dry-channel.webp"
+          "naturalHeight": 1774,
+          "top": 3896.765625,
+          "bottom": 4616.765625,
+          "displayWidth": 360
         },
         {
-          "alt": "壊れた道。無言の動作。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 4666.765625,
+          "bottom": 5386.765625,
+          "displayWidth": 360
         },
         {
-          "alt": "壊れた道。PO内心：ここへ水が来たら。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 4946.78125,
+          "bottom": 5666.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "壊れた道。PR：村の真上……。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 5118.75,
+          "bottom": 5838.75,
+          "displayWidth": 360
         },
         {
-          "alt": "止めてある水。PR：止めないと危ない。／PO内心：意地悪じゃない？",
+          "src": "art/06-sealed-sluice.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06-sealed-sluice.webp"
+          "naturalHeight": 1774,
+          "top": 6078.75,
+          "bottom": 6798.75,
+          "displayWidth": 360
         },
         {
-          "alt": "もう一本の道。PR：古い水路もある。",
+          "src": "art/07-dry-bypass.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07-dry-bypass.webp"
+          "naturalHeight": 1774,
+          "top": 6988.75,
+          "bottom": 7708.75,
+          "displayWidth": 360
         },
         {
-          "alt": "危ない足場。PR：ポチ、待って！／PO内心：足が……。",
+          "src": "art/08.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08.webp"
+          "naturalHeight": 1774,
+          "top": 7788.734375,
+          "bottom": 8508.734375,
+          "displayWidth": 360
         },
         {
-          "alt": "手が伸びる。無言の動作。",
+          "src": "art/09-shallow-ditch.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09-shallow-ditch.webp"
+          "naturalHeight": 1774,
+          "top": 8528.734375,
+          "bottom": 9248.734375,
+          "displayWidth": 360
         },
         {
-          "alt": "手が伸びる。無言の動作。",
+          "src": "art/09-shallow-ditch.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09-shallow-ditch.webp"
+          "naturalHeight": 1774,
+          "top": 8664.734375,
+          "bottom": 9384.734375,
+          "displayWidth": 360
         },
         {
-          "alt": "手が伸びる。PO内心：つかまった？",
+          "src": "art/09-shallow-ditch.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09-shallow-ditch.webp"
+          "naturalHeight": 1774,
+          "top": 8935.734375,
+          "bottom": 9655.734375,
+          "displayWidth": 360
         },
         {
-          "alt": "助けた声。PR：ありがとうございます。／DK画面外：足元を見ろ。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 9855.734375,
+          "bottom": 10575.734375,
+          "displayWidth": 360
         },
         {
-          "alt": "助けた声。PO内心：門の声だ。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 10076.71875,
+          "bottom": 10796.71875,
+          "displayWidth": 360
         }
       ],
-      "innerHeight": 800,
-      "innerWidth": 360,
+      "figures": [
+        {
+          "id": "scene-01",
+          "top": 125.796875,
+          "bottom": 1355.796875,
+          "marginAfter": 160,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,392],[360,380]]}",
+              "top": 125.796875,
+              "height": 392,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,392],[360,380]],\"lower\":[[0,517],[360,525]]}",
+              "top": 877.796875,
+              "height": 145,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,517],[360,525]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 1152.796875,
+              "height": 203,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "閉じた門の向こうから返事が届くまで待つ",
+              "height": 360
+            },
+            {
+              "purpose": "拒絶された驚きを受け止める",
+              "height": 130
+            }
+          ]
+        },
+        {
+          "id": "scene-02",
+          "top": 1515.78125,
+          "bottom": 2235.78125,
+          "marginAfter": 80,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-03",
+          "top": 2315.765625,
+          "bottom": 3636.765625,
+          "marginAfter": 260,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,332],[360,324]]}",
+              "top": 2315.765625,
+              "height": 332,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,332],[360,324]],\"lower\":[[0,517],[360,530]]}",
+              "top": 3037.765625,
+              "height": 206,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,517],[360,530]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3433.765625,
+              "height": 203,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "理由を尋ねても返事がない沈黙",
+              "height": 390
+            },
+            {
+              "purpose": "沈黙を疑問へつなぐ",
+              "height": 190
+            }
+          ]
+        },
+        {
+          "id": "scene-04",
+          "top": 3896.765625,
+          "bottom": 4616.765625,
+          "marginAfter": 50,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-05",
+          "top": 4666.765625,
+          "bottom": 5838.75,
+          "marginAfter": 240,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,313],[360,313]]}",
+              "top": 4666.765625,
+              "height": 313,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,313],[360,313]],\"lower\":[[0,512],[360,500]]}",
+              "top": 5259.765625,
+              "height": 199,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,512],[360,500]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 5618.75,
+              "height": 220,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "壊れた水路と下の村の位置を理解する",
+              "height": 280
+            },
+            {
+              "purpose": "危険を想像してから王女の反応へ移る",
+              "height": 159.984375
+            }
+          ]
+        },
+        {
+          "id": "scene-06",
+          "top": 6078.75,
+          "bottom": 6798.75,
+          "marginAfter": 190,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-07",
+          "top": 6988.75,
+          "bottom": 7708.75,
+          "marginAfter": 80,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-08",
+          "top": 7788.734375,
+          "bottom": 8508.734375,
+          "marginAfter": 20,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-09",
+          "top": 8528.734375,
+          "bottom": 9655.734375,
+          "marginAfter": 200,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,317],[360,363]]}",
+              "top": 8528.734375,
+              "height": 363,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,317],[360,363]],\"lower\":[[0,531],[360,500]]}",
+              "top": 8981.734375,
+              "height": 214,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,531],[360,500]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 9435.734375,
+              "height": 220,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "落下直前を一瞬だけ止める",
+              "height": 90
+            },
+            {
+              "purpose": "つかまった感触を受け止める",
+              "height": 240
+            }
+          ]
+        },
+        {
+          "id": "scene-10",
+          "top": 9855.734375,
+          "bottom": 10796.71875,
+          "marginAfter": 900,
+          "windows": [
+            {
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,501],[360,512]]}",
+              "top": 9855.734375,
+              "height": 512,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,501],[360,512]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 10577.71875,
+              "height": 219,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "助けた声と門の声が同じだと気づく",
+              "height": 209.984375
+            }
+          ]
+        }
+      ],
       "links": [
         "../chapters.html",
         "../episode-05/index.html",
         "../episode-07/index.html"
       ],
-      "scrollHeight": 11836,
-      "scrollWidth": 360
+      "pacingWindows": [
+        {
+          "scene": "scene-01",
+          "purpose": "閉じた門の向こうから返事が届くまで待つ",
+          "screens": [
+            {
+              "file": "pacing-01-1-360-1.png",
+              "scrollY": 0
+            },
+            {
+              "file": "pacing-01-1-360-2.png",
+              "scrollY": 438
+            },
+            {
+              "file": "pacing-01-1-360-3.png",
+              "scrollY": 878
+            }
+          ]
+        },
+        {
+          "scene": "scene-01",
+          "purpose": "拒絶された驚きを受け止める",
+          "screens": [
+            {
+              "file": "pacing-01-2-360-1.png",
+              "scrollY": 503
+            },
+            {
+              "file": "pacing-01-2-360-2.png",
+              "scrollY": 943
+            },
+            {
+              "file": "pacing-01-2-360-3.png",
+              "scrollY": 1383
+            }
+          ]
+        },
+        {
+          "scene": "scene-03",
+          "purpose": "理由を尋ねても返事がない沈黙",
+          "screens": [
+            {
+              "file": "pacing-03-1-360-1.png",
+              "scrollY": 2128
+            },
+            {
+              "file": "pacing-03-1-360-2.png",
+              "scrollY": 2568
+            },
+            {
+              "file": "pacing-03-1-360-3.png",
+              "scrollY": 3008
+            }
+          ]
+        },
+        {
+          "scene": "scene-03",
+          "purpose": "沈黙を疑問へつなぐ",
+          "screens": [
+            {
+              "file": "pacing-03-2-360-1.png",
+              "scrollY": 2724
+            },
+            {
+              "file": "pacing-03-2-360-2.png",
+              "scrollY": 3164
+            },
+            {
+              "file": "pacing-03-2-360-3.png",
+              "scrollY": 3604
+            }
+          ]
+        },
+        {
+          "scene": "scene-05",
+          "purpose": "壊れた水路と下の村の位置を理解する",
+          "screens": [
+            {
+              "file": "pacing-05-1-360-1.png",
+              "scrollY": 4460
+            },
+            {
+              "file": "pacing-05-1-360-2.png",
+              "scrollY": 4900
+            },
+            {
+              "file": "pacing-05-1-360-3.png",
+              "scrollY": 5340
+            }
+          ]
+        },
+        {
+          "scene": "scene-05",
+          "purpose": "危険を想像してから王女の反応へ移る",
+          "screens": [
+            {
+              "file": "pacing-05-2-360-1.png",
+              "scrollY": 4939
+            },
+            {
+              "file": "pacing-05-2-360-2.png",
+              "scrollY": 5379
+            },
+            {
+              "file": "pacing-05-2-360-3.png",
+              "scrollY": 5819
+            }
+          ]
+        },
+        {
+          "scene": "scene-09",
+          "purpose": "落下直前を一瞬だけ止める",
+          "screens": [
+            {
+              "file": "pacing-09-1-360-1.png",
+              "scrollY": 8372
+            },
+            {
+              "file": "pacing-09-1-360-2.png",
+              "scrollY": 8812
+            },
+            {
+              "file": "pacing-09-1-360-3.png",
+              "scrollY": 9252
+            }
+          ]
+        },
+        {
+          "scene": "scene-09",
+          "purpose": "つかまった感触を受け止める",
+          "screens": [
+            {
+              "file": "pacing-09-2-360-1.png",
+              "scrollY": 8676
+            },
+            {
+              "file": "pacing-09-2-360-2.png",
+              "scrollY": 9116
+            },
+            {
+              "file": "pacing-09-2-360-3.png",
+              "scrollY": 9556
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "助けた声と門の声が同じだと気づく",
+          "screens": [
+            {
+              "file": "pacing-10-1-360-1.png",
+              "scrollY": 9848
+            },
+            {
+              "file": "pacing-10-1-360-2.png",
+              "scrollY": 10288
+            },
+            {
+              "file": "pacing-10-1-360-3.png",
+              "scrollY": 10728
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "protected reveal after scene-10",
+          "screens": [
+            {
+              "file": "pacing-10-2-360-1.png",
+              "scrollY": 10277
+            },
+            {
+              "file": "pacing-10-2-360-2.png",
+              "scrollY": 10717
+            },
+            {
+              "file": "pacing-10-2-360-3.png",
+              "scrollY": 11037
+            }
+          ]
+        }
+      ]
     }
   ],
   "letteringCheck": {
@@ -905,7 +1278,7 @@
           "right": 313,
           "pause": 280,
           "purpose": "壊れた水路と下の村の位置を理解する",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         },
         {
           "afterPanel": 3,
@@ -913,7 +1286,7 @@
           "right": 500,
           "pause": 160,
           "purpose": "危険を想像してから王女の反応へ移る",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         }
       ]
     },
@@ -950,7 +1323,7 @@
           "right": 363,
           "pause": 90,
           "purpose": "落下直前を一瞬だけ止める",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         },
         {
           "afterPanel": 3,
@@ -958,7 +1331,7 @@
           "right": 500,
           "pause": 240,
           "purpose": "つかまった感触を受け止める",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         }
       ]
     },
@@ -982,6 +1355,5 @@
   "uniqueArtwork": 10,
   "displayWindows": 19,
   "standaloneArtworkBytesMatch": true,
-  "sourcePixelsCovered": true,
   "physicalDeviceTest": false
 }

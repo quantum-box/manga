@@ -13,7 +13,7 @@
 | [剣聖、仇の弟子に転生する](examples/swordsaint-enemy-disciple/README.md) | 武侠・転生 | 第1〜10話。白背景・ゆっくり版で連続して読める |
 | [終電後の落とし物係](examples/lost-property-clerk/webtoon-v3/README.md) | 日常・幻想 | 雨、猫、足跡をたどる縦読み短編 v3 |
 | [星を拾う夜](examples/star-lighthouse/webtoon-v2/README.md) | SF | 静けさと巨大な親の登場を広い余白で描く v2 |
-| [転生したら柴犬だった。](examples/pochis-handshake/webtoon-v5/README.md) | ファンタジー | 全10話を各10枚・約40コマへ再制作。身体と声への戸惑い、救助、旅、失敗と練習から魔王との握手へ |
+| [転生したら柴犬だった。](examples/pochis-handshake/webtoon-v5/README.md) | ファンタジー | 第1〜30話を作画済み。各10枚・約40コマ。村の水路を直し、働く・休む・断る選択まで描く |
 
 各作品の`index.html`が編集可能な本文。`reader.html`はオフライン用で、塔の農夫の第1話は同じフォルダーの`reader-art-*.js`三個を一緒に使う。ほかの作品は画像を内包した単一HTMLでも読める。採用版の脚本、プロンプト、検証記録、全長スクリーンショットも各例に保存する。同じ話は採用済みの最新版だけを残し、旧版はGitの履歴で管理する。最新版が使う原画・参照素材は残す。作業方針は[AGENTS.md](AGENTS.md)を参照。
 
