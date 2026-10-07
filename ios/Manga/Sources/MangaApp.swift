@@ -292,7 +292,6 @@ struct ReaderView: View {
     @State private var saveStatus = ""
     @State private var contentRevision: String?
     @State private var saveDetailsPresented = false
-    @Environment(\.dismiss) private var dismiss
     @State private var controlsVisible = true
     @State private var nextEpisodePresented = false
     @State private var offeredNextEpisode = false
