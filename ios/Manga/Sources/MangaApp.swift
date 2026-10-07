@@ -294,6 +294,7 @@ struct ReaderView: View {
     @State private var saveStatus = ""
     @State private var contentRevision: String?
     @State private var saveDetailsPresented = false
+    @Environment(\.dismiss) private var dismiss
     @State private var controlsVisible = true
     @State private var nextEpisodePresented = false
     @State private var offeredNextEpisode = false
@@ -384,15 +385,6 @@ struct ReaderView: View {
             } catch is CancellationError { saveStatus = "" }
               catch { saveStatus = "オフライン保存できませんでした。次に開いたときに再試行します。" }
         }
-        .toolbar {
-            if !saveStatus.isEmpty {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button { saveDetailsPresented = true } label: {
-                        Image(systemName: saveStatus.contains("できません") ? "exclamationmark.circle" : (saveStatus.contains("保存済み") ? "checkmark.circle" : "arrow.down.circle"))
-                    }.accessibilityLabel(saveStatus)
-                }
-            }
-        }
         .alert("オフライン保存", isPresented: $saveDetailsPresented) { Button("OK", role: .cancel) {} } message: { Text(saveStatus) }
         .alert("次の話を読みますか？", isPresented: $nextEpisodePresented) {
             Button("次の話を読む") { if let next { openEpisode(next) } }
@@ -401,14 +393,36 @@ struct ReaderView: View {
         } message: {
             if let next { Text("第\(next.number)話「\(next.title)」") }
         }
-        .navigationTitle("第\(episode.number)話\(episode.edition.isEmpty ? "" : " · " + episode.edition)")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar(controlsVisible ? .visible : .hidden, for: .navigationBar)
+        // Keep the web view's frame and safe area identical in both control states.
+        .toolbar(.hidden, for: .navigationBar)
         .toolbar(.hidden, for: .tabBar)
-        .statusBarHidden(!controlsVisible)
-        .ignoresSafeArea(.container, edges: controlsVisible ? [] : [.top, .bottom])
-        .safeAreaInset(edge: .bottom) {
-            if controlsVisible, title.episodeCount > 1 {
+        .statusBarHidden(true)
+        .ignoresSafeArea(.container, edges: [.top, .bottom])
+        .overlay(alignment: .top) {
+            HStack {
+                Button { dismiss() } label: {
+                    Label("戻る", systemImage: "chevron.left")
+                }
+                .accessibilityIdentifier("reader-back")
+                Spacer()
+                Text("第\(episode.number)話\(episode.edition.isEmpty ? "" : " · " + episode.edition)")
+                    .font(.headline)
+                    .lineLimit(1)
+                Spacer()
+                if !saveStatus.isEmpty {
+                    Button { saveDetailsPresented = true } label: {
+                        Image(systemName: saveStatus.contains("できません") ? "exclamationmark.circle" : (saveStatus.contains("保存済み") ? "checkmark.circle" : "arrow.down.circle"))
+                    }.accessibilityLabel(saveStatus)
+                }
+            }
+            .padding(.horizontal, 20).padding(.vertical, 12)
+            .background(.regularMaterial)
+            .opacity(controlsVisible ? 1 : 0)
+            .allowsHitTesting(controlsVisible)
+            .accessibilityHidden(!controlsVisible)
+        }
+        .overlay(alignment: .bottom) {
+            if title.episodeCount > 1 {
                 HStack {
                     Button { if let previous { openEpisode(previous) } } label: {
                         Label("前の話", systemImage: "chevron.left")
@@ -425,7 +439,10 @@ struct ReaderView: View {
                     }.disabled(next == nil).accessibilityIdentifier("next-episode")
                 }
                 .font(.subheadline.bold()).padding(.horizontal, 20).padding(.vertical, 12)
-                .background(Color(.systemBackground))
+                .background(.regularMaterial)
+                .opacity(controlsVisible ? 1 : 0)
+                .allowsHitTesting(controlsVisible)
+                .accessibilityHidden(!controlsVisible)
             }
         }
     }
