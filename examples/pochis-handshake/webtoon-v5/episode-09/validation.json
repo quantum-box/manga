@@ -1,776 +1,1113 @@
 {
   "episode": 9,
-  "browserTool": "cua_repl",
   "views": [
     {
-      "figures": [
-        {
-          "bottom": 905.296875,
-          "id": "scene-01",
-          "marginAfter": 48.75,
-          "pauses": [],
-          "top": 125.296875,
-          "windows": []
-        },
-        {
-          "bottom": 1734.046875,
-          "id": "scene-02",
-          "marginAfter": 27.0833,
-          "pauses": [],
-          "top": 954.046875,
-          "windows": []
-        },
-        {
-          "bottom": 2541.125,
-          "id": "scene-03",
-          "marginAfter": 27.0833,
-          "pauses": [],
-          "top": 1761.125,
-          "windows": []
-        },
-        {
-          "bottom": 3439.1953125,
-          "id": "scene-04",
-          "marginAfter": 16.25,
-          "pauses": [
-            {
-              "height": 75.828125,
-              "purpose": "木の異変を聞き取る一瞬"
-            }
-          ],
-          "top": 2568.203125,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 96.0452%)",
-              "height": 383.5,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,340],[360,354]]}",
-              "top": 2568.203125,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 3.68421%, 100% 100%, 0% 100%)",
-              "height": 411.6640625,
-              "panels": "3-4",
-              "sourceRegion": "{\"upper\":[[0,340],[360,354]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 3027.53125,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 4272.2734375,
-          "id": "scene-05",
-          "marginAfter": 238.333,
-          "pauses": [
-            {
-              "height": 26,
-              "purpose": "吠えた直後に手が止まる速さを保つ"
-            }
-          ],
-          "top": 3455.4453125,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 96.875%)",
-              "height": 346.6640625,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,310],[360,320]]}",
-              "top": 3455.4453125,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 2.43902%, 100% 100%, 0% 100%)",
-              "height": 444.1640625,
-              "panels": "3-4",
-              "sourceRegion": "{\"upper\":[[0,310],[360,320]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 3828.109375,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 5889.6640625,
-          "id": "scene-06",
-          "marginAfter": 227.5,
-          "pauses": [
-            {
-              "height": 270.828125,
-              "purpose": "止まったから見えた危険を確かめる"
-            },
-            {
-              "height": 314.1640625,
-              "purpose": "言葉にならない声が届いた安堵"
-            }
-          ],
-          "top": 4510.6015625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 335.828125,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,310],[360,310]]}",
-              "top": 4510.6015625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 93.8679%, 0% 100%)",
-              "height": 229.6640625,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,310],[360,310]],\"lower\":[[0,522],[360,509]]}",
-              "top": 5117.2578125,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 6.16114%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 228.578125,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,522],[360,509]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 5661.0859375,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 6897.15625,
-          "id": "scene-07",
-          "marginAfter": 43.3333,
-          "pauses": [],
-          "top": 6117.15625,
-          "windows": []
-        },
-        {
-          "bottom": 7720.484375,
-          "id": "scene-08",
-          "marginAfter": 37.9167,
-          "pauses": [],
-          "top": 6940.484375,
-          "windows": []
-        },
-        {
-          "bottom": 9054.046875,
-          "id": "scene-09",
-          "marginAfter": 325,
-          "pauses": [
-            {
-              "height": 216.6640625,
-              "purpose": "固定された部品を確かめてから結果を伝える"
-            },
-            {
-              "height": 238.328125,
-              "purpose": "成功を急いで流さず受け止める"
-            }
-          ],
-          "top": 7758.3984375,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 92.7152%, 0% 100%)",
-              "height": 327.1640625,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,302],[360,280]]}",
-              "top": 7758.3984375,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 8.0292%, 100% 0%, 100% 100%, 0% 87.5912%)",
-              "height": 296.828125,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,302],[360,280]],\"lower\":[[0,520],[360,554]]}",
-              "top": 8302.2265625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 17%, 100% 100%, 0% 100%)",
-              "height": 216.6640625,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,520],[360,554]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 8837.3828125,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 10650.859375,
-          "id": "scene-10",
-          "marginAfter": 736.667,
-          "pauses": [
-            {
-              "height": 249.1640625,
-              "purpose": "褒められた後、自分の役割を受け止める"
-            },
-            {
-              "height": 205.828125,
-              "purpose": "仕事の余韻から翌朝の約束へ移る"
-            }
-          ],
-          "top": 9379.046875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 95.6044%)",
-              "height": 394.328125,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,348],[360,364]]}",
-              "top": 9379.046875,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 9.14286%, 100% 89.7143%, 0% 100%)",
-              "height": 189.578125,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,348],[360,364]],\"lower\":[[0,523],[360,505]]}",
-              "top": 10022.5390625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 8.37209%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 232.9140625,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,523],[360,505]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 10417.9453125,
-              "width": 390
-            }
-          ]
-        }
-      ],
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 11528,
       "images": [
         {
-          "alt": "本番の場所。PR：足元、確認しました。／DK：水はまだ止める。／PO内心：見逃すな。",
+          "src": "art/01.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01.webp"
+          "naturalHeight": 1774,
+          "top": 125.796875,
+          "bottom": 905.796875,
+          "displayWidth": 390
         },
         {
-          "alt": "支える力。PR：もう少しです。",
+          "src": "art/02.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02.webp"
+          "naturalHeight": 1774,
+          "top": 954.546875,
+          "bottom": 1734.546875,
+          "displayWidth": 390
         },
         {
-          "alt": "合図を合わせる。DK：今だ。／PO内心：練習どおり。",
+          "src": "art/03.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03.webp"
+          "naturalHeight": 1774,
+          "top": 1761.625,
+          "bottom": 2541.625,
+          "displayWidth": 390
         },
         {
-          "alt": "小さな異変。無言の動作。",
+          "src": "art/04-positions.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-positions.webp"
+          "naturalHeight": 1774,
+          "top": 2568.703125,
+          "bottom": 3348.703125,
+          "displayWidth": 390
         },
         {
-          "alt": "小さな異変。PO内心：板が落ちる！",
+          "src": "art/04-positions.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-positions.webp"
+          "naturalHeight": 1774,
+          "top": 2659.71875,
+          "bottom": 3439.71875,
+          "displayWidth": 390
         },
         {
-          "alt": "声を出す。PO発声：ワン！",
+          "src": "art/05-brace.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05-brace.webp"
+          "naturalHeight": 1774,
+          "top": 3455.9375,
+          "bottom": 4235.9375,
+          "displayWidth": 390
         },
         {
-          "alt": "声を出す。DK：止める！",
+          "src": "art/05-brace.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05-brace.webp"
+          "naturalHeight": 1774,
+          "top": 3492.78125,
+          "bottom": 4272.78125,
+          "displayWidth": 390
         },
         {
-          "alt": "止まったから見えた。無言の動作。",
+          "src": "art/06.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06.webp"
+          "naturalHeight": 1774,
+          "top": 4511.078125,
+          "bottom": 5291.078125,
+          "displayWidth": 390
         },
         {
-          "alt": "止まったから見えた。PR：挟まるところだった。",
+          "src": "art/06.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06.webp"
+          "naturalHeight": 1774,
+          "top": 4781.921875,
+          "bottom": 5561.921875,
+          "displayWidth": 390
         },
         {
-          "alt": "止まったから見えた。PO内心：伝わった……。",
+          "src": "art/06.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06.webp"
+          "naturalHeight": 1774,
+          "top": 5110.15625,
+          "bottom": 5890.15625,
+          "displayWidth": 390
         },
         {
-          "alt": "安全を作り直す。PR：もう一度、確かめます。／DK：急ぐな。",
+          "src": "art/07.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07.webp"
+          "naturalHeight": 1774,
+          "top": 6117.609375,
+          "bottom": 6897.609375,
+          "displayWidth": 390
         },
         {
-          "alt": "もう一度。PR：準備できました。／DK：今だ。",
+          "src": "art/08.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08.webp"
+          "naturalHeight": 1774,
+          "top": 6940.9375,
+          "bottom": 7720.9375,
+          "displayWidth": 390
         },
         {
-          "alt": "留まった。無言の動作。",
+          "src": "art/09.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09.webp"
+          "naturalHeight": 1774,
+          "top": 7758.84375,
+          "bottom": 8538.84375,
+          "displayWidth": 390
         },
         {
-          "alt": "留まった。PR：固定できました。",
+          "src": "art/09.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09.webp"
+          "naturalHeight": 1774,
+          "top": 7999.34375,
+          "bottom": 8779.34375,
+          "displayWidth": 390
         },
         {
-          "alt": "留まった。DK：……よし。",
+          "src": "art/09.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09.webp"
+          "naturalHeight": 1774,
+          "top": 8274.515625,
+          "bottom": 9054.515625,
+          "displayWidth": 390
         },
         {
-          "alt": "何もしなかった仕事。PR：よく知らせてくれたね。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 9379.46875,
+          "bottom": 10159.46875,
+          "displayWidth": 390
         },
         {
-          "alt": "何もしなかった仕事。PO内心：待つのも、仕事だ。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 9645.96875,
+          "bottom": 10425.96875,
+          "displayWidth": 390
         },
         {
-          "alt": "何もしなかった仕事。DK：明朝、少しだけ開ける。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 9871.3125,
+          "bottom": 10651.3125,
+          "displayWidth": 390
         }
       ],
-      "innerHeight": 844,
-      "innerWidth": 390,
+      "figures": [
+        {
+          "id": "scene-01",
+          "top": 125.796875,
+          "bottom": 905.796875,
+          "marginAfter": 48.75,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-02",
+          "top": 954.546875,
+          "bottom": 1734.546875,
+          "marginAfter": 27.0833,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-03",
+          "top": 1761.625,
+          "bottom": 2541.625,
+          "marginAfter": 27.0833,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-04",
+          "top": 2568.703125,
+          "bottom": 3439.6875,
+          "marginAfter": 16.25,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,340],[360,354]]}",
+              "top": 2568.703125,
+              "height": 383.5,
+              "width": 390
+            },
+            {
+              "panels": "3-4",
+              "sourceRegion": "{\"upper\":[[0,340],[360,354]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3028.03125,
+              "height": 411.65625,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "木の異変を聞き取る一瞬",
+              "height": 75.828125
+            }
+          ]
+        },
+        {
+          "id": "scene-05",
+          "top": 3455.9375,
+          "bottom": 4272.75,
+          "marginAfter": 238.333,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,310],[360,320]]}",
+              "top": 3455.9375,
+              "height": 346.65625,
+              "width": 390
+            },
+            {
+              "panels": "3-4",
+              "sourceRegion": "{\"upper\":[[0,310],[360,320]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3828.59375,
+              "height": 444.15625,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "吠えた直後に手が止まる速さを保つ",
+              "height": 26
+            }
+          ]
+        },
+        {
+          "id": "scene-06",
+          "top": 4511.078125,
+          "bottom": 5890.125,
+          "marginAfter": 227.5,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,310],[360,310]]}",
+              "top": 4511.078125,
+              "height": 335.828125,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,310],[360,310]],\"lower\":[[0,522],[360,509]]}",
+              "top": 5117.734375,
+              "height": 229.65625,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,522],[360,509]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 5661.546875,
+              "height": 228.578125,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "止まったから見えた危険を確かめる",
+              "height": 270.828125
+            },
+            {
+              "purpose": "言葉にならない声が届いた安堵",
+              "height": 314.15625
+            }
+          ]
+        },
+        {
+          "id": "scene-07",
+          "top": 6117.609375,
+          "bottom": 6897.609375,
+          "marginAfter": 43.3333,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-08",
+          "top": 6940.9375,
+          "bottom": 7720.9375,
+          "marginAfter": 37.9167,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-09",
+          "top": 7758.84375,
+          "bottom": 9054.46875,
+          "marginAfter": 325,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,302],[360,280]]}",
+              "top": 7758.84375,
+              "height": 327.15625,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,302],[360,280]],\"lower\":[[0,520],[360,554]]}",
+              "top": 8302.65625,
+              "height": 296.828125,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,520],[360,554]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 8837.8125,
+              "height": 216.65625,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "固定された部品を確かめてから結果を伝える",
+              "height": 216.65625
+            },
+            {
+              "purpose": "成功を急いで流さず受け止める",
+              "height": 238.328125
+            }
+          ]
+        },
+        {
+          "id": "scene-10",
+          "top": 9379.46875,
+          "bottom": 10651.265625,
+          "marginAfter": 736.667,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,348],[360,364]]}",
+              "top": 9379.46875,
+              "height": 394.328125,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,348],[360,364]],\"lower\":[[0,523],[360,505]]}",
+              "top": 10022.953125,
+              "height": 189.578125,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,523],[360,505]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 10418.359375,
+              "height": 232.90625,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "褒められた後、自分の役割を受け止める",
+              "height": 249.15625
+            },
+            {
+              "purpose": "仕事の余韻から翌朝の約束へ移る",
+              "height": 205.828125
+            }
+          ]
+        }
+      ],
       "links": [
         "../chapters.html",
         "../episode-08/index.html",
         "../episode-10/index.html"
       ],
-      "scrollHeight": 11527,
-      "scrollWidth": 390
+      "pacingWindows": [
+        {
+          "scene": "scene-04",
+          "purpose": "木の異変を聞き取る一瞬",
+          "screens": [
+            {
+              "file": "pacing-04-1-390-1.png",
+              "scrollY": 2404
+            },
+            {
+              "file": "pacing-04-1-390-2.png",
+              "scrollY": 2868
+            },
+            {
+              "file": "pacing-04-1-390-3.png",
+              "scrollY": 3332
+            }
+          ]
+        },
+        {
+          "scene": "scene-05",
+          "purpose": "吠えた直後に手が止まる速さを保つ",
+          "screens": [
+            {
+              "file": "pacing-05-1-390-1.png",
+              "scrollY": 3254
+            },
+            {
+              "file": "pacing-05-1-390-2.png",
+              "scrollY": 3718
+            },
+            {
+              "file": "pacing-05-1-390-3.png",
+              "scrollY": 4182
+            }
+          ]
+        },
+        {
+          "scene": "scene-06",
+          "purpose": "止まったから見えた危険を確かめる",
+          "screens": [
+            {
+              "file": "pacing-06-1-390-1.png",
+              "scrollY": 4298
+            },
+            {
+              "file": "pacing-06-1-390-2.png",
+              "scrollY": 4763
+            },
+            {
+              "file": "pacing-06-1-390-3.png",
+              "scrollY": 5227
+            }
+          ]
+        },
+        {
+          "scene": "scene-06",
+          "purpose": "言葉にならない声が届いた安堵",
+          "screens": [
+            {
+              "file": "pacing-06-2-390-1.png",
+              "scrollY": 4799
+            },
+            {
+              "file": "pacing-06-2-390-2.png",
+              "scrollY": 5263
+            },
+            {
+              "file": "pacing-06-2-390-3.png",
+              "scrollY": 5727
+            }
+          ]
+        },
+        {
+          "scene": "scene-09",
+          "purpose": "固定された部品を確かめてから結果を伝える",
+          "screens": [
+            {
+              "file": "pacing-09-1-390-1.png",
+              "scrollY": 7537
+            },
+            {
+              "file": "pacing-09-1-390-2.png",
+              "scrollY": 8002
+            },
+            {
+              "file": "pacing-09-1-390-3.png",
+              "scrollY": 8466
+            }
+          ]
+        },
+        {
+          "scene": "scene-09",
+          "purpose": "成功を急いで流さず受け止める",
+          "screens": [
+            {
+              "file": "pacing-09-2-390-1.png",
+              "scrollY": 8051
+            },
+            {
+              "file": "pacing-09-2-390-2.png",
+              "scrollY": 8515
+            },
+            {
+              "file": "pacing-09-2-390-3.png",
+              "scrollY": 8979
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "褒められた後、自分の役割を受け止める",
+          "screens": [
+            {
+              "file": "pacing-10-1-390-1.png",
+              "scrollY": 9225
+            },
+            {
+              "file": "pacing-10-1-390-2.png",
+              "scrollY": 9689
+            },
+            {
+              "file": "pacing-10-1-390-3.png",
+              "scrollY": 10154
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "仕事の余韻から翌朝の約束へ移る",
+          "screens": [
+            {
+              "file": "pacing-10-2-390-1.png",
+              "scrollY": 9664
+            },
+            {
+              "file": "pacing-10-2-390-2.png",
+              "scrollY": 10128
+            },
+            {
+              "file": "pacing-10-2-390-3.png",
+              "scrollY": 10592
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "protected reveal after scene-10",
+          "screens": [
+            {
+              "file": "pacing-10-3-390-1.png",
+              "scrollY": 10103
+            },
+            {
+              "file": "pacing-10-3-390-2.png",
+              "scrollY": 10567
+            },
+            {
+              "file": "pacing-10-3-390-3.png",
+              "scrollY": 10684
+            }
+          ]
+        }
+      ]
     },
     {
-      "figures": [
-        {
-          "bottom": 845.296875,
-          "id": "scene-01",
-          "marginAfter": 45,
-          "pauses": [],
-          "top": 125.296875,
-          "windows": []
-        },
-        {
-          "bottom": 1610.296875,
-          "id": "scene-02",
-          "marginAfter": 25,
-          "pauses": [],
-          "top": 890.296875,
-          "windows": []
-        },
-        {
-          "bottom": 2355.2890625,
-          "id": "scene-03",
-          "marginAfter": 25,
-          "pauses": [],
-          "top": 1635.2890625,
-          "windows": []
-        },
-        {
-          "bottom": 3184.2734375,
-          "id": "scene-04",
-          "marginAfter": 15,
-          "pauses": [
-            {
-              "height": 69.9921875,
-              "purpose": "木の異変を聞き取る一瞬"
-            }
-          ],
-          "top": 2380.28125,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 96.0452%)",
-              "height": 354,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,340],[360,354]]}",
-              "top": 2380.28125,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 3.68421%, 100% 100%, 0% 100%)",
-              "height": 380,
-              "panels": "3-4",
-              "sourceRegion": "{\"upper\":[[0,340],[360,354]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 2804.2734375,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 3953.2734375,
-          "id": "scene-05",
-          "marginAfter": 220,
-          "pauses": [
-            {
-              "height": 24,
-              "purpose": "吠えた直後に手が止まる速さを保つ"
-            }
-          ],
-          "top": 3199.2734375,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 96.875%)",
-              "height": 320,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,310],[360,320]]}",
-              "top": 3199.2734375,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 2.43902%, 100% 100%, 0% 100%)",
-              "height": 410,
-              "panels": "3-4",
-              "sourceRegion": "{\"upper\":[[0,310],[360,320]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 3543.2734375,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 5446.265625,
-          "id": "scene-06",
-          "marginAfter": 210,
-          "pauses": [
-            {
-              "height": 249.9921875,
-              "purpose": "止まったから見えた危険を確かめる"
-            },
-            {
-              "height": 290,
-              "purpose": "言葉にならない声が届いた安堵"
-            }
-          ],
-          "top": 4173.2734375,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 310,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,310],[360,310]]}",
-              "top": 4173.2734375,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 93.8679%, 0% 100%)",
-              "height": 212,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,310],[360,310]],\"lower\":[[0,522],[360,509]]}",
-              "top": 4733.265625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 6.16114%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 211,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,522],[360,509]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 5235.265625,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 6376.2578125,
-          "id": "scene-07",
-          "marginAfter": 40,
-          "pauses": [],
-          "top": 5656.2578125,
-          "windows": []
-        },
-        {
-          "bottom": 7136.25,
-          "id": "scene-08",
-          "marginAfter": 35,
-          "pauses": [],
-          "top": 6416.25,
-          "windows": []
-        },
-        {
-          "bottom": 8367.2421875,
-          "id": "scene-09",
-          "marginAfter": 300,
-          "pauses": [
-            {
-              "height": 200,
-              "purpose": "固定された部品を確かめてから結果を伝える"
-            },
-            {
-              "height": 220,
-              "purpose": "成功を急いで流さず受け止める"
-            }
-          ],
-          "top": 7171.2421875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 92.7152%, 0% 100%)",
-              "height": 302,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,302],[360,280]]}",
-              "top": 7171.2421875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 8.0292%, 100% 0%, 100% 100%, 0% 87.5912%)",
-              "height": 274,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,302],[360,280]],\"lower\":[[0,520],[360,554]]}",
-              "top": 7673.2421875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 17%, 100% 100%, 0% 100%)",
-              "height": 200,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,520],[360,554]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 8167.2421875,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 9841.2421875,
-          "id": "scene-10",
-          "marginAfter": 680,
-          "pauses": [
-            {
-              "height": 230,
-              "purpose": "褒められた後、自分の役割を受け止める"
-            },
-            {
-              "height": 190,
-              "purpose": "仕事の余韻から翌朝の約束へ移る"
-            }
-          ],
-          "top": 8667.2421875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 95.6044%)",
-              "height": 364,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,348],[360,364]]}",
-              "top": 8667.2421875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 9.14286%, 100% 89.7143%, 0% 100%)",
-              "height": 175,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,348],[360,364]],\"lower\":[[0,523],[360,505]]}",
-              "top": 9261.2421875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 8.37209%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 215,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,523],[360,505]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 9626.2421875,
-              "width": 360
-            }
-          ]
-        }
-      ],
+      "innerWidth": 360,
+      "innerHeight": 800,
+      "scrollWidth": 360,
+      "scrollHeight": 10662,
       "images": [
         {
-          "alt": "本番の場所。PR：足元、確認しました。／DK：水はまだ止める。／PO内心：見逃すな。",
+          "src": "art/01.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01.webp"
+          "naturalHeight": 1774,
+          "top": 125.796875,
+          "bottom": 845.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "支える力。PR：もう少しです。",
+          "src": "art/02.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02.webp"
+          "naturalHeight": 1774,
+          "top": 890.796875,
+          "bottom": 1610.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "合図を合わせる。DK：今だ。／PO内心：練習どおり。",
+          "src": "art/03.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03.webp"
+          "naturalHeight": 1774,
+          "top": 1635.78125,
+          "bottom": 2355.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "小さな異変。無言の動作。",
+          "src": "art/04-positions.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-positions.webp"
+          "naturalHeight": 1774,
+          "top": 2380.765625,
+          "bottom": 3100.765625,
+          "displayWidth": 360
         },
         {
-          "alt": "小さな異変。PO内心：板が落ちる！",
+          "src": "art/04-positions.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04-positions.webp"
+          "naturalHeight": 1774,
+          "top": 2464.765625,
+          "bottom": 3184.765625,
+          "displayWidth": 360
         },
         {
-          "alt": "声を出す。PO発声：ワン！",
+          "src": "art/05-brace.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05-brace.webp"
+          "naturalHeight": 1774,
+          "top": 3199.75,
+          "bottom": 3919.75,
+          "displayWidth": 360
         },
         {
-          "alt": "声を出す。DK：止める！",
+          "src": "art/05-brace.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05-brace.webp"
+          "naturalHeight": 1774,
+          "top": 3233.75,
+          "bottom": 3953.75,
+          "displayWidth": 360
         },
         {
-          "alt": "止まったから見えた。無言の動作。",
+          "src": "art/06.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06.webp"
+          "naturalHeight": 1774,
+          "top": 4173.75,
+          "bottom": 4893.75,
+          "displayWidth": 360
         },
         {
-          "alt": "止まったから見えた。PR：挟まるところだった。",
+          "src": "art/06.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06.webp"
+          "naturalHeight": 1774,
+          "top": 4423.734375,
+          "bottom": 5143.734375,
+          "displayWidth": 360
         },
         {
-          "alt": "止まったから見えた。PO内心：伝わった……。",
+          "src": "art/06.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06.webp"
+          "naturalHeight": 1774,
+          "top": 4726.734375,
+          "bottom": 5446.734375,
+          "displayWidth": 360
         },
         {
-          "alt": "安全を作り直す。PR：もう一度、確かめます。／DK：急ぐな。",
+          "src": "art/07.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07.webp"
+          "naturalHeight": 1774,
+          "top": 5656.71875,
+          "bottom": 6376.71875,
+          "displayWidth": 360
         },
         {
-          "alt": "もう一度。PR：準備できました。／DK：今だ。",
+          "src": "art/08.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08.webp"
+          "naturalHeight": 1774,
+          "top": 6416.703125,
+          "bottom": 7136.703125,
+          "displayWidth": 360
         },
         {
-          "alt": "留まった。無言の動作。",
+          "src": "art/09.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09.webp"
+          "naturalHeight": 1774,
+          "top": 7171.6875,
+          "bottom": 7891.6875,
+          "displayWidth": 360
         },
         {
-          "alt": "留まった。PR：固定できました。",
+          "src": "art/09.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09.webp"
+          "naturalHeight": 1774,
+          "top": 7393.6875,
+          "bottom": 8113.6875,
+          "displayWidth": 360
         },
         {
-          "alt": "留まった。DK：……よし。",
+          "src": "art/09.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09.webp"
+          "naturalHeight": 1774,
+          "top": 7647.6875,
+          "bottom": 8367.6875,
+          "displayWidth": 360
         },
         {
-          "alt": "何もしなかった仕事。PR：よく知らせてくれたね。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 8667.6875,
+          "bottom": 9387.6875,
+          "displayWidth": 360
         },
         {
-          "alt": "何もしなかった仕事。PO内心：待つのも、仕事だ。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 8913.6875,
+          "bottom": 9633.6875,
+          "displayWidth": 360
         },
         {
-          "alt": "何もしなかった仕事。DK：明朝、少しだけ開ける。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 9121.6875,
+          "bottom": 9841.6875,
+          "displayWidth": 360
         }
       ],
-      "innerHeight": 800,
-      "innerWidth": 360,
+      "figures": [
+        {
+          "id": "scene-01",
+          "top": 125.796875,
+          "bottom": 845.796875,
+          "marginAfter": 45,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-02",
+          "top": 890.796875,
+          "bottom": 1610.796875,
+          "marginAfter": 25,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-03",
+          "top": 1635.78125,
+          "bottom": 2355.78125,
+          "marginAfter": 25,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-04",
+          "top": 2380.765625,
+          "bottom": 3184.75,
+          "marginAfter": 15,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,340],[360,354]]}",
+              "top": 2380.765625,
+              "height": 354,
+              "width": 360
+            },
+            {
+              "panels": "3-4",
+              "sourceRegion": "{\"upper\":[[0,340],[360,354]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 2804.75,
+              "height": 380,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "木の異変を聞き取る一瞬",
+              "height": 69.984375
+            }
+          ]
+        },
+        {
+          "id": "scene-05",
+          "top": 3199.75,
+          "bottom": 3953.75,
+          "marginAfter": 220,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,310],[360,320]]}",
+              "top": 3199.75,
+              "height": 320,
+              "width": 360
+            },
+            {
+              "panels": "3-4",
+              "sourceRegion": "{\"upper\":[[0,310],[360,320]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3543.75,
+              "height": 410,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "吠えた直後に手が止まる速さを保つ",
+              "height": 24
+            }
+          ]
+        },
+        {
+          "id": "scene-06",
+          "top": 4173.75,
+          "bottom": 5446.734375,
+          "marginAfter": 210,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,310],[360,310]]}",
+              "top": 4173.75,
+              "height": 310,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,310],[360,310]],\"lower\":[[0,522],[360,509]]}",
+              "top": 4733.734375,
+              "height": 212,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,522],[360,509]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 5235.734375,
+              "height": 211,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "止まったから見えた危険を確かめる",
+              "height": 249.984375
+            },
+            {
+              "purpose": "言葉にならない声が届いた安堵",
+              "height": 290
+            }
+          ]
+        },
+        {
+          "id": "scene-07",
+          "top": 5656.71875,
+          "bottom": 6376.71875,
+          "marginAfter": 40,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-08",
+          "top": 6416.703125,
+          "bottom": 7136.703125,
+          "marginAfter": 35,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-09",
+          "top": 7171.6875,
+          "bottom": 8367.6875,
+          "marginAfter": 300,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,302],[360,280]]}",
+              "top": 7171.6875,
+              "height": 302,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,302],[360,280]],\"lower\":[[0,520],[360,554]]}",
+              "top": 7673.6875,
+              "height": 274,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,520],[360,554]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 8167.6875,
+              "height": 200,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "固定された部品を確かめてから結果を伝える",
+              "height": 200
+            },
+            {
+              "purpose": "成功を急いで流さず受け止める",
+              "height": 220
+            }
+          ]
+        },
+        {
+          "id": "scene-10",
+          "top": 8667.6875,
+          "bottom": 9841.6875,
+          "marginAfter": 680,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,348],[360,364]]}",
+              "top": 8667.6875,
+              "height": 364,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,348],[360,364]],\"lower\":[[0,523],[360,505]]}",
+              "top": 9261.6875,
+              "height": 175,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,523],[360,505]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 9626.6875,
+              "height": 215,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "褒められた後、自分の役割を受け止める",
+              "height": 230
+            },
+            {
+              "purpose": "仕事の余韻から翌朝の約束へ移る",
+              "height": 190
+            }
+          ]
+        }
+      ],
       "links": [
         "../chapters.html",
         "../episode-08/index.html",
         "../episode-10/index.html"
       ],
-      "scrollHeight": 10661,
-      "scrollWidth": 360
+      "pacingWindows": [
+        {
+          "scene": "scene-04",
+          "purpose": "木の異変を聞き取る一瞬",
+          "screens": [
+            {
+              "file": "pacing-04-1-360-1.png",
+              "scrollY": 2215
+            },
+            {
+              "file": "pacing-04-1-360-2.png",
+              "scrollY": 2655
+            },
+            {
+              "file": "pacing-04-1-360-3.png",
+              "scrollY": 3095
+            }
+          ]
+        },
+        {
+          "scene": "scene-05",
+          "purpose": "吠えた直後に手が止まる速さを保つ",
+          "screens": [
+            {
+              "file": "pacing-05-1-360-1.png",
+              "scrollY": 3000
+            },
+            {
+              "file": "pacing-05-1-360-2.png",
+              "scrollY": 3440
+            },
+            {
+              "file": "pacing-05-1-360-3.png",
+              "scrollY": 3880
+            }
+          ]
+        },
+        {
+          "scene": "scene-06",
+          "purpose": "止まったから見えた危険を確かめる",
+          "screens": [
+            {
+              "file": "pacing-06-1-360-1.png",
+              "scrollY": 3964
+            },
+            {
+              "file": "pacing-06-1-360-2.png",
+              "scrollY": 4404
+            },
+            {
+              "file": "pacing-06-1-360-3.png",
+              "scrollY": 4844
+            }
+          ]
+        },
+        {
+          "scene": "scene-06",
+          "purpose": "言葉にならない声が届いた安堵",
+          "screens": [
+            {
+              "file": "pacing-06-2-360-1.png",
+              "scrollY": 4426
+            },
+            {
+              "file": "pacing-06-2-360-2.png",
+              "scrollY": 4866
+            },
+            {
+              "file": "pacing-06-2-360-3.png",
+              "scrollY": 5306
+            }
+          ]
+        },
+        {
+          "scene": "scene-09",
+          "purpose": "固定された部品を確かめてから結果を伝える",
+          "screens": [
+            {
+              "file": "pacing-09-1-360-1.png",
+              "scrollY": 6954
+            },
+            {
+              "file": "pacing-09-1-360-2.png",
+              "scrollY": 7394
+            },
+            {
+              "file": "pacing-09-1-360-3.png",
+              "scrollY": 7834
+            }
+          ]
+        },
+        {
+          "scene": "scene-09",
+          "purpose": "成功を急いで流さず受け止める",
+          "screens": [
+            {
+              "file": "pacing-09-2-360-1.png",
+              "scrollY": 7428
+            },
+            {
+              "file": "pacing-09-2-360-2.png",
+              "scrollY": 7868
+            },
+            {
+              "file": "pacing-09-2-360-3.png",
+              "scrollY": 8308
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "褒められた後、自分の役割を受け止める",
+          "screens": [
+            {
+              "file": "pacing-10-1-360-1.png",
+              "scrollY": 8512
+            },
+            {
+              "file": "pacing-10-1-360-2.png",
+              "scrollY": 8952
+            },
+            {
+              "file": "pacing-10-1-360-3.png",
+              "scrollY": 9392
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "仕事の余韻から翌朝の約束へ移る",
+          "screens": [
+            {
+              "file": "pacing-10-2-360-1.png",
+              "scrollY": 8917
+            },
+            {
+              "file": "pacing-10-2-360-2.png",
+              "scrollY": 9357
+            },
+            {
+              "file": "pacing-10-2-360-3.png",
+              "scrollY": 9797
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "protected reveal after scene-10",
+          "screens": [
+            {
+              "file": "pacing-10-3-360-1.png",
+              "scrollY": 9322
+            },
+            {
+              "file": "pacing-10-3-360-2.png",
+              "scrollY": 9762
+            },
+            {
+              "file": "pacing-10-3-360-3.png",
+              "scrollY": 9862
+            }
+          ]
+        }
+      ]
     }
   ],
   "letteringCheck": {
@@ -824,7 +1161,7 @@
           "right": 354,
           "pause": 70,
           "purpose": "木の異変を聞き取る一瞬",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         }
       ]
     },
@@ -840,7 +1177,7 @@
           "right": 320,
           "pause": 24,
           "purpose": "吠えた直後に手が止まる速さを保つ",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         }
       ]
     },
@@ -856,7 +1193,7 @@
           "right": 310,
           "pause": 250,
           "purpose": "止まったから見えた危険を確かめる",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         },
         {
           "afterPanel": 3,
@@ -926,7 +1263,7 @@
           "right": 505,
           "pause": 190,
           "purpose": "仕事の余韻から翌朝の約束へ移る",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         }
       ]
     }
@@ -934,6 +1271,5 @@
   "uniqueArtwork": 10,
   "displayWindows": 18,
   "standaloneArtworkBytesMatch": true,
-  "sourcePixelsCovered": true,
   "physicalDeviceTest": false
 }

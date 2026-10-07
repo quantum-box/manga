@@ -8,6 +8,8 @@ const base=path.resolve(__dirname,'..');
  try {
   const plan=JSON.parse(fs.readFileSync(path.join(__dirname,'plan.json')));
   const manual=JSON.parse(fs.readFileSync(path.join(__dirname,'visual-review.json')));
+  const drawn=plan.filter(e=>fs.existsSync(path.join(base,'episode-'+String(e.number).padStart(2,'0'),'index.html')));
+  const standaloneNumbers=[drawn[0].number,drawn.at(-1).number];
   const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
   for(const e of plan){
    if(process.argv.length>2&&!process.argv.slice(2).map(Number).includes(e.number))continue;
@@ -46,23 +48,43 @@ const base=path.resolve(__dirname,'..');
      const mobile=path.join(folder,'review');fs.mkdirSync(mobile,{recursive:true});
      for(let i=0;i<10;i++)await page.locator('figure').nth(i).screenshot({path:path.join(mobile,'scene-'+String(i+1).padStart(2,'0')+'-360.png')});
     }
+    const pacingDir=path.join(folder,'review');fs.mkdirSync(pacingDir,{recursive:true});
+    data.pacingWindows=[];
+    for(let i=0;i<data.figures.length;i++){
+     const f=data.figures[i];
+     const intervals=f.windows.slice(1).map((w,j)=>({top:w.top-f.pauses[j].height,purpose:f.pauses[j].purpose}));
+     if(f.marginAfter>=600)intervals.push({top:f.bottom,purpose:'protected reveal after '+f.id});
+     for(let j=0;j<intervals.length;j++){
+      const interval=intervals[j],screens=[];
+      for(let k=0;k<3;k++){
+       const y=Math.max(0,interval.top-height*0.65+k*height*0.55);
+       await page.evaluate(y=>scrollTo(0,y),y);
+       const name=`pacing-${String(i+1).padStart(2,'0')}-${j+1}-${width}-${k+1}.png`;
+       await page.screenshot({path:path.join(pacingDir,name)});screens.push({file:name,scrollY:await page.evaluate(()=>scrollY)});
+      }
+      data.pacingWindows.push({scene:f.id,purpose:interval.purpose,screens});
+     }
+    }
     views.push(data);await page.close();
    }
    const review=manual.episodes.find(r=>r.episode===e.number);
-   assert(review.all360pxStripsRead);
-   fs.writeFileSync(path.join(folder,'validation.json'),JSON.stringify({episode:e.number,views,letteringCheck:review,letteringSize:manual.lettering,gaps:scenes.map(s=>({scene:s.id,referenceWidth:360,referencePx:s.gap_after,purpose:s.pacing,internal:s.internal_pauses})),uniqueArtwork:10,displayWindows:expectedHashes.length,standaloneArtworkBytesMatch:true,physicalDeviceTest:false},null,2)+'\n');
+   if(process.env.WEBTOON_PREVIEW!=='1')assert(review?.all360pxStripsRead,'Manual phone-width review is pending');
+   fs.writeFileSync(path.join(folder,'validation.json'),JSON.stringify({episode:e.number,views,letteringCheck:review||{status:'pending'},letteringSize:manual.lettering,gaps:scenes.map(s=>({scene:s.id,referenceWidth:360,referencePx:s.gap_after,purpose:s.pacing,internal:s.internal_pauses})),uniqueArtwork:10,displayWindows:expectedHashes.length,standaloneArtworkBytesMatch:true,physicalDeviceTest:false},null,2)+'\n');
    console.log('Episode',e.number,views.map(v=>v.innerWidth+'px / '+v.scrollHeight+'px').join(', '));
   }
   if(process.argv.length===2){
    const global=[];
    const protectedPairs=[['child','episode-01-scene-08','episode-01-scene-10'],['wolf','episode-04-scene-10','episode-05-scene-01'],['demon-king','episode-06-scene-10','episode-07-scene-01']];
+   if(drawn.some(e=>e.number===12))protectedPairs.push(['lamb','episode-12-scene-06','episode-12-scene-07']);
+   if(drawn.some(e=>e.number===29))protectedPairs.push(['water-arrives','episode-29-scene-04','episode-29-scene-05']);
+   if(drawn.some(e=>e.number===15))protectedPairs.push(['return-to-king','episode-15-scene-01','episode-15-scene-02']);
    const reviewDir=path.join(base,'production','review');fs.mkdirSync(reviewDir,{recursive:true});
    for(const [width,height] of [[390,844],[360,800]]){
     const page=await browser.newPage({viewport:{width,height},deviceScaleFactor:1});
     await page.goto(pathToFileURL(path.join(base,'all.html')).href);
     await page.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(i=>i.decode()));});
     const data=await page.evaluate(()=>({innerWidth,innerHeight,scrollWidth:document.documentElement.scrollWidth,scrollHeight:document.documentElement.scrollHeight,displayWindows:document.images.length,images:[...document.querySelectorAll('figure')].map(f=>({id:f.id,top:f.getBoundingClientRect().top+scrollY,bottom:f.getBoundingClientRect().bottom+scrollY,loaded:[...f.querySelectorAll('img')].every(i=>i.complete&&i.naturalWidth>0)}))}));
-    assert.equal(data.innerWidth,width);assert.equal(data.scrollWidth,width);assert.equal(data.images.length,100);assert(data.images.every(i=>i.loaded));
+    assert.equal(data.innerWidth,width);assert.equal(data.scrollWidth,width);assert.equal(data.images.length,plan.filter(e=>fs.existsSync(path.join(base,'episode-'+String(e.number).padStart(2,'0'),'index.html'))).reduce((n,e)=>n+e.scenes.length,0));assert(data.images.every(i=>i.loaded));
     data.protectedReveals=[];
     for(const [name,questionID,answerID] of protectedPairs){
      const question=data.images.find(i=>i.id===questionID),answer=data.images.find(i=>i.id===answerID);
@@ -72,8 +94,8 @@ const base=path.resolve(__dirname,'..');
      await page.screenshot({path:path.join(reviewDir,name+'-'+width+'.png')});
     }
     await page.goto(pathToFileURL(path.join(base,'chapters.html')).href);
-    assert.equal(await page.locator('.chapter-card').count(),10);
-    for(const number of [1,10]){
+    assert.equal(await page.locator('.chapter-card').count(),drawn.length);
+    for(const number of standaloneNumbers){
      await page.goto(pathToFileURL(path.join(base,'episode-'+String(number).padStart(2,'0'),'reader.html')).href);
      await page.evaluate(async()=>Promise.all([...document.images].map(i=>i.decode())));
      const episodeScenes=JSON.parse(fs.readFileSync(path.join(base,'episode-'+String(number).padStart(2,'0'),'scenes.json')));
@@ -81,8 +103,8 @@ const base=path.resolve(__dirname,'..');
     }
     global.push(data);await page.close();
    }
-   fs.writeFileSync(path.join(base,'production','book-validation.json'),JSON.stringify({views:global,chapterCards:10,standaloneBrowsers:[1,10],visualReview:manual,physicalDeviceTest:false},null,2)+'\n');
-   console.log('PASS:',global[0].displayWindows,'display windows from 100 artworks, 10 chapters, 3 protected reveals, standalone artwork byte parity');
+   fs.writeFileSync(path.join(base,'production','book-validation.json'),JSON.stringify({views:global,chapterCards:drawn.length,standaloneBrowsers:standaloneNumbers,visualReview:manual,physicalDeviceTest:false},null,2)+'\n');
+   console.log('PASS:',global[0].displayWindows,'display windows,',drawn.length,'chapters,',protectedPairs.length,'protected reveals, standalone artwork byte parity');
   }
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});

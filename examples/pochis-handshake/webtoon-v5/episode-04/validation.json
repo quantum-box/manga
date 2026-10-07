@@ -1,636 +1,867 @@
 {
   "episode": 4,
-  "browserTool": "cua_repl",
   "views": [
     {
-      "figures": [
-        {
-          "bottom": 905.296875,
-          "id": "scene-01",
-          "marginAfter": 48.75,
-          "pauses": [],
-          "top": 125.296875,
-          "windows": []
-        },
-        {
-          "bottom": 2092.625,
-          "id": "scene-02",
-          "marginAfter": 260,
-          "pauses": [
-            {
-              "height": 357.5,
-              "purpose": "二人で景色を眺める休憩"
-            }
-          ],
-          "top": 954.046875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 99.8246%, 0% 100%)",
-              "height": 617.5,
-              "panels": "1-3",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,570],[360,569]]}",
-              "top": 954.046875,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0.66225%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 163.578125,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,570],[360,569]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 1929.046875,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 3598.4453125,
-          "id": "scene-03",
-          "marginAfter": 216.667,
-          "pauses": [
-            {
-              "height": 292.5,
-              "purpose": "王女の不安を犬が受け止める"
-            },
-            {
-              "height": 173.328125,
-              "purpose": "言葉にできない励ましが届くまで待つ"
-            }
-          ],
-          "top": 2352.625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 366.1640625,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,338],[360,338]]}",
-              "top": 2352.625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 164.6640625,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,338],[360,338]],\"lower\":[[0,490],[360,490]]}",
-              "top": 3011.2890625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 249.1640625,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,490],[360,490]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 3349.28125,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 4595.109375,
-          "id": "scene-04",
-          "marginAfter": 119.167,
-          "pauses": [],
-          "top": 3815.109375,
-          "windows": []
-        },
-        {
-          "bottom": 5494.2734375,
-          "id": "scene-05",
-          "marginAfter": 30.3333,
-          "pauses": [],
-          "top": 4714.2734375,
-          "windows": []
-        },
-        {
-          "bottom": 6304.6015625,
-          "id": "scene-06",
-          "marginAfter": 34.6667,
-          "pauses": [],
-          "top": 5524.6015625,
-          "windows": []
-        },
-        {
-          "bottom": 7119.265625,
-          "id": "scene-07",
-          "marginAfter": 34.6667,
-          "pauses": [],
-          "top": 6339.265625,
-          "windows": []
-        },
-        {
-          "bottom": 8151.671875,
-          "id": "scene-08",
-          "marginAfter": 249.167,
-          "pauses": [
-            {
-              "height": 216.6640625,
-              "purpose": "最後の足場を越えてから安堵する"
-            }
-          ],
-          "top": 7153.9296875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 99.807%, 0% 100%)",
-              "height": 561.1640625,
-              "panels": "1-3",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,518],[360,517]]}",
-              "top": 7153.9296875,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0.49261%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 219.9140625,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,518],[360,517]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 7931.7578125,
-              "width": 390
-            }
-          ]
-        },
-        {
-          "bottom": 9180.8359375,
-          "id": "scene-09",
-          "marginAfter": 303.333,
-          "pauses": [],
-          "top": 8400.8359375,
-          "windows": []
-        },
-        {
-          "bottom": 10491.65625,
-          "id": "scene-10",
-          "marginAfter": 975,
-          "pauses": [
-            {
-              "height": 227.4921875,
-              "purpose": "鎖の手掛かりの後に、見えない音を聞く"
-            }
-          ],
-          "top": 9484.1640625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 143,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,132],[360,132]]}",
-              "top": 9484.1640625,
-              "width": 390
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 637,
-              "panels": "2-4",
-              "sourceRegion": "{\"upper\":[[0,132],[360,132]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 9854.65625,
-              "width": 390
-            }
-          ]
-        }
-      ],
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 11607,
       "images": [
         {
-          "alt": "歩幅が違う。PO内心：一歩がでかい。／PR：ごめん、速かった。",
+          "src": "art/01.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01.webp"
+          "naturalHeight": 1774,
+          "top": 125.796875,
+          "bottom": 905.796875,
+          "displayWidth": 390
         },
         {
-          "alt": "犬も休憩する。PO内心：根性だけじゃ無理。／PR：私も休みたかった。",
+          "src": "art/02.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02.webp"
+          "naturalHeight": 1774,
+          "top": 954.546875,
+          "bottom": 1734.546875,
+          "displayWidth": 390
         },
         {
-          "alt": "犬も休憩する。無言の動作。",
+          "src": "art/02.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02.webp"
+          "naturalHeight": 1774,
+          "top": 1313.15625,
+          "bottom": 2093.15625,
+          "displayWidth": 390
         },
         {
-          "alt": "王女も不安。PR：話、聞いてくれるかな。",
+          "src": "art/03.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03.webp"
+          "naturalHeight": 1774,
+          "top": 2353.125,
+          "bottom": 3133.125,
+          "displayWidth": 390
         },
         {
-          "alt": "王女も不安。PO内心：この人も怖いんだ。",
+          "src": "art/03.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03.webp"
+          "naturalHeight": 1774,
+          "top": 2645.640625,
+          "bottom": 3425.640625,
+          "displayWidth": 390
         },
         {
-          "alt": "王女も不安。PR：ありがとう。",
+          "src": "art/03.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03.webp"
+          "naturalHeight": 1774,
+          "top": 2818.96875,
+          "bottom": 3598.96875,
+          "displayWidth": 390
         },
         {
-          "alt": "橋がない。PR：ここは渡れない。／PO内心：泳ぎは知らん。",
+          "src": "art/04.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04.webp"
+          "naturalHeight": 1774,
+          "top": 3815.578125,
+          "bottom": 4595.578125,
+          "displayWidth": 390
         },
         {
-          "alt": "聞き分ける。PO内心：音が違う。／PR：そっちを見よう。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 4714.734375,
+          "bottom": 5494.734375,
+          "displayWidth": 390
         },
         {
-          "alt": "まず確かめる。PR：浅い……でも滑る。／PO内心：冷たっ！",
+          "src": "art/06.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06.webp"
+          "naturalHeight": 1774,
+          "top": 5525.0625,
+          "bottom": 6305.0625,
+          "displayWidth": 390
         },
         {
-          "alt": "支えてもらう。PO内心：世話になりっぱなし。／PR：ここから歩ける？",
+          "src": "art/07.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07.webp"
+          "naturalHeight": 1774,
+          "top": 6339.71875,
+          "bottom": 7119.71875,
+          "displayWidth": 390
         },
         {
-          "alt": "最後の一歩。PO内心：焦らない。",
+          "src": "art/08.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08.webp"
+          "naturalHeight": 1774,
+          "top": 7154.375,
+          "bottom": 7934.375,
+          "displayWidth": 390
         },
         {
-          "alt": "最後の一歩。PR：渡れたね。",
+          "src": "art/08.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08.webp"
+          "naturalHeight": 1774,
+          "top": 7372.140625,
+          "bottom": 8152.140625,
+          "displayWidth": 390
         },
         {
-          "alt": "二人の旅。PR：今のはお返し？／PO内心：それは事故。",
+          "src": "art/09.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09.webp"
+          "naturalHeight": 1774,
+          "top": 8401.25,
+          "bottom": 9181.25,
+          "displayWidth": 390
         },
         {
-          "alt": "声の向こう。無言の動作。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 9484.578125,
+          "bottom": 10264.578125,
+          "displayWidth": 390
         },
         {
-          "alt": "声の向こう。PO内心：今度は、何だ。／PR：近づかないで。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 390,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 9712.0625,
+          "bottom": 10492.0625,
+          "displayWidth": 390
         }
       ],
-      "innerHeight": 844,
-      "innerWidth": 390,
+      "figures": [
+        {
+          "id": "scene-01",
+          "top": 125.796875,
+          "bottom": 905.796875,
+          "marginAfter": 48.75,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-02",
+          "top": 954.546875,
+          "bottom": 2093.125,
+          "marginAfter": 260,
+          "windows": [
+            {
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,570],[360,569]]}",
+              "top": 954.546875,
+              "height": 617.5,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,570],[360,569]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 1929.546875,
+              "height": 163.578125,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "二人で景色を眺める休憩",
+              "height": 357.5
+            }
+          ]
+        },
+        {
+          "id": "scene-03",
+          "top": 2353.125,
+          "bottom": 3598.921875,
+          "marginAfter": 216.667,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,338],[360,338]]}",
+              "top": 2353.125,
+              "height": 366.15625,
+              "width": 390
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,338],[360,338]],\"lower\":[[0,490],[360,490]]}",
+              "top": 3011.78125,
+              "height": 164.65625,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,490],[360,490]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3349.765625,
+              "height": 249.15625,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "王女の不安を犬が受け止める",
+              "height": 292.5
+            },
+            {
+              "purpose": "言葉にできない励ましが届くまで待つ",
+              "height": 173.328125
+            }
+          ]
+        },
+        {
+          "id": "scene-04",
+          "top": 3815.578125,
+          "bottom": 4595.578125,
+          "marginAfter": 119.167,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-05",
+          "top": 4714.734375,
+          "bottom": 5494.734375,
+          "marginAfter": 30.3333,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-06",
+          "top": 5525.0625,
+          "bottom": 6305.0625,
+          "marginAfter": 34.6667,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-07",
+          "top": 6339.71875,
+          "bottom": 7119.71875,
+          "marginAfter": 34.6667,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-08",
+          "top": 7154.375,
+          "bottom": 8152.09375,
+          "marginAfter": 249.167,
+          "windows": [
+            {
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,518],[360,517]]}",
+              "top": 7154.375,
+              "height": 561.15625,
+              "width": 390
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,518],[360,517]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 7932.1875,
+              "height": 219.90625,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "最後の足場を越えてから安堵する",
+              "height": 216.65625
+            }
+          ]
+        },
+        {
+          "id": "scene-09",
+          "top": 8401.25,
+          "bottom": 9181.25,
+          "marginAfter": 303.333,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-10",
+          "top": 9484.578125,
+          "bottom": 10492.0625,
+          "marginAfter": 975,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,132],[360,132]]}",
+              "top": 9484.578125,
+              "height": 143,
+              "width": 390
+            },
+            {
+              "panels": "2-4",
+              "sourceRegion": "{\"upper\":[[0,132],[360,132]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 9855.0625,
+              "height": 637,
+              "width": 390
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "鎖の手掛かりの後に、見えない音を聞く",
+              "height": 227.484375
+            }
+          ]
+        }
+      ],
       "links": [
         "../chapters.html",
         "../episode-03/index.html",
         "../episode-05/index.html"
       ],
-      "scrollHeight": 11606,
-      "scrollWidth": 390
+      "pacingWindows": [
+        {
+          "scene": "scene-02",
+          "purpose": "二人で景色を眺める休憩",
+          "screens": [
+            {
+              "file": "pacing-02-1-390-1.png",
+              "scrollY": 1023
+            },
+            {
+              "file": "pacing-02-1-390-2.png",
+              "scrollY": 1488
+            },
+            {
+              "file": "pacing-02-1-390-3.png",
+              "scrollY": 1952
+            }
+          ]
+        },
+        {
+          "scene": "scene-03",
+          "purpose": "王女の不安を犬が受け止める",
+          "screens": [
+            {
+              "file": "pacing-03-1-390-1.png",
+              "scrollY": 2171
+            },
+            {
+              "file": "pacing-03-1-390-2.png",
+              "scrollY": 2635
+            },
+            {
+              "file": "pacing-03-1-390-3.png",
+              "scrollY": 3099
+            }
+          ]
+        },
+        {
+          "scene": "scene-03",
+          "purpose": "言葉にできない励ましが届くまで待つ",
+          "screens": [
+            {
+              "file": "pacing-03-2-390-1.png",
+              "scrollY": 2628
+            },
+            {
+              "file": "pacing-03-2-390-2.png",
+              "scrollY": 3092
+            },
+            {
+              "file": "pacing-03-2-390-3.png",
+              "scrollY": 3556
+            }
+          ]
+        },
+        {
+          "scene": "scene-08",
+          "purpose": "最後の足場を越えてから安堵する",
+          "screens": [
+            {
+              "file": "pacing-08-1-390-1.png",
+              "scrollY": 7167
+            },
+            {
+              "file": "pacing-08-1-390-2.png",
+              "scrollY": 7631
+            },
+            {
+              "file": "pacing-08-1-390-3.png",
+              "scrollY": 8095
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "鎖の手掛かりの後に、見えない音を聞く",
+          "screens": [
+            {
+              "file": "pacing-10-1-390-1.png",
+              "scrollY": 9079
+            },
+            {
+              "file": "pacing-10-1-390-2.png",
+              "scrollY": 9543
+            },
+            {
+              "file": "pacing-10-1-390-3.png",
+              "scrollY": 10007
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "protected reveal after scene-10",
+          "screens": [
+            {
+              "file": "pacing-10-2-390-1.png",
+              "scrollY": 9943
+            },
+            {
+              "file": "pacing-10-2-390-2.png",
+              "scrollY": 10408
+            },
+            {
+              "file": "pacing-10-2-390-3.png",
+              "scrollY": 10763
+            }
+          ]
+        }
+      ]
     },
     {
-      "figures": [
-        {
-          "bottom": 845.296875,
-          "id": "scene-01",
-          "marginAfter": 45,
-          "pauses": [],
-          "top": 125.296875,
-          "windows": []
-        },
-        {
-          "bottom": 1941.296875,
-          "id": "scene-02",
-          "marginAfter": 240,
-          "pauses": [
-            {
-              "height": 330,
-              "purpose": "二人で景色を眺める休憩"
-            }
-          ],
-          "top": 890.296875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 99.8246%, 0% 100%)",
-              "height": 570,
-              "panels": "1-3",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,570],[360,569]]}",
-              "top": 890.296875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0.66225%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 151,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,570],[360,569]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 1790.296875,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 3331.2890625,
-          "id": "scene-03",
-          "marginAfter": 200,
-          "pauses": [
-            {
-              "height": 270,
-              "purpose": "王女の不安を犬が受け止める"
-            },
-            {
-              "height": 159.9921875,
-              "purpose": "言葉にできない励ましが届くまで待つ"
-            }
-          ],
-          "top": 2181.296875,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 338,
-              "panels": "1-2",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,338],[360,338]]}",
-              "top": 2181.296875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 152,
-              "panels": "3-3",
-              "sourceRegion": "{\"upper\":[[0,338],[360,338]],\"lower\":[[0,490],[360,490]]}",
-              "top": 2789.296875,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 230,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,490],[360,490]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 3101.2890625,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 4251.2890625,
-          "id": "scene-04",
-          "marginAfter": 110,
-          "pauses": [],
-          "top": 3531.2890625,
-          "windows": []
-        },
-        {
-          "bottom": 5081.2890625,
-          "id": "scene-05",
-          "marginAfter": 28,
-          "pauses": [],
-          "top": 4361.2890625,
-          "windows": []
-        },
-        {
-          "bottom": 5829.2890625,
-          "id": "scene-06",
-          "marginAfter": 32,
-          "pauses": [],
-          "top": 5109.2890625,
-          "windows": []
-        },
-        {
-          "bottom": 6581.2890625,
-          "id": "scene-07",
-          "marginAfter": 32,
-          "pauses": [],
-          "top": 5861.2890625,
-          "windows": []
-        },
-        {
-          "bottom": 7534.2890625,
-          "id": "scene-08",
-          "marginAfter": 230,
-          "pauses": [
-            {
-              "height": 200,
-              "purpose": "最後の足場を越えてから安堵する"
-            }
-          ],
-          "top": 6613.2890625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 99.807%, 0% 100%)",
-              "height": 518,
-              "panels": "1-3",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,518],[360,517]]}",
-              "top": 6613.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0.49261%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 203,
-              "panels": "4-4",
-              "sourceRegion": "{\"upper\":[[0,518],[360,517]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 7331.2890625,
-              "width": 360
-            }
-          ]
-        },
-        {
-          "bottom": 8484.2890625,
-          "id": "scene-09",
-          "marginAfter": 280,
-          "pauses": [],
-          "top": 7764.2890625,
-          "windows": []
-        },
-        {
-          "bottom": 9694.28125,
-          "id": "scene-10",
-          "marginAfter": 900,
-          "pauses": [
-            {
-              "height": 209.9921875,
-              "purpose": "鎖の手掛かりの後に、見えない音を聞く"
-            }
-          ],
-          "top": 8764.2890625,
-          "windows": [
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 132,
-              "panels": "1-1",
-              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,132],[360,132]]}",
-              "top": 8764.2890625,
-              "width": 360
-            },
-            {
-              "clipPath": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-              "height": 588,
-              "panels": "2-4",
-              "sourceRegion": "{\"upper\":[[0,132],[360,132]],\"lower\":[[0,720.0],[360,720.0]]}",
-              "top": 9106.28125,
-              "width": 360
-            }
-          ]
-        }
-      ],
+      "innerWidth": 360,
+      "innerHeight": 800,
+      "scrollWidth": 360,
+      "scrollHeight": 10735,
       "images": [
         {
-          "alt": "歩幅が違う。PO内心：一歩がでかい。／PR：ごめん、速かった。",
+          "src": "art/01.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/01.webp"
+          "naturalHeight": 1774,
+          "top": 125.796875,
+          "bottom": 845.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "犬も休憩する。PO内心：根性だけじゃ無理。／PR：私も休みたかった。",
+          "src": "art/02.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02.webp"
+          "naturalHeight": 1774,
+          "top": 890.796875,
+          "bottom": 1610.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "犬も休憩する。無言の動作。",
+          "src": "art/02.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/02.webp"
+          "naturalHeight": 1774,
+          "top": 1221.796875,
+          "bottom": 1941.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "王女も不安。PR：話、聞いてくれるかな。",
+          "src": "art/03.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03.webp"
+          "naturalHeight": 1774,
+          "top": 2181.796875,
+          "bottom": 2901.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "王女も不安。PO内心：この人も怖いんだ。",
+          "src": "art/03.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03.webp"
+          "naturalHeight": 1774,
+          "top": 2451.796875,
+          "bottom": 3171.796875,
+          "displayWidth": 360
         },
         {
-          "alt": "王女も不安。PR：ありがとう。",
+          "src": "art/03.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/03.webp"
+          "naturalHeight": 1774,
+          "top": 2611.78125,
+          "bottom": 3331.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "橋がない。PR：ここは渡れない。／PO内心：泳ぎは知らん。",
+          "src": "art/04.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/04.webp"
+          "naturalHeight": 1774,
+          "top": 3531.78125,
+          "bottom": 4251.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "聞き分ける。PO内心：音が違う。／PR：そっちを見よう。",
+          "src": "art/05.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/05.webp"
+          "naturalHeight": 1774,
+          "top": 4361.78125,
+          "bottom": 5081.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "まず確かめる。PR：浅い……でも滑る。／PO内心：冷たっ！",
+          "src": "art/06.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/06.webp"
+          "naturalHeight": 1774,
+          "top": 5109.78125,
+          "bottom": 5829.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "支えてもらう。PO内心：世話になりっぱなし。／PR：ここから歩ける？",
+          "src": "art/07.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/07.webp"
+          "naturalHeight": 1774,
+          "top": 5861.78125,
+          "bottom": 6581.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "最後の一歩。PO内心：焦らない。",
+          "src": "art/08.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08.webp"
+          "naturalHeight": 1774,
+          "top": 6613.78125,
+          "bottom": 7333.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "最後の一歩。PR：渡れたね。",
+          "src": "art/08.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/08.webp"
+          "naturalHeight": 1774,
+          "top": 6814.78125,
+          "bottom": 7534.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "二人の旅。PR：今のはお返し？／PO内心：それは事故。",
+          "src": "art/09.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/09.webp"
+          "naturalHeight": 1774,
+          "top": 7764.78125,
+          "bottom": 8484.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "声の向こう。無言の動作。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 8764.78125,
+          "bottom": 9484.78125,
+          "displayWidth": 360
         },
         {
-          "alt": "声の向こう。PO内心：今度は、何だ。／PR：近づかないで。",
+          "src": "art/10.webp",
           "complete": true,
-          "displayWidth": 360,
-          "naturalHeight": 1774,
           "naturalWidth": 887,
-          "src": "art/10.webp"
+          "naturalHeight": 1774,
+          "top": 8974.765625,
+          "bottom": 9694.765625,
+          "displayWidth": 360
         }
       ],
-      "innerHeight": 800,
-      "innerWidth": 360,
+      "figures": [
+        {
+          "id": "scene-01",
+          "top": 125.796875,
+          "bottom": 845.796875,
+          "marginAfter": 45,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-02",
+          "top": 890.796875,
+          "bottom": 1941.796875,
+          "marginAfter": 240,
+          "windows": [
+            {
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,570],[360,569]]}",
+              "top": 890.796875,
+              "height": 570,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,570],[360,569]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 1790.796875,
+              "height": 151,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "二人で景色を眺める休憩",
+              "height": 330
+            }
+          ]
+        },
+        {
+          "id": "scene-03",
+          "top": 2181.796875,
+          "bottom": 3331.78125,
+          "marginAfter": 200,
+          "windows": [
+            {
+              "panels": "1-2",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,338],[360,338]]}",
+              "top": 2181.796875,
+              "height": 338,
+              "width": 360
+            },
+            {
+              "panels": "3-3",
+              "sourceRegion": "{\"upper\":[[0,338],[360,338]],\"lower\":[[0,490],[360,490]]}",
+              "top": 2789.796875,
+              "height": 152,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,490],[360,490]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 3101.78125,
+              "height": 230,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "王女の不安を犬が受け止める",
+              "height": 270
+            },
+            {
+              "purpose": "言葉にできない励ましが届くまで待つ",
+              "height": 159.984375
+            }
+          ]
+        },
+        {
+          "id": "scene-04",
+          "top": 3531.78125,
+          "bottom": 4251.78125,
+          "marginAfter": 110,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-05",
+          "top": 4361.78125,
+          "bottom": 5081.78125,
+          "marginAfter": 28,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-06",
+          "top": 5109.78125,
+          "bottom": 5829.78125,
+          "marginAfter": 32,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-07",
+          "top": 5861.78125,
+          "bottom": 6581.78125,
+          "marginAfter": 32,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-08",
+          "top": 6613.78125,
+          "bottom": 7534.78125,
+          "marginAfter": 230,
+          "windows": [
+            {
+              "panels": "1-3",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,518],[360,517]]}",
+              "top": 6613.78125,
+              "height": 518,
+              "width": 360
+            },
+            {
+              "panels": "4-4",
+              "sourceRegion": "{\"upper\":[[0,518],[360,517]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 7331.78125,
+              "height": 203,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "最後の足場を越えてから安堵する",
+              "height": 200
+            }
+          ]
+        },
+        {
+          "id": "scene-09",
+          "top": 7764.78125,
+          "bottom": 8484.78125,
+          "marginAfter": 280,
+          "windows": [],
+          "pauses": []
+        },
+        {
+          "id": "scene-10",
+          "top": 8764.78125,
+          "bottom": 9694.765625,
+          "marginAfter": 900,
+          "windows": [
+            {
+              "panels": "1-1",
+              "sourceRegion": "{\"upper\":[[0,0],[360,0]],\"lower\":[[0,132],[360,132]]}",
+              "top": 8764.78125,
+              "height": 132,
+              "width": 360
+            },
+            {
+              "panels": "2-4",
+              "sourceRegion": "{\"upper\":[[0,132],[360,132]],\"lower\":[[0,720.0],[360,720.0]]}",
+              "top": 9106.765625,
+              "height": 588,
+              "width": 360
+            }
+          ],
+          "pauses": [
+            {
+              "purpose": "鎖の手掛かりの後に、見えない音を聞く",
+              "height": 209.984375
+            }
+          ]
+        }
+      ],
       "links": [
         "../chapters.html",
         "../episode-03/index.html",
         "../episode-05/index.html"
       ],
-      "scrollHeight": 10734,
-      "scrollWidth": 360
+      "pacingWindows": [
+        {
+          "scene": "scene-02",
+          "purpose": "二人で景色を眺める休憩",
+          "screens": [
+            {
+              "file": "pacing-02-1-360-1.png",
+              "scrollY": 941
+            },
+            {
+              "file": "pacing-02-1-360-2.png",
+              "scrollY": 1381
+            },
+            {
+              "file": "pacing-02-1-360-3.png",
+              "scrollY": 1821
+            }
+          ]
+        },
+        {
+          "scene": "scene-03",
+          "purpose": "王女の不安を犬が受け止める",
+          "screens": [
+            {
+              "file": "pacing-03-1-360-1.png",
+              "scrollY": 2000
+            },
+            {
+              "file": "pacing-03-1-360-2.png",
+              "scrollY": 2440
+            },
+            {
+              "file": "pacing-03-1-360-3.png",
+              "scrollY": 2880
+            }
+          ]
+        },
+        {
+          "scene": "scene-03",
+          "purpose": "言葉にできない励ましが届くまで待つ",
+          "screens": [
+            {
+              "file": "pacing-03-2-360-1.png",
+              "scrollY": 2422
+            },
+            {
+              "file": "pacing-03-2-360-2.png",
+              "scrollY": 2862
+            },
+            {
+              "file": "pacing-03-2-360-3.png",
+              "scrollY": 3302
+            }
+          ]
+        },
+        {
+          "scene": "scene-08",
+          "purpose": "最後の足場を越えてから安堵する",
+          "screens": [
+            {
+              "file": "pacing-08-1-360-1.png",
+              "scrollY": 6612
+            },
+            {
+              "file": "pacing-08-1-360-2.png",
+              "scrollY": 7052
+            },
+            {
+              "file": "pacing-08-1-360-3.png",
+              "scrollY": 7492
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "鎖の手掛かりの後に、見えない音を聞く",
+          "screens": [
+            {
+              "file": "pacing-10-1-360-1.png",
+              "scrollY": 8377
+            },
+            {
+              "file": "pacing-10-1-360-2.png",
+              "scrollY": 8817
+            },
+            {
+              "file": "pacing-10-1-360-3.png",
+              "scrollY": 9257
+            }
+          ]
+        },
+        {
+          "scene": "scene-10",
+          "purpose": "protected reveal after scene-10",
+          "screens": [
+            {
+              "file": "pacing-10-2-360-1.png",
+              "scrollY": 9175
+            },
+            {
+              "file": "pacing-10-2-360-2.png",
+              "scrollY": 9615
+            },
+            {
+              "file": "pacing-10-2-360-3.png",
+              "scrollY": 9935
+            }
+          ]
+        }
+      ]
     }
   ],
   "letteringCheck": {
@@ -686,7 +917,7 @@
           "right": 338,
           "pause": 270,
           "purpose": "王女の不安を犬が受け止める",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         },
         {
           "afterPanel": 3,
@@ -694,7 +925,7 @@
           "right": 490,
           "pause": 160,
           "purpose": "言葉にできない励ましが届くまで待つ",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         }
       ]
     },
@@ -738,7 +969,7 @@
           "right": 517,
           "pause": 200,
           "purpose": "最後の足場を越えてから安堵する",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         }
       ]
     },
@@ -761,7 +992,7 @@
           "right": 132,
           "pause": 210,
           "purpose": "鎖の手掛かりの後に、見えない音を聞く",
-          "gutterPixelFraction": 1.0
+          "gutterPixelFraction": 1
         }
       ]
     }
@@ -769,6 +1000,5 @@
   "uniqueArtwork": 10,
   "displayWindows": 15,
   "standaloneArtworkBytesMatch": true,
-  "sourcePixelsCovered": true,
   "physicalDeviceTest": false
 }
