@@ -176,10 +176,8 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
                             .or_else(|| eps.iter().find(|e| e["number"].as_u64() == Some(u64::from(info.number))))
                     });
                     let chapter_title = series::chapter_title(id, episode_meta.and_then(|e| e["title"].as_str()).unwrap_or(subtitle));
-                    let edition = episode_meta.and_then(|e| e["edition"].as_str()).unwrap_or(&info.edition);
-
                     serde_json::json!({
-                        "id": id, "number": info.number, "title": chapter_title, "edition": edition,
+                        "id": id, "number": info.number, "title": chapter_title, "edition": "",
                         "revision": revision, "reader": format!("/?episode={id}"), "background": "#111111"
                     })
                 }).collect();
