@@ -1,62 +1,69 @@
 ## 01 昨日の部屋
 
-採用原画：art/rebuild-01-final-letters.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-01-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: text-localization. Edit ONLY Japanese lettering and the necessary white speech/thought balloon area in this image. Lettering is a priority: every dialogue glyph MUST be at least 76 pixels high per 1024 artwork pixels width (54px if width724), readable as 26px at phone width360. DO NOT shrink the lettering to fit. Enlarge balloon reserved white area and slightly reduce background detail instead. Keep upright top-to-bottom Japanese, columns right-to-left. Preserve EXACT all current Japanese dialogue, punctuation, existing sound effects, speakers and reading order. Preserve characters, expressions, background, hand anatomy, outfit, injury state, layout and dimensions. Keep cheeks clear in modern gray-shirt panels. Exact dialogue for this original: あと一回だけ。.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. REMOVE ONLY Japanese punctuation marks 、 and 。 from ALL speech balloons, thoughts and notices. Replace their pauses with appropriate vertical COLUMN BREAKS. Preserve question marks, exclamation marks, ellipses, the middle dot in names and the dot in LV.999. Preserve absolutely EVERYTHING ELSE: exact image canvas dimensions/aspect ratio, frame positions/borders, panel ordering, every face and hand, poses and identities, RIGHT cheek bruise, hairclip side, costume, background, lighting, tools/props/counts, and SFX. Keep large text sizes and existing balloon shapes/tails. Fill former punctuation glyph locations clean white. Do not recompose or crop or add objects/people. NO 、 or 。 anywhere in the finished image. Upright Japanese TOP TO BOTTOM, columns RIGHT TO LEFT. No meaning or dialogue changes. Authoritative complete dialogue, with exact columns right to left:
+学生: 「あと一回だけ」; columns あと一回/だけ; voice soft
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-dc0f39fd-54dd-4b83-bd3c-91110fed66b6.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-e34d92f3-f207-4589-90ac-f8d5af7c4e0c.png`
 
-入力資料：`production/inputs/exec-fe3ae910-bf52-4a54-8f9b-15d7b30e25bd.png`
+入力資料：`production/inputs/exec-dc0f39fd-54dd-4b83-bd3c-91110fed66b6.png`
 
 ## 02 冷たい石
 
-採用原画：art/rebuild-02-letters.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-02-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: text-localization. Edit ONLY Japanese lettering and the necessary white speech/thought balloon area in this image. Lettering is a priority: every dialogue glyph MUST be at least 76 pixels high per 1024 artwork pixels width (54px if width724), readable as 26px at phone width360. DO NOT shrink the lettering to fit. Enlarge balloon reserved white area and slightly reduce background detail instead. Keep upright top-to-bottom Japanese, columns right-to-left. Preserve EXACT all current Japanese dialogue, punctuation, existing sound effects, speakers and reading order. Preserve characters, expressions, background, hand anatomy, outfit, injury state, layout and dimensions. Keep cheeks clear in modern gray-shirt panels. Exact dialogue for this original: ハン・ユン。 / 待って。ここは？.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. REMOVE ONLY Japanese punctuation marks 、 and 。 from ALL speech balloons, thoughts and notices. Replace their pauses with appropriate vertical COLUMN BREAKS. Preserve question marks, exclamation marks, ellipses, the middle dot in names and the dot in LV.999. Preserve absolutely EVERYTHING ELSE: exact image canvas dimensions/aspect ratio, frame positions/borders, panel ordering, every face and hand, poses and identities, RIGHT cheek bruise, hairclip side, costume, background, lighting, tools/props/counts, and SFX. Keep large text sizes and existing balloon shapes/tails. Fill former punctuation glyph locations clean white. Do not recompose or crop or add objects/people. NO 、 or 。 anywhere in the finished image. Upright Japanese TOP TO BOTTOM, columns RIGHT TO LEFT. No meaning or dialogue changes. Authoritative complete dialogue, with exact columns right to left:
+羅長老: 「ハン・ユン」; columns ハン・/ユン; voice normal
+ハン・ユン: 「待ってここは？」; columns 待って/ここは？; voice weak
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-86e8cb7c-4a96-47b9-8473-f25b25525c1b.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-7112acda-9752-471f-b547-7fe88d2aa23c.png`
 
-入力資料：`production/inputs/exec-9afc99ca-a555-4bbe-b555-126df6303c3d.png`
+入力資料：`production/inputs/exec-86e8cb7c-4a96-47b9-8473-f25b25525c1b.png`
 
 ## 03 知っている名前
 
-採用原画：art/rebuild-03-readable.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-03-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: text-localization. Edit ONLY the Japanese dialogue and speech/thought balloon area. Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork width, or68px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Preserve characters, scene composition, emotion, hands, sword, rope, all sound effects, system hologram, dimensions unchanged. All exact dialogue in this image must be ゲームの雑役……。 / 俺、何も……！. These REPLACE corresponding old dialogue; no duplicate words. True upright vertical Japanese. No other writing changes.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. REMOVE ONLY Japanese punctuation marks 、 and 。 from ALL speech balloons, thoughts and notices. Replace their pauses with appropriate vertical COLUMN BREAKS. Preserve question marks, exclamation marks, ellipses, the middle dot in names and the dot in LV.999. Preserve absolutely EVERYTHING ELSE: exact image canvas dimensions/aspect ratio, frame positions/borders, panel ordering, every face and hand, poses and identities, RIGHT cheek bruise, hairclip side, costume, background, lighting, tools/props/counts, and SFX. Keep large text sizes and existing balloon shapes/tails. Fill former punctuation glyph locations clean white. Do not recompose or crop or add objects/people. NO 、 or 。 anywhere in the finished image. Upright Japanese TOP TO BOTTOM, columns RIGHT TO LEFT. No meaning or dialogue changes. Authoritative complete dialogue, with exact columns right to left:
+ハン・ユン: 「ゲームの雑役……」; columns ゲームの/雑役……; voice thought
+ハン・ユン: 「俺何も……！」; columns 俺/何も……！; voice weak
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-91755176-c31f-4618-a10d-9a0fbdd9c032.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-3701ffda-38d8-4780-9b99-7fdfb5b461e4.png`
 
-入力資料：`production/inputs/exec-df1fe916-821d-4640-8412-623b639086a7.png`
+入力資料：`production/inputs/exec-91755176-c31f-4618-a10d-9a0fbdd9c032.png`
 
 ## 04 確かめる指
 
-採用原画：art/rebuild-04-readable.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-04-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: text-localization. Edit ONLY the Japanese dialogue and speech/thought balloon area. Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork width, or68px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Preserve characters, scene composition, emotion, hands, sword, rope, all sound effects, system hologram, dimensions unchanged. All exact dialogue in this image must be 俺の、セーブ？. These REPLACE corresponding old dialogue; no duplicate words. True upright vertical Japanese. No other writing changes.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. REMOVE ONLY Japanese punctuation marks 、 and 。 from ALL speech balloons, thoughts and notices. Replace their pauses with appropriate vertical COLUMN BREAKS. Preserve question marks, exclamation marks, ellipses, the middle dot in names and the dot in LV.999. Preserve absolutely EVERYTHING ELSE: exact image canvas dimensions/aspect ratio, frame positions/borders, panel ordering, every face and hand, poses and identities, RIGHT cheek bruise, hairclip side, costume, background, lighting, tools/props/counts, and SFX. Keep large text sizes and existing balloon shapes/tails. Fill former punctuation glyph locations clean white. Do not recompose or crop or add objects/people. NO 、 or 。 anywhere in the finished image. Upright Japanese TOP TO BOTTOM, columns RIGHT TO LEFT. No meaning or dialogue changes. Authoritative complete dialogue, with exact columns right to left:
+ハン・ユン: 「俺のセーブ？」; columns 俺の/セーブ？; voice thought
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-96c248da-dbc4-4418-8a1f-7ff10129effc.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-0febe403-ad5c-4cf6-8f96-c672061cc91c.png`
 
-入力資料：`production/inputs/exec-440c5860-af8e-4800-9fec-32163b6ed12a.png`
+入力資料：`production/inputs/exec-96c248da-dbc4-4418-8a1f-7ff10129effc.png`
 
 ## 05 落ちてくる刃
 
-採用原画：art/rebuild-05-readable.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-05-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: text-localization. Edit ONLY the Japanese dialogue and speech/thought balloon area. Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork width, or68px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Preserve characters, scene composition, emotion, hands, sword, rope, all sound effects, system hologram, dimensions unchanged. All exact dialogue in this image must be 止まって。. These REPLACE corresponding old dialogue; no duplicate words. True upright vertical Japanese. No other writing changes.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. REMOVE ONLY Japanese punctuation marks 、 and 。 from ALL speech balloons, thoughts and notices. Replace their pauses with appropriate vertical COLUMN BREAKS. Preserve question marks, exclamation marks, ellipses, the middle dot in names and the dot in LV.999. Preserve absolutely EVERYTHING ELSE: exact image canvas dimensions/aspect ratio, frame positions/borders, panel ordering, every face and hand, poses and identities, RIGHT cheek bruise, hairclip side, costume, background, lighting, tools/props/counts, and SFX. Keep large text sizes and existing balloon shapes/tails. Fill former punctuation glyph locations clean white. Do not recompose or crop or add objects/people. NO 、 or 。 anywhere in the finished image. Upright Japanese TOP TO BOTTOM, columns RIGHT TO LEFT. No meaning or dialogue changes. Authoritative complete dialogue, with exact columns right to left:
+ハン・ユン: 「止まって」; columns 止まって; voice thought
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-283e7239-5b4c-462f-b441-43c6285f68ad.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-16a6e3f5-9ce6-40a2-8b62-af57ee912662.png`
 
-入力資料：`production/inputs/exec-40db4562-a896-4e5c-be56-98cc75c16aae.png`
+入力資料：`production/inputs/exec-283e7239-5b4c-462f-b441-43c6285f68ad.png`
 
 ## ring 刃の響き
 
@@ -72,12 +79,13 @@ Use case: illustration-story. Sparse borderless pacing artwork for a martial-fan
 
 ## 06 二本の指
 
-採用原画：art/rebuild-06-readable.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-06-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: text-localization. Edit ONLY the Japanese dialogue and speech/thought balloon area. Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork width, or68px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Preserve characters, scene composition, emotion, hands, sword, rope, all sound effects, system hologram, dimensions unchanged. All exact dialogue in this image must be ……止まった。. These REPLACE corresponding old dialogue; no duplicate words. True upright vertical Japanese. No other writing changes.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. REMOVE ONLY Japanese punctuation marks 、 and 。 from ALL speech balloons, thoughts and notices. Replace their pauses with appropriate vertical COLUMN BREAKS. Preserve question marks, exclamation marks, ellipses, the middle dot in names and the dot in LV.999. Preserve absolutely EVERYTHING ELSE: exact image canvas dimensions/aspect ratio, frame positions/borders, panel ordering, every face and hand, poses and identities, RIGHT cheek bruise, hairclip side, costume, background, lighting, tools/props/counts, and SFX. Keep large text sizes and existing balloon shapes/tails. Fill former punctuation glyph locations clean white. Do not recompose or crop or add objects/people. NO 、 or 。 anywhere in the finished image. Upright Japanese TOP TO BOTTOM, columns RIGHT TO LEFT. No meaning or dialogue changes. Authoritative complete dialogue, with exact columns right to left:
+ハン・ユン: 「……止まった」; columns ……/止まった; voice weak
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-c218b1d6-76bb-4248-a79b-fba6b85ba3e4.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-ebe93a6b-1847-47fd-a156-31347504979a.png`
 
-入力資料：`production/inputs/exec-a5b9a8c0-0caa-49aa-90ed-e0b783aa32b8.png`
+入力資料：`production/inputs/exec-c218b1d6-76bb-4248-a79b-fba6b85ba3e4.png`

@@ -3,6 +3,7 @@
 import argparse, base64, functools, hashlib, json, threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from PIL import Image
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -11,6 +12,21 @@ P = ROOT / 'production'
 def read(p): return json.loads(p.read_text(encoding='utf-8'))
 def save(p,v): p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+def lettering_record(d, manifest, n):
+    samples = {5: [('04', '私', [194,48,220,74])], 6: [('06', '禁', [272,40,301,70])]}
+    measured = []
+    for ident, glyph, box in samples.get(n, []):
+        file = f'validation/beat-{ident}-1-360.png'
+        with Image.open(d/file) as im:
+            ink = im.convert('L').crop(box).point(lambda v: 255 if v < 100 else 0)
+            b = ink.getbbox()
+        measured.append({'file':file, 'glyph':glyph, 'crop':box, 'threshold':100,
+                         'inkWidthPx':b[2]-b[0], 'inkHeightPx':b[3]-b[1]})
+    return {'referenceSizeCssPx':[19,20], 'reviewWidthCssPx':360,
+            'sourceWidthsPx':sorted({a['width'] for a in manifest['artwork']}),
+            'scaleAt360':sorted({round(360/a['width'],5) for a in manifest['artwork']}),
+            'measuredInkSamples':measured,
+            'note':'Ink bounds are not a CSS font size or a minimum for every glyph. All reading units were visually reviewed; see production/mobile-review.md.'}
 class QuietHandler(SimpleHTTPRequestHandler):
     def log_message(self,*a): pass
 
@@ -24,6 +40,14 @@ def main():
     summaries=[]
     runs=read(P/'generation.json')
     pairs=read(P/'protected.json')
+    for episode in read(P/'scripts.json')['episodes']:
+        for asset in episode['assets']:
+            for line in asset[6]:
+                assert not any(c in line[1]+line[2] for c in '、。'), (episode['number'],asset[0],line)
+    for run in runs:
+        adopted=ROOT/run['adopted']
+        assert adopted.is_file() and digest(adopted)==run['sha256'],adopted
+        assert all((ROOT/ref).is_file() for ref in run.get('references',[])),run['adopted']
     with sync_playwright() as pw:
         browser=pw.chromium.launch()
         for n in range(1,11):
@@ -99,6 +123,7 @@ def main():
                     page.close()
                 context.close()
             v={'revision':m['revision'],'chapter':n,'originals':len(originals),'allAdoptedRasterBytesUnmodified':True,'browserChecks':checks,'manualReview':'See production/mobile-review.md; mechanical checks do not prove art or text quality.','iosPhysicalDevice':'not tested'}
+            v['rasterLettering'] = lettering_record(d,m,n)
             save(d/'validation.json',v)
             summaries.append({'chapter':n,'originals':len(originals),'readingUnits':len(m['readingOrder']),'checks':len(checks)})
             print(f'Validated {n}: '+str(summaries[-1]),flush=True)

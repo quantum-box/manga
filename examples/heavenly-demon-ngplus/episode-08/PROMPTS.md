@@ -1,26 +1,28 @@
 ## 01 証人の道
 
-採用原画：art/rebuild-01-letters-clear.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-01-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Precise TOP-frame background edit, preserve ALL giant upright vertical dialogue その娘を、こちらへ。, same size, smooth balloon/tail to elderly long-white-bearded purple Luo, top/bottom frames, all main hero/master/smith identities, one white cloth evidence bundle hero holds. TOP: REMOVE ONLY the small partly hidden moustached guard whose face appears under the balloon's tail between white-robed HERO and purple ELDER. Reconstruct natural corridor behind balloon/elder there, so NO face is obscured beneath balloon. Leave the visible round clean-shaven gray-robed guard on far viewer RIGHT, purple elder and his extended hand, navy master/So Rin left all unchanged. The removed TOP background guard is outside camera for this shot but still present in BOTTOM. BOTTOM: both guard faces and So Rin/hero unchanged. No new people, blades or bundles, no text change, no shrink. This makes all onscreen faces unobscured.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY the two Japanese sentence punctuation marks U+3001「、」and U+3002「。」 from speech balloons and thoughts. Everything else remains IDENTICAL. KEEP katakana-name separators「・」, ！ ？ … and LV.999. Replace sentence pauses with vertical COLUMN BREAKS. Exact existing canvas aspect ratio and every panel border position MUST stay; do not reframe or rearrange. Keep every face, hand, object, identity, pose, costume and background. The smith's bronze clip stays on HER LEFT temple. ONE palm-sized off-white tied cloth evidence packet, TWO charcoal clasp pieces, no duplicate bundle or extra fragments. Wrists free. Preserve existing LARGE lettering and balloon shapes with tails toward the SAME actual speakers; never cover faces/hands. Keep ALL SFX. Fill former punctuation areas plain white. Upright Japanese top to bottom, columns right to left. Exact complete dialogue with vertical columns:
+羅長老: "その娘をこちらへ"; right-to-left columns "その娘を/こちらへ"; voice normal
+No 、 or 。 anywhere.
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-994ca590-5011-48de-827b-284987d8cb20.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-8601b9cc-0b78-4f3d-a11f-029343db004d.png`
 
-入力資料：`production/inputs/exec-4cf3e8a9-5b49-4e41-95ea-20f3c35eaa41.png`
+入力資料：`production/inputs/exec-994ca590-5011-48de-827b-284987d8cb20.png`
 
 ## 02 先に守る物
 
-採用原画：art/rebuild-02-safe.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-02-cheek.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Edit this finished comic with ONE precise middle-frame correction. Preserve ALL other frames, characters, large vertical Japanese dialogue, colors, face identities, ONE offwhite evidence cloth bundle held by navy master, and guard drawing silver sword in bottom. MIDDLE frame: REMOVE Han Yun's entire extended forward pointing arm/hand at viewer right. Redraw his empty right hand lowered near HIS OWN RED SASH / waist, relaxed open palm facing upward, elbow bent close to torso; hand ends within his torso silhouette. He is glancing back toward So Rin safely standing behind master viewer LEFT; no directional gesture. There must be NO arm reaching to right outside hero silhouette. So Rin holds nothing, still behind master to left. Background straight corridor unaltered. Top sentence 殿の中へ。 remains exactly same with clear tail to hero. Bottom sword scene unchanged. Do not invent arrows, labels, second bundle, other speech or panels.
+Use case: precise-object-edit. Correct ONLY one continuity detail in this finished comic: in the TOP handover scene only, the young black-haired male hero is facing toward IMAGE LEFT, so the camera sees HIS ANATOMICAL LEFT CHEEK. That near-camera LEFT cheek must be CLEAN, with no purple bruise or scratch. His bruise belongs to his ANATOMICAL RIGHT CHEEK, which is on the FAR side of his head and concealed by this camera angle. Carefully erase only the misplaced purple skin bruise/scratches from the near-camera LEFT cheek in this specified panel; restore natural skin color/texture. Do NOT flip or mirror the character or image. Leave the correct RIGHT-cheek bruise in ALL OTHER panels unchanged. Change nothing else: all faces/features, hair/poses, emotion, dialogue, balloon tails/shapes, SFX, every hand/object/count, costumes, colors, backgrounds, panel geometry and exact canvas dimensions. Keep existing punctuation-free LARGE Japanese lettering exactly unchanged. No new people/objects.
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-cfe4035c-aa21-451f-8911-ff5f17553b49.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-acf57fa6-0900-4eee-8c09-72ad99fa4374.png`
 
-入力資料：`production/inputs/exec-b483a7dc-0a55-4412-a691-76c472b56969.png`
+入力資料：`production/inputs/exec-a0c7094d-34c4-4dd8-81a1-b8efb739f091.png`
 
 ## 03 刃の来る方
 
@@ -36,64 +38,42 @@ Edit this manga original to fix evidence and intervention continuity ONLY. REMOV
 
 ## 04 抜かない戦い
 
-採用原画：art/rebuild-04.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-04-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: illustration-story. Finished ORIGINAL Japanese martial-fantasy Webtoon 天魔、二周目。, smartphone scroll art with integrated Japanese lettering. Reference image defines ONLY Han Yun's face, hair, clothing and crisp expressive anime cel shading; DO NOT copy its layout, injuries beyond specified, background or story. Han Yun: young adult 20, tousled BLACK hair SHORT LOW ponytail, TEAL eyes, pale skin, off-white Chinese martial training robe with CHARCOAL lapel and DARK RED sash, black cloth shoes, subtle bruise on anatomical RIGHT cheek. Kind uncertain attentive; no smug sadistic grin. Master Sei Kou when called for: 50, salt-and-pepper high topknot, NAVY robe IVORY trim. Elder Luo when called for: 60, LONG GRAY beard, gray-white high topknot, DARK PLUM robe BLACK trim. Smith So Rin when called for: 20 woman BLACK BOB, AMBER eyes, SMALL BRONZE hairclip, IVORY sleeves, TEAL vest, DARK apron. Include only people specified in the shot; no other casts, no sword for hero, no reward ornaments. Chinese martial fantasy, not samurai. True vertical Japanese spoken text, upright glyphs top-to-bottom, columns RIGHT-to-LEFT; EXACT supplied text only. Balloon tails to speaker, thought dots to head, offscreen floating voice without tail. Dark crisp Japanese manga gothic with generous padding, Use generously sized printed dialogue. Letter glyph height 70px per1024px artwork width, or50px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Ordinary speech smooth oval, formal speech rounded tall rectangular with tail, soft/weak gently irregular thin contour, shout strong jagged contour with clear inset, thought soft cloud with dots. Keep faces and hands unobscured. Draw sound effects as expressive ink OUTSIDE speech balloons. No headings, panel labels, numbers, extra writing, translations, watermark. White #ffffff page edges, expressive clean ink and saturated cel shading, no photoreal painting.
-Asset 8.04 抜かない戦い. Beat purpose: 持ち物を壊さず力で守る快感を作る.
-Composition: Tall portrait aspect1:2 to1:3. Unequal actual DIAGONAL panel borders and gutters for tightly linked action. Local horizontal pair only if specified, RIGHT then LEFT. Glyphs remain upright. Preserve location and causes.
-This asset ONLY:
-Three tightly spaced unequal actual diagonal action panels. TOP hero RIGHT palm redirects flat side of guard silver blade away from smith. MIDDLE left hand catches guard wrist, not sword edge. BOTTOM hero eases guard down to sit against stone post, weapon lowered onto floor intact, guard conscious. Second guard stays back palms visible. No killing, no sword snapping, no magic explosion.
-Exact dialogue, each quoted fullname is authoritative; slash-separated columns are instructions NOT printed:
-1. Speaker ハン・ユン. Full text: 剣を、離して。. Columns in right-to-left order: 剣を、/離して。. Voice/balloon: normal.
-Sound effects independently: トン at controlled landing, not a huge explosion.
-Hidden/continuity constraints: 第2話の失敗を同じ巨大掌打へ戻さない。. Do not render planning notes. No events from any other asset.
-Use generously sized printed dialogue. Letter glyph height 70px per1024px artwork width, or50px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space.
-Continuity: hero wrists are FREED since episode1. NO ROPE binding anywhere. No blade or scabbard on hero. Master has mostly DARK salt-and-pepper topknot and SHORT neat dark-gray beard, visibly different from Elder's long WHITE beard. References indicate identities only; do not transplant their actions or courtyard into this scene.
-Hero washed in episode4: offwhite robe is CLEAN, no mud or dirt stains. Keep one faint right-cheek bruise and subtle wrist marks. No dramatic blood wounds.
-EVIDENCE BUNDLE invariant: ONE compact OFFWHITE cloth bundle tied with its OWN cloth corners, small enough for two cupped palms. No external rope, no dark bedroll or large luggage; no shoulder bag before episode10. Main storehouse door ALWAYS CLOSED; record cabinet is a different SMALL cabinet outside.
-So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer RIGHT in frontal view); never mirror the clip to her right temple. Keep her clothes/work apron consistent.
-For episode8 GUARDS identity if visible: attacker adult thin moustache, gray martial robe BLUE sash, black topknot, one silver straight sword. Second guard round clean-shaven face, gray robe BROWN sash, black topknot, empty hands. Keep these two distinct; elder plum robe is a THIRD distinct man, never a duplicate. No guard acts beyond described beat.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY the two Japanese sentence punctuation marks U+3001「、」and U+3002「。」 from speech balloons and thoughts. Everything else remains IDENTICAL. KEEP katakana-name separators「・」, ！ ？ … and LV.999. Replace sentence pauses with vertical COLUMN BREAKS. Preserve canvas dimensions/aspect ratio and every panel border position; do not reframe/rearrange. Keep every face, hand, object, identity, pose, costume and background. The smith's bronze clip stays on HER LEFT temple. ONE palm-sized off-white tied cloth evidence packet, TWO charcoal clasp pieces, no duplicate bundle or extra metal. Wrists free. Preserve existing LARGE lettering and balloon shapes with tails toward the SAME actual speakers; never cover faces/hands. Keep all SFX. Fill former punctuation areas plain white. Upright Japanese top to bottom, columns right to left. Exact complete dialogue and columns:
+ハン・ユン: "剣を離して"; right-to-left columns "剣を/離して"; voice normal
+No 、 or 。 anywhere.
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-d9f6fb79-5953-49eb-888a-092b1a220720.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-47cd23a3-9579-4929-9f46-c6f341dea2b3.png`
 
-入力資料：`production/cast-reference.png`
+入力資料：`production/inputs/exec-d9f6fb79-5953-49eb-888a-092b1a220720.png`
 
 ## 05 守ったあと
 
-採用原画：art/rebuild-05.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-05-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: illustration-story. Finished ORIGINAL Japanese martial-fantasy Webtoon 天魔、二周目。, smartphone scroll art with integrated Japanese lettering. Reference image defines ONLY Han Yun's face, hair, clothing and crisp expressive anime cel shading; DO NOT copy its layout, injuries beyond specified, background or story. Han Yun: young adult 20, tousled BLACK hair SHORT LOW ponytail, TEAL eyes, pale skin, off-white Chinese martial training robe with CHARCOAL lapel and DARK RED sash, black cloth shoes, subtle bruise on anatomical RIGHT cheek. Kind uncertain attentive; no smug sadistic grin. Master Sei Kou when called for: 50, salt-and-pepper high topknot, NAVY robe IVORY trim. Elder Luo when called for: 60, LONG GRAY beard, gray-white high topknot, DARK PLUM robe BLACK trim. Smith So Rin when called for: 20 woman BLACK BOB, AMBER eyes, SMALL BRONZE hairclip, IVORY sleeves, TEAL vest, DARK apron. Include only people specified in the shot; no other casts, no sword for hero, no reward ornaments. Chinese martial fantasy, not samurai. True vertical Japanese spoken text, upright glyphs top-to-bottom, columns RIGHT-to-LEFT; EXACT supplied text only. Balloon tails to speaker, thought dots to head, offscreen floating voice without tail. Dark crisp Japanese manga gothic with generous padding, Use generously sized printed dialogue. Letter glyph height 70px per1024px artwork width, or50px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Ordinary speech smooth oval, formal speech rounded tall rectangular with tail, soft/weak gently irregular thin contour, shout strong jagged contour with clear inset, thought soft cloud with dots. Keep faces and hands unobscured. Draw sound effects as expressive ink OUTSIDE speech balloons. No headings, panel labels, numbers, extra writing, translations, watermark. White #ffffff page edges, expressive clean ink and saturated cel shading, no photoreal painting.
-Asset 8.05 守ったあと. Beat purpose: 証人と証拠を確かめる.
-Composition: Tall portrait aspect about2:3, TWO unequal moments reading top-to-bottom with generous white separation. Smaller close-up versus larger medium frame; no equal grid.
-This asset ONLY:
-Top smith safely inside open hall checks her own hands, exhales. Bottom master unfolds cloth on table enough to show TWO unchanged iron pieces and one folded slip, hero watching their survival. Guard remains seated outside background, no duplicate attack.
-Exact dialogue, each quoted fullname is authoritative; slash-separated columns are instructions NOT printed:
-1. Speaker ソ・リン. Full text: ……無事。. Columns in right-to-left order: ……/無事。. Voice/balloon: soft.
-Sound effects independently: none.
-Hidden/continuity constraints: 強さの報酬は人と証拠の無事。. Do not render planning notes. No events from any other asset.
-Use generously sized printed dialogue. Letter glyph height 70px per1024px artwork width, or50px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space.
-Continuity: hero wrists are FREED since episode1. NO ROPE binding anywhere. No blade or scabbard on hero. Master has mostly DARK salt-and-pepper topknot and SHORT neat dark-gray beard, visibly different from Elder's long WHITE beard. References indicate identities only; do not transplant their actions or courtyard into this scene.
-Hero washed in episode4: offwhite robe is CLEAN, no mud or dirt stains. Keep one faint right-cheek bruise and subtle wrist marks. No dramatic blood wounds.
-EVIDENCE BUNDLE invariant: ONE compact OFFWHITE cloth bundle tied with its OWN cloth corners, small enough for two cupped palms. No external rope, no dark bedroll or large luggage; no shoulder bag before episode10. Main storehouse door ALWAYS CLOSED; record cabinet is a different SMALL cabinet outside.
-So Rin's ONE small bronze hairclip remains at her ANATOMICAL LEFT TEMPLE (viewer RIGHT in frontal view); never mirror the clip to her right temple. Keep her clothes/work apron consistent.
-For episode8 GUARDS identity if visible: attacker adult thin moustache, gray martial robe BLUE sash, black topknot, one silver straight sword. Second guard round clean-shaven face, gray robe BROWN sash, black topknot, empty hands. Keep these two distinct; elder plum robe is a THIRD distinct man, never a duplicate. No guard acts beyond described beat.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY the two Japanese sentence punctuation marks U+3001「、」and U+3002「。」 from speech balloons and thoughts. Everything else remains IDENTICAL. KEEP katakana-name separators「・」, ！ ？ … and LV.999. Replace sentence pauses with vertical COLUMN BREAKS. Preserve canvas dimensions/aspect ratio and every panel border position; do not reframe/rearrange. Keep every face, hand, object, identity, pose, costume and background. The smith's bronze clip stays on HER LEFT temple. ONE palm-sized off-white tied cloth evidence packet, TWO charcoal clasp pieces, no duplicate bundle or extra metal. Wrists free. Preserve existing LARGE lettering and balloon shapes with tails toward the SAME actual speakers; never cover faces/hands. Keep all SFX. Fill former punctuation areas plain white. Upright Japanese top to bottom, columns right to left. Exact complete dialogue and columns:
+ソ・リン: "……無事"; right-to-left columns "……/無事"; voice soft
+No 、 or 。 anywhere.
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-f9ac9f70-5a3d-4c5a-bf44-f43f50508f77.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-ebe00e7b-e776-4c6c-bfb8-31f6a04fa13f.png`
 
-入力資料：`production/cast-reference.png`, `episode-03/art/rebuild-03-table.png`
+入力資料：`production/inputs/exec-f9ac9f70-5a3d-4c5a-bf44-f43f50508f77.png`
 
 ## 06 人の前へ
 
-採用原画：art/rebuild-06-one-bundle.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-06-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Edit ONLY the duplicate offwhite bundle held by So Rin in BOTTOM panel. Remove that bundle entirely, draw her two EMPTY hands loosely folded over her dark work apron. KEEP the ONE compact offwhite cloth bundle sitting on foreground hearing table unchanged. All evidence remains in that single table bundle until next episode. Preserve exact ここで、皆に聞く。 lettering, master raised hand, elder long white beard, hero robes/empty hands, smith bob/hairclip, audience, room, panel sizes and all colors. No new text, additional props, swords or injuries.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY the two Japanese sentence punctuation marks U+3001「、」and U+3002「。」 from speech balloons and thoughts. Everything else remains IDENTICAL. KEEP katakana-name separators「・」, ！ ？ … and LV.999. Replace sentence pauses with vertical COLUMN BREAKS. Preserve canvas dimensions/aspect ratio and every panel border position; do not reframe/rearrange. Keep every face, hand, object, identity, pose, costume and background. The smith's bronze clip stays on HER LEFT temple. ONE palm-sized off-white tied cloth evidence packet, TWO charcoal clasp pieces, no duplicate bundle or extra metal. Wrists free. Preserve existing LARGE lettering and balloon shapes with tails toward the SAME actual speakers; never cover faces/hands. Keep all SFX. Fill former punctuation areas plain white. Upright Japanese top to bottom, columns right to left. Exact complete dialogue and columns:
+セイ・コウ: "ここで皆に聞く"; right-to-left columns "ここで/皆に聞く"; voice formal
+No 、 or 。 anywhere.
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-27e1d35f-bc70-4525-9297-d69df540e92b.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-ce461e93-e860-4bd7-9b14-0f30591723b1.png`
 
-入力資料：`production/inputs/exec-0d1d29d0-9b47-4365-ae93-bba233ca2df6.png`
+入力資料：`production/inputs/exec-27e1d35f-bc70-4525-9297-d69df540e92b.png`

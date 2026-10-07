@@ -1,24 +1,16 @@
 ## 01 指が痛くない
 
-採用原画：art/rebuild-01.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-01-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: illustration-story. Finished ORIGINAL Japanese martial-fantasy Webtoon 天魔、二周目。, smartphone scroll art with integrated Japanese lettering. Reference image defines ONLY Han Yun's face, hair, clothing and crisp expressive anime cel shading; DO NOT copy its layout, injuries beyond specified, background or story. Han Yun: young adult 20, tousled BLACK hair SHORT LOW ponytail, TEAL eyes, pale skin, off-white Chinese martial training robe with CHARCOAL lapel and DARK RED sash, black cloth shoes, subtle bruise on anatomical LEFT cheek. Kind uncertain attentive; no smug sadistic grin. Master Sei Kou when called for: 50, salt-and-pepper high topknot, NAVY robe IVORY trim. Elder Luo when called for: 60, LONG GRAY beard, gray-white high topknot, DARK PLUM robe BLACK trim. Smith So Rin when called for: 20 woman BLACK BOB, AMBER eyes, SMALL BRONZE hairclip, IVORY sleeves, TEAL vest, DARK apron. Include only people specified in the shot; no other casts, no sword for hero, no reward ornaments. Chinese martial fantasy, not samurai. True vertical Japanese spoken text, upright glyphs top-to-bottom, columns RIGHT-to-LEFT; EXACT supplied text only. Balloon tails to speaker, thought dots to head, offscreen floating voice without tail. Dark crisp Japanese manga gothic with generous padding, Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork width, or68px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Ordinary speech smooth oval, formal speech rounded tall rectangular with tail, soft/weak gently irregular thin contour, shout strong jagged contour with clear inset, thought soft cloud with dots. Keep faces and hands unobscured. Draw sound effects as expressive ink OUTSIDE speech balloons. No headings, panel labels, numbers, extra writing, translations, watermark. White #ffffff page edges, expressive clean ink and saturated cel shading, no photoreal painting.
-Asset 2.01 指が痛くない. Beat purpose: 前話の結果に本人の感覚を返す.
-Composition: Tall portrait aspect about2:3, TWO unequal moments reading top-to-bottom with generous white separation. Smaller close-up versus larger medium frame; no equal grid.
-This asset ONLY:
-Same daylight courtyard and caught sword. Top close-up right two fingers intact skin holding silver blade. Bottom medium hero looking from fingers to elder with fearful uncertainty. Elder at hero's upper right, no extra sword.
-Exact dialogue, each quoted fullname is authoritative; slash-separated columns are instructions NOT printed:
-1. Speaker ハン・ユン. Full text: 痛く、ない。. Columns in right-to-left order: 痛く、/ない。. Voice/balloon: thought.
-2. Speaker ハン・ユン. Full text: もう、やめて。. Columns in right-to-left order: もう、/やめて。. Voice/balloon: weak.
-Sound effects independently: none.
-Hidden/continuity constraints: 受け止める顔。攻撃再開は次素材。. Do not render planning notes. No events from any other asset.
-Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork width, or68px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY the two Japanese sentence punctuation marks U+3001「、」and U+3002「。」 from speech balloons and thoughts. Everything else remains IDENTICAL. The katakana-name separator「・」 is NOT sentence punctuation: KEEP IT. Keep ！ ？ … and LV.999 exactly. Replace sentence pauses with vertical COLUMN BREAKS. Exact existing canvas aspect ratio and every panel border position MUST be preserved; do not enlarge/shrink/reframe/rearrange scenes. Keep every face/hand/object/pose/identity/costume/color and background exactly, RIGHT cheek bruise, freed wrists, all SFX unchanged. Preserve existing LARGE lettering and balloon shapes/tails without covering faces or hands. Fill former punctuation glyph areas plain white. Upright Japanese top to bottom and columns right to left. Authoritative dialogue and vertical columns below: render EVERY letter, no 、 or 。 anywhere.
+ハン・ユン: "痛くない"; right-to-left columns "痛く/ない"; voice thought
+ハン・ユン: "もうやめて"; right-to-left columns "もう/やめて"; voice weak
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-60a39707-3eb9-4d3c-99fa-631e2dc4b57f.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-2ede49a1-136c-4d9f-ae52-3e7f639a41e8.png`
 
-入力資料：`production/hero-reference.png`, `episode-01/art/rebuild-02-letters.png`
+入力資料：`production/inputs/exec-60a39707-3eb9-4d3c-99fa-631e2dc4b57f.png`
 
 ## 02 剣を失った長老
 
@@ -51,7 +43,7 @@ Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork widt
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-12dac786-5d53-45a7-9ed2-621fcf28197d.png`
 
-入力資料：`production/hero-reference.png`, `episode-01/art/rebuild-02-letters.png`
+入力資料：`production/hero-reference.png`, `production/inputs/exec-86e8cb7c-4a96-47b9-8473-f25b25525c1b.png`
 
 ## 04 音のあと
 
@@ -72,58 +64,43 @@ Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork widt
 
 生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-207e0765-beea-4fed-b15e-687e4a92bac6.png`
 
-入力資料：`production/hero-reference.png`, `episode-01/art/rebuild-02-letters.png`
+入力資料：`production/hero-reference.png`, `production/inputs/exec-86e8cb7c-4a96-47b9-8473-f25b25525c1b.png`
 
 ## 05 息をしている
 
-採用原画：art/rebuild-05.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-05-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: illustration-story. Finished ORIGINAL Japanese martial-fantasy Webtoon 天魔、二周目。, smartphone scroll art with integrated Japanese lettering. Reference image defines ONLY Han Yun's face, hair, clothing and crisp expressive anime cel shading; DO NOT copy its layout, injuries beyond specified, background or story. Han Yun: young adult 20, tousled BLACK hair SHORT LOW ponytail, TEAL eyes, pale skin, off-white Chinese martial training robe with CHARCOAL lapel and DARK RED sash, black cloth shoes, subtle bruise on anatomical LEFT cheek. Kind uncertain attentive; no smug sadistic grin. Master Sei Kou when called for: 50, salt-and-pepper high topknot, NAVY robe IVORY trim. Elder Luo when called for: 60, LONG GRAY beard, gray-white high topknot, DARK PLUM robe BLACK trim. Smith So Rin when called for: 20 woman BLACK BOB, AMBER eyes, SMALL BRONZE hairclip, IVORY sleeves, TEAL vest, DARK apron. Include only people specified in the shot; no other casts, no sword for hero, no reward ornaments. Chinese martial fantasy, not samurai. True vertical Japanese spoken text, upright glyphs top-to-bottom, columns RIGHT-to-LEFT; EXACT supplied text only. Balloon tails to speaker, thought dots to head, offscreen floating voice without tail. Dark crisp Japanese manga gothic with generous padding, Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork width, or68px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Ordinary speech smooth oval, formal speech rounded tall rectangular with tail, soft/weak gently irregular thin contour, shout strong jagged contour with clear inset, thought soft cloud with dots. Keep faces and hands unobscured. Draw sound effects as expressive ink OUTSIDE speech balloons. No headings, panel labels, numbers, extra writing, translations, watermark. White #ffffff page edges, expressive clean ink and saturated cel shading, no photoreal painting.
-Asset 2.05 息をしている. Beat purpose: 倒れた相手の生存を確認する.
-Composition: Tall portrait aspect about2:3, TWO unequal moments reading top-to-bottom with generous white separation. Smaller close-up versus larger medium frame; no equal grid.
-This asset ONLY:
-Top medium elder seated stunned against lowest stone step, eyes open breathing, not dead or bleeding, empty hands. Bottom hero crouches at a respectful distance, watches elder chest rise, his own hands trembling. Same courtyard and broken sword, no weapons in hero hands.
-Exact dialogue, each quoted fullname is authoritative; slash-separated columns are instructions NOT printed:
-1. Speaker ハン・ユン. Full text: 生きてる。. Columns in right-to-left order: 生きてる。. Voice/balloon: thought.
-Sound effects independently: none.
-Hidden/continuity constraints: 体の動きで確認。勝利通知は出さない。. Do not render planning notes. No events from any other asset.
-Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork width, or68px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY the two Japanese sentence punctuation marks U+3001「、」and U+3002「。」 from speech balloons and thoughts. Everything else remains IDENTICAL. The katakana-name separator「・」 is NOT sentence punctuation: KEEP IT. Keep ！ ？ … and LV.999 exactly. Replace sentence pauses with vertical COLUMN BREAKS. Exact existing canvas aspect ratio and every panel border position MUST be preserved; do not enlarge/shrink/reframe/rearrange scenes. Keep every face/hand/object/pose/identity/costume/color and background exactly, RIGHT cheek bruise, freed wrists, all SFX unchanged. Preserve existing LARGE lettering and balloon shapes/tails without covering faces or hands. Fill former punctuation glyph areas plain white. Upright Japanese top to bottom and columns right to left. Authoritative dialogue and vertical columns below: render EVERY letter, no 、 or 。 anywhere.
+ハン・ユン: "生きてる"; right-to-left columns "生きてる"; voice thought
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-02bf090c-aecd-42ba-b157-3eb3e327f958.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-86ac1afc-996e-43c4-a2a1-452c32a3d400.png`
 
-入力資料：`production/hero-reference.png`, `episode-01/art/rebuild-02-letters.png`
+入力資料：`production/inputs/exec-02bf090c-aecd-42ba-b157-3eb3e327f958.png`
 
 ## 06 処刑の停止
 
-採用原画：art/rebuild-06-free.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-06-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Edit this manga original. Preserve panel layout, complete integrated Japanese 処刑を止める。, hero expression, elder plum robe, courtyard, guard weapons, all cel-shaded drawing. Correct two details ONLY. Bottom-right closeup: REMOVE ALL ROPE encircling hero wrists and hands. Draw the same single bare trembling right hand with faint red rope-mark impressions on exposed skin, naturally resting on charcoal-clad knee. Hero was freed in episode1 and MUST remain free. Top central master Sei Kou must be clearly DIFFERENT from elderly Luo at his right. Master is 50 with dark charcoal-and-gray SALT-AND-PEPPER topknot (mostly dark), narrower calm face, SHORT neatly trimmed dark gray beard ending at chin, not long white beard. His navy robe ivory trim and raised stopping palm unchanged. Elder at right retains LONG WHITE beard, gray hair and plum robe. No other changes, no new text, no image filtering.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY the two Japanese sentence punctuation marks U+3001「、」and U+3002「。」 from speech balloons and thoughts. Everything else remains IDENTICAL. The katakana-name separator「・」 is NOT sentence punctuation: KEEP IT. Keep ！ ？ … and LV.999 exactly. Replace sentence pauses with vertical COLUMN BREAKS. Exact existing canvas aspect ratio and every panel border position MUST be preserved; do not enlarge/shrink/reframe/rearrange scenes. Keep every face/hand/object/pose/identity/costume/color and background exactly, RIGHT cheek bruise, freed wrists, all SFX unchanged. Preserve existing LARGE lettering and balloon shapes/tails without covering faces or hands. Fill former punctuation glyph areas plain white. Upright Japanese top to bottom and columns right to left. Authoritative dialogue and vertical columns below: render EVERY letter, no 、 or 。 anywhere.
+セイ・コウ: "処刑を止める"; right-to-left columns "処刑を/止める"; voice formal
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-5e6eb6ab-82f3-4177-82e8-428b76778020.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-cbc63458-6bfd-48ad-b9c5-c8d6c2e145d2.png`
 
-入力資料：`production/inputs/exec-aaf36f5d-2e32-4ace-b743-9347f6cfe3b6.png`
+入力資料：`production/inputs/exec-5e6eb6ab-82f3-4177-82e8-428b76778020.png`
 
 ## 07 水の温度
 
-採用原画：art/rebuild-07.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+採用原画：art/rebuild-07-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
 ```text
-Use case: illustration-story. Finished ORIGINAL Japanese martial-fantasy Webtoon 天魔、二周目。, smartphone scroll art with integrated Japanese lettering. Reference image defines ONLY Han Yun's face, hair, clothing and crisp expressive anime cel shading; DO NOT copy its layout, injuries beyond specified, background or story. Han Yun: young adult 20, tousled BLACK hair SHORT LOW ponytail, TEAL eyes, pale skin, off-white Chinese martial training robe with CHARCOAL lapel and DARK RED sash, black cloth shoes, subtle bruise on anatomical LEFT cheek. Kind uncertain attentive; no smug sadistic grin. Master Sei Kou when called for: 50, salt-and-pepper high topknot, NAVY robe IVORY trim. Elder Luo when called for: 60, LONG GRAY beard, gray-white high topknot, DARK PLUM robe BLACK trim. Smith So Rin when called for: 20 woman BLACK BOB, AMBER eyes, SMALL BRONZE hairclip, IVORY sleeves, TEAL vest, DARK apron. Include only people specified in the shot; no other casts, no sword for hero, no reward ornaments. Chinese martial fantasy, not samurai. True vertical Japanese spoken text, upright glyphs top-to-bottom, columns RIGHT-to-LEFT; EXACT supplied text only. Balloon tails to speaker, thought dots to head, offscreen floating voice without tail. Dark crisp Japanese manga gothic with generous padding, Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork width, or68px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space. Ordinary speech smooth oval, formal speech rounded tall rectangular with tail, soft/weak gently irregular thin contour, shout strong jagged contour with clear inset, thought soft cloud with dots. Keep faces and hands unobscured. Draw sound effects as expressive ink OUTSIDE speech balloons. No headings, panel labels, numbers, extra writing, translations, watermark. White #ffffff page edges, expressive clean ink and saturated cel shading, no photoreal painting.
-Asset 2.07 水の温度. Beat purpose: 安全・手の加減・安堵を同じ場所で描く.
-Composition: Tall portrait aspect1:3, THREE successive unequal shots, staggered in size with short white gutters. Top-to-bottom. If a local horizontal pair specified read RIGHT then LEFT. Do not cram all events into simultaneous montage.
-This asset ONLY:
-Same courtyard shaded low stone steps. Top hero sits with shoulders slumped, hands free rope marks. Middle small close-up accepts one plain ceramic cup of WATER using BOTH hands carefully, cup unbroken, master offscreen. Bottom large quiet hero sips and breathes, eyelids wet, left cheek bruise. No food, no system, no new mystery.
-Exact dialogue, each quoted fullname is authoritative; slash-separated columns are instructions NOT printed:
-1. Speaker ハン・ユン. Full text: ……帰りたい。. Columns in right-to-left order: ……/帰りたい。. Voice/balloon: thought.
-Sound effects independently: small すぅ near breathing, no sipping gag.
-Hidden/continuity constraints: 飲むまでの器と手を維持。. Do not render planning notes. No events from any other asset.
-Use VERY LARGE printed dialogue. Letter glyph height 96px per1024px artwork width, or68px per724px artwork width. Every dialogue glyph must be easily readable at phone width360; do not shrink text. Enlarge the balloon and reserved space instead. No tiny condensed lettering. Keep art and faces outside balloon reserved space.
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY the two Japanese sentence punctuation marks U+3001「、」and U+3002「。」 from speech balloons and thoughts. Everything else remains IDENTICAL. The katakana-name separator「・」 is NOT sentence punctuation: KEEP IT. Keep ！ ？ … and LV.999 exactly. Replace sentence pauses with vertical COLUMN BREAKS. Exact existing canvas aspect ratio and every panel border position MUST be preserved; do not enlarge/shrink/reframe/rearrange scenes. Keep every face/hand/object/pose/identity/costume/color and background exactly, RIGHT cheek bruise, freed wrists, all SFX unchanged. Preserve existing LARGE lettering and balloon shapes/tails without covering faces or hands. Fill former punctuation glyph areas plain white. Upright Japanese top to bottom and columns right to left. Authoritative dialogue and vertical columns below: render EVERY letter, no 、 or 。 anywhere.
+ハン・ユン: "……帰りたい"; right-to-left columns "……/帰りたい"; voice thought
 ```
 
-生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-2a48a132-077c-44bf-8021-37e917520aff.png`
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-e05c2cfb-4caa-44eb-be67-ec8a0536cdf1.png`
 
-入力資料：`production/hero-reference.png`, `episode-01/art/rebuild-02-letters.png`
+入力資料：`production/inputs/exec-2a48a132-077c-44bf-8021-37e917520aff.png`

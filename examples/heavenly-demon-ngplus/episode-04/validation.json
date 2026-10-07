@@ -266,5 +266,24 @@
     }
   ],
   "manualReview": "See production/mobile-review.md; mechanical checks do not prove art or text quality.",
-  "iosPhysicalDevice": "not tested"
+  "iosPhysicalDevice": "not tested",
+  "rasterLettering": {
+    "referenceSizeCssPx": [
+      19,
+      20
+    ],
+    "reviewWidthCssPx": 360,
+    "sourceWidthsPx": [
+      724,
+      726,
+      1024
+    ],
+    "scaleAt360": [
+      0.35156,
+      0.49587,
+      0.49724
+    ],
+    "measuredInkSamples": [],
+    "note": "Ink bounds are not a CSS font size or a minimum for every glyph. All reading units were visually reviewed; see production/mobile-review.md."
+  }
 }

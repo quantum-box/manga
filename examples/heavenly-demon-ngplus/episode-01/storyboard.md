@@ -16,11 +16,11 @@
 
 作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-01-final-letters.png 1024×1536。表示窓：[{"range": [0, 659], "gap": 0, "lines": [0], "sound": "none", "description": "学生がノートを閉じる"}, {"range": [671, 1536], "gap": 95, "lines": [], "sound": "none", "description": "ゲームを開く学生"}]
+原画：art/rebuild-01-clean.png 1024×1536。表示窓：[{"range": [0, 659], "gap": 0, "lines": [0], "sound": "none", "description": "学生がノートを閉じる"}, {"range": [671, 1536], "gap": 95, "lines": [], "sound": "none", "description": "ゲームを開く学生"}]
 
 効果音（発話と別）：none
 
-発話：学生「あと一回だけ。」／縦列 右→左：あと一回/だけ。／声：soft
+発話：学生「あと一回だけ」／縦列 右→左：あと一回/だけ／声：soft
 
 ## 02 冷たい石
 
@@ -32,12 +32,12 @@
 
 作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-02-letters.png 724×2172。表示窓：[{"range": [0, 889], "gap": 220, "lines": [0], "sound": "none", "description": "処刑広場。羅長老が剣を持ち、弟子は跪く"}, {"range": [899, 1370], "gap": 55, "lines": [], "sound": "ぎゅ", "description": "前で縛られた痛む手首"}, {"range": [1375, 2172], "gap": 170, "lines": [1], "sound": "none", "description": "見知らぬ場所を見上げる弟子の顔"}]
+原画：art/rebuild-02-clean.png 724×2172。表示窓：[{"range": [0, 889], "gap": 220, "lines": [0], "sound": "none", "description": "処刑広場。羅長老が剣を持ち、弟子は跪く"}, {"range": [899, 1370], "gap": 55, "lines": [], "sound": "ぎゅ", "description": "前で縛られた痛む手首"}, {"range": [1375, 2172], "gap": 170, "lines": [1], "sound": "none", "description": "見知らぬ場所を見上げる弟子の顔"}]
 
 効果音（発話と別）：ぎゅ
 
-発話：羅長老「ハン・ユン。」／縦列 右→左：ハン・/ユン。／声：normal
-ハン・ユン「待って。ここは？」／縦列 右→左：待って。/ここは？／声：weak
+発話：羅長老「ハンユン」／縦列 右→左：ハン/ユン／声：normal
+ハン・ユン「待ってここは？」／縦列 右→左：待って/ここは？／声：weak
 
 ## 03 知っている名前
 
@@ -49,12 +49,12 @@
 
 作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-03-readable.png 1024×1536。表示窓：[{"range": [0, 493], "gap": 150, "lines": [], "sound": "none", "description": "長老の剣を持つ手"}, {"range": [499, 1536], "gap": 280, "lines": [0, 1], "sound": "none", "description": "名前を思い出して怯える弟子"}]
+原画：art/rebuild-03-clean.png 1024×1536。表示窓：[{"range": [0, 493], "gap": 150, "lines": [], "sound": "none", "description": "長老の剣を持つ手"}, {"range": [499, 1536], "gap": 280, "lines": [0, 1], "sound": "none", "description": "名前を思い出して怯える弟子"}]
 
 効果音（発話と別）：none
 
-発話：ハン・ユン「ゲームの雑役……。」／縦列 右→左：ゲームの/雑役……。／声：thought
-ハン・ユン「俺、何も……！」／縦列 右→左：俺、/何も……！／声：weak
+発話：ハン・ユン「ゲームの雑役……」／縦列 右→左：ゲームの/雑役……／声：thought
+ハン・ユン「俺何も……！」／縦列 右→左：俺/何も……！／声：weak
 
 ## 04 確かめる指
 
@@ -66,11 +66,11 @@
 
 作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-04-readable.png 725×2169。表示窓：[{"range": [0, 626], "gap": 260, "lines": [], "sound": "none", "description": "縛られた手の前へ、本人だけに見える投影。引き継ぎ完了、LV.999"}, {"range": [631, 1076], "gap": 150, "lines": [], "sound": "プツ", "description": "右の指を動かして縄を切る"}, {"range": [1081, 2169], "gap": 360, "lines": [0], "sound": "none", "description": "切れた縄が落ち、自由になった手を見つめる"}]
+原画：art/rebuild-04-clean.png 725×2169。表示窓：[{"range": [0, 626], "gap": 260, "lines": [], "sound": "none", "description": "縛られた手の前へ、本人だけに見える投影。引き継ぎ完了、LV.999"}, {"range": [631, 1076], "gap": 150, "lines": [], "sound": "プツ", "description": "右の指を動かして縄を切る"}, {"range": [1081, 2169], "gap": 360, "lines": [0], "sound": "none", "description": "切れた縄が落ち、自由になった手を見つめる"}]
 
 効果音（発話と別）：プツ
 
-発話：ハン・ユン「俺の、セーブ？」／縦列 右→左：俺の、/セーブ？／声：thought
+発話：ハン・ユン「俺のセーブ？」／縦列 右→左：俺の/セーブ？／声：thought
 
 ## 05 落ちてくる刃
 
@@ -82,11 +82,11 @@
 
 作画形式：continuous。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-05-readable.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 580}]
+原画：art/rebuild-05-clean.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 580}]
 
 効果音（発話と別）：ヒュッ
 
-発話：ハン・ユン「止まって。」／縦列 右→左：止まって。／声：thought
+発話：ハン・ユン「止まって」／縦列 右→左：止まって／声：thought
 
 ## ring 刃の響き
 
@@ -114,8 +114,8 @@
 
 作画形式：reveal。読む順は上から下、同段の小コマは右から左。
 
-原画：art/rebuild-06-readable.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 650}]
+原画：art/rebuild-06-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 650}]
 
 効果音（発話と別）：none
 
-発話：ハン・ユン「……止まった。」／縦列 右→左：……/止まった。／声：weak
+発話：ハン・ユン「……止まった」／縦列 右→左：……/止まった／声：weak
