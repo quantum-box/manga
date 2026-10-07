@@ -92,4 +92,3 @@
    航：それもクエスト？（縦列：それも / クエスト？）
 3. Large gentle SENA close-up, tired kind eyes, not a mysterious grin.
    セナ：今晩薬が要るんだよ（縦列：今晩 / 薬が要るんだよ）
-

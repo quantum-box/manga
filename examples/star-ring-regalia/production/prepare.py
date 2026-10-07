@@ -380,7 +380,7 @@ def main():
                 for d in p['lines']:storyboard.append(f"   {d['speaker']}：{d['text']}（縦列：{' / '.join(d['columns'])}）")
             storyboard.append('')
             prompts.extend([f"## {a['id']}",'```text',a['prompt'],'```',''])
-        (directory/'storyboard.md').write_text('\n'.join(storyboard)+'\n',encoding='utf-8')
+        (directory/'storyboard.md').write_text('\n'.join(storyboard).rstrip()+'\n',encoding='utf-8')
         if not (directory/'generation.json').exists():
             (directory/'PROMPTS.md').write_text('# 実行する生成指示\n\n参照：../reference/cast.png。顔と衣装だけを共有し、コマ割りをコピーしない。修正指示は実行時に別記する。\n\n'+'\n'.join(prompts),encoding='utf-8')
         (directory/'episode.json').write_text(json.dumps(ep,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
