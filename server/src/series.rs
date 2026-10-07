@@ -21,6 +21,8 @@ pub fn identify(id: &str, title: &str) -> SeriesInfo {
         ("zero-break", "ゼロ・ブレイク")
     } else if id.starts_with("tower-farm-kitchen-") {
         ("tower-farm-kitchen", "塔の農夫は、英雄を食わせる")
+    } else if id.starts_with("star-ring-regalia-") {
+        ("star-ring-regalia", "星環のレガリア")
     } else {
         (id, title)
     };
@@ -112,10 +114,13 @@ mod tests {
             ("pochi-episode-02-r123abc", "pochi"),
             ("zero-break-episode-01-r123abc", "zero-break"),
             ("heavenly-demon-episode-10-r123abc", "heavenly-demon"),
+            ("star-ring-regalia-episode-01-r123abc", "star-ring-regalia"),
         ] {
             assert_eq!(identify(id, "").id, expected);
         }
         assert_eq!(identify("pochi-episode-02-r123abc", "").number, 2);
+        assert_eq!(identify("star-ring-regalia-episode-02-r123abc", "").number, 2);
+        assert_eq!(identify("star-ring-regalia-episode-01-r123abc", "").title, "星環のレガリア");
         for number in 1..=10 {
             let id = format!("tower-farm-kitchen-episode-{number:02}-r123abc");
             let info = identify(&id, "different title");

@@ -17,11 +17,15 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
-def adopted_chapters(root=ROOT):
+def adopted_chapters(root=ROOT, series_id=None):
     root = root.resolve()
     catalog = json.loads((root / "content/catalog.json").read_text())
+    if series_id is not None and not any(t["id"] == series_id for t in catalog):
+        raise ValueError("Unknown catalog series: " + series_id)
     chapters = []
     for title in catalog:
+        if series_id is not None and title["id"] != series_id:
+            continue
         seen = set()
         series = "heavenly-demon" if title["id"] == "heavenly-demon-ngplus" else title["id"]
         for episode in title["episodes"]:
@@ -37,15 +41,15 @@ def adopted_chapters(root=ROOT):
                 raise ValueError("Episode ID exceeds server limit")
             chapters.append({"id": episode_id, "series": series, "number": episode["number"],
                              "title": title["title"], "subtitle": episode["title"],
-                             "edition": episode["edition"], "source": episode["source"],
+                             "edition": "", "source": episode["source"],
                              "sourceDigest": source_digest, "provenance": provenance})
     return chapters
 
 
-def export(output, node="node", chromium=None):
+def export(output, node="node", chromium=None, series_id=None):
     from PIL import Image
     output.mkdir(parents=True, exist_ok=True)
-    chapters = adopted_chapters()
+    chapters = adopted_chapters(series_id=series_id)
     sources = {c["id"]: dict(source=str(ROOT / c["source"]), subtitle=c["subtitle"],
                               sourceDigest=c["sourceDigest"], bodyOnly=True) for c in chapters}
     source_list = output / "sources.json"
@@ -91,6 +95,8 @@ def export(output, node="node", chromium=None):
         print(f"Prepared {chapter['id']}: {len(blocks)-1} strips", flush=True)
     manifest = {"baseURL": "https://manga-server.txcloud.app", "chapters": chapters,
                 "catalogSHA256": digest((ROOT / "content/catalog.json").read_bytes())}
+    if series_id is not None:
+        manifest["seriesID"] = series_id
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     print(f"Ready: {len(chapters)} adopted chapters in {output}", flush=True)
 
@@ -100,5 +106,6 @@ if __name__ == "__main__":
     parser.add_argument("output", type=Path)
     parser.add_argument("--node", default=os.environ.get("NODE_EXECUTABLE", "node"))
     parser.add_argument("--chromium")
+    parser.add_argument("--series", help="Export only the selected catalog series")
     args = parser.parse_args()
-    export(args.output.resolve(), args.node, args.chromium)
+    export(args.output.resolve(), args.node, args.chromium, args.series)

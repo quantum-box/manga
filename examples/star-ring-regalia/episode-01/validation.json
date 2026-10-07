@@ -1,0 +1,45 @@
+{
+  "episode": 1,
+  "status": "passed-local",
+  "artwork": {
+    "adoptedImages": 8,
+    "integratedVerticalJapanese": true,
+    "htmlDialogueOverlay": false,
+    "provenance": "generation.json",
+    "adoption": "adoption.json"
+  },
+  "phoneChecks": [
+    {
+      "width": 390,
+      "height": 844,
+      "pageHeight": 9987,
+      "pageWidth": 390,
+      "allImagesLoaded": true,
+      "revealPause": 940,
+      "continuousVisualRead": "review/read-390-00.jpg through read-390-15.jpg"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "pageHeight": 9249,
+      "pageWidth": 360,
+      "allImagesLoaded": true,
+      "revealPause": 867.685546875,
+      "continuousVisualRead": "review/read-360-00.jpg through read-360-07.jpg plus review/middle-360-0.jpg through middle-360-7.jpg"
+    }
+  ],
+  "standaloneReader": {
+    "images": 8,
+    "allEmbeddedAndLoaded": true,
+    "pageWidthAt390": 390
+  },
+  "visualReview": {
+    "lettering": "Reviewed every dialogue at both phone widths; corrected six images twice before adoption. Actual raster glyph size varies; no exact minimum font size is claimed.",
+    "continuity": "Koh black hair; game blue-gray tunic; Lize brown hair and green courier clothes; Sena male medicine courier; same cart and parcels.",
+    "scroll": "Separate scent pause before the first sky reveal; 940px pause at 390px width; one blank viewport intentional.",
+    "links": "No unavailable next-episode link."
+  },
+  "completeImage": "complete-390.jpg",
+  "ios": "Catalog and eight adopted image bytes bundled; physical-device validation not performed.",
+  "publication": "Pending PR merge and production upload."
+}

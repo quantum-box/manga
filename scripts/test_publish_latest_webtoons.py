@@ -37,6 +37,24 @@ class PublicationSafetyTests(unittest.TestCase):
             (chapter / "art.png").write_bytes(b"revised drawing")
             self.assertNotEqual(first[0]["id"], adopted_chapters(root)[0]["id"])
 
+    def test_series_scope_excludes_other_titles_and_rejects_unknown_series(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "content").mkdir()
+            titles = []
+            for name in ("pochi", "other"):
+                chapter = root / "examples" / name
+                chapter.mkdir(parents=True)
+                (chapter / "index.html").write_text("<p>Reader</p>")
+                titles.append({"id": name, "title": name, "episodes": [{
+                    "number": 1, "title": "Chapter", "edition": "",
+                    "source": f"examples/{name}/index.html"}]})
+            (root / "content/catalog.json").write_text(json.dumps(titles))
+            self.assertEqual([c["series"] for c in adopted_chapters(root, "pochi")], ["pochi"])
+            self.assertEqual(len(adopted_chapters(root)), 2)
+            with self.assertRaisesRegex(ValueError, "Unknown catalog series"):
+                adopted_chapters(root, "missing")
+
     def test_cleanup_stops_if_adopted_chapter_is_missing_or_another_publish_arrives(self):
         manifest = {"chapters": [{"id": "story-episode-01-rnew", "series": "story"}]}
         for ids in [["story-old"], ["story-old", "story-episode-01-rnew", "story-concurrent"]]:

@@ -126,6 +126,6 @@ for episode in PLAN:
     completed.append(number)
 (BASE/"reader.css").write_text(STYLE, encoding="utf-8")
 cards = '<nav><a href="all.html">全話を続けて読む</a></nav>' + "".join(f'<a class="chapter-card" href="episode-{e["number"]:02}/index.html"><strong>第{e["number"]}話 {e["title"]}</strong><span>{html.escape(e["goal"])}</span></a>' for e in PLAN if e["number"] in completed)
-write_page(BASE/"chapters.html", '<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>転生したら柴犬だった。 話一覧</title><link rel="stylesheet" href="reader.css"><main><header><h1>転生したら柴犬だった。</h1><p>各話約40コマの縦読み漫画</p></header>'+cards+'</main></html>')
+write_page(BASE/"chapters.html", '<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>転生したら柴犬だった。 話一覧</title><link rel="stylesheet" href="reader.css"><main><header><h1>転生したら柴犬だった。</h1><p>言葉が通じなくても、できることはある。</p></header>'+cards+'</main></html>')
 write_page(BASE/"all.html", '<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>転生したら柴犬だった。 全話通読</title><link rel="stylesheet" href="reader.css"></head><body><main><header><nav><a href="chapters.html">話一覧</a></nav></header>'+"\n".join(all_chapters)+'<footer><a href="chapters.html">話一覧へ</a></footer></main></body></html>')
 print(json.dumps({"packaged":completed,"planned":len(PLAN)}, ensure_ascii=False))

@@ -2,11 +2,14 @@
   "number": 4,
   "title": "低い桶は、嘘をつかない",
   "time": "8〜12日目",
+  "change": "イリスと給水設備を作る。流れることと、均一に配れることを分け、保守できる手順を残す。",
   "state": "160L桶は独立した丈夫な架台。配水は最初、一列ずつ容器で量を測る。細い自動点滴を既製品として出さない。",
-  "scenes": [
+  "revision": "2026-10-07-following-remake",
+  "sources": [
     {
-      "id": "01-carry",
-      "art": "art/01-carry-before-build.png",
+      "id": "01-remake-carry",
+      "art": "art/01-remake-carry.png",
+      "description": "Kou carries two manageable wooden water buckets along path, not over crop bed; small closeup blistered palm; Elna at diner kitchen doorway worried about empty prep table. Seedlings small, daytime.",
       "dialogue": [
         [
           "コウ",
@@ -15,26 +18,29 @@
         [
           "エルナ",
           "仕込みにも、来てほしい。"
+        ],
+        [
+          "コウ",
+          "苗を見る時間まで、なくなるな。"
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 80,
-      "prompt": "generation/01-carry.prompt.txt",
-      "description": "Kou carries two manageable wooden water buckets along path, not over crop bed; small closeup blistered palm; Elna at diner kitchen doorway worried about empty prep table. Seedlings small, daytime.",
-      "edits": [
-        {
-          "prompt": "generation/01-carry-before-build.prompt.txt",
-          "record": "generation/01-carry-before-build.json"
-        }
-      ],
-      "width": 887,
-      "height": 1774,
-      "sha256": "b6ffbc0a2e1cd1631b57065281ab1a3759963e8671397ae2eac6b3554ff871b4"
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-carry.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "b525be384b8af041c14b75c8f6ade5cf694b6cf582609c7d13a6144d6ff63c1b"
     },
     {
-      "id": "02-iris",
-      "art": "art/02-iris-proposal.png",
+      "id": "02-remake-iris",
+      "art": "art/02-remake-iris.png",
+      "description": "Iris enters beside empty wooden tank and laid-out ceramic pipe segments; medium Kou faces her, lower her hand sketches tank above beds. Goggles on forehead, navy short hair. No modern PVC or electronics.",
       "dialogue": [
+        [
+          "エルナ",
+          "設備を直してる、イリスさん。"
+        ],
         [
           "イリス",
           "桶を上げれば、流れるよ。"
@@ -42,29 +48,36 @@
         [
           "コウ",
           "同じ量を、配れる？"
+        ],
+        [
+          "イリス",
+          "まず、流して確かめよう。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 75,
-      "prompt": "generation/02-iris.prompt.txt",
-      "description": "Iris enters beside empty wooden tank and laid-out ceramic pipe segments; medium Kou faces her, lower her hand sketches tank above beds. Goggles on forehead, navy short hair. No modern PVC or electronics.",
-      "edits": [
-        {
-          "prompt": "generation/02-iris-proposal.prompt.txt",
-          "record": "generation/02-iris-proposal.json"
-        }
-      ],
-      "width": 887,
-      "height": 1774,
-      "sha256": "b0b4d1704d348dddae0c5dcca29ed5dce6ee6cde4771f1b786d519c00a9c4804"
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-iris.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3332cd096c0cc052e8f9e11e9cf992bfda492a306c4f865b059eed5bb75fb612"
     },
     {
-      "id": "03-stand",
-      "art": "art/03-stand.png",
+      "id": "03-remake-stand",
+      "art": "art/03-remake-stand.png",
+      "description": "Three practical construction panels: Iris checks tank and support sketch, Kou and Balt assemble braced thick timber free-standing platform, Elna sees strong diagonal bracing. Water tank is still empty until stand complete. Do not place 160kg on flimsy roof.",
       "dialogue": [
         [
           "イリス",
           "水だけで、百六十キロ。"
+        ],
+        [
+          "コウ",
+          "この台じゃ、危ないな。"
+        ],
+        [
+          "イリス",
+          "屋根には、載せない。"
         ],
         [
           "コウ",
@@ -73,19 +86,24 @@
       ],
       "layout": "varied",
       "pauseAt390": 70,
-      "prompt": "generation/03-stand.prompt.txt",
-      "description": "Three practical construction panels: Iris checks tank and support sketch, Kou and Balt assemble braced thick timber free-standing platform, Elna sees strong diagonal bracing. Water tank is still empty until stand complete. Do not place 160kg on flimsy roof.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "c3701aa300bcd8cbe346377d6c9db5cb4e6daafe86b5b5d53c77f4b3d7a1bdb2"
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-stand.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a6212556e9bc0738dcc511e3e704108906a867e946f6f652729b6ef808e037a6"
     },
     {
-      "id": "04-unequal",
-      "art": "art/04-unequal-reading-order.png",
+      "id": "04-remake-unequal",
+      "art": "art/04-remake-unequal.png",
+      "description": "Three unequal closeups same elapsed test: different outlets pour into identical measuring cups, near cup contains more than far cup; lower Kou and Iris looking at difference. Tank only modest height, pipe has clear joints and accessible valves.",
       "dialogue": [
         [
           "コウ",
           "手前ばかり、多い。"
+        ],
+        [
+          "エルナ",
+          "同じ時間、開けたのに？"
         ],
         [
           "イリス",
@@ -93,22 +111,17 @@
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 100,
-      "prompt": "generation/04-unequal.prompt.txt",
-      "description": "Three unequal closeups same elapsed test: different outlets pour into identical measuring cups, near cup contains more than far cup; lower Kou and Iris looking at difference. Tank only modest height, pipe has clear joints and accessible valves.",
-      "edits": [
-        {
-          "prompt": "generation/04-unequal-reading-order.prompt.txt",
-          "record": "generation/04-unequal-reading-order.json"
-        }
-      ],
-      "width": 887,
-      "height": 1774,
-      "sha256": "e5371f35694251589bd25c76b42a3c84a3a2f6ac138058f56ea5144ce85bc790"
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-unequal.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "28e542b7b22e5bd247e47596b96b930991bc534f3cea80f829aac7bc48bff507"
     },
     {
-      "id": "05-zones",
-      "art": "art/05-zones.png",
+      "id": "05-remake-zones",
+      "art": "art/05-remake-zones.png",
+      "description": "Iris points to simple wooden stopcock, Kou opens ONE bed section and measures delivered water; other sections closed. Hands and pipe physically coherent. Main outlet larger than tiny modern drip emitter.",
       "dialogue": [
         [
           "コウ",
@@ -116,20 +129,29 @@
         ],
         [
           "イリス",
+          "ほかの栓は、閉じておこう。"
+        ],
+        [
+          "コウ",
+          "流れるだけじゃ、足りないんだな。"
+        ],
+        [
+          "イリス",
           "壊れても、直せる形にしよう。"
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 70,
-      "prompt": "generation/05-zones.prompt.txt",
-      "description": "Iris points to simple wooden stopcock, Kou opens ONE bed section and measures delivered water; other sections closed. Hands and pipe physically coherent. Main outlet larger than tiny modern drip emitter.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "84a3d4d460e789120aab7baef07a28d3a92ef43a5212e74401fe6655ea92101b"
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-zones.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6b36a78da9a080e181d2e02a9a9f17d2cb652cc7f924f767abe94c9217349b9c"
     },
     {
-      "id": "06-clean",
-      "art": "art/06-clean-closed-first.png",
+      "id": "06-remake-clean",
+      "art": "art/06-remake-clean.png",
+      "description": "Two closeups and one face panel: removable mesh filter lifted from accessible housing, Elna rinses removable part in utility basin, Iris shows simple fitting. Irrigation tool cleaning not on food-prep surface.",
       "dialogue": [
         [
           "エルナ",
@@ -138,29 +160,28 @@
         [
           "イリス",
           "うん。ここを、緩めて。"
+        ],
+        [
+          "エルナ",
+          "土の道具は、こっちで洗うね。"
+        ],
+        [
+          "イリス",
+          "戻すところまで、やってみて。"
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 80,
-      "prompt": "generation/06-clean.prompt.txt",
-      "description": "Two closeups and one face panel: removable mesh filter lifted from accessible housing, Elna rinses removable part in utility basin, Iris shows simple fitting. Irrigation tool cleaning not on food-prep surface.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "e365c37710e47fc556dafeb4f7b13ac4d7943ddff9b0e3beb793094afa4b16fb",
-      "edits": [
-        {
-          "prompt": "generation/06-clean-sequence-fixed.prompt.txt",
-          "record": "generation/06-clean-sequence-fixed.json"
-        },
-        {
-          "prompt": "generation/06-clean-closed-first.prompt.txt",
-          "record": "generation/06-clean-closed-first.json"
-        }
-      ]
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-clean.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3780d5f637ccbfdc6b6d99f2ecfb244077d8a591cc6443257aecc63c67a319a4"
     },
     {
-      "id": "07-magic-lift",
-      "art": "art/07-magic-lift-caster.png",
+      "id": "07-remake-magic-lift",
+      "art": "art/07-remake-magic-lift.png",
+      "description": "Tall composition: small water spell lifts EXISTING water from source barrel to raised tank, luminous blue stream visibly connects both water bodies, source level falls; then valve sends stored water gently to one section while Iris lowers hand exhausted but satisfied. No conjured infinite water.",
       "dialogue": [
         [
           "コウ",
@@ -168,26 +189,29 @@
         ],
         [
           "イリス",
+          "水は、下の桶から借りる。"
+        ],
+        [
+          "コウ",
+          "上げた分だけ、減るんだ。"
+        ],
+        [
+          "イリス",
           "流す間は、手が空くね。"
         ]
       ],
       "layout": "continuous",
-      "pauseAt390": 120,
-      "prompt": "generation/07-magic-lift.prompt.txt",
-      "description": "Tall composition: small water spell lifts EXISTING water from source barrel to raised tank, luminous blue stream visibly connects both water bodies, source level falls; then valve sends stored water gently to one section while Iris lowers hand exhausted but satisfied. No conjured infinite water.",
-      "edits": [
-        {
-          "prompt": "generation/07-magic-lift-caster.prompt.txt",
-          "record": "generation/07-magic-lift-caster.json"
-        }
-      ],
-      "width": 887,
-      "height": 1774,
-      "sha256": "7aa1b06406d31aa538798ccf28afc2624214b12658d3a7fd00943f0478e6c998"
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-magic-lift.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6af821625a13ceb0dfe60ccc76589eb55029c31597fedb89564d3304c88a7a1d"
     },
     {
-      "id": "08-time-saved",
-      "art": "art/08-time-saved-sequence-fixed.png",
+      "id": "08-remake-time-saved",
+      "art": "art/08-remake-time-saved.png",
+      "description": "Large warm scene: Kou crouches inspecting SMALL seedlings, water delivery controlled in one background section; lower Elna invites him at blue-awning diner, still modest plot, no broad mature crop. His hands relaxed.",
       "dialogue": [
         [
           "コウ",
@@ -195,22 +219,1009 @@
         ],
         [
           "エルナ",
+          "葉の裏まで、見られた？"
+        ],
+        [
+          "コウ",
+          "うん。今日は、ここまで。"
+        ],
+        [
+          "エルナ",
           "それから、昼ごはんを作ろう。"
         ]
       ],
       "layout": "hero",
-      "pauseAt390": 170,
-      "prompt": "generation/08-time-saved.prompt.txt",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-time-saved.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "ad8209ef63d232a208a48b97ba446eb63cd66a0abb7516f283c737a14ed7c3dc"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-remake-carry-window-01",
+      "art": "art/01-remake-carry.png",
+      "description": "Kou carries two manageable wooden water buckets along path, not over crop bed; small closeup blistered palm; Elna at diner kitchen doorway worried about empty prep table. Seedlings small, daytime.",
+      "dialogue": [
+        [
+          "コウ",
+          "水を運ぶだけで、午前が終わる。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-carry.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "b525be384b8af041c14b75c8f6ade5cf694b6cf582609c7d13a6144d6ff63c1b",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 1129
+      },
+      "sourceId": "01-remake-carry",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-carry-window-02",
+      "art": "art/01-remake-carry.png",
+      "description": "Kou carries two manageable wooden water buckets along path, not over crop bed; small closeup blistered palm; Elna at diner kitchen doorway worried about empty prep table. Seedlings small, daytime.",
+      "dialogue": [
+        [
+          "エルナ",
+          "仕込みにも、来てほしい。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-carry.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "b525be384b8af041c14b75c8f6ade5cf694b6cf582609c7d13a6144d6ff63c1b",
+      "crop": {
+        "x": 0,
+        "y": 1129,
+        "width": 724,
+        "height": 402
+      },
+      "sourceId": "01-remake-carry",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-carry-window-03",
+      "art": "art/01-remake-carry.png",
+      "description": "Kou carries two manageable wooden water buckets along path, not over crop bed; small closeup blistered palm; Elna at diner kitchen doorway worried about empty prep table. Seedlings small, daytime.",
+      "dialogue": [
+        [
+          "コウ",
+          "苗を見る時間まで、なくなるな。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 60,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-carry.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "b525be384b8af041c14b75c8f6ade5cf694b6cf582609c7d13a6144d6ff63c1b",
+      "crop": {
+        "x": 0,
+        "y": 1531,
+        "width": 724,
+        "height": 244
+      },
+      "sourceId": "01-remake-carry",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-carry-window-04",
+      "art": "art/01-remake-carry.png",
+      "description": "Kou carries two manageable wooden water buckets along path, not over crop bed; small closeup blistered palm; Elna at diner kitchen doorway worried about empty prep table. Seedlings small, daytime.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-carry.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "b525be384b8af041c14b75c8f6ade5cf694b6cf582609c7d13a6144d6ff63c1b",
+      "crop": {
+        "x": 0,
+        "y": 1775,
+        "width": 724,
+        "height": 397
+      },
+      "sourceId": "01-remake-carry",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-iris-window-01",
+      "art": "art/02-remake-iris.png",
+      "description": "Iris enters beside empty wooden tank and laid-out ceramic pipe segments; medium Kou faces her, lower her hand sketches tank above beds. Goggles on forehead, navy short hair. No modern PVC or electronics.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 60,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-iris.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3332cd096c0cc052e8f9e11e9cf992bfda492a306c4f865b059eed5bb75fb612",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 488
+      },
+      "sourceId": "02-remake-iris",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-iris-window-02",
+      "art": "art/02-remake-iris.png",
+      "description": "Iris enters beside empty wooden tank and laid-out ceramic pipe segments; medium Kou faces her, lower her hand sketches tank above beds. Goggles on forehead, navy short hair. No modern PVC or electronics.",
+      "dialogue": [
+        [
+          "エルナ",
+          "設備を直してる、イリスさん。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 120,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-iris.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3332cd096c0cc052e8f9e11e9cf992bfda492a306c4f865b059eed5bb75fb612",
+      "crop": {
+        "x": 0,
+        "y": 488,
+        "width": 724,
+        "height": 260
+      },
+      "sourceId": "02-remake-iris",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-iris-window-03",
+      "art": "art/02-remake-iris.png",
+      "description": "Iris enters beside empty wooden tank and laid-out ceramic pipe segments; medium Kou faces her, lower her hand sketches tank above beds. Goggles on forehead, navy short hair. No modern PVC or electronics.",
+      "dialogue": [
+        [
+          "イリス",
+          "桶を上げれば、流れるよ。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 180,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-iris.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3332cd096c0cc052e8f9e11e9cf992bfda492a306c4f865b059eed5bb75fb612",
+      "crop": {
+        "x": 0,
+        "y": 748,
+        "width": 724,
+        "height": 264
+      },
+      "sourceId": "02-remake-iris",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-iris-window-04",
+      "art": "art/02-remake-iris.png",
+      "description": "Iris enters beside empty wooden tank and laid-out ceramic pipe segments; medium Kou faces her, lower her hand sketches tank above beds. Goggles on forehead, navy short hair. No modern PVC or electronics.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 60,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-iris.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3332cd096c0cc052e8f9e11e9cf992bfda492a306c4f865b059eed5bb75fb612",
+      "crop": {
+        "x": 0,
+        "y": 1012,
+        "width": 724,
+        "height": 386
+      },
+      "sourceId": "02-remake-iris",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-iris-window-05",
+      "art": "art/02-remake-iris.png",
+      "description": "Iris enters beside empty wooden tank and laid-out ceramic pipe segments; medium Kou faces her, lower her hand sketches tank above beds. Goggles on forehead, navy short hair. No modern PVC or electronics.",
+      "dialogue": [
+        [
+          "コウ",
+          "同じ量を、配れる？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 120,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-iris.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3332cd096c0cc052e8f9e11e9cf992bfda492a306c4f865b059eed5bb75fb612",
+      "crop": {
+        "x": 0,
+        "y": 1398,
+        "width": 724,
+        "height": 322
+      },
+      "sourceId": "02-remake-iris",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-iris-window-06",
+      "art": "art/02-remake-iris.png",
+      "description": "Iris enters beside empty wooden tank and laid-out ceramic pipe segments; medium Kou faces her, lower her hand sketches tank above beds. Goggles on forehead, navy short hair. No modern PVC or electronics.",
+      "dialogue": [
+        [
+          "イリス",
+          "まず、流して確かめよう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 200,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-iris.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3332cd096c0cc052e8f9e11e9cf992bfda492a306c4f865b059eed5bb75fb612",
+      "crop": {
+        "x": 0,
+        "y": 1720,
+        "width": 724,
+        "height": 452
+      },
+      "sourceId": "02-remake-iris",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-stand-window-01",
+      "art": "art/03-remake-stand.png",
+      "description": "Three practical construction panels: Iris checks tank and support sketch, Kou and Balt assemble braced thick timber free-standing platform, Elna sees strong diagonal bracing. Water tank is still empty until stand complete. Do not place 160kg on flimsy roof.",
+      "dialogue": [
+        [
+          "イリス",
+          "水だけで、百六十キロ。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 45,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-stand.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a6212556e9bc0738dcc511e3e704108906a867e946f6f652729b6ef808e037a6",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 553
+      },
+      "sourceId": "03-remake-stand",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-stand-window-02",
+      "art": "art/03-remake-stand.png",
+      "description": "Three practical construction panels: Iris checks tank and support sketch, Kou and Balt assemble braced thick timber free-standing platform, Elna sees strong diagonal bracing. Water tank is still empty until stand complete. Do not place 160kg on flimsy roof.",
+      "dialogue": [
+        [
+          "コウ",
+          "この台じゃ、危ないな。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 24,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-stand.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a6212556e9bc0738dcc511e3e704108906a867e946f6f652729b6ef808e037a6",
+      "crop": {
+        "x": 0,
+        "y": 553,
+        "width": 724,
+        "height": 479
+      },
+      "sourceId": "03-remake-stand",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-stand-window-03",
+      "art": "art/03-remake-stand.png",
+      "description": "Three practical construction panels: Iris checks tank and support sketch, Kou and Balt assemble braced thick timber free-standing platform, Elna sees strong diagonal bracing. Water tank is still empty until stand complete. Do not place 160kg on flimsy roof.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-stand.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a6212556e9bc0738dcc511e3e704108906a867e946f6f652729b6ef808e037a6",
+      "crop": {
+        "x": 0,
+        "y": 1032,
+        "width": 724,
+        "height": 327
+      },
+      "sourceId": "03-remake-stand",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-stand-window-04",
+      "art": "art/03-remake-stand.png",
+      "description": "Three practical construction panels: Iris checks tank and support sketch, Kou and Balt assemble braced thick timber free-standing platform, Elna sees strong diagonal bracing. Water tank is still empty until stand complete. Do not place 160kg on flimsy roof.",
+      "dialogue": [
+        [
+          "イリス",
+          "屋根には、載せない。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 910,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-stand.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a6212556e9bc0738dcc511e3e704108906a867e946f6f652729b6ef808e037a6",
+      "crop": {
+        "x": 0,
+        "y": 1359,
+        "width": 724,
+        "height": 328
+      },
+      "sourceId": "03-remake-stand",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-stand-window-05",
+      "art": "art/03-remake-stand.png",
+      "description": "Three practical construction panels: Iris checks tank and support sketch, Kou and Balt assemble braced thick timber free-standing platform, Elna sees strong diagonal bracing. Water tank is still empty until stand complete. Do not place 160kg on flimsy roof.",
+      "dialogue": [
+        [
+          "コウ",
+          "台から、作り直そう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-stand.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "a6212556e9bc0738dcc511e3e704108906a867e946f6f652729b6ef808e037a6",
+      "crop": {
+        "x": 0,
+        "y": 1687,
+        "width": 724,
+        "height": 485
+      },
+      "sourceId": "03-remake-stand",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-unequal-window-01",
+      "art": "art/04-remake-unequal.png",
+      "description": "Three unequal closeups same elapsed test: different outlets pour into identical measuring cups, near cup contains more than far cup; lower Kou and Iris looking at difference. Tank only modest height, pipe has clear joints and accessible valves.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 130,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-unequal.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "28e542b7b22e5bd247e47596b96b930991bc534f3cea80f829aac7bc48bff507",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 1127
+      },
+      "sourceId": "04-remake-unequal",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-unequal-window-02",
+      "art": "art/04-remake-unequal.png",
+      "description": "Three unequal closeups same elapsed test: different outlets pour into identical measuring cups, near cup contains more than far cup; lower Kou and Iris looking at difference. Tank only modest height, pipe has clear joints and accessible valves.",
+      "dialogue": [
+        [
+          "コウ",
+          "手前ばかり、多い。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 100,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-unequal.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "28e542b7b22e5bd247e47596b96b930991bc534f3cea80f829aac7bc48bff507",
+      "crop": {
+        "x": 0,
+        "y": 1127,
+        "width": 724,
+        "height": 305
+      },
+      "sourceId": "04-remake-unequal",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-unequal-window-03",
+      "art": "art/04-remake-unequal.png",
+      "description": "Three unequal closeups same elapsed test: different outlets pour into identical measuring cups, near cup contains more than far cup; lower Kou and Iris looking at difference. Tank only modest height, pipe has clear joints and accessible valves.",
+      "dialogue": [
+        [
+          "エルナ",
+          "同じ時間、開けたのに？"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 910,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-unequal.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "28e542b7b22e5bd247e47596b96b930991bc534f3cea80f829aac7bc48bff507",
+      "crop": {
+        "x": 0,
+        "y": 1432,
+        "width": 724,
+        "height": 284
+      },
+      "sourceId": "04-remake-unequal",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-unequal-window-04",
+      "art": "art/04-remake-unequal.png",
+      "description": "Three unequal closeups same elapsed test: different outlets pour into identical measuring cups, near cup contains more than far cup; lower Kou and Iris looking at difference. Tank only modest height, pipe has clear joints and accessible valves.",
+      "dialogue": [
+        [
+          "イリス",
+          "高さと、管の長さが違うから。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-unequal.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "28e542b7b22e5bd247e47596b96b930991bc534f3cea80f829aac7bc48bff507",
+      "crop": {
+        "x": 0,
+        "y": 1716,
+        "width": 724,
+        "height": 456
+      },
+      "sourceId": "04-remake-unequal",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-zones-window-01",
+      "art": "art/05-remake-zones.png",
+      "description": "Iris points to simple wooden stopcock, Kou opens ONE bed section and measures delivered water; other sections closed. Hands and pipe physically coherent. Main outlet larger than tiny modern drip emitter.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 40,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-zones.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6b36a78da9a080e181d2e02a9a9f17d2cb652cc7f924f767abe94c9217349b9c",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 447
+      },
+      "sourceId": "05-remake-zones",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-zones-window-02",
+      "art": "art/05-remake-zones.png",
+      "description": "Iris points to simple wooden stopcock, Kou opens ONE bed section and measures delivered water; other sections closed. Hands and pipe physically coherent. Main outlet larger than tiny modern drip emitter.",
+      "dialogue": [
+        [
+          "コウ",
+          "一列ずつ開けて、量を測る。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 70,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-zones.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6b36a78da9a080e181d2e02a9a9f17d2cb652cc7f924f767abe94c9217349b9c",
+      "crop": {
+        "x": 0,
+        "y": 447,
+        "width": 724,
+        "height": 420
+      },
+      "sourceId": "05-remake-zones",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-zones-window-03",
+      "art": "art/05-remake-zones.png",
+      "description": "Iris points to simple wooden stopcock, Kou opens ONE bed section and measures delivered water; other sections closed. Hands and pipe physically coherent. Main outlet larger than tiny modern drip emitter.",
+      "dialogue": [
+        [
+          "イリス",
+          "ほかの栓は、閉じておこう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 160,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-zones.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6b36a78da9a080e181d2e02a9a9f17d2cb652cc7f924f767abe94c9217349b9c",
+      "crop": {
+        "x": 0,
+        "y": 867,
+        "width": 724,
+        "height": 270
+      },
+      "sourceId": "05-remake-zones",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-zones-window-04",
+      "art": "art/05-remake-zones.png",
+      "description": "Iris points to simple wooden stopcock, Kou opens ONE bed section and measures delivered water; other sections closed. Hands and pipe physically coherent. Main outlet larger than tiny modern drip emitter.",
+      "dialogue": [
+        [
+          "コウ",
+          "流れるだけじゃ、足りないんだな。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 90,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-zones.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6b36a78da9a080e181d2e02a9a9f17d2cb652cc7f924f767abe94c9217349b9c",
+      "crop": {
+        "x": 0,
+        "y": 1137,
+        "width": 724,
+        "height": 244
+      },
+      "sourceId": "05-remake-zones",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-zones-window-05",
+      "art": "art/05-remake-zones.png",
+      "description": "Iris points to simple wooden stopcock, Kou opens ONE bed section and measures delivered water; other sections closed. Hands and pipe physically coherent. Main outlet larger than tiny modern drip emitter.",
+      "dialogue": [
+        [
+          "イリス",
+          "壊れても、直せる形にしよう。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 230,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-zones.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6b36a78da9a080e181d2e02a9a9f17d2cb652cc7f924f767abe94c9217349b9c",
+      "crop": {
+        "x": 0,
+        "y": 1381,
+        "width": 724,
+        "height": 274
+      },
+      "sourceId": "05-remake-zones",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-zones-window-06",
+      "art": "art/05-remake-zones.png",
+      "description": "Iris points to simple wooden stopcock, Kou opens ONE bed section and measures delivered water; other sections closed. Hands and pipe physically coherent. Main outlet larger than tiny modern drip emitter.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-zones.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6b36a78da9a080e181d2e02a9a9f17d2cb652cc7f924f767abe94c9217349b9c",
+      "crop": {
+        "x": 0,
+        "y": 1655,
+        "width": 724,
+        "height": 517
+      },
+      "sourceId": "05-remake-zones",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-clean-window-01",
+      "art": "art/06-remake-clean.png",
+      "description": "Two closeups and one face panel: removable mesh filter lifted from accessible housing, Elna rinses removable part in utility basin, Iris shows simple fitting. Irrigation tool cleaning not on food-prep surface.",
+      "dialogue": [
+        [
+          "エルナ",
+          "この網、私にも外せる？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 160,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-clean.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3780d5f637ccbfdc6b6d99f2ecfb244077d8a591cc6443257aecc63c67a319a4",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 558
+      },
+      "sourceId": "06-remake-clean",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-clean-window-02",
+      "art": "art/06-remake-clean.png",
+      "description": "Two closeups and one face panel: removable mesh filter lifted from accessible housing, Elna rinses removable part in utility basin, Iris shows simple fitting. Irrigation tool cleaning not on food-prep surface.",
+      "dialogue": [
+        [
+          "イリス",
+          "うん。ここを、緩めて。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 240,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-clean.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3780d5f637ccbfdc6b6d99f2ecfb244077d8a591cc6443257aecc63c67a319a4",
+      "crop": {
+        "x": 0,
+        "y": 558,
+        "width": 724,
+        "height": 297
+      },
+      "sourceId": "06-remake-clean",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-clean-window-03",
+      "art": "art/06-remake-clean.png",
+      "description": "Two closeups and one face panel: removable mesh filter lifted from accessible housing, Elna rinses removable part in utility basin, Iris shows simple fitting. Irrigation tool cleaning not on food-prep surface.",
+      "dialogue": [
+        [
+          "エルナ",
+          "土の道具は、こっちで洗うね。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 90,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-clean.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3780d5f637ccbfdc6b6d99f2ecfb244077d8a591cc6443257aecc63c67a319a4",
+      "crop": {
+        "x": 0,
+        "y": 855,
+        "width": 724,
+        "height": 340
+      },
+      "sourceId": "06-remake-clean",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-clean-window-04",
+      "art": "art/06-remake-clean.png",
+      "description": "Two closeups and one face panel: removable mesh filter lifted from accessible housing, Elna rinses removable part in utility basin, Iris shows simple fitting. Irrigation tool cleaning not on food-prep surface.",
+      "dialogue": [
+        [
+          "イリス",
+          "戻すところまで、やってみて。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 190,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-clean.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3780d5f637ccbfdc6b6d99f2ecfb244077d8a591cc6443257aecc63c67a319a4",
+      "crop": {
+        "x": 0,
+        "y": 1195,
+        "width": 724,
+        "height": 308
+      },
+      "sourceId": "06-remake-clean",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-clean-window-05",
+      "art": "art/06-remake-clean.png",
+      "description": "Two closeups and one face panel: removable mesh filter lifted from accessible housing, Elna rinses removable part in utility basin, Iris shows simple fitting. Irrigation tool cleaning not on food-prep surface.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 300,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-clean.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3780d5f637ccbfdc6b6d99f2ecfb244077d8a591cc6443257aecc63c67a319a4",
+      "crop": {
+        "x": 0,
+        "y": 1503,
+        "width": 724,
+        "height": 205
+      },
+      "sourceId": "06-remake-clean",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-clean-window-06",
+      "art": "art/06-remake-clean.png",
+      "description": "Two closeups and one face panel: removable mesh filter lifted from accessible housing, Elna rinses removable part in utility basin, Iris shows simple fitting. Irrigation tool cleaning not on food-prep surface.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-clean.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "3780d5f637ccbfdc6b6d99f2ecfb244077d8a591cc6443257aecc63c67a319a4",
+      "crop": {
+        "x": 0,
+        "y": 1708,
+        "width": 724,
+        "height": 464
+      },
+      "sourceId": "06-remake-clean",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-magic-lift-window-01",
+      "art": "art/07-remake-magic-lift.png",
+      "description": "Tall composition: small water spell lifts EXISTING water from source barrel to raised tank, luminous blue stream visibly connects both water bodies, source level falls; then valve sends stored water gently to one section while Iris lowers hand exhausted but satisfied. No conjured infinite water.",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 65,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-magic-lift.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6af821625a13ceb0dfe60ccc76589eb55029c31597fedb89564d3304c88a7a1d",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 628
+      },
+      "sourceId": "07-remake-magic-lift",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-magic-lift-window-02",
+      "art": "art/07-remake-magic-lift.png",
+      "description": "Tall composition: small water spell lifts EXISTING water from source barrel to raised tank, luminous blue stream visibly connects both water bodies, source level falls; then valve sends stored water gently to one section while Iris lowers hand exhausted but satisfied. No conjured infinite water.",
+      "dialogue": [
+        [
+          "コウ",
+          "魔法は、桶に上げる時だけ。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 30,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-magic-lift.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6af821625a13ceb0dfe60ccc76589eb55029c31597fedb89564d3304c88a7a1d",
+      "crop": {
+        "x": 0,
+        "y": 628,
+        "width": 724,
+        "height": 241
+      },
+      "sourceId": "07-remake-magic-lift",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-magic-lift-window-03",
+      "art": "art/07-remake-magic-lift.png",
+      "description": "Tall composition: small water spell lifts EXISTING water from source barrel to raised tank, luminous blue stream visibly connects both water bodies, source level falls; then valve sends stored water gently to one section while Iris lowers hand exhausted but satisfied. No conjured infinite water.",
+      "dialogue": [
+        [
+          "イリス",
+          "水は、下の桶から借りる。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 130,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-magic-lift.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6af821625a13ceb0dfe60ccc76589eb55029c31597fedb89564d3304c88a7a1d",
+      "crop": {
+        "x": 0,
+        "y": 869,
+        "width": 724,
+        "height": 264
+      },
+      "sourceId": "07-remake-magic-lift",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-magic-lift-window-04",
+      "art": "art/07-remake-magic-lift.png",
+      "description": "Tall composition: small water spell lifts EXISTING water from source barrel to raised tank, luminous blue stream visibly connects both water bodies, source level falls; then valve sends stored water gently to one section while Iris lowers hand exhausted but satisfied. No conjured infinite water.",
+      "dialogue": [
+        [
+          "コウ",
+          "上げた分だけ、減るんだ。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 220,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-magic-lift.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6af821625a13ceb0dfe60ccc76589eb55029c31597fedb89564d3304c88a7a1d",
+      "crop": {
+        "x": 0,
+        "y": 1133,
+        "width": 724,
+        "height": 263
+      },
+      "sourceId": "07-remake-magic-lift",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-magic-lift-window-05",
+      "art": "art/07-remake-magic-lift.png",
+      "description": "Tall composition: small water spell lifts EXISTING water from source barrel to raised tank, luminous blue stream visibly connects both water bodies, source level falls; then valve sends stored water gently to one section while Iris lowers hand exhausted but satisfied. No conjured infinite water.",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 140,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-magic-lift.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6af821625a13ceb0dfe60ccc76589eb55029c31597fedb89564d3304c88a7a1d",
+      "crop": {
+        "x": 0,
+        "y": 1396,
+        "width": 724,
+        "height": 309
+      },
+      "sourceId": "07-remake-magic-lift",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-magic-lift-window-06",
+      "art": "art/07-remake-magic-lift.png",
+      "description": "Tall composition: small water spell lifts EXISTING water from source barrel to raised tank, luminous blue stream visibly connects both water bodies, source level falls; then valve sends stored water gently to one section while Iris lowers hand exhausted but satisfied. No conjured infinite water.",
+      "dialogue": [
+        [
+          "イリス",
+          "流す間は、手が空くね。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-magic-lift.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6af821625a13ceb0dfe60ccc76589eb55029c31597fedb89564d3304c88a7a1d",
+      "crop": {
+        "x": 0,
+        "y": 1705,
+        "width": 724,
+        "height": 467
+      },
+      "sourceId": "07-remake-magic-lift",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-time-saved-window-01",
+      "art": "art/08-remake-time-saved.png",
       "description": "Large warm scene: Kou crouches inspecting SMALL seedlings, water delivery controlled in one background section; lower Elna invites him at blue-awning diner, still modest plot, no broad mature crop. His hands relaxed.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "18d19d8a13c2888b533f111a600e6ca6ebf1c919990c4b575ff5a80e62e4f137",
-      "edits": [
-        {
-          "prompt": "generation/08-time-saved-sequence-fixed.prompt.txt",
-          "record": "generation/08-time-saved-sequence-fixed.json"
-        }
-      ]
+      "dialogue": [
+        [
+          "コウ",
+          "空いた時間で、苗を見る。"
+        ],
+        [
+          "エルナ",
+          "葉の裏まで、見られた？"
+        ],
+        [
+          "コウ",
+          "うん。今日は、ここまで。"
+        ],
+        [
+          "エルナ",
+          "それから、昼ごはんを作ろう。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-time-saved.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "ad8209ef63d232a208a48b97ba446eb63cd66a0abb7516f283c737a14ed7c3dc",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "08-remake-time-saved",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     }
   ]
 }

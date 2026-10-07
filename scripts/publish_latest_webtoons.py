@@ -24,7 +24,7 @@ def load_manifest(folder):
     if sha256((ROOT / "content/catalog.json").read_bytes()) != manifest["catalogSHA256"]:
         raise ValueError("Production catalog changed; regenerate the export")
     from export_latest_webtoons import adopted_chapters
-    expected = adopted_chapters()
+    expected = adopted_chapters(series_id=manifest.get("seriesID"))
     if [(c["id"], c["sourceDigest"]) for c in manifest["chapters"]] != [
             (c["id"], c["sourceDigest"]) for c in expected]:
         raise ValueError("Export does not match every adopted chapter and its source assets")

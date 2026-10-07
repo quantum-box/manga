@@ -2,11 +2,14 @@
   "number": 3,
   "title": "一度に播くな",
   "time": "5〜7日目",
+  "change": "人気への期待を作付けへ変える。十二区画の分割播種を始め、初収穫までは仕入れる。",
   "state": "既存の成株を順に使い、復旧区画を播種。最初の庭葉は7日目に播く。28日栽培は見込みで確定値ではない。",
-  "scenes": [
+  "revision": "2026-10-07-following-remake",
+  "sources": [
     {
-      "id": "01-customer",
-      "art": "art/01-customer.png",
+      "id": "01-remake-customer",
+      "art": "art/01-remake-customer.png",
+      "description": "Diner counter, young adult adventurer with auburn short hair and muted ochre cloak finishes bowl; Elna listens smiling then worried. Small inset empty leafy garnish plate. This recurring customer is not Leon.",
       "dialogue": [
         [
           "客",
@@ -15,20 +18,29 @@
         [
           "エルナ",
           "……明日も？"
+        ],
+        [
+          "エルナ",
+          "ありがとう。量を確かめておくね。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 85,
-      "prompt": "generation/01-customer.prompt.txt",
-      "description": "Diner counter, young adult adventurer with auburn short hair and muted ochre cloak finishes bowl; Elna listens smiling then worried. Small inset empty leafy garnish plate. This recurring customer is not Leon.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "fe10859f8d9ea087c81f08c719230e94642fd3ed3b6057c76e59ddc19efb267b"
+      "pauseAt390": 100,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-customer.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "439192961346e4045e57d5e4b1d77f20df45097817c0d66e97166818249ea14d"
     },
     {
-      "id": "02-empty-basket",
-      "art": "art/02-empty-basket.png",
+      "id": "02-remake-empty-basket",
+      "art": "art/02-remake-empty-basket.png",
+      "description": "Kou and Elna outside serving window, clean empty harvest basket in foreground; two unequal closeups basket and Kou's thoughtful face. Existing harvest has been used, garden cannot immediately replace it.",
       "dialogue": [
+        [
+          "エルナ",
+          "今日の籠、もう空っぽ。"
+        ],
         [
           "コウ",
           "一度に採れたら、次は空く。"
@@ -39,17 +51,22 @@
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 110,
-      "prompt": "generation/02-empty-basket.prompt.txt",
-      "description": "Kou and Elna outside serving window, clean empty harvest basket in foreground; two unequal closeups basket and Kou's thoughtful face. Existing harvest has been used, garden cannot immediately replace it.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "5a875be13a1a8a2f6c696f5d72c34a96dce174a6d9f72d2d0633ced96a1de73d"
+      "pauseAt390": 220,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-empty-basket.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "d085c1180c0927538f9f7ee9406b7b2259bbf8702c87878a3bd0587e9591527d"
     },
     {
-      "id": "03-native-seed",
-      "art": "art/03-native-seed.png",
+      "id": "03-remake-native-seed",
+      "art": "art/03-remake-native-seed.png",
+      "description": "Balt on plot path shows tiny native seed in palm, Kou listens close, lower panel glowing ceiling vein and differently shaded bed corner. Plain seed packet without labels.",
       "dialogue": [
+        [
+          "コウ",
+          "この種は、どんな場所で育つ？"
+        ],
         [
           "バルト",
           "庭葉は、光が弱いと遅れる。"
@@ -61,69 +78,72 @@
       ],
       "layout": "varied",
       "pauseAt390": 70,
-      "prompt": "generation/03-native-seed.prompt.txt",
-      "description": "Balt on plot path shows tiny native seed in palm, Kou listens close, lower panel glowing ceiling vein and differently shaded bed corner. Plain seed packet without labels.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "76166667bdd0ba395cdc0fa1c5695ce5a710ff97bfb001c4a7cdf75a0fcb2296"
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-native-seed.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "ff145122745ce614ef215d19bf837fd2d2fbb0478a9806b76ebb28eab9c7c2b2"
     },
     {
-      "id": "04-germination",
-      "art": "art/04-germination-sequence-fixed.png",
+      "id": "04-remake-germination",
+      "art": "art/04-remake-germination.png",
+      "description": "Three brief closeups: handful of small seeds; Kou places an equal counted sample on damp cloth in shallow dish; notebook makes tally marks with room for future result. No sprouts already in newly set test, no predicted yield on screen.",
       "dialogue": [
+        [
+          "エルナ",
+          "これだけ、別に播くの？"
+        ],
         [
           "コウ",
           "全部の種が、芽を出すとは限らない。"
+        ],
+        [
+          "コウ",
+          "同じ数を置いて、出た芽を数える。"
         ]
       ],
       "layout": "detail",
-      "pauseAt390": 70,
-      "prompt": "generation/04-germination.prompt.txt",
-      "description": "Three brief closeups: handful of small seeds; Kou places an equal counted sample on damp cloth in shallow dish; notebook makes tally marks with room for future result. No sprouts already in newly set test, no predicted yield on screen.",
-      "edits": [
-        {
-          "prompt": "generation/04-germination-seed-fixed.prompt.txt",
-          "record": "generation/04-germination-seed-fixed.json"
-        },
-        {
-          "prompt": "generation/04-germination-sequence-fixed.prompt.txt",
-          "record": "generation/04-germination-sequence-fixed.json"
-        }
-      ],
-      "width": 887,
-      "height": 1774,
-      "sha256": "94364772703c5e8370834e09d3ece5e33882ca1919527d3e26e8f7c92a538133"
+      "pauseAt390": 260,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-germination.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c117393f1262b8fc24ab5d930c08ebca7ba33c57637860edb562f6caf0fa0973"
     },
     {
-      "id": "05-twelve-plots",
-      "art": "art/05-twelve-plots-map-fixed.png",
+      "id": "05-remake-twelve-plots",
+      "art": "art/05-remake-twelve-plots.png",
+      "description": "Elevated plot view with FOUR long parallel beds, each divided into THREE equal subsections by small twine markers, total twelve sections; medium Kou and Elna looking at plain sketched plan. Bed widths consistent, no implausible giant farm. Leave words off diagram.",
       "dialogue": [
         [
           "コウ",
           "四つの畝を、十二に分ける。"
         ],
         [
+          "エルナ",
+          "全部、今日播くの？"
+        ],
+        [
           "コウ",
           "七日ずつ、播く日をずらそう。"
+        ],
+        [
+          "エルナ",
+          "採る日も、ずらしたいんだね。"
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 100,
-      "prompt": "generation/05-twelve-plots.prompt.txt",
-      "description": "Elevated plot view with FOUR long parallel beds, each divided into THREE equal subsections by small twine markers, total twelve sections; medium Kou and Elna looking at plain sketched plan. Bed widths consistent, no implausible giant farm. Leave words off diagram.",
-      "edits": [
-        {
-          "prompt": "generation/05-twelve-plots-map-fixed.prompt.txt",
-          "record": "generation/05-twelve-plots-map-fixed.json"
-        }
-      ],
-      "width": 887,
-      "height": 1774,
-      "sha256": "2e4163876d5e4e5a574a18ddde362b6ce5ba5c46be08905fc94ff742c1c4c337"
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-twelve-plots.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "77b5256a09b3a50d6d4921a1819be7fac8b6d78a622b7e4fad5ae533e1be8601"
     },
     {
-      "id": "06-sow",
-      "art": "art/06-sow-sequence-fixed.png",
+      "id": "06-remake-sow",
+      "art": "art/06-remake-sow.png",
+      "description": "Three unequal hand-action panels: Elna makes shallow sowing line in prepared bed; Kou sows tiny seeds in one selected section; soil gently covers seeds. Only first three of twelve sections are sown this week; other sections stay bare or contain existing plants. No germination in same instant.",
       "dialogue": [
         [
           "エルナ",
@@ -131,30 +151,29 @@
         ],
         [
           "コウ",
-          "次は、七日後だ。"
+          "深く埋めすぎないで。"
+        ],
+        [
+          "エルナ",
+          "……このくらい？"
+        ],
+        [
+          "コウ",
+          "うん。次は、七日後だ。"
         ]
       ],
       "layout": "varied",
-      "pauseAt390": 80,
-      "prompt": "generation/06-sow.prompt.txt",
-      "description": "Three unequal hand-action panels: Elna makes shallow sowing line in prepared bed; Kou sows tiny seeds in one selected section; soil gently covers seeds. Only first three of twelve sections are sown this week; other sections stay bare or contain existing plants. No germination in same instant.",
-      "edits": [
-        {
-          "prompt": "generation/06-sow-seed-fixed.prompt.txt",
-          "record": "generation/06-sow-seed-fixed.json"
-        },
-        {
-          "prompt": "generation/06-sow-sequence-fixed.prompt.txt",
-          "record": "generation/06-sow-sequence-fixed.json"
-        }
-      ],
-      "width": 887,
-      "height": 1774,
-      "sha256": "85265ac38c6793f3f5f440bf9387e5a41cb55837a43ca011608b157165282d24"
+      "pauseAt390": 340,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-sow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4781f930662633a731fa54cbd4fb4dc021f42cabb5fc7fcde5a1345756786b71"
     },
     {
-      "id": "07-buy",
-      "art": "art/07-buy.png",
+      "id": "07-remake-buy",
+      "art": "art/07-remake-buy.png",
+      "description": "Diner back door, local farmer delivers basket of existing leafy vegetables, Elna and Kou accept and tally purchase. Distinct plain brown-clothed adult supplier, not main cast duplicated. Bought grain sack also visible.",
       "dialogue": [
         [
           "コウ",
@@ -163,19 +182,24 @@
         [
           "エルナ",
           "その代金も、計算に入れよう。"
+        ],
+        [
+          "コウ",
+          "畑が遅れても、店を止めないために。"
         ]
       ],
       "layout": "conversation",
-      "pauseAt390": 70,
-      "prompt": "generation/07-buy.prompt.txt",
-      "description": "Diner back door, local farmer delivers basket of existing leafy vegetables, Elna and Kou accept and tally purchase. Distinct plain brown-clothed adult supplier, not main cast duplicated. Bought grain sack also visible.",
-      "width": 887,
-      "height": 1774,
-      "sha256": "12dff3d1b02e4f40de0a57f43d489cfaab893da93b8607d20107b344dbfc2fbc"
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-buy.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "886449ee6e3e5242295e59fb8d4a15058f9845d22f7750ed8fdf43acecf37442"
     },
     {
-      "id": "08-calendar",
-      "art": "art/08-calendar-time-fixed.png",
+      "id": "08-remake-calendar",
+      "art": "art/08-remake-calendar.png",
+      "description": "Large quiet evening scene under blue awning, Kou and Elna beside notebook with four simple week columns and small drawings, no readable diagram text; tiny new sown beds visible through window at ground, no mature crop there. Their serious hopeful faces dominate.",
       "dialogue": [
         [
           "コウ",
@@ -184,21 +208,992 @@
         [
           "エルナ",
           "両方、見ていくんだね。"
+        ],
+        [
+          "コウ",
+          "四週間は、まだ見込みだけど。"
+        ],
+        [
+          "エルナ",
+          "じゃあ、毎日確かめよう。"
         ]
       ],
       "layout": "hero",
-      "pauseAt390": 180,
-      "prompt": "generation/08-calendar.prompt.txt",
-      "description": "Large quiet evening scene under blue awning, Kou and Elna beside notebook with four simple week columns and small drawings, no readable diagram text; tiny new sown beds visible through window at ground, no mature crop there. Their serious hopeful faces dominate.",
-      "edits": [
-        {
-          "prompt": "generation/08-calendar-time-fixed.prompt.txt",
-          "record": "generation/08-calendar-time-fixed.json"
-        }
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-calendar.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "38e45f2e6fc0a2f05a9ce70221e0610b234bb432ed6dd77232f7b6b4f676c831"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-remake-customer-window-01",
+      "art": "art/01-remake-customer.png",
+      "description": "Diner counter, young adult adventurer with auburn short hair and muted ochre cloak finishes bowl; Elna listens smiling then worried. Small inset empty leafy garnish plate. This recurring customer is not Leon.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 60,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-customer.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "439192961346e4045e57d5e4b1d77f20df45097817c0d66e97166818249ea14d",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 481
+      },
+      "sourceId": "01-remake-customer",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-customer-window-02",
+      "art": "art/01-remake-customer.png",
+      "description": "Diner counter, young adult adventurer with auburn short hair and muted ochre cloak finishes bowl; Elna listens smiling then worried. Small inset empty leafy garnish plate. This recurring customer is not Leon.",
+      "dialogue": [
+        [
+          "客",
+          "明日も、この葉を頼む。"
+        ]
       ],
-      "width": 887,
-      "height": 1774,
-      "sha256": "de88f91a3bba29c24b20914c7f50209df388bca458915200e072b2d26404d694"
+      "layout": "conversation",
+      "pauseAt390": 120,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-customer.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "439192961346e4045e57d5e4b1d77f20df45097817c0d66e97166818249ea14d",
+      "crop": {
+        "x": 0,
+        "y": 481,
+        "width": 724,
+        "height": 554
+      },
+      "sourceId": "01-remake-customer",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-customer-window-03",
+      "art": "art/01-remake-customer.png",
+      "description": "Diner counter, young adult adventurer with auburn short hair and muted ochre cloak finishes bowl; Elna listens smiling then worried. Small inset empty leafy garnish plate. This recurring customer is not Leon.",
+      "dialogue": [
+        [
+          "エルナ",
+          "……明日も？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 180,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-customer.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "439192961346e4045e57d5e4b1d77f20df45097817c0d66e97166818249ea14d",
+      "crop": {
+        "x": 0,
+        "y": 1035,
+        "width": 724,
+        "height": 407
+      },
+      "sourceId": "01-remake-customer",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-remake-customer-window-04",
+      "art": "art/01-remake-customer.png",
+      "description": "Diner counter, young adult adventurer with auburn short hair and muted ochre cloak finishes bowl; Elna listens smiling then worried. Small inset empty leafy garnish plate. This recurring customer is not Leon.",
+      "dialogue": [
+        [
+          "エルナ",
+          "ありがとう。量を確かめておくね。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 200,
+      "scrollPurpose": "導入の場所と前話の状態を引き継ぐ",
+      "prompt": "generation/01-remake-customer.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "439192961346e4045e57d5e4b1d77f20df45097817c0d66e97166818249ea14d",
+      "crop": {
+        "x": 0,
+        "y": 1442,
+        "width": 724,
+        "height": 730
+      },
+      "sourceId": "01-remake-customer",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-empty-basket-window-01",
+      "art": "art/02-remake-empty-basket.png",
+      "description": "Kou and Elna outside serving window, clean empty harvest basket in foreground; two unequal closeups basket and Kou's thoughtful face. Existing harvest has been used, garden cannot immediately replace it.",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日の籠、もう空っぽ。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 60,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-empty-basket.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "d085c1180c0927538f9f7ee9406b7b2259bbf8702c87878a3bd0587e9591527d",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 672
+      },
+      "sourceId": "02-remake-empty-basket",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-empty-basket-window-02",
+      "art": "art/02-remake-empty-basket.png",
+      "description": "Kou and Elna outside serving window, clean empty harvest basket in foreground; two unequal closeups basket and Kou's thoughtful face. Existing harvest has been used, garden cannot immediately replace it.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 120,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-empty-basket.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "d085c1180c0927538f9f7ee9406b7b2259bbf8702c87878a3bd0587e9591527d",
+      "crop": {
+        "x": 0,
+        "y": 672,
+        "width": 724,
+        "height": 325
+      },
+      "sourceId": "02-remake-empty-basket",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-empty-basket-window-03",
+      "art": "art/02-remake-empty-basket.png",
+      "description": "Kou and Elna outside serving window, clean empty harvest basket in foreground; two unequal closeups basket and Kou's thoughtful face. Existing harvest has been used, garden cannot immediately replace it.",
+      "dialogue": [
+        [
+          "コウ",
+          "一度に採れたら、次は空く。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 180,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-empty-basket.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "d085c1180c0927538f9f7ee9406b7b2259bbf8702c87878a3bd0587e9591527d",
+      "crop": {
+        "x": 0,
+        "y": 997,
+        "width": 724,
+        "height": 353
+      },
+      "sourceId": "02-remake-empty-basket",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-empty-basket-window-04",
+      "art": "art/02-remake-empty-basket.png",
+      "description": "Kou and Elna outside serving window, clean empty harvest basket in foreground; two unequal closeups basket and Kou's thoughtful face. Existing harvest has been used, garden cannot immediately replace it.",
+      "dialogue": [
+        [
+          "エルナ",
+          "畑にも、仕込みがいるんだ。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 60,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-empty-basket.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "d085c1180c0927538f9f7ee9406b7b2259bbf8702c87878a3bd0587e9591527d",
+      "crop": {
+        "x": 0,
+        "y": 1350,
+        "width": 724,
+        "height": 423
+      },
+      "sourceId": "02-remake-empty-basket",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-remake-empty-basket-window-05",
+      "art": "art/02-remake-empty-basket.png",
+      "description": "Kou and Elna outside serving window, clean empty harvest basket in foreground; two unequal closeups basket and Kou's thoughtful face. Existing harvest has been used, garden cannot immediately replace it.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 200,
+      "scrollPurpose": "相手の知識を聞いて受け止める",
+      "prompt": "generation/02-remake-empty-basket.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "d085c1180c0927538f9f7ee9406b7b2259bbf8702c87878a3bd0587e9591527d",
+      "crop": {
+        "x": 0,
+        "y": 1773,
+        "width": 724,
+        "height": 399
+      },
+      "sourceId": "02-remake-empty-basket",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-native-seed-window-01",
+      "art": "art/03-remake-native-seed.png",
+      "description": "Balt on plot path shows tiny native seed in palm, Kou listens close, lower panel glowing ceiling vein and differently shaded bed corner. Plain seed packet without labels.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 45,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-native-seed.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "ff145122745ce614ef215d19bf837fd2d2fbb0478a9806b76ebb28eab9c7c2b2",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 606
+      },
+      "sourceId": "03-remake-native-seed",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-native-seed-window-02",
+      "art": "art/03-remake-native-seed.png",
+      "description": "Balt on plot path shows tiny native seed in palm, Kou listens close, lower panel glowing ceiling vein and differently shaded bed corner. Plain seed packet without labels.",
+      "dialogue": [
+        [
+          "コウ",
+          "この種は、どんな場所で育つ？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 24,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-native-seed.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "ff145122745ce614ef215d19bf837fd2d2fbb0478a9806b76ebb28eab9c7c2b2",
+      "crop": {
+        "x": 0,
+        "y": 606,
+        "width": 724,
+        "height": 357
+      },
+      "sourceId": "03-remake-native-seed",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-native-seed-window-03",
+      "art": "art/03-remake-native-seed.png",
+      "description": "Balt on plot path shows tiny native seed in palm, Kou listens close, lower panel glowing ceiling vein and differently shaded bed corner. Plain seed packet without labels.",
+      "dialogue": [
+        [
+          "バルト",
+          "庭葉は、光が弱いと遅れる。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-native-seed.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "ff145122745ce614ef215d19bf837fd2d2fbb0478a9806b76ebb28eab9c7c2b2",
+      "crop": {
+        "x": 0,
+        "y": 963,
+        "width": 724,
+        "height": 338
+      },
+      "sourceId": "03-remake-native-seed",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-remake-native-seed-window-04",
+      "art": "art/03-remake-native-seed.png",
+      "description": "Balt on plot path shows tiny native seed in palm, Kou listens close, lower panel glowing ceiling vein and differently shaded bed corner. Plain seed packet without labels.",
+      "dialogue": [
+        [
+          "コウ",
+          "ここで育つ速さを、測ろう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "手順と判断を短い動作でつなぐ",
+      "prompt": "generation/03-remake-native-seed.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "ff145122745ce614ef215d19bf837fd2d2fbb0478a9806b76ebb28eab9c7c2b2",
+      "crop": {
+        "x": 0,
+        "y": 1301,
+        "width": 724,
+        "height": 871
+      },
+      "sourceId": "03-remake-native-seed",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-germination-window-01",
+      "art": "art/04-remake-germination.png",
+      "description": "Three brief closeups: handful of small seeds; Kou places an equal counted sample on damp cloth in shallow dish; notebook makes tally marks with room for future result. No sprouts already in newly set test, no predicted yield on screen.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 60,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-germination.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c117393f1262b8fc24ab5d930c08ebca7ba33c57637860edb562f6caf0fa0973",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 544
+      },
+      "sourceId": "04-remake-germination",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-germination-window-02",
+      "art": "art/04-remake-germination.png",
+      "description": "Three brief closeups: handful of small seeds; Kou places an equal counted sample on damp cloth in shallow dish; notebook makes tally marks with room for future result. No sprouts already in newly set test, no predicted yield on screen.",
+      "dialogue": [
+        [
+          "エルナ",
+          "これだけ、別に播くの？"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 120,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-germination.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c117393f1262b8fc24ab5d930c08ebca7ba33c57637860edb562f6caf0fa0973",
+      "crop": {
+        "x": 0,
+        "y": 544,
+        "width": 724,
+        "height": 288
+      },
+      "sourceId": "04-remake-germination",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-germination-window-03",
+      "art": "art/04-remake-germination.png",
+      "description": "Three brief closeups: handful of small seeds; Kou places an equal counted sample on damp cloth in shallow dish; notebook makes tally marks with room for future result. No sprouts already in newly set test, no predicted yield on screen.",
+      "dialogue": [
+        [
+          "コウ",
+          "全部の種が、芽を出すとは限らない。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 180,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-germination.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c117393f1262b8fc24ab5d930c08ebca7ba33c57637860edb562f6caf0fa0973",
+      "crop": {
+        "x": 0,
+        "y": 832,
+        "width": 724,
+        "height": 275
+      },
+      "sourceId": "04-remake-germination",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-germination-window-04",
+      "art": "art/04-remake-germination.png",
+      "description": "Three brief closeups: handful of small seeds; Kou places an equal counted sample on damp cloth in shallow dish; notebook makes tally marks with room for future result. No sprouts already in newly set test, no predicted yield on screen.",
+      "dialogue": [
+        [
+          "コウ",
+          "同じ数を置いて、出た芽を数える。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 60,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-germination.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c117393f1262b8fc24ab5d930c08ebca7ba33c57637860edb562f6caf0fa0973",
+      "crop": {
+        "x": 0,
+        "y": 1107,
+        "width": 724,
+        "height": 341
+      },
+      "sourceId": "04-remake-germination",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-germination-window-05",
+      "art": "art/04-remake-germination.png",
+      "description": "Three brief closeups: handful of small seeds; Kou places an equal counted sample on damp cloth in shallow dish; notebook makes tally marks with room for future result. No sprouts already in newly set test, no predicted yield on screen.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 120,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-germination.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c117393f1262b8fc24ab5d930c08ebca7ba33c57637860edb562f6caf0fa0973",
+      "crop": {
+        "x": 0,
+        "y": 1448,
+        "width": 724,
+        "height": 264
+      },
+      "sourceId": "04-remake-germination",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-remake-germination-window-06",
+      "art": "art/04-remake-germination.png",
+      "description": "Three brief closeups: handful of small seeds; Kou places an equal counted sample on damp cloth in shallow dish; notebook makes tally marks with room for future result. No sprouts already in newly set test, no predicted yield on screen.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 200,
+      "scrollPurpose": "気づきの前後で速度を落とす",
+      "prompt": "generation/04-remake-germination.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "c117393f1262b8fc24ab5d930c08ebca7ba33c57637860edb562f6caf0fa0973",
+      "crop": {
+        "x": 0,
+        "y": 1712,
+        "width": 724,
+        "height": 460
+      },
+      "sourceId": "04-remake-germination",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-twelve-plots-window-01",
+      "art": "art/05-remake-twelve-plots.png",
+      "description": "Elevated plot view with FOUR long parallel beds, each divided into THREE equal subsections by small twine markers, total twelve sections; medium Kou and Elna looking at plain sketched plan. Bed widths consistent, no implausible giant farm. Leave words off diagram.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 60,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-twelve-plots.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "77b5256a09b3a50d6d4921a1819be7fac8b6d78a622b7e4fad5ae533e1be8601",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 727,
+        "height": 391
+      },
+      "sourceId": "05-remake-twelve-plots",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-twelve-plots-window-02",
+      "art": "art/05-remake-twelve-plots.png",
+      "description": "Elevated plot view with FOUR long parallel beds, each divided into THREE equal subsections by small twine markers, total twelve sections; medium Kou and Elna looking at plain sketched plan. Bed widths consistent, no implausible giant farm. Leave words off diagram.",
+      "dialogue": [
+        [
+          "コウ",
+          "四つの畝を、十二に分ける。"
+        ],
+        [
+          "エルナ",
+          "全部、今日播くの？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 910,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-twelve-plots.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "77b5256a09b3a50d6d4921a1819be7fac8b6d78a622b7e4fad5ae533e1be8601",
+      "crop": {
+        "x": 0,
+        "y": 391,
+        "width": 727,
+        "height": 435
+      },
+      "sourceId": "05-remake-twelve-plots",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-twelve-plots-window-03",
+      "art": "art/05-remake-twelve-plots.png",
+      "description": "Elevated plot view with FOUR long parallel beds, each divided into THREE equal subsections by small twine markers, total twelve sections; medium Kou and Elna looking at plain sketched plan. Bed widths consistent, no implausible giant farm. Leave words off diagram.",
+      "dialogue": [
+        [
+          "コウ",
+          "七日ずつ、播く日をずらそう。"
+        ],
+        [
+          "エルナ",
+          "採る日も、ずらしたいんだね。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 60,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-twelve-plots.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "77b5256a09b3a50d6d4921a1819be7fac8b6d78a622b7e4fad5ae533e1be8601",
+      "crop": {
+        "x": 0,
+        "y": 826,
+        "width": 727,
+        "height": 275
+      },
+      "sourceId": "05-remake-twelve-plots",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-twelve-plots-window-04",
+      "art": "art/05-remake-twelve-plots.png",
+      "description": "Elevated plot view with FOUR long parallel beds, each divided into THREE equal subsections by small twine markers, total twelve sections; medium Kou and Elna looking at plain sketched plan. Bed widths consistent, no implausible giant farm. Leave words off diagram.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-twelve-plots.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "77b5256a09b3a50d6d4921a1819be7fac8b6d78a622b7e4fad5ae533e1be8601",
+      "crop": {
+        "x": 0,
+        "y": 1101,
+        "width": 727,
+        "height": 265
+      },
+      "sourceId": "05-remake-twelve-plots",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-twelve-plots-window-05",
+      "art": "art/05-remake-twelve-plots.png",
+      "description": "Elevated plot view with FOUR long parallel beds, each divided into THREE equal subsections by small twine markers, total twelve sections; medium Kou and Elna looking at plain sketched plan. Bed widths consistent, no implausible giant farm. Leave words off diagram.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 160,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-twelve-plots.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "77b5256a09b3a50d6d4921a1819be7fac8b6d78a622b7e4fad5ae533e1be8601",
+      "crop": {
+        "x": 0,
+        "y": 1366,
+        "width": 727,
+        "height": 402
+      },
+      "sourceId": "05-remake-twelve-plots",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-remake-twelve-plots-window-06",
+      "art": "art/05-remake-twelve-plots.png",
+      "description": "Elevated plot view with FOUR long parallel beds, each divided into THREE equal subsections by small twine markers, total twelve sections; medium Kou and Elna looking at plain sketched plan. Bed widths consistent, no implausible giant farm. Leave words off diagram.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "選んだ行動と結果を確かめる",
+      "prompt": "generation/05-remake-twelve-plots.prompt.txt",
+      "width": 727,
+      "height": 2164,
+      "sha256": "77b5256a09b3a50d6d4921a1819be7fac8b6d78a622b7e4fad5ae533e1be8601",
+      "crop": {
+        "x": 0,
+        "y": 1768,
+        "width": 727,
+        "height": 396
+      },
+      "sourceId": "05-remake-twelve-plots",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-sow-window-01",
+      "art": "art/06-remake-sow.png",
+      "description": "Three unequal hand-action panels: Elna makes shallow sowing line in prepared bed; Kou sows tiny seeds in one selected section; soil gently covers seeds. Only first three of twelve sections are sown this week; other sections stay bare or contain existing plants. No germination in same instant.",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日は、この三つ。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 60,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-sow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4781f930662633a731fa54cbd4fb4dc021f42cabb5fc7fcde5a1345756786b71",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 581
+      },
+      "sourceId": "06-remake-sow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-sow-window-02",
+      "art": "art/06-remake-sow.png",
+      "description": "Three unequal hand-action panels: Elna makes shallow sowing line in prepared bed; Kou sows tiny seeds in one selected section; soil gently covers seeds. Only first three of twelve sections are sown this week; other sections stay bare or contain existing plants. No germination in same instant.",
+      "dialogue": [
+        [
+          "コウ",
+          "深く埋めすぎないで。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-sow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4781f930662633a731fa54cbd4fb4dc021f42cabb5fc7fcde5a1345756786b71",
+      "crop": {
+        "x": 0,
+        "y": 581,
+        "width": 724,
+        "height": 482
+      },
+      "sourceId": "06-remake-sow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-sow-window-03",
+      "art": "art/06-remake-sow.png",
+      "description": "Three unequal hand-action panels: Elna makes shallow sowing line in prepared bed; Kou sows tiny seeds in one selected section; soil gently covers seeds. Only first three of twelve sections are sown this week; other sections stay bare or contain existing plants. No germination in same instant.",
+      "dialogue": [
+        [
+          "エルナ",
+          "……このくらい？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-sow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4781f930662633a731fa54cbd4fb4dc021f42cabb5fc7fcde5a1345756786b71",
+      "crop": {
+        "x": 0,
+        "y": 1063,
+        "width": 724,
+        "height": 296
+      },
+      "sourceId": "06-remake-sow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-sow-window-04",
+      "art": "art/06-remake-sow.png",
+      "description": "Three unequal hand-action panels: Elna makes shallow sowing line in prepared bed; Kou sows tiny seeds in one selected section; soil gently covers seeds. Only first three of twelve sections are sown this week; other sections stay bare or contain existing plants. No germination in same instant.",
+      "dialogue": [
+        [
+          "コウ",
+          "うん。次は、七日後だ。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 60,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-sow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4781f930662633a731fa54cbd4fb4dc021f42cabb5fc7fcde5a1345756786b71",
+      "crop": {
+        "x": 0,
+        "y": 1359,
+        "width": 724,
+        "height": 302
+      },
+      "sourceId": "06-remake-sow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-remake-sow-window-05",
+      "art": "art/06-remake-sow.png",
+      "description": "Three unequal hand-action panels: Elna makes shallow sowing line in prepared bed; Kou sows tiny seeds in one selected section; soil gently covers seeds. Only first three of twelve sections are sown this week; other sections stay bare or contain existing plants. No germination in same instant.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "説明の後に反応を待つ",
+      "prompt": "generation/06-remake-sow.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "4781f930662633a731fa54cbd4fb4dc021f42cabb5fc7fcde5a1345756786b71",
+      "crop": {
+        "x": 0,
+        "y": 1661,
+        "width": 724,
+        "height": 511
+      },
+      "sourceId": "06-remake-sow",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-buy-window-01",
+      "art": "art/07-remake-buy.png",
+      "description": "Diner back door, local farmer delivers basket of existing leafy vegetables, Elna and Kou accept and tally purchase. Distinct plain brown-clothed adult supplier, not main cast duplicated. Bought grain sack also visible.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 65,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-buy.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "886449ee6e3e5242295e59fb8d4a15058f9845d22f7750ed8fdf43acecf37442",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 492
+      },
+      "sourceId": "07-remake-buy",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-buy-window-02",
+      "art": "art/07-remake-buy.png",
+      "description": "Diner back door, local farmer delivers basket of existing leafy vegetables, Elna and Kou accept and tally purchase. Distinct plain brown-clothed adult supplier, not main cast duplicated. Bought grain sack also visible.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 30,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-buy.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "886449ee6e3e5242295e59fb8d4a15058f9845d22f7750ed8fdf43acecf37442",
+      "crop": {
+        "x": 0,
+        "y": 492,
+        "width": 724,
+        "height": 259
+      },
+      "sourceId": "07-remake-buy",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-buy-window-03",
+      "art": "art/07-remake-buy.png",
+      "description": "Diner back door, local farmer delivers basket of existing leafy vegetables, Elna and Kou accept and tally purchase. Distinct plain brown-clothed adult supplier, not main cast duplicated. Bought grain sack also visible.",
+      "dialogue": [],
+      "layout": "conversation",
+      "pauseAt390": 130,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-buy.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "886449ee6e3e5242295e59fb8d4a15058f9845d22f7750ed8fdf43acecf37442",
+      "crop": {
+        "x": 0,
+        "y": 751,
+        "width": 724,
+        "height": 345
+      },
+      "sourceId": "07-remake-buy",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-buy-window-04",
+      "art": "art/07-remake-buy.png",
+      "description": "Diner back door, local farmer delivers basket of existing leafy vegetables, Elna and Kou accept and tally purchase. Distinct plain brown-clothed adult supplier, not main cast duplicated. Bought grain sack also visible.",
+      "dialogue": [
+        [
+          "コウ",
+          "最初の収穫までは、仕入れる。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 220,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-buy.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "886449ee6e3e5242295e59fb8d4a15058f9845d22f7750ed8fdf43acecf37442",
+      "crop": {
+        "x": 0,
+        "y": 1096,
+        "width": 724,
+        "height": 331
+      },
+      "sourceId": "07-remake-buy",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-buy-window-05",
+      "art": "art/07-remake-buy.png",
+      "description": "Diner back door, local farmer delivers basket of existing leafy vegetables, Elna and Kou accept and tally purchase. Distinct plain brown-clothed adult supplier, not main cast duplicated. Bought grain sack also visible.",
+      "dialogue": [
+        [
+          "エルナ",
+          "その代金も、計算に入れよう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 140,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-buy.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "886449ee6e3e5242295e59fb8d4a15058f9845d22f7750ed8fdf43acecf37442",
+      "crop": {
+        "x": 0,
+        "y": 1427,
+        "width": 724,
+        "height": 332
+      },
+      "sourceId": "07-remake-buy",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-remake-buy-window-06",
+      "art": "art/07-remake-buy.png",
+      "description": "Diner back door, local farmer delivers basket of existing leafy vegetables, Elna and Kou accept and tally purchase. Distinct plain brown-clothed adult supplier, not main cast duplicated. Bought grain sack also visible.",
+      "dialogue": [
+        [
+          "コウ",
+          "畑が遅れても、店を止めないために。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 110,
+      "scrollPurpose": "次の仕事へ状態を渡す",
+      "prompt": "generation/07-remake-buy.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "886449ee6e3e5242295e59fb8d4a15058f9845d22f7750ed8fdf43acecf37442",
+      "crop": {
+        "x": 0,
+        "y": 1759,
+        "width": 724,
+        "height": 413
+      },
+      "sourceId": "07-remake-buy",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-calendar-window-01",
+      "art": "art/08-remake-calendar.png",
+      "description": "Large quiet evening scene under blue awning, Kou and Elna beside notebook with four simple week columns and small drawings, no readable diagram text; tiny new sown beds visible through window at ground, no mature crop there. Their serious hopeful faces dominate.",
+      "dialogue": [
+        [
+          "コウ",
+          "明日の客と、四週間後の畑。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 260,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-calendar.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "38e45f2e6fc0a2f05a9ce70221e0610b234bb432ed6dd77232f7b6b4f676c831",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 906
+      },
+      "sourceId": "08-remake-calendar",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-remake-calendar-window-02",
+      "art": "art/08-remake-calendar.png",
+      "description": "Large quiet evening scene under blue awning, Kou and Elna beside notebook with four simple week columns and small drawings, no readable diagram text; tiny new sown beds visible through window at ground, no mature crop there. Their serious hopeful faces dominate.",
+      "dialogue": [
+        [
+          "エルナ",
+          "両方、見ていくんだね。"
+        ],
+        [
+          "コウ",
+          "四週間は、まだ見込みだけど。"
+        ],
+        [
+          "エルナ",
+          "じゃあ、毎日確かめよう。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 420,
+      "scrollPurpose": "今回の成果を受け止めて次話へ進む",
+      "prompt": "generation/08-remake-calendar.prompt.txt",
+      "width": 724,
+      "height": 2172,
+      "sha256": "38e45f2e6fc0a2f05a9ce70221e0610b234bb432ed6dd77232f7b6b4f676c831",
+      "crop": {
+        "x": 0,
+        "y": 906,
+        "width": 724,
+        "height": 1266
+      },
+      "sourceId": "08-remake-calendar",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
     }
   ]
 }
