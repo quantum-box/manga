@@ -95,3 +95,19 @@ iOSはURLSessionで一覧、AsyncImageで表紙、WKWebViewで本文を取得す
 ブラウザーの既読は最初の画像の読み込み成功時に localStorage へ保存します。話一覧に既読・未読と未読へ戻す操作を表示し、未読の最初の話へ進めます。同じ話の別版は既読を共有します。端末・ブラウザー間の同期は行いません。
 
 本文の配信には390px幅の確認用画像を使わず、元の `reader.html` を390 CSS px・3倍密度（1170px幅）で書き出します。`scripts/render_retina_reader.cjs`（Playwright）で分割PNGを生成し、`scripts/optimize_retina_images.py`（Pillow）でPNGまたは高画質WebPへ圧縮します。解像度を保持してハッシュ付きファイル名でアップロードし、全画像の存在と内容を確認してから本文JSONを差し替えます。
+
+### 星環のレガリアを一話ずつ公開する
+
+一話の採用原稿・表示確認をPRでマージしてから、その話だけを準備・アップロードする。
+次話の作画は公開版の確認後に進める。公開IDは採用HTML・画像のハッシュを含む。
+
+```sh
+python3 examples/star-ring-regalia/production/prepare_publish.py --episode 1
+# 上のコマンドが表示した episode.json と、その親ディレクトリ名を使う。
+python3 scripts/publish_episode.py https://manga-server.txcloud.app <公開ID> <episode.json>
+```
+
+`MANGA_ADMIN_TOKEN`を設定して実行する。生成した`publish-output/`はGit管理対象外。
+採用PNGを変更せず配信し、余白は`spacer`の`size: "phone-940"`のように390px幅での高さを指定する。
+公開リーダーは画面幅に比例して間を保つ。従来の`long`などの指定も使用できる。
+JSONの一致、全画像のSHA-256、カタログ、390pxと360pxでの表示を読み戻して確認する。
