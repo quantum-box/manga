@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-04090f56-2c60-4eab-8bd0-c5ad1a14076c.png",
+  "adopted": "art/01-carry-before-build.png",
+  "original_sha256": "b6ffbc0a2e1cd1631b57065281ab1a3759963e8671397ae2eac6b3554ff871b4",
+  "adopted_sha256": "b6ffbc0a2e1cd1631b57065281ab1a3759963e8671397ae2eac6b3554ff871b4",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/01-carry-before-build.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Remove the raised barrel and its elevated wooden support from the upper-left background. Replace that area with ordinary paving and a small source-water tub standing at ground level. No raised water tank or finished irrigation system exists yet in this scene. Preserve all other panels, faces, anatomy, tools, backgrounds, lighting, exact Japanese dialogue, font size, balloons and speaker tails unchanged except where explicitly requested. No added words, actors or future events.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/01-carry.png",
+      "sha256": "d1c145c210e30c0288ba5b5c7bf62af378b77e0ece7e6853ca21e6d5c16577ce"
+    }
+  ]
+}

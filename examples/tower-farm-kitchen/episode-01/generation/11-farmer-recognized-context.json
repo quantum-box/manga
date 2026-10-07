@@ -1,0 +1,24 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-c1727809-6a28-4262-91e5-d45e124da7f7.png",
+  "adopted": "art/11-farmer-recognized-context.png",
+  "original_sha256": "b3f834d902cc696735f68e750c56f0ab95af4451a3ec81a3cbbbc696b1d417c1",
+  "adopted_sha256": "b3f834d902cc696735f68e750c56f0ab95af4451a3ec81a3cbbbc696b1d417c1",
+  "width": 1024,
+  "height": 1536,
+  "prompt_file": "generation/11-farmer-recognized-context.prompt.txt",
+  "prompt": "Use case: illustration-story. IMAGE 1 supplies existing farmer recognition dialogue and identities; IMAGE 2 supplies CURRENT SCENE location, pose and cup. Redraw the TWO unequal recognition panels from image 1 so they follow image 2 seamlessly: Kou is STILL SEATED OUTSIDE on RIGHT at blue-awning diner serving window, Elna remains standing INSIDE on LEFT. Top medium Elna notices his dirt-marked work jacket, apron and tool satchel at belt and asks the SAME line; Kou is uncertain, not smug. Lower larger closeup seated Kou answers the SAME line. Preserve exact adult faces, clothes, warm palette and Japanese dialogue from image1: Elna その服、農家なの？ ; Kou 七年、野菜を作ってました。 Two separate DOWNWARD utterances, large upright vertical Japanese columns right-to-left, speech tails to correct mouths. Keep only ONE small brown ceramic WATER CUP on counter, hands near cup; NO trowel held up, NO dirty farm tool on kitchen counter, NO full plates or job offer yet. Elna and Kou are same room/window exchange, not beside the garden. Do not copy text or panels from image2 or add any extra words. The next scene first introduces the offer of work.",
+  "text_review": "passed_manual_390_and_360",
+  "continuity_review": "passed_manual_390_and_360",
+  "reference_files": [
+    {
+      "path": "generation/inputs/11-farmer-recognized.png",
+      "sha256": "39a45329aab8974a4218a55e69af16a1404f34fa8943a24fa483c9e5905a6ad6"
+    },
+    {
+      "path": "art/39-cannot-pay.png",
+      "sha256": "8545fd3cdcb1d2ece94edde912355b6eb9882de9c3bb5b7afa6bf2f1128218b4"
+    }
+  ],
+  "selected_in_revision": "episode-01-causality"
+}

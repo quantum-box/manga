@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-2d0c93df-efb1-42e4-ab6b-0804050088fc.png",
+  "adopted": "art/03-delay-cargo-fixed.png",
+  "original_sha256": "5cc4543a63d41838de6d6328e459e0227548085c18f1ecaaf7c0d5fa4752ba81",
+  "adopted_sha256": "5cc4543a63d41838de6d6328e459e0227548085c18f1ecaaf7c0d5fa4752ba81",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/03-delay-cargo-fixed.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Image 1 is the target. Any second reference is ONLY for the brown glazed pottery food-bowl design, not its counts, cast, layout or events. Only standardize the cart cargo in every panel. It carries TWO dedicated clean wooden food-transport outer crates with padded clean cotton liners, containing the brown fitted-lid glazed pottery bowls from reference 2 (six per crate, twelve total), and ONE closed metal cooking/serving pot. No loose bread, uncovered cooked food, open stew in wooden boxes, or garden buckets on the cart. In the upper establishing panel both outer crates are closed and covered with clean cloth. The bottom left cargo-detail panel can show one outer crate lid open, revealing SIX individually CLOSED pottery bowls packed 3 by 2; the other crate and single pot stay closed. Preserve the cart structure, porter, Kou/Elna, all exact dialogue, faces and other panels. Preserve every element not named for repair. Upright integrated raster Japanese vertical lettering, columns right-to-left. No new speech or story events, no font shrinking, no digital overlays. Same finished manga style and target aspect ratio.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/03-delay.png",
+      "sha256": "3081baf683464ba11769fc84904f3ae559d6c857e70c68a95b0ecc23daaf2388"
+    },
+    {
+      "path": "generation/inputs/01-twelve-bowls-fixed.png",
+      "sha256": "dd48fdb02875a5a0dc0979802f1fd1979338598c22405be73502faff787c4955"
+    }
+  ]
+}

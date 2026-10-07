@@ -1,0 +1,24 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-a1c24eea-74b8-479a-9975-5682a08be815.png",
+  "adopted": "art/34-where-am-i-clerk.png",
+  "original_sha256": "503b6340e29aa020bf5e18e37e5c4362954772801f1e85c2fdf68e12f654d871",
+  "adopted_sha256": "503b6340e29aa020bf5e18e37e5c4362954772801f1e85c2fdf68e12f654d871",
+  "width": 885,
+  "height": 1777,
+  "prompt_file": "generation/34-where-am-i-clerk.prompt.txt",
+  "prompt": "Use case: identity-preserve. Asset: existing finished Japanese Webtoon artwork. IMAGE 1 IS THE EDIT TARGET. IMAGE 2 DEFINES THE SAME CLERK'S IDENTITY and robe. Change ONLY the depicted administrative clerk in image 1 to the SAME sixty-year-old gray-haired man with small gray beard, gentle lined face, pale beige robe and DARK BLUE embroidered stole visible in image 2. Correct age and facial identity; preserve his exact pose, hands, frame position and existing action in every shot. Keep Kou, building, panel arrangement, framing, food absence and ALL Japanese glyphs and speech balloon tails unchanged. Do NOT copy any panels or text from image 2. Original target text, preserve precisely: [[\"係員\",\"ここは、塔の三階だ。\"],[\"コウ\",\"……塔の、中？\"]] . Do not add text, props, people or another plot beat. Match confident anime linework and warm tower palette. This is one clerk throughout a continuous conversation.",
+  "text_review": "passed_manual_390_and_360",
+  "continuity_review": "passed_manual_390_and_360",
+  "reference_files": [
+    {
+      "path": "generation/inputs/34-where-am-i.png",
+      "sha256": "a0a8221ef2ec6b8ee35e1af48befa7747678c6938d25f8bdd0b81b1ef559991c"
+    },
+    {
+      "path": "art/05-ask-way-context.png",
+      "sha256": "f35edbbd577a4c75d42e12050c1e58cb3cc4a47aa1eda9130f69b0798596ac45"
+    }
+  ],
+  "selected_in_revision": "episode-01-causality"
+}

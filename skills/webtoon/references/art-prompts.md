@@ -12,6 +12,19 @@
 
 既存作画の感情を直す場合は、編集対象を先に表示し、変更する眉・瞳・口・姿勢などと、保つ人物・衣服・小道具・背景・構図を分ける。足りない因果は、前後の状態をつなぐ接写や短い動作を追加する。表情を直す指示で武器や拘束の状態まで変えない。
 
+## 食べ物のある場面
+
+[食欲が伝わる料理と食事](food-art.md)を読み、料理名、実際の食材と調理段階、食欲を伝える形・質感、器と量を生成指示へ追加する。`delicious / highly detailed food` だけに任せず、今回の料理で何を見せると美味しそうかを指定する。同じ料理の調理・配膳・ひと口には共通条件を渡す。料理の接写以外でも、画面に食べ物があれば適用する。
+
+```text
+Food: [dish, established ingredients, cooking stage, vessel and portion]. Make it appetizing in the established comic style, readable at phone width.
+Appetite cues: [dish-appropriate browning, soft cut surfaces, restrained gloss, sauce thickness, steam or freshness]. Keep the ingredient silhouettes clear.
+Texture: Preserve the natural identity of [rice / beans / other ingredients], grouped with soft tonal variation. Avoid dense repetitive bead-like bumps, hole patterns, pinpoint highlights on every grain and excessive foam. Do not replace the actual dish with a generic smooth soup.
+Continuity: [same recipe, vessel, ingredient size and current portion]. This asset shows only [cooking / serving / one bite / reaction]; do not add later reactions or extra panels.
+```
+
+使わない食材や表現は例から削り、温度や調理法に合う要素を選ぶ。編集では料理を変える範囲と、維持する人物・手・器・文字・背景・コマ割りを分ける。実際の生成指示と確認結果を残し、過去の指示は書き換えない。
+
 ## 共通部分の例
 
 ```text

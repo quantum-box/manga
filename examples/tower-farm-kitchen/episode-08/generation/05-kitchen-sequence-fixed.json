@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-fd7884e5-890e-472d-ae25-b553ccf92e02.png",
+  "adopted": "art/05-kitchen-sequence-fixed.png",
+  "original_sha256": "762e7e9124681ba1a666611b713ac127d251cdaf12b577e843b996a35c2cc19c",
+  "adopted_sha256": "762e7e9124681ba1a666611b713ac127d251cdaf12b577e843b996a35c2cc19c",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/05-kitchen-sequence-fixed.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Only swap the two small preparation-detail panels in the middle: RIGHT = basket of washed whole wet green leaves (current left); LEFT = Elna chopping these leaves (current right). Move whole panels without horizontal mirroring. Keep the top washing panel, bottom cutting panel, all exact Japanese text, lettering size, faces, clothes and background unchanged. Upright Japanese vertical dialogue remains integrated in the raster. No extra text, no new actors, no changed story events, no new equipment. Preserve every element not explicitly named, same finished manga style and target aspect ratio.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/05-kitchen.png",
+      "sha256": "3556bfba5ea8d5efa28c0405067e82b629d590b8b59d7301ccd8de864672804e"
+    }
+  ]
+}

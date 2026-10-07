@@ -1,0 +1,71 @@
+{
+  "feedback": "食事・食べ物は美味しそうに。強調されたつぶつぶは気持ち悪く見える。",
+  "previous_commit": "690fa339ba896ba9cd6d9778a6a6b0cc8b71807e",
+  "scope": "Episode 1 cooking, serving, first spoonful; future series food prompts. Episodes 2–10 unchanged.",
+  "tool": "built-in image_gen; precise food-content edits; original output bytes preserved",
+  "selected_scenes": [
+    {
+      "id": "30-kitchen-fire",
+      "art": "../episode-01/art/30-kitchen-fire-food.png",
+      "record": "../episode-01/generation/30-kitchen-fire-food.json"
+    },
+    {
+      "id": "08-first-meal",
+      "art": "../episode-01/art/08-first-meal-food.png",
+      "record": "../episode-01/generation/08-first-meal-food.json"
+    },
+    {
+      "id": "32-first-bite-and-tomorrow",
+      "art": "../episode-01/art/32-first-bite-and-tomorrow-food.png",
+      "record": "../episode-01/generation/32-first-bite-and-tomorrow-food.json"
+    }
+  ],
+  "generations": 4,
+  "selected_artworks": 3,
+  "food_decisions": [
+    "Grain/bead fields fully covered by smooth broth; barley remains a submerged ingredient.",
+    "Tender beef, carrot and soft green leaves read as large simple shapes.",
+    "Dish, bowl, clean hands, Japanese letters, original panels and wilted plants preserved across cooking/serving/tasting."
+  ],
+  "references_read": [
+    "webtoon/references/art-prompts.md",
+    "webtoon/references/scroll-pacing.md",
+    "webtoon/references/whitespace-example.md"
+  ],
+  "reference_images_seen": [
+    "zero-break/whitespace/review/window-390-02.png",
+    "zero-break/whitespace/review/window-390-03.png",
+    "zero-break/whitespace/review/window-390-04.png"
+  ],
+  "application": "Preserve the existing meal reveal and first-bite reaction spacing; change only food surfaces and match the meal across the three original images. Do not collapse waiting, serving and reaction into one new frame.",
+  "manual_review": "passed_manual_390_and_360",
+  "physical_device_review": "not performed",
+  "review_images": [
+    "../episode-01/review/viewport-390-kitchen-fire.png",
+    "../episode-01/review/viewport-390-first-meal.png",
+    "../episode-01/review/viewport-390-meal.png",
+    "../episode-01/review/viewport-360-kitchen-fire.png",
+    "../episode-01/review/viewport-360-first-meal.png",
+    "../episode-01/review/viewport-360-meal.png"
+  ],
+  "browser_artwork_hash_check": "All 40 restored native PNG hashes match manifest originals.",
+  "scroll": [
+    {
+      "width": 390,
+      "height": 844,
+      "scrollHeight": 40241,
+      "screens": 47.68
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "scrollHeight": 37186,
+      "screens": 46.48
+    }
+  ],
+  "exportFix": {
+    "cause": "Chrome fullPage screenshots repeat row0 after32768px at both phone widths. Verified in prior exports.",
+    "solution": "Export actual viewport screenshots and losslessly assemble their pixels; source artwork untouched.",
+    "verification": "All48/47 tiles match export pixels; header repetition absent;390px export tail visually shows the current food and final dialogue."
+  }
+}

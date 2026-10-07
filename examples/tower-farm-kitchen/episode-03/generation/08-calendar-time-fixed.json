@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-0f6750e3-cb3f-4be1-b025-641488fa4c4a.png",
+  "adopted": "art/08-calendar-time-fixed.png",
+  "original_sha256": "de88f91a3bba29c24b20914c7f50209df388bca458915200e072b2d26404d694",
+  "adopted_sha256": "de88f91a3bba29c24b20914c7f50209df388bca458915200e072b2d26404d694",
+  "width": 887,
+  "height": 1774,
+  "prompt_file": "generation/08-calendar-time-fixed.prompt.txt",
+  "prompt": "Use case: precise-object-edit. Edit ONLY the small REAL garden panel in the middle-left: remove every newly sprouted tiny plant from its freshly sown bare soil and replace them with fine bare brown soil and faint sowing rows. This is the same day as first sowing; seeds have NOT sprouted yet. Keep existing plants outside that newly sown plot unchanged. Keep all growth-stage DRAWINGS on the notebook pages unchanged; those are future plans, not current crops. Preserve all panels, character identity, faces, hands, clothing, poses, tools, architecture, food, lighting and ALL existing Japanese dialogue, punctuation, size, balloons and speaker tails completely unchanged except the explicitly named edit. Do not add other text, characters or events.\n",
+  "text_review": "passed: full Japanese dialogue manually read at both phone widths",
+  "continuity_review": "passed: selected scene compared with opening arc and adjacent scenes",
+  "reference_files": [
+    {
+      "path": "generation/inputs/08-calendar.png",
+      "sha256": "aead8574e6263b83502f09f24bcfa81ff321932a0c8461efd54727cddf74ba21"
+    }
+  ]
+}

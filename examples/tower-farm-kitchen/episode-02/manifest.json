@@ -1,0 +1,192 @@
+{
+  "number": 2,
+  "title": "救える畝、残せない畝",
+  "time": "2〜5日目",
+  "state": "排水は動く。新しい根は数日後に一部で確認。株数と収量をまだ保証しない。バルトが現地の知識を渡す。",
+  "scenes": [
+    {
+      "id": "01-morning",
+      "art": "art/01-morning.png",
+      "dialogue": [
+        [
+          "コウ",
+          "まだ、戻らないな。"
+        ],
+        [
+          "エルナ",
+          "待つのも、仕事？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 90,
+      "prompt": "generation/01-morning.prompt.txt",
+      "description": "Same garden at early light, two unequal panels: Kou examines yesterday's marked wilted plant still rooted, Elna behind him with empty watering can set down; closeup his cautious face and wet ground beginning to dry. No recovered jungle overnight.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "bcf7b25d24b3d1cca812c646e8a7b4a094ab75119a1b23a53c88ed364c6c4386"
+    },
+    {
+      "id": "02-balt",
+      "art": "art/02-balt.png",
+      "dialogue": [
+        [
+          "バルト",
+          "昨日と同じ株を見ろ。"
+        ],
+        [
+          "バルト",
+          "抜いた株は、元には戻らん。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 70,
+      "prompt": "generation/02-balt.prompt.txt",
+      "description": "Wide Balt arrives on walking path in brown hat; separate closeup Balt observing marked plant; lower Kou listens. Balt is experienced and practical, not foolish. Dug plant from yesterday lies separately and is not replanted alive.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "45d725def423e7341bab53a31c84e0c93cae9d83c65c4e0b53ccc89fa78a5f6c"
+    },
+    {
+      "id": "03-compare",
+      "art": "art/03-compare.png",
+      "dialogue": [
+        [
+          "コウ",
+          "この列だけ、別に記録する。"
+        ],
+        [
+          "エルナ",
+          "全部を、変えないの？"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 70,
+      "prompt": "generation/03-compare.prompt.txt",
+      "description": "Overhead plot with one marked comparison strip and other rows; hand closeup tying plain twine marker without cutting roots; Elna looking from changed strip to remaining area. Plants vary realistically, no flashy transformation.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "8ac1d989210ba964124a727eab3d6efeac66ef7f707d36a9532f701b935fe840"
+    },
+    {
+      "id": "04-record",
+      "art": "art/04-record.png",
+      "dialogue": [
+        [
+          "コウ",
+          "知らない数字は、空欄でいい。"
+        ],
+        [
+          "バルト",
+          "分かったことだけ、残せ。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 100,
+      "prompt": "generation/04-record.prompt.txt",
+      "description": "Two unequal panels: Kou writes simple marks and blank spaces in notebook at plot edge; closeup Elna reading over shoulder. A subtle empty translucent recording frame may hover but NO added visible text or numerical claims. Notebook has sketch marks only.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "d98d0fc029248e148cf9a4bc94ed33c5a5ae6f7b5ed812f5a0942fa514f84e54"
+    },
+    {
+      "id": "05-new-roots",
+      "art": "art/05-new-roots-timed.png",
+      "dialogue": [
+        [
+          "コウ",
+          "新しい根だ。"
+        ],
+        [
+          "バルト",
+          "まだ弱い。急ぐな。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 140,
+      "prompt": "generation/05-new-roots.prompt.txt",
+      "description": "Time has advanced to day five. Three panels: same twine marker and modestly less wilted plant, gentle root inspection showing a few NEW white fine roots amid remaining damaged roots, Balt's restrained pleased expression. Recovery is partial, no instant glow or giant growth.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "9e56e1e72cab9b93f693484edd8a5af3b5471c1e011869357ab477c9908a4df1",
+      "edits": [
+        {
+          "prompt": "generation/05-new-roots-timed.prompt.txt",
+          "record": "generation/05-new-roots-timed.json"
+        }
+      ],
+      "narration": [
+        "五日目"
+      ]
+    },
+    {
+      "id": "06-loss",
+      "art": "art/06-loss-cleared.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "こっちは、戻らないのね。"
+        ],
+        [
+          "コウ",
+          "次の苗を、育てよう。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 180,
+      "prompt": "generation/06-loss.prompt.txt",
+      "description": "Large quiet panel of bare damaged strip where dead plants have been removed, Elna kneeling with sad face; lower Kou quietly placing tray to plan new sowing. Do not fill dead area with new mature plants.",
+      "repairPrompt": "generation/06-loss-cleared.prompt.txt",
+      "width": 887,
+      "height": 1774,
+      "sha256": "280cab7be5438e6250717edf7d1441e7b3a44d1eeeca406ccccac8a665f87a0b"
+    },
+    {
+      "id": "07-existing-harvest",
+      "art": "art/07-existing-harvest.png",
+      "dialogue": [
+        [
+          "バルト",
+          "この葉は、若いうちが柔らかい。"
+        ],
+        [
+          "エルナ",
+          "切りやすい大きさが、欲しい。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 75,
+      "prompt": "generation/07-existing-harvest.prompt.txt",
+      "description": "Three unequal shots: Balt shows a surviving mature garden-leaf plant; Kou cuts usable leaves gently into clean shallow basket; Elna checks leaf size for kitchen. Source is surviving established plants, not seeds sown in this story.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "925998f29f5965398d28929ed7b876b691ead1530fbe67baf7873050450e8aa8"
+    },
+    {
+      "id": "08-dish",
+      "art": "art/08-dish-sequence-fixed.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "食べる人まで、畑の続きだね。"
+        ],
+        [
+          "コウ",
+          "来週の分も、作りたい。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 160,
+      "prompt": "generation/08-dish.prompt.txt",
+      "description": "Warm kitchen: basket passed from Kou's hands to Elna, narrow chopping closeup, large finished steaming dish at counter and their faces. Keep raw garden work off cooking surface. No magical buff display.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "4e5ff64a751e7ae43ba9bf87eb3971dac5ebe331a7c4db6fc9f2290ac8eb5480",
+      "edits": [
+        {
+          "prompt": "generation/08-dish-sequence-fixed.prompt.txt",
+          "record": "generation/08-dish-sequence-fixed.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "number": 9,
+  "title": "十二人に届ける一便",
+  "time": "36日目",
+  "state": "十二食を三階の集結所へ。七階へ無検証の長距離配送をしない。料理は当日調理。供給は自家収穫と仕入れ。",
+  "scenes": [
+    {
+      "id": "01-twelve",
+      "art": "art/01-twelve-count-fixed.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "三階の集結所まで、十二食。"
+        ],
+        [
+          "コウ",
+          "温かいうちに、渡そう。"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 90,
+      "prompt": "generation/01-twelve.prompt.txt",
+      "description": "Elna prepares twelve simple clean covered food containers on kitchen table, Kou confirms at ledger, background bought grain and meat with harvested leaves. Three panels cooking, lids, plan. No overflowing hundred-meal feast.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "2754298ead78b03516e248ab7a9b146b1736198a7a025f3a4d73aad7a205e41d",
+      "edits": [
+        {
+          "prompt": "generation/01-twelve-bowls-fixed.prompt.txt",
+          "record": "generation/01-twelve-bowls-fixed.json"
+        },
+        {
+          "prompt": "generation/01-twelve-count-fixed.prompt.txt",
+          "record": "generation/01-twelve-count-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "02-tools",
+      "art": "art/02-tools-separated-fixed.png",
+      "dialogue": [
+        [
+          "エルナ",
+          "この鍋は、料理だけ。"
+        ],
+        [
+          "コウ",
+          "畑の桶とは、混ぜない。"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 70,
+      "prompt": "generation/02-tools.prompt.txt",
+      "description": "Two designated clean cooking pots, Elna points to kitchen-only utensils, small inset dirty irrigation buckets remain OUTSIDE on separate utility shelf; Kou wipes hands before touching packed food. Two unequal panels, no unsafe mixing.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "34cb7e23d9bd0ec09945ff6fe1fe83a70feab91d34f9a3e43049ac7510942b6a",
+      "edits": [
+        {
+          "prompt": "generation/02-tools-separated-fixed.prompt.txt",
+          "record": "generation/02-tools-separated-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "03-delay",
+      "art": "art/03-delay-cargo-fixed.png",
+      "dialogue": [
+        [
+          "係員",
+          "今日は、通行便が遅れる。"
+        ],
+        [
+          "コウ",
+          "受け渡し場所を、変えられる？"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 110,
+      "prompt": "generation/03-delay.prompt.txt",
+      "description": "Stone gate lane inside third floor, Kou with small covered handcart of food, local gate worker in beige points to waiting cargo queue, Elna worried. No fighting or sword attack, delay is transport coordination.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "5cc4543a63d41838de6d6328e459e0227548085c18f1ecaaf7c0d5fa4752ba81",
+      "edits": [
+        {
+          "prompt": "generation/03-delay-cargo-fixed.prompt.txt",
+          "record": "generation/03-delay-cargo-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "04-contact",
+      "art": "art/04-contact.png",
+      "dialogue": [
+        [
+          "レオン",
+          "入口側で受け取る。連絡は俺がする。"
+        ],
+        [
+          "エルナ",
+          "その場所なら、間に合う。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 80,
+      "prompt": "generation/04-contact.prompt.txt",
+      "description": "Leon at nearby third-floor assembly entrance instructs assistant while Kou and Elna listen, short hand gesture showing safe nearby pickup location, clear geographical continuity and no gate bypass.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "abc1df8415c895bb8ad0b167d56f83a6786435cf8fe19662e3c0facc33e05dd7"
+    },
+    {
+      "id": "05-cart",
+      "art": "art/05-cart-cargo-fixed.png",
+      "dialogue": [
+        [
+          "コウ",
+          "鍋を持つ人も、攻略隊なんだな。"
+        ],
+        [
+          "エルナ",
+          "食べるところまでが、私たちの仕事。"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 100,
+      "prompt": "generation/05-cart.prompt.txt",
+      "description": "One tall continuous scene of small handcart rolling down paved lane from diner toward visible nearby third-floor assembly arch, Elna walking beside Kou; closeup careful hands securing covered containers, no exposed food or magical flying cart.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "62744d8ac62db4dd75693f04edc665363f4136ab8a409e1db7890b82bb8f9573",
+      "edits": [
+        {
+          "prompt": "generation/05-cart-cargo-fixed.prompt.txt",
+          "record": "generation/05-cart-cargo-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "07-proof",
+      "art": "art/07-proof-bowls-fixed.png",
+      "dialogue": [
+        [
+          "レオン",
+          "十二食、欠けずに届いた。"
+        ],
+        [
+          "レオン",
+          "次は、続けられるかを見よう。"
+        ]
+      ],
+      "layout": "conversation",
+      "pauseAt390": 100,
+      "prompt": "generation/07-proof.prompt.txt",
+      "description": "Leon checks all twelve recipients and signs delivery note with abstract marks, closeup professional respectful face, Kou listening with Elna nearby. No vast gold payment or instant huge contract.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "1892dadbbdbfbb8a46970815b5e727719faaf7d42d04232a51a40dbadf3a8d84",
+      "edits": [
+        {
+          "prompt": "generation/07-proof-bowls-fixed.prompt.txt",
+          "record": "generation/07-proof-bowls-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "06-team-eats",
+      "art": "art/06-team-eats-cast-fixed.png",
+      "dialogue": [
+        [
+          "隊員",
+          "今日は、ちゃんと飯を食えた。"
+        ],
+        [
+          "隊員",
+          "帰ったら、店にも寄る。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 140,
+      "prompt": "generation/06-team-eats.prompt.txt",
+      "description": "Three unequal panels in assembly courtyard: modest adult adventurer squad receives covered meals, one tired brown-haired swordswoman tastes hot greens and grain, relaxed smiles around low table. Weapons sheathed away from food. No wounded person magically healed.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "4925cba5d1d25adfc4f9326048c1c4166fe2d4722c43d1e354402681089d4e82",
+      "edits": [
+        {
+          "prompt": "generation/06-team-eats-cast-fixed.prompt.txt",
+          "record": "generation/06-team-eats-cast-fixed.json"
+        }
+      ]
+    },
+    {
+      "id": "08-one-delivery",
+      "art": "art/08-one-delivery-cargo-fixed.png",
+      "dialogue": [
+        [
+          "コウ",
+          "一便はできた。毎日は、これからだ。"
+        ],
+        [
+          "エルナ",
+          "今日は、この十二人分でいい。"
+        ]
+      ],
+      "layout": "hero",
+      "pauseAt390": 190,
+      "prompt": "generation/08-one-delivery.prompt.txt",
+      "description": "Large quiet evening return to diner, empty cleanable containers and handcart, Kou and Elna sit on porch tired but satisfied. Plot not magically mature everywhere. Small lantern warmth under blue awning.",
+      "width": 887,
+      "height": 1774,
+      "sha256": "f51535380bd077fc2a2db2d74f1976b706107f0000c518c6de2e27ed9ef29681",
+      "edits": [
+        {
+          "prompt": "generation/08-one-delivery-cargo-fixed.prompt.txt",
+          "record": "generation/08-one-delivery-cargo-fixed.json"
+        }
+      ]
+    }
+  ]
+}

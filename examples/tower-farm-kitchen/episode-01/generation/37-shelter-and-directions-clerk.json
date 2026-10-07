@@ -1,0 +1,24 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-a820a684-1de4-4971-b7db-8f4c2109bc45.png",
+  "adopted": "art/37-shelter-and-directions-clerk.png",
+  "original_sha256": "55ad0cbe028c06556e0a01821b6949ae0bde176b8e824d47a3466b4f114d2c7e",
+  "adopted_sha256": "55ad0cbe028c06556e0a01821b6949ae0bde176b8e824d47a3466b4f114d2c7e",
+  "width": 724,
+  "height": 2172,
+  "prompt_file": "generation/37-shelter-and-directions-clerk.prompt.txt",
+  "prompt": "Use case: identity-preserve. IMAGE 1 edit target, IMAGE 2 same administrative clerk identity. Change only the old clerk in ALL FOUR panels to the EXACT sixty-year-old man from image 2: short gray hair, small trimmed gray beard, gentle lined face, beige robe and DARK BLUE embroidered stole. Remove his cap completely. Keep his gestures, Kou, room bench, scene progression, four-panel layout and ALL original Japanese dialogue unchanged. Remove the stray tiny English-like background lettering, leave abstract marks only. Exact Japanese unchanged: いつ、開くんですか？ / まだ、分からない。 / 今夜は、ここの休憩室でいい。 / ……ありがとうございます。 Preserve vertical glyphs, same reading order. No other changes; no additional dialogue, sign text or props. Match finished warm anime drawing.",
+  "text_review": "passed_manual_390_and_360",
+  "continuity_review": "passed_manual_390_and_360",
+  "reference_files": [
+    {
+      "path": "generation/inputs/37-shelter-and-directions.png",
+      "sha256": "50fbd097a760bc26f1b23bae48d4a764794ebcd1a87d89b6344aaa3bcdee3c81"
+    },
+    {
+      "path": "art/05-ask-way-context.png",
+      "sha256": "f35edbbd577a4c75d42e12050c1e58cb3cc4a47aa1eda9130f69b0798596ac45"
+    }
+  ],
+  "selected_in_revision": "episode-01-causality"
+}
