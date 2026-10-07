@@ -20,6 +20,7 @@ class CurrentGenerationInputs(unittest.TestCase):
         (self.root / "production").mkdir()
         self.write_json("production/adopted-assets.json", {})
         self.write_json("production/repairs.json", [])
+        self.write_json("production/shared-inputs.json", [])
         self.write_json("production/revision-provenance.json", [])
         self.add_image("episode-01/art/current.png", b"current artwork")
         self.add_image("episode-02/art/shared.png", b"shared generation input")
@@ -82,6 +83,19 @@ class CurrentGenerationInputs(unittest.TestCase):
         self.make_repaired_override()
         (self.root / "episode-01/art/current.png").write_bytes(b"changed edit source")
         with self.assertRaisesRegex(ValueError, "Generation input bytes differ: episode-01/art/current.png"):
+            self.check()
+
+    def test_existing_reference_without_hash_record_is_rejected(self):
+        self.records.pop()
+        with self.assertRaisesRegex(ValueError, "Missing generation input hash record: episode-02/art/shared.png"):
+            self.check()
+
+    def test_shared_input_registry_detects_byte_changes(self):
+        shared = self.records.pop()
+        self.write_json("production/shared-inputs.json", [shared])
+        self.assertIn("episode-02/art/shared.png", self.check())
+        (self.root / "episode-02/art/shared.png").write_bytes(b"changed shared reference")
+        with self.assertRaisesRegex(ValueError, "Generation input bytes differ: episode-02/art/shared.png"):
             self.check()
 
 

@@ -41,7 +41,7 @@ def check_source_references(root=ROOT):
         value = value.removeprefix("examples/tower-forge/")
         return str((root / value).resolve().relative_to(root.resolve()))
     records = {}
-    for name in ["asset-provenance.json", "repairs.json", "revision-provenance.json"]:
+    for name in ["asset-provenance.json", "shared-inputs.json", "repairs.json", "revision-provenance.json"]:
         for record in json.loads((root / "production" / name).read_text()):
             key = record["adopted"] if "adopted" in record else f"episode-{record['episode']:02d}/" + record["file"]
             if name == "repairs.json":
@@ -67,10 +67,11 @@ def check_source_references(root=ROOT):
         if not path.is_file():
             raise ValueError("Missing current generation input: " + key)
         record = records.get(key)
-        if record:
-            if hashlib.sha256(path.read_bytes()).hexdigest() != record["sha256"]:
-                raise ValueError("Generation input bytes differ: " + key)
-            pending.extend(record.get("references", []))
+        if record is None:
+            raise ValueError("Missing generation input hash record: " + key)
+        if hashlib.sha256(path.read_bytes()).hexdigest() != record["sha256"]:
+            raise ValueError("Generation input bytes differ: " + key)
+        pending.extend(record.get("references", []))
     return visited
 
 def check():
