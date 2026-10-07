@@ -23,6 +23,8 @@ def export(output, numbers):
     if output.exists() and any(output.iterdir()):
         raise ValueError("Use a new empty output directory for each release")
     chapters = adopted_chapters(series_ids=["tower-forge"], chapter_numbers=numbers)
+    if len(chapters) != 1:
+        raise ValueError("The selected scope must resolve to exactly one episode")
     from PIL import Image
     output.mkdir(parents=True, exist_ok=True)
     for chapter in chapters:

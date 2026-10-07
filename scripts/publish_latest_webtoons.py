@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish all adopted chapters, verify bytes, then optionally retire old editions."""
+"""Publish one adopted chapter, verify bytes, then optionally retire its old editions."""
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import hashlib
@@ -21,6 +21,10 @@ def sha256(data):
 
 def load_manifest(folder):
     manifest = json.loads((folder / "manifest.json").read_text())
+    if (not isinstance(manifest.get("seriesIds"), list) or len(manifest["seriesIds"]) != 1
+            or not isinstance(manifest.get("chapterNumbers"), list) or len(manifest["chapterNumbers"]) != 1
+            or not isinstance(manifest.get("chapters"), list) or len(manifest["chapters"]) != 1):
+        raise ValueError("A publication manifest must select one series and one episode")
     if sha256((ROOT / "content/catalog.json").read_bytes()) != manifest["catalogSHA256"]:
         raise ValueError("Production catalog changed; regenerate the export")
     from export_latest_webtoons import adopted_chapters

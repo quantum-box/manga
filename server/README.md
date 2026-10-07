@@ -66,6 +66,8 @@ python3 scripts/publish_latest_webtoons.py "$chapter_output" --verify-only
 
 manifestの `seriesIds` と `chapterNumbers` で対象を検証する。各回は一話だけを公開・旧版整理し、他の話や作品には触れない。`--episode` の複数指定は拒否する。画像を先に保存し、本文JSONを公開して全画像のSHA-256とカタログ情報を読み戻す。
 
+他作品の汎用書き出しも `python3 scripts/export_latest_webtoons.py "$chapter_output" --series pochi --episode 2` のように一作品・一話を指定する。複数指定と空でない出力先は拒否し、公開処理も複数話を含むmanifestを受け付けない。
+
 ### 公開処理の記録
 
 `content/catalog.json`の各話の先頭版を正本として、作品・話ごとに採用版を反映する。

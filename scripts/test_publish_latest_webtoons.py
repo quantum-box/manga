@@ -75,7 +75,7 @@ class PublicationSafetyTests(unittest.TestCase):
                 retire_previous(client, folder, manifest, ["tower-forge-episode-01-rold"])
         self.assertEqual(client.mutations, [])
 
-    def test_scoped_manifest_requires_every_current_chapter_without_publishing_other_series(self):
+    def test_scoped_manifest_rejects_bulk_and_selects_one_current_chapter(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             (root / "content").mkdir()
@@ -111,7 +111,8 @@ class PublicationSafetyTests(unittest.TestCase):
             with patch("publish_latest_webtoons.ROOT", root), patch("export_latest_webtoons.adopted_chapters", side_effect=resolve):
                 path = output / "manifest.json"
                 path.write_text(json.dumps(manifest))
-                self.assertEqual(len(load_manifest(output)["chapters"]), 2)
+                with self.assertRaisesRegex(ValueError, "one series and one episode"):
+                    load_manifest(output)
                 single = dict(manifest, chapterNumbers=[2], chapters=chapters[1:])
                 path.write_text(json.dumps(single))
                 self.assertEqual(len(load_manifest(output)["chapters"]), 1)
@@ -123,14 +124,14 @@ class PublicationSafetyTests(unittest.TestCase):
                     path.write_text(json.dumps(dict(single, chapterNumbers=numbers)))
                     with self.assertRaises(ValueError):
                         load_manifest(output)
-                for invalid in [dict(manifest, chapters=chapters[:1]),
-                                {k: v for k, v in manifest.items() if k != "seriesIds"},
-                                dict(manifest, seriesIds=["other"])]:
+                for invalid in [dict(single, chapters=chapters[:1]),
+                                {k: v for k, v in single.items() if k != "seriesIds"},
+                                dict(single, seriesIds=["other"])]:
                     path.write_text(json.dumps(invalid))
-                    with self.assertRaisesRegex(ValueError, "every adopted chapter"):
+                    with self.assertRaises(ValueError):
                         load_manifest(output)
-                path.write_text(json.dumps(manifest))
-                (output / chapters[0]["id"] / "art.png").write_bytes(b"changed bytes")
+                path.write_text(json.dumps(single))
+                (output / chapters[1]["id"] / "art.png").write_bytes(b"changed bytes")
                 with self.assertRaisesRegex(ValueError, "Asset bytes differ"):
                     load_manifest(output)
 
