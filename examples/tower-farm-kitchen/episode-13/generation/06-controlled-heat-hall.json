@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-661b0cc2-eab2-44c9-a3a7-dfc4d967657f.png",
+  "adopted": "art/06-controlled-heat-hall.png",
+  "original_sha256": "b2ade795fb8da7a0fcbc3bea42ab911b00a5ad4415f4a7a4bf472d1d234bfd14",
+  "adopted_sha256": "b2ade795fb8da7a0fcbc3bea42ab911b00a5ad4415f4a7a4bf472d1d234bfd14",
+  "width": 724,
+  "height": 2172,
+  "prompt_file": "generation/06-controlled-heat-hall.prompt.txt",
+  "prompt": "Edit reference 1 as the exact target. Reference 2 supplies ONLY the indoor guild tasting-hall architecture from its upper establishing panel; never copy its people, food or layout. Preserve target composition, panel borders, every existing character identity/clothing/gesture/face, food and cooking actions, all exact Japanese dialogue and lettering. Correct the location consistently in EVERY target panel: the entire current sequence is INSIDE the third-floor GUILD COMMUNAL TASTING HALL, vaulted sandstone interior, blue hanging guild banners, lanterns, three long temporary wooden preparation tables, small ornamental ivy only. Replace the conspicuous blue-awning diner, cottage roof, outdoor farm beds, paved farm lane and garden views with the same indoor hall and preparation tables. There is NO diner cottage, no blue exterior awning, no garden farm and no open sky here. Keep crops only as washed ingredients in crates, never planted fields. Keep original faces, speech bubbles, colors and artwork style unchanged. No additional characters, inscriptions or dialogue. Same very tall portrait proportions.",
+  "pixel_processing": "none",
+  "text_review": "passed",
+  "continuity_review": "passed",
+  "reference_files": [
+    {
+      "path": "generation/inputs/06-controlled-heat-original.png",
+      "sha256": "2b48fdd932a94648409a2e2f77ec34396136fcce2b3f496341b9a30027a38447",
+      "executed_filename": "exec-ccae2863-f17d-40e9-8276-a5d2a6f37443.png"
+    },
+    {
+      "path": "generation/inputs/01-tasting-hall-original.png",
+      "sha256": "a2fd86ecaca8995d8ba21ce054972b6342ad4be9b221b0613ac8267b820b066a",
+      "executed_filename": "exec-5dec2580-7ddb-4eba-81f9-f3e1b9b5cfa1.png"
+    }
+  ]
+}
