@@ -33,3 +33,5 @@ jobs:
           "$RUNNER_TEMP/history-tests"
           swiftc ios/Manga/Sources/Catalog.swift scripts/test_reader_content.swift -o "$RUNNER_TEMP/reader-content-tests"
           "$RUNNER_TEMP/reader-content-tests"
+      - name: Verify reader controls never move the manga
+        run: python3 scripts/check_reader_scroll.py
