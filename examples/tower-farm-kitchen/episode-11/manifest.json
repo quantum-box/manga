@@ -1,0 +1,1036 @@
+{
+  "number": 11,
+  "title": "空席が消えた朝",
+  "time": "43日目",
+  "change": "帰還食堂へ攻略者が仲間を連れて戻り、十六食を売り切る。翌日の予約と実際の代金を得る。",
+  "state": "一営業日の十六食は自給と仕入れの合計。全48m²の安定収穫ではない。ロウは第9話の十二食を食べた攻略者の一人。店は混雑したが注文を断り分け、無限に追加調理しない。収入は費用を引く前の売上。",
+  "revision": "2026-10-08-following",
+  "sources": [
+    {
+      "id": "01-morning-footsteps",
+      "art": "art/01-morning-footsteps.png",
+      "description": "Early morning at the same blue-awning diner. Broad quiet establishing empty tables, Elna ties her apron; narrow closeup Kou straightens clean bowls. Below, two close uneven panels: Kou hears footsteps on the left paved lane then looks towards the doorway. Do NOT reveal the arriving crowd yet.",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日は\n何人来るかな"
+        ],
+        [
+          "コウ",
+          "昨日の分は\n用意できてる"
+        ],
+        [
+          "コウ",
+          "……誰か来た"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 900,
+      "scrollPurpose": "足音だけを先に届けて来客を待たせる",
+      "prompt": "generation/01-morning-footsteps.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2171,
+      "sha256": "6259940e2e360cc8df79daae397100c4de9117f75bd6746e891c4501abdd3bad"
+    },
+    {
+      "id": "02-returning-party-cast",
+      "art": "art/02-returning-party-cast.png",
+      "description": "Reveal the returning customers only here. Row is a capable male adventurer age30 with short rust-auburn hair, ochre cloak, leather cuirass and sheathed steel sword, unlike silver-haired Leon. He stands at the lane doorway with two adult teammates. Row smiles remembering the prior meal; Elna recognizes him; separate reaction of Kou, no food served yet.",
+      "dialogue": [
+        [
+          "ロウ",
+          "ここだ\n俺たちの飯を\n作ってくれた店"
+        ],
+        [
+          "ロウ",
+          "今日は\n仲間も連れてきた"
+        ],
+        [
+          "エルナ",
+          "あの十二食の！"
+        ],
+        [
+          "コウ",
+          "……三人も"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "前の納品が新しい客を呼んだことを見せる",
+      "prompt": "generation/02-returning-party-cast.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "47baaebbbc7beaab1acea29ea196f8248809f2a63b630a31b1d5d8744dfb6e58"
+    },
+    {
+      "id": "03-line-at-the-awning",
+      "art": "art/03-line-at-the-awning.png",
+      "description": "The same lane a little later, not another city. Kou steps outside carrying an empty wooden order board, sees several small groups gathering under the blue awning. Large borderless reveal of a modest but obvious queue of about10 adults, then Elna startled closeup, then a gray-haired ordinary customer asking politely. Do not draw 100people or a royal parade.",
+      "dialogue": [
+        [
+          "客",
+          "ここの定食が\nうまいって\n聞いてきた"
+        ],
+        [
+          "エルナ",
+          "こんなに……"
+        ],
+        [
+          "コウ",
+          "順番に\n案内します"
+        ],
+        [
+          "ロウ",
+          "俺だけの店には\nできなかったな"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 350,
+      "scrollPurpose": "空席だった店と行列の差を大きく披露する",
+      "prompt": "generation/03-line-at-the-awning.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "6f9d55fc4d18523ca0b435d5ba257b76ceb84c3e07200e76784fc5c5d115c61a"
+    },
+    {
+      "id": "04-sixteen-servings",
+      "art": "art/04-sixteen-servings.png",
+      "description": "Inside the same compact diner kitchen. Elna with clean hands portions simmered stew into ceramic shallow bowls; Kou checks sixteen serving tokens in two short rows of8 on a separate clean service shelf, NOT a notebook on food. Meat and barley purchased, leaf greens partly harvested. Short paired ladle and serving-hand closeups, broader teamwork, guests still waiting.",
+      "dialogue": [
+        [
+          "コウ",
+          "今日は\n十六食まで"
+        ],
+        [
+          "エルナ",
+          "うん\n一皿ずつ\nちゃんと出そう"
+        ],
+        [
+          "コウ",
+          "お待たせしました"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 80,
+      "scrollPurpose": "数と手順を守りながら素早く食事へつなぐ",
+      "prompt": "generation/04-sixteen-servings.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "7fadd8a3a49d68e2c22badeda6bd42aa472a7e71c883d3a2d545323a178792e3"
+    },
+    {
+      "id": "05-dish-reveal",
+      "art": "art/05-dish-reveal.png",
+      "description": "Heroic appetizing food reveal in warm afternoon diner light. One large borderless glazed beef carrot leaf-green barley stew in ivory ceramic bowl, smooth rich russet-brown gravy, tender beef chunks and carrot cross-sections, soft green leaves, steam rises through sparse cream area. Small top hand places bowl, then dish takes most of scroll; an adjacent simple piece of bread. NO customer mouth, bite or reaction yet. No beadlike grain texture. Bottom tiny spoon about to lift but does not touch mouth.",
+      "dialogue": [
+        [
+          "エルナ",
+          "お腹いっぱい\n食べてね"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 910,
+      "scrollPurpose": "湯気と料理を味わい食べた反応は下へ残す",
+      "prompt": "generation/05-dish-reveal.prompt.txt",
+      "soundEffects": [
+        "ふわ"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "adc48549bf91142b4bc1caf8e2b5a201008324e62de2fb9040be4445dde0ef36"
+    },
+    {
+      "id": "06-one-bite-and-smile",
+      "art": "art/06-one-bite-and-smile.png",
+      "description": "Same Row sits at wooden table, same ceramic stew and bread. First spoon lifts a realistic small beef and carrot bite, next Row eats, quiet widened eyes separate, then a big relieved smile and shoulders relaxing. Adult teammate only at edge, never Leon. Finally Row looks toward Elna and Kou at counter. Food quantity decreases after bite, spoon not doubled.",
+      "dialogue": [
+        [
+          "ロウ",
+          "……うまい"
+        ],
+        [
+          "ロウ",
+          "戦いのあとに\n欲しかったのは\nこういう飯だ"
+        ],
+        [
+          "仲間",
+          "帰ってくる理由が\n増えたな"
+        ],
+        [
+          "ロウ",
+          "次も\nここにしよう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 250,
+      "scrollPurpose": "ひと口から驚きと指名までを受け止める",
+      "prompt": "generation/06-one-bite-and-smile.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "98d7784de84acfe51721e0e4cff95b6e9805887c58aae309c1ba2e030356d540"
+    },
+    {
+      "id": "07-sold-out-coins",
+      "art": "art/07-sold-out-coins.png",
+      "description": "Late afternoon, used empty ceramic bowls collected apart from clean counter. Elna receives last customer copper coins; later counts sales with Kou at dry ledger desk, no money beside cooking food. Ledger abstract marks only. First show empty serving-pot and all16tokens turned over, then copper coin stacks, Elna stunned delighted face. Meal price6copper, total gross96copper, not net profit.",
+      "dialogue": [
+        [
+          "エルナ",
+          "十六食\n全部出た……"
+        ],
+        [
+          "コウ",
+          "売上は\n九十六銅貨"
+        ],
+        [
+          "コウ",
+          "仕入れと費用は\nここから払う"
+        ],
+        [
+          "エルナ",
+          "それでも\n全部選んでもらえた"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 420,
+      "scrollPurpose": "売り切れと代金を具体的な報酬として見せる",
+      "prompt": "generation/07-sold-out-coins.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0287bb1cfebfa260885401d7752709daefd75305c1580e5d9cca51bab9b367b6"
+    },
+    {
+      "id": "08-tomorrow-reservation",
+      "art": "art/08-tomorrow-reservation.png",
+      "description": "Quiet evening at clean empty diner, warm lamps, no crowd now. Row at doorway gives a small blank paper reservation token to Elna, no actual inscription; closeup Elna holds it then Kou looks at now-empty chairs with happy disbelief, final large shared smile. No next-floor journey, new crops or new contract yet. Sparse ivory ending with rising warm lamp glow.",
+      "dialogue": [
+        [
+          "ロウ",
+          "明日の分も\n取っておいてくれ"
+        ],
+        [
+          "エルナ",
+          "また来て\nくれるんだ"
+        ],
+        [
+          "コウ",
+          "俺たちの仕事が\n帰ってきたな"
+        ],
+        [
+          "エルナ",
+          "明日も\nこの店を開けよう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 430,
+      "scrollPurpose": "次の来店の約束と二人の喜びに余韻を残す",
+      "prompt": "generation/08-tomorrow-reservation.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "971f4610512d1cc12d3125c6d630c26a3f13e5d6c969c481fc88d6815aeec7ad"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-morning-footsteps-window-01",
+      "art": "art/01-morning-footsteps.png",
+      "description": "Early morning at the same blue-awning diner. Broad quiet establishing empty tables, Elna ties her apron; narrow closeup Kou straightens clean bowls. Below, two close uneven panels: Kou hears footsteps on the left paved lane then looks towards the doorway. Do NOT reveal the arriving crowd yet.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 90,
+      "scrollPurpose": "足音だけを先に届けて来客を待たせる",
+      "prompt": "generation/01-morning-footsteps.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2171,
+      "sha256": "6259940e2e360cc8df79daae397100c4de9117f75bd6746e891c4501abdd3bad",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 509
+      },
+      "sourceId": "01-morning-footsteps",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-morning-footsteps-window-02",
+      "art": "art/01-morning-footsteps.png",
+      "description": "Early morning at the same blue-awning diner. Broad quiet establishing empty tables, Elna ties her apron; narrow closeup Kou straightens clean bowls. Below, two close uneven panels: Kou hears footsteps on the left paved lane then looks towards the doorway. Do NOT reveal the arriving crowd yet.",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日は\n何人来るかな"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "足音だけを先に届けて来客を待たせる",
+      "prompt": "generation/01-morning-footsteps.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2171,
+      "sha256": "6259940e2e360cc8df79daae397100c4de9117f75bd6746e891c4501abdd3bad",
+      "crop": {
+        "x": 0,
+        "y": 509,
+        "width": 724,
+        "height": 531
+      },
+      "sourceId": "01-morning-footsteps",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-morning-footsteps-window-03",
+      "art": "art/01-morning-footsteps.png",
+      "description": "Early morning at the same blue-awning diner. Broad quiet establishing empty tables, Elna ties her apron; narrow closeup Kou straightens clean bowls. Below, two close uneven panels: Kou hears footsteps on the left paved lane then looks towards the doorway. Do NOT reveal the arriving crowd yet.",
+      "dialogue": [
+        [
+          "コウ",
+          "昨日の分は\n用意できてる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 240,
+      "scrollPurpose": "足音だけを先に届けて来客を待たせる",
+      "prompt": "generation/01-morning-footsteps.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2171,
+      "sha256": "6259940e2e360cc8df79daae397100c4de9117f75bd6746e891c4501abdd3bad",
+      "crop": {
+        "x": 0,
+        "y": 1040,
+        "width": 724,
+        "height": 518
+      },
+      "sourceId": "01-morning-footsteps",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-morning-footsteps-window-04",
+      "art": "art/01-morning-footsteps.png",
+      "description": "Early morning at the same blue-awning diner. Broad quiet establishing empty tables, Elna ties her apron; narrow closeup Kou straightens clean bowls. Below, two close uneven panels: Kou hears footsteps on the left paved lane then looks towards the doorway. Do NOT reveal the arriving crowd yet.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 260,
+      "scrollPurpose": "足音だけを先に届けて来客を待たせる",
+      "prompt": "generation/01-morning-footsteps.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2171,
+      "sha256": "6259940e2e360cc8df79daae397100c4de9117f75bd6746e891c4501abdd3bad",
+      "crop": {
+        "x": 0,
+        "y": 1558,
+        "width": 724,
+        "height": 225
+      },
+      "sourceId": "01-morning-footsteps",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-morning-footsteps-window-05",
+      "art": "art/01-morning-footsteps.png",
+      "description": "Early morning at the same blue-awning diner. Broad quiet establishing empty tables, Elna ties her apron; narrow closeup Kou straightens clean bowls. Below, two close uneven panels: Kou hears footsteps on the left paved lane then looks towards the doorway. Do NOT reveal the arriving crowd yet.",
+      "dialogue": [
+        [
+          "コウ",
+          "……誰か来た"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 900,
+      "scrollPurpose": "足音だけを先に届けて来客を待たせる",
+      "prompt": "generation/01-morning-footsteps.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2171,
+      "sha256": "6259940e2e360cc8df79daae397100c4de9117f75bd6746e891c4501abdd3bad",
+      "crop": {
+        "x": 0,
+        "y": 1783,
+        "width": 724,
+        "height": 388
+      },
+      "sourceId": "01-morning-footsteps",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-returning-party-cast-window-01",
+      "art": "art/02-returning-party-cast.png",
+      "description": "Reveal the returning customers only here. Row is a capable male adventurer age30 with short rust-auburn hair, ochre cloak, leather cuirass and sheathed steel sword, unlike silver-haired Leon. He stands at the lane doorway with two adult teammates. Row smiles remembering the prior meal; Elna recognizes him; separate reaction of Kou, no food served yet.",
+      "dialogue": [
+        [
+          "ロウ",
+          "ここだ\n俺たちの飯を\n作ってくれた店"
+        ],
+        [
+          "ロウ",
+          "今日は\n仲間も連れてきた"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 160,
+      "scrollPurpose": "前の納品が新しい客を呼んだことを見せる",
+      "prompt": "generation/02-returning-party-cast.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "47baaebbbc7beaab1acea29ea196f8248809f2a63b630a31b1d5d8744dfb6e58",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 1123
+      },
+      "sourceId": "02-returning-party-cast",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-returning-party-cast-window-02",
+      "art": "art/02-returning-party-cast.png",
+      "description": "Reveal the returning customers only here. Row is a capable male adventurer age30 with short rust-auburn hair, ochre cloak, leather cuirass and sheathed steel sword, unlike silver-haired Leon. He stands at the lane doorway with two adult teammates. Row smiles remembering the prior meal; Elna recognizes him; separate reaction of Kou, no food served yet.",
+      "dialogue": [
+        [
+          "エルナ",
+          "あの十二食の！"
+        ],
+        [
+          "コウ",
+          "……三人も"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "前の納品が新しい客を呼んだことを見せる",
+      "prompt": "generation/02-returning-party-cast.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "47baaebbbc7beaab1acea29ea196f8248809f2a63b630a31b1d5d8744dfb6e58",
+      "crop": {
+        "x": 0,
+        "y": 1123,
+        "width": 724,
+        "height": 1049
+      },
+      "sourceId": "02-returning-party-cast",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-line-at-the-awning-window-01",
+      "art": "art/03-line-at-the-awning.png",
+      "description": "The same lane a little later, not another city. Kou steps outside carrying an empty wooden order board, sees several small groups gathering under the blue awning. Large borderless reveal of a modest but obvious queue of about10 adults, then Elna startled closeup, then a gray-haired ordinary customer asking politely. Do not draw 100people or a royal parade.",
+      "dialogue": [
+        [
+          "客",
+          "ここの定食が\nうまいって\n聞いてきた"
+        ],
+        [
+          "エルナ",
+          "こんなに……"
+        ],
+        [
+          "コウ",
+          "順番に\n案内します"
+        ],
+        [
+          "ロウ",
+          "俺だけの店には\nできなかったな"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 350,
+      "scrollPurpose": "空席だった店と行列の差を大きく披露する",
+      "prompt": "generation/03-line-at-the-awning.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "6f9d55fc4d18523ca0b435d5ba257b76ceb84c3e07200e76784fc5c5d115c61a",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "03-line-at-the-awning",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-sixteen-servings-window-01",
+      "art": "art/04-sixteen-servings.png",
+      "description": "Inside the same compact diner kitchen. Elna with clean hands portions simmered stew into ceramic shallow bowls; Kou checks sixteen serving tokens in two short rows of8 on a separate clean service shelf, NOT a notebook on food. Meat and barley purchased, leaf greens partly harvested. Short paired ladle and serving-hand closeups, broader teamwork, guests still waiting.",
+      "dialogue": [
+        [
+          "コウ",
+          "今日は\n十六食まで"
+        ],
+        [
+          "エルナ",
+          "うん\n一皿ずつ\nちゃんと出そう"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 90,
+      "scrollPurpose": "数と手順を守りながら素早く食事へつなぐ",
+      "prompt": "generation/04-sixteen-servings.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "7fadd8a3a49d68e2c22badeda6bd42aa472a7e71c883d3a2d545323a178792e3",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 923
+      },
+      "sourceId": "04-sixteen-servings",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-sixteen-servings-window-02",
+      "art": "art/04-sixteen-servings.png",
+      "description": "Inside the same compact diner kitchen. Elna with clean hands portions simmered stew into ceramic shallow bowls; Kou checks sixteen serving tokens in two short rows of8 on a separate clean service shelf, NOT a notebook on food. Meat and barley purchased, leaf greens partly harvested. Short paired ladle and serving-hand closeups, broader teamwork, guests still waiting.",
+      "dialogue": [
+        [
+          "コウ",
+          "お待たせしました"
+        ]
+      ],
+      "layout": "detail",
+      "pauseAt390": 140,
+      "scrollPurpose": "数と手順を守りながら素早く食事へつなぐ",
+      "prompt": "generation/04-sixteen-servings.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "7fadd8a3a49d68e2c22badeda6bd42aa472a7e71c883d3a2d545323a178792e3",
+      "crop": {
+        "x": 0,
+        "y": 923,
+        "width": 724,
+        "height": 765
+      },
+      "sourceId": "04-sixteen-servings",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-sixteen-servings-window-03",
+      "art": "art/04-sixteen-servings.png",
+      "description": "Inside the same compact diner kitchen. Elna with clean hands portions simmered stew into ceramic shallow bowls; Kou checks sixteen serving tokens in two short rows of8 on a separate clean service shelf, NOT a notebook on food. Meat and barley purchased, leaf greens partly harvested. Short paired ladle and serving-hand closeups, broader teamwork, guests still waiting.",
+      "dialogue": [],
+      "layout": "detail",
+      "pauseAt390": 80,
+      "scrollPurpose": "数と手順を守りながら素早く食事へつなぐ",
+      "prompt": "generation/04-sixteen-servings.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "7fadd8a3a49d68e2c22badeda6bd42aa472a7e71c883d3a2d545323a178792e3",
+      "crop": {
+        "x": 0,
+        "y": 1688,
+        "width": 724,
+        "height": 484
+      },
+      "sourceId": "04-sixteen-servings",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-dish-reveal-window-01",
+      "art": "art/05-dish-reveal.png",
+      "description": "Heroic appetizing food reveal in warm afternoon diner light. One large borderless glazed beef carrot leaf-green barley stew in ivory ceramic bowl, smooth rich russet-brown gravy, tender beef chunks and carrot cross-sections, soft green leaves, steam rises through sparse cream area. Small top hand places bowl, then dish takes most of scroll; an adjacent simple piece of bread. NO customer mouth, bite or reaction yet. No beadlike grain texture. Bottom tiny spoon about to lift but does not touch mouth.",
+      "dialogue": [
+        [
+          "エルナ",
+          "お腹いっぱい\n食べてね"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 910,
+      "scrollPurpose": "湯気と料理を味わい食べた反応は下へ残す",
+      "prompt": "generation/05-dish-reveal.prompt.txt",
+      "soundEffects": [
+        "ふわ"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "adc48549bf91142b4bc1caf8e2b5a201008324e62de2fb9040be4445dde0ef36",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "05-dish-reveal",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-one-bite-and-smile-window-01",
+      "art": "art/06-one-bite-and-smile.png",
+      "description": "Same Row sits at wooden table, same ceramic stew and bread. First spoon lifts a realistic small beef and carrot bite, next Row eats, quiet widened eyes separate, then a big relieved smile and shoulders relaxing. Adult teammate only at edge, never Leon. Finally Row looks toward Elna and Kou at counter. Food quantity decreases after bite, spoon not doubled.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "ひと口から驚きと指名までを受け止める",
+      "prompt": "generation/06-one-bite-and-smile.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "98d7784de84acfe51721e0e4cff95b6e9805887c58aae309c1ba2e030356d540",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 459
+      },
+      "sourceId": "06-one-bite-and-smile",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-one-bite-and-smile-window-02",
+      "art": "art/06-one-bite-and-smile.png",
+      "description": "Same Row sits at wooden table, same ceramic stew and bread. First spoon lifts a realistic small beef and carrot bite, next Row eats, quiet widened eyes separate, then a big relieved smile and shoulders relaxing. Adult teammate only at edge, never Leon. Finally Row looks toward Elna and Kou at counter. Food quantity decreases after bite, spoon not doubled.",
+      "dialogue": [
+        [
+          "ロウ",
+          "……うまい"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 260,
+      "scrollPurpose": "ひと口から驚きと指名までを受け止める",
+      "prompt": "generation/06-one-bite-and-smile.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "98d7784de84acfe51721e0e4cff95b6e9805887c58aae309c1ba2e030356d540",
+      "crop": {
+        "x": 0,
+        "y": 459,
+        "width": 724,
+        "height": 248
+      },
+      "sourceId": "06-one-bite-and-smile",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-one-bite-and-smile-window-03",
+      "art": "art/06-one-bite-and-smile.png",
+      "description": "Same Row sits at wooden table, same ceramic stew and bread. First spoon lifts a realistic small beef and carrot bite, next Row eats, quiet widened eyes separate, then a big relieved smile and shoulders relaxing. Adult teammate only at edge, never Leon. Finally Row looks toward Elna and Kou at counter. Food quantity decreases after bite, spoon not doubled.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "ひと口から驚きと指名までを受け止める",
+      "prompt": "generation/06-one-bite-and-smile.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "98d7784de84acfe51721e0e4cff95b6e9805887c58aae309c1ba2e030356d540",
+      "crop": {
+        "x": 0,
+        "y": 707,
+        "width": 724,
+        "height": 307
+      },
+      "sourceId": "06-one-bite-and-smile",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-one-bite-and-smile-window-04",
+      "art": "art/06-one-bite-and-smile.png",
+      "description": "Same Row sits at wooden table, same ceramic stew and bread. First spoon lifts a realistic small beef and carrot bite, next Row eats, quiet widened eyes separate, then a big relieved smile and shoulders relaxing. Adult teammate only at edge, never Leon. Finally Row looks toward Elna and Kou at counter. Food quantity decreases after bite, spoon not doubled.",
+      "dialogue": [
+        [
+          "ロウ",
+          "戦いのあとに\n欲しかったのは\nこういう飯だ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "ひと口から驚きと指名までを受け止める",
+      "prompt": "generation/06-one-bite-and-smile.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "98d7784de84acfe51721e0e4cff95b6e9805887c58aae309c1ba2e030356d540",
+      "crop": {
+        "x": 0,
+        "y": 1014,
+        "width": 724,
+        "height": 365
+      },
+      "sourceId": "06-one-bite-and-smile",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-one-bite-and-smile-window-05",
+      "art": "art/06-one-bite-and-smile.png",
+      "description": "Same Row sits at wooden table, same ceramic stew and bread. First spoon lifts a realistic small beef and carrot bite, next Row eats, quiet widened eyes separate, then a big relieved smile and shoulders relaxing. Adult teammate only at edge, never Leon. Finally Row looks toward Elna and Kou at counter. Food quantity decreases after bite, spoon not doubled.",
+      "dialogue": [
+        [
+          "仲間",
+          "帰ってくる理由が\n増えたな"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "ひと口から驚きと指名までを受け止める",
+      "prompt": "generation/06-one-bite-and-smile.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "98d7784de84acfe51721e0e4cff95b6e9805887c58aae309c1ba2e030356d540",
+      "crop": {
+        "x": 0,
+        "y": 1379,
+        "width": 724,
+        "height": 317
+      },
+      "sourceId": "06-one-bite-and-smile",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-one-bite-and-smile-window-06",
+      "art": "art/06-one-bite-and-smile.png",
+      "description": "Same Row sits at wooden table, same ceramic stew and bread. First spoon lifts a realistic small beef and carrot bite, next Row eats, quiet widened eyes separate, then a big relieved smile and shoulders relaxing. Adult teammate only at edge, never Leon. Finally Row looks toward Elna and Kou at counter. Food quantity decreases after bite, spoon not doubled.",
+      "dialogue": [
+        [
+          "ロウ",
+          "次も\nここにしよう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 250,
+      "scrollPurpose": "ひと口から驚きと指名までを受け止める",
+      "prompt": "generation/06-one-bite-and-smile.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "98d7784de84acfe51721e0e4cff95b6e9805887c58aae309c1ba2e030356d540",
+      "crop": {
+        "x": 0,
+        "y": 1696,
+        "width": 724,
+        "height": 476
+      },
+      "sourceId": "06-one-bite-and-smile",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-sold-out-coins-window-01",
+      "art": "art/07-sold-out-coins.png",
+      "description": "Late afternoon, used empty ceramic bowls collected apart from clean counter. Elna receives last customer copper coins; later counts sales with Kou at dry ledger desk, no money beside cooking food. Ledger abstract marks only. First show empty serving-pot and all16tokens turned over, then copper coin stacks, Elna stunned delighted face. Meal price6copper, total gross96copper, not net profit.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "売り切れと代金を具体的な報酬として見せる",
+      "prompt": "generation/07-sold-out-coins.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0287bb1cfebfa260885401d7752709daefd75305c1580e5d9cca51bab9b367b6",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 472
+      },
+      "sourceId": "07-sold-out-coins",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-sold-out-coins-window-02",
+      "art": "art/07-sold-out-coins.png",
+      "description": "Late afternoon, used empty ceramic bowls collected apart from clean counter. Elna receives last customer copper coins; later counts sales with Kou at dry ledger desk, no money beside cooking food. Ledger abstract marks only. First show empty serving-pot and all16tokens turned over, then copper coin stacks, Elna stunned delighted face. Meal price6copper, total gross96copper, not net profit.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "売り切れと代金を具体的な報酬として見せる",
+      "prompt": "generation/07-sold-out-coins.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0287bb1cfebfa260885401d7752709daefd75305c1580e5d9cca51bab9b367b6",
+      "crop": {
+        "x": 0,
+        "y": 472,
+        "width": 724,
+        "height": 309
+      },
+      "sourceId": "07-sold-out-coins",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-sold-out-coins-window-03",
+      "art": "art/07-sold-out-coins.png",
+      "description": "Late afternoon, used empty ceramic bowls collected apart from clean counter. Elna receives last customer copper coins; later counts sales with Kou at dry ledger desk, no money beside cooking food. Ledger abstract marks only. First show empty serving-pot and all16tokens turned over, then copper coin stacks, Elna stunned delighted face. Meal price6copper, total gross96copper, not net profit.",
+      "dialogue": [
+        [
+          "エルナ",
+          "十六食\n全部出た……"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "売り切れと代金を具体的な報酬として見せる",
+      "prompt": "generation/07-sold-out-coins.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0287bb1cfebfa260885401d7752709daefd75305c1580e5d9cca51bab9b367b6",
+      "crop": {
+        "x": 0,
+        "y": 781,
+        "width": 724,
+        "height": 326
+      },
+      "sourceId": "07-sold-out-coins",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-sold-out-coins-window-04",
+      "art": "art/07-sold-out-coins.png",
+      "description": "Late afternoon, used empty ceramic bowls collected apart from clean counter. Elna receives last customer copper coins; later counts sales with Kou at dry ledger desk, no money beside cooking food. Ledger abstract marks only. First show empty serving-pot and all16tokens turned over, then copper coin stacks, Elna stunned delighted face. Meal price6copper, total gross96copper, not net profit.",
+      "dialogue": [
+        [
+          "コウ",
+          "売上は\n九十六銅貨"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 90,
+      "scrollPurpose": "売り切れと代金を具体的な報酬として見せる",
+      "prompt": "generation/07-sold-out-coins.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0287bb1cfebfa260885401d7752709daefd75305c1580e5d9cca51bab9b367b6",
+      "crop": {
+        "x": 0,
+        "y": 1107,
+        "width": 724,
+        "height": 293
+      },
+      "sourceId": "07-sold-out-coins",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-sold-out-coins-window-05",
+      "art": "art/07-sold-out-coins.png",
+      "description": "Late afternoon, used empty ceramic bowls collected apart from clean counter. Elna receives last customer copper coins; later counts sales with Kou at dry ledger desk, no money beside cooking food. Ledger abstract marks only. First show empty serving-pot and all16tokens turned over, then copper coin stacks, Elna stunned delighted face. Meal price6copper, total gross96copper, not net profit.",
+      "dialogue": [
+        [
+          "コウ",
+          "仕入れと費用は\nここから払う"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "売り切れと代金を具体的な報酬として見せる",
+      "prompt": "generation/07-sold-out-coins.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0287bb1cfebfa260885401d7752709daefd75305c1580e5d9cca51bab9b367b6",
+      "crop": {
+        "x": 0,
+        "y": 1400,
+        "width": 724,
+        "height": 308
+      },
+      "sourceId": "07-sold-out-coins",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-sold-out-coins-window-06",
+      "art": "art/07-sold-out-coins.png",
+      "description": "Late afternoon, used empty ceramic bowls collected apart from clean counter. Elna receives last customer copper coins; later counts sales with Kou at dry ledger desk, no money beside cooking food. Ledger abstract marks only. First show empty serving-pot and all16tokens turned over, then copper coin stacks, Elna stunned delighted face. Meal price6copper, total gross96copper, not net profit.",
+      "dialogue": [
+        [
+          "エルナ",
+          "それでも\n全部選んでもらえた"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 420,
+      "scrollPurpose": "売り切れと代金を具体的な報酬として見せる",
+      "prompt": "generation/07-sold-out-coins.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "0287bb1cfebfa260885401d7752709daefd75305c1580e5d9cca51bab9b367b6",
+      "crop": {
+        "x": 0,
+        "y": 1708,
+        "width": 724,
+        "height": 464
+      },
+      "sourceId": "07-sold-out-coins",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-tomorrow-reservation-window-01",
+      "art": "art/08-tomorrow-reservation.png",
+      "description": "Quiet evening at clean empty diner, warm lamps, no crowd now. Row at doorway gives a small blank paper reservation token to Elna, no actual inscription; closeup Elna holds it then Kou looks at now-empty chairs with happy disbelief, final large shared smile. No next-floor journey, new crops or new contract yet. Sparse ivory ending with rising warm lamp glow.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "次の来店の約束と二人の喜びに余韻を残す",
+      "prompt": "generation/08-tomorrow-reservation.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "971f4610512d1cc12d3125c6d630c26a3f13e5d6c969c481fc88d6815aeec7ad",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 312
+      },
+      "sourceId": "08-tomorrow-reservation",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-tomorrow-reservation-window-02",
+      "art": "art/08-tomorrow-reservation.png",
+      "description": "Quiet evening at clean empty diner, warm lamps, no crowd now. Row at doorway gives a small blank paper reservation token to Elna, no actual inscription; closeup Elna holds it then Kou looks at now-empty chairs with happy disbelief, final large shared smile. No next-floor journey, new crops or new contract yet. Sparse ivory ending with rising warm lamp glow.",
+      "dialogue": [
+        [
+          "ロウ",
+          "明日の分も\n取っておいてくれ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 140,
+      "scrollPurpose": "次の来店の約束と二人の喜びに余韻を残す",
+      "prompt": "generation/08-tomorrow-reservation.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "971f4610512d1cc12d3125c6d630c26a3f13e5d6c969c481fc88d6815aeec7ad",
+      "crop": {
+        "x": 0,
+        "y": 312,
+        "width": 724,
+        "height": 457
+      },
+      "sourceId": "08-tomorrow-reservation",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-tomorrow-reservation-window-03",
+      "art": "art/08-tomorrow-reservation.png",
+      "description": "Quiet evening at clean empty diner, warm lamps, no crowd now. Row at doorway gives a small blank paper reservation token to Elna, no actual inscription; closeup Elna holds it then Kou looks at now-empty chairs with happy disbelief, final large shared smile. No next-floor journey, new crops or new contract yet. Sparse ivory ending with rising warm lamp glow.",
+      "dialogue": [
+        [
+          "エルナ",
+          "また来て\nくれるんだ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "次の来店の約束と二人の喜びに余韻を残す",
+      "prompt": "generation/08-tomorrow-reservation.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "971f4610512d1cc12d3125c6d630c26a3f13e5d6c969c481fc88d6815aeec7ad",
+      "crop": {
+        "x": 0,
+        "y": 769,
+        "width": 724,
+        "height": 269
+      },
+      "sourceId": "08-tomorrow-reservation",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-tomorrow-reservation-window-04",
+      "art": "art/08-tomorrow-reservation.png",
+      "description": "Quiet evening at clean empty diner, warm lamps, no crowd now. Row at doorway gives a small blank paper reservation token to Elna, no actual inscription; closeup Elna holds it then Kou looks at now-empty chairs with happy disbelief, final large shared smile. No next-floor journey, new crops or new contract yet. Sparse ivory ending with rising warm lamp glow.",
+      "dialogue": [
+        [
+          "コウ",
+          "俺たちの仕事が\n帰ってきたな"
+        ],
+        [
+          "エルナ",
+          "明日も\nこの店を開けよう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 430,
+      "scrollPurpose": "次の来店の約束と二人の喜びに余韻を残す",
+      "prompt": "generation/08-tomorrow-reservation.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "971f4610512d1cc12d3125c6d630c26a3f13e5d6c969c481fc88d6815aeec7ad",
+      "crop": {
+        "x": 0,
+        "y": 1038,
+        "width": 724,
+        "height": 1134
+      },
+      "sourceId": "08-tomorrow-reservation",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    }
+  ]
+}
