@@ -39,6 +39,6 @@ python3 scripts/sync_ios_webtoons.py --check
 
 組み込み image_gen の原本を保存し、必要な修正だけ編集機能で作った。現行画像は `production/adopted-assets.json`、初稿の原本は `production/asset-provenance.json`、第1話改稿の原本と正確な実使用指示は `production/revision-provenance.json`。画像生成を再実行せずにリーダーを再構築できる。原本は現行版の編集元として残し、旧話版のリーダーは併存させない。旧本文はGit履歴から復元できる。
 
-ローカルのカタログとiOS同梱データへ収録。配信サーバーへの公開、TestFlight配布、GitHubへの公開は実施していない。
+ローカルのカタログとiOS同梱データへ収録。ユーザーの指示を受け、制作物とスキル更新をGitHubのPRへ提出する。配信サーバーへの公開とTestFlight配布は未実施。
 
 19枚目の低い振動音は複数コマから大きな白い余白へ続き、21枚目の門の衝撃音は枠と斜めの間を越えて消灯コマまで響く。継続する一つの音として記録し、会話・顔・手・通知を避ける。[実行した編集指示](production/sound-bridge/manifest.json)。
