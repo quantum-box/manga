@@ -82,18 +82,8 @@ links = []
 for number in range(1, 11):
     directory = ROOT / ('v5' if number == 1 else f"episode-{number:02d}")
     manifest = json.loads((directory / "manifest.json").read_text())
-    validation = directory / "validation.json"
-    complete = validation.is_file() and json.loads(validation.read_text()).get("visualReview", {}).get("status") == "passed"
-    if manifest.get('scrollEdition'):
-        status = '余白・スクロール改稿版'
-    elif manifest.get('remakeEdition'):
-        status = f'Webtoon改稿版 · {manifest["panel_count"]}コマ'
-    elif manifest.get('version') == 'context-dialogue-v6':
-        status = f'会話・コマ割り改稿版 · {manifest["panel_count"]}コマ · ブラウザ再確認待ち'
-    else:
-        status = f'完成版・縦書き{len(manifest["shots"])}場面' if complete else "制作中"
-    links.append(f'<a href="{directory.name}/index.html">第{number}話　{html.escape(manifest.get("title","最弱判定、最強の一歩。"))}<small>{status}</small></a>')
+    links.append(f'<a href="{directory.name}/index.html">第{number}話　{html.escape(manifest.get("title","最弱判定、最強の一歩。"))}</a>')
 (ROOT / "chapters.html").write_text(
-    f'<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ゼロ・ブレイク 第1〜10話</title><style>{CSS}</style><main class="catalog"><h1>ゼロ・ブレイク</h1><p>異世界転生 × スーパーヒーロー<br>全50話の物語、最初の10話。</p><nav>'
-    + "".join(links) + '</nav><p><a href="series/index.html" style="color:#abdfff">全50話の場面脚本を読む</a></p></main></html>'
+    f'<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ゼロ・ブレイク 第1〜10話</title><style>{CSS}</style><main class="catalog"><h1>ゼロ・ブレイク</h1><p>異世界転生 × スーパーヒーロー</p><nav>'
+    + "".join(links) + '</nav></main></html>'
 )

@@ -37,7 +37,7 @@ def adopted_chapters(root=ROOT):
                 raise ValueError("Episode ID exceeds server limit")
             chapters.append({"id": episode_id, "series": series, "number": episode["number"],
                              "title": title["title"], "subtitle": episode["title"],
-                             "edition": episode["edition"], "source": episode["source"],
+                             "edition": "", "source": episode["source"],
                              "sourceDigest": source_digest, "provenance": provenance})
     return chapters
 
