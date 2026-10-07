@@ -54,7 +54,7 @@ async function load() {
         const a = link('', seriesURL(series)); a.className = 'series-card';
         a.append(text('strong', series.title));
         const count = new Set(series.episodes.map(ep => ep.number)).size;
-        a.append(text('span', count + '話 · ' + series.episodes.length + '版'));
+        a.append(text('span', count + '話'));
         nav.append(a);
       });
       root.append(nav); return;
@@ -83,11 +83,11 @@ async function load() {
       toggle.addEventListener('click', () => { setRead(series, number, !isRead(series, number)); load().catch(showLoadError); });
       section.append(toggle);
       const preferred = editions[0];
-      section.append(link(preferred.title + (preferred.edition ? ' · ' + preferred.edition : ''), episodeURL(preferred.id)));
+      section.append(link(preferred.title, episodeURL(preferred.id)));
       if (editions.length > 1) {
         const details = document.createElement('details');
         details.append(text('summary', 'ほかの版（' + (editions.length - 1) + '）'));
-        editions.slice(1).forEach(ep => details.append(link(ep.edition || ep.title, episodeURL(ep.id))));
+        editions.slice(1).forEach(ep => details.append(link(ep.title, episodeURL(ep.id))));
         section.append(details);
       }
       nav.append(section);
