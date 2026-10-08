@@ -442,7 +442,7 @@ CSS = r"""
 * { box-sizing: border-box; }
 html { background: #252a31; }
 body { margin: 0; background: #252a31; color: #20242a; }
-.reader { width: 100%; max-width: 480px; min-height: 100vh; margin: 0 auto;
+.reader { width: 100%; max-width: var(--reference-width, 390px); min-height: 100vh; margin: 0 auto;
   background: #fbfaf7; container-type: inline-size; }
 .draft-bar { padding: 10px 16px 11px;
   color: #f8fbff; background: #263746; border-bottom: 3px solid #efb46a; }
@@ -496,7 +496,110 @@ body { margin: 0; background: #252a31; color: #20242a; }
   letter-spacing: .09em; white-space: nowrap; transform: rotate(-7deg); }
 .text-beat .floating-speaker { margin-bottom: 5px; }
 .end-note { padding: 30px 16px 55px; text-align: center; color: #68747b; font-size: 12px; }
+.measurement { position: static; display: block; margin: 10px 14px 0; max-width: 100%;
+  color: #25333c; background: #fffefb; border: 1px solid #9aaab1; border-radius: 8px;
+  box-shadow: 0 3px 14px #17232b33; font-size: 11px; }
+.measurement summary { cursor: pointer; padding: 6px 9px; color: #334b5b; font-weight: 700; }
+.measurement-body { padding: 0 9px 8px; }
+.measurement dl { display: grid; grid-template-columns: auto auto; gap: 3px 10px; margin: 0; }
+.measurement dt { color: #60717b; }
+.measurement dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.measurement-note, .measurement-width-note { margin: 7px 0 0; color: #68747b; line-height: 1.45; }
+.measurement-width-note { color: #99531a; font-weight: 700; }
 """
+
+
+MEASUREMENT_HTML = '''<details class="measurement" id="preview-measurement">
+<summary>構成計測</summary>
+<div class="measurement-body" aria-live="polite">
+<dl>
+<dt>読書領域幅</dt><dd data-measure="reader-width">—</dd>
+<dt>本編高</dt><dd data-measure="flow-height">—</dd>
+<dt>明示した余白</dt><dd data-measure="pause-height">—</dd>
+<dt>明示した余白だけを除いた高</dt><dd data-measure="non-pause-height">—</dd>
+<dt>表示カット数（有効コマではない）</dt><dd data-measure="panel-count">—</dd>
+<dt>DPR</dt><dd data-measure="dpr">—</dd>
+<dt>画像失敗数</dt><dd data-measure="image-failures">—</dd>
+</dl>
+<p class="measurement-width-note" data-measure="width-note" hidden>390px幅で確認してください。</p>
+<p class="measurement-note">指定した空白区間だけを差し引いた値です。画像内の空白など、他の空白は除外していません。</p>
+</div>
+</details>'''
+
+
+MEASUREMENT_SCRIPT = r'''(() => {
+  const flow = document.getElementById("preview-flow");
+  const reader = document.querySelector(".reader");
+  const measurement = document.getElementById("preview-measurement");
+  if (!flow || !reader || !measurement) return;
+
+  const value = (name) => measurement.querySelector("[data-measure=\"" + name + "\"]");
+  const set = (name, text) => {
+    const node = value(name);
+    if (node) node.textContent = text;
+  };
+  const pixels = (number) => Math.round(number) + " CSS px";
+
+  const measure = () => {
+    const flowBox = flow.getBoundingClientRect();
+    const flowHeight = Number.isFinite(flowBox.height) ? flowBox.height : 0;
+    const pauseHeight = Array.from(flow.querySelectorAll(".pause"))
+      .reduce((total, node) => total + node.getBoundingClientRect().height, 0);
+    const readerWidth = reader.getBoundingClientRect().width;
+    const failedImages = Array.from(flow.querySelectorAll("img"))
+      .filter((image) => image.complete && image.naturalWidth === 0).length;
+    const metrics = {
+      readerWidthCssPx: readerWidth,
+      bodyHeightCssPx: flowHeight,
+      explicitPauseHeightCssPx: pauseHeight,
+      nonPauseHeightCssPx: Math.max(0, flowHeight - pauseHeight),
+      renderedPanelCount: flow.querySelectorAll("figure.panel").length,
+      devicePixelRatio: window.devicePixelRatio || 1,
+      imageFailureCount: failedImages
+    };
+    measurement.dataset.metrics = JSON.stringify(metrics);
+    set("reader-width", pixels(readerWidth));
+    set("flow-height", pixels(flowHeight));
+    set("pause-height", pixels(pauseHeight));
+    set("non-pause-height", pixels(metrics.nonPauseHeightCssPx));
+    set("panel-count", metrics.renderedPanelCount + " カット");
+    set("dpr", String(metrics.devicePixelRatio));
+    set("image-failures", String(metrics.imageFailureCount));
+    const widthNote = value("width-note");
+    if (widthNote) widthNote.hidden = Math.abs(readerWidth - 390) < 0.5;
+  };
+
+  const waitForImage = async (image) => {
+    if (!image.complete) await new Promise((resolve) => {
+      const finish = () => resolve();
+      image.addEventListener("load", finish, {once: true});
+      image.addEventListener("error", finish, {once: true});
+    });
+    if (typeof image.decode === "function") {
+      try {
+        await image.decode();
+      } catch (_) {
+        // The failure count is collected after the browser settles the image.
+      }
+    }
+  };
+
+  const waitForLayout = async () => {
+    await Promise.all(Array.from(flow.querySelectorAll("img")).map(waitForImage));
+    if (document.fonts && document.fonts.ready) {
+      await document.fonts.ready.catch(() => {});
+    }
+    await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    measure();
+  };
+
+  window.addEventListener("resize", measure, {passive: true});
+  if (typeof ResizeObserver === "function") {
+    new ResizeObserver(measure).observe(reader);
+  }
+  measure();
+  waitForLayout();
+})();'''
 
 
 def _render_document(manifest):
@@ -530,12 +633,15 @@ def _render_document(manifest):
 <html lang="ja"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} — ネーム確認用</title><style>{CSS}</style></head>
-<body><main class="reader" aria-label="{title} ネーム確認用">
+<body><main class="reader" style="--reference-width:{reference_width}px" aria-label="{title} ネーム確認用">
 <header class="draft-bar"><span class="draft-badge">ネーム確認用・下書き</span>
 <h1>{title}</h1><div class="draft-meta">{reference_width}px基準 / 360pxでも確認できる構成 preview</div></header>
 {notes}
+<div id="preview-flow">
 {''.join(rendered)}
+</div>
 <footer class="end-note">構成確認用の下書きです。完成原稿・公開版ではありません。</footer>
+{MEASUREMENT_HTML}
 </main>
 <script type="application/json" id="name-preview-assets">{asset_json}</script>
 <script>
@@ -547,6 +653,7 @@ def _render_document(manifest):
   }});
 }})();
 </script>
+<script>{MEASUREMENT_SCRIPT}</script>
 </body></html>
 '''
 
