@@ -1,0 +1,101 @@
+{
+  "360": {
+    "initial": {
+      "async": true,
+      "eager": 1,
+      "height": 800,
+      "images": 25,
+      "loaded": 4,
+      "pageHeight": 23750,
+      "pageWidth": 360,
+      "reservedDimensions": true,
+      "width": 360,
+      "y": 0
+    },
+    "steps": [
+      {
+        "images": 25,
+        "loaded": 4,
+        "pageHeight": 23750,
+        "pageWidth": 360,
+        "y": 0,
+        "file": "review/lazy-360-01.jpg"
+      }
+    ],
+    "final": {
+      "async": true,
+      "eager": 1,
+      "height": 800,
+      "images": 25,
+      "loaded": 25,
+      "pageHeight": 23750,
+      "pageWidth": 360,
+      "width": 360,
+      "y": 22950,
+      "file": "review/lazy-360-ending.jpg"
+    }
+  },
+  "390": {
+    "initial": {
+      "async": true,
+      "eager": 1,
+      "height": 844,
+      "images": 25,
+      "loaded": 4,
+      "pageHeight": 25697,
+      "pageWidth": 390,
+      "reservedDimensions": true,
+      "width": 390
+    },
+    "steps": [
+      {
+        "images": 25,
+        "loaded": 4,
+        "pageHeight": 25697,
+        "pageWidth": 390,
+        "y": 0,
+        "file": "review/lazy-390-01.jpg"
+      },
+      {
+        "images": 25,
+        "loaded": 25,
+        "pageHeight": 25697,
+        "pageWidth": 390,
+        "y": 1581.875,
+        "file": "review/lazy-390-02.jpg"
+      }
+    ],
+    "final": {
+      "async": true,
+      "eager": 1,
+      "height": 844,
+      "images": 25,
+      "loaded": 25,
+      "pageHeight": 25697,
+      "pageWidth": 390,
+      "width": 390,
+      "y": 24853.125,
+      "file": "review/lazy-390-ending.jpg"
+    }
+  },
+  "standalone": {
+    "initial": {
+      "allEmbedded": true,
+      "async": true,
+      "eager": 1,
+      "height": 800,
+      "images": 25,
+      "loaded": 4,
+      "pageWidth": 360,
+      "width": 360
+    },
+    "final": {
+      "images": 25,
+      "loaded": 25,
+      "pageHeight": 23750,
+      "pageWidth": 360,
+      "width": 360,
+      "y": 19950
+    }
+  }
+}

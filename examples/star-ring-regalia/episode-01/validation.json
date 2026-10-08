@@ -28,11 +28,11 @@
     }
   ],
   "standaloneReader": {
-    "allEmbeddedAndLoaded": true,
-    "height": 844,
     "images": 25,
-    "pageWidth": 390,
-    "width": 390
+    "allEmbeddedAndLoadedAfterNavigation": true,
+    "pageWidth": 360,
+    "initialEagerImages": 1,
+    "asynchronousDecoding": true
   },
   "visualReview": {
     "lettering": "Every dialogue and display read at both phone widths. Actual raster glyph size varies; no exact minimum is claimed. No duplicated HTML dialogue.",
@@ -59,5 +59,17 @@
   },
   "completeImage": "complete-390.jpg",
   "ios": "Catalog and 25 adopted image bytes synchronized. Physical-device validation not performed.",
-  "publication": "Replacement pending this episode PR merge, staged upload, public reading and old episode retirement."
+  "publication": "Replacement pending this episode PR merge, staged upload, public reading and old episode retirement.",
+  "loading": {
+    "eagerImages": 1,
+    "lazyImages": 24,
+    "decoding": "async",
+    "intrinsicDimensionsReserved": true,
+    "initialLoadedObserved": {
+      "390": 4,
+      "360": 4
+    },
+    "allImagesLoadedAfterNavigation": true,
+    "proof": "review/lazy-loading-checks.json"
+  }
 }
