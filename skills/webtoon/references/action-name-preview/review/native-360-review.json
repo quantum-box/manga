@@ -1,28 +1,27 @@
 {
-  "schema": "battle-name-preview-dramatic-native-review/v1",
+  "schema": "battle-name-preview-motion-effect-native-review/v1",
   "reviewedAt": "2026-10-09",
-  "status": "partial-preview-unadopted-no-material-visual-blocker",
-  "scope": "Independent final native review of the current 360 CSS px c02 and c05 composition proofs only. This is an unadopted 24-panel partial trial and is not a full-episode, finished-CG, or publication approval.",
+  "status": "pass-no-material-visual-blocker",
+  "scope": "Final visual review of the current action effects at 360 CSS px for c02 and c05, with 390 CSS px c06 used to verify the quiet p21 result. The 24-panel asset remains an unadopted partial name preview.",
   "actualReviewedFiles": [
     "skills/webtoon/references/action-name-preview/review/composition-360-c02.png",
+    "skills/webtoon/references/action-name-preview/review/composition-390-c02.png",
     "skills/webtoon/references/action-name-preview/review/composition-360-c05.png",
+    "skills/webtoon/references/action-name-preview/review/composition-390-c05.png",
+    "skills/webtoon/references/action-name-preview/review/composition-390-c06.png",
     "skills/webtoon/references/action-name-preview/rough/attack-breakout.png",
     "skills/webtoon/references/action-name-preview/rough/jump-breakout.png",
     "skills/webtoon/references/action-name-preview/rough/counter-breakout.png"
   ],
-  "proofHashes": {
-    "index.html": "388ffc75a8efe7351d33769c0068e27ec0861640ff33e4ba16969a9c24f3774e",
-    "plan.json": "aa3d235ce236da621f259940fdd6a3024541434a896fc3b41882ea241286ff89",
-    "rough/counter-breakout.png": "7554e74765cac9e5a95e81d80c0e8912d85d073d4b1e1fe11c592dd9e4220c0c"
+  "viewportChecks": {
+    "primaryWidthCssPx": 360,
+    "secondaryWidthCssPx": 390,
+    "proofType": "native continuous composition proof",
+    "physicalDevice": "not checked"
   },
-  "viewport": {
-    "widthCssPx": 360,
-    "proofType": "native continuous composition proof"
-  },
-  "explicitVisualConfidence": "high for the two supplied current 360px composition images; scope is limited to c02/c05 and the stated checks",
   "findings": [
     {
-      "id": "c02-sfx-and-action-read",
+      "id": "c02-spear-sweep",
       "result": "pass",
       "panels": [
         "p05",
@@ -30,31 +29,28 @@
         "p07",
         "p08"
       ],
-      "observation": "ブォンッ, ザッ, カラン…… and the p07 dialogue remain visible and separated enough to follow the attack, evade, dropped sword, and immediate consequence. No SFX covers a required face or hand. The c02 vertical arrangement reads from the full p05 attack into the right inset and then the lower sword states."
+      "observation": "p05 now has broad tapered sweep bands and grouped stone streaks that follow the spear from the gatekeeper toward the right foreground. The spear origin, both figures, Aki's face and hand, and ブォンッ remain readable at 360px; the effect ends before the p06 reaction inset. The sequence still reads as sweep -> evade -> sword drop -> blocked recovery."
     },
     {
-      "id": "c05-sfx-voice-and-action-read",
+      "id": "c05-jump-and-takeoff",
       "result": "pass",
       "panels": [
         "p17",
         "p18",
-        "p19",
-        "p20"
+        "p19"
       ],
-      "observation": "The current right-shifted ダンッ has visible leading ink and a small gap from the voice-p18 white surface; it does not mask the voice or the reaction-mask image. ザッ and ガキィンッ！ are fully legible, with the latter in the intended white gutter. The four-step order reads as jump, mask reaction, landing, then one clash."
+      "observation": "p17's dust and stone wake is visibly anchored to the lower-right step behind Aki's boot, while long directional strokes carry the body and single sword toward the upper-left. The guard remains a separate observer below, ダンッ stays legible, and p18's 何っ！？ plus p19's landing inset are not covered. The path reads as takeoff -> airborne crossing -> reaction -> landing rather than decorative particles."
     },
     {
-      "id": "inner-frame-breakout",
-      "result": "pass-intentional",
+      "id": "p20-single-clash",
+      "result": "pass",
       "panels": [
-        "p05",
-        "p17",
         "p20"
       ],
-      "observation": "The spear/body/leg breakout in c02 and the sword/body/impact breakout in c05 visibly cross the drawn oblique inner borders while retaining clean white outer margin. This matches the source and plan instruction to display the full unmasked breakout asset; no accidental CSS polygon clipping or source-border truncation was visible."
+      "observation": "The stronger impact burst is centered on one sword-to-spear crossing. At 360px, the guard's two hands lead into one solid spear through the contact and toward the right head, while Aki's closed sword grip and blade remain traceable. The burst rays follow the deflection and the frame breakout without creating a second shaft, second blade, or extra contact. ガキィンッ！ remains readable in the white gutter."
     },
     {
-      "id": "face-hand-weapon-continuity",
+      "id": "faces-hands-lettering",
       "result": "pass",
       "panels": [
         "p05",
@@ -63,30 +59,39 @@
         "p19",
         "p20"
       ],
-      "observation": "The attack and jump keep the principal figures readable. p17 shows Aki's closed sword hand and continuous blade; p18 preserves the gatekeeper's mask; p19 preserves the landing hand/sword relationship; p20 shows the closed grip, one sword-to-spear contact, and a continuous spear redirecting right. No disconnected shaft or obscured required face/hand is visible."
+      "observation": "The added ink effects are directional and leave the required faces, grips, mask reaction, speech, and sound lettering visible at phone width. No generated Japanese text or duplicate character silhouette appears in the updated source assets."
     },
     {
-      "id": "reading-order",
+      "id": "p20-to-p21-result",
       "result": "pass",
       "panels": [
-        "c02",
-        "c05"
+        "p20",
+        "p21"
       ],
-      "observation": "At 360px the intended right-to-left action direction remains clear inside the descending vertical flow: p05 attack -> evade/drop aftermath, and p17 takeoff -> p18 reaction -> p19 landing -> p20 deflection. The small insets overlap the large compositions as designed without reversing the read."
+      "observation": "The 390px c06 proof preserves the intended quiet aftermath: Aki is left with the sword lowered and the guard's spear is already redirected low to the right. This is a readable result of p20's deflection, with the impact effect ending before the quiet panel rather than producing an unintended continuing attack."
     }
   ],
   "materialBugs": [],
   "remainingIssues": [
-    "This is still an unadopted partial name preview; the review does not approve the full episode, final art, or publication."
+    "This review covers only the revised action/effect sequence and the p21 continuation; it does not approve the full episode, finished art, publication, or physical-device rendering."
   ],
-  "overall": "The current 360px c02 and c05 proofs pass the requested SFX, face/hand, intentional inner-frame breakout, and reading-order checks. No material visual blocker was confirmed in this scoped review.",
-  "compositionProofHashes": {
-    "review/composition-360-c02.png": "33f6f432dd26824546770615b524507cd10d60a84e27591d3e24df711eb717d8",
-    "review/composition-360-c05.png": "c47bb2cff03ff93c195797822afdcf221615b1f6618c6992f7b5b9c54013c756"
+  "sha256": {
+    "review/composition-360-c02.png": "cccc3545312e4dded3513c65858f751f858b718d3f2541eaa13cb9937295b323",
+    "review/composition-390-c02.png": "1bde909303e1e5381e5ff82f8e8dcdc22ac1ac2eff31b6855ca951d0ff45acb7",
+    "review/composition-360-c05.png": "d0df9f6307ce38218e1f1275ac35591c6df2c99bb6f19c3ff59e07c8e8b70d4c",
+    "review/composition-390-c05.png": "6258eacca678b00deb2453ae3c33faf95a5e4e4b09241a20906403fcc234b057",
+    "review/composition-390-c06.png": "55ab060d5d819ebd9ba0ce518fd6a16d89f247d6267c5a0360252762a49a02f6",
+    "rough/attack-breakout.png": "bfa728c42fd645c917b4c97d63a81659dd6506db00cfa82062d17752ae7ea4a2",
+    "rough/jump-breakout.png": "df76d893da6ca94c7dbcb343963aea5bcc96ede2c4a5756a32b3557c49eca2df",
+    "rough/counter-breakout.png": "76087684c90d339a8ad185e1c33fec966d91be37402590cc25fe42317c3e2c0d"
+  },
+  "proofHashes": {
+    "index.html": "02f77a6188bc42e236a9acbaf589ffe57ee60f7dd3ee4301ccd488823c420f90",
+    "plan.json": "944025bd798aaf9993db20f780b53190cfbfb73271b4fb73e5519727ce7566df"
   },
   "priorUnchangedSequenceReview": {
-    "gitRef": "3659e7f6",
+    "gitRef": "8497408e",
     "path": "skills/webtoon/references/action-name-preview/review/native-360-review.json",
-    "scope": "Earlier unchanged full 24-cut source content; this review specifically verifies the revised c02/c05 compositions"
+    "scope": "Unchanged 24-cut content and panel composition; this review covers motion effects and p21 result"
   }
 }

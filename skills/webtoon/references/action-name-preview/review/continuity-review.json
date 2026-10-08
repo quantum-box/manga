@@ -1,67 +1,83 @@
 {
-  "schema": "battle-dramatic-continuity-review/v1",
+  "schema": "battle-continuity-review/v1",
   "title": "橋上の一歩",
-  "scope": "final_c05_breakout_and_p21_continuation",
-  "status": "pass_with_scope_note",
-  "checked_assets": [
-    "skills/webtoon/references/action-name-preview/rough/counter-breakout.png",
+  "scope": "current_motion_effects_and_p21_result",
+  "reviewedAt": "2026-10-09",
+  "overall_status": "pass_with_scope_note",
+  "checked": [
+    "skills/webtoon/references/action-name-preview/review/composition-360-c02.png",
+    "skills/webtoon/references/action-name-preview/review/composition-390-c02.png",
+    "skills/webtoon/references/action-name-preview/review/composition-360-c05.png",
     "skills/webtoon/references/action-name-preview/review/composition-390-c05.png",
     "skills/webtoon/references/action-name-preview/review/composition-390-c06.png",
-    "skills/webtoon/references/action-name-preview/rough/sheet-04.png",
-    "skills/webtoon/references/action-name-preview/plan.json"
+    "skills/webtoon/references/action-name-preview/rough/attack-breakout.png",
+    "skills/webtoon/references/action-name-preview/rough/jump-breakout.png",
+    "skills/webtoon/references/action-name-preview/rough/counter-breakout.png"
   ],
-  "method": "現行のcounter-breakout.pngと390pxのc05 c06連続画像を個別に目視し p19 p20 p21の計画と照合",
-  "checks": {
-    "one_spear": {
-      "status": "pass",
-      "finding": "counter-breakout.pngでは門番の両手の握りから中央の接触点を通り右側の穂先まで一本の連続した槍軸として読める",
-      "qualification": "手の左右は背面寄りの構図なので判定していない"
-    },
-    "one_sword": {
-      "status": "pass",
-      "finding": "アキ側には一つの閉じた握りとそこから接触点へ続く一本の刃があり p19で持った剣がp20で連続している",
-      "qualification": "衝撃線や破片を二本目の剣として数えていない"
-    },
-    "single_contact": {
-      "status": "pass",
-      "finding": "剣と槍の交差は中央上寄りの一箇所に集まり ガキィンッ！も一回の衝突として読める",
-      "direction": "交差後の槍軸は右手すり側へ伸びる"
-    },
-    "c05_reading": {
-      "status": "pass",
-      "finding": "p17の足と剣の枠外突破 p18の門番の反応浮き p19の小さな着地 p20の大きな接触へ大小差を保って進む",
-      "reveal_control": "p18の浮きコマは仮面と何っ！？だけで p20の接触を先に見せない",
-      "sound_state": "ダンッとザッの後に衝突音ガキィンッ！が来て衝撃音を連打していない"
-    },
-    "p21_continuation": {
-      "status": "pass",
-      "finding": "c06のp21はアキが左寄りで剣を下げ 門番が中央で槍を右低く外した状態になり c05の接触結果をそのまま受ける",
-      "aftermath": "p21の橋の広い無音が接触直後の結果を受け止める"
-    },
-    "story_axis": {
-      "status": "pass",
-      "finding": "c05ではアキの跳躍が右下から左上へ進み p19で門番の内側へ入り p20で槍を右へ流し p21で両者が離れて静止する"
-    }
-  },
-  "material_mismatches": [],
-  "do_not_claim": [
-    "手の左右の確定",
-    "完成作画としての細部品質",
-    "物理端末での表示確認"
-  ],
-  "conclusion": "現行c05のラフと連続表示では 一本の槍 一本の剣 一箇所の接触 p21への結果が読める",
-  "reviewedAt": "2026-10-09",
   "sourceSha256": {
-    "index.html": "388ffc75a8efe7351d33769c0068e27ec0861640ff33e4ba16969a9c24f3774e",
-    "plan.json": "aa3d235ce236da621f259940fdd6a3024541434a896fc3b41882ea241286ff89",
-    "rough/counter-breakout.png": "7554e74765cac9e5a95e81d80c0e8912d85d073d4b1e1fe11c592dd9e4220c0c"
+    "index.html": "02f77a6188bc42e236a9acbaf589ffe57ee60f7dd3ee4301ccd488823c420f90",
+    "plan.json": "944025bd798aaf9993db20f780b53190cfbfb73271b4fb73e5519727ce7566df"
   },
+  "findings": [
+    {
+      "id": "c02-spear-sweep",
+      "result": "pass",
+      "panels": [
+        "p05",
+        "p06",
+        "p07",
+        "p08"
+      ],
+      "observation": "p05 now has broad tapered sweep bands and grouped stone streaks that follow the spear from the gatekeeper toward the right foreground. The spear origin, both figures, Aki's face and hand, and ブォンッ remain readable at 360px; the effect ends before the p06 reaction inset. The sequence still reads as sweep -> evade -> sword drop -> blocked recovery."
+    },
+    {
+      "id": "c05-jump-and-takeoff",
+      "result": "pass",
+      "panels": [
+        "p17",
+        "p18",
+        "p19"
+      ],
+      "observation": "p17's dust and stone wake is visibly anchored to the lower-right step behind Aki's boot, while long directional strokes carry the body and single sword toward the upper-left. The guard remains a separate observer below, ダンッ stays legible, and p18's 何っ！？ plus p19's landing inset are not covered. The path reads as takeoff -> airborne crossing -> reaction -> landing rather than decorative particles."
+    },
+    {
+      "id": "p20-single-clash",
+      "result": "pass",
+      "panels": [
+        "p20"
+      ],
+      "observation": "The stronger impact burst is centered on one sword-to-spear crossing. At 360px, the guard's two hands lead into one solid spear through the contact and toward the right head, while Aki's closed sword grip and blade remain traceable. The burst rays follow the deflection and the frame breakout without creating a second shaft, second blade, or extra contact. ガキィンッ！ remains readable in the white gutter."
+    },
+    {
+      "id": "faces-hands-lettering",
+      "result": "pass",
+      "panels": [
+        "p05",
+        "p17",
+        "p18",
+        "p19",
+        "p20"
+      ],
+      "observation": "The added ink effects are directional and leave the required faces, grips, mask reaction, speech, and sound lettering visible at phone width. No generated Japanese text or duplicate character silhouette appears in the updated source assets."
+    },
+    {
+      "id": "p20-to-p21-result",
+      "result": "pass",
+      "panels": [
+        "p20",
+        "p21"
+      ],
+      "observation": "The 390px c06 proof preserves the intended quiet aftermath: Aki is left with the sword lowered and the guard's spear is already redirected low to the right. This is a readable result of p20's deflection, with the impact effect ending before the quiet panel rather than producing an unintended continuing attack."
+    }
+  ],
+  "material_mismatches": [],
   "priorUnchangedSequenceReview": {
-    "gitRef": "3659e7f6",
-    "path": "skills/webtoon/references/action-name-preview/review/continuity-review.json",
-    "scope": "Earlier source sheets, dropped sword through pickup, and bell-tower motivation; this revision rechecks replaced action drawings and p21 continuation"
+    "gitRef": "8497408e",
+    "path": "skills/webtoon/references/action-name-preview/review/continuity-review.json"
   },
-  "finalLetteringDelta": {
-    "p17": "SFX x62 to66; root inspected the fresh 390px native composition; material contact unchanged"
-  }
+  "not_verified": [
+    "physical phone",
+    "finished art anatomy and laterality",
+    "full episode quantity or adoption"
+  ]
 }

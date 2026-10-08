@@ -82,7 +82,8 @@
     "dprAndResizeChecked": true,
     "desktop390Checked": true,
     "brokenImageCheckSkippedForPartialTrial": true,
-    "sourceDrawnFrameBreakoutVisuallyChecked": true,
+    "approvedRenderLayoutPreserved": true,
+    "currentMotionEffectsVisuallyChecked": true,
     "currentNative360OverlapCandidatesReviewed": true
   },
   "visualReview": {
@@ -91,34 +92,27 @@
         "review/composition-390-c02.png",
         "review/composition-390-c05.png"
       ],
-      "changedContinuousFiles": [
-        "review/window-390-001.png",
-        "review/window-390-008.png",
-        "review/window-390-010.png",
-        "review/window-390-011.png"
-      ],
-      "additional360File": "review/composition-360-c05.png",
       "observations": [
-        "Drawn inner frames are genuinely crossed by silhouettes and weapons, with full PNG sources shown",
-        "Jump is large, reaction on the right, landing on the left, then one large contact",
-        "Clash SFX ends before the next quiet image; p21 intact spear follows contact"
+        "Bold spear-sweep wake follows left to foreground right; dust shows hero retreat",
+        "Jump dust begins at right low step and trajectory rises upper-left",
+        "One large contact burst follows sword swing and spear rebound, with one continuous weapon each",
+        "Existing speech and SFX remain clear"
       ],
       "priorUnchangedSequenceReview": {
-        "gitRef": "3659e7f6",
+        "gitRef": "8497408e",
         "path": "skills/webtoon/references/action-name-preview/validation.json"
-      },
-      "finalLetteringDelta": "p17 SFX shifted x62 to66, fresh native c05 inspected; full word is clear of the white voice surface"
+      }
     },
     "independent360": {
       "result": "pass_with_partial_trial_scope",
       "file": "review/native-360-review.json",
-      "actualScope": "Current c02/c05 native compositions and dedicated source art",
+      "actualScope": "Current c02/c05 effects and source originals; 390 c06 for p21 quiet result",
       "blockers": []
     },
     "continuity": {
       "result": "pass_with_scope_note",
       "file": "review/continuity-review.json",
-      "scope": "current c05 breakout and p21 continuation; unchanged earlier sequence retained from Git baseline"
+      "scope": "Current action motion and p21 continuation; earlier unchanged sequence retained from Git baseline"
     }
   },
   "remainingDisplayCandidates": [
@@ -138,8 +132,8 @@
   ],
   "readerTabRefresh": "not_performed; manually reload the existing tab or open the updated HTML link",
   "sourceSha256": {
-    "index.html": "388ffc75a8efe7351d33769c0068e27ec0861640ff33e4ba16969a9c24f3774e",
-    "plan.json": "aa3d235ce236da621f259940fdd6a3024541434a896fc3b41882ea241286ff89"
+    "index.html": "02f77a6188bc42e236a9acbaf589ffe57ee60f7dd3ee4301ccd488823c420f90",
+    "plan.json": "944025bd798aaf9993db20f780b53190cfbfb73271b4fb73e5519727ce7566df"
   },
   "reviewedAt": "2026-10-09",
   "dramaticSfxFontCssPx": {
@@ -158,5 +152,52 @@
     "390": 15,
     "360": 14,
     "overlapCssPx": 150
+  },
+  "feedback": {
+    "panelLayout": "positive_user_feedback_preserved",
+    "effectRevision": "updated_preview_awaiting_response",
+    "finishedArt": "not_started"
+  },
+  "motionEffects": {
+    "p05": {
+      "origin": "gatekeeper shoulder and spear sweep on left; sliding hero boot",
+      "trajectory": "left to foreground right along spear sweep",
+      "graphic": "broad tapered ink wind bands, converging speed streaks, boot scrape and dust",
+      "result": "hero recoils right; no impact yet"
+    },
+    "p17": {
+      "origin": "low right stone step at takeoff",
+      "trajectory": "lower right toward upper left behind airborne hero",
+      "graphic": "takeoff dust fan, long directional wake, clothing and boot streaks",
+      "result": "hero clears spear; sword remains held, no sword swing yet"
+    },
+    "p20": {
+      "origin": "hero upward sword swing and single sword-spear crossing",
+      "trajectory": "swing rises into contact; spear recoil flows from contact toward right spearhead",
+      "graphic": "broad swing wake, high-contrast contact burst, grouped rebound rays and foot scrape",
+      "result": "one continuous spear deflected right; effects end before quiet p21"
+    }
+  },
+  "productionReferences": {
+    "art-prompts.md": "Effects-only edit keeps characters, weapons, current pose and literal source record",
+    "cross-panel-sounds.md": {
+      "viewed": [
+        "tower-forge/sound-spans/after-21-390.jpg"
+      ],
+      "applied": "Keep large single contact sound clear and end it before quiet aftermath"
+    },
+    "scroll-pacing.md": {
+      "viewed": [
+        "spacious-before.jpg",
+        "spacious-after.jpg"
+      ],
+      "applied": "Retain existing reaction, landing and consequence intervals rather than filling every gap"
+    },
+    "whitespace-example.md": {
+      "viewed": [
+        "zero-break/whitespace/review/window-390-03.png"
+      ],
+      "applied": "Preserve separate sparse voice and quiet result around dense actions"
+    }
   }
 }

@@ -312,6 +312,12 @@
           1
         ],
         "frame": "none"
+      },
+      "motionEffects": {
+        "origin": "gatekeeper shoulder and spear sweep on left; sliding hero boot",
+        "trajectory": "left to foreground right along spear sweep",
+        "graphic": "broad tapered ink wind bands, converging speed streaks, boot scrape and dust",
+        "result": "hero recoils right; no impact yet"
       }
     },
     {
@@ -676,6 +682,12 @@
           1
         ],
         "frame": "none"
+      },
+      "motionEffects": {
+        "origin": "low right stone step at takeoff",
+        "trajectory": "lower right toward upper left behind airborne hero",
+        "graphic": "takeoff dust fan, long directional wake, clothing and boot streaks",
+        "result": "hero clears spear; sword remains held, no sword swing yet"
       }
     },
     {
@@ -767,6 +779,12 @@
           1
         ],
         "frame": "none"
+      },
+      "motionEffects": {
+        "origin": "hero upward sword swing and single sword-spear crossing",
+        "trajectory": "swing rises into contact; spear recoil flows from contact toward right spearhead",
+        "graphic": "broad swing wake, high-contrast contact burst, grouped rebound rays and foot scrape",
+        "result": "one continuous spear deflected right; effects end before quiet p21"
       }
     },
     {
@@ -898,5 +916,10 @@
   ],
   "actual_source_png_count": 7,
   "effective_panel_count": 24,
-  "adoption": "pending_user_response"
+  "adoption": "pending_user_response",
+  "feedback": {
+    "panelLayout": "positive_user_feedback_keep_current_layout",
+    "effectRevision": "make_physical_movement_bolder_and_readable",
+    "finishedArt": "await_updated_preview_response"
+  }
 }

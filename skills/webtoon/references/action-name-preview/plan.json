@@ -194,7 +194,13 @@
           "x": 63,
           "y": 9
         }
-      ]
+      ],
+      "motionEffects": {
+        "origin": "gatekeeper shoulder and spear sweep on left; sliding hero boot",
+        "trajectory": "left to foreground right along spear sweep",
+        "graphic": "broad tapered ink wind bands, converging speed streaks, boot scrape and dust",
+        "result": "hero recoils right; no impact yet"
+      }
     },
     {
       "id": "p06",
@@ -612,7 +618,13 @@
           "x": 66,
           "y": 92
         }
-      ]
+      ],
+      "motionEffects": {
+        "origin": "low right stone step at takeoff",
+        "trajectory": "lower right toward upper left behind airborne hero",
+        "graphic": "takeoff dust fan, long directional wake, clothing and boot streaks",
+        "result": "hero clears spear; sword remains held, no sword swing yet"
+      }
     },
     {
       "id": "p18",
@@ -713,7 +725,13 @@
           "x": 47,
           "y": 90
         }
-      ]
+      ],
+      "motionEffects": {
+        "origin": "hero upward sword swing and single sword-spear crossing",
+        "trajectory": "swing rises into contact; spear recoil flows from contact toward right spearhead",
+        "graphic": "broad swing wake, high-contrast contact burst, grouped rebound rays and foot scrape",
+        "result": "one continuous spear deflected right; effects end before quiet p21"
+      }
     },
     {
       "id": "pause-05",
@@ -873,5 +891,10 @@
       "height": 260,
       "purpose": "勝利説明で急がず怖さを抱えた通過で場面を閉じる／次の動作をまだ見せない間"
     }
-  ]
+  ],
+  "feedback": {
+    "panelLayout": "positive_user_feedback_keep_current_layout",
+    "effectRevision": "make_physical_movement_bolder_and_readable",
+    "finishedArt": "await_updated_preview_response"
+  }
 }
