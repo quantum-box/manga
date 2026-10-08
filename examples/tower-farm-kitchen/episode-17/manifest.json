@@ -1,0 +1,561 @@
+{
+  "number": 17,
+  "title": "根が飲んでいる",
+  "time": "49日目・昼前",
+  "change": "守衛は既存の水路と魔力で水圧を使って動く古い維持装置。作物が数秒で枯れる仕組みではない。コウは小さな水流試験で接続を確かめ、枝水路の手動迂回を提案する。主路・居住区の水を止めない。",
+  "state": "守衛は既存の水路と魔力で水圧を使って動く古い維持装置。作物が数秒で枯れる仕組みではない。コウは小さな水流試験で接続を確かめ、枝水路の手動迂回を提案する。主路・居住区の水を止めない。",
+  "revision": "2026-10-08-following",
+  "sources": [
+    {
+      "id": "01-guard-and-watch",
+      "art": "art/01-guard-and-watch.png",
+      "description": "Continuation same FOURTH FLOOR branch with unchanged guardian armor and wet channels. Row buckler and sword holds retreat line, Sera small water deflection shields splash, Kou watches attached roots while staying behind stone curb. No hero suddenly swordmaster.",
+      "dialogue": [
+        [
+          "ロウ",
+          "長くは\n持たないぞ"
+        ],
+        [
+          "コウ",
+          "少しだけ\n時間をくれ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-guard-and-watch.prompt.txt",
+      "soundEffects": [],
+      "width": 740,
+      "height": 2126,
+      "sha256": "82b648b2789d98900c9bd2241652c50b560b7e78df6c39761c33f3042f657dfe"
+    },
+    {
+      "id": "02-not-a-normal-tree",
+      "art": "art/02-not-a-normal-tree.png",
+      "description": "Kou examines a detached already fallen root segment away from food: hollow tube-like interior and carved junction collar. Sera knows ancient maintenance enchantment, separate explaining closeup, no dense tech diagram text.",
+      "dialogue": [
+        [
+          "コウ",
+          "中が\n空洞になってる"
+        ],
+        [
+          "セラ",
+          "昔の守衛装置よ\n水で関節を動かす"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 220,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-not-a-normal-tree.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "a675ce86970083f9d0ff5ee3915edf98e193fee718b4ea231bef47804fe9abf2"
+    },
+    {
+      "id": "03-water-and-motion",
+      "art": "art/03-water-and-motion.png",
+      "description": "Clear closeup water drawn through one feeder root and a joint swelling as guardian lifts arm. Kou compares two observations, translucent own work record frame only simple measured arrows with no text. Sera follows his pointing.",
+      "dialogue": [
+        [
+          "コウ",
+          "水が入ると\n腕が張る"
+        ],
+        [
+          "コウ",
+          "ここを\n確かめたい"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-water-and-motion.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "d1701950bf19834e9b3c4594dfd0433283798a909d4e352f3dfb90ca3e508eed"
+    },
+    {
+      "id": "04-small-trial",
+      "art": "art/04-small-trial.png",
+      "description": "Kou behind protection places plain wood wedge at small side channel; Sera redirects a modest existing trickle for few seconds using water spell from blue-stone staff, costs effort; no water created from nothing or whole city flood. Guardian arm loses part of stiffness only, Row notices.",
+      "dialogue": [
+        [
+          "コウ",
+          "この流れだけ\n少し避けて"
+        ],
+        [
+          "セラ",
+          "この量なら！"
+        ],
+        [
+          "ロウ",
+          "腕が\n鈍った……！"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 280,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-small-trial.prompt.txt",
+      "soundEffects": [],
+      "width": 726,
+      "height": 2167,
+      "sha256": "516e1d49da7c7089a6ecaefbe43b15c97f81b73dfff3acd3c5b40b7909e9853c"
+    },
+    {
+      "id": "05-proof",
+      "art": "art/05-proof.png",
+      "description": "Sera releases small redirect and water returns, guardian same arm resumes tension. Kou watches precisely then looks up with earned certainty, silent listening Row face. Preserve guardian dangerous and active.",
+      "dialogue": [
+        [
+          "コウ",
+          "戻すと\n動きも戻った"
+        ],
+        [
+          "コウ",
+          "水路が\nこいつの力だ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 460,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-proof.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "2f18d7df033ad7e4abdc1984a887e2e9789bc8918eec315927c79d240b08ff4c"
+    },
+    {
+      "id": "06-the-old-bypass",
+      "art": "art/06-the-old-bypass.png",
+      "description": "Follow channel to old branching stone spillway with manual sliding wooden gate and separate bypass trough, no modern wheel console. Kou peers at soil level and old gate track, measures slope with water in shallow cup; Sera identifies outlet to empty return basin.",
+      "dialogue": [
+        [
+          "セラ",
+          "この溝は\n空の戻り池へ続く"
+        ],
+        [
+          "コウ",
+          "水を捨てずに\n迂回できる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-old-bypass.prompt.txt",
+      "soundEffects": [],
+      "width": 725,
+      "height": 2169,
+      "sha256": "54c339e38b184a190377cedd1a5204e737bed0808732f22c97312498a53966ce"
+    },
+    {
+      "id": "07-the-plan",
+      "art": "art/07-the-plan.png",
+      "description": "Kou draws simple pictorial arrows in soil with twig, separate faces Row and Sera listen. Plan divert only guardian branch, guard gate operator, no central city water stopped. Iris absent, Leon absent.",
+      "dialogue": [
+        [
+          "コウ",
+          "俺が堰を動かす"
+        ],
+        [
+          "コウ",
+          "セラは流れを\n戻り池へ"
+        ],
+        [
+          "ロウ",
+          "その間は\n俺が守る"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 250,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-the-plan.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "d1a15e2d669bb127b756130e74d120df89a48e8d62370f260d789f1a148c0acd"
+    },
+    {
+      "id": "08-one-step-out",
+      "art": "art/08-one-step-out.png",
+      "description": "Kou tightens work gloves and grips wooden gate handle, leaves safe curb while Row steps between him and guardian, Sera raises staff. Large resolve face no smug grin, tiny fear breathed out. End before gate opens or guardian loses armor.",
+      "dialogue": [
+        [
+          "コウ",
+          "畑の水なら\n俺の仕事だ"
+        ],
+        [
+          "ロウ",
+          "任せた\n農夫！"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 520,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-one-step-out.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "9befc81ed3394b1643988ee0e6870964c5728e1b283ac2fd8de1170872ac9c70"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-guard-and-watch-window-01",
+      "art": "art/01-guard-and-watch.png",
+      "description": "Continuation same FOURTH FLOOR branch with unchanged guardian armor and wet channels. Row buckler and sword holds retreat line, Sera small water deflection shields splash, Kou watches attached roots while staying behind stone curb. No hero suddenly swordmaster.",
+      "dialogue": [
+        [
+          "ロウ",
+          "長くは\n持たないぞ"
+        ],
+        [
+          "コウ",
+          "少しだけ\n時間をくれ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-guard-and-watch.prompt.txt",
+      "soundEffects": [],
+      "width": 740,
+      "height": 2126,
+      "sha256": "82b648b2789d98900c9bd2241652c50b560b7e78df6c39761c33f3042f657dfe",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 740,
+        "height": 2126
+      },
+      "sourceId": "01-guard-and-watch",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-not-a-normal-tree-window-01",
+      "art": "art/02-not-a-normal-tree.png",
+      "description": "Kou examines a detached already fallen root segment away from food: hollow tube-like interior and carved junction collar. Sera knows ancient maintenance enchantment, separate explaining closeup, no dense tech diagram text.",
+      "dialogue": [
+        [
+          "コウ",
+          "中が\n空洞になってる"
+        ],
+        [
+          "セラ",
+          "昔の守衛装置よ\n水で関節を動かす"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 210,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-not-a-normal-tree.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "a675ce86970083f9d0ff5ee3915edf98e193fee718b4ea231bef47804fe9abf2",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 1261
+      },
+      "sourceId": "02-not-a-normal-tree",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-not-a-normal-tree-window-02",
+      "art": "art/02-not-a-normal-tree.png",
+      "description": "Kou examines a detached already fallen root segment away from food: hollow tube-like interior and carved junction collar. Sera knows ancient maintenance enchantment, separate explaining closeup, no dense tech diagram text.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 250,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-not-a-normal-tree.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "a675ce86970083f9d0ff5ee3915edf98e193fee718b4ea231bef47804fe9abf2",
+      "crop": {
+        "x": 0,
+        "y": 1261,
+        "width": 724,
+        "height": 911
+      },
+      "sourceId": "02-not-a-normal-tree",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-water-and-motion-window-01",
+      "art": "art/03-water-and-motion.png",
+      "description": "Clear closeup water drawn through one feeder root and a joint swelling as guardian lifts arm. Kou compares two observations, translucent own work record frame only simple measured arrows with no text. Sera follows his pointing.",
+      "dialogue": [
+        [
+          "コウ",
+          "水が入ると\n腕が張る"
+        ],
+        [
+          "コウ",
+          "ここを\n確かめたい"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 190,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-water-and-motion.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "d1701950bf19834e9b3c4594dfd0433283798a909d4e352f3dfb90ca3e508eed",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "03-water-and-motion",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-small-trial-window-01",
+      "art": "art/04-small-trial.png",
+      "description": "Kou behind protection places plain wood wedge at small side channel; Sera redirects a modest existing trickle for few seconds using water spell from blue-stone staff, costs effort; no water created from nothing or whole city flood. Guardian arm loses part of stiffness only, Row notices.",
+      "dialogue": [
+        [
+          "コウ",
+          "この流れだけ\n少し避けて"
+        ],
+        [
+          "セラ",
+          "この量なら！"
+        ],
+        [
+          "ロウ",
+          "腕が\n鈍った……！"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 350,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-small-trial.prompt.txt",
+      "soundEffects": [],
+      "width": 726,
+      "height": 2167,
+      "sha256": "516e1d49da7c7089a6ecaefbe43b15c97f81b73dfff3acd3c5b40b7909e9853c",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 726,
+        "height": 2167
+      },
+      "sourceId": "04-small-trial",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-proof-window-01",
+      "art": "art/05-proof.png",
+      "description": "Sera releases small redirect and water returns, guardian same arm resumes tension. Kou watches precisely then looks up with earned certainty, silent listening Row face. Preserve guardian dangerous and active.",
+      "dialogue": [
+        [
+          "コウ",
+          "戻すと\n動きも戻った"
+        ],
+        [
+          "コウ",
+          "水路が\nこいつの力だ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 330,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-proof.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "2f18d7df033ad7e4abdc1984a887e2e9789bc8918eec315927c79d240b08ff4c",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "05-proof",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-the-old-bypass-window-01",
+      "art": "art/06-the-old-bypass.png",
+      "description": "Follow channel to old branching stone spillway with manual sliding wooden gate and separate bypass trough, no modern wheel console. Kou peers at soil level and old gate track, measures slope with water in shallow cup; Sera identifies outlet to empty return basin.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-old-bypass.prompt.txt",
+      "soundEffects": [],
+      "width": 725,
+      "height": 2169,
+      "sha256": "54c339e38b184a190377cedd1a5204e737bed0808732f22c97312498a53966ce",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 725,
+        "height": 934
+      },
+      "sourceId": "06-the-old-bypass",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-the-old-bypass-window-02",
+      "art": "art/06-the-old-bypass.png",
+      "description": "Follow channel to old branching stone spillway with manual sliding wooden gate and separate bypass trough, no modern wheel console. Kou peers at soil level and old gate track, measures slope with water in shallow cup; Sera identifies outlet to empty return basin.",
+      "dialogue": [
+        [
+          "セラ",
+          "この溝は\n空の戻り池へ続く"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 240,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-old-bypass.prompt.txt",
+      "soundEffects": [],
+      "width": 725,
+      "height": 2169,
+      "sha256": "54c339e38b184a190377cedd1a5204e737bed0808732f22c97312498a53966ce",
+      "crop": {
+        "x": 0,
+        "y": 934,
+        "width": 725,
+        "height": 361
+      },
+      "sourceId": "06-the-old-bypass",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-the-old-bypass-window-03",
+      "art": "art/06-the-old-bypass.png",
+      "description": "Follow channel to old branching stone spillway with manual sliding wooden gate and separate bypass trough, no modern wheel console. Kou peers at soil level and old gate track, measures slope with water in shallow cup; Sera identifies outlet to empty return basin.",
+      "dialogue": [
+        [
+          "コウ",
+          "水を捨てずに\n迂回できる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 220,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-old-bypass.prompt.txt",
+      "soundEffects": [],
+      "width": 725,
+      "height": 2169,
+      "sha256": "54c339e38b184a190377cedd1a5204e737bed0808732f22c97312498a53966ce",
+      "crop": {
+        "x": 0,
+        "y": 1295,
+        "width": 725,
+        "height": 874
+      },
+      "sourceId": "06-the-old-bypass",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-the-plan-window-01",
+      "art": "art/07-the-plan.png",
+      "description": "Kou draws simple pictorial arrows in soil with twig, separate faces Row and Sera listen. Plan divert only guardian branch, guard gate operator, no central city water stopped. Iris absent, Leon absent.",
+      "dialogue": [
+        [
+          "コウ",
+          "俺が堰を動かす"
+        ],
+        [
+          "コウ",
+          "セラは流れを\n戻り池へ"
+        ],
+        [
+          "ロウ",
+          "その間は\n俺が守る"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 260,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-the-plan.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "d1a15e2d669bb127b756130e74d120df89a48e8d62370f260d789f1a148c0acd",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "07-the-plan",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-one-step-out-window-01",
+      "art": "art/08-one-step-out.png",
+      "description": "Kou tightens work gloves and grips wooden gate handle, leaves safe curb while Row steps between him and guardian, Sera raises staff. Large resolve face no smug grin, tiny fear breathed out. End before gate opens or guardian loses armor.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-one-step-out.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "9befc81ed3394b1643988ee0e6870964c5728e1b283ac2fd8de1170872ac9c70",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 441
+      },
+      "sourceId": "08-one-step-out",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-one-step-out-window-02",
+      "art": "art/08-one-step-out.png",
+      "description": "Kou tightens work gloves and grips wooden gate handle, leaves safe curb while Row steps between him and guardian, Sera raises staff. Large resolve face no smug grin, tiny fear breathed out. End before gate opens or guardian loses armor.",
+      "dialogue": [
+        [
+          "コウ",
+          "畑の水なら\n俺の仕事だ"
+        ],
+        [
+          "ロウ",
+          "任せた\n農夫！"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 480,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-one-step-out.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "9befc81ed3394b1643988ee0e6870964c5728e1b283ac2fd8de1170872ac9c70",
+      "crop": {
+        "x": 0,
+        "y": 441,
+        "width": 724,
+        "height": 1731
+      },
+      "sourceId": "08-one-step-out",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    }
+  ]
+}
