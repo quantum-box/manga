@@ -1,149 +1,380 @@
 {
   "status": "passed",
+  "scope": "Local adopted artwork, phone layouts and bundles; expanded chapter publication is pending its own PR.",
   "art": {
-    "unitCount": 7,
-    "shotCount": 19,
-    "JapaneseText": "All specified dialogue and HUD visually read at both widths",
-    "identity": "KOH LIZE SENA clothing faces and parcel handoff checked",
-    "food": "Warm golden crust and soft interior remain appetizing at both widths"
+    "unitCount": 20,
+    "shotCount": 52,
+    "adoptionEntries": 20,
+    "executedGenerationRecords": 25,
+    "originalBytesPreserved": true,
+    "JapaneseText": "Every specified dialogue and HUD visually read at 390 and 360 widths",
+    "continuity": "KOH LIZE SENA EDA and workers checked; one parcel is delivered, one empty sack is returned, exactly two coins buy one bread for LIZE",
+    "repairs": [
+      "One continuing footstep sound replaces duplicate inscriptions",
+      "Announcement light matches the immediately preceding twilight town"
+    ]
   },
   "browser": {
     "phone390": {
-      "h": 844,
-      "images": 7,
-      "loaded": 7,
-      "pageH": 6754,
-      "pageW": 390,
-      "w": 390
-    },
-    "phone360": {
-      "h": 800,
-      "images": 7,
-      "loaded": 7,
-      "pageH": 6264,
-      "pageW": 360,
-      "w": 360
+      "allImagesLoaded": true,
+      "height": 844,
+      "images": 20,
+      "pageHeight": 18396,
+      "pageWidth": 390,
+      "width": 390
     },
     "frames390": [
       {
         "frame": 1,
-        "y": 0
+        "y": 0,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 2,
-        "y": 580
+        "y": 800,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 3,
-        "y": 1160
+        "y": 1600,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 4,
-        "y": 1740
+        "y": 2400,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 5,
-        "y": 2320.625
+        "y": 3200,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 6,
-        "y": 2900.625
+        "y": 4000,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 7,
-        "y": 3480.625
+        "y": 4800,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 8,
-        "y": 4060.625
+        "y": 5600,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 9,
-        "y": 4640.625
+        "y": 6400,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 10,
-        "y": 5220.625
+        "y": 7200,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 11,
-        "y": 5800.625
+        "y": 8000,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 12,
-        "y": 5910
+        "y": 8800,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 13,
+        "y": 9600,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 14,
+        "y": 10400,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 15,
+        "y": 11200,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 16,
+        "y": 12000,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 17,
+        "y": 12800,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 18,
+        "y": 13600,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 19,
+        "y": 14400,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 20,
+        "y": 15200,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 21,
+        "y": 16000,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 22,
+        "y": 16800,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 23,
+        "y": 17552,
+        "mode": "continuous browser-rendered page clip"
       }
     ],
+    "phone360": {
+      "allImagesLoaded": true,
+      "height": 800,
+      "images": 20,
+      "pageHeight": 17011,
+      "pageWidth": 360,
+      "width": 360
+    },
     "frames360": [
       {
         "frame": 1,
-        "y": 0
+        "y": 0,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 2,
-        "y": 550
+        "y": 756,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 3,
-        "y": 1100
+        "y": 1512,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 4,
-        "y": 1650
+        "y": 2268,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 5,
-        "y": 2200
+        "y": 3024,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 6,
-        "y": 2750
+        "y": 3780,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 7,
-        "y": 3300
+        "y": 4536,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 8,
-        "y": 3850
+        "y": 5292,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 9,
-        "y": 4400
+        "y": 6048,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 10,
-        "y": 4950
+        "y": 6804,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 11,
-        "y": 5464.375
+        "y": 7560,
+        "mode": "continuous browser-rendered page clip"
       },
       {
         "frame": 12,
-        "y": 5464.375
+        "y": 8316,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 13,
+        "y": 9072,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 14,
+        "y": 9828,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 15,
+        "y": 10584,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 16,
+        "y": 11340,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 17,
+        "y": 12096,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 18,
+        "y": 12852,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 19,
+        "y": 13608,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 20,
+        "y": 14364,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 21,
+        "y": 15120,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 22,
+        "y": 15876,
+        "mode": "continuous browser-rendered page clip"
+      },
+      {
+        "frame": 23,
+        "y": 16211,
+        "mode": "continuous browser-rendered page clip"
+      }
+    ],
+    "nativeWater360": [
+      {
+        "height": 800,
+        "pageHeight": 17011,
+        "pageWidth": 360,
+        "revealAssetY": 10257.099609375,
+        "soundAssetY": 8852.197265625,
+        "width": 360,
+        "y": 8831.875,
+        "label": "01-listen"
+      },
+      {
+        "height": 800,
+        "pageHeight": 17011,
+        "pageWidth": 360,
+        "revealAssetY": 10257.099609375,
+        "soundAssetY": 8852.197265625,
+        "width": 360,
+        "y": 9581.875,
+        "label": "02-gap"
+      },
+      {
+        "height": 800,
+        "pageHeight": 17011,
+        "pageWidth": 360,
+        "revealAssetY": 10257.099609375,
+        "soundAssetY": 8852.197265625,
+        "width": 360,
+        "y": 10081.875,
+        "label": "03-source"
+      },
+      {
+        "height": 800,
+        "pageHeight": 17011,
+        "pageWidth": 360,
+        "revealAssetY": 10257.099609375,
+        "soundAssetY": 8852.197265625,
+        "width": 360,
+        "y": 10381.875,
+        "label": "04-arrival"
       }
     ]
   },
   "pacing": {
+    "review": "Discovery, movement, food and work have separate moments; water sound precedes the mill, one sound trails into the next view, twilight remains continuous",
     "normalGaps390": [
+      50,
       100,
+      100,
+      70,
+      130,
+      90,
       80,
+      120,
       140,
+      110,
+      80,
+      90,
+      700,
+      150,
+      70,
+      120,
       260,
       100,
+      280,
       310
     ],
-    "review": "Dense delivery dialogue shifts to warm food, a calm borderless wind-and-water view, then a separated event invitation",
-    "spoilers": "No water shortage or guardian function shown"
+    "nativeWaterProof": "review/native-water-360-01-listen.jpg through 04-arrival.jpg",
+    "spoilers": "Healthy water only; no shortage, guardian function or real-world revelation"
   },
   "standalone": {
-    "embeddedImages": 7,
-    "loadedImages": 7,
-    "passed": true
+    "initial": {
+      "allAsync": true,
+      "dimensionsReserved": true,
+      "eager": 1,
+      "embedded": true,
+      "focused": "BODY",
+      "height": 800,
+      "images": 20,
+      "lazy": 19,
+      "loaded": 4,
+      "pageHeight": 17011,
+      "pageWidth": 360,
+      "width": 360,
+      "y": 0
+    },
+    "final": {
+      "height": 800,
+      "images": 20,
+      "loaded": 20,
+      "missing": [],
+      "pageHeight": 17011,
+      "pageWidth": 360,
+      "width": 360,
+      "y": 16211.25
+    }
   },
   "ios": {
-    "bundled": "sync validated before commit",
+    "bundled": "Exact 20 adopted PNG bytes synchronized and --check passed; 9 titles / 93 readers",
     "physicalDevice": "not tested"
+  },
+  "checks": {
+    "pythonTests": 33,
+    "customerCopy": "passed",
+    "gitDiffCheck": "passed",
+    "rust": "not run; no Rust changes"
+  },
+  "publication": {
+    "status": "pending PR merge and public reading",
+    "replaces": "star-ring-regalia-episode-02-r0ff46b6e5ecc",
+    "retirement": "Only this explicit previous chapter, after new public image/payload/catalog and both phone-width reading checks"
   }
 }

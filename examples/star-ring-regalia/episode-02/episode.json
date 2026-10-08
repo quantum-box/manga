@@ -1,10 +1,67 @@
 {
   "number": 2,
   "title": "明日のある町",
-  "start": "航は一度帰還し、翌日の放課後に再接続する。町の水は通常、セナは生存。",
-  "end": "ミルトの仕事と人を覚える。黒冠の守護者のイベント告知を読む。",
+  "start": "金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。",
+  "end": "薬の配達と粉袋の返却を通じ、住民の暮らしと町の道を覚える。初めて運び賃を受け取りパンを買う。リゼの巡回を見送り、討伐隊募集に心が動く。",
   "hold": "水不足、守護者の真の役割、世界の実在の断定を見せない。",
   "assets": [
+    {
+      "id": "00-school",
+      "location": "Japan high school gate after classes on Friday, KOH navy school blazer with bag; AKARI school navy outfit, rectangular glasses and orange geometric hair clip",
+      "panels": [
+        {
+          "scene": "Medium natural two-shot at school gate: AKARI turns toward KOH while other students walk toward town, no headset or fantasy outfit.",
+          "lines": [
+            {
+              "speaker": "灯里",
+              "columns": [
+                "今日も",
+                "行く？"
+              ],
+              "text": "今日も行く？"
+            }
+          ]
+        },
+        {
+          "scene": "Small KOH face looking toward her, quiet but definite, no anonymous thought floating over town.",
+          "lines": [
+            {
+              "speaker": "航",
+              "columns": [
+                "また行くって",
+                "約束した"
+              ],
+              "text": "また行くって約束した"
+            }
+          ]
+        },
+        {
+          "scene": "Wide AKARI and KOH continue along the Japanese street, AKARI gestures to herself with familiar friendliness; no game HUD or magic.",
+          "lines": [
+            {
+              "speaker": "灯里",
+              "columns": [
+                "私は弓の訓練",
+                "続きやろうっと"
+              ],
+              "text": "私は弓の訓練続きやろうっと"
+            }
+          ]
+        }
+      ],
+      "gap_before_390": 50,
+      "pacing_purpose": "日本の友達も自分の予定を持ち、航は再訪を選ぶ",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/01-school-final.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/00-school.png",
+      "alt": "下校時に灯里と、今日も接続すると話す。灯里「今日も行く？」 / 航「また行くって約束した」 / 灯里「私は弓の訓練続きやろうっと」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Japan high school gate after classes on Friday, KOH navy school blazer with bag; AKARI school navy outfit, rectangular glasses and orange geometric hair clip\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a 日本の友達も自分の予定を持ち、航は再訪を選ぶ beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Medium natural two-shot at school gate: AKARI turns toward KOH while other students walk toward town, no headset or fantasy outfit.\n灯里 (spoken, tail to speaker), exact full text: 今日も行く？; vertical columns RIGHT to LEFT: 今日も / 行く？\nSHOT 2, successive top-to-bottom moment: Small KOH face looking toward her, quiet but definite, no anonymous thought floating over town.\n航 (spoken, tail to speaker), exact full text: また行くって約束した; vertical columns RIGHT to LEFT: また行くって / 約束した\nSHOT 3, successive top-to-bottom moment: Wide AKARI and KOH continue along the Japanese street, AKARI gestures to herself with familiar friendliness; no game HUD or magic.\n灯里 (spoken, tail to speaker), exact full text: 私は弓の訓練続きやろうっと; vertical columns RIGHT to LEFT: 私は弓の訓練 / 続きやろうっと\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nInput 3 is the immediate visual continuity reference for episode-01/art/01-school-final.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
+    },
     {
       "id": "01-return",
       "location": "KOH bedroom then Milt safe arrival plaza, next day afternoon",
@@ -48,7 +105,7 @@
           ]
         }
       ],
-      "gap_before_390": 70,
+      "gap_before_390": 100,
       "pacing_purpose": "場面の接続",
       "reveal": false,
       "episode": 2,
@@ -64,39 +121,39 @@
       "location": "Milt clinic porch, medicine box on shelf, afternoon",
       "panels": [
         {
-          "scene": "KOH worried close-up, parcel no longer in his hands.",
+          "scene": "KOH at the same Milt clinic porch with medicine shelves, hands empty and clean, thanks LIZE for their explicit medicine handoff yesterday. He has not lost or abandoned a parcel.",
           "lines": [
             {
               "speaker": "航",
               "columns": [
-                "昨日途中で",
-                "帰っちゃって……"
+                "昨日の薬",
+                "届けてくれてありがとう"
               ],
-              "text": "昨日途中で帰っちゃって……"
+              "text": "昨日の薬届けてくれてありがとう"
             }
           ]
         },
         {
-          "scene": "LIZE close-up normal practical smile.",
+          "scene": "LIZE normal practical smile, yesterday work completed while KOH was away. She is not standing at his command.",
           "lines": [
             {
               "speaker": "リゼ",
               "columns": [
-                "私が届けた",
-                "夜には間に合った"
+                "夜には",
+                "間に合ったよ"
               ],
-              "text": "私が届けた夜には間に合った"
+              "text": "夜には間に合ったよ"
             }
           ]
         },
         {
-          "scene": "SENA wraps a NEW different medicine parcel, one clear action.",
+          "scene": "SENA at his clinic porch wooden counter wraps one NEW flat rectangular medicine parcel about 24cm across in pale brown paper with brown string. Same parcel will be delivered to EDA. One clear wrapping action, no clone parcels in KOH hands.",
           "lines": [
             {
               "speaker": "セナ",
               "columns": [
-                "今日は",
-                "これを頼める？"
+                "今日はこれを",
+                "頼める？"
               ],
               "text": "今日はこれを頼める？"
             }
@@ -104,38 +161,139 @@
         }
       ],
       "gap_before_390": 100,
-      "pacing_purpose": "いなかった夜にも進んだ生活",
+      "pacing_purpose": "昨日の引き渡しに感謝し、今日の仕事を引き受ける",
       "reveal": false,
       "episode": 2,
-      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Source canvas tall approximately 1024x2560, characters in speech balloons at least 60 source pixels high, bold clean Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Milt clinic porch, medicine box on shelf, afternoon\nEpisode initial context (later shots have the states specified below): 航は一度帰還し、翌日の放課後に再接続する。町の水は通常、セナは生存。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a いなかった夜にも進んだ生活 beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: KOH worried close-up, parcel no longer in his hands.\n航 (spoken, tail to speaker), exact full text: 昨日途中で帰っちゃって……; vertical columns RIGHT to LEFT: 昨日途中で / 帰っちゃって……\nSHOT 2, successive top-to-bottom moment: LIZE close-up normal practical smile.\nリゼ (spoken, tail to speaker), exact full text: 私が届けた夜には間に合った; vertical columns RIGHT to LEFT: 私が届けた / 夜には間に合った\nSHOT 3, successive top-to-bottom moment: SENA wraps a NEW different medicine parcel, one clear action.\nセナ (spoken, tail to speaker), exact full text: 今日はこれを頼める？; vertical columns RIGHT to LEFT: 今日は / これを頼める？",
       "references": [
-        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png"
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/02-night-work.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-delivery.png"
       ],
       "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/02-night-work.png",
-      "alt": "航が帰った夜、リゼは薬を届けていた。航「昨日途中で帰っちゃって……」 / リゼ「私が届けた夜には間に合った」 / セナ「今日はこれを頼める？」"
+      "alt": "リゼが薬を届けたことを知り、セナから今日の包みを受け取る。航「昨日の薬届けてくれてありがとう」 / リゼ「夜には間に合ったよ」 / セナ「今日はこれを頼める？」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Milt clinic porch, medicine box on shelf, afternoon\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a 昨日の引き渡しに感謝し、今日の仕事を引き受ける beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: KOH at the same Milt clinic porch with medicine shelves, hands empty and clean, thanks LIZE for their explicit medicine handoff yesterday. He has not lost or abandoned a parcel.\n航 (spoken, tail to speaker), exact full text: 昨日の薬届けてくれてありがとう; vertical columns RIGHT to LEFT: 昨日の薬 / 届けてくれてありがとう\nSHOT 2, successive top-to-bottom moment: LIZE normal practical smile, yesterday work completed while KOH was away. She is not standing at his command.\nリゼ (spoken, tail to speaker), exact full text: 夜には間に合ったよ; vertical columns RIGHT to LEFT: 夜には / 間に合ったよ\nSHOT 3, successive top-to-bottom moment: SENA at his clinic porch wooden counter wraps one NEW flat rectangular medicine parcel about 24cm across in pale brown paper with brown string. Same parcel will be delivered to EDA. One clear wrapping action, no clone parcels in KOH hands.\nセナ (spoken, tail to speaker), exact full text: 今日はこれを頼める？; vertical columns RIGHT to LEFT: 今日はこれを / 頼める？\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nInput 3 is the immediate visual continuity reference for episode-02/art/02-night-work.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text.\nInput 4 is the immediate visual continuity reference for episode-02/art/03-delivery.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
     },
     {
-      "id": "03-delivery",
-      "location": "Milt lanes, bakery then house door, same delivery route",
+      "id": "02-route-note",
+      "location": "Same clinic porch work counter beside medicine shelves, SENA and a small folded paper street map, KOH holds ONE new 24cm medicine parcel, LIZE beside him",
       "panels": [
         {
-          "scene": "Wide: KOH and LIZE carry medicine along recognizable stone lane, red tile roofs.",
+          "scene": "Close SENA points on a small hand-drawn PAPER map showing the same bridge, a fork, a waterwheel and a little blue door mark. No printed names or HUD. KOH left arm holds the paper parcel against waist, right hand ready to take map.",
           "lines": [
             {
-              "speaker": "リゼ",
+              "speaker": "セナ",
               "columns": [
-                "青い扉の家",
-                "その先はパン屋"
+                "青い扉の",
+                "エダさんだよ"
               ],
-              "text": "青い扉の家その先はパン屋"
+              "text": "青い扉のエダさんだよ"
             }
           ]
         },
         {
-          "scene": "Close hands: KOH gives parcel to elderly resident at blue door, no duplicate parcel.",
+          "scene": "Medium KOH follows SENA finger with his eyes, then looks at the visible stone bridge in the real surroundings. Package remains at waist.",
           "lines": [
             {
-              "speaker": "住民",
+              "speaker": "航",
+              "columns": [
+                "この橋を",
+                "渡るんだね"
+              ],
+              "text": "この橋を渡るんだね"
+            }
+          ]
+        },
+        {
+          "scene": "Wide LIZE starts along the road with KOH following carrying the one parcel and folded map. SENA remains at his clinic porch counter to put away medicines, not teleporting with them.",
+          "lines": [
+            {
+              "speaker": "リゼ",
+              "columns": [
+                "帰りの道も",
+                "覚えておこう"
+              ],
+              "text": "帰りの道も覚えておこう"
+            }
+          ]
+        }
+      ],
+      "gap_before_390": 70,
+      "pacing_purpose": "地図の記号をその場の橋と結びつけ、仕事の相手を知る",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-delivery.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/02-route-note.png",
+      "alt": "セナからエダの家への道を教わる。セナ「青い扉のエダさんだよ」 / 航「この橋を渡るんだね」 / リゼ「帰りの道も覚えておこう」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Same clinic porch work counter beside medicine shelves, SENA and a small folded paper street map, KOH holds ONE new 24cm medicine parcel, LIZE beside him\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a 地図の記号をその場の橋と結びつけ、仕事の相手を知る beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Close SENA points on a small hand-drawn PAPER map showing the same bridge, a fork, a waterwheel and a little blue door mark. No printed names or HUD. KOH left arm holds the paper parcel against waist, right hand ready to take map.\nセナ (spoken, tail to speaker), exact full text: 青い扉のエダさんだよ; vertical columns RIGHT to LEFT: 青い扉の / エダさんだよ\nSHOT 2, successive top-to-bottom moment: Medium KOH follows SENA finger with his eyes, then looks at the visible stone bridge in the real surroundings. Package remains at waist.\n航 (spoken, tail to speaker), exact full text: この橋を渡るんだね; vertical columns RIGHT to LEFT: この橋を / 渡るんだね\nSHOT 3, successive top-to-bottom moment: Wide LIZE starts along the road with KOH following carrying the one parcel and folded map. SENA remains at his clinic porch counter to put away medicines, not teleporting with them.\nリゼ (spoken, tail to speaker), exact full text: 帰りの道も覚えておこう; vertical columns RIGHT to LEFT: 帰りの道も / 覚えておこう\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nInput 3 is the immediate visual continuity reference for episode-02/art/03-delivery.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
+    },
+    {
+      "id": "02-walk",
+      "location": "Milt stone lane leading from clinic past bridge toward EDA blue-door house, clear afternoon, same parcel and folded paper map",
+      "panels": [
+        {
+          "scene": "Low shallow walking detail: KOH brown boots and LIZE brown boots continue down stone steps, parcel seen only partly at upper edge. One soft vertical コツコツ begins beside his first step and continues diagonally past the gutter with the same cadence, not a second complete inscription.",
+          "lines": [
+            {
+              "speaker": "音",
+              "columns": [
+                "コツコツ"
+              ],
+              "text": "コツコツ"
+            }
+          ]
+        },
+        {
+          "scene": "Airy wide lane opening: KOH and LIZE small beneath an arch, blue wooden door visible ahead among warm red-tile houses, bakery hanging pretzel sign farther along. The SAME footstep sound tapers toward white bottom; no new starting コツ or bonus conversation.",
+          "lines": [],
+          "sound_continuations": [
+            {
+              "origin": "02-walk:1",
+              "text": "コツコツ",
+              "placement": "a single shared cadence begins by the steps and its later ツ letters taper past the arch into white, no second inscription"
+            }
+          ]
+        }
+      ],
+      "gap_before_390": 130,
+      "pacing_purpose": "教わった道を自分の足で歩き、足音を街の間へ続ける",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-delivery.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/02-walk.png",
+      "alt": "橋から青い扉の家まで歩く。音「コツコツ」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Milt stone lane leading from clinic past bridge toward EDA blue-door house, clear afternoon, same parcel and folded paper map\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 2 described shot(s). This asset is a 教わった道を自分の足で歩き、足音を街の間へ続ける beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Low shallow walking detail: KOH brown boots and LIZE brown boots continue down stone steps, parcel seen only partly at upper edge. One soft vertical コツコツ begins beside his first step and continues diagonally past the gutter with the same cadence, not a second complete inscription.\nExact originating/continuing drawn sound outside balloons: コツコツ\nSHOT 2, successive top-to-bottom moment: Airy wide lane opening: KOH and LIZE small beneath an arch, blue wooden door visible ahead among warm red-tile houses, bakery hanging pretzel sign farther along. The SAME footstep sound tapers toward white bottom; no new starting コツ or bonus conversation.\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nTwo meaningful moments in an airy natural approximately 1024x1536 canvas, no third panel or montage.\nInput 3 is the immediate visual continuity reference for episode-02/art/03-delivery.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
+    },
+    {
+      "id": "03-delivery",
+      "location": "EDA blue wooden front door beside the same Milt stone lane; EDA elderly silver low-tied hair, ivory collar blouse and faded brown-plum shawl with gold trim, exactly as original delivery reference",
+      "panels": [
+        {
+          "scene": "Medium KOH at the blue wooden door, LIZE waiting one step behind to the side. EDA opens door toward him. KOH holds the ONE 24cm flat paper parcel at waist and introduces himself before she uses his name.",
+          "lines": [
+            {
+              "speaker": "航",
+              "columns": [
+                "コウです",
+                "薬を届けに来ました"
+              ],
+              "text": "コウです薬を届けに来ました"
+            }
+          ]
+        },
+        {
+          "scene": "Close hands: KOH passes that one parcel into EDA hands, unambiguous shared transfer. Her warm face beside the blue door, no duplicate parcel.",
+          "lines": [
+            {
+              "speaker": "エダ",
               "columns": [
                 "ありがとう",
                 "コウ"
@@ -145,7 +303,72 @@
           ]
         },
         {
-          "scene": "Medium bakery: baker offers a small golden bread roll, KOH startled.",
+          "scene": "Quiet shallow interior view from doorway: the delivered paper parcel now rests on a small wooden table beside EDA ordinary cup, folded shawl and small hand-painted family portrait in a plain frame. She sets it down carefully; no immediate cure, no quest reward pop-up. KOH no longer carries medicine, both hands free.",
+          "lines": []
+        }
+      ],
+      "gap_before_390": 90,
+      "pacing_purpose": "配達を一回の報酬画面で終えず、受け取った人の生活へ置く",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-delivery.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-delivery.png",
+      "alt": "青い扉のエダへ薬を手渡す。航「コウです薬を届けに来ました」 / エダ「ありがとうコウ」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: EDA blue wooden front door beside the same Milt stone lane; EDA elderly silver low-tied hair, ivory collar blouse and faded brown-plum shawl with gold trim, exactly as original delivery reference\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a 配達を一回の報酬画面で終えず、受け取った人の生活へ置く beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Medium KOH at the blue wooden door, LIZE waiting one step behind to the side. EDA opens door toward him. KOH holds the ONE 24cm flat paper parcel at waist and introduces himself before she uses his name.\n航 (spoken, tail to speaker), exact full text: コウです薬を届けに来ました; vertical columns RIGHT to LEFT: コウです / 薬を届けに来ました\nSHOT 2, successive top-to-bottom moment: Close hands: KOH passes that one parcel into EDA hands, unambiguous shared transfer. Her warm face beside the blue door, no duplicate parcel.\nエダ (spoken, tail to speaker), exact full text: ありがとうコウ; vertical columns RIGHT to LEFT: ありがとう / コウ\nSHOT 3, successive top-to-bottom moment: Quiet shallow interior view from doorway: the delivered paper parcel now rests on a small wooden table beside EDA ordinary cup, folded shawl and small hand-painted family portrait in a plain frame. She sets it down carefully; no immediate cure, no quest reward pop-up. KOH no longer carries medicine, both hands free.\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nInput 3 is the immediate visual continuity reference for episode-02/art/03-delivery.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
+    },
+    {
+      "id": "03-household",
+      "location": "Same open blue doorway, package inside on table, KOH hands empty, LIZE at roadside, EDA the same elderly woman in brown-plum shawl",
+      "panels": [
+        {
+          "scene": "Medium EDA by open door with a small flower pot and two ordinary cups visible inside. She speaks to KOH, tired but pleased, no physical transformation.",
+          "lines": [
+            {
+              "speaker": "エダ",
+              "columns": [
+                "明日は",
+                "孫が来るの"
+              ],
+              "text": "明日は孫が来るの"
+            }
+          ]
+        },
+        {
+          "scene": "Medium KOH gently glances from the flowers to EDA, ordinary warm response; LIZE listens rather than explaining what an NPC is.",
+          "lines": [
+            {
+              "speaker": "航",
+              "columns": [
+                "楽しみですね"
+              ],
+              "text": "楽しみですね"
+            }
+          ]
+        }
+      ],
+      "gap_before_390": 80,
+      "pacing_purpose": "薬を受け取る相手にも明日の予定がある",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-delivery.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-household.png",
+      "alt": "エダの明日の予定を聞く。エダ「明日は孫が来るの」 / 航「楽しみですね」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Same open blue doorway, package inside on table, KOH hands empty, LIZE at roadside, EDA the same elderly woman in brown-plum shawl\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 2 described shot(s). This asset is a 薬を受け取る相手にも明日の予定がある beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Medium EDA by open door with a small flower pot and two ordinary cups visible inside. She speaks to KOH, tired but pleased, no physical transformation.\nエダ (spoken, tail to speaker), exact full text: 明日は孫が来るの; vertical columns RIGHT to LEFT: 明日は / 孫が来るの\nSHOT 2, successive top-to-bottom moment: Medium KOH gently glances from the flowers to EDA, ordinary warm response; LIZE listens rather than explaining what an NPC is.\n航 (spoken, tail to speaker), exact full text: 楽しみですね; vertical columns RIGHT to LEFT: 楽しみですね\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nTwo meaningful moments in an airy natural approximately 1024x1536 canvas, no third panel or montage.\nInput 3 is the immediate visual continuity reference for episode-02/art/03-delivery.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
+    },
+    {
+      "id": "03-bakery",
+      "location": "Bakery farther along the same lane with pretzel sign, flour shelves and oven, baker same chestnut hair short beard ivory cloth cap white shirt brown leather apron; KOH and LIZE arrive empty-handed",
+      "panels": [
+        {
+          "scene": "Medium baker looks up from bread shelf as KOH arrives at the counter, recognizes him rather than summoning him. Golden round bread on shelf.",
           "lines": [
             {
               "speaker": "パン屋",
@@ -156,18 +379,47 @@
               "text": "昨日荷車を押してくれたろ"
             }
           ]
+        },
+        {
+          "scene": "Shallow KOH surprise, he looks at stacked flour sacks beside oven, connects the muddy cart with bread.",
+          "lines": [
+            {
+              "speaker": "航",
+              "columns": [
+                "あれ",
+                "パン屋の荷物？"
+              ],
+              "text": "あれパン屋の荷物？"
+            }
+          ]
+        },
+        {
+          "scene": "Close baker offers ONE warm golden round bread roll on small oatmeal cloth into KOH ready hands, white fluffy break in crust and gentle steam. This is a gift for cart help, no coins yet.",
+          "lines": [
+            {
+              "speaker": "パン屋",
+              "columns": [
+                "粉が無事で",
+                "助かったよ"
+              ],
+              "text": "粉が無事で助かったよ"
+            }
+          ]
         }
       ],
-      "gap_before_390": 80,
-      "pacing_purpose": "名前と行き先が結びつく",
+      "gap_before_390": 120,
+      "pacing_purpose": "昨日の小さな手伝いが今日のパンにつながる",
       "reveal": false,
       "episode": 2,
-      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Source canvas tall approximately 1024x2560, characters in speech balloons at least 60 source pixels high, bold clean Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Milt lanes, bakery then house door, same delivery route\nEpisode initial context (later shots have the states specified below): 航は一度帰還し、翌日の放課後に再接続する。町の水は通常、セナは生存。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a 名前と行き先が結びつく beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Wide: KOH and LIZE carry medicine along recognizable stone lane, red tile roofs.\nリゼ (spoken, tail to speaker), exact full text: 青い扉の家その先はパン屋; vertical columns RIGHT to LEFT: 青い扉の家 / その先はパン屋\nSHOT 2, successive top-to-bottom moment: Close hands: KOH gives parcel to elderly resident at blue door, no duplicate parcel.\n住民 (spoken, tail to speaker), exact full text: ありがとうコウ; vertical columns RIGHT to LEFT: ありがとう / コウ\nSHOT 3, successive top-to-bottom moment: Medium bakery: baker offers a small golden bread roll, KOH startled.\nパン屋 (spoken, tail to speaker), exact full text: 昨日荷車を押してくれたろ; vertical columns RIGHT to LEFT: 昨日荷車を / 押してくれたろ",
       "references": [
-        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png"
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-delivery.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/04-bread.png"
       ],
-      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-delivery.png",
-      "alt": "薬を届け、パン屋で声をかけられる。リゼ「青い扉の家その先はパン屋」 / 住民「ありがとうコウ」 / パン屋「昨日荷車を押してくれたろ」"
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-bakery.png",
+      "alt": "パン屋で荷車の粉と今日のパンのつながりを知る。パン屋「昨日荷車を押してくれたろ」 / 航「あれパン屋の荷物？」 / パン屋「粉が無事で助かったよ」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Bakery farther along the same lane with pretzel sign, flour shelves and oven, baker same chestnut hair short beard ivory cloth cap white shirt brown leather apron; KOH and LIZE arrive empty-handed\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a 昨日の小さな手伝いが今日のパンにつながる beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Medium baker looks up from bread shelf as KOH arrives at the counter, recognizes him rather than summoning him. Golden round bread on shelf.\nパン屋 (spoken, tail to speaker), exact full text: 昨日荷車を押してくれたろ; vertical columns RIGHT to LEFT: 昨日荷車を / 押してくれたろ\nSHOT 2, successive top-to-bottom moment: Shallow KOH surprise, he looks at stacked flour sacks beside oven, connects the muddy cart with bread.\n航 (spoken, tail to speaker), exact full text: あれパン屋の荷物？; vertical columns RIGHT to LEFT: あれ / パン屋の荷物？\nSHOT 3, successive top-to-bottom moment: Close baker offers ONE warm golden round bread roll on small oatmeal cloth into KOH ready hands, white fluffy break in crust and gentle steam. This is a gift for cart help, no coins yet.\nパン屋 (spoken, tail to speaker), exact full text: 粉が無事で助かったよ; vertical columns RIGHT to LEFT: 粉が無事で / 助かったよ\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nInput 3 is the immediate visual continuity reference for episode-02/art/03-delivery.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text.\nInput 4 is the immediate visual continuity reference for episode-02/art/04-bread.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
     },
     {
       "id": "04-bread",
@@ -212,36 +464,374 @@
         "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png"
       ],
       "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/04-bread.png",
-      "alt": "温かいパンを食べて笑う二人。 / 航「……うまい」 / リゼ「顔に全部出るね」"
+      "alt": "温かいパンを食べて笑う二人。航「……うまい」 / リゼ「顔に全部出るね」"
+    },
+    {
+      "id": "04-bread-talk",
+      "location": "Bakery outside bench immediately after KOH eats the gifted round bread; he finishes the last piece, folds the small EMPTY oatmeal wrapper; LIZE same moss green courier outfit",
+      "panels": [
+        {
+          "scene": "Medium LIZE naturally asks KOH sitting across a small bench table, no bread cloning; his last crumbs and wrapper remain on his side.",
+          "lines": [
+            {
+              "speaker": "リゼ",
+              "columns": [
+                "向こうでは",
+                "何してるの？"
+              ],
+              "text": "向こうでは何してるの？"
+            }
+          ]
+        },
+        {
+          "scene": "Shallow KOH with relaxed smile, folds his empty cloth wrapper beside the table, hands clearly shown.",
+          "lines": [
+            {
+              "speaker": "航",
+              "columns": [
+                "学校と",
+                "家の弁当屋"
+              ],
+              "text": "学校と家の弁当屋"
+            }
+          ]
+        },
+        {
+          "scene": "LIZE warm practical response, courier belt visible, not flirt pose. KOH listens and starts to feel useful.",
+          "lines": [
+            {
+              "speaker": "リゼ",
+              "columns": [
+                "荷運び",
+                "慣れてるんだね"
+              ],
+              "text": "荷運び慣れてるんだね"
+            }
+          ]
+        }
+      ],
+      "gap_before_390": 110,
+      "pacing_purpose": "食べ終わる間に日本の仕事と現地の仕事を結びつける",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/04-bread.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/04-bread-talk.png",
+      "alt": "パンを食べながら家の弁当店を話す。リゼ「向こうでは何してるの？」 / 航「学校と家の弁当屋」 / リゼ「荷運び慣れてるんだね」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Bakery outside bench immediately after KOH eats the gifted round bread; he finishes the last piece, folds the small EMPTY oatmeal wrapper; LIZE same moss green courier outfit\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a 食べ終わる間に日本の仕事と現地の仕事を結びつける beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Medium LIZE naturally asks KOH sitting across a small bench table, no bread cloning; his last crumbs and wrapper remain on his side.\nリゼ (spoken, tail to speaker), exact full text: 向こうでは何してるの？; vertical columns RIGHT to LEFT: 向こうでは / 何してるの？\nSHOT 2, successive top-to-bottom moment: Shallow KOH with relaxed smile, folds his empty cloth wrapper beside the table, hands clearly shown.\n航 (spoken, tail to speaker), exact full text: 学校と家の弁当屋; vertical columns RIGHT to LEFT: 学校と / 家の弁当屋\nSHOT 3, successive top-to-bottom moment: LIZE warm practical response, courier belt visible, not flirt pose. KOH listens and starts to feel useful.\nリゼ (spoken, tail to speaker), exact full text: 荷運び慣れてるんだね; vertical columns RIGHT to LEFT: 荷運び / 慣れてるんだね\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nInput 3 is the immediate visual continuity reference for episode-02/art/04-bread.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
+    },
+    {
+      "id": "04-errand",
+      "location": "Back at same bakery counter, KOH has finished bread and stored empty cloth, ONE EMPTY soft folded flour sack on counter, no medicine package or bread in his hands",
+      "panels": [
+        {
+          "scene": "Medium baker lifts a single visibly flat EMPTY beige flour sack with tied folded edge from counter toward KOH, no cargo box.",
+          "lines": [
+            {
+              "speaker": "パン屋",
+              "columns": [
+                "空の袋を",
+                "水車小屋へ頼める？"
+              ],
+              "text": "空の袋を水車小屋へ頼める？"
+            }
+          ]
+        },
+        {
+          "scene": "Small KOH nodding, takes the one light empty sack with BOTH hands, clearly relieved to recognize the landmark.",
+          "lines": [
+            {
+              "speaker": "航",
+              "columns": [
+                "さっきの道だね"
+              ],
+              "text": "さっきの道だね"
+            }
+          ]
+        },
+        {
+          "scene": "Wide LIZE walks beside KOH away from bakery but half a step behind, he carries the folded empty sack under left arm and folded paper map in right.",
+          "lines": [
+            {
+              "speaker": "リゼ",
+              "columns": [
+                "今度はコウが",
+                "案内して"
+              ],
+              "text": "今度はコウが案内して"
+            }
+          ]
+        }
+      ],
+      "gap_before_390": 80,
+      "pacing_purpose": "地図を覚えることに使い道を作る",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-delivery.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/04-errand.png",
+      "alt": "空の粉袋を水車小屋へ返す仕事を引き受ける。パン屋「空の袋を水車小屋へ頼める？」 / 航「さっきの道だね」 / リゼ「今度はコウが案内して」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Back at same bakery counter, KOH has finished bread and stored empty cloth, ONE EMPTY soft folded flour sack on counter, no medicine package or bread in his hands\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a 地図を覚えることに使い道を作る beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Medium baker lifts a single visibly flat EMPTY beige flour sack with tied folded edge from counter toward KOH, no cargo box.\nパン屋 (spoken, tail to speaker), exact full text: 空の袋を水車小屋へ頼める？; vertical columns RIGHT to LEFT: 空の袋を / 水車小屋へ頼める？\nSHOT 2, successive top-to-bottom moment: Small KOH nodding, takes the one light empty sack with BOTH hands, clearly relieved to recognize the landmark.\n航 (spoken, tail to speaker), exact full text: さっきの道だね; vertical columns RIGHT to LEFT: さっきの道だね\nSHOT 3, successive top-to-bottom moment: Wide LIZE walks beside KOH away from bakery but half a step behind, he carries the folded empty sack under left arm and folded paper map in right.\nリゼ (spoken, tail to speaker), exact full text: 今度はコウが案内して; vertical columns RIGHT to LEFT: 今度はコウが / 案内して\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nInput 3 is the immediate visual continuity reference for episode-02/art/03-delivery.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
+    },
+    {
+      "id": "04-wrong-turn",
+      "location": "Milt branching stone lane, KOH carrying ONE flat empty flour sack left arm and the same paper route map right hand; LIZE half a step behind; waterwheel remains offscreen",
+      "panels": [
+        {
+          "scene": "Medium KOH turns toward the WRONG narrow side lane while comparing folded map and street. Ahead is an ordinary closed garden fence, no monster, no ring reveal, no waterwheel visible.",
+          "lines": [
+            {
+              "speaker": "航",
+              "columns": [
+                "ここを",
+                "曲がって……"
+              ],
+              "text": "ここを曲がって……"
+            }
+          ]
+        },
+        {
+          "scene": "Shallow LIZE beside him calmly tilts her head toward the unseen river, a question that helps him rather than mocking.",
+          "lines": [
+            {
+              "speaker": "リゼ",
+              "columns": [
+                "水の音",
+                "聞こえる？"
+              ],
+              "text": "水の音聞こえる？"
+            }
+          ]
+        },
+        {
+          "scene": "Small KOH stops, lowers the paper map and turns his eyes toward offscreen sound. A single quiet flowing-water サァァ… starts near the right white side and extends toward the open lower gap. NO source wheel visible yet.",
+          "lines": [
+            {
+              "speaker": "音",
+              "columns": [
+                "サァァ…"
+              ],
+              "text": "サァァ…"
+            }
+          ]
+        }
+      ],
+      "gap_before_390": 90,
+      "pacing_purpose": "道に迷う小さな失敗から、町の音を手掛かりにする",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/04-wrong-turn.png",
+      "alt": "道を迷い、水の音に耳を澄ます。航「ここを曲がって……」 / リゼ「水の音聞こえる？」 / 音「サァァ…」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Milt branching stone lane, KOH carrying ONE flat empty flour sack left arm and the same paper route map right hand; LIZE half a step behind; waterwheel remains offscreen\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a 道に迷う小さな失敗から、町の音を手掛かりにする beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Medium KOH turns toward the WRONG narrow side lane while comparing folded map and street. Ahead is an ordinary closed garden fence, no monster, no ring reveal, no waterwheel visible.\n航 (spoken, tail to speaker), exact full text: ここを曲がって……; vertical columns RIGHT to LEFT: ここを / 曲がって……\nSHOT 2, successive top-to-bottom moment: Shallow LIZE beside him calmly tilts her head toward the unseen river, a question that helps him rather than mocking.\nリゼ (spoken, tail to speaker), exact full text: 水の音聞こえる？; vertical columns RIGHT to LEFT: 水の音 / 聞こえる？\nSHOT 3, successive top-to-bottom moment: Small KOH stops, lowers the paper map and turns his eyes toward offscreen sound. A single quiet flowing-water サァァ… starts near the right white side and extends toward the open lower gap. NO source wheel visible yet.\nExact originating/continuing drawn sound outside balloons: サァァ…\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event."
+    },
+    {
+      "id": "04-wheel",
+      "location": "Return to the SAME healthy-flowing bridge-side waterwheel from episode one, reached on foot from lane; KOH and LIZE small near lower doorway, KOH holds one folded empty flour sack",
+      "panels": [
+        {
+          "scene": "ONE large borderless airy view: clean turquoise water descends past dark wooden wheel, brass guide fittings and slender warm gold mana channel drive an old stone mill. Flour workers and one small independent wind spirit belong in the scene. The SAME distant サァァ… has already begun in previous asset: continue only its trailing ァ… lightly beside water and white edge, never write a second サ or second complete sound. No drought, valve boss or display.",
+          "lines": []
+        }
+      ],
+      "gap_before_390": 700,
+      "pacing_purpose": "聞いた音の場所へ辿り着き、水と魔導技術の仕事を広く見る",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-water-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-spirit.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/04-wheel.png",
+      "alt": "水の音をたどり、水車小屋へ戻る。",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Return to the SAME healthy-flowing bridge-side waterwheel from episode one, reached on foot from lane; KOH and LIZE small near lower doorway, KOH holds one folded empty flour sack\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 1 described shot(s). This asset is a 聞いた音の場所へ辿り着き、水と魔導技術の仕事を広く見る beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: ONE large borderless airy view: clean turquoise water descends past dark wooden wheel, brass guide fittings and slender warm gold mana channel drive an old stone mill. Flour workers and one small independent wind spirit belong in the scene. The SAME distant サァァ… has already begun in previous asset: continue only its trailing ァ… lightly beside water and white edge, never write a second サ or second complete sound. No drought, valve boss or display.\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nInput 3 is the immediate visual continuity reference for episode-01/art/07-water-final.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text.\nInput 4 is the immediate visual continuity reference for episode-01/art/07-spirit.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
+    },
+    {
+      "id": "04-mill",
+      "location": "Same waterwheel doorway, local adult female worker same chestnut ponytail ivory rolled-sleeve shirt dark brown long apron as episode1 wind-spirit scene; ONE empty flour sack from KOH",
+      "panels": [
+        {
+          "scene": "Medium worker takes the one flat empty sack from KOH hands at doorway, LIZE beside him. The original medicine and bread are absent.",
+          "lines": [
+            {
+              "speaker": "水車の職人",
+              "columns": [
+                "ありがと",
+                "明日も使うから"
+              ],
+              "text": "ありがと明日も使うから"
+            }
+          ]
+        },
+        {
+          "scene": "Quiet wide interior view behind worker: wheel shaft and modest brass engraved fitting rotate a stone grinding mill; regular sacks of grain and flour, soft clean drifting flour dust, no modern robot factory. KOH and LIZE look from doorway, not operating equipment.",
+          "lines": []
+        },
+        {
+          "scene": "Close worker offers TWO small copper coins on open palm toward KOH, same apron cuff and clear fingers. Plain copper color, no exact engraved denomination, no unlimited pile.",
+          "lines": [
+            {
+              "speaker": "水車の職人",
+              "columns": [
+                "袋の",
+                "運び賃"
+              ],
+              "text": "袋の運び賃"
+            }
+          ]
+        }
+      ],
+      "gap_before_390": 150,
+      "pacing_purpose": "持ち物を返した結果と、誰かの仕事の対価を見せる",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-spirit.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/04-mill.png",
+      "alt": "粉袋を返し、銅貨二枚の運び賃を受け取る。水車の職人「ありがと明日も使うから」 / 水車の職人「袋の運び賃」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Same waterwheel doorway, local adult female worker same chestnut ponytail ivory rolled-sleeve shirt dark brown long apron as episode1 wind-spirit scene; ONE empty flour sack from KOH\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a 持ち物を返した結果と、誰かの仕事の対価を見せる beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Medium worker takes the one flat empty sack from KOH hands at doorway, LIZE beside him. The original medicine and bread are absent.\n水車の職人 (spoken, tail to speaker), exact full text: ありがと明日も使うから; vertical columns RIGHT to LEFT: ありがと / 明日も使うから\nSHOT 2, successive top-to-bottom moment: Quiet wide interior view behind worker: wheel shaft and modest brass engraved fitting rotate a stone grinding mill; regular sacks of grain and flour, soft clean drifting flour dust, no modern robot factory. KOH and LIZE look from doorway, not operating equipment.\nSHOT 3, successive top-to-bottom moment: Close worker offers TWO small copper coins on open palm toward KOH, same apron cuff and clear fingers. Plain copper color, no exact engraved denomination, no unlimited pile.\n水車の職人 (spoken, tail to speaker), exact full text: 袋の運び賃; vertical columns RIGHT to LEFT: 袋の / 運び賃\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nInput 3 is the immediate visual continuity reference for episode-01/art/07-spirit.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
+    },
+    {
+      "id": "04-wage",
+      "location": "Outside same mill doorway after handoff, KOH holds EXACTLY TWO plain copper coins, no flour sack; LIZE beside him, worker returned to her work in background",
+      "panels": [
+        {
+          "scene": "Shallow KOH looks at two copper coins on his open palm in wonder, no level-up or game notification.",
+          "lines": [
+            {
+              "speaker": "航",
+              "columns": [
+                "運び賃……？"
+              ],
+              "text": "運び賃……？"
+            }
+          ]
+        },
+        {
+          "scene": "Medium LIZE looks at his palm then his face, straightforward smile, modest normal wages rather than a grand reward.",
+          "lines": [
+            {
+              "speaker": "リゼ",
+              "columns": [
+                "働いたぶんだよ"
+              ],
+              "text": "働いたぶんだよ"
+            }
+          ]
+        }
+      ],
+      "gap_before_390": 70,
+      "pacing_purpose": "手元の小さな対価に驚き、仕事の意味を受け取る",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/04-wage.png",
+      "alt": "初めての運び賃を確かめる。航「運び賃……？」 / リゼ「働いたぶんだよ」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Outside same mill doorway after handoff, KOH holds EXACTLY TWO plain copper coins, no flour sack; LIZE beside him, worker returned to her work in background\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 2 described shot(s). This asset is a 手元の小さな対価に驚き、仕事の意味を受け取る beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Shallow KOH looks at two copper coins on his open palm in wonder, no level-up or game notification.\n航 (spoken, tail to speaker), exact full text: 運び賃……？; vertical columns RIGHT to LEFT: 運び賃……？\nSHOT 2, successive top-to-bottom moment: Medium LIZE looks at his palm then his face, straightforward smile, modest normal wages rather than a grand reward.\nリゼ (spoken, tail to speaker), exact full text: 働いたぶんだよ; vertical columns RIGHT to LEFT: 働いたぶんだよ\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nTwo meaningful moments in an airy natural approximately 1024x1536 canvas, no third panel or montage."
+    },
+    {
+      "id": "04-buy",
+      "location": "Same bakery reached by the now familiar lane, KOH and LIZE return on foot; same baker cloth cap white shirt brown apron; exactly TWO copper coins buy ONE small round bread roll",
+      "panels": [
+        {
+          "scene": "Close KOH places his TWO copper coins on bakery counter, baker offers ONE smaller golden bread roll wrapped in oatmeal cloth. No other coins in KOH hand.",
+          "lines": [
+            {
+              "speaker": "航",
+              "columns": [
+                "小さいの",
+                "一つください"
+              ],
+              "text": "小さいの一つください"
+            }
+          ]
+        },
+        {
+          "scene": "Medium KOH now empty of coins offers that ONE purchased bread roll to LIZE across bakery threshold, slightly shy warm smile.",
+          "lines": [
+            {
+              "speaker": "航",
+              "columns": [
+                "リゼの分"
+              ],
+              "text": "リゼの分"
+            }
+          ]
+        },
+        {
+          "scene": "Shallow LIZE accepts the one bread with BOTH hands, surprised gentle smile. KOH hands empty, no second bread or currency.",
+          "lines": [
+            {
+              "speaker": "リゼ",
+              "columns": [
+                "ありがとう"
+              ],
+              "text": "ありがとう"
+            }
+          ]
+        }
+      ],
+      "gap_before_390": 120,
+      "pacing_purpose": "覚えた道と自分の運び賃を、相手への小さな返礼に使う",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/03-delivery.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/04-bread.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/04-buy.png",
+      "alt": "運び賃でリゼのパンを買う。航「小さいの一つください」 / 航「リゼの分」 / リゼ「ありがとう」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Same bakery reached by the now familiar lane, KOH and LIZE return on foot; same baker cloth cap white shirt brown apron; exactly TWO copper coins buy ONE small round bread roll\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 3 described shot(s). This asset is a 覚えた道と自分の運び賃を、相手への小さな返礼に使う beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Close KOH places his TWO copper coins on bakery counter, baker offers ONE smaller golden bread roll wrapped in oatmeal cloth. No other coins in KOH hand.\n航 (spoken, tail to speaker), exact full text: 小さいの一つください; vertical columns RIGHT to LEFT: 小さいの / 一つください\nSHOT 2, successive top-to-bottom moment: Medium KOH now empty of coins offers that ONE purchased bread roll to LIZE across bakery threshold, slightly shy warm smile.\n航 (spoken, tail to speaker), exact full text: リゼの分; vertical columns RIGHT to LEFT: リゼの分\nSHOT 3, successive top-to-bottom moment: Shallow LIZE accepts the one bread with BOTH hands, surprised gentle smile. KOH hands empty, no second bread or currency.\nリゼ (spoken, tail to speaker), exact full text: ありがとう; vertical columns RIGHT to LEFT: ありがとう\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nInput 3 is the immediate visual continuity reference for episode-02/art/03-delivery.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text.\nInput 4 is the immediate visual continuity reference for episode-02/art/04-bread.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
     },
     {
       "id": "05-wind",
       "location": "Milt riverside windmill with tiny luminous wind spirits, early evening",
       "panels": [
         {
-          "scene": "ONE large borderless vertical scene: water leads downward from bridge to turning windmill, small wind spirits lift cloth flags, LIZE and KOH small at bottom; generous calm sky.",
+          "scene": "ONE large borderless vertical scene exactly continuing the old windmill illustration: normal flowing water, turning windmill, small independent wind spirits and cloth flags. KOH and LIZE small but dialogue stays a readable modest vertical balloon. No parcel or flour sack. LIZE has finished her small bread; no duplicated leftover.",
           "lines": [
             {
               "speaker": "航",
               "columns": [
-                "魔法って",
-                "暮らしにも使うんだ"
+                "この道は",
+                "覚えた"
               ],
-              "text": "魔法って暮らしにも使うんだ"
+              "text": "この道は覚えた"
             }
           ]
         }
       ],
       "gap_before_390": 260,
-      "pacing_purpose": "風と水の道をたどる",
+      "pacing_purpose": "町の道を覚えた実感を、穏やかな風景へ置く",
       "reveal": false,
       "episode": 2,
-      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Source canvas tall approximately 1024x2560, characters in speech balloons at least 60 source pixels high, bold clean Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Milt riverside windmill with tiny luminous wind spirits, early evening\nEpisode initial context (later shots have the states specified below): 航は一度帰還し、翌日の放課後に再接続する。町の水は通常、セナは生存。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 1 described shot(s). This asset is a 風と水の道をたどる beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: ONE large borderless vertical scene: water leads downward from bridge to turning windmill, small wind spirits lift cloth flags, LIZE and KOH small at bottom; generous calm sky.\n航 (spoken, tail to speaker), exact full text: 魔法って暮らしにも使うんだ; vertical columns RIGHT to LEFT: 魔法って / 暮らしにも使うんだ",
       "references": [
-        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png"
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/05-wind.png"
       ],
       "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/05-wind.png",
-      "alt": "精霊の風と水で動く町の風車。航「魔法って暮らしにも使うんだ」"
+      "alt": "風と水の道を覚え、町を見渡す。航「この道は覚えた」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Milt riverside windmill with tiny luminous wind spirits, early evening\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 1 described shot(s). This asset is a 町の道を覚えた実感を、穏やかな風景へ置く beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: ONE large borderless vertical scene exactly continuing the old windmill illustration: normal flowing water, turning windmill, small independent wind spirits and cloth flags. KOH and LIZE small but dialogue stays a readable modest vertical balloon. No parcel or flour sack. LIZE has finished her small bread; no duplicated leftover.\n航 (spoken, tail to speaker), exact full text: この道は覚えた; vertical columns RIGHT to LEFT: この道は / 覚えた\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nInput 3 is the immediate visual continuity reference for episode-02/art/05-wind.png. Preserve its specified people, clothing, props and local architecture, without copying its panels or text."
     },
     {
       "id": "06-work",
@@ -298,8 +888,41 @@
       "alt": "リゼは自分の巡回の仕事へ向かう。リゼ「ここから巡回私は行くね」 / 航「……また明日」 / リゼ「来るなら日暮れ前に」"
     },
     {
+      "id": "06-town-evening",
+      "location": "Same Milt river street toward safe square, LIZE has gone to patrol and does NOT return; KOH alone with folded paper map, sword sheathed, no shield or parcel; local workers close shops at dusk",
+      "panels": [
+        {
+          "scene": "Shallow local lamplighter touches one modest brass-rune street lamp, warm light quietly appears above stone lane. KOH glances toward the light while walking, no spell cast by him.",
+          "lines": [
+            {
+              "speaker": "音",
+              "columns": [
+                "ポッ"
+              ],
+              "text": "ポッ"
+            }
+          ]
+        },
+        {
+          "scene": "ONE large quiet borderless view: river-side Milt under dusk with normal clear water, workers folding stalls, children walking home, warm lit windows. Small KOH pauses to fold the route map into his belt pouch, learning where he is rather than waiting for LIZE. Broad white breathing room below; no mission or giant enemy yet.",
+          "lines": []
+        }
+      ],
+      "gap_before_390": 280,
+      "pacing_purpose": "巡回へ行った相手を待たず、続いている町を一人で見る",
+      "reveal": false,
+      "episode": 2,
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/reference/cast.png",
+        "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-01/art/07-push-final.png"
+      ],
+      "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/06-town-evening.png",
+      "alt": "灯りがともる町で道の略図をしまう。音「ポッ」",
+      "prompt": "Use case: illustration-story. Asset type: finished original Japanese full-color smartphone vertical webtoon artwork with integrated final Japanese speech balloons, NOT a print manga page. Reference image establishes character faces, hair, costumes and art style ONLY; do not copy its grid or include every reference character. Clear expressive anime linework, painterly fantasy environments, cinematic light, warm human acting, natural hands. Use a natural tall canvas approximately 900x1900 for three moments, 900x2200 for four. Sparse sound beats have their own proportions. Clear medium-bold Japanese manga Gothic. Use TRUE VERTICAL JAPANESE: upright glyphs top-to-bottom, columns right-to-left. Preserve exact text, punctuation and reading order. Each described panel is a successive moment; do not duplicate characters within a moment. Vary width and height according to the described camera: wide establishing shots need room, close-ups can be shallow and staggered. Leave generous white space INSIDE this scroll asset where specified; never use a uniform rectangular grid. White/very light ivory page edges. Normal speech: simple oval or softly rounded tall white balloon with tail to the speaking mouth. Gentle tired speech: thin slightly wavering outline and narrow tail. Shouts: angular heavy jagged outline with strong tail. Thoughts: cloud outline and dots toward the thinker's head. HUD: clean translucent blue-gray horizontal display belonging only to KOH/AKARI, never a speech balloon and no ornamented gold frame. Sounds are drawn lettering near their source, not balloons. No words other than those specified. No title, episode number, panel labels, watermark, bonus panels or later events. Do not cover faces, hands, weapons or clues with text. Frame order is top to bottom; any paired close-ups read right to left. Follow the specified shot count and stop at the final described moment.\nCAST identity: KOH male17 BLACK messy hair with small cowlick, warm gray eyes, slim, blue-gray tunic cream collar brown belt/boots and plain straight steel sword; Japan outfit is faded teal hoodie/white tee/charcoal trousers, school outfit navy blazer/white shirt/charcoal trousers. LIZE female18 chestnut BOB amber eyes tiny brass ear pendant moss-green courier tunic IVORY shoulder cloth brown boots round wooden shield short sword. AKARI female17 BLACK shoulder-length hair orange geometric clip; Japan navy school blazer glasses; game cinnamon-orange jacket charcoal tunic brown trousers simple wooden bow small brass communicator and no glasses. REI male21 DARK SILVER cropped hair steel practical armor short deep red cloak longsword. SENA MALE38 auburn short hair gentle light stubble oatmeal robe dark olive vest brown medicine satchel wooden medicine box. MIWA Japanese woman44 brown hair tied back ivory blouse INDIGO apron. Only draw the people named in each shot. If food appears: soft golden bread with browned crust, vegetable/meat stew with broad distinct pieces and restrained gloss/steam; Japanese bento white rice softly grouped, golden fried chicken, green vegetables, no dense bead-like dots, holes or pinpoint highlights. Keep food vessels and portions consistent. Non-graphic injuries and restrained blood only; no gore.\nFinal dialogue has NO Japanese comma or full stop. Use the supplied semantic column breaks. Preserve ellipses and question/exclamation marks exactly. EVERY spoken/thought glyph should have height BETWEEN 5.5% and 6.5% of canvas width (44-52px for793-wide image, 56-67px for1024-wide), including short replies and offscreen speech. NEVER exceed 7%: keep medium-bold regular manga Gothic, not heavy meme lettering. Enlarge balloons and allocate clear negative space rather than shrinking glyphs. Prioritize large readable vertical text at smartphone size. A single sparse beat must remain sparse, not be filled with a scene.\nUse a tall page for 3-4 shots, varied shallow/large/staggered panels; one shot uses its own natural portrait composition, not stretched to the same height as multi-shot pages.\nScene/backdrop: Same Milt river street toward safe square, LIZE has gone to patrol and does NOT return; KOH alone with folded paper map, sword sheathed, no shield or parcel; local workers close shops at dusk\nEpisode initial context (later shots have the states specified below): 金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。\nDO NOT reveal: 水不足、守護者の真の役割、世界の実在の断定を見せない。\nOnly 2 described shot(s). This asset is a 巡回へ行った相手を待たず、続いている町を一人で見る beat. The next asset is separate, so no bonus reply or later reveal.\nSHOT 1, successive top-to-bottom moment: Shallow local lamplighter touches one modest brass-rune street lamp, warm light quietly appears above stone lane. KOH glances toward the light while walking, no spell cast by him.\nExact originating/continuing drawn sound outside balloons: ポッ\nSHOT 2, successive top-to-bottom moment: ONE large quiet borderless view: river-side Milt under dusk with normal clear water, workers folding stalls, children walking home, warm lit windows. Small KOH pauses to fold the route map into his belt pouch, learning where he is rather than waiting for LIZE. Broad white breathing room below; no mission or giant enemy yet.\nInput 1 defines faces and costumes. Input 2 defines the established drawing style and KOH/LIZE/SENA identities only. Do not copy its shot arrangement or muddy state where the scene says clean. Only the specified people appear. All dialogue glyphs approximately 5.5 to 6 percent of the full source width, regular manga weight. Preserve right-to-left column order. No bonus panel or later event.\nTwo meaningful moments in an airy natural approximately 1024x1536 canvas, no third panel or montage."
+    },
+    {
       "id": "07-announcement",
-      "location": "KOH POV at market; only HUD overlays for him",
+      "location": "KOH POV at Milt market at dusk, immediately after the town lamps are lit; only HUD overlays for him",
       "panels": [
         {
           "scene": "Close: brass wrist menu responds to KOH touch, soft blue HUD.",
@@ -350,5 +973,6 @@
       "path": "/Users/takanorifukuyama/.codex/worktrees/fantasy-game-series/manga/examples/star-ring-regalia/episode-02/art/07-announcement.png",
       "alt": "黒冠の守護者の討伐イベントが告知される。音「ピン」 / HUD「大型イベント　黒冠の守護者　討伐隊募集」 / 航（心）「俺も行けるかな」"
     }
-  ]
+  ],
+  "revision_intent": "町を背景にせず、道を教わる、迷う、音を聞く、届ける、働いた対価を使う体験で覚える。第1話で薬を明示的に託したため謝罪ではなく感謝でつなぐ。魔導器を知ったことは反復せず、正常な水と仕事のつながりを深める。"
 }

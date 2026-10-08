@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Revise the opening through embodied encounters, preserving executed artwork."""
+import argparse
 import copy
 import json
 from pathlib import Path
@@ -134,6 +135,109 @@ def episode_one():
     ep['assets']=assets
     return ep
 
+def episode_two():
+    ep=copy.deepcopy(json.loads((ROOT/'episode-02/episode.json').read_text()))
+    ids=['01-return','02-night-work','03-delivery','04-bread','05-wind','06-work','07-announcement']
+    old={a['id']:a for a in ep['assets'] if a['id'] in ids}
+    ep.update(start='金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。',
+              end='薬の配達と粉袋の返却を通じ、住民の暮らしと町の道を覚える。初めて運び賃を受け取りパンを買う。リゼの巡回を見送り、討伐隊募集に心が動く。',
+              revision_intent='町を背景にせず、道を教わる、迷う、音を聞く、届ける、働いた対価を使う体験で覚える。第1話で薬を明示的に託したため謝罪ではなく感謝でつなぐ。魔導器を知ったことは反復せず、正常な水と仕事のつながりを深める。')
+    assets=[]
+    def keep(key,gap=None):
+        a=old[key]
+        if gap is not None: a['gap_before_390']=gap
+        a['alt']=a['alt'].split('。',1)[0]+'。'+' / '.join(' '.join(f"{d['speaker']}「{d['text']}」" for d in panel['lines']) for panel in a['panels'] if panel['lines'])
+        assets.append(a)
+    def add(asset,alt,extra=()):
+        a=finish(ep,asset,alt)
+        a['references'].extend(str(ROOT/x) for x in extra)
+        if len(a['panels'])==2:
+            a['prompt']+='\nTwo meaningful moments in an airy natural approximately 1024x1536 canvas, no third panel or montage.'
+        for i,x in enumerate(extra,3):
+            a['prompt']+=f'\nInput {i} is the immediate visual continuity reference for '+x+'. Preserve its specified people, clothing, props and local architecture, without copying its panels or text.'
+        assets.append(a)
+        return a
+    add(A('00-school','Japan high school gate after classes on Friday, KOH navy school blazer with bag; AKARI school navy outfit, rectangular glasses and orange geometric hair clip',[
+        P('Medium natural two-shot at school gate: AKARI turns toward KOH while other students walk toward town, no headset or fantasy outfit.',('灯里','今日も|行く？')),
+        P('Small KOH face looking toward her, quiet but definite, no anonymous thought floating over town.',('航','また行くって|約束した')),
+        P('Wide AKARI and KOH continue along the Japanese street, AKARI gestures to herself with familiar friendliness; no game HUD or magic.',('灯里','私は弓の訓練|続きやろうっと'))
+    ],50,'日本の友達も自分の予定を持ち、航は再訪を選ぶ'),'下校時に灯里と、今日も接続すると話す',('episode-01/art/01-school-final.png',))
+    keep('01-return',100)
+    add(A('02-night-work',old['02-night-work']['location'],[
+        P('KOH at the same Milt clinic porch with medicine shelves, hands empty and clean, thanks LIZE for their explicit medicine handoff yesterday. He has not lost or abandoned a parcel.',('航','昨日の薬|届けてくれてありがとう')),
+        P('LIZE normal practical smile, yesterday work completed while KOH was away. She is not standing at his command.',('リゼ','夜には|間に合ったよ')),
+        P('SENA at his clinic porch wooden counter wraps one NEW flat rectangular medicine parcel about 24cm across in pale brown paper with brown string. Same parcel will be delivered to EDA. One clear wrapping action, no clone parcels in KOH hands.',('セナ','今日はこれを|頼める？'))
+    ],100,'昨日の引き渡しに感謝し、今日の仕事を引き受ける'),'リゼが薬を届けたことを知り、セナから今日の包みを受け取る',('episode-02/art/02-night-work.png','episode-02/art/03-delivery.png'))
+    add(A('02-route-note','Same clinic porch work counter beside medicine shelves, SENA and a small folded paper street map, KOH holds ONE new 24cm medicine parcel, LIZE beside him',[
+        P('Close SENA points on a small hand-drawn PAPER map showing the same bridge, a fork, a waterwheel and a little blue door mark. No printed names or HUD. KOH left arm holds the paper parcel against waist, right hand ready to take map.',('セナ','青い扉の|エダさんだよ')),
+        P('Medium KOH follows SENA finger with his eyes, then looks at the visible stone bridge in the real surroundings. Package remains at waist.',('航','この橋を|渡るんだね')),
+        P('Wide LIZE starts along the road with KOH following carrying the one parcel and folded map. SENA remains at his clinic porch counter to put away medicines, not teleporting with them.',('リゼ','帰りの道も|覚えておこう'))
+    ],70,'地図の記号をその場の橋と結びつけ、仕事の相手を知る'),'セナからエダの家への道を教わる',('episode-02/art/03-delivery.png',))
+    walk=add(A('02-walk','Milt stone lane leading from clinic past bridge toward EDA blue-door house, clear afternoon, same parcel and folded paper map',[
+        P('Low shallow walking detail: KOH brown boots and LIZE brown boots continue down stone steps, parcel seen only partly at upper edge. One soft vertical コツコツ begins beside his first step and continues diagonally past the gutter with the same cadence, not a second complete inscription.',('音','コツコツ')),
+        P('Airy wide lane opening: KOH and LIZE small beneath an arch, blue wooden door visible ahead among warm red-tile houses, bakery hanging pretzel sign farther along. The SAME footstep sound tapers toward white bottom; no new starting コツ or bonus conversation.')
+    ],130,'教わった道を自分の足で歩き、足音を街の間へ続ける'),'橋から青い扉の家まで歩く',('episode-02/art/03-delivery.png',))
+    walk['panels'][1]['sound_continuations']=[{'origin':'02-walk:1','text':'コツコツ','placement':'a single shared cadence begins by the steps and its later ツ letters taper past the arch into white, no second inscription'}]
+    add(A('03-delivery','EDA blue wooden front door beside the same Milt stone lane; EDA elderly silver low-tied hair, ivory collar blouse and faded brown-plum shawl with gold trim, exactly as original delivery reference',[
+        P('Medium KOH at the blue wooden door, LIZE waiting one step behind to the side. EDA opens door toward him. KOH holds the ONE 24cm flat paper parcel at waist and introduces himself before she uses his name.',('航','コウです|薬を届けに来ました')),
+        P('Close hands: KOH passes that one parcel into EDA hands, unambiguous shared transfer. Her warm face beside the blue door, no duplicate parcel.',('エダ','ありがとう|コウ')),
+        P('Quiet shallow interior view from doorway: the delivered paper parcel now rests on a small wooden table beside EDA ordinary cup, folded shawl and small hand-painted family portrait in a plain frame. She sets it down carefully; no immediate cure, no quest reward pop-up. KOH no longer carries medicine, both hands free.')
+    ],90,'配達を一回の報酬画面で終えず、受け取った人の生活へ置く'),'青い扉のエダへ薬を手渡す',('episode-02/art/03-delivery.png',))
+    add(A('03-household','Same open blue doorway, package inside on table, KOH hands empty, LIZE at roadside, EDA the same elderly woman in brown-plum shawl',[
+        P('Medium EDA by open door with a small flower pot and two ordinary cups visible inside. She speaks to KOH, tired but pleased, no physical transformation.',('エダ','明日は|孫が来るの')),
+        P('Medium KOH gently glances from the flowers to EDA, ordinary warm response; LIZE listens rather than explaining what an NPC is.',('航','楽しみですね'))
+    ],80,'薬を受け取る相手にも明日の予定がある'),'エダの明日の予定を聞く',('episode-02/art/03-delivery.png',))
+    add(A('03-bakery','Bakery farther along the same lane with pretzel sign, flour shelves and oven, baker same chestnut hair short beard ivory cloth cap white shirt brown leather apron; KOH and LIZE arrive empty-handed',[
+        P('Medium baker looks up from bread shelf as KOH arrives at the counter, recognizes him rather than summoning him. Golden round bread on shelf.',('パン屋','昨日荷車を|押してくれたろ')),
+        P('Shallow KOH surprise, he looks at stacked flour sacks beside oven, connects the muddy cart with bread.',('航','あれ|パン屋の荷物？')),
+        P('Close baker offers ONE warm golden round bread roll on small oatmeal cloth into KOH ready hands, white fluffy break in crust and gentle steam. This is a gift for cart help, no coins yet.',('パン屋','粉が無事で|助かったよ'))
+    ],120,'昨日の小さな手伝いが今日のパンにつながる'),'パン屋で荷車の粉と今日のパンのつながりを知る',('episode-02/art/03-delivery.png','episode-02/art/04-bread.png'))
+    keep('04-bread',140)
+    add(A('04-bread-talk','Bakery outside bench immediately after KOH eats the gifted round bread; he finishes the last piece, folds the small EMPTY oatmeal wrapper; LIZE same moss green courier outfit',[
+        P('Medium LIZE naturally asks KOH sitting across a small bench table, no bread cloning; his last crumbs and wrapper remain on his side.',('リゼ','向こうでは|何してるの？')),
+        P('Shallow KOH with relaxed smile, folds his empty cloth wrapper beside the table, hands clearly shown.',('航','学校と|家の弁当屋')),
+        P('LIZE warm practical response, courier belt visible, not flirt pose. KOH listens and starts to feel useful.',('リゼ','荷運び|慣れてるんだね'))
+    ],110,'食べ終わる間に日本の仕事と現地の仕事を結びつける'),'パンを食べながら家の弁当店を話す',('episode-02/art/04-bread.png',))
+    add(A('04-errand','Back at same bakery counter, KOH has finished bread and stored empty cloth, ONE EMPTY soft folded flour sack on counter, no medicine package or bread in his hands',[
+        P('Medium baker lifts a single visibly flat EMPTY beige flour sack with tied folded edge from counter toward KOH, no cargo box.',('パン屋','空の袋を|水車小屋へ頼める？')),
+        P('Small KOH nodding, takes the one light empty sack with BOTH hands, clearly relieved to recognize the landmark.',('航','さっきの道だね')),
+        P('Wide LIZE walks beside KOH away from bakery but half a step behind, he carries the folded empty sack under left arm and folded paper map in right.',('リゼ','今度はコウが|案内して'))
+    ],80,'地図を覚えることに使い道を作る'),'空の粉袋を水車小屋へ返す仕事を引き受ける',('episode-02/art/03-delivery.png',))
+    wrong=add(A('04-wrong-turn','Milt branching stone lane, KOH carrying ONE flat empty flour sack left arm and the same paper route map right hand; LIZE half a step behind; waterwheel remains offscreen',[
+        P('Medium KOH turns toward the WRONG narrow side lane while comparing folded map and street. Ahead is an ordinary closed garden fence, no monster, no ring reveal, no waterwheel visible.',('航','ここを|曲がって……')),
+        P('Shallow LIZE beside him calmly tilts her head toward the unseen river, a question that helps him rather than mocking.',('リゼ','水の音|聞こえる？')),
+        P('Small KOH stops, lowers the paper map and turns his eyes toward offscreen sound. A single quiet flowing-water サァァ… starts near the right white side and extends toward the open lower gap. NO source wheel visible yet.',('音','サァァ…'))
+    ],90,'道に迷う小さな失敗から、町の音を手掛かりにする'),'道を迷い、水の音に耳を澄ます')
+    add(A('04-wheel','Return to the SAME healthy-flowing bridge-side waterwheel from episode one, reached on foot from lane; KOH and LIZE small near lower doorway, KOH holds one folded empty flour sack',[
+        P('ONE large borderless airy view: clean turquoise water descends past dark wooden wheel, brass guide fittings and slender warm gold mana channel drive an old stone mill. Flour workers and one small independent wind spirit belong in the scene. The SAME distant サァァ… has already begun in previous asset: continue only its trailing ァ… lightly beside water and white edge, never write a second サ or second complete sound. No drought, valve boss or display.')
+    ],700,'聞いた音の場所へ辿り着き、水と魔導技術の仕事を広く見る'),'水の音をたどり、水車小屋へ戻る',('episode-01/art/07-water-final.png','episode-01/art/07-spirit.png'))
+    add(A('04-mill','Same waterwheel doorway, local adult female worker same chestnut ponytail ivory rolled-sleeve shirt dark brown long apron as episode1 wind-spirit scene; ONE empty flour sack from KOH',[
+        P('Medium worker takes the one flat empty sack from KOH hands at doorway, LIZE beside him. The original medicine and bread are absent.',('水車の職人','ありがと|明日も使うから')),
+        P('Quiet wide interior view behind worker: wheel shaft and modest brass engraved fitting rotate a stone grinding mill; regular sacks of grain and flour, soft clean drifting flour dust, no modern robot factory. KOH and LIZE look from doorway, not operating equipment.'),
+        P('Close worker offers TWO small copper coins on open palm toward KOH, same apron cuff and clear fingers. Plain copper color, no exact engraved denomination, no unlimited pile.',('水車の職人','袋の|運び賃'))
+    ],150,'持ち物を返した結果と、誰かの仕事の対価を見せる'),'粉袋を返し、銅貨二枚の運び賃を受け取る',('episode-01/art/07-spirit.png',))
+    add(A('04-wage','Outside same mill doorway after handoff, KOH holds EXACTLY TWO plain copper coins, no flour sack; LIZE beside him, worker returned to her work in background',[
+        P('Shallow KOH looks at two copper coins on his open palm in wonder, no level-up or game notification.',('航','運び賃……？')),
+        P('Medium LIZE looks at his palm then his face, straightforward smile, modest normal wages rather than a grand reward.',('リゼ','働いたぶんだよ'))
+    ],70,'手元の小さな対価に驚き、仕事の意味を受け取る'),'初めての運び賃を確かめる')
+    add(A('04-buy','Same bakery reached by the now familiar lane, KOH and LIZE return on foot; same baker cloth cap white shirt brown apron; exactly TWO copper coins buy ONE small round bread roll',[
+        P('Close KOH places his TWO copper coins on bakery counter, baker offers ONE smaller golden bread roll wrapped in oatmeal cloth. No other coins in KOH hand.',('航','小さいの|一つください')),
+        P('Medium KOH now empty of coins offers that ONE purchased bread roll to LIZE across bakery threshold, slightly shy warm smile.',('航','リゼの分')),
+        P('Shallow LIZE accepts the one bread with BOTH hands, surprised gentle smile. KOH hands empty, no second bread or currency.',('リゼ','ありがとう'))
+    ],120,'覚えた道と自分の運び賃を、相手への小さな返礼に使う'),'運び賃でリゼのパンを買う',('episode-02/art/03-delivery.png','episode-02/art/04-bread.png'))
+    add(A('05-wind',old['05-wind']['location'],[
+        P('ONE large borderless vertical scene exactly continuing the old windmill illustration: normal flowing water, turning windmill, small independent wind spirits and cloth flags. KOH and LIZE small but dialogue stays a readable modest vertical balloon. No parcel or flour sack. LIZE has finished her small bread; no duplicated leftover.',('航','この道は|覚えた'))
+    ],260,'町の道を覚えた実感を、穏やかな風景へ置く'),'風と水の道を覚え、町を見渡す',('episode-02/art/05-wind.png',))
+    keep('06-work',100)
+    add(A('06-town-evening','Same Milt river street toward safe square, LIZE has gone to patrol and does NOT return; KOH alone with folded paper map, sword sheathed, no shield or parcel; local workers close shops at dusk',[
+        P('Shallow local lamplighter touches one modest brass-rune street lamp, warm light quietly appears above stone lane. KOH glances toward the light while walking, no spell cast by him.',('音','ポッ')),
+        P('ONE large quiet borderless view: river-side Milt under dusk with normal clear water, workers folding stalls, children walking home, warm lit windows. Small KOH pauses to fold the route map into his belt pouch, learning where he is rather than waiting for LIZE. Broad white breathing room below; no mission or giant enemy yet.')
+    ],280,'巡回へ行った相手を待たず、続いている町を一人で見る'),'灯りがともる町で道の略図をしまう')
+    keep('07-announcement',310)
+    assets[-1]['location']='KOH POV at Milt market at dusk, immediately after the town lamps are lit; only HUD overlays for him'
+    ep['assets']=assets
+    return ep
+
 def write(ep):
     directory=ROOT/f"episode-{ep['number']:02d}"
     adoption_path=directory/'adoption.json'
@@ -150,8 +254,9 @@ def write(ep):
     (ROOT/'production/assets.json').write_text(json.dumps([a for row in episodes for a in row['assets']],ensure_ascii=False,indent=2)+'\n')
     lines=[f"# 第{ep['number']}話 {ep['title']} — 脚本と縦の絵コンテ",'',
            f"開始：{ep['start']}",f"終了：{ep['end']}",f"伏せる：{ep['hold']}",'',ep['revision_intent'],'',
-           '参照した演出：context-and-dialogueの大小8コマ、cross-panel-soundsの390/360比較と連続3窓、scroll-pacing、whitespace-example。名前→反応→仕事を分け、羽音は姿より先に枠と人物のない余白へ通す。水音は橋から手洗いへ一続きにし、帰宅の静けさより前に終える。通常会話の字は画面幅比で保ち、場面の位置と持ち物を継ぐ。','',
-           '生成済みの既存8素材は採用原画を保持。追加素材は下記の独立した瞬間を描く。縦列は右から左、横並びの接写も右から左。上下のショットは別の瞬間。余白は生成内とHTML外の合計をスマホ実表示で確認する。','']
+           ('第1話：羽音は姿より先に枠と人物のない余白へ通す。水音は橋から手洗いへ一続きにし、帰宅の静けさより前に終える。' if ep['number']==1 else '第2話：足音を歩行から街の間へ続け、水音は場所が見える前に始める。届いた薬と明日の予定、粉とパン、仕事と対価を別の瞬間で描く。'),'',
+           '参照した演出：context-and-dialogue、cross-panel-soundsの390/360比較と連続3窓、scroll-pacing、whitespace-example。通常会話の字は画面幅比で保ち、場面の位置と持ち物を継ぐ。','',
+           ('既存8素材の採用原画を保持。' if ep['number']==1 else '既存の採用原画を活かし、02-night-work・03-delivery・05-windは話のつながりに合わせて編集。07-announcementは直前の町と同じ夕暮れへ揃える。')+'追加素材は下記の独立した瞬間を描く。縦列は右から左、横並びの接写も右から左。上下のショットは別の瞬間。余白は生成内とHTML外の合計をスマホ実表示で確認する。','']
     for a in ep['assets']:
         lines.extend([f"## {a['id']}",f"場所：{a['location']}",f"直前の間：390幅で{a['gap_before_390']}px。役割：{a['pacing_purpose']}",''])
         for i,p in enumerate(a['panels'],1):
@@ -163,4 +268,7 @@ def write(ep):
     print(f"Episode {ep['number']}: {len(ep['assets'])} artwork units, {sum(len(a['panels']) for a in ep['assets'])} story moments")
 
 if __name__=='__main__':
-    write(episode_one())
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--episode',type=int,choices=(1,2),default=1)
+    args=parser.parse_args()
+    write(episode_one() if args.episode==1 else episode_two())
