@@ -76,7 +76,10 @@ window.webtoonReady=(async()=>{
   if(offset!==bytes.length)throw Error('Incomplete original artwork payload');
   const img=document.querySelector('img[data-native-art="'+payload.id+'"]');
   img.src=URL.createObjectURL(new Blob([bytes],{type:'image/png'}));
-  await img.decode();payload.element?.remove();payload.data=null;
+  // An offscreen lazy image can wait for scrolling before decoding. Restore
+  // every source first so waiting on it cannot hide all later panels.
+  if(img.loading!=='lazy')await img.decode();
+  payload.element?.remove();payload.data=null;
   await new Promise(resolve=>setTimeout(resolve,0));
  }
  window.webtoonNativeArt=[];

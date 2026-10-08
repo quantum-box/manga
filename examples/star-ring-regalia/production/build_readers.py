@@ -2,6 +2,7 @@
 """Build the adopted episode readers without changing artwork bytes."""
 import argparse
 import html
+import importlib.util
 import json
 from pathlib import Path
 import struct
@@ -23,7 +24,7 @@ def build_episode(ep):
     directory = ROOT / f'episode-{number:02d}'
     assets = ep['assets']
     adoption = json.loads((directory/'adoption.json').read_text()) if (directory/'adoption.json').is_file() else {}
-    if not all((directory/'art'/f"{a['id']}.png").is_file() for a in assets):
+    if not all((directory/'art'/adoption.get(a['id'], f"{a['id']}.png")).is_file() for a in assets):
         return False
     parts = [f'<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>星環のレガリア 第{number}話 {html.escape(ep["title"])}</title><meta name="manga-title-id" content="star-ring-regalia"><meta name="manga-episode-id" content="episode-{number:02d}"><link rel="stylesheet" href="reader.css"></head><body><main class="episode"><header><p>星環のレガリア / 第{number}話</p><h1>{html.escape(ep["title"])}</h1></header>']
     geometry = []
@@ -47,6 +48,14 @@ def build_episode(ep):
     (directory/'reader.css').write_text(CSS+'\n',encoding='utf-8')
     (directory/'layout.json').write_text(json.dumps(geometry,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     subprocess.run([sys.executable,str(PACKAGER),str(directory/'index.html'),'--output',str(directory/'reader.html'),'--force'],check=True)
+    # Use the repository's lossless offline transport for large full episodes.
+    # Artwork bytes are restored unchanged; companion files remain below 50 MiB.
+    if (directory/'reader.html').stat().st_size >= 100 * 1024 * 1024:
+        transport = ROOT.parent/'tower-farm-kitchen/production/compact_reader.py'
+        spec = importlib.util.spec_from_file_location('webtoon_compact_transport', transport)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        module.compact(directory/'reader.html')
     return True
 
 def main():
