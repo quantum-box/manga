@@ -11,7 +11,7 @@ ALT_SCENES = {
 1: ['進路希望の白紙と剣道部の補欠の航','母の弁当店を手伝い、灯里からゲームに誘われる','自分の部屋でヘッドセットを装着し接続する','まだ何も見えない中、草の匂いに気づく','初めて見る巨大な星環と竜、広大な谷とミルトの町','ぬかるみにはまった荷車を押すリゼとセナ','三人で車輪を持ち上げ、名前を名乗る','町の橋を渡り、セナから薬の配達を頼まれる'],
 2: ['翌日、ミルトを再訪する','航が帰った夜、リゼは薬を届けていた','薬を届け、パン屋で声をかけられる','温かいパンを食べて笑う二人','精霊の風と水で動く町の風車','リゼは自分の巡回の仕事へ向かう','黒冠の守護者の討伐イベントが告知される'],
 3: ['剣と盾の訓練をリゼに頼む','剣道の間合いを試すが、盾の扱いに失敗する','水路の巡回中、爪の跡を見つける','獣が飛び出し、先走った帰還者を襲う','盾で負傷兵を守り、リゼが風の剣で獣を退ける','再生成した帰還者が失った剣を嘆く','現地兵はセナの治療を受けて休む','憧れのプレイヤー、怜が航を討伐隊に誘う'],
-4: ['怜の隊で自分の役割を教わる','灯里と練習し、盾と立ち位置を直す','討伐隊が使う巡回図にはリゼの署名がある','役割を果たして喜ぶ一方、配達の薬がベンチに残る','遅れて町へ戻り、配達を忘れたことを謝る','リゼから帰り道と戻る時刻の約束を求められる','日本の家で、店の手伝いと討伐の予定が重なる'],
+4: ['返した予備盾をリゼに頼んで借り直す','怜の隊で自分の役割を教わる','灯里と練習し、盾と立ち位置を直す','討伐隊が使う巡回図にはリゼの署名がある','役割を果たして喜ぶ一方、配達の薬がベンチに残る','遅れて町へ戻り、配達を忘れたことを謝る','リゼから帰り道と戻る時刻の約束を求められる','日本の家で、店の手伝いと討伐の予定が重なる'],
 5: ['店の手伝いと帰宅時刻を済ませて冒険へ向かう','仲間と町の門から徒歩で出発する','星環の下を、水路と山へ続く道が延びる','野営で温かい煮込みを食べる','遺構の管理印と王国の依頼を確かめる','杯の水面に振動が伝わる','まだ姿の見えない巨大な足音','音の方を見つめて次の動きを待つ'],
 6: ['黒冠の守護者が遺構の奥から現れる','怜の指示を聞き、恐怖の中で一歩を踏み出す','守護者の攻撃で仲間が倒れ、追うか守るか選ぶ','盾で石片を受け、灯里が負傷者を運ぶ','灯里が腕と胸の動作の周期を記録する','守護者が腕を下げる瞬間に関節の制御環を斬る','怜が中枢を斬り、仲間は退避する','中枢が壊れ、分流弁が開いて流れが移る','勝利の後にも手の震えが残る'],
 7: ['討伐から町へ帰り、リゼに声をかけられる','町の人々と温かい食卓を準備する','勝利の食卓に、香ばしいパンと煮込みが並ぶ','パンと煮込みを食べ、セナや灯里と笑う','盾の働きをリゼに認められる横で、流量計が下がる','日本へ遅く戻り、冷めた夕飯と母の声を受け止める','翌朝、灯里から復興イベントの表示を知らされる'],
@@ -120,7 +120,11 @@ EPISODES = [
  P('REI in silver armor and deep red short cloak approaches KOH, sword sheathed, friendly.',('怜','さっきの盾、|よく出せたな。')),
  P('Close KOH recognizes his admired player, startled but delighted.',('航','……レイさん？')),
  P('Large REI offers an open empty hand, a genuine invitation.',('怜','討伐隊、|一緒に来るか。'))],290,'小さな役割を英雄に認められる')]},
- {'number':4,'title':'名前を呼ぶ先輩','start':'怜の誘いを受け、航は大きな集団へ参加する。','end':'町の配達を忘れ、戻る時刻を約束する。リゼの巡回図が討伐に使われる。','hold':'リゼは取水の意図を知らない。怜を悪役の表情にしない。','assets':[
+ {'number':4,'title':'名前を呼ぶ先輩','start':'第3話の盾の返却後。盾を持たない航は、リゼに予備盾を借り直す許可を取り、受け取ってから怜の隊へ参加する。','end':'町の配達を忘れ、戻る時刻を約束する。リゼの巡回図が討伐に使われる。','hold':'リゼは取水の意図を知らない。怜を悪役の表情にしない。','assets':[
+ A('00-shield','Same Milt spare shield shelf, Saturday early afternoon after Episode 3 invitation',[
+ P('KOH has EMPTY hands and NO shield, steel sword SHEATHED at anatomical LEFT hip. He points to the ONE spare shield returned to the shelf in Episode 3 and asks LIZE before taking it.',('航','また盾を|借りてもいい？')),
+ P('LIZE takes the SAME sole spare shield from the shelf, checks its small rim scrape, and hands it to KOH waiting LEFT hand. One shared object during handoff, uncracked boards. LIZE has no other shield.',('リゼ','うん|留め具を見てね')),
+ P('KOH seats anatomical LEFT forearm under inner leather strap and fingers around wood grip, checks fit, then walks toward REI. Only ONE borrowed shield, own steel remains SHEATHED at LEFT hip; no wooden practice sword yet.')],100,'返却した道具を、持ち主へ頼んで再び借りる'),
  A('01-team','Milt guild training yard, afternoon',[
  P('Wide: REI directs a small mixed PLAYER group; KOH in initial tunic with wooden shield, AKARI bow lowered.',('怜','コウは左。|後衛を守って。')),
  P('Close KOH feels seen when name is called.',('航','俺で、いいの？')),
