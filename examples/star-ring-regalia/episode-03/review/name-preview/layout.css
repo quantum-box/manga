@@ -1,0 +1,75 @@
++/* Editable rough lettering has its own room above the raw art. No faces or hands are covered. */
+.dialogue{top:4px}
+.balloon{min-height:0;padding:12px 18px;flex-direction:column;gap:6px;border-radius:44% / 25%}
+.dialogue-speaker{font-size:10px;line-height:12px}
+.dialogue-text{font-weight:650;line-height:1.35}
+.panel .sfx{font-size:clamp(23px,7cqw,29px)}
+figure[data-beat-id="03-listen:2"] .sfx{color:#89949a;font-size:19px}
+figure[data-beat-id="00-japan:1-added-1"]{padding-top:calc(21.600cqw + 70px)}
+figure[data-beat-id="00-japan:1-added-2"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="00-japan:2"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="00-yard:1"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="00-yard:2"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="00-yard:2-added-1"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="00-yard:2-added-2"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="01-lesson:1"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="01-lesson:1-added-1"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="01-lesson:1-added-2"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="01-lesson:2"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="01-lesson:3"]{padding-top:calc(21.600cqw + 70px)}
+figure[data-beat-id="01-lesson:3-added-2"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="01-grip:1"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="01-grip:2"]{padding-top:calc(16.200cqw + 70px)}
+figure[data-beat-id="01-grip:2-added-1"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="01-grip:3"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="02-distance:1"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="02-distance:3"]{padding-top:calc(21.600cqw + 70px)}
+figure[data-beat-id="02-distance:3-added-1"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="02-distance:3-added-2"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="02-retry:1"]{padding-top:calc(21.600cqw + 70px)}
+figure[data-beat-id="02-retry:2-added-2"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="02-retry:2-added-3"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="02-retry:3"]{padding-top:calc(21.600cqw + 70px)}
+figure[data-beat-id="02-rest:1"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="02-rest:2"]{padding-top:calc(21.600cqw + 70px)}
+figure[data-beat-id="02-rest:2-added-1"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="02-change:2"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="02-change:3"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="02-change:3-added-1"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="02-change:3-added-2"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="03-patrol:1"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="03-patrol:1-added-1"]{padding-top:calc(21.600cqw + 70px)}
+figure[data-beat-id="03-patrol:1-added-2"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="03-patrol:2-added-1"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="03-patrol:3"]{padding-top:calc(21.600cqw + 70px)}
+figure[data-beat-id="03-patrol:3-added-1"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="05-defense:1"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="05-defense:3"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="05-recover:1"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="05-recover:2"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="05-recover:2-added-1"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="05-recover:3-added-1"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="06-returner:1"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="06-returner:2"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="06-returner:3"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="06-returner:3-added-1"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="06-supply:1"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="06-supply:1-added-1"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="06-supply:2"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="06-supply:2-added-1"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="06-supply:3"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="07-local:1"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="07-local:2"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="07-local:2-added-1"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="07-local:2-added-2"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="07-local:3"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="07-clinic:2"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="07-promise:1-added-1"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="07-promise:1-added-2"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="07-promise:2"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="07-promise:3"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="08-invitation:1"]{padding-top:calc(32.400cqw + 70px)}
+figure[data-beat-id="08-invitation:2"]{padding-top:calc(37.800cqw + 70px)}
+figure[data-beat-id="08-invitation:2-added-1"]{padding-top:calc(27.000cqw + 70px)}
+figure[data-beat-id="08-invitation:2-added-2"]{padding-top:calc(43.200cqw + 70px)}
+figure[data-beat-id="08-invitation:3"]{padding-top:calc(32.400cqw + 70px)}

@@ -4,8 +4,11 @@ import unittest
 from pathlib import Path
 import re
 import tempfile
+import json
+import shutil
+import subprocess
 
-from compact_reader import CompactReader, decode, encode
+from compact_reader import CompactReader, RUNTIME, decode, encode
 
 class PayloadReader(HTMLParser):
     def __init__(self):
@@ -24,6 +27,33 @@ class PayloadReader(HTMLParser):
         if self.inside:self.payload += data
 
 class CompactTransportTests(unittest.TestCase):
+    @unittest.skipUnless(shutil.which('node'), 'Node is required for decoder execution')
+    def test_offscreen_lazy_images_do_not_block_later_sources(self):
+        originals = [bytes(range(256))*n for n in (1, 2, 3)]
+        payloads = [{'id':f'native-art-{i}', 'length':len(raw), 'data':encode(raw)} for i, raw in enumerate(originals)]
+        setup = r'''
+const images=Array.from({length:3},(_,i)=>({loading:i?'lazy':'eager',src:null,decode(){return i?new Promise(()=>{}):Promise.resolve();}}));
+const restored=[];
+const URL={createObjectURL(blob){restored.push(blob);return 'blob:'+restored.length;}};
+const window={webtoonNativeArt:PAYLOADS};
+const document={querySelectorAll(){return [];},querySelector(selector){return images[Number(selector.match(/native-art-(\d+)/)[1])];}};
+'''.replace('PAYLOADS', json.dumps(payloads))
+        runtime = RUNTIME.removeprefix('<script>').removesuffix('</script>')
+        finish = r'''
+(async()=>{
+ let timer;
+ try{
+  await Promise.race([window.webtoonReady,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Offscreen image blocked subsequent sources')),250);})]);
+  clearTimeout(timer);
+  if(images.some(image=>!image.src))throw Error('Missing image source');
+  console.log(JSON.stringify(await Promise.all(restored.map(async blob=>[...new Uint8Array(await blob.arrayBuffer())]))));
+ }catch(error){clearTimeout(timer);console.error(error.message);process.exitCode=1;}
+})();
+'''
+        result = subprocess.run([shutil.which('node'), '-e', setup+runtime+finish], capture_output=True, text=True, timeout=5)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(json.loads(result.stdout), [list(raw) for raw in originals])
+
     def test_all_bytes_and_html_delimiters(self):
         raw = bytes(range(256))*4 + b'</script>\r\n\x00"&\\'
         encoded = encode(raw)
