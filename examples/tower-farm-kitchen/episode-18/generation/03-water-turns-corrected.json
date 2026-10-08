@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-a35a0fd6-c243-4637-a684-d42c33ed0342.png",
+  "adopted": "art/03-water-turns-corrected.png",
+  "original_sha256": "414b41817fd8afa414a1cc1ee56667e13a24c8361b4ee47d98bcabdc1d565e22",
+  "adopted_sha256": "414b41817fd8afa414a1cc1ee56667e13a24c8361b4ee47d98bcabdc1d565e22",
+  "width": 724,
+  "height": 2172,
+  "prompt_file": "generation/03-water-turns-corrected.prompt.txt",
+  "prompt": "Edit ONLY the sound effect in the lower water splash panel. Replace ザアァ with exactly ザアア (three full-size katakana: ザ ア ア). Preserve every other pixel composition, character, dialogue, water, sluice and panel layout as closely as possible.",
+  "pixel_processing": "none",
+  "text_review": "passed_exact_dialogue_and_speakers",
+  "continuity_review": "passed_causal_order_and_inert_guardian",
+  "reference_files": [
+    {
+      "path": "generation/inputs/03-water-turns.png",
+      "sha256": "16f53b341fc6bc9218fe3b28cc898015d1056908d6d90c53943a1d43931751ea",
+      "executed_filename": "03-water-turns.png"
+    }
+  ]
+}

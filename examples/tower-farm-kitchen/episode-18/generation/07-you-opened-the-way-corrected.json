@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-657a9733-eb26-4e26-9ee0-a93fbaf34486.png",
+  "adopted": "art/07-you-opened-the-way-corrected.png",
+  "original_sha256": "cf51be2ae8d7d7175437fba4d0b3e2913aa24ebc6c019bc28143ad41901daae8",
+  "adopted_sha256": "cf51be2ae8d7d7175437fba4d0b3e2913aa24ebc6c019bc28143ad41901daae8",
+  "width": 724,
+  "height": 2172,
+  "prompt_file": "generation/07-you-opened-the-way-corrected.prompt.txt",
+  "prompt": "Edit ONLY background guardian remains. In second panel behind Row offering his hand, remove the upright reassembled intact guardian and intact blue chest core. Replace it with the same inert collapsed heap of broken wooden plates and separate split dull blue stone fragments seen in reference 2. Also make any guardian remains in last panel an inert collapsed broken heap without intact blue core. No resurrection, no glowing active core. Preserve all three people, their hands, clothing, dialogue, expressions and panel layouts exactly.",
+  "pixel_processing": "none",
+  "text_review": "passed_exact_dialogue_and_speakers",
+  "continuity_review": "passed_causal_order_and_inert_guardian",
+  "reference_files": [
+    {
+      "path": "generation/inputs/07-you-opened-the-way.png",
+      "sha256": "2fc595db718991383c05c20a294503cede14f85271e591777c5ebae0fe315408",
+      "executed_filename": "07-you-opened-the-way.png"
+    },
+    {
+      "path": "art/06-stillness.png",
+      "sha256": "157291ab68902b21f1eedf0f740976162cd298fbff842224148e0bddd34fb8c8",
+      "executed_filename": "06-stillness.png"
+    }
+  ]
+}
