@@ -1,29 +1,74 @@
 [
   {
+    "id": "00-school",
+    "adoptedArt": "art/00-school.png",
+    "nativeWidth": 863,
+    "nativeHeight": 1822,
+    "gapBefore390": 0,
+    "pacingPurpose": "日本の友達も自分の予定を持ち、航は再訪を選ぶ",
+    "reveal": false
+  },
+  {
     "id": "01-return",
     "adoptedArt": "art/01-return.png",
     "nativeWidth": 887,
     "nativeHeight": 1774,
-    "gapBefore390": 0,
+    "gapBefore390": 100,
     "pacingPurpose": "場面の接続",
     "reveal": false
   },
   {
     "id": "02-night-work",
-    "adoptedArt": "art/02-night-work.png",
-    "nativeWidth": 887,
-    "nativeHeight": 1774,
+    "adoptedArt": "art/02-night-work-thanks.png",
+    "nativeWidth": 863,
+    "nativeHeight": 1823,
     "gapBefore390": 100,
-    "pacingPurpose": "いなかった夜にも進んだ生活",
+    "pacingPurpose": "昨日の引き渡しに感謝し、今日の仕事を引き受ける",
+    "reveal": false
+  },
+  {
+    "id": "02-route-note",
+    "adoptedArt": "art/02-route-note.png",
+    "nativeWidth": 863,
+    "nativeHeight": 1823,
+    "gapBefore390": 70,
+    "pacingPurpose": "地図の記号をその場の橋と結びつけ、仕事の相手を知る",
+    "reveal": false
+  },
+  {
+    "id": "02-walk",
+    "adoptedArt": "art/02-walk-sound-final.png",
+    "nativeWidth": 1024,
+    "nativeHeight": 1536,
+    "gapBefore390": 130,
+    "pacingPurpose": "教わった道を自分の足で歩き、足音を街の間へ続ける",
     "reveal": false
   },
   {
     "id": "03-delivery",
-    "adoptedArt": "art/03-delivery.png",
-    "nativeWidth": 887,
-    "nativeHeight": 1774,
+    "adoptedArt": "art/03-delivery-eda.png",
+    "nativeWidth": 863,
+    "nativeHeight": 1823,
+    "gapBefore390": 90,
+    "pacingPurpose": "配達を一回の報酬画面で終えず、受け取った人の生活へ置く",
+    "reveal": false
+  },
+  {
+    "id": "03-household",
+    "adoptedArt": "art/03-household.png",
+    "nativeWidth": 1024,
+    "nativeHeight": 1536,
     "gapBefore390": 80,
-    "pacingPurpose": "名前と行き先が結びつく",
+    "pacingPurpose": "薬を受け取る相手にも明日の予定がある",
+    "reveal": false
+  },
+  {
+    "id": "03-bakery",
+    "adoptedArt": "art/03-bakery.png",
+    "nativeWidth": 907,
+    "nativeHeight": 1734,
+    "gapBefore390": 120,
+    "pacingPurpose": "昨日の小さな手伝いが今日のパンにつながる",
     "reveal": false
   },
   {
@@ -36,12 +81,75 @@
     "reveal": false
   },
   {
-    "id": "05-wind",
-    "adoptedArt": "art/05-wind.png",
+    "id": "04-bread-talk",
+    "adoptedArt": "art/04-bread-talk.png",
+    "nativeWidth": 919,
+    "nativeHeight": 1712,
+    "gapBefore390": 110,
+    "pacingPurpose": "食べ終わる間に日本の仕事と現地の仕事を結びつける",
+    "reveal": false
+  },
+  {
+    "id": "04-errand",
+    "adoptedArt": "art/04-errand.png",
+    "nativeWidth": 863,
+    "nativeHeight": 1822,
+    "gapBefore390": 80,
+    "pacingPurpose": "地図を覚えることに使い道を作る",
+    "reveal": false
+  },
+  {
+    "id": "04-wrong-turn",
+    "adoptedArt": "art/04-wrong-turn.png",
+    "nativeWidth": 864,
+    "nativeHeight": 1821,
+    "gapBefore390": 90,
+    "pacingPurpose": "道に迷う小さな失敗から、町の音を手掛かりにする",
+    "reveal": false
+  },
+  {
+    "id": "04-wheel",
+    "adoptedArt": "art/04-wheel.png",
     "nativeWidth": 941,
     "nativeHeight": 1672,
+    "gapBefore390": 700,
+    "pacingPurpose": "聞いた音の場所へ辿り着き、水と魔導技術の仕事を広く見る",
+    "reveal": false
+  },
+  {
+    "id": "04-mill",
+    "adoptedArt": "art/04-mill.png",
+    "nativeWidth": 863,
+    "nativeHeight": 1823,
+    "gapBefore390": 150,
+    "pacingPurpose": "持ち物を返した結果と、誰かの仕事の対価を見せる",
+    "reveal": false
+  },
+  {
+    "id": "04-wage",
+    "adoptedArt": "art/04-wage.png",
+    "nativeWidth": 1024,
+    "nativeHeight": 1536,
+    "gapBefore390": 70,
+    "pacingPurpose": "手元の小さな対価に驚き、仕事の意味を受け取る",
+    "reveal": false
+  },
+  {
+    "id": "04-buy",
+    "adoptedArt": "art/04-buy.png",
+    "nativeWidth": 863,
+    "nativeHeight": 1823,
+    "gapBefore390": 120,
+    "pacingPurpose": "覚えた道と自分の運び賃を、相手への小さな返礼に使う",
+    "reveal": false
+  },
+  {
+    "id": "05-wind",
+    "adoptedArt": "art/05-wind-route.png",
+    "nativeWidth": 941,
+    "nativeHeight": 1671,
     "gapBefore390": 260,
-    "pacingPurpose": "風と水の道をたどる",
+    "pacingPurpose": "町の道を覚えた実感を、穏やかな風景へ置く",
     "reveal": false
   },
   {
@@ -54,8 +162,17 @@
     "reveal": false
   },
   {
+    "id": "06-town-evening",
+    "adoptedArt": "art/06-town-evening.png",
+    "nativeWidth": 1024,
+    "nativeHeight": 1536,
+    "gapBefore390": 280,
+    "pacingPurpose": "巡回へ行った相手を待たず、続いている町を一人で見る",
+    "reveal": false
+  },
+  {
     "id": "07-announcement",
-    "adoptedArt": "art/07-announcement.png",
+    "adoptedArt": "art/07-announcement-twilight.png",
     "nativeWidth": 887,
     "nativeHeight": 1774,
     "gapBefore390": 310,

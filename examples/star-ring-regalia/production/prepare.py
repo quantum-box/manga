@@ -378,7 +378,7 @@ def main():
             a['episode']=ep['number'];a['prompt']=prompt_for(ep,a)
             a['references']=[str(CAST)]
             a['path']=str(directory/'art'/f"{a['id']}.png")
-            a['alt']=ALT_SCENES[ep['number']][asset_index]+'。'+' / '.join(' '.join(f"{d['speaker']}「{d['text']}」" for d in p['lines']) for p in a['panels'])
+            a['alt']=ALT_SCENES[ep['number']][asset_index]+'。'+' / '.join(' '.join(f"{d['speaker']}「{d['text']}」" for d in p['lines']) for p in a['panels'] if p['lines'])
             manifests.append(a)
             storyboard.extend([f"## {a['id']}",f"場所・時刻：{a['location']}",
               f"直前の間：390px幅基準で{a['gap_before_390']}px。役割：{a['pacing_purpose']}。空間には予定にない人物や装飾を足さない。",''])
