@@ -136,6 +136,13 @@ def episode_one():
 
 def write(ep):
     directory=ROOT/f"episode-{ep['number']:02d}"
+    adoption_path=directory/'adoption.json'
+    adoption=json.loads(adoption_path.read_text()) if adoption_path.exists() else {}
+    for asset in ep['assets']:
+        original=asset['id']+'.png'
+        if asset['id'] not in adoption and (directory/'art'/original).is_file():
+            adoption[asset['id']]=original
+    adoption_path.write_text(json.dumps(adoption,ensure_ascii=False,indent=2)+'\n')
     (directory/'episode.json').write_text(json.dumps(ep,ensure_ascii=False,indent=2)+'\n')
     episodes=json.loads((ROOT/'production/episodes.json').read_text())
     episodes=[ep if row['number']==ep['number'] else row for row in episodes]
