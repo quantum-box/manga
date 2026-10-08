@@ -1,0 +1,108 @@
+{
+  "schema": "webtoon-name-preview/v1",
+  "title": "帰還",
+  "referenceWidth": 390,
+  "beats": [
+    {
+      "id": "return",
+      "type": "panel",
+      "image": "sketches.png",
+      "alt": "夕暮れの手当て用の天幕。左の兵士が包帯の巻かれた腕を守って戻り、右の治療係が気づく。",
+      "crop": [0.02018, 0.015625, 0.46094, 0.45703],
+      "widthPercent": 100,
+      "purpose": "場所と二人の位置を先に見せる。足音ザッは帰還時に一度だけ発生。治療係は足を止め、胸元で手を握っている。",
+      "sounds": [{"text": "ザッ", "x": 24, "y": 90}]
+    },
+    {"id": "notice", "type": "pause", "height": 90, "purpose": "足音は止まり無音。帰ってきた喜びより先に、怪我への心配がせり上がる間。"},
+    {
+      "id": "held-worry",
+      "type": "panel",
+      "image": "sketches.png",
+      "alt": "兵士を見る治療係。眉と口元を固くし、胸元の手を握る。",
+      "crop": [0.51953, 0.0166, 0.46289, 0.45215],
+      "widthPercent": 92,
+      "align": "right",
+      "purpose": "治療係の意図は無事を確かめること。本音の心配を丁寧で冷たい言い方で隠す。兵士へ左を向いて話す。新しい音はない。",
+      "dialogue": [{"text": "遅かった\nですね", "x": 2, "y": 7, "width": 30, "tail": "right"}]
+    },
+    {"id": "short-reply-gap", "type": "pause", "height": 28, "purpose": "同じ場所で短く言い返すテンポ。環境音の繰り返しは入れない。"},
+    {
+      "id": "pretend-fine",
+      "type": "panel",
+      "image": "sketches.png",
+      "alt": "兵士が目を逸らし、痛む腕を押さえたまま平気なふりをする。",
+      "crop": [0.01953, 0.51855, 0.46159, 0.46094],
+      "widthPercent": 88,
+      "align": "left",
+      "purpose": "兵士は相手を心配させたくない。台詞の強がりと、腕を守る姿勢の矛盾を見せる。新しい動作音はない。",
+      "dialogue": [{"text": "……平気だ", "x": 71, "y": 5, "width": 28, "tail": "left"}]
+    },
+    {"id": "look-down", "type": "pause", "height": 45, "purpose": "治療係の視線が腕へ移る時間。沈黙を保つ。"},
+    {
+      "id": "guarded-arm",
+      "type": "panel",
+      "image": "sketches.png",
+      "alt": "兵士が隠そうと押さえる、包帯の巻かれた腕の接写。",
+      "crop": [0.025, 0.83, 0.32, 0.145],
+      "widthPercent": 66,
+      "align": "left",
+      "purpose": "大きな絵の繰り返しではなく、返答と矛盾する手を読む。止まった手なので効果音なし。"
+    },
+    {
+      "id": "call-bluff",
+      "type": "voice",
+      "speaker": "治療係",
+      "text": "平気なら\nその腕を\n隠さないで",
+      "height": 250,
+      "x": 70,
+      "purpose": "強がりを見抜き、治療を受けるよう促す。絵を離した声でも話者名で追える。"
+    },
+    {
+      "id": "inside-invitation",
+      "type": "voice",
+      "speaker": "治療係",
+      "text": "中へ\n手当てします",
+      "height": 235,
+      "x": 67,
+      "purpose": "最初に見せた隣の天幕へ入る理由を伝える。急な場所替えを避け、次のコマの治療へつなぐ。"
+    },
+    {
+      "id": "accept-help",
+      "type": "voice",
+      "speaker": "兵士",
+      "text": "……頼む",
+      "height": 215,
+      "x": 33,
+      "purpose": "強がりをやめるまでの間。返事で治療を受ける意思を示す。移動の絵を省略するため未描写の足音を足さない。"
+    },
+    {
+      "id": "treatment",
+      "type": "panel",
+      "image": "sketches.png",
+      "alt": "同じ天幕の中。左の兵士が腕を差し出し、右の治療係が布で拭く。水盆が二人の間にある。",
+      "crop": [0.51953, 0.51855, 0.46289, 0.46094],
+      "widthPercent": 100,
+      "purpose": "左が兵士・右が治療係を保ち、天幕と包帯と腕を引き継ぐ。布が腕を拭う小さな新しい音だけ描く。肩と目元が緩む。",
+      "sounds": [{"text": "サッ…", "x": 57, "y": 69}]
+    },
+    {"id": "soften", "type": "pause", "height": 130, "purpose": "手当てが続く静かな間。布音は繰り返し描かず、言えなかった本音を待つ。"},
+    {
+      "id": "true-feeling",
+      "type": "voice",
+      "speaker": "治療係",
+      "text": "……心配\nしました",
+      "height": 290,
+      "x": 69,
+      "purpose": "先ほどの丁寧で冷たい言葉に隠れた本音が出る。怪我の説明ではなく、相手に心配を伝える。"
+    },
+    {
+      "id": "apology",
+      "type": "voice",
+      "speaker": "兵士",
+      "text": "悪かった\n次は\nちゃんと戻る",
+      "height": 300,
+      "x": 33,
+      "purpose": "兵士が心配を受け取って返す。反省を長い説明にせず、次の行動を約束する。静かなまま終える。"
+    }
+  ]
+}
