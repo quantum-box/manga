@@ -1,6 +1,6 @@
 # 伏線と連続性の台帳
 
-第1話はPR #67、第2話はPR #81から拡充版を公開し、旧版の本文と画像を差し替え済み。第3話は20素材・53場面の採用原稿をスマホ両幅で確認し、公開前の状態。以下の「初出」「回収」は計画上の位置であり、全てが公開済みではない。実際の採用状態は[制作台帳](../../../examples/star-ring-regalia/production/status.md)と各話のepisode.json・adoption.jsonを参照する。設定変更時は[世界観](world.md)、[人物](characters.md)、[ロードマップ](roadmap.md)、[導入設計](opening-arc.md)へ同時に反映する。
+第1話はPR #67、第2話はPR #81から拡充版を公開し、旧版の本文と画像を差し替え済み。第3話は2026年10月9日に採用された全話ネームに基づく56素材・96コマの完成原稿をスマホ両幅で確認し、PR #84で公開前の状態。390 CSS pxで本編40,734px、純余白を除いた内容36,057px。以下の「初出」「回収」は計画上の位置であり、全てが公開済みではない。実際の採用状態は[制作台帳](../../../examples/star-ring-regalia/production/status.md)と各話のepisode.json・adoption.jsonを参照する。設定変更時は[世界観](world.md)、[人物](characters.md)、[ロードマップ](roadmap.md)、[導入設計](opening-arc.md)へ同時に反映する。
 
 ## 伏線の計画
 
