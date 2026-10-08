@@ -1,11 +1,19 @@
 ---
 name: webtoon
-description: "Plan, create, or revise smartphone-first vertical-scroll comics (Webtoon / ウェブトゥーン / 縦読み漫画), from series story, worldbuilding, and character design to episode scripts, generated art, Japanese lettering, scroll pacing, and mobile validation. Use for developing a Webtoon series, producing its episodes, or improving its vertical reading experience."
+description: "Plan, create, or revise smartphone-first vertical-scroll comics (Webtoon / ウェブトゥーン / 縦読み漫画), including rough name/storyboard previews (ネーム), series story, worldbuilding, character design, generated art, Japanese lettering, scroll pacing, and mobile validation. Use for previewing episode composition before finished art, developing a series, producing its episodes, or improving its vertical reading experience."
 ---
 
 # Webtoon 制作
 
 スマホでスクロールして読むシリーズや短編を、物語・世界観・人物の設計から作画・文字組み・表示確認まで仕上げる。**余白とスクロールで時間・感情・情報の出現順を演出することを制作と完成判定の中心に置く。** 縦長の画像、等間隔のコマ列、横並びや斜め枠の追加だけでは完成としない。
+
+## 本作画の前にネームで構成を見せる
+
+新しい話の本作画や、構成を組み直す大きな改稿へ進む前に、[構成ネームのプレビュー](references/name-preview.md)を使う。「ネームを見せて」「構成を先に確認したい」「ラフで一度見せて」という依頼もここへ進む。対象の一話について、白黒の粗い絵、読めるセリフ、効果音、反応、コマの大小と余白を縦に読める形で先に提示する。完成作画の前に構成を直せることが目的で、文字だけの絵コンテや枠の一覧をネームの代わりにしない。完成作画を保つ軽微な文字・余白・表示の補修には、新しいネームを必須にしない。
+
+この制作環境では、ネームを開いて画像も会話へ表示し、ユーザーの返答を待ってから本作画へ進む。「見せてそのまま進めて」と明示された場合は、提示後も内部確認して続ける。ネーム先行モードは提示までを成果物とし、ユーザーが構成を採用する前に完成作画を始めない。各コマの承認待ちを一律に追加しない。
+
+ネームで使った構成と文字を `storyboard.md` へ反映してから、本作画の指示を作る。ネームの確認を完成原画・完成リーダー・公開確認の合格へ広げない。
 
 ## 一話ごとの抜けを防ぐ
 
@@ -48,7 +56,7 @@ description: "Plan, create, or revise smartphone-first vertical-scroll comics (W
 
 シリーズ企画では[全体と長期構成](references/series-planning.md)、世界観を設計するときは[世界観](references/worldbuilding.md)、人物を設計するときは[キャラクター](references/character-design.md)を読む。新規シリーズではこの3つを使い、設定同士の矛盾と物語を継続できる根拠を確かめる。成果物の `series/bible.md` を入口に、世界観・人物・ロードマップ・連続性の台帳を保存する。
 
-初回の制作前に[第1〜10話の導入アーク](references/opening-arc.md)、複数話を仕上げるときに[まとめて制作・再開する手順](references/batch-production.md)を読む。各話の確認待ちを既定にせず、内部で品質を確認しながら依頼範囲を最後まで進める。実際の制限で途中になった場合は、完成範囲と残作業、再開位置を記録する。計画・脚本・作画・表示確認の完了を区別する。
+初回の制作前に[第1〜10話の導入アーク](references/opening-arc.md)、複数話を仕上げるときに[まとめて制作・再開する手順](references/batch-production.md)を読む。本作画前のネームは提示して返答を待つ。採用後の作画・表示確認は内部で品質を確認しながら進め、各コマの確認待ちは追加しない。実際の制限で途中になった場合は、完成範囲と残作業、再開位置を記録する。計画・脚本・ネーム提示と採用・作画・表示確認の完了を区別する。
 
 ## 最初に読む実例
 
