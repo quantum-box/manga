@@ -10,7 +10,7 @@
 | [塔の農夫は、英雄を食わせる](examples/tower-farm-kitchen/chapters.html) | 剣と魔法・塔・農業・飲食店 | 畑から、英雄の明日の一皿を。 |
 | [塔を灯す剣](examples/tower-forge/chapters.html) | VRMMORPG・剣と魔法・塔攻略 | 自分の作った剣で、未踏の塔へ。 |
 | [ゼロ・ブレイク](examples/zero-break/chapters.html) | 異世界転生・スーパーヒーロー | 最弱判定、最強の一歩。 |
-| [天魔、二周目。](examples/heavenly-demon-ngplus/README.md) | 武侠・異世界転生・強くてニューゲーム | 第1〜10話を全面改稿。処刑の恐怖から、証人・証拠・公開審理、門を出る選択まで |
+| [天魔、二周目。](examples/heavenly-demon-ngplus/README.md) | 武侠・異世界転生・強くてニューゲーム | 最強の身体でも、死ぬのは怖い。処刑を免れた雑役弟子は、聞かれなかった証人の声をたどる。 |
 | [剣聖、仇の弟子に転生する](examples/swordsaint-enemy-disciple/README.md) | 武侠・転生 | 俺を殺した男が、今度は俺の師匠。 |
 | [終電後の落とし物係](examples/lost-property-clerk/webtoon-v3/README.md) | 日常・幻想 | 雨の跡をたどると、小さな窓口。 |
 | [星を拾う夜](examples/star-lighthouse/webtoon-v2/README.md) | SF | 宇宙の静けさに、ひとつの返事。 |
