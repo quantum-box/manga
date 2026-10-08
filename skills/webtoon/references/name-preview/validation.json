@@ -1,0 +1,2915 @@
+{
+  "schema": "webtoon-name-validation/v1",
+  "status": "preview-complete-awaiting-user-adoption",
+  "episodeLength": {
+    "scope": "full_episode",
+    "target": {
+      "widthCssPx": 390,
+      "bodyHeightCssPx": [
+        34000,
+        60000
+      ],
+      "minContentHeightCssPx": 24000,
+      "effectivePanels": [
+        80,
+        120
+      ]
+    },
+    "planned": {
+      "effectivePanels": 80,
+      "storySequences": [
+        {
+          "id": "entrance",
+          "label": "入口",
+          "groupIds": [
+            "group-01",
+            "group-02"
+          ],
+          "panelRange": [
+            "p01",
+            "p16"
+          ],
+          "function": "雨の予告、待つミナ、遅れて戻るレン、右前腕の傷、レンが少年を匿名村人へ渡して安全を確認した救助理由を置く。",
+          "exitQuestion": "レンはなぜ遅れ、ミナは何を手当てしようとするのか"
+        },
+        {
+          "id": "development",
+          "label": "展開",
+          "groupIds": [
+            "group-03",
+            "group-04",
+            "group-05",
+            "group-06"
+          ],
+          "panelRange": [
+            "p17",
+            "p48"
+          ],
+          "function": "治療、雨漏り、支柱、役割分担を因果でつなぎ、隠していた心配を本音の入口へ運ぶ。",
+          "exitQuestion": "二人は無理を隠す関係から助けを頼む関係へ移れるか"
+        },
+        {
+          "id": "climax",
+          "label": "山場",
+          "groupIds": [
+            "group-07",
+            "group-08"
+          ],
+          "panelRange": [
+            "p49",
+            "p64"
+          ],
+          "function": "痛みと帰還不能の恐怖を往復させ、包帯と一個の木札を帯に携帯する準備で約束を行動へ変える。",
+          "exitQuestion": "抽象的な約束を、二人が確認できる行動にできるか"
+        },
+        {
+          "id": "result",
+          "label": "結果",
+          "groupIds": [
+            "group-09"
+          ],
+          "panelRange": [
+            "p65",
+            "p72"
+          ],
+          "function": "天幕の修復、休息、道・時刻の確認、帯の木札を帰還時に空の入口フックへ掛ける手順、次の巡回の準備を見せる。",
+          "exitQuestion": "待つ側も帰る側も、次の帰還を支える具体策を持てたか"
+        },
+        {
+          "id": "satisfaction",
+          "label": "満足・次への接続",
+          "groupIds": [
+            "group-10"
+          ],
+          "panelRange": [
+            "p73",
+            "p80"
+          ],
+          "function": "一週間後の晴れた朝に出発し、同日夕方に木札をフックへ掛け、ミナが合図を受けて迎えに出る。",
+          "exitQuestion": "今回の約束が次の巡回でも使える行動として残ったか"
+        }
+      ]
+    },
+    "actual": {
+      "effectivePanels": 80,
+      "countedPanelIds": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06",
+        "p07",
+        "p08",
+        "p09",
+        "p10",
+        "p11",
+        "p12",
+        "p13",
+        "p14",
+        "p15",
+        "p16",
+        "p17",
+        "p18",
+        "p19",
+        "p20",
+        "p21",
+        "p22",
+        "p23",
+        "p24",
+        "p25",
+        "p26",
+        "p27",
+        "p28",
+        "p29",
+        "p30",
+        "p31",
+        "p32",
+        "p33",
+        "p34",
+        "p35",
+        "p36",
+        "p37",
+        "p38",
+        "p39",
+        "p40",
+        "p41",
+        "p42",
+        "p43",
+        "p44",
+        "p45",
+        "p46",
+        "p47",
+        "p48",
+        "p49",
+        "p50",
+        "p51",
+        "p52",
+        "p53",
+        "p54",
+        "p55",
+        "p56",
+        "p57",
+        "p58",
+        "p59",
+        "p60",
+        "p61",
+        "p62",
+        "p63",
+        "p64",
+        "p65",
+        "p66",
+        "p67",
+        "p68",
+        "p69",
+        "p70",
+        "p71",
+        "p72",
+        "p73",
+        "p74",
+        "p75",
+        "p76",
+        "p77",
+        "p78",
+        "p79",
+        "p80"
+      ],
+      "effectivePanelRegister": "sequence-plan.json#panels",
+      "body390": {
+        "heightCssPx": 42192.40625,
+        "explicitPauseHeightCssPx": 4568,
+        "pureGapHeightCssPx": 5379.854843749999,
+        "contentHeightCssPx": 36812.55140625,
+        "screenUnits": 49.99100266587678,
+        "pureGapRatio": 0.12750765651698281
+      },
+      "body360": {
+        "heightCssPx": 38945.84375,
+        "explicitPauseHeightCssPx": 4215.890625,
+        "pureGapHeightCssPx": 4955.700937500005,
+        "contentHeightCssPx": 33990.142812499995,
+        "screenUnits": 48.6823046875,
+        "pureGapRatio": 0.1272459513089893
+      }
+    },
+    "review": {
+      "volume": {
+        "result": "pass-for-name-trial",
+        "evidence": "390 CSS px actual DOM after all artwork and fonts loaded; UI excluded; eighty distinct cells mapped to eighty independent understandings"
+      },
+      "story": {
+        "result": "ready-for-user-review",
+        "evidence": "Rain and rescue explain the injury; roof failure changes the two characters roles; question/answer/reaction at p52-p56; one week later the same-day evening tag return realizes the promise",
+        "panelRegister": "sequence-plan.json#fivePhases"
+      },
+      "padding": {
+        "result": "no-clear-padding-found",
+        "evidence": "No repeated image+crop or sceneDescription; source sheets contain eighty independent moments. Three adjacent action/result pairs use shared rows. Source image upper empty bands p10/p77 plus text-beat empty bands and all explicit pauses are registered as a vertical union. Meaningful pause heights were added only after the eighty-panel story already measured 39194.40625 px."
+      }
+    },
+    "exception": null
+  },
+  "measurement": {
+    "referenceViewport": [
+      390,
+      844
+    ],
+    "secondaryViewport": [
+      360,
+      800
+    ],
+    "devicePixelRatio": 1,
+    "rawDomMetrics": "review/browser-metrics.json",
+    "bodySelector": "#preview-flow",
+    "pureGapRule": "Union of full-height explicit pauses, empty bands outside each floating-copy (including speaker label), and visually registered image empty bands. Story-bearing white backgrounds are not excluded. No UI, cover, notes or end commentary included.",
+    "pureGapRegisters": {
+      "390": {
+        "gaps": [
+          {
+            "id": "voice-00-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 0,
+            "bottom": 24.7890625,
+            "height": 24.7890625
+          },
+          {
+            "id": "voice-00-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 175.2109375,
+            "bottom": 200,
+            "height": 24.7890625
+          },
+          {
+            "id": "gap-after-p01",
+            "type": "pause",
+            "top": 722.125,
+            "bottom": 768.125,
+            "height": 46
+          },
+          {
+            "id": "pause-01",
+            "type": "pause",
+            "top": 1227.578125,
+            "bottom": 1397.578125,
+            "height": 170
+          },
+          {
+            "id": "gap-after-p03",
+            "type": "pause",
+            "top": 1825.71875,
+            "bottom": 1899.71875,
+            "height": 74
+          },
+          {
+            "id": "gap-after-p04",
+            "type": "pause",
+            "top": 2421.84375,
+            "bottom": 2467.84375,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p05",
+            "type": "pause",
+            "top": 2989.96875,
+            "bottom": 3011.96875,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p06",
+            "type": "pause",
+            "top": 3492.3125,
+            "bottom": 3514.3125,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p07",
+            "type": "pause",
+            "top": 3890.234375,
+            "bottom": 3976.234375,
+            "height": 86
+          },
+          {
+            "id": "gap-after-p08",
+            "type": "pause",
+            "top": 4498.359375,
+            "bottom": 4520.359375,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p09",
+            "type": "pause",
+            "top": 5011.140625,
+            "bottom": 5057.140625,
+            "height": 46
+          },
+          {
+            "id": "p10-image-top",
+            "type": "source-art-empty-band",
+            "top": 5057.140625,
+            "bottom": 5088.57171875,
+            "height": 31.431093750000002,
+            "panelId": "p10",
+            "rangeFraction": [
+              0,
+              0.07
+            ],
+            "reason": "返答の前にある絵の上の無情報帯。吹き出しは8%から"
+          },
+          {
+            "id": "gap-after-p10",
+            "type": "pause",
+            "top": 5506.15625,
+            "bottom": 5528.15625,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p11",
+            "type": "pause",
+            "top": 5956.296875,
+            "bottom": 6012.296875,
+            "height": 56
+          },
+          {
+            "id": "gap-after-p12",
+            "type": "pause",
+            "top": 6388.21875,
+            "bottom": 6434.21875,
+            "height": 46
+          },
+          {
+            "id": "voice-12-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 6434.21875,
+            "bottom": 6485.0625,
+            "height": 50.84375
+          },
+          {
+            "id": "voice-12-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 6593.375,
+            "bottom": 6644.21875,
+            "height": 50.84375
+          },
+          {
+            "id": "pause-02",
+            "type": "pause",
+            "top": 6644.21875,
+            "bottom": 6834.21875,
+            "height": 190
+          },
+          {
+            "id": "gap-after-p13",
+            "type": "pause",
+            "top": 7356.34375,
+            "bottom": 7378.34375,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p14",
+            "type": "pause",
+            "top": 7858.6875,
+            "bottom": 7880.6875,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p15",
+            "type": "pause",
+            "top": 8402.8125,
+            "bottom": 8466.8125,
+            "height": 64
+          },
+          {
+            "id": "voice-15-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 8466.8125,
+            "bottom": 8491.6015625,
+            "height": 24.7890625
+          },
+          {
+            "id": "voice-15-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 8642.0234375,
+            "bottom": 8666.8125,
+            "height": 24.7890625
+          },
+          {
+            "id": "gap-after-p16",
+            "type": "pause",
+            "top": 9188.9375,
+            "bottom": 9210.9375,
+            "height": 22
+          },
+          {
+            "id": "voice-01-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 9210.9375,
+            "bottom": 9242.75,
+            "height": 31.8125
+          },
+          {
+            "id": "voice-01-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 9389.125,
+            "bottom": 9420.9375,
+            "height": 31.8125
+          },
+          {
+            "id": "gap-after-p17",
+            "type": "pause",
+            "top": 9901.28125,
+            "bottom": 9947.28125,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p18",
+            "type": "pause",
+            "top": 10417.1875,
+            "bottom": 10439.1875,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p20",
+            "type": "pause",
+            "top": 10689.78125,
+            "bottom": 10735.78125,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p21",
+            "type": "pause",
+            "top": 11226.5625,
+            "bottom": 11248.5625,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p22",
+            "type": "pause",
+            "top": 11676.703125,
+            "bottom": 11698.703125,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p23",
+            "type": "pause",
+            "top": 12179.046875,
+            "bottom": 12251.046875,
+            "height": 72
+          },
+          {
+            "id": "pause-03",
+            "type": "pause",
+            "top": 12773.171875,
+            "bottom": 12923.171875,
+            "height": 150
+          },
+          {
+            "id": "gap-after-p25",
+            "type": "pause",
+            "top": 13393.078125,
+            "bottom": 13439.078125,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p26",
+            "type": "pause",
+            "top": 13929.859375,
+            "bottom": 13951.859375,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p27",
+            "type": "pause",
+            "top": 14400.875,
+            "bottom": 14446.875,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p28",
+            "type": "pause",
+            "top": 14948.09375,
+            "bottom": 14970.09375,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p29",
+            "type": "pause",
+            "top": 15440,
+            "bottom": 15462,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p30",
+            "type": "pause",
+            "top": 15952.78125,
+            "bottom": 15974.78125,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p31",
+            "type": "pause",
+            "top": 16434.234375,
+            "bottom": 16456.234375,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p32",
+            "type": "pause",
+            "top": 16978.359375,
+            "bottom": 17024.359375,
+            "height": 46
+          },
+          {
+            "id": "voice-02-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 17024.359375,
+            "bottom": 17056.703125,
+            "height": 32.34375
+          },
+          {
+            "id": "voice-02-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 17182.015625,
+            "bottom": 17214.359375,
+            "height": 32.34375
+          },
+          {
+            "id": "gap-after-p34",
+            "type": "pause",
+            "top": 17464.953125,
+            "bottom": 17510.953125,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p35",
+            "type": "pause",
+            "top": 17980.859375,
+            "bottom": 18002.859375,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p36",
+            "type": "pause",
+            "top": 18431,
+            "bottom": 18453,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p37",
+            "type": "pause",
+            "top": 18975.125,
+            "bottom": 19071.125,
+            "height": 96
+          },
+          {
+            "id": "gap-after-p38",
+            "type": "pause",
+            "top": 19478.359375,
+            "bottom": 19500.359375,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p39",
+            "type": "pause",
+            "top": 19938.9375,
+            "bottom": 19960.9375,
+            "height": 22
+          },
+          {
+            "id": "pause-04",
+            "type": "pause",
+            "top": 20483.0625,
+            "bottom": 20703.0625,
+            "height": 220
+          },
+          {
+            "id": "gap-after-p41",
+            "type": "pause",
+            "top": 21152.078125,
+            "bottom": 21236.078125,
+            "height": 84
+          },
+          {
+            "id": "gap-after-p42",
+            "type": "pause",
+            "top": 21653.78125,
+            "bottom": 21675.78125,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p43",
+            "type": "pause",
+            "top": 22156.125,
+            "bottom": 22178.125,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p45",
+            "type": "pause",
+            "top": 22428.71875,
+            "bottom": 22474.71875,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p46",
+            "type": "pause",
+            "top": 22871.515625,
+            "bottom": 22893.515625,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p47",
+            "type": "pause",
+            "top": 23373.859375,
+            "bottom": 23395.859375,
+            "height": 22
+          },
+          {
+            "id": "pause-05",
+            "type": "pause",
+            "top": 23917.984375,
+            "bottom": 24097.984375,
+            "height": 180
+          },
+          {
+            "id": "gap-after-p49",
+            "type": "pause",
+            "top": 24599.203125,
+            "bottom": 24645.203125,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p50",
+            "type": "pause",
+            "top": 25052.4375,
+            "bottom": 25074.4375,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p51",
+            "type": "pause",
+            "top": 25544.34375,
+            "bottom": 25566.34375,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p52",
+            "type": "pause",
+            "top": 26057.125,
+            "bottom": 26103.125,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p53",
+            "type": "pause",
+            "top": 26562.578125,
+            "bottom": 26667.578125,
+            "height": 105
+          },
+          {
+            "id": "gap-after-p54",
+            "type": "pause",
+            "top": 27064.375,
+            "bottom": 27194.375,
+            "height": 130
+          },
+          {
+            "id": "gap-after-p55",
+            "type": "pause",
+            "top": 27685.15625,
+            "bottom": 27820.15625,
+            "height": 135
+          },
+          {
+            "id": "gap-after-p56",
+            "type": "pause",
+            "top": 28342.28125,
+            "bottom": 28388.28125,
+            "height": 46
+          },
+          {
+            "id": "voice-03-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 28388.28125,
+            "bottom": 28435.625,
+            "height": 47.34375
+          },
+          {
+            "id": "voice-03-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 28560.9375,
+            "bottom": 28608.28125,
+            "height": 47.34375
+          },
+          {
+            "id": "gap-after-p57",
+            "type": "pause",
+            "top": 29088.625,
+            "bottom": 29134.625,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p58",
+            "type": "pause",
+            "top": 29573.203125,
+            "bottom": 29595.203125,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p59",
+            "type": "pause",
+            "top": 30065.109375,
+            "bottom": 30137.109375,
+            "height": 72
+          },
+          {
+            "id": "gap-after-p60",
+            "type": "pause",
+            "top": 30586.125,
+            "bottom": 30608.125,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p61",
+            "type": "pause",
+            "top": 31088.46875,
+            "bottom": 31134.46875,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p62",
+            "type": "pause",
+            "top": 31541.703125,
+            "bottom": 31563.703125,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p63",
+            "type": "pause",
+            "top": 32085.828125,
+            "bottom": 32107.828125,
+            "height": 22
+          },
+          {
+            "id": "pause-06",
+            "type": "pause",
+            "top": 32598.609375,
+            "bottom": 32838.609375,
+            "height": 240
+          },
+          {
+            "id": "gap-after-p65",
+            "type": "pause",
+            "top": 33266.75,
+            "bottom": 33312.75,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p66",
+            "type": "pause",
+            "top": 33772.203125,
+            "bottom": 33818.203125,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p67",
+            "type": "pause",
+            "top": 34267.21875,
+            "bottom": 34289.21875,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p68",
+            "type": "pause",
+            "top": 34759.125,
+            "bottom": 34781.125,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p69",
+            "type": "pause",
+            "top": 35303.25,
+            "bottom": 35325.25,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p70",
+            "type": "pause",
+            "top": 35763.828125,
+            "bottom": 35837.828125,
+            "height": 74
+          },
+          {
+            "id": "gap-after-p71",
+            "type": "pause",
+            "top": 36359.953125,
+            "bottom": 36449.953125,
+            "height": 90
+          },
+          {
+            "id": "gap-after-p72",
+            "type": "pause",
+            "top": 36930.296875,
+            "bottom": 36976.296875,
+            "height": 46
+          },
+          {
+            "id": "voice-05-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 36976.296875,
+            "bottom": 37047.140625,
+            "height": 70.84375
+          },
+          {
+            "id": "voice-05-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 37155.453125,
+            "bottom": 37226.296875,
+            "height": 70.84375
+          },
+          {
+            "id": "gap-after-p73",
+            "type": "pause",
+            "top": 37748.421875,
+            "bottom": 37794.421875,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p74",
+            "type": "pause",
+            "top": 38274.765625,
+            "bottom": 38296.765625,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p75",
+            "type": "pause",
+            "top": 38745.78125,
+            "bottom": 38767.78125,
+            "height": 22
+          },
+          {
+            "id": "gap-after-p76",
+            "type": "pause",
+            "top": 39289.90625,
+            "bottom": 39335.90625,
+            "height": 46
+          },
+          {
+            "id": "voice-06-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 39335.90625,
+            "bottom": 39396.75,
+            "height": 60.84375
+          },
+          {
+            "id": "voice-06-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 39505.0625,
+            "bottom": 39565.90625,
+            "height": 60.84375
+          },
+          {
+            "id": "pause-07",
+            "type": "pause",
+            "top": 39565.90625,
+            "bottom": 39985.90625,
+            "height": 420
+          },
+          {
+            "id": "p77-image-top",
+            "type": "source-art-empty-band",
+            "top": 39985.90625,
+            "bottom": 40037.283125,
+            "height": 51.376875,
+            "panelId": "p77",
+            "rangeFraction": [
+              0,
+              0.12
+            ],
+            "reason": "木札の音と反応が現れる前の絵の上の無情報帯"
+          },
+          {
+            "id": "gap-after-p77",
+            "type": "pause",
+            "top": 40414.046875,
+            "bottom": 40460.046875,
+            "height": 46
+          },
+          {
+            "id": "gap-after-p78",
+            "type": "pause",
+            "top": 40919.5,
+            "bottom": 40997.5,
+            "height": 78
+          },
+          {
+            "id": "gap-after-p79",
+            "type": "pause",
+            "top": 41488.28125,
+            "bottom": 41510.28125,
+            "height": 22
+          },
+          {
+            "id": "voice-04-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 41510.28125,
+            "bottom": 41531.1953125,
+            "height": 20.9140625
+          },
+          {
+            "id": "voice-04-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 41649.3671875,
+            "bottom": 41670.28125,
+            "height": 20.9140625
+          }
+        ],
+        "union": [
+          {
+            "top": 0,
+            "bottom": 24.7890625,
+            "ids": [
+              "voice-00-before-copy"
+            ]
+          },
+          {
+            "top": 175.2109375,
+            "bottom": 200,
+            "ids": [
+              "voice-00-after-copy"
+            ]
+          },
+          {
+            "top": 722.125,
+            "bottom": 768.125,
+            "ids": [
+              "gap-after-p01"
+            ]
+          },
+          {
+            "top": 1227.578125,
+            "bottom": 1397.578125,
+            "ids": [
+              "pause-01"
+            ]
+          },
+          {
+            "top": 1825.71875,
+            "bottom": 1899.71875,
+            "ids": [
+              "gap-after-p03"
+            ]
+          },
+          {
+            "top": 2421.84375,
+            "bottom": 2467.84375,
+            "ids": [
+              "gap-after-p04"
+            ]
+          },
+          {
+            "top": 2989.96875,
+            "bottom": 3011.96875,
+            "ids": [
+              "gap-after-p05"
+            ]
+          },
+          {
+            "top": 3492.3125,
+            "bottom": 3514.3125,
+            "ids": [
+              "gap-after-p06"
+            ]
+          },
+          {
+            "top": 3890.234375,
+            "bottom": 3976.234375,
+            "ids": [
+              "gap-after-p07"
+            ]
+          },
+          {
+            "top": 4498.359375,
+            "bottom": 4520.359375,
+            "ids": [
+              "gap-after-p08"
+            ]
+          },
+          {
+            "top": 5011.140625,
+            "bottom": 5088.57171875,
+            "ids": [
+              "gap-after-p09",
+              "p10-image-top"
+            ]
+          },
+          {
+            "top": 5506.15625,
+            "bottom": 5528.15625,
+            "ids": [
+              "gap-after-p10"
+            ]
+          },
+          {
+            "top": 5956.296875,
+            "bottom": 6012.296875,
+            "ids": [
+              "gap-after-p11"
+            ]
+          },
+          {
+            "top": 6388.21875,
+            "bottom": 6485.0625,
+            "ids": [
+              "gap-after-p12",
+              "voice-12-before-copy"
+            ]
+          },
+          {
+            "top": 6593.375,
+            "bottom": 6834.21875,
+            "ids": [
+              "voice-12-after-copy",
+              "pause-02"
+            ]
+          },
+          {
+            "top": 7356.34375,
+            "bottom": 7378.34375,
+            "ids": [
+              "gap-after-p13"
+            ]
+          },
+          {
+            "top": 7858.6875,
+            "bottom": 7880.6875,
+            "ids": [
+              "gap-after-p14"
+            ]
+          },
+          {
+            "top": 8402.8125,
+            "bottom": 8491.6015625,
+            "ids": [
+              "gap-after-p15",
+              "voice-15-before-copy"
+            ]
+          },
+          {
+            "top": 8642.0234375,
+            "bottom": 8666.8125,
+            "ids": [
+              "voice-15-after-copy"
+            ]
+          },
+          {
+            "top": 9188.9375,
+            "bottom": 9242.75,
+            "ids": [
+              "gap-after-p16",
+              "voice-01-before-copy"
+            ]
+          },
+          {
+            "top": 9389.125,
+            "bottom": 9420.9375,
+            "ids": [
+              "voice-01-after-copy"
+            ]
+          },
+          {
+            "top": 9901.28125,
+            "bottom": 9947.28125,
+            "ids": [
+              "gap-after-p17"
+            ]
+          },
+          {
+            "top": 10417.1875,
+            "bottom": 10439.1875,
+            "ids": [
+              "gap-after-p18"
+            ]
+          },
+          {
+            "top": 10689.78125,
+            "bottom": 10735.78125,
+            "ids": [
+              "gap-after-p20"
+            ]
+          },
+          {
+            "top": 11226.5625,
+            "bottom": 11248.5625,
+            "ids": [
+              "gap-after-p21"
+            ]
+          },
+          {
+            "top": 11676.703125,
+            "bottom": 11698.703125,
+            "ids": [
+              "gap-after-p22"
+            ]
+          },
+          {
+            "top": 12179.046875,
+            "bottom": 12251.046875,
+            "ids": [
+              "gap-after-p23"
+            ]
+          },
+          {
+            "top": 12773.171875,
+            "bottom": 12923.171875,
+            "ids": [
+              "pause-03"
+            ]
+          },
+          {
+            "top": 13393.078125,
+            "bottom": 13439.078125,
+            "ids": [
+              "gap-after-p25"
+            ]
+          },
+          {
+            "top": 13929.859375,
+            "bottom": 13951.859375,
+            "ids": [
+              "gap-after-p26"
+            ]
+          },
+          {
+            "top": 14400.875,
+            "bottom": 14446.875,
+            "ids": [
+              "gap-after-p27"
+            ]
+          },
+          {
+            "top": 14948.09375,
+            "bottom": 14970.09375,
+            "ids": [
+              "gap-after-p28"
+            ]
+          },
+          {
+            "top": 15440,
+            "bottom": 15462,
+            "ids": [
+              "gap-after-p29"
+            ]
+          },
+          {
+            "top": 15952.78125,
+            "bottom": 15974.78125,
+            "ids": [
+              "gap-after-p30"
+            ]
+          },
+          {
+            "top": 16434.234375,
+            "bottom": 16456.234375,
+            "ids": [
+              "gap-after-p31"
+            ]
+          },
+          {
+            "top": 16978.359375,
+            "bottom": 17056.703125,
+            "ids": [
+              "gap-after-p32",
+              "voice-02-before-copy"
+            ]
+          },
+          {
+            "top": 17182.015625,
+            "bottom": 17214.359375,
+            "ids": [
+              "voice-02-after-copy"
+            ]
+          },
+          {
+            "top": 17464.953125,
+            "bottom": 17510.953125,
+            "ids": [
+              "gap-after-p34"
+            ]
+          },
+          {
+            "top": 17980.859375,
+            "bottom": 18002.859375,
+            "ids": [
+              "gap-after-p35"
+            ]
+          },
+          {
+            "top": 18431,
+            "bottom": 18453,
+            "ids": [
+              "gap-after-p36"
+            ]
+          },
+          {
+            "top": 18975.125,
+            "bottom": 19071.125,
+            "ids": [
+              "gap-after-p37"
+            ]
+          },
+          {
+            "top": 19478.359375,
+            "bottom": 19500.359375,
+            "ids": [
+              "gap-after-p38"
+            ]
+          },
+          {
+            "top": 19938.9375,
+            "bottom": 19960.9375,
+            "ids": [
+              "gap-after-p39"
+            ]
+          },
+          {
+            "top": 20483.0625,
+            "bottom": 20703.0625,
+            "ids": [
+              "pause-04"
+            ]
+          },
+          {
+            "top": 21152.078125,
+            "bottom": 21236.078125,
+            "ids": [
+              "gap-after-p41"
+            ]
+          },
+          {
+            "top": 21653.78125,
+            "bottom": 21675.78125,
+            "ids": [
+              "gap-after-p42"
+            ]
+          },
+          {
+            "top": 22156.125,
+            "bottom": 22178.125,
+            "ids": [
+              "gap-after-p43"
+            ]
+          },
+          {
+            "top": 22428.71875,
+            "bottom": 22474.71875,
+            "ids": [
+              "gap-after-p45"
+            ]
+          },
+          {
+            "top": 22871.515625,
+            "bottom": 22893.515625,
+            "ids": [
+              "gap-after-p46"
+            ]
+          },
+          {
+            "top": 23373.859375,
+            "bottom": 23395.859375,
+            "ids": [
+              "gap-after-p47"
+            ]
+          },
+          {
+            "top": 23917.984375,
+            "bottom": 24097.984375,
+            "ids": [
+              "pause-05"
+            ]
+          },
+          {
+            "top": 24599.203125,
+            "bottom": 24645.203125,
+            "ids": [
+              "gap-after-p49"
+            ]
+          },
+          {
+            "top": 25052.4375,
+            "bottom": 25074.4375,
+            "ids": [
+              "gap-after-p50"
+            ]
+          },
+          {
+            "top": 25544.34375,
+            "bottom": 25566.34375,
+            "ids": [
+              "gap-after-p51"
+            ]
+          },
+          {
+            "top": 26057.125,
+            "bottom": 26103.125,
+            "ids": [
+              "gap-after-p52"
+            ]
+          },
+          {
+            "top": 26562.578125,
+            "bottom": 26667.578125,
+            "ids": [
+              "gap-after-p53"
+            ]
+          },
+          {
+            "top": 27064.375,
+            "bottom": 27194.375,
+            "ids": [
+              "gap-after-p54"
+            ]
+          },
+          {
+            "top": 27685.15625,
+            "bottom": 27820.15625,
+            "ids": [
+              "gap-after-p55"
+            ]
+          },
+          {
+            "top": 28342.28125,
+            "bottom": 28435.625,
+            "ids": [
+              "gap-after-p56",
+              "voice-03-before-copy"
+            ]
+          },
+          {
+            "top": 28560.9375,
+            "bottom": 28608.28125,
+            "ids": [
+              "voice-03-after-copy"
+            ]
+          },
+          {
+            "top": 29088.625,
+            "bottom": 29134.625,
+            "ids": [
+              "gap-after-p57"
+            ]
+          },
+          {
+            "top": 29573.203125,
+            "bottom": 29595.203125,
+            "ids": [
+              "gap-after-p58"
+            ]
+          },
+          {
+            "top": 30065.109375,
+            "bottom": 30137.109375,
+            "ids": [
+              "gap-after-p59"
+            ]
+          },
+          {
+            "top": 30586.125,
+            "bottom": 30608.125,
+            "ids": [
+              "gap-after-p60"
+            ]
+          },
+          {
+            "top": 31088.46875,
+            "bottom": 31134.46875,
+            "ids": [
+              "gap-after-p61"
+            ]
+          },
+          {
+            "top": 31541.703125,
+            "bottom": 31563.703125,
+            "ids": [
+              "gap-after-p62"
+            ]
+          },
+          {
+            "top": 32085.828125,
+            "bottom": 32107.828125,
+            "ids": [
+              "gap-after-p63"
+            ]
+          },
+          {
+            "top": 32598.609375,
+            "bottom": 32838.609375,
+            "ids": [
+              "pause-06"
+            ]
+          },
+          {
+            "top": 33266.75,
+            "bottom": 33312.75,
+            "ids": [
+              "gap-after-p65"
+            ]
+          },
+          {
+            "top": 33772.203125,
+            "bottom": 33818.203125,
+            "ids": [
+              "gap-after-p66"
+            ]
+          },
+          {
+            "top": 34267.21875,
+            "bottom": 34289.21875,
+            "ids": [
+              "gap-after-p67"
+            ]
+          },
+          {
+            "top": 34759.125,
+            "bottom": 34781.125,
+            "ids": [
+              "gap-after-p68"
+            ]
+          },
+          {
+            "top": 35303.25,
+            "bottom": 35325.25,
+            "ids": [
+              "gap-after-p69"
+            ]
+          },
+          {
+            "top": 35763.828125,
+            "bottom": 35837.828125,
+            "ids": [
+              "gap-after-p70"
+            ]
+          },
+          {
+            "top": 36359.953125,
+            "bottom": 36449.953125,
+            "ids": [
+              "gap-after-p71"
+            ]
+          },
+          {
+            "top": 36930.296875,
+            "bottom": 37047.140625,
+            "ids": [
+              "gap-after-p72",
+              "voice-05-before-copy"
+            ]
+          },
+          {
+            "top": 37155.453125,
+            "bottom": 37226.296875,
+            "ids": [
+              "voice-05-after-copy"
+            ]
+          },
+          {
+            "top": 37748.421875,
+            "bottom": 37794.421875,
+            "ids": [
+              "gap-after-p73"
+            ]
+          },
+          {
+            "top": 38274.765625,
+            "bottom": 38296.765625,
+            "ids": [
+              "gap-after-p74"
+            ]
+          },
+          {
+            "top": 38745.78125,
+            "bottom": 38767.78125,
+            "ids": [
+              "gap-after-p75"
+            ]
+          },
+          {
+            "top": 39289.90625,
+            "bottom": 39396.75,
+            "ids": [
+              "gap-after-p76",
+              "voice-06-before-copy"
+            ]
+          },
+          {
+            "top": 39505.0625,
+            "bottom": 40037.283125,
+            "ids": [
+              "voice-06-after-copy",
+              "pause-07",
+              "p77-image-top"
+            ]
+          },
+          {
+            "top": 40414.046875,
+            "bottom": 40460.046875,
+            "ids": [
+              "gap-after-p77"
+            ]
+          },
+          {
+            "top": 40919.5,
+            "bottom": 40997.5,
+            "ids": [
+              "gap-after-p78"
+            ]
+          },
+          {
+            "top": 41488.28125,
+            "bottom": 41531.1953125,
+            "ids": [
+              "gap-after-p79",
+              "voice-04-before-copy"
+            ]
+          },
+          {
+            "top": 41649.3671875,
+            "bottom": 41670.28125,
+            "ids": [
+              "voice-04-after-copy"
+            ]
+          }
+        ],
+        "sourceArtLargeEmptyBands": [
+          "p10-image-top",
+          "p77-image-top"
+        ],
+        "sourceArtReview": "All ten sheets / eighty cropped cells inspected. The two upper no-information bands are registered. Elsewhere canvas, rain, cloud, props, human acting or lettering occupies the open image background; white background around characters is not subtracted."
+      },
+      "360": {
+        "gaps": [
+          {
+            "id": "voice-00-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 0,
+            "bottom": 22.75,
+            "height": 22.75
+          },
+          {
+            "id": "voice-00-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 161.84375,
+            "bottom": 184.609375,
+            "height": 22.765625
+          },
+          {
+            "id": "gap-after-p01",
+            "type": "pause",
+            "top": 666.5625,
+            "bottom": 709.015625,
+            "height": 42.453125
+          },
+          {
+            "id": "pause-01",
+            "type": "pause",
+            "top": 1133.140625,
+            "bottom": 1290.0625,
+            "height": 156.921875
+          },
+          {
+            "id": "gap-after-p03",
+            "type": "pause",
+            "top": 1685.25,
+            "bottom": 1753.546875,
+            "height": 68.296875
+          },
+          {
+            "id": "gap-after-p04",
+            "type": "pause",
+            "top": 2235.5,
+            "bottom": 2277.953125,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p05",
+            "type": "pause",
+            "top": 2759.90625,
+            "bottom": 2780.203125,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p06",
+            "type": "pause",
+            "top": 3223.59375,
+            "bottom": 3243.890625,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p07",
+            "type": "pause",
+            "top": 3590.875,
+            "bottom": 3670.25,
+            "height": 79.375
+          },
+          {
+            "id": "gap-after-p08",
+            "type": "pause",
+            "top": 4152.203125,
+            "bottom": 4172.5,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p09",
+            "type": "pause",
+            "top": 4625.53125,
+            "bottom": 4667.984375,
+            "height": 42.453125
+          },
+          {
+            "id": "p10-image-top",
+            "type": "source-art-empty-band",
+            "top": 4667.984375,
+            "bottom": 4696.9971875,
+            "height": 29.012812500000003,
+            "panelId": "p10",
+            "rangeFraction": [
+              0,
+              0.07
+            ],
+            "reason": "返答の前にある絵の上の無情報帯。吹き出しは8%から"
+          },
+          {
+            "id": "gap-after-p10",
+            "type": "pause",
+            "top": 5082.453125,
+            "bottom": 5102.75,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p11",
+            "type": "pause",
+            "top": 5497.9375,
+            "bottom": 5549.625,
+            "height": 51.6875
+          },
+          {
+            "id": "gap-after-p12",
+            "type": "pause",
+            "top": 5896.609375,
+            "bottom": 5939.0625,
+            "height": 42.453125
+          },
+          {
+            "id": "voice-12-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 5939.0625,
+            "bottom": 5985.8828125,
+            "height": 46.8203125
+          },
+          {
+            "id": "voice-12-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 6086.0859375,
+            "bottom": 6132.90625,
+            "height": 46.8203125
+          },
+          {
+            "id": "pause-02",
+            "type": "pause",
+            "top": 6132.90625,
+            "bottom": 6308.28125,
+            "height": 175.375
+          },
+          {
+            "id": "gap-after-p13",
+            "type": "pause",
+            "top": 6790.234375,
+            "bottom": 6810.53125,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p14",
+            "type": "pause",
+            "top": 7253.921875,
+            "bottom": 7274.21875,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p15",
+            "type": "pause",
+            "top": 7756.171875,
+            "bottom": 7815.234375,
+            "height": 59.0625
+          },
+          {
+            "id": "voice-15-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 7815.234375,
+            "bottom": 7837.984375,
+            "height": 22.75
+          },
+          {
+            "id": "voice-15-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 7977.078125,
+            "bottom": 7999.84375,
+            "height": 22.765625
+          },
+          {
+            "id": "gap-after-p16",
+            "type": "pause",
+            "top": 8481.796875,
+            "bottom": 8502.09375,
+            "height": 20.296875
+          },
+          {
+            "id": "voice-01-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 8502.09375,
+            "bottom": 8530.6953125,
+            "height": 28.6015625
+          },
+          {
+            "id": "voice-01-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 8667.3359375,
+            "bottom": 8695.9375,
+            "height": 28.6015625
+          },
+          {
+            "id": "gap-after-p17",
+            "type": "pause",
+            "top": 9139.328125,
+            "bottom": 9181.78125,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p18",
+            "type": "pause",
+            "top": 9615.546875,
+            "bottom": 9635.84375,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p20",
+            "type": "pause",
+            "top": 9867.171875,
+            "bottom": 9909.625,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p21",
+            "type": "pause",
+            "top": 10362.65625,
+            "bottom": 10382.953125,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p22",
+            "type": "pause",
+            "top": 10778.140625,
+            "bottom": 10798.4375,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p23",
+            "type": "pause",
+            "top": 11241.828125,
+            "bottom": 11308.28125,
+            "height": 66.453125
+          },
+          {
+            "id": "pause-03",
+            "type": "pause",
+            "top": 11790.234375,
+            "bottom": 11928.6875,
+            "height": 138.453125
+          },
+          {
+            "id": "gap-after-p25",
+            "type": "pause",
+            "top": 12362.453125,
+            "bottom": 12404.90625,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p26",
+            "type": "pause",
+            "top": 12857.9375,
+            "bottom": 12878.234375,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p27",
+            "type": "pause",
+            "top": 13292.703125,
+            "bottom": 13335.15625,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p28",
+            "type": "pause",
+            "top": 13797.828125,
+            "bottom": 13818.125,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p29",
+            "type": "pause",
+            "top": 14251.890625,
+            "bottom": 14272.1875,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p30",
+            "type": "pause",
+            "top": 14725.21875,
+            "bottom": 14745.515625,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p31",
+            "type": "pause",
+            "top": 15169.640625,
+            "bottom": 15189.9375,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p32",
+            "type": "pause",
+            "top": 15671.890625,
+            "bottom": 15714.34375,
+            "height": 42.453125
+          },
+          {
+            "id": "voice-02-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 15714.34375,
+            "bottom": 15743.4296875,
+            "height": 29.0859375
+          },
+          {
+            "id": "voice-02-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 15860.6328125,
+            "bottom": 15889.71875,
+            "height": 29.0859375
+          },
+          {
+            "id": "gap-after-p34",
+            "type": "pause",
+            "top": 16121.046875,
+            "bottom": 16163.5,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p35",
+            "type": "pause",
+            "top": 16597.265625,
+            "bottom": 16617.5625,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p36",
+            "type": "pause",
+            "top": 17012.75,
+            "bottom": 17033.046875,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p37",
+            "type": "pause",
+            "top": 17515,
+            "bottom": 17603.609375,
+            "height": 88.609375
+          },
+          {
+            "id": "gap-after-p38",
+            "type": "pause",
+            "top": 17979.53125,
+            "bottom": 17999.828125,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p39",
+            "type": "pause",
+            "top": 18404.65625,
+            "bottom": 18424.953125,
+            "height": 20.296875
+          },
+          {
+            "id": "pause-04",
+            "type": "pause",
+            "top": 18906.90625,
+            "bottom": 19109.96875,
+            "height": 203.0625
+          },
+          {
+            "id": "gap-after-p41",
+            "type": "pause",
+            "top": 19524.4375,
+            "bottom": 19601.96875,
+            "height": 77.53125
+          },
+          {
+            "id": "gap-after-p42",
+            "type": "pause",
+            "top": 19987.53125,
+            "bottom": 20007.828125,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p43",
+            "type": "pause",
+            "top": 20451.21875,
+            "bottom": 20471.515625,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p45",
+            "type": "pause",
+            "top": 20702.84375,
+            "bottom": 20745.296875,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p46",
+            "type": "pause",
+            "top": 21111.578125,
+            "bottom": 21131.875,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p47",
+            "type": "pause",
+            "top": 21575.265625,
+            "bottom": 21595.5625,
+            "height": 20.296875
+          },
+          {
+            "id": "pause-05",
+            "type": "pause",
+            "top": 22077.515625,
+            "bottom": 22243.65625,
+            "height": 166.140625
+          },
+          {
+            "id": "gap-after-p49",
+            "type": "pause",
+            "top": 22706.328125,
+            "bottom": 22748.78125,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p50",
+            "type": "pause",
+            "top": 23124.703125,
+            "bottom": 23145,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p51",
+            "type": "pause",
+            "top": 23578.765625,
+            "bottom": 23599.0625,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p52",
+            "type": "pause",
+            "top": 24052.09375,
+            "bottom": 24094.546875,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p53",
+            "type": "pause",
+            "top": 24518.671875,
+            "bottom": 24615.59375,
+            "height": 96.921875
+          },
+          {
+            "id": "gap-after-p54",
+            "type": "pause",
+            "top": 24981.875,
+            "bottom": 25101.875,
+            "height": 120
+          },
+          {
+            "id": "gap-after-p55",
+            "type": "pause",
+            "top": 25554.90625,
+            "bottom": 25679.515625,
+            "height": 124.609375
+          },
+          {
+            "id": "gap-after-p56",
+            "type": "pause",
+            "top": 26161.46875,
+            "bottom": 26203.921875,
+            "height": 42.453125
+          },
+          {
+            "id": "voice-03-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 26203.921875,
+            "bottom": 26246.8515625,
+            "height": 42.9296875
+          },
+          {
+            "id": "voice-03-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 26364.0546875,
+            "bottom": 26406.984375,
+            "height": 42.9296875
+          },
+          {
+            "id": "gap-after-p57",
+            "type": "pause",
+            "top": 26850.375,
+            "bottom": 26892.828125,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p58",
+            "type": "pause",
+            "top": 27297.65625,
+            "bottom": 27317.953125,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p59",
+            "type": "pause",
+            "top": 27751.71875,
+            "bottom": 27818.171875,
+            "height": 66.453125
+          },
+          {
+            "id": "gap-after-p60",
+            "type": "pause",
+            "top": 28232.640625,
+            "bottom": 28252.9375,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p61",
+            "type": "pause",
+            "top": 28696.328125,
+            "bottom": 28738.78125,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p62",
+            "type": "pause",
+            "top": 29114.703125,
+            "bottom": 29135,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p63",
+            "type": "pause",
+            "top": 29616.953125,
+            "bottom": 29637.25,
+            "height": 20.296875
+          },
+          {
+            "id": "pause-06",
+            "type": "pause",
+            "top": 30090.28125,
+            "bottom": 30311.8125,
+            "height": 221.53125
+          },
+          {
+            "id": "gap-after-p65",
+            "type": "pause",
+            "top": 30707,
+            "bottom": 30749.453125,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p66",
+            "type": "pause",
+            "top": 31173.578125,
+            "bottom": 31216.03125,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p67",
+            "type": "pause",
+            "top": 31630.5,
+            "bottom": 31650.796875,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p68",
+            "type": "pause",
+            "top": 32084.5625,
+            "bottom": 32104.859375,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p69",
+            "type": "pause",
+            "top": 32586.8125,
+            "bottom": 32607.109375,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p70",
+            "type": "pause",
+            "top": 33011.9375,
+            "bottom": 33080.234375,
+            "height": 68.296875
+          },
+          {
+            "id": "gap-after-p71",
+            "type": "pause",
+            "top": 33562.1875,
+            "bottom": 33645.25,
+            "height": 83.0625
+          },
+          {
+            "id": "gap-after-p72",
+            "type": "pause",
+            "top": 34088.640625,
+            "bottom": 34131.09375,
+            "height": 42.453125
+          },
+          {
+            "id": "voice-05-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 34131.09375,
+            "bottom": 34196.3671875,
+            "height": 65.2734375
+          },
+          {
+            "id": "voice-05-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 34296.5703125,
+            "bottom": 34361.859375,
+            "height": 65.2890625
+          },
+          {
+            "id": "gap-after-p73",
+            "type": "pause",
+            "top": 34843.8125,
+            "bottom": 34886.265625,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p74",
+            "type": "pause",
+            "top": 35329.65625,
+            "bottom": 35349.953125,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p75",
+            "type": "pause",
+            "top": 35764.421875,
+            "bottom": 35784.71875,
+            "height": 20.296875
+          },
+          {
+            "id": "gap-after-p76",
+            "type": "pause",
+            "top": 36266.671875,
+            "bottom": 36309.125,
+            "height": 42.453125
+          },
+          {
+            "id": "voice-06-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 36309.125,
+            "bottom": 36365.1640625,
+            "height": 56.0390625
+          },
+          {
+            "id": "voice-06-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 36465.3671875,
+            "bottom": 36521.421875,
+            "height": 56.0546875
+          },
+          {
+            "id": "pause-07",
+            "type": "pause",
+            "top": 36521.421875,
+            "bottom": 36909.109375,
+            "height": 387.6875
+          },
+          {
+            "id": "p77-image-top",
+            "type": "source-art-empty-band",
+            "top": 36909.109375,
+            "bottom": 36956.531875,
+            "height": 47.4225,
+            "panelId": "p77",
+            "rangeFraction": [
+              0,
+              0.12
+            ],
+            "reason": "木札の音と反応が現れる前の絵の上の無情報帯"
+          },
+          {
+            "id": "gap-after-p77",
+            "type": "pause",
+            "top": 37304.296875,
+            "bottom": 37346.75,
+            "height": 42.453125
+          },
+          {
+            "id": "gap-after-p78",
+            "type": "pause",
+            "top": 37770.875,
+            "bottom": 37842.875,
+            "height": 72
+          },
+          {
+            "id": "gap-after-p79",
+            "type": "pause",
+            "top": 38295.90625,
+            "bottom": 38316.203125,
+            "height": 20.296875
+          },
+          {
+            "id": "voice-04-before-copy",
+            "type": "text-beat-empty-band",
+            "top": 38316.203125,
+            "bottom": 38333.609375,
+            "height": 17.40625
+          },
+          {
+            "id": "voice-04-after-copy",
+            "type": "text-beat-empty-band",
+            "top": 38446.484375,
+            "bottom": 38463.890625,
+            "height": 17.40625
+          }
+        ],
+        "union": [
+          {
+            "top": 0,
+            "bottom": 22.75,
+            "ids": [
+              "voice-00-before-copy"
+            ]
+          },
+          {
+            "top": 161.84375,
+            "bottom": 184.609375,
+            "ids": [
+              "voice-00-after-copy"
+            ]
+          },
+          {
+            "top": 666.5625,
+            "bottom": 709.015625,
+            "ids": [
+              "gap-after-p01"
+            ]
+          },
+          {
+            "top": 1133.140625,
+            "bottom": 1290.0625,
+            "ids": [
+              "pause-01"
+            ]
+          },
+          {
+            "top": 1685.25,
+            "bottom": 1753.546875,
+            "ids": [
+              "gap-after-p03"
+            ]
+          },
+          {
+            "top": 2235.5,
+            "bottom": 2277.953125,
+            "ids": [
+              "gap-after-p04"
+            ]
+          },
+          {
+            "top": 2759.90625,
+            "bottom": 2780.203125,
+            "ids": [
+              "gap-after-p05"
+            ]
+          },
+          {
+            "top": 3223.59375,
+            "bottom": 3243.890625,
+            "ids": [
+              "gap-after-p06"
+            ]
+          },
+          {
+            "top": 3590.875,
+            "bottom": 3670.25,
+            "ids": [
+              "gap-after-p07"
+            ]
+          },
+          {
+            "top": 4152.203125,
+            "bottom": 4172.5,
+            "ids": [
+              "gap-after-p08"
+            ]
+          },
+          {
+            "top": 4625.53125,
+            "bottom": 4696.9971875,
+            "ids": [
+              "gap-after-p09",
+              "p10-image-top"
+            ]
+          },
+          {
+            "top": 5082.453125,
+            "bottom": 5102.75,
+            "ids": [
+              "gap-after-p10"
+            ]
+          },
+          {
+            "top": 5497.9375,
+            "bottom": 5549.625,
+            "ids": [
+              "gap-after-p11"
+            ]
+          },
+          {
+            "top": 5896.609375,
+            "bottom": 5985.8828125,
+            "ids": [
+              "gap-after-p12",
+              "voice-12-before-copy"
+            ]
+          },
+          {
+            "top": 6086.0859375,
+            "bottom": 6308.28125,
+            "ids": [
+              "voice-12-after-copy",
+              "pause-02"
+            ]
+          },
+          {
+            "top": 6790.234375,
+            "bottom": 6810.53125,
+            "ids": [
+              "gap-after-p13"
+            ]
+          },
+          {
+            "top": 7253.921875,
+            "bottom": 7274.21875,
+            "ids": [
+              "gap-after-p14"
+            ]
+          },
+          {
+            "top": 7756.171875,
+            "bottom": 7837.984375,
+            "ids": [
+              "gap-after-p15",
+              "voice-15-before-copy"
+            ]
+          },
+          {
+            "top": 7977.078125,
+            "bottom": 7999.84375,
+            "ids": [
+              "voice-15-after-copy"
+            ]
+          },
+          {
+            "top": 8481.796875,
+            "bottom": 8530.6953125,
+            "ids": [
+              "gap-after-p16",
+              "voice-01-before-copy"
+            ]
+          },
+          {
+            "top": 8667.3359375,
+            "bottom": 8695.9375,
+            "ids": [
+              "voice-01-after-copy"
+            ]
+          },
+          {
+            "top": 9139.328125,
+            "bottom": 9181.78125,
+            "ids": [
+              "gap-after-p17"
+            ]
+          },
+          {
+            "top": 9615.546875,
+            "bottom": 9635.84375,
+            "ids": [
+              "gap-after-p18"
+            ]
+          },
+          {
+            "top": 9867.171875,
+            "bottom": 9909.625,
+            "ids": [
+              "gap-after-p20"
+            ]
+          },
+          {
+            "top": 10362.65625,
+            "bottom": 10382.953125,
+            "ids": [
+              "gap-after-p21"
+            ]
+          },
+          {
+            "top": 10778.140625,
+            "bottom": 10798.4375,
+            "ids": [
+              "gap-after-p22"
+            ]
+          },
+          {
+            "top": 11241.828125,
+            "bottom": 11308.28125,
+            "ids": [
+              "gap-after-p23"
+            ]
+          },
+          {
+            "top": 11790.234375,
+            "bottom": 11928.6875,
+            "ids": [
+              "pause-03"
+            ]
+          },
+          {
+            "top": 12362.453125,
+            "bottom": 12404.90625,
+            "ids": [
+              "gap-after-p25"
+            ]
+          },
+          {
+            "top": 12857.9375,
+            "bottom": 12878.234375,
+            "ids": [
+              "gap-after-p26"
+            ]
+          },
+          {
+            "top": 13292.703125,
+            "bottom": 13335.15625,
+            "ids": [
+              "gap-after-p27"
+            ]
+          },
+          {
+            "top": 13797.828125,
+            "bottom": 13818.125,
+            "ids": [
+              "gap-after-p28"
+            ]
+          },
+          {
+            "top": 14251.890625,
+            "bottom": 14272.1875,
+            "ids": [
+              "gap-after-p29"
+            ]
+          },
+          {
+            "top": 14725.21875,
+            "bottom": 14745.515625,
+            "ids": [
+              "gap-after-p30"
+            ]
+          },
+          {
+            "top": 15169.640625,
+            "bottom": 15189.9375,
+            "ids": [
+              "gap-after-p31"
+            ]
+          },
+          {
+            "top": 15671.890625,
+            "bottom": 15743.4296875,
+            "ids": [
+              "gap-after-p32",
+              "voice-02-before-copy"
+            ]
+          },
+          {
+            "top": 15860.6328125,
+            "bottom": 15889.71875,
+            "ids": [
+              "voice-02-after-copy"
+            ]
+          },
+          {
+            "top": 16121.046875,
+            "bottom": 16163.5,
+            "ids": [
+              "gap-after-p34"
+            ]
+          },
+          {
+            "top": 16597.265625,
+            "bottom": 16617.5625,
+            "ids": [
+              "gap-after-p35"
+            ]
+          },
+          {
+            "top": 17012.75,
+            "bottom": 17033.046875,
+            "ids": [
+              "gap-after-p36"
+            ]
+          },
+          {
+            "top": 17515,
+            "bottom": 17603.609375,
+            "ids": [
+              "gap-after-p37"
+            ]
+          },
+          {
+            "top": 17979.53125,
+            "bottom": 17999.828125,
+            "ids": [
+              "gap-after-p38"
+            ]
+          },
+          {
+            "top": 18404.65625,
+            "bottom": 18424.953125,
+            "ids": [
+              "gap-after-p39"
+            ]
+          },
+          {
+            "top": 18906.90625,
+            "bottom": 19109.96875,
+            "ids": [
+              "pause-04"
+            ]
+          },
+          {
+            "top": 19524.4375,
+            "bottom": 19601.96875,
+            "ids": [
+              "gap-after-p41"
+            ]
+          },
+          {
+            "top": 19987.53125,
+            "bottom": 20007.828125,
+            "ids": [
+              "gap-after-p42"
+            ]
+          },
+          {
+            "top": 20451.21875,
+            "bottom": 20471.515625,
+            "ids": [
+              "gap-after-p43"
+            ]
+          },
+          {
+            "top": 20702.84375,
+            "bottom": 20745.296875,
+            "ids": [
+              "gap-after-p45"
+            ]
+          },
+          {
+            "top": 21111.578125,
+            "bottom": 21131.875,
+            "ids": [
+              "gap-after-p46"
+            ]
+          },
+          {
+            "top": 21575.265625,
+            "bottom": 21595.5625,
+            "ids": [
+              "gap-after-p47"
+            ]
+          },
+          {
+            "top": 22077.515625,
+            "bottom": 22243.65625,
+            "ids": [
+              "pause-05"
+            ]
+          },
+          {
+            "top": 22706.328125,
+            "bottom": 22748.78125,
+            "ids": [
+              "gap-after-p49"
+            ]
+          },
+          {
+            "top": 23124.703125,
+            "bottom": 23145,
+            "ids": [
+              "gap-after-p50"
+            ]
+          },
+          {
+            "top": 23578.765625,
+            "bottom": 23599.0625,
+            "ids": [
+              "gap-after-p51"
+            ]
+          },
+          {
+            "top": 24052.09375,
+            "bottom": 24094.546875,
+            "ids": [
+              "gap-after-p52"
+            ]
+          },
+          {
+            "top": 24518.671875,
+            "bottom": 24615.59375,
+            "ids": [
+              "gap-after-p53"
+            ]
+          },
+          {
+            "top": 24981.875,
+            "bottom": 25101.875,
+            "ids": [
+              "gap-after-p54"
+            ]
+          },
+          {
+            "top": 25554.90625,
+            "bottom": 25679.515625,
+            "ids": [
+              "gap-after-p55"
+            ]
+          },
+          {
+            "top": 26161.46875,
+            "bottom": 26246.8515625,
+            "ids": [
+              "gap-after-p56",
+              "voice-03-before-copy"
+            ]
+          },
+          {
+            "top": 26364.0546875,
+            "bottom": 26406.984375,
+            "ids": [
+              "voice-03-after-copy"
+            ]
+          },
+          {
+            "top": 26850.375,
+            "bottom": 26892.828125,
+            "ids": [
+              "gap-after-p57"
+            ]
+          },
+          {
+            "top": 27297.65625,
+            "bottom": 27317.953125,
+            "ids": [
+              "gap-after-p58"
+            ]
+          },
+          {
+            "top": 27751.71875,
+            "bottom": 27818.171875,
+            "ids": [
+              "gap-after-p59"
+            ]
+          },
+          {
+            "top": 28232.640625,
+            "bottom": 28252.9375,
+            "ids": [
+              "gap-after-p60"
+            ]
+          },
+          {
+            "top": 28696.328125,
+            "bottom": 28738.78125,
+            "ids": [
+              "gap-after-p61"
+            ]
+          },
+          {
+            "top": 29114.703125,
+            "bottom": 29135,
+            "ids": [
+              "gap-after-p62"
+            ]
+          },
+          {
+            "top": 29616.953125,
+            "bottom": 29637.25,
+            "ids": [
+              "gap-after-p63"
+            ]
+          },
+          {
+            "top": 30090.28125,
+            "bottom": 30311.8125,
+            "ids": [
+              "pause-06"
+            ]
+          },
+          {
+            "top": 30707,
+            "bottom": 30749.453125,
+            "ids": [
+              "gap-after-p65"
+            ]
+          },
+          {
+            "top": 31173.578125,
+            "bottom": 31216.03125,
+            "ids": [
+              "gap-after-p66"
+            ]
+          },
+          {
+            "top": 31630.5,
+            "bottom": 31650.796875,
+            "ids": [
+              "gap-after-p67"
+            ]
+          },
+          {
+            "top": 32084.5625,
+            "bottom": 32104.859375,
+            "ids": [
+              "gap-after-p68"
+            ]
+          },
+          {
+            "top": 32586.8125,
+            "bottom": 32607.109375,
+            "ids": [
+              "gap-after-p69"
+            ]
+          },
+          {
+            "top": 33011.9375,
+            "bottom": 33080.234375,
+            "ids": [
+              "gap-after-p70"
+            ]
+          },
+          {
+            "top": 33562.1875,
+            "bottom": 33645.25,
+            "ids": [
+              "gap-after-p71"
+            ]
+          },
+          {
+            "top": 34088.640625,
+            "bottom": 34196.3671875,
+            "ids": [
+              "gap-after-p72",
+              "voice-05-before-copy"
+            ]
+          },
+          {
+            "top": 34296.5703125,
+            "bottom": 34361.859375,
+            "ids": [
+              "voice-05-after-copy"
+            ]
+          },
+          {
+            "top": 34843.8125,
+            "bottom": 34886.265625,
+            "ids": [
+              "gap-after-p73"
+            ]
+          },
+          {
+            "top": 35329.65625,
+            "bottom": 35349.953125,
+            "ids": [
+              "gap-after-p74"
+            ]
+          },
+          {
+            "top": 35764.421875,
+            "bottom": 35784.71875,
+            "ids": [
+              "gap-after-p75"
+            ]
+          },
+          {
+            "top": 36266.671875,
+            "bottom": 36365.1640625,
+            "ids": [
+              "gap-after-p76",
+              "voice-06-before-copy"
+            ]
+          },
+          {
+            "top": 36465.3671875,
+            "bottom": 36956.531875,
+            "ids": [
+              "voice-06-after-copy",
+              "pause-07",
+              "p77-image-top"
+            ]
+          },
+          {
+            "top": 37304.296875,
+            "bottom": 37346.75,
+            "ids": [
+              "gap-after-p77"
+            ]
+          },
+          {
+            "top": 37770.875,
+            "bottom": 37842.875,
+            "ids": [
+              "gap-after-p78"
+            ]
+          },
+          {
+            "top": 38295.90625,
+            "bottom": 38333.609375,
+            "ids": [
+              "gap-after-p79",
+              "voice-04-before-copy"
+            ]
+          },
+          {
+            "top": 38446.484375,
+            "bottom": 38463.890625,
+            "ids": [
+              "voice-04-after-copy"
+            ]
+          }
+        ],
+        "sourceArtLargeEmptyBands": [
+          "p10-image-top",
+          "p77-image-top"
+        ],
+        "sourceArtReview": "All ten sheets / eighty cropped cells inspected. The two upper no-information bands are registered. Elsewhere canvas, rain, cloud, props, human acting or lettering occupies the open image background; white background around characters is not subtracted."
+      }
+    }
+  },
+  "artwork": {
+    "sourceSheets": 10,
+    "sourceSizePx": [
+      1536,
+      1024
+    ],
+    "embeddedBytesMatchAllSources": true,
+    "method": "built-in image_gen; unchanged original bytes; CSS cell windows only",
+    "identityReference": "rough/character-reference.json",
+    "promptRecords": [
+      "rough/prompts-01-04.json",
+      "rough/prompts-05-08.json",
+      "rough/prompts-09-10.json"
+    ],
+    "renderedIndependentPanels": 80
+  },
+  "displayChecks": {
+    "htmlLoadedWithSetContent": true,
+    "noFileUrlOrGoto": true,
+    "panelCount80": true,
+    "allImagesLoadedAtBothWidths": true,
+    "horizontalOverflowAbsent": true,
+    "overlayTextPositionAndFontChecked": true,
+    "notesAndMeasurementToggleStable": true,
+    "stagedWindowsHave150pxOverlap": true,
+    "dprAndResizeChecked": true,
+    "desktop390Checked": true,
+    "broken80Checked": true
+  },
+  "semanticReview": {
+    "dialogueAndReactions": "review/lettering-review.json",
+    "readOrder": "right-to-left within each three short action row; all other panels vertical",
+    "sound": "Thunder/wind/water/rope/cup/tag events only; quiet reactions have explicit noSoundReason in sequence-plan",
+    "timeAndPlace": "voice-00 / voice-12 / voice-15 / voice-05 / voice-06"
+  },
+  "limitations": [
+    "User adoption pending; no finished CG, catalogue registration or public upload",
+    "Physical device and Safari not tested",
+    "Generated pencil rough is more detailed than requested line-only thumbnails",
+    "Forearm laterality and temporary-to-clean bandage detail require another check in finished art; p45 bleeding and p77 evening darkness are visually subtle"
+  ]
+}
