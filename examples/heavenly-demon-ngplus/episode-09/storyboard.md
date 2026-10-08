@@ -1,133 +1,104 @@
-# 天魔、二周目。 第9話 帰る条件は、殺すこと？
+# 天魔、二周目。 第9話 雑役弟子の名前
 
-この話で得るものは帰還門の裏口と自分で選ぶ決意。
+変化：証拠と証言の照合で処刑・盗難の冤罪を取り消す。ハンが名前を取り戻す。
 
-全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+開始：第8話の公開審理の殿。門主が束を机に置く。
 
-## 読書区間1 向こうの部屋
+終了：羅の禁庫管理権が停止。ハンとソ・リンの罪状・処刑が取消。剣の行方は調査継続。
 
-間の役割　帰りたい普通の暮らしをもう一度具体化
+## 01 同じ机の上
 
-表示原画　art/01.png、範囲 [0, 2172]。
+読者の理解／間：読者が追った証拠を順に示す
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Public wooden hall broad set hero right, smith left, master center table, elder far right. Top table two matching dark iron pieces on cloth. Middle unfolded simple slip exact 修理依頼 / 七月五日. Bottom ledger exact ハン・ユン / 外廊下の清掃. Preserve evidence shapes, no new mystery artifact.
 
-### コマ1
+伏せる情報／状態：新しい証拠で都合よく解決しない。
 
-作画　Yun, So Rin and Hakujin reach ancient mountain gate, round stone arch framing darkness. Yun inserts ONE bronze circular disk into central slot on stone pedestal, sword sheathed.
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　これで、帰れる。
+原画：art/rebuild-01-clean.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 0}]
 
-### コマ2
+効果音（発話と別）：none
 
-作画　Gate opens to glimpse small modern student room, computer desk, college textbooks, ordinary hoodie on chair, NO readable screen text. Yun reaches with empty left hand, eyes fill with longing.
+発話：セイ・コウ「一つずつ確かめる」／縦列 右→左：一つずつ/確かめる／声：formal
 
-ハン・ユン　俺の、部屋だ。
+## 02 鍛冶師の声
 
-### コマ3
+読者の理解／間：証人が自分の言葉で語る
 
-作画　Close Yun face hopeful and tired, reflected desk light in teal eyes, friends silent behind him. Sword remains sheathed.
+描くもの／カメラ／立ち位置：Top smith at same table raises chin despite fear, facing seated disciples. Bottom hero listening quietly, eyes toward her, no speech over her testimony. Elder present offscreen right.
 
-ハン・ユン　帰って、風呂に入って……。
+伏せる情報／状態：主人公が証言を横取りしない。
 
-### コマ4
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Cold CYAN hologram cuts across portal, exact horizontal text: 帰還条件 / 最終敵の死亡. Yun halts with hand lowered, hope turns to shock. Hakujin at edge looks resigned.
+原画：art/rebuild-02-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 240}]
 
-システム　帰還条件 / 最終敵の死亡
+効果音（発話と別）：none
 
-## 読書区間2 選ばせる声
+発話：ソ・リン「五日に羅長老から受け取った」／縦列 右→左：五日に/羅長老から/受け取った／声：normal
 
-間の役割　帰還と仲間を二択にするシナリオに抗う
+## 03 説明を求める
 
-表示原画　art/02.png、範囲 [0, 2172]。
+読者の理解／間：権威にも説明責任を与える
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Top master close stern face looks toward right. Bottom elder avoids gaze, clenched EMPTY hand on knee, no sword, no sudden villain confession or shouting. Same pillar behind him.
 
-### コマ5
+伏せる情報／状態：誰が剣を持ち去ったかは断定しない。
 
-作画　Hakujin steps close to Yun with both hands empty, clean RIGHT wrist, calm sad face, no weapon. So Rin looks alarmed.
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-白燼　俺を倒せば、帰れるんだろう。
+原画：art/rebuild-03-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 360}]
 
-### コマ6
+効果音（発話と別）：none
 
-作画　Yun turns away from portal to look at Hakujin, voice hesitant then clear. Keeps one sword SHEATHED, no blade toward friend.
+発話：セイ・コウ「なぜ先に壊れていた？」／縦列 右→左：なぜ/先に壊れて/いた？／声：formal
 
-ハン・ユン　君は、もう敵じゃない。
+## 04 決定を待つ
 
-### コマ7
+読者の理解／間：判決前に証人と主人公の反応を残す
 
-作画　Yun touches hilt gently, remembers hands of smith and saved town; show ONLY his face and hands now, no flashback montage. Thin cyan line pulses on sheathed sword.
+描くもの／カメラ／立ち位置：Top small horizontal pair RIGHT hero rope-marked fingers resting on knee, LEFT smith dirty work fingers resting on apron. Bottom master looks from proof to accused before speaking, quiet mouth closed. Elder still in hall, no collapse. No printed judgment yet.
 
-ハン・ユン　決められた道だけじゃ、ない。
+伏せる情報／状態：判決の文字を先出ししない。
 
-### コマ8
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Close So Rin sees alternate fine groove on BACK of gate pedestal, touches it with one fingertip. Bronze gate disk remains inserted in FRONT slot, no duplication.
+原画：art/rebuild-04.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 540}]
 
-ソ・リン　鍵穴に、もう一本の溝。
+効果音（発話と別）：none
 
-## 読書区間3 条件を疑う
+発話：なし。
 
-間の役割　人を殺す条件を拒むだけで終わらず、仲間と根拠を探して次の試行へ進む
+## 05 取り消す
 
-表示原画　art/04-pacing.png、範囲 [0, 2172]。
+読者の理解／間：処刑と罪の取消を初めて聞く
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：One large borderless master at public table addressing gathering with firm open hand. Exact spoken ruling, not glowing system. Hero small foreground seen from behind shoulders release. Master navy/ivory robe.
 
-### コマ9
+伏せる情報／状態：剣の行方まで解決したとは言わない。
 
-作画　Paused gate with bronze disk still in FRONT slot. Yun keeps ONE black sword SHEATHED and turns from the gate to Hakujin. No chief or red interference yet.
+作画形式：reveal。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　帰りたい。でも、斬れない。
+原画：art/rebuild-05-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 930}]
 
-### コマ10
+効果音（発話と別）：none
 
-作画　Hakujin, both hands empty and CLEAN right wrist, slowly lowers his head, visibly exhales. Yun stays beside him.
+発話：セイ・コウ「二人の罪状と処刑を取り消す」／縦列 右→左：二人の/罪状と/処刑を/取り消す／声：formal
 
-白燼　……それで、いいのか。
+## 06 名前を呼ばれる
 
-### コマ11
+読者の理解／間：感情と制度の変化を本人へ返す
 
-作画　So Rin studies the already found narrow BACK groove by lamp light, fingertip near its old scratches. Front bronze disk remains singular. No sword inserted yet.
+描くもの／カメラ／立ち位置：Top elder sits isolated, master removes ONE plain small dark key ring from his extended hand, no imprisonment violence. Middle master turns to hero gently. Bottom large hero stunned then quietly relieved, eyes wet, same bruise; smith at edge smiles tiredly.
 
-ソ・リン　この溝、使われてる。
+伏せる情報／状態：鍵は門主に移る。謝罪を勝利報酬に変えない。
 
-### コマ12
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-作画　Yun kneels beside So Rin to compare the fine groove with the map on the stone floor. Hakujin watches, no solution hologram or blade drawn yet.
+原画：art/rebuild-06-clean.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 350}]
 
-ハン・ユン　確かめよう。三人で。
+効果音（発話と別）：none
 
-## 読書区間4 道を切る
-
-間の役割　リンの発見を白燼の地図で確認し、ゲーム知識と仲間の観察で別解を作る
-
-表示原画　art/03.png、範囲 [0, 2172]。
-
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
-
-### コマ13
-
-作画　So Rin points to the hidden groove while Hakujin interprets the open treasury map and confirms the sword-key back entrance. Yun considers their combined clues. Bronze disk remains inserted in front slot.
-
-白燼　剣を鍵にする、裏口だ。
-
-### コマ14
-
-作画　Yun carefully draws one black sword in RIGHT hand, LEFT palm braces pedestal; turns blade FLAT toward hidden groove away from both friends. No enemy attacked.
-
-ハン・ユン　壊すのは、道の縛りだ。
-
-### コマ15
-
-作画　Before he inserts blade, a RED light from alliance chief's control crystal strikes pedestal, freezing portal. Chief Go Tensaku appears on stair below in plum gold crane robes. Yun turns alarmed, sword safely lowered.
-
-呉天策　帰還門は、私の物だ。
-
-### コマ16
-
-作画　Close chief raises ONE cracked black control crystal, smug face; Yun in foreground standing protectively before two friends and gate. Do NOT show final victory yet.
-
-呉天策　天魔も、ただの駒に戻れ。
+発話：セイ・コウ「ハン・ユンすまなかった」／縦列 右→左：ハン・ユン/すまなかった／声：soft
+ハン・ユン「……はい」／縦列 右→左：……はい／声：weak

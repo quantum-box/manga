@@ -1,136 +1,105 @@
-# 天魔、二周目。 第6話 ラスボスは、まだ死ねない
+# 天魔、二周目。 第6話 同じ傷、違う証拠
 
-この話で得るものは白燼の解放と帰還門の地図。
+変化：事件前の修理依頼を現物と日付で確かめる。主人公と鍛冶師が役割を持って協力する。
 
-全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+開始：第5話の同じ鍛冶場。引き出しは閉じている。
 
-## 読書区間1 知っている傷
+終了：事件前の修理依頼札と割れ目の写しを照合し、当番帳の確認を門主に求める。
 
-間の役割　倒した敵への恐怖から相手の痛みに気づく
+## 01 引き出しの中
 
-表示原画　art/01.png、範囲 [0, 2172]。
+読者の理解／間：前話の約束への返答として修理時の記録を取り出す
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Three close-ups in forge: smith opens wooden drawer; carefully lifts ONE old repair receipt with black ink tracing of the broken rectangular iron clasp; lays it on forge worktable. The traced design has a larger half with rectangular slot and smaller jagged broken end. Master brings the SAME cloth of TWO actual iron fragments already seen in episode3; actual pieces stay in the preserved bundle until next comparison. NO new iron fragment from drawer, no sword. Smith's ivory sleeves teal vest identify hands.
 
-### コマ1
+伏せる情報／状態：事件前に残した紙の写し。金属片は第3話からの二片だけ。
 
-作画　Evening under arena stone stairs. Yun and So Rin face Hakujin; Yun holds ONE bronze disk in left palm, sword sheathed. Hakujin's long white hair low-tied, gold eyes, slate blue robe, RIGHT wrist cracked black seal. Yun hesitates.
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　白燼……なのか。
+原画：art/rebuild-01-clean.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 0}]
 
-### コマ2
+効果音（発話と別）：コト
 
-作画　Hakujin steps into lantern light, weary face, doesn't draw weapon. Yun freezes with hand on sheathed hilt.
+発話：ソ・リン「修理を頼まれた事件の前の日」／縦列 右→左：修理を/頼まれた/事件の/前の日／声：normal
 
-白燼　その名前を、どこで？
+## 02 誰から
 
-### コマ3
+読者の理解／間：聞き手の問いと証人の答えを分ける
 
-作画　Close of Hakujin's RIGHT wrist: black cracked seal pulses cyan at cracks; he grips wrist with left hand, sweat and pain. No chains, no blood.
+描くもの／カメラ／立ち位置：Top hero face in same forge, asks softly. Bottom smith face turns toward master rather than hero, answers, worried but definite. No elder appears in forge.
 
-白燼　また、鐘が鳴る。
+伏せる情報／状態：断定は証人が実際に見た依頼者まで。
 
-### コマ4
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Yun lowers sword hand, remembers death was once pixels, troubled compassionate eyes. So Rin notices seal.
+原画：art/rebuild-02-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 340}]
 
-ハン・ユン　あの戦い、本当に痛かった？
+効果音（発話と別）：none
 
-## 読書区間2 敵の夜を聞く
+発話：ハン・ユン「誰から？」／縦列 右→左：誰から？／声：normal
+ソ・リン「羅長老」／縦列 右→左：羅長老／声：normal
 
-間の役割　敵の痛みを知る夜を実際に描き、強制印を切る決断に重さを作る
+## 03 割れ目の写し
 
-表示原画　art/04-pacing.png、範囲 [0, 2172]。
+読者の理解／間：力ではなく手先と技術で確かめる
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：TOP master unwraps SAME preserved TWO dark iron clasp fragments from episode3 onto forge wooden worktable. Larger fragment with rectangular slot and smaller jagged end, soot exterior and fresh silver crack. MIDDLE right-to-left two small hand close-ups: right hero supports SOFT CLOTH not metal; left smith points to matching crack line on repair receipt's simple black ink tracing. BOTTOM wide closeup BOTH actual pieces are placed next to their matching silhouette TRACING on dated receipt; fissure and rectangular slot align. Paper stays underneath/alongside, never becomes iron. Exactly TWO metal fragments total, no third fragment, no hammering, no magic fusion.
 
-### コマ5
+伏せる情報／状態：二片は結合修理せず、比較で接触させるだけ。
 
-作画　Night forge: Yun and Hakujin sit opposite each other by a small lamp. Yun sword SHEATHED; Hakujin RIGHT wrist still has intact dark control mark. Neither attacks.
+作画形式：action。読む順は上から下、同段の小コマは右から左。
 
-白燼　目が覚めても、戦いの中だ。
+原画：art/rebuild-03-clean.png 887×1774。表示窓：[{"range": [0, 1774], "gap": 200}]
 
-### コマ6
+効果音（発話と別）：サラ
 
-作画　Hakujin looks down at his trembling RIGHT fingers below the intact wrist mark, other hand empty. Yun listens without interruption.
+発話：セイ・コウ「ここが合う」／縦列 右→左：ここが/合う／声：normal
 
-白燼　手を、止められなかった。
+## 04 日付のずれ
 
-### コマ7
+読者の理解／間：盗難後に壊れたという説明が崩れる
 
-作画　Yun places a cup within Hakujin's reach without forcing it into his marked hand. Yun's expression remorseful, no memory montage.
+描くもの／カメラ／立ち位置：Single large view of smith hands holding plain handwritten repair slip beside SAME TWO clasp pieces resting on cloth. Legible horizontal note 修理依頼 / 七月五日, plus SIMPLE BLACK INK TRACING of the two broken clasp halves underneath, one rectangular slot clearly recognizable. Hero face at upper side processing date. No complex illegible paragraphs, no decorative scroll, no new metal piece.
 
-ハン・ユン　俺は、何も知らなかった。
+伏せる情報／状態：羅の動機や剣の行方はここで確定しない。
 
-### コマ8
+作画形式：reveal。読む順は上から下、同段の小コマは右から左。
 
-作画　Late night fading to predawn at forge window. Two men still seated, lamp low, wrist mark still intact. Yun stays, no drawn weapon, no released mark yet.
+原画：art/rebuild-04-clean.png 1024×1536。表示窓：[{"range": [740, 1536], "gap": 900, "lines": [], "sound": "none", "description": "修理依頼札。七月五日。紙の線画が、布に乗る二片の割れ目と一致する"}, {"range": [0, 740], "gap": 420, "lines": [0], "sound": "none", "description": "日付を読んだハンが意味を受け止める"}]
 
-ハン・ユン　今は、ちゃんと聞きたい。
+効果音（発話と別）：none
 
-## 読書区間3 敵の命
+発話：ハン・ユン「事件より前に壊れてた」／縦列 右→左：事件より前に/壊れてた／声：thought
 
-間の役割　システムが敵を強制していたと知り救う
+## 05 証拠を包む
 
-表示原画　art/02.png、範囲 [0, 2163]。
+読者の理解／間：持ち運びの連続性と信頼を作る
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Top smith places both separated fragments and folded receipt in small plain cloth bundle. Middle hero offers BOTH open palms underneath, waits. Bottom smith sets closed bundle onto his hands then withdraws. Exactly ONE bundle handed from smith to hero, no sword, no duplicate contents displayed afterward.
 
-ナレーション　話を聞いているうちに、夜が明けた。
-朝の鐘で、印が動き出す。
+伏せる情報／状態：信頼は小さな道具の扱いから。
 
-### コマ9
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-作画　Hakujin's right sealed wrist begins to pull his hand toward Yun against his will; he braces it with left hand, frightened rather than sinister. Yun has not attacked.
+原画：art/rebuild-05-clean.png 726×2167。表示窓：[{"range": [0, 2167], "gap": 230}]
 
-白燼　死んでも、戻される。
+効果音（発話と別）：サラ
 
-### コマ10
+発話：ソ・リン「壊さないでね」／縦列 右→左：壊さないでね／声：soft
+ハン・ユン「うん」／縦列 右→左：うん／声：normal
 
-作画　Yun catches Hakujin's RIGHT forearm gently with his LEFT hand, keeping cursed hand away from people. So Rin watches seriously.
+## 06 次に確かめること
 
-ハン・ユン　それで、何度も戦わされる。
+読者の理解／間：証言だけで完結せず客観的な照合を決める
 
-### コマ11
+描くもの／カメラ／立ち位置：Top master at same forge, serious looks toward exit. Bottom hero holds bundle low and smith stands by anvil, both look to him. Sun remains morning. No enemy intrusion.
 
-作画　Yun draws ONE black sword RIGHT hand, thin cyan edge, surgical narrow arc cuts ONLY black magical seal hovering ABOVE wrist skin. Skin intact, no blood, seal shards dissolve, no severed limb.
+伏せる情報／状態：第7話で禁庫へ実際に歩く。
 
-ハン・ユン　切るのは、命じゃない。
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-### コマ12
+原画：art/rebuild-06-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 410}]
 
-作画　Hakujin's freed right hand opens; seal is completely gone permanently. He exhales in disbelief, tears only subtle. Yun safely resheathes sword.
+効果音（発話と別）：none
 
-白燼　……自分で、手を開けた。
-
-## 読書区間4 知らない帰り道
-
-間の役割　救った敵が自分の意思で道案内を選ぶ
-
-表示原画　art/03.png、範囲 [0, 2172]。
-
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
-
-### コマ13
-
-作画　Hakujin gently hands Yun ONE rolled map, right wrist bare unmarked. Bronze disk tucked into Yun's dark red sash, sword sheathed. Smith beside both.
-
-白燼　帰還門なら、場所を知ってる。
-
-### コマ14
-
-作画　Close map held open by Yun and Hakujin. A mountain gate symbol and bridge illustrated, no printed words. Yun's eyes reflect a chance at home.
-
-ハン・ユン　……帰れるかもしれない。
-
-### コマ15
-
-作画　Hakujin touches now-free right wrist, quietly looks at Yun. Smith attentive, no attack.
-
-白燼　だが、盟主が道を閉じている。
-
-### コマ16
-
-作画　Night palace balcony: alliance chief Go Tensaku in plum gold crane robes looks at a CRACKED black control crystal in his right hand. Menacing composed face, no Hakujin seal returning.
-
-呉天策　駒が、勝手に歩き始めたか。
+発話：セイ・コウ「禁庫の当番帳も調べよう」／縦列 右→左：禁庫の/当番帳も/調べよう／声：formal
