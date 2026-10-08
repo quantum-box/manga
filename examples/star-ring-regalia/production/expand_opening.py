@@ -238,7 +238,7 @@ def episode_two():
     ep['assets']=assets
     return ep
 
-def write(ep):
+def write(ep, scroll_notes=None, art_notes=None):
     directory=ROOT/f"episode-{ep['number']:02d}"
     adoption_path=directory/'adoption.json'
     adoption=json.loads(adoption_path.read_text()) if adoption_path.exists() else {}
@@ -254,9 +254,9 @@ def write(ep):
     (ROOT/'production/assets.json').write_text(json.dumps([a for row in episodes for a in row['assets']],ensure_ascii=False,indent=2)+'\n')
     lines=[f"# 第{ep['number']}話 {ep['title']} — 脚本と縦の絵コンテ",'',
            f"開始：{ep['start']}",f"終了：{ep['end']}",f"伏せる：{ep['hold']}",'',ep['revision_intent'],'',
-           ('第1話：羽音は姿より先に枠と人物のない余白へ通す。水音は橋から手洗いへ一続きにし、帰宅の静けさより前に終える。' if ep['number']==1 else '第2話：足音を歩行から街の間へ続け、水音は場所が見える前に始める。届いた薬と明日の予定、粉とパン、仕事と対価を別の瞬間で描く。'),'',
+           scroll_notes or ('第1話：羽音は姿より先に枠と人物のない余白へ通す。水音は橋から手洗いへ一続きにし、帰宅の静けさより前に終える。' if ep['number']==1 else '第2話：足音を歩行から街の間へ続け、水音は場所が見える前に始める。届いた薬と明日の予定、粉とパン、仕事と対価を別の瞬間で描く。'),'',
            '参照した演出：context-and-dialogue、cross-panel-soundsの390/360比較と連続3窓、scroll-pacing、whitespace-example。通常会話の字は画面幅比で保ち、場面の位置と持ち物を継ぐ。','',
-           ('既存8素材の採用原画を保持。' if ep['number']==1 else '既存の採用原画を活かし、02-night-work・03-delivery・05-windは話のつながりに合わせて編集。07-announcementは直前の町と同じ夕暮れへ揃える。')+'追加素材は下記の独立した瞬間を描く。縦列は右から左、横並びの接写も右から左。上下のショットは別の瞬間。余白は生成内とHTML外の合計をスマホ実表示で確認する。','']
+           (art_notes or ('既存8素材の採用原画を保持。' if ep['number']==1 else '既存の採用原画を活かし、02-night-work・03-delivery・05-windは話のつながりに合わせて編集。07-announcementは直前の町と同じ夕暮れへ揃える。'))+'追加素材は下記の独立した瞬間を描く。縦列は右から左、横並びの接写も右から左。上下のショットは別の瞬間。余白は生成内とHTML外の合計をスマホ実表示で確認する。','']
     for a in ep['assets']:
         lines.extend([f"## {a['id']}",f"場所：{a['location']}",f"直前の間：390幅で{a['gap_before_390']}px。役割：{a['pacing_purpose']}",''])
         for i,p in enumerate(a['panels'],1):
