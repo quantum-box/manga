@@ -115,7 +115,7 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
             let list = bucket
                 .list()
                 .prefix("episodes/")
-                .limit(100)
+                .limit(1000)
                 .execute()
                 .await?;
             let mut groups = std::collections::BTreeMap::<

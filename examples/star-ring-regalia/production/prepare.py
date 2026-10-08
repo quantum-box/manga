@@ -361,7 +361,8 @@ def main():
     prepared=[]
     for ep in EPISODES:
         directory=ROOT/f"episode-{ep['number']:02d}"
-        if (directory/'generation.json').exists():
+        planned=directory/'episode.json'
+        if planned.exists() and ((directory/'generation.json').exists() or json.loads(planned.read_text()).get('revision_intent')):
             existing=json.loads((directory/'episode.json').read_text())
             prepared.append(existing)
             manifests.extend(existing['assets'])
