@@ -358,8 +358,15 @@ def prompt_for(ep, asset):
 def main():
     assert len(EPISODES)==10 and [e['number'] for e in EPISODES]==list(range(1,11))
     manifests=[]
+    prepared=[]
     for ep in EPISODES:
         directory=ROOT/f"episode-{ep['number']:02d}"
+        if (directory/'generation.json').exists():
+            existing=json.loads((directory/'episode.json').read_text())
+            prepared.append(existing)
+            manifests.extend(existing['assets'])
+            continue
+        prepared.append(ep)
         (directory/'art').mkdir(parents=True,exist_ok=True)
         (directory/'review').mkdir(exist_ok=True)
         storyboard=[f"# 第{ep['number']}話 {ep['title']} — 脚本と縦の絵コンテ",'',
@@ -384,7 +391,7 @@ def main():
         if not (directory/'generation.json').exists():
             (directory/'PROMPTS.md').write_text('# 実行する生成指示\n\n参照：../reference/cast.png。顔と衣装だけを共有し、コマ割りをコピーしない。修正指示は実行時に別記する。\n\n'+'\n'.join(prompts),encoding='utf-8')
         (directory/'episode.json').write_text(json.dumps(ep,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    (ROOT/'production/episodes.json').write_text(json.dumps(EPISODES,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (ROOT/'production/episodes.json').write_text(json.dumps(prepared,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (ROOT/'production/assets.json').write_text(json.dumps(manifests,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f"Saved 10 screenplays/storyboards: {len(manifests)} artwork assets, {sum(len(a['panels']) for a in manifests)} described shots.")
 

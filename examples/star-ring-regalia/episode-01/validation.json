@@ -2,7 +2,8 @@
   "episode": 1,
   "status": "passed-local",
   "artwork": {
-    "adoptedImages": 8,
+    "adoptedImages": 25,
+    "storyMoments": 71,
     "integratedVerticalJapanese": true,
     "htmlDialogueOverlay": false,
     "provenance": "generation.json",
@@ -12,34 +13,51 @@
     {
       "width": 390,
       "height": 844,
-      "pageHeight": 9987,
+      "pageHeight": 25697,
       "pageWidth": 390,
       "allImagesLoaded": true,
-      "revealPause": 940,
-      "continuousVisualRead": "review/read-390-00.jpg through read-390-15.jpg"
+      "continuousVisualRead": "review/phone-390-01.jpg through phone-390-33.jpg"
     },
     {
       "width": 360,
       "height": 800,
-      "pageHeight": 9249,
+      "pageHeight": 23750,
       "pageWidth": 360,
       "allImagesLoaded": true,
-      "revealPause": 867.685546875,
-      "continuousVisualRead": "review/read-360-00.jpg through read-360-07.jpg plus review/middle-360-0.jpg through middle-360-7.jpg"
+      "continuousVisualRead": "review/phone-360-01.jpg through phone-360-32.jpg"
     }
   ],
   "standaloneReader": {
-    "images": 8,
     "allEmbeddedAndLoaded": true,
-    "pageWidthAt390": 390
+    "height": 844,
+    "images": 25,
+    "pageWidth": 390,
+    "width": 390
   },
   "visualReview": {
-    "lettering": "Reviewed every dialogue at both phone widths; corrected six images twice before adoption. Actual raster glyph size varies; no exact minimum font size is claimed.",
-    "continuity": "Koh black hair; game blue-gray tunic; Lize brown hair and green courier clothes; Sena male medicine courier; same cart and parcels.",
-    "scroll": "Separate scent pause before the first sky reveal; 940px pause at 390px width; one blank viewport intentional.",
-    "links": "No unavailable next-episode link."
+    "lettering": "Every dialogue and display read at both phone widths. Actual raster glyph size varies; no exact minimum is claimed. No duplicated HTML dialogue.",
+    "world": "Names, roads and distant travel, finite learned magic, crafted magic devices, independent spirits, healthy flowing water and ordinary work appear through connected encounters.",
+    "sound": "One wing sound extends down into white before the sky reveal. One flowing-water sound crosses the bridge/basin gutter; no second starting inscription.",
+    "scroll": "The wing figure starts 1222px before the sky at 390px width and 1128px before it at 360px. Four separately observed native scroll positions confirm shadow, white, ring, then dragon. Other pauses vary with the scene.",
+    "continuity": "Same characters, muddy clothes after cart, washed hands thereafter; same flat tied medicine parcel from Sena to Koh to Lize before logout. Steel sword remains sheathed after the weight trial. Japan 20:50 HUD leads to 21:00 home clock.",
+    "links": "Only completed episode 2 is linked next."
+  },
+  "nativeScrollProof": {
+    "method": "native scroll 0.3 pages per tool call; read DOM after each action",
+    "y": [
+      5869.375,
+      6169.375,
+      6469.375,
+      6769.375
+    ],
+    "files": [
+      "review/native-reveal-360-01.jpg",
+      "review/native-reveal-360-02.jpg",
+      "review/native-reveal-360-03.jpg",
+      "review/native-reveal-360-04.jpg"
+    ]
   },
   "completeImage": "complete-390.jpg",
-  "ios": "Catalog and eight adopted image bytes bundled; physical-device validation not performed.",
-  "publication": "Pending PR merge and production upload."
+  "ios": "Catalog and 25 adopted image bytes synchronized. Physical-device validation not performed.",
+  "publication": "Replacement pending this episode PR merge, staged upload, public reading and old episode retirement."
 }
