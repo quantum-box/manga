@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-1058f5f9-3678-4035-8d8c-35a1e8357d44.png",
+  "adopted": "art/03-control-fragment-corrected.png",
+  "original_sha256": "cc85a67424d443897a7176defd7d46e125ecbe3f56e532a53af1f85002f897c6",
+  "adopted_sha256": "cc85a67424d443897a7176defd7d46e125ecbe3f56e532a53af1f85002f897c6",
+  "width": 724,
+  "height": 2171,
+  "prompt_file": "generation/03-control-fragment-corrected.prompt.txt",
+  "prompt": "Edit ONLY notebook drawings on this page. Remove all tiny pseudo-Japanese writing, printed characters, rectangular text tables. Replace with simple unlabeled hand-drawn floor-plan lines, blank room shapes, and one route arrow on paper. Preserve both dialogue balloons exactly and all people, guardian remains, stone wrapping, panel layout.",
+  "pixel_processing": "none",
+  "text_review": "passed_exact_dialogue_and_speakers",
+  "continuity_review": "passed_samples_return_reward_and_same_meal_cast",
+  "reference_files": [
+    {
+      "path": "generation/inputs/03-control-fragment.png",
+      "sha256": "123ce2f46ebb3416f092bd20c930f922510174021c1c7e7ccd531a3b74fab0e5",
+      "executed_filename": "03-control-fragment.png"
+    }
+  ]
+}

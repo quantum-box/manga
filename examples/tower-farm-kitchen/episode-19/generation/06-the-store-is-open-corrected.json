@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-3755ff69-9d50-44fb-90ec-fb689584b5a4.png",
+  "adopted": "art/06-the-store-is-open-corrected.png",
+  "original_sha256": "967192abac64a1e3801bda5f1d8533df63d8dbee6cf8434022f71af9761e6447",
+  "adopted_sha256": "967192abac64a1e3801bda5f1d8533df63d8dbee6cf8434022f71af9761e6447",
+  "width": 728,
+  "height": 2159,
+  "prompt_file": "generation/06-the-store-is-open-corrected.prompt.txt",
+  "prompt": "Remove the navy-haired goggle-wearing woman Iris from first and fourth panel foreground right. Fill that small area with matching garden path/background, preserve Kou and Balt. No new foreground character in her place. Preserve Elna serving ordinary paying customers including ochre-clad customer, all other people and panels. Kou dialogue must be exactly 「……開いてる」 with six dots; Balt exactly 「当たり前だ 任されたからな」 in existing two upright columns. Replace any illegible sign pseudo-letters with simple unlabeled bowl silhouette.",
+  "pixel_processing": "none",
+  "text_review": "passed_exact_dialogue_and_speakers",
+  "continuity_review": "passed_samples_return_reward_and_same_meal_cast",
+  "reference_files": [
+    {
+      "path": "generation/inputs/06-the-store-is-open.png",
+      "sha256": "438dd3982bae926e243855b8d23ab0c45fa8dec74a9031793f7fad5dc4e892b0",
+      "executed_filename": "06-the-store-is-open.png"
+    }
+  ]
+}

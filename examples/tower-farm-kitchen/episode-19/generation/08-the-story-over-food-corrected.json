@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-d2c0994c-c081-4b2c-91f2-c5c3b36aabe0.png",
+  "adopted": "art/08-the-story-over-food-corrected.png",
+  "original_sha256": "3d702818625718d8edf265da8a0e611fee5202578ce70c4832086322f3e58e33",
+  "adopted_sha256": "3d702818625718d8edf265da8a0e611fee5202578ce70c4832086322f3e58e33",
+  "width": 724,
+  "height": 2172,
+  "prompt_file": "generation/08-the-story-over-food-corrected.prompt.txt",
+  "prompt": "Replace Iris (navy bob hair/copper goggles/gray workwear) on left in group panels with Sera from reference2 center: black low braid, teal cloak, dark tunic, staff safely set aside. Replace Balt (older gray-haired man with brown hat) on right in group panels with Row from reference2 left: adult rust-auburn short hair, ochre cloak, leather cuirass, no hat/no gray beard. This dinner group is ONLY Kou, Elna, Sera, Row. Keep Kou/Elna, all three dialogue balloons EXACT, stew/bowls, closed paper packet safely apart from bowls, composition. No blade/staff on dining table. Replace background menu pseudo-letters with unlabeled chalk bowl sketch.",
+  "pixel_processing": "none",
+  "text_review": "passed_exact_dialogue_and_speakers",
+  "continuity_review": "passed_samples_return_reward_and_same_meal_cast",
+  "reference_files": [
+    {
+      "path": "generation/inputs/08-the-story-over-food.png",
+      "sha256": "13bdf200287ed334fa8a5ce07c233ede0faa240280e343e47354ed9d1a0147a7",
+      "executed_filename": "08-the-story-over-food.png"
+    },
+    {
+      "path": "../production/references/expedition.png",
+      "sha256": "e6b4fb674e571916fb249b22e5533d3a0967b01eda1c1a85d119eb9a00faa7a2",
+      "executed_filename": "expedition.png"
+    }
+  ]
+}
