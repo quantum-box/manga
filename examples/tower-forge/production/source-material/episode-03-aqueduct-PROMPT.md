@@ -1,0 +1,22 @@
+# Shared aqueduct source instruction
+
+Current episodes use episode-03/art/01.png as an image-generation reference. It is not included in the adopted episode 3 reader. This preserves the exact original instruction for that shared input.
+
+## 1 水路への階段
+
+```text
+Use case: illustration-story. Finished full-color Japanese smartphone vertical-scroll Webtoon. ONE portrait illustration around 1024x2048 or 1024x2304, with four deliberately UNEQUAL panels or beats ordered from top to bottom. Reference image establishes character identity, clothes, tools, palette, anime style ONLY; do not copy the reference sheet's layout, labels, portraits, parchment backdrop, or bring every character into every panel. Clean detailed anime linework, readable expressive faces, controlled cel shading, grounded high fantasy, warm natural metals, white page gutters. Medieval sword and magic VRMMORPG; actual world scenery looks like a fantasy adventure, only small HUDs imply gameplay. No futuristic city.
+Draw exact Japanese speech as part of the raster artwork. Genuine vertical lettering with upright characters, top-to-bottom within a column, columns RIGHT TO LEFT. Clean printed Japanese manga gothic, near 60px glyph height on a 1024px-wide original, readable at 360px display width; never shrink long dialogue. Each utterance below gives columns in right-to-left order, with / only as a separator in this instruction, never printed. Normal speech: slender oval or rounded tall bubble, tail to speaker. Quiet speech: softly irregular thin outline with tail. Shouts: bold spiky bubble and clear pointed tail. Thoughts: cloud-like shape with dots toward the thinker, no speech tail. HUD is translucent cyan, compact horizontal Japanese is allowed for HUD, not ornamental gold panel. Sound effects are material-appropriate drawn text and may be horizontal. Never duplicate an utterance, add extra visible writing, translate Japanese, show speaker labels, or overlay unnecessary HUD.
+Panel layout: shallow establishing/context panel when appropriate, staggered medium conversation or action, narrow object/eye insert, larger lower reaction or result. Use unequal heights and widths, some borderless long scenery; action may have slanted frame borders but keep the lettering upright. Small panels show ONLY close-up subjects, not tiny whole bodies. Dialogue must not cover faces, hands, sword, shield, or clue. Keep clear right-to-left order inside any same-row split. Use varied camera distances for understanding, no uniform four-box grid. Use a white bottom edge/gutter. Characters remain in the same location even if offscreen. Keep actions causal and exact prop state.
+Kai: dark-brown short hair, one amber streak at his right temple, amber eyes, ivory rolled-sleeve shirt, brown leather vest, short indigo cape, dark trousers, leather boots, copper cuff left forearm, steel one-handed sword in right hand with square brass guard and one thin orange fuller inset; not a lightsaber. After episode 5 sword has small copper cooling plate beside guard. Sena: silver-blonde LOW ponytail, blue eyes, silver armor over deep blue tunic, navy cape, one triangular silver shield with cobalt line in left hand, straight steel sword on belt when not specified. Iris: plum bob hair, green eyes, teal hood-down cloak, ivory tunic, wooden staff with ONE amber crystal and copper ring. Do not swap their colors, genders, or props. Orun: older male NPC smith with short gray beard and brown apron. Vane: male player, tied-back ash-gray hair, silver armor, white cape. Never introduce unmentioned characters, duplicate hands/limbs/props or show a future reveal early. No watermark.
+Episode 3, strip 1, scene: 水路への階段. Location continuity: 第一層の旧水路、昼の光は上の入口だけ.
+BEAT 1 top-to-bottom. Artwork/camera/focus: 全幅上コマ。三人が石階段を降りる。セナ前、カイ中、イリス後。水音が下から届く。
+Exactly one utterance by 音; voice/shape: 効果音. Exact text: ざあ…. Vertical columns RIGHT to LEFT: ざあ…
+BEAT 2 top-to-bottom. Artwork/camera/focus: 長い枠なしの水路。青緑の水と銅の管、下へ向かう階段の動線。敵はまだ見えない。
+Silent beat: no speech bubble, no extra text.
+BEAT 3 top-to-bottom. Artwork/camera/focus: 小さなセナの目元。物陰の音へ目を向ける。
+Exactly one utterance by セナ; voice/shape: 普通の声. Exact text: 止まって。. Vertical columns RIGHT to LEFT: 止まって。
+BEAT 4 top-to-bottom. Artwork/camera/focus: 下の中コマ。水路の曲がり角から膝の高さの石の守護機が一体出る。橙の刻線。
+Exactly one utterance by カイ; voice/shape: 普通の声. Exact text: 来る。. Vertical columns RIGHT to LEFT: 来る。
+Withheld information: 未登場の敵・後の報酬を描かない
+```
