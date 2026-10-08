@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+"""Expose only the requested chapter after its original and phone review passes."""
+import json,re,sys,html,time,hashlib
+from urllib.request import urlopen,Request
+from pathlib import Path
+BASE=Path(__file__).resolve().parents[2]
+ROOT=BASE.parents[1]
+DATA=json.loads(Path(__file__).with_name('episodes.json').read_text())
+def require_previous(n):
+ if n<=11:return
+ p=BASE/f'episode-{n-1:02d}'/'delivery.json'
+ if not p.is_file():raise ValueError(f'Previous episode {n-1} has no verified delivery')
+ record=json.loads(p.read_text())
+ for key in ('publicJSON','publicImageHashes','catalog'):
+  if record.get(key)!='passed':raise ValueError(f'Previous delivery unverified: {key}')
+ if not str(record.get('browserReview','')).startswith('passed') or not record.get('mergeCommit'):raise ValueError('Previous merge/browser verification missing')
+ with urlopen(Request('https://manga-server.txcloud.app/api/v1/catalog?refresh='+str(time.time_ns()),headers={'User-Agent':'manga-publisher/1.0','Cache-Control':'no-cache'}),timeout=30) as response:catalog=json.load(response)
+ series=next(s for s in catalog if s['id']=='online-tower-farm-kitchen')
+ if not any(e['number']==n-1 and e['id']==record['id'] for e in series['episodes']):raise ValueError('Previous verified episode absent from live catalog')
+
+def update(n):
+ require_previous(n)
+ ep=next(e for e in DATA if e['number']==n)
+ d=BASE/f'episode-{n:02d}'
+ validation=json.loads((d/'validation.json').read_text())
+ for key in ('artworkTextReview','continuityReview','windowBoundaryReview','scrollPacingVisualReview'):
+  if not str(validation.get(key,'')).startswith('passed'):raise ValueError(f'Unreviewed chapter {n}: {key}')
+ for filename in ('manifest.json','index.html','reader.html','reader.css'):
+  actual=hashlib.sha256((d/filename).read_bytes()).hexdigest()
+  if validation.get('packagedFilesSHA256',{}).get(filename)!=actual:raise ValueError(f'Stale phone validation: {filename}')
+ manifest=json.loads((d/'manifest.json').read_text())
+ for source in manifest['sources']:
+  actual=hashlib.sha256((d/source['art']).read_bytes()).hexdigest()
+  if actual!=source['sha256'] or any(v.get('originalArtworkHashes',{}).get(source['id'])!=actual for v in validation['viewports']):raise ValueError('Stale artwork validation')
+ if {v['innerWidth'] for v in validation['viewports']}!={390,360}:raise ValueError('Missing phone width')
+ for filename in ('index.html','reader.html','manifest.json'):
+  if not (d/filename).is_file():raise ValueError(f'Missing {filename}')
+ p=ROOT/'content/catalog.json';c=json.loads(p.read_text());s=next(x for x in c if x['id']=='tower-farm-kitchen')
+ source=f'examples/tower-farm-kitchen/episode-{n:02d}/index.html'
+ item={'id':f'episode-{n:02d}','number':n,'title':ep['title'],'edition':'','source':source,'background':'#fffaf0'}
+ existing=next((i for i in s['episodes'] if i['number']==n),None)
+ if existing is None:s['episodes'].append(item)
+ elif existing!=item:raise ValueError('Conflicting already-adopted chapter')
+ s['episodes'].sort(key=lambda e:e['number']);p.write_text(json.dumps(c,ensure_ascii=False,indent=2)+'\n')
+ p=BASE/'chapters.html';t=p.read_text();items=''.join(f'<li><a href="episode-{e["number"]:02d}/index.html">第{e["number"]}話　{html.escape(e["title"])}<span>読む →</span></a></li>' for e in s['episodes'])
+ t=re.sub(r'<ol>.*?</ol>','<ol>'+items+'</ol>',t,flags=re.S);p.write_text(t)
+ p=BASE/'series/bible.md';t=p.read_text();t=re.sub(r'completed_art_episodes: \[[^\n]*\]','completed_art_episodes: '+str([e['number'] for e in s['episodes']]),t);p.write_text(t)
+ p=BASE/'series/continuity.md';t=p.read_text();heading=f'## 第{n}話の確認済み終了状態'
+ if heading not in t:t+=f'\n{heading}\n\n{ep["time"]}。{ep["state"]}\n'
+ p.write_text(t)
+ print(f'Adopted {n}: {ep["title"]}; visible count {len(s["episodes"])}')
+if __name__=='__main__':
+ for n in sys.argv[1:]:update(int(n))

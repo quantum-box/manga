@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-951098d5-fc2a-46fb-b530-29652edce16a.png",
+  "adopted": "art/04-the-knife-basin.png",
+  "original_sha256": "fa2c7582207b1aec266092ddb40da527f859b3046d3852490854be2812f76f26",
+  "adopted_sha256": "fa2c7582207b1aec266092ddb40da527f859b3046d3852490854be2812f76f26",
+  "width": 736,
+  "height": 2135,
+  "prompt_file": "generation/04-the-knife-basin.prompt.txt",
+  "prompt": "Edit FIRST supplied comic image only. Preserve entire portrait canvas, panel composition, ALL exact upright Japanese lettering and sound effects, all faces, clothes, hands, gestures and food. ONLY change the lower-left washing equipment around Kou: replace the modern shiny rectangular stainless kitchen sink with a broad shallow OVAL hammered copper wash basin standing on the same wooden work counter. Replace the chrome faucet at left edge with a simple aged wooden gravity-fed water spout, no chrome faucet handle or modern manufactured kitchen fixtures. Change his shiny steel perforated colander to a dark aged bronze perforated colander, retaining its exact shape and the same washed soft green leaves and gentle dripping water. Fantasy crafts and handmade materials consistent with SECOND supplied world reference. Keep water safe and ordinary, no magic glow and no modern plastic. All other panels including Elna cutting carrots, stew, mouths and balloons stay unchanged. No new panels, people, text, extra dialogue, crop, rotation, resize or new framing.\n",
+  "text_review": "passed",
+  "continuity_review": "passed",
+  "reference_files": [
+    {
+      "path": "generation/inputs/04-the-knife-original.png",
+      "sha256": "42330ae446f42a2cd3ab6fff62ad955f2845679472455b2dcb59a0b40467d0f7"
+    },
+    {
+      "path": "../production/references/world.png",
+      "sha256": "a5565e8a769bb65d3222b72f3c57abd3bf3e5433a5d77310154449c3175a91f2"
+    }
+  ]
+}

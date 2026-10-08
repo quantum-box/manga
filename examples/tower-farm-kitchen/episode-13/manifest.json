@@ -1,0 +1,1026 @@
+{
+  "number": 13,
+  "title": "値段の向こう側",
+  "time": "45日目",
+  "change": "六銅貨相当の同じ予算で三組へ試食を出す。商人ロデルが初登場。現地料理人の腕は認める。エルナは調理、コウは素材と供給の強み。判定は次話。",
+  "state": "六銅貨相当の同じ予算で三組へ試食を出す。商人ロデルが初登場。現地料理人の腕は認める。エルナは調理、コウは素材と供給の強み。判定は次話。",
+  "revision": "2026-10-08-following",
+  "sources": [
+    {
+      "id": "01-tasting-hall-hall",
+      "art": "art/01-tasting-hall-hall.png",
+      "description": "Third-floor guild communal tasting hall, three preparation tables separated, Leon introduces rules to Kou and Elna; ordinary skilled rival chefs present as generic adults, no arena swords drawn or cheering stadium.",
+      "dialogue": [
+        [
+          "レオン",
+          "食材と燃料の予算は\n一食六銅貨分"
+        ],
+        [
+          "レオン",
+          "皿は番号だけで\n比べる"
+        ],
+        [
+          "コウ",
+          "店の名前は\n見せないんだな"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-tasting-hall-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "9dda7f2c9d8f6cd811cf5e25470a94c84840439ff49bd59c6a180fb04c867ec1"
+    },
+    {
+      "id": "02-rodel-hall",
+      "art": "art/02-rodel-hall.png",
+      "description": "Introduce Rodel as expedition reference RIGHT: charcoal hair silver temple, small trimmed beard, moss-green coat bronze collar chain, closed ledger, no cape mistaken for Row. He sees modest vegetable crates and questions small operation, Elna hears firmly.",
+      "dialogue": [
+        [
+          "ロデル",
+          "小さな畑で\nギルドの飯を？"
+        ],
+        [
+          "エルナ",
+          "今日の分は\n揃えてあります"
+        ],
+        [
+          "ロデル",
+          "一度出すだけなら\n誰でもできる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-rodel-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "acce21a13c9e5c5d40858148e26b071b2da836547e3df3a5987e74ff3cfa80ef"
+    },
+    {
+      "id": "03-kou-answers-hall",
+      "art": "art/03-kou-answers-hall.png",
+      "description": "Same hall at blank ledger table; Kou faces Rodel without arrogance, points to measured produce and separate purchased flour basket; Rodel listens professionally; Leon watching from side. No futuristic computer or dense visible writing.",
+      "dialogue": [
+        [
+          "コウ",
+          "畑だけで\n全部を賄うとは\n言ってません"
+        ],
+        [
+          "コウ",
+          "作れる量と\n買う量を\n決めてる"
+        ],
+        [
+          "レオン",
+          "そこも\n確かめさせてもらう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-kou-answers-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "806c434be20042d32b6490f7c9f5b2fa34df9ee00f3f829f64255b09c4fbc0e8"
+    },
+    {
+      "id": "04-competent-rivals-hall",
+      "art": "art/04-competent-rivals-hall.png",
+      "description": "Skilled local chef fillets meat safely and uses fragrant herb packet; Elna acknowledges smell, Kou notices imported fresh herb crate and uncertain delivery ticket with abstract marks. Rivals cooking legitimately appetizing meal, not idiots or spoiled food.",
+      "dialogue": [
+        [
+          "エルナ",
+          "あっちも\nおいしそう"
+        ],
+        [
+          "コウ",
+          "だから\n俺たちの強みを出す"
+        ],
+        [
+          "エルナ",
+          "いつもの味を\n崩さない"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-competent-rivals-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "71b06c5ac8432f13323c473e4be90ef3d2b2cca2bf3c58dda48728fce3f7b1bd"
+    },
+    {
+      "id": "05-the-fresh-cut-hall",
+      "art": "art/05-the-fresh-cut-hall.png",
+      "description": "Closeup washed local greens fresh cut edges, then Kou passes uniform portions to Elna at clean chopping board; tender beef already braised and carrot same proportions; small paired hand details then her focused face.",
+      "dialogue": [
+        [
+          "コウ",
+          "葉は\n出す直前に切る"
+        ],
+        [
+          "エルナ",
+          "香りを\n残したいからね"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 90,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-the-fresh-cut-hall.prompt.txt",
+      "soundEffects": [
+        "トン"
+      ],
+      "width": 727,
+      "height": 2163,
+      "sha256": "a9cc8c4be0b10423b202ee623ea42b05c39706018825f2252d9d50c4780b03d6"
+    },
+    {
+      "id": "06-controlled-heat-hall",
+      "art": "art/06-controlled-heat-hall.png",
+      "description": "Elna adjusts simple stove fuel and stirs smooth brown stew in iron pot, steam ribbon connects close shots, Kou carries empty ceramic plates to serving counter not touching raw produce. Practical confident fast preparation.",
+      "dialogue": [
+        [
+          "エルナ",
+          "ここからは\n任せて"
+        ],
+        [
+          "コウ",
+          "了解\n皿を揃える"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-controlled-heat-hall.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "b2ade795fb8da7a0fcbc3bea42ab911b00a5ad4415f4a7a4bf472d1d234bfd14"
+    },
+    {
+      "id": "07-the-plates-hall",
+      "art": "art/07-the-plates-hall.png",
+      "description": "Three appealing distinct anonymous candidate dishes on plain labeled-by-object tokens, only candidate digits 1, 2, 3 on the anonymous cards besides exact dialogue. Final large hero of Elna beef carrot green stew and bread, no tasting reaction yet. Separate clean serving portions.",
+      "dialogue": [
+        [
+          "レオン",
+          "揃ったな"
+        ],
+        [
+          "エルナ",
+          "できたよ\n私たちの一皿"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 910,
+      "scrollPurpose": "三つの料理を披露し食べた反応は次の話へ残す",
+      "prompt": "generation/07-the-plates-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 731,
+      "height": 2151,
+      "sha256": "51bbbf1da53448987f43f5d3e79ad0ae01ec9b956048d13899b00dbd347d3e9d"
+    },
+    {
+      "id": "08-wait-for-the-spoon-hall",
+      "art": "art/08-wait-for-the-spoon-hall.png",
+      "description": "Leon and Row sit before tasting portions, first spoon raised but no completed taste outcome; Elna watches from back with anxious clasped hands, Kou quietly encourages her; final quiet closeup her eyes, no judgement window.",
+      "dialogue": [
+        [
+          "エルナ",
+          "……緊張するね"
+        ],
+        [
+          "コウ",
+          "あれだけ\n選んでもらった味だ"
+        ],
+        [
+          "エルナ",
+          "うん"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 430,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-wait-for-the-spoon-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "09c3a5d7eaa3e0a7988c48011180adec634c315c6c0ff3b599c82fb0b5a92732"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-tasting-hall-hall-window-01",
+      "art": "art/01-tasting-hall-hall.png",
+      "description": "Third-floor guild communal tasting hall, three preparation tables separated, Leon introduces rules to Kou and Elna; ordinary skilled rival chefs present as generic adults, no arena swords drawn or cheering stadium.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-tasting-hall-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "9dda7f2c9d8f6cd811cf5e25470a94c84840439ff49bd59c6a180fb04c867ec1",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 416
+      },
+      "sourceId": "01-tasting-hall-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-tasting-hall-hall-window-02",
+      "art": "art/01-tasting-hall-hall.png",
+      "description": "Third-floor guild communal tasting hall, three preparation tables separated, Leon introduces rules to Kou and Elna; ordinary skilled rival chefs present as generic adults, no arena swords drawn or cheering stadium.",
+      "dialogue": [
+        [
+          "レオン",
+          "食材と燃料の予算は\n一食六銅貨分"
+        ],
+        [
+          "レオン",
+          "皿は番号だけで\n比べる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 140,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-tasting-hall-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "9dda7f2c9d8f6cd811cf5e25470a94c84840439ff49bd59c6a180fb04c867ec1",
+      "crop": {
+        "x": 0,
+        "y": 416,
+        "width": 724,
+        "height": 873
+      },
+      "sourceId": "01-tasting-hall-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-tasting-hall-hall-window-03",
+      "art": "art/01-tasting-hall-hall.png",
+      "description": "Third-floor guild communal tasting hall, three preparation tables separated, Leon introduces rules to Kou and Elna; ordinary skilled rival chefs present as generic adults, no arena swords drawn or cheering stadium.",
+      "dialogue": [
+        [
+          "コウ",
+          "店の名前は\n見せないんだな"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-tasting-hall-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "9dda7f2c9d8f6cd811cf5e25470a94c84840439ff49bd59c6a180fb04c867ec1",
+      "crop": {
+        "x": 0,
+        "y": 1289,
+        "width": 724,
+        "height": 419
+      },
+      "sourceId": "01-tasting-hall-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-tasting-hall-hall-window-04",
+      "art": "art/01-tasting-hall-hall.png",
+      "description": "Third-floor guild communal tasting hall, three preparation tables separated, Leon introduces rules to Kou and Elna; ordinary skilled rival chefs present as generic adults, no arena swords drawn or cheering stadium.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-tasting-hall-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "9dda7f2c9d8f6cd811cf5e25470a94c84840439ff49bd59c6a180fb04c867ec1",
+      "crop": {
+        "x": 0,
+        "y": 1708,
+        "width": 724,
+        "height": 464
+      },
+      "sourceId": "01-tasting-hall-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-rodel-hall-window-01",
+      "art": "art/02-rodel-hall.png",
+      "description": "Introduce Rodel as expedition reference RIGHT: charcoal hair silver temple, small trimmed beard, moss-green coat bronze collar chain, closed ledger, no cape mistaken for Row. He sees modest vegetable crates and questions small operation, Elna hears firmly.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-rodel-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "acce21a13c9e5c5d40858148e26b071b2da836547e3df3a5987e74ff3cfa80ef",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 512
+      },
+      "sourceId": "02-rodel-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-rodel-hall-window-02",
+      "art": "art/02-rodel-hall.png",
+      "description": "Introduce Rodel as expedition reference RIGHT: charcoal hair silver temple, small trimmed beard, moss-green coat bronze collar chain, closed ledger, no cape mistaken for Row. He sees modest vegetable crates and questions small operation, Elna hears firmly.",
+      "dialogue": [
+        [
+          "ロデル",
+          "小さな畑で\nギルドの飯を？"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-rodel-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "acce21a13c9e5c5d40858148e26b071b2da836547e3df3a5987e74ff3cfa80ef",
+      "crop": {
+        "x": 0,
+        "y": 512,
+        "width": 724,
+        "height": 574
+      },
+      "sourceId": "02-rodel-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-rodel-hall-window-03",
+      "art": "art/02-rodel-hall.png",
+      "description": "Introduce Rodel as expedition reference RIGHT: charcoal hair silver temple, small trimmed beard, moss-green coat bronze collar chain, closed ledger, no cape mistaken for Row. He sees modest vegetable crates and questions small operation, Elna hears firmly.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 60,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-rodel-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "acce21a13c9e5c5d40858148e26b071b2da836547e3df3a5987e74ff3cfa80ef",
+      "crop": {
+        "x": 0,
+        "y": 1086,
+        "width": 724,
+        "height": 156
+      },
+      "sourceId": "02-rodel-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-rodel-hall-window-04",
+      "art": "art/02-rodel-hall.png",
+      "description": "Introduce Rodel as expedition reference RIGHT: charcoal hair silver temple, small trimmed beard, moss-green coat bronze collar chain, closed ledger, no cape mistaken for Row. He sees modest vegetable crates and questions small operation, Elna hears firmly.",
+      "dialogue": [
+        [
+          "エルナ",
+          "今日の分は\n揃えてあります"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 150,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-rodel-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "acce21a13c9e5c5d40858148e26b071b2da836547e3df3a5987e74ff3cfa80ef",
+      "crop": {
+        "x": 0,
+        "y": 1242,
+        "width": 724,
+        "height": 316
+      },
+      "sourceId": "02-rodel-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-rodel-hall-window-05",
+      "art": "art/02-rodel-hall.png",
+      "description": "Introduce Rodel as expedition reference RIGHT: charcoal hair silver temple, small trimmed beard, moss-green coat bronze collar chain, closed ledger, no cape mistaken for Row. He sees modest vegetable crates and questions small operation, Elna hears firmly.",
+      "dialogue": [
+        [
+          "ロデル",
+          "一度出すだけなら\n誰でもできる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-rodel-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "acce21a13c9e5c5d40858148e26b071b2da836547e3df3a5987e74ff3cfa80ef",
+      "crop": {
+        "x": 0,
+        "y": 1558,
+        "width": 724,
+        "height": 614
+      },
+      "sourceId": "02-rodel-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-kou-answers-hall-window-01",
+      "art": "art/03-kou-answers-hall.png",
+      "description": "Same hall at blank ledger table; Kou faces Rodel without arrogance, points to measured produce and separate purchased flour basket; Rodel listens professionally; Leon watching from side. No futuristic computer or dense visible writing.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 80,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-kou-answers-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "806c434be20042d32b6490f7c9f5b2fa34df9ee00f3f829f64255b09c4fbc0e8",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 545
+      },
+      "sourceId": "03-kou-answers-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-kou-answers-hall-window-02",
+      "art": "art/03-kou-answers-hall.png",
+      "description": "Same hall at blank ledger table; Kou faces Rodel without arrogance, points to measured produce and separate purchased flour basket; Rodel listens professionally; Leon watching from side. No futuristic computer or dense visible writing.",
+      "dialogue": [
+        [
+          "コウ",
+          "畑だけで\n全部を賄うとは\n言ってません"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 140,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-kou-answers-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "806c434be20042d32b6490f7c9f5b2fa34df9ee00f3f829f64255b09c4fbc0e8",
+      "crop": {
+        "x": 0,
+        "y": 545,
+        "width": 724,
+        "height": 511
+      },
+      "sourceId": "03-kou-answers-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-kou-answers-hall-window-03",
+      "art": "art/03-kou-answers-hall.png",
+      "description": "Same hall at blank ledger table; Kou faces Rodel without arrogance, points to measured produce and separate purchased flour basket; Rodel listens professionally; Leon watching from side. No futuristic computer or dense visible writing.",
+      "dialogue": [
+        [
+          "コウ",
+          "作れる量と\n買う量を\n決めてる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-kou-answers-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "806c434be20042d32b6490f7c9f5b2fa34df9ee00f3f829f64255b09c4fbc0e8",
+      "crop": {
+        "x": 0,
+        "y": 1056,
+        "width": 724,
+        "height": 347
+      },
+      "sourceId": "03-kou-answers-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-kou-answers-hall-window-04",
+      "art": "art/03-kou-answers-hall.png",
+      "description": "Same hall at blank ledger table; Kou faces Rodel without arrogance, points to measured produce and separate purchased flour basket; Rodel listens professionally; Leon watching from side. No futuristic computer or dense visible writing.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-kou-answers-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "806c434be20042d32b6490f7c9f5b2fa34df9ee00f3f829f64255b09c4fbc0e8",
+      "crop": {
+        "x": 0,
+        "y": 1403,
+        "width": 724,
+        "height": 297
+      },
+      "sourceId": "03-kou-answers-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-kou-answers-hall-window-05",
+      "art": "art/03-kou-answers-hall.png",
+      "description": "Same hall at blank ledger table; Kou faces Rodel without arrogance, points to measured produce and separate purchased flour basket; Rodel listens professionally; Leon watching from side. No futuristic computer or dense visible writing.",
+      "dialogue": [
+        [
+          "レオン",
+          "そこも\n確かめさせてもらう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-kou-answers-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "806c434be20042d32b6490f7c9f5b2fa34df9ee00f3f829f64255b09c4fbc0e8",
+      "crop": {
+        "x": 0,
+        "y": 1700,
+        "width": 724,
+        "height": 472
+      },
+      "sourceId": "03-kou-answers-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-competent-rivals-hall-window-01",
+      "art": "art/04-competent-rivals-hall.png",
+      "description": "Skilled local chef fillets meat safely and uses fragrant herb packet; Elna acknowledges smell, Kou notices imported fresh herb crate and uncertain delivery ticket with abstract marks. Rivals cooking legitimately appetizing meal, not idiots or spoiled food.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-competent-rivals-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "71b06c5ac8432f13323c473e4be90ef3d2b2cca2bf3c58dda48728fce3f7b1bd",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 557
+      },
+      "sourceId": "04-competent-rivals-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-competent-rivals-hall-window-02",
+      "art": "art/04-competent-rivals-hall.png",
+      "description": "Skilled local chef fillets meat safely and uses fragrant herb packet; Elna acknowledges smell, Kou notices imported fresh herb crate and uncertain delivery ticket with abstract marks. Rivals cooking legitimately appetizing meal, not idiots or spoiled food.",
+      "dialogue": [
+        [
+          "エルナ",
+          "あっちも\nおいしそう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-competent-rivals-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "71b06c5ac8432f13323c473e4be90ef3d2b2cca2bf3c58dda48728fce3f7b1bd",
+      "crop": {
+        "x": 0,
+        "y": 557,
+        "width": 724,
+        "height": 366
+      },
+      "sourceId": "04-competent-rivals-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-competent-rivals-hall-window-03",
+      "art": "art/04-competent-rivals-hall.png",
+      "description": "Skilled local chef fillets meat safely and uses fragrant herb packet; Elna acknowledges smell, Kou notices imported fresh herb crate and uncertain delivery ticket with abstract marks. Rivals cooking legitimately appetizing meal, not idiots or spoiled food.",
+      "dialogue": [
+        [
+          "コウ",
+          "だから\n俺たちの強みを出す"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-competent-rivals-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "71b06c5ac8432f13323c473e4be90ef3d2b2cca2bf3c58dda48728fce3f7b1bd",
+      "crop": {
+        "x": 0,
+        "y": 923,
+        "width": 724,
+        "height": 531
+      },
+      "sourceId": "04-competent-rivals-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-competent-rivals-hall-window-04",
+      "art": "art/04-competent-rivals-hall.png",
+      "description": "Skilled local chef fillets meat safely and uses fragrant herb packet; Elna acknowledges smell, Kou notices imported fresh herb crate and uncertain delivery ticket with abstract marks. Rivals cooking legitimately appetizing meal, not idiots or spoiled food.",
+      "dialogue": [
+        [
+          "エルナ",
+          "いつもの味を\n崩さない"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-competent-rivals-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "71b06c5ac8432f13323c473e4be90ef3d2b2cca2bf3c58dda48728fce3f7b1bd",
+      "crop": {
+        "x": 0,
+        "y": 1454,
+        "width": 724,
+        "height": 718
+      },
+      "sourceId": "04-competent-rivals-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-the-fresh-cut-hall-window-01",
+      "art": "art/05-the-fresh-cut-hall.png",
+      "description": "Closeup washed local greens fresh cut edges, then Kou passes uniform portions to Elna at clean chopping board; tender beef already braised and carrot same proportions; small paired hand details then her focused face.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-the-fresh-cut-hall.prompt.txt",
+      "soundEffects": [
+        "トン"
+      ],
+      "width": 727,
+      "height": 2163,
+      "sha256": "a9cc8c4be0b10423b202ee623ea42b05c39706018825f2252d9d50c4780b03d6",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 727,
+        "height": 381
+      },
+      "sourceId": "05-the-fresh-cut-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-the-fresh-cut-hall-window-02",
+      "art": "art/05-the-fresh-cut-hall.png",
+      "description": "Closeup washed local greens fresh cut edges, then Kou passes uniform portions to Elna at clean chopping board; tender beef already braised and carrot same proportions; small paired hand details then her focused face.",
+      "dialogue": [
+        [
+          "コウ",
+          "葉は\n出す直前に切る"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 100,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-the-fresh-cut-hall.prompt.txt",
+      "soundEffects": [
+        "トン"
+      ],
+      "width": 727,
+      "height": 2163,
+      "sha256": "a9cc8c4be0b10423b202ee623ea42b05c39706018825f2252d9d50c4780b03d6",
+      "crop": {
+        "x": 0,
+        "y": 381,
+        "width": 727,
+        "height": 834
+      },
+      "sourceId": "05-the-fresh-cut-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-the-fresh-cut-hall-window-03",
+      "art": "art/05-the-fresh-cut-hall.png",
+      "description": "Closeup washed local greens fresh cut edges, then Kou passes uniform portions to Elna at clean chopping board; tender beef already braised and carrot same proportions; small paired hand details then her focused face.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 80,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-the-fresh-cut-hall.prompt.txt",
+      "soundEffects": [
+        "トン"
+      ],
+      "width": 727,
+      "height": 2163,
+      "sha256": "a9cc8c4be0b10423b202ee623ea42b05c39706018825f2252d9d50c4780b03d6",
+      "crop": {
+        "x": 0,
+        "y": 1215,
+        "width": 727,
+        "height": 291
+      },
+      "sourceId": "05-the-fresh-cut-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-the-fresh-cut-hall-window-04",
+      "art": "art/05-the-fresh-cut-hall.png",
+      "description": "Closeup washed local greens fresh cut edges, then Kou passes uniform portions to Elna at clean chopping board; tender beef already braised and carrot same proportions; small paired hand details then her focused face.",
+      "dialogue": [
+        [
+          "エルナ",
+          "香りを\n残したいからね"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 90,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-the-fresh-cut-hall.prompt.txt",
+      "soundEffects": [
+        "トン"
+      ],
+      "width": 727,
+      "height": 2163,
+      "sha256": "a9cc8c4be0b10423b202ee623ea42b05c39706018825f2252d9d50c4780b03d6",
+      "crop": {
+        "x": 0,
+        "y": 1506,
+        "width": 727,
+        "height": 657
+      },
+      "sourceId": "05-the-fresh-cut-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-controlled-heat-hall-window-01",
+      "art": "art/06-controlled-heat-hall.png",
+      "description": "Elna adjusts simple stove fuel and stirs smooth brown stew in iron pot, steam ribbon connects close shots, Kou carries empty ceramic plates to serving counter not touching raw produce. Practical confident fast preparation.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 70,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-controlled-heat-hall.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "b2ade795fb8da7a0fcbc3bea42ab911b00a5ad4415f4a7a4bf472d1d234bfd14",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 332
+      },
+      "sourceId": "06-controlled-heat-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-controlled-heat-hall-window-02",
+      "art": "art/06-controlled-heat-hall.png",
+      "description": "Elna adjusts simple stove fuel and stirs smooth brown stew in iron pot, steam ribbon connects close shots, Kou carries empty ceramic plates to serving counter not touching raw produce. Practical confident fast preparation.",
+      "dialogue": [
+        [
+          "エルナ",
+          "ここからは\n任せて"
+        ],
+        [
+          "コウ",
+          "了解\n皿を揃える"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 120,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-controlled-heat-hall.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "b2ade795fb8da7a0fcbc3bea42ab911b00a5ad4415f4a7a4bf472d1d234bfd14",
+      "crop": {
+        "x": 0,
+        "y": 332,
+        "width": 724,
+        "height": 1293
+      },
+      "sourceId": "06-controlled-heat-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-controlled-heat-hall-window-03",
+      "art": "art/06-controlled-heat-hall.png",
+      "description": "Elna adjusts simple stove fuel and stirs smooth brown stew in iron pot, steam ribbon connects close shots, Kou carries empty ceramic plates to serving counter not touching raw produce. Practical confident fast preparation.",
+      "dialogue": [],
+      "layout": "varied",
+      "pauseAt390": 160,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-controlled-heat-hall.prompt.txt",
+      "soundEffects": [
+        "こと"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "b2ade795fb8da7a0fcbc3bea42ab911b00a5ad4415f4a7a4bf472d1d234bfd14",
+      "crop": {
+        "x": 0,
+        "y": 1625,
+        "width": 724,
+        "height": 547
+      },
+      "sourceId": "06-controlled-heat-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-the-plates-hall-window-01",
+      "art": "art/07-the-plates-hall.png",
+      "description": "Three appealing distinct anonymous candidate dishes on plain labeled-by-object tokens, only candidate digits 1, 2, 3 on the anonymous cards besides exact dialogue. Final large hero of Elna beef carrot green stew and bread, no tasting reaction yet. Separate clean serving portions.",
+      "dialogue": [
+        [
+          "レオン",
+          "揃ったな"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 100,
+      "scrollPurpose": "三つの料理を披露し食べた反応は次の話へ残す",
+      "prompt": "generation/07-the-plates-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 731,
+      "height": 2151,
+      "sha256": "51bbbf1da53448987f43f5d3e79ad0ae01ec9b956048d13899b00dbd347d3e9d",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 731,
+        "height": 662
+      },
+      "sourceId": "07-the-plates-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-the-plates-hall-window-02",
+      "art": "art/07-the-plates-hall.png",
+      "description": "Three appealing distinct anonymous candidate dishes on plain labeled-by-object tokens, only candidate digits 1, 2, 3 on the anonymous cards besides exact dialogue. Final large hero of Elna beef carrot green stew and bread, no tasting reaction yet. Separate clean serving portions.",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 180,
+      "scrollPurpose": "三つの料理を披露し食べた反応は次の話へ残す",
+      "prompt": "generation/07-the-plates-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 731,
+      "height": 2151,
+      "sha256": "51bbbf1da53448987f43f5d3e79ad0ae01ec9b956048d13899b00dbd347d3e9d",
+      "crop": {
+        "x": 0,
+        "y": 662,
+        "width": 731,
+        "height": 358
+      },
+      "sourceId": "07-the-plates-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-the-plates-hall-window-03",
+      "art": "art/07-the-plates-hall.png",
+      "description": "Three appealing distinct anonymous candidate dishes on plain labeled-by-object tokens, only candidate digits 1, 2, 3 on the anonymous cards besides exact dialogue. Final large hero of Elna beef carrot green stew and bread, no tasting reaction yet. Separate clean serving portions.",
+      "dialogue": [
+        [
+          "エルナ",
+          "できたよ\n私たちの一皿"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 910,
+      "scrollPurpose": "三つの料理を披露し食べた反応は次の話へ残す",
+      "prompt": "generation/07-the-plates-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 731,
+      "height": 2151,
+      "sha256": "51bbbf1da53448987f43f5d3e79ad0ae01ec9b956048d13899b00dbd347d3e9d",
+      "crop": {
+        "x": 0,
+        "y": 1020,
+        "width": 731,
+        "height": 1131
+      },
+      "sourceId": "07-the-plates-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-wait-for-the-spoon-hall-window-01",
+      "art": "art/08-wait-for-the-spoon-hall.png",
+      "description": "Leon and Row sit before tasting portions, first spoon raised but no completed taste outcome; Elna watches from back with anxious clasped hands, Kou quietly encourages her; final quiet closeup her eyes, no judgement window.",
+      "dialogue": [
+        [
+          "エルナ",
+          "……緊張するね"
+        ],
+        [
+          "コウ",
+          "あれだけ\n選んでもらった味だ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 170,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-wait-for-the-spoon-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "09c3a5d7eaa3e0a7988c48011180adec634c315c6c0ff3b599c82fb0b5a92732",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 1728
+      },
+      "sourceId": "08-wait-for-the-spoon-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-wait-for-the-spoon-hall-window-02",
+      "art": "art/08-wait-for-the-spoon-hall.png",
+      "description": "Leon and Row sit before tasting portions, first spoon raised but no completed taste outcome; Elna watches from back with anxious clasped hands, Kou quietly encourages her; final quiet closeup her eyes, no judgement window.",
+      "dialogue": [
+        [
+          "エルナ",
+          "うん"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 430,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-wait-for-the-spoon-hall.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "09c3a5d7eaa3e0a7988c48011180adec634c315c6c0ff3b599c82fb0b5a92732",
+      "crop": {
+        "x": 0,
+        "y": 1728,
+        "width": 724,
+        "height": 444
+      },
+      "sourceId": "08-wait-for-the-spoon-hall",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    }
+  ]
+}
