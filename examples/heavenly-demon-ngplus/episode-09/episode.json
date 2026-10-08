@@ -1,51 +1,115 @@
 {
   "title": "天魔、二周目。",
   "chapter": 9,
-  "subtitle": "帰る条件は、殺すこと？",
+  "subtitle": "雑役弟子の名前",
+  "revision": "full-rebuild-2026-10-07",
   "artwork": [
     {
-      "file": "art/01.png",
+      "id": "01",
+      "file": "art/rebuild-01-clean.png",
       "width": 724,
       "height": 2172,
-      "sha256": "e0c2f5d464c8744dbc6b8da78d7b0633ea35281ebc32047641f7b489b0da2a46"
+      "sha256": "d7dca7204dd7b917d0094d54cc34175e731a357a55b9fd4115a50b0658fc1549"
     },
     {
-      "file": "art/02.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "7a6964cd53849a30b42cf5f95f767e42b4bf991a108e7cf6341827867a019d5f"
+      "id": "02",
+      "file": "art/rebuild-02-clean.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "ec3c5d293090bd1a8e7ed6e2c1b5dbb724839a73ad0a13a186ee3d8bf39adffa"
     },
     {
-      "file": "art/04-pacing.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "37e00c03c1eba49d0d145d96147477662896dc01c8b5bcc60e371ae0587e100f"
+      "id": "03",
+      "file": "art/rebuild-03-clean.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "48fe1c83112154099a51b64da65de3a5faade4f51645d75b0b2d417edb5e123d"
     },
     {
-      "file": "art/03.png",
+      "id": "04",
+      "file": "art/rebuild-04.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "f574f2e1196765a26acf52d19097d0abcdab13c56f53b8fbfe9cdc2040195436"
+    },
+    {
+      "id": "05",
+      "file": "art/rebuild-05-clean.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "a3653d2d73dc5c76e627ae7a600f550cfbff1bc866b41d47555a03c167311ec2"
+    },
+    {
+      "id": "06",
+      "file": "art/rebuild-06-clean.png",
       "width": 724,
       "height": 2172,
-      "sha256": "01aa7c58cde27e53cdbff19e037f840f8ab2d3c149b02f836496af4042643bee"
+      "sha256": "9348c59e7147dc1b300145b3e6af3dd4f03efb42bbc071acc32e6df9110b62c1"
     }
   ],
-  "generatedOriginals": 4,
-  "vignettes": 16,
-  "lettering": "vertical Japanese dialogue in image originals",
-  "readingTimeMeasured": false,
-  "protectedReveal": null,
   "readingOrder": [
     {
-      "scene": 1
+      "id": "beat-01-1",
+      "asset": "01",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 0,
+      "purpose": "読者が追った証拠を順に示す"
     },
     {
-      "scene": 2
+      "id": "beat-02-1",
+      "asset": "02",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 240,
+      "purpose": "証人が自分の言葉で語る"
     },
     {
-      "scene": 4
+      "id": "beat-03-1",
+      "asset": "03",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 360,
+      "purpose": "権威にも説明責任を与える"
     },
     {
-      "scene": 3
+      "id": "beat-04-1",
+      "asset": "04",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 540,
+      "purpose": "判決前に証人と主人公の反応を残す"
+    },
+    {
+      "id": "beat-05-1",
+      "asset": "05",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 930,
+      "purpose": "処刑と罪の取消を初めて聞く"
+    },
+    {
+      "id": "beat-06-1",
+      "asset": "06",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 350,
+      "purpose": "感情と制度の変化を本人へ返す"
     }
   ],
-  "revision": "pacing-expansion-2026-10-06"
+  "lettering": "integrated vertical Japanese in immutable image originals",
+  "startState": "第8話の公開審理の殿。門主が束を机に置く。",
+  "endState": "羅の禁庫管理権が停止。ハンとソ・リンの罪状・処刑が取消。剣の行方は調査継続。"
 }

@@ -1,144 +1,106 @@
-# 天魔、二周目。 第10話 二周目は、俺が決める
+# 天魔、二周目。 第10話 門の外へ
 
-この話で得るものは呉天策の無力化と自由に行き来する帰還権。
+変化：自由になって休み、旅の目的を自分で選び、見送られて門を出る。
 
-全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+開始：審理の翌朝。休息室で眠れた。痣・縄痕は薄く残る。
 
-## 読書区間1 処刑の続きを終わらせる
+終了：罪を晴らしたハンが山門を出る。ソ・リンは鍛冶場に残る。帰還はまだ叶わない。
 
-間の役割　第1話の二本指を自分の意思で使う
+## 01 眠れた朝
 
-表示原画　art/01.png、範囲 [0, 2172]。
+読者の理解／間：決着の後に身体と暮らしを戻す
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Next morning same east guest room. Top hero asleep under plain cover, not unconscious injury. Middle sunlight and waking eye close-up, no system. Bottom sits at bed edge slowly stretching hand with faint rope marks and bruise, now cleaner same robes.
 
-### コマ1
+伏せる情報／状態：勝利直後に別の襲撃を足さない。
 
-作画　Alliance chief thrusts a narrow GOLD ceremonial blade from right hand at Yun, cracked control crystal in LEFT hand. Yun black sword SHEATHED after turning to protect companions, hands free. No injury.
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-呉天策　物語に逆らうな！
+原画：art/rebuild-01-clean.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 0}]
 
-### コマ2
+効果音（発話と別）：none
 
-作画　Large close-up Yun RIGHT index and middle fingers gently STOP chief's gold blade, clearly two fingers, not crushing yet. Yun steady compassionate serious expression contrasts terror from episode 1. Only chief weapon drawn.
+発話：ハン・ユン「朝まで眠れた」／縦列 右→左：朝まで/眠れた／声：thought
 
-ハン・ユン　今度は、自分で止める。
+## 02 あたたかい一口
 
-### コマ3
+読者の理解／間：食事を生還の実感として味わう
 
-作画　Yun LEFT palm sends a SMALL controlled cyan push into chief's chest, chief safely sits backward onto stair, gold weapon drops beside him. No gore no broken limbs. Yun right fingers release blade safely.
+描くもの／カメラ／立ち位置：Guest room low table. Top ONE simple cream ceramic bowl of thick warm chicken broth with two tender chicken slices and softened large carrot pieces, appetizing amber silky broth gentle steam, NOT rice beads or foam. Middle hero gently lifts one plain spoon with one bite using right hand. Bottom face tasting and relaxing, bowl same shape amount slightly reduced, no feast or joke.
 
-ハン・ユン　もう、誰も操らせない。
+伏せる情報／状態：料理披露・動作・反応の3瞬間。粒々を強調しない。
 
-### コマ4
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-作画　Close Yun picks up fallen cracked black control crystal in left palm and squeezes it into black dust, no blade cutting hands. Chief alive seated, panting. Smith and Hakujin look relieved.
+原画：art/rebuild-02-clean.png 727×2162。表示窓：[{"range": [0, 2162], "gap": 300}]
 
-白燼　……命令の声が、消えた。
+効果音（発話と別）：コト
 
-## 読書区間2 帰り道を選ぶ
+発話：ハン・ユン「あったかい」／縦列 右→左：あったかい／声：soft
 
-間の役割　門の条件を解除して帰還を実際に叶える
+## 03 帰るための一歩
 
-表示原画　art/02.png、範囲 [0, 2172]。
+読者の理解／間：帰還の目的を手元と判断へ結び付ける
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：TOP hero at same guestroom table folds unlettered route map, plain cream shoulder bag open nearby. He looks to master at doorway and speaks sincerely about wishing to return to another world; NOT smug. MIDDLE master dark-haired short-bearded NAVY/IVORY listens then gives a concrete lead, not a guaranteed portal. BOTTOM hero accepts map and decides to seek town library, empty hands except folded paper. Same room/table, no sword, other people, portal or magical device.
 
-### コマ5
+伏せる情報／状態：異界の文献は伝承資料。帰還を保証する実物の門や剣を出さない。
 
-作画　Yun RIGHT hand inserts flat of his one black sword into hidden back groove of gate pedestal. Bronze disk still in FRONT slot, So Rin guides his hand from side, Hakujin watches with hands free. Precision, not a stabbing.
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-ソ・リン　そこ。刃じゃなく、剣の背を。
+原画：art/rebuild-03-clean.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 420}]
 
-### コマ6
+効果音（発話と別）：サラ
 
-作画　A thin cyan seam opens around gate, return conditions shatter into harmless light. Translucent CYAN hologram exactly two lines: 真エンド　開放 / 帰還権　獲得. Yun smiles in disbelief.
+発話：ハン・ユン「別の世界へ帰る道を探したい」／縦列 右→左：別の世界へ/帰る道を/探したい／声：normal
+セイ・コウ「麓の書庫に異界の記録がある」／縦列 右→左：麓の書庫に/異界の記録が/ある／声：formal
+ハン・ユン「そこから探してみる」／縦列 右→左：そこから/探してみる／声：normal
 
-システム　真エンド　開放 / 帰還権　獲得
+## 04 借りる道具
 
-### コマ7
+読者の理解／間：出発の持ち物と関係を具体化する
 
-作画　Gate view of his modern student room now clear and accessible. Yun sword SHEATHED at left hip; looks from home to So Rin and Hakujin, tender grateful face.
+描くもの／カメラ／立ち位置：Morning south gate. Top So Rin waits in smith clothes holding ONE small plain utility iron clasp for travel BAG, not sacred weapon. Middle hero fits clasp onto cream shoulder bag strap using fingers softly; smith guides gently without romantic embrace. Bottom they face each other, bag firmly on hero LEFT shoulder now.
 
-ハン・ユン　一度、帰ってくる。
+伏せる情報／状態：証拠の留め具と旅具は別物。旅具は無傷の小型鉄。
 
-### コマ8
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-作画　So Rin and Hakujin at gate wave him off with relief, not clinging. Smith holds ONE worn cloth tool bag as gift offered to Yun's left hand; sword sheathed.
+原画：art/rebuild-04-clean.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 240}]
 
-ソ・リン　うん。帰りは、あんたが決めて。
+効果音（発話と別）：カチ
 
-## 読書区間3 二つの暮らし
+発話：ソ・リン「袋の留め具壊したら直す」／縦列 右→左：袋の留め具/壊したら/直す／声：soft
+ハン・ユン「また頼む」／縦列 右→左：また頼む／声：normal
 
-間の役割　生きて帰る目的を果たし仲間へ自分で戻る
+## 05 見送る門
 
-表示原画　art/03.png、範囲 [0, 796]。
+読者の理解／間：距離と別れの時間をたどる
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：One continuous tall BORDERLESS morning view from open south gate TOP, smith and master remain inside at top, stone steps lead down through broad pale mist EMPTY middle, HERO appears ONLY at bottom walking away cream bag on left shoulder. One hero not repeated, no sword, no strangers. Faces small only for distance; no dialogue. Use mist as genuine quiet negative space, no decorative panel montage.
 
-### コマ9
+伏せる情報／状態：送り手と去る人を同じ門でつなぐ。
 
-作画　Modern student room, Yun still same off-white martial robe dark red sash and sheathed black sword, seated on floor beside desk, exhausted relieved eyes. Cloth tool bag beside him, bronze key on dark red sash recovered after gate opened. Computer and textbooks no printed words. He checks a smartphone without legible screen.
+作画形式：continuous。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　……帰った。ちゃんと、生きてる。
+原画：art/rebuild-05-bag.png 726×2167。表示窓：[{"range": [0, 1000], "gap": 540, "lines": [], "sound": "none", "description": "開いた南門に残る師匠とソ・リン。石段が霧へ続く"}, {"range": [1000, 2167], "gap": 720, "lines": [], "sound": "コツ、コツ", "description": "霧を抜け、左肩に袋を掛けたハンが石段を下りる"}]
 
-### コマ10
+効果音（発話と別）：コツ、コツ
 
-作画　Yun gently calls home with smartphone to right ear, LEFT hand over mouth emotional but relieved, same outfit. No new modern identity or haircut.
+発話：なし。
 
-ハン・ユン　母さん。今日は、声が聞きたくて。
+## 06 自分で歩く
 
-## 読書区間4 戻った日常を確かめる
+読者の理解／間：選んだ行動を静かな終わりにする
 
-間の役割　母への電話の後、部屋で休み、帰還の実感と次に会う意思を育てる
+描くもの／カメラ／立ち位置：Large borderless hero at FOOT of mountain steps, morning valley light, cream shoulder bag on left shoulder, same off-white charcoal/red robe. Looks forward calmly, still human uncertainty, no grin. Empty right palm open and relaxed at foreground, recalling feared two fingers without new magic. Mist edges to white. No home/portal/weapon.
 
-表示原画　art/04-pacing.png、範囲 [0, 2172]。
+伏せる情報／状態：導入の終わり。全体の帰還完結は約束しない。
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+作画形式：reveal。読む順は上から下、同段の小コマは右から左。
 
-### コマ11
+原画：art/rebuild-06-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 740}]
 
-作画　MODERN student room after his call: Yun still in ivory martial robe charcoal lapel and dark red sash, ONE sword SHEATHED at left hip. He puts smartphone face DOWN beside a closed textbook. Worn cloth tool bag on floor, no magical portal visible.
+効果音（発話と別）：none
 
-ハン・ユン　いつもの、部屋だ。
-
-### コマ12
-
-作画　Yun sits at desk, cradles ONE mug with both hands, looks at steam. Same robes and ponytail, subtle LEFT cheek bruise, calm eyes. No extra sword, no modern haircut.
-
-ハン・ユン　温かい。ちゃんと、分かる。
-
-### コマ13
-
-作画　Large quiet view of Yun asleep in desk chair as DAWN light fills his room. Same robe, sheathed sword safely beside chair, tool bag near feet. No dialogue, no text anywhere.
-
-描写　無言
-
-### コマ14
-
-作画　Morning: rested Yun places a small tea packet and bandages on a white cloth, preparing the SINGLE white bundle used in the next scene. ONE sword sheathed at left hip, no portal yet.
-
-ハン・ユン　今度は、会いに行こう。
-
-## 読書区間5 二つの暮らし
-
-間の役割　生きて帰る目的を果たし仲間へ自分で戻る
-
-表示原画　art/03.png、範囲 [796, 2172]。
-
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
-
-ナレーション　翌朝。休んでから、持っていくものを選んだ。
-今度は、助けを待つためではなく、会いに行く。
-
-### コマ15
-
-作画　Later Yun returns THROUGH cyan doorway to town forge, still clean same martial outfit, now carries ONE white cloth bundle of bandages and a small packet of tea. Smith at anvil and Hakujin by door warmly surprised.
-
-ソ・リン　おかえり。早かったね。
-
-### コマ16
-
-作画　Final large borderless close view Yun with teal eyes and small confident kind smile, two companions visible behind him at sunlit forge, sword sheathed, no throne no sinister pose.
-
-ハン・ユン　二周目は、俺が決める。
+発話：ハン・ユン「帰り道は俺が探す」／縦列 右→左：帰り道は/俺が探す／声：thought
