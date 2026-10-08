@@ -1,135 +1,104 @@
-# 天魔、二周目。 第8話 百人分の盾になれ
+# 天魔、二周目。 第8話 刃を抜かずに
 
-この話で得るものは統率者の護陣と町の生還。
+変化：審理へ向かう証人を襲撃から守り、相手と証拠を壊さない力の使い方を選ぶ。
 
-全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+開始：同日午後。広場へ戻る3人、束はハンが持つ。
 
-## 読書区間1 人形にしない
+終了：羅の圧力を止めた。護衛も生存、証拠は無事。門主が公開審理を開始する。
 
-間の役割　強い主人公が斬らない理由を示す
+## 01 証人の道
 
-表示原画　art/01.png、範囲 [0, 2172]。
+読者の理解／間：危険の位置と退避先を最初に置く
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Top WIDE daylight stone corridor toward public hall, hero center carrying cloth bundle, smith behind left, master ahead left by hall. Elder and TWO gray-robed guards block path at RIGHT. Safety is open hall left behind master. Bottom hero stops, sees guards look toward smith, not merely toward himself. Top view shows elder with round guard; moustached guard is outside top camera but appears behind So Rin in lower reaction. All three opposing people stay in this location.
 
-ナレーション　夜が明けても、命令は止まらない。
+伏せる情報／状態：最大3対3。百人戦にしない。
 
-### コマ1
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Possessed adult guards surge down town street with spears, black wrist bands and blank eyes. Yun steps BETWEEN them and civilians; sword sheathed. So Rin leads mother away left, Hakujin blocks side street with an empty palm.
+原画：art/rebuild-01-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 0}]
 
-ハン・ユン　斬るな。まだ、生きてる。
+効果音（発話と別）：none
 
-### コマ2
+発話：羅長老「その娘をこちらへ」／縦列 右→左：その娘を/こちらへ／声：normal
 
-作画　Yun gently catches spear SHAFT, bends it aside without harming carrier. Sees cracked black band on guard wrist, alarmed compassionate face.
+## 02 先に守る物
 
-ハン・ユン　白燼と、同じ印だ。
+読者の理解／間：武器を出す前の選択と避難をつなぐ
 
-### コマ3
+描くもの／カメラ／立ち位置：Top hero hands ONE closed evidence bundle to master at left. Middle hero gently motions smith behind master toward open hall. Bottom guard draws ONE ordinary SILVER sword from belt at right, second guard keeps empty hands and stands back. Master now holds only bundle.
 
-作画　So Rin holds door of stone warehouse open, beckoning townspeople inside; practical leadership, no hammer combat.
+伏せる情報／状態：束を主人公へ重複させない。
 
-ソ・リン　動ける人は、こっち！
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-### コマ4
+原画：art/rebuild-02-cheek.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 170}]
 
-作画　Hakujin uses a slate-blue cloak to catch falling lantern before it ignites market cloth, RIGHT wrist clean, focused.
+効果音（発話と別）：スラ
 
-白燼　一人も、置いていくな。
+発話：ハン・ユン「殿の中へ」／縦列 右→左：殿の中へ／声：normal
 
-## 読書区間2 守る場所を決める
+## 03 刃の来る方
 
-間の役割　退避を続けながら一人で防げない範囲を確かめ、仲間に頼る理由を作る
+読者の理解／間：迫る攻撃と守る位置を見せる
 
-表示原画　art/04-pacing-v2.png、範囲 [0, 2172]。
+描くもの／カメラ／立ち位置：ONE tall diagonal edged continuous ACTION view: top guard lunges RIGHT to LEFT with silver sword toward retreating smith; central hero bare hands enters BETWEEN weapon and smith; lower wide pale space with motion trailing, NO capture outcome. Hero has NO sword. Safe hall and master visible left edge, far smaller but clear.
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+伏せる情報／状態：捕まえた結果はまだ描かない。
 
-### コマ5
+作画形式：continuous。読む順は上から下、同段の小コマは右から左。
 
-作画　Town evacuation continues. Yun with sword SHEATHED looks between two streets where marked living soldiers approach. No protective dome yet. Civilians moving toward safe alley.
+原画：art/rebuild-03-one-bundle.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 260}]
 
-ハン・ユン　両方には、手が届かない。
+効果音（発話と別）：ヒュッ
 
-### コマ6
+発話：セイ・コウ「やめろ！」／縦列 右→左：やめろ！／声：shout
+ハン・ユン「下がって！」／縦列 右→左：下がって！／声：shout
 
-作画　So Rin signals civilians toward the forge's side alley, checks the last child is beside their parent. Practical, no victims newly invented.
+## 04 抜かない戦い
 
-ソ・リン　出口は、工房の裏！
+読者の理解／間：持ち物を壊さず力で守る快感を作る
 
-### コマ7
+描くもの／カメラ／立ち位置：Three tightly spaced unequal actual diagonal action panels. TOP hero RIGHT palm redirects flat side of guard silver blade away from smith. MIDDLE left hand catches guard wrist, not sword edge. BOTTOM hero eases guard down to sit against stone post, weapon lowered onto floor intact, guard conscious. Second guard stays back palms visible. No killing, no sword snapping, no magic explosion.
 
-作画　Hakujin with CLEAN right wrist stands at a side junction, OPEN palms stopping people from running into danger, not attacking marked soldiers. Yun sees him.
+伏せる情報／状態：第2話の失敗を同じ巨大掌打へ戻さない。
 
-白燼　こっちは、俺が見る。
+作画形式：action。読む順は上から下、同段の小コマは右から左。
 
-### コマ8
+原画：art/rebuild-04-clean.png 887×1774。表示窓：[{"range": [0, 1774], "gap": 890}]
 
-作画　Close Yun opens his tense empty hands, takes a breath and looks toward approaching allies off-frame. His one sword remains SHEATHED, no hologram or shield yet.
+効果音（発話と別）：トン
 
-ハン・ユン　一人で、抱えなくていい。
+発話：ハン・ユン「剣を離して」／縦列 右→左：剣を/離して／声：normal
 
-## 読書区間3 百人の力
+## 05 守ったあと
 
-間の役割　第5話の称号を救助へ回収する
+読者の理解／間：守った証人の無事を確かめる
 
-表示原画　art/02.png、範囲 [0, 2172]。
+描くもの／カメラ／立ち位置：Use ONLY TOP face/hands reaction from this original. So Rin safely inside hall exhales and checks her empty hands. The unused lower evidence-unwrapping shot is OMITTED: evidence bundle remains CLOSED with master until public hearing in episode9.
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+伏せる情報／状態：証拠は次の公開審理まで包んだまま。一つの束を増やさない。
 
-### コマ9
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Yun recalls bronze disk at sash and crowd from arena, checks tiny CYAN hologram reading exactly: 百人の統率者 / 護陣　使用可能. Sword now drawn RIGHT hand pointing down, left palm open.
+原画：art/rebuild-05-clean.png 1024×1536。表示窓：[{"range": [0, 717], "gap": 400, "lines": [0], "sound": "none", "description": "殿に退避したソ・リンが、空の手を見て息を吐く"}]
 
-システム　百人の統率者 / 護陣　使用可能
+効果音（発話と別）：none
 
-### コマ10
+発話：ソ・リン「……無事」／縦列 右→左：……/無事／声：soft
 
-作画　Former spear champion from episode 5 approaches along with adult contest losers, weapons lowered, eager determined. Yun amazed; none kneel.
+## 06 人の前へ
 
-槍の王　今度は、俺たちも使え。
+読者の理解／間：戦闘を審理の開始につなぐ
 
-### コマ11
+描くもの／カメラ／立ち位置：Top master in hall entrance raises open hand to elder, calm authoritative. Bottom WIDE gathering of ordinary disciples seated facing evidence table, hero and smith approach together, elder held back by master's glance only. No kneeling army.
 
-作画　Yun touches sword TIP gently to ground, huge cyan protective arcs rise UP over town, connected to open hands of allies, one sword only, no blasts hitting bodies.
+伏せる情報／状態：解決は次の審理。
 
-ハン・ユン　力を貸して。守るために。
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-### コマ12
+原画：art/rebuild-06-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 250}]
 
-作画　Large borderless view of protective dome over market. BLACK wrist seals on guards dissolve into dust while shields catch falling debris. Town intact; civilians inside visibly safe. No mass bodies or death.
+効果音（発話と別）：none
 
-ハン・ユン　百人分の、盾になれ。
-
-## 読書区間4 救ったあとの手
-
-間の役割　生還への反応を先に置いてから門へ進む
-
-表示原画　art/03.png、範囲 [0, 2161]。
-
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
-
-### コマ13
-
-作画　Released guard blinks, drops spear safely to ground, sits with knees trembling, mother reaches to help him. Yun kneels checking breathing.
-
-ハン・ユン　痛むところ、ある？
-
-### コマ14
-
-作画　Close Yun hands shake a little after rescue, smith offers warm cup, white-haired ally relaxed. Dawn edge no new enemies.
-
-ソ・リン　助けたんだよ。ちゃんと。
-
-### コマ15
-
-作画　Yun breathes and holds cup both hands, small genuine smile of relief. Sword sheathed at left hip.
-
-ハン・ユン　……よかった。
-
-### コマ16
-
-作画　Bronze gate disk in Yun's LEFT palm glows CYAN toward distant mountain path. Small translucent hologram exactly: 帰還門　起動. He looks toward mountains, hopeful.
-
-システム　帰還門　起動
+発話：セイ・コウ「ここで皆に聞く」／縦列 右→左：ここで/皆に聞く／声：formal

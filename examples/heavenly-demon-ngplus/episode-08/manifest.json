@@ -1,51 +1,115 @@
 {
   "title": "天魔、二周目。",
   "chapter": 8,
-  "subtitle": "百人分の盾になれ",
+  "subtitle": "刃を抜かずに",
+  "revision": "full-rebuild-2026-10-07",
   "artwork": [
     {
-      "file": "art/01.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "7e0986ee383602e792f6857e0599f8a21a558f88b106cc1043468a3a51520692"
+      "id": "01",
+      "file": "art/rebuild-01-clean.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "3b695626c5f48134312c708654e7502b0db78be898c6b7b2df3415ca718301ed"
     },
     {
-      "file": "art/04-pacing-v2.png",
+      "id": "02",
+      "file": "art/rebuild-02-cheek.png",
       "width": 724,
       "height": 2172,
-      "sha256": "c9a64afce437bed053f4b1171b8f0fb5ac09a9a211a5f5a2e12ae5bdb82c6a78"
+      "sha256": "de19a21c0b5c6543f5bd9cc6af3043be9ce672e8c2c31b163b11a4c5599c2373"
     },
     {
-      "file": "art/02.png",
+      "id": "03",
+      "file": "art/rebuild-03-one-bundle.png",
       "width": 724,
       "height": 2172,
-      "sha256": "8b8be5796b76b84bd087373bbba4a2a3ea940f7cdb911614f68987f38f5dc5ab"
+      "sha256": "4eaec0a8f0f0f7e527f1732b412d6a8f73cb1485f05ac7d1d646771d176bf3b1"
     },
     {
-      "file": "art/03.png",
-      "width": 728,
-      "height": 2161,
-      "sha256": "3a7719f9edccdade36869dbfd83344a43e426c8034873c39bcf5322dacfc8491"
+      "id": "04",
+      "file": "art/rebuild-04-clean.png",
+      "width": 887,
+      "height": 1774,
+      "sha256": "3196a77afbd09935ba75b7623e62954a4df136a72e6e7671f3a5ecf8268beefa"
+    },
+    {
+      "id": "05",
+      "file": "art/rebuild-05-clean.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "eec20d978b1d72b696825b54df99945aad946191e8a652d4ba7e4a71f66a131e"
+    },
+    {
+      "id": "06",
+      "file": "art/rebuild-06-clean.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "7954b5c371e9a6445af2b9ddc9331fc8099b9853c1788167ba5a5fb54d2b3b7f"
     }
   ],
-  "generatedOriginals": 4,
-  "vignettes": 16,
-  "lettering": "vertical Japanese dialogue in image originals",
-  "readingTimeMeasured": false,
-  "protectedReveal": null,
   "readingOrder": [
     {
-      "scene": 1
+      "id": "beat-01-1",
+      "asset": "01",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 0,
+      "purpose": "危険の位置と退避先を最初に置く"
     },
     {
-      "scene": 4
+      "id": "beat-02-1",
+      "asset": "02",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 170,
+      "purpose": "武器を出す前の選択と避難をつなぐ"
     },
     {
-      "scene": 2
+      "id": "beat-03-1",
+      "asset": "03",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 260,
+      "purpose": "迫る攻撃と守る位置を見せる"
     },
     {
-      "scene": 3
+      "id": "beat-04-1",
+      "asset": "04",
+      "range": [
+        0,
+        1774
+      ],
+      "gap390": 890,
+      "purpose": "持ち物を壊さず力で守る快感を作る"
+    },
+    {
+      "id": "beat-05-1",
+      "asset": "05",
+      "range": [
+        0,
+        717
+      ],
+      "gap390": 400,
+      "purpose": "守った証人の無事を確かめる"
+    },
+    {
+      "id": "beat-06-1",
+      "asset": "06",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 250,
+      "purpose": "戦闘を審理の開始につなぐ"
     }
   ],
-  "revision": "pacing-expansion-2026-10-06"
+  "lettering": "integrated vertical Japanese in immutable image originals",
+  "startState": "同日午後。広場へ戻る3人、束はハンが持つ。",
+  "endState": "羅の圧力を止めた。護衛も生存、証拠は無事。門主が公開審理を開始する。"
 }
