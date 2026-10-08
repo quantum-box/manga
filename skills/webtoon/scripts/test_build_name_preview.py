@@ -189,6 +189,92 @@ class BuildNamePreviewTests(unittest.TestCase):
             MODULE.build_preview(self.manifest, image_link, force=True)
         self.assertEqual(original, (self.root / "rough" / "first.png").read_bytes())
 
+    def test_contiguous_composition_uses_absolute_members_and_maximum_bottom(self):
+        data = self.base_manifest([
+            {"type": "panel", "id": "scene", "image": "rough/first.png", "alt": "場面",
+             "widthPercent": 60, "align": "left", "composition": "split", "offsetY": 120},
+            {"type": "voice", "id": "reply", "text": "? !", "height": 180,
+             "widthPercent": 40, "composition": "split", "offsetX": 60, "offsetY": 400,
+             "x": 50, "y": 50},
+            {"type": "sound", "id": "clink", "text": "カチ", "height": 40,
+             "widthPercent": 40, "composition": "split", "offsetX": 60, "offsetY": 300,
+             "x": 50, "y": 50},
+        ])
+        self.write_manifest(data)
+        MODULE.build_preview(self.manifest, self.output)
+        document = self.output.read_text(encoding="utf-8")
+
+        self.assertEqual(document.count('class="composition"'), 1)
+        self.assertIn('data-composition="split"', document)
+        self.assertIn("--composition-height:148.717949cqw", document)
+        self.assertEqual(document.count('class="panel align-left composition-member"'), 1)
+        self.assertEqual(document.count('class="text-beat voice composition-member"'), 1)
+        self.assertEqual(document.count('class="text-beat sound composition-member"'), 1)
+        self.assertLess(document.index('data-beat-id="scene"'), document.index('data-beat-id="reply"'))
+        self.assertLess(document.index('data-beat-id="reply"'), document.index('data-beat-id="clink"'))
+        self.assertIn("left:60%;top:102.564103cqw", document)
+        self.assertIn('class="panel align-left composition-member"', document)
+        self.assertIn("font-size: clamp(19px, 5.4cqw, 22px)", document)
+        self.assertIn("background: #fff", document)
+
+    def test_rejects_unsafe_composition_placements(self):
+        (self.root / "rough" / "unknown.png").write_bytes(b"not an image")
+        cases = [
+            (lambda d: d["beats"][0].update(composition="split", widthPercent=60,
+                                               offsetX=50),
+             "offsetX plus widthPercent"),
+            (lambda d: d["beats"][0].update(composition="split", offsetY=5001),
+             "manifest.beats[0].offsetY"),
+            (lambda d: d["beats"][0].update(composition="split", frame="thick"),
+             "manifest.beats[0].frame"),
+            (lambda d: d["beats"][0].update(composition="split", image="rough/unknown.png"),
+             "imageSize: is required when panel participates in a composition"),
+        ]
+        for mutate, expected in cases:
+            with self.subTest(expected=expected):
+                data = self.base_manifest()
+                mutate(data)
+                self.write_manifest(data)
+                with self.assertRaises(MODULE.PreviewError) as error:
+                    MODULE.build_preview(self.manifest, self.output)
+                self.assertIn(expected, str(error.exception))
+
+    def test_rejects_pause_row_conflicts_and_reappearing_composition_groups(self):
+        cases = [
+            (
+                self.base_manifest([
+                    {"type": "panel", "id": "row", "row": "r", "composition": "split",
+                     "image": "rough/first.png", "alt": "同じ段", "widthPercent": 50},
+                ]),
+                "cannot be combined with row",
+            ),
+            (
+                self.base_manifest([
+                    {"type": "pause", "id": "gap", "height": 80, "purpose": "間",
+                     "composition": "split"},
+                ]),
+                "pause cannot have composition",
+            ),
+            (
+                self.base_manifest([
+                    {"type": "panel", "id": "first", "composition": "split",
+                     "image": "rough/first.png", "alt": "最初", "widthPercent": 50},
+                    {"type": "voice", "id": "middle", "composition": "split", "text": "返事",
+                     "height": 80},
+                    {"type": "pause", "id": "break", "height": 50, "purpose": "切替"},
+                    {"type": "sound", "id": "again", "composition": "split", "text": "カチ",
+                     "height": 40},
+                ]),
+                "composition groups must not reappear",
+            ),
+        ]
+        for data, expected in cases:
+            with self.subTest(expected=expected):
+                self.write_manifest(data)
+                with self.assertRaises(MODULE.PreviewError) as error:
+                    MODULE.build_preview(self.manifest, self.output)
+                self.assertIn(expected, str(error.exception))
+
 
 if __name__ == "__main__":
     unittest.main()

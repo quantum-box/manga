@@ -418,7 +418,19 @@
         "gapAfterCssPx": 170,
         "gapReason": "雨の予告を読者が受け取るための入口の間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c01",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p02",
@@ -441,7 +453,7 @@
       "emotionIntention": "心配を天候の確認へ置き換え、声を冷静な報告にする。",
       "reaction": "自分の声が思ったより硬いことをミナ自身が感じる。",
       "nextConnection": "天幕の外をもう一度見る動作が、帰路の不在を強調する。",
-      "widthPercent": 88,
+      "widthPercent": 40,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -451,7 +463,19 @@
         "gapAfterCssPx": 84,
         "gapReason": "天候の情報を置いた後に人物の心へ移る間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c01",
+        "offsetX": 60,
+        "offsetY": 560,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p03",
@@ -474,7 +498,7 @@
       "emotionIntention": "遅れへの不安を責める形に変えて隠す。",
       "reaction": "自分で発した冷たい言い方に、ミナの視線が一瞬だけ下がる。",
       "nextConnection": "左奥からの足音が、待ち時間を現実の到着へ切り替える。",
-      "widthPercent": 82,
+      "widthPercent": 48,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -484,7 +508,19 @@
         "gapAfterCssPx": 110,
         "gapReason": "冷たい台詞の後に到着音を受けるための呼吸"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c02",
+        "offsetX": 52,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p04",
@@ -501,7 +537,7 @@
       "emotionIntention": "レンは帰ってきた姿を見せればミナを安心させられると思い、痛みを隠す。",
       "reaction": "ミナの体が足音へ向くが、すぐに仕事の姿勢へ戻る。",
       "nextConnection": "到着を受けたミナの正式な挨拶へつなぐ。",
-      "widthPercent": 100,
+      "widthPercent": 85,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -511,7 +547,19 @@
         "gapAfterCssPx": 58,
         "gapReason": "足音が止まり人物を見つけるための短い間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c02",
+        "offsetX": 0,
+        "offsetY": 390,
+        "frame": "thin",
+        "crop": [
+          0.003,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p05",
@@ -534,7 +582,7 @@
       "emotionIntention": "ミナは喜びを丁寧語に押し込め、レンはその硬さを心配の裏返しとまだ読まない。",
       "reaction": "レンの目がミナを見てから、右腕へ逃げる。",
       "nextConnection": "レンの帰還の返事と、濡れた腕の発見へ進む。",
-      "widthPercent": 100,
+      "widthPercent": 48,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -544,7 +592,19 @@
         "gapAfterCssPx": 60,
         "gapReason": "挨拶を一度受け止めて返事を待つ間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c03",
+        "offsetX": 52,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.753,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p06",
@@ -567,7 +627,7 @@
       "emotionIntention": "帰還の報告を済ませ、すぐ腕を隠して話を終わらせたい。",
       "reaction": "ミナは返事を聞いても姿勢を解かず、腕の位置を見続ける。",
       "nextConnection": "一滴の血が床へ落ち、言葉の平気さを崩す。",
-      "widthPercent": 92,
+      "widthPercent": 48,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -577,7 +637,19 @@
         "gapAfterCssPx": 68,
         "gapReason": "形式の返事と次の物理的証拠を分ける間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c03",
+        "offsetX": 0,
+        "offsetY": 28,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p07",
@@ -594,7 +666,7 @@
       "emotionIntention": "レンは音に気づき、隠す努力が破れたことを悟る。",
       "reaction": "ミナの白い袖が一歩だけ前へ出る。",
       "nextConnection": "ミナが腕を見せるよう正式に求める。",
-      "widthPercent": 72,
+      "widthPercent": 35,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -604,7 +676,19 @@
         "gapAfterCssPx": 92,
         "gapReason": "血の一滴を読者が確認するための無音に近い間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c03",
+        "offsetX": 35,
+        "offsetY": 350,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.61,
+          0.224,
+          0.28
+        ]
+      }
     },
     {
       "id": "p08",
@@ -632,7 +716,7 @@
       "emotionIntention": "ミナは選択肢を渡すように言いながら、実際には手当てを始めたい。レンは心配を増やさないため拒む。",
       "reaction": "ミナの手が引かず、レンの肩だけが固くなる。",
       "nextConnection": "拒否の理由をほどくため、ミナが器具を整える。",
-      "widthPercent": 100,
+      "widthPercent": 82,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -642,7 +726,19 @@
         "gapAfterCssPx": 120,
         "gapReason": "食い違う台詞を次の動作へ渡す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c04",
+        "offsetX": 18,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p09",
@@ -659,7 +755,7 @@
       "emotionIntention": "ミナは心配を作業手順へ変える。レンは座れば怪我が明らかになると思う。",
       "reaction": "レンの足が椅子へ向きかけて止まる。",
       "nextConnection": "止まった足に対して、レンが傷を軽く見せようとする。",
-      "widthPercent": 94,
+      "widthPercent": 70,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -669,7 +765,19 @@
         "gapAfterCssPx": 72,
         "gapReason": "場所が同じ天幕内だと読める短い動作の間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c04",
+        "offsetX": 30,
+        "offsetY": 470,
+        "frame": "thin",
+        "crop": [
+          0.753,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p10",
@@ -692,7 +800,7 @@
       "emotionIntention": "大事にしたくないという意図で説明を短く切る。",
       "reaction": "ミナは顔ではなく包帯の端を見て、説明を信用しない。",
       "nextConnection": "包帯に残った泥と濡れた繊維が、川の事情を示す。",
-      "widthPercent": 86,
+      "widthPercent": 50,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -702,7 +810,19 @@
         "gapAfterCssPx": 80,
         "gapReason": "台詞の後に視線が移る小さな間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c05",
+        "offsetX": 50,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p11",
@@ -725,7 +845,7 @@
       "emotionIntention": "責めたい気持ちを冷たい敬語の観察へ変える。",
       "reaction": "レンの指が包帯の端を押さえ、見抜かれたと知る。",
       "nextConnection": "その指の震えが、傷の原因を過去へ開く。",
-      "widthPercent": 82,
+      "widthPercent": 50,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -735,7 +855,19 @@
         "gapAfterCssPx": 90,
         "gapReason": "観察の言葉を受けて身体反応へ移る間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c05",
+        "offsetX": 0,
+        "offsetY": 28,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p12",
@@ -752,7 +884,7 @@
       "emotionIntention": "レンは川での出来事を思い出し、ミナへ説明すべきだと迷う。",
       "reaction": "ミナの手が洗浄布を取る前に止まり、答えを待つ。",
       "nextConnection": "現在の視線を短い過去カットへ切り替える。",
-      "widthPercent": 68,
+      "widthPercent": 55,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -762,7 +894,19 @@
         "gapAfterCssPx": 190,
         "gapReason": "回想へ入るため、現在の手を固定する間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c05",
+        "offsetX": 45,
+        "offsetY": 390,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p13",
@@ -779,7 +923,7 @@
       "emotionIntention": "レンは自分が濡れることより、目の前の小さな手を取ることを優先した。",
       "reaction": "レンの手が小さな袖へ届き、川の流れから岸へ向きを変える。",
       "nextConnection": "レンの救助動作を一つの決断として見せる。",
-      "widthPercent": 100,
+      "widthPercent": 86,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -789,7 +933,19 @@
         "gapAfterCssPx": 120,
         "gapReason": "回想の入口を現実から切り離すための深い間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c06",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p14",
@@ -801,7 +957,7 @@
         {
           "key": "p14-d01",
           "speaker": "レン",
-          "text": "手を\n離すな"
+          "text": "手を\n離すな！"
         }
       ],
       "sound": {
@@ -812,7 +968,7 @@
       "emotionIntention": "恐怖を見せる暇なく、相手に生きる動作を命じる。",
       "reaction": "少年の手が袖を強く握り返す。",
       "nextConnection": "岸の匿名村人へ少年を渡し、安全を確かめる動作へ進む。",
-      "widthPercent": 92,
+      "widthPercent": 44,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -822,7 +978,19 @@
         "gapAfterCssPx": 68,
         "gapReason": "危険の原因とレンの選択を一続きで読ませる間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c06",
+        "offsetX": 56,
+        "offsetY": 250,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p15",
@@ -839,7 +1007,7 @@
       "emotionIntention": "レンは自分が戻ることより先に、少年が安全な手へ渡るまでをやり切る。",
       "reaction": "暗い袖の匿名村人の手が少年を受け取り、レンは空いた手と岸の安全を確認する。",
       "nextConnection": "救助の結果を短い台詞で現在へ持ち帰る。",
-      "widthPercent": 100,
+      "widthPercent": 88,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -849,7 +1017,19 @@
         "gapAfterCssPx": 92,
         "gapReason": "救助の完了を見届けて現在へ戻す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c06",
+        "offsetX": 0,
+        "offsetY": 560,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p16",
@@ -877,7 +1057,7 @@
       "emotionIntention": "レンは言い訳ではなく事実だけを返し、ミナは責める言葉を選ばない。",
       "reaction": "ミナの布がレンの腕の下へ入り、手当てを始める。",
       "nextConnection": "治療の物理的な接触へ接続する。",
-      "widthPercent": 100,
+      "widthPercent": 82,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -887,7 +1067,19 @@
         "gapAfterCssPx": 140,
         "gapReason": "回想の意味を現在の二人が受け取る間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c07",
+        "offsetX": 0,
+        "offsetY": 210,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p17",
@@ -910,7 +1102,7 @@
       "emotionIntention": "ミナは感謝や心配を言わず役割を引き受ける。",
       "reaction": "レンは一拍置いて椅子へ腰を下ろす。",
       "nextConnection": "座ったことで、レンが腕を差し出す準備へ進む。",
-      "widthPercent": 92,
+      "widthPercent": 82,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -920,7 +1112,19 @@
         "gapAfterCssPx": 86,
         "gapReason": "立つ側が座る決断を読ませる間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c08",
+        "offsetX": 0,
+        "offsetY": 190,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p18",
@@ -932,7 +1136,7 @@
         {
           "key": "p18-d01",
           "speaker": "レン",
-          "text": "君は\n怒っているか"
+          "text": "君は\n怒っているか？"
         }
       ],
       "sound": {
@@ -953,7 +1157,19 @@
         "gapAfterCssPx": 90,
         "gapReason": "質問を受け止めてすぐ答えない間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c09",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p19",
@@ -970,8 +1186,8 @@
       "emotionIntention": "返答を急がず、正確な作業に心を逃がす。",
       "reaction": "レンは彼女が治療を止めないことを確認し、腕を引かない。",
       "nextConnection": "布が傷へ触れる瞬間に痛みが現れる。",
-      "widthPercent": 96,
-      "align": "right",
+      "widthPercent": 45,
+      "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
         "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
@@ -980,7 +1196,19 @@
         "gapAfterCssPx": 56,
         "gapReason": "水音から接触へ連続する短い間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c09",
+        "offsetX": 55,
+        "offsetY": 330,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.295,
+          0.224,
+          0.187
+        ]
+      }
     },
     {
       "id": "p20",
@@ -997,7 +1225,7 @@
       "emotionIntention": "レンは平気を言う前に反射的に痛がる。ミナは責めずに観察する。",
       "reaction": "ミナの指が一度浮き、レンの顔を確認する。",
       "nextConnection": "痛みを問う冷たい敬語へつなぐ。",
-      "widthPercent": 78,
+      "widthPercent": 90,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1007,7 +1235,19 @@
         "gapAfterCssPx": 74,
         "gapReason": "反射反応を読者が見分ける間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c09",
+        "offsetX": 0,
+        "offsetY": 530,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p21",
@@ -1019,7 +1259,7 @@
         {
           "key": "p21-d01",
           "speaker": "ミナ",
-          "text": "痛みは\nありますか"
+          "text": "痛みは\nありますか？"
         }
       ],
       "sound": {
@@ -1030,7 +1270,7 @@
       "emotionIntention": "ミナは正直な反応を引き出したい。レンは答えを小さくすれば治療を続けられると思う。",
       "reaction": "レンの目が傷へ落ち、答えを選ぶ。",
       "nextConnection": "平気という返答と指の力を同じカットに置く。",
-      "widthPercent": 94,
+      "widthPercent": 52,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1040,7 +1280,19 @@
         "gapAfterCssPx": 66,
         "gapReason": "問いから返事までを短く保つ間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c10",
+        "offsetX": 48,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.753,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p22",
@@ -1063,7 +1315,7 @@
       "emotionIntention": "レンはミナを安心させたいが、痛みを無かったことにもしたい。",
       "reaction": "ミナは返事を否定せず、握り込んだ手へ視線を落とす。",
       "nextConnection": "ミナが身体の矛盾を言葉にして返す。",
-      "widthPercent": 82,
+      "widthPercent": 48,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1073,7 +1325,19 @@
         "gapAfterCssPx": 98,
         "gapReason": "強がりの後に視線を移すための間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c10",
+        "offsetX": 0,
+        "offsetY": 34,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p23",
@@ -1096,7 +1360,7 @@
       "emotionIntention": "冷たい言葉で、正直になっても見捨てないと伝える。",
       "reaction": "レンの指が少し開くが、上を見られない。",
       "nextConnection": "その沈黙に雨漏りの滴が割り込む。",
-      "widthPercent": 92,
+      "widthPercent": 90,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1106,7 +1370,19 @@
         "gapAfterCssPx": 128,
         "gapReason": "本音の入口を雨の異変へ渡す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c10",
+        "offsetX": 0,
+        "offsetY": 400,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p24",
@@ -1133,7 +1409,19 @@
         "gapAfterCssPx": 150,
         "gapReason": "異変を二人が同時に理解する間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c11",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p25",
@@ -1150,7 +1438,7 @@
       "emotionIntention": "ミナは治療を止めたくないので、まず清潔な物を守る。",
       "reaction": "レンの視線が屋根の継ぎ目へ上がる。",
       "nextConnection": "次の滴が包帯へ落ち、危険を拡大する。",
-      "widthPercent": 90,
+      "widthPercent": 78,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1160,7 +1448,19 @@
         "gapAfterCssPx": 64,
         "gapReason": "小さな異変から大きな不調へ進む間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c12",
+        "offsetX": 22,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.753,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p26",
@@ -1183,7 +1483,7 @@
       "emotionIntention": "ミナはレンを待たせるのではなく、治療を守るため短く指示する。",
       "reaction": "レンは待つより支柱を直す方が早いと判断する。",
       "nextConnection": "レンが無理に立つ動きを見せる。",
-      "widthPercent": 94,
+      "widthPercent": 78,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1193,7 +1493,19 @@
         "gapAfterCssPx": 80,
         "gapReason": "短い指示が届く前にレンが動き出す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c12",
+        "offsetX": 0,
+        "offsetY": 500,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p27",
@@ -1210,7 +1522,7 @@
       "emotionIntention": "ミナは一人で直す計算を始める。",
       "reaction": "レンの左手がポールへ伸び、ミナの手と進路が重なる。",
       "nextConnection": "レンが負傷を押して作業へ入ろうとする。",
-      "widthPercent": 86,
+      "widthPercent": 65,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1220,7 +1532,19 @@
         "gapAfterCssPx": 78,
         "gapReason": "原因の発見を二人の動作へつなぐ間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c13",
+        "offsetX": 35,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.27,
+          0.015,
+          0.18,
+          0.18
+        ]
+      }
     },
     {
       "id": "p28",
@@ -1237,7 +1561,7 @@
       "emotionIntention": "レンは治療を受ける側に留まるより、役に立つ側へ戻ろうとする。",
       "reaction": "ミナが肩へ手を伸ばし、立ち上がりを止める。",
       "nextConnection": "ミナが冷たい命令で無理を止める。",
-      "widthPercent": 96,
+      "widthPercent": 55,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1247,7 +1571,19 @@
         "gapAfterCssPx": 62,
         "gapReason": "ポールの危険をすぐ止める緊張の間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c13",
+        "offsetX": 0,
+        "offsetY": 250,
+        "frame": "thin",
+        "crop": [
+          0.003,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p29",
@@ -1259,7 +1595,7 @@
         {
           "key": "p29-d01",
           "speaker": "ミナ",
-          "text": "立たないで\nください"
+          "text": "立たないで\nください！"
         }
       ],
       "sound": {
@@ -1280,7 +1616,19 @@
         "gapAfterCssPx": 82,
         "gapReason": "命令を受けた反発を一拍置く間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c13",
+        "offsetX": 0,
+        "offsetY": 550,
+        "frame": "thin",
+        "crop": [
+          0.753,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p30",
@@ -1303,7 +1651,7 @@
       "emotionIntention": "レンは自分の痛みを問題にせず、目の前の壊れそうな場所を優先する。",
       "reaction": "ミナは言い返さず、支柱と傷を交互に見る。",
       "nextConnection": "ミナが役割を分ければ二人で対処できると決める。",
-      "widthPercent": 94,
+      "widthPercent": 90,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1313,7 +1661,19 @@
         "gapAfterCssPx": 74,
         "gapReason": "責任の主張から役割分担へ切り替える間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c14",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p31",
@@ -1325,7 +1685,7 @@
         {
           "key": "p31-d01",
           "speaker": "ミナ",
-          "text": "右腕は使わず\n左で支えて"
+          "text": "右腕は使わず\n左で支えて！"
         }
       ],
       "sound": {
@@ -1336,7 +1696,7 @@
       "emotionIntention": "助けられるだけでなく、できる範囲で一緒にいることを要求する。",
       "reaction": "レンの姿勢から無理な反発が抜け、左手の位置を調整する。",
       "nextConnection": "二人が同じロープを扱う動作へつなぐ。",
-      "widthPercent": 88,
+      "widthPercent": 80,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1346,7 +1706,19 @@
         "gapAfterCssPx": 96,
         "gapReason": "指示を理解して実行へ入る間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c14",
+        "offsetX": 20,
+        "offsetY": 430,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p32",
@@ -1369,7 +1741,7 @@
       "emotionIntention": "レンは屈辱ではなく、ミナの指示なら受け入れられると決める。",
       "reaction": "ミナの肩がわずかに下がり、二人の作業が同期する。",
       "nextConnection": "作業中の接触と、待たせたくなかったという本音へ進む。",
-      "widthPercent": 100,
+      "widthPercent": 80,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1379,7 +1751,19 @@
         "gapAfterCssPx": 116,
         "gapReason": "役割成立後に次の感情を待つ間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c14",
+        "offsetX": 0,
+        "offsetY": 880,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p33",
@@ -1396,7 +1780,7 @@
       "emotionIntention": "ミナは正確さで不安を抑え、レンは痛みを隠さず負荷だけを管理する。",
       "reaction": "レンが短く息を吐き、ミナがその呼吸を聞く。",
       "nextConnection": "濡れた足場でミナの体勢が崩れ、レンが反応する。",
-      "widthPercent": 100,
+      "widthPercent": 50,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1406,7 +1790,19 @@
         "gapAfterCssPx": 58,
         "gapReason": "連続作業を次の反応へ短く渡す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c15",
+        "offsetX": 50,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p34",
@@ -1423,8 +1819,8 @@
       "emotionIntention": "レンは自分が助けられるだけの人間ではないと示したい。ミナは触れられた驚きを隠す。",
       "reaction": "ミナが足を戻し、レンの手を見てから姿勢を立て直す。",
       "nextConnection": "ミナが距離を戻し、作業を続ける冷たい言葉へつなぐ。",
-      "widthPercent": 86,
-      "align": "right",
+      "widthPercent": 50,
+      "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
         "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
@@ -1433,7 +1829,19 @@
         "gapAfterCssPx": 78,
         "gapReason": "転倒を解決して会話へ戻る間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c15",
+        "offsetX": 0,
+        "offsetY": 350,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p35",
@@ -1445,7 +1853,7 @@
         {
           "key": "p35-d01",
           "speaker": "ミナ",
-          "text": "離してください\n作業を続けます"
+          "text": "離してください！\n作業を続けます"
         }
       ],
       "sound": {
@@ -1456,7 +1864,7 @@
       "emotionIntention": "照れと心配を冷たい手順へ押し戻す。",
       "reaction": "レンは手を離すが、ミナが濡れたままなのを気にする。",
       "nextConnection": "レンがミナの濡れた服に言及する。",
-      "widthPercent": 90,
+      "widthPercent": 58,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1466,7 +1874,19 @@
         "gapAfterCssPx": 84,
         "gapReason": "触れた後に関係の距離を調整する間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c16",
+        "offsetX": 42,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p36",
@@ -1489,7 +1909,7 @@
       "emotionIntention": "自分の傷から話題を逸らし、ミナの危険を止めたい。",
       "reaction": "ミナの指が一瞬止まり、袖から水が落ちる。",
       "nextConnection": "ミナが待つ側の時間をうっかり口にする。",
-      "widthPercent": 82,
+      "widthPercent": 42,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1499,7 +1919,19 @@
         "gapAfterCssPx": 88,
         "gapReason": "言われた心配を受けたあと返す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c16",
+        "offsetX": 0,
+        "offsetY": 42,
+        "frame": "thin",
+        "crop": [
+          0.003,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p37",
@@ -1522,7 +1954,7 @@
       "emotionIntention": "心配を隠す冷たい言い方が崩れ、待っていた事実が漏れる。",
       "reaction": "レンの視線がミナの顔へ戻り、支柱を持つ手が強くなる。",
       "nextConnection": "レンが待っていたのかと確かめる。",
-      "widthPercent": 100,
+      "widthPercent": 90,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1532,7 +1964,19 @@
         "gapAfterCssPx": 130,
         "gapReason": "核心の言葉を雨音の後で受け止める間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c16",
+        "offsetX": 0,
+        "offsetY": 400,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p38",
@@ -1544,7 +1988,7 @@
         {
           "key": "p38-d01",
           "speaker": "レン",
-          "text": "待っていたのか"
+          "text": "待っていたのか？"
         }
       ],
       "sound": {
@@ -1555,7 +1999,7 @@
       "emotionIntention": "責められるより、待たせた事実を聞きたい。",
       "reaction": "ミナはすぐ答えず、結び目を必要以上に整える。",
       "nextConnection": "ミナが記録や規則の言葉へ逃げる。",
-      "widthPercent": 78,
+      "widthPercent": 44,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1565,7 +2009,19 @@
         "gapAfterCssPx": 110,
         "gapReason": "質問を回避するための短い空白"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c17",
+        "offsetX": 56,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p39",
@@ -1588,7 +2044,7 @@
       "emotionIntention": "本当は帰還を待っていたが、心配したとは言えない。",
       "reaction": "レンは言葉より、震えを抑えた指を見ている。",
       "nextConnection": "レンが待たせたくなかったという本音を返す。",
-      "widthPercent": 84,
+      "widthPercent": 52,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1598,7 +2054,19 @@
         "gapAfterCssPx": 105,
         "gapReason": "隠した台詞と見える手を並べる間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c17",
+        "offsetX": 0,
+        "offsetY": 34,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p40",
@@ -1621,7 +2089,7 @@
       "emotionIntention": "平気のふりの理由を、任務ではなくミナへの配慮として返す。",
       "reaction": "ミナの結び目を押さえる指が止まり、顔だけがレンへ向く。",
       "nextConnection": "沈黙を置いて、ミナが言葉を受け取った反応を見せる。",
-      "widthPercent": 100,
+      "widthPercent": 90,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1631,7 +2099,19 @@
         "gapAfterCssPx": 220,
         "gapReason": "初めて本音が往復した後の深い間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c17",
+        "offsetX": 0,
+        "offsetY": 400,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p41",
@@ -1648,7 +2128,7 @@
       "emotionIntention": "ミナは心配を見抜かれた気恥ずかしさと、理解された安堵を抱える。",
       "reaction": "レンの肩が少し下がり、ミナが次の手順を選べる状態になる。",
       "nextConnection": "レンが次に何をすればよいか尋ね、助けを受ける準備へ進む。",
-      "widthPercent": 86,
+      "widthPercent": 82,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1658,7 +2138,19 @@
         "gapAfterCssPx": 142,
         "gapReason": "告白の受け止めと次の行動を分ける間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c18",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p42",
@@ -1670,7 +2162,7 @@
         {
           "key": "p42-d01",
           "speaker": "レン",
-          "text": "次はどうする"
+          "text": "次はどうする？"
         }
       ],
       "sound": {
@@ -1691,7 +2183,19 @@
         "gapAfterCssPx": 72,
         "gapReason": "問いと指示を明確に分ける間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c18",
+        "offsetX": 20,
+        "offsetY": 450,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p43",
@@ -1703,7 +2207,7 @@
         {
           "key": "p43-d01",
           "speaker": "ミナ",
-          "text": "そのまま\n支えてください"
+          "text": "そのまま\n支えてください！"
         }
       ],
       "sound": {
@@ -1714,7 +2218,7 @@
       "emotionIntention": "ミナは命令ではなく共同作業の指示として話す。",
       "reaction": "レンの左手がロープを安定させ、二人の動きが一つになる。",
       "nextConnection": "結び目を締める音と、天幕が戻る結果へつなぐ。",
-      "widthPercent": 92,
+      "widthPercent": 75,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1724,7 +2228,19 @@
         "gapAfterCssPx": 88,
         "gapReason": "手の連携を確認してから音へ進む間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c19",
+        "offsetX": 25,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p44",
@@ -1741,7 +2257,7 @@
       "emotionIntention": "レンは痛みを我慢するのではなく、負荷を左側へ逃がす。ミナはその選択を確認する。",
       "reaction": "支柱の揺れが小さくなり、ミナが次の結びへ移る。",
       "nextConnection": "レンの右袖から血が再びにじみ、治療の必要が戻る。",
-      "widthPercent": 100,
+      "widthPercent": 45,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1751,7 +2267,19 @@
         "gapAfterCssPx": 64,
         "gapReason": "作業の成功を次の危険へつなぐ短い間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c19",
+        "offsetX": 0,
+        "offsetY": 300,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p45",
@@ -1768,8 +2296,8 @@
       "emotionIntention": "ミナは怒りを抑え、支柱を固定したらすぐ治療へ戻る順序を決める。",
       "reaction": "レンは右腕を自分から前へ出し、手当てを受ける位置に戻す。",
       "nextConnection": "事情を先に言うよう求めるミナの正直な注意へ進む。",
-      "widthPercent": 88,
-      "align": "right",
+      "widthPercent": 60,
+      "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
         "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
@@ -1778,7 +2306,19 @@
         "gapAfterCssPx": 106,
         "gapReason": "危険の確認と治療再開を分ける間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c19",
+        "offsetX": 40,
+        "offsetY": 560,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.61,
+          0.224,
+          0.3
+        ]
+      }
     },
     {
       "id": "p46",
@@ -1801,7 +2341,7 @@
       "emotionIntention": "レンは短く原因を明かし、助けを借りることを選ぶ。",
       "reaction": "ミナの指が傷の周囲を避け、扱いが柔らかくなる。",
       "nextConnection": "ミナが次から先に事情を伝えるよう求める。",
-      "widthPercent": 76,
+      "widthPercent": 75,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1811,7 +2351,19 @@
         "gapAfterCssPx": 92,
         "gapReason": "原因の確認から関係の注意へ移る間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c20",
+        "offsetX": 25,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p47",
@@ -1823,7 +2375,8 @@
         {
           "key": "p47-d01",
           "speaker": "ミナ",
-          "text": "その事情も\n先に\n言ってください"
+          "text": "その事情も\n先に\n言ってください",
+          "renderedIn": "voice-p47"
         }
       ],
       "sound": {
@@ -1834,7 +2387,7 @@
       "emotionIntention": "ミナは責めているのではなく、待つ側が判断できる情報を求める。",
       "reaction": "レンの目がミナに戻り、短くうなずく。",
       "nextConnection": "レンが助けを借りてもいいかと自分から頼む。",
-      "widthPercent": 92,
+      "widthPercent": 75,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1844,7 +2397,19 @@
         "gapAfterCssPx": 100,
         "gapReason": "条件が約束へ変わる直前の間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c20",
+        "offsetX": 25,
+        "offsetY": 450,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p48",
@@ -1856,7 +2421,7 @@
         {
           "key": "p48-d01",
           "speaker": "レン",
-          "text": "助けを\n借りても\nいいか"
+          "text": "助けを\n借りても\nいいか？"
         },
         {
           "key": "p48-d02",
@@ -1872,7 +2437,7 @@
       "emotionIntention": "レンは弱さの告白を頼み方へ変え、ミナは敬語のまま明確に受け入れる。",
       "reaction": "ミナの両手が腕を包み、レンの肩が初めて完全に下がる。",
       "nextConnection": "本格的な手当てと、帰還理由の核心へ進む。",
-      "widthPercent": 100,
+      "widthPercent": 95,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1882,7 +2447,19 @@
         "gapAfterCssPx": 180,
         "gapReason": "受け入れが成立したことを読者が味わう間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c20",
+        "offsetX": 0,
+        "offsetY": 920,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p49",
@@ -1899,7 +2476,7 @@
       "emotionIntention": "ミナは痛みを減らすため手順をゆっくりにし、レンは反応を隠さない。",
       "reaction": "レンの呼吸が浅くなり、ミナが手を止めて確認する。",
       "nextConnection": "レンが初めて単純な痛みをそのまま口にする。",
-      "widthPercent": 96,
+      "widthPercent": 82,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1909,7 +2486,19 @@
         "gapAfterCssPx": 74,
         "gapReason": "手当ての再開を身体の反応へ渡す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c21",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p50",
@@ -1932,7 +2521,7 @@
       "emotionIntention": "レンは痛みを認めても見捨てられないと、初めて信じて言う。",
       "reaction": "ミナのまぶたが一度下がり、布の圧を弱める。",
       "nextConnection": "ミナが痛みへの応答を返し、感情の質問へ近づく。",
-      "widthPercent": 78,
+      "widthPercent": 70,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1942,7 +2531,19 @@
         "gapAfterCssPx": 96,
         "gapReason": "一語の本音を受け止める間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c21",
+        "offsetX": 30,
+        "offsetY": 500,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p51",
@@ -1965,7 +2566,7 @@
       "emotionIntention": "冷たい敬語の隙間に、正直に言ってよいという許可を置く。",
       "reaction": "レンの指が机から離れ、呼吸が深くなる。",
       "nextConnection": "ミナがなぜ戻ったのかを直接尋ねる。",
-      "widthPercent": 90,
+      "widthPercent": 55,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -1975,7 +2576,19 @@
         "gapAfterCssPx": 88,
         "gapReason": "身体の安心から核心の問いへ進む間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c22",
+        "offsetX": 45,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p52",
@@ -1987,7 +2600,7 @@
         {
           "key": "p52-d01",
           "speaker": "ミナ",
-          "text": "本当は\n怖かった\nですか"
+          "text": "本当は\n怖かった\nですか？"
         }
       ],
       "sound": {
@@ -1998,7 +2611,7 @@
       "emotionIntention": "心配を隠す形式をやめ、レンが戻れないと思った恐怖を自分の言葉で聞こうとする。",
       "reaction": "レンの視線が天幕の出口へ向き、言葉を探す。",
       "nextConnection": "レンが戻れない恐怖を直接返す。",
-      "widthPercent": 94,
+      "widthPercent": 90,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2008,7 +2621,19 @@
         "gapAfterCssPx": 150,
         "gapReason": "核心の問いから返答までの深い間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c22",
+        "offsetX": 0,
+        "offsetY": 350,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p53",
@@ -2031,7 +2656,7 @@
       "emotionIntention": "任務の結果ではなく、ミナの元へ戻れない恐怖を短く正直に返す。",
       "reaction": "ミナの手が包帯の上で止まり、レンを見る。",
       "nextConnection": "ミナが待つ側の恐怖を自分の言葉で返す。",
-      "widthPercent": 88,
+      "widthPercent": 80,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2041,7 +2666,19 @@
         "gapAfterCssPx": 168,
         "gapReason": "恐怖の告白を受け取るための間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c23",
+        "offsetX": 20,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p54",
@@ -2058,7 +2695,7 @@
       "emotionIntention": "ミナは自分も同じ恐怖を抱えていたと認める準備をする。",
       "reaction": "レンは急かさず、彼女が言える時間を待つ。",
       "nextConnection": "ミナが形式を一度だけ崩して本音を返す。",
-      "widthPercent": 76,
+      "widthPercent": 55,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2068,7 +2705,19 @@
         "gapAfterCssPx": 188,
         "gapReason": "相手の告白を受けた側の反応を独立させる間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c23",
+        "offsetX": 0,
+        "offsetY": 300,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p55",
@@ -2091,7 +2740,7 @@
       "emotionIntention": "心配を管理記録へ隠すのをやめ、待つ側の恐怖を渡す。",
       "reaction": "レンの目が揺れ、言い訳を探さず受け止める。",
       "nextConnection": "レンが自分の遅れを謝り、ミナの恐怖を受け取る。",
-      "widthPercent": 94,
+      "widthPercent": 90,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2101,7 +2750,19 @@
         "gapAfterCssPx": 196,
         "gapReason": "関係の本音が返った後の深い間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c23",
+        "offsetX": 0,
+        "offsetY": 650,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p56",
@@ -2124,7 +2785,7 @@
       "emotionIntention": "レンは平気なふりで守ったつもりが、待つ側を一人にしたと理解する。",
       "reaction": "ミナが小さく首を振り、包帯を結ぶ作業を再開する。",
       "nextConnection": "約束を抽象語で終わらせず、具体的な帰還方法へ進む。",
-      "widthPercent": 100,
+      "widthPercent": 75,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2134,7 +2795,19 @@
         "gapAfterCssPx": 142,
         "gapReason": "謝罪を結果へ変えるための間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c24",
+        "offsetX": 25,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p57",
@@ -2157,7 +2830,7 @@
       "emotionIntention": "心配を叱責ではなく、帰還するための共有情報に変える。",
       "reaction": "レンの目が包帯からミナへ上がり、返答を考える。",
       "nextConnection": "レンが隠した理由を正直に説明する。",
-      "widthPercent": 92,
+      "widthPercent": 95,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2167,7 +2840,19 @@
         "gapAfterCssPx": 78,
         "gapReason": "包帯の結び目が約束の起点になる間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c24",
+        "offsetX": 0,
+        "offsetY": 520,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p58",
@@ -2190,7 +2875,7 @@
       "emotionIntention": "心配を避けるための強がりが、自分を保つための脆い支えだったと認める。",
       "reaction": "ミナは隠していた理由を受け止め、包帯の端を整える手をさらに柔らかくする。",
       "nextConnection": "ミナが戻るために助けを借りるという新しい条件を返す。",
-      "widthPercent": 84,
+      "widthPercent": 80,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2200,7 +2885,19 @@
         "gapAfterCssPx": 106,
         "gapReason": "理由を受けて条件を更新する間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c25",
+        "offsetX": 20,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p59",
@@ -2233,7 +2930,19 @@
         "gapAfterCssPx": 118,
         "gapReason": "抽象語から具体策へ移る間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c25",
+        "offsetX": 0,
+        "offsetY": 480,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p60",
@@ -2245,7 +2954,7 @@
         {
           "key": "p60-d01",
           "speaker": "レン",
-          "text": "いつまでに\n戻ればいい"
+          "text": "いつまでに\n戻ればいい？"
         }
       ],
       "sound": {
@@ -2256,7 +2965,7 @@
       "emotionIntention": "レンは約束を実行可能な時間へ落とし、ミナに判断を返す。",
       "reaction": "ミナの視線が入口の灯りへ移る。",
       "nextConnection": "夕鐘と灯りを使った具体的な基準が示される。",
-      "widthPercent": 86,
+      "widthPercent": 80,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2266,7 +2975,19 @@
         "gapAfterCssPx": 104,
         "gapReason": "基準が出る前に視線を移す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c26",
+        "offsetX": 20,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.003,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p61",
@@ -2289,7 +3010,7 @@
       "emotionIntention": "ミナは待つ場所と時刻を具体化し、再び一人で推測しなくて済むようにする。",
       "reaction": "レンが一個の木札と入口のフックへ目を向ける。",
       "nextConnection": "レンが木札をフックから外し、巡回中は帯に携帯する手順を選ぶ。",
-      "widthPercent": 92,
+      "widthPercent": 75,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2299,7 +3020,19 @@
         "gapAfterCssPx": 110,
         "gapReason": "時刻を視覚的な合図へつなぐ間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c26",
+        "offsetX": 0,
+        "offsetY": 450,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p62",
@@ -2322,7 +3055,7 @@
       "emotionIntention": "レンは言葉の約束ではなく、巡回中は帯に携帯し帰還時にフックへ掛ける一動作を提案する。",
       "reaction": "ミナが空いたフックと木札の紐を見て、実行できる手順だと判断する。",
       "nextConnection": "ミナが一個の木札を帯へ携帯する手順を確認する。",
-      "widthPercent": 78,
+      "widthPercent": 90,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2332,7 +3065,19 @@
         "gapAfterCssPx": 92,
         "gapReason": "選択した合図を次の手渡しへ進める間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c26",
+        "offsetX": 0,
+        "offsetY": 900,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p63",
@@ -2355,7 +3100,7 @@
       "emotionIntention": "ミナは命令を重ねず、戻ったことを自分へ知らせてほしいという頼みを受け渡す。",
       "reaction": "レンが右腕を使わず、木札を帯へ取り付ける準備を始める。",
       "nextConnection": "レンが巡回中は帯に携帯する状態を作る。",
-      "widthPercent": 100,
+      "widthPercent": 60,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2365,7 +3110,19 @@
         "gapAfterCssPx": 86,
         "gapReason": "手渡しを確認して次の実行へ進む間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c27",
+        "offsetX": 40,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p64",
@@ -2388,7 +3145,7 @@
       "emotionIntention": "レンは帰還時の動作を自分の準備に落とし込み、ミナは木札を持たせたまま任せる。",
       "reaction": "ミナが帯の木札と空いたフックを確認し、帰還時の一動作を任せる。",
       "nextConnection": "天幕の修復結果と、木札を帯に携帯する巡回へ移る。",
-      "widthPercent": 94,
+      "widthPercent": 90,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2398,7 +3155,19 @@
         "gapAfterCssPx": 240,
         "gapReason": "約束が物理的に結ばれたことを味わう間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c27",
+        "offsetX": 0,
+        "offsetY": 400,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p65",
@@ -2415,7 +3184,7 @@
       "emotionIntention": "ミナは作業の結果を確認し、レンは自分が一人で直そうとしなくてよかったと感じる。",
       "reaction": "水が治療道具から外れ、二人の緊張が下がる。",
       "nextConnection": "ミナが入口に待つための物を準備する。",
-      "widthPercent": 82,
+      "widthPercent": 85,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2425,7 +3194,19 @@
         "gapAfterCssPx": 94,
         "gapReason": "危機の結果を読ませる穏やかな間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c28",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p66",
@@ -2442,7 +3223,7 @@
       "emotionIntention": "心配を物の配置へ変え、次に同じ不安が来ても一人で固まらないようにする。",
       "reaction": "レンの目が入口の乾布へ移り、ミナの行動を受け取る。",
       "nextConnection": "レンが立とうとし、ミナが休息を優先させる。",
-      "widthPercent": 88,
+      "widthPercent": 55,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2452,7 +3233,19 @@
         "gapAfterCssPx": 112,
         "gapReason": "待つ側の行動を次の身体反応へ渡す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c28",
+        "offsetX": 45,
+        "offsetY": 550,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p67",
@@ -2475,7 +3268,7 @@
       "emotionIntention": "ミナは離れたくないからではなく、次に戻れる身体を守るため止める。",
       "reaction": "レンは反論しかけて、帯の木札と包帯を見る。",
       "nextConnection": "レンが今度は命令を受け入れる返しをする。",
-      "widthPercent": 86,
+      "widthPercent": 55,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2485,7 +3278,19 @@
         "gapAfterCssPx": 86,
         "gapReason": "休む選択を受け止める間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c29",
+        "offsetX": 45,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p68",
@@ -2518,7 +3323,19 @@
         "gapAfterCssPx": 104,
         "gapReason": "形式語の意味が変わったことを味わう間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c29",
+        "offsetX": 0,
+        "offsetY": 380,
+        "frame": "thin",
+        "crop": [
+          0.003,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p69",
@@ -2546,7 +3363,7 @@
       "emotionIntention": "ミナは危険を管理し、レンは助言を受けて同じ判断を持つ。",
       "reaction": "レンの指が川の方から安全な道へ移る。",
       "nextConnection": "帯の木札を帰還時に入口フックへ掛ける実際の手順をもう一度確認する。",
-      "widthPercent": 100,
+      "widthPercent": 85,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2556,7 +3373,19 @@
         "gapAfterCssPx": 96,
         "gapReason": "情報確認を行動の約束へつなぐ間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c30",
+        "offsetX": 15,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p70",
@@ -2573,7 +3402,7 @@
       "emotionIntention": "レンは木札を外すのは帰還時だけだと確認し、ミナは待つ側の確認方法を覚える。",
       "reaction": "ミナは空のフックと帯の木札を同時に見て、合図の状態を理解する。",
       "nextConnection": "短い休息と温かい飲み物で結果の感情を落ち着かせる。",
-      "widthPercent": 84,
+      "widthPercent": 55,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2583,7 +3412,19 @@
         "gapAfterCssPx": 70,
         "gapReason": "動作の確認から心情の余韻へ移る間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c30",
+        "offsetX": 45,
+        "offsetY": 540,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.6,
+          0.224,
+          0.3
+        ]
+      }
     },
     {
       "id": "p71",
@@ -2611,7 +3452,7 @@
       "emotionIntention": "レンは救助と手当てを一緒に受け取り、ミナは一人で待たなくてよかったと返す。",
       "reaction": "二人の肩が同じ高さまで下がり、雨音が遠くなる。",
       "nextConnection": "次に待つ場所をどう変えるか、ミナが言葉にする。",
-      "widthPercent": 100,
+      "widthPercent": 90,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2621,7 +3462,19 @@
         "gapAfterCssPx": 132,
         "gapReason": "回復した身体と関係を味わう間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c31",
+        "offsetX": 10,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p72",
@@ -2644,7 +3497,7 @@
       "emotionIntention": "ミナは待つことを受け身の苦しさから、共有した準備へ変えたい。",
       "reaction": "レンが空の入口フック、乾布、帯の木札を見て、具体策を理解する。",
       "nextConnection": "一週間後の晴れた朝へ時間を進め、決めた合図が実際に使われる結末へ。",
-      "widthPercent": 92,
+      "widthPercent": 85,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2654,7 +3507,19 @@
         "gapAfterCssPx": 260,
         "gapReason": "結果から時間経過へ切り替えるための間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c31",
+        "offsetX": 0,
+        "offsetY": 560,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p73",
@@ -2671,7 +3536,7 @@
       "emotionIntention": "レンは傷がすぐ消えたふりをせず、木札を帯に携帯して約束を実行する巡回へ出る。ミナは準備した場所で見送る。",
       "reaction": "ミナが入口で道を塞がず、帯の木札を確認してから一歩退く。",
       "nextConnection": "出発前の注意と具体的な帰還時刻を確認する。",
-      "widthPercent": 100,
+      "widthPercent": 80,
       "align": "center",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2681,7 +3546,19 @@
         "gapAfterCssPx": 140,
         "gapReason": "時間経過を景色で明示する間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c32",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p74",
@@ -2704,7 +3581,7 @@
       "emotionIntention": "ミナは心配を命令で隠すが、今回はレンが隠さない前提で話す。",
       "reaction": "レンは包帯を隠さず見せ、うなずく。",
       "nextConnection": "帰還時刻をレン自身が口にする。",
-      "widthPercent": 92,
+      "widthPercent": 85,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2714,7 +3591,19 @@
         "gapAfterCssPx": 96,
         "gapReason": "出発条件と帰還条件を分ける間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c32",
+        "offsetX": 15,
+        "offsetY": 500,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p75",
@@ -2737,7 +3626,7 @@
       "emotionIntention": "レンは言葉を繰り返すのでなく、実行する基準を自分で確認する。",
       "reaction": "ミナが帯の木札からレンの顔へ視線を上げ、任せる決断をする。",
       "nextConnection": "ミナが待つ場所での行動を見せる。",
-      "widthPercent": 86,
+      "widthPercent": 80,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2747,7 +3636,19 @@
         "gapAfterCssPx": 116,
         "gapReason": "出発の約束をミナの準備へ渡す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c33",
+        "offsetX": 20,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p76",
@@ -2764,7 +3665,7 @@
       "emotionIntention": "心配は残るが、待つことを確認可能な準備へ変える。",
       "reaction": "ミナが時計ではなく作業へ戻り、入口の灯りだけが残る。",
       "nextConnection": "補助ビートで時間経過を置き、夕方の合図へ進む。",
-      "widthPercent": 100,
+      "widthPercent": 90,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2774,7 +3675,19 @@
         "gapAfterCssPx": 420,
         "gapReason": "出発から帰還確認までを省略せず受け渡す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c33",
+        "offsetX": 0,
+        "offsetY": 480,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p77",
@@ -2791,7 +3704,7 @@
       "emotionIntention": "レンは決めた時刻内に戻り、約束を木札を掛ける一動作へ変える。ミナは足音ではなく合図を受け取る。",
       "reaction": "木札がフックに掛かり、ミナの手が布を置いて入口へ向かう。",
       "nextConnection": "レンの姿を見せる前に、ミナが合図を受けて動く選択を独立させる。",
-      "widthPercent": 82,
+      "widthPercent": 65,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2801,7 +3714,19 @@
         "gapAfterCssPx": 132,
         "gapReason": "合図と人物の反応を分ける間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c34",
+        "offsetX": 35,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.6,
+          0.224,
+          0.3
+        ]
+      }
     },
     {
       "id": "p78",
@@ -2818,7 +3743,7 @@
       "emotionIntention": "ミナは心配を隠す必要がないほど、確認する手順を共有できた。",
       "reaction": "木札はすでにフックに掛かり、レンの姿がその先にいることをミナが確認する。",
       "nextConnection": "レンが短い帰還の言葉を返す。",
-      "widthPercent": 88,
+      "widthPercent": 95,
       "align": "right",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2828,7 +3753,19 @@
         "gapAfterCssPx": 104,
         "gapReason": "行動の変化から再会の台詞へ進む間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c34",
+        "offsetX": 0,
+        "offsetY": 350,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     },
     {
       "id": "p79",
@@ -2851,7 +3788,7 @@
       "emotionIntention": "レンは平気を装わず、戻った事実だけを短く渡す。",
       "reaction": "ミナの目元が緩み、手にした乾布を彼へ差し出す。",
       "nextConnection": "ミナが冷たい形式を保ちながら、帰還を確認して終える。",
-      "widthPercent": 94,
+      "widthPercent": 85,
       "align": "left",
       "frameProposal": {
         "border": "thin neutral line",
@@ -2861,7 +3798,19 @@
         "gapAfterCssPx": 168,
         "gapReason": "帰還の事実を一度受け止める間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c35",
+        "offsetX": 15,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
     },
     {
       "id": "p80",
@@ -2899,7 +3848,19 @@
         "gapAfterCssPx": 240,
         "gapReason": "結末の満足と次回への余韻を残す間"
       },
-      "effective": true
+      "effective": true,
+      "displayLayout": {
+        "composition": "c35",
+        "offsetX": 0,
+        "offsetY": 665,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
     }
   ],
   "auxiliaryBeats": [
@@ -2913,7 +3874,8 @@
       "afterPanel": null,
       "height390CssPx": 200,
       "x": 50,
-      "purpose": "最初の絵の前に時刻と場所を明示し、読者が夕暮れの野営地の治療所から読み始められるようにする。"
+      "purpose": "最初の絵の前に時刻と場所を明示し、読者が夕暮れの野営地の治療所から読み始められるようにする。",
+      "displayLayout": {}
     },
     {
       "id": "pause-01",
@@ -2926,7 +3888,8 @@
       "nextFirstReveal": "p03でミナの手の緊張を読む",
       "elements": "空の灰色、ランタン、空いた道",
       "background": "薄い灰色の空と白い天幕",
-      "pureWhitespace": true
+      "pureWhitespace": true,
+      "displayLayout": {}
     },
     {
       "id": "voice-12",
@@ -2938,7 +3901,8 @@
       "afterPanel": "p12",
       "height390CssPx": 210,
       "x": 50,
-      "purpose": "p12の泥と震える指からp13の救助回想へ移る時間と場所を明示し、現在の天幕から突然川へ飛ばさない。"
+      "purpose": "p12の泥と震える指からp13の救助回想へ移る時間と場所を明示し、現在の天幕から突然川へ飛ばさない。",
+      "displayLayout": {}
     },
     {
       "id": "pause-02",
@@ -2951,7 +3915,8 @@
       "nextFirstReveal": "p13で増水した川と小さな手",
       "elements": "濡れた袖、包帯、止まった視線",
       "background": "天幕内の低い明かりから雨の川へ",
-      "pureWhitespace": true
+      "pureWhitespace": true,
+      "displayLayout": {}
     },
     {
       "id": "voice-15",
@@ -2963,7 +3928,13 @@
       "afterPanel": "p15",
       "height390CssPx": 200,
       "x": 50,
-      "purpose": "p15で少年を匿名村人へ渡した回想を閉じ、p16の現在のミナとレンの手当てへ戻る場所を明示する。"
+      "purpose": "p15で少年を匿名村人へ渡した回想を閉じ、p16の現在のミナとレンの手当てへ戻る場所を明示する。",
+      "displayLayout": {
+        "composition": "c07",
+        "offsetX": 74,
+        "offsetY": 0,
+        "widthPercent": 26
+      }
     },
     {
       "id": "voice-01",
@@ -2974,7 +3945,13 @@
       "afterPanel": "p16",
       "height390CssPx": 210,
       "x": 50,
-      "purpose": "救助が成功したことをミナが受け止めてから、手当てを自分の役割として引き受ける。事情の確認を言い直さない。"
+      "purpose": "救助が成功したことをミナが受け止めてから、手当てを自分の役割として引き受ける。事情の確認を言い直さない。",
+      "displayLayout": {
+        "composition": "c08",
+        "offsetX": 70,
+        "offsetY": 0,
+        "widthPercent": 28
+      }
     },
     {
       "id": "pause-03",
@@ -2987,7 +3964,8 @@
       "nextFirstReveal": "p25で basin を移すミナの手",
       "elements": "水滴、包帯、二人の上向く視線",
       "background": "天幕の灰色の内側",
-      "pureWhitespace": true
+      "pureWhitespace": true,
+      "displayLayout": {}
     },
     {
       "id": "voice-02",
@@ -2998,7 +3976,13 @@
       "afterPanel": "p32",
       "height390CssPx": 190,
       "x": 50,
-      "purpose": "作業中も平気のふりが残っていることを示すが、p40の本音を先取りしない。"
+      "purpose": "作業中も平気のふりが残っていることを示すが、p40の本音を先取りしない。",
+      "displayLayout": {
+        "composition": "c14",
+        "offsetX": 75,
+        "offsetY": 880,
+        "widthPercent": 25
+      }
     },
     {
       "id": "pause-04",
@@ -3011,7 +3995,8 @@
       "nextFirstReveal": "p41で二人が同じ作業位置に留まる",
       "elements": "固定されたロープ、止まった手、雨幕",
       "background": "濃い雨の灰色",
-      "pureWhitespace": true
+      "pureWhitespace": true,
+      "displayLayout": {}
     },
     {
       "id": "pause-05",
@@ -3024,7 +4009,8 @@
       "nextFirstReveal": "p49で治療を再開する手",
       "elements": "包帯、二人の手、修復した支柱",
       "background": "雨音が薄くなった天幕",
-      "pureWhitespace": true
+      "pureWhitespace": true,
+      "displayLayout": {}
     },
     {
       "id": "voice-03",
@@ -3035,7 +4021,13 @@
       "afterPanel": "p56",
       "height390CssPx": 220,
       "x": 50,
-      "purpose": "謝罪を受け、待つ間に願っていた本音をミナが返す。次のコマで隠さない条件へ進める。"
+      "purpose": "謝罪を受け、待つ間に願っていた本音をミナが返す。次のコマで隠さない条件へ進める。",
+      "displayLayout": {
+        "composition": "c24",
+        "offsetX": 0,
+        "offsetY": 190,
+        "widthPercent": 25
+      }
     },
     {
       "id": "pause-06",
@@ -3048,7 +4040,8 @@
       "nextFirstReveal": "p65で水が gutter へ流れる",
       "elements": "帯の木札、空のフック、包帯、天幕の結び目",
       "background": "雨の音量が下がる灰色",
-      "pureWhitespace": true
+      "pureWhitespace": true,
+      "displayLayout": {}
     },
     {
       "id": "voice-05",
@@ -3059,7 +4052,13 @@
       "afterPanel": "p72",
       "height390CssPx": 250,
       "x": 50,
-      "purpose": "p72の結果から急な翌朝へ飛ばず、一週間後の同じ野営地で傷と木札の状態を引き継ぐ時間・場所の目印を明示する。"
+      "purpose": "p72の結果から急な翌朝へ飛ばず、一週間後の同じ野営地で傷と木札の状態を引き継ぐ時間・場所の目印を明示する。",
+      "displayLayout": {
+        "composition": "c32",
+        "offsetX": 80,
+        "offsetY": 0,
+        "widthPercent": 20
+      }
     },
     {
       "id": "voice-06",
@@ -3070,7 +4069,13 @@
       "afterPanel": "p76",
       "height390CssPx": 230,
       "x": 50,
-      "purpose": "p73の一週間後の晴れた朝からp77の同日夕方へ移ることを明示し、翌朝の再巡回や傷の即時復旧と誤読させない。"
+      "purpose": "p73の一週間後の晴れた朝からp77の同日夕方へ移ることを明示し、翌朝の再巡回や傷の即時復旧と誤読させない。",
+      "displayLayout": {
+        "composition": "c33",
+        "offsetX": 70,
+        "offsetY": 1000,
+        "widthPercent": 28
+      }
     },
     {
       "id": "pause-07",
@@ -3083,7 +4088,8 @@
       "nextFirstReveal": "p77で帯から入口フックへ木札を掛ける木のコト音",
       "elements": "入口の灯り、乾布、作業台、帯の木札、空のフック",
       "background": "一週間後の晴れた朝から同日夕方の青灰色へ",
-      "pureWhitespace": true
+      "pureWhitespace": true,
+      "displayLayout": {}
     },
     {
       "id": "voice-04",
@@ -3094,12 +4100,49 @@
       "afterPanel": "p79",
       "height390CssPx": 160,
       "x": 50,
-      "purpose": "p80の短い確認へ向かう感情の余韻。台詞を重ねすぎず、ミナの内側の緩みを編集可能にする。"
+      "purpose": "p80の短い確認へ向かう感情の余韻。台詞を重ねすぎず、ミナの内側の緩みを編集可能にする。",
+      "displayLayout": {
+        "composition": "c35",
+        "offsetX": 68,
+        "offsetY": 475,
+        "widthPercent": 28
+      }
+    },
+    {
+      "id": "voice-p47",
+      "type": "voice",
+      "key": "p47-d01",
+      "speaker": "ミナ",
+      "text": "その事情も\n先に\n言ってください",
+      "afterPanel": "p47",
+      "beforePanel": "p48",
+      "height390CssPx": 230,
+      "purpose": "傷の事情を受けたミナの言葉を左の空きへ置き 表情と布を持つ手を隠さず 頼みの問いへつなぐ",
+      "displayLayout": {
+        "composition": "c20",
+        "offsetX": 0,
+        "offsetY": 500,
+        "widthPercent": 25
+      }
     }
   ],
   "readableTextKeys": {
     "rule": "panel.dialogue と auxiliaryBeats.type=voice のkeyを本文編集・可読確認に使う。sound.wordsは本文扱いだが、絵へ描くかHTMLへ置くかは生成時に選ぶ。",
     "dialogueCount": 59,
     "voiceCount": 9
+  },
+  "spatialLayout": {
+    "record": "plan.json#beats",
+    "compositionGroups": 35,
+    "readingOrder": "JSON order; same-row short exchanges right to left; offset vertical steps preserve action before result; no later answer above its question",
+    "examples": {
+      "c06": "大きな川の状況へ救助の手元を段差でつなぎ 受け渡しを下へ残す",
+      "c09": "広い治療の対面へ横長の水注ぎを添え その下で痛みを読む",
+      "c13": "結び目の浅い接写 支柱の手 下の制止の大きな反応",
+      "c20": "長い発話を左の空きへ移し ミナの表情と布の手を残す",
+      "c24": "言葉を受けた本音を左の空きへ置き 次の手当てへつなぐ",
+      "c32": "右の空きへ一週間後の時刻を置き 絵と文字を遮らない"
+    },
+    "approval": "user review pending"
   }
 }

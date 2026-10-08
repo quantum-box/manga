@@ -176,20 +176,20 @@
       ],
       "effectivePanelRegister": "sequence-plan.json#panels",
       "body390": {
-        "heightCssPx": 42192.40625,
-        "explicitPauseHeightCssPx": 4568,
-        "pureGapHeightCssPx": 5379.854843749999,
-        "contentHeightCssPx": 36812.55140625,
-        "screenUnits": 49.99100266587678,
-        "pureGapRatio": 0.12750765651698281
+        "heightCssPx": 35132.265625,
+        "explicitPauseHeightCssPx": 2929,
+        "pureGapHeightCssPx": 5812.406494140625,
+        "contentHeightCssPx": 29319.859130859375,
+        "screenUnits": 41.62590713862559,
+        "pureGapRatio": 0.16544354287258195
       },
       "body360": {
-        "heightCssPx": 38945.84375,
-        "explicitPauseHeightCssPx": 4215.890625,
-        "pureGapHeightCssPx": 4955.700937500005,
-        "contentHeightCssPx": 33990.142812499995,
-        "screenUnits": 48.6823046875,
-        "pureGapRatio": 0.1272459513089893
+        "heightCssPx": 32429.390625,
+        "explicitPauseHeightCssPx": 2703.390625,
+        "pureGapHeightCssPx": 5358.795166015625,
+        "contentHeightCssPx": 27070.595458984375,
+        "screenUnits": 40.53673828125,
+        "pureGapRatio": 0.16524501579392922
       }
     },
     "review": {
@@ -204,7 +204,8 @@
       },
       "padding": {
         "result": "no-clear-padding-found",
-        "evidence": "No repeated image+crop or sceneDescription; source sheets contain eighty independent moments. Three adjacent action/result pairs use shared rows. Source image upper empty bands p10/p77 plus text-beat empty bands and all explicit pauses are registered as a vertical union. Meaningful pause heights were added only after the eighty-panel story already measured 39194.40625 px."
+        "evidence": "Eighty unchanged independent rough drawings; no duplicate source-cell crop or repeated newUnderstanding. Long dialogue/receiver shots widened while unrelated blank spreads shortened. Body and net content both pass after measuring the union of all occupied vertical spans.",
+        "spatialReview": "review/spatial-review.json"
       }
     },
     "exception": null
@@ -221,2653 +222,5343 @@
     "devicePixelRatio": 1,
     "rawDomMetrics": "review/browser-metrics.json",
     "bodySelector": "#preview-flow",
-    "pureGapRule": "Union of full-height explicit pauses, empty bands outside each floating-copy (including speaker label), and visually registered image empty bands. Story-bearing white backgrounds are not excluded. No UI, cover, notes or end commentary included.",
+    "pureGapRule": "Complement of the union of art, dialogue, SFX and floating-copy vertical spans. Visually registered large no-information source-art bands are removed from art occupation. An empty voice band overlapping a panel is occupied; shared gaps count once. White background around acting is part of the artwork.",
     "pureGapRegisters": {
       "390": {
         "gaps": [
           {
-            "id": "voice-00-before-copy",
-            "type": "text-beat-empty-band",
             "top": 0,
             "bottom": 24.7890625,
-            "height": 24.7890625
+            "id": "gap-001",
+            "height": 24.7890625,
+            "candidates": [
+              {
+                "id": "voice-00-before-copy",
+                "kind": "text-empty-band"
+              }
+            ]
           },
           {
-            "id": "voice-00-after-copy",
-            "type": "text-beat-empty-band",
             "top": 175.2109375,
             "bottom": 200,
-            "height": 24.7890625
-          },
-          {
-            "id": "gap-after-p01",
-            "type": "pause",
-            "top": 722.125,
-            "bottom": 768.125,
-            "height": 46
-          },
-          {
-            "id": "pause-01",
-            "type": "pause",
-            "top": 1227.578125,
-            "bottom": 1397.578125,
-            "height": 170
-          },
-          {
-            "id": "gap-after-p03",
-            "type": "pause",
-            "top": 1825.71875,
-            "bottom": 1899.71875,
-            "height": 74
-          },
-          {
-            "id": "gap-after-p04",
-            "type": "pause",
-            "top": 2421.84375,
-            "bottom": 2467.84375,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p05",
-            "type": "pause",
-            "top": 2989.96875,
-            "bottom": 3011.96875,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p06",
-            "type": "pause",
-            "top": 3492.3125,
-            "bottom": 3514.3125,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p07",
-            "type": "pause",
-            "top": 3890.234375,
-            "bottom": 3976.234375,
-            "height": 86
-          },
-          {
-            "id": "gap-after-p08",
-            "type": "pause",
-            "top": 4498.359375,
-            "bottom": 4520.359375,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p09",
-            "type": "pause",
-            "top": 5011.140625,
-            "bottom": 5057.140625,
-            "height": 46
-          },
-          {
-            "id": "p10-image-top",
-            "type": "source-art-empty-band",
-            "top": 5057.140625,
-            "bottom": 5088.57171875,
-            "height": 31.431093750000002,
-            "panelId": "p10",
-            "rangeFraction": [
-              0,
-              0.07
-            ],
-            "reason": "返答の前にある絵の上の無情報帯。吹き出しは8%から"
-          },
-          {
-            "id": "gap-after-p10",
-            "type": "pause",
-            "top": 5506.15625,
-            "bottom": 5528.15625,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p11",
-            "type": "pause",
-            "top": 5956.296875,
-            "bottom": 6012.296875,
-            "height": 56
-          },
-          {
-            "id": "gap-after-p12",
-            "type": "pause",
-            "top": 6388.21875,
-            "bottom": 6434.21875,
-            "height": 46
-          },
-          {
-            "id": "voice-12-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 6434.21875,
-            "bottom": 6485.0625,
-            "height": 50.84375
-          },
-          {
-            "id": "voice-12-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 6593.375,
-            "bottom": 6644.21875,
-            "height": 50.84375
-          },
-          {
-            "id": "pause-02",
-            "type": "pause",
-            "top": 6644.21875,
-            "bottom": 6834.21875,
-            "height": 190
-          },
-          {
-            "id": "gap-after-p13",
-            "type": "pause",
-            "top": 7356.34375,
-            "bottom": 7378.34375,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p14",
-            "type": "pause",
-            "top": 7858.6875,
-            "bottom": 7880.6875,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p15",
-            "type": "pause",
-            "top": 8402.8125,
-            "bottom": 8466.8125,
-            "height": 64
-          },
-          {
-            "id": "voice-15-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 8466.8125,
-            "bottom": 8491.6015625,
-            "height": 24.7890625
-          },
-          {
-            "id": "voice-15-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 8642.0234375,
-            "bottom": 8666.8125,
-            "height": 24.7890625
-          },
-          {
-            "id": "gap-after-p16",
-            "type": "pause",
-            "top": 9188.9375,
-            "bottom": 9210.9375,
-            "height": 22
-          },
-          {
-            "id": "voice-01-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 9210.9375,
-            "bottom": 9242.75,
-            "height": 31.8125
-          },
-          {
-            "id": "voice-01-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 9389.125,
-            "bottom": 9420.9375,
-            "height": 31.8125
-          },
-          {
-            "id": "gap-after-p17",
-            "type": "pause",
-            "top": 9901.28125,
-            "bottom": 9947.28125,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p18",
-            "type": "pause",
-            "top": 10417.1875,
-            "bottom": 10439.1875,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p20",
-            "type": "pause",
-            "top": 10689.78125,
-            "bottom": 10735.78125,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p21",
-            "type": "pause",
-            "top": 11226.5625,
-            "bottom": 11248.5625,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p22",
-            "type": "pause",
-            "top": 11676.703125,
-            "bottom": 11698.703125,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p23",
-            "type": "pause",
-            "top": 12179.046875,
-            "bottom": 12251.046875,
-            "height": 72
-          },
-          {
-            "id": "pause-03",
-            "type": "pause",
-            "top": 12773.171875,
-            "bottom": 12923.171875,
-            "height": 150
-          },
-          {
-            "id": "gap-after-p25",
-            "type": "pause",
-            "top": 13393.078125,
-            "bottom": 13439.078125,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p26",
-            "type": "pause",
-            "top": 13929.859375,
-            "bottom": 13951.859375,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p27",
-            "type": "pause",
-            "top": 14400.875,
-            "bottom": 14446.875,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p28",
-            "type": "pause",
-            "top": 14948.09375,
-            "bottom": 14970.09375,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p29",
-            "type": "pause",
-            "top": 15440,
-            "bottom": 15462,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p30",
-            "type": "pause",
-            "top": 15952.78125,
-            "bottom": 15974.78125,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p31",
-            "type": "pause",
-            "top": 16434.234375,
-            "bottom": 16456.234375,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p32",
-            "type": "pause",
-            "top": 16978.359375,
-            "bottom": 17024.359375,
-            "height": 46
-          },
-          {
-            "id": "voice-02-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 17024.359375,
-            "bottom": 17056.703125,
-            "height": 32.34375
-          },
-          {
-            "id": "voice-02-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 17182.015625,
-            "bottom": 17214.359375,
-            "height": 32.34375
-          },
-          {
-            "id": "gap-after-p34",
-            "type": "pause",
-            "top": 17464.953125,
-            "bottom": 17510.953125,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p35",
-            "type": "pause",
-            "top": 17980.859375,
-            "bottom": 18002.859375,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p36",
-            "type": "pause",
-            "top": 18431,
-            "bottom": 18453,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p37",
-            "type": "pause",
-            "top": 18975.125,
-            "bottom": 19071.125,
-            "height": 96
-          },
-          {
-            "id": "gap-after-p38",
-            "type": "pause",
-            "top": 19478.359375,
-            "bottom": 19500.359375,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p39",
-            "type": "pause",
-            "top": 19938.9375,
-            "bottom": 19960.9375,
-            "height": 22
-          },
-          {
-            "id": "pause-04",
-            "type": "pause",
-            "top": 20483.0625,
-            "bottom": 20703.0625,
-            "height": 220
-          },
-          {
-            "id": "gap-after-p41",
-            "type": "pause",
-            "top": 21152.078125,
-            "bottom": 21236.078125,
-            "height": 84
-          },
-          {
-            "id": "gap-after-p42",
-            "type": "pause",
-            "top": 21653.78125,
-            "bottom": 21675.78125,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p43",
-            "type": "pause",
-            "top": 22156.125,
-            "bottom": 22178.125,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p45",
-            "type": "pause",
-            "top": 22428.71875,
-            "bottom": 22474.71875,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p46",
-            "type": "pause",
-            "top": 22871.515625,
-            "bottom": 22893.515625,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p47",
-            "type": "pause",
-            "top": 23373.859375,
-            "bottom": 23395.859375,
-            "height": 22
-          },
-          {
-            "id": "pause-05",
-            "type": "pause",
-            "top": 23917.984375,
-            "bottom": 24097.984375,
-            "height": 180
-          },
-          {
-            "id": "gap-after-p49",
-            "type": "pause",
-            "top": 24599.203125,
-            "bottom": 24645.203125,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p50",
-            "type": "pause",
-            "top": 25052.4375,
-            "bottom": 25074.4375,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p51",
-            "type": "pause",
-            "top": 25544.34375,
-            "bottom": 25566.34375,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p52",
-            "type": "pause",
-            "top": 26057.125,
-            "bottom": 26103.125,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p53",
-            "type": "pause",
-            "top": 26562.578125,
-            "bottom": 26667.578125,
-            "height": 105
-          },
-          {
-            "id": "gap-after-p54",
-            "type": "pause",
-            "top": 27064.375,
-            "bottom": 27194.375,
-            "height": 130
-          },
-          {
-            "id": "gap-after-p55",
-            "type": "pause",
-            "top": 27685.15625,
-            "bottom": 27820.15625,
-            "height": 135
-          },
-          {
-            "id": "gap-after-p56",
-            "type": "pause",
-            "top": 28342.28125,
-            "bottom": 28388.28125,
-            "height": 46
-          },
-          {
-            "id": "voice-03-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 28388.28125,
-            "bottom": 28435.625,
-            "height": 47.34375
-          },
-          {
-            "id": "voice-03-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 28560.9375,
-            "bottom": 28608.28125,
-            "height": 47.34375
-          },
-          {
-            "id": "gap-after-p57",
-            "type": "pause",
-            "top": 29088.625,
-            "bottom": 29134.625,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p58",
-            "type": "pause",
-            "top": 29573.203125,
-            "bottom": 29595.203125,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p59",
-            "type": "pause",
-            "top": 30065.109375,
-            "bottom": 30137.109375,
-            "height": 72
-          },
-          {
-            "id": "gap-after-p60",
-            "type": "pause",
-            "top": 30586.125,
-            "bottom": 30608.125,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p61",
-            "type": "pause",
-            "top": 31088.46875,
-            "bottom": 31134.46875,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p62",
-            "type": "pause",
-            "top": 31541.703125,
-            "bottom": 31563.703125,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p63",
-            "type": "pause",
-            "top": 32085.828125,
-            "bottom": 32107.828125,
-            "height": 22
-          },
-          {
-            "id": "pause-06",
-            "type": "pause",
-            "top": 32598.609375,
-            "bottom": 32838.609375,
-            "height": 240
-          },
-          {
-            "id": "gap-after-p65",
-            "type": "pause",
-            "top": 33266.75,
-            "bottom": 33312.75,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p66",
-            "type": "pause",
-            "top": 33772.203125,
-            "bottom": 33818.203125,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p67",
-            "type": "pause",
-            "top": 34267.21875,
-            "bottom": 34289.21875,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p68",
-            "type": "pause",
-            "top": 34759.125,
-            "bottom": 34781.125,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p69",
-            "type": "pause",
-            "top": 35303.25,
-            "bottom": 35325.25,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p70",
-            "type": "pause",
-            "top": 35763.828125,
-            "bottom": 35837.828125,
-            "height": 74
-          },
-          {
-            "id": "gap-after-p71",
-            "type": "pause",
-            "top": 36359.953125,
-            "bottom": 36449.953125,
-            "height": 90
-          },
-          {
-            "id": "gap-after-p72",
-            "type": "pause",
-            "top": 36930.296875,
-            "bottom": 36976.296875,
-            "height": 46
-          },
-          {
-            "id": "voice-05-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 36976.296875,
-            "bottom": 37047.140625,
-            "height": 70.84375
-          },
-          {
-            "id": "voice-05-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 37155.453125,
-            "bottom": 37226.296875,
-            "height": 70.84375
-          },
-          {
-            "id": "gap-after-p73",
-            "type": "pause",
-            "top": 37748.421875,
-            "bottom": 37794.421875,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p74",
-            "type": "pause",
-            "top": 38274.765625,
-            "bottom": 38296.765625,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p75",
-            "type": "pause",
-            "top": 38745.78125,
-            "bottom": 38767.78125,
-            "height": 22
-          },
-          {
-            "id": "gap-after-p76",
-            "type": "pause",
-            "top": 39289.90625,
-            "bottom": 39335.90625,
-            "height": 46
-          },
-          {
-            "id": "voice-06-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 39335.90625,
-            "bottom": 39396.75,
-            "height": 60.84375
-          },
-          {
-            "id": "voice-06-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 39505.0625,
-            "bottom": 39565.90625,
-            "height": 60.84375
-          },
-          {
-            "id": "pause-07",
-            "type": "pause",
-            "top": 39565.90625,
-            "bottom": 39985.90625,
-            "height": 420
-          },
-          {
-            "id": "p77-image-top",
-            "type": "source-art-empty-band",
-            "top": 39985.90625,
-            "bottom": 40037.283125,
-            "height": 51.376875,
-            "panelId": "p77",
-            "rangeFraction": [
-              0,
-              0.12
-            ],
-            "reason": "木札の音と反応が現れる前の絵の上の無情報帯"
-          },
-          {
-            "id": "gap-after-p77",
-            "type": "pause",
-            "top": 40414.046875,
-            "bottom": 40460.046875,
-            "height": 46
-          },
-          {
-            "id": "gap-after-p78",
-            "type": "pause",
-            "top": 40919.5,
-            "bottom": 40997.5,
-            "height": 78
-          },
-          {
-            "id": "gap-after-p79",
-            "type": "pause",
-            "top": 41488.28125,
-            "bottom": 41510.28125,
-            "height": 22
-          },
-          {
-            "id": "voice-04-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 41510.28125,
-            "bottom": 41531.1953125,
-            "height": 20.9140625
-          },
-          {
-            "id": "voice-04-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 41649.3671875,
-            "bottom": 41670.28125,
-            "height": 20.9140625
+            "id": "gap-002",
+            "height": 24.7890625,
+            "candidates": [
+              {
+                "id": "voice-00-after-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 736.609375,
+            "bottom": 760,
+            "id": "gap-003",
+            "height": 23.390625,
+            "candidates": [
+              {
+                "id": "c01",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 974.640625,
+            "bottom": 1144.640625,
+            "id": "gap-004",
+            "height": 170,
+            "candidates": [
+              {
+                "id": "pause-01",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 1395.234375,
+            "bottom": 1534.640625,
+            "id": "gap-005",
+            "height": 139.40625,
+            "candidates": [
+              {
+                "id": "c02",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 1978.4375,
+            "bottom": 2024.4375,
+            "id": "gap-006",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p04",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 2303.03125,
+            "bottom": 2374.4375,
+            "id": "gap-007",
+            "height": 71.40625,
+            "candidates": [
+              {
+                "id": "c03",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 2492.796630859375,
+            "bottom": 2574.1875,
+            "id": "gap-008",
+            "height": 81.390869140625,
+            "candidates": [
+              {
+                "id": "gap-after-p07",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 3014.203125,
+            "bottom": 3044.1875,
+            "id": "gap-009",
+            "height": 29.984375,
+            "candidates": [
+              {
+                "id": "c04",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 3409.671875,
+            "bottom": 3473.9375,
+            "id": "gap-010",
+            "height": 64.265625,
+            "candidates": [
+              {
+                "id": "gap-after-p09",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "p10-source-empty-0-0.07",
+                "kind": "source-art-empty-band"
+              },
+              {
+                "id": "c05",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 3744.734375,
+            "bottom": 3845.671875,
+            "id": "gap-011",
+            "height": 100.9375,
+            "candidates": [
+              {
+                "id": "c05",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 4140.8125,
+            "bottom": 4237.65625,
+            "id": "gap-012",
+            "height": 96.84375,
+            "candidates": [
+              {
+                "id": "gap-after-p12",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-12-before-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 4345.96875,
+            "bottom": 4586.8125,
+            "id": "gap-013",
+            "height": 240.84375,
+            "candidates": [
+              {
+                "id": "pause-02",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-12-after-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 5072.90625,
+            "bottom": 5146.8125,
+            "id": "gap-014",
+            "height": 73.90625,
+            "candidates": [
+              {
+                "id": "c06",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 5606.265625,
+            "bottom": 5695.0703125,
+            "id": "gap-015",
+            "height": 88.8046875,
+            "candidates": [
+              {
+                "id": "gap-after-p15",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-15-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c06",
+                "kind": "composition-canvas"
+              },
+              {
+                "id": "c07",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 5845.4921875,
+            "bottom": 5880.28125,
+            "id": "gap-016",
+            "height": 34.7890625,
+            "candidates": [
+              {
+                "id": "voice-15-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c07",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6320.296875,
+            "bottom": 6374.109375,
+            "id": "gap-017",
+            "height": 53.8125,
+            "candidates": [
+              {
+                "id": "gap-after-p16",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-01-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c08",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6520.484375,
+            "bottom": 6532.296875,
+            "id": "gap-018",
+            "height": 11.8125,
+            "candidates": [
+              {
+                "id": "voice-01-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c08",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6972.3125,
+            "bottom": 7018.3125,
+            "id": "gap-019",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p17",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 7501.265625,
+            "bottom": 7548.3125,
+            "id": "gap-020",
+            "height": 47.046875,
+            "candidates": [
+              {
+                "id": "c09",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 8031.265625,
+            "bottom": 8077.265625,
+            "id": "gap-021",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p20",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 8361.859375,
+            "bottom": 8477.265625,
+            "id": "gap-022",
+            "height": 115.40625,
+            "candidates": [
+              {
+                "id": "c10",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 8960.21875,
+            "bottom": 9032.21875,
+            "id": "gap-023",
+            "height": 72,
+            "candidates": [
+              {
+                "id": "gap-after-p23",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 9568.828125,
+            "bottom": 9718.828125,
+            "id": "gap-024",
+            "height": 150,
+            "candidates": [
+              {
+                "id": "pause-03",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 10126.0625,
+            "bottom": 10218.828125,
+            "id": "gap-025",
+            "height": 92.765625,
+            "candidates": [
+              {
+                "id": "c12",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 10637.375,
+            "bottom": 10659.390625,
+            "id": "gap-026",
+            "height": 22.015625,
+            "candidates": [
+              {
+                "id": "gap-after-p26",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c12",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 10828.390625,
+            "bottom": 10909.390625,
+            "id": "gap-027",
+            "height": 81,
+            "candidates": [
+              {
+                "id": "c13",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 11196.5625,
+            "bottom": 11209.390625,
+            "id": "gap-028",
+            "height": 12.828125,
+            "candidates": [
+              {
+                "id": "c13",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 11679.296875,
+            "bottom": 11701.296875,
+            "id": "gap-029",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p29",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 12560.578125,
+            "bottom": 12581.296875,
+            "id": "gap-030",
+            "height": 20.71875,
+            "candidates": [
+              {
+                "id": "c14",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 13278.875,
+            "bottom": 13360.578125,
+            "id": "gap-031",
+            "height": 81.703125,
+            "candidates": [
+              {
+                "id": "c15",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 13628.875,
+            "bottom": 13674.875,
+            "id": "gap-032",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p34",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 13977.6875,
+            "bottom": 14074.875,
+            "id": "gap-033",
+            "height": 97.1875,
+            "candidates": [
+              {
+                "id": "c16",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 14557.828125,
+            "bottom": 14653.828125,
+            "id": "gap-034",
+            "height": 96,
+            "candidates": [
+              {
+                "id": "gap-after-p37",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 14959.328125,
+            "bottom": 15053.828125,
+            "id": "gap-035",
+            "height": 94.5,
+            "candidates": [
+              {
+                "id": "c17",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 15536.78125,
+            "bottom": 15756.78125,
+            "id": "gap-036",
+            "height": 220,
+            "candidates": [
+              {
+                "id": "pause-04",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 16196.796875,
+            "bottom": 16206.78125,
+            "id": "gap-037",
+            "height": 9.984375,
+            "candidates": [
+              {
+                "id": "c18",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 16624.484375,
+            "bottom": 16646.484375,
+            "id": "gap-038",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p42",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 17187.953125,
+            "bottom": 17206.484375,
+            "id": "gap-039",
+            "height": 18.53125,
+            "candidates": [
+              {
+                "id": "c19",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 17415.40625,
+            "bottom": 17461.40625,
+            "id": "gap-040",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p45",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 17863.859375,
+            "bottom": 17911.40625,
+            "id": "gap-041",
+            "height": 47.546875,
+            "candidates": [
+              {
+                "id": "c20",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 18303,
+            "bottom": 18381.40625,
+            "id": "gap-042",
+            "height": 78.40625,
+            "candidates": [
+              {
+                "id": "c20",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 18891.1875,
+            "bottom": 19071.1875,
+            "id": "gap-043",
+            "height": 180,
+            "candidates": [
+              {
+                "id": "pause-05",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 19511.203125,
+            "bottom": 19571.1875,
+            "id": "gap-044",
+            "height": 59.984375,
+            "candidates": [
+              {
+                "id": "c21",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 19946.8125,
+            "bottom": 19968.8125,
+            "id": "gap-045",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p50",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 20255.984375,
+            "bottom": 20318.8125,
+            "id": "gap-046",
+            "height": 62.828125,
+            "candidates": [
+              {
+                "id": "c22",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 20801.765625,
+            "bottom": 20847.765625,
+            "id": "gap-047",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p52",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 21442.90625,
+            "bottom": 21497.765625,
+            "id": "gap-048",
+            "height": 54.859375,
+            "candidates": [
+              {
+                "id": "c23",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 21980.71875,
+            "bottom": 22115.71875,
+            "id": "gap-049",
+            "height": 135,
+            "candidates": [
+              {
+                "id": "gap-after-p55",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 22518.171875,
+            "bottom": 22635.71875,
+            "id": "gap-050",
+            "height": 117.546875,
+            "candidates": [
+              {
+                "id": "voice-03-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c24",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 23145.5,
+            "bottom": 23191.5,
+            "id": "gap-051",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p57",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 23609.203125,
+            "bottom": 23671.5,
+            "id": "gap-052",
+            "height": 62.296875,
+            "candidates": [
+              {
+                "id": "c25",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 24154.453125,
+            "bottom": 24226.453125,
+            "id": "gap-053",
+            "height": 72,
+            "candidates": [
+              {
+                "id": "gap-after-p59",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 24644.15625,
+            "bottom": 24676.453125,
+            "id": "gap-054",
+            "height": 32.296875,
+            "candidates": [
+              {
+                "id": "c26",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 25078.90625,
+            "bottom": 25126.453125,
+            "id": "gap-055",
+            "height": 47.546875,
+            "candidates": [
+              {
+                "id": "c26",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 25609.40625,
+            "bottom": 25631.40625,
+            "id": "gap-056",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p62",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 25944.671875,
+            "bottom": 26031.40625,
+            "id": "gap-057",
+            "height": 86.734375,
+            "candidates": [
+              {
+                "id": "c27",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 26514.359375,
+            "bottom": 26754.359375,
+            "id": "gap-058",
+            "height": 240,
+            "candidates": [
+              {
+                "id": "pause-06",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 27210.484375,
+            "bottom": 27304.359375,
+            "id": "gap-059",
+            "height": 93.875,
+            "candidates": [
+              {
+                "id": "c28",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 27591.53125,
+            "bottom": 27637.53125,
+            "id": "gap-060",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p66",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 27924.703125,
+            "bottom": 28017.53125,
+            "id": "gap-061",
+            "height": 92.828125,
+            "candidates": [
+              {
+                "id": "c29",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 28487.4375,
+            "bottom": 28509.4375,
+            "id": "gap-062",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p68",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 28965.5625,
+            "bottom": 29049.4375,
+            "id": "gap-063",
+            "height": 83.875,
+            "candidates": [
+              {
+                "id": "c30",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 29240.953125,
+            "bottom": 29314.953125,
+            "id": "gap-064",
+            "height": 74,
+            "candidates": [
+              {
+                "id": "gap-after-p70",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 29797.90625,
+            "bottom": 29874.953125,
+            "id": "gap-065",
+            "height": 77.046875,
+            "candidates": [
+              {
+                "id": "c31",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 30331.078125,
+            "bottom": 30377.078125,
+            "id": "gap-066",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p72",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 30806.359375,
+            "bottom": 30877.078125,
+            "id": "gap-067",
+            "height": 70.71875,
+            "candidates": [
+              {
+                "id": "c32",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 31320.875,
+            "bottom": 31342.875,
+            "id": "gap-068",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p74",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 31772.15625,
+            "bottom": 31822.875,
+            "id": "gap-069",
+            "height": 50.71875,
+            "candidates": [
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 32305.828125,
+            "bottom": 32403.71875,
+            "id": "gap-070",
+            "height": 97.890625,
+            "candidates": [
+              {
+                "id": "voice-06-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 32512.03125,
+            "bottom": 32992.875,
+            "id": "gap-071",
+            "height": 480.84375,
+            "candidates": [
+              {
+                "id": "pause-07",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-06-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 33219.203125,
+            "bottom": 33342.875,
+            "id": "gap-072",
+            "height": 123.671875,
+            "candidates": [
+              {
+                "id": "c34",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 33852.65625,
+            "bottom": 33930.65625,
+            "id": "gap-073",
+            "height": 78,
+            "candidates": [
+              {
+                "id": "gap-after-p78",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 34374.453125,
+            "bottom": 34426.5703125,
+            "id": "gap-074",
+            "height": 52.1171875,
+            "candidates": [
+              {
+                "id": "voice-04-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c35",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 34544.7421875,
+            "bottom": 34595.65625,
+            "id": "gap-075",
+            "height": 50.9140625,
+            "candidates": [
+              {
+                "id": "voice-04-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c35",
+                "kind": "composition-canvas"
+              }
+            ]
           }
         ],
         "union": [
           {
             "top": 0,
             "bottom": 24.7890625,
-            "ids": [
-              "voice-00-before-copy"
+            "id": "gap-001",
+            "height": 24.7890625,
+            "candidates": [
+              {
+                "id": "voice-00-before-copy",
+                "kind": "text-empty-band"
+              }
             ]
           },
           {
             "top": 175.2109375,
             "bottom": 200,
-            "ids": [
-              "voice-00-after-copy"
-            ]
-          },
-          {
-            "top": 722.125,
-            "bottom": 768.125,
-            "ids": [
-              "gap-after-p01"
-            ]
-          },
-          {
-            "top": 1227.578125,
-            "bottom": 1397.578125,
-            "ids": [
-              "pause-01"
-            ]
-          },
-          {
-            "top": 1825.71875,
-            "bottom": 1899.71875,
-            "ids": [
-              "gap-after-p03"
-            ]
-          },
-          {
-            "top": 2421.84375,
-            "bottom": 2467.84375,
-            "ids": [
-              "gap-after-p04"
-            ]
-          },
-          {
-            "top": 2989.96875,
-            "bottom": 3011.96875,
-            "ids": [
-              "gap-after-p05"
-            ]
-          },
-          {
-            "top": 3492.3125,
-            "bottom": 3514.3125,
-            "ids": [
-              "gap-after-p06"
-            ]
-          },
-          {
-            "top": 3890.234375,
-            "bottom": 3976.234375,
-            "ids": [
-              "gap-after-p07"
-            ]
-          },
-          {
-            "top": 4498.359375,
-            "bottom": 4520.359375,
-            "ids": [
-              "gap-after-p08"
+            "id": "gap-002",
+            "height": 24.7890625,
+            "candidates": [
+              {
+                "id": "voice-00-after-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 736.609375,
+            "bottom": 760,
+            "id": "gap-003",
+            "height": 23.390625,
+            "candidates": [
+              {
+                "id": "c01",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 974.640625,
+            "bottom": 1144.640625,
+            "id": "gap-004",
+            "height": 170,
+            "candidates": [
+              {
+                "id": "pause-01",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 1395.234375,
+            "bottom": 1534.640625,
+            "id": "gap-005",
+            "height": 139.40625,
+            "candidates": [
+              {
+                "id": "c02",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 1978.4375,
+            "bottom": 2024.4375,
+            "id": "gap-006",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p04",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 2303.03125,
+            "bottom": 2374.4375,
+            "id": "gap-007",
+            "height": 71.40625,
+            "candidates": [
+              {
+                "id": "c03",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 2492.796630859375,
+            "bottom": 2574.1875,
+            "id": "gap-008",
+            "height": 81.390869140625,
+            "candidates": [
+              {
+                "id": "gap-after-p07",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 3014.203125,
+            "bottom": 3044.1875,
+            "id": "gap-009",
+            "height": 29.984375,
+            "candidates": [
+              {
+                "id": "c04",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 3409.671875,
+            "bottom": 3473.9375,
+            "id": "gap-010",
+            "height": 64.265625,
+            "candidates": [
+              {
+                "id": "gap-after-p09",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "p10-source-empty-0-0.07",
+                "kind": "source-art-empty-band"
+              },
+              {
+                "id": "c05",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 3744.734375,
+            "bottom": 3845.671875,
+            "id": "gap-011",
+            "height": 100.9375,
+            "candidates": [
+              {
+                "id": "c05",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 4140.8125,
+            "bottom": 4237.65625,
+            "id": "gap-012",
+            "height": 96.84375,
+            "candidates": [
+              {
+                "id": "gap-after-p12",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-12-before-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 4345.96875,
+            "bottom": 4586.8125,
+            "id": "gap-013",
+            "height": 240.84375,
+            "candidates": [
+              {
+                "id": "pause-02",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-12-after-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 5072.90625,
+            "bottom": 5146.8125,
+            "id": "gap-014",
+            "height": 73.90625,
+            "candidates": [
+              {
+                "id": "c06",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 5606.265625,
+            "bottom": 5695.0703125,
+            "id": "gap-015",
+            "height": 88.8046875,
+            "candidates": [
+              {
+                "id": "gap-after-p15",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-15-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c06",
+                "kind": "composition-canvas"
+              },
+              {
+                "id": "c07",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 5845.4921875,
+            "bottom": 5880.28125,
+            "id": "gap-016",
+            "height": 34.7890625,
+            "candidates": [
+              {
+                "id": "voice-15-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c07",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6320.296875,
+            "bottom": 6374.109375,
+            "id": "gap-017",
+            "height": 53.8125,
+            "candidates": [
+              {
+                "id": "gap-after-p16",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-01-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c08",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6520.484375,
+            "bottom": 6532.296875,
+            "id": "gap-018",
+            "height": 11.8125,
+            "candidates": [
+              {
+                "id": "voice-01-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c08",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6972.3125,
+            "bottom": 7018.3125,
+            "id": "gap-019",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p17",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 7501.265625,
+            "bottom": 7548.3125,
+            "id": "gap-020",
+            "height": 47.046875,
+            "candidates": [
+              {
+                "id": "c09",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 8031.265625,
+            "bottom": 8077.265625,
+            "id": "gap-021",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p20",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 8361.859375,
+            "bottom": 8477.265625,
+            "id": "gap-022",
+            "height": 115.40625,
+            "candidates": [
+              {
+                "id": "c10",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 8960.21875,
+            "bottom": 9032.21875,
+            "id": "gap-023",
+            "height": 72,
+            "candidates": [
+              {
+                "id": "gap-after-p23",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 9568.828125,
+            "bottom": 9718.828125,
+            "id": "gap-024",
+            "height": 150,
+            "candidates": [
+              {
+                "id": "pause-03",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 10126.0625,
+            "bottom": 10218.828125,
+            "id": "gap-025",
+            "height": 92.765625,
+            "candidates": [
+              {
+                "id": "c12",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 10637.375,
+            "bottom": 10659.390625,
+            "id": "gap-026",
+            "height": 22.015625,
+            "candidates": [
+              {
+                "id": "gap-after-p26",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c12",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 10828.390625,
+            "bottom": 10909.390625,
+            "id": "gap-027",
+            "height": 81,
+            "candidates": [
+              {
+                "id": "c13",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 11196.5625,
+            "bottom": 11209.390625,
+            "id": "gap-028",
+            "height": 12.828125,
+            "candidates": [
+              {
+                "id": "c13",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 11679.296875,
+            "bottom": 11701.296875,
+            "id": "gap-029",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p29",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 12560.578125,
+            "bottom": 12581.296875,
+            "id": "gap-030",
+            "height": 20.71875,
+            "candidates": [
+              {
+                "id": "c14",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 13278.875,
+            "bottom": 13360.578125,
+            "id": "gap-031",
+            "height": 81.703125,
+            "candidates": [
+              {
+                "id": "c15",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 13628.875,
+            "bottom": 13674.875,
+            "id": "gap-032",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p34",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 13977.6875,
+            "bottom": 14074.875,
+            "id": "gap-033",
+            "height": 97.1875,
+            "candidates": [
+              {
+                "id": "c16",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 14557.828125,
+            "bottom": 14653.828125,
+            "id": "gap-034",
+            "height": 96,
+            "candidates": [
+              {
+                "id": "gap-after-p37",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 14959.328125,
+            "bottom": 15053.828125,
+            "id": "gap-035",
+            "height": 94.5,
+            "candidates": [
+              {
+                "id": "c17",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 15536.78125,
+            "bottom": 15756.78125,
+            "id": "gap-036",
+            "height": 220,
+            "candidates": [
+              {
+                "id": "pause-04",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 16196.796875,
+            "bottom": 16206.78125,
+            "id": "gap-037",
+            "height": 9.984375,
+            "candidates": [
+              {
+                "id": "c18",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 16624.484375,
+            "bottom": 16646.484375,
+            "id": "gap-038",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p42",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 17187.953125,
+            "bottom": 17206.484375,
+            "id": "gap-039",
+            "height": 18.53125,
+            "candidates": [
+              {
+                "id": "c19",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 17415.40625,
+            "bottom": 17461.40625,
+            "id": "gap-040",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p45",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 17863.859375,
+            "bottom": 17911.40625,
+            "id": "gap-041",
+            "height": 47.546875,
+            "candidates": [
+              {
+                "id": "c20",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 18303,
+            "bottom": 18381.40625,
+            "id": "gap-042",
+            "height": 78.40625,
+            "candidates": [
+              {
+                "id": "c20",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 18891.1875,
+            "bottom": 19071.1875,
+            "id": "gap-043",
+            "height": 180,
+            "candidates": [
+              {
+                "id": "pause-05",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 19511.203125,
+            "bottom": 19571.1875,
+            "id": "gap-044",
+            "height": 59.984375,
+            "candidates": [
+              {
+                "id": "c21",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 19946.8125,
+            "bottom": 19968.8125,
+            "id": "gap-045",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p50",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 20255.984375,
+            "bottom": 20318.8125,
+            "id": "gap-046",
+            "height": 62.828125,
+            "candidates": [
+              {
+                "id": "c22",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 20801.765625,
+            "bottom": 20847.765625,
+            "id": "gap-047",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p52",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 21442.90625,
+            "bottom": 21497.765625,
+            "id": "gap-048",
+            "height": 54.859375,
+            "candidates": [
+              {
+                "id": "c23",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 21980.71875,
+            "bottom": 22115.71875,
+            "id": "gap-049",
+            "height": 135,
+            "candidates": [
+              {
+                "id": "gap-after-p55",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 22518.171875,
+            "bottom": 22635.71875,
+            "id": "gap-050",
+            "height": 117.546875,
+            "candidates": [
+              {
+                "id": "voice-03-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c24",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 23145.5,
+            "bottom": 23191.5,
+            "id": "gap-051",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p57",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 23609.203125,
+            "bottom": 23671.5,
+            "id": "gap-052",
+            "height": 62.296875,
+            "candidates": [
+              {
+                "id": "c25",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 24154.453125,
+            "bottom": 24226.453125,
+            "id": "gap-053",
+            "height": 72,
+            "candidates": [
+              {
+                "id": "gap-after-p59",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 24644.15625,
+            "bottom": 24676.453125,
+            "id": "gap-054",
+            "height": 32.296875,
+            "candidates": [
+              {
+                "id": "c26",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 25078.90625,
+            "bottom": 25126.453125,
+            "id": "gap-055",
+            "height": 47.546875,
+            "candidates": [
+              {
+                "id": "c26",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 25609.40625,
+            "bottom": 25631.40625,
+            "id": "gap-056",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p62",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 25944.671875,
+            "bottom": 26031.40625,
+            "id": "gap-057",
+            "height": 86.734375,
+            "candidates": [
+              {
+                "id": "c27",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 26514.359375,
+            "bottom": 26754.359375,
+            "id": "gap-058",
+            "height": 240,
+            "candidates": [
+              {
+                "id": "pause-06",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 27210.484375,
+            "bottom": 27304.359375,
+            "id": "gap-059",
+            "height": 93.875,
+            "candidates": [
+              {
+                "id": "c28",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 27591.53125,
+            "bottom": 27637.53125,
+            "id": "gap-060",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p66",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 27924.703125,
+            "bottom": 28017.53125,
+            "id": "gap-061",
+            "height": 92.828125,
+            "candidates": [
+              {
+                "id": "c29",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 28487.4375,
+            "bottom": 28509.4375,
+            "id": "gap-062",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p68",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 28965.5625,
+            "bottom": 29049.4375,
+            "id": "gap-063",
+            "height": 83.875,
+            "candidates": [
+              {
+                "id": "c30",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 29240.953125,
+            "bottom": 29314.953125,
+            "id": "gap-064",
+            "height": 74,
+            "candidates": [
+              {
+                "id": "gap-after-p70",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 29797.90625,
+            "bottom": 29874.953125,
+            "id": "gap-065",
+            "height": 77.046875,
+            "candidates": [
+              {
+                "id": "c31",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 30331.078125,
+            "bottom": 30377.078125,
+            "id": "gap-066",
+            "height": 46,
+            "candidates": [
+              {
+                "id": "gap-after-p72",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 30806.359375,
+            "bottom": 30877.078125,
+            "id": "gap-067",
+            "height": 70.71875,
+            "candidates": [
+              {
+                "id": "c32",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 31320.875,
+            "bottom": 31342.875,
+            "id": "gap-068",
+            "height": 22,
+            "candidates": [
+              {
+                "id": "gap-after-p74",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 31772.15625,
+            "bottom": 31822.875,
+            "id": "gap-069",
+            "height": 50.71875,
+            "candidates": [
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 32305.828125,
+            "bottom": 32403.71875,
+            "id": "gap-070",
+            "height": 97.890625,
+            "candidates": [
+              {
+                "id": "voice-06-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 32512.03125,
+            "bottom": 32992.875,
+            "id": "gap-071",
+            "height": 480.84375,
+            "candidates": [
+              {
+                "id": "pause-07",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-06-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 33219.203125,
+            "bottom": 33342.875,
+            "id": "gap-072",
+            "height": 123.671875,
+            "candidates": [
+              {
+                "id": "c34",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 33852.65625,
+            "bottom": 33930.65625,
+            "id": "gap-073",
+            "height": 78,
+            "candidates": [
+              {
+                "id": "gap-after-p78",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 34374.453125,
+            "bottom": 34426.5703125,
+            "id": "gap-074",
+            "height": 52.1171875,
+            "candidates": [
+              {
+                "id": "voice-04-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c35",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 34544.7421875,
+            "bottom": 34595.65625,
+            "id": "gap-075",
+            "height": 50.9140625,
+            "candidates": [
+              {
+                "id": "voice-04-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c35",
+                "kind": "composition-canvas"
+              }
             ]
-          },
-          {
-            "top": 5011.140625,
-            "bottom": 5088.57171875,
-            "ids": [
-              "gap-after-p09",
-              "p10-image-top"
-            ]
-          },
+          }
+        ],
+        "occupiedUnion": [
           {
-            "top": 5506.15625,
-            "bottom": 5528.15625,
+            "top": 24.7890625,
+            "bottom": 175.2109375,
             "ids": [
-              "gap-after-p10"
+              "voice-00"
             ]
           },
           {
-            "top": 5956.296875,
-            "bottom": 6012.296875,
+            "top": 200,
+            "bottom": 736.609375,
             "ids": [
-              "gap-after-p11"
+              "p01",
+              "p01"
             ]
           },
           {
-            "top": 6388.21875,
-            "bottom": 6485.0625,
+            "top": 760,
+            "bottom": 974.640625,
             "ids": [
-              "gap-after-p12",
-              "voice-12-before-copy"
+              "p02",
+              "p02",
+              "p02"
             ]
           },
           {
-            "top": 6593.375,
-            "bottom": 6834.21875,
+            "top": 1144.640625,
+            "bottom": 1395.234375,
             "ids": [
-              "voice-12-after-copy",
-              "pause-02"
+              "p03",
+              "p03"
             ]
           },
           {
-            "top": 7356.34375,
-            "bottom": 7378.34375,
+            "top": 1534.640625,
+            "bottom": 1978.4375,
             "ids": [
-              "gap-after-p13"
+              "p04",
+              "p04"
             ]
           },
           {
-            "top": 7858.6875,
-            "bottom": 7880.6875,
+            "top": 2024.4375,
+            "bottom": 2303.03125,
             "ids": [
-              "gap-after-p14"
+              "p05",
+              "p05",
+              "p06",
+              "p06"
             ]
           },
           {
-            "top": 8402.8125,
-            "bottom": 8491.6015625,
+            "top": 2374.4375,
+            "bottom": 2492.796630859375,
             "ids": [
-              "gap-after-p15",
-              "voice-15-before-copy"
+              "p07",
+              "p07"
             ]
           },
           {
-            "top": 8642.0234375,
-            "bottom": 8666.8125,
+            "top": 2574.1875,
+            "bottom": 3014.203125,
             "ids": [
-              "voice-15-after-copy"
+              "p08",
+              "p08",
+              "p08"
             ]
           },
           {
-            "top": 9188.9375,
-            "bottom": 9242.75,
+            "top": 3044.1875,
+            "bottom": 3409.671875,
             "ids": [
-              "gap-after-p16",
-              "voice-01-before-copy"
+              "p09",
+              "p09"
             ]
           },
           {
-            "top": 9389.125,
-            "bottom": 9420.9375,
+            "top": 3473.9375,
+            "bottom": 3744.734375,
             "ids": [
-              "voice-01-after-copy"
+              "p10",
+              "p10",
+              "p11",
+              "p11"
             ]
           },
           {
-            "top": 9901.28125,
-            "bottom": 9947.28125,
+            "top": 3845.671875,
+            "bottom": 4140.8125,
             "ids": [
-              "gap-after-p17"
+              "p12",
+              "p12"
             ]
           },
           {
-            "top": 10417.1875,
-            "bottom": 10439.1875,
+            "top": 4237.65625,
+            "bottom": 4345.96875,
             "ids": [
-              "gap-after-p18"
+              "voice-12"
             ]
           },
           {
-            "top": 10689.78125,
-            "bottom": 10735.78125,
+            "top": 4586.8125,
+            "bottom": 5072.90625,
             "ids": [
-              "gap-after-p20"
+              "p13",
+              "p13",
+              "p14",
+              "p14",
+              "p14"
             ]
           },
           {
-            "top": 11226.5625,
-            "bottom": 11248.5625,
+            "top": 5146.8125,
+            "bottom": 5606.265625,
             "ids": [
-              "gap-after-p21"
+              "p15",
+              "p15"
             ]
           },
           {
-            "top": 11676.703125,
-            "bottom": 11698.703125,
+            "top": 5695.0703125,
+            "bottom": 5845.4921875,
             "ids": [
-              "gap-after-p22"
+              "voice-15"
             ]
           },
           {
-            "top": 12179.046875,
-            "bottom": 12251.046875,
+            "top": 5880.28125,
+            "bottom": 6320.296875,
             "ids": [
-              "gap-after-p23"
+              "p16",
+              "p16",
+              "p16"
             ]
           },
           {
-            "top": 12773.171875,
-            "bottom": 12923.171875,
+            "top": 6374.109375,
+            "bottom": 6520.484375,
             "ids": [
-              "pause-03"
+              "voice-01"
             ]
           },
           {
-            "top": 13393.078125,
-            "bottom": 13439.078125,
+            "top": 6532.296875,
+            "bottom": 6972.3125,
             "ids": [
-              "gap-after-p25"
+              "p17",
+              "p17"
             ]
           },
           {
-            "top": 13929.859375,
-            "bottom": 13951.859375,
+            "top": 7018.3125,
+            "bottom": 7501.265625,
             "ids": [
-              "gap-after-p26"
+              "p18",
+              "p18",
+              "p19",
+              "p19"
             ]
           },
           {
-            "top": 14400.875,
-            "bottom": 14446.875,
+            "top": 7548.3125,
+            "bottom": 8031.265625,
             "ids": [
-              "gap-after-p27"
+              "p20",
+              "p20"
             ]
           },
           {
-            "top": 14948.09375,
-            "bottom": 14970.09375,
+            "top": 8077.265625,
+            "bottom": 8361.859375,
             "ids": [
-              "gap-after-p28"
+              "p21",
+              "p21",
+              "p22",
+              "p22"
             ]
           },
           {
-            "top": 15440,
-            "bottom": 15462,
+            "top": 8477.265625,
+            "bottom": 8960.21875,
             "ids": [
-              "gap-after-p29"
+              "p23",
+              "p23"
             ]
           },
           {
-            "top": 15952.78125,
-            "bottom": 15974.78125,
+            "top": 9032.21875,
+            "bottom": 9568.828125,
             "ids": [
-              "gap-after-p30"
+              "p24",
+              "p24"
             ]
           },
           {
-            "top": 16434.234375,
-            "bottom": 16456.234375,
+            "top": 9718.828125,
+            "bottom": 10126.0625,
             "ids": [
-              "gap-after-p31"
+              "p25",
+              "p25"
             ]
           },
           {
-            "top": 16978.359375,
-            "bottom": 17056.703125,
+            "top": 10218.828125,
+            "bottom": 10637.375,
             "ids": [
-              "gap-after-p32",
-              "voice-02-before-copy"
+              "p26",
+              "p26",
+              "p26"
             ]
           },
           {
-            "top": 17182.015625,
-            "bottom": 17214.359375,
+            "top": 10659.390625,
+            "bottom": 10828.390625,
             "ids": [
-              "voice-02-after-copy"
+              "p27"
             ]
           },
           {
-            "top": 17464.953125,
-            "bottom": 17510.953125,
+            "top": 10909.390625,
+            "bottom": 11196.5625,
             "ids": [
-              "gap-after-p34"
+              "p28",
+              "p28"
             ]
           },
           {
-            "top": 17980.859375,
-            "bottom": 18002.859375,
+            "top": 11209.390625,
+            "bottom": 11679.296875,
             "ids": [
-              "gap-after-p35"
+              "p29",
+              "p29"
             ]
           },
           {
-            "top": 18431,
-            "bottom": 18453,
+            "top": 11701.296875,
+            "bottom": 12560.578125,
             "ids": [
-              "gap-after-p36"
+              "p30",
+              "p30",
+              "p30",
+              "p31",
+              "p31"
             ]
           },
           {
-            "top": 18975.125,
-            "bottom": 19071.125,
+            "top": 12581.296875,
+            "bottom": 13278.875,
             "ids": [
-              "gap-after-p37"
+              "p32",
+              "p32",
+              "voice-02",
+              "p32",
+              "p33",
+              "p33"
             ]
           },
           {
-            "top": 19478.359375,
-            "bottom": 19500.359375,
+            "top": 13360.578125,
+            "bottom": 13628.875,
             "ids": [
-              "gap-after-p38"
+              "p34",
+              "p34"
             ]
           },
           {
-            "top": 19938.9375,
-            "bottom": 19960.9375,
+            "top": 13674.875,
+            "bottom": 13977.6875,
             "ids": [
-              "gap-after-p39"
+              "p35",
+              "p35",
+              "p36",
+              "p36",
+              "p36"
             ]
           },
           {
-            "top": 20483.0625,
-            "bottom": 20703.0625,
+            "top": 14074.875,
+            "bottom": 14557.828125,
             "ids": [
-              "pause-04"
+              "p37",
+              "p37",
+              "p37"
             ]
           },
           {
-            "top": 21152.078125,
-            "bottom": 21236.078125,
+            "top": 14653.828125,
+            "bottom": 14959.328125,
             "ids": [
-              "gap-after-p41"
+              "p38",
+              "p38",
+              "p39",
+              "p39"
             ]
           },
           {
-            "top": 21653.78125,
-            "bottom": 21675.78125,
+            "top": 15053.828125,
+            "bottom": 15536.78125,
             "ids": [
-              "gap-after-p42"
+              "p40",
+              "p40",
+              "p40"
             ]
           },
           {
-            "top": 22156.125,
-            "bottom": 22178.125,
+            "top": 15756.78125,
+            "bottom": 16196.796875,
             "ids": [
-              "gap-after-p43"
+              "p41"
             ]
           },
           {
-            "top": 22428.71875,
-            "bottom": 22474.71875,
+            "top": 16206.78125,
+            "bottom": 16624.484375,
             "ids": [
-              "gap-after-p45"
+              "p42",
+              "p42"
             ]
           },
           {
-            "top": 22871.515625,
-            "bottom": 22893.515625,
+            "top": 16646.484375,
+            "bottom": 17187.953125,
             "ids": [
-              "gap-after-p46"
+              "p43",
+              "p43",
+              "p44",
+              "p44"
             ]
           },
           {
-            "top": 23373.859375,
-            "bottom": 23395.859375,
+            "top": 17206.484375,
+            "bottom": 17415.40625,
             "ids": [
-              "gap-after-p47"
+              "p45",
+              "p45"
             ]
           },
           {
-            "top": 23917.984375,
-            "bottom": 24097.984375,
+            "top": 17461.40625,
+            "bottom": 17863.859375,
             "ids": [
-              "pause-05"
+              "p46",
+              "p46"
             ]
           },
           {
-            "top": 24599.203125,
-            "bottom": 24645.203125,
+            "top": 17911.40625,
+            "bottom": 18303,
             "ids": [
-              "gap-after-p49"
+              "p47",
+              "voice-p47"
             ]
           },
           {
-            "top": 25052.4375,
-            "bottom": 25074.4375,
+            "top": 18381.40625,
+            "bottom": 18891.1875,
             "ids": [
-              "gap-after-p50"
+              "p48",
+              "p48",
+              "p48",
+              "p48"
             ]
           },
           {
-            "top": 25544.34375,
-            "bottom": 25566.34375,
+            "top": 19071.1875,
+            "bottom": 19511.203125,
             "ids": [
-              "gap-after-p51"
+              "p49",
+              "p49"
             ]
           },
           {
-            "top": 26057.125,
-            "bottom": 26103.125,
+            "top": 19571.1875,
+            "bottom": 19946.8125,
             "ids": [
-              "gap-after-p52"
+              "p50",
+              "p50"
             ]
           },
           {
-            "top": 26562.578125,
-            "bottom": 26667.578125,
+            "top": 19968.8125,
+            "bottom": 20255.984375,
             "ids": [
-              "gap-after-p53"
+              "p51",
+              "p51",
+              "p51"
             ]
           },
           {
-            "top": 27064.375,
-            "bottom": 27194.375,
+            "top": 20318.8125,
+            "bottom": 20801.765625,
             "ids": [
-              "gap-after-p54"
+              "p52",
+              "p52"
             ]
           },
           {
-            "top": 27685.15625,
-            "bottom": 27820.15625,
+            "top": 20847.765625,
+            "bottom": 21442.90625,
             "ids": [
-              "gap-after-p55"
+              "p53",
+              "p53",
+              "p54",
+              "p53"
             ]
           },
           {
-            "top": 28342.28125,
-            "bottom": 28435.625,
+            "top": 21497.765625,
+            "bottom": 21980.71875,
             "ids": [
-              "gap-after-p56",
-              "voice-03-before-copy"
+              "p55",
+              "p55"
             ]
           },
           {
-            "top": 28560.9375,
-            "bottom": 28608.28125,
+            "top": 22115.71875,
+            "bottom": 22518.171875,
             "ids": [
-              "voice-03-after-copy"
+              "p56",
+              "p56",
+              "voice-03"
             ]
           },
           {
-            "top": 29088.625,
-            "bottom": 29134.625,
+            "top": 22635.71875,
+            "bottom": 23145.5,
             "ids": [
-              "gap-after-p57"
+              "p57",
+              "p57",
+              "p57"
             ]
           },
           {
-            "top": 29573.203125,
-            "bottom": 29595.203125,
+            "top": 23191.5,
+            "bottom": 23609.203125,
             "ids": [
-              "gap-after-p58"
+              "p58",
+              "p58"
             ]
           },
           {
-            "top": 30065.109375,
-            "bottom": 30137.109375,
+            "top": 23671.5,
+            "bottom": 24154.453125,
             "ids": [
-              "gap-after-p59"
+              "p59",
+              "p59"
             ]
           },
           {
-            "top": 30586.125,
-            "bottom": 30608.125,
+            "top": 24226.453125,
+            "bottom": 24644.15625,
             "ids": [
-              "gap-after-p60"
+              "p60",
+              "p60"
             ]
           },
           {
-            "top": 31088.46875,
-            "bottom": 31134.46875,
+            "top": 24676.453125,
+            "bottom": 25078.90625,
             "ids": [
-              "gap-after-p61"
+              "p61",
+              "p61"
             ]
           },
           {
-            "top": 31541.703125,
-            "bottom": 31563.703125,
+            "top": 25126.453125,
+            "bottom": 25609.40625,
             "ids": [
-              "gap-after-p62"
+              "p62",
+              "p62"
             ]
           },
           {
-            "top": 32085.828125,
-            "bottom": 32107.828125,
+            "top": 25631.40625,
+            "bottom": 25944.671875,
             "ids": [
-              "gap-after-p63"
+              "p63",
+              "p63"
             ]
           },
           {
-            "top": 32598.609375,
-            "bottom": 32838.609375,
+            "top": 26031.40625,
+            "bottom": 26514.359375,
             "ids": [
-              "pause-06"
+              "p64",
+              "p64"
             ]
           },
           {
-            "top": 33266.75,
-            "bottom": 33312.75,
+            "top": 26754.359375,
+            "bottom": 27210.484375,
             "ids": [
-              "gap-after-p65"
+              "p65",
+              "p65"
             ]
           },
           {
-            "top": 33772.203125,
-            "bottom": 33818.203125,
+            "top": 27304.359375,
+            "bottom": 27591.53125,
             "ids": [
-              "gap-after-p66"
+              "p66"
             ]
           },
           {
-            "top": 34267.21875,
-            "bottom": 34289.21875,
+            "top": 27637.53125,
+            "bottom": 27924.703125,
             "ids": [
-              "gap-after-p67"
+              "p67",
+              "p67"
             ]
           },
           {
-            "top": 34759.125,
-            "bottom": 34781.125,
+            "top": 28017.53125,
+            "bottom": 28487.4375,
             "ids": [
-              "gap-after-p68"
+              "p68",
+              "p68"
             ]
           },
           {
-            "top": 35303.25,
-            "bottom": 35325.25,
+            "top": 28509.4375,
+            "bottom": 28965.5625,
             "ids": [
-              "gap-after-p69"
+              "p69",
+              "p69",
+              "p69",
+              "p69"
             ]
           },
           {
-            "top": 35763.828125,
-            "bottom": 35837.828125,
+            "top": 29049.4375,
+            "bottom": 29240.953125,
             "ids": [
-              "gap-after-p70"
+              "p70"
             ]
           },
           {
-            "top": 36359.953125,
-            "bottom": 36449.953125,
+            "top": 29314.953125,
+            "bottom": 29797.90625,
             "ids": [
-              "gap-after-p71"
+              "p71",
+              "p71",
+              "p71",
+              "p71"
             ]
           },
           {
-            "top": 36930.296875,
-            "bottom": 37047.140625,
+            "top": 29874.953125,
+            "bottom": 30331.078125,
             "ids": [
-              "gap-after-p72",
-              "voice-05-before-copy"
+              "p72",
+              "p72"
             ]
           },
           {
-            "top": 37155.453125,
-            "bottom": 37226.296875,
+            "top": 30377.078125,
+            "bottom": 30806.359375,
             "ids": [
-              "voice-05-after-copy"
+              "p73",
+              "voice-05"
             ]
           },
           {
-            "top": 37748.421875,
-            "bottom": 37794.421875,
+            "top": 30877.078125,
+            "bottom": 31320.875,
             "ids": [
-              "gap-after-p73"
+              "p74",
+              "p74"
             ]
           },
           {
-            "top": 38274.765625,
-            "bottom": 38296.765625,
+            "top": 31342.875,
+            "bottom": 31772.15625,
             "ids": [
-              "gap-after-p74"
+              "p75",
+              "p75"
             ]
           },
           {
-            "top": 38745.78125,
-            "bottom": 38767.78125,
+            "top": 31822.875,
+            "bottom": 32305.828125,
             "ids": [
-              "gap-after-p75"
+              "p76",
+              "p76"
             ]
           },
           {
-            "top": 39289.90625,
-            "bottom": 39396.75,
+            "top": 32403.71875,
+            "bottom": 32512.03125,
             "ids": [
-              "gap-after-p76",
-              "voice-06-before-copy"
+              "voice-06"
             ]
           },
           {
-            "top": 39505.0625,
-            "bottom": 40037.283125,
+            "top": 32992.875,
+            "bottom": 33219.203125,
             "ids": [
-              "voice-06-after-copy",
-              "pause-07",
-              "p77-image-top"
+              "p77",
+              "p77"
             ]
           },
           {
-            "top": 40414.046875,
-            "bottom": 40460.046875,
+            "top": 33342.875,
+            "bottom": 33852.65625,
             "ids": [
-              "gap-after-p77"
+              "p78"
             ]
           },
           {
-            "top": 40919.5,
-            "bottom": 40997.5,
+            "top": 33930.65625,
+            "bottom": 34374.453125,
             "ids": [
-              "gap-after-p78"
+              "p79",
+              "p79",
+              "p79"
             ]
           },
           {
-            "top": 41488.28125,
-            "bottom": 41531.1953125,
+            "top": 34426.5703125,
+            "bottom": 34544.7421875,
             "ids": [
-              "gap-after-p79",
-              "voice-04-before-copy"
+              "voice-04"
             ]
           },
           {
-            "top": 41649.3671875,
-            "bottom": 41670.28125,
+            "top": 34595.65625,
+            "bottom": 35132.265625,
             "ids": [
-              "voice-04-after-copy"
+              "p80",
+              "p80",
+              "p80",
+              "p80"
             ]
           }
         ],
         "sourceArtLargeEmptyBands": [
-          "p10-image-top",
-          "p77-image-top"
+          {
+            "panelId": "p10",
+            "rangeFraction": [
+              0,
+              0.07
+            ],
+            "reason": "原画と表示窓を目視。強がりの返答の前にある上部の無情報帯。吹き出しは8%からで、この範囲に文字がない。"
+          }
         ],
-        "sourceArtReview": "All ten sheets / eighty cropped cells inspected. The two upper no-information bands are registered. Elsewhere canvas, rain, cloud, props, human acting or lettering occupies the open image background; white background around characters is not subtracted."
+        "rule": "Complement of the union of art, dialogue, SFX and floating-copy vertical spans. Visually registered large no-information source-art bands are removed from art occupation. An empty voice band overlapping a panel is occupied; shared gaps count once. White background around acting is part of the artwork."
       },
       "360": {
         "gaps": [
           {
-            "id": "voice-00-before-copy",
-            "type": "text-beat-empty-band",
             "top": 0,
             "bottom": 22.75,
-            "height": 22.75
+            "id": "gap-001",
+            "height": 22.75,
+            "candidates": [
+              {
+                "id": "voice-00-before-copy",
+                "kind": "text-empty-band"
+              }
+            ]
           },
           {
-            "id": "voice-00-after-copy",
-            "type": "text-beat-empty-band",
             "top": 161.84375,
             "bottom": 184.609375,
-            "height": 22.765625
-          },
-          {
-            "id": "gap-after-p01",
-            "type": "pause",
-            "top": 666.5625,
-            "bottom": 709.015625,
-            "height": 42.453125
-          },
-          {
-            "id": "pause-01",
-            "type": "pause",
-            "top": 1133.140625,
-            "bottom": 1290.0625,
-            "height": 156.921875
-          },
-          {
-            "id": "gap-after-p03",
-            "type": "pause",
-            "top": 1685.25,
-            "bottom": 1753.546875,
-            "height": 68.296875
-          },
-          {
-            "id": "gap-after-p04",
-            "type": "pause",
-            "top": 2235.5,
-            "bottom": 2277.953125,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p05",
-            "type": "pause",
-            "top": 2759.90625,
-            "bottom": 2780.203125,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p06",
-            "type": "pause",
-            "top": 3223.59375,
-            "bottom": 3243.890625,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p07",
-            "type": "pause",
-            "top": 3590.875,
-            "bottom": 3670.25,
-            "height": 79.375
-          },
-          {
-            "id": "gap-after-p08",
-            "type": "pause",
-            "top": 4152.203125,
-            "bottom": 4172.5,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p09",
-            "type": "pause",
-            "top": 4625.53125,
-            "bottom": 4667.984375,
-            "height": 42.453125
-          },
-          {
-            "id": "p10-image-top",
-            "type": "source-art-empty-band",
-            "top": 4667.984375,
-            "bottom": 4696.9971875,
-            "height": 29.012812500000003,
-            "panelId": "p10",
-            "rangeFraction": [
-              0,
-              0.07
-            ],
-            "reason": "返答の前にある絵の上の無情報帯。吹き出しは8%から"
-          },
-          {
-            "id": "gap-after-p10",
-            "type": "pause",
-            "top": 5082.453125,
-            "bottom": 5102.75,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p11",
-            "type": "pause",
-            "top": 5497.9375,
-            "bottom": 5549.625,
-            "height": 51.6875
-          },
-          {
-            "id": "gap-after-p12",
-            "type": "pause",
-            "top": 5896.609375,
-            "bottom": 5939.0625,
-            "height": 42.453125
-          },
-          {
-            "id": "voice-12-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 5939.0625,
-            "bottom": 5985.8828125,
-            "height": 46.8203125
-          },
-          {
-            "id": "voice-12-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 6086.0859375,
-            "bottom": 6132.90625,
-            "height": 46.8203125
-          },
-          {
-            "id": "pause-02",
-            "type": "pause",
-            "top": 6132.90625,
-            "bottom": 6308.28125,
-            "height": 175.375
-          },
-          {
-            "id": "gap-after-p13",
-            "type": "pause",
-            "top": 6790.234375,
-            "bottom": 6810.53125,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p14",
-            "type": "pause",
-            "top": 7253.921875,
-            "bottom": 7274.21875,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p15",
-            "type": "pause",
-            "top": 7756.171875,
-            "bottom": 7815.234375,
-            "height": 59.0625
-          },
-          {
-            "id": "voice-15-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 7815.234375,
-            "bottom": 7837.984375,
-            "height": 22.75
-          },
-          {
-            "id": "voice-15-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 7977.078125,
-            "bottom": 7999.84375,
-            "height": 22.765625
-          },
-          {
-            "id": "gap-after-p16",
-            "type": "pause",
-            "top": 8481.796875,
-            "bottom": 8502.09375,
-            "height": 20.296875
-          },
-          {
-            "id": "voice-01-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 8502.09375,
-            "bottom": 8530.6953125,
-            "height": 28.6015625
-          },
-          {
-            "id": "voice-01-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 8667.3359375,
-            "bottom": 8695.9375,
-            "height": 28.6015625
-          },
-          {
-            "id": "gap-after-p17",
-            "type": "pause",
-            "top": 9139.328125,
-            "bottom": 9181.78125,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p18",
-            "type": "pause",
-            "top": 9615.546875,
-            "bottom": 9635.84375,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p20",
-            "type": "pause",
-            "top": 9867.171875,
-            "bottom": 9909.625,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p21",
-            "type": "pause",
-            "top": 10362.65625,
-            "bottom": 10382.953125,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p22",
-            "type": "pause",
-            "top": 10778.140625,
-            "bottom": 10798.4375,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p23",
-            "type": "pause",
-            "top": 11241.828125,
-            "bottom": 11308.28125,
-            "height": 66.453125
-          },
-          {
-            "id": "pause-03",
-            "type": "pause",
-            "top": 11790.234375,
-            "bottom": 11928.6875,
-            "height": 138.453125
-          },
-          {
-            "id": "gap-after-p25",
-            "type": "pause",
-            "top": 12362.453125,
-            "bottom": 12404.90625,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p26",
-            "type": "pause",
-            "top": 12857.9375,
-            "bottom": 12878.234375,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p27",
-            "type": "pause",
-            "top": 13292.703125,
-            "bottom": 13335.15625,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p28",
-            "type": "pause",
-            "top": 13797.828125,
-            "bottom": 13818.125,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p29",
-            "type": "pause",
-            "top": 14251.890625,
-            "bottom": 14272.1875,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p30",
-            "type": "pause",
-            "top": 14725.21875,
-            "bottom": 14745.515625,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p31",
-            "type": "pause",
-            "top": 15169.640625,
-            "bottom": 15189.9375,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p32",
-            "type": "pause",
-            "top": 15671.890625,
-            "bottom": 15714.34375,
-            "height": 42.453125
-          },
-          {
-            "id": "voice-02-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 15714.34375,
-            "bottom": 15743.4296875,
-            "height": 29.0859375
-          },
-          {
-            "id": "voice-02-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 15860.6328125,
-            "bottom": 15889.71875,
-            "height": 29.0859375
-          },
-          {
-            "id": "gap-after-p34",
-            "type": "pause",
-            "top": 16121.046875,
-            "bottom": 16163.5,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p35",
-            "type": "pause",
-            "top": 16597.265625,
-            "bottom": 16617.5625,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p36",
-            "type": "pause",
-            "top": 17012.75,
-            "bottom": 17033.046875,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p37",
-            "type": "pause",
-            "top": 17515,
-            "bottom": 17603.609375,
-            "height": 88.609375
-          },
-          {
-            "id": "gap-after-p38",
-            "type": "pause",
-            "top": 17979.53125,
-            "bottom": 17999.828125,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p39",
-            "type": "pause",
-            "top": 18404.65625,
-            "bottom": 18424.953125,
-            "height": 20.296875
-          },
-          {
-            "id": "pause-04",
-            "type": "pause",
-            "top": 18906.90625,
-            "bottom": 19109.96875,
-            "height": 203.0625
-          },
-          {
-            "id": "gap-after-p41",
-            "type": "pause",
-            "top": 19524.4375,
-            "bottom": 19601.96875,
-            "height": 77.53125
-          },
-          {
-            "id": "gap-after-p42",
-            "type": "pause",
-            "top": 19987.53125,
-            "bottom": 20007.828125,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p43",
-            "type": "pause",
-            "top": 20451.21875,
-            "bottom": 20471.515625,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p45",
-            "type": "pause",
-            "top": 20702.84375,
-            "bottom": 20745.296875,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p46",
-            "type": "pause",
-            "top": 21111.578125,
-            "bottom": 21131.875,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p47",
-            "type": "pause",
-            "top": 21575.265625,
-            "bottom": 21595.5625,
-            "height": 20.296875
-          },
-          {
-            "id": "pause-05",
-            "type": "pause",
-            "top": 22077.515625,
-            "bottom": 22243.65625,
-            "height": 166.140625
-          },
-          {
-            "id": "gap-after-p49",
-            "type": "pause",
-            "top": 22706.328125,
-            "bottom": 22748.78125,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p50",
-            "type": "pause",
-            "top": 23124.703125,
-            "bottom": 23145,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p51",
-            "type": "pause",
-            "top": 23578.765625,
-            "bottom": 23599.0625,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p52",
-            "type": "pause",
-            "top": 24052.09375,
-            "bottom": 24094.546875,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p53",
-            "type": "pause",
-            "top": 24518.671875,
-            "bottom": 24615.59375,
-            "height": 96.921875
-          },
-          {
-            "id": "gap-after-p54",
-            "type": "pause",
-            "top": 24981.875,
-            "bottom": 25101.875,
-            "height": 120
-          },
-          {
-            "id": "gap-after-p55",
-            "type": "pause",
-            "top": 25554.90625,
-            "bottom": 25679.515625,
-            "height": 124.609375
-          },
-          {
-            "id": "gap-after-p56",
-            "type": "pause",
-            "top": 26161.46875,
-            "bottom": 26203.921875,
-            "height": 42.453125
-          },
-          {
-            "id": "voice-03-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 26203.921875,
-            "bottom": 26246.8515625,
-            "height": 42.9296875
-          },
-          {
-            "id": "voice-03-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 26364.0546875,
-            "bottom": 26406.984375,
-            "height": 42.9296875
-          },
-          {
-            "id": "gap-after-p57",
-            "type": "pause",
-            "top": 26850.375,
-            "bottom": 26892.828125,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p58",
-            "type": "pause",
-            "top": 27297.65625,
-            "bottom": 27317.953125,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p59",
-            "type": "pause",
-            "top": 27751.71875,
-            "bottom": 27818.171875,
-            "height": 66.453125
-          },
-          {
-            "id": "gap-after-p60",
-            "type": "pause",
-            "top": 28232.640625,
-            "bottom": 28252.9375,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p61",
-            "type": "pause",
-            "top": 28696.328125,
-            "bottom": 28738.78125,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p62",
-            "type": "pause",
-            "top": 29114.703125,
-            "bottom": 29135,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p63",
-            "type": "pause",
-            "top": 29616.953125,
-            "bottom": 29637.25,
-            "height": 20.296875
-          },
-          {
-            "id": "pause-06",
-            "type": "pause",
-            "top": 30090.28125,
-            "bottom": 30311.8125,
-            "height": 221.53125
-          },
-          {
-            "id": "gap-after-p65",
-            "type": "pause",
-            "top": 30707,
-            "bottom": 30749.453125,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p66",
-            "type": "pause",
-            "top": 31173.578125,
-            "bottom": 31216.03125,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p67",
-            "type": "pause",
-            "top": 31630.5,
-            "bottom": 31650.796875,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p68",
-            "type": "pause",
-            "top": 32084.5625,
-            "bottom": 32104.859375,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p69",
-            "type": "pause",
-            "top": 32586.8125,
-            "bottom": 32607.109375,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p70",
-            "type": "pause",
-            "top": 33011.9375,
-            "bottom": 33080.234375,
-            "height": 68.296875
-          },
-          {
-            "id": "gap-after-p71",
-            "type": "pause",
-            "top": 33562.1875,
-            "bottom": 33645.25,
-            "height": 83.0625
-          },
-          {
-            "id": "gap-after-p72",
-            "type": "pause",
-            "top": 34088.640625,
-            "bottom": 34131.09375,
-            "height": 42.453125
-          },
-          {
-            "id": "voice-05-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 34131.09375,
-            "bottom": 34196.3671875,
-            "height": 65.2734375
-          },
-          {
-            "id": "voice-05-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 34296.5703125,
-            "bottom": 34361.859375,
-            "height": 65.2890625
-          },
-          {
-            "id": "gap-after-p73",
-            "type": "pause",
-            "top": 34843.8125,
-            "bottom": 34886.265625,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p74",
-            "type": "pause",
-            "top": 35329.65625,
-            "bottom": 35349.953125,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p75",
-            "type": "pause",
-            "top": 35764.421875,
-            "bottom": 35784.71875,
-            "height": 20.296875
-          },
-          {
-            "id": "gap-after-p76",
-            "type": "pause",
-            "top": 36266.671875,
-            "bottom": 36309.125,
-            "height": 42.453125
-          },
-          {
-            "id": "voice-06-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 36309.125,
-            "bottom": 36365.1640625,
-            "height": 56.0390625
-          },
-          {
-            "id": "voice-06-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 36465.3671875,
-            "bottom": 36521.421875,
-            "height": 56.0546875
-          },
-          {
-            "id": "pause-07",
-            "type": "pause",
-            "top": 36521.421875,
-            "bottom": 36909.109375,
-            "height": 387.6875
-          },
-          {
-            "id": "p77-image-top",
-            "type": "source-art-empty-band",
-            "top": 36909.109375,
-            "bottom": 36956.531875,
-            "height": 47.4225,
-            "panelId": "p77",
-            "rangeFraction": [
-              0,
-              0.12
-            ],
-            "reason": "木札の音と反応が現れる前の絵の上の無情報帯"
-          },
-          {
-            "id": "gap-after-p77",
-            "type": "pause",
-            "top": 37304.296875,
-            "bottom": 37346.75,
-            "height": 42.453125
-          },
-          {
-            "id": "gap-after-p78",
-            "type": "pause",
-            "top": 37770.875,
-            "bottom": 37842.875,
-            "height": 72
-          },
-          {
-            "id": "gap-after-p79",
-            "type": "pause",
-            "top": 38295.90625,
-            "bottom": 38316.203125,
-            "height": 20.296875
-          },
-          {
-            "id": "voice-04-before-copy",
-            "type": "text-beat-empty-band",
-            "top": 38316.203125,
-            "bottom": 38333.609375,
-            "height": 17.40625
-          },
-          {
-            "id": "voice-04-after-copy",
-            "type": "text-beat-empty-band",
-            "top": 38446.484375,
-            "bottom": 38463.890625,
-            "height": 17.40625
+            "id": "gap-002",
+            "height": 22.765625,
+            "candidates": [
+              {
+                "id": "voice-00-after-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 679.9375,
+            "bottom": 701.53125,
+            "id": "gap-003",
+            "height": 21.59375,
+            "candidates": [
+              {
+                "id": "c01",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 899.65625,
+            "bottom": 1056.578125,
+            "id": "gap-004",
+            "height": 156.921875,
+            "candidates": [
+              {
+                "id": "pause-01",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 1287.90625,
+            "bottom": 1416.578125,
+            "id": "gap-005",
+            "height": 128.671875,
+            "candidates": [
+              {
+                "id": "c02",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 1826.25,
+            "bottom": 1868.703125,
+            "id": "gap-006",
+            "height": 42.453125,
+            "candidates": [
+              {
+                "id": "gap-after-p04",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 2125.875,
+            "bottom": 2191.765625,
+            "id": "gap-007",
+            "height": 65.890625,
+            "candidates": [
+              {
+                "id": "c03",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 2301.001708984375,
+            "bottom": 2376.140625,
+            "id": "gap-008",
+            "height": 75.138916015625,
+            "candidates": [
+              {
+                "id": "gap-after-p07",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 2782.296875,
+            "bottom": 2809.984375,
+            "id": "gap-009",
+            "height": 27.6875,
+            "candidates": [
+              {
+                "id": "c04",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 3147.359375,
+            "bottom": 3206.671875,
+            "id": "gap-010",
+            "height": 59.3125,
+            "candidates": [
+              {
+                "id": "gap-after-p09",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "p10-source-empty-0-0.07",
+                "kind": "source-art-empty-band"
+              },
+              {
+                "id": "c05",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 3456.625,
+            "bottom": 3549.8125,
+            "id": "gap-011",
+            "height": 93.1875,
+            "candidates": [
+              {
+                "id": "c05",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 3822.25,
+            "bottom": 3911.5234375,
+            "id": "gap-012",
+            "height": 89.2734375,
+            "candidates": [
+              {
+                "id": "gap-after-p12",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-12-before-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 4011.7265625,
+            "bottom": 4233.921875,
+            "id": "gap-013",
+            "height": 222.1953125,
+            "candidates": [
+              {
+                "id": "pause-02",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-12-after-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 4682.625,
+            "bottom": 4750.84375,
+            "id": "gap-014",
+            "height": 68.21875,
+            "candidates": [
+              {
+                "id": "c06",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 5174.96875,
+            "bottom": 5256.78125,
+            "id": "gap-015",
+            "height": 81.8125,
+            "candidates": [
+              {
+                "id": "gap-after-p15",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-15-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c07",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 5395.875,
+            "bottom": 5427.875,
+            "id": "gap-016",
+            "height": 32,
+            "candidates": [
+              {
+                "id": "voice-15-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c07",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 5834.03125,
+            "bottom": 5882.9453125,
+            "id": "gap-017",
+            "height": 48.9140625,
+            "candidates": [
+              {
+                "id": "gap-after-p16",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-01-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c07",
+                "kind": "composition-canvas"
+              },
+              {
+                "id": "c08",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6019.5859375,
+            "bottom": 6029.71875,
+            "id": "gap-018",
+            "height": 10.1328125,
+            "candidates": [
+              {
+                "id": "voice-01-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c08",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6435.875,
+            "bottom": 6478.359375,
+            "id": "gap-019",
+            "height": 42.484375,
+            "candidates": [
+              {
+                "id": "gap-after-p17",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c08",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6924.15625,
+            "bottom": 6967.578125,
+            "id": "gap-020",
+            "height": 43.421875,
+            "candidates": [
+              {
+                "id": "c09",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 7413.375,
+            "bottom": 7455.84375,
+            "id": "gap-021",
+            "height": 42.46875,
+            "candidates": [
+              {
+                "id": "gap-after-p20",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c09",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 7718.546875,
+            "bottom": 7825.0625,
+            "id": "gap-022",
+            "height": 106.515625,
+            "candidates": [
+              {
+                "id": "c10",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 8270.859375,
+            "bottom": 8337.328125,
+            "id": "gap-023",
+            "height": 66.46875,
+            "candidates": [
+              {
+                "id": "gap-after-p23",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c10",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 8832.65625,
+            "bottom": 8971.109375,
+            "id": "gap-024",
+            "height": 138.453125,
+            "candidates": [
+              {
+                "id": "pause-03",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 9347.03125,
+            "bottom": 9432.640625,
+            "id": "gap-025",
+            "height": 85.609375,
+            "candidates": [
+              {
+                "id": "c12",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 9819,
+            "bottom": 9839.296875,
+            "id": "gap-026",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p26",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 9995.296875,
+            "bottom": 10070.0625,
+            "id": "gap-027",
+            "height": 74.765625,
+            "candidates": [
+              {
+                "id": "c13",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 10335.140625,
+            "bottom": 10346.984375,
+            "id": "gap-028",
+            "height": 11.84375,
+            "candidates": [
+              {
+                "id": "c13",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 10780.75,
+            "bottom": 10801.046875,
+            "id": "gap-029",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p29",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 11594.234375,
+            "bottom": 11613.34375,
+            "id": "gap-030",
+            "height": 19.109375,
+            "candidates": [
+              {
+                "id": "c14",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 12009.609375,
+            "bottom": 12009.625,
+            "id": "gap-031",
+            "height": 0.015625,
+            "candidates": [
+              {
+                "id": "c14",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 12257.28125,
+            "bottom": 12332.6875,
+            "id": "gap-032",
+            "height": 75.40625,
+            "candidates": [
+              {
+                "id": "c15",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 12580.34375,
+            "bottom": 12622.8125,
+            "id": "gap-033",
+            "height": 42.46875,
+            "candidates": [
+              {
+                "id": "gap-after-p34",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c15",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 12902.34375,
+            "bottom": 12992.03125,
+            "id": "gap-034",
+            "height": 89.6875,
+            "candidates": [
+              {
+                "id": "c16",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 13437.828125,
+            "bottom": 13526.453125,
+            "id": "gap-035",
+            "height": 88.625,
+            "candidates": [
+              {
+                "id": "gap-after-p37",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c16",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 13808.421875,
+            "bottom": 13895.671875,
+            "id": "gap-036",
+            "height": 87.25,
+            "candidates": [
+              {
+                "id": "c17",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 14341.46875,
+            "bottom": 14544.546875,
+            "id": "gap-037",
+            "height": 203.078125,
+            "candidates": [
+              {
+                "id": "pause-04",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c17",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 14950.703125,
+            "bottom": 14959.921875,
+            "id": "gap-038",
+            "height": 9.21875,
+            "candidates": [
+              {
+                "id": "c18",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 15345.484375,
+            "bottom": 15365.796875,
+            "id": "gap-039",
+            "height": 20.3125,
+            "candidates": [
+              {
+                "id": "gap-after-p42",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c18",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 15865.609375,
+            "bottom": 15882.71875,
+            "id": "gap-040",
+            "height": 17.109375,
+            "candidates": [
+              {
+                "id": "c19",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 16075.5625,
+            "bottom": 16118.015625,
+            "id": "gap-041",
+            "height": 42.453125,
+            "candidates": [
+              {
+                "id": "gap-after-p45",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 16489.515625,
+            "bottom": 16533.390625,
+            "id": "gap-042",
+            "height": 43.875,
+            "candidates": [
+              {
+                "id": "c20",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 16894.859375,
+            "bottom": 16967.234375,
+            "id": "gap-043",
+            "height": 72.375,
+            "candidates": [
+              {
+                "id": "c20",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 17437.796875,
+            "bottom": 17603.953125,
+            "id": "gap-044",
+            "height": 166.15625,
+            "candidates": [
+              {
+                "id": "pause-05",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c20",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 18010.109375,
+            "bottom": 18065.484375,
+            "id": "gap-045",
+            "height": 55.375,
+            "candidates": [
+              {
+                "id": "c21",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 18412.21875,
+            "bottom": 18432.515625,
+            "id": "gap-046",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p50",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 18697.59375,
+            "bottom": 18755.578125,
+            "id": "gap-047",
+            "height": 57.984375,
+            "candidates": [
+              {
+                "id": "c22",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 19201.375,
+            "bottom": 19243.84375,
+            "id": "gap-048",
+            "height": 42.46875,
+            "candidates": [
+              {
+                "id": "gap-after-p52",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c22",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 19793.203125,
+            "bottom": 19843.84375,
+            "id": "gap-049",
+            "height": 50.640625,
+            "candidates": [
+              {
+                "id": "c23",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 20289.640625,
+            "bottom": 20414.25,
+            "id": "gap-050",
+            "height": 124.609375,
+            "candidates": [
+              {
+                "id": "gap-after-p55",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 20785.75,
+            "bottom": 20894.25,
+            "id": "gap-051",
+            "height": 108.5,
+            "candidates": [
+              {
+                "id": "voice-03-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c24",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 21364.8125,
+            "bottom": 21407.265625,
+            "id": "gap-052",
+            "height": 42.453125,
+            "candidates": [
+              {
+                "id": "gap-after-p57",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 21792.828125,
+            "bottom": 21850.328125,
+            "id": "gap-053",
+            "height": 57.5,
+            "candidates": [
+              {
+                "id": "c25",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 22296.125,
+            "bottom": 22362.59375,
+            "id": "gap-054",
+            "height": 66.46875,
+            "candidates": [
+              {
+                "id": "gap-after-p59",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c25",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 22748.15625,
+            "bottom": 22777.96875,
+            "id": "gap-055",
+            "height": 29.8125,
+            "candidates": [
+              {
+                "id": "c26",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 23149.46875,
+            "bottom": 23193.359375,
+            "id": "gap-056",
+            "height": 43.890625,
+            "candidates": [
+              {
+                "id": "c26",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 23639.15625,
+            "bottom": 23659.453125,
+            "id": "gap-057",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p62",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 23948.625,
+            "bottom": 24028.671875,
+            "id": "gap-058",
+            "height": 80.046875,
+            "candidates": [
+              {
+                "id": "c27",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 24474.46875,
+            "bottom": 24696.015625,
+            "id": "gap-059",
+            "height": 221.546875,
+            "candidates": [
+              {
+                "id": "pause-06",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c27",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 25117.046875,
+            "bottom": 25203.703125,
+            "id": "gap-060",
+            "height": 86.65625,
+            "candidates": [
+              {
+                "id": "c28",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 25468.78125,
+            "bottom": 25511.234375,
+            "id": "gap-061",
+            "height": 42.453125,
+            "candidates": [
+              {
+                "id": "gap-after-p66",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 25776.3125,
+            "bottom": 25862,
+            "id": "gap-062",
+            "height": 85.6875,
+            "candidates": [
+              {
+                "id": "c29",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 26295.765625,
+            "bottom": 26316.0625,
+            "id": "gap-063",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p68",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 26737.09375,
+            "bottom": 26814.515625,
+            "id": "gap-064",
+            "height": 77.421875,
+            "candidates": [
+              {
+                "id": "c30",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 26991.296875,
+            "bottom": 27059.59375,
+            "id": "gap-065",
+            "height": 68.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p70",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 27505.390625,
+            "bottom": 27576.515625,
+            "id": "gap-066",
+            "height": 71.125,
+            "candidates": [
+              {
+                "id": "c31",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 27997.546875,
+            "bottom": 28040,
+            "id": "gap-067",
+            "height": 42.453125,
+            "candidates": [
+              {
+                "id": "gap-after-p72",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 28436.265625,
+            "bottom": 28501.53125,
+            "id": "gap-068",
+            "height": 65.265625,
+            "candidates": [
+              {
+                "id": "c32",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 28911.203125,
+            "bottom": 28931.5,
+            "id": "gap-069",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p74",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 29327.765625,
+            "bottom": 29374.5625,
+            "id": "gap-070",
+            "height": 46.796875,
+            "candidates": [
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 29820.359375,
+            "bottom": 29910.6015625,
+            "id": "gap-071",
+            "height": 90.2421875,
+            "candidates": [
+              {
+                "id": "voice-06-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 30010.8046875,
+            "bottom": 30454.5625,
+            "id": "gap-072",
+            "height": 443.7578125,
+            "candidates": [
+              {
+                "id": "pause-07",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-06-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 30663.484375,
+            "bottom": 30777.625,
+            "id": "gap-073",
+            "height": 114.140625,
+            "candidates": [
+              {
+                "id": "c34",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 31248.1875,
+            "bottom": 31320.203125,
+            "id": "gap-074",
+            "height": 72.015625,
+            "candidates": [
+              {
+                "id": "gap-after-p78",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c34",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 31729.875,
+            "bottom": 31776.0625,
+            "id": "gap-075",
+            "height": 46.1875,
+            "candidates": [
+              {
+                "id": "voice-04-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c35",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 31888.9375,
+            "bottom": 31934.046875,
+            "id": "gap-076",
+            "height": 45.109375,
+            "candidates": [
+              {
+                "id": "voice-04-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c35",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 32429.375,
+            "bottom": 32429.390625,
+            "id": "gap-077",
+            "height": 0.015625,
+            "candidates": [
+              {
+                "id": "c35",
+                "kind": "composition-canvas"
+              }
+            ]
           }
         ],
         "union": [
           {
             "top": 0,
             "bottom": 22.75,
-            "ids": [
-              "voice-00-before-copy"
+            "id": "gap-001",
+            "height": 22.75,
+            "candidates": [
+              {
+                "id": "voice-00-before-copy",
+                "kind": "text-empty-band"
+              }
             ]
           },
           {
             "top": 161.84375,
             "bottom": 184.609375,
+            "id": "gap-002",
+            "height": 22.765625,
+            "candidates": [
+              {
+                "id": "voice-00-after-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 679.9375,
+            "bottom": 701.53125,
+            "id": "gap-003",
+            "height": 21.59375,
+            "candidates": [
+              {
+                "id": "c01",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 899.65625,
+            "bottom": 1056.578125,
+            "id": "gap-004",
+            "height": 156.921875,
+            "candidates": [
+              {
+                "id": "pause-01",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 1287.90625,
+            "bottom": 1416.578125,
+            "id": "gap-005",
+            "height": 128.671875,
+            "candidates": [
+              {
+                "id": "c02",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 1826.25,
+            "bottom": 1868.703125,
+            "id": "gap-006",
+            "height": 42.453125,
+            "candidates": [
+              {
+                "id": "gap-after-p04",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 2125.875,
+            "bottom": 2191.765625,
+            "id": "gap-007",
+            "height": 65.890625,
+            "candidates": [
+              {
+                "id": "c03",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 2301.001708984375,
+            "bottom": 2376.140625,
+            "id": "gap-008",
+            "height": 75.138916015625,
+            "candidates": [
+              {
+                "id": "gap-after-p07",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 2782.296875,
+            "bottom": 2809.984375,
+            "id": "gap-009",
+            "height": 27.6875,
+            "candidates": [
+              {
+                "id": "c04",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 3147.359375,
+            "bottom": 3206.671875,
+            "id": "gap-010",
+            "height": 59.3125,
+            "candidates": [
+              {
+                "id": "gap-after-p09",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "p10-source-empty-0-0.07",
+                "kind": "source-art-empty-band"
+              },
+              {
+                "id": "c05",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 3456.625,
+            "bottom": 3549.8125,
+            "id": "gap-011",
+            "height": 93.1875,
+            "candidates": [
+              {
+                "id": "c05",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 3822.25,
+            "bottom": 3911.5234375,
+            "id": "gap-012",
+            "height": 89.2734375,
+            "candidates": [
+              {
+                "id": "gap-after-p12",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-12-before-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 4011.7265625,
+            "bottom": 4233.921875,
+            "id": "gap-013",
+            "height": 222.1953125,
+            "candidates": [
+              {
+                "id": "pause-02",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-12-after-copy",
+                "kind": "text-empty-band"
+              }
+            ]
+          },
+          {
+            "top": 4682.625,
+            "bottom": 4750.84375,
+            "id": "gap-014",
+            "height": 68.21875,
+            "candidates": [
+              {
+                "id": "c06",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 5174.96875,
+            "bottom": 5256.78125,
+            "id": "gap-015",
+            "height": 81.8125,
+            "candidates": [
+              {
+                "id": "gap-after-p15",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-15-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c07",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 5395.875,
+            "bottom": 5427.875,
+            "id": "gap-016",
+            "height": 32,
+            "candidates": [
+              {
+                "id": "voice-15-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c07",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 5834.03125,
+            "bottom": 5882.9453125,
+            "id": "gap-017",
+            "height": 48.9140625,
+            "candidates": [
+              {
+                "id": "gap-after-p16",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-01-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c07",
+                "kind": "composition-canvas"
+              },
+              {
+                "id": "c08",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6019.5859375,
+            "bottom": 6029.71875,
+            "id": "gap-018",
+            "height": 10.1328125,
+            "candidates": [
+              {
+                "id": "voice-01-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c08",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6435.875,
+            "bottom": 6478.359375,
+            "id": "gap-019",
+            "height": 42.484375,
+            "candidates": [
+              {
+                "id": "gap-after-p17",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c08",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 6924.15625,
+            "bottom": 6967.578125,
+            "id": "gap-020",
+            "height": 43.421875,
+            "candidates": [
+              {
+                "id": "c09",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 7413.375,
+            "bottom": 7455.84375,
+            "id": "gap-021",
+            "height": 42.46875,
+            "candidates": [
+              {
+                "id": "gap-after-p20",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c09",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 7718.546875,
+            "bottom": 7825.0625,
+            "id": "gap-022",
+            "height": 106.515625,
+            "candidates": [
+              {
+                "id": "c10",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 8270.859375,
+            "bottom": 8337.328125,
+            "id": "gap-023",
+            "height": 66.46875,
+            "candidates": [
+              {
+                "id": "gap-after-p23",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c10",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 8832.65625,
+            "bottom": 8971.109375,
+            "id": "gap-024",
+            "height": 138.453125,
+            "candidates": [
+              {
+                "id": "pause-03",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 9347.03125,
+            "bottom": 9432.640625,
+            "id": "gap-025",
+            "height": 85.609375,
+            "candidates": [
+              {
+                "id": "c12",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 9819,
+            "bottom": 9839.296875,
+            "id": "gap-026",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p26",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 9995.296875,
+            "bottom": 10070.0625,
+            "id": "gap-027",
+            "height": 74.765625,
+            "candidates": [
+              {
+                "id": "c13",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 10335.140625,
+            "bottom": 10346.984375,
+            "id": "gap-028",
+            "height": 11.84375,
+            "candidates": [
+              {
+                "id": "c13",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 10780.75,
+            "bottom": 10801.046875,
+            "id": "gap-029",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p29",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 11594.234375,
+            "bottom": 11613.34375,
+            "id": "gap-030",
+            "height": 19.109375,
+            "candidates": [
+              {
+                "id": "c14",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 12009.609375,
+            "bottom": 12009.625,
+            "id": "gap-031",
+            "height": 0.015625,
+            "candidates": [
+              {
+                "id": "c14",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 12257.28125,
+            "bottom": 12332.6875,
+            "id": "gap-032",
+            "height": 75.40625,
+            "candidates": [
+              {
+                "id": "c15",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 12580.34375,
+            "bottom": 12622.8125,
+            "id": "gap-033",
+            "height": 42.46875,
+            "candidates": [
+              {
+                "id": "gap-after-p34",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c15",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 12902.34375,
+            "bottom": 12992.03125,
+            "id": "gap-034",
+            "height": 89.6875,
+            "candidates": [
+              {
+                "id": "c16",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 13437.828125,
+            "bottom": 13526.453125,
+            "id": "gap-035",
+            "height": 88.625,
+            "candidates": [
+              {
+                "id": "gap-after-p37",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c16",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 13808.421875,
+            "bottom": 13895.671875,
+            "id": "gap-036",
+            "height": 87.25,
+            "candidates": [
+              {
+                "id": "c17",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 14341.46875,
+            "bottom": 14544.546875,
+            "id": "gap-037",
+            "height": 203.078125,
+            "candidates": [
+              {
+                "id": "pause-04",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c17",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 14950.703125,
+            "bottom": 14959.921875,
+            "id": "gap-038",
+            "height": 9.21875,
+            "candidates": [
+              {
+                "id": "c18",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 15345.484375,
+            "bottom": 15365.796875,
+            "id": "gap-039",
+            "height": 20.3125,
+            "candidates": [
+              {
+                "id": "gap-after-p42",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c18",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 15865.609375,
+            "bottom": 15882.71875,
+            "id": "gap-040",
+            "height": 17.109375,
+            "candidates": [
+              {
+                "id": "c19",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 16075.5625,
+            "bottom": 16118.015625,
+            "id": "gap-041",
+            "height": 42.453125,
+            "candidates": [
+              {
+                "id": "gap-after-p45",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 16489.515625,
+            "bottom": 16533.390625,
+            "id": "gap-042",
+            "height": 43.875,
+            "candidates": [
+              {
+                "id": "c20",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 16894.859375,
+            "bottom": 16967.234375,
+            "id": "gap-043",
+            "height": 72.375,
+            "candidates": [
+              {
+                "id": "c20",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 17437.796875,
+            "bottom": 17603.953125,
+            "id": "gap-044",
+            "height": 166.15625,
+            "candidates": [
+              {
+                "id": "pause-05",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c20",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 18010.109375,
+            "bottom": 18065.484375,
+            "id": "gap-045",
+            "height": 55.375,
+            "candidates": [
+              {
+                "id": "c21",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 18412.21875,
+            "bottom": 18432.515625,
+            "id": "gap-046",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p50",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 18697.59375,
+            "bottom": 18755.578125,
+            "id": "gap-047",
+            "height": 57.984375,
+            "candidates": [
+              {
+                "id": "c22",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 19201.375,
+            "bottom": 19243.84375,
+            "id": "gap-048",
+            "height": 42.46875,
+            "candidates": [
+              {
+                "id": "gap-after-p52",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c22",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 19793.203125,
+            "bottom": 19843.84375,
+            "id": "gap-049",
+            "height": 50.640625,
+            "candidates": [
+              {
+                "id": "c23",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 20289.640625,
+            "bottom": 20414.25,
+            "id": "gap-050",
+            "height": 124.609375,
+            "candidates": [
+              {
+                "id": "gap-after-p55",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 20785.75,
+            "bottom": 20894.25,
+            "id": "gap-051",
+            "height": 108.5,
+            "candidates": [
+              {
+                "id": "voice-03-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c24",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 21364.8125,
+            "bottom": 21407.265625,
+            "id": "gap-052",
+            "height": 42.453125,
+            "candidates": [
+              {
+                "id": "gap-after-p57",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 21792.828125,
+            "bottom": 21850.328125,
+            "id": "gap-053",
+            "height": 57.5,
+            "candidates": [
+              {
+                "id": "c25",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 22296.125,
+            "bottom": 22362.59375,
+            "id": "gap-054",
+            "height": 66.46875,
+            "candidates": [
+              {
+                "id": "gap-after-p59",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c25",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 22748.15625,
+            "bottom": 22777.96875,
+            "id": "gap-055",
+            "height": 29.8125,
+            "candidates": [
+              {
+                "id": "c26",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 23149.46875,
+            "bottom": 23193.359375,
+            "id": "gap-056",
+            "height": 43.890625,
+            "candidates": [
+              {
+                "id": "c26",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 23639.15625,
+            "bottom": 23659.453125,
+            "id": "gap-057",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p62",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 23948.625,
+            "bottom": 24028.671875,
+            "id": "gap-058",
+            "height": 80.046875,
+            "candidates": [
+              {
+                "id": "c27",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 24474.46875,
+            "bottom": 24696.015625,
+            "id": "gap-059",
+            "height": 221.546875,
+            "candidates": [
+              {
+                "id": "pause-06",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c27",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 25117.046875,
+            "bottom": 25203.703125,
+            "id": "gap-060",
+            "height": 86.65625,
+            "candidates": [
+              {
+                "id": "c28",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 25468.78125,
+            "bottom": 25511.234375,
+            "id": "gap-061",
+            "height": 42.453125,
+            "candidates": [
+              {
+                "id": "gap-after-p66",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 25776.3125,
+            "bottom": 25862,
+            "id": "gap-062",
+            "height": 85.6875,
+            "candidates": [
+              {
+                "id": "c29",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 26295.765625,
+            "bottom": 26316.0625,
+            "id": "gap-063",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p68",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 26737.09375,
+            "bottom": 26814.515625,
+            "id": "gap-064",
+            "height": 77.421875,
+            "candidates": [
+              {
+                "id": "c30",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 26991.296875,
+            "bottom": 27059.59375,
+            "id": "gap-065",
+            "height": 68.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p70",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 27505.390625,
+            "bottom": 27576.515625,
+            "id": "gap-066",
+            "height": 71.125,
+            "candidates": [
+              {
+                "id": "c31",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 27997.546875,
+            "bottom": 28040,
+            "id": "gap-067",
+            "height": 42.453125,
+            "candidates": [
+              {
+                "id": "gap-after-p72",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 28436.265625,
+            "bottom": 28501.53125,
+            "id": "gap-068",
+            "height": 65.265625,
+            "candidates": [
+              {
+                "id": "c32",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 28911.203125,
+            "bottom": 28931.5,
+            "id": "gap-069",
+            "height": 20.296875,
+            "candidates": [
+              {
+                "id": "gap-after-p74",
+                "kind": "explicit-pause"
+              }
+            ]
+          },
+          {
+            "top": 29327.765625,
+            "bottom": 29374.5625,
+            "id": "gap-070",
+            "height": 46.796875,
+            "candidates": [
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 29820.359375,
+            "bottom": 29910.6015625,
+            "id": "gap-071",
+            "height": 90.2421875,
+            "candidates": [
+              {
+                "id": "voice-06-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 30010.8046875,
+            "bottom": 30454.5625,
+            "id": "gap-072",
+            "height": 443.7578125,
+            "candidates": [
+              {
+                "id": "pause-07",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "voice-06-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c33",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 30663.484375,
+            "bottom": 30777.625,
+            "id": "gap-073",
+            "height": 114.140625,
+            "candidates": [
+              {
+                "id": "c34",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 31248.1875,
+            "bottom": 31320.203125,
+            "id": "gap-074",
+            "height": 72.015625,
+            "candidates": [
+              {
+                "id": "gap-after-p78",
+                "kind": "explicit-pause"
+              },
+              {
+                "id": "c34",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 31729.875,
+            "bottom": 31776.0625,
+            "id": "gap-075",
+            "height": 46.1875,
+            "candidates": [
+              {
+                "id": "voice-04-before-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c35",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 31888.9375,
+            "bottom": 31934.046875,
+            "id": "gap-076",
+            "height": 45.109375,
+            "candidates": [
+              {
+                "id": "voice-04-after-copy",
+                "kind": "text-empty-band"
+              },
+              {
+                "id": "c35",
+                "kind": "composition-canvas"
+              }
+            ]
+          },
+          {
+            "top": 32429.375,
+            "bottom": 32429.390625,
+            "id": "gap-077",
+            "height": 0.015625,
+            "candidates": [
+              {
+                "id": "c35",
+                "kind": "composition-canvas"
+              }
+            ]
+          }
+        ],
+        "occupiedUnion": [
+          {
+            "top": 22.75,
+            "bottom": 161.84375,
+            "ids": [
+              "voice-00"
+            ]
+          },
+          {
+            "top": 184.609375,
+            "bottom": 679.9375,
+            "ids": [
+              "p01",
+              "p01"
+            ]
+          },
+          {
+            "top": 701.53125,
+            "bottom": 899.65625,
+            "ids": [
+              "p02",
+              "p02",
+              "p02"
+            ]
+          },
+          {
+            "top": 1056.578125,
+            "bottom": 1287.90625,
+            "ids": [
+              "p03",
+              "p03"
+            ]
+          },
+          {
+            "top": 1416.578125,
+            "bottom": 1826.25,
             "ids": [
-              "voice-00-after-copy"
+              "p04",
+              "p04"
             ]
           },
           {
-            "top": 666.5625,
-            "bottom": 709.015625,
+            "top": 1868.703125,
+            "bottom": 2125.875,
             "ids": [
-              "gap-after-p01"
+              "p05",
+              "p05",
+              "p06",
+              "p06"
             ]
           },
           {
-            "top": 1133.140625,
-            "bottom": 1290.0625,
+            "top": 2191.765625,
+            "bottom": 2301.001708984375,
             "ids": [
-              "pause-01"
+              "p07",
+              "p07"
             ]
           },
           {
-            "top": 1685.25,
-            "bottom": 1753.546875,
+            "top": 2376.140625,
+            "bottom": 2782.296875,
             "ids": [
-              "gap-after-p03"
+              "p08",
+              "p08",
+              "p08"
             ]
           },
           {
-            "top": 2235.5,
-            "bottom": 2277.953125,
+            "top": 2809.984375,
+            "bottom": 3147.359375,
             "ids": [
-              "gap-after-p04"
+              "p09",
+              "p09"
             ]
           },
           {
-            "top": 2759.90625,
-            "bottom": 2780.203125,
+            "top": 3206.671875,
+            "bottom": 3456.625,
             "ids": [
-              "gap-after-p05"
+              "p10",
+              "p10",
+              "p11",
+              "p11"
             ]
           },
           {
-            "top": 3223.59375,
-            "bottom": 3243.890625,
+            "top": 3549.8125,
+            "bottom": 3822.25,
             "ids": [
-              "gap-after-p06"
+              "p12",
+              "p12"
             ]
           },
           {
-            "top": 3590.875,
-            "bottom": 3670.25,
+            "top": 3911.5234375,
+            "bottom": 4011.7265625,
             "ids": [
-              "gap-after-p07"
+              "voice-12"
             ]
           },
           {
-            "top": 4152.203125,
-            "bottom": 4172.5,
+            "top": 4233.921875,
+            "bottom": 4682.625,
             "ids": [
-              "gap-after-p08"
+              "p13",
+              "p13",
+              "p14",
+              "p14",
+              "p14"
             ]
           },
           {
-            "top": 4625.53125,
-            "bottom": 4696.9971875,
+            "top": 4750.84375,
+            "bottom": 5174.96875,
             "ids": [
-              "gap-after-p09",
-              "p10-image-top"
+              "p15",
+              "p15"
             ]
           },
           {
-            "top": 5082.453125,
-            "bottom": 5102.75,
+            "top": 5256.78125,
+            "bottom": 5395.875,
             "ids": [
-              "gap-after-p10"
+              "voice-15"
             ]
           },
           {
-            "top": 5497.9375,
-            "bottom": 5549.625,
+            "top": 5427.875,
+            "bottom": 5834.03125,
             "ids": [
-              "gap-after-p11"
+              "p16",
+              "p16",
+              "p16"
             ]
           },
           {
-            "top": 5896.609375,
-            "bottom": 5985.8828125,
+            "top": 5882.9453125,
+            "bottom": 6019.5859375,
             "ids": [
-              "gap-after-p12",
-              "voice-12-before-copy"
+              "voice-01"
             ]
           },
           {
-            "top": 6086.0859375,
-            "bottom": 6308.28125,
+            "top": 6029.71875,
+            "bottom": 6435.875,
             "ids": [
-              "voice-12-after-copy",
-              "pause-02"
+              "p17",
+              "p17"
             ]
           },
           {
-            "top": 6790.234375,
-            "bottom": 6810.53125,
+            "top": 6478.359375,
+            "bottom": 6924.15625,
             "ids": [
-              "gap-after-p13"
+              "p18",
+              "p18",
+              "p19",
+              "p19"
             ]
           },
           {
-            "top": 7253.921875,
-            "bottom": 7274.21875,
+            "top": 6967.578125,
+            "bottom": 7413.375,
             "ids": [
-              "gap-after-p14"
+              "p20",
+              "p20"
             ]
           },
           {
-            "top": 7756.171875,
-            "bottom": 7837.984375,
+            "top": 7455.84375,
+            "bottom": 7718.546875,
             "ids": [
-              "gap-after-p15",
-              "voice-15-before-copy"
+              "p21",
+              "p21",
+              "p22",
+              "p22"
             ]
           },
           {
-            "top": 7977.078125,
-            "bottom": 7999.84375,
+            "top": 7825.0625,
+            "bottom": 8270.859375,
             "ids": [
-              "voice-15-after-copy"
+              "p23",
+              "p23"
             ]
           },
           {
-            "top": 8481.796875,
-            "bottom": 8530.6953125,
+            "top": 8337.328125,
+            "bottom": 8832.65625,
             "ids": [
-              "gap-after-p16",
-              "voice-01-before-copy"
+              "p24",
+              "p24"
             ]
           },
           {
-            "top": 8667.3359375,
-            "bottom": 8695.9375,
+            "top": 8971.109375,
+            "bottom": 9347.03125,
             "ids": [
-              "voice-01-after-copy"
+              "p25",
+              "p25"
             ]
           },
           {
-            "top": 9139.328125,
-            "bottom": 9181.78125,
+            "top": 9432.640625,
+            "bottom": 9819,
             "ids": [
-              "gap-after-p17"
+              "p26",
+              "p26",
+              "p26"
             ]
           },
           {
-            "top": 9615.546875,
-            "bottom": 9635.84375,
+            "top": 9839.296875,
+            "bottom": 9995.296875,
             "ids": [
-              "gap-after-p18"
+              "p27"
             ]
           },
           {
-            "top": 9867.171875,
-            "bottom": 9909.625,
+            "top": 10070.0625,
+            "bottom": 10335.140625,
             "ids": [
-              "gap-after-p20"
+              "p28",
+              "p28"
             ]
           },
           {
-            "top": 10362.65625,
-            "bottom": 10382.953125,
+            "top": 10346.984375,
+            "bottom": 10780.75,
             "ids": [
-              "gap-after-p21"
+              "p29",
+              "p29"
             ]
           },
           {
-            "top": 10778.140625,
-            "bottom": 10798.4375,
+            "top": 10801.046875,
+            "bottom": 11594.234375,
             "ids": [
-              "gap-after-p22"
+              "p30",
+              "p30",
+              "p30",
+              "p31",
+              "p31"
             ]
           },
           {
-            "top": 11241.828125,
-            "bottom": 11308.28125,
+            "top": 11613.34375,
+            "bottom": 12009.609375,
             "ids": [
-              "gap-after-p23"
+              "p32",
+              "p32",
+              "voice-02",
+              "p32"
             ]
           },
           {
-            "top": 11790.234375,
-            "bottom": 11928.6875,
+            "top": 12009.625,
+            "bottom": 12257.28125,
             "ids": [
-              "pause-03"
+              "p33",
+              "p33"
             ]
           },
           {
-            "top": 12362.453125,
-            "bottom": 12404.90625,
+            "top": 12332.6875,
+            "bottom": 12580.34375,
             "ids": [
-              "gap-after-p25"
+              "p34",
+              "p34"
             ]
           },
           {
-            "top": 12857.9375,
-            "bottom": 12878.234375,
+            "top": 12622.8125,
+            "bottom": 12902.34375,
             "ids": [
-              "gap-after-p26"
+              "p35",
+              "p35",
+              "p36",
+              "p36",
+              "p36"
             ]
           },
           {
-            "top": 13292.703125,
-            "bottom": 13335.15625,
+            "top": 12992.03125,
+            "bottom": 13437.828125,
             "ids": [
-              "gap-after-p27"
+              "p37",
+              "p37",
+              "p37"
             ]
           },
           {
-            "top": 13797.828125,
-            "bottom": 13818.125,
+            "top": 13526.453125,
+            "bottom": 13808.421875,
             "ids": [
-              "gap-after-p28"
+              "p38",
+              "p38",
+              "p39",
+              "p39"
             ]
           },
           {
-            "top": 14251.890625,
-            "bottom": 14272.1875,
+            "top": 13895.671875,
+            "bottom": 14341.46875,
             "ids": [
-              "gap-after-p29"
+              "p40",
+              "p40",
+              "p40"
             ]
           },
           {
-            "top": 14725.21875,
-            "bottom": 14745.515625,
+            "top": 14544.546875,
+            "bottom": 14950.703125,
             "ids": [
-              "gap-after-p30"
+              "p41"
             ]
           },
           {
-            "top": 15169.640625,
-            "bottom": 15189.9375,
+            "top": 14959.921875,
+            "bottom": 15345.484375,
             "ids": [
-              "gap-after-p31"
+              "p42",
+              "p42"
             ]
           },
           {
-            "top": 15671.890625,
-            "bottom": 15743.4296875,
+            "top": 15365.796875,
+            "bottom": 15865.609375,
             "ids": [
-              "gap-after-p32",
-              "voice-02-before-copy"
+              "p43",
+              "p43",
+              "p44",
+              "p44"
             ]
           },
           {
-            "top": 15860.6328125,
-            "bottom": 15889.71875,
+            "top": 15882.71875,
+            "bottom": 16075.5625,
             "ids": [
-              "voice-02-after-copy"
+              "p45",
+              "p45"
             ]
           },
           {
-            "top": 16121.046875,
-            "bottom": 16163.5,
+            "top": 16118.015625,
+            "bottom": 16489.515625,
             "ids": [
-              "gap-after-p34"
+              "p46",
+              "p46"
             ]
           },
           {
-            "top": 16597.265625,
-            "bottom": 16617.5625,
+            "top": 16533.390625,
+            "bottom": 16894.859375,
             "ids": [
-              "gap-after-p35"
+              "p47",
+              "voice-p47"
             ]
           },
           {
-            "top": 17012.75,
-            "bottom": 17033.046875,
+            "top": 16967.234375,
+            "bottom": 17437.796875,
             "ids": [
-              "gap-after-p36"
+              "p48",
+              "p48",
+              "p48",
+              "p48"
             ]
           },
           {
-            "top": 17515,
-            "bottom": 17603.609375,
+            "top": 17603.953125,
+            "bottom": 18010.109375,
             "ids": [
-              "gap-after-p37"
+              "p49",
+              "p49"
             ]
           },
           {
-            "top": 17979.53125,
-            "bottom": 17999.828125,
+            "top": 18065.484375,
+            "bottom": 18412.21875,
             "ids": [
-              "gap-after-p38"
+              "p50",
+              "p50"
             ]
           },
           {
-            "top": 18404.65625,
-            "bottom": 18424.953125,
+            "top": 18432.515625,
+            "bottom": 18697.59375,
             "ids": [
-              "gap-after-p39"
+              "p51",
+              "p51",
+              "p51"
             ]
           },
           {
-            "top": 18906.90625,
-            "bottom": 19109.96875,
+            "top": 18755.578125,
+            "bottom": 19201.375,
             "ids": [
-              "pause-04"
+              "p52",
+              "p52"
             ]
           },
           {
-            "top": 19524.4375,
-            "bottom": 19601.96875,
+            "top": 19243.84375,
+            "bottom": 19793.203125,
             "ids": [
-              "gap-after-p41"
+              "p53",
+              "p53",
+              "p54",
+              "p53"
             ]
           },
           {
-            "top": 19987.53125,
-            "bottom": 20007.828125,
+            "top": 19843.84375,
+            "bottom": 20289.640625,
             "ids": [
-              "gap-after-p42"
+              "p55",
+              "p55"
             ]
           },
           {
-            "top": 20451.21875,
-            "bottom": 20471.515625,
+            "top": 20414.25,
+            "bottom": 20785.75,
             "ids": [
-              "gap-after-p43"
+              "p56",
+              "p56",
+              "voice-03"
             ]
           },
           {
-            "top": 20702.84375,
-            "bottom": 20745.296875,
+            "top": 20894.25,
+            "bottom": 21364.8125,
             "ids": [
-              "gap-after-p45"
+              "p57",
+              "p57",
+              "p57"
             ]
           },
           {
-            "top": 21111.578125,
-            "bottom": 21131.875,
+            "top": 21407.265625,
+            "bottom": 21792.828125,
             "ids": [
-              "gap-after-p46"
+              "p58",
+              "p58"
             ]
           },
           {
-            "top": 21575.265625,
-            "bottom": 21595.5625,
+            "top": 21850.328125,
+            "bottom": 22296.125,
             "ids": [
-              "gap-after-p47"
+              "p59",
+              "p59"
             ]
           },
           {
-            "top": 22077.515625,
-            "bottom": 22243.65625,
+            "top": 22362.59375,
+            "bottom": 22748.15625,
             "ids": [
-              "pause-05"
+              "p60",
+              "p60"
             ]
           },
           {
-            "top": 22706.328125,
-            "bottom": 22748.78125,
+            "top": 22777.96875,
+            "bottom": 23149.46875,
             "ids": [
-              "gap-after-p49"
+              "p61",
+              "p61"
             ]
           },
           {
-            "top": 23124.703125,
-            "bottom": 23145,
+            "top": 23193.359375,
+            "bottom": 23639.15625,
             "ids": [
-              "gap-after-p50"
+              "p62",
+              "p62"
             ]
           },
           {
-            "top": 23578.765625,
-            "bottom": 23599.0625,
+            "top": 23659.453125,
+            "bottom": 23948.625,
             "ids": [
-              "gap-after-p51"
+              "p63",
+              "p63"
             ]
           },
           {
-            "top": 24052.09375,
-            "bottom": 24094.546875,
+            "top": 24028.671875,
+            "bottom": 24474.46875,
             "ids": [
-              "gap-after-p52"
+              "p64",
+              "p64"
             ]
           },
           {
-            "top": 24518.671875,
-            "bottom": 24615.59375,
+            "top": 24696.015625,
+            "bottom": 25117.046875,
             "ids": [
-              "gap-after-p53"
+              "p65",
+              "p65"
             ]
           },
           {
-            "top": 24981.875,
-            "bottom": 25101.875,
+            "top": 25203.703125,
+            "bottom": 25468.78125,
             "ids": [
-              "gap-after-p54"
+              "p66"
             ]
           },
           {
-            "top": 25554.90625,
-            "bottom": 25679.515625,
+            "top": 25511.234375,
+            "bottom": 25776.3125,
             "ids": [
-              "gap-after-p55"
+              "p67",
+              "p67"
             ]
           },
           {
-            "top": 26161.46875,
-            "bottom": 26246.8515625,
+            "top": 25862,
+            "bottom": 26295.765625,
             "ids": [
-              "gap-after-p56",
-              "voice-03-before-copy"
+              "p68",
+              "p68"
             ]
           },
           {
-            "top": 26364.0546875,
-            "bottom": 26406.984375,
+            "top": 26316.0625,
+            "bottom": 26737.09375,
             "ids": [
-              "voice-03-after-copy"
+              "p69",
+              "p69",
+              "p69",
+              "p69"
             ]
           },
           {
-            "top": 26850.375,
-            "bottom": 26892.828125,
+            "top": 26814.515625,
+            "bottom": 26991.296875,
             "ids": [
-              "gap-after-p57"
+              "p70"
             ]
           },
           {
-            "top": 27297.65625,
-            "bottom": 27317.953125,
+            "top": 27059.59375,
+            "bottom": 27505.390625,
             "ids": [
-              "gap-after-p58"
+              "p71",
+              "p71",
+              "p71",
+              "p71"
             ]
           },
           {
-            "top": 27751.71875,
-            "bottom": 27818.171875,
+            "top": 27576.515625,
+            "bottom": 27997.546875,
             "ids": [
-              "gap-after-p59"
+              "p72",
+              "p72"
             ]
           },
           {
-            "top": 28232.640625,
-            "bottom": 28252.9375,
+            "top": 28040,
+            "bottom": 28436.265625,
             "ids": [
-              "gap-after-p60"
+              "p73",
+              "voice-05"
             ]
           },
           {
-            "top": 28696.328125,
-            "bottom": 28738.78125,
+            "top": 28501.53125,
+            "bottom": 28911.203125,
             "ids": [
-              "gap-after-p61"
+              "p74",
+              "p74"
             ]
           },
           {
-            "top": 29114.703125,
-            "bottom": 29135,
+            "top": 28931.5,
+            "bottom": 29327.765625,
             "ids": [
-              "gap-after-p62"
+              "p75",
+              "p75"
             ]
           },
           {
-            "top": 29616.953125,
-            "bottom": 29637.25,
+            "top": 29374.5625,
+            "bottom": 29820.359375,
             "ids": [
-              "gap-after-p63"
+              "p76",
+              "p76"
             ]
           },
           {
-            "top": 30090.28125,
-            "bottom": 30311.8125,
+            "top": 29910.6015625,
+            "bottom": 30010.8046875,
             "ids": [
-              "pause-06"
+              "voice-06"
             ]
           },
           {
-            "top": 30707,
-            "bottom": 30749.453125,
+            "top": 30454.5625,
+            "bottom": 30663.484375,
             "ids": [
-              "gap-after-p65"
+              "p77",
+              "p77"
             ]
           },
           {
-            "top": 31173.578125,
-            "bottom": 31216.03125,
+            "top": 30777.625,
+            "bottom": 31248.1875,
             "ids": [
-              "gap-after-p66"
+              "p78"
             ]
           },
           {
-            "top": 31630.5,
-            "bottom": 31650.796875,
+            "top": 31320.203125,
+            "bottom": 31729.875,
             "ids": [
-              "gap-after-p67"
+              "p79",
+              "p79",
+              "p79"
             ]
           },
           {
-            "top": 32084.5625,
-            "bottom": 32104.859375,
+            "top": 31776.0625,
+            "bottom": 31888.9375,
             "ids": [
-              "gap-after-p68"
+              "voice-04"
             ]
           },
           {
-            "top": 32586.8125,
-            "bottom": 32607.109375,
+            "top": 31934.046875,
+            "bottom": 32429.375,
             "ids": [
-              "gap-after-p69"
-            ]
-          },
-          {
-            "top": 33011.9375,
-            "bottom": 33080.234375,
-            "ids": [
-              "gap-after-p70"
-            ]
-          },
-          {
-            "top": 33562.1875,
-            "bottom": 33645.25,
-            "ids": [
-              "gap-after-p71"
-            ]
-          },
-          {
-            "top": 34088.640625,
-            "bottom": 34196.3671875,
-            "ids": [
-              "gap-after-p72",
-              "voice-05-before-copy"
-            ]
-          },
-          {
-            "top": 34296.5703125,
-            "bottom": 34361.859375,
-            "ids": [
-              "voice-05-after-copy"
-            ]
-          },
-          {
-            "top": 34843.8125,
-            "bottom": 34886.265625,
-            "ids": [
-              "gap-after-p73"
-            ]
-          },
-          {
-            "top": 35329.65625,
-            "bottom": 35349.953125,
-            "ids": [
-              "gap-after-p74"
-            ]
-          },
-          {
-            "top": 35764.421875,
-            "bottom": 35784.71875,
-            "ids": [
-              "gap-after-p75"
-            ]
-          },
-          {
-            "top": 36266.671875,
-            "bottom": 36365.1640625,
-            "ids": [
-              "gap-after-p76",
-              "voice-06-before-copy"
-            ]
-          },
-          {
-            "top": 36465.3671875,
-            "bottom": 36956.531875,
-            "ids": [
-              "voice-06-after-copy",
-              "pause-07",
-              "p77-image-top"
-            ]
-          },
-          {
-            "top": 37304.296875,
-            "bottom": 37346.75,
-            "ids": [
-              "gap-after-p77"
-            ]
-          },
-          {
-            "top": 37770.875,
-            "bottom": 37842.875,
-            "ids": [
-              "gap-after-p78"
-            ]
-          },
-          {
-            "top": 38295.90625,
-            "bottom": 38333.609375,
-            "ids": [
-              "gap-after-p79",
-              "voice-04-before-copy"
-            ]
-          },
-          {
-            "top": 38446.484375,
-            "bottom": 38463.890625,
-            "ids": [
-              "voice-04-after-copy"
+              "p80",
+              "p80",
+              "p80",
+              "p80"
             ]
           }
         ],
         "sourceArtLargeEmptyBands": [
-          "p10-image-top",
-          "p77-image-top"
+          {
+            "panelId": "p10",
+            "rangeFraction": [
+              0,
+              0.07
+            ],
+            "reason": "原画と表示窓を目視。強がりの返答の前にある上部の無情報帯。吹き出しは8%からで、この範囲に文字がない。"
+          }
         ],
-        "sourceArtReview": "All ten sheets / eighty cropped cells inspected. The two upper no-information bands are registered. Elsewhere canvas, rain, cloud, props, human acting or lettering occupies the open image background; white background around characters is not subtracted."
+        "rule": "Complement of the union of art, dialogue, SFX and floating-copy vertical spans. Visually registered large no-information source-art bands are removed from art occupation. An empty voice band overlapping a panel is occupied; shared gaps count once. White background around acting is part of the artwork."
       }
     }
   },
@@ -2894,22 +5585,39 @@
     "allImagesLoadedAtBothWidths": true,
     "horizontalOverflowAbsent": true,
     "overlayTextPositionAndFontChecked": true,
+    "dialogueAndVoiceFontRange19To22": true,
     "notesAndMeasurementToggleStable": true,
     "stagedWindowsHave150pxOverlap": true,
+    "domOrderMatchesPlanIncludingAuxiliaryBeats": true,
+    "compositionGroupsChecked": true,
+    "compositionMembersAbsolute": true,
+    "compositionNaturalAndBoundingRectsCaptured": true,
+    "compositionOverlapCandidatesSurfaced": true,
     "dprAndResizeChecked": true,
     "desktop390Checked": true,
     "broken80Checked": true
   },
   "semanticReview": {
     "dialogueAndReactions": "review/lettering-review.json",
-    "readOrder": "right-to-left within each three short action row; all other panels vertical",
+    "readOrder": "Thirty-five scene compositions; same-row short exchanges right to left, then staggered action/result cuts downward. Returning-to-present markers precede dialogue. Voice-p47 preserves the exact original spoken sentence in the left margin.",
     "sound": "Thunder/wind/water/rope/cup/tag events only; quiet reactions have explicit noSoundReason in sequence-plan",
-    "timeAndPlace": "voice-00 / voice-12 / voice-15 / voice-05 / voice-06"
+    "timeAndPlace": "voice-00 / voice-12 / voice-15 / voice-05 / voice-06",
+    "spatialComposition": "review/spatial-review.json",
+    "punctuation": "review/punctuation-review.json"
   },
   "limitations": [
     "User adoption pending; no finished CG, catalogue registration or public upload",
     "Physical device and Safari not tested",
     "Generated pencil rough is more detailed than requested line-only thumbnails",
     "Forearm laterality and temporary-to-clean bandage detail require another check in finished art; p45 bleeding and p77 evening darkness are visually subtle"
-  ]
+  ],
+  "spatialLayout": {
+    "compositions": 35,
+    "layoutRegister": "plan.json#beats",
+    "framelessWindows": 50,
+    "thinFrames": 30,
+    "voiceBeats": 10,
+    "rule": "Principal scene, close details, reactions and voices share meaningful space; no fixed composition quota or arbitrary repeated gap.",
+    "userAdoption": "pending"
+  }
 }

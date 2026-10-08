@@ -1,5 +1,5 @@
 {
-  "status": "checked-after-position-and-clause-reflow",
+  "status": "spatial-layout-and-exact-lettering-checked",
   "changes": [
     {
       "id": "p05",
@@ -75,7 +75,7 @@
       "dialogue": [
         {
           "speaker": "",
-          "text": "君は\n怒っているか",
+          "text": "君は\n怒っているか？",
           "kind": "spoken",
           "x": 40,
           "y": 3,
@@ -90,7 +90,7 @@
       "dialogue": [
         {
           "speaker": "",
-          "text": "痛みは\nありますか",
+          "text": "痛みは\nありますか？",
           "kind": "spoken",
           "x": 34,
           "y": 4,
@@ -135,7 +135,7 @@
       "dialogue": [
         {
           "speaker": "",
-          "text": "立たないで\nください",
+          "text": "立たないで\nください！",
           "kind": "spoken",
           "x": 32,
           "y": 2,
@@ -150,7 +150,7 @@
       "dialogue": [
         {
           "speaker": "",
-          "text": "離してください\n作業を続けます",
+          "text": "離してください！\n作業を続けます",
           "kind": "spoken",
           "x": 56,
           "y": 0,
@@ -357,7 +357,7 @@
       "dialogue": [
         {
           "speaker": "",
-          "text": "そのまま\n支えてください",
+          "text": "そのまま\n支えてください！",
           "kind": "spoken",
           "x": 50,
           "y": 7,
@@ -369,25 +369,16 @@
     },
     {
       "id": "p47",
-      "dialogue": [
-        {
-          "speaker": "",
-          "text": "その事情も\n先に\n言ってください",
-          "kind": "spoken",
-          "x": 55,
-          "y": 7,
-          "width": 27,
-          "tail": "down"
-        }
-      ],
-      "reason": "左上の吹き出しがレンの髪・顔側にあり、話者が逆に見える。ミナの右上寄りへ移し、顔を隠さず尾を下へ向ける。"
+      "dialogue": [],
+      "reason": "長い吹き出しがミナの目と表情を隠すため 全文を左の空きへ移した 話者と読む順を保持",
+      "voiceReference": "voice-p47"
     },
     {
       "id": "p48",
       "dialogue": [
         {
           "speaker": "",
-          "text": "助けを\n借りても\nいいか",
+          "text": "助けを\n借りても\nいいか？",
           "kind": "spoken",
           "x": 65,
           "y": 5,
@@ -434,7 +425,7 @@
       "dialogue": [
         {
           "speaker": "",
-          "text": "本当は\n怖かった\nですか",
+          "text": "本当は\n怖かった\nですか？",
           "kind": "spoken",
           "x": 55,
           "y": 7,
@@ -605,5 +596,9 @@
   "positionsReviewedAt390": true,
   "allSourceCellsReviewed": true,
   "finalReference": "plan.json",
-  "reviewedAt360": "review/browser-metrics.json: final voice and transition excerpts checked at360; source cells and lettering positions checked at390"
+  "reviewedAt360": "review/browser-metrics.json: final voice and transition excerpts checked at360; source cells and lettering positions checked at390",
+  "source": "plan.json",
+  "punctuationReview": "punctuation-review.json",
+  "spatialReview": "spatial-review.json",
+  "canonicalLayout": "plan.json#beats"
 }
