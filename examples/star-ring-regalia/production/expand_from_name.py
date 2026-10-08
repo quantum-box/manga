@@ -5,6 +5,7 @@ import json
 from collections import OrderedDict
 from prepare import ROOT, CAST, STYLE, prompt_for
 from expand_opening import write
+from narrative_alt import narrative_alt_text
 
 
 def episode_three():
@@ -15,6 +16,7 @@ def episode_three():
     assert validation['adoption']['status'] == 'adopted'
     assert validation['adoption']['scope'] == 'episode_03_name_only'
     source = json.loads((name / 'effective-panels.json').read_text())['panels']
+    descriptions = json.loads((ROOT / 'production/episode-03-descriptions.json').read_text())
     assert len(source) == 96
     by_scene = OrderedDict()
     for panel in source:
@@ -68,7 +70,8 @@ def episode_three():
                         'placement': 'Only a few pale trailing dots of the SAME earlier rustle beside the stop gesture; no new rustle inscription.'}]
                 asset['panels'].append(p)
             asset['references'] = [str(CAST), str(directory / 'art' / reference_by_scene[key])]
-            asset['alt'] = ' / '.join(p['scene'] + ''.join(d['speaker'] + '「' + d['text'] + '」' for d in p['lines']) for p in group)
+            asset['narrative_description'] = descriptions[asset_id]
+            asset['alt'] = narrative_alt_text(asset['narrative_description'], group)
             # Replace the earlier 3–4-shot canvas rule, not any dialogue or acting.
             prompt = prompt_for(ep, asset)
             prompt = prompt.replace('Source canvas tall approximately 1024x2560, characters in speech balloons at least 60 source pixels high, bold clean Japanese manga Gothic.',
@@ -93,6 +96,7 @@ def episode_three():
             asset['prompt'] = prompt
             ep['assets'].append(asset)
     assert len(ep['assets']) == 56
+    assert set(descriptions) == {a['id'] for a in ep['assets']}
     assigned = [p['name_panel_id'] for a in ep['assets'] for p in a['panels']]
     assert assigned == [p['id'] for p in source] and len(set(assigned)) == 96
     return ep
