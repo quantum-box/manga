@@ -11,7 +11,7 @@ STYLE = STYLE.replace('Source canvas tall approximately 1024x2560, characters in
 def finish(ep, asset, alt):
     asset.update(episode=ep['number'], references=[str(CAST), str(REFERENCE)],
                  path=str(ROOT/f"episode-{ep['number']:02d}"/'art'/f"{asset['id']}.png"))
-    asset['alt'] = alt + '。' + ' / '.join(' '.join(f"{d['speaker']}「{d['text']}」" for d in p['lines']) for p in asset['panels'])
+    asset['alt'] = alt + '。' + ' / '.join(' '.join(f"{d['speaker']}「{d['text']}」" for d in p['lines']) for p in asset['panels'] if p['lines'])
     # Keep scene-specific instructions and the semantic vertical columns, replace
     # only the old canvas rule which conflicted with the lettering width rule.
     prompt=prompt_for(ep, asset)
