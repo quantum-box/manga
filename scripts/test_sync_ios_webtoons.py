@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 import tempfile
+import tracemalloc
 import unittest
 
 from sync_ios_webtoons import bundle_catalog, sync
@@ -84,6 +85,39 @@ class OfflineBundleTests(unittest.TestCase):
         catalog = json.loads((output / "catalog.json").read_text(encoding="utf-8"))
         self.assertEqual([episode["number"] for episode in catalog[0]["episodes"]], [1, 1])
         (output / "story/chapter-white/art/second.png").write_bytes(b"changed")
+        with self.assertRaisesRegex(ValueError, "differ"):
+            sync(self.root, check=True)
+
+    def test_check_uses_bounded_memory_for_large_assets_and_detects_same_size_drift(self):
+        asset = self.chapter / "art/second.png"
+        with asset.open("wb") as stream:
+            for _ in range(16):
+                stream.write(b"a" * (1024 * 1024))
+        sync(self.root)
+        tracemalloc.start()
+        try:
+            sync(self.root, check=True)
+            _, peak = tracemalloc.get_traced_memory()
+        finally:
+            tracemalloc.stop()
+        self.assertLess(peak, 8 * 1024 * 1024)
+
+        bundled = self.root / "ios/Manga/Webtoons/story/chapter/art/second.png"
+        with bundled.open("r+b") as stream:
+            stream.seek(-1, 2)
+            stream.write(b"b")
+        self.assertEqual(asset.stat().st_size, bundled.stat().st_size)
+        with self.assertRaisesRegex(ValueError, "differ"):
+            sync(self.root, check=True)
+
+    def test_check_detects_missing_and_extra_bundle_files(self):
+        sync(self.root)
+        output = self.root / "ios/Manga/Webtoons/story/chapter/art"
+        (output / "extra.png").write_bytes(b"extra")
+        with self.assertRaisesRegex(ValueError, "differ"):
+            sync(self.root, check=True)
+        (output / "extra.png").unlink()
+        (output / "second.png").unlink()
         with self.assertRaisesRegex(ValueError, "differ"):
             sync(self.root, check=True)
 
