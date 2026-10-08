@@ -1,92 +1,84 @@
-## 場面1 処刑の続きを終わらせる
+## 01 眠れた朝
 
-原本 /workspace/generated_images/exec-612db714-3306-4b54-b841-72003d1bddb2.png
+採用原画：art/rebuild-01-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
-採用 art/01.png
+```text
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY Japanese sentence punctuation「、」「。」 from balloons and thoughts. KEEP name separators「・」, ！ ？ … and LV.999. Replace pauses with vertical COLUMN BREAKS. Preserve exact canvas dimensions/aspect ratio and every frame position; do not rearrange/reframe. Keep every face, hand, pose, identity, object and background. Hero's travel bag stays on HIS LEFT shoulder; smith's bronze clip stays on HER LEFT temple. Wrists free. Preserve existing LARGE lettering and balloon shapes/tails to same speakers. Keep all SFX. Fill former punctuation areas plain white. Upright Japanese top to bottom, columns right to left. Exact dialogue and right-to-left vertical columns:
+ハン・ユン: "朝まで眠れた"; columns "朝まで/眠れた"; voice thought
+No 、 or 。 anywhere.
+```
 
-~~~text
-Create finished artwork for the original Japanese vertical-scroll Webtoon 天魔、二周目。 Match reference 1's crisp detailed anime ink linework, saturated clean cel shading and expressive faces; reference 2 defines the heavenly demon sword ONLY. References are for identity and style, NOT their layout or events. Hero Han Yun (ハン・ユン) is a 20-year-old student in a young martial disciple's body: tousled BLACK hair with a short low ponytail, TEAL eyes, pale skin, off-white training robes with CHARCOAL lapel and a DARK RED sash, black shoes. One subtle bruise on his anatomical LEFT cheek. Kind, uncertain, observant, never a smug sadistic grin. His ability remains LV.999, no weakening or training montage. Heavenly demon sword is ONE straight black blade with a ROUND engraved GOLD guard, black wrapped grip, dark red tassel. No extra swords on the hero. Chinese martial-fantasy setting, not Japanese samurai. Recurring characters when specified: sect master Sei Kou (セイ・コウ), dignified man 50, salt-and-pepper high topknot, navy robe with ivory trim; smith So Rin (ソ・リン), young adult woman 20, short black bob, amber eyes, small bronze hairclip, ivory sleeves, teal work vest, dark apron, practical expression; Hakujin (白燼), man 30, long WHITE hair tied low, gold eyes, slate-blue robes, dark navy belt; alliance chief Go Tensaku (呉天策), man 55, sleek black hair with gray temples, narrow long moustache, plum robes with gold crane embroidery. Only introduce characters mentioned in this scene. Four consecutive vignettes reading TOP TO BOTTOM, each confined to its own band. ONE tall portrait artwork, intended ratio 1:3, at least 1024x3072 if possible. Vary composition: small close-ups, offset action beats, one large borderless focal view; no equal rectangular grid, no poster or montage of simultaneous events. Soft ivory/white edges. Large readable faces/hands and correct object continuity. Incorporate the speech balloons AND exact JAPANESE text into the artwork. Speech is upright VERTICAL Japanese: characters top-to-bottom, columns RIGHT TO LEFT, reading balloons right-to-left within a vignette. Use ONLY the supplied text; punctuation must be exact; text is large, roughly 55-65px per glyph at 1024px width, generously padded smooth oval white balloons with tails pointing to the named speaker. Avoid covering faces or hands. NO chapter titles, translations, labels, page numbers, extra words, watermark. Short inner thoughts can use small rectangular white captions, also vertical. System notices, when present, are translucent dark navy/CYAN restrained holograms in the hero's field of vision, slightly soft glowing letters, plain Japanese sans serif, not golden ornaments. Do not depict information reserved for later scenes. Panel labels in instructions are not printed.
-Continuity: Han Yun's same robes are washed clean, faint LEFT cheek bruise only. Reference 3 defines So Rin's face, short black bob with tiny tied section and bronze clip, teal work vest, dark apron. Her wrists are always FREE, no cuffs or chains. Reference 4 defines white-haired Hakujin's gold eyes and slate-blue robes ONLY, not its arena or giant flashback. Hakujin's RIGHT wrist is unmarked, all control seals were removed in episode 6. Reference 5, when present, defines chief Go Tensaku's face and plum robes, from its BOTTOM vignette only. Do not copy any reference scene or text. In episode 8, any black wrist bands belong only to possessed town guards, not Hakujin.
-Episode 10, scene 1 処刑の続きを終わらせる.
-Vignette 1: Alliance chief thrusts a narrow GOLD ceremonial blade from right hand at Yun, cracked control crystal in LEFT hand. Yun black sword SHEATHED after turning to protect companions, hands free. No injury.
-Exact speech by 呉天策: 「物語に逆らうな！」
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-8317f5a0-7c2e-468c-87a9-2c9cee052200.png`
 
-Vignette 2: Large close-up Yun RIGHT index and middle fingers gently STOP chief's gold blade, clearly two fingers, not crushing yet. Yun steady compassionate serious expression contrasts terror from episode 1. Only chief weapon drawn.
-Exact speech by ハン・ユン: 「今度は、自分で止める。」
+入力資料：`production/inputs/exec-6efc938a-c25f-4716-a605-3ec479310db0.png`
 
-Vignette 3: Yun LEFT palm sends a SMALL controlled cyan push into chief's chest, chief safely sits backward onto stair, gold weapon drops beside him. No gore no broken limbs. Yun right fingers release blade safely.
-Exact speech by ハン・ユン: 「もう、誰も操らせない。」
+## 02 あたたかい一口
 
-Vignette 4: Close Yun picks up fallen cracked black control crystal in left palm and squeezes it into black dust, no blade cutting hands. Chief alive seated, panting. Smith and Hakujin look relieved.
-Exact speech by 白燼: 「……命令の声が、消えた。」
-~~~
+採用原画：art/rebuild-02-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
-## 場面2 帰り道を選ぶ
+```text
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY Japanese sentence punctuation「、」「。」 from balloons and thoughts. KEEP name separators「・」, ！ ？ … and LV.999. Replace pauses with vertical COLUMN BREAKS. Preserve exact canvas dimensions/aspect ratio and every frame position; do not rearrange/reframe. Keep every face, hand, pose, identity, object and background. Hero's travel bag stays on HIS LEFT shoulder; smith's bronze clip stays on HER LEFT temple. Wrists free. Preserve existing LARGE lettering and balloon shapes/tails to same speakers. Keep all SFX. Fill former punctuation areas plain white. Upright Japanese top to bottom, columns right to left. Exact dialogue and right-to-left vertical columns:
+ハン・ユン: "あったかい"; columns "あったかい"; voice soft
+No 、 or 。 anywhere.
+```
 
-原本 /workspace/generated_images/exec-54718385-f75f-4830-aff6-f214fa659586.png
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-554798ee-60d1-4a40-9de6-80dda789351a.png`
 
-採用 art/02.png
+入力資料：`production/inputs/exec-b2e8d38a-0d03-40d3-85f2-71fb31e84a63.png`
 
-~~~text
-Create finished artwork for the original Japanese vertical-scroll Webtoon 天魔、二周目。 Match reference 1's crisp detailed anime ink linework, saturated clean cel shading and expressive faces; reference 2 defines the heavenly demon sword ONLY. References are for identity and style, NOT their layout or events. Hero Han Yun (ハン・ユン) is a 20-year-old student in a young martial disciple's body: tousled BLACK hair with a short low ponytail, TEAL eyes, pale skin, off-white training robes with CHARCOAL lapel and a DARK RED sash, black shoes. One subtle bruise on his anatomical LEFT cheek. Kind, uncertain, observant, never a smug sadistic grin. His ability remains LV.999, no weakening or training montage. Heavenly demon sword is ONE straight black blade with a ROUND engraved GOLD guard, black wrapped grip, dark red tassel. No extra swords on the hero. Chinese martial-fantasy setting, not Japanese samurai. Recurring characters when specified: sect master Sei Kou (セイ・コウ), dignified man 50, salt-and-pepper high topknot, navy robe with ivory trim; smith So Rin (ソ・リン), young adult woman 20, short black bob, amber eyes, small bronze hairclip, ivory sleeves, teal work vest, dark apron, practical expression; Hakujin (白燼), man 30, long WHITE hair tied low, gold eyes, slate-blue robes, dark navy belt; alliance chief Go Tensaku (呉天策), man 55, sleek black hair with gray temples, narrow long moustache, plum robes with gold crane embroidery. Only introduce characters mentioned in this scene. Four consecutive vignettes reading TOP TO BOTTOM, each confined to its own band. ONE tall portrait artwork, intended ratio 1:3, at least 1024x3072 if possible. Vary composition: small close-ups, offset action beats, one large borderless focal view; no equal rectangular grid, no poster or montage of simultaneous events. Soft ivory/white edges. Large readable faces/hands and correct object continuity. Incorporate the speech balloons AND exact JAPANESE text into the artwork. Speech is upright VERTICAL Japanese: characters top-to-bottom, columns RIGHT TO LEFT, reading balloons right-to-left within a vignette. Use ONLY the supplied text; punctuation must be exact; text is large, roughly 55-65px per glyph at 1024px width, generously padded smooth oval white balloons with tails pointing to the named speaker. Avoid covering faces or hands. NO chapter titles, translations, labels, page numbers, extra words, watermark. Short inner thoughts can use small rectangular white captions, also vertical. System notices, when present, are translucent dark navy/CYAN restrained holograms in the hero's field of vision, slightly soft glowing letters, plain Japanese sans serif, not golden ornaments. Do not depict information reserved for later scenes. Panel labels in instructions are not printed.
-Continuity: Han Yun's same robes are washed clean, faint LEFT cheek bruise only. Reference 3 defines So Rin's face, short black bob with tiny tied section and bronze clip, teal work vest, dark apron. Her wrists are always FREE, no cuffs or chains. Reference 4 defines white-haired Hakujin's gold eyes and slate-blue robes ONLY, not its arena or giant flashback. Hakujin's RIGHT wrist is unmarked, all control seals were removed in episode 6. Reference 5, when present, defines chief Go Tensaku's face and plum robes, from its BOTTOM vignette only. Do not copy any reference scene or text. In episode 8, any black wrist bands belong only to possessed town guards, not Hakujin.
-Episode 10, scene 2 帰り道を選ぶ.
-Vignette 1: Yun RIGHT hand inserts flat of his one black sword into hidden back groove of gate pedestal. Bronze disk still in FRONT slot, So Rin guides his hand from side, Hakujin watches with hands free. Precision, not a stabbing.
-Exact speech by ソ・リン: 「そこ。刃じゃなく、剣の背を。」
+## 03 帰るための一歩
 
-Vignette 2: A thin cyan seam opens around gate, return conditions shatter into harmless light. Translucent CYAN hologram exactly two lines: 真エンド　開放 / 帰還権　獲得. Yun smiles in disbelief.
-Exact horizontal hologram text, line order: 真エンド　開放 / 帰還権　獲得
+採用原画：art/rebuild-03-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
-Vignette 3: Gate view of his modern student room now clear and accessible. Yun sword SHEATHED at left hip; looks from home to So Rin and Hakujin, tender grateful face.
-Exact speech by ハン・ユン: 「一度、帰ってくる。」
+```text
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY Japanese sentence punctuation「、」「。」 from balloons and thoughts. KEEP name separators「・」, ！ ？ … and LV.999. Replace pauses with vertical COLUMN BREAKS. Preserve exact canvas dimensions/aspect ratio and every frame position; do not rearrange/reframe. Keep every face, hand, pose, identity, object and background. Hero's travel bag stays on HIS LEFT shoulder; smith's bronze clip stays on HER LEFT temple. Wrists free. Preserve existing LARGE lettering and balloon shapes/tails to same speakers. Keep all SFX. Fill former punctuation areas plain white. Upright Japanese top to bottom, columns right to left. Exact dialogue and right-to-left vertical columns:
+ハン・ユン: "別の世界へ帰る道を探したい"; columns "別の世界へ/帰る道を/探したい"; voice normal
+セイ・コウ: "麓の書庫に異界の記録がある"; columns "麓の書庫に/異界の記録が/ある"; voice formal
+ハン・ユン: "そこから探してみる"; columns "そこから/探してみる"; voice normal
+No 、 or 。 anywhere.
+```
 
-Vignette 4: So Rin and Hakujin at gate wave him off with relief, not clinging. Smith holds ONE worn cloth tool bag as gift offered to Yun's left hand; sword sheathed.
-Exact speech by ソ・リン: 「うん。帰りは、あんたが決めて。」
-~~~
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-d3212735-f629-47ca-a7df-921b17d2b5ae.png`
 
-## 場面3 二つの暮らし
+入力資料：`production/inputs/exec-7cffd836-f613-46f5-9569-4d74d6405a8c.png`
 
-原本 /workspace/generated_images/exec-ca8f92f7-8c24-4b4e-9ed9-377ac80471f4.png
+## 04 借りる道具
 
-採用 art/03.png
+採用原画：art/rebuild-04-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
-~~~text
-Create finished artwork for the original Japanese vertical-scroll Webtoon 天魔、二周目。 Match reference 1's crisp detailed anime ink linework, saturated clean cel shading and expressive faces; reference 2 defines the heavenly demon sword ONLY. References are for identity and style, NOT their layout or events. Hero Han Yun (ハン・ユン) is a 20-year-old student in a young martial disciple's body: tousled BLACK hair with a short low ponytail, TEAL eyes, pale skin, off-white training robes with CHARCOAL lapel and a DARK RED sash, black shoes. One subtle bruise on his anatomical LEFT cheek. Kind, uncertain, observant, never a smug sadistic grin. His ability remains LV.999, no weakening or training montage. Heavenly demon sword is ONE straight black blade with a ROUND engraved GOLD guard, black wrapped grip, dark red tassel. No extra swords on the hero. Chinese martial-fantasy setting, not Japanese samurai. Recurring characters when specified: sect master Sei Kou (セイ・コウ), dignified man 50, salt-and-pepper high topknot, navy robe with ivory trim; smith So Rin (ソ・リン), young adult woman 20, short black bob, amber eyes, small bronze hairclip, ivory sleeves, teal work vest, dark apron, practical expression; Hakujin (白燼), man 30, long WHITE hair tied low, gold eyes, slate-blue robes, dark navy belt; alliance chief Go Tensaku (呉天策), man 55, sleek black hair with gray temples, narrow long moustache, plum robes with gold crane embroidery. Only introduce characters mentioned in this scene. Four consecutive vignettes reading TOP TO BOTTOM, each confined to its own band. ONE tall portrait artwork, intended ratio 1:3, at least 1024x3072 if possible. Vary composition: small close-ups, offset action beats, one large borderless focal view; no equal rectangular grid, no poster or montage of simultaneous events. Soft ivory/white edges. Large readable faces/hands and correct object continuity. Incorporate the speech balloons AND exact JAPANESE text into the artwork. Speech is upright VERTICAL Japanese: characters top-to-bottom, columns RIGHT TO LEFT, reading balloons right-to-left within a vignette. Use ONLY the supplied text; punctuation must be exact; text is large, roughly 55-65px per glyph at 1024px width, generously padded smooth oval white balloons with tails pointing to the named speaker. Avoid covering faces or hands. NO chapter titles, translations, labels, page numbers, extra words, watermark. Short inner thoughts can use small rectangular white captions, also vertical. System notices, when present, are translucent dark navy/CYAN restrained holograms in the hero's field of vision, slightly soft glowing letters, plain Japanese sans serif, not golden ornaments. Do not depict information reserved for later scenes. Panel labels in instructions are not printed.
-Continuity: Han Yun's same robes are washed clean, faint LEFT cheek bruise only. Reference 3 defines So Rin's face, short black bob with tiny tied section and bronze clip, teal work vest, dark apron. Her wrists are always FREE, no cuffs or chains. Reference 4 defines white-haired Hakujin's gold eyes and slate-blue robes ONLY, not its arena or giant flashback. Hakujin's RIGHT wrist is unmarked, all control seals were removed in episode 6. Reference 5, when present, defines chief Go Tensaku's face and plum robes, from its BOTTOM vignette only. Do not copy any reference scene or text. In episode 8, any black wrist bands belong only to possessed town guards, not Hakujin.
-Episode 10, scene 3 二つの暮らし.
-Vignette 1: Modern student room, Yun still same off-white martial robe dark red sash and sheathed black sword, seated on floor beside desk, exhausted relieved eyes. Cloth tool bag beside him, bronze key on dark red sash recovered after gate opened. Computer and textbooks no printed words. He checks a smartphone without legible screen.
-Exact speech by ハン・ユン: 「……帰った。ちゃんと、生きてる。」
+```text
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY Japanese sentence punctuation「、」「。」 from balloons and thoughts. KEEP name separators「・」, ！ ？ … and LV.999. Replace pauses with vertical COLUMN BREAKS. Preserve exact canvas dimensions/aspect ratio and every frame position; do not rearrange/reframe. Keep every face, hand, pose, identity, object and background. Hero's travel bag stays on HIS LEFT shoulder; smith's bronze clip stays on HER LEFT temple. Wrists free. Preserve existing LARGE lettering and balloon shapes/tails to same speakers. Keep all SFX. Fill former punctuation areas plain white. Upright Japanese top to bottom, columns right to left. Exact dialogue and right-to-left vertical columns:
+ソ・リン: "袋の留め具壊したら直す"; columns "袋の留め具/壊したら/直す"; voice soft
+ハン・ユン: "また頼む"; columns "また頼む"; voice normal
+No 、 or 。 anywhere.
+```
 
-Vignette 2: Yun gently calls home with smartphone to right ear, LEFT hand over mouth emotional but relieved, same outfit. No new modern identity or haircut.
-Exact speech by ハン・ユン: 「母さん。今日は、声が聞きたくて。」
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-c47e4254-148b-46db-8983-5b5254f1cec7.png`
 
-Vignette 3: Later Yun returns THROUGH cyan doorway to town forge, still clean same martial outfit, now carries ONE white cloth bundle of bandages and a small packet of tea. Smith at anvil and Hakujin by door warmly surprised.
-Exact speech by ソ・リン: 「おかえり。早かったね。」
+入力資料：`production/inputs/exec-ed5260c5-8921-4b89-96c5-92379ca970b0.png`
 
-Vignette 4: Final large borderless close view Yun with teal eyes and small confident kind smile, two companions visible behind him at sunlit forge, sword sheathed, no throne no sinister pose.
-Exact speech by ハン・ユン: 「二周目は、俺が決める。」
-~~~
+## 05 見送る門
 
-## 場面4 戻った日常を確かめる
+採用原画：art/rebuild-05-bag.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
 
-原本 /Users/takanorifukuyama/.codex/generated_images/01a10f9d-3faf-7872-825d-1d13d57bf7c3/exec-602d9c1d-ff85-43fe-8191-53b29009c7d0.png
+```text
+Precisely edit this tall continuous comic, only HERO at bottom. Preserve ALL morning gate/master/So Rin at top, mist and steps and landscape and sole hero's body/camera/clothes. Move ONE cream shoulder BAG from viewer LEFT hero shoulder to viewer RIGHT hero shoulder (his ANATOMICAL LEFT, opposite current bag side). REMOVE old bag/strap completely from viewer LEFT and reconstruct empty robe/background, right hand on viewer LEFT now relaxed empty low near waist. Draw cream bag strap over viewer RIGHT shoulder, bag hangs viewer RIGHT alongside his left hip, his LEFT hand viewer RIGHT can gently grip strap near chest. Keep right cheek bruise viewer LEFT, short low ponytail, red sash, no sword. Hero appears only once. Preserve exact コツ、コツ footstep SFX bottom and enormous empty mist middle. No dialogue, text or inset panels.
+```
 
-採用 art/04-pacing.png
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-7b256512-d5c9-41be-a597-9c90b46fa1a7.png`
 
-~~~text
-Create finished artwork for the original Japanese vertical-scroll Webtoon 天魔、二周目。 The provided local artwork defines existing character identity, clothing, palette and anime cel shading ONLY. Do not reproduce its events or panel layout. References are for identity and style, NOT their layout or events. Hero Han Yun (ハン・ユン) is a 20-year-old student in a young martial disciple's body: tousled BLACK hair with a short low ponytail, TEAL eyes, pale skin, off-white training robes with CHARCOAL lapel and a DARK RED sash, black shoes. One subtle bruise on his anatomical LEFT cheek. Kind, uncertain, observant, never a smug sadistic grin. His ability remains LV.999, no weakening or training montage. Heavenly demon sword is ONE straight black blade with a ROUND engraved GOLD guard, black wrapped grip, dark red tassel. No extra swords on the hero. Chinese martial-fantasy setting, not Japanese samurai. Recurring characters when specified: sect master Sei Kou (セイ・コウ), dignified man 50, salt-and-pepper high topknot, navy robe with ivory trim; smith So Rin (ソ・リン), young adult woman 20, short black bob, amber eyes, small bronze hairclip, ivory sleeves, teal work vest, dark apron, practical expression; Hakujin (白燼), man 30, long WHITE hair tied low, gold eyes, slate-blue robes, dark navy belt; alliance chief Go Tensaku (呉天策), man 55, sleek black hair with gray temples, narrow long moustache, plum robes with gold crane embroidery. Only introduce characters mentioned in this scene. Four consecutive vignettes reading TOP TO BOTTOM, each confined to its own band. ONE tall portrait artwork, intended ratio 1:3, at least 1024x3072 if possible. Vary composition: small close-ups, offset action beats, one large borderless focal view; no equal rectangular grid, no poster or montage of simultaneous events. Soft ivory/white edges. Large readable faces/hands and correct object continuity. Incorporate the speech balloons AND exact JAPANESE text into the artwork. Speech is upright VERTICAL Japanese: characters top-to-bottom, columns RIGHT TO LEFT, reading balloons right-to-left within a vignette. Use ONLY the supplied text; punctuation must be exact; text is large, roughly 55-65px per glyph at 1024px width, generously padded smooth oval white balloons with tails pointing to the named speaker. Avoid covering faces or hands. NO chapter titles, translations, labels, page numbers, extra words, watermark. Short inner thoughts can use small rectangular white captions, also vertical. System notices, when present, are translucent dark navy/CYAN restrained holograms in the hero's field of vision, slightly soft glowing letters, plain Japanese sans serif, not golden ornaments. Do not depict information reserved for later scenes. Panel labels in instructions are not printed.
-Create an ADDITIONAL bridging scene, not a replacement of the reference. The scene states below override generic clothing/dirt and prop states. Episode 10, 戻った日常を確かめる. Purpose: 母への電話の後、部屋で休み、帰還の実感と次に会う意思を育てる. Four vignettes exactly, top to bottom:
+入力資料：`production/inputs/exec-8ed2a162-cc64-43dd-91e1-037ff941a49c.png`
 
-Vignette 1: MODERN student room after his call: Yun still in ivory martial robe charcoal lapel and dark red sash, ONE sword SHEATHED at left hip. He puts smartphone face DOWN beside a closed textbook. Worn cloth tool bag on floor, no magical portal visible.
-Exact inner thought in a white caption by ハン・ユン: いつもの、部屋だ。
-Vertical columns, right to left: いつもの、部屋 / だ。. Do not print separators, labels or quotation marks.
-Vignette 2: Yun sits at desk, cradles ONE mug with both hands, looks at steam. Same robes and ponytail, subtle LEFT cheek bruise, calm eyes. No extra sword, no modern haircut.
-Exact inner thought in a white caption by ハン・ユン: 温かい。ちゃんと、分かる。
-Vertical columns, right to left: 温かい。ちゃん / と、分かる。. Do not print separators, labels or quotation marks.
-Vignette 3: Large quiet view of Yun asleep in desk chair as DAWN light fills his room. Same robe, sheathed sword safely beside chair, tool bag near feet. No dialogue, no text anywhere.
-SILENT VIGNETTE. No text, no balloon, no caption.
-Vignette 4: Morning: rested Yun places a small tea packet and bandages on a white cloth, preparing the SINGLE white bundle used in the next scene. ONE sword sheathed at left hip, no portal yet.
-Exact inner thought in a white caption by ハン・ユン: 今度は、会いに行こう。
-Vertical columns, right to left: 今度は、会いに / 行こう。. Do not print separators, labels or quotation marks.
-Continuity: Yun now has clean robes after washing at the forge; only faint LEFT cheek bruise. Except episode 6's control mark as expressly required, no bindings reappear. Keep reference character identities, but use stated free-wrist and clean-robe states.
-~~~
+## 06 自分で歩く
+
+採用原画：art/rebuild-06-clean.png。画像生成原本を無加工で配置。表示範囲だけをCSSで記録。
+
+```text
+Use case: text-localization. Minimal edit of this finished Japanese vertical Webtoon comic. Erase ONLY Japanese sentence punctuation「、」「。」 from balloons and thoughts. KEEP name separators「・」, ！ ？ … and LV.999. Replace pauses with vertical COLUMN BREAKS. Preserve exact canvas dimensions/aspect ratio and every frame position; do not rearrange/reframe. Keep every face, hand, pose, identity, object and background. Hero's travel bag stays on HIS LEFT shoulder; smith's bronze clip stays on HER LEFT temple. Wrists free. Preserve existing LARGE lettering and balloon shapes/tails to same speakers. Keep all SFX. Fill former punctuation areas plain white. Upright Japanese top to bottom, columns right to left. Exact dialogue and right-to-left vertical columns:
+ハン・ユン: "帰り道は俺が探す"; columns "帰り道は/俺が探す"; voice thought
+No 、 or 。 anywhere.
+```
+
+生成原本：`/Users/takanorifukuyama/.codex/generated_images/01a11667-d42f-7c40-932a-b475072c293c/exec-37c40d71-2775-41d7-9f64-2922e381bbc8.png`
+
+入力資料：`production/inputs/exec-643ecccf-57f4-4348-bfe4-fbdd1e1367c7.png`

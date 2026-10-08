@@ -1,133 +1,120 @@
-# 天魔、二周目。 第2話 その剣は、俺を知っている
+# 天魔、二周目。 第2話 強い手で、壊さない
 
-この話で得るものは天魔剣と隠しルート。
+変化：攻撃を防ぎ、生きている相手を確かめ、自分の強さと恐怖を受け止める。
 
-全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+開始：右の二指で刃を止め、縄は切れている。
 
-## 読書区間1 音の行き先
+終了：門主が処刑停止。剣は折れ、羅は生存。ハンは石段で水を飲み、事情を知りたい。
 
-間の役割　音の出どころへ歩き、問いから剣の出現まで待つ
+## 01 指が痛くない
 
-表示原画　art/01.png、範囲 [0, 2172]。
+読者の理解／間：前話の結果に本人の感覚を返す
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Same daylight courtyard and caught sword. Top close-up right two fingers intact skin holding silver blade. Bottom medium hero looking from fingers to elder with fearful uncertainty. Elder at hero's upper right, no extra sword.
 
-### コマ1
+伏せる情報／状態：受け止める顔。攻撃再開は次素材。
 
-作画　Stone courtyard immediately after episode 1. Han Yun's hands now free of rope, arms lowering; blue-robed disciples keep their distance. An injured elder is attended by two disciples far behind, alive. Han Yun listens to a distant chime, then takes one cautious step toward an old wooden vault.
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　……音が、続いてる。
+原画：art/rebuild-01-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 0}]
 
-### コマ2
+効果音（発話と別）：none
 
-作画　Close-up of Han Yun's LEFT hand trembling briefly; he breathes out and closes his hand gently rather than making a fist. No visible sword yet.
+発話：ハン・ユン「痛くない」／縦列 右→左：痛く/ない／声：thought
+ハン・ユン「もうやめて」／縦列 右→左：もう/やめて／声：weak
 
-ハン・ユン　また、襲われるのか？
+## 02 剣を失った長老
 
-### コマ3
+読者の理解／間：再攻撃の理由と手段を絵でつなぐ
 
-作画　Sei Kou stands between anxious disciples and Han Yun, open palm holding everyone back. Calm face, no kneeling. Han Yun pauses.
+描くもの／カメラ／立ち位置：Three short unequal ACTION shots. TOP elder angry twists the caught sword, blade visibly cracks. MIDDLE right-to-left horizontal pair of close-ups: right blade snaps while held, left elder throws broken hilt away. BOTTOM larger actual diagonal frame: elder lunges with EMPTY RIGHT FIST toward hero chest. One broken blade never reforms; hero hands bare.
 
-セイ・コウ　追うな。まず、話を聞く。
+伏せる情報／状態：剣を失ってから拳。防御結果はまだ描かない。
 
-### コマ4
+作画形式：action。読む順は上から下、同段の小コマは右から左。
 
-作画　Han Yun follows a thin gold light DOWN a long stone stair toward vault doors. Light is below, no sword visible. His face is wary, not triumphant.
+原画：art/rebuild-02-causal.png 887×1774。表示窓：[{"range": [0, 1774], "gap": 180}]
 
-ハン・ユン　そこに、誰かいるのか。
+効果音（発話と別）：パキン、ブン
 
-## 読書区間2 名前を確かめる
+発話：羅長老「妖術か！」／縦列 右→左：妖術か！／声：shout
 
-間の役割　未知の相手と短く話し、安全を確かめてから扉へ進む
+## 03 身を守る掌
 
-表示原画　art/04-pacing.png、範囲 [0, 2172]。
+読者の理解／間：攻撃に対する防御を選ぶ
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Two diagonal unequal frames keeping hero left and elder right. Top elder empty right fist approaches, hero alarmed extends LEFT open palm to redirect attacking forearm away from himself. Bottom elder stumbles backward several steps from small palm force, same silver fragments near feet. Nonlethal defensive push, no bloody chest wound. Hero feet planted; not a named ultimate technique.
 
-### コマ5
+伏せる情報／状態：右手は刃を離した。二つの掌打に増やさない。
 
-作画　At the CLOSED vault door, Yun turns toward Sei Kou, both hands EMPTY, wary. No sword visible.
+作画形式：action。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　あなたは、誰ですか。
+原画：art/rebuild-03.png 887×1774。表示窓：[{"range": [0, 1774], "gap": 140}]
 
-### コマ6
+効果音（発話と別）：ドン
 
-作画　Sei Kou stops one pace away, keeps both open hands visible, speaks gently. Door remains CLOSED.
+発話：ハン・ユン「来ないで！」／縦列 右→左：来ないで！／声：shout
 
-セイ・コウ　セイ・コウ。この門の主だ。
+## 04 音のあと
 
-### コマ7
+読者の理解／間：衝撃の持続を聞いて相手を探す
 
-作画　Close Yun checks the rope marks on his now FREE wrist. He looks back at the exit, then at the master.
+描くもの／カメラ／立ち位置：Sparse characterless borderless WHITE scroll artwork. Only thin gray dust motes tapering DOWN and one exact drawn sound ご…… near top quarter, smaller ending vibration at lower space without extra text. No faces, no silhouettes, no panel borders, no new impact, no scenery. This is the fading continuation of prior ドン.
 
-ハン・ユン　もう、縛らないでください。
+伏せる情報／状態：羅の生死をまだ見せず、次の姿まで待つ。
 
-### コマ8
+作画形式：sparse。読む順は上から下、同段の小コマは右から左。
 
-作画　Sei Kou steps aside to leave an unobstructed retreat. Yun takes a breath before facing the CLOSED door. No sword or vault interior yet.
+原画：art/rebuild-04.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 280}]
 
-セイ・コウ　約束する。ここで待とう。
+効果音（発話と別）：ご……
 
-## 読書区間3 選ぶ剣
+発話：なし。
 
-間の役割　第1話で伏せた天魔剣を初めて見せ、本人の戸惑いを読む
+## 05 息をしている
 
-表示原画　art/02.png、範囲 [0, 2172]。
+読者の理解／間：倒れた相手の生存を確認する
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Top medium elder seated stunned against lowest stone step, eyes open breathing, not dead or bleeding, empty hands. Bottom hero crouches at a respectful distance, watches elder chest rise, his own hands trembling. Same courtyard and broken sword, no weapons in hero hands.
 
-### コマ9
+伏せる情報／状態：体の動きで確認。勝利通知は出さない。
 
-作画　ONE black straight sword floats horizontally with its gold guard toward Han Yun and blade pointing away from him, as if politely offering its hilt. Open vault behind, soft gold light. He leans back, astonished. No sword duplicated.
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　……俺に、触れろって？
+原画：art/rebuild-05-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 900}]
 
-### コマ10
+効果音（発話と別）：none
 
-作画　Close hand detail: Han Yun slowly places his RIGHT fingers around the black wrapped hilt. Sword has not swung; only grip changes.
+発話：ハン・ユン「生きてる」／縦列 右→左：生きてる／声：thought
 
-ハン・ユン　切らないでくれよ。
+## 06 処刑の停止
 
-### コマ11
+読者の理解／間：権力者の介入を一つずつ聞く
 
-作画　Han Yun's right hand now firmly but gently holds the one sword, pointed safely DOWN. CYAN hologram with exactly two horizontal lines: 天魔剣　継承 / 隠しルート　開放. His eyes widen.
+描くもの／カメラ／立ち位置：TOP wide sect master Sei Kou enters between hero and elder, raises open empty hand to halt guards. BOTTOM hero still crouched, realizes guard spears lowered; one close-up trembling hand. Master high salt-and-pepper topknot, navy robe ivory trim. Not an army battle.
 
-描写　天魔剣　継承 / 隠しルート　開放
+伏せる情報／状態：罪はまだ晴れていない。
 
-### コマ12
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Sei Kou's large face, surprised and solemn, looking at the sword. Yun shown in profile at edge, still same robes.
+原画：art/rebuild-06-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 200}]
 
-セイ・コウ　剣が、お前を選んだ。
+効果音（発話と別）：none
 
-## 読書区間4 地下の返事
+発話：セイ・コウ「処刑を止める」／縦列 右→左：処刑を/止める／声：formal
 
-間の役割　従う先を他人に決めさせず、地下の生きた声で次話へ
+## 07 水の温度
 
-表示原画　art/03.png、範囲 [0, 2172]。
+読者の理解／間：安全・手の加減・安堵を同じ場所で描く
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Same courtyard shaded low stone steps. Top hero sits with shoulders slumped, hands free rope marks. Middle small close-up accepts one plain ceramic cup of WATER using BOTH hands carefully, cup unbroken, master offscreen. Bottom large quiet hero sips and breathes, eyelids wet, RIGHT cheek bruise. No food, no system, no new mystery.
 
-### コマ13
+伏せる情報／状態：飲むまでの器と手を維持。
 
-作画　Yun stands with sword safely lowered, speaking to the sect master in warm vault doorway light. Fear easing but no grandiose pose.
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　選ばれても、俺は俺です。
+原画：art/rebuild-07-clean.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 440}]
 
-### コマ14
+効果音（発話と別）：すぅ
 
-作画　Sei Kou extends ONE bronze key into Yun's free LEFT palm. Sword remains in Yun's RIGHT hand pointed down. Key transfer anatomically clear.
-
-セイ・コウ　なら、禁庫で確かめろ。
-
-### コマ15
-
-作画　Deep stairs inside vault descending out of frame. Yun at top leaning to listen, one sword now safely SHEATHED at left hip in plain black scabbard. No person visible below.
-
-ハン・ユン　ゲームに、地下なんて……。
-
-### コマ16
-
-作画　Close-up of a rough wooden cellar hatch and shaft of dim light, two gentle knocks suggested by motion lines but NO printed sound. Yun's startled eye partially at top margin. A balloon tail points DOWN beyond the hatch; do NOT show smith or prison yet.
-
-地下の声　……誰か。いるの？
+発話：ハン・ユン「……帰りたい」／縦列 右→左：……/帰りたい／声：thought

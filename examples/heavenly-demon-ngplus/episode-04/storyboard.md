@@ -1,136 +1,105 @@
-# 天魔、二周目。 第4話 その天才、俺が買う
+# 天魔、二周目。 第4話 逃げる前に
 
-この話で得るものは鍛冶師の仲間と天魔剣の共鳴。
+変化：逃げられる力を確かめたうえで、もう一人の証人を置いて行かないと決める。
 
-全16コマ。原画内の会話は縦書き。上から下、列は右から左。発話ごとの全文と話者を以下に記録。
+開始：同日夕方。東の休息室に案内される。
 
-## 読書区間1 人の値札
+終了：朝の鍛冶場訪問を門主に申し出る。ソ・リンの存在を知るが、まだ会っていない。
 
-間の役割　ゲームの報酬を人間として捉え直す
+## 01 一晩の居場所
 
-表示原画　art/01.png、範囲 [0, 2170]。
+読者の理解／間：移動と汚れを洗う過程で時間をつなぐ
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Evening. Top hero and master walking east covered corridor, old courtyard behind. Middle basin at rest room, hero wipes same dusty robe and hands with plain wet cloth. Bottom medium in simple guest room, same robes now less dusty, RIGHT cheek bruise and rope marks remain. Window lattice moon just appearing. No costume change.
 
-### コマ1
+伏せる情報／状態：手首と痣は消さない。
 
-作画　Yun and grizzled male vault keeper in brown robes face iron cell, smith behind bars. Yun points to wrist chain, sheathed sword.
+作画形式：three。読む順は上から下、同段の小コマは右から左。
 
-番人　買うなら、銀百枚だ。
+原画：art/rebuild-01-clean.png 724×2172。表示窓：[{"range": [0, 2172], "gap": 0}]
 
-### コマ2
+効果音（発話と別）：ちゃぷ
 
-作画　Close Yun places a cloth bag of silver on table with TWO hands; sword remains sheathed. Smith in distant background frowns.
+発話：セイ・コウ「今夜はここを使え」／縦列 右→左：今夜は/ここを/使え／声：formal
 
-ソ・リン　今度は、あんたの道具？
+## 02 窓の向こう
 
-### コマ3
+読者の理解／間：逃げ道を目でたどる
 
-作画　Keeper hands Yun a paper ownership contract, no legible writing except marks. Yun looks at paper with discomfort, not greed.
+描くもの／カメラ／立ち位置：One borderless tall continuous view from hero hand on open guest room window sill near top, down along sloping stone mountain path outside, to far south gate at bottom. Hero only sleeve/hand, no repeated person. Moonlit muted blue, edges fade white. No escape action or next-day figures.
 
-ハン・ユン　……道具じゃない。
+伏せる情報／状態：能力的な弱体化で閉じ込めない。
 
-### コマ4
+作画形式：continuous。読む順は上から下、同段の小コマは右から左。
 
-作画　Yun tears ownership contract in TWO, intact halves in hands. So Rin sees through bars, startled. No shackle breaking yet.
+原画：art/rebuild-02-clean.png 726×2167。表示窓：[{"range": [0, 2167], "gap": 300}]
 
-ハン・ユン　代金は払う。契約は捨てる。
+効果音（発話と別）：none
 
-## 読書区間2 自由な手
+発話：ハン・ユン「飛び越えれば出られる」／縦列 右→左：飛び越えれば/出られる／声：thought
 
-間の役割　強さを壊す力から守る力へ使う
+## 03 聞こえた名前
 
-表示原画　art/02.png、範囲 [0, 2172]。
+読者の理解／間：廊下の会話から別の証人の危険を知る
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Hero's point of view through partly open guestroom door. TOP small shot of Master Sei Kou dark hair SHORT beard NAVY robe on corridor right, says 調べるのは、ソ・リンもだ。 BOTTOM larger Elder Luo long white beard PLUM robe at corridor left responding あの鍛冶師も、共犯だ。 Visible clear speakers with balloon tails, hero only tiny empty silhouette edge inside room, NO smith depicted. Evening corridor same wooden lattice; no evidence or new attack.
 
-### コマ5
+伏せる情報／状態：誰の声かは直前の門主と既知の羅でつなぐ。
 
-作画　Yun opens iron cell using keeper key. Kneels before smith, keeps her face visible and sword sheathed. His TWO right fingers touch ONE connecting link between her wrist shackles.
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-ハン・ユン　動かないで。鎖だけ、切る。
+原画：art/rebuild-03-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 450}]
 
-### コマ6
+効果音（発話と別）：none
 
-作画　Close-up chain link snaps between fingers, wrist shackles now fall OPEN harmlessly, no cuts no blood. So Rin pulls her hands free.
+発話：セイ・コウ「調べるのはソ・リンもだ」／縦列 右→左：調べるのは/ソ・リンもだ／声：formal
+羅長老「あの鍛冶師も共犯だ」／縦列 右→左：あの鍛冶師も/共犯だ／声：normal
 
-ソ・リン　……手が、自由だ。
+## 04 置いて行くのか
 
-### コマ7
+読者の理解／間：自分の生還と証人の危険を結び付ける
 
-作画　So Rin rubs her freed wrist; cuffs and chain lie on floor behind and NEVER return. Yun offers blue-black star metal with left open palm, sword sheathed.
+描くもの／カメラ／立ち位置：Top hero freezes with one foot near window, remembers his OWN rope-marked wrists close-up, not a flashback of smith. Bottom hero slowly withdraws hand from sill, turns back into empty room. No heroic grin.
 
-ハン・ユン　行き先は、自分で決めて。
+伏せる情報／状態：新たな襲撃を足さない。
 
-### コマ8
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　So Rin stands, chooses to take ONE star metal stone and looks at Yun's sheathed sword with renewed purpose.
+原画：art/rebuild-04-cheek.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 440}]
 
-ソ・リン　なら、あんたの剣を直す。
+効果音（発話と別）：none
 
-## 読書区間3 自分で選ぶ仕事
+発話：ハン・ユン「俺だけ逃げたら」／縦列 右→左：俺だけ/逃げたら／声：thought
 
-間の役割　自由になった直後に働かせず、安心と本人の意思を会話で確かめる
+## 05 選ぶ朝
 
-表示原画　art/04-pacing.png、範囲 [0, 2172]。
+読者の理解／間：決断を静かな動作で示す
 
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
+描くもの／カメラ／立ち位置：Night to dawn in SAME room. Top hero sits on bed edge thinking, pale moon stripe. Bottom dawn warm window stripe, hero opens guest room door normally using fingers gently. Not an escape montage, not training.
 
-ナレーション　鍛冶場へ戻り、服の汚れを洗った。
-今は、仕事を急がなくていい。
+伏せる情報／状態：空白の時間を恐怖の反復にしない。
 
-### コマ9
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-作画　Quiet forge before repair. So Rin sits on a low stool, looks at her bare FREE wrists. No chains. Yun with SHEATHED black sword stands a respectful step away. Her plain work sleeves unchanged.
+原画：art/rebuild-05-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 570}]
 
-ハン・ユン　先に、休まなくていい？
+効果音（発話と別）：コツ
 
-### コマ10
+発話：ハン・ユン「先に話を聞こう」／縦列 右→左：先に/話を聞こう／声：thought
 
-作画　So Rin reaches toward a familiar small hammer lying on workbench, then pauses just before touching it. Hands visible, no restraint.
+## 06 訪問の約束
 
-ソ・リン　触っても、いいんだね。
+読者の理解／間：門主へ具体的に頼み、次の移動を準備
 
-### コマ11
+描くもの／カメラ／立ち位置：Morning corridor just outside guest room. Top hero speaks to master with empty open hands. Bottom master nods and hands route on simple unlettered paper, not map of world, smith remains offscreen.
 
-作画　Yun slides a cup of water onto the table; both characters' hands clear, one cup. Warm light, no bargain or payment.
+伏せる情報／状態：第5話で初めてソ・リンを描く。
 
-ハン・ユン　嫌なら、やめていい。
+作画形式：two。読む順は上から下、同段の小コマは右から左。
 
-### コマ12
+原画：art/rebuild-06-clean.png 1024×1536。表示窓：[{"range": [0, 1536], "gap": 230}]
 
-作画　So Rin gently picks up ONE hammer herself, takes a steady breath and meets Yun's eyes. His sword still SHEATHED, no cyan forged edge yet.
+効果音（発話と別）：none
 
-ソ・リン　私が、作りたいんだ。
-
-## 読書区間4 剣と懸賞
-
-間の役割　救った相手の仕事で報酬を得て大会へつなぐ
-
-表示原画　art/03.png、範囲 [0, 2172]。
-
-密度　小さな表情や手の接写と大きな動作・発見を混ぜる。後の場面の人物や結末を先出ししない。
-
-### コマ13
-
-作画　Hours later at warm forge. Yun robes now clean off-white same charcoal lapel dark red sash, faint cheek bruise. Smith free wrists, sleeves rolled safely, strikes a blue-black shard on anvil with ONE hammer. Yun waits rather than interrupting.
-
-ソ・リン　強いだけじゃ、剣は応えない。
-
-### コマ14
-
-作画　Smith returns upgraded heavenly demon sword by offering its hilt safely, same black straight blade round gold guard red tassel, thin CYAN edge. Yun takes hilt RIGHT hand.
-
-ソ・リン　人を守る手なら、いい。
-
-### コマ15
-
-作画　Yun holds sword lowered safely. At forge wall a newly delivered parchment shows his face and a gold prize seal but NO extra text; smith looks alarmed.
-
-ソ・リン　大会の懸賞に、あんたの顔。
-
-### コマ16
-
-作画　Close Yun reads parchment, thoughtful eyes, smith at edge. Do not show arena yet.
-
-ハン・ユン　帰還門の鍵が、賞品……？
+発話：ハン・ユン「鍛冶場へ行きたい」／縦列 右→左：鍛冶場へ/行きたい／声：normal
+セイ・コウ「私も行こう」／縦列 右→左：私も/行こう／声：formal

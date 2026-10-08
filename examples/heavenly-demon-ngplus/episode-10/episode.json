@@ -1,75 +1,125 @@
 {
   "title": "天魔、二周目。",
   "chapter": 10,
-  "subtitle": "二周目は、俺が決める",
+  "subtitle": "門の外へ",
+  "revision": "full-rebuild-2026-10-07",
   "artwork": [
     {
-      "file": "art/01.png",
+      "id": "01",
+      "file": "art/rebuild-01-clean.png",
       "width": 724,
       "height": 2172,
-      "sha256": "36c373fbea27f9ca07e7d93c068d97a4d517d2918b87f0674873f3711a20bab1"
+      "sha256": "03298f88f9662e95d309c7ae2cd1238c63157f8b215d6d89af48bc82c3ae4ba8"
     },
     {
-      "file": "art/02.png",
-      "width": 724,
-      "height": 2172,
-      "sha256": "4c8b4fe51a9c88898fd465e5506e00f9bd310014292f7438b4a6a72e9b8043f9"
+      "id": "02",
+      "file": "art/rebuild-02-clean.png",
+      "width": 727,
+      "height": 2162,
+      "sha256": "eef69f488762ddc5fef43d7394610d06bf31d32e00024e7a91fb75503d4d48f6"
     },
     {
-      "file": "art/03.png",
+      "id": "03",
+      "file": "art/rebuild-03-clean.png",
       "width": 724,
       "height": 2172,
-      "sha256": "b584e38764cf829cb82e81f4e303f8df61f8718189a56209736185dd8cf3af9c"
+      "sha256": "89dbf2c20b89e54ec7325402bf904fd530d26dc33ea7bb92f3ef056b08d04354"
     },
     {
-      "file": "art/04-pacing.png",
+      "id": "04",
+      "file": "art/rebuild-04-clean.png",
       "width": 724,
       "height": 2172,
-      "sha256": "95c8e9d3f8fb747628df66a95c024ff51650bda54d5c833ab164ee2d7ed5a392"
+      "sha256": "131d652564442abb6d2f8288fe0dd5a21fa163fcc998099612ebd4266be5ae15"
+    },
+    {
+      "id": "05",
+      "file": "art/rebuild-05-bag.png",
+      "width": 726,
+      "height": 2167,
+      "sha256": "1ccf1a2bbb8aeae54aeeefbba41ab8620aba93cd8282a97718d4af6bae1682e6"
+    },
+    {
+      "id": "06",
+      "file": "art/rebuild-06-clean.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "681235eee2de46a3979ad0eef0c8406c6f187b192f7073ecca8a77754f8b1acf"
     }
   ],
-  "generatedOriginals": 4,
-  "vignettes": 16,
-  "lettering": "vertical Japanese dialogue in image originals",
-  "readingTimeMeasured": false,
-  "protectedReveal": null,
   "readingOrder": [
     {
-      "scene": 1
-    },
-    {
-      "scene": 2
-    },
-    {
-      "scene": 3,
-      "id": "scene-3-home",
-      "window": [
+      "id": "beat-01-1",
+      "asset": "01",
+      "range": [
         0,
-        796
-      ],
-      "panels": [
-        0,
-        2
-      ]
-    },
-    {
-      "scene": 4,
-      "gap": 320
-    },
-    {
-      "scene": 3,
-      "id": "scene-3-return",
-      "window": [
-        796,
         2172
       ],
-      "panels": [
-        2,
-        4
+      "gap390": 0,
+      "purpose": "決着の後に身体と暮らしを戻す"
+    },
+    {
+      "id": "beat-02-1",
+      "asset": "02",
+      "range": [
+        0,
+        2162
       ],
-      "gap": 440,
-      "transitionNarration": "翌朝。休んでから、持っていくものを選んだ。\n今度は、助けを待つためではなく、会いに行く。"
+      "gap390": 300,
+      "purpose": "食事を生還の実感として味わう"
+    },
+    {
+      "id": "beat-03-1",
+      "asset": "03",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 420,
+      "purpose": "帰還の目的を手元と判断へ結び付ける"
+    },
+    {
+      "id": "beat-04-1",
+      "asset": "04",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 240,
+      "purpose": "出発の持ち物と関係を具体化する"
+    },
+    {
+      "id": "beat-05-1",
+      "asset": "05",
+      "range": [
+        0,
+        1000
+      ],
+      "gap390": 540,
+      "purpose": "距離と別れの時間をたどる"
+    },
+    {
+      "id": "beat-05-2",
+      "asset": "05",
+      "range": [
+        1000,
+        2167
+      ],
+      "gap390": 720,
+      "purpose": "距離と別れの時間をたどる"
+    },
+    {
+      "id": "beat-06-1",
+      "asset": "06",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 740,
+      "purpose": "選んだ行動を静かな終わりにする"
     }
   ],
-  "revision": "pacing-expansion-2026-10-06"
+  "lettering": "integrated vertical Japanese in immutable image originals",
+  "startState": "審理の翌朝。休息室で眠れた。痣・縄痕は薄く残る。",
+  "endState": "罪を晴らしたハンが山門を出る。ソ・リンは鍛冶場に残る。帰還はまだ叶わない。"
 }
