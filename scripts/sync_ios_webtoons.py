@@ -140,6 +140,19 @@ def bundle_catalog(root, destination):
     return catalog
 
 
+def same_file_contents(expected, actual):
+    if expected.stat().st_size != actual.stat().st_size:
+        return False
+    with expected.open("rb") as expected_file, actual.open("rb") as actual_file:
+        while True:
+            expected_chunk = expected_file.read(1024 * 1024)
+            actual_chunk = actual_file.read(1024 * 1024)
+            if expected_chunk != actual_chunk:
+                return False
+            if not expected_chunk:
+                return True
+
+
 def sync(root=ROOT, check=False):
     root = root.resolve()
     target = root / OUTPUT
@@ -148,9 +161,11 @@ def sync(root=ROOT, check=False):
         staged = Path(temporary)
         catalog = bundle_catalog(root, staged)
         if check:
-            expected = {path.relative_to(staged): path.read_bytes() for path in staged.rglob("*") if path.is_file()}
-            actual = {path.relative_to(target): path.read_bytes() for path in target.rglob("*") if path.is_file()}
-            if expected != actual:
+            expected = {path.relative_to(staged) for path in staged.rglob("*") if path.is_file()}
+            actual = {path.relative_to(target) for path in target.rglob("*") if path.is_file()}
+            if expected != actual or any(
+                not same_file_contents(staged / path, target / path) for path in expected
+            ):
                 raise ValueError("Bundled readers differ. Run scripts/sync_ios_webtoons.py")
         else:
             if target.exists():
