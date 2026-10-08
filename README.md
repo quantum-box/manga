@@ -26,7 +26,7 @@
 
 ## 制作知見と再利用スキル
 
-新連載：[星環のレガリア 第1話「補欠の空」](examples/star-ring-regalia/episode-01/index.html)。8原画と日本語縦書き、[単体リーダー](examples/star-ring-regalia/episode-01/reader.html)、スマホ検証、カタログ・iOS同梱版を収録。[企画](docs/star-ring-regalia/series/bible.md)は200話以上を目標に、世界観・人物・240話の仮構成・導入10話の先行設計を含む。今回の完成原稿は第1話。サーバー公開はこのPRのマージ後に行う。
+新連載：[星環のレガリア](examples/star-ring-regalia/index.html)。第1話「補欠の空」、第2話[「明日のある町」](examples/star-ring-regalia/episode-02/index.html)を収録。[企画](docs/star-ring-regalia/series/bible.md)は200話以上を目標に世界観・人物・長期構成を設計している。
 
 1. [制作で採用した知見](docs/webtoon-production.md)：広い余白、密度の変化、登場順、文字の分離、スマホ検証。
 2. [Webtoonスキル](skills/webtoon/SKILL.md)：全体話数を50話・100話・200話以上から選び、世界観・人物・物語を設計。このリポジトリでは[AGENTS.md](AGENTS.md)に従い、一話の作画・スマホ確認、PR、マージ、サーバー公開確認を終えてから次話を作画する。
