@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-26a27d38-bd18-44f4-803d-603e9b88593d.png",
+  "adopted": "art/06-living-guardian-corrected.png",
+  "original_sha256": "99cdffd302f7f38ba57e0be1a39d4a83c3ba2e633db777a87e505e400e152917",
+  "adopted_sha256": "99cdffd302f7f38ba57e0be1a39d4a83c3ba2e633db777a87e505e400e152917",
+  "width": 724,
+  "height": 2172,
+  "prompt_file": "generation/06-living-guardian-corrected.prompt.txt",
+  "prompt": "Edit this existing manga artwork only in these two places. Preserve all panel geometry, scenery, guardian design, faces, clothing, all other lettering and their locations. In Kou's scared close-up balloon, restore exact upright vertical Japanese columns right to left: right column 木が…… and left column 動いてる. Put two ellipsis marks after が, omit 、。. The current 木が is missing the pause. In Row's defensive action panel, reduce his ordinary round wooden buckler to roughly 35-40cm diameter, matching the small shield on his back in earlier panels. Keep his left-arm defensive pose and hand gripping behind it natural. Do not enlarge or magically change the equipment. Keep exact other Row balloon 俺の後ろへ！. No other changes.",
+  "pixel_processing": "none",
+  "text_review": "passed",
+  "continuity_review": "passed",
+  "reference_files": [
+    {
+      "path": "generation/inputs/06-living-guardian.png",
+      "sha256": "b860ab42d293776b77179e6b209495b36a3fa8d68098911c589ec2c46849f8a7",
+      "executed_filename": "06-living-guardian.png"
+    },
+    {
+      "path": "art/03-main-route-and-branch.png",
+      "sha256": "9056ab2905a6d6311d7fd06c5a58c71e8b7b0066dca550ce23cf7979055e1c00",
+      "executed_filename": "03-main-route-and-branch.png"
+    }
+  ]
+}

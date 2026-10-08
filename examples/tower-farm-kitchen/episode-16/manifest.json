@@ -1,0 +1,548 @@
+{
+  "number": 16,
+  "title": "四階の空気",
+  "time": "49日目・朝",
+  "change": "コウが四階へ初登塔。主路から調査許可済みの未攻略分岐へ。生木の守衛が動き、ロウが護衛する。水源と動く根の接続は未解明。普通の農業道具と水術を使う。",
+  "state": "コウが四階へ初登塔。主路から調査許可済みの未攻略分岐へ。生木の守衛が動き、ロウが護衛する。水源と動く根の接続は未解明。普通の農業道具と水術を使う。",
+  "revision": "2026-10-08-following",
+  "sources": [
+    {
+      "id": "01-the-long-stair",
+      "art": "art/01-the-long-stair.png",
+      "description": "Long vertical borderless stone stair inside tower, Kou brown jacket green apron tool satchel climbing behind Row ochre cloak, Sera follows teal cloak. Small boot steps near top lead along sparse light into distant upper landing not shown fully yet.",
+      "dialogue": [
+        [
+          "コウ",
+          "三階が\nこんなに下だ"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 520,
+      "scrollPurpose": "階段と高さの変化を縦にたどる",
+      "prompt": "generation/01-the-long-stair.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "aaa86d2d3ee6f8ad85e3c44cec498779ab8aba51eb80da30d0eb72563b7c6829"
+    },
+    {
+      "id": "02-fourth-floor-reveal",
+      "art": "art/02-fourth-floor-reveal.png",
+      "description": "First large reveal of FOURTH FLOOR: cool enclosed ancient root-garden cavern under sandstone vaults with pale bluish luminous veins, old narrow channels and green moss. Three adult party members small but readable at safe entry. No open sky or giant city higher realm.",
+      "dialogue": [
+        [
+          "セラ",
+          "ここが四階"
+        ],
+        [
+          "コウ",
+          "空気も\n土の匂いも違う"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 380,
+      "scrollPurpose": "新しい階の広がりを大きく披露する",
+      "prompt": "generation/02-fourth-floor-reveal.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "12b21521b583c29896d6896b6b89e68d2578d3b9c75ab3e181fdc05fed9db08a"
+    },
+    {
+      "id": "03-main-route-and-branch",
+      "art": "art/03-main-route-and-branch.png",
+      "description": "Same landing main stone route rises onward, party deliberately takes smaller SIDE arch with simple barrier rope and survey token, Row lifts authorized rope carefully. Seven-floor main route stays unobstructed. Kou looks into wet side corridor.",
+      "dialogue": [
+        [
+          "ロウ",
+          "主路は向こう\n俺たちは横道へ"
+        ],
+        [
+          "コウ",
+          "ここが\n旧栽培区画か"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 190,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-main-route-and-branch.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "9056ab2905a6d6311d7fd06c5a58c71e8b7b0066dca550ce23cf7979055e1c00"
+    },
+    {
+      "id": "04-water-without-rain",
+      "art": "art/04-water-without-rain.png",
+      "description": "Kou kneels at wet stone channel, touches water with measuring cup and observes recurring pulse; Sera observes trickle with staff lowered, Row holds watch ahead. Unequal closeups of hand, faint root vibration and curious face; no guardian full body yet.",
+      "dialogue": [
+        [
+          "コウ",
+          "雨もないのに\n水が脈打ってる"
+        ],
+        [
+          "セラ",
+          "奥から\n押し出されてる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 340,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-water-without-rain.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "e44f856a017fe376afecb33a06eddf86faee790df798316a67169e416facd8cd"
+    },
+    {
+      "id": "05-rumble-in-roots",
+      "art": "art/05-rumble-in-roots.png",
+      "description": "Sparse ivory passage with root shadows and vibration lines ONLY, no body or creature silhouette recognizable. Continuous low rumble lettering beginning near tiny shaking pebble then fading down. Party face alert at end but guardian unseen.",
+      "dialogue": [
+        [
+          "ロウ",
+          "下がれ！"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 930,
+      "scrollPurpose": "振動と警告を先に出し守衛の全身を伏せる",
+      "prompt": "generation/05-rumble-in-roots.prompt.txt",
+      "soundEffects": [
+        "ゴゴゴ"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "91120d4227cc496a6875734141423ed9f1fee7064d78159fe5c548262caf1e24"
+    },
+    {
+      "id": "06-living-guardian-corrected",
+      "art": "art/06-living-guardian-corrected.png",
+      "description": "First full reveal a dangerous human-and-half height ancient living-root guardian, broad dark wooden plates, jointed root arms, narrow water-glow seams, no human gore or extra heads. It emerges from root-matted side garden and blocks safe branch, NOT entire tower main staircase. Row puts buckler between Kou and guardian, Sera behind.",
+      "dialogue": [
+        [
+          "コウ",
+          "木が……\n動いてる"
+        ],
+        [
+          "ロウ",
+          "俺の後ろへ！"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 260,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-living-guardian-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "99cdffd302f7f38ba57e0be1a39d4a83c3ba2e633db777a87e505e400e152917"
+    },
+    {
+      "id": "07-sword-is-not-enough",
+      "art": "art/07-sword-is-not-enough.png",
+      "description": "Row attacks once ordinary steel sword on thick wooden shoulder plate, slash ricochets and only surface splinter, buckler blocks sweeping root arm. Two tight diagonal action frames then Row falls back standing, no broken sword or injury. Kou watches water seam swell with motion.",
+      "dialogue": [
+        [
+          "ロウ",
+          "硬い……"
+        ],
+        [
+          "セラ",
+          "前と同じ\n斬っても止まらない"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-sword-is-not-enough.prompt.txt",
+      "soundEffects": [
+        "ガキン"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "01b27d3396401316d3f0c3fd758a0709e6bd700804290c9e9b569928fbb28837"
+    },
+    {
+      "id": "08-look-at-the-channel",
+      "art": "art/08-look-at-the-channel.png",
+      "description": "Kou crouches protected behind fallen old stone curb, face afraid but focusing, then narrow detail one water channel and root attached to it. Row shields him in background, Sera ready. Do not explain weakness yet or show guardian defeated.",
+      "dialogue": [
+        [
+          "コウ",
+          "腕が動く時\n水も動いた"
+        ],
+        [
+          "コウ",
+          "……根を見よう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 420,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-look-at-the-channel.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "a76136aa52e4f8c82f3682db528e99db13a9cb70c0f5caadb5d4f04c4b97f29c"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-the-long-stair-window-01",
+      "art": "art/01-the-long-stair.png",
+      "description": "Long vertical borderless stone stair inside tower, Kou brown jacket green apron tool satchel climbing behind Row ochre cloak, Sera follows teal cloak. Small boot steps near top lead along sparse light into distant upper landing not shown fully yet.",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 150,
+      "scrollPurpose": "階段と高さの変化を縦にたどる",
+      "prompt": "generation/01-the-long-stair.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "aaa86d2d3ee6f8ad85e3c44cec498779ab8aba51eb80da30d0eb72563b7c6829",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 681
+      },
+      "sourceId": "01-the-long-stair",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-the-long-stair-window-02",
+      "art": "art/01-the-long-stair.png",
+      "description": "Long vertical borderless stone stair inside tower, Kou brown jacket green apron tool satchel climbing behind Row ochre cloak, Sera follows teal cloak. Small boot steps near top lead along sparse light into distant upper landing not shown fully yet.",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 80,
+      "scrollPurpose": "階段と高さの変化を縦にたどる",
+      "prompt": "generation/01-the-long-stair.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "aaa86d2d3ee6f8ad85e3c44cec498779ab8aba51eb80da30d0eb72563b7c6829",
+      "crop": {
+        "x": 0,
+        "y": 681,
+        "width": 724,
+        "height": 181
+      },
+      "sourceId": "01-the-long-stair",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-the-long-stair-window-03",
+      "art": "art/01-the-long-stair.png",
+      "description": "Long vertical borderless stone stair inside tower, Kou brown jacket green apron tool satchel climbing behind Row ochre cloak, Sera follows teal cloak. Small boot steps near top lead along sparse light into distant upper landing not shown fully yet.",
+      "dialogue": [
+        [
+          "コウ",
+          "三階が\nこんなに下だ"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 180,
+      "scrollPurpose": "階段と高さの変化を縦にたどる",
+      "prompt": "generation/01-the-long-stair.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "aaa86d2d3ee6f8ad85e3c44cec498779ab8aba51eb80da30d0eb72563b7c6829",
+      "crop": {
+        "x": 0,
+        "y": 862,
+        "width": 724,
+        "height": 310
+      },
+      "sourceId": "01-the-long-stair",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-the-long-stair-window-04",
+      "art": "art/01-the-long-stair.png",
+      "description": "Long vertical borderless stone stair inside tower, Kou brown jacket green apron tool satchel climbing behind Row ochre cloak, Sera follows teal cloak. Small boot steps near top lead along sparse light into distant upper landing not shown fully yet.",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 130,
+      "scrollPurpose": "階段と高さの変化を縦にたどる",
+      "prompt": "generation/01-the-long-stair.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "aaa86d2d3ee6f8ad85e3c44cec498779ab8aba51eb80da30d0eb72563b7c6829",
+      "crop": {
+        "x": 0,
+        "y": 1172,
+        "width": 724,
+        "height": 678
+      },
+      "sourceId": "01-the-long-stair",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "01-the-long-stair-window-05",
+      "art": "art/01-the-long-stair.png",
+      "description": "Long vertical borderless stone stair inside tower, Kou brown jacket green apron tool satchel climbing behind Row ochre cloak, Sera follows teal cloak. Small boot steps near top lead along sparse light into distant upper landing not shown fully yet.",
+      "dialogue": [],
+      "layout": "continuous",
+      "pauseAt390": 260,
+      "scrollPurpose": "階段と高さの変化を縦にたどる",
+      "prompt": "generation/01-the-long-stair.prompt.txt",
+      "soundEffects": [
+        "コツ\nコツ"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "aaa86d2d3ee6f8ad85e3c44cec498779ab8aba51eb80da30d0eb72563b7c6829",
+      "crop": {
+        "x": 0,
+        "y": 1850,
+        "width": 724,
+        "height": 322
+      },
+      "sourceId": "01-the-long-stair",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-fourth-floor-reveal-window-01",
+      "art": "art/02-fourth-floor-reveal.png",
+      "description": "First large reveal of FOURTH FLOOR: cool enclosed ancient root-garden cavern under sandstone vaults with pale bluish luminous veins, old narrow channels and green moss. Three adult party members small but readable at safe entry. No open sky or giant city higher realm.",
+      "dialogue": [
+        [
+          "セラ",
+          "ここが四階"
+        ],
+        [
+          "コウ",
+          "空気も\n土の匂いも違う"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 380,
+      "scrollPurpose": "新しい階の広がりを大きく披露する",
+      "prompt": "generation/02-fourth-floor-reveal.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "12b21521b583c29896d6896b6b89e68d2578d3b9c75ab3e181fdc05fed9db08a",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "02-fourth-floor-reveal",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-main-route-and-branch-window-01",
+      "art": "art/03-main-route-and-branch.png",
+      "description": "Same landing main stone route rises onward, party deliberately takes smaller SIDE arch with simple barrier rope and survey token, Row lifts authorized rope carefully. Seven-floor main route stays unobstructed. Kou looks into wet side corridor.",
+      "dialogue": [
+        [
+          "ロウ",
+          "主路は向こう\n俺たちは横道へ"
+        ],
+        [
+          "コウ",
+          "ここが\n旧栽培区画か"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 190,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-main-route-and-branch.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "9056ab2905a6d6311d7fd06c5a58c71e8b7b0066dca550ce23cf7979055e1c00",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "03-main-route-and-branch",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-water-without-rain-window-01",
+      "art": "art/04-water-without-rain.png",
+      "description": "Kou kneels at wet stone channel, touches water with measuring cup and observes recurring pulse; Sera observes trickle with staff lowered, Row holds watch ahead. Unequal closeups of hand, faint root vibration and curious face; no guardian full body yet.",
+      "dialogue": [
+        [
+          "コウ",
+          "雨もないのに\n水が脈打ってる"
+        ],
+        [
+          "セラ",
+          "奥から\n押し出されてる"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 340,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/04-water-without-rain.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "e44f856a017fe376afecb33a06eddf86faee790df798316a67169e416facd8cd",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "04-water-without-rain",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-rumble-in-roots-window-01",
+      "art": "art/05-rumble-in-roots.png",
+      "description": "Sparse ivory passage with root shadows and vibration lines ONLY, no body or creature silhouette recognizable. Continuous low rumble lettering beginning near tiny shaking pebble then fading down. Party face alert at end but guardian unseen.",
+      "dialogue": [
+        [
+          "ロウ",
+          "下がれ！"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 930,
+      "scrollPurpose": "振動と警告を先に出し守衛の全身を伏せる",
+      "prompt": "generation/05-rumble-in-roots.prompt.txt",
+      "soundEffects": [
+        "ゴゴゴ"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "91120d4227cc496a6875734141423ed9f1fee7064d78159fe5c548262caf1e24",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "05-rumble-in-roots",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-living-guardian-corrected-window-01",
+      "art": "art/06-living-guardian-corrected.png",
+      "description": "First full reveal a dangerous human-and-half height ancient living-root guardian, broad dark wooden plates, jointed root arms, narrow water-glow seams, no human gore or extra heads. It emerges from root-matted side garden and blocks safe branch, NOT entire tower main staircase. Row puts buckler between Kou and guardian, Sera behind.",
+      "dialogue": [
+        [
+          "コウ",
+          "木が……\n動いてる"
+        ],
+        [
+          "ロウ",
+          "俺の後ろへ！"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 260,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-living-guardian-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "99cdffd302f7f38ba57e0be1a39d4a83c3ba2e633db777a87e505e400e152917",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "06-living-guardian-corrected",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-sword-is-not-enough-window-01",
+      "art": "art/07-sword-is-not-enough.png",
+      "description": "Row attacks once ordinary steel sword on thick wooden shoulder plate, slash ricochets and only surface splinter, buckler blocks sweeping root arm. Two tight diagonal action frames then Row falls back standing, no broken sword or injury. Kou watches water seam swell with motion.",
+      "dialogue": [
+        [
+          "ロウ",
+          "硬い……"
+        ],
+        [
+          "セラ",
+          "前と同じ\n斬っても止まらない"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 130,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-sword-is-not-enough.prompt.txt",
+      "soundEffects": [
+        "ガキン"
+      ],
+      "width": 724,
+      "height": 2172,
+      "sha256": "01b27d3396401316d3f0c3fd758a0709e6bd700804290c9e9b569928fbb28837",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "07-sword-is-not-enough",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-look-at-the-channel-window-01",
+      "art": "art/08-look-at-the-channel.png",
+      "description": "Kou crouches protected behind fallen old stone curb, face afraid but focusing, then narrow detail one water channel and root attached to it. Row shields him in background, Sera ready. Do not explain weakness yet or show guardian defeated.",
+      "dialogue": [
+        [
+          "コウ",
+          "腕が動く時\n水も動いた"
+        ],
+        [
+          "コウ",
+          "……根を見よう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 420,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-look-at-the-channel.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "a76136aa52e4f8c82f3682db528e99db13a9cb70c0f5caadb5d4f04c4b97f29c",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "08-look-at-the-channel",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    }
+  ]
+}
