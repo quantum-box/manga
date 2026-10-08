@@ -10,10 +10,22 @@
     "effectivePanels": 24
   },
   "sources": {
-    "actualPngCount": 5,
+    "actualPngCount": 7,
     "independentDrawnMoments": 24,
-    "unusedSourceCell": "sheet-04/r1/c2 is replaced by counter.png; other five source cells remain in use",
-    "rawPngBytesUnchanged": true
+    "dedicatedBreakoutPanels": [
+      "p05",
+      "p17",
+      "p20"
+    ],
+    "unusedSourceCells": [
+      "sheet-01/r2/c2",
+      "sheet-03/r2/c2",
+      "sheet-04/r1/c2"
+    ],
+    "rawPngBytesUnchanged": true,
+    "sourceDrawnInnerFramesCrossed": true,
+    "cssPolygonMasksRemoved": true,
+    "historicalStandaloneSources": "Git refs 3659e7f6 and 79b0dec3 only; see art-provenance.json"
   },
   "rendered": {
     "panels": 24,
@@ -25,10 +37,10 @@
   "metrics": {
     "390": {
       "readerWidthCssPx": 390,
-      "bodyHeightCssPx": 9405.438,
-      "contentHeightCssPx": 6941.972,
-      "pureGapHeightCssPx": 2463.466,
-      "explicitPauseHeightCssPx": 925,
+      "bodyHeightCssPx": 9585.719,
+      "contentHeightCssPx": 7273.934,
+      "pureGapHeightCssPx": 2311.785,
+      "explicitPauseHeightCssPx": 895,
       "nonPauseHeightIsPartialOnly": true,
       "allImagesLoaded": true,
       "imageFailureCount": 0,
@@ -36,17 +48,17 @@
     },
     "360": {
       "readerWidthCssPx": 360,
-      "bodyHeightCssPx": 8681.906,
-      "contentHeightCssPx": 6410.213,
-      "pureGapHeightCssPx": 2271.693,
-      "explicitPauseHeightCssPx": 853.813,
+      "bodyHeightCssPx": 8848.313,
+      "contentHeightCssPx": 6716.866,
+      "pureGapHeightCssPx": 2131.447,
+      "explicitPauseHeightCssPx": 826.108,
       "nonPauseHeightIsPartialOnly": true,
       "allImagesLoaded": true,
       "imageFailureCount": 0,
       "scrollWidth": 360
     }
   },
-  "spaceMethod": "Generated art display windows + actual glyph/SFX/speaker bounds + outside balloons are unioned over the whole story flow. Empty voice containers are not content. The remaining vertical bands are counted once as pure gaps. Full-width large blank native bands were visually checked and no additional large bands need exclusion. The dialogue/font/browser raw bounds remain in review/browser-metrics.json.",
+  "spaceMethod": "Union of panel crop-window (or uncropped panel) vertical bounds, all text-node bounds, and dialogue balloon bounds that fall outside panel content; all intervals clamped to the flow. Explicit pauses are reported but not subtracted from occupied content. Large blank full-width native bands were visually checked; none require further exclusion. Source white corner margins remain within the art display windows. These partial-trial measurements are not a full-episode quantity pass.",
   "checks": {
     "htmlLoadedWithSetContent": true,
     "noFileUrlOrGoto": true,
@@ -64,53 +76,49 @@
     "compositionNaturalAndBoundingRectsCaptured": true,
     "compositionOverlapCandidatesSurfaced": true,
     "sourceImageHashesChecked": true,
+    "sevenDistinctSourceHashesChecked": true,
     "sourceDimensionsAndCropChecked": true,
+    "dramaticSfxGeometryAndReaderMarginsChecked": true,
     "dprAndResizeChecked": true,
     "desktop390Checked": true,
-    "brokenImageCheckSkippedForPartialTrial": true
+    "brokenImageCheckSkippedForPartialTrial": true,
+    "sourceDrawnFrameBreakoutVisuallyChecked": true,
+    "currentNative360OverlapCandidatesReviewed": true
   },
   "visualReview": {
     "root390": {
-      "files": [
-        "review/window-390-000.png",
-        "review/window-390-001.png",
-        "review/window-390-002.png",
-        "review/window-390-003.png",
-        "review/window-390-004.png",
-        "review/window-390-005.png",
-        "review/window-390-006.png",
-        "review/window-390-007.png",
-        "review/window-390-008.png",
-        "review/window-390-009.png",
-        "review/window-390-010.png",
-        "review/window-390-011.png",
-        "review/window-390-012.png",
-        "review/window-390-013.png"
-      ],
-      "updatedSections": [
-        "p03 SFX moved inside reader",
-        "p12 inner voice moved outside guard mask",
-        "p20 single sword contact redrawn; latest native c05 checked"
-      ],
-      "compositionProofs": [
-        "review/composition-390-c01.png",
+      "changedNativeFiles": [
         "review/composition-390-c02.png",
-        "review/composition-390-c03.png",
-        "review/composition-390-c04.png",
-        "review/composition-390-c05.png",
-        "review/composition-390-c06.png"
-      ]
+        "review/composition-390-c05.png"
+      ],
+      "changedContinuousFiles": [
+        "review/window-390-001.png",
+        "review/window-390-008.png",
+        "review/window-390-010.png",
+        "review/window-390-011.png"
+      ],
+      "additional360File": "review/composition-360-c05.png",
+      "observations": [
+        "Drawn inner frames are genuinely crossed by silhouettes and weapons, with full PNG sources shown",
+        "Jump is large, reaction on the right, landing on the left, then one large contact",
+        "Clash SFX ends before the next quiet image; p21 intact spear follows contact"
+      ],
+      "priorUnchangedSequenceReview": {
+        "gitRef": "3659e7f6",
+        "path": "skills/webtoon/references/action-name-preview/validation.json"
+      },
+      "finalLetteringDelta": "p17 SFX shifted x62 to66, fresh native c05 inspected; full word is clear of the white voice surface"
     },
     "independent360": {
       "result": "pass_with_partial_trial_scope",
-      "initialContinuousWindows": "READY2 000–013",
-      "finalChangedSection": "READY3 counter.png composition-360-c05 and window-360-009/010",
       "file": "review/native-360-review.json",
-      "p20Blocker": "resolved"
+      "actualScope": "Current c02/c05 native compositions and dedicated source art",
+      "blockers": []
     },
     "continuity": {
       "result": "pass_with_scope_note",
-      "file": "review/continuity-review.json"
+      "file": "review/continuity-review.json",
+      "scope": "current c05 breakout and p21 continuation; unchanged earlier sequence retained from Git baseline"
     }
   },
   "remainingDisplayCandidates": [
@@ -119,8 +127,8 @@
       "reason": "The stopped-foot inset shares the lower-left background of the broader scene; faces hands and weapons remain readable"
     },
     {
-      "location": "c04/c05 lower edge",
-      "reason": "Contact SFX extends a few pixels from the art into the following pause. The same sound appears once and ends before the next quiet image"
+      "location": "c05 p17/p18/voice-p18",
+      "reason": "Reaction inset and white voice surface intentionally cover background space. p17 SFX is shifted clear of the white voice surface and leaves faces and hands readable; current native review passes."
     }
   ],
   "limitations": [
@@ -128,9 +136,27 @@
     "Rough identity and held-hand laterality need final-art verification",
     "User has not adopted this composition"
   ],
-  "readerTabRefresh": "not_performed; the HTML link opens the new trial manually",
+  "readerTabRefresh": "not_performed; manually reload the existing tab or open the updated HTML link",
   "sourceSha256": {
-    "index.html": "acec8a3affccfddb8c639e8d556bd68bba5c54bfda69ff6ad89bd10d58c4869b",
-    "plan.json": "599706db52ea868955e2318f5eb212633c69c9c08e0b5f9c0b3df53856622669"
+    "index.html": "388ffc75a8efe7351d33769c0068e27ec0861640ff33e4ba16969a9c24f3774e",
+    "plan.json": "aa3d235ce236da621f259940fdd6a3024541434a896fc3b41882ea241286ff89"
+  },
+  "reviewedAt": "2026-10-09",
+  "dramaticSfxFontCssPx": {
+    "390": {
+      "p05": 50.7,
+      "p17": 46.8,
+      "p20": 54.6
+    },
+    "360": {
+      "p05": 46.8,
+      "p17": 43.2,
+      "p20": 50.4
+    }
+  },
+  "capturedWindows": {
+    "390": 15,
+    "360": 14,
+    "overlapCssPx": 150
   }
 }

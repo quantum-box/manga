@@ -295,21 +295,21 @@
       "reaction": "考える前に身体が跳ねる",
       "position": "門番左から中央 アキ中央右から右 槍は左上から右下",
       "movement": "槍の軌道とアキの後退を同じ大画面に置く",
-      "sound": "ヒュッ",
+      "sound": "ブォンッ",
       "silence": "音が抜ける切れ目",
       "dialogue": [],
-      "layout": "幅100%の斜め外枠 顔と指を線から外す",
-      "source_cell": "sheet-01/r2/c2",
+      "layout": "Full-width drawn inner frame; foreground limbs and weapon protrude outside it; source is not polygon-clipped",
+      "source_cell": "rough/attack-breakout.png / full source with drawn inner frame",
       "displayLayout": {
         "composition": "c02",
         "offsetX": 0,
         "offsetY": 0,
         "widthPercent": 100,
         "crop": [
-          0.3473333333333333,
-          0.524,
-          0.3053333333333333,
-          0.452
+          0,
+          0,
+          1,
+          1
         ],
         "frame": "none"
       }
@@ -326,13 +326,13 @@
       "sound": "ザッ／シュッ",
       "silence": "接写の間の短い空白",
       "dialogue": [],
-      "layout": "52%と36%の高さをずらした接写ペア",
+      "layout": "30%の接写を右側へずらし大きな攻撃の次に短く置く",
       "source_cell": "sheet-01/r2/c3",
       "displayLayout": {
         "composition": "c02",
-        "offsetX": 0,
-        "offsetY": 425,
-        "widthPercent": 42,
+        "offsetX": 70,
+        "offsetY": 610,
+        "widthPercent": 30,
         "crop": [
           0.79,
           0.687,
@@ -361,13 +361,13 @@
           "renderedIn": "p07"
         }
       ],
-      "layout": "82%中景 人物と剣を同じ斜め線上に置く",
+      "layout": "68%の中景を左側へずらし人物と落ちる剣を同じ画面に置く",
       "source_cell": "sheet-02/r1/c1",
       "displayLayout": {
         "composition": "c02",
-        "offsetX": 20,
-        "offsetY": 595,
-        "widthPercent": 80,
+        "offsetX": 0,
+        "offsetY": 695,
+        "widthPercent": 68,
         "crop": [
           0.014,
           0.024,
@@ -394,7 +394,7 @@
       "displayLayout": {
         "composition": "c02",
         "offsetX": 0,
-        "offsetY": 1000,
+        "offsetY": 1100,
         "widthPercent": 72,
         "crop": [
           0.3473333333333333,
@@ -659,21 +659,21 @@
       "reaction": "空中で息をのみ目は門番から外さない",
       "position": "アキは右下の段差から左上へ 門番は中央左 槍は下を通る 剣はアキの手",
       "movement": "同じ段差を踏み剣を持ったまま橋を右から左へ横断する",
-      "sound": "ダンッ／ヒュオッ",
+      "sound": "ダンッ",
       "silence": "踏み切りと跳躍の間に小さな切れ目",
       "dialogue": [],
-      "layout": "100%斜め主画面 段差と剣を同じ軌道の起点にする",
-      "source_cell": "sheet-03/r2/c2",
+      "layout": "Full-width drawn inner frame; foreground limbs and weapon protrude outside it; source is not polygon-clipped",
+      "source_cell": "rough/jump-breakout.png / full source with drawn inner frame",
       "displayLayout": {
         "composition": "c05",
         "offsetX": 0,
         "offsetY": 0,
         "widthPercent": 100,
         "crop": [
-          0.3473333333333333,
-          0.524,
-          0.3053333333333333,
-          0.452
+          0,
+          0,
+          1,
+          1
         ],
         "frame": "none"
       }
@@ -697,13 +697,13 @@
           "renderedIn": "voice-p18"
         }
       ],
-      "layout": "38%接写を主画面左上へ食い込ませる",
+      "layout": "32%の反応接写を大きな跳躍の右下へ食い込ませる",
       "source_cell": "sheet-03/r2/c3",
       "displayLayout": {
         "composition": "c05",
-        "offsetX": 60,
-        "offsetY": 425,
-        "widthPercent": 40,
+        "offsetX": 68,
+        "offsetY": 520,
+        "widthPercent": 32,
         "crop": [
           0.6806666666666666,
           0.524,
@@ -725,20 +725,20 @@
       "sound": "ザッ",
       "silence": "着地から次の一振りまで短い待ち",
       "dialogue": [],
-      "layout": "72%広い着地点 顔 手 剣 門番を一つの三角形に置く",
+      "layout": "58%の着地を左側へずらし剣を握って近づいた状態を反撃の前に見せる",
       "source_cell": "sheet-04/r1/c1",
       "displayLayout": {
         "composition": "c05",
         "offsetX": 0,
         "offsetY": 660,
-        "widthPercent": 82,
+        "widthPercent": 58,
         "crop": [
           0.014,
           0.024,
           0.3053333333333333,
           0.452
         ],
-        "frame": "none"
+        "frame": "thin"
       }
     },
     {
@@ -750,21 +750,21 @@
       "reaction": "成功を喜ばず剣を下げ次の動きを待つ",
       "position": "接触中のアキは右手前 門番は左 一本の槍は右手すりへ外れる 剣はアキの握りに続く",
       "movement": "剣と槍が一度だけ交差し槍が右へ外れる",
-      "sound": "ガンッ！",
+      "sound": "ガキィンッ！",
       "silence": "衝突音の後に一拍",
       "dialogue": [],
-      "layout": "100%斜め衝突画面 接点は一箇所 流血なし",
-      "source_cell": "counter.png / replaces unused sheet-04/r1/c2",
+      "layout": "Full-width drawn inner frame; foreground limbs and weapon protrude outside it; source is not polygon-clipped",
+      "source_cell": "rough/counter-breakout.png / full source with drawn inner frame",
       "displayLayout": {
         "composition": "c05",
         "offsetX": 0,
-        "offsetY": 1050,
+        "offsetY": 900,
         "widthPercent": 100,
         "crop": [
-          0.019,
-          0.1,
-          0.962,
-          0.801
+          0,
+          0,
+          1,
+          1
         ],
         "frame": "none"
       }
@@ -896,7 +896,7 @@
       }
     }
   ],
-  "actual_source_png_count": 5,
+  "actual_source_png_count": 7,
   "effective_panel_count": 24,
   "adoption": "pending_user_response"
 }

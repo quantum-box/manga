@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild this partial action name with the shared composer and local edge styles.
+"""Rebuild this partial action name with the shared composer and local impact lettering.
 
 Only display windows and CSS are changed. Generated PNG bytes stay unchanged.
 """
@@ -14,17 +14,23 @@ spec.loader.exec_module(module)
 output = HERE / 'index.html'
 module.build_preview(HERE / 'plan.json', output, force=True)
 html = output.read_text()
-# Slanted visual edges act as gutters. Lettering remains upright outside the crop.
-# The small cuts affect native blank/background margins rather than faces or blades.
+# The action assets contain their own inner frame and protruding silhouettes.
+# Showing the whole source preserves that protrusion; no CSS polygon masks are used.
 style = '''
-<style id="action-name-edge-styles">
+<style id="action-name-impact-styles">
 body { color: #161616; }
 .voice-copy { color: #263944; }
-[data-beat-id="p05"] .crop-window { clip-path: polygon(0 0,100% 4%,100% 100%,0 96%); }
-[data-beat-id="p17"] .crop-window { clip-path: polygon(0 4%,100% 0,100% 96%,0 100%); }
-[data-beat-id="p20"] .crop-window { clip-path: polygon(0 0,100% 4%,100% 100%,0 96%); }
-[data-beat-id="p20"] .sfx { font-size: clamp(25px,9cqw,38px); color: #111; transform: translate(-50%,-50%) rotate(-12deg); }
-[data-beat-id="p17"] .sfx { font-size: clamp(23px,8cqw,34px); }
+[data-beat-id="p05"] .sfx,
+[data-beat-id="p17"] .sfx,
+[data-beat-id="p20"] .sfx {
+ color: #111; font-weight: 900; font-style: italic; letter-spacing: -.035em;
+ -webkit-text-stroke: 1px #111;
+ text-shadow: 3px 0 #fff,-3px 0 #fff,0 3px #fff,0 -3px #fff;
+ transform: translate(-50%,-50%) rotate(-10deg) skew(-8deg);
+}
+[data-beat-id="p05"] .sfx { font-size: 13cqw; }
+[data-beat-id="p17"] .sfx { font-size: 12cqw; }
+[data-beat-id="p20"] .sfx { font-size: 14cqw; }
 </style>
 '''
 html = html.replace('</head>', style + '</head>')

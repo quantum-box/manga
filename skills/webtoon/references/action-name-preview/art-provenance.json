@@ -2,14 +2,13 @@
   "schema": "webtoon-action-name-art/v1",
   "generated_by": "built-in image_gen",
   "copy_mode": "unchanged original bytes",
-  "source_grid": "4 source sheets of six cells plus standalone p20 replacement; old sheet-04 p20 cell is not rendered",
+  "source_grid": "4 shared six-cut sheets plus three independent frame-breaking action moments; 24 active drawn moments",
   "constraints_checked": [
-    "1536x1024 RGB PNG for every sheet",
-    "six isolated drawings per sheet with white gutters and outer margins",
-    "no lettering, balloons, captions, SFX, or panel borders in source art",
-    "only Aki, the masked gatekeeper, one sword, and one spear",
-    "p07-p15 sword on bridge, p16 pickup, p17-p24 sword in Aki's hand",
-    "p23-p24 move toward the established bell tower"
+    "24 active moments and 7 source PNGs",
+    "source PNG bytes unchanged",
+    "one sword and one continuous spear at p20",
+    "drawn inner frame is crossed by body and weapon",
+    "old standalone impact images kept only in Git history"
   ],
   "assets": [
     {
@@ -35,8 +34,10 @@
         "p02",
         "p03",
         "p04",
-        "p05",
         "p06"
+      ],
+      "unused_story_cells": [
+        "p05"
       ]
     },
     {
@@ -66,28 +67,8 @@
         "p10",
         "p11",
         "p12"
-      ]
-    },
-    {
-      "file": "rough/counter.png",
-      "story_cells": [
-        "p20"
       ],
-      "role": "standalone replacement source for p20; sheet-04 remains unchanged for the other five cells",
-      "source": "/Users/takanorifukuyama/.codex/generated_images/01a11bc7-a897-7bd3-8e08-f72cc4f850cc/exec-393500fa-cc33-4423-8446-15b974fd6c40.png",
-      "image_size": [
-        1254,
-        1254
-      ],
-      "sha256": "3440ba3ffdae5455751144a080319bdfcd52e327174dd7e3b90e76f351ba84be",
-      "references": [
-        "rough/sheet-03.png",
-        "rough/sheet-04.png"
-      ],
-      "prompt": "Use case: illustration-story\nAsset type: standalone low-resolution black-and-white manga name rough source image replacing only beat p20 in an action storyboard\nInput image 1: reference for Aki's identity, clothes, sword continuity, and the stone-bridge geography.\nInput image 2: reference for the gatekeeper, spear, bridge rail, and monochrome rough linework.\nGenerate a fresh standalone image, not an edit or collage of either reference.\nPrimary request: one single wide-square landscape action drawing for beat p20, suitable for a smartphone vertical-scroll name preview. Use a loose unfinished pencil-and-ink manga storyboard style with readable silhouettes, hands, faces, and one clear contact point. Keep the image rough and low fidelity, not polished key art.\nScene/backdrop: the same old stone bridge at sunset, bridge surface receding leftward, simple guardrail in the right foreground, bell tower distant but quiet. Only two characters.\nSubject and exact action: Aki is the short-haired young swordsman in a dark vest over light sleeves, positioned at the right/center in a low lunge moving toward the left. His RIGHT HAND is visibly CLOSED around the hilt and guard of the one plain sword. The same sword has one continuous straight blade extending from that hilt and angling UP toward the LEFT. The blade crosses the gatekeeper's one long spear at ONE clearly drawn contact point near the center-left. The gatekeeper is masked, tall, dark armored, positioned on the LEFT, and holds the spear horizontally toward the right foreground rail. The spear bends or redirects toward the right after contact, with a readable motion line, but remains one spear. Aki's other hand may balance the lunge but must not touch the spear.\nComposition/framing: full bodies readable within one wide-square frame; Aki's closed sword hand, hilt, guard, continuous blade, and the single sword-to-spear contact must remain large enough to read at about 390px display width and roughly 260px displayed height. Put the contact above the center so the bridge depth remains visible below. Make the crossing action diagonal and spatially clear: guardkeeper left -> contact center -> Aki and right rail. No empty-hand spear contact.\nLighting/mood: tense aftershock of one decisive deflection, sparse gray pencil tone only.\nText (verbatim): none. Absolutely no lettering, Japanese characters, speech balloons, captions, sound effects, panel border, or invented symbols.\nConstraints: exactly two characters; exactly one plain sword in Aki's closed right hand; exactly one long spear in the gatekeeper's hands; one and only one blade-to-spear contact; no second sword, no extra blades, no duplicate limbs, no empty hand touching the spear, no blood, no gore, no new props or people; preserve Aki's short dark hair and dark vest and the gatekeeper's simple mask.\nAvoid: photorealism, 3D, color, polished key art, collage, multiple contact points, detached blade, broken sword, duplicate weapons, written marks.\nOutput intent: one standalone 1024x1024 square or near-square landscape rough image, with generous white outer margin and no grid.",
-      "active_story_cells": [
-        "p20"
-      ]
+      "unused_story_cells": []
     },
     {
       "file": "rough/sheet-03.png",
@@ -114,8 +95,10 @@
         "p14",
         "p15",
         "p16",
-        "p17",
         "p18"
+      ],
+      "unused_story_cells": [
+        "p17"
       ]
     },
     {
@@ -148,6 +131,123 @@
       "unused_story_cells": [
         "p20"
       ]
+    },
+    {
+      "file": "rough/attack-breakout.png",
+      "beat": "p05",
+      "source": "/Users/takanorifukuyama/.codex/generated_images/01a11bc7-a897-7bd3-8e08-f72cc4f850cc/exec-63484ff1-2bd1-44e7-9248-8fa07dbce005.png",
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/action-name-preview/rough/sheet-01.png"
+      ],
+      "image_size": [
+        1024,
+        1536
+      ],
+      "sha256": "5998846f4e95866510b2ab1b5bdb6e1dbf2a181ba91095c637bade23dff6b150",
+      "prompt": "Use case: illustration-story\nAsset type: standalone black-and-white manga name rough source art for a smartphone vertical-scroll action scene\nStyle: bold low-fidelity expressive rough ink and pencil storyboard, energetic anime manga gesture, sparse gray construction tone, readable faces and hands, less realistic hatching and more graphic movement. This is a rough name image, not finished key art.\nShared world: one old stone bridge at sunset, fixed bell tower deep in the background, simple guardrail/stone rail, only two characters. Aki is one short-black-haired young swordsman in a white tunic with a black/dark vest and exactly one plain straight sword. The gatekeeper is one tall figure in black/dark armor with one simple mask and exactly one long spear.\nText: none. Absolutely no Japanese characters, lettering, speech balloons, captions, sound effects, panel labels, numbers, or invented symbols.\nAvoid: extra characters, duplicate ghost figures, second sword, second spear, blood, gore, magic, beams, explosions, glowing abilities, color, 3D, polished realism. Use only physical action, speed strokes, stone chips, and small nonmagical impact sparks.\nFrame-breaking layout: one visible oblique inner manga panel border, a skewed quadrilateral occupying roughly the central 65% of the portrait paper. The surrounding paper is clean white. The characters, weapons, and motion strokes deliberately break through the inner border by about 15–25% into the white paper. The whole asset remains visible with generous outer white margin; no outer page frame and no grid. The inner border must be visibly drawn and tilted, not simulated only by a crop.\nPrimary request: create one standalone portrait action beat p05, a dramatic spear swing that breaks the frame.\nComposition: use a 1024x1536 portrait if supported. Inside the oblique panel, the masked gatekeeper stands left and swings the single long spear in a huge diagonal from upper-left toward lower-right/right foreground, with strong foreshortening; the spear head and shaft visibly punch through the right edge of the inner panel toward the viewer and continue into the white surrounding paper. Aki is at the right side, twisting and dodging backward with a tense readable face, white sleeves and black vest clearly visible; his single plain sword stays at his side and is not the focus. Let the gatekeeper's shoulder or cloak and Aki's boot also slightly cross the panel border. Bridge floor recedes behind them toward the fixed bell tower. The gesture must read as one clear swing, gatekeeper left -> spear rushing toward right viewer -> Aki right dodging.\nFrame-breaking emphasis: the spear shaft/head is the main break, crossing the oblique border by 15–25%; add a few physical speed strokes and kicked stone flecks outside the inner border, never a beam or explosion. Keep both faces and the spear origin readable.",
+      "story_cells": [
+        "p05"
+      ],
+      "active_story_cells": [
+        "p05"
+      ],
+      "role": "one instant with drawn inner frame and protruding body/weapon"
+    },
+    {
+      "file": "rough/jump-breakout.png",
+      "beat": "p17",
+      "source": "/Users/takanorifukuyama/.codex/generated_images/01a11bc7-a897-7bd3-8e08-f72cc4f850cc/exec-f23db0b2-ab3c-4890-bb55-f0864214158b.png",
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/action-name-preview/rough/sheet-03.png"
+      ],
+      "image_size": [
+        1024,
+        1536
+      ],
+      "sha256": "99f9596edcca75d3e1d3aa5b7ab650bdc289516bfcdc894902d40a4566f0cb65",
+      "prompt": "Use case: illustration-story\nAsset type: standalone black-and-white manga name rough source art for a smartphone vertical-scroll action scene\nGenerate one portrait action beat p17 with bold low-fidelity expressive rough ink and pencil storyboard art, energetic anime manga gesture, sparse gray construction tone, readable face and hands. This is rough name art, not finished key art.\nReference image: use this local image only for Aki and the masked gatekeeper's identity, clothes, sword continuity, bridge geography, and monochrome linework: /Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/action-name-preview/rough/sheet-03.png\nWorld: one old stone bridge at sunset, fixed bell tower deep background, low stone ledge at the lower-right takeoff point, simple guardrail. Only two characters. Aki is one short-black-haired young swordsman in a white tunic with a black vest and exactly one plain straight sword. The gatekeeper is one tall figure in black armor with one simple mask and exactly one long spear.\nFrame-breaking layout: use 1024x1536 portrait if supported. Draw one visible oblique inner manga panel border as a skewed quadrilateral occupying roughly the central 65% of the portrait paper. Clean white paper surrounds it. Aki, his sword, boots, and motion strokes deliberately break through the inner border by 15–25% into the white paper. Whole asset visible with generous outer white margin; no outer page frame and no grid. The inner border is actually drawn and tilted.\nAction and composition: Aki launches from the low stone ledge at the LOWER-RIGHT and jumps UPWARD toward the UPPER-LEFT, already holding the one plain straight sword in a clearly CLOSED hand around the hilt. His full body is huge in the foreground; his boots, head, shoulder, and sword blade visibly cross the inner panel border into the surrounding white paper. The blade stays one continuous blade from the closed hand and points along the leap. The masked gatekeeper is smaller below and left, looking up, holding exactly one long spear beneath the jump. Keep the bridge, ledge, rails, and fixed bell tower so the takeoff point and direction are readable. Let one boot and the sword break the top/left edges, while Aki's head or shoulder breaks another edge. Add a few physical motion strokes, dust, and stone chips, no magical effect. The scene reads as one instant: right-lower ledge -> left-upper leap.\nText: none. Absolutely no Japanese characters, lettering, speech balloons, captions, sound effects, panel labels, numbers, or invented symbols.\nAvoid extra characters, duplicate ghost figures, second sword, second spear, blood, gore, magic, beams, explosions, glowing abilities, color, 3D, polished realism, collage.",
+      "story_cells": [
+        "p17"
+      ],
+      "active_story_cells": [
+        "p17"
+      ],
+      "role": "one instant with drawn inner frame and protruding body/weapon"
+    },
+    {
+      "file": "rough/counter-breakout.png",
+      "beat": "p20",
+      "status": "active",
+      "revision_of": "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/action-name-preview/rough/counter-breakout.png",
+      "source": "/Users/takanorifukuyama/.codex/generated_images/01a11bc7-a897-7bd3-8e08-f72cc4f850cc/exec-60c2aca5-d98f-4b44-8a96-f767d1633bdb.png",
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/action-name-preview/rough/counter-breakout.png"
+      ],
+      "image_size": [
+        1024,
+        1536
+      ],
+      "sha256": "7554e74765cac9e5a95e81d80c0e8912d85d073d4b1e1fe11c592dd9e4220c0c",
+      "edit_scope": "gatekeeper spear geometry and gripping hands only",
+      "visual_check": "one continuous spear from the two close hands through the single sword contact to the one right spearhead; detached lower bar removed",
+      "prompt": "Use case: precise-object-edit / illustration-story\nInput image 1 is the EXACT edit target: /Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/action-name-preview/rough/counter-breakout.png\nChange only the gatekeeper's spear geometry and the gatekeeper's gripping hands. Preserve all Aki anatomy, short black hair, white tunic, dark vest, closed sword hand, hilt, guard, continuous sword blade, the single sword-to-spear contact point, impact sparks, stone chips, oblique inner panel border, white frame-breaking paper, bridge, bell tower, lighting, crop, and dramatic composition.\nCritical repair: the current image has a detached lower diagonal bar crossing the gatekeeper's chest and a separate upper spear shaft. Remove that entire lower bar and its misleading separate grip. Reconstruct ONE and ONLY ONE continuous long spear. The gatekeeper's two visible hands must grip the same single continuous shaft close together on the left side of the image. Trace the one shaft clearly from those hands through the single contact point with Aki's one blade near the upper center and onward to the one spearhead at the high right edge. The shaft must be visibly connected from hand -> contact -> one spearhead, with no gap, floating segment, duplicate shaft, or broken weapon. Keep the spear's redirection toward the right after contact and preserve the frame breakout.\nThis is a rough black-and-white manga name image. No new objects, no extra hands, no duplicate limbs, no second weapon, no blood, no gore, no lettering, Japanese text, balloons, captions, or sound effects. Do not recompose or soften the action. The finished edit must make the one-spear path immediately traceable at 390px display width.",
+      "story_cells": [
+        "p20"
+      ],
+      "active_story_cells": [
+        "p20"
+      ],
+      "role": "one instant with drawn inner frame and protruding body/weapon",
+      "input_reference_history": [
+        {
+          "file": "rough/counter-breakout.png",
+          "gitRef": "79b0dec3",
+          "sha256": "5f0f06d3b8f01be9ca41e2d4245944a984cc0dfdba3c3a5d99a4fe4f3541e921"
+        }
+      ]
+    }
+  ],
+  "historical_sources": [
+    {
+      "file": "rough/counter.png",
+      "story_cells": [
+        "p20"
+      ],
+      "role": "standalone replacement source for p20; sheet-04 remains unchanged for the other five cells",
+      "source": "/Users/takanorifukuyama/.codex/generated_images/01a11bc7-a897-7bd3-8e08-f72cc4f850cc/exec-393500fa-cc33-4423-8446-15b974fd6c40.png",
+      "image_size": [
+        1254,
+        1254
+      ],
+      "sha256": "3440ba3ffdae5455751144a080319bdfcd52e327174dd7e3b90e76f351ba84be",
+      "references": [
+        "rough/sheet-03.png",
+        "rough/sheet-04.png"
+      ],
+      "prompt": "Use case: illustration-story\nAsset type: standalone low-resolution black-and-white manga name rough source image replacing only beat p20 in an action storyboard\nInput image 1: reference for Aki's identity, clothes, sword continuity, and the stone-bridge geography.\nInput image 2: reference for the gatekeeper, spear, bridge rail, and monochrome rough linework.\nGenerate a fresh standalone image, not an edit or collage of either reference.\nPrimary request: one single wide-square landscape action drawing for beat p20, suitable for a smartphone vertical-scroll name preview. Use a loose unfinished pencil-and-ink manga storyboard style with readable silhouettes, hands, faces, and one clear contact point. Keep the image rough and low fidelity, not polished key art.\nScene/backdrop: the same old stone bridge at sunset, bridge surface receding leftward, simple guardrail in the right foreground, bell tower distant but quiet. Only two characters.\nSubject and exact action: Aki is the short-haired young swordsman in a dark vest over light sleeves, positioned at the right/center in a low lunge moving toward the left. His RIGHT HAND is visibly CLOSED around the hilt and guard of the one plain sword. The same sword has one continuous straight blade extending from that hilt and angling UP toward the LEFT. The blade crosses the gatekeeper's one long spear at ONE clearly drawn contact point near the center-left. The gatekeeper is masked, tall, dark armored, positioned on the LEFT, and holds the spear horizontally toward the right foreground rail. The spear bends or redirects toward the right after contact, with a readable motion line, but remains one spear. Aki's other hand may balance the lunge but must not touch the spear.\nComposition/framing: full bodies readable within one wide-square frame; Aki's closed sword hand, hilt, guard, continuous blade, and the single sword-to-spear contact must remain large enough to read at about 390px display width and roughly 260px displayed height. Put the contact above the center so the bridge depth remains visible below. Make the crossing action diagonal and spatially clear: guardkeeper left -> contact center -> Aki and right rail. No empty-hand spear contact.\nLighting/mood: tense aftershock of one decisive deflection, sparse gray pencil tone only.\nText (verbatim): none. Absolutely no lettering, Japanese characters, speech balloons, captions, sound effects, panel border, or invented symbols.\nConstraints: exactly two characters; exactly one plain sword in Aki's closed right hand; exactly one long spear in the gatekeeper's hands; one and only one blade-to-spear contact; no second sword, no extra blades, no duplicate limbs, no empty hand touching the spear, no blood, no gore, no new props or people; preserve Aki's short dark hair and dark vest and the gatekeeper's simple mask.\nAvoid: photorealism, 3D, color, polished key art, collage, multiple contact points, detached blade, broken sword, duplicate weapons, written marks.\nOutput intent: one standalone 1024x1024 square or near-square landscape rough image, with generous white outer margin and no grid.",
+      "active_story_cells": [],
+      "gitRef": "3659e7f6",
+      "inCurrentTree": false,
+      "status": "superseded"
+    },
+    {
+      "file": "rough/counter-breakout.png",
+      "beat": "p20",
+      "status": "superseded",
+      "superseded_by": "rough/counter-breakout.png (current corrected source)",
+      "source": "/Users/takanorifukuyama/.codex/generated_images/01a11bc7-a897-7bd3-8e08-f72cc4f850cc/exec-8d085566-4eec-4136-a0f7-1420fba63009.png",
+      "references": [
+        "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/action-name-preview/rough/counter.png"
+      ],
+      "image_size": [
+        1024,
+        1536
+      ],
+      "sha256": "5f0f06d3b8f01be9ca41e2d4245944a984cc0dfdba3c3a5d99a4fe4f3541e921",
+      "prompt": "Use case: illustration-story\nAsset type: standalone black-and-white manga name rough source art for a smartphone vertical-scroll action scene\nGenerate one portrait action beat p20 with bold low-fidelity expressive rough ink and pencil storyboard art, energetic anime manga gesture, sparse gray construction tone, readable face and hands. This is rough name art, not finished key art.\nReference image: use this local image only for Aki, the masked gatekeeper, one sword, one spear, bridge geography, and monochrome linework: /Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/action-name-preview/rough/counter.png\nWorld: one old stone bridge at sunset, fixed bell tower deep background, simple right foreground guardrail. Only two characters. Aki is one short-black-haired young swordsman in a white tunic with a black vest and exactly one plain straight sword. The gatekeeper is one tall figure in black armor with one simple mask and exactly one long spear.\nFrame-breaking layout: use 1024x1536 portrait if supported. Draw one visible oblique inner manga panel border as a skewed quadrilateral occupying roughly the central 65% of the portrait paper. Clean white paper surrounds it. Bodies, weapons, and impact strokes deliberately break through the inner border by 15–25% into the white paper. Whole asset visible with generous outer white margin; no outer page frame and no grid. The inner border is actually drawn and tilted.\nStrongest action and exact continuity: Aki is huge in the RIGHT FOREGROUND in a low lunge moving LEFT. His short black hair, white sleeves, dark vest, closed RIGHT-HAND grip, full hilt and guard, and the one continuous straight blade must be unmistakable. The blade angles UP-LEFT and makes exactly ONE clear sword-to-spear contact near the UPPER CENTER. The masked gatekeeper stands LEFT and smaller but readable, holding exactly one long spear that redirects toward the right foreground guardrail after the contact. Keep the spatial chain gatekeeper left -> single contact upper-center -> Aki right foreground.\nBreakout: let Aki's sword blade, closed hand/forearm, part of the spear shaft, and the mechanical shock arc visibly cross the inner panel border by 15–25% into the clean white paper. Add physical stone chips around feet and a few small black ink impact sparks at the single contact only. No magical glow. The single contact is the focal point and should remain readable at 390px display width.\nText: none. Absolutely no Japanese characters, lettering, speech balloons, captions, sound effects, panel labels, numbers, or invented symbols.\nAvoid extra characters, duplicate ghost figures, second sword, second spear, detached blade, multiple contact points, empty hand touching the spear, blood, gore, magic, beams, explosions, glowing abilities, color, 3D, polished realism, collage.",
+      "gitRef": "79b0dec3",
+      "inCurrentTree": false,
+      "active_story_cells": []
     }
   ]
 }

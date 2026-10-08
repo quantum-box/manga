@@ -1,121 +1,92 @@
 {
-  "schema": "battle-name-preview-native-review/v1",
-  "reviewedAt": "2026-10-08",
-  "status": "partial-preview-unadopted-ready3-p20-resolved",
-  "scope": "Independent visual review of the 24-panel combat partial trial at 360 CSS px. This is not a full-episode length approval, finished-CG approval, adoption decision, or publication check.",
+  "schema": "battle-name-preview-dramatic-native-review/v1",
+  "reviewedAt": "2026-10-09",
+  "status": "partial-preview-unadopted-no-material-visual-blocker",
+  "scope": "Independent final native review of the current 360 CSS px c02 and c05 composition proofs only. This is an unadopted 24-panel partial trial and is not a full-episode, finished-CG, or publication approval.",
+  "actualReviewedFiles": [
+    "skills/webtoon/references/action-name-preview/review/composition-360-c02.png",
+    "skills/webtoon/references/action-name-preview/review/composition-360-c05.png",
+    "skills/webtoon/references/action-name-preview/rough/attack-breakout.png",
+    "skills/webtoon/references/action-name-preview/rough/jump-breakout.png",
+    "skills/webtoon/references/action-name-preview/rough/counter-breakout.png"
+  ],
+  "proofHashes": {
+    "index.html": "388ffc75a8efe7351d33769c0068e27ec0861640ff33e4ba16969a9c24f3774e",
+    "plan.json": "aa3d235ce236da621f259940fdd6a3024541434a896fc3b41882ea241286ff89",
+    "rough/counter-breakout.png": "7554e74765cac9e5a95e81d80c0e8912d85d073d4b1e1fe11c592dd9e4220c0c"
+  },
   "viewport": {
     "widthCssPx": 360,
-    "heightCssPx": 800,
-    "continuousOverlapPx": 150
+    "proofType": "native continuous composition proof"
   },
-  "actualReviewedFiles": [
-    "skills/webtoon/references/action-name-preview/review/window-360-000.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-001.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-002.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-003.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-004.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-005.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-006.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-007.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-008.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-009.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-010.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-011.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-012.png",
-    "skills/webtoon/references/action-name-preview/review/window-360-013.png"
-  ],
-  "sourceReviewed": [
-    "skills/webtoon/references/action-name-preview/plan.json",
-    "skills/webtoon/references/action-name-preview/storyboard.md",
-    "skills/webtoon/references/action-name-preview/README.md"
-  ],
-  "explicitVisualConfidence": "high for the original 360px windows 000..013 plus the current READY3 p20 replacement proof; this remains a partial preview only.",
+  "explicitVisualConfidence": "high for the two supplied current 360px composition images; scope is limited to c02/c05 and the stated checks",
   "findings": [
     {
-      "id": "spacing-and-rhythm",
-      "result": "pass-with-intentional-pauses",
-      "panels": "p01-p24",
-      "observation": "The flow alternates wide attack panels, foot/shoulder/hand/mask close-ups, voices, and reaction space instead of a uniform card stack. pause-01 through pause-06 have visible narrative jobs: establish the crossing goal, register the dropped sword, notice the shoulder cue, decide while afraid, connect jump to deflection, and let the aftermath/exit breathe. The large spaces after p08, p12, p20, and p23 read as waiting or consequence because the adjacent cue or voice remains visible."
-    },
-    {
-      "id": "following-action-direction",
+      "id": "c02-sfx-and-action-read",
       "result": "pass",
-      "panels": "p01-p09,p13-p17,p19-p24",
-      "observation": "Aki begins on the right and the gatekeeper on the left; the bridge and spear line consistently direct the eye across the frame. The sequence reads as approach, low evasion, dropped sword, repeated spear cue, sideways test, step-down, pickup, jump from the same step, landing inside the guard, then one deflection toward the right handrail and exit left. No reversed action direction or unexplained teleport was visible."
+      "panels": [
+        "p05",
+        "p06",
+        "p07",
+        "p08"
+      ],
+      "observation": "ブォンッ, ザッ, カラン…… and the p07 dialogue remain visible and separated enough to follow the attack, evade, dropped sword, and immediate consequence. No SFX covers a required face or hand. The c02 vertical arrangement reads from the full p05 attack into the right inset and then the lower sword states."
     },
     {
-      "id": "p12-left-thought",
+      "id": "c05-sfx-voice-and-action-read",
       "result": "pass",
-      "panels": "p10-p12",
-      "observation": "The left-margin thought '今だ……？' is fully visible at 360px and does not mask the gatekeeper's helmet/mask. The shoulder cue, the guard's face, Aki's lateral movement, and the short 'スッ' sound remain separately readable."
+      "panels": [
+        "p17",
+        "p18",
+        "p19",
+        "p20"
+      ],
+      "observation": "The current right-shifted ダンッ has visible leading ink and a small gap from the voice-p18 white surface; it does not mask the voice or the reaction-mask image. ザッ and ガキィンッ！ are fully legible, with the latter in the intended white gutter. The four-step order reads as jump, mask reaction, landing, then one clash."
     },
     {
-      "id": "p15-fear-and-cause",
+      "id": "inner-frame-breakout",
+      "result": "pass-intentional",
+      "panels": [
+        "p05",
+        "p17",
+        "p20"
+      ],
+      "observation": "The spear/body/leg breakout in c02 and the sword/body/impact breakout in c05 visibly cross the drawn oblique inner borders while retaining clean white outer margin. This matches the source and plan instruction to display the full unmasked breakout asset; no accidental CSS polygon clipping or source-border truncation was visible."
+    },
+    {
+      "id": "face-hand-weapon-continuity",
       "result": "pass",
-      "panels": "p13-p16",
-      "observation": "The cause of fear is visible before the thought: changed spear height, the step edge, the nearby sword, and the hand finding the stone lip. '怖い……それでも行く！' appears in the open right-side space and leads into the crouched pickup, so the choice is not an unexplained declaration."
+      "panels": [
+        "p05",
+        "p17",
+        "p18",
+        "p19",
+        "p20"
+      ],
+      "observation": "The attack and jump keep the principal figures readable. p17 shows Aki's closed sword hand and continuous blade; p18 preserves the gatekeeper's mask; p19 preserves the landing hand/sword relationship; p20 shows the closed grip, one sword-to-spear contact, and a continuous spear redirecting right. No disconnected shaft or obscured required face/hand is visible."
     },
     {
-      "id": "pickup-jump-landing-chain",
-      "result": "pass-up-to-p19",
-      "panels": "p16-p19",
-      "observation": "p16 shows the crouched pickup at the same sword location; p17 shows Aki already holding the sword while jumping; p18 isolates the guard's surprised mask and '何っ！？'; p19 shows the inside landing and the sword hand reaching the spear line. The action reads as one continuous cause-and-effect chain."
-    },
-    {
-      "id": "p20-deflection-material",
-      "result": "resolved-ready3",
-      "panels": "p20",
-      "observation": "The READY3 counter asset and fresh native proofs show Aki’s hand visibly closed around the sword hilt; the blade and spear cross once at the marked impact, with the spear redirected to the right-hand rail. The material continuity blocker from READY2 is resolved in the supplied current images.",
-      "evidence": [
-        "skills/webtoon/references/action-name-preview/rough/counter.png",
-        "skills/webtoon/references/action-name-preview/review/composition-360-c05.png",
-        "skills/webtoon/references/action-name-preview/review/window-360-009.png",
-        "skills/webtoon/references/action-name-preview/review/window-360-010.png"
-      ]
-    },
-    {
-      "id": "text-face-hand-sword-readability",
-      "result": "pass-ready3",
-      "panels": "p01-p24",
-      "observation": "Vertical Japanese text, question/exclamation marks, voice labels, and SFX are readable at 360px. Faces and hands are visible in the intended close-ups; p12 and p15 voices stay in empty margins. The sword is visibly dropped at p07, remains on the bridge through the approach/pickup beats, and is in hand from p17 onward; READY3 now also makes the p20 grip and sword-spear contact clear."
-    },
-    {
-      "id": "sfx-and-combat-emphasis",
+      "id": "reading-order",
       "result": "pass",
-      "panels": "p01-p24",
-      "observation": "Wind, footsteps, spear movement, landing, sword pickup, clash, and the closing footsteps are present and attached to their actions. The large clash SFX and the narrow close-up SFX remain visible in the continuous windows; no SFX hides a required face or hand."
-    },
-    {
-      "id": "viewport-and-composition-geometry",
-      "result": "pass-with-known-intentional-overlap",
-      "panels": "p01-p24",
-      "observation": "The supplied 360px windows show no unintentional horizontal overflow or clipped dialogue. The p02/p03 foot inset overlap is a deliberate shared composition, and the small SFX geometry below c04/c05 stays within the reader width."
+      "panels": [
+        "c02",
+        "c05"
+      ],
+      "observation": "At 360px the intended right-to-left action direction remains clear inside the descending vertical flow: p05 attack -> evade/drop aftermath, and p17 takeoff -> p18 reaction -> p19 landing -> p20 deflection. The small insets overlap the large compositions as designed without reversing the read."
     }
   ],
-  "materialBugs": [
-    {
-      "id": "p20-open-hand-sword-connection",
-      "severity": "resolved-in-ready3-proof",
-      "state": "resolved-in-current-native-images",
-      "requiredEvidence": [],
-      "resolution": "Closed sword grip, one blade/spear intersection, and rightward deflection are visible in the current replacement proof."
-    }
-  ],
+  "materialBugs": [],
   "remainingIssues": [
-    "This remains a 24-panel partial trial and is not a full-episode length or publication approval.",
-    "The p20 material issue is resolved only for the supplied READY3 native replacement proof; any later regeneration must preserve the same grip and intersection."
+    "This is still an unadopted partial name preview; the review does not approve the full episode, final art, or publication."
   ],
-  "overall": "The original READY2 360px partial sequence remains rhythmically and causally coherent. The current READY3 p20 counter asset and fresh c05/window-009/010 proofs resolve the only material blocker: the closed grip, single sword-spear contact, and rightward deflection are now visually clear. The partial preview remains unadopted and is not a full-episode approval.",
-  "ready3Delta": {
-    "priorReviewedWindowSet": "READY2 window-360-000..013 (the prior p20 blocker review)",
-    "currentReviewedFiles": [
-      "skills/webtoon/references/action-name-preview/rough/counter.png",
-      "skills/webtoon/references/action-name-preview/review/composition-360-c05.png",
-      "skills/webtoon/references/action-name-preview/review/window-360-009.png",
-      "skills/webtoon/references/action-name-preview/review/window-360-010.png"
-    ],
-    "proofState": "READY3 current native replacement and fresh 360px composition/continuous windows",
-    "visualDelta": "The p20 sword hand is visibly closed around the hilt in counter.png and in the current p20 clash panel; the blade intersects the spear once and the spear is redirected toward the right rail.",
-    "priorState": "partial-preview-unadopted"
+  "overall": "The current 360px c02 and c05 proofs pass the requested SFX, face/hand, intentional inner-frame breakout, and reading-order checks. No material visual blocker was confirmed in this scoped review.",
+  "compositionProofHashes": {
+    "review/composition-360-c02.png": "33f6f432dd26824546770615b524507cd10d60a84e27591d3e24df711eb717d8",
+    "review/composition-360-c05.png": "c47bb2cff03ff93c195797822afdcf221615b1f6618c6992f7b5b9c54013c756"
+  },
+  "priorUnchangedSequenceReview": {
+    "gitRef": "3659e7f6",
+    "path": "skills/webtoon/references/action-name-preview/review/native-360-review.json",
+    "scope": "Earlier unchanged full 24-cut source content; this review specifically verifies the revised c02/c05 compositions"
   }
 }
