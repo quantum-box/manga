@@ -12,6 +12,8 @@
 
 人物の顔立ち・髪・服・汚れ・持ち物は同一性の条件、眉・口・視線・手の緊張はその場面の感情として指定する。人物参照の不敵な表情まで不変条件にしない。「驚いている」だけでなく、何を見て何が分からず、どの部位に反応が出るかを指示する。
 
+感情が重要な発話は、[セリフの意図と反応](emotion-and-causality.md)を脚本で決め、下の `Dialogue intent` と `Visible acting` へ渡す。発話前の感情、相手へ求めること、言った後の変化を絵の演技へつなぐ。生成モデルにセリフの改作を任せず、確定した全文を渡す。
+
 既存作画の感情を直す場合は、編集対象を先に表示し、変更する眉・瞳・口・姿勢などと、保つ人物・衣服・小道具・背景・構図を分ける。足りない因果は、前後の状態をつなぐ接写や短い動作を追加する。表情を直す指示で武器や拘束の状態まで変えない。
 
 ## 食べ物のある場面
@@ -42,8 +44,10 @@ Composition: [primary focal element and path to the next beat; reserve the plann
 Text: Render only the specified dialogue, sound effects and in-world display text. Integrate them with the illustration. Speech uses white balloons and true vertical Japanese: upright glyphs, top-to-bottom columns ordered right-to-left. Do not rotate horizontal sentences sideways. No unlisted text or watermark.
 Text breaks: Omit Japanese commas and full stops, and sentence-separating commas or periods. Preserve specified expressive marks and meaningful symbols. Use the supplied phrase-boundary line breaks; for vertical dialogue, each line becomes one column. Do not split words or leave a lone particle or final character.
 Dialogue: [speaker, exact full text without sentence punctuation and with planned line breaks, balloon reading order, and each vertical column listed in right-to-left order].
+Dialogue intent: [for spoken dialogue: what this speaker wants from THIS listener now, their established relationship/register, and any feeling or fact the speaker holds back; for thought: the character's own doubt, wish, realization or decision, with no listener required or invented; omit for assets with no character voice]. Preserve the exact supplied words.
 Sound effects: [exact word, producing action/material, position relative to the source, scale and drawn letter style, beginning/continuation/end; or none only when no sound persists, with a reason for quiet]. Keep sounds outside speech/thought balloons; their orientation follows the action, separately from dialogue.
-Voice: [spoken / thought; intended listener; volume, emotion and breath for THIS utterance].
+Voice: [spoken / thought; intended listener if any; volume, emotion and breath for THIS utterance].
+Visible acting: [for character beats only: the emotional change in THIS moment through the relevant eyeline, brows, mouth, hands, posture or breath; listener response only if included in this beat; any inappropriate default expression to avoid; omit for assets without characters]. Do not add later reactions or automatic tears, sweat or shouting.
 Balloon design: [contour, line weight/color, white inner padding, and continuous speech tail or thought dots].
 Lettering: Clean printed Japanese manga gothic, dark lettering, generous inset padding, legible after smartphone downscaling. Balloon tails point to the speakers. Do not cover faces or hands.
 Constraints: [unchanging identity] and [this scene's prop state].
@@ -63,7 +67,7 @@ Offscreen: [who remains nearby and on which side].
 Single beat: [what the reader understands now].
 Carry forward: [eyeline, posture, background marker and prop state].
 Exact dialogue for THIS panel only: [text, or no dialogue/thought balloons].
-Exact sound effects for THIS panel only: [word, source, placement and drawn style, beginning/continuation/end; or none only when no sound persists]. Do not use 'silent' for a wordless panel whose sound persists.
+Exact sound effects for THIS panel only: [word, source/origin moment, placement and drawn style, beginning/continuation/end; or none only when no sound persists]. Do not use 'silent' for a wordless panel whose sound persists. Do not duplicate the complete inscription in each panel when one sound spans several moments.
 Do not include later replies, new locations, or every character from the reference.
 ```
 
