@@ -204,7 +204,7 @@ Compose intentionally unequal beats, varied close/medium/wide camera, staggered 
 
 EXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.
 Current continuity: 守護者一体5m、石と銅、太い二腕、二足接地から左足を一瞬動かす。胸の外扉は閉、平たい丸い橙表示器は扉の外に固定。流路は足と小瓦礫で塞がる。水が通り温度が下がった周期に胸の外扉が大きく開き、外の平たい表示器も扉と一緒に外へ動く。内部には30cmの真鍮環一つ、中央8cm琥珀魔石一つ、短い橋四つ・固定クリップ四つ。内部の組は15で初露出。それまで描かない。カイ改修剣右、銅板一つ、弁開、左カフのみ。セナ傷の左盾、イリス杖と魔石一つ。環袋は空。 内環の橋四つは上下左右の短い支持材。外周固定クリップは右上・右下・左上・左下の四か所だけ。上下の外周クリップは無い。
-Location/time: 同じ遠征、灯炉守護者の広い部屋。左に停止した流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
+Location/time: 同じ遠征、灯炉守護者の広い部屋。左で水が流れ始める流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
 Scroll composition: 杖の短い風、軽い瓦礫の移動、長い枠なし水流を下へ。
 What the reader understands: イリスは水を作り出すのではなく道を開く。
 Withhold: 後の結果や報酬
@@ -232,7 +232,7 @@ Compose intentionally unequal beats, varied close/medium/wide camera, staggered 
 
 EXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.
 Current continuity: 守護者一体5m、石と銅、太い二腕、二足接地から左足を一瞬動かす。胸の外扉は閉、平たい丸い橙表示器は扉の外に固定。流路は足と小瓦礫で塞がる。水が通り温度が下がった周期に胸の外扉が大きく開き、外の平たい表示器も扉と一緒に外へ動く。内部には30cmの真鍮環一つ、中央8cm琥珀魔石一つ、短い橋四つ・固定クリップ四つ。内部の組は15で初露出。それまで描かない。カイ改修剣右、銅板一つ、弁開、左カフのみ。セナ傷の左盾、イリス杖と魔石一つ。環袋は空。 内環の橋四つは上下左右の短い支持材。外周固定クリップは右上・右下・左上・左下の四か所だけ。上下の外周クリップは無い。
-Location/time: 同じ遠征、灯炉守護者の広い部屋。左に停止した流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
+Location/time: 同じ遠征、灯炉守護者の広い部屋。左に水が戻った流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
 Scroll composition: 一本の疎な水と銅管をたどる縦背景、最後に閉じた外扉の光。
 What the reader understands: 水が装置へ戻る経路を絵でつなぐ。
 Withhold: 後の結果や報酬
@@ -260,7 +260,7 @@ Compose intentionally unequal beats, varied close/medium/wide camera, staggered 
 
 EXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.
 Current continuity: 守護者一体5m、石と銅、太い二腕、二足接地から左足を一瞬動かす。胸の外扉は閉、平たい丸い橙表示器は扉の外に固定。流路は足と小瓦礫で塞がる。水が通り温度が下がった周期に胸の外扉が大きく開き、外の平たい表示器も扉と一緒に外へ動く。内部には30cmの真鍮環一つ、中央8cm琥珀魔石一つ、短い橋四つ・固定クリップ四つ。内部の組は15で初露出。それまで描かない。カイ改修剣右、銅板一つ、弁開、左カフのみ。セナ傷の左盾、イリス杖と魔石一つ。環袋は空。 内環の橋四つは上下左右の短い支持材。外周固定クリップは右上・右下・左上・左下の四か所だけ。上下の外周クリップは無い。
-Location/time: 同じ遠征、灯炉守護者の広い部屋。左に停止した流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
+Location/time: 同じ遠征、灯炉守護者の広い部屋。左に水が戻った流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
 Scroll composition: カイの目、外表示器の暗まり、イリスの反応。
 What the reader understands: 冷却の仮説を結果で確認する。
 Withhold: 後の結果や報酬
@@ -288,7 +288,7 @@ Compose intentionally unequal beats, varied close/medium/wide camera, staggered 
 
 EXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.
 Current continuity: 守護者一体5m、石と銅、太い二腕、二足接地から左足を一瞬動かす。胸の外扉は閉、平たい丸い橙表示器は扉の外に固定。流路は足と小瓦礫で塞がる。水が通り温度が下がった周期に胸の外扉が大きく開き、外の平たい表示器も扉と一緒に外へ動く。内部には30cmの真鍮環一つ、中央8cm琥珀魔石一つ、短い橋四つ・固定クリップ四つ。内部の組は15で初露出。それまで描かない。カイ改修剣右、銅板一つ、弁開、左カフのみ。セナ傷の左盾、イリス杖と魔石一つ。環袋は空。 内環の橋四つは上下左右の短い支持材。外周固定クリップは右上・右下・左上・左下の四か所だけ。上下の外周クリップは無い。
-Location/time: 同じ遠征、灯炉守護者の広い部屋。左に停止した流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
+Location/time: 同じ遠征、灯炉守護者の広い部屋。左に水が戻った流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
 Scroll composition: セナの姿勢と盾、敵の小さくなった振り、カイの位置。
 What the reader understands: 作戦が進んでもセナの負担は続く。
 Withhold: 後の結果や報酬
@@ -316,7 +316,7 @@ Compose intentionally unequal beats, varied close/medium/wide camera, staggered 
 
 EXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.
 Current continuity: 守護者一体5m、石と銅、太い二腕、二足接地から左足を一瞬動かす。胸の外扉は閉、平たい丸い橙表示器は扉の外に固定。流路は足と小瓦礫で塞がる。水が通り温度が下がった周期に胸の外扉が大きく開き、外の平たい表示器も扉と一緒に外へ動く。内部には30cmの真鍮環一つ、中央8cm琥珀魔石一つ、短い橋四つ・固定クリップ四つ。内部の組は15で初露出。それまで描かない。カイ改修剣右、銅板一つ、弁開、左カフのみ。セナ傷の左盾、イリス杖と魔石一つ。環袋は空。 内環の橋四つは上下左右の短い支持材。外周固定クリップは右上・右下・左上・左下の四か所だけ。上下の外周クリップは無い。
-Location/time: 同じ遠征、灯炉守護者の広い部屋。左に停止した流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
+Location/time: 同じ遠征、灯炉守護者の広い部屋。左に水が戻った流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
 Scroll composition: イリス本人の状態確認、カイの短い合図、杖を保つ手。
 What the reader understands: 魔力は有限、供給を重ねず最後の支援を残す。
 Withhold: 後の結果や報酬
@@ -344,7 +344,7 @@ Compose intentionally unequal beats, varied close/medium/wide camera, staggered 
 
 EXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.
 Current continuity: 守護者一体5m、石と銅、太い二腕、二足接地から左足を一瞬動かす。胸の外扉は閉、平たい丸い橙表示器は扉の外に固定。流路は足と小瓦礫で塞がる。水が通り温度が下がった周期に胸の外扉が大きく開き、外の平たい表示器も扉と一緒に外へ動く。内部には30cmの真鍮環一つ、中央8cm琥珀魔石一つ、短い橋四つ・固定クリップ四つ。内部の組は15で初露出。それまで描かない。カイ改修剣右、銅板一つ、弁開、左カフのみ。セナ傷の左盾、イリス杖と魔石一つ。環袋は空。 内環の橋四つは上下左右の短い支持材。外周固定クリップは右上・右下・左上・左下の四か所だけ。上下の外周クリップは無い。
-Location/time: 同じ遠征、灯炉守護者の広い部屋。左に停止した流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
+Location/time: 同じ遠征、灯炉守護者の広い部屋。左に水が戻った流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
 Scroll composition: 杖先→改修剣→カイの止めた足の短い動作。
 What the reader understands: 三人で試した入力を本番でも守る。
 Withhold: 後の結果や報酬
@@ -372,7 +372,7 @@ Compose intentionally unequal beats, varied close/medium/wide camera, staggered 
 
 EXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.
 Current continuity: 守護者一体5m、石と銅、太い二腕、二足接地から左足を一瞬動かす。胸の外扉は閉、平たい丸い橙表示器は扉の外に固定。流路は足と小瓦礫で塞がる。水が通り温度が下がった周期に胸の外扉が大きく開き、外の平たい表示器も扉と一緒に外へ動く。内部には30cmの真鍮環一つ、中央8cm琥珀魔石一つ、短い橋四つ・固定クリップ四つ。内部の組は15で初露出。それまで描かない。カイ改修剣右、銅板一つ、弁開、左カフのみ。セナ傷の左盾、イリス杖と魔石一つ。環袋は空。 内環の橋四つは上下左右の短い支持材。外周固定クリップは右上・右下・左上・左下の四か所だけ。上下の外周クリップは無い。
-Location/time: 同じ遠征、灯炉守護者の広い部屋。左に停止した流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
+Location/time: 同じ遠征、灯炉守護者の広い部屋。左に水が戻った流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
 Scroll composition: 上は扉の縁の接写、カイの目、下に広い白へ金属音。中身の披露は次へ。
 What the reader understands: 胸の扉が大きく開き始める。
 Withhold: 内部の環・魔石・四つの橋は次素材で初露出
@@ -400,7 +400,7 @@ Compose intentionally unequal beats, varied close/medium/wide camera, staggered 
 
 EXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.
 Current continuity: 守護者一体5m、石と銅、太い二腕、二足接地から左足を一瞬動かす。胸の外扉は閉、平たい丸い橙表示器は扉の外に固定。流路は足と小瓦礫で塞がる。水が通り温度が下がった周期に胸の外扉が大きく開き、外の平たい表示器も扉と一緒に外へ動く。内部には30cmの真鍮環一つ、中央8cm琥珀魔石一つ、短い橋四つ・固定クリップ四つ。内部の組は15で初露出。それまで描かない。カイ改修剣右、銅板一つ、弁開、左カフのみ。セナ傷の左盾、イリス杖と魔石一つ。環袋は空。 内環の橋四つは上下左右の短い支持材。外周固定クリップは右上・右下・左上・左下の四か所だけ。上下の外周クリップは無い。
-Location/time: 同じ遠征、灯炉守護者の広い部屋。左に停止した流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
+Location/time: 同じ遠征、灯炉守護者の広い部屋。左に水が戻った流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
 Scroll composition: 開いた胸の機構を大きい一枚の接写、下の小さいカイの目と手。
 What the reader understands: 第2話の図と同じ一組が敵の中にある。
 Withhold: 後の結果や報酬
@@ -428,7 +428,7 @@ Compose intentionally unequal beats, varied close/medium/wide camera, staggered 
 
 EXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.
 Current continuity: 守護者一体5m、石と銅、太い二腕、二足接地から左足を一瞬動かす。胸の外扉は閉、平たい丸い橙表示器は扉の外に固定。流路は足と小瓦礫で塞がる。水が通り温度が下がった周期に胸の外扉が大きく開き、外の平たい表示器も扉と一緒に外へ動く。内部には30cmの真鍮環一つ、中央8cm琥珀魔石一つ、短い橋四つ・固定クリップ四つ。内部の組は15で初露出。それまで描かない。カイ改修剣右、銅板一つ、弁開、左カフのみ。セナ傷の左盾、イリス杖と魔石一つ。環袋は空。 内環の橋四つは上下左右の短い支持材。外周固定クリップは右上・右下・左上・左下の四か所だけ。上下の外周クリップは無い。
-Location/time: 同じ遠征、灯炉守護者の広い部屋。左に停止した流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
+Location/time: 同じ遠征、灯炉守護者の広い部屋。左に水が戻った流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
 Scroll composition: 上の閉じていない弁、カイの顔、下のセナの合図。
 What the reader understands: カイの次の一撃の目的が明瞭になる。
 Withhold: 後の結果や報酬
@@ -456,7 +456,7 @@ Compose intentionally unequal beats, varied close/medium/wide camera, staggered 
 
 EXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.
 Current continuity: 守護者一体5m、石と銅、太い二腕、二足接地から左足を一瞬動かす。胸の外扉は閉、平たい丸い橙表示器は扉の外に固定。流路は足と小瓦礫で塞がる。水が通り温度が下がった周期に胸の外扉が大きく開き、外の平たい表示器も扉と一緒に外へ動く。内部には30cmの真鍮環一つ、中央8cm琥珀魔石一つ、短い橋四つ・固定クリップ四つ。内部の組は15で初露出。それまで描かない。カイ改修剣右、銅板一つ、弁開、左カフのみ。セナ傷の左盾、イリス杖と魔石一つ。環袋は空。 内環の橋四つは上下左右の短い支持材。外周固定クリップは右上・右下・左上・左下の四か所だけ。上下の外周クリップは無い。
-Location/time: 同じ遠征、灯炉守護者の広い部屋。左に停止した流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
+Location/time: 同じ遠征、灯炉守護者の広い部屋。左に水が戻った流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
 Scroll composition: 部屋を見下ろす引き、敵の膝の曲がり、セナの足と左盾。
 What the reader understands: 石段と姿勢で重さを受ける準備ができた。
 Withhold: 後の結果や報酬
@@ -484,7 +484,7 @@ Compose intentionally unequal beats, varied close/medium/wide camera, staggered 
 
 EXCLUSIVE CAST for this asset: Kai, Sena, Iris. Do NOT draw any other reference character. Iris is ABSENT unless explicitly listed here. RIGHT wrist/forearm has NO glove, bracelet, cuff or bracer; copper cuff ONLY LEFT forearm.
 Current continuity: 守護者一体5m、石と銅、太い二腕、二足接地から左足を一瞬動かす。胸の外扉は閉、平たい丸い橙表示器は扉の外に固定。流路は足と小瓦礫で塞がる。水が通り温度が下がった周期に胸の外扉が大きく開き、外の平たい表示器も扉と一緒に外へ動く。内部には30cmの真鍮環一つ、中央8cm琥珀魔石一つ、短い橋四つ・固定クリップ四つ。内部の組は15で初露出。それまで描かない。カイ改修剣右、銅板一つ、弁開、左カフのみ。セナ傷の左盾、イリス杖と魔石一つ。環袋は空。 内環の橋四つは上下左右の短い支持材。外周固定クリップは右上・右下・左上・左下の四か所だけ。上下の外周クリップは無い。
-Location/time: 同じ遠征、灯炉守護者の広い部屋。左に停止した流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
+Location/time: 同じ遠征、灯炉守護者の広い部屋。左に水が戻った流路、右に低い石段、奥に高さ5mの守護者一体。セナ前、カイ右、イリス左後方。
 Scroll composition: 一つの広い斜めの踏み込み、下の剣先と右の固定具への視線。斬った結果は次へ残す。
 What the reader understands: 仲間が作った窓へカイが進む。
 Withhold: 切断の結果、環の回収、敵の停止を描かない
