@@ -1,0 +1,492 @@
+{
+  "number": 19,
+  "title": "持ち帰ったもの",
+  "time": "49日目・午後〜50日目",
+  "change": "調査許可の範囲で成熟種の少量と守衛の制御片を採集し帰還。未知の葉をその場で食べない。ギルドへ突破を報告し報酬を受ける。食堂はエルナが予定の営業を継続。",
+  "state": "調査許可の範囲で成熟種の少量と守衛の制御片を採集し帰還。未知の葉をその場で食べない。ギルドへ突破を報告し報酬を受ける。食堂はエルナが予定の営業を継続。",
+  "revision": "2026-10-08-following",
+  "sources": [
+    {
+      "id": "01-the-seed",
+      "art": "art/01-the-seed.png",
+      "description": "Fourth-floor old bed, Kou examines dry mature pods and takes small sample into plain paper packets after Sera confirms permission. Leave most plant untouched, no planting yet or cooked food from unknown leaves. Closeup careful seed selection then broad modest bed.",
+      "dialogue": [
+        [
+          "コウ",
+          "熟した種が\n残ってる"
+        ],
+        [
+          "セラ",
+          "調査分の採取は\n許可されてる"
+        ],
+        [
+          "コウ",
+          "少しだけ\n持って帰ろう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-the-seed.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "b440f2953a7a06fbd25b79aaf37bace6ac219b504aa7cc6ba5d88185028c8da2"
+    },
+    {
+      "id": "02-not-yet-food",
+      "art": "art/02-not-yet-food.png",
+      "description": "Row looks at attractive blue-veined leaf, Kou stops him from tasting politely with flat palm, Sera separates leaf sample from food pouches. No ingestion, poison gag or lecture dump.",
+      "dialogue": [
+        [
+          "ロウ",
+          "食べられるのか？"
+        ],
+        [
+          "コウ",
+          "まだ\n分からない"
+        ],
+        [
+          "コウ",
+          "バルトさんに\n見てもらおう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-not-yet-food.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "95ca537893553d0a6a8fa1fcf6d801ff986e81847ac3dd685a9cb696c3d1b0a3"
+    },
+    {
+      "id": "03-control-fragment-corrected",
+      "art": "art/03-control-fragment-corrected.png",
+      "description": "Sera wraps a small cracked blue control-stone fragment safely, Kou sketches cleared route on blank-mark notebook, Row checks retreat path. Guardian remains stopped, route marker not magical global ownership certificate.",
+      "dialogue": [
+        [
+          "セラ",
+          "これは\n技師に渡そう"
+        ],
+        [
+          "コウ",
+          "戻り道も\n記録しておく"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 140,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-control-fragment-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2171,
+      "sha256": "cc85a67424d443897a7176defd7d46e125ecbe3f56e532a53af1f85002f897c6"
+    },
+    {
+      "id": "04-the-descent",
+      "art": "art/04-the-descent.png",
+      "description": "Long warm-cool transition stair descent, party turns downward with visible same satchels and sample packet secured, Row front protects Sera behind tired but okay; Kou carries tools no huge golden chest. Third-floor lamps gradually appear below.",
+      "dialogue": [
+        [
+          "ロウ",
+          "帰ろう\n報告が待ってる"
+        ],
+        [
+          "コウ",
+          "……帰る場所が\nあるんだな"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 500,
+      "scrollPurpose": "上へ登った道を下へたどり帰還を実感する",
+      "prompt": "generation/04-the-descent.prompt.txt",
+      "soundEffects": [],
+      "width": 725,
+      "height": 2170,
+      "sha256": "42faaa6cbf2474a39f8d0836399ff212813e8a3ca243653b351c420f789c938a"
+    },
+    {
+      "id": "05-report-and-reward-corrected",
+      "art": "art/05-report-and-reward-corrected.png",
+      "description": "Third-floor guild dry desk Leon hears report, receives simple route sketch and sealed sample statement, then a modest copper-silver reward pouch for all three. Kou astonished, Row smiles, no arbitrary exact large numerical amounts.",
+      "dialogue": [
+        [
+          "レオン",
+          "未攻略区画を\n通したのか"
+        ],
+        [
+          "ロウ",
+          "この農夫が\n道を作った"
+        ],
+        [
+          "レオン",
+          "調査と突破の報酬だ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 430,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-report-and-reward-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 738,
+      "height": 2129,
+      "sha256": "ee57d725691f23cc7ea50485208b267540b1fb4c674fb68f6b6a1c90ccfcf81a"
+    },
+    {
+      "id": "06-the-store-is-open-corrected",
+      "art": "art/06-the-store-is-open-corrected.png",
+      "description": "Exterior reveal same blue-awning diner still operating, Elna serves ordinary customer and Balt sees party return from garden gate. Kou stops at entrance realizing work continued without him. No everyone waiting idle all day or farm magically enormous.",
+      "dialogue": [
+        [
+          "コウ",
+          "……開いてる"
+        ],
+        [
+          "バルト",
+          "当たり前だ\n任されたからな"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 350,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-store-is-open-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 728,
+      "height": 2159,
+      "sha256": "967192abac64a1e3801bda5f1d8533df63d8dbee6cf8434022f71af9761e6447"
+    },
+    {
+      "id": "07-welcome-back-corrected",
+      "art": "art/07-welcome-back-corrected.png",
+      "description": "Elna sets warm ceramic stew before Kou who sits tired but uninjured; closeup her genuine relief and his softened smile, Row and Sera take their own seats. Recipe same, unknown crop not in dinner.",
+      "dialogue": [
+        [
+          "エルナ",
+          "おかえり"
+        ],
+        [
+          "コウ",
+          "ただいま"
+        ],
+        [
+          "エルナ",
+          "まずは\n食べて"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 400,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-welcome-back-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "1c21285bed676c3820aaab37e5ef3da533f30a2832ae7d41be7914d753b7d168"
+    },
+    {
+      "id": "08-the-story-over-food-corrected",
+      "art": "art/08-the-story-over-food-corrected.png",
+      "description": "Warm quiet dinner table after meal started Kou shows CLOSED paper sample packet at separate dry tabletop edge away from bowls, tells achievement rather than detailed mechanism; Elna proud, other party relaxed. Full safe return dinner as emotional payoff.",
+      "dialogue": [
+        [
+          "コウ",
+          "上で\n道を開けてきた"
+        ],
+        [
+          "エルナ",
+          "農夫の仕事で？"
+        ],
+        [
+          "コウ",
+          "ああ\nいつもの道具で"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 520,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-the-story-over-food-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "3d702818625718d8edf265da8a0e611fee5202578ce70c4832086322f3e58e33"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-the-seed-window-01",
+      "art": "art/01-the-seed.png",
+      "description": "Fourth-floor old bed, Kou examines dry mature pods and takes small sample into plain paper packets after Sera confirms permission. Leave most plant untouched, no planting yet or cooked food from unknown leaves. Closeup careful seed selection then broad modest bed.",
+      "dialogue": [
+        [
+          "コウ",
+          "熟した種が\n残ってる"
+        ],
+        [
+          "セラ",
+          "調査分の採取は\n許可されてる"
+        ],
+        [
+          "コウ",
+          "少しだけ\n持って帰ろう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 200,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/01-the-seed.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "b440f2953a7a06fbd25b79aaf37bace6ac219b504aa7cc6ba5d88185028c8da2",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "01-the-seed",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "02-not-yet-food-window-01",
+      "art": "art/02-not-yet-food.png",
+      "description": "Row looks at attractive blue-veined leaf, Kou stops him from tasting politely with flat palm, Sera separates leaf sample from food pouches. No ingestion, poison gag or lecture dump.",
+      "dialogue": [
+        [
+          "ロウ",
+          "食べられるのか？"
+        ],
+        [
+          "コウ",
+          "まだ\n分からない"
+        ],
+        [
+          "コウ",
+          "バルトさんに\n見てもらおう"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 180,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/02-not-yet-food.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "95ca537893553d0a6a8fa1fcf6d801ff986e81847ac3dd685a9cb696c3d1b0a3",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "02-not-yet-food",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "03-control-fragment-corrected-window-01",
+      "art": "art/03-control-fragment-corrected.png",
+      "description": "Sera wraps a small cracked blue control-stone fragment safely, Kou sketches cleared route on blank-mark notebook, Row checks retreat path. Guardian remains stopped, route marker not magical global ownership certificate.",
+      "dialogue": [
+        [
+          "セラ",
+          "これは\n技師に渡そう"
+        ],
+        [
+          "コウ",
+          "戻り道も\n記録しておく"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 140,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/03-control-fragment-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2171,
+      "sha256": "cc85a67424d443897a7176defd7d46e125ecbe3f56e532a53af1f85002f897c6",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2171
+      },
+      "sourceId": "03-control-fragment-corrected",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "04-the-descent-window-01",
+      "art": "art/04-the-descent.png",
+      "description": "Long warm-cool transition stair descent, party turns downward with visible same satchels and sample packet secured, Row front protects Sera behind tired but okay; Kou carries tools no huge golden chest. Third-floor lamps gradually appear below.",
+      "dialogue": [
+        [
+          "ロウ",
+          "帰ろう\n報告が待ってる"
+        ],
+        [
+          "コウ",
+          "……帰る場所が\nあるんだな"
+        ]
+      ],
+      "layout": "continuous",
+      "pauseAt390": 500,
+      "scrollPurpose": "上へ登った道を下へたどり帰還を実感する",
+      "prompt": "generation/04-the-descent.prompt.txt",
+      "soundEffects": [],
+      "width": 725,
+      "height": 2170,
+      "sha256": "42faaa6cbf2474a39f8d0836399ff212813e8a3ca243653b351c420f789c938a",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 725,
+        "height": 2170
+      },
+      "sourceId": "04-the-descent",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "05-report-and-reward-corrected-window-01",
+      "art": "art/05-report-and-reward-corrected.png",
+      "description": "Third-floor guild dry desk Leon hears report, receives simple route sketch and sealed sample statement, then a modest copper-silver reward pouch for all three. Kou astonished, Row smiles, no arbitrary exact large numerical amounts.",
+      "dialogue": [
+        [
+          "レオン",
+          "未攻略区画を\n通したのか"
+        ],
+        [
+          "ロウ",
+          "この農夫が\n道を作った"
+        ],
+        [
+          "レオン",
+          "調査と突破の報酬だ"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 430,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/05-report-and-reward-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 738,
+      "height": 2129,
+      "sha256": "ee57d725691f23cc7ea50485208b267540b1fb4c674fb68f6b6a1c90ccfcf81a",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 738,
+        "height": 2129
+      },
+      "sourceId": "05-report-and-reward-corrected",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "06-the-store-is-open-corrected-window-01",
+      "art": "art/06-the-store-is-open-corrected.png",
+      "description": "Exterior reveal same blue-awning diner still operating, Elna serves ordinary customer and Balt sees party return from garden gate. Kou stops at entrance realizing work continued without him. No everyone waiting idle all day or farm magically enormous.",
+      "dialogue": [
+        [
+          "コウ",
+          "……開いてる"
+        ],
+        [
+          "バルト",
+          "当たり前だ\n任されたからな"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 350,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/06-the-store-is-open-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 728,
+      "height": 2159,
+      "sha256": "967192abac64a1e3801bda5f1d8533df63d8dbee6cf8434022f71af9761e6447",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 728,
+        "height": 2159
+      },
+      "sourceId": "06-the-store-is-open-corrected",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "07-welcome-back-corrected-window-01",
+      "art": "art/07-welcome-back-corrected.png",
+      "description": "Elna sets warm ceramic stew before Kou who sits tired but uninjured; closeup her genuine relief and his softened smile, Row and Sera take their own seats. Recipe same, unknown crop not in dinner.",
+      "dialogue": [
+        [
+          "エルナ",
+          "おかえり"
+        ],
+        [
+          "コウ",
+          "ただいま"
+        ],
+        [
+          "エルナ",
+          "まずは\n食べて"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 400,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/07-welcome-back-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "1c21285bed676c3820aaab37e5ef3da533f30a2832ae7d41be7914d753b7d168",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "07-welcome-back-corrected",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    },
+    {
+      "id": "08-the-story-over-food-corrected-window-01",
+      "art": "art/08-the-story-over-food-corrected.png",
+      "description": "Warm quiet dinner table after meal started Kou shows CLOSED paper sample packet at separate dry tabletop edge away from bowls, tells achievement rather than detailed mechanism; Elna proud, other party relaxed. Full safe return dinner as emotional payoff.",
+      "dialogue": [
+        [
+          "コウ",
+          "上で\n道を開けてきた"
+        ],
+        [
+          "エルナ",
+          "農夫の仕事で？"
+        ],
+        [
+          "コウ",
+          "ああ\nいつもの道具で"
+        ]
+      ],
+      "layout": "varied",
+      "pauseAt390": 520,
+      "scrollPurpose": "行動と反応をつなぎ成果を受け止める",
+      "prompt": "generation/08-the-story-over-food-corrected.prompt.txt",
+      "soundEffects": [],
+      "width": 724,
+      "height": 2172,
+      "sha256": "3d702818625718d8edf265da8a0e611fee5202578ce70c4832086322f3e58e33",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 2172
+      },
+      "sourceId": "08-the-story-over-food-corrected",
+      "canvasWidthPercent": 100,
+      "alignment": "center"
+    }
+  ]
+}

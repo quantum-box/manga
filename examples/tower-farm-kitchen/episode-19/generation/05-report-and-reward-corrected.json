@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-673b38aa-8ff7-4d08-9a12-2693cb9d3909.png",
+  "adopted": "art/05-report-and-reward-corrected.png",
+  "original_sha256": "ee57d725691f23cc7ea50485208b267540b1fb4c674fb68f6b6a1c90ccfcf81a",
+  "adopted_sha256": "ee57d725691f23cc7ea50485208b267540b1fb4c674fb68f6b6a1c90ccfcf81a",
+  "width": 738,
+  "height": 2129,
+  "prompt_file": "generation/05-report-and-reward-corrected.prompt.txt",
+  "prompt": "Replace the auburn-haired woman with blue headscarf/white apron in report desk panel and last panel with Sera from reference2 center: black low braid, teal cloak, dark tunic, wooden blue-stone staff held aside. Elna is NOT at this guild report. Keep Kou, Row (ochre cloak), silver-haired Leon and all exact dialogue, dry desk, shared modest coin pouch, panel composition. Sera stands quietly reporting with the other two, not serving food.",
+  "pixel_processing": "none",
+  "text_review": "passed_exact_dialogue_and_speakers",
+  "continuity_review": "passed_samples_return_reward_and_same_meal_cast",
+  "reference_files": [
+    {
+      "path": "generation/inputs/05-report-and-reward.png",
+      "sha256": "b90280e32828ae217b52d89e159816996154e01fd1072ecd01dd9ca60c6ba8e6",
+      "executed_filename": "05-report-and-reward.png"
+    },
+    {
+      "path": "../production/references/expedition.png",
+      "sha256": "e6b4fb674e571916fb249b22e5533d3a0967b01eda1c1a85d119eb9a00faa7a2",
+      "executed_filename": "expedition.png"
+    }
+  ]
+}

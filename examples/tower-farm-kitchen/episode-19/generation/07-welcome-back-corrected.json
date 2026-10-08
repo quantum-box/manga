@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen",
+  "source_filename": "exec-43a5e929-80d4-42a2-897e-c940e88e4416.png",
+  "adopted": "art/07-welcome-back-corrected.png",
+  "original_sha256": "1c21285bed676c3820aaab37e5ef3da533f30a2832ae7d41be7914d753b7d168",
+  "adopted_sha256": "1c21285bed676c3820aaab37e5ef3da533f30a2832ae7d41be7914d753b7d168",
+  "width": 724,
+  "height": 2172,
+  "prompt_file": "generation/07-welcome-back-corrected.prompt.txt",
+  "prompt": "Edit ONLY outdoor menu board in top establishment panel: remove pseudo-letters and replace with simple unlabeled chalk bowl-and-spoon illustration, no letters. Preserve all dialogue, people, food, bowl, layout and everything else.",
+  "pixel_processing": "none",
+  "text_review": "passed_exact_dialogue_and_speakers",
+  "continuity_review": "passed_samples_return_reward_and_same_meal_cast",
+  "reference_files": [
+    {
+      "path": "generation/inputs/07-welcome-back.png",
+      "sha256": "c0592af0a082b719f93248fe1da4f9cecf369f7a744b4949059f61632391fa96",
+      "executed_filename": "07-welcome-back.png"
+    }
+  ]
+}
