@@ -14,7 +14,7 @@
 
 ## この場面で使った列指定（過去の記録）
 
-以下は当時の原文。2026-10-07の追加指定により、今後の吹き出しなどの文字は句読点を使わず、意味の区切りで改行する。この表や参照画像の句読点を新しい原稿へコピーしない。
+以下は当時の原文で、表と参照画像には句読点が含まれる。過去の表記を新しい原稿へ機械的にコピーせず、疑問符や感嘆符は自然な問い、驚き、制止、強さを持つセリフへ使ってよい。全話で記号を無くす統一や毎文への付与はせず、表情、反応、間と合わせて声を設計する。
 
 |話者|セリフ全文|縦列の内容（右から左）|
 |---|---|---|
@@ -23,12 +23,12 @@
 
 ## 今後の列指定の例
 
-句読点を除き、改行を縦列の区切りとして全文に含める。たとえばレンのセリフは「レンだ」「無事なら」「それで」の3列にする。別のコマでは発話者と全文、意味に沿った列分けを変える。
+「、」「。」と文の区切りとしてのカンマ・ピリオドは使わず、改行を縦列の区切りとして全文に含める。疑問符や感嘆符など、問い・驚き・制止・強さ・間を伝える記号はセリフの意図に合わせて残してよく、毎文へ付けることはしない。たとえばレンのセリフは「レンだ」「無事なら」「それで」の3列にする。別のコマでは発話者と全文、意味に沿った列分けを変える。
 
 ```text
 Render the exact Japanese dialogue inside the speech balloons as part of the image.
 Use genuine vertical Japanese: upright glyphs, each column top-to-bottom, columns right-to-left.
-Do not add Japanese commas or full stops, or sentence-separating commas or periods. Use the supplied line breaks as vertical column breaks at meaningful phrase boundaries.
+Do not add Japanese commas or full stops, or sentence-separating commas or periods. Keep supplied question marks, exclamation marks, ellipses, or other marks when they express the speaker's question, surprise, stop, force, or pause. Use the supplied line breaks as vertical column breaks at meaningful phrase boundaries.
 Mira's exact dialogue:
 ありがとう
 私はミラ

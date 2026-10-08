@@ -1,0 +1,126 @@
+{
+  "schema": "webtoon-return-punctuation-fixes/v1",
+  "source": "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/name-preview/plan.json",
+  "sourcePolicy": "最終planへ適用済み。現在の列分けを保ち、縦書きには全角の？と！を用いた。",
+  "designBasis": {
+    "viewedExamples": [
+      "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/approved-vertical-lettering.png",
+      "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/zero-break/varied-01.png",
+      "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/zero-break/varied-02.png"
+    ],
+    "rationale": "既存の「、」「。」の省略方針を維持し、疑問符と感嘆符は自然な問い・驚き・制止・強い語気へ使う。記号だけで感情を代替しない。"
+  },
+  "changes": [
+    {
+      "id": "p14",
+      "type": "panel",
+      "texts": [
+        "手を\n離すな！"
+      ],
+      "reason": "救助中の即時制止。短い命令の切迫を示すが、絵の手の動きと反応を主な根拠にする。"
+    },
+    {
+      "id": "p18",
+      "type": "panel",
+      "texts": [
+        "君は\n怒っているか？"
+      ],
+      "reason": "レンがミナの感情を直接確かめる明確な問い。"
+    },
+    {
+      "id": "p21",
+      "type": "panel",
+      "texts": [
+        "痛みは\nありますか？"
+      ],
+      "reason": "ミナが治療対象の状態を尋ねる発話で、問いの終わりを読者に示す。"
+    },
+    {
+      "id": "p29",
+      "type": "panel",
+      "texts": [
+        "立たないで\nください！"
+      ],
+      "reason": "支柱が危うい場面での即時制止。ミナの普段の敬語を保ったまま緊急度を足す。"
+    },
+    {
+      "id": "p31",
+      "type": "panel",
+      "texts": [
+        "右腕は使わず\n左で支えて！"
+      ],
+      "reason": "負傷側を守りながら作業を続けるための強い作業指示。手の位置と動作を絵でも確認する。"
+    },
+    {
+      "id": "p35",
+      "type": "panel",
+      "texts": [
+        "離してください！\n作業を続けます"
+      ],
+      "reason": "触れられた距離を戻す制止だけに感嘆符を付け、続く冷静な手順の文は強調しない。"
+    },
+    {
+      "id": "p38",
+      "type": "panel",
+      "texts": [
+        "待っていたのか？"
+      ],
+      "reason": "レンがミナの待機を責めずに初めて直接確かめる問い。"
+    },
+    {
+      "id": "p42",
+      "type": "panel",
+      "texts": [
+        "次はどうする？"
+      ],
+      "reason": "レンが主導権を奪わず、ミナへ次の手順を尋ねる発話。"
+    },
+    {
+      "id": "p43",
+      "type": "panel",
+      "texts": [
+        "そのまま\n支えてください！"
+      ],
+      "reason": "共同作業中の手位置を崩さないための即時指示。p44の締める音へつなぐ。"
+    },
+    {
+      "id": "p48",
+      "type": "panel",
+      "texts": [
+        "助けを\n借りても\nいいか？",
+        "はい"
+      ],
+      "reason": "レンの弱さを頼みへ変えた問いだけを明示し、ミナの静かな受諾には記号を足さない。"
+    },
+    {
+      "id": "p52",
+      "type": "panel",
+      "texts": [
+        "本当は\n怖かった\nですか？"
+      ],
+      "reason": "ミナがレンの恐怖を手当てしながら直接尋ねる核心の問い。"
+    },
+    {
+      "id": "p60",
+      "type": "panel",
+      "texts": [
+        "いつまでに\n戻ればいい？"
+      ],
+      "reason": "抽象的な約束を実行可能な帰還時刻へ落とす確認の問い。"
+    }
+  ],
+  "unchangedQuietLines": [
+    "p50: 痛い",
+    "p55: 待つのは\n怖かった",
+    "voice-03: ただ\n戻って\nほしかった",
+    "p57: ここからは\n隠さないで",
+    "p59: 戻るために\n頼って\nください",
+    "voice-04: ……戻った"
+  ],
+  "count": {
+    "changedBeats": 12,
+    "questionMarksAdded": 7,
+    "exclamationMarksAdded": 5,
+    "voiceBeatsChanged": 0
+  }
+}

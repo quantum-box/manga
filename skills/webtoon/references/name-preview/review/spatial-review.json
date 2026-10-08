@@ -1,0 +1,321 @@
+{
+  "schema": "webtoon-spatial-review/v1",
+  "reviewedAt": "2026-10-08",
+  "status": "preview-unapproved-not-final-cg",
+  "scope": "Native composition windows at both widths plus continuous reader review; unapproved rough, not finished-art acceptance",
+  "currentFileIds": [
+    "390-c20",
+    "360-c20",
+    "390-c24",
+    "360-c24",
+    "390-c32",
+    "360-c32",
+    "390-c35",
+    "360-c35"
+  ],
+  "widths": [
+    390,
+    360
+  ],
+  "explicitVisualConfidence": "All35 native scene compositions reviewed at390/360; full360reader reviewed in51overlapping windows; selected390transition/action/response windows checked. User adoption and physical-device validation remain pending.",
+  "files": {
+    "390-c20": "composition-390-c20.png",
+    "360-c20": "composition-360-c20.png",
+    "390-c24": "composition-390-c24.png",
+    "360-c24": "composition-360-c24.png",
+    "390-c32": "composition-390-c32.png",
+    "360-c32": "composition-360-c32.png",
+    "390-c35": "composition-390-c35.png",
+    "360-c35": "composition-360-c35.png"
+  },
+  "confirmedIssueReview": [
+    {
+      "id": "p47-voice-left-margin",
+      "composition": "c20",
+      "widths": [
+        390,
+        360
+      ],
+      "result": "resolved",
+      "observation": "The exact Mina line is now a blue voice block in the left margin, outside the p47 image. Ren and Mina faces, both hands, and the treatment cloth remain visible; the three vertical columns fit at both widths.",
+      "visualConfidence": "high"
+    },
+    {
+      "id": "voice-03-left-margin",
+      "composition": "c24",
+      "widths": [
+        390,
+        360
+      ],
+      "result": "resolved",
+      "observation": "The Mina voice block is now in the left margin before the p56/p57 art. It no longer covers the treatment scene, faces, hands, or the bandage; all columns and the speaker label remain inside the viewport at both widths.",
+      "visualConfidence": "high"
+    },
+    {
+      "id": "voice-05-right-margin",
+      "composition": "c32",
+      "widths": [
+        390,
+        360
+      ],
+      "result": "resolved",
+      "observation": "The two-column week-later voice is fully visible in the right margin and does not cover p73 figures, faces, hands, or the p74 balloon.",
+      "visualConfidence": "high"
+    },
+    {
+      "id": "voice-04-between-p79-p80",
+      "composition": "c35",
+      "widths": [
+        390,
+        360
+      ],
+      "result": "resolved",
+      "observation": "The Mina voice is now below p79 and above p80 in intentional white space. It no longer overlays Mina or Ren; both p79 and p80 faces, hands, tag, and SFX remain readable.",
+      "visualConfidence": "high"
+    }
+  ],
+  "residualConcerns": [
+    {
+      "id": "p56-spoken-balloon-near-mina-face",
+      "result": "checked-in-final-continuous-windows",
+      "observation": "360px window-031/032 and390px window-032 retain Mina downward eye line and treatment hands. Balloon touches upper hair/forehead area but does not hide the reaction."
+    }
+  ],
+  "overall": "Spatial review completed for the rough preview. No confirmed unresolved reading-order, lettering, image-coverage or prop-continuity issue remains in the reviewed scope. This is an unapproved rough name, not finished CG acceptance.",
+  "rootContinuous390": {
+    "windows": [
+      "006",
+      "007",
+      "008",
+      "017",
+      "025",
+      "026",
+      "031",
+      "032",
+      "043",
+      "044",
+      "047",
+      "049",
+      "050"
+    ],
+    "result": "River cue and supporting inset, return-to-present before dialogue, rope/pole action, p47 left voice, p56 eyes, week-later label, evening tag sound and final exchange read in order. Text and acting retained. Other groups reviewed in native composition windows."
+  },
+  "fullContinuous360": {
+    "firstHalf": {
+      "range": [
+        "window-360-000.png",
+        "window-360-025.png"
+      ],
+      "result": "26 native windows checked; rain/arrival, past/present, water/pain, pole/role sequence and overlapping inset remain clear; no material defect found"
+    },
+    "secondHalf": {
+      "range": [
+        "window-360-026.png",
+        "window-360-050.png"
+      ],
+      "status": "checked",
+      "result": "25 native windows checked; p56 eyes and voice, week-later label, same-day evening, belt-to-hook tag continuity, dialogue and sounds remain readable"
+    }
+  },
+  "sourceArtBandReview": {
+    "registered": [
+      {
+        "panelId": "p10",
+        "rangeFraction": [
+          0,
+          0.07
+        ]
+      }
+    ],
+    "p77": "New hand/tag display window omits the formerly empty top source band",
+    "whiteBackground": "White around acting, rain, tent and supporting objects remains artwork"
+  },
+  "continuous360Details": {
+    "schema": "webtoon-spatial-review-continuous/v1",
+    "reviewedAt": "2026-10-08",
+    "status": "preview-unapproved-not-final-cg",
+    "scope": "Independent visual review of the 360 CSS px continuous native windows for the second half only; no plan or HTML edits.",
+    "viewport": {
+      "widthCssPx": 360,
+      "heightCssPx": 800,
+      "overlapPx": 150
+    },
+    "currentFileIds": [
+      "window-360-026",
+      "window-360-027",
+      "window-360-028",
+      "window-360-029",
+      "window-360-030",
+      "window-360-031",
+      "window-360-032",
+      "window-360-033",
+      "window-360-034",
+      "window-360-035",
+      "window-360-036",
+      "window-360-037",
+      "window-360-038",
+      "window-360-039",
+      "window-360-040",
+      "window-360-041",
+      "window-360-042",
+      "window-360-043",
+      "window-360-044",
+      "window-360-045",
+      "window-360-046",
+      "window-360-047",
+      "window-360-048",
+      "window-360-049",
+      "window-360-050"
+    ],
+    "reviewedRepositoryRelativeFiles": [
+      "skills/webtoon/references/name-preview/review/window-360-026.png",
+      "skills/webtoon/references/name-preview/review/window-360-027.png",
+      "skills/webtoon/references/name-preview/review/window-360-028.png",
+      "skills/webtoon/references/name-preview/review/window-360-029.png",
+      "skills/webtoon/references/name-preview/review/window-360-030.png",
+      "skills/webtoon/references/name-preview/review/window-360-031.png",
+      "skills/webtoon/references/name-preview/review/window-360-032.png",
+      "skills/webtoon/references/name-preview/review/window-360-033.png",
+      "skills/webtoon/references/name-preview/review/window-360-034.png",
+      "skills/webtoon/references/name-preview/review/window-360-035.png",
+      "skills/webtoon/references/name-preview/review/window-360-036.png",
+      "skills/webtoon/references/name-preview/review/window-360-037.png",
+      "skills/webtoon/references/name-preview/review/window-360-038.png",
+      "skills/webtoon/references/name-preview/review/window-360-039.png",
+      "skills/webtoon/references/name-preview/review/window-360-040.png",
+      "skills/webtoon/references/name-preview/review/window-360-041.png",
+      "skills/webtoon/references/name-preview/review/window-360-042.png",
+      "skills/webtoon/references/name-preview/review/window-360-043.png",
+      "skills/webtoon/references/name-preview/review/window-360-044.png",
+      "skills/webtoon/references/name-preview/review/window-360-045.png",
+      "skills/webtoon/references/name-preview/review/window-360-046.png",
+      "skills/webtoon/references/name-preview/review/window-360-047.png",
+      "skills/webtoon/references/name-preview/review/window-360-048.png",
+      "skills/webtoon/references/name-preview/review/window-360-049.png",
+      "skills/webtoon/references/name-preview/review/window-360-050.png"
+    ],
+    "explicitVisualConfidence": "high for the complete supplied window-026..050 sequence; this pass is native-window visual evidence and does not replace the 390px or first-half review.",
+    "findings": [
+      {
+        "id": "c24-p56-eyes-and-voice-03",
+        "result": "pass",
+        "windows": [
+          "window-360-031",
+          "window-360-032"
+        ],
+        "observation": "The p56 apology balloon leaves Mina's eye line readable in the continuous 360px view. voice-03 remains in the left margin and does not cover either face, treatment hands, or bandage. No residual confirmed face occlusion was found."
+      },
+      {
+        "id": "c32-week-later-label",
+        "result": "pass",
+        "windows": [
+          "window-360-043",
+          "window-360-044"
+        ],
+        "observation": "The right-margin label '同じ野営地／一週間後' is fully inside the 360px viewport, does not overlap p73, and clearly establishes the week-later morning before p74."
+      },
+      {
+        "id": "same-day-evening-transition",
+        "result": "pass",
+        "windows": [
+          "window-360-045",
+          "window-360-046",
+          "window-360-047"
+        ],
+        "observation": "The large white interval after p76 is not an unexplained blank: voice-06 '同じ野営地／同日夕方' is visibly placed in it before the p77 tag close-up. It reads as the documented morning-to-same-day-evening transition."
+      },
+      {
+        "id": "single-wooden-tag-continuity",
+        "result": "pass",
+        "windows": [
+          "window-360-035",
+          "window-360-036",
+          "window-360-037",
+          "window-360-038",
+          "window-360-043",
+          "window-360-044",
+          "window-360-047",
+          "window-360-048",
+          "window-360-049",
+          "window-360-050"
+        ],
+        "observation": "The tag is attached to Ren's belt during the week-later preparation, appears on the entrance hook at p77/p78, and remains the single return signal at p79/p80. No second tag or contradictory belt state is visible."
+      },
+      {
+        "id": "dialogue-sfx-and-reading-order",
+        "result": "pass",
+        "windows": [
+          "window-360-026",
+          "window-360-027",
+          "window-360-028",
+          "window-360-029",
+          "window-360-030",
+          "window-360-031",
+          "window-360-032",
+          "window-360-033",
+          "window-360-034",
+          "window-360-035",
+          "window-360-036",
+          "window-360-037",
+          "window-360-038",
+          "window-360-039",
+          "window-360-040",
+          "window-360-041",
+          "window-360-042",
+          "window-360-043",
+          "window-360-044",
+          "window-360-045",
+          "window-360-046",
+          "window-360-047",
+          "window-360-048",
+          "window-360-049",
+          "window-360-050"
+        ],
+        "observation": "Vertical Japanese remains upright and readable; right-to-left paired bubbles are ordered correctly; visible SFX stay near the associated action without covering faces or hands."
+      },
+      {
+        "id": "viewport-and-crop-safety",
+        "result": "pass",
+        "windows": [
+          "window-360-026",
+          "window-360-027",
+          "window-360-028",
+          "window-360-029",
+          "window-360-030",
+          "window-360-031",
+          "window-360-032",
+          "window-360-033",
+          "window-360-034",
+          "window-360-035",
+          "window-360-036",
+          "window-360-037",
+          "window-360-038",
+          "window-360-039",
+          "window-360-040",
+          "window-360-041",
+          "window-360-042",
+          "window-360-043",
+          "window-360-044",
+          "window-360-045",
+          "window-360-046",
+          "window-360-047",
+          "window-360-048",
+          "window-360-049",
+          "window-360-050"
+        ],
+        "observation": "No horizontal overflow, clipped speech, cropped important face/hand, broken image, or abrupt source-frame reveal was visible in the supplied continuous windows."
+      }
+    ],
+    "pacingAssessment": {
+      "result": "pass",
+      "observation": "The second half alternates treatment/reply density, the concrete tag procedure, the week-later transition, and the return confirmation. The documented large pause carries a time label and the smaller p77-to-p78 separation functions as a close-up-to-reaction beat rather than an unmarked page stack."
+    },
+    "remainingIssues": [],
+    "artifactConstraints": [
+      "This is an unapproved rough name preview, not finished CG or publication acceptance.",
+      "This JSON records the 360px second-half continuous review only; 390px and first-half evidence remain separate review scopes.",
+      "Native-window visual inspection does not establish physical-device, Safari, or user-adoption acceptance."
+    ],
+    "overall": "The supplied 360px window-026..050 sequence passes the requested second-half visual audit. The former p56 voice overlap is absent, the p56 eye line remains readable, time/week/evening markers are understandable, and the single wooden tag remains continuous through the return."
+  }
+}

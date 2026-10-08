@@ -1,0 +1,4148 @@
+{
+  "schema": "webtoon-name-sequence/v1",
+  "title": "帰還",
+  "kind": "full-episode-name",
+  "status": "draft-for-user-adoption",
+  "characters": {
+    "mina": {
+      "name": "ミナ",
+      "role": "healer",
+      "appearance": "light bob hair; white work clothes",
+      "emotionalRule": "worry is hidden behind cold polite Japanese until p55"
+    },
+    "ren": {
+      "name": "レン",
+      "role": "soldier",
+      "appearance": "short dark hair; dark clothes; wound on right forearm",
+      "emotionalRule": "pretends to be fine until he asks to borrow help at p48"
+    },
+    "incidentalRescue": "a boy shown only by a sleeve, hand, or silhouette in p13-p15; in p15 an off-screen villager with dark sleeves receives him; no named third cast member"
+  },
+  "core": "ミナが冷たい敬語で心配を隠し、レンが平気なふりをやめて手当てを受け、一個の木札を帯から入口のフックへ掛ける帰還行動で約束を具体化する。",
+  "format": {
+    "referenceWidthCssPx": 390,
+    "secondaryCheckWidthCssPx": 360,
+    "drawingSheets": 10,
+    "panelsPerSheet": 8,
+    "sheetLayout": "4 columns x 2 rows; each panel is an independent rough drawing; read right-to-left within each row",
+    "voiceAndPauseSeparateFromEffectivePanels": true,
+    "sourceArtPolicy": "画像生成は各panelのsceneDescriptionを使い、同じ瞬間の寄り引きで代用しない。"
+  },
+  "target": {
+    "plannedEffectiveCount": 80,
+    "allowedEffectiveCount": {
+      "min": 80,
+      "max": 120
+    },
+    "bodyHeight390CssPx": {
+      "min": 34000,
+      "max": 60000
+    },
+    "contentHeight390CssPxMin": 24000,
+    "measurementRule": "画像・フォント読み込み後の390 CSS px DOMで測定し、360 CSS pxは可読性と横はみ出しの確認に使う。時間換算は主値にしない。"
+  },
+  "plannedEffectiveCount": 80,
+  "plannedBodyHeight390CssPx": {
+    "min": 34000,
+    "max": 60000
+  },
+  "plannedContentHeight390CssPxMin": 24000,
+  "actual": {
+    "status": "measured-name-user-adoption-pending",
+    "record": "validation.json#episodeLength.actual",
+    "review": "validation.json#episodeLength.review"
+  },
+  "qualityReview": {
+    "quantity": "実描画80コマ、390/360pxでDOM計測済み。実量の正本はvalidation.json、未採用のネーム。",
+    "story": "入口・展開・山場・結果・満足と次接続をfivePhasesで対応済み。各重要台詞の後に反応を置いた。",
+    "padding": "同じ瞬間の寄り引きではなく、天候・発見・選択・結果・反応を増やした。純余白はauxiliaryBeatsに目的と前後の手掛かりを記録した。",
+    "acceptance": "ユーザーがネームを採用するまで本作画・公開へ進めない。"
+  },
+  "fivePhases": [
+    {
+      "id": "entrance",
+      "label": "入口",
+      "groupIds": [
+        "group-01",
+        "group-02"
+      ],
+      "panelRange": [
+        "p01",
+        "p16"
+      ],
+      "function": "雨の予告、待つミナ、遅れて戻るレン、右前腕の傷、レンが少年を匿名村人へ渡して安全を確認した救助理由を置く。",
+      "exitQuestion": "レンはなぜ遅れ、ミナは何を手当てしようとするのか"
+    },
+    {
+      "id": "development",
+      "label": "展開",
+      "groupIds": [
+        "group-03",
+        "group-04",
+        "group-05",
+        "group-06"
+      ],
+      "panelRange": [
+        "p17",
+        "p48"
+      ],
+      "function": "治療、雨漏り、支柱、役割分担を因果でつなぎ、隠していた心配を本音の入口へ運ぶ。",
+      "exitQuestion": "二人は無理を隠す関係から助けを頼む関係へ移れるか"
+    },
+    {
+      "id": "climax",
+      "label": "山場",
+      "groupIds": [
+        "group-07",
+        "group-08"
+      ],
+      "panelRange": [
+        "p49",
+        "p64"
+      ],
+      "function": "痛みと帰還不能の恐怖を往復させ、包帯と一個の木札を帯に携帯する準備で約束を行動へ変える。",
+      "exitQuestion": "抽象的な約束を、二人が確認できる行動にできるか"
+    },
+    {
+      "id": "result",
+      "label": "結果",
+      "groupIds": [
+        "group-09"
+      ],
+      "panelRange": [
+        "p65",
+        "p72"
+      ],
+      "function": "天幕の修復、休息、道・時刻の確認、帯の木札を帰還時に空の入口フックへ掛ける手順、次の巡回の準備を見せる。",
+      "exitQuestion": "待つ側も帰る側も、次の帰還を支える具体策を持てたか"
+    },
+    {
+      "id": "satisfaction",
+      "label": "満足・次への接続",
+      "groupIds": [
+        "group-10"
+      ],
+      "panelRange": [
+        "p73",
+        "p80"
+      ],
+      "function": "一週間後の晴れた朝に出発し、同日夕方に木札をフックへ掛け、ミナが合図を受けて迎えに出る。",
+      "exitQuestion": "今回の約束が次の巡回でも使える行動として残ったか"
+    }
+  ],
+  "groups": [
+    {
+      "id": "group-01",
+      "sheet": 1,
+      "title": "雨を待つ天幕",
+      "phaseId": "entrance",
+      "phaseLabel": "入口",
+      "panelIds": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06",
+        "p07",
+        "p08"
+      ],
+      "generationLayout": {
+        "columns": 4,
+        "rows": 2,
+        "readingOrder": "right-to-left within each row, then top to bottom",
+        "sourceArt": "one independent rough drawing per panel"
+      },
+      "purpose": "雨雲と空席を先に置き、帰還の安堵より怪我への心配を先行させる。",
+      "newUnderstanding": "各カットで一つの新しい事実・感情・選択を増やし、同じ瞬間の寄り引きで水増ししない。",
+      "nextConnection": "手当ての要求と平気なふりの食い違いを、血の一滴で次へ渡す。"
+    },
+    {
+      "id": "group-02",
+      "sheet": 2,
+      "title": "遅れた理由",
+      "phaseId": "entrance",
+      "phaseLabel": "入口から展開",
+      "panelIds": [
+        "p09",
+        "p10",
+        "p11",
+        "p12",
+        "p13",
+        "p14",
+        "p15",
+        "p16"
+      ],
+      "generationLayout": {
+        "columns": 4,
+        "rows": 2,
+        "readingOrder": "right-to-left within each row, then top to bottom",
+        "sourceArt": "one independent rough drawing per panel"
+      },
+      "purpose": "川での救助を短い回想にし、レンが少年を岸の匿名村人へ渡して安全を確認したため遅れたことと右前腕の傷を因果で理解させる。",
+      "newUnderstanding": "各カットで一つの新しい事実・感情・選択を増やし、同じ瞬間の寄り引きで水増ししない。",
+      "nextConnection": "理由を知ったミナが、それでも現在の治療を選ぶ。"
+    },
+    {
+      "id": "group-03",
+      "sheet": 3,
+      "title": "手当ての距離",
+      "phaseId": "development",
+      "phaseLabel": "展開",
+      "panelIds": [
+        "p17",
+        "p18",
+        "p19",
+        "p20",
+        "p21",
+        "p22",
+        "p23",
+        "p24"
+      ],
+      "generationLayout": {
+        "columns": 4,
+        "rows": 2,
+        "readingOrder": "right-to-left within each row, then top to bottom",
+        "sourceArt": "one independent rough drawing per panel"
+      },
+      "purpose": "手を伸ばす、痛がる、隠すという反応を積み重ね、雨漏りを次の障害にする。",
+      "newUnderstanding": "各カットで一つの新しい事実・感情・選択を増やし、同じ瞬間の寄り引きで水増ししない。",
+      "nextConnection": "共有された異変が天幕の不調を発見させる。"
+    },
+    {
+      "id": "group-04",
+      "sheet": 4,
+      "title": "支柱が倒れる",
+      "phaseId": "development",
+      "phaseLabel": "展開",
+      "panelIds": [
+        "p25",
+        "p26",
+        "p27",
+        "p28",
+        "p29",
+        "p30",
+        "p31",
+        "p32"
+      ],
+      "generationLayout": {
+        "columns": 4,
+        "rows": 2,
+        "readingOrder": "right-to-left within each row, then top to bottom",
+        "sourceArt": "one independent rough drawing per panel"
+      },
+      "purpose": "雨漏りの原因を支柱の結び目まで具体化し、レンの無理をミナが止めて役割を渡す。",
+      "newUnderstanding": "各カットで一つの新しい事実・感情・選択を増やし、同じ瞬間の寄り引きで水増ししない。",
+      "nextConnection": "二人で支える作業に入り、隠していた心配が漏れる。"
+    },
+    {
+      "id": "group-05",
+      "sheet": 5,
+      "title": "待たせたくない",
+      "phaseId": "development",
+      "phaseLabel": "展開の転換",
+      "panelIds": [
+        "p33",
+        "p34",
+        "p35",
+        "p36",
+        "p37",
+        "p38",
+        "p39",
+        "p40"
+      ],
+      "generationLayout": {
+        "columns": 4,
+        "rows": 2,
+        "readingOrder": "right-to-left within each row, then top to bottom",
+        "sourceArt": "one independent rough drawing per panel"
+      },
+      "purpose": "同じロープを持つ作業中にミナの待ち時間とレンの本音を初めて往復させる。",
+      "newUnderstanding": "各カットで一つの新しい事実・感情・選択を増やし、同じ瞬間の寄り引きで水増ししない。",
+      "nextConnection": "告白の後、二人が役割を再調整する。"
+    },
+    {
+      "id": "group-06",
+      "sheet": 6,
+      "title": "二人で持つ",
+      "phaseId": "development",
+      "phaseLabel": "展開から山場前",
+      "panelIds": [
+        "p41",
+        "p42",
+        "p43",
+        "p44",
+        "p45",
+        "p46",
+        "p47",
+        "p48"
+      ],
+      "generationLayout": {
+        "columns": 4,
+        "rows": 2,
+        "readingOrder": "right-to-left within each row, then top to bottom",
+        "sourceArt": "one independent rough drawing per panel"
+      },
+      "purpose": "本音を聞いた後の沈黙、作業の成功、傷の原因の共有、助けを借りる決断を別々に描く。",
+      "newUnderstanding": "各カットで一つの新しい事実・感情・選択を増やし、同じ瞬間の寄り引きで水増ししない。",
+      "nextConnection": "治療を再開し、帰還理由の核心を問える状態にする。"
+    },
+    {
+      "id": "group-07",
+      "sheet": 7,
+      "title": "平気のふりの返し",
+      "phaseId": "climax",
+      "phaseLabel": "山場",
+      "panelIds": [
+        "p49",
+        "p50",
+        "p51",
+        "p52",
+        "p53",
+        "p54",
+        "p55",
+        "p56"
+      ],
+      "generationLayout": {
+        "columns": 4,
+        "rows": 2,
+        "readingOrder": "right-to-left within each row, then top to bottom",
+        "sourceArt": "one independent rough drawing per panel"
+      },
+      "purpose": "痛み、戻れない恐怖、待つ恐怖を一方通行にせず、聞き手の反応を独立カットで置く。",
+      "newUnderstanding": "各カットで一つの新しい事実・感情・選択を増やし、同じ瞬間の寄り引きで水増ししない。",
+      "nextConnection": "謝罪を抽象語で終えず、帰還条件へ変える。"
+    },
+    {
+      "id": "group-08",
+      "sheet": 8,
+      "title": "包帯を結ぶ",
+      "phaseId": "climax",
+      "phaseLabel": "山場から結果",
+      "panelIds": [
+        "p57",
+        "p58",
+        "p59",
+        "p60",
+        "p61",
+        "p62",
+        "p63",
+        "p64"
+      ],
+      "generationLayout": {
+        "columns": 4,
+        "rows": 2,
+        "readingOrder": "right-to-left within each row, then top to bottom",
+        "sourceArt": "one independent rough drawing per panel"
+      },
+      "purpose": "約束の時刻を選び、一個の木札を巡回中は帯に携帯し、帰還時に入口のフックへ掛ける行動まで見せる。",
+      "newUnderstanding": "各カットで一つの新しい事実・感情・選択を増やし、同じ瞬間の寄り引きで水増ししない。",
+      "nextConnection": "修復結果と待つ側の準備へ移る。"
+    },
+    {
+      "id": "group-09",
+      "sheet": 9,
+      "title": "待つ側の手を動かす",
+      "phaseId": "result",
+      "phaseLabel": "結果",
+      "panelIds": [
+        "p65",
+        "p66",
+        "p67",
+        "p68",
+        "p69",
+        "p70",
+        "p71",
+        "p72"
+      ],
+      "generationLayout": {
+        "columns": 4,
+        "rows": 2,
+        "readingOrder": "right-to-left within each row, then top to bottom",
+        "sourceArt": "one independent rough drawing per panel"
+      },
+      "purpose": "天幕の修復、休息、道の確認、帯の木札から空のフックへ掛ける手順の確認、飲み物で危機後の身体と関係を回復させる。",
+      "newUnderstanding": "各カットで一つの新しい事実・感情・選択を増やし、同じ瞬間の寄り引きで水増ししない。",
+      "nextConnection": "決めた合図が実際に使われる時間へ進む。"
+    },
+    {
+      "id": "group-10",
+      "sheet": 10,
+      "title": "戻ったという行動",
+      "phaseId": "satisfaction",
+      "phaseLabel": "満足と次への接続",
+      "panelIds": [
+        "p73",
+        "p74",
+        "p75",
+        "p76",
+        "p77",
+        "p78",
+        "p79",
+        "p80"
+      ],
+      "generationLayout": {
+        "columns": 4,
+        "rows": 2,
+        "readingOrder": "right-to-left within each row, then top to bottom",
+        "sourceArt": "one independent rough drawing per panel"
+      },
+      "purpose": "一週間後の晴れた朝に出発し、同日夕方に帯の一個の木札を入口のフックへ掛け、予定内の帰還を実際の行動で示す。",
+      "newUnderstanding": "各カットで一つの新しい事実・感情・選択を増やし、同じ瞬間の寄り引きで水増ししない。",
+      "nextConnection": "共有した巡回路と合図が次回の入口になる。"
+    }
+  ],
+  "panels": [
+    {
+      "id": "p01",
+      "group": "group-01",
+      "readingIndex": 1,
+      "sceneDescription": "Wide dusk exterior of a canvas treatment tent. Mina in a white work coat stands on the right beneath the awning, an empty path receding on the left, heavy rain clouds gathering beyond.",
+      "newUnderstanding": "帰還する場所が先に提示され、雨が近いこととミナが待っていることが同時に分かる。",
+      "dialogue": [],
+      "sound": {
+        "words": "ゴロ…",
+        "source": "distant thunder beyond the tent",
+        "noSoundReason": null
+      },
+      "emotionIntention": "ミナは帰路を見張りながら平静な仕事の姿勢を保とうとする。",
+      "reaction": "まだ誰も来ない空間そのものが待ち時間を受け止める。",
+      "nextConnection": "次の空模様の変化で、待つ側の焦りを一段だけ増やす。",
+      "widthPercent": 100,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 170,
+        "gapReason": "雨の予告を読者が受け取るための入口の間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c01",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p02",
+      "group": "group-01",
+      "readingIndex": 2,
+      "sceneDescription": "Medium view of Mina on the right checking a small lantern and the darkening sky, her light bob hair lifted by damp wind, the empty path still visible over her shoulder.",
+      "newUnderstanding": "ミナは帰還を待つだけでなく、戻れる場所を整えている。",
+      "dialogue": [
+        {
+          "key": "p02-d01",
+          "speaker": "ミナ",
+          "text": "雨が\n来ますね"
+        }
+      ],
+      "sound": {
+        "words": "ヒュウ…",
+        "source": "wind through the canvas edge",
+        "noSoundReason": null
+      },
+      "emotionIntention": "心配を天候の確認へ置き換え、声を冷静な報告にする。",
+      "reaction": "自分の声が思ったより硬いことをミナ自身が感じる。",
+      "nextConnection": "天幕の外をもう一度見る動作が、帰路の不在を強調する。",
+      "widthPercent": 40,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 84,
+        "gapReason": "天候の情報を置いた後に人物の心へ移る間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c01",
+        "offsetX": 60,
+        "offsetY": 560,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p03",
+      "group": "group-01",
+      "readingIndex": 3,
+      "sceneDescription": "Close view of Mina facing left toward the path. She holds a folded dry cloth against her chest with one tense hand while her expression stays professionally blank.",
+      "newUnderstanding": "待っている時間がミナの手の力に出ているが、言葉は冷たいまま保たれる。",
+      "dialogue": [
+        {
+          "key": "p03-d01",
+          "speaker": "ミナ",
+          "text": "遅い\nですね"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "止まった手の緊張を読ませるため、音を置かない。"
+      },
+      "emotionIntention": "遅れへの不安を責める形に変えて隠す。",
+      "reaction": "自分で発した冷たい言い方に、ミナの視線が一瞬だけ下がる。",
+      "nextConnection": "左奥からの足音が、待ち時間を現実の到着へ切り替える。",
+      "widthPercent": 48,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 110,
+        "gapReason": "冷たい台詞の後に到着音を受けるための呼吸"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c02",
+        "offsetX": 52,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p04",
+      "group": "group-01",
+      "readingIndex": 4,
+      "sceneDescription": "Long shot from inside the awning: Ren enters from the left along the wet path, short dark hair plastered by rain, dark soldier clothing, his right forearm guarded against his body.",
+      "newUnderstanding": "レンが遅れて帰還したが、右前腕を守る姿勢が無事ではないことを先に知らせる。",
+      "dialogue": [],
+      "sound": {
+        "words": "ザッ…",
+        "source": "Ren's wet boots on gravel",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは帰ってきた姿を見せればミナを安心させられると思い、痛みを隠す。",
+      "reaction": "ミナの体が足音へ向くが、すぐに仕事の姿勢へ戻る。",
+      "nextConnection": "到着を受けたミナの正式な挨拶へつなぐ。",
+      "widthPercent": 85,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 58,
+        "gapReason": "足音が止まり人物を見つけるための短い間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c02",
+        "offsetX": 0,
+        "offsetY": 390,
+        "frame": "thin",
+        "crop": [
+          0.003,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p05",
+      "group": "group-01",
+      "readingIndex": 5,
+      "sceneDescription": "Two-shot under the awning. Mina on the right straightens with a controlled face; Ren on the left stops just outside the dry area and avoids showing his arm.",
+      "newUnderstanding": "二人が再会したのに、先に出るのは感情ではなく形式的な挨拶である。",
+      "dialogue": [
+        {
+          "key": "p05-d01",
+          "speaker": "ミナ",
+          "text": "お帰り\nなさい\nレンさん"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "挨拶の硬さと濡れた衣服の重さを対比する。"
+      },
+      "emotionIntention": "ミナは喜びを丁寧語に押し込め、レンはその硬さを心配の裏返しとまだ読まない。",
+      "reaction": "レンの目がミナを見てから、右腕へ逃げる。",
+      "nextConnection": "レンの帰還の返事と、濡れた腕の発見へ進む。",
+      "widthPercent": 48,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 60,
+        "gapReason": "挨拶を一度受け止めて返事を待つ間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c03",
+        "offsetX": 52,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.753,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p06",
+      "group": "group-01",
+      "readingIndex": 6,
+      "sceneDescription": "Medium two-shot. Ren gives a small formal bow on the left while keeping his injured right forearm behind his coat; Mina watches the hidden shoulder rather than his face.",
+      "newUnderstanding": "レンも形式で平気を装い、隠した腕が会話の本体になっている。",
+      "dialogue": [
+        {
+          "key": "p06-d01",
+          "speaker": "レン",
+          "text": "ただいま\n戻った"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "二人の衣服から落ちる水滴以外は無音にする。"
+      },
+      "emotionIntention": "帰還の報告を済ませ、すぐ腕を隠して話を終わらせたい。",
+      "reaction": "ミナは返事を聞いても姿勢を解かず、腕の位置を見続ける。",
+      "nextConnection": "一滴の血が床へ落ち、言葉の平気さを崩す。",
+      "widthPercent": 48,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 68,
+        "gapReason": "形式の返事と次の物理的証拠を分ける間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c03",
+        "offsetX": 0,
+        "offsetY": 28,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p07",
+      "group": "group-01",
+      "readingIndex": 7,
+      "sceneDescription": "Low close-up on the damp floor between them. A red drop falls from the edge of Ren's right sleeve onto the wood while both pairs of boots are visible at opposite sides.",
+      "newUnderstanding": "レンの台詞より先に、傷が隠しきれない証拠として現れる。",
+      "dialogue": [],
+      "sound": {
+        "words": "ポタ…",
+        "source": "blood falling from the sleeve",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは音に気づき、隠す努力が破れたことを悟る。",
+      "reaction": "ミナの白い袖が一歩だけ前へ出る。",
+      "nextConnection": "ミナが腕を見せるよう正式に求める。",
+      "widthPercent": 35,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 92,
+        "gapReason": "血の一滴を読者が確認するための無音に近い間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c03",
+        "offsetX": 35,
+        "offsetY": 350,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.61,
+          0.224,
+          0.28
+        ]
+      }
+    },
+    {
+      "id": "p08",
+      "group": "group-01",
+      "readingIndex": 8,
+      "sceneDescription": "Tight two-shot at the awning edge. Mina on the right extends a basin with both hands; Ren on the left keeps his right arm tucked back, his mouth set in a practiced calm.",
+      "newUnderstanding": "ミナは心配を直接言わず手当てを命じ、レンはまだ受け入れ切れない。",
+      "dialogue": [
+        {
+          "key": "p08-d01",
+          "speaker": "ミナ",
+          "text": "その腕を\n見せて\nください"
+        },
+        {
+          "key": "p08-d02",
+          "speaker": "レン",
+          "text": "問題ない"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "二つの短い声の間を広く取り、返答の食い違いを見せる。"
+      },
+      "emotionIntention": "ミナは選択肢を渡すように言いながら、実際には手当てを始めたい。レンは心配を増やさないため拒む。",
+      "reaction": "ミナの手が引かず、レンの肩だけが固くなる。",
+      "nextConnection": "拒否の理由をほどくため、ミナが器具を整える。",
+      "widthPercent": 82,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 120,
+        "gapReason": "食い違う台詞を次の動作へ渡す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c04",
+        "offsetX": 18,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p09",
+      "group": "group-02",
+      "readingIndex": 1,
+      "sceneDescription": "Inside the tent. Mina places a basin and folded cloth on a low table at the right while Ren remains standing on the left, rain darkening the hem of his coat.",
+      "newUnderstanding": "ミナはレンの返答を待たず手当ての環境を作り、レンは立ったまま逃げ道を残す。",
+      "dialogue": [],
+      "sound": {
+        "words": "カタン",
+        "source": "basin set on the table",
+        "noSoundReason": null
+      },
+      "emotionIntention": "ミナは心配を作業手順へ変える。レンは座れば怪我が明らかになると思う。",
+      "reaction": "レンの足が椅子へ向きかけて止まる。",
+      "nextConnection": "止まった足に対して、レンが傷を軽く見せようとする。",
+      "widthPercent": 70,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 72,
+        "gapReason": "場所が同じ天幕内だと読める短い動作の間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c04",
+        "offsetX": 30,
+        "offsetY": 470,
+        "frame": "thin",
+        "crop": [
+          0.753,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p10",
+      "group": "group-02",
+      "readingIndex": 2,
+      "sceneDescription": "Ren on the left turns his body three-quarters away and lifts his uninjured hand as if dismissing the matter; the wrapped right forearm disappears behind his dark coat.",
+      "newUnderstanding": "レンは傷の程度を小さく言い、身体の向きで隠し通そうとする。",
+      "dialogue": [
+        {
+          "key": "p10-d01",
+          "speaker": "レン",
+          "text": "少し擦った\nだけだ"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "強がりの内容より、腕を隠す向きを読むための無音。"
+      },
+      "emotionIntention": "大事にしたくないという意図で説明を短く切る。",
+      "reaction": "ミナは顔ではなく包帯の端を見て、説明を信用しない。",
+      "nextConnection": "包帯に残った泥と濡れた繊維が、川の事情を示す。",
+      "widthPercent": 50,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 80,
+        "gapReason": "台詞の後に視線が移る小さな間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c05",
+        "offsetX": 50,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p11",
+      "group": "group-02",
+      "readingIndex": 3,
+      "sceneDescription": "Close-up on Mina's eyes and the muddy seam of Ren's makeshift wrap at the left edge. Her face is composed, but her gaze is exact and unblinking.",
+      "newUnderstanding": "ミナは傷の説明と隠し方の矛盾を読み、怒りではなく確認の言葉を選ぶ。",
+      "dialogue": [
+        {
+          "key": "p11-d01",
+          "speaker": "ミナ",
+          "text": "擦過傷なら\n隠しませんね"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "視線の圧力を保つため効果音なし。"
+      },
+      "emotionIntention": "責めたい気持ちを冷たい敬語の観察へ変える。",
+      "reaction": "レンの指が包帯の端を押さえ、見抜かれたと知る。",
+      "nextConnection": "その指の震えが、傷の原因を過去へ開く。",
+      "widthPercent": 50,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 90,
+        "gapReason": "観察の言葉を受けて身体反応へ移る間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c05",
+        "offsetX": 0,
+        "offsetY": 28,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p12",
+      "group": "group-02",
+      "readingIndex": 4,
+      "sceneDescription": "Detail of Ren's wet sleeve and trembling fingers. Mud, river grass, and a fresh cut show that the injury happened outdoors, not during an ordinary patrol.",
+      "newUnderstanding": "傷は川辺でできた可能性が高く、レンがまだ核心を話していない。",
+      "dialogue": [],
+      "sound": {
+        "words": "サラ…",
+        "source": "wet cloth sliding against the wrap",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは川での出来事を思い出し、ミナへ説明すべきだと迷う。",
+      "reaction": "ミナの手が洗浄布を取る前に止まり、答えを待つ。",
+      "nextConnection": "現在の視線を短い過去カットへ切り替える。",
+      "widthPercent": 55,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 190,
+        "gapReason": "回想へ入るため、現在の手を固定する間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c05",
+        "offsetX": 45,
+        "offsetY": 390,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p13",
+      "group": "group-02",
+      "readingIndex": 5,
+      "sceneDescription": "Flashback wide view of a swollen river under rain. Ren reaches from a rocky bank on the left while only a small boy's sleeve and hand break the water surface; the boy's face is not shown.",
+      "newUnderstanding": "レンが遅れた理由は、川で流されかけた少年を見捨てなかったことだと分かる。",
+      "dialogue": [],
+      "sound": {
+        "words": "ゴウッ",
+        "source": "river current and rain in memory",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは自分が濡れることより、目の前の小さな手を取ることを優先した。",
+      "reaction": "レンの手が小さな袖へ届き、川の流れから岸へ向きを変える。",
+      "nextConnection": "レンの救助動作を一つの決断として見せる。",
+      "widthPercent": 86,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 120,
+        "gapReason": "回想の入口を現実から切り離すための深い間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c06",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p14",
+      "group": "group-02",
+      "readingIndex": 6,
+      "sceneDescription": "Flashback medium close-up. Ren's left hand grips the boy's sleeve above the current while broken river debris cuts across Ren's right forearm; his face is strained but focused.",
+      "newUnderstanding": "右前腕の傷は救助の途中で負ったものだと具体化する。",
+      "dialogue": [
+        {
+          "key": "p14-d01",
+          "speaker": "レン",
+          "text": "手を\n離すな！"
+        }
+      ],
+      "sound": {
+        "words": "ザクッ",
+        "source": "debris scraping the forearm",
+        "noSoundReason": null
+      },
+      "emotionIntention": "恐怖を見せる暇なく、相手に生きる動作を命じる。",
+      "reaction": "少年の手が袖を強く握り返す。",
+      "nextConnection": "岸の匿名村人へ少年を渡し、安全を確かめる動作へ進む。",
+      "widthPercent": 44,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 68,
+        "gapReason": "危険の原因とレンの選択を一続きで読ませる間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c06",
+        "offsetX": 56,
+        "offsetY": 250,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p15",
+      "group": "group-02",
+      "readingIndex": 7,
+      "sceneDescription": "Flashback from the riverbank. Ren pulls the boy toward shore with his left arm and passes him toward an off-screen villager whose dark-sleeved hands enter from the right; only the boy’s wet sleeve is visible, with no other named character in frame.",
+      "newUnderstanding": "レンは少年を岸の匿名村人へ渡し、安全を確認してから戻ったため遅れた。",
+      "dialogue": [],
+      "sound": {
+        "words": "ギリ…",
+        "source": "rescue rope under tension",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは自分が戻ることより先に、少年が安全な手へ渡るまでをやり切る。",
+      "reaction": "暗い袖の匿名村人の手が少年を受け取り、レンは空いた手と岸の安全を確認する。",
+      "nextConnection": "救助の結果を短い台詞で現在へ持ち帰る。",
+      "widthPercent": 88,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 92,
+        "gapReason": "救助の完了を見届けて現在へ戻す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c06",
+        "offsetX": 0,
+        "offsetY": 560,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p16",
+      "group": "group-02",
+      "readingIndex": 8,
+      "sceneDescription": "Back inside the tent. Ren lowers his eyes on the left; Mina on the right holds the clean cloth but has softened her stare, the river memory now sitting between them.",
+      "newUnderstanding": "遅れは任務放棄ではなく救助の結果だったと理解されるが、傷の手当てはまだ必要である。",
+      "dialogue": [
+        {
+          "key": "p16-d01",
+          "speaker": "レン",
+          "text": "子どもが\n流されていた"
+        },
+        {
+          "key": "p16-d02",
+          "speaker": "ミナ",
+          "text": "それで\n遅れたのですね"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "理解が成立する静かな返しとして音を置かない。"
+      },
+      "emotionIntention": "レンは言い訳ではなく事実だけを返し、ミナは責める言葉を選ばない。",
+      "reaction": "ミナの布がレンの腕の下へ入り、手当てを始める。",
+      "nextConnection": "治療の物理的な接触へ接続する。",
+      "widthPercent": 82,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 140,
+        "gapReason": "回想の意味を現在の二人が受け取る間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c07",
+        "offsetX": 0,
+        "offsetY": 210,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p17",
+      "group": "group-03",
+      "readingIndex": 1,
+      "sceneDescription": "Mina gestures to the low seat on the right without touching Ren; Ren stands at left with his injured arm held close, now less defensive but still reluctant.",
+      "newUnderstanding": "ミナは理由を理解しても、まず治療を受けるという現在の選択を求める。",
+      "dialogue": [
+        {
+          "key": "p17-d01",
+          "speaker": "ミナ",
+          "text": "座って\nください\n今度は\n私の番です"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "命令の形にした気遣いを残すため無音。"
+      },
+      "emotionIntention": "ミナは感謝や心配を言わず役割を引き受ける。",
+      "reaction": "レンは一拍置いて椅子へ腰を下ろす。",
+      "nextConnection": "座ったことで、レンが腕を差し出す準備へ進む。",
+      "widthPercent": 82,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 86,
+        "gapReason": "立つ側が座る決断を読ませる間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c08",
+        "offsetX": 0,
+        "offsetY": 190,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p18",
+      "group": "group-03",
+      "readingIndex": 2,
+      "sceneDescription": "Ren sits on the left and slowly extends his right forearm across the small table. He looks toward Mina but keeps his jaw tight, waiting for her judgment.",
+      "newUnderstanding": "レンは初めて自分から負傷した腕を治療の範囲へ置く。",
+      "dialogue": [
+        {
+          "key": "p18-d01",
+          "speaker": "レン",
+          "text": "君は\n怒っているか？"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "二人の視線がぶつかるため音を足さない。"
+      },
+      "emotionIntention": "レンは傷よりも、待たせたミナの気持ちを確かめたい。",
+      "reaction": "ミナはすぐ答えず、水を準備する方へ目を逸らす。",
+      "nextConnection": "水を注ぐ音で、感情の返答を手順へ遅らせる。",
+      "widthPercent": 90,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 90,
+        "gapReason": "質問を受け止めてすぐ答えない間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c09",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p19",
+      "group": "group-03",
+      "readingIndex": 3,
+      "sceneDescription": "Mina pours clean water into the basin on the right while Ren's extended arm remains in the foreground on the left; her eyes stay lowered to the work.",
+      "newUnderstanding": "ミナは怒りの有無を直接答えず、手当てを始めることで関係を切らない。",
+      "dialogue": [],
+      "sound": {
+        "words": "トク…",
+        "source": "water poured into the basin",
+        "noSoundReason": null
+      },
+      "emotionIntention": "返答を急がず、正確な作業に心を逃がす。",
+      "reaction": "レンは彼女が治療を止めないことを確認し、腕を引かない。",
+      "nextConnection": "布が傷へ触れる瞬間に痛みが現れる。",
+      "widthPercent": 45,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 56,
+        "gapReason": "水音から接触へ連続する短い間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c09",
+        "offsetX": 55,
+        "offsetY": 330,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.295,
+          0.224,
+          0.187
+        ]
+      }
+    },
+    {
+      "id": "p20",
+      "group": "group-03",
+      "readingIndex": 4,
+      "sceneDescription": "Close view of Mina's cloth touching the edge of Ren's wound. Ren's fingers curl against the table and his shoulders jerk once, while Mina's hand stops before pressing further.",
+      "newUnderstanding": "痛みは隠しきれず、ミナは反応を見て力加減を変える。",
+      "dialogue": [],
+      "sound": {
+        "words": "ピクッ",
+        "source": "cloth and breath, shown as a small sound mark",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは平気を言う前に反射的に痛がる。ミナは責めずに観察する。",
+      "reaction": "ミナの指が一度浮き、レンの顔を確認する。",
+      "nextConnection": "痛みを問う冷たい敬語へつなぐ。",
+      "widthPercent": 90,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 74,
+        "gapReason": "反射反応を読者が見分ける間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c09",
+        "offsetX": 0,
+        "offsetY": 530,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p21",
+      "group": "group-03",
+      "readingIndex": 5,
+      "sceneDescription": "Two-shot close. Mina on the right keeps the cloth poised over the wound; Ren on the left looks away, trying to recover his composed face.",
+      "newUnderstanding": "ミナは痛みを尋ねるが、心配ではなく診療の質問として発する。",
+      "dialogue": [
+        {
+          "key": "p21-d01",
+          "speaker": "ミナ",
+          "text": "痛みは\nありますか？"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "問いの冷静さを保つため無音。"
+      },
+      "emotionIntention": "ミナは正直な反応を引き出したい。レンは答えを小さくすれば治療を続けられると思う。",
+      "reaction": "レンの目が傷へ落ち、答えを選ぶ。",
+      "nextConnection": "平気という返答と指の力を同じカットに置く。",
+      "widthPercent": 52,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 66,
+        "gapReason": "問いから返事までを短く保つ間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c10",
+        "offsetX": 48,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.753,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p22",
+      "group": "group-03",
+      "readingIndex": 6,
+      "sceneDescription": "Ren answers from the left with a controlled mouth, but his knuckles whiten around the table edge and his right forearm stays rigid under Mina's cloth.",
+      "newUnderstanding": "言葉は平気でも、手の力が痛みを証言している。",
+      "dialogue": [
+        {
+          "key": "p22-d01",
+          "speaker": "レン",
+          "text": "問題ありません"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "嘘の静けさと手の緊張を同時に読ませる。"
+      },
+      "emotionIntention": "レンはミナを安心させたいが、痛みを無かったことにもしたい。",
+      "reaction": "ミナは返事を否定せず、握り込んだ手へ視線を落とす。",
+      "nextConnection": "ミナが身体の矛盾を言葉にして返す。",
+      "widthPercent": 48,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 98,
+        "gapReason": "強がりの後に視線を移すための間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c10",
+        "offsetX": 0,
+        "offsetY": 34,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p23",
+      "group": "group-03",
+      "readingIndex": 7,
+      "sceneDescription": "Mina looks from Ren's clenched hand to his face. Her posture remains formal, but her thumb loosens the pressure of the cloth with deliberate care.",
+      "newUnderstanding": "ミナは平気のふりを見抜き、責める代わりに身体の事実を返す。",
+      "dialogue": [
+        {
+          "key": "p23-d01",
+          "speaker": "ミナ",
+          "text": "平気な人は\nそんなに\n力を\n入れません"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "声の内容を受けた小さな視線の変化を優先する。"
+      },
+      "emotionIntention": "冷たい言葉で、正直になっても見捨てないと伝える。",
+      "reaction": "レンの指が少し開くが、上を見られない。",
+      "nextConnection": "その沈黙に雨漏りの滴が割り込む。",
+      "widthPercent": 90,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 128,
+        "gapReason": "本音の入口を雨の異変へ渡す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c10",
+        "offsetX": 0,
+        "offsetY": 400,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p24",
+      "group": "group-03",
+      "readingIndex": 8,
+      "sceneDescription": "A drop from the tent roof lands beside the clean gauze on the table. Mina and Ren both turn upward at the same instant, the wound treatment paused but not abandoned.",
+      "newUnderstanding": "手当てを中断させる天幕の不調が、会話の次の障害として現れる。",
+      "dialogue": [],
+      "sound": {
+        "words": "ポツン",
+        "source": "roof leak beside the gauze",
+        "noSoundReason": null
+      },
+      "emotionIntention": "二人とも同じ異変を見ることで、初めて一つの問題を共有する。",
+      "reaction": "ミナの手が清潔な布を覆い、レンの体が出口へ向く。",
+      "nextConnection": "雨漏りと支柱の不調を連続して発見する。",
+      "widthPercent": 100,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 150,
+        "gapReason": "異変を二人が同時に理解する間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c11",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p25",
+      "group": "group-04",
+      "readingIndex": 1,
+      "sceneDescription": "The leak strikes the basin. Mina quickly slides it away from the supplies on the right while Ren watches from the left, his injured arm still across the table.",
+      "newUnderstanding": "雨漏りは治療道具を濡らし、今すぐ小さな対処が必要になる。",
+      "dialogue": [],
+      "sound": {
+        "words": "ピチャ",
+        "source": "rain drop in the basin",
+        "noSoundReason": null
+      },
+      "emotionIntention": "ミナは治療を止めたくないので、まず清潔な物を守る。",
+      "reaction": "レンの視線が屋根の継ぎ目へ上がる。",
+      "nextConnection": "次の滴が包帯へ落ち、危険を拡大する。",
+      "widthPercent": 78,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 64,
+        "gapReason": "小さな異変から大きな不調へ進む間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c12",
+        "offsetX": 22,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.753,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p26",
+      "group": "group-04",
+      "readingIndex": 2,
+      "sceneDescription": "A second leak falls on the folded gauze. Mina shields it with her body and gathers the dry cloth; Ren starts to rise on the left.",
+      "newUnderstanding": "治療に必要な包帯まで濡れれば、手当てを続けられない。",
+      "dialogue": [
+        {
+          "key": "p26-d01",
+          "speaker": "ミナ",
+          "text": "少しだけ\n待ってください"
+        }
+      ],
+      "sound": {
+        "words": "ポタポタ",
+        "source": "multiple roof leaks",
+        "noSoundReason": null
+      },
+      "emotionIntention": "ミナはレンを待たせるのではなく、治療を守るため短く指示する。",
+      "reaction": "レンは待つより支柱を直す方が早いと判断する。",
+      "nextConnection": "レンが無理に立つ動きを見せる。",
+      "widthPercent": 78,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 80,
+        "gapReason": "短い指示が届く前にレンが動き出す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c12",
+        "offsetX": 0,
+        "offsetY": 500,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p27",
+      "group": "group-04",
+      "readingIndex": 3,
+      "sceneDescription": "Reveal of the tent support: a wet rope knot has slipped and the center pole leans toward the treatment table. Mina reaches toward the knot from the right.",
+      "newUnderstanding": "雨漏りの原因が支柱の結び目にあり、治療を中断する物理的理由が明確になる。",
+      "dialogue": [],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "原因を見せて次の行動を理解させるため音を置かない。"
+      },
+      "emotionIntention": "ミナは一人で直す計算を始める。",
+      "reaction": "レンの左手がポールへ伸び、ミナの手と進路が重なる。",
+      "nextConnection": "レンが負傷を押して作業へ入ろうとする。",
+      "widthPercent": 65,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 78,
+        "gapReason": "原因の発見を二人の動作へつなぐ間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c13",
+        "offsetX": 35,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.27,
+          0.015,
+          0.18,
+          0.18
+        ]
+      }
+    },
+    {
+      "id": "p28",
+      "group": "group-04",
+      "readingIndex": 4,
+      "sceneDescription": "Ren rises on the left and catches the leaning pole with his uninjured left hand. The wounded right arm stays tucked, but his face tightens from the movement.",
+      "newUnderstanding": "レンは右腕を使わず支柱を支えようとするが、無理をしている。",
+      "dialogue": [],
+      "sound": {
+        "words": "ギシッ",
+        "source": "wet pole shifting under the load",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは治療を受ける側に留まるより、役に立つ側へ戻ろうとする。",
+      "reaction": "ミナが肩へ手を伸ばし、立ち上がりを止める。",
+      "nextConnection": "ミナが冷たい命令で無理を止める。",
+      "widthPercent": 55,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 62,
+        "gapReason": "ポールの危険をすぐ止める緊張の間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c13",
+        "offsetX": 0,
+        "offsetY": 250,
+        "frame": "thin",
+        "crop": [
+          0.003,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p29",
+      "group": "group-04",
+      "readingIndex": 5,
+      "sceneDescription": "Mina grips Ren's left shoulder from the right and guides him back toward the seat without pulling the wound. Her face is stern; Ren looks startled by the direct touch.",
+      "newUnderstanding": "ミナは傷を守るために初めて身体でレンを止める。",
+      "dialogue": [
+        {
+          "key": "p29-d01",
+          "speaker": "ミナ",
+          "text": "立たないで\nください！"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "接触と命令の強さを読ませるため無音。"
+      },
+      "emotionIntention": "心配を命令の形にしてでも、レンの無理を止めたい。",
+      "reaction": "レンは反発しかけるが、彼女が負傷腕を避けていることに気づく。",
+      "nextConnection": "レンが天幕の危険を理由に言い返す。",
+      "widthPercent": 90,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 82,
+        "gapReason": "命令を受けた反発を一拍置く間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c13",
+        "offsetX": 0,
+        "offsetY": 550,
+        "frame": "thin",
+        "crop": [
+          0.753,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p30",
+      "group": "group-04",
+      "readingIndex": 6,
+      "sceneDescription": "Ren keeps one hand on the pole and leans toward Mina, rain visible behind him. He argues while trying not to show the strain in his shoulder.",
+      "newUnderstanding": "レンは心配を押し返すように、天幕を守る責任を持ち出す。",
+      "dialogue": [
+        {
+          "key": "p30-d01",
+          "speaker": "レン",
+          "text": "このままでは\n天幕が持たない"
+        }
+      ],
+      "sound": {
+        "words": "バサッ",
+        "source": "canvas snapping in the wind",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは自分の痛みを問題にせず、目の前の壊れそうな場所を優先する。",
+      "reaction": "ミナは言い返さず、支柱と傷を交互に見る。",
+      "nextConnection": "ミナが役割を分ければ二人で対処できると決める。",
+      "widthPercent": 90,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 74,
+        "gapReason": "責任の主張から役割分担へ切り替える間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c14",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p31",
+      "group": "group-04",
+      "readingIndex": 7,
+      "sceneDescription": "Mina points to the loose knot with one hand and the left side of the pole with the other, giving Ren a precise task while protecting his right forearm from the work.",
+      "newUnderstanding": "ミナはレンを止めるだけでなく、負傷したままでも参加できる役割を渡す。",
+      "dialogue": [
+        {
+          "key": "p31-d01",
+          "speaker": "ミナ",
+          "text": "右腕は使わず\n左で支えて！"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "役割が決まる瞬間を明瞭にするため効果音なし。"
+      },
+      "emotionIntention": "助けられるだけでなく、できる範囲で一緒にいることを要求する。",
+      "reaction": "レンの姿勢から無理な反発が抜け、左手の位置を調整する。",
+      "nextConnection": "二人が同じロープを扱う動作へつなぐ。",
+      "widthPercent": 80,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 96,
+        "gapReason": "指示を理解して実行へ入る間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c14",
+        "offsetX": 20,
+        "offsetY": 430,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p32",
+      "group": "group-04",
+      "readingIndex": 8,
+      "sceneDescription": "Two-shot under the leaning tent. Ren braces the pole with his left hand on the left; Mina steps toward the rope on the right. They look at the same knot before moving.",
+      "newUnderstanding": "レンが助けを受ける形を選び、二人の対処が始まる。",
+      "dialogue": [
+        {
+          "key": "p32-d01",
+          "speaker": "レン",
+          "text": "わかった"
+        }
+      ],
+      "sound": {
+        "words": "ゴウゴウ",
+        "source": "rain now beating on the canvas",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは屈辱ではなく、ミナの指示なら受け入れられると決める。",
+      "reaction": "ミナの肩がわずかに下がり、二人の作業が同期する。",
+      "nextConnection": "作業中の接触と、待たせたくなかったという本音へ進む。",
+      "widthPercent": 80,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 116,
+        "gapReason": "役割成立後に次の感情を待つ間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c14",
+        "offsetX": 0,
+        "offsetY": 880,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p33",
+      "group": "group-05",
+      "readingIndex": 1,
+      "sceneDescription": "Ren holds the pole with his left hand on the left while Mina threads a fresh cord through the knot on the right. Their hands work at different points of the same support.",
+      "newUnderstanding": "二人の役割分担が具体的な手作業になり、天幕が少しずつ安定する。",
+      "dialogue": [],
+      "sound": {
+        "words": "ギュッ",
+        "source": "cord pulled through the knot",
+        "noSoundReason": null
+      },
+      "emotionIntention": "ミナは正確さで不安を抑え、レンは痛みを隠さず負荷だけを管理する。",
+      "reaction": "レンが短く息を吐き、ミナがその呼吸を聞く。",
+      "nextConnection": "濡れた足場でミナの体勢が崩れ、レンが反応する。",
+      "widthPercent": 50,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 58,
+        "gapReason": "連続作業を次の反応へ短く渡す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c15",
+        "offsetX": 50,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p34",
+      "group": "group-05",
+      "readingIndex": 2,
+      "sceneDescription": "Mina slips on the wet ground while reaching upward. Ren catches her elbow with his left hand without releasing the pole completely; both faces show surprise.",
+      "newUnderstanding": "レンは傷をかばいながらも、ミナの危険には即座に手を伸ばす。",
+      "dialogue": [],
+      "sound": {
+        "words": "ズルッ",
+        "source": "wet ground under Mina's shoe",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは自分が助けられるだけの人間ではないと示したい。ミナは触れられた驚きを隠す。",
+      "reaction": "ミナが足を戻し、レンの手を見てから姿勢を立て直す。",
+      "nextConnection": "ミナが距離を戻し、作業を続ける冷たい言葉へつなぐ。",
+      "widthPercent": 50,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 78,
+        "gapReason": "転倒を解決して会話へ戻る間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c15",
+        "offsetX": 0,
+        "offsetY": 350,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p35",
+      "group": "group-05",
+      "readingIndex": 3,
+      "sceneDescription": "Mina regains balance on the right and gently removes Ren's left hand from her elbow, taking the cord back. Her eyes remain on the knot rather than his face.",
+      "newUnderstanding": "ミナは礼を言う代わりに作業へ戻り、近づいた感情をまた仕事の言葉で隠す。",
+      "dialogue": [
+        {
+          "key": "p35-d01",
+          "speaker": "ミナ",
+          "text": "離してください！\n作業を続けます"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "距離を取り直す動作を読むため音を置かない。"
+      },
+      "emotionIntention": "照れと心配を冷たい手順へ押し戻す。",
+      "reaction": "レンは手を離すが、ミナが濡れたままなのを気にする。",
+      "nextConnection": "レンがミナの濡れた服に言及する。",
+      "widthPercent": 58,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 84,
+        "gapReason": "触れた後に関係の距離を調整する間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c16",
+        "offsetX": 42,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p36",
+      "group": "group-05",
+      "readingIndex": 4,
+      "sceneDescription": "Ren keeps the pole steady on the left and glances at Mina's wet sleeve. He speaks toward her profile while she tightens the cord.",
+      "newUnderstanding": "レンも心配を礼儀や任務ではなく、相手の身体へ向け始める。",
+      "dialogue": [
+        {
+          "key": "p36-d01",
+          "speaker": "レン",
+          "text": "君も濡れる"
+        }
+      ],
+      "sound": {
+        "words": "バサバサ",
+        "source": "canvas edge flapping above them",
+        "noSoundReason": null
+      },
+      "emotionIntention": "自分の傷から話題を逸らし、ミナの危険を止めたい。",
+      "reaction": "ミナの指が一瞬止まり、袖から水が落ちる。",
+      "nextConnection": "ミナが待つ側の時間をうっかり口にする。",
+      "widthPercent": 42,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 88,
+        "gapReason": "言われた心配を受けたあと返す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c16",
+        "offsetX": 0,
+        "offsetY": 42,
+        "frame": "thin",
+        "crop": [
+          0.003,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p37",
+      "group": "group-05",
+      "readingIndex": 5,
+      "sceneDescription": "Mina uses her body to shield the dry supplies while pulling the cord on the right. Rain runs from her hair and sleeve; Ren watches from the left, still holding the pole.",
+      "newUnderstanding": "ミナは自分が濡れることを、レンを待つ時間よりましだと言いかける。",
+      "dialogue": [
+        {
+          "key": "p37-d01",
+          "speaker": "ミナ",
+          "text": "あなたを\n待つより\nましです"
+        }
+      ],
+      "sound": {
+        "words": "ザー…",
+        "source": "rain running off the awning",
+        "noSoundReason": null
+      },
+      "emotionIntention": "心配を隠す冷たい言い方が崩れ、待っていた事実が漏れる。",
+      "reaction": "レンの視線がミナの顔へ戻り、支柱を持つ手が強くなる。",
+      "nextConnection": "レンが待っていたのかと確かめる。",
+      "widthPercent": 90,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 130,
+        "gapReason": "核心の言葉を雨音の後で受け止める間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c16",
+        "offsetX": 0,
+        "offsetY": 400,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p38",
+      "group": "group-05",
+      "readingIndex": 6,
+      "sceneDescription": "Ren's face on the left is framed between the pole and rain. He turns toward Mina, no longer pretending to focus only on the repair.",
+      "newUnderstanding": "レンはミナが帰還を待っていたと初めて言葉で確認する。",
+      "dialogue": [
+        {
+          "key": "p38-d01",
+          "speaker": "レン",
+          "text": "待っていたのか？"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "問いの直後にミナの逃げ道を残す静けさ。"
+      },
+      "emotionIntention": "責められるより、待たせた事実を聞きたい。",
+      "reaction": "ミナはすぐ答えず、結び目を必要以上に整える。",
+      "nextConnection": "ミナが記録や規則の言葉へ逃げる。",
+      "widthPercent": 44,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 110,
+        "gapReason": "質問を回避するための短い空白"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c17",
+        "offsetX": 56,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p39",
+      "group": "group-05",
+      "readingIndex": 7,
+      "sceneDescription": "Mina faces the knot on the right, shoulders squared, while Ren remains visible behind her. Her wet fingers make an overly precise final loop.",
+      "newUnderstanding": "ミナは感情を認めず、記録上の必要という敬語で待っていた時間を隠す。",
+      "dialogue": [
+        {
+          "key": "p39-d01",
+          "speaker": "ミナ",
+          "text": "記録上\n必要でした"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "指の動きが台詞の嘘を補うため音を置かない。"
+      },
+      "emotionIntention": "本当は帰還を待っていたが、心配したとは言えない。",
+      "reaction": "レンは言葉より、震えを抑えた指を見ている。",
+      "nextConnection": "レンが待たせたくなかったという本音を返す。",
+      "widthPercent": 52,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 105,
+        "gapReason": "隠した台詞と見える手を並べる間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c17",
+        "offsetX": 0,
+        "offsetY": 34,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p40",
+      "group": "group-05",
+      "readingIndex": 8,
+      "sceneDescription": "Ren lowers his eyes on the left, his grip on the pole softening while Mina's hand remains on the knot. Rain blurs the tent opening behind them.",
+      "newUnderstanding": "レンの遅れは、ミナを不安にさせたくない気持ちからでもあったと本音の入口が出る。",
+      "dialogue": [
+        {
+          "key": "p40-d01",
+          "speaker": "レン",
+          "text": "待たせたく\nなかった"
+        }
+      ],
+      "sound": {
+        "words": "ドン…",
+        "source": "distant thunder under the confession",
+        "noSoundReason": null
+      },
+      "emotionIntention": "平気のふりの理由を、任務ではなくミナへの配慮として返す。",
+      "reaction": "ミナの結び目を押さえる指が止まり、顔だけがレンへ向く。",
+      "nextConnection": "沈黙を置いて、ミナが言葉を受け取った反応を見せる。",
+      "widthPercent": 90,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 220,
+        "gapReason": "初めて本音が往復した後の深い間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c17",
+        "offsetX": 0,
+        "offsetY": 400,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p41",
+      "group": "group-06",
+      "readingIndex": 1,
+      "sceneDescription": "Close two-shot after the confession. Mina's hand rests on the fixed knot on the right; Ren still holds the pole on the left. Neither looks away now.",
+      "newUnderstanding": "ミナはレンの本音を聞き、冷たい応答をすぐ返さず受け止める。",
+      "dialogue": [],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "返事を急がず、表情と手の停止だけを読ませる。"
+      },
+      "emotionIntention": "ミナは心配を見抜かれた気恥ずかしさと、理解された安堵を抱える。",
+      "reaction": "レンの肩が少し下がり、ミナが次の手順を選べる状態になる。",
+      "nextConnection": "レンが次に何をすればよいか尋ね、助けを受ける準備へ進む。",
+      "widthPercent": 82,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 142,
+        "gapReason": "告白の受け止めと次の行動を分ける間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c18",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p42",
+      "group": "group-06",
+      "readingIndex": 2,
+      "sceneDescription": "Ren turns his face toward Mina on the left, keeping the pole steady. His open left hand asks for instruction instead of taking over.",
+      "newUnderstanding": "レンは無理に主導権を奪わず、ミナに助け方を尋ねる。",
+      "dialogue": [
+        {
+          "key": "p42-d01",
+          "speaker": "レン",
+          "text": "次はどうする？"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "問いを作業の連携へ渡すため無音。"
+      },
+      "emotionIntention": "役に立ちたい気持ちを、勝手に動くのではなく相手に委ねる。",
+      "reaction": "ミナの眉の緊張がわずかにほどける。",
+      "nextConnection": "ミナが具体的な役割を短く指示する。",
+      "widthPercent": 80,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 72,
+        "gapReason": "問いと指示を明確に分ける間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c18",
+        "offsetX": 20,
+        "offsetY": 450,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p43",
+      "group": "group-06",
+      "readingIndex": 3,
+      "sceneDescription": "Mina reaches from the right to lay the fresh cord across Ren's left hand on the pole, showing exactly where to hold while protecting his wounded right side.",
+      "newUnderstanding": "ミナはレンを信頼して任せられる作業を渡し、身体の安全も同時に管理する。",
+      "dialogue": [
+        {
+          "key": "p43-d01",
+          "speaker": "ミナ",
+          "text": "そのまま\n支えてください！"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "二人の手の位置を見せるため音を置かない。"
+      },
+      "emotionIntention": "ミナは命令ではなく共同作業の指示として話す。",
+      "reaction": "レンの左手がロープを安定させ、二人の動きが一つになる。",
+      "nextConnection": "結び目を締める音と、天幕が戻る結果へつなぐ。",
+      "widthPercent": 75,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 88,
+        "gapReason": "手の連携を確認してから音へ進む間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c19",
+        "offsetX": 25,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p44",
+      "group": "group-06",
+      "readingIndex": 4,
+      "sceneDescription": "Ren steadies the pole with his left hand while Mina pulls the cord tight on the right. Their faces are partly visible behind the diagonal rope, focused on the same task.",
+      "newUnderstanding": "レンは助けを受け入れたまま、持てる力を正しく使えている。",
+      "dialogue": [],
+      "sound": {
+        "words": "ギュギュッ",
+        "source": "cord tightening through the support",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは痛みを我慢するのではなく、負荷を左側へ逃がす。ミナはその選択を確認する。",
+      "reaction": "支柱の揺れが小さくなり、ミナが次の結びへ移る。",
+      "nextConnection": "レンの右袖から血が再びにじみ、治療の必要が戻る。",
+      "widthPercent": 45,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 64,
+        "gapReason": "作業の成功を次の危険へつなぐ短い間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c19",
+        "offsetX": 0,
+        "offsetY": 300,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p45",
+      "group": "group-06",
+      "readingIndex": 5,
+      "sceneDescription": "Mina catches fresh blood seeping through Ren's right sleeve while tying the final support knot. Her face sharpens; Ren notices her glance but does not hide the arm this time.",
+      "newUnderstanding": "無理をした結果、傷が悪化しかけているが、レンはもう隠さない。",
+      "dialogue": [],
+      "sound": {
+        "words": "サッ",
+        "source": "cloth drawn around the bleeding sleeve",
+        "noSoundReason": null
+      },
+      "emotionIntention": "ミナは怒りを抑え、支柱を固定したらすぐ治療へ戻る順序を決める。",
+      "reaction": "レンは右腕を自分から前へ出し、手当てを受ける位置に戻す。",
+      "nextConnection": "事情を先に言うよう求めるミナの正直な注意へ進む。",
+      "widthPercent": 60,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 106,
+        "gapReason": "危険の確認と治療再開を分ける間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c19",
+        "offsetX": 40,
+        "offsetY": 560,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.61,
+          0.224,
+          0.3
+        ]
+      }
+    },
+    {
+      "id": "p46",
+      "group": "group-06",
+      "readingIndex": 6,
+      "sceneDescription": "Medium close on Ren's right forearm and Mina's hand. Mud from the river remains under the sleeve, and a torn reed is caught in the wrap, making the rescue injury unmistakable.",
+      "newUnderstanding": "傷は川の瓦礫で開いたもので、レンが一人で隠して処理できる状態ではない。",
+      "dialogue": [
+        {
+          "key": "p46-d01",
+          "speaker": "レン",
+          "text": "救助のときに\n切った"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "原因が十分見えるので説明を補う音は置かない。"
+      },
+      "emotionIntention": "レンは短く原因を明かし、助けを借りることを選ぶ。",
+      "reaction": "ミナの指が傷の周囲を避け、扱いが柔らかくなる。",
+      "nextConnection": "ミナが次から先に事情を伝えるよう求める。",
+      "widthPercent": 75,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 92,
+        "gapReason": "原因の確認から関係の注意へ移る間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c20",
+        "offsetX": 25,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p47",
+      "group": "group-06",
+      "readingIndex": 7,
+      "sceneDescription": "Mina turns the clean side of the cloth toward Ren's wound on the right, her eyes level with him. Ren sits still on the left, no longer guarding the arm.",
+      "newUnderstanding": "ミナは手当てを続ける条件として、無理を隠さず先に話すことを伝える。",
+      "dialogue": [
+        {
+          "key": "p47-d01",
+          "speaker": "ミナ",
+          "text": "その事情も\n先に\n言ってください",
+          "renderedIn": "voice-p47"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "注意を受け取るレンの表情を見せるため無音。"
+      },
+      "emotionIntention": "ミナは責めているのではなく、待つ側が判断できる情報を求める。",
+      "reaction": "レンの目がミナに戻り、短くうなずく。",
+      "nextConnection": "レンが助けを借りてもいいかと自分から頼む。",
+      "widthPercent": 75,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 100,
+        "gapReason": "条件が約束へ変わる直前の間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c20",
+        "offsetX": 25,
+        "offsetY": 450,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p48",
+      "group": "group-06",
+      "readingIndex": 8,
+      "sceneDescription": "Ren extends his injured right forearm fully across the table on the left. Mina receives it with both hands on the right; the repaired pole stands behind them.",
+      "newUnderstanding": "レンが助けを受け入れ、ミナも一人で待つ役から共同で支える役へ移る。",
+      "dialogue": [
+        {
+          "key": "p48-d01",
+          "speaker": "レン",
+          "text": "助けを\n借りても\nいいか？"
+        },
+        {
+          "key": "p48-d02",
+          "speaker": "ミナ",
+          "text": "はい"
+        }
+      ],
+      "sound": {
+        "words": "ポツ…",
+        "source": "rain easing after the support is fixed",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは弱さの告白を頼み方へ変え、ミナは敬語のまま明確に受け入れる。",
+      "reaction": "ミナの両手が腕を包み、レンの肩が初めて完全に下がる。",
+      "nextConnection": "本格的な手当てと、帰還理由の核心へ進む。",
+      "widthPercent": 95,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 180,
+        "gapReason": "受け入れが成立したことを読者が味わう間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c20",
+        "offsetX": 0,
+        "offsetY": 920,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p49",
+      "group": "group-07",
+      "readingIndex": 1,
+      "sceneDescription": "Treatment resumes at the low table. Mina cleans the wound on the right with controlled pressure; Ren on the left keeps his eyes open and lets the pain show.",
+      "newUnderstanding": "治療が再開され、レンは痛みを隠さずそこにいることを選ぶ。",
+      "dialogue": [],
+      "sound": {
+        "words": "サッ…",
+        "source": "cloth moving over the wound",
+        "noSoundReason": null
+      },
+      "emotionIntention": "ミナは痛みを減らすため手順をゆっくりにし、レンは反応を隠さない。",
+      "reaction": "レンの呼吸が浅くなり、ミナが手を止めて確認する。",
+      "nextConnection": "レンが初めて単純な痛みをそのまま口にする。",
+      "widthPercent": 82,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 74,
+        "gapReason": "手当ての再開を身体の反応へ渡す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c21",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p50",
+      "group": "group-07",
+      "readingIndex": 2,
+      "sceneDescription": "Close two-shot. Ren's face tightens on the left, his right arm in Mina's hands; he looks at her instead of turning away.",
+      "newUnderstanding": "レンが平気という言葉を使わず、痛いという事実を伝える。",
+      "dialogue": [
+        {
+          "key": "p50-d01",
+          "speaker": "レン",
+          "text": "痛い"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "短い本音の重さを保つため無音。"
+      },
+      "emotionIntention": "レンは痛みを認めても見捨てられないと、初めて信じて言う。",
+      "reaction": "ミナのまぶたが一度下がり、布の圧を弱める。",
+      "nextConnection": "ミナが痛みへの応答を返し、感情の質問へ近づく。",
+      "widthPercent": 70,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 96,
+        "gapReason": "一語の本音を受け止める間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c21",
+        "offsetX": 30,
+        "offsetY": 500,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p51",
+      "group": "group-07",
+      "readingIndex": 3,
+      "sceneDescription": "Mina softens her grip on the right and adjusts the gauze; her face stays composed but her eyes are visibly warmer. Ren watches her hands.",
+      "newUnderstanding": "ミナは痛みを否定せず、手の扱いで心配を返す。",
+      "dialogue": [
+        {
+          "key": "p51-d01",
+          "speaker": "ミナ",
+          "text": "……\nそうですか"
+        }
+      ],
+      "sound": {
+        "words": "トン",
+        "source": "gauze pressed lightly into place",
+        "noSoundReason": null
+      },
+      "emotionIntention": "冷たい敬語の隙間に、正直に言ってよいという許可を置く。",
+      "reaction": "レンの指が机から離れ、呼吸が深くなる。",
+      "nextConnection": "ミナがなぜ戻ったのかを直接尋ねる。",
+      "widthPercent": 55,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 88,
+        "gapReason": "身体の安心から核心の問いへ進む間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c22",
+        "offsetX": 45,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p52",
+      "group": "group-07",
+      "readingIndex": 4,
+      "sceneDescription": "Mina looks directly at Ren across the table, the repaired tent support visible behind her. Her hands remain on the bandage so the question is anchored in care.",
+      "newUnderstanding": "ミナはレンが戻る途中で本当は怖かったのかを、手当てを続けながら直接尋ねる。",
+      "dialogue": [
+        {
+          "key": "p52-d01",
+          "speaker": "ミナ",
+          "text": "本当は\n怖かった\nですか？"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "問いを遮る雨音を一度引き、二人の声だけにする。"
+      },
+      "emotionIntention": "心配を隠す形式をやめ、レンが戻れないと思った恐怖を自分の言葉で聞こうとする。",
+      "reaction": "レンの視線が天幕の出口へ向き、言葉を探す。",
+      "nextConnection": "レンが戻れない恐怖を直接返す。",
+      "widthPercent": 90,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 150,
+        "gapReason": "核心の問いから返答までの深い間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c22",
+        "offsetX": 0,
+        "offsetY": 350,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p53",
+      "group": "group-07",
+      "readingIndex": 5,
+      "sceneDescription": "Ren looks toward the rain-dark opening on the left, his face stripped of the earlier practiced smile. His bandaged right arm rests openly on the table.",
+      "newUnderstanding": "ミナの問いへ、レンは戻れないと思った恐怖を直接返す。",
+      "dialogue": [
+        {
+          "key": "p53-d01",
+          "speaker": "レン",
+          "text": "戻れないと\n思った"
+        }
+      ],
+      "sound": {
+        "words": "ザー…",
+        "source": "rain outside the open flap",
+        "noSoundReason": null
+      },
+      "emotionIntention": "任務の結果ではなく、ミナの元へ戻れない恐怖を短く正直に返す。",
+      "reaction": "ミナの手が包帯の上で止まり、レンを見る。",
+      "nextConnection": "ミナが待つ側の恐怖を自分の言葉で返す。",
+      "widthPercent": 80,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 168,
+        "gapReason": "恐怖の告白を受け取るための間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c23",
+        "offsetX": 20,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p54",
+      "group": "group-07",
+      "readingIndex": 6,
+      "sceneDescription": "Mina's hands remain still over the bandage on the right. Her face is turned down, and a small reflection of the gray sky appears in her eyes.",
+      "newUnderstanding": "レンの恐怖を聞いたミナは、心配を隠すための手当ても一瞬止まる。",
+      "dialogue": [],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "表情と止まった手だけで感情を読ませる。"
+      },
+      "emotionIntention": "ミナは自分も同じ恐怖を抱えていたと認める準備をする。",
+      "reaction": "レンは急かさず、彼女が言える時間を待つ。",
+      "nextConnection": "ミナが形式を一度だけ崩して本音を返す。",
+      "widthPercent": 55,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 188,
+        "gapReason": "相手の告白を受けた側の反応を独立させる間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c23",
+        "offsetX": 0,
+        "offsetY": 300,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p55",
+      "group": "group-07",
+      "readingIndex": 7,
+      "sceneDescription": "Mina raises her eyes to Ren on the right, the cloth still between them. Her formal posture breaks slightly at the shoulders; Ren listens without interrupting.",
+      "newUnderstanding": "ミナも待つことが怖かったと、丁寧語の外側で自分の感情を返す。",
+      "dialogue": [
+        {
+          "key": "p55-d01",
+          "speaker": "ミナ",
+          "text": "待つのは\n怖かった"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "台詞そのものが転換なので音を置かない。"
+      },
+      "emotionIntention": "心配を管理記録へ隠すのをやめ、待つ側の恐怖を渡す。",
+      "reaction": "レンの目が揺れ、言い訳を探さず受け止める。",
+      "nextConnection": "レンが自分の遅れを謝り、ミナの恐怖を受け取る。",
+      "widthPercent": 90,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 196,
+        "gapReason": "関係の本音が返った後の深い間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c23",
+        "offsetX": 0,
+        "offsetY": 650,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p56",
+      "group": "group-07",
+      "readingIndex": 8,
+      "sceneDescription": "Ren faces Mina directly on the left. His left hand rests open beside the table instead of gripping anything; Mina's hands return to the bandage.",
+      "newUnderstanding": "レンは謝罪で話を終わらせず、ミナが怖がった事実を認めて次の行動へ向かう。",
+      "dialogue": [
+        {
+          "key": "p56-d01",
+          "speaker": "レン",
+          "text": "怖がらせた\n悪かった"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "受け取った感情から手当てへ戻る静けさ。"
+      },
+      "emotionIntention": "レンは平気なふりで守ったつもりが、待つ側を一人にしたと理解する。",
+      "reaction": "ミナが小さく首を振り、包帯を結ぶ作業を再開する。",
+      "nextConnection": "約束を抽象語で終わらせず、具体的な帰還方法へ進む。",
+      "widthPercent": 75,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 142,
+        "gapReason": "謝罪を結果へ変えるための間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c24",
+        "offsetX": 25,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p57",
+      "group": "group-08",
+      "readingIndex": 1,
+      "sceneDescription": "Mina wraps a clean bandage around Ren's right forearm on the right. Ren watches the layers build on the left, both calmer but fully attentive.",
+      "newUnderstanding": "ミナは治療を仕上げながら、次から隠さないことを約束の条件にする。",
+      "dialogue": [
+        {
+          "key": "p57-d01",
+          "speaker": "ミナ",
+          "text": "ここからは\n隠さないで"
+        }
+      ],
+      "sound": {
+        "words": "キュッ",
+        "source": "bandage pulled snug around the arm",
+        "noSoundReason": null
+      },
+      "emotionIntention": "心配を叱責ではなく、帰還するための共有情報に変える。",
+      "reaction": "レンの目が包帯からミナへ上がり、返答を考える。",
+      "nextConnection": "レンが隠した理由を正直に説明する。",
+      "widthPercent": 95,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 78,
+        "gapReason": "包帯の結び目が約束の起点になる間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c24",
+        "offsetX": 0,
+        "offsetY": 520,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p58",
+      "group": "group-08",
+      "readingIndex": 2,
+      "sceneDescription": "Ren looks at the freshly wrapped arm on the left, then back to Mina. His dark coat is still damp, but his shoulders are no longer braced for departure.",
+      "newUnderstanding": "レンは痛いと言えば平気なふりが崩れそうで、傷を隠していたと本音を明かす。",
+      "dialogue": [
+        {
+          "key": "p58-d01",
+          "speaker": "レン",
+          "text": "痛いと\n言ったら\n崩れそうで"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "説明を長くせず、次の具体策へ進むため無音。"
+      },
+      "emotionIntention": "心配を避けるための強がりが、自分を保つための脆い支えだったと認める。",
+      "reaction": "ミナは隠していた理由を受け止め、包帯の端を整える手をさらに柔らかくする。",
+      "nextConnection": "ミナが戻るために助けを借りるという新しい条件を返す。",
+      "widthPercent": 80,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 106,
+        "gapReason": "理由を受けて条件を更新する間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c25",
+        "offsetX": 20,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p59",
+      "group": "group-08",
+      "readingIndex": 3,
+      "sceneDescription": "Mina presses the final gauze edge flat with two fingers on the right, careful not to over-tighten. Ren's open left hand rests near the table edge.",
+      "newUnderstanding": "戻るためには隠すのではなく、頼ることが必要だとミナが言い換える。",
+      "dialogue": [
+        {
+          "key": "p59-d01",
+          "speaker": "ミナ",
+          "text": "戻るために\n頼って\nください"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "言葉と手当ての仕上げを重ねる。"
+      },
+      "emotionIntention": "ミナは待つ側の恐怖を、レンが実行できる行動へ翻訳する。",
+      "reaction": "レンはうなずき、時刻や合図を尋ねる準備をする。",
+      "nextConnection": "具体的な帰還時刻を二人で決める。",
+      "widthPercent": 90,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 118,
+        "gapReason": "抽象語から具体策へ移る間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c25",
+        "offsetX": 0,
+        "offsetY": 480,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p60",
+      "group": "group-08",
+      "readingIndex": 4,
+      "sceneDescription": "Ren points with his left index finger toward the tent entrance and then the lantern on the right, asking for a clear boundary instead of a vague promise.",
+      "newUnderstanding": "レンは戻るとだけ言わず、いつまでに戻ればミナが待てるかを尋ねる。",
+      "dialogue": [
+        {
+          "key": "p60-d01",
+          "speaker": "レン",
+          "text": "いつまでに\n戻ればいい？"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "質問の意志を絵で補うため音を置かない。"
+      },
+      "emotionIntention": "レンは約束を実行可能な時間へ落とし、ミナに判断を返す。",
+      "reaction": "ミナの視線が入口の灯りへ移る。",
+      "nextConnection": "夕鐘と灯りを使った具体的な基準が示される。",
+      "widthPercent": 80,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 104,
+        "gapReason": "基準が出る前に視線を移す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c26",
+        "offsetX": 20,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.003,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p61",
+      "group": "group-08",
+      "readingIndex": 5,
+      "sceneDescription": "Mina points to a single small wooden return tag hanging on the entrance hook on the right; a dry lantern is nearby. Ren listens from the left, his bandaged forearm visible and supported.",
+      "newUnderstanding": "二人は夕鐘が二度鳴る前を帰還時刻の基準にし、木札はまだ入口のフックに掛けたままにする。",
+      "dialogue": [
+        {
+          "key": "p61-d01",
+          "speaker": "ミナ",
+          "text": "夕鐘が二度\n鳴る前"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "時刻の基準だけを示し、木札はまだ鳴らさない。"
+      },
+      "emotionIntention": "ミナは待つ場所と時刻を具体化し、再び一人で推測しなくて済むようにする。",
+      "reaction": "レンが一個の木札と入口のフックへ目を向ける。",
+      "nextConnection": "レンが木札をフックから外し、巡回中は帯に携帯する手順を選ぶ。",
+      "widthPercent": 75,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 110,
+        "gapReason": "時刻を視覚的な合図へつなぐ間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c26",
+        "offsetX": 0,
+        "offsetY": 450,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p62",
+      "group": "group-08",
+      "readingIndex": 6,
+      "sceneDescription": "Ren lifts the single small wooden return tag from the entrance hook on the left, examining its cord with his uninjured hand. Mina watches from the right.",
+      "newUnderstanding": "レンは帰還時に帯から入口のフックへ木札を掛ける行動を選ぶ。",
+      "dialogue": [
+        {
+          "key": "p62-d01",
+          "speaker": "レン",
+          "text": "戻ったら\nこの札を\n掛ける"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "札を帰還時のフックへ掛ける決断を明確にするため無音。"
+      },
+      "emotionIntention": "レンは言葉の約束ではなく、巡回中は帯に携帯し帰還時にフックへ掛ける一動作を提案する。",
+      "reaction": "ミナが空いたフックと木札の紐を見て、実行できる手順だと判断する。",
+      "nextConnection": "ミナが一個の木札を帯へ携帯する手順を確認する。",
+      "widthPercent": 90,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 92,
+        "gapReason": "選択した合図を次の手渡しへ進める間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c26",
+        "offsetX": 0,
+        "offsetY": 900,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p63",
+      "group": "group-08",
+      "readingIndex": 7,
+      "sceneDescription": "Mina places the single wooden tag and its cord into Ren’s left hand across the table on the right. The empty entrance hook, repaired support, and dry lantern remain visible behind them.",
+      "newUnderstanding": "一個の木札を巡回中は帯に携帯し、帰還時に入口のフックへ掛ける手順が共有される。",
+      "dialogue": [
+        {
+          "key": "p63-d01",
+          "speaker": "ミナ",
+          "text": "お願い\nします"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "一個の木札を手渡すだけで、帰還時に入口フックへ触れる木の音を先取りしない。"
+      },
+      "emotionIntention": "ミナは命令を重ねず、戻ったことを自分へ知らせてほしいという頼みを受け渡す。",
+      "reaction": "レンが右腕を使わず、木札を帯へ取り付ける準備を始める。",
+      "nextConnection": "レンが巡回中は帯に携帯する状態を作る。",
+      "widthPercent": 60,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 86,
+        "gapReason": "手渡しを確認して次の実行へ進む間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c27",
+        "offsetX": 40,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p64",
+      "group": "group-08",
+      "readingIndex": 8,
+      "sceneDescription": "Ren secures the single wooden return tag to his belt with his left hand on the left. The entrance hook is now empty; Mina checks the cord once, then lets go as rain softens outside.",
+      "newUnderstanding": "木札は巡回中に帯へ携帯し、帰還時に入口のフックへ掛けるという具体的な行動が成立する。",
+      "dialogue": [
+        {
+          "key": "p64-d01",
+          "speaker": "レン",
+          "text": "帯に\nつけておく"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "帯へ携帯する準備であり、帰還時の木の音を先取りしない。"
+      },
+      "emotionIntention": "レンは帰還時の動作を自分の準備に落とし込み、ミナは木札を持たせたまま任せる。",
+      "reaction": "ミナが帯の木札と空いたフックを確認し、帰還時の一動作を任せる。",
+      "nextConnection": "天幕の修復結果と、木札を帯に携帯する巡回へ移る。",
+      "widthPercent": 90,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 240,
+        "gapReason": "約束が物理的に結ばれたことを味わう間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c27",
+        "offsetX": 0,
+        "offsetY": 400,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p65",
+      "group": "group-09",
+      "readingIndex": 1,
+      "sceneDescription": "Exterior detail after the rain weakens: the repaired support redirects water into a narrow gutter beside the tent. The single wooden return tag remains on Ren’s belt at the edge of frame.",
+      "newUnderstanding": "二人の対処が結果を生み、天幕は持ち直し、帰還の木札は帯に携帯できる状態になる。",
+      "dialogue": [],
+      "sound": {
+        "words": "サー…",
+        "source": "water running through the improvised gutter",
+        "noSoundReason": null
+      },
+      "emotionIntention": "ミナは作業の結果を確認し、レンは自分が一人で直そうとしなくてよかったと感じる。",
+      "reaction": "水が治療道具から外れ、二人の緊張が下がる。",
+      "nextConnection": "ミナが入口に待つための物を準備する。",
+      "widthPercent": 85,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 94,
+        "gapReason": "危機の結果を読ませる穏やかな間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c28",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p66",
+      "group": "group-09",
+      "readingIndex": 2,
+      "sceneDescription": "Mina hangs a dry cloth and spare bandage beside the entrance on the right. The place is visibly prepared for the next return, not just the current treatment.",
+      "newUnderstanding": "ミナは待つだけでなく、戻ったレンを受け止める準備を自分の行動にする。",
+      "dialogue": [],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "準備の意味を静かに読ませるため無音。"
+      },
+      "emotionIntention": "心配を物の配置へ変え、次に同じ不安が来ても一人で固まらないようにする。",
+      "reaction": "レンの目が入口の乾布へ移り、ミナの行動を受け取る。",
+      "nextConnection": "レンが立とうとし、ミナが休息を優先させる。",
+      "widthPercent": 55,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 112,
+        "gapReason": "待つ側の行動を次の身体反応へ渡す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c28",
+        "offsetX": 45,
+        "offsetY": 550,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p67",
+      "group": "group-09",
+      "readingIndex": 3,
+      "sceneDescription": "Ren tries to stand on the left, using his left hand on the table. Mina blocks the path with one palm on the right, keeping him seated without touching the wound.",
+      "newUnderstanding": "レンはすぐ巡回へ戻ろうとするが、ミナは休むことも帰還の条件に含める。",
+      "dialogue": [
+        {
+          "key": "p67-d01",
+          "speaker": "ミナ",
+          "text": "休んで\nからです"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "新たな命令ではなく、保護の判断として無音にする。"
+      },
+      "emotionIntention": "ミナは離れたくないからではなく、次に戻れる身体を守るため止める。",
+      "reaction": "レンは反論しかけて、帯の木札と包帯を見る。",
+      "nextConnection": "レンが今度は命令を受け入れる返しをする。",
+      "widthPercent": 55,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 86,
+        "gapReason": "休む選択を受け止める間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c29",
+        "offsetX": 45,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p68",
+      "group": "group-09",
+      "readingIndex": 4,
+      "sceneDescription": "Ren sits back down on the left with a tired half-smile, while Mina returns to the table on the right. The return tag rests against his belt.",
+      "newUnderstanding": "レンは無理を続けず、ミナの判断に従うことを選ぶ。",
+      "dialogue": [
+        {
+          "key": "p68-d01",
+          "speaker": "レン",
+          "text": "命令なら\n従う"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "以前の形式語を、今回は信頼の返答として使う。"
+      },
+      "emotionIntention": "レンは形式を盾にせず、助けを受ける姿勢を軽い冗談に変える。",
+      "reaction": "ミナの口元が初めてわずかに緩む。",
+      "nextConnection": "二人が次の巡回路と合図を確認する会話へ進む。",
+      "widthPercent": 90,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 104,
+        "gapReason": "形式語の意味が変わったことを味わう間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c29",
+        "offsetX": 0,
+        "offsetY": 380,
+        "frame": "thin",
+        "crop": [
+          0.003,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p69",
+      "group": "group-09",
+      "readingIndex": 5,
+      "sceneDescription": "Mina traces a simple route line on a damp wooden board on the right; Ren points to the turn from the left with his uninjured hand. The map is practical and small.",
+      "newUnderstanding": "帰還は気持ちだけでなく、道と合図を共有する具体的な準備になる。",
+      "dialogue": [
+        {
+          "key": "p69-d01",
+          "speaker": "ミナ",
+          "text": "川沿いは\n避けて\nください"
+        },
+        {
+          "key": "p69-d02",
+          "speaker": "レン",
+          "text": "わかった"
+        }
+      ],
+      "sound": {
+        "words": "コツ",
+        "source": "charcoal mark on the route board",
+        "noSoundReason": null
+      },
+      "emotionIntention": "ミナは危険を管理し、レンは助言を受けて同じ判断を持つ。",
+      "reaction": "レンの指が川の方から安全な道へ移る。",
+      "nextConnection": "帯の木札を帰還時に入口フックへ掛ける実際の手順をもう一度確認する。",
+      "widthPercent": 85,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 96,
+        "gapReason": "情報確認を行動の約束へつなぐ間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c30",
+        "offsetX": 15,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p70",
+      "group": "group-09",
+      "readingIndex": 6,
+      "sceneDescription": "Ren points to the empty entrance hook while the single wooden return tag remains on his belt. He rehearses the left-hand path from belt to hook without hanging it; Mina watches the exact motion from inside.",
+      "newUnderstanding": "帰還時は帯から空のフックへ木札を掛ける一動作で知らせる手順が確認される。",
+      "dialogue": [],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "巡回前の手順確認であり、木札をフックへ掛ける音は帰還時まで残す。"
+      },
+      "emotionIntention": "レンは木札を外すのは帰還時だけだと確認し、ミナは待つ側の確認方法を覚える。",
+      "reaction": "ミナは空のフックと帯の木札を同時に見て、合図の状態を理解する。",
+      "nextConnection": "短い休息と温かい飲み物で結果の感情を落ち着かせる。",
+      "widthPercent": 55,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 70,
+        "gapReason": "動作の確認から心情の余韻へ移る間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c30",
+        "offsetX": 45,
+        "offsetY": 540,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.6,
+          0.224,
+          0.3
+        ]
+      }
+    },
+    {
+      "id": "p71",
+      "group": "group-09",
+      "readingIndex": 7,
+      "sceneDescription": "Mina offers a warm cup from the right; Ren receives it with his left hand on the left, bandaged right forearm resting safely on the table. Both sit under the repaired roof.",
+      "newUnderstanding": "手当てと修復が終わり、二人が同じ場所で休む満足が生まれる。",
+      "dialogue": [
+        {
+          "key": "p71-d01",
+          "speaker": "レン",
+          "text": "助かった"
+        },
+        {
+          "key": "p71-d02",
+          "speaker": "ミナ",
+          "text": "こちらも"
+        }
+      ],
+      "sound": {
+        "words": "コト",
+        "source": "cup set down on the table",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは救助と手当てを一緒に受け取り、ミナは一人で待たなくてよかったと返す。",
+      "reaction": "二人の肩が同じ高さまで下がり、雨音が遠くなる。",
+      "nextConnection": "次に待つ場所をどう変えるか、ミナが言葉にする。",
+      "widthPercent": 90,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 132,
+        "gapReason": "回復した身体と関係を味わう間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c31",
+        "offsetX": 10,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p72",
+      "group": "group-09",
+      "readingIndex": 8,
+      "sceneDescription": "Mina looks from the repaired awning to Ren on the left, then places a dry cloth beside the empty entrance hook on the right. Ren follows her gaze and nods, the single wooden tag still on his belt.",
+      "newUnderstanding": "ミナは待つ場所を決め、レンは一個の木札を帯に携帯して帰還時にフックへ掛ける接続を受け入れる。",
+      "dialogue": [
+        {
+          "key": "p72-d01",
+          "speaker": "ミナ",
+          "text": "次は\n待つ場所を\n決めます"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "次の行動を予告するため静かに閉じる。"
+      },
+      "emotionIntention": "ミナは待つことを受け身の苦しさから、共有した準備へ変えたい。",
+      "reaction": "レンが空の入口フック、乾布、帯の木札を見て、具体策を理解する。",
+      "nextConnection": "一週間後の晴れた朝へ時間を進め、決めた合図が実際に使われる結末へ。",
+      "widthPercent": 85,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 260,
+        "gapReason": "結果から時間経過へ切り替えるための間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c31",
+        "offsetX": 0,
+        "offsetY": 560,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p73",
+      "group": "group-10",
+      "readingIndex": 1,
+      "sceneDescription": "One week later on a clear morning at the same repaired tent. Ren stands at the left entrance in dark clothes with a clean but still-present bandage and the single wooden return tag on his belt; Mina checks supplies on the right.",
+      "newUnderstanding": "一週間後の晴れた朝、傷・帯の木札・補修した天幕が同じ状態で引き継がれ、レンは次の巡回へ出られる。",
+      "dialogue": [],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "一週間後の晴れた朝を画面で示すため、雨や木札の合図音は置かない。"
+      },
+      "emotionIntention": "レンは傷がすぐ消えたふりをせず、木札を帯に携帯して約束を実行する巡回へ出る。ミナは準備した場所で見送る。",
+      "reaction": "ミナが入口で道を塞がず、帯の木札を確認してから一歩退く。",
+      "nextConnection": "出発前の注意と具体的な帰還時刻を確認する。",
+      "widthPercent": 80,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 140,
+        "gapReason": "時間経過を景色で明示する間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c32",
+        "offsetX": 0,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p74",
+      "group": "group-10",
+      "readingIndex": 2,
+      "sceneDescription": "Mina adjusts the strap on Ren's left shoulder and checks the right forearm bandage from the right side. Ren remains still and lets her inspect it.",
+      "newUnderstanding": "ミナは無理なら戻ることを、出発前の行動条件として伝える。",
+      "dialogue": [
+        {
+          "key": "p74-d01",
+          "speaker": "ミナ",
+          "text": "無理なら\n戻って\nください"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "出発の緊張を言葉で確認するため無音。"
+      },
+      "emotionIntention": "ミナは心配を命令で隠すが、今回はレンが隠さない前提で話す。",
+      "reaction": "レンは包帯を隠さず見せ、うなずく。",
+      "nextConnection": "帰還時刻をレン自身が口にする。",
+      "widthPercent": 85,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 96,
+        "gapReason": "出発条件と帰還条件を分ける間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c32",
+        "offsetX": 15,
+        "offsetY": 500,
+        "frame": "thin",
+        "crop": [
+          0.503,
+          0.005,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p75",
+      "group": "group-10",
+      "readingIndex": 3,
+      "sceneDescription": "Ren touches the return tag at his belt with his left hand on the left and faces Mina. The morning path opens behind him, while the repaired tent remains in frame.",
+      "newUnderstanding": "レンは夕鐘が二度鳴る前に戻るという約束を、自分の出発動作に結びつける。",
+      "dialogue": [
+        {
+          "key": "p75-d01",
+          "speaker": "レン",
+          "text": "夕鐘が二度\n鳴る前に"
+        }
+      ],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "出発前に帯の木札を確認するだけで、フックの木の音は帰還時まで残す。"
+      },
+      "emotionIntention": "レンは言葉を繰り返すのでなく、実行する基準を自分で確認する。",
+      "reaction": "ミナが帯の木札からレンの顔へ視線を上げ、任せる決断をする。",
+      "nextConnection": "ミナが待つ場所での行動を見せる。",
+      "widthPercent": 80,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 116,
+        "gapReason": "出発の約束をミナの準備へ渡す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c33",
+        "offsetX": 20,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.266,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p76",
+      "group": "group-10",
+      "readingIndex": 4,
+      "sceneDescription": "After Ren leaves, Mina moves from the center of the tent to the entrance on the right, sets a dry cloth and lamp there, then returns to her work table instead of staring at the path.",
+      "newUnderstanding": "ミナは固まって待つのではなく、決めた場所と道具を使って自分の時間を動かす。",
+      "dialogue": [],
+      "sound": {
+        "words": "カサ…",
+        "source": "dry cloth folded at the entrance",
+        "noSoundReason": null
+      },
+      "emotionIntention": "心配は残るが、待つことを確認可能な準備へ変える。",
+      "reaction": "ミナが時計ではなく作業へ戻り、入口の灯りだけが残る。",
+      "nextConnection": "補助ビートで時間経過を置き、夕方の合図へ進む。",
+      "widthPercent": 90,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 1,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 420,
+        "gapReason": "出発から帰還確認までを省略せず受け渡す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c33",
+        "offsetX": 0,
+        "offsetY": 480,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.025,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p77",
+      "group": "group-10",
+      "readingIndex": 5,
+      "sceneDescription": "Same-day evening light returns to the repaired entrance. Ren’s left hand enters from outside carrying the single wooden return tag from his belt and hangs it on the empty hook; Mina turns from the work table on the right.",
+      "newUnderstanding": "一週間後の同日夕方、帯に携帯していた一個の木札が入口のフックへ掛かり、帰還が木の音で伝わる。",
+      "dialogue": [],
+      "sound": {
+        "words": "コト",
+        "source": "the single wooden tag placed on the entrance hook",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは決めた時刻内に戻り、約束を木札を掛ける一動作へ変える。ミナは足音ではなく合図を受け取る。",
+      "reaction": "木札がフックに掛かり、ミナの手が布を置いて入口へ向かう。",
+      "nextConnection": "レンの姿を見せる前に、ミナが合図を受けて動く選択を独立させる。",
+      "widthPercent": 65,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 1,
+        "gapAfterCssPx": 132,
+        "gapReason": "合図と人物の反応を分ける間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c34",
+        "offsetX": 35,
+        "offsetY": 0,
+        "frame": "none",
+        "crop": [
+          0.766,
+          0.6,
+          0.224,
+          0.3
+        ]
+      }
+    },
+    {
+      "id": "p78",
+      "group": "group-10",
+      "readingIndex": 6,
+      "sceneDescription": "Mina steps out from the right side of the tent toward the entrance. Her face is still professional, but her shoulders and hands are no longer clenched; the single wooden tag hangs on the hook and Ren’s silhouette waits beyond the flap.",
+      "newUnderstanding": "ミナは待つ場所に閉じず、合図を受けて迎えに出るという新しい行動を取る。",
+      "dialogue": [],
+      "sound": {
+        "words": null,
+        "source": null,
+        "noSoundReason": "姿勢の変化を見せるため音を置かない。"
+      },
+      "emotionIntention": "ミナは心配を隠す必要がないほど、確認する手順を共有できた。",
+      "reaction": "木札はすでにフックに掛かり、レンの姿がその先にいることをミナが確認する。",
+      "nextConnection": "レンが短い帰還の言葉を返す。",
+      "widthPercent": 95,
+      "align": "right",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 2,
+        "gapAfterCssPx": 104,
+        "gapReason": "行動の変化から再会の台詞へ進む間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c34",
+        "offsetX": 0,
+        "offsetY": 350,
+        "frame": "none",
+        "crop": [
+          0.516,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    },
+    {
+      "id": "p79",
+      "group": "group-10",
+      "readingIndex": 7,
+      "sceneDescription": "Ren stands at the left side of the repaired awning, visibly tired but upright. The single wooden return tag hangs on the entrance hook behind him; Mina faces him from the right with the dry cloth ready.",
+      "newUnderstanding": "レンは一週間後の同日夕方、決めた時刻内に戻り、帯からフックへ木札を掛ける約束を果たした。",
+      "dialogue": [
+        {
+          "key": "p79-d01",
+          "speaker": "レン",
+          "text": "戻った"
+        }
+      ],
+      "sound": {
+        "words": "ザッ",
+        "source": "Ren's final step onto the dry threshold",
+        "noSoundReason": null
+      },
+      "emotionIntention": "レンは平気を装わず、戻った事実だけを短く渡す。",
+      "reaction": "ミナの目元が緩み、手にした乾布を彼へ差し出す。",
+      "nextConnection": "ミナが冷たい形式を保ちながら、帰還を確認して終える。",
+      "widthPercent": 85,
+      "align": "left",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 3,
+        "gapAfterCssPx": 168,
+        "gapReason": "帰還の事実を一度受け止める間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c35",
+        "offsetX": 15,
+        "offsetY": 0,
+        "frame": "thin",
+        "crop": [
+          0.253,
+          0.505,
+          0.244,
+          0.49
+        ]
+      }
+    },
+    {
+      "id": "p80",
+      "group": "group-10",
+      "readingIndex": 8,
+      "sceneDescription": "Final two-shot beneath the repaired awning. Mina on the right offers the dry cloth; Ren on the left accepts it while the single wooden return tag remains on the entrance hook. Their relieved faces stay understated, the clear path behind them.",
+      "newUnderstanding": "ミナの確認とレンの実行が一つになり、木札がフックに掛かった状態が信頼の証として残る。次の巡回も同じ手順で続けられる。",
+      "dialogue": [
+        {
+          "key": "p80-d01",
+          "speaker": "ミナ",
+          "text": "確認\nしました"
+        },
+        {
+          "key": "p80-d02",
+          "speaker": "レン",
+          "text": "次も戻る"
+        }
+      ],
+      "sound": {
+        "words": "サラ…",
+        "source": "dry cloth and soft water after the rain",
+        "noSoundReason": null
+      },
+      "emotionIntention": "ミナは喜びを大げさにせず、準備と確認で受け止める。レンは抽象的な誓いではなく、同じ行動を次にも続ける意志を示す。",
+      "reaction": "二人の視線がフックの木札、包帯、修復した支柱へ巡り、物語の因果が閉じる。",
+      "nextConnection": "次回は共有した巡回路と合図が新しい危機の入口になる。",
+      "widthPercent": 100,
+      "align": "center",
+      "frameProposal": {
+        "border": "thin neutral line",
+        "arrangement": "independent drawing; 4 columns x 2 rows; read right to left",
+        "row": 2,
+        "columnFromRight": 4,
+        "gapAfterCssPx": 240,
+        "gapReason": "結末の満足と次回への余韻を残す間"
+      },
+      "effective": true,
+      "displayLayout": {
+        "composition": "c35",
+        "offsetX": 0,
+        "offsetY": 665,
+        "frame": "none",
+        "crop": [
+          0.016,
+          0.525,
+          0.219,
+          0.452
+        ]
+      }
+    }
+  ],
+  "auxiliaryBeats": [
+    {
+      "id": "voice-00",
+      "type": "voice",
+      "key": "voice-00-text",
+      "speaker": "",
+      "text": "夕暮れ\n野営地の治療所",
+      "beforePanel": "p01",
+      "afterPanel": null,
+      "height390CssPx": 200,
+      "x": 50,
+      "purpose": "最初の絵の前に時刻と場所を明示し、読者が夕暮れの野営地の治療所から読み始められるようにする。",
+      "displayLayout": {}
+    },
+    {
+      "id": "pause-01",
+      "type": "pause",
+      "afterPanel": "p02",
+      "height390CssPx": 170,
+      "position": "雨雲の予告の直後",
+      "purpose": "入口の天候情報を読者の中に残し、空の変化を次の足音へつなぐ。",
+      "priorClue": "p01の遠雷とp02の風",
+      "nextFirstReveal": "p03でミナの手の緊張を読む",
+      "elements": "空の灰色、ランタン、空いた道",
+      "background": "薄い灰色の空と白い天幕",
+      "pureWhitespace": true,
+      "displayLayout": {}
+    },
+    {
+      "id": "voice-12",
+      "type": "voice",
+      "key": "voice-12-text",
+      "speaker": "",
+      "text": "少し前\n村外れの川",
+      "beforePanel": "p13",
+      "afterPanel": "p12",
+      "height390CssPx": 210,
+      "x": 50,
+      "purpose": "p12の泥と震える指からp13の救助回想へ移る時間と場所を明示し、現在の天幕から突然川へ飛ばさない。",
+      "displayLayout": {}
+    },
+    {
+      "id": "pause-02",
+      "type": "pause",
+      "afterPanel": "p12",
+      "height390CssPx": 190,
+      "position": "川の回想に入る前",
+      "purpose": "泥と震える指を現在に置いたまま、傷の原因だけを過去へ開く。",
+      "priorClue": "p12の川泥とレンの停止",
+      "nextFirstReveal": "p13で増水した川と小さな手",
+      "elements": "濡れた袖、包帯、止まった視線",
+      "background": "天幕内の低い明かりから雨の川へ",
+      "pureWhitespace": true,
+      "displayLayout": {}
+    },
+    {
+      "id": "voice-15",
+      "type": "voice",
+      "key": "voice-15-text",
+      "speaker": "",
+      "text": "いま\n野営地の治療所",
+      "beforePanel": "p16",
+      "afterPanel": "p15",
+      "height390CssPx": 200,
+      "x": 50,
+      "purpose": "p15で少年を匿名村人へ渡した回想を閉じ、p16の現在のミナとレンの手当てへ戻る場所を明示する。",
+      "displayLayout": {
+        "composition": "c07",
+        "offsetX": 74,
+        "offsetY": 0,
+        "widthPercent": 26
+      }
+    },
+    {
+      "id": "voice-01",
+      "type": "voice",
+      "key": "voice-01-text",
+      "speaker": "ミナ",
+      "text": "その子が\n助かって\nよかったです",
+      "afterPanel": "p16",
+      "height390CssPx": 210,
+      "x": 50,
+      "purpose": "救助が成功したことをミナが受け止めてから、手当てを自分の役割として引き受ける。事情の確認を言い直さない。",
+      "displayLayout": {
+        "composition": "c08",
+        "offsetX": 70,
+        "offsetY": 0,
+        "widthPercent": 28
+      }
+    },
+    {
+      "id": "pause-03",
+      "type": "pause",
+      "afterPanel": "p24",
+      "height390CssPx": 150,
+      "position": "最初の雨漏りの直後",
+      "purpose": "滴を二人が同時に認識し、傷の手当てを捨てずに天幕の問題へ向くための間。",
+      "priorClue": "p24の清潔な包帯の横に落ちた滴",
+      "nextFirstReveal": "p25で basin を移すミナの手",
+      "elements": "水滴、包帯、二人の上向く視線",
+      "background": "天幕の灰色の内側",
+      "pureWhitespace": true,
+      "displayLayout": {}
+    },
+    {
+      "id": "voice-02",
+      "type": "voice",
+      "key": "voice-02-text",
+      "speaker": "レン",
+      "text": "無理は\nしていない",
+      "afterPanel": "p32",
+      "height390CssPx": 190,
+      "x": 50,
+      "purpose": "作業中も平気のふりが残っていることを示すが、p40の本音を先取りしない。",
+      "displayLayout": {
+        "composition": "c14",
+        "offsetX": 75,
+        "offsetY": 880,
+        "widthPercent": 25
+      }
+    },
+    {
+      "id": "pause-04",
+      "type": "pause",
+      "afterPanel": "p40",
+      "height390CssPx": 220,
+      "position": "待たせたくなかったの直後",
+      "purpose": "初めて往復した本音を説明で埋めず、止まった手と視線の反応を読ませる。",
+      "priorClue": "p39の過度に正確な結び目とp40の告白",
+      "nextFirstReveal": "p41で二人が同じ作業位置に留まる",
+      "elements": "固定されたロープ、止まった手、雨幕",
+      "background": "濃い雨の灰色",
+      "pureWhitespace": true,
+      "displayLayout": {}
+    },
+    {
+      "id": "pause-05",
+      "type": "pause",
+      "afterPanel": "p48",
+      "height390CssPx": 180,
+      "position": "助けを借りてもいいかの返事の後",
+      "purpose": "助けを受け入れた結果として肩が下がる変化を、次の治療へ持ち越す。",
+      "priorClue": "p48の両手と弱まった雨",
+      "nextFirstReveal": "p49で治療を再開する手",
+      "elements": "包帯、二人の手、修復した支柱",
+      "background": "雨音が薄くなった天幕",
+      "pureWhitespace": true,
+      "displayLayout": {}
+    },
+    {
+      "id": "voice-03",
+      "type": "voice",
+      "key": "voice-03-text",
+      "speaker": "ミナ",
+      "text": "ただ\n戻って\nほしかった",
+      "afterPanel": "p56",
+      "height390CssPx": 220,
+      "x": 50,
+      "purpose": "謝罪を受け、待つ間に願っていた本音をミナが返す。次のコマで隠さない条件へ進める。",
+      "displayLayout": {
+        "composition": "c24",
+        "offsetX": 0,
+        "offsetY": 190,
+        "widthPercent": 25
+      }
+    },
+    {
+      "id": "pause-06",
+      "type": "pause",
+      "afterPanel": "p64",
+      "height390CssPx": 240,
+      "position": "木札を帯に携帯する準備の直後",
+      "purpose": "言葉の約束が木札を帯に携帯する行動になったことを確認し、結果の景色へゆっくり移る。",
+      "priorClue": "p64の帯に携帯された一個の木札と空の入口フック",
+      "nextFirstReveal": "p65で水が gutter へ流れる",
+      "elements": "帯の木札、空のフック、包帯、天幕の結び目",
+      "background": "雨の音量が下がる灰色",
+      "pureWhitespace": true,
+      "displayLayout": {}
+    },
+    {
+      "id": "voice-05",
+      "type": "voice",
+      "key": "voice-05-text",
+      "speaker": "",
+      "text": "同じ野営地\n一週間後",
+      "afterPanel": "p72",
+      "height390CssPx": 250,
+      "x": 50,
+      "purpose": "p72の結果から急な翌朝へ飛ばず、一週間後の同じ野営地で傷と木札の状態を引き継ぐ時間・場所の目印を明示する。",
+      "displayLayout": {
+        "composition": "c32",
+        "offsetX": 80,
+        "offsetY": 0,
+        "widthPercent": 20
+      }
+    },
+    {
+      "id": "voice-06",
+      "type": "voice",
+      "key": "voice-06-text",
+      "speaker": "",
+      "text": "同じ野営地\n同日夕方",
+      "afterPanel": "p76",
+      "height390CssPx": 230,
+      "x": 50,
+      "purpose": "p73の一週間後の晴れた朝からp77の同日夕方へ移ることを明示し、翌朝の再巡回や傷の即時復旧と誤読させない。",
+      "displayLayout": {
+        "composition": "c33",
+        "offsetX": 70,
+        "offsetY": 1000,
+        "widthPercent": 28
+      }
+    },
+    {
+      "id": "pause-07",
+      "type": "pause",
+      "afterPanel": "p76",
+      "height390CssPx": 420,
+      "position": "一週間後の晴れた朝から同日夕方の合図まで",
+      "purpose": "p73の一週間後の晴れた朝からp77の同日夕方へ、純白の引き延ばしではなく同日の必要な時間として移る。",
+      "priorClue": "voice-05の一週間後の同じ野営地、p75の出発、voice-06の同日夕方",
+      "nextFirstReveal": "p77で帯から入口フックへ木札を掛ける木のコト音",
+      "elements": "入口の灯り、乾布、作業台、帯の木札、空のフック",
+      "background": "一週間後の晴れた朝から同日夕方の青灰色へ",
+      "pureWhitespace": true,
+      "displayLayout": {}
+    },
+    {
+      "id": "voice-04",
+      "type": "voice",
+      "key": "voice-04-text",
+      "speaker": "ミナ",
+      "text": "……戻った",
+      "afterPanel": "p79",
+      "height390CssPx": 160,
+      "x": 50,
+      "purpose": "p80の短い確認へ向かう感情の余韻。台詞を重ねすぎず、ミナの内側の緩みを編集可能にする。",
+      "displayLayout": {
+        "composition": "c35",
+        "offsetX": 68,
+        "offsetY": 475,
+        "widthPercent": 28
+      }
+    },
+    {
+      "id": "voice-p47",
+      "type": "voice",
+      "key": "p47-d01",
+      "speaker": "ミナ",
+      "text": "その事情も\n先に\n言ってください",
+      "afterPanel": "p47",
+      "beforePanel": "p48",
+      "height390CssPx": 230,
+      "purpose": "傷の事情を受けたミナの言葉を左の空きへ置き 表情と布を持つ手を隠さず 頼みの問いへつなぐ",
+      "displayLayout": {
+        "composition": "c20",
+        "offsetX": 0,
+        "offsetY": 500,
+        "widthPercent": 25
+      }
+    }
+  ],
+  "readableTextKeys": {
+    "rule": "panel.dialogue と auxiliaryBeats.type=voice のkeyを本文編集・可読確認に使う。sound.wordsは本文扱いだが、絵へ描くかHTMLへ置くかは生成時に選ぶ。",
+    "dialogueCount": 59,
+    "voiceCount": 9
+  },
+  "spatialLayout": {
+    "record": "plan.json#beats",
+    "compositionGroups": 35,
+    "readingOrder": "JSON order; same-row short exchanges right to left; offset vertical steps preserve action before result; no later answer above its question",
+    "examples": {
+      "c06": "大きな川の状況へ救助の手元を段差でつなぎ 受け渡しを下へ残す",
+      "c09": "広い治療の対面へ横長の水注ぎを添え その下で痛みを読む",
+      "c13": "結び目の浅い接写 支柱の手 下の制止の大きな反応",
+      "c20": "長い発話を左の空きへ移し ミナの表情と布の手を残す",
+      "c24": "言葉を受けた本音を左の空きへ置き 次の手当てへつなぐ",
+      "c32": "右の空きへ一週間後の時刻を置き 絵と文字を遮らない"
+    },
+    "approval": "user review pending"
+  }
+}

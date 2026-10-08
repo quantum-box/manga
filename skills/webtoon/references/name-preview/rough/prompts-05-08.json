@@ -1,0 +1,119 @@
+{
+  "schema": "webtoon-name-preview-rough-prompts-v1",
+  "generatedAt": "2026-10-08T09:22:56.371493+00:00",
+  "referenceImage": "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/name-preview/sketches.png",
+  "sheets": {
+    "05": {
+      "prompt": "Use case: illustration-story\nAsset type: rough manga storyboard sheet for a smartphone vertical-scroll name preview\nInput images: Image 1 is a character-identity reference only. Use it only to keep Ren's dark short hair/dark tunic and Mina's light bob/white work coat consistent; do not copy its polished rendering.\nPrimary request: Create one landscape storyboard sheet, exactly 1536 x 1024 pixels, containing exactly eight separate independent rough vertical manga thumbnail drawings in a clean 4-column by 2-row grid. Each cell is a distinct 3:4 portrait drawing with thin neutral cell boundaries and narrow white gutters. Reading order is right-to-left in each row: top row from right to left is p33, p34, p35, p36; bottom row from right to left is p37, p38, p39, p40. Do not merge cells and do not omit any cell.\nScene/backdrop: the same rainy field tent repair area in every cell: canvas tent, low work table, wash basin, rope supports, lantern, wet ground. Keep the setting and props consistent.\nSubject: Ren always has dark short hair, dark tunic, injured right forearm; Mina always has a light bob haircut and white work coat. Ren is generally on the left and Mina on the right. Keep the characters recognizable across all eight cells.\nStyle/medium: VERY ROUGH 15-second manga thumbnail pencil storyboard; simple readable human faces and hands; plain white paper; almost line-only graphite; loose but intentional gesture drawing; no polished illustration.\nComposition/framing: leave usable white space near the upper right or upper left of every cell for later HTML vertical speech balloons; keep important faces and hands toward the center or lower half; each cell must show a clearly different action or reaction, with no repeated near-identical pose.\nPanel actions, in the exact grid positions:\n- p33 top-right: Ren holds the support pole with his left hand on the left while Mina threads a fresh cord through a knot on the right; their hands work at different points of the same support; Ren manages the load despite pain and Mina concentrates on precise work.\n- p34 top-second from right: Mina slips on wet ground while reaching upward; Ren catches her elbow with his left hand without fully releasing the pole; both faces show brief surprise.\n- p35 top-second from left: Mina regains balance, gently removes Ren's hand from her elbow, takes the cord back, and keeps her eyes on the knot rather than his face; controlled distance and concealed embarrassment.\n- p36 top-left: Ren keeps the pole steady and looks toward Mina's wet sleeve; Mina tightens the cord while facing in profile; Ren's concern is visible in his softened gaze and guarded posture.\n- p37 bottom-right: Mina uses her body to shield dry supplies while pulling the cord; rain runs from her hair and sleeve; Ren watches from the left while holding the pole, protective tension visible.\n- p38 bottom-second from right: close view of Ren's face framed between pole and rain; he turns toward Mina and no longer pretends to focus only on repair; a quiet question is visible in his expression.\n- p39 bottom-second from left: Mina faces the knot with squared shoulders while Ren remains behind her; her wet fingers make an overly precise final loop, using work to hide emotion.\n- p40 bottom-left: Ren lowers his eyes and softens his grip on the pole while Mina's hand remains on the knot and then pauses; rain blurs the tent opening behind them; the first mutual confession lands in a held reaction.\nLighting/mood: overcast rain, restrained intimacy, awkward concern becoming honest; keep it readable as body language rather than melodrama.\nConstraints: exactly eight independent 3:4 cells, four columns and two rows, thin boundaries and narrow white gutters, consistent characters and setting, distinct action in every cell, white space for later lettering.\nAvoid: any text, Japanese or English lettering, dialogue, captions, speech balloons, sound-effect lettering, symbols inside frames, numbers, panel labels, watermark, logo, extra characters, extra limbs, duplicate poses, photorealism, full rendering, color, gray tone fills, crosshatching, dense shading, decorative UI.",
+      "generatedSourceAbsolute": "/Users/takanorifukuyama/.codex/generated_images/01a119c2-3f3d-7920-857c-f2cb9a040633/exec-a268d166-1f4b-4d7d-bf4b-11be032560e1.png",
+      "targetAbsolute": "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/name-preview/rough/sheet-05.png",
+      "sha256": "e4d98dd42ade873160d2e22ecc99e5ee2648ff11ed33969e03bc25b5caf1fd72",
+      "meta": {
+        "generator": "builtin image_gen",
+        "transparentBackground": false,
+        "widthPx": 1536,
+        "heightPx": 1024,
+        "format": "PNG RGB",
+        "referenceImages": [
+          "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/name-preview/sketches.png"
+        ],
+        "referenceRole": "character identity only",
+        "postProcess": "raw byte copy only; no resize, crop, or pixel edit",
+        "grid": {
+          "columns": 4,
+          "rows": 2,
+          "cellAspect": "3:4",
+          "thinBoundaries": true,
+          "whiteGutters": true
+        },
+        "inspection": "visual inspection completed; eight cells and requested reading order present",
+        "attempts": 1,
+        "retryNote": null
+      }
+    },
+    "06": {
+      "prompt": "Use case: illustration-story. Generate exactly one 1536x1024 landscape rough storyboard sheet with exactly eight independent 3:4 portrait thumbnail cells in a clean 4-column x 2-row grid, thin neutral borders and narrow white gutters. Reading order right-to-left: top row p41,p42,p43,p44; bottom row p45,p46,p47,p48. No text, lettering, speech balloons, sound effects, captions, numbers, labels, watermark, color, tone fills, crosshatching, dense shading, or extra characters. VERY ROUGH 15-second manga thumbnail pencil storyboard, simple readable faces and hands, mostly line-only graphite on white, not polished. Use the referenced image only for identity: Ren dark short hair and dark tunic, injured RIGHT forearm (normal LEFT hand); Mina light bob haircut and white work coat. Keep Ren left and Mina right in the same rainy field tent repair area with canvas tent, low table, wash basin, rope supports and lantern. Leave upper left or upper right white space in every cell for later HTML vertical speech balloons; keep faces/hands central or lower. Each cell must be a distinct action:\np41 top-right: close two-shot after confession, Mina hand on fixed knot right, Ren holding pole left, neither looks away, stopped hands and softened shoulders show embarrassment and relief.\np42 top-second-right: Ren turns toward Mina while steadying pole, open LEFT hand asks for instruction, earnest willing expression.\np43 top-second-left: Mina lays fresh cord across Ren's LEFT hand on pole, showing where to hold while protecting injured RIGHT side; coordinated hands.\np44 top-left: Ren steadies pole with LEFT hand, Mina pulls cord tight, diagonal rope crosses focused partial faces, support settles.\np45 bottom-right: Mina notices fresh blood through Ren's RIGHT sleeve while tying final knot; controlled concern; Ren does not hide arm and moves it forward for treatment.\np46 bottom-second-right: close Ren's RIGHT forearm and Mina's hand, river mud under sleeve and torn reed in wrap clearly show rescue injury; her touch gentler.\np47 bottom-second-left: Mina turns clean cloth toward wound and looks levelly at Ren; he sits still, no longer guards arm, firm caring request for honest information and his beginning nod.\np48 bottom-left: Ren extends injured RIGHT forearm across low table; Mina receives it with both hands; repaired pole behind, easing rain, Ren's shoulders fully drop.\nKeep setting, identities, proportions, gutters and distinct actions consistent across cells. Avoid duplicate poses and full rendering.",
+      "generatedSourceAbsolute": "/Users/takanorifukuyama/.codex/generated_images/01a119c2-3f3d-7920-857c-f2cb9a040633/exec-04131bd8-4485-45a4-9c7f-ef9d9a2612e9.png",
+      "targetAbsolute": "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/name-preview/rough/sheet-06.png",
+      "sha256": "2fe411f81ea51a540f54e5b10c900b74e52c143efbf78d7261cb4c2564acaf32",
+      "meta": {
+        "generator": "builtin image_gen",
+        "transparentBackground": false,
+        "widthPx": 1536,
+        "heightPx": 1024,
+        "format": "PNG RGB",
+        "referenceImages": [
+          "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/name-preview/sketches.png"
+        ],
+        "referenceRole": "character identity only",
+        "postProcess": "raw byte copy only; no resize, crop, or pixel edit",
+        "grid": {
+          "columns": 4,
+          "rows": 2,
+          "cellAspect": "3:4",
+          "thinBoundaries": true,
+          "whiteGutters": true
+        },
+        "inspection": "visual inspection completed; eight cells and requested reading order present",
+        "attempts": 2,
+        "retryNote": "first built-in request returned network error; second built-in request succeeded"
+      }
+    },
+    "07": {
+      "prompt": "Use case: illustration-story\nAsset type: rough manga storyboard sheet for a smartphone vertical-scroll name preview\nInput images: Image 1 is a character-identity reference only. Use it only to keep Ren's dark short hair/dark tunic and Mina's light bob/white work coat consistent; do not copy its polished rendering.\nPrimary request: Create one landscape storyboard sheet, exactly 1536 x 1024 pixels, containing exactly eight separate independent rough vertical manga thumbnail drawings in a clean 4-column by 2-row grid. Each cell is a distinct 3:4 portrait drawing with thin neutral cell boundaries and narrow white gutters. Reading order is right-to-left in each row: top row from right to left is p49, p50, p51, p52; bottom row from right to left is p53, p54, p55, p56. Do not merge cells and do not omit any cell.\nScene/backdrop: the same rainy field tent interior in every cell: repaired canvas support, low treatment table, wash basin, lantern, wet tent opening. This group is the treatment and emotional truth scene after Ren has accepted help.\nSubject: Ren always has dark short hair, dark tunic, clean bandage on injured RIGHT forearm; Mina always has a light bob haircut and white work coat. Ren generally sits or faces from the left, Mina works from the right. Keep identities and props consistent. The repaired support remains visible where described.\nStyle/medium: VERY ROUGH 15-second manga thumbnail pencil storyboard; simple readable human faces and hands; plain white paper; almost line-only graphite; loose intentional gesture drawing; no polished illustration.\nComposition/framing: leave usable white space near the upper right or upper left of every cell for later HTML vertical speech balloons; keep important faces and hands toward center or lower half; show a clearly different action or reaction in every cell.\nPanel actions, in the exact grid positions:\n- p49 top-right: treatment resumes at the low table; Mina cleans Ren's wound on the right with controlled pressure while Ren on the left keeps eyes open and lets pain show; her hand pauses to check his shallow breath.\n- p50 top-second-right: close two-shot; Ren's face tightens on the left, his bandaged right arm in Mina's hands, and he looks at her instead of turning away; honest pain and trust.\n- p51 top-second-left: Mina softens her grip and adjusts gauze; her composed face has warmer eyes; Ren watches her hands and his breathing begins to deepen.\n- p52 top-left: Mina looks directly at Ren across the table while her hands remain on the bandage; repaired support behind her; she asks whether he was truly afraid, with care anchoring the question; Ren looks toward the tent exit searching for words.\n- p53 bottom-right: Ren looks toward the rain-dark open flap on the left, earlier practiced smile gone; cleanly bandaged right arm rests openly on table; he admits fear of not returning.\n- p54 bottom-second-right: Mina's hands remain still over the bandage on the right; face turned down with gray-sky reflection in eyes; her paused treatment and held breath prepare her own confession.\n- p55 bottom-second-left: Mina raises eyes to Ren on the right while cloth remains between them; formal shoulders break slightly; Ren listens without interrupting; she admits fear of waiting.\n- p56 bottom-left: Ren faces Mina directly on the left; his open left hand rests beside table instead of gripping; Mina's hands return to bandage; he acknowledges frightening her, and she resumes tying.\nLighting/mood: gray rain, close quiet treatment, pain turning into mutual vulnerability; restrained and sincere, no melodrama; make feelings readable through eye direction, hands, shoulders, breath, and distance.\nConstraints: exactly eight independent 3:4 cells, four columns and two rows, thin boundaries and narrow white gutters, consistent characters and setting, distinct action in every cell, white space for later lettering.\nAvoid: any text, Japanese or English lettering, dialogue, captions, speech balloons, sound-effect lettering, symbols inside frames, numbers, panel labels, watermark, logo, extra characters, extra limbs, duplicate poses, photorealism, full rendering, color, gray tone fills, crosshatching, dense shading, decorative UI.",
+      "generatedSourceAbsolute": "/Users/takanorifukuyama/.codex/generated_images/01a119c2-3f3d-7920-857c-f2cb9a040633/exec-8a37757b-a026-4111-9d76-fdb578606576.png",
+      "targetAbsolute": "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/name-preview/rough/sheet-07.png",
+      "sha256": "b8794a1850659e6a71bfb2b87dc32336100cfe796db8e07146c1aa7f330fe3ec",
+      "meta": {
+        "generator": "builtin image_gen",
+        "transparentBackground": false,
+        "widthPx": 1536,
+        "heightPx": 1024,
+        "format": "PNG RGB",
+        "referenceImages": [
+          "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/name-preview/sketches.png"
+        ],
+        "referenceRole": "character identity only",
+        "postProcess": "raw byte copy only; no resize, crop, or pixel edit",
+        "grid": {
+          "columns": 4,
+          "rows": 2,
+          "cellAspect": "3:4",
+          "thinBoundaries": true,
+          "whiteGutters": true
+        },
+        "inspection": "visual inspection completed; eight cells and requested reading order present",
+        "attempts": 1,
+        "retryNote": null
+      }
+    },
+    "08": {
+      "prompt": "Use case: illustration-story\nAsset type: rough manga storyboard sheet for a smartphone vertical-scroll name preview\nInput images: Image 1 is a character-identity reference only. Use it only to keep Ren's dark short hair/dark tunic and Mina's light bob/white work coat consistent; do not copy its polished rendering.\nPrimary request: Create one landscape storyboard sheet, exactly 1536 x 1024 pixels, containing exactly eight separate independent rough vertical manga thumbnail drawings in a clean 4-column by 2-row grid. Each cell is a distinct 3:4 portrait drawing with thin neutral cell boundaries and narrow white gutters. Reading order is right-to-left in each row: top row from right to left is p57, p58, p59, p60; bottom row from right to left is p61, p62, p63, p64. Do not merge cells and do not omit any cell.\nScene/backdrop: the same rainy field tent interior immediately after treatment: repaired canvas support, low table, wash basin, lantern, tent entrance and one small wooden return tag with one cord. Keep the tag continuous and singular: at p61 it is still hanging on the entrance hook, at p62 Ren removes that same tag from the hook, at p63 Mina places that same tag in Ren's left hand, at p64 Ren attaches that same tag to his belt while the entrance hook is empty. Do not draw a second tag.\nSubject: Ren always has dark short hair, dark tunic, a clean bandage on injured RIGHT forearm; Mina always has a light bob haircut and white work coat. Ren generally faces from the left and Mina works from the right. Keep the repaired support, clean bandage, entrance hook and lantern consistent.\nStyle/medium: VERY ROUGH 15-second manga thumbnail pencil storyboard; simple readable human faces and hands; plain white paper; almost line-only graphite; loose intentional gesture drawing; no polished illustration.\nComposition/framing: leave usable white space near the upper right or upper left of every cell for later HTML vertical speech balloons; keep important faces and hands toward center or lower half; show a clearly different action or reaction in every cell.\nPanel actions, in the exact grid positions:\n- p57 top-right: Mina wraps a clean bandage around Ren's RIGHT forearm on the right; Ren watches the layers build from the left, both calmer and attentive; her care becomes a condition for returning honestly.\n- p58 top-second-right: Ren looks at the freshly wrapped arm, then back to Mina; damp dark coat, shoulders no longer braced for departure; he admits he hid the pain because saying it aloud felt like he would fall apart.\n- p59 top-second-left: Mina presses the final gauze edge flat with two fingers, careful not to over-tighten; Ren's open LEFT hand rests near the table; she translates care into a request to rely on her.\n- p60 top-left: Ren points with his LEFT index finger toward the tent entrance and lantern, asking for a concrete return boundary instead of a vague promise; Mina shifts her gaze toward the light.\n- p61 bottom-right: Mina points to the single small wooden return tag still hanging on the entrance hook at the right, with a dry lantern nearby; Ren listens from the left, bandaged forearm supported; the hook holds exactly one tag.\n- p62 bottom-second-right: Ren lifts that same single wooden return tag from the entrance hook with his uninjured LEFT hand; he examines its cord, Mina watches; the hook is now visibly empty.\n- p63 bottom-second-left: Mina places the same single wooden tag and cord into Ren's LEFT hand across the low table; the empty entrance hook, repaired support, and dry lantern are visible behind; Ren prepares to carry it on his belt.\n- p64 bottom-left: Ren attaches that same single wooden return tag to his belt with his LEFT hand; the entrance hook is empty; Mina checks the cord once and lets go; rain softens outside; his posture accepts the concrete promise.\nLighting/mood: overcast rain easing into practical calm and mutual trust; restrained warmth, clear handoff from abstract promise to observable action; convey feeling through eyes, shoulders and hands.\nConstraints: exactly eight independent 3:4 cells, four columns and two rows, thin boundaries and narrow white gutters, consistent characters and setting, one singular wooden tag tracked across the last four cells, clean bandage from p57 onward, distinct action in every cell, white space for later lettering.\nAvoid: any text, Japanese or English lettering, dialogue, captions, speech balloons, sound-effect lettering, symbols inside frames, numbers, panel labels, watermark, logo, extra characters, extra limbs, duplicate poses, a second wooden tag, photorealism, full rendering, color, gray tone fills, crosshatching, dense shading, decorative UI.",
+      "generatedSourceAbsolute": "/Users/takanorifukuyama/.codex/generated_images/01a119c2-3f3d-7920-857c-f2cb9a040633/exec-c6bdaf9d-6e1f-4f35-9b30-a110d61b24ab.png",
+      "targetAbsolute": "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/name-preview/rough/sheet-08.png",
+      "sha256": "6e85d201497ef2f464f1b06f42f6034fc7553bdee7ee0b7d3e982b5022511453",
+      "meta": {
+        "generator": "builtin image_gen",
+        "transparentBackground": false,
+        "widthPx": 1536,
+        "heightPx": 1024,
+        "format": "PNG RGB",
+        "referenceImages": [
+          "/Users/takanorifukuyama/.codex/worktrees/4c8a/manga/skills/webtoon/references/name-preview/sketches.png"
+        ],
+        "referenceRole": "character identity only",
+        "postProcess": "raw byte copy only; no resize, crop, or pixel edit",
+        "grid": {
+          "columns": 4,
+          "rows": 2,
+          "cellAspect": "3:4",
+          "thinBoundaries": true,
+          "whiteGutters": true
+        },
+        "inspection": "visual inspection completed; eight cells and requested reading order present",
+        "attempts": 1,
+        "retryNote": null
+      }
+    }
+  }
+}
