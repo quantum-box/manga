@@ -1,51 +1,115 @@
 {
   "title": "天魔、二周目。",
   "chapter": 3,
-  "subtitle": "隠し宝庫、全部もらう",
+  "subtitle": "俺の罪は誰のもの",
+  "revision": "full-rebuild-2026-10-07",
   "artwork": [
     {
-      "file": "art/01.png",
-      "width": 726,
-      "height": 2167,
-      "sha256": "0fa5be799204d8ee7810945374bec6ba7a3bdbc4f1d39a25e47a7e40adc1556b"
+      "id": "01",
+      "file": "art/rebuild-01-clean.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "5c87c38d8e4ed877b7c65d934ca0d75ab026a01d02b3a8e38a18e73159e48bf3"
     },
     {
-      "file": "art/02.png",
-      "width": 725,
-      "height": 2167,
-      "sha256": "bb9fd5e2cfc8c417492606d3c3d8678fafa584f989a193c58343aa004e829f87"
+      "id": "02",
+      "file": "art/rebuild-02-cheek.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "e2ab71c7f305942a6a60aa1b1c3949244cd1028dc86118b921da58a34969d920"
     },
     {
-      "file": "art/04-pacing.png",
-      "width": 725,
-      "height": 2167,
-      "sha256": "e96d2e3b0d4962f71b6f5ea5e9bd6fde7beb59643359006577794a68b3ce870d"
+      "id": "03",
+      "file": "art/rebuild-03-clean.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "61bc4ba9a1656c6352ea820bcbadbda6e7e5e5d5484e07991b66f136bc38c9e0"
     },
     {
-      "file": "art/03.png",
-      "width": 733,
-      "height": 2146,
-      "sha256": "2f4ad8204f4e1d3515abac08fbc552801f9b813dab1b93b875c5a7084036cd55"
+      "id": "04",
+      "file": "art/rebuild-04-clean.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "3a363a2ef5e591212e376d92b11617c1f9574159a363f4a285e27dfb250c9973"
+    },
+    {
+      "id": "05",
+      "file": "art/rebuild-05-clean.png",
+      "width": 724,
+      "height": 2172,
+      "sha256": "6bded07138bde55595b96666eb012212d114804d9353f21bb420ed0f853c8e75"
+    },
+    {
+      "id": "06",
+      "file": "art/rebuild-06-clean.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "4f1caf26c72850014e093c7397258ea4e485e1bdc68341ee6dc577ac874d40a8"
     }
   ],
-  "generatedOriginals": 4,
-  "vignettes": 16,
-  "lettering": "vertical Japanese dialogue in image originals",
-  "readingTimeMeasured": false,
-  "protectedReveal": null,
   "readingOrder": [
     {
-      "scene": 1
+      "id": "beat-01-1",
+      "asset": "01",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 0,
+      "purpose": "移動と着座を描いて会話の場所を固定"
     },
     {
-      "scene": 2
+      "id": "beat-02-1",
+      "asset": "02",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 220,
+      "purpose": "罪を言葉と物へ分ける"
     },
     {
-      "scene": 4
+      "id": "beat-03-1",
+      "asset": "03",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 390,
+      "purpose": "罪状の根拠を現物で見る"
     },
     {
-      "scene": 3
+      "id": "beat-04-1",
+      "asset": "04",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 320,
+      "purpose": "攻略知識だけでは現物を説明できない"
+    },
+    {
+      "id": "beat-05-1",
+      "asset": "05",
+      "range": [
+        0,
+        2172
+      ],
+      "gap390": 240,
+      "purpose": "壊さず観察し疑問を持つ"
+    },
+    {
+      "id": "beat-06-1",
+      "asset": "06",
+      "range": [
+        0,
+        1536
+      ],
+      "gap390": 400,
+      "purpose": "安全と自由の違いを受け止める"
     }
   ],
-  "revision": "pacing-expansion-2026-10-06"
+  "lettering": "integrated vertical Japanese in immutable image originals",
+  "startState": "停止した処刑のあと。同日午前、ハンは水の椀を返す。",
+  "endState": "盗難の現物と不自然な破断を見た。審理まで山門に留まることを求められる。"
 }
