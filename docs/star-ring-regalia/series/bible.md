@@ -15,14 +15,14 @@ episode_count_constraint: minimum
 scope_source: user
 working_outline_episode_count: 240
 current_request: complete_and_publish_episodes_01_through_10
-current_deliverable: episode_02_for_publication
+current_deliverable: episode_01_expansion_for_publication
 delivery_unit: one_episode
 advance_script_range: [1, 10]
-art_status: episodes_01_and_02_complete
-publication_status: episode_01_verified_episode_02_pending_merge_and_upload
+art_status: episode_01_expansion_complete_episode_02_revision_next
+publication_status: episodes_01_and_02_published_episode_01_replacement_pending
 ```
 
-企画・設定・240話の仮ロードマップを作成後、ユーザーが「めちゃくちゃ良さそう！ 続けて」と指定。第1〜10話の脚本と絵コンテを設計済み。ユーザーの2026年10月8日の指定により、一話ずつ作画・表示確認、PR、CI・レビュー、マージ、サーバー公開を完了してから次話の作画へ進む。今回の依頼範囲は第10話まで。第1話は公開・確認済みで、現在の納品対象は第2話。進行状態は[制作台帳](../../../examples/star-ring-regalia/production/status.md)を正本とする。240話は構成を検証するための仮の総数であり、ユーザーが240話での完結を指定したわけではない。
+企画・設定・240話の仮ロードマップを作成後、ユーザーが「めちゃくちゃ良さそう！ 続けて」と指定。第1〜10話の脚本と絵コンテを設計済み。一話ずつ作画・表示確認、PR、CI・レビュー、マージ、サーバー公開を完了してから次話の作画へ進む。今回の依頼範囲は第10話まで。第1・2話の公開後、「短すぎて没入感がない。余白や効果音、しっかりした世界観の説明が必要。特に第1話」という指定を受け、第1話を拡充し、第2話も続けて改稿する。進行状態は[制作台帳](../../../examples/star-ring-regalia/production/status.md)を正本とする。240話は構成を検証するための仮の総数であり、ユーザーが240話での完結を指定したわけではない。
 
 - [世界観・魔法・技術・ゲームのルール](world.md)
 - [主要人物と関係](characters.md)

@@ -33,7 +33,8 @@ def build_episode(ep):
         gap = asset['gap_before_390'] if i else 0
         if gap:
             parts.append(f'<div class="pause" style="--gap:{gap/3.9:.6f}cqw" data-pacing-purpose="{html.escape(asset["pacing_purpose"], quote=True)}" aria-hidden="true"></div>')
-        parts.append(f'<figure id="{asset["id"]}" data-reveal="{str(asset["reveal"]).lower()}"><img src="art/{adopted}" width="{width}" height="{height}" alt="{html.escape(asset["alt"], quote=True)}" loading="eager" decoding="sync"></figure>')
+        loading = 'eager' if i == 0 else 'lazy'
+        parts.append(f'<figure id="{asset["id"]}" data-reveal="{str(asset["reveal"]).lower()}"><img src="art/{adopted}" width="{width}" height="{height}" alt="{html.escape(asset["alt"], quote=True)}" loading="{loading}" decoding="async"></figure>')
         geometry.append({'id':asset['id'],'adoptedArt':f'art/{adopted}','nativeWidth':width,'nativeHeight':height,'gapBefore390':gap,'pacingPurpose':asset['pacing_purpose'],'reveal':asset['reveal']})
     nav = []
     if number > 1 and (ROOT/f'episode-{number-1:02d}/index.html').is_file():
