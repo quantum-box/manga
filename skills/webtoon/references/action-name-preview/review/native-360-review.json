@@ -2,7 +2,7 @@
   "schema": "battle-name-preview-motion-effect-native-review/v1",
   "reviewedAt": "2026-10-09",
   "status": "pass-no-material-visual-blocker",
-  "scope": "Final visual review of the current action effects at 360 CSS px for c02 and c05, with 390 CSS px c06 used to verify the quiet p21 result. The 24-panel asset remains an unadopted partial name preview.",
+  "scope": "Final visual review of the current action effects at 360 CSS px for c02 and c05, with 390 CSS px c06 used to verify the quiet p21 result. The visual review covers a 24-panel partial name preview; full-episode and finished-art approval remain outside its scope.",
   "actualReviewedFiles": [
     "skills/webtoon/references/action-name-preview/review/composition-360-c02.png",
     "skills/webtoon/references/action-name-preview/review/composition-390-c02.png",
@@ -93,5 +93,26 @@
     "gitRef": "8497408e",
     "path": "skills/webtoon/references/action-name-preview/review/native-360-review.json",
     "scope": "Unchanged 24-cut content and panel composition; this review covers motion effects and p21 result"
+  },
+  "adoptionRecord": {
+    "status": "accepted_combat_direction_reference",
+    "acceptedAt": "2026-10-09",
+    "userResponse": "そうそう！やっぱ戦いシーンは カッケー！！！って思わせないと",
+    "acceptedScope": [
+      "panel_layout",
+      "combat_motion_effect_direction"
+    ],
+    "fullEpisodeApproval": false,
+    "finishedArt": "not_started",
+    "publication": "not_requested"
+  },
+  "metadataOnlyUpdate": {
+    "updatedAt": "2026-10-09",
+    "scope": "Adoption status only; original visual findings and proofHashes are retained from the review before the adoption metadata change",
+    "currentSourceHashes": {
+      "index.html": "02f77a6188bc42e236a9acbaf589ffe57ee60f7dd3ee4301ccd488823c420f90",
+      "plan.json": "5991ed61296c89443818620f5e9b2eb76739f9218fc24767236626434bcd5aaf"
+    },
+    "newVisualReviewPerformed": false
   }
 }

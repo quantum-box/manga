@@ -70,6 +70,8 @@ description: "Plan, create, or revise smartphone-first vertical-scroll comics (W
 
 作画の指示を組むときは[プロンプトの組み方](references/art-prompts.md)、HTMLで仕上げるときは[文字組みと表示確認](references/mobile-reader.md)を読む。研究や投稿先の指定がある場合だけ、実例に記載した一次資料や投稿先の最新資料を確認する。
 
+戦闘・アクションのネームや作画では[動きと見せ場のエフェクト](references/art-prompts.md#動きと見せ場のエフェクト)を読み、動きを追えることと「カッケー！！！」と思える主動作を両立する。
+
 日本語の会話コマでは[承認された縦書きの実例](references/vertical-lettering.md)を読み、同梱画像を見る。絵・吹き出し・セリフを一緒に生成した、今回のユーザーが採用した仕上げの基準。絵柄、登場人物、吹き出しの数まで固定する見本ではない。
 
 吹き出しを設計・修正するときは[声と感情に合わせる吹き出し](references/speech-balloons.md)を読む。通常の会話、柔らかな声、疲れた声、叫び、心の声を、輪郭・線の太さ・尾で使い分ける実例を同梱する。

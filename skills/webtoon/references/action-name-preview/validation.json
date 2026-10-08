@@ -1,7 +1,7 @@
 {
   "schema": "webtoon-action-name-validation/v1",
   "scope": "single_combat_scene_partial_trial",
-  "adoption": "pending_user_response",
+  "adoption": "accepted_combat_direction_reference",
   "finishedArt": "not_started",
   "publication": "not_requested",
   "episodeLength": {
@@ -127,13 +127,12 @@
   ],
   "limitations": [
     "Physical phone not tested",
-    "Rough identity and held-hand laterality need final-art verification",
-    "User has not adopted this composition"
+    "Rough identity and held-hand laterality need final-art verification"
   ],
   "readerTabRefresh": "not_performed; manually reload the existing tab or open the updated HTML link",
   "sourceSha256": {
     "index.html": "02f77a6188bc42e236a9acbaf589ffe57ee60f7dd3ee4301ccd488823c420f90",
-    "plan.json": "944025bd798aaf9993db20f780b53190cfbfb73271b4fb73e5519727ce7566df"
+    "plan.json": "5991ed61296c89443818620f5e9b2eb76739f9218fc24767236626434bcd5aaf"
   },
   "reviewedAt": "2026-10-09",
   "dramaticSfxFontCssPx": {
@@ -154,8 +153,8 @@
     "overlapCssPx": 150
   },
   "feedback": {
-    "panelLayout": "positive_user_feedback_preserved",
-    "effectRevision": "updated_preview_awaiting_response",
+    "panelLayout": "accepted_direction_preserved",
+    "effectRevision": "accepted_bold_readable_combat_direction",
     "finishedArt": "not_started"
   },
   "motionEffects": {
@@ -199,5 +198,28 @@
       ],
       "applied": "Preserve separate sparse voice and quiet result around dense actions"
     }
+  },
+  "adoptionRecord": {
+    "status": "accepted_combat_direction_reference",
+    "acceptedAt": "2026-10-09",
+    "userResponse": "そうそう！やっぱ戦いシーンは カッケー！！！って思わせないと",
+    "acceptedScope": [
+      "panel_layout",
+      "combat_motion_effect_direction"
+    ],
+    "fullEpisodeApproval": false,
+    "finishedArt": "not_started",
+    "publication": "not_requested"
+  },
+  "originalVisualVerificationSourceSha256": {
+    "index.html": "02f77a6188bc42e236a9acbaf589ffe57ee60f7dd3ee4301ccd488823c420f90",
+    "plan.json": "944025bd798aaf9993db20f780b53190cfbfb73271b4fb73e5519727ce7566df"
+  },
+  "metadataOnlyUpdate": {
+    "updatedAt": "2026-10-09",
+    "baselineGitRef": "3197f6276970e691b1c147ec81ef640540f6c291",
+    "scope": "User adoption and skill-reference metadata only; rendered HTML and all source/review images are byte-identical to the visual verification baseline",
+    "renderedHtmlByteIdentityVerified": true,
+    "newBrowserOrVisualReviewPerformed": false
   }
 }
