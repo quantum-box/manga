@@ -1,0 +1,136 @@
+{
+  "schema": "webtoon-action-name-validation/v1",
+  "scope": "single_combat_scene_partial_trial",
+  "adoption": "pending_user_response",
+  "finishedArt": "not_started",
+  "publication": "not_requested",
+  "episodeLength": {
+    "applicable": false,
+    "reason": "戦闘一場面の部分試作 既存作品の一話ではない",
+    "effectivePanels": 24
+  },
+  "sources": {
+    "actualPngCount": 5,
+    "independentDrawnMoments": 24,
+    "unusedSourceCell": "sheet-04/r1/c2 is replaced by counter.png; other five source cells remain in use",
+    "rawPngBytesUnchanged": true
+  },
+  "rendered": {
+    "panels": 24,
+    "voices": 8,
+    "pauses": 6,
+    "compositionGroups": 6,
+    "domBeats": 38
+  },
+  "metrics": {
+    "390": {
+      "readerWidthCssPx": 390,
+      "bodyHeightCssPx": 9405.438,
+      "contentHeightCssPx": 6941.972,
+      "pureGapHeightCssPx": 2463.466,
+      "explicitPauseHeightCssPx": 925,
+      "nonPauseHeightIsPartialOnly": true,
+      "allImagesLoaded": true,
+      "imageFailureCount": 0,
+      "scrollWidth": 390
+    },
+    "360": {
+      "readerWidthCssPx": 360,
+      "bodyHeightCssPx": 8681.906,
+      "contentHeightCssPx": 6410.213,
+      "pureGapHeightCssPx": 2271.693,
+      "explicitPauseHeightCssPx": 853.813,
+      "nonPauseHeightIsPartialOnly": true,
+      "allImagesLoaded": true,
+      "imageFailureCount": 0,
+      "scrollWidth": 360
+    }
+  },
+  "spaceMethod": "Generated art display windows + actual glyph/SFX/speaker bounds + outside balloons are unioned over the whole story flow. Empty voice containers are not content. The remaining vertical bands are counted once as pure gaps. Full-width large blank native bands were visually checked and no additional large bands need exclusion. The dialogue/font/browser raw bounds remain in review/browser-metrics.json.",
+  "checks": {
+    "htmlLoadedWithSetContent": true,
+    "noFileUrlOrGoto": true,
+    "panelCount24": true,
+    "allImagesLoadedAtBothWidths": true,
+    "horizontalOverflowAbsent": true,
+    "overlayTextPositionAndFontChecked": true,
+    "overlayOutsideReaderCandidatesSurfaced": true,
+    "dialogueAndVoiceFontRange19To22": true,
+    "notesAndMeasurementToggleStable": true,
+    "stagedWindowsHave150pxOverlap": true,
+    "domOrderMatchesPlanIncludingAuxiliaryBeats": true,
+    "compositionGroupsChecked": true,
+    "compositionMembersAbsolute": true,
+    "compositionNaturalAndBoundingRectsCaptured": true,
+    "compositionOverlapCandidatesSurfaced": true,
+    "sourceImageHashesChecked": true,
+    "sourceDimensionsAndCropChecked": true,
+    "dprAndResizeChecked": true,
+    "desktop390Checked": true,
+    "brokenImageCheckSkippedForPartialTrial": true
+  },
+  "visualReview": {
+    "root390": {
+      "files": [
+        "review/window-390-000.png",
+        "review/window-390-001.png",
+        "review/window-390-002.png",
+        "review/window-390-003.png",
+        "review/window-390-004.png",
+        "review/window-390-005.png",
+        "review/window-390-006.png",
+        "review/window-390-007.png",
+        "review/window-390-008.png",
+        "review/window-390-009.png",
+        "review/window-390-010.png",
+        "review/window-390-011.png",
+        "review/window-390-012.png",
+        "review/window-390-013.png"
+      ],
+      "updatedSections": [
+        "p03 SFX moved inside reader",
+        "p12 inner voice moved outside guard mask",
+        "p20 single sword contact redrawn; latest native c05 checked"
+      ],
+      "compositionProofs": [
+        "review/composition-390-c01.png",
+        "review/composition-390-c02.png",
+        "review/composition-390-c03.png",
+        "review/composition-390-c04.png",
+        "review/composition-390-c05.png",
+        "review/composition-390-c06.png"
+      ]
+    },
+    "independent360": {
+      "result": "pass_with_partial_trial_scope",
+      "initialContinuousWindows": "READY2 000–013",
+      "finalChangedSection": "READY3 counter.png composition-360-c05 and window-360-009/010",
+      "file": "review/native-360-review.json",
+      "p20Blocker": "resolved"
+    },
+    "continuity": {
+      "result": "pass_with_scope_note",
+      "file": "review/continuity-review.json"
+    }
+  },
+  "remainingDisplayCandidates": [
+    {
+      "location": "c01 p02/p03",
+      "reason": "The stopped-foot inset shares the lower-left background of the broader scene; faces hands and weapons remain readable"
+    },
+    {
+      "location": "c04/c05 lower edge",
+      "reason": "Contact SFX extends a few pixels from the art into the following pause. The same sound appears once and ends before the next quiet image"
+    }
+  ],
+  "limitations": [
+    "Physical phone not tested",
+    "Rough identity and held-hand laterality need final-art verification",
+    "User has not adopted this composition"
+  ],
+  "readerTabRefresh": "not_performed; the HTML link opens the new trial manually",
+  "sourceSha256": {
+    "index.html": "acec8a3affccfddb8c639e8d556bd68bba5c54bfda69ff6ad89bd10d58c4869b",
+    "plan.json": "599706db52ea868955e2318f5eb212633c69c9c08e0b5f9c0b3df53856622669"
+  }
+}

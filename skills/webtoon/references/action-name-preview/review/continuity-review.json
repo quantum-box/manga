@@ -1,0 +1,73 @@
+{
+  "schema": "battle-continuity-review/v1",
+  "title": "橋上の一歩",
+  "scope": "rough-art-and-name-preview-continuity",
+  "checked": [
+    "skills/webtoon/references/action-name-preview/rough/sheet-01.png",
+    "skills/webtoon/references/action-name-preview/rough/sheet-02.png",
+    "skills/webtoon/references/action-name-preview/rough/sheet-03.png",
+    "skills/webtoon/references/action-name-preview/rough/sheet-04.png",
+    "skills/webtoon/references/action-name-preview/rough/counter.png",
+    "skills/webtoon/references/action-name-preview/index.html",
+    "skills/webtoon/references/action-name-preview/plan.json",
+    "skills/webtoon/references/action-name-preview/storyboard.md"
+  ],
+  "method": "Native visual inspection of all four 3x2 rough sheets plus the replacement p20 counter image and the assembled 390px full strip and action windows",
+  "overall_status": "pass_with_scope_note",
+  "summary": "p07の落下 p13から同じ剣への接近 p14の剣と段差の発見 p16のしゃがんだ拾い上げ p17の剣を持った跳躍 p20の一振りによる槍の反転 p21以降の剣を下げた通過が連続して読める",
+  "checks": {
+    "sword_state": {
+      "status": "pass",
+      "evidence": {
+        "p01_p06": "アキの手元に剣がある",
+        "p07_p15": "剣が橋面中央右から段差近くへ置かれている",
+        "p16": "アキが同じ位置でしゃがみ剣の柄を握る",
+        "p17_p19": "跳躍と着地のラフにアキが剣を持つ状態が残る",
+        "p20": "修正版counter.pngに一つの握りと連続した一本の刃があり槍との交差点が一箇所に見える",
+        "p21_p24": "p20後に剣を下げて歩く状態へ戻る"
+      }
+    },
+    "movement_axis": {
+      "status": "pass",
+      "evidence": {
+        "p01_p04": "アキ右手前 門番左奥 鐘楼奥の地理が一枚目から保たれる",
+        "p05_p12": "槍の左上から右下の軌道とアキの右側への退避が続く",
+        "p13_p17": "同じ中央右の剣と段差へ押されそこから左上へ跳ぶ",
+        "p19_p21": "アキが門番の内側へ入り修正版p20で槍が右へ流れ p21で低く外れた状態になる",
+        "p23_p24": "アキが画面奥の鐘楼へ向かい門番を後方に残す"
+      }
+    },
+    "pickup_causality": {
+      "status": "pass",
+      "evidence": "p07の剣の落下位置がp08 p09 p11 p12 p13 p14 p15で同じ中央右の橋面として再提示され p16で手が剣へ届く"
+    },
+    "p20_contact": {
+      "status": "pass",
+      "evidence": "修正版rough/counter.pngは一つの握りと連続した一本の刃を明示し 槍との交差を一箇所へ絞っている 手の左右は背面構図のため判定していない",
+      "impact": "p19で持った剣がp20で消えず 一本の剣が槍を右へ弾く山場として読める",
+      "required_followup": "本作画ではこの一箇所の接触と右方向の槍軌道を維持する"
+    },
+    "p20_to_p21_result": {
+      "status": "pass",
+      "evidence": "修正版p20で刃と槍が一箇所で交差し槍の長い軸が右へ伸び p21で右手すり側へ低く外れた状態へ続く",
+      "required_followup": "本作画でも刃の交差点と右方向の槍軌道を一つの動線にする"
+    },
+    "motivation_and_end": {
+      "status": "pass",
+      "evidence": "p01の鐘楼と夕日 p04の鐘が鳴る前に渡るんだ p23 p24の鐘楼へ向かう背中で目的と結果がつながる"
+    }
+  },
+  "material_mismatches": [],
+  "confirmed_no_material_mismatch": [
+    "p07からp16までの一振りの剣の状態",
+    "p16拾い上げからp17跳躍への順序",
+    "p13からp15の段差と剣の同位置",
+    "p01からp04の鐘楼と右から左の侵入",
+    "p23からp24の鐘楼方向への移動"
+  ],
+  "not_verified": [
+    "完成作画での手の左右と細部の接触表現",
+    "実機での表示",
+    "通常話の分量基準"
+  ]
+}

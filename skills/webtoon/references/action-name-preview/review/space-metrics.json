@@ -1,0 +1,220 @@
+{
+  "schema": "webtoon-action-name-preview-space/v1",
+  "classification": "partial-trial-24-cuts",
+  "viewports": {
+    "360": {
+      "schema": "webtoon-action-name-preview-space/v1",
+      "classification": "partial-trial-24-cuts",
+      "method": "Union of panel crop-window (or uncropped panel) vertical bounds, all text-node bounds, and dialogue balloon bounds that fall outside panel content; all intervals clamped to the flow. Explicit pauses are reported but not subtracted from occupied content.",
+      "viewportWidth": 360,
+      "flowHeight": 8681.906,
+      "explicitPauseHeight": 853.813,
+      "nonPausePartialHeight": 7828.093,
+      "occupiedUnionHeightCssPx": 6410.213,
+      "contentHeightCssPx": 6410.213,
+      "pureGapHeightCssPx": 2271.693,
+      "unoccupiedUnionHeightCssPx": 2271.693,
+      "pauseIntervals": [
+        {
+          "top": 1087.297,
+          "bottom": 1174.984,
+          "height": 87.687
+        },
+        {
+          "top": 2353.859,
+          "bottom": 2501.547,
+          "height": 147.688
+        },
+        {
+          "top": 3697.484,
+          "bottom": 3803.625,
+          "height": 106.141
+        },
+        {
+          "top": 5022.281,
+          "bottom": 5100.734,
+          "height": 78.453
+        },
+        {
+          "top": 6369.703,
+          "bottom": 6563.547,
+          "height": 193.844
+        },
+        {
+          "top": 8441.906,
+          "bottom": 8681.906,
+          "height": 240
+        }
+      ],
+      "compositionWhitespace": [
+        {
+          "id": "c01",
+          "canvasTop": 0,
+          "canvasBottom": 1087.297,
+          "canvasHeight": 1087.297,
+          "memberOccupiedHeight": 963.358,
+          "whitespaceHeight": 123.939,
+          "pauseOverlapHeight": 0,
+          "overlayOutsideCanvas": false
+        },
+        {
+          "id": "c02",
+          "canvasTop": 1174.984,
+          "canvasBottom": 2353.859,
+          "canvasHeight": 1178.875,
+          "memberOccupiedHeight": 1061.158,
+          "whitespaceHeight": 117.717,
+          "pauseOverlapHeight": 0,
+          "overlayOutsideCanvas": false
+        },
+        {
+          "id": "c03",
+          "canvasTop": 2501.547,
+          "canvasBottom": 3697.484,
+          "canvasHeight": 1195.938,
+          "memberOccupiedHeight": 966.313,
+          "whitespaceHeight": 229.625,
+          "pauseOverlapHeight": 0.001,
+          "overlayOutsideCanvas": false
+        },
+        {
+          "id": "c04",
+          "canvasTop": 3803.625,
+          "canvasBottom": 5022.281,
+          "canvasHeight": 1218.656,
+          "memberOccupiedHeight": 975.117,
+          "whitespaceHeight": 243.539,
+          "pauseOverlapHeight": 0,
+          "overlayOutsideCanvas": true
+        },
+        {
+          "id": "c05",
+          "canvasTop": 5100.734,
+          "canvasBottom": 6369.703,
+          "canvasHeight": 1268.969,
+          "memberOccupiedHeight": 1097.978,
+          "whitespaceHeight": 170.991,
+          "pauseOverlapHeight": 0,
+          "overlayOutsideCanvas": true
+        },
+        {
+          "id": "c06",
+          "canvasTop": 6563.547,
+          "canvasBottom": 8441.906,
+          "canvasHeight": 1878.359,
+          "memberOccupiedHeight": 1321.221,
+          "whitespaceHeight": 557.138,
+          "pauseOverlapHeight": 0,
+          "overlayOutsideCanvas": false
+        }
+      ]
+    },
+    "390": {
+      "schema": "webtoon-action-name-preview-space/v1",
+      "classification": "partial-trial-24-cuts",
+      "method": "Union of panel crop-window (or uncropped panel) vertical bounds, all text-node bounds, and dialogue balloon bounds that fall outside panel content; all intervals clamped to the flow. Explicit pauses are reported but not subtracted from occupied content.",
+      "viewportWidth": 390,
+      "flowHeight": 9405.438,
+      "explicitPauseHeight": 925,
+      "nonPausePartialHeight": 8480.438,
+      "occupiedUnionHeightCssPx": 6941.972,
+      "contentHeightCssPx": 6941.972,
+      "pureGapHeightCssPx": 2463.466,
+      "unoccupiedUnionHeightCssPx": 2463.466,
+      "pauseIntervals": [
+        {
+          "top": 1177.906,
+          "bottom": 1272.906,
+          "height": 95
+        },
+        {
+          "top": 2550.016,
+          "bottom": 2710.016,
+          "height": 160
+        },
+        {
+          "top": 4005.625,
+          "bottom": 4120.625,
+          "height": 115
+        },
+        {
+          "top": 5440.828,
+          "bottom": 5525.828,
+          "height": 85
+        },
+        {
+          "top": 6900.547,
+          "bottom": 7110.547,
+          "height": 210
+        },
+        {
+          "top": 9145.438,
+          "bottom": 9405.438,
+          "height": 260
+        }
+      ],
+      "compositionWhitespace": [
+        {
+          "id": "c01",
+          "canvasTop": 0,
+          "canvasBottom": 1177.906,
+          "canvasHeight": 1177.906,
+          "memberOccupiedHeight": 1043.641,
+          "whitespaceHeight": 134.265,
+          "pauseOverlapHeight": 0,
+          "overlayOutsideCanvas": false
+        },
+        {
+          "id": "c02",
+          "canvasTop": 1272.906,
+          "canvasBottom": 2550.016,
+          "canvasHeight": 1277.109,
+          "memberOccupiedHeight": 1149.635,
+          "whitespaceHeight": 127.474,
+          "pauseOverlapHeight": -0.001,
+          "overlayOutsideCanvas": false
+        },
+        {
+          "id": "c03",
+          "canvasTop": 2710.016,
+          "canvasBottom": 4005.625,
+          "canvasHeight": 1295.609,
+          "memberOccupiedHeight": 1046.842,
+          "whitespaceHeight": 248.767,
+          "pauseOverlapHeight": 0,
+          "overlayOutsideCanvas": false
+        },
+        {
+          "id": "c04",
+          "canvasTop": 4120.625,
+          "canvasBottom": 5440.828,
+          "canvasHeight": 1320.203,
+          "memberOccupiedHeight": 1056.484,
+          "whitespaceHeight": 263.719,
+          "pauseOverlapHeight": 0,
+          "overlayOutsideCanvas": true
+        },
+        {
+          "id": "c05",
+          "canvasTop": 5525.828,
+          "canvasBottom": 6900.547,
+          "canvasHeight": 1374.719,
+          "memberOccupiedHeight": 1190.213,
+          "whitespaceHeight": 184.506,
+          "pauseOverlapHeight": 0,
+          "overlayOutsideCanvas": true
+        },
+        {
+          "id": "c06",
+          "canvasTop": 7110.547,
+          "canvasBottom": 9145.438,
+          "canvasHeight": 2034.891,
+          "memberOccupiedHeight": 1427.891,
+          "whitespaceHeight": 607,
+          "pauseOverlapHeight": 0,
+          "overlayOutsideCanvas": false
+        }
+      ]
+    }
+  }
+}
