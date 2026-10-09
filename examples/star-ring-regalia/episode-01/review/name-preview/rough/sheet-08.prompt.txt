@@ -1,0 +1,29 @@
+Use case: illustration-story. Asset type: black-and-white rough manga storyboard source contact sheet for 「星環のレガリア」 episode 1, not a finished reader page.
+
+Input image: the cast sheet is only a character identity and costume reference. Preserve KOH (slim Japanese 17-year-old, tousled short black hair, thoughtful shy face; fantasy blue-gray tunic with brown belt, boots and sheathed straight sword; Japan plain white shirt under faded teal hoodie), LIZE (athletic young woman, chestnut-brown bob, moss-green courier tunic, ivory shoulder cloth and brown boots), and MIWA (KOH's warm middle-aged mother, dark hair tied low, plain ivory shirt and dark indigo apron). Do not copy the cast grid.
+
+Composition: one portrait sheet with exactly 3 columns x 4 rows, exactly 12 equally sized rectangular cells, tiny even white gutters, row-major left-to-right then top-to-bottom. Each cell is one independent readable rough panel. Source grid only.
+
+Style: expressive black, gray, and white pencil-and-ink manga roughs with visible faces, hands, acting and clear silhouettes; simple sparse backgrounds; consistent characters and props. No color, lettering, Japanese or Latin characters, captions, speech balloons, sound effects, numbers, labels, watermark, or extra panels. Leave useful upper-right negative space for later dialogue lettering.
+
+Cells in order:
+1. At the Milt market edge, LIZE takes ONE small tied medicine parcel from KOH in one visible handoff; KOH releases it, LIZE turns toward the clinic route, SENA and cart behind. One parcel only.
+2. Immediate result: LIZE turns away carrying the same single parcel while KOH watches with empty hands; SENA turns the cart toward the clinic.
+3. LIZE walks KOH toward a sheltered safe plaza beside the same bridge; show bridge, bench, staffed desk, and separate clinic/return routes; LIZE still carries the single parcel.
+4. At the plaza entrance, LIZE points to the staffed safe point beside bridge and bench; she still holds the same parcel; upper-right open.
+5. KOH sits beside the bench and raises his wrist to open his logout display; LIZE waits holding the same parcel. Wrist area is a blank reserved display with no readable UI, letters, or numerals.
+6. Medium close view of KOH's face and wrist as a simple blank safe-point display glows; he promises to return before tomorrow's dusk. No text, icons, numbers, or teleport; LIZE with parcel nearby.
+7. Gentle close-up of LIZE answering softly while keeping the parcel ready; safe plaza begins a generous white fade below her face. No next-day scene and no extra parcel.
+8. Japan bedroom: KOH removes a plain used VR headset with both hands; desk lamp and school bag nearby; plain analog wall clock reads 9:00 by hands and tick marks only. No fantasy object, digital display, GUI, or clock numerals.
+9. KOH turns toward open bedroom door as MIWA calls from downstairs and he answers; teal hoodie, headset removed, desk lamp, school bag, plain analog clock hands at 9:00; no lettering or balloons.
+10. Quiet confirmation of return: plain analog wall clock hands at 9:00, KOH's shoulders loosen, removed headset beside desk lamp. Japan only; no ring, sword, parcel, magic, or fantasy clothing.
+11. Close-up of KOH's clean real hands beside the headset; eye reflection in dark desk window; broad pale negative space for later thought; no dirt, sword, parcel, magic, ring, or HUD.
+12. One large quiet close view of KOH's slight smile and dark window reflection after being called by name; Japanese bedroom, headset and clean hand edge may remain; no text or fantasy objects.
+
+Continuity: exactly one medicine parcel across cells 1-7, ending in LIZE's hand; no duplicate parcel. Sword is sheathed before the return and absent in Japan. Wall clock is plain analog 9:00 with no extra GUI or readable numerals.
+
+Final edit prompt: edit only the top-middle cell of the generated sheet; remove the lower/other tied parcel from LIZE's free hand so that cell contains exactly one medicine parcel at her chest and her other hand is empty. Preserve the exact 3x4 grid, borders, gutters, and all other 11 cells. Keep no lettering, captions, balloons, sound effects, numbers, labels, watermark, or extra panels.
+
+Final edit prompt 2: Use case: precise-object-edit. Edit only the top-left cell p085 and top-middle cell p086. Remove the silver-haired armored knight visible behind the cart in those two cells. Replace that background figure with an ordinary unnamed local porter with short brown hair and plain work clothes, or unobstructed cart/market background; no armor, red cape, silver hair, or named-character resemblance. Preserve KOH, LIZE, SENA, their faces and costumes, the exact single-parcel handoff, cart, market, bridge, borders, gutters, and all other 10 cells. p085 has exactly one parcel crossing KOH to LIZE; p086 has LIZE carrying that same one parcel while KOH's hands are empty. No duplicate parcel, no fantasy item in Japan, no lettering, captions, balloons, sound effects, numbers, labels, watermark, or extra panels.
+
+Final edit prompt 3: Use case: precise-object-edit. Edit only the color treatment of the entire existing sheet. Convert every pixel's appearance to strict neutral grayscale: black ink, neutral gray pencil/halftone, and white paper only. Remove all brown, peach, blue, green, and other chroma while preserving linework, faces, hands, parcel count, expressions, poses, backgrounds, exact 3-column x 4-row grid, equal cells, gutters, and borders. Protect the ordinary unnamed porter replacement, the single parcel handoff, blank wrist displays, faces, and plain analog 9:00 clocks. Do not add or remove objects or characters. No lettering, captions, balloons, sound effects, numbers, labels, watermark, extra panels, or color.

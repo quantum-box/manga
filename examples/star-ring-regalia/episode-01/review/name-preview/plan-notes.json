@@ -1,0 +1,2608 @@
+{
+  "title": "星環のレガリア 第1話 補欠の空",
+  "scope": {
+    "series": "星環のレガリア",
+    "episode": 1,
+    "title": "補欠の空",
+    "approvalGate": "この96パネルの白黒ネームを390px幅で提示しユーザーが構成を採用してから本作画へ進む",
+    "target": {
+      "effective_panels": "80-120",
+      "panel_count": 96,
+      "css_width": 390,
+      "main_height_css": "34000-60000",
+      "content_height_excluding_pure_whitespace_css": ">=24000",
+      "note": "画像保存解像度とファイル枚数は表示寸法と別に検証する"
+    },
+    "sourceAudit": {
+      "storyboard": "examples/star-ring-regalia/episode-01/storyboard.md",
+      "validation": "examples/star-ring-regalia/episode-01/validation.json",
+      "layout": "examples/star-ring-regalia/episode-01/layout.json",
+      "references": [
+        "skills/webtoon/references/emotion-and-causality.md",
+        "skills/webtoon/references/reader-perspective.md",
+        "skills/webtoon/references/context-and-dialogue.md"
+      ],
+      "current_baseline": {
+        "story_moments": 71,
+        "adopted_images": 25,
+        "page_height_390_css": 25697,
+        "audit_finding": "現行は読める接続と表示検証があるが通常話の長さと有効コマ基準を満たさず出来事の受け止めが圧縮されている"
+      }
+    },
+    "canon": {
+      "start": "木曜の放課後 川口の高校生の航は部活の補欠で初めてREGALIAへ接続する",
+      "end": "ミルトで暮らしの魔法と魔導器と精霊と荷運びを体験し薬の配達を引き受けかけるが帰宅の約束を思い出しリゼが代わる 安全拠点から帰り翌日日暮れ前の再訪を約束する",
+      "holds": [
+        "水不足を描かない",
+        "運営の秘密を描かない",
+        "守護者を描かない",
+        "現地の死者を描かない",
+        "成長した装備を描かない",
+        "剣は抜いて重さを確かめるだけ",
+        "盾は未経験で所持しない"
+      ],
+      "continuity": [
+        "日本では紺の制服からティールのパーカーへ移る",
+        "エルセリア到着後は青灰のチュニックと鞘入りの直剣",
+        "荷車の失敗で航とリゼの袖と前腕が泥になる",
+        "橋の水と洗い場の水音は一つの連続音",
+        "薬包みはセナから航へ航からリゼへ一つだけ渡る",
+        "日本時間20:50から帰宅時刻21:00へつながる"
+      ]
+    },
+    "sheets": [
+      {
+        "sheet": 1,
+        "range": "p001-p012",
+        "title": "補欠の空から中古のヘッドセットへ",
+        "purpose": "補欠の痛みと自分で選ぶ入口"
+      },
+      {
+        "sheet": 2,
+        "range": "p013-p024",
+        "title": "家の約束から身体の確認へ",
+        "purpose": "帰宅時刻を背負って接続し身体を持つ"
+      },
+      {
+        "sheet": 3,
+        "range": "p025-p036",
+        "title": "羽音と星環から友人の到着へ",
+        "purpose": "姿より先に音を置き星環と灯里を受ける"
+      },
+      {
+        "sheet": 4,
+        "range": "p037-p048",
+        "title": "星環の名前から重い剣へ",
+        "purpose": "世界と町を場所に結び航の旅への願いを作る"
+      },
+      {
+        "sheet": 5,
+        "range": "p049-p060",
+        "title": "剣の重さから荷車の失敗へ",
+        "purpose": "剣を使わず人の困りごとへ向き失敗を修正する"
+      },
+      {
+        "sheet": 6,
+        "range": "p061-p072",
+        "title": "荷車の成功から水路へ",
+        "purpose": "三人の名乗りと町の暮らしの入口をつなぐ"
+      },
+      {
+        "sheet": 7,
+        "range": "p073-p084",
+        "title": "魔導器と精霊と練習から依頼へ",
+        "purpose": "道具と精霊と本人の未熟さを分ける"
+      },
+      {
+        "sheet": 8,
+        "range": "p085-p096",
+        "title": "薬の約束と21時の帰宅",
+        "purpose": "役に立ちたい気持ちを正直な帰還と再訪へ変える"
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": "p001",
+      "sheet": 1,
+      "slot": 1,
+      "scene": "01-school",
+      "art": "High-school desk in late-afternoon classroom; blank career-choice sheet fills the foreground while KOH stares down.",
+      "roughArt": "High-school desk in late-afternoon classroom; blank career-choice sheet fills the foreground while KOH stares down.",
+      "subject": "High-school desk in late-afternoon classroom; blank career-choice sheet fills the foreground while KOH stares down.",
+      "purpose": "進路の空白を主人公の現在の停滞として先に置く",
+      "dialogue": [
+        {
+          "speaker": "ナレーション",
+          "text": "進路希望の欄は\n白いままだった",
+          "kind": "narration"
+        }
+      ],
+      "sounds": [],
+      "propState": "Japan; navy school uniform; blank sheet; before REGALIA; no fantasy objects.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "wide high-angle",
+        "placement": "center",
+        "reader_focus": "blank sheet then lowered eyes"
+      }
+    },
+    {
+      "id": "p002",
+      "sheet": 1,
+      "slot": 2,
+      "scene": "01-school",
+      "art": "Shallow close-up of KOH’s fingers tightening around a bamboo shinai in the kendo hall; the steel sword does not exist yet.",
+      "roughArt": "Shallow close-up of KOH’s fingers tightening around a bamboo shinai in the kendo hall; the steel sword does not exist yet.",
+      "subject": "Shallow close-up of KOH’s fingers tightening around a bamboo shinai in the kendo hall; the steel sword does not exist yet.",
+      "purpose": "補欠の痛みを手の力でつなぐ",
+      "dialogue": [
+        {
+          "speaker": "音",
+          "text": "ギュッ",
+          "kind": "sound"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "ギュッ",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "The sound begins at the shinai grip and stops before the coach speaks."
+        }
+      ],
+      "propState": "Japan; bamboo shinai only; KOH remains outside the selected group.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "angled",
+        "camera": "hand close-up",
+        "placement": "right",
+        "reader_focus": "tight fingers and bamboo texture"
+      }
+    },
+    {
+      "id": "p003",
+      "sheet": 1,
+      "slot": 3,
+      "scene": "01-school",
+      "art": "Coach stands before five selected teammates with KOH at the far edge of the dojo line.",
+      "roughArt": "Coach stands before five selected teammates with KOH at the far edge of the dojo line.",
+      "subject": "Coach stands before five selected teammates with KOH at the far edge of the dojo line.",
+      "purpose": "選ばれた五人と選ばれなかった航の位置を一度で読ませる",
+      "dialogue": [
+        {
+          "speaker": "先生",
+          "text": "次の大会は\nこの五人",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Kendo hall; five selected teammates centered; KOH isolated at frame edge; no helmet.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "rect",
+        "camera": "wide eye-level",
+        "placement": "center",
+        "reader_focus": "coach hand and the gap around KOH"
+      }
+    },
+    {
+      "id": "p004",
+      "sheet": 1,
+      "slot": 4,
+      "scene": "01-school",
+      "art": "Tight close-up of KOH lowering the shinai after hearing the selection; lips held tight and eyes avoid the team.",
+      "roughArt": "Tight close-up of KOH lowering the shinai after hearing the selection; lips held tight and eyes avoid the team.",
+      "subject": "Tight close-up of KOH lowering the shinai after hearing the selection; lips held tight and eyes avoid the team.",
+      "purpose": "結果を聞いた直後の受け止めを説明文で済ませない",
+      "dialogue": [
+        {
+          "speaker": "航（心）",
+          "text": "また\n呼ばれなかった",
+          "kind": "thought"
+        }
+      ],
+      "sounds": [],
+      "propState": "Japan; bamboo shinai lowered; selected five remain behind him.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "face close-up",
+        "placement": "left",
+        "reader_focus": "tight mouth and lowered gaze"
+      }
+    },
+    {
+      "id": "p005",
+      "sheet": 1,
+      "slot": 5,
+      "scene": "01-school",
+      "art": "A selected teammate receives a brief shoulder tap from the coach and moves with the group while KOH remains by the wall.",
+      "roughArt": "A selected teammate receives a brief shoulder tap from the coach and moves with the group while KOH remains by the wall.",
+      "subject": "A selected teammate receives a brief shoulder tap from the coach and moves with the group while KOH remains by the wall.",
+      "purpose": "選出が周囲の行動になり航だけが残る因果を見せる",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Japan; five teammates begin leaving; KOH still holds the lowered shinai; no new dialogue.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "over-shoulder",
+        "placement": "right",
+        "reader_focus": "shoulder tap, moving team, KOH left behind"
+      }
+    },
+    {
+      "id": "p006",
+      "sheet": 1,
+      "slot": 6,
+      "scene": "01-school",
+      "art": "KOH exits the dojo alone, shinai bag over one shoulder, the empty practice hall behind him.",
+      "roughArt": "KOH exits the dojo alone, shinai bag over one shoulder, the empty practice hall behind him.",
+      "subject": "KOH exits the dojo alone, shinai bag over one shoulder, the empty practice hall behind him.",
+      "purpose": "敗北を次の生活へ運ぶ身体の向きをつなぐ",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Japan; school uniform/kendo gear; empty hall behind; late afternoon light.",
+      "widthShape": {
+        "width": "wide",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "rear three-quarter",
+        "placement": "left",
+        "reader_focus": "doorway and solitary exit"
+      }
+    },
+    {
+      "id": "p007",
+      "sheet": 1,
+      "slot": 7,
+      "scene": "02-bento",
+      "art": "Exterior of the family bento shop and KOH arriving home-side after school with the school bag and kendo bag.",
+      "roughArt": "Exterior of the family bento shop and KOH arriving home-side after school with the school bag and kendo bag.",
+      "subject": "Exterior of the family bento shop and KOH arriving home-side after school with the school bag and kendo bag.",
+      "purpose": "学校の補欠から家の仕事へ時間と場所を一度で渡す",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Japan; bento shop storefront; KOH still carrying school/kendo bags; evening begins.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "wide establishing",
+        "placement": "center",
+        "reader_focus": "shop sign, bags, warm interior"
+      }
+    },
+    {
+      "id": "p008",
+      "sheet": 1,
+      "slot": 8,
+      "scene": "02-bento",
+      "art": "Back room wide shot; KOH stacks closed takeaway bento boxes while MIWA works at the counter.",
+      "roughArt": "Back room wide shot; KOH stacks closed takeaway bento boxes while MIWA works at the counter.",
+      "subject": "Back room wide shot; KOH stacks closed takeaway bento boxes while MIWA works at the counter.",
+      "purpose": "家の仕事が航の日常であることを体の配置で置く",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Japan; teal hoodie; closed bento boxes only; mother behind counter.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "wide eye-level",
+        "placement": "center",
+        "reader_focus": "hands moving boxes and mother’s counter"
+      }
+    },
+    {
+      "id": "p009",
+      "sheet": 1,
+      "slot": 9,
+      "scene": "02-bento",
+      "art": "MIWA calls from the counter as KOH reaches for chopsticks; the boxes remain closed.",
+      "roughArt": "MIWA calls from the counter as KOH reaches for chopsticks; the boxes remain closed.",
+      "subject": "MIWA calls from the counter as KOH reaches for chopsticks; the boxes remain closed.",
+      "purpose": "母の依頼を聞く相手と作業の手元を同じ場所で結ぶ",
+      "dialogue": [
+        {
+          "speaker": "美和",
+          "text": "航お箸も\n入れてね",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Japan; bento boxes closed; chopsticks container at KOH’s side; teal hoodie.",
+      "widthShape": {
+        "width": "medium",
+        "height": "shallow",
+        "shape": "angled",
+        "camera": "medium side view",
+        "placement": "right",
+        "reader_focus": "mother’s mouth to chopsticks"
+      }
+    },
+    {
+      "id": "p010",
+      "sheet": 1,
+      "slot": 10,
+      "scene": "02-bento",
+      "art": "Close-up of KOH inserting chopsticks into one takeaway box, attentive and automatic.",
+      "roughArt": "Close-up of KOH inserting chopsticks into one takeaway box, attentive and automatic.",
+      "subject": "Close-up of KOH inserting chopsticks into one takeaway box, attentive and automatic.",
+      "purpose": "短い返事を行動の完了に結びつける",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "うん",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Japan; one closed bento and one chopstick sleeve in hand; no fantasy equipment.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "hands close-up",
+        "placement": "left",
+        "reader_focus": "chopsticks entering one box"
+      }
+    },
+    {
+      "id": "p011",
+      "sheet": 1,
+      "slot": 11,
+      "scene": "02-bento",
+      "art": "Phone close-up on KOH’s work surface; one message notification from AKARI asks whether he will enter today.",
+      "roughArt": "Phone close-up on KOH’s work surface; one message notification from AKARI asks whether he will enter today.",
+      "subject": "Phone close-up on KOH’s work surface; one message notification from AKARI asks whether he will enter today.",
+      "purpose": "補欠の一日へ友人から具体的な入口が届く",
+      "dialogue": [
+        {
+          "speaker": "HUD",
+          "text": "灯里：今日入れる？",
+          "kind": "display"
+        }
+      ],
+      "sounds": [],
+      "propState": "Japan; phone only; bento work remains visible at edge; no invented app labels.",
+      "widthShape": {
+        "width": "medium",
+        "height": "shallow",
+        "shape": "rect",
+        "camera": "phone close-up",
+        "placement": "right",
+        "reader_focus": "single notification and thumb"
+      }
+    },
+    {
+      "id": "p012",
+      "sheet": 1,
+      "slot": 12,
+      "scene": "02-bento",
+      "art": "KOH sees the worn used headset in its plain cardboard box beside the counter; saved allowance is implied by a small folded receipt and his careful touch.",
+      "roughArt": "KOH sees the worn used headset in its plain cardboard box beside the counter; saved allowance is implied by a small folded receipt and his careful touch.",
+      "subject": "KOH sees the worn used headset in its plain cardboard box beside the counter; saved allowance is implied by a small folded receipt and his careful touch.",
+      "purpose": "今日なら何かできるかもしれないという小さな選択を物と目線で置く",
+      "dialogue": [
+        {
+          "speaker": "航（心）",
+          "text": "ここなら\n何かできるかな",
+          "kind": "thought"
+        }
+      ],
+      "sounds": [],
+      "propState": "Japan; used headset in worn box; saved-allowance receipt; no magical equipment.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "medium over-shoulder",
+        "placement": "center",
+        "reader_focus": "headset, receipt, uncertain face"
+      }
+    },
+    {
+      "id": "p013",
+      "sheet": 2,
+      "slot": 1,
+      "scene": "02-home-rule",
+      "art": "KOH picks the used headset from the back-room shelf while MIWA watches from the same counter.",
+      "roughArt": "KOH picks the used headset from the back-room shelf while MIWA watches from the same counter.",
+      "subject": "KOH picks the used headset from the back-room shelf while MIWA watches from the same counter.",
+      "purpose": "中古の道具を自分で選んだ事実を母の視界へ置く",
+      "dialogue": [
+        {
+          "speaker": "美和",
+          "text": "それが\n灯里ちゃんの言ってた\nゲーム？",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Japan; same back room; headset still in worn box; bento boxes closed; no VR fantasy.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "wide eye-level",
+        "placement": "center",
+        "reader_focus": "headset handoff line between mother and son"
+      }
+    },
+    {
+      "id": "p014",
+      "sheet": 2,
+      "slot": 2,
+      "scene": "02-home-rule",
+      "art": "KOH gives a shy ordinary smile and explains that the used headset fit his saved allowance.",
+      "roughArt": "KOH gives a shy ordinary smile and explains that the used headset fit his saved allowance.",
+      "subject": "KOH gives a shy ordinary smile and explains that the used headset fit his saved allowance.",
+      "purpose": "航の願いを大げさな宣言にせず身近な買い物として受け止める",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "中古なら\n小遣いで足りた",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Japan; used headset in both hands; teal hoodie; mother remains in same room.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "medium close-up",
+        "placement": "right",
+        "reader_focus": "headset and bashful face"
+      }
+    },
+    {
+      "id": "p015",
+      "sheet": 2,
+      "slot": 3,
+      "scene": "02-home-rule",
+      "art": "MIWA looks from the headset to KOH and asks him to return by 21:00 without anger.",
+      "roughArt": "MIWA looks from the headset to KOH and asks him to return by 21:00 without anger.",
+      "subject": "MIWA looks from the headset to KOH and asks him to return by 21:00 without anger.",
+      "purpose": "家の約束を接続前の具体的な制約として残す",
+      "dialogue": [
+        {
+          "speaker": "美和",
+          "text": "九時には\n戻ってね",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Japan; headset box on shelf; mother trusts KOH; evening light.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "mother close-up",
+        "placement": "left",
+        "reader_focus": "calm mouth and clockward gesture"
+      }
+    },
+    {
+      "id": "p016",
+      "sheet": 2,
+      "slot": 4,
+      "scene": "02-home-rule",
+      "art": "KOH looks from the headset to the shop clock and agrees with a small nod.",
+      "roughArt": "KOH looks from the headset to the shop clock and agrees with a small nod.",
+      "subject": "KOH looks from the headset to the shop clock and agrees with a small nod.",
+      "purpose": "約束を聞いた航の受け止めを一拍置いてから移動する",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Japan; shop clock visible but no exact overlay; headset remains in KOH’s hands.",
+      "widthShape": {
+        "width": "medium",
+        "height": "shallow",
+        "shape": "rect",
+        "camera": "shoulder view",
+        "placement": "right",
+        "reader_focus": "clock then KOH’s nod"
+      }
+    },
+    {
+      "id": "p017",
+      "sheet": 2,
+      "slot": 5,
+      "scene": "03-login",
+      "art": "Modest bedroom at night; desk lamp, school bag and KOH seated safely establish the same real room before connection.",
+      "roughArt": "Modest bedroom at night; desk lamp, school bag and KOH seated safely establish the same real room before connection.",
+      "subject": "Modest bedroom at night; desk lamp, school bag and KOH seated safely establish the same real room before connection.",
+      "purpose": "接続先が現実の自室から始まることを読者に固定する",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Japan; teal hoodie; headset in hand; school bag; lamp; no object from Elselia.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "wide room view",
+        "placement": "center",
+        "reader_focus": "safe seat, headset, clockless quiet"
+      }
+    },
+    {
+      "id": "p018",
+      "sheet": 2,
+      "slot": 6,
+      "scene": "03-login",
+      "art": "KOH places the headset deliberately with both hands and settles it over his eyes.",
+      "roughArt": "KOH places the headset deliberately with both hands and settles it over his eyes.",
+      "subject": "KOH places the headset deliberately with both hands and settles it over his eyes.",
+      "purpose": "選択を手順として見せる",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Japan; seated safely; headset aligned; no game-world clothes yet.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "hands and face medium",
+        "placement": "right",
+        "reader_focus": "deliberate grip and resolved eyes"
+      }
+    },
+    {
+      "id": "p019",
+      "sheet": 2,
+      "slot": 7,
+      "scene": "03-login",
+      "art": "Close fingertip selects the blank start option on a simple translucent REGALIA interface.",
+      "roughArt": "Close fingertip selects the blank start option on a simple translucent REGALIA interface.",
+      "subject": "Close fingertip selects the blank start option on a simple translucent REGALIA interface.",
+      "purpose": "接続開始を表示の説明ではなく本人の操作として見せる",
+      "dialogue": [
+        {
+          "speaker": "HUD",
+          "text": "REGALIA　接続開始",
+          "kind": "display"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "ピッ",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "The short confirmation belongs to the start control and ends before the grass contact."
+        }
+      ],
+      "propState": "Japan-to-connection threshold; interface belongs to KOH; no decorative gold frame.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "first-person hand close-up",
+        "placement": "right",
+        "reader_focus": "finger and one start option"
+      }
+    },
+    {
+      "id": "p020",
+      "sheet": 2,
+      "slot": 8,
+      "scene": "04-body",
+      "art": "KOH’s right hand presses into green grass as the first sensory voice precedes the body reveal.",
+      "roughArt": "KOH’s right hand presses into green grass as the first sensory voice precedes the body reveal.",
+      "subject": "KOH’s right hand presses into green grass as the first sensory voice precedes the body reveal.",
+      "purpose": "草の匂いから仮想身体の接触へ移る",
+      "dialogue": [
+        {
+          "speaker": "航（心）",
+          "text": "……草の匂い",
+          "kind": "thought"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "サワ…",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "The rustle begins at KOH’s hand and grass; the sensory voice stays ahead of the full body reveal."
+        }
+      ],
+      "propState": "Elselia beginner grassland; blue-gray tunic sleeve; sheathed sword at hip; no shield.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "angled",
+        "camera": "hand close-up",
+        "placement": "right",
+        "reader_focus": "fingers, grass, contact"
+      }
+    },
+    {
+      "id": "p021",
+      "sheet": 2,
+      "slot": 9,
+      "scene": "04-body",
+      "art": "A single brown leather boot plants into soft soil and KOH shifts his weight cautiously.",
+      "roughArt": "A single brown leather boot plants into soft soil and KOH shifts his weight cautiously.",
+      "subject": "A single brown leather boot plants into soft soil and KOH shifts his weight cautiously.",
+      "purpose": "足場と重心が手の確認から連続するように置く",
+      "dialogue": [
+        {
+          "speaker": "音",
+          "text": "ザッ",
+          "kind": "sound"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "ザッ",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "The boot scrape marks weight transfer without becoming an action scene."
+        }
+      ],
+      "propState": "Same hill; one boot grounded; sword remains sheathed; no shield.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "angled",
+        "camera": "boot close-up",
+        "placement": "left",
+        "reader_focus": "sole, soil, weight"
+      }
+    },
+    {
+      "id": "p022",
+      "sheet": 2,
+      "slot": 10,
+      "scene": "04-body",
+      "art": "KOH rises from a seated crouch and tests his balance with one hand open.",
+      "roughArt": "KOH rises from a seated crouch and tests his balance with one hand open.",
+      "subject": "KOH rises from a seated crouch and tests his balance with one hand open.",
+      "purpose": "身体を持つ実感を姿勢と小さな喜びで受け止める",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "こんなふうに\n歩けるんだ",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Elselia; game blue-gray tunic; sword sheathed at hip; no shield or magic aura.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "medium low-angle",
+        "placement": "center",
+        "reader_focus": "rising posture and open hand"
+      }
+    },
+    {
+      "id": "p023",
+      "sheet": 2,
+      "slot": 11,
+      "scene": "04-body",
+      "art": "KOH pinches the cloth at his sleeve and watches it tug with his moving fingers, recognizing a body that answers him.",
+      "roughArt": "KOH pinches the cloth at his sleeve and watches it tug with his moving fingers, recognizing a body that answers him.",
+      "subject": "KOH pinches the cloth at his sleeve and watches it tug with his moving fingers, recognizing a body that answers him.",
+      "purpose": "手足だけでなく服の抵抗まで身体の理解へ足す",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same grass patch; right hand active; no HUD and no spell effect.",
+      "widthShape": {
+        "width": "medium",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "macro hand detail",
+        "placement": "left",
+        "reader_focus": "finger flex and bent blades"
+      }
+    },
+    {
+      "id": "p024",
+      "sheet": 2,
+      "slot": 12,
+      "scene": "04-wings",
+      "art": "A broad moving shadow crosses the grass; KOH’s eyes look up while the dragon and ring remain outside the frame.",
+      "roughArt": "A broad moving shadow crosses the grass; KOH’s eyes look up while the dragon and ring remain outside the frame.",
+      "subject": "A broad moving shadow crosses the grass; KOH’s eyes look up while the dragon and ring remain outside the frame.",
+      "purpose": "姿より先に羽音と影が届く",
+      "dialogue": [
+        {
+          "speaker": "音",
+          "text": "バサァ…",
+          "kind": "sound"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "バサァ…",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "The wing sound begins beside KOH’s eyes and establishes an offscreen source."
+        }
+      ],
+      "propState": "Same hill; dragon and celestial ring remain outside the frame.",
+      "widthShape": {
+        "width": "medium",
+        "height": "shallow",
+        "shape": "angled",
+        "camera": "eye close-up",
+        "placement": "right",
+        "reader_focus": "shadow edge and eye shift"
+      }
+    },
+    {
+      "id": "p025",
+      "sheet": 3,
+      "slot": 1,
+      "scene": "04-wings",
+      "art": "KOH lifts his chin toward the offscreen wing sound; hair and collar move in the displaced air.",
+      "roughArt": "KOH lifts his chin toward the offscreen wing sound; hair and collar move in the displaced air.",
+      "subject": "KOH lifts his chin toward the offscreen wing sound; hair and collar move in the displaced air.",
+      "purpose": "音を聞いた反応から視線を空へ導く",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "バサァ…",
+          "mode": "continuation",
+          "continuationOf": "p024",
+          "reason": "Continue the wing sound from the shadow reaction through the chin-lift; do not start a second inscription."
+        }
+      ],
+      "propState": "Same hill; offscreen wing source; no skyline, dragon or ring visible yet.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "medium",
+        "shape": "inset",
+        "camera": "low-angle reaction",
+        "placement": "left",
+        "reader_focus": "chin lift and wind-tugged collar"
+      }
+    },
+    {
+      "id": "p026",
+      "sheet": 3,
+      "slot": 2,
+      "scene": "05-first-sky",
+      "art": "At the end of the fade, the first luminous curve of the celestial ring enters KOH’s widened eye before the whole sky is shown.",
+      "roughArt": "At the end of the fade, the first luminous curve of the celestial ring enters KOH’s widened eye before the whole sky is shown.",
+      "subject": "At the end of the fade, the first luminous curve of the celestial ring enters KOH’s widened eye before the whole sky is shown.",
+      "purpose": "大きな空の直前に最初の理解を一つだけ渡す",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Pure white transition; no new figure, sound or silhouette.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "empty vertical fade",
+        "placement": "center",
+        "reader_focus": "sound path through white"
+      }
+    },
+    {
+      "id": "p027",
+      "sheet": 3,
+      "slot": 3,
+      "scene": "05-first-sky",
+      "art": "Towering panorama finally reveals the luminous celestial ring, distant dragon, mountain valleys, tiny windmills and KOH’s small back silhouette.",
+      "roughArt": "Towering panorama finally reveals the luminous celestial ring, distant dragon, mountain valleys, tiny windmills and KOH’s small back silhouette.",
+      "subject": "Towering panorama finally reveals the luminous celestial ring, distant dragon, mountain valleys, tiny windmills and KOH’s small back silhouette.",
+      "purpose": "感覚の蓄積に対する一度だけの空の大きさを返す",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "First complete Elselia view; dragon distant and nonthreatening; no HUD or speech; KOH in initial outfit.",
+      "widthShape": {
+        "width": "full",
+        "height": "very tall",
+        "shape": "borderless",
+        "camera": "towering low-angle panorama",
+        "placement": "center",
+        "reader_focus": "KOH silhouette to ring to distant dragon"
+      }
+    },
+    {
+      "id": "p028",
+      "sheet": 3,
+      "slot": 4,
+      "scene": "05-first-sky",
+      "art": "KOH remains still in the foreground after the panorama, hand half raised and face unreadable from behind.",
+      "roughArt": "KOH remains still in the foreground after the panorama, hand half raised and face unreadable from behind.",
+      "subject": "KOH remains still in the foreground after the panorama, hand half raised and face unreadable from behind.",
+      "purpose": "大きさを見た直後の処理を一拍置く",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same hill and revealed sky; sword sheathed; no combat or next event yet.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "rear medium",
+        "placement": "left",
+        "reader_focus": "still body against immense sky"
+      }
+    },
+    {
+      "id": "p029",
+      "sheet": 3,
+      "slot": 5,
+      "scene": "05-meeting",
+      "art": "AKARI walks up the visible physical path toward KOH, orange clip and wooden bow clear.",
+      "roughArt": "AKARI walks up the visible physical path toward KOH, orange clip and wooden bow clear.",
+      "subject": "AKARI walks up the visible physical path toward KOH, orange clip and wooden bow clear.",
+      "purpose": "友人の到着を足元と経路で説明する",
+      "dialogue": [
+        {
+          "speaker": "灯里",
+          "text": "コウ\n着いたね",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same hill; AKARI game outfit and bow; KOH still facing the sky; no teleport.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "angled",
+        "camera": "wide path view",
+        "placement": "center",
+        "reader_focus": "approaching feet, face, shared path"
+      }
+    },
+    {
+      "id": "p030",
+      "sheet": 3,
+      "slot": 6,
+      "scene": "05-meeting",
+      "art": "KOH turns from the sky toward the familiar voice; recognition comes before the explanatory conversation.",
+      "roughArt": "KOH turns from the sky toward the familiar voice; recognition comes before the explanatory conversation.",
+      "subject": "KOH turns from the sky toward the familiar voice; recognition comes before the explanatory conversation.",
+      "purpose": "知らない世界で最初に友人を認める安堵を顔で見せる",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "灯里？",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same path; KOH’s body turns toward AKARI; ring remains visible behind him.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "face reaction",
+        "placement": "right",
+        "reader_focus": "eyes leaving sky for friend"
+      }
+    },
+    {
+      "id": "p031",
+      "sheet": 3,
+      "slot": 7,
+      "scene": "05-meeting",
+      "art": "AKARI stops at the same path distance and KOH fully faces her; both remain in the open hill setting.",
+      "roughArt": "AKARI stops at the same path distance and KOH fully faces her; both remain in the open hill setting.",
+      "subject": "AKARI stops at the same path distance and KOH fully faces her; both remain in the open hill setting.",
+      "purpose": "到着と認識の間に二人が同じ場所にいることを固定する",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same hill; AKARI bow on back; KOH sword sheathed; no glasses in game.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "two-shot eye-level",
+        "placement": "center",
+        "reader_focus": "shared eye line and unchanged path"
+      }
+    },
+    {
+      "id": "p032",
+      "sheet": 3,
+      "slot": 8,
+      "scene": "05-meeting",
+      "art": "AKARI points gently to the already revealed ring while KOH follows her finger.",
+      "roughArt": "AKARI points gently to the already revealed ring while KOH follows her finger.",
+      "subject": "AKARI points gently to the already revealed ring while KOH follows her finger.",
+      "purpose": "名前を聞く前に対象を一緒に見る関係を作る",
+      "dialogue": [
+        {
+          "speaker": "灯里",
+          "text": "あれが\n星環だよ",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same hill; ring and distant dragon remain in background; no new sky object.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "airy side view",
+        "placement": "center",
+        "reader_focus": "finger, KOH gaze, ring"
+      }
+    },
+    {
+      "id": "p033",
+      "sheet": 3,
+      "slot": 9,
+      "scene": "05-meeting",
+      "art": "KOH’s eyes track the ring curve and his mouth stays slightly open; no reply is needed yet.",
+      "roughArt": "KOH’s eyes track the ring curve and his mouth stays slightly open; no reply is needed yet.",
+      "subject": "KOH’s eyes track the ring curve and his mouth stays slightly open; no reply is needed yet.",
+      "purpose": "星環という固有名詞を受け止める無言の反応を残す",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same revealed sky; KOH has not learned world or town names yet.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "eye and sky close-up",
+        "placement": "right",
+        "reader_focus": "eye reflection and ring arc"
+      }
+    },
+    {
+      "id": "p034",
+      "sheet": 3,
+      "slot": 10,
+      "scene": "05-map",
+      "art": "Over KOH’s shoulder, a small translucent blue-gray beginner map opens above his wrist with the nearby town pin.",
+      "roughArt": "Over KOH’s shoulder, a small translucent blue-gray beginner map opens above his wrist with the nearby town pin.",
+      "subject": "Over KOH’s shoulder, a small translucent blue-gray beginner map opens above his wrist with the nearby town pin.",
+      "purpose": "世界設定を今いる場所と手元の操作へ結ぶ",
+      "dialogue": [
+        {
+          "speaker": "HUD",
+          "text": "エルセリア　ミルト",
+          "kind": "display"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same hill; map is modest and translucent; river and footpath remain visible behind it.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "over-shoulder",
+        "placement": "right",
+        "reader_focus": "wrist map and physical river"
+      }
+    },
+    {
+      "id": "p035",
+      "sheet": 3,
+      "slot": 11,
+      "scene": "05-map",
+      "art": "AKARI faces KOH beside the map and indicates the town below the hill.",
+      "roughArt": "AKARI faces KOH beside the map and indicates the town below the hill.",
+      "subject": "AKARI faces KOH beside the map and indicates the town below the hill.",
+      "purpose": "地名を地形と相手の指先へ結びつける",
+      "dialogue": [
+        {
+          "speaker": "灯里",
+          "text": "ここは\n辺境の町ミルト",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same hill; map still open; Milt visible in distance; no large technical panel.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "medium two-shot",
+        "placement": "left",
+        "reader_focus": "AKARI hand toward town"
+      }
+    },
+    {
+      "id": "p036",
+      "sheet": 3,
+      "slot": 12,
+      "scene": "05-map",
+      "art": "AKARI keeps the map open and names the world while KOH looks between her and the distant valley.",
+      "roughArt": "AKARI keeps the map open and names the world while KOH looks between her and the distant valley.",
+      "subject": "AKARI keeps the map open and names the world while KOH looks between her and the distant valley.",
+      "purpose": "町名と世界名を別の受け取りとして分ける",
+      "dialogue": [
+        {
+          "speaker": "灯里",
+          "text": "世界の名前が\nエルセリア",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same hill; map remains on wrist; KOH’s sword still sheathed.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "medium close-up",
+        "placement": "right",
+        "reader_focus": "AKARI mouth then map"
+      }
+    },
+    {
+      "id": "p037",
+      "sheet": 4,
+      "slot": 1,
+      "scene": "05-map",
+      "art": "KOH turns his body toward the physical road below and asks whether he can walk beyond town.",
+      "roughArt": "KOH turns his body toward the physical road below and asks whether he can walk beyond town.",
+      "subject": "KOH turns his body toward the physical road below and asks whether he can walk beyond town.",
+      "purpose": "説明を移動への本人の願いへ変える",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "街の外も\n歩いて行けるの？",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same hill and fork; KOH faces road; map begins to fade; no teleport.",
+      "widthShape": {
+        "width": "wide",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "rear three-quarter",
+        "placement": "left",
+        "reader_focus": "body orientation and road"
+      }
+    },
+    {
+      "id": "p038",
+      "sheet": 4,
+      "slot": 2,
+      "scene": "05-road",
+      "art": "AKARI lowers her own wrist menu and points down toward a distant riverboat and the road into town.",
+      "roughArt": "AKARI lowers her own wrist menu and points down toward a distant riverboat and the road into town.",
+      "subject": "AKARI lowers her own wrist menu and points down toward a distant riverboat and the road into town.",
+      "purpose": "交通の情報を見える道具と風景に限定する",
+      "dialogue": [
+        {
+          "speaker": "灯里",
+          "text": "船や魔導列車も\nあるんだって",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same hill; small riverboat far below; no railway physically crossing Milt.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "medium-to-wide landscape",
+        "placement": "center",
+        "reader_focus": "pointing hand, boat, road"
+      }
+    },
+    {
+      "id": "p039",
+      "sheet": 4,
+      "slot": 3,
+      "scene": "05-road",
+      "art": "KOH traces the winding road with his eyes toward the distant mountains and floating islands.",
+      "roughArt": "KOH traces the winding road with his eyes toward the distant mountains and floating islands.",
+      "subject": "KOH traces the winding road with his eyes toward the distant mountains and floating islands.",
+      "purpose": "先の旅への憧れを視線の延長で見せる",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "あの空まで\n行けるかな",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same fork; KOH remains on grass; floating islands remain distant scenery only.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "rear wide",
+        "placement": "center",
+        "reader_focus": "road line into sky"
+      }
+    },
+    {
+      "id": "p040",
+      "sheet": 4,
+      "slot": 4,
+      "scene": "05-road",
+      "art": "AKARI takes the training path toward a visible pennant and waves back while KOH stays at the fork.",
+      "roughArt": "AKARI takes the training path toward a visible pennant and waves back while KOH stays at the fork.",
+      "subject": "AKARI takes the training path toward a visible pennant and waves back while KOH stays at the fork.",
+      "purpose": "友人の目的と航の別行動を同時に理解させる",
+      "dialogue": [
+        {
+          "speaker": "灯里",
+          "text": "私は弓の訓練\n先に行ってるね",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same fork; AKARI walks physically away; KOH remains on the other road; bow on her back.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "two-route wide",
+        "placement": "right",
+        "reader_focus": "fork, wave, diverging paths"
+      }
+    },
+    {
+      "id": "p041",
+      "sheet": 4,
+      "slot": 5,
+      "scene": "05-road",
+      "art": "KOH watches AKARI disappear toward training, then turns to the downhill road toward Milt.",
+      "roughArt": "KOH watches AKARI disappear toward training, then turns to the downhill road toward Milt.",
+      "subject": "KOH watches AKARI disappear toward training, then turns to the downhill road toward Milt.",
+      "purpose": "別れの小さな寂しさから一人の探索へ渡す",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same fork; AKARI farther away; KOH alone with sheathed sword and empty hands.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "medium",
+        "shape": "inset",
+        "camera": "rear reaction",
+        "placement": "left",
+        "reader_focus": "wave ending and KOH turn"
+      }
+    },
+    {
+      "id": "p042",
+      "sheet": 4,
+      "slot": 6,
+      "scene": "05-weight",
+      "art": "Wide downhill dirt road toward Milt with KOH alone and a pair of ordinary mounted knights far ahead.",
+      "roughArt": "Wide downhill dirt road toward Milt with KOH alone and a pair of ordinary mounted knights far ahead.",
+      "subject": "Wide downhill dirt road toward Milt with KOH alone and a pair of ordinary mounted knights far ahead.",
+      "purpose": "町へ向かう物理的な移動を一度広く見せる",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Elselia road; KOH alone; two ordinary mounted knights ahead; sword sheathed.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "wide downhill view",
+        "placement": "center",
+        "reader_focus": "road direction and riders"
+      }
+    },
+    {
+      "id": "p043",
+      "sheet": 4,
+      "slot": 7,
+      "scene": "05-weight",
+      "art": "KOH’s right hand rests on the plain sword hilt after seeing the riders; left hand reaches for the scabbard.",
+      "roughArt": "KOH’s right hand rests on the plain sword hilt after seeing the riders; left hand reaches for the scabbard.",
+      "subject": "KOH’s right hand rests on the plain sword hilt after seeing the riders; left hand reaches for the scabbard.",
+      "purpose": "剣を試すきっかけを目の前の使い手へ置く",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same road; right hand on hilt; left hand at scabbard; no draw yet.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "waist close-up",
+        "placement": "right",
+        "reader_focus": "both hands and hilt"
+      }
+    },
+    {
+      "id": "p044",
+      "sheet": 4,
+      "slot": 8,
+      "scene": "05-weight",
+      "art": "He draws the steel blade only partway; a restrained highlight runs along the metal.",
+      "roughArt": "He draws the steel blade only partway; a restrained highlight runs along the metal.",
+      "subject": "He draws the steel blade only partway; a restrained highlight runs along the metal.",
+      "purpose": "剣を使う決意ではなく重さを確かめる動作に限定する",
+      "dialogue": [
+        {
+          "speaker": "音",
+          "text": "スラ…",
+          "kind": "sound"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "スラ…",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "The restrained draw sound belongs to the scabbard and ends before the full blade is shown."
+        }
+      ],
+      "propState": "Same road; steel blade half drawn; no aura, spell or shield.",
+      "widthShape": {
+        "width": "medium",
+        "height": "shallow",
+        "shape": "angled",
+        "camera": "hands close-up",
+        "placement": "left",
+        "reader_focus": "metal edge and careful grip"
+      }
+    },
+    {
+      "id": "p045",
+      "sheet": 4,
+      "slot": 9,
+      "scene": "05-weight",
+      "art": "KOH holds the fully drawn steel sword low with both hands as if it were a shinai; the tip points at empty ground.",
+      "roughArt": "KOH holds the fully drawn steel sword low with both hands as if it were a shinai; the tip points at empty ground.",
+      "subject": "KOH holds the fully drawn steel sword low with both hands as if it were a shinai; the tip points at empty ground.",
+      "purpose": "経験のある剣道と異世界の鉄の重さを同じ姿勢で比較する",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "……重い",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same road; steel sword fully drawn low; both hands; no combat stance and no shield.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "medium full-body",
+        "placement": "center",
+        "reader_focus": "arms, blade sag, cautious feet"
+      }
+    },
+    {
+      "id": "p046",
+      "sheet": 4,
+      "slot": 10,
+      "scene": "05-weight",
+      "art": "A close detail of KOH’s grip changes as the blade pulls his wrists downward; he looks at the weapon rather than the horizon.",
+      "roughArt": "A close detail of KOH’s grip changes as the blade pulls his wrists downward; he looks at the weapon rather than the horizon.",
+      "subject": "A close detail of KOH’s grip changes as the blade pulls his wrists downward; he looks at the weapon rather than the horizon.",
+      "purpose": "結果を本人の手首と視線で受け止める",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same road; blade still low; KOH has not swung; mounted riders remain out of focus.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "hands and face partial",
+        "placement": "right",
+        "reader_focus": "strained wrists and uncertain eyes"
+      }
+    },
+    {
+      "id": "p047",
+      "sheet": 4,
+      "slot": 11,
+      "scene": "05-weight",
+      "art": "The riders pass toward the town gate while KOH resheathes and watches their practiced posture.",
+      "roughArt": "The riders pass toward the town gate while KOH resheathes and watches their practiced posture.",
+      "subject": "The riders pass toward the town gate while KOH resheathes and watches their practiced posture.",
+      "purpose": "戦闘へ進まず剣を戻す選択を見せる",
+      "dialogue": [
+        {
+          "speaker": "航（心）",
+          "text": "俺でも\n使えるのかな",
+          "kind": "thought"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same road; steel sword back in brown scabbard; riders passing; no fight or shield.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "wide side view",
+        "placement": "center",
+        "reader_focus": "resheathing hand and easy riders"
+      }
+    },
+    {
+      "id": "p048",
+      "sheet": 4,
+      "slot": 12,
+      "scene": "06-cart",
+      "art": "KOH walks downhill with empty hands after the sword trial; the road bends toward the town and cart tracks mark the mud.",
+      "roughArt": "KOH walks downhill with empty hands after the sword trial; the road bends toward the town and cart tracks mark the mud.",
+      "subject": "KOH walks downhill with empty hands after the sword trial; the road bends toward the town and cart tracks mark the mud.",
+      "purpose": "武器を使わない探索へ視線を戻す",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same road; sword sheathed; hands empty; mud tracks lead toward Milt.",
+      "widthShape": {
+        "width": "wide",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "rear three-quarter",
+        "placement": "left",
+        "reader_focus": "mud tracks and town direction"
+      }
+    },
+    {
+      "id": "p049",
+      "sheet": 5,
+      "slot": 1,
+      "scene": "06-cart",
+      "art": "KOH turns toward an offscreen voice before the cart is visible.",
+      "roughArt": "KOH turns toward an offscreen voice before the cart is visible.",
+      "subject": "KOH turns toward an offscreen voice before the cart is visible.",
+      "purpose": "声の発生源を探す反応を先に置く",
+      "dialogue": [
+        {
+          "speaker": "リゼ（画面外）",
+          "text": "そこ少し\n空けてもらえる？",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same road; KOH stops at edge; offscreen cart remains outside first view.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "face reaction",
+        "placement": "right",
+        "reader_focus": "ear, eyes, open road edge"
+      }
+    },
+    {
+      "id": "p050",
+      "sheet": 5,
+      "slot": 2,
+      "scene": "06-cart",
+      "art": "Wide reveal of LIZE bracing one cart wheel while SENA supports the rear; KOH stands safely beside the road.",
+      "roughArt": "Wide reveal of LIZE bracing one cart wheel while SENA supports the rear; KOH stands safely beside the road.",
+      "subject": "Wide reveal of LIZE bracing one cart wheel while SENA supports the rear; KOH stands safely beside the road.",
+      "purpose": "誰が困っていてどこに立つかを一枚で固定する",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "車輪が\nはまっちゃって",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same muddy road; LIZE at front wheel; SENA at rear; KOH hands empty; sword sheathed.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "wide three-person view",
+        "placement": "center",
+        "reader_focus": "wheel rut, three positions, safe side"
+      }
+    },
+    {
+      "id": "p051",
+      "sheet": 5,
+      "slot": 3,
+      "scene": "06-cart",
+      "art": "KOH’s POV glances from the deep rut to an empty translucent quest list, then back to the people.",
+      "roughArt": "KOH’s POV glances from the deep rut to an empty translucent quest list, then back to the people.",
+      "subject": "KOH’s POV glances from the deep rut to an empty translucent quest list, then back to the people.",
+      "purpose": "ゲームの依頼表示と目の前の困りごとが別であることを示す",
+      "dialogue": [
+        {
+          "speaker": "HUD",
+          "text": "依頼：なし",
+          "kind": "display"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same road; cart still stuck; no quest accepted; KOH has not yet touched the wheel.",
+      "widthShape": {
+        "width": "medium",
+        "height": "shallow",
+        "shape": "angled",
+        "camera": "POV insert",
+        "placement": "right",
+        "reader_focus": "wheel first, empty list second"
+      }
+    },
+    {
+      "id": "p052",
+      "sheet": 5,
+      "slot": 4,
+      "scene": "07-push",
+      "art": "KOH kneels opposite LIZE and offers both hands under the trapped wheel.",
+      "roughArt": "KOH kneels opposite LIZE and offers both hands under the trapped wheel.",
+      "subject": "KOH kneels opposite LIZE and offers both hands under the trapped wheel.",
+      "purpose": "助ける選択を言葉と手の準備でつなぐ",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "こっち\n持ち上げるよ",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same cart and rut; KOH still sword-sheathed; LIZE braces front; SENA at rear.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "low three-quarter",
+        "placement": "left",
+        "reader_focus": "KOH hands entering the work"
+      }
+    },
+    {
+      "id": "p053",
+      "sheet": 5,
+      "slot": 5,
+      "scene": "07-push",
+      "art": "Close on three separate contact points: KOH under rim, LIZE locking the wheel, SENA setting feet at the cart rear.",
+      "roughArt": "Close on three separate contact points: KOH under rim, LIZE locking the wheel, SENA setting feet at the cart rear.",
+      "subject": "Close on three separate contact points: KOH under rim, LIZE locking the wheel, SENA setting feet at the cart rear.",
+      "purpose": "力の方向と身体の位置を結果へ接続する",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same rut; wheel muddy; three people contact cart at distinct points; clothing still mostly clean.",
+      "widthShape": {
+        "width": "full",
+        "height": "shallow",
+        "shape": "triptych-like angled",
+        "camera": "hands and feet detail",
+        "placement": "center",
+        "reader_focus": "three support points"
+      }
+    },
+    {
+      "id": "p054",
+      "sheet": 5,
+      "slot": 6,
+      "scene": "07-push",
+      "art": "First lift attempt slips; the wheel rocks but stays in the rut and mud spatters KOH’s sleeve.",
+      "roughArt": "First lift attempt slips; the wheel rocks but stays in the rut and mud spatters KOH’s sleeve.",
+      "subject": "First lift attempt slips; the wheel rocks but stays in the rut and mud spatters KOH’s sleeve.",
+      "purpose": "一度で成功させず失敗を身体の結果として見せる",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same cart; wheel remains trapped; KOH sleeve and LIZE forearm muddy; no injury; SENA still supporting.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "low action view",
+        "placement": "right",
+        "reader_focus": "slipping hands and unmoved wheel"
+      }
+    },
+    {
+      "id": "p055",
+      "sheet": 5,
+      "slot": 7,
+      "scene": "07-push",
+      "art": "KOH looks at the rut angle, shifts his knees and changes his hand position while LIZE lowers her shoulder.",
+      "roughArt": "KOH looks at the rut angle, shifts his knees and changes his hand position while LIZE lowers her shoulder.",
+      "subject": "KOH looks at the rut angle, shifts his knees and changes his hand position while LIZE lowers her shoulder.",
+      "purpose": "失敗から修正へ移る判断を無言で読ませる",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same cart; muddy hands; wheel still in rut; positions change but no object is added.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "hands and eyes close-up",
+        "placement": "left",
+        "reader_focus": "KOH eyes, rut, repositioned grip"
+      }
+    },
+    {
+      "id": "p056",
+      "sheet": 5,
+      "slot": 8,
+      "scene": "07-push",
+      "art": "All three reset their stance together; KOH’s feet push against firmer ground beside the rut.",
+      "roughArt": "All three reset their stance together; KOH’s feet push against firmer ground beside the rut.",
+      "subject": "All three reset their stance together; KOH’s feet push against firmer ground beside the rut.",
+      "purpose": "二度目の力がどこから来るかを先に理解させる",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same cart; KOH/LIZE/SENA aligned; wheel remains trapped; mud states continuous.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "low wide",
+        "placement": "center",
+        "reader_focus": "feet, wheel, shared line of force"
+      }
+    },
+    {
+      "id": "p057",
+      "sheet": 5,
+      "slot": 9,
+      "scene": "07-push",
+      "art": "LIZE and KOH lift while SENA pushes from the rear; the command starts the coordinated attempt.",
+      "roughArt": "LIZE and KOH lift while SENA pushes from the rear; the command starts the coordinated attempt.",
+      "subject": "LIZE and KOH lift while SENA pushes from the rear; the command starts the coordinated attempt.",
+      "purpose": "合図を動作開始のきっかけにする",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "せーの！",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same cart; three bodies committed; wheel beginning to rise; no magic or weapon.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "dynamic low-angle",
+        "placement": "right",
+        "reader_focus": "three faces and rising rim"
+      }
+    },
+    {
+      "id": "p058",
+      "sheet": 5,
+      "slot": 10,
+      "scene": "07-push",
+      "art": "The wheel climbs over the rut with a single hard jolt; mud breaks away from the tire.",
+      "roughArt": "The wheel climbs over the rut with a single hard jolt; mud breaks away from the tire.",
+      "subject": "The wheel climbs over the rut with a single hard jolt; mud breaks away from the tire.",
+      "purpose": "成功の物理的な結果を接触点と車輪で見せる",
+      "dialogue": [
+        {
+          "speaker": "音",
+          "text": "ガタン",
+          "kind": "sound"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "ガタン",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "The sound lands on the wheel clearing the rut and ends before anyone releases the cart."
+        }
+      ],
+      "propState": "Same cart; wheel now above rut; mud on KOH/LIZE; SENA still at rear.",
+      "widthShape": {
+        "width": "medium",
+        "height": "shallow",
+        "shape": "angled",
+        "camera": "wheel close-up",
+        "placement": "left",
+        "reader_focus": "tire, rut, flying mud"
+      }
+    },
+    {
+      "id": "p059",
+      "sheet": 5,
+      "slot": 11,
+      "scene": "07-push",
+      "art": "The cart settles level on the road; all three release in sequence and regain balance.",
+      "roughArt": "The cart settles level on the road; all three release in sequence and regain balance.",
+      "subject": "The cart settles level on the road; all three release in sequence and regain balance.",
+      "purpose": "成功後の安全確認を結果として残す",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Same road; cart free; KOH and LIZE hands off wheel; SENA steadies rear; muddy forearms.",
+      "widthShape": {
+        "width": "wide",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "wide side view",
+        "placement": "center",
+        "reader_focus": "freed cart and three recovering bodies"
+      }
+    },
+    {
+      "id": "p060",
+      "sheet": 5,
+      "slot": 12,
+      "scene": "07-introduction",
+      "art": "LIZE wipes one muddy hand and exhales with relieved eyes toward KOH.",
+      "roughArt": "LIZE wipes one muddy hand and exhales with relieved eyes toward KOH.",
+      "subject": "LIZE wipes one muddy hand and exhales with relieved eyes toward KOH.",
+      "purpose": "助かった実感を名前より先に聞き手へ返す",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "助かった\n私はリゼ",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same road; cart free; LIZE and KOH muddy; shield remains on LIZE’s back; no handoff yet.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "face and hand medium",
+        "placement": "right",
+        "reader_focus": "exhale, wiped palm, eye contact"
+      }
+    },
+    {
+      "id": "p061",
+      "sheet": 6,
+      "slot": 1,
+      "scene": "07-introduction",
+      "art": "KOH looks at his dirty hands, then gestures to himself with a modest smile.",
+      "roughArt": "KOH looks at his dirty hands, then gestures to himself with a modest smile.",
+      "subject": "KOH looks at his dirty hands, then gestures to himself with a modest smile.",
+      "purpose": "受けた礼を身体で受け止めてから名乗る",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "航\n……コウでいいよ",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same road; KOH’s hands dirty; sword sheathed; cart free; LIZE listening.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "medium",
+        "shape": "inset",
+        "camera": "medium close-up",
+        "placement": "left",
+        "reader_focus": "dirty hand to face"
+      }
+    },
+    {
+      "id": "p062",
+      "sheet": 6,
+      "slot": 2,
+      "scene": "07-introduction",
+      "art": "SENA steps from the cart rear and offers a warm direct introduction while the wooden medicine box stays visible.",
+      "roughArt": "SENA steps from the cart rear and offers a warm direct introduction while the wooden medicine box stays visible.",
+      "subject": "SENA steps from the cart rear and offers a warm direct introduction while the wooden medicine box stays visible.",
+      "purpose": "名乗りと仕事を一息に詰めずセナの位置から次の暮らしへつなぐ",
+      "dialogue": [
+        {
+          "speaker": "セナ",
+          "text": "薬師のセナだよ\nよろしく",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same road; SENA auburn hair/light stubble; medicine box secured in cargo; cart free.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "medium two-shot with cart",
+        "placement": "center",
+        "reader_focus": "SENA face and medicine box"
+      }
+    },
+    {
+      "id": "p063",
+      "sheet": 6,
+      "slot": 3,
+      "scene": "07-introduction",
+      "art": "LIZE takes the cart handle and starts toward Milt; KOH chooses the same direction beside the cart.",
+      "roughArt": "LIZE takes the cart handle and starts toward Milt; KOH chooses the same direction beside the cart.",
+      "subject": "LIZE takes the cart handle and starts toward Milt; KOH chooses the same direction beside the cart.",
+      "purpose": "助けた相手と町へ行く理由を航の足取りで作る",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "荷物を運ぶのが\n私の仕事",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same road; KOH joins at cart side; LIZE holds handle; SENA walks at rear; hands muddy.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "low walking two-shot",
+        "placement": "center",
+        "reader_focus": "cart handle and matching steps"
+      }
+    },
+    {
+      "id": "p064",
+      "sheet": 6,
+      "slot": 4,
+      "scene": "07-introduction",
+      "art": "As the cart rolls, LIZE points toward the town gate and the bridge route while KOH keeps pace.",
+      "roughArt": "As the cart rolls, LIZE points toward the town gate and the bridge route while KOH keeps pace.",
+      "subject": "As the cart rolls, LIZE points toward the town gate and the bridge route while KOH keeps pace.",
+      "purpose": "見回りの仕事を移動の目的として追加する",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "町の見回りも\nしてるよ",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same road; cart rolling; KOH/LIZE/SENA continuous; sword sheathed; muddy sleeves.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "walking side view",
+        "placement": "right",
+        "reader_focus": "pointing route and cart wheel"
+      }
+    },
+    {
+      "id": "p065",
+      "sheet": 6,
+      "slot": 5,
+      "scene": "07-water",
+      "art": "All three cross the same stone bridge with the cart; turquoise water and the turning wheel appear below.",
+      "roughArt": "All three cross the same stone bridge with the cart; turquoise water and the turning wheel appear below.",
+      "subject": "All three cross the same stone bridge with the cart; turquoise water and the turning wheel appear below.",
+      "purpose": "車輪の土を洗う次の場所へ水の流れを経路として導く",
+      "dialogue": [
+        {
+          "speaker": "音",
+          "text": "サァァァ",
+          "kind": "sound"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "サァァァ",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "The water sound begins below the bridge and is allowed to continue into the basin beat."
+        }
+      ],
+      "propState": "Milt bridge; healthy turquoise river; cart crosses; LIZE waits for KOH at parapet; SENA beside cart.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "wide bridge establishing",
+        "placement": "center",
+        "reader_focus": "bridge path to waterwheel"
+      }
+    },
+    {
+      "id": "p066",
+      "sheet": 6,
+      "slot": 6,
+      "scene": "07-water",
+      "art": "KOH washes both muddy hands at a small public basin supplied by the same channel and notices a warm-gold line beneath the bridge.",
+      "roughArt": "KOH washes both muddy hands at a small public basin supplied by the same channel and notices a warm-gold line beneath the bridge.",
+      "subject": "KOH washes both muddy hands at a small public basin supplied by the same channel and notices a warm-gold line beneath the bridge.",
+      "purpose": "手の汚れが暮らしの水と光へ変わる瞬間を一続きにする",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "水が\n光ってる",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "サァァァ",
+          "mode": "continuation",
+          "continuationOf": "p073",
+          "reason": "Continue the exact bridge water sound beside the basin; no second complete inscription."
+        }
+      ],
+      "propState": "Milt bridge basin; KOH sleeves rolled; hands cleaning; turquoise water and pale-gold channel visible.",
+      "widthShape": {
+        "width": "medium",
+        "height": "tall",
+        "shape": "angled",
+        "camera": "hands to under-bridge view",
+        "placement": "left",
+        "reader_focus": "cleaning hands then gold flow"
+      }
+    },
+    {
+      "id": "p067",
+      "sheet": 6,
+      "slot": 7,
+      "scene": "07-flow",
+      "art": "LIZE points under the same stone bridge at the narrow gold supply channel branching beside the river.",
+      "roughArt": "LIZE points under the same stone bridge at the narrow gold supply channel branching beside the river.",
+      "subject": "LIZE points under the same stone bridge at the narrow gold supply channel branching beside the river.",
+      "purpose": "光の疑問を目の前の水路へ限定して答える",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "魔力も\nこの水路を通るの",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same bridge; brass guide rings on the small channel; no drought, drain or hidden giant machine.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "over-shoulder downward",
+        "placement": "right",
+        "reader_focus": "LIZE finger and branching channel"
+      }
+    },
+    {
+      "id": "p068",
+      "sheet": 6,
+      "slot": 8,
+      "scene": "07-flow",
+      "art": "KOH follows the branch from bridge to waterwheel and adjoining repair stall; the town’s connected route becomes legible.",
+      "roughArt": "KOH follows the branch from bridge to waterwheel and adjoining repair stall; the town’s connected route becomes legible.",
+      "subject": "KOH follows the branch from bridge to waterwheel and adjoining repair stall; the town’s connected route becomes legible.",
+      "purpose": "見える経路を航自身が追って理解する",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "街全体を\nつないでるんだ",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same bridge and waterwheel; clean hands; cart within a few steps; no new mechanism.",
+      "widthShape": {
+        "width": "wide",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "tracking side view",
+        "placement": "center",
+        "reader_focus": "branch line to wheel and stalls"
+      }
+    },
+    {
+      "id": "p069",
+      "sheet": 6,
+      "slot": 9,
+      "scene": "07-device",
+      "art": "SENA opens one small insulated wooden cooling box on the cart; a brass rune strip glows around the hinge.",
+      "roughArt": "SENA opens one small insulated wooden cooling box on the cart; a brass rune strip glows around the hinge.",
+      "subject": "SENA opens one small insulated wooden cooling box on the cart; a brass rune strip glows around the hinge.",
+      "purpose": "生活道具として魔導器を初めて見せる",
+      "dialogue": [
+        {
+          "speaker": "セナ",
+          "text": "薬を冷やす\n魔導器だよ",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same cart by bridge; one cooling box; same tied medicine vials; cold vapor barely visible.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "inset",
+        "camera": "box close-up",
+        "placement": "left",
+        "reader_focus": "rune strip, hinge, vials"
+      }
+    },
+    {
+      "id": "p070",
+      "sheet": 6,
+      "slot": 10,
+      "scene": "07-device",
+      "art": "LIZE taps the carved brass rune while KOH watches from the opposite side of the cart.",
+      "roughArt": "LIZE taps the carved brass rune while KOH watches from the opposite side of the cart.",
+      "subject": "LIZE taps the carved brass rune while KOH watches from the opposite side of the cart.",
+      "purpose": "魔法を道具へ刻むという仕組みを部品と指で説明する",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "魔法の形を\n道具に刻むの",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same cooling box; brass rune under LIZE’s finger; KOH listening; no energy meter.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "two-shot over cart",
+        "placement": "right",
+        "reader_focus": "finger on rune and KOH eyes"
+      }
+    },
+    {
+      "id": "p071",
+      "sheet": 6,
+      "slot": 11,
+      "scene": "07-device",
+      "art": "KOH opens his empty palm, interested rather than triumphant, as the box continues cooling the medicine.",
+      "roughArt": "KOH opens his empty palm, interested rather than triumphant, as the box continues cooling the medicine.",
+      "subject": "KOH opens his empty palm, interested rather than triumphant, as the box continues cooling the medicine.",
+      "purpose": "魔法を使えなくても暮らしの道具を使える理解を航の手で返す",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "魔法が苦手でも\n使えるんだ",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same cart and box; KOH’s own magic is still untested; sword sheathed; no shield.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "medium",
+        "shape": "inset",
+        "camera": "hand and eye close-up",
+        "placement": "left",
+        "reader_focus": "open palm and practical realization"
+      }
+    },
+    {
+      "id": "p072",
+      "sheet": 6,
+      "slot": 12,
+      "scene": "07-spirit",
+      "art": "At the waterwheel, a local mill worker opens a windcloth vane and asks a tiny pale teal wind spirit for help.",
+      "roughArt": "At the waterwheel, a local mill worker opens a windcloth vane and asks a tiny pale teal wind spirit for help.",
+      "subject": "At the waterwheel, a local mill worker opens a windcloth vane and asks a tiny pale teal wind spirit for help.",
+      "purpose": "暮らしの仕事と精霊の意志を同じ場所で初めて出す",
+      "dialogue": [
+        {
+          "speaker": "水車の職人",
+          "text": "風向きを\n変えてくれる？",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same bridge-side waterwheel; worker beige shirt/brown apron; one small wind spirit; cart nearby but not dominant.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "wide waterwheel view",
+        "placement": "center",
+        "reader_focus": "worker hand, vane, spirit"
+      }
+    },
+    {
+      "id": "p073",
+      "sheet": 7,
+      "slot": 1,
+      "scene": "07-spirit",
+      "art": "The wind spirit darts toward a bright flower instead of the vane; KOH watches the movement rather than a command screen.",
+      "roughArt": "The wind spirit darts toward a bright flower instead of the vane; KOH watches the movement rather than a command screen.",
+      "subject": "The wind spirit darts toward a bright flower instead of the vane; KOH watches the movement rather than a command screen.",
+      "purpose": "精霊が自律していることを動きで示し機械と分ける",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "言うこと\n聞かないんだ",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "ひゅっ",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "The short airy sound follows the spirit’s visible dart and does not become a teleport effect."
+        }
+      ],
+      "propState": "Same waterwheel; spirit at flower path; worker waits; KOH surprised; no HUD.",
+      "widthShape": {
+        "width": "medium",
+        "height": "tall",
+        "shape": "angled",
+        "camera": "tracking reaction",
+        "placement": "right",
+        "reader_focus": "spirit trajectory to KOH face"
+      }
+    },
+    {
+      "id": "p074",
+      "sheet": 7,
+      "slot": 2,
+      "scene": "07-spirit",
+      "art": "The worker laughs gently and waits with an open hand; the spirit pauses at the flower and looks back.",
+      "roughArt": "The worker laughs gently and waits with an open hand; the spirit pauses at the flower and looks back.",
+      "subject": "The worker laughs gently and waits with an open hand; the spirit pauses at the flower and looks back.",
+      "purpose": "相手を急かさず待つ暮らしの態度を精霊の返答に接続する",
+      "dialogue": [
+        {
+          "speaker": "水車の職人",
+          "text": "この子にも\n都合があるから",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same waterwheel; spirit still independent; worker’s open hand; no automatic obedience.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "medium three-subject view",
+        "placement": "center",
+        "reader_focus": "open hand, spirit looking back"
+      }
+    },
+    {
+      "id": "p075",
+      "sheet": 7,
+      "slot": 3,
+      "scene": "07-practice",
+      "art": "LIZE opens her right palm and makes a small controlled breeze curl a cloth strip in her left hand; the motion is precise and domestic.",
+      "roughArt": "LIZE opens her right palm and makes a small controlled breeze curl a cloth strip in her left hand; the motion is precise and domestic.",
+      "subject": "LIZE opens her right palm and makes a small controlled breeze curl a cloth strip in her left hand; the motion is precise and domestic.",
+      "purpose": "魔法の習得を戦闘技ではなく反復する形として見せる",
+      "dialogue": [
+        {
+          "speaker": "音",
+          "text": "フワ…",
+          "kind": "sound"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "フワ…",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "The soft sound begins at LIZE’s palm and cloth and remains smaller than the water and wing sounds."
+        }
+      ],
+      "propState": "Same bridge-side steps; KOH and LIZE clean-handed; wind spirit and worker background; sword sheathed.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "hand medium close-up",
+        "placement": "left",
+        "reader_focus": "right palm, cloth, small breeze"
+      }
+    },
+    {
+      "id": "p076",
+      "sheet": 7,
+      "slot": 4,
+      "scene": "07-practice",
+      "art": "KOH copies the same hand shape and the cloth in his left hand hangs limp; LIZE remains in frame to teach immediately after the failure.",
+      "roughArt": "KOH copies the same hand shape and the cloth in his left hand hangs limp; LIZE remains in frame to teach immediately after the failure.",
+      "subject": "KOH copies the same hand shape and the cloth in his left hand hangs limp; LIZE remains in frame to teach immediately after the failure.",
+      "purpose": "成功を与えず本人の失敗と相手の受け止めを同じ場所でつなぐ",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "……出ない",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same practice spot; KOH’s cloth limp; LIZE’s small breeze has stopped; no cheat power.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "split-tall",
+        "camera": "upper KOH hands / lower LIZE reassuring face",
+        "placement": "center",
+        "reader_focus": "limp cloth then patient teacher"
+      }
+    },
+    {
+      "id": "p077",
+      "sheet": 7,
+      "slot": 5,
+      "scene": "07-practice",
+      "art": "LIZE lowers both hands and explains that a form is learned through repeated practice; the wind spirit and wheel remain soft background anchors.",
+      "roughArt": "LIZE lowers both hands and explains that a form is learned through repeated practice; the wind spirit and wheel remain soft background anchors.",
+      "subject": "LIZE lowers both hands and explains that a form is learned through repeated practice; the wind spirit and wheel remain soft background anchors.",
+      "purpose": "失敗を次の再訪と練習への動機にする",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "形を覚えて\n何度も練習するの",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same waterwheel steps; KOH listening; no combat, shield or advanced equipment.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "medium",
+        "shape": "inset",
+        "camera": "reassuring face and hands",
+        "placement": "right",
+        "reader_focus": "LIZE hands lowering and KOH eyes"
+      }
+    },
+    {
+      "id": "p078",
+      "sheet": 7,
+      "slot": 6,
+      "scene": "07-town",
+      "art": "One borderless descending panorama from the ring-lit sky to Milt’s wall, bridge, market canopies, lamps, waterwheel and three tiny continuous figures entering with the cart.",
+      "roughArt": "One borderless descending panorama from the ring-lit sky to Milt’s wall, bridge, market canopies, lamps, waterwheel and three tiny continuous figures entering with the cart.",
+      "subject": "One borderless descending panorama from the ring-lit sky to Milt’s wall, bridge, market canopies, lamps, waterwheel and three tiny continuous figures entering with the cart.",
+      "purpose": "暮らしの理解を町全体へ広げてから仕事の依頼へ移る",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Milt at early sunset; healthy river and pale-gold channel; no giant rail station, drought or ominous event.",
+      "widthShape": {
+        "width": "full",
+        "height": "very tall",
+        "shape": "borderless",
+        "camera": "towering descending panorama",
+        "placement": "center",
+        "reader_focus": "sky to walls to market to trio"
+      }
+    },
+    {
+      "id": "p079",
+      "sheet": 7,
+      "slot": 7,
+      "scene": "08-medicine",
+      "art": "At the market edge SENA offers one small tied medicine parcel while the cart moves toward warm stalls.",
+      "roughArt": "At the market edge SENA offers one small tied medicine parcel while the cart moves toward warm stalls.",
+      "subject": "At the market edge SENA offers one small tied medicine parcel while the cart moves toward warm stalls.",
+      "purpose": "ここまでの見回りが具体的な頼まれごとへ変わる",
+      "dialogue": [
+        {
+          "speaker": "セナ",
+          "text": "コウこれも\n届けてもらえる？",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Milt bridge/market edge; one tied parcel in SENA’s hand; cart and LIZE nearby.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "parcel handoff setup",
+        "placement": "right",
+        "reader_focus": "single parcel between hands"
+      }
+    },
+    {
+      "id": "p080",
+      "sheet": 7,
+      "slot": 8,
+      "scene": "08-medicine",
+      "art": "KOH looks from the parcel to SENA and asks whether the request is a game quest.",
+      "roughArt": "KOH looks from the parcel to SENA and asks whether the request is a game quest.",
+      "subject": "KOH looks from the parcel to SENA and asks whether the request is a game quest.",
+      "purpose": "表示と暮らしの声が違うことを主人公の問いにする",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "それも\nクエスト？",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same market edge; parcel still with SENA; KOH’s hand not yet holding it.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "face and parcel close-up",
+        "placement": "left",
+        "reader_focus": "KOH eyes then parcel"
+      }
+    },
+    {
+      "id": "p081",
+      "sheet": 7,
+      "slot": 9,
+      "scene": "08-medicine",
+      "art": "SENA’s tired but kind close-up answers that the medicine is needed tonight; the clinic direction sits behind him.",
+      "roughArt": "SENA’s tired but kind close-up answers that the medicine is needed tonight; the clinic direction sits behind him.",
+      "subject": "SENA’s tired but kind close-up answers that the medicine is needed tonight; the clinic direction sits behind him.",
+      "purpose": "依頼の緊急性を人の今晩として伝える",
+      "dialogue": [
+        {
+          "speaker": "セナ",
+          "text": "今晩\n薬が要るんだよ",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same market edge; parcel visible; SENA faces KOH directly; no mysterious grin.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "rect",
+        "camera": "gentle close-up",
+        "placement": "center",
+        "reader_focus": "tired eyes and parcel"
+      }
+    },
+    {
+      "id": "p082",
+      "sheet": 7,
+      "slot": 10,
+      "scene": "08-choice",
+      "art": "KOH accepts the one tied parcel with both hands and leans forward with optimistic eagerness.",
+      "roughArt": "KOH accepts the one tied parcel with both hands and leans forward with optimistic eagerness.",
+      "subject": "KOH accepts the one tied parcel with both hands and leans forward with optimistic eagerness.",
+      "purpose": "役に立ちたい気持ちを受け取る動作にする",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "俺も\nできると思う",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same parcel now in KOH’s hands; LIZE and SENA watch; sword still sheathed.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "hands and face",
+        "placement": "right",
+        "reader_focus": "parcel handoff and hopeful face"
+      }
+    },
+    {
+      "id": "p083",
+      "sheet": 7,
+      "slot": 11,
+      "scene": "08-choice",
+      "art": "The parcel remains in KOH’s hand while his wrist menu quietly shows Japan time; his eyes move from the display back to the parcel.",
+      "roughArt": "The parcel remains in KOH’s hand while his wrist menu quietly shows Japan time; his eyes move from the display back to the parcel.",
+      "subject": "The parcel remains in KOH’s hand while his wrist menu quietly shows Japan time; his eyes move from the display back to the parcel.",
+      "purpose": "家との約束が感情の途中で戻るように時間表示を置く",
+      "dialogue": [
+        {
+          "speaker": "HUD",
+          "text": "日本時間 20:50",
+          "kind": "display"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same market edge; parcel in KOH’s other hand; exact time reminder; no offscreen mother voice.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "shallow",
+        "shape": "inset",
+        "camera": "wrist POV",
+        "placement": "left",
+        "reader_focus": "time then parcel"
+      }
+    },
+    {
+      "id": "p084",
+      "sheet": 7,
+      "slot": 12,
+      "scene": "08-choice",
+      "art": "KOH lowers the parcel slightly and admits he has to go home; LIZE watches his face rather than the display.",
+      "roughArt": "KOH lowers the parcel slightly and admits he has to go home; LIZE watches his face rather than the display.",
+      "subject": "KOH lowers the parcel slightly and admits he has to go home; LIZE watches his face rather than the display.",
+      "purpose": "約束を思い出した正直さを航の視線と声で返す",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "ごめん\n今日は帰らないと",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same parcel still in KOH’s hands; KOH turns toward LIZE; no duplicated parcel.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "two-shot",
+        "placement": "right",
+        "reader_focus": "KOH face and lowered parcel"
+      }
+    },
+    {
+      "id": "p085",
+      "sheet": 8,
+      "slot": 1,
+      "scene": "08-choice",
+      "art": "LIZE takes the same parcel from KOH in one visible handoff and turns toward the clinic route.",
+      "roughArt": "LIZE takes the same parcel from KOH in one visible handoff and turns toward the clinic route.",
+      "subject": "LIZE takes the same parcel from KOH in one visible handoff and turns toward the clinic route.",
+      "purpose": "代わりに届ける選択を手渡しで理解させる",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "私が届ける\n明日は来られる？",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Parcel now in LIZE’s hand; KOH hands empty; SENA turns cart toward clinic; no duplicate package.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "large two-person handoff",
+        "placement": "center",
+        "reader_focus": "single parcel crossing hands"
+      }
+    },
+    {
+      "id": "p086",
+      "sheet": 8,
+      "slot": 2,
+      "scene": "09-safe",
+      "art": "LIZE turns away with the parcel and KOH releases his hands, watching her take responsibility for the delivery.",
+      "roughArt": "LIZE turns away with the parcel and KOH releases his hands, watching her take responsibility for the delivery.",
+      "subject": "LIZE turns away with the parcel and KOH releases his hands, watching her take responsibility for the delivery.",
+      "purpose": "手渡しの結果を一呼吸受け止めて航の気持ちを残す",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Parcel now in LIZE’s hand; KOH hands empty; SENA turns cart toward clinic; no duplicate package.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "large two-person handoff",
+        "placement": "center",
+        "reader_focus": "single parcel crossing hands"
+      }
+    },
+    {
+      "id": "p087",
+      "sheet": 8,
+      "slot": 3,
+      "scene": "09-safe",
+      "art": "LIZE walks KOH a short distance toward a sheltered plaza by the same bridge; the clinic route and return route separate visibly.",
+      "roughArt": "LIZE walks KOH a short distance toward a sheltered plaza by the same bridge; the clinic route and return route separate visibly.",
+      "subject": "LIZE walks KOH a short distance toward a sheltered plaza by the same bridge; the clinic route and return route separate visibly.",
+      "purpose": "帰還場所までの短い移動を省略しない",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Milt safe plaza adjoining familiar bridge; LIZE carries parcel; SENA offscreen toward clinic.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "wide plaza establishing",
+        "placement": "center",
+        "reader_focus": "bridge, bench, staffed desk"
+      }
+    },
+    {
+      "id": "p088",
+      "sheet": 8,
+      "slot": 4,
+      "scene": "09-safe",
+      "art": "At the plaza entrance LIZE points to the staffed safe point beside the bridge and bench.",
+      "roughArt": "At the plaza entrance LIZE points to the staffed safe point beside the bridge and bench.",
+      "subject": "At the plaza entrance LIZE points to the staffed safe point beside the bridge and bench.",
+      "purpose": "安全拠点を町の地理として先に見せる",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "帰るなら\nここでね",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Milt safe plaza adjoining familiar bridge; LIZE carries parcel; SENA offscreen toward clinic.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "wide plaza establishing",
+        "placement": "center",
+        "reader_focus": "bridge, bench, staffed desk"
+      }
+    },
+    {
+      "id": "p089",
+      "sheet": 8,
+      "slot": 5,
+      "scene": "09-safe",
+      "art": "KOH sits beside the bench and raises his wrist to open his own logout display; LIZE waits with the parcel.",
+      "roughArt": "KOH sits beside the bench and raises his wrist to open his own logout display; LIZE waits with the parcel.",
+      "subject": "KOH sits beside the bench and raises his wrist to open his own logout display; LIZE waits with the parcel.",
+      "purpose": "帰る操作の前に航自身が安全を確認する",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Milt safe plaza; KOH hands empty; sword sheathed; LIZE holds parcel; no teleport.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "wrist and face medium",
+        "placement": "right",
+        "reader_focus": "logout display and promise"
+      }
+    },
+    {
+      "id": "p090",
+      "sheet": 8,
+      "slot": 6,
+      "scene": "09-safe",
+      "art": "The simple safe-point display appears as KOH makes a specific promise to return before tomorrow’s dusk.",
+      "roughArt": "The simple safe-point display appears as KOH makes a specific promise to return before tomorrow’s dusk.",
+      "subject": "The simple safe-point display appears as KOH makes a specific promise to return before tomorrow’s dusk.",
+      "purpose": "帰る操作と明日の意思を同じ場所で選ぶ",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "明日\n日暮れ前に来る",
+          "kind": "speech"
+        },
+        {
+          "speaker": "HUD",
+          "text": "安全拠点 ミルト　ログアウト",
+          "kind": "display"
+        }
+      ],
+      "sounds": [],
+      "propState": "Milt safe plaza; KOH hands empty; sword sheathed; LIZE holds parcel; no teleport.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "angled",
+        "camera": "wrist and face medium",
+        "placement": "right",
+        "reader_focus": "logout display and promise"
+      }
+    },
+    {
+      "id": "p091",
+      "sheet": 8,
+      "slot": 7,
+      "scene": "09-safe",
+      "art": "LIZE keeps the parcel ready and answers softly as the plaza falls into a generous white fade.",
+      "roughArt": "LIZE keeps the parcel ready and answers softly as the plaza falls into a generous white fade.",
+      "subject": "LIZE keeps the parcel ready and answers softly as the plaza falls into a generous white fade.",
+      "purpose": "再訪の約束を相手の返答で閉じる",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "じゃあ\nまた明日",
+          "kind": "speech"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same safe plaza; parcel in LIZE’s hand; no next-day scene; fade begins below her face.",
+      "widthShape": {
+        "width": "narrow",
+        "height": "tall",
+        "shape": "borderless",
+        "camera": "gentle close-up",
+        "placement": "left",
+        "reader_focus": "soft face and parcel edge"
+      }
+    },
+    {
+      "id": "p092",
+      "sheet": 8,
+      "slot": 8,
+      "scene": "10-japan",
+      "art": "KOH removes the headset with both hands in the same bedroom at 21:00; the click ends the fantasy sound field.",
+      "roughArt": "KOH removes the headset with both hands in the same bedroom at 21:00; the click ends the fantasy sound field.",
+      "subject": "KOH removes the headset with both hands in the same bedroom at 21:00; the click ends the fantasy sound field.",
+      "purpose": "現実への戻りを手と時刻で受け止める",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "カチ",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "The headset click ends the fantasy sound field before the real-world greeting."
+        }
+      ],
+      "propState": "Japan; teal hoodie; headset removed; desk lamp and school bag; wall clock reads 21:00; no fantasy objects carried over.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "split-tall",
+        "camera": "headset close-up to door medium",
+        "placement": "center",
+        "reader_focus": "both hands, open door, clock"
+      }
+    },
+    {
+      "id": "p093",
+      "sheet": 8,
+      "slot": 9,
+      "scene": "10-japan",
+      "art": "KOH turns toward the open bedroom door as MIWA calls from downstairs and he answers.",
+      "roughArt": "KOH turns toward the open bedroom door as MIWA calls from downstairs and he answers.",
+      "subject": "KOH turns toward the open bedroom door as MIWA calls from downstairs and he answers.",
+      "purpose": "帰宅の約束を母子の短い挨拶で完了させる",
+      "dialogue": [
+        {
+          "speaker": "美和（画面外）→航",
+          "text": "おかえり\nただいま",
+          "kind": "speech-pair"
+        }
+      ],
+      "sounds": [],
+      "propState": "Japan; teal hoodie; headset removed; desk lamp and school bag; wall clock reads 21:00; no fantasy objects carried over.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "split-tall",
+        "camera": "headset close-up to door medium",
+        "placement": "center",
+        "reader_focus": "both hands, open door, clock"
+      }
+    },
+    {
+      "id": "p094",
+      "sheet": 8,
+      "slot": 10,
+      "scene": "10-japan",
+      "art": "The wall clock reads 21:00 while KOH’s shoulders loosen and the removed headset rests beside the desk lamp.",
+      "roughArt": "The wall clock reads 21:00 while KOH’s shoulders loosen and the removed headset rests beside the desk lamp.",
+      "subject": "The wall clock reads 21:00 while KOH’s shoulders loosen and the removed headset rests beside the desk lamp.",
+      "purpose": "九時の約束を実際に守って帰った結果を確認する",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Japan; teal hoodie; headset removed; desk lamp and school bag; wall clock reads 21:00; no fantasy objects carried over.",
+      "widthShape": {
+        "width": "full",
+        "height": "tall",
+        "shape": "split-tall",
+        "camera": "headset close-up to door medium",
+        "placement": "center",
+        "reader_focus": "both hands, open door, clock"
+      }
+    },
+    {
+      "id": "p095",
+      "sheet": 8,
+      "slot": 11,
+      "scene": "10-japan",
+      "art": "KOH’s clean real hands rest beside the headset; his eyes reflect in the dark desk window before the final thought.",
+      "roughArt": "KOH’s clean real hands rest beside the headset; his eyes reflect in the dark desk window before the final thought.",
+      "subject": "KOH’s clean real hands rest beside the headset; his eyes reflect in the dark desk window before the final thought.",
+      "purpose": "現実の手と異世界での体験を静かに切り分ける",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "Japan; clean hands; headset on desk; no dirt, sword, parcel, magic or ring; broad ivory below.",
+      "widthShape": {
+        "width": "full",
+        "height": "very tall",
+        "shape": "borderless",
+        "camera": "quiet close-up",
+        "placement": "center",
+        "reader_focus": "clean hands, eye reflection, final thought"
+      }
+    },
+    {
+      "id": "p096",
+      "sheet": 8,
+      "slot": 12,
+      "scene": "10-japan",
+      "art": "One large quiet close view holds KOH’s slight smile and the dark window reflection after the called name.",
+      "roughArt": "One large quiet close view holds KOH’s slight smile and the dark window reflection after the called name.",
+      "subject": "One large quiet close view holds KOH’s slight smile and the dark window reflection after the called name.",
+      "purpose": "名前を呼ばれた実感へ視線を集める",
+      "dialogue": [
+        {
+          "speaker": "航（心）",
+          "text": "名前を\n呼ばれた",
+          "kind": "thought"
+        }
+      ],
+      "sounds": [],
+      "propState": "Japan; clean hands; headset on desk; no dirt, sword, parcel, magic or ring; broad ivory below.",
+      "widthShape": {
+        "width": "full",
+        "height": "very tall",
+        "shape": "borderless",
+        "camera": "quiet close-up",
+        "placement": "center",
+        "reader_focus": "clean hands, eye reflection, final thought"
+      }
+    }
+  ]
+}
