@@ -1,0 +1,937 @@
+{
+  "schema": "platform-cleave/finished-reader-validation/v1",
+  "source": "reader.html",
+  "method": "Playwright page.setContent, DPR1, real scroll windows",
+  "widths": [
+    360,
+    390
+  ],
+  "results": {
+    "360": {
+      "viewportWidth": 360,
+      "viewportHeight": 800,
+      "scrollWidth": 360,
+      "bodyScrollWidth": 360,
+      "scrollHeight": 6193,
+      "panelCount": 20,
+      "soundBeatCount": 2,
+      "pauseCount": 13,
+      "canvasCount": 22,
+      "captionCount": 22,
+      "sourceAssetCount": 7,
+      "uniqueSourceAssetCount": 7,
+      "referencedSourceAssetCount": 7,
+      "unresolvedRefs": [],
+      "visibleOverlayCount": 0,
+      "drawnCanvasCount": 22,
+      "imageIntegrity": [
+        {
+          "id": "prelude",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "thrust",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "details",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "evade",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "parry",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "aftermath",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "soundSpans",
+          "loaded": true,
+          "embedded": true,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "canvasIntegrity": [
+        {
+          "id": "p01",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 360,
+          "height": 324,
+          "cssWidth": 360,
+          "cssHeight": 324,
+          "left": 0,
+          "top": 86
+        },
+        {
+          "id": "p02",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 241,
+          "height": 250,
+          "cssWidth": 241.1875,
+          "cssHeight": 249.546875,
+          "left": 118.8125,
+          "top": 434
+        },
+        {
+          "id": "p03",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 259,
+          "height": 261,
+          "cssWidth": 259.1875,
+          "cssHeight": 261.296875,
+          "left": 0,
+          "top": 700.15625
+        },
+        {
+          "id": "p04",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 166,
+          "height": 167,
+          "cssWidth": 165.59375,
+          "cssHeight": 166.9375,
+          "left": 194.40625,
+          "top": 990.984375
+        },
+        {
+          "id": "p05",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 187,
+          "height": 180,
+          "cssWidth": 187.1875,
+          "cssHeight": 179.546875,
+          "left": 0,
+          "top": 990.984375
+        },
+        {
+          "id": "p06",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 306,
+          "height": 153,
+          "cssWidth": 306,
+          "cssHeight": 153,
+          "left": 27,
+          "top": 1188.984375
+        },
+        {
+          "id": "p07",
+          "asset": "thrust",
+          "drawn": true,
+          "width": 360,
+          "height": 540,
+          "cssWidth": 360,
+          "cssHeight": 540,
+          "left": 0,
+          "top": 1419.515625
+        },
+        {
+          "id": "p08",
+          "asset": "details",
+          "drawn": true,
+          "width": 187,
+          "height": 190,
+          "cssWidth": 187.1875,
+          "cssHeight": 190.234375,
+          "left": 172.8125,
+          "top": 1970.578125
+        },
+        {
+          "id": "p09",
+          "asset": "details",
+          "drawn": true,
+          "width": 158,
+          "height": 161,
+          "cssWidth": 158.390625,
+          "cssHeight": 160.96875,
+          "left": 0,
+          "top": 1970.578125
+        },
+        {
+          "id": "p10",
+          "asset": "evade",
+          "drawn": true,
+          "width": 360,
+          "height": 540,
+          "cssWidth": 360,
+          "cssHeight": 540,
+          "left": 0,
+          "top": 2175.578125
+        },
+        {
+          "id": "p11",
+          "asset": "details",
+          "drawn": true,
+          "width": 216,
+          "height": 204,
+          "cssWidth": 216,
+          "cssHeight": 204.09375,
+          "left": 144,
+          "top": 2735.875
+        },
+        {
+          "id": "p12",
+          "asset": "details",
+          "drawn": true,
+          "width": 166,
+          "height": 156,
+          "cssWidth": 165.59375,
+          "cssHeight": 156.46875,
+          "left": 0,
+          "top": 2956.578125
+        },
+        {
+          "id": "p13",
+          "asset": "details",
+          "drawn": true,
+          "width": 169,
+          "height": 173,
+          "cssWidth": 169.1875,
+          "cssHeight": 173.328125,
+          "left": 190.796875,
+          "top": 3009.1875
+        },
+        {
+          "id": "p14",
+          "asset": "details",
+          "drawn": true,
+          "width": 295,
+          "height": 302,
+          "cssWidth": 295.1875,
+          "cssHeight": 302.40625,
+          "left": 0,
+          "top": 3206.53125
+        },
+        {
+          "id": "p15",
+          "asset": "parry",
+          "drawn": true,
+          "width": 360,
+          "height": 540,
+          "cssWidth": 360,
+          "cssHeight": 540,
+          "left": 0,
+          "top": 3575.390625
+        },
+        {
+          "id": "ring",
+          "asset": "soundSpans",
+          "drawn": true,
+          "width": 360,
+          "height": 166,
+          "cssWidth": 360,
+          "cssHeight": 166.140625,
+          "left": 0,
+          "top": 4115.390625
+        },
+        {
+          "id": "p16",
+          "asset": "aftermath",
+          "drawn": true,
+          "width": 176,
+          "height": 183,
+          "cssWidth": 176.390625,
+          "cssHeight": 182.5,
+          "left": 183.59375,
+          "top": 4281.53125
+        },
+        {
+          "id": "p17",
+          "asset": "aftermath",
+          "drawn": true,
+          "width": 274,
+          "height": 283,
+          "cssWidth": 273.59375,
+          "cssHeight": 283.078125,
+          "left": 0,
+          "top": 4507.671875
+        },
+        {
+          "id": "p18",
+          "asset": "aftermath",
+          "drawn": true,
+          "width": 360,
+          "height": 342,
+          "cssWidth": 360,
+          "cssHeight": 341.625,
+          "left": 0,
+          "top": 4921.828125
+        },
+        {
+          "id": "p19",
+          "asset": "aftermath",
+          "drawn": true,
+          "width": 238,
+          "height": 225,
+          "cssWidth": 237.59375,
+          "cssHeight": 225.46875,
+          "left": 0,
+          "top": 5351.140625
+        },
+        {
+          "id": "footstep-away",
+          "asset": "soundSpans",
+          "drawn": true,
+          "width": 360,
+          "height": 212,
+          "cssWidth": 360,
+          "cssHeight": 212.296875,
+          "left": 0,
+          "top": 5576.609375
+        },
+        {
+          "id": "p20",
+          "asset": "aftermath",
+          "drawn": true,
+          "width": 360,
+          "height": 181,
+          "cssWidth": 360,
+          "cssHeight": 180.71875,
+          "left": 0,
+          "top": 5788.90625
+        }
+      ],
+      "fontsReady": true,
+      "episodeHeight": 6193.078125,
+      "bodyHeight": 6022.078125,
+      "explicitPauseHeight": 659.90625,
+      "rows": [
+        {
+          "name": "load",
+          "left": 0,
+          "top": 990.984375,
+          "width": 360,
+          "height": 179.546875,
+          "members": [
+            {
+              "id": "p04",
+              "left": 194.40625,
+              "top": 990.984375,
+              "width": 165.59375,
+              "height": 166.9375
+            },
+            {
+              "id": "p05",
+              "left": 0,
+              "top": 990.984375,
+              "width": 187.1875,
+              "height": 179.546875
+            }
+          ]
+        },
+        {
+          "name": "slip",
+          "left": 0,
+          "top": 1970.578125,
+          "width": 360,
+          "height": 190.234375,
+          "members": [
+            {
+              "id": "p08",
+              "left": 172.8125,
+              "top": 1970.578125,
+              "width": 187.1875,
+              "height": 190.234375
+            },
+            {
+              "id": "p09",
+              "left": 0,
+              "top": 1970.578125,
+              "width": 158.390625,
+              "height": 160.96875
+            }
+          ]
+        }
+      ],
+      "compositions": [
+        {
+          "name": "counter-load",
+          "left": 0,
+          "top": 2939.96875,
+          "width": 360,
+          "height": 242.5625,
+          "members": [
+            {
+              "id": "p12",
+              "left": 0,
+              "top": 2956.578125,
+              "width": 165.59375,
+              "height": 156.46875
+            },
+            {
+              "id": "p13",
+              "left": 190.796875,
+              "top": 3009.1875,
+              "width": 169.1875,
+              "height": 173.328125
+            }
+          ]
+        },
+        {
+          "name": "off-balance",
+          "left": 0,
+          "top": 4281.53125,
+          "width": 360,
+          "height": 509.234375,
+          "members": [
+            {
+              "id": "p16",
+              "left": 183.59375,
+              "top": 4281.53125,
+              "width": 176.390625,
+              "height": 182.5
+            },
+            {
+              "id": "p17",
+              "left": 0,
+              "top": 4507.671875,
+              "width": 273.59375,
+              "height": 283.078125
+            }
+          ]
+        }
+      ],
+      "soundSlots": [
+        {
+          "id": "ring",
+          "left": 0,
+          "top": 4115.390625,
+          "width": 360,
+          "height": 166.140625
+        },
+        {
+          "id": "footstep-away",
+          "left": 0,
+          "top": 5576.609375,
+          "width": 360,
+          "height": 212.296875
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "scrollWindows": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 800
+        },
+        {
+          "index": 1,
+          "y": 1798,
+          "height": 800
+        },
+        {
+          "index": 2,
+          "y": 3595,
+          "height": 800
+        },
+        {
+          "index": 3,
+          "y": 5393,
+          "height": 800
+        }
+      ],
+      "fullCapture": "validation/reader-captures/360/full.png"
+    },
+    "390": {
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "scrollWidth": 390,
+      "bodyScrollWidth": 390,
+      "scrollHeight": 6695,
+      "panelCount": 20,
+      "soundBeatCount": 2,
+      "pauseCount": 13,
+      "canvasCount": 22,
+      "captionCount": 22,
+      "sourceAssetCount": 7,
+      "uniqueSourceAssetCount": 7,
+      "referencedSourceAssetCount": 7,
+      "unresolvedRefs": [],
+      "visibleOverlayCount": 0,
+      "drawnCanvasCount": 22,
+      "imageIntegrity": [
+        {
+          "id": "prelude",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "thrust",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "details",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "evade",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "parry",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "aftermath",
+          "loaded": true,
+          "embedded": true,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "id": "soundSpans",
+          "loaded": true,
+          "embedded": true,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "canvasIntegrity": [
+        {
+          "id": "p01",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 390,
+          "height": 351,
+          "cssWidth": 390,
+          "cssHeight": 351,
+          "left": 0,
+          "top": 86
+        },
+        {
+          "id": "p02",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 261,
+          "height": 270,
+          "cssWidth": 261.296875,
+          "cssHeight": 270.359375,
+          "left": 128.703125,
+          "top": 463
+        },
+        {
+          "id": "p03",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 281,
+          "height": 283,
+          "cssWidth": 280.796875,
+          "cssHeight": 283.078125,
+          "left": 0,
+          "top": 751.359375
+        },
+        {
+          "id": "p04",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 179,
+          "height": 181,
+          "cssWidth": 179.390625,
+          "cssHeight": 180.84375,
+          "left": 210.609375,
+          "top": 1066.4375
+        },
+        {
+          "id": "p05",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 203,
+          "height": 195,
+          "cssWidth": 202.796875,
+          "cssHeight": 194.515625,
+          "left": 0,
+          "top": 1066.4375
+        },
+        {
+          "id": "p06",
+          "asset": "prelude",
+          "drawn": true,
+          "width": 332,
+          "height": 166,
+          "cssWidth": 331.5,
+          "cssHeight": 165.75,
+          "left": 29.25,
+          "top": 1280.953125
+        },
+        {
+          "id": "p07",
+          "asset": "thrust",
+          "drawn": true,
+          "width": 390,
+          "height": 585,
+          "cssWidth": 390,
+          "cssHeight": 585,
+          "left": 0,
+          "top": 1530.703125
+        },
+        {
+          "id": "p08",
+          "asset": "details",
+          "drawn": true,
+          "width": 203,
+          "height": 206,
+          "cssWidth": 202.796875,
+          "cssHeight": 206.09375,
+          "left": 187.203125,
+          "top": 2127.703125
+        },
+        {
+          "id": "p09",
+          "asset": "details",
+          "drawn": true,
+          "width": 172,
+          "height": 174,
+          "cssWidth": 171.59375,
+          "cssHeight": 174.390625,
+          "left": 0,
+          "top": 2127.703125
+        },
+        {
+          "id": "p10",
+          "asset": "evade",
+          "drawn": true,
+          "width": 390,
+          "height": 585,
+          "cssWidth": 390,
+          "cssHeight": 585,
+          "left": 0,
+          "top": 2349.796875
+        },
+        {
+          "id": "p11",
+          "asset": "details",
+          "drawn": true,
+          "width": 234,
+          "height": 221,
+          "cssWidth": 234,
+          "cssHeight": 221.09375,
+          "left": 156,
+          "top": 2956.796875
+        },
+        {
+          "id": "p12",
+          "asset": "details",
+          "drawn": true,
+          "width": 179,
+          "height": 170,
+          "cssWidth": 179.390625,
+          "cssHeight": 169.5,
+          "left": 0,
+          "top": 3195.890625
+        },
+        {
+          "id": "p13",
+          "asset": "details",
+          "drawn": true,
+          "width": 183,
+          "height": 188,
+          "cssWidth": 183.296875,
+          "cssHeight": 187.78125,
+          "left": 206.6875,
+          "top": 3252.890625
+        },
+        {
+          "id": "p14",
+          "asset": "details",
+          "drawn": true,
+          "width": 320,
+          "height": 328,
+          "cssWidth": 319.796875,
+          "cssHeight": 327.625,
+          "left": 0,
+          "top": 3466.671875
+        },
+        {
+          "id": "p15",
+          "asset": "parry",
+          "drawn": true,
+          "width": 390,
+          "height": 585,
+          "cssWidth": 390,
+          "cssHeight": 585,
+          "left": 0,
+          "top": 3866.296875
+        },
+        {
+          "id": "ring",
+          "asset": "soundSpans",
+          "drawn": true,
+          "width": 390,
+          "height": 180,
+          "cssWidth": 390,
+          "cssHeight": 180,
+          "left": 0,
+          "top": 4451.296875
+        },
+        {
+          "id": "p16",
+          "asset": "aftermath",
+          "drawn": true,
+          "width": 191,
+          "height": 198,
+          "cssWidth": 191.09375,
+          "cssHeight": 197.71875,
+          "left": 198.890625,
+          "top": 4631.296875
+        },
+        {
+          "id": "p17",
+          "asset": "aftermath",
+          "drawn": true,
+          "width": 296,
+          "height": 307,
+          "cssWidth": 296.390625,
+          "cssHeight": 306.671875,
+          "left": 0,
+          "top": 4876.296875
+        },
+        {
+          "id": "p18",
+          "asset": "aftermath",
+          "drawn": true,
+          "width": 390,
+          "height": 370,
+          "cssWidth": 390,
+          "cssHeight": 370.09375,
+          "left": 0,
+          "top": 5324.96875
+        },
+        {
+          "id": "p19",
+          "asset": "aftermath",
+          "drawn": true,
+          "width": 257,
+          "height": 244,
+          "cssWidth": 257.390625,
+          "cssHeight": 244.25,
+          "left": 0,
+          "top": 5790.0625
+        },
+        {
+          "id": "footstep-away",
+          "asset": "soundSpans",
+          "drawn": true,
+          "width": 390,
+          "height": 230,
+          "cssWidth": 390,
+          "cssHeight": 230,
+          "left": 0,
+          "top": 6034.3125
+        },
+        {
+          "id": "p20",
+          "asset": "aftermath",
+          "drawn": true,
+          "width": 390,
+          "height": 196,
+          "cssWidth": 390,
+          "cssHeight": 195.765625,
+          "left": 0,
+          "top": 6264.3125
+        }
+      ],
+      "fontsReady": true,
+      "episodeHeight": 6695.078125,
+      "bodyHeight": 6524.078125,
+      "explicitPauseHeight": 715,
+      "rows": [
+        {
+          "name": "load",
+          "left": 0,
+          "top": 1066.4375,
+          "width": 390,
+          "height": 194.515625,
+          "members": [
+            {
+              "id": "p04",
+              "left": 210.609375,
+              "top": 1066.4375,
+              "width": 179.390625,
+              "height": 180.84375
+            },
+            {
+              "id": "p05",
+              "left": 0,
+              "top": 1066.4375,
+              "width": 202.796875,
+              "height": 194.515625
+            }
+          ]
+        },
+        {
+          "name": "slip",
+          "left": 0,
+          "top": 2127.703125,
+          "width": 390,
+          "height": 206.09375,
+          "members": [
+            {
+              "id": "p08",
+              "left": 187.203125,
+              "top": 2127.703125,
+              "width": 202.796875,
+              "height": 206.09375
+            },
+            {
+              "id": "p09",
+              "left": 0,
+              "top": 2127.703125,
+              "width": 171.59375,
+              "height": 174.390625
+            }
+          ]
+        }
+      ],
+      "compositions": [
+        {
+          "name": "counter-load",
+          "left": 0,
+          "top": 3177.890625,
+          "width": 390,
+          "height": 262.78125,
+          "members": [
+            {
+              "id": "p12",
+              "left": 0,
+              "top": 3195.890625,
+              "width": 179.390625,
+              "height": 169.5
+            },
+            {
+              "id": "p13",
+              "left": 206.6875,
+              "top": 3252.890625,
+              "width": 183.296875,
+              "height": 187.78125
+            }
+          ]
+        },
+        {
+          "name": "off-balance",
+          "left": 0,
+          "top": 4631.296875,
+          "width": 390,
+          "height": 551.671875,
+          "members": [
+            {
+              "id": "p16",
+              "left": 198.890625,
+              "top": 4631.296875,
+              "width": 191.09375,
+              "height": 197.71875
+            },
+            {
+              "id": "p17",
+              "left": 0,
+              "top": 4876.296875,
+              "width": 296.390625,
+              "height": 306.671875
+            }
+          ]
+        }
+      ],
+      "soundSlots": [
+        {
+          "id": "ring",
+          "left": 0,
+          "top": 4451.296875,
+          "width": 390,
+          "height": 180
+        },
+        {
+          "id": "footstep-away",
+          "left": 0,
+          "top": 6034.3125,
+          "width": 390,
+          "height": 230
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "scrollWindows": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 844
+        },
+        {
+          "index": 1,
+          "y": 1950,
+          "height": 844
+        },
+        {
+          "index": 2,
+          "y": 3901,
+          "height": 844
+        },
+        {
+          "index": 3,
+          "y": 5851,
+          "height": 844
+        }
+      ],
+      "fullCapture": "validation/reader-captures/390/full.png"
+    }
+  },
+  "checks": {
+    "allImagesLoaded": true,
+    "allCanvasesDrawn": true,
+    "expectedTwentyPanels": true,
+    "expectedTwoSoundSpans": true,
+    "captionsCoverEveryCanvas": true,
+    "allCanvasSourcesResolve": true,
+    "expectedSevenSourceAssets": true,
+    "exportCompatibleStructure": true,
+    "approvedParallelRows": true,
+    "approvedCompositionOffsets": true,
+    "approvedSoundSlotHeights": true,
+    "allCanvasGeometryPositive": true,
+    "uniqueSourcesEmbeddedOnce": true,
+    "noVisibleHtmlLetteringOverlays": true,
+    "noHorizontalOverflow": true,
+    "noPageOrConsoleErrors": true
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "platform-cleave/finished-reader-layout/v1",
+  "title": "ホームを裂く一閃",
+  "referenceWidth": 390,
+  "pageColor": "#ffffff",
+  "approvedPlan": "../review/name-preview/plan.json",
+  "sourceAssets": {
+    "prelude": {
+      "path": "art/01-prelude-color.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "panels": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06"
+      ]
+    },
+    "thrust": {
+      "path": "art/02-thrust-color.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "panels": [
+        "p07"
+      ]
+    },
+    "details": {
+      "path": "art/03-details-color.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "panels": [
+        "p08",
+        "p09",
+        "p11",
+        "p12",
+        "p13",
+        "p14"
+      ]
+    },
+    "evade": {
+      "path": "art/04-evade-color.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "panels": [
+        "p10"
+      ]
+    },
+    "parry": {
+      "path": "art/05-parry-color.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "panels": [
+        "p15"
+      ]
+    },
+    "aftermath": {
+      "path": "art/06-aftermath-color.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "panels": [
+        "p16",
+        "p17",
+        "p18",
+        "p19",
+        "p20"
+      ]
+    },
+    "soundSpans": {
+      "path": "art/07-scroll-sounds.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "panels": [
+        "ring",
+        "footstep-away"
+      ]
+    }
+  },
+  "soundSourceCrops": {
+    "ring": [
+      0,
+      0,
+      1,
+      0.5
+    ],
+    "footstep-away": [
+      0,
+      0.5,
+      1,
+      0.5
+    ]
+  },
+  "soundSlots": {
+    "ring": {
+      "height": 180,
+      "align": "right"
+    },
+    "footstep-away": {
+      "height": 230,
+      "align": "right"
+    }
+  },
+  "reader": {
+    "embedUniqueSourcesOnce": true,
+    "rasterLetteringOnly": true,
+    "visibleHtmlDialogue": false,
+    "visibleHtmlSounds": false,
+    "preserveApprovedPauses": true,
+    "preserveCompositionOffsets": true
+  }
+}
