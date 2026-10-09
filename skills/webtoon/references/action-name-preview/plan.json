@@ -1,0 +1,905 @@
+{
+  "schema": "webtoon-name-preview/v1",
+  "title": "橋上の一歩",
+  "referenceWidth": 390,
+  "beats": [
+    {
+      "id": "p01",
+      "type": "panel",
+      "image": "rough/sheet-01.png",
+      "crop": [
+        0.014,
+        0.024,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "アキは橋へ入る直前で止まる アキ右手前 門番左奥 鐘楼奥中央 退路は右手前",
+      "widthPercent": 100,
+      "align": "center",
+      "composition": "c01",
+      "offsetX": 0,
+      "offsetY": 0,
+      "frame": "none",
+      "purpose": "石橋は右手前から左奥へ伸び鐘楼は奥で門番が左の通路を塞ぐ／アキは剣を握り直し平静を作る",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "風……",
+          "x": 35,
+          "y": 7
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "type": "panel",
+      "image": "rough/sheet-01.png",
+      "crop": [
+        0.3473333333333333,
+        0.024,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "アキが左へ一歩 門番は槍を横へ出す アキ右寄りから中央へ 門番左 槍は横に道を塞ぐ",
+      "widthPercent": 72,
+      "align": "center",
+      "composition": "c01",
+      "offsetX": 28,
+      "offsetY": 430,
+      "frame": "none",
+      "purpose": "アキが右から左へ自分の意思で橋へ入った／喉が鳴るが門番から目を外さない",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "コツ",
+          "x": 54,
+          "y": 91
+        }
+      ]
+    },
+    {
+      "id": "voice-p02",
+      "type": "voice",
+      "speaker": "門番",
+      "text": "止まれ",
+      "height": 180,
+      "widthPercent": 24,
+      "composition": "c01",
+      "offsetX": 0,
+      "offsetY": 445,
+      "x": 50,
+      "y": 50,
+      "purpose": "止められても一歩進む／絵の空いた側へ声を置き顔と手を守る"
+    },
+    {
+      "id": "p03",
+      "type": "panel",
+      "image": "rough/sheet-01.png",
+      "crop": [
+        0.6806666666666666,
+        0.024,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "足は止まり視線だけが槍先から足元へ落ちる 足元右下 槍の影は中央 手すりは手前",
+      "widthPercent": 34,
+      "align": "center",
+      "composition": "c01",
+      "offsetX": 0,
+      "offsetY": 650,
+      "frame": "thin",
+      "purpose": "槍の影が足元まで届き手すりが近い／つま先が止まり呼吸が浅くなる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "ヒュ……",
+          "x": 55,
+          "y": 7
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "type": "panel",
+      "image": "rough/sheet-01.png",
+      "crop": [
+        0.014,
+        0.524,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "アキが半歩前へ 門番の線は変わらない アキ中央右 門番左 両者の間に橋面の空き",
+      "widthPercent": 80,
+      "align": "center",
+      "composition": "c01",
+      "offsetX": 0,
+      "offsetY": 870,
+      "frame": "none",
+      "purpose": "アキの目的は鐘が鳴る前に渡ることだが門番は道を開けない／声を張ったあと自分の震えを聞く",
+      "dialogue": [
+        {
+          "speaker": "門番",
+          "text": "戻れ",
+          "kind": "spoken",
+          "tail": "left",
+          "x": 35,
+          "y": 19,
+          "width": 20
+        }
+      ],
+      "sounds": []
+    },
+    {
+      "id": "voice-p04",
+      "type": "voice",
+      "speaker": "アキ",
+      "text": "鐘が鳴る前に\n渡るんだ！",
+      "height": 335,
+      "widthPercent": 20,
+      "composition": "c01",
+      "offsetX": 80,
+      "offsetY": 815,
+      "x": 50,
+      "y": 50,
+      "purpose": "怖さを声にしてでも通行を求める／絵の空いた側へ声を置き顔と手を守る"
+    },
+    {
+      "id": "pause-01",
+      "type": "pause",
+      "height": 95,
+      "purpose": "鐘が鳴る前に渡る目的と左右奥行きを固定／次の動作をまだ見せない間"
+    },
+    {
+      "id": "p05",
+      "type": "panel",
+      "image": "rough/attack-breakout.png",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "槍の軌道とアキの後退を同じ大画面に置く 門番左から中央 アキ中央右から右 槍は左上から右下",
+      "widthPercent": 100,
+      "align": "center",
+      "composition": "c02",
+      "offsetX": 0,
+      "offsetY": 0,
+      "frame": "none",
+      "purpose": "門番が静止から動き槍の線が左上から右下へ橋を横切る／考える前に身体が跳ねる／斜めの内枠を武器と身体が突き抜ける主動作として見せる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "ブォンッ",
+          "x": 63,
+          "y": 9
+        }
+      ],
+      "motionEffects": {
+        "origin": "gatekeeper shoulder and spear sweep on left; sliding hero boot",
+        "trajectory": "left to foreground right along spear sweep",
+        "graphic": "broad tapered ink wind bands, converging speed streaks, boot scrape and dust",
+        "result": "hero recoils right; no impact yet"
+      }
+    },
+    {
+      "id": "p06",
+      "type": "panel",
+      "image": "rough/sheet-01.png",
+      "crop": [
+        0.79,
+        0.687,
+        0.186,
+        0.265
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "低く沈み視線を左へ返す アキ右側 門番左中央 手すりはアキの背後",
+      "widthPercent": 30,
+      "align": "center",
+      "composition": "c02",
+      "offsetX": 70,
+      "offsetY": 610,
+      "frame": "thin",
+      "purpose": "アキは低く避けたが手すり側へ追い込まれた／手すりが背中に近くなり焦りが出る",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "ザッ",
+          "x": 33,
+          "y": 93
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "type": "panel",
+      "image": "rough/sheet-02.png",
+      "crop": [
+        0.014,
+        0.024,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "前へ出た足が止まり剣が同じ橋面へ落ちる アキ右中央 門番左中央 剣は橋面中央右x54",
+      "widthPercent": 68,
+      "align": "center",
+      "composition": "c02",
+      "offsetX": 0,
+      "offsetY": 695,
+      "frame": "none",
+      "purpose": "アキは前へ戻れず握っていた一振りの剣を中央右へ落とした／空になった手を見て失敗を理解する",
+      "dialogue": [
+        {
+          "speaker": "アキ",
+          "text": "しまった…！",
+          "kind": "spoken",
+          "tail": "right",
+          "x": 43,
+          "y": 3,
+          "width": 29
+        }
+      ],
+      "sounds": [
+        {
+          "text": "カラン……",
+          "x": 34,
+          "y": 96
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "type": "panel",
+      "image": "rough/sheet-02.png",
+      "crop": [
+        0.3473333333333333,
+        0.024,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "槍先だけが剣の上で揺れる アキ右上 門番左 剣は中央右下 槍先は剣の上",
+      "widthPercent": 72,
+      "align": "center",
+      "composition": "c02",
+      "offsetX": 0,
+      "offsetY": 1100,
+      "frame": "none",
+      "purpose": "剣は中央右にあり槍先は剣の上を通るので今は拾えない／空の手を握り呼吸だけが残る",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "pause-02",
+      "type": "pause",
+      "height": 160,
+      "purpose": "避けても前へ戻れず剣を失ったことを同じ空間で示す／次の動作をまだ見せない間"
+    },
+    {
+      "id": "p09",
+      "type": "panel",
+      "image": "rough/sheet-02.png",
+      "crop": [
+        0.6806666666666666,
+        0.024,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "槍の弧が前と同じ軌道をなぞる 門番左から中央 アキ右寄り 剣は中央右下",
+      "widthPercent": 90,
+      "align": "center",
+      "composition": "c03",
+      "offsetX": 0,
+      "offsetY": 0,
+      "frame": "none",
+      "purpose": "門番は同じ踏み出しから同じ高さへ槍を振る／二度目の動きを見て観察へ切り替わる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "ヒュン",
+          "x": 65,
+          "y": 89
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "type": "panel",
+      "image": "rough/sheet-02.png",
+      "crop": [
+        0.014,
+        0.524,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "肩が落ちる瞬間だけを切り取る 門番の肩と仮面は中央左 アキの目は右下",
+      "widthPercent": 36,
+      "align": "center",
+      "composition": "c03",
+      "offsetX": 64,
+      "offsetY": 355,
+      "frame": "thin",
+      "purpose": "振る直前に門番の左肩が落ち仮面が同じ向きを向く／怖さをこらえ肩と目へ視線を固定する",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "p11",
+      "type": "panel",
+      "image": "rough/sheet-02.png",
+      "crop": [
+        0.3473333333333333,
+        0.524,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "人物は静止し内声だけが空間を渡る アキ右下 門番左中央 鐘楼側上部は空き",
+      "widthPercent": 64,
+      "align": "center",
+      "composition": "c03",
+      "offsetX": 0,
+      "offsetY": 575,
+      "frame": "none",
+      "purpose": "アキは左肩が落ちた後に槍が来ると理解した／怖さの中に自分で選べる感覚が生まれる",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "voice-p11",
+      "type": "voice",
+      "speaker": "アキ 心の声",
+      "text": "槍より先に\n肩が落ちる……！",
+      "height": 345,
+      "widthPercent": 31,
+      "composition": "c03",
+      "offsetX": 69,
+      "offsetY": 555,
+      "x": 50,
+      "y": 50,
+      "purpose": "次の一回で確かめる／絵の空いた側へ声を置き顔と手を守る"
+    },
+    {
+      "id": "p12",
+      "type": "panel",
+      "image": "rough/sheet-02.png",
+      "crop": [
+        0.6806666666666666,
+        0.524,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "槍が前を通りアキは手すりへ下がらず横へずれる 門番は中央へ アキは中央右へ 剣は中央右下",
+      "widthPercent": 82,
+      "align": "center",
+      "composition": "c03",
+      "offsetX": 18,
+      "offsetY": 980,
+      "frame": "none",
+      "purpose": "同じ予兆が出たがアキが横へずれると槍は空を切った／成功を確信する前に身体を固くする",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "スッ",
+          "x": 62,
+          "y": 92
+        }
+      ]
+    },
+    {
+      "id": "voice-p12",
+      "type": "voice",
+      "speaker": "アキ 心の声",
+      "text": "今だ……？",
+      "height": 250,
+      "widthPercent": 18,
+      "composition": "c03",
+      "offsetX": 0,
+      "offsetY": 960,
+      "x": 50,
+      "y": 50,
+      "purpose": "確信できず横へ試す内声／門番の仮面を隠さず空いた左へ置く"
+    },
+    {
+      "id": "pause-03",
+      "type": "pause",
+      "height": 115,
+      "purpose": "門番の左肩が落ちる予兆をアキが見抜く／次の動作をまだ見せない間"
+    },
+    {
+      "id": "p13",
+      "type": "panel",
+      "image": "rough/sheet-03.png",
+      "crop": [
+        0.014,
+        0.024,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "槍の高さが変わり踵が剣の近くの段差へ落ちる 門番中央左 アキ中央右から下段右 剣は同じ中央右下",
+      "widthPercent": 100,
+      "align": "center",
+      "composition": "c04",
+      "offsetX": 0,
+      "offsetY": 0,
+      "frame": "none",
+      "purpose": "門番が高さを変えアキは剣のある中央右下の段差へ押し込まれた／足元の変化に遅れ恐怖が戻る",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "ガクッ",
+          "x": 34,
+          "y": 93
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "type": "panel",
+      "image": "rough/sheet-03.png",
+      "crop": [
+        0.3473333333333333,
+        0.024,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "片手が石の縁へ触れ視線が剣へ移る アキの手は下段右 剣は手前中央右 門番は槍影だけ",
+      "widthPercent": 38,
+      "align": "center",
+      "composition": "c04",
+      "offsetX": 62,
+      "offsetY": 420,
+      "frame": "thin",
+      "purpose": "アキは剣が同じ段差の縁に近いことと手を置ける石の lip を同時に見つけた／指が震え剣と石の縁を見比べる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "ガッ",
+          "x": 52,
+          "y": 92
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "type": "panel",
+      "image": "rough/sheet-03.png",
+      "crop": [
+        0.6806666666666666,
+        0.024,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "まだ立ち上がらず剣を拾う瞬間を待つ アキは下段右に小さく 門番は中央左 鐘楼側は大きく空く",
+      "widthPercent": 56,
+      "align": "center",
+      "composition": "c04",
+      "offsetX": 0,
+      "offsetY": 605,
+      "frame": "none",
+      "purpose": "剣を拾えばまた槍の線へ入るがアキは怖いまま進むと決めた／震えたまま目を剣から外さない",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "voice-p15",
+      "type": "voice",
+      "speaker": "アキ 心の声",
+      "text": "怖い……\nそれでも行く！",
+      "height": 320,
+      "widthPercent": 38,
+      "composition": "c04",
+      "offsetX": 62,
+      "offsetY": 575,
+      "x": 50,
+      "y": 50,
+      "purpose": "恐怖を消さず剣を拾う／絵の空いた側へ声を置き顔と手を守る"
+    },
+    {
+      "id": "p16",
+      "type": "panel",
+      "image": "rough/sheet-03.png",
+      "crop": [
+        0.014,
+        0.524,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "しゃがんだ姿勢で手を伸ばし剣を拾う 立ち上がらない アキは剣の落下地点と同じ中央右下 門番は中央左 段差はすぐ隣",
+      "widthPercent": 78,
+      "align": "center",
+      "composition": "c04",
+      "offsetX": 22,
+      "offsetY": 1020,
+      "frame": "none",
+      "purpose": "アキは倒れた同じ場所でしゃがんだまま一振りの剣を拾い手に戻した／握った重さを確かめ恐怖のまま息を吐く",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "カチッ",
+          "x": 58,
+          "y": 94
+        }
+      ]
+    },
+    {
+      "id": "pause-04",
+      "type": "pause",
+      "height": 85,
+      "purpose": "剣の位置を再確認し恐怖を認めて拾う選択へつなぐ／次の動作をまだ見せない間"
+    },
+    {
+      "id": "p17",
+      "type": "panel",
+      "image": "rough/jump-breakout.png",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "同じ段差を踏み剣を持ったまま橋を右から左へ横断する アキは右下の段差から左上へ 門番は中央左 槍は下を通る 剣はアキの手",
+      "widthPercent": 100,
+      "align": "center",
+      "composition": "c05",
+      "offsetX": 0,
+      "offsetY": 0,
+      "frame": "none",
+      "purpose": "アキは剣をすでに持った状態で近くの低い段差から左上へ跳んだ／空中で息をのみ目は門番から外さない／斜めの内枠を武器と身体が突き抜ける主動作として見せる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "ダンッ",
+          "x": 66,
+          "y": 92
+        }
+      ],
+      "motionEffects": {
+        "origin": "low right stone step at takeoff",
+        "trajectory": "lower right toward upper left behind airborne hero",
+        "graphic": "takeoff dust fan, long directional wake, clothing and boot streaks",
+        "result": "hero clears spear; sword remains held, no sword swing yet"
+      }
+    },
+    {
+      "id": "p18",
+      "type": "panel",
+      "image": "rough/sheet-03.png",
+      "crop": [
+        0.6806666666666666,
+        0.524,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "門番の仮面だけが跳躍を追う 門番の仮面は中央左上 アキは左上の軌道上",
+      "widthPercent": 32,
+      "align": "center",
+      "composition": "c05",
+      "offsetX": 68,
+      "offsetY": 520,
+      "frame": "thin",
+      "purpose": "門番は剣を持って跳ぶアキを予想しておらず仮面が初めて大きく上を向いた／アキは声を出さず剣を下へ向ける",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "voice-p18",
+      "type": "voice",
+      "speaker": "門番",
+      "text": "何っ！？",
+      "height": 150,
+      "widthPercent": 42,
+      "composition": "c05",
+      "offsetX": 5,
+      "offsetY": 490,
+      "x": 50,
+      "y": 50,
+      "purpose": "着地点を外さない／絵の空いた側へ声を置き顔と手を守る"
+    },
+    {
+      "id": "p19",
+      "type": "panel",
+      "image": "rough/sheet-04.png",
+      "crop": [
+        0.014,
+        0.024,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "右手前のアキが剣を握ったまま左の門番へ近く着地し身を低くする",
+      "widthPercent": 58,
+      "align": "center",
+      "composition": "c05",
+      "offsetX": 0,
+      "offsetY": 660,
+      "frame": "thin",
+      "purpose": "アキは門番の内側へ着地し剣を持った手が槍の柄へ届く位置に入った／着地の安心より先に剣を構える",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "ザッ",
+          "x": 67,
+          "y": 93
+        }
+      ]
+    },
+    {
+      "id": "p20",
+      "type": "panel",
+      "image": "rough/counter-breakout.png",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "一本の剣を握る手と刃が見え槍と一か所で交差する 門番は左 アキは右 槍の軌道は右手すりへ外れる",
+      "widthPercent": 100,
+      "align": "center",
+      "composition": "c05",
+      "offsetX": 0,
+      "offsetY": 900,
+      "frame": "none",
+      "purpose": "アキの同じ一振りが槍を右手すり側へ弾き攻撃の線が切れた／成功を喜ばず剣を下げ次の動きを待つ／斜めの内枠を武器と身体が突き抜ける主動作として見せる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "ガキィンッ！",
+          "x": 47,
+          "y": 90
+        }
+      ],
+      "motionEffects": {
+        "origin": "hero upward sword swing and single sword-spear crossing",
+        "trajectory": "swing rises into contact; spear recoil flows from contact toward right spearhead",
+        "graphic": "broad swing wake, high-contrast contact burst, grouped rebound rays and foot scrape",
+        "result": "one continuous spear deflected right; effects end before quiet p21"
+      }
+    },
+    {
+      "id": "pause-05",
+      "type": "pause",
+      "height": 180,
+      "purpose": "段差から跳び同じ剣で槍を弾く因果を一続きにする／次の動作をまだ見せない間"
+    },
+    {
+      "id": "p21",
+      "type": "panel",
+      "image": "rough/sheet-04.png",
+      "crop": [
+        0.6806666666666666,
+        0.024,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "全員が止まり橋の空間だけが残る アキ左寄り 門番中央 槍は右手すり 鐘楼は奥",
+      "widthPercent": 100,
+      "align": "center",
+      "composition": "c06",
+      "offsetX": 0,
+      "offsetY": 0,
+      "frame": "none",
+      "purpose": "槍は右手すり側へ外れアキは左寄りで剣を下げている／膝が震え勝った顔を作れない",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "p22",
+      "type": "panel",
+      "image": "rough/sheet-04.png",
+      "crop": [
+        0.014,
+        0.524,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "槍先が橋面へ下がる 門番の手と槍は中央右 アキは左外",
+      "widthPercent": 38,
+      "align": "center",
+      "composition": "c06",
+      "offsetX": 62,
+      "offsetY": 535,
+      "frame": "thin",
+      "purpose": "門番が槍を下げ通路を開けた／剣を握ったまま目だけ門番へ向ける",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "コト……",
+          "x": 46,
+          "y": 97
+        }
+      ]
+    },
+    {
+      "id": "voice-p22",
+      "type": "voice",
+      "speaker": "門番",
+      "text": "……通れ",
+      "height": 190,
+      "widthPercent": 46,
+      "composition": "c06",
+      "offsetX": 5,
+      "offsetY": 515,
+      "x": 50,
+      "y": 50,
+      "purpose": "許可を確かめてから進む／絵の空いた側へ声を置き顔と手を守る"
+    },
+    {
+      "id": "p23",
+      "type": "panel",
+      "image": "rough/sheet-04.png",
+      "crop": [
+        0.3473333333333333,
+        0.524,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "右から左への侵入が左奥への通過として完了する アキ中央左から左奥 門番中央右 槍は右手すり",
+      "widthPercent": 88,
+      "align": "center",
+      "composition": "c06",
+      "offsetX": 0,
+      "offsetY": 855,
+      "frame": "none",
+      "purpose": "アキは剣を下げ怖さを抱えたまま左奥へ渡り切ろうとする／一度振り返り震えを隠さず歩き出す",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "コツ",
+          "x": 35,
+          "y": 94
+        }
+      ]
+    },
+    {
+      "id": "voice-p23",
+      "type": "voice",
+      "speaker": "アキ 心の声",
+      "text": "こわかった……\nでも行けた",
+      "height": 325,
+      "widthPercent": 32,
+      "composition": "c06",
+      "offsetX": 68,
+      "offsetY": 1230,
+      "x": 50,
+      "y": 50,
+      "purpose": "今度こそ鐘楼へ進む／絵の空いた側へ声を置き顔と手を守る"
+    },
+    {
+      "id": "p24",
+      "type": "panel",
+      "image": "rough/sheet-04.png",
+      "crop": [
+        0.6806666666666666,
+        0.524,
+        0.3053333333333333,
+        0.452
+      ],
+      "imageSize": [
+        1536,
+        1024
+      ],
+      "alt": "アキの背中が鐘楼へ近づき小さくなる アキ左奥 鐘楼は進路の奥 門番は橋の後方",
+      "widthPercent": 100,
+      "align": "center",
+      "composition": "c06",
+      "offsetX": 0,
+      "offsetY": 1650,
+      "frame": "none",
+      "purpose": "アキは橋の出口を抜け鐘楼の入口へ進む／恐怖は消えないが足を止めない",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "コツ……",
+          "x": 56,
+          "y": 85
+        }
+      ]
+    },
+    {
+      "id": "pause-06",
+      "type": "pause",
+      "height": 260,
+      "purpose": "勝利説明で急がず怖さを抱えた通過で場面を閉じる／次の動作をまだ見せない間"
+    }
+  ],
+  "feedback": {
+    "panelLayout": "accepted_direction_preserved",
+    "effectRevision": "accepted_bold_readable_combat_direction",
+    "finishedArt": "not_started"
+  },
+  "adoption": "accepted_combat_direction_reference",
+  "acceptedScope": [
+    "panel_layout",
+    "combat_motion_effect_direction"
+  ]
+}

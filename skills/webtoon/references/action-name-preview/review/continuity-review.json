@@ -1,0 +1,83 @@
+{
+  "schema": "battle-continuity-review/v1",
+  "title": "橋上の一歩",
+  "scope": "current_motion_effects_and_p21_result",
+  "reviewedAt": "2026-10-09",
+  "overall_status": "pass_with_scope_note",
+  "checked": [
+    "skills/webtoon/references/action-name-preview/review/composition-360-c02.png",
+    "skills/webtoon/references/action-name-preview/review/composition-390-c02.png",
+    "skills/webtoon/references/action-name-preview/review/composition-360-c05.png",
+    "skills/webtoon/references/action-name-preview/review/composition-390-c05.png",
+    "skills/webtoon/references/action-name-preview/review/composition-390-c06.png",
+    "skills/webtoon/references/action-name-preview/rough/attack-breakout.png",
+    "skills/webtoon/references/action-name-preview/rough/jump-breakout.png",
+    "skills/webtoon/references/action-name-preview/rough/counter-breakout.png"
+  ],
+  "sourceSha256": {
+    "index.html": "02f77a6188bc42e236a9acbaf589ffe57ee60f7dd3ee4301ccd488823c420f90",
+    "plan.json": "944025bd798aaf9993db20f780b53190cfbfb73271b4fb73e5519727ce7566df"
+  },
+  "findings": [
+    {
+      "id": "c02-spear-sweep",
+      "result": "pass",
+      "panels": [
+        "p05",
+        "p06",
+        "p07",
+        "p08"
+      ],
+      "observation": "p05 now has broad tapered sweep bands and grouped stone streaks that follow the spear from the gatekeeper toward the right foreground. The spear origin, both figures, Aki's face and hand, and ブォンッ remain readable at 360px; the effect ends before the p06 reaction inset. The sequence still reads as sweep -> evade -> sword drop -> blocked recovery."
+    },
+    {
+      "id": "c05-jump-and-takeoff",
+      "result": "pass",
+      "panels": [
+        "p17",
+        "p18",
+        "p19"
+      ],
+      "observation": "p17's dust and stone wake is visibly anchored to the lower-right step behind Aki's boot, while long directional strokes carry the body and single sword toward the upper-left. The guard remains a separate observer below, ダンッ stays legible, and p18's 何っ！？ plus p19's landing inset are not covered. The path reads as takeoff -> airborne crossing -> reaction -> landing rather than decorative particles."
+    },
+    {
+      "id": "p20-single-clash",
+      "result": "pass",
+      "panels": [
+        "p20"
+      ],
+      "observation": "The stronger impact burst is centered on one sword-to-spear crossing. At 360px, the guard's two hands lead into one solid spear through the contact and toward the right head, while Aki's closed sword grip and blade remain traceable. The burst rays follow the deflection and the frame breakout without creating a second shaft, second blade, or extra contact. ガキィンッ！ remains readable in the white gutter."
+    },
+    {
+      "id": "faces-hands-lettering",
+      "result": "pass",
+      "panels": [
+        "p05",
+        "p17",
+        "p18",
+        "p19",
+        "p20"
+      ],
+      "observation": "The added ink effects are directional and leave the required faces, grips, mask reaction, speech, and sound lettering visible at phone width. No generated Japanese text or duplicate character silhouette appears in the updated source assets."
+    },
+    {
+      "id": "p20-to-p21-result",
+      "result": "pass",
+      "panels": [
+        "p20",
+        "p21"
+      ],
+      "observation": "The 390px c06 proof preserves the intended quiet aftermath: Aki is left with the sword lowered and the guard's spear is already redirected low to the right. This is a readable result of p20's deflection, with the impact effect ending before the quiet panel rather than producing an unintended continuing attack."
+    }
+  ],
+  "material_mismatches": [],
+  "priorUnchangedSequenceReview": {
+    "gitRef": "8497408e",
+    "path": "skills/webtoon/references/action-name-preview/review/continuity-review.json"
+  },
+  "not_verified": [
+    "physical phone",
+    "finished art anatomy and laterality",
+    "full episode quantity or adoption"
+  ]
+}

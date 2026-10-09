@@ -1,0 +1,225 @@
+{
+  "schema": "webtoon-action-name-validation/v1",
+  "scope": "single_combat_scene_partial_trial",
+  "adoption": "accepted_combat_direction_reference",
+  "finishedArt": "not_started",
+  "publication": "not_requested",
+  "episodeLength": {
+    "applicable": false,
+    "reason": "戦闘一場面の部分試作 既存作品の一話ではない",
+    "effectivePanels": 24
+  },
+  "sources": {
+    "actualPngCount": 7,
+    "independentDrawnMoments": 24,
+    "dedicatedBreakoutPanels": [
+      "p05",
+      "p17",
+      "p20"
+    ],
+    "unusedSourceCells": [
+      "sheet-01/r2/c2",
+      "sheet-03/r2/c2",
+      "sheet-04/r1/c2"
+    ],
+    "rawPngBytesUnchanged": true,
+    "sourceDrawnInnerFramesCrossed": true,
+    "cssPolygonMasksRemoved": true,
+    "historicalStandaloneSources": "Git refs 3659e7f6 and 79b0dec3 only; see art-provenance.json"
+  },
+  "rendered": {
+    "panels": 24,
+    "voices": 8,
+    "pauses": 6,
+    "compositionGroups": 6,
+    "domBeats": 38
+  },
+  "metrics": {
+    "390": {
+      "readerWidthCssPx": 390,
+      "bodyHeightCssPx": 9585.719,
+      "contentHeightCssPx": 7273.934,
+      "pureGapHeightCssPx": 2311.785,
+      "explicitPauseHeightCssPx": 895,
+      "nonPauseHeightIsPartialOnly": true,
+      "allImagesLoaded": true,
+      "imageFailureCount": 0,
+      "scrollWidth": 390
+    },
+    "360": {
+      "readerWidthCssPx": 360,
+      "bodyHeightCssPx": 8848.313,
+      "contentHeightCssPx": 6716.866,
+      "pureGapHeightCssPx": 2131.447,
+      "explicitPauseHeightCssPx": 826.108,
+      "nonPauseHeightIsPartialOnly": true,
+      "allImagesLoaded": true,
+      "imageFailureCount": 0,
+      "scrollWidth": 360
+    }
+  },
+  "spaceMethod": "Union of panel crop-window (or uncropped panel) vertical bounds, all text-node bounds, and dialogue balloon bounds that fall outside panel content; all intervals clamped to the flow. Explicit pauses are reported but not subtracted from occupied content. Large blank full-width native bands were visually checked; none require further exclusion. Source white corner margins remain within the art display windows. These partial-trial measurements are not a full-episode quantity pass.",
+  "checks": {
+    "htmlLoadedWithSetContent": true,
+    "noFileUrlOrGoto": true,
+    "panelCount24": true,
+    "allImagesLoadedAtBothWidths": true,
+    "horizontalOverflowAbsent": true,
+    "overlayTextPositionAndFontChecked": true,
+    "overlayOutsideReaderCandidatesSurfaced": true,
+    "dialogueAndVoiceFontRange19To22": true,
+    "notesAndMeasurementToggleStable": true,
+    "stagedWindowsHave150pxOverlap": true,
+    "domOrderMatchesPlanIncludingAuxiliaryBeats": true,
+    "compositionGroupsChecked": true,
+    "compositionMembersAbsolute": true,
+    "compositionNaturalAndBoundingRectsCaptured": true,
+    "compositionOverlapCandidatesSurfaced": true,
+    "sourceImageHashesChecked": true,
+    "sevenDistinctSourceHashesChecked": true,
+    "sourceDimensionsAndCropChecked": true,
+    "dramaticSfxGeometryAndReaderMarginsChecked": true,
+    "dprAndResizeChecked": true,
+    "desktop390Checked": true,
+    "brokenImageCheckSkippedForPartialTrial": true,
+    "approvedRenderLayoutPreserved": true,
+    "currentMotionEffectsVisuallyChecked": true,
+    "currentNative360OverlapCandidatesReviewed": true
+  },
+  "visualReview": {
+    "root390": {
+      "changedNativeFiles": [
+        "review/composition-390-c02.png",
+        "review/composition-390-c05.png"
+      ],
+      "observations": [
+        "Bold spear-sweep wake follows left to foreground right; dust shows hero retreat",
+        "Jump dust begins at right low step and trajectory rises upper-left",
+        "One large contact burst follows sword swing and spear rebound, with one continuous weapon each",
+        "Existing speech and SFX remain clear"
+      ],
+      "priorUnchangedSequenceReview": {
+        "gitRef": "8497408e",
+        "path": "skills/webtoon/references/action-name-preview/validation.json"
+      }
+    },
+    "independent360": {
+      "result": "pass_with_partial_trial_scope",
+      "file": "review/native-360-review.json",
+      "actualScope": "Current c02/c05 effects and source originals; 390 c06 for p21 quiet result",
+      "blockers": []
+    },
+    "continuity": {
+      "result": "pass_with_scope_note",
+      "file": "review/continuity-review.json",
+      "scope": "Current action motion and p21 continuation; earlier unchanged sequence retained from Git baseline"
+    }
+  },
+  "remainingDisplayCandidates": [
+    {
+      "location": "c01 p02/p03",
+      "reason": "The stopped-foot inset shares the lower-left background of the broader scene; faces hands and weapons remain readable"
+    },
+    {
+      "location": "c05 p17/p18/voice-p18",
+      "reason": "Reaction inset and white voice surface intentionally cover background space. p17 SFX is shifted clear of the white voice surface and leaves faces and hands readable; current native review passes."
+    }
+  ],
+  "limitations": [
+    "Physical phone not tested",
+    "Rough identity and held-hand laterality need final-art verification"
+  ],
+  "readerTabRefresh": "not_performed; manually reload the existing tab or open the updated HTML link",
+  "sourceSha256": {
+    "index.html": "02f77a6188bc42e236a9acbaf589ffe57ee60f7dd3ee4301ccd488823c420f90",
+    "plan.json": "5991ed61296c89443818620f5e9b2eb76739f9218fc24767236626434bcd5aaf"
+  },
+  "reviewedAt": "2026-10-09",
+  "dramaticSfxFontCssPx": {
+    "390": {
+      "p05": 50.7,
+      "p17": 46.8,
+      "p20": 54.6
+    },
+    "360": {
+      "p05": 46.8,
+      "p17": 43.2,
+      "p20": 50.4
+    }
+  },
+  "capturedWindows": {
+    "390": 15,
+    "360": 14,
+    "overlapCssPx": 150
+  },
+  "feedback": {
+    "panelLayout": "accepted_direction_preserved",
+    "effectRevision": "accepted_bold_readable_combat_direction",
+    "finishedArt": "not_started"
+  },
+  "motionEffects": {
+    "p05": {
+      "origin": "gatekeeper shoulder and spear sweep on left; sliding hero boot",
+      "trajectory": "left to foreground right along spear sweep",
+      "graphic": "broad tapered ink wind bands, converging speed streaks, boot scrape and dust",
+      "result": "hero recoils right; no impact yet"
+    },
+    "p17": {
+      "origin": "low right stone step at takeoff",
+      "trajectory": "lower right toward upper left behind airborne hero",
+      "graphic": "takeoff dust fan, long directional wake, clothing and boot streaks",
+      "result": "hero clears spear; sword remains held, no sword swing yet"
+    },
+    "p20": {
+      "origin": "hero upward sword swing and single sword-spear crossing",
+      "trajectory": "swing rises into contact; spear recoil flows from contact toward right spearhead",
+      "graphic": "broad swing wake, high-contrast contact burst, grouped rebound rays and foot scrape",
+      "result": "one continuous spear deflected right; effects end before quiet p21"
+    }
+  },
+  "productionReferences": {
+    "art-prompts.md": "Effects-only edit keeps characters, weapons, current pose and literal source record",
+    "cross-panel-sounds.md": {
+      "viewed": [
+        "tower-forge/sound-spans/after-21-390.jpg"
+      ],
+      "applied": "Keep large single contact sound clear and end it before quiet aftermath"
+    },
+    "scroll-pacing.md": {
+      "viewed": [
+        "spacious-before.jpg",
+        "spacious-after.jpg"
+      ],
+      "applied": "Retain existing reaction, landing and consequence intervals rather than filling every gap"
+    },
+    "whitespace-example.md": {
+      "viewed": [
+        "zero-break/whitespace/review/window-390-03.png"
+      ],
+      "applied": "Preserve separate sparse voice and quiet result around dense actions"
+    }
+  },
+  "adoptionRecord": {
+    "status": "accepted_combat_direction_reference",
+    "acceptedAt": "2026-10-09",
+    "userResponse": "そうそう！やっぱ戦いシーンは カッケー！！！って思わせないと",
+    "acceptedScope": [
+      "panel_layout",
+      "combat_motion_effect_direction"
+    ],
+    "fullEpisodeApproval": false,
+    "finishedArt": "not_started",
+    "publication": "not_requested"
+  },
+  "originalVisualVerificationSourceSha256": {
+    "index.html": "02f77a6188bc42e236a9acbaf589ffe57ee60f7dd3ee4301ccd488823c420f90",
+    "plan.json": "944025bd798aaf9993db20f780b53190cfbfb73271b4fb73e5519727ce7566df"
+  },
+  "metadataOnlyUpdate": {
+    "updatedAt": "2026-10-09",
+    "baselineGitRef": "3197f6276970e691b1c147ec81ef640540f6c291",
+    "scope": "User adoption and skill-reference metadata only; rendered HTML and all source/review images are byte-identical to the visual verification baseline",
+    "renderedHtmlByteIdentityVerified": true,
+    "newBrowserOrVisualReviewPerformed": false
+  }
+}
