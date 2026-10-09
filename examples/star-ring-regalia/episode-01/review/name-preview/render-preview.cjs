@@ -12,6 +12,28 @@ const {chromium} = require('playwright');
   const browser = await chromium.launch({headless: true});
   const results = [];
   try {
+    if (process.argv.includes('--cart-excerpt')) {
+      const page = await browser.newPage({viewport: {width: 360, height: 800}, deviceScaleFactor: 1});
+      await page.goto(pathToFileURL(path.join(root, 'index.html')).href);
+      await page.evaluate(async () => {
+        await document.fonts.ready;
+        await Promise.all([...document.images].map(image => image.decode()));
+      });
+      const top = await page.locator('[data-beat-id="p057-voice-0"]').evaluate(element =>
+        element.getBoundingClientRect().top + scrollY - 30);
+      const captures = [];
+      for (let index = 0; index < 2; index++) {
+        await page.evaluate(y => scrollTo(0, y), top + index * 680);
+        const file = `cart-360-${String(index + 1).padStart(2, '0')}.jpg`;
+        await page.screenshot({path: path.join(review, file), type: 'jpeg', quality: 88, scale: 'css'});
+        captures.push({file: `review/${file}`, scrollY: await page.evaluate(() => scrollY)});
+      }
+      fs.writeFileSync(path.join(review, 'cart-excerpt.json'), JSON.stringify({width: 360, height: 800,
+        dpr: 1, overlapCssPx: 120, source: 'index.html', captures}, null, 2));
+      console.log(JSON.stringify({cartExcerpt: captures}));
+      await page.close();
+      return;
+    }
     for (const [width, height] of [[390, 844], [360, 800]]) {
       const page = await browser.newPage({viewport: {width, height}, deviceScaleFactor: 1});
       await page.goto(pathToFileURL(path.join(root, 'index.html')).href);

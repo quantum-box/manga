@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parent
 SKILL = Path.home() / '.codex/skills/webtoon'
 notes = json.loads((ROOT / 'plan-notes.json').read_text())
 panels = notes['panels']
+cell_windows = json.loads((ROOT / 'cell-windows.json').read_text())['sheets']
 assert len(panels) == 96
 assert [p['id'] for p in panels] == [f'p{i:03}' for i in range(1, 97)]
 
@@ -85,6 +86,10 @@ for p in panels:
     width, height = image_size(sheet)
     col = (p['slot'] - 1) % 3
     row = (p['slot'] - 1) // 3
+    windows = cell_windows[str(p['sheet'])]
+    x0, x1 = (windows['columnsByRow'][row] if 'columnsByRow' in windows else windows['columns'])[col]
+    y0, y1 = windows['rows'][row]
+    assert 0 <= x0 < x1 <= width and 0 <= y0 < y1 <= height
     source = p['propState']
     dialogue = []
     sounds = []
@@ -141,7 +146,7 @@ for p in panels:
             dialogue[0].update(x=26, width=70, y=4)
     panel = dict(id=p['id'], type='panel', image=f'rough/{sheet.name}',
         alt=p['purpose'] + '。' + ' / '.join(d['speaker'] + '：' + d['text'].replace('\n', ' ') for d in p['dialogue']),
-        crop=[col / 3 + .0045, row / 4 + .0045, 1 / 3 - .009, 1 / 4 - .009],
+        crop=[x0 / width, y0 / height, (x1 - x0) / width, (y1 - y0) / height],
         imageSize=[width, height], widthPercent=panel_width,
         align=shape.get('placement') if shape.get('placement') in ('left', 'right', 'center') else 'center',
         frame='none', purpose=p['purpose'], dialogue=dialogue, sounds=sounds)
@@ -194,6 +199,7 @@ for p in panels:
             beats.append(dict(id=f'breath-{p["id"]}', type='pause', height=gap_height,
                 purpose='同じ場所の短い動作と応答を近くで読み 次の対象へ視線を渡す'))
     layout_notes.append(dict(id=p['id'], source=panel['image'], slot=p['slot'], crop=panel['crop'],
+        sourcePixelWindow=None if number == 27 else [x0, y0, x1, y1],
         placement={k: panel[k] for k in ('widthPercent', 'align', 'frame', 'composition', 'offsetX', 'offsetY') if k in panel},
         propState=source, newInformation=p['purpose']))
 
