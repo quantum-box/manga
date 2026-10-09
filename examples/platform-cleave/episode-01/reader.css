@@ -1,0 +1,123 @@
+:root {
+  --page: #fff;
+  --surround: #eef0f2;
+  --ink: #22272d;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--surround);
+  color: var(--ink);
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  background: var(--surround);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+  overflow-x: clip;
+}
+
+.episode {
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: visible;
+  overflow-x: clip;
+  background: var(--page);
+  container-type: inline-size;
+}
+
+.scene {
+  position: relative;
+  width: var(--panel-width, 100%);
+  margin: 0;
+  padding: 0;
+  background: var(--page);
+}
+
+.episode-header { padding: 28px 18px; }
+.episode-header h1 { margin: 0; font-size: 20px; font-weight: 600; }
+.episode-footer { padding: 24px 18px 40px; text-align: center; }
+.episode-footer p { margin: 0; font-size: 14px; }
+
+.scene.align-left { margin-right: auto; }
+.scene.align-center { margin-left: auto; margin-right: auto; }
+.scene.align-right { margin-left: auto; }
+
+.scene canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  background: var(--page);
+}
+
+.panel-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.panel-row > .scene { flex-shrink: 0; margin: 0; }
+
+.composition {
+  position: relative;
+  width: 100%;
+  height: var(--composition-height);
+}
+
+.composition > .composition-member { position: absolute; margin: 0; }
+
+.scene.sound-beat {
+  height: var(--slot-height);
+  overflow: visible;
+}
+
+.scene.sound-beat canvas {
+  height: var(--slot-height);
+  object-fit: fill;
+}
+
+.pause {
+  width: 100%;
+  height: calc(var(--pause-ratio) * 1cqw);
+  margin: 0;
+  background: var(--page);
+}
+
+#asset-pool {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+#asset-pool img {
+  display: block;
+  width: 1px;
+  height: 1px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

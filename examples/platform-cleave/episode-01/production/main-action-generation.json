@@ -1,0 +1,75 @@
+{
+  "asset_type": "finished full-color main action anchors",
+  "mode": "built-in image_gen edit",
+  "transparent_background": false,
+  "reference_color_anchor": {
+    "path": "examples/platform-cleave/episode-01/art/01-prelude-color.png",
+    "sha256": "82541993151fa8a2d2f5e9aed1eccc8a218f7b54c04f5d24d737d9e9de03e4e6"
+  },
+  "repairs": [],
+  "assets": [
+    {
+      "id": "p07-thrust",
+      "target": "examples/platform-cleave/episode-01/review/name-preview/rough/02-thrust.png",
+      "target_sha256": "488fb7f745362d4eec8c5fb9961f43d11d7c7677b64b75a08c4af2d15df4f7a7",
+      "prompt_source": "examples/platform-cleave/episode-01/production/main-action-prompts-02-thrust.txt",
+      "prompt_sha256": "9628fe5835552514dc5895f197a957c6fcd20a99e8090b811d455644cafa841b",
+      "result_source": "/Users/takanorifukuyama/.codex/generated_images/01a11fcb-0390-7ba3-9afc-8cde92fbec70/exec-d52eb14a-13da-467e-8f44-35e5719a8ea2.png",
+      "output": "examples/platform-cleave/episode-01/art/02-thrust-color.png",
+      "output_sha256": "ca08814b2359b56fca1e62cc948c89d022c052c1cf7922e1a47eb9b512ec3913",
+      "dimensions": "1024x1536",
+      "format": "PNG RGB",
+      "byte_identical_to_result": true,
+      "visual_check": {
+        "two_characters_only": true,
+        "woman_right_hand_sword_left_hand_empty": true,
+        "man_both_hands_on_one_spear": true,
+        "contact": false,
+        "effect": "large physical black-and-white thrust pressure band from right to left",
+        "sfx": "ドォッ"
+      }
+    },
+    {
+      "id": "p10-evade",
+      "target": "examples/platform-cleave/episode-01/review/name-preview/rough/04-evade-fixed.png",
+      "target_sha256": "89393d0fabbfaad3d15fe4fb1c48b2a1bf50a38143b0bd21827c71cffb28fe5d",
+      "prompt_source": "examples/platform-cleave/episode-01/production/main-action-prompts-04-evade.txt",
+      "prompt_sha256": "1dec68b81986a4aff70525be9fd57f86d3eb27190d552a7c05f32e3bfce34da9",
+      "result_source": "/Users/takanorifukuyama/.codex/generated_images/01a11fcb-0390-7ba3-9afc-8cde92fbec70/exec-f1f0fa2f-eca0-45f5-a549-bf02426397cb.png",
+      "output": "examples/platform-cleave/episode-01/art/04-evade-color.png",
+      "output_sha256": "e388c011706278a24f344e32cf522986868ee313c6eed30c3f01aae59360bee4",
+      "dimensions": "1024x1536",
+      "format": "PNG RGB",
+      "byte_identical_to_result": true,
+      "visual_check": {
+        "two_characters_only": true,
+        "woman_right_hand_sword_left_hand_empty": true,
+        "man_both_hands_on_one_spear": true,
+        "contact": false,
+        "effect": "large physical lower sliding scrape wake trailing left from the rightward evade",
+        "sfx": "ズザァッ"
+      }
+    },
+    {
+      "id": "p15-parry",
+      "target": "examples/platform-cleave/episode-01/review/name-preview/rough/05-parry-fixed.png",
+      "target_sha256": "235bb280d858fe16de7f6eef79d6a80d0ead5892dbc796b84f856c2dbea92929",
+      "prompt_source": "examples/platform-cleave/episode-01/production/main-action-prompts-05-parry.txt",
+      "prompt_sha256": "39e04292d9d54c2ee2ed643918a42f4783dac1153eaa744e9873bf746eab9f72",
+      "result_source": "/Users/takanorifukuyama/.codex/generated_images/01a11fcb-0390-7ba3-9afc-8cde92fbec70/exec-d6ff7efa-78c4-4d3c-9407-0c26c4dcc600.png",
+      "output": "examples/platform-cleave/episode-01/art/05-parry-color.png",
+      "output_sha256": "5d25fbf732d1ecfbfdd4f60f015ab72fd11269be5fe2d71abb37e51af752f90d",
+      "dimensions": "1024x1536",
+      "format": "PNG RGB",
+      "byte_identical_to_result": true,
+      "visual_check": {
+        "two_characters_only": true,
+        "woman_right_hand_sword_left_hand_empty": true,
+        "man_both_hands_on_one_spear": true,
+        "contact": "exactly one sword-to-spear-root contact",
+        "effect": "single white metal flash with compact black impact mass and physical sparks",
+        "sfx": "ガキィン"
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "platform-cleave/finished-art-generation/v1",
+  "title": "ホームを裂く一閃",
+  "outputs": {
+    "details": {
+      "path": "art/03-details-color.png",
+      "sourceTarget": "review/name-preview/rough/03-details.png",
+      "promptFile": "production/detail-aftermath-prompts.txt",
+      "cells": ["p08", "p09", "p11", "p12", "p13", "p14"],
+      "layout": "1024x1536 2-column x 3-row atlas",
+      "rawOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11fcc-019a-7ef2-9d23-e10170b053b6/exec-e760238d-e624-4dcc-885b-37a67cb6e2a5.png",
+      "outputSha256": "537cf1d3ee7b7d32d83e248ec76277b59ee3dfb8a91b9899ec21e6dcb4af608e",
+      "visualCheck": {
+        "status": "passed_initial",
+        "observations": [
+          "all six cells retain the approved order and crop",
+          "p08/p09/p12/p13 raster SFX are legible and localized",
+          "p11 contains the exact vertical なっ… balloon",
+          "p14 retains a visible pre-contact gap with no SFX",
+          "single sword and spear ownership remain consistent"
+        ]
+      }
+    },
+    "aftermath": {
+      "path": "art/06-aftermath-color.png",
+      "sourceTarget": "review/name-preview/rough/06-aftermath-grip-fixed.png",
+      "promptFile": "production/detail-aftermath-prompts.txt",
+      "cells": ["p16", "p17", "p18", "p19", "p20"],
+      "layout": "1024x1536 2-column x 2-row atlas plus full-width p20",
+      "rawOutput": "/Users/takanorifukuyama/.codex/generated_images/01a11fcc-019a-7ef2-9d23-e10170b053b6/exec-80e9a861-2aef-4539-a70e-26f55b3155c0.png",
+      "outputSha256": "727e8e1d004dd71700fb19a4b9565ba9f41a848a3fb561cf60429389fd0ce424",
+      "visualCheck": {
+        "status": "passed_initial",
+        "observations": [
+          "p16 preserves both closed hands on the same spear shaft",
+          "p17 shows the enemy off-balance at the wall side with ヨロッ",
+          "p18 shows the woman crossing the opened center path with コツ",
+          "p19 contains a thin vertical …ふう breath balloon",
+          "p20 preserves the stairs, the single sword, and the enemy's two-handed spear grip"
+        ]
+      }
+    }
+  },
+  "styleReference": "art/01-prelude-color.png",
+  "inputSha256": {
+    "review/name-preview/rough/03-details.png": "6c1361f9284133d4d97ffd84f085aeb979d5a51e4ec0a6fa10e97063a807ceae",
+    "review/name-preview/rough/06-aftermath-grip-fixed.png": "a8778e1b73f4346ebd2f47d77d608a40fe45cc1822d5202a2137a5696250a852",
+    "art/01-prelude-color.png": "82541993151fa8a2d2f5e9aed1eccc8a218f7b54c04f5d24d737d9e9de03e4e6"
+  },
+  "generation": {
+    "tool": "builtin image_gen",
+    "mode": "edit",
+    "status": "prompts_saved_before_generation",
+    "targetCount": 2,
+    "repairPolicy": "at most one targeted repair per asset only for an observed defect"
+  }
+}

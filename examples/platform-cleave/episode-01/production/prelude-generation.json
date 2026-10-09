@@ -1,0 +1,31 @@
+{
+  "asset": "01-prelude-color.png",
+  "mode": "built-in image_gen edit",
+  "transparent_background": false,
+  "input": {
+    "role": "edit target",
+    "path": "examples/platform-cleave/episode-01/review/name-preview/rough/01-prelude-fixed.png",
+    "sha256": "fcfb76e6d0fe7fce39b8108b360ec6bb9a025d05518921d587e66fd69f747147"
+  },
+  "executed_prompt": {
+    "source_path": "examples/platform-cleave/episode-01/production/prompt-prelude.txt",
+    "sha256": "73eff138bc464656de2cd602fecb8fe0c670051618c3784cd81bb2bae7ec81ce"
+  },
+  "result": {
+    "source_path": "/Users/takanorifukuyama/.codex/generated_images/01a11fcb-0390-7ba3-9afc-8cde92fbec70/exec-7e3d30fb-e4d4-4dfb-b2ed-aef3cfe4af13.png",
+    "workspace_path": "examples/platform-cleave/episode-01/art/01-prelude-color.png",
+    "sha256": "82541993151fa8a2d2f5e9aed1eccc8a218f7b54c04f5d24d737d9e9de03e4e6",
+    "dimensions": "1024x1536",
+    "format": "PNG RGB",
+    "byte_identical_to_source": true
+  },
+  "visual_check": {
+    "two_characters_only": true,
+    "sword_in_womans_right_hand": true,
+    "spear_in_mans_both_hands": true,
+    "dialogue": ["通さねえ", "そこ", "通るよ"],
+    "sound_effects": ["ギ…", "ギュッ"],
+    "source_grid_preserved": true,
+    "clean_full_color": true
+  }
+}

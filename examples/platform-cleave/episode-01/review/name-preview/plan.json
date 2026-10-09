@@ -1,0 +1,639 @@
+{
+  "schema": "webtoon-name-preview/v1",
+  "title": "ホームを裂く一閃",
+  "referenceWidth": 390,
+  "scope": "地下駅の一場面のみ 20コマの部分試作 通常話分量基準は対象外",
+  "notes": [
+    "新規生成の白黒戦闘ネーム 20コマ",
+    "剣は剣士の右手に1本 槍は敵の両手に1本",
+    "主動作は突き 回避 跳ね上げ 大小と余白で緩急を作る"
+  ],
+  "beats": [
+    {
+      "id": "p01",
+      "type": "panel",
+      "image": "rough/01-prelude-fixed.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "地下駅の同じホーム上 左の白いコートの剣士が右の槍使いと対峙する 槍使いの後ろ右に上り階段",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "地理と出口を先に把握 剣1本は剣士右手 槍1本は敵両手",
+      "crop": [
+        0.509765625,
+        0.049479166666666664,
+        0.478515625,
+        0.287109375
+      ]
+    },
+    {
+      "id": "breath-establish",
+      "type": "pause",
+      "height": 26,
+      "purpose": "出口と距離を把握してから脅しへ"
+    },
+    {
+      "id": "p02",
+      "type": "panel",
+      "image": "rough/01-prelude-fixed.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "敵の強気な顔 敵「通さねえ」",
+      "widthPercent": 67,
+      "align": "right",
+      "frame": "none",
+      "purpose": "出口を塞ぐ敵が引き返させようとする",
+      "crop": [
+        0.01171875,
+        0.006510416666666667,
+        0.478515625,
+        0.330078125
+      ],
+      "dialogue": [
+        {
+          "speaker": "槍使い",
+          "text": "通さねえ",
+          "x": 70,
+          "y": 6,
+          "width": 28,
+          "kind": "spoken",
+          "tail": "left"
+        }
+      ]
+    },
+    {
+      "id": "beat-retort",
+      "type": "pause",
+      "height": 18,
+      "purpose": "強気な脅しから短く受けて返す"
+    },
+    {
+      "id": "p03",
+      "type": "panel",
+      "image": "rough/01-prelude-fixed.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "剣士の落ち着いた顔 剣士「そこ\n通るよ」",
+      "widthPercent": 72,
+      "align": "left",
+      "frame": "none",
+      "purpose": "怯まず通過を選ぶ 口調は軽く目は真剣",
+      "crop": [
+        0.01171875,
+        0.3489583333333333,
+        0.478515625,
+        0.3216145833333333
+      ],
+      "dialogue": [
+        {
+          "speaker": "剣士",
+          "text": "そこ\n通るよ",
+          "x": 1,
+          "y": 3,
+          "width": 30,
+          "kind": "spoken",
+          "tail": "right"
+        }
+      ]
+    },
+    {
+      "id": "load-start",
+      "type": "pause",
+      "height": 32,
+      "purpose": "言葉の応答を攻撃の準備へつなぐ"
+    },
+    {
+      "id": "p04",
+      "type": "panel",
+      "image": "rough/01-prelude-fixed.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "敵の後ろ足がタイルを踏みしめる",
+      "widthPercent": 46,
+      "align": "right",
+      "frame": "none",
+      "purpose": "突きの推進力の起点",
+      "crop": [
+        0.509765625,
+        0.3489583333333333,
+        0.478515625,
+        0.3216145833333333
+      ],
+      "row": "load",
+      "sounds": [
+        {
+          "text": "ギ…",
+          "x": 66,
+          "y": 88,
+          "width": 30
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "type": "panel",
+      "image": "rough/01-prelude-fixed.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "敵の両手が一本の槍を締める",
+      "widthPercent": 52,
+      "align": "left",
+      "frame": "none",
+      "purpose": "足から両手へ力を伝える",
+      "crop": [
+        0.509765625,
+        0.68359375,
+        0.478515625,
+        0.3059895833333333
+      ],
+      "row": "load",
+      "sounds": [
+        {
+          "text": "ギュッ",
+          "x": 50,
+          "y": 87,
+          "width": 30
+        }
+      ]
+    },
+    {
+      "id": "eye-timing",
+      "type": "pause",
+      "height": 20,
+      "purpose": "剣士の知覚へカメラを寄せる"
+    },
+    {
+      "id": "p06",
+      "type": "panel",
+      "image": "rough/01-prelude-fixed.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "剣士の目が敵の踏み込みを捉える",
+      "widthPercent": 85,
+      "align": "center",
+      "frame": "none",
+      "purpose": "無音の判断 敵が踏み出す瞬間を待つ",
+      "crop": [
+        0.01171875,
+        0.7389322916666666,
+        0.478515625,
+        0.15950520833333334
+      ]
+    },
+    {
+      "id": "held-breath",
+      "type": "pause",
+      "height": 84,
+      "purpose": "槍が放たれる直前に息を一瞬止める 完全な無音"
+    },
+    {
+      "id": "p07",
+      "type": "panel",
+      "image": "rough/02-thrust.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "敵が右から左へ全力で槍を突く 剣士は頭を下げ始める 槍の穂先と風圧が枠を跨ぐ",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "最初の主動作 攻撃の軌道は左へ 接触はまだ起きない",
+      "sounds": [
+        {
+          "text": "ドォッ",
+          "x": 75,
+          "y": 8,
+          "width": 25
+        }
+      ]
+    },
+    {
+      "id": "fast-thrust",
+      "type": "pause",
+      "height": 12,
+      "purpose": "勢いを切らず穂先と足へ"
+    },
+    {
+      "id": "p08",
+      "type": "panel",
+      "image": "rough/03-details.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "槍の穂先が剣士の髪の上を掠める 傷はない",
+      "widthPercent": 52,
+      "align": "right",
+      "frame": "none",
+      "purpose": "頭が軌道の下へ外れた証拠",
+      "crop": [
+        0.509765625,
+        0.0078125,
+        0.478515625,
+        0.32421875
+      ],
+      "row": "slip",
+      "sounds": [
+        {
+          "text": "ヒュッ",
+          "x": 63,
+          "y": 8,
+          "width": 30
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "type": "panel",
+      "image": "rough/03-details.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "剣士の靴が手前右へ滑りタイルの粉を後ろへ残す",
+      "widthPercent": 44,
+      "align": "left",
+      "frame": "none",
+      "purpose": "身体を外す足の原因",
+      "crop": [
+        0.01171875,
+        0.0078125,
+        0.478515625,
+        0.32421875
+      ],
+      "row": "slip",
+      "sounds": [
+        {
+          "text": "ザッ",
+          "x": 51,
+          "y": 87,
+          "width": 30
+        }
+      ]
+    },
+    {
+      "id": "evade-rise",
+      "type": "pause",
+      "height": 16,
+      "purpose": "足の動作から大きな身体の回避へ"
+    },
+    {
+      "id": "p10",
+      "type": "panel",
+      "image": "rough/04-evade-fixed.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "剣士は槍の下へ低く潜り右へ進む 右手に剣 左手は空 太い軌跡が靴底から後方へ流れる",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "回避の見せ場 槍の上段軌道と身体の下段軌道を区別",
+      "sounds": [
+        {
+          "text": "ズザァッ",
+          "x": 50,
+          "y": 96,
+          "width": 30
+        }
+      ]
+    },
+    {
+      "id": "enemy-understands",
+      "type": "pause",
+      "height": 22,
+      "purpose": "反応は回避を見てから"
+    },
+    {
+      "id": "p11",
+      "type": "panel",
+      "image": "rough/03-details.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "敵が目を見開く 敵「なっ…」",
+      "widthPercent": 60,
+      "align": "right",
+      "frame": "none",
+      "purpose": "穂先の外から懐へ入られた驚き",
+      "crop": [
+        0.509765625,
+        0.3483072916666667,
+        0.478515625,
+        0.3014322916666667
+      ],
+      "dialogue": [
+        {
+          "speaker": "槍使い",
+          "text": "なっ…",
+          "x": 2,
+          "y": 5,
+          "width": 35,
+          "kind": "spoken",
+          "tail": "right"
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "type": "panel",
+      "image": "rough/03-details.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "剣士の右手が剣の柄を握り直す",
+      "widthPercent": 46,
+      "align": "left",
+      "frame": "none",
+      "purpose": "回避した姿勢から反撃へ握りを確定",
+      "crop": [
+        0.01171875,
+        0.3483072916666667,
+        0.478515625,
+        0.3014322916666667
+      ],
+      "composition": "counter-load",
+      "offsetX": 0,
+      "offsetY": 18,
+      "sounds": [
+        {
+          "text": "ギュッ",
+          "x": 49,
+          "y": 88,
+          "width": 30
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "type": "panel",
+      "image": "rough/03-details.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "剣士の左足がタイルに根を張る",
+      "widthPercent": 47,
+      "align": "right",
+      "frame": "none",
+      "purpose": "左足の接地で上昇する力を得る",
+      "crop": [
+        0.509765625,
+        0.6627604166666666,
+        0.478515625,
+        0.3268229166666667
+      ],
+      "composition": "counter-load",
+      "offsetX": 53,
+      "offsetY": 75,
+      "sounds": [
+        {
+          "text": "キュッ",
+          "x": 51,
+          "y": 86,
+          "width": 30
+        }
+      ]
+    },
+    {
+      "id": "contact-approach",
+      "type": "pause",
+      "height": 26,
+      "purpose": "握りと接地を続く一本の剣へ結ぶ"
+    },
+    {
+      "id": "p14",
+      "type": "panel",
+      "image": "rough/03-details.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "剣の刃が槍の金属の根元の下へ近づく まだ隙間がある",
+      "widthPercent": 82,
+      "align": "left",
+      "frame": "none",
+      "purpose": "接触位置の予告 穂先の根元を下から打つ 無音で集中",
+      "crop": [
+        0.01171875,
+        0.6627604166666666,
+        0.478515625,
+        0.3268229166666667
+      ]
+    },
+    {
+      "id": "one-inhale",
+      "type": "pause",
+      "height": 72,
+      "purpose": "刃の隙間から一撃へ短い無音 反撃はまだ見せない"
+    },
+    {
+      "id": "p15",
+      "type": "panel",
+      "image": "rough/05-parry-fixed.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "剣士が右手の一本の剣で槍の根元を下から弾く 金属同士の一接点に巨大な白い閃光と黒い衝撃 槍は敵の両手から離れない",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "最大の主動作 左下から上方の弧 剣→槍の接触で敵の腕を押し上げる",
+      "sounds": [
+        {
+          "text": "ガキィン",
+          "x": 65,
+          "y": 97,
+          "width": 30
+        }
+      ]
+    },
+    {
+      "id": "ring",
+      "type": "sound",
+      "text": "…ン…",
+      "height": 180,
+      "x": 62,
+      "y": 34,
+      "purpose": "p15の同じ金属音の残響だけ 人物と追加衝撃を描かず下へ減衰"
+    },
+    {
+      "id": "p16",
+      "type": "panel",
+      "image": "rough/06-aftermath.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "槍を握った敵の両腕が上へ持っていかれる",
+      "widthPercent": 49,
+      "align": "right",
+      "frame": "none",
+      "purpose": "接触の結果を手で確認 槍の所有者は敵のまま",
+      "crop": [
+        0.509765625,
+        0.006510416666666667,
+        0.478515625,
+        0.330078125
+      ],
+      "composition": "off-balance",
+      "offsetX": 51,
+      "offsetY": 0
+    },
+    {
+      "id": "p17",
+      "type": "panel",
+      "image": "rough/06-aftermath.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "敵は後ろ右の壁側へよろけ 中央の通路が空く 剣士の剣は下がる",
+      "widthPercent": 76,
+      "align": "left",
+      "frame": "none",
+      "purpose": "上げられた腕と重心の崩れで通過を止められない",
+      "crop": [
+        0.01171875,
+        0.006510416666666667,
+        0.478515625,
+        0.330078125
+      ],
+      "composition": "off-balance",
+      "offsetX": 0,
+      "offsetY": 245,
+      "sounds": [
+        {
+          "text": "ヨロッ",
+          "x": 75,
+          "y": 82,
+          "width": 25
+        }
+      ]
+    },
+    {
+      "id": "path-open",
+      "type": "pause",
+      "height": 142,
+      "purpose": "衝撃を収め 道が空いた結果を受け止める 残響は既に終わる"
+    },
+    {
+      "id": "p18",
+      "type": "panel",
+      "image": "rough/06-aftermath.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "剣士は壁側の敵の手前を右へ通り抜ける 出口への床が見える 右手の剣は下向き",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "目的達成を地理で示す 槍は敵の両手 剣は剣士右手",
+      "crop": [
+        0.509765625,
+        0.3489583333333333,
+        0.478515625,
+        0.302734375
+      ],
+      "sounds": [
+        {
+          "text": "コツ",
+          "x": 38,
+          "y": 89,
+          "width": 30
+        }
+      ]
+    },
+    {
+      "id": "after-passage",
+      "type": "pause",
+      "height": 95,
+      "purpose": "通過後に呼吸を戻す"
+    },
+    {
+      "id": "p19",
+      "type": "panel",
+      "image": "rough/06-aftermath.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "剣士の口元と目が緩む 剣士「…ふう」",
+      "widthPercent": 66,
+      "align": "left",
+      "frame": "none",
+      "purpose": "無敵の誇示で終えず一息つく 弱い実際の声",
+      "crop": [
+        0.01171875,
+        0.3489583333333333,
+        0.478515625,
+        0.302734375
+      ],
+      "dialogue": [
+        {
+          "speaker": "剣士",
+          "text": "…ふう",
+          "x": 1,
+          "y": 3,
+          "width": 32,
+          "kind": "spoken",
+          "tail": "right"
+        }
+      ]
+    },
+    {
+      "id": "footstep-away",
+      "type": "sound",
+      "text": "コツ",
+      "height": 230,
+      "x": 70,
+      "y": 57,
+      "purpose": "剣士の足音だけが階段へ離れていく 新しい一歩の音 次に移動結果を見せる"
+    },
+    {
+      "id": "p20",
+      "type": "panel",
+      "image": "rough/06-aftermath-grip-fixed.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "alt": "剣士は右奥の階段を上る 敵は左手前で槍を両手に下げて見送る 剣士の右手には同じ剣",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "開いた道を実際に通った出口の結果 主人公と敵の間に静かな空間",
+      "crop": [
+        0.01171875,
+        0.6627604166666666,
+        0.9765625,
+        0.3268229166666667
+      ]
+    },
+    {
+      "id": "end-air",
+      "type": "pause",
+      "height": 150,
+      "purpose": "階段へ消える余韻 追加の事件を入れない"
+    }
+  ]
+}

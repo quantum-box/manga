@@ -1,0 +1,129 @@
+{
+  "schema": "platform-cleave/finished-short-acceptance/v1",
+  "title": "ホームを裂く一閃",
+  "scope": "approved 20-panel standalone battle short",
+  "finish": "full-color; integrated raster Japanese dialogue and SFX",
+  "readerSha256": "0b56c84fd8726e3f7c2c683e6114b057fd33cfab13a8b51c59c8eaf9efc1a16a",
+  "sourceAssets": [
+    {
+      "asset": "art/01-prelude-color.png",
+      "sha256": "82541993151fa8a2d2f5e9aed1eccc8a218f7b54c04f5d24d737d9e9de03e4e6",
+      "size": [
+        1024,
+        1536
+      ],
+      "embeddedBytesIdentical": true
+    },
+    {
+      "asset": "art/02-thrust-color.png",
+      "sha256": "ca08814b2359b56fca1e62cc948c89d022c052c1cf7922e1a47eb9b512ec3913",
+      "size": [
+        1024,
+        1536
+      ],
+      "embeddedBytesIdentical": true
+    },
+    {
+      "asset": "art/03-details-color.png",
+      "sha256": "537cf1d3ee7b7d32d83e248ec76277b59ee3dfb8a91b9899ec21e6dcb4af608e",
+      "size": [
+        1024,
+        1536
+      ],
+      "embeddedBytesIdentical": true
+    },
+    {
+      "asset": "art/04-evade-color.png",
+      "sha256": "e388c011706278a24f344e32cf522986868ee313c6eed30c3f01aae59360bee4",
+      "size": [
+        1024,
+        1536
+      ],
+      "embeddedBytesIdentical": true
+    },
+    {
+      "asset": "art/05-parry-color.png",
+      "sha256": "5d25fbf732d1ecfbfdd4f60f015ab72fd11269be5fe2d71abb37e51af752f90d",
+      "size": [
+        1024,
+        1536
+      ],
+      "embeddedBytesIdentical": true
+    },
+    {
+      "asset": "art/06-aftermath-color.png",
+      "sha256": "727e8e1d004dd71700fb19a4b9565ba9f41a848a3fb561cf60429389fd0ce424",
+      "size": [
+        1024,
+        1536
+      ],
+      "embeddedBytesIdentical": true
+    },
+    {
+      "asset": "art/07-scroll-sounds.png",
+      "sha256": "abfc68e5ec6010e6c294cfe76dbdc0151a81a6ccee010ae6e1dba56c92920839",
+      "size": [
+        1254,
+        1254
+      ],
+      "embeddedBytesIdentical": true
+    }
+  ],
+  "nativePhoneChecks": {
+    "allImagesLoaded": true,
+    "allCanvasesDrawn": true,
+    "expectedTwentyPanels": true,
+    "expectedTwoSoundSpans": true,
+    "captionsCoverEveryCanvas": true,
+    "allCanvasSourcesResolve": true,
+    "expectedSevenSourceAssets": true,
+    "exportCompatibleStructure": true,
+    "approvedParallelRows": true,
+    "approvedCompositionOffsets": true,
+    "approvedSoundSlotHeights": true,
+    "allCanvasGeometryPositive": true,
+    "uniqueSourcesEmbeddedOnce": true,
+    "noVisibleHtmlLetteringOverlays": true,
+    "noHorizontalOverflow": true,
+    "noPageOrConsoleErrors": true
+  },
+  "geometry": {
+    "360": {
+      "bodyHeight": 6022.078125,
+      "panelCount": 20,
+      "soundBeatCount": 2,
+      "explicitPauseHeight": 659.90625
+    },
+    "390": {
+      "bodyHeight": 6524.078125,
+      "panelCount": 20,
+      "soundBeatCount": 2,
+      "explicitPauseHeight": 715
+    }
+  },
+  "visualAudit": {
+    "root": "all seven originals and four native 390px parts inspected",
+    "independentAgent": "native 390 parts, 360 action/ending panels, sources inspected; no concrete blockers",
+    "observed": [
+      "threat, calm resolve, surprise and exhale readable",
+      "sword in woman right hand; left empty; same spear in man two hands",
+      "pre-contact gap, single parry impact, visible physical motion wakes",
+      "approved rows, staggered compositions and quiet intervals retained"
+    ]
+  },
+  "product": {
+    "path": "/Users/takanorifukuyama/.codex/visualizations/2026/10/08/01a119c1-cf1a-7353-b187-b422d58eefa5/platform-cleave-product",
+    "stripCount": 4,
+    "pixelWidth": 1170,
+    "deviceScaleFactor": 3,
+    "allAssetHashesVerified": true,
+    "allAssetsBelow16MiB": true,
+    "published": false,
+    "publicationScope": "pending user reply"
+  },
+  "checksNotRun": [
+    "physical iPhone/TestFlight",
+    "public-server readback",
+    "Rust build/tests - no Rust change"
+  ]
+}
