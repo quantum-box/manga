@@ -1,0 +1,164 @@
+{
+  "schema": "webtoon-action-effects-example/v1",
+  "title": "空を踏む",
+  "status": "accepted_effect_direction_reference",
+  "acceptedAt": "2026-10-09",
+  "acceptance": {
+    "userWords": "そうそう！ skill更新して",
+    "scope": "stronger visual effects in the four primary actions of a partial rough name"
+  },
+  "scope": {
+    "panelsInOriginalPartialPrototype": 22,
+    "normalEpisodeVolumeAssessment": "excluded",
+    "finishedArt": "not performed",
+    "publication": "not performed"
+  },
+  "initialFreshChat": {
+    "threadId": "01a11e52-81e0-7b62-8fdc-a16ef2aae117",
+    "sourceSha256": "345dbf150fd68fbc3f30af7b87a0a4c40755599fdb61806d7c7fb6bad7e95e0e",
+    "laterEffectsRevisionByParentChat": true
+  },
+  "visualReferences": [
+    {
+      "file": "before-slide-360.png",
+      "role": "before effects enhancement: slide, grip/release and elbow",
+      "sizePx": [
+        360,
+        1594
+      ],
+      "sha256": "a2590e8962cfb94072a719c476c9d1faa3c198849b80b0708785c7e7880dc1ac",
+      "copiedWithoutModification": true
+    },
+    {
+      "file": "before-launch-360.png",
+      "role": "before effects enhancement: launch through landing",
+      "sizePx": [
+        360,
+        1267
+      ],
+      "sha256": "0c64729093adef5703a0388afdc4155a8339f0c700feba78831acac83a24c21b",
+      "copiedWithoutModification": true
+    },
+    {
+      "file": "after-slide-360.png",
+      "role": "accepted slide effects, grip/release and elbow at 360px",
+      "sizePx": [
+        360,
+        1564
+      ],
+      "sha256": "6b68b12ab156c747ef8fbca04cbdc45b986e190375cfd84b569c8d1db92c9955",
+      "copiedWithoutModification": true
+    },
+    {
+      "file": "after-elbow-390.png",
+      "role": "accepted neck contact burst and immediate result at 390px",
+      "sizePx": [
+        390,
+        1222
+      ],
+      "sha256": "60c80a1bffbf4ba9b169c1e731f113b9f556e53312f798f77a2e0212f341355c",
+      "copiedWithoutModification": true
+    },
+    {
+      "file": "after-launch-360.png",
+      "role": "accepted takeoff and airborne wind pressure through landing at 360px",
+      "sizePx": [
+        360,
+        1237
+      ],
+      "sha256": "f90a61e129b3c22dfe99ff38b11a75ac39cd636bfdace10f4c8948f54bcef183",
+      "copiedWithoutModification": true
+    },
+    {
+      "file": "after-result-390.png",
+      "role": "accepted airborne passage, landing, breath and quiet escape at 390px",
+      "sizePx": [
+        390,
+        1640
+      ],
+      "sha256": "fdc59f92552ab4de2fc5b66825e8363103c081d0096c74cd864262f3b891fc8e",
+      "copiedWithoutModification": true
+    }
+  ],
+  "exactExecutedEditPrompts": "prompts.txt",
+  "editProvenance": [
+    {
+      "key": "slide-effects",
+      "inputFileName": "slide.png",
+      "inputSha256": "8dde8e786fca60b036072f1ffbcd72d473f2d97da3344f966fbb8d3ca9b2c489",
+      "outputFileName": "slide-effects.png",
+      "outputSha256": "51240cfe192e5161a147ca54a48938616f2e3d206a2587ba534f1a1c2cc42aa2",
+      "originalToolOutputCopiedWithoutModification": true
+    },
+    {
+      "key": "elbow-effects",
+      "inputFileName": "elbow.png",
+      "inputSha256": "4e1b1a44d21e50d9bf0e9fd29f764a46d91ea637fd7b8ecd9559f5f9fc600991",
+      "outputFileName": "elbow-effects.png",
+      "outputSha256": "8edf7b6ece2d9c30e0deed6b488bb0c97b59ca38fc78265ceee81e8400bdeb51",
+      "originalToolOutputCopiedWithoutModification": true
+    },
+    {
+      "key": "launch-effects",
+      "inputFileName": "launch.png",
+      "inputSha256": "ad6bba12668cf62802e5ff7dd2294ecc02a15d7c2194ea4a87a605403dd4f95a",
+      "outputFileName": "launch-effects.png",
+      "outputSha256": "6f849534de3674b76ab54637ab4337d709d71ddc06f6f1a957c5572c0e3a960f",
+      "originalToolOutputCopiedWithoutModification": true
+    },
+    {
+      "key": "air-effects",
+      "inputFileName": "air-fixed.png",
+      "inputSha256": "621f5226259985919d7feaa1986541e6f58bb0a2b9587996e240da718cc49c4a",
+      "outputFileName": "air-effects.png",
+      "outputSha256": "74078d43f26475dffe63c84447b525905af2cad5a9b997bea229d6d1a640a00b",
+      "originalToolOutputCopiedWithoutModification": true
+    }
+  ],
+  "sourceOriginalsBundled": false,
+  "referencePackage": "Native reading examples and exact historical edit prompts; not a reusable artwork set or full reader. Use the next work own inspected edit targets and state.",
+  "latestReaderSha256": "9f011a74d50e60a20851a5121056425a4058108d927883d1df358925c69b58ac",
+  "browserMethod": "Authored standalone HTML via Playwright setContent; DPR 1; no file URL navigation",
+  "widthChecks": [
+    {
+      "viewport": {
+        "width": 360,
+        "height": 800,
+        "dpr": 1
+      },
+      "bodyHeightCssPx": 7948.359375,
+      "imageCount": 22,
+      "imageFailures": 0,
+      "horizontalOverflowCssPx": 0,
+      "textOverflow": [],
+      "dialogueFontCssPx": [
+        19.08
+      ],
+      "pageErrors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "bodyHeightCssPx": 8562.0625,
+      "imageCount": 22,
+      "imageFailures": 0,
+      "horizontalOverflowCssPx": 0,
+      "textOverflow": [],
+      "dialogueFontCssPx": [
+        20.67
+      ],
+      "pageErrors": []
+    }
+  ],
+  "visualReview": "Bold effects retained at phone width; faces, hands, rifles, contact points and SFX clear; one shot, four robots, back-contact launch and quiet result preserved",
+  "unverified": [
+    "physical phone",
+    "other browser engines",
+    "finished image-integrated lettering",
+    "one full episode volume",
+    "publication"
+  ]
+}

@@ -16,12 +16,33 @@
 
 24コマ、橋、白黒、剣と槍、同じ配置や寸法を次の作品へコピーするための見本ではない。この例の採用は戦闘の演出方向であり、一話全体の分量や本作画・公開の確認を代わりに済ませるものではない。
 
+## 主動作のエフェクトを大胆にする
+
+『空を踏む』は新しいチャットでスキルから制作した22コマの部分試作。その初稿には動線と枠抜けがあったが、2026-10-09にユーザーが「戦闘シーンはもっとエフェクト欲しい」と指摘した。主動作4枚を画像生成で強めた後、「そうそう！ skill更新して」と採用した。**今回の強化後を、派手な主動作のエフェクト強度の判断に使う。** 初稿の弱い線へ戻さない。
+
+生成指示を決める前に、少なくとも次の打撃と跳躍の強化後の画像を表示して見る。滑走や空中通過を使う場合は、その行も見る。構成を固定するための素材ではなく、スマホ幅での強さと可読性を判断する参照例。
+
+| 動作 | 同梱の連続画像 | 見るところ |
+| --- | --- | --- |
+| 滑り込み | [修正前360px](action-effects/before-slide-360.png) → [強化後360px](action-effects/after-slide-360.png) | 靴底の擦過から太い速度線と砂塵が後方へ広がる。射線と滑る身体を分け、握り・解放・肘打ちへ密につなぐ |
+| 肘打ち | [強化後390px](action-effects/after-elbow-390.png) | 一点の接触へ白い閃光、黒い衝撃の塊、放射線、装甲片を集め、枠外まで広げる。顔、肘、相手の首、銃を読めるままにする |
+| 踏み切り・空中通過 | [修正前360px](action-effects/before-launch-360.png) → [強化後360px](action-effects/after-launch-360.png) | 足と踏み台の接点から圧縮された衝撃と太い軌跡が上へ伸びる。続く風圧の帯と目的地を読めるままにする |
+| 着地・余韻 | [強化後390px](action-effects/after-result-390.png) | 派手な空中通過から接地、呼吸、静かな離脱へ強度が落ちる。判断・反応・結果まで同じ密度で埋めない |
+
+細い線を何本も足すだけでエフェクトを十分と扱わない。派手に見せる主動作では、**360px幅でも軌跡・衝撃・砂煙の主役となる形が面として読める**ようにする。太い先細りの帯、白抜きの風圧、接触点の衝撃の塊、破片や粒子から動作に合うものを選び、初稿から大胆に描く。太さ、本数、画面を占める比率は固定せず、場面の強度と静かな前後との差で決める。
+
+滑りは実際の擦過点から後方への尾、打撃は接触点へ集まる衝撃、踏み切りは足と足場の接点から進行方向への帯、空中通過は出発点から目的地までの風圧を描き分ける。エフェクトの発生源を架空の床の爆発へ移したり、一発の射線を追加発砲へ変えたりしない。能力や破壊は、その場面で設定・動作として成立している場合に描く。
+
+強化編集では、保つ人物・ポーズ・手足の数・小道具の数と所有・相手の数・地理・カメラ・一つの瞬間と、変える軌跡・衝撃・砂煙を分けて指定する。顔、握り手、接触点、目的地、セリフと音の空間を残し、突出する効果が原画内の枠を越えても表示窓で切れないようにする。構成が評価されている場合は、コマを増やしたり配置を崩したりせず、該当する主動作の原画から直す。
+
+[実行した4つの編集指示](action-effects/prompts.txt)と[採用範囲・出所・ハッシュ・確認記録](action-effects/example.json)を同梱する。プロンプト内のレイ、4兵、ライフル、屋上、橋、白黒、具体的な面積は今回の条件。次の作品の人物・動作・画風へ置き換える。この例はエフェクト演出の採用であり、通常話の分量、本作画、公開の承認を代わりに済ませるものではない。
+
 ## 今回の場面へ移す手順
 
 1. **見せ場と因果を決める。** 何を格好よく見せる瞬間かを一文で決める。直前の判断、動作の起点、進む方向、接触や通過、直後の結果を絵コンテへつなぐ。人物の左右、足場、小道具の数と位置、相手の反応も記録する。
 2. **場面全体の空間を組む。** 主動作へ大きな面積を渡し、予備動作、目・手・足の接写、反応、着地や結果を役割に合う面積と位置へ置く。全幅のカードを積むだけにせず、枠なし、横長、ずらした小コマ、斜め、脇の声や音を選ぶ。次の情報を先に見せず、密な動作と待つ区間を分ける。
 3. **主動作の原画を作る。** シルエット、身体のひねり、重心、手前と奥の差、カメラの角度を指定する。枠抜けを使うなら原画内の枠と、そこを跨ぐ身体・武器・軌跡を一緒に描く。既存の小さなセルでは収まらない見せ場は専用原画にし、表示窓で突出部分を切らない。
-4. **動きの線と音を合わせる。** 起点から軌道、接触や結果へつながる太い帯、速度線、衝撃、砂煙などを選ぶ。薙ぎ払い・跳躍・衝突を描き分け、効果音の発生源と終わる位置を決める。静かな判断や余韻まで埋めず、顔、握り手、武器の輪郭、セリフを残す。
+4. **動きの線と音を合わせる。** 起点から軌道、接触や結果へつながる太い帯、速度線、衝撃、砂煙などを選ぶ。派手な主動作では細い飾り線に留めず、スマホ幅で読める大きな形と強い明暗を原画へ描く。薙ぎ払い・跳躍・衝突を描き分け、効果音の発生源と終わる位置を決める。静かな判断や余韻まで埋めず、顔、握り手、武器の輪郭、セリフを残す。
 5. **360/390pxで連続して読む。** 主動作だけの拡大画像で済ませず、その前の予兆と後の結果まで確認する。読順、動きの起点と方向、枠抜け、顔と手、武器の数、音とセリフの欠けを見て補修する。見た作例と今回使った判断、実行した指示、表示確認を制作資料へ残す。新しいネームはHTMLを開き、読める画像も会話へ出して返答を待つ。
 
 配置の操作は[場面の空間を組み直す判断](panel-layout.md#矩形の列から場面の空間へ組み直す)、余白は[余白とスクロール](scroll-pacing.md)と[人物を描かない余白](whitespace-example.md)を使う。主動作の数、枠抜けの回数、配置の型を全場面へ固定しない。
@@ -38,6 +59,7 @@ Established geography and state: [each character's side, footing, one prop's cur
 Hero moment: make [the chosen action] feel powerful and memorable through [silhouette, body twist, weight shift, foreshortening and camera angle].
 Motion: begin at [origin], travel toward [direction], and show [contact or passage appropriate to THIS moment].
 Effects: [specific broad wake / speed streaks / dust / impact rays] follow that motion. Anchor them to [foot / weapon / contact / other actual source]; keep [quiet or not-yet-contacted area] clear.
+Effect strength for THIS hero action: use [bold tapered strokes / white negative-space ribbons / a large contact burst / directional particles] as substantial readable shapes at 360px display. Thin decorative lines alone are insufficient. Match this strength to the established art style and keep the quieter adjacent moments clear.
 Frame treatment: [borderless / drawn inner oblique frame]. For a breakout, let [specified body or weapon parts and wake] visibly cross the DRAWN inner frame into the surrounding page area. Keep the complete protruding silhouette in the source.
 Readable anchors: preserve [face, closed grip, continuous weapon outline, landing cue or other necessary detail]. Do not accidentally duplicate a character, hand, weapon or contact point.
 Lettering reserve: keep [the planned speech and sound areas] usable without shrinking the action or hiding its anchors.
@@ -48,4 +70,4 @@ Text: no lettering or speech balloons in this rough source; the exact planned sp
 
 ## 直すべき兆候
 
-主動作と接写が同じ大きさで続く、人物カードの幅や左右寄せだけが違う、軌跡が足や武器につながらない、接触前から衝撃が出る、枠抜けが表示窓で消える、派手な線で顔や握り手が読めない、反応や静かな結果まで同じ強さで埋まる場合は見直す。主動作の原画と前後の配置のどちらに原因があるか分け、評価された部分を保って直す。
+主動作と接写が同じ大きさで続く、人物カードの幅や左右寄せだけが違う、スマホ幅へ縮めると動線が細い飾り線にしか見えない、軌跡が足や武器につながらない、接触前から衝撃が出る、枠抜けが表示窓で消える、派手な線で顔や握り手が読めない、エフェクトが追加の攻撃や人物に見える、反応や静かな結果まで同じ強さで埋まる場合は見直す。主動作の原画と前後の配置のどちらに原因があるか分け、評価された部分を保って直す。
