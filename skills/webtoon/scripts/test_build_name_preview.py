@@ -95,6 +95,16 @@ class BuildNamePreviewTests(unittest.TestCase):
         MODULE.build_preview(self.manifest, self.output)
         self.assertIn('#preview-flow { filter: grayscale(1); }', self.output.read_text())
 
+    def test_uncropped_panel_renders_requested_thin_frame(self):
+        data = self.base_manifest()
+        data['beats'][0]['frame'] = 'thin'
+        self.write_manifest(data)
+        MODULE.build_preview(self.manifest, self.output)
+        document = self.output.read_text()
+        self.assertIn('class="panel align-center frame-thin"', document)
+        self.assertIn('.panel.frame-thin:not(.cropped) > img { outline: 1px solid #424242;', document)
+        self.assertIn('outline-offset: -1px;', document)
+
     def test_explicit_color_review_preserves_source_color(self):
         data = self.base_manifest()
         data['colorMode'] = 'color'

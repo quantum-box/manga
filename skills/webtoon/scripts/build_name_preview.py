@@ -741,6 +741,9 @@ def _render_document(manifest):
     asset_json = _safe_json_script(manifest["assets"])
     css = CSS if manifest["colorMode"] == "monochrome" else CSS.replace(
         "#preview-flow { filter: grayscale(1); }", "#preview-flow { filter: none; }")
+    if any(beat["type"] == "panel" and beat["frame"] == "thin"
+           and beat["crop"] is None for beat in beats):
+        css += '\n.panel.frame-thin:not(.cropped) > img { outline: 1px solid #424242; outline-offset: -1px; }\n'
     return f'''<!doctype html>
 <html lang="ja"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
