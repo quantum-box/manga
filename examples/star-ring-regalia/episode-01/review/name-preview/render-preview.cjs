@@ -49,8 +49,20 @@ const {chromium} = require('playwright');
         return a.left < b.left || a.right > b.right || a.top < b.top || a.bottom > b.bottom
           ? [{id:text.closest('[data-beat-id]').dataset.beatId, text:text.textContent}] : [];
       }));
+      const monochrome = await page.evaluate(() => {
+        const flow = document.getElementById('preview-flow');
+        const coloredStyles = [...flow.querySelectorAll('.balloon,.floating-copy,.dialogue-text,.voice-copy,.sfx')].flatMap(el => {
+          const s = getComputedStyle(el);
+          return ['color','backgroundColor','borderTopColor'].flatMap(property => {
+            const rgb = s[property].match(/[\d.]+/g);
+            return rgb && (rgb[0] !== rgb[1] || rgb[1] !== rgb[2])
+              ? [{id:el.closest('[data-beat-id]').dataset.beatId, property, value:s[property]}] : [];
+          });
+        });
+        return {flowFilter:getComputedStyle(flow).filter, coloredStyles};
+      });
       fs.writeFileSync(path.join(review, 'feedback-checks.json'), JSON.stringify({width:360,height:800,
-        source:'index.html',detailCaptures,textOverflow}, null, 2));
+        source:'index.html',detailCaptures,textOverflow,monochrome}, null, 2));
       console.log(JSON.stringify({cartExcerpt: captures}));
       await page.close();
       return;

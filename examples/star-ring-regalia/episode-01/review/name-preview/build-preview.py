@@ -244,9 +244,9 @@ def tone_for(beat):
 
 extra = '''<style>
 .dialogue-speaker,.floating-speaker {display:none}
-[data-balloon-tone] {--ink:#38414a;--paper:#fff;--edge:1.7px}
-.voice-copy {color:#202b35;position:relative;z-index:2;white-space:nowrap}
-.dialogue-text {position:relative;z-index:2;color:#202b35}
+[data-balloon-tone] {--ink:#404040;--paper:#ffffff;--edge:1.7px}
+.voice-copy {color:#292929;position:relative;z-index:2;white-space:nowrap}
+.dialogue-text {position:relative;z-index:2;color:#292929}
 .balloon {background:var(--paper);border:var(--edge) solid var(--ink);box-shadow:none}
 .spoken .balloon::after {background:var(--paper);border-color:var(--ink)}
 .voice[data-balloon-tone] .floating-copy {padding:17px 19px;background:var(--paper);
@@ -255,23 +255,23 @@ extra = '''<style>
   width:13px;height:15px;bottom:-10px;left:30%;background:var(--paper);
   border-right:var(--edge) solid var(--ink);border-bottom:var(--edge) solid var(--ink);
   transform:rotate(35deg) skew(-10deg);z-index:-1}
-[data-balloon-tone="warm"],[data-balloon-tone="relief"] {--paper:#fff2df;--ink:#a0784c;--edge:1.4px}
+[data-balloon-tone="warm"],[data-balloon-tone="relief"] {--paper:#f3f3f3;--ink:#7d7d7d;--edge:1.4px}
 [data-balloon-tone="warm"] .balloon,[data-balloon-tone="relief"] .balloon,
 .voice[data-balloon-tone="warm"] .floating-copy,.voice[data-balloon-tone="relief"] .floating-copy
   {border-radius:44% 53% 41% 48% / 40% 36% 45% 41%}
-[data-balloon-tone="bright"] {--paper:#fff7d7;--ink:#967329}
-[data-balloon-tone="curious"] {--paper:#edf6ff;--ink:#46748c}
+[data-balloon-tone="bright"] {--paper:#f6f6f6;--ink:#757575}
+[data-balloon-tone="curious"] {--paper:#f5f5f5;--ink:#6c6c6c}
 [data-balloon-tone="curious"] .balloon,.voice[data-balloon-tone="curious"] .floating-copy
   {border-radius:25px 31px 26px 28px}
-[data-balloon-tone="thought"] {--paper:#f3effb;--ink:#746184;--edge:1.4px}
+[data-balloon-tone="thought"] {--paper:#f1f1f1;--ink:#686868;--edge:1.4px}
 [data-balloon-tone="thought"] .balloon,.voice[data-balloon-tone="thought"] .floating-copy
   {border-style:dashed;border-radius:42% 39% 44% 40% / 39% 47% 37% 46%}
 [data-balloon-tone="thought"] .balloon::after,.voice[data-balloon-tone="thought"] .floating-copy::after
   {content:"• •";width:auto;height:auto;bottom:-27px;left:20%;background:none;
    border:none;color:var(--ink);font-size:18px;transform:rotate(25deg);z-index:0}
 [data-balloon-tone="alarm"],[data-balloon-tone="rally"],[data-balloon-tone="strain"]
-  {--paper:#fff0f0;--ink:#a83c49;--edge:2.5px}
-[data-balloon-tone="rally"] {--paper:#fff0dd;--ink:#a9662f}
+  {--paper:#f3f3f3;--ink:#545454;--edge:2.5px}
+[data-balloon-tone="rally"] {--paper:#f2f2f2;--ink:#707070}
 [data-balloon-tone="alarm"] .balloon,[data-balloon-tone="rally"] .balloon,[data-balloon-tone="strain"] .balloon,
 .voice[data-balloon-tone="alarm"] .floating-copy,.voice[data-balloon-tone="rally"] .floating-copy,
 .voice[data-balloon-tone="strain"] .floating-copy
@@ -289,12 +289,13 @@ extra = '''<style>
 .voice[data-balloon-tone="alarm"] .floating-copy::after,.voice[data-balloon-tone="rally"] .floating-copy::after,
 .voice[data-balloon-tone="strain"] .floating-copy::after {inset:3px;background:var(--paper)}
 [data-balloon-tone="interface"] .balloon,.voice[data-balloon-tone="interface"] .floating-copy
-  {border-radius:6px;border:1px solid #6f828c;background:#f5f9fc}
+  {border-radius:6px;border:1px solid #7f7f7f;background:#f8f8f8}
 [data-balloon-tone="interface"] .balloon::after,.voice[data-balloon-tone="interface"] .floating-copy::after,
 [data-balloon-tone="narration"] .balloon::after,.voice[data-balloon-tone="narration"] .floating-copy::after {display:none}
 [data-balloon-tone="narration"] .balloon,.voice[data-balloon-tone="narration"] .floating-copy
   {border:0;border-radius:0;background:white}
-.sfx {color:#222}
+.sfx {color:#222222}
+#preview-flow {filter:grayscale(1)}
 </style>'''
 html = (ROOT / 'index.html').read_text()
 for beat in beats:

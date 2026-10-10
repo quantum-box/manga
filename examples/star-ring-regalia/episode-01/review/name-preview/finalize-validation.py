@@ -62,6 +62,10 @@ assert 34000 <= base['bodyHeightCssPx'] <= 60000
 assert base['contentHeightCssPx'] >= 24000
 assert 80 <= len(effective) <= 120
 positions = {p['id']: p for p in read(ROOT / 'review/layout-390.json')['panels']}
+feedback = read(ROOT / 'review/feedback-checks.json')
+assert not feedback['textOverflow']
+assert feedback['monochrome']['flowFilter'] == 'grayscale(1)'
+assert not feedback['monochrome']['coloredStyles']
 assert positions['p024']['y'] < positions['p026']['y'] < positions['p027']['y']
 assert positions['p083']['y'] < positions['p085']['y'] < positions['p092']['y']
 write('validation.json', dict(date='2026-10-10', requestedEpisodes=[1, 2, 3],
@@ -80,6 +84,7 @@ write('validation.json', dict(date='2026-10-10', requestedEpisodes=[1, 2, 3],
     checks=dict(native390=True, native360=True, device=False, userAdoption=False,
         finishedArtwork=False, pullRequest=False, merged=False, uploaded=False,
         publicReader=False, rustChecksRun=False),
+    nameMonochrome=feedback['monochrome'],
     files=dict(html='index.html', storyboard='storyboard.md', visualAudit='visual-audit-final.md',
         generation='generation.json'),
     htmlSha256=digest(ROOT / 'index.html')))
