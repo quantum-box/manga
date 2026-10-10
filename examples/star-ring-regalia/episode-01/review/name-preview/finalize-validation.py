@@ -19,9 +19,10 @@ ids = [p['id'] for p in panels]
 excluded = ['p005', 'p006', 'p007', 'p016', 'p017', 'p025', 'p028',
             'p031', 'p033', 'p041', 'p087']
 effective = [i for i in ids if i not in excluded]
-assert ids == [f'p{i:03}' for i in range(1, 97)]
+assert sorted(ids) == [f'p{i:03}' for i in range(1, 109)]
+assert ids == read(ROOT / 'plan-notes.json')['readingOrder']
 assert [b['id'] for b in plan['beats'] if b['type'] == 'panel'] == ids
-assert len(effective) == 85
+assert len(effective) == 97
 assets = []
 for image in sorted((ROOT / 'rough').glob('*.png')):
     meta_path = image.with_suffix('.generation.json')
@@ -44,7 +45,7 @@ measurements = []
 for width in [390, 360]:
     layout = read(ROOT / f'review/layout-{width}.json')
     windows = read(ROOT / f'review/windows-{width}.json')
-    assert len(layout['panels']) == 96
+    assert len(layout['panels']) == len(panels)
     assert layout['imageFailures'] == 0
     assert not layout['copyOverflow'] and not layout['horizontalCopyOverflow']
     assert layout['documentWidth'] == width
@@ -52,7 +53,7 @@ for width in [390, 360]:
     measurements.append(dict(widthCssPx=width, heightCssPx=layout['viewport']['height'],
         dpr=layout['viewport']['dpr'], bodyHeightCssPx=layout['bodyHeightCssPx'],
         pureGapHeightCssPx=layout['pureGapHeightCssPx'], contentHeightCssPx=layout['contentHeightCssPx'],
-        displayCuts=96, effectivePanels=len(effective), screenshotCount=len(windows),
+        displayCuts=len(panels), effectivePanels=len(effective), screenshotCount=len(windows),
         copyOverflow=0, horizontalCopyOverflow=0, imageFailures=0,
         dialogueFontSize=layout['fontSize'],
         source=f'review/layout-{width}.json', windows=f'review/windows-{width}.json',
@@ -67,6 +68,9 @@ assert not feedback['textOverflow']
 assert feedback['monochrome']['flowFilter'] == 'grayscale(1)'
 assert not feedback['monochrome']['coloredStyles']
 assert positions['p024']['y'] < positions['p026']['y'] < positions['p027']['y']
+assert positions['p019']['y'] < positions['p097']['y'] < positions['p098']['y'] < positions['p099']['y']
+assert positions['p099']['y'] < positions['p103']['y'] < positions['p104']['y'] < positions['p020']['y']
+assert positions['p027']['y'] < positions['p105']['y'] < positions['p108']['y'] < positions['p029']['y']
 assert positions['p083']['y'] < positions['p085']['y'] < positions['p092']['y']
 write('validation.json', dict(date='2026-10-10', requestedEpisodes=[1, 2, 3],
     episode=1, scope='Complete episode name; final art and publication await adoption',
@@ -76,6 +80,8 @@ write('validation.json', dict(date='2026-10-10', requestedEpisodes=[1, 2, 3],
     volumeVerdict='pass', storyVerdict='pass', paddingVerdict='pass',
     effectiveMethod='New action, understanding or reaction; exclude eleven transition/support cuts and all voice, sound and blank beats. p053 now establishes the frayed rope that causes the incident.',
     storyEvidence=['Reserve disappointment and own purchase precede voluntary connection',
+        'Light fragments, large connection spiral, chosen name, responsive fingers and voluntary world entry make the first connection an experiential onboarding',
+        'Grass, wind and wing sound lead to the first sky; close flowers, clear water, river travel and Koh’s delight make the beautiful world feel explorable',
         'Freeing the cart jolts its cargo; a visibly frayed rope snaps; Koh catches a falling medicine chest and Lize helps haul it to safety; relief leads into names and the later medicine request',
         'Water, device and willing spirit are learned through visible work and practice',
         'One medicine parcel: Sena at p079-p081; Koh at p082-p084; handoff at p085; Lize afterward',
@@ -85,6 +91,12 @@ write('validation.json', dict(date='2026-10-10', requestedEpisodes=[1, 2, 3],
         finishedArtwork=False, pullRequest=False, merged=False, uploaded=False,
         publicReader=False, rustChecksRun=False),
     nameMonochrome=feedback['monochrome'],
+    visualReview=dict(current390='arrival-390-01 through arrival-390-20 in reading order',
+        current360=['connection-360', 'onboarding-360-1', 'onboarding-360-2',
+                    'beautiful-world-360', 'arrival-360-19'],
+        currentFullEpisodeVisualReview=False,
+        priorIncidentReview='visual-audit-final.md: retained earlier feedback audit',
+        currentFullEpisodeDomChecks=True),
     files=dict(html='index.html', storyboard='storyboard.md', visualAudit='visual-audit-final.md',
         generation='generation.json'),
     htmlSha256=digest(ROOT / 'index.html')))

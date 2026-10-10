@@ -650,8 +650,307 @@
     {
       "id": "pause-p019",
       "type": "pause",
-      "height": 310,
-      "purpose": "接続操作のあとに 部屋が消える静けさを置く"
+      "height": 70,
+      "purpose": "接続操作からすぐ視界の変化へ入り 期待の勢いを保つ"
+    },
+    {
+      "id": "p097-voice-0",
+      "type": "voice",
+      "text": "えっ……！",
+      "speaker": "航",
+      "height": 180,
+      "purpose": "接続した瞬間から部屋がほどけ 始まった実感を大きな光で見せる。声を上へ出し、直下の顔・手・精霊・薬を守る"
+    },
+    {
+      "id": "p097",
+      "type": "panel",
+      "image": "rough/sheet-09.png",
+      "alt": "接続した瞬間から部屋がほどけ 始まった実感を大きな光で見せる。航：えっ……！",
+      "crop": [
+        0.0068359375,
+        0.0032552083333333335,
+        0.3173828125,
+        0.23177083333333334
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "接続した瞬間から部屋がほどけ 始まった実感を大きな光で見せる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "キィィン",
+          "x": 25,
+          "y": 78
+        }
+      ]
+    },
+    {
+      "id": "pause-p097",
+      "type": "pause",
+      "height": 40,
+      "purpose": "部屋の光片から接続の大きな光流へ一気につなぐ"
+    },
+    {
+      "id": "p098",
+      "type": "panel",
+      "image": "rough/connection-dive.png",
+      "alt": "接続の光へ吸い込まれる主観体験を専用縦長原画で大きく見せる。",
+      "crop": null,
+      "imageSize": [
+        948,
+        1659
+      ],
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "接続の光へ吸い込まれる主観体験を専用縦長原画で大きく見せる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "シュアアア",
+          "x": 43,
+          "y": 83
+        }
+      ]
+    },
+    {
+      "id": "pause-p098",
+      "type": "pause",
+      "height": 200,
+      "purpose": "光流の終わりを受けて初回の歓迎へ落ち着く"
+    },
+    {
+      "id": "p099-voice-0",
+      "type": "voice",
+      "text": "REGALIAへ\nようこそ\n名前を決めよう",
+      "speaker": "HUD",
+      "height": 280,
+      "purpose": "初回だけの案内を短い歓迎と名前の選択から始める。声を上へ出し、直下の顔・手・精霊・薬を守る"
+    },
+    {
+      "id": "p099",
+      "type": "panel",
+      "image": "rough/sheet-09.png",
+      "alt": "初回だけの案内を短い歓迎と名前の選択から始める。HUD：REGALIAへ ようこそ 名前を決めよう",
+      "crop": [
+        0.67578125,
+        0.0032552083333333335,
+        0.3173828125,
+        0.23177083333333334
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "widthPercent": 96,
+      "align": "center",
+      "frame": "none",
+      "purpose": "初回だけの案内を短い歓迎と名前の選択から始める",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "pause-p099",
+      "type": "pause",
+      "height": 40,
+      "purpose": "名前の案内へ本人がすぐ返す"
+    },
+    {
+      "id": "p100-voice-0",
+      "type": "voice",
+      "text": "……コウ！",
+      "speaker": "航",
+      "height": 180,
+      "purpose": "自分で名を選んで期待を行動に変える。声を上へ出し、直下の顔・手・精霊・薬を守る"
+    },
+    {
+      "id": "p100",
+      "type": "panel",
+      "image": "rough/sheet-09.png",
+      "alt": "自分で名を選んで期待を行動に変える。航：……コウ！",
+      "crop": [
+        0.0068359375,
+        0.24544270833333334,
+        0.3173828125,
+        0.22395833333333334
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "widthPercent": 82,
+      "align": "left",
+      "frame": "none",
+      "purpose": "自分で名を選んで期待を行動に変える",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "pause-p100",
+      "type": "pause",
+      "height": 45,
+      "purpose": "名の選択から初めて動かす手へ移る"
+    },
+    {
+      "id": "p101-voice-0",
+      "type": "voice",
+      "text": "手を開いて\n動かしてみよう",
+      "speaker": "HUD",
+      "height": 250,
+      "purpose": "説明を読むより指を動かして身体が応える楽しさを見せる。声を上へ出し、直下の顔・手・精霊・薬を守る"
+    },
+    {
+      "id": "p101",
+      "type": "panel",
+      "image": "rough/sheet-09.png",
+      "alt": "説明を読むより指を動かして身体が応える楽しさを見せる。HUD：手を開いて 動かしてみよう",
+      "crop": [
+        0.3427734375,
+        0.24544270833333334,
+        0.3154296875,
+        0.22395833333333334
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "widthPercent": 74,
+      "align": "right",
+      "frame": "none",
+      "purpose": "説明を読むより指を動かして身体が応える楽しさを見せる",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "pause-p101",
+      "type": "pause",
+      "height": 30,
+      "purpose": "案内から握る動作へ応答を近く置く"
+    },
+    {
+      "id": "p102-voice-0",
+      "type": "voice",
+      "text": "すごっ！\nちゃんと動く！",
+      "speaker": "航",
+      "height": 220,
+      "purpose": "操作の結果と本人の驚きを同じ動作の受け止めとして返す。声を上へ出し、直下の顔・手・精霊・薬を守る"
+    },
+    {
+      "id": "p102",
+      "type": "panel",
+      "image": "rough/sheet-09.png",
+      "alt": "操作の結果と本人の驚きを同じ動作の受け止めとして返す。航：すごっ！ ちゃんと動く！",
+      "crop": [
+        0.67578125,
+        0.24544270833333334,
+        0.3173828125,
+        0.22395833333333334
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "widthPercent": 82,
+      "align": "right",
+      "frame": "none",
+      "purpose": "操作の結果と本人の驚きを同じ動作の受け止めとして返す",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "ピッ",
+          "x": 25,
+          "y": 78
+        }
+      ]
+    },
+    {
+      "id": "pause-p102",
+      "type": "pause",
+      "height": 60,
+      "purpose": "身体の応答を喜んで世界へ入る準備へ進む"
+    },
+    {
+      "id": "p103-voice-0",
+      "type": "voice",
+      "text": "準備完了\nエルセリアへ",
+      "speaker": "HUD",
+      "height": 240,
+      "purpose": "準備が終わったことと世界へ入る本人の選択をつなぐ。声を上へ出し、直下の顔・手・精霊・薬を守る"
+    },
+    {
+      "id": "p103",
+      "type": "panel",
+      "image": "rough/sheet-09.png",
+      "alt": "準備が終わったことと世界へ入る本人の選択をつなぐ。HUD：準備完了 エルセリアへ",
+      "crop": [
+        0.0068359375,
+        0.4798177083333333,
+        0.3173828125,
+        0.22330729166666666
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "widthPercent": 96,
+      "align": "center",
+      "frame": "none",
+      "purpose": "準備が終わったことと世界へ入る本人の選択をつなぐ",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "pause-p103",
+      "type": "pause",
+      "height": 45,
+      "purpose": "本人の指の選択から次の光が開く"
+    },
+    {
+      "id": "p104-voice-0",
+      "type": "voice",
+      "text": "行くぞ！",
+      "speaker": "航",
+      "height": 180,
+      "purpose": "光の流れを草と風へ受け渡し 大きな世界はまだ伏せる。声を上へ出し、直下の顔・手・精霊・薬を守る"
+    },
+    {
+      "id": "p104",
+      "type": "panel",
+      "image": "rough/sheet-09.png",
+      "alt": "光の流れを草と風へ受け渡し 大きな世界はまだ伏せる。航：行くぞ！",
+      "crop": [
+        0.3427734375,
+        0.4798177083333333,
+        0.3154296875,
+        0.22330729166666666
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "光の流れを草と風へ受け渡し 大きな世界はまだ伏せる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "サァ…",
+          "x": 25,
+          "y": 78
+        }
+      ]
+    },
+    {
+      "id": "pause-p104",
+      "type": "pause",
+      "height": 180,
+      "purpose": "強い光が草と風に変わり匂いが先に届く"
     },
     {
       "id": "first-scent",
@@ -945,6 +1244,138 @@
       "type": "pause",
       "height": 120,
       "purpose": "空を見た余韻の中へ 友人の声が届く"
+    },
+    {
+      "id": "p105",
+      "type": "panel",
+      "image": "rough/sheet-09.png",
+      "alt": "美しい世界を遠景だけで終わらせず近くの花と風で体験する。",
+      "crop": [
+        0.67578125,
+        0.4798177083333333,
+        0.3173828125,
+        0.22330729166666666
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "美しい世界を遠景だけで終わらせず近くの花と風で体験する",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "そよ…",
+          "x": 55,
+          "y": 76
+        }
+      ]
+    },
+    {
+      "id": "pause-p105",
+      "type": "pause",
+      "height": 50,
+      "purpose": "風と近くの花から目を落として水の光を見る"
+    },
+    {
+      "id": "p106",
+      "type": "panel",
+      "image": "rough/sheet-09.png",
+      "alt": "水の光と小さな生き物から世界の生きた美しさを見せる。",
+      "crop": [
+        0.0068359375,
+        0.712890625,
+        0.3173828125,
+        0.28125
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "widthPercent": 82,
+      "align": "left",
+      "frame": "none",
+      "purpose": "水の光と小さな生き物から世界の生きた美しさを見せる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "パシャ",
+          "x": 58,
+          "y": 68
+        }
+      ]
+    },
+    {
+      "id": "pause-p106",
+      "type": "pause",
+      "height": 70,
+      "purpose": "足元の水から遠くの川と暮らしへ視線を伸ばす"
+    },
+    {
+      "id": "p107",
+      "type": "panel",
+      "image": "rough/sheet-09.png",
+      "alt": "大きな景色の中に移動と暮らしを置き歩いてみたい先を作る。",
+      "crop": [
+        0.3427734375,
+        0.712890625,
+        0.3154296875,
+        0.28125
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "大きな景色の中に移動と暮らしを置き歩いてみたい先を作る",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "pause-p107",
+      "type": "pause",
+      "height": 80,
+      "purpose": "遠景を見た航の喜びを受け止める"
+    },
+    {
+      "id": "p108-voice-0",
+      "type": "voice",
+      "text": "すっげぇ……！",
+      "speaker": "航",
+      "height": 200,
+      "purpose": "見た美しさを主人公の素直なワクワクで受け止める。声を上へ出し、直下の顔・手・精霊・薬を守る"
+    },
+    {
+      "id": "p108",
+      "type": "panel",
+      "image": "rough/sheet-09.png",
+      "alt": "見た美しさを主人公の素直なワクワクで受け止める。航：すっげぇ……！",
+      "crop": [
+        0.67578125,
+        0.712890625,
+        0.3173828125,
+        0.28125
+      ],
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "widthPercent": 82,
+      "align": "right",
+      "frame": "none",
+      "purpose": "見た美しさを主人公の素直なワクワクで受け止める",
+      "dialogue": [],
+      "sounds": []
+    },
+    {
+      "id": "pause-p108",
+      "type": "pause",
+      "height": 150,
+      "purpose": "世界に見とれる航へ友人の声が届く"
     },
     {
       "id": "p029",

@@ -10,8 +10,10 @@ SKILL = Path.home() / '.codex/skills/webtoon'
 notes = json.loads((ROOT / 'plan-notes.json').read_text())
 panels = notes['panels']
 cell_windows = json.loads((ROOT / 'cell-windows.json').read_text())['sheets']
-assert len(panels) == 96
-assert [p['id'] for p in panels] == [f'p{i:03}' for i in range(1, 97)]
+assert len(panels) == 108
+panel_by_id = {p['id']: p for p in panels}
+assert sorted(panel_by_id) == [f'p{i:03}' for i in range(1, 109)]
+assert [p['id'] for p in panels] == notes['readingOrder']
 
 def image_size(path):
     raw = path.read_bytes()
@@ -49,13 +51,26 @@ before_voice = {
     52: 250, 54: 200, 57: 200, 58: 150, 59: 290, 60: 310, 62: 300,
     63: 260, 70: 280, 72: 250, 73: 240,
     74: 280, 79: 300, 82: 240, 84: 300, 85: 320,
+    97: 180, 99: 280, 100: 180, 101: 250, 102: 220, 103: 240, 104: 180, 108: 200,
 }
 gaps = {
     4: (110, '選抜を受けた航の沈黙から チームが先へ行く背中へ移る'),
     6: (180, '道場を出た結果から 家の弁当店へ場所をつなぐ'),
     12: (90, '中古の機器への期待を受け止め 母へ自分の選択を話す'),
     16: (220, '九時の約束を持って 部屋で自分から接続する'),
-    19: (310, '接続操作のあとに 部屋が消える静けさを置く'),
+    19: (70, '接続操作からすぐ視界の変化へ入り 期待の勢いを保つ'),
+    97: (40, '部屋の光片から接続の大きな光流へ一気につなぐ'),
+    98: (200, '光流の終わりを受けて初回の歓迎へ落ち着く'),
+    99: (40, '名前の案内へ本人がすぐ返す'),
+    100: (45, '名の選択から初めて動かす手へ移る'),
+    101: (30, '案内から握る動作へ応答を近く置く'),
+    102: (60, '身体の応答を喜んで世界へ入る準備へ進む'),
+    103: (45, '本人の指の選択から次の光が開く'),
+    104: (180, '強い光が草と風に変わり匂いが先に届く'),
+    105: (50, '風と近くの花から目を落として水の光を見る'),
+    106: (70, '足元の水から遠くの川と暮らしへ視線を伸ばす'),
+    107: (80, '遠景を見た航の喜びを受け止める'),
+    108: (150, '世界に見とれる航へ友人の声が届く'),
     23: (80, '身体の確認を終え 頭上の影へ気づく'),
     25: (360, '羽音を聞いて見上げたあと 空の最初の光をまだ見せない'),
     26: (720, '瞳の小さな星環の手掛かりから 全景の竜と空を待つ'),
@@ -82,7 +97,7 @@ def voice(beat_id, text, speaker, height, purpose, **position):
     beats.append(dict(id=beat_id, type='voice', text=text, speaker=speaker,
         height=height, purpose=purpose, **position))
 
-for p in panels:
+for panel_index, p in enumerate(panels):
     number = int(p['id'][1:])
     sheet = ROOT / 'rough' / f"sheet-{p['sheet']:02}.png"
     width, height = image_size(sheet)
@@ -155,6 +170,17 @@ for p in panels:
     if number == 27:
         panel.update(image='rough/sky-discovery.png', imageSize=image_size(ROOT / 'rough/sky-discovery.png'),
             crop=None, widthPercent=100, align='center')
+    if number == 98:
+        panel.update(image='rough/connection-dive.png', imageSize=image_size(ROOT / 'rough/connection-dive.png'),
+            crop=None, widthPercent=100, align='center', sounds=[dict(text='シュアアア', x=43, y=83)])
+    if number in (97, 104, 105, 107):
+        panel.update(widthPercent=100, align='center')
+    if number in (100, 101, 102, 106, 108):
+        panel.update(widthPercent=74 if number == 101 else 82, align='left' if number in (100, 106) else 'right')
+    if number == 105:
+        panel['sounds'] = [dict(text='そよ…', x=55, y=76)]
+    if number == 106:
+        panel['sounds'] = [dict(text='パシャ', x=58, y=68)]
     if number == 58:
         panel.update(widthPercent=100, align='center')
         panel['sounds'] = [dict(text='ガシッ', x=68, y=75)]
@@ -204,13 +230,13 @@ for p in panels:
     if number in gaps:
         gap_height, reason = gaps[number]
         beats.append(dict(id=f'pause-{p["id"]}', type='pause', height=gap_height, purpose=reason))
-    elif number < 96 and number not in placements and number not in (19, 25, 66):
-        if panels[number]['scene'] == p['scene']:
+    elif panel_index < len(panels) - 1 and number not in placements and number not in (19, 25, 66):
+        if panels[panel_index + 1]['scene'] == p['scene']:
             gap_height = 45 if p['dialogue'] else 24
             beats.append(dict(id=f'breath-{p["id"]}', type='pause', height=gap_height,
                 purpose='同じ場所の短い動作と応答を近くで読み 次の対象へ視線を渡す'))
     layout_notes.append(dict(id=p['id'], source=panel['image'], slot=p['slot'], crop=panel['crop'],
-        sourcePixelWindow=None if number == 27 else [x0, y0, x1, y1],
+        sourcePixelWindow=None if number in (27, 98) else [x0, y0, x1, y1],
         placement={k: panel[k] for k in ('widthPercent', 'align', 'frame', 'composition', 'offsetX', 'offsetY') if k in panel},
         propState=source, newInformation=p['purpose']))
 
@@ -225,7 +251,7 @@ module.build_preview(ROOT / 'plan.json', ROOT / 'index.html', force=True)
 # Give the rough name expressive balloons without altering the generated PNGs.
 def tone_for(beat):
     number = re.match(r'p(\d{3})', beat['id'])
-    source = panels[int(number[1]) - 1] if number else None
+    source = panel_by_id.get('p' + number[1]) if number else None
     if beat['id'] in ('first-scent',):
         return 'thought'
     if beat['id'] == 'cart-call':

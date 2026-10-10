@@ -1,106 +1,6 @@
 {
   "title": "星環のレガリア 第1話 補欠の空",
-  "scope": {
-    "series": "星環のレガリア",
-    "episode": 1,
-    "title": "補欠の空",
-    "approvalGate": "この96パネルの白黒ネームを390px幅で提示しユーザーが構成を採用してから本作画へ進む",
-    "target": {
-      "effective_panels": "80-120",
-      "panel_count": 96,
-      "css_width": 390,
-      "main_height_css": "34000-60000",
-      "content_height_excluding_pure_whitespace_css": ">=24000",
-      "note": "画像保存解像度とファイル枚数は表示寸法と別に検証する"
-    },
-    "sourceAudit": {
-      "storyboard": "examples/star-ring-regalia/episode-01/storyboard.md",
-      "validation": "examples/star-ring-regalia/episode-01/validation.json",
-      "layout": "examples/star-ring-regalia/episode-01/layout.json",
-      "references": [
-        "skills/webtoon/references/emotion-and-causality.md",
-        "skills/webtoon/references/reader-perspective.md",
-        "skills/webtoon/references/context-and-dialogue.md"
-      ],
-      "current_baseline": {
-        "story_moments": 71,
-        "adopted_images": 25,
-        "page_height_390_css": 25697,
-        "audit_finding": "現行は読める接続と表示検証があるが通常話の長さと有効コマ基準を満たさず出来事の受け止めが圧縮されている"
-      }
-    },
-    "canon": {
-      "start": "木曜の放課後 川口の高校生の航は部活の補欠で初めてREGALIAへ接続する",
-      "end": "ミルトで暮らしの魔法と魔導器と精霊と荷運びを体験し薬の配達を引き受けかけるが帰宅の約束を思い出しリゼが代わる 安全拠点から帰り翌日日暮れ前の再訪を約束する",
-      "holds": [
-        "水不足を描かない",
-        "運営の秘密を描かない",
-        "守護者を描かない",
-        "現地の死者を描かない",
-        "成長した装備を描かない",
-        "剣は抜いて重さを確かめるだけ",
-        "盾は未経験で所持しない"
-      ],
-      "continuity": [
-        "日本では紺の制服からティールのパーカーへ移る",
-        "エルセリア到着後は青灰のチュニックと鞘入りの直剣",
-        "荷車の失敗で航とリゼの袖と前腕が泥になる",
-        "橋の水と洗い場の水音は一つの連続音",
-        "薬包みはセナから航へ航からリゼへ一つだけ渡る",
-        "日本時間20:50から帰宅時刻21:00へつながる"
-      ]
-    },
-    "sheets": [
-      {
-        "sheet": 1,
-        "range": "p001-p012",
-        "title": "補欠の空から中古のヘッドセットへ",
-        "purpose": "補欠の痛みと自分で選ぶ入口"
-      },
-      {
-        "sheet": 2,
-        "range": "p013-p024",
-        "title": "家の約束から身体の確認へ",
-        "purpose": "帰宅時刻を背負って接続し身体を持つ"
-      },
-      {
-        "sheet": 3,
-        "range": "p025-p036",
-        "title": "羽音と星環から友人の到着へ",
-        "purpose": "姿より先に音を置き星環と灯里を受ける"
-      },
-      {
-        "sheet": 4,
-        "range": "p037-p048",
-        "title": "星環の名前から重い剣へ",
-        "purpose": "世界と町を場所に結び航の旅への願いを作る"
-      },
-      {
-        "sheet": 5,
-        "range": "p049-p060",
-        "title": "剣の重さから荷車の失敗へ",
-        "purpose": "剣を使わず人の困りごとへ向き失敗を修正する"
-      },
-      {
-        "sheet": 6,
-        "range": "p061-p072",
-        "title": "荷車の成功から水路へ",
-        "purpose": "三人の名乗りと町の暮らしの入口をつなぐ"
-      },
-      {
-        "sheet": 7,
-        "range": "p073-p084",
-        "title": "魔導器と精霊と練習から依頼へ",
-        "purpose": "道具と精霊と本人の未熟さを分ける"
-      },
-      {
-        "sheet": 8,
-        "range": "p085-p096",
-        "title": "薬の約束と21時の帰宅",
-        "purpose": "役に立ちたい気持ちを正直な帰還と再訪へ変える"
-      }
-    ]
-  },
+  "scope": "Complete episode 1 rough name: 108 source moments including expanded first connection, experiential onboarding and beautiful world arrival. Final art awaits user adoption.",
   "panels": [
     {
       "id": "p001",
@@ -600,6 +500,251 @@
       }
     },
     {
+      "id": "p097",
+      "sheet": 9,
+      "slot": 1,
+      "scene": "03-first-connection",
+      "art": "The familiar room dissolves into luminous rectangular fragments in KOH’s subjective headset view. KOH remains safely seated in hoodie.",
+      "roughArt": "The familiar room dissolves into luminous rectangular fragments in KOH’s subjective headset view. KOH remains safely seated in hoodie.",
+      "subject": "The familiar room dissolves into luminous rectangular fragments in KOH’s subjective headset view. KOH remains safely seated in hoodie.",
+      "purpose": "接続した瞬間から部屋がほどけ 始まった実感を大きな光で見せる",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "えっ……！",
+          "kind": "speech",
+          "tone": "alarm"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "キィィン",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "ヘッドセットの起動音が視界の光とともに立ち上がり、次の光流へ渡す"
+        }
+      ],
+      "propState": "Bedroom projection; actual body safely seated; headset worn; no physical destruction.",
+      "widthShape": {
+        "width": "wide",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "wide environmental view",
+        "placement": "center",
+        "reader_focus": "接続した瞬間から部屋がほどけ 始まった実感を大きな光で見せる"
+      }
+    },
+    {
+      "id": "p098",
+      "sheet": 9,
+      "slot": 2,
+      "scene": "03-first-connection",
+      "art": "One small KOH hoodie silhouette travels into an enormous spiraling corridor of broad white radiance and dark curved bands.",
+      "roughArt": "One small KOH hoodie silhouette travels into an enormous spiraling corridor of broad white radiance and dark curved bands.",
+      "subject": "One small KOH hoodie silhouette travels into an enormous spiraling corridor of broad white radiance and dark curved bands.",
+      "purpose": "接続の光へ吸い込まれる主観体験を専用縦長原画で大きく見せる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "シュアアア",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "接続演出の音が大きな光の流れと同じ方向へ続く。案内が始まる前に終える"
+        }
+      ],
+      "propState": "Subjective connection transition only; one body; no fantasy land, no physical crossing.",
+      "widthShape": {
+        "width": "full",
+        "height": "very tall",
+        "shape": "borderless",
+        "camera": "full atmospheric view",
+        "placement": "center",
+        "reader_focus": "接続の光へ吸い込まれる主観体験を専用縦長原画で大きく見せる"
+      }
+    },
+    {
+      "id": "p099",
+      "sheet": 9,
+      "slot": 3,
+      "scene": "03-onboarding",
+      "art": "KOH in initial game tunic arrives in a calm luminous space with a simple blank greeting and name-entry HUD.",
+      "roughArt": "KOH in initial game tunic arrives in a calm luminous space with a simple blank greeting and name-entry HUD.",
+      "subject": "KOH in initial game tunic arrives in a calm luminous space with a simple blank greeting and name-entry HUD.",
+      "purpose": "初回だけの案内を短い歓迎と名前の選択から始める",
+      "dialogue": [
+        {
+          "speaker": "HUD",
+          "text": "REGALIAへ\nようこそ\n名前を決めよう",
+          "kind": "display",
+          "tone": "interface"
+        }
+      ],
+      "sounds": [],
+      "propState": "Initial avatar and simple HUD; scenery hidden by subjective welcome display; no guide character.",
+      "widthShape": {
+        "width": "wide",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "wide environmental view",
+        "placement": "center",
+        "reader_focus": "初回だけの案内を短い歓迎と名前の選択から始める"
+      }
+    },
+    {
+      "id": "p100",
+      "sheet": 9,
+      "slot": 4,
+      "scene": "03-onboarding",
+      "art": "KOH’s curious face opens into a shy enthusiastic smile as he says his chosen game name.",
+      "roughArt": "KOH’s curious face opens into a shy enthusiastic smile as he says his chosen game name.",
+      "subject": "KOH’s curious face opens into a shy enthusiastic smile as he says his chosen game name.",
+      "purpose": "自分で名を選んで期待を行動に変える",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "……コウ！",
+          "kind": "speech",
+          "tone": "bright"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same welcome interface; chosen nickname Koh; black hair and initial tunic.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "hands or face close-up",
+        "placement": "center",
+        "reader_focus": "自分で名を選んで期待を行動に変える"
+      }
+    },
+    {
+      "id": "p101",
+      "sheet": 9,
+      "slot": 5,
+      "scene": "03-onboarding",
+      "art": "First-person open hand aligns with a simple hand-outline calibration diagram, fingertip rings respond.",
+      "roughArt": "First-person open hand aligns with a simple hand-outline calibration diagram, fingertip rings respond.",
+      "subject": "First-person open hand aligns with a simple hand-outline calibration diagram, fingertip rings respond.",
+      "purpose": "説明を読むより指を動かして身体が応える楽しさを見せる",
+      "dialogue": [
+        {
+          "speaker": "HUD",
+          "text": "手を開いて\n動かしてみよう",
+          "kind": "display",
+          "tone": "interface"
+        }
+      ],
+      "sounds": [],
+      "propState": "One real hand and one abstract outline; no magical attack or extra anatomical hand.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "hands or face close-up",
+        "placement": "center",
+        "reader_focus": "説明を読むより指を動かして身体が応える楽しさを見せる"
+      }
+    },
+    {
+      "id": "p102",
+      "sheet": 9,
+      "slot": 6,
+      "scene": "03-onboarding",
+      "art": "KOH closes his fist and delights as it immediately responds, fingers tracked by small light indicators.",
+      "roughArt": "KOH closes his fist and delights as it immediately responds, fingers tracked by small light indicators.",
+      "subject": "KOH closes his fist and delights as it immediately responds, fingers tracked by small light indicators.",
+      "purpose": "操作の結果と本人の驚きを同じ動作の受け止めとして返す",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "すごっ！\nちゃんと動く！",
+          "kind": "speech",
+          "tone": "bright"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "ピッ",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "手の応答確認を一度だけ短く返す"
+        }
+      ],
+      "propState": "Same calibration; ordinary first-body movement; no power upgrade.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "hands or face close-up",
+        "placement": "center",
+        "reader_focus": "操作の結果と本人の驚きを同じ動作の受け止めとして返す"
+      }
+    },
+    {
+      "id": "p103",
+      "sheet": 9,
+      "slot": 7,
+      "scene": "03-onboarding",
+      "art": "KOH reaches confidently to tap the final start tile, luminous HUD opening around the fingertip.",
+      "roughArt": "KOH reaches confidently to tap the final start tile, luminous HUD opening around the fingertip.",
+      "subject": "KOH reaches confidently to tap the final start tile, luminous HUD opening around the fingertip.",
+      "purpose": "準備が終わったことと世界へ入る本人の選択をつなぐ",
+      "dialogue": [
+        {
+          "speaker": "HUD",
+          "text": "準備完了\nエルセリアへ",
+          "kind": "display",
+          "tone": "interface"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same avatar; sword sheathed at left hip; no shield; active choice, not forced transport.",
+      "widthShape": {
+        "width": "wide",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "wide environmental view",
+        "placement": "center",
+        "reader_focus": "準備が終わったことと世界へ入る本人の選択をつなぐ"
+      }
+    },
+    {
+      "id": "p104",
+      "sheet": 9,
+      "slot": 8,
+      "scene": "03-world-entry",
+      "art": "Light parts downward and threads turn into grass blades below KOH’s entering silhouette.",
+      "roughArt": "Light parts downward and threads turn into grass blades below KOH’s entering silhouette.",
+      "subject": "Light parts downward and threads turn into grass blades below KOH’s entering silhouette.",
+      "purpose": "光の流れを草と風へ受け渡し 大きな世界はまだ伏せる",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "行くぞ！",
+          "kind": "speech",
+          "tone": "rally"
+        }
+      ],
+      "sounds": [
+        {
+          "text": "サァ…",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "接続音が消え、最初の草と風の環境音へ切り替わる"
+        }
+      ],
+      "propState": "Transition only; no sky/ring/dragon/town reveal before p027; no physical portal in bedroom.",
+      "widthShape": {
+        "width": "full",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "full atmospheric view",
+        "placement": "center",
+        "reader_focus": "光の流れを草と風へ受け渡し 大きな世界はまだ伏せる"
+      }
+    },
+    {
       "id": "p020",
       "sheet": 2,
       "slot": 8,
@@ -792,7 +937,7 @@
       "purpose": "大きな空の直前に最初の理解を一つだけ渡す",
       "dialogue": [],
       "sounds": [],
-      "propState": "Pure white transition; no new figure, sound or silhouette.",
+      "propState": "Same grassy hill; first curved ring reflection in Koh’s eye; whole sky and distant dragon still withheld.",
       "widthShape": {
         "width": "full",
         "height": "tall",
@@ -842,6 +987,111 @@
         "camera": "rear medium",
         "placement": "left",
         "reader_focus": "still body against immense sky"
+      }
+    },
+    {
+      "id": "p105",
+      "sheet": 9,
+      "slot": 9,
+      "scene": "05-world-beauty",
+      "art": "KOH on the flowering hill reaches toward a butterfly, wind tousling his hair and open palm.",
+      "roughArt": "KOH on the flowering hill reaches toward a butterfly, wind tousling his hair and open palm.",
+      "subject": "KOH on the flowering hill reaches toward a butterfly, wind tousling his hair and open palm.",
+      "purpose": "美しい世界を遠景だけで終わらせず近くの花と風で体験する",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "そよ…",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "花と髪を動かす柔らかい風。光の接続音とは別の環境音"
+        }
+      ],
+      "propState": "After first complete sky reveal; same hill; clean clothes; sword sheathed; hand empty.",
+      "widthShape": {
+        "width": "wide",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "wide environmental view",
+        "placement": "center",
+        "reader_focus": "美しい世界を遠景だけで終わらせず近くの花と風で体験する"
+      }
+    },
+    {
+      "id": "p106",
+      "sheet": 9,
+      "slot": 10,
+      "scene": "05-world-beauty",
+      "art": "Downward POV along the same hill shows crystal-clear rivulet, reflected clouds, tiny leaping fish and flowers.",
+      "roughArt": "Downward POV along the same hill shows crystal-clear rivulet, reflected clouds, tiny leaping fish and flowers.",
+      "subject": "Downward POV along the same hill shows crystal-clear rivulet, reflected clouds, tiny leaping fish and flowers.",
+      "purpose": "水の光と小さな生き物から世界の生きた美しさを見せる",
+      "dialogue": [],
+      "sounds": [
+        {
+          "text": "パシャ",
+          "mode": "originating",
+          "continuationOf": null,
+          "reason": "小魚が水面へ戻る小さな一回の音。水路の危機を示さない"
+        }
+      ],
+      "propState": "POV nearby rivulet from hill; no jump to another location; no HUD or mystery.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "wide environmental view",
+        "placement": "center",
+        "reader_focus": "水の光と小さな生き物から世界の生きた美しさを見せる"
+      }
+    },
+    {
+      "id": "p107",
+      "sheet": 9,
+      "slot": 11,
+      "scene": "05-world-beauty",
+      "art": "Far down the valley, turning windmills, a river sailboat and cart on stone bridge make a lived-in path to Milt.",
+      "roughArt": "Far down the valley, turning windmills, a river sailboat and cart on stone bridge make a lived-in path to Milt.",
+      "subject": "Far down the valley, turning windmills, a river sailboat and cart on stone bridge make a lived-in path to Milt.",
+      "purpose": "大きな景色の中に移動と暮らしを置き歩いてみたい先を作る",
+      "dialogue": [],
+      "sounds": [],
+      "propState": "View from same hill toward Milt; tiny boat and cart are distant scenery, not new named cast.",
+      "widthShape": {
+        "width": "wide",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "full atmospheric view",
+        "placement": "center",
+        "reader_focus": "大きな景色の中に移動と暮らしを置き歩いてみたい先を作る"
+      }
+    },
+    {
+      "id": "p108",
+      "sheet": 9,
+      "slot": 12,
+      "scene": "05-world-beauty",
+      "art": "Close KOH face shines with wide eyes and unguarded delight after seeing the valley, wind lifting his cowlick.",
+      "roughArt": "Close KOH face shines with wide eyes and unguarded delight after seeing the valley, wind lifting his cowlick.",
+      "subject": "Close KOH face shines with wide eyes and unguarded delight after seeing the valley, wind lifting his cowlick.",
+      "purpose": "見た美しさを主人公の素直なワクワクで受け止める",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "すっげぇ……！",
+          "kind": "speech",
+          "tone": "bright"
+        }
+      ],
+      "sounds": [],
+      "propState": "Same hill, initial tunic, still before Akari arrives; no combat or secret-world realization.",
+      "widthShape": {
+        "width": "medium",
+        "height": "medium",
+        "shape": "borderless",
+        "camera": "hands or face close-up",
+        "placement": "center",
+        "reader_focus": "見た美しさを主人公の素直なワクワクで受け止める"
       }
     },
     {
@@ -2705,5 +2955,115 @@
         "reader_focus": "clean hands, eye reflection, final thought"
       }
     }
+  ],
+  "readingOrder": [
+    "p001",
+    "p002",
+    "p003",
+    "p004",
+    "p005",
+    "p006",
+    "p007",
+    "p008",
+    "p009",
+    "p010",
+    "p011",
+    "p012",
+    "p013",
+    "p014",
+    "p015",
+    "p016",
+    "p017",
+    "p018",
+    "p019",
+    "p097",
+    "p098",
+    "p099",
+    "p100",
+    "p101",
+    "p102",
+    "p103",
+    "p104",
+    "p020",
+    "p021",
+    "p022",
+    "p023",
+    "p024",
+    "p025",
+    "p026",
+    "p027",
+    "p028",
+    "p105",
+    "p106",
+    "p107",
+    "p108",
+    "p029",
+    "p030",
+    "p031",
+    "p032",
+    "p033",
+    "p034",
+    "p035",
+    "p036",
+    "p037",
+    "p038",
+    "p039",
+    "p040",
+    "p041",
+    "p042",
+    "p043",
+    "p044",
+    "p045",
+    "p046",
+    "p047",
+    "p048",
+    "p049",
+    "p050",
+    "p051",
+    "p052",
+    "p053",
+    "p054",
+    "p055",
+    "p056",
+    "p057",
+    "p058",
+    "p059",
+    "p060",
+    "p061",
+    "p062",
+    "p063",
+    "p064",
+    "p065",
+    "p066",
+    "p067",
+    "p068",
+    "p069",
+    "p070",
+    "p071",
+    "p072",
+    "p073",
+    "p074",
+    "p075",
+    "p076",
+    "p077",
+    "p078",
+    "p079",
+    "p080",
+    "p081",
+    "p082",
+    "p083",
+    "p084",
+    "p085",
+    "p086",
+    "p087",
+    "p088",
+    "p089",
+    "p090",
+    "p091",
+    "p092",
+    "p093",
+    "p094",
+    "p095",
+    "p096"
   ]
 }

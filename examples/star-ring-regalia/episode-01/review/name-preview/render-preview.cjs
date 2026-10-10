@@ -12,6 +12,39 @@ const {chromium} = require('playwright');
   const browser = await chromium.launch({headless: true});
   const results = [];
   try {
+    if (process.argv.includes('--arrival-excerpt')) {
+      const checks = [];
+      for (const [width,height] of [[390,844],[360,800]]) {
+        const page = await browser.newPage({viewport:{width,height},deviceScaleFactor:1});
+        await page.goto(pathToFileURL(path.join(root,'index.html')).href);
+        await page.evaluate(async () => {
+          await document.fonts.ready;
+          await Promise.all([...document.images].map(image=>image.decode()));
+        });
+        const captures=[];
+        const start = await page.locator('[data-beat-id="p019"]').evaluate(el=>el.getBoundingClientRect().top+scrollY-30);
+        const end = await page.locator('[data-beat-id="p029"]').evaluate(el=>el.getBoundingClientRect().top+scrollY);
+        for (let y=start,index=1;y<end;y+=height-120,index++) {
+          await page.evaluate(y=>scrollTo(0,y),y);
+          const file=`arrival-${width}-${String(index).padStart(2,'0')}.jpg`;
+          await page.screenshot({path:path.join(review,file),type:'jpeg',quality:88,scale:'css'});
+          captures.push({file:`review/${file}`,scrollY:await page.evaluate(()=>scrollY)});
+        }
+        for (const [id,name] of [['p098','connection'],['p027','beautiful-world']]) {
+          await page.locator(`[data-beat-id="${id}"]`).screenshot({path:path.join(review,`${name}-${width}.jpg`),type:'jpeg',quality:90,scale:'css'});
+        }
+        const top = await page.locator('[data-beat-id="p101-voice-0"]').evaluate(el=>el.getBoundingClientRect().top+scrollY-30);
+        for (let index=0;index<2;index++) {
+          await page.evaluate(y=>scrollTo(0,y),top+index*(height-120));
+          await page.screenshot({path:path.join(review,`onboarding-${width}-${index+1}.jpg`),type:'jpeg',quality:90,scale:'css'});
+        }
+        checks.push({width,height,dpr:1,overlapCssPx:120,source:'index.html',captures});
+        await page.close();
+      }
+      fs.writeFileSync(path.join(review,'arrival-excerpt.json'),JSON.stringify(checks,null,2));
+      console.log(JSON.stringify(checks.map(c=>({width:c.width,windows:c.captures.length}))));
+      return;
+    }
     if (process.argv.includes('--cart-excerpt')) {
       const page = await browser.newPage({viewport: {width: 360, height: 800}, deviceScaleFactor: 1});
       await page.goto(pathToFileURL(path.join(root, 'index.html')).href);

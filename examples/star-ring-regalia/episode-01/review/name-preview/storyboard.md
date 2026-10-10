@@ -1,10 +1,10 @@
 # 星環のレガリア 第1話 補欠の空｜ネーム構成
 
-状態：この96パネルのネーム（線画・吹き出し・文字は無彩色）を390px幅で提示しユーザーが構成を採用してから本作画へ進む
+状態：この108パネルのネーム（線画・吹き出し・文字は無彩色）を390px幅で提示しユーザーが構成を採用してから本作画へ進む
 
 ## 目的と範囲
 
-- 現行の検証記録は390pxで25,697 CSS px、storyMoments 71、採用原画25枚。今回は出来事を水増しせず、因果・反応・会話の受け止めを分けて96スロットへ再構成する
+- 現行の検証記録は390pxで25,697 CSS px、storyMoments 71、採用原画25枚。今回は出来事を水増しせず、因果・反応・会話の受け止めを分けて108スロットへ再構成する
 - 390 CSS pxで本編高34,000〜60,000、純余白を除く内容区間高24,000以上、有効コマ80〜120を最終表示で測る
 - このファイルはネーム設計のみ。最初に白黒ネームを提示し、ユーザーが構成を採用してから本作画へ進む
 - 日本語の縦列はデータ中の改行を右列から左列へ配置する。ネームでは文字のない原画にHTMLで文字を置き、本作画では原画に文字と吹き出しを統合する。表示の正本は `plan.json` と `source-layout.json`。
@@ -20,6 +20,8 @@
 ## 保持する本編
 
 開始：木曜の放課後 川口の高校生の航は部活の補欠で初めてREGALIAへ接続する
+
+初回接続：歓迎、名の選択、指の動作、世界へ入る自己選択。接続の主観演出と到着後の美しい暮らしの風景を新たに加える。
 
 終了：ミルトで暮らしの魔法と魔導器と精霊と荷運びを体験し薬の配達を引き受けかけるが帰宅の約束を思い出しリゼが代わる 安全拠点から帰り翌日日暮れ前の再訪を約束する
 
@@ -42,8 +44,8 @@
 
 ## 有効コマの保守的な監査
 
-- 計画スロット：96（8シート×12）
-- 暫定的に有効と数える新しい行動・理解・反応：85
+- 計画スロット：108（9シート×12、p027・p098は同じ瞬間の専用縦長原画）
+- 暫定的に有効と数える新しい行動・理解・反応：97
 - 以下11枚は場面移行、音への受け止め、同じ動作の安全確認として別扱いにする。390px表示で新しい理解が増える場合は有効へ戻せる
 - 別扱い：p005、p006、p007、p016、p017、p025、p028、p031、p033、p041、p087
 - p026は純白や種だけではなく、星環の最初の曲線という新しい手掛かりなので有効。p031は空の後に二人の位置を固定するための空間確認。p095は異世界の物を日本へ持ち込まないことと最終思考を支える
@@ -67,6 +69,18 @@
 - p050で荷車と水路と箱の位置、p053で縄のほつれを見せる。p054の持ち上げ、p055の車輪の衝撃、p056の断裂がp057の落下を引き起こす。
 - p058は航のつかむ手・石に支える手・水面上の箱を大きく描く。剣や魔法は使わない。p059でリゼも支え、p060で安堵を置く。セナの後の薬の依頼は、助けられた経験から航を頼る流れになる。
 - 発話は絵の前後の余白にも吹き出しとして置き、誰の声かは直下の動作と表情で追えるようにする。線画のPNGは生成原本と同一。輪郭は今回の無彩色ネームのHTMLで確認する。
+
+
+## 初接続と世界の美しさの強化
+
+- 部屋の光片がほどけ、専用縦長の光流へ引き込まれる主観的な接続演出を追加。物理的な部屋の破壊・人体の越境・世界の生成を意味しない。
+- 歓迎と名前の選択、指を開いて握る応答、世界への出発を本人が選ぶ。長い利用規約やステータス一覧ではなく、触って分かる短い初回案内にする。
+- 光が草と風へ変わり、匂い・足場・羽音・瞳の手掛かりから星環の空へ進む。星環・竜・町の全景を光流や初回案内へ先出ししない。
+- 大きな全景の後は、手の近くの花と蝶、水のきらめきと魚、川を進む帆船や風車、航の素直な喜びを置く。大景観と近景を往復し、旅をしたい世界にする。
+- ネームは無彩色を維持。彩色と本作画は構成採用後。既存の薬箱の事件・母との約束・帰宅と再訪を保持。
+- 制作IDを安定させるため、追加はp097〜p108。読む順は `plan-notes.json` の `readingOrder` とHTMLが正本。p019の後へp097〜p104、p028の後へp105〜p108を挿入する。
+
+- Sheet 9｜p097-p108｜初接続と体験型の初回案内8カット、到着後の美しさ4カット。読順へ分けて挿入。
 
 ## パネル指示
 
@@ -326,6 +340,110 @@
 - Prop / state：Japan-to-connection threshold; interface belongs to KOH; no decorative gold frame.
 - Camera / shape：幅=narrow 高さ=shallow 枠=inset カメラ=first-person hand close-up 配置=right 焦点=finger and one start option
 
+### p097｜Sheet 9 slot 1｜03-first-connection
+
+- Rough art：The familiar room dissolves into luminous rectangular fragments in KOH’s subjective headset view. KOH remains safely seated in hoodie.
+- Role / purpose：接続した瞬間から部屋がほどけ 始まった実感を大きな光で見せる
+- Dialogue exact：航：「えっ……！」［speech／alarm］
+- Sound exact：キィィン［originating］
+- Sound reason：ヘッドセットの起動音が視界の光とともに立ち上がり、次の光流へ渡す
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：Bedroom projection; actual body safely seated; headset worn; no physical destruction.
+- Emotion：目的=接続した瞬間から部屋がほどけ 始まった実感を大きな光で見せる｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：Bedroom projection; actual body safely seated; headset worn; no physical destruction.
+- Camera / shape：{"width": "wide", "height": "medium", "shape": "borderless", "camera": "wide environmental view", "placement": "center", "reader_focus": "接続した瞬間から部屋がほどけ 始まった実感を大きな光で見せる"}
+
+### p098｜Sheet 9 slot 2｜03-first-connection
+
+- Rough art：One small KOH hoodie silhouette travels into an enormous spiraling corridor of broad white radiance and dark curved bands.
+- Role / purpose：接続の光へ吸い込まれる主観体験を専用縦長原画で大きく見せる
+- Dialogue exact：なし
+- Sound exact：シュアアア［originating］
+- Sound reason：接続演出の音が大きな光の流れと同じ方向へ続く。案内が始まる前に終える
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：Subjective connection transition only; one body; no fantasy land, no physical crossing.
+- Emotion：目的=接続の光へ吸い込まれる主観体験を専用縦長原画で大きく見せる｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：Subjective connection transition only; one body; no fantasy land, no physical crossing.
+- Camera / shape：{"width": "full", "height": "very tall", "shape": "borderless", "camera": "full atmospheric view", "placement": "center", "reader_focus": "接続の光へ吸い込まれる主観体験を専用縦長原画で大きく見せる"}
+
+### p099｜Sheet 9 slot 3｜03-onboarding
+
+- Rough art：KOH in initial game tunic arrives in a calm luminous space with a simple blank greeting and name-entry HUD.
+- Role / purpose：初回だけの案内を短い歓迎と名前の選択から始める
+- Dialogue exact：HUD：「REGALIAへ / ようこそ / 名前を決めよう」［display／interface］
+- Sound exact：なし
+- Sound reason：光流の後の静けさと、視線・表情・環境の理解を優先する
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：Initial avatar and simple HUD; scenery hidden by subjective welcome display; no guide character.
+- Emotion：目的=初回だけの案内を短い歓迎と名前の選択から始める｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：Initial avatar and simple HUD; scenery hidden by subjective welcome display; no guide character.
+- Camera / shape：{"width": "wide", "height": "medium", "shape": "borderless", "camera": "wide environmental view", "placement": "center", "reader_focus": "初回だけの案内を短い歓迎と名前の選択から始める"}
+
+### p100｜Sheet 9 slot 4｜03-onboarding
+
+- Rough art：KOH’s curious face opens into a shy enthusiastic smile as he says his chosen game name.
+- Role / purpose：自分で名を選んで期待を行動に変える
+- Dialogue exact：航：「……コウ！」［speech／bright］
+- Sound exact：なし
+- Sound reason：光流の後の静けさと、視線・表情・環境の理解を優先する
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：Same welcome interface; chosen nickname Koh; black hair and initial tunic.
+- Emotion：目的=自分で名を選んで期待を行動に変える｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：Same welcome interface; chosen nickname Koh; black hair and initial tunic.
+- Camera / shape：{"width": "medium", "height": "medium", "shape": "borderless", "camera": "hands or face close-up", "placement": "center", "reader_focus": "自分で名を選んで期待を行動に変える"}
+
+### p101｜Sheet 9 slot 5｜03-onboarding
+
+- Rough art：First-person open hand aligns with a simple hand-outline calibration diagram, fingertip rings respond.
+- Role / purpose：説明を読むより指を動かして身体が応える楽しさを見せる
+- Dialogue exact：HUD：「手を開いて / 動かしてみよう」［display／interface］
+- Sound exact：なし
+- Sound reason：光流の後の静けさと、視線・表情・環境の理解を優先する
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：One real hand and one abstract outline; no magical attack or extra anatomical hand.
+- Emotion：目的=説明を読むより指を動かして身体が応える楽しさを見せる｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：One real hand and one abstract outline; no magical attack or extra anatomical hand.
+- Camera / shape：{"width": "medium", "height": "medium", "shape": "borderless", "camera": "hands or face close-up", "placement": "center", "reader_focus": "説明を読むより指を動かして身体が応える楽しさを見せる"}
+
+### p102｜Sheet 9 slot 6｜03-onboarding
+
+- Rough art：KOH closes his fist and delights as it immediately responds, fingers tracked by small light indicators.
+- Role / purpose：操作の結果と本人の驚きを同じ動作の受け止めとして返す
+- Dialogue exact：航：「すごっ！ / ちゃんと動く！」［speech／bright］
+- Sound exact：ピッ［originating］
+- Sound reason：手の応答確認を一度だけ短く返す
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：Same calibration; ordinary first-body movement; no power upgrade.
+- Emotion：目的=操作の結果と本人の驚きを同じ動作の受け止めとして返す｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：Same calibration; ordinary first-body movement; no power upgrade.
+- Camera / shape：{"width": "medium", "height": "medium", "shape": "borderless", "camera": "hands or face close-up", "placement": "center", "reader_focus": "操作の結果と本人の驚きを同じ動作の受け止めとして返す"}
+
+### p103｜Sheet 9 slot 7｜03-onboarding
+
+- Rough art：KOH reaches confidently to tap the final start tile, luminous HUD opening around the fingertip.
+- Role / purpose：準備が終わったことと世界へ入る本人の選択をつなぐ
+- Dialogue exact：HUD：「準備完了 / エルセリアへ」［display／interface］
+- Sound exact：なし
+- Sound reason：光流の後の静けさと、視線・表情・環境の理解を優先する
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：Same avatar; sword sheathed at left hip; no shield; active choice, not forced transport.
+- Emotion：目的=準備が終わったことと世界へ入る本人の選択をつなぐ｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：Same avatar; sword sheathed at left hip; no shield; active choice, not forced transport.
+- Camera / shape：{"width": "wide", "height": "medium", "shape": "borderless", "camera": "wide environmental view", "placement": "center", "reader_focus": "準備が終わったことと世界へ入る本人の選択をつなぐ"}
+
+### p104｜Sheet 9 slot 8｜03-world-entry
+
+- Rough art：Light parts downward and threads turn into grass blades below KOH’s entering silhouette.
+- Role / purpose：光の流れを草と風へ受け渡し 大きな世界はまだ伏せる
+- Dialogue exact：航：「行くぞ！」［speech／rally］
+- Sound exact：サァ…［originating］
+- Sound reason：接続音が消え、最初の草と風の環境音へ切り替わる
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：Transition only; no sky/ring/dragon/town reveal before p027; no physical portal in bedroom.
+- Emotion：目的=光の流れを草と風へ受け渡し 大きな世界はまだ伏せる｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：Transition only; no sky/ring/dragon/town reveal before p027; no physical portal in bedroom.
+- Camera / shape：{"width": "full", "height": "medium", "shape": "borderless", "camera": "full atmospheric view", "placement": "center", "reader_focus": "光の流れを草と風へ受け渡し 大きな世界はまだ伏せる"}
+
 ### p020｜Sheet 2 slot 8｜04-body
 
 - Rough art：KOH’s right hand presses into green grass as the first sensory voice precedes the body reveal.
@@ -443,6 +561,58 @@
 - Emotion：conversational intent=無言の画面で、星環と竜の広さを一度受け止める｜hidden feeling=言葉にできない圧倒と憧れ｜response=p029で「友人の到着を足元と経路で説明する」へ受け渡す
 - Prop / state：Same hill and revealed sky; sword sheathed; no combat or next event yet.
 - Camera / shape：幅=medium 高さ=medium 枠=borderless カメラ=rear medium 配置=left 焦点=still body against immense sky
+
+### p105｜Sheet 9 slot 9｜05-world-beauty
+
+- Rough art：KOH on the flowering hill reaches toward a butterfly, wind tousling his hair and open palm.
+- Role / purpose：美しい世界を遠景だけで終わらせず近くの花と風で体験する
+- Dialogue exact：なし
+- Sound exact：そよ…［originating］
+- Sound reason：花と髪を動かす柔らかい風。光の接続音とは別の環境音
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：After first complete sky reveal; same hill; clean clothes; sword sheathed; hand empty.
+- Emotion：目的=美しい世界を遠景だけで終わらせず近くの花と風で体験する｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：After first complete sky reveal; same hill; clean clothes; sword sheathed; hand empty.
+- Camera / shape：{"width": "wide", "height": "medium", "shape": "borderless", "camera": "wide environmental view", "placement": "center", "reader_focus": "美しい世界を遠景だけで終わらせず近くの花と風で体験する"}
+
+### p106｜Sheet 9 slot 10｜05-world-beauty
+
+- Rough art：Downward POV along the same hill shows crystal-clear rivulet, reflected clouds, tiny leaping fish and flowers.
+- Role / purpose：水の光と小さな生き物から世界の生きた美しさを見せる
+- Dialogue exact：なし
+- Sound exact：パシャ［originating］
+- Sound reason：小魚が水面へ戻る小さな一回の音。水路の危機を示さない
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：POV nearby rivulet from hill; no jump to another location; no HUD or mystery.
+- Emotion：目的=水の光と小さな生き物から世界の生きた美しさを見せる｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：POV nearby rivulet from hill; no jump to another location; no HUD or mystery.
+- Camera / shape：{"width": "medium", "height": "medium", "shape": "borderless", "camera": "wide environmental view", "placement": "center", "reader_focus": "水の光と小さな生き物から世界の生きた美しさを見せる"}
+
+### p107｜Sheet 9 slot 11｜05-world-beauty
+
+- Rough art：Far down the valley, turning windmills, a river sailboat and cart on stone bridge make a lived-in path to Milt.
+- Role / purpose：大きな景色の中に移動と暮らしを置き歩いてみたい先を作る
+- Dialogue exact：なし
+- Sound exact：なし
+- Sound reason：光流の後の静けさと、視線・表情・環境の理解を優先する
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：View from same hill toward Milt; tiny boat and cart are distant scenery, not new named cast.
+- Emotion：目的=大きな景色の中に移動と暮らしを置き歩いてみたい先を作る｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：View from same hill toward Milt; tiny boat and cart are distant scenery, not new named cast.
+- Camera / shape：{"width": "wide", "height": "medium", "shape": "borderless", "camera": "full atmospheric view", "placement": "center", "reader_focus": "大きな景色の中に移動と暮らしを置き歩いてみたい先を作る"}
+
+### p108｜Sheet 9 slot 12｜05-world-beauty
+
+- Rough art：Close KOH face shines with wide eyes and unguarded delight after seeing the valley, wind lifting his cowlick.
+- Role / purpose：見た美しさを主人公の素直なワクワクで受け止める
+- Dialogue exact：航：「すっげぇ……！」［speech／bright］
+- Sound exact：なし
+- Sound reason：光流の後の静けさと、視線・表情・環境の理解を優先する
+- Whitespace：名前・手・出発の短い応答は近く置き、光流の後・世界の全景の前・美しさの後に余韻を置く。次の景色は前の原画へ入れない。
+- Connection：Same hill, initial tunic, still before Akari arrives; no combat or secret-world realization.
+- Emotion：目的=見た美しさを主人公の素直なワクワクで受け止める｜初めての手応えと未知の世界への期待を目・口・手の動きで出す。世界の真相は理解しない。
+- Prop / state：Same hill, initial tunic, still before Akari arrives; no combat or secret-world realization.
+- Camera / shape：{"width": "medium", "height": "medium", "shape": "borderless", "camera": "hands or face close-up", "placement": "center", "reader_focus": "見た美しさを主人公の素直なワクワクで受け止める"}
 
 ### p029｜Sheet 3 slot 5｜05-meeting
 
