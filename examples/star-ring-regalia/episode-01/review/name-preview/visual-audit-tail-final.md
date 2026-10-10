@@ -1,3 +1,5 @@
+> この記録は今回の吹き出し・薬箱事件の追加より前の確認。最新の変更箇所と寸法は `visual-audit-final.md` と `validation.json` を参照。
+
 # 第1話ネーム最終後半・390px視覚監査
 
 2026-10-10。`review/name-preview/review/window-390-49.jpg` から `window-390-66.jpg` までを、49から66の番号順に、390×844pxのネイティブ幅で確認した。確認中は画像とHTMLを変更していない。

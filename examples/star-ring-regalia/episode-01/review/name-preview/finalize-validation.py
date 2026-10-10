@@ -17,11 +17,11 @@ panels = read(ROOT / 'plan-notes.json')['panels']
 plan = read(ROOT / 'plan.json')
 ids = [p['id'] for p in panels]
 excluded = ['p005', 'p006', 'p007', 'p016', 'p017', 'p025', 'p028',
-            'p031', 'p033', 'p041', 'p053', 'p087']
+            'p031', 'p033', 'p041', 'p087']
 effective = [i for i in ids if i not in excluded]
 assert ids == [f'p{i:03}' for i in range(1, 97)]
 assert [b['id'] for b in plan['beats'] if b['type'] == 'panel'] == ids
-assert len(effective) == 84
+assert len(effective) == 85
 assets = []
 for image in sorted((ROOT / 'rough').glob('*.png')):
     meta_path = image.with_suffix('.generation.json')
@@ -52,7 +52,7 @@ for width in [390, 360]:
     measurements.append(dict(widthCssPx=width, heightCssPx=layout['viewport']['height'],
         dpr=layout['viewport']['dpr'], bodyHeightCssPx=layout['bodyHeightCssPx'],
         pureGapHeightCssPx=layout['pureGapHeightCssPx'], contentHeightCssPx=layout['contentHeightCssPx'],
-        displayCuts=96, effectivePanels=84, screenshotCount=len(windows),
+        displayCuts=96, effectivePanels=len(effective), screenshotCount=len(windows),
         copyOverflow=0, horizontalCopyOverflow=0, imageFailures=0,
         dialogueFontSize=layout['fontSize'],
         source=f'review/layout-{width}.json', windows=f'review/windows-{width}.json',
@@ -70,9 +70,9 @@ write('validation.json', dict(date='2026-10-10', requestedEpisodes=[1, 2, 3],
     skill=dict(path=str(SKILL / 'SKILL.md'), sha256=digest(SKILL / 'SKILL.md')),
     measurements=measurements, effectivePanelIds=effective, excludedPanelIds=excluded,
     volumeVerdict='pass', storyVerdict='pass', paddingVerdict='pass',
-    effectiveMethod='New action, understanding or reaction; exclude twelve transition/support cuts and all voice, sound and blank beats',
+    effectiveMethod='New action, understanding or reaction; exclude eleven transition/support cuts and all voice, sound and blank beats. p053 now establishes the frayed rope that causes the incident.',
     storyEvidence=['Reserve disappointment and own purchase precede voluntary connection',
-        'Cart failure, repositioning, success and listener response form an outcome',
+        'Freeing the cart jolts its cargo; a visibly frayed rope snaps; Koh catches a falling medicine chest and Lize helps haul it to safety; relief leads into names and the later medicine request',
         'Water, device and willing spirit are learned through visible work and practice',
         'One medicine parcel: Sena at p079-p081; Koh at p082-p084; handoff at p085; Lize afterward',
         '20:50 triggers an honest handoff, safe logout and Japan 21:00 return'],
@@ -83,5 +83,5 @@ write('validation.json', dict(date='2026-10-10', requestedEpisodes=[1, 2, 3],
     files=dict(html='index.html', storyboard='storyboard.md', visualAudit='visual-audit-final.md',
         generation='generation.json'),
     htmlSha256=digest(ROOT / 'index.html')))
-print(json.dumps(dict(state='ready for review', effectivePanels=84,
+print(json.dumps(dict(state='ready for review', effectivePanels=len(effective),
     measurements=measurements, sourceCopiesVerified=len(assets)), ensure_ascii=False))

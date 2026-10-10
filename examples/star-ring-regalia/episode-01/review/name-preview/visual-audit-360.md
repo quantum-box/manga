@@ -1,3 +1,5 @@
+> この記録は今回の吹き出し・薬箱事件の追加より前の確認。最新の変更箇所と寸法は `visual-audit-final.md` と `validation.json` を参照。
+
 # 360pxネーム全長目視監査
 
 - 対象：`review/window-360-01.jpg`〜`window-360-60.jpg`を番号順に確認。ビューポートは360×800 CSS px。

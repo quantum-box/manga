@@ -19,10 +19,12 @@ const {chromium} = require('playwright');
         await document.fonts.ready;
         await Promise.all([...document.images].map(image => image.decode()));
       });
-      const top = await page.locator('[data-beat-id="p057-voice-0"]').evaluate(element =>
+      const top = await page.locator('[data-beat-id="p053"]').evaluate(element =>
         element.getBoundingClientRect().top + scrollY - 30);
+      const end = await page.locator('[data-beat-id="p062"]').evaluate(element =>
+        element.getBoundingClientRect().bottom + scrollY);
       const captures = [];
-      for (let index = 0; index < 2; index++) {
+      for (let index = 0; top + index * 680 < end; index++) {
         await page.evaluate(y => scrollTo(0, y), top + index * 680);
         const file = `cart-360-${String(index + 1).padStart(2, '0')}.jpg`;
         await page.screenshot({path: path.join(review, file), type: 'jpeg', quality: 88, scale: 'css'});
@@ -30,6 +32,25 @@ const {chromium} = require('playwright');
       }
       fs.writeFileSync(path.join(review, 'cart-excerpt.json'), JSON.stringify({width: 360, height: 800,
         dpr: 1, overlapCssPx: 120, source: 'index.html', captures}, null, 2));
+      const detailCaptures = [];
+      for (const id of ['p004-thought-0', 'p010', 'p022', 'p029', 'p030-thought-0', 'p039',
+        'p045', 'p054-voice-0', 'p057-voice-0', 'p058-voice-0', 'p059-voice-0',
+        'p060-voice-0', 'p062-voice-0', 'p066', 'p071', 'p076-thought-0',
+        'p082-voice-0', 'p084-voice-0', 'return-promise', 'p091']) {
+        const y = await page.locator(`[data-beat-id="${id}"]`).evaluate(element =>
+          element.getBoundingClientRect().top + scrollY - 35);
+        await page.evaluate(y => scrollTo(0, y), y);
+        const file = `feedback-${id}-360.jpg`;
+        await page.screenshot({path: path.join(review, file), type: 'jpeg', quality: 90, scale: 'css'});
+        detailCaptures.push({id, file: `review/${file}`, scrollY: await page.evaluate(() => scrollY)});
+      }
+      const textOverflow = await page.evaluate(() => [...document.querySelectorAll('.dialogue-text,.voice-copy')].flatMap(text => {
+        const a=text.getBoundingClientRect(), b=text.parentElement.getBoundingClientRect();
+        return a.left < b.left || a.right > b.right || a.top < b.top || a.bottom > b.bottom
+          ? [{id:text.closest('[data-beat-id]').dataset.beatId, text:text.textContent}] : [];
+      }));
+      fs.writeFileSync(path.join(review, 'feedback-checks.json'), JSON.stringify({width:360,height:800,
+        source:'index.html',detailCaptures,textOverflow}, null, 2));
       console.log(JSON.stringify({cartExcerpt: captures}));
       await page.close();
       return;

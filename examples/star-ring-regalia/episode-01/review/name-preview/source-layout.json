@@ -1204,8 +1204,8 @@
       "align": "center",
       "frame": "none"
     },
-    "propState": "Same muddy road; LIZE at front wheel; SENA at rear; KOH hands empty; sword sheathed.",
-    "newInformation": "誰が困っていてどこに立つかを一枚で固定する"
+    "propState": "Cart trapped on road; canal on outer side; closed chest secured by old rope; no one in water.",
+    "newInformation": "荷車・三人・薬箱・水路の位置を先に見せる"
   },
   {
     "id": "p051",
@@ -1251,7 +1251,7 @@
       "widthPercent": 90,
       "align": "left",
       "frame": "none",
-      "composition": "cart-second-attempt",
+      "composition": "cart-warning",
       "offsetX": 0,
       "offsetY": 0
     },
@@ -1275,15 +1275,15 @@
       758
     ],
     "placement": {
-      "widthPercent": 82,
+      "widthPercent": 58,
       "align": "center",
       "frame": "none",
-      "composition": "cart-second-attempt",
-      "offsetX": 18,
+      "composition": "cart-warning",
+      "offsetX": 42,
       "offsetY": 430
     },
-    "propState": "Same rut; wheel muddy; three people contact cart at distinct points; clothing still mostly clean.",
-    "newInformation": "力の方向と身体の位置を結果へ接続する"
+    "propState": "Same closed medicine chest still on cart bed; frayed rope taut but not yet broken.",
+    "newInformation": "縄のほつれを先に見せ 直後の事故の原因を作る"
   },
   {
     "id": "p054",
@@ -1302,15 +1302,12 @@
       758
     ],
     "placement": {
-      "widthPercent": 100,
+      "widthPercent": 88,
       "align": "right",
-      "frame": "none",
-      "composition": "cart-second-attempt",
-      "offsetX": 0,
-      "offsetY": 795
+      "frame": "none"
     },
-    "propState": "Same cart; wheel remains trapped; KOH sleeve and LIZE forearm muddy; no injury; SENA still supporting.",
-    "newInformation": "一度で成功させず失敗を身体の結果として見せる"
+    "propState": "Wheel lifts free; hands on wheel; KOH sword sheathed; three people remain on road.",
+    "newInformation": "合図に合わせた力で荷車を動かす"
   },
   {
     "id": "p055",
@@ -1332,12 +1329,12 @@
       "widthPercent": 62,
       "align": "left",
       "frame": "none",
-      "composition": "cart-second-attempt",
+      "composition": "cart-jolt",
       "offsetX": 0,
-      "offsetY": 1230
+      "offsetY": 0
     },
-    "propState": "Same cart; muddy hands; wheel still in rut; positions change but no object is added.",
-    "newInformation": "失敗から修正へ移る判断を無言で読ませる"
+    "propState": "Wheel out of rut; first jolt; chest still on cargo bed; rope strains.",
+    "newInformation": "車輪の衝撃から薬箱の危険へ因果をつなぐ"
   },
   {
     "id": "p056",
@@ -1356,15 +1353,15 @@
       1141
     ],
     "placement": {
-      "widthPercent": 72,
+      "widthPercent": 62,
       "align": "center",
       "frame": "none",
-      "composition": "cart-second-attempt",
-      "offsetX": 28,
-      "offsetY": 1530
+      "composition": "cart-jolt",
+      "offsetX": 38,
+      "offsetY": 285
     },
-    "propState": "Same cart; KOH/LIZE/SENA aligned; wheel remains trapped; mud states continuous.",
-    "newInformation": "二度目の力がどこから来るかを先に理解させる"
+    "propState": "Rope now broken; same closed chest begins to tilt toward canal side.",
+    "newInformation": "切れた縄を結果として見せ 次の落下を予告する"
   },
   {
     "id": "p057",
@@ -1387,8 +1384,8 @@
       "align": "right",
       "frame": "none"
     },
-    "propState": "Same cart; three bodies committed; wheel beginning to rise; no magic or weapon.",
-    "newInformation": "合図を動作開始のきっかけにする"
+    "propState": "Chest sliding over canal edge; KOH reaches toward handle; SENA keeps cart on road; LIZE reacts.",
+    "newInformation": "リゼの叫びと落ちる薬箱で航の反射的な行動を起こす"
   },
   {
     "id": "p058",
@@ -1407,12 +1404,12 @@
       1526
     ],
     "placement": {
-      "widthPercent": 88,
-      "align": "left",
+      "widthPercent": 100,
+      "align": "center",
       "frame": "none"
     },
-    "propState": "Same cart; wheel now above rut; mud on KOH/LIZE; SENA still at rear.",
-    "newInformation": "成功の物理的な結果を接触点と車輪で見せる"
+    "propState": "One hand grips chest handle; other palm on stone; chest hangs above water without touching; knees and boots on road; no injury; sword sheathed.",
+    "newInformation": "航がためらわず受け止める一瞬を大きく見せる"
   },
   {
     "id": "p059",
@@ -1435,8 +1432,8 @@
       "align": "center",
       "frame": "none"
     },
-    "propState": "Same road; cart free; KOH and LIZE hands off wheel; SENA steadies rear; muddy forearms.",
-    "newInformation": "成功後の安全確認を結果として残す"
+    "propState": "Closed chest returning onto road; KOH holds handle, LIZE supports sides; SENA at cart; contents kept dry.",
+    "newInformation": "一人の力で完結させずリゼの助けで薬箱を戻す"
   },
   {
     "id": "p060",
@@ -1455,12 +1452,12 @@
       1526
     ],
     "placement": {
-      "widthPercent": 92,
+      "widthPercent": 88,
       "align": "right",
       "frame": "none"
     },
-    "propState": "Same road; cart free; LIZE and KOH muddy; shield remains on LIZE’s back; no handoff yet.",
-    "newInformation": "助かった実感を名前より先に聞き手へ返す"
+    "propState": "All three safe; same closed chest on dry road; KOH and LIZE have muddy forearms; no handoff or injury yet.",
+    "newInformation": "緊迫から安堵へ切り替え 名前を呼ぶ関係の入口にする"
   },
   {
     "id": "p061",

@@ -1,6 +1,7 @@
 """Place generated source cells into the authored reading order without editing PNGs."""
 import importlib.util
 import json
+import re
 import struct
 from pathlib import Path
 
@@ -26,8 +27,8 @@ groups = {
     'school-selection': [(3, 0, 0, 96), (4, 50, 400, 50)],
     'family-work': [(8, 0, 0, 90), (9, 42, 390, 58)],
     'friend-greeting': [(29, 0, 0, 92), (30, 48, 400, 52)],
-    'cart-second-attempt': [(52, 0, 0, 90), (53, 18, 430, 82),
-        (54, 0, 795, 100), (55, 0, 1230, 62), (56, 28, 1530, 72)],
+    'cart-warning': [(52, 0, 0, 90), (53, 42, 430, 58)],
+    'cart-jolt': [(55, 0, 0, 62), (56, 38, 285, 62)],
     'first-magic': [(75, 0, 0, 90), (76, 45, 405, 55), (77, 0, 700, 86)],
     'medicine-handoff': [(85, 0, 0, 88), (86, 48, 430, 52), (87, 0, 730, 94)],
     'real-hands': [(94, 40, 0, 60), (95, 0, 325, 74), (96, 42, 695, 58)],
@@ -45,7 +46,8 @@ floating = {
 # reserve a balloon area, and their faces, spirit, hands and parcel carry meaning.
 before_voice = {
     3: 240, 13: 320, 14: 260,
-    52: 250, 57: 220, 63: 260, 70: 280, 72: 250, 73: 240,
+    52: 250, 54: 200, 57: 200, 58: 150, 59: 290, 60: 310, 62: 300,
+    63: 260, 70: 280, 72: 250, 73: 240,
     74: 280, 79: 300, 82: 240, 84: 300, 85: 320,
 }
 gaps = {
@@ -63,7 +65,7 @@ gaps = {
     40: (140, '灯里の訓練へ行く選択を受け 航が自分の道を選ぶ'),
     41: (180, '別れた道から 町へ向かう道の全景へつなぐ'),
     48: (100, '剣を収めて歩くところへ 人の声が先に届く'),
-    59: (160, '荷車が落ち着いたあと 助かった相手の息と名乗りを受ける'),
+    59: (210, '薬箱を安全な道へ戻したあと 息が落ち着くまで待って礼と名前を聞く'),
     64: (160, '町へ同行する足取りから 同じ橋の水へ目を落とす'),
     71: (170, '使える道具への理解から 精霊の意志がある暮らしへ移る'),
     74: (120, '待つ職人の姿から 航自身が形を試す場面へつなぐ'),
@@ -153,6 +155,15 @@ for p in panels:
     if number == 27:
         panel.update(image='rough/sky-discovery.png', imageSize=image_size(ROOT / 'rough/sky-discovery.png'),
             crop=None, widthPercent=100, align='center')
+    if number == 58:
+        panel.update(widthPercent=100, align='center')
+        panel['sounds'] = [dict(text='ガシッ', x=68, y=75)]
+    if number == 55:
+        panel['sounds'] = [dict(text='ガタン！', x=48, y=79)]
+    if number == 56:
+        panel['sounds'] = [dict(text='ブツッ', x=60, y=30)]
+    if number == 59:
+        panel['sounds'] = [dict(text='ズッ', x=24, y=82)]
     if number in placements:
         panel.update(placements[number])
     if number == 30:
@@ -164,7 +175,7 @@ for p in panels:
     if number == 77:
         panel['dialogue'] = []
     if number == 90:
-        voice('return-promise', '明日\n日暮れ前に来る', '航', 250,
+        voice('return-promise', '明日\n日暮れ前に来る！', '航', 250,
             '時計を確かめた航が来る時刻を自分で決め リゼの聞く表情を下へ残す')
         panel['dialogue'] = []
     beats.append(panel)
@@ -211,19 +222,84 @@ spec = importlib.util.spec_from_file_location('name_preview', SKILL / 'scripts/b
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 module.build_preview(ROOT / 'plan.json', ROOT / 'index.html', force=True)
-# Scope-specific styling only: expose speaker through semantics, spare balloon width for words.
+# Give the rough name expressive balloons without altering the generated PNGs.
+def tone_for(beat):
+    number = re.match(r'p(\d{3})', beat['id'])
+    source = panels[int(number[1]) - 1] if number else None
+    if beat['id'] in ('first-scent',):
+        return 'thought'
+    if beat['id'] == 'cart-call':
+        return 'normal'
+    if beat['id'] == 'safe-logout-ui':
+        return 'interface'
+    if beat['id'] == 'return-promise':
+        return 'bright'
+    if beat['id'] == 'mother-welcome':
+        return 'warm'
+    if source:
+        for d in source['dialogue']:
+            if d['kind'] != 'sound':
+                return d.get('tone', 'normal')
+    return 'normal'
+
 extra = '''<style>
-.dialogue-speaker {display:none}
-.voice-copy {color:#27333a}
-.balloon {background:#fff;box-shadow:none}
-[data-beat-id="p001"] .balloon,[data-beat-id="p011"] .balloon,
-[data-beat-id="p019"] .balloon,[data-beat-id="p034"] .balloon,
-[data-beat-id="p051"] .balloon,[data-beat-id="p083"] .balloon {border-radius:5px;border:1px solid #50616a}
-[data-beat-id="p001"] .balloon::after,[data-beat-id="p011"] .balloon::after,
-[data-beat-id="p019"] .balloon::after,[data-beat-id="p034"] .balloon::after,
-[data-beat-id="p051"] .balloon::after,[data-beat-id="p083"] .balloon::after {display:none}
+.dialogue-speaker,.floating-speaker {display:none}
+[data-balloon-tone] {--ink:#38414a;--paper:#fff;--edge:1.7px}
+.voice-copy {color:#202b35;position:relative;z-index:2;white-space:nowrap}
+.dialogue-text {position:relative;z-index:2;color:#202b35}
+.balloon {background:var(--paper);border:var(--edge) solid var(--ink);box-shadow:none}
+.spoken .balloon::after {background:var(--paper);border-color:var(--ink)}
+.voice[data-balloon-tone] .floating-copy {padding:17px 19px;background:var(--paper);
+  border:var(--edge) solid var(--ink);border-radius:48% / 34%;isolation:isolate}
+.voice[data-balloon-tone] .floating-copy::after {content:"";position:absolute;
+  width:13px;height:15px;bottom:-10px;left:30%;background:var(--paper);
+  border-right:var(--edge) solid var(--ink);border-bottom:var(--edge) solid var(--ink);
+  transform:rotate(35deg) skew(-10deg);z-index:-1}
+[data-balloon-tone="warm"],[data-balloon-tone="relief"] {--paper:#fff2df;--ink:#a0784c;--edge:1.4px}
+[data-balloon-tone="warm"] .balloon,[data-balloon-tone="relief"] .balloon,
+.voice[data-balloon-tone="warm"] .floating-copy,.voice[data-balloon-tone="relief"] .floating-copy
+  {border-radius:44% 53% 41% 48% / 40% 36% 45% 41%}
+[data-balloon-tone="bright"] {--paper:#fff7d7;--ink:#967329}
+[data-balloon-tone="curious"] {--paper:#edf6ff;--ink:#46748c}
+[data-balloon-tone="curious"] .balloon,.voice[data-balloon-tone="curious"] .floating-copy
+  {border-radius:25px 31px 26px 28px}
+[data-balloon-tone="thought"] {--paper:#f3effb;--ink:#746184;--edge:1.4px}
+[data-balloon-tone="thought"] .balloon,.voice[data-balloon-tone="thought"] .floating-copy
+  {border-style:dashed;border-radius:42% 39% 44% 40% / 39% 47% 37% 46%}
+[data-balloon-tone="thought"] .balloon::after,.voice[data-balloon-tone="thought"] .floating-copy::after
+  {content:"• •";width:auto;height:auto;bottom:-27px;left:20%;background:none;
+   border:none;color:var(--ink);font-size:18px;transform:rotate(25deg);z-index:0}
+[data-balloon-tone="alarm"],[data-balloon-tone="rally"],[data-balloon-tone="strain"]
+  {--paper:#fff0f0;--ink:#a83c49;--edge:2.5px}
+[data-balloon-tone="rally"] {--paper:#fff0dd;--ink:#a9662f}
+[data-balloon-tone="alarm"] .balloon,[data-balloon-tone="rally"] .balloon,[data-balloon-tone="strain"] .balloon,
+.voice[data-balloon-tone="alarm"] .floating-copy,.voice[data-balloon-tone="rally"] .floating-copy,
+.voice[data-balloon-tone="strain"] .floating-copy
+  {border:0;background:none;padding:26px 28px;border-radius:0;isolation:isolate}
+[data-balloon-tone="alarm"] .balloon::before,[data-balloon-tone="rally"] .balloon::before,[data-balloon-tone="strain"] .balloon::before,
+.voice[data-balloon-tone="alarm"] .floating-copy::before,.voice[data-balloon-tone="rally"] .floating-copy::before,
+.voice[data-balloon-tone="strain"] .floating-copy::before,
+[data-balloon-tone="alarm"] .balloon::after,[data-balloon-tone="rally"] .balloon::after,[data-balloon-tone="strain"] .balloon::after,
+.voice[data-balloon-tone="alarm"] .floating-copy::after,.voice[data-balloon-tone="rally"] .floating-copy::after,
+.voice[data-balloon-tone="strain"] .floating-copy::after
+  {content:"";position:absolute;inset:0;width:auto;height:auto;border:0;transform:none;
+   border-radius:0;z-index:-1;background:var(--ink);
+   clip-path:polygon(50% 0,58% 8%,69% 2%,72% 13%,85% 9%,84% 22%,97% 22%,91% 35%,100% 43%,93% 51%,100% 61%,88% 66%,93% 80%,80% 81%,82% 94%,67% 89%,61% 100%,50% 93%,38% 100%,32% 89%,18% 95%,19% 81%,6% 81%,12% 66%,0 61%,8% 50%,0 40%,10% 34%,3% 22%,17% 21%,15% 9%,29% 13%,33% 2%,42% 8%)}
+[data-balloon-tone="alarm"] .balloon::after,[data-balloon-tone="rally"] .balloon::after,[data-balloon-tone="strain"] .balloon::after,
+.voice[data-balloon-tone="alarm"] .floating-copy::after,.voice[data-balloon-tone="rally"] .floating-copy::after,
+.voice[data-balloon-tone="strain"] .floating-copy::after {inset:3px;background:var(--paper)}
+[data-balloon-tone="interface"] .balloon,.voice[data-balloon-tone="interface"] .floating-copy
+  {border-radius:6px;border:1px solid #6f828c;background:#f5f9fc}
+[data-balloon-tone="interface"] .balloon::after,.voice[data-balloon-tone="interface"] .floating-copy::after,
+[data-balloon-tone="narration"] .balloon::after,.voice[data-balloon-tone="narration"] .floating-copy::after {display:none}
+[data-balloon-tone="narration"] .balloon,.voice[data-balloon-tone="narration"] .floating-copy
+  {border:0;border-radius:0;background:white}
 .sfx {color:#222}
 </style>'''
 html = (ROOT / 'index.html').read_text()
+for beat in beats:
+    if beat['type'] in ('panel', 'voice'):
+        old = f'data-beat-id="{beat["id"]}"'
+        html = html.replace(old, old + f' data-balloon-tone="{tone_for(beat)}"')
 (ROOT / 'index.html').write_text(html.replace('</head>', extra + '</head>'))
 print(f'Wrote standalone preview with {len(panels)} source cuts and {len(beats)} reading elements')

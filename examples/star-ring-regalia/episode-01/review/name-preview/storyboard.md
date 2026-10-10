@@ -1,6 +1,6 @@
-# 星環のレガリア 第1話 補欠の空｜白黒ネーム構成
+# 星環のレガリア 第1話 補欠の空｜ネーム構成
 
-状態：この96パネルの白黒ネームを390px幅で提示しユーザーが構成を採用してから本作画へ進む
+状態：この96パネルのネーム（線画は白黒、吹き出しは淡色）を390px幅で提示しユーザーが構成を採用してから本作画へ進む
 
 ## 目的と範囲
 
@@ -12,7 +12,7 @@
 ## 改稿の判断
 
 - 航の能力・身体の操作・安心して使える理解を分ける。手、足、影、空、剣、荷車、魔法、精霊、帰宅の順で結果を受け止める
-- 初対面の名乗り、仕事の説明、聞き手の反応を別の瞬間に置く。荷車は一度失敗してから手の位置と足場を直し、二度目で成功する
+- 初対面の名乗り、仕事の説明、聞き手の反応を別の瞬間に置く。荷車を持ち上げた衝撃で古い縄が切れ、薬箱が水路へ滑る。航が受け止め、リゼと引き上げる。困りごとへの自発的な関与が、短い危機と感謝へつながる
 - 引きの場所、手元や目の接写、二人の反応、大きな空と町のパノラマを役割で使い分ける。ランダムな大小や均一な矩形列を避ける
 - 羽音は発生から継続へ、水音は橋から洗い場へ一つの音としてつなぐ。pure blank や種だけの待ちコマは有効コマに数えない
 - 表情を隠したセリフは絵の外の声へ移した。草の匂いを一度だけ先に置き、灯里への短い呼びかけは顔の左、名乗りは絵の下、魔法の練習の返答は同じ構成空間の下へ置く。荷車の合図と薬の相談では、文字の後に手・聞き手の反応・一つの薬包みを読ませる。
@@ -35,7 +35,7 @@
 連続状態：
 - 日本では紺の制服からティールのパーカーへ移る
 - エルセリア到着後は青灰のチュニックと鞘入りの直剣
-- 荷車の失敗で航とリゼの袖と前腕が泥になる
+- 荷車を持ち上げ、薬箱を引き上げる動作で航とリゼの袖と前腕が泥になる。箱は水面の直前で止まり薬を濡らさない
 - 橋の水と洗い場の水音は一つの連続音
 - 薬包みはセナから航へ航からリゼへ一つだけ渡る
 - 日本時間20:50から帰宅時刻21:00へつながる
@@ -43,9 +43,9 @@
 ## 有効コマの保守的な監査
 
 - 計画スロット：96（8シート×12）
-- 暫定的に有効と数える新しい行動・理解・反応：84
-- 以下12枚は場面移行、音への受け止め、同じ動作の安全確認として別扱いにする。390px表示で新しい理解が増える場合は有効へ戻せる
-- 別扱い：p005、p006、p007、p016、p017、p025、p028、p031、p033、p041、p053、p087
+- 暫定的に有効と数える新しい行動・理解・反応：85
+- 以下11枚は場面移行、音への受け止め、同じ動作の安全確認として別扱いにする。390px表示で新しい理解が増える場合は有効へ戻せる
+- 別扱い：p005、p006、p007、p016、p017、p025、p028、p031、p033、p041、p087
 - p026は純白や種だけではなく、星環の最初の曲線という新しい手掛かりなので有効。p031は空の後に二人の位置を固定するための空間確認。p095は異世界の物を日本へ持ち込まないことと最終思考を支える
 
 ## シート一覧
@@ -54,10 +54,19 @@
 - Sheet 2｜p013-p024｜家の約束から身体の確認へ｜帰宅時刻を背負って接続し身体を持つ
 - Sheet 3｜p025-p036｜羽音と星環から友人の到着へ｜姿より先に音を置き星環と灯里を受ける
 - Sheet 4｜p037-p048｜星環の名前から重い剣へ｜世界と町を場所に結び航の旅への願いを作る
-- Sheet 5｜p049-p060｜剣の重さから荷車の失敗へ｜剣を使わず人の困りごとへ向き失敗を修正する
-- Sheet 6｜p061-p072｜荷車の成功から水路へ｜三人の名乗りと町の暮らしの入口をつなぐ
+- Sheet 5｜p049-p060｜荷車の救出から薬箱の危機へ｜縄の予兆・車輪の衝撃・断裂・落下・救出・安堵
+- Sheet 6｜p061-p072｜薬箱の救出から水路へ｜三人の名乗りと町の暮らしの入口をつなぐ
 - Sheet 7｜p073-p084｜魔導器と精霊と練習から依頼へ｜道具と精霊と本人の未熟さを分ける
 - Sheet 8｜p085-p096｜薬の約束と21時の帰宅｜役に立ちたい気持ちを正直な帰還と再訪へ変える
+
+
+## 今回のフィードバックへの対応
+
+- 「！」は呼びかけ、発見、合図、切迫、明日の約束に使う。「？」は相手に尋ねる言葉に残す。沈黙や落ち込みへ一律に追加しない。
+- 普通の声＝楕円、落ち着いた問い＝丸い縦長、暖かな声と安堵＝柔らかく揺れる輪郭、叫び＝太いトゲ、心の声＝破線の雲形と点。淡い赤・橙・青・紫も補助に使い、輪郭でも識別する。UIには尾を付けない。
+- p050で荷車と水路と箱の位置、p053で縄のほつれを見せる。p054の持ち上げ、p055の車輪の衝撃、p056の断裂がp057の落下を引き起こす。
+- p058は航のつかむ手・石に支える手・水面上の箱を大きく描く。剣や魔法は使わない。p059でリゼも支え、p060で安堵を置く。セナの後の薬の依頼は、助けられた経験から航を頼る流れになる。
+- 発話は絵の前後の余白にも吹き出しとして置き、誰の声かは直下の動作と表情で追えるようにする。線画のPNGは生成原本と同一。色と輪郭は今回のネームのHTMLで確認する。
 
 ## パネル指示
 
@@ -65,7 +74,8 @@
 
 - Rough art：High-school desk in late-afternoon classroom; blank career-choice sheet fills the foreground while KOH stares down.
 - Role / purpose：進路の空白を主人公の現在の停滞として先に置く
-- Dialogue exact：ナレーション：「進路希望の欄は\n白いままだった」［narration］
+- Dialogue exact：ナレーション：「進路希望の欄は
+白いままだった」［narration／narration］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -78,7 +88,7 @@
 
 - Rough art：Shallow close-up of KOH’s fingers tightening around a bamboo shinai in the kendo hall; the steel sword does not exist yet.
 - Role / purpose：補欠の痛みを手の力でつなぐ
-- Dialogue exact：音：「ギュッ」［sound］
+- Dialogue exact：音：「ギュッ」［sound／sound］
 - Sound exact：ギュッ［originating］
 - Sound reason：The sound begins at the shinai grip and stops before the coach speaks.
 - Whitespace：sound-start｜音の発生源を読ませる。The sound begins at the shinai grip and stops before the coach speaks.
@@ -91,7 +101,8 @@
 
 - Rough art：Coach stands before five selected teammates with KOH at the far edge of the dojo line.
 - Role / purpose：選ばれた五人と選ばれなかった航の位置を一度で読ませる
-- Dialogue exact：先生：「次の大会は\nこの五人」［speech］
+- Dialogue exact：先生：「次の大会は
+この五人」［speech／normal］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -104,7 +115,8 @@
 
 - Rough art：Tight close-up of KOH lowering the shinai after hearing the selection; lips held tight and eyes avoid the team.
 - Role / purpose：結果を聞いた直後の受け止めを説明文で済ませない
-- Dialogue exact：航（心）：「また\n呼ばれなかった」［thought］
+- Dialogue exact：航（心）：「また
+呼ばれなかった」［thought／thought］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -169,7 +181,8 @@
 
 - Rough art：MIWA calls from the counter as KOH reaches for chopsticks; the boxes remain closed.
 - Role / purpose：母の依頼を聞く相手と作業の手元を同じ場所で結ぶ
-- Dialogue exact：美和：「航お箸も\n入れてね」［speech］
+- Dialogue exact：美和：「航お箸も
+入れてね」［speech／warm］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -182,7 +195,7 @@
 
 - Rough art：Close-up of KOH inserting chopsticks into one takeaway box, attentive and automatic.
 - Role / purpose：短い返事を行動の完了に結びつける
-- Dialogue exact：航：「うん」［speech］
+- Dialogue exact：航：「うん！」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -195,7 +208,7 @@
 
 - Rough art：Phone close-up on KOH’s work surface; one message notification from AKARI asks whether he will enter today.
 - Role / purpose：補欠の一日へ友人から具体的な入口が届く
-- Dialogue exact：HUD：「灯里：今日入れる？」［display］
+- Dialogue exact：HUD：「灯里：今日入れる？」［display／interface］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -208,7 +221,8 @@
 
 - Rough art：KOH sees the worn used headset in its plain cardboard box beside the counter; saved allowance is implied by a small folded receipt and his careful touch.
 - Role / purpose：今日なら何かできるかもしれないという小さな選択を物と目線で置く
-- Dialogue exact：航（心）：「ここなら\n何かできるかな」［thought］
+- Dialogue exact：航（心）：「ここなら
+何かできるかな」［thought／thought］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -221,7 +235,9 @@
 
 - Rough art：KOH picks the used headset from the back-room shelf while MIWA watches from the same counter.
 - Role / purpose：中古の道具を自分で選んだ事実を母の視界へ置く
-- Dialogue exact：美和：「それが\n灯里ちゃんの言ってた\nゲーム？」［speech］
+- Dialogue exact：美和：「それが
+灯里ちゃんの言ってた
+ゲーム？」［speech／curious］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -234,7 +250,8 @@
 
 - Rough art：KOH gives a shy ordinary smile and explains that the used headset fit his saved allowance.
 - Role / purpose：航の願いを大げさな宣言にせず身近な買い物として受け止める
-- Dialogue exact：航：「中古なら\n小遣いで足りた」［speech］
+- Dialogue exact：航：「中古なら
+小遣いで足りた」［speech／normal］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -247,7 +264,8 @@
 
 - Rough art：MIWA looks from the headset to KOH and asks him to return by 21:00 without anger.
 - Role / purpose：家の約束を接続前の具体的な制約として残す
-- Dialogue exact：美和：「九時には\n戻ってね」［speech］
+- Dialogue exact：美和：「九時には
+戻ってね」［speech／warm］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -299,7 +317,7 @@
 
 - Rough art：Close fingertip selects the blank start option on a simple translucent REGALIA interface.
 - Role / purpose：接続開始を表示の説明ではなく本人の操作として見せる
-- Dialogue exact：HUD：「REGALIA　接続開始」［display］
+- Dialogue exact：HUD：「REGALIA　接続開始」［display／interface］
 - Sound exact：ピッ［originating］
 - Sound reason：The short confirmation belongs to the start control and ends before the grass contact.
 - Whitespace：sound-start｜音の発生源を読ませる。The short confirmation belongs to the start control and ends before the grass contact.
@@ -312,7 +330,7 @@
 
 - Rough art：KOH’s right hand presses into green grass as the first sensory voice precedes the body reveal.
 - Role / purpose：草の匂いから仮想身体の接触へ移る
-- Dialogue exact：航（心）：「……草の匂い」［thought］
+- Dialogue exact：航（心）：「……草の匂い」［thought／thought］
 - Sound exact：サワ…［originating］
 - Sound reason：The rustle begins at KOH’s hand and grass; the sensory voice stays ahead of the full body reveal.
 - Whitespace：sound-start｜音の発生源を読ませる。The rustle begins at KOH’s hand and grass; the sensory voice stays ahead of the full body reveal.
@@ -325,7 +343,7 @@
 
 - Rough art：A single brown leather boot plants into soft soil and KOH shifts his weight cautiously.
 - Role / purpose：足場と重心が手の確認から連続するように置く
-- Dialogue exact：音：「ザッ」［sound］
+- Dialogue exact：音：「ザッ」［sound／sound］
 - Sound exact：ザッ［originating］
 - Sound reason：The boot scrape marks weight transfer without becoming an action scene.
 - Whitespace：sound-start｜音の発生源を読ませる。The boot scrape marks weight transfer without becoming an action scene.
@@ -338,7 +356,8 @@
 
 - Rough art：KOH rises from a seated crouch and tests his balance with one hand open.
 - Role / purpose：身体を持つ実感を姿勢と小さな喜びで受け止める
-- Dialogue exact：航：「こんなふうに\n歩けるんだ」［speech］
+- Dialogue exact：航：「こんなふうに
+歩けるんだ！」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -364,7 +383,7 @@
 
 - Rough art：A broad moving shadow crosses the grass; KOH’s eyes look up while the dragon and ring remain outside the frame.
 - Role / purpose：姿より先に羽音と影が届く
-- Dialogue exact：音：「バサァ…」［sound］
+- Dialogue exact：音：「バサァ…」［sound／sound］
 - Sound exact：バサァ…［originating］
 - Sound reason：The wing sound begins beside KOH’s eyes and establishes an offscreen source.
 - Whitespace：sound-start｜音の発生源を読ませる。The wing sound begins beside KOH’s eyes and establishes an offscreen source.
@@ -378,7 +397,7 @@
 - Rough art：KOH lifts his chin toward the offscreen wing sound; hair and collar move in the displaced air.
 - Role / purpose：音を聞いた反応から視線を空へ導く
 - Dialogue exact：なし
-- Sound exact：バサァ…［continuation from p024］
+- Sound exact：バサァ…［continuation］
 - Sound reason：Continue the wing sound from the shadow reaction through the chin-lift; do not start a second inscription.
 - Whitespace：sound-continuation｜前の音を再開せず余白へ通す。Continue the wing sound from the shadow reaction through the chin-lift; do not start a second inscription.
 - Connection：same-scene｜p024から人物の位置と小道具の状態を継続
@@ -429,7 +448,8 @@
 
 - Rough art：AKARI walks up the visible physical path toward KOH, orange clip and wooden bow clear.
 - Role / purpose：友人の到着を足元と経路で説明する
-- Dialogue exact：灯里：「コウ\n着いたね」［speech］
+- Dialogue exact：灯里：「コウ！
+着いたね」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -442,7 +462,7 @@
 
 - Rough art：KOH turns from the sky toward the familiar voice; recognition comes before the explanatory conversation.
 - Role / purpose：知らない世界で最初に友人を認める安堵を顔で見せる
-- Dialogue exact：航：「灯里？」［speech］
+- Dialogue exact：航：「灯里？」［speech／curious］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -468,7 +488,8 @@
 
 - Rough art：AKARI points gently to the already revealed ring while KOH follows her finger.
 - Role / purpose：名前を聞く前に対象を一緒に見る関係を作る
-- Dialogue exact：灯里：「あれが\n星環だよ」［speech］
+- Dialogue exact：灯里：「あれが
+星環だよ！」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -494,7 +515,7 @@
 
 - Rough art：Over KOH’s shoulder, a small translucent blue-gray beginner map opens above his wrist with the nearby town pin.
 - Role / purpose：世界設定を今いる場所と手元の操作へ結ぶ
-- Dialogue exact：HUD：「エルセリア　ミルト」［display］
+- Dialogue exact：HUD：「エルセリア　ミルト」［display／interface］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -507,7 +528,8 @@
 
 - Rough art：AKARI faces KOH beside the map and indicates the town below the hill.
 - Role / purpose：地名を地形と相手の指先へ結びつける
-- Dialogue exact：灯里：「ここは\n辺境の町ミルト」［speech］
+- Dialogue exact：灯里：「ここは
+辺境の町ミルト」［speech／normal］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -520,7 +542,8 @@
 
 - Rough art：AKARI keeps the map open and names the world while KOH looks between her and the distant valley.
 - Role / purpose：町名と世界名を別の受け取りとして分ける
-- Dialogue exact：灯里：「世界の名前が\nエルセリア」［speech］
+- Dialogue exact：灯里：「世界の名前が
+エルセリア」［speech／normal］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -533,7 +556,8 @@
 
 - Rough art：KOH turns his body toward the physical road below and asks whether he can walk beyond town.
 - Role / purpose：説明を移動への本人の願いへ変える
-- Dialogue exact：航：「街の外も\n歩いて行けるの？」［speech］
+- Dialogue exact：航：「街の外も
+歩いて行けるの？」［speech／curious］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -546,7 +570,8 @@
 
 - Rough art：AKARI lowers her own wrist menu and points down toward a distant riverboat and the road into town.
 - Role / purpose：交通の情報を見える道具と風景に限定する
-- Dialogue exact：灯里：「船や魔導列車も\nあるんだって」［speech］
+- Dialogue exact：灯里：「船や魔導列車も
+あるんだって！」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -559,7 +584,8 @@
 
 - Rough art：KOH traces the winding road with his eyes toward the distant mountains and floating islands.
 - Role / purpose：先の旅への憧れを視線の延長で見せる
-- Dialogue exact：航：「あの空まで\n行けるかな」［speech］
+- Dialogue exact：航：「あの空まで
+行けるかな？」［speech／curious］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -572,7 +598,8 @@
 
 - Rough art：AKARI takes the training path toward a visible pennant and waves back while KOH stays at the fork.
 - Role / purpose：友人の目的と航の別行動を同時に理解させる
-- Dialogue exact：灯里：「私は弓の訓練\n先に行ってるね」［speech］
+- Dialogue exact：灯里：「私は弓の訓練！
+先に行ってるね」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -624,7 +651,7 @@
 
 - Rough art：He draws the steel blade only partway; a restrained highlight runs along the metal.
 - Role / purpose：剣を使う決意ではなく重さを確かめる動作に限定する
-- Dialogue exact：音：「スラ…」［sound］
+- Dialogue exact：音：「スラ…」［sound／sound］
 - Sound exact：スラ…［originating］
 - Sound reason：The restrained draw sound belongs to the scabbard and ends before the full blade is shown.
 - Whitespace：sound-start｜音の発生源を読ませる。The restrained draw sound belongs to the scabbard and ends before the full blade is shown.
@@ -637,7 +664,7 @@
 
 - Rough art：KOH holds the fully drawn steel sword low with both hands as if it were a shinai; the tip points at empty ground.
 - Role / purpose：経験のある剣道と異世界の鉄の重さを同じ姿勢で比較する
-- Dialogue exact：航：「……重い」［speech］
+- Dialogue exact：航：「……重っ！」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -663,7 +690,8 @@
 
 - Rough art：The riders pass toward the town gate while KOH resheathes and watches their practiced posture.
 - Role / purpose：戦闘へ進まず剣を戻す選択を見せる
-- Dialogue exact：航（心）：「俺でも\n使えるのかな」［thought］
+- Dialogue exact：航（心）：「俺でも
+使えるのかな」［thought／thought］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -689,38 +717,40 @@
 
 - Rough art：KOH turns toward an offscreen voice before the cart is visible.
 - Role / purpose：声の発生源を探す反応を先に置く
-- Dialogue exact：リゼ（画面外）：「そこ少し\n空けてもらえる？」［speech］
+- Dialogue exact：リゼ（画面外）：「そこ少し
+空けてもらえる？」［speech／curious］
 - Sound exact：なし
-- Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
-- Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
-- Connection：same-scene｜p048から人物の位置と小道具の状態を継続
-- Emotion：conversational intent=リゼ（画面外）が、目の前の困りごとを依頼表示なしで認める｜hidden feeling=役に立てる場面を逃したくない気持ち｜response=p050で「誰が困っていてどこに立つかを一枚で固定する」へ受け渡す
+- Sound reason：発話・呼吸・手の動きを優先し 新しい効果音は置かない
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。声の発生源を探す反応を先に置く
+- Emotion：発話の意図=そこ少し 空けてもらえる？｜反応=声の発生源を探す反応を先に置く
 - Prop / state：Same road; KOH stops at edge; offscreen cart remains outside first view.
 - Camera / shape：幅=narrow 高さ=shallow 枠=inset カメラ=face reaction 配置=right 焦点=ear, eyes, open road edge
 
 ### p050｜Sheet 5 slot 2｜06-cart
 
-- Rough art：Wide reveal of LIZE bracing one cart wheel while SENA supports the rear; KOH stands safely beside the road.
-- Role / purpose：誰が困っていてどこに立つかを一枚で固定する
-- Dialogue exact：リゼ：「車輪が\nはまっちゃって」［speech］
+- Rough art：Wide cart and three people on muddy road beside a shallow stone-edged canal. Closed medicine chest tied by old rope to outer edge of cargo bed.
+- Role / purpose：荷車・三人・薬箱・水路の位置を先に見せる
+- Dialogue exact：リゼ：「車輪が
+はまっちゃって」［speech／warm］
 - Sound exact：なし
-- Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
-- Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
-- Connection：same-scene｜p049から人物の位置と小道具の状態を継続
-- Emotion：conversational intent=リゼが、目の前の困りごとを依頼表示なしで認める｜hidden feeling=役に立てる場面を逃したくない気持ち｜response=p051で「ゲームの依頼表示と目の前の困りごとが別であることを示す」へ受け渡す
-- Prop / state：Same muddy road; LIZE at front wheel; SENA at rear; KOH hands empty; sword sheathed.
+- Sound reason：発話・呼吸・手の動きを優先し 新しい効果音は置かない
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。荷車・三人・薬箱・水路の位置を先に見せる
+- Emotion：発話の意図=車輪が はまっちゃって｜反応=荷車・三人・薬箱・水路の位置を先に見せる
+- Prop / state：Cart trapped on road; canal on outer side; closed chest secured by old rope; no one in water.
 - Camera / shape：幅=full 高さ=tall 枠=borderless カメラ=wide three-person view 配置=center 焦点=wheel rut, three positions, safe side
 
 ### p051｜Sheet 5 slot 3｜06-cart
 
 - Rough art：KOH’s POV glances from the deep rut to an empty translucent quest list, then back to the people.
 - Role / purpose：ゲームの依頼表示と目の前の困りごとが別であることを示す
-- Dialogue exact：HUD：「依頼：なし」［display］
+- Dialogue exact：HUD：「依頼：なし」［display／interface］
 - Sound exact：なし
-- Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
-- Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
-- Connection：same-scene｜p050から人物の位置と小道具の状態を継続
-- Emotion：conversational intent=HUDが、目の前の困りごとを依頼表示なしで認める｜hidden feeling=役に立てる場面を逃したくない気持ち｜response=p052で「助ける選択を言葉と手の準備でつなぐ」へ受け渡す
+- Sound reason：発話・呼吸・手の動きを優先し 新しい効果音は置かない
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。ゲームの依頼表示と目の前の困りごとが別であることを示す
+- Emotion：発話の意図=依頼：なし｜反応=ゲームの依頼表示と目の前の困りごとが別であることを示す
 - Prop / state：Same road; cart still stuck; no quest accepted; KOH has not yet touched the wheel.
 - Camera / shape：幅=medium 高さ=shallow 枠=angled カメラ=POV insert 配置=right 焦点=wheel first, empty list second
 
@@ -728,124 +758,129 @@
 
 - Rough art：KOH kneels opposite LIZE and offers both hands under the trapped wheel.
 - Role / purpose：助ける選択を言葉と手の準備でつなぐ
-- Dialogue exact：航：「こっち\n持ち上げるよ」［speech］
+- Dialogue exact：航：「こっち
+持ち上げるよ！」［speech／bright］
 - Sound exact：なし
-- Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
-- Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
-- Connection：scene-transition｜06-cartから07-pushへ移る。Same cart and rut; KOH still sword-sheathed; LIZE braces front; SENA at rear.を新しい場面の接続印にする
-- Emotion：conversational intent=航が、失敗を見て力の置き方を直し共同作業を成功させる｜hidden feeling=力不足を見られたくないが手を離せない責任感｜response=p053で「力の方向と身体の位置を結果へ接続する」へ受け渡す
+- Sound reason：発話・呼吸・手の動きを優先し 新しい効果音は置かない
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。助ける選択を言葉と手の準備でつなぐ
+- Emotion：発話の意図=こっち 持ち上げるよ！｜反応=助ける選択を言葉と手の準備でつなぐ
 - Prop / state：Same cart and rut; KOH still sword-sheathed; LIZE braces front; SENA at rear.
 - Camera / shape：幅=medium 高さ=medium 枠=angled カメラ=low three-quarter 配置=left 焦点=KOH hands entering the work
 
 ### p053｜Sheet 5 slot 5｜07-push
 
-- Rough art：Close on three separate contact points: KOH under rim, LIZE locking the wheel, SENA setting feet at the cart rear.
-- Role / purpose：力の方向と身体の位置を結果へ接続する
+- Rough art：Close-up of worn frayed rope securing the closed medicine chest; water beyond the cart.
+- Role / purpose：縄のほつれを先に見せ 直後の事故の原因を作る
 - Dialogue exact：なし
 - Sound exact：なし
-- Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
-- Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
-- Connection：same-scene｜p052から人物の位置と小道具の状態を継続
-- Emotion：conversational intent=無言の画面で、失敗を見て力の置き方を直し共同作業を成功させる｜hidden feeling=力不足を見られたくないが手を離せない責任感｜response=p054で「一度で成功させず失敗を身体の結果として見せる」へ受け渡す
-- Prop / state：Same rut; wheel muddy; three people contact cart at distinct points; clothing still mostly clean.
+- Sound reason：発話・呼吸・手の動きを優先し 新しい効果音は置かない
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。縄のほつれを先に見せ 直後の事故の原因を作る
+- Emotion：発話の意図=無言の予兆と動作｜反応=縄のほつれを先に見せ 直後の事故の原因を作る
+- Prop / state：Same closed medicine chest still on cart bed; frayed rope taut but not yet broken.
 - Camera / shape：幅=full 高さ=shallow 枠=triptych-like angled カメラ=hands and feet detail 配置=center 焦点=three support points
 
 ### p054｜Sheet 5 slot 6｜07-push
 
-- Rough art：First lift attempt slips; the wheel rocks but stays in the rut and mud spatters KOH’s sleeve.
-- Role / purpose：一度で成功させず失敗を身体の結果として見せる
-- Dialogue exact：なし
+- Rough art：KOH and LIZE lift the wheel as SENA braces rear; wheel rises free and mud spatters sleeves.
+- Role / purpose：合図に合わせた力で荷車を動かす
+- Dialogue exact：リゼ：「せーのっ！」［speech／rally］
 - Sound exact：なし
-- Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
-- Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
-- Connection：same-scene｜p053から人物の位置と小道具の状態を継続
-- Emotion：conversational intent=無言の画面で、失敗を見て力の置き方を直し共同作業を成功させる｜hidden feeling=力不足を見られたくないが手を離せない責任感｜response=p055で「失敗から修正へ移る判断を無言で読ませる」へ受け渡す
-- Prop / state：Same cart; wheel remains trapped; KOH sleeve and LIZE forearm muddy; no injury; SENA still supporting.
+- Sound reason：発話・呼吸・手の動きを優先し 新しい効果音は置かない
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。合図に合わせた力で荷車を動かす
+- Emotion：発話の意図=せーのっ！｜反応=合図に合わせた力で荷車を動かす
+- Prop / state：Wheel lifts free; hands on wheel; KOH sword sheathed; three people remain on road.
 - Camera / shape：幅=medium 高さ=medium 枠=angled カメラ=low action view 配置=right 焦点=slipping hands and unmoved wheel
 
 ### p055｜Sheet 5 slot 7｜07-push
 
-- Rough art：KOH looks at the rut angle, shifts his knees and changes his hand position while LIZE lowers her shoulder.
-- Role / purpose：失敗から修正へ移る判断を無言で読ませる
+- Rough art：Freed wheel lands hard on a road stone and jolts the loaded cargo bed.
+- Role / purpose：車輪の衝撃から薬箱の危険へ因果をつなぐ
 - Dialogue exact：なし
-- Sound exact：なし
-- Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
-- Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
-- Connection：same-scene｜p054から人物の位置と小道具の状態を継続
-- Emotion：conversational intent=無言の画面で、失敗を見て力の置き方を直し共同作業を成功させる｜hidden feeling=力不足を見られたくないが手を離せない責任感｜response=p056で「二度目の力がどこから来るかを先に理解させる」へ受け渡す
-- Prop / state：Same cart; muddy hands; wheel still in rut; positions change but no object is added.
+- Sound exact：ガタン！［originating］
+- Sound reason：車輪と石がぶつかった一度の衝撃。次の縄切れへつなぐ
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。車輪の衝撃から薬箱の危険へ因果をつなぐ
+- Emotion：発話の意図=無言の予兆と動作｜反応=車輪の衝撃から薬箱の危険へ因果をつなぐ
+- Prop / state：Wheel out of rut; first jolt; chest still on cargo bed; rope strains.
 - Camera / shape：幅=narrow 高さ=shallow 枠=inset カメラ=hands and eyes close-up 配置=left 焦点=KOH eyes, rut, repositioned grip
 
 ### p056｜Sheet 5 slot 8｜07-push
 
-- Rough art：All three reset their stance together; KOH’s feet push against firmer ground beside the rut.
-- Role / purpose：二度目の力がどこから来るかを先に理解させる
+- Rough art：Close-up of the old rope snapping, frayed ends separating above the closed chest.
+- Role / purpose：切れた縄を結果として見せ 次の落下を予告する
 - Dialogue exact：なし
-- Sound exact：なし
-- Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
-- Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
-- Connection：same-scene｜p055から人物の位置と小道具の状態を継続
-- Emotion：conversational intent=無言の画面で、失敗を見て力の置き方を直し共同作業を成功させる｜hidden feeling=力不足を見られたくないが手を離せない責任感｜response=p057で「合図を動作開始のきっかけにする」へ受け渡す
-- Prop / state：Same cart; KOH/LIZE/SENA aligned; wheel remains trapped; mud states continuous.
+- Sound exact：ブツッ［originating］
+- Sound reason：古い縄が切れた一点の音。落下の原因を確定する
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。切れた縄を結果として見せ 次の落下を予告する
+- Emotion：発話の意図=無言の予兆と動作｜反応=切れた縄を結果として見せ 次の落下を予告する
+- Prop / state：Rope now broken; same closed chest begins to tilt toward canal side.
 - Camera / shape：幅=full 高さ=medium 枠=rect カメラ=low wide 配置=center 焦点=feet, wheel, shared line of force
 
 ### p057｜Sheet 5 slot 9｜07-push
 
-- Rough art：LIZE and KOH lift while SENA pushes from the rear; the command starts the coordinated attempt.
-- Role / purpose：合図を動作開始のきっかけにする
-- Dialogue exact：リゼ：「せーの！」［speech］
+- Rough art：Medicine chest slips off cart toward canal; KOH reaches its handle while LIZE cries out, SENA steadies cart behind.
+- Role / purpose：リゼの叫びと落ちる薬箱で航の反射的な行動を起こす
+- Dialogue exact：リゼ：「箱がっ！」［speech／alarm］
 - Sound exact：なし
-- Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
-- Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
-- Connection：same-scene｜p056から人物の位置と小道具の状態を継続
-- Emotion：conversational intent=リゼが、失敗を見て力の置き方を直し共同作業を成功させる｜hidden feeling=力不足を見られたくないが手を離せない責任感｜response=p058で「成功の物理的な結果を接触点と車輪で見せる」へ受け渡す
-- Prop / state：Same cart; three bodies committed; wheel beginning to rise; no magic or weapon.
+- Sound reason：発話・呼吸・手の動きを優先し 新しい効果音は置かない
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。リゼの叫びと落ちる薬箱で航の反射的な行動を起こす
+- Emotion：発話の意図=箱がっ！｜反応=リゼの叫びと落ちる薬箱で航の反射的な行動を起こす
+- Prop / state：Chest sliding over canal edge; KOH reaches toward handle; SENA keeps cart on road; LIZE reacts.
 - Camera / shape：幅=full 高さ=medium 枠=angled カメラ=dynamic low-angle 配置=right 焦点=three faces and rising rim
 
 ### p058｜Sheet 5 slot 10｜07-push
 
-- Rough art：The wheel climbs over the rut with a single hard jolt; mud breaks away from the tire.
-- Role / purpose：成功の物理的な結果を接触点と車輪で見せる
-- Dialogue exact：音：「ガタン」［sound］
-- Sound exact：ガタン［originating］
-- Sound reason：The sound lands on the wheel clearing the rut and ends before anyone releases the cart.
-- Whitespace：sound-start｜音の発生源を読ませる。The sound lands on the wheel clearing the rut and ends before anyone releases the cart.
-- Connection：same-scene｜p057から人物の位置と小道具の状態を継続
-- Emotion：conversational intent=音が、失敗を見て力の置き方を直し共同作業を成功させる｜hidden feeling=力不足を見られたくないが手を離せない責任感｜response=p059で「成功後の安全確認を結果として残す」へ受け渡す
-- Prop / state：Same cart; wheel now above rut; mud on KOH/LIZE; SENA still at rear.
+- Rough art：KOH lunges down, grips the medicine chest handle above water and braces his other palm against stone canal lip, knee on road. Bold downward motion stops at his straining arm.
+- Role / purpose：航がためらわず受け止める一瞬を大きく見せる
+- Dialogue exact：航：「っ……！」［speech／strain］
+- Sound exact：ガシッ［originating］
+- Sound reason：航が取っ手を掴み重さを受け止めた接点の音。落水音はない
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。航がためらわず受け止める一瞬を大きく見せる
+- Emotion：発話の意図=っ……！｜反応=航がためらわず受け止める一瞬を大きく見せる
+- Prop / state：One hand grips chest handle; other palm on stone; chest hangs above water without touching; knees and boots on road; no injury; sword sheathed.
 - Camera / shape：幅=medium 高さ=shallow 枠=angled カメラ=wheel close-up 配置=left 焦点=tire, rut, flying mud
 
 ### p059｜Sheet 5 slot 11｜07-push
 
-- Rough art：The cart settles level on the road; all three release in sequence and regain balance.
-- Role / purpose：成功後の安全確認を結果として残す
-- Dialogue exact：なし
-- Sound exact：なし
-- Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
-- Whitespace：none｜音を足さず視線と感情の受け止めに使う。
-- Connection：same-scene｜p058から人物の位置と小道具の状態を継続
-- Emotion：conversational intent=無言の画面で、失敗を見て力の置き方を直し共同作業を成功させる｜hidden feeling=力不足を見られたくないが手を離せない責任感｜response=p060で「助かった実感を名前より先に聞き手へ返す」へ受け渡す
-- Prop / state：Same road; cart free; KOH and LIZE hands off wheel; SENA steadies rear; muddy forearms.
+- Rough art：LIZE kneels and helps KOH haul the closed chest onto safe road; SENA braces cart in background.
+- Role / purpose：一人の力で完結させずリゼの助けで薬箱を戻す
+- Dialogue exact：リゼ：「そのまま！
+一緒に上げるよ！」［speech／rally］
+- Sound exact：ズッ［originating］
+- Sound reason：二人で薬箱を道路へ引き上げる音。安全になって終える
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。一人の力で完結させずリゼの助けで薬箱を戻す
+- Emotion：発話の意図=そのまま！ 一緒に上げるよ！｜反応=一人の力で完結させずリゼの助けで薬箱を戻す
+- Prop / state：Closed chest returning onto road; KOH holds handle, LIZE supports sides; SENA at cart; contents kept dry.
 - Camera / shape：幅=wide 高さ=medium 枠=borderless カメラ=wide side view 配置=center 焦点=freed cart and three recovering bodies
 
 ### p060｜Sheet 5 slot 12｜07-introduction
 
-- Rough art：LIZE wipes one muddy hand and exhales with relieved eyes toward KOH.
-- Role / purpose：助かった実感を名前より先に聞き手へ返す
-- Dialogue exact：リゼ：「助かった\n私はリゼ」［speech］
+- Rough art：LIZE exhales shakily with grateful eyes toward KOH; closed rescued chest safely on road in background.
+- Role / purpose：緊迫から安堵へ切り替え 名前を呼ぶ関係の入口にする
+- Dialogue exact：リゼ：「はぁ……
+ありがとう
+私はリゼ」［speech／relief］
 - Sound exact：なし
-- Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
-- Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
-- Connection：scene-transition｜07-pushから07-introductionへ移る。Same road; cart free; LIZE and KOH muddy; shield remains on LIZE’s back; no handoff yet.を新しい場面の接続印にする
-- Emotion：conversational intent=リゼが、助けた相手と仕事を知り町へ歩く理由を作る｜hidden feeling=礼を受ける照れと名前を知りたい親しさ｜response=p061で「受けた礼を身体で受け止めてから名乗る」へ受け渡す
-- Prop / state：Same road; cart free; LIZE and KOH muddy; shield remains on LIZE’s back; no handoff yet.
+- Sound reason：発話・呼吸・手の動きを優先し 新しい効果音は置かない
+- Whitespace：救出の動作は短く接続し p059後で安堵の間を置く。叫びは直後の話者の表情へ向ける。
+- Connection：same-scene｜水路脇の同じ荷車、同じ閉じた薬箱、三人の位置を継続。緊迫から安堵へ切り替え 名前を呼ぶ関係の入口にする
+- Emotion：発話の意図=はぁ…… ありがとう 私はリゼ｜反応=緊迫から安堵へ切り替え 名前を呼ぶ関係の入口にする
+- Prop / state：All three safe; same closed chest on dry road; KOH and LIZE have muddy forearms; no handoff or injury yet.
 - Camera / shape：幅=medium 高さ=medium 枠=rect カメラ=face and hand medium 配置=right 焦点=exhale, wiped palm, eye contact
 
 ### p061｜Sheet 6 slot 1｜07-introduction
 
 - Rough art：KOH looks at his dirty hands, then gestures to himself with a modest smile.
 - Role / purpose：受けた礼を身体で受け止めてから名乗る
-- Dialogue exact：航：「航\n……コウでいいよ」［speech］
+- Dialogue exact：航：「航
+……コウでいいよ」［speech／normal］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -858,7 +893,8 @@
 
 - Rough art：SENA steps from the cart rear and offers a warm direct introduction while the wooden medicine box stays visible.
 - Role / purpose：名乗りと仕事を一息に詰めずセナの位置から次の暮らしへつなぐ
-- Dialogue exact：セナ：「薬師のセナだよ\nよろしく」［speech］
+- Dialogue exact：セナ：「薬師のセナだよ
+本当に助かった！」［speech／warm］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -871,7 +907,8 @@
 
 - Rough art：LIZE takes the cart handle and starts toward Milt; KOH chooses the same direction beside the cart.
 - Role / purpose：助けた相手と町へ行く理由を航の足取りで作る
-- Dialogue exact：リゼ：「荷物を運ぶのが\n私の仕事」［speech］
+- Dialogue exact：リゼ：「荷物を運ぶのが
+私の仕事」［speech／warm］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -884,7 +921,8 @@
 
 - Rough art：As the cart rolls, LIZE points toward the town gate and the bridge route while KOH keeps pace.
 - Role / purpose：見回りの仕事を移動の目的として追加する
-- Dialogue exact：リゼ：「町の見回りも\nしてるよ」［speech］
+- Dialogue exact：リゼ：「町の見回りも
+してるよ」［speech／warm］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -897,7 +935,7 @@
 
 - Rough art：All three cross the same stone bridge with the cart; turquoise water and the turning wheel appear below.
 - Role / purpose：車輪の土を洗う次の場所へ水の流れを経路として導く
-- Dialogue exact：音：「サァァァ」［sound］
+- Dialogue exact：音：「サァァァ」［sound／sound］
 - Sound exact：サァァァ［originating］
 - Sound reason：The water sound begins below the bridge and is allowed to continue into the basin beat.
 - Whitespace：sound-start｜音の発生源を読ませる。The water sound begins below the bridge and is allowed to continue into the basin beat.
@@ -910,8 +948,9 @@
 
 - Rough art：KOH washes both muddy hands at a small public basin supplied by the same channel and notices a warm-gold line beneath the bridge.
 - Role / purpose：手の汚れが暮らしの水と光へ変わる瞬間を一続きにする
-- Dialogue exact：航：「水が\n光ってる」［speech］
-- Sound exact：サァァァ［continuation from p073］
+- Dialogue exact：航：「水が……
+光ってる！」［speech／bright］
+- Sound exact：サァァァ［continuation］
 - Sound reason：Continue the exact bridge water sound beside the basin; no second complete inscription.
 - Whitespace：sound-continuation｜前の音を再開せず余白へ通す。Continue the exact bridge water sound beside the basin; no second complete inscription.
 - Connection：same-scene｜p065から人物の位置と小道具の状態を継続
@@ -923,7 +962,8 @@
 
 - Rough art：LIZE points under the same stone bridge at the narrow gold supply channel branching beside the river.
 - Role / purpose：光の疑問を目の前の水路へ限定して答える
-- Dialogue exact：リゼ：「魔力も\nこの水路を通るの」［speech］
+- Dialogue exact：リゼ：「魔力も
+この水路を通るの」［speech／warm］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -936,7 +976,8 @@
 
 - Rough art：KOH follows the branch from bridge to waterwheel and adjoining repair stall; the town’s connected route becomes legible.
 - Role / purpose：見える経路を航自身が追って理解する
-- Dialogue exact：航：「街全体を\nつないでるんだ」［speech］
+- Dialogue exact：航：「街全体を
+つないでるんだ！」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -949,7 +990,8 @@
 
 - Rough art：SENA opens one small insulated wooden cooling box on the cart; a brass rune strip glows around the hinge.
 - Role / purpose：生活道具として魔導器を初めて見せる
-- Dialogue exact：セナ：「薬を冷やす\n魔導器だよ」［speech］
+- Dialogue exact：セナ：「薬を冷やす
+魔導器だよ」［speech／normal］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -962,7 +1004,8 @@
 
 - Rough art：LIZE taps the carved brass rune while KOH watches from the opposite side of the cart.
 - Role / purpose：魔法を道具へ刻むという仕組みを部品と指で説明する
-- Dialogue exact：リゼ：「魔法の形を\n道具に刻むの」［speech］
+- Dialogue exact：リゼ：「魔法の形を
+道具に刻むの」［speech／warm］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -975,7 +1018,8 @@
 
 - Rough art：KOH opens his empty palm, interested rather than triumphant, as the box continues cooling the medicine.
 - Role / purpose：魔法を使えなくても暮らしの道具を使える理解を航の手で返す
-- Dialogue exact：航：「魔法が苦手でも\n使えるんだ」［speech］
+- Dialogue exact：航：「魔法が苦手でも
+使えるんだ！」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -988,7 +1032,8 @@
 
 - Rough art：At the waterwheel, a local mill worker opens a windcloth vane and asks a tiny pale teal wind spirit for help.
 - Role / purpose：暮らしの仕事と精霊の意志を同じ場所で初めて出す
-- Dialogue exact：水車の職人：「風向きを\n変えてくれる？」［speech］
+- Dialogue exact：水車の職人：「風向きを
+変えてくれる？」［speech／curious］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1001,7 +1046,8 @@
 
 - Rough art：The wind spirit darts toward a bright flower instead of the vane; KOH watches the movement rather than a command screen.
 - Role / purpose：精霊が自律していることを動きで示し機械と分ける
-- Dialogue exact：航：「言うこと\n聞かないんだ」［speech］
+- Dialogue exact：航：「言うこと
+聞かないんだ？」［speech／curious］
 - Sound exact：ひゅっ［originating］
 - Sound reason：The short airy sound follows the spirit’s visible dart and does not become a teleport effect.
 - Whitespace：sound-start｜音の発生源を読ませる。The short airy sound follows the spirit’s visible dart and does not become a teleport effect.
@@ -1014,7 +1060,8 @@
 
 - Rough art：The worker laughs gently and waits with an open hand; the spirit pauses at the flower and looks back.
 - Role / purpose：相手を急かさず待つ暮らしの態度を精霊の返答に接続する
-- Dialogue exact：水車の職人：「この子にも\n都合があるから」［speech］
+- Dialogue exact：水車の職人：「この子にも
+都合があるから」［speech／normal］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1027,7 +1074,7 @@
 
 - Rough art：LIZE opens her right palm and makes a small controlled breeze curl a cloth strip in her left hand; the motion is precise and domestic.
 - Role / purpose：魔法の習得を戦闘技ではなく反復する形として見せる
-- Dialogue exact：音：「フワ…」［sound］
+- Dialogue exact：音：「フワ…」［sound／sound］
 - Sound exact：フワ…［originating］
 - Sound reason：The soft sound begins at LIZE’s palm and cloth and remains smaller than the water and wing sounds.
 - Whitespace：sound-start｜音の発生源を読ませる。The soft sound begins at LIZE’s palm and cloth and remains smaller than the water and wing sounds.
@@ -1040,7 +1087,7 @@
 
 - Rough art：KOH copies the same hand shape and the cloth in his left hand hangs limp; LIZE remains in frame to teach immediately after the failure.
 - Role / purpose：成功を与えず本人の失敗と相手の受け止めを同じ場所でつなぐ
-- Dialogue exact：航：「……出ない」［speech］
+- Dialogue exact：航：「……出ない！」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1053,7 +1100,8 @@
 
 - Rough art：LIZE lowers both hands and explains that a form is learned through repeated practice; the wind spirit and wheel remain soft background anchors.
 - Role / purpose：失敗を次の再訪と練習への動機にする
-- Dialogue exact：リゼ：「形を覚えて\n何度も練習するの」［speech］
+- Dialogue exact：リゼ：「形を覚えて
+何度も練習するの」［speech／warm］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1079,7 +1127,8 @@
 
 - Rough art：At the market edge SENA offers one small tied medicine parcel while the cart moves toward warm stalls.
 - Role / purpose：ここまでの見回りが具体的な頼まれごとへ変わる
-- Dialogue exact：セナ：「コウこれも\n届けてもらえる？」［speech］
+- Dialogue exact：セナ：「コウこれも
+届けてもらえる？」［speech／curious］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1092,7 +1141,8 @@
 
 - Rough art：KOH looks from the parcel to SENA and asks whether the request is a game quest.
 - Role / purpose：表示と暮らしの声が違うことを主人公の問いにする
-- Dialogue exact：航：「それも\nクエスト？」［speech］
+- Dialogue exact：航：「それも
+クエスト？」［speech／curious］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1105,7 +1155,8 @@
 
 - Rough art：SENA’s tired but kind close-up answers that the medicine is needed tonight; the clinic direction sits behind him.
 - Role / purpose：依頼の緊急性を人の今晩として伝える
-- Dialogue exact：セナ：「今晩\n薬が要るんだよ」［speech］
+- Dialogue exact：セナ：「今晩
+薬が要るんだよ」［speech／normal］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1118,7 +1169,8 @@
 
 - Rough art：KOH accepts the one tied parcel with both hands and leans forward with optimistic eagerness.
 - Role / purpose：役に立ちたい気持ちを受け取る動作にする
-- Dialogue exact：航：「俺も\nできると思う」［speech］
+- Dialogue exact：航：「俺でよければ
+届けるよ！」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1131,7 +1183,7 @@
 
 - Rough art：The parcel remains in KOH’s hand while his wrist menu quietly shows Japan time; his eyes move from the display back to the parcel.
 - Role / purpose：家との約束が感情の途中で戻るように時間表示を置く
-- Dialogue exact：HUD：「日本時間 20:50」［display］
+- Dialogue exact：HUD：「日本時間 20:50」［display／interface］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1144,7 +1196,8 @@
 
 - Rough art：KOH lowers the parcel slightly and admits he has to go home; LIZE watches his face rather than the display.
 - Role / purpose：約束を思い出した正直さを航の視線と声で返す
-- Dialogue exact：航：「ごめん\n今日は帰らないと」［speech］
+- Dialogue exact：航：「あっ……ごめん！
+今日は帰らないと」［speech／bright］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1157,7 +1210,8 @@
 
 - Rough art：LIZE takes the same parcel from KOH in one visible handoff and turns toward the clinic route.
 - Role / purpose：代わりに届ける選択を手渡しで理解させる
-- Dialogue exact：リゼ：「私が届ける\n明日は来られる？」［speech］
+- Dialogue exact：リゼ：「私が届ける
+明日は来られる？」［speech／curious］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1196,7 +1250,8 @@
 
 - Rough art：At the plaza entrance LIZE points to the staffed safe point beside the bridge and bench.
 - Role / purpose：安全拠点を町の地理として先に見せる
-- Dialogue exact：リゼ：「帰るなら\nここでね」［speech］
+- Dialogue exact：リゼ：「帰るなら
+ここでね」［speech／warm］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1222,7 +1277,8 @@
 
 - Rough art：The simple safe-point display appears as KOH makes a specific promise to return before tomorrow’s dusk.
 - Role / purpose：帰る操作と明日の意思を同じ場所で選ぶ
-- Dialogue exact：航：「明日\n日暮れ前に来る」［speech］ ／ HUD：「安全拠点 ミルト　ログアウト」［display］
+- Dialogue exact：航：「明日
+日暮れ前に来る！」［speech／bright］ ／ HUD：「安全拠点 ミルト　ログアウト」［display／interface］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1235,7 +1291,8 @@
 
 - Rough art：LIZE keeps the parcel ready and answers softly as the plaza falls into a generous white fade.
 - Role / purpose：再訪の約束を相手の返答で閉じる
-- Dialogue exact：リゼ：「じゃあ\nまた明日」［speech］
+- Dialogue exact：リゼ：「じゃあ
+また明日！」［speech／warm］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1261,7 +1318,8 @@
 
 - Rough art：KOH turns toward the open bedroom door as MIWA calls from downstairs and he answers.
 - Role / purpose：帰宅の約束を母子の短い挨拶で完了させる
-- Dialogue exact：美和（画面外）→航：「おかえり\nただいま」［speech-pair］
+- Dialogue exact：美和（画面外）→航：「おかえり
+ただいま」［speech-pair／warm］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。
@@ -1300,7 +1358,8 @@
 
 - Rough art：One large quiet close view holds KOH’s slight smile and the dark window reflection after the called name.
 - Role / purpose：名前を呼ばれた実感へ視線を集める
-- Dialogue exact：航（心）：「名前を\n呼ばれた」［thought］
+- Dialogue exact：航（心）：「名前を
+呼ばれた」［thought／thought］
 - Sound exact：なし
 - Sound reason：新しい効果音を始めず、発話・手・目・移動の因果を優先する
 - Whitespace：none｜余白を説明で埋めず次の行動が読める距離を保つ。

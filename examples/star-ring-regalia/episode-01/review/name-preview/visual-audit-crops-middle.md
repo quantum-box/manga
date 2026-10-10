@@ -1,3 +1,5 @@
+> この記録は今回の吹き出し・薬箱事件の追加より前の確認。最新の変更箇所と寸法は `visual-audit-final.md` と `validation.json` を参照。
+
 # 390px素材グリッド切り出し中間監査
 
 - 対象：最新版 `review/window-390-25.jpg`〜`window-390-49.jpg` を番号順に確認。
