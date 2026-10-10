@@ -36,7 +36,7 @@ for image in sorted((ROOT / 'rough').glob('*.png')):
         sha256=copied_hash, sourceSha256=cache_hash, bytesIdentical=True,
         imageSize=list(struct.unpack('>II', raw[16:24])),
         metadata=str(meta_path.relative_to(ROOT))))
-write('generation.json', dict(tool='built-in image_gen', state='name, user adoption pending',
+write('generation.json', dict(tool='built-in image_gen', state='adopted name' if (ROOT / 'adoption.json').exists() else 'name, user adoption pending',
     reference='examples/star-ring-regalia/reference/cast.png',
     referenceRole='Character identity and costume; source cells reorganized in authored HTML',
     assets=assets, manualImageEditing=False))
@@ -80,7 +80,7 @@ if adopted:
     assert digest(ROOT / 'storyboard.md') == adoption['approvedStoryboardSha256']
     assert digest(ROOT / 'plan.json') == adoption['approvedPlanSha256']
 write('validation.json', dict(date='2026-10-10', requestedEpisodes=[1, 2, 3],
-    episode=1, scope='Complete episode name; final art and publication await adoption',
+    episode=1, scope='Complete episode name adopted; final art and publication pending' if adopted else 'Complete episode name; final art and publication await adoption',
     state='adopted; final art authorized' if adopted else 'ready for user composition review',
     adoption=adoption,
     skill=dict(path=str(SKILL / 'SKILL.md'), sha256=digest(SKILL / 'SKILL.md')),
@@ -108,5 +108,5 @@ write('validation.json', dict(date='2026-10-10', requestedEpisodes=[1, 2, 3],
     files=dict(html='index.html', storyboard='storyboard.md', visualAudit='visual-audit-final.md',
         generation='generation.json'),
     htmlSha256=digest(ROOT / 'index.html')))
-print(json.dumps(dict(state='ready for review', effectivePanels=len(effective),
+print(json.dumps(dict(state='adopted' if adopted else 'ready for review', effectivePanels=len(effective),
     measurements=measurements, sourceCopiesVerified=len(assets)), ensure_ascii=False))

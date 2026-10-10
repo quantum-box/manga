@@ -6,11 +6,24 @@
     3
   ],
   "episode": 1,
-  "scope": "Complete episode 1 name adopted; final art and publication pending",
+  "scope": "Complete episode name adopted; final art and publication pending",
   "state": "adopted; final art authorized",
+  "adoption": {
+    "status": "adopted",
+    "date": "2026-10-10",
+    "scope": "episode_01_name_only",
+    "userInstruction": "ネームOK、本作画にGO！",
+    "approvedHtmlSha256": "069767bcd2829ad1068414307ca4aab975f1a83fdc6c8a79e821bfa5c527d893",
+    "approvedStoryboardSha256": "67b651b604adde47b93acf2e8697380659299d955f172f4f17e06f8f15098ee1",
+    "approvedPlanSha256": "7362e6b3004a57318fdc79dd04021705fe790b11b65bf920b5bd78e89b2ca61a",
+    "displayCuts": 108,
+    "effectivePanels": 97,
+    "finalArtAuthorized": true,
+    "sequence": "Merge adopted name via PR, then make episode 1 final art; publish episode 1 before episode 2 art"
+  },
   "skill": {
     "path": "/Users/takanorifukuyama/.codex/skills/webtoon/SKILL.md",
-    "sha256": "22493fef0c01af4bdac11e941aec924f218bb395a20edf14d002472c89d652d9"
+    "sha256": "0da6942d1fb27cdc9c99f3037c8240aa40f30ed9db42d3b4831dccbb9c190560"
   },
   "measurements": [
     {
@@ -225,18 +238,5 @@
     "visualAudit": "visual-audit-final.md",
     "generation": "generation.json"
   },
-  "htmlSha256": "069767bcd2829ad1068414307ca4aab975f1a83fdc6c8a79e821bfa5c527d893",
-  "adoption": {
-    "status": "adopted",
-    "date": "2026-10-10",
-    "scope": "episode_01_name_only",
-    "userInstruction": "ネームOK、本作画にGO！",
-    "approvedHtmlSha256": "069767bcd2829ad1068414307ca4aab975f1a83fdc6c8a79e821bfa5c527d893",
-    "approvedStoryboardSha256": "67b651b604adde47b93acf2e8697380659299d955f172f4f17e06f8f15098ee1",
-    "approvedPlanSha256": "7362e6b3004a57318fdc79dd04021705fe790b11b65bf920b5bd78e89b2ca61a",
-    "displayCuts": 108,
-    "effectivePanels": 97,
-    "finalArtAuthorized": true,
-    "sequence": "Merge adopted name via PR, then make episode 1 final art; publish episode 1 before episode 2 art"
-  }
+  "htmlSha256": "069767bcd2829ad1068414307ca4aab975f1a83fdc6c8a79e821bfa5c527d893"
 }
