@@ -1,5 +1,5 @@
 {
-  "status": "name_ready_awaiting_user_adoption",
+  "status": "revised_name_ready_awaiting_user_adoption",
   "date": "2026-10-10",
   "baseCommit": "e11f2ee970aaec5d13123322cbbb3e472e9766ee",
   "effectivePanels": 96,
@@ -118,9 +118,9 @@
           390,
           844
         ],
-        "bodyHeight": 48308.546875,
-        "pureGapHeight": 4880,
-        "contentHeight": 43428.546875,
+        "bodyHeight": 47270.625,
+        "pureGapHeight": 4950,
+        "contentHeight": 42320.625,
         "panels": 96,
         "imagesFailed": 0,
         "minFont": 20,
@@ -132,9 +132,9 @@
           360,
           800
         ],
-        "bodyHeight": 44590.5625,
-        "pureGapHeight": 4504.453125,
-        "contentHeight": 40086.109375,
+        "bodyHeight": 43632.5,
+        "pureGapHeight": 4569.046875,
+        "contentHeight": 39063.453125,
         "panels": 96,
         "imagesFailed": 0,
         "minFont": 19.44,
@@ -145,37 +145,39 @@
   },
   "storyCheck": {
     "result": "ready_for_user_review",
+    "changedPanels": "p057–p096",
     "causality": [
-      "Yesterday medicine result → new delivery → Eda tomorrow",
-      "Saved flour → bread → conversation about home",
-      "Wrong route → listening → retracing → mill",
-      "Empty sack return → two copper coins → one purchased bread → Lize receives it",
-      "Lize independent patrol → next-day promise → event invitation"
+      "Warmth and independent errand → confidence",
+      "Rushed returnees → porter knocked down and hurt",
+      "Koh objects → shoved down → reaches for sheathed sword",
+      "Lize stops draw → guard follows offenders → rescue continues",
+      "Trembling cleanup → asks for training → unresolved doubt about strength"
     ],
     "continuity": [
-      "One medicine parcel transfers to Eda",
-      "One empty flat sack transfers to mill worker",
-      "Two copper coins earned and spent together; no change",
-      "Koh sword stays sheathed; no combat, shield or learned magic",
-      "Home promise and limited play time stated before errands"
+      "Medicine already delivered intact to Eda",
+      "Empty sack returned to mill, two coins earned",
+      "Coins scatter after shove, later retained; no purchased bread",
+      "Koh never draws his sword; no shield, combat success, magic, resurrection or water shortage added",
+      "Porter right wrist bandaged, transferred to Sena",
+      "Lize prepares patrol before returning through bridge; not present during initial errand"
     ],
-    "visualChecks": [
-      "Viewed all rough sheets and corrected headset activation, bread count, flat sack continuity",
-      "Viewed final 390px Eda/listen/wheel and 360px gift/ending windows",
-      "Normal in-app browser rendered middle and later sequence after scroll"
+    "visualEvidence": [
+      "New five sheets inspected for action, injury, identity and sequence",
+      "Revised lettered phone windows inspected for confrontation, draw intervention, aftermath and ending"
     ],
     "limitations": [
-      "Actual phone hardware not tested",
-      "In-app browser viewport override produced blank screenshots after scrolling; normal viewport renders correctly. Responsive measurements and captured windows use Playwright Chromium.",
-      "User adoption remains pending; no finished-art approval inferred"
+      "No actual phone hardware test",
+      "User adoption pending",
+      "Guard follows offenders; accountability unresolved rather than erased",
+      "Series adopted canon and published episode untouched; adoption follow-up in revision-notes.md"
     ]
   },
   "paddingCheck": {
     "result": "pass_for_review",
-    "registeredPureGaps390": 4880,
-    "bodyExcludingRegisteredGaps390": 43428.546875,
+    "registeredPureGaps390": 4950,
+    "bodyExcludingRegisteredGaps390": 42320.625,
     "gapsDocument": "plan.json",
-    "assessment": "24 purposeful transition/listening/reaction gaps. Panel count excludes text-only and gap beats. No repeated scene copies added for volume."
+    "assessment": "Purposeful gaps around impact, reaching for sword, trembling hand, training request and unresolved ending. Panel count excludes voice and gap beats."
   },
   "publication": {
     "finishedArtStarted": false,

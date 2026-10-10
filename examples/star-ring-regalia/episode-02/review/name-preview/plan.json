@@ -1856,11 +1856,11 @@
       "id": "p057-voice",
       "type": "voice",
       "speaker": "パン屋",
-      "text": "もうひとつ\n頼んでいいかい？",
-      "height": 218,
-      "x": 25,
+      "text": "この空袋も\n水車へ返せるかい？",
+      "height": 240,
+      "x": 30,
       "y": 49,
-      "purpose": "新しい依頼が来る。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "もう一つの頼み。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p057",
@@ -1876,23 +1876,23 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "新しい依頼が来る。BAKER outside shop holds ONE visibly flat folded EMPTY flour sack, KOH LIZE turn",
+      "alt": "もう一つの頼み。BAKER holds one flat folded EMPTY sack outside shop, KOH and LIZE stand",
       "widthPercent": 94,
       "align": "center",
       "frame": "thin",
-      "purpose": "新しい依頼が来る",
+      "purpose": "もう一つの頼み",
       "dialogue": [],
       "sounds": []
     },
     {
       "id": "p058-voice",
       "type": "voice",
-      "speaker": "パン屋",
-      "text": "空の袋を水車へ\n返してほしいんだ",
-      "height": 218,
-      "x": 25,
+      "speaker": "リゼ",
+      "text": "私は巡回の支度\n水沿いなら一本道よ",
+      "height": 240,
+      "x": 65,
       "y": 49,
-      "purpose": "軽い返却物と目的地。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "一人で行く条件を示す。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p058",
@@ -1908,11 +1908,11 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "軽い返却物と目的地。BAKER shows limp sack seam not filled, points upriver",
+      "alt": "一人で行く条件を示す。LIZE points uphill then toward patrol station while KOH accepts flat sack",
       "widthPercent": 100,
-      "align": "center",
+      "align": "left",
       "frame": "none",
-      "purpose": "軽い返却物と目的地",
+      "purpose": "一人で行く条件を示す",
       "dialogue": [],
       "sounds": []
     },
@@ -1920,11 +1920,11 @@
       "id": "p059-voice",
       "type": "voice",
       "speaker": "航",
-      "text": "水車なら\nまだ間に合うかな",
-      "height": 218,
-      "x": 50,
+      "text": "任せて！",
+      "height": 150,
+      "x": 40,
       "y": 49,
-      "purpose": "時間と能力を判断。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "自信をもって引き受ける。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p059",
@@ -1940,23 +1940,35 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "時間と能力を判断。KOH glances at sky daylight then folded paper map",
+      "alt": "自信をもって引き受ける。KOH alone carrying flat sack under arm beside clear stone water channel",
       "widthPercent": 94,
       "align": "right",
       "frame": "thin",
-      "purpose": "時間と能力を判断",
+      "purpose": "自信をもって引き受ける",
       "dialogue": [],
-      "sounds": []
+      "sounds": [
+        {
+          "text": "コツ コツ",
+          "x": 22,
+          "y": 82
+        }
+      ]
+    },
+    {
+      "id": "gap-p060",
+      "type": "pause",
+      "height": 150,
+      "purpose": "水を辿って一人で仕事場へ着く"
     },
     {
       "id": "p060-voice",
       "type": "voice",
-      "speaker": "リゼ",
-      "text": "ここからなら\n大丈夫だよ",
-      "height": 174,
-      "x": 70,
+      "speaker": "航",
+      "text": "パン屋さんから\n袋です",
+      "height": 196,
+      "x": 40,
       "y": 49,
-      "purpose": "判断に必要な返答。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "水に沿って到着。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p060",
@@ -1972,23 +1984,29 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "判断に必要な返答。LIZE points to light over roofs relaxed",
-      "widthPercent": 94,
-      "align": "left",
-      "frame": "thin",
-      "purpose": "判断に必要な返答",
+      "alt": "水に沿って到着。KOH arrives stone mill with large wooden waterwheel, holds folded flat sack",
+      "widthPercent": 100,
+      "align": "right",
+      "frame": "none",
+      "purpose": "水に沿って到着",
       "dialogue": [],
-      "sounds": []
+      "sounds": [
+        {
+          "text": "ごとん ごとん",
+          "x": 22,
+          "y": 82
+        }
+      ]
     },
     {
       "id": "p061-voice",
       "type": "voice",
-      "speaker": "航",
-      "text": "やってみます",
-      "height": 174,
-      "x": 50,
+      "speaker": "職人",
+      "text": "助かったよ\n明日も使うから",
+      "height": 196,
+      "x": 65,
       "y": 49,
-      "purpose": "自分で引き受ける。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "返却の完了。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p061",
@@ -2004,23 +2022,29 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "自分で引き受ける。KOH takes ONE flat sack under left arm map right hand",
+      "alt": "返却の完了。MILL WORKER ponytail takes ONE flat sack from KOH",
       "widthPercent": 94,
-      "align": "right",
+      "align": "center",
       "frame": "thin",
-      "purpose": "自分で引き受ける",
+      "purpose": "返却の完了",
       "dialogue": [],
-      "sounds": []
+      "sounds": [
+        {
+          "text": "ぱさ",
+          "x": 22,
+          "y": 82
+        }
+      ]
     },
     {
       "id": "p062-voice",
       "type": "voice",
-      "speaker": "リゼ",
-      "text": "今度は\n私がついてくね",
-      "height": 196,
-      "x": 60,
+      "speaker": "職人",
+      "text": "はい\n運び賃",
+      "height": 150,
+      "x": 55,
       "y": 49,
-      "purpose": "役割が逆になる。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "初めて対価を得る。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p062",
@@ -2036,23 +2060,35 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "役割が逆になる。LIZE follows half step behind KOH takes lead away bakery",
+      "alt": "初めて対価を得る。MILL WORKER places exactly TWO copper coins into KOH open palm close-up",
       "widthPercent": 72,
-      "align": "left",
+      "align": "center",
       "frame": "thin",
-      "purpose": "役割が逆になる",
+      "purpose": "初めて対価を得る",
       "dialogue": [],
-      "sounds": []
+      "sounds": [
+        {
+          "text": "ちゃり",
+          "x": 22,
+          "y": 82
+        }
+      ]
+    },
+    {
+      "id": "gap-p063",
+      "type": "pause",
+      "height": 200,
+      "purpose": "手の中の対価を自信として受け止める"
     },
     {
       "id": "p063-voice",
       "type": "voice",
-      "speaker": "航",
-      "text": "橋から見えたから\nこの道だ！",
-      "height": 218,
+      "speaker": "航・心",
+      "text": "俺 一人でも\nできた",
+      "height": 174,
       "x": 50,
       "y": 49,
-      "purpose": "見え方だけで選ぶ試み。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "小さな成功を自信にする。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p063",
@@ -2068,23 +2104,23 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "見え方だけで選ぶ試み。KOH at fork confidently points to narrow lane map in hand flat sack under arm",
-      "widthPercent": 100,
+      "alt": "小さな成功を自信にする。KOH alone looking at two copper coins on palm pleased small smile",
+      "widthPercent": 82,
       "align": "right",
-      "frame": "none",
-      "purpose": "見え方だけで選ぶ試み",
+      "frame": "thin",
+      "purpose": "小さな成功を自信にする",
       "dialogue": [],
       "sounds": []
     },
     {
       "id": "p064-voice",
       "type": "voice",
-      "speaker": "航",
-      "text": "…あれ？",
-      "height": 150,
-      "x": 40,
+      "speaker": "航・心",
+      "text": "リゼにも\nパン 買って戻ろう",
+      "height": 240,
+      "x": 50,
       "y": 49,
-      "purpose": "選んだ道が違った結果。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "返礼という帰りの目的。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p064",
@@ -2100,35 +2136,19 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "選んだ道が違った結果。KOH and LIZE stop at closed garden fence lane dead end, sack unchanged",
-      "widthPercent": 82,
+      "alt": "返礼という帰りの目的。KOH closes hand around coins and heads down channel toward arched bridge",
+      "widthPercent": 100,
       "align": "right",
-      "frame": "thin",
-      "purpose": "選んだ道が違った結果",
+      "frame": "none",
+      "purpose": "返礼という帰りの目的",
       "dialogue": [],
-      "sounds": [
-        {
-          "text": "ぴた",
-          "x": 22,
-          "y": 82
-        }
-      ]
+      "sounds": []
     },
     {
       "id": "gap-p065",
       "type": "pause",
-      "height": 130,
-      "purpose": "行き止まりで地図を見直す"
-    },
-    {
-      "id": "p065-voice",
-      "type": "voice",
-      "speaker": "航",
-      "text": "地図だと\n近いのに…",
-      "height": 152,
-      "x": 35,
-      "y": 49,
-      "purpose": "図と現地の違いに迷う。言葉の後に同じ瞬間の顔・手を読む"
+      "height": 200,
+      "purpose": "帰る道に運ぶ人の日常がある"
     },
     {
       "id": "p065",
@@ -2144,23 +2164,35 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "図と現地の違いに迷う。KOH turns map upside down near dead end frowning LIZE patient",
-      "widthPercent": 82,
-      "align": "right",
-      "frame": "thin",
-      "purpose": "図と現地の違いに迷う",
+      "alt": "荷運び人と橋の地理を示す。Wide stone bridge with elderly PORTER grey moustache patched cap handcart stacked wooden produce crates moving uphill, KOH entering opposite end",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "荷運び人と橋の地理を示す",
       "dialogue": [],
-      "sounds": []
+      "sounds": [
+        {
+          "text": "ごろ ごろ",
+          "x": 22,
+          "y": 82
+        }
+      ]
+    },
+    {
+      "id": "gap-p066",
+      "type": "pause",
+      "height": 100,
+      "purpose": "穏やかな荷車の音に急かす声が割り込む"
     },
     {
       "id": "p066-voice",
       "type": "voice",
-      "speaker": "リゼ",
-      "text": "紙を下げて\n水の音 聞こえる？",
-      "height": 240,
-      "x": 70,
+      "speaker": "帰還者",
+      "text": "おい どいて！\n集合に遅れる！",
+      "height": 196,
+      "x": 65,
       "y": 49,
-      "purpose": "答えでなく手掛かりを渡す。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "急いでいる帰還者が迫る。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p066",
@@ -2176,13 +2208,23 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "答えでなく手掛かりを渡す。LIZE gently holds one finger near ear indicating listen not pointing route",
+      "alt": "急いでいる帰還者が迫る。Two flashy adult male PLAYERS with armor and dark diamond-clasp cape hurry behind PORTER cart, lead man cropped blond hair points ahead",
       "widthPercent": 94,
-      "align": "left",
+      "align": "center",
       "frame": "thin",
-      "purpose": "答えでなく手掛かりを渡す",
+      "purpose": "急いでいる帰還者が迫る",
       "dialogue": [],
       "sounds": []
+    },
+    {
+      "id": "p067-voice",
+      "type": "voice",
+      "speaker": "荷運び人",
+      "text": "待ってくれ\nすぐ寄せるから",
+      "height": 196,
+      "x": 40,
+      "y": 49,
+      "purpose": "安全な道幅が足りない。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p067",
@@ -2198,35 +2240,13 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "見るのをやめ耳を澄ます。KOH lowers map closes mouth listening sack left arm ears alert",
-      "widthPercent": 82,
+      "alt": "安全な道幅が足りない。PORTER pulls loaded handcart toward narrow bridge edge pedestrians between stone parapets cannot pass",
+      "widthPercent": 94,
       "align": "center",
       "frame": "thin",
-      "purpose": "見るのをやめ耳を澄ます",
+      "purpose": "安全な道幅が足りない",
       "dialogue": [],
-      "sounds": [
-        {
-          "text": "サァ…",
-          "x": 22,
-          "y": 82
-        }
-      ]
-    },
-    {
-      "id": "gap-p068",
-      "type": "pause",
-      "height": 250,
-      "purpose": "耳を澄ませ自分で方向を選ぶ"
-    },
-    {
-      "id": "p068-voice",
-      "type": "voice",
-      "speaker": "航",
-      "text": "…こっちから！",
-      "height": 196,
-      "x": 50,
-      "y": 49,
-      "purpose": "自分で方向を選び直す。言葉の後に同じ瞬間の顔・手を読む"
+      "sounds": []
     },
     {
       "id": "p068",
@@ -2242,13 +2262,19 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "自分で方向を選び直す。Close KOH eyes turn toward side passage slight realization",
-      "widthPercent": 82,
-      "align": "right",
+      "alt": "横着な追い越しが荷車を崩す。Lead blond PLAYER plants boot on protruding cart shaft to vault past, shaft dips abruptly, PORTER hand slips",
+      "widthPercent": 72,
+      "align": "center",
       "frame": "thin",
-      "purpose": "自分で方向を選び直す",
+      "purpose": "横着な追い越しが荷車を崩す",
       "dialogue": [],
-      "sounds": []
+      "sounds": [
+        {
+          "text": "ガッ",
+          "x": 22,
+          "y": 82
+        }
+      ]
     },
     {
       "id": "p069",
@@ -2264,15 +2290,15 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "戻る行動を省略しない。KOH retraces fork turns along stream narrow bright lane LIZE follows",
+      "alt": "荷物と人に被害が出る。Diagonal dynamic scene wooden crates tilt from cart and PORTER falls to knees one hand bracing on cobbles apples spilling, no blood",
       "widthPercent": 100,
       "align": "center",
       "frame": "none",
-      "purpose": "戻る行動を省略しない",
+      "purpose": "荷物と人に被害が出る",
       "dialogue": [],
       "sounds": [
         {
-          "text": "コツ コツ",
+          "text": "ガラッ",
           "x": 22,
           "y": 82
         }
@@ -2281,90 +2307,82 @@
     {
       "id": "gap-p070",
       "type": "pause",
-      "height": 260,
-      "purpose": "歩き直した先で音だけをたどる"
+      "height": 120,
+      "purpose": "転倒の衝撃を受けて駆け寄る"
+    },
+    {
+      "id": "p070-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "大丈夫ですか！",
+      "height": 196,
+      "x": 35,
+      "y": 49,
+      "purpose": "予定を捨て駆け寄る。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p070",
       "type": "panel",
-      "image": "rough/waterpath.png",
+      "image": "rough/sheet-09.png",
       "imageSize": [
         887,
         1774
       ],
       "crop": [
-        0,
-        0.5,
-        1,
-        0.5
+        0.5022547914317925,
+        0.555,
+        0.4954904171364149,
+        0.19387260428410372
       ],
-      "alt": "音に沿って近づく。Water channel descends beside stone steps leafy shadows no wheel yet",
-      "widthPercent": 100,
-      "align": "center",
-      "frame": "none",
-      "purpose": "音に沿って近づく",
+      "alt": "予定を捨て駆け寄る。Close KOH alarmed turns toward fallen porter as apple rolls to his boot",
+      "widthPercent": 94,
+      "align": "right",
+      "frame": "thin",
+      "purpose": "予定を捨て駆け寄る",
       "dialogue": [],
-      "sounds": [
-        {
-          "text": "ァァ…",
-          "x": 22,
-          "y": 82
-        }
-      ]
-    },
-    {
-      "id": "gap-p071",
-      "type": "pause",
-      "height": 280,
-      "purpose": "水の流れを下へたどった先で初めて水車を見せる"
+      "sounds": []
     },
     {
       "id": "p071-voice",
       "type": "voice",
       "speaker": "航",
-      "text": "着いた！",
-      "height": 150,
-      "x": 30,
+      "text": "手を…\n怪我してる",
+      "height": 152,
+      "x": 35,
       "y": 49,
-      "purpose": "音源と目的地を大きく開く。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "何が起きたか確かめる。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p071",
       "type": "panel",
-      "image": "rough/wheel.png",
+      "image": "rough/sheet-09.png",
       "imageSize": [
         887,
         1774
       ],
       "crop": [
-        0,
-        0,
-        1,
-        1
+        0.002254791431792559,
+        0.8049999999999999,
+        0.4954904171364149,
+        0.19387260428410372
       ],
-      "alt": "音源と目的地を大きく開く。Wide majestic wooden waterwheel at stone mill clear flowing river and workers, KOH LIZE small foreground",
-      "widthPercent": 100,
+      "alt": "何が起きたか確かめる。KOH kneels beside PORTER who holds sore right wrist with left hand, cart tilted against bridge parapet",
+      "widthPercent": 94,
       "align": "right",
-      "frame": "none",
-      "purpose": "音源と目的地を大きく開く",
+      "frame": "thin",
+      "purpose": "何が起きたか確かめる",
       "dialogue": [],
-      "sounds": [
-        {
-          "text": "ごとん ごとん",
-          "x": 22,
-          "y": 82
-        }
-      ]
+      "sounds": []
     },
     {
       "id": "p072-voice",
       "type": "voice",
       "speaker": "航",
-      "text": "道は違っても\n水はつながってた！",
-      "height": 240,
-      "x": 40,
+      "text": "待って！",
+      "height": 150,
+      "x": 35,
       "y": 49,
-      "purpose": "発見を言葉にして共有。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "立ち去る相手を止める。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p072",
@@ -2380,29 +2398,29 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "発見を言葉にして共有。KOH grins at LIZE pointing back toward lane clutching empty sack",
+      "alt": "立ち去る相手を止める。Low view blond PLAYER boots continue away beyond fallen apples, KOH looks up from kneeling PORTER",
       "widthPercent": 94,
       "align": "right",
       "frame": "thin",
-      "purpose": "発見を言葉にして共有",
+      "purpose": "立ち去る相手を止める",
       "dialogue": [],
       "sounds": []
     },
     {
       "id": "gap-p073",
       "type": "pause",
-      "height": 180,
-      "purpose": "見つけた喜びから実際の返却へ"
+      "height": 160,
+      "purpose": "去ろうとする相手の前に立つ"
     },
     {
       "id": "p073-voice",
       "type": "voice",
-      "speaker": "職人",
-      "text": "ありがと！\n明日も使うから",
+      "speaker": "航",
+      "text": "ぶつかった人が\n怪我してるんだ",
       "height": 196,
-      "x": 30,
+      "x": 35,
       "y": 49,
-      "purpose": "返却完了と袋の次の用途。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "助けを求める。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p073",
@@ -2418,29 +2436,23 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "返却完了と袋の次の用途。MILL WORKER ponytail rolled sleeves apron doorway receives ONE flat sack from KOH",
+      "alt": "助けを求める。KOH stands one step before blond PLAYER while second player waits behind, fallen cart and PORTER visible farther behind",
       "widthPercent": 94,
-      "align": "center",
+      "align": "right",
       "frame": "thin",
-      "purpose": "返却完了と袋の次の用途",
+      "purpose": "助けを求める",
       "dialogue": [],
-      "sounds": [
-        {
-          "text": "ぱさ",
-          "x": 22,
-          "y": 82
-        }
-      ]
+      "sounds": []
     },
     {
       "id": "p074-voice",
       "type": "voice",
-      "speaker": "航",
-      "text": "袋って\n捨てないんですね",
-      "height": 218,
-      "x": 50,
+      "speaker": "帰還者",
+      "text": "通路の真ん中に\nいたからだろ",
+      "height": 196,
+      "x": 65,
       "y": 49,
-      "purpose": "再利用を問いにする。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "責任を押し返す。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p074",
@@ -2456,23 +2468,29 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "再利用を問いにする。Worker hangs returned sack on peg KOH hands empty LIZE behind",
-      "widthPercent": 72,
-      "align": "right",
+      "alt": "責任を押し返す。Blond PLAYER glances dismissively backward at PORTER, arms loose, no weapon drawn",
+      "widthPercent": 82,
+      "align": "center",
       "frame": "thin",
-      "purpose": "再利用を問いにする",
+      "purpose": "責任を押し返す",
       "dialogue": [],
       "sounds": []
     },
     {
+      "id": "gap-p075",
+      "type": "pause",
+      "height": 80,
+      "purpose": "責任を拒まれて引き下がれない"
+    },
+    {
       "id": "p075-voice",
       "type": "voice",
-      "speaker": "職人",
-      "text": "ほつれを縫えば\n何度だって",
-      "height": 196,
-      "x": 50,
+      "speaker": "航",
+      "text": "先に謝ってよ\n荷物も…",
+      "height": 174,
+      "x": 35,
       "y": 49,
-      "purpose": "暮らしの工夫を知る。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "行動を要求する。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p075",
@@ -2488,23 +2506,23 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "暮らしの工夫を知る。Worker points to mended sack seam and laughs",
+      "alt": "行動を要求する。KOH opens arms across path tense brows feet planted, hand away from own sheathed sword",
       "widthPercent": 94,
-      "align": "center",
+      "align": "right",
       "frame": "thin",
-      "purpose": "暮らしの工夫を知る",
+      "purpose": "行動を要求する",
       "dialogue": [],
       "sounds": []
     },
     {
       "id": "p076-voice",
       "type": "voice",
-      "speaker": "航",
-      "text": "この音で\n粉をひいてるんだ",
-      "height": 218,
-      "x": 50,
+      "speaker": "帰還者",
+      "text": "ＮＰＣ相手に\n何 ムキになってんの",
+      "height": 262,
+      "x": 60,
       "y": 49,
-      "purpose": "水とパンの間の仕事を見る。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "人として見ない言葉。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p076",
@@ -2520,29 +2538,19 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "水とパンの間の仕事を見る。Mill interior wheel axle turns grain stone sacks neat worker at lever small wind spirit above",
-      "widthPercent": 100,
-      "align": "right",
-      "frame": "none",
-      "purpose": "水とパンの間の仕事を見る",
+      "alt": "人として見ない言葉。Close blond PLAYER annoyed face looks down at KOH, second player impatient over shoulder",
+      "widthPercent": 82,
+      "align": "center",
+      "frame": "thin",
+      "purpose": "人として見ない言葉",
       "dialogue": [],
-      "sounds": [
-        {
-          "text": "ごとん ごとん",
-          "x": 22,
-          "y": 82
-        }
-      ]
+      "sounds": []
     },
     {
-      "id": "p077-voice",
-      "type": "voice",
-      "speaker": "職人",
-      "text": "はい\n袋の運び賃",
-      "height": 152,
-      "x": 50,
-      "y": 49,
-      "purpose": "対価を提示。言葉の後に同じ瞬間の顔・手を読む"
+      "id": "gap-p077",
+      "type": "pause",
+      "height": 100,
+      "purpose": "相手の言葉を受ける間"
     },
     {
       "id": "p077",
@@ -2558,13 +2566,19 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "対価を提示。Worker extends palm with EXACTLY TWO copper coins toward KOH",
-      "widthPercent": 72,
+      "alt": "力で会話を切る。PLAYER open palm shoves KOH shoulder hard, KOH loses balance backward, swords all sheathed",
+      "widthPercent": 100,
       "align": "center",
-      "frame": "thin",
-      "purpose": "対価を提示",
+      "frame": "none",
+      "purpose": "力で会話を切る",
       "dialogue": [],
-      "sounds": []
+      "sounds": [
+        {
+          "text": "ドン",
+          "x": 22,
+          "y": 82
+        }
+      ]
     },
     {
       "id": "p078",
@@ -2580,15 +2594,15 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "対価が手に移る。Close TWO coins transfer to KOH open palm other palm withdraws",
-      "widthPercent": 72,
+      "alt": "さっきの成功が地面に落ちる。KOH sits fallen on cobbles palm scraped lightly, exactly TWO copper coins scattered near his boot, furious shocked eyes",
+      "widthPercent": 82,
       "align": "center",
       "frame": "thin",
-      "purpose": "対価が手に移る",
+      "purpose": "さっきの成功が地面に落ちる",
       "dialogue": [],
       "sounds": [
         {
-          "text": "ちゃり",
+          "text": "ちゃりん",
           "x": 22,
           "y": 82
         }
@@ -2597,18 +2611,8 @@
     {
       "id": "gap-p079",
       "type": "pause",
-      "height": 180,
-      "purpose": "銅貨の重みを手のひらで受け止める"
-    },
-    {
-      "id": "p079-voice",
-      "type": "voice",
-      "speaker": "航",
-      "text": "俺にも\nもらえるんですか？",
       "height": 240,
-      "x": 50,
-      "y": 49,
-      "purpose": "自分の仕事の値に驚く。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "押し倒され声を失ったあと手が剣へ動く"
     },
     {
       "id": "p079",
@@ -2624,23 +2628,29 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "自分の仕事の値に驚く。KOH stares at two coins on palm surprised not greedy",
-      "widthPercent": 82,
-      "align": "right",
+      "alt": "反射的に剣へ手を伸ばす。Close KOH trembling right hand reaches toward LEFT HIP sheathed sword hilt but blade entirely inside sheath",
+      "widthPercent": 72,
+      "align": "center",
       "frame": "thin",
-      "purpose": "自分の仕事の値に驚く",
+      "purpose": "反射的に剣へ手を伸ばす",
       "dialogue": [],
       "sounds": []
+    },
+    {
+      "id": "gap-p080",
+      "type": "pause",
+      "height": 100,
+      "purpose": "刃を抜く前に手を止める"
     },
     {
       "id": "p080-voice",
       "type": "voice",
       "speaker": "リゼ",
-      "text": "ちゃんと\n届けたぶんだよ",
-      "height": 196,
-      "x": 50,
+      "text": "抜かないで",
+      "height": 152,
+      "x": 65,
       "y": 49,
-      "purpose": "結果に対する報酬と理解。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "刃を抜く直前に止める。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p080",
@@ -2656,29 +2666,23 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "結果に対する報酬と理解。LIZE looks at KOH hands matter of fact warm smile",
+      "alt": "刃を抜く直前に止める。LIZE hand grips KOH right wrist stopping it above still sheathed sword, medium close calm firm face, no smile",
       "widthPercent": 94,
       "align": "left",
       "frame": "thin",
-      "purpose": "結果に対する報酬と理解",
+      "purpose": "刃を抜く直前に止める",
       "dialogue": [],
       "sounds": []
     },
     {
-      "id": "gap-p081",
-      "type": "pause",
-      "height": 170,
-      "purpose": "正当な対価だと知り使い道を自分で決める"
-    },
-    {
       "id": "p081-voice",
       "type": "voice",
-      "speaker": "航",
-      "text": "戻る道\n今度は分かる",
-      "height": 174,
-      "x": 50,
+      "speaker": "リゼ",
+      "text": "その荷車に\n触れたのは あなた？",
+      "height": 262,
+      "x": 35,
       "y": 49,
-      "purpose": "覚えた道を使いたい。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "目撃者と責任を確認する。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p081",
@@ -2694,13 +2698,23 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "覚えた道を使いたい。KOH closes fingers around TWO coins then looks toward bakery lane",
-      "widthPercent": 94,
-      "align": "right",
-      "frame": "thin",
-      "purpose": "覚えた道を使いたい",
+      "alt": "目撃者と責任を確認する。LIZE stands between seated KOH and two adult PLAYERS, firm squared posture, round shield strapped back sword sheathed, bridge guard approaches in background",
+      "widthPercent": 100,
+      "align": "left",
+      "frame": "none",
+      "purpose": "目撃者と責任を確認する",
       "dialogue": [],
       "sounds": []
+    },
+    {
+      "id": "p082-voice",
+      "type": "voice",
+      "speaker": "帰還者",
+      "text": "……急ぐぞ",
+      "height": 152,
+      "x": 60,
+      "y": 49,
+      "purpose": "衛兵を見て立ち去る。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p082",
@@ -2716,29 +2730,19 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "覚えた道で自力帰還。KOH confidently leads LIZE past fork correct lane and two flowerpots in distance",
-      "widthPercent": 100,
+      "alt": "衛兵を見て立ち去る。Blond PLAYER looks toward approaching uniform bridge guard, second PLAYER tugs his cloak urging leave",
+      "widthPercent": 94,
       "align": "center",
-      "frame": "none",
-      "purpose": "覚えた道で自力帰還",
+      "frame": "thin",
+      "purpose": "衛兵を見て立ち去る",
       "dialogue": [],
-      "sounds": [
-        {
-          "text": "コツ コツ",
-          "x": 22,
-          "y": 82
-        }
-      ]
+      "sounds": []
     },
     {
-      "id": "p083-voice",
-      "type": "voice",
-      "speaker": "航",
-      "text": "この二枚で\n小さいの一つ\n買えますか？",
-      "height": 174,
-      "x": 35,
-      "y": 49,
-      "purpose": "金額を確認して注文。言葉の後に同じ瞬間の顔・手を読む"
+      "id": "gap-p083",
+      "type": "pause",
+      "height": 200,
+      "purpose": "相手が去っても怪我と荷物が残る"
     },
     {
       "id": "p083",
@@ -2754,29 +2758,23 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "金額を確認して注文。At bakery KOH places EXACTLY TWO coins on counter baker watches",
-      "widthPercent": 72,
-      "align": "right",
-      "frame": "thin",
-      "purpose": "金額を確認して注文",
+      "alt": "追跡と救護を役割で分ける。Backs of two PLAYERS disappear past bridge guard who turns after them, LIZE kneels to PORTER, KOH standing again behind",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "追跡と救護を役割で分ける",
       "dialogue": [],
-      "sounds": [
-        {
-          "text": "こと",
-          "x": 22,
-          "y": 82
-        }
-      ]
+      "sounds": []
     },
     {
       "id": "p084-voice",
       "type": "voice",
-      "speaker": "パン屋",
-      "text": "ちょうどだよ\nはいどうぞ",
-      "height": 174,
+      "speaker": "リゼ",
+      "text": "動かさないで\n診療所まで行こう",
+      "height": 218,
       "x": 35,
       "y": 49,
-      "purpose": "支払い完了と商品の移動。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "被害は会話が終わっても残る。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p084",
@@ -2792,29 +2790,23 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "支払い完了と商品の移動。BAKER takes two coins and gives ONE small roll wrapped cloth KOH takes it",
+      "alt": "被害は会話が終わっても残る。LIZE wraps clean bandage around PORTER sore right wrist, porter winces, no blood; KOH beside spilled crates",
       "widthPercent": 94,
-      "align": "center",
+      "align": "left",
       "frame": "thin",
-      "purpose": "支払い完了と商品の移動",
+      "purpose": "被害は会話が終わっても残る",
       "dialogue": [],
       "sounds": []
-    },
-    {
-      "id": "gap-p085",
-      "type": "pause",
-      "height": 180,
-      "purpose": "買ったパンを相手に差し出す"
     },
     {
       "id": "p085-voice",
       "type": "voice",
       "speaker": "航",
-      "text": "リゼの分",
-      "height": 150,
+      "text": "すみません\n俺 荷物を戻します",
+      "height": 240,
       "x": 35,
       "y": 49,
-      "purpose": "受けた助けに自分で返す。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "できる仕事へ戻る。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p085",
@@ -2830,23 +2822,19 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "受けた助けに自分で返す。Outside bakery KOH offers only purchased small bread to LIZE, empty other hand",
+      "alt": "できる仕事へ戻る。KOH kneels collecting apples into recovered wooden crate, two copper coins now in closed left belt pouch",
       "widthPercent": 94,
       "align": "right",
       "frame": "thin",
-      "purpose": "受けた助けに自分で返す",
+      "purpose": "できる仕事へ戻る",
       "dialogue": [],
       "sounds": []
     },
     {
-      "id": "p086-voice",
-      "type": "voice",
-      "speaker": "リゼ",
-      "text": "えっ\nコウが食べなよ",
-      "height": 196,
-      "x": 50,
-      "y": 49,
-      "purpose": "相手が一度遠慮する。言葉の後に同じ瞬間の顔・手を読む"
+      "id": "gap-p086",
+      "type": "pause",
+      "height": 160,
+      "purpose": "口では手伝うと言えても指が震える"
     },
     {
       "id": "p086",
@@ -2862,23 +2850,29 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "相手が一度遠慮する。LIZE surprised with hands hovering before bread eyes wide",
-      "widthPercent": 82,
-      "align": "left",
+      "alt": "悔しさと震えを抑えられない。Close KOH hands on apple and rough crate board, small scrape on palm and subtle trembling fingers",
+      "widthPercent": 72,
+      "align": "center",
       "frame": "thin",
-      "purpose": "相手が一度遠慮する",
+      "purpose": "悔しさと震えを抑えられない",
       "dialogue": [],
-      "sounds": []
+      "sounds": [
+        {
+          "text": "かた…",
+          "x": 22,
+          "y": 82
+        }
+      ]
     },
     {
       "id": "p087-voice",
       "type": "voice",
-      "speaker": "航",
-      "text": "道 教えて\nくれたから\n受け取って",
-      "height": 152,
-      "x": 50,
+      "speaker": "荷運び人",
+      "text": "あんたが\n謝ることじゃない",
+      "height": 218,
+      "x": 65,
       "y": 49,
-      "purpose": "理由を自分の言葉で伝える。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "航自身を責める人はいない。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p087",
@@ -2894,29 +2888,29 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "理由を自分の言葉で伝える。KOH earnest shy smile offers bread steadily",
+      "alt": "航自身を責める人はいない。PORTER supported by LIZE looks at KOH who holds crate, face tired kindly but still pained",
       "widthPercent": 94,
-      "align": "right",
+      "align": "center",
       "frame": "thin",
-      "purpose": "理由を自分の言葉で伝える",
+      "purpose": "航自身を責める人はいない",
       "dialogue": [],
       "sounds": []
     },
     {
       "id": "gap-p088",
       "type": "pause",
-      "height": 160,
-      "purpose": "受け取ってほしい理由を聞いて返事を待つ"
+      "height": 230,
+      "purpose": "慰めを受け取れず悔しさが出る"
     },
     {
       "id": "p088-voice",
       "type": "voice",
-      "speaker": "リゼ",
-      "text": "…うん\nありがとう",
-      "height": 152,
-      "x": 50,
+      "speaker": "航",
+      "text": "でも…\n止められなかった",
+      "height": 218,
+      "x": 35,
       "y": 49,
-      "purpose": "相手が返礼を受け入れる。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "本人の望みと結果が食い違う。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p088",
@@ -2932,29 +2926,19 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "相手が返礼を受け入れる。LIZE accepts single bread with both hands gentle smile KOH hands empty",
-      "widthPercent": 94,
-      "align": "left",
+      "alt": "本人の望みと結果が食い違う。KOH eyes down holding recovered crate at bridge edge, throat tense, no cheerful smile",
+      "widthPercent": 82,
+      "align": "right",
       "frame": "thin",
-      "purpose": "相手が返礼を受け入れる",
+      "purpose": "本人の望みと結果が食い違う",
       "dialogue": [],
       "sounds": []
     },
     {
       "id": "gap-p089",
       "type": "pause",
-      "height": 180,
-      "purpose": "受け入れられた返礼を一緒に味わう"
-    },
-    {
-      "id": "p089-voice",
-      "type": "voice",
-      "speaker": "リゼ",
-      "text": "おいしいね",
-      "height": 152,
-      "x": 30,
-      "y": 49,
-      "purpose": "同じ味を共有する。言葉の後に同じ瞬間の顔・手を読む"
+      "height": 160,
+      "purpose": "後始末にかかった時間を歩いてつなぐ"
     },
     {
       "id": "p089",
@@ -2970,23 +2954,29 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "同じ味を共有する。LIZE finishes small bread by riverside folds empty wrapper KOH looks toward familiar bridge",
-      "widthPercent": 94,
-      "align": "left",
-      "frame": "thin",
-      "purpose": "同じ味を共有する",
+      "alt": "後始末に時間がかかる。KOH pushes recovered handcart slowly to clinic entrance; LIZE supports PORTER whose right wrist bandaged, evening shadows",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
+      "purpose": "後始末に時間がかかる",
       "dialogue": [],
-      "sounds": []
+      "sounds": [
+        {
+          "text": "ごろ…",
+          "x": 22,
+          "y": 82
+        }
+      ]
     },
     {
       "id": "p090-voice",
       "type": "voice",
-      "speaker": "リゼ",
-      "text": "そろそろ巡回\n私は行くね",
-      "height": 174,
-      "x": 50,
+      "speaker": "セナ",
+      "text": "中へ\n手を診せて",
+      "height": 152,
+      "x": 65,
       "y": 49,
-      "purpose": "彼女の仕事へ戻る時刻。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "治療は専門家へ渡す。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p090",
@@ -3002,23 +2992,35 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "彼女の仕事へ戻る時刻。LIZE checks small brass patrol token straps round shield sword sheathed",
+      "alt": "治療は専門家へ渡す。SENA opens clinic door and takes PORTER inside, LIZE hands over cloth, KOH stands outside empty hands",
       "widthPercent": 94,
-      "align": "left",
+      "align": "center",
       "frame": "thin",
-      "purpose": "彼女の仕事へ戻る時刻",
+      "purpose": "治療は専門家へ渡す",
       "dialogue": [],
-      "sounds": []
+      "sounds": [
+        {
+          "text": "キィ",
+          "x": 22,
+          "y": 82
+        }
+      ]
+    },
+    {
+      "id": "gap-p091",
+      "type": "pause",
+      "height": 200,
+      "purpose": "患者を渡した後で二人が話す"
     },
     {
       "id": "p091-voice",
       "type": "voice",
-      "speaker": "航",
-      "text": "…気をつけて\nまた明日！",
-      "height": 174,
-      "x": 30,
+      "speaker": "リゼ",
+      "text": "私に声をかけて\n一人で止めなくていい",
+      "height": 262,
+      "x": 65,
       "y": 49,
-      "purpose": "引き止めず見送る選択。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "無力感と危険を切り分ける。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p091",
@@ -3034,29 +3036,23 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "引き止めず見送る選択。KOH starts raising hand as if ask company then lowers it looks toward station",
+      "alt": "無力感と危険を切り分ける。LIZE facing KOH outside clinic quiet evening, KOH fist tightly closed looking down",
       "widthPercent": 94,
-      "align": "right",
+      "align": "left",
       "frame": "thin",
-      "purpose": "引き止めず見送る選択",
+      "purpose": "無力感と危険を切り分ける",
       "dialogue": [],
       "sounds": []
     },
     {
-      "id": "gap-p092",
-      "type": "pause",
-      "height": 210,
-      "purpose": "行ってしまう相手へ別れの声が届く"
-    },
-    {
       "id": "p092-voice",
       "type": "voice",
-      "speaker": "リゼ",
-      "text": "来るなら\n日暮れ前にね！",
-      "height": 196,
-      "x": 65,
+      "speaker": "航",
+      "text": "明日…\n剣 教えてくれない？",
+      "height": 262,
+      "x": 35,
       "y": 49,
-      "purpose": "次の約束と退場。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "悔しさから習うことを選ぶ。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p092",
@@ -3072,29 +3068,29 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "次の約束と退場。LIZE turns to wave then walks to patrol station away from KOH",
-      "widthPercent": 100,
-      "align": "left",
-      "frame": "none",
-      "purpose": "次の約束と退場",
+      "alt": "悔しさから習うことを選ぶ。KOH looks up at LIZE earnest shaken, fingers still scrape visible",
+      "widthPercent": 82,
+      "align": "right",
+      "frame": "thin",
+      "purpose": "悔しさから習うことを選ぶ",
       "dialogue": [],
       "sounds": []
     },
     {
       "id": "gap-p093",
       "type": "pause",
-      "height": 330,
-      "purpose": "見送った後も町の仕事が続いている"
+      "height": 220,
+      "purpose": "剣を教えてほしいという言葉を聞いて考える"
     },
     {
       "id": "p093-voice",
       "type": "voice",
-      "speaker": "航",
-      "text": "明日も\nこの道から来よう",
-      "height": 218,
-      "x": 50,
+      "speaker": "リゼ",
+      "text": "…うん\nまず 身を守るところから",
+      "height": 306,
+      "x": 65,
       "y": 49,
-      "purpose": "町の道が自分の道になる。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "強くなりたい気持ちに境界を示す。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p093",
@@ -3110,59 +3106,57 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "町の道が自分の道になる。KOH alone folds map into pouch by street lamplighter lighting rune lamp",
-      "widthPercent": 100,
-      "align": "right",
-      "frame": "none",
-      "purpose": "町の道が自分の道になる",
+      "alt": "強くなりたい気持ちに境界を示す。LIZE studies KOH face seriously outside clinic, hand lightly resting on shield strap",
+      "widthPercent": 82,
+      "align": "left",
+      "frame": "thin",
+      "purpose": "強くなりたい気持ちに境界を示す",
       "dialogue": [],
-      "sounds": [
-        {
-          "text": "ポッ",
-          "x": 22,
-          "y": 82
-        }
-      ]
+      "sounds": []
     },
     {
       "id": "gap-p094",
       "type": "pause",
-      "height": 150,
-      "purpose": "自分の道を覚えた実感から町全体へ開く"
+      "height": 250,
+      "purpose": "約束しても気持ちは晴れない"
+    },
+    {
+      "id": "p094-voice",
+      "type": "voice",
+      "speaker": "航・心",
+      "text": "パン\n買いそびれたな",
+      "height": 196,
+      "x": 50,
+      "y": 49,
+      "purpose": "善意の小さな予定も果たせなかった。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p094",
       "type": "panel",
-      "image": "rough/dusk.png",
+      "image": "rough/sheet-12.png",
       "imageSize": [
         887,
         1774
       ],
       "crop": [
-        0,
-        0,
-        1,
-        1
+        0.5022547914317925,
+        0.555,
+        0.4954904171364149,
+        0.19387260428410372
       ],
-      "alt": "人々の明日が続く町。Wide dusk Milt warm windows flowing river bakers closing shop children home, KOH small alone",
+      "alt": "善意の小さな予定も果たせなかった。KOH alone walks evening plaza with two copper coins on palm; bakery shutters already closed in background, no bread",
       "widthPercent": 100,
-      "align": "center",
+      "align": "right",
       "frame": "none",
-      "purpose": "人々の明日が続く町",
+      "purpose": "善意の小さな予定も果たせなかった",
       "dialogue": [],
-      "sounds": [
-        {
-          "text": "からん",
-          "x": 22,
-          "y": 82
-        }
-      ]
+      "sounds": []
     },
     {
       "id": "gap-p095",
       "type": "pause",
-      "height": 400,
-      "purpose": "夕暮れの生活の余韻から新たな通知へ"
+      "height": 240,
+      "purpose": "買えなかったパンから強さの募集へ"
     },
     {
       "id": "p095-voice",
@@ -3172,7 +3166,7 @@
       "height": 174,
       "x": 50,
       "y": 49,
-      "purpose": "暮らしのあとに冒険の誘い。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "事件の後に強さへの誘いが現れる。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p095",
@@ -3188,11 +3182,11 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "暮らしのあとに冒険の誘い。Close KOH wrist notification plain translucent blank interface over dusk market",
+      "alt": "事件の後に強さへの誘いが現れる。Close KOH wrist with plain translucent blank rectangular HUD above evening plaza, background group armored adult players walking toward banner",
       "widthPercent": 94,
       "align": "center",
       "frame": "thin",
-      "purpose": "暮らしのあとに冒険の誘い",
+      "purpose": "事件の後に強さへの誘いが現れる",
       "dialogue": [],
       "sounds": [
         {
@@ -3205,18 +3199,18 @@
     {
       "id": "gap-p096",
       "type": "pause",
-      "height": 230,
-      "purpose": "募集の文字を受けた顔の期待で閉じる"
+      "height": 250,
+      "purpose": "募集を見て本人の未熟な願いが残る"
     },
     {
       "id": "p096-voice",
       "type": "voice",
       "speaker": "航・心",
-      "text": "俺も\n行けるかな…？",
+      "text": "強ければ\n止められたのか",
       "height": 196,
       "x": 50,
       "y": 49,
-      "purpose": "次話への憧れ 戦闘は未経験のまま。言葉の後に同じ瞬間の顔・手を読む"
+      "purpose": "未熟な強さへの欲求を残して閉じる。言葉の後に同じ瞬間の顔・手を読む"
     },
     {
       "id": "p096",
@@ -3232,11 +3226,11 @@
         0.4954904171364149,
         0.19387260428410372
       ],
-      "alt": "次話への憧れ 戦闘は未経験のまま。KOH face lifts with excitement dusk town behind sword still sheathed hands empty",
+      "alt": "未熟な強さへの欲求を残して閉じる。KOH face half shadow gazes from bare scraped palm to sheathed sword, then toward distant armored player group, jaw tense determined not smiling, dusk rooftops",
       "widthPercent": 82,
       "align": "right",
       "frame": "thin",
-      "purpose": "次話への憧れ 戦闘は未経験のまま",
+      "purpose": "未熟な強さへの欲求を残して閉じる",
       "dialogue": [],
       "sounds": []
     }
@@ -4995,21 +4989,21 @@
     },
     {
       "id": "p057",
-      "scene": "今度は自分で",
-      "art": "BAKER outside shop holds ONE visibly flat folded EMPTY flour sack, KOH LIZE turn",
-      "newUnderstanding": "新しい依頼が来る",
+      "scene": "一人でできたこと",
+      "art": "BAKER holds one flat folded EMPTY sack outside shop, KOH and LIZE stand",
+      "newUnderstanding": "もう一つの頼み",
       "effective": true,
       "camera": "medium action",
       "dialogue": [
         {
           "speaker": "パン屋",
-          "text": "もうひとつ\n頼んでいいかい？",
+          "text": "この空袋も\n水車へ返せるかい？",
           "columns": [
-            "もうひとつ",
-            "頼んでいいかい？"
+            "この空袋も",
+            "水車へ返せるかい？"
           ],
           "tone": "normal",
-          "intent": "新しい依頼が来る"
+          "intent": "もう一つの頼み"
         }
       ],
       "sound": {
@@ -5017,8 +5011,8 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "今度は自分で・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／贈り物のパン食了",
+      "connection": "一人でできたこと・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／空袋を受け取る",
       "layout": {
         "widthPercent": 94,
         "align": "center"
@@ -5027,21 +5021,21 @@
     },
     {
       "id": "p058",
-      "scene": "今度は自分で",
-      "art": "BAKER shows limp sack seam not filled, points upriver",
-      "newUnderstanding": "軽い返却物と目的地",
+      "scene": "一人でできたこと",
+      "art": "LIZE points uphill then toward patrol station while KOH accepts flat sack",
+      "newUnderstanding": "一人で行く条件を示す",
       "effective": true,
       "camera": "establishing/path",
       "dialogue": [
         {
-          "speaker": "パン屋",
-          "text": "空の袋を水車へ\n返してほしいんだ",
+          "speaker": "リゼ",
+          "text": "私は巡回の支度\n水沿いなら一本道よ",
           "columns": [
-            "空の袋を水車へ",
-            "返してほしいんだ"
+            "私は巡回の支度",
+            "水沿いなら一本道よ"
           ],
           "tone": "normal",
-          "intent": "軽い返却物と目的地"
+          "intent": "一人で行く条件を示す"
         }
       ],
       "sound": {
@@ -5049,40 +5043,39 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "今度は自分で・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／贈り物のパン食了",
+      "connection": "一人でできたこと・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／空袋を保持・リゼは巡回支度で別行動",
       "layout": {
         "widthPercent": 100,
-        "align": "center"
+        "align": "left"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p059",
-      "scene": "今度は自分で",
-      "art": "KOH glances at sky daylight then folded paper map",
-      "newUnderstanding": "時間と能力を判断",
+      "scene": "一人でできたこと",
+      "art": "KOH alone carrying flat sack under arm beside clear stone water channel",
+      "newUnderstanding": "自信をもって引き受ける",
       "effective": true,
       "camera": "medium action",
       "dialogue": [
         {
           "speaker": "航",
-          "text": "水車なら\nまだ間に合うかな",
+          "text": "任せて！",
           "columns": [
-            "水車なら",
-            "まだ間に合うかな"
+            "任せて！"
           ],
-          "tone": "normal",
-          "intent": "時間と能力を判断"
+          "tone": "shout",
+          "intent": "自信をもって引き受ける"
         }
       ],
       "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
+        "mode": "new",
+        "text": "コツ コツ",
+        "reason": "動作と音源を示す"
       },
-      "connection": "今度は自分で・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／贈り物のパン食了",
+      "connection": "一人でできたこと・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／空袋を保持・リゼは巡回支度で別行動",
       "layout": {
         "widthPercent": 94,
         "align": "right"
@@ -5091,125 +5084,30 @@
     },
     {
       "id": "p060",
-      "scene": "今度は自分で",
-      "art": "LIZE points to light over roofs relaxed",
-      "newUnderstanding": "判断に必要な返答",
-      "effective": true,
-      "camera": "medium action",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "ここからなら\n大丈夫だよ",
-          "columns": [
-            "ここからなら",
-            "大丈夫だよ"
-          ],
-          "tone": "normal",
-          "intent": "判断に必要な返答"
-        }
-      ],
-      "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
-      },
-      "connection": "今度は自分で・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／贈り物のパン食了",
-      "layout": {
-        "widthPercent": 94,
-        "align": "left"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p061",
-      "scene": "今度は自分で",
-      "art": "KOH takes ONE flat sack under left arm map right hand",
-      "newUnderstanding": "自分で引き受ける",
-      "effective": true,
-      "camera": "medium action",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "やってみます",
-          "columns": [
-            "やってみます"
-          ],
-          "tone": "normal",
-          "intent": "自分で引き受ける"
-        }
-      ],
-      "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
-      },
-      "connection": "今度は自分で・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
-      "layout": {
-        "widthPercent": 94,
-        "align": "right"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p062",
-      "scene": "今度は自分で",
-      "art": "LIZE follows half step behind KOH takes lead away bakery",
-      "newUnderstanding": "役割が逆になる",
-      "effective": true,
-      "camera": "detail",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "今度は\n私がついてくね",
-          "columns": [
-            "今度は",
-            "私がついてくね"
-          ],
-          "tone": "normal",
-          "intent": "役割が逆になる"
-        }
-      ],
-      "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
-      },
-      "connection": "今度は自分で・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
-      "layout": {
-        "widthPercent": 72,
-        "align": "left"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p063",
-      "scene": "今度は自分で",
-      "art": "KOH at fork confidently points to narrow lane map in hand flat sack under arm",
-      "newUnderstanding": "見え方だけで選ぶ試み",
+      "scene": "一人でできたこと",
+      "art": "KOH arrives stone mill with large wooden waterwheel, holds folded flat sack",
+      "newUnderstanding": "水に沿って到着",
       "effective": true,
       "camera": "establishing/path",
       "dialogue": [
         {
           "speaker": "航",
-          "text": "橋から見えたから\nこの道だ！",
+          "text": "パン屋さんから\n袋です",
           "columns": [
-            "橋から見えたから",
-            "この道だ！"
+            "パン屋さんから",
+            "袋です"
           ],
           "tone": "normal",
-          "intent": "見え方だけで選ぶ試み"
+          "intent": "水に沿って到着"
         }
       ],
       "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
+        "mode": "new",
+        "text": "ごとん ごとん",
+        "reason": "動作と音源を示す"
       },
-      "connection": "今度は自分で・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
+      "connection": "一人でできたこと・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／空袋を保持・リゼは巡回支度で別行動",
       "layout": {
         "widthPercent": 100,
         "align": "right"
@@ -5217,85 +5115,171 @@
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
-      "id": "p064",
-      "scene": "今度は自分で",
-      "art": "KOH and LIZE stop at closed garden fence lane dead end, sack unchanged",
-      "newUnderstanding": "選んだ道が違った結果",
+      "id": "p061",
+      "scene": "一人でできたこと",
+      "art": "MILL WORKER ponytail takes ONE flat sack from KOH",
+      "newUnderstanding": "返却の完了",
       "effective": true,
-      "camera": "close acting",
+      "camera": "medium action",
       "dialogue": [
         {
-          "speaker": "航",
-          "text": "…あれ？",
+          "speaker": "職人",
+          "text": "助かったよ\n明日も使うから",
           "columns": [
-            "…あれ？"
+            "助かったよ",
+            "明日も使うから"
           ],
           "tone": "normal",
-          "intent": "選んだ道が違った結果"
+          "intent": "返却の完了"
         }
       ],
       "sound": {
         "mode": "new",
-        "text": "ぴた",
+        "text": "ぱさ",
         "reason": "動作と音源を示す"
       },
-      "connection": "今度は自分で・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
+      "connection": "一人でできたこと・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／空袋を職人に返却",
+      "layout": {
+        "widthPercent": 94,
+        "align": "center"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p062",
+      "scene": "一人でできたこと",
+      "art": "MILL WORKER places exactly TWO copper coins into KOH open palm close-up",
+      "newUnderstanding": "初めて対価を得る",
+      "effective": true,
+      "camera": "detail",
+      "dialogue": [
+        {
+          "speaker": "職人",
+          "text": "はい\n運び賃",
+          "columns": [
+            "はい",
+            "運び賃"
+          ],
+          "tone": "normal",
+          "intent": "初めて対価を得る"
+        }
+      ],
+      "sound": {
+        "mode": "new",
+        "text": "ちゃり",
+        "reason": "動作と音源を示す"
+      },
+      "connection": "一人でできたこと・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入",
+      "layout": {
+        "widthPercent": 72,
+        "align": "center"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p063",
+      "scene": "一人でできたこと",
+      "art": "KOH alone looking at two copper coins on palm pleased small smile",
+      "newUnderstanding": "小さな成功を自信にする",
+      "effective": true,
+      "camera": "close acting",
+      "dialogue": [
+        {
+          "speaker": "航・心",
+          "text": "俺 一人でも\nできた",
+          "columns": [
+            "俺 一人でも",
+            "できた"
+          ],
+          "tone": "thought",
+          "intent": "小さな成功を自信にする"
+        }
+      ],
+      "sound": {
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
+      },
+      "connection": "一人でできたこと・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入",
       "layout": {
         "widthPercent": 82,
+        "align": "right"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p064",
+      "scene": "一人でできたこと",
+      "art": "KOH closes hand around coins and heads down channel toward arched bridge",
+      "newUnderstanding": "返礼という帰りの目的",
+      "effective": true,
+      "camera": "establishing/path",
+      "dialogue": [
+        {
+          "speaker": "航・心",
+          "text": "リゼにも\nパン 買って戻ろう",
+          "columns": [
+            "リゼにも",
+            "パン 買って戻ろう"
+          ],
+          "tone": "thought",
+          "intent": "返礼という帰りの目的"
+        }
+      ],
+      "sound": {
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
+      },
+      "connection": "一人でできたこと・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入",
+      "layout": {
+        "widthPercent": 100,
         "align": "right"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p065",
-      "scene": "音で辿り直す",
-      "art": "KOH turns map upside down near dead end frowning LIZE patient",
-      "newUnderstanding": "図と現地の違いに迷う",
+      "scene": "橋の上の急行",
+      "art": "Wide stone bridge with elderly PORTER grey moustache patched cap handcart stacked wooden produce crates moving uphill, KOH entering opposite end",
+      "newUnderstanding": "荷運び人と橋の地理を示す",
       "effective": true,
-      "camera": "close acting",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "地図だと\n近いのに…",
-          "columns": [
-            "地図だと",
-            "近いのに…"
-          ],
-          "tone": "normal",
-          "intent": "図と現地の違いに迷う"
-        }
-      ],
+      "camera": "establishing/path",
+      "dialogue": [],
       "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
+        "mode": "new",
+        "text": "ごろ ごろ",
+        "reason": "動作と音源を示す"
       },
-      "connection": "音で辿り直す・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
+      "connection": "橋の上の急行・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入",
       "layout": {
-        "widthPercent": 82,
-        "align": "right"
+        "widthPercent": 100,
+        "align": "center"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p066",
-      "scene": "音で辿り直す",
-      "art": "LIZE gently holds one finger near ear indicating listen not pointing route",
-      "newUnderstanding": "答えでなく手掛かりを渡す",
+      "scene": "橋の上の急行",
+      "art": "Two flashy adult male PLAYERS with armor and dark diamond-clasp cape hurry behind PORTER cart, lead man cropped blond hair points ahead",
+      "newUnderstanding": "急いでいる帰還者が迫る",
       "effective": true,
       "camera": "medium action",
       "dialogue": [
         {
-          "speaker": "リゼ",
-          "text": "紙を下げて\n水の音 聞こえる？",
+          "speaker": "帰還者",
+          "text": "おい どいて！\n集合に遅れる！",
           "columns": [
-            "紙を下げて",
-            "水の音 聞こえる？"
+            "おい どいて！",
+            "集合に遅れる！"
           ],
-          "tone": "soft",
-          "intent": "答えでなく手掛かりを渡す"
+          "tone": "shout",
+          "intent": "急いでいる帰還者が迫る"
         }
       ],
       "sound": {
@@ -5303,81 +5287,82 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "音で辿り直す・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
+      "connection": "橋の上の急行・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入",
       "layout": {
         "widthPercent": 94,
-        "align": "left"
+        "align": "center"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p067",
-      "scene": "音で辿り直す",
-      "art": "KOH lowers map closes mouth listening sack left arm ears alert",
-      "newUnderstanding": "見るのをやめ耳を澄ます",
+      "scene": "橋の上の急行",
+      "art": "PORTER pulls loaded handcart toward narrow bridge edge pedestrians between stone parapets cannot pass",
+      "newUnderstanding": "安全な道幅が足りない",
       "effective": true,
-      "camera": "close acting",
-      "dialogue": [],
+      "camera": "medium action",
+      "dialogue": [
+        {
+          "speaker": "荷運び人",
+          "text": "待ってくれ\nすぐ寄せるから",
+          "columns": [
+            "待ってくれ",
+            "すぐ寄せるから"
+          ],
+          "tone": "soft",
+          "intent": "安全な道幅が足りない"
+        }
+      ],
       "sound": {
-        "mode": "new",
-        "text": "サァ…",
-        "reason": "動作と音源を示す"
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "音で辿り直す・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
+      "connection": "橋の上の急行・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入",
       "layout": {
-        "widthPercent": 82,
+        "widthPercent": 94,
         "align": "center"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p068",
-      "scene": "音で辿り直す",
-      "art": "Close KOH eyes turn toward side passage slight realization",
-      "newUnderstanding": "自分で方向を選び直す",
+      "scene": "橋の上の急行",
+      "art": "Lead blond PLAYER plants boot on protruding cart shaft to vault past, shaft dips abruptly, PORTER hand slips",
+      "newUnderstanding": "横着な追い越しが荷車を崩す",
       "effective": true,
-      "camera": "close acting",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "…こっちから！",
-          "columns": [
-            "…こっちから！"
-          ],
-          "tone": "normal",
-          "intent": "自分で方向を選び直す"
-        }
-      ],
+      "camera": "detail",
+      "dialogue": [],
       "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
+        "mode": "new",
+        "text": "ガッ",
+        "reason": "動作と音源を示す"
       },
-      "connection": "音で辿り直す・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
+      "connection": "橋の上の急行・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入",
       "layout": {
-        "widthPercent": 82,
-        "align": "right"
+        "widthPercent": 72,
+        "align": "center"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p069",
-      "scene": "音で辿り直す",
-      "art": "KOH retraces fork turns along stream narrow bright lane LIZE follows",
-      "newUnderstanding": "戻る行動を省略しない",
+      "scene": "橋の上の急行",
+      "art": "Diagonal dynamic scene wooden crates tilt from cart and PORTER falls to knees one hand bracing on cobbles apples spilling, no blood",
+      "newUnderstanding": "荷物と人に被害が出る",
       "effective": true,
       "camera": "establishing/path",
       "dialogue": [],
       "sound": {
         "mode": "new",
-        "text": "コツ コツ",
+        "text": "ガラッ",
         "reason": "動作と音源を示す"
       },
-      "connection": "音で辿り直す・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
+      "connection": "橋の上の急行・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま",
       "layout": {
         "widthPercent": 100,
         "align": "center"
@@ -5386,73 +5371,20 @@
     },
     {
       "id": "p070",
-      "scene": "音で辿り直す",
-      "art": "Water channel descends beside stone steps leafy shadows no wheel yet",
-      "newUnderstanding": "音に沿って近づく",
-      "effective": true,
-      "camera": "establishing/path",
-      "dialogue": [],
-      "sound": {
-        "mode": "continuation",
-        "text": "ァァ…",
-        "reason": "動作と音源を示す"
-      },
-      "connection": "音で辿り直す・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
-      "layout": {
-        "widthPercent": 100,
-        "align": "center"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p071",
-      "scene": "音で辿り直す",
-      "art": "Wide majestic wooden waterwheel at stone mill clear flowing river and workers, KOH LIZE small foreground",
-      "newUnderstanding": "音源と目的地を大きく開く",
-      "effective": true,
-      "camera": "establishing/path",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "着いた！",
-          "columns": [
-            "着いた！"
-          ],
-          "tone": "shout",
-          "intent": "音源と目的地を大きく開く"
-        }
-      ],
-      "sound": {
-        "mode": "new",
-        "text": "ごとん ごとん",
-        "reason": "動作と音源を示す"
-      },
-      "connection": "音で辿り直す・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
-      "layout": {
-        "widthPercent": 100,
-        "align": "right"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p072",
-      "scene": "音で辿り直す",
-      "art": "KOH grins at LIZE pointing back toward lane clutching empty sack",
-      "newUnderstanding": "発見を言葉にして共有",
+      "scene": "橋の上の急行",
+      "art": "Close KOH alarmed turns toward fallen porter as apple rolls to his boot",
+      "newUnderstanding": "予定を捨て駆け寄る",
       "effective": true,
       "camera": "medium action",
       "dialogue": [
         {
           "speaker": "航",
-          "text": "道は違っても\n水はつながってた！",
+          "text": "大丈夫ですか！",
           "columns": [
-            "道は違っても",
-            "水はつながってた！"
+            "大丈夫ですか！"
           ],
-          "tone": "soft",
-          "intent": "発見を言葉にして共有"
+          "tone": "shout",
+          "intent": "予定を捨て駆け寄る"
         }
       ],
       "sound": {
@@ -5460,8 +5392,71 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "音で辿り直す・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／空の粉袋一つと略図",
+      "connection": "橋の上の急行・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま",
+      "layout": {
+        "widthPercent": 94,
+        "align": "right"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p071",
+      "scene": "橋の上の急行",
+      "art": "KOH kneels beside PORTER who holds sore right wrist with left hand, cart tilted against bridge parapet",
+      "newUnderstanding": "何が起きたか確かめる",
+      "effective": true,
+      "camera": "medium action",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "手を…\n怪我してる",
+          "columns": [
+            "手を…",
+            "怪我してる"
+          ],
+          "tone": "soft",
+          "intent": "何が起きたか確かめる"
+        }
+      ],
+      "sound": {
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
+      },
+      "connection": "橋の上の急行・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま",
+      "layout": {
+        "widthPercent": 94,
+        "align": "right"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p072",
+      "scene": "橋の上の急行",
+      "art": "Low view blond PLAYER boots continue away beyond fallen apples, KOH looks up from kneeling PORTER",
+      "newUnderstanding": "立ち去る相手を止める",
+      "effective": true,
+      "camera": "medium action",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "待って！",
+          "columns": [
+            "待って！"
+          ],
+          "tone": "shout",
+          "intent": "立ち去る相手を止める"
+        }
+      ],
+      "sound": {
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
+      },
+      "connection": "橋の上の急行・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま",
       "layout": {
         "widthPercent": 94,
         "align": "right"
@@ -5470,53 +5465,53 @@
     },
     {
       "id": "p073",
-      "scene": "二枚の重さ",
-      "art": "MILL WORKER ponytail rolled sleeves apron doorway receives ONE flat sack from KOH",
-      "newUnderstanding": "返却完了と袋の次の用途",
+      "scene": "止まらない相手",
+      "art": "KOH stands one step before blond PLAYER while second player waits behind, fallen cart and PORTER visible farther behind",
+      "newUnderstanding": "助けを求める",
       "effective": true,
       "camera": "medium action",
       "dialogue": [
         {
-          "speaker": "職人",
-          "text": "ありがと！\n明日も使うから",
+          "speaker": "航",
+          "text": "ぶつかった人が\n怪我してるんだ",
           "columns": [
-            "ありがと！",
-            "明日も使うから"
+            "ぶつかった人が",
+            "怪我してるんだ"
           ],
           "tone": "normal",
-          "intent": "返却完了と袋の次の用途"
+          "intent": "助けを求める"
         }
       ],
       "sound": {
-        "mode": "new",
-        "text": "ぱさ",
-        "reason": "動作と音源を示す"
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "二枚の重さ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／袋は職人へ返却・航に袋なし",
+      "connection": "止まらない相手・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま",
       "layout": {
         "widthPercent": 94,
-        "align": "center"
+        "align": "right"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p074",
-      "scene": "二枚の重さ",
-      "art": "Worker hangs returned sack on peg KOH hands empty LIZE behind",
-      "newUnderstanding": "再利用を問いにする",
+      "scene": "止まらない相手",
+      "art": "Blond PLAYER glances dismissively backward at PORTER, arms loose, no weapon drawn",
+      "newUnderstanding": "責任を押し返す",
       "effective": true,
-      "camera": "detail",
+      "camera": "close acting",
       "dialogue": [
         {
-          "speaker": "航",
-          "text": "袋って\n捨てないんですね",
+          "speaker": "帰還者",
+          "text": "通路の真ん中に\nいたからだろ",
           "columns": [
-            "袋って",
-            "捨てないんですね"
+            "通路の真ん中に",
+            "いたからだろ"
           ],
           "tone": "normal",
-          "intent": "再利用を問いにする"
+          "intent": "責任を押し返す"
         }
       ],
       "sound": {
@@ -5524,95 +5519,31 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "二枚の重さ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／袋は職人へ返却・航に袋なし",
+      "connection": "止まらない相手・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま",
       "layout": {
-        "widthPercent": 72,
-        "align": "right"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p075",
-      "scene": "二枚の重さ",
-      "art": "Worker points to mended sack seam and laughs",
-      "newUnderstanding": "暮らしの工夫を知る",
-      "effective": true,
-      "camera": "medium action",
-      "dialogue": [
-        {
-          "speaker": "職人",
-          "text": "ほつれを縫えば\n何度だって",
-          "columns": [
-            "ほつれを縫えば",
-            "何度だって"
-          ],
-          "tone": "soft",
-          "intent": "暮らしの工夫を知る"
-        }
-      ],
-      "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
-      },
-      "connection": "二枚の重さ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／袋は職人へ返却・航に袋なし",
-      "layout": {
-        "widthPercent": 94,
+        "widthPercent": 82,
         "align": "center"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
-      "id": "p076",
-      "scene": "二枚の重さ",
-      "art": "Mill interior wheel axle turns grain stone sacks neat worker at lever small wind spirit above",
-      "newUnderstanding": "水とパンの間の仕事を見る",
+      "id": "p075",
+      "scene": "止まらない相手",
+      "art": "KOH opens arms across path tense brows feet planted, hand away from own sheathed sword",
+      "newUnderstanding": "行動を要求する",
       "effective": true,
-      "camera": "establishing/path",
+      "camera": "medium action",
       "dialogue": [
         {
           "speaker": "航",
-          "text": "この音で\n粉をひいてるんだ",
+          "text": "先に謝ってよ\n荷物も…",
           "columns": [
-            "この音で",
-            "粉をひいてるんだ"
+            "先に謝ってよ",
+            "荷物も…"
           ],
-          "tone": "normal",
-          "intent": "水とパンの間の仕事を見る"
-        }
-      ],
-      "sound": {
-        "mode": "continuation",
-        "text": "ごとん ごとん",
-        "reason": "動作と音源を示す"
-      },
-      "connection": "二枚の重さ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／袋は職人へ返却・航に袋なし",
-      "layout": {
-        "widthPercent": 100,
-        "align": "right"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p077",
-      "scene": "二枚の重さ",
-      "art": "Worker extends palm with EXACTLY TWO copper coins toward KOH",
-      "newUnderstanding": "対価を提示",
-      "effective": true,
-      "camera": "detail",
-      "dialogue": [
-        {
-          "speaker": "職人",
-          "text": "はい\n袋の運び賃",
-          "columns": [
-            "はい",
-            "袋の運び賃"
-          ],
-          "tone": "normal",
-          "intent": "対価を提示"
+          "tone": "shout",
+          "intent": "行動を要求する"
         }
       ],
       "sound": {
@@ -5620,29 +5551,103 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "二枚の重さ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領",
+      "connection": "止まらない相手・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま",
       "layout": {
-        "widthPercent": 72,
+        "widthPercent": 94,
+        "align": "right"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p076",
+      "scene": "止まらない相手",
+      "art": "Close blond PLAYER annoyed face looks down at KOH, second player impatient over shoulder",
+      "newUnderstanding": "人として見ない言葉",
+      "effective": true,
+      "camera": "close acting",
+      "dialogue": [
+        {
+          "speaker": "帰還者",
+          "text": "ＮＰＣ相手に\n何 ムキになってんの",
+          "columns": [
+            "ＮＰＣ相手に",
+            "何 ムキになってんの"
+          ],
+          "tone": "normal",
+          "intent": "人として見ない言葉"
+        }
+      ],
+      "sound": {
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
+      },
+      "connection": "止まらない相手・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま",
+      "layout": {
+        "widthPercent": 82,
+        "align": "center"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p077",
+      "scene": "止まらない相手",
+      "art": "PLAYER open palm shoves KOH shoulder hard, KOH loses balance backward, swords all sheathed",
+      "newUnderstanding": "力で会話を切る",
+      "effective": true,
+      "camera": "establishing/path",
+      "dialogue": [],
+      "sound": {
+        "mode": "new",
+        "text": "ドン",
+        "reason": "動作と音源を示す"
+      },
+      "connection": "止まらない相手・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま",
+      "layout": {
+        "widthPercent": 100,
         "align": "center"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p078",
-      "scene": "二枚の重さ",
-      "art": "Close TWO coins transfer to KOH open palm other palm withdraws",
-      "newUnderstanding": "対価が手に移る",
+      "scene": "止まらない相手",
+      "art": "KOH sits fallen on cobbles palm scraped lightly, exactly TWO copper coins scattered near his boot, furious shocked eyes",
+      "newUnderstanding": "さっきの成功が地面に落ちる",
+      "effective": true,
+      "camera": "close acting",
+      "dialogue": [],
+      "sound": {
+        "mode": "new",
+        "text": "ちゃりん",
+        "reason": "動作と音源を示す"
+      },
+      "connection": "止まらない相手・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま",
+      "layout": {
+        "widthPercent": 82,
+        "align": "center"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p079",
+      "scene": "止まらない相手",
+      "art": "Close KOH trembling right hand reaches toward LEFT HIP sheathed sword hilt but blade entirely inside sheath",
+      "newUnderstanding": "反射的に剣へ手を伸ばす",
       "effective": true,
       "camera": "detail",
       "dialogue": [],
       "sound": {
-        "mode": "new",
-        "text": "ちゃり",
-        "reason": "動作と音源を示す"
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "二枚の重さ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領",
+      "connection": "止まらない相手・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま",
       "layout": {
         "widthPercent": 72,
         "align": "center"
@@ -5650,54 +5655,21 @@
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
-      "id": "p079",
-      "scene": "二枚の重さ",
-      "art": "KOH stares at two coins on palm surprised not greedy",
-      "newUnderstanding": "自分の仕事の値に驚く",
-      "effective": true,
-      "camera": "close acting",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "俺にも\nもらえるんですか？",
-          "columns": [
-            "俺にも",
-            "もらえるんですか？"
-          ],
-          "tone": "normal",
-          "intent": "自分の仕事の値に驚く"
-        }
-      ],
-      "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
-      },
-      "connection": "二枚の重さ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／航に銅貨二枚・袋なし",
-      "layout": {
-        "widthPercent": 82,
-        "align": "right"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
       "id": "p080",
-      "scene": "二枚の重さ",
-      "art": "LIZE looks at KOH hands matter of fact warm smile",
-      "newUnderstanding": "結果に対する報酬と理解",
+      "scene": "止まらない相手",
+      "art": "LIZE hand grips KOH right wrist stopping it above still sheathed sword, medium close calm firm face, no smile",
+      "newUnderstanding": "刃を抜く直前に止める",
       "effective": true,
       "camera": "medium action",
       "dialogue": [
         {
           "speaker": "リゼ",
-          "text": "ちゃんと\n届けたぶんだよ",
+          "text": "抜かないで",
           "columns": [
-            "ちゃんと",
-            "届けたぶんだよ"
+            "抜かないで"
           ],
-          "tone": "soft",
-          "intent": "結果に対する報酬と理解"
+          "tone": "normal",
+          "intent": "刃を抜く直前に止める"
         }
       ],
       "sound": {
@@ -5705,8 +5677,8 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "二枚の重さ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／航に銅貨二枚・袋なし",
+      "connection": "止まらない相手・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま／航は抜刀していない",
       "layout": {
         "widthPercent": 94,
         "align": "left"
@@ -5715,21 +5687,21 @@
     },
     {
       "id": "p081",
-      "scene": "自分で買う一つ",
-      "art": "KOH closes fingers around TWO coins then looks toward bakery lane",
-      "newUnderstanding": "覚えた道を使いたい",
+      "scene": "何もできなかった",
+      "art": "LIZE stands between seated KOH and two adult PLAYERS, firm squared posture, round shield strapped back sword sheathed, bridge guard approaches in background",
+      "newUnderstanding": "目撃者と責任を確認する",
       "effective": true,
-      "camera": "medium action",
+      "camera": "establishing/path",
       "dialogue": [
         {
-          "speaker": "航",
-          "text": "戻る道\n今度は分かる",
+          "speaker": "リゼ",
+          "text": "その荷車に\n触れたのは あなた？",
           "columns": [
-            "戻る道",
-            "今度は分かる"
+            "その荷車に",
+            "触れたのは あなた？"
           ],
           "tone": "normal",
-          "intent": "覚えた道を使いたい"
+          "intent": "目撃者と責任を確認する"
         }
       ],
       "sound": {
@@ -5737,29 +5709,60 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "自分で買う一つ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／航に銅貨二枚・袋なし",
+      "connection": "何もできなかった・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま／航は抜刀していない",
       "layout": {
-        "widthPercent": 94,
-        "align": "right"
+        "widthPercent": 100,
+        "align": "left"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p082",
-      "scene": "自分で買う一つ",
-      "art": "KOH confidently leads LIZE past fork correct lane and two flowerpots in distance",
-      "newUnderstanding": "覚えた道で自力帰還",
+      "scene": "何もできなかった",
+      "art": "Blond PLAYER looks toward approaching uniform bridge guard, second PLAYER tugs his cloak urging leave",
+      "newUnderstanding": "衛兵を見て立ち去る",
+      "effective": true,
+      "camera": "medium action",
+      "dialogue": [
+        {
+          "speaker": "帰還者",
+          "text": "……急ぐぞ",
+          "columns": [
+            "……急ぐぞ"
+          ],
+          "tone": "normal",
+          "intent": "衛兵を見て立ち去る"
+        }
+      ],
+      "sound": {
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
+      },
+      "connection": "何もできなかった・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま／航は抜刀していない",
+      "layout": {
+        "widthPercent": 94,
+        "align": "center"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p083",
+      "scene": "何もできなかった",
+      "art": "Backs of two PLAYERS disappear past bridge guard who turns after them, LIZE kneels to PORTER, KOH standing again behind",
+      "newUnderstanding": "追跡と救護を役割で分ける",
       "effective": true,
       "camera": "establishing/path",
       "dialogue": [],
       "sound": {
-        "mode": "new",
-        "text": "コツ コツ",
-        "reason": "動作と音源を示す"
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "自分で買う一つ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／航に銅貨二枚・袋なし",
+      "connection": "何もできなかった・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま／航は抜刀していない",
       "layout": {
         "widthPercent": 100,
         "align": "center"
@@ -5767,55 +5770,22 @@
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
-      "id": "p083",
-      "scene": "自分で買う一つ",
-      "art": "At bakery KOH places EXACTLY TWO coins on counter baker watches",
-      "newUnderstanding": "金額を確認して注文",
-      "effective": true,
-      "camera": "detail",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "この二枚で\n小さいの一つ\n買えますか？",
-          "columns": [
-            "この二枚で",
-            "小さいの一つ",
-            "買えますか？"
-          ],
-          "tone": "normal",
-          "intent": "金額を確認して注文"
-        }
-      ],
-      "sound": {
-        "mode": "new",
-        "text": "こと",
-        "reason": "動作と音源を示す"
-      },
-      "connection": "自分で買う一つ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／航に銅貨二枚・袋なし",
-      "layout": {
-        "widthPercent": 72,
-        "align": "right"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
       "id": "p084",
-      "scene": "自分で買う一つ",
-      "art": "BAKER takes two coins and gives ONE small roll wrapped cloth KOH takes it",
-      "newUnderstanding": "支払い完了と商品の移動",
+      "scene": "何もできなかった",
+      "art": "LIZE wraps clean bandage around PORTER sore right wrist, porter winces, no blood; KOH beside spilled crates",
+      "newUnderstanding": "被害は会話が終わっても残る",
       "effective": true,
       "camera": "medium action",
       "dialogue": [
         {
-          "speaker": "パン屋",
-          "text": "ちょうどだよ\nはいどうぞ",
+          "speaker": "リゼ",
+          "text": "動かさないで\n診療所まで行こう",
           "columns": [
-            "ちょうどだよ",
-            "はいどうぞ"
+            "動かさないで",
+            "診療所まで行こう"
           ],
           "tone": "normal",
-          "intent": "支払い完了と商品の移動"
+          "intent": "被害は会話が終わっても残る"
         }
       ],
       "sound": {
@@ -5823,30 +5793,31 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "自分で買う一つ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／二枚で小パン一つ購入・残金ゼロ",
+      "connection": "何もできなかった・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
       "layout": {
         "widthPercent": 94,
-        "align": "center"
+        "align": "left"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p085",
-      "scene": "自分で買う一つ",
-      "art": "Outside bakery KOH offers only purchased small bread to LIZE, empty other hand",
-      "newUnderstanding": "受けた助けに自分で返す",
+      "scene": "何もできなかった",
+      "art": "KOH kneels collecting apples into recovered wooden crate, two copper coins now in closed left belt pouch",
+      "newUnderstanding": "できる仕事へ戻る",
       "effective": true,
       "camera": "medium action",
       "dialogue": [
         {
           "speaker": "航",
-          "text": "リゼの分",
+          "text": "すみません\n俺 荷物を戻します",
           "columns": [
-            "リゼの分"
+            "すみません",
+            "俺 荷物を戻します"
           ],
-          "tone": "soft",
-          "intent": "受けた助けに自分で返す"
+          "tone": "normal",
+          "intent": "できる仕事へ戻る"
         }
       ],
       "sound": {
@@ -5854,8 +5825,8 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "自分で買う一つ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／購入パン一つをリゼへ渡す・航は空の手",
+      "connection": "何もできなかった・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
       "layout": {
         "widthPercent": 94,
         "align": "right"
@@ -5864,54 +5835,42 @@
     },
     {
       "id": "p086",
-      "scene": "自分で買う一つ",
-      "art": "LIZE surprised with hands hovering before bread eyes wide",
-      "newUnderstanding": "相手が一度遠慮する",
+      "scene": "何もできなかった",
+      "art": "Close KOH hands on apple and rough crate board, small scrape on palm and subtle trembling fingers",
+      "newUnderstanding": "悔しさと震えを抑えられない",
       "effective": true,
-      "camera": "close acting",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "えっ\nコウが食べなよ",
-          "columns": [
-            "えっ",
-            "コウが食べなよ"
-          ],
-          "tone": "normal",
-          "intent": "相手が一度遠慮する"
-        }
-      ],
+      "camera": "detail",
+      "dialogue": [],
       "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
+        "mode": "new",
+        "text": "かた…",
+        "reason": "動作と音源を示す"
       },
-      "connection": "自分で買う一つ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／購入パン一つをリゼへ渡す・航は空の手",
+      "connection": "何もできなかった・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
       "layout": {
-        "widthPercent": 82,
-        "align": "left"
+        "widthPercent": 72,
+        "align": "center"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p087",
-      "scene": "自分で買う一つ",
-      "art": "KOH earnest shy smile offers bread steadily",
-      "newUnderstanding": "理由を自分の言葉で伝える",
+      "scene": "何もできなかった",
+      "art": "PORTER supported by LIZE looks at KOH who holds crate, face tired kindly but still pained",
+      "newUnderstanding": "航自身を責める人はいない",
       "effective": true,
       "camera": "medium action",
       "dialogue": [
         {
-          "speaker": "航",
-          "text": "道 教えて\nくれたから\n受け取って",
+          "speaker": "荷運び人",
+          "text": "あんたが\n謝ることじゃない",
           "columns": [
-            "道 教えて",
-            "くれたから",
-            "受け取って"
+            "あんたが",
+            "謝ることじゃない"
           ],
           "tone": "soft",
-          "intent": "理由を自分の言葉で伝える"
+          "intent": "航自身を責める人はいない"
         }
       ],
       "sound": {
@@ -5919,31 +5878,31 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "自分で買う一つ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／購入パン一つをリゼへ渡す・航は空の手",
+      "connection": "何もできなかった・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
       "layout": {
         "widthPercent": 94,
-        "align": "right"
+        "align": "center"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p088",
-      "scene": "自分で買う一つ",
-      "art": "LIZE accepts single bread with both hands gentle smile KOH hands empty",
-      "newUnderstanding": "相手が返礼を受け入れる",
+      "scene": "何もできなかった",
+      "art": "KOH eyes down holding recovered crate at bridge edge, throat tense, no cheerful smile",
+      "newUnderstanding": "本人の望みと結果が食い違う",
       "effective": true,
-      "camera": "medium action",
+      "camera": "close acting",
       "dialogue": [
         {
-          "speaker": "リゼ",
-          "text": "…うん\nありがとう",
+          "speaker": "航",
+          "text": "でも…\n止められなかった",
           "columns": [
-            "…うん",
-            "ありがとう"
+            "でも…",
+            "止められなかった"
           ],
           "tone": "soft",
-          "intent": "相手が返礼を受け入れる"
+          "intent": "本人の望みと結果が食い違う"
         }
       ],
       "sound": {
@@ -5951,188 +5910,29 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "自分で買う一つ・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／購入パン一つをリゼへ渡す・航は空の手",
+      "connection": "何もできなかった・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
       "layout": {
-        "widthPercent": 94,
-        "align": "left"
+        "widthPercent": 82,
+        "align": "right"
       },
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
       "id": "p089",
-      "scene": "暮らしの先の冒険",
-      "art": "LIZE finishes small bread by riverside folds empty wrapper KOH looks toward familiar bridge",
-      "newUnderstanding": "同じ味を共有する",
-      "effective": true,
-      "camera": "medium action",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "おいしいね",
-          "columns": [
-            "おいしいね"
-          ],
-          "tone": "soft",
-          "intent": "同じ味を共有する"
-        }
-      ],
-      "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
-      },
-      "connection": "暮らしの先の冒険・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／リゼがパン食了・航は略図と納刀した剣のみ",
-      "layout": {
-        "widthPercent": 94,
-        "align": "left"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p090",
-      "scene": "暮らしの先の冒険",
-      "art": "LIZE checks small brass patrol token straps round shield sword sheathed",
-      "newUnderstanding": "彼女の仕事へ戻る時刻",
-      "effective": true,
-      "camera": "medium action",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "そろそろ巡回\n私は行くね",
-          "columns": [
-            "そろそろ巡回",
-            "私は行くね"
-          ],
-          "tone": "normal",
-          "intent": "彼女の仕事へ戻る時刻"
-        }
-      ],
-      "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
-      },
-      "connection": "暮らしの先の冒険・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／リゼがパン食了・航は略図と納刀した剣のみ",
-      "layout": {
-        "widthPercent": 94,
-        "align": "left"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p091",
-      "scene": "暮らしの先の冒険",
-      "art": "KOH starts raising hand as if ask company then lowers it looks toward station",
-      "newUnderstanding": "引き止めず見送る選択",
-      "effective": true,
-      "camera": "medium action",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "…気をつけて\nまた明日！",
-          "columns": [
-            "…気をつけて",
-            "また明日！"
-          ],
-          "tone": "soft",
-          "intent": "引き止めず見送る選択"
-        }
-      ],
-      "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
-      },
-      "connection": "暮らしの先の冒険・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／リゼがパン食了・航は略図と納刀した剣のみ",
-      "layout": {
-        "widthPercent": 94,
-        "align": "right"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p092",
-      "scene": "暮らしの先の冒険",
-      "art": "LIZE turns to wave then walks to patrol station away from KOH",
-      "newUnderstanding": "次の約束と退場",
-      "effective": true,
-      "camera": "establishing/path",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "来るなら\n日暮れ前にね！",
-          "columns": [
-            "来るなら",
-            "日暮れ前にね！"
-          ],
-          "tone": "soft",
-          "intent": "次の約束と退場"
-        }
-      ],
-      "sound": {
-        "mode": "no lettering",
-        "text": "",
-        "reason": "会話と表情を優先し背景音の文字を足さない"
-      },
-      "connection": "暮らしの先の冒険・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／リゼがパン食了・航は略図と納刀した剣のみ",
-      "layout": {
-        "widthPercent": 100,
-        "align": "left"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p093",
-      "scene": "暮らしの先の冒険",
-      "art": "KOH alone folds map into pouch by street lamplighter lighting rune lamp",
-      "newUnderstanding": "町の道が自分の道になる",
-      "effective": true,
-      "camera": "establishing/path",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "明日も\nこの道から来よう",
-          "columns": [
-            "明日も",
-            "この道から来よう"
-          ],
-          "tone": "normal",
-          "intent": "町の道が自分の道になる"
-        }
-      ],
-      "sound": {
-        "mode": "new",
-        "text": "ポッ",
-        "reason": "動作と音源を示す"
-      },
-      "connection": "暮らしの先の冒険・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／リゼがパン食了・航は略図と納刀した剣のみ",
-      "layout": {
-        "widthPercent": 100,
-        "align": "right"
-      },
-      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
-    },
-    {
-      "id": "p094",
-      "scene": "暮らしの先の冒険",
-      "art": "Wide dusk Milt warm windows flowing river bakers closing shop children home, KOH small alone",
-      "newUnderstanding": "人々の明日が続く町",
+      "scene": "強くなりたい理由",
+      "art": "KOH pushes recovered handcart slowly to clinic entrance; LIZE supports PORTER whose right wrist bandaged, evening shadows",
+      "newUnderstanding": "後始末に時間がかかる",
       "effective": true,
       "camera": "establishing/path",
       "dialogue": [],
       "sound": {
-        "mode": "new",
-        "text": "からん",
+        "mode": "continuation",
+        "text": "ごろ…",
         "reason": "動作と音源を示す"
       },
-      "connection": "暮らしの先の冒険・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／リゼがパン食了・航は略図と納刀した剣のみ",
+      "connection": "強くなりたい理由・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
       "layout": {
         "widthPercent": 100,
         "align": "center"
@@ -6140,10 +5940,170 @@
       "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
     },
     {
+      "id": "p090",
+      "scene": "強くなりたい理由",
+      "art": "SENA opens clinic door and takes PORTER inside, LIZE hands over cloth, KOH stands outside empty hands",
+      "newUnderstanding": "治療は専門家へ渡す",
+      "effective": true,
+      "camera": "medium action",
+      "dialogue": [
+        {
+          "speaker": "セナ",
+          "text": "中へ\n手を診せて",
+          "columns": [
+            "中へ",
+            "手を診せて"
+          ],
+          "tone": "normal",
+          "intent": "治療は専門家へ渡す"
+        }
+      ],
+      "sound": {
+        "mode": "new",
+        "text": "キィ",
+        "reason": "動作と音源を示す"
+      },
+      "connection": "強くなりたい理由・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
+      "layout": {
+        "widthPercent": 94,
+        "align": "center"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p091",
+      "scene": "強くなりたい理由",
+      "art": "LIZE facing KOH outside clinic quiet evening, KOH fist tightly closed looking down",
+      "newUnderstanding": "無力感と危険を切り分ける",
+      "effective": true,
+      "camera": "medium action",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "私に声をかけて\n一人で止めなくていい",
+          "columns": [
+            "私に声をかけて",
+            "一人で止めなくていい"
+          ],
+          "tone": "soft",
+          "intent": "無力感と危険を切り分ける"
+        }
+      ],
+      "sound": {
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
+      },
+      "connection": "強くなりたい理由・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
+      "layout": {
+        "widthPercent": 94,
+        "align": "left"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p092",
+      "scene": "強くなりたい理由",
+      "art": "KOH looks up at LIZE earnest shaken, fingers still scrape visible",
+      "newUnderstanding": "悔しさから習うことを選ぶ",
+      "effective": true,
+      "camera": "close acting",
+      "dialogue": [
+        {
+          "speaker": "航",
+          "text": "明日…\n剣 教えてくれない？",
+          "columns": [
+            "明日…",
+            "剣 教えてくれない？"
+          ],
+          "tone": "soft",
+          "intent": "悔しさから習うことを選ぶ"
+        }
+      ],
+      "sound": {
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
+      },
+      "connection": "強くなりたい理由・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
+      "layout": {
+        "widthPercent": 82,
+        "align": "right"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p093",
+      "scene": "強くなりたい理由",
+      "art": "LIZE studies KOH face seriously outside clinic, hand lightly resting on shield strap",
+      "newUnderstanding": "強くなりたい気持ちに境界を示す",
+      "effective": true,
+      "camera": "close acting",
+      "dialogue": [
+        {
+          "speaker": "リゼ",
+          "text": "…うん\nまず 身を守るところから",
+          "columns": [
+            "…うん",
+            "まず 身を守るところから"
+          ],
+          "tone": "soft",
+          "intent": "強くなりたい気持ちに境界を示す"
+        }
+      ],
+      "sound": {
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
+      },
+      "connection": "強くなりたい理由・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
+      "layout": {
+        "widthPercent": 82,
+        "align": "left"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
+      "id": "p094",
+      "scene": "強くなりたい理由",
+      "art": "KOH alone walks evening plaza with two copper coins on palm; bakery shutters already closed in background, no bread",
+      "newUnderstanding": "善意の小さな予定も果たせなかった",
+      "effective": true,
+      "camera": "establishing/path",
+      "dialogue": [
+        {
+          "speaker": "航・心",
+          "text": "パン\n買いそびれたな",
+          "columns": [
+            "パン",
+            "買いそびれたな"
+          ],
+          "tone": "thought",
+          "intent": "善意の小さな予定も果たせなかった"
+        }
+      ],
+      "sound": {
+        "mode": "no lettering",
+        "text": "",
+        "reason": "会話と表情を優先し背景音の文字を足さない"
+      },
+      "connection": "強くなりたい理由・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
+      "layout": {
+        "widthPercent": 100,
+        "align": "right"
+      },
+      "hold": "真相・死者・戦闘・魔法成功・盾取得は見せない"
+    },
+    {
       "id": "p095",
-      "scene": "暮らしの先の冒険",
-      "art": "Close KOH wrist notification plain translucent blank interface over dusk market",
-      "newUnderstanding": "暮らしのあとに冒険の誘い",
+      "scene": "強くなりたい理由",
+      "art": "Close KOH wrist with plain translucent blank rectangular HUD above evening plaza, background group armored adult players walking toward banner",
+      "newUnderstanding": "事件の後に強さへの誘いが現れる",
       "effective": true,
       "camera": "medium action",
       "dialogue": [
@@ -6156,7 +6116,7 @@
             "討伐隊募集"
           ],
           "tone": "display",
-          "intent": "暮らしのあとに冒険の誘い"
+          "intent": "事件の後に強さへの誘いが現れる"
         }
       ],
       "sound": {
@@ -6164,8 +6124,8 @@
         "text": "ピン",
         "reason": "動作と音源を示す"
       },
-      "connection": "暮らしの先の冒険・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／リゼがパン食了・航は略図と納刀した剣のみ",
+      "connection": "強くなりたい理由・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
       "layout": {
         "widthPercent": 94,
         "align": "center"
@@ -6174,21 +6134,21 @@
     },
     {
       "id": "p096",
-      "scene": "暮らしの先の冒険",
-      "art": "KOH face lifts with excitement dusk town behind sword still sheathed hands empty",
-      "newUnderstanding": "次話への憧れ 戦闘は未経験のまま",
+      "scene": "強くなりたい理由",
+      "art": "KOH face half shadow gazes from bare scraped palm to sheathed sword, then toward distant armored player group, jaw tense determined not smiling, dusk rooftops",
+      "newUnderstanding": "未熟な強さへの欲求を残して閉じる",
       "effective": true,
       "camera": "close acting",
       "dialogue": [
         {
           "speaker": "航・心",
-          "text": "俺も\n行けるかな…？",
+          "text": "強ければ\n止められたのか",
           "columns": [
-            "俺も",
-            "行けるかな…？"
+            "強ければ",
+            "止められたのか"
           ],
           "tone": "thought",
-          "intent": "次話への憧れ 戦闘は未経験のまま"
+          "intent": "未熟な強さへの欲求を残して閉じる"
         }
       ],
       "sound": {
@@ -6196,8 +6156,8 @@
         "text": "",
         "reason": "会話と表情を優先し背景音の文字を足さない"
       },
-      "connection": "暮らしの先の冒険・前コマの結果を受ける",
-      "propState": "初期服・剣は左腰に納刀・盾なし／リゼがパン食了・航は略図と納刀した剣のみ",
+      "connection": "強くなりたい理由・前コマの結果を受ける",
+      "propState": "初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない",
       "layout": {
         "widthPercent": 82,
         "align": "right"
@@ -6297,90 +6257,130 @@
       "background": "white"
     },
     {
+      "id": "gap-p060",
+      "type": "pause",
+      "height": 150,
+      "purpose": "水を辿って一人で仕事場へ着く",
+      "previous": "p059",
+      "next": "p060",
+      "content": "none",
+      "background": "white"
+    },
+    {
+      "id": "gap-p063",
+      "type": "pause",
+      "height": 200,
+      "purpose": "手の中の対価を自信として受け止める",
+      "previous": "p062",
+      "next": "p063",
+      "content": "none",
+      "background": "white"
+    },
+    {
       "id": "gap-p065",
       "type": "pause",
-      "height": 130,
-      "purpose": "行き止まりで地図を見直す",
+      "height": 200,
+      "purpose": "帰る道に運ぶ人の日常がある",
       "previous": "p064",
       "next": "p065",
       "content": "none",
       "background": "white"
     },
     {
-      "id": "gap-p068",
+      "id": "gap-p066",
       "type": "pause",
-      "height": 250,
-      "purpose": "耳を澄ませ自分で方向を選ぶ",
-      "previous": "p067",
-      "next": "p068",
+      "height": 100,
+      "purpose": "穏やかな荷車の音に急かす声が割り込む",
+      "previous": "p065",
+      "next": "p066",
       "content": "none",
       "background": "white"
     },
     {
       "id": "gap-p070",
       "type": "pause",
-      "height": 260,
-      "purpose": "歩き直した先で音だけをたどる",
+      "height": 120,
+      "purpose": "転倒の衝撃を受けて駆け寄る",
       "previous": "p069",
       "next": "p070",
       "content": "none",
       "background": "white"
     },
     {
-      "id": "gap-p071",
-      "type": "pause",
-      "height": 280,
-      "purpose": "水の流れを下へたどった先で初めて水車を見せる",
-      "previous": "p070",
-      "next": "p071",
-      "content": "none",
-      "background": "white"
-    },
-    {
       "id": "gap-p073",
       "type": "pause",
-      "height": 180,
-      "purpose": "見つけた喜びから実際の返却へ",
+      "height": 160,
+      "purpose": "去ろうとする相手の前に立つ",
       "previous": "p072",
       "next": "p073",
       "content": "none",
       "background": "white"
     },
     {
+      "id": "gap-p075",
+      "type": "pause",
+      "height": 80,
+      "purpose": "責任を拒まれて引き下がれない",
+      "previous": "p074",
+      "next": "p075",
+      "content": "none",
+      "background": "white"
+    },
+    {
+      "id": "gap-p077",
+      "type": "pause",
+      "height": 100,
+      "purpose": "相手の言葉を受ける間",
+      "previous": "p076",
+      "next": "p077",
+      "content": "none",
+      "background": "white"
+    },
+    {
       "id": "gap-p079",
       "type": "pause",
-      "height": 180,
-      "purpose": "銅貨の重みを手のひらで受け止める",
+      "height": 240,
+      "purpose": "押し倒され声を失ったあと手が剣へ動く",
       "previous": "p078",
       "next": "p079",
       "content": "none",
       "background": "white"
     },
     {
-      "id": "gap-p081",
+      "id": "gap-p080",
       "type": "pause",
-      "height": 170,
-      "purpose": "正当な対価だと知り使い道を自分で決める",
-      "previous": "p080",
-      "next": "p081",
+      "height": 100,
+      "purpose": "刃を抜く前に手を止める",
+      "previous": "p079",
+      "next": "p080",
       "content": "none",
       "background": "white"
     },
     {
-      "id": "gap-p085",
+      "id": "gap-p083",
       "type": "pause",
-      "height": 180,
-      "purpose": "買ったパンを相手に差し出す",
-      "previous": "p084",
-      "next": "p085",
+      "height": 200,
+      "purpose": "相手が去っても怪我と荷物が残る",
+      "previous": "p082",
+      "next": "p083",
+      "content": "none",
+      "background": "white"
+    },
+    {
+      "id": "gap-p086",
+      "type": "pause",
+      "height": 160,
+      "purpose": "口では手伝うと言えても指が震える",
+      "previous": "p085",
+      "next": "p086",
       "content": "none",
       "background": "white"
     },
     {
       "id": "gap-p088",
       "type": "pause",
-      "height": 160,
-      "purpose": "受け取ってほしい理由を聞いて返事を待つ",
+      "height": 230,
+      "purpose": "慰めを受け取れず悔しさが出る",
       "previous": "p087",
       "next": "p088",
       "content": "none",
@@ -6389,28 +6389,28 @@
     {
       "id": "gap-p089",
       "type": "pause",
-      "height": 180,
-      "purpose": "受け入れられた返礼を一緒に味わう",
+      "height": 160,
+      "purpose": "後始末にかかった時間を歩いてつなぐ",
       "previous": "p088",
       "next": "p089",
       "content": "none",
       "background": "white"
     },
     {
-      "id": "gap-p092",
+      "id": "gap-p091",
       "type": "pause",
-      "height": 210,
-      "purpose": "行ってしまう相手へ別れの声が届く",
-      "previous": "p091",
-      "next": "p092",
+      "height": 200,
+      "purpose": "患者を渡した後で二人が話す",
+      "previous": "p090",
+      "next": "p091",
       "content": "none",
       "background": "white"
     },
     {
       "id": "gap-p093",
       "type": "pause",
-      "height": 330,
-      "purpose": "見送った後も町の仕事が続いている",
+      "height": 220,
+      "purpose": "剣を教えてほしいという言葉を聞いて考える",
       "previous": "p092",
       "next": "p093",
       "content": "none",
@@ -6419,8 +6419,8 @@
     {
       "id": "gap-p094",
       "type": "pause",
-      "height": 150,
-      "purpose": "自分の道を覚えた実感から町全体へ開く",
+      "height": 250,
+      "purpose": "約束しても気持ちは晴れない",
       "previous": "p093",
       "next": "p094",
       "content": "none",
@@ -6429,8 +6429,8 @@
     {
       "id": "gap-p095",
       "type": "pause",
-      "height": 400,
-      "purpose": "夕暮れの生活の余韻から新たな通知へ",
+      "height": 240,
+      "purpose": "買えなかったパンから強さの募集へ",
       "previous": "p094",
       "next": "p095",
       "content": "none",
@@ -6439,8 +6439,8 @@
     {
       "id": "gap-p096",
       "type": "pause",
-      "height": 230,
-      "purpose": "募集の文字を受けた顔の期待で閉じる",
+      "height": 250,
+      "purpose": "募集を見て本人の未熟な願いが残る",
       "previous": "p095",
       "next": "p096",
       "content": "none",

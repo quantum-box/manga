@@ -1,5 +1,6 @@
 const fs=require('fs'),path=require('path'),{pathToFileURL}=require('url');
 const {chromium}=require('playwright');
+const crypto=require('crypto');
 const root=process.argv[2]||__dirname;
 (async()=>{const browser=await chromium.launch({headless:true});const all=[];
 try{for(const [width,height] of [[390,844],[360,800]]){
@@ -14,9 +15,9 @@ const bounds=await page.locator('#preview-flow').evaluate(e=>({top:e.getBounding
 const windows=[];for(let y=bounds.top,k=1;y<bounds.bottom;y+=height-100,k++){
 await page.evaluate(y=>scrollTo(0,y),y);const file=`review/window-${width}-${String(k).padStart(3,'0')}.jpg`;
 await page.screenshot({path:path.join(root,file),type:'jpeg',quality:85,scale:'css'});windows.push({file,y:await page.evaluate(()=>scrollY)});}
-const excerpts=[];for(const [name,id] of [['medicine','p034'],['eda','p036-voice'],['bread','p049'],['listen','p067'],['waterpath','p070'],['wheel','p071'],['wage','p077'],['gift','p085-voice'],['farewell','p091-voice'],['dusk','p094'],['ending','p095-voice']]){
+const excerpts=[];for(const [name,id] of [['medicine','p034'],['eda','p036-voice'],['bread','p049'],['wage','p062'],['incident','p069'],['confrontation','p075-voice'],['stop','p079'],['aftershock','p086'],['request','p092-voice'],['ending','p095-voice']]){
 const loc=page.locator(`[data-beat-id="${id}"]`);const y=await loc.evaluate(e=>e.getBoundingClientRect().top+scrollY-15);await page.evaluate(y=>scrollTo(0,y),y);
 const file=`review/${name}-${width}.jpg`;await page.screenshot({path:path.join(root,file),type:'jpeg',quality:92,scale:'css'});excerpts.push({id,file,y});}
-all.push({...metrics,windows,excerpts});await page.close();}
+all.push({...metrics,htmlSha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'index.html'))).digest('hex'),windows,excerpts});await page.close();}
 fs.writeFileSync(path.join(root,'dom-measurements.json'),JSON.stringify(all,null,2));console.log(JSON.stringify(all.map(({windows,excerpts,gaps,...r})=>r),null,2));
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});
