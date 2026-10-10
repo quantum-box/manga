@@ -28,6 +28,8 @@ SUPPORTED_MIME = {
 }
 ALIGNS = {"left", "center", "right"}
 BEAT_TYPES = {"panel", "pause", "voice", "sound"}
+COMPOSITION_MEMBER_TYPES = {"panel", "voice", "sound"}
+FRAME_STYLES = {"none", "thin"}
 DIALOGUE_KINDS = {"spoken", "thought"}
 TAIL_DIRECTIONS = {"left", "right", "down", "down-left"}
 
@@ -254,11 +256,38 @@ def _validate_annotations(panel, path):
     return dialogue, sounds
 
 
+def _placement_fields(beat, path):
+    composition = None
+    if "composition" in beat:
+        composition = _text(beat.get("composition"), f"{path}.composition")
+    offset_x = _number(beat.get("offsetX", 0), f"{path}.offsetX",
+                       minimum=0, maximum=100)
+    offset_y = _number(beat.get("offsetY", 0), f"{path}.offsetY",
+                       minimum=0, maximum=5000)
+    return composition, offset_x, offset_y
+
+
+def _panel_natural_height(panel, path):
+    source_size = panel.get("imageSize")
+    if source_size is None:
+        _path_error(f"{path}.imageSize",
+                    "is required when panel participates in a composition")
+    source_width, source_height = source_size
+    rendered_width = DEFAULT_REFERENCE_WIDTH * panel["widthPercent"] / 100
+    if panel["crop"] is None:
+        return rendered_width * source_height / source_width
+    _, _, crop_width, crop_height = panel["crop"]
+    return rendered_width * (crop_height * source_height) / (crop_width * source_width)
+
+
 def _validate_manifest(data, source):
     data = _mapping(data, "manifest")
     if data.get("schema") != SCHEMA:
         _path_error("manifest.schema", f"must be {SCHEMA}")
     title = _text(data.get("title"), "manifest.title")
+    color_mode = data.get("colorMode", "monochrome")
+    if color_mode not in ("monochrome", "color"):
+        _path_error("manifest.colorMode", "must be monochrome or color")
     reference_width = _number(data.get("referenceWidth", DEFAULT_REFERENCE_WIDTH),
                               "manifest.referenceWidth", minimum=0, strict_minimum=True)
     beats = _list(data.get("beats"), "manifest.beats")
@@ -289,6 +318,10 @@ def _validate_manifest(data, source):
                 _path_error(f"{path}.align", "must be left, center, or right")
             crop, source_size = _validate_crop(beat, raw_image, path)
             dialogue, sounds = _validate_annotations(beat, path)
+            composition, offset_x, offset_y = _placement_fields(beat, path)
+            frame = beat.get("frame", "none")
+            if not isinstance(frame, str) or frame not in FRAME_STYLES:
+                _path_error(f"{path}.frame", "must be none or thin")
             row = beat.get("row")
             if row is not None:
                 if isinstance(row, (dict, list)) or not str(row).strip():
@@ -297,8 +330,13 @@ def _validate_manifest(data, source):
             item.update({"image": image, "mime": mime, "raw_image": raw_image, "alt": alt,
                          "widthPercent": width_percent, "align": align, "crop": crop,
                          "imageSize": source_size, "dialogue": dialogue, "sounds": sounds,
-                         "row": row})
+                         "row": row, "composition": composition, "offsetX": offset_x,
+                         "offsetY": offset_y, "frame": frame})
+            if composition is not None:
+                item["naturalHeight"] = _panel_natural_height(item, path)
         elif beat_type == "pause":
+            if "composition" in beat:
+                _path_error(f"{path}.composition", "pause cannot have composition")
             item["height"] = _number(beat.get("height"), f"{path}.height", minimum=0,
                                      maximum=5000)
             item["purpose"] = _text(beat.get("purpose"), f"{path}.purpose")
@@ -309,7 +347,34 @@ def _validate_manifest(data, source):
             item["x"] = _number(beat.get("x", 50), f"{path}.x", minimum=0, maximum=100)
             item["y"] = _number(beat.get("y", 50), f"{path}.y", minimum=0, maximum=100)
             item["speaker"] = _text(beat.get("speaker", ""), f"{path}.speaker", required=False)
+            width_percent = _number(beat.get("widthPercent", 100), f"{path}.widthPercent",
+                                    minimum=0, maximum=100, strict_minimum=True)
+            composition, offset_x, offset_y = _placement_fields(beat, path)
+            if "frame" in beat:
+                _path_error(f"{path}.frame", "frame is only supported on panels")
+            item.update({"widthPercent": width_percent, "composition": composition,
+                         "offsetX": offset_x, "offsetY": offset_y})
+            if composition is not None:
+                item["naturalHeight"] = item["height"]
         normalized.append(item)
+
+    seen_compositions = set()
+    current_composition = None
+    for index, beat in enumerate(normalized):
+        composition = beat.get("composition")
+        if composition is None:
+            current_composition = None
+            continue
+        path = f"manifest.beats[{index}]"
+        if beat.get("row") is not None:
+            _path_error(f"{path}.composition", "cannot be combined with row")
+        if beat["offsetX"] + beat["widthPercent"] > 100:
+            _path_error(f"{path}.offsetX", "offsetX plus widthPercent must be at most 100")
+        if composition != current_composition:
+            if composition in seen_compositions:
+                _path_error(f"{path}.composition", "composition groups must not reappear")
+            seen_compositions.add(composition)
+            current_composition = composition
 
     open_rows = set()
     current_row = None
@@ -344,7 +409,7 @@ def _validate_manifest(data, source):
             asset_ids[key] = asset_id
             assets[asset_id] = _data_uri(beat["mime"], beat["raw_image"])
         beat["assetId"] = asset_id
-    return {"schema": SCHEMA, "title": title, "referenceWidth": reference_width,
+    return {"schema": SCHEMA, "title": title, "colorMode": color_mode, "referenceWidth": reference_width,
             "beats": normalized, "assets": assets}
 
 
@@ -352,9 +417,15 @@ def _data_uri(mime, raw):
     return f"data:{mime};base64,{base64.b64encode(raw).decode('ascii')}"
 
 
-def _panel_html(panel):
+def _panel_html(panel, composition_member=False):
     style = f"--panel-width:{_style_number(panel['widthPercent'])}%;"
     classes = ["panel", f"align-{panel['align']}"]
+    if composition_member:
+        classes.append("composition-member")
+        style += (f"left:{_style_number(panel['offsetX'])}%;"
+                  f"top:{_style_number(panel['offsetY'] / DEFAULT_REFERENCE_WIDTH * 100)}cqw;")
+    if panel.get("frame", "none") == "thin":
+        classes.append("frame-thin")
     if panel["crop"] is not None:
         x, y, width, height = panel["crop"]
         source_width, source_height = panel["imageSize"]
@@ -404,17 +475,38 @@ def _panel_html(panel):
             f'style="{style}">{image}{"".join(overlays)}</figure>')
 
 
-def _text_beat_html(beat, reference_width):
-    height = _style_number(beat["height"] / reference_width * 100)
-    position = f"left:{_style_number(beat['x'])}%;top:{_style_number(beat['y'])}%;"
+def _text_beat_html(beat, reference_width, composition_member=False):
+    height_reference = DEFAULT_REFERENCE_WIDTH if composition_member else reference_width
+    height = _style_number(beat["height"] / height_reference * 100)
+    copy_position = f"left:{_style_number(beat['x'])}%;top:{_style_number(beat['y'])}%;"
+    classes = ["text-beat", beat["type"]]
+    section_style = f"--beat-height:{height}cqw;"
+    if composition_member:
+        classes.append("composition-member")
+        section_style += (f"--member-width:{_style_number(beat['widthPercent'])}%;"
+                          f"left:{_style_number(beat['offsetX'])}%;"
+                          f"top:{_style_number(beat['offsetY'] / DEFAULT_REFERENCE_WIDTH * 100)}cqw;")
     speaker = (f'<span class="floating-speaker">{html.escape(beat["speaker"])}</span>'
                if beat["speaker"] else "")
     if beat["type"] == "voice":
         body = f'{speaker}<span class="voice-copy">{_vertical_html(beat["text"])}</span>'
     else:
         body = f'{speaker}<span class="sound-copy">{html.escape(beat["text"])}</span>'
-    return (f'<section class="text-beat {beat["type"]}" data-beat-id="{html.escape(beat["id"], quote=True)}" '
-            f'style="--beat-height:{height}cqw"><div class="floating-copy" style="{position}">{body}</div></section>')
+    return (f'<section class="{" ".join(classes)}" data-beat-id="{html.escape(beat["id"], quote=True)}" '
+            f'style="{section_style}"><div class="floating-copy" style="{copy_position}">{body}</div></section>')
+
+
+def _composition_html(composition, members, reference_width):
+    height = max(beat["offsetY"] + beat["naturalHeight"] for beat in members)
+    style = f"--composition-height:{_style_number(height / DEFAULT_REFERENCE_WIDTH * 100)}cqw;"
+    rendered = []
+    for beat in members:
+        if beat["type"] == "panel":
+            rendered.append(_panel_html(beat, composition_member=True))
+        else:
+            rendered.append(_text_beat_html(beat, reference_width, composition_member=True))
+    return (f'<section class="composition" data-composition="{html.escape(composition, quote=True)}" '
+            f'style="{style}">{"".join(rendered)}</section>')
 
 
 def _purpose_notes(beats):
@@ -440,10 +532,10 @@ CSS = r"""
 :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont,
   "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; }
 * { box-sizing: border-box; }
-html { background: #292929; }
-body { margin: 0; background: #292929; color: #242424; }
+html { background: #ffffff; }
+body { margin: 0; background: #ffffff; color: #242424; }
 .reader { width: 100%; max-width: var(--reference-width, 390px); min-height: 100vh; margin: 0 auto;
-  background: #fafafa; container-type: inline-size; }
+  background: #ffffff; container-type: inline-size; }
 .draft-bar { padding: 10px 16px 11px;
   color: #fbfbfb; background: #343434; border-bottom: 3px solid #bbbbbb; }
 .draft-badge { display: inline-block; padding: 3px 7px; border: 1px solid #bbbbbb;
@@ -458,6 +550,10 @@ body { margin: 0; background: #292929; color: #242424; }
 .panel.align-left { margin-right: auto; }
 .panel.align-center { margin-left: auto; margin-right: auto; }
 .panel.align-right { margin-left: auto; }
+.composition { position: relative; width: 100%; height: var(--composition-height); }
+.composition > .composition-member { position: absolute; margin: 0; }
+.composition > .text-beat.composition-member { width: var(--member-width); }
+.panel.frame-thin.cropped .crop-window { border: 1px solid #424242; }
 .panel > img { display: block; width: 100%; height: auto; }
 .panel.cropped .crop-window { position: relative; width: 100%; overflow: hidden;
   aspect-ratio: var(--crop-ratio); }
@@ -487,11 +583,11 @@ body { margin: 0; background: #292929; color: #242424; }
 .sfx { position: absolute; z-index: 3; left: var(--x); top: var(--y); transform: translate(-50%, -50%) rotate(-8deg);
   color: #363636; font-size: clamp(15px, 6cqw, 27px); font-weight: 900; letter-spacing: .08em;
   text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff; white-space: nowrap; }
-.pause { width: 100%; height: var(--beat-height); background: #fafafa; }
-.text-beat { position: relative; width: 100%; height: var(--beat-height); background: #fafafa; }
+.pause { width: 100%; height: var(--beat-height); background: #ffffff; }
+.text-beat { position: relative; width: 100%; height: var(--beat-height); background: #ffffff; }
 .floating-copy { position: absolute; transform: translate(-50%, -50%); max-width: 82%; text-align: center; }
 .voice-copy { display: inline-block; writing-mode: vertical-rl; text-orientation: mixed; color: #515151;
-  font-size: clamp(16px, 5.4cqw, 25px); line-height: 1.3; font-weight: 700; }
+  font-size: clamp(19px, 5.4cqw, 22px); line-height: 1.3; font-weight: 700; }
 .sound-copy { display: block; color: #363636; font-size: clamp(19px, 7cqw, 34px); font-weight: 900;
   letter-spacing: .09em; white-space: nowrap; transform: rotate(-7deg); }
 .text-beat .floating-speaker { margin-bottom: 5px; }
@@ -611,6 +707,17 @@ def _render_document(manifest):
     index = 0
     while index < len(beats):
         beat = beats[index]
+        if (beat["type"] in COMPOSITION_MEMBER_TYPES
+                and beat.get("composition") is not None):
+            composition = beat["composition"]
+            members = []
+            while (index < len(beats)
+                   and beats[index]["type"] in COMPOSITION_MEMBER_TYPES
+                   and beats[index].get("composition") == composition):
+                members.append(beats[index])
+                index += 1
+            rendered.append(_composition_html(composition, members, manifest["referenceWidth"]))
+            continue
         if beat["type"] == "panel" and beat.get("row") is not None:
             row = beat["row"]
             panels = []
@@ -632,10 +739,12 @@ def _render_document(manifest):
     title = html.escape(manifest["title"], quote=True)
     reference_width = _style_number(manifest["referenceWidth"])
     asset_json = _safe_json_script(manifest["assets"])
+    css = CSS if manifest["colorMode"] == "monochrome" else CSS.replace(
+        "#preview-flow { filter: grayscale(1); }", "#preview-flow { filter: none; }")
     return f'''<!doctype html>
 <html lang="ja"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title} — ネーム確認用</title><style>{CSS}</style></head>
+<title>{title} — ネーム確認用</title><style>{css}</style></head>
 <body><main class="reader" style="--reference-width:{reference_width}px" aria-label="{title} ネーム確認用">
 <header class="draft-bar"><span class="draft-badge">ネーム確認用・下書き</span>
 <h1>{title}</h1><div class="draft-meta">{reference_width}px基準 / 360pxでも確認できる構成 preview</div></header>
