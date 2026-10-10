@@ -72,9 +72,17 @@ assert positions['p019']['y'] < positions['p097']['y'] < positions['p098']['y'] 
 assert positions['p099']['y'] < positions['p103']['y'] < positions['p104']['y'] < positions['p020']['y']
 assert positions['p027']['y'] < positions['p105']['y'] < positions['p108']['y'] < positions['p029']['y']
 assert positions['p083']['y'] < positions['p085']['y'] < positions['p092']['y']
+adoption_path = ROOT / 'adoption.json'
+adoption = read(adoption_path) if adoption_path.exists() else None
+adopted = bool(adoption and adoption['status'] == 'adopted')
+if adopted:
+    assert digest(ROOT / 'index.html') == adoption['approvedHtmlSha256']
+    assert digest(ROOT / 'storyboard.md') == adoption['approvedStoryboardSha256']
+    assert digest(ROOT / 'plan.json') == adoption['approvedPlanSha256']
 write('validation.json', dict(date='2026-10-10', requestedEpisodes=[1, 2, 3],
     episode=1, scope='Complete episode name; final art and publication await adoption',
-    state='ready for user composition review',
+    state='adopted; final art authorized' if adopted else 'ready for user composition review',
+    adoption=adoption,
     skill=dict(path=str(SKILL / 'SKILL.md'), sha256=digest(SKILL / 'SKILL.md')),
     measurements=measurements, effectivePanelIds=effective, excludedPanelIds=excluded,
     volumeVerdict='pass', storyVerdict='pass', paddingVerdict='pass',
@@ -87,7 +95,7 @@ write('validation.json', dict(date='2026-10-10', requestedEpisodes=[1, 2, 3],
         'One medicine parcel: Sena at p079-p081; Koh at p082-p084; handoff at p085; Lize afterward',
         '20:50 triggers an honest handoff, safe logout and Japan 21:00 return'],
     paddingEvidence='Pure whitespace counted independently; repeated/support moments excluded conservatively',
-    checks=dict(native390=True, native360=True, device=False, userAdoption=False,
+    checks=dict(native390=True, native360=True, device=False, userAdoption=adopted,
         finishedArtwork=False, pullRequest=False, merged=False, uploaded=False,
         publicReader=False, rustChecksRun=False),
     nameMonochrome=feedback['monochrome'],
