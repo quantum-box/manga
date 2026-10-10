@@ -10,7 +10,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-PACKAGER = Path.home() / '.codex/skills/webtoon/scripts/package_reader.py'
+PACKAGER = ROOT.parents[1] / 'skills/webtoon/scripts/package_reader.py'
 CSS = '''*{box-sizing:border-box}html{background:#fff;color:#2d363b}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif}main{width:min(100%,420px);margin:auto;container-type:inline-size}header{padding:36px 24px 12px}header p{font-size:12px;letter-spacing:.12em;color:#667679}h1{font-size:24px;line-height:1.55;margin:8px 0 20px}figure{padding:0;margin:0;width:100%}figure img{display:block;width:100%;height:auto} .pause{height:var(--gap);background:#fff}footer{padding:70px 24px 100px;text-align:center}footer p{color:#667679;font-size:13px}nav{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}a{color:#316366;text-underline-offset:5px;line-height:1.8}a:focus-visible{outline:3px solid #8abdb5;outline-offset:4px}.series{max-width:650px;margin:0 auto;padding:44px 24px}.series h1{font-size:32px}.series ol{padding-left:24px}.series li{padding:12px 0;border-bottom:1px solid #edf0eb}.series .intro{line-height:1.9;color:#536163}.pending{color:#929b9b}'''
 
 def size(path):
