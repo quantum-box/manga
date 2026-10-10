@@ -23,7 +23,7 @@ def adopted_chapters(root=ROOT, series_ids=None, chapter_numbers=None):
     if series_ids is not None:
         if not isinstance(series_ids, list) or not series_ids or any(not isinstance(s, str) for s in series_ids):
             raise ValueError("Series scope must be a nonempty list of series IDs")
-        available = {"heavenly-demon" if t["id"] == "heavenly-demon-ngplus" else t["id"] for t in catalog}
+        available = {t["id"] for t in catalog}
         if len(set(series_ids)) != len(series_ids) or set(series_ids) - available:
             raise ValueError("Series scope contains a duplicate or unknown series ID")
     if chapter_numbers is not None:
@@ -32,14 +32,14 @@ def adopted_chapters(root=ROOT, series_ids=None, chapter_numbers=None):
                 or len(set(chapter_numbers)) != len(chapter_numbers)):
             raise ValueError("Chapter scope requires one series and distinct positive chapter numbers")
         numbers = {e["number"] for t in catalog
-                   if ("heavenly-demon" if t["id"] == "heavenly-demon-ngplus" else t["id"]) == series_ids[0]
+                   if t["id"] == series_ids[0]
                    for e in t["episodes"]}
         if set(chapter_numbers) - numbers:
             raise ValueError("Chapter scope contains an unknown chapter")
     chapters = []
     for title in catalog:
         seen = set()
-        series = "heavenly-demon" if title["id"] == "heavenly-demon-ngplus" else title["id"]
+        series = title["id"]
         if series_ids is not None and series not in series_ids:
             continue
         for episode in title["episodes"]:

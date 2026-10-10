@@ -55,8 +55,7 @@ enum ReadingHistory {
     static let storageKey = "readChapters.v1"
     static func key(titleID: String, number: Int) -> String {
         let series = titleID.hasPrefix("online-") ? String(titleID.dropFirst(7)) : titleID
-        let canonical = series == "heavenly-demon-ngplus" ? "heavenly-demon" : series
-        return canonical + ":" + String(number)
+        return series + ":" + String(number)
     }
     static func contains(_ value: String, titleID: String, number: Int) -> Bool {
         entries(value).contains(key(titleID: titleID, number: number))

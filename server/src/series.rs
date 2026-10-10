@@ -15,8 +15,6 @@ pub fn identify(id: &str, title: &str) -> SeriesInfo {
         ("star-lighthouse", "星を拾う夜")
     } else if id.starts_with("lost-property-clerk-") {
         ("lost-property-clerk", "終電後の落とし物係")
-    } else if id.starts_with("heavenly-demon-") {
-        ("heavenly-demon", "天魔、二周目。")
     } else if id.starts_with("zero-break-") {
         ("zero-break", "ゼロ・ブレイク")
     } else if id.starts_with("tower-farm-kitchen-") {
@@ -88,10 +86,6 @@ mod tests {
         assert_eq!(identify("swordsaint-white-v2", "").number, 1);
         assert_eq!(identify("swordsaint-episode-10-white", "").number, 10);
         assert_eq!(
-            identify("heavenly-demon-episode-01", "").title,
-            "天魔、二周目。"
-        );
-        assert_eq!(
             chapter_title("zero-break-v5", "v5"),
             "最弱判定、最強の一歩。"
         );
@@ -128,7 +122,6 @@ mod tests {
         for (id, expected) in [
             ("pochi-episode-02-r123abc", "pochi"),
             ("zero-break-episode-01-r123abc", "zero-break"),
-            ("heavenly-demon-episode-10-r123abc", "heavenly-demon"),
             ("star-ring-regalia-episode-01-r123abc", "star-ring-regalia"),
         ] {
             assert_eq!(identify(id, "").id, expected);
