@@ -35,7 +35,7 @@ def main():
         if item['gapBefore390']:
             blocks.append({'type':'spacer','size':f"phone-{item['gapBefore390']}"})
         blocks.append({'type':'image','src':name,'alt':alts[item['id']]})
-        if item['id'] == '05-first-sky': cover = name
+        if item['id'] == episode.get('cover_asset_id', '05-first-sky'): cover = name
     blocks.append({'type':'ending','text':f'第{args.episode}話　了'})
     payload = {'title':chapter['title'],'subtitle':chapter['subtitle'],'cover':cover or assets[0]['name'],'blocks':blocks}
     (target/'episode.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
