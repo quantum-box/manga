@@ -1,212 +1,1284 @@
-# 第2話 明日のある町 — 脚本と縦の絵コンテ
+# 第2話「明日のある町」構成ネーム
 
-開始：金曜の放課後。航は昨日の再訪の約束を守り、正常な水路のミルトへ戻る。
-終了：薬の配達と粉袋の返却を通じ、住民の暮らしと町の道を覚える。初めて運び賃を受け取りパンを買う。リゼの巡回を見送り、討伐隊募集に心が動く。
-伏せる：水不足、守護者の真の役割、世界の実在の断定を見せない。
+状態：2026-10-10 ユーザー「いいね！GO！」により改稿ネーム採用。本作画中。
 
-町を背景にせず、道を教わる、迷う、音を聞く、届ける、働いた対価を使う体験で覚える。第1話で薬を明示的に託したため謝罪ではなく感謝でつなぐ。魔導器を知ったことは反復せず、正常な水と仕事のつながりを深める。
+## 構成の軸
+約束を守り再訪→薬を届けパンを味わう→一人で運び賃を得る→無謀な帰還者が荷運び人を転ばせる→航は抗議して押し倒される→リゼが抜刀を止め救護する→後始末と震え→剣の稽古を頼む→買えなかったパンと強さへの焦り。
 
-第2話：足音を歩行から街の間へ続け、水音は場所が見える前に始める。届いた薬と明日の予定、粉とパン、仕事と対価を別の瞬間で描く。
+96の独立した動作・理解・返答・選択を有効コマとして計画。文字や余白は加算しない。
 
-参照した演出：context-and-dialogue、cross-panel-soundsの390/360比較と連続3窓、scroll-pacing、whitespace-example。通常会話の字は画面幅比で保ち、場面の位置と持ち物を継ぐ。
+## 引継ぎ
+基点 main e11f2ee970aaec5d13123322cbbb3e472e9766ee。第1話の約束・薬箱救助・納刀した初期剣・未習得の魔法と盾を維持。
 
-既存の採用原画を活かし、02-night-work・03-delivery・05-windは話のつながりに合わせて編集。07-announcementは直前の町と同じ夕暮れへ揃える。追加素材は下記の独立した瞬間を描く。縦列は右から左、横並びの接写も右から左。上下のショットは別の瞬間。余白は生成内とHTML外の合計をスマホ実表示で確認する。
+## 演出参照
+webtoon: name-preview, episode-length, speech-balloons, approved-example, vertical-lettering, scroll-pacing, whitespace-example, mobile-reader, emotion-and-causality, reader-perspective, context-and-dialogue, panel-layout, art-prompts, scroll-revision-lessons。採用例の完成画像と連続窓を確認。短い応酬、転倒から手の震えへ変える密度差、沈黙と抜刀直前の間を採用。絵柄・固定枚数は流用しない。
 
-## 00-school
-場所：Japan high school gate after classes on Friday, KOH navy school blazer with bag; AKARI school navy outfit, rectangular glasses and orange geometric hair clip
-直前の間：390幅で50px。役割：日本の友達も自分の予定を持ち、航は再訪を選ぶ
+## コマ別の全文・音・状態
 
-1. Medium natural two-shot at school gate: AKARI turns toward KOH while other students walk toward town, no headset or fantasy outfit.
-   灯里：今日も行く？（縦列：今日も / 行く？）
-2. Small KOH face looking toward her, quiet but definite, no anonymous thought floating over town.
-   航：また行くって約束した（縦列：また行くって / 約束した）
-3. Wide AKARI and KOH continue along the Japanese street, AKARI gestures to herself with familiar friendliness; no game HUD or magic.
-   灯里：私は弓の訓練続きやろうっと（縦列：私は弓の訓練 / 続きやろうっと）
+### p001 — 金曜の約束
+- 理解・意図：放課後になり選べる時間が来た
+- 絵・カメラ：School clock and KOH closing notebook, afternoon classroom / medium action
+- 接続：金曜の約束・前コマの結果を受ける
+- 小道具・身体：日本・学校の制服と鞄
+- 音：キーン コーン / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 灯里／normal／全文（改行＝右から左の縦列）：
+```
+今日も
+行く？
+```
 
-## 01-return
-場所：KOH bedroom then Milt safe arrival plaza, next day afternoon
-直前の間：390幅で100px。役割：場面の接続
+### p002 — 金曜の約束
+- 理解・意図：昨日の約束が再訪の理由
+- 絵・カメラ：KOH in school blazer pauses packing bag looking to AKARI glasses hair clip / medium action
+- 接続：金曜の約束・前コマの結果を受ける
+- 小道具・身体：日本・学校の制服と鞄
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+うん
+約束したんだ
+```
 
-1. Medium Japan: KOH takes headset after school, school bag still on desk.
-   航：昨日の薬どうなったかな（縦列：昨日の薬 / どうなったかな）
-2. Close hand on start display, blue-white transition.
-   音：ピッ（縦列：ピッ）
-3. Medium Milt: LIZE spots KOH by bridge, same green outfit.
-   リゼ：コウ今日は早いね（縦列：コウ / 今日は早いね）
+### p003 — 金曜の約束
+- 理解・意図：友人が変化に気づく
+- 絵・カメラ：AKARI grinning with school bag over shoulder / close acting
+- 接続：金曜の約束・前コマの結果を受ける
+- 小道具・身体：日本・学校の制服と鞄
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 灯里／normal／全文（改行＝右から左の縦列）：
+```
+誰か
+待ってるんだ？
+```
 
-## 02-night-work
-場所：Milt clinic porch, medicine box on shelf, afternoon
-直前の間：390幅で100px。役割：昨日の引き渡しに感謝し、今日の仕事を引き受ける
+### p004 — 金曜の約束
+- 理解・意図：戦績ではなく人の結果を知りたい
+- 絵・カメラ：KOH embarrassed smile holding bag against chest / close acting
+- 接続：金曜の約束・前コマの結果を受ける
+- 小道具・身体：日本・学校の制服と鞄
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+薬を届けた
+その続きが
+気になって
+```
 
-1. KOH at the same Milt clinic porch with medicine shelves, hands empty and clean, thanks LIZE for their explicit medicine handoff yesterday. He has not lost or abandoned a parcel.
-   航：昨日の薬届けてくれてありがとう（縦列：昨日の薬 / 届けてくれてありがとう）
-2. LIZE normal practical smile, yesterday work completed while KOH was away. She is not standing at his command.
-   リゼ：夜には間に合ったよ（縦列：夜には / 間に合ったよ）
-3. SENA at his clinic porch wooden counter wraps one NEW flat rectangular medicine parcel about 24cm across in pale brown paper with brown string. Same parcel will be delivered to EDA. One clear wrapping action, no clone parcels in KOH hands.
-   セナ：今日はこれを頼める？（縦列：今日はこれを / 頼める？）
+### p005 — 金曜の約束
+- 理解・意図：灯里にも独立した予定
+- 絵・カメラ：AKARI waves at school gate and turns toward her own street / medium action
+- 接続：金曜の約束・前コマの結果を受ける
+- 小道具・身体：日本・学校の制服と鞄
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 灯里／normal／全文（改行＝右から左の縦列）：
+```
+私は弓の練習！
+また向こうでね
+```
 
-## 02-route-note
-場所：Same clinic porch work counter beside medicine shelves, SENA and a small folded paper street map, KOH holds ONE new 24cm medicine parcel, LIZE beside him
-直前の間：390幅で70px。役割：地図の記号をその場の橋と結びつけ、仕事の相手を知る
+### p006 — 金曜の約束
+- 理解・意図：日本の仕事も約束する
+- 絵・カメラ：KOH at home doorway calling toward mother in bento shop / medium action
+- 接続：金曜の約束・前コマの結果を受ける
+- 小道具・身体：日本・自宅の服とヘッドセット
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／shout／全文（改行＝右から左の縦列）：
+```
+先に少し入るね
+手伝いには戻る！
+```
 
-1. Close SENA points on a small hand-drawn PAPER map showing the same bridge, a fork, a waterwheel and a little blue door mark. No printed names or HUD. KOH left arm holds the paper parcel against waist, right hand ready to take map.
-   セナ：青い扉のエダさんだよ（縦列：青い扉の / エダさんだよ）
-2. Medium KOH follows SENA finger with his eyes, then looks at the visible stone bridge in the real surroundings. Package remains at waist.
-   航：この橋を渡るんだね（縦列：この橋を / 渡るんだね）
-3. Wide LIZE starts along the road with KOH following carrying the one parcel and folded map. SENA remains at his clinic porch counter to put away medicines, not teleporting with them.
-   リゼ：帰りの道も覚えておこう（縦列：帰りの道も / 覚えておこう）
+### p007 — 金曜の約束
+- 理解・意図：家の了解を得る
+- 絵・カメラ：Mother MIWA apron nods holding empty lunch trays / close acting
+- 接続：金曜の約束・前コマの結果を受ける
+- 小道具・身体：日本・自宅の服とヘッドセット
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 美和／soft／全文（改行＝右から左の縦列）：
+```
+時間になったら
+声かけるよ
+```
 
-## 02-walk
-場所：Milt stone lane leading from clinic past bridge toward EDA blue-door house, clear afternoon, same parcel and folded paper map
-直前の間：390幅で130px。役割：教わった道を自分の足で歩き、足音を街の間へ続ける
+### p008 — 金曜の約束
+- 理解・意図：気掛かりを持って接続する
+- 絵・カメラ：KOH teal hoodie seated at desk putting on VR headset, bag on floor / medium action
+- 接続：金曜の約束・前コマの結果を受ける
+- 小道具・身体：日本・自宅の服とヘッドセット
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+昨日の薬
+間に合ったかな
+```
 
-1. Low shallow walking detail: KOH brown boots and LIZE brown boots continue down stone steps, parcel seen only partly at upper edge. One soft vertical コツコツ begins beside his first step and continues diagonally past the gutter with the same cadence, not a second complete inscription.
-   音：コツコツ（縦列：コツコツ）
-2. Airy wide lane opening: KOH and LIZE small beneath an arch, blue wooden door visible ahead among warm red-tile houses, bakery hanging pretzel sign farther along. The SAME footstep sound tapers toward white bottom; no new starting コツ or bonus conversation.
-   継続音：02-walk:1からの同じコツコツ。a single shared cadence begins by the steps and its later ツ letters taper past the arch into white, no second inscription
+### p009 — もう一度ミルトへ
+- 理解・意図：初回案内なしに再接続
+- 絵・カメラ：Close hoodie-sleeved hand presses physical side button of worn VR headset in Japan bedroom / detail
+- 接続：もう一度ミルトへ・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし
+- 音：ピッ / 動作と音源を示す
+- 余白：昨日の気掛かりを持ってミルトへ戻る
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
 
-## 03-delivery
-場所：EDA blue wooden front door beside the same Milt stone lane; EDA elderly silver low-tied hair, ivory collar blouse and faded brown-plum shawl with gold trim, exactly as original delivery reference
-直前の間：390幅で90px。役割：配達を一回の報酬画面で終えず、受け取った人の生活へ置く
+### p010 — もう一度ミルトへ
+- 理解・意図：戻った場所が分かる
+- 絵・カメラ：KOH fantasy tunic boots arrive on familiar safe plaza stones sword sheathed left hip / establishing/path
+- 接続：もう一度ミルトへ・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし
+- 音：コツ / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
 
-1. Medium KOH at the blue wooden door, LIZE waiting one step behind to the side. EDA opens door toward him. KOH holds the ONE 24cm flat paper parcel at waist and introduces himself before she uses his name.
-   航：コウです薬を届けに来ました（縦列：コウです / 薬を届けに来ました）
-2. Close hands: KOH passes that one parcel into EDA hands, unambiguous shared transfer. Her warm face beside the blue door, no duplicate parcel.
-   エダ：ありがとうコウ（縦列：ありがとう / コウ）
-3. Quiet shallow interior view from doorway: the delivered paper parcel now rests on a small wooden table beside EDA ordinary cup, folded shawl and small hand-painted family portrait in a plain frame. She sets it down carefully; no immediate cure, no quest reward pop-up. KOH no longer carries medicine, both hands free.
+### p011 — もう一度ミルトへ
+- 理解・意図：昨日の道を思い出す
+- 絵・カメラ：KOH recognizes bridge and clinic mortar sign across flowing river / medium action
+- 接続：もう一度ミルトへ・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+あの橋だ
+```
 
-## 03-household
-場所：Same open blue doorway, package inside on table, KOH hands empty, LIZE at roadside, EDA the same elderly woman in brown-plum shawl
-直前の間：390幅で80px。役割：薬を受け取る相手にも明日の予定がある
+### p012 — もう一度ミルトへ
+- 理解・意図：待ち合わせの再会
+- 絵・カメラ：LIZE bob hair shoulder cape approaches from clinic steps smiling raised hand / medium action
+- 接続：もう一度ミルトへ・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／shout／全文（改行＝右から左の縦列）：
+```
+コウ！
+今日は早いね
+```
 
-1. Medium EDA by open door with a small flower pot and two ordinary cups visible inside. She speaks to KOH, tired but pleased, no physical transformation.
-   エダ：明日は孫が来るの（縦列：明日は / 孫が来るの）
-2. Medium KOH gently glances from the flowers to EDA, ordinary warm response; LIZE listens rather than explaining what an NPC is.
-   航：楽しみですね（縦列：楽しみですね）
+### p013 — もう一度ミルトへ
+- 理解・意図：結果を直接尋ねる
+- 絵・カメラ：KOH turns quickly toward LIZE eager face / close acting
+- 接続：もう一度ミルトへ・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+昨日の薬は？
+```
 
-## 03-bakery
-場所：Bakery farther along the same lane with pretzel sign, flour shelves and oven, baker same chestnut hair short beard ivory cloth cap white shirt brown leather apron; KOH and LIZE arrive empty-handed
-直前の間：390幅で120px。役割：昨日の小さな手伝いが今日のパンにつながる
+### p014 — もう一度ミルトへ
+- 理解・意図：受け渡し後も仕事が続いた
+- 絵・カメラ：LIZE relaxed reassuring palm near clinic / medium action
+- 接続：もう一度ミルトへ・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／soft／全文（改行＝右から左の縦列）：
+```
+夜に間に合ったよ
+セナさんにも
+伝えてある
+```
 
-1. Medium baker looks up from bread shelf as KOH arrives at the counter, recognizes him rather than summoning him. Golden round bread on shelf.
-   パン屋：昨日荷車を押してくれたろ（縦列：昨日荷車を / 押してくれたろ）
-2. Shallow KOH surprise, he looks at stacked flour sacks beside oven, connects the muddy cart with bread.
-   航：あれパン屋の荷物？（縦列：あれ / パン屋の荷物？）
-3. Close baker offers ONE warm golden round bread roll on small oatmeal cloth into KOH ready hands, white fluffy break in crust and gentle steam. This is a gift for cart help, no coins yet.
-   パン屋：粉が無事で助かったよ（縦列：粉が無事で / 助かったよ）
+### p015 — もう一度ミルトへ
+- 理解・意図：安堵と感謝を受け取る
+- 絵・カメラ：KOH exhales shoulders dropping hand to chest / close acting
+- 接続：もう一度ミルトへ・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+よかった…
+届けてくれて
+ありがとう
+```
 
-## 04-bread
-場所：Same riverside bakery bench, late afternoon
-直前の間：390幅で140px。役割：食事と笑いで町を好きになる
+### p016 — もう一度ミルトへ
+- 理解・意図：今日の選択へつながる
+- 絵・カメラ：LIZE tilts head beckons KOH into clinic where SENA waves / medium action
+- 接続：もう一度ミルトへ・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／normal／全文（改行＝右から左の縦列）：
+```
+今日は
+最後まで行ける？
+```
 
-1. Close: warm bread roll on cloth, browned crust soft interior and a tiny wisp of steam, no text.
-2. Medium: KOH bites the roll, shoulders relax.
-   航：……うまい（縦列：……うまい）
-3. Shallow LIZE face laughing with genuine warmth.
-   リゼ：顔に全部出るね（縦列：顔に / 全部出るね）
+### p017 — 一包みを預かる
+- 理解・意図：制限を先に伝える
+- 絵・カメラ：KOH faces SENA at clinic counter LIZE to side / medium action
+- 接続：一包みを預かる・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：感謝の返事を受け今日の約束を確認
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+日暮れ前までは
+大丈夫です
+```
 
-## 04-bread-talk
-場所：Bakery outside bench immediately after KOH eats the gifted round bread; he finishes the last piece, folds the small EMPTY oatmeal wrapper; LIZE same moss green courier outfit
-直前の間：390幅で110px。役割：食べ終わる間に日本の仕事と現地の仕事を結びつける
+### p018 — 一包みを預かる
+- 理解・意図：新しい薬を準備する
+- 絵・カメラ：SENA makes one NEW flat rectangular medicine parcel in paper and string on counter / medium action
+- 接続：一包みを預かる・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はセナの手元
+- 音：カサ / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- セナ／normal／全文（改行＝右から左の縦列）：
+```
+なら この一包み
+お願いできる？
+```
 
-1. Medium LIZE naturally asks KOH sitting across a small bench table, no bread cloning; his last crumbs and wrapper remain on his side.
-   リゼ：向こうでは何してるの？（縦列：向こうでは / 何してるの？）
-2. Shallow KOH with relaxed smile, folds his empty cloth wrapper beside the table, hands clearly shown.
-   航：学校と家の弁当屋（縦列：学校と / 家の弁当屋）
-3. LIZE warm practical response, courier belt visible, not flirt pose. KOH listens and starts to feel useful.
-   リゼ：荷運び慣れてるんだね（縦列：荷運び / 慣れてるんだね）
+### p019 — 一包みを預かる
+- 理解・意図：宛先と目印を示す
+- 絵・カメラ：Close SENA finger points tiny hand map bridge fork door symbol / medium action
+- 接続：一包みを預かる・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はセナの手元
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- セナ／normal／全文（改行＝右から左の縦列）：
+```
+橋を渡って
+青い扉の
+エダさんへ
+```
 
-## 04-errand
-場所：Back at same bakery counter, KOH has finished bread and stored empty cloth, ONE EMPTY soft folded flour sack on counter, no medicine package or bread in his hands
-直前の間：390幅で80px。役割：地図を覚えることに使い道を作る
+### p020 — 一包みを預かる
+- 理解・意図：記号を実際の方角に合わせる
+- 絵・カメラ：KOH looks from map to actual bridge through clinic window / medium action
+- 接続：一包みを預かる・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はセナの手元
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+この橋の先…
+こっちですね？
+```
 
-1. Medium baker lifts a single visibly flat EMPTY beige flour sack with tied folded edge from counter toward KOH, no cargo box.
-   パン屋：空の袋を水車小屋へ頼める？（縦列：空の袋を / 水車小屋へ頼める？）
-2. Small KOH nodding, takes the one light empty sack with BOTH hands, clearly relieved to recognize the landmark.
-   航：さっきの道だね（縦列：さっきの道だね）
-3. Wide LIZE walks beside KOH away from bakery but half a step behind, he carries the folded empty sack under left arm and folded paper map in right.
-   リゼ：今度はコウが案内して（縦列：今度はコウが / 案内して）
+### p021 — 一包みを預かる
+- 理解・意図：確認に追加目印が返る
+- 絵・カメラ：SENA turns map to KOH direction with encouraging smile / medium action
+- 接続：一包みを預かる・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はセナの手元
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- セナ／normal／全文（改行＝右から左の縦列）：
+```
+そうそう
+窓に花鉢が
+二つある家
+```
 
-## 04-wrong-turn
-場所：Milt branching stone lane, KOH carrying ONE flat empty flour sack left arm and the same paper route map right hand; LIZE half a step behind; waterwheel remains offscreen
-直前の間：390幅で90px。役割：道に迷う小さな失敗から、町の音を手掛かりにする
+### p022 — 一包みを預かる
+- 理解・意図：数量と宛先を復唱
+- 絵・カメラ：KOH accepts ONE flat paper parcel with both hands from SENA / medium action
+- 接続：一包みを預かる・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+薬 一包み
+エダさんへ！
+```
 
-1. Medium KOH turns toward the WRONG narrow side lane while comparing folded map and street. Ahead is an ordinary closed garden fence, no monster, no ring reveal, no waterwheel visible.
-   航：ここを曲がって……（縦列：ここを / 曲がって……）
-2. Shallow LIZE beside him calmly tilts her head toward the unseen river, a question that helps him rather than mocking.
-   リゼ：水の音聞こえる？（縦列：水の音 / 聞こえる？）
-3. Small KOH stops, lowers the paper map and turns his eyes toward offscreen sound. A single quiet flowing-water サァァ… starts near the right white side and extends toward the open lower gap. NO source wheel visible yet.
-   音：サァァ…（縦列：サァァ…）
+### p023 — 一包みを預かる
+- 理解・意図：引き渡し完了と安全の指示
+- 絵・カメラ：SENA releases parcel KOH now sole holder LIZE smiling / medium action
+- 接続：一包みを預かる・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- セナ／soft／全文（改行＝右から左の縦列）：
+```
+よろしく
+急がなくていいよ
+```
 
-## 04-wheel
-場所：Return to the SAME healthy-flowing bridge-side waterwheel from episode one, reached on foot from lane; KOH and LIZE small near lower doorway, KOH holds one folded empty flour sack
-直前の間：390幅で700px。役割：聞いた音の場所へ辿り着き、水と魔導技術の仕事を広く見る
+### p024 — 一包みを預かる
+- 理解・意図：案内を受ける側から一歩進む
+- 絵・カメラ：KOH tucks folded map into belt pouch holding parcel LIZE starts walking beside / medium action
+- 接続：一包みを預かる・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／normal／全文（改行＝右から左の縦列）：
+```
+じゃあ
+コウが先に歩こう
+```
 
-1. ONE large borderless airy view: clean turquoise water descends past dark wooden wheel, brass guide fittings and slender warm gold mana channel drive an old stone mill. Flour workers and one small independent wind spirit belong in the scene. The SAME distant サァァ… has already begun in previous asset: continue only its trailing ァ… lightly beside water and white edge, never write a second サ or second complete sound. No drought, valve boss or display.
+### p025 — 青い扉への道
+- 理解・意図：自分の足で道を覚える
+- 絵・カメラ：Low boots on stone bridge KOH carrying parcel left arm LIZE behind / detail
+- 接続：青い扉への道・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：コツ コツ / 動作と音源を示す
+- 余白：薬を受け取って橋を渡る
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
 
-## 04-mill
-場所：Same waterwheel doorway, local adult female worker same chestnut ponytail ivory rolled-sleeve shirt dark brown long apron as episode1 wind-spirit scene; ONE empty flour sack from KOH
-直前の間：390幅で150px。役割：持ち物を返した結果と、誰かの仕事の対価を見せる
+### p026 — 青い扉への道
+- 理解・意図：暮らしの中の水を発見
+- 絵・カメラ：Water sparkles below bridge children float leaf boats KOH looks over rail parcel secure / medium action
+- 接続：青い扉への道・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+昨日より
+水が明るく見える
+```
 
-1. Medium worker takes the one flat empty sack from KOH hands at doorway, LIZE beside him. The original medicine and bread are absent.
-   水車の職人：ありがと明日も使うから（縦列：ありがと / 明日も使うから）
-2. Quiet wide interior view behind worker: wheel shaft and modest brass engraved fitting rotate a stone grinding mill; regular sacks of grain and flour, soft clean drifting flour dust, no modern robot factory. KOH and LIZE look from doorway, not operating equipment.
-3. Close worker offers TWO small copper coins on open palm toward KOH, same apron cuff and clear fingers. Plain copper color, no exact engraved denomination, no unlimited pile.
-   水車の職人：袋の運び賃（縦列：袋の / 運び賃）
+### p027 — 青い扉への道
+- 理解・意図：同じ町にも時間がある
+- 絵・カメラ：LIZE points upward laundry fluttering over lane / establishing/path
+- 接続：青い扉への道・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／normal／全文（改行＝右から左の縦列）：
+```
+日が当たる場所
+少しずつ動くから
+```
 
-## 04-wage
-場所：Outside same mill doorway after handoff, KOH holds EXACTLY TWO plain copper coins, no flour sack; LIZE beside him, worker returned to her work in background
-直前の間：390幅で70px。役割：手元の小さな対価に驚き、仕事の意味を受け取る
+### p028 — 青い扉への道
+- 理解・意図：観光するだけでなく道を譲る
+- 絵・カメラ：KOH steps aside to let woman carrying laundry basket pass keeping parcel dry / medium action
+- 接続：青い扉への道・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+どうぞ！
+```
 
-1. Shallow KOH looks at two copper coins on his open palm in wonder, no level-up or game notification.
-   航：運び賃……？（縦列：運び賃……？）
-2. Medium LIZE looks at his palm then his face, straightforward smile, modest normal wages rather than a grand reward.
-   リゼ：働いたぶんだよ（縦列：働いたぶんだよ）
+### p029 — 青い扉への道
+- 理解・意図：町から返事を受ける
+- 絵・カメラ：Woman nods thanks LIZE follows KOH under arch toward two flower pots / establishing/path
+- 接続：青い扉への道・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 町の人／normal／全文（改行＝右から左の縦列）：
+```
+ありがとね
+```
 
-## 04-buy
-場所：Same bakery reached by the now familiar lane, KOH and LIZE return on foot; same baker cloth cap white shirt brown apron; exactly TWO copper coins buy ONE small round bread roll
-直前の間：390幅で120px。役割：覚えた道と自分の運び賃を、相手への小さな返礼に使う
+### p030 — 青い扉への道
+- 理解・意図：教わった目印で到着
+- 絵・カメラ：KOH stops before wood door two flowerpots checks map, medicine secure / medium action
+- 接続：青い扉への道・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+花が二つ…
+ここだ！
+```
 
-1. Close KOH places his TWO copper coins on bakery counter, baker offers ONE smaller golden bread roll wrapped in oatmeal cloth. No other coins in KOH hand.
-   航：小さいの一つください（縦列：小さいの / 一つください）
-2. Medium KOH now empty of coins offers that ONE purchased bread roll to LIZE across bakery threshold, slightly shy warm smile.
-   航：リゼの分（縦列：リゼの分）
-3. Shallow LIZE accepts the one bread with BOTH hands, surprised gentle smile. KOH hands empty, no second bread or currency.
-   リゼ：ありがとう（縦列：ありがとう）
+### p031 — 青い扉への道
+- 理解・意図：自分から受け手に名乗り出る
+- 絵・カメラ：KOH knocks door with free right hand holds parcel left arm / medium action
+- 接続：青い扉への道・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：コン コン / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+すみません
+お薬を届けに
+来ました
+```
 
-## 05-wind
-場所：Milt riverside windmill with tiny luminous wind spirits, early evening
-直前の間：390幅で260px。役割：町の道を覚えた実感を、穏やかな風景へ置く
+### p032 — 青い扉への道
+- 理解・意図：受け手が迎える
+- 絵・カメラ：EDA elderly silver low bun shawl opens door gently KOH outside LIZE one step behind / establishing/path
+- 接続：青い扉への道・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- エダ／soft／全文（改行＝右から左の縦列）：
+```
+はい はい
+待ってたよ
+```
 
-1. ONE large borderless vertical scene exactly continuing the old windmill illustration: normal flowing water, turning windmill, small independent wind spirits and cloth flags. KOH and LIZE small but dialogue stays a readable modest vertical balloon. No parcel or flour sack. LIZE has finished her small bread; no duplicated leftover.
-   航：この道は覚えた（縦列：この道は / 覚えた）
+### p033 — 明日の席
+- 理解・意図：相手が名前を知る順を守る
+- 絵・カメラ：KOH introduces himself upright at door holding medicine / medium action
+- 接続：明日の席・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬一包みを航が保持・略図あり
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：扉が開くのを待ち配達相手へ名乗る
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+セナさんからです
+コウといいます
+```
 
-## 06-work
-場所：Same windmill path turning toward guard station, evening
-直前の間：390幅で100px。役割：誘いより仕事を優先する彼女を見送る
+### p034 — 明日の席
+- 理解・意図：薬の所有者が変わる
+- 絵・カメラ：Close KOH and EDA hands transfer exactly one paper rectangle medicine parcel / medium action
+- 接続：明日の席・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダへ渡る
+- 音：カサ / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- エダ／soft／全文（改行＝右から左の縦列）：
+```
+ありがとう
+コウ
+```
 
-1. Medium LIZE checks a brass patrol token and changes direction.
-   リゼ：ここから巡回私は行くね（縦列：ここから巡回 / 私は行くね）
-2. Small KOH face, starts to ask but stops.
-   航：……また明日（縦列：……また明日）
-3. Wide rear shot: LIZE walks to waterway station, KOH stays at bakery path; independent work continues.
-   リゼ：来るなら日暮れ前に（縦列：来るなら / 日暮れ前に）
+### p035 — 明日の席
+- 理解・意図：薬が家の暮らしへ入る
+- 絵・カメラ：EDA carefully places sole medicine parcel on table KOH hands empty / detail
+- 接続：明日の席・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダの卓上・航の手は空
+- 音：こと / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
 
-## 06-town-evening
-場所：Same Milt river street toward safe square, LIZE has gone to patrol and does NOT return; KOH alone with folded paper map, sword sheathed, no shield or parcel; local workers close shops at dusk
-直前の間：390幅で280px。役割：巡回へ行った相手を待たず、続いている町を一人で見る
+### p036 — 明日の席
+- 理解・意図：受け手の明日の予定
+- 絵・カメラ：EDA nudges one of two cups at table with family portrait flowers / medium action
+- 接続：明日の席・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダの卓上・航の手は空
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- エダ／soft／全文（改行＝右から左の縦列）：
+```
+明日は
+孫が来るんだよ
+```
 
-1. Shallow local lamplighter touches one modest brass-rune street lamp, warm light quietly appears above stone lane. KOH glances toward the light while walking, no spell cast by him.
-   音：ポッ（縦列：ポッ）
-2. ONE large quiet borderless view: river-side Milt under dusk with normal clear water, workers folding stalls, children walking home, warm lit windows. Small KOH pauses to fold the route map into his belt pouch, learning where he is rather than waiting for LIZE. Broad white breathing room below; no mission or giant enemy yet.
+### p037 — 明日の席
+- 理解・意図：置物から相手の気持ちを読む
+- 絵・カメラ：KOH notices two cups and clean opposite chair / medium action
+- 接続：明日の席・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダの卓上・航の手は空
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+それで
+二人ぶん？
+```
 
-## 07-announcement
-場所：KOH POV at Milt market at dusk, immediately after the town lamps are lit; only HUD overlays for him
-直前の間：390幅で310px。役割：日常を守る町から大きな冒険の誘いへ
+### p038 — 明日の席
+- 理解・意図：楽しみの具体的な理由
+- 絵・カメラ：EDA soft smile touching other chair back / close acting
+- 接続：明日の席・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダの卓上・航の手は空
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- エダ／soft／全文（改行＝右から左の縦列）：
+```
+背が伸びたって
+手紙にあってね
+会うのが楽しみ
+```
 
-1. Close: brass wrist menu responds to KOH touch, soft blue HUD.
-   音：ピン（縦列：ピン）
-2. Large clean translucent mission window, market blurred behind it, readable exact Japanese.
-   HUD：大型イベント　黒冠の守護者　討伐隊募集（縦列：大型イベント　黒冠の守護者　討伐隊募集）
-3. KOH face looking up, excited possibility.
-   航（心）：俺も行けるかな（縦列：俺も / 行けるかな）
+### p039 — 明日の席
+- 理解・意図：次の関わりを自分から望む
+- 絵・カメラ：KOH smiles toward EDA, LIZE quietly at open door / medium action
+- 接続：明日の席・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダの卓上・航の手は空
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／soft／全文（改行＝右から左の縦列）：
+```
+じゃあ
+その話も聞かせて
+ください
+```
+
+### p040 — 明日の席
+- 理解・意図：配達が関係として残る
+- 絵・カメラ：EDA waves from doorway KOH and LIZE leave empty handed, medicine on table behind / establishing/path
+- 接続：明日の席・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダの卓上・航の手は空
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：明日の話への返事を聞いて家を離れる
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- エダ／soft／全文（改行＝右から左の縦列）：
+```
+ええ また
+寄っておくれ
+```
+
+### p041 — 昨日の粉の行き先
+- 理解・意図：町の感覚が次の行動を誘う
+- 絵・カメラ：KOH and LIZE walk from flower door toward bakery pretzel sign smell drifting / medium action
+- 接続：昨日の粉の行き先・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダの卓上・航の手は空
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：届け終えた空の手でパン屋へ向かう
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+いい匂い…
+```
+
+### p042 — 昨日の粉の行き先
+- 理解・意図：昨日の行動を相手が覚えている
+- 絵・カメラ：BAKER cap beard apron leans out door recognizes KOH / medium action
+- 接続：昨日の粉の行き先・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダの卓上・航の手は空
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- パン屋／shout／全文（改行＝右から左の縦列）：
+```
+おっ！
+昨日の荷車の子！
+```
+
+### p043 — 昨日の粉の行き先
+- 理解・意図：救助と店がつながる
+- 絵・カメラ：KOH points to flour sacks near oven surprised LIZE beside / medium action
+- 接続：昨日の粉の行き先・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダの卓上・航の手は空
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+あの荷車
+ここの荷物だった？
+```
+
+### p044 — 昨日の粉の行き先
+- 理解・意図：助けた結果を聞く
+- 絵・カメラ：BAKER pats flour sack by oven smiling / medium action
+- 接続：昨日の粉の行き先・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダの卓上・航の手は空
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- パン屋／soft／全文（改行＝右から左の縦列）：
+```
+おかげで粉が
+ぬれずに済んだ
+```
+
+### p045 — 昨日の粉の行き先
+- 理解・意図：粉が食べ物になった実感
+- 絵・カメラ：Close baker holds ONE warm intact round roll with cracked crust revealing soft interior, no separate halves / detail
+- 接続：昨日の粉の行き先・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／薬はエダの卓上・航の手は空
+- 音：ぱりっ / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+
+### p046 — 昨日の粉の行き先
+- 理解・意図：感謝のパンを渡す
+- 絵・カメラ：BAKER hands one warm roll on cloth to KOH no coins / medium action
+- 接続：昨日の粉の行き先・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／贈り物のパン一つ・貨幣なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- パン屋／normal／全文（改行＝右から左の縦列）：
+```
+今朝の焼き上がり
+ひとつ食べていけ
+```
+
+### p047 — 昨日の粉の行き先
+- 理解・意図：温度と受け取りのためらい
+- 絵・カメラ：KOH holds warm bread fingertips careful surprised grin / close acting
+- 接続：昨日の粉の行き先・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／贈り物のパン一つ・貨幣なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+あつっ
+いいんですか？
+```
+
+### p048 — 昨日の粉の行き先
+- 理解・意図：贈り物であって賃金ではない
+- 絵・カメラ：BAKER nods LIZE gestures to riverside bench / establishing/path
+- 接続：昨日の粉の行き先・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／贈り物のパン一つ・貨幣なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- パン屋／soft／全文（改行＝右から左の縦列）：
+```
+昨日の礼だよ
+冷めないうちに！
+```
+
+### p049 — パンを食べる時間
+- 理解・意図：まず味わう
+- 絵・カメラ：KOH seated riverside bench biting gifted bread LIZE beside separated by small space / medium action
+- 接続：パンを食べる時間・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／贈り物のパン一つ・貨幣なし
+- 音：さく / 動作と音源を示す
+- 余白：贈り物の温度を受けベンチで口に運ぶ
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+
+### p050 — パンを食べる時間
+- 理解・意図：素直な喜び
+- 絵・カメラ：KOH eyes widen holding bitten bread / close acting
+- 接続：パンを食べる時間・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／贈り物のパン一つ・貨幣なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／soft／全文（改行＝右から左の縦列）：
+```
+うまい！
+```
+
+### p051 — パンを食べる時間
+- 理解・意図：喜びを相手が受け取る
+- 絵・カメラ：LIZE laughing at KOH warm shoulders relaxed / close acting
+- 接続：パンを食べる時間・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／贈り物のパン一つ・貨幣なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／soft／全文（改行＝右から左の縦列）：
+```
+顔に全部
+出てるね
+```
+
+### p052 — パンを食べる時間
+- 理解・意図：行動と今日の結果を結ぶ
+- 絵・カメラ：KOH looks at bread then river wheel distant no machinery close / medium action
+- 接続：パンを食べる時間・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／贈り物のパン一つ・貨幣なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：おいしさを受け止め昨日の粉を思い出す
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+昨日押した粉が
+これになったんだ
+```
+
+### p053 — パンを食べる時間
+- 理解・意図：相手自身に興味を向ける
+- 絵・カメラ：LIZE looks to KOH curious sitting comfortably / medium action
+- 接続：パンを食べる時間・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／贈り物のパン一つ・貨幣なし
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／normal／全文（改行＝右から左の縦列）：
+```
+向こうでは
+何してるの？
+```
+
+### p054 — パンを食べる時間
+- 理解・意図：日本の暮らしを話す
+- 絵・カメラ：KOH finishes bread folds EMPTY cloth on knee / medium action
+- 接続：パンを食べる時間・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／贈り物のパン食了
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／soft／全文（改行＝右から左の縦列）：
+```
+学校と
+家の弁当屋の
+手伝いかな
+```
+
+### p055 — パンを食べる時間
+- 理解・意図：昨日の働きへの理解が変わる
+- 絵・カメラ：LIZE nods looking at KOH hands folding cloth / medium action
+- 接続：パンを食べる時間・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／贈り物のパン食了
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／soft／全文（改行＝右から左の縦列）：
+```
+だから荷物
+持ち慣れてたんだ
+```
+
+### p056 — パンを食べる時間
+- 理解・意図：役立つ自分をまだ小さく扱う
+- 絵・カメラ：KOH slightly bashful smiles empty hands beside folded cloth / close acting
+- 接続：パンを食べる時間・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／贈り物のパン食了
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／soft／全文（改行＝右から左の縦列）：
+```
+向こうだと
+普通なんだけどね
+```
+
+### p057 — 一人でできたこと
+- 理解・意図：もう一つの頼み
+- 絵・カメラ：BAKER holds one flat folded EMPTY sack outside shop, KOH and LIZE stand / medium action
+- 接続：一人でできたこと・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／空袋を受け取る
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：食べ終えた後に次の依頼が届く
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- パン屋／normal／全文（改行＝右から左の縦列）：
+```
+この空袋も
+水車へ返せるかい？
+```
+
+### p058 — 一人でできたこと
+- 理解・意図：一人で行く条件を示す
+- 絵・カメラ：LIZE points uphill then toward patrol station while KOH accepts flat sack / establishing/path
+- 接続：一人でできたこと・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／空袋を保持・リゼは巡回支度で別行動
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／normal／全文（改行＝右から左の縦列）：
+```
+私は巡回の支度
+水沿いなら一本道よ
+```
+
+### p059 — 一人でできたこと
+- 理解・意図：自信をもって引き受ける
+- 絵・カメラ：KOH alone carrying flat sack under arm beside clear stone water channel / medium action
+- 接続：一人でできたこと・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／空袋を保持・リゼは巡回支度で別行動
+- 音：コツ コツ / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／shout／全文（改行＝右から左の縦列）：
+```
+任せて！
+```
+
+### p060 — 一人でできたこと
+- 理解・意図：水に沿って到着
+- 絵・カメラ：KOH arrives stone mill with large wooden waterwheel, holds folded flat sack / establishing/path
+- 接続：一人でできたこと・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／空袋を保持・リゼは巡回支度で別行動
+- 音：ごとん ごとん / 動作と音源を示す
+- 余白：水を辿って一人で仕事場へ着く
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+パン屋さんから
+袋です
+```
+
+### p061 — 一人でできたこと
+- 理解・意図：返却の完了
+- 絵・カメラ：MILL WORKER ponytail takes ONE flat sack from KOH / medium action
+- 接続：一人でできたこと・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／空袋を職人に返却
+- 音：ぱさ / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 職人／normal／全文（改行＝右から左の縦列）：
+```
+助かったよ
+明日も使うから
+```
+
+### p062 — 一人でできたこと
+- 理解・意図：初めて対価を得る
+- 絵・カメラ：MILL WORKER places exactly TWO copper coins into KOH open palm close-up / detail
+- 接続：一人でできたこと・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入
+- 音：ちゃり / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 職人／normal／全文（改行＝右から左の縦列）：
+```
+はい
+運び賃
+```
+
+### p063 — 一人でできたこと
+- 理解・意図：小さな成功を自信にする
+- 絵・カメラ：KOH alone looking at two copper coins on palm pleased small smile / close acting
+- 接続：一人でできたこと・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：手の中の対価を自信として受け止める
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航・心／thought／全文（改行＝右から左の縦列）：
+```
+俺 一人でも
+できた
+```
+
+### p064 — 一人でできたこと
+- 理解・意図：返礼という帰りの目的
+- 絵・カメラ：KOH closes hand around coins and heads down channel toward arched bridge / establishing/path
+- 接続：一人でできたこと・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航・心／thought／全文（改行＝右から左の縦列）：
+```
+リゼにも
+パン 買って戻ろう
+```
+
+### p065 — 橋の上の急行
+- 理解・意図：荷運び人と橋の地理を示す
+- 絵・カメラ：Wide stone bridge with elderly PORTER grey moustache patched cap handcart stacked wooden produce crates moving uphill, KOH entering opposite end / establishing/path
+- 接続：橋の上の急行・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入
+- 音：ごろ ごろ / 動作と音源を示す
+- 余白：帰る道に運ぶ人の日常がある
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+
+### p066 — 橋の上の急行
+- 理解・意図：急いでいる帰還者が迫る
+- 絵・カメラ：Two flashy adult male PLAYERS with armor and dark diamond-clasp cape hurry behind PORTER cart, lead man cropped blond hair points ahead / medium action
+- 接続：橋の上の急行・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：穏やかな荷車の音に急かす声が割り込む
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 帰還者／shout／全文（改行＝右から左の縦列）：
+```
+おい どいて！
+集合に遅れる！
+```
+
+### p067 — 橋の上の急行
+- 理解・意図：安全な道幅が足りない
+- 絵・カメラ：PORTER pulls loaded handcart toward narrow bridge edge pedestrians between stone parapets cannot pass / medium action
+- 接続：橋の上の急行・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 荷運び人／soft／全文（改行＝右から左の縦列）：
+```
+待ってくれ
+すぐ寄せるから
+```
+
+### p068 — 橋の上の急行
+- 理解・意図：横着な追い越しが荷車を崩す
+- 絵・カメラ：Lead blond PLAYER plants boot on protruding cart shaft to vault past, shaft dips abruptly, PORTER hand slips / detail
+- 接続：橋の上の急行・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入
+- 音：ガッ / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+
+### p069 — 橋の上の急行
+- 理解・意図：荷物と人に被害が出る
+- 絵・カメラ：Diagonal dynamic scene wooden crates tilt from cart and PORTER falls to knees one hand bracing on cobbles apples spilling, no blood / establishing/path
+- 接続：橋の上の急行・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま
+- 音：ガラッ / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+
+### p070 — 橋の上の急行
+- 理解・意図：予定を捨て駆け寄る
+- 絵・カメラ：Close KOH alarmed turns toward fallen porter as apple rolls to his boot / medium action
+- 接続：橋の上の急行・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：転倒の衝撃を受けて駆け寄る
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／shout／全文（改行＝右から左の縦列）：
+```
+大丈夫ですか！
+```
+
+### p071 — 橋の上の急行
+- 理解・意図：何が起きたか確かめる
+- 絵・カメラ：KOH kneels beside PORTER who holds sore right wrist with left hand, cart tilted against bridge parapet / medium action
+- 接続：橋の上の急行・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／soft／全文（改行＝右から左の縦列）：
+```
+手を…
+怪我してる
+```
+
+### p072 — 橋の上の急行
+- 理解・意図：立ち去る相手を止める
+- 絵・カメラ：Low view blond PLAYER boots continue away beyond fallen apples, KOH looks up from kneeling PORTER / medium action
+- 接続：橋の上の急行・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／shout／全文（改行＝右から左の縦列）：
+```
+待って！
+```
+
+### p073 — 止まらない相手
+- 理解・意図：助けを求める
+- 絵・カメラ：KOH stands one step before blond PLAYER while second player waits behind, fallen cart and PORTER visible farther behind / medium action
+- 接続：止まらない相手・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：去ろうとする相手の前に立つ
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+ぶつかった人が
+怪我してるんだ
+```
+
+### p074 — 止まらない相手
+- 理解・意図：責任を押し返す
+- 絵・カメラ：Blond PLAYER glances dismissively backward at PORTER, arms loose, no weapon drawn / close acting
+- 接続：止まらない相手・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 帰還者／normal／全文（改行＝右から左の縦列）：
+```
+通路の真ん中に
+いたからだろ
+```
+
+### p075 — 止まらない相手
+- 理解・意図：行動を要求する
+- 絵・カメラ：KOH opens arms across path tense brows feet planted, hand away from own sheathed sword / medium action
+- 接続：止まらない相手・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：責任を拒まれて引き下がれない
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／shout／全文（改行＝右から左の縦列）：
+```
+先に謝ってよ
+荷物も…
+```
+
+### p076 — 止まらない相手
+- 理解・意図：人として見ない言葉
+- 絵・カメラ：Close blond PLAYER annoyed face looks down at KOH, second player impatient over shoulder / close acting
+- 接続：止まらない相手・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 帰還者／normal／全文（改行＝右から左の縦列）：
+```
+ＮＰＣ相手に
+何 ムキになってんの
+```
+
+### p077 — 止まらない相手
+- 理解・意図：力で会話を切る
+- 絵・カメラ：PLAYER open palm shoves KOH shoulder hard, KOH loses balance backward, swords all sheathed / establishing/path
+- 接続：止まらない相手・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚を受領し所持・パン未購入／荷運び人は右手首を痛めたまま
+- 音：ドン / 動作と音源を示す
+- 余白：相手の言葉を受ける間
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+
+### p078 — 止まらない相手
+- 理解・意図：さっきの成功が地面に落ちる
+- 絵・カメラ：KOH sits fallen on cobbles palm scraped lightly, exactly TWO copper coins scattered near his boot, furious shocked eyes / close acting
+- 接続：止まらない相手・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま
+- 音：ちゃりん / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+
+### p079 — 止まらない相手
+- 理解・意図：反射的に剣へ手を伸ばす
+- 絵・カメラ：Close KOH trembling right hand reaches toward LEFT HIP sheathed sword hilt but blade entirely inside sheath / detail
+- 接続：止まらない相手・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：押し倒され声を失ったあと手が剣へ動く
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+
+### p080 — 止まらない相手
+- 理解・意図：刃を抜く直前に止める
+- 絵・カメラ：LIZE hand grips KOH right wrist stopping it above still sheathed sword, medium close calm firm face, no smile / medium action
+- 接続：止まらない相手・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：刃を抜く前に手を止める
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／normal／全文（改行＝右から左の縦列）：
+```
+抜かないで
+```
+
+### p081 — 何もできなかった
+- 理解・意図：目撃者と責任を確認する
+- 絵・カメラ：LIZE stands between seated KOH and two adult PLAYERS, firm squared posture, round shield strapped back sword sheathed, bridge guard approaches in background / establishing/path
+- 接続：何もできなかった・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／normal／全文（改行＝右から左の縦列）：
+```
+その荷車に
+触れたのは あなた？
+```
+
+### p082 — 何もできなかった
+- 理解・意図：衛兵を見て立ち去る
+- 絵・カメラ：Blond PLAYER looks toward approaching uniform bridge guard, second PLAYER tugs his cloak urging leave / medium action
+- 接続：何もできなかった・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 帰還者／normal／全文（改行＝右から左の縦列）：
+```
+……急ぐぞ
+```
+
+### p083 — 何もできなかった
+- 理解・意図：追跡と救護を役割で分ける
+- 絵・カメラ：Backs of two PLAYERS disappear past bridge guard who turns after them, LIZE kneels to PORTER, KOH standing again behind / establishing/path
+- 接続：何もできなかった・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：相手が去っても怪我と荷物が残る
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+
+### p084 — 何もできなかった
+- 理解・意図：被害は会話が終わっても残る
+- 絵・カメラ：LIZE wraps clean bandage around PORTER sore right wrist, porter winces, no blood; KOH beside spilled crates / medium action
+- 接続：何もできなかった・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／銅貨二枚が足元へ落ちる・右手掌を擦る／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／normal／全文（改行＝右から左の縦列）：
+```
+動かさないで
+診療所まで行こう
+```
+
+### p085 — 何もできなかった
+- 理解・意図：できる仕事へ戻る
+- 絵・カメラ：KOH kneels collecting apples into recovered wooden crate, two copper coins now in closed left belt pouch / medium action
+- 接続：何もできなかった・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／normal／全文（改行＝右から左の縦列）：
+```
+すみません
+俺 荷物を戻します
+```
+
+### p086 — 何もできなかった
+- 理解・意図：悔しさと震えを抑えられない
+- 絵・カメラ：Close KOH hands on apple and rough crate board, small scrape on palm and subtle trembling fingers / detail
+- 接続：何もできなかった・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：かた… / 動作と音源を示す
+- 余白：口では手伝うと言えても指が震える
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+
+### p087 — 何もできなかった
+- 理解・意図：航自身を責める人はいない
+- 絵・カメラ：PORTER supported by LIZE looks at KOH who holds crate, face tired kindly but still pained / medium action
+- 接続：何もできなかった・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 荷運び人／soft／全文（改行＝右から左の縦列）：
+```
+あんたが
+謝ることじゃない
+```
+
+### p088 — 何もできなかった
+- 理解・意図：本人の望みと結果が食い違う
+- 絵・カメラ：KOH eyes down holding recovered crate at bridge edge, throat tense, no cheerful smile / close acting
+- 接続：何もできなかった・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：慰めを受け取れず悔しさが出る
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／soft／全文（改行＝右から左の縦列）：
+```
+でも…
+止められなかった
+```
+
+### p089 — 強くなりたい理由
+- 理解・意図：後始末に時間がかかる
+- 絵・カメラ：KOH pushes recovered handcart slowly to clinic entrance; LIZE supports PORTER whose right wrist bandaged, evening shadows / establishing/path
+- 接続：強くなりたい理由・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：ごろ… / 動作と音源を示す
+- 余白：後始末にかかった時間を歩いてつなぐ
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+
+### p090 — 強くなりたい理由
+- 理解・意図：治療は専門家へ渡す
+- 絵・カメラ：SENA opens clinic door and takes PORTER inside, LIZE hands over cloth, KOH stands outside empty hands / medium action
+- 接続：強くなりたい理由・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：キィ / 動作と音源を示す
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- セナ／normal／全文（改行＝右から左の縦列）：
+```
+中へ
+手を診せて
+```
+
+### p091 — 強くなりたい理由
+- 理解・意図：無力感と危険を切り分ける
+- 絵・カメラ：LIZE facing KOH outside clinic quiet evening, KOH fist tightly closed looking down / medium action
+- 接続：強くなりたい理由・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：患者を渡した後で二人が話す
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／soft／全文（改行＝右から左の縦列）：
+```
+私に声をかけて
+一人で止めなくていい
+```
+
+### p092 — 強くなりたい理由
+- 理解・意図：悔しさから習うことを選ぶ
+- 絵・カメラ：KOH looks up at LIZE earnest shaken, fingers still scrape visible / close acting
+- 接続：強くなりたい理由・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：応酬または動作を近く読む。追加の純余白なし
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航／soft／全文（改行＝右から左の縦列）：
+```
+明日…
+剣 教えてくれない？
+```
+
+### p093 — 強くなりたい理由
+- 理解・意図：強くなりたい気持ちに境界を示す
+- 絵・カメラ：LIZE studies KOH face seriously outside clinic, hand lightly resting on shield strap / close acting
+- 接続：強くなりたい理由・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：剣を教えてほしいという言葉を聞いて考える
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- リゼ／soft／全文（改行＝右から左の縦列）：
+```
+…うん
+まず 身を守るところから
+```
+
+### p094 — 強くなりたい理由
+- 理解・意図：善意の小さな予定も果たせなかった
+- 絵・カメラ：KOH alone walks evening plaza with two copper coins on palm; bakery shutters already closed in background, no bread / establishing/path
+- 接続：強くなりたい理由・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：約束しても気持ちは晴れない
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航・心／thought／全文（改行＝右から左の縦列）：
+```
+パン
+買いそびれたな
+```
+
+### p095 — 強くなりたい理由
+- 理解・意図：事件の後に強さへの誘いが現れる
+- 絵・カメラ：Close KOH wrist with plain translucent blank rectangular HUD above evening plaza, background group armored adult players walking toward banner / medium action
+- 接続：強くなりたい理由・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：ピン / 動作と音源を示す
+- 余白：買えなかったパンから強さの募集へ
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 表示／display／全文（改行＝右から左の縦列）：
+```
+大型イベント
+黒冠の守護者
+討伐隊募集
+```
+
+### p096 — 強くなりたい理由
+- 理解・意図：未熟な強さへの欲求を残して閉じる
+- 絵・カメラ：KOH face half shadow gazes from bare scraped palm to sheathed sword, then toward distant armored player group, jaw tense determined not smiling, dusk rooftops / close acting
+- 接続：強くなりたい理由・前コマの結果を受ける
+- 小道具・身体：初期服・剣は左腰に納刀・盾なし／拾った銅貨二枚は腰袋へ・パン未購入・右手掌に擦り傷／荷運び人は右手首を痛めたまま／荷運び人の右手首に包帯／航は抜刀していない
+- 音：文字なし / 会話と表情を優先し背景音の文字を足さない
+- 余白：募集を見て本人の未熟な願いが残る
+- 伏せる：真相・死者・戦闘・魔法成功・盾取得は見せない
+- 航・心／thought／全文（改行＝右から左の縦列）：
+```
+強ければ
+止められたのか
+```
