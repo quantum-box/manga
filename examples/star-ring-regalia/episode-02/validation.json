@@ -18,8 +18,8 @@
     {
       "width": 390,
       "height": 844,
-      "bodyHeight": 58151.65625,
-      "pureGapHeight": 4950,
+      "bodyHeight": 59931.65625,
+      "pureGapHeight": 6730,
       "contentHeight": 53201.65625,
       "panels": 96,
       "failedImages": 0,
@@ -28,8 +28,8 @@
     {
       "width": 360,
       "height": 800,
-      "bodyHeight": 53677.796875,
-      "pureGapHeight": 4569.046875,
+      "bodyHeight": 55320.84375,
+      "pureGapHeight": 6212.09375,
       "contentHeight": 49108.75,
       "panels": 96,
       "failedImages": 0,
@@ -56,5 +56,18 @@
     "payloadFiles": 3
   },
   "ios": "synced; device test not performed",
-  "publication": "pending PR merge and upload"
+  "publication": {
+    "previousVerifiedId": "star-ring-regalia-episode-02-r9da7293776e9",
+    "spacingRevision": "pending PR merge and upload"
+  },
+  "spacingRevision": {
+    "request": "2話いいんだけど余白なすぎでは？ → やって",
+    "plan": "production/final-from-name/pacing.json",
+    "addedGap390": 1780,
+    "changedBoundaries": 6,
+    "storyBeats": 4,
+    "artUnchanged": true,
+    "checks": "production/final-from-name/spacing-check.json",
+    "visual": "390px pause and 360px arrival for all 6 revised boundaries viewed; unchanged artwork retained"
+  }
 }

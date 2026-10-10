@@ -4,6 +4,9 @@ import json, struct, html, sys
 prod=Path(__file__).resolve().parent;ep=prod.parents[1];repo=ep.parents[2];name=ep/'review/name-preview'
 plan=json.loads((name/'plan.json').read_text());crops=json.loads((prod/'source-crops.json').read_text());rows=[];layout=[]
 gaps={int(g['next'][1:]):g for g in plan['pureGaps']}
+# Preserve the approved name and apply the later spacing-only revision.
+pacing=json.loads((prod/'pacing.json').read_text())
+gaps.update({int(g['next'][1:]):g for g in pacing['overrides']})
 for i,p in enumerate(plan['panels']):
  n=i+1;idx=i//4+1;cell=i%4;src=f'art/f{idx:02}.png';f=ep/src
  if not f.exists():
