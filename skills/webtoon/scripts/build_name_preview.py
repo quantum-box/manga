@@ -267,13 +267,13 @@ def _placement_fields(beat, path):
     return composition, offset_x, offset_y
 
 
-def _panel_natural_height(panel, path):
+def _panel_natural_height(panel, path, reference_width):
     source_size = panel.get("imageSize")
     if source_size is None:
         _path_error(f"{path}.imageSize",
                     "is required when panel participates in a composition")
     source_width, source_height = source_size
-    rendered_width = DEFAULT_REFERENCE_WIDTH * panel["widthPercent"] / 100
+    rendered_width = reference_width * panel["widthPercent"] / 100
     if panel["crop"] is None:
         return rendered_width * source_height / source_width
     _, _, crop_width, crop_height = panel["crop"]
@@ -333,7 +333,7 @@ def _validate_manifest(data, source):
                          "row": row, "composition": composition, "offsetX": offset_x,
                          "offsetY": offset_y, "frame": frame})
             if composition is not None:
-                item["naturalHeight"] = _panel_natural_height(item, path)
+                item["naturalHeight"] = _panel_natural_height(item, path, reference_width)
         elif beat_type == "pause":
             if "composition" in beat:
                 _path_error(f"{path}.composition", "pause cannot have composition")
@@ -417,13 +417,13 @@ def _data_uri(mime, raw):
     return f"data:{mime};base64,{base64.b64encode(raw).decode('ascii')}"
 
 
-def _panel_html(panel, composition_member=False):
+def _panel_html(panel, composition_member=False, reference_width=DEFAULT_REFERENCE_WIDTH):
     style = f"--panel-width:{_style_number(panel['widthPercent'])}%;"
     classes = ["panel", f"align-{panel['align']}"]
     if composition_member:
         classes.append("composition-member")
         style += (f"left:{_style_number(panel['offsetX'])}%;"
-                  f"top:{_style_number(panel['offsetY'] / DEFAULT_REFERENCE_WIDTH * 100)}cqw;")
+                  f"top:{_style_number(panel['offsetY'] / reference_width * 100)}cqw;")
     if panel.get("frame", "none") == "thin":
         classes.append("frame-thin")
     if panel["crop"] is not None:
@@ -476,8 +476,7 @@ def _panel_html(panel, composition_member=False):
 
 
 def _text_beat_html(beat, reference_width, composition_member=False):
-    height_reference = DEFAULT_REFERENCE_WIDTH if composition_member else reference_width
-    height = _style_number(beat["height"] / height_reference * 100)
+    height = _style_number(beat["height"] / reference_width * 100)
     copy_position = f"left:{_style_number(beat['x'])}%;top:{_style_number(beat['y'])}%;"
     classes = ["text-beat", beat["type"]]
     section_style = f"--beat-height:{height}cqw;"
@@ -485,7 +484,7 @@ def _text_beat_html(beat, reference_width, composition_member=False):
         classes.append("composition-member")
         section_style += (f"--member-width:{_style_number(beat['widthPercent'])}%;"
                           f"left:{_style_number(beat['offsetX'])}%;"
-                          f"top:{_style_number(beat['offsetY'] / DEFAULT_REFERENCE_WIDTH * 100)}cqw;")
+                          f"top:{_style_number(beat['offsetY'] / reference_width * 100)}cqw;")
     speaker = (f'<span class="floating-speaker">{html.escape(beat["speaker"])}</span>'
                if beat["speaker"] else "")
     if beat["type"] == "voice":
@@ -498,11 +497,11 @@ def _text_beat_html(beat, reference_width, composition_member=False):
 
 def _composition_html(composition, members, reference_width):
     height = max(beat["offsetY"] + beat["naturalHeight"] for beat in members)
-    style = f"--composition-height:{_style_number(height / DEFAULT_REFERENCE_WIDTH * 100)}cqw;"
+    style = f"--composition-height:{_style_number(height / reference_width * 100)}cqw;"
     rendered = []
     for beat in members:
         if beat["type"] == "panel":
-            rendered.append(_panel_html(beat, composition_member=True))
+            rendered.append(_panel_html(beat, composition_member=True, reference_width=reference_width))
         else:
             rendered.append(_text_beat_html(beat, reference_width, composition_member=True))
     return (f'<section class="composition" data-composition="{html.escape(composition, quote=True)}" '

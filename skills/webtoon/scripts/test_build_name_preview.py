@@ -249,6 +249,29 @@ class BuildNamePreviewTests(unittest.TestCase):
         self.assertIn("background: #fff", document)
 
 
+    def test_nondefault_reference_width_keeps_composed_geometry_consistent(self):
+        data = self.base_manifest([
+            {"type": "voice", "id": "standalone", "text": "返事", "height": 180},
+            {"type": "panel", "id": "scene", "image": "rough/first.png",
+             "alt": "場面", "widthPercent": 40, "composition": "split",
+             "offsetY": 180},
+            {"type": "voice", "id": "reply", "text": "返事", "height": 180,
+             "composition": "split", "offsetY": 360},
+            {"type": "sound", "id": "sound", "text": "カチ", "height": 36,
+             "composition": "split", "offsetY": 540},
+        ])
+        data["referenceWidth"] = 360
+        self.write_manifest(data)
+        normalized = MODULE._validate_manifest(data, self.manifest)
+        self.assertEqual(normalized["beats"][1]["naturalHeight"], 144)
+        MODULE.build_preview(self.manifest, self.output)
+        document = self.output.read_text()
+        self.assertEqual(document.count("--beat-height:50cqw"), 2)
+        self.assertIn("left:0%;top:50cqw", document)
+        self.assertIn("left:0%;top:100cqw", document)
+        self.assertIn("left:0%;top:150cqw", document)
+        self.assertIn("--composition-height:160cqw", document)
+
     def test_rejects_unsafe_composition_placements(self):
         (self.root / "rough" / "unknown.png").write_bytes(b"not an image")
         cases = [
