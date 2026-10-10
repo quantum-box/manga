@@ -1,5 +1,5 @@
 {
-  "status": "local_verified",
+  "status": "local_layout_verified",
   "adoptedName": {
     "status": "adopted",
     "date": "2026-10-10",
@@ -14,60 +14,58 @@
   },
   "effectivePanels": 96,
   "sourceSheets": 24,
+  "partialLetteringEdits": 19,
   "measurements": [
     {
       "width": 390,
       "height": 844,
-      "bodyHeight": 59931.65625,
-      "pureGapHeight": 6730,
-      "contentHeight": 53201.65625,
+      "bodyHeight": 53348.53125,
+      "pureGapHeight": 4950,
+      "voiceHeight": 10876,
+      "contentHeight": 48398.53125,
       "panels": 96,
+      "separateVoices": 57,
+      "voiceOverflow": [],
+      "minVoiceFont": 20,
       "failedImages": 0,
       "horizontalOverflow": false
     },
     {
       "width": 360,
       "height": 800,
-      "bodyHeight": 55320.84375,
-      "pureGapHeight": 6212.09375,
-      "contentHeight": 49108.75,
+      "bodyHeight": 49243.671875,
+      "pureGapHeight": 4569.046875,
+      "voiceHeight": 10038.96875,
+      "contentHeight": 44674.625,
       "panels": 96,
+      "separateVoices": 57,
+      "voiceOverflow": [],
+      "minVoiceFont": 19.44,
       "failedImages": 0,
       "horizontalOverflow": false
     }
   ],
+  "layoutRevision": {
+    "request": "必要に応じて台詞を絵へ組み込み 基本は白地へ レイアウトと余白を反映して作り直す",
+    "separateVoices": 57,
+    "integratedVoices": 24,
+    "widths": "all 96 match adopted name",
+    "pureGaps": "all 28 match adopted name",
+    "decisions": "production/final-from-name/layout-decisions.json"
+  },
   "visualReview": {
-    "sourceSheets": "all 24 viewed; targeted repairs verified",
-    "360": "all 78 overlapping windows, including ending; no neighboring cell bleed",
-    "390": "representative scenes and all images/geometry checked",
-    "findingsResolved": [
-      "wrong balloon tails",
-      "blue door",
-      "two coins",
-      "mill backdrop",
-      "boots",
-      "departed players",
-      "unequal source grid bleed"
-    ]
+    "sourceEdits": "all 19 sheets inspected against originals",
+    "390": "全編70窓を通読後12コマを補修 最終73窓を保存 補修箇所を再確認",
+    "360": "画像96と独立発話57を照合 はみ出し0 補修箇所と終端を目視"
   },
   "offline": {
-    "uniquePngs": 24,
-    "originalBytesPreserved": true,
-    "payloadFiles": 3
+    "uniquePngs": 37,
+    "payloadFiles": 4
   },
   "ios": "synced; device test not performed",
   "publication": {
-    "previousVerifiedId": "star-ring-regalia-episode-02-r9da7293776e9",
-    "spacingRevision": "pending PR merge and upload"
+    "previousVerifiedId": "star-ring-regalia-episode-02-r7b936fe2d179",
+    "layoutRevision": "pending PR merge and upload"
   },
-  "spacingRevision": {
-    "request": "2話いいんだけど余白なすぎでは？ → やって",
-    "plan": "production/final-from-name/pacing.json",
-    "addedGap390": 1780,
-    "changedBoundaries": 6,
-    "storyBeats": 4,
-    "artUnchanged": true,
-    "checks": "production/final-from-name/spacing-check.json",
-    "visual": "390px pause and 360px arrival for all 6 revised boundaries viewed; unchanged artwork retained"
-  }
+  "layoutCheck": "production/final-from-name/layout-check.json"
 }
