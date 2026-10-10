@@ -163,12 +163,7 @@ async fn handle(mut req: Request, env: Env) -> Result<Response> {
                 });
                 let revisions: Vec<_> = entries.iter().map(|e| e.4.as_str()).collect();
                 let revision = revisions.join(":");
-                let meta_id = if series_id == "heavenly-demon" {
-                    "heavenly-demon-ngplus"
-                } else {
-                    &series_id
-                };
-                let meta = metadata.iter().find(|m| m["id"].as_str() == Some(meta_id));
+                let meta = metadata.iter().find(|m| m["id"].as_str() == Some(series_id.as_str()));
                 let episodes: Vec<_> = entries.iter().map(|(info, id, subtitle, _, revision)| {
                     let local_id = id.strip_prefix(&format!("{series_id}-")).unwrap_or(id);
                     let episode_meta = meta.and_then(|m| m["episodes"].as_array()).and_then(|eps| {
