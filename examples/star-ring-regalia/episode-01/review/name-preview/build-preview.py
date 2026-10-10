@@ -6,7 +6,7 @@ import struct
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-SKILL = Path.home() / '.codex/skills/webtoon'
+SKILL = ROOT.parents[4] / 'skills/webtoon'
 notes = json.loads((ROOT / 'plan-notes.json').read_text())
 panels = notes['panels']
 cell_windows = json.loads((ROOT / 'cell-windows.json').read_text())['sheets']
