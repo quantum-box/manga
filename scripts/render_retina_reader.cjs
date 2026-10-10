@@ -37,7 +37,11 @@ const {chromium} = require('playwright');
       if (size.bottom <= size.top) throw Error(`${id}: empty reader body`);
       let cover;
       if (settings.bodyOnly) {
-        const bytes = await page.locator('main img, main canvas').first().screenshot({type:'jpeg',quality:88,scale:'css'});
+        // A display window can show one cell of a larger source image. Capture
+        // its figure so the cover contains the visible cell, not the full sheet.
+        const figure = page.locator('main figure').first();
+        const coverTarget = await figure.count() ? figure : page.locator('main img, main canvas').first();
+        const bytes = await coverTarget.screenshot({type:'jpeg',quality:88,scale:'css'});
         cover = 'cover-'+crypto.createHash('sha256').update(bytes).digest('hex').slice(0,24)+'.jpg';
         fs.writeFileSync(path.join(folder,cover),bytes);
       }
