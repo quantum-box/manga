@@ -440,18 +440,18 @@ CSS = r"""
 :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont,
   "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; }
 * { box-sizing: border-box; }
-html { background: #252a31; }
-body { margin: 0; background: #252a31; color: #20242a; }
+html { background: #292929; }
+body { margin: 0; background: #292929; color: #242424; }
 .reader { width: 100%; max-width: var(--reference-width, 390px); min-height: 100vh; margin: 0 auto;
-  background: #fbfaf7; container-type: inline-size; }
+  background: #fafafa; container-type: inline-size; }
 .draft-bar { padding: 10px 16px 11px;
-  color: #f8fbff; background: #263746; border-bottom: 3px solid #efb46a; }
-.draft-badge { display: inline-block; padding: 3px 7px; border: 1px solid #efb46a;
-  border-radius: 999px; color: #ffdca8; font-size: 11px; letter-spacing: .08em; }
+  color: #fbfbfb; background: #343434; border-bottom: 3px solid #bbbbbb; }
+.draft-badge { display: inline-block; padding: 3px 7px; border: 1px solid #bbbbbb;
+  border-radius: 999px; color: #e0e0e0; font-size: 11px; letter-spacing: .08em; }
 .draft-bar h1 { margin: 7px 0 0; font-size: 20px; line-height: 1.4; }
-.draft-meta { margin-top: 3px; color: #c4d4de; font-size: 11px; }
-.notes { margin: 10px 14px; color: #58636b; font-size: 12px; line-height: 1.7; }
-.notes summary { cursor: pointer; color: #334b5b; font-weight: 700; }
+.draft-meta { margin-top: 3px; color: #d1d1d1; font-size: 11px; }
+.notes { margin: 10px 14px; color: #616161; font-size: 12px; line-height: 1.7; }
+.notes summary { cursor: pointer; color: #474747; font-weight: 700; }
 .notes ol { margin: 5px 0 0; padding-left: 22px; }
 .beat { position: relative; }
 .panel { width: var(--panel-width); margin: 0; position: relative; }
@@ -468,44 +468,47 @@ body { margin: 0; background: #252a31; color: #20242a; }
 .dialogue { position: absolute; z-index: 2; left: var(--x); top: var(--y); width: var(--dialogue-width);
   pointer-events: none; }
 .balloon { position: relative; display: flex; align-items: center; justify-content: center;
-  min-height: var(--dialogue-height); padding: 7px 6px; color: #17232b; background: #fffefb;
-  border: 2px solid #35454e; border-radius: 48% / 34%; box-shadow: 0 2px 0 #17232b22; }
+  min-height: var(--dialogue-height); padding: 7px 6px; color: #212121; background: #fefefe;
+  border: 2px solid #424242; border-radius: 48% / 34%; box-shadow: 0 2px 0 #21212122; }
 .spoken .balloon::after { content: ""; position: absolute; left: 16%; bottom: -13px;
-  width: 16px; height: 16px; background: #fffefb; border-right: 2px solid #35454e;
-  border-bottom: 2px solid #35454e; transform: rotate(35deg) skew(-10deg); }
+  width: 16px; height: 16px; background: #fefefe; border-right: 2px solid #424242;
+  border-bottom: 2px solid #424242; transform: rotate(35deg) skew(-10deg); }
 .spoken.tail-left .balloon::after { left: -10px; bottom: 28%; transform: rotate(135deg) skew(-10deg); }
 .spoken.tail-right .balloon::after { left: auto; right: -10px; bottom: 28%; transform: rotate(-45deg) skew(-10deg); }
 .spoken.tail-down .balloon::after { left: 50%; bottom: -13px; transform: translateX(-50%) rotate(35deg) skew(-10deg); }
 .thought .balloon { border-style: dashed; border-radius: 42%; }
 .thought .balloon::after { content: "••"; position: absolute; left: 13%; bottom: -21px;
-  color: #35454e; font-size: 18px; letter-spacing: 4px; transform: rotate(20deg); }
+  color: #424242; font-size: 18px; letter-spacing: 4px; transform: rotate(20deg); }
 .dialogue-text { display: inline-block; writing-mode: vertical-rl; text-orientation: mixed;
   white-space: nowrap; font-size: clamp(19px, 5.4cqw, 22px); line-height: 1.35; font-weight: 700; }
 .dialogue-text br { display: block; }
-.dialogue-speaker, .floating-speaker { display: block; color: #60717b; font-size: 10px;
+.dialogue-speaker, .floating-speaker { display: block; color: #6e6e6e; font-size: 10px;
   line-height: 1.2; text-align: center; writing-mode: horizontal-tb; }
 .sfx { position: absolute; z-index: 3; left: var(--x); top: var(--y); transform: translate(-50%, -50%) rotate(-8deg);
-  color: #263944; font-size: clamp(15px, 6cqw, 27px); font-weight: 900; letter-spacing: .08em;
-  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff; white-space: nowrap; }
-.pause { width: 100%; height: var(--beat-height); background: #fbfaf7; }
-.text-beat { position: relative; width: 100%; height: var(--beat-height); background: #fbfaf7; }
+  color: #363636; font-size: clamp(15px, 6cqw, 27px); font-weight: 900; letter-spacing: .08em;
+  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff; white-space: nowrap; }
+.pause { width: 100%; height: var(--beat-height); background: #fafafa; }
+.text-beat { position: relative; width: 100%; height: var(--beat-height); background: #fafafa; }
 .floating-copy { position: absolute; transform: translate(-50%, -50%); max-width: 82%; text-align: center; }
-.voice-copy { display: inline-block; writing-mode: vertical-rl; text-orientation: mixed; color: #185e79;
+.voice-copy { display: inline-block; writing-mode: vertical-rl; text-orientation: mixed; color: #515151;
   font-size: clamp(16px, 5.4cqw, 25px); line-height: 1.3; font-weight: 700; }
-.sound-copy { display: block; color: #263944; font-size: clamp(19px, 7cqw, 34px); font-weight: 900;
+.sound-copy { display: block; color: #363636; font-size: clamp(19px, 7cqw, 34px); font-weight: 900;
   letter-spacing: .09em; white-space: nowrap; transform: rotate(-7deg); }
 .text-beat .floating-speaker { margin-bottom: 5px; }
-.end-note { padding: 30px 16px 55px; text-align: center; color: #68747b; font-size: 12px; }
+.end-note { padding: 30px 16px 55px; text-align: center; color: #727272; font-size: 12px; }
 .measurement { position: static; display: block; margin: 10px 14px 0; max-width: 100%;
-  color: #25333c; background: #fffefb; border: 1px solid #9aaab1; border-radius: 8px;
-  box-shadow: 0 3px 14px #17232b33; font-size: 11px; }
-.measurement summary { cursor: pointer; padding: 6px 9px; color: #334b5b; font-weight: 700; }
+  color: #313131; background: #fefefe; border: 1px solid #a7a7a7; border-radius: 8px;
+  box-shadow: 0 3px 14px #21212133; font-size: 11px; }
+.measurement summary { cursor: pointer; padding: 6px 9px; color: #474747; font-weight: 700; }
 .measurement-body { padding: 0 9px 8px; }
 .measurement dl { display: grid; grid-template-columns: auto auto; gap: 3px 10px; margin: 0; }
-.measurement dt { color: #60717b; }
+.measurement dt { color: #6e6e6e; }
 .measurement dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
-.measurement-note, .measurement-width-note { margin: 7px 0 0; color: #68747b; line-height: 1.45; }
-.measurement-width-note { color: #99531a; font-weight: 700; }
+.measurement-note, .measurement-width-note { margin: 7px 0 0; color: #727272; line-height: 1.45; }
+.measurement-width-note { color: #5e5e5e; font-weight: 700; }
+
+/* Rough names communicate balloon types without color. */
+#preview-flow { filter: grayscale(1); }
 """
 
 
