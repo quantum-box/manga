@@ -46,7 +46,7 @@ h = re.sub(r'<header class="draft-bar">.*?</header>',
            '<header class="episode-heading"><p>星環のレガリア　第3話</p><h1>星環の剣筋</h1></header>', h, flags=re.S)
 h = re.sub(r'<details class="notes".*?</details>', '', h, flags=re.S)
 h = re.sub(r'<details class="measurement".*?</details>', '', h, flags=re.S)
-h = re.sub(r'<footer class="end-note">.*?</footer>', '<footer class="end-note">つづく<nav><a href="../episode-02/index.html">前の話</a> <a class="series-index" href="../index.html">話一覧</a></nav></footer>', h, flags=re.S)
+h = re.sub(r'<footer class="end-note">.*?</footer>', '<footer class="end-note"><p>つづく</p><nav><a href="../episode-02/index.html">前の話</a><br><a class="series-index" href="../index.html">話一覧</a></nav></footer>', h, flags=re.S)
 h = h.replace('</head>', '<meta name="manga-title-id" content="star-ring-regalia"><meta name="manga-episode-id" content="episode-03"></head>', 1)
 h = h.replace('#preview-flow { filter: grayscale(1); }', '#preview-flow { filter: none; }')
 h = h.replace('preview-flow', 'episode-body')
