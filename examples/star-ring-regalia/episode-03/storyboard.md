@@ -29,7 +29,7 @@
 
 全話104の異なる動作・理解・選択・結果を計上。声・音・純余白を有効コマへ足さない。目標は390 CSS pxの本編34,000〜60,000px、内容24,000px以上、80〜120有効コマ。実量はvalidation.jsonを正本とする。2026-10-11の主人公の特別さを加えた再計測を参照。
 
-72発話を白地に独立、4発話を身体動作や短い反応の絵へ。17原画の使える訓練・救護ラフを無加工で参照し、接続と稽古前の告白・共鳴の一閃を3原画で追加。原画の枚数とコマ数を混同しない。読みやすい縦列で句読点を使わず、自然な問いと制止には？と！を残す。
+72発話を白地の吹き出しに独立、4発話を身体動作や短い反応の絵へ。通常の会話62発話は細い輪郭と尾、切迫した制止2発話は太いトゲ、心の声8発話は雲形と点で区別する。尾と点は対応する人物カットへ向け、狭い接写と組み合わせる3発話は右上の人物へ向ける。17原画の使える訓練・救護ラフを無加工で参照し、接続と稽古前の告白・共鳴の一閃を3原画で追加。原画の枚数とコマ数を混同しない。読みやすい縦列で句読点を使わず、自然な問いと制止には？と！を残す。
 
 5か所で大きな絵と脇の小さな接写・白地の返答を同じ場面の空間へ置く。単純な全幅のカード列に揃えない。右側の小カットから始める横並びは、この話では無理に追加せず、JSONの順と縦の位置で読順を指定。主動作は広く、手・足の理解は小さく、救助後は密度を落とす。
 
@@ -53,7 +53,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：150px 結果を受け止め 次の動作や場所へ切り替える 次=00-japan:1-added-1
 - 感情・意図：発話相手へ求めること：日本の土曜の朝 航は傷のない右掌を見つめる ミルトの痛みと昨夜の問いが残る。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：心の声を雲形と点で示す 尾または点の方向=down-left 対応人物=00-japan:1 無彩色
 - 航（心）／thought／independent
 ```
 こっちの手は
@@ -68,7 +68,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：MIWA places one empty serving plate near KOH, asks him to clear his own breakfast before game. KOH looks up from ordinary physical phone.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=00-japan:1-added-1 無彩色
 - 美和／spoken／independent
 ```
 お皿
@@ -83,7 +83,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：日本の台所 母を振り返り空の皿を運ぶ ゲームへ逃げる前に自分の仕事を終える。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=00-japan:1-added-2 無彩色
 - 航／spoken／independent
 ```
 うん
@@ -98,7 +98,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：新しく鳴る サァ… 動作の接点へ置き 前の音と混同しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：KOH washes his one breakfast plate at real Japan sink, then dries his empty RIGHT hand, ordinary water sound, no fantasy injury.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 005 00-japan:2
@@ -109,7 +109,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：260px 結果を受け止め 次の動作や場所へ切り替える 次=00-yard:1
 - 感情・意図：発話相手へ求めること：KOH dries his empty hands after washing his own breakfast plate, then reaches toward ordinary headset on shelf; clean plate is in drain rack, no fantasy item in Japan.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：心の声を雲形と点で示す 尾または点の方向=down-left 対応人物=00-japan:2 無彩色
 - 航（心）／thought／independent
 ```
 今日は
@@ -124,7 +124,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：ミルトの安全広場に再接続 右掌の昨日の擦り傷を見つける 剣は左腰に納刀 盾なし。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：心の声を雲形と点で示す 尾または点の方向=down-left 対応人物=00-yard:1 無彩色
 - 航（心）／thought／independent
 ```
 まだ
@@ -139,7 +139,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：110px 結果を受け止め 次の動作や場所へ切り替える 次=00-yard:2
 - 感情・意図：発話相手へ求めること：左掌に使えなかった銅貨が二枚 右掌の擦り傷をかばって小袋へ戻す 日本へ銅貨を運ばない。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：心の声を雲形と点で示す 尾または点の方向=down-right 対応人物=00-yard:1-added-1 無彩色
 - 航（心）／thought／independent
 ```
 パンも
@@ -154,7 +154,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：安全広場から訓練場へ歩いて来た航 リゼは予備の木盾を点検 航の手に気づく。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=00-yard:2 無彩色
 - リゼ／spoken／independent
 ```
 来たね
@@ -169,7 +169,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：リゼは航の右掌の擦り傷を見て確かめる 触れて治療する魔法は使わない。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=00-yard:2-added-1 無彩色
 - 航／spoken／independent
 ```
 握ると
@@ -184,7 +184,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：120px 結果を受け止め 次の動作や場所へ切り替える 次=01-choice:1
 - 感情・意図：発話相手へ求めること：Medium LIZE looks up from the strap and smiles practically, hand remains on spare shield, her own short sword sheathed.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=00-yard:2-added-2 無彩色
 - リゼ／spoken／independent
 ```
 痛むなら
@@ -199,7 +199,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：昨日の衝動を自分の言葉で認める。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=01-choice:1 無彩色
 - 航／spoken／independent
 ```
 昨日…
@@ -214,7 +214,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：260px 問いの返答を待つ 次=01-choice:3
 - 感情・意図：発話相手へ求めること：勝てるかでなく行動の先を尋ねる。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=01-choice:2 無彩色
 - リゼ／spoken／independent
 ```
 抜いたあと
@@ -230,7 +230,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：聞かれて初めて準備のない自分に気づく。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=01-choice:3 無彩色
 - 航／spoken／independent
 ```
 …わからない
@@ -244,7 +244,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：200px 結果を受け止め 次の動作や場所へ切り替える 次=01-choice:5
 - 感情・意図：発話相手へ求めること：掌と鞘を見て悔しさを言葉にする。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=01-choice:4 無彩色
 - 航／spoken／independent
 ```
 あの人を
@@ -260,7 +260,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：木剣を選び実行できる範囲へ導く。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=01-choice:5 無彩色
 - リゼ／spoken／independent
 ```
 じゃあ今日は
@@ -276,7 +276,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：140px 結果を受け止め 次の動作や場所へ切り替える 次=01-lesson:2
 - 感情・意図：発話相手へ求めること：相手を倒すためだけでなく習うことを選ぶ。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=01-choice:6 無彩色
 - 航／spoken／independent
 ```
 うん
@@ -291,7 +291,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium LIZE hands him ONE practice shield, short sword in scabbard.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=01-lesson:2 無彩色
 - リゼ／spoken／independent
 ```
 まずこれ
@@ -306,7 +306,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Close: KOH awkwardly raises shield left hand and practice sword right, elbows stiff.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=01-lesson:3 無彩色
 - 航／spoken／independent
 ```
 重い……
@@ -320,7 +320,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：KOH left wrist drops slightly under shield weight, right wooden blade points awkwardly inward, reveals failed physical control rather than heroic stance.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 020 01-lesson:3-added-2
@@ -331,7 +331,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：LIZE touches shield rim lightly and moves her fingers away so KOH must support it himself.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=01-lesson:3-added-2 無彩色
 - リゼ／spoken／independent
 ```
 握りだけで
@@ -346,7 +346,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Shallow rear of shield close-up: KOH LEFT fingers go around inner wooden grip and forearm under leather strap. Correct wrist anatomy, only ONE grip and shield.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=01-grip:1 無彩色
 - リゼ（画面外）／spoken／independent
 ```
 肘を
@@ -361,7 +361,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium KOH bends LEFT elbow slightly and lowers shield rim so his RIGHT wooden sword can move freely. LIZE points toward his elbow without pulling his arm.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 航／spoken／embedded
 ```
 こう？
@@ -375,7 +375,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH rotates RIGHT wooden sword slowly outward, sees it no longer catches shield rim, tests correction before attack.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=01-grip:2-added-1 無彩色
 - 航／spoken／independent
 ```
 右手が
@@ -390,7 +390,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Shallow boots on stone dust then shoulders: KOH feet a little staggered, shield left, wooden sword right, eyes look across top rim at LIZE.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=up-right 対応人物=01-grip:3 無彩色
 - リゼ／spoken／independent
 ```
 相手と足元
@@ -405,7 +405,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：LIZE takes one unhurried sideways step; KOH tracks her shoulder and his own planted foot together without striking, understanding demonstrated.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 026 02-distance:1
@@ -416,7 +416,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Shallow foot close-up: KOH takes kendo stance, tries to step into range.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：心の声を雲形と点で示す 尾または点の方向=down-left 対応人物=02-distance:1 無彩色
 - 航（心）／thought／independent
 ```
 この間合いなら
@@ -430,7 +430,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：KOH sees LIZE sword tip closer and reflexively brings LEFT hand toward his RIGHT wooden hilt; shield strap still on left forearm, old kendo habit creates obstruction.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 028 02-distance:2
@@ -441,7 +441,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：新しく鳴る コン 動作の接点へ置き 前の音と混同しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：Diagonal dynamic action: LIZE lightly shifts his shield aside with wooden sword, controls him without injury. KOH reflexively reverts to his real-world TWO-HANDED kendo grip; shield hangs awkwardly from LEFT forearm and obstructs his RIGHT arm. This is the failed habit the next retry corrects, not a new correct stance.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 029 02-distance:3
@@ -452,7 +452,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：130px 結果を受け止め 次の動作や場所へ切り替える 次=02-distance:3-added-1
 - 感情・意図：発話相手へ求めること：Large KOH surprised face, shield fouls his right arm.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=02-distance:3 無彩色
 - リゼ（画面外）／spoken／independent
 ```
 剣だけを
@@ -467,7 +467,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH looks down at shield catching his own right arm and lowers wooden blade; recognizes his own habit caused failure.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=02-distance:3-added-1 無彩色
 - 航／spoken／independent
 ```
 いつもの握りに
@@ -482,7 +482,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：LIZE lowers her practice sword and lets him reset rather than attacks again.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=02-distance:3-added-2 無彩色
 - リゼ／spoken／independent
 ```
 盾の場所を
@@ -497,7 +497,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium KOH breathes out, deliberately lowers the LEFT shield a little and places RIGHT wooden sword outside shield edge; embarrassed but determined.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=02-retry:1 無彩色
 - 航／spoken／independent
 ```
 もう一回
@@ -512,7 +512,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：新しく鳴る コン 動作の接点へ置き 前の音と混同しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：Large diagonal controlled contact: LIZE wooden practice sword gently touches KOH shield rim, KOH shifts LEFT boot half a step back, shield not fused with right hand, no explosive magic.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 034 02-retry:2-added-1
@@ -523,7 +523,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：KOH keeps shield up AFTER the single touch, prevents reflexive pursuit; he looks at LIZE and his feet, breathing returns.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 035 02-retry:2-added-2
@@ -534,7 +534,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH asks why she did not hit harder; curiosity now tied to successful first receive.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=02-retry:2-added-2 無彩色
 - 航／spoken／independent
 ```
 強く来たら
@@ -549,7 +549,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：LIZE states novice limit and practical need to move instead of claiming invincible blocking.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=02-retry:2-added-3 無彩色
 - リゼ／spoken／independent
 ```
 全部は受けない
@@ -564,7 +564,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：180px 結果を受け止め 次の動作や場所へ切り替える 次=02-rest:1
 - 感情・意図：発話相手へ求めること：Shallow LIZE approving face, her wooden sword lowered after one successful touch. KOH remains a novice, no grand victory.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=02-retry:3 無彩色
 - リゼ／spoken／independent
 ```
 今の感じ
@@ -578,7 +578,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Close KOH LEFT hand trembles mildly as he lowers borrowed shield onto bench. Not a severe injury. Sweat at temple, shoulders relax.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=02-rest:1 無彩色
 - 航／spoken／independent
 ```
 腕が
@@ -593,7 +593,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：KOH tries to raise LEFT wrist once more, stops when it trembles, chooses to set shield down; not another training failure counted as a repeat lesson.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 040 02-rest:2
@@ -604,7 +604,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium KOH sits and drinks from ONE plain water flask; LIZE rests beside bench rather than pushes him immediately back to combat.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=02-rest:2 無彩色
 - リゼ／spoken／independent
 ```
 休むのも
@@ -619,7 +619,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：150px 結果を受け止め 次の動作や場所へ切り替える 次=02-change:1
 - 感情・意図：発話相手へ求めること：KOH wipes sweat with empty right sleeve and watches other local trainees take turns, recognizes practice is ordinary work too.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=02-rest:2-added-1 無彩色
 - 航／spoken／independent
 ```
 俺だけ
@@ -635,7 +635,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：Shallow KOH returns ONE wooden practice sword to shared bench beside the other spare practice tools, not holding steel yet. Shield rests at bench edge.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 043 02-change:2
@@ -646,7 +646,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium KOH uses RIGHT hand to draw his OWN plain straight steel sword briefly from brown scabbard, LEFT holds scabbard, recognizes heavier weight. No shield in hands during this check.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=02-change:2 無彩色
 - 航／spoken／independent
 ```
 こっちは
@@ -661,7 +661,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：KOH compares the REAL steel edge against wooden practice blade on bench, pulls steel blade away from people and resheathes with care, no speech or magic.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 045 02-change:3
@@ -672,7 +672,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium KOH has resheathed steel sword and picks the ONE spare wooden shield up with LEFT hand for patrol. LIZE points to this specific bench, explains ownership and return place.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=02-change:3 無彩色
 - リゼ／spoken／independent
 ```
 盾は私の予備
@@ -687,7 +687,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH looks at borrowed shield rim and asks owner before leaving, steel sheathed at LEFT hip.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=02-change:3-added-1 無彩色
 - 航／spoken／independent
 ```
 傷つけたら
@@ -702,7 +702,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：250px 結果を受け止め 次の動作や場所へ切り替える 次=03-patrol:1
 - 感情・意図：発話相手へ求めること：LIZE points to same bench and spare shelf, expects responsibility not perfect untouched gear.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=02-change:3-added-2 無彩色
 - リゼ／spoken／independent
 ```
 隠さず見せて
@@ -717,7 +717,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Wide: patrol walks riverbank, steel blade sheathed, water plentiful.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=03-patrol:1 無彩色
 - リゼ／spoken／independent
 ```
 足元も見て
@@ -732,7 +732,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Nameless LOCAL guard gray hair dark goatee steel helmet sand scarf brown leather armor asks KOH on river path, ordinary check not hostile NPC.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=03-patrol:1-added-1 無彩色
 - 兵士／spoken／independent
 ```
 巡回は
@@ -747,7 +747,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH nods, LEFT shield slung RIGHT hand empty near own sheathed steel, answers guard as person.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=03-patrol:1-added-2 無彩色
 - 航／spoken／independent
 ```
 はい
@@ -762,7 +762,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：Small close: fresh claw tracks in mud under reeds, ominous but not gore.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 052 03-patrol:2-added-1
@@ -773,7 +773,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：LIZE crouches beside fresh pawprint without touching dangerous reeds, compares it with nearby river mud, healthy water behind.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=up-right 対応人物=03-patrol:2-added-1 無彩色
 - リゼ／spoken／independent
 ```
 川へ来るのは
@@ -788,7 +788,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium: impulsive red-haired PLAYER traveler runs past the patrol with flashy steel sword.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 帰還者／spoken／embedded
 ```
 任せろ！
@@ -802,7 +802,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH reaches empty RIGHT hand toward red-player back, asks him to wait; local guard and LIZE still together on path.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：離れた相手へ届く切迫した制止を太いトゲで示す 尾または点の方向=down-right 対応人物=03-patrol:3-added-1 無彩色
 - 航／spoken／independent
 ```
 待って！
@@ -817,7 +817,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：新しく鳴る ガサ… 草の原画に一度だけ 以後は同じ音の点へ減衰
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：Shallow empty reeds shiver near muddy path, only grass and moving leaves. A SINGLE ガサ… inscription starts at right side of reeds and extends toward panel border. No eyes or claws or creature silhouette yet.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 056 03-listen:2
@@ -828,7 +828,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：前の草の音が続く 追加のガサを描かず 薄い点が止まるまで 警戒する目と手を優先
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：Small KOH eye-and-left-shield close-up reacts to the offscreen rustle as he slips the borrowed shield from its walking sling onto LEFT forearm; red-haired bronze-armored traveler back only in farther edge, turning ahead. Continue the same sound with faint trailing … into large white bottom fade, no second complete inscription. No visible beast.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 057 03-listen:2-added-1
@@ -839,7 +839,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：前の草の音が続く 追加のガサを描かず 薄い点が止まるまで 警戒する目と手を優先
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：LIZE raises empty RIGHT fingers to stop patrol, listens toward grass, her own short sword still sheathed. ONE faint trailing dots from grass sound can continue, no new ガサ and no creature.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 058 03-listen:2-added-2
@@ -850,7 +850,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：前の草の音が続く 追加のガサを描かず 薄い点が止まるまで 警戒する目と手を優先
 - 余白：900px 草の音と停止の反応を受け 獣の姿を下で初めて見せる 次=04-beast:1
 - 感情・意図：新しい動作または反応：KOH shifts one boot onto firmer path so wounded guard will later have space behind him; LEFT shield ready, RIGHT hand on own sheathed hilt. No advance or monster shown.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 059 04-beast:1
@@ -861,7 +861,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：新しく鳴る ガッ 動作の接点へ置き 前の音と混同しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：Large angled action shot: lean dark riverwolf-like monster leaps from reeds at the impulsive red-haired PLAYER; KOH in foreground frightened, shield held low, LIZE already reacts. Not the black-horn guardian.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 060 04-beast:2
@@ -872,7 +872,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：200px 結果を受け止め 次の動作や場所へ切り替える 次=04-beast:2-added-1
 - 感情・意図：新しい動作または反応：Shallow immediate result: the red-haired PLAYER avatar dissolves into pale construction light after the claw strike, with his steel sword falling into mud. The LOCAL guardsman tried to cover him and receives a small non-graphic scratch on his RIGHT forearm; KOH sees the guard crouch. No corpse, no injury to a Japanese person, no HUD and no dialogue.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 061 04-beast:2-added-1
@@ -883,7 +883,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：KOH turns sharply from fading player construction light to LOCAL guard physical RIGHT forearm wound, chooses real hurt person rather than vanished avatar.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 062 04-find:1
@@ -894,7 +894,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：Shallow dropped red-player steel sword lies on mud near reeds, not vanished and not automatically returned. A boot of the injured LOCAL guard braces beside it; his RIGHT forearm held close, blood only a tiny restrained mark.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 063 05-defense:1
@@ -905,7 +905,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium: KOH steps LEFT beside local wounded guard, raises borrowed shield, right hand grips sword.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：離れた相手へ届く切迫した制止を太いトゲで示す 尾または点の方向=down-left 対応人物=05-defense:1 無彩色
 - リゼ／spoken／independent
 ```
 その人の前に！
@@ -919,7 +919,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：新しく鳴る ガン 動作の接点へ置き 前の音と混同しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：Two quick close-up moments right-to-left within ONE shallow row: shield blocks claw; LIZE gathers pale wind around short sword.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 065 05-resonance:1
@@ -930,7 +930,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：航の瞳に細い環の光が映る 盾で兵士を守った直後 初めて魔力に感応する。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：心の声を雲形と点で示す 尾または点の方向=down-left 対応人物=05-resonance:1 無彩色
 - 航（心）／thought／independent
 ```
 今…
@@ -944,7 +944,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：航だけの視界 獣の肩から魔力の爪へ細い光の筋が見える 未来や相手の心は見えない。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：心の声を雲形と点で示す 尾または点の方向=down-left 対応人物=05-resonance:2 無彩色
 - 航（心）／thought／independent
 ```
 線が
@@ -959,7 +959,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：盾の後ろに兵士を残し 航が自分の右手の剣で細い筋へ短く踏み込む 足から肩と刃へ動作がつながる。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 068 05-defense:3
@@ -970,7 +970,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：新しく鳴る ザンッ 刃が爪の魔力を断つ起点から斜めの軌跡へ 効果音は画像の爪や航の顔を隠さない
 - 余白：100px 結果を受け止め 次の動作や場所へ切り替える 次=05-resonance:5
 - 感情・意図：新しい動作または反応：航の一閃が獣の爪の魔力を斬り裂く 太い斜めの軌跡と衝撃で獣を退ける 決め手は航 兵士は左盾の後ろで安全。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 069 05-resonance:5
@@ -981,7 +981,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：援護を始めていたリゼが 航の一撃を見て剣を下げ驚く 風が決め手だったと見せない。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=05-resonance:5 無彩色
 - リゼ／spoken／independent
 ```
 今の…
@@ -996,7 +996,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：光が消えた自分の右手の剣を見る航 獣は逃げ 兵士は生きている 立ったまま驚きを受け止める。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：心の声を雲形と点で示す 尾または点の方向=down-left 対応人物=05-resonance:6 無彩色
 - 航（心）／thought／independent
 ```
 俺が…？
@@ -1010,7 +1010,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Wide wolf retreats physically into reeds on LEFT far bank edge, same dark lean animal with tail, visible direction and diminishing distance. LIZE sword down but alert, no creature dissolved or respawned.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - リゼ／spoken／embedded
 ```
 追わないで
@@ -1024,7 +1024,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：KOH begins one step after retreating wolf but stops when LIZE warns, chooses guard over pursuit and turns back.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 073 05-recover:2
@@ -1035,7 +1035,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium LOCAL guard uses healthy LEFT hand to press cloth against wounded RIGHT forearm. Polearm rests upright against a tree during this pause. KOH left shield low and own sword resheathed stands beside him.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=05-recover:2 無彩色
 - 航／spoken／independent
 ```
 歩けますか
@@ -1049,7 +1049,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：LOCAL guard nods that he can walk, healthy LEFT hand presses RIGHT injury cloth, polearm leans beside tree during pause.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=05-recover:2-added-1 無彩色
 - 兵士／spoken／independent
 ```
 ゆっくりなら
@@ -1064,7 +1064,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：KOH resheathes his steel sword and gently supports the guard above the injured RIGHT forearm at his RIGHT upper arm with his free RIGHT hand. He does not press the wound. LEFT shield lowered. LIZE temporarily carries the polearm; before walking on, she returns it to the guard healthy LEFT hand.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 076 05-recover:3
@@ -1075,7 +1075,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：260px 結果を受け止め 次の動作や場所へ切り替える 次=05-recover:3-added-1
 - 感情・意図：新しい動作または反応：Wide three walk back toward visible Milt gate at same river path. KOH matches LOCAL guard pace, LIZE walks outer side keeping watch. Dropped red-player sword remains behind in mud near reeds, not magically collected.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 077 05-recover:3-added-1
@@ -1086,7 +1086,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH and the injured guard pause on the clinic steps. SENA takes over the guard care from the doorway and sends KOH to get water nearby. The guard is no longer left in danger, and the next scene is the nearby safe square.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=05-recover:3-added-1 無彩色
 - セナ／spoken／independent
 ```
 ここで診るよ
@@ -1102,7 +1102,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Wide: the red-haired PLAYER reappears in plain replacement clothes, weapon lost, KOH and AKARI nearby.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=06-returner:1 無彩色
 - 帰還者／spoken／independent
 ```
 戻れた
@@ -1117,7 +1117,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Close KOH listens with relief, sword sheathed and shield lowered.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=06-returner:2 無彩色
 - 航／spoken／independent
 ```
 さっきの人…
@@ -1132,7 +1132,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：AKARI in orange game jacket checks a readable blue HUD only for herself.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=06-returner:3 無彩色
 - 灯里／spoken／independent
 ```
 身体を
@@ -1147,7 +1147,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH looks at same regenerated red-haired player wrists, asks whether his earlier gear has returned.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=06-returner:3-added-1 無彩色
 - 航／spoken／independent
 ```
 剣や鎧も
@@ -1162,7 +1162,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium local supply clerk points to a modest waiting bench and almost empty replacement-clothes shelf; gives plain spare boot pair to regenerated PLAYER in beige clothes, not his lost armor or sword.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down 対応人物=06-supply:1 無彩色
 - 係の人／spoken／independent
 ```
 次の身体も
@@ -1177,7 +1177,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Local supply clerk indicates waiting bench and almost empty spare shelf, makes finite supply consequence practical.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=06-supply:1-added-1 無彩色
 - 係の人／spoken／independent
 ```
 予備がなければ
@@ -1192,7 +1192,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Shallow regenerated red-haired PLAYER looks at empty hands and plain clothes, remembers his weapon still physically at riverbank.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=06-supply:2 無彩色
 - 帰還者／spoken／independent
 ```
 剣は川に
@@ -1207,7 +1207,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Regenerated player looks toward river path outside gate then touches his plain replacement sleeve, hears own loss as practical task.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=06-supply:2-added-1 無彩色
 - 帰還者／spoken／independent
 ```
 ひとりじゃ
@@ -1222,7 +1222,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：230px 結果を受け止め 次の動作や場所へ切り替える 次=07-local:1
 - 感情・意図：発話相手へ求めること：Medium AKARI lowers her own brass communicator, speaks to KOH with relief for person in Japan, her wooden bow remains on back.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=06-supply:3 無彩色
 - 灯里／spoken／independent
 ```
 日本の身体は
@@ -1237,7 +1237,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium KOH looks toward the LOCAL guard, worried.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=07-local:1 無彩色
 - 航／spoken／independent
 ```
 兵士さんの傷も
@@ -1253,7 +1253,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：280px 結果を受け止め 次の動作や場所へ切り替える 次=07-local:2-added-1
 - 感情・意図：発話相手へ求めること：SENA calm close-up, one clean bandage in hands.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=07-local:2 無彩色
 - セナ／spoken／independent
 ```
 この人には
@@ -1269,7 +1269,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH looks at SAME guard right forearm and asks about tomorrow rather than revival again.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=07-local:2-added-1 無彩色
 - 航／spoken／independent
 ```
 明日の巡回は
@@ -1284,7 +1284,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：LOCAL guard rests bandaged RIGHT hand on lap, accepts actual recovery time.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=07-local:2-added-2 無彩色
 - 兵士／spoken／independent
 ```
 治るまで
@@ -1299,7 +1299,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：LIZE tightens bandage, clear difference to player; tired expression.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=07-local:3 無彩色
 - リゼ／spoken／independent
 ```
 明日は休んで
@@ -1314,7 +1314,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：Shallow LIZE moves ONE patrol token from tomorrow active row to a reserve peg beside the clinic board. No readable unexplained bureaucratic chart, no giant UI, no promise to heal instantly.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 093 07-clinic:2
@@ -1325,7 +1325,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium SENA closes ONE wooden medicine box gently beside seated LOCAL guard, addresses KOH with practical thanks. Guard rests right bandaged arm on lap, same gray hair and goatee.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=07-clinic:2 無彩色
 - セナ／spoken／independent
 ```
 休ませる場所まで
@@ -1341,7 +1341,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：140px 結果を受け止め 次の動作や場所へ切り替える 次=07-promise:1
 - 感情・意図：新しい動作または反応：KOH takes guard empty water cup to clinic washing basin, performs small useful post-rescue task; SENA begins arranging tomorrow medicine, no new medical dose detail.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 095 07-promise:1
@@ -1352,7 +1352,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：新しい動作または反応：Close KOH uses plain cloth to wipe mud from ONE wooden shield rim on bench, shield detached from LEFT arm, his own steel sword stays sheathed at belt. No magically repaired cracks.。次の行動の理由として見せる。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 発話なし
 
 ### 096 07-promise:1-added-1
@@ -1363,7 +1363,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH shows ONE small scrape on borrowed shield metal rim to LIZE, remembers promised responsibility; wood uncracked until future6.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=up-right 対応人物=07-promise:1-added-1 無彩色
 - 航／spoken／independent
 ```
 縁が
@@ -1378,7 +1378,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：LIZE checks rim with empty fingers, relieved rather than scolds; same shield on bench.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down 対応人物=07-promise:1-added-2 無彩色
 - リゼ／spoken／independent
 ```
 見せてくれて
@@ -1394,7 +1394,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium KOH looks up from cleaned shield toward LIZE, asks rather than silently claims borrowed property.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=07-promise:2 無彩色
 - 航／spoken／independent
 ```
 明日も
@@ -1409,7 +1409,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：400px 結果を受け止め 次の動作や場所へ切り替える 次=08-invitation:1
 - 感情・意図：発話相手へ求めること：Wide LIZE points toward spare shield shelf right above the same bench. KOH places ONE cleaned shield there and removes hand, now shieldless.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=07-promise:3 無彩色
 - リゼ／spoken／independent
 ```
 ここに置いて
@@ -1425,7 +1425,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：REI in silver armor and deep red short cloak approaches KOH, sword sheathed, friendly.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=08-invitation:1 無彩色
 - 怜／spoken／independent
 ```
 さっきの盾
@@ -1440,7 +1440,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Close KOH recognizes his admired player, startled but delighted. KOH hands empty, NO shield, own steel sword remains sheathed.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色
 - 航／spoken／embedded
 ```
 ……レイさん？
@@ -1454,7 +1454,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH straightens posture, recognizes REI from familiar raid videos, now asks as nervous youth, hands empty no shield.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-right 対応人物=08-invitation:2-added-1 無彩色
 - 航／spoken／independent
 ```
 動画で
@@ -1469,7 +1469,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：REI smiles and gestures toward real training yard instead of superiority or secret chosen-one favor.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=08-invitation:2-added-2 無彩色
 - 怜／spoken／independent
 ```
 ここでは
@@ -1484,7 +1484,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：330px 結果を受け止め 次の動作や場所へ切り替える 次=end
 - 感情・意図：発話相手へ求めること：Large REI offers an open empty hand, a genuine invitation.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
-- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 声の輪郭：声に出す会話を細い輪郭と話者へ向く尾で示す 尾または点の方向=down-left 対応人物=08-invitation:3 無彩色
 - 怜／spoken／independent
 ```
 討伐隊

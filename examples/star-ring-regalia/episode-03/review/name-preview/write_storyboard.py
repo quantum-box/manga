@@ -1,6 +1,6 @@
 import json,sys,hashlib
 from pathlib import Path
-root=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parents[5];ep=root/'examples/star-ring-regalia/episode-03';d=ep/'review/name-preview';plan=json.loads((d/'plan.json').read_text());panels=[b for b in plan['beats'] if b['type']=='panel'];dec={b['id']:b for b in json.loads((d/'layout-decisions.json').read_text())}
+root=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parents[5];ep=root/'examples/star-ring-regalia/episode-03';d=ep/'review/name-preview';plan=json.loads((d/'plan.json').read_text());panels=[b for b in plan['beats'] if b['type']=='panel'];dec={b['id']:b for b in json.loads((d/'layout-decisions.json').read_text())};balloons={b['targetPanel']:b for b in json.loads((d/'balloon-decisions.json').read_text())}
 intro='''# 第3話「戻れる剣、戻れない剣」構成ネーム
 
 状態：2026-10-11の第2話最新版から続く新しい構成。**未採用・本作画未着手**。旧第3話への2026-10-09の承認を、この変更の承認として扱わない。旧完成原稿の配布・公開データは、このネームの採用と完成版の検証が終わるまで差し替えない。
@@ -32,7 +32,7 @@ intro='''# 第3話「戻れる剣、戻れない剣」構成ネーム
 
 全話104の異なる動作・理解・選択・結果を計上。声・音・純余白を有効コマへ足さない。目標は390 CSS pxの本編34,000〜60,000px、内容24,000px以上、80〜120有効コマ。実量はvalidation.jsonを正本とする。2026-10-11の主人公の特別さを加えた再計測を参照。
 
-72発話を白地に独立、4発話を身体動作や短い反応の絵へ。17原画の使える訓練・救護ラフを無加工で参照し、接続と稽古前の告白・共鳴の一閃を3原画で追加。原画の枚数とコマ数を混同しない。読みやすい縦列で句読点を使わず、自然な問いと制止には？と！を残す。
+72発話を白地の吹き出しに独立、4発話を身体動作や短い反応の絵へ。通常の会話62発話は細い輪郭と尾、切迫した制止2発話は太いトゲ、心の声8発話は雲形と点で区別する。尾と点は対応する人物カットへ向け、狭い接写と組み合わせる3発話は右上の人物へ向ける。17原画の使える訓練・救護ラフを無加工で参照し、接続と稽古前の告白・共鳴の一閃を3原画で追加。原画の枚数とコマ数を混同しない。読みやすい縦列で句読点を使わず、自然な問いと制止には？と！を残す。
 
 5か所で大きな絵と脇の小さな接写・白地の返答を同じ場面の空間へ置く。単純な全幅のカード列に揃えない。右側の小カットから始める横並びは、この話では無理に追加せず、JSONの順と縦の位置で読順を指定。主動作は広く、手・足の理解は小さく、救助後は密度を落とす。
 
@@ -69,6 +69,8 @@ for i,p in enumerate(panels):
  gaps=[g for g in plan['pureGaps'] if g['before']==id];gap='／'.join(f"{g['height']}px {g['purpose']} 次={g['after']}" for g in gaps) or '追加の純余白なし 動作または応酬を近く読む'
  previous=panels[i-1]['id'] if i else '第2話末尾の問い'
  emotion='発話相手へ求めること：'+p['purpose']+'。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。' if choice['dialogue'] else '新しい動作または反応：'+p['purpose']+'。次の行動の理由として見せる。'
- sections.append(f"### {i+1:03d} {id}\n\n- 絵・新しい理解：{p['alt']}\n- 接続：{previous}の結果を受ける。{state}\n- 幅と配置：{p['widthPercent']}% {p['align']} 枠={p['frame']} 表示窓={p['crop']}"+(f" 場面空間={p['composition']} x={p['offsetX']} y={p['offsetY']}" if 'composition' in p else '')+f"\n- 音：{sound}\n- 余白：{gap}\n- 感情・意図：{emotion}\n- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。\n{ds}\n")
+ balloon=balloons.get(id)
+ outline=(f"{balloon['reason']} 尾または点の方向={balloon['tail']} 対応人物={id} 無彩色" if balloon else '絵の通常声は細い楕円 制止は太い縁 心の声は点で区別 無言には追加しない 無彩色')
+ sections.append(f"### {i+1:03d} {id}\n\n- 絵・新しい理解：{p['alt']}\n- 接続：{previous}の結果を受ける。{state}\n- 幅と配置：{p['widthPercent']}% {p['align']} 枠={p['frame']} 表示窓={p['crop']}"+(f" 場面空間={p['composition']} x={p['offsetX']} y={p['offsetY']}" if 'composition' in p else '')+f"\n- 音：{sound}\n- 余白：{gap}\n- 感情・意図：{emotion}\n- 声の輪郭：{outline}\n{ds}\n")
 text=intro+'\n'.join(sections)
 (d/'storyboard.md').write_text(text);(ep/'storyboard.md').write_text(text)

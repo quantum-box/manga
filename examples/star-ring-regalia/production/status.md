@@ -8,7 +8,9 @@
 
 第2話の最新main（PR #93 / bf149ef8）を基点に、第3話「戻れる剣、戻れない剣」の全話104コマを制作。日本の無傷の右手とミルトの右掌の擦り傷、銅貨二枚、昨日の抜刀しかけた行動を引き継ぐ。白地の72発話と絵に置く4発話を設計し、稽古の失敗・修正・限界、星環共鳴の初めての一閃で獣を退ける救助、帰還者の再生成と兵士の休養、盾の返却、怜の誘いをつなぐ。
 
-現在は**新ネームの構成採用待ち**。新しい本作画は未着手。旧第3話への承認と完成確認は以下の過去記録に限る。新しい構成へ自動で適用しない。入口は[第3話の確認リーダー](../episode-03/review/name-preview/index.html)、実量は[validation.json](../episode-03/review/name-preview/validation.json)、採用状態は[adoption.json](../episode-03/review/name-preview/adoption.json)。旧完成版の公開・配布をこのネームで差し替えない。
+余白の72発話も吹き出しへ変更。会話62発話は尾つき、制止2発話は太いトゲ、心の声8発話は雲形と点にし、人物と尾の方向を対応。104コマと76発話の内容・順序、20原画を保持。
+
+現在は**新ネームの構成採用待ち**。新しい本作画は未着手。旧第3話への承認と完成確認は以下の過去記録に限る。新しい構成へ自動で適用しない。入口は[第3話のPRプレビュー](https://pr94--manga-server.txcloud.app/?episode=name-star-ring-regalia-episode-03-c0bfb1865a38)、[ローカル確認リーダー](../episode-03/review/name-preview/index.html)、実量は[validation.json](../episode-03/review/name-preview/validation.json)、採用状態は[adoption.json](../episode-03/review/name-preview/adoption.json)。旧完成版の公開・配布をこのネームで差し替えない。
 
 
 ユーザー指定：200話以上の連載。全体240話は仮構成。2026年10月10日の最新依頼は、最新のWebtoonスキルで第1〜3話を順に作り直すこと。

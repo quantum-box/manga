@@ -101,6 +101,7 @@ def nat(p):
  _,_,w,h=p['crop'];return 390*p['widthPercent']/100*(1536*h)/(1024*w)
 def addvoice(p,d,composition=None,off=0):
  longest=max(map(len,d['text'].split('\n')));height=max(170,80+longest*22)
+ if p['id'] in {'03-patrol:3-added-1','05-defense:1'}:height+=44
  v=dict(id=p['id']+'-voice',type='voice',speaker=d['speaker'],text=d['text'],height=height,x=67 if p['align']!='left' else 34,y=50,purpose=p['purpose']+' 発話は白地で独立して読み 同じ人物の反応へ渡す',kind=d['kind'])
  if composition:v.update(composition=composition,offsetX=0,offsetY=off,widthPercent=45,x=50)
  beats.append(v);return height
