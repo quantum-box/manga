@@ -1,35 +1,64 @@
 {
   "schema": "webtoon-name-preview/v1",
-  "title": "星環のレガリア 第3話「戻れる剣、戻れない剣」",
+  "title": "星環のレガリア 第3話 戻れる剣、戻れない剣",
   "referenceWidth": 390,
+  "colorMode": "monochrome",
+  "status": "awaiting_user_adoption",
+  "scope": "full_episode",
+  "baseCommit": "bf149ef8c0a0b3f5de0233e54d307e598794d967",
   "beats": [
+    {
+      "id": "00-japan:1-voice",
+      "type": "voice",
+      "speaker": "航（心）",
+      "text": "こっちの手は\nなんともない",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "日本の土曜の朝 航は傷のない右掌を見つめる ミルトの痛みと昨夜の問いが残る 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "thought"
+    },
     {
       "id": "00-japan:1",
       "type": "panel",
-      "image": "rough/sheet-01.png",
+      "image": "rough/connection.png",
       "imageSize": [
         1024,
         1536
       ],
       "crop": [
-        0.5029296875,
-        0.0032552083333333335,
+        0.50390625,
+        0.0026041666666666665,
         0.4921875,
-        0.3307291666666667
+        0.328125
       ],
-      "alt": "Shallow ordinary smartphone on breakfast table: same simple REGALIA event notice about the black crown guardian, exact horizontal text 黒冠の守護者 and 討伐隊募集. KOH looks at it with eager eyes. Breakfast plate has been emptied, headset waits on shelf, no magical sword or shield in Japan.",
-      "widthPercent": 80,
+      "alt": "日本の土曜の朝 航は傷のない右掌を見つめる ミルトの痛みと昨夜の問いが残る",
+      "widthPercent": 82,
       "align": "right",
-      "frame": "thin",
-      "purpose": "Shallow ordinary smartphone on breakfast table: same simple REGALIA event notice about the black crown guardian, exact horizontal text 黒冠の守護者 and 討伐隊募集. KOH looks at it with eager eyes. Breakfast plate has been emptied, headset waits on shelf, no magical sword or shield in Japan.",
+      "frame": "none",
+      "purpose": "日本の土曜の朝 航は傷のない右掌を見つめる ミルトの痛みと昨夜の問いが残る",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "00-japan:1",
+      "effective": true,
+      "newUnderstanding": "日本の土曜の朝 航は傷のない右掌を見つめる ミルトの痛みと昨夜の問いが残る"
     },
     {
-      "id": "00-japan:1-added-1-pause",
+      "id": "00-japan:1-pause",
       "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "height": 150,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "00-japan:1-added-1-voice",
+      "type": "voice",
+      "speaker": "美和",
+      "text": "お皿\nお願いね",
+      "height": 170,
+      "x": 34,
+      "y": 50,
+      "purpose": "MIWA places one empty serving plate near KOH, asks him to clear his own breakfast before game. KOH looks up from ordinary physical phone. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "00-japan:1-added-1",
@@ -41,71 +70,56 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06278645833333334,
         0.48828125,
-        0.3307291666666667
+        0.27119791666666665
       ],
       "alt": "MIWA places one empty serving plate near KOH, asks him to clear his own breakfast before game. KOH looks up from ordinary physical phone.",
       "widthPercent": 92,
       "align": "left",
       "frame": "thin",
       "purpose": "MIWA places one empty serving plate near KOH, asks him to clear his own breakfast before game. KOH looks up from ordinary physical phone.",
-      "dialogue": [
-        {
-          "speaker": "美和",
-          "text": "お皿\nお願いね",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "00-japan:1-added-1",
+      "effective": true,
+      "newUnderstanding": "MIWA places one empty serving plate near KOH, asks him to clear his own breakfast before game. KOH looks up from ordinary physical phone."
     },
     {
-      "id": "00-japan:1-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "00-japan:1-added-2-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "うん\n洗ってから行く",
+      "height": 234,
+      "x": 67,
+      "y": 50,
+      "purpose": "日本の台所 母を振り返り空の皿を運ぶ ゲームへ逃げる前に自分の仕事を終える 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "00-japan:1-added-2",
       "type": "panel",
-      "image": "rough/sheet-01.png",
+      "image": "rough/connection.png",
       "imageSize": [
         1024,
         1536
       ],
       "crop": [
-        0.5029296875,
-        0.3404947916666667,
+        0.00390625,
+        0.0026041666666666665,
         0.4921875,
-        0.3170572916666667
+        0.328125
       ],
-      "alt": "KOH turns phone face down and stands with his own breakfast plate, chooses to finish small chore before headset.",
-      "widthPercent": 80,
+      "alt": "日本の台所 母を振り返り空の皿を運ぶ ゲームへ逃げる前に自分の仕事を終える",
+      "widthPercent": 78,
       "align": "right",
       "frame": "thin",
-      "purpose": "KOH turns phone face down and stands with his own breakfast plate, chooses to finish small chore before headset.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "うん\n洗ってから行く",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "00-japan:1-added-3-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "purpose": "日本の台所 母を振り返り空の皿を運ぶ ゲームへ逃げる前に自分の仕事を終える",
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "00-japan:1-added-2",
+      "effective": true,
+      "newUnderstanding": "日本の台所 母を振り返り空の皿を運ぶ ゲームへ逃げる前に自分の仕事を終える"
     },
     {
       "id": "00-japan:1-added-3",
@@ -117,12 +131,12 @@
       ],
       "crop": [
         0.0048828125,
-        0.3404947916666667,
+        0.3975651041666667,
         0.48828125,
-        0.3170572916666667
+        0.2599869791666667
       ],
       "alt": "KOH washes his one breakfast plate at real Japan sink, then dries his empty RIGHT hand, ordinary water sound, no fantasy injury.",
-      "widthPercent": 92,
+      "widthPercent": 94,
       "align": "left",
       "frame": "thin",
       "purpose": "KOH washes his one breakfast plate at real Japan sink, then dries his empty RIGHT hand, ordinary water sound, no fantasy injury.",
@@ -134,7 +148,21 @@
           "y": 76,
           "width": 20
         }
-      ]
+      ],
+      "sourceId": "00-japan:1-added-3",
+      "effective": true,
+      "newUnderstanding": "KOH washes his one breakfast plate at real Japan sink, then dries his empty RIGHT hand, ordinary water sound, no fantasy injury."
+    },
+    {
+      "id": "00-japan:2-voice",
+      "type": "voice",
+      "speaker": "航（心）",
+      "text": "今日は\nちゃんと聞こう",
+      "height": 234,
+      "x": 67,
+      "y": 50,
+      "purpose": "KOH dries his empty hands after washing his own breakfast plate, then reaches toward ordinary headset on shelf; clean plate is in drain rack, no fantasy item in Japan. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "thought"
     },
     {
       "id": "00-japan:2",
@@ -146,169 +174,187 @@
       ],
       "crop": [
         0.5029296875,
-        0.6640625,
+        0.7239453125,
         0.4921875,
-        0.3326822916666667
+        0.2727994791666667
       ],
       "alt": "KOH dries his empty hands after washing his own breakfast plate, then reaches toward ordinary headset on shelf; clean plate is in drain rack, no fantasy item in Japan.",
-      "widthPercent": 92,
+      "widthPercent": 86,
       "align": "right",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "KOH dries his empty hands after washing his own breakfast plate, then reaches toward ordinary headset on shelf; clean plate is in drain rack, no fantasy item in Japan.",
-      "dialogue": [
-        {
-          "speaker": "航（心）",
-          "text": "今日は\n剣を習いたい",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "thought",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "00-japan:2",
+      "effective": true,
+      "newUnderstanding": "KOH dries his empty hands after washing his own breakfast plate, then reaches toward ordinary headset on shelf; clean plate is in drain rack, no fantasy item in Japan."
     },
     {
-      "id": "00-yard:1-pause",
+      "id": "00-japan:2-pause",
       "type": "pause",
-      "height": 200,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "height": 260,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "00-yard:1-voice",
+      "type": "voice",
+      "speaker": "航（心）",
+      "text": "まだ\n残ってる",
+      "height": 170,
+      "x": 67,
+      "y": 50,
+      "purpose": "ミルトの安全広場に再接続 右掌の昨日の擦り傷を見つける 剣は左腰に納刀 盾なし 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "thought"
     },
     {
       "id": "00-yard:1",
       "type": "panel",
-      "image": "rough/sheet-01.png",
+      "image": "rough/connection.png",
       "imageSize": [
         1024,
         1536
       ],
       "crop": [
-        0.0048828125,
-        0.6640625,
-        0.48828125,
-        0.3326822916666667
+        0.507,
+        0.336,
+        0.484,
+        0.19
       ],
-      "alt": "Wide KOH approaches the small open training yard ON FOOT from the safe-square lane. LIZE kneels beside a bench checking a worn spare round wooden shield strap, wooden practice swords beside it. One shield is lying on bench, no borrowed shield in KOH hands yet.",
-      "widthPercent": 100,
-      "align": "center",
+      "alt": "ミルトへ戻った航が右掌へ視線を落とし 顔を曇らせる 掌の傷は次の小袋のカットで確かめる",
+      "widthPercent": 82,
+      "align": "right",
       "frame": "thin",
-      "purpose": "Wide KOH approaches the small open training yard ON FOOT from the safe-square lane. LIZE kneels beside a bench checking a worn spare round wooden shield strap, wooden practice swords beside it. One shield is lying on bench, no borrowed shield in KOH hands yet.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "今日は\n剣を習いに来た",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "purpose": "ミルトの安全広場に再接続 右掌の昨日の擦り傷を見つける 剣は左腰に納刀 盾なし",
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "00-yard:1",
+      "effective": true,
+      "newUnderstanding": "ミルトの安全広場に再接続 右掌の昨日の擦り傷を見つける 剣は左腰に納刀 盾なし"
     },
     {
-      "id": "00-yard:1-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "00-yard:1-added-1-voice",
+      "type": "voice",
+      "speaker": "航（心）",
+      "text": "パンも\n買えなかった",
+      "height": 212,
+      "x": 34,
+      "y": 50,
+      "purpose": "左掌に使えなかった銅貨が二枚 右掌の擦り傷をかばって小袋へ戻す 日本へ銅貨を運ばない 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "thought"
     },
     {
       "id": "00-yard:1-added-1",
       "type": "panel",
-      "image": "rough/sheet-02.png",
+      "image": "rough/connection.png",
       "imageSize": [
         1024,
         1536
       ],
       "crop": [
-        0.5029296875,
-        0.0032552083333333335,
+        0.00390625,
+        0.3359375,
         0.4921875,
-        0.337890625
+        0.328125
       ],
-      "alt": "LIZE pulls worn leather strap through buckle of ONE spare shield, checking whether it will hold. KOH waits respectfully rather than interrupts hand motion.",
+      "alt": "左掌に使えなかった銅貨が二枚 右掌の擦り傷をかばって小袋へ戻す 日本へ銅貨を運ばない",
       "widthPercent": 92,
-      "align": "right",
+      "align": "left",
       "frame": "thin",
-      "purpose": "LIZE pulls worn leather strap through buckle of ONE spare shield, checking whether it will hold. KOH waits respectfully rather than interrupts hand motion.",
+      "purpose": "左掌に使えなかった銅貨が二枚 右掌の擦り傷をかばって小袋へ戻す 日本へ銅貨を運ばない",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "00-yard:1-added-1",
+      "effective": true,
+      "newUnderstanding": "左掌に使えなかった銅貨が二枚 右掌の擦り傷をかばって小袋へ戻す 日本へ銅貨を運ばない"
+    },
+    {
+      "id": "00-yard:1-added-1-pause",
+      "type": "pause",
+      "height": 110,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "00-yard:2-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "来たね\n手はどう？",
+      "height": 190,
+      "x": 67,
+      "y": 50,
+      "purpose": "安全広場から訓練場へ歩いて来た航 リゼは予備の木盾を点検 航の手に気づく 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "00-yard:2",
       "type": "panel",
-      "image": "rough/sheet-02.png",
+      "image": "rough/connection.png",
       "imageSize": [
         1024,
         1536
       ],
       "crop": [
-        0.0048828125,
-        0.0032552083333333335,
-        0.48828125,
-        0.337890625
+        0.50390625,
+        0.6692708333333334,
+        0.4921875,
+        0.328125
       ],
-      "alt": "Medium LIZE looks up from the strap and smiles practically, hand remains on spare shield, her own short sword sheathed.",
-      "widthPercent": 92,
-      "align": "left",
+      "alt": "安全広場から訓練場へ歩いて来た航 リゼは予備の木盾を点検 航の手に気づく",
+      "widthPercent": 78,
+      "align": "right",
       "frame": "thin",
-      "purpose": "Medium LIZE looks up from the strap and smiles practically, hand remains on spare shield, her own short sword sheathed.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "巡回の前なら\n少しできるよ",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "purpose": "安全広場から訓練場へ歩いて来た航 リゼは予備の木盾を点検 航の手に気づく",
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "00-yard:2",
+      "effective": true,
+      "newUnderstanding": "安全広場から訓練場へ歩いて来た航 リゼは予備の木盾を点検 航の手に気づく"
     },
     {
-      "id": "00-yard:2-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "00-yard:2-added-1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "握ると\n少し痛い",
+      "height": 170,
+      "x": 34,
+      "y": 50,
+      "purpose": "リゼは航の右掌の擦り傷を見て確かめる 触れて治療する魔法は使わない 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "00-yard:2-added-1",
       "type": "panel",
-      "image": "rough/sheet-02.png",
+      "image": "rough/connection.png",
       "imageSize": [
         1024,
         1536
       ],
       "crop": [
-        0.5029296875,
-        0.34765625,
+        0.00390625,
+        0.6692708333333334,
         0.4921875,
-        0.3098958333333333
+        0.328125
       ],
-      "alt": "KOH asks whether the patrol will be delayed, nods toward LIZE courier pouch.",
-      "widthPercent": 92,
-      "align": "right",
-      "frame": "thin",
-      "purpose": "KOH asks whether the patrol will be delayed, nods toward LIZE courier pouch.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "巡回の仕事\n大丈夫？",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "alt": "リゼは航の右掌の擦り傷を見て確かめる 触れて治療する魔法は使わない",
+      "widthPercent": 94,
+      "align": "left",
+      "frame": "none",
+      "purpose": "リゼは航の右掌の擦り傷を見て確かめる 触れて治療する魔法は使わない",
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "00-yard:2-added-1",
+      "effective": true,
+      "newUnderstanding": "リゼは航の右掌の擦り傷を見て確かめる 触れて治療する魔法は使わない"
     },
     {
-      "id": "00-yard:2-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "00-yard:2-added-2-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "痛むなら\n途中で止めよう",
+      "height": 234,
+      "x": 67,
+      "y": 50,
+      "purpose": "Medium LIZE looks up from the strap and smiles practically, hand remains on spare shield, her own short sword sheathed. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "00-yard:2-added-2",
@@ -320,141 +366,271 @@
       ],
       "crop": [
         0.0048828125,
-        0.34765625,
+        0.06407552083333333,
         0.48828125,
-        0.3098958333333333
+        0.27707031249999997
       ],
-      "alt": "LIZE points at sunlit yard and nearby river route, gives bounded practice time rather than unlimited tutor role.",
-      "widthPercent": 92,
-      "align": "left",
+      "alt": "Medium LIZE looks up from the strap and smiles practically, hand remains on spare shield, her own short sword sheathed.",
+      "widthPercent": 86,
+      "align": "right",
       "frame": "thin",
-      "purpose": "LIZE points at sunlit yard and nearby river route, gives bounded practice time rather than unlimited tutor role.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "出る前に\n持ち方を覚えよう",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "purpose": "Medium LIZE looks up from the strap and smiles practically, hand remains on spare shield, her own short sword sheathed.",
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "00-yard:2-added-2",
+      "effective": true,
+      "newUnderstanding": "Medium LIZE looks up from the strap and smiles practically, hand remains on spare shield, her own short sword sheathed."
     },
     {
-      "id": "01-lesson:1-pause",
+      "id": "00-yard:2-added-2-pause",
       "type": "pause",
-      "height": 80,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "height": 120,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
     },
     {
-      "id": "01-lesson:1",
+      "id": "01-choice:1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "昨日…\n剣を抜きかけた",
+      "height": 234,
+      "x": 67,
+      "y": 50,
+      "purpose": "昨日の衝動を自分の言葉で認める 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
+    },
+    {
+      "id": "01-choice:1",
       "type": "panel",
-      "image": "rough/sheet-02.png",
-      "imageSize": [
-        1024,
-        1536
-      ],
-      "crop": [
-        0.5029296875,
-        0.6640625,
-        0.4921875,
-        0.3326822916666667
-      ],
-      "alt": "Wide: KOH asks to train; wooden practice sword and small round wooden shield on bench.",
-      "widthPercent": 100,
-      "align": "center",
-      "frame": "thin",
-      "purpose": "Wide: KOH asks to train; wooden practice sword and small round wooden shield on bench.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "討伐に行きたい\n剣を\n教えてくれる？",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "01-lesson:1-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
-    },
-    {
-      "id": "01-lesson:1-added-1",
-      "type": "panel",
-      "image": "rough/sheet-02.png",
-      "imageSize": [
-        1024,
-        1536
-      ],
-      "crop": [
-        0.0048828125,
-        0.6640625,
-        0.48828125,
-        0.3326822916666667
-      ],
-      "alt": "KOH admits real-world experience but no shield experience, hands empty by bench.",
-      "widthPercent": 92,
-      "align": "left",
-      "frame": "thin",
-      "purpose": "KOH admits real-world experience but no shield experience, hands empty by bench.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "剣道ならやってる\nでも盾は初めて",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "01-lesson:1-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
-    },
-    {
-      "id": "01-lesson:1-added-2",
-      "type": "panel",
-      "image": "rough/sheet-03.png",
+      "image": "rough/lesson-choice.png",
       "imageSize": [
         1024,
         1536
       ],
       "crop": [
         0.50390625,
-        0.0032552083333333335,
-        0.4912109375,
-        0.326171875
+        0.0026041666666666665,
+        0.4921875,
+        0.328125
       ],
-      "alt": "LIZE selects ONE wooden practice sword from shared bench, steel short sword still sheathed. Explains tool for this particular learning.",
-      "widthPercent": 92,
+      "alt": "昨日の衝動を自分の言葉で認める",
+      "widthPercent": 82,
       "align": "right",
       "frame": "thin",
-      "purpose": "LIZE selects ONE wooden practice sword from shared bench, steel short sword still sheathed. Explains tool for this particular learning.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "刃のない剣で\n距離を試そう",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
+      "purpose": "昨日の衝動を自分の言葉で認める",
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-choice:1",
+      "effective": true,
+      "newUnderstanding": "昨日の衝動を自分の言葉で認める"
+    },
+    {
+      "id": "01-choice:2-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "抜いたあと\nどうするつもり\nだった？",
+      "height": 234,
+      "x": 34,
+      "y": 50,
+      "purpose": "勝てるかでなく行動の先を尋ねる 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
+    },
+    {
+      "id": "01-choice:2",
+      "type": "panel",
+      "image": "rough/lesson-choice.png",
+      "imageSize": [
+        1024,
+        1536
       ],
-      "sounds": []
+      "crop": [
+        0.00390625,
+        0.0026041666666666665,
+        0.4921875,
+        0.328125
+      ],
+      "alt": "勝てるかでなく行動の先を尋ねる",
+      "widthPercent": 92,
+      "align": "left",
+      "frame": "thin",
+      "purpose": "勝てるかでなく行動の先を尋ねる",
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-choice:2",
+      "effective": true,
+      "newUnderstanding": "勝てるかでなく行動の先を尋ねる"
+    },
+    {
+      "id": "01-choice:2-pause",
+      "type": "pause",
+      "height": 260,
+      "purpose": "問いの返答を待つ"
+    },
+    {
+      "id": "01-choice:3-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "…わからない",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "聞かれて初めて準備のない自分に気づく 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
+    },
+    {
+      "id": "01-choice:3",
+      "type": "panel",
+      "image": "rough/lesson-choice.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "crop": [
+        0.50390625,
+        0.3359375,
+        0.4921875,
+        0.328125
+      ],
+      "alt": "聞かれて初めて準備のない自分に気づく",
+      "widthPercent": 78,
+      "align": "right",
+      "frame": "none",
+      "purpose": "聞かれて初めて準備のない自分に気づく",
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-choice:3",
+      "effective": true,
+      "newUnderstanding": "聞かれて初めて準備のない自分に気づく"
+    },
+    {
+      "id": "01-choice:4-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "あの人を\n止めたかった\nだけで",
+      "height": 212,
+      "x": 34,
+      "y": 50,
+      "purpose": "掌と鞘を見て悔しさを言葉にする 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
+    },
+    {
+      "id": "01-choice:4",
+      "type": "panel",
+      "image": "rough/lesson-choice.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "crop": [
+        0.00390625,
+        0.3359375,
+        0.4921875,
+        0.328125
+      ],
+      "alt": "掌と鞘を見て悔しさを言葉にする",
+      "widthPercent": 94,
+      "align": "left",
+      "frame": "thin",
+      "purpose": "掌と鞘を見て悔しさを言葉にする",
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-choice:4",
+      "effective": true,
+      "newUnderstanding": "掌と鞘を見て悔しさを言葉にする"
+    },
+    {
+      "id": "01-choice:4-pause",
+      "type": "pause",
+      "height": 200,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "01-choice:5-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "じゃあ今日は\n身を守る\nところから",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "木剣を選び実行できる範囲へ導く 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
+    },
+    {
+      "id": "01-choice:5",
+      "type": "panel",
+      "image": "rough/lesson-choice.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "crop": [
+        0.50390625,
+        0.6692708333333334,
+        0.4921875,
+        0.328125
+      ],
+      "alt": "木剣を選び実行できる範囲へ導く",
+      "widthPercent": 86,
+      "align": "right",
+      "frame": "thin",
+      "purpose": "木剣を選び実行できる範囲へ導く",
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-choice:5",
+      "effective": true,
+      "newUnderstanding": "木剣を選び実行できる範囲へ導く"
+    },
+    {
+      "id": "01-choice:6-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "うん\n教えて",
+      "height": 170,
+      "x": 67,
+      "y": 50,
+      "purpose": "相手を倒すためだけでなく習うことを選ぶ 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
+    },
+    {
+      "id": "01-choice:6",
+      "type": "panel",
+      "image": "rough/lesson-choice.png",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "crop": [
+        0.00390625,
+        0.6692708333333334,
+        0.4921875,
+        0.328125
+      ],
+      "alt": "相手を倒すためだけでなく習うことを選ぶ",
+      "widthPercent": 82,
+      "align": "right",
+      "frame": "thin",
+      "purpose": "相手を倒すためだけでなく習うことを選ぶ",
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-choice:6",
+      "effective": true,
+      "newUnderstanding": "相手を倒すためだけでなく習うことを選ぶ"
+    },
+    {
+      "id": "01-choice:6-pause",
+      "type": "pause",
+      "height": 140,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "01-lesson:2-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "まずこれ\n持ってみて",
+      "height": 190,
+      "x": 34,
+      "y": 50,
+      "purpose": "Medium LIZE hands him ONE practice shield, short sword in scabbard. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "01-lesson:2",
@@ -466,27 +642,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06196614583333333,
         0.4892578125,
-        0.326171875
+        0.2674609375
       ],
       "alt": "Medium LIZE hands him ONE practice shield, short sword in scabbard.",
       "widthPercent": 92,
       "align": "left",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "Medium LIZE hands him ONE practice shield, short sword in scabbard.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "まずこれ\n持ってみて",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-lesson:2",
+      "effective": true,
+      "newUnderstanding": "Medium LIZE hands him ONE practice shield, short sword in scabbard."
+    },
+    {
+      "id": "01-lesson:3-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "重い……",
+      "height": 170,
+      "x": 67,
+      "y": 50,
+      "purpose": "Close: KOH awkwardly raises shield left hand and practice sword right, elbows stiff. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "01-lesson:3",
@@ -498,33 +678,20 @@
       ],
       "crop": [
         0.50390625,
-        0.3359375,
+        0.3941796875,
         0.4912109375,
-        0.3235677083333333
+        0.26532552083333333
       ],
       "alt": "Close: KOH awkwardly raises shield left hand and practice sword right, elbows stiff.",
-      "widthPercent": 80,
+      "widthPercent": 78,
       "align": "right",
       "frame": "thin",
       "purpose": "Close: KOH awkwardly raises shield left hand and practice sword right, elbows stiff.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "重い……",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "01-lesson:3-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-lesson:3",
+      "effective": true,
+      "newUnderstanding": "Close: KOH awkwardly raises shield left hand and practice sword right, elbows stiff."
     },
     {
       "id": "01-lesson:3-added-1",
@@ -536,23 +703,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.3359375,
+        0.3941796875,
         0.4892578125,
-        0.3235677083333333
+        0.26532552083333333
       ],
       "alt": "KOH left wrist drops slightly under shield weight, right wooden blade points awkwardly inward, reveals failed physical control rather than heroic stance.",
-      "widthPercent": 92,
+      "widthPercent": 94,
       "align": "left",
       "frame": "thin",
       "purpose": "KOH left wrist drops slightly under shield weight, right wooden blade points awkwardly inward, reveals failed physical control rather than heroic stance.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "01-lesson:3-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH left wrist drops slightly under shield weight, right wooden blade points awkwardly inward, reveals failed physical control rather than heroic stance."
     },
     {
-      "id": "01-lesson:3-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "01-lesson:3-added-2-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "握りだけで\n支えないで",
+      "height": 190,
+      "x": 67,
+      "y": 50,
+      "purpose": "LIZE touches shield rim lightly and moves her fingers away so KOH must support it himself. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "01-lesson:3-added-2",
@@ -564,33 +739,31 @@
       ],
       "crop": [
         0.50390625,
-        0.666015625,
+        0.725546875,
         0.4912109375,
-        0.3307291666666667
+        0.27119791666666665
       ],
       "alt": "LIZE touches shield rim lightly and moves her fingers away so KOH must support it himself.",
-      "widthPercent": 92,
+      "widthPercent": 86,
       "align": "right",
       "frame": "thin",
       "purpose": "LIZE touches shield rim lightly and moves her fingers away so KOH must support it himself.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "握りだけで\n支えないで",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-lesson:3-added-2",
+      "effective": true,
+      "newUnderstanding": "LIZE touches shield rim lightly and moves her fingers away so KOH must support it himself."
     },
     {
-      "id": "01-grip:1-pause",
-      "type": "pause",
-      "height": 70,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "01-grip:1-voice",
+      "type": "voice",
+      "speaker": "リゼ（画面外）",
+      "text": "肘を\n固めないで",
+      "height": 190,
+      "x": 67,
+      "y": 50,
+      "purpose": "Shallow rear of shield close-up: KOH LEFT fingers go around inner wooden grip and forearm under leather strap. Correct wrist anatomy, only ONE grip and shield. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "01-grip:1",
@@ -602,27 +775,20 @@
       ],
       "crop": [
         0.0048828125,
-        0.666015625,
+        0.725546875,
         0.4892578125,
-        0.3307291666666667
+        0.27119791666666665
       ],
       "alt": "Shallow rear of shield close-up: KOH LEFT fingers go around inner wooden grip and forearm under leather strap. Correct wrist anatomy, only ONE grip and shield.",
-      "widthPercent": 80,
-      "align": "left",
-      "frame": "thin",
+      "widthPercent": 82,
+      "align": "right",
+      "frame": "none",
       "purpose": "Shallow rear of shield close-up: KOH LEFT fingers go around inner wooden grip and forearm under leather strap. Correct wrist anatomy, only ONE grip and shield.",
-      "dialogue": [
-        {
-          "speaker": "リゼ（画面外）",
-          "text": "肘を\n固めないで",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-grip:1",
+      "effective": true,
+      "newUnderstanding": "Shallow rear of shield close-up: KOH LEFT fingers go around inner wooden grip and forearm under leather strap. Correct wrist anatomy, only ONE grip and shield."
     },
     {
       "id": "01-grip:2",
@@ -634,13 +800,13 @@
       ],
       "crop": [
         0.5029296875,
-        0.0032552083333333335,
+        0.06255208333333333,
         0.4921875,
-        0.3294270833333333
+        0.2701302083333333
       ],
       "alt": "Medium KOH bends LEFT elbow slightly and lowers shield rim so his RIGHT wooden sword can move freely. LIZE points toward his elbow without pulling his arm.",
       "widthPercent": 92,
-      "align": "right",
+      "align": "left",
       "frame": "thin",
       "purpose": "Medium KOH bends LEFT elbow slightly and lowers shield rim so his RIGHT wooden sword can move freely. LIZE points toward his elbow without pulling his arm.",
       "dialogue": [
@@ -654,13 +820,21 @@
           "tail": "down"
         }
       ],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "01-grip:2",
+      "effective": true,
+      "newUnderstanding": "Medium KOH bends LEFT elbow slightly and lowers shield rim so his RIGHT wooden sword can move freely. LIZE points toward his elbow without pulling his arm."
     },
     {
-      "id": "01-grip:2-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "01-grip:2-added-1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "右手が\n動くようになった",
+      "height": 256,
+      "x": 67,
+      "y": 50,
+      "purpose": "KOH rotates RIGHT wooden sword slowly outward, sees it no longer catches shield rim, tests correction before attack. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "01-grip:2-added-1",
@@ -672,27 +846,38 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06255208333333333,
         0.48828125,
-        0.3294270833333333
+        0.2701302083333333
       ],
       "alt": "KOH rotates RIGHT wooden sword slowly outward, sees it no longer catches shield rim, tests correction before attack.",
-      "widthPercent": 100,
-      "align": "center",
+      "widthPercent": 62,
+      "align": "left",
       "frame": "thin",
       "purpose": "KOH rotates RIGHT wooden sword slowly outward, sees it no longer catches shield rim, tests correction before attack.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "右手が\n動くようになった",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-grip:2-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH rotates RIGHT wooden sword slowly outward, sees it no longer catches shield rim, tests correction before attack.",
+      "composition": "space-01-grip:2-added-1",
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    {
+      "id": "01-grip:3-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "相手と足元\n両方見るの",
+      "height": 190,
+      "x": 50,
+      "y": 50,
+      "purpose": "Shallow boots on stone dust then shoulders: KOH feet a little staggered, shield left, wooden sword right, eyes look across top rim at LIZE. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken",
+      "composition": "space-01-grip:2-added-1",
+      "offsetX": 0,
+      "offsetY": 438.28407184761903,
+      "widthPercent": 45
     },
     {
       "id": "01-grip:3",
@@ -704,33 +889,23 @@
       ],
       "crop": [
         0.5029296875,
-        0.3391927083333333,
+        0.39673177083333333,
         0.4921875,
-        0.3196614583333333
+        0.2621223958333333
       ],
       "alt": "Shallow boots on stone dust then shoulders: KOH feet a little staggered, shield left, wooden sword right, eyes look across top rim at LIZE.",
-      "widthPercent": 80,
+      "widthPercent": 34,
       "align": "right",
       "frame": "thin",
       "purpose": "Shallow boots on stone dust then shoulders: KOH feet a little staggered, shield left, wooden sword right, eyes look across top rim at LIZE.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "相手と足元\n両方見るの",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "01-grip:3-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "01-grip:3",
+      "effective": true,
+      "newUnderstanding": "Shallow boots on stone dust then shoulders: KOH feet a little staggered, shield left, wooden sword right, eyes look across top rim at LIZE.",
+      "composition": "space-01-grip:2-added-1",
+      "offsetX": 66,
+      "offsetY": 130.4259528
     },
     {
       "id": "01-grip:3-added-1",
@@ -742,23 +917,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.3391927083333333,
+        0.39673177083333333,
         0.48828125,
-        0.3196614583333333
+        0.2621223958333333
       ],
       "alt": "LIZE takes one unhurried sideways step; KOH tracks her shoulder and his own planted foot together without striking, understanding demonstrated.",
-      "widthPercent": 92,
-      "align": "left",
-      "frame": "thin",
+      "widthPercent": 86,
+      "align": "right",
+      "frame": "none",
       "purpose": "LIZE takes one unhurried sideways step; KOH tracks her shoulder and his own planted foot together without striking, understanding demonstrated.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "01-grip:3-added-1",
+      "effective": true,
+      "newUnderstanding": "LIZE takes one unhurried sideways step; KOH tracks her shoulder and his own planted foot together without striking, understanding demonstrated."
     },
     {
-      "id": "02-distance:1-pause",
-      "type": "pause",
-      "height": 70,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "02-distance:1-voice",
+      "type": "voice",
+      "speaker": "航（心）",
+      "text": "この間合いなら",
+      "height": 234,
+      "x": 67,
+      "y": 50,
+      "purpose": "Shallow foot close-up: KOH takes kendo stance, tries to step into range. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "thought"
     },
     {
       "id": "02-distance:1",
@@ -770,33 +953,23 @@
       ],
       "crop": [
         0.5029296875,
-        0.6653645833333334,
+        0.7250130208333334,
         0.4921875,
-        0.3313802083333333
+        0.2717317708333333
       ],
       "alt": "Shallow foot close-up: KOH takes kendo stance, tries to step into range.",
-      "widthPercent": 80,
-      "align": "right",
+      "widthPercent": 62,
+      "align": "left",
       "frame": "thin",
       "purpose": "Shallow foot close-up: KOH takes kendo stance, tries to step into range.",
-      "dialogue": [
-        {
-          "speaker": "航（心）",
-          "text": "この間合いなら",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "thought",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "02-distance:1-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-distance:1",
+      "effective": true,
+      "newUnderstanding": "Shallow foot close-up: KOH takes kendo stance, tries to step into range.",
+      "composition": "space-02-distance:1",
+      "offsetX": 0,
+      "offsetY": 0
     },
     {
       "id": "02-distance:1-added-1",
@@ -808,17 +981,23 @@
       ],
       "crop": [
         0.0048828125,
-        0.6653645833333334,
+        0.7250130208333334,
         0.48828125,
-        0.3313802083333333
+        0.2717317708333333
       ],
       "alt": "KOH sees LIZE sword tip closer and reflexively brings LEFT hand toward his RIGHT wooden hilt; shield strap still on left forearm, old kendo habit creates obstruction.",
-      "widthPercent": 80,
-      "align": "left",
+      "widthPercent": 34,
+      "align": "right",
       "frame": "thin",
       "purpose": "KOH sees LIZE sword tip closer and reflexively brings LEFT hand toward his RIGHT wooden hilt; shield strap still on left forearm, old kendo habit creates obstruction.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "02-distance:1-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH sees LIZE sword tip closer and reflexively brings LEFT hand toward his RIGHT wooden hilt; shield strap still on left forearm, old kendo habit creates obstruction.",
+      "composition": "space-02-distance:1",
+      "offsetX": 66,
+      "offsetY": 130.15796547619047
     },
     {
       "id": "02-distance:2",
@@ -830,12 +1009,12 @@
       ],
       "crop": [
         0.5048828125,
-        0.0032552083333333335,
+        0.06805989583333333,
         0.490234375,
-        0.3600260416666667
+        0.29522135416666667
       ],
       "alt": "Diagonal dynamic action: LIZE lightly shifts his shield aside with wooden sword, controls him without injury. KOH reflexively reverts to his real-world TWO-HANDED kendo grip; shield hangs awkwardly from LEFT forearm and obstructs his RIGHT arm. This is the failed habit the next retry corrects, not a new correct stance.",
-      "widthPercent": 92,
+      "widthPercent": 78,
       "align": "right",
       "frame": "thin",
       "purpose": "Diagonal dynamic action: LIZE lightly shifts his shield aside with wooden sword, controls him without injury. KOH reflexively reverts to his real-world TWO-HANDED kendo grip; shield hangs awkwardly from LEFT forearm and obstructs his RIGHT arm. This is the failed habit the next retry corrects, not a new correct stance.",
@@ -847,7 +1026,21 @@
           "y": 76,
           "width": 20
         }
-      ]
+      ],
+      "sourceId": "02-distance:2",
+      "effective": true,
+      "newUnderstanding": "Diagonal dynamic action: LIZE lightly shifts his shield aside with wooden sword, controls him without injury. KOH reflexively reverts to his real-world TWO-HANDED kendo grip; shield hangs awkwardly from LEFT forearm and obstructs his RIGHT arm. This is the failed habit the next retry corrects, not a new correct stance."
+    },
+    {
+      "id": "02-distance:3-voice",
+      "type": "voice",
+      "speaker": "リゼ（画面外）",
+      "text": "剣だけを\n見ないで",
+      "height": 170,
+      "x": 34,
+      "y": 50,
+      "purpose": "Large KOH surprised face, shield fouls his right arm. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-distance:3",
@@ -859,33 +1052,37 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06805989583333333,
         0.490234375,
-        0.3600260416666667
+        0.29522135416666667
       ],
       "alt": "Large KOH surprised face, shield fouls his right arm.",
-      "widthPercent": 100,
-      "align": "center",
-      "frame": "thin",
+      "widthPercent": 94,
+      "align": "left",
+      "frame": "none",
       "purpose": "Large KOH surprised face, shield fouls his right arm.",
-      "dialogue": [
-        {
-          "speaker": "リゼ（画面外）",
-          "text": "剣だけを\n見ないで",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-distance:3",
+      "effective": true,
+      "newUnderstanding": "Large KOH surprised face, shield fouls his right arm."
     },
     {
-      "id": "02-distance:3-added-1-pause",
+      "id": "02-distance:3-pause",
       "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "height": 130,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "02-distance:3-added-1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "いつもの握りに\n戻ってた",
+      "height": 234,
+      "x": 67,
+      "y": 50,
+      "purpose": "KOH looks down at shield catching his own right arm and lowers wooden blade; recognizes his own habit caused failure. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-distance:3-added-1",
@@ -897,33 +1094,31 @@
       ],
       "crop": [
         0.5048828125,
-        0.3697916666666667,
+        0.42908854166666666,
         0.490234375,
-        0.3294270833333333
+        0.2701302083333333
       ],
       "alt": "KOH looks down at shield catching his own right arm and lowers wooden blade; recognizes his own habit caused failure.",
-      "widthPercent": 92,
+      "widthPercent": 86,
       "align": "right",
       "frame": "thin",
       "purpose": "KOH looks down at shield catching his own right arm and lowers wooden blade; recognizes his own habit caused failure.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "いつもの握りに\n戻ってた",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-distance:3-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH looks down at shield catching his own right arm and lowers wooden blade; recognizes his own habit caused failure."
     },
     {
-      "id": "02-distance:3-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "02-distance:3-added-2-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "盾の場所を\n残して動いて",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "LIZE lowers her practice sword and lets him reset rather than attacks again. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-distance:3-added-2",
@@ -935,33 +1130,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.3697916666666667,
+        0.42908854166666666,
         0.490234375,
-        0.3294270833333333
+        0.2701302083333333
       ],
       "alt": "LIZE lowers her practice sword and lets him reset rather than attacks again.",
-      "widthPercent": 100,
-      "align": "center",
+      "widthPercent": 82,
+      "align": "right",
       "frame": "thin",
       "purpose": "LIZE lowers her practice sword and lets him reset rather than attacks again.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "盾の場所を\n残して動いて",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-distance:3-added-2",
+      "effective": true,
+      "newUnderstanding": "LIZE lowers her practice sword and lets him reset rather than attacks again."
     },
     {
-      "id": "02-retry:1-pause",
-      "type": "pause",
-      "height": 70,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "02-retry:1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "もう一回\nいい？",
+      "height": 170,
+      "x": 34,
+      "y": 50,
+      "purpose": "Medium KOH breathes out, deliberately lowers the LEFT shield a little and places RIGHT wooden sword outside shield edge; embarrassed but determined. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-retry:1",
@@ -973,27 +1166,20 @@
       ],
       "crop": [
         0.5048828125,
-        0.7057291666666666,
+        0.7581119791666666,
         0.490234375,
-        0.291015625
+        0.23863281249999999
       ],
       "alt": "Medium KOH breathes out, deliberately lowers the LEFT shield a little and places RIGHT wooden sword outside shield edge; embarrassed but determined.",
       "widthPercent": 92,
-      "align": "right",
+      "align": "left",
       "frame": "thin",
       "purpose": "Medium KOH breathes out, deliberately lowers the LEFT shield a little and places RIGHT wooden sword outside shield edge; embarrassed but determined.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "もう一回\nいい？",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-retry:1",
+      "effective": true,
+      "newUnderstanding": "Medium KOH breathes out, deliberately lowers the LEFT shield a little and places RIGHT wooden sword outside shield edge; embarrassed but determined."
     },
     {
       "id": "02-retry:2",
@@ -1005,14 +1191,14 @@
       ],
       "crop": [
         0.0048828125,
-        0.7057291666666666,
+        0.7581119791666666,
         0.490234375,
-        0.291015625
+        0.23863281249999999
       ],
       "alt": "Large diagonal controlled contact: LIZE wooden practice sword gently touches KOH shield rim, KOH shifts LEFT boot half a step back, shield not fused with right hand, no explosive magic.",
-      "widthPercent": 100,
-      "align": "center",
-      "frame": "thin",
+      "widthPercent": 78,
+      "align": "right",
+      "frame": "none",
       "purpose": "Large diagonal controlled contact: LIZE wooden practice sword gently touches KOH shield rim, KOH shifts LEFT boot half a step back, shield not fused with right hand, no explosive magic.",
       "dialogue": [],
       "sounds": [
@@ -1022,13 +1208,10 @@
           "y": 76,
           "width": 20
         }
-      ]
-    },
-    {
-      "id": "02-retry:2-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      ],
+      "sourceId": "02-retry:2",
+      "effective": true,
+      "newUnderstanding": "Large diagonal controlled contact: LIZE wooden practice sword gently touches KOH shield rim, KOH shifts LEFT boot half a step back, shield not fused with right hand, no explosive magic."
     },
     {
       "id": "02-retry:2-added-1",
@@ -1040,23 +1223,31 @@
       ],
       "crop": [
         0.5048828125,
-        0.0032552083333333335,
+        0.06196614583333333,
         0.490234375,
-        0.326171875
+        0.2674609375
       ],
       "alt": "KOH keeps shield up AFTER the single touch, prevents reflexive pursuit; he looks at LIZE and his feet, breathing returns.",
-      "widthPercent": 92,
-      "align": "right",
+      "widthPercent": 94,
+      "align": "left",
       "frame": "thin",
       "purpose": "KOH keeps shield up AFTER the single touch, prevents reflexive pursuit; he looks at LIZE and his feet, breathing returns.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "02-retry:2-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH keeps shield up AFTER the single touch, prevents reflexive pursuit; he looks at LIZE and his feet, breathing returns."
     },
     {
-      "id": "02-retry:2-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "02-retry:2-added-2-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "強く来たら\nどうなる？",
+      "height": 190,
+      "x": 67,
+      "y": 50,
+      "purpose": "KOH asks why she did not hit harder; curiosity now tied to successful first receive. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-retry:2-added-2",
@@ -1068,33 +1259,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06196614583333333,
         0.490234375,
-        0.326171875
+        0.2674609375
       ],
       "alt": "KOH asks why she did not hit harder; curiosity now tied to successful first receive.",
-      "widthPercent": 92,
-      "align": "left",
+      "widthPercent": 86,
+      "align": "right",
       "frame": "thin",
       "purpose": "KOH asks why she did not hit harder; curiosity now tied to successful first receive.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "強く来たら\nどうなる？",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-retry:2-added-2",
+      "effective": true,
+      "newUnderstanding": "KOH asks why she did not hit harder; curiosity now tied to successful first receive."
     },
     {
-      "id": "02-retry:2-added-3-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "02-retry:2-added-3-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "全部は受けない\n危ない時は離れる",
+      "height": 256,
+      "x": 67,
+      "y": 50,
+      "purpose": "LIZE states novice limit and practical need to move instead of claiming invincible blocking. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-retry:2-added-3",
@@ -1106,27 +1295,31 @@
       ],
       "crop": [
         0.5048828125,
-        0.3359375,
+        0.395,
         0.490234375,
-        0.328125
+        0.2690625
       ],
       "alt": "LIZE states novice limit and practical need to move instead of claiming invincible blocking.",
-      "widthPercent": 92,
+      "widthPercent": 82,
       "align": "right",
       "frame": "thin",
       "purpose": "LIZE states novice limit and practical need to move instead of claiming invincible blocking.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "全部は受けない\n危ない時は離れる",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-retry:2-added-3",
+      "effective": true,
+      "newUnderstanding": "LIZE states novice limit and practical need to move instead of claiming invincible blocking."
+    },
+    {
+      "id": "02-retry:3-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "今の感じ",
+      "height": 170,
+      "x": 34,
+      "y": 50,
+      "purpose": "Shallow LIZE approving face, her wooden sword lowered after one successful touch. KOH remains a novice, no grand victory. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-retry:3",
@@ -1138,33 +1331,37 @@
       ],
       "crop": [
         0.0048828125,
-        0.3359375,
+        0.395,
         0.490234375,
-        0.328125
+        0.2690625
       ],
       "alt": "Shallow LIZE approving face, her wooden sword lowered after one successful touch. KOH remains a novice, no grand victory.",
-      "widthPercent": 80,
+      "widthPercent": 92,
       "align": "left",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "Shallow LIZE approving face, her wooden sword lowered after one successful touch. KOH remains a novice, no grand victory.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "今の感じ",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-retry:3",
+      "effective": true,
+      "newUnderstanding": "Shallow LIZE approving face, her wooden sword lowered after one successful touch. KOH remains a novice, no grand victory."
     },
     {
-      "id": "02-rest:1-pause",
+      "id": "02-retry:3-pause",
       "type": "pause",
-      "height": 210,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "height": 180,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "02-rest:1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "腕が\n震える……",
+      "height": 190,
+      "x": 67,
+      "y": 50,
+      "purpose": "Close KOH LEFT hand trembles mildly as he lowers borrowed shield onto bench. Not a severe injury. Sweat at temple, shoulders relax. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-rest:1",
@@ -1176,33 +1373,23 @@
       ],
       "crop": [
         0.5048828125,
-        0.6705729166666666,
+        0.7292838541666666,
         0.490234375,
-        0.326171875
+        0.2674609375
       ],
       "alt": "Close KOH LEFT hand trembles mildly as he lowers borrowed shield onto bench. Not a severe injury. Sweat at temple, shoulders relax.",
-      "widthPercent": 80,
-      "align": "right",
+      "widthPercent": 62,
+      "align": "left",
       "frame": "thin",
       "purpose": "Close KOH LEFT hand trembles mildly as he lowers borrowed shield onto bench. Not a severe injury. Sweat at temple, shoulders relax.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "腕が\n震える……",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "02-rest:1-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-rest:1",
+      "effective": true,
+      "newUnderstanding": "Close KOH LEFT hand trembles mildly as he lowers borrowed shield onto bench. Not a severe injury. Sweat at temple, shoulders relax.",
+      "composition": "space-02-rest:1",
+      "offsetX": 0,
+      "offsetY": 0
     },
     {
       "id": "02-rest:1-added-1",
@@ -1214,17 +1401,34 @@
       ],
       "crop": [
         0.0048828125,
-        0.6705729166666666,
+        0.7292838541666666,
         0.490234375,
-        0.326171875
+        0.2674609375
       ],
       "alt": "KOH tries to raise LEFT wrist once more, stops when it trembles, chooses to set shield down; not another training failure counted as a repeat lesson.",
-      "widthPercent": 92,
-      "align": "left",
+      "widthPercent": 34,
+      "align": "right",
       "frame": "thin",
       "purpose": "KOH tries to raise LEFT wrist once more, stops when it trembles, chooses to set shield down; not another training failure counted as a repeat lesson.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "02-rest:1-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH tries to raise LEFT wrist once more, stops when it trembles, chooses to set shield down; not another training failure counted as a repeat lesson.",
+      "composition": "space-02-rest:1",
+      "offsetX": 66,
+      "offsetY": 128.62266812749004
+    },
+    {
+      "id": "02-rest:2-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "休むのも\n練習",
+      "height": 170,
+      "x": 67,
+      "y": 50,
+      "purpose": "Medium KOH sits and drinks from ONE plain water flask; LIZE rests beside bench rather than pushes him immediately back to combat. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-rest:2",
@@ -1236,33 +1440,31 @@
       ],
       "crop": [
         0.5048828125,
-        0.0032552083333333335,
+        0.06266927083333333,
         0.490234375,
-        0.330078125
+        0.27066406249999997
       ],
       "alt": "Medium KOH sits and drinks from ONE plain water flask; LIZE rests beside bench rather than pushes him immediately back to combat.",
-      "widthPercent": 92,
+      "widthPercent": 86,
       "align": "right",
       "frame": "thin",
       "purpose": "Medium KOH sits and drinks from ONE plain water flask; LIZE rests beside bench rather than pushes him immediately back to combat.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "休むのも\n練習",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-rest:2",
+      "effective": true,
+      "newUnderstanding": "Medium KOH sits and drinks from ONE plain water flask; LIZE rests beside bench rather than pushes him immediately back to combat."
     },
     {
-      "id": "02-rest:2-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "02-rest:2-added-1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "俺だけ\nすぐ疲れるのかと\n思った",
+      "height": 256,
+      "x": 67,
+      "y": 50,
+      "purpose": "KOH wipes sweat with empty right sleeve and watches other local trainees take turns, recognizes practice is ordinary work too. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-rest:2-added-1",
@@ -1274,33 +1476,26 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06266927083333333,
         0.490234375,
-        0.330078125
+        0.27066406249999997
       ],
       "alt": "KOH wipes sweat with empty right sleeve and watches other local trainees take turns, recognizes practice is ordinary work too.",
-      "widthPercent": 92,
-      "align": "left",
-      "frame": "thin",
+      "widthPercent": 82,
+      "align": "right",
+      "frame": "none",
       "purpose": "KOH wipes sweat with empty right sleeve and watches other local trainees take turns, recognizes practice is ordinary work too.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "みんなも\nこうやって\n覚えるんだ",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-rest:2-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH wipes sweat with empty right sleeve and watches other local trainees take turns, recognizes practice is ordinary work too."
     },
     {
-      "id": "02-change:1-pause",
+      "id": "02-rest:2-added-1-pause",
       "type": "pause",
-      "height": 100,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "height": 150,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
     },
     {
       "id": "02-change:1",
@@ -1312,17 +1507,31 @@
       ],
       "crop": [
         0.5048828125,
-        0.33984375,
+        0.397734375,
         0.490234375,
-        0.3216145833333333
+        0.2637239583333333
       ],
       "alt": "Shallow KOH returns ONE wooden practice sword to shared bench beside the other spare practice tools, not holding steel yet. Shield rests at bench edge.",
-      "widthPercent": 80,
-      "align": "right",
+      "widthPercent": 92,
+      "align": "left",
       "frame": "thin",
       "purpose": "Shallow KOH returns ONE wooden practice sword to shared bench beside the other spare practice tools, not holding steel yet. Shield rests at bench edge.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "02-change:1",
+      "effective": true,
+      "newUnderstanding": "Shallow KOH returns ONE wooden practice sword to shared bench beside the other spare practice tools, not holding steel yet. Shield rests at bench edge."
+    },
+    {
+      "id": "02-change:2-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "こっちは\nもっと重い",
+      "height": 190,
+      "x": 67,
+      "y": 50,
+      "purpose": "Medium KOH uses RIGHT hand to draw his OWN plain straight steel sword briefly from brown scabbard, LEFT holds scabbard, recognizes heavier weight. No shield in hands during this check. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-change:2",
@@ -1334,33 +1543,20 @@
       ],
       "crop": [
         0.0048828125,
-        0.33984375,
+        0.397734375,
         0.490234375,
-        0.3216145833333333
+        0.2637239583333333
       ],
       "alt": "Medium KOH uses RIGHT hand to draw his OWN plain straight steel sword briefly from brown scabbard, LEFT holds scabbard, recognizes heavier weight. No shield in hands during this check.",
-      "widthPercent": 92,
-      "align": "left",
+      "widthPercent": 78,
+      "align": "right",
       "frame": "thin",
       "purpose": "Medium KOH uses RIGHT hand to draw his OWN plain straight steel sword briefly from brown scabbard, LEFT holds scabbard, recognizes heavier weight. No shield in hands during this check.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "こっちは\nもっと重い",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "02-change:2-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-change:2",
+      "effective": true,
+      "newUnderstanding": "Medium KOH uses RIGHT hand to draw his OWN plain straight steel sword briefly from brown scabbard, LEFT holds scabbard, recognizes heavier weight. No shield in hands during this check."
     },
     {
       "id": "02-change:2-added-1",
@@ -1372,17 +1568,31 @@
       ],
       "crop": [
         0.5048828125,
-        0.66796875,
+        0.7271484375,
         0.490234375,
-        0.3287760416666667
+        0.26959635416666666
       ],
       "alt": "KOH compares the REAL steel edge against wooden practice blade on bench, pulls steel blade away from people and resheathes with care, no speech or magic.",
-      "widthPercent": 92,
-      "align": "right",
+      "widthPercent": 94,
+      "align": "left",
       "frame": "thin",
       "purpose": "KOH compares the REAL steel edge against wooden practice blade on bench, pulls steel blade away from people and resheathes with care, no speech or magic.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "02-change:2-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH compares the REAL steel edge against wooden practice blade on bench, pulls steel blade away from people and resheathes with care, no speech or magic."
+    },
+    {
+      "id": "02-change:3-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "盾は私の予備\n帰ったらここへ",
+      "height": 234,
+      "x": 67,
+      "y": 50,
+      "purpose": "Medium KOH has resheathed steel sword and picks the ONE spare wooden shield up with LEFT hand for patrol. LIZE points to this specific bench, explains ownership and return place. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-change:3",
@@ -1394,33 +1604,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.66796875,
+        0.7271484375,
         0.490234375,
-        0.3287760416666667
+        0.26959635416666666
       ],
       "alt": "Medium KOH has resheathed steel sword and picks the ONE spare wooden shield up with LEFT hand for patrol. LIZE points to this specific bench, explains ownership and return place.",
-      "widthPercent": 92,
-      "align": "left",
-      "frame": "thin",
+      "widthPercent": 86,
+      "align": "right",
+      "frame": "none",
       "purpose": "Medium KOH has resheathed steel sword and picks the ONE spare wooden shield up with LEFT hand for patrol. LIZE points to this specific bench, explains ownership and return place.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "盾は私の予備\n帰ったらここへ",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-change:3",
+      "effective": true,
+      "newUnderstanding": "Medium KOH has resheathed steel sword and picks the ONE spare wooden shield up with LEFT hand for patrol. LIZE points to this specific bench, explains ownership and return place."
     },
     {
-      "id": "02-change:3-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "02-change:3-added-1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "傷つけたら\nどうすればいい？",
+      "height": 256,
+      "x": 67,
+      "y": 50,
+      "purpose": "KOH looks at borrowed shield rim and asks owner before leaving, steel sheathed at LEFT hip. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-change:3-added-1",
@@ -1432,33 +1640,31 @@
       ],
       "crop": [
         0.501953125,
-        0.0032552083333333335,
+        0.06419270833333333,
         0.4931640625,
-        0.3385416666666667
+        0.27760416666666665
       ],
       "alt": "KOH looks at borrowed shield rim and asks owner before leaving, steel sheathed at LEFT hip.",
-      "widthPercent": 92,
+      "widthPercent": 82,
       "align": "right",
       "frame": "thin",
       "purpose": "KOH looks at borrowed shield rim and asks owner before leaving, steel sheathed at LEFT hip.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "傷つけたら\nどうすればいい？",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-change:3-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH looks at borrowed shield rim and asks owner before leaving, steel sheathed at LEFT hip."
     },
     {
-      "id": "02-change:3-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "02-change:3-added-2-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "隠さず見せて\n一緒に直すから",
+      "height": 234,
+      "x": 34,
+      "y": 50,
+      "purpose": "LIZE points to same bench and spare shelf, expects responsibility not perfect untouched gear. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "02-change:3-added-2",
@@ -1470,33 +1676,37 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06419270833333333,
         0.4873046875,
-        0.3385416666666667
+        0.27760416666666665
       ],
       "alt": "LIZE points to same bench and spare shelf, expects responsibility not perfect untouched gear.",
       "widthPercent": 92,
       "align": "left",
       "frame": "thin",
       "purpose": "LIZE points to same bench and spare shelf, expects responsibility not perfect untouched gear.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "隠さず見せて\n一緒に直すから",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "02-change:3-added-2",
+      "effective": true,
+      "newUnderstanding": "LIZE points to same bench and spare shelf, expects responsibility not perfect untouched gear."
     },
     {
-      "id": "03-patrol:1-pause",
+      "id": "02-change:3-added-2-pause",
       "type": "pause",
-      "height": 180,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "height": 250,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "03-patrol:1-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "足元も見て\n私から離れないで",
+      "height": 256,
+      "x": 67,
+      "y": 50,
+      "purpose": "Wide: patrol walks riverbank, steel blade sheathed, water plentiful. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "03-patrol:1",
@@ -1508,33 +1718,31 @@
       ],
       "crop": [
         0.501953125,
-        0.3483072916666667,
+        0.4060807291666667,
         0.4931640625,
-        0.3209635416666667
+        0.26319010416666666
       ],
       "alt": "Wide: patrol walks riverbank, steel blade sheathed, water plentiful.",
       "widthPercent": 100,
       "align": "center",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "Wide: patrol walks riverbank, steel blade sheathed, water plentiful.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "盾を左\n足元も見て",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "03-patrol:1",
+      "effective": true,
+      "newUnderstanding": "Wide: patrol walks riverbank, steel blade sheathed, water plentiful."
     },
     {
-      "id": "03-patrol:1-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "03-patrol:1-added-1-voice",
+      "type": "voice",
+      "speaker": "兵士",
+      "text": "巡回は\n初めて？",
+      "height": 170,
+      "x": 67,
+      "y": 50,
+      "purpose": "Nameless LOCAL guard gray hair dark goatee steel helmet sand scarf brown leather armor asks KOH on river path, ordinary check not hostile NPC. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "03-patrol:1-added-1",
@@ -1546,33 +1754,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.3483072916666667,
+        0.4060807291666667,
         0.4873046875,
-        0.3209635416666667
+        0.26319010416666666
       ],
       "alt": "Nameless LOCAL guard gray hair dark goatee steel helmet sand scarf brown leather armor asks KOH on river path, ordinary check not hostile NPC.",
-      "widthPercent": 92,
-      "align": "left",
-      "frame": "thin",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
       "purpose": "Nameless LOCAL guard gray hair dark goatee steel helmet sand scarf brown leather armor asks KOH on river path, ordinary check not hostile NPC.",
-      "dialogue": [
-        {
-          "speaker": "兵士",
-          "text": "巡回は\n初めて？",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "03-patrol:1-added-1",
+      "effective": true,
+      "newUnderstanding": "Nameless LOCAL guard gray hair dark goatee steel helmet sand scarf brown leather armor asks KOH on river path, ordinary check not hostile NPC."
     },
     {
-      "id": "03-patrol:1-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "03-patrol:1-added-2-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "はい\n足元も見ます",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "KOH nods, LEFT shield slung RIGHT hand empty near own sheathed steel, answers guard as person. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "03-patrol:1-added-2",
@@ -1584,27 +1790,20 @@
       ],
       "crop": [
         0.501953125,
-        0.67578125,
+        0.7335546875,
         0.4931640625,
-        0.3209635416666667
+        0.26319010416666666
       ],
       "alt": "KOH nods, LEFT shield slung RIGHT hand empty near own sheathed steel, answers guard as person.",
-      "widthPercent": 92,
-      "align": "right",
-      "frame": "thin",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
       "purpose": "KOH nods, LEFT shield slung RIGHT hand empty near own sheathed steel, answers guard as person.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "はい\n足元も見ます",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "03-patrol:1-added-2",
+      "effective": true,
+      "newUnderstanding": "KOH nods, LEFT shield slung RIGHT hand empty near own sheathed steel, answers guard as person."
     },
     {
       "id": "03-patrol:2",
@@ -1616,23 +1815,38 @@
       ],
       "crop": [
         0.0048828125,
-        0.67578125,
+        0.7335546875,
         0.4873046875,
-        0.3209635416666667
+        0.26319010416666666
       ],
       "alt": "Small close: fresh claw tracks in mud under reeds, ominous but not gore.",
-      "widthPercent": 80,
+      "widthPercent": 62,
       "align": "left",
       "frame": "thin",
       "purpose": "Small close: fresh claw tracks in mud under reeds, ominous but not gore.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "03-patrol:2",
+      "effective": true,
+      "newUnderstanding": "Small close: fresh claw tracks in mud under reeds, ominous but not gore.",
+      "composition": "space-03-patrol:2",
+      "offsetX": 0,
+      "offsetY": 0
     },
     {
-      "id": "03-patrol:2-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "03-patrol:2-added-1-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "川へ来るのは\n人だけじゃない",
+      "height": 234,
+      "x": 50,
+      "y": 50,
+      "purpose": "LIZE crouches beside fresh pawprint without touching dangerous reeds, compares it with nearby river mud, healthy water behind. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken",
+      "composition": "space-03-patrol:2",
+      "offsetX": 0,
+      "offsetY": 482.535423246493,
+      "widthPercent": 45
     },
     {
       "id": "03-patrol:2-added-1",
@@ -1644,27 +1858,23 @@
       ],
       "crop": [
         0.5078125,
-        0.0032552083333333335,
+        0.07087239583333332,
         0.4873046875,
-        0.3756510416666667
+        0.3080338541666667
       ],
       "alt": "LIZE crouches beside fresh pawprint without touching dangerous reeds, compares it with nearby river mud, healthy water behind.",
-      "widthPercent": 92,
+      "widthPercent": 34,
       "align": "right",
       "frame": "thin",
       "purpose": "LIZE crouches beside fresh pawprint without touching dangerous reeds, compares it with nearby river mud, healthy water behind.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "川へ来るのは\n人だけじゃない",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "03-patrol:2-added-1",
+      "effective": true,
+      "newUnderstanding": "LIZE crouches beside fresh pawprint without touching dangerous reeds, compares it with nearby river mud, healthy water behind.",
+      "composition": "space-03-patrol:2",
+      "offsetX": 66,
+      "offsetY": 127.32974789579158
     },
     {
       "id": "03-patrol:3",
@@ -1676,14 +1886,14 @@
       ],
       "crop": [
         0.5078125,
-        0.3854166666666667,
+        0.43627604166666667,
         0.4873046875,
-        0.2825520833333333
+        0.2316927083333333
       ],
       "alt": "Medium: impulsive red-haired PLAYER traveler runs past the patrol with flashy steel sword.",
-      "widthPercent": 92,
-      "align": "left",
-      "frame": "thin",
+      "widthPercent": 78,
+      "align": "right",
+      "frame": "none",
       "purpose": "Medium: impulsive red-haired PLAYER traveler runs past the patrol with flashy steel sword.",
       "dialogue": [
         {
@@ -1696,13 +1906,21 @@
           "tail": "down"
         }
       ],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "03-patrol:3",
+      "effective": true,
+      "newUnderstanding": "Medium: impulsive red-haired PLAYER traveler runs past the patrol with flashy steel sword."
     },
     {
-      "id": "03-patrol:3-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "03-patrol:3-added-1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "待って！\nまだ何がいるか…",
+      "height": 256,
+      "x": 34,
+      "y": 50,
+      "purpose": "KOH reaches empty RIGHT hand toward red-player back, asks him to wait; local guard and LIZE still together on path. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "03-patrol:3-added-1",
@@ -1714,33 +1932,20 @@
       ],
       "crop": [
         0.0048828125,
-        0.3854166666666667,
+        0.43627604166666667,
         0.4931640625,
-        0.2825520833333333
+        0.2316927083333333
       ],
       "alt": "KOH reaches empty RIGHT hand toward red-player back, asks him to wait; local guard and LIZE still together on path.",
-      "widthPercent": 92,
-      "align": "right",
+      "widthPercent": 94,
+      "align": "left",
       "frame": "thin",
       "purpose": "KOH reaches empty RIGHT hand toward red-player back, asks him to wait; local guard and LIZE still together on path.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "先に\n行かない方が……",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "03-listen:1-pause",
-      "type": "pause",
-      "height": 100,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "03-patrol:3-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH reaches empty RIGHT hand toward red-player back, asks him to wait; local guard and LIZE still together on path."
     },
     {
       "id": "03-listen:1",
@@ -1752,17 +1957,20 @@
       ],
       "crop": [
         0.5078125,
-        0.6744791666666666,
+        0.7324869791666666,
         0.4873046875,
-        0.322265625
+        0.26425781249999997
       ],
       "alt": "Shallow empty reeds shiver near muddy path, only grass and moving leaves. A SINGLE ガサ… inscription starts at right side of reeds and extends toward panel border. No eyes or claws or creature silhouette yet.",
-      "widthPercent": 80,
-      "align": "left",
+      "widthPercent": 86,
+      "align": "right",
       "frame": "thin",
       "purpose": "Shallow empty reeds shiver near muddy path, only grass and moving leaves. A SINGLE ガサ… inscription starts at right side of reeds and extends toward panel border. No eyes or claws or creature silhouette yet.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "03-listen:1",
+      "effective": true,
+      "newUnderstanding": "Shallow empty reeds shiver near muddy path, only grass and moving leaves. A SINGLE ガサ… inscription starts at right side of reeds and extends toward panel border. No eyes or claws or creature silhouette yet."
     },
     {
       "id": "03-listen:2",
@@ -1774,13 +1982,13 @@
       ],
       "crop": [
         0.0048828125,
-        0.6744791666666666,
+        0.7324869791666666,
         0.4931640625,
-        0.322265625
+        0.26425781249999997
       ],
       "alt": "Small KOH eye-and-left-shield close-up reacts to the offscreen rustle as he slips the borrowed shield from its walking sling onto LEFT forearm; red-haired bronze-armored traveler back only in farther edge, turning ahead. Continue the same sound with faint trailing … into large white bottom fade, no second complete inscription. No visible beast.",
-      "widthPercent": 100,
-      "align": "center",
+      "widthPercent": 82,
+      "align": "right",
       "frame": "thin",
       "purpose": "Small KOH eye-and-left-shield close-up reacts to the offscreen rustle as he slips the borrowed shield from its walking sling onto LEFT forearm; red-haired bronze-armored traveler back only in farther edge, turning ahead. Continue the same sound with faint trailing … into large white bottom fade, no second complete inscription. No visible beast.",
       "dialogue": [],
@@ -1791,13 +1999,10 @@
           "y": 92,
           "width": 10
         }
-      ]
-    },
-    {
-      "id": "03-listen:2-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      ],
+      "sourceId": "03-listen:2",
+      "effective": true,
+      "newUnderstanding": "Small KOH eye-and-left-shield close-up reacts to the offscreen rustle as he slips the borrowed shield from its walking sling onto LEFT forearm; red-haired bronze-armored traveler back only in farther edge, turning ahead. Continue the same sound with faint trailing … into large white bottom fade, no second complete inscription. No visible beast."
     },
     {
       "id": "03-listen:2-added-1",
@@ -1809,23 +2014,20 @@
       ],
       "crop": [
         0.501953125,
-        0.0032552083333333335,
+        0.06290364583333333,
         0.4931640625,
-        0.3313802083333333
+        0.2717317708333333
       ],
       "alt": "LIZE raises empty RIGHT fingers to stop patrol, listens toward grass, her own short sword still sheathed. ONE faint trailing dots from grass sound can continue, no new ガサ and no creature.",
       "widthPercent": 92,
       "align": "left",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "LIZE raises empty RIGHT fingers to stop patrol, listens toward grass, her own short sword still sheathed. ONE faint trailing dots from grass sound can continue, no new ガサ and no creature.",
       "dialogue": [],
-      "sounds": []
-    },
-    {
-      "id": "03-listen:2-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "sounds": [],
+      "sourceId": "03-listen:2-added-1",
+      "effective": true,
+      "newUnderstanding": "LIZE raises empty RIGHT fingers to stop patrol, listens toward grass, her own short sword still sheathed. ONE faint trailing dots from grass sound can continue, no new ガサ and no creature."
     },
     {
       "id": "03-listen:2-added-2",
@@ -1837,23 +2039,26 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06290364583333333,
         0.4873046875,
-        0.3313802083333333
+        0.2717317708333333
       ],
       "alt": "KOH shifts one boot onto firmer path so wounded guard will later have space behind him; LEFT shield ready, RIGHT hand on own sheathed hilt. No advance or monster shown.",
-      "widthPercent": 92,
+      "widthPercent": 78,
       "align": "right",
       "frame": "thin",
       "purpose": "KOH shifts one boot onto firmer path so wounded guard will later have space behind him; LEFT shield ready, RIGHT hand on own sheathed hilt. No advance or monster shown.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "03-listen:2-added-2",
+      "effective": true,
+      "newUnderstanding": "KOH shifts one boot onto firmer path so wounded guard will later have space behind him; LEFT shield ready, RIGHT hand on own sheathed hilt. No advance or monster shown."
     },
     {
-      "id": "04-beast:1-pause",
+      "id": "03-listen:2-added-2-pause",
       "type": "pause",
-      "height": 880,
-      "purpose": "草の音と構える反応から、まだ見えない襲撃を待つ。次に初めて獣の姿を見せる。"
+      "height": 900,
+      "purpose": "草の音と停止の反応を受け 獣の姿を下で初めて見せる"
     },
     {
       "id": "04-beast:1",
@@ -1865,14 +2070,14 @@
       ],
       "crop": [
         0.501953125,
-        0.3411458333333333,
+        0.3973958333333333,
         0.4931640625,
-        0.3125
+        0.25625
       ],
       "alt": "Large angled action shot: lean dark riverwolf-like monster leaps from reeds at the impulsive red-haired PLAYER; KOH in foreground frightened, shield held low, LIZE already reacts. Not the black-horn guardian.",
       "widthPercent": 100,
       "align": "center",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "Large angled action shot: lean dark riverwolf-like monster leaps from reeds at the impulsive red-haired PLAYER; KOH in foreground frightened, shield held low, LIZE already reacts. Not the black-horn guardian.",
       "dialogue": [],
       "sounds": [
@@ -1882,7 +2087,10 @@
           "y": 76,
           "width": 20
         }
-      ]
+      ],
+      "sourceId": "04-beast:1",
+      "effective": true,
+      "newUnderstanding": "Large angled action shot: lean dark riverwolf-like monster leaps from reeds at the impulsive red-haired PLAYER; KOH in foreground frightened, shield held low, LIZE already reacts. Not the black-horn guardian."
     },
     {
       "id": "04-beast:2",
@@ -1894,23 +2102,26 @@
       ],
       "crop": [
         0.0048828125,
-        0.3411458333333333,
+        0.3973958333333333,
         0.4873046875,
-        0.3125
+        0.25625
       ],
       "alt": "Shallow immediate result: the red-haired PLAYER avatar dissolves into pale construction light after the claw strike, with his steel sword falling into mud. The LOCAL guardsman tried to cover him and receives a small non-graphic scratch on his RIGHT forearm; KOH sees the guard crouch. No corpse, no injury to a Japanese person, no HUD and no dialogue.",
-      "widthPercent": 80,
+      "widthPercent": 86,
       "align": "right",
       "frame": "thin",
       "purpose": "Shallow immediate result: the red-haired PLAYER avatar dissolves into pale construction light after the claw strike, with his steel sword falling into mud. The LOCAL guardsman tried to cover him and receives a small non-graphic scratch on his RIGHT forearm; KOH sees the guard crouch. No corpse, no injury to a Japanese person, no HUD and no dialogue.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "04-beast:2",
+      "effective": true,
+      "newUnderstanding": "Shallow immediate result: the red-haired PLAYER avatar dissolves into pale construction light after the claw strike, with his steel sword falling into mud. The LOCAL guardsman tried to cover him and receives a small non-graphic scratch on his RIGHT forearm; KOH sees the guard crouch. No corpse, no injury to a Japanese person, no HUD and no dialogue."
     },
     {
-      "id": "04-beast:2-added-1-pause",
+      "id": "04-beast:2-pause",
       "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "height": 200,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
     },
     {
       "id": "04-beast:2-added-1",
@@ -1922,23 +2133,20 @@
       ],
       "crop": [
         0.501953125,
-        0.66015625,
+        0.7207421875,
         0.4931640625,
-        0.3365885416666667
+        0.27600260416666667
       ],
       "alt": "KOH turns sharply from fading player construction light to LOCAL guard physical RIGHT forearm wound, chooses real hurt person rather than vanished avatar.",
-      "widthPercent": 92,
-      "align": "left",
-      "frame": "thin",
+      "widthPercent": 82,
+      "align": "right",
+      "frame": "none",
       "purpose": "KOH turns sharply from fading player construction light to LOCAL guard physical RIGHT forearm wound, chooses real hurt person rather than vanished avatar.",
       "dialogue": [],
-      "sounds": []
-    },
-    {
-      "id": "04-find:1-pause",
-      "type": "pause",
-      "height": 50,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "sounds": [],
+      "sourceId": "04-beast:2-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH turns sharply from fading player construction light to LOCAL guard physical RIGHT forearm wound, chooses real hurt person rather than vanished avatar."
     },
     {
       "id": "04-find:1",
@@ -1950,23 +2158,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.66015625,
+        0.7207421875,
         0.4873046875,
-        0.3365885416666667
+        0.27600260416666667
       ],
       "alt": "Shallow dropped red-player steel sword lies on mud near reeds, not vanished and not automatically returned. A boot of the injured LOCAL guard braces beside it; his RIGHT forearm held close, blood only a tiny restrained mark.",
-      "widthPercent": 80,
-      "align": "right",
+      "widthPercent": 92,
+      "align": "left",
       "frame": "thin",
       "purpose": "Shallow dropped red-player steel sword lies on mud near reeds, not vanished and not automatically returned. A boot of the injured LOCAL guard braces beside it; his RIGHT forearm held close, blood only a tiny restrained mark.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "04-find:1",
+      "effective": true,
+      "newUnderstanding": "Shallow dropped red-player steel sword lies on mud near reeds, not vanished and not automatically returned. A boot of the injured LOCAL guard braces beside it; his RIGHT forearm held close, blood only a tiny restrained mark."
     },
     {
-      "id": "05-defense:1-pause",
-      "type": "pause",
-      "height": 50,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "05-defense:1-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "その人の前に！",
+      "height": 234,
+      "x": 67,
+      "y": 50,
+      "purpose": "Medium: KOH steps LEFT beside local wounded guard, raises borrowed shield, right hand grips sword. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "05-defense:1",
@@ -1978,27 +2194,20 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06442708333333333,
         0.4892578125,
-        0.33984375
+        0.27867187499999996
       ],
       "alt": "Medium: KOH steps LEFT beside local wounded guard, raises borrowed shield, right hand grips sword.",
-      "widthPercent": 92,
-      "align": "left",
+      "widthPercent": 78,
+      "align": "right",
       "frame": "thin",
       "purpose": "Medium: KOH steps LEFT beside local wounded guard, raises borrowed shield, right hand grips sword.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "その人の前に！",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "05-defense:1",
+      "effective": true,
+      "newUnderstanding": "Medium: KOH steps LEFT beside local wounded guard, raises borrowed shield, right hand grips sword."
     },
     {
       "id": "05-defense:2",
@@ -2010,13 +2219,13 @@
       ],
       "crop": [
         0.50390625,
-        0.349609375,
+        0.405390625,
         0.4912109375,
-        0.3098958333333333
+        0.2541145833333333
       ],
       "alt": "Two quick close-up moments right-to-left within ONE shallow row: shield blocks claw; LIZE gathers pale wind around short sword.",
-      "widthPercent": 100,
-      "align": "center",
+      "widthPercent": 94,
+      "align": "left",
       "frame": "thin",
       "purpose": "Two quick close-up moments right-to-left within ONE shallow row: shield blocks claw; LIZE gathers pale wind around short sword.",
       "dialogue": [],
@@ -2027,7 +2236,10 @@
           "y": 76,
           "width": 20
         }
-      ]
+      ],
+      "sourceId": "05-defense:2",
+      "effective": true,
+      "newUnderstanding": "Two quick close-up moments right-to-left within ONE shallow row: shield blocks claw; LIZE gathers pale wind around short sword."
     },
     {
       "id": "05-defense:3",
@@ -2039,14 +2251,14 @@
       ],
       "crop": [
         0.50390625,
-        0.666015625,
+        0.725546875,
         0.4912109375,
-        0.3307291666666667
+        0.27119791666666665
       ],
       "alt": "Wide: LIZE pushes beast back with wind and KOH keeps injured guard behind shield.",
       "widthPercent": 100,
       "align": "center",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "Wide: LIZE pushes beast back with wind and KOH keeps injured guard behind shield.",
       "dialogue": [
         {
@@ -2059,13 +2271,16 @@
           "tail": "down"
         }
       ],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "05-defense:3",
+      "effective": true,
+      "newUnderstanding": "Wide: LIZE pushes beast back with wind and KOH keeps injured guard behind shield."
     },
     {
-      "id": "05-recover:1-pause",
+      "id": "05-defense:3-pause",
       "type": "pause",
-      "height": 120,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "height": 100,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
     },
     {
       "id": "05-recover:1",
@@ -2077,13 +2292,13 @@
       ],
       "crop": [
         0.0048828125,
-        0.666015625,
+        0.725546875,
         0.4892578125,
-        0.3307291666666667
+        0.27119791666666665
       ],
       "alt": "Wide wolf retreats physically into reeds on LEFT far bank edge, same dark lean animal with tail, visible direction and diminishing distance. LIZE sword down but alert, no creature dissolved or respawned.",
-      "widthPercent": 100,
-      "align": "center",
+      "widthPercent": 82,
+      "align": "right",
       "frame": "thin",
       "purpose": "Wide wolf retreats physically into reeds on LEFT far bank edge, same dark lean animal with tail, visible direction and diminishing distance. LIZE sword down but alert, no creature dissolved or respawned.",
       "dialogue": [
@@ -2097,13 +2312,10 @@
           "tail": "down"
         }
       ],
-      "sounds": []
-    },
-    {
-      "id": "05-recover:1-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "sounds": [],
+      "sourceId": "05-recover:1",
+      "effective": true,
+      "newUnderstanding": "Wide wolf retreats physically into reeds on LEFT far bank edge, same dark lean animal with tail, visible direction and diminishing distance. LIZE sword down but alert, no creature dissolved or respawned."
     },
     {
       "id": "05-recover:1-added-1",
@@ -2115,9 +2327,9 @@
       ],
       "crop": [
         0.5048828125,
-        0.0032552083333333335,
+        0.06196614583333333,
         0.490234375,
-        0.326171875
+        0.2674609375
       ],
       "alt": "KOH begins one step after retreating wolf but stops when LIZE warns, chooses guard over pursuit and turns back.",
       "widthPercent": 92,
@@ -2125,7 +2337,21 @@
       "frame": "thin",
       "purpose": "KOH begins one step after retreating wolf but stops when LIZE warns, chooses guard over pursuit and turns back.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "05-recover:1-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH begins one step after retreating wolf but stops when LIZE warns, chooses guard over pursuit and turns back."
+    },
+    {
+      "id": "05-recover:2-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "歩けますか",
+      "height": 190,
+      "x": 67,
+      "y": 50,
+      "purpose": "Medium LOCAL guard uses healthy LEFT hand to press cloth against wounded RIGHT forearm. Polearm rests upright against a tree during this pause. KOH left shield low and own sword resheathed stands beside him. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "05-recover:2",
@@ -2137,33 +2363,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06196614583333333,
         0.490234375,
-        0.326171875
+        0.2674609375
       ],
       "alt": "Medium LOCAL guard uses healthy LEFT hand to press cloth against wounded RIGHT forearm. Polearm rests upright against a tree during this pause. KOH left shield low and own sword resheathed stands beside him.",
-      "widthPercent": 92,
+      "widthPercent": 78,
       "align": "right",
       "frame": "thin",
       "purpose": "Medium LOCAL guard uses healthy LEFT hand to press cloth against wounded RIGHT forearm. Polearm rests upright against a tree during this pause. KOH left shield low and own sword resheathed stands beside him.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "歩けますか",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "05-recover:2",
+      "effective": true,
+      "newUnderstanding": "Medium LOCAL guard uses healthy LEFT hand to press cloth against wounded RIGHT forearm. Polearm rests upright against a tree during this pause. KOH left shield low and own sword resheathed stands beside him."
     },
     {
-      "id": "05-recover:2-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "05-recover:2-added-1-voice",
+      "type": "voice",
+      "speaker": "兵士",
+      "text": "ゆっくりなら\n歩ける",
+      "height": 212,
+      "x": 34,
+      "y": 50,
+      "purpose": "LOCAL guard nods that he can walk, healthy LEFT hand presses RIGHT injury cloth, polearm leans beside tree during pause. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "05-recover:2-added-1",
@@ -2175,33 +2399,20 @@
       ],
       "crop": [
         0.5048828125,
-        0.3359375,
+        0.3948828125,
         0.490234375,
-        0.3274739583333333
+        0.2685286458333333
       ],
       "alt": "LOCAL guard nods that he can walk, healthy LEFT hand presses RIGHT injury cloth, polearm leans beside tree during pause.",
-      "widthPercent": 100,
-      "align": "center",
-      "frame": "thin",
+      "widthPercent": 94,
+      "align": "left",
+      "frame": "none",
       "purpose": "LOCAL guard nods that he can walk, healthy LEFT hand presses RIGHT injury cloth, polearm leans beside tree during pause.",
-      "dialogue": [
-        {
-          "speaker": "兵士",
-          "text": "ゆっくりなら\n歩ける",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "05-recover:2-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "05-recover:2-added-1",
+      "effective": true,
+      "newUnderstanding": "LOCAL guard nods that he can walk, healthy LEFT hand presses RIGHT injury cloth, polearm leans beside tree during pause."
     },
     {
       "id": "05-recover:2-added-2",
@@ -2213,17 +2424,20 @@
       ],
       "crop": [
         0.0048828125,
-        0.3359375,
+        0.3948828125,
         0.490234375,
-        0.3274739583333333
+        0.2685286458333333
       ],
       "alt": "KOH resheathes his steel sword and gently supports the guard above the injured RIGHT forearm at his RIGHT upper arm with his free RIGHT hand. He does not press the wound. LEFT shield lowered. LIZE temporarily carries the polearm; before walking on, she returns it to the guard healthy LEFT hand.",
-      "widthPercent": 100,
-      "align": "center",
+      "widthPercent": 86,
+      "align": "right",
       "frame": "thin",
       "purpose": "KOH resheathes his steel sword and gently supports the guard above the injured RIGHT forearm at his RIGHT upper arm with his free RIGHT hand. He does not press the wound. LEFT shield lowered. LIZE temporarily carries the polearm; before walking on, she returns it to the guard healthy LEFT hand.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "05-recover:2-added-2",
+      "effective": true,
+      "newUnderstanding": "KOH resheathes his steel sword and gently supports the guard above the injured RIGHT forearm at his RIGHT upper arm with his free RIGHT hand. He does not press the wound. LEFT shield lowered. LIZE temporarily carries the polearm; before walking on, she returns it to the guard healthy LEFT hand."
     },
     {
       "id": "05-recover:3",
@@ -2235,23 +2449,37 @@
       ],
       "crop": [
         0.5048828125,
-        0.669921875,
+        0.72875,
         0.490234375,
-        0.3268229166666667
+        0.2679947916666667
       ],
       "alt": "Wide three walk back toward visible Milt gate at same river path. KOH matches LOCAL guard pace, LIZE walks outer side keeping watch. Dropped red-player sword remains behind in mud near reeds, not magically collected.",
       "widthPercent": 100,
       "align": "center",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "Wide three walk back toward visible Milt gate at same river path. KOH matches LOCAL guard pace, LIZE walks outer side keeping watch. Dropped red-player sword remains behind in mud near reeds, not magically collected.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "05-recover:3",
+      "effective": true,
+      "newUnderstanding": "Wide three walk back toward visible Milt gate at same river path. KOH matches LOCAL guard pace, LIZE walks outer side keeping watch. Dropped red-player sword remains behind in mud near reeds, not magically collected."
     },
     {
-      "id": "05-recover:3-added-1-pause",
+      "id": "05-recover:3-pause",
       "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "height": 260,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "05-recover:3-added-1-voice",
+      "type": "voice",
+      "speaker": "セナ",
+      "text": "ここで診るよ\n水を飲んで\nおいで",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "KOH and the injured guard pause on the clinic steps. SENA takes over the guard care from the doorway and sends KOH to get water nearby. The guard is no longer left in danger, and the next scene is the nearby safe square. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "05-recover:3-added-1",
@@ -2263,33 +2491,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.669921875,
+        0.72875,
         0.490234375,
-        0.3268229166666667
+        0.2679947916666667
       ],
       "alt": "KOH and the injured guard pause on the clinic steps. SENA takes over the guard care from the doorway and sends KOH to get water nearby. The guard is no longer left in danger, and the next scene is the nearby safe square.",
-      "widthPercent": 92,
-      "align": "right",
-      "frame": "thin",
+      "widthPercent": 100,
+      "align": "center",
+      "frame": "none",
       "purpose": "KOH and the injured guard pause on the clinic steps. SENA takes over the guard care from the doorway and sends KOH to get water nearby. The guard is no longer left in danger, and the next scene is the nearby safe square.",
-      "dialogue": [
-        {
-          "speaker": "セナ",
-          "text": "ここで診るよ\n水を飲んで\nおいで",
-          "x": 52,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "05-recover:3-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH and the injured guard pause on the clinic steps. SENA takes over the guard care from the doorway and sends KOH to get water nearby. The guard is no longer left in danger, and the next scene is the nearby safe square."
     },
     {
-      "id": "06-returner:1-pause",
-      "type": "pause",
-      "height": 240,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "id": "06-returner:1-voice",
+      "type": "voice",
+      "speaker": "帰還者",
+      "text": "戻れた\nでも剣がない",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "Wide: the red-haired PLAYER reappears in plain replacement clothes, weapon lost, KOH and AKARI nearby. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "06-returner:1",
@@ -2301,27 +2527,31 @@
       ],
       "crop": [
         0.5029296875,
-        0.0032552083333333335,
+        0.06184895833333333,
         0.4921875,
-        0.3255208333333333
+        0.2669270833333333
       ],
       "alt": "Wide: the red-haired PLAYER reappears in plain replacement clothes, weapon lost, KOH and AKARI nearby.",
-      "widthPercent": 100,
-      "align": "center",
-      "frame": "thin",
+      "widthPercent": 78,
+      "align": "right",
+      "frame": "none",
       "purpose": "Wide: the red-haired PLAYER reappears in plain replacement clothes, weapon lost, KOH and AKARI nearby.",
-      "dialogue": [
-        {
-          "speaker": "帰還者",
-          "text": "戻れた\nでも剣がない",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "06-returner:1",
+      "effective": true,
+      "newUnderstanding": "Wide: the red-haired PLAYER reappears in plain replacement clothes, weapon lost, KOH and AKARI nearby."
+    },
+    {
+      "id": "06-returner:2-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "さっきの人…\n戻れたんだ",
+      "height": 212,
+      "x": 34,
+      "y": 50,
+      "purpose": "Close KOH listens with relief, sword sheathed and shield lowered. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "06-returner:2",
@@ -2333,27 +2563,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06184895833333333,
         0.48828125,
-        0.3255208333333333
+        0.2669270833333333
       ],
       "alt": "Close KOH listens with relief, sword sheathed and shield lowered.",
-      "widthPercent": 80,
-      "align": "right",
+      "widthPercent": 94,
+      "align": "left",
       "frame": "thin",
       "purpose": "Close KOH listens with relief, sword sheathed and shield lowered.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "復活\nできるんだ",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "06-returner:2",
+      "effective": true,
+      "newUnderstanding": "Close KOH listens with relief, sword sheathed and shield lowered."
+    },
+    {
+      "id": "06-returner:3-voice",
+      "type": "voice",
+      "speaker": "灯里",
+      "text": "身体を\n作り直すんだって",
+      "height": 256,
+      "x": 67,
+      "y": 50,
+      "purpose": "AKARI in orange game jacket checks a readable blue HUD only for herself. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "06-returner:3",
@@ -2365,33 +2599,31 @@
       ],
       "crop": [
         0.5029296875,
-        0.3352864583333333,
+        0.3945833333333333,
         0.4921875,
-        0.3294270833333333
+        0.2701302083333333
       ],
       "alt": "AKARI in orange game jacket checks a readable blue HUD only for herself.",
-      "widthPercent": 92,
-      "align": "left",
+      "widthPercent": 86,
+      "align": "right",
       "frame": "thin",
       "purpose": "AKARI in orange game jacket checks a readable blue HUD only for herself.",
-      "dialogue": [
-        {
-          "speaker": "灯里",
-          "text": "身体を\n作り直すんだって",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "06-returner:3",
+      "effective": true,
+      "newUnderstanding": "AKARI in orange game jacket checks a readable blue HUD only for herself."
     },
     {
-      "id": "06-returner:3-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "06-returner:3-added-1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "剣や鎧も\n一緒に戻る？",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "KOH looks at same regenerated red-haired player wrists, asks whether his earlier gear has returned. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "06-returner:3-added-1",
@@ -2403,33 +2635,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.3352864583333333,
+        0.3945833333333333,
         0.48828125,
-        0.3294270833333333
+        0.2701302083333333
       ],
       "alt": "KOH looks at same regenerated red-haired player wrists, asks whether his earlier gear has returned.",
-      "widthPercent": 92,
+      "widthPercent": 82,
       "align": "right",
       "frame": "thin",
       "purpose": "KOH looks at same regenerated red-haired player wrists, asks whether his earlier gear has returned.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "剣や鎧も\n一緒に戻る？",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "06-returner:3-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH looks at same regenerated red-haired player wrists, asks whether his earlier gear has returned."
     },
     {
-      "id": "06-supply:1-pause",
-      "type": "pause",
-      "height": 100,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "id": "06-supply:1-voice",
+      "type": "voice",
+      "speaker": "係の人",
+      "text": "次の身体も\n用意がいる",
+      "height": 190,
+      "x": 34,
+      "y": 50,
+      "purpose": "Medium local supply clerk points to a modest waiting bench and almost empty replacement-clothes shelf; gives plain spare boot pair to regenerated PLAYER in beige clothes, not his lost armor or sword. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "06-supply:1",
@@ -2441,33 +2671,31 @@
       ],
       "crop": [
         0.5029296875,
-        0.6712239583333334,
+        0.7298177083333334,
         0.4921875,
-        0.3255208333333333
+        0.2669270833333333
       ],
       "alt": "Medium local supply clerk points to a modest waiting bench and almost empty replacement-clothes shelf; gives plain spare boot pair to regenerated PLAYER in beige clothes, not his lost armor or sword.",
       "widthPercent": 92,
       "align": "left",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "Medium local supply clerk points to a modest waiting bench and almost empty replacement-clothes shelf; gives plain spare boot pair to regenerated PLAYER in beige clothes, not his lost armor or sword.",
-      "dialogue": [
-        {
-          "speaker": "係の人",
-          "text": "次の身体も\n用意がいる",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "06-supply:1",
+      "effective": true,
+      "newUnderstanding": "Medium local supply clerk points to a modest waiting bench and almost empty replacement-clothes shelf; gives plain spare boot pair to regenerated PLAYER in beige clothes, not his lost armor or sword."
     },
     {
-      "id": "06-supply:1-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "06-supply:1-added-1-voice",
+      "type": "voice",
+      "speaker": "係の人",
+      "text": "予備がなければ\n待ってもらうよ",
+      "height": 234,
+      "x": 67,
+      "y": 50,
+      "purpose": "Local supply clerk indicates waiting bench and almost empty spare shelf, makes finite supply consequence practical. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "06-supply:1-added-1",
@@ -2479,27 +2707,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.6712239583333334,
+        0.7298177083333334,
         0.48828125,
-        0.3255208333333333
+        0.2669270833333333
       ],
       "alt": "Local supply clerk indicates waiting bench and almost empty spare shelf, makes finite supply consequence practical.",
-      "widthPercent": 92,
+      "widthPercent": 78,
       "align": "right",
       "frame": "thin",
       "purpose": "Local supply clerk indicates waiting bench and almost empty spare shelf, makes finite supply consequence practical.",
-      "dialogue": [
-        {
-          "speaker": "係の人",
-          "text": "予備がなければ\n待ってもらうよ",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "06-supply:1-added-1",
+      "effective": true,
+      "newUnderstanding": "Local supply clerk indicates waiting bench and almost empty spare shelf, makes finite supply consequence practical."
+    },
+    {
+      "id": "06-supply:2-voice",
+      "type": "voice",
+      "speaker": "帰還者",
+      "text": "剣は川に\n落ちたままだ",
+      "height": 212,
+      "x": 34,
+      "y": 50,
+      "purpose": "Shallow regenerated red-haired PLAYER looks at empty hands and plain clothes, remembers his weapon still physically at riverbank. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "06-supply:2",
@@ -2511,33 +2743,31 @@
       ],
       "crop": [
         0.50390625,
-        0.0032552083333333335,
+        0.06220052083333333,
         0.4912109375,
-        0.3274739583333333
+        0.2685286458333333
       ],
       "alt": "Shallow regenerated red-haired PLAYER looks at empty hands and plain clothes, remembers his weapon still physically at riverbank.",
-      "widthPercent": 80,
+      "widthPercent": 94,
       "align": "left",
       "frame": "thin",
       "purpose": "Shallow regenerated red-haired PLAYER looks at empty hands and plain clothes, remembers his weapon still physically at riverbank.",
-      "dialogue": [
-        {
-          "speaker": "帰還者",
-          "text": "剣は川に\n落ちたままだ",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "06-supply:2",
+      "effective": true,
+      "newUnderstanding": "Shallow regenerated red-haired PLAYER looks at empty hands and plain clothes, remembers his weapon still physically at riverbank."
     },
     {
-      "id": "06-supply:2-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "06-supply:2-added-1-voice",
+      "type": "voice",
+      "speaker": "帰還者",
+      "text": "ひとりじゃ\n取りに行けないな",
+      "height": 256,
+      "x": 67,
+      "y": 50,
+      "purpose": "Regenerated player looks toward river path outside gate then touches his plain replacement sleeve, hears own loss as practical task. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "06-supply:2-added-1",
@@ -2549,27 +2779,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06220052083333333,
         0.4892578125,
-        0.3274739583333333
+        0.2685286458333333
       ],
       "alt": "Regenerated player looks toward river path outside gate then touches his plain replacement sleeve, hears own loss as practical task.",
-      "widthPercent": 92,
+      "widthPercent": 86,
       "align": "right",
       "frame": "thin",
       "purpose": "Regenerated player looks toward river path outside gate then touches his plain replacement sleeve, hears own loss as practical task.",
-      "dialogue": [
-        {
-          "speaker": "帰還者",
-          "text": "ひとりじゃ\n取りに行けないな",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "06-supply:2-added-1",
+      "effective": true,
+      "newUnderstanding": "Regenerated player looks toward river path outside gate then touches his plain replacement sleeve, hears own loss as practical task."
+    },
+    {
+      "id": "06-supply:3-voice",
+      "type": "voice",
+      "speaker": "灯里",
+      "text": "日本の身体は\n無事だって",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "Medium AKARI lowers her own brass communicator, speaks to KOH with relief for person in Japan, her wooden bow remains on back. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "06-supply:3",
@@ -2581,33 +2815,37 @@
       ],
       "crop": [
         0.50390625,
-        0.3372395833333333,
+        0.3945442708333333,
         0.4912109375,
-        0.318359375
+        0.2610546875
       ],
       "alt": "Medium AKARI lowers her own brass communicator, speaks to KOH with relief for person in Japan, her wooden bow remains on back.",
-      "widthPercent": 92,
-      "align": "left",
-      "frame": "thin",
+      "widthPercent": 82,
+      "align": "right",
+      "frame": "none",
       "purpose": "Medium AKARI lowers her own brass communicator, speaks to KOH with relief for person in Japan, her wooden bow remains on back.",
-      "dialogue": [
-        {
-          "speaker": "灯里",
-          "text": "日本の身体は\n無事だって",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "06-supply:3",
+      "effective": true,
+      "newUnderstanding": "Medium AKARI lowers her own brass communicator, speaks to KOH with relief for person in Japan, her wooden bow remains on back."
     },
     {
-      "id": "07-local:1-pause",
+      "id": "06-supply:3-pause",
       "type": "pause",
-      "height": 280,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "height": 230,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "07-local:1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "兵士さんの傷も\n作り直せば\n治る？",
+      "height": 234,
+      "x": 34,
+      "y": 50,
+      "purpose": "Medium KOH looks toward the LOCAL guard, worried. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "07-local:1",
@@ -2619,27 +2857,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.3372395833333333,
+        0.3945442708333333,
         0.4892578125,
-        0.318359375
+        0.2610546875
       ],
       "alt": "Medium KOH looks toward the LOCAL guard, worried.",
       "widthPercent": 92,
-      "align": "right",
+      "align": "left",
       "frame": "thin",
       "purpose": "Medium KOH looks toward the LOCAL guard, worried.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "この人も\n戻せないの？",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "07-local:1",
+      "effective": true,
+      "newUnderstanding": "Medium KOH looks toward the LOCAL guard, worried."
+    },
+    {
+      "id": "07-local:2-voice",
+      "type": "voice",
+      "speaker": "セナ",
+      "text": "この人には\nこの身体しか\nないんだ",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "SENA calm close-up, one clean bandage in hands. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "07-local:2",
@@ -2651,33 +2893,37 @@
       ],
       "crop": [
         0.50390625,
-        0.662109375,
+        0.72234375,
         0.4912109375,
-        0.3346354166666667
+        0.2744010416666667
       ],
       "alt": "SENA calm close-up, one clean bandage in hands.",
-      "widthPercent": 80,
-      "align": "left",
+      "widthPercent": 78,
+      "align": "right",
       "frame": "thin",
       "purpose": "SENA calm close-up, one clean bandage in hands.",
-      "dialogue": [
-        {
-          "speaker": "セナ",
-          "text": "この身体しか\nないからね",
-          "x": 52,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "07-local:2",
+      "effective": true,
+      "newUnderstanding": "SENA calm close-up, one clean bandage in hands."
     },
     {
-      "id": "07-local:2-added-1-pause",
+      "id": "07-local:2-pause",
       "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "height": 280,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "07-local:2-added-1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "明日の巡回は\nどうするんですか",
+      "height": 256,
+      "x": 34,
+      "y": 50,
+      "purpose": "KOH looks at SAME guard right forearm and asks about tomorrow rather than revival again. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "07-local:2-added-1",
@@ -2689,33 +2935,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.662109375,
+        0.72234375,
         0.4892578125,
-        0.3346354166666667
+        0.2744010416666667
       ],
       "alt": "KOH looks at SAME guard right forearm and asks about tomorrow rather than revival again.",
-      "widthPercent": 92,
-      "align": "right",
+      "widthPercent": 94,
+      "align": "left",
       "frame": "thin",
       "purpose": "KOH looks at SAME guard right forearm and asks about tomorrow rather than revival again.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "明日の巡回は\nどうするんですか",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "07-local:2-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH looks at SAME guard right forearm and asks about tomorrow rather than revival again."
     },
     {
-      "id": "07-local:2-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "07-local:2-added-2-voice",
+      "type": "voice",
+      "speaker": "兵士",
+      "text": "治るまで\n休むしかないな",
+      "height": 234,
+      "x": 67,
+      "y": 50,
+      "purpose": "LOCAL guard rests bandaged RIGHT hand on lap, accepts actual recovery time. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "07-local:2-added-2",
@@ -2727,27 +2971,31 @@
       ],
       "crop": [
         0.501953125,
-        0.0032552083333333335,
+        0.06243489583333334,
         0.4931640625,
-        0.3287760416666667
+        0.26959635416666666
       ],
       "alt": "LOCAL guard rests bandaged RIGHT hand on lap, accepts actual recovery time.",
-      "widthPercent": 92,
-      "align": "left",
-      "frame": "thin",
+      "widthPercent": 86,
+      "align": "right",
+      "frame": "none",
       "purpose": "LOCAL guard rests bandaged RIGHT hand on lap, accepts actual recovery time.",
-      "dialogue": [
-        {
-          "speaker": "兵士",
-          "text": "治るまで\n休むしかないな",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "07-local:2-added-2",
+      "effective": true,
+      "newUnderstanding": "LOCAL guard rests bandaged RIGHT hand on lap, accepts actual recovery time."
+    },
+    {
+      "id": "07-local:3-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "明日は休んで\n巡回は代わるから",
+      "height": 256,
+      "x": 67,
+      "y": 50,
+      "purpose": "LIZE tightens bandage, clear difference to player; tired expression. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "07-local:3",
@@ -2759,33 +3007,20 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06243489583333334,
         0.4873046875,
-        0.3287760416666667
+        0.26959635416666666
       ],
       "alt": "LIZE tightens bandage, clear difference to player; tired expression.",
-      "widthPercent": 92,
+      "widthPercent": 82,
       "align": "right",
       "frame": "thin",
       "purpose": "LIZE tightens bandage, clear difference to player; tired expression.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "明日は休んで\n仕事は代わる",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "07-clinic:1-pause",
-      "type": "pause",
-      "height": 130,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "07-local:3",
+      "effective": true,
+      "newUnderstanding": "LIZE tightens bandage, clear difference to player; tired expression."
     },
     {
       "id": "07-clinic:1",
@@ -2797,17 +3032,31 @@
       ],
       "crop": [
         0.501953125,
-        0.3385416666666667,
+        0.3971354166666667,
         0.4931640625,
-        0.3255208333333333
+        0.2669270833333333
       ],
       "alt": "Shallow LIZE moves ONE patrol token from tomorrow active row to a reserve peg beside the clinic board. No readable unexplained bureaucratic chart, no giant UI, no promise to heal instantly.",
-      "widthPercent": 80,
+      "widthPercent": 92,
       "align": "left",
       "frame": "thin",
       "purpose": "Shallow LIZE moves ONE patrol token from tomorrow active row to a reserve peg beside the clinic board. No readable unexplained bureaucratic chart, no giant UI, no promise to heal instantly.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "07-clinic:1",
+      "effective": true,
+      "newUnderstanding": "Shallow LIZE moves ONE patrol token from tomorrow active row to a reserve peg beside the clinic board. No readable unexplained bureaucratic chart, no giant UI, no promise to heal instantly."
+    },
+    {
+      "id": "07-clinic:2-voice",
+      "type": "voice",
+      "speaker": "セナ",
+      "text": "休ませる場所まで\n運んでくれて\n助かった",
+      "height": 256,
+      "x": 67,
+      "y": 50,
+      "purpose": "Medium SENA closes ONE wooden medicine box gently beside seated LOCAL guard, addresses KOH with practical thanks. Guard rests right bandaged arm on lap, same gray hair and goatee. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "07-clinic:2",
@@ -2819,33 +3068,20 @@
       ],
       "crop": [
         0.0048828125,
-        0.3385416666666667,
+        0.3971354166666667,
         0.4873046875,
-        0.3255208333333333
+        0.2669270833333333
       ],
       "alt": "Medium SENA closes ONE wooden medicine box gently beside seated LOCAL guard, addresses KOH with practical thanks. Guard rests right bandaged arm on lap, same gray hair and goatee.",
-      "widthPercent": 80,
+      "widthPercent": 78,
       "align": "right",
       "frame": "thin",
       "purpose": "Medium SENA closes ONE wooden medicine box gently beside seated LOCAL guard, addresses KOH with practical thanks. Guard rests right bandaged arm on lap, same gray hair and goatee.",
-      "dialogue": [
-        {
-          "speaker": "セナ",
-          "text": "休ませる場所まで\n運んでくれて\n助かった",
-          "x": 52,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
-    },
-    {
-      "id": "07-clinic:2-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "07-clinic:2",
+      "effective": true,
+      "newUnderstanding": "Medium SENA closes ONE wooden medicine box gently beside seated LOCAL guard, addresses KOH with practical thanks. Guard rests right bandaged arm on lap, same gray hair and goatee."
     },
     {
       "id": "07-clinic:2-added-1",
@@ -2857,23 +3093,26 @@
       ],
       "crop": [
         0.501953125,
-        0.6705729166666666,
+        0.7292838541666666,
         0.4931640625,
-        0.326171875
+        0.2674609375
       ],
       "alt": "KOH takes guard empty water cup to clinic washing basin, performs small useful post-rescue task; SENA begins arranging tomorrow medicine, no new medical dose detail.",
-      "widthPercent": 80,
+      "widthPercent": 94,
       "align": "left",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "KOH takes guard empty water cup to clinic washing basin, performs small useful post-rescue task; SENA begins arranging tomorrow medicine, no new medical dose detail.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "07-clinic:2-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH takes guard empty water cup to clinic washing basin, performs small useful post-rescue task; SENA begins arranging tomorrow medicine, no new medical dose detail."
     },
     {
-      "id": "07-promise:1-pause",
+      "id": "07-clinic:2-added-1-pause",
       "type": "pause",
-      "height": 160,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "height": 140,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
     },
     {
       "id": "07-promise:1",
@@ -2885,23 +3124,38 @@
       ],
       "crop": [
         0.0048828125,
-        0.6705729166666666,
+        0.7292838541666666,
         0.4873046875,
-        0.326171875
+        0.2674609375
       ],
       "alt": "Close KOH uses plain cloth to wipe mud from ONE wooden shield rim on bench, shield detached from LEFT arm, his own steel sword stays sheathed at belt. No magically repaired cracks.",
-      "widthPercent": 80,
-      "align": "right",
+      "widthPercent": 62,
+      "align": "left",
       "frame": "thin",
       "purpose": "Close KOH uses plain cloth to wipe mud from ONE wooden shield rim on bench, shield detached from LEFT arm, his own steel sword stays sheathed at belt. No magically repaired cracks.",
       "dialogue": [],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "07-promise:1",
+      "effective": true,
+      "newUnderstanding": "Close KOH uses plain cloth to wipe mud from ONE wooden shield rim on bench, shield detached from LEFT arm, his own steel sword stays sheathed at belt. No magically repaired cracks.",
+      "composition": "space-07-promise:1",
+      "offsetX": 0,
+      "offsetY": 0
     },
     {
-      "id": "07-promise:1-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "07-promise:1-added-1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "縁が\n少し欠けた",
+      "height": 190,
+      "x": 50,
+      "y": 50,
+      "purpose": "KOH shows ONE small scrape on borrowed shield metal rim to LIZE, remembers promised responsibility; wood uncracked until future6. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken",
+      "composition": "space-07-promise:1",
+      "offsetX": 0,
+      "offsetY": 406.6319507014028,
+      "widthPercent": 45
     },
     {
       "id": "07-promise:1-added-1",
@@ -2913,33 +3167,34 @@
       ],
       "crop": [
         0.5048828125,
-        0.0032552083333333335,
+        0.06208333333333334,
         0.490234375,
-        0.3268229166666667
+        0.2679947916666667
       ],
-      "alt": "KOH shows ONE small scrape on borrowed shield metal rim to LIZE, remembers promised responsibility; wood uncracked until future6.",
-      "widthPercent": 80,
-      "align": "left",
+      "alt": "航は借りた盾の縁の小さな欠けを持ち主リゼへ見せる 木は自動で修復しない",
+      "widthPercent": 34,
+      "align": "right",
       "frame": "thin",
       "purpose": "KOH shows ONE small scrape on borrowed shield metal rim to LIZE, remembers promised responsibility; wood uncracked until future6.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "ここ\n擦れたみたい",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "07-promise:1-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH shows ONE small scrape on borrowed shield metal rim to LIZE, remembers promised responsibility; wood uncracked until future6.",
+      "composition": "space-07-promise:1",
+      "offsetX": 66,
+      "offsetY": 129.3959507014028
     },
     {
-      "id": "07-promise:1-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "07-promise:1-added-2-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "見せてくれて\nありがとう\nここは直せる",
+      "height": 212,
+      "x": 34,
+      "y": 50,
+      "purpose": "LIZE checks rim with empty fingers, relieved rather than scolds; same shield on bench. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "07-promise:1-added-2",
@@ -2951,27 +3206,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06208333333333334,
         0.490234375,
-        0.3268229166666667
+        0.2679947916666667
       ],
       "alt": "LIZE checks rim with empty fingers, relieved rather than scolds; same shield on bench.",
       "widthPercent": 92,
-      "align": "right",
+      "align": "left",
       "frame": "thin",
       "purpose": "LIZE checks rim with empty fingers, relieved rather than scolds; same shield on bench.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "教えてくれて\nありがとう\n次はここも見よう",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "07-promise:1-added-2",
+      "effective": true,
+      "newUnderstanding": "LIZE checks rim with empty fingers, relieved rather than scolds; same shield on bench."
+    },
+    {
+      "id": "07-promise:2-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "明日も\n借りていい？",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "Medium KOH looks up from cleaned shield toward LIZE, asks rather than silently claims borrowed property. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "07-promise:2",
@@ -2983,27 +3242,31 @@
       ],
       "crop": [
         0.5048828125,
-        0.3365885416666667,
+        0.3952994791666667,
         0.490234375,
-        0.326171875
+        0.2674609375
       ],
       "alt": "Medium KOH looks up from cleaned shield toward LIZE, asks rather than silently claims borrowed property.",
-      "widthPercent": 92,
-      "align": "left",
-      "frame": "thin",
+      "widthPercent": 78,
+      "align": "right",
+      "frame": "none",
       "purpose": "Medium KOH looks up from cleaned shield toward LIZE, asks rather than silently claims borrowed property.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "明日も\n借りていい？",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "07-promise:2",
+      "effective": true,
+      "newUnderstanding": "Medium KOH looks up from cleaned shield toward LIZE, asks rather than silently claims borrowed property."
+    },
+    {
+      "id": "07-promise:3-voice",
+      "type": "voice",
+      "speaker": "リゼ",
+      "text": "ここに置いて\n次も一緒に\n練習しよう",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "Wide LIZE points toward spare shield shelf right above the same bench. KOH places ONE cleaned shield there and removes hand, now shieldless. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "07-promise:3",
@@ -3015,33 +3278,37 @@
       ],
       "crop": [
         0.0048828125,
-        0.3365885416666667,
+        0.3952994791666667,
         0.490234375,
-        0.326171875
+        0.2674609375
       ],
       "alt": "Wide LIZE points toward spare shield shelf right above the same bench. KOH places ONE cleaned shield there and removes hand, now shieldless.",
       "widthPercent": 100,
       "align": "center",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "Wide LIZE points toward spare shield shelf right above the same bench. KOH places ONE cleaned shield there and removes hand, now shieldless.",
-      "dialogue": [
-        {
-          "speaker": "リゼ",
-          "text": "ここに置いて\n次も一緒に\n練習しよう",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "07-promise:3",
+      "effective": true,
+      "newUnderstanding": "Wide LIZE points toward spare shield shelf right above the same bench. KOH places ONE cleaned shield there and removes hand, now shieldless."
     },
     {
-      "id": "08-invitation:1-pause",
+      "id": "07-promise:3-pause",
       "type": "pause",
-      "height": 240,
-      "purpose": "場所・目的の切り替えを受け取る。前の結果を保ち、次の行動へつなぐ。"
+      "height": 400,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
+    },
+    {
+      "id": "08-invitation:1-voice",
+      "type": "voice",
+      "speaker": "怜",
+      "text": "さっきの盾\nよく出せたな",
+      "height": 212,
+      "x": 67,
+      "y": 50,
+      "purpose": "REI in silver armor and deep red short cloak approaches KOH, sword sheathed, friendly. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "08-invitation:1",
@@ -3053,27 +3320,20 @@
       ],
       "crop": [
         0.5048828125,
-        0.6692708333333334,
+        0.7282161458333334,
         0.490234375,
-        0.3274739583333333
+        0.2685286458333333
       ],
       "alt": "REI in silver armor and deep red short cloak approaches KOH, sword sheathed, friendly.",
-      "widthPercent": 92,
-      "align": "left",
+      "widthPercent": 86,
+      "align": "right",
       "frame": "thin",
       "purpose": "REI in silver armor and deep red short cloak approaches KOH, sword sheathed, friendly.",
-      "dialogue": [
-        {
-          "speaker": "怜",
-          "text": "さっきの盾\nよく出せたな",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "08-invitation:1",
+      "effective": true,
+      "newUnderstanding": "REI in silver armor and deep red short cloak approaches KOH, sword sheathed, friendly."
     },
     {
       "id": "08-invitation:2",
@@ -3085,12 +3345,12 @@
       ],
       "crop": [
         0.0048828125,
-        0.6692708333333334,
+        0.7282161458333334,
         0.490234375,
-        0.3274739583333333
+        0.2685286458333333
       ],
       "alt": "Close KOH recognizes his admired player, startled but delighted. KOH hands empty, NO shield, own steel sword remains sheathed.",
-      "widthPercent": 80,
+      "widthPercent": 82,
       "align": "right",
       "frame": "thin",
       "purpose": "Close KOH recognizes his admired player, startled but delighted. KOH hands empty, NO shield, own steel sword remains sheathed.",
@@ -3105,13 +3365,21 @@
           "tail": "down"
         }
       ],
-      "sounds": []
+      "sounds": [],
+      "sourceId": "08-invitation:2",
+      "effective": true,
+      "newUnderstanding": "Close KOH recognizes his admired player, startled but delighted. KOH hands empty, NO shield, own steel sword remains sheathed."
     },
     {
-      "id": "08-invitation:2-added-1-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "08-invitation:2-added-1-voice",
+      "type": "voice",
+      "speaker": "航",
+      "text": "動画で\n見てました",
+      "height": 190,
+      "x": 34,
+      "y": 50,
+      "purpose": "KOH straightens posture, recognizes REI from familiar raid videos, now asks as nervous youth, hands empty no shield. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "08-invitation:2-added-1",
@@ -3123,33 +3391,31 @@
       ],
       "crop": [
         0.50390625,
-        0.0032552083333333335,
+        0.06641927083333332,
         0.4912109375,
-        0.3509114583333333
+        0.2877473958333333
       ],
       "alt": "KOH straightens posture, recognizes REI from familiar raid videos, now asks as nervous youth, hands empty no shield.",
       "widthPercent": 92,
       "align": "left",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "KOH straightens posture, recognizes REI from familiar raid videos, now asks as nervous youth, hands empty no shield.",
-      "dialogue": [
-        {
-          "speaker": "航",
-          "text": "動画で\n見てました",
-          "x": 54,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "08-invitation:2-added-1",
+      "effective": true,
+      "newUnderstanding": "KOH straightens posture, recognizes REI from familiar raid videos, now asks as nervous youth, hands empty no shield."
     },
     {
-      "id": "08-invitation:2-added-2-pause",
-      "type": "pause",
-      "height": 60,
-      "purpose": "相手の返答や自分の判断を受け止める短い間。新しい動作・理解を次へ渡す。"
+      "id": "08-invitation:2-added-2-voice",
+      "type": "voice",
+      "speaker": "怜",
+      "text": "ここでは\n一緒に練習しよう",
+      "height": 256,
+      "x": 67,
+      "y": 50,
+      "purpose": "REI smiles and gestures toward real training yard instead of superiority or secret chosen-one favor. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "08-invitation:2-added-2",
@@ -3161,27 +3427,31 @@
       ],
       "crop": [
         0.0048828125,
-        0.0032552083333333335,
+        0.06641927083333332,
         0.4892578125,
-        0.3509114583333333
+        0.2877473958333333
       ],
       "alt": "REI smiles and gestures toward real training yard instead of superiority or secret chosen-one favor.",
-      "widthPercent": 92,
+      "widthPercent": 78,
       "align": "right",
       "frame": "thin",
       "purpose": "REI smiles and gestures toward real training yard instead of superiority or secret chosen-one favor.",
-      "dialogue": [
-        {
-          "speaker": "怜",
-          "text": "ここでは\n一緒に練習しよう",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "08-invitation:2-added-2",
+      "effective": true,
+      "newUnderstanding": "REI smiles and gestures toward real training yard instead of superiority or secret chosen-one favor."
+    },
+    {
+      "id": "08-invitation:3-voice",
+      "type": "voice",
+      "speaker": "怜",
+      "text": "討伐隊\n一緒に来るか？",
+      "height": 234,
+      "x": 67,
+      "y": 50,
+      "purpose": "Large REI offers an open empty hand, a genuine invitation. 発話は白地で独立して読み 同じ人物の反応へ渡す",
+      "kind": "spoken"
     },
     {
       "id": "08-invitation:3",
@@ -3193,27 +3463,1562 @@
       ],
       "crop": [
         0.50390625,
-        0.3606770833333333,
+        0.4190364583333333,
         0.4912109375,
-        0.32421875
+        0.265859375
       ],
       "alt": "Large REI offers an open empty hand, a genuine invitation.",
       "widthPercent": 100,
       "align": "center",
-      "frame": "thin",
+      "frame": "none",
       "purpose": "Large REI offers an open empty hand, a genuine invitation.",
-      "dialogue": [
-        {
-          "speaker": "怜",
-          "text": "討伐隊\n一緒に来るか",
-          "x": 8,
-          "y": 0,
-          "width": 42,
-          "kind": "spoken",
-          "tail": "down"
-        }
-      ],
-      "sounds": []
+      "dialogue": [],
+      "sounds": [],
+      "sourceId": "08-invitation:3",
+      "effective": true,
+      "newUnderstanding": "Large REI offers an open empty hand, a genuine invitation."
+    },
+    {
+      "id": "08-invitation:3-pause",
+      "type": "pause",
+      "height": 330,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える"
     }
-  ]
+  ],
+  "pureGaps": [
+    {
+      "id": "00-japan:1-pause",
+      "type": "pause",
+      "height": 150,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "00-japan:1",
+      "after": "00-japan:1-added-1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "00-japan:2-pause",
+      "type": "pause",
+      "height": 260,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "00-japan:2",
+      "after": "00-yard:1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "00-yard:1-added-1-pause",
+      "type": "pause",
+      "height": 110,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "00-yard:1-added-1",
+      "after": "00-yard:2",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "00-yard:2-added-2-pause",
+      "type": "pause",
+      "height": 120,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "00-yard:2-added-2",
+      "after": "01-choice:1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "01-choice:2-pause",
+      "type": "pause",
+      "height": 260,
+      "purpose": "問いの返答を待つ",
+      "before": "01-choice:2",
+      "after": "01-choice:3",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "01-choice:4-pause",
+      "type": "pause",
+      "height": 200,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "01-choice:4",
+      "after": "01-choice:5",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "01-choice:6-pause",
+      "type": "pause",
+      "height": 140,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "01-choice:6",
+      "after": "01-lesson:2",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "02-distance:3-pause",
+      "type": "pause",
+      "height": 130,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "02-distance:3",
+      "after": "02-distance:3-added-1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "02-retry:3-pause",
+      "type": "pause",
+      "height": 180,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "02-retry:3",
+      "after": "02-rest:1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "02-rest:2-added-1-pause",
+      "type": "pause",
+      "height": 150,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "02-rest:2-added-1",
+      "after": "02-change:1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "02-change:3-added-2-pause",
+      "type": "pause",
+      "height": 250,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "02-change:3-added-2",
+      "after": "03-patrol:1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "03-listen:2-added-2-pause",
+      "type": "pause",
+      "height": 900,
+      "purpose": "草の音と停止の反応を受け 獣の姿を下で初めて見せる",
+      "before": "03-listen:2-added-2",
+      "after": "04-beast:1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "04-beast:2-pause",
+      "type": "pause",
+      "height": 200,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "04-beast:2",
+      "after": "04-beast:2-added-1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "05-defense:3-pause",
+      "type": "pause",
+      "height": 100,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "05-defense:3",
+      "after": "05-recover:1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "05-recover:3-pause",
+      "type": "pause",
+      "height": 260,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "05-recover:3",
+      "after": "05-recover:3-added-1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "06-supply:3-pause",
+      "type": "pause",
+      "height": 230,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "06-supply:3",
+      "after": "07-local:1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "07-local:2-pause",
+      "type": "pause",
+      "height": 280,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "07-local:2",
+      "after": "07-local:2-added-1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "07-clinic:2-added-1-pause",
+      "type": "pause",
+      "height": 140,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "07-clinic:2-added-1",
+      "after": "07-promise:1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "07-promise:3-pause",
+      "type": "pause",
+      "height": 400,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "07-promise:3",
+      "after": "08-invitation:1",
+      "background": "white",
+      "contents": "none"
+    },
+    {
+      "id": "08-invitation:3-pause",
+      "type": "pause",
+      "height": 330,
+      "purpose": "結果を受け止め 次の動作や場所へ切り替える",
+      "before": "08-invitation:3",
+      "after": "end",
+      "background": "white",
+      "contents": "none"
+    }
+  ],
+  "notes": [
+    "第2話の擦り傷 銅貨二枚 抜刀を止められた経験から続く",
+    "文字と余白を有効コマ数へ加算しない",
+    "本作画はこの構成の採用後"
+  ],
+  "episodeLength": {
+    "scope": "full_episode",
+    "target": {
+      "widthCssPx": 390,
+      "bodyHeightCssPx": [
+        34000,
+        60000
+      ],
+      "minContentHeightCssPx": 24000,
+      "effectivePanels": [
+        80,
+        120
+      ]
+    },
+    "planned": {
+      "effectivePanels": 99
+    },
+    "actual": {
+      "effectivePanels": 99,
+      "body390": {
+        "readerWidthCssPx": 390,
+        "viewportCssPx": [
+          390,
+          844
+        ],
+        "bodyHeightCssPx": 46657.359375,
+        "explicitPauseHeightCssPx": 4790,
+        "pureGapHeightCssPx": 10102.515625,
+        "contentHeightCssPx": 36554.84375,
+        "screenUnits": 55.281231486966824,
+        "pureGapRatio": 0.21652566198191536,
+        "pureGapRangesCssPx": [
+          [
+            0,
+            32.8125
+          ],
+          [
+            179.1875,
+            212
+          ],
+          [
+            531.796875,
+            714.671875
+          ],
+          [
+            818.921875,
+            851.796875
+          ],
+          [
+            854.609375,
+            872.609375
+          ],
+          [
+            1150.703125,
+            1183.9921875
+          ],
+          [
+            1351.4140625,
+            1384.703125
+          ],
+          [
+            1981.671875,
+            2014.9609375
+          ],
+          [
+            2182.3828125,
+            2215.671875
+          ],
+          [
+            2494.5,
+            2787.375
+          ],
+          [
+            2891.625,
+            2924.5
+          ],
+          [
+            3112.796875,
+            3145.609375
+          ],
+          [
+            3291.984375,
+            3324.796875
+          ],
+          [
+            3683.59375,
+            3825.9375
+          ],
+          [
+            3951.25,
+            3983.59375
+          ],
+          [
+            4287.78125,
+            4320.65625
+          ],
+          [
+            4424.90625,
+            4457.78125
+          ],
+          [
+            4824.375,
+            4857.6640625
+          ],
+          [
+            5025.0859375,
+            5058.375
+          ],
+          [
+            5343.84375,
+            5497.1328125
+          ],
+          [
+            5664.5546875,
+            5697.84375
+          ],
+          [
+            6017.640625,
+            6050.9296875
+          ],
+          [
+            6218.3515625,
+            6251.640625
+          ],
+          [
+            6610.4375,
+            6905.0390625
+          ],
+          [
+            7047.8359375,
+            7082.4375
+          ],
+          [
+            7386.625,
+            7419.4375
+          ],
+          [
+            7565.8125,
+            7598.625
+          ],
+          [
+            7965.21875,
+            8198.03125
+          ],
+          [
+            8344.40625,
+            8377.21875
+          ],
+          [
+            8712.609375,
+            8756.015625
+          ],
+          [
+            8839.203125,
+            8882.609375
+          ],
+          [
+            9202.40625,
+            9374.75
+          ],
+          [
+            9500.0625,
+            9532.40625
+          ],
+          [
+            9826.609375,
+            9863.0546875
+          ],
+          [
+            9960.1640625,
+            9996.609375
+          ],
+          [
+            10541.265625,
+            10573.609375
+          ],
+          [
+            10698.921875,
+            10731.265625
+          ],
+          [
+            11009.015625,
+            11041.359375
+          ],
+          [
+            11166.671875,
+            11199.015625
+          ],
+          [
+            11760.28125,
+            11794.0390625
+          ],
+          [
+            11982.5234375,
+            12016.28125
+          ],
+          [
+            12252.625,
+            12486.90625
+          ],
+          [
+            12612.21875,
+            12644.5625
+          ],
+          [
+            12914.625,
+            12947.9140625
+          ],
+          [
+            13115.3359375,
+            13148.625
+          ],
+          [
+            13151.609375,
+            13184.609375
+          ],
+          [
+            13389.453125,
+            13389.46875
+          ],
+          [
+            13391.609375,
+            13425.609375
+          ],
+          [
+            13664.234375,
+            13697.109375
+          ],
+          [
+            13801.359375,
+            13834.234375
+          ],
+          [
+            13836.609375,
+            13871.609375
+          ],
+          [
+            14165.375,
+            14328.6640625
+          ],
+          [
+            14496.0859375,
+            14529.375
+          ],
+          [
+            14531.609375,
+            14553.609375
+          ],
+          [
+            14806.578125,
+            14839.390625
+          ],
+          [
+            14985.765625,
+            15018.578125
+          ],
+          [
+            15282.890625,
+            15315.765625
+          ],
+          [
+            15420.015625,
+            15452.890625
+          ],
+          [
+            16236.953125,
+            16269.296875
+          ],
+          [
+            16394.609375,
+            16426.953125
+          ],
+          [
+            16701.421875,
+            16735.1796875
+          ],
+          [
+            16923.6640625,
+            16957.421875
+          ],
+          [
+            17220.6875,
+            17253.5625
+          ],
+          [
+            17357.8125,
+            17390.6875
+          ],
+          [
+            17686.0625,
+            17901.9765625
+          ],
+          [
+            18020.1484375,
+            18056.0625
+          ],
+          [
+            18293.171875,
+            18326.0625
+          ],
+          [
+            18430.3125,
+            18463.1875
+          ],
+          [
+            18740.9375,
+            18774.6953125
+          ],
+          [
+            18963.1796875,
+            18996.9375
+          ],
+          [
+            19261.78125,
+            19411.78125
+          ],
+          [
+            19701.296875,
+            19733.640625
+          ],
+          [
+            19858.953125,
+            19891.296875
+          ],
+          [
+            20439.140625,
+            20472.4296875
+          ],
+          [
+            20639.8515625,
+            20673.140625
+          ],
+          [
+            20949.796875,
+            20983.5546875
+          ],
+          [
+            21172.0390625,
+            21205.796875
+          ],
+          [
+            21475.8125,
+            21509.1015625
+          ],
+          [
+            21676.5234375,
+            21709.8125
+          ],
+          [
+            22016.40625,
+            22300.1640625
+          ],
+          [
+            22488.6484375,
+            22522.40625
+          ],
+          [
+            22834.59375,
+            22867.46875
+          ],
+          [
+            22971.71875,
+            23004.59375
+          ],
+          [
+            23320.546875,
+            23353.359375
+          ],
+          [
+            23499.734375,
+            23532.546875
+          ],
+          [
+            24097.78125,
+            24360.5546875
+          ],
+          [
+            24527.9765625,
+            24561.265625
+          ],
+          [
+            24778.203125,
+            24813.7421875
+          ],
+          [
+            24998.6640625,
+            25034.203125
+          ],
+          [
+            25824.609375,
+            25840.609375
+          ],
+          [
+            26373.328125,
+            27273.328125
+          ],
+          [
+            27841.828125,
+            28041.828125
+          ],
+          [
+            28615.09375,
+            28648.3828125
+          ],
+          [
+            28815.8046875,
+            28849.09375
+          ],
+          [
+            29716.40625,
+            29816.40625
+          ],
+          [
+            30375.921875,
+            30408.265625
+          ],
+          [
+            30533.578125,
+            30565.921875
+          ],
+          [
+            30814.84375,
+            30847.65625
+          ],
+          [
+            30994.03125,
+            31026.84375
+          ],
+          [
+            31923.40625,
+            32216.21875
+          ],
+          [
+            32362.59375,
+            32395.40625
+          ],
+          [
+            32715.203125,
+            32748.015625
+          ],
+          [
+            32894.390625,
+            32927.203125
+          ],
+          [
+            33174.65625,
+            33209.2578125
+          ],
+          [
+            33352.0546875,
+            33386.65625
+          ],
+          [
+            33687.25,
+            33721.0078125
+          ],
+          [
+            33909.4921875,
+            33943.25
+          ],
+          [
+            34219.359375,
+            34252.171875
+          ],
+          [
+            34398.546875,
+            34431.359375
+          ],
+          [
+            34696.734375,
+            34729.078125
+          ],
+          [
+            34854.390625,
+            34886.734375
+          ],
+          [
+            35178.609375,
+            35211.8984375
+          ],
+          [
+            35379.3203125,
+            35412.609375
+          ],
+          [
+            35662.03125,
+            35694.84375
+          ],
+          [
+            35841.21875,
+            35874.03125
+          ],
+          [
+            36174.625,
+            36208.3828125
+          ],
+          [
+            36396.8671875,
+            36430.625
+          ],
+          [
+            36706.734375,
+            36739.546875
+          ],
+          [
+            36885.921875,
+            36918.734375
+          ],
+          [
+            37173.65625,
+            37436.9453125
+          ],
+          [
+            37604.3671875,
+            37637.65625
+          ],
+          [
+            37924.8125,
+            37957.625
+          ],
+          [
+            38104,
+            38136.8125
+          ],
+          [
+            38391.6875,
+            38705.4453125
+          ],
+          [
+            38893.9296875,
+            38927.6875
+          ],
+          [
+            39236.09375,
+            39269.3828125
+          ],
+          [
+            39436.8046875,
+            39470.09375
+          ],
+          [
+            39745.109375,
+            39778.8671875
+          ],
+          [
+            39967.3515625,
+            40001.109375
+          ],
+          [
+            40557.78125,
+            40591.5390625
+          ],
+          [
+            40780.0234375,
+            40813.78125
+          ],
+          [
+            41361.921875,
+            41501.921875
+          ],
+          [
+            41740.03125,
+            41940.890625
+          ],
+          [
+            42066.203125,
+            42131.359375
+          ],
+          [
+            42277.734375,
+            42310.546875
+          ],
+          [
+            42317.609375,
+            42336.609375
+          ],
+          [
+            42604.75,
+            42637.5625
+          ],
+          [
+            42783.9375,
+            42816.75
+          ],
+          [
+            43065.671875,
+            43098.484375
+          ],
+          [
+            43244.859375,
+            43277.671875
+          ],
+          [
+            43596.828125,
+            44029.640625
+          ],
+          [
+            44176.015625,
+            44208.828125
+          ],
+          [
+            44747.140625,
+            44779.484375
+          ],
+          [
+            44904.796875,
+            44937.140625
+          ],
+          [
+            45252.40625,
+            45286.1640625
+          ],
+          [
+            45474.6484375,
+            45508.40625
+          ],
+          [
+            45776.75,
+            45810.0390625
+          ],
+          [
+            45977.4609375,
+            46010.75
+          ],
+          [
+            46327.359375,
+            46657.359375
+          ]
+        ],
+        "imageBlankBands": [
+          {
+            "panel": "00-japan:1-added-1",
+            "top": 854.609375,
+            "bottom": 872.609375,
+            "height": 18.0
+          },
+          {
+            "panel": "02-distance:1",
+            "top": 13151.609375,
+            "bottom": 13184.609375,
+            "height": 33.0
+          },
+          {
+            "panel": "02-distance:2",
+            "top": 13391.609375,
+            "bottom": 13425.609375,
+            "height": 34.0
+          },
+          {
+            "panel": "02-distance:3",
+            "top": 13836.609375,
+            "bottom": 13871.609375,
+            "height": 35.0
+          },
+          {
+            "panel": "02-distance:3-added-1",
+            "top": 14531.609375,
+            "bottom": 14553.609375,
+            "height": 22.0
+          },
+          {
+            "panel": "03-listen:2-added-1",
+            "top": 25824.609375,
+            "bottom": 25840.609375,
+            "height": 16.0
+          },
+          {
+            "panel": "07-promise:1-added-2",
+            "top": 42317.609375,
+            "bottom": 42336.609375,
+            "height": 19.0
+          }
+        ],
+        "allImagesLoaded": true,
+        "horizontalOverflow": false,
+        "effectivePanels": 99,
+        "framesCaptured": 62
+      },
+      "body360": {
+        "readerWidthCssPx": 360,
+        "viewportCssPx": [
+          360,
+          800
+        ],
+        "bodyHeightCssPx": 43067.59375,
+        "explicitPauseHeightCssPx": 4421.40625,
+        "pureGapHeightCssPx": 9199.125,
+        "contentHeightCssPx": 33868.46875,
+        "screenUnits": 53.8344921875,
+        "pureGapRatio": 0.21359737563698925,
+        "pureGapRangesCssPx": [
+          [
+            0,
+            29.5234375
+          ],
+          [
+            166.1640625,
+            195.6875
+          ],
+          [
+            490.875,
+            658.8984375
+          ],
+          [
+            756.6640625,
+            786.25
+          ],
+          [
+            788.609375,
+            804.609375
+          ],
+          [
+            1062.15625,
+            1092.109375
+          ],
+          [
+            1248.203125,
+            1278.15625
+          ],
+          [
+            1829.21875,
+            1859.171875
+          ],
+          [
+            2015.265625,
+            2045.21875
+          ],
+          [
+            2302.609375,
+            2572.1796875
+          ],
+          [
+            2669.9453125,
+            2699.53125
+          ],
+          [
+            2873.34375,
+            2902.8671875
+          ],
+          [
+            3039.5078125,
+            3069.03125
+          ],
+          [
+            3400.21875,
+            3530.8359375
+          ],
+          [
+            3648.0390625,
+            3677.125
+          ],
+          [
+            3957.921875,
+            3987.4921875
+          ],
+          [
+            4085.2578125,
+            4114.84375
+          ],
+          [
+            4453.234375,
+            4483.1875
+          ],
+          [
+            4639.28125,
+            4669.234375
+          ],
+          [
+            4932.734375,
+            5073.453125
+          ],
+          [
+            5229.546875,
+            5259.5
+          ],
+          [
+            5554.6875,
+            5584.640625
+          ],
+          [
+            5740.734375,
+            5770.6875
+          ],
+          [
+            6101.875,
+            6372.4765625
+          ],
+          [
+            6506.9609375,
+            6537.5625
+          ],
+          [
+            6818.359375,
+            6847.8828125
+          ],
+          [
+            6984.5234375,
+            7014.046875
+          ],
+          [
+            7352.4375,
+            7566.5703125
+          ],
+          [
+            7703.2109375,
+            7732.734375
+          ],
+          [
+            8042.328125,
+            8081.6171875
+          ],
+          [
+            8159.9453125,
+            8199.25
+          ],
+          [
+            8494.4375,
+            8652.7421875
+          ],
+          [
+            8769.9453125,
+            8799.03125
+          ],
+          [
+            9070.59375,
+            9102.328125
+          ],
+          [
+            9195.765625,
+            9227.515625
+          ],
+          [
+            9730.265625,
+            9759.3515625
+          ],
+          [
+            9876.5546875,
+            9905.640625
+          ],
+          [
+            10162.015625,
+            10191.1015625
+          ],
+          [
+            10308.3046875,
+            10337.390625
+          ],
+          [
+            10855.453125,
+            10885.828125
+          ],
+          [
+            11061.359375,
+            11091.75
+          ],
+          [
+            11309.90625,
+            11525.3984375
+          ],
+          [
+            11642.6015625,
+            11671.703125
+          ],
+          [
+            11921,
+            11950.953125
+          ],
+          [
+            12107.046875,
+            12137
+          ],
+          [
+            12139.609375,
+            12170.609375
+          ],
+          [
+            12359.296875,
+            12359.3125
+          ],
+          [
+            12361.609375,
+            12393.609375
+          ],
+          [
+            12612.953125,
+            12642.5234375
+          ],
+          [
+            12740.2890625,
+            12769.875
+          ],
+          [
+            12772.609375,
+            12805.609375
+          ],
+          [
+            13075.53125,
+            13225.484375
+          ],
+          [
+            13381.578125,
+            13411.53125
+          ],
+          [
+            13413.609375,
+            13433.609375
+          ],
+          [
+            13667.40625,
+            13696.9296875
+          ],
+          [
+            13833.5703125,
+            13863.09375
+          ],
+          [
+            14107.0625,
+            14136.6328125
+          ],
+          [
+            14234.3984375,
+            14263.984375
+          ],
+          [
+            14987.734375,
+            15016.8203125
+          ],
+          [
+            15134.0234375,
+            15163.109375
+          ],
+          [
+            15416.46875,
+            15446.84375
+          ],
+          [
+            15622.375,
+            15652.765625
+          ],
+          [
+            15895.78125,
+            15925.3515625
+          ],
+          [
+            16023.1171875,
+            16052.703125
+          ],
+          [
+            16325.34375,
+            16522.734375
+          ],
+          [
+            16635.609375,
+            16666.859375
+          ],
+          [
+            16885.734375,
+            16915.3203125
+          ],
+          [
+            17013.0859375,
+            17042.671875
+          ],
+          [
+            17299.0625,
+            17329.4375
+          ],
+          [
+            17504.96875,
+            17535.359375
+          ],
+          [
+            17779.8125,
+            17918.265625
+          ],
+          [
+            18185.5,
+            18214.5859375
+          ],
+          [
+            18331.7890625,
+            18360.875
+          ],
+          [
+            18866.578125,
+            18896.53125
+          ],
+          [
+            19052.625,
+            19082.578125
+          ],
+          [
+            19337.953125,
+            19368.328125
+          ],
+          [
+            19543.859375,
+            19574.25
+          ],
+          [
+            19823.484375,
+            19853.4375
+          ],
+          [
+            20009.53125,
+            20039.484375
+          ],
+          [
+            20322.484375,
+            20583.625
+          ],
+          [
+            20759.15625,
+            20789.546875
+          ],
+          [
+            21077.71875,
+            21107.2890625
+          ],
+          [
+            21205.0546875,
+            21234.640625
+          ],
+          [
+            21526.28125,
+            21555.8046875
+          ],
+          [
+            21692.4453125,
+            21721.96875
+          ],
+          [
+            22243.71875,
+            22485.5
+          ],
+          [
+            22641.59375,
+            22671.546875
+          ],
+          [
+            22871.796875,
+            22903.2578125
+          ],
+          [
+            23076.6171875,
+            23108.09375
+          ],
+          [
+            24344.203125,
+            25174.96875
+          ],
+          [
+            25699.734375,
+            25884.34375
+          ],
+          [
+            26413.5,
+            26443.453125
+          ],
+          [
+            26599.546875,
+            26629.5
+          ],
+          [
+            27430.09375,
+            27522.390625
+          ],
+          [
+            28038.84375,
+            28067.9296875
+          ],
+          [
+            28185.1328125,
+            28214.21875
+          ],
+          [
+            28444,
+            28473.5234375
+          ],
+          [
+            28610.1640625,
+            28639.6875
+          ],
+          [
+            29467.265625,
+            29736.7890625
+          ],
+          [
+            29873.4296875,
+            29902.953125
+          ],
+          [
+            30198.140625,
+            30227.6640625
+          ],
+          [
+            30364.3046875,
+            30393.828125
+          ],
+          [
+            30622.25,
+            30652.8515625
+          ],
+          [
+            30787.3359375,
+            30817.9375
+          ],
+          [
+            31095.40625,
+            31125.78125
+          ],
+          [
+            31301.3125,
+            31331.703125
+          ],
+          [
+            31586.5625,
+            31616.0859375
+          ],
+          [
+            31752.7265625,
+            31782.25
+          ],
+          [
+            32027.203125,
+            32056.2890625
+          ],
+          [
+            32173.4921875,
+            32202.578125
+          ],
+          [
+            32471.984375,
+            32501.9375
+          ],
+          [
+            32658.03125,
+            32687.984375
+          ],
+          [
+            32918.234375,
+            32947.7578125
+          ],
+          [
+            33084.3984375,
+            33113.921875
+          ],
+          [
+            33391.390625,
+            33421.765625
+          ],
+          [
+            33597.296875,
+            33627.6875
+          ],
+          [
+            33882.5625,
+            33912.0859375
+          ],
+          [
+            34048.7265625,
+            34078.25
+          ],
+          [
+            34313.5625,
+            34555.8125
+          ],
+          [
+            34711.90625,
+            34741.859375
+          ],
+          [
+            35006.921875,
+            35036.4453125
+          ],
+          [
+            35173.0859375,
+            35202.609375
+          ],
+          [
+            35437.890625,
+            35726.71875
+          ],
+          [
+            35902.25,
+            35932.640625
+          ],
+          [
+            36217.3125,
+            36247.265625
+          ],
+          [
+            36403.359375,
+            36433.3125
+          ],
+          [
+            36687.171875,
+            36717.546875
+          ],
+          [
+            36893.078125,
+            36923.46875
+          ],
+          [
+            37437.296875,
+            37467.671875
+          ],
+          [
+            37643.203125,
+            37673.59375
+          ],
+          [
+            38179.578125,
+            38308.796875
+          ],
+          [
+            38528.59375,
+            38713.2265625
+          ],
+          [
+            38830.4296875,
+            38889.0546875
+          ],
+          [
+            39025.6953125,
+            39055.21875
+          ],
+          [
+            39061.609375,
+            39079.609375
+          ],
+          [
+            39326.78125,
+            39356.3046875
+          ],
+          [
+            39492.9453125,
+            39522.46875
+          ],
+          [
+            39752.25,
+            39781.7734375
+          ],
+          [
+            39918.4140625,
+            39947.9375
+          ],
+          [
+            40242.546875,
+            40641.2890625
+          ],
+          [
+            40777.9296875,
+            40807.453125
+          ],
+          [
+            41304.34375,
+            41333.4296875
+          ],
+          [
+            41450.6328125,
+            41479.71875
+          ],
+          [
+            41770.71875,
+            41801.09375
+          ],
+          [
+            41976.625,
+            42007.015625
+          ],
+          [
+            42254.71875,
+            42284.671875
+          ],
+          [
+            42440.765625,
+            42470.71875
+          ],
+          [
+            42762.984375,
+            43067.59375
+          ]
+        ],
+        "imageBlankBands": [
+          {
+            "panel": "00-japan:1-added-1",
+            "top": 788.609375,
+            "bottom": 804.609375,
+            "height": 16.0
+          },
+          {
+            "panel": "02-distance:1",
+            "top": 12139.609375,
+            "bottom": 12170.609375,
+            "height": 31.0
+          },
+          {
+            "panel": "02-distance:2",
+            "top": 12361.609375,
+            "bottom": 12393.609375,
+            "height": 32.0
+          },
+          {
+            "panel": "02-distance:3",
+            "top": 12772.609375,
+            "bottom": 12805.609375,
+            "height": 33.0
+          },
+          {
+            "panel": "02-distance:3-added-1",
+            "top": 13413.609375,
+            "bottom": 13433.609375,
+            "height": 20.0
+          },
+          {
+            "panel": "07-promise:1-added-2",
+            "top": 39061.609375,
+            "bottom": 39079.609375,
+            "height": 18.0
+          }
+        ],
+        "allImagesLoaded": true,
+        "horizontalOverflow": false,
+        "effectivePanels": 99,
+        "framesCaptured": 61
+      }
+    }
+  }
 }
