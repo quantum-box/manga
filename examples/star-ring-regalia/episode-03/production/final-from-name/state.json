@@ -1,0 +1,546 @@
+{
+  "status": "completed_local_validation_pending_ci_publication",
+  "scope": "episode_03_final_from_adopted_85_panel_name",
+  "adoptedCommit": "c541f93320dab98db0b4f3cc00358f9b28cef595",
+  "adoptionRecord": "../../review/name-preview/adoption.json",
+  "tool": "built_in_image_gen",
+  "assets": [
+    {
+      "id": "f01",
+      "rough": "rough/training-motion.png",
+      "destination": "../../art/f01.png",
+      "prompt": "prompts/f01.txt",
+      "panelIds": [
+        "01-spar:1",
+        "01-spar:2",
+        "01-spar:3",
+        "01-spar:4",
+        "01-spar:5",
+        "01-spar:6"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-9f9dbe72-0b1c-441a-a12f-41d3bbb3b2b7.png",
+      "sha256": "2d6090c08662bf36b7127d49c21af3dc17b90ac2b61d11e8981fc171867a34c8",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/training-motion.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f02",
+      "rough": "rough/training-flicker.png",
+      "destination": "../../art/f02.png",
+      "prompt": "prompts/f02.txt",
+      "panelIds": [
+        "02-flicker:1",
+        "02-flicker:2",
+        "02-flicker:3",
+        "02-flicker:4",
+        "02-flicker:5",
+        "02-flicker:6"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-413bc899-8303-4dcc-9586-a383bc2ecffc.png",
+      "sha256": "5d4880d5290fd36f6cfeb211f05ece1ca59e27b9d8a6850eaeb735bd0de53e36",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/training-flicker.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f03",
+      "rough": "rough/star-question.png",
+      "destination": "../../art/f03.png",
+      "prompt": "prompts/f03.txt",
+      "panelIds": [
+        "02-star:1",
+        "02-star:2",
+        "02-star:3",
+        "02-star:4",
+        "02-star:5",
+        "02-star:6"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-0fe3ec36-f5e4-4b90-a296-06415c323c97.png",
+      "sha256": "d219d6876845a466248e067cb5cf35fc0b641954a04f2388430c6f2c4f763d03",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/star-question.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f04",
+      "rough": "rough/resonance.png",
+      "destination": "../../art/f04.png",
+      "prompt": "prompts/f04.txt",
+      "panelIds": [
+        "05-resonance:1",
+        "05-resonance:2",
+        "05-resonance:3",
+        "05-defense:3",
+        "05-resonance:5",
+        "05-resonance:6"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-1178e361-e589-4888-b098-a44f9dc474a6.png",
+      "sha256": "edd7450ffcd57552f5ee1bd6606e5b2624ca50f7befb497dc568718008e71bc3",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "editSource": "source-f04.png",
+      "editPrompt": "prompts/f04-edit.txt",
+      "edits": [
+        {
+          "source": "source-f04-scabbard.png",
+          "prompt": "prompts/f04-scabbard.txt"
+        }
+      ],
+      "references": [
+        "../../review/name-preview/rough/resonance.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f05",
+      "rough": "rough/connection.png",
+      "destination": "../../art/f05.png",
+      "prompt": "prompts/f05.txt",
+      "panelIds": [
+        "00-japan:1",
+        "00-japan:1-added-2",
+        "00-yard:1",
+        "00-yard:1-added-1",
+        "00-yard:2",
+        "00-yard:2-added-1"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-de27a660-4684-42d0-9977-fdc50fe38317.png",
+      "sha256": "44a021add97be0eaae02c219c834873078a1f4b081ff950e28528e183c0483a8",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/connection.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f06",
+      "rough": "rough/sheet-01.png",
+      "destination": "../../art/f06.png",
+      "prompt": "prompts/f06.txt",
+      "panelIds": [
+        "00-japan:2"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-910f7552-9c96-45d8-a026-625070c0f520.png",
+      "sha256": "43281b38948a33c3d8018118f6ccbc374830e41bdff0973d4c2912b1468307f6",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/sheet-01.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f07",
+      "rough": "rough/sheet-02.png",
+      "destination": "../../art/f07.png",
+      "prompt": "prompts/f07.txt",
+      "panelIds": [
+        "00-yard:2-added-2"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-eb7ebad4-9fb3-446d-b115-98eb732492db.png",
+      "sha256": "97efe6663ea9d1f57228300c73801c28702dc0e7f2039f344c32a8ed727af063",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/sheet-02.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f08",
+      "rough": "rough/lesson-choice.png",
+      "destination": "../../art/f08.png",
+      "prompt": "prompts/f08.txt",
+      "panelIds": [
+        "01-choice:1",
+        "01-choice:4",
+        "01-choice:6"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-9bd9437e-d177-43c6-87bd-4132a4720ab8.png",
+      "sha256": "2b66ae33009e8c898b0692f7b71af4cdb0f34a05ea3d8d0ae8665f8653671033",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/lesson-choice.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f09",
+      "rough": "rough/sheet-03.png",
+      "destination": "../../art/f09.png",
+      "prompt": "prompts/f09.txt",
+      "panelIds": [
+        "01-lesson:2"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-e555759a-ff3f-4cd4-bbc3-f88d91331959.png",
+      "sha256": "319eea848b16ec1954770a629125abbfba1000445c3af764043dc538a820063a",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/sheet-03.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f10",
+      "rough": "rough/sheet-07.png",
+      "destination": "../../art/f10.png",
+      "prompt": "prompts/f10.txt",
+      "panelIds": [
+        "02-change:1",
+        "02-change:2",
+        "02-change:3"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-8bc60c24-26a4-4103-93ac-00f9c652d8d2.png",
+      "sha256": "ebbbcaa9a3fd35101a98adef305652d1865a40dadafdc75ffa47f78e8fa382a7",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/sheet-07.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f11",
+      "rough": "rough/sheet-08.png",
+      "destination": "../../art/f11.png",
+      "prompt": "prompts/f11.txt",
+      "panelIds": [
+        "02-change:3-added-2",
+        "03-patrol:1",
+        "03-patrol:1-added-1",
+        "03-patrol:1-added-2",
+        "03-patrol:2"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-73876d89-8fcb-4dc7-affa-58a4cf8dd4a2.png",
+      "sha256": "07a7afc7565d504c30f32da38a5b11e7df3f8eae8ba3ca19026abe76e57bc57e",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/sheet-08.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f12",
+      "rough": "rough/sheet-09.png",
+      "destination": "../../art/f12.png",
+      "prompt": "prompts/f12.txt",
+      "panelIds": [
+        "03-patrol:2-added-1",
+        "03-patrol:3",
+        "03-patrol:3-added-1",
+        "03-listen:1",
+        "03-listen:2"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-678b73f1-56a9-4930-80bc-1faf51fa2f17.png",
+      "sha256": "db992dfd85d463719793f5ac30a67274c43c25ca46da76a57ba6444ce47e1213",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "editSource": "source-f12.png",
+      "editPrompt": "prompts/f12-edit.txt",
+      "references": [
+        "../../review/name-preview/rough/sheet-09.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f13",
+      "rough": "rough/sheet-10.png",
+      "destination": "../../art/f13.png",
+      "prompt": "prompts/f13.txt",
+      "panelIds": [
+        "03-listen:2-added-1",
+        "03-listen:2-added-2",
+        "04-beast:1",
+        "04-beast:2",
+        "04-beast:2-added-1",
+        "04-find:1"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-e27a5bae-ca1c-443e-bd6b-8648c8f09f83.png",
+      "sha256": "5a118708a2e3578679d18d7e67d27dbb25d78ec10f6f591d1fab5373997c7ad0",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "editSource": "source-f13.png",
+      "editPrompt": "prompts/f13-edit.txt",
+      "references": [
+        "../../review/name-preview/rough/sheet-10.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f14",
+      "rough": "rough/sheet-11.png",
+      "destination": "../../art/f14.png",
+      "prompt": "prompts/f14.txt",
+      "panelIds": [
+        "05-defense:1",
+        "05-defense:2",
+        "05-recover:1"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-bd804f7d-3f35-4033-9700-a79e0abfd6be.png",
+      "sha256": "02576d8a468b8ba40c655848384c8bc2598cf5e140109f52e1728e7f5bcd6cbb",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "edits": [
+        {
+          "source": "source-f14-scabbard.png",
+          "prompt": "prompts/f14-scabbard.txt"
+        },
+        {
+          "source": "source-f14-hip.png",
+          "prompt": "prompts/f14-hip.txt"
+        }
+      ],
+      "references": [
+        "../../review/name-preview/rough/sheet-11.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f15",
+      "rough": "rough/sheet-12.png",
+      "destination": "../../art/f15.png",
+      "prompt": "prompts/f15.txt",
+      "panelIds": [
+        "05-recover:1-added-1",
+        "05-recover:2",
+        "05-recover:2-added-1",
+        "05-recover:2-added-2",
+        "05-recover:3",
+        "05-recover:3-added-1"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-cd144cb7-6641-4b40-91d0-fc56ab54bb6f.png",
+      "sha256": "a6a9ff35df29de7f2c1d67d0d71b1a0480e9bd67a9e62b2a8f1fe9f39395fca2",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/sheet-12.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f16",
+      "rough": "rough/sheet-13.png",
+      "destination": "../../art/f16.png",
+      "prompt": "prompts/f16.txt",
+      "panelIds": [
+        "06-returner:1",
+        "06-returner:2",
+        "06-returner:3",
+        "06-supply:1"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-bebdddd2-80c2-4486-8a00-8831d82fa10e.png",
+      "sha256": "333153f021aa70435fff693151264e4cc92e20fc7dc4678096515aaf9f4f6793",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/sheet-13.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f17",
+      "rough": "rough/sheet-14.png",
+      "destination": "../../art/f17.png",
+      "prompt": "prompts/f17.txt",
+      "panelIds": [
+        "06-supply:2",
+        "06-supply:3",
+        "07-local:1",
+        "07-local:2"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-97c99879-d6bf-4c60-afda-178b14a53a34.png",
+      "sha256": "7ca6da73c796f6fb30cc54ac76158539db65c580e8c8d23756bd25831075c2e6",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "editSource": "source-f17.png",
+      "editPrompt": "prompts/f17-edit.txt",
+      "references": [
+        "../../review/name-preview/rough/sheet-14.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f18",
+      "rough": "rough/sheet-15.png",
+      "destination": "../../art/f18.png",
+      "prompt": "prompts/f18.txt",
+      "panelIds": [
+        "07-local:3",
+        "07-clinic:1",
+        "07-clinic:2",
+        "07-promise:1"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-633c1c20-ca7a-45f9-8c08-688d9ef4a13e.png",
+      "sha256": "7eacdeedf296fdb113222513f6009f933993372a05c8d7fa817ede311bd41b73",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "editSource": "source-f18.png",
+      "editPrompt": "prompts/f18-edit.txt",
+      "references": [
+        "../../review/name-preview/rough/sheet-15.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f19",
+      "rough": "rough/sheet-16.png",
+      "destination": "../../art/f19.png",
+      "prompt": "prompts/f19.txt",
+      "panelIds": [
+        "07-promise:1-added-1",
+        "07-promise:1-added-2",
+        "07-promise:2",
+        "07-promise:3",
+        "08-invitation:1",
+        "08-invitation:2"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-bc844bd3-b746-4a49-a8fa-5b42b7de6b7d.png",
+      "sha256": "8f7882dacadb29143e26173dbdbb5a7a6a1621c028f3ded288c7a35acf063f67",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "editSource": "source-f19.png",
+      "editPrompt": "prompts/f19-edit.txt",
+      "references": [
+        "../../review/name-preview/rough/sheet-16.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    },
+    {
+      "id": "f20",
+      "rough": "rough/sheet-17.png",
+      "destination": "../../art/f20.png",
+      "prompt": "prompts/f20.txt",
+      "panelIds": [
+        "08-invitation:2-added-1",
+        "08-invitation:2-added-2",
+        "08-invitation:3"
+      ],
+      "status": "reviewed_full_reader_390_360",
+      "builtinOutput": "exec-b9d12191-3aa3-4253-8977-0032b7a82ff1.png",
+      "sha256": "6d33bdec9bbf3f9a0dd8ed805ce330e0dda791d61b1172e060c8a8f97c31888e",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "references": [
+        "../../review/name-preview/rough/sheet-17.png",
+        "../../../reference/cast.png",
+        "../../../episode-02/art/layout-f08.png"
+      ]
+    }
+  ],
+  "completedAssets": 20,
+  "effectivePanels": 85,
+  "lettering": "preserve adopted 60 independent and 3 embedded voices; no duplicate in-art dialogue",
+  "continuityEdits": 9
+}

@@ -22,6 +22,10 @@ def size(path):
 def build_episode(ep):
     number = ep['number']
     directory = ROOT / f'episode-{number:02d}'
+    adopted_builder = directory / 'production/final-from-name/build-reader.py'
+    if adopted_builder.is_file():
+        subprocess.run([sys.executable, str(adopted_builder)], check=True)
+        return True
     assets = ep['assets']
     adoption = json.loads((directory/'adoption.json').read_text()) if (directory/'adoption.json').is_file() else {}
     if not all((directory/'art'/adoption.get(a['id'], f"{a['id']}.png")).is_file() for a in assets):
