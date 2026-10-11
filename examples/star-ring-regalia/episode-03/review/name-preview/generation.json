@@ -116,6 +116,12 @@
       "sha256": "907be76fd34bf48451f5c1c2eaa8012fd26e9bfc3021513068d37e23275131b4",
       "sourceCommit": "bf149ef8c0a0b3f5de0233e54d307e598794d967",
       "pixelsEditedAfterGeneration": false
+    },
+    {
+      "path": "rough/resonance.png",
+      "sha256": "33f396cd97665174bf375f16d725ef49fe5fc14d36614d63cf25c069b4b1118b",
+      "sourceCommit": null,
+      "pixelsEditedAfterGeneration": false
     }
   ],
   "newCalls": [
@@ -142,5 +148,17 @@
       "prompt": "PROMPTS.md / 手の甲の誤った傷を除去",
       "editSource": "rough/source-lesson-choice.png"
     }
-  ]
+  ],
+  "revisionNotes": [
+    "2026-10-11 user requested special protagonist with some overwhelming combat victories; six new resonance moments replace the former wind-finisher. Actual source cell bounds differ from requested even grid and are preserved through display crops."
+  ],
+  "resonanceGeneration": {
+    "promptFile": "PROMPT-resonance.md",
+    "references": [
+      "../../../reference/cast.png",
+      "rough/sheet-11.png"
+    ],
+    "output": "rough/resonance.png",
+    "builtinOutput": "exec-2e407812-b246-4c7d-ad0c-4dbc1ced3b7d.png"
+  }
 }

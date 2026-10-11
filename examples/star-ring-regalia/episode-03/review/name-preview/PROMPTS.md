@@ -1,6 +1,6 @@
 # 第3話ネーム 実行したラフ生成指示
 
-組み込み image_gen を使用。完成作画ではなく、構成確認のための無彩色ラフ。人物の同一性だけを reference/cast.png から参照。
+組み込み image_gen を使用。完成作画ではなく、構成確認のための無彩色ラフ。人物の同一性は reference/cast.png から参照。共鳴の新ラフは直前の救助原画も場所と装備の連続性の参照に使用。
 
 編集前の2枚は実際の編集元素材として rough/source-connection.png と rough/source-lesson-choice.png に保持。表示用の原本は rough/connection.png と rough/lesson-choice.png。表示窓を調整し、PNG自体は無加工。
 
@@ -41,3 +41,7 @@ Ensure each cell a different event and full faces and hands contained with no ad
 ```text
 Precise continuity correction to this six-cell grayscale storyboard sheet: In TOP RIGHT cell ONLY, REMOVE the abrasion/smudged injury mark from the BACK of KOH's curled hand at his chest. The back of that hand must be clean. KOH's established injury is on the RIGHT PALM near base of thumb, invisible in this TOP RIGHT view. Keep the correct visible palm abrasion in MIDDLE LEFT cell exactly unchanged. Keep all six panels, faces, clothes, sword positions, hands anatomy, poses, borders, grayscale rough linework and backgrounds unchanged. No other additions, no lettering.
 ```
+
+## 主人公の星環共鳴
+
+[実行した生成指示](PROMPT-resonance.md)。航の視界、踏み込み、一閃、リゼの驚き、立ったままの余韻を新しい6カットで生成。

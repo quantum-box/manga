@@ -52,9 +52,30 @@ new=[]
 for i,(who,t,why) in enumerate(newtexts,1):
  p=sheetcell('lesson-choice.png',i,why,f'01-choice:{i}');speak(p,who,t);new.append(p)
 idx=next(i for i,p in enumerate(panels) if p['id']=='01-lesson:1');panels[idx:idx+3]=new
+# A rare star-ring resonance gives KOH the decisive strike, not only observation.
+power_specs=[
+ ('05-resonance:1',1,'航の瞳に細い環の光が映る 盾で兵士を守った直後 初めて魔力に感応する','航（心）','今…'),
+ ('05-resonance:2',2,'航だけの視界 獣の肩から魔力の爪へ細い光の筋が見える 未来や相手の心は見えない','航（心）','線が\n見える'),
+ ('05-resonance:3',3,'盾の後ろに兵士を残し 航が自分の右手の剣で細い筋へ短く踏み込む 足から肩と刃へ動作がつながる',None,None),
+ ('05-defense:3',4,'航の一閃が獣の爪の魔力を斬り裂く 太い斜めの軌跡と衝撃で獣を退ける 決め手は航 兵士は左盾の後ろで安全',None,None),
+ ('05-resonance:5',5,'援護を始めていたリゼが 航の一撃を見て剣を下げ驚く 風が決め手だったと見せない','リゼ','今の…\n航が？'),
+ ('05-resonance:6',6,'光が消えた自分の右手の剣を見る航 獣は逃げ 兵士は生きている 立ったまま驚きを受け止める','航（心）','俺が…？')]
+power=[]
+for ident,slot,why,who,t in power_specs:
+ # This source sheet has row-major left-to-right cells, unlike the earlier sources.
+ col=(slot-1)%2;row=(slot-1)//2
+ q=sheetcell('resonance.png',slot,why,ident)
+ bounds=[(10,5,496,411),(520,5,493,411),(10,430,494,570),(522,429,491,570),(10,1020,495,508),(522,1020,491,508)]
+ x,y,w,h=bounds[slot-1];q['crop']=[x/1024,y/1536,w/1024,h/1536]
+ if who:speak(q,who,t,'thought' if '心' in who else 'spoken')
+ if ident=='05-defense:3':q['sounds']=[dict(text='ザンッ',x=22,y=60,width=34)]
+ power.append(q)
+pos=next(i for i,q in enumerate(panels) if q['id']=='05-defense:3')
+panels[pos:pos+1]=power
+
 # The source middle-right hand has an incorrect back-of-hand mark. Use only the face.
 face=next(p for p in panels if p['id']=='00-yard:1');face['crop']=[.507,.336,.484,.19];face['alt']='ミルトへ戻った航が右掌へ視線を落とし 顔を曇らせる 掌の傷は次の小袋のカットで確かめる'
-# Original name has a safe two-handed kendo failure; no successful new technique or magic for KOH.
+# Training remains physical; resonance first manifests later in the river rescue.
 for p in panels:
  p['sourceId']=p['id'];p['effective']=True
  if p['id']=='07-promise:1-added-1':p['alt']='航は借りた盾の縁の小さな欠けを持ち主リゼへ見せる 木は自動で修復しない'
@@ -70,7 +91,7 @@ for i,p in enumerate(panels):
  p['frame']='none' if wide or i%4==0 else 'thin'
  p['newUnderstanding']=p['purpose']
 # Final art must preserve these exact independent voices and layouts. No quotas on in-image lettering.
-embedded={'01-grip:2','03-patrol:3','05-defense:3','05-recover:1','08-invitation:2'}
+embedded={'01-grip:2','03-patrol:3','05-recover:1','08-invitation:2'}
 # Sparse scene spaces combine a main shot with a small offset detail / reply, rather than cards only.
 pairs=[('01-grip:2-added-1','01-grip:3'),('02-distance:1','02-distance:1-added-1'),('02-rest:1','02-rest:1-added-1'),('03-patrol:2','03-patrol:2-added-1'),('07-promise:1','07-promise:1-added-1')]
 pairfirst={a:(a,b) for a,b in pairs}; pairsecond={b for a,b in pairs}
@@ -105,7 +126,7 @@ for i,p in enumerate(panels):
   purpose=('草の音と停止の反応を受け 獣の姿を下で初めて見せる' if 'listen' in p['id'] else '問いの返答を待つ' if p['id']=='01-choice:2' else '結果を受け止め 次の動作や場所へ切り替える')
   g=dict(id=p['id']+'-pause',type='pause',height=h,purpose=purpose);beats.append(g);pure.append(dict(**g,before=p['id'],after=nxt,background='white',contents='none'))
 # The faint continuation from reeds belongs to that one sound, not another rustle.
-plan=dict(schema='webtoon-name-preview/v1',title='星環のレガリア 第3話 戻れる剣、戻れない剣',referenceWidth=390,colorMode='monochrome',status='awaiting_user_adoption',scope='full_episode',baseCommit='bf149ef8c0a0b3f5de0233e54d307e598794d967',beats=beats,pureGaps=pure,notes=['第2話の擦り傷 銅貨二枚 抜刀を止められた経験から続く','文字と余白を有効コマ数へ加算しない','本作画はこの構成の採用後'],episodeLength=dict(scope='full_episode',target=dict(widthCssPx=390,bodyHeightCssPx=[34000,60000],minContentHeightCssPx=24000,effectivePanels=[80,120]),planned=dict(effectivePanels=len(panels)),actual=None))
+plan=dict(schema='webtoon-name-preview/v1',title='星環のレガリア 第3話 戻れる剣、戻れない剣',referenceWidth=390,colorMode='monochrome',status='awaiting_user_adoption',scope='full_episode',baseCommit='bf149ef8c0a0b3f5de0233e54d307e598794d967',beats=beats,pureGaps=pure,notes=['第2話の擦り傷 銅貨二枚 抜刀を止められた経験から続く','航だけの星環共鳴が初めて一閃となり獣を退ける','文字と余白を有効コマ数へ加算しない','本作画はこの構成の採用後'],episodeLength=dict(scope='full_episode',target=dict(widthCssPx=390,bodyHeightCssPx=[34000,60000],minContentHeightCssPx=24000,effectivePanels=[80,120]),planned=dict(effectivePanels=len(panels)),actual=None))
 dest.mkdir(parents=True,exist_ok=True)
 for name,obj in [('plan.json',plan),('layout-decisions.json',decisions),('effective-panels.json',dict(scope='full_episode',count=len(panels),panels=panels)),('adoption.json',dict(status='awaiting_user_adoption',scope='episode_03_revision_after_adopted_episode_02',finalArtAuthorized=False,date='2026-10-11',previousNameAdoption='Historical 2026-10-09 approval applies only to the prior episode-03 composition in Git history'))]:
  (dest/name).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n')

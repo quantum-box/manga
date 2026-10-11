@@ -9,11 +9,11 @@
 | 土曜の朝と再訪 | 日本の無傷の手から、ミルトで残る擦り傷と銅貨二枚へ。昨日の自分の行動をリゼに話す | 00-japan〜01-choice |
 | 稽古 | 剣道の両手握りが盾を邪魔する。肘と足を修正して一度受け、限界と休憩を覚える | 01-lesson〜02-rest |
 | 借り物と巡回 | 木剣を返して鋼剣を安全に納める。予備の木盾を借りて、返す場所を確認して川へ歩く | 02-change〜03-listen |
-| 川辺の獣 | 別の赤髪の帰還者が先走り身体を失う。航は兵士を盾で守り、リゼの風と協力して撤退する | 04-beast〜05-recover |
+| 川辺の獣 | 別の赤髪の帰還者が先走り身体を失う。航は兵士を盾で守り、航だけに魔力の筋が見え 自分の一閃で獣を退ける リゼも驚く | 04-beast〜05-recover |
 | 戻れる身体と戻らない仕事 | 帰還者の再生成には用意が必要。装備は戻らず、兵士の右前腕は治療と休養が必要 | 06-returner〜07-clinic |
 | 結果と誘い | 盾の傷を隠さず持ち主へ見せ、棚へ返す。次の稽古を頼んだ航へ、怜が討伐隊に誘う | 07-promise〜08-invitation |
 
-冒頭の問いは「昨日 抜いたあとに何ができたのか」。今回の成果は敵の討伐でも昨日の加害者との決着でもなく、仲間の声を聞いて負傷兵を生きたまま休める場所へ運ぶこと。怜は本当に親切な先輩として登場する。参加の返答と討伐隊の詳細は第4話へ残す。
+冒頭の問いは「昨日 抜いたあとに何ができたのか」。今回の成果は航の特別な一閃で獣を退け、負傷兵を生きたまま休める場所へ運ぶこと。昨日の加害者との決着は先へ残す。怜は本当に親切な先輩として登場する。参加の返答と討伐隊の詳細は第4話へ残す。
 
 ## 第2話からの連続性
 
@@ -22,14 +22,14 @@
 - 日本の航の身体には傷を移さない。ミルトでの右手掌の擦り傷は残す。手首と手の甲の負傷へ変えない。旧ラフの細部に傷が省略されるカットも、状態が回復した意味にはしない。本作画では見える掌へ同じ傷を引き継ぐ。
 - 銅貨二枚は使わず小袋へ戻す。日本への持出し、パンの購入、補給品の支払いに流用しない。
 - 第2話の荷運び人の右手首は未治癒。加害者への対応を勝手に決着させない。第3話の赤髪の帰還者は第2話の金髪の加害者とは別人。
-- 航の剣は右手、鞘は左腰。木剣を返してから鋼剣へ持ち替える。予備の木盾は左。リゼの短剣と風以外の新技は使わない。訓練は痛みを隠さず途中で止められる条件から始める。
+- 航の剣は右手、鞘は左腰。木剣を返してから鋼剣へ持ち替える。予備の木盾は左。リゼは短剣と風。航は稽古で魔法を習得したのではなく、救助中に星環共鳴が初めて発現する。訓練は痛みを隠さず途中で止められる条件から始める。
 - 再生成は帰還者の身体だけ。無限の供給や自動の装備回収を足さない。現地兵の右前腕をセナが治療し、仕事の代役も決める。町の川は正常。水不足・守護者の姿と役割・独立した世界の真相は先出ししない。
 
 ## 分量とレイアウト
 
-全話99の異なる動作・理解・選択・結果を計上。声・音・純余白を有効コマへ足さない。目標は390 CSS pxの本編34,000〜60,000px、内容24,000px以上、80〜120有効コマ。実量は本編46,657px、純余白10,103px、内容36,555px、99有効コマ。端数を含む実測と360px幅の値はvalidation.jsonを正本とする。
+全話104の異なる動作・理解・選択・結果を計上。声・音・純余白を有効コマへ足さない。目標は390 CSS pxの本編34,000〜60,000px、内容24,000px以上、80〜120有効コマ。実量はvalidation.jsonを正本とする。2026-10-11の主人公の特別さを加えた再計測を参照。
 
-68発話を白地に独立、5発話を身体動作や短い反応の絵へ。17原画の使える訓練・救護ラフを無加工で参照し、接続と稽古前の告白を2原画で追加。原画の枚数とコマ数を混同しない。読みやすい縦列で句読点を使わず、自然な問いと制止には？と！を残す。
+72発話を白地に独立、4発話を身体動作や短い反応の絵へ。17原画の使える訓練・救護ラフを無加工で参照し、接続と稽古前の告白・共鳴の一閃を3原画で追加。原画の枚数とコマ数を混同しない。読みやすい縦列で句読点を使わず、自然な問いと制止には？と！を残す。
 
 5か所で大きな絵と脇の小さな接写・白地の返答を同じ場面の空間へ置く。単純な全幅のカード列に揃えない。右側の小カットから始める横並びは、この話では無理に追加せず、JSONの順と縦の位置で読順を指定。主動作は広く、手・足の理解は小さく、救助後は密度を落とす。
 
@@ -922,24 +922,90 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
 - 発話なし
 
-### 065 05-defense:3
+### 065 05-resonance:1
 
-- 絵・新しい理解：Wide: LIZE pushes beast back with wind and KOH keeps injured guard behind shield.
+- 絵・新しい理解：航の瞳に細い環の光が映る 盾で兵士を守った直後 初めて魔力に感応する
 - 接続：05-defense:2の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
-- 幅と配置：100% center 枠=none 表示窓=[0.50390625, 0.725546875, 0.4912109375, 0.27119791666666665]
+- 幅と配置：86% right 枠=none 表示窓=[0.009765625, 0.051419270833333336, 0.484375, 0.21941406249999998]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
-- 余白：100px 結果を受け止め 次の動作や場所へ切り替える 次=05-recover:1
-- 感情・意図：発話相手へ求めること：Wide: LIZE pushes beast back with wind and KOH keeps injured guard behind shield.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
+- 余白：追加の純余白なし 動作または応酬を近く読む
+- 感情・意図：発話相手へ求めること：航の瞳に細い環の光が映る 盾で兵士を守った直後 初めて魔力に感応する。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
 - 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
-- リゼ／spoken／embedded
+- 航（心）／thought／independent
 ```
-今離れて！
+今…
 ```
 
-### 066 05-recover:1
+### 066 05-resonance:2
+
+- 絵・新しい理解：航だけの視界 獣の肩から魔力の爪へ細い光の筋が見える 未来や相手の心は見えない
+- 接続：05-resonance:1の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
+- 幅と配置：82% right 枠=thin 表示窓=[0.5078125, 0.051419270833333336, 0.4814453125, 0.21941406249999998]
+- 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
+- 余白：追加の純余白なし 動作または応酬を近く読む
+- 感情・意図：発話相手へ求めること：航だけの視界 獣の肩から魔力の爪へ細い光の筋が見える 未来や相手の心は見えない。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
+- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 航（心）／thought／independent
+```
+線が
+見える
+```
+
+### 067 05-resonance:3
+
+- 絵・新しい理解：盾の後ろに兵士を残し 航が自分の右手の剣で細い筋へ短く踏み込む 足から肩と刃へ動作がつながる
+- 接続：05-resonance:2の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
+- 幅と配置：92% left 枠=thin 表示窓=[0.009765625, 0.34674479166666666, 0.482421875, 0.30429687499999997]
+- 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
+- 余白：追加の純余白なし 動作または応酬を近く読む
+- 感情・意図：新しい動作または反応：盾の後ろに兵士を残し 航が自分の右手の剣で細い筋へ短く踏み込む 足から肩と刃へ動作がつながる。次の行動の理由として見せる。
+- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 発話なし
+
+### 068 05-defense:3
+
+- 絵・新しい理解：航の一閃が獣の爪の魔力を斬り裂く 太い斜めの軌跡と衝撃で獣を退ける 決め手は航 兵士は左盾の後ろで安全
+- 接続：05-resonance:3の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
+- 幅と配置：100% center 枠=none 表示窓=[0.509765625, 0.34609375, 0.4794921875, 0.30429687499999997]
+- 音：新しく鳴る ザンッ 刃が爪の魔力を断つ起点から斜めの軌跡へ 効果音は画像の爪や航の顔を隠さない
+- 余白：100px 結果を受け止め 次の動作や場所へ切り替える 次=05-resonance:5
+- 感情・意図：新しい動作または反応：航の一閃が獣の爪の魔力を斬り裂く 太い斜めの軌跡と衝撃で獣を退ける 決め手は航 兵士は左盾の後ろで安全。次の行動の理由として見せる。
+- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 発話なし
+
+### 069 05-resonance:5
+
+- 絵・新しい理解：援護を始めていたリゼが 航の一撃を見て剣を下げ驚く 風が決め手だったと見せない
+- 接続：05-defense:3の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
+- 幅と配置：94% left 枠=none 表示窓=[0.009765625, 0.72359375, 0.4833984375, 0.27119791666666665]
+- 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
+- 余白：追加の純余白なし 動作または応酬を近く読む
+- 感情・意図：発話相手へ求めること：援護を始めていたリゼが 航の一撃を見て剣を下げ驚く 風が決め手だったと見せない。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
+- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- リゼ／spoken／independent
+```
+今の…
+航が？
+```
+
+### 070 05-resonance:6
+
+- 絵・新しい理解：光が消えた自分の右手の剣を見る航 獣は逃げ 兵士は生きている 立ったまま驚きを受け止める
+- 接続：05-resonance:5の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
+- 幅と配置：86% right 枠=thin 表示窓=[0.509765625, 0.72359375, 0.4794921875, 0.27119791666666665]
+- 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
+- 余白：追加の純余白なし 動作または応酬を近く読む
+- 感情・意図：発話相手へ求めること：光が消えた自分の右手の剣を見る航 獣は逃げ 兵士は生きている 立ったまま驚きを受け止める。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
+- 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
+- 航（心）／thought／independent
+```
+俺が…？
+```
+
+### 071 05-recover:1
 
 - 絵・新しい理解：Wide wolf retreats physically into reeds on LEFT far bank edge, same dark lean animal with tail, visible direction and diminishing distance. LIZE sword down but alert, no creature dissolved or respawned.
-- 接続：05-defense:3の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
+- 接続：05-resonance:6の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
 - 幅と配置：82% right 枠=thin 表示窓=[0.0048828125, 0.725546875, 0.4892578125, 0.27119791666666665]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
@@ -950,7 +1016,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 追わないで
 ```
 
-### 067 05-recover:1-added-1
+### 072 05-recover:1-added-1
 
 - 絵・新しい理解：KOH begins one step after retreating wolf but stops when LIZE warns, chooses guard over pursuit and turns back.
 - 接続：05-recover:1の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
@@ -961,11 +1027,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
 - 発話なし
 
-### 068 05-recover:2
+### 073 05-recover:2
 
 - 絵・新しい理解：Medium LOCAL guard uses healthy LEFT hand to press cloth against wounded RIGHT forearm. Polearm rests upright against a tree during this pause. KOH left shield low and own sword resheathed stands beside him.
 - 接続：05-recover:1-added-1の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
-- 幅と配置：78% right 枠=thin 表示窓=[0.0048828125, 0.06196614583333333, 0.490234375, 0.2674609375]
+- 幅と配置：78% right 枠=none 表示窓=[0.0048828125, 0.06196614583333333, 0.490234375, 0.2674609375]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium LOCAL guard uses healthy LEFT hand to press cloth against wounded RIGHT forearm. Polearm rests upright against a tree during this pause. KOH left shield low and own sword resheathed stands beside him.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -975,11 +1041,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 歩けますか
 ```
 
-### 069 05-recover:2-added-1
+### 074 05-recover:2-added-1
 
 - 絵・新しい理解：LOCAL guard nods that he can walk, healthy LEFT hand presses RIGHT injury cloth, polearm leans beside tree during pause.
 - 接続：05-recover:2の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
-- 幅と配置：94% left 枠=none 表示窓=[0.5048828125, 0.3948828125, 0.490234375, 0.2685286458333333]
+- 幅と配置：94% left 枠=thin 表示窓=[0.5048828125, 0.3948828125, 0.490234375, 0.2685286458333333]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：LOCAL guard nods that he can walk, healthy LEFT hand presses RIGHT injury cloth, polearm leans beside tree during pause.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -990,7 +1056,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 歩ける
 ```
 
-### 070 05-recover:2-added-2
+### 075 05-recover:2-added-2
 
 - 絵・新しい理解：KOH resheathes his steel sword and gently supports the guard above the injured RIGHT forearm at his RIGHT upper arm with his free RIGHT hand. He does not press the wound. LEFT shield lowered. LIZE temporarily carries the polearm; before walking on, she returns it to the guard healthy LEFT hand.
 - 接続：05-recover:2-added-1の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
@@ -1001,7 +1067,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
 - 発話なし
 
-### 071 05-recover:3
+### 076 05-recover:3
 
 - 絵・新しい理解：Wide three walk back toward visible Milt gate at same river path. KOH matches LOCAL guard pace, LIZE walks outer side keeping watch. Dropped red-player sword remains behind in mud near reeds, not magically collected.
 - 接続：05-recover:2-added-2の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
@@ -1012,7 +1078,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
 - 発話なし
 
-### 072 05-recover:3-added-1
+### 077 05-recover:3-added-1
 
 - 絵・新しい理解：KOH and the injured guard pause on the clinic steps. SENA takes over the guard care from the doorway and sends KOH to get water nearby. The guard is no longer left in danger, and the next scene is the nearby safe square.
 - 接続：05-recover:3の結果を受ける。ミルト川沿い 航は左木盾 右鋼剣/左腰の鞘 赤髪の帰還者は別人 現地兵の負傷は右前腕 川の水は正常
@@ -1028,11 +1094,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 おいで
 ```
 
-### 073 06-returner:1
+### 078 06-returner:1
 
 - 絵・新しい理解：Wide: the red-haired PLAYER reappears in plain replacement clothes, weapon lost, KOH and AKARI nearby.
 - 接続：05-recover:3-added-1の結果を受ける。町の安全広場 帰還者は予備の服で再生成 失った剣は川辺の泥 灯里は弓と通信器 航の盾は借り物
-- 幅と配置：78% right 枠=none 表示窓=[0.5029296875, 0.06184895833333333, 0.4921875, 0.2669270833333333]
+- 幅と配置：78% right 枠=thin 表示窓=[0.5029296875, 0.06184895833333333, 0.4921875, 0.2669270833333333]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Wide: the red-haired PLAYER reappears in plain replacement clothes, weapon lost, KOH and AKARI nearby.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1043,7 +1109,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 でも剣がない
 ```
 
-### 074 06-returner:2
+### 079 06-returner:2
 
 - 絵・新しい理解：Close KOH listens with relief, sword sheathed and shield lowered.
 - 接続：06-returner:1の結果を受ける。町の安全広場 帰還者は予備の服で再生成 失った剣は川辺の泥 灯里は弓と通信器 航の盾は借り物
@@ -1058,7 +1124,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 戻れたんだ
 ```
 
-### 075 06-returner:3
+### 080 06-returner:3
 
 - 絵・新しい理解：AKARI in orange game jacket checks a readable blue HUD only for herself.
 - 接続：06-returner:2の結果を受ける。町の安全広場 帰還者は予備の服で再生成 失った剣は川辺の泥 灯里は弓と通信器 航の盾は借り物
@@ -1073,11 +1139,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 作り直すんだって
 ```
 
-### 076 06-returner:3-added-1
+### 081 06-returner:3-added-1
 
 - 絵・新しい理解：KOH looks at same regenerated red-haired player wrists, asks whether his earlier gear has returned.
 - 接続：06-returner:3の結果を受ける。町の安全広場 帰還者は予備の服で再生成 失った剣は川辺の泥 灯里は弓と通信器 航の盾は借り物
-- 幅と配置：82% right 枠=thin 表示窓=[0.0048828125, 0.3945833333333333, 0.48828125, 0.2701302083333333]
+- 幅と配置：82% right 枠=none 表示窓=[0.0048828125, 0.3945833333333333, 0.48828125, 0.2701302083333333]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH looks at same regenerated red-haired player wrists, asks whether his earlier gear has returned.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1088,11 +1154,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 一緒に戻る？
 ```
 
-### 077 06-supply:1
+### 082 06-supply:1
 
 - 絵・新しい理解：Medium local supply clerk points to a modest waiting bench and almost empty replacement-clothes shelf; gives plain spare boot pair to regenerated PLAYER in beige clothes, not his lost armor or sword.
 - 接続：06-returner:3-added-1の結果を受ける。町の安全広場 帰還者は予備の服で再生成 失った剣は川辺の泥 灯里は弓と通信器 航の盾は借り物
-- 幅と配置：92% left 枠=none 表示窓=[0.5029296875, 0.7298177083333334, 0.4921875, 0.2669270833333333]
+- 幅と配置：92% left 枠=thin 表示窓=[0.5029296875, 0.7298177083333334, 0.4921875, 0.2669270833333333]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium local supply clerk points to a modest waiting bench and almost empty replacement-clothes shelf; gives plain spare boot pair to regenerated PLAYER in beige clothes, not his lost armor or sword.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1103,7 +1169,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 用意がいる
 ```
 
-### 078 06-supply:1-added-1
+### 083 06-supply:1-added-1
 
 - 絵・新しい理解：Local supply clerk indicates waiting bench and almost empty spare shelf, makes finite supply consequence practical.
 - 接続：06-supply:1の結果を受ける。町の安全広場 帰還者は予備の服で再生成 失った剣は川辺の泥 灯里は弓と通信器 航の盾は借り物
@@ -1118,7 +1184,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 待ってもらうよ
 ```
 
-### 079 06-supply:2
+### 084 06-supply:2
 
 - 絵・新しい理解：Shallow regenerated red-haired PLAYER looks at empty hands and plain clothes, remembers his weapon still physically at riverbank.
 - 接続：06-supply:1-added-1の結果を受ける。町の安全広場 帰還者は予備の服で再生成 失った剣は川辺の泥 灯里は弓と通信器 航の盾は借り物
@@ -1133,11 +1199,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 落ちたままだ
 ```
 
-### 080 06-supply:2-added-1
+### 085 06-supply:2-added-1
 
 - 絵・新しい理解：Regenerated player looks toward river path outside gate then touches his plain replacement sleeve, hears own loss as practical task.
 - 接続：06-supply:2の結果を受ける。町の安全広場 帰還者は予備の服で再生成 失った剣は川辺の泥 灯里は弓と通信器 航の盾は借り物
-- 幅と配置：86% right 枠=thin 表示窓=[0.0048828125, 0.06220052083333333, 0.4892578125, 0.2685286458333333]
+- 幅と配置：86% right 枠=none 表示窓=[0.0048828125, 0.06220052083333333, 0.4892578125, 0.2685286458333333]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Regenerated player looks toward river path outside gate then touches his plain replacement sleeve, hears own loss as practical task.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1148,11 +1214,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 取りに行けないな
 ```
 
-### 081 06-supply:3
+### 086 06-supply:3
 
 - 絵・新しい理解：Medium AKARI lowers her own brass communicator, speaks to KOH with relief for person in Japan, her wooden bow remains on back.
 - 接続：06-supply:2-added-1の結果を受ける。町の安全広場 帰還者は予備の服で再生成 失った剣は川辺の泥 灯里は弓と通信器 航の盾は借り物
-- 幅と配置：82% right 枠=none 表示窓=[0.50390625, 0.3945442708333333, 0.4912109375, 0.2610546875]
+- 幅と配置：82% right 枠=thin 表示窓=[0.50390625, 0.3945442708333333, 0.4912109375, 0.2610546875]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：230px 結果を受け止め 次の動作や場所へ切り替える 次=07-local:1
 - 感情・意図：発話相手へ求めること：Medium AKARI lowers her own brass communicator, speaks to KOH with relief for person in Japan, her wooden bow remains on back.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1163,7 +1229,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 無事だって
 ```
 
-### 082 07-local:1
+### 087 07-local:1
 
 - 絵・新しい理解：Medium KOH looks toward the LOCAL guard, worried.
 - 接続：06-supply:3の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
@@ -1179,7 +1245,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 治る？
 ```
 
-### 083 07-local:2
+### 088 07-local:2
 
 - 絵・新しい理解：SENA calm close-up, one clean bandage in hands.
 - 接続：07-local:1の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
@@ -1195,11 +1261,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 ないんだ
 ```
 
-### 084 07-local:2-added-1
+### 089 07-local:2-added-1
 
 - 絵・新しい理解：KOH looks at SAME guard right forearm and asks about tomorrow rather than revival again.
 - 接続：07-local:2の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
-- 幅と配置：94% left 枠=thin 表示窓=[0.0048828125, 0.72234375, 0.4892578125, 0.2744010416666667]
+- 幅と配置：94% left 枠=none 表示窓=[0.0048828125, 0.72234375, 0.4892578125, 0.2744010416666667]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH looks at SAME guard right forearm and asks about tomorrow rather than revival again.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1210,11 +1276,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 どうするんですか
 ```
 
-### 085 07-local:2-added-2
+### 090 07-local:2-added-2
 
 - 絵・新しい理解：LOCAL guard rests bandaged RIGHT hand on lap, accepts actual recovery time.
 - 接続：07-local:2-added-1の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
-- 幅と配置：86% right 枠=none 表示窓=[0.501953125, 0.06243489583333334, 0.4931640625, 0.26959635416666666]
+- 幅と配置：86% right 枠=thin 表示窓=[0.501953125, 0.06243489583333334, 0.4931640625, 0.26959635416666666]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：LOCAL guard rests bandaged RIGHT hand on lap, accepts actual recovery time.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1225,7 +1291,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 休むしかないな
 ```
 
-### 086 07-local:3
+### 091 07-local:3
 
 - 絵・新しい理解：LIZE tightens bandage, clear difference to player; tired expression.
 - 接続：07-local:2-added-2の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
@@ -1240,7 +1306,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 巡回は代わるから
 ```
 
-### 087 07-clinic:1
+### 092 07-clinic:1
 
 - 絵・新しい理解：Shallow LIZE moves ONE patrol token from tomorrow active row to a reserve peg beside the clinic board. No readable unexplained bureaucratic chart, no giant UI, no promise to heal instantly.
 - 接続：07-local:3の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
@@ -1251,11 +1317,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
 - 発話なし
 
-### 088 07-clinic:2
+### 093 07-clinic:2
 
 - 絵・新しい理解：Medium SENA closes ONE wooden medicine box gently beside seated LOCAL guard, addresses KOH with practical thanks. Guard rests right bandaged arm on lap, same gray hair and goatee.
 - 接続：07-clinic:1の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
-- 幅と配置：78% right 枠=thin 表示窓=[0.0048828125, 0.3971354166666667, 0.4873046875, 0.2669270833333333]
+- 幅と配置：78% right 枠=none 表示窓=[0.0048828125, 0.3971354166666667, 0.4873046875, 0.2669270833333333]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium SENA closes ONE wooden medicine box gently beside seated LOCAL guard, addresses KOH with practical thanks. Guard rests right bandaged arm on lap, same gray hair and goatee.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1267,18 +1333,18 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 助かった
 ```
 
-### 089 07-clinic:2-added-1
+### 094 07-clinic:2-added-1
 
 - 絵・新しい理解：KOH takes guard empty water cup to clinic washing basin, performs small useful post-rescue task; SENA begins arranging tomorrow medicine, no new medical dose detail.
 - 接続：07-clinic:2の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
-- 幅と配置：94% left 枠=none 表示窓=[0.501953125, 0.7292838541666666, 0.4931640625, 0.2674609375]
+- 幅と配置：94% left 枠=thin 表示窓=[0.501953125, 0.7292838541666666, 0.4931640625, 0.2674609375]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：140px 結果を受け止め 次の動作や場所へ切り替える 次=07-promise:1
 - 感情・意図：新しい動作または反応：KOH takes guard empty water cup to clinic washing basin, performs small useful post-rescue task; SENA begins arranging tomorrow medicine, no new medical dose detail.。次の行動の理由として見せる。
 - 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
 - 発話なし
 
-### 090 07-promise:1
+### 095 07-promise:1
 
 - 絵・新しい理解：Close KOH uses plain cloth to wipe mud from ONE wooden shield rim on bench, shield detached from LEFT arm, his own steel sword stays sheathed at belt. No magically repaired cracks.
 - 接続：07-clinic:2-added-1の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
@@ -1289,7 +1355,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 - 声の輪郭：白地は人物・尾なしで話者と順を接続。絵の通常声は細い楕円、制止は太い縁、心の声は点で区別。無彩色。
 - 発話なし
 
-### 091 07-promise:1-added-1
+### 096 07-promise:1-added-1
 
 - 絵・新しい理解：航は借りた盾の縁の小さな欠けを持ち主リゼへ見せる 木は自動で修復しない
 - 接続：07-promise:1の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
@@ -1304,11 +1370,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 少し欠けた
 ```
 
-### 092 07-promise:1-added-2
+### 097 07-promise:1-added-2
 
 - 絵・新しい理解：LIZE checks rim with empty fingers, relieved rather than scolds; same shield on bench.
 - 接続：07-promise:1-added-1の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
-- 幅と配置：92% left 枠=thin 表示窓=[0.0048828125, 0.06208333333333334, 0.490234375, 0.2679947916666667]
+- 幅と配置：92% left 枠=none 表示窓=[0.0048828125, 0.06208333333333334, 0.490234375, 0.2679947916666667]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：LIZE checks rim with empty fingers, relieved rather than scolds; same shield on bench.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1320,11 +1386,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 ここは直せる
 ```
 
-### 093 07-promise:2
+### 098 07-promise:2
 
 - 絵・新しい理解：Medium KOH looks up from cleaned shield toward LIZE, asks rather than silently claims borrowed property.
 - 接続：07-promise:1-added-2の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
-- 幅と配置：78% right 枠=none 表示窓=[0.5048828125, 0.3952994791666667, 0.490234375, 0.2674609375]
+- 幅と配置：78% right 枠=thin 表示窓=[0.5048828125, 0.3952994791666667, 0.490234375, 0.2674609375]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Medium KOH looks up from cleaned shield toward LIZE, asks rather than silently claims borrowed property.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1335,7 +1401,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 借りていい？
 ```
 
-### 094 07-promise:3
+### 099 07-promise:3
 
 - 絵・新しい理解：Wide LIZE points toward spare shield shelf right above the same bench. KOH places ONE cleaned shield there and removes hand, now shieldless.
 - 接続：07-promise:2の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
@@ -1351,7 +1417,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 練習しよう
 ```
 
-### 095 08-invitation:1
+### 100 08-invitation:1
 
 - 絵・新しい理解：REI in silver armor and deep red short cloak approaches KOH, sword sheathed, friendly.
 - 接続：07-promise:3の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
@@ -1366,11 +1432,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 よく出せたな
 ```
 
-### 096 08-invitation:2
+### 101 08-invitation:2
 
 - 絵・新しい理解：Close KOH recognizes his admired player, startled but delighted. KOH hands empty, NO shield, own steel sword remains sheathed.
 - 接続：08-invitation:1の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
-- 幅と配置：82% right 枠=thin 表示窓=[0.0048828125, 0.7282161458333334, 0.490234375, 0.2685286458333333]
+- 幅と配置：82% right 枠=none 表示窓=[0.0048828125, 0.7282161458333334, 0.490234375, 0.2685286458333333]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：Close KOH recognizes his admired player, startled but delighted. KOH hands empty, NO shield, own steel sword remains sheathed.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1380,11 +1446,11 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 ……レイさん？
 ```
 
-### 097 08-invitation:2-added-1
+### 102 08-invitation:2-added-1
 
 - 絵・新しい理解：KOH straightens posture, recognizes REI from familiar raid videos, now asks as nervous youth, hands empty no shield.
 - 接続：08-invitation:2の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
-- 幅と配置：92% left 枠=none 表示窓=[0.50390625, 0.06641927083333332, 0.4912109375, 0.2877473958333333]
+- 幅と配置：92% left 枠=thin 表示窓=[0.50390625, 0.06641927083333332, 0.4912109375, 0.2877473958333333]
 - 音：効果音を描かない 聞き手の表情と声または小さい動作の理解を優先 背景の音を追加しない
 - 余白：追加の純余白なし 動作または応酬を近く読む
 - 感情・意図：発話相手へ求めること：KOH straightens posture, recognizes REI from familiar raid videos, now asks as nervous youth, hands empty no shield.。言い切れない本音は目・掌・姿勢に残し 次の返答や行動を読む。
@@ -1395,7 +1461,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 見てました
 ```
 
-### 098 08-invitation:2-added-2
+### 103 08-invitation:2-added-2
 
 - 絵・新しい理解：REI smiles and gestures toward real training yard instead of superiority or secret chosen-one favor.
 - 接続：08-invitation:2-added-1の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
@@ -1410,7 +1476,7 @@ webtoonスキルのname-preview、episode-length、approved-example、scroll-pac
 一緒に練習しよう
 ```
 
-### 099 08-invitation:3
+### 104 08-invitation:3
 
 - 絵・新しい理解：Large REI offers an open empty hand, a genuine invitation.
 - 接続：08-invitation:2-added-2の結果を受ける。町の診療所から訓練場へ徒歩 セナは現地兵の右前腕を治療 航の右掌の傷は残る 返却後は盾なし 自分の剣は左腰に納刀
