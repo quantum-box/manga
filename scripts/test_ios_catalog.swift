@@ -98,6 +98,22 @@ struct CatalogTests {
                         "External, other-title and unknown links must not close the reader")
         }
         print("PASS: all Tower Forge list links route natively without list HTML; unrelated links are rejected")
+        let regalia = titles.first { $0.id == "star-ring-regalia" }!
+        let third = regalia.episodes.first { $0.number == 3 }!
+        let thirdReader = Catalog.resource(third.reader, resourceURL: bundled)!
+        let thirdHTML = try String(contentsOf: thirdReader, encoding: .utf8)
+        try require(thirdHTML.contains("href=\"../index.html\""), "Exercise the actual Regalia chapter-list footer")
+        let regaliaList = URL(string: "../index.html", relativeTo: thirdReader)!.absoluteURL
+        try require(!manager.fileExists(atPath: regaliaList.path), "Native list route must work without HTML")
+        for root in [bundled, bundled.standardizedFileURL] {
+            try require(regalia.linksToChapterList(to: regaliaList, resourceURL: root),
+                        "Regalia's bundled index footer must return to the native title list")
+        }
+        try require(!tower.linksToChapterList(to: regaliaList, resourceURL: bundled),
+                    "An index alias from another series must not close this reader")
+        try require(!regalia.linksToChapterList(to: thirdReader, resourceURL: bundled),
+                    "The current reader's index.html must remain an episode link")
+        print("PASS: Regalia's index footer routes to its native title list without bundled HTML")
         for title in titles {
             try require(Catalog.resource(title.image, resourceURL: bundled) != nil, "Missing bundled cover: \(title.id)")
             for episode in title.episodes {

@@ -34,9 +34,11 @@ struct MangaTitle: Identifiable, Hashable, Codable {
         let destination = url.resolvingSymlinksInPath().standardizedFileURL.path
         // This is a native route back to the title's list, not an HTML resource to load.
         return episodes.contains { episode in
-            guard let reader = Catalog.resource(episode.reader, resourceURL: resourceURL),
-                  let list = URL(string: "../chapters.html", relativeTo: reader)?.absoluteURL else { return false }
-            return list.resolvingSymlinksInPath().standardizedFileURL.path == destination
+            guard let reader = Catalog.resource(episode.reader, resourceURL: resourceURL) else { return false }
+            return ["../chapters.html", "../index.html"].contains { route in
+                guard let list = URL(string: route, relativeTo: reader)?.absoluteURL else { return false }
+                return list.resolvingSymlinksInPath().standardizedFileURL.path == destination
+            }
         }
     }
 }

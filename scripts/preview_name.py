@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+import tempfile
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,6 +25,13 @@ def validate_destination(manifest, pr):
     if not manifest['episodeID'].startswith('name-'):
         raise ValueError('Only name preview IDs can be published here')
     return expected
+
+
+def validated_payload(folder, manifest):
+    payload = (folder / 'episode.json').read_bytes()
+    if hashlib.sha256(payload).hexdigest() != manifest.get('episodeSHA256'):
+        raise ValueError('Episode descriptor changed after export; prepare it again')
+    return payload
 
 
 def prepare(args):
@@ -53,10 +61,12 @@ def prepare(args):
     render = json.loads((folder / 'render.json').read_text())
     payload = {'title': plan['title'] + ' · ネーム', 'subtitle': '構成確認用',
                'cover': render['cover'], 'blocks': render['blocks']}
-    (folder / 'episode.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n')
+    descriptor = (json.dumps(payload, ensure_ascii=False, indent=2) + '\n').encode()
+    (folder / 'episode.json').write_bytes(descriptor)
     names = [b['src'] for b in render['blocks']] + [render['cover']]
     manifest = {'baseURL': preview_url(args.pr), 'pullRequest': args.pr, 'episodeID': episode_id,
                 'source': str(relative), 'sourceSHA256': digest,
+                'episodeSHA256': hashlib.sha256(descriptor).hexdigest(),
                 'sourceCommit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
                 'panels': sum(b['type'] == 'panel' for b in plan['beats']),
                 'cssHeight390': render['cssHeight'], 'pixelWidth': render['pixelWidth'],
@@ -69,19 +79,24 @@ def publish(args):
     folder = args.folder.resolve()
     manifest = json.loads((folder / 'preview-manifest.json').read_text())
     base = validate_destination(manifest, args.pr)
+    descriptor = validated_payload(folder, manifest)
     source = ROOT / manifest['source']
     if hashlib.sha256(source.read_bytes()).hexdigest() != manifest['sourceSHA256']:
         raise ValueError('Name changed after export; prepare it again')
     for name, expected in manifest['assets'].items():
         if hashlib.sha256((folder / name).read_bytes()).hexdigest() != expected:
             raise ValueError(f'Export changed: {name}')
-    subprocess.run([sys.executable, str(ROOT / 'scripts/publish_episode.py'), base,
-                    manifest['episodeID'], str(folder / 'episode.json')], check=True)
+    # Publish the validated snapshot, even if the export file changes concurrently.
+    with tempfile.NamedTemporaryFile(dir=folder, suffix='.json') as frozen:
+        frozen.write(descriptor)
+        frozen.flush()
+        subprocess.run([sys.executable, str(ROOT / 'scripts/publish_episode.py'), base,
+                        manifest['episodeID'], frozen.name], check=True)
     # Read back every delivered byte, including the cover and the last page.
     def get(path):
         with urllib.request.urlopen(base + path, timeout=60) as response:
             return response.read()
-    payload = json.loads((folder / 'episode.json').read_text())
+    payload = json.loads(descriptor)
     if json.loads(get('/api/episodes/' + manifest['episodeID'])) != payload:
         raise ValueError('Delivered episode does not match the export')
     for name, expected in manifest['assets'].items():
