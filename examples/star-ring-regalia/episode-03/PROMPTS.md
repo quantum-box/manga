@@ -90,6 +90,11 @@ Edit only Koh's belt equipment on this finished comic sheet. Keep exactly the sa
 
 ## f05
 
+### 右掌の傷と左掌の銅貨の部分編集
+
+Edit ONLY the MIDDLE LEFT close-up cell on this six-cell 1024x1536 comic sheet. The two palms have their props swapped by mistake. Koh faces the viewer here: his ANATOMICAL RIGHT PALM is on viewer LEFT and must have the small superficial abrasion; his ANATOMICAL LEFT PALM is on viewer RIGHT and must hold exactly TWO copper coins and have clean skin. Move the TWO coins from viewer LEFT palm to viewer RIGHT palm. Move the little red abrasion from viewer RIGHT palm to viewer LEFT PALM CENTER, away from the wrist. Both wrists and backs of hands stay healthy. Keep BOTH hand poses and finger anatomy, blue tunic, belt, coin pouch, the sword sheathed at anatomical left hip, and all other objects and all other FIVE cells exactly as provided. Do not mirror the image or move any other part. Japan TOP RIGHT palm stays uninjured. No text or balloons added. This is a minimal prop placement and hand injury continuity correction.
+
+
 採用画像: `art/f05.png`
 
 Use case: sketch-to-render. Asset type: finished full-color fantasy manga comic master sheet for 星環のレガリア episode 3.
