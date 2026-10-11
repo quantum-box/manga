@@ -6,8 +6,12 @@ root=p.parents[4]
 subprocess.run([sys.executable,str(root/'skills/webtoon/scripts/build_name_preview.py'),str(p/'plan.json'),'--output',str(p/'index.html'),'--force'],check=True)
 h=(p/'index.html').read_text()
 plan=json.loads((p/'plan.json').read_text())
-shouts={'03-patrol:3-added-1-voice','05-defense:1-voice'}
+shouts={'03-patrol:3-added-1-voice','05-defense:1-voice','01-spar:1-voice'}
 tail_overrides={
+ '01-choice:6-voice':'down-right','01-spar:1-voice':'down-left','01-spar:4-voice':'down-right',
+ '01-spar:5-voice':'down-left','02-flicker:1-voice':'down-left','02-flicker:5-voice':'down-left',
+ '02-star:1-voice':'down-left','02-star:3-voice':'down-left','02-star:4-voice':'down-left',
+ '02-star:5-voice':'down-left','02-star:6-voice':'down-left',
  '00-yard:2-voice':'down-right','01-choice:5-voice':'down-right','01-lesson:2-voice':'down-left',
  '02-retry:2-added-2-voice':'down-right','02-retry:3-voice':'down-left','02-rest:2-voice':'down-right',
  '02-change:2-voice':'down-right','03-patrol:1-voice':'down-right','05-recover:3-added-1-voice':'down-right',

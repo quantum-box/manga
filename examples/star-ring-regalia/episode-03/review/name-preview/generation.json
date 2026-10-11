@@ -34,24 +34,6 @@
       "pixelsEditedAfterGeneration": false
     },
     {
-      "path": "rough/sheet-04.png",
-      "sha256": "61571a45187dea3b126e55914203276ffbc0c4e1ee53d53317d402fe7eb34d89",
-      "sourceCommit": "bf149ef8c0a0b3f5de0233e54d307e598794d967",
-      "pixelsEditedAfterGeneration": false
-    },
-    {
-      "path": "rough/sheet-05.png",
-      "sha256": "f24c11289e0ac3434ae94edcda4f5eb0b5a17a71e0d23276c1ffa5cdfd0aa35f",
-      "sourceCommit": "bf149ef8c0a0b3f5de0233e54d307e598794d967",
-      "pixelsEditedAfterGeneration": false
-    },
-    {
-      "path": "rough/sheet-06.png",
-      "sha256": "5e5a7fb836a9c618aea5fb91ccc84ab238a91b41786d279286356e7c52697260",
-      "sourceCommit": "bf149ef8c0a0b3f5de0233e54d307e598794d967",
-      "pixelsEditedAfterGeneration": false
-    },
-    {
       "path": "rough/sheet-07.png",
       "sha256": "e6e25137cf142cee70bfba7961ae1d5667f2c60f2baaa69bb91f93a4acf1e662",
       "sourceCommit": "bf149ef8c0a0b3f5de0233e54d307e598794d967",
@@ -122,6 +104,24 @@
       "sha256": "33f396cd97665174bf375f16d725ef49fe5fc14d36614d63cf25c069b4b1118b",
       "sourceCommit": null,
       "pixelsEditedAfterGeneration": false
+    },
+    {
+      "path": "rough/training-motion.png",
+      "sha256": "9f2f1012dcf54ef8158ca199d73b00f124e8ad0d7c7d543a76c4a7adb94eb5f5",
+      "sourceCommit": null,
+      "pixelsEditedAfterGeneration": false
+    },
+    {
+      "path": "rough/training-flicker.png",
+      "sha256": "8d958d92ae29c47c0796f0c25c0964825c317d81706326ea5a6283c7e6424991",
+      "sourceCommit": null,
+      "pixelsEditedAfterGeneration": false
+    },
+    {
+      "path": "rough/star-question.png",
+      "sha256": "9ea387dbc948accb356400e75c8fbf0289b0b50d76293968ed05f00b44179792",
+      "sourceCommit": null,
+      "pixelsEditedAfterGeneration": false
     }
   ],
   "newCalls": [
@@ -150,7 +150,8 @@
     }
   ],
   "revisionNotes": [
-    "2026-10-11 user requested special protagonist with some overwhelming combat victories; six new resonance moments replace the former wind-finisher. Actual source cell bounds differ from requested even grid and are preserved through display crops."
+    "2026-10-11 user requested special protagonist with some overwhelming combat victories; six new resonance moments replace the former wind-finisher. Actual source cell bounds differ from requested even grid and are preserved through display crops.",
+    "2026-10-11 user requested more movement, early protagonist specialness, and star-ring mention. Replaced static training with six physical exchanges and six resonance moments, added six star-ring moments, shortened repeat exposition; 85 unique panels."
   ],
   "resonanceGeneration": {
     "promptFile": "PROMPT-resonance.md",
@@ -160,5 +161,24 @@
     ],
     "output": "rough/resonance.png",
     "builtinOutput": "exec-2e407812-b246-4c7d-ad0c-4dbc1ced3b7d.png"
+  },
+  "motionGeneration": {
+    "promptFile": "PROMPT-motion.md",
+    "method": "built_in_image_gen",
+    "reference": "rough/lesson-choice.png",
+    "outputs": [
+      {
+        "path": "rough/training-motion.png",
+        "builtinOutput": "exec-f3a7090a-3920-4c76-9247-4622b6b8ff47.png"
+      },
+      {
+        "path": "rough/training-flicker.png",
+        "builtinOutput": "exec-3e999e4c-0830-467b-8e2e-3a2a831aa3ac.png"
+      },
+      {
+        "path": "rough/star-question.png",
+        "builtinOutput": "exec-89f8408f-3b87-42be-9d58-f6bae66fd975.png"
+      }
+    ]
   }
 }
