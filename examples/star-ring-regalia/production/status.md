@@ -12,6 +12,8 @@
 
 承認元c541f933と[採用ネームのPR preview](https://pr94--manga-server.txcloud.app/?episode=name-star-ring-regalia-episode-03-0d1453d6a68d)のSHA-256はadoption.jsonに固定。旧完成版の本文・画像・配布物を最新へ置換し、承認ネームと最新原画の編集元は制作資料として残す。本作画・ローカル確認は完了、PR #94のCI・レビュー・マージ・サーバー公開確認は進行中。
 
+[生成セリフ入りのPR preview](https://pr94--manga-server.txcloud.app/?episode=star-ring-regalia-episode-03-r76fb75a031be)へ配信。本文JSON・全25画像の読み戻し一致と390/360pxの表示を確認済み。最新コミットのCIとmain取り込み・本番公開は未完了。
+
 正本：[本文](../episode-03/index.html)、[検証](../episode-03/validation.json)、[生成指示](../episode-03/PROMPTS.md)、[原画台帳](../episode-03/production/final-from-name/state.json)。
 
 ユーザー指定：200話以上の連載。全体240話は仮構成。2026年10月10日の最新依頼は、最新のWebtoonスキルで第1〜3話を順に作り直すこと。
