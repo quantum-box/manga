@@ -2,10 +2,14 @@
 from pathlib import Path
 import base64
 import hashlib
+import html
 import json
 import re
 import shutil
 import struct
+import runpy
+
+offline_encoding = runpy.run_path(str(Path(__file__).with_name('png-storage.py')))['offline_encoding']
 
 prod = Path(__file__).resolve().parent
 ep = prod.parents[1]
@@ -40,6 +44,21 @@ for i, source in enumerate(sources):
                        'edits': a.get('edits', []),
                        'builtinOutput': a['builtinOutput'], 'pixelsEditedAfterGeneration': False})
 
+lettering = json.loads((prod / 'lettering/state.json').read_text())
+voices = {}
+for sheet in lettering['sheets']:
+    if not sheet.get('sha256'):
+        raise SystemExit(f'Lettering has not been generated: {sheet["id"]}')
+    raw = (prod / 'lettering' / sheet['destination']).read_bytes()
+    if hashlib.sha256(raw).hexdigest() != sheet['sha256']:
+        raise SystemExit(f'Lettering original changed: {sheet["id"]}')
+    asset_id = f'letter-{sheet["id"]}'
+    external[asset_id] = f'art/{sheet["id"]}.png'
+    embedded[asset_id] = 'data:image/png;base64,' + base64.b64encode(offline_encoding(raw)).decode()
+    for voice in sheet['voices']:
+        voices[voice['id']] = {**voice, 'asset': asset_id}
+    provenance.append({**{k: sheet[k] for k in ('id', 'sha256', 'prompt', 'builtinOutput', 'pixelsEditedAfterGeneration')}, 'edits': sheet.get('edits', [])})
+
 h = approved.decode()
 h = h.replace(' — ネーム確認用', '').replace(' ネーム確認用', '')
 h = re.sub(r'<header class="draft-bar">.*?</header>',
@@ -51,11 +70,47 @@ h = h.replace('</head>', '<meta name="manga-title-id" content="star-ring-regalia
 h = h.replace('#preview-flow { filter: grayscale(1); }', '#preview-flow { filter: none; }')
 h = h.replace('preview-flow', 'episode-body')
 h = h.replace('</style>', '\n.episode-heading{padding:42px 22px 50px}.episode-heading p{font-size:15px;letter-spacing:.08em;margin:0}.episode-heading h1{font-size:27px;line-height:1.5;margin:10px 0}\n</style>', 1)
-# The rough painted this sound; finished art deliberately omits letters.
-pattern = r'(<figure[^>]*data-beat-id="03-listen:1".*?)(</figure>)'
-h, count = re.subn(pattern, r'\1<span class="sfx" aria-label="草の音 ガサ…" style="--x:72%;--y:65%">ガサ…</span>\2', h, flags=re.S)
-if count != 1:
-    raise SystemExit('Rustle source must occur once')
+# All lettering is image_gen artwork. HTML contains accessibility metadata only.
+def generated_voice(match):
+    opening, body = match.groups()
+    beat_id = re.search(r'data-beat-id="([^"]+)"', opening)[1]
+    voice = voices[beat_id]
+    x, y, width, height = voice['cropPixels']
+    position = re.search(r'<div class="floating-copy" style="([^"]+)"', body)[1]
+    position = re.sub(r'top:[\d.]+%;', 'top:50%;', position)
+    display_width = voice['widthAt390'] / 390 * 100
+    style = (f'--crop-ratio:{width / height};--crop-image-width:{1024 / width * 100}%;'
+             f'--crop-left:{-x / width * 100}%;--crop-top:{-y / height * 100}%;')
+    alt = html.escape(voice['speaker'] + '「' + voice['text'].replace('\n', ' ') + '」', quote=True)
+    return (opening + f'<div class="floating-copy" style="{position}width:{display_width:.6f}cqw;max-width:none;">'
+            f'<div class="voice-art generated-lettering" style="{style}"><div class="crop-window">'
+            f'<img data-asset="{voice["asset"]}" alt="{alt}" width="1024" height="1536">'
+            '</div></div></div></section>')
+h, count = re.subn(r'(<section class="text-beat voice[^>]+>)(.*?)</section>', generated_voice, h, flags=re.S)
+if count != 60:
+    raise SystemExit(f'Expected 60 generated voice regions, got {count}')
+h, count = re.subn(r'<div class="dialogue [^>]+>.*?</div></div>', '', h, flags=re.S)
+if count != 3:
+    raise SystemExit(f'Expected 3 embedded generated dialogues, got {count}')
+h = re.sub(r'<span class="sfx"[^>]*>.*?</span>', '', h, flags=re.S)
+for beat in plan['beats']:
+    if beat['type'] != 'panel':
+        continue
+    text = ' '.join(d['speaker'] + '「' + d['text'].replace('\n', ' ') + '」' for d in beat.get('dialogue', []))
+    sound = ' '.join(s['text'] for s in beat.get('sounds', []))
+    if beat['id'] == '03-listen:1':
+        sound = 'ガサ…'
+    if text or sound:
+        pattern = r'(<figure[^>]*data-beat-id="' + re.escape(beat['id']) + r'".*?<img[^>]*alt=")([^"]*)(")'
+        extra = html.escape(' ' + text + (' 効果音 ' + sound if sound else ''), quote=True)
+        h, count = re.subn(pattern, lambda m: m[1] + m[2] + extra + m[3], h, flags=re.S)
+        if count != 1:
+            raise SystemExit(f'Embedded text must have one accessible panel: {beat["id"]}')
+h = h.replace('</style>', '''
+.generated-lettering{position:relative;width:100%;display:block}
+.generated-lettering .crop-window{position:relative;width:100%;overflow:hidden;aspect-ratio:var(--crop-ratio)}
+.generated-lettering img{position:absolute;display:block;width:var(--crop-image-width);max-width:none;height:auto;left:var(--crop-left);top:var(--crop-top)}
+</style>''', 1)
 h = h.replace('id="name-preview-assets"', 'id="artwork-sources"').replace('getElementById("name-preview-assets")', 'getElementById("artwork-sources")')
 asset_pattern = r'(<script type="application/json" id="artwork-sources">).*?(</script>)'
 def write_reader(path, mapping):
@@ -68,4 +123,4 @@ layout = [{**b, 'image': external[f'asset-{sources.index(b["image"])}']} for b i
 (ep / 'layout.json').write_text(json.dumps(layout, ensure_ascii=False, indent=2) + '\n')
 (prod / 'source-crops.json').write_text(json.dumps(layout, ensure_ascii=False, indent=2) + '\n')
 (prod / 'art-provenance.json').write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + '\n')
-print(f'Built {len(panels)} panels / {len(external)} masters; adopted voices and spacing preserved')
+print(f'Built {len(panels)} panels / {len(external)} originals; 63 generated dialogues, adopted spacing preserved')

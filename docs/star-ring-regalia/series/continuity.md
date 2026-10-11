@@ -1,6 +1,6 @@
 # 伏線と連続性の台帳
 
-第3話「星環の剣筋」は2026-10-11の「うんok」で85コマのネームを採用し、完成カラー原画20枚を統合済み。390 CSS pxの本編42,932px、純余白を除いた内容37,324px。390/360pxで全編を確認し、CI・PR #94・公開差し替えを進行中。以下の「初出」「回収」は計画上の位置。実際の公開状態は[制作台帳](../../../examples/star-ring-regalia/production/status.md)と各話のepisode.json・validation.jsonを参照する。設定変更時は[世界観](world.md)、[人物](characters.md)、[ロードマップ](roadmap.md)、[導入設計](opening-arc.md)へ同時に反映する。
+第3話「星環の剣筋」は2026-10-11の「うんok」で85コマのネームを採用し、完成カラー原画20枚と生成吹き出し15枚・全63発話を統合済み。390 CSS pxの本編42,932px、純余白を除いた内容37,254px。390/360pxで全編を確認し、CI・PR #94・公開差し替えを進行中。以下の「初出」「回収」は計画上の位置。実際の公開状態は[制作台帳](../../../examples/star-ring-regalia/production/status.md)と各話のepisode.json・validation.jsonを参照する。設定変更時は[世界観](world.md)、[人物](characters.md)、[ロードマップ](roadmap.md)、[導入設計](opening-arc.md)へ同時に反映する。
 
 ## 伏線の計画
 

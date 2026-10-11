@@ -1,6 +1,6 @@
 # 第3話「星環の剣筋」本作画指示
 
-採用された85コマのネームから組み込み image_gen で清書。縦書きの吹き出し・コマ幅・順序を保持し、文字はHTMLで組版。生成PNGの画素は加工せず保存。
+採用された85コマのネームから組み込み image_gen で清書。縦書きの吹き出し・コマ幅・順序を保持。63発話と効果音も組み込みimage_genで生成し、生成PNGの画素は加工せず保存。以下の初回清書指示は実行時の記録であり、続く文字生成・修正指示までが最新版の制作経路。
 
 ## f01
 
@@ -419,3 +419,427 @@ Visible approved cells to preserve (normalized crops, pixel positions unchanged)
 Continuity override: when KOH right STEEL sword is drawn the brown LEFT HIP SCABBARD IS EMPTY, with no second sword handle in it. No second sword or additional shield. No injuries on KOH face, BACK of hand, wrist or arms. Only RIGHT PALM abrasion may show when the actual palm faces camera. Guard wound is RIGHT forearm.
 
 IMPORTANT: Image1 has only THREE drawn cells (top left, top right, middle right). Keep MIDDLE LEFT and BOTH BOTTOM cells completely WHITE/EMPTY. Do not invent scenes to fill them. These are not displayed. REI warm friendly genuine invitation, silver hair, crimson cloak, silver armor, NO ominous grin or golden chosen-one light. KOH hands EMPTY and NO shield after its return.
+
+## 生成セリフと効果音の実行指示
+
+15枚の白地の声・5枚の場面文字・8回の輪郭／表示窓／尾の補修。各入力、生成元、採用SHA-256はlettering/state.jsonと原画台帳で管理。
+
+### f04-lettering
+
+実行指示: `production/final-from-name/lettering/prompts/f04-lettering.txt`
+
+Edit the attached finished COLOR manga master, preserving 1024x1536 size, exact panel borders and their geometry, every existing person, face, expression, outfit, hand, sword, scabbard, shield, injury and background. Only add the specified Japanese lettering directly as part of the generated artwork. Do not repaint other panels or change the character pose. Do not add new people or more weapons or injuries. Text must be fully readable in a 360px smartphone reader with individual cell crops. Use exact upright vertical Japanese for spoken dialogue, glyphs top-to-bottom, columns right-to-left. Font: clean bold Japanese manga gothic, around 31-34 native px per glyph for dialogue (scene cell displays about 330px from 500px native width). White clean speech balloon fill, dark thin outline, padded text, one tail aimed to the correct mouth. NO speaker labels, NO quote marks, NO commas/full stops, NO other words. Sound effects are ink in the scene, not speech balloons. All unspecified panels remain text-free. Keep all added ink safely WITHIN the specified crop windows.
+Only MIDDLE RIGHT decisive slash cell, adopted visible crop x522..1013,y532..999: add exact sound "ザンッ" as bold, dynamic Japanese manga brush lettering around native x585..750,y785..870, tilted following KOH's sword slash. Each glyph about 55px, crisp black with a thin white edge to stay readable over the colored light. Sound comes from KOH's steel sword cutting across the beast's magic claw; it is NOT a LIZE finishing attack. Preserve the broad gold-white diagonal slash, all faces, sword, left shield, guard RIGHT-arm wound. Do not add scratches to KOH's face or hands; do not add another sheathed sword when drawn. Other five cells remain unchanged and text-free.
+
+### f12-lettering
+
+実行指示: `production/final-from-name/lettering/prompts/f12-lettering.txt`
+
+Edit the attached finished COLOR manga master, preserving 1024x1536 size, exact panel borders and their geometry, every existing person, face, expression, outfit, hand, sword, scabbard, shield, injury and background. Only add the specified Japanese lettering directly as part of the generated artwork. Do not repaint other panels or change the character pose. Do not add new people or more weapons or injuries. Text must be fully readable in a 360px smartphone reader with individual cell crops. Use exact upright vertical Japanese for spoken dialogue, glyphs top-to-bottom, columns right-to-left. Font: clean bold Japanese manga gothic, around 31-34 native px per glyph for dialogue (scene cell displays about 330px from 500px native width). White clean speech balloon fill, dark thin outline, padded text, one tail aimed to the correct mouth. NO speaker labels, NO quote marks, NO commas/full stops, NO other words. Sound effects are ink in the scene, not speech balloons. All unspecified panels remain text-free. Keep all added ink safely WITHIN the specified crop windows.
+MIDDLE RIGHT cell (red-haired bronze-armored returning player in crimson cape, sprinting with ONE steel sword, healthy gray-haired guard behind him). Adopted visible crop: native x520..1019,y670..1026. Add the player's EXACT dialogue "任せろ！" as ONE vertical column, ordinary confident speech balloon in clear sky/background to his LEFT, roughly x550..670,y680..922. Tail points upper-right toward the player's mouth at x882,y750. Do not obscure face, sword, hands, or the background patrol faces. Only this cell has speech. BOTTOM RIGHT grass-only quiet cell crop x520..1019,y1125..1531: add exact horizontal brush sound "ガサ…" near x815,y1380, about 42px glyphs, lightly tilted, connected to rustling reeds. BOTTOM LEFT KOH close-up crop x5..510,y1125..1531: add tiny vertical silence reaction "…" at x438,y1450, not a balloon, exactly three dots as one ellipsis. No other text.
+
+### f12-window-edit
+
+実行指示: `production/final-from-name/lettering/prompts/f12-window-edit.txt`
+
+Edit ONLY the speech balloon in the MIDDLE RIGHT panel of this 1024x1536 manga master. The current balloon sits too high and the reader crops away 任 at its top. REMOVE that current balloon from y604..780 and reconstruct the background sky in its former place. Recreate ONE balloon with identical exact dialogue 任せろ！ fully BELOW native y700, around x600..696,y700..910, one upright vertical column, 32px Japanese glyphs. The entire top of balloon and ALL characters must be below y700; this is over 110px below the panel top. Tail points right/up toward the running red-haired bronze-armored man's open mouth. Leave the upper sky strip of the MIDDLE RIGHT panel y590..700 WITHOUT ANY LETTERING. Do NOT touch the other five panels, the grass sound ガサ… or three-dot silence mark, or any face, hand, sword, body, panel border. Only reposition this one balloon down about100pixels, preserving exactly 任せろ！ and readable type.
+
+### f13-lettering
+
+実行指示: `production/final-from-name/lettering/prompts/f13-lettering.txt`
+
+Edit the attached finished COLOR manga master, preserving 1024x1536 size, exact panel borders and their geometry, every existing person, face, expression, outfit, hand, sword, scabbard, shield, injury and background. Only add the specified Japanese lettering directly as part of the generated artwork. Do not repaint other panels or change the character pose. Do not add new people or more weapons or injuries. Text must be fully readable in a 360px smartphone reader with individual cell crops. Use exact upright vertical Japanese for spoken dialogue, glyphs top-to-bottom, columns right-to-left. Font: clean bold Japanese manga gothic, around 31-34 native px per glyph for dialogue (scene cell displays about 330px from 500px native width). White clean speech balloon fill, dark thin outline, padded text, one tail aimed to the correct mouth. NO speaker labels, NO quote marks, NO commas/full stops, NO other words. Sound effects are ink in the scene, not speech balloons. All unspecified panels remain text-free. Keep all added ink safely WITHIN the specified crop windows.
+Only MIDDLE RIGHT wolf attack scene, crop x514..1019,y610..1004: add exact sound "ガッ" as lively black manga brush letters with narrow white edge near x872,y909, approx 43px tall glyphs, a slightly angled short horizontal sound mark. It represents the initial beast impact/attack. Do not cover faces, hands or guard injuries. All other cells remain unchanged with no text. No dialogue balloons.
+
+### f14-lettering
+
+実行指示: `production/final-from-name/lettering/prompts/f14-lettering.txt`
+
+Edit the attached finished COLOR manga master, preserving 1024x1536 size, exact panel borders and their geometry, every existing person, face, expression, outfit, hand, sword, scabbard, shield, injury and background. Only add the specified Japanese lettering directly as part of the generated artwork. Do not repaint other panels or change the character pose. Do not add new people or more weapons or injuries. Text must be fully readable in a 360px smartphone reader with individual cell crops. Use exact upright vertical Japanese for spoken dialogue, glyphs top-to-bottom, columns right-to-left. Font: clean bold Japanese manga gothic, around 31-34 native px per glyph for dialogue (scene cell displays about 330px from 500px native width). White clean speech balloon fill, dark thin outline, padded text, one tail aimed to the correct mouth. NO speaker labels, NO quote marks, NO commas/full stops, NO other words. Sound effects are ink in the scene, not speech balloons. All unspecified panels remain text-free. Keep all added ink safely WITHIN the specified crop windows.
+BOTTOM LEFT scene, adopted crop x5..506,y1114..1531: LIZE is the chestnut-bob young woman in green dress and pale cape seen from behind LEFT, stopping KOH from pursuing the fleeing wolf. Add her EXACT dialogue "追わないで" as one vertical column in a small ordinary white speech balloon at upper LEFT roughly x25..125,y1127..1350. One clean tail down-right toward LIZE at x160,y1300. Do not hide her head, hands, KOH, or the seated wounded guard. MIDDLE RIGHT action scene crop x516..1019,y623..1013: add exact horizontal angled black brush sound "ガン" near x610,y918, about 40px per glyph, near the claw/wood-shield collision on the left side, without covering face/hands. No other cells acquire lettering. Do not restore a duplicate sword or change the EMPTY left-hip sheath; KOH steel sword is drawn in fighting cells. Keep shield LEFT and sword RIGHT.
+
+### f14-tail-edit
+
+実行指示: `production/final-from-name/lettering/prompts/f14-tail-edit.txt`
+
+Refine ONLY the small speech balloon tail in the BOTTOM LEFT panel of this1024x1536 manga. Keep its current balloon position and all exact upright vertical text 追わないで unchanged; it is now correctly inside the reader crop. Its current tail points down-right toward LIZE's lower leg. Remove that tail, make ONE short clean tail on the UPPER RIGHT of the oval pointing up-right toward the chestnut-bob LIZE's head/shoulder immediately beside it (head around x160,y1240). Do not move the oval or text, and do not touch any other scene detail, the middle-right ガン letters, hands, characters, props or layout. Tail connects the speaking green-dressed woman, not her calf. Pure white interior and exact current Japanese text retained.
+
+### f14-window-edit
+
+実行指示: `production/final-from-name/lettering/prompts/f14-window-edit.txt`
+
+Edit ONLY the speech balloon in BOTTOM LEFT panel of this1024x1536 manga master. Current balloon starts at about y1045 and is clipped by reader window beginning y1114. Erase that high balloon and restore sky/grass behind it. Recreate ONE ordinary speech balloon with the exact upright vertical dialogue 追わないで, 32px glyphs, ENTIRELY BELOW y1140 in this master. Target x24..112,y1140..1350, little tail down-right to chestnut-haired LIZE in green dress seen from behind. This leaves more than100pixels of text-free scenery below the BOTTOM LEFT panel's top border y1026. All text and balloon outline must be within x5..506,y1114..1531. Do NOT place it at the full panel's upper border. Do not touch the other five panels, the middle-right ガン impact letters, hands, faces, weapons, shield, guard injury or layout. Just move the one balloon down95pixels.
+
+### f19-lettering
+
+実行指示: `production/final-from-name/lettering/prompts/f19-lettering.txt`
+
+Edit the attached finished COLOR manga master, preserving 1024x1536 size, exact panel borders and their geometry, every existing person, face, expression, outfit, hand, sword, scabbard, shield, injury and background. Only add the specified Japanese lettering directly as part of the generated artwork. Do not repaint other panels or change the character pose. Do not add new people or more weapons or injuries. Text must be fully readable in a 360px smartphone reader with individual cell crops. Use exact upright vertical Japanese for spoken dialogue, glyphs top-to-bottom, columns right-to-left. Font: clean bold Japanese manga gothic, around 31-34 native px per glyph for dialogue (scene cell displays about 330px from 500px native width). White clean speech balloon fill, dark thin outline, padded text, one tail aimed to the correct mouth. NO speaker labels, NO quote marks, NO commas/full stops, NO other words. Sound effects are ink in the scene, not speech balloons. All unspecified panels remain text-free. Keep all added ink safely WITHIN the specified crop windows.
+Only BOTTOM LEFT close-up of startled black-haired KOH looking at friendly silver-haired REI in foreground, adopted crop x5..507,y1119..1531. Add KOH's EXACT dialogue "……レイさん？" as one genuine upright vertical column. Preserve both consecutive ellipses and the question mark. Put the small ordinary white balloon in the upper RIGHT clear/foreground area of that cell, roughly x377..488,y1133..1478, characters around32px. Tail goes lower-left toward KOH's mouth near x270,y1410. Do not cover KOH's face/eyes/hair or show a name label. Silver-haired REI remains to the right foreground with red cloak. No other five cells acquire lettering. All existing shield handling and LEFT-hip sheathed sword continuity remain exactly unchanged.
+
+### f19-outline-edit
+
+実行指示: `production/final-from-name/lettering/prompts/f19-outline-edit.txt`
+
+Refine ONLY KOH's dialogue balloon in BOTTOM LEFT panel of this1024x1536 manga. All exact text ……レイさん？ is correct and must remain identical, including six vertical ellipsis dots and question mark. Move the ENTIRE balloon, ALL lettering and its tail DOWN by45nativepixels, no resizing. Current top outline is around y1100; desired top outline y1145 or lower. Reader crop starts at y1119, so even the TOP OUTLINE must be fully below y1145. Keep the current horizontal position and glyph size. Ensure its ONE tail points left/upper-left toward KOH's mouth, not REI. Preserve the previous sky area by removing the old balloon completely. All other five panels, faces, hands, outfits, swords, shield, borders, colors must remain unchanged. This is just a45pixel downward move of one balloon, no new dialogue or label.
+
+### f19-window-edit
+
+実行指示: `production/final-from-name/lettering/prompts/f19-window-edit.txt`
+
+Edit ONLY KOH's speech balloon in the BOTTOM LEFT panel of this1024x1536 manga master. Current balloon begins at y1040 and reader window begins at y1119, so both ellipses are clipped. Remove the entire current balloon and restore its former background. Recreate ONE ordinary slim white balloon, exact upright vertical dialogue ……レイさん？ including TWO ellipses (six dots) and the question mark, ALL BELOW y1138. Place balloon at native x365..480,y1138..1460. Use clean32px Japanese glyphs and ample padding, one vertical column. Tail points LEFT toward black-haired KOH's open mouth near x210,y1320, not toward REI. Leave the first140pixels beneath the BOTTOM LEFT panel's upper border y993 text-free. Entire balloon and ALL six dots must be visible inside reader crop x5..507,y1119..1531. Do not cover KOH's face/hair or alter the other five cells, character poses, shield, scabbard, panel borders. ONLY translate the balloon down100px and right65px.
+
+### v01
+
+実行指示: `production/final-from-name/lettering/prompts/v01.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context 航（心） (DO NOT PRINT NAME), kind thought, tail/dots direction down-left. Exact vertical columns right-to-left: ["こっちの手は", "なんともない"]. Exact dialogue:
+こっちの手は
+なんともない
+
+CELL TOP RIGHT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["皿を洗ったら", "行ってくる"]. Exact dialogue:
+皿を洗ったら
+行ってくる
+
+CELL BOTTOM LEFT, speaker context 航（心） (DO NOT PRINT NAME), kind thought, tail/dots direction down-left. Exact vertical columns right-to-left: ["今度は", "守れるように"]. Exact dialogue:
+今度は
+守れるように
+
+CELL BOTTOM RIGHT, speaker context 航（心） (DO NOT PRINT NAME), kind thought, tail/dots direction down-right. Exact vertical columns right-to-left: ["まだ", "残ってる"]. Exact dialogue:
+まだ
+残ってる
+
+### v02
+
+実行指示: `production/final-from-name/lettering/prompts/v02.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context 航（心） (DO NOT PRINT NAME), kind thought, tail/dots direction down-left. Exact vertical columns right-to-left: ["パンも", "買えなかった"]. Exact dialogue:
+パンも
+買えなかった
+
+CELL TOP RIGHT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["来たね", "手はどう？"]. Exact dialogue:
+来たね
+手はどう？
+
+CELL BOTTOM LEFT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["握ると", "少し痛い"]. Exact dialogue:
+握ると
+少し痛い
+
+CELL BOTTOM RIGHT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["痛むなら", "途中で止めよう"]. Exact dialogue:
+痛むなら
+途中で止めよう
+
+### v03
+
+実行指示: `production/final-from-name/lettering/prompts/v03.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["昨日…", "剣を抜きかけた"]. Exact dialogue:
+昨日…
+剣を抜きかけた
+
+CELL TOP RIGHT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["あの人を", "止めたくて"]. Exact dialogue:
+あの人を
+止めたくて
+
+CELL BOTTOM LEFT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["じゃあ一本", "受けてみて"]. Exact dialogue:
+じゃあ一本
+受けてみて
+
+CELL BOTTOM RIGHT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["まずこれ", "持ってみて"]. Exact dialogue:
+まずこれ
+持ってみて
+
+### v04
+
+実行指示: `production/final-from-name/lettering/prompts/v04.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context リゼ (DO NOT PRINT NAME), kind shout, tail/dots direction down-left. Exact vertical columns right-to-left: ["いくよ！"]. Exact dialogue:
+いくよ！
+
+CELL TOP RIGHT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["まだ…！"]. Exact dialogue:
+まだ…！
+
+CELL BOTTOM LEFT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["剣だけ", "追ってる"]. Exact dialogue:
+剣だけ
+追ってる
+
+CELL BOTTOM RIGHT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["外へ一歩", "盾を残して"]. Exact dialogue:
+外へ一歩
+盾を残して
+
+### v05
+
+実行指示: `production/final-from-name/lettering/prompts/v05.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["受けた！"]. Exact dialogue:
+受けた！
+
+CELL TOP RIGHT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["次は風", "無理に受けず", "離れていいよ"]. Exact dialogue:
+次は風
+無理に受けず
+離れていいよ
+
+CELL BOTTOM LEFT, speaker context 航（心） (DO NOT PRINT NAME), kind thought, tail/dots direction down-left. Exact vertical columns right-to-left: ["今の", "細い光…"]. Exact dialogue:
+今の
+細い光…
+
+CELL BOTTOM RIGHT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["その踏み込み", "教えてないよ"]. Exact dialogue:
+その踏み込み
+教えてないよ
+
+### v06
+
+実行指示: `production/final-from-name/lettering/prompts/v06.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context 航（心） (DO NOT PRINT NAME), kind thought, tail/dots direction down-right. Exact vertical columns right-to-left: ["もう", "見えない…"]. Exact dialogue:
+もう
+見えない…
+
+CELL TOP RIGHT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["ねえ リゼ", "星環って", "何なんだろう"]. Exact dialogue:
+ねえ リゼ
+星環って
+何なんだろう
+
+CELL BOTTOM LEFT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["魔力はあそこから", "巡るって", "言われてるよ"]. Exact dialogue:
+魔力はあそこから
+巡るって
+言われてるよ
+
+CELL BOTTOM RIGHT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["あそこから降りる", "細い線も？", "さっきの風にも…"]. Exact dialogue:
+あそこから降りる
+細い線も？
+さっきの風にも…
+
+### v07
+
+実行指示: `production/final-from-name/lettering/prompts/v07.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["線？", "どこに？"]. Exact dialogue:
+線？
+どこに？
+
+CELL TOP RIGHT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["今はもう", "消えちゃった"]. Exact dialogue:
+今はもう
+消えちゃった
+
+CELL BOTTOM LEFT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["こっちは", "もっと重い"]. Exact dialogue:
+こっちは
+もっと重い
+
+CELL BOTTOM RIGHT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["盾は私の予備", "帰ったらここへ"]. Exact dialogue:
+盾は私の予備
+帰ったらここへ
+
+### v08-balloon-edit
+
+実行指示: `production/final-from-name/lettering/prompts/v08-balloon-edit.txt`
+
+Edit ONLY the BOTTOM LEFT balloon on this 1024x1536 white four-balloon manga lettering sheet. Its exact dialogue 巡回は / 初めて？ is already correct. Change this bottom-left jagged shouting balloon to an ordinary smooth oval, thin black outline, ONE small tail down-left. This is a calm guard asking a newcomer if it is his first patrol, not a shout. Keep both vertical columns identical, glyph sizes and full exact text unchanged, upright Japanese, right column 巡回は, left column 初めて？. Maintain position within bottom-left 512x768 cell, do not change the other three balloons or their text or tails. Pure white background, no extra words, no speaker names.
+
+### v08
+
+実行指示: `production/final-from-name/lettering/prompts/v08.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["傷つけたら", "隠さず見せてね"]. Exact dialogue:
+傷つけたら
+隠さず見せてね
+
+CELL TOP RIGHT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["足元も見て", "私から離れないで"]. Exact dialogue:
+足元も見て
+私から離れないで
+
+CELL BOTTOM LEFT, speaker context 兵士 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["巡回は", "初めて？"]. Exact dialogue:
+巡回は
+初めて？
+
+CELL BOTTOM RIGHT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["はい", "足元も見ます"]. Exact dialogue:
+はい
+足元も見ます
+
+### v09
+
+実行指示: `production/final-from-name/lettering/prompts/v09.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction up-right. Exact vertical columns right-to-left: ["川へ来るのは", "人だけじゃない"]. Exact dialogue:
+川へ来るのは
+人だけじゃない
+
+CELL TOP RIGHT, speaker context 航 (DO NOT PRINT NAME), kind shout, tail/dots direction down-left. Exact vertical columns right-to-left: ["待って！", "まだ何がいるか…"]. Exact dialogue:
+待って！
+まだ何がいるか…
+
+CELL BOTTOM LEFT, speaker context リゼ (DO NOT PRINT NAME), kind shout, tail/dots direction down-left. Exact vertical columns right-to-left: ["その人の前に！"]. Exact dialogue:
+その人の前に！
+
+CELL BOTTOM RIGHT, speaker context 航（心） (DO NOT PRINT NAME), kind thought, tail/dots direction down-right. Exact vertical columns right-to-left: ["さっきの", "光…！"]. Exact dialogue:
+さっきの
+光…！
+
+### v10
+
+実行指示: `production/final-from-name/lettering/prompts/v10.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context 航（心） (DO NOT PRINT NAME), kind thought, tail/dots direction down-left. Exact vertical columns right-to-left: ["この筋へ", "合わせれば…"]. Exact dialogue:
+この筋へ
+合わせれば…
+
+CELL TOP RIGHT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["今の…", "航が？"]. Exact dialogue:
+今の…
+航が？
+
+CELL BOTTOM LEFT, speaker context 航（心） (DO NOT PRINT NAME), kind thought, tail/dots direction down-right. Exact vertical columns right-to-left: ["剣まで", "軽くなった…？"]. Exact dialogue:
+剣まで
+軽くなった…？
+
+CELL BOTTOM RIGHT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["歩けますか"]. Exact dialogue:
+歩けますか
+
+### v11-balloon-edit
+
+実行指示: `production/final-from-name/lettering/prompts/v11-balloon-edit.txt`
+
+Edit ONLY the two BOTTOM balloons on this 1024x1536 white manga lettering sheet. Both are spoken OUT LOUD, quiet relief, NOT thought and NOT shout. BOTTOM LEFT exact columns are 戻れた / でも剣がない, retain glyphs, text and font sizes exactly. Change its jagged outline to a smooth ordinary thin black oval with one tail DOWN RIGHT. BOTTOM RIGHT exact columns are さっきの人… / 戻れたんだ, retain text and sizes exactly. Change its cloud outline and dots to a smooth ordinary thin black oval with one tail DOWN LEFT, remove thought dots. Preserve the two top balloons and every Japanese character, vertical columns and positions unchanged. Keep each balloon within its original 512x768 cell, pure white background, no labels or extra text.
+
+### v11
+
+実行指示: `production/final-from-name/lettering/prompts/v11.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context 兵士 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["ゆっくりなら", "歩ける"]. Exact dialogue:
+ゆっくりなら
+歩ける
+
+CELL TOP RIGHT, speaker context セナ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["ここで診るよ", "水を飲んで", "おいで"]. Exact dialogue:
+ここで診るよ
+水を飲んで
+おいで
+
+CELL BOTTOM LEFT, speaker context 帰還者 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["戻れた", "でも剣がない"]. Exact dialogue:
+戻れた
+でも剣がない
+
+CELL BOTTOM RIGHT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["さっきの人…", "戻れたんだ"]. Exact dialogue:
+さっきの人…
+戻れたんだ
+
+### v12-balloon-edit
+
+実行指示: `production/final-from-name/lettering/prompts/v12-balloon-edit.txt`
+
+Edit ONLY the BOTTOM LEFT balloon on this 1024x1536 white manga lettering sheet. The red-haired returning player is speaking OUT LOUD in a subdued voice, not thinking. Keep exact three vertical columns 剣は川か… / ひとりじゃ / 取りに行けないな, font sizes and text absolutely unchanged. Change its cloud outline and thought dots to a smooth ordinary thin black oval with ONE tail DOWN LEFT, remove thought dots. Do not change the other three balloons, their tails, text, glyph size, column order or layout. All lettering upright Japanese right-to-left columns, pure white background, no added text.
+
+### v12
+
+実行指示: `production/final-from-name/lettering/prompts/v12.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context 灯里 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["身体を", "作り直すんだって"]. Exact dialogue:
+身体を
+作り直すんだって
+
+CELL TOP RIGHT, speaker context 係の人 (DO NOT PRINT NAME), kind spoken, tail/dots direction down. Exact vertical columns right-to-left: ["次の身体も", "予備の用意が", "いるからね"]. Exact dialogue:
+次の身体も
+予備の用意が
+いるからね
+
+CELL BOTTOM LEFT, speaker context 帰還者 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["剣は川か…", "ひとりじゃ", "取りに行けないな"]. Exact dialogue:
+剣は川か…
+ひとりじゃ
+取りに行けないな
+
+CELL BOTTOM RIGHT, speaker context 灯里 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["日本の身体は", "無事だって"]. Exact dialogue:
+日本の身体は
+無事だって
+
+### v13
+
+実行指示: `production/final-from-name/lettering/prompts/v13.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["兵士さんの傷も", "作り直せば", "治る？"]. Exact dialogue:
+兵士さんの傷も
+作り直せば
+治る？
+
+CELL TOP RIGHT, speaker context セナ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["この人には", "この身体しか", "ないんだ"]. Exact dialogue:
+この人には
+この身体しか
+ないんだ
+
+CELL BOTTOM LEFT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["明日は休んで", "巡回は代わるから"]. Exact dialogue:
+明日は休んで
+巡回は代わるから
+
+CELL BOTTOM RIGHT, speaker context セナ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["休ませる場所まで", "運んでくれて", "助かった"]. Exact dialogue:
+休ませる場所まで
+運んでくれて
+助かった
+
+### v14
+
+実行指示: `production/final-from-name/lettering/prompts/v14.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction up-right. Exact vertical columns right-to-left: ["縁が", "少し欠けた"]. Exact dialogue:
+縁が
+少し欠けた
+
+CELL TOP RIGHT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down. Exact vertical columns right-to-left: ["見せてくれて", "ありがとう", "ここは直せる"]. Exact dialogue:
+見せてくれて
+ありがとう
+ここは直せる
+
+CELL BOTTOM LEFT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["明日も", "借りていい？"]. Exact dialogue:
+明日も
+借りていい？
+
+CELL BOTTOM RIGHT, speaker context リゼ (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["ここに置いて", "次も一緒に", "練習しよう"]. Exact dialogue:
+ここに置いて
+次も一緒に
+練習しよう
+
+### v15
+
+実行指示: `production/final-from-name/lettering/prompts/v15.txt`
+
+Generate a pristine Japanese manga lettering artwork sheet, 1024x1536 portrait, PURE WHITE background. This is intentional voices in white inter-panel space for an adopted vertical manga composition. No characters or scenery here: the adjacent illustrated panels are separate and fixed. Four isolated speech/thought balloons arranged in precisely two columns and two rows, 512x768 cells. Each balloon entirely within its own cell. No grid lines, no cell labels, no header, no watermark. White balloon fill, crisp near-black manga ink outline and exact upright Japanese gothic lettering. Each glyph approximately 64 native pixels high, even weight, ample padding. The balloon size follows the text length, do NOT shrink the text to make all balloons equal. Centre each balloon including its tail/dots in its cell. Keep 30px outer margin minimum. True vertical Japanese, upright characters top-to-bottom, columns RIGHT TO LEFT. Each supplied newline starts the next column to the LEFT. Render supplied Japanese ONLY, exactly once, including ! ? and ellipses as supplied. Never add commas or full stops. No visible quotation marks or speaker names. No extra text. Normal speech uses smooth oval or rounded tall outline about 5px weight, with ONE clean tail in the specified direction. Thoughts use irregular cloud outlines with exactly two small thought dots in specified direction, NO speech tail. Shouts use bold jagged radiating pointed outlines, not normal ellipses, but do not touch the text. Preserve distinct emotions. Four cells follow spatial order top-left, top-right, bottom-left, bottom-right (not Japanese page order).
+
+CELL TOP LEFT, speaker context 怜 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["あの一閃", "見事だったな"]. Exact dialogue:
+あの一閃
+見事だったな
+
+CELL TOP RIGHT, speaker context 航 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["動画で", "見てました"]. Exact dialogue:
+動画で
+見てました
+
+CELL BOTTOM LEFT, speaker context 怜 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-right. Exact vertical columns right-to-left: ["ここでは", "一緒に練習しよう"]. Exact dialogue:
+ここでは
+一緒に練習しよう
+
+CELL BOTTOM RIGHT, speaker context 怜 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["討伐隊", "一緒に来るか？"]. Exact dialogue:
+討伐隊
+一緒に来るか？

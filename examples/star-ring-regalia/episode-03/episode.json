@@ -176,7 +176,9 @@
         }
       ],
       "alt": "リゼの低い薙ぎへ航が両手握りに戻り 左盾が落ちる 足と刃の動きから稽古を始める / 盾より下を木剣が軽く触れ 航が足を引く ケガを足さず盾の隙を示す / 航が右木剣で打ち返すが リゼが外へ回り 空振りする / 航は片膝で体勢を戻し リゼが盾と足の隙を指す 急いだ結果が目に見える / リゼが外へ踏む足を実演 航が見る 地面の線と靴の方向が次の修正へつながる / 航が足を動かして左盾で木剣を受ける 右木剣を自由に残す 起点 接触 結果を近く読む",
-      "sha256": "2d6090c08662bf36b7127d49c21af3dc17b90ac2b61d11e8981fc171867a34c8"
+      "sha256": "2d6090c08662bf36b7127d49c21af3dc17b90ac2b61d11e8981fc171867a34c8",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f02",
@@ -349,7 +351,9 @@
         }
       ],
       "alt": "リゼが左掌から弱い風を流す 盾で防ぐ次の練習 右手は木剣 / 航の瞳に風とは違う細い光が映る 現在流れる魔力へ初めて感応 / 光の筋が空ける風の隙間へ航の足が飛ぶ 足場から太い軌道と土がつながる / 航がリゼの剣側の外へ異常に速く入り 右木剣を肩の手前で止める 左盾も残す リゼの間合いを一度破る / リゼが予想外の速さに目を開く 教えた受けとは違う特別な踏み込みが分かる / もう一度試した航の木剣をリゼが普通に受ける 光は消えたままで同じ速さは再現できない",
-      "sha256": "5d4880d5290fd36f6cfeb211f05ece1ca59e27b9d8a6850eaeb735bd0de53e36"
+      "sha256": "5d4880d5290fd36f6cfeb211f05ece1ca59e27b9d8a6850eaeb735bd0de53e36",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f03",
@@ -522,7 +526,9 @@
         }
       ],
       "alt": "水を飲んでいた航が空へ目を上げる 木剣と盾はベンチ 左腰に鋼剣を納刀 / ミルトの屋根の上 空全体を横切る巨大な星環 そこから細い一本の光が降りる 航の主観 / リゼが空の環を指す 日常で知っている範囲だけ話す 起源や運営の秘密へ進まない / 航が右指で星環から下りる細い線をなぞる リゼの風の光と同じだと気づく / リゼは航の指す何もない空を見る 線が共有されないことを表情で示す / 航が空になった右指を見る 細い光は消える 星環そのものは空に残る 答えを持たないまま先へ",
-      "sha256": "d219d6876845a466248e067cb5cf35fc0b641954a04f2388430c6f2c4f763d03"
+      "sha256": "d219d6876845a466248e067cb5cf35fc0b641954a04f2388430c6f2c4f763d03",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f04",
@@ -702,7 +708,22 @@
         }
       ],
       "alt": "盾が爪を止めた直後 航の瞳に稽古で見えた細い光が戻る / 航だけの視界 獣の肩から魔力の爪へ細い光の筋が見える 未来や相手の心は見えない / 盾の後ろに兵士を残し 航が自分の右手の剣で細い筋へ短く踏み込む 足から肩と刃へ動作がつながる / 航の一閃が獣の爪の魔力を斬り裂く 太い斜めの軌跡と衝撃で獣を退ける 決め手は航 兵士は左盾の後ろで安全 / 援護を始めていたリゼが 航の一撃を見て剣を下げ驚く 風が決め手だったと見せない / 光が消えた自分の右手の剣を見る航 獣は逃げ 兵士は生きている 立ったまま驚きを受け止める",
-      "sha256": "edd7450ffcd57552f5ee1bd6606e5b2624ca50f7befb497dc568718008e71bc3"
+      "sha256": "ab5899f2e34ab7c140713c6ced589d00aab44ddf240ccd7d1ae6ee947f616544",
+      "edits": [
+        {
+          "source": "source-f04-scabbard.png",
+          "prompt": "prompts/f04-scabbard.txt"
+        },
+        {
+          "source": "source-f04-lettering.png",
+          "prompt": "lettering/prompts/f04-lettering.txt",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-cfd1e8e1-d2b8-4932-a352-0cda855ea3ad.png",
+          "sha256": "ab5899f2e34ab7c140713c6ced589d00aab44ddf240ccd7d1ae6ee947f616544",
+          "purpose": "generated_vertical_dialogue_and_scene_sound_effects",
+          "pixelsEditedAfterGeneration": false
+        }
+      ],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f05",
@@ -875,7 +896,14 @@
         }
       ],
       "alt": "日本の土曜の朝 航は傷のない右掌を見つめる ミルトの痛みと昨夜の問いが残る / 日本の台所 母を振り返り空の皿を運ぶ ゲームへ逃げる前に自分の仕事を終える / ミルトへ戻った航が右掌へ視線を落とし 顔を曇らせる 掌の傷は次の小袋のカットで確かめる / 左掌に使えなかった銅貨が二枚 右掌の擦り傷をかばって小袋へ戻す 日本へ銅貨を運ばない / 安全広場から訓練場へ歩いて来た航 リゼは予備の木盾を点検 航の手に気づく / リゼは航の右掌の擦り傷を見て確かめる 触れて治療する魔法は使わない",
-      "sha256": "0d15b2c0ee8391f172aa92b50aec08b11dbc23c6715e8d7b8c1b7857779b9d9a"
+      "sha256": "0d15b2c0ee8391f172aa92b50aec08b11dbc23c6715e8d7b8c1b7857779b9d9a",
+      "edits": [
+        {
+          "source": "source-f05-hands.png",
+          "prompt": "prompts/f05-hands.txt"
+        }
+      ],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f06",
@@ -918,7 +946,9 @@
         }
       ],
       "alt": "KOH dries his empty hands after washing his own breakfast plate, then reaches toward ordinary headset on shelf; clean plate is in drain rack, no fantasy item in Japan.",
-      "sha256": "43281b38948a33c3d8018118f6ccbc374830e41bdff0973d4c2912b1468307f6"
+      "sha256": "43281b38948a33c3d8018118f6ccbc374830e41bdff0973d4c2912b1468307f6",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f07",
@@ -961,7 +991,9 @@
         }
       ],
       "alt": "Medium LIZE looks up from the strap and smiles practically, hand remains on spare shield, her own short sword sheathed.",
-      "sha256": "97efe6663ea9d1f57228300c73801c28702dc0e7f2039f344c32a8ed727af063"
+      "sha256": "97efe6663ea9d1f57228300c73801c28702dc0e7f2039f344c32a8ed727af063",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f08",
@@ -1056,7 +1088,9 @@
         }
       ],
       "alt": "昨日の衝動を自分の言葉で認める / 掌と鞘を見て悔しさを言葉にする / 相手を倒すためだけでなく習うことを選ぶ",
-      "sha256": "2b66ae33009e8c898b0692f7b71af4cdb0f34a05ea3d8d0ae8665f8653671033"
+      "sha256": "2b66ae33009e8c898b0692f7b71af4cdb0f34a05ea3d8d0ae8665f8653671033",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f09",
@@ -1099,7 +1133,9 @@
         }
       ],
       "alt": "Medium LIZE hands him ONE practice shield, short sword in scabbard.",
-      "sha256": "319eea848b16ec1954770a629125abbfba1000445c3af764043dc538a820063a"
+      "sha256": "319eea848b16ec1954770a629125abbfba1000445c3af764043dc538a820063a",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f10",
@@ -1194,7 +1230,9 @@
         }
       ],
       "alt": "Shallow KOH returns ONE wooden practice sword to shared bench beside the other spare practice tools, not holding steel yet. Shield rests at bench edge. / Medium KOH uses RIGHT hand to draw his OWN plain straight steel sword briefly from brown scabbard, LEFT holds scabbard, recognizes heavier weight. No shield in hands during this check. / Medium KOH has resheathed steel sword and picks the ONE spare wooden shield up with LEFT hand for patrol. LIZE points to this specific bench, explains ownership and return place.",
-      "sha256": "ebbbcaa9a3fd35101a98adef305652d1865a40dadafdc75ffa47f78e8fa382a7"
+      "sha256": "ebbbcaa9a3fd35101a98adef305652d1865a40dadafdc75ffa47f78e8fa382a7",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f11",
@@ -1344,7 +1382,9 @@
         }
       ],
       "alt": "LIZE points to same bench and spare shelf, expects responsibility not perfect untouched gear. / Wide: patrol walks riverbank, steel blade sheathed, water plentiful. / Nameless LOCAL guard gray hair dark goatee steel helmet sand scarf brown leather armor asks KOH on river path, ordinary check not hostile NPC. / KOH nods, LEFT shield slung RIGHT hand empty near own sheathed steel, answers guard as person. / Small close: fresh claw tracks in mud under reeds, ominous but not gore.",
-      "sha256": "07a7afc7565d504c30f32da38a5b11e7df3f8eae8ba3ca19026abe76e57bc57e"
+      "sha256": "07a7afc7565d504c30f32da38a5b11e7df3f8eae8ba3ca19026abe76e57bc57e",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f12",
@@ -1511,7 +1551,26 @@
         }
       ],
       "alt": "LIZE crouches beside fresh pawprint without touching dangerous reeds, compares it with nearby river mud, healthy water behind. / Medium: impulsive red-haired PLAYER traveler runs past the patrol with flashy steel sword. / KOH reaches empty RIGHT hand toward red-player back, asks him to wait; local guard and LIZE still together on path. / Shallow empty reeds shiver near muddy path, only grass and moving leaves. A SINGLE ガサ… inscription starts at right side of reeds and extends toward panel border. No eyes or claws or creature silhouette yet. / Small KOH eye-and-left-shield close-up reacts to the offscreen rustle as he slips the borrowed shield from its walking sling onto LEFT forearm; red-haired bronze-armored traveler back only in farther edge, turning ahead. Continue the same sound with faint trailing … into large white bottom fade, no second complete inscription. No visible beast.",
-      "sha256": "db992dfd85d463719793f5ac30a67274c43c25ca46da76a57ba6444ce47e1213"
+      "sha256": "c6eee272a63904858acab8af547a6f2f5f1374f66e3d0fc5f2e8dd00331a1624",
+      "edits": [
+        {
+          "source": "source-f12-lettering.png",
+          "prompt": "lettering/prompts/f12-lettering.txt",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-50738e0f-60f8-49ae-9356-813f9133c493.png",
+          "sha256": "b67d85bbf1b3ad01cad2814a2820407cb5f7bfdc4dd3eb9c6b7ce79e86b490ed",
+          "purpose": "generated_vertical_dialogue_and_scene_sound_effects",
+          "pixelsEditedAfterGeneration": false
+        },
+        {
+          "source": "source-f12-lettering-window.png",
+          "prompt": "lettering/prompts/f12-window-edit.txt",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-4c378e1c-ca3e-453e-aa28-c9e7106f62c7.png",
+          "sha256": "c6eee272a63904858acab8af547a6f2f5f1374f66e3d0fc5f2e8dd00331a1624",
+          "purpose": "generated_vertical_dialogue_and_scene_sound_effects",
+          "pixelsEditedAfterGeneration": false
+        }
+      ],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f13",
@@ -1691,7 +1750,18 @@
         }
       ],
       "alt": "LIZE raises empty RIGHT fingers to stop patrol, listens toward grass, her own short sword still sheathed. ONE faint trailing dots from grass sound can continue, no new ガサ and no creature. / KOH shifts one boot onto firmer path so wounded guard will later have space behind him; LEFT shield ready, RIGHT hand on own sheathed hilt. No advance or monster shown. / Large angled action shot: lean dark riverwolf-like monster leaps from reeds at the impulsive red-haired PLAYER; KOH in foreground frightened, shield held low, LIZE already reacts. Not the black-horn guardian. / Shallow immediate result: the red-haired PLAYER avatar dissolves into pale construction light after the claw strike, with his steel sword falling into mud. The LOCAL guardsman tried to cover him and receives a small non-graphic scratch on his RIGHT forearm; KOH sees the guard crouch. No corpse, no injury to a Japanese person, no HUD and no dialogue. / KOH turns sharply from fading player construction light to LOCAL guard physical RIGHT forearm wound, chooses real hurt person rather than vanished avatar. / Shallow dropped red-player steel sword lies on mud near reeds, not vanished and not automatically returned. A boot of the injured LOCAL guard braces beside it; his RIGHT forearm held close, blood only a tiny restrained mark.",
-      "sha256": "5a118708a2e3578679d18d7e67d27dbb25d78ec10f6f591d1fab5373997c7ad0"
+      "sha256": "98d940333196a9a1c75f73e75cc8b3e61be68ba7399e981e99af47c77c9606dc",
+      "edits": [
+        {
+          "source": "source-f13-lettering.png",
+          "prompt": "lettering/prompts/f13-lettering.txt",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-21bddf17-9c07-430a-86d4-710857eb919d.png",
+          "sha256": "98d940333196a9a1c75f73e75cc8b3e61be68ba7399e981e99af47c77c9606dc",
+          "purpose": "generated_vertical_dialogue_and_scene_sound_effects",
+          "pixelsEditedAfterGeneration": false
+        }
+      ],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f14",
@@ -1803,7 +1873,42 @@
         }
       ],
       "alt": "Medium: KOH steps LEFT beside local wounded guard, raises borrowed shield, right hand grips sword. / Two quick close-up moments right-to-left within ONE shallow row: shield blocks claw; LIZE gathers pale wind around short sword. / Wide wolf retreats physically into reeds on LEFT far bank edge, same dark lean animal with tail, visible direction and diminishing distance. LIZE sword down but alert, no creature dissolved or respawned.",
-      "sha256": "02576d8a468b8ba40c655848384c8bc2598cf5e140109f52e1728e7f5bcd6cbb"
+      "sha256": "41051ca48503f24b2bef06f78815b59140653646b6890b7e2f42bacfc0d43ffb",
+      "edits": [
+        {
+          "source": "source-f14-scabbard.png",
+          "prompt": "prompts/f14-scabbard.txt"
+        },
+        {
+          "source": "source-f14-hip.png",
+          "prompt": "prompts/f14-hip.txt"
+        },
+        {
+          "source": "source-f14-lettering.png",
+          "prompt": "lettering/prompts/f14-lettering.txt",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-60b8aaad-c74c-49c7-97a1-2563a92caf3b.png",
+          "sha256": "25879455515aee9ba9ddf7ad7869a32253d64e3cf221657c0141ba4974801e6e",
+          "purpose": "generated_vertical_dialogue_and_scene_sound_effects",
+          "pixelsEditedAfterGeneration": false
+        },
+        {
+          "source": "source-f14-lettering-window.png",
+          "prompt": "lettering/prompts/f14-window-edit.txt",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-e234f66d-d9e3-4d01-a368-e26c5f54af59.png",
+          "sha256": "490e2a4f0d30ae7b9b0ac665299c475f47d8f18d8d00456f49f07f229b4b7a35",
+          "purpose": "generated_vertical_dialogue_and_scene_sound_effects",
+          "pixelsEditedAfterGeneration": false
+        },
+        {
+          "source": "source-f14-tail.png",
+          "prompt": "lettering/prompts/f14-tail-edit.txt",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-83011415-a172-4a02-8fb2-d7dd2c73d0a3.png",
+          "sha256": "41051ca48503f24b2bef06f78815b59140653646b6890b7e2f42bacfc0d43ffb",
+          "purpose": "generated_vertical_dialogue_and_scene_sound_effects",
+          "pixelsEditedAfterGeneration": false
+        }
+      ],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f15",
@@ -1976,7 +2081,9 @@
         }
       ],
       "alt": "KOH begins one step after retreating wolf but stops when LIZE warns, chooses guard over pursuit and turns back. / Medium LOCAL guard uses healthy LEFT hand to press cloth against wounded RIGHT forearm. Polearm rests upright against a tree during this pause. KOH left shield low and own sword resheathed stands beside him. / LOCAL guard nods that he can walk, healthy LEFT hand presses RIGHT injury cloth, polearm leans beside tree during pause. / KOH resheathes his steel sword and gently supports the guard above the injured RIGHT forearm at his RIGHT upper arm with his free RIGHT hand. He does not press the wound. LEFT shield lowered. LIZE temporarily carries the polearm; before walking on, she returns it to the guard healthy LEFT hand. / Wide three walk back toward visible Milt gate at same river path. KOH matches LOCAL guard pace, LIZE walks outer side keeping watch. Dropped red-player sword remains behind in mud near reeds, not magically collected. / KOH and the injured guard pause on the clinic steps. SENA takes over the guard care from the doorway and sends KOH to get water nearby. The guard is no longer left in danger, and the next scene is the nearby safe square.",
-      "sha256": "a6a9ff35df29de7f2c1d67d0d71b1a0480e9bd67a9e62b2a8f1fe9f39395fca2"
+      "sha256": "a6a9ff35df29de7f2c1d67d0d71b1a0480e9bd67a9e62b2a8f1fe9f39395fca2",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f16",
@@ -2097,7 +2204,9 @@
         }
       ],
       "alt": "Wide: the red-haired PLAYER reappears in plain replacement clothes, weapon lost, KOH and AKARI nearby. / Close KOH listens with relief, sword sheathed and shield lowered. / AKARI in orange game jacket checks a readable blue HUD only for herself. / Medium local supply clerk points to a modest waiting bench and almost empty replacement-clothes shelf; gives plain spare boot pair to regenerated PLAYER in beige clothes, not his lost armor or sword.",
-      "sha256": "333153f021aa70435fff693151264e4cc92e20fc7dc4678096515aaf9f4f6793"
+      "sha256": "333153f021aa70435fff693151264e4cc92e20fc7dc4678096515aaf9f4f6793",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f17",
@@ -2218,7 +2327,9 @@
         }
       ],
       "alt": "Shallow regenerated red-haired PLAYER looks at empty hands and plain clothes, remembers his weapon still physically at riverbank. / Medium AKARI lowers her own brass communicator, speaks to KOH with relief for person in Japan, her wooden bow remains on back. / Medium KOH looks toward the LOCAL guard, worried. / SENA calm close-up, one clean bandage in hands.",
-      "sha256": "7ca6da73c796f6fb30cc54ac76158539db65c580e8c8d23756bd25831075c2e6"
+      "sha256": "7ca6da73c796f6fb30cc54ac76158539db65c580e8c8d23756bd25831075c2e6",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f18",
@@ -2342,7 +2453,9 @@
         }
       ],
       "alt": "LIZE tightens bandage, clear difference to player; tired expression. / Shallow LIZE moves ONE patrol token from tomorrow active row to a reserve peg beside the clinic board. No readable unexplained bureaucratic chart, no giant UI, no promise to heal instantly. / Medium SENA closes ONE wooden medicine box gently beside seated LOCAL guard, addresses KOH with practical thanks. Guard rests right bandaged arm on lap, same gray hair and goatee. / Close KOH uses plain cloth to wipe mud from ONE wooden shield rim on bench, shield detached from LEFT arm, his own steel sword stays sheathed at belt. No magically repaired cracks.",
-      "sha256": "7eacdeedf296fdb113222513f6009f933993372a05c8d7fa817ede311bd41b73"
+      "sha256": "7eacdeedf296fdb113222513f6009f933993372a05c8d7fa817ede311bd41b73",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f19",
@@ -2528,7 +2641,34 @@
         }
       ],
       "alt": "航は借りた盾の縁の小さな欠けを持ち主リゼへ見せる 木は自動で修復しない / LIZE checks rim with empty fingers, relieved rather than scolds; same shield on bench. / Medium KOH looks up from cleaned shield toward LIZE, asks rather than silently claims borrowed property. / Wide LIZE points toward spare shield shelf right above the same bench. KOH places ONE cleaned shield there and removes hand, now shieldless. / REI in silver armor and deep red short cloak approaches KOH, sword sheathed, friendly. / Close KOH recognizes his admired player, startled but delighted. KOH hands empty, NO shield, own steel sword remains sheathed.",
-      "sha256": "8f7882dacadb29143e26173dbdbb5a7a6a1621c028f3ded288c7a35acf063f67"
+      "sha256": "0cc98a8078d8f17f9ed7c227a15ac41adbecd9515e510193d99637806ccbcf10",
+      "edits": [
+        {
+          "source": "source-f19-lettering.png",
+          "prompt": "lettering/prompts/f19-lettering.txt",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-dca6daf2-1ff2-4d5a-be3b-d4daa1f8c5c5.png",
+          "sha256": "a0e62a3c99f8c94f15f838549f735bc6f9876c8743304ebc84646acd54a5f272",
+          "purpose": "generated_vertical_dialogue_and_scene_sound_effects",
+          "pixelsEditedAfterGeneration": false
+        },
+        {
+          "source": "source-f19-lettering-window.png",
+          "prompt": "lettering/prompts/f19-window-edit.txt",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-e7e73f5b-e895-41b3-859b-17c0cdf76359.png",
+          "sha256": "f63aecc9bfe2e2ee3428ec9d23db973e0b73bc8c351b795d32d8fefec63853ed",
+          "purpose": "generated_vertical_dialogue_and_scene_sound_effects",
+          "pixelsEditedAfterGeneration": false
+        },
+        {
+          "source": "source-f19-outline.png",
+          "prompt": "lettering/prompts/f19-outline-edit.txt",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-ab5c3fac-dd66-4949-a490-71857263200a.png",
+          "sha256": "0cc98a8078d8f17f9ed7c227a15ac41adbecd9515e510193d99637806ccbcf10",
+          "purpose": "generated_vertical_dialogue_and_scene_sound_effects",
+          "pixelsEditedAfterGeneration": false
+        }
+      ],
+      "pixelsEditedAfterGeneration": false
     },
     {
       "id": "f20",
@@ -2623,7 +2763,288 @@
         }
       ],
       "alt": "KOH straightens posture, recognizes REI from familiar raid videos, now asks as nervous youth, hands empty no shield. / REI smiles and gestures toward real training yard instead of superiority or secret chosen-one favor. / Large REI offers an open empty hand, a genuine invitation.",
-      "sha256": "6d33bdec9bbf3f9a0dd8ed805ce330e0dda791d61b1172e060c8a8f97c31888e"
+      "sha256": "6d33bdec9bbf3f9a0dd8ed805ce330e0dda791d61b1172e060c8a8f97c31888e",
+      "edits": [],
+      "pixelsEditedAfterGeneration": false
+    },
+    {
+      "id": "v01",
+      "episode": 3,
+      "path": "episode-03/art/v01.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v01.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "00-japan:1-voice",
+        "00-japan:1-added-2-voice",
+        "00-japan:2-voice",
+        "00-yard:1-voice"
+      ],
+      "panels": [],
+      "sha256": "8760aea311fa5385fd1a8ecd3693adf377a224203215853247866b9db976cd7b",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
+    },
+    {
+      "id": "v02",
+      "episode": 3,
+      "path": "episode-03/art/v02.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v02.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "00-yard:1-added-1-voice",
+        "00-yard:2-voice",
+        "00-yard:2-added-1-voice",
+        "00-yard:2-added-2-voice"
+      ],
+      "panels": [],
+      "sha256": "f13169af2a407fcbdf6b4c047a115710f6054df50f6e43376fd9b04c99f4c361",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
+    },
+    {
+      "id": "v03",
+      "episode": 3,
+      "path": "episode-03/art/v03.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v03.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "01-choice:1-voice",
+        "01-choice:4-voice",
+        "01-choice:6-voice",
+        "01-lesson:2-voice"
+      ],
+      "panels": [],
+      "sha256": "fe97ec2fcf6aafa6736087bf76898fc1f3ee88355c5b95ef5216881f4bdac31e",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
+    },
+    {
+      "id": "v04",
+      "episode": 3,
+      "path": "episode-03/art/v04.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v04.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "01-spar:1-voice",
+        "01-spar:3-voice",
+        "01-spar:4-voice",
+        "01-spar:5-voice"
+      ],
+      "panels": [],
+      "sha256": "94a84821e47d086c2d93c3747ca26cd1efa9056cd866ee5512046d2f1b05e60e",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
+    },
+    {
+      "id": "v05",
+      "episode": 3,
+      "path": "episode-03/art/v05.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v05.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "01-spar:6-voice",
+        "02-flicker:1-voice",
+        "02-flicker:2-voice",
+        "02-flicker:5-voice"
+      ],
+      "panels": [],
+      "sha256": "6f8cc783e0b776b73367f1e42f150a60b19a8080c5db6840fdfd8d66a173a8b1",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
+    },
+    {
+      "id": "v06",
+      "episode": 3,
+      "path": "episode-03/art/v06.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v06.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "02-flicker:6-voice",
+        "02-star:1-voice",
+        "02-star:3-voice",
+        "02-star:4-voice"
+      ],
+      "panels": [],
+      "sha256": "0a86cfe94d1fac4df4d8999d33bf844d74c885f3a0443fc5ee45616946ed43a1",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
+    },
+    {
+      "id": "v07",
+      "episode": 3,
+      "path": "episode-03/art/v07.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v07.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "02-star:5-voice",
+        "02-star:6-voice",
+        "02-change:2-voice",
+        "02-change:3-voice"
+      ],
+      "panels": [],
+      "sha256": "6b5ae50fe5a972db2343d153948abca3f269d669b7924c9e6c313a6e1cd60721",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
+    },
+    {
+      "id": "v08",
+      "episode": 3,
+      "path": "episode-03/art/v08.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v08.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "02-change:3-added-2-voice",
+        "03-patrol:1-voice",
+        "03-patrol:1-added-1-voice",
+        "03-patrol:1-added-2-voice"
+      ],
+      "panels": [],
+      "sha256": "5ed1dee681f89e6a03635084adb9b47780c730f08e75153e54441802c802e704",
+      "pixelsEditedAfterGeneration": false,
+      "edits": [
+        {
+          "source": "../source-v08-balloon.png",
+          "prompt": "prompts/v08-balloon-edit.txt",
+          "purpose": "ordinary guard question instead of shout",
+          "sha256": "5ed1dee681f89e6a03635084adb9b47780c730f08e75153e54441802c802e704",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-034626bb-35bc-46b6-bd5f-489094239de7.png"
+        }
+      ]
+    },
+    {
+      "id": "v09",
+      "episode": 3,
+      "path": "episode-03/art/v09.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v09.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "03-patrol:2-added-1-voice",
+        "03-patrol:3-added-1-voice",
+        "05-defense:1-voice",
+        "05-resonance:1-voice"
+      ],
+      "panels": [],
+      "sha256": "19e8d2bbe0a6fcbe834207f6ba911ba51afa865c94113d5c4de68e1b099509f1",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
+    },
+    {
+      "id": "v10",
+      "episode": 3,
+      "path": "episode-03/art/v10.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v10.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "05-resonance:2-voice",
+        "05-resonance:5-voice",
+        "05-resonance:6-voice",
+        "05-recover:2-voice"
+      ],
+      "panels": [],
+      "sha256": "497f24950c0494e8d17ef9e8528a7ae09b55640e0b70fb96a0ab2bc59e22339d",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
+    },
+    {
+      "id": "v11",
+      "episode": 3,
+      "path": "episode-03/art/v11.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v11.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "05-recover:2-added-1-voice",
+        "05-recover:3-added-1-voice",
+        "06-returner:1-voice",
+        "06-returner:2-voice"
+      ],
+      "panels": [],
+      "sha256": "ebdfe5a7fd7690ff74a27dbe0778c85ba9d1ef7dd7775ea25d5a0c42b07986d1",
+      "pixelsEditedAfterGeneration": false,
+      "edits": [
+        {
+          "source": "../source-v11-balloon.png",
+          "prompt": "prompts/v11-balloon-edit.txt",
+          "purpose": "ordinary spoken dialogue instead of shout or thought",
+          "sha256": "ebdfe5a7fd7690ff74a27dbe0778c85ba9d1ef7dd7775ea25d5a0c42b07986d1",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-efa60664-c3a8-4ce2-96fc-d4843254457f.png"
+        }
+      ]
+    },
+    {
+      "id": "v12",
+      "episode": 3,
+      "path": "episode-03/art/v12.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v12.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "06-returner:3-voice",
+        "06-supply:1-voice",
+        "06-supply:2-voice",
+        "06-supply:3-voice"
+      ],
+      "panels": [],
+      "sha256": "8e2af5d267f388d6be62e9c66b6ebcff90dc84a866c2ca1684c93a30b4d48afa",
+      "pixelsEditedAfterGeneration": false,
+      "edits": [
+        {
+          "source": "../source-v12-balloon.png",
+          "prompt": "prompts/v12-balloon-edit.txt",
+          "purpose": "ordinary spoken dialogue instead of shout or thought",
+          "sha256": "8e2af5d267f388d6be62e9c66b6ebcff90dc84a866c2ca1684c93a30b4d48afa",
+          "builtinOutput": "/Users/takanorifukuyama/.codex/generated_images/01a128e4-c75f-7ee2-8713-d65bbf84ec70/exec-90b8b3a2-8d6c-4ace-a7c8-8d79971678d2.png"
+        }
+      ]
+    },
+    {
+      "id": "v13",
+      "episode": 3,
+      "path": "episode-03/art/v13.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v13.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "07-local:1-voice",
+        "07-local:2-voice",
+        "07-local:3-voice",
+        "07-clinic:2-voice"
+      ],
+      "panels": [],
+      "sha256": "06cc2225f2e17d02f59c254ab816090da0a6f83a70da1de3c42932b1f602268d",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
+    },
+    {
+      "id": "v14",
+      "episode": 3,
+      "path": "episode-03/art/v14.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v14.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "07-promise:1-added-1-voice",
+        "07-promise:1-added-2-voice",
+        "07-promise:2-voice",
+        "07-promise:3-voice"
+      ],
+      "panels": [],
+      "sha256": "783f609ea057013282698acf9b95562271d7906d06232fe1cd3eba0d8731e551",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
+    },
+    {
+      "id": "v15",
+      "episode": 3,
+      "path": "episode-03/art/v15.png",
+      "prompt": "episode-03/production/final-from-name/lettering/prompts/v15.txt",
+      "kind": "generated_voice_balloon_sheet",
+      "voice_ids": [
+        "08-invitation:1-voice",
+        "08-invitation:2-added-1-voice",
+        "08-invitation:2-added-2-voice",
+        "08-invitation:3-voice"
+      ],
+      "panels": [],
+      "sha256": "18cdfa1c58f4f0f1100b34433f0b80a1b1b229e5ea84cbb49eeb09f9a38fa638",
+      "pixelsEditedAfterGeneration": false,
+      "edits": []
     }
   ],
   "revision_intent": "採用した85コマの構成に合わせ 動く稽古 光の知覚 星環への問い 一閃 救護と盾の返却を完成カラー原画20枚へ仕上げる",
@@ -2668,6 +3089,10 @@
     "independent_voices": 60,
     "embedded_voices": 3,
     "source": "production/final-from-name/state.json",
-    "previewURL": "https://pr94--manga-server.txcloud.app/?episode=star-ring-regalia-episode-03-r2500589089ba"
+    "previewURL": "https://pr94--manga-server.txcloud.app/?episode=star-ring-regalia-episode-03-r76fb75a031be",
+    "lettering_sheets": 15,
+    "source_artworks": 35,
+    "lettering": "builtin_image_gen_exact_vertical_dialogue",
+    "previewStatus": "generated_lettering_verified_local_upload_pending"
   }
 }

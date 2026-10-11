@@ -26,9 +26,9 @@ for width,data in m.items():
   for s,e in empty:
    occupied.append([last,s]);last=e;bands.append({'panel':b['id'],'top':s,'bottom':e,'height':e-s})
   occupied.append([last,b['bottom']])
- # Floating voice footprints include the balloon; add its tail/dots below the outline.
+ # Generated voice display crops already include the balloon, tail and thought dots.
  occupied.extend([b['top'],b['bottom']] for b in data['footprints'] if b['id'] not in {x['id'] for x in data['panels']})
- occupied.extend([v['box']['top'],v['box']['bottom']+24] for v in data.get('voiceFit',[]))
+ occupied.extend([v['box']['top'],v['box']['bottom']] for v in data.get('voiceFit',[]))
  merged=union(occupied);gaps=[];last=0
  for s,e in merged:
   if s>last:gaps.append([last,s])
