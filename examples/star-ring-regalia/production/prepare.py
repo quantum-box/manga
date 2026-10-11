@@ -10,7 +10,6 @@ CAST = ROOT / 'reference/cast.png'
 ALT_SCENES = {
 1: ['進路希望の白紙と剣道部の補欠の航','母の弁当店を手伝い、灯里からゲームに誘われる','自分の部屋でヘッドセットを装着し接続する','まだ何も見えない中、草の匂いに気づく','初めて見る巨大な星環と竜、広大な谷とミルトの町','ぬかるみにはまった荷車を押すリゼとセナ','三人で車輪を持ち上げ、名前を名乗る','町の橋を渡り、セナから薬の配達を頼まれる'],
 2: ['翌日、ミルトを再訪する','航が帰った夜、リゼは薬を届けていた','薬を届け、パン屋で声をかけられる','温かいパンを食べて笑う二人','精霊の風と水で動く町の風車','リゼは自分の巡回の仕事へ向かう','黒冠の守護者の討伐イベントが告知される'],
-3: ['剣と盾の訓練をリゼに頼む','剣道の間合いを試すが、盾の扱いに失敗する','水路の巡回中、爪の跡を見つける','獣が飛び出し、先走った帰還者を襲う','盾で負傷兵を守り、リゼが風の剣で獣を退ける','再生成した帰還者が失った剣を嘆く','現地兵はセナの治療を受けて休む','憧れのプレイヤー、怜が航を討伐隊に誘う'],
 4: ['返した予備盾をリゼに頼んで借り直す','怜の隊で自分の役割を教わる','灯里と練習し、盾と立ち位置を直す','討伐隊が使う巡回図にはリゼの署名がある','役割を果たして喜ぶ一方、配達の薬がベンチに残る','遅れて町へ戻り、配達を忘れたことを謝る','リゼから帰り道と戻る時刻の約束を求められる','日本の家で、店の手伝いと討伐の予定が重なる'],
 5: ['店の手伝いと帰宅時刻を済ませて冒険へ向かう','仲間と町の門から徒歩で出発する','星環の下を、水路と山へ続く道が延びる','野営で温かい煮込みを食べる','遺構の管理印と王国の依頼を確かめる','杯の水面に振動が伝わる','まだ姿の見えない巨大な足音','音の方を見つめて次の動きを待つ'],
 6: ['黒冠の守護者が遺構の奥から現れる','怜の指示を聞き、恐怖の中で一歩を踏み出す','守護者の攻撃で仲間が倒れ、追うか守るか選ぶ','盾で石片を受け、灯里が負傷者を運ぶ','灯里が腕と胸の動作の周期を記録する','守護者が腕を下げる瞬間に関節の制御環を斬る','怜が中枢を斬り、仲間は退避する','中枢が壊れ、分流弁が開いて流れが移る','勝利の後にも手の震えが残る'],
@@ -28,6 +27,18 @@ def P(scene, *lines):
 
 def A(key, location, panels, gap=70, purpose='場面の接続', reveal=False):
     return {'id':key,'location':location,'panels':panels,'gap_before_390':gap,'pacing_purpose':purpose,'reveal':reveal}
+
+def adopted_episode(number):
+    """Use the adopted descriptor, including when its per-episode copy is missing."""
+    descriptor = ROOT / f"episode-{number:02d}/episode.json"
+    if descriptor.exists():
+        episode = json.loads(descriptor.read_text(encoding="utf-8"))
+    else:
+        episodes = json.loads((ROOT / "production/episodes.json").read_text(encoding="utf-8"))
+        episode = next(e for e in episodes if e["number"] == number)
+    if episode["number"] != number or not episode.get("revision_intent") or not episode.get("assets"):
+        raise ValueError(f"Episode {number} needs its adopted descriptor; do not recreate the old draft")
+    return episode
 
 EPISODES = [
  {'number':1,'title':'補欠の空','start':'日本の放課後。航はまだゲームへ接続したことがない。','end':'ミルトでリゼとセナを知り、薬の配達を頼まれる。剣は未使用、盾は未所持。','hold':'水不足、運営の秘密、守護者、現地の死者、成長した装備を描かない。','assets':[
@@ -89,37 +100,7 @@ EPISODES = [
  P('Close: brass wrist menu responds to KOH touch, soft blue HUD.',('音','ピン')),
  P('Large clean translucent mission window, market blurred behind it, readable exact Japanese.',('HUD','大型イベント　黒冠の守護者　討伐隊募集')),
  P('KOH face looking up, excited possibility.',('航（心）','俺も、|行けるかな。'))],310,'日常を守る町から大きな冒険の誘いへ')]},
- {'number':3,'title':'戻れる剣、戻れない剣','start':'航は討伐に憧れるが、盾と実戦は未経験。','end':'帰還者と現地兵の治療・再生成の違いを知り、怜から誘われる。','hold':'守護者の姿と配分の真相を先に描かない。','assets':[
- A('01-lesson','Milt training yard, morning in game; LIZE left, KOH right',[
- P('Wide: KOH asks to train; wooden practice sword and small round wooden shield on bench.',('航','討伐、行きたい。|剣を教えてくれる？')),
- P('Medium LIZE hands him ONE practice shield, short sword in scabbard.',('リゼ','まず、これ。|持ってみて。')),
- P('Close: KOH awkwardly raises shield left hand and practice sword right, elbows stiff.',('航','重い……。'))]),
- A('02-distance','Same training yard and same wooden weapons',[
- P('Shallow foot close-up: KOH takes kendo stance, tries to step into range.',('航（心）','この間合いなら。')),
- P('Diagonal dynamic action: LIZE lightly shifts his shield aside with wooden sword, controls him without injury.',('音','コン')),
- P('Large KOH surprised face, shield fouls his right arm.',('リゼ（画面外）','剣だけを|見ないで。'))],60,'経験が役立つ部分と足りない部分'),
- A('03-patrol','Milt outer river path; KOH now carries steel sword and borrowed wooden shield; LIZE and one local guardsman',[
- P('Wide: patrol walks riverbank, steel blade sheathed, water plentiful.',('リゼ','盾を左。|足元も見て。')),
- P('Small close: fresh claw tracks in mud under reeds, ominous but not gore.'),
- P('Medium: impulsive red-haired PLAYER traveler runs past the patrol with flashy steel sword.',('帰還者','任せろ！'))],100,'練習から外の実戦へ位置をつなぐ'),
- A('04-beast','Same river bend',[
- P('ONE big angled action shot: lean dark riverwolf-like monster leaps from reeds at the impulsive PLAYER; KOH in foreground frightened, shield held low, LIZE already reacts. Not the black-horn guardian.',('音','ガッ'))],170,'近づく音から危険の姿を見せる',True),
- A('05-defense','Same river bend, no additional monsters',[
- P('Medium: KOH steps LEFT beside local wounded guard, raises borrowed shield, right hand grips sword.',('リゼ','その人の前に！')),
- P('Two quick close-up moments right-to-left within ONE shallow row: shield blocks claw; LIZE gathers pale wind around short sword.',('音','ガン')),
- P('Wide: LIZE pushes beast back with wind and KOH keeps injured guard behind shield.',('リゼ','今、離れて！'))],45,'防御の理由と結果を密に読む'),
- A('06-returner','Safe arrival plaza in Milt after encounter',[
- P('Wide: the red-haired PLAYER reappears in plain replacement clothes, weapon lost, KOH and AKARI nearby.',('帰還者','戻れた。|でも剣がない。')),
- P('Close KOH listens with relief, sword sheathed and shield lowered.',('航','復活、|できるんだ。')),
- P('AKARI in orange game jacket checks a readable blue HUD only for herself.',('灯里','身体を|作り直すんだって。'))],130,'再生成の仕様を知る'),
- A('07-local','Clinic porch, injured local guardsman on bench, SENA cleans a small arm wound; non-graphic',[
- P('Medium KOH looks toward the LOCAL guard, worried.',('航','この人も、|戻せないの？')),
- P('SENA calm close-up, one clean bandage in hands.',('セナ','この身体しか|ないからね。')),
- P('LIZE tightens bandage, clear difference to player; tired expression.',('リゼ','明日は休んで。|仕事は代わる。'))],260,'仕様を身体と仕事の違いで受け止める'),
- A('08-invitation','Same clinic path, golden evening',[
- P('REI in silver armor and deep red short cloak approaches KOH, sword sheathed, friendly.',('怜','さっきの盾、|よく出せたな。')),
- P('Close KOH recognizes his admired player, startled but delighted.',('航','……レイさん？')),
- P('Large REI offers an open empty hand, a genuine invitation.',('怜','討伐隊、|一緒に来るか。'))],290,'小さな役割を英雄に認められる')]},
+ adopted_episode(3),
  {'number':4,'title':'名前を呼ぶ先輩','start':'第3話の盾の返却後。盾を持たない航は、リゼに予備盾を借り直す許可を取り、受け取ってから怜の隊へ参加する。','end':'町の配達を忘れ、戻る時刻を約束する。リゼの巡回図が討伐に使われる。','hold':'リゼは取水の意図を知らない。怜を悪役の表情にしない。','assets':[
  A('00-shield','Same Milt spare shield shelf, Saturday early afternoon after Episode 3 invitation',[
  P('KOH has EMPTY hands and NO shield, steel sword SHEATHED at anatomical LEFT hip. He points to the ONE spare shield returned to the shelf in Episode 3 and asks LIZE before taking it.',('航','また盾を|借りてもいい？')),
@@ -366,6 +347,13 @@ def main():
     for ep in EPISODES:
         directory=ROOT/f"episode-{ep['number']:02d}"
         planned=directory/'episode.json'
+        if ep['number'] == 3:
+            existing = adopted_episode(3)
+            if not planned.exists():
+                planned.write_text(json.dumps(existing, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+            prepared.append(existing)
+            manifests.extend(existing['assets'])
+            continue
         if planned.exists() and ((directory/'generation.json').exists() or json.loads(planned.read_text()).get('revision_intent')):
             existing=json.loads((directory/'episode.json').read_text())
             prepared.append(existing)

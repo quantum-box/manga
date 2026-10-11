@@ -1,11 +1,13 @@
-# 第3話の採用ネーム
+# 第3話「星環の剣筋」の構成確認
 
-2026-10-09の直接の返答「続けて」で、この96コマの構成を採用。本作画へ進む。
+[PRプレビューで読む](https://pr94--manga-server.txcloud.app/?episode=name-star-ring-regalia-episode-03-0d1453d6a68d)。85コマの全話ネームです。2026-10-11、動きの少なさ・特別さの片鱗・星環への言及という指摘を受けて改稿。**2026-10-11の「うんok」で構成採用済み**。承認時のコミットと本文・プラン・絵コンテのSHA-256は[adoption.json](adoption.json)へ記録。本作画はこの採用構成から制作します。
 
-- `index.html` は構成確認用の白黒ラフ。公開リーダー、カタログ、iOS、サーバーへは配布しない。
-- `effective-panels.json` は重複3コマを除いた96の異なる行動・反応・理解。17枚のシートやDOM数から換算していない。
-- `validation.json` はネームだけの検証。本作画・公開の合格には流用しない。
-- `generation.json` の18生成について保存PNGのバイト一致を確認。採用17枚と、シート06編集で実際に参照した原画1枚。
-- `browser-checks.json` と連続画像で390/360 CSS px全体を確認。スクリーンショットの物理画素とCSS実寸を区別する。実際のPageDownによる草音・余白・襲撃も確認した。
+低い薙ぎと空振りから盾の修正へ。弱い風に航だけが細い光を見て、リゼの間合いを一度だけ異常に速く破ります。空の星環から巡る魔力の話をし、降りる細い線はリゼに見えません。救助で同じ光が戻り、航の剣撃が獣を退けます。道具確認と救助後の説明の反復を短くしました。
 
-再構築: `python3 build.py`。Webtoonスキルの `build_name_preview.py` は `--helper` で指定できる。画像は変更せず、計画の単一セル切り出しとHTML文字だけを再構築する。
+独立した吹き出し60発話（通常声48・強い呼びかけ3・心の声9）と絵の3発話。尾・トゲ・雲形と点を使い分けます。[balloon-decisions.json](balloon-decisions.json)に対応人物を記録。
+
+390px幅で本編42,932px、純余白5,645px、内容37,288px、85有効コマ。目標は本編34,000〜60,000px・内容24,000px以上・80〜120コマ。360px幅は本編39,629px、内容34,514px。両幅の全編を確認し画像失敗と横はみ出し0。実機未確認。
+
+[storyboard.md](storyboard.md)、[layout-decisions.json](layout-decisions.json)、[validation.json](validation.json)が正本。改稿は現在のファイルを置換し、旧版はGit履歴へ残します。既存完成原稿の公開やiOSはこの採用ネームで差し替えていません。
+
+採用後はbuild.pyの再構成ガードで承認版を保護します。構成を変える場合は再提示・採用が必要です。表示確認：node render_review.cjs → Python/Pillowでsummarize_review.py。新しい3原画は組み込みimage_genで生成し無加工で保存。[PROMPT-motion.md](PROMPT-motion.md)と[generation.json](generation.json)に実行指示と出所を記録。

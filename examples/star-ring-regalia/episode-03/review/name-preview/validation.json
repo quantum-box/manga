@@ -1,159 +1,803 @@
 {
-  "status": "passed",
   "scope": "full_episode_name_only",
-  "notFinalArtwork": true,
-  "storyVolume": "passed",
-  "storyContinuity": "passed",
-  "phoneLegibility": "passed",
-  "suspenseNativeScrolling": "passed",
-  "effectivePanels": 96,
-  "excludedSameMomentPanels": 3,
+  "status": "passed_for_name_presentation",
+  "userAdoption": "adopted",
+  "finalArtwork": "completed_local_validation_pending_ci_publication",
+  "target": {
+    "widthCssPx": 390,
+    "bodyHeightCssPx": [
+      34000,
+      60000
+    ],
+    "minContentHeightCssPx": 24000,
+    "effectivePanels": [
+      80,
+      120
+    ]
+  },
+  "effectivePanels": 85,
+  "independentVoices": 60,
+  "embeddedVoices": 3,
   "measurements": {
-    "phone390": {
-      "readerWidthCssPx": 390,
-      "bodyHeightCssPx": 53274.8125,
-      "explicitPauseHeightCssPx": 5970,
-      "uninformativeImageBandsCssPx": 3100.792,
-      "conservativeEmptyBalloonHeaderRemaindersCssPx": 1683.268,
-      "pureGapHeightCssPx": 10754.06,
-      "contentHeightCssPx": 42520.753,
-      "effectivePanels": 96,
-      "allImagesLoaded": true,
-      "horizontalOverflow": false,
-      "continuousFramesRead": 35,
-      "nativeGapVerified": true
-    },
-    "phone360": {
+    "360": {
       "readerWidthCssPx": 360,
-      "bodyHeightCssPx": 49542.36328125,
-      "explicitPauseHeightCssPx": 5510.517578125,
-      "uninformativeImageBandsCssPx": 2862.242,
-      "conservativeEmptyBalloonHeaderRemaindersCssPx": 1671.543,
-      "pureGapHeightCssPx": 10044.303,
-      "contentHeightCssPx": 39498.06,
-      "effectivePanels": 96,
+      "viewportCssPx": [
+        360,
+        800
+      ],
+      "bodyHeightCssPx": 39629.0625,
+      "explicitPauseHeightCssPx": 4269.046875,
+      "pureGapHeightCssPx": 5115.3984375,
+      "contentHeightCssPx": 34513.6640625,
+      "screenUnits": 49.536328125,
+      "pureGapRatio": 0.1290819947481725,
+      "pureGapRangesCssPx": [
+        [
+          0,
+          5.3671875
+        ],
+        [
+          490.875,
+          634.6953125
+        ],
+        [
+          1156.203125,
+          1161.5703125
+        ],
+        [
+          1585.328125,
+          1832.2890625
+        ],
+        [
+          2181.5,
+          2186.8671875
+        ],
+        [
+          2686.78125,
+          2794.0546875
+        ],
+        [
+          3258.875,
+          3265.8359375
+        ],
+        [
+          3746.984375,
+          3751.96875
+        ],
+        [
+          4201.984375,
+          4317.734375
+        ],
+        [
+          4867.140625,
+          4872.8828125
+        ],
+        [
+          5352.109375,
+          5413.2265625
+        ],
+        [
+          5878.046875,
+          5920.7109375
+        ],
+        [
+          6361.90625,
+          6378.1953125
+        ],
+        [
+          6551.3359375,
+          6559.4375
+        ],
+        [
+          7259.21875,
+          7299.5546875
+        ],
+        [
+          7809.15625,
+          7816.1171875
+        ],
+        [
+          8261.859375,
+          8332.2109375
+        ],
+        [
+          8833.6875,
+          8840.6484375
+        ],
+        [
+          9351.328125,
+          9439.7578125
+        ],
+        [
+          9990.796875,
+          9998.8359375
+        ],
+        [
+          10457.921875,
+          10499.453125
+        ],
+        [
+          10795.234375,
+          10818.296875
+        ],
+        [
+          11179.015625,
+          11322.8359375
+        ],
+        [
+          11794.515625,
+          11801.3359375
+        ],
+        [
+          12308.953125,
+          12425.0859375
+        ],
+        [
+          13286.328125,
+          13420.140625
+        ],
+        [
+          13983.6875,
+          13988.28125
+        ],
+        [
+          14501.34375,
+          14508.3046875
+        ],
+        [
+          14997.328125,
+          15150.3828125
+        ],
+        [
+          15650.90625,
+          15743.203125
+        ],
+        [
+          15981.390625,
+          15987.1328125
+        ],
+        [
+          16424,
+          16428.984375
+        ],
+        [
+          16871.625,
+          16876.609375
+        ],
+        [
+          17376.78125,
+          17612.140625
+        ],
+        [
+          18132.015625,
+          18138.9765625
+        ],
+        [
+          18580.578125,
+          18585.9453125
+        ],
+        [
+          19298.015625,
+          19521.65625
+        ],
+        [
+          19953.46875,
+          19967.5703125
+        ],
+        [
+          20218.1171875,
+          20230.390625
+        ],
+        [
+          20935.609375,
+          20952.609375
+        ],
+        [
+          21472.109375,
+          22302.875
+        ],
+        [
+          22844.671875,
+          23029.28125
+        ],
+        [
+          23552.484375,
+          23566.78125
+        ],
+        [
+          23798.25,
+          23809.09375
+        ],
+        [
+          24302.640625,
+          24309.6015625
+        ],
+        [
+          24684.59375,
+          24691.0390625
+        ],
+        [
+          25735.078125,
+          25844.0546875
+        ],
+        [
+          25979.0390625,
+          25984.296875
+        ],
+        [
+          26232.703125,
+          26238.7734375
+        ],
+        [
+          27240.0625,
+          27245.8046875
+        ],
+        [
+          27668.796875,
+          27674.1640625
+        ],
+        [
+          28674.3125,
+          28919.6796875
+        ],
+        [
+          29405.1875,
+          29410.5546875
+        ],
+        [
+          29852.71875,
+          29859.1640625
+        ],
+        [
+          30290.453125,
+          30295.046875
+        ],
+        [
+          30799.390625,
+          30804.7578125
+        ],
+        [
+          31223.5,
+          31228.09375
+        ],
+        [
+          31737.265625,
+          31742.6328125
+        ],
+        [
+          32179.75,
+          32397.03125
+        ],
+        [
+          32844.296875,
+          32849.6640625
+        ],
+        [
+          33317.484375,
+          33580.53125
+        ],
+        [
+          34319.96875,
+          34324.5625
+        ],
+        [
+          35030.4375,
+          35221.2421875
+        ],
+        [
+          35395.1015625,
+          35396.2578125
+        ],
+        [
+          35816.828125,
+          35822.1953125
+        ],
+        [
+          36015.4921875,
+          36031.609375
+        ],
+        [
+          36289.4375,
+          36294.8046875
+        ],
+        [
+          36779.734375,
+          37154.3203125
+        ],
+        [
+          37859.28125,
+          37865.0234375
+        ],
+        [
+          38281.375,
+          38285.96875
+        ],
+        [
+          38816.1875,
+          38821.171875
+        ],
+        [
+          39324.453125,
+          39629.0625
+        ]
+      ],
+      "imageBlankBands": [
+        {
+          "panel": "03-listen:2-added-1",
+          "top": 20935.609375,
+          "bottom": 20952.609375,
+          "height": 17.0
+        },
+        {
+          "panel": "07-promise:2",
+          "top": 36014.609375,
+          "bottom": 36031.609375,
+          "height": 17.0
+        }
+      ],
       "allImagesLoaded": true,
       "horizontalOverflow": false,
-      "continuousFramesRead": 32,
-      "nativeGapVerified": true
+      "effectivePanels": 85,
+      "framesCaptured": 56
+    },
+    "390": {
+      "readerWidthCssPx": 390,
+      "viewportCssPx": [
+        390,
+        844
+      ],
+      "bodyHeightCssPx": 42932.265625,
+      "explicitPauseHeightCssPx": 4624.984375,
+      "pureGapHeightCssPx": 5644.765625,
+      "contentHeightCssPx": 37287.5,
+      "screenUnits": 50.867613299763036,
+      "pureGapRatio": 0.13148073000165594,
+      "pureGapRangesCssPx": [
+        [
+          0,
+          6.671875
+        ],
+        [
+          531.796875,
+          688.46875
+        ],
+        [
+          1252.59375,
+          1259.265625
+        ],
+        [
+          1717.484375,
+          1985.890625
+        ],
+        [
+          2363.34375,
+          2370.015625
+        ],
+        [
+          2910.734375,
+          3027.8125
+        ],
+        [
+          3530.53125,
+          3538.9375
+        ],
+        [
+          4059.328125,
+          4065.5859375
+        ],
+        [
+          4292.3203125,
+          4293.328125
+        ],
+        [
+          4552.234375,
+          4678.4921875
+        ],
+        [
+          4905.2265625,
+          4906.234375
+        ],
+        [
+          5272.828125,
+          5279.90625
+        ],
+        [
+          5798.21875,
+          5865.296875
+        ],
+        [
+          6368.015625,
+          6415.09375
+        ],
+        [
+          6892.21875,
+          6910.734375
+        ],
+        [
+          7094.578125,
+          7106.21875
+        ],
+        [
+          7864.328125,
+          7909.5234375
+        ],
+        [
+          8460.109375,
+          8468.515625
+        ],
+        [
+          8950.546875,
+          9027.625
+        ],
+        [
+          9570.0625,
+          9578.46875
+        ],
+        [
+          10130.84375,
+          10227.515625
+        ],
+        [
+          10823.625,
+          10833.8203125
+        ],
+        [
+          11329.6875,
+          11374.6875
+        ],
+        [
+          11695.125,
+          11720.109375
+        ],
+        [
+          12110.890625,
+          12267.5625
+        ],
+        [
+          12777.6875,
+          12786.5546875
+        ],
+        [
+          12967.6015625,
+          12967.6875
+        ],
+        [
+          13335.015625,
+          13461.6875
+        ],
+        [
+          14393.859375,
+          14539.7109375
+        ],
+        [
+          14787.5078125,
+          14789.859375
+        ],
+        [
+          15149.375,
+          15155.2265625
+        ],
+        [
+          15403.0234375,
+          15405.375
+        ],
+        [
+          15710.171875,
+          15718.578125
+        ],
+        [
+          16247.5,
+          16414.171875
+        ],
+        [
+          16955.5625,
+          17055.5625
+        ],
+        [
+          17313.609375,
+          17320.6875
+        ],
+        [
+          17793.125,
+          17799.3828125
+        ],
+        [
+          18026.1171875,
+          18027.125
+        ],
+        [
+          18278.046875,
+          18284.3046875
+        ],
+        [
+          18511.0390625,
+          18512.046875
+        ],
+        [
+          18825.296875,
+          19081.1484375
+        ],
+        [
+          19328.9453125,
+          19331.296875
+        ],
+        [
+          19643.484375,
+          19651.890625
+        ],
+        [
+          20129.4375,
+          20136.109375
+        ],
+        [
+          20906.671875,
+          21149.8046875
+        ],
+        [
+          21376.5390625,
+          21377.546875
+        ],
+        [
+          21616.734375,
+          21633.59375
+        ],
+        [
+          21899.875,
+          21916.734375
+        ],
+        [
+          22680.609375,
+          22698.609375
+        ],
+        [
+          23261.9375,
+          24161.9375
+        ],
+        [
+          24748.890625,
+          24948.890625
+        ],
+        [
+          25515.6875,
+          25532.0546875
+        ],
+        [
+          25779.0703125,
+          25793.6875
+        ],
+        [
+          26328.390625,
+          26336.796875
+        ],
+        [
+          26742.171875,
+          26750.6328125
+        ],
+        [
+          26952.7421875,
+          26954.171875
+        ],
+        [
+          27880.203125,
+          27999.140625
+        ],
+        [
+          28141.640625,
+          28150.203125
+        ],
+        [
+          28419.3125,
+          28427.3515625
+        ],
+        [
+          28650.5234375,
+          28653.3125
+        ],
+        [
+          29510.609375,
+          29517.6875
+        ],
+        [
+          29975.078125,
+          29981.75
+        ],
+        [
+          31064.421875,
+          31331.09375
+        ],
+        [
+          31856.21875,
+          31862.890625
+        ],
+        [
+          32341.046875,
+          32349.5078125
+        ],
+        [
+          32551.6171875,
+          32553.046875
+        ],
+        [
+          32815.265625,
+          32821.1171875
+        ],
+        [
+          33068.9140625,
+          33071.265625
+        ],
+        [
+          33366.640625,
+          33373.3125
+        ],
+        [
+          33826.09375,
+          33831.9453125
+        ],
+        [
+          34079.7421875,
+          34082.09375
+        ],
+        [
+          34382.6875,
+          34389.359375
+        ],
+        [
+          34862.046875,
+          35098.3046875
+        ],
+        [
+          35325.0390625,
+          35326.046875
+        ],
+        [
+          35581.984375,
+          35588.65625
+        ],
+        [
+          36094.625,
+          36380.4765625
+        ],
+        [
+          36628.2734375,
+          36630.625
+        ],
+        [
+          37180.671875,
+          37186.5234375
+        ],
+        [
+          37434.3203125,
+          37436.671875
+        ],
+        [
+          37950.34375,
+          38157.921875
+        ],
+        [
+          38342.546875,
+          38347.515625
+        ],
+        [
+          38802.265625,
+          38808.9375
+        ],
+        [
+          39016.609375,
+          39034.609375
+        ],
+        [
+          39314.265625,
+          39320.9375
+        ],
+        [
+          39845.421875,
+          40252.09375
+        ],
+        [
+          41014.96875,
+          41022.046875
+        ],
+        [
+          41472.25,
+          41478.1015625
+        ],
+        [
+          41725.8984375,
+          41728.25
+        ],
+        [
+          42051.65625,
+          42057.9140625
+        ],
+        [
+          42284.6484375,
+          42285.65625
+        ],
+        [
+          42602.265625,
+          42932.265625
+        ]
+      ],
+      "imageBlankBands": [
+        {
+          "panel": "03-listen:2-added-1",
+          "top": 22680.609375,
+          "bottom": 22698.609375,
+          "height": 18.0
+        },
+        {
+          "panel": "07-promise:2",
+          "top": 39016.609375,
+          "bottom": 39034.609375,
+          "height": 18.0
+        }
+      ],
+      "allImagesLoaded": true,
+      "horizontalOverflow": false,
+      "effectivePanels": 85,
+      "framesCaptured": 57
     }
   },
-  "provenance": [
-    {
-      "sheet": 1,
-      "saved": "rough/sheet-01.png",
-      "sha256": "b67ed9c6f346cb54ebd6cb744a11b6307eb2ae03f0e53000a15bafb37c8b3a51",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 2,
-      "saved": "rough/sheet-02.png",
-      "sha256": "6aca759471e88ee11643c65f532766c49fad7f7987605a91327a1a94f6d27208",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 3,
-      "saved": "rough/sheet-03.png",
-      "sha256": "3fa638cd13bc2c5f4cf8cdc9e7b95d7db204e2837fe720bd85b4205ae3a8dc88",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 4,
-      "saved": "rough/sheet-04.png",
-      "sha256": "61571a45187dea3b126e55914203276ffbc0c4e1ee53d53317d402fe7eb34d89",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 5,
-      "saved": "rough/sheet-05.png",
-      "sha256": "f24c11289e0ac3434ae94edcda4f5eb0b5a17a71e0d23276c1ffa5cdfd0aa35f",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 6,
-      "saved": "rough/source-sheet-06.png",
-      "sha256": "8dc8004509e513dad73bfcd20cc159cd362f7fe32151c8217c2cc0b9cac6153d",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 7,
-      "saved": "rough/sheet-07.png",
-      "sha256": "e6e25137cf142cee70bfba7961ae1d5667f2c60f2baaa69bb91f93a4acf1e662",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 8,
-      "saved": "rough/sheet-08.png",
-      "sha256": "ec098f38f43acfedf16709a1ff73a782ffc3ff0af4ee71f69b7ccc7a325d75fa",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 9,
-      "saved": "rough/sheet-09.png",
-      "sha256": "b30eb8a50c267a883875c63411457bdb1532fc957c3849f3a61605e7bd92eaa5",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 10,
-      "saved": "rough/sheet-10.png",
-      "sha256": "b27e91d0f2ac88ce68df1e8543ccd75eecf08ddbe94580f7be2b9ed5f9117cfe",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 11,
-      "saved": "rough/sheet-11.png",
-      "sha256": "807847ba4ce60cb8d9ddb5330fc0be2d66078b5cfa5a0125c0f0588c674265e3",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 12,
-      "saved": "rough/sheet-12.png",
-      "sha256": "d5870ecff8992225d39964a52a86e6352dfae4f8c1884fc71c825f76dcf98bf5",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 13,
-      "saved": "rough/sheet-13.png",
-      "sha256": "05154c5a433c0d0a8ff902a76d9ff314a8704ba78bc5bd12b9c27661d89597a6",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 14,
-      "saved": "rough/sheet-14.png",
-      "sha256": "b4826b4fec83ff2e9d2309e69d76b77888fba4568e979fbed5ed7aa780c2f3c5",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 15,
-      "saved": "rough/sheet-15.png",
-      "sha256": "ee354de4075dce4cf2fece5ff285c38d64be93e6d788708165096272164eb435",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 16,
-      "saved": "rough/sheet-16.png",
-      "sha256": "f1a2170712fb95c9518a6dc0a5a1f9a3cf7443d31bba5583394bf03c4fb7519f",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 17,
-      "saved": "rough/sheet-17.png",
-      "sha256": "907be76fd34bf48451f5c1c2eaa8012fd26e9bfc3021513068d37e23275131b4",
-      "sourceEqualsSaved": true
-    },
-    {
-      "sheet": 6,
-      "saved": "rough/sheet-06.png",
-      "sha256": "5e5a7fb836a9c618aea5fb91ccc84ab238a91b41786d279286356e7c52697260",
-      "sourceEqualsSaved": true
-    }
-  ],
-  "adoption": {
-    "status": "adopted",
-    "source": "direct_user_message",
-    "reply": "続けて",
-    "date": "2026-10-09",
-    "scope": "episode_03_name_only"
+  "pureGapMethod": "DOM complement of text/balloon and panel footprints, including 24px below balloon outlines for tails and thought dots; subtract fully blank inner image bands >=16px at >=99.5% white (RGB>=248); union simultaneous footprints to avoid double counting. Pure background around nonblank art is not counted.",
+  "review": {
+    "volume": "passed",
+    "story": "passed",
+    "padding": "passed",
+    "notes": "再訪→昨日の衝動→低い薙ぎと空振り→外へ一歩で受ける→風の光→異常な踏み込み→リゼの驚き→再試行→星環と見えない線→巡回→負傷兵の防御→同じ光と一閃→救護→身体と装備の違い→盾の返却→怜の誘い。85の異なる瞬間を辿り反復を削る"
   },
-  "publication": "not_a_publication_artifact"
+  "visualAudit": {
+    "widths": [
+      390,
+      360
+    ],
+    "allContinuousFramesRead": true,
+    "reviewMethod": "All continuous windows read in contact-390-00..06 and contact-360-00..06; new training and star-ring actions inspected at both widths. All 60 independent text insets and allocated voice regions measured.",
+    "reference": "review/contact-390-00..06.jpg and review/contact-360-00..06.jpg; native windows at both widths",
+    "findings": [
+      "動く稽古6カット 共鳴の片鱗6カット 星環6カットを追加 攻防と光の知覚の因果を両幅で読む",
+      "独立した60発話を吹き出しに配置 字と輪郭の内側余白と尾の方向を確認",
+      "星環共鳴の知覚から踏み込み 一閃 リゼの驚き 逃げる獣までを両幅で確認",
+      "3発話が顔へ重なったため白地に移動 言葉の全文と読む順を保持",
+      "日本の衣装をミルトへ持ち込むラフを画像生成で修正",
+      "傷を右掌へ修正し なお手の甲に誤った傷がある未使用部分を表示窓から除外",
+      "本作画では見える掌の擦り傷と借りた盾の縁の小さな欠けを全カットへ引き継ぐ"
+    ],
+    "realPhoneDevice": "not_tested"
+  },
+  "suspense": {
+    "360": {
+      "cue": "03-listen:2-added-2",
+      "reveal": "04-beast:1",
+      "distanceCssPx": 830.765625,
+      "viewportHeightCssPx": 800,
+      "simultaneousAppearancePrevented": true,
+      "reading": "草から一度鳴った音を反応と停止へつなぎ 完全な無音の白地を過ぎるまで獣の輪郭や台詞を出さない"
+    },
+    "390": {
+      "cue": "03-listen:2-added-2",
+      "reveal": "04-beast:1",
+      "distanceCssPx": 900.0,
+      "viewportHeightCssPx": 844,
+      "simultaneousAppearancePrevented": true,
+      "reading": "草から一度鳴った音を反応と停止へつなぎ 完全な無音の白地を過ぎるまで獣の輪郭や台詞を出さない"
+    }
+  },
+  "checks": {
+    "rust": "not_run_content_only",
+    "readerCopy": "passed",
+    "gitDiffWhitespace": "passed"
+  },
+  "balloons": {
+    "independent": 60,
+    "spoken": 48,
+    "urgentShouts": 3,
+    "thoughts": 9,
+    "embedded": 3,
+    "source": "balloon-decisions.json",
+    "voiceTextRevised": true,
+    "newArtworkSheets": 3,
+    "pixelsEditedAfterGeneration": false,
+    "shapeAndTailAudit": "60 independent voices at both widths, ordinary speech with tails, calls with thick spikes, thoughts with clouds and dots"
+  },
+  "adoptionRecord": "adoption.json"
 }

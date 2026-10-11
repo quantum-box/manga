@@ -24,19 +24,22 @@ const {chromium} = require('playwright');
         await document.fonts.ready;
         await Promise.all([...document.images].map(img => img.decode()));
       });
-      const size = await page.evaluate(bodyOnly => {
+      const size = await page.evaluate(settings => {
+        const bodyOnly = Boolean(settings.bodyOnly);
         const main = document.querySelector('main');
         const header = main?.querySelector('header'), footer = main?.querySelector('footer');
+        const flow = settings.flowSelector ? document.querySelector(settings.flowSelector) : null;
+        if (settings.flowSelector && !flow) throw Error('Reader flow was not found');
         if (bodyOnly && (!header || !footer)) throw Error('Reader needs a header and footer');
         return {width:document.documentElement.scrollWidth,
-          top:bodyOnly ? Math.floor(header.getBoundingClientRect().bottom + scrollY) : 0,
-          bottom:bodyOnly ? Math.ceil(footer.getBoundingClientRect().top + scrollY) : document.documentElement.scrollHeight,
+          top:flow ? Math.floor(flow.getBoundingClientRect().top + scrollY) : bodyOnly ? Math.floor(header.getBoundingClientRect().bottom + scrollY) : 0,
+          bottom:flow ? Math.ceil(flow.getBoundingClientRect().bottom + scrollY) : bodyOnly ? Math.ceil(footer.getBoundingClientRect().top + scrollY) : document.documentElement.scrollHeight,
           ending:bodyOnly ? footer.innerText : ''};
-      }, Boolean(settings.bodyOnly));
+      }, settings);
       if (size.width !== 390) throw Error(`${id}: source overflows the phone width (${size.width})`);
       if (size.bottom <= size.top) throw Error(`${id}: empty reader body`);
       let cover;
-      if (settings.bodyOnly) {
+      if (settings.bodyOnly || settings.flowSelector) {
         // A display window can show one cell of a larger source image. Capture
         // its figure so the cover contains the visible cell, not the full sheet.
         const figure = page.locator('main figure').first();
