@@ -34,6 +34,24 @@ tachyon compute logs manga-server --tenant-id <tenant>
 
 ## 公開
 
+### PRプレビューでネームを読む
+
+ネームもPR専用サーバーのリーダーと一覧で読める。コミット済みの
+`review/name-preview/index.html`を、余白と文字組みごと390 CSS px・1170px幅で
+書き出し、PR専用Storageへ配信する。通常の公開カタログやiOS同梱版には追加しない。
+Playwrightが使えるNode.js環境で実行する。出力先は作業ツリー外の空のディレクトリにする。
+
+```sh
+name_output=$(mktemp -d /tmp/manga-name-pr94-XXXXXX)
+python3 scripts/preview_name.py prepare examples/star-ring-regalia/episode-03/review/name-preview/index.html "$name_output" --pr 94
+# 表示された配信フォルダを使う。MANGA_ADMIN_TOKENは管理API用で、ブラウザへ渡さない。
+python3 scripts/preview_name.py publish <配信フォルダ> --pr 94
+```
+
+配信先は`https://pr<番号>--manga-server.txcloud.app`に固定し、別PRや本番への
+アップロードを拒否する。全画像・表紙・本文JSONの読み戻しを終えてからURLを表示する。
+ネームの掲載は構成の採用・本作画・通常公開の完了を意味しない。
+
 `episode.json`は既存試作と同じ `title` / `blocks` 形式。
 画像はJSONと同じディレクトリに置く。PNG/JPEG/WebP、1画像16MiB以下。
 

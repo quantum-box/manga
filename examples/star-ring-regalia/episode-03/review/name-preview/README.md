@@ -1,11 +1,11 @@
-# 第3話の採用ネーム
+# 第3話の構成確認
 
-2026-10-09の直接の返答「続けて」で、この96コマの構成を採用。本作画へ進む。
+[index.html](index.html) を開くと、104コマの全話を縦に読めます。2026-10-11、第2話「明日のある町」の最新版の続きとして更新しました。構成は未採用です。
 
-- `index.html` は構成確認用の白黒ラフ。公開リーダー、カタログ、iOS、サーバーへは配布しない。
-- `effective-panels.json` は重複3コマを除いた96の異なる行動・反応・理解。17枚のシートやDOM数から換算していない。
-- `validation.json` はネームだけの検証。本作画・公開の合格には流用しない。
-- `generation.json` の18生成について保存PNGのバイト一致を確認。採用17枚と、シート06編集で実際に参照した原画1枚。
-- `browser-checks.json` と連続画像で390/360 CSS px全体を確認。スクリーンショットの物理画素とCSS実寸を区別する。実際のPageDownによる草音・余白・襲撃も確認した。
+詳細は[storyboard.md](storyboard.md)、完成版へ渡す配置は[layout-decisions.json](layout-decisions.json)、実量と確認範囲は[validation.json](validation.json)。本作画はこの構成への返答を受けてから進めます。
 
-再構築: `python3 build.py`。Webtoonスキルの `build_name_preview.py` は `--helper` で指定できる。画像は変更せず、計画の単一セル切り出しとHTML文字だけを再構築する。
+旧ネームはGit bf149ef8c0a0b3f5de0233e54d307e598794d967に保存済み。既存の原画は現行の表示窓から使用する制作素材です。旧完成版をこのネームで公開カタログやiOSへ差し替えてはいません。
+
+390px幅の実量は、本編48,765px、純余白10,457px、内容38,308px、104有効コマ。実量はvalidation.jsonを参照。基準は本編34,000〜60,000px、内容24,000px以上、80〜120コマ。360px幅でも全編を確認し、画像読み込み失敗・横はみ出しは両幅とも0。実機での確認は未実施。
+
+再構成：`python3 build.py` → `python3 rebuild_reader.py` → `python3 write_storyboard.py`。表示確認はPlaywrightとPillowを利用して `node render_review.cjs` → `python3 summarize_review.py`。新しい生成と旧原画の出所は[PROMPTS.md](PROMPTS.md)。
