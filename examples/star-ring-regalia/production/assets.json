@@ -7829,7 +7829,6 @@
     "name_panel_ids": [
       "02-flicker:1",
       "02-flicker:2",
-      "02-flicker:3",
       "02-flicker:4",
       "02-flicker:5",
       "02-flicker:6"
@@ -7884,31 +7883,6 @@
         "sourceId": "02-flicker:2",
         "effective": true,
         "newUnderstanding": "航の瞳に風とは違う細い光が映る 現在流れる魔力へ初めて感応"
-      },
-      {
-        "id": "02-flicker:3",
-        "type": "panel",
-        "image": "rough/training-flicker.png",
-        "imageSize": [
-          1024,
-          1536
-        ],
-        "crop": [
-          0.009765625,
-          0.337890625,
-          0.484375,
-          0.3235677083333333
-        ],
-        "alt": "光の筋が空ける風の隙間へ航の足が飛ぶ 足場から太い軌道と土がつながる",
-        "widthPercent": 82,
-        "align": "right",
-        "frame": "none",
-        "purpose": "光の筋が空ける風の隙間へ航の足が飛ぶ 足場から太い軌道と土がつながる",
-        "dialogue": [],
-        "sounds": [],
-        "sourceId": "02-flicker:3",
-        "effective": true,
-        "newUnderstanding": "光の筋が空ける風の隙間へ航の足が飛ぶ 足場から太い軌道と土がつながる"
       },
       {
         "id": "02-flicker:4",
@@ -8003,7 +7977,6 @@
     ],
     "name_panel_ids": [
       "02-star:1",
-      "02-star:2",
       "02-star:3",
       "02-star:4",
       "02-star:5",
@@ -8034,31 +8007,6 @@
         "sourceId": "02-star:1",
         "effective": true,
         "newUnderstanding": "水を飲んでいた航が空へ目を上げる 木剣と盾はベンチ 左腰に鋼剣を納刀"
-      },
-      {
-        "id": "02-star:2",
-        "type": "panel",
-        "image": "rough/star-question.png",
-        "imageSize": [
-          1024,
-          1536
-        ],
-        "crop": [
-          0.509765625,
-          0.004557291666666667,
-          0.484375,
-          0.3235677083333333
-        ],
-        "alt": "ミルトの屋根の上 空全体を横切る巨大な星環 そこから細い一本の光が降りる 航の主観",
-        "widthPercent": 100,
-        "align": "center",
-        "frame": "none",
-        "purpose": "ミルトの屋根の上 空全体を横切る巨大な星環 そこから細い一本の光が降りる 航の主観",
-        "dialogue": [],
-        "sounds": [],
-        "sourceId": "02-star:2",
-        "effective": true,
-        "newUnderstanding": "ミルトの屋根の上 空全体を横切る巨大な星環 そこから細い一本の光が降りる 航の主観"
       },
       {
         "id": "02-star:3",
@@ -8180,7 +8128,6 @@
       "05-resonance:1",
       "05-resonance:2",
       "05-resonance:3",
-      "05-defense:3",
       "05-resonance:5",
       "05-resonance:6"
     ],
@@ -8259,38 +8206,6 @@
         "sourceId": "05-resonance:3",
         "effective": true,
         "newUnderstanding": "盾の後ろに兵士を残し 航が自分の右手の剣で細い筋へ短く踏み込む 足から肩と刃へ動作がつながる"
-      },
-      {
-        "id": "05-defense:3",
-        "type": "panel",
-        "image": "rough/resonance.png",
-        "imageSize": [
-          1024,
-          1536
-        ],
-        "crop": [
-          0.509765625,
-          0.34609375,
-          0.4794921875,
-          0.30429687499999997
-        ],
-        "alt": "航の一閃が獣の爪の魔力を斬り裂く 太い斜めの軌跡と衝撃で獣を退ける 決め手は航 兵士は左盾の後ろで安全",
-        "widthPercent": 100,
-        "align": "center",
-        "frame": "none",
-        "purpose": "航の一閃が獣の爪の魔力を斬り裂く 太い斜めの軌跡と衝撃で獣を退ける 決め手は航 兵士は左盾の後ろで安全",
-        "dialogue": [],
-        "sounds": [
-          {
-            "text": "ザンッ",
-            "x": 22,
-            "y": 60,
-            "width": 34
-          }
-        ],
-        "sourceId": "05-defense:3",
-        "effective": true,
-        "newUnderstanding": "航の一閃が獣の爪の魔力を斬り裂く 太い斜めの軌跡と衝撃で獣を退ける 決め手は航 兵士は左盾の後ろで安全"
       },
       {
         "id": "05-resonance:5",
@@ -10681,5 +10596,141 @@
     "sha256": "18cdfa1c58f4f0f1100b34433f0b80a1b1b229e5ea84cbb49eeb09f9a38fa638",
     "pixelsEditedAfterGeneration": false,
     "edits": []
+  },
+  {
+    "id": "fx-step",
+    "episode": 3,
+    "path": "episode-03/art/fx-step.png",
+    "prompt": "episode-03/production/final-from-name/effects/prompts/fx-step.txt",
+    "references": [
+      "episode-03/production/final-from-name/effects/fx-step-input.png"
+    ],
+    "name_panel_ids": [
+      "02-flicker:3"
+    ],
+    "panels": [
+      {
+        "id": "02-flicker:3",
+        "type": "panel",
+        "image": "art/fx-step.png",
+        "imageSize": [
+          1024,
+          1536
+        ],
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "alt": "光の筋が空ける風の隙間へ航の足が飛ぶ 足場から太い軌道と土がつながる",
+        "widthPercent": 100,
+        "align": "center",
+        "frame": "none",
+        "purpose": "光の筋が空ける風の隙間へ航の足が飛ぶ 足場から太い軌道と土がつながる",
+        "dialogue": [],
+        "sounds": [],
+        "sourceId": "02-flicker:3",
+        "effective": true,
+        "newUnderstanding": "光の筋が空ける風の隙間へ航の足が飛ぶ 足場から太い軌道と土がつながる"
+      }
+    ],
+    "sha256": "934797f452139f382edd0ecbffdf07a87917ea2483500ad66ee0be16ae8af1b2",
+    "pixelsEditedAfterGeneration": false,
+    "kind": "finished_whitespace_extension",
+    "intent": "踏み込みの接地から土煙と光の軌道をコマ外へ散らし 次の間合い突破へ渡す"
+  },
+  {
+    "id": "fx-star",
+    "episode": 3,
+    "path": "episode-03/art/fx-star.png",
+    "prompt": "episode-03/production/final-from-name/effects/prompts/fx-star.txt",
+    "references": [
+      "episode-03/production/final-from-name/effects/fx-star-input.png"
+    ],
+    "name_panel_ids": [
+      "02-star:2"
+    ],
+    "panels": [
+      {
+        "id": "02-star:2",
+        "type": "panel",
+        "image": "art/fx-star.png",
+        "imageSize": [
+          1024,
+          1536
+        ],
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "alt": "ミルトの屋根の上 空全体を横切る巨大な星環 そこから細い一本の光が降りる 航の主観",
+        "widthPercent": 100,
+        "align": "center",
+        "frame": "none",
+        "purpose": "ミルトの屋根の上 空全体を横切る巨大な星環 そこから細い一本の光が降りる 航の主観",
+        "dialogue": [],
+        "sounds": [],
+        "sourceId": "02-star:2",
+        "effective": true,
+        "newUnderstanding": "ミルトの屋根の上 空全体を横切る巨大な星環 そこから細い一本の光が降りる 航の主観"
+      }
+    ],
+    "sha256": "5a8c12881e955d15c76a9f8db5f133a95d6dea362758181f393c02caf9688260",
+    "pixelsEditedAfterGeneration": false,
+    "kind": "finished_whitespace_extension",
+    "intent": "巨大な星環からの一本の光を白地へ落とし 航だけの知覚を余白で見せる"
+  },
+  {
+    "id": "fx-slash",
+    "episode": 3,
+    "path": "episode-03/art/fx-slash.png",
+    "prompt": "episode-03/production/final-from-name/effects/prompts/fx-slash.txt",
+    "references": [
+      "episode-03/production/final-from-name/effects/fx-slash-input.png"
+    ],
+    "name_panel_ids": [
+      "05-defense:3"
+    ],
+    "panels": [
+      {
+        "id": "05-defense:3",
+        "type": "panel",
+        "image": "art/fx-slash.png",
+        "imageSize": [
+          1024,
+          1536
+        ],
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "alt": "航の一閃が獣の爪の魔力を斬り裂く 太い斜めの軌跡と衝撃で獣を退ける 決め手は航 兵士は左盾の後ろで安全",
+        "widthPercent": 100,
+        "align": "center",
+        "frame": "none",
+        "purpose": "航の一閃が獣の爪の魔力を斬り裂く 太い斜めの軌跡と衝撃で獣を退ける 決め手は航 兵士は左盾の後ろで安全",
+        "dialogue": [],
+        "sounds": [
+          {
+            "text": "ザンッ",
+            "x": 22,
+            "y": 60,
+            "width": 34
+          }
+        ],
+        "sourceId": "05-defense:3",
+        "effective": true,
+        "newUnderstanding": "航の一閃が獣の爪の魔力を斬り裂く 太い斜めの軌跡と衝撃で獣を退ける 決め手は航 兵士は左盾の後ろで安全"
+      }
+    ],
+    "sha256": "6b176b10db14af077bf39b0bc7df3429bcacd5d602a6958271af4f5bfd6e0fc3",
+    "pixelsEditedAfterGeneration": false,
+    "kind": "finished_whitespace_extension",
+    "intent": "一度の一閃とザンッを左下の白地へ抜き 破片と光が減衰して驚きの声へ渡る"
   }
 ]

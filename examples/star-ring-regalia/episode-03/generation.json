@@ -638,7 +638,7 @@
   "letteringProduction": "lettering/state.json",
   "letteringSheets": 15,
   "generatedDialogues": 63,
-  "sourceArtworks": 35,
+  "sourceArtworks": 38,
   "letteringAssets": [
     {
       "id": "v01",
@@ -2401,5 +2401,60 @@
       "pixelsEditedAfterGeneration": false
     }
   ],
-  "letteringValidation": "production/final-from-name/lettering/state.json"
+  "letteringValidation": "production/final-from-name/lettering/state.json",
+  "effectsProduction": "effects/state.json",
+  "effectArtworks": 3,
+  "effectsAssets": [
+    {
+      "id": "fx-step",
+      "beatId": "02-flicker:3",
+      "path": "art/fx-step.png",
+      "prompt": "effects/prompts/fx-step.txt",
+      "reference": "effects/fx-step-input.png",
+      "builtinOutput": "exec-0baaf3d1-6816-47c2-badc-231ab3388117.png",
+      "sha256": "934797f452139f382edd0ecbffdf07a87917ea2483500ad66ee0be16ae8af1b2",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "intent": "踏み込みの接地から土煙と光の軌道をコマ外へ散らし 次の間合い突破へ渡す",
+      "nativeReview": "pose_equipment_and_single_action_verified",
+      "mobileReview": "readable_390_360"
+    },
+    {
+      "id": "fx-star",
+      "beatId": "02-star:2",
+      "path": "art/fx-star.png",
+      "prompt": "effects/prompts/fx-star.txt",
+      "reference": "effects/fx-star-input.png",
+      "builtinOutput": "exec-16d500bf-b635-41f0-af4c-e1929f693393.png",
+      "sha256": "5a8c12881e955d15c76a9f8db5f133a95d6dea362758181f393c02caf9688260",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "intent": "巨大な星環からの一本の光を白地へ落とし 航だけの知覚を余白で見せる",
+      "nativeReview": "pose_equipment_and_single_action_verified",
+      "mobileReview": "readable_390_360"
+    },
+    {
+      "id": "fx-slash",
+      "beatId": "05-defense:3",
+      "path": "art/fx-slash.png",
+      "prompt": "effects/prompts/fx-slash.txt",
+      "reference": "effects/fx-slash-input.png",
+      "builtinOutput": "exec-66435da3-eb8d-4f39-9ec2-6fb9cb371654.png",
+      "sha256": "6b176b10db14af077bf39b0bc7df3429bcacd5d602a6958271af4f5bfd6e0fc3",
+      "imageSize": [
+        1024,
+        1536
+      ],
+      "pixelsEditedAfterGeneration": false,
+      "intent": "一度の一閃とザンッを左下の白地へ抜き 破片と光が減衰して驚きの声へ渡る",
+      "nativeReview": "pose_equipment_and_single_action_verified",
+      "mobileReview": "readable_390_360"
+    }
+  ]
 }

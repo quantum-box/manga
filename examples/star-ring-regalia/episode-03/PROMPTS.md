@@ -843,3 +843,30 @@ CELL BOTTOM LEFT, speaker context 怜 (DO NOT PRINT NAME), kind spoken, tail/dot
 CELL BOTTOM RIGHT, speaker context 怜 (DO NOT PRINT NAME), kind spoken, tail/dots direction down-left. Exact vertical columns right-to-left: ["討伐隊", "一緒に来るか？"]. Exact dialogue:
 討伐隊
 一緒に来るか？
+
+## 余白へ続く3場面の仕上げ
+
+2026-10-11の「余白をうまく使ったエフェクトとか欲しいんだよな」に対応。以下3枚を既存の同一場面へ置換。85場面・63発話・音源数は維持し、新しい着地や斬撃は追加しない。原画中の余白とHTMLの間を合算して両幅で確認。
+
+### fx-step
+
+採用原画: art/fx-step.png、対象: 02-flicker:3。編集元: effects/fx-step-input.png。
+
+Edit the supplied cropped boot scene into ONE finished full-color vertical Webtoon illustration, portrait 1024x1536, opaque pure WHITE canvas. The reference is the edit target, not a sheet or additional scene. Preserve the exact single step, original boot sole pose, navy tunic cream hem, brown trousers, wooden practice sword and LEFT wooden shield. No new limb, attack, speech, lettering or SFX. Same detailed clean Japanese fantasy manga colors.
+Composition: keep the original scene almost square in the upper RIGHT 82% of this tall canvas, top-aligned, with white margin at left. Preserve the boot/ground point of contact and stone yard. Erase the rigid bottom/left panel boundaries by drawing the SAME boot-contact dirt burst and its warm gold-white wind streaks across them into the surrounding WHITE space. At the sole's contact, use a strong connected burst; long diagonal dirt/speed marks sweep toward LOWER LEFT through the left margin and down into the lower half, then become sparse and stop by 85% height. Make the movement a strong readable silhouette at phone width, not fine decorative glitter. The white below is the time and trailing debris of THIS footstep, not a second landing. Draw no scenery, second foot or figure in the lower white area. Leave the last 15% of canvas genuinely pure white, and most lower-right white empty. No black rectangular frame. Output one cohesive extended illustration with causal seamless breakout, NOT a collage, panel grid, black background or transparent layer.
+
+
+### fx-star
+
+採用原画: art/fx-star.png、対象: 02-star:2。編集元: effects/fx-star-input.png。
+
+Edit the supplied sky/city scene into ONE finished full-color vertical Webtoon illustration, portrait 1024x1536, opaque pure WHITE canvas. Reference is the edit target. Preserve the same roofs, masonry towers, blue sky and immense GOLD-WHITE celestial ring arching across the entire sky. This is a distant enormous sky ring, never a small halo, portal, UI, magic circle or orbit around a character. No people, text, speech balloons or SFX.
+Keep the existing almost-square sky/city scene in the top two-thirds of the tall canvas. Do not crop away or replace the town or ring. Replace its hard lower edge with a gentle hand-drawn fade into pure white. The ONE slender warm gold-white filament already descending from the ring must continue seamlessly across the bottom boundary, THROUGH the lower white third. Give it a subtle warm golden edge visible on white, a graceful long downward curve, a few restrained flecks, and taper it to nothing near 90% height. It should lead the reader's eye into the next scroll like a thread perceived only by Koh; not a lightning bolt, huge beam or blast. Most of lower third stays clean pure WHITE. Do not add a second complete ring or new motif below. Retain the detailed clean Japanese fantasy manga style and peaceful mood. The last 10% is pure white without any line. Output one cohesive extended illustration, NOT a collage/grid/transparent overlay.
+
+
+### fx-slash
+
+採用原画: art/fx-slash.png、対象: 05-defense:3。編集元: effects/fx-slash-input.png。
+
+Edit the supplied wolf-repelling sword scene into ONE finished full-color vertical Webtoon illustration, portrait 1024x1536, opaque pure WHITE canvas. Preserve exactly the same single decisive steel-sword slash, hero pose, ALL three people, alive retreating wolf, and equipment. Koh: messy black hair, navy tunic cream trim, RIGHT hand holds steel sword, LEFT arm has round wooden shield, empty scabbard at left hip. Lize: chestnut bob, green outfit, pale cloak; she is shocked and backing up, not finishing the wolf. Gray guard stays crouched safe behind Koh, RIGHT forearm injury only; healthy LEFT arm. No gore, new attack, second sword, extra limb or new spoken dialogue.
+Composition: retain all character content of original almost-square image in upper ~65% of tall canvas, but open the left and bottom edges as a dynamic unframed manga breakout. Connect the ORIGINAL blade's white-gold slash streak and impact splinters to broad diagonal afterimage marks continuing into lower-left pure WHITE margin. Use a bold clean tapering slash trail, some black/brown falling debris and sparse gold sparks that thin out toward lower third. This is the aftermath of the SAME stroke, not another stroke or magic explosion. Preserve exactly ONE sound inscription 「ザンッ」, in powerful black hand-drawn brush lettering; let its lower small ッ / trailing strokes break across the scene's left-bottom boundary into the white aftereffect area, without overlapping a face, hand, sword grip or shield. No duplicate whole sound, no other letters. Do not leave a boxed square sitting above detached decorative particles: draw a connected diagonal exit and fading fallout. Most of lower-right stays empty white and final 12% height pure white. Match original clean detailed full-color Japanese fantasy manga art. Output one extended cohesive illustration, not collage/grid or transparent layer.

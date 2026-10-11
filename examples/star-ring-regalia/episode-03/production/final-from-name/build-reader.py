@@ -1,4 +1,4 @@
-"""Finish the adopted beat stream by replacing roughs, never changing its layout."""
+"""Finish the adopted beat stream, with recorded whitespace artwork extensions."""
 from pathlib import Path
 import base64
 import hashlib
@@ -37,7 +37,7 @@ for i, source in enumerate(sources):
     if (prod / a['destination']).resolve() != (ep / path).resolve():
         shutil.copyfile(prod / a['destination'], ep / path)
     external[f'asset-{i}'] = path
-    embedded[f'asset-{i}'] = 'data:image/png;base64,' + base64.b64encode(raw).decode()
+    embedded[f'asset-{i}'] = 'data:image/png;base64,' + base64.b64encode(offline_encoding(raw)).decode()
     provenance.append({'id': a['id'], 'path': path, 'sha256': hashlib.sha256(raw).hexdigest(),
                        'nameSource': source, 'prompt': a['prompt'],
                        'editSource': a.get('editSource'), 'editPrompt': a.get('editPrompt'),
@@ -112,6 +112,27 @@ h = h.replace('</style>', '''
 .generated-lettering img{position:absolute;display:block;width:var(--crop-image-width);max-width:none;height:auto;left:var(--crop-left);top:var(--crop-top)}
 </style>''', 1)
 h = h.replace('id="name-preview-assets"', 'id="artwork-sources"').replace('getElementById("name-preview-assets")', 'getElementById("artwork-sources")')
+# Three finished-art extensions keep the same narrative moments and all dialogue.
+# Effects and whitespace are generated together; CSS only displays their raw pixels.
+effects = json.loads((prod / 'effects/state.json').read_text())
+extensions = {a['beatId']: a for a in effects['assets']}
+for a in effects['assets']:
+    raw = (ep / a['path']).read_bytes()
+    if hashlib.sha256(raw).hexdigest() != a['sha256']:
+        raise SystemExit(f'Effect original changed: {a["id"]}')
+    external[a['id']] = a['path']
+    embedded[a['id']] = 'data:image/png;base64,' + base64.b64encode(offline_encoding(raw)).decode()
+    pattern = r'<figure[^>]*data-beat-id="' + re.escape(a['beatId']) + r'".*?</figure>'
+    previous = re.search(pattern, h, re.S)[0]
+    alt = re.search(r'alt="([^"]*)"', previous)[1]
+    w, height = a['imageSize']
+    replacement = (f'<figure class="panel align-center effect-extension" data-beat-id="{a["beatId"]}" '
+                   f'style="--panel-width:100%;"><img data-asset="{a["id"]}" alt="{alt}" '
+                   f'width="{w}" height="{height}"></figure>')
+    h, count = re.subn(pattern, lambda _: replacement, h, flags=re.S)
+    if count != 1:
+        raise SystemExit(f'Expected one extension target: {a["beatId"]}')
+    provenance.append({**a, 'pixelsEditedAfterGeneration': False})
 asset_pattern = r'(<script type="application/json" id="artwork-sources">).*?(</script>)'
 def write_reader(path, mapping):
     page = re.sub(asset_pattern, lambda m: m[1] + json.dumps(mapping, ensure_ascii=False) + m[2], h, flags=re.S)
@@ -120,7 +141,12 @@ write_reader(ep / 'index.html', external)
 write_reader(ep / 'reader.html', embedded)
 panels = [b for b in plan['beats'] if b['type'] == 'panel']
 layout = [{**b, 'image': external[f'asset-{sources.index(b["image"])}']} for b in panels]
+for panel in layout:
+    if panel['id'] in extensions:
+        a = extensions[panel['id']]
+        panel.update(image=a['path'], imageSize=a['imageSize'], crop=[0, 0, 1, 1],
+                     widthPercent=100, align='center', frame='none')
 (ep / 'layout.json').write_text(json.dumps(layout, ensure_ascii=False, indent=2) + '\n')
 (prod / 'source-crops.json').write_text(json.dumps(layout, ensure_ascii=False, indent=2) + '\n')
 (prod / 'art-provenance.json').write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + '\n')
-print(f'Built {len(panels)} panels / {len(external)} originals; 63 generated dialogues, adopted spacing preserved')
+print(f'Built {len(panels)} panels / {len(external)} originals; 63 generated dialogues, three whitespace extensions')

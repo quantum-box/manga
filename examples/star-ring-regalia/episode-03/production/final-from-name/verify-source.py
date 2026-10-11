@@ -16,24 +16,34 @@ adoption, plan, state = [read(f) for f in [name/'adoption.json', name/'plan.json
 assert hashlib.sha256((name/'index.html').read_bytes()).hexdigest() == adoption['approvedHtmlSha256']
 panels = [b for b in plan['beats'] if b['type'] == 'panel']
 layout = read(ep/'layout.json')
+effects = read(p/'effects/state.json')
+assert {a['beatId'] for a in effects['assets']} == {'02-flicker:3', '02-star:2', '05-defense:3'}
+extensions = {a['beatId']:a for a in effects['assets']}
 assert len(layout) == len(panels) == 85
 for adopted, final in zip(panels, layout):
-    assert {k:v for k,v in adopted.items() if k != 'image'} == {k:v for k,v in final.items() if k != 'image'}
+    expected = {**adopted}
+    if adopted['id'] in extensions:
+        a = extensions[adopted['id']]
+        expected.update(imageSize=a['imageSize'], crop=[0,0,1,1], widthPercent=100, align='center', frame='none')
+        assert final['image'] == a['path']
+    assert {k:v for k,v in expected.items() if k != 'image'} == {k:v for k,v in final.items() if k != 'image'}
 def mapping(html):
     return json.loads(re.search(r'<script type="application/json" id="artwork-sources">(.*?)</script>', html, re.S)[1])
 external, offline = [(f.read_text(), mapping(f.read_text())) for f in [ep/'index.html', ep/'reader.html']]
 letters = read(p/'lettering/state.json')
-assert len(external[1]) == len(offline[1]) == len(state['assets']) + len(letters['sheets']) == 35
+assert len(external[1]) == len(offline[1]) == len(state['assets']) + len(letters['sheets']) + len(effects['assets']) == 38
 for key, path in external[1].items():
     inside = base64.b64decode(offline[1][key].split(',',1)[1])
     original = (ep/path).read_bytes()
-    if key.startswith('letter-'):
-        assert png_storage['pixel_stream'](inside) == png_storage['pixel_stream'](original)
-        assert [(k,d) for k,d in png_storage['chunks'](inside) if k != b'IDAT'] == [(k,d) for k,d in png_storage['chunks'](original) if k != b'IDAT']
-    else:
-        assert inside == original
+    assert png_storage['pixel_stream'](inside) == png_storage['pixel_stream'](original)
+    assert [(k,d) for k,d in png_storage['chunks'](inside) if k != b'IDAT'] == [(k,d) for k,d in png_storage['chunks'](original) if k != b'IDAT']
+assert (ep/'reader.html').stat().st_size < 100 * 1024 * 1024
 for asset in state['assets']:
     assert hashlib.sha256((p/asset['destination']).read_bytes()).hexdigest() == asset['sha256']
+for asset in effects['assets']:
+    assert hashlib.sha256((ep/asset['path']).read_bytes()).hexdigest() == asset['sha256']
+    assert asset['mobileReview'] == 'readable_390_360'
+    assert not asset['pixelsEditedAfterGeneration']
 # Metadata equality is distinct from the recorded visual review of raster glyphs.
 adopted_voices = [b for b in plan['beats'] if b['type'] == 'voice']
 generated_voices = [v for s in letters['sheets'] for v in s['voices']]
@@ -63,4 +73,4 @@ for width, data in m.items():
 whitespace = read(p/'review/whitespace.json')
 assert 34000 <= whitespace['390']['bodyHeightCssPx'] <= 60000
 assert whitespace['390']['contentHeightCssPx'] >= 24000
-print('PASS: approved 85-panel layout; 35 pixel-identical offline artworks; 63 generated dialogues with visual review at 390/360; regular length')
+print('PASS: 85 adopted moments, exactly three recorded whitespace extensions; 38 pixel-identical offline artworks; 63 generated dialogues at 390/360; regular length')
