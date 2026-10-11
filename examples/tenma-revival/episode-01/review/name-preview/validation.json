@@ -1,0 +1,129 @@
+{
+  "stage": "name-preview",
+  "finishedArt": false,
+  "published": false,
+  "seriesScope": "200話以上（220話までの可変ロードマップ）",
+  "targets": {
+    "referenceWidthCssPx": 390,
+    "bodyHeightCssPx": [
+      34000,
+      60000
+    ],
+    "minimumContentHeightCssPx": 24000,
+    "effectivePanelCount": [
+      80,
+      120
+    ]
+  },
+  "actual": {
+    "referenceWidthCssPx": 390,
+    "bodyHeightCssPx": 59391.2421875,
+    "pureBlankApproxCssPx": 5607.335064004787,
+    "contentApproxCssPx": 53783.90712349521,
+    "renderedPanels": 104,
+    "effectivePanels": 100,
+    "excludedPanels": [
+      "p005",
+      "p040",
+      "p052",
+      "p064"
+    ],
+    "blankMeasurement": "content-measurement.json",
+    "note": "白帯と文字を含む区間の和による概算。明示余白4590px。"
+  },
+  "browser": {
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "bodyHeightCssPx": 59391.2421875,
+        "loadedImages": 104,
+        "horizontalOverflow": false,
+        "dialogueOverflow": [],
+        "fontSizesCssPx": [
+          "17px",
+          "20.28px"
+        ]
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "bodyHeightCssPx": 54822.46875,
+        "loadedImages": 104,
+        "horizontalOverflow": false,
+        "dialogueOverflow": [],
+        "fontSizesCssPx": [
+          "17px",
+          "19px"
+        ]
+      }
+    ],
+    "standaloneReader": {
+      "allImagesEmbedded": true,
+      "loadedImages": 104,
+      "originalAssetsEmbedded": 26,
+      "externalImages": 0,
+      "browserVerification": "360pxでreader.htmlを読み込み、104/104画像と26埋め込み原画、外部画像0件を確認。screenshots/standalone-360.jpg"
+    },
+    "devicePixelRatio": 0.8,
+    "screenshotAdjustment": "ブラウザ既存ズームを考慮しDOM実寸390/360を確認。画像書き出しのclipにも0.8を適用。終了時viewport overrideを解除。"
+  },
+  "visualReview": {
+    "sourceArt": "全26原画・104カットを採用済み漫画調へ再作画。輪郭・黒ベタ・顔と衣服を簡潔にした。全原画を目視。",
+    "continuousWindows": [
+      "前世と回帰 p001–p024",
+      "一閃と武器の破断 p037–p044",
+      "自由の問いと対等 p075–p080",
+      "次の人材の予告 p097–p100",
+      "共に立つ p101–p104"
+    ],
+    "repairs": [
+      "死の場面の冠の重複を除去",
+      "梁を支える莫生の手枷を復元",
+      "炭火の色を抑え、ネーム表示はgrayscale(1)を維持",
+      "農民と主人公が持つ印を角形の割れた半分へ統一"
+    ],
+    "pacing": "冒頭の前世を8→16コマへ拡張。死→目覚めの間460px。戦闘以降は既存の疎密を維持。",
+    "sound": "衝突・破断・布・水・修復音を別記。無音の顔・判断カットとの強弱を確認。",
+    "continuity": "前世48歳は短い髭と冠。回帰後22歳は無髭・冠なし。p076で手枷を外しp077以降は素手または黒布。沈蓮は淡い頭巾の女性医師。印は二つに割れた角形。",
+    "limits": "漫画調の構成ネーム。絵柄はユーザー採用済み。全編構成、本作画、公開品質の採用は未確認。"
+  },
+  "checks": {
+    "quantity": "pass",
+    "storyArc": "身分と圧勝→救援拒否と丘爺の死→毒による死→26年前への回帰認識→全員の救出→被害補償→寝床→自発的参加",
+    "padding": "結果再確認4カットを除外。104カットの情報を台帳に記録。"
+  },
+  "evidence": [
+    "dom-390.json",
+    "dom-360.json",
+    "content-measurement.json",
+    "screenshots/reading-390-1.jpg",
+    "screenshots/reading-390-2.jpg",
+    "screenshots/reading-390-3.jpg",
+    "screenshots/reading-390-4.jpg",
+    "screenshots/reading-390-5.jpg",
+    "screenshots/opening-390.jpg",
+    "screenshots/opening-360.jpg",
+    "screenshots/death-wakeup-390.jpg",
+    "screenshots/recognition-390.jpg",
+    "screenshots/young-390.jpg",
+    "screenshots/young-360.jpg",
+    "screenshots/action-390.jpg",
+    "screenshots/freedom-390.jpg",
+    "screenshots/ending-390.jpg",
+    "screenshots/ending-360.jpg",
+    "screenshots/standalone-360.jpg"
+  ],
+  "next": "ユーザーのネーム採用後、第1話のみ本作画。その後PR/CI/レビュー/main/公開確認を終え、第2話へ進む。",
+  "revision": "2026-10-11: 冒頭4コマの漫画調を採用し全104コマへ反映。物語と台詞、前世16コマ、回帰の認識順は維持。",
+  "styleApproval": {
+    "approved": true,
+    "date": "2026-10-11",
+    "scope": "漫画調の絵柄",
+    "userReply": "転生前のやつだよね？ まあこんな感じでいいんじゃない？"
+  },
+  "storyboardApproval": {
+    "approved": false,
+    "status": "全104コマを今回の絵柄で提示して確認待ち"
+  }
+}

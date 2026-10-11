@@ -1,0 +1,15 @@
+# 漫画調への絵柄確認 — 冒頭4コマ
+
+依頼：漫画として現在の絵がリアルすぎる。顔・髪・服を単純化し、線と黒ベタを中心とした漫画調を確認する。物語、48歳の主人公、茶碗1個、空の盆、右手の剣は保つ。全話の差し替え前の部分試作。
+
+生成：組み込み image_gen、入力は name-preview/rough/intro-01.png。
+
+```text
+Use case: style-transfer.
+Asset type: FOUR consecutive rough comic panels for a manga style study, NOT finished artwork.
+Input image 1 is the edit target: a 2 by 2 atlas of four scenes. Redraw ALL four cells from scratch in a clearly stylized Japanese action-manga drawing language. Preserve the same storytelling, four equal cells, camera framing, character age/identity and prop continuity, but decisively change the drawing style.
+Style: confident expressive black ink contours on white paper, deliberately simplified angular faces, large graphic eyebrows and readable manga eyes, nose represented by just two short strokes, mouths drawn with simple lines. Hair grouped into 6–10 chunky black pointed locks with white highlight shapes, not individual hair strands. Clothing drawn as broad clean shapes with a handful of decisive fold lines and flat solid black areas, REMOVE fine brocade pattern entirely. Skin is white with at most one flat gray shadow shape, no modeled gradients. Short beard represented by a compact graphic chin/goatee shape. Environment reduced to a few strong architectural lines and silhouettes with much more white breathing space. Overall about one quarter of the source line density. Visibly a hand-drawn action MANGA, energetic and appealing. Not chibi or comedic; serious wuxia adventure with heroic charisma. Do NOT preserve the reference's graphite rendering, pores, photographic anatomy, individual hair, glossy fabric, lighting gradients, hatching, engraving, painterly realism, cinematic realism, 3D, paper texture or soft airbrushing. Use no screentone texture in this rough style study; flat light gray only if essential.
+Character: Yan Wujiu is a mature 48-year-old man, long black hair in a high topknot, small plain crown, sharp brows and short beard, dark outer robe with pale inner collar, broad shoulders, right-handed straight jian and sheath at left hip. Keep recognizable but manga-stylized.
+Canvas exactly 1024x1536. Exact four equally sized 512x768 cells in a 2x2 atlas. Top-left: wide sect-hall doorway, Yan's back facing enemy silhouettes, a few retreating allies at sides. Top-right: close Yan calmly drinking from ONE plain white tea cup while a shadowed disciple holds an EMPTY dark tray, trusting him. Bottom-left: Yan puts the same one cup on the stone ledge with left hand while his right hand reaches his jian; incoming enemies distant. Bottom-right: one bold horizontal jian slash by Yan's right hand, a thick sweeping WHITE crescent bordered by black speed lines, enemy weapons break into simple shapes, no gore.
+Leave top 18 percent of every cell white and empty for later Japanese lettering. No text, no letters, no sound effects, no speech balloons, no watermark. Four-panel scene content and reading order invariant. This edit's key success criterion is that it reads immediately as a manga drawing, NOT a realistic pencil illustration.
+```
