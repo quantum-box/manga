@@ -23,6 +23,8 @@ pub fn identify(id: &str, title: &str) -> SeriesInfo {
         ("tower-forge", "塔を灯す剣")
     } else if id.starts_with("star-ring-regalia-") {
         ("star-ring-regalia", "星環のレガリア")
+    } else if id.starts_with("tenma-revival-") {
+        ("tenma-revival", "天魔神教、再興")
     } else {
         (id, title)
     };
@@ -123,9 +125,14 @@ mod tests {
             ("pochi-episode-02-r123abc", "pochi"),
             ("zero-break-episode-01-r123abc", "zero-break"),
             ("star-ring-regalia-episode-01-r123abc", "star-ring-regalia"),
+            ("tenma-revival-episode-01-r123abc", "tenma-revival"),
         ] {
             assert_eq!(identify(id, "").id, expected);
         }
+        let revival = identify("tenma-revival-episode-220-r123abc", "different title");
+        assert_eq!(revival.number, 220);
+        assert_eq!(revival.title, "天魔神教、再興");
+        assert!(revival.edition.is_empty());
         assert_eq!(identify("pochi-episode-02-r123abc", "").number, 2);
         assert_eq!(identify("star-ring-regalia-episode-02-r123abc", "").number, 2);
         assert_eq!(identify("star-ring-regalia-episode-01-r123abc", "").title, "星環のレガリア");
