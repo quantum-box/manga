@@ -10,7 +10,7 @@
 
 吹き出し60発話（会話48・強い声3・心の声9）と絵の3発話。390/360両幅で全編を確認。390本編42,932px、内容37,288px、85有効コマ。新しい3原画の生成指示はPROMPT-motion.md。
 
-**新ネームの構成採用待ち・本作画未着手**。入口は[第3話のPRプレビュー](https://pr94--manga-server.txcloud.app/?episode=name-star-ring-regalia-episode-03-0d1453d6a68d)、[ローカル確認](../episode-03/review/name-preview/index.html)、[validation.json](../episode-03/review/name-preview/validation.json)、[adoption.json](../episode-03/review/name-preview/adoption.json)。旧第3話への承認と完成確認は以下の過去記録に限り、今回の構成へ適用しない。
+**2026-10-11の「うんok」で85コマの構成を採用**。承認対象はc541f933とPRプレビューの0d1453d6a68d。原稿・プラン・絵コンテのSHA-256をadoption.jsonへ保存。本作画をこの構成から制作する。入口は[第3話のPRプレビュー](https://pr94--manga-server.txcloud.app/?episode=name-star-ring-regalia-episode-03-0d1453d6a68d)、[ローカル確認](../episode-03/review/name-preview/index.html)、[validation.json](../episode-03/review/name-preview/validation.json)、[adoption.json](../episode-03/review/name-preview/adoption.json)。旧第3話への承認と完成確認は以下の過去記録に限り、今回の構成へ適用しない。
 
 ユーザー指定：200話以上の連載。全体240話は仮構成。2026年10月10日の最新依頼は、最新のWebtoonスキルで第1〜3話を順に作り直すこと。
 
